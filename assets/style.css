@@ -118,3 +118,12 @@ footer a{color:#ffd4ea}footer p{color:#cbb8db}
 .result-card .download{min-height:46px;margin-top:8px;font-weight:850;font-size:15px;box-shadow:0 10px 22px rgba(199,54,135,.2)}
 .download-warning{background:transparent!important;border:1px solid #dda5c8!important;color:#8c4470!important;box-shadow:none!important}
 .download-warning:hover{background:#fff3fa!important}
+
+/* Opción de objetivo de tamaño y aviso de cumplimiento */
+.target-box{background:linear-gradient(135deg,#ffe8f4,#f4e9ff);border:1px solid #dfb2e7;border-radius:17px;padding:17px 19px}
+.target-box label{font-weight:900;color:#9b257a;font-size:17px}
+.target-box select{background:white;border:1px solid #deacdb;font-weight:800}
+.target-box small{color:#72536b;line-height:1.55}
+.target-status{padding:12px 16px;border-radius:12px;font-size:14px;font-weight:850;margin:12px 0}
+.target-ok{background:#e7f7e9;color:#186b3b}
+.target-missed{background:#fff2df;color:#815018}

@@ -2,7 +2,7 @@
 (() => {
 const $=id=>document.getElementById(id);
 const input=$('files'),zone=$('dropzone'),list=$('file-list'),run=$('run'),clear=$('clear'),notice=$('notice');
-const quality=$('quality'),qualityText=$('quality-value'),width=$('max-width'),format=$('image-format'),pdfMode=$('pdf-mode'),smart=$('smart-retry');
+const quality=$('quality'),qualityText=$('quality-value'),width=$('max-width'),format=$('image-format'),pdfMode=$('pdf-mode'),smart=$('smart-retry'),target=$('target-kb');
 let selected=[],busy=false,downloads=[];
 const LIMIT=40*1024*1024,MAX_FILES=12;
 const bytes=n=>n<1024?n+' B':n<1048576?(n/1024).toFixed(1)+' KB':(n/1048576).toFixed(2)+' MB';
@@ -25,45 +25,106 @@ async function raster(blob,maxPixels){
  ctx.imageSmoothingEnabled=true;ctx.imageSmoothingQuality='high';ctx.drawImage(bitmap,0,0,w,h);bitmap.close();
  return canvas;
 }
+
+// Buscar de forma adaptativa la combinación de formato, resolución y calidad
+// que se acerque a un límite real de bytes. No crea archivos vacíos ni garantiza
+// una calidad determinada: la interfaz indica claramente si no alcanza la meta.
 async function compressImage(blob,originalExt,level,limit,requested='auto',targetBytes=0){
- const canvas=await raster(blob,limit);
- const extType=originalExt==='jpeg'?'jpg':originalExt;
- let type,outputExt;
- if(requested==='jpg'){type='image/jpeg';outputExt='jpg'}
- else if(requested==='webp'){type='image/webp';outputExt='webp'}
- else if(requested==='original'||(requested==='auto'&&extType==='png')){type=extType==='png'?'image/png':extType==='webp'?'image/webp':'image/jpeg';outputExt=extType}
- else{type=extType==='webp'?'image/webp':'image/jpeg';outputExt=extType}
- let targetCanvas=canvas;
- if(type==='image/jpeg'){
-  // JPEG no admite transparencia: reemplazar canal alfa por fondo blanco.
-  const bg=document.createElement('canvas');bg.width=canvas.width;bg.height=canvas.height;
-  const ctx=bg.getContext('2d');if(!ctx)throw Error('No se pudo preparar la imagen.');
-  ctx.fillStyle='#ffffff';ctx.fillRect(0,0,bg.width,bg.height);ctx.drawImage(canvas,0,0);
-  targetCanvas=bg;
+ const base=await raster(blob,limit);
+ const original=originalExt==='jpeg'?'jpg':originalExt;
+ const maxDim=Math.max(base.width,base.height);
+ const types=requested==='jpg'?['image/jpeg']:requested==='webp'?['image/webp']:
+   requested==='original'?[original==='png'?'image/png':original==='webp'?'image/webp':'image/jpeg']:
+   original==='png'?['image/webp','image/png']:
+   original==='webp'?['image/webp','image/jpeg']:['image/jpeg','image/webp'];
+ const extFromType=t=>t==='image/jpeg'?'jpg':t==='image/webp'?'webp':'png';
+ let bestFit=null,smallest=null;
+ // El nivel mínimo admite tamaños muy pequeños; la calidad visual puede ser baja.
+ // Usar seis iteraciones de búsqueda binaria como máximo por resolución.
+ const steps=targetBytes>0?[1,.84,.68,.54,.42,.32,.24,.17,.12,.085,.055]:[1];
+ for(const fraction of steps){
+   let sized=base;
+   const maxSide=Math.max(24,Math.round(maxDim*fraction));
+   if(maxSide<maxDim){
+     const scale=maxSide/maxDim;
+     sized=document.createElement('canvas');
+     sized.width=Math.max(1,Math.round(base.width*scale));
+     sized.height=Math.max(1,Math.round(base.height*scale));
+     const context=sized.getContext('2d');
+     if(!context)throw Error('No fue posible preparar la imagen.');
+     context.imageSmoothingEnabled=true;
+     context.imageSmoothingQuality='high';
+     context.drawImage(base,0,0,sized.width,sized.height);
+   }
+   for(const mime of types){
+     let canvas=sized;
+     if(mime==='image/jpeg'){
+       canvas=document.createElement('canvas');
+       canvas.width=sized.width;canvas.height=sized.height;
+       const context=canvas.getContext('2d');
+       if(!context)throw Error('No se pudo preparar el fondo de JPG.');
+       context.fillStyle='#ffffff';
+       context.fillRect(0,0,canvas.width,canvas.height);
+       context.drawImage(sized,0,0);
+     }
+     const save=async q=>{
+       const blob=await makeBlob(canvas,mime,q);
+       if(blob.type&&blob.type!==mime)throw Error('Tu navegador no admite '+mime+'. Prueba otro formato.');
+       return blob;
+     };
+     const remember=(blob,q)=>{
+       const candidate={blob,extension:extFromType(mime),dimensions:canvas.width+'×'+canvas.height,qualityUsed:q,lossy:mime!=='image/png',targetMet:targetBytes>0&&blob.size<=targetBytes};
+       if(!smallest||candidate.blob.size<smallest.blob.size)smallest=candidate;
+       if(candidate.targetMet){
+         // Un compromiso entre resolución y calidad visual.
+         const score=Math.pow(Math.max(1,canvas.width*canvas.height)/(base.width*base.height),.22)*(mime==='image/png'?1.05:(.15+q*.85));
+         if(!bestFit||score>bestFit.score)bestFit={...candidate,score};
+       }
+       return candidate;
+     };
+     if(!targetBytes){
+       const b=await save(level);
+       return remember(b,level);
+     }
+     if(mime==='image/png'){
+       remember(await save(1),1);
+     }else{
+       // Primero probar una calidad razonable y la mínima; luego afinar por búsqueda.
+       let high=Math.max(.1,Math.min(.95,level));
+       let test=await save(high);
+       let candidate=remember(test,high);
+       if(!candidate.targetMet){
+         let low=.06;
+         test=await save(low);candidate=remember(test,low);
+         if(candidate.targetMet){
+           let lower=low,upper=high;
+           for(let attempt=0;attempt<6;attempt++){
+             const middle=(lower+upper)/2;
+             const trial=remember(await save(middle),middle);
+             if(trial.targetMet)lower=middle;
+             else upper=middle;
+           }
+         }
+       }
+     }
+   }
+   // No procesar tamaños diminutos si ya se consiguió una solución razonable.
+   if(bestFit&&bestFit.score>.40&&bestFit.qualityUsed>=.38)break;
  }
- let result=await makeBlob(targetCanvas,type,level),usedQuality=level;
- if(result.type && result.type!==type)throw Error('El navegador no admite este formato de salida. Prueba con JPG.');
- // Si el primer resultado es mayor, volver a codificar sin volver a decodificar la foto.
- // Solo se activa cuando el usuario acepta el modo de compresión adaptativa.
- if(targetBytes>0&&(type==='image/jpeg'||type==='image/webp')&&result.size>=targetBytes){
-  let q=level-.08,tries=0;
-  while(q>=.31&&tries<7&&result.size>=targetBytes){
-   q=Math.round(q*100)/100;
-   const candidate=await makeBlob(targetCanvas,type,q);
-   if(candidate.size<result.size){result=candidate;usedQuality=q}
-   q-=.08;tries++;
-  }
- }
- return {blob:result,extension:outputExt,dimensions:canvas.width+'×'+canvas.height,qualityUsed:usedQuality,lossy:type!=='image/png'};
+ const chosen=bestFit||smallest;
+ if(!chosen)throw Error('No se pudo generar una versión compatible.');
+ return chosen;
 }
-function settings(){return{q:Number(quality.value)/100,maxWidth:Number(width.value),fmt:format.value,pdf:pdfMode.value,smart:Boolean(smart?.checked)}}
+function settings(){return{q:Number(quality.value)/100,maxWidth:Number(width.value),fmt:format.value,pdf:pdfMode.value,smart:Boolean(smart?.checked),targetBytes:Number(target.value||0)*1024}}
 async function imageFile(file,s){
- const result=await compressImage(file,ext(file.name),s.q,s.maxWidth,s.fmt,s.smart?file.size:0);
- const reduced=result.qualityUsed<s.q;
- const note='Resolución: '+result.dimensions
-  +(result.extension!==ext(file.name).replace('jpeg','jpg')?' · Formato convertido':'')
-  +(result.lossy?' · Calidad: '+Math.round(result.qualityUsed*100)+' %'+(reduced?' (ajustada para intentar reducir el tamaño)':''):' · PNG sin pérdida de calidad por ajuste');
- return {blob:result.blob,name:nextName(file.name,'-comprimida',result.extension),note};
+ if(s.targetBytes&&file.size<=s.targetBytes)return{blob:file,name:file.name,note:'La imagen original ya cumple el límite elegido; no se alteró.',alreadyOk:true,targetMet:true};
+ const limit=s.targetBytes?s.targetBytes:(s.smart?file.size:0);
+ const result=await compressImage(file,ext(file.name),s.q,s.maxWidth,s.fmt,limit);
+ const note='Resolución de salida: '+result.dimensions
+   +(result.extension!==ext(file.name).replace('jpeg','jpg')?' · Convertida a '+result.extension.toUpperCase():'')
+   +(result.lossy?' · Calidad aproximada: '+Math.round(result.qualityUsed*100)+' %':' · PNG sin pérdida por calidad')
+   +(s.targetBytes?(result.targetMet?' · Objetivo de '+(s.targetBytes/1024)+' KB alcanzado':' · No se alcanzó el objetivo de '+(s.targetBytes/1024)+' KB'):'');
+ return {blob:result.blob,name:nextName(file.name,'-comprimida',result.extension),note,targetMet:result.targetMet};
 }
 async function pdfFile(file,s){
  if(!window.PDFLib)throw Error('La biblioteca PDF no pudo cargarse. Comprueba tu conexión a internet.');
@@ -150,7 +211,8 @@ async function process(){
  if(busy||!selected.length)return;busy=true;dispose();$('results').replaceChildren();renderFiles();const s=settings();
  let savedCount=0;status('Trabajando. Mantén abierta esta pestaña…','working');
  for(let i=0;i<selected.length;i++){
-  const file=selected[i],kind=ext(file.name),block=document.createElement('article');block.className='result-card';
+  const file=selected[i],kind=ext(file.name),block=document.createElement('article');
+  status('Procesando '+(i+1)+' de '+selected.length+': '+file.name+'…','working');block.className='result-card';
   const h=document.createElement('h3');h.textContent=file.name;block.append(h);
   try{
    let out;
@@ -162,9 +224,27 @@ async function process(){
    const p=document.createElement('p');p.textContent='Original: '+bytes(file.size)+' · Resultado: '+bytes(out.blob.size)+' · '+(change>=0?'Reducción: '+change.toFixed(1)+' %':'Aumento: '+(-change).toFixed(1)+' %');
    block.append(p);
    const note=document.createElement('small');note.textContent=out.note;block.append(note);
-   if(out.blob.size<file.size){
-    const p=document.createElement('p');p.className='result-success';p.textContent='¡Listo! Tu archivo ocupa menos espacio.';
-    block.append(p,saveLink(out.blob,out.name));savedCount++;
+   const sizeTarget=s.targetBytes;
+   const reachedTarget=sizeTarget>0&&out.blob.size<=sizeTarget;
+   if(sizeTarget>0){
+     const resultTarget=document.createElement('p');
+     resultTarget.className=reachedTarget?'target-status target-ok':'target-status target-missed';
+     resultTarget.textContent=reachedTarget
+       ?'✓ Dentro del límite: '+bytes(out.blob.size)+' de '+bytes(sizeTarget)
+       :'⚠ No se alcanzó el máximo de '+bytes(sizeTarget)+'. Resultado: '+bytes(out.blob.size)+'.';
+     block.append(resultTarget);
+     if(!reachedTarget){
+       const advice=document.createElement('p');advice.className='result-warning';
+       advice.textContent=['jpg','jpeg','png','webp'].includes(kind)
+         ?'Este archivo no pudo quedar por debajo de '+bytes(sizeTarget)+' con los ajustes disponibles. Prueba una imagen más sencilla o acepta una pérdida de detalle mayor en otro editor.'
+         :'En PDF, Word y archivos de texto no siempre es técnicamente posible llegar a '+bytes(sizeTarget)+' sin perder contenido. El formato y su estructura imponen un tamaño mínimo.';
+       block.append(advice);
+     }
+   }
+   if(out.blob.size<file.size||out.alreadyOk){
+    const p=document.createElement('p');p.className='result-success';
+    p.textContent=out.alreadyOk?'Tu archivo original ya cumple el tamaño máximo.':reachedTarget?'¡Listo! Se alcanzó el tamaño solicitado.':'Se redujo el archivo, pero comprueba si cumple tu límite.';
+    block.append(p,saveLink(out.blob,out.name,out.alreadyOk?'⬇ Descargar original (ya cumple)':'⬇ Descargar archivo comprimido'));savedCount++;
    }else{
     const warn=document.createElement('p');warn.className='result-warning';
     warn.textContent='Esta versión no es más ligera que el original. Puedes ajustar la calidad, convertir a WebP o descargarla igualmente si la necesitas.';
@@ -182,7 +262,7 @@ async function process(){
   }catch(err){const warn=document.createElement('p');warn.className='result-error';warn.textContent='No se procesó: '+err.message;block.append(warn)}
   $('results').append(block);
  }
- busy=false;renderFiles();status('Proceso terminado: '+savedCount+' de '+selected.length+' archivo(s) se redujeron.'+(savedCount<selected.length?' Revisa las opciones de los resultados que no se redujeron.':''),savedCount===selected.length?'success':'warning');
+ busy=false;renderFiles();status('Proceso terminado. '+savedCount+' de '+selected.length+' archivo(s) disponibles para descargar.'+(savedCount<selected.length?' Consulta las alternativas en los resultados.':''),savedCount===selected.length?'success':'warning');
 }
 input.addEventListener('change',()=>{addFiles(input.files);input.value=''});
 zone.addEventListener('dragover',e=>{e.preventDefault();zone.classList.add('dragging')});
