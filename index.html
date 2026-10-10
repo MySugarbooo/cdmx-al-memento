@@ -4,10 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#181634">
-<meta name="description" content="Juega gratis Cat y las Estrellas Perdidas: un juego de plataformas con 16 niveles, cuatro mundos, música original y avance guardado en tu navegador.">
+<meta name="description" content="Cat: Pulso Aurora. Juego de acción y plataformas con disparos de energía, cuatro jefes, música relajante y progreso guardado.">
 <meta name="google-adsense-account" content="ca-pub-6521969406386261">
 <meta property="og:type" content="website"><meta property="og:title" content="Cat y las Estrellas Perdidas | Juega gratis">
-<meta property="og:description" content="Acompaña a Cat, una aventurera valiente, por cuatro mundos mágicos. Tu progreso se guarda automáticamente.">
+<meta property="og:description" content="Acompaña a Cat, una joven inventora de sombrero negro, contra cuatro guardianes mecánicos para salvar las estrellas.">
 <meta property="og:site_name" content="Cat y las Estrellas Perdidas">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="/assets/site.css">
@@ -20,28 +20,29 @@
 <body>
 <a class="skip-link" href="#jugar">Ir directamente al juego</a>
 <header class="site-header"><div class="container nav-row">
- <a href="/" class="brand" aria-label="Cat y las Estrellas Perdidas, inicio"><span class="brand-icon">✦</span><span>CAT<span class="brand-dot">.</span> <small>LAS ESTRELLAS PERDIDAS</small></span></a>
+ <a href="/" class="brand" aria-label="Cat y las Estrellas Perdidas, inicio"><span>CAT<span class="brand-dot">.</span> <small>LAS ESTRELLAS PERDIDAS</small></span></a>
  <nav aria-label="Navegación"><a href="#jugar">Jugar</a><a href="#historia">Historia</a><a href="#level-map">Niveles</a><a href="#instrucciones">Cómo jugar</a><a href="/contacto.html">Contacto</a></nav>
 </div></header>
 <main>
 <section class="intro container">
  <div class="intro-copy">
   <p class="eyebrow"><span class="spark">✧</span> UNA AVENTURA GRATIS · PARA COMPUTADORA Y CELULAR</p>
-  <h1>Cuando el cielo se apaga,<br><em>Cat enciende la aventura.</em></h1>
-  <p>Ayuda a <strong>Cat</strong>, una exploradora valiente de Lunaria, a recuperar las estrellas que desaparecieron misteriosamente. Salta, encuentra secretos y descubre una historia de amistad, coraje y luz.</p>
+  <h1>El cielo está en peligro.<br><em>Cat tiene el poder de salvarlo.</em></h1>
+  <p>Conoce a <strong>Cat</strong>, una joven inventora de sombrero negro y cabello castaño. Su dispositivo <strong>Pulso Aurora</strong> dispara energía luminosa contra robots y guardianes que robaron las estrellas de Lunaria. Salta, esquiva y enfréntate a cuatro jefes en una historia de ciencia y magia.</p>
   <div class="hero-actions"><a href="#jugar" class="button button-bright">▶ Jugar ahora <span>↗</span></a><a href="#historia" class="button button-ghost">Conocer la historia</a></div>
-  <div class="hero-pills"><span>✦ 16 niveles</span><span>♡ 4 mundos</span><span>♫ Música original</span><span>▣ Guarda el progreso</span></div>
+  <div class="hero-pills"><span>16 niveles más desafiantes</span><span>4 jefes</span><span>Música ambiental</span><span>Progreso guardado</span></div>
  </div>
- <div class="intro-art" aria-hidden="true"><div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div><span class="art-star art-star-a">✦</span><span class="art-star art-star-b">✧</span><span class="art-star art-star-c">✶</span><div class="art-moon"></div><div class="art-girl"><div class="art-ears"></div><div class="art-hair"></div><div class="art-face"><span class="eye eye-a"></span><span class="eye eye-b"></span><span class="smile"></span></div><div class="art-scarf"></div><div class="art-coat"></div><div class="art-boots"></div></div><span class="art-label">¡Hola! Soy Cat ♡</span></div>
+ <div class="intro-art" aria-hidden="true"><div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div><span class="art-star art-star-a">✦</span><span class="art-star art-star-b">✧</span><span class="art-star art-star-c">✶</span><div class="art-moon"></div><div class="art-girl"><div class="art-ears"></div><div class="art-hair"></div><div class="art-face"><span class="eye eye-a"></span><span class="eye eye-b"></span><span class="smile"></span></div><div class="art-scarf"></div><div class="art-coat"></div><div class="art-boots"></div></div><span class="art-label">¡Soy Cat!</span></div>
 </section>
 <section class="section game-section" id="jugar">
  <div class="container"><div class="section-top"><div><p class="eyebrow">EL JUEGO</p><h2>Tu aventura empieza aquí <span class="gradient-star">✦</span></h2><p>Sin instalar nada y sin crear una cuenta. La partida se guarda en este navegador.</p></div><span class="pill-online"><span class="live-dot"></span> Guardado automático</span></div>
  <div class="game-layout">
   <div class="game-column">
    <section class="game-panel" aria-label="Juego de plataformas Cat y las Estrellas Perdidas">
-    <div class="game-panel-top"><span class="game-title-icon">✦</span><strong id="level-name">Cat te espera en Lunaria</strong><span class="game-panel-keys">← → para caminar · ESPACIO para saltar</span></div>
+    <div class="game-panel-top"><span class="game-title-icon">✦</span><strong id="level-name">Cat te espera en Lunaria</strong><span class="game-panel-keys">A / D caminar · ESPACIO saltar · J disparar</span></div>
     <div class="game-shell" id="game-shell">
      <canvas id="game-canvas" width="960" height="540" tabindex="0" role="img" aria-label="Juego de plataformas. Controla a Cat con las flechas o A y D. Pulsa espacio para saltar."></canvas>
+     <div class="boss-status" id="boss-status" hidden><strong id="boss-name">JEFE</strong><div class="boss-track"><span id="boss-health"></span></div></div>
      <div class="screen-overlay" id="screen-overlay" aria-live="polite">
       <div class="overlay-panel">
        <div class="overlay-decoration" aria-hidden="true">✦ · ✧ · ✦</div>
@@ -57,7 +58,7 @@
      <div><small>VIDAS</small><strong id="hud-hearts" class="hud-hearts">❤ ❤ ❤</strong></div>
      <div><small>DESTELLOS</small><strong id="hud-coins">0</strong></div>
      <div><small>ESTRELLA</small><strong id="hud-star">☆ Pendiente</strong></div>
-     <div><small>CONTROL</small><strong id="hud-checkpoint">◇ Sin activar</strong></div>
+     <div><small>CONTROL</small><strong id="hud-checkpoint">◇ Sin activar</strong></div><div><small>DISPARO</small><strong id="hud-power">PULSO AURORA</strong></div><div><small>ESQUIVA</small><strong id="hud-dash">LISTO</strong></div>
     </div>
     <div class="progress-line"><div id="progress-fill"></div></div>
     <div class="game-panel-bottom"><span id="game-message">Camina, salta y descubre las estrellas.</span><span id="hud-progress">0 %</span></div>
@@ -69,10 +70,9 @@
     <button id="fullscreen-btn" class="toolbar-button" type="button">⛶ Pantalla completa</button>
    </div>
    <div class="mobile-controls" aria-label="Controles para pantalla táctil">
-    <div class="dpad"><button type="button" data-control="left" aria-label="Caminar a la izquierda">◀</button><button type="button" data-control="right" aria-label="Caminar a la derecha">▶</button></div>
-    <button type="button" data-control="jump" class="jump-control" aria-label="Saltar y dar doble salto">↑ SALTAR</button>
+    <div class="dpad"><button type="button" data-control="left" aria-label="Caminar a la izquierda">◀</button><button type="button" data-control="right" aria-label="Caminar a la derecha">▶</button></div><div class="action-pad"><button type="button" data-control="dash" class="dash-control" aria-label="Esquivar">↝ ESQUIVAR</button><button type="button" data-control="shoot" class="shoot-control" aria-label="Disparar, mantener para cargar">✧ DISPARAR</button><button type="button" data-control="jump" class="jump-control" aria-label="Saltar y dar doble salto">↑ SALTAR</button></div>
    </div>
-   <p class="game-hint">En computadora usa <kbd>A</kbd>/<kbd>D</kbd> o <kbd>←</kbd>/<kbd>→</kbd> y <kbd>Espacio</kbd> para saltar (puedes hacer doble salto). <kbd>P</kbd> pausa, <kbd>M</kbd> activa o desactiva la música. En celular usa los botones de pantalla.</p>
+   <p class="game-hint">En computadora usa <kbd>A</kbd>/<kbd>D</kbd> para caminar, <kbd>Espacio</kbd> para saltar dos veces, <kbd>J</kbd> o <kbd>K</kbd> para disparar, manteniendo pulsado para cargar un superpulso, y <kbd>Mayús</kbd> para esquivar. <kbd>P</kbd> pausa y <kbd>M</kbd> controla la música. En celular usa los botones de pantalla.</p>
   </div>
   <aside class="game-sidebar">
    <div class="side-card progress-card"><div class="side-heading"><div><span class="side-kicker">TU VIAJE</span><h3>El diario de Cat</h3></div><span class="side-emoji">📖</span></div>
@@ -88,21 +88,21 @@
  </div>
 </section>
 <section class="section story-section" id="historia"><div class="container story-layout">
- <div class="story-copy"><p class="eyebrow">EL UNIVERSO DE CAT</p><h2>Una historia que vale<br><em>cada salto.</em></h2><p>En el pequeño pueblo de <strong>Lunaria</strong>, las estrellas visitaban las ventanas cada noche. Una mañana, el cielo despertó vacío: el guardián Sombra había escondido su luz para protegerlas de apagarse.</p><p>Cat, una chica curiosa de bufanda mágica, recibe de su abuela una misión: recuperar las cuatro constelaciones, conocer nuevos amigos y enseñar a Sombra que la luz no se pierde cuando se comparte.</p><p><strong>No hay violencia gráfica ni complicaciones.</strong> Solo saltos, pequeños retos, secretos y la alegría de avanzar.</p></div>
+ <div class="story-copy"><p class="eyebrow">EL UNIVERSO DE CAT</p><h2>Una historia con misterio<br><em>y un nuevo poder.</em></h2><p>En <strong>Lunaria</strong>, las estrellas mantenían vivo el tiempo. Una noche, las máquinas del Núcleo de Medianoche capturaron su energía y la ciudad quedó inmóvil. Sus cuatro guardianes se adueñaron del bosque, las torres, las minas y la fortaleza.</p><p>Cat encuentra el <strong>Pulso Aurora</strong>, una tecnología diseñada por su madre desaparecida. Mientras lucha contra centinelas y desactiva los guardianes, descubre que las máquinas siguen una señal de auxilio. Alguien quedó atrapada dentro del Núcleo.</p><p><strong>Acción de ciencia y magia sin violencia gráfica.</strong> Disparos de luz, doble salto, esquiva, torretas, drones, cuatro jefes y una revelación al final de cada capítulo.</p></div>
  <div class="chapters">
-  <div class="chapter"><span class="chapter-number">01</span><div><h3>🌿 Bosque de los Farolitos</h3><p>La primera luz duerme entre los árboles.</p></div></div>
-  <div class="chapter"><span class="chapter-number">02</span><div><h3>☁ Islas sobre las Nubes</h3><p>Una nube diminuta ha olvidado su canción.</p></div></div>
-  <div class="chapter"><span class="chapter-number">03</span><div><h3>💎 Cuevas del Eco Azul</h3><p>La valentía responde a los ecos del miedo.</p></div></div>
-  <div class="chapter"><span class="chapter-number">04</span><div><h3>🌅 Castillo del Amanecer</h3><p>Una última chispa puede encenderlo todo.</p></div></div>
+  <div class="chapter"><span class="chapter-number">01</span><div><h3>🌿 Bosque de los Circuitos Dormidos</h3><p>Un centinela controla el bosque.</p></div></div>
+  <div class="chapter"><span class="chapter-number">02</span><div><h3>☁ Torres del Viento Quieto</h3><p>Los molinos dejaron de girar.</p></div></div>
+  <div class="chapter"><span class="chapter-number">03</span><div><h3>💎 Minas de Cristal Silencioso</h3><p>Los cristales guardan un mensaje de auxilio.</p></div></div>
+  <div class="chapter"><span class="chapter-number">04</span><div><h3>🌅 Fortaleza del Último Amanecer</h3><p>La guardiana Lira está atrapada en el Núcleo.</p></div></div>
  </div>
 </div></section>
 <section class="section levels-section" id="level-map"><div class="container">
- <div class="section-top"><div><p class="eyebrow">ELIGE TU CAMINO</p><h2>El mapa de Lunaria</h2><p>Desbloquea cada nivel al superar el anterior. Puedes repetirlos para recoger las estrellas que te faltaron.</p></div><span class="level-map-symbol" aria-hidden="true">🗺️</span></div>
+ <div class="section-top"><div><p class="eyebrow">ELIGE TU CAMINO</p><h2>El mapa de Lunaria</h2><p>Cada mundo termina con un jefe que debes derrotar para desbloquear el portal. Puedes repetir niveles para recuperar estrellas y mejorar tu puntuación.</p></div><span class="level-map-symbol" aria-hidden="true">🗺️</span></div>
  <div id="level-list" class="level-list" role="group" aria-label="Seleccionar nivel desbloqueado"></div>
  <p class="reset-description">¿Quieres volver a empezar desde cero? <button type="button" id="reset-btn" class="text-button">Borrar mi progreso guardado</button> (solo en este navegador).</p>
 </div></section>
-<section class="section info-section" id="instrucciones"><div class="container"><p class="eyebrow">FÁCIL DE APRENDER</p><h2>Así se juega</h2>
- <div class="how-grid"><article class="how-card"><span class="how-icon">← →</span><h3>1. Muévete</h3><p>Camina con las flechas del teclado o con A y D. En celular usa los botones de dirección.</p></article><article class="how-card"><span class="how-icon">↑ ✦</span><h3>2. Salta</h3><p>Presiona Espacio, W o ↑ para saltar. Puedes volver a saltar en el aire y llegar a plataformas altas.</p></article><article class="how-card"><span class="how-icon">★ ◆</span><h3>3. Encuentra secretos</h3><p>Recoge destellos, busca una estrella especial por nivel y toca cristales azules para guardar un punto de control.</p></article><article class="how-card"><span class="how-icon">🚪</span><h3>4. Llega al portal</h3><p>Evita los pinchos, salta sobre los enemigos y cruza el portal dorado para desbloquear el siguiente nivel.</p></article></div>
+<section class="section info-section" id="instrucciones"><div class="container"><p class="eyebrow">FÁCIL DE APRENDER</p><h2>Domina el Pulso Aurora</h2>
+ <div class="how-grid"><article class="how-card"><span class="how-icon">← →</span><h3>1. Muévete</h3><p>Camina con las flechas o con A/D. Esquiva drones y torretas mientras corres por las plataformas.</p></article><article class="how-card"><span class="how-icon">↑ ✦</span><h3>2. Salta</h3><p>Salta con Espacio y vuelve a pulsarlo en el aire. Usa Mayús para realizar una esquiva rápida.</p></article><article class="how-card"><span class="how-icon">★ ◆</span><h3>3. Encuentra secretos</h3><p>Pulsa J/K para disparar luz y mantenlo presionado para cargar un superpulso. Los cristales azules guardan tu avance.</p></article><article class="how-card"><span class="how-icon">🚪</span><h3>4. Llega al portal</h3><p>Enfrenta robots, torretas y drones. En los niveles 4, 8, 12 y 16 vence al jefe para abrir el portal.</p></article></div>
 </div></section>
 <section class="section faq-section"><div class="container"><p class="eyebrow">PREGUNTAS FRECUENTES</p><h2>Sobre el juego y tu progreso</h2>
  <div class="faq-items"><details><summary>¿El juego es gratis?</summary><p>Sí, puedes jugar todos los niveles sin pagar ni crear una cuenta. Puede aparecer publicidad de terceros si Google AdSense aprueba el sitio. Nunca necesitas hacer clic en anuncios para desbloquear niveles.</p></details>
@@ -114,5 +114,5 @@
 </div></section>
 <section class="section footer-cta"><div class="container"><div class="cta-panel"><span class="cta-icon">✦</span><div><h2>¿Lista para devolverle las estrellas a Lunaria?</h2><p>Cat ya tiene puesta su bufanda. Solo falta tu primer salto.</p></div><a class="button button-bright" href="#jugar">Jugar gratis ↗</a></div></div></section>
 </main>
-<footer class="footer"><div class="container footer-grid"><div><a href="/" class="brand"><span class="brand-icon">✦</span><span>CAT<span class="brand-dot">.</span> <small>LAS ESTRELLAS PERDIDAS</small></span></a><p>Un juego de plataformas original y gratuito sobre la amistad, la valentía y la luz que compartimos.</p></div><div><h3>Explora</h3><a href="#jugar">Jugar</a><a href="#level-map">Niveles</a><a href="#historia">Historia</a><a href="/guias/">Guías y consejos</a></div><div><h3>Información</h3><a href="/sobre-nosotros.html">Sobre el proyecto</a><a href="/privacidad.html">Privacidad</a><a href="/terminos.html">Términos</a><a href="/contacto.html">Contacto</a></div></div><div class="container footer-bottom"><span>© 2026 Cat y las Estrellas Perdidas. Personajes, historia y música originales.</span><span>Contacto: <a href="mailto:sanchezaxochitl@gmail.com">sanchezaxochitl@gmail.com</a></span></div></footer>
+<footer class="footer"><div class="container footer-grid"><div><a href="/" class="brand"><span>CAT<span class="brand-dot">.</span> <small>LAS ESTRELLAS PERDIDAS</small></span></a><p>Un juego de plataformas original y gratuito sobre la amistad, la valentía y la luz que compartimos.</p></div><div><h3>Explora</h3><a href="#jugar">Jugar</a><a href="#level-map">Niveles</a><a href="#historia">Historia</a><a href="/guias/">Guías y consejos</a></div><div><h3>Información</h3><a href="/sobre-nosotros.html">Sobre el proyecto</a><a href="/privacidad.html">Privacidad</a><a href="/terminos.html">Términos</a><a href="/contacto.html">Contacto</a></div></div><div class="container footer-bottom"><span>© 2026 Cat y las Estrellas Perdidas. Personajes, historia y música originales.</span><span>Contacto: <a href="mailto:sanchezaxochitl@gmail.com">sanchezaxochitl@gmail.com</a></span></div></footer>
 </body></html>

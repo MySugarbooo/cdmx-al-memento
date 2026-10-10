@@ -1,12 +1,12 @@
 # Cat y las Estrellas Perdidas
 
-Un juego de plataformas 2D original en español. Cat es la heroína de Lunaria, una joven aventurera con bufanda mágica que debe recuperar cuatro constelaciones para volver a encender las estrellas.
+Un juego de plataformas 2D original en español. Cat es la heroína de Lunaria, una joven inventora de sombrero negro y cabello castaño, equipada con Pulso Aurora que debe recuperar cuatro constelaciones para volver a encender las estrellas.
 
 ## Funcionalidad
 - **16 niveles**, agrupados en 4 capítulos con historias propias.
 - Juego 100 % en JavaScript y Canvas, sin servidor ni dependencias para jugar.
 - Personaje Cat ilustrado por el motor Canvas, con doble salto, tres corazones, enemigos, pinchos, destellos, estrella especial, cristales de guardado y portales.
-- Música y efectos chiptune originales, sintetizados con Web Audio. Empieza tras interacción del usuario; se puede silenciar.
+- Música ambiental relajante y efectos originales, sintetizados con Web Audio. Empieza tras interacción del usuario; se puede silenciar.
 - Controles de teclado (A/D, flechas, W, Espacio, P, M, R) y controles táctiles en móvil.
 - Progreso guardado localmente: niveles desbloqueados, estrellas, mejor puntuación de cada nivel, punto de control, preferencias musicales, final completado.
 - Guardado seguro con fallback si localStorage no está disponible.
@@ -41,3 +41,12 @@ Contacto: `sanchezaxochitl@gmail.com`.
 
 ## Mantenimiento
 Para crear más niveles, editar `assets/levels.js`. Música `assets/audio.js`, motor `assets/game.js`, diseño `assets/site.css`. Cambiar textos legales o de privacidad si se agregan servicios externos. 
+
+## Actualización Pulso Aurora
+- Nueva apariencia de Cat basada en la referencia del usuario: sombrero negro, ojos grandes, cabello castaño largo y ropa oscura, creada mediante dibujo vectorial Canvas (sin utilizar ni publicar la foto de referencia).
+- Disparo J/K/F, mantener para carga de energía, esquiva Mayús/L; en celular nuevos botones de disparo y esquiva.
+- Torretas, drones, proyectiles, plataformas móviles, cuatro jefes con barra de energía y portales bloqueados hasta vencerlos.
+- Historia nueva sobre el Núcleo de Medianoche, Lira, la madre de Cat y los cuatro guardianes.
+- Banda sonora ambiental original mediante acordes y arpegios suaves en Web Audio.
+- Guardado local compatible con partidas anteriores; nuevas guías de habilidades y jefes.
+- La publicidad no afecta los controles ni la recompensa del jugador. Google AdSense requiere aprobación independiente.

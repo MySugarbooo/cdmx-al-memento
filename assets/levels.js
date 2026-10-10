@@ -2,40 +2,78 @@
 (() => {
 "use strict";
 const chapters=[
- {title:"Bosque de los Farolitos",short:"Bosque",subtitle:"Donde la noche guarda secretos",sky:["#171d52","#624892","#fdaf83"],ground:"#27476a",top:"#52ceab",accent:"#85fbe4",flora:"#80cfb3",story:"Cat vivía en Lunaria, un pueblo donde cada noche las estrellas bajaban a jugar. Una mañana, el cielo amaneció vacío. Su abuela le entregó una bufanda luminosa y le susurró: «La primera chispa duerme en el bosque».",end:"La primera constelación vuelve a brillar. Una luciérnaga habla de una torre sobre las nubes, donde el viento colecciona canciones."},
- {title:"Islas sobre las Nubes",short:"Nubes",subtitle:"Saltos altos, sueños gigantes",sky:["#265aa0","#8c83df","#f6bddf"],ground:"#6660a8",top:"#b4a2ff",accent:"#fff3ae",flora:"#f4d8ff",story:"Siguiendo el brillo del bosque, Cat llegó a unas islas flotantes. Allí conoció a Nimbo, una nube diminuta que había olvidado cómo llover. «Si recuerdas mi canción, te mostraré el camino», dijo.",end:"Nimbo vuelve a cantar y las islas dejan de temblar. En la distancia, un eco responde desde el interior de la montaña."},
- {title:"Cuevas del Eco Azul",short:"Cuevas",subtitle:"El valor también puede iluminar",sky:["#0e143d","#2a2d75","#7a4f9d"],ground:"#252757",top:"#7b87ed",accent:"#8af7f7",flora:"#85bfea",story:"El eco de la montaña repetía el mayor miedo de Cat: «Eres demasiado pequeña». Ella apretó su bufanda y respondió: «Soy lo bastante valiente para dar el siguiente paso».",end:"Los cristales recuperan su voz. Queda una última chispa, encerrada tras las puertas del castillo del amanecer."},
- {title:"Castillo del Amanecer",short:"Castillo",subtitle:"Toda heroína empieza con un paso",sky:["#301644","#803657","#fbb878"],ground:"#4c345d",top:"#f9b26c",accent:"#ffe3a0",flora:"#ffbabb",story:"En el castillo esperaba Sombra, un guardián que había escondido las estrellas para que nunca se apagaran. Cat entendió entonces que guardar la luz para siempre también significa dejar al mundo a oscuras.",end:"Cat abrió las manos. Sombra devolvió la última chispa y descubrió que compartir luz no la hace desaparecer. Lunaria volvió a encenderse. Y sobre su ventana, una nueva estrella llevaba su nombre."}
+ {
+  "title": "El Bosque de los Circuitos Dormidos",
+  "short": "Bosque",
+  "subtitle": "Despierta la primera señal",
+  "sky": [
+   "#151c41",
+   "#40537b",
+   "#80a48e"
+  ],
+  "ground": "#27476a",
+  "top": "#59d7b1",
+  "accent": "#a1ffe5",
+  "flora": "#8eeac0",
+  "story": "Lunaria pierde sus estrellas y hasta los relojes se detienen. Cat, una joven inventora de sombrero negro y cabello castaño, descubre que alguien instaló cuatro máquinas para robar la energía de los recuerdos. Su madre dejó un dispositivo llamado Pulso Aurora: dispara luz y rompe los sellos de sombra. Cat sale al bosque a buscar la primera señal, sabiendo que la noche no se arregla sola.",
+  "end": "Cat apaga el Centinela de Raíces y recupera el primer fragmento del mapa. Dentro de la máquina encuentra una voz grabada: «No es un robo. Es una señal de auxilio». Ahora sabe que alguien la espera en las alturas."
+ },
+ {
+  "title": "Las Torres del Viento Quieto",
+  "short": "Torres",
+  "subtitle": "La ciudad suspendida no puede respirar",
+  "sky": [
+   "#283b79",
+   "#7d8dc0",
+   "#f3c7c8"
+  ],
+  "ground": "#5a588c",
+  "top": "#b9b1ff",
+  "accent": "#fff0b4",
+  "flora": "#ead7ff",
+  "story": "En las torres que flotan sobre Lunaria, el viento se congeló y cientos de molinos dejaron de girar. Cat conoce a Nimbo, una nube que protegía a los viajeros hasta que un autómata llamado Vigía Nacarado cerró sus rutas. Para avanzar tendrá que combinar saltos, disparos y una carrera contra la corriente.",
+  "end": "El Vigía Nacarado cae y las hélices vuelven a girar. Nimbo cuenta que todas las máquinas reciben órdenes desde un lugar sellado bajo la montaña. Cat escucha un nombre: Lira, la guardiana que desapareció hace años."
+ },
+ {
+  "title": "Las Minas de Cristal Silencioso",
+  "short": "Minas",
+  "subtitle": "Incluso el eco necesita ser escuchado",
+  "sky": [
+   "#101633",
+   "#393b79",
+   "#88609c"
+  ],
+  "ground": "#282951",
+  "top": "#85a1fc",
+  "accent": "#a6fff5",
+  "flora": "#91cde8",
+  "story": "Cat entra en las minas donde los cristales almacenan voces antiguas. Los guardianes mecánicos le disparan desde las pasarelas y el suelo se quiebra bajo sus botas. Allí descubre que Lira intentó salvar a Lunaria de una tormenta estelar, pero sus máquinas aprendieron a obedecer sus órdenes demasiado literalmente.",
+  "end": "La Reina del Eco desactiva su última barrera. Cat escucha a Lira: «Si estás oyendo esto, significa que el Núcleo me atrapó. No destruyas la luz, libérala». El camino hacia la fortaleza por fin queda abierto."
+ },
+ {
+  "title": "La Fortaleza del Último Amanecer",
+  "short": "Fortaleza",
+  "subtitle": "Un último pulso para encender el cielo",
+  "sky": [
+   "#261934",
+   "#864259",
+   "#ffc49a"
+  ],
+  "ground": "#503452",
+  "top": "#ffbe77",
+  "accent": "#ffe2a9",
+  "flora": "#ffb7c0",
+  "story": "La fortaleza se eleva sobre una ciudad sin amaneceres. El Núcleo de Medianoche controla a los robots y ha encerrado a Lira dentro de un reloj gigantesco. Cat comprende que la energía robada no puede recuperarse a golpes solamente: debe destruir los escudos, apagar los cuatro guardianes y llegar al corazón para liberar a Lira.",
+  "end": "Cat dispara un último Pulso Aurora y rompe los anillos del Núcleo. Lira queda libre, las máquinas dejan de atacar y miles de estrellas regresan al cielo. Cat no salva Lunaria por ser invencible: la salva porque aprendió a avanzar incluso con miedo. Al amanecer, su madre le deja una nota: «Ahora escribe tú la próxima aventura»."
+ }
 ];
-const names=[
- "La bufanda brillante","El puente de musgo","Luciérnagas traviesas","El árbol que susurraba",
- "Saltos de algodón","El viento juguetón","La canción de Nimbo","Por encima del cielo",
- "Brillos en la roca","Los pasos del eco","El río subterráneo","La promesa de Cat",
- "Jardines del ocaso","Escaleras de luna","La última chispa","El regreso de las estrellas"
-];
-const tips=[
- "Camina con A/D o las flechas. Salta con Espacio, W o ↑.",
- "Hay plataformas sobre el suelo: ¡explóralas!",
- "Salta sobre los enemigos para ahuyentarlos.",
- "Recoge la estrella grande para el álbum de Cat.",
- "Tienes un salto extra mientras estás en el aire.",
- "Los corazones son tu energía. Evita los pinchos.",
- "Los cristales azules guardan un punto de control.",
- "¡El portal dorado está al final del camino!",
- "Las monedas mejoran tu puntuación de nivel.",
- "El sonido puede desactivarse cuando quieras.",
- "Puedes volver a jugar niveles completados.",
- "Respira: el juego guarda tu avance automáticamente.",
- "Intenta recoger todas las estrellas grandes.",
- "Una sombra nunca puede apagar tu valentía.",
- "El portal final abrirá una nueva página de la historia.",
- "Al regresar a Lunaria, todas las luces te esperan."
-];
+const names=["La señal en la niebla","Engranajes entre árboles","El puente del centinela","Guardián del Bosque","El ascensor de nubes","Baterías en el aire","La estación del viento","Vigía Nacarado","Pasadizos de cuarzo","La galería de las sombras","El corazón de la mina","Reina del Eco","Las murallas del ocaso","El corredor sin tiempo","Asalto al Núcleo","El Último Amanecer"];
+const tips=["Muévete con A/D. Espacio salta. J o K dispara el Pulso Aurora.","Dispara a los centinelas antes de cruzar los puentes.","Los drones también lanzan proyectiles: esquívalos con doble salto.","Derrota al jefe para abrir el portal.","Busca plataformas altas y usa dos saltos.","Destruye las torretas mientras avanzas.","Los enemigos resisten varios golpes en niveles avanzados.","Ataca y esquiva: el jefe tiene un patrón de disparo.","Los cristales azules guardan tu avance.","Usa el doble salto para pasar sobre los rayos.","Recoge corazones y busca tu estrella secreta.","Derrota a la Reina del Eco, incluso si cambia de dirección.","Tu pulso puede destruir obstáculos enemigos.","Calcula el disparo antes de entrar a las plataformas.","Usa los puntos de control antes del combate final.","El Núcleo necesita varios golpes. ¡No te rindas!"];
 const WIDTH=960,HEIGHT=540,GROUND=474;
 function makeLevel(index){
  const chapter=Math.floor(index/4),stage=index%4;
- const length=2840+index*48;
- const grounds=[{x:0,w:960},{x:1070,w:830},{x:2010,w:length-2010}];
+ const length=3000+index*60;
+ const grounds=[{x:0,w:940},{x:1110,w:760},{x:2050,w:length-2050}];
  const base=[
   [280,382,148],[512,315,125],[740,372,138],[925,395,135],
   [1083,360,125],[1303,320,144],[1528,356,155],[1744,316,152],
@@ -46,8 +84,8 @@ function makeLevel(index){
   y:y+Math.round(Math.cos(index*1.67+i*.8)*13)-((stage===3&&i%4===1)?18:0),w,h:22
  }));
  // Un puente visible adicional sobre cada hueco del suelo.
- platforms.push({x:960,y:425,w:110,h:18},{x:1900,y:423,w:115,h:18});
- for(let x=2750;x<length-225;x+=225)platforms.push({x,y:340+Math.round(Math.sin(x)*35),w:135,h:22});
+ platforms.push({x:936,y:410,w:92,h:18},{x:1025,y:363,w:83,h:18},{x:1866,y:414,w:95,h:18},{x:1961,y:362,w:92,h:18});
+ for(let x=2720;x<length-225;x+=210)platforms.push({x,y:325+Math.round(Math.sin(x/150+index)*25),w:122,h:22});
  const orbs=[];
  for(let x=160;x<length-180;x+=130)orbs.push({x,y:GROUND-56-((Math.floor(x/130)+index)%3)*15});
  for(const p of platforms)orbs.push({x:p.x+p.w/2,y:p.y-35});
@@ -56,18 +94,22 @@ function makeLevel(index){
  const star={x:starPlatform.x+starPlatform.w/2,y:starPlatform.y-56};
  const checkpoint={x:1680,y:GROUND-66};
  const enemies=[
-  {x:620+(stage*16),y:GROUND-27,range:58+stage*4,speed:1.0+index*.03},
-  {x:1190+chapter*20,y:GROUND-27,range:56+chapter*5,speed:1.2+index*.025},
-  {x:2180+stage*12,y:GROUND-27,range:67+stage*4,speed:1.0+index*.03}
+  {x:640+(stage*16),y:GROUND-29,range:58+stage*4,speed:1.0+index*.03,type:'crawler',hp:1+Math.floor(index/6)},
+  {x:1280+chapter*20,y:GROUND-30,range:56+chapter*5,speed:1.2+index*.025,type:'turret',hp:2+chapter},
+  {x:2270+stage*12,y:GROUND-29,range:67+stage*4,speed:1.0+index*.03,type:'crawler',hp:2+chapter}
  ];
- if(stage>0)enemies.push({x:2540,y:GROUND-27,range:42,speed:1.4+index*.02});
+ if(stage>0)enemies.push({x:2590,y:GROUND-30,range:40,speed:1.4+index*.02,type:'turret',hp:2+chapter});
+ if(stage>1)enemies.push({x:1500,y:320,range:56,speed:1.65+index*.03,type:'drone',hp:2+chapter});
  const spikes=[
-  {x:814+stage*12,y:GROUND-18,w:45,h:18},
-  {x:1395+chapter*11,y:GROUND-18,w:48,h:18},
-  {x:2250+stage*10,y:GROUND-18,w:45,h:18}
+  {x:795+stage*10,y:GROUND-18,w:45,h:18},
+  {x:1420+chapter*11,y:GROUND-18,w:48,h:18},
+  {x:2380+stage*10,y:GROUND-18,w:45,h:18}
  ];
- if(stage>=2)spikes.push({x:2605,y:GROUND-18,w:42,h:18});
- return {index,chapter,stage,name:names[index],tip:tips[index],theme:chapters[chapter],length,ground:grounds,platforms,orbs,star,checkpoint,enemies,spikes,hearts:stage%2===1?[{x:platforms[4].x+platforms[4].w/2,y:platforms[4].y-52}]:[],portal:{x:length-150,y:GROUND-92},skyObjects:8+index%4};
+ if(stage>=2)spikes.push({x:2680,y:GROUND-18,w:45,h:18});
+ const boss=stage===3?{x:length-435,y:GROUND-116,w:91,h:116,hp:12+chapter*5,kind:['Arbóreo','Nacarado','Eco','Núcleo'][chapter]}:null;
+ const moving=stage===0?[]:[{x:1600,y:275,w:115,h:19,originY:275,amplitude:45+stage*8,speed:1.3+chapter*.16,phase:index},{x:2380,y:260,w:117,h:19,originY:260,amplitude:35+stage*8,speed:1.45,phase:index+2}];
+ platforms.push(...moving);
+ return {boss,moving,index,chapter,stage,name:names[index],tip:tips[index],theme:chapters[chapter],length,ground:grounds,platforms,orbs,star,checkpoint,enemies,spikes,hearts:stage%2===1?[{x:platforms[4].x+platforms[4].w/2,y:platforms[4].y-52}]:[],portal:{x:length-150,y:GROUND-92},skyObjects:8+index%4};
 }
 const levels=names.map((_,i)=>makeLevel(i));
 window.CAT_DATA={chapters,names,levels,WIDTH,HEIGHT,GROUND,total:16};
