@@ -117,5 +117,76 @@ def update():
     print(f"Guardadas {len(results)} noticias recientes de fuentes no sociales")
 
 
+
+REPORTS = Path(__file__).with_name("reports.json")
+REPORT_DIR = Path(__file__).with_name("reportes")
+MAIL = "sanchezaxochitl@gmail.com"
+SITE = "https://cdmx-al-memento.pages.dev"
+
+def report_shell(title, body):
+    from html import escape
+    return (
+      '<!doctype html><html lang="es"><head><meta charset="utf-8">'
+      '<meta name="viewport" content="width=device-width,initial-scale=1">'
+      '<title>'+escape(title)+' | CDMX AL MEMENTO</title>'
+      '<link rel="stylesheet" href="/styles.css"></head><body>'
+      '<header><div class="wrap"><div class="top"><a class="logo" href="/">CDMX <span>AL MEMENTO</span></a></div>'
+      '<nav><a href="/">Noticias</a><a href="/reportes/">Reportes</a><a href="/guias/">Guías</a></nav></div></header>'
+      '<main class="wrap prose">'+body+'</main><footer><div class="wrap"><a href="/contacto.html">Contacto</a> · '
+      '<a href="mailto:'+MAIL+'">'+MAIL+'</a></div></footer></body></html>'
+    )
+
+def generate_report():
+    from html import escape
+    try:
+        current = json.loads(DEST.read_text(encoding="utf-8"))
+        rows = current.get("articles", [])
+        entries = json.loads(REPORTS.read_text(encoding="utf-8")).get("reports", []) if REPORTS.exists() else []
+        entries = [r for r in entries if isinstance(r, dict) and re.fullmatch(r"\d{4}-\d{2}-\d{2}", str(r.get("date","")))]
+        REPORT_DIR.mkdir(exist_ok=True)
+        local_day = datetime.now(timezone(timedelta(hours=-6))).strftime("%Y-%m-%d")
+        sources = {r.get("source","") for r in rows if isinstance(r,dict)}
+        if len(rows) >= 8 and len(sources) >= 3:
+            parts = [
+              '<p class="eyebrow">Reporte de seguimiento automático · '+local_day+'</p>',
+              '<h1>Noticias y titulares de la Ciudad de México</h1>',
+              '<p>Selección automatizada de titulares, clasificada por temas y enlazada con las publicaciones originales.</p>',
+              '<div class="notice">Este índice no es investigación independiente, ni verifica por sí mismo las noticias. '
+              'Revisa la fecha y el contexto de cada fuente antes de tomar decisiones.</div>'
+            ]
+            for category in ("Metro","Movilidad","Seguridad","Cultura","Gobierno","CDMX"):
+                group = [x for x in rows if x.get("category")==category][:8]
+                if not group: continue
+                parts.append('<h2>'+escape(category)+'</h2><ol>')
+                for x in group:
+                    link=x.get("url","")
+                    if not link.startswith("https://news.google.com/"): continue
+                    parts.append('<li><a target="_blank" rel="noopener noreferrer nofollow" href="'+escape(link,quote=True)+'">'
+                      +escape(x.get("title",""))+'</a> — '+escape(x.get("source",""))+'</li>')
+                parts.append('</ol>')
+            parts.append('<p>Para solicitar correcciones escribe a <a href="mailto:'+MAIL+'">'+MAIL+'</a>.</p>')
+            filename=local_day+".html"
+            (REPORT_DIR/filename).write_text(report_shell("Reporte "+local_day,"\n".join(parts)),encoding="utf-8")
+            entries=[e for e in entries if e.get("date")!=local_day]
+            entries.append({"date":local_day,"url":"/reportes/"+filename,"count":len(rows)})
+        entries.sort(key=lambda x:x["date"],reverse=True)
+        entries=entries[:21]
+        REPORTS.write_text(json.dumps({"updated":current.get("updated",""),"reports":entries},ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+        listing='<h1>Reportes automáticos de CDMX</h1><p>Índices de noticias publicados por medios externos. No son reportajes verificados de primera mano.</p><ul>'
+        for e in entries:
+            listing+='<li><a href="'+escape(e["url"],quote=True)+'">Reporte '+escape(e["date"])+'</a> · '+str(int(e.get("count",0)))+' titulares</li>'
+        listing+='</ul>'
+        (REPORT_DIR/"index.html").write_text(report_shell("Reportes diarios",listing),encoding="utf-8")
+        sitemap_items=["","contacto.html","privacidad.html","sobre-nosotros.html","politica-editorial.html","guias/","reportes/"]
+        sitemap_items += ["guias/"+v for v in ("estado-del-metro.html","alertas-por-lluvia.html","cierres-viales.html","tramites-cdmx.html")]
+        sitemap_items += ["reportes/"+p.name for p in REPORT_DIR.glob("20??-??-??.html")]
+        (DEST.parent/"sitemap.xml").write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
+           + ''.join('<url><loc>'+SITE+'/'+escape(s)+'</loc></url>' for s in sitemap_items)+'</urlset>\n',encoding="utf-8")
+        print("Reportes guardados:",len(entries))
+    except Exception as exc:
+        raise RuntimeError("La actualización de los reportes falló: "+str(exc)) from exc
+
 if __name__ == "__main__":
     update()
+    generate_report()
+
