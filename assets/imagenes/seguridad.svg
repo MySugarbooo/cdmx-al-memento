@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Ilustración editorial de seguridad">
+<defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#122a53"/><stop offset="1" stop-color="#3268a2"/></linearGradient>
+ <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff" stop-opacity=".5"/><stop offset="1" stop-color="#fff" stop-opacity=".06"/></linearGradient>
+ <radialGradient id="glow"><stop stop-color="#70ebd5" stop-opacity=".58"/><stop offset="1" stop-color="#70ebd5" stop-opacity="0"/></radialGradient>
+ <pattern id="dots" width="23" height="23" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.6" fill="#fff" opacity=".1"/></pattern>
+ </defs>
+<rect width="800" height="500" fill="url(#bg)"/>
+<circle cx="638" cy="101" r="250" fill="url(#glow)"/><path d="M0 370Q200 318 389 374T800 325V500H0Z" fill="#091934" opacity=".23"/>
+<rect width="800" height="500" fill="url(#dots)"/>
+<g transform="translate(143 26)">
+ <path d="M257 53 457 115v132c0 132-90 198-200 244C144 445 57 379 57 247V115Z" fill="#112d44" opacity=".36" transform="translate(12 9)"/>
+ <path d="M257 53 457 115v132c0 132-90 198-200 244C144 445 57 379 57 247V115Z" fill="#b3e9f1"/>
+ <path d="M257 93 418 143v102c0 105-67 162-161 203C161 409 97 350 97 245V143Z" fill="#1c5470"/>
+ <path d="m180 253 55 54 104-120" fill="none" stroke="#a2fae7" stroke-width="31" stroke-linecap="round" stroke-linejoin="round"/>
+ <circle cx="257" cy="265" r="163" fill="none" stroke="#e9fbfb" stroke-width="5" opacity=".12"/>
+ </g>
+ <g stroke="#b7faf5" stroke-width="5" opacity=".8"><path d="M630 95h67M665 62v67M72 365h62M103 334v63"/></g>
+<path d="M-20 479Q200 440 390 478T830 470" fill="none" stroke="#fff" stroke-width="3" opacity=".12"/>
+</svg>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Ilustración editorial de cdmx">
+<defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#191c48"/><stop offset="1" stop-color="#81517b"/></linearGradient>
+ <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff" stop-opacity=".5"/><stop offset="1" stop-color="#fff" stop-opacity=".06"/></linearGradient>
+ <radialGradient id="glow"><stop stop-color="#f6bca1" stop-opacity=".58"/><stop offset="1" stop-color="#f6bca1" stop-opacity="0"/></radialGradient>
+ <pattern id="dots" width="23" height="23" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.6" fill="#fff" opacity=".1"/></pattern>
+ </defs>
+<rect width="800" height="500" fill="url(#bg)"/>
+<circle cx="638" cy="101" r="250" fill="url(#glow)"/><path d="M0 370Q200 318 389 374T800 325V500H0Z" fill="#091934" opacity=".23"/>
+<rect width="800" height="500" fill="url(#dots)"/>
+<g fill="#c3b8da" opacity=".24">
+ <path d="M30 462V237h87v225M153 462V193h92v269M273 462V250h88v212M390 462V160h95v302M533 462V216h104v246M668 462V263h101v199"/>
+ </g>
+ <g fill="#f5c6a3"><path d="M80 464V285h69v179M172 464V315h77v149M292 464V217h77v247M405 464V178h95v286M550 464V263h68v201M644 464V312h82v152"/></g>
+ <g fill="#ac7791"><path d="M305 464V150h41v314M313 142V89h25v53M323 88V51h5v37M411 464V128h80v336M427 112h48v18"/></g>
+ <path d="M415 128h75" stroke="#ffe3c9" stroke-width="12"/>
+ <g fill="#332e51" opacity=".47"><rect x="102" y="327" width="12" height="15"/><rect x="206" y="356" width="12" height="18"/><rect x="310" y="267" width="12" height="16"/><rect x="433" y="204" width="15" height="15"/><rect x="564" y="311" width="12" height="18"/></g>
+ <path d="M30 464h740" stroke="#fff0d7" opacity=".5" stroke-width="8"/>
+<path d="M-20 479Q200 440 390 478T830 470" fill="none" stroke="#fff" stroke-width="3" opacity=".12"/>
+</svg>

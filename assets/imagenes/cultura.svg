@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Ilustración editorial de cultura">
+<defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#51335e"/><stop offset="1" stop-color="#ac6281"/></linearGradient>
+ <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff" stop-opacity=".5"/><stop offset="1" stop-color="#fff" stop-opacity=".06"/></linearGradient>
+ <radialGradient id="glow"><stop stop-color="#f9bca0" stop-opacity=".58"/><stop offset="1" stop-color="#f9bca0" stop-opacity="0"/></radialGradient>
+ <pattern id="dots" width="23" height="23" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.6" fill="#fff" opacity=".1"/></pattern>
+ </defs>
+<rect width="800" height="500" fill="url(#bg)"/>
+<circle cx="638" cy="101" r="250" fill="url(#glow)"/><path d="M0 370Q200 318 389 374T800 325V500H0Z" fill="#091934" opacity=".23"/>
+<rect width="800" height="500" fill="url(#dots)"/>
+<g transform="translate(127 23)">
+ <path d="M95 372V143L289 37l199 106v229Z" fill="#132e4b" opacity=".3" transform="translate(14 13)"/>
+ <path d="M95 372V143L289 37l199 106v229Z" fill="#fff3d5"/>
+ <path d="M95 151 289 38l199 113" fill="none" stroke="#fcd59a" stroke-width="26" stroke-linecap="round" stroke-linejoin="round"/>
+ <g fill="#c78877"><rect x="146" y="179" width="49" height="184" rx="12"/><rect x="232" y="179" width="49" height="184" rx="12"/><rect x="318" y="179" width="49" height="184" rx="12"/><rect x="404" y="179" width="49" height="184" rx="12"/></g>
+ <rect x="92" y="352" width="405" height="30" rx="11" fill="#f4c17e"/>
+ <rect x="61" y="379" width="466" height="31" rx="12" fill="#ef9a85"/>
+ <path d="M242 93q48-35 96 0" stroke="#ce8b77" stroke-width="9" fill="none"/>
+ <circle cx="292" cy="119" r="13" fill="#d99878"/>
+ <path d="M474 74c24 14 30 42 16 58M486 57c30 21 43 52 33 86" fill="none" stroke="#b8e7df" stroke-width="8" stroke-linecap="round"/>
+ </g>
+<path d="M-20 479Q200 440 390 478T830 470" fill="none" stroke="#fff" stroke-width="3" opacity=".12"/>
+</svg>

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Ilustración editorial de movilidad">
+<defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#702b52"/><stop offset="1" stop-color="#ee775e"/></linearGradient>
+ <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff" stop-opacity=".5"/><stop offset="1" stop-color="#fff" stop-opacity=".06"/></linearGradient>
+ <radialGradient id="glow"><stop stop-color="#ffc785" stop-opacity=".58"/><stop offset="1" stop-color="#ffc785" stop-opacity="0"/></radialGradient>
+ <pattern id="dots" width="23" height="23" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.6" fill="#fff" opacity=".1"/></pattern>
+ </defs>
+<rect width="800" height="500" fill="url(#bg)"/>
+<circle cx="638" cy="101" r="250" fill="url(#glow)"/><path d="M0 370Q200 318 389 374T800 325V500H0Z" fill="#091934" opacity=".23"/>
+<rect width="800" height="500" fill="url(#dots)"/>
+<g transform="translate(98 37)">
+ <path d="M14 410h592" stroke="#ffe3c6" stroke-width="15" opacity=".5"/>
+ <path d="M95 338h407" stroke="#ffa49b" stroke-width="8" stroke-linecap="round"/>
+ <rect x="122" y="144" width="365" height="216" rx="42" fill="#183a50" opacity=".4" transform="translate(9 12)"/>
+ <rect x="122" y="139" width="365" height="216" rx="42" fill="#f5b46d"/>
+ <path d="M183 139h225l39 112H151Z" fill="#e88765"/>
+ <path d="M206 163h176l24 77H182Z" fill="#8bd0d6"/>
+ <rect x="137" y="265" width="335" height="78" rx="24" fill="#faebc8"/>
+ <rect x="162" y="285" width="100" height="20" rx="10" fill="#fa9a79"/><rect x="348" y="285" width="100" height="20" rx="10" fill="#fa9a79"/>
+ <circle cx="207" cy="351" r="39" fill="#19324a"/><circle cx="404" cy="351" r="39" fill="#19324a"/>
+ <circle cx="207" cy="351" r="16" fill="#a7d8dd"/><circle cx="404" cy="351" r="16" fill="#a7d8dd"/>
+ <rect x="531" y="18" width="18" height="245" rx="9" fill="#d7edf1"/>
+ <rect x="504" y="32" width="73" height="171" rx="24" fill="#193748"/>
+ <circle cx="540" cy="70" r="18" fill="#ff788e"/><circle cx="540" cy="118" r="18" fill="#ffd68d"/><circle cx="540" cy="166" r="18" fill="#82efcb"/>
+ </g>
+<path d="M-20 479Q200 440 390 478T830 470" fill="none" stroke="#fff" stroke-width="3" opacity=".12"/>
+</svg>

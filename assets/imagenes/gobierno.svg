@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Ilustración editorial de gobierno">
+<defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#41325d"/><stop offset="1" stop-color="#7d568d"/></linearGradient>
+ <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff" stop-opacity=".5"/><stop offset="1" stop-color="#fff" stop-opacity=".06"/></linearGradient>
+ <radialGradient id="glow"><stop stop-color="#fbce9e" stop-opacity=".58"/><stop offset="1" stop-color="#fbce9e" stop-opacity="0"/></radialGradient>
+ <pattern id="dots" width="23" height="23" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.6" fill="#fff" opacity=".1"/></pattern>
+ </defs>
+<rect width="800" height="500" fill="url(#bg)"/>
+<circle cx="638" cy="101" r="250" fill="url(#glow)"/><path d="M0 370Q200 318 389 374T800 325V500H0Z" fill="#091934" opacity=".23"/>
+<rect width="800" height="500" fill="url(#dots)"/>
+<g transform="translate(135 46)">
+ <path d="m15 143 265-125 266 125Z" fill="#e3bd88"/>
+ <path d="m54 142 226-103 229 103Z" fill="#fff0cb"/>
+ <rect x="63" y="155" width="436" height="239" rx="9" fill="#e9c89a"/>
+ <g fill="#8f636b"><rect x="95" y="180" width="55" height="177" rx="12"/><rect x="181" y="180" width="55" height="177" rx="12"/><rect x="267" y="180" width="55" height="177" rx="12"/><rect x="353" y="180" width="55" height="177" rx="12"/><rect x="439" y="180" width="30" height="177" rx="10"/></g>
+ <rect x="49" y="354" width="466" height="24" rx="8" fill="#fff0c6"/>
+ <rect x="29" y="382" width="505" height="27" rx="9" fill="#dc9c8b"/>
+ <circle cx="280" cy="106" r="20" fill="#f8d7a7"/><path d="M273 107v-14h12" fill="none" stroke="#8a5a66" stroke-width="4" stroke-linecap="round"/>
+ </g>
+<path d="M-20 479Q200 440 390 478T830 470" fill="none" stroke="#fff" stroke-width="3" opacity=".12"/>
+</svg>
