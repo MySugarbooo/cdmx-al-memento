@@ -1,19 +1,41 @@
-# CDMX AL MEMENTO
-Portal estático y agregador de titulares de noticias de CDMX. Diseño responsivo y espacios reservados para publicidad.
+# ComprimeFácil MX — Herramientas gratuitas
 
-## Publicación gratis
-1. Crea un repositorio público en GitHub y sube todos los archivos, incluida la carpeta `.github`.
-2. En GitHub > Actions > Actualizar titulares CDMX, ejecuta `Run workflow` para generar `news.json`.
-3. En Settings > Actions > General, configura Workflow permissions como **Read and write permissions** para permitir el commit automático.
-4. Activa GitHub Pages (Settings > Pages > Deploy from a branch > main / root). Tu sitio tendrá una URL `usuario.github.io/repositorio`.
-5. GitHub Actions intenta actualizar titulares cada 3 horas (puede retrasarse, fallar o pausarse). Comprueba su ejecución periódicamente.
+Cuarto proyecto web independiente preparado para la misma cuenta AdSense del usuario.
 
-## Importante
-- La página es un **agregador**: enlaza a los medios; no reproduce artículos ni afirma verificar independientemente los hechos.
-- Los feeds RSS de terceros pueden cambiar o bloquear solicitudes. Se necesita mantenimiento y seguimiento de errores.
-- No incluye cuenta de Gmail, envío de correo ni anuncios reales. AdSense requiere sitio público, contenido y aprobación; antes de solicitarlo, añade política de privacidad, contacto real y páginas editoriales.
-- Para monetizar conviene publicar reportajes originales y no depender solo de titulares externos.
-- Nunca subas contraseñas ni credenciales al repositorio.
+## Funciones
 
+- Imágenes JPG, PNG, WebP: reducción de dimensiones y/o calidad y conversión cuando se elige.
+- PDF: reescritura básica sin aplanar (pdf-lib), o aplanado de páginas a JPEG con pdf.js y jsPDF. El aplanado destruye texto seleccionable, enlaces y formularios; se explica explícitamente en el sitio.
+- DOCX: recodificación conservadora de imágenes internas y recomprimido ZIP; no admite DOC antiguo.
+- TXT, MD, CSV, JSON, RTF: salida ZIP sin pérdida.
+- Se descarga un resultado solo si ocupa menos que el archivo original, sin prometer porcentajes.
+- Hasta 12 archivos y 40 MB por archivo, con limitaciones adicionales para PDF de muchas páginas.
+- Procesamiento del contenido realizado en el navegador, sin enviar archivos a un backend.
+- Dependencias JS externas desde cdnjs: pdf-lib 1.17.1, pdf.js 3.11.174, jsPDF 2.5.2, JSZip 3.10.1. La conexión es necesaria para obtener las bibliotecas.
 
-Noticias iniciales incluidas: 6 enlaces con fuentes del 7-9 de octubre de 2026. Las actualizaciones posteriores se hacen con Google News RSS mediante GitHub Actions; requieren subir el proyecto a GitHub y habilitar Actions. No se ha publicado en internet ni activado AdSense.
+## Publicación gratuita en Cloudflare
+
+Este sitio está en la rama `comprimefacil-mx` del repositorio `MySugarbooo/cdmx-al-memento`. Es una rama con árbol independiente. No elegir `main` ni `cuenta-y-listo` ni `texto-claro`.
+
+Crear un **nuevo proyecto Cloudflare Pages** importando el repositorio existente:
+
+- Project name: `comprimefacil-mx` (si disponible)
+- Production branch: `comprimefacil-mx`
+- Framework preset: None
+- Build command: vacío
+- Build output directory: `.`
+- Root directory: raíz
+
+La URL final prevista es `https://comprimefacil-mx.pages.dev`, condicionada a que Cloudflare asigne ese nombre. Si es distinto, actualizar robots.txt y sitemap.xml.
+
+## Monetización
+
+Incluidos identificador `ca-pub-6521969406386261`, script de Google AdSense y archivo `ads.txt`.
+Para habilitar anuncios debe agregarse el dominio final en **Sitios** de la misma cuenta existente de Google AdSense, solicitar la revisión y esperar la aprobación. No existe garantía de que Google lo apruebe ni de que genere ingresos.
+Revisar la política de privacidad y configurar una CMP cuando sea exigible según regiones de visitantes.
+
+Contacto directo: `sanchezaxochitl@gmail.com`.
+
+## Mantenimiento editorial
+
+Se incluyeron guías originales sobre formatos, calidad y privacidad. Las funciones son permanentes y no necesitan artículos diarios; conviene revisarlas y probarlas periódicamente y actualizar versiones de bibliotecas por seguridad.
