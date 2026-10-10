@@ -108,8 +108,68 @@
     "zocalo"
   ]
 };
+
+ const selections=new Map();
+ const normalize=id=>String(id||"");
  function src(id){return images[id]?'/assets/fotos/'+id+'.jpg':''}
- function source(id){return images[id]?'https://commons.wikimedia.org/wiki/File:'+encodeURIComponent(images[id].file.replace(/ /g,'_')):''}
- function pick(category,title){const group=groups[category]||groups.CDMX;let h=0;for(const cp of String(title||''))h=((h*31)+cp.codePointAt(0))>>>0;return group[h%group.length]}
- window.CDMX_FOTOS={images,groups,src,source,pick};
+ function source(id){
+  const item=images[id];
+  if(!item)return '';
+  if(item.source&&/^https:\/\/commons\.wikimedia\.org\/wiki\/File:/.test(item.source))return item.source;
+  return 'https://commons.wikimedia.org/wiki/File:'+encodeURIComponent(item.file.replace(/ /g,'_'));
+ }
+ function hash(input){let h=2166136261;for(const cp of String(input||'')){h^=cp.codePointAt(0);h=Math.imul(h,16777619)}return h>>>0}
+ function pick(category,title){
+  const group=groups[category]||groups.CDMX;
+  return group.length?group[hash(title)%group.length]:'';
+ }
+ function addCatalog(catalog){
+  if(!catalog||!Array.isArray(catalog.photos))return 0;
+  let added=0;
+  for(const item of catalog.photos){
+   if(!item||!/^archivo_[a-z0-9_]{2,50}$/.test(item.id)||images[item.id])continue;
+   if(typeof item.author!=='string'||typeof item.topic!=='string'||typeof item.license!=='string')continue;
+   if(!/^https:\/\/commons\.wikimedia\.org\/wiki\/File:/.test(item.source||''))continue;
+   const cat=groups[item.category]?item.category:'CDMX';
+   images[item.id]={file:item.file,author:item.author.slice(0,140),topic:item.topic.slice(0,140),license:item.license,licenseUrl:item.licenseUrl||'',source:item.source,category:cat};
+   groups[cat].push(item.id);added++;
+  }
+  return added;
+ }
+ function prepare(articles){
+  selections.clear();
+  const used=new Set(),waiting=[];
+  // Primera vuelta: reservar una fotografía local distinta de la categoría correspondiente.
+  for(const article of articles){
+   const candidates=groups[article.category]||groups.CDMX;
+   const start=hash(article.title)%Math.max(1,candidates.length);
+   let choice='';
+   for(let i=0;i<candidates.length;i++){
+    const id=candidates[(start+i)%candidates.length];
+    if(!used.has(id)){choice=id;break}
+   }
+   if(choice){used.add(choice);selections.set(article.url,choice)}
+   else waiting.push(article);
+  }
+  // Segunda vuelta: usar otros puntos de la CDMX en los temas con menor disponibilidad.
+  const all=Object.keys(images),general=groups.CDMX;
+  for(const article of waiting){
+   const begin=hash(article.title);
+   const available=general.concat(all.filter(id=>!general.includes(id)));
+   let choice='';
+   for(let i=0;i<available.length;i++){
+    const id=available[(begin+i)%available.length];
+    if(!used.has(id)){choice=id;break}
+   }
+   if(!choice)choice=pick(article.category,article.title);
+   if(choice){used.add(choice);selections.set(article.url,choice)}
+  }
+  return {assigned:selections.size,distinct:new Set(selections.values()).size,available:all.length};
+ }
+ function forArticle(article){return selections.get(article.url)||pick(article.category,article.title)}
+ function alternatives(category,exclude){
+  const preferred=(groups[category]||groups.CDMX).concat(groups.CDMX);
+  return [...new Set(preferred.concat(Object.keys(images)))].filter(id=>id!==exclude);
+ }
+ window.CDMX_FOTOS={images,groups,src,source,pick,addCatalog,prepare,forArticle,alternatives};
 })();

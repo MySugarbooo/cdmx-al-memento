@@ -11,23 +11,31 @@ function element(tag,cls,txt){const e=document.createElement(tag);if(cls)e.class
 function validLink(u){try{const p=new URL(u);return p.protocol==='https:'&&p.hostname==='news.google.com'}catch{return false}}
 function articleVisual(a){
  const figure=element('div','news-visual');
- const id=photoLibrary?.pick(a.category,a.title);
- const photo=id?photoLibrary.images[id]:null;
+ const first=photoLibrary?.forArticle(a);
+ const photo=first?photoLibrary.images[first]:null;
  if(!photo){figure.append(element('span','photo-unavailable','Fotografía no disponible'));return figure}
  const image=document.createElement('img');
- image.src=photoLibrary.src(id,640);
- image.alt='Fotografía de archivo: '+photo.topic+'. No muestra la noticia descrita.';
  image.loading='lazy';image.decoding='async';image.width=640;image.height=400;
- const family=photoLibrary.groups[a.category]||photoLibrary.groups.CDMX;
- let tried=0;
- image.addEventListener('error',()=>{
-  if(tried<family.length-1){tried++;image.src=photoLibrary.src(family[(family.indexOf(id)+tried)%family.length],640)}
-  else{image.hidden=true;figure.append(element('span','photo-unavailable','Fotografía de archivo temporalmente no disponible'))}
- });
  const label=element('span','visual-label','FOTO DE ARCHIVO');
- const credit=element('a','photo-credit-inline','© '+photo.author+' · '+photo.license);
- credit.href=photoLibrary.source(id);credit.target='_blank';credit.rel='noopener noreferrer';
- credit.title='Origen y licencia de la fotografía';
+ const credit=element('a','photo-credit-inline');
+ credit.target='_blank';credit.rel='noopener noreferrer';credit.title='Origen y licencia de la fotografía';
+ let active=first;
+ const attempted=new Set();
+ function display(id){
+  active=id;attempted.add(id);
+  const entry=photoLibrary.images[id];
+  image.src=photoLibrary.src(id);
+  image.alt='Fotografía de archivo: '+entry.topic+'. No muestra el suceso descrito.';
+  image.dataset.photoId=id;
+  credit.textContent='© '+entry.author+' · '+entry.license;
+  credit.href=photoLibrary.source(id);
+ }
+ image.addEventListener('error',()=>{
+  const next=photoLibrary.alternatives(a.category,active).find(id=>!attempted.has(id));
+  if(next)display(next);
+  else{image.hidden=true;figure.append(element('span','photo-unavailable','Fotografía no disponible'))}
+ });
+ display(first);
  figure.append(image,label,credit);
  return figure;
 }
@@ -87,10 +95,13 @@ document.querySelectorAll('img[data-fallback-photo]').forEach(img=>{
 });
 Promise.allSettled([
  fetch('/news.json?t='+Date.now()).then(r=>{if(!r.ok)throw Error('news');return r.json()}),
- fetch('/reports.json?t='+Date.now()).then(r=>{if(!r.ok)throw Error('reports');return r.json()})
-]).then(([news,reports])=>{
+ fetch('/reports.json?t='+Date.now()).then(r=>{if(!r.ok)throw Error('reports');return r.json()}),
+ fetch('/assets/fotos/catalogo.json?t='+Date.now()).then(r=>{if(!r.ok)throw Error('catalog');return r.json()})
+]).then(([news,reports,catalog])=>{
+ if(catalog.status==='fulfilled')photoLibrary?.addCatalog(catalog.value);
  if(news.status==='fulfilled'&&Array.isArray(news.value.articles)){
   articles=news.value.articles.filter(a=>a&&typeof a.title==='string'&&validLink(a.url));
+  photoLibrary?.prepare(articles);
   updated=String(news.value.updated||'sin fecha');render();
  }else{
   if(status)status.textContent='No fue posible cargar las noticias.';
