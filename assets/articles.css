@@ -1,0 +1,21 @@
+
+/* Lecturas, guías, contacto, términos y privacidad */
+.article-section{padding:62px 0 92px;background:linear-gradient(140deg,#110d29,#251741)}
+.article{max-width:900px;margin:auto;padding:clamp(24px,5vw,57px);background:#211a3d;border:1px solid #ffffff24;border-radius:24px;box-shadow:0 22px 60px #08041b70}
+.article h1{font-size:clamp(34px,5vw,54px);letter-spacing:-1.8px;margin-bottom:27px}
+.article h2{font-size:clamp(21px,3vw,28px);letter-spacing:-.5px;margin:35px 0 14px;color:#ffe1ed}
+.article p,.article li{font-size:15px;line-height:1.95;color:#d1c5df}
+.article li{padding-left:3px;margin-bottom:7px}
+.article strong{color:#fff2fb}
+.article a{word-break:break-word}.article code{padding:3px 7px;border-radius:6px;background:#100d2a;color:#e9cbfe}
+.article .breadcrumb{font-size:12px;color:#a99dc2;margin-bottom:29px}.article .breadcrumb a{color:#ffc1db}
+.article-callout{background:linear-gradient(100deg,#44305a,#49325a);padding:19px 22px;border-radius:14px;border:1px solid #ddabed5e;margin-top:38px}
+.article-callout p{margin-bottom:0}.article-callout h2{margin:0 0 15px}
+.reading-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:25px}
+.reading-card{display:flex;flex-direction:column;align-items:start;padding:23px;background:#292043;border:1px solid #ffffff24;border-radius:15px;text-decoration:none}
+.reading-card:hover{border-color:#ffaad4}
+.reading-card .chapter-number{flex:0 0 auto;margin-bottom:16px}
+.reading-card h2{font-size:21px;margin:0 0 8px;color:#ffe1ed}
+.reading-card p{font-size:13px;margin-bottom:17px;line-height:1.75}
+.reading-card span:last-child{font-weight:850;color:#ffbad7;font-size:12px;margin-top:auto}
+@media(max-width:650px){.reading-grid{grid-template-columns:1fr}.article-section{padding:30px 0 65px}.article{border-radius:15px}}
