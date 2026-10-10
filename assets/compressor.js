@@ -115,7 +115,7 @@ async function compressImage(blob,originalExt,level,limit,requested='auto',targe
  if(!chosen)throw Error('No se pudo generar una versión compatible.');
  return chosen;
 }
-function settings(){return{q:Number(quality.value)/100,maxWidth:Number(width.value),fmt:format.value,pdf:pdfMode.value,smart:Boolean(smart?.checked),targetBytes:Number(target.value||0)*1024}}
+function settings(){return{q:Number(quality.value)/100,maxWidth:Number(width.value),fmt:format.value,pdf:pdfMode.value,smart:Boolean(smart?.checked),targetKB:Number(target.value||0),targetBytes:Number(target.value||0)*1000}}
 async function imageFile(file,s){
  if(s.targetBytes&&file.size<=s.targetBytes)return{blob:file,name:file.name,note:'La imagen original ya cumple el límite elegido; no se alteró.',alreadyOk:true,targetMet:true};
  const limit=s.targetBytes?s.targetBytes:(s.smart?file.size:0);
@@ -123,7 +123,7 @@ async function imageFile(file,s){
  const note='Resolución de salida: '+result.dimensions
    +(result.extension!==ext(file.name).replace('jpeg','jpg')?' · Convertida a '+result.extension.toUpperCase():'')
    +(result.lossy?' · Calidad aproximada: '+Math.round(result.qualityUsed*100)+' %':' · PNG sin pérdida por calidad')
-   +(s.targetBytes?(result.targetMet?' · Objetivo de '+(s.targetBytes/1024)+' KB alcanzado':' · No se alcanzó el objetivo de '+(s.targetBytes/1024)+' KB'):'');
+   +(s.targetBytes?(result.targetMet?' · Objetivo de '+s.targetKB+' KB alcanzado':' · No se alcanzó el objetivo de '+s.targetKB+' KB'):'');
  return {blob:result.blob,name:nextName(file.name,'-comprimida',result.extension),note,targetMet:result.targetMet};
 }
 async function pdfFile(file,s){
@@ -230,14 +230,14 @@ async function process(){
      const resultTarget=document.createElement('p');
      resultTarget.className=reachedTarget?'target-status target-ok':'target-status target-missed';
      resultTarget.textContent=reachedTarget
-       ?'✓ Dentro del límite: '+bytes(out.blob.size)+' de '+bytes(sizeTarget)
-       :'⚠ No se alcanzó el máximo de '+bytes(sizeTarget)+'. Resultado: '+bytes(out.blob.size)+'.';
+       ?'✓ Dentro del límite: '+bytes(out.blob.size)+' de '+s.targetKB+' KB'
+       :'⚠ No se alcanzó el máximo de '+s.targetKB+' KB. Resultado: '+bytes(out.blob.size)+'.';
      block.append(resultTarget);
      if(!reachedTarget){
        const advice=document.createElement('p');advice.className='result-warning';
        advice.textContent=['jpg','jpeg','png','webp'].includes(kind)
-         ?'Este archivo no pudo quedar por debajo de '+bytes(sizeTarget)+' con los ajustes disponibles. Prueba una imagen más sencilla o acepta una pérdida de detalle mayor en otro editor.'
-         :'En PDF, Word y archivos de texto no siempre es técnicamente posible llegar a '+bytes(sizeTarget)+' sin perder contenido. El formato y su estructura imponen un tamaño mínimo.';
+         ?'Este archivo no pudo quedar por debajo de '+s.targetKB+' KB con los ajustes disponibles. Prueba una imagen más sencilla o acepta una pérdida de detalle mayor en otro editor.'
+         :'En PDF, Word y archivos de texto no siempre es técnicamente posible llegar a '+s.targetKB+' KB sin perder contenido. El formato y su estructura imponen un tamaño mínimo.';
        block.append(advice);
      }
    }
