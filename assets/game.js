@@ -163,7 +163,7 @@ class CatGame{
   const resume=restore&&this.save.checkpoint?.level===index;
   this.checkpointHit=Boolean(resume);
   this.health=resume?Math.max(2,this.save.checkpoint.hearts):3;
-  this.player={x:resume?this.level.checkpoint.x+30:72,y:GROUND-52,w:34,h:52,vx:0,vy:0,grounded:false,coyote:0,canDouble:true,facing:1,invuln:0,walk:0};
+  this.player={x:resume?this.level.checkpoint.x+30:72,y:GROUND-52,w:34,h:52,vx:0,vy:0,grounded:true,coyote:.095,canDouble:true,facing:1,invuln:0,walk:0};
   $('level-name').textContent=(index+1)+' · '+this.level.name;
   $('game-message').textContent=this.level.tip;
   this.updateHud();
@@ -202,7 +202,7 @@ class CatGame{
     btn.className='level-tile'+(locked?' is-locked':'')+(this.save.stars[index]?' has-star':'');
     const head=document.createElement('span');head.className='level-number';head.textContent=locked?'🔒':String(index+1).padStart(2,'0');
     const text=document.createElement('span');text.className='level-label';text.textContent=lvl.name;
-    const detail=document.createElement('span');detail.className='level-detail';detail.textContent=locked?'Bloqueado':this.save.stars[index]?'★ Estrella conseguida':index<this.save.unlocked-1?'✓ Completado':'Disponible';
+    const detail=document.createElement('span');detail.className='level-detail';detail.textContent=locked?'Bloqueado':this.save.stars[index]?'★ Estrella conseguida':(index<this.save.unlocked-1||(this.save.finished&&index===15))?'✓ Completado':'Disponible';
     btn.append(head,text,detail);
     btn.addEventListener('click',()=>{if(!locked)this.chooseLevel(index)});
     list.append(btn);
@@ -285,7 +285,7 @@ class CatGame{
   if(this.phase!=='playing')return;
   const p=this.player;
   p.x=this.checkpointHit?this.level.checkpoint.x+22:72;
-  p.y=GROUND-54;p.vx=0;p.vy=0;p.invuln=1.4;
+  p.y=GROUND-54;p.vx=0;p.vy=0;p.grounded=true;p.coyote=.095;p.canDouble=true;p.invuln=1.4;
  }
  step(dt){
   if(this.phase!=='playing')return;
