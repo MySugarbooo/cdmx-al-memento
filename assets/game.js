@@ -56,7 +56,7 @@ class CatGame{
   this.phase='menu';this.level=levels[0];this.levelIndex=0;
   this.player=null;this.held={left:false,right:false};this.jumpBuffer=0;
   this.camera=0;this.time=0;this.framePrev=0;this.score=0;this.coins=0;
-  this.particles=[];this.orbs=[];this.enemies=[];this.starFound=false;this.checkpointHit=false;
+  this.particles=[];this.orbs=[];this.enemies=[];this.hearts=[];this.starFound=false;this.checkpointHit=false;
   this.health=3;this.flash=0;this.soundEnabled=this.save.music;this.effects=0;
   this.overlay=$('screen-overlay');this.actions=$('overlay-actions');
   this.bind();
@@ -142,6 +142,7 @@ class CatGame{
  }
  chooseLevel(index,forceFresh=false){
   if(index>=this.save.unlocked)return;
+  $('jugar').scrollIntoView?.({behavior:'smooth',block:'start'});
   this.audio.init();
   if(index%4===0&&!forceFresh&&(!this.save.checkpoint||this.save.checkpoint.level!==index)){
     const chapter=chapters[Math.floor(index/4)];
@@ -158,9 +159,10 @@ class CatGame{
   this.health=3;this.flash=0;this.particles=[];
   this.orbs=this.level.orbs.map((orb,i)=>({...orb,hit:false,phase:i*.71}));
   this.enemies=this.level.enemies.map((enemy,i)=>({...enemy,alive:true,phase:i*.8}));
+  this.hearts=this.level.hearts.map(item=>({...item,hit:false}));
   const resume=restore&&this.save.checkpoint?.level===index;
   this.checkpointHit=Boolean(resume);
-  this.health=resume?this.save.checkpoint.hearts:3;
+  this.health=resume?Math.max(2,this.save.checkpoint.hearts):3;
   this.player={x:resume?this.level.checkpoint.x+30:72,y:GROUND-52,w:34,h:52,vx:0,vy:0,grounded:false,coyote:0,canDouble:true,facing:1,invuln:0,walk:0};
   $('level-name').textContent=(index+1)+' · '+this.level.name;
   $('game-message').textContent=this.level.tip;
@@ -184,7 +186,7 @@ class CatGame{
  }
  refreshStats(){
   $('total-stars').textContent=starsFor(this.save)+'/16';
-  $('total-levels').textContent=(this.save.unlocked-1)+'/16';
+  $('total-levels').textContent=(this.save.finished?16:this.save.unlocked-1)+'/16';
   $('total-coins').textContent=imageFriendly(this.save.bestCoins.reduce((a,b)=>a+b,0));
   $('music-btn').textContent=this.audio.enabled?'♫ Música: sí':'♪ Música: no';
   $('music-btn').setAttribute('aria-pressed',String(this.audio.enabled));
@@ -328,7 +330,15 @@ class CatGame{
   const st=l.star;
   if(!this.starFound&&Math.abs(p.x+p.w/2-st.x)<27&&Math.abs(p.y+p.h/2-st.y)<38){
    this.starFound=true;this.score+=100;this.audio.sfx('star');
+   $('game-message').textContent='¡Encontraste la estrella especial! Llega al portal para guardarla.';
    this.burst(st.x,st.y,'#fff6a0',30);
+  }
+  for(const heart of this.hearts){
+   if(heart.hit||this.health>=3)continue;
+   if(Math.abs(p.x+p.w/2-heart.x)<26&&Math.abs(p.y+p.h/2-heart.y)<32){
+    heart.hit=true;this.health=Math.min(3,this.health+1);this.audio.sfx('checkpoint');
+    this.burst(heart.x,heart.y,'#ffadce',14);
+   }
   }
   if(!this.checkpointHit&&Math.abs(p.x+p.w/2-l.checkpoint.x)<35&&p.y+p.h>l.checkpoint.y){
    this.checkpointHit=true;
@@ -372,6 +382,7 @@ class CatGame{
   ctx.save();ctx.translate(-this.camera,0);
   this.drawTerrain(ctx,l,time);
   this.drawOrbs(ctx,time);
+  this.drawHearts(ctx,time);
   this.drawStar(ctx,time);
   this.drawCheckpoint(ctx,time);
   this.drawEnemies(ctx,time);
@@ -482,6 +493,20 @@ class CatGame{
    ctx.shadowColor='#fff1a5';ctx.shadowBlur=15;ctx.fillStyle='#fff1b0';
    ctx.beginPath();ctx.arc(orb.x,y,7,0,Math.PI*2);ctx.fill();ctx.shadowBlur=0;
    ctx.fillStyle='#fff';ctx.beginPath();ctx.arc(orb.x-2,y-2,2,0,Math.PI*2);ctx.fill();
+  }
+ }
+ drawHearts(ctx,time){
+  for(const heart of this.hearts){
+   if(heart.hit||Math.abs(heart.x-this.camera)>W+80)continue;
+   const y=heart.y+Math.sin(time*3)*4;
+   ctx.save();ctx.translate(heart.x,y);
+   ctx.fillStyle='#ff95be';ctx.shadowColor='#ffafd4';ctx.shadowBlur=18;
+   ctx.beginPath();ctx.moveTo(0,11);
+   ctx.bezierCurveTo(-18,0,-16,-13,-4,-12);
+   ctx.bezierCurveTo(0,-12,0,-7,0,-6);
+   ctx.bezierCurveTo(3,-17,15,-16,16,-5);
+   ctx.bezierCurveTo(17,2,7,8,0,11);ctx.fill();
+   ctx.restore();
   }
  }
  drawStar(ctx,time){

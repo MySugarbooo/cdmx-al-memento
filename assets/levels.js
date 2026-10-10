@@ -42,7 +42,8 @@ function makeLevel(index){
   [1870,393,140],[2040,361,135],[2285,316,154],[2515,375,142]
  ];
  const platforms=base.map(([x,y,w],i)=>({
-  x:x+((i>5&&i<9)?stage*8:0),y:y-((stage===3&&i%4===1)?18:0),w,h:22
+  x:x+Math.round(Math.sin(index*1.43+i*1.21)*16)+((i>5&&i<9)?stage*8:0),
+  y:y+Math.round(Math.cos(index*1.67+i*.8)*13)-((stage===3&&i%4===1)?18:0),w,h:22
  }));
  // Un puente visible adicional sobre cada hueco del suelo.
  platforms.push({x:960,y:425,w:110,h:18},{x:1900,y:423,w:115,h:18});
@@ -55,18 +56,18 @@ function makeLevel(index){
  const star={x:starPlatform.x+starPlatform.w/2,y:starPlatform.y-56};
  const checkpoint={x:1680,y:GROUND-66};
  const enemies=[
-  {x:630,y:GROUND-27,range:64,speed:1.0+index*.03},
-  {x:1210,y:GROUND-27,range:72,speed:1.3+index*.025},
-  {x:2190,y:GROUND-27,range:77,speed:1.05+index*.03}
+  {x:620+(stage*16),y:GROUND-27,range:58+stage*4,speed:1.0+index*.03},
+  {x:1190+chapter*20,y:GROUND-27,range:56+chapter*5,speed:1.2+index*.025},
+  {x:2180+stage*12,y:GROUND-27,range:67+stage*4,speed:1.0+index*.03}
  ];
  if(stage>0)enemies.push({x:2540,y:GROUND-27,range:42,speed:1.4+index*.02});
  const spikes=[
-  {x:820,y:GROUND-18,w:46,h:18},
-  {x:1395,y:GROUND-18,w:48,h:18},
-  {x:2260,y:GROUND-18,w:45,h:18}
+  {x:814+stage*12,y:GROUND-18,w:45,h:18},
+  {x:1395+chapter*11,y:GROUND-18,w:48,h:18},
+  {x:2250+stage*10,y:GROUND-18,w:45,h:18}
  ];
  if(stage>=2)spikes.push({x:2605,y:GROUND-18,w:42,h:18});
- return {index,chapter,stage,name:names[index],tip:tips[index],theme:chapters[chapter],length,ground:grounds,platforms,orbs,star,checkpoint,enemies,spikes,portal:{x:length-150,y:GROUND-92},skyObjects:8+index%4};
+ return {index,chapter,stage,name:names[index],tip:tips[index],theme:chapters[chapter],length,ground:grounds,platforms,orbs,star,checkpoint,enemies,spikes,hearts:stage%2===1?[{x:platforms[4].x+platforms[4].w/2,y:platforms[4].y-52}]:[],portal:{x:length-150,y:GROUND-92},skyObjects:8+index%4};
 }
 const levels=names.map((_,i)=>makeLevel(i));
 window.CAT_DATA={chapters,names,levels,WIDTH,HEIGHT,GROUND,total:16};
