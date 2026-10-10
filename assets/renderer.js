@@ -33,6 +33,15 @@ function makeWall(theme,kind){
 }
 function makeSprite(kind){
  const c=canvas(152,192),x=c.getContext('2d');
+ if(kind==='bolt'){
+  glow(x,76,94,72,'#ff78ba90');
+  x.shadowColor='#ff9ccc';x.shadowBlur=25;x.fillStyle='#ff92c6';
+  x.beginPath();x.arc(76,96,25,0,TAU);x.fill();
+  x.shadowBlur=8;x.fillStyle='#fff0fb';x.beginPath();x.arc(76,96,12,0,TAU);x.fill();
+  x.strokeStyle='#ffbfdc';x.lineWidth=4;
+  x.beginPath();x.moveTo(21,96);x.lineTo(131,96);x.moveTo(76,39);x.lineTo(76,153);x.stroke();
+  return c;
+ }
  if(['memory','medkit','ammo','exit'].includes(kind)){
   if(kind==='memory'){
    glow(x,76,91,76,'#6cf8ef40');x.save();x.translate(76,95);x.shadowColor='#9dfff7';x.shadowBlur=24;x.fillStyle='#59efff';x.beginPath();x.moveTo(0,-58);x.lineTo(40,-3);x.lineTo(0,55);x.lineTo(-40,-3);x.closePath();x.fill();x.shadowBlur=0;
@@ -93,7 +102,7 @@ function makeSprite(kind){
 }
 class Renderer{
  constructor(canvasElement){this.canvas=canvasElement;this.ctx=canvasElement.getContext('2d',{alpha:false});this.ctx.imageSmoothingEnabled=true;this.world=null;this.wallTextures=[];this.sprites={};this.depth=new Float32Array(W/2);this.hitCache=[];this.lastWidth=W;this.lastHeight=H;
-  for(const type of ['stalker','seer','brute','matriarch','herald','memory','medkit','ammo','exit'])this.sprites[type]=makeSprite(type);
+  for(const type of ['stalker','seer','brute','matriarch','herald','memory','medkit','ammo','exit','bolt'])this.sprites[type]=makeSprite(type);
  }
  load(level){this.world=level;this.wallTextures=[null,makeWall(level.palette,1),makeWall(level.palette,2),makeWall(level.palette,3),makeWall(level.palette,4)];}
  cast(x,y,dx,dy,max=28){
@@ -160,6 +169,7 @@ class Renderer{
   const sprites=[];
   for(const entity of game.enemies)if(entity.hp>0&&entity.alive!==false)sprites.push({type:entity.kind,x:entity.x,y:entity.y,scale:entity.kind==='matriarch'||entity.kind==='herald'?2.25:entity.kind==='brute'?1.37:1,entity,flash:entity.flash||0});
   for(const item of game.items)if(!item.taken)sprites.push({type:item.type,x:item.x,y:item.y,scale:item.type==='exit'?1.7:.73,entity:item});
+  for(const projectile of game.projectiles)sprites.push({type:'bolt',x:projectile.x,y:projectile.y,scale:.34,floating:true});
   sprites.push({type:'exit',x:level.exit.x,y:level.exit.y,scale:1.6});
   sprites.sort((a,b)=>((b.x-player.x)**2+(b.y-player.y)**2)-((a.x-player.x)**2+(a.y-player.y)**2));
   for(const sprite of sprites){
@@ -172,7 +182,7 @@ class Renderer{
    const actualWidth=actualHeight*(sprite.type==='exit'?.55:.73);
    const spriteCanvas=this.sprites[sprite.type]||this.sprites.stalker;
    const bottom=horizon+Math.min(H,FOCAL/z)*.50+bob;
-   const visualY=bottom-actualHeight+(sprite.entity?.bob||0)*actualHeight*.13;
+   const visualY=(sprite.floating?horizon-actualHeight*.5:bottom-actualHeight)+(sprite.entity?.bob||0)*actualHeight*.13;
    const start=Math.max(0,Math.floor((sx-actualWidth/2)/rayW));
    const end=Math.min(W/rayW-1,Math.ceil((sx+actualWidth/2)/rayW));
    ctx.globalAlpha=clamp(1-(distance-12)/20,.15,1);
