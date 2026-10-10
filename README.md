@@ -1,4 +1,4 @@
-# ComprimeFácil MX — Herramientas gratuitas
+# comprimeme — Herramientas gratuitas
 
 Cuarto proyecto web independiente preparado para la misma cuenta AdSense del usuario.
 
