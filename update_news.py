@@ -177,7 +177,7 @@ def generate_report():
             listing+='<li><a href="'+escape(e["url"],quote=True)+'">Reporte '+escape(e["date"])+'</a> · '+str(int(e.get("count",0)))+' titulares</li>'
         listing+='</ul>'
         (REPORT_DIR/"index.html").write_text(report_shell("Reportes diarios",listing),encoding="utf-8")
-        sitemap_items=["","contacto.html","privacidad.html","sobre-nosotros.html","politica-editorial.html","guias/","reportes/"]
+        sitemap_items=["","contacto.html","privacidad.html","sobre-nosotros.html","politica-editorial.html","creditos-fotograficos.html","guias/","reportes/"]
         sitemap_items += ["guias/"+v for v in ("estado-del-metro.html","alertas-por-lluvia.html","cierres-viales.html","tramites-cdmx.html")]
         sitemap_items += ["reportes/"+p.name for p in REPORT_DIR.glob("20??-??-??.html")]
         (DEST.parent/"sitemap.xml").write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'

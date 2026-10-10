@@ -1,6 +1,5 @@
 'use strict';
-const icons={Metro:'🚇',Movilidad:'🚦',Seguridad:'🛡️',Cultura:'🎭',Gobierno:'🏛️',CDMX:'🏙️'};
-const categoryImages={Metro:'metro',Movilidad:'movilidad',Seguridad:'seguridad',Cultura:'cultura',Gobierno:'gobierno',CDMX:'cdmx'};
+const photoLibrary=window.CDMX_FOTOS;
 let articles=[],category='',updated='';
 const grid=document.getElementById('grid');
 const featuredGrid=document.getElementById('featured-grid');
@@ -12,13 +11,24 @@ function element(tag,cls,txt){const e=document.createElement(tag);if(cls)e.class
 function validLink(u){try{const p=new URL(u);return p.protocol==='https:'&&p.hostname==='news.google.com'}catch{return false}}
 function articleVisual(a){
  const figure=element('div','news-visual');
+ const id=photoLibrary?.pick(a.category,a.title);
+ const photo=id?photoLibrary.images[id]:null;
+ if(!photo){figure.append(element('span','photo-unavailable','Fotografía no disponible'));return figure}
  const image=document.createElement('img');
- const category=categoryImages[a.category]||'cdmx';
- image.src='/assets/imagenes/'+category+'.svg';
- image.alt='Ilustración editorial sobre '+(a.category||'Ciudad de México')+', no fotografía de la noticia';
- image.loading='lazy';image.decoding='async';image.width=800;image.height=500;
- const label=element('span','visual-label','IMAGEN ILUSTRATIVA');
- figure.append(image,label);
+ image.src=photoLibrary.src(id,640);
+ image.alt='Fotografía de archivo: '+photo.topic+'. No muestra la noticia descrita.';
+ image.loading='lazy';image.decoding='async';image.width=640;image.height=400;
+ const family=photoLibrary.groups[a.category]||photoLibrary.groups.CDMX;
+ let tried=0;
+ image.addEventListener('error',()=>{
+  if(tried<family.length-1){tried++;image.src=photoLibrary.src(family[(family.indexOf(id)+tried)%family.length],640)}
+  else{image.hidden=true;figure.append(element('span','photo-unavailable','Fotografía de archivo temporalmente no disponible'))}
+ });
+ const label=element('span','visual-label','FOTO DE ARCHIVO');
+ const credit=element('a','photo-credit-inline','© '+photo.author+' · CC BY-SA '+photo.license);
+ credit.href=photoLibrary.source(id);credit.target='_blank';credit.rel='noopener noreferrer';
+ credit.title='Origen y licencia de la fotografía';
+ figure.append(image,label,credit);
  return figure;
 }
 function buildCard(a,featured=false,large=false){
@@ -68,8 +78,12 @@ document.querySelectorAll('[data-filter]').forEach(el=>el.addEventListener('clic
  ev.preventDefault();category=el.dataset.filter||'';render();
  document.getElementById('noticias')?.scrollIntoView({behavior:'smooth',block:'start'});
 }));
-document.querySelectorAll('img[data-fallback]').forEach(img=>{
- img.addEventListener('error',()=>{img.src=img.dataset.fallback;img.removeAttribute('data-fallback')},{once:true});
+document.querySelectorAll('img[data-fallback-photo]').forEach(img=>{
+ const alternative=img.dataset.fallbackPhoto;
+ img.addEventListener('error',()=>{
+  if(alternative){img.removeAttribute('data-fallback-photo');img.src=photoLibrary?.src(alternative,img.getAttribute('width')||640)||'';}
+  else img.hidden=true;
+ },{once:true});
 });
 Promise.allSettled([
  fetch('/news.json?t='+Date.now()).then(r=>{if(!r.ok)throw Error('news');return r.json()}),
