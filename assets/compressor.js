@@ -2,7 +2,7 @@
 (() => {
 const $=id=>document.getElementById(id);
 const input=$('files'),zone=$('dropzone'),list=$('file-list'),run=$('run'),clear=$('clear'),notice=$('notice');
-const quality=$('quality'),qualityText=$('quality-value'),width=$('max-width'),format=$('image-format'),pdfMode=$('pdf-mode');
+const quality=$('quality'),qualityText=$('quality-value'),width=$('max-width'),format=$('image-format'),pdfMode=$('pdf-mode'),smart=$('smart-retry');
 let selected=[],busy=false,downloads=[];
 const LIMIT=40*1024*1024,MAX_FILES=12;
 const bytes=n=>n<1024?n+' B':n<1048576?(n/1024).toFixed(1)+' KB':(n/1048576).toFixed(2)+' MB';
@@ -11,7 +11,7 @@ const valid=new Set(['jpg','jpeg','png','webp','pdf','docx','txt','md','csv','js
 const safeName=s=>s.replace(/[<>:"/\\|?*\x00-\x1F]/g,'_').slice(0,140);
 const nextName=(name,suffix,newExt)=>safeName(name.replace(/\.[^.]*$/,'')+suffix+'.'+newExt);
 function status(t,type=''){notice.textContent=t;notice.className='notification '+type}
-function saveLink(blob,name){const url=URL.createObjectURL(blob);downloads.push(url);const a=document.createElement('a');a.href=url;a.download=name;a.className='download';a.textContent='Descargar resultado';return a}
+function saveLink(blob,name,label='⬇ Descargar archivo comprimido',extraClass=''){const url=URL.createObjectURL(blob);downloads.push(url);const a=document.createElement('a');a.href=url;a.download=name;a.className='download '+extraClass;a.textContent=label;return a}
 function dispose(){downloads.forEach(URL.revokeObjectURL);downloads=[]}
 const makeBlob=(canvas,mime,q)=>new Promise((resolve,reject)=>canvas.toBlob(b=>b?resolve(b):reject(Error('El navegador no pudo generar la imagen.')),mime,q));
 async function raster(blob,maxPixels){
@@ -25,7 +25,7 @@ async function raster(blob,maxPixels){
  ctx.imageSmoothingEnabled=true;ctx.imageSmoothingQuality='high';ctx.drawImage(bitmap,0,0,w,h);bitmap.close();
  return canvas;
 }
-async function compressImage(blob,originalExt,level,limit,requested='auto'){
+async function compressImage(blob,originalExt,level,limit,requested='auto',targetBytes=0){
  const canvas=await raster(blob,limit);
  const extType=originalExt==='jpeg'?'jpg':originalExt;
  let type,outputExt;
@@ -33,18 +33,37 @@ async function compressImage(blob,originalExt,level,limit,requested='auto'){
  else if(requested==='webp'){type='image/webp';outputExt='webp'}
  else if(requested==='original'||(requested==='auto'&&extType==='png')){type=extType==='png'?'image/png':extType==='webp'?'image/webp':'image/jpeg';outputExt=extType}
  else{type=extType==='webp'?'image/webp':'image/jpeg';outputExt=extType}
+ let targetCanvas=canvas;
  if(type==='image/jpeg'){
- const bg=document.createElement('canvas');bg.width=canvas.width;bg.height=canvas.height;
- const ctx=bg.getContext('2d');ctx.fillStyle='#ffffff';ctx.fillRect(0,0,bg.width,bg.height);ctx.drawImage(canvas,0,0);
- const result=await makeBlob(bg,type,level);return {blob:result,extension:outputExt,dimensions:canvas.width+'×'+canvas.height};
+  // JPEG no admite transparencia: reemplazar canal alfa por fondo blanco.
+  const bg=document.createElement('canvas');bg.width=canvas.width;bg.height=canvas.height;
+  const ctx=bg.getContext('2d');if(!ctx)throw Error('No se pudo preparar la imagen.');
+  ctx.fillStyle='#ffffff';ctx.fillRect(0,0,bg.width,bg.height);ctx.drawImage(canvas,0,0);
+  targetCanvas=bg;
  }
- const result=await makeBlob(canvas,type,level);
- return {blob:result,extension:outputExt,dimensions:canvas.width+'×'+canvas.height};
+ let result=await makeBlob(targetCanvas,type,level),usedQuality=level;
+ if(result.type && result.type!==type)throw Error('El navegador no admite este formato de salida. Prueba con JPG.');
+ // Si el primer resultado es mayor, volver a codificar sin volver a decodificar la foto.
+ // Solo se activa cuando el usuario acepta el modo de compresión adaptativa.
+ if(targetBytes>0&&(type==='image/jpeg'||type==='image/webp')&&result.size>=targetBytes){
+  let q=level-.08,tries=0;
+  while(q>=.31&&tries<7&&result.size>=targetBytes){
+   q=Math.round(q*100)/100;
+   const candidate=await makeBlob(targetCanvas,type,q);
+   if(candidate.size<result.size){result=candidate;usedQuality=q}
+   q-=.08;tries++;
+  }
+ }
+ return {blob:result,extension:outputExt,dimensions:canvas.width+'×'+canvas.height,qualityUsed:usedQuality,lossy:type!=='image/png'};
 }
-function settings(){return{q:Number(quality.value)/100,maxWidth:Number(width.value),fmt:format.value,pdf:pdfMode.value}}
+function settings(){return{q:Number(quality.value)/100,maxWidth:Number(width.value),fmt:format.value,pdf:pdfMode.value,smart:Boolean(smart?.checked)}}
 async function imageFile(file,s){
- const result=await compressImage(file,ext(file.name),s.q,s.maxWidth,s.fmt);
- return {blob:result.blob,name:nextName(file.name,'-comprimida',result.extension),note:'Resolución de salida: '+result.dimensions+(result.extension!==ext(file.name).replace('jpeg','jpg')?' · Formato convertido':'')};
+ const result=await compressImage(file,ext(file.name),s.q,s.maxWidth,s.fmt,s.smart?file.size:0);
+ const reduced=result.qualityUsed<s.q;
+ const note='Resolución: '+result.dimensions
+  +(result.extension!==ext(file.name).replace('jpeg','jpg')?' · Formato convertido':'')
+  +(result.lossy?' · Calidad: '+Math.round(result.qualityUsed*100)+' %'+(reduced?' (ajustada para intentar reducir el tamaño)':''):' · PNG sin pérdida de calidad por ajuste');
+ return {blob:result.blob,name:nextName(file.name,'-comprimida',result.extension),note};
 }
 async function pdfFile(file,s){
  if(!window.PDFLib)throw Error('La biblioteca PDF no pudo cargarse. Comprueba tu conexión a internet.');
@@ -143,12 +162,27 @@ async function process(){
    const p=document.createElement('p');p.textContent='Original: '+bytes(file.size)+' · Resultado: '+bytes(out.blob.size)+' · '+(change>=0?'Reducción: '+change.toFixed(1)+' %':'Aumento: '+(-change).toFixed(1)+' %');
    block.append(p);
    const note=document.createElement('small');note.textContent=out.note;block.append(note);
-   if(out.blob.size<file.size){block.append(saveLink(out.blob,out.name));savedCount++}
-   else{const warn=document.createElement('p');warn.className='result-warning';warn.textContent='Este archivo no se pudo reducir con los ajustes elegidos. No se ofrece una versión más pesada; conserva el original o ajusta la calidad.';block.append(warn)}
+   if(out.blob.size<file.size){
+    const p=document.createElement('p');p.className='result-success';p.textContent='¡Listo! Tu archivo ocupa menos espacio.';
+    block.append(p,saveLink(out.blob,out.name));savedCount++;
+   }else{
+    const warn=document.createElement('p');warn.className='result-warning';
+    warn.textContent='Esta versión no es más ligera que el original. Puedes ajustar la calidad, convertir a WebP o descargarla igualmente si la necesitas.';
+    block.append(warn);
+    const actions=document.createElement('div');actions.className='result-actions';
+    if(['jpg','jpeg','png','webp'].includes(kind)&&s.fmt!=='webp'){
+      const retry=document.createElement('button');retry.type='button';retry.className='btn btn-outline';
+      retry.textContent='Probar compresión WebP';
+      retry.addEventListener('click',()=>{format.value='webp';if(Number(quality.value)>65){quality.value='65';qualityText.textContent='65 %'}process()});
+      actions.append(retry);
+    }
+    actions.append(saveLink(out.blob,out.name,'⬇ Descargar de todos modos (más pesado)','download-warning'));
+    block.append(actions);
+   }
   }catch(err){const warn=document.createElement('p');warn.className='result-error';warn.textContent='No se procesó: '+err.message;block.append(warn)}
   $('results').append(block);
  }
- busy=false;renderFiles();status('Proceso terminado: '+savedCount+' de '+selected.length+' archivo(s) con reducción de tamaño.','success');
+ busy=false;renderFiles();status('Proceso terminado: '+savedCount+' de '+selected.length+' archivo(s) se redujeron.'+(savedCount<selected.length?' Revisa las opciones de los resultados que no se redujeron.':''),savedCount===selected.length?'success':'warning');
 }
 input.addEventListener('change',()=>{addFiles(input.files);input.value=''});
 zone.addEventListener('dragover',e=>{e.preventDefault();zone.classList.add('dragging')});

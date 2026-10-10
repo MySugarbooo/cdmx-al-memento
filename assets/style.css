@@ -107,3 +107,14 @@ footer a{color:#ffd4ea}footer p{color:#cbb8db}
  .drop{padding:30px 14px}
  .logo-icon{width:39px;height:39px}
 }
+
+/* Descargas claras y compresión adaptativa */
+.smart-setting{background:linear-gradient(120deg,#fff0f8,#f8efff);border:1px solid #eed7ed;border-radius:14px;padding:14px 16px;justify-content:center}
+.smart-label{display:flex!important;align-items:center;gap:11px;cursor:pointer;font-weight:800}
+.smart-label input{width:19px;height:19px;accent-color:#d84491;flex-shrink:0}
+.result-actions{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:12px}
+.result-success{color:#176f4a;font-weight:800;margin:9px 0 13px}
+.result-warning{font-size:14px;line-height:1.65;color:#885519!important}
+.result-card .download{min-height:46px;margin-top:8px;font-weight:850;font-size:15px;box-shadow:0 10px 22px rgba(199,54,135,.2)}
+.download-warning{background:transparent!important;border:1px solid #dda5c8!important;color:#8c4470!important;box-shadow:none!important}
+.download-warning:hover{background:#fff3fa!important}
