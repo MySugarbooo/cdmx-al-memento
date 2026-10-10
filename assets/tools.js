@@ -16,7 +16,7 @@ switch(id){
 case 'contar-palabras': {
  const count=w.length, chars=graphemes(s), noSpace=graphemes(s.replace(/\s/gu,'')), paras=collapse(s).split(/\n\s*\n/).filter(x=>x.trim()).length;
  const sentences=(trim.match(/[.!?]+(?:["'»”)\]]*)?(?=\s|$)/g)||[]).length;
- return {result:s,stats:count+' palabras · '+chars+' caracteres · '+noSpace+' sin espacios · '+paras+' párrafos · '+sentences+' frases detectadas · ~'+Math.max(1,Math.ceil(count/210))+' min de lectura'};
+ return {result:s,stats:count+' palabras · '+chars+' caracteres · '+noSpace+' sin espacios · '+paras+' párrafos · '+sentences+' frases detectadas · ~'+(count?Math.max(1,Math.ceil(count/210)):0)+' min de lectura'};
 }
 case 'cambiar-mayusculas': {
  let out=s,mode=opt('modo');
