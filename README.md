@@ -39,3 +39,12 @@ Contacto directo: `sanchezaxochitl@gmail.com`.
 ## Mantenimiento editorial
 
 Se incluyeron guías originales sobre formatos, calidad y privacidad. Las funciones son permanentes y no necesitan artículos diarios; conviene revisarlas y probarlas periódicamente y actualizar versiones de bibliotecas por seguridad.
+
+## Funciones añadidas
+- Presets de 20, 50, 100, 250 KB, sin límite.
+- Comparación visual antes/después para imágenes con deslizador en navegador.
+- ZIP descargable para múltiples resultados reducidos o archivos que ya cumplen tamaño.
+- Protección del ZIP: 150 MB de suma de resultados para evitar saturación de memoria; ZIP no incluye resultados que sean más pesados.
+- Preguntas frecuentes de formatos y privacidad.
+
+- Al combinar textos con otras descargas, el ZIP contiene el TXT/CSV/MD/RTF/JSON directamente (sin ZIP anidados), comprimido mediante DEFLATE.

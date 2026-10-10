@@ -127,3 +127,32 @@ footer a{color:#ffd4ea}footer p{color:#cbb8db}
 .target-status{padding:12px 16px;border-radius:12px;font-size:14px;font-weight:850;margin:12px 0}
 .target-ok{background:#e7f7e9;color:#186b3b}
 .target-missed{background:#fff2df;color:#815018}
+
+/* comprimeme: presets para trámites, comparador visual y ZIP por lote */
+.presets{margin:27px 0 9px;padding:22px;background:linear-gradient(130deg,#fff0f8,#f2e8ff);border:1px solid #eed8f2;border-radius:20px}
+.presets-label{font-size:17px;font-weight:900;color:#59265c;margin-bottom:13px}
+.preset-options{display:flex;gap:10px;flex-wrap:wrap}
+.preset{border:1px solid #e2bce4;border-radius:999px;background:white;color:#833c84;font-size:14px;font-weight:850;padding:11px 19px;cursor:pointer;transition:background .15s,transform .15s}
+.preset:hover{background:#fff8fd;transform:translateY(-1px)}
+.preset.active,.preset[aria-pressed="true"]{background:#863fb0;border-color:#863fb0;color:#fff;box-shadow:0 7px 13px #7b38ad2b}
+.preset:disabled{opacity:.55;cursor:not-allowed}
+.preset-help{font-size:13px;color:#76557c;margin:13px 0 0;line-height:1.6}
+.zip-area{border:1px solid #e7cfef;background:linear-gradient(120deg,#faf2ff,#fff7fb);border-radius:20px;padding:24px;margin-top:24px}
+.zip-area h3{margin:0 0 8px;color:#4a245f}.zip-area p{color:#725a81;font-size:14px}
+.zip-button{min-height:49px}.zip-note{font-size:13px!important;min-height:17px}
+#zip-links .zip-download{background:#fff!important;border:1px solid #dc9dd4!important;color:#a03286!important;margin-top:8px}
+.image-preview{border:1px solid #ecdbef;border-radius:18px;padding:18px;margin:16px 0 19px;background:#fff}
+.image-preview h4{margin:0 0 8px;color:#5b2b69;font-size:15px}.preview-help{font-size:12px!important;color:#836d87!important;line-height:1.6;margin:8px 0 14px!important}
+.compare-stage{--compare:50%;position:relative;width:100%;aspect-ratio:16 / 9;max-height:350px;overflow:hidden;border-radius:13px;background-color:#eee6ed;background-image:linear-gradient(45deg,#fff6ff 25%,transparent 25%),linear-gradient(-45deg,#fff6ff 25%,transparent 25%),linear-gradient(45deg,transparent 75%,#fff6ff 75%),linear-gradient(-45deg,transparent 75%,#fff6ff 75%);background-size:26px 26px;background-position:0 0,0 13px,13px -13px,-13px 0}
+.compare-stage img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;display:block}
+.compare-after{clip-path:inset(0 calc(100% - var(--compare)) 0 0)}
+.compare-line{position:absolute;left:var(--compare);top:0;height:100%;border-left:3px solid #e23d91;transform:translateX(-1.5px);filter:drop-shadow(0 0 4px white);pointer-events:none}
+.compare-tag{position:absolute;bottom:12px;background:#30193fdd;color:white;border-radius:7px;padding:4px 10px;font-weight:800;font-size:12px}
+.tag-before{right:12px}.tag-after{left:12px}
+.compare-control{display:flex;justify-content:space-between;gap:12px;font-size:13px;font-weight:780;color:#674a75;margin:16px 0 7px}
+.image-preview input[type="range"]{width:100%;accent-color:#e34b98;cursor:ew-resize}
+.faq{display:grid;gap:12px;max-width:860px}
+.faq details{border:1px solid #eddff0;background:#fff;border-radius:15px;padding:19px 22px}
+.faq summary{cursor:pointer;color:#412657;font-weight:800}
+.faq details p{margin:15px 0 0;color:#66576b}
+@media(max-width:600px){.presets{padding:17px}.preset-options{gap:8px}.preset{padding:9px 13px;font-size:13px}.zip-area{padding:19px}.image-preview{padding:12px}.compare-stage{aspect-ratio:1 / 1}}

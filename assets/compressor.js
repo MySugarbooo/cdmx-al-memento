@@ -2,8 +2,8 @@
 (() => {
 const $=id=>document.getElementById(id);
 const input=$('files'),zone=$('dropzone'),list=$('file-list'),run=$('run'),clear=$('clear'),notice=$('notice');
-const quality=$('quality'),qualityText=$('quality-value'),width=$('max-width'),format=$('image-format'),pdfMode=$('pdf-mode'),smart=$('smart-retry'),target=$('target-kb');
-let selected=[],busy=false,downloads=[];
+const quality=$('quality'),qualityText=$('quality-value'),width=$('max-width'),format=$('image-format'),pdfMode=$('pdf-mode'),smart=$('smart-retry'),target=$('target-kb'),zipButton=$('download-zip'),zipNote=$('zip-note'),zipLinks=$('zip-links'),presetButtons=[...document.querySelectorAll('[data-target]')];
+let selected=[],busy=false,bundleBusy=false,downloads=[],bundle=[];
 const LIMIT=40*1024*1024,MAX_FILES=12;
 const bytes=n=>n<1024?n+' B':n<1048576?(n/1024).toFixed(1)+' KB':(n/1048576).toFixed(2)+' MB';
 const ext=name=>(name.split('.').pop()||'').toLowerCase();
@@ -13,6 +13,63 @@ const nextName=(name,suffix,newExt)=>safeName(name.replace(/\.[^.]*$/,'')+suffix
 function status(t,type=''){notice.textContent=t;notice.className='notification '+type}
 function saveLink(blob,name,label='⬇ Descargar archivo comprimido',extraClass=''){const url=URL.createObjectURL(blob);downloads.push(url);const a=document.createElement('a');a.href=url;a.download=name;a.className='download '+extraClass;a.textContent=label;return a}
 function dispose(){downloads.forEach(URL.revokeObjectURL);downloads=[]}
+function previewImage(before,after){
+ const wrap=document.createElement('section');wrap.className='image-preview';wrap.setAttribute('aria-label','Comparar imagen original y procesada');
+ const title=document.createElement('h4');title.textContent='Comparación visual: antes y después';wrap.append(title);
+ const description=document.createElement('p');description.className='preview-help';description.textContent='Mueve la barra para ver los cambios. Compara detalles y letras antes de descargar: el límite de tamaño puede reducir mucho la calidad.';wrap.append(description);
+ const stage=document.createElement('div');stage.className='compare-stage';stage.style.setProperty('--compare','50%');
+ const left=document.createElement('img');left.alt='Imagen original';left.className='compare-before';
+ const right=document.createElement('img');right.alt='Imagen después de comprimir';right.className='compare-after';
+ for(const pair of [[before,left],[after,right]]){
+  const uri=URL.createObjectURL(pair[0]);downloads.push(uri);pair[1].src=uri;pair[1].decoding='async';
+ }
+ const line=document.createElement('span');line.className='compare-line';line.setAttribute('aria-hidden','true');
+ const beforeLabel=document.createElement('span');beforeLabel.className='compare-tag tag-before';beforeLabel.textContent='ANTES';
+ const afterLabel=document.createElement('span');afterLabel.className='compare-tag tag-after';afterLabel.textContent='DESPUÉS';
+ stage.append(left,right,line,beforeLabel,afterLabel);
+ const label=document.createElement('label');label.className='compare-control';label.textContent='Mostrar la imagen comprimida: ';
+ const current=document.createElement('output');current.textContent='50 %';label.append(current);
+ const slider=document.createElement('input');slider.type='range';slider.min='0';slider.max='100';slider.value='50';slider.step='1';slider.setAttribute('aria-label','Porcentaje de imagen comprimida visible');
+ slider.addEventListener('input',()=>{stage.style.setProperty('--compare',slider.value+'%');current.textContent=slider.value+' %'});
+ wrap.append(stage,label,slider);
+ return wrap;
+}
+function refreshPresets(){
+ const choice=target.value;
+ for(const btn of presetButtons){const active=btn.dataset.target===choice;btn.classList.toggle('active',active);btn.setAttribute('aria-pressed',String(active));btn.disabled=busy||bundleBusy}
+}
+function resetBundle(){bundle=[];if(zipButton)zipButton.disabled=true;if(zipNote)zipNote.textContent='Se activará cuando haya al menos 2 resultados válidos.';if(zipLinks)zipLinks.replaceChildren()}
+function invalidateResults(){
+ dispose();resetBundle();$('results').replaceChildren();
+}
+function uniqueZipName(name,used){
+ const clean=safeName(name).replace(/^\.+/,'_')||'archivo';
+ const dot=clean.lastIndexOf('.');
+ const stem=dot>0?clean.slice(0,dot):clean;
+ const suffix=dot>0?clean.slice(dot):'';
+ let candidate=clean,number=2;
+ while(used.has(candidate.toLocaleLowerCase('es'))){candidate=stem+'-'+(number++)+suffix}
+ used.add(candidate.toLocaleLowerCase('es'));return candidate;
+}
+async function downloadBundle(){
+ if(busy||bundleBusy||bundle.length<2)return;
+ if(!window.JSZip){status('No se cargó el componente para descargar ZIP. Comprueba tu conexión.','warning');return}
+ const total=bundle.reduce((n,item)=>n+item.blob.size,0);
+ if(total>150*1024*1024){status('Para proteger la memoria, el ZIP admite hasta 150 MB combinados. Descarga los archivos por separado.','warning');return}
+ bundleBusy=true;zipButton.disabled=true;refreshPresets();zipLinks.replaceChildren();
+ try{
+  const zip=new window.JSZip(),used=new Set();
+  for(const file of bundle)zip.file(uniqueZipName(file.name,used),file.blob,{binary:true,compression:file.compression||'STORE'});
+  const zipBlob=await zip.generateAsync({type:'blob',compression:'STORE',streamFiles:true},meta=>{if(zipNote)zipNote.textContent='Preparando ZIP… '+Math.round(meta.percent)+' %'});
+  const result=saveLink(zipBlob,'comprimeme-archivos.zip','⬇ Guardar ZIP preparado');
+  result.classList.add('zip-download');
+  zipLinks.append(result);
+  zipNote.textContent='ZIP listo: '+bundle.length+' archivos · '+bytes(zipBlob.size)+'. Si tu navegador no lo descarga automáticamente, usa el enlace.';
+  // Mostrar siempre un enlace manual accesible, aunque se inicie la descarga automáticamente.
+  result.click();
+ }catch(err){status('No se pudo crear el ZIP: '+err.message,'warning');zipNote.textContent='Puedes descargar los archivos individualmente.'}
+ finally{bundleBusy=false;zipButton.disabled=bundle.length<2;refreshPresets()}
+}
 const makeBlob=(canvas,mime,q)=>new Promise((resolve,reject)=>canvas.toBlob(b=>b?resolve(b):reject(Error('El navegador no pudo generar la imagen.')),mime,q));
 async function raster(blob,maxPixels){
  let bitmap;
@@ -189,13 +246,13 @@ async function textFile(file){
 function addFiles(incoming){
  if(busy)return;
  const append=[...incoming],seen=new Set(selected.map(f=>f.name+'|'+f.size+'|'+f.lastModified));
- let rejected=0;
+ let rejected=0,added=0;
  for(const file of append){
   const key=file.name+'|'+file.size+'|'+file.lastModified;
   if(selected.length>=MAX_FILES||!valid.has(ext(file.name))||file.size>LIMIT||file.size===0||seen.has(key)){rejected++;continue}
-  selected.push(file);seen.add(key)
+  selected.push(file);seen.add(key);added++
  }
- renderFiles();if(rejected)status('Se omitieron '+rejected+' archivos (formato, tamaño máximo de 40 MB, duplicados o límite de 12).','warning');
+ if(added)invalidateResults();renderFiles();if(rejected)status('Se omitieron '+rejected+' archivos (formato, tamaño máximo de 40 MB, duplicados o límite de 12).','warning');
  else status(selected.length+' archivo(s) seleccionados.');
 }
 function renderFiles(){
@@ -203,12 +260,12 @@ function renderFiles(){
  for(const file of selected){
   const row=document.createElement('div');row.className='file-row';
   const left=document.createElement('div');const title=document.createElement('strong');title.textContent=file.name;const sub=document.createElement('small');sub.textContent=bytes(file.size)+' · '+ext(file.name).toUpperCase();left.append(title,sub);
-  const del=document.createElement('button');del.type='button';del.className='remove';del.textContent='Quitar';del.disabled=busy;del.addEventListener('click',()=>{selected=selected.filter(f=>f!==file);renderFiles()});
+  const del=document.createElement('button');del.type='button';del.className='remove';del.textContent='Quitar';del.disabled=busy||bundleBusy;del.addEventListener('click',()=>{if(busy||bundleBusy)return;selected=selected.filter(f=>f!==file);invalidateResults();renderFiles();status('Archivo quitado. Vuelve a comprimir los seleccionados.');});
   row.append(left,del);list.append(row);
- }run.disabled=busy||!selected.length;clear.disabled=busy||!selected.length;
+ }run.disabled=busy||!selected.length||bundleBusy;clear.disabled=busy||!selected.length||bundleBusy;
 }
 async function process(){
- if(busy||!selected.length)return;busy=true;dispose();$('results').replaceChildren();renderFiles();const s=settings();
+ if(busy||bundleBusy||!selected.length)return;busy=true;invalidateResults();renderFiles();refreshPresets();const s=settings();
  let savedCount=0;status('Trabajando. Mantén abierta esta pestaña…','working');
  for(let i=0;i<selected.length;i++){
   const file=selected[i],kind=ext(file.name),block=document.createElement('article');
@@ -224,6 +281,10 @@ async function process(){
    const p=document.createElement('p');p.textContent='Original: '+bytes(file.size)+' · Resultado: '+bytes(out.blob.size)+' · '+(change>=0?'Reducción: '+change.toFixed(1)+' %':'Aumento: '+(-change).toFixed(1)+' %');
    block.append(p);
    const note=document.createElement('small');note.textContent=out.note;block.append(note);
+   if(['jpg','jpeg','png','webp'].includes(kind)){
+    try{block.append(previewImage(file,out.blob))}
+    catch(previewError){const info=document.createElement('p');info.className='preview-help';info.textContent='Vista previa no disponible para esta imagen.';block.append(info)}
+   }
    const sizeTarget=s.targetBytes;
    const reachedTarget=sizeTarget>0&&out.blob.size<=sizeTarget;
    if(sizeTarget>0){
@@ -244,7 +305,9 @@ async function process(){
    if(out.blob.size<file.size||out.alreadyOk){
     const p=document.createElement('p');p.className='result-success';
     p.textContent=out.alreadyOk?'Tu archivo original ya cumple el tamaño máximo.':reachedTarget?'¡Listo! Se alcanzó el tamaño solicitado.':'Se redujo el archivo, pero comprueba si cumple tu límite.';
-    block.append(p,saveLink(out.blob,out.name,out.alreadyOk?'⬇ Descargar original (ya cumple)':'⬇ Descargar archivo comprimido'));savedCount++;
+    block.append(p,saveLink(out.blob,out.name,out.alreadyOk?'⬇ Descargar original (ya cumple)':'⬇ Descargar archivo comprimido'));bundle.push(['txt','md','csv','json','rtf'].includes(kind)
+      ?{name:file.name,blob:file,compression:'DEFLATE'}
+      :{name:out.name,blob:out.blob,compression:'STORE'});savedCount++;
    }else{
     const warn=document.createElement('p');warn.className='result-warning';
     warn.textContent='Esta versión no es más ligera que el original. Puedes ajustar la calidad, convertir a WebP o descargarla igualmente si la necesitas.';
@@ -262,15 +325,21 @@ async function process(){
   }catch(err){const warn=document.createElement('p');warn.className='result-error';warn.textContent='No se procesó: '+err.message;block.append(warn)}
   $('results').append(block);
  }
- busy=false;renderFiles();status('Proceso terminado. '+savedCount+' de '+selected.length+' archivo(s) disponibles para descargar.'+(savedCount<selected.length?' Consulta las alternativas en los resultados.':''),savedCount===selected.length?'success':'warning');
+ busy=false;renderFiles();refreshPresets();
+ if(zipButton)zipButton.disabled=bundle.length<2;
+ if(zipNote)zipNote.textContent=bundle.length>=2?'Tienes '+bundle.length+' archivos listos para guardar juntos en un ZIP.':bundle.length===1?'Hay 1 resultado descargable. Agrega más archivos para activar el ZIP.':'Ningún resultado elegible para ZIP. Prueba otros ajustes.';
+ status('Proceso terminado. '+savedCount+' de '+selected.length+' archivo(s) disponibles para descargar.'+(savedCount<selected.length?' Consulta las alternativas en los resultados que no se redujeron.':''),savedCount===selected.length?'success':'warning');
 }
 input.addEventListener('change',()=>{addFiles(input.files);input.value=''});
 zone.addEventListener('dragover',e=>{e.preventDefault();zone.classList.add('dragging')});
 zone.addEventListener('dragleave',()=>zone.classList.remove('dragging'));
 zone.addEventListener('drop',e=>{e.preventDefault();zone.classList.remove('dragging');addFiles(e.dataTransfer.files)});
 quality.addEventListener('input',()=>qualityText.textContent=quality.value+' %');
-clear.addEventListener('click',()=>{selected=[];dispose();$('results').replaceChildren();renderFiles();status('Lista vacía.')});
+clear.addEventListener('click',()=>{if(busy||bundleBusy)return;selected=[];invalidateResults();renderFiles();refreshPresets();status('Lista vacía.')});
+for(const btn of presetButtons){btn.addEventListener('click',()=>{if(busy||bundleBusy)return;target.value=btn.dataset.target;refreshPresets();status('Objetivo: '+(target.value==='0'?'sin límite de tamaño':target.value+' KB')+'. Presiona Comprimir seleccionados para aplicarlo.');})}
+target.addEventListener('change',()=>{refreshPresets();status('Nuevo objetivo: '+(target.value==='0'?'sin límite':target.value+' KB')+'. Vuelve a comprimir para usarlo.')});
+if(zipButton)zipButton.addEventListener('click',downloadBundle);
 run.addEventListener('click',process);
 window.addEventListener('pagehide',dispose);
-renderFiles();
+renderFiles();refreshPresets();resetBundle();
 })();
