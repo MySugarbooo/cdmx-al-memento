@@ -1,0 +1,19 @@
+CDMX AL MEMENTO - MEJORA EDITORIAL
+
+Sube directamente a la RAÍZ de tu repositorio de GitHub los cinco archivos:
+index.html (reemplaza al anterior)
+update_news.py (reemplaza al anterior)
+sobre-nosotros.html (nuevo)
+privacidad.html (nuevo)
+contacto.html (nuevo)
+
+No borres news.json ni la carpeta .github/workflows.
+
+Una vez guardados, espera a que Cloudflare despliegue y en GitHub Actions ejecuta
+manualmente «Actualizar noticias CDMX AL MEMENTO» => Run workflow.
+La nueva ejecución descartará titulares de Facebook y enlaces dentro de títulos.
+
+El agregador sigue siendo gratuito y enlaza a contenidos ajenos. La publicidad
+real aún no está activa; solicitar AdSense requiere revisión y contenido original.
+Antes de activar anuncios, revisar y completar la política de privacidad.
+Contacto por Issues es PÚBLICO; no pedir ni publicar datos personales.
