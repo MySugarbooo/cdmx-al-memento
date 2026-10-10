@@ -25,7 +25,7 @@ function articleVisual(a){
   else{image.hidden=true;figure.append(element('span','photo-unavailable','Fotografía de archivo temporalmente no disponible'))}
  });
  const label=element('span','visual-label','FOTO DE ARCHIVO');
- const credit=element('a','photo-credit-inline','© '+photo.author+' · CC BY-SA '+photo.license);
+ const credit=element('a','photo-credit-inline','© '+photo.author+' · '+photo.license);
  credit.href=photoLibrary.source(id);credit.target='_blank';credit.rel='noopener noreferrer';
  credit.title='Origen y licencia de la fotografía';
  figure.append(image,label,credit);

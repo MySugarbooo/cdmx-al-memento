@@ -1,100 +1,89 @@
 'use strict';
-/* Archivo fotográfico abierto: créditos en /creditos-fotograficos.html.
-   Fotografías documentales históricas, NO imágenes del suceso noticioso. */
+/* Imágenes JPEG almacenadas en Cloudflare Pages. Fuente y licencia en /creditos-fotograficos.html. */
 (function(){
-const images={
+ const images={
   "reforma": {
-    "file": "Mexico_City_Reforma_skyline.jpg",
-    "hash": "6/66",
+    "file": "Mexico City Reforma skyline.jpg",
     "author": "Jonathan Salvador",
-    "license": "4.0",
-    "topic": "Panorama de Reforma y Chapultepec",
-    "cat": "CDMX",
-    "alt": "Fotografía panorámica de Reforma y Chapultepec, Ciudad de México"
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.es",
+    "topic": "Paseo de la Reforma y Chapultepec",
+    "category": "CDMX"
   },
   "angel": {
-    "file": "Angel_of_Independence_Mexico_City.jpg",
-    "hash": "e/e4",
-    "author": "Jpesch95",
-    "license": "4.0",
-    "topic": "Ángel de la Independencia",
-    "cat": "CDMX",
-    "alt": "Fotografía del Ángel de la Independencia en Ciudad de México"
+    "file": "El angel y la torre.jpg",
+    "author": "Angel david villaceballos avila",
+    "license": "CC0 1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.es",
+    "topic": "Ángel de la Independencia en la noche",
+    "category": "CDMX"
   },
   "zocalo": {
-    "file": "Vista_del_zócalo_de_Ciudad_de_México_desde_la_Torre_Latinoamericana.jpg",
-    "hash": "9/9d",
+    "file": "Vista del zócalo de Ciudad de México desde la Torre Latinoamericana.jpg",
     "author": "A01701617",
-    "license": "4.0",
-    "topic": "Vista del Zócalo",
-    "cat": "CDMX",
-    "alt": "Fotografía aérea del Zócalo vista desde la Torre Latinoamericana"
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.es",
+    "topic": "Zócalo visto desde la Torre Latinoamericana",
+    "category": "CDMX"
   },
   "metro": {
-    "file": "Metro_Ciudad_de_Mexico_Estacion_San_Lazaro.JPG",
-    "hash": "0/08",
-    "author": "ProtoplasmaKid",
-    "license": "3.0",
-    "topic": "Estación San Lázaro del Metro",
-    "cat": "Metro",
-    "alt": "Fotografía de la estación San Lázaro del Metro de la Ciudad de México"
+    "file": "Metro CDMX IMG 0231 (25900065922).jpg",
+    "author": "Gobierno CDMX",
+    "license": "CC0 1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.es",
+    "topic": "Metro de Ciudad de México",
+    "category": "Metro"
   },
   "metro2": {
-    "file": "Metro_de_la_Ciudad_de_México_-_1.jpg",
-    "hash": "e/e9",
+    "file": "Metro de la Ciudad de México - 1.jpg",
     "author": "ProtoplasmaKid",
-    "license": "4.0",
-    "topic": "Metro de Ciudad de México",
-    "cat": "Metro",
-    "alt": "Fotografía aérea de instalaciones del Metro de Ciudad de México"
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.es",
+    "topic": "Vista aérea del Metro de Ciudad de México",
+    "category": "Metro"
   },
   "movilidad": {
-    "file": "Paseo_de_la_Reforma,_CDMX_191022.jpg",
-    "hash": "0/03",
+    "file": "Paseo de la Reforma, CDMX 191022.jpg",
     "author": "Juan Carlos Fonseca Mata",
-    "license": "4.0",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.es",
     "topic": "Metrobús en Paseo de la Reforma",
-    "cat": "Movilidad",
-    "alt": "Fotografía de un Metrobús frente a la Cámara de Senadores en Paseo de la Reforma"
+    "category": "Movilidad"
   },
   "seguridad": {
-    "file": "Patrulla_cdmx.jpg",
-    "hash": "f/fd",
+    "file": "Patrulla cdmx.jpg",
     "author": "RainerRowe",
-    "license": "4.0",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.es",
     "topic": "Patrulla de Ciudad de México",
-    "cat": "Seguridad",
-    "alt": "Fotografía de archivo de una patrulla en Ciudad de México"
+    "category": "Seguridad"
   },
   "cultura": {
-    "file": "Palacio_de_Bellas_Artes,_Mexico_City,_MX.jpg",
-    "hash": "c/c8",
+    "file": "Palacio de Bellas Artes, Mexico City, MX.jpg",
     "author": "Timothy Neesam",
-    "license": "4.0",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.es",
     "topic": "Palacio de Bellas Artes",
-    "cat": "Cultura",
-    "alt": "Fotografía del Palacio de Bellas Artes de Ciudad de México"
+    "category": "Cultura"
   },
   "cultura2": {
-    "file": "Palacio_de_Bellas_Artes_-_Mexico_City_-_01.jpg",
-    "hash": "f/f8",
+    "file": "Palacio de Bellas Artes - Mexico City - 01.jpg",
     "author": "Jarek Tuszyński",
-    "license": "4.0",
-    "topic": "Bellas Artes",
-    "cat": "Cultura",
-    "alt": "Fotografía de la fachada del Palacio de Bellas Artes"
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.es",
+    "topic": "Palacio de Bellas Artes al anochecer",
+    "category": "Cultura"
   },
   "gobierno": {
-    "file": "Palacio_Nacional_Ciudad_de_México.jpg",
-    "hash": "f/fd",
+    "file": "Palacio Nacional Ciudad de México.jpg",
     "author": "MichaelCamacho",
-    "license": "4.0",
-    "topic": "Palacio Nacional",
-    "cat": "Gobierno",
-    "alt": "Fotografía de la fachada del Palacio Nacional en Ciudad de México"
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.es",
+    "topic": "Fachada del Palacio Nacional",
+    "category": "Gobierno"
   }
 };
-const groups={
+ const groups={
   "Metro": [
     "metro",
     "metro2"
@@ -119,8 +108,8 @@ const groups={
     "zocalo"
   ]
 };
-function src(id,width=640){const x=images[id];if(!x)return '';const name=encodeURIComponent(x.file).replace(/%2F/g,'/');return 'https://upload.wikimedia.org/wikipedia/commons/thumb/'+x.hash+'/'+name+'/'+width+'px-'+name}
-function source(id){const x=images[id];return x?'https://commons.wikimedia.org/wiki/File:'+encodeURIComponent(x.file):''}
-function pick(category,title){const group=groups[category]||groups.CDMX;let h=0;for(const ch of String(title||''))h=((h*31)+ch.codePointAt(0))>>>0;return group[h%group.length]}
-window.CDMX_FOTOS={images,groups,src,source,pick};
+ function src(id){return images[id]?'/assets/fotos/'+id+'.jpg':''}
+ function source(id){return images[id]?'https://commons.wikimedia.org/wiki/File:'+encodeURIComponent(images[id].file.replace(/ /g,'_')):''}
+ function pick(category,title){const group=groups[category]||groups.CDMX;let h=0;for(const cp of String(title||''))h=((h*31)+cp.codePointAt(0))>>>0;return group[h%group.length]}
+ window.CDMX_FOTOS={images,groups,src,source,pick};
 })();
