@@ -1,34 +1,74 @@
 <!doctype html>
-<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>CDMX AL MEMENTO | Noticias y reportes de Ciudad de México</title>
-<meta name="description" content="Titulares recientes de la Ciudad de México, reportes automáticos transparentes y guías originales sobre Metro, movilidad, clima y trámites.">
-<link rel="canonical" href="https://cdmx-al-memento.pages.dev/"><link rel="icon" type="image/svg+xml" href="/favicon.svg">
-<meta name="theme-color" content="#101116"><meta property="og:site_name" content="CDMX AL MEMENTO"><meta property="og:title" content="CDMX AL MEMENTO · La capital, al instante">
-<meta property="og:description" content="Noticias enlazadas, reportes automáticos y guías útiles sobre Ciudad de México."><meta property="og:type" content="website"><meta property="og:url" content="https://cdmx-al-memento.pages.dev/">
-<link rel="stylesheet" href="/styles.css">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"CDMX AL MEMENTO","url":"https://cdmx-al-memento.pages.dev/","inLanguage":"es-MX","description":"Titulares enlazados de Ciudad de México y guías informativas"}</script>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6521969406386261" crossorigin="anonymous"></script>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#060d19">
+<meta name="description" content="UMBRAL 9: Ecos del Vacío, shooter de terror y ciencia ficción en primera persona. Explora seis misiones, elimina criaturas de otra dimensión y descubre por qué tu propia voz llama desde el futuro. Juega gratis.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="UMBRAL 9 — Ecos del Vacío">
+<meta property="og:description" content="Un shooter en primera persona, una estación abandonada y una señal de auxilio firmada por ti... mañana.">
+<title>UMBRAL 9 — Ecos del Vacío | Shooter en primera persona</title>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/assets/style.css">
+<script defer src="/assets/world.js"></script>
+<script defer src="/assets/audio.js"></script>
+<script defer src="/assets/renderer.js"></script>
+<script defer src="/assets/game.js"></script>
 </head>
-<body><a class="skip" href="#contenido">Saltar al contenido</a>
-<header><div class="wrap"><div class="top"><a class="logo" href="/">CDMX <span>AL MEMENTO</span></a><span class="tag">LA CAPITAL, AL INSTANTE.</span></div>
-<nav aria-label="Navegación principal"><a href="#noticias">Última hora</a><a href="#noticias" data-filter="Metro">Metro</a><a href="#noticias" data-filter="Seguridad">Seguridad</a><a href="#noticias" data-filter="Movilidad">Movilidad</a><a href="#noticias" data-filter="Cultura">Cultura</a><a href="#noticias" data-filter="Gobierno">Gobierno</a><a href="/reportes/">Reportes</a><a href="/guias/">Guías</a></nav></div></header>
-<main id="contenido" class="wrap">
-<section class="hero"><p class="eyebrow">● INFORMACIÓN DE LA CAPITAL</p><h1>Lo que pasa en la<br><span style="color:#e62d42">Ciudad de México.</span></h1>
-<p>Noticias de distintos medios, agrupadas en un solo lugar. Reportes de seguimiento y guías para comprobar información que afecta tu día.</p></section>
-<div class="notice"><strong>Transparencia editorial:</strong> los titulares y reportes de seguimiento se recopilan automáticamente. No representan investigaciones o verificaciones independientes. Consulta siempre el medio original y la fecha de la noticia.</div>
-<div class="ad" aria-label="Espacio reservado para publicidad">ESPACIO PARA PUBLICIDAD · SIN ANUNCIOS ACTIVOS</div>
-<section class="section columns" aria-label="Reportes y recursos"><div class="panel"><span class="pill">NUEVO · Reportes diarios</span><h2>Así se cuenta el día en la CDMX</h2>
-<p>Cada jornada reunimos los titulares recientes sobre Metro, tránsito, seguridad, cultura y gobierno. Los reportes muestran las fuentes y lo que debes comprobar antes de compartir una noticia.</p>
-<ul class="mini-list" id="report-list"><li>Consultando reportes disponibles…</li></ul>
-<p><a class="btn" href="/reportes/">Ver archivo de reportes ↗</a></p></div>
-<aside class="panel"><h2>Guías para la ciudad</h2><ul class="mini-list"><li><a href="/guias/estado-del-metro.html">Comprobar el estado del Metro</a></li><li><a href="/guias/alertas-por-lluvia.html">Leer alertas por lluvia</a></li><li><a href="/guias/cierres-viales.html">Verificar bloqueos y cierres</a></li><li><a href="/guias/tramites-cdmx.html">Confirmar apoyos y trámites</a></li></ul>
-<p class="muted">Información explicativa, no anuncios en tiempo real.</p></aside></section>
-<section class="section" id="noticias"><div class="bar"><div><h2>Últimas noticias</h2><small>Selección automatizada de medios externos</small></div><input id="search" type="search" placeholder="Buscar noticias…" aria-label="Buscar noticias"></div>
-<div class="filters" role="group" aria-label="Filtrar por tema"><button class="filter active" data-filter="" type="button">Todas</button><button class="filter" data-filter="Metro" type="button">Metro</button><button class="filter" data-filter="Movilidad" type="button">Movilidad</button><button class="filter" data-filter="Seguridad" type="button">Seguridad</button><button class="filter" data-filter="Cultura" type="button">Cultura</button><button class="filter" data-filter="Gobierno" type="button">Gobierno</button><button class="filter" data-filter="CDMX" type="button">CDMX</button></div>
-<p id="status" role="status">Cargando titulares…</p><div class="grid" id="grid"></div></section>
-<div class="ad" aria-label="Espacio reservado para publicidad">ESPACIO RESERVADO PARA PUBLICIDAD · DISPONIBLE TRAS APROBACIÓN</div>
-<section class="section panel"><h2>¿Encontraste un titular incorrecto?</h2><p>Ayúdanos a mantener un índice útil: envía el enlace de la noticia y explica qué debería revisarse. No necesitas entrar a GitHub.</p><a class="btn" href="mailto:sanchezaxochitl@gmail.com?subject=Correcci%C3%B3n%20CDMX%20AL%20MEMENTO">Escribir al correo de contacto</a></section>
+<body>
+<a class="skip-link" href="#game-section">Ir al juego</a>
+<header class="header"><div class="container header-inner">
+ <a class="wordmark" href="/" aria-label="Umbral nueve, inicio"><span class="wordmark-icon">U<span>9</span></span><span>UMBRAL<span class="mark-nine">/9</span><small>ECOS DEL VACÍO</small></span></a>
+ <nav aria-label="Navegación principal"><a href="#game-section">JUGAR</a><a href="#story">HISTORIA</a><a href="#missions">MISIONES</a><a href="#controls">CONTROLES</a></nav>
+ <a class="nav-play" href="#game-section">ENTRAR <span>↗</span></a>
+</div></header>
+<main>
+<section class="hero" id="inicio"><div class="container hero-inner">
+ <div class="hero-copy"><div class="tagline"><span class="pulse-dot"></span> TRANSMISIÓN NO AUTORIZADA · 2189</div>
+  <p class="hero-index">[ ARCHIVO DE INCIDENTE 009 · CONFIDENCIAL ]</p>
+  <h1>LA SEÑAL VIENE<br>DE <em>MAÑANA.</em></h1>
+  <p class="hero-description">La estación espacial ÍCARO-9 está en silencio. Dentro hay criaturas que imitan los recuerdos humanos. Y alguien acaba de pedir ayuda <strong>con tu propia voz... desde el futuro.</strong></p>
+  <div class="hero-actions"><button type="button" id="hero-play" class="button button-primary">▶ &nbsp;INICIAR OPERACIÓN <span>→</span></button><a href="#story" class="button button-ghost">DESCUBRIR EL MISTERIO ↘</a></div>
+  <div class="hero-stats"><div><strong>06</strong><span>MISIONES</span></div><div><strong>03</strong><span>ARMAS</span></div><div><strong>02</strong><span>CRIATURAS TITÁNICAS</span></div><div><strong>∞</strong><span>DECISIONES</span></div></div>
+ </div>
+ <div class="hero-art" aria-hidden="true"><div class="outer-ring"></div><div class="middle-ring"></div><div class="inner-glow"></div><div class="rift-portal"></div><div class="rift-core"></div><div class="hero-scanner"><span>SCANNING ANOMALY</span><b>99.8%</b><i></i></div><span class="art-coordinate coordinate-top">09° 13' 42" N</span><span class="art-coordinate coordinate-bottom">SIGNAL SOURCE: <b>UNKNOWN</b></span><div class="hazard-stripes"></div></div>
+ </div><div class="hero-bottom container"><span><span class="status-light"></span> PROYECTO INDEPENDIENTE · JUEGA EN TU NAVEGADOR</span><span>DESCIENDE PARA ENTRAR EN ÍCARO-9 ↓</span></div></section>
+<section class="game-section" id="game-section"><div class="container">
+ <div class="section-heading"><div><p class="eyebrow">01 / EXPERIENCIA JUGABLE</p><h2>LA ESTACIÓN TE ESPERA<span class="green-dot">.</span></h2><p>Exploración 3D, disparos en primera persona, criaturas mutantes y una historia que cambia con cada misión. Tu progreso se guarda en este navegador.</p></div><div class="status-chip"><i></i> SIMULACIÓN EN TIEMPO REAL</div></div>
+ <div class="play-layout">
+ <div class="game-left">
+  <div class="game-frame" id="game-container">
+   <div class="frame-bar"><div class="frame-left"><span class="frame-square">■</span><strong>ÍCARO-9 // SISTEMA DE VISIÓN</strong></div><div class="frame-right"><span id="pointer-state">CLIC EN EL JUEGO PARA APUNTAR</span><span class="live-led"></span></div></div>
+   <div class="screen-wrap">
+    <canvas id="screen" width="960" height="540" aria-label="Juego de acción en primera persona. Usa WASD para moverte, ratón para mirar, clic para disparar, R para recargar y E para interactuar" tabindex="0"></canvas>
+    <div class="screen-vignette" aria-hidden="true"></div>
+    <div class="in-game-top"><div class="objective-head"><small>ORDEN DE MISIÓN · <span id="hud-sector">MUELLE DE ATRAQUE</span></small><strong>EXTRACCIÓN DE REGISTROS</strong></div><div class="mini-radar"><canvas width="114" height="114" id="minimap" aria-label="Minimapa de la estación"></canvas><span>RADAR // 50 m</span></div></div>
+    <div class="toast" id="toast" role="status"></div>
+    <div class="log-card" id="log-card" hidden><div>ARCHIVO RECUPERADO <span>◆ 09</span></div><h3 id="log-title">Bitácora</h3><p id="log-text"></p></div>
+    <div class="stage-overlay" id="stage-overlay" role="dialog" aria-labelledby="overlay-title"><div class="overlay-panel"><div class="overlay-header"><span class="overlay-light"></span><span id="overlay-tag">INCIDENTE ÍCARO-9</span><span>◆ U9</span></div><div class="overlay-content"><span class="overlay-quotation">“</span><h3 id="overlay-title">LA SEÑAL VIENE DE MAÑANA</h3><p id="overlay-body"></p><div id="overlay-transcript" class="overlay-transcript" hidden></div><div id="overlay-buttons" class="overlay-buttons"></div></div><span class="overlay-footer">UMBRAL//9 · PROTOCOLO DE CONTENCIÓN</span></div></div>
+    <div class="screen-bottom-left"><div class="bar-label"><span>VITALIDAD</span><strong id="hud-health">100</strong></div><div class="bar-track health"><div id="health-fill" style="width:100%"></div></div><div class="bar-label secondary"><span>ESCUDO</span><strong id="hud-shield">35</strong></div><div class="bar-track shield"><div id="shield-fill" style="width:54%"></div></div></div>
+    <div class="screen-bottom-right"><small id="hud-weapon">P9 · Pulso</small><div><strong id="hud-ammo">18</strong><span id="hud-reserve">/ 148</span></div></div>
+   </div>
+   <div id="runtime-error" class="runtime-error" hidden></div>
+   <div class="frame-bottom"><div class="bottom-stat"><small>MEMORIAS</small><strong id="hud-memories">0 / 2</strong></div><div class="bottom-stat"><small>TIEMPO</small><strong id="hud-time">00:00</strong></div><div class="bottom-stat"><small>AMENAZAS</small><strong id="hud-kills">0</strong></div><div class="bottom-stat exit-stat"><small>EVACUACIÓN</small><strong id="hud-exit">SALIDA BLOQUEADA</strong></div></div>
+  </div>
+  <div class="game-toolbar"><button id="pause-btn" type="button" disabled>Ⅱ PAUSAR</button><button id="resume-btn" type="button" class="hidden-resume">▶ SEGUIR</button><button id="fullscreen-btn" type="button">⛶ PANTALLA COMPLETA</button><button id="music-btn" type="button" aria-pressed="true">♫ MÚSICA ON</button><label class="volume-label">VOL <input type="range" id="volume" min="0" max="100" value="42" aria-label="Volumen de la música y efectos"></label></div>
+  <div class="touch-zone"><div class="stick-zone"><div id="touch-move" class="touch-move" aria-label="Control táctil para moverse"><span id="stick-knob"></span></div><span>MOVERSE</span></div><div class="touch-aim"><p>Desliza el dedo sobre la pantalla del juego para mirar</p></div><div class="touch-actions"><button type="button" data-action="shoot" class="touch-shoot">●<span>DISPARAR</span></button><button type="button" data-action="reload" class="touch-reload">⟳<span>RECARGAR</span></button><button type="button" data-action="dodge" class="touch-dodge">↯<span>ESQUIVAR</span></button><button type="button" data-action="weapon" class="touch-weapon">⇄<span>ARMA</span></button></div></div>
+  <div class="hint-strip"><span class="hint-circle">i</span><p><b>PC:</b> WASD mover · Ratón mirar · Clic disparar · R recargar · 1/2/3 armas · Mayús correr · Espacio esquivar · E interactuar · P pausa. <b>Celular:</b> joystick, deslizar para mirar y controles táctiles.</p></div>
+ </div>
+ <aside class="game-aside"><div class="aside-panel save-panel"><p class="eyebrow">EXPEDIENTE PERSONAL</p><h3>TU PROGRESO</h3><p>El navegador recordará las misiones superadas y las memorias que recuperes.</p><div class="save-grid"><div><strong id="save-level">1/6</strong><span>SECTORES</span></div><div><strong id="save-records">0/13</strong><span>ARCHIVOS</span></div><div><strong id="save-operations">0/6</strong><span>COMPLETADAS</span></div></div><button type="button" id="start-btn" class="button button-primary full-width"><span id="continue-label">EMPEZAR MISIÓN 01</span> →</button><div class="save-small"><span>◈ GUARDADO LOCAL</span> Sin cuentas. Sin instalaciones.</div></div>
+ <div class="aside-panel weapon-panel"><p class="eyebrow">ARSENAL DE LA HÉLICE</p><h3>TRES ARMAS. UNA SALIDA.</h3><div class="weapon-list"><div id="weapon-pistol" class="selected"><span class="weapon-icon">◈</span><div><strong>1 · P9 PULSO</strong><small>Precisa y fiable desde el comienzo.</small></div></div><div id="weapon-rifle"><span class="weapon-icon">⌁</span><div><strong>2 · BLOQUEADA</strong><small>Carabina automática. Misión 02.</small></div></div><div id="weapon-shotgun"><span class="weapon-icon">◇</span><div><strong>3 · BLOQUEADA</strong><small>Dispersor de corto alcance. Misión 04.</small></div></div></div></div>
+ <div class="aside-panel audio-panel"><div class="aside-emblem">♫</div><strong>MÚSICA AMBIENTAL ORIGINAL</strong><p>Composición electrónica oscura generada en tiempo real. Se activa al comenzar la misión.</p></div>
+ </aside></div>
+ </div></section>
+<section class="story-section" id="story"><div class="container story-grid"><div><p class="eyebrow">02 / EL INCIDENTE</p><h2>NO TODOS LOS<br>MONSTRUOS VIENEN<br><em>DE LAS ESTRELLAS.</em></h2><p>Darío Vega llega a ÍCARO-9 con una orden simple: encontrar supervivientes. En vez de personas encuentra <strong>Ecos</strong>, criaturas que recuerdan vidas que jamás vivieron.</p><p>Su hermana Elena trabajaba en un experimento llamado NIDO. Desapareció cuando algo empezó a hablar desde el corazón del asteroide. Ahora Darío escucha su voz en todos los pasillos... y descubre un mensaje enviado por alguien que tiene exactamente su rostro.</p><a href="#missions" class="story-link">ABRIR EXPEDIENTES DE MISIÓN ↗</a></div>
+ <div class="story-terminal"><div class="terminal-head"><span><i></i> MENSAJE ENCRIPTADO</span><span>ARCHIVO: NIDO-0009</span></div><div class="terminal-lines"><p><span>00:13:09</span> [INGRESO DE SEÑAL]</p><p><span>00:13:10</span> Origen: <b>ÍCARO-9</b></p><p><span>00:13:11</span> Fecha: <b>MAÑANA</b></p><p><span>00:13:12</span> Voz identificada: <b>DARÍO VEGA</b></p><p><span>00:13:13</span> Advertencia: <b>NO ABRAN LA PUERTA</b></p><p><span>00:13:14</span> <i>...¿DARÍO? ¿SIGUES AHÍ?...</i></p><p><span>00:13:15</span> <span class="cursor-block">█</span></p></div><div class="terminal-footer">TRANSMISIÓN INTERCEPTADA · PROHIBIDA SU DIVULGACIÓN</div></div></div></section>
+<section class="missions-section" id="missions"><div class="container"><div class="section-heading"><div><p class="eyebrow">03 / ARCHIVO DE OPERACIONES</p><h2>SEIS DESCENSOS. UNA VERDAD.</h2><p>Completa una misión para desbloquear la siguiente. Cada sector es más peligroso y revela una parte del misterio.</p></div><span class="mission-signal">↯ TRANSMISIONES SIN VERIFICAR</span></div><div id="mission-list" class="mission-list" aria-label="Misiones disponibles"></div><p class="reset-line">¿Quieres reiniciar toda la campaña? <button type="button" id="reset-progress">BORRAR MI PROGRESO</button> · Esta acción pide confirmación.</p></div></section>
+<section class="how-section" id="controls"><div class="container"><p class="eyebrow">04 / MANUAL DE SUPERVIVENCIA</p><h2>ANTES DE ABRIR LA COMPUERTA.</h2><div class="how-grid"><article><span>01</span><h3>APUNTA Y DISPARA</h3><p>Controla a Darío en primera persona. Usa el ratón para mirar, clic para disparar y R para recargar. Administra las balas.</p></article><article><span>02</span><h3>EXPLORA LA ESTACIÓN</h3><p>Hay cámaras laterales con memorias, botiquines y cajas de munición. El radar te ayudará a orientarte.</p></article><article><span>03</span><h3>NO CONFÍES EN LOS ECOS</h3><p>Los Acechadores persiguen, los Videntes disparan y los Brutos resisten. Dos guardianes mayores protegen el núcleo.</p></article><article><span>04</span><h3>DESCUBRE EL FINAL</h3><p>Recupera las memorias de cada sector, derrota los guardianes y alcanza el portal de extracción. Tus misiones quedarán guardadas.</p></article></div></div></section>
+<section class="closing"><div class="container closing-banner"><div><p>ÚLTIMA COMUNICACIÓN RECIBIDA</p><h2>“NO ENTRES SOLO, DARÍO.”</h2><span>— ELENA VEGA · REGISTRO DE VOZ 73</span></div><a class="button button-primary" href="#game-section">ENFRENTAR EL UMBRAL →</a></div></section>
 </main>
-<footer><div class="wrap">© <span id="year">2026</span> CDMX AL MEMENTO · Proyecto informativo independiente · Los artículos enlazados pertenecen a sus respectivos medios.
-<p><a href="/sobre-nosotros.html">Sobre nosotros</a><a href="/privacidad.html">Privacidad</a><a href="/politica-editorial.html">Política editorial</a><a href="/contacto.html">Contacto y correcciones</a><a href="mailto:sanchezaxochitl@gmail.com">sanchezaxochitl@gmail.com</a></p>
-</div></footer><script>document.getElementById('year').textContent=new Date().getFullYear()</script><script src="/app.js" defer></script></body></html>
+<footer class="footer"><div class="container footer-grid"><div><a class="wordmark" href="/">UMBRAL<span class="mark-nine">/9</span></a><p>Un shooter original de ciencia ficción y suspenso en primera persona. Creado para jugar gratis desde el navegador.</p></div><div><h3>EL PROYECTO</h3><a href="#game-section">Jugar</a><a href="#story">La historia</a><a href="#missions">Misiones</a><a href="/acerca.html">Sobre el proyecto</a></div><div><h3>INFORMACIÓN</h3><a href="/privacidad.html">Privacidad</a><a href="/terminos.html">Términos</a><a href="/contacto.html">Contacto</a></div></div><div class="container footer-bottom"><span>© 2026 UMBRAL 9 · Ecos del Vacío. Historia, personajes, gráficos y música originales.</span><span>Proyecto experimental · Sin anuncios por ahora</span></div></footer>
+</body>
+</html>
