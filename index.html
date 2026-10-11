@@ -13,13 +13,14 @@
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.orbit,.orbit-center{animation:none!important}*,*:before,*:after{transition:none!important}}
 
 
-/* Cinco universos vivos nuevos */
+/* Efectos musicales orgánicos y optimizados */
 .new-visual-thumb{font-size:23px;font-weight:800;letter-spacing:3px;display:flex;align-items:center;justify-content:center;overflow:hidden}
-.meteor-thumb{background:radial-gradient(circle at 70% 30%,#ffdaa988,#25274b 65%,#0b1225)!important;color:#ffd6ab;text-shadow:0 0 12px #f9a7ef}
 .jelly-thumb{background:radial-gradient(circle at 45% 48%,#3aeed36a,#171945 70%)!important;color:#b3fff5;text-shadow:0 0 16px #88fff6}
-.vortex-thumb{background:repeating-radial-gradient(circle at 50% 50%,#7650d8 0 3px,#131331 7px 16px)!important;color:#f5b9ff;text-shadow:0 0 18px #feb2ff}
-.firefly-thumb{background:radial-gradient(circle at 36% 50%,#a7db5280,#0e2c29 60%,#061518)!important;color:#e7ffa3;text-shadow:0 0 16px #d1ff82}
 .crystal-thumb{background:linear-gradient(135deg,#123b50,#30194d 64%,#14122b)!important;color:#a2f7fa;text-shadow:0 0 17px #9efffa}
+.lotus-thumb{background:radial-gradient(ellipse at 48% 70%,#4b4aaf,#163e55 60%,#0b162b)!important;color:#d4bbff;text-shadow:0 0 16px #ffb8fb}
+.coral-thumb{background:radial-gradient(ellipse at 30% 90%,#12b1a285,#11304a 64%,#101024)!important;color:#96ffe3;text-shadow:0 0 15px #74f8d6}
+.pollen-thumb{background:linear-gradient(135deg,#0d293c,#293559 55%,#503269)!important;color:#e7efff;text-shadow:0 0 18px #bdf5ff}
+@media(max-width:650px){.new-visual-thumb{font-size:21px}}
 
 </style>
 </head>
@@ -31,11 +32,11 @@
 <section class="studio section-wrap" id="estudio" aria-labelledby="studio-title"><div class="studio-head"><div><span class="eyebrow">◉ ESTUDIO INTERACTIVO</span><h2 id="studio-title">Tu música cobra vida.</h2><p>Sube tu canción, presiona reproducir y mira cómo se transforma.</p></div><span class="studio-hint">VISUALIZACIÓN EN TIEMPO REAL <span class="live-dot"></span></span></div>
 <div class="app-shell"><div class="visual-board" id="visualBoard"><canvas id="visualizer" aria-label="Animación de ondas y figuras que reaccionan al sonido" role="img"></canvas><div class="visual-overlay" id="visualOverlay"><div class="drop-target"><span class="upload-glyph">♫</span><div class="drop-title">Aquí comienza la magia</div><p>Arrastra una canción a este espacio o elige un archivo de tu dispositivo.</p><button class="primary-btn" id="chooseBtn" type="button">Elegir mi música <span aria-hidden="true">↗</span></button><small>MP3 · WAV · OGG · M4A* · FLAC* · WebM · Depende de tu navegador</small></div></div><div class="visual-top"><div class="visual-playing"><span class="live-dot"></span><span id="visualState">ESPERANDO TU MÚSICA</span></div><div class="sound-chips"><span>GRAVES <b id="bassLevel"></b></span><span>MEDIOS <b id="midLevel"></b></span><span>AGUDOS <b id="trebleLevel"></b></span></div></div><div class="visual-bottom"><div class="visual-caption"><span id="presetLabel">AURORA NEÓN</span><span class="separator">/</span><span id="colorsLabel">ULTRAVIOLETA</span></div><button class="outline-icon" id="fullBtn" type="button" title="Pantalla completa" aria-label="Poner la visualización en pantalla completa">⛶</button></div><div class="drop-shade" id="dropShade" aria-hidden="true">SOLTAR AUDIO PARA VISUALIZAR ✦</div></div>
 <div class="player"><div class="track-meta"><span class="track-cover">♫</span><div><strong id="trackTitle">Ninguna canción seleccionada</strong><small id="trackArtist">Elige un archivo para comenzar</small></div></div><div class="transport"><button id="prevBtn" type="button" class="transport-side" aria-label="Pista anterior" title="Pista anterior">⏮</button><button id="playBtn" type="button" class="play-control" aria-label="Reproducir o pausar">▶</button><button id="nextBtn" type="button" class="transport-side" aria-label="Pista siguiente" title="Pista siguiente">⏭</button></div><div class="progress"><span id="timeCurrent">0:00</span><input type="range" id="seek" min="0" max="1000" value="0" aria-label="Posición de reproducción"><span id="timeTotal">0:00</span></div><div class="player-extra"><button id="muteBtn" type="button" class="volume-icon" aria-label="Silenciar o activar audio">♫</button><input type="range" id="volume" min="0" max="100" value="80" aria-label="Volumen"><button id="addMusicBtn" type="button" class="add-btn">+ AUDIO</button></div></div>
-<div class="controls-layout"><div class="control-panel"><div class="panel-head"><div><span class="panel-icon">◈</span><h3>Universos visuales</h3></div><span>ELIGE TU MUNDO</span></div><div class="preset-grid" role="group" aria-label="Tipos de visualización"><button type="button" class="preset-card is-active" data-mode="aurora" aria-pressed="true"><span class="preset-thumbnail aurora-thumb"><i></i><i></i><i></i><i></i></span><strong>Aurora</strong><small>Luces líquidas</small></button><button type="button" class="preset-card" data-mode="spectrum" aria-pressed="false"><span class="preset-thumbnail spectrum-thumb"><i></i><i></i><i></i><i></i><i></i></span><strong>Espectro</strong><small>Barras de luz</small></button><button type="button" class="preset-card" data-mode="orbit" aria-pressed="false"><span class="preset-thumbnail orbit-thumb"><i></i><i></i></span><strong>Órbita</strong><small>Rueda de sonido</small></button><button type="button" class="preset-card" data-mode="blocks" aria-pressed="false"><span class="preset-thumbnail blocks-thumb"><i></i><i></i><i></i><i></i></span><strong>Pulse Boxes</strong><small>Cajas que laten</small></button><button type="button" class="preset-card" data-mode="wave" aria-pressed="false"><span class="preset-thumbnail wave-thumb"><i></i><i></i><i></i></span><strong>Ondas</strong><small>Ondas musicales</small></button><button type="button" class="preset-card" data-mode="particles" aria-pressed="false"><span class="preset-thumbnail particles-thumb">✧ · ✦ ⋆ · ✧</span><strong>Galaxia</strong><small>Partículas vivas</small></button><button type="button" class="preset-card" data-mode="meteor" aria-pressed="false"><span class="preset-thumbnail new-visual-thumb meteor-thumb">☄ ⋆ ╱</span><strong>Lluvia estelar</strong><small>Cometas fugaces</small></button>
-<button type="button" class="preset-card" data-mode="jelly" aria-pressed="false"><span class="preset-thumbnail new-visual-thumb jelly-thumb">◡ ˚ ∿</span><strong>Medusas de luz</strong><small>Criaturas flotantes</small></button>
-<button type="button" class="preset-card" data-mode="vortex" aria-pressed="false"><span class="preset-thumbnail new-visual-thumb vortex-thumb">◎ ↻ ◉</span><strong>Túnel infinito</strong><small>Espiral de profundidad</small></button>
-<button type="button" class="preset-card" data-mode="fireflies" aria-pressed="false"><span class="preset-thumbnail new-visual-thumb firefly-thumb">✺ · ✶</span><strong>Luciérnagas</strong><small>Enjambres vivos</small></button>
-<button type="button" class="preset-card" data-mode="crystal" aria-pressed="false"><span class="preset-thumbnail new-visual-thumb crystal-thumb">❖ ✧ ❖</span><strong>Jardín cristal</strong><small>Flores geométricas</small></button></div></div>
+<div class="controls-layout"><div class="control-panel"><div class="panel-head"><div><span class="panel-icon">◈</span><h3>Universos visuales</h3></div><span>ELIGE TU MUNDO</span></div><div class="preset-grid" role="group" aria-label="Tipos de visualización"><button type="button" class="preset-card is-active" data-mode="aurora" aria-pressed="true"><span class="preset-thumbnail aurora-thumb"><i></i><i></i><i></i><i></i></span><strong>Aurora</strong><small>Luces líquidas</small></button><button type="button" class="preset-card" data-mode="spectrum" aria-pressed="false"><span class="preset-thumbnail spectrum-thumb"><i></i><i></i><i></i><i></i><i></i></span><strong>Espectro</strong><small>Barras de luz</small></button><button type="button" class="preset-card" data-mode="orbit" aria-pressed="false"><span class="preset-thumbnail orbit-thumb"><i></i><i></i></span><strong>Órbita</strong><small>Rueda de sonido</small></button><button type="button" class="preset-card" data-mode="blocks" aria-pressed="false"><span class="preset-thumbnail blocks-thumb"><i></i><i></i><i></i><i></i></span><strong>Pulse Boxes</strong><small>Cajas que laten</small></button><button type="button" class="preset-card" data-mode="wave" aria-pressed="false"><span class="preset-thumbnail wave-thumb"><i></i><i></i><i></i></span><strong>Ondas</strong><small>Ondas musicales</small></button><button type="button" class="preset-card" data-mode="particles" aria-pressed="false"><span class="preset-thumbnail particles-thumb">✧ · ✦ ⋆ · ✧</span><strong>Galaxia</strong><small>Partículas vivas</small></button><button type="button" class="preset-card" data-mode="jelly" aria-pressed="false"><span class="preset-thumbnail new-visual-thumb jelly-thumb" aria-hidden="true">◡ ˚ ∿</span><strong>Medusas de luz</strong><small>Brillo que flota</small></button>
+<button type="button" class="preset-card" data-mode="crystal" aria-pressed="false"><span class="preset-thumbnail new-visual-thumb crystal-thumb" aria-hidden="true">❖ ✧ ❖</span><strong>Jardín cristal</strong><small>Flores geométricas</small></button>
+<button type="button" class="preset-card" data-mode="lotus" aria-pressed="false"><span class="preset-thumbnail new-visual-thumb lotus-thumb" aria-hidden="true">✿ ⋆ ◌</span><strong>Loto bioluminiscente</strong><small>Flores que respiran</small></button>
+<button type="button" class="preset-card" data-mode="coral" aria-pressed="false"><span class="preset-thumbnail new-visual-thumb coral-thumb" aria-hidden="true">ϟ ∿ ♧</span><strong>Corales de neón</strong><small>Jardines submarinos</small></button>
+<button type="button" class="preset-card" data-mode="pollen" aria-pressed="false"><span class="preset-thumbnail new-visual-thumb pollen-thumb" aria-hidden="true">◇ ˚ ✦</span><strong>Polen cristalino</strong><small>Polvo de luz flotante</small></button></div></div>
 <div class="control-panel control-settings"><div class="panel-head"><div><span class="panel-icon">◉</span><h3>Hazlo tuyo</h3></div><span>CONTROLES CREATIVOS</span></div><div class="settings-row"><div><strong>Paleta de colores</strong><small>Elige la energía de tu música</small></div><div class="palette-options" role="group" aria-label="Paleta de color"><button type="button" class="palette active" data-palette="ultraviolet" style="--p1:#ab70ff;--p2:#ff67c0" aria-label="Ultravioleta" aria-pressed="true"></button><button type="button" class="palette" data-palette="ocean" style="--p1:#31ddf3;--p2:#5b83ff" aria-label="Océano" aria-pressed="false"></button><button type="button" class="palette" data-palette="sunset" style="--p1:#ffb15c;--p2:#ff5378" aria-label="Atardecer" aria-pressed="false"></button><button type="button" class="palette" data-palette="forest" style="--p1:#65ffbd;--p2:#37ba85" aria-label="Selva" aria-pressed="false"></button><button type="button" class="palette" data-palette="rainbow" style="--p1:#ff6bc5;--p2:#83d9ff" aria-label="Arcoíris" aria-pressed="false"></button></div></div><div class="settings-row slider-row"><label for="sensitivity"><strong>Sensibilidad</strong><small>¿Qué tanto reaccionan las luces?</small></label><div class="slider-line"><input id="sensitivity" type="range" min="40" max="220" value="115"><b id="sensitivityVal">115 %</b></div></div><div class="settings-row slider-row"><label for="smooth"><strong>Suavidad del movimiento</strong><small>Transiciones más fluidas o intensas</small></label><div class="slider-line"><input id="smooth" type="range" min="20" max="95" value="78"><b id="smoothVal">78 %</b></div></div><div class="settings-row"><div><strong>Partículas adicionales</strong><small>Destellos que siguen los golpes del sonido</small></div><label class="switch"><input id="particlesToggle" type="checkbox" checked><span></span></label></div><div class="settings-row"><div><strong>Usar micrófono</strong><small>Visualiza voz y sonidos a tu alrededor</small></div><button id="micBtn" type="button" class="mic-btn">🎙 Activar</button></div><p class="control-footnote">El micrófono necesita tu permiso y una conexión HTTPS. No grabamos ni enviamos su audio.</p></div></div>
 <div class="playlist-panel"><div class="playlist-top"><div><span class="eyebrow">TU SESIÓN</span><h3>Lista de reproducción <small id="trackCount">0 canciones</small></h3></div><button id="clearBtn" type="button" class="text-btn">Limpiar lista</button></div><ol id="playlist" class="playlist"><li class="empty-playlist">Tus canciones aparecerán aquí. Puedes seleccionar varias a la vez.</li></ol></div>
 <div class="status-line" id="statusLine" role="status" aria-live="polite">Todo listo para recibir tu música.</div><input id="fileInput" class="visually-hidden" type="file" accept="audio/*,.mp3,.wav,.ogg,.m4a,.aac,.flac,.webm" multiple><audio id="audio" preload="metadata"></audio>
@@ -58,14 +59,14 @@
   forest: {name:'SELVA',hues:[156,180,97],background:'#061611'},
   rainbow: {name:'ARCOÍRIS',hues:[300,181,41],background:'#0d0b1e'}
  };
- const names = {aurora:'AURORA NEÓN',spectrum:'ESPECTRO LUMINOSO',orbit:'ÓRBITA SONORA',blocks:'PULSE BOXES',wave:'ONDAS VIVAS',particles:'GALAXIA MUSICAL',meteor:'LLUVIA ESTELAR',jelly:'MEDUSAS DE LUZ',vortex:'TÚNEL INFINITO',fireflies:'LUCIÉRNAGAS',crystal:'JARDÍN CRISTAL'};
+ const names = {aurora:'AURORA NEÓN',spectrum:'ESPECTRO LUMINOSO',orbit:'ÓRBITA SONORA',blocks:'PULSE BOXES',wave:'ONDAS VIVAS',particles:'GALAXIA MUSICAL',jelly:'MEDUSAS DE LUZ',crystal:'JARDÍN CRISTAL',lotus:'LOTO BIOLUMINISCENTE',coral:'CORALES DE NEÓN',pollen:'POLEN CRISTALINO'};
  const state = {mode:'aurora', palette:'ultraviolet', sensitivity:1.15, smoothing:.78,
   particlesEnabled:true, tracks:[],active:-1, playing:false, microphone:false,
   context:null, analyser:null, source:null, micStream:null, micSource:null,
   spectrum:new Uint8Array(1024),waveform:new Uint8Array(2048),bass:0,mid:0,treble:0,
   energy:0,beat:0,previousBass:0,prevTime:0,time:0,points:[],stars:[],noisePhase:0,
   width:1000,height:540,dpr:1,resizeObserver:null,mutationTrack:0,muted:false,
-  objectUrls:new Set(),dropCount:0,lastStatus:''};
+  objectUrls:new Set(),dropCount:0,lastStatus:'',frameInterval:1/60,nextFrameAt:0};
  const TAU = Math.PI*2;
  const clamp = (n,a,b)=>Math.max(a,Math.min(b,n));
  const mix = (a,b,t)=>a+(b-a)*t;
@@ -242,7 +243,7 @@
  document.addEventListener('drop',e=>{if(e.dataTransfer?.files?.length){e.preventDefault();dragDepth=0;board.classList.remove('dragging');loadFiles(e.dataTransfer.files)}});
  window.addEventListener('keydown',e=>{if(e.code==='Space'&&e.target===document.body){e.preventDefault();audio.paused?play():audio.pause()}});
  window.addEventListener('beforeunload',()=>{if(state.micStream)state.micStream.getTracks().forEach(t=>t.stop());for(const url of state.objectUrls)URL.revokeObjectURL(url)});
- function resize(){const box=board.getBoundingClientRect();state.dpr=Math.min(window.devicePixelRatio||1,2);state.width=Math.max(1,box.width);state.height=Math.max(1,box.height);canvas.width=Math.round(state.width*state.dpr);canvas.height=Math.round(state.height*state.dpr);ctx.setTransform(state.dpr,0,0,state.dpr,0,0)}
+ function resize(){const box=board.getBoundingClientRect();const compact=box.width<700;state.dpr=Math.min(window.devicePixelRatio||1,compact?1.35:1.8);state.frameInterval=1/(compact?45:60);state.width=Math.max(1,box.width);state.height=Math.max(1,box.height);canvas.width=Math.round(state.width*state.dpr);canvas.height=Math.round(state.height*state.dpr);ctx.setTransform(state.dpr,0,0,state.dpr,0,0)}
  if(window.ResizeObserver){state.resizeObserver=new ResizeObserver(resize);state.resizeObserver.observe(board)}else window.addEventListener('resize',resize);
  resize();
  for(let i=0;i<110;i++)state.stars.push({x:Math.random(),y:Math.random(),r:random(.3,2),phase:random(0,TAU),drift:random(.03,.23)});
@@ -342,132 +343,48 @@
   ctx.shadowBlur=0;
  }
 
- // LLUVIA ESTELAR: corrientes diagonales de cometas, con colas que cambian con el bajo.
- function drawMeteor(w,h,t,dt){
-  const H=colors(),live=state.bass,treb=state.treble,beat=state.beat;
-  const flow=state.points;
-  ctx.save();ctx.globalCompositeOperation='lighter';
-  for(let i=0;i<flow.length;i++){
-   const p=flow[i],speed=.10+p.s*.25+live*.19;
-   p.x+=dt*speed*.85;
-   p.y+=dt*speed*1.22;
-   if(p.x>1.14||p.y>1.16){p.x=random(-.2,.75);p.y=-random(.07,.5);p.h=Math.random()}
-   const x=p.x*w,y=p.y*h;
-   const intensity=.27+frequency(i%85,90)*.6+treb*.25;
-   const tail=(14+p.size*11+live*70)*(w/1000+.45);
-   ctx.strokeStyle=color(H[i%3]+i*.19,Math.min(.85,intensity),75);
-   ctx.lineWidth=.6+p.size*.65+beat*2;
-   ctx.shadowColor=color(H[i%3],.8);ctx.shadowBlur=4+treb*21;
-   ctx.beginPath();ctx.moveTo(x,y);ctx.lineTo(x-tail*.52,y-tail);ctx.stroke();
-   ctx.fillStyle=color(H[i%3],Math.min(1,intensity+.1),93);
-   ctx.beginPath();ctx.arc(x,y,Math.min(5,p.size*.35+.5+treb*2),0,TAU);ctx.fill();
-  }
-  if(beat>.04){
-   ctx.strokeStyle=color(H[2],.11+beat*.25,78);ctx.lineWidth=2;
-   ctx.beginPath();ctx.arc(w*.5,h*.5,Math.min(w,h)*(.14+beat*.29),0,TAU);ctx.stroke();
-  }
-  ctx.restore();
- }
- // MEDUSAS DE LUZ: organismos con campanas pulsantes y tentáculos ondulantes por banda.
+
+ // MEDUSAS DE LUZ: campanas flexibles y seis tentáculos por medusa.
+ // Cada escena dibuja como máximo 8 medusas x 6 líneas de 13 nodos.
  function drawJelly(w,h,t,dt){
-  const H=colors(),n=9,small=Math.min(w,h);
+  const H=colors(),n=w<600?6:8,small=Math.min(w,h),bass=state.bass,mid=state.mid,high=state.treble;
   ctx.save();ctx.globalCompositeOperation='lighter';
   for(let j=0;j<n;j++){
-   const p=state.points[j+25],scale=.5+(j%4)*.22;
-   const x=w*(.09+(j%4)*.245)+Math.sin(t*(.22+j*.027)+j*1.9)*w*.044;
-   const y=h*(.18+Math.floor(j/4)*.29)+Math.sin(t*(.31+j*.02)+j*.8)*h*.06;
-   const band=j%3===0?state.bass:j%3===1?state.mid:state.treble;
-   const radius=small*(.028+.016*scale+band*.027);
-   const hue=H[j%3]+j*7,beat=1+Math.sin(t*(1.5+band*6)+j)*.09;
-   glowCircle(x,y,radius*3.3,hue,.095+band*.18);
-   for(let k=0;k<8;k++){
+   const scale=.65+(j%4)*.17;
+   const x=w*(.11+(j%4)*.25)+Math.sin(t*(.22+j*.027)+j*1.9)*w*.042;
+   const y=h*(.20+Math.floor(j/4)*.38)+Math.sin(t*(.31+j*.02)+j*.8)*h*.06;
+   const band=j%3===0?bass:j%3===1?mid:high;
+   const radius=small*(.031+.014*scale+band*.025);
+   const hue=H[j%3]+j*6,pulse=1+Math.sin(t*(1.45+band*5)+j)*.085;
+   glowCircle(x,y,radius*2.9,hue,.09+band*.15);
+   const vertical=radius*(2.05+scale+mid*.5);
+   for(let k=0;k<6;k++){
     ctx.beginPath();
-    for(let q=0;q<=19;q++){
-     const z=q/19,px=x+(k-3.5)*radius*.18+
-      Math.sin(z*11+t*(1.1+band*2)+k*.7+j)*radius*(.15+z*.6),
-      py=y+z*radius*(2+scale+state.mid*.6);
-     if(q===0)ctx.moveTo(px,py);else ctx.lineTo(px,py);
+    for(let q=0;q<=12;q++){
+     const z=q/12;
+     const px=x+(k-2.5)*radius*.23+
+      Math.sin(z*10+t*(1+band*1.5)+k*.66+j)*radius*(.16+z*.6);
+     const py=y+z*vertical;
+     if(!q)ctx.moveTo(px,py);else ctx.lineTo(px,py);
     }
-    ctx.strokeStyle=color(hue+(k%3)*12,(.1+.32*(1-k/11)+band*.2),73);
-    ctx.lineWidth=k%3===0?1.8:1;ctx.stroke();
+    ctx.strokeStyle=color(hue+(k%3)*12,.13+.24*(1-k/9)+band*.17,76);
+    ctx.lineWidth=k%3===0?1.6:1;ctx.stroke();
    }
    ctx.beginPath();
-   ctx.moveTo(x-radius*beat,y);
-   ctx.bezierCurveTo(x-radius*beat,y-radius*1.9,x+radius*beat,y-radius*1.9,x+radius*beat,y);
-   ctx.quadraticCurveTo(x,y+radius*.25,x-radius*beat,y);
-   ctx.fillStyle=color(hue,.21+band*.27,65);ctx.fill();
-   ctx.strokeStyle=color(hue,.62+band*.28,85);ctx.lineWidth=1.8+band*2;ctx.stroke();
-   ctx.beginPath();ctx.arc(x-radius*.32,y-radius*.46,1.8+band*2,0,TAU);
-   ctx.arc(x+radius*.32,y-radius*.46,1.8+band*2,0,TAU);
+   ctx.moveTo(x-radius*pulse,y);
+   ctx.bezierCurveTo(x-radius*pulse,y-radius*1.9,x+radius*pulse,y-radius*1.9,x+radius*pulse,y);
+   ctx.quadraticCurveTo(x,y+radius*.3,x-radius*pulse,y);
+   ctx.fillStyle=color(hue,.19+band*.26,66);ctx.fill();
+   ctx.strokeStyle=color(hue,.6+band*.24,85);ctx.lineWidth=1.7+band*1.7;ctx.stroke();
+   ctx.beginPath();ctx.arc(x-radius*.32,y-radius*.48,1.6+band*1.4,0,TAU);
+   ctx.arc(x+radius*.32,y-radius*.48,1.6+band*1.4,0,TAU);
    ctx.fillStyle='#e9ffff';ctx.fill();
   }
   ctx.restore();
  }
- // TÚNEL INFINITO: profundidad real simulada, estrellas viajando hacia el espectador.
- function drawVortex(w,h,t,dt){
-  const H=colors(),cx=w*.5,cy=h*.5,sz=Math.min(w,h);
-  ctx.save();ctx.globalCompositeOperation='lighter';
-  const forward=1+state.bass*3.1+state.beat*3;
-  for(let i=0;i<state.points.length;i++){
-   const p=state.points[i];
-   p.r+=dt*(.10+p.s*.06)*forward;
-   if(p.r>1.15){p.r=.015+p.s*.08;p.a=random(0,TAU)}
-   const angle=p.a+t*(.025+state.mid*.2),depth=Math.pow(p.r,1.5);
-   const rx=sz*.9*depth,ry=sz*.63*depth;
-   const x=cx+Math.cos(angle)*rx,y=cy+Math.sin(angle)*ry;
-   const startX=cx+Math.cos(angle)*(rx-10-depth*28),
-         startY=cy+Math.sin(angle)*(ry-7-depth*25);
-   const hue=H[i%3]+p.h*45;
-   ctx.strokeStyle=color(hue,.15+depth*.72,75);
-   ctx.lineWidth=.6+depth*2.8;ctx.shadowBlur=depth*12;ctx.shadowColor=color(hue,.7);
-   ctx.beginPath();ctx.moveTo(startX,startY);ctx.lineTo(x,y);ctx.stroke();
-  }
-  for(let i=9;i>=0;i--){
-   const phase=((i/10+t*(.16+state.mid*.12))%1);
-   const rr=sz*.64*Math.pow(phase,2);
-   ctx.beginPath();ctx.ellipse(cx,cy,rr,rr*.7,t*.08,0,TAU);
-   ctx.strokeStyle=color(H[i%3],.055+phase*.19+state.beat*.14,68);
-   ctx.lineWidth=.6+phase*1.5;ctx.stroke();
-  }
-  glowCircle(cx,cy,sz*.18,H[1],.17+state.treble*.17);
-  ctx.restore();
- }
- // LUCIÉRNAGAS: enjambres autónomos con movimiento browniano y conexiones efímeras.
- function drawFireflies(w,h,t,dt){
-  const H=colors(),pts=state.points;
-  ctx.save();ctx.globalCompositeOperation='lighter';
-  for(let i=0;i<pts.length;i++){
-   const p=pts[i],flutter=t*(.6+p.s*.9)+p.a;
-   const pull=state.bass*.13,accel=.016+state.mid*.075;
-   const driftX=Math.sin(flutter*1.1+i*.71)*.015+Math.cos(t*.3+i)*pull*.18;
-   const driftY=Math.cos(flutter*.9+i*.36)*.017-Math.sin(t*.4+i*.3)*pull*.14;
-   p.x+=dt*(p.vx*accel+driftX*(1+state.mid*2));
-   p.y+=dt*(p.vy*accel+driftY*(1+state.mid*2));
-   if(p.x<-.04)p.x=1.04;if(p.x>1.04)p.x=-.04;
-   if(p.y<-.04)p.y=1.04;if(p.y>1.04)p.y=-.04;
-   const x=p.x*w,y=p.y*h;
-   const brightness=(Math.sin(flutter*3.9)+1)*.25+.12+state.treble*.35;
-   const hue=H[i%3]+Math.sin(t*.4+i)*12;
-   ctx.shadowBlur=9+brightness*30;ctx.shadowColor=color(hue,.85);
-   ctx.fillStyle=color(hue,.2+brightness*.75,85);
-   ctx.beginPath();ctx.arc(x,y,.7+p.size*.55+brightness*2.3,0,TAU);ctx.fill();
-   if(i%3===0)glowCircle(x,y,10+brightness*21,hue,brightness*.17);
-  }
-  ctx.shadowBlur=0;
-  // Los destellos se conectan al subir las frecuencias medias.
-  const limit=64;
-  for(let i=0;i<limit;i+=2){
-   const a=pts[i],b=pts[(i*7+23)%pts.length],dx=(a.x-b.x)*w,dy=(a.y-b.y)*h;
-   const distance=dx*dx+dy*dy,range=130+state.mid*140;
-   if(distance>range*range)continue;
-   ctx.strokeStyle=color(H[i%3],(.08+state.mid*.28)*(1-Math.sqrt(distance)/range),80);
-   ctx.lineWidth=.8;ctx.beginPath();ctx.moveTo(a.x*w,a.y*h);ctx.lineTo(b.x*w,b.y*h);ctx.stroke();
-  }
-  ctx.restore();
- }
- // JARDÍN CRISTAL: formas fractales con ramas, pétalos poligonales y semillas musicales.
+ // JARDÍN CRISTAL: flores y ramitas geométricas que se abren al ritmo.
  function drawCrystal(w,h,t,dt){
-  const H=colors(),sz=Math.min(w,h),cluster=7;
+  const H=colors(),sz=Math.min(w,h),cluster=w<600?5:7;
   ctx.save();ctx.globalCompositeOperation='lighter';
   for(let k=0;k<cluster;k++){
    const col=k%4,row=Math.floor(k/4);
@@ -475,42 +392,186 @@
    const y=h*(.33+row*.36);
    const v=k%3===0?state.bass:k%3===1?state.mid:state.treble;
    const size=sz*(.047+(k%3)*.01+v*.037);
-   const petals=5+k%4,theta=t*(.11+k*.006)+(k%2?-.4:.4);
-   glowCircle(x,y,size*2.4,H[k%3],.07+v*.1);
+   const petals=5+k%3,theta=t*(.11+k*.006)+(k%2?-.4:.4);
+   glowCircle(x,y,size*2.25,H[k%3],.07+v*.09);
    for(let j=0;j<petals;j++){
-    const a=TAU*j/petals+theta,reach=size*(1+v*.55),
-          tipX=x+Math.cos(a)*reach,tipY=y+Math.sin(a)*reach;
+    const a=TAU*j/petals+theta,reach=size*(1+v*.55);
+    const ca=Math.cos(a),sa=Math.sin(a),tipX=x+ca*reach,tipY=y+sa*reach;
     ctx.beginPath();ctx.moveTo(x,y);
     ctx.lineTo(x+Math.cos(a-.28)*reach*.5,y+Math.sin(a-.28)*reach*.5);
     ctx.lineTo(tipX,tipY);
     ctx.lineTo(x+Math.cos(a+.28)*reach*.5,y+Math.sin(a+.28)*reach*.5);
     ctx.closePath();ctx.fillStyle=color(H[(k+j)%3],.04+v*.08,75);ctx.fill();
     ctx.strokeStyle=color(H[(k+j)%3],.35+v*.35,80);ctx.lineWidth=1.1;ctx.stroke();
-    for(let b=1;b<4;b++){
-     const phase=b/4,px=x+(tipX-x)*phase,py=y+(tipY-y)*phase,
-           da=.28+.11*Math.sin(t*2+j+b),len=size*.25*(1-phase);
+    for(let b=1;b<=2;b++){
+     const phase=b/3,px=x+ca*reach*phase,py=y+sa*reach*phase,
+           spread=.29+.1*Math.sin(t*2+j+b),len=size*.25*(1-phase);
      ctx.beginPath();ctx.moveTo(px,py);
-     ctx.lineTo(px+Math.cos(a+da)*len,py+Math.sin(a+da)*len);
+     ctx.lineTo(px+Math.cos(a+spread)*len,py+Math.sin(a+spread)*len);
      ctx.moveTo(px,py);
-     ctx.lineTo(px+Math.cos(a-da)*len,py+Math.sin(a-da)*len);
+     ctx.lineTo(px+Math.cos(a-spread)*len,py+Math.sin(a-spread)*len);
      ctx.strokeStyle=color(H[(k+j+1)%3],.12+state.treble*.5,75);ctx.stroke();
     }
    }
-   ctx.beginPath();ctx.arc(x,y,3+state.beat*6,0,TAU);ctx.fillStyle=color(H[k%3],.65,92);ctx.fill();
+   ctx.beginPath();ctx.arc(x,y,3+state.beat*6,0,TAU);
+   ctx.fillStyle=color(H[k%3],.65,92);ctx.fill();
   }
   ctx.restore();
  }
-
- function sparkleOverlay(w,h,t,dt){if(!state.particlesEnabled||['particles','meteor','jelly','vortex','fireflies','crystal'].includes(state.mode))return;const hues=colors();
+ // LOTO BIOLUMINISCENTE: flores orgánicas con pétalos de seda que respiran.
+ // Seis flores, pocas curvas por cuadro y sin sombras por pétalo.
+ function drawLotus(w,h,t,dt){
+  const H=colors(),sz=Math.min(w,h),n=w<590?4:6;
+  const energy=state.bass,voice=state.mid,shine=state.treble;
+  ctx.save();ctx.globalCompositeOperation='lighter';
+  for(let i=0;i<n;i++){
+   const row=Math.floor(i/3),col=i%3;
+   const x=w*(.18+col*.32)+Math.sin(t*.24+i*1.7)*w*.014;
+   const y=h*(row===0?.33:.73)+Math.cos(t*.29+i*2.1)*h*.017;
+   const hue=H[i%3]+i*7;
+   const r=sz*(row===0?.085:.074)*(1+energy*.2);
+   const open=.55+Math.sin(t*.6+i*1.8)*.07+energy*.26;
+   glowCircle(x,y,r*2.4,hue,.11+energy*.14);
+   // Ondas circulares lentas alrededor de la flor.
+   for(let ring=1;ring<=2;ring++){
+    ctx.beginPath();ctx.ellipse(x,y+r*.3,r*(1.32+ring*.36+voice*.2),
+      r*(.23+ring*.07),0,0,TAU);
+    ctx.strokeStyle=color(hue,.12+voice*.13,80);
+    ctx.lineWidth=.8;ctx.stroke();
+   }
+   ctx.save();ctx.translate(x,y);ctx.rotate(Math.sin(t*.14+i)*.08);
+   for(let layer=1;layer>=0;layer--){
+    const petals=layer?7:5;
+    const spread=layer?.82:.58;
+    const size=layer?r: r*.77;
+    const offset=layer?0:TAU/10;
+    for(let j=0;j<petals;j++){
+     const a=j/petals*TAU+offset;
+     const baseX=Math.sin(a)*size*.08,baseY=Math.cos(a)*size*.08;
+     const tipX=Math.sin(a)*size*open*1.14,tipY=-Math.cos(a)*size*(.69+open*.63);
+     ctx.beginPath();ctx.moveTo(baseX,baseY);
+     ctx.bezierCurveTo(baseX-size*spread,baseY-size*.45,
+       tipX-size*.32,tipY-size*.36,tipX,tipY);
+     ctx.bezierCurveTo(tipX+size*.32,tipY-size*.36,
+       baseX+size*spread,baseY-size*.45,baseX,baseY);
+     ctx.fillStyle=color(hue+(j%3)*9,.055+shine*.1+(layer?0:.055),73);ctx.fill();
+     ctx.strokeStyle=color(hue+(j%3)*9,.28+voice*.35,81);
+     ctx.lineWidth=layer?1.15:1.4;ctx.stroke();
+    }
+   }
+   ctx.beginPath();ctx.arc(0,0,r*(.13+energy*.15),0,TAU);
+   ctx.fillStyle=color(H[(i+1)%3],.66+shine*.24,95);ctx.fill();
+   ctx.restore();
+  }
+  ctx.restore();
+ }
+ // CORALES DE NEÓN: colonias de ramas submarinas, no partículas sueltas.
+ // Una sola llamada de stroke para las ramificaciones por colonia.
+ function drawCoral(w,h,t,dt){
+  const H=colors(),n=w<600?6:9,small=Math.min(w,h);
+  const low=state.bass,mid=state.mid,high=state.treble;
+  ctx.save();ctx.globalCompositeOperation='lighter';
+  for(let i=0;i<n;i++){
+   const x=w*(.08+i/(n-1)*.84),y=h*(.91+Math.sin(i*2.2)*.035);
+   const baseLen=small*(.075+(i%4)*.022)*(1+low*.27);
+   const hue=H[i%3]+i*6;
+   // Ramas de profundidad limitada: 15 segmentos como máximo por coral.
+   function branch(px,py,len,angle,depth,seed){
+    const drift=Math.sin(t*(.46+mid*.42)+seed*.9+i)*(.045+mid*.17);
+    const a=angle+drift,ex=px+Math.sin(a)*len,ey=py-Math.cos(a)*len;
+    ctx.moveTo(px,py);ctx.lineTo(ex,ey);
+    if(depth<=0){
+      ctx.moveTo(ex+1,ey);ctx.lineTo(ex-1,ey-3-high*4);
+      return;
+    }
+    branch(ex,ey,len*.68,a-.48-.08*Math.sin(t*.6+seed),depth-1,seed+1);
+    branch(ex,ey,len*.66,a+.44+.07*Math.cos(t*.67+seed),depth-1,seed+2);
+   }
+   ctx.beginPath();
+   branch(x,y,baseLen,Math.sin(t*.31+i)*.11,3,i);
+   ctx.strokeStyle=color(hue,.30+mid*.44,79);
+   ctx.lineWidth=1.25+low*1.15;
+   ctx.stroke();
+   // Un brillo suave por colonia en vez de desenfoque en cada rama.
+   glowCircle(x,y-baseLen*1.6,baseLen*1.35,hue,.07+high*.09);
+   ctx.beginPath();ctx.arc(x,y-baseLen*2.5,2.1+high*3.2,0,TAU);
+   ctx.fillStyle=color(H[(i+1)%3],.35+high*.3,88);ctx.fill();
+  }
+  // Corriente marina ambiental: tres ondas sutiles.
+  for(let k=0;k<3;k++){
+   ctx.beginPath();
+   for(let j=0;j<=30;j++){
+    const x=j/30*w,y=h*(.25+k*.21)+Math.sin(j*.4-t*(.35+k*.08))*h*(.012+mid*.02);
+    if(!j)ctx.moveTo(x,y);else ctx.lineTo(x,y);
+   }
+   ctx.strokeStyle=color(H[k],.09+mid*.08,72);ctx.lineWidth=.9;ctx.stroke();
+  }
+  ctx.restore();
+ }
+ // POLEN CRISTALINO: cristales finos suspendidos en corrientes de aire luminoso.
+ // Hasta 115 fragmentos; sin blur individual ni gradientes por partícula.
+ function drawPollen(w,h,t,dt){
+  const H=colors(),compact=w<600,amount=Math.min(state.points.length,compact?75:115);
+  const mid=state.mid,hi=state.treble,low=state.bass;
+  ctx.save();ctx.globalCompositeOperation='lighter';
+  // Tres estelas fluidas constituyen el "viento" que arrastra las pequeñas gemas.
+  for(let lane=0;lane<3;lane++){
+   const base=h*(.25+lane*.25);
+   ctx.beginPath();
+   for(let j=0;j<=45;j++){
+    const z=j/45,x=z*w;
+    const y=base+Math.sin(z*TAU*2.1-t*.46+lane)*h*(.035+mid*.022);
+    if(!j)ctx.moveTo(x,y);else ctx.lineTo(x,y);
+   }
+   ctx.strokeStyle=color(H[lane],.10+mid*.12,80);
+   ctx.lineWidth=1+low*.7;ctx.stroke();
+  }
+  for(let i=0;i<amount;i++){
+   const p=state.points[i];
+   const drift=.008+.017*p.s+mid*.027;
+   p.x+=dt*drift*(.9+Math.sin(t*.25+p.a)*.22);
+   p.y+=dt*Math.sin(t*.6+p.a*2+i*.15)*(.006+hi*.018);
+   if(p.x>1.06){p.x=-.06;p.y=(p.y+.36)%1;}
+   if(p.y>1.04)p.y=-.04;if(p.y<-.04)p.y=1.04;
+   const x=p.x*w,y=p.y*h,hue=H[i%3]+p.h*18;
+   const r=(.9+p.size*.8)*(1+hi*.46),angle=p.a+t*(.23+p.s*.3);
+   const ca=Math.cos(angle),sa=Math.sin(angle);
+   const dx=ca*r,dy=sa*r;
+   const opacity=.22+(Math.sin(t*(1.2+p.s)+i)*.5+.5)*.35+hi*.18;
+   ctx.beginPath();ctx.moveTo(x,y-r*1.4);
+   ctx.lineTo(x+dx,y+dy);
+   ctx.lineTo(x,y+r*1.4);
+   ctx.lineTo(x-dx,y-dy);ctx.closePath();
+   ctx.fillStyle=color(hue,opacity*.25,88);ctx.fill();
+   ctx.strokeStyle=color(hue,opacity,90);ctx.lineWidth=.75;ctx.stroke();
+   if(i%11===0){
+    ctx.beginPath();ctx.moveTo(x-r*2.8,y);ctx.lineTo(x+r*2.8,y);
+    ctx.moveTo(x,y-r*2.8);ctx.lineTo(x,y+r*2.8);
+    ctx.strokeStyle=color(hue,.08+hi*.17,92);ctx.stroke();
+   }
+  }
+  ctx.restore();
+ }
+ function sparkleOverlay(w,h,t,dt){if(!state.particlesEnabled||['particles','jelly','crystal','lotus','coral','pollen'].includes(state.mode))return;const hues=colors();
   for(let i=0;i<state.points.length;i+=3){const p=state.points[i];p.y-=dt*(.013+state.mid*.06);if(p.y<-.05)p.y=1.05;const x=p.x*w+Math.sin(t*.18+p.a)*22,y=p.y*h,hh=hues[i%3];ctx.fillStyle=color(hh,.09+state.energy*.4,80);ctx.beginPath();ctx.arc(x,y,(p.size*.7+state.treble*4),0,TAU);ctx.fill()}
  }
  function drawCenterLabel(w,h){if(state.playing||state.microphone)return;if(state.active<0)return;ctx.save();ctx.textAlign='center';ctx.font='600 12px "DM Sans",sans-serif';ctx.fillStyle='#c6bde1a6';ctx.fillText('PULSA REPRODUCIR PARA ACTIVAR LAS LUCES',w/2,h*.77);ctx.restore()}
  function frame(timestamp){
-  const t=timestamp/1000,dt=state.prevTime?clamp(t-state.prevTime,.001,.05):.016;
+  const t=timestamp/1000;
+  if(document.hidden){
+   state.prevTime=t;state.nextFrameAt=t;requestAnimationFrame(frame);return;
+  }
+  // Ritmo independiente del refresco de la pantalla: ~45 FPS en móvil,
+  // hasta 60 FPS en escritorio, sin acumular fotogramas al volver a la pestaña.
+  if(state.nextFrameAt&&t+.0005<state.nextFrameAt){
+   requestAnimationFrame(frame);return;
+  }
+  state.nextFrameAt=Math.max(state.nextFrameAt||t,t-state.frameInterval*.85)+state.frameInterval;
+  const dt=state.prevTime?clamp(t-state.prevTime,.001,.05):.016;
   state.prevTime=t;state.time+=dt;
   const w=state.width,h=state.height;
   analyze(dt);ctx.save();background(w,h,state.time);
-  switch(state.mode){case 'spectrum':drawSpectrum(w,h,state.time);break;case 'orbit':drawOrbit(w,h,state.time);break;case 'blocks':drawBlocks(w,h,state.time);break;case 'wave':drawWave(w,h,state.time);break;case 'particles':drawParticles(w,h,state.time,dt);break;case 'meteor':drawMeteor(w,h,state.time,dt);break;case 'jelly':drawJelly(w,h,state.time,dt);break;case 'vortex':drawVortex(w,h,state.time,dt);break;case 'fireflies':drawFireflies(w,h,state.time,dt);break;case 'crystal':drawCrystal(w,h,state.time,dt);break;default:drawAurora(w,h,state.time)}
+  switch(state.mode){case 'spectrum':drawSpectrum(w,h,state.time);break;case 'orbit':drawOrbit(w,h,state.time);break;case 'blocks':drawBlocks(w,h,state.time);break;case 'wave':drawWave(w,h,state.time);break;case 'particles':drawParticles(w,h,state.time,dt);break;case 'jelly':drawJelly(w,h,state.time,dt);break;case 'crystal':drawCrystal(w,h,state.time,dt);break;case 'lotus':drawLotus(w,h,state.time,dt);break;case 'coral':drawCoral(w,h,state.time,dt);break;case 'pollen':drawPollen(w,h,state.time,dt);break;default:drawAurora(w,h,state.time)}
   sparkleOverlay(w,h,state.time,dt);drawCenterLabel(w,h);ctx.restore();requestAnimationFrame(frame);
  }
  requestAnimationFrame(frame);
