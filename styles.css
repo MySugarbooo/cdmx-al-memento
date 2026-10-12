@@ -278,7 +278,7 @@ footer a{color:#ffc3df}
 .borough-rail-list{padding:11px;display:grid;gap:5px}
 .borough-rail .alcaldia-card,.borough-rail .alcaldia-card.principal{min-height:43px;padding:9px 10px;border-radius:9px;border:1px solid transparent;background:transparent;box-shadow:none;gap:9px;transform:none}
 .borough-rail .alcaldia-card:hover,.borough-rail .alcaldia-card:focus-visible{background:#75405c66;border-color:#ed9fc4;transform:translateX(2px)}
-.borough-rail .alcaldia-card.principal{background:#aa508236;border-color:#a66a8d6b}
+.borough-rail .alcaldia-card.principal{background:transparent;border-color:transparent}
 .borough-rail .alcaldia-card strong{font-size:12px;font-weight:730}
 .borough-rail .borough-index{font-size:10px;color:#ffb4d5}
 .borough-rail .borough-arrow{font-size:15px}
