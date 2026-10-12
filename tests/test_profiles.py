@@ -65,7 +65,7 @@ class ProfileTests(unittest.TestCase):
         self.assertIn('.borough-rail{width:100%;position:static;order:1;', css)
         self.assertIn("document.querySelector('.news-main .bar')", js)
         self.assertIn('window.scrollTo({top:', js)
-        self.assertIn('/styles.css?v=20261012-map1', home)
+        self.assertIn('/styles.css?v=20261012-map2', home)
         self.assertIn('/app.js?v=20261012-tabs2', home)
 
 
@@ -78,7 +78,15 @@ class ProfileTests(unittest.TestCase):
         self.assertIn('class="news-side-column"', home)
         self.assertIn('class="city-map-teaser"', home)
         self.assertIn('href="/mapa/"', home)
-        self.assertIn('src="/mapa/mini.svg"', home)
+        self.assertIn('src="/mapa/preview.html?v=2"', home)
+        preview=(ROOT / "mapa" / "preview.html").read_text(encoding="utf-8")
+        self.assertIn('https://tile.openstreetmap.org/{z}/{x}/{y}.png', preview)
+        self.assertIn('https://tile.openstreetmap.org/{z}/{x}/{y}.png', script)
+        self.assertNotIn('basemaps.cartocdn.com', script)
+        self.assertIn('id="mapa-ampliar"', page)
+        self.assertIn('mapa-ampliado', script)
+        self.assertIn('mapa/mapa.css?v=2', page)
+        self.assertIn('mapa/mapa.js?v=2', page)
         self.assertIn('.news-side-column{order:1;width:100%}', css)
         self.assertIn('id="mapa-interactivo"', page)
         for mode in ['metro', 'metrobus', 'ligero', 'cablebus', 'trolebus', 'rtp', 'camiones']:
