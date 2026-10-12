@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="es"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mapa ilustrado de CDMX | Metro, Metrobús, camiones y monumentos</title>
+<meta name="description" content="Explora un mapa interactivo e ilustrado de Ciudad de México: rutas del Metro, Metrobús, Tren Ligero, Cablebús, RTP, Trolebús y camiones; descubre monumentos y sitios históricos.">
+<link rel="canonical" href="https://cdmx-al-memento.pages.dev/mapa/">
+<meta name="theme-color" content="#101116">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="stylesheet" href="/styles.css?v=20261012-tabs2">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css">
+<link rel="stylesheet" href="/mapa/mapa.css?v=1">
+<meta property="og:type" content="website"><meta property="og:title" content="CDMX en un mapa ilustrado · CDMX AL MEMENTO"><meta property="og:url" content="https://cdmx-al-memento.pages.dev/mapa/">
+</head>
+<body class="mapa-body">
+<a class="skip" href="#contenido">Saltar al contenido</a>
+<header><div class="wrap"><div class="top"><a class="logo" href="/">CDMX <span>AL MEMENTO</span></a><span class="tag">LA CAPITAL, AL INSTANTE.</span></div>
+<nav aria-label="Navegación principal"><a href="/">Última hora</a><a href="/alcaldias/">Alcaldías</a><a href="/archivo/">Archivo mensual</a><a class="active" href="/mapa/" aria-current="page">Mapa ilustrado</a><a href="/guias/">Guías</a></nav></div></header>
+<main class="wrap mapa-main" id="contenido">
+<section class="mapa-hero"><div>
+<p class="eyebrow">EXPLORA · CIUDAD DE MÉXICO</p>
+<h1>Una ciudad, <span>mil caminos.</span> 🗺️</h1>
+<p>Viaja por la capital con rutas de transporte sobre el mapa y monumentos dibujados como pequeñas estampas. Activa las líneas que quieras explorar, toca los lugares y descubre su historia.</p>
+<div class="mapa-hero-chips"><span>🚇 Metro</span><span>🚌 Metrobús y camiones</span><span>🚡 Cablebús</span><span>🏛️ Monumentos</span></div>
+</div><div class="mapa-hero-badge"><span>EDICIÓN ILUSTRADA</span><strong>CDMX</strong><span>RUTAS + CULTURA</span></div></section>
+<div class="mapa-layout">
+<aside class="mapa-panel" aria-label="Filtros y sitios turísticos">
+ <div class="mapa-panel-top"><p class="eyebrow">ELIGE QUÉ VER</p><h2>Capas del mapa</h2><p>Puedes combinar transportes. Las rutas de camiones se consultan bajo demanda para que el mapa cargue rápido.</p></div>
+ <div id="capas" class="mapa-capas">
+  <label class="mapa-capa"><input type="checkbox" value="metro" checked><span class="capa-punto metro"></span><span><strong>Metro</strong><small>Líneas del STC</small></span></label>
+  <label class="mapa-capa"><input type="checkbox" value="metrobus" checked><span class="capa-punto metrobus"></span><span><strong>Metrobús</strong><small>Corredores y líneas</small></span></label>
+  <label class="mapa-capa"><input type="checkbox" value="ligero"><span class="capa-punto ligero"></span><span><strong>Tren Ligero</strong><small>Corredor sur</small></span></label>
+  <label class="mapa-capa"><input type="checkbox" value="cablebus"><span class="capa-punto cablebus"></span><span><strong>Cablebús</strong><small>Trazados disponibles</small></span></label>
+  <label class="mapa-capa"><input type="checkbox" value="trolebus"><span class="capa-punto trolebus"></span><span><strong>Trolebús</strong><small>Corredores eléctricos</small></span></label>
+  <label class="mapa-capa"><input type="checkbox" value="rtp"><span class="capa-punto rtp"></span><span><strong>Camiones RTP</strong><small>Rutas públicas del atlas</small></span></label>
+  <label class="mapa-capa"><input type="checkbox" value="camiones"><span class="capa-punto camiones"></span><span><strong>Camiones concesionados</strong><small>Corredores y servicios zonales</small></span></label>
+  <label class="mapa-capa"><input type="checkbox" value="monumentos" checked><span class="capa-punto monumentos"></span><span><strong>Monumentos ilustrados</strong><small>Pincha sus estampas</small></span></label>
+ </div>
+ <p id="mapa-status" class="mapa-status" role="status" aria-live="polite">Preparando mapa y trazados…</p>
+ <div class="mapa-panel-buttons"><button type="button" id="solo-monumentos">Solo monumentos</button><button type="button" id="todas-capitas">Restablecer</button></div>
+ <div class="mapa-sites"><h2>📍 Sitios para descubrir</h2><label class="mapa-search-label" for="mapa-buscar">Buscar un monumento</label><input id="mapa-buscar" type="search" placeholder="Ej. Bellas Artes…" autocomplete="off">
+ <div id="mapa-lugares" class="mapa-sites-list"></div></div>
+</aside>
+<div class="mapa-view-wrap">
+ <div class="mapa-view-head"><div><p class="eyebrow">EL MAPA DE NUESTRA CIUDAD</p><h2>Ciudad de México <span class="pink-mark">.</span></h2></div><button id="mapa-centrar" type="button">⌖ Ver toda la ciudad</button></div>
+ <div class="mapa-frame">
+ <div id="mapa-interactivo" aria-label="Mapa interactivo con rutas y monumentos de Ciudad de México" role="application"></div>
+ <div class="mapa-sticker" aria-hidden="true">HECHO PARA EXPLORAR ✦</div>
+ </div>
+ <div class="mapa-controls-note">👆 Arrastra para moverte · Haz zoom con los botones + y − · Toca una ruta para identificarla · Toca una estampa para ver el monumento.</div>
+ <div class="mapa-legend"><strong>Colores en el mapa</strong><span>🌸 Metro por línea</span><span>🟣 Metrobús por línea</span><span>🟢 Transporte eléctrico</span><span>🔵 RTP y camiones</span><span>🏛️ Monumentos</span></div>
+</div>
+</div>
+<section class="mapa-about notice">
+ <strong>Sobre la precisión de las rutas:</strong> geometrías de referencia publicadas en el <a href="https://serviciosatlas.sgirpc.cdmx.gob.mx/arcgis/rest/services/AtlasCapasPublicas/Movilidad_Integrada_CDMX/FeatureServer" target="_blank" rel="noopener noreferrer">Atlas de Movilidad Integrada de la CDMX (SIGIRPC)</a>. Algunas rutas pueden haber cambiado y no se incluyen todos los servicios de microbuses o combis. Este mapa no informa horarios, cierres ni unidades en tiempo real. Verifica tu viaje con <a href="https://www.metro.cdmx.gob.mx/" target="_blank" rel="noopener noreferrer">Metro</a>, <a href="https://www.metrobus.cdmx.gob.mx/" target="_blank" rel="noopener noreferrer">Metrobús</a> o <a href="https://www.semovi.cdmx.gob.mx/" target="_blank" rel="noopener noreferrer">SEMOVI</a>. La apariencia ilustrada es decorativa; las líneas corresponden a las geometrías del atlas, no a un diagrama inventado.
+</section>
+<section class="mapa-end"><div><p class="eyebrow">LA CIUDAD TAMBIÉN SE CUENTA</p><h2>Después del paseo, conoce sus noticias</h2><p>Visita la portada para seguir los titulares de CDMX y explorar las historias de sus 16 alcaldías.</p></div><a class="btn" href="/">Volver a las noticias ↗</a></section>
+</main>
+<footer><div class="wrap">© 2026 CDMX AL MEMENTO · Mapa informativo ilustrado · Datos de SIGIRPC y cartografía © OpenStreetMap, © CARTO. <p><a href="/sobre-nosotros.html">Sobre nosotros</a><a href="/privacidad.html">Privacidad</a><a href="/politica-editorial.html">Política editorial</a><a href="/contacto.html">Contacto</a></p></div></footer>
+<script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js" defer></script>
+<script src="/mapa/mapa.js?v=1" defer></script>
+</body></html>
