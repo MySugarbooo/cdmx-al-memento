@@ -14,7 +14,7 @@ https://cdmx-al-memento.pages.dev/
 
 ## Actualización programada
 
-El workflow `.github/workflows/news.yml` ejecuta pruebas y `python update_news.py` aproximadamente cada 3 horas cuando GitHub Actions está disponible. Lee RSS de Google News, recopila los temas de la capital y hace búsquedas adicionales para las 16 alcaldías. Fusiona las noticias nuevas con el archivo de meses anteriores, comprueba fechas y elimina los archivos mensuales que quedan vacíos. No almacena textos íntegros de artículos.
+El workflow `.github/workflows/news.yml` ejecuta pruebas y `python update_news.py` aproximadamente **cada hora** (minuto 17 UTC), sujeto a los retrasos o interrupciones ocasionales de GitHub Actions. Lee RSS de Google News, recopila los temas de la capital y hace búsquedas adicionales para las 16 alcaldías. Fusiona las noticias nuevas con el archivo de meses anteriores, comprueba fechas y elimina los archivos mensuales que quedan vacíos. No almacena textos íntegros de artículos.
 
 Para forzar la actualización: GitHub → Actions → **Actualizar noticias CDMX AL MEMENTO** → Run workflow.
 
