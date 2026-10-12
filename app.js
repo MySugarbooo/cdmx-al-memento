@@ -100,9 +100,20 @@ function render(){
  });
 }
 search?.addEventListener('input',render);
+// Llevar las pestañas Metro, Seguridad y Última hora a los titulares,
+// no al índice de alcaldías que se muestra como sección secundaria en móvil.
+function scrollToHeadlines(){
+ const target=document.querySelector('.news-main .bar')||document.querySelector('.news-main');
+ if(!target)return;
+ const stickyHeader=document.querySelector('header');
+ const offset=(stickyHeader?.getBoundingClientRect().height||0)+12;
+ const top=window.scrollY+target.getBoundingClientRect().top-offset;
+ const reducedMotion=window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
+ window.scrollTo({top:Math.max(0,top),behavior:reducedMotion?'auto':'smooth'});
+}
 document.querySelectorAll('[data-filter]').forEach(el=>el.addEventListener('click',ev=>{
  ev.preventDefault();category=el.dataset.filter||'';render();
- document.getElementById('noticias')?.scrollIntoView({behavior:'smooth',block:'start'});
+ scrollToHeadlines();
 }));
 document.querySelectorAll('img[data-fallback-photo]').forEach(img=>{
  const alternative=img.dataset.fallbackPhoto;
