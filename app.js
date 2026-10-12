@@ -125,6 +125,18 @@ document.querySelectorAll('[data-nav-shift]').forEach(button=>button.addEventLis
  const direction=Number(button.dataset.navShift)||1;
  topNav.scrollBy({left:direction*Math.max(180,topNav.clientWidth*.7),behavior:navReducedMotion()?'auto':'smooth'});
 }));
+// Flechas disponibles también en computadora si el menú no cabe en la pantalla.
+function updateNavControls(){
+ if(!topNav)return;
+ const wrap=topNav.closest('.nav-carousel');
+ if(!wrap)return;
+ wrap.classList.remove('is-overflowing');
+ const overflowing=topNav.scrollWidth>topNav.clientWidth+4;
+ wrap.classList.toggle('is-overflowing',overflowing);
+}
+window.addEventListener('resize',updateNavControls,{passive:true});
+window.requestAnimationFrame(updateNavControls);
+document.fonts?.ready?.then(updateNavControls);
 topNav?.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>centerNavItem(a)));
 document.querySelectorAll('[data-filter]').forEach(el=>el.addEventListener('click',ev=>{
  ev.preventDefault();category=el.dataset.filter||'';render();
