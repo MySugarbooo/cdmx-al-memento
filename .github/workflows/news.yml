@@ -4,9 +4,11 @@ on:
     - cron: '17 */3 * * *'
   workflow_dispatch:
   push:
+    branches: [main]
     paths:
       - '.github/workflows/news.yml'
       - 'update_news.py'
+      - 'tests/test_archive.py'
 permissions:
   contents: write
 concurrency:
@@ -21,14 +23,19 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Recopilar noticias y generar reportes
+      - name: Verificar ubicación, fecha y retención antes de actualizar
+        run: python -m unittest discover -s tests -p 'test_*.py' -v
+      - name: Recopilar titulares y actualizar archivo anual
         run: python update_news.py
-      - name: Guardar la actualización
+      - name: Publicar cambios y eliminar noticias vencidas
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add news.json reports.json reportes/ sitemap.xml
+          git add -A -- news.json reports.json reportes/ archivo/ alcaldias/noticias.json sitemap.xml
           if ! git diff --cached --quiet; then
-            git commit -m "Noticias y reportes automáticos CDMX"
-            git push
+            git commit -m "Actualización y depuración automática de noticias CDMX"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          else
+            echo "Noticias sin cambios."
           fi

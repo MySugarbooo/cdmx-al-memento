@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Archivo de noticias por mes | CDMX AL MEMENTO</title><meta name="description" content="Histórico de titulares de la Ciudad de México organizado por meses durante 365 días, con fecha de publicación, hora disponible, fuentes y alcaldías.">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="stylesheet" href="/styles.css">
+<link rel="canonical" href="https://cdmx-al-memento.pages.dev/archivo/">
+</head><body data-page="archive">
+<a class="skip" href="#contenido">Saltar al contenido</a>
+<header><div class="wrap"><div class="top"><a class="logo" href="/">CDMX <span>AL MEMENTO</span></a><span class="tag">LA CAPITAL, AL INSTANTE.</span></div>
+<nav aria-label="Navegación principal"><a href="/">Inicio</a><a href="/alcaldias/">Alcaldías</a><a href="/archivo/">Archivo mensual</a><a href="/reportes/">Reportes</a><a href="/guias/">Guías</a></nav></div></header>
+<main class="wrap" id="contenido">
+
+<section class="archive-page-intro"><p class="eyebrow">HEMEROTECA · HISTÓRICO DE UN AÑO</p>
+<h1>Archivo mensual de noticias <span class="pink-mark">.</span></h1>
+<p>Consulta titulares recopilados durante los últimos <strong>365 días</strong>. Cada nota enlaza al medio original y muestra su fecha, la hora de publicación cuando está disponible y la zona mencionada en el titular.</p>
+<div class="notice"><strong>Importante:</strong> la fecha y hora corresponden a la publicación del medio, <strong>no necesariamente al momento del suceso</strong>. Solo se asigna una alcaldía cuando el nombre aparece inequívocamente en el título. Los titulares anteriores a la nueva actualización pueden carecer de hora. Los registros se retiran automáticamente después de 365 días, incluso si pertenecen a un mes parcialmente vigente.</div>
+</section>
+<section class="section" aria-label="Explorar noticias archivadas">
+<div class="archive-control-panel">
+<label class="archive-field">Mes del archivo<select id="archive-month" aria-label="Seleccionar mes"><option value="">Cargando meses…</option></select></label>
+<label class="archive-field">Tema<select id="archive-category"><option value="">Todos los temas</option><option>Metro</option><option>Movilidad</option><option>Seguridad</option><option>Cultura</option><option>Gobierno</option><option>CDMX</option></select></label>
+<label class="archive-field">Alcaldía<select id="archive-borough"><option value="">Todas las alcaldías</option></select></label>
+<label class="archive-field">Buscar titulares<input type="search" id="archive-search" placeholder="Palabra clave" autocomplete="off"></label>
+</div>
+<p id="archive-status" class="archive-summary" role="status" aria-live="polite">Preparando el archivo…</p>
+<div id="archive-results" class="archive-feed"></div>
+<div class="archive-pager"><button id="archive-prev" disabled type="button">← Anteriores</button><span id="archive-page-label"></span><button id="archive-next" disabled type="button">Siguientes →</button></div>
+</section>
+<section class="section panel"><h2>Noticias por alcaldía</h2><p>Consulta la sección de las 16 alcaldías, encabezada por La Magdalena Contreras y Álvaro Obregón.</p><a class="btn" href="/alcaldias/">Elegir alcaldía ↗</a></section>
+
+</main>
+<footer><div class="wrap">© 2026 CDMX AL MEMENTO · Titulares enlazados a los medios originales.
+<p><a href="/politica-editorial.html">Política editorial</a><a href="/privacidad.html">Privacidad</a><a href="/contacto.html">Contacto</a><a href="mailto:sanchezaxochitl@gmail.com">sanchezaxochitl@gmail.com</a></p></div></footer>
+<script src="/assets/hemeroteca.js" defer></script>
+</body></html>

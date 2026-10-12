@@ -39,6 +39,24 @@ function articleVisual(a){
  figure.append(image,label,credit);
  return figure;
 }
+function articleMeta(a){
+ const meta=element('div','meta date-location');
+ const source=element('span','article-source','Medio: '+(a.source||'Fuente externa'));
+ const stamp=typeof a.published_at==='string'&&/^\d{4}-\d{2}-\d{2}T/.test(a.published_at)
+   ?new Date(a.published_at):null;
+ const validTime=stamp&&Number.isFinite(stamp.getTime());
+ let day='Fecha no disponible',hour='Hora no disponible';
+ if(validTime){
+  day=new Intl.DateTimeFormat('es-MX',{timeZone:'America/Mexico_City',day:'2-digit',month:'short',year:'numeric'}).format(stamp);
+  hour=new Intl.DateTimeFormat('es-MX',{timeZone:'America/Mexico_City',hour:'2-digit',minute:'2-digit',hour12:false}).format(stamp)+' h';
+ }else if(/^\d{4}-\d{2}-\d{2}$/.test(a.date||'')){
+  day=a.date.split('-').reverse().join('/');
+ }
+ const date=element('span','article-datetime','Publicado: '+day+' · '+hour);
+ const location=element('span','article-location','Zona: '+(a.location||'No especificada en el titular'));
+ meta.append(source,date,location);
+ return meta;
+}
 function buildCard(a,featured=false,large=false){
  const c=element('article',featured?'card featured-card'+(large?' featured-main':''):'card');
  const visual=articleVisual(a),inside=element('div','inside');
@@ -47,7 +65,7 @@ function buildCard(a,featured=false,large=false){
  const description=element('p','',featured
    ?'Lee la cobertura completa y confirma los detalles con el medio que publicó esta noticia.'
    :'Titular recopilado automáticamente. Consulta la fuente original para obtener contexto.');
- const meta=element('div','meta',(a.source||'Fuente externa')+' · '+(a.date||''));
+ const meta=articleMeta(a);
  const link=element('a','read','Leer noticia original ↗');
  link.href=a.url;link.target='_blank';link.rel='noopener noreferrer nofollow';
  inside.append(badge,title,description,meta,link);
@@ -96,8 +114,9 @@ document.querySelectorAll('img[data-fallback-photo]').forEach(img=>{
 Promise.allSettled([
  fetch('/news.json?t='+Date.now()).then(r=>{if(!r.ok)throw Error('news');return r.json()}),
  fetch('/reports.json?t='+Date.now()).then(r=>{if(!r.ok)throw Error('reports');return r.json()}),
- fetch('/assets/fotos/catalogo.json?t='+Date.now()).then(r=>{if(!r.ok)throw Error('catalog');return r.json()})
-]).then(([news,reports,catalog])=>{
+ fetch('/assets/fotos/catalogo.json?t='+Date.now()).then(r=>{if(!r.ok)throw Error('catalog');return r.json()}),
+ fetch('/archivo/meses.json?t='+Date.now()).then(r=>{if(!r.ok)throw Error('months');return r.json()})
+]).then(([news,reports,catalog,months])=>{
  if(catalog.status==='fulfilled')photoLibrary?.addCatalog(catalog.value);
  if(news.status==='fulfilled'&&Array.isArray(news.value.articles)){
   articles=news.value.articles.filter(a=>a&&typeof a.title==='string'&&validLink(a.url));
@@ -116,5 +135,23 @@ Promise.allSettled([
    a.href=x.url;li.append(a,document.createTextNode(' · '+Number(x.count||0)+' titulares'));reportList.append(li);
   }
   if(!reportList.children.length)reportList.append(element('li','','El primer reporte aparecerá cuando haya suficientes titulares y fuentes.'));
+ }
+ const monthList=document.getElementById('archive-month-list');
+ if(monthList){
+  monthList.replaceChildren();
+  const list=months.status==='fulfilled'&&Array.isArray(months.value.months)
+   ?months.value.months.filter(m=>/^\d{4}-\d{2}$/.test(m.month)):[];
+  for(const item of list.slice(0,4)){
+   const a=element('a','archive-month-link');
+   a.href='/archivo/?mes='+encodeURIComponent(item.month);
+   const monthDate=new Date(item.month+'-01T12:00:00Z');
+   const label=new Intl.DateTimeFormat('es-MX',{month:'long',year:'numeric',timeZone:'UTC'}).format(monthDate);
+   a.append(element('span','',label),element('small','',Number(item.count||0)+' notas ↗'));
+   monthList.append(a);
+  }
+  if(!list.length){
+   const link=element('a','archive-month-link','Explorar el archivo mensual ↗');
+   link.href='/archivo/';monthList.append(link);
+  }
  }
 });
