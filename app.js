@@ -7,6 +7,12 @@ const featuredSection=document.getElementById('destacadas');
 const search=document.getElementById('search');
 const status=document.getElementById('status');
 const currentTopic=document.getElementById('current-topic');
+const homeView=document.getElementById('home-view');
+const topicStage=document.getElementById('topic-stage');
+const topicStageGrid=document.getElementById('topic-stage-grid');
+const topicStageHeading=document.getElementById('topic-stage-heading');
+const topicStageDescription=document.getElementById('topic-stage-description');
+const topicStageCount=document.getElementById('topic-stage-count');
 const newsSlidePanel=document.getElementById('news-slide-panel');
 const reportList=document.getElementById('report-list');
 function element(tag,cls,txt){const e=document.createElement(tag);if(cls)e.className=cls;if(txt!==undefined)e.textContent=txt;return e}
@@ -83,6 +89,25 @@ function featuredArticles(items){
 function render(){
  const q=(search?.value||'').toLocaleLowerCase('es-MX').trim();
  const filtered=articles.filter(a=>(!category||a.category===category)&&[a.title,a.source,a.category].some(v=>String(v||'').toLocaleLowerCase('es-MX').includes(q)));
+ // Las categorías se abren en la PRIMERA pantalla: nunca se viaja hacia abajo.
+ if(category){
+  const label='Noticias de '+category;
+  if(topicStageHeading)topicStageHeading.textContent=label;
+  if(topicStageDescription)topicStageDescription.textContent=topicDescriptions[category]||
+   'Consulta las noticias recientes de la Ciudad de México y sus medios originales.';
+  if(topicStageCount)topicStageCount.textContent=articles.length?
+    filtered.length+' noticias disponibles · Última actualización: '+updated:
+    'Preparando titulares…';
+  if(topicStageGrid){
+   topicStageGrid.replaceChildren();
+   for(const a of filtered){if(validLink(a.url))topicStageGrid.append(buildCard(a))}
+   if(articles.length&&!filtered.length){
+    topicStageGrid.append(element('p','muted','Todavía no hay noticias en este tema. Prueba otro del menú superior.'));
+   }
+  }
+  syncTopicTabs();
+  return;
+ }
  const isFront=!category&&!q;
  const front=isFront?featuredArticles(filtered):[];
  const featuredSet=new Set(front);
@@ -102,24 +127,9 @@ function render(){
   if(el.tagName==='BUTTON')el.setAttribute('aria-pressed',String(active));
  });
 }
-search?.addEventListener('input',()=>{
- // Buscar no cambia la sección: actualizamos inmediatamente las noticias.
- topicSwitchToken++;
- activeTopicAnimation?.cancel();
- activeTopicAnimation=null;
- render();
-});
-// Llevar las pestañas Metro, Seguridad y Última hora a los titulares,
-// no al índice de alcaldías que se muestra como sección secundaria en móvil.
-function scrollToHeadlines(){
- const target=document.querySelector('.news-main .bar')||document.querySelector('.news-main');
- if(!target)return;
- const stickyHeader=document.querySelector('header');
- const offset=(stickyHeader?.getBoundingClientRect().height||0)+12;
- const top=window.scrollY+target.getBoundingClientRect().top-offset;
- const reducedMotion=window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
- window.scrollTo({top:Math.max(0,top),behavior:reducedMotion?'auto':'smooth'});
-}
+search?.addEventListener('input',render);
+// El encabezado se mantiene visible; las noticias se renderizan en una vista superior,
+ // no en la sección de noticias ubicada más abajo en la portada.
 // Desplazar el menú a la izquierda o derecha en función de la pestaña elegida.
 const topNav=document.getElementById('menu-superior');
 const navReducedMotion=()=>Boolean(window.matchMedia?.('(prefers-reduced-motion: reduce)').matches);
@@ -146,98 +156,101 @@ function updateNavControls(){
 window.addEventListener('resize',updateNavControls,{passive:true});
 window.requestAnimationFrame(updateNavControls);
 document.fonts?.ready?.then(updateNavControls);
-// Un cambio de tema equivale a una página del carrusel informativo.
+// Las pestañas funcionan como páginas de contenido horizontal bajo el menú.
 const topicOrder=['','Metro','Seguridad','Movilidad','Cultura','Gobierno','CDMX'];
-let topicSwitchToken=0;
-let activeTopicAnimation=null;
-function syncTopicTabs(){
+const topicDescriptions={
+ Metro:'Estado del Metro y noticias sobre sus líneas, estaciones y usuarios.',
+ Seguridad:'Información sobre seguridad pública y sucesos reportados en la capital.',
+ Movilidad:'Metrobús, transporte, vialidades y movilidad en Ciudad de México.',
+ Cultura:'Museos, patrimonio, exposiciones, actividades y vida cultural.',
+ Gobierno:'Anuncios oficiales, servicios públicos, decisiones y políticas.',
+ CDMX:'Lo que ocurre en la Ciudad de México, más allá de un solo tema.'
+};
+let topicSwitchToken=0,activeTopicAnimation=null;
+const topicStagePrev=document.getElementById('topic-stage-prev');
+const topicStageNext=document.getElementById('topic-stage-next');
+function syncTopicTabs(selected=category){
  document.querySelectorAll('[data-filter]').forEach(el=>{
-  const active=el.dataset.filter===category;
+  const active=el.dataset.filter===selected;
   el.classList.toggle('active',active);
   if(el.tagName==='BUTTON')el.setAttribute('aria-pressed',String(active));
- });
-}
-function animateTopic(direction,token){
- if(token!==topicSwitchToken)return;
- if(!newsSlidePanel||!articles.length||navReducedMotion()||typeof newsSlidePanel.animate!=='function'||!direction){
-  render();
-  return;
- }
- // La información anterior sale hacia el lado opuesto de la pestaña elegida.
- const leaving=newsSlidePanel.animate([
-  {transform:'translateX(0)',opacity:1},
-  {transform:'translateX('+(-direction*26)+'%)',opacity:0}
- ],{duration:180,easing:'ease-in',fill:'forwards'});
- activeTopicAnimation=leaving;
- leaving.onfinish=()=>{
-  if(token!==topicSwitchToken)return;
-  leaving.cancel();
-  render();
-  // La nueva información entra desde el lado al que se avanzó por el menú.
-  const entering=newsSlidePanel.animate([
-   {transform:'translateX('+(direction*26)+'%)',opacity:0},
-   {transform:'translateX(0)',opacity:1}
-  ],{duration:320,easing:'cubic-bezier(.19,.75,.23,1)',fill:'both'});
-  activeTopicAnimation=entering;
-  entering.onfinish=()=>{
-   if(token!==topicSwitchToken)return;
-   entering.cancel();
-   activeTopicAnimation=null;
-  };
- };
-}
-function animateWhenNewsVisible(direction,token){
- const target=document.querySelector('.news-main .bar');
- if(!target||typeof IntersectionObserver==='undefined'){animateTopic(direction,token);return;}
- const topOffset=(document.querySelector('header')?.getBoundingClientRect().height||0)+12;
- const rect=target.getBoundingClientRect();
- if(rect.top<window.innerHeight*.72&&rect.bottom>topOffset){
-  animateTopic(direction,token);
-  return;
- }
- // Dejar terminar el desplazamiento vertical hasta las noticias para que
- // el visitante pueda VER la información entrar de izquierda o derecha.
- let fired=false;
- const observer=new IntersectionObserver(entries=>{
-  if(entries.some(entry=>entry.isIntersecting)){
-   fired=true;observer.disconnect();animateTopic(direction,token);
+  if(el.tagName==='A'&&el.closest('#menu-superior')){
+   if(active)el.setAttribute('aria-current','page');
+   else el.removeAttribute('aria-current');
   }
- },{rootMargin:'-'+Math.ceil(topOffset)+'px 0px -20% 0px',threshold:0});
- observer.observe(target);
- window.setTimeout(()=>{
-  if(fired)return;
-  observer.disconnect();
-  animateTopic(direction,token);
- },1200);
+ });
+ const currentIndex=topicOrder.indexOf(selected);
+ if(topicStagePrev)topicStagePrev.disabled=currentIndex<=0;
+ if(topicStageNext)topicStageNext.disabled=currentIndex===topicOrder.length-1;
 }
-function selectTopic(nextTopic){
- const next=topicOrder.includes(nextTopic)?nextTopic:'';
+function displayTopic(next){
+ category=next;
+ if(topicStage)topicStage.hidden=!next;
+ if(homeView)homeView.hidden=Boolean(next);
+ render();
+}
+function changeTopic(requested){
+ const next=topicOrder.includes(requested)?requested:'';
  const before=category;
- // Las pulsaciones rápidas cancelan la animación anterior y no dejan paneles ocultos.
- topicSwitchToken++;
+ const direction=topicOrder.indexOf(next)>topicOrder.indexOf(before)?1:-1;
+ const navItem=Array.from(topNav?.querySelectorAll('a[data-filter]')||[]).find(el=>el.dataset.filter===next);
+ if(navItem)centerNavItem(navItem);
+ if(next===before){syncTopicTabs(next);return;}
+ // No desplazamiento animado hacia las noticias: cambiar el panel bajo el menú.
+ // Si se está leyendo una sección inferior, volver arriba INSTANTÁNEAMENTE.
+ if(window.scrollY>16)window.scrollTo({top:0,behavior:'instant'});
+ const token=++topicSwitchToken;
  activeTopicAnimation?.cancel();
  activeTopicAnimation=null;
- if(next===before){
-  syncTopicTabs();
-  scrollToHeadlines();
-  return;
- }
- // Reponer el tema anterior si se interrumpió una transición.
- render();
- category=next;
- syncTopicTabs();
- const from=topicOrder.indexOf(before),to=topicOrder.indexOf(next);
- const direction=to>from?1:-1;
- const navItem=Array.from(topNav?.querySelectorAll('a[data-filter]')||[]).find(a=>a.dataset.filter===next);
- if(navItem)centerNavItem(navItem);
- scrollToHeadlines();
- animateWhenNewsVisible(direction,topicSwitchToken);
+ if(search)search.value='';
+ syncTopicTabs(next);
+ const outgoing=before?topicStage:homeView?.querySelector('.hero-editorial');
+ const supportsAnimation=Boolean(outgoing&&typeof outgoing.animate==='function'&&!navReducedMotion());
+ const swap=()=>{
+  if(token!==topicSwitchToken)return;
+  displayTopic(next);
+  const incoming=next?topicStage:homeView?.querySelector('.hero-editorial');
+  if(!incoming||!supportsAnimation)return;
+  const enter=incoming.animate([
+   {transform:'translateX('+(direction*115)+'px)',opacity:0},
+   {transform:'translateX(0)',opacity:1}
+  ],{duration:340,easing:'cubic-bezier(.2,.75,.25,1)',fill:'both'});
+  activeTopicAnimation=enter;
+  enter.onfinish=()=>{
+   if(token!==topicSwitchToken)return;
+   enter.cancel();activeTopicAnimation=null;
+  };
+ };
+ if(!supportsAnimation){swap();return;}
+ const exit=outgoing.animate([
+  {transform:'translateX(0)',opacity:1},
+  {transform:'translateX('+(-direction*110)+'px)',opacity:0}
+ ],{duration:160,easing:'ease-in',fill:'forwards'});
+ activeTopicAnimation=exit;
+ exit.onfinish=()=>{exit.cancel();swap();};
 }
-topNav?.querySelectorAll('a:not([data-filter])').forEach(a=>a.addEventListener('click',()=>centerNavItem(a)));
-document.querySelectorAll('[data-filter]').forEach(el=>el.addEventListener('click',ev=>{
- ev.preventDefault();
- selectTopic(el.dataset.filter||'');
+// Las páginas independientes (mapa, hemeroteca, etc.) conservan sus enlaces.
+topNav?.querySelectorAll('a:not([data-filter])').forEach(el=>el.addEventListener('click',()=>centerNavItem(el)));
+document.querySelectorAll('[data-filter]').forEach(el=>el.addEventListener('click',event=>{
+ event.preventDefault();changeTopic(el.dataset.filter||'');
 }));
+topicStagePrev?.addEventListener('click',()=>changeTopic(topicOrder[Math.max(0,topicOrder.indexOf(category)-1)]));
+topicStageNext?.addEventListener('click',()=>changeTopic(topicOrder[Math.min(topicOrder.length-1,topicOrder.indexOf(category)+1)]));
+// También se pueden recorrer las páginas con un gesto horizontal en celular.
+let swipeStart=null;
+topicStage?.addEventListener('touchstart',event=>{
+ if(event.touches.length===1)swipeStart={x:event.touches[0].clientX,y:event.touches[0].clientY};
+},{passive:true});
+topicStage?.addEventListener('touchend',event=>{
+ if(!swipeStart||event.changedTouches.length!==1)return;
+ const dx=event.changedTouches[0].clientX-swipeStart.x;
+ const dy=event.changedTouches[0].clientY-swipeStart.y;
+ swipeStart=null;
+ if(Math.abs(dx)<85||Math.abs(dy)>55)return;
+ const current=topicOrder.indexOf(category);
+ const target=Math.min(topicOrder.length-1,Math.max(0,current+(dx<0?1:-1)));
+ if(target!==current)changeTopic(topicOrder[target]);
+},{passive:true});
 document.querySelectorAll('img[data-fallback-photo]').forEach(img=>{
  const alternative=img.dataset.fallbackPhoto;
  img.addEventListener('error',()=>{
