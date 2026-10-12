@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-12 15:36 UTC",
+  "updated": "2026-10-12 16:34 UTC",
   "boroughs": [
     {
       "name": "La Magdalena Contreras",
@@ -252,7 +252,7 @@
     },
     {
       "name": "Benito Juárez",
-      "count": 8,
+      "count": 10,
       "articles": [
         {
           "title": "Pronóstico del clima en Benito Juárez: Lunes 12 de octubre con precipitaciones ligeras",
@@ -272,6 +272,28 @@
           "source": "El Heraldo de México",
           "date": "2026-10-10",
           "published_at": "2026-10-11T05:00:00Z",
+          "category": "CDMX",
+          "borough": "Benito Juárez",
+          "location": "Benito Juárez (mencionada en el titular)"
+        },
+        {
+          "title": "Hallan a bebé de siete meses muerto en calles de la alcaldía Benito Juárez",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNc0VyRjNGSHhyZjNFMl9hbWN1ZXJpQV96NmpYV2NKWmFsXzFpZlE1UTZPRmpYZ18wd2QxZHBpV3dTS2JMTHRkMUtGR29JdjJwS2laVnNNOEJORDl1dEpmREdYQVRoSFpnVDJ6ZjZ3SzduOGRnX3l3NkROWEJiRzllcW01REd4eXhCS1NUSTJZSUM4ZWR5MVd3em1HZm5CZlBMUHVuSXdad2k5LXJBWXZRYUkxaWI4QQ?oc=5",
+          "source": "La Silla Rota",
+          "date": "2026-10-09",
+          "published_at": "2026-10-09T18:15:00Z",
+          "category": "CDMX",
+          "borough": "Benito Juárez",
+          "location": "Benito Juárez (mencionada en el titular)"
+        },
+        {
+          "title": "Hallan feto sin vida en calles de la alcaldía Benito Juárez",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQTXhHcUdCOTBVbHMwc0lITW5vdTFoY1RrdGFrOTZUMW5MaktUVW9PczlBM3k5R2V1ZEFONDB1YWVIMlB5ell5eXBiSDRmOGlYMk4zcWF3LVNPRGJOWEJ5Xy1ONXZycHpLVWhtVnIySFV2MUJaRnAyOGxWaG5MeTdyYmJsSzBTUlc4eHdMUHk1aUpOc2xBcm42b0RDa3ZvaTZ0aVRha0VMVkdNTjBjWGRHVVloODA5aGdvNjUxMlpoY3BFQQ?oc=5",
+          "source": "MVS Noticias",
+          "date": "2026-10-09",
+          "published_at": "2026-10-09T18:08:55Z",
           "category": "CDMX",
           "borough": "Benito Juárez",
           "location": "Benito Juárez (mencionada en el titular)"
@@ -1192,7 +1214,7 @@
     },
     {
       "name": "Tlalpan",
-      "count": 16,
+      "count": 17,
       "articles": [
         {
           "title": "Bomberos Controlaron Fuga de Gas en un Tanque en Tlalpan, CDMX",
@@ -1311,6 +1333,17 @@
           "source": "Heraldo Estado de México",
           "date": "2026-10-09",
           "published_at": "2026-10-09T23:17:00Z",
+          "category": "CDMX",
+          "borough": "Tlalpan",
+          "location": "Tlalpan (mencionada en el titular)"
+        },
+        {
+          "title": "Sismo sacude a la CDMX: localizan su epicentro en Tlalpan",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQbEZBUG1kZ0FxdWQxU09xWEt4U3RYNmkwdEVkTFJ4S1o1cGZXblE2eXhWZ1pybDhVeDBzUzBOQXJEQkVaNy1wZHhTZjI0cE9HbzBEY0dtRjF0TWJqbGVRNy1WRG9ITzF6NG5welFyQmJJUTMxb0VwRFp5MHZ4WFZ1dl9uZk16OWQtdldJRlZkSFUtX1VMTVVFanhjazc3LTQ1OXg3S0luM1RXY1pYSlppUHdBTFphWHM?oc=5",
+          "source": "El Heraldo de México",
+          "date": "2026-10-09",
+          "published_at": "2026-10-09T23:15:00Z",
           "category": "CDMX",
           "borough": "Tlalpan",
           "location": "Tlalpan (mencionada en el titular)"
