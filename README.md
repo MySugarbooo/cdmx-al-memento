@@ -68,3 +68,6 @@ alcaldía depende de las menciones explícitas del nombre en los titulares.
 - Los mapas usan **OpenStreetMap Standard** para evitar el aviso **API KEY REQUIRED** de CARTO. Se conserva la atribución visible y caché de mosaicos normal del navegador, sin predescargas.
 
 En móvil, el recuadro del mapa precede a las noticias en la sección principal; la lista de las 16 alcaldías aparece tras las noticias. Los filtros del menú se desplazan expresamente a los titulares, sin detenerse en el mapa ni las alcaldías.
+
+### Prominencia del mapa en Inicio
+Desde el 12 de octubre de 2026, la tarjeta clicable del mapa se presenta inmediatamente debajo del menú principal de la portada, **antes del hero, las noticias y la lista de alcaldías**, para que sea visible en PC y móvil sin tener que desplazarse. La vista compacta tiene su mapa geográfico real y abre `/mapa/` al pulsar cualquier parte de la tarjeta. Solo se muestra una vez en la portada; la lista de alcaldías permanece más abajo y los filtros conducen a noticias.
