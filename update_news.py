@@ -431,7 +431,7 @@ def generate_report():
     urls = [
         "", "contacto.html", "privacidad.html", "sobre-nosotros.html",
         "politica-editorial.html", "creditos-fotograficos.html",
-        "guias/", "reportes/", "archivo/", "alcaldias/",
+        "guias/", "reportes/", "archivo/", "alcaldias/", "mapa/",
     ]
     urls += [
         "guias/" + name for name in (
