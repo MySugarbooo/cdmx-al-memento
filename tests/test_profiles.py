@@ -88,6 +88,8 @@ class ProfileTests(unittest.TestCase):
         self.assertIn('mapa/mapa.css?v=2', page)
         self.assertIn('mapa/mapa.js?v=2', page)
         self.assertIn('.news-side-column{order:1;width:100%}', css)
+        self.assertIn('.news-layout>.news-side-column{display:contents}', css)
+        self.assertIn('.news-layout>.news-side-column>.borough-rail{order:2;width:100%}', css)
         self.assertIn('id="mapa-interactivo"', page)
         for mode in ['metro', 'metrobus', 'ligero', 'cablebus', 'trolebus', 'rtp', 'camiones']:
             self.assertIn('value="'+mode+'"', page)
