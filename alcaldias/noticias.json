@@ -1,48 +1,483 @@
 {
-  "updated": "2026-10-12 03:33 UTC",
+  "updated": "2026-10-12 05:48 UTC",
   "boroughs": [
     {
       "name": "La Magdalena Contreras",
-      "count": 0,
-      "articles": []
+      "count": 5,
+      "articles": [
+        {
+          "title": "Clima en La Magdalena Contreras: lunes 12 de octubre con lluvia ligera y ambiente templado",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQZXhudjg5NkdsRkMtcTFFMnBzUDVMektnTHdCcFlRMGNPYklMSm1OaDNuS0NzcFc2am5aMzdia21kYV9lZndBalkxREVJaFM4ZUF1aEJIYmZOOWx2N1I0TmctT2VPNDNuMkZMOU9oYi1wWWtxUzE4c2NfanVXU08tdF9tWUhpTjVWUmxyeks5em5xS05BNlVzVVZ0d3VzZjZDbW0yVFRMVWI5cWNUY0duVDNCc0hfVzVVb2NhSkxvM0VUUWlhOHdVLWlVZ1BabWFfcU5OWmRabkV6WF9kQlBFQjgtdGU?oc=5",
+          "source": "El Heraldo de México",
+          "date": "2026-10-11",
+          "published_at": "2026-10-12T05:00:00Z",
+          "category": "CDMX",
+          "borough": "La Magdalena Contreras",
+          "location": "La Magdalena Contreras (mencionada en el titular)"
+        },
+        {
+          "title": "Mujer se arroja de taxi en movimiento en Magdalena Contreras: esto ocurrió, según la SSC",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNOWl2OV9WQTgyM2F3b0pDZXcyM2VXbmN2eEFJTHNKZnBaMFQ0ZC1jd28zMGY2aUdWNk0wbUxYRGZGd2FtQUxMeDF1RUtuUGtOVE56ZlhhUHNjV0h0THBkbXNseHhYTk8zeEFhRXpLLXNrREphNnJpczBYWDRtMzd0V3J1dmZOTllSeFNMNTV2bzJiWGljUndlc2hyTGprZmg5T1RMUDVIWkFfcEdwbWJ0bEplNUx2a2F2Y1BWTGJId19LWHJBSS1GQ0ZnNGNYdjY2R1lYVmMtaVZWd9IB3wFBVV95cUxQMUQtUXNLeUV6WDlUeWFZSzNraVltV1NBV3E1UDdrSDJGamdlZlhTdE95SWNpQWNjRzNhUnBKMkk1SDBqOTNvQ0p6UG9OOXk4T0NXVjFzaDF3bzFVRG54YVc4UG5oX3RQN19YOXQ0WlRjczl3WldXQ0ljREJrODByaEZjd0VUNXJpWDhFOHI0R3RHQThuQ0p5MXczZS1pZWRZaXZyX3VmWjVCV3VnZk9hYmFMdGMxTWxjYVlrTV8tQzhGcWRwdEFhblU3UFNmWDN6NUxnNjdrSlNtcEJfYVRn?oc=5",
+          "source": "Radio Fórmula",
+          "date": "2026-10-11",
+          "published_at": "2026-10-12T03:51:21Z",
+          "category": "CDMX",
+          "borough": "La Magdalena Contreras",
+          "location": "La Magdalena Contreras (mencionada en el titular)"
+        },
+        {
+          "title": "Destapan corrupción de Quijano en La Magdalena Contreras",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOMWFmWFpHbkhtUDdLX3hlRDNCR01rSUdmcEZEUFBEeFhGUDNxSmhiekNjaGs4TVlKZ21WUmNYVkN4MnItaWcwUElkT3pndnlISmk2NGRGOU85Q0dEa2l3SWZTSU1jeUl2dmJRdE9qNVB0aUV1dXBXbmpmX3hvN21wRQ?oc=5",
+          "source": "CDMX Magacín",
+          "date": "2026-10-11",
+          "published_at": "2026-10-12T03:24:44Z",
+          "category": "CDMX",
+          "borough": "La Magdalena Contreras",
+          "location": "La Magdalena Contreras (mencionada en el titular)"
+        },
+        {
+          "title": "Clima y pronóstico en La Magdalena Contreras: domingo 11 de octubre con lluvias y ambiente templado",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPZGVzU3NZWkhDdlZPR2pkSGdoNk5IdGdRaEl6MlhQbXJ2VTdUTjZmamc4LU5MU1gtTm4zMHhDTkZlS3lnVW1sMnpwR2JzdkFKT1I2THhmMGpPdjM3MF9TbHI0V1pqZWd6QXowNW83QjZ5LUhaSXcxWFRMZjVENzBrV21uN0NGcEg2TzlBOFY1S1d0dW5nYXlMLXBoR2pXSTRudThIeHUxcUFJMzJiOW9sY2otRVktVEpxbllfMjlXU25LazQwamNHX3h1alhLNHU1YW9aN3Y2WTJTZ1ducGdyaUZMSGtLajRUcjBPTk53?oc=5",
+          "source": "El Heraldo de México",
+          "date": "2026-10-10",
+          "published_at": "2026-10-11T05:00:00Z",
+          "category": "CDMX",
+          "borough": "La Magdalena Contreras",
+          "location": "La Magdalena Contreras (mencionada en el titular)"
+        },
+        {
+          "title": "Clima en La Magdalena Contreras: frío y lluvia ligera este sábado 10 de octubre",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOM0Q2d1hrTDFhT0R4LS1zeGZZbnNjbkFnbjdSRjdYWXBlTnNYTkl0dGd3Z0dtSUJIRWI1T3daMlBuRHJ4Q0JxTkpKajBQcVB5dzhiV2Z0b3c2UGlCMm9xUHZtcURSMzFZd2VBcUZjVWx6bHNLYmtlMURRb0RvRU5feDR3MGdtQnZkWFJBeVRaT1h6ZXZDUUMzcEg4aTY2RUdiMTh0Wl81WWo4T0Ewb2R3RWhfNk9hcVRhcGVBa2JrQzRFbFJFOEJ5T1NsY0hjTzJTSmNqUA?oc=5",
+          "source": "El Heraldo de México",
+          "date": "2026-10-09",
+          "published_at": "2026-10-10T05:00:00Z",
+          "category": "CDMX",
+          "borough": "La Magdalena Contreras",
+          "location": "La Magdalena Contreras (mencionada en el titular)"
+        }
+      ]
     },
     {
       "name": "Álvaro Obregón",
-      "count": 0,
-      "articles": []
+      "count": 6,
+      "articles": [
+        {
+          "title": "No hay agua en Álvaro Obregón hoy: Lista de colonias afectadas por 24 horas en CDMX",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQQjhiZmhhS2tBUGItbFp1cUF3SDR3NF94bHFhbHZNNmpfckRBUzlWY2d1ZzhGNjVDZmlhRnV2VUY5UmJxa1pFbEZYcjRBbjlaUTRGSXN1MThTcldwYUNGYTV4SU9nZDZlV0txNlVSajFoX2oyYjBNR05GV2F6bDNPeHZJa2xmN0J2cWxoN3VLbzI3RmdIem1xSldxR2pJQ0xWX2hZRXBVQ05Mc1FpVHpkN2w2Ym9RVlNZZWduWXQxcw?oc=5",
+          "source": "ADN 40",
+          "date": "2026-10-11",
+          "published_at": "2026-10-12T03:52:54Z",
+          "category": "CDMX",
+          "borough": "Álvaro Obregón",
+          "location": "Álvaro Obregón (mencionada en el titular)"
+        },
+        {
+          "title": "2736: En la alcaldía Álvaro Obregón, oficiales de la SSC detuvieron a una persona que, al parecer, despojó a un ciudadano de sus pertenencias con una réplica de arma de fuego",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFA4TDhkSjdNb1hnc1lEQ1hTM1VxUEhsc3ZKQmFOVVhST0RTSUUtUTVVX0hWX0cwQ1h0S01hOEhxM0dOdGhVUVNMRk9ibzAxQkRsdk5jZWlEdEtfck1NVHVPNy1hZUJfTl9HM1Ayb1V4NA?oc=5",
+          "source": "Secretaría de Seguridad Ciudadana de la CDMX",
+          "date": "2026-10-11",
+          "published_at": "2026-10-11T06:04:56Z",
+          "category": "CDMX",
+          "borough": "Álvaro Obregón",
+          "location": "Álvaro Obregón (mencionada en el titular)"
+        },
+        {
+          "title": "Clima en Álvaro Obregón: domingo 11 de octubre con lluvia ligera y ambiente templado",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNVVQzQTdoczF0MkZRemZfQThrd2RXSnI3UHdKSWNQRW1wVERfYnZEVm1vejIwWElMNHA3c0FVUmhsbTM1VUJ2QU1iOG1rbWI5QkZyclg3RjlvRWJ1ZDBHQXlLS1FUb2pZeWV0Z2Z4NVZzcjZqQmpUbHFWMW1PWk1mZVowWGlzRHJLbXVkQ0FXMzNhVUtGWXZkNUVvY1dGNHlvWEt5V0M5Sjd2QTZRUExDVjZqN1FRLTg5T3BCbGpvNF9HUU1XOU81YzRuVHlCOUtZd3NhUVlnaFl5LXQw?oc=5",
+          "source": "El Heraldo de México",
+          "date": "2026-10-10",
+          "published_at": "2026-10-11T05:00:00Z",
+          "category": "CDMX",
+          "borough": "Álvaro Obregón",
+          "location": "Álvaro Obregón (mencionada en el titular)"
+        },
+        {
+          "title": "Vuelca tractocamión sobre Periférico en Álvaro Obregón",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOUmRtNkJrTE1UbmF4dGt1TDlfN3dPWWhaMEtqekpibnZCZ0dPX0NzcEw4V2FNYkFoYVpkaGwzRWNuZElqbHFGYVp0ZkpENTBoY3FEUC03MUw0UVdmazFVdk1hSjJrMG1TTHMzRUJ0U3hDWWhlVnUxNkJkc2VuR0VxdFE4bWd3Zw?oc=5",
+          "source": "El Norte",
+          "date": "2026-10-10",
+          "published_at": "2026-10-10T23:07:36Z",
+          "category": "CDMX",
+          "borough": "Álvaro Obregón",
+          "location": "Álvaro Obregón (mencionada en el titular)"
+        },
+        {
+          "title": "Tráiler cargado de llantas vuelca en Álvaro Obregón; conductor fue atendido por contusiones",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBPU1pjUmUzOXE0RkJReURqbS1mMG5qS05HSE5RSmtlRjM3YzNwbXVVSGVpOTFINC1DczRzaUNCc2VPT3VzWmFvS285YjV1RkZmMVlGT3p3b2lHMjJ2QUFSd3dXTVZ0RzBwR2NPWE9qNEhrSGFOLWpEMHEwQUZaOHPSAX9BVV95cUxPZHc1QkZqTTBRR1lfM1d4ZlJKM3VkazI0SUpQNHBtYXJiNExUUVVZMmZNMEJ3U3BqX2lrWGJZYjNjNk8yRlJmRTFQVVJ0VjJtUmZMMlhBd1I5SmdGUE5Rb1kxVW9sRTRmZ1hXZHcweTFUa3BrajMyVTVLUEFfMlUw?oc=5",
+          "source": "Milenio",
+          "date": "2026-10-10",
+          "published_at": "2026-10-10T14:55:00Z",
+          "category": "CDMX",
+          "borough": "Álvaro Obregón",
+          "location": "Álvaro Obregón (mencionada en el titular)"
+        },
+        {
+          "title": "Álvaro Obregón incrementa patrullajes en un 99% y remisiones en un 587%",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOQUJ6ZUQ3TjNrT1JvYWE1cjZjLVFhUWlUeVcxT0llbnVickZIUnUwb2xIZGVvZ1QxUlNRQWtISW9tMzl5YjBqRjZfU0psWlUyUFdSUHVQSUktM2dHMHJCNThJUGVEX1RFcEQ5R3otU2duQ2J5N0pwQmR3eGJLRU1kOFhENDhJVUtXb1B3X1ViZVJsM21RSUFScjF2T3l0c3VzbnZkZVJ5MVFVbzlva1VlODJUZjVVNjlNLVZJbHBkSXBCRVp30gG0AUFVX3lxTE5oQm1BOGZoc1FuQUlzTFY1T1pYbnJyRUx3eUw0TUdxWk5pX3NPUGZWSlBqYzNLSUh3bWoyNzh4R1ZrWFR2aHFzbTRlZGtJd0NiQlJSUkJLMlZIcFIzZkVtWXQ5dU80dnJ5WTdJLTNzWjVxUmdYcVdBdThVOWNITW1Yc2h2MkpPak1lTWNubWRQSzVGTkptdUR2SWx3UEhPUzhaVUlKU0VVNzhwWUFnX1RfSHgxeQ?oc=5",
+          "source": "La Política Online",
+          "date": "2026-10-09",
+          "published_at": "2026-10-09T13:00:28Z",
+          "category": "CDMX",
+          "borough": "Álvaro Obregón",
+          "location": "Álvaro Obregón (mencionada en el titular)"
+        }
+      ]
     },
     {
       "name": "Azcapotzalco",
-      "count": 0,
-      "articles": []
+      "count": 5,
+      "articles": [
+        {
+          "title": "Clima y pronóstico en Azcapotzalco: Lunes 12 de octubre de 2026 con lluvia ligera",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPcjFjMDJhRzRkMDJfTllURjNibHdVV0dZRXVtLWdfZWdOZExaQWwzNE81LXZCc1FDTFM5SG9UWlJ5UE9qcmtzN3AtYUNJNkhlUmJCN1g3b0N3bDZPZ1JudDBqWVl2US03cVVBUncyZFZDcWdwZjBNcnZQX1phNUVvcVpSRGxwUEdQWl9mazVGbUZxRlgtNVVqc01xdXhUQlhxY0FZVy01enR5dFhsQUJ0T25UTEV1QVBPRG1EZV9rTFc4akVQdDFlcjZqX2dNOHVGLVNXU01VTWY?oc=5",
+          "source": "El Heraldo de México",
+          "date": "2026-10-11",
+          "published_at": "2026-10-12T05:00:00Z",
+          "category": "CDMX",
+          "borough": "Azcapotzalco",
+          "location": "Azcapotzalco (mencionada en el titular)"
+        },
+        {
+          "title": "Clima en Azcapotzalco este sábado 10 de octubre: Lluvia ligera y ambiente fresco",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOUUNRX0U0S2ZQUTgyRURvRWJvWHFEZnUydm1wa1BKSEUtMzhZbzN5WEJFQnduclN6eWFaTWNHRUdLZ0d0Mzd0am9tXzc3N01lSEZQZXZaMDBpM1VwcVI5U1N2dVliMkYtUG5Gc0JwNXJEZnlYZWZNWEdjSzM2dnJQdFBYV3c5cVhtVExYZmp5RFVQT1JUVzYyWmItRjJJWnRGbWtGUVFDeTlxdUtMM3QwT3FMM1hxOU9MaFdRMGVYT1ZYMmdIemZoNVdDOVVQWTVQNG9rLXdB?oc=5",
+          "source": "El Heraldo de México",
+          "date": "2026-10-09",
+          "published_at": "2026-10-10T05:00:00Z",
+          "category": "CDMX",
+          "borough": "Azcapotzalco",
+          "location": "Azcapotzalco (mencionada en el titular)"
+        },
+        {
+          "title": "Policías de la SSC Encapsulan Protesta de Trabajadores del IMSS en Azcapotzalco, CDMX",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOdVdZMXlqWWVjMjlWMjJwOV80eUdPSUM2emF4WnQ3OC16Z0MwOTNsdFd4dVVZRlF0ZFBTaEQ2Y0pjRXNWNW9QVUpDRWo1RUdRR0lkRTZRSkdGMUxLQTltcWZNVk9pUFZkZUxuRGVVY0prbjRQcEtIUlZRQ0QxUzdBUm9nZG1IVVdXOUZobTBiU09udzZ6OW5MZUlBWTc3Y2dzRFhDV29fWl94ZUZaRDBYMHh3?oc=5",
+          "source": "N+",
+          "date": "2026-10-09",
+          "published_at": "2026-10-10T03:31:51Z",
+          "category": "CDMX",
+          "borough": "Azcapotzalco",
+          "location": "Azcapotzalco (mencionada en el titular)"
+        },
+        {
+          "title": "Refuerzan Bloqueo de Trabajadores del IMSS en Azcapotzalco",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNUklKelV4dXBMb3NtWTZVbTlmQVNfYkhTM21NdndOTXlHSzdtZllFR2JKUjZiWkIwR0hFRjJTcUlSZlR2RG1ySHpmbi1vamMwRGI4RWNLaEh5bGpMalRnNmhjWHo3Qk10dVluU3RMWUZaQk13eGlwRWpRcmZkRml0NXF1Z2ZlbVNNY0JMdzZHQ1N0ejFJYmczZ25LZ1hjNGoxMy1lNHctY3FEekNHOHJiWWFGRi0?oc=5",
+          "source": "N+",
+          "date": "2026-10-09",
+          "published_at": "2026-10-09T21:53:23Z",
+          "category": "CDMX",
+          "borough": "Azcapotzalco",
+          "location": "Azcapotzalco (mencionada en el titular)"
+        },
+        {
+          "title": "Bloqueo de Trabajadores del IMSS: Cierran Avenida Manuel Salazar y San Isidro en Azcapotzalco",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxOd1ZYLWctbHc3ZU5jWDhTb0tqa3E5cUFDY0tJdXFNM1RVa2tTZVUtQmhPc1hQYVgwX3ZGWmZhX3VVOGw4cFhNaE1HUldKMmk3MHVMRTVwcXFSVDY5emt5dnhTVWpMNXdnajlOc2VyeW1BS28wNHFIZ1kyLWlLbUZoTkxrQjJGcExYM0dJbG12VVNpOU9PcEZMbWhNcWh6cFBnTmNSdk9NMFhNTUhRc0VkNkREcFQ0SXZ4OG1zT00tcmU3Ny1CSlpBX2d1TXpyWExna2JFVWphSGQ4b1VKYXZsQlIzdkZkUUlCLXM3aURB?oc=5",
+          "source": "N+",
+          "date": "2026-10-09",
+          "published_at": "2026-10-09T18:13:39Z",
+          "category": "CDMX",
+          "borough": "Azcapotzalco",
+          "location": "Azcapotzalco (mencionada en el titular)"
+        }
+      ]
     },
     {
       "name": "Benito Juárez",
-      "count": 0,
-      "articles": []
+      "count": 6,
+      "articles": [
+        {
+          "title": "Pronóstico del clima en Benito Juárez: Lunes 12 de octubre con precipitaciones ligeras",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOMGJhZ1haWUsyWW9xdndwZHlwc3JVa1pVOUZrQkJ4UGtia2FtNzlVbUhsdG5mVmZLWjhUb2VoajlkZ0JYRGJGQ29sOU1WOHlDTlo3TlBrWklBTlRqZTE1TU1yZGE2V3Z5bHhqWXVFZ2NJT3pZRjJCb0lZd2hsQ2FDLUgzRFZmRFNNcF9xaG9Ed01TaVE0bHpjbHhSeGpSZVBkWmVWRjJCeGJMSmR4dk5EMkFMY2ppdnhELWZiTlRsLUhuZTdDcmJZUktldHhlZUExX1poWnZaTGl3d0dkUW1VcE9n?oc=5",
+          "source": "El Heraldo de México",
+          "date": "2026-10-11",
+          "published_at": "2026-10-12T05:00:00Z",
+          "category": "CDMX",
+          "borough": "Benito Juárez",
+          "location": "Benito Juárez (mencionada en el titular)"
+        },
+        {
+          "title": "Clima en Benito Juárez, CDMX: Domingo 11 de octubre con lluvia ligera y ambiente templado",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOZ0wxbjNLWk93c0ZCNXp6YVZ2ei1DbG0xZC1wcmNuYU81VkcxODBCLXppeHRDcjN1NWJXVzZLTEFwckJUU2hQWUkyY3lhZXNBX0R6aW5pZ0pCUkFqU3BvWjJpWVpfajM0SVZqa3FLbnNGVUlHV3JUazYtS3NyMUJ3cDVldUNSYXIyTUFJNDhOcXotWGFZN3otZ3Jka3paektYSjFncm9wZmpjMzJ3U01vNW9zZzBETXdOMUtHaXp5dkJZd2xmU256N0dtRHVfRjJsQ2lIMEFmTzBKWm9FaF9jYlJR?oc=5",
+          "source": "El Heraldo de México",
+          "date": "2026-10-10",
+          "published_at": "2026-10-11T05:00:00Z",
+          "category": "CDMX",
+          "borough": "Benito Juárez",
+          "location": "Benito Juárez (mencionada en el titular)"
+        },
+        {
+          "title": "HALLAN SIN VIDA A UN BEBÉ EN CALLES DE LA ALCALDÍA BENITO JUÁREZ",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQeWpHTWZLRTQ5ZDVzdDlySURwRmQ1NW9SQ3BLcG1iNmhHSkZQa003dVItUzVrZjExR1Fpc09xNlRtanRzS2NXRzJWWjhWS3pYbVFTR2tvOVdEYUlhcGlfX094X1lVajBMdng4TVFnRHZjTGl1ZzRxaEFLLU44RUxqVFBlWkNpWm5melNENlZqclUtMXpVc1ExRVV0MlJGTzhHZDJwZFNyekJjM3N3?oc=5",
+          "source": "El Heraldo de San Luis Potosí.",
+          "date": "2026-10-09",
+          "published_at": "2026-10-09T16:12:57Z",
+          "category": "CDMX",
+          "borough": "Benito Juárez",
+          "location": "Benito Juárez (mencionada en el titular)"
+        },
+        {
+          "title": "Desde su bastión en la Benito Juárez, PAN CDMX destapa a sus coordinadores rumbo al 2027",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQRUJnTHRIcEcxVWRKQm1iOHBtYjZxcko1RC1iMThrWjhmOGZPTGx3LWdNLTA3NUdlaDdCQUZwaFZOQnpGLUg5eU9rQ1lKZlpaV0x4cDNWYlIzRnl4UGU4RlFLdFBMUmNtZmU1bW9oSjZlbWhiQWV2WFNmdm5LcjJqejhWcXJWRUVfZ3FRVVRfZUF0eXh6NUVmT3JHbGVXSzJIcUVydW9rUE5MU2VvdXhwSGZoQURRT05YTHREQjhudnlpQVlhbldQZWNIbnRsSDZIQWRXRGhyaG5MSjdzVkFjcnVHZ0x4MlU?oc=5",
+          "source": "https://opinionciudadana.com.mx/",
+          "date": "2026-10-09",
+          "published_at": "2026-10-09T15:17:00Z",
+          "category": "CDMX",
+          "borough": "Benito Juárez",
+          "location": "Benito Juárez (mencionada en el titular)"
+        },
+        {
+          "title": "Hallan Bebé Muerto en Calles de la Alcaldía Benito Juárez",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQWWdpOVYtUjNTT1F5T2xRR0dfbUdjcWFlWXVHMlNlYUhDWFdCbGtFLVd1RVBiQjlxbWdqVXBUOFVEbXVjTUxha3E5Y29JVFZZWnRHTVdHaHlFekxHcGczUlIxSHRBY2dpLW5RTnExNHczZldSTFZ5ZWs5UGFQQ1NOV3hSMUNhY2ljM1NMN2ZqVzhqVkRLWEc5SWZMSWpROFg3bFlPZnVTWTNTbjA?oc=5",
+          "source": "N+",
+          "date": "2026-10-09",
+          "published_at": "2026-10-09T14:57:10Z",
+          "category": "CDMX",
+          "borough": "Benito Juárez",
+          "location": "Benito Juárez (mencionada en el titular)"
+        },
+        {
+          "title": "PAN nombra a Luis Mendoza coordinador de la Defensa de la Patria, la Familia y la Libertad en Benito Juárez",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPb01fUFpXVmpCbVkwcWNyeU5JQXBleDZyTmtWWlB1ek9kc3lwTTZpOS1nWDhJeXVwQXhzOFRIWmVSNVNydnRUc3pKNEFCaUYzUUVOTmxYY1RLLWI0LUVxX2xLcFJjUC1LUWFxZmhpQUZINzZsM19XMDBhQ3IzSmY1TVRCN0dPbnhVeF9zNFdBSHdYTXJ4MXhtVGJ0OXk3dFRaZGFkSlBsR185VUtIbHhrc3RrdTNEZlNSZWZFNDBGTUMydW8zdExFbF9sTmpUNEhaTWpJLVZXcjBnTXg1Rm1QR1lkd3oyMnlIb1E?oc=5",
+          "source": "El Sol de México",
+          "date": "2026-10-09",
+          "published_at": "2026-10-09T10:06:35Z",
+          "category": "CDMX",
+          "borough": "Benito Juárez",
+          "location": "Benito Juárez (mencionada en el titular)"
+        }
+      ]
     },
     {
       "name": "Coyoacán",
-      "count": 0,
-      "articles": []
+      "count": 6,
+      "articles": [
+        {
+          "title": "Se retiran 100 toneladas de cableado en desuso en Coyoacán",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQeW0yNEpkQnNHejBUdVZTZVFPbFp1WHRWTmk3R2Q4RGRiUU04cDJpWGpYczhKSTFPaE9DREpNcExtbU1PTHZHTk1DM0gycXpJUjlfTGdTTUZsQlpYM2tWTVlpSmlobEpFc01FSVotMVYyZm1PbGY1bV9vd3VEMG0tS1NSMA?oc=5",
+          "source": "CDMX Magacín",
+          "date": "2026-10-11",
+          "published_at": "2026-10-12T00:31:37Z",
+          "category": "CDMX",
+          "borough": "Coyoacán",
+          "location": "Coyoacán (mencionada en el titular)"
+        },
+        {
+          "title": "Coyoacán lleva su Orquesta Filarmónica a Los Culhuacanes",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNVlJCUjgxTXZiVVVORFU3dmdDb3Q4cFZIbnBnVDJ4R1VuNEdtZzdpaDgxa0VZZUIzeEI2aHItNG52YWtobHB3b2NVbUd5QlBVb1MwcEw4bzdqaXBWcFBxLWlQN1BiS21uM09mLUhpbTYtUThJTHFvc3RiNlJJbktyWm5QOGpnblRkcXhwVGYtdlZKV29PUklqd2tYUXR4cDA?oc=5",
+          "source": "sdpnoticias",
+          "date": "2026-10-11",
+          "published_at": "2026-10-11T23:57:41Z",
+          "category": "CDMX",
+          "borough": "Coyoacán",
+          "location": "Coyoacán (mencionada en el titular)"
+        },
+        {
+          "title": "Caso Los Molina: dictan sentencia por asesinato de siete personas en Coyoacán",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQR3Nfd0hjWGgwSUZYb0RYeHdFT2w0c2V5aks4ZnhDR3hCRUxSM1BZdzc1Nk52cHRhUlVsU2ljeHctUDZkdWIyQ3I3T0MyZV9maWZsTU5uVlVTaFg0c2lyZFRZWWkyM2hIMmRHMFBrZ0RXaE1tbmVEM2dsN2dZMFpaa0ZBeElSbVJjREtVLU1BNjBNQ0pwTUtSZExqZnFaeF85bXRvZ2w2ZzZvVXY0S1dGN2JTY20tUUJFTFFuTTZBLURxUncxdUFncHdn?oc=5",
+          "source": "Reporte Indigo",
+          "date": "2026-10-11",
+          "published_at": "2026-10-11T23:43:05Z",
+          "category": "CDMX",
+          "borough": "Coyoacán",
+          "location": "Coyoacán (mencionada en el titular)"
+        },
+        {
+          "title": "Lleva Coyoacán cultura a toda la demarcación: Giovani Gutiérrez",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQTmxhU2Q4eno1QmZyZk1MdUxpTjF4allnb1BNYS00U093M3FMVVBJZVhONU1PV1NkNWl1WTlQU3JHQ3RWZ2h2ZFpFTmRSM0c0UlZZS0hrYk93SGFhMHVIc3dRZ1pNbTM4c1A4d2MwOXZyZU9rQndYZWhEZGdadmVqZWNpTzd2THg2?oc=5",
+          "source": "CDMX Magacín",
+          "date": "2026-10-11",
+          "published_at": "2026-10-11T23:13:22Z",
+          "category": "CDMX",
+          "borough": "Coyoacán",
+          "location": "Coyoacán (mencionada en el titular)"
+        },
+        {
+          "title": "Filarmónica de Coyoacán lleva concierto gratuito a Los Culhuacanes",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQYzk4VjVaTkFmMFRsczE5cnZ3RW8tTWtqb2NZOU5RZkw4RTA0TUw5T1FMMjlHTlFsamFVMFFzWU9xUFVHYlVpcW1kNGRPWWp2MnR6NTMxWFZyZVoyZ0E0QjdiY19PVFNXNk1WZmhWenhPRWlPYlhCVUU0cDRWNXEybFRUMk5jQnBKZkl2YmdRNWUtQmc5TkVRaVBR?oc=5",
+          "source": "Capital CDMX",
+          "date": "2026-10-11",
+          "published_at": "2026-10-11T23:06:13Z",
+          "category": "CDMX",
+          "borough": "Coyoacán",
+          "location": "Coyoacán (mencionada en el titular)"
+        },
+        {
+          "title": "Cambio de nomenclatura en CDMX | La Alcaldía Coyoacán sustituirá 481 placas de calles en Santo Domingo y Educación",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPM3NWbEJQSDRDSW5mMVV1RjlDYXJJbWVZTHczU1ZKdHZlTkxqOXBJZ0N6N21hdldrN2lTYzhlUW9hSjZHMVJCZVpLQjlIQTZ1dkpjaDNfSHJjamVDRlZ3RVdoZXhyMjdGX3hlVHRyQ2RyRTlQbUxhVENONUJmZ3daMEhvNTNLNzhSbnBKQk00YmhWSldWbm1uaXNvaXBxa3kwVmxTT3lMUEdPZjF5T25wRTVYWDRuclRkSVMwZzJaOXl6UGNON01CUExpVHROLXpJRzNBSks0SGwtOGo1RTJjQ0k1bk9ESGRLeUxXbjZDY0fSAYsCQVVfeXFMTWRHdkpnaGdlU0pwS3RuanQ4VnRqYlVxQkNpZmlXcE4ySmNHenhURzEwcUx2UndHQ21lUWRXdC1yUjBCeDUxTmtsMGVyUFZUZ0FxSGExZFUwT0FVV0t1SUFtWnBYbUIyM0ZoU1hYdGVuWTJ3VU1mSXREcWVzcHpKc1hBQ3lkY1IyVk44a05wSHhJcE1vam9yWFRpX2RpaWVWV2Y0TnJWZkg3dVkwRzRJbDZGWEtiRXJ6NjVvTnctM3NJN2RsS2ltdnBEZkdVWm50WFYyM3gtaWNtTVBNOFhZNkhlN3J4TWtfRjlXQm1PcmdvcHFqZS1jX0xCTG5DaUtrZ3FJWDA2YW9veG5r?oc=5",
+          "source": "El Cronista",
+          "date": "2026-10-09",
+          "published_at": "2026-10-10T01:26:04Z",
+          "category": "CDMX",
+          "borough": "Coyoacán",
+          "location": "Coyoacán (mencionada en el titular)"
+        }
+      ]
     },
     {
       "name": "Cuajimalpa de Morelos",
-      "count": 0,
-      "articles": []
+      "count": 2,
+      "articles": [
+        {
+          "title": "Clima en Cuajimalpa de Morelos: lunes 12 de octubre con lluvia ligera y ambiente templado",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQNUZ2RGZhNElUMnp4YmM5b24wTDUxc1A1Z1VHTkxhWllwZUloS2Z1M0lzLUFRZkNSbnFQOHpoS1NIYzFZNURaVkpjOEFTSDQ0SFNaLUZoWlFadTdaekVzU09SU3BoYWtydDYtR0dkM3h0UW01V0drSXEwYVFOVDh0RUVmOXNWQ3NfakxPTTBNX1B0NEZ6WUhtcE5jM2EtRS0xX0I1dno4dDhnNmpGVWZPX3hPWW1kZGdFMzQ4NHlyY0xQd0RZUGFvRXFvY3VVLW1VTDRQZllhT05wWkEyVnBpMTVnaw?oc=5",
+          "source": "El Heraldo de México",
+          "date": "2026-10-11",
+          "published_at": "2026-10-12T05:00:00Z",
+          "category": "CDMX",
+          "borough": "Cuajimalpa de Morelos",
+          "location": "Cuajimalpa de Morelos (mencionada en el titular)"
+        },
+        {
+          "title": "PAN apunta a conservar Cuajimalpa con Carlos Orvañanos en 2027",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPZ1k4OTYxN3NvVk82RzBtWDdKR2FmblRJUER0NTlFUksxVzg1LWNYTFd5Z28yNjBHWVFzR2w2UFF1WkxvcXl6M0NIem5aa0ItZ05rM0hRMVRYeTVnbUJwSHlPcmpGcVoyeTVMWHZpc0FaN1lHVTZVQmxmRDlMbDQ3eU1qQVZuRGlNalVuTEhYZHBTV2VUa0FsTFBXLW05aGtTTTVVa0otanVhUUtrZzF3WTZPUGF3bjQ?oc=5",
+          "source": "Reporte Indigo",
+          "date": "2026-10-09",
+          "published_at": "2026-10-09T16:48:17Z",
+          "category": "CDMX",
+          "borough": "Cuajimalpa de Morelos",
+          "location": "Cuajimalpa de Morelos (mencionada en el titular)"
+        }
+      ]
     },
     {
       "name": "Cuauhtémoc",
-      "count": 1,
+      "count": 10,
       "articles": [
         {
+          "title": "Alito sale en defensa de Alessandra Rojo de la Vega tras enfrentamiento en la Cuauhtémoc",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOZUV4aWR6MkVfZVh1OUdTcnlWMXdkOGlRVXpUOXFqaUhRVGlfeHhIWDljMm55M3FpS0N3QUFfWWxzUWlEcm56Mml1eDRPajNNQ18wd1h2WUotdW5YUWZhVXJiYVBuVW1iNVcxdGJZcGVSclNWX1Y1RDNENU9XTHBkV2lwaGtwSDRvYjhYNWpXbzBiY1VSZWszWk1abk9qaExBOFBreVVQMVg5LVFCZFE1WmhCWFRSTTVfQk9IcHA2RDRaWU5leEE0Nl94ZzNMbVZCRkMwbU0zWDZMMm84dndsV2JJbkpQQmc?oc=5",
+          "source": "Proceso",
+          "date": "2026-10-11",
+          "published_at": "2026-10-12T00:24:00Z",
+          "category": "Gobierno",
+          "borough": "Cuauhtémoc",
+          "location": "Cuauhtémoc (mencionada en el titular)"
+        },
+        {
+          "title": "Citlalli Hernández critica al gobierno de Cuauhtémoc tras el socavón",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNTGlRNF9ZbmItTmxzclBzand1V1hMc3ZYdWVaZlBDcm1QTWw5SUs0eEtNNEZJRFlCMDQzVTNaUm9HSVNrdkxfQ3Vnckt1c3NMUHY1SnNRVV9EeDNEc2FMSi1hYks4Y3hsZ0J0VDBlUDNISVhjUXpyaVpjbU1oN3FNS1VBV0JXcDItbFlEbV9KMF9IWUw3b3dqSDIyY0NCenROZXV5ak1lbVFlcS1pbDQw?oc=5",
+          "source": "sdpnoticias",
+          "date": "2026-10-11",
+          "published_at": "2026-10-11T21:11:47Z",
+          "category": "CDMX",
+          "borough": "Cuauhtémoc",
+          "location": "Cuauhtémoc (mencionada en el titular)"
+        },
+        {
           "title": "Cae Eduardo Antonio 'N', alias 'El Kisifur', en la Cuauhtémoc; lideraba banda de robo de autos en CdMx",
-          "description": "Consulta la cobertura completa y las actualizaciones en el medio de origen.",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
           "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPV29aNmtFa3VXeW0wallfU0xsSHNtYnF3cFo2aWV6cnd1dUp0RFJWZ25MTGhrb0xHMExjZy1PT0V3OUVkM3ZtQ0JNdk5RallzejZ6QUFPQXdSZUdmRXRTaXRabzRrNHBZSm5vWjFYb2hleHFzc2l6ZkJlYlZoMWF3S1d3U3hUR005Qi1leWNsTXRqdldvV1dQUDBTcmJrTE1lakRIQ9IBpAFBVV95cUxPV29aNmtFa3VXeW0wallfU0xsSHNtYnF3cFo2aWV6cnd1dUp0RFJWZ25MTGhrb0xHMExjZy1PT0V3OUVkM3ZtQ0JNdk5RallzejZ6QUFPQXdSZUdmRXRTaXRabzRrNHBZSm5vWjFYb2hleHFzc2l6ZkJlYlZoMWF3S1d3U3hUR005Qi1leWNsTXRqdldvV1dQUDBTcmJrTE1lakRIQw?oc=5",
           "source": "Telediario",
           "date": "2026-10-11",
+          "published_at": "2026-10-11T20:46:00Z",
           "category": "Seguridad",
-          "published_at": null,
+          "borough": "Cuauhtémoc",
+          "location": "Cuauhtémoc (mencionada en el titular)"
+        },
+        {
+          "title": "Detienen a mujer con 15 kilos de presunta marihuana en la alcaldía Cuauhtémoc; tiene dos ingresos a prisión",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQUEppT3F3RUNHQkF3Zi03ekhZZURDRmc0WGw2VDRLUW1jOWszRm1ZTDNGdzhjTkNxV2VhYVNLUE9TTEpjaW0tMkR0cmNtR1BvYmxlWjRPYkNaSkl3cG11eFNPX0FMdXJlVE9ENVNJOFVuOThfbU1YNFRZZkEyQ1E5S2czNHZjMGFmdkJINkNmZEJsRXpERmlSTWNwbGJ6WjhGb3d6QU1YUzBTaTNEd2paaGxCWWVTSEswU0FXeUxOWlRFc3h6cjJxVHlyb1B3TmtuQTc5T0MtQ3F4LXV0Tk8zcEFn?oc=5",
+          "source": "El Universal",
+          "date": "2026-10-11",
+          "published_at": "2026-10-11T19:28:06Z",
+          "category": "Seguridad",
+          "borough": "Cuauhtémoc",
+          "location": "Cuauhtémoc (mencionada en el titular)"
+        },
+        {
+          "title": "Pronóstico del clima en Alcaldía Cuauhtémoc para este domingo 11 de octubre: lluvias ligeras y ambiente templado",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxNX1ZJM1BacHhvdnA2OHp2ek5PM29qWVMtNXU2azkxTnF0MWZTZGN4UVFnTk5yRko2LXRibldmQVBRVU16cXN0YzZxRXNRa1NoUVJSRmUyWW96OWJNMzZXYWtZc1lVNV91dGNTRy15WFVPRS1FLVdORWpfSjV0czVSd2lWeU5ULXotSlEwTWppTzdQYno2V041R3h1bmxVZDdobS12bFRoVEgteWx6WnFtYkZKLS1EMmsySG55Z1hTeGxfZFh0QTYwemNsQndjN1MtaE5QMTE1cjhEQ015blpaTDVtLUxBa0d1MXlqM2VhZmFXWk4yRnZsTnNPcXhkc3NmSWc?oc=5",
+          "source": "El Heraldo de México",
+          "date": "2026-10-10",
+          "published_at": "2026-10-11T05:00:00Z",
+          "category": "CDMX",
+          "borough": "Cuauhtémoc",
+          "location": "Cuauhtémoc (mencionada en el titular)"
+        },
+        {
+          "title": "Trabajador Cae de 12 Metros Durante Obra en Tienda de la Cuauhtémoc, CDMX",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQZklDVzNSWXYwMThCYVdPOUJQajlIQ1BBSFktcHg5SmNYMEFUM2tTVmlqeFJQZlJEZk04VzYyUDdPd2ZpM19wVGVYZldmSWVQUXBNQWVEYWN6ZEFrS05LVXdzWlREVnZIdjRQYm56V2RIQ01EVkc2c3QxUjZtQlVVWWFKUkdkVV83ZWt5UTRZdVRQQ3VRdWR6WGRTUllTY3dlSi1ZdTh3djdwNHVEUmQyTzhRSG5yVVhyRVJxdmo3V19SeUVxQlhPTmg3WmdkdkMwN09Ic0lkaGwyR180dDNIT1dXOA?oc=5",
+          "source": "N+",
+          "date": "2026-10-10",
+          "published_at": "2026-10-10T21:47:25Z",
+          "category": "CDMX",
+          "borough": "Cuauhtémoc",
+          "location": "Cuauhtémoc (mencionada en el titular)"
+        },
+        {
+          "title": "Clima en Alcaldía Cuauhtémoc: sábado 10 de octubre con lluvia ligera y ambiente fresco",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQb0tOOHNwZ284N2FxWVFLUjNXb2R4UTdLSkFUbjlMaW92VG5pUDFmQ2dYODh1U0pLSjZTR0xDTnBFQkRnRnZHQkNybnVOR1RTNEtQV2N1bmYxd082b2FsV0c4TXgtSlFoTVNaZFpXaVdreGxiUzhqcEZEakdPZUNTQTVXRnpFT0VHVG9ubndQenFoN0wwTVpSV0xZSmpVNHRTT0NQOVpvVkdpZmVvLUVIMzU1dlY0Y25iZHFHYjI1OVFINjROVFRhbi1kbEFIa2tMWXVhbTh2TWVMTHcwV2c?oc=5",
+          "source": "El Heraldo de México",
+          "date": "2026-10-09",
+          "published_at": "2026-10-10T05:00:00Z",
+          "category": "CDMX",
+          "borough": "Cuauhtémoc",
+          "location": "Cuauhtémoc (mencionada en el titular)"
+        },
+        {
+          "title": "Protesta de Personas Trans Termina en Enfrentamiento en Alcaldía Cuauhtémoc, CDMX",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNVUl5aWpVMDdjZWZYWGZ5eEpPelZCTlc0VWtTQXBrWElTM0VGVTdnQmVTWi1nTVkzUkpsbVFBbVBwdnd5UTFrSVo3OGJFUmpsTkFhemVoWml5bzNIMEdGSE42VUxXVDB5bGpxdkFYNjNlTDVoMmRJN1NBTTNacVFjODFfRnl5eUdnMy04cnotYTVMNkwzeTJ3bTYyU3IyQlM1dERuS3VENzVENW51TG0zTTh6b0dUTDF0T3dRRHNoYXI?oc=5",
+          "source": "N+",
+          "date": "2026-10-09",
+          "published_at": "2026-10-10T02:27:07Z",
+          "category": "CDMX",
+          "borough": "Cuauhtémoc",
+          "location": "Cuauhtémoc (mencionada en el titular)"
+        },
+        {
+          "title": "Fuerte Lluvia en la Colonia Buenavista de la Alcaldía Cuauhtémoc, en CDMX",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOUEtUVUwySmRBUHJ6VmN1MzllRnY5VlhHY2JZRFZkWlVwbFhDQ1g1TjQ3MjNCWndlc0MyYmNZVHE5X1FjdHB4UlBDaDdaRVlheEJzWkJ2NExNV3BITEFKb25RTVFjaXFZTnFfWnMzbGVIR3Ywc1M4bGxRWV9meklLUVE3NlFrUUxWNHJhTU1ZMWZZUE05anNuWDBiYXRjcVVseHhyQWhzMDE?oc=5",
+          "source": "N+",
+          "date": "2026-10-09",
+          "published_at": "2026-10-10T01:57:08Z",
+          "category": "CDMX",
+          "borough": "Cuauhtémoc",
+          "location": "Cuauhtémoc (mencionada en el titular)"
+        },
+        {
+          "title": "Gobierno de la CDMX culpa a la alcaldía Cuauhtémoc de provocar un socavón donde cayó un vehículo",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQUjFnXzhvbzFmNm1BelhPdE1rODBxaEhveFpUZnlxMnRwWnBBRlhERHNlNlJuUm83Yy1UdWs2VlhrdC1GenZ4WWlfRW82ZFQxT25fVl9JNGZoc2hHWWttRG5iT1VSeWdQSGR3QlBtdU51X2pwd1o5cEdJc0k4WEUwQ09oU1FiRUpxM1pXZkduRWlYd2dGQ2VXZk1qZk1NbTV5N1JHSVlELWxQeEU5WUxkbnM4MzRJQ1VSRUFYYkZYWkZmWHgxRG9YeVZkR2tMU19KSTR1NDdn0gHwAUFVX3lxTE14VWthaWFkTmtleU52blgwaXhlY3lSbGRfZDFsMF8yYTBQdER2bDZlTE1yd0ZwcEtiek8tcVlkYnRPMGJ5aWNLZ3pNdHRySTd3NVZmdXhoc3RSamJKUF9tWjd3cXJWRGRSRVV0Y3BtNC1LV29kcTVMYW00YnRLY2IzQWxDNjdVSHZyX2FLdUJrUmRiTG53cVc2b213dzBPWWFjYVRQR01nRTQzZVl1ZGc0XzZ2TDdfUmFIRXhSQ09mblpxeC16LTJ2aGh4cjY1NWxkV1puT3JGejk5X1ltZWt3bk1SQVY0YVlXelpMTlIzdw?oc=5",
+          "source": "Infobae",
+          "date": "2026-10-09",
+          "published_at": "2026-10-09T19:50:00Z",
+          "category": "Gobierno",
           "borough": "Cuauhtémoc",
           "location": "Cuauhtémoc (mencionada en el titular)"
         }
@@ -50,47 +485,414 @@
     },
     {
       "name": "Gustavo A. Madero",
-      "count": 0,
-      "articles": []
+      "count": 4,
+      "articles": [
+        {
+          "title": "Clima en Gustavo A. Madero: lunes 12 de octubre con lluvia ligera y ambiente templado",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQVGNLbGQycDdfTnVlVDFreTE3Y0EzMnJ0V0ozdVQ0WE5fb0pQQkh3Y3pDSWVaOXVEQ3puSFdfNzRhMGhjVHRYZTdCY09qaUpHUVBYcXVUMTZUdmFEeHpYZWtuNGJRNk9BTW1ycVRNVEpyNHQ3elVBbndWN0tTbGNkbW9JdEZKd1ZZSmNrMEpwVG1yYTF6UU1WLUhIak1SRmViU3dSUWNZWmN4eHM2ZWtiMWdvUzhMMXZzTl9WM2p6bzhQazFyVDRWb29MclIydWRnY3hNNlJ0Y3VFOVBi?oc=5",
+          "source": "El Heraldo de México",
+          "date": "2026-10-11",
+          "published_at": "2026-10-12T05:00:00Z",
+          "category": "CDMX",
+          "borough": "Gustavo A. Madero",
+          "location": "Gustavo A. Madero (mencionada en el titular)"
+        },
+        {
+          "title": "Clima y Pronóstico para Gustavo A. Madero este domingo 11 de octubre: Lluvia ligera y ambiente templado",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNVS13dWRiRmZvNGo0MlY2MkR6cm5uT283MWlySkxEZkVOVEhpcVVSTTE0ZWNnZV9ib09uNnZZY1VLb1NyUENfeFJkYS1aV1g4ZGNXQldSdjZmOTY1ZThOMzdfa2s2QUR6T2VZa0gwZW9kUTlsQVFPV1o1UmNmZ1R0cWJHeXVMeFF5OFZlNGMyVFhZbXZLOHFJWVdjcGhfWEFiRnV5a3VKRnRCU0lydFpIQkdtWF8wbENTRTZXS3Bta3JnWEpVYTVReVlqOW1Cd3NKTV9SeWVfc0JLaG5DRDY4Qm1GRDNWdUg4V3hYMThjeEhldw?oc=5",
+          "source": "El Heraldo de México",
+          "date": "2026-10-10",
+          "published_at": "2026-10-11T05:00:00Z",
+          "category": "CDMX",
+          "borough": "Gustavo A. Madero",
+          "location": "Gustavo A. Madero (mencionada en el titular)"
+        },
+        {
+          "title": "Hallan Cuerpo de Hombre Desaparecido Dentro de Cisterna de Su Casa en Alcaldía Gustavo A. Madero",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQRnhKS2FQcFhEb3VtTnRJZWVyNWhOUTdSTmdFWlJzc1paeEVva21Rb0NGVFhQVHJHSWY1SVIwdXBLNXU5U3FaMDFRcUVMakdtdml1dXJqS3JMc3hBRFVhUzQ4MEdyMG83Ym55c2tJVnN3OW5NaGo0S3pGNUtnSFVaa3U2R3VPdEZXYU0zSkNrWlg4TFMyYWEzUkdfQW5HcXZKUTZTVE5uS1pJUTVabmdwNVBXWjFVYk1nSmtERGdxV1BPcVhvdHg5YUw2ZTRseXZKTElMeVoxVmlNY1Z2R3BmSg?oc=5",
+          "source": "N+",
+          "date": "2026-10-09",
+          "published_at": "2026-10-09T19:29:59Z",
+          "category": "CDMX",
+          "borough": "Gustavo A. Madero",
+          "location": "Gustavo A. Madero (mencionada en el titular)"
+        },
+        {
+          "title": "Hallan Cadáver con Signos de Violencia Dentro de Cisterna en la Gustavo A. Madero",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQUUxfcVVFcFFoNjhnMWdBQl9sNGlRa202QnJnYkJoYk1WTVc4aVQ5TkNhekVoaGRyWFMtMHdiNGZHWDFFSXdGdDVGRnAtQjdlY2lFN3FNS3dHRzZyZ28xbWJXYkR0OXdfcmdnTk0zWU5KdE1ZdzNnZXJqZC1FQ2FjSDJDd0tOV0R5aFd4T0RSckhrQ3l0VU1FdFR6XzcwcG50WFkteWczSURNWWUtbFE?oc=5",
+          "source": "N+",
+          "date": "2026-10-09",
+          "published_at": "2026-10-09T19:10:09Z",
+          "category": "CDMX",
+          "borough": "Gustavo A. Madero",
+          "location": "Gustavo A. Madero (mencionada en el titular)"
+        }
+      ]
     },
     {
       "name": "Iztacalco",
-      "count": 0,
-      "articles": []
+      "count": 7,
+      "articles": [
+        {
+          "title": "Clima en Iztacalco, lunes 12 de octubre: Lluvias ligeras y ambiente templado",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOQUk3ei1vV2JINENCNzBsQ2dvcnh2aU5KSDFEczVOLXNyVUs4ZkM4U1kzSlFLcEpxME02SDIzbUZfaFBaVlJmOVk5dU1sSVJQODRkdXdPRHNIaFRaejR4VGI5SElvUWd2ZmMxZnVCZ1BIajdBc0VObk1UdUpGSVdnMlFxcDZJSmJIQ0pBaG9IbXgxaHZPMXNJOW04QVRoMmFDb1pWY3g5VEFrcmlpTU9GVS1QdC11T1B3a3ZiV1ctN0c1WGN1RHZTZ0o5Umh4akxB?oc=5",
+          "source": "El Heraldo de México",
+          "date": "2026-10-11",
+          "published_at": "2026-10-12T05:00:00Z",
+          "category": "CDMX",
+          "borough": "Iztacalco",
+          "location": "Iztacalco (mencionada en el titular)"
+        },
+        {
+          "title": "Inaugura CONSAR la Feria de Afores 2026 en Iztacalco",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPXzMxbTNNQzVQSDMwMklBU1RxNnJyMEhINWxObExwUElKY3p2VXM1bE54aXl6UWhIMWhrenhQNk1zRDJCdlVLTmxsQkRxRXNzZm82X3ZibFZFZzJheHpYWlY1Y091Zk9QdHE2NVVQN1NWZm92OURXZ0dKZm5zSWdvMFFMVkZzNUZYR3lQS1ZjWnk2Tm1HYTRqWTNncUxuc2tyd0x4V2FkZw?oc=5",
+          "source": "Gob MX",
+          "date": "2026-10-11",
+          "published_at": "2026-10-11T21:50:25Z",
+          "category": "CDMX",
+          "borough": "Iztacalco",
+          "location": "Iztacalco (mencionada en el titular)"
+        },
+        {
+          "title": "2740: Personal de la SSC detuvo a cinco personas por la probable reventa de boletos durante el concierto “Álvaro Díaz Omakase Tour”, en el Palacio de los Deportes, en la alcaldía Iztacalco",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9xVmhEUTBSZ1dfaDU3UDJUOU1yX1lJRTZVT2t3UWNpOU9tWVNSV2lxb0NuUXlSRUt4MVNXNmc0VDVDM3psT2RiVjE4RVlqWU81a3Nid2llOUczV0ZwakRLVjlnWTZXYkhhYk93SVRLVQ?oc=5",
+          "source": "Secretaría de Seguridad Ciudadana de la CDMX",
+          "date": "2026-10-11",
+          "published_at": "2026-10-11T06:04:56Z",
+          "category": "CDMX",
+          "borough": "Iztacalco",
+          "location": "Iztacalco (mencionada en el titular)"
+        },
+        {
+          "title": "Pronóstico del clima en Iztacalco, Ciudad de México para el sábado 10 de octubre: lluvia ligera y ambiente fresco",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxNS3d6TzNucHQ4S19KQkxuMExHX3dVNVNLaVJXY0RpM3dhTUR4N2x3d3lIZHF4bFJxNzA4Q2J0c281U3BoQmNWM0RDby1DNEZ2Z3VFZFJPVE5KRHFYcW5DMGRwS0tDYVY3cmJSMWctX2FqSEhPRXVRelo2STFxTi0xdzVCWjE5dkdzbVJubkJZMU1fX1EtZTFnZXA3dGFPZlRFRmJGMk8wWHVrM3hLYkV0MnJia0d6X3Z6ME1JdmlGM1lpRk11N2FlVHc4UXI4TzlvQUZpWkh2UmN2V1VJZjNBT01mZklWa29OV2JTQzJBQUVQdl9zR1BfSkJsaTJWNl95?oc=5",
+          "source": "El Heraldo de México",
+          "date": "2026-10-09",
+          "published_at": "2026-10-10T05:00:00Z",
+          "category": "CDMX",
+          "borough": "Iztacalco",
+          "location": "Iztacalco (mencionada en el titular)"
+        },
+        {
+          "title": "Trabajadores de la Clínica 30 del IMSS, en Iztacalco, se Suman a las Protestas en CDMX",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOdkpfZXpNOU1JeU9PVGVEVUJxQzIwWVJMeEcxaDljVTc0Ty1lemFBd2VmMUtjbEYtMUdjV3FnalhtYlZkRGJvN3NsS1RUdTRYU2xSSEI1b3ZtM1NQN01Kck5LUWhmZGhlcTctcEhZeXh2VkVoUG5oWVo2Z2ZmVDNVYVEyeXRfQnhFX1FVQWJZVHUtR3hNMWF3cHo0Wl9tbURtdDJRaFBPcDUxMjZEVkt2Mw?oc=5",
+          "source": "N+",
+          "date": "2026-10-09",
+          "published_at": "2026-10-10T00:05:08Z",
+          "category": "CDMX",
+          "borough": "Iztacalco",
+          "location": "Iztacalco (mencionada en el titular)"
+        },
+        {
+          "title": "Desde el Aire: Repliegan Manifestación del IMSS en Iztacalco, CDMX",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNVEtNZmhweXRoWkY0alZlUlRGNEFHZ0FETUdLTUd3R0pDZWJrallfMWRYWlFYYTRBQUZpZmxrc1RHeG1wQ1Qzd3FjRXpsWHZUUmVpdVA1NmhhNGd1V2FKdkdvb1RDS21pUEhLakl0TF9aSDY1c3lSSXVMd0pYekJiclhncTEzX0hZdEJieXJrdWxRSGg2eHliUWpEUHZ4YW1TS1lwN1lMbEc4X2RsbnVnSVVxVFN2YlkzTDFCc0ZYTzVsYm9UZXNyWkpIeWdhRkhkUHBhMg?oc=5",
+          "source": "N+",
+          "date": "2026-10-09",
+          "published_at": "2026-10-09T22:59:19Z",
+          "category": "CDMX",
+          "borough": "Iztacalco",
+          "location": "Iztacalco (mencionada en el titular)"
+        },
+        {
+          "title": "Se incendia campamento bajo un puente del Metro en Iztacalco",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNQ2w3cFVrQXh5TlJZbTZvUHlrRTZRdnFIMzVuYWRvUC1USi0tWWNXRm9Ka04wX0N4SnBfdXp4aUcyT19RVkV6bUZFSjNtUDVKZlphMnRtNEFGa3I5VFlkdHZmdktiVUx6WVAySUlMc1FqVVE1ZG9SM0VZTHQ0UzVHNnpyb0JhZ0o1VkdDTVBZQzc3Mk9CS2g2YVF2aHnSAZwBQVVfeXFMTUNsN3BVa0F4eU5SWW02b1B5a0U2UXZxSDM1bmFkb1AtVEotLVljV0ZvSmtOMF9DeEpwX3V6eGlHMk9fUVZFem1GRUozbVA1SmZaYTJ0bTRBRmtyOVRZZHR2ZnZLYlVMellQMklJTHNRalVRNWRvUjNFWUx0NFM1RzZ6cm9CYWdKNVZHQ01QWUM3NzJPQktoNmFRdmh5?oc=5",
+          "source": "Telediario",
+          "date": "2026-10-09",
+          "published_at": "2026-10-09T15:04:09Z",
+          "category": "CDMX",
+          "borough": "Iztacalco",
+          "location": "Iztacalco (mencionada en el titular)"
+        }
+      ]
     },
     {
       "name": "Iztapalapa",
-      "count": 0,
-      "articles": []
+      "count": 5,
+      "articles": [
+        {
+          "title": "Regalan 5 mil desayunos en festival del Día Del Huevo en Iztapalapa",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOZ3dLWFcyZUVzNFJhWnVWb3lhTS0taDBVQllRZU55ak1BMUpFTlJDUUNIOTZCVHBYUVNLUEppUDR5MDlGMEVQWms2TjFNWkc2WXdMMlVYa0RXaUtNUVBVUS1VUmdCdVkzbm5RbzBKejE0V0liTS1qaDE3akdVb1h5YXZnWUc4M2dKOUpiUVE4LWQ4UHhCV1l3Rk9rUnhWbzc4cl9FcURCUFFsT3RSYkRFOGMzRXB4T1RWVU00dDlaNF9sb1U?oc=5",
+          "source": "El Sol de México",
+          "date": "2026-10-10",
+          "published_at": "2026-10-10T21:00:39Z",
+          "category": "CDMX",
+          "borough": "Iztapalapa",
+          "location": "Iztapalapa (mencionada en el titular)"
+        },
+        {
+          "title": "Rescatan perros y gatos hacinados en un domicilio de Iztapalapa",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNSHJGdXBuRWFfdGxnUEhIQWJJQU5jWkgwVlR4NmNoaEI1MVNQNS1WaWlZVnNzZkV0eHN6QjRiSnRDT3ZTdElKcC1qdGtNTm96UkVZV3JjXzBFWjJrMkFOZTY4Y3NOQUVUcDVNT2Z4Vk9IbV9YTjM5dzRoS2JYb1RVUzk1TkxsLWVQaDNGX2M4dTAyTHpJcXIyM21oYlfSAZwBQVVfeXFMT2JpNG9DMHFzX3VWUEFyLWpzVTNkNzJYR3JreDBYWFZvRXBmb1RGLV9YREZ6ZHZWQkVWZ3ZsOUdhS1lJdDB6aEt5Rkx4bmNBZlFzQjNHVjRyS1VaZmlYbEMxSkxETWlDZl9oNExIS1hnWld1cVlBWFp2dWc3dzdrOW53RVAwX0dUTVMxWnFxaHdGLVNwcWdqNmg1d0ZV?oc=5",
+          "source": "Telediario",
+          "date": "2026-10-09",
+          "published_at": "2026-10-10T05:58:42Z",
+          "category": "CDMX",
+          "borough": "Iztapalapa",
+          "location": "Iztapalapa (mencionada en el titular)"
+        },
+        {
+          "title": "Policías de la CDMX Encapsulan a Manifestantes en Calzada Zaragoza, Iztapalapa",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQV1UyczJ3OWRBQXNJSGp5UU5fSTBWb1B4ZkY1UEFReHIwYno1WUE0aXhSa0lIMkdGS2ZlOEVfTVN2cG1QTk9fZVFpUU9OTlRSVzZOZmdROUFHRlFMYS1reG9SMXdLa3U0YVB3M2dXb2JJdTVaNU5YZ0ZXQ1ZjSHk3bTBha0lNM3lRWlk1TW5TSG90TU5sTHgwWUdUTmswbjN5djNDWmtFLWV4OWFmNHhpSzdnSUIyZm1qSXBJSTJSSlZIRHZsZnBCbWlhT3pYZG9leE5GT0dKYTMxN3NTV3lSeElYZ0U0UQ?oc=5",
+          "source": "N+",
+          "date": "2026-10-09",
+          "published_at": "2026-10-10T03:25:48Z",
+          "category": "CDMX",
+          "borough": "Iztapalapa",
+          "location": "Iztapalapa (mencionada en el titular)"
+        },
+        {
+          "title": "Encapuchados lanzan cohetones y lesionan a maestro en Bachilleres 6 de Iztapalapa, Cdmx",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQeFRHbkdrcXAtNDljX0VmZ0JZU2ZEZW16S24yMTNWdEtySGJUaTYteGFJQm1MMzV5LTRfZ21Ua1dUeEZoNzVhWE1KOUpNZ2VJa3RYOUNCV1UtRWdaeWVPblgtbE51X3BraWkxQ1VNRzhGQkJrQXI4SkxTUlhSOHRJbkZ1ZGlVZm43SS1Xa3pkU0FRTzBSb2QxaXVKMFRHM1BQeXBYblJoQk1xUQ?oc=5",
+          "source": "Quinta Fuerza",
+          "date": "2026-10-09",
+          "published_at": "2026-10-10T03:03:28Z",
+          "category": "CDMX",
+          "borough": "Iztapalapa",
+          "location": "Iztapalapa (mencionada en el titular)"
+        },
+        {
+          "title": "Pánico en el Bachilleres 6 de Iztapalapa: lanzan cohetones y evacúan a estudiantes",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPODVsR2FYWWM2aUpOaDNKSG5yTWgxblFpSGdRYkJrMTR2RFlPdVoxcGhCdU9JN053ZnZfeGQyZUgzb2tlLWFZWmVWck1BMEVEZEtfZHBndHFVbHZ5eFR2a2FsZ0toTFFrbGZPU3lHdjhVanNtZmhRYm5URkdCd1VWY0FJT3BJc3hkUHJmcm1nTjFnNDUtVzhvM1hfbWJJc0NoRjI5T2NBQzRDRHJ5eFlOaXpQOWNGNGdQNlIzNTA1WEg?oc=5",
+          "source": "sdpnoticias",
+          "date": "2026-10-09",
+          "published_at": "2026-10-09T19:28:18Z",
+          "category": "CDMX",
+          "borough": "Iztapalapa",
+          "location": "Iztapalapa (mencionada en el titular)"
+        }
+      ]
     },
     {
       "name": "Miguel Hidalgo",
-      "count": 0,
-      "articles": []
+      "count": 4,
+      "articles": [
+        {
+          "title": "Pronóstico del clima en Miguel Hidalgo para el lunes 12 de octubre: se esperan lluvias ligeras",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPN0IyZHZ2dzMyZE11WnZiclVoRVNfZktLZHdLNTIzTHhlS3RCQ2NmQ3lQTFFoS0dnd19RbzJKUFpHcndXZlRrZGo1WlppcDJLU2Voa1ZDbGF6a0VvTmp0dlBtaHZGVTVtaGpQLVNEazFwOWs2MGQ3UURaSzlnSWJFSTRaV0J4aTIyNUYxV0s5RU5Dc3o2TGFhZ1JFSmZHenMzVU5pTHctN2lzMDVVaEZ1eFprNUl5dDdOYkYtWjBNcmF0dFExYktES2Nod2Q1VkJPRXFOanR5WDNCNzdocnhWMkwxMzNyYzRSbnZWcA?oc=5",
+          "source": "El Heraldo de México",
+          "date": "2026-10-11",
+          "published_at": "2026-10-12T05:00:00Z",
+          "category": "CDMX",
+          "borough": "Miguel Hidalgo",
+          "location": "Miguel Hidalgo (mencionada en el titular)"
+        },
+        {
+          "title": "Inper recibe donación de DiDi y mejoras urbanas en Miguel Hidalgo",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQWUdsVllOWmZNbWYwaEZ1YWluM2Foa2VBUk1McFA4REI1LVprcXViVU54MExoOFhDYkRfVmpPS2xHcFBsdnpFTU5wZWxjanN4R2ItYlFJTl8xX3BsU09sa0c0RVRQUGVNS29wUmcwdm1HWGJBVExrT1BPTmoydVBoZlljMU1iNjlPZnhqeUhsbFUyLUIzNDFpcVRqc1pua2hhS3NIMnNTVFNJek0?oc=5",
+          "source": "Sociedad Noticias",
+          "date": "2026-10-10",
+          "published_at": "2026-10-10T17:30:00Z",
+          "category": "CDMX",
+          "borough": "Miguel Hidalgo",
+          "location": "Miguel Hidalgo (mencionada en el titular)"
+        },
+        {
+          "title": "Clima en Miguel Hidalgo este sábado 10 de octubre: jornada fresca y con lluvias ligeras",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNcGRrb2laYjNNdExEQlpkalNfeGF6aGNPS0tvS3BpcGo1SGJ1dG40cGJQalZVUXpjRlZjcE9DM3k3eGZRTFB6OEhpYXNNVDU4aVN3UVVzTHM1NnRUTHNfRi1aQzl4VXNlLXp6VUpnczItTllGWDAzbHdEU181X3ktYkNqQ0h4NTVULTFZVkZrZ0dZXzFtWk42anVsdlBxMU1pWkZ0Vjh5eEN1MU1pZlUtZklFaGFaSmtHNEJDVVRPOXg5bGo3NDhkYzRZeDZPS0hKU3RIaWVFaWRYR3d6ek5J?oc=5",
+          "source": "El Heraldo de México",
+          "date": "2026-10-09",
+          "published_at": "2026-10-10T05:00:00Z",
+          "category": "CDMX",
+          "borough": "Miguel Hidalgo",
+          "location": "Miguel Hidalgo (mencionada en el titular)"
+        },
+        {
+          "title": "VIDEO: con pistola, y a plena luz del día, asaltan a automovilista en la Miguel Hidalgo",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQYXhjSWk3bkMtdjVtX3FNSHNLOUl5Mk1fbDliMzVPbVE3angxRXhNNzUwZHA4Y2cybzMtSGhRYjdRczZFNmwyeTUwQUd1ZXVuSjNmVDFuUGxHa2VTNm1ReGx5SHZ1SkIybGFEVW5ZUWlKUzhMVXhoY21fOVpiN0d4VkRDcTJNLXd3ZzVtQXU2aGl2RkJiUWpoRlBXTS1RR2pOUkxhRkhEUHFWNGU0LV80WEhCcWJOVjRBai1BOGw4V2NUUzdldnVvOUwxYno?oc=5",
+          "source": "UnoTV",
+          "date": "2026-10-09",
+          "published_at": "2026-10-10T02:30:44Z",
+          "category": "CDMX",
+          "borough": "Miguel Hidalgo",
+          "location": "Miguel Hidalgo (mencionada en el titular)"
+        }
+      ]
     },
     {
       "name": "Milpa Alta",
-      "count": 2,
+      "count": 15,
       "articles": [
         {
+          "title": "Clima en Milpa Alta: lunes 12 de octubre con lluvia ligera y ambiente templado",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNTGUwR3ZvN3ctUmJXY3c2Mzg4c2ZyNnJlSG5CVXdsNlhtbGVXb09IN2RkbHVtMUxJakhWR25FaFNTZ0x2UDU2c0dxWW5RX2hVaXhNdFlRX3J1UlA2N1hHUTNIODFFV2JzN0VTNE1WSElSeklyRlRva3ZLekFtLTBWQi1mS2p5SmNGVG10VUJVRXpDNUZHS2N3RE9rQWxwdURidlAxUVhNWjBJYTVZSnFSRy1wdng1Sm5pYmJwZ3YyY2hacklvUDZyT2VlVUlkLXJpRnM3OQ?oc=5",
+          "source": "El Heraldo de México",
+          "date": "2026-10-11",
+          "published_at": "2026-10-12T05:00:00Z",
+          "category": "CDMX",
+          "borough": "Milpa Alta",
+          "location": "Milpa Alta (mencionada en el titular)"
+        },
+        {
+          "title": "Milpa Alta estrena su primera Utopía con globos aerostáticos, carrusel y carritos chocones",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFAyRmk1M18tejBNYTBCU2d3VWN2Sl9MbGgxVkJqUlp5MHd5Wmhkc1FPYzFMeFhEVDVaekV4OUhEZkxfSDZlRnNnb2JJelVFUkkydVpBR0lrdk5GVElhcGdBTGJCR0l3RENRN281djRRUmlobXktZ2dlb1FGT1REZ9IBfkFVX3lxTFAyRmk1M18tejBNYTBCU2d3VWN2Sl9MbGgxVkJqUlp5MHd5Wmhkc1FPYzFMeFhEVDVaekV4OUhEZkxfSDZlRnNnb2JJelVFUkkydVpBR0lrdk5GVElhcGdBTGJCR0l3RENRN281djRRUmlobXktZ2dlb1FGT1REZw?oc=5",
+          "source": "Expansión Política",
+          "date": "2026-10-11",
+          "published_at": "2026-10-12T04:27:00Z",
+          "category": "Gobierno",
+          "borough": "Milpa Alta",
+          "location": "Milpa Alta (mencionada en el titular)"
+        },
+        {
           "title": "Protestas y Tensión Marcaron Inauguración de Utopía de Clara Brugada en Milpa Alta",
-          "description": "Consulta la cobertura completa y las actualizaciones en el medio de origen.",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPOThWN2JpSXIwSFdPWlFmRXplWHNhRWQ5Vm9WeG5qNk5NTGJieEtoT2lDSzc1NV9KdkxEaXo4ZlBvX2hMV0NDVnNMNUVmZlBJclBnNEhFbWQyRmR6ZHd4N3Z0clhDYU9vMzc1S1l0aHJTanpQM19ZQ01QVFpkMHZUUHZ1eEcwUGE2VF9UeDI0YWsyNTB1TnVFOUhsX0tRaERmQnR4X3I3bWpIRWxxUE96MTh3Yk1iRTFPaDVObGJ1RFFSeGhRTXRSMDdlN3hfWHFSN0ZOanppWkp3YjV5SmhTag?oc=5",
+          "source": "N+",
+          "date": "2026-10-11",
+          "published_at": "2026-10-12T01:20:22Z",
+          "category": "Gobierno",
+          "borough": "Milpa Alta",
+          "location": "Milpa Alta (mencionada en el titular)"
+        },
+        {
+          "title": "Brugada inaugura la Utopía Temictli Tecómitl en Milpa Alta con inversión de 190 mdp",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOdncwRzQ0M19qVnFqZ3VTXzhFZjlFNllaSmVTOHcxRUF6ZDkxMzFONUl4R1A5TmRWRmFuMzlYUDh1MkdMWlBOYkZ6TE80bnl0UEZjOXFHcTByLTYySlR4ekxYZWNLUk1HZE1ITkVqNFhpcjJyUk5lN2o5MWp4QTYwYmd5T0FOUnBHWTQ3WGpiXzRJVEpaSjF4SUtyVktlVUczSVQ1OUZJWTU3Ynl4UDBsT3Q2eVFSS0x6VXg1X2EtaXFQRTktYXJ5VUZLQS0?oc=5",
+          "source": "El Financiero",
+          "date": "2026-10-11",
+          "published_at": "2026-10-12T00:27:00Z",
+          "category": "CDMX",
+          "borough": "Milpa Alta",
+          "location": "Milpa Alta (mencionada en el titular)"
+        },
+        {
+          "title": "Brugada inaugura la Utopía Temictli Tecómitl: ¿qué tiene y cuánto costó el nuevo espacio en Milpa Alta?",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOR3d1c0dzd3hqWnlEX3FBajNST0JIQjBydF9JY1RERHJNeVAzMkNIZ21zSngyNE8waXd1MDdoMnRFVmhTNTVMLXpLaTU4MVpUN1M5WUhBdlBoejhySFBmTlNIMkRmYUpwSnFLanI4cDhjNDNKa0cwNDE4dnJHVTRrSy1VN2ktWlBibWRDVUtxSjhyaFBrSWhoOFRwSWJ4c0JuSWRzNm9HRGppYWlNNkkwOHlnaUJwcVM4cXJmTE1QSjVFR0tDWU5xOXFEU1g1M0ktZDQ3My1WSXlFQQ?oc=5",
+          "source": "Eje Central",
+          "date": "2026-10-11",
+          "published_at": "2026-10-12T00:20:28Z",
+          "category": "CDMX",
+          "borough": "Milpa Alta",
+          "location": "Milpa Alta (mencionada en el titular)"
+        },
+        {
+          "title": "Clara Brugada inaugura la Utopía Temictli en CDMX: qué servicios GRATIS tendrá en Milpa Alta y cómo será el C",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPR1R2TlRWOHgySmVLdDlrVURyNEl4VUVZS3V5Q0p6WDRoMEJ0TDlIeUYxdk92dFpodVl2djNicUpOck1DaURCcHBaNVNZeDJoT2FHMmlEMGUybmQyVnNGSWZpbExzZXVJY2JpWnE3ajVGbFVrazltQXB6OWx6eHhqWVcwb25KcmxRUTVNSy1lNkV4UkxiZnhoek1CdlQxMEpsdlp2c1BOZ0xQaXM4T3FWZlJfbUJkOXhMaXZ0UmlNOUdMWDl2QTRPd0ZVZktQU2JLbG9SNmRuNkc1bXNmVHVDZHQ4bjE2WkNE0gH2AUFVX3lxTE1tTzNuV1JMZlRjSUlXUjVjNWt4Mkc4WUZHc0dsdkpvUElGMXRha2syTzZtQVJ6XzZtaXdJZTlRc1lDVlB3QUZoMC1ud1RuaS05SWlsVUNQaGhFVTNFUXA3UENBRnk1WWJQaUlHNHhJS3JUM1NSNDhueWNrVmc5ZG55MVhPeEFxZGJaaHZyUko5ZkltNnZrbVY5dERybVlaMG9oRkV5TzJkR2luRmRKdW5hM3NYNjRoUU1nN3BzY2JNNFU0YV9qMjQ2ZnRkdHVCX0xIWVA5aTFsTEwtcTlFY044ckNBRkl2UC1wbXdFS0M3MWpDOXM3dw?oc=5",
+          "source": "La Lista",
+          "date": "2026-10-11",
+          "published_at": "2026-10-12T00:07:25Z",
+          "category": "CDMX",
+          "borough": "Milpa Alta",
+          "location": "Milpa Alta (mencionada en el titular)"
+        },
+        {
+          "title": "Clara Brugada inaugura la novena Utopía en Milpa Alta; invierten 190 millones de pesos en espacio gratuito",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQLUZNbGhSSWRERnEwVVNOWnNnR1p2VjJXU19nbEZVQ2xscmlxdFQyZEtuZnpYVVplSXR3VWVVMkRheHBZWnA4MUZrSFhzSklGN1F5SWFnQXZ1UVVEXzczYzk0Rmk2SG5MV0UwQzh6UTRWaTJuU2dZTlFDZTdxQTQ5SWJudnBTcEh0RjNLTko2Wi11SVJrZ2hRVElwTWxuLUVXNFhZcC1NaG1nX3ptRDJ6N0RFYnBGc3NOQVA0OFBIenp4QXlCTXZVelZlak9zOEpGU2xwQkdRTURNSlpDYmtnbw?oc=5",
+          "source": "El Universal",
+          "date": "2026-10-11",
+          "published_at": "2026-10-12T00:02:00Z",
+          "category": "CDMX",
+          "borough": "Milpa Alta",
+          "location": "Milpa Alta (mencionada en el titular)"
+        },
+        {
+          "title": "Protestas y Tensión Marcaron Inauguración de Utopía de Clara Brugada en Milpa Alta",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
           "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPOThWN2JpSXIwSFdPWlFmRXplWHNhRWQ5Vm9WeG5qNk5NTGJieEtoT2lDSzc1NV9KdkxEaXo4ZlBvX2hMV0NDVnNMNUVmZlBJclBnNEhFbWQyRmR6ZHd4N3Z0clhDYU9vMzc1S1l0aHJTanpQM19ZQ01QVFpkMHZUUHZ1eEcwUGE2VF9UeDI0YWsyNTB1TnVFOUhsX0tRaERmQnR4X3I3bWpIRWxxUE96MTh3Yk1iRTFPaDVObGJ1RFFSeGhRTXRSMDdlN3hfWHFSN0ZOanppWkp3YjV5SmhTag?oc=5",
           "source": "N+",
           "date": "2026-10-12",
-          "category": "Gobierno",
           "published_at": null,
+          "category": "Gobierno",
+          "borough": "Milpa Alta",
+          "location": "Milpa Alta (mencionada en el titular)"
+        },
+        {
+          "title": "Inauguran en Milpa Alta la primera Utopía con juegos mecánicos",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPaUVqNWNUQmJvZGdqcU1vTEJsZTNqWmtuZ2tiSUhhdzUxWFNPUTg0XzZaY3k3aUJZMmpDZ252WU84SFVOLU1KRU5XaVdYSlVWc3FLOElhX294X2RFZWRXSXJicjJUQzBkbUZ3ZEpVcVZrYXczREktZzlYUXZNQzMtZmtPMXg2VHFqTTEwRXc5SEpCS0lPa2xFM1VOUQ?oc=5",
+          "source": "88.9 Noticias | Noticias en Vivo | Información Que Sirve",
+          "date": "2026-10-11",
+          "published_at": "2026-10-11T23:57:32Z",
+          "category": "CDMX",
+          "borough": "Milpa Alta",
+          "location": "Milpa Alta (mencionada en el titular)"
+        },
+        {
+          "title": "Abre Brugada Utopía en Milpa Alta",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPcXplMHk3bmZOMHZUQ2xpZFlZN08zMnFZdVFaUlZ3TU1wOEgxQjJ6VDEwUWxZWTYwbXpOTXNKLW55WHMyV0lLOFc4OW1xdFpFN0M1akZraWNWSWxPM1hDajl0TVBRclhpejFUYXFhM203cndiOEdLamxGbVY0OG9PS25oVWNiX21tNnFvUDh2UFc0Tl9WVWt1ZHVR?oc=5",
+          "source": "MVS Noticias",
+          "date": "2026-10-11",
+          "published_at": "2026-10-11T23:41:17Z",
+          "category": "CDMX",
           "borough": "Milpa Alta",
           "location": "Milpa Alta (mencionada en el titular)"
         },
         {
           "title": "Gobierno de la Ciudad de México inaugura la Utopía Temictli Tecómitl en Milpa Alta con inversión de 190 millones de pesos",
-          "description": "Consulta la cobertura completa y las actualizaciones en el medio de origen.",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
           "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPbXFFZ0ZFRWlMWGxya2wtaFQtMmlTWTFSUHFYc1d1YW1WQ0Vpam1xcWI5M3pNTkREM20zX1YzMmJHSUYzZWtES2ZMc2pFc2dCU1A0NjNBTktpaWptc3MtbG5JcFdYcVdDY2xlOE84Ym5pcUtHU25wYVZKYklXT01KdDRNVW5hdWtseHNTR0pmQlYwRWVhMFBfRE15Y0E?oc=5",
           "source": "Yahoo",
           "date": "2026-10-11",
+          "published_at": "2026-10-11T23:07:00Z",
           "category": "Gobierno",
-          "published_at": null,
+          "borough": "Milpa Alta",
+          "location": "Milpa Alta (mencionada en el titular)"
+        },
+        {
+          "title": "Utopía Temictli Tecómitl en Milpa Alta: alberca y servicios gratuitos",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPU0xRanpySWFGaDJPeG9NU2Q2aUFUX0JOLThESmxKenlEeG51bU9UY0l0ZDJvNDF4eTUyUmtUcTNmZ3ZOTVVpVUxfdzB6ZDVScVllaGdyVC1MMVY4LWpFb0dLYXR1bkdBR2N6eUlqc3hiRGFjUThVUzNtcExjVXowa1l5ZlFmcEJMMXhTVUs4ODdTLTY0MXhNQ3FiQ3hUTlBzVGd1TmVGR1JrRzdyb0pEZ1c5a3lqT2xxd3ZPWDJaTFdORnM?oc=5",
+          "source": "La Silla Rota",
+          "date": "2026-10-11",
+          "published_at": "2026-10-11T22:37:00Z",
+          "category": "CDMX",
+          "borough": "Milpa Alta",
+          "location": "Milpa Alta (mencionada en el titular)"
+        },
+        {
+          "title": "UTOPÍA TEMICTLI TECÓMITL: DE UN DEPORTIVO ABANDONADO A UN ESPACIO DEPORTIVO, CULTURAL Y DE CUIDADOS EN MILPA ALTA",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQRkh4Wkw4M0pPWTRBeTZtdlEzX1BuZ1lmWUo4eWVMa21hamRiTW5fLW02cEFTcFV3a0tYSXI1c05WZTZQRE8yOGhLWTctNE90RUVZVm9ZX0FTYXZpYTVMU3k5TDJpQjFRNDZBempfRlpXZ3JuSmNCZjViY1VDemFxeWg3Y1Z6SWIwd0c0aWdPLUZmamlSS2dzc1BfVktfdkswWnZseVRPYWRXeU9yVVhBaC1XNnNJc05CUjJjRF85U00zUVY3T2RPcm9CNWpvUUxzemZ6OXZNbm82b3pFMnAtWE04MUI4dw?oc=5",
+          "source": "CDMX",
+          "date": "2026-10-11",
+          "published_at": "2026-10-11T22:24:44Z",
+          "category": "CDMX",
+          "borough": "Milpa Alta",
+          "location": "Milpa Alta (mencionada en el titular)"
+        },
+        {
+          "title": "Brugada inaugura la Utopía Temictli Tecómitl en Milpa Alta; es la primera en tener juegos mecánicos",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxQSEtRZUNKek1POFJuNUYwWlJfMDFBZ2lzWGh4TjBlSFJ4dVhlX2U3M2JQOTRsUVJnd3pXNXZBNjZMWlZMNXp1X05rQzkybkJTMDhEd2wzR3dvYU5WcHNjbWVOZElHT2ZGWWNVdENVRm11UlphLXlOUkx2OUNUWUl3bEhIcEJyUS1IalRZMGI1VWtDN2ZURGEyNkkwb1ZzLWlrV1FTdXJTc3BKY0FpVVNXby1zVVdsOFpfRTgzeFJVbFJ3UFA2cXdNdVluNlU1MkdvaVFQWmRQRUhDMDNuRTFRT2RxVWswYThJdnlRcUhIVjJoZFE?oc=5",
+          "source": "El Heraldo de México",
+          "date": "2026-10-11",
+          "published_at": "2026-10-11T17:59:00Z",
+          "category": "CDMX",
+          "borough": "Milpa Alta",
+          "location": "Milpa Alta (mencionada en el titular)"
+        },
+        {
+          "title": "Por despojo, detienen a 8 personas en Milpa Alta, CDMX",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBVa081WEdKSXZnRXVmbWFSSXZXN21FYW1XTGVkMW92cUZiaE5UUmZoSHJsbXVGSzJlZ0dabEJQdG5mOFJjTWxaUEh1Z3NwWnZLSjNjblBfZTNCYVBfclRaY19ScHlSZmFTLUJ1aVpMaVA3Zi0yVkE?oc=5",
+          "source": "24 HORAS | El Diario sin Límites",
+          "date": "2026-10-10",
+          "published_at": "2026-10-10T22:09:07Z",
+          "category": "CDMX",
           "borough": "Milpa Alta",
           "location": "Milpa Alta (mencionada en el titular)"
         }
@@ -98,23 +900,291 @@
     },
     {
       "name": "Tláhuac",
-      "count": 0,
-      "articles": []
+      "count": 2,
+      "articles": [
+        {
+          "title": "Clima en Tláhuac: lunes 12 de octubre con lluvia ligera y ambiente templado",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPdHpyOWE1emZlb19ZQzhMam8zbjhqY3NTVEtfZGV4aWtZS3hTbTVXZUdtMWpyZG5HYWlFYkU2akstS1lsUHpZaDgzLXFPRWJDR1A4bmltSlFwOVdtc1hqQ3puSHJJX1NjN3JiMEFsSTN5Zm9zcUZkMUJpWUxfbkE2dUNVQ0NLMnZGZ0N4U21sOHRvWWdIT3NYQ05Ec2hPa29TalZlMWtQUm1SRXhPUGZsS3VzSlpkOWNhZlkyY3paRk5wV2RtOGNWejBLbEhTZmxW?oc=5",
+          "source": "El Heraldo de México",
+          "date": "2026-10-11",
+          "published_at": "2026-10-12T05:00:00Z",
+          "category": "CDMX",
+          "borough": "Tláhuac",
+          "location": "Tláhuac (mencionada en el titular)"
+        },
+        {
+          "title": "Clima en Tláhuac hoy sábado 10 de octubre: Lluvia ligera y ambiente fresco",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPX1lzY3dlUW1ncWJNU2FOWlBPeXRLYWRtbXZPTXg0Z0JIODhIa0lsMEVNakNZaDBFV1hQUHNFQlFxTXltQ3R3QzNmM2htMnd4aUhCTXNreVVWcy0yNmNqdk1iN2lsZGdYZE95QXlGNVlUcjlsX1lPVkdpU0FIRk1IT0NHdUp4Z3NJcjZrMXRpOWs5Yl9ZWVpFUE5uaVcxQV9KOTZKNHhpa0diOWctZHNWM005aGJRX1NSV1Y4ckdNNklyMHV0a3RraEhfTWd4UQ?oc=5",
+          "source": "El Heraldo de México",
+          "date": "2026-10-09",
+          "published_at": "2026-10-10T05:00:00Z",
+          "category": "CDMX",
+          "borough": "Tláhuac",
+          "location": "Tláhuac (mencionada en el titular)"
+        }
+      ]
     },
     {
       "name": "Tlalpan",
-      "count": 0,
-      "articles": []
+      "count": 13,
+      "articles": [
+        {
+          "title": "Bomberos Controlaron Fuga de Gas en un Tanque en Tlalpan, CDMX",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQaU82dlNGbjI0OG9YOEpUcE0xQ0ZmRlVOLUc5eXdubW5Ub002bEFPZklhTVF0NnpDOEx3ODZsUldSODFjc3V6alFXM0FHQmo4S0FEeFhxLXN4Z2NCaTRGemwzUG9HeFpsU3lJWFJEMzg0Y3JqNWw3eVlDTHl5dVNSZ0RjenVWZ1pwUTF3dTZmUHlTcHM0SHpqODFCUG9EV1pQRjgtaHdxMXlwUUJPSUxLdzl3RFFDT1cwYmpaVnhyT1hSQVFHcmdvdElzVVVlazB2TUdraA?oc=5",
+          "source": "N+",
+          "date": "2026-10-11",
+          "published_at": "2026-10-12T02:57:43Z",
+          "category": "CDMX",
+          "borough": "Tlalpan",
+          "location": "Tlalpan (mencionada en el titular)"
+        },
+        {
+          "title": "Clima y pronóstico en Tlalpan: domingo 11 de octubre con lluvia ligera",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNenU4bS00YlNxdXdGbVpMbkNNTVNsU1N2OGJGNWsyaWxZYmRqTmlUMHR6UHBLRUY1TTlnMWd1cjM3VWF2WjdBdEg5ekRZUXZ3akY4SEZxLVYzdTFSMHJKYkZLR19Ud0UwWDR1MDV5dVRfdW1OcHpnNzI5RklvanhZNG9lN0YxVUtVbjQ1b19rbVFjYVNKLUlRSmRTbEs5UVc4cV9qQ19ieURNN2c1V0lwQVpuaUZOQm0zYVRmRE9uQXBkMk54THdoRk9n?oc=5",
+          "source": "El Heraldo de México",
+          "date": "2026-10-10",
+          "published_at": "2026-10-11T05:00:00Z",
+          "category": "CDMX",
+          "borough": "Tlalpan",
+          "location": "Tlalpan (mencionada en el titular)"
+        },
+        {
+          "title": "Temblor hoy en CDMX: se registra microsismo de magnitud 2.2 en Tlalpan",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPV1ZqVlR4ZU00aFc0enBPZjNDeFg0QWV4NTNPWDd6S01WOHFLY3pZSlh4WUN3eExQWEZUYjJfU2cwYWRlWnd2T0ptYU53MkZLTzhlRjc1dXFXMGFnM0x6eWYwZHVCX1JEa09PaV9CYlRodnJRUUN5dUV2X0xhdDl1bGRsNmRIVlN0SVNZMDhOM0p2eTBLUXRZNlRLOFd6YzZzNDUwSS1Ob3FwaWIteGNiU1lVZENaNFY0NzZ6TDdFRXI?oc=5",
+          "source": "Récord",
+          "date": "2026-10-09",
+          "published_at": "2026-10-09T23:55:00Z",
+          "category": "CDMX",
+          "borough": "Tlalpan",
+          "location": "Tlalpan (mencionada en el titular)"
+        },
+        {
+          "title": "Sismológico Nacional reporta sismo de 2.2 en la alcaldía Tlalpan",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNTVNsRVY5Z3dHZ1k3ZWdxczQ2anBLWm9xWG93M2tCbEJvc2FMcXJvVXpzT1JsWldQdHRzSFJPQkVGQ21DOUZMeTFrM0Z3allBWkdNQ2lTSUR2emRlYVl4aVFIekJzcjBYMlJGNWduaEtGMVdnYi1CLURCcTBsaE5HNUE3WElDdGlELTlhN200aDlfMXROUDgzbzhIdW1lMjFjYWRwa3JKMTBjWUFTZmNaak5DRS1QaVh3VlFNR3JmUEU0TWszQlN2M1pB?oc=5",
+          "source": "El Sol de México",
+          "date": "2026-10-09",
+          "published_at": "2026-10-09T23:40:09Z",
+          "category": "CDMX",
+          "borough": "Tlalpan",
+          "location": "Tlalpan (mencionada en el titular)"
+        },
+        {
+          "title": "Microsismo en Tlalpan, CDMX, hoy 9 de octubre: ¿de cuánto fue el temblor?",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNMTNYNzdNR3JCNTY1UDN0X19qbGttZHN2YXZES1hjR243ODc5d1pGUHh5bkhyemtPVVQtRW1PandwcUlIQlFqYmVhX0Q2QmpuN1I3bEd1bFVOUjJBWUtFeW1Vdmg4b1ozaDM5Q2hMMF84elpZZ3pnTXR6dHRUSGRqUWhfNFVhbW1fWF8wcVY4eFlwcmI5eFVvZG1MY1ltRXpWcm1scjY3Qk9NZzBsWmh5NXd5eDJOd2JT?oc=5",
+          "source": "La Crónica de Hoy",
+          "date": "2026-10-09",
+          "published_at": "2026-10-09T23:35:10Z",
+          "category": "CDMX",
+          "borough": "Tlalpan",
+          "location": "Tlalpan (mencionada en el titular)"
+        },
+        {
+          "title": "Tiembla en la CDMX: Se registra sismo con epicentro en Tlalpan",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPdVRYZ1VBeGlDTzNpR255dlp4N056Zmc5Njl0LXd4cVJmV3VDZk0zR0ZUclZobWVNTllLVG1TMEJ1NmtuUGhUX2RXb1FKLVctb3l1eVlJYkd3WFpMeEJjcWhBX0dTYzBQcjBHVGozTEd5ZW4wRm13T2ZJTzJoUjY5T0taUTlueFBDcF9DUGM3UUhyNHdRdGt4QjdB0gGnAUFVX3lxTE0zaS1RcDFoWkhyN0w0MHc1dS1xd0FwNnZDekd1ci1jMVc0WE50QjREZnQ5a2psX1B3bUhXZmR0MmZ3dXJDWFIyT3ZqMEVqNVV3bXFQRDEwa0NqQVladlRFOE0xNUVvczQzN1lOenBPR0ZLNjUzZUZmVmt2c1JaSXRMZXZZbnJyLWowUndqaEoySmxZQUNqVDlzbGM0Z3RiLU5laG93QjZV?oc=5",
+          "source": "TV Azteca",
+          "date": "2026-10-09",
+          "published_at": "2026-10-09T23:32:22Z",
+          "category": "CDMX",
+          "borough": "Tlalpan",
+          "location": "Tlalpan (mencionada en el titular)"
+        },
+        {
+          "title": "Microsismo de 2.2 en alcaldía Tlalpan HOY viernes 9 de octubre",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9lMGE3LWJzZU1qMkRZcUlzUFNGcHVKYl9RTjRuRjQ2VnBzQ3pWMUNVUDdLb3h3RHNENXkwTnQ2WE1LRnB3WnVoaThTcVdNYVFnSEp4RzVNRHg1VTZXZFBRanBDTE1NRFhVaWo3R0tqdF9TeERwSVByLS1jTdIBe0FVX3lxTE9lMGE3LWJzZU1qMkRZcUlzUFNGcHVKYl9RTjRuRjQ2VnBzQ3pWMUNVUDdLb3h3RHNENXkwTnQ2WE1LRnB3WnVoaThTcVdNYVFnSEp4RzVNRHg1VTZXZFBRanBDTE1NRFhVaWo3R0tqdF9TeERwSVByLS1jTQ?oc=5",
+          "source": "Milenio",
+          "date": "2026-10-09",
+          "published_at": "2026-10-09T23:26:00Z",
+          "category": "CDMX",
+          "borough": "Tlalpan",
+          "location": "Tlalpan (mencionada en el titular)"
+        },
+        {
+          "title": "Se Registra Microsismo de Magnitud 2.2 con Epicentro en Tlalpan, CDMX",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPYm9iWHV4cHN5emdoSllaamY0M0E2OGRoLS1DZVBZZDdrQk1weU9EYkptZlBjWmQyVDM1XzV5a0d1eDZZRG1RcjZYQmcyQlN4SmlCbDNXenFkekNESy1uUlZGMjNzRmNUcDBTN0c2RTI2ODJUeGE4aVhmQ3FreUktbThyb3o5MDZSNnlzTFZaTmVGeV80MXBveVR1Y0RhSFBuMVhaQXNabm5SY3dDOVUteW94RENDdw?oc=5",
+          "source": "N+",
+          "date": "2026-10-09",
+          "published_at": "2026-10-09T23:21:34Z",
+          "category": "CDMX",
+          "borough": "Tlalpan",
+          "location": "Tlalpan (mencionada en el titular)"
+        },
+        {
+          "title": "Tiembla en CDMX: sismo de 2.2 en Tlalpan este 9 de octubre de 2026",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxNQkVjUUNHZmJpRWJoMTBpaXljenkxRkhTejdHWWxxaDZkRzdtRnJxTFhBTDBpOFcyeGlrWDh4Sm1ycVNlQzZGTkc0N3lHaFY5aVMyaUhQZnpIX2NQN1Q5alpYaUdWZ2gtX3htTHhNaEdjc1RvVEt4RmxNR3BJMVZUVmxJUGFCRnJiV1hzbHpQNm03dVdKZnVnSU1ISlJWRjFSUEt3Vl9nQk9GNmUtY2NBQlpYb3NIVFY5cHBvYVNEYnhpdFBXa3Z3TDRJVF8zc2pDMC1wd1BUWlRxY3QxSXpqRHJXUVFmS080SmZXaHlvLUc?oc=5",
+          "source": "Heraldo Estado de México",
+          "date": "2026-10-09",
+          "published_at": "2026-10-09T23:17:00Z",
+          "category": "CDMX",
+          "borough": "Tlalpan",
+          "location": "Tlalpan (mencionada en el titular)"
+        },
+        {
+          "title": "Se registra micro sismo de magnitud 2.2 en Tlalpan, de la Cdmx",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNR3lkLXo4bkhxRlFwZjdreXdXdzBjaDVtTnY3RXVuLXVHVW9QSFlvUWFlOGFxTEsyV25WWllrdTBnNkxQX3ZEek1OTnZSdXZSNFB5T3Q1TEREZ2Jnc08zYlJXOWk4X3h2NXBjT2t0cVhYVDhNUkxzb3dzZVVRUndsUHFVQkRIbEV2OVIxLVVNbFM5ZXlRMWdwOEZXbENNZ0JDYXVMR1dR?oc=5",
+          "source": "Sociedad Noticias",
+          "date": "2026-10-09",
+          "published_at": "2026-10-09T23:14:41Z",
+          "category": "CDMX",
+          "borough": "Tlalpan",
+          "location": "Tlalpan (mencionada en el titular)"
+        },
+        {
+          "title": "Registran sismo de magnitud 2.2 en la alcaldía Tlalpan, CDMX",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNbFNDZDIyZ2dFYng2NWtYcjdxenAzdGpucmd5MEUxVVU0bUc3Z19yRDVBTFZMUFA5Y0psZUJEeTNRZWZkYlhVY2xSLXVTSjQ5N3ZjNFJ0ZHNXNURkaEg3SUZ4cnBDbGtfQlhzdDZBM18zTENMZHdJY3lPaWxpbDZmZUtnbnJGR1hPdkpZM0FRME9sSk1nYkhCZTlwT0NyeXc4ZTdQdnk0dXlLU0hvUTY0dmliY1dDNkNOZ0dJdg?oc=5",
+          "source": "El Heraldo de México",
+          "date": "2026-10-09",
+          "published_at": "2026-10-09T23:13:00Z",
+          "category": "CDMX",
+          "borough": "Tlalpan",
+          "location": "Tlalpan (mencionada en el titular)"
+        },
+        {
+          "title": "Sismo CDMX 2026: Sismológico Nacional registra temblor con epicentro en la alcaldía Tlalpan este viernes 9 de octubre",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPcXVBVEZLRHU4RFNVSHVKRmR3UTRLV3ZBY0JkaVJGdDU5YnZGTktuRFhvZ2gwYk9sUHNWUkVQTnV4WFZscDl4VjNuRHhNUjNobWdWdUw3TU1DbVo4Q25CcXdmVU9Fdlo3a1ZOcmI4dkhDd3RWN01iNGZYMkt1dl9YSXZJR0tCblRtN09mTTVjYkUtQUJianIyR3gxaTNnMkwtcDlJeTE2MGdfcVFWQXMwTXFINGNFQlRkS05CZm1XUWo0YU1yV3NmWkZ6Y1VaOU5GM1JHdkYtMjdXdFkxUkJuNFRDcE4?oc=5",
+          "source": "W Radio México",
+          "date": "2026-10-09",
+          "published_at": "2026-10-09T22:30:09Z",
+          "category": "CDMX",
+          "borough": "Tlalpan",
+          "location": "Tlalpan (mencionada en el titular)"
+        },
+        {
+          "title": "Bloqueos del IMSS en CDMX hoy, ¿en qué puntos de Reforma, Insurgentes y Tlalpan se prevén?",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNd0IzNTdvZ3VKNjhxN1hqY3N5SHhiUm0xQVZaUDlBZHprNHlxdWpMV1BHMkpHV2lHOVJkSXJxZWJtYTNGOEVFTU5Va0ZoOEEyMEdkbnJKWGMwSmpINHZfM3FjbzdGd1VuelJaMUlDZ29MNktIdWZvYXlsdXN3eFdobTBFTl9xWWxsRWpmX0hQRjNTakU5Vm1lMnBYZXl4U0RvSGZ3VzFlVFdUSXFyQWJwMENOdENLdVVYU0RheG54Skg0V2k5Q3VTQ1ZB0gHeAUFVX3lxTE9PNVZsYzlhdk1TaEhET2kwVG0takwxeEVvOW9wMjFyUDcyWFhMR3I4UFJKbGwwOGU4UngwVGFEbko3V2xSVnc3OVNBeklEYVJiWmluRGFGT002TmFiUjNFcUV6eTZiQWE4QUNlMVMwWjZMZDNwUV9mSEpPc0gyM05EMkVMak14MmtZSzFzVXpna0MyZlFwNHh5WnpfOERGVFp4RTRPal9ZYUxPUHg3b2JNV1pfSUVleWk4UUp6Nk12Z2ZXNjFtaERlcTRRTjVaX25kWmFHZnlHbDRSRi1EQQ?oc=5",
+          "source": "EL GRÁFICO",
+          "date": "2026-10-09",
+          "published_at": "2026-10-09T15:46:18Z",
+          "category": "CDMX",
+          "borough": "Tlalpan",
+          "location": "Tlalpan (mencionada en el titular)"
+        }
+      ]
     },
     {
       "name": "Venustiano Carranza",
-      "count": 0,
-      "articles": []
+      "count": 1,
+      "articles": [
+        {
+          "title": "Evelyn Parra analiza su futuro y surgen tensiones internas en Venustiano Carranza",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOX0FpVjl1eXljelNiLS1nSGR2UnNwaG1sQkhqd1BIODNhU003dlVGVVAwbU9yTURfRlF6V3pHbU5IazFHcVpvQU4xWno2REtqU19XVmQ3TnZkbUNtV0VRY2xZRXVEMFp5NmI0OWwyYzJaVmphTGNsUktkNDk2aHBOa3c0LVhKSjZKZDhrTEpobFU5NFJZYnJjRUlYX2ZrM3JueGtrNk1WU2RuQmJhMlZvQjVINGJQUFR4SGl1SVNoaHA0NzBrTDJseTVkbDlyZ1RoeWFv0gHEAUFVX3lxTE15Q0c0UVE5V1pObERXZWNFQUp4NUlKb2RWeXhhUDdyN3hVeW90aFU5V1Uwa0c3bzBMOGVVN1NsblNQRUNDM1hsZmNrMmhNZXVjdTZDS1A4eFRHVk9Ma0E2QTUtd1lJR0FzS1lKeE9mLTJGODhLRThuUERibTI0THhvdVBsdHVlYlhtSFRmY0xwSHhQa1AtbkdyV0VtVGVuWXZrbVZvZkdmZDNRQURXbnNxWTFRQVF0ellpYXJDLWl1NVJCb2I?oc=5",
+          "source": "La Política Online",
+          "date": "2026-10-09",
+          "published_at": "2026-10-09T23:22:54Z",
+          "category": "CDMX",
+          "borough": "Venustiano Carranza",
+          "location": "Venustiano Carranza (mencionada en el titular)"
+        }
+      ]
     },
     {
       "name": "Xochimilco",
-      "count": 0,
-      "articles": []
+      "count": 8,
+      "articles": [
+        {
+          "title": "Pronóstico del clima en Xochimilco: Lunes 12 de octubre con lluvia ligera y ambiente templado",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxNWU5ubGIwUjR5U0lvR0E5SnNzc1ZPWjhMa0VaU0p5N1hqY25DWVVxWUloYXh5TUR2SzlLUjc4NlhVZEV6M05YV1ZfY2F0S3d1ZGV1R0gtQ2N2NWh4MlBTNVI4UWJOb29tTGhvM0ZGLVVWQjU3cnF3a1FBbXUwb25Od3VLSUVMVi1qVnkySW1JZTdBZzE0YmhsaGRpejRqX2RMMzdIOXktendzYjhMUV9jZDBualEtcko4OHpXY1Vna3Mwd2Ewd3hfUEw1UHU3Nkt2TGVrZ1RwSXc1b296TWJKaERxMjFSUlJs?oc=5",
+          "source": "El Heraldo de México",
+          "date": "2026-10-11",
+          "published_at": "2026-10-12T05:00:00Z",
+          "category": "CDMX",
+          "borough": "Xochimilco",
+          "location": "Xochimilco (mencionada en el titular)"
+        },
+        {
+          "title": "Chinampas de Xochimilco: agricultura viva en la Ciudad de México",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOQ3ppa1M3RDBacFRNcEVoSVU1TmhLUF9OUjV2SHh0M0VsdzJZRVQyZnB0MS1iNXdsS1VUYmdTbWkzUVNnZllLMU45MUZmT21sUTFjZEExLU9HNzVsSDIzd1BTcnZSNV9udk5VTkNMRnVzcF9fLWxRbTJsckJLNGJPeVdlODRKZDZjTXhhcTd0M21Xb19VRVVUdDFwVWg?oc=5",
+          "source": "Maya Comunicación",
+          "date": "2026-10-11",
+          "published_at": "2026-10-11T21:57:46Z",
+          "category": "CDMX",
+          "borough": "Xochimilco",
+          "location": "Xochimilco (mencionada en el titular)"
+        },
+        {
+          "title": "Humberto Peña, director general de la Corenadr, sobre por qué conviene comprar nochebuenas de Xochimilco: “Está adaptada al clima, a la temperatura y tiene mayor duración”",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMirgJBVV95cUxNM3hDUXhHLXlmS0lnUnRGSE9BdFM0aVFRNnRXbEdGZjhmOXRoSVcwRWR3Ri0xVHJTb2UzMGl5SzJWWHZNZVo3cGhqajA2WmVnOG00djZrZFVDaWltZGJ2NFotUVg2MldBNlNQdkp4dHhiOW84d2lsR1lMUlNOWS1jd0tzVDZaWjFCeWdOVGNuWHdEQ29lcHBOVmV1eWpMbVBxaS1HdVA4dHpXZ2lmTi13bDFOYk5NcGJkNFY4dlItdGhBWXg4bzdKcDNHOTNweHhjeUlWOXlZZVBsWkpScDZPb2xLNDlEazZkUDBucjZRY09qeDF5ZmpuTFA1SWNLQUtuUHlGenF0Zl9mb3JrX2JEOGVIRHJ2NmtfZE50eGZnZi0zcU1jaFVHLWRFT2lVdw?oc=5",
+          "source": "ADN 40",
+          "date": "2026-10-11",
+          "published_at": "2026-10-11T16:00:00Z",
+          "category": "CDMX",
+          "borough": "Xochimilco",
+          "location": "Xochimilco (mencionada en el titular)"
+        },
+        {
+          "title": "Así quedó un auto tras choque en Xochimilco con dos personas lesionadas | Mientras Dormía",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOcGI3cV9MTTlBX0V3NjRCdDFkRklBd3V1dHBySnBtM05rWjBwY21zNkhIV3U1QXQ0MVNnUnZYeXRMblp6TG15bVZWNkdXc2tKVTZwTU10N0pUTnV4Qzd0dTZzSVNSWUFYcDNHQVNwYlhwUUF4TVplaHNNUU1pbnJTZDNONC1Wbm4yVTBhRG5lZmhJaFJ2b1hnS2dXVE1ld0VpR0ZpS1ZkZmFONE8zTHfSAa4BQVVfeXFMTnBiN3FfTE05QV9FdzY0QnQxZEZJQXd1dXRwckpwbTNOa1owcGNtczZISFd1NUF0NDFTZ1J2WHl0TG5aekxteW1WVjZHV3NrSlU2cE1NdDdKVE51eEM3dHU2c0lTUllBWHAzR0FTcGJYcFFBeE1aZWhzTVFNaW5yU2QzTjQtVm5uMlUwYURuZWZoSWhSdm9YZ0tnV1RNZXdFaUdGaUtWZGZhTjRPM0x3?oc=5",
+          "source": "TV Azteca",
+          "date": "2026-10-11",
+          "published_at": "2026-10-11T14:15:06Z",
+          "category": "CDMX",
+          "borough": "Xochimilco",
+          "location": "Xochimilco (mencionada en el titular)"
+        },
+        {
+          "title": "Llama Brugada a respetar consulta sobre plan hídrico en Xochimilco",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPMWlLcUlNcnBRSkFOaFlOSW90OFY0eWdsSlZfVlpYYnB5RDMzMkxLeWFxUWtWcWtFRUZULVQ5SjNQNEdNUlVXTk1GMkQtOElCdVNHNDR6ZS01UENCVC1FS0NveUs2NGp0ajJGNTNLRWRwcmlzaWFZN3VoZElTLXltdHE2YVpjS2hKOWRqZkxB?oc=5",
+          "source": "CDMX Magacín",
+          "date": "2026-10-10",
+          "published_at": "2026-10-11T03:52:47Z",
+          "category": "CDMX",
+          "borough": "Xochimilco",
+          "location": "Xochimilco (mencionada en el titular)"
+        },
+        {
+          "title": "Los muertos navegan en trajineras en Xochimilco y podemos acompañarlos",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNUUR0Z3ZlOU41aGJUcXVHWWY5TnplLW1KZDc0a044R3BfcG05SjljbGc3cnBpcjhVYmgyUzdXOUtjTm9ZZkx5NzhkbUFmQWpfcG5Xa0JPWVEyWWFVU3Iwak5STjRGMzhlck5sdHNmQm5ZQUFmT1k5eDZMd2ljXzg3OWtRZGJMMEI2QkVIel92Q1RMTFNwUzRETk0tazE1ME42TDJuVEs2blUyYXM?oc=5",
+          "source": "sdpnoticias",
+          "date": "2026-10-09",
+          "published_at": "2026-10-09T21:17:29Z",
+          "category": "CDMX",
+          "borough": "Xochimilco",
+          "location": "Xochimilco (mencionada en el titular)"
+        },
+        {
+          "title": "¡Dale una segunda vida a tus residuos! SEDEMA invita al Mercado de Trueque en Xochimilco",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOTThuaTRla3YyZzhWYkg2YUVMZFFPSER0M0MzMHQ5a0xkRDdNTTEtMFlVZ0lNUEtRSjhtcDB2Vm9BMGdzM1BvczNNa0gtd3ZxTWYwOC1hZE9TU1dXMzkzbkgxX0lVc1JIVDZ0d0FxczhkTHRDOWJ0SlJFaXFtNGV5NGdNeHpaczhJOUxSczM2QUF5U3N3SnBaS25rRm5kOGt1d1I0Q3Z3UzBlNlBRSFBoS3RqSGlFdzFJcWZCWnNPVWl6X3RyZlZzUTYxX3lIQQ?oc=5",
+          "source": "Secretaría del Medio Ambiente",
+          "date": "2026-10-09",
+          "published_at": "2026-10-09T07:00:00Z",
+          "category": "CDMX",
+          "borough": "Xochimilco",
+          "location": "Xochimilco (mencionada en el titular)"
+        },
+        {
+          "title": "¡RECICLA Y GANA! PARTICIPA E INTERCAMBIA TUS RESIDUOS POR PRODUCTOS SUSTENTABLES EN XOCHIMILCO",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNaFlOQ0w3aURPRjVEVzNWUk5kWTJqMjNLYXY0ZGhWTnFwSW5IMHZpLVlYaFJLR3pSa1dWU2tMeXk2S2lOQVBfNXBzRHNFekh0dy1KYnpCUFFFeUpYZC1MaHZjZU0xQnhEZmtjdEFZcVBYTlI4N1BpRzAyRE9EX2o5bDFWYlJxc1hodVR5LWpucHVUby1NRGV2TEJzU0REb1M0ejduV2ZZT1Q0ZTJNZlhLazIwUzRfUGpnbm12VHBfczM1Wlg4Sl84Qm9YdTY?oc=5",
+          "source": "CDMX",
+          "date": "2026-10-09",
+          "published_at": "2026-10-09T07:00:00Z",
+          "category": "CDMX",
+          "borough": "Xochimilco",
+          "location": "Xochimilco (mencionada en el titular)"
+        }
+      ]
     }
   ]
 }
