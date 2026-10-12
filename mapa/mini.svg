@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 430" role="img" aria-labelledby="title desc">
+<title id="title">La Ciudad de México en caricatura</title>
+<desc id="desc">Ilustración decorativa con rutas de transporte, estaciones y estampas de monumentos emblemáticos de la ciudad.</desc>
+<defs>
+ <linearGradient id="paper" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#fff8e7"/><stop offset="1" stop-color="#e5f0e9"/></linearGradient>
+ <linearGradient id="rose" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#f8d0dc"/><stop offset="1" stop-color="#eaaaaf"/></linearGradient>
+ <pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#c9b3b9" opacity=".5"/></pattern>
+ <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="3" dy="4" stdDeviation="2" flood-color="#4a3b5b" flood-opacity=".22"/></filter>
+</defs>
+<rect width="660" height="430" fill="url(#paper)"/><rect width="660" height="430" fill="url(#dots)"/>
+<path d="M89 79l39-22 47 25 61-34 32 18 51-8 49 35 67-12 66 42 35 68-26 38 12 58-46 39-7 42-81-17-56 18-52-18-53 22-39-33-71 6-49-36-11-78 36-50Z" fill="#f4dbe2" stroke="#d19db6" stroke-width="5" stroke-dasharray="11 8" stroke-linecap="round"/>
+<path d="M20 310Q130 250 190 150T375 133T645 82" fill="none" stroke="#ffffff" stroke-width="22" stroke-linecap="round" opacity=".8"/>
+<path d="M18 310Q130 250 190 150T375 133T645 82" fill="none" stroke="#d95e95" stroke-width="11" stroke-linecap="round"/>
+<path d="M58 70Q150 98 235 185T440 256T655 301" fill="none" stroke="#fff" stroke-width="23" stroke-linecap="round" opacity=".85"/>
+<path d="M58 70Q150 98 235 185T440 256T655 301" fill="none" stroke="#3688ac" stroke-width="11" stroke-linecap="round"/>
+<path d="M71 377Q160 336 246 327T411 195T597 140" fill="none" stroke="#fff" stroke-width="18" stroke-linecap="round" opacity=".85"/>
+<path d="M71 377Q160 336 246 327T411 195T597 140" fill="none" stroke="#9564b7" stroke-width="9" stroke-dasharray="20 6" stroke-linecap="round"/>
+<path d="M161 234Q261 203 308 280T527 368" fill="none" stroke="#fff6d6" stroke-width="16" stroke-linecap="round"/>
+<path d="M161 234Q261 203 308 280T527 368" fill="none" stroke="#d49c2d" stroke-width="8" stroke-linecap="round"/>
+<g fill="#fff7ec" stroke="#513c58" stroke-width="3">
+<circle cx="190" cy="150" r="9"/><circle cx="375" cy="133" r="9"/><circle cx="123" cy="107" r="9"/><circle cx="440" cy="256" r="9"/><circle cx="246" cy="327" r="9"/><circle cx="411" cy="195" r="9"/><circle cx="308" cy="280" r="9"/>
+</g>
+<g filter="url(#shadow)" stroke="#57384a" stroke-width="4" stroke-linejoin="round">
+ <g transform="translate(245 52)">
+  <rect x="0" y="28" width="117" height="50" rx="4" fill="#ffefc7"/>
+  <path d="M8 30Q59-8 109 30Z" fill="#eb8eab"/><path d="M44 27Q57-13 72 27Z" fill="#9ed4de"/>
+  <path d="M17 76V47h16v29M50 76V47h17v29M84 76V47h16v29" fill="#ecc2bd"/>
+  <path d="M-4 78h125" stroke="#57384a" stroke-width="6"/>
+ </g>
+ <g transform="translate(64 179)">
+  <path d="M15 24l16-15h75l16 15v71h-24V48H41v47H15Z" fill="#e79db7"/>
+  <path d="M36 11h66M25 24h91" fill="none"/>
+  <rect x="6" y="95" width="126" height="9" rx="4" fill="#fff3d4"/>
+ </g>
+ <g transform="translate(485 184)">
+  <rect x="9" y="32" width="122" height="68" rx="3" fill="#ffe4bc"/>
+  <path d="M4 32h132v12H4z" fill="#e5789a"/>
+  <path d="M62 100V58q10-12 21 0v42" fill="#b5e2ec"/>
+  <rect x="20" y="54" width="19" height="28" fill="#93bfd0"/>
+  <rect x="106" y="54" width="19" height="28" fill="#93bfd0"/>
+  <path d="M73 30V1" stroke="#57384a"/><path d="M73 4l21 7-21 8z" fill="#77bb91"/>
+ </g>
+</g>
+<g font-family="system-ui,Segoe UI,sans-serif" font-weight="900">
+<g transform="translate(365 340) rotate(-5)"><rect width="182" height="40" rx="15" fill="#fff8e7" stroke="#d56891" stroke-width="3"/><text x="91" y="26" fill="#75314e" text-anchor="middle" font-size="16">¡EXPLORA CDMX! ✦</text></g>
+<g transform="translate(27 18)"><rect width="187" height="39" rx="13" fill="#fff8ed" stroke="#da8cae" stroke-width="3"/><text x="94" y="26" text-anchor="middle" font-size="15" fill="#653d57">MAPA ILUSTRADO</text></g>
+</g>
+</svg>
