@@ -1,0 +1,166 @@
+{
+  "version": 1,
+  "description": "Fotografías de archivo de lugares concretos de cada alcaldía",
+  "photos": [
+    {
+      "name": "La Magdalena Contreras",
+      "slug": "magdalena-contreras",
+      "caption": "Río y bosque de Los Dinamos, La Magdalena Contreras",
+      "file": "Rio de los Dinamos en CDMX.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Rio_de_los_Dinamos_en_CDMX.jpg",
+      "author": "Ananda xd",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+      "name": "Álvaro Obregón",
+      "slug": "alvaro-obregon",
+      "caption": "Plaza del Carmen, barrio de San Ángel",
+      "file": "Plaza del Carmen, Regina Escandon, 23.sep.15. San Ángel, Del. Álvaro Obregón 01000 Ciudad de México.JPG",
+      "source": "https://commons.wikimedia.org/wiki/File:Plaza_del_Carmen%2C_Regina_Escandon%2C_23.sep.15._San_%C3%81ngel%2C_Del._%C3%81lvaro_Obreg%C3%B3n_01000_Ciudad_de_M%C3%A9xico.JPG",
+      "author": "Reginaesc",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+      "name": "Azcapotzalco",
+      "slug": "azcapotzalco",
+      "caption": "Parroquia de Santa Catarina, Azcapotzalco",
+      "file": "PARROQUIA DE SANTA CATARINA (AZCAPOTZALCO).jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:PARROQUIA_DE_SANTA_CATARINA_%28AZCAPOTZALCO%29.jpg",
+      "author": "Ivan alcantara",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    {
+      "name": "Benito Juárez",
+      "slug": "benito-juarez",
+      "caption": "Parque Hundido, alcaldía Benito Juárez",
+      "file": "Parque Hundido.jpeg",
+      "source": "https://commons.wikimedia.org/wiki/File:Parque_Hundido.jpeg",
+      "author": "User:etnoboris",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    {
+      "name": "Coyoacán",
+      "slug": "coyoacan",
+      "caption": "Jardín Centenario de Coyoacán",
+      "file": "JardinCentenarioCoyoacan.JPG",
+      "source": "https://commons.wikimedia.org/wiki/File:JardinCentenarioCoyoacan.JPG",
+      "author": "AlejandroLinaresGarcia",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+      "name": "Cuajimalpa de Morelos",
+      "slug": "cuajimalpa",
+      "caption": "Centro del antiguo pueblo de Cuajimalpa",
+      "file": "CuajimalpaCentro01.JPG",
+      "source": "https://commons.wikimedia.org/wiki/File:CuajimalpaCentro01.JPG",
+      "author": "AlejandroLinaresGarcia",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    {
+      "name": "Cuauhtémoc",
+      "slug": "cuauhtemoc",
+      "caption": "Palacio de Bellas Artes en la alcaldía Cuauhtémoc",
+      "file": "Palacio de Bellas Artes, Mexico City, MX.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Palacio_de_Bellas_Artes%2C_Mexico_City%2C_MX.jpg",
+      "author": "Timothy Neesam",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+      "name": "Gustavo A. Madero",
+      "slug": "gustavo-a-madero",
+      "caption": "Capilla del Cerrito en el Tepeyac, Gustavo A. Madero",
+      "file": "Capilla Cerrito del Tepeyac (Basilica Nuestra Señora de Guadalupe) Gustavo A Madero, Ciudad de México 02.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Capilla_Cerrito_del_Tepeyac_%28Basilica_Nuestra_Se%C3%B1ora_de_Guadalupe%29_Gustavo_A_Madero%2C_Ciudad_de_M%C3%A9xico_02.jpg",
+      "author": "Catedrales e Iglesias/Cathedrals and Churches",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+    },
+    {
+      "name": "Iztacalco",
+      "slug": "iztacalco",
+      "caption": "Iglesia de San Matías en el antiguo pueblo de Iztacalco",
+      "file": "SanMatiasChurchIztacalco02.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:SanMatiasChurchIztacalco02.jpg",
+      "author": "AlejandroLinaresGarcia",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    {
+      "name": "Iztapalapa",
+      "slug": "iztapalapa",
+      "caption": "Vista de Iztapalapa desde el Cerro de la Estrella",
+      "file": "MX MM MUSEO CERRO DE LA ESTRELLA (49522225751).jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:MX_MM_MUSEO_CERRO_DE_LA_ESTRELLA_%2849522225751%29.jpg",
+      "author": "Secretaría de Cultura Ciudad de México from México",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+    },
+    {
+      "name": "Miguel Hidalgo",
+      "slug": "miguel-hidalgo",
+      "caption": "Bosque de Chapultepec, alcaldía Miguel Hidalgo",
+      "file": "Audiorama de Chapultepec 1.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Audiorama_de_Chapultepec_1.jpg",
+      "author": "ProtoplasmaKid",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    },
+    {
+      "name": "Milpa Alta",
+      "slug": "milpa-alta",
+      "caption": "Villa Milpa Alta y su entorno rural",
+      "file": "Villa Milpa Alta, Ciudad de México (32886264042).jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Villa_Milpa_Alta%2C_Ciudad_de_M%C3%A9xico_%2832886264042%29.jpg",
+      "author": "Comisión Mexicana de Filmaciones from México D. F., México",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+    },
+    {
+      "name": "Tláhuac",
+      "slug": "tlahuac",
+      "caption": "Plaza central de San Pedro Tláhuac",
+      "file": "Tláhuac-Plaza central.JPG",
+      "source": "https://commons.wikimedia.org/wiki/File:Tl%C3%A1huac-Plaza_central.JPG",
+      "author": "Yavidaxiu",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0"
+    },
+    {
+      "name": "Tlalpan",
+      "slug": "tlalpan",
+      "caption": "Quiosco de la plaza principal de Tlalpan",
+      "file": "Kiosko plaza de la constitucion, tlapan.JPG",
+      "source": "https://commons.wikimedia.org/wiki/File:Kiosko_plaza_de_la_constitucion%2C_tlapan.JPG",
+      "author": "farid estrada",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    {
+      "name": "Venustiano Carranza",
+      "slug": "venustiano-carranza",
+      "caption": "Palacio de Lecumberri, hoy Archivo General de la Nación",
+      "file": "Palacio de Lecumberri.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Palacio_de_Lecumberri.jpg",
+      "author": "Raymundo Perera",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    {
+      "name": "Xochimilco",
+      "slug": "xochimilco",
+      "caption": "Trajineras y canales de Xochimilco",
+      "file": "Trajineras de Xochimilco.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Trajineras_de_Xochimilco.jpg",
+      "author": "Xbauerx",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  ]
+}
