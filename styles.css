@@ -453,3 +453,15 @@ footer a{color:#ffc3df}
  .nav-carousel nav{padding-bottom:0;gap:20px}
 }
 @media(prefers-reduced-motion:reduce){.nav-carousel nav{scroll-behavior:auto;scroll-snap-type:none}}
+
+/* Carrusel de noticias: el contenido acompaña horizontalmente al menú seleccionado. */
+.news-slide-viewport{min-width:0;width:100%;overflow:hidden;border-radius:8px}
+.news-slide-panel{min-width:0;will-change:transform,opacity}
+.current-topic{font-size:clamp(18px,2.2vw,23px);line-height:1.3;
+ color:#ffd4e7;margin:8px 0 3px;font-weight:850;letter-spacing:-.3px}
+.news-slide-panel #status{margin:6px 0 16px}
+.nav-carousel nav a.active{color:#fff;border-bottom:3px solid #e887b3;
+ text-decoration:none;padding-bottom:3px}
+@media(prefers-reduced-motion:reduce){
+ .news-slide-panel{will-change:auto}
+}
