@@ -398,3 +398,69 @@ footer a{color:#ffc3df}
  .news-layout>.news-main{order:1}
  .news-layout>.news-side-column>.borough-rail{order:2;width:100%}
 }
+
+/* Mapa destacado: primera sección visible bajo el menú, antes de la portada de titulares.
+   El mapa mantiene una vista compacta y toda la tarjeta abre el mapa detallado. */
+.home-map-section{margin:20px 0 32px}
+.home-map-section .city-map-teaser--top{
+ display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);grid-template-rows:auto 1fr;
+ width:100%;min-height:248px;overflow:hidden;border-radius:22px;
+ border:2px solid #e1a0be;box-shadow:0 16px 32px #0706117a;
+}
+.home-map-section .city-map-teaser--top .city-map-preview{
+ grid-column:1;grid-row:1/3;height:100%;min-height:248px;max-height:none;
+ border:0;border-right:2px solid #b7749f;
+}
+.home-map-section .city-map-teaser--top .city-map-teaser-head{
+ grid-column:2;grid-row:1;min-width:0;padding:15px 21px;font-size:11px;
+}
+.home-map-section .city-map-teaser--top .city-map-teaser-bottom{
+ grid-column:2;grid-row:2;min-width:0;padding:22px 24px;
+ align-content:center;gap:13px;
+}
+.home-map-section .city-map-teaser--top .city-map-teaser-bottom strong{
+ font-size:clamp(23px,2.8vw,35px);line-height:1.12;
+}
+.home-map-section .city-map-teaser--top .city-map-teaser-bottom small{
+ font-size:13px;line-height:1.55;
+}
+.home-map-section .city-map-teaser--top .city-map-teaser-button{
+ font-size:13px;padding:11px 14px;justify-content:center;
+}
+@media(max-width:790px){
+ .home-map-section{margin:12px 0 24px}
+ .home-map-section .city-map-teaser--top{grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);min-height:220px}
+ .home-map-section .city-map-teaser--top .city-map-preview{min-height:220px;max-height:none}
+ .home-map-section .city-map-teaser--top .city-map-teaser-bottom{padding:15px;gap:9px}
+ .home-map-section .city-map-teaser--top .city-map-teaser-bottom strong{font-size:clamp(18px,3vw,25px)}
+ .home-map-section .city-map-teaser--top .city-map-teaser-bottom small{font-size:11px}
+}
+@media(max-width:590px){
+ .home-map-section{margin:11px 0 22px}
+ .home-map-section .city-map-teaser--top{
+  display:grid;grid-template-columns:minmax(0,1fr);grid-template-rows:auto 225px auto;
+  min-height:0;border-radius:17px;
+ }
+ .home-map-section .city-map-teaser--top .city-map-teaser-head{
+  grid-column:1;grid-row:1;padding:10px 14px;font-size:10px;
+ }
+ .home-map-section .city-map-teaser--top .city-map-preview{
+  grid-column:1;grid-row:2;min-height:0;max-height:none;height:225px;
+  border-right:0;border-bottom:2px solid #b7749f;
+ }
+ .home-map-section .city-map-teaser--top .city-map-teaser-bottom{
+  grid-column:1;grid-row:3;display:grid;
+  grid-template-columns:minmax(0,1fr) auto;column-gap:12px;row-gap:3px;
+  padding:13px 14px;align-items:center;
+ }
+ .home-map-section .city-map-teaser--top .city-map-teaser-bottom strong{
+  grid-column:1;grid-row:1;font-size:18px;
+ }
+ .home-map-section .city-map-teaser--top .city-map-teaser-bottom small{
+  grid-column:1;grid-row:2;font-size:10px;
+ }
+ .home-map-section .city-map-teaser--top .city-map-teaser-button{
+  grid-column:2;grid-row:1/3;max-width:112px;text-align:center;
+  font-size:11px;line-height:1.25;padding:9px;
+ }
+}
