@@ -111,8 +111,24 @@ function scrollToHeadlines(){
  const reducedMotion=window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
  window.scrollTo({top:Math.max(0,top),behavior:reducedMotion?'auto':'smooth'});
 }
+// Desplazar el menú a la izquierda o derecha en función de la pestaña elegida.
+const topNav=document.getElementById('menu-superior');
+const navReducedMotion=()=>Boolean(window.matchMedia?.('(prefers-reduced-motion: reduce)').matches);
+function centerNavItem(item){
+ if(!topNav||!item||!topNav.contains(item))return;
+ const relativeLeft=item.getBoundingClientRect().left-topNav.getBoundingClientRect().left+topNav.scrollLeft;
+ const desired=relativeLeft-(topNav.clientWidth-item.offsetWidth)/2;
+ topNav.scrollTo({left:Math.max(0,Math.min(topNav.scrollWidth-topNav.clientWidth,desired)),behavior:navReducedMotion()?'auto':'smooth'});
+}
+document.querySelectorAll('[data-nav-shift]').forEach(button=>button.addEventListener('click',()=>{
+ if(!topNav)return;
+ const direction=Number(button.dataset.navShift)||1;
+ topNav.scrollBy({left:direction*Math.max(180,topNav.clientWidth*.7),behavior:navReducedMotion()?'auto':'smooth'});
+}));
+topNav?.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>centerNavItem(a)));
 document.querySelectorAll('[data-filter]').forEach(el=>el.addEventListener('click',ev=>{
  ev.preventDefault();category=el.dataset.filter||'';render();
+ centerNavItem(el);
  scrollToHeadlines();
 }));
 document.querySelectorAll('img[data-fallback-photo]').forEach(img=>{
