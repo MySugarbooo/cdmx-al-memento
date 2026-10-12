@@ -293,8 +293,9 @@ footer a{color:#ffc3df}
 }
 @media(max-width:790px){
  .news-layout{display:flex;flex-direction:column;gap:20px}
- .news-main{width:100%;order:1}
- .borough-rail{width:100%;position:static;order:0;max-height:none;overflow:visible}
+ .latest-section{scroll-margin-top:130px}
+ .news-main{width:100%;order:0}
+ .borough-rail{width:100%;position:static;order:1;max-height:none;overflow:visible}
  .borough-rail-list{grid-template-columns:repeat(2,minmax(0,1fr));gap:7px;padding:13px}
  .borough-rail-head{padding:18px 16px}
  .borough-rail-head h2{font-size:25px}
