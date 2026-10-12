@@ -61,3 +61,8 @@ alcaldía depende de las menciones explícitas del nombre en los titulares.
 - Los trazados son históricos/cartográficos de referencia: NO son seguimiento de camiones ni horarios en tiempo real. No se garantiza cobertura exhaustiva de microbuses/combis y las rutas pueden haber cambiado.
 - La tarjeta mini `/mapa/mini.svg` es puramente ilustrativa, no un plano geográfico.
 - Uso de datos sujetos a atribución: `https://serviciosatlas.sgirpc.cdmx.gob.mx/arcgis/rest/services/AtlasCapasPublicas/Movilidad_Integrada_CDMX/FeatureServer`; mapas de fondo © OpenStreetMap contributors y © CARTO.
+
+### Vista previa cartográfica y modo ampliado (12-10-2026)
+- `/mapa/preview.html`: mapa real pequeño (no diagrama decorativo) del centro de CDMX en un recuadro dentro de la portada, con estampas de monumentos y carga diferida.
+- El mapa completo aparece primero en un cuadro compacto con botón **Ver mapa grande**, que lo expande a la pantalla del móvil o PC y permite cerrarlo con un botón (o Esc en PC).
+- Los mapas usan **OpenStreetMap Standard** para evitar el aviso **API KEY REQUIRED** de CARTO. Se conserva la atribución visible y caché de mosaicos normal del navegador, sin predescargas.
