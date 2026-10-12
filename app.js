@@ -6,6 +6,8 @@ const featuredGrid=document.getElementById('featured-grid');
 const featuredSection=document.getElementById('destacadas');
 const search=document.getElementById('search');
 const status=document.getElementById('status');
+const currentTopic=document.getElementById('current-topic');
+const newsSlidePanel=document.getElementById('news-slide-panel');
 const reportList=document.getElementById('report-list');
 function element(tag,cls,txt){const e=document.createElement(tag);if(cls)e.className=cls;if(txt!==undefined)e.textContent=txt;return e}
 function validLink(u){try{const p=new URL(u);return p.protocol==='https:'&&p.hostname==='news.google.com'}catch{return false}}
@@ -89,6 +91,7 @@ function render(){
   featuredGrid.replaceChildren();
   for(const [i,a] of front.entries()){if(validLink(a.url))featuredGrid.append(buildCard(a,true,i===0))}
  }
+ if(currentTopic)currentTopic.textContent=category?'Noticias de '+category:'Última hora · Todas las noticias';
  if(status)status.textContent=filtered.length?
   filtered.length+' noticias disponibles · Última sincronización: '+updated:
   'No hay noticias para esta búsqueda. Prueba otro tema.';
@@ -99,7 +102,13 @@ function render(){
   if(el.tagName==='BUTTON')el.setAttribute('aria-pressed',String(active));
  });
 }
-search?.addEventListener('input',render);
+search?.addEventListener('input',()=>{
+ // Buscar no cambia la sección: actualizamos inmediatamente las noticias.
+ topicSwitchToken++;
+ activeTopicAnimation?.cancel();
+ activeTopicAnimation=null;
+ render();
+});
 // Llevar las pestañas Metro, Seguridad y Última hora a los titulares,
 // no al índice de alcaldías que se muestra como sección secundaria en móvil.
 function scrollToHeadlines(){
@@ -137,11 +146,97 @@ function updateNavControls(){
 window.addEventListener('resize',updateNavControls,{passive:true});
 window.requestAnimationFrame(updateNavControls);
 document.fonts?.ready?.then(updateNavControls);
-topNav?.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>centerNavItem(a)));
-document.querySelectorAll('[data-filter]').forEach(el=>el.addEventListener('click',ev=>{
- ev.preventDefault();category=el.dataset.filter||'';render();
- centerNavItem(el);
+// Un cambio de tema equivale a una página del carrusel informativo.
+const topicOrder=['','Metro','Seguridad','Movilidad','Cultura','Gobierno','CDMX'];
+let topicSwitchToken=0;
+let activeTopicAnimation=null;
+function syncTopicTabs(){
+ document.querySelectorAll('[data-filter]').forEach(el=>{
+  const active=el.dataset.filter===category;
+  el.classList.toggle('active',active);
+  if(el.tagName==='BUTTON')el.setAttribute('aria-pressed',String(active));
+ });
+}
+function animateTopic(direction,token){
+ if(token!==topicSwitchToken)return;
+ if(!newsSlidePanel||!articles.length||navReducedMotion()||typeof newsSlidePanel.animate!=='function'||!direction){
+  render();
+  return;
+ }
+ // La información anterior sale hacia el lado opuesto de la pestaña elegida.
+ const leaving=newsSlidePanel.animate([
+  {transform:'translateX(0)',opacity:1},
+  {transform:'translateX('+(-direction*26)+'%)',opacity:0}
+ ],{duration:180,easing:'ease-in',fill:'forwards'});
+ activeTopicAnimation=leaving;
+ leaving.onfinish=()=>{
+  if(token!==topicSwitchToken)return;
+  leaving.cancel();
+  render();
+  // La nueva información entra desde el lado al que se avanzó por el menú.
+  const entering=newsSlidePanel.animate([
+   {transform:'translateX('+(direction*26)+'%)',opacity:0},
+   {transform:'translateX(0)',opacity:1}
+  ],{duration:320,easing:'cubic-bezier(.19,.75,.23,1)',fill:'both'});
+  activeTopicAnimation=entering;
+  entering.onfinish=()=>{
+   if(token!==topicSwitchToken)return;
+   entering.cancel();
+   activeTopicAnimation=null;
+  };
+ };
+}
+function animateWhenNewsVisible(direction,token){
+ const target=document.querySelector('.news-main .bar');
+ if(!target||typeof IntersectionObserver==='undefined'){animateTopic(direction,token);return;}
+ const topOffset=(document.querySelector('header')?.getBoundingClientRect().height||0)+12;
+ const rect=target.getBoundingClientRect();
+ if(rect.top<window.innerHeight*.72&&rect.bottom>topOffset){
+  animateTopic(direction,token);
+  return;
+ }
+ // Dejar terminar el desplazamiento vertical hasta las noticias para que
+ // el visitante pueda VER la información entrar de izquierda o derecha.
+ let fired=false;
+ const observer=new IntersectionObserver(entries=>{
+  if(entries.some(entry=>entry.isIntersecting)){
+   fired=true;observer.disconnect();animateTopic(direction,token);
+  }
+ },{rootMargin:'-'+Math.ceil(topOffset)+'px 0px -20% 0px',threshold:0});
+ observer.observe(target);
+ window.setTimeout(()=>{
+  if(fired)return;
+  observer.disconnect();
+  animateTopic(direction,token);
+ },1200);
+}
+function selectTopic(nextTopic){
+ const next=topicOrder.includes(nextTopic)?nextTopic:'';
+ const before=category;
+ // Las pulsaciones rápidas cancelan la animación anterior y no dejan paneles ocultos.
+ topicSwitchToken++;
+ activeTopicAnimation?.cancel();
+ activeTopicAnimation=null;
+ if(next===before){
+  syncTopicTabs();
+  scrollToHeadlines();
+  return;
+ }
+ // Reponer el tema anterior si se interrumpió una transición.
+ render();
+ category=next;
+ syncTopicTabs();
+ const from=topicOrder.indexOf(before),to=topicOrder.indexOf(next);
+ const direction=to>from?1:-1;
+ const navItem=Array.from(topNav?.querySelectorAll('a[data-filter]')||[]).find(a=>a.dataset.filter===next);
+ if(navItem)centerNavItem(navItem);
  scrollToHeadlines();
+ animateWhenNewsVisible(direction,topicSwitchToken);
+}
+topNav?.querySelectorAll('a:not([data-filter])').forEach(a=>a.addEventListener('click',()=>centerNavItem(a)));
+document.querySelectorAll('[data-filter]').forEach(el=>el.addEventListener('click',ev=>{
+ ev.preventDefault();
+ selectTopic(el.dataset.filter||'');
 }));
 document.querySelectorAll('img[data-fallback-photo]').forEach(img=>{
  const alternative=img.dataset.fallbackPhoto;
