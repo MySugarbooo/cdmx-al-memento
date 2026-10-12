@@ -465,3 +465,37 @@ footer a{color:#ffc3df}
 @media(prefers-reduced-motion:reduce){
  .news-slide-panel{will-change:auto}
 }
+
+/* Navegación tipo páginas: seleccionar Metro/Seguridad/etc. abre noticias AQUÍ.
+   El desplazamiento entre vistas es horizontal, nunca hacia el final del documento. */
+.topic-stage[hidden],.home-view[hidden]{display:none!important}
+.topic-stage{min-height:calc(100svh - 136px);padding:34px 0 46px;overflow-x:clip}
+.topic-stage-hero{
+ display:flex;align-items:end;justify-content:space-between;gap:22px;
+ padding:28px 32px;border:1px solid #734665;border-radius:19px;
+ background:radial-gradient(ellipse at 88% 5%,#a8417140,transparent 55%),linear-gradient(130deg,#281c31,#141d2c)
+}
+.topic-stage-hero .eyebrow{margin:0 0 9px;font-size:11px}
+.topic-stage-hero h1{font-size:clamp(30px,4.6vw,52px);line-height:1.1;letter-spacing:-1.8px;margin:0;color:#fff}
+.topic-stage-hero p:not(.eyebrow){font-size:13px;line-height:1.65;color:#c7cbda;max-width:560px;margin:14px 0 0}
+.topic-stage-buttons{display:flex;flex-shrink:0;gap:9px}
+.topic-stage-buttons button{border:1px solid #8a5b83;background:#51304a;color:#fff;
+ font-size:12px;font-weight:800;border-radius:10px;padding:10px 13px;white-space:nowrap}
+.topic-stage-buttons button:hover:not(:disabled){background:#794164}
+.topic-stage-buttons button:disabled{opacity:.35;cursor:not-allowed}
+.topic-stage-count{margin:26px 0 16px;font-size:13px;color:#bdc9d9}
+.topic-stage-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:17px}
+.topic-stage-grid .news-visual{height:180px}
+.topic-stage-grid .card .inside{padding:18px}
+.topic-stage-grid .card h3{font-size:18px}
+@media(max-width:1050px){.topic-stage-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:680px){
+ .topic-stage{padding:20px 0 30px}
+ .topic-stage-hero{flex-direction:column;align-items:stretch;padding:21px 19px;gap:18px;border-radius:14px}
+ .topic-stage-hero h1{font-size:clamp(29px,7.5vw,41px)}
+ .topic-stage-buttons{justify-content:space-between}
+ .topic-stage-buttons button{flex:1}
+ .topic-stage-grid{grid-template-columns:1fr}
+ .topic-stage-grid .news-visual{height:200px}
+ .topic-stage-count{margin:17px 0 14px}
+}
