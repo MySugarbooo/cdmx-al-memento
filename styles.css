@@ -312,7 +312,7 @@ footer a{color:#ffc3df}
 
 /* Las noticias se muestran junto con una ficha histórica y foto local de su alcaldía. */
 .borough-details-main{min-height:620px}
-.borough-page-top{margin:28px 0 23px;scroll-margin-top:114px}
+.borough-page-top{margin:28px 0 23px}
 .borough-page-top .eyebrow{margin-bottom:11px}
 .borough-heading-line{display:flex;justify-content:space-between;align-items:end;gap:22px}
 .borough-heading-line h1{font-size:clamp(32px,4.5vw,52px);letter-spacing:-1.8px;line-height:1.12;margin:0 0 9px}
@@ -320,7 +320,7 @@ footer a{color:#ffc3df}
 .borough-change{display:flex;flex-direction:column;gap:7px;min-width:232px;color:#d5bfd0;font-size:11px;font-weight:780}
 .borough-change select{appearance:auto;width:100%;min-width:0;padding:11px 12px;background:#232333;color:#fff;border:1px solid #9b6a8e;border-radius:9px;font:inherit;font-size:13px}
 .borough-details-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(330px,390px);gap:22px;align-items:start}
-.borough-news-column{min-width:0}
+.borough-news-column{min-width:0;scroll-margin-top:130px}
 .borough-news-top{display:flex;justify-content:space-between;align-items:end;gap:15px;flex-wrap:wrap;border-bottom:1px solid #3a3d4e;padding:0 0 17px}
 .borough-news-top .eyebrow{margin:0 0 4px;font-size:10px}
 .borough-news-top h2{font-size:clamp(21px,2.5vw,29px);margin:0;letter-spacing:-.6px}
