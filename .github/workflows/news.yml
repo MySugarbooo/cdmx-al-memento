@@ -9,6 +9,7 @@ on:
       - '.github/workflows/news.yml'
       - 'update_news.py'
       - 'tests/test_archive.py'
+      - 'tests/test_profiles.py'
 permissions:
   contents: write
 concurrency:
