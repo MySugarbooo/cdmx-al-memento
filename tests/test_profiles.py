@@ -65,8 +65,8 @@ class ProfileTests(unittest.TestCase):
         self.assertIn('.borough-rail{width:100%;position:static;order:1;', css)
         self.assertIn("document.querySelector('.news-main .bar')", js)
         self.assertIn('window.scrollTo({top:', js)
-        self.assertIn('/styles.css?v=20261012-map-hero-natural', home)
-        self.assertIn('/app.js?v=20261012-nav-scroll', home)
+        self.assertIn('/styles.css?v=20261012-topic-swipe', home)
+        self.assertIn('/app.js?v=20261012-topic-swipe', home)
 
 
     def test_illustrated_map_featured_above_news_and_real_transport_layers(self):
@@ -117,6 +117,16 @@ class ProfileTests(unittest.TestCase):
         self.assertIn('data-nav-shift="-1"', home)
         self.assertIn('scroll-snap-type:x proximity', css)
         self.assertIn('function centerNavItem(item)', (ROOT / "app.js").read_text(encoding='utf-8'))
+        self.assertIn('class="news-slide-viewport"', home)
+        self.assertIn('id="news-slide-panel"', home)
+        self.assertIn('id="current-topic"', home)
+        self.assertIn('function animateTopic(direction,token)', (ROOT / "app.js").read_text(encoding='utf-8'))
+        self.assertIn('function animateWhenNewsVisible(direction,token)', (ROOT / "app.js").read_text(encoding='utf-8'))
+        self.assertIn('selectTopic(el.dataset.filter', (ROOT / "app.js").read_text(encoding='utf-8'))
+        self.assertIn('transform:\'translateX(', (ROOT / "app.js").read_text(encoding='utf-8'))
+        self.assertIn('.news-slide-viewport{min-width:0;', css)
+        # Las pestañas aparecen en el mismo orden lógico arriba y en el filtro secundario.
+        self.assertLess(home.index('button class="filter" data-filter="Seguridad"'),home.index('button class="filter" data-filter="Movilidad"'))
 
 
 if __name__ == "__main__":
