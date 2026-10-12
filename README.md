@@ -25,3 +25,29 @@ Los titulares son recopilaciones de medios externos, sin verificación periodís
 Google AdSense utiliza el identificador `ca-pub-6521969406386261`; instalar el script no implica aprobación de la cuenta ni del dominio.
 
 **Importante**: aunque las noticias caducadas se eliminan del sitio público y de la rama activa, el historial previo de commits en GitHub puede contener versiones anteriores. No se purga automáticamente ese historial.
+
+
+## Historias y fotografías de las 16 alcaldías
+
+En la página principal, la columna derecha de alcaldías enlaza a
+\`/alcaldias/?alcaldia=NOMBRE#noticias-alcaldia\`. La antigua cuadrícula de
+tarjetas en la portada de alcaldías ha sido sustituida por una **vista de
+noticias a la izquierda e historia con foto a la derecha**, con un selector
+compacto para cambiar de alcaldía. En móvil, las noticias aparecen primero
+y la historia con su foto está inmediatamente después.
+
+- \`assets/alcaldias/historias.json\`: reseñas históricas originales, lugares
+  destacados y enlaces a fuentes institucionales para las 16 demarcaciones.
+- \`assets/alcaldias/fotos.json\`: autor, licencia, título, origen y pie de foto
+  de 16 fotografías verificadas, una por alcaldía.
+- \`assets/alcaldias/<slug>.jpg\`: fotografías reales locales, redimensionadas
+  para mantener la página rápida, que muestran lugares característicos de
+  cada alcaldía; no representan los acontecimientos de los titulares.
+- \`scripts/fotos_alcaldias.py\`: verifica ubicación preseleccionada, licencia
+  Creative Commons, formato, resolución y descarga fotografías originales
+  de Wikimedia Commons. El workflow se ejecuta al cambiar la selección.
+- \`tests/test_profiles.py\`: comprueba historia, foto y navegación directa.
+
+Los contenidos históricos son síntesis con fuentes enlazadas, no transcripciones
+de artículos ajenos ni reportes periodísticos; el número de noticias por
+alcaldía depende de las menciones explícitas del nombre en los titulares.

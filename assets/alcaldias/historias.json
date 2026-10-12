@@ -1,0 +1,326 @@
+{
+  "version": 1,
+  "description": "Síntesis originales, basadas en fuentes institucionales consultables; las fotografías muestran lugares de la alcaldía, no acontecimientos actuales.",
+  "boroughs": [
+    {
+      "name": "La Magdalena Contreras",
+      "slug": "magdalena-contreras",
+      "eyebrow": "RÍOS, PUEBLOS Y MONTAÑAS",
+      "history": [
+        "La historia de La Magdalena Contreras comenzó mucho antes de la Ciudad de México moderna. Sus pueblos originarios se establecieron en las faldas de la sierra, aprovechando el agua del río Magdalena y las tierras de montaña. Las comunidades desarrollaron tradiciones propias que continúan presentes en sus barrios y celebraciones.",
+        "Durante los siglos XIX y XX, la fuerza del agua impulsó instalaciones textiles e hidroeléctricas en la zona conocida como Los Dinamos. El antiguo paisaje industrial convivió con bosques, senderos y zonas de conservación. Actualmente, lugares como La Magdalena Atlitic y San Nicolás Totolapan ayudan a entender esta mezcla de memoria comunitaria, río y naturaleza."
+      ],
+      "landmarks": [
+        "Los Dinamos y río Magdalena",
+        "Pueblo de La Magdalena Atlitic",
+        "San Nicolás Totolapan"
+      ],
+      "sources": [
+        {
+          "label": "Alcaldía La Magdalena Contreras · Mi Alcaldía",
+          "url": "https://mcontreras.cdmx.gob.mx/mi-alcaldia/"
+        }
+      ]
+    },
+    {
+      "name": "Álvaro Obregón",
+      "slug": "alvaro-obregon",
+      "eyebrow": "SAN ÁNGEL Y LAS VIEJAS HUERTAS",
+      "history": [
+        "Una parte esencial de la historia de Álvaro Obregón está en San Ángel, cuyo antecedente es el asentamiento indígena de Tenanitla. Durante el Virreinato se establecieron templos, conventos y grandes huertas; los carmelitas levantaron el conjunto religioso de El Carmen, mientras el río Magdalena alimentaba antiguos terrenos de cultivo.",
+        "Con el crecimiento de la capital, pueblos y barrios como San Ángel, Chimalistac, Tlacopac y San Bartolo Ameyalco conservaron huellas de distintos tiempos. Las calles empedradas, las plazas y la arquitectura histórica conviven hoy con áreas residenciales, universidades, zonas comerciales y barrancas del poniente."
+      ],
+      "landmarks": [
+        "Plaza San Jacinto",
+        "Museo de El Carmen",
+        "Chimalistac"
+      ],
+      "sources": [
+        {
+          "label": "Secretaría de Turismo CDMX · San Ángel y Chimalistac",
+          "url": "https://mexicocity.cdmx.gob.mx/wp-content/uploads/2026/01/guia_barrios_cdmx.pdf"
+        }
+      ]
+    },
+    {
+      "name": "Azcapotzalco",
+      "slug": "azcapotzalco",
+      "eyebrow": "HERENCIA DEL PODER TEPANECA",
+      "history": [
+        "Azcapotzalco fue uno de los centros políticos más importantes del valle de México antes del dominio mexica. En tiempos prehispánicos fue capital del señorío tepaneca, cuyo poder se extendió por numerosas poblaciones de la región. Su nombre náhuatl suele interpretarse como «en el hormiguero».",
+        "Durante la época colonial surgieron templos y barrios organizados en torno a antiguos pueblos. En el siglo XX se consolidaron industrias, vías de transporte y colonias urbanas. El centro histórico, el Jardín Hidalgo y los antiguos barrios conservan la memoria de esa transición de señorío indígena a una alcaldía industrial y residencial."
+      ],
+      "landmarks": [
+        "Centro histórico de Azcapotzalco",
+        "Jardín Hidalgo",
+        "Antiguos barrios y parroquias"
+      ],
+      "sources": [
+        {
+          "label": "Portal turístico oficial · Azcapotzalco",
+          "url": "https://mexicocity.cdmx.gob.mx/locations/azcapotzalco/?lang=es"
+        }
+      ]
+    },
+    {
+      "name": "Benito Juárez",
+      "slug": "benito-juarez",
+      "eyebrow": "DE PUEBLOS A COLONIAS URBANAS",
+      "history": [
+        "Antes de que existieran las avenidas y colonias actuales, el territorio de Benito Juárez incluía pueblos y terrenos agrícolas como Mixcoac, Xoco y áreas cercanas a la antigua zona lacustre. Los caminos que conectaban el sur con el centro de la capital fueron transformando lentamente su paisaje.",
+        "En el siglo XX se extendieron colonias como Del Valle, Narvarte, Portales y Nápoles. Parques, comercios y viviendas sustituyeron muchas huertas y ladrilleras; el Parque Hundido, por ejemplo, recuerda una antigua actividad de extracción de arcilla. La demarcación reúne así vestigios de pueblos antiguos y el urbanismo de la Ciudad de México moderna."
+      ],
+      "landmarks": [
+        "Parque Hundido",
+        "Pueblo de Mixcoac",
+        "Pueblo de Xoco"
+      ],
+      "sources": [
+        {
+          "label": "Portal turístico oficial · Parque Hundido",
+          "url": "https://mexicocity.cdmx.gob.mx/venues/parque-hundido/?lang=en"
+        }
+      ]
+    },
+    {
+      "name": "Coyoacán",
+      "slug": "coyoacan",
+      "eyebrow": "UN CENTRO HISTÓRICO ENTRE JARDINES",
+      "history": [
+        "Coyoacán tiene un pasado indígena anterior a la conquista española y fue uno de los lugares donde los españoles establecieron sus primeras instituciones en el valle de México. El antiguo pueblo mantuvo plazas, calles, huertas y edificios religiosos, entre ellos el conjunto de San Juan Bautista.",
+        "Con el tiempo, Coyoacán pasó de pueblo y zona de casas de campo a un importante centro cultural y universitario. Sus jardines, el barrio de La Conchita, museos y la Ciudad Universitaria muestran etapas distintas de su historia. Hoy el casco histórico sigue siendo uno de los espacios más reconocibles del sur de la capital."
+      ],
+      "landmarks": [
+        "Jardín Centenario",
+        "Parroquia de San Juan Bautista",
+        "La Conchita"
+      ],
+      "sources": [
+        {
+          "label": "Alcaldía Coyoacán · Historia",
+          "url": "https://coyoacan.cdmx.gob.mx/mapas/HistoriaCoyoacan/historia.php"
+        }
+      ]
+    },
+    {
+      "name": "Cuajimalpa de Morelos",
+      "slug": "cuajimalpa",
+      "eyebrow": "PUEBLOS, BOSQUES Y CAMINOS",
+      "history": [
+        "Cuajimalpa se formó alrededor de comunidades de montaña, bosques y rutas que comunicaban el valle de México con el poniente. Durante la época colonial, el pueblo conservó actividades relacionadas con la tierra y la explotación forestal; en la región se construyeron templos y espacios religiosos.",
+        "El antiguo convento del Desierto de los Leones recuerda esa etapa. En las últimas décadas, los pueblos originarios y las áreas de conservación han convivido con el crecimiento urbano y corporativo de Santa Fe. Su historia se entiende en el contraste entre los caminos rurales, los paisajes boscosos y la ciudad contemporánea."
+      ],
+      "landmarks": [
+        "Centro de Cuajimalpa",
+        "Desierto de los Leones",
+        "San Pablo Chimalpa"
+      ],
+      "sources": [
+        {
+          "label": "Ciudad de México · Historia del periodo colonial",
+          "url": "https://www.mexicocity.cdmx.gob.mx/historical-timeline-of-mexico-city/new-spain-the-colonial-period/"
+        }
+      ]
+    },
+    {
+      "name": "Cuauhtémoc",
+      "slug": "cuauhtemoc",
+      "eyebrow": "EL CORAZÓN HISTÓRICO DE LA CAPITAL",
+      "history": [
+        "El territorio de la actual Cuauhtémoc comprende el centro de la antigua México-Tenochtitlan y parte de Tlatelolco, núcleos fundamentales de la historia prehispánica. Después de la conquista, la ciudad virreinal se levantó sobre importantes espacios de la antigua capital mexica y conservó una concentración de edificios civiles y religiosos.",
+        "En los siglos XIX y XX se desarrollaron zonas como Juárez, Roma y Condesa, junto a mercados, estaciones y nuevos corredores culturales. El Zócalo, el Templo Mayor, Bellas Artes y la Plaza de las Tres Culturas permiten recorrer distintas etapas en una misma demarcación."
+      ],
+      "landmarks": [
+        "Centro Histórico",
+        "Palacio de Bellas Artes",
+        "Tlatelolco"
+      ],
+      "sources": [
+        {
+          "label": "Alcaldía Cuauhtémoc · Conócenos",
+          "url": "https://cuauhtemoc.cdmx.gob.mx/inicio/conocenos/"
+        }
+      ]
+    },
+    {
+      "name": "Gustavo A. Madero",
+      "slug": "gustavo-a-madero",
+      "eyebrow": "TEPEYAC Y LA VILLA DE GUADALUPE",
+      "history": [
+        "La historia del norte de la capital está marcada por antiguos pueblos cercanos al cerro del Tepeyac y por la formación de la Villa de Guadalupe. Con el paso de los siglos, este santuario se convirtió en uno de los centros de peregrinación más conocidos de México, transformando caminos y asentamientos del entorno.",
+        "En los siglos XIX y XX llegaron el ferrocarril, fábricas y nuevas colonias, especialmente al crecer la ciudad hacia el norte. Hoy la Basílica, el cerro del Tepeyac, los barrios históricos y la Sierra de Guadalupe representan la convivencia entre memoria religiosa, actividad urbana y naturaleza."
+      ],
+      "landmarks": [
+        "Basílica de Guadalupe",
+        "Cerro del Tepeyac",
+        "Sierra de Guadalupe"
+      ],
+      "sources": [
+        {
+          "label": "Portal turístico CDMX · Antigua Villa de Guadalupe",
+          "url": "https://mexicocity.cdmx.gob.mx/venues/sorrowful-mystery-3/"
+        }
+      ]
+    },
+    {
+      "name": "Iztacalco",
+      "slug": "iztacalco",
+      "eyebrow": "DE LOS ISLOTES A LA CIUDAD",
+      "history": [
+        "Iztacalco estuvo ligado a los islotes, canales y chinampas del antiguo lago de Texcoco. Sus habitantes aprovecharon el agua para cultivar, pescar y comerciar. El antiguo pueblo de San Matías Iztacalco y sus barrios conservan la memoria de esa organización comunitaria.",
+        "Después de la conquista se establecieron templos y se mantuvo una vida relacionada con los canales, especialmente con el histórico Paseo de la Viga. El avance de avenidas, industrias y zonas habitacionales durante el siglo XX cambió profundamente el paisaje. Actualmente, sus pueblos y templos recuerdan el origen lacustre de esta parte de la ciudad."
+      ],
+      "landmarks": [
+        "Templo de San Matías",
+        "Barrios originarios",
+        "Antiguo canal de La Viga"
+      ],
+      "sources": [
+        {
+          "label": "Alcaldía Iztacalco · Antecedentes históricos",
+          "url": "https://www.iztacalco.cdmx.gob.mx/pdf/normatividad/Manual_Administrativo_Izta_1145-_MA-IZC-23-443F7BAF.pdf"
+        }
+      ]
+    },
+    {
+      "name": "Iztapalapa",
+      "slug": "iztapalapa",
+      "eyebrow": "MEMORIA DEL CERRO DE LA ESTRELLA",
+      "history": [
+        "Iztapalapa fue un asentamiento importante en la época prehispánica y su historia está vinculada con los pueblos lacustres del oriente del valle de México. El Cerro de la Estrella conserva una fuerte relación con ceremonias antiguas, entre ellas el Fuego Nuevo, y sigue siendo una referencia territorial y cultural.",
+        "Durante la colonia se consolidaron templos y barrios; posteriormente, el crecimiento de la ciudad transformó grandes extensiones de cultivo y antiguos caminos. La representación de la Semana Santa, los ocho barrios tradicionales y las iniciativas culturales de sus comunidades han dado a Iztapalapa una identidad reconocida en toda la capital."
+      ],
+      "landmarks": [
+        "Cerro de la Estrella",
+        "Santuario de La Cuevita",
+        "Ocho barrios históricos"
+      ],
+      "sources": [
+        {
+          "label": "Alcaldía Iztapalapa · Memoria e historia",
+          "url": "https://www.iztapalapa.cdmx.gob.mx/semana_santa_2026/alcaldia.html"
+        }
+      ]
+    },
+    {
+      "name": "Miguel Hidalgo",
+      "slug": "miguel-hidalgo",
+      "eyebrow": "CHAPULTEPEC Y LA ANTIGUA TACUBAYA",
+      "history": [
+        "Mucho antes de la ciudad moderna, Chapultepec y Tacubaya eran lugares importantes por su agua, su ubicación y sus caminos. Durante la colonia y el siglo XIX, Tacubaya se convirtió en un sitio de huertas, residencias y conexiones de transporte con el centro. Chapultepec tuvo funciones ceremoniales, militares, políticas y recreativas en distintos periodos.",
+        "Con el crecimiento urbano surgieron zonas como Polanco, Anzures y colonias alrededor de Tacubaya. El Bosque de Chapultepec, sus museos y el antiguo castillo se cuentan entre los principales testimonios de esta evolución. La alcaldía combina pueblos históricos, parques, vida cultural y barrios de distintas épocas."
+      ],
+      "landmarks": [
+        "Bosque de Chapultepec",
+        "Castillo de Chapultepec",
+        "Tacubaya"
+      ],
+      "sources": [
+        {
+          "label": "Portal turístico CDMX · Historia de Tacubaya",
+          "url": "https://www.mexicocity.cdmx.gob.mx/venues/metro-tacubaya/"
+        }
+      ]
+    },
+    {
+      "name": "Milpa Alta",
+      "slug": "milpa-alta",
+      "eyebrow": "PUEBLOS ORIGINARIOS Y CULTIVOS",
+      "history": [
+        "Milpa Alta conserva una de las presencias comunitarias y rurales más importantes de la Ciudad de México. Sus raíces se relacionan con el antiguo territorio de Malacachtépec Momoxco y con pueblos de tradiciones nahuas. Los cerros, bosques y tierras de cultivo han marcado la organización del territorio desde hace siglos.",
+        "Después de la llegada española se reorganizaron los asentamientos y se edificaron templos. En la actualidad, las fiestas patronales, los pueblos originarios, la producción de nopal y las prácticas comunitarias mantienen viva una parte esencial de su patrimonio cultural. Sus paisajes muestran una faceta de la capital distinta de las zonas más urbanizadas."
+      ],
+      "landmarks": [
+        "Villa Milpa Alta",
+        "San Pablo Oztotepec",
+        "Campos de nopal"
+      ],
+      "sources": [
+        {
+          "label": "Alcaldía Milpa Alta · Semblanza histórica",
+          "url": "https://www.milpa-alta.cdmx.gob.mx/transparencia/alcaldiavin/DGA/2019/PROGRAMADEGOBIERNOMLPAALTA.pdf"
+        }
+      ]
+    },
+    {
+      "name": "Tláhuac",
+      "slug": "tlahuac",
+      "eyebrow": "CANALES Y SIETE PUEBLOS",
+      "history": [
+        "Tláhuac se desarrolló entre los antiguos lagos de Chalco y Xochimilco. Sus pueblos aprovecharon el ambiente lacustre mediante canales, cultivos y chinampas. San Pedro Tláhuac y las comunidades del entorno conservan huellas de esa relación con el agua.",
+        "Los siete pueblos originarios mantienen tradiciones, templos, festividades y formas de vida comunitaria. Entre ellos destaca San Andrés Mixquic por sus celebraciones de Día de Muertos y su patrimonio histórico. A pesar de los cambios urbanos, todavía subsisten zonas chinamperas que conectan a la alcaldía con su pasado agrícola."
+      ],
+      "landmarks": [
+        "San Pedro Tláhuac",
+        "San Andrés Mixquic",
+        "Canales y chinampas"
+      ],
+      "sources": [
+        {
+          "label": "Alcaldía Tláhuac · Siete pueblos originarios",
+          "url": "https://www.tlahuac.cdmx.gob.mx/los-7-pueblos-originarios/"
+        }
+      ]
+    },
+    {
+      "name": "Tlalpan",
+      "slug": "tlalpan",
+      "eyebrow": "DEL ANTIGUO CUICUILCO AL AJUSCO",
+      "history": [
+        "El territorio de Tlalpan guarda una historia muy antigua. En Cuicuilco se desarrolló uno de los grandes asentamientos tempranos del valle de México, reconocido por su basamento circular. Los cambios del paisaje volcánico, los caminos y los antiguos pueblos dieron forma a las comunidades del sur.",
+        "Durante el periodo colonial y el siglo XIX, San Agustín de las Cuevas se convirtió en un centro de la región, hoy conocido como el centro histórico de Tlalpan. La demarcación también conserva amplias áreas forestales vinculadas al Ajusco y numerosos pueblos tradicionales, junto a barrios que crecieron con la ciudad moderna."
+      ],
+      "landmarks": [
+        "Zona arqueológica de Cuicuilco",
+        "Centro histórico de Tlalpan",
+        "Ajusco"
+      ],
+      "sources": [
+        {
+          "label": "Alcaldía Tlalpan · Historia",
+          "url": "https://tlalpan.cdmx.gob.mx/historia-/"
+        }
+      ]
+    },
+    {
+      "name": "Venustiano Carranza",
+      "slug": "venustiano-carranza",
+      "eyebrow": "MERCADOS, FERROCARRILES Y ARCHIVO",
+      "history": [
+        "El territorio que hoy forma Venustiano Carranza creció a partir de barrios, rutas de comercio y áreas del antiguo oriente de la ciudad. Lugares como La Merced y Jamaica fueron fundamentales para el intercambio de productos y la llegada de mercancías desde distintas regiones.",
+        "En los siglos XIX y XX se construyeron infraestructuras que transformaron la zona: estaciones, mercados, vías de transporte y el Palacio de Lecumberri, que pasó de prisión a sede del Archivo General de la Nación. La actual demarcación también alberga el aeropuerto capitalino. Su historia muestra el cambio de barrios comerciales a una parte clave del movimiento cotidiano de la metrópoli."
+      ],
+      "landmarks": [
+        "Palacio de Lecumberri",
+        "Mercado de La Merced",
+        "Mercado de Jamaica"
+      ],
+      "sources": [
+        {
+          "label": "Gobierno CDMX · Conoce Venustiano Carranza",
+          "url": "https://www.jefaturadegobierno.cdmx.gob.mx/comunicacion/nota/conoce-la-alcaldia-venustiano-carranza"
+        }
+      ]
+    },
+    {
+      "name": "Xochimilco",
+      "slug": "xochimilco",
+      "eyebrow": "TIERRA DE CHINAMPAS Y CANALES",
+      "history": [
+        "Xochimilco fue uno de los centros poblados más importantes del antiguo paisaje lacustre del sur del valle de México. Los pueblos xochimilcas desarrollaron un sistema agrícola de chinampas, terrenos construidos y cultivados en el agua, que permitió aprovechar la fertilidad de los lagos y canales.",
+        "Durante la colonia se construyeron templos y conventos, pero continuaron prácticas agrícolas y tradiciones locales. Hoy las trajineras, los canales y pueblos como Santa Cruz Acalpixca y San Gregorio Atlapulco recuerdan esa historia. Xochimilco, junto con el Centro Histórico de la capital, fue reconocido como Patrimonio Mundial en 1987."
+      ],
+      "landmarks": [
+        "Canales y trajineras",
+        "Chinampas",
+        "Templo de San Bernardino"
+      ],
+      "sources": [
+        {
+          "label": "Alcaldía Xochimilco · Historia",
+          "url": "https://www.xochimilco.cdmx.gob.mx/historia/"
+        }
+      ]
+    }
+  ]
+}
