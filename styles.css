@@ -444,6 +444,9 @@ footer a{color:#ffc3df}
  border-radius:9px;font-size:24px;font-weight:750;line-height:1;padding:3px 0 6px
 }
 .nav-carousel .nav-arrow:hover{background:#4a304a}
+.nav-carousel.is-overflowing{grid-template-columns:30px minmax(0,1fr) 30px;gap:8px;padding-bottom:7px}
+.nav-carousel.is-overflowing .nav-arrow{display:block}
+.nav-carousel.is-overflowing nav{padding-bottom:0}
 @media(max-width:900px){
  .nav-carousel{grid-template-columns:30px minmax(0,1fr) 30px;gap:8px;padding-bottom:7px}
  .nav-carousel .nav-arrow{display:block}
