@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-12 14:40 UTC",
+  "updated": "2026-10-12 15:36 UTC",
   "boroughs": [
     {
       "name": "La Magdalena Contreras",
@@ -158,8 +158,19 @@
     },
     {
       "name": "Azcapotzalco",
-      "count": 7,
+      "count": 8,
       "articles": [
+        {
+          "title": "¡De 5 balazos! Joven es asesinado en calles de la colonia Nueva Santa María, Azcapotzalco",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQZ2dVSTd6LWtmTUgxdGFmRXlHMF9fT0hlUVJseVVJQkg3THBiYTI3bVgwU0ZEcHZQc01NV2pHQkJtdndaaTVpV2lSZHBJS3NVcVY3aVFySXBPNEY4ZzRkTF9hRHN0NUQ4eEU5NVl1RHpHSHlfTWh3ZTZMaGlXdmx2Q3drdlJFYU0zSFJ1b3ltTDdPckhnZlFrWDl0VHBfTTDSAZ8BQVVfeXFMT3dLV0RoQ3lkak1lWk4tenRvVjh2UGZEVy02ZHUwanNscnNzZWJOcWEwbVlmdGtDclF4RHNkcXRDeGUtSkRxNVMwLTVrZUZIRnQtQ2I5RnZXOEE3Q0g3RGpiQXpqRFJrVm1ac2VtX3M3bGlIaHNhNy1EVERZTDZxbGgxVFo1c2g5aVB1U3ZWQXoxaG9hdVJyMzVLQVpBSHdz?oc=5",
+          "source": "Telediario",
+          "date": "2026-10-12",
+          "published_at": "2026-10-12T15:08:00Z",
+          "category": "CDMX",
+          "borough": "Azcapotzalco",
+          "location": "Azcapotzalco (mencionada en el titular)"
+        },
         {
           "title": "Madrugada de ataques armados en CDMX: Muere un hombre en la alcaldía Azcapotzalco",
           "description": "Consulta los detalles y las actualizaciones en el medio original.",
@@ -418,10 +429,21 @@
     },
     {
       "name": "Cuajimalpa de Morelos",
-      "count": 3,
+      "count": 4,
       "articles": [
         {
           "title": "Carta para el Mtro. Carlos Orvañanos Rea, alcalde de Cuajimalpa de Morelos",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOUkNZdkJYWW1KaGpuNEVNS1JWQTVnMlhGZ0U2UDE0dW9sRW9RQXc0OTFfLXJZRUpZc0RXWHg0RGNnOGdET3BtSWJBRFB1TWFWS0V0VkhqZjExMnBPX3FNYVBVT0d3aVdUZ2pmMXl5SXpqRWZHcFNMZzYtd2l4LXdsMVE3UkVOUlBRZFhGdjI5SHFpU0pxdUxLcVVZSThaUEdpQXVQZDJvWWRFb1FGRkE?oc=5",
+          "source": "sdpnoticias",
+          "date": "2026-10-12",
+          "published_at": "2026-10-12T10:00:00Z",
+          "category": "CDMX",
+          "borough": "Cuajimalpa de Morelos",
+          "location": "Cuajimalpa de Morelos (mencionada en el titular)"
+        },
+        {
+          "title": "Carta para el maestro Carlos Orvañanos Rea, alcalde de Cuajimalpa de Morelos",
           "description": "Consulta los detalles y las actualizaciones en el medio original.",
           "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOUkNZdkJYWW1KaGpuNEVNS1JWQTVnMlhGZ0U2UDE0dW9sRW9RQXc0OTFfLXJZRUpZc0RXWHg0RGNnOGdET3BtSWJBRFB1TWFWS0V0VkhqZjExMnBPX3FNYVBVT0d3aVdUZ2pmMXl5SXpqRWZHcFNMZzYtd2l4LXdsMVE3UkVOUlBRZFhGdjI5SHFpU0pxdUxLcVVZSThaUEdpQXVQZDJvWWRFb1FGRkE?oc=5",
           "source": "sdpnoticias",
@@ -750,7 +772,7 @@
     },
     {
       "name": "Iztapalapa",
-      "count": 8,
+      "count": 9,
       "articles": [
         {
           "title": "Regalan 5 mil desayunos en festival del Día Del Huevo en Iztapalapa",
@@ -814,6 +836,17 @@
           "source": "Ahora Tabasco Noticias",
           "date": "2026-10-09",
           "published_at": "2026-10-09T21:48:21Z",
+          "category": "CDMX",
+          "borough": "Iztapalapa",
+          "location": "Iztapalapa (mencionada en el titular)"
+        },
+        {
+          "title": "Encapuchados irrumpen en el Colegio de Bachilleres 6, en Iztapalapa, y detonan petardos; se suspenden clases",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMilgJBVV95cUxOOXNDTlRjSktJYmJFSGdGdFpEamR0Q0VhWUUxaUZlYnBiMkNIY1c4LWJQTWFVTml6bS0xdGVlZk53YUxaRE4xMUllcTRoY0NTNmYyaWxLbnBJY2hYeDhEcXdyYW5zVHY3aENGVU84c19RVEJXQkRFc2lFQ3U2QXFFbVBPTHVOWFUzb1liYzZpQkRSS0QwMnY1TUpndU5IWnc3Vm5jQ21tVDdFRFdSTW9fTmV3Q21wX3p3RHhuSHNSbWdJSkRIM081UHkyZkFOWl9TeXFPSFB1aXB4QVg1TVpWUXVNSDVCVWJxTl9zY1RQalFvR0pNMGF4enJrcDlabnQxU3pwWFRsb2JFUHIwSDMyMEpHejd6Zw?oc=5",
+          "source": "Reporte Indigo",
+          "date": "2026-10-09",
+          "published_at": "2026-10-09T21:48:03Z",
           "category": "CDMX",
           "borough": "Iztapalapa",
           "location": "Iztapalapa (mencionada en el titular)"
@@ -894,7 +927,7 @@
     },
     {
       "name": "Milpa Alta",
-      "count": 20,
+      "count": 21,
       "articles": [
         {
           "title": "Inauguran novena Utopía en Milpa Alta con inversión de 190 millones de pesos y servicios gratuitos",
@@ -926,6 +959,17 @@
           "date": "2026-10-11",
           "published_at": "2026-10-12T04:27:00Z",
           "category": "Gobierno",
+          "borough": "Milpa Alta",
+          "location": "Milpa Alta (mencionada en el titular)"
+        },
+        {
+          "title": "Inaugura Clara Brugada Utopía en Milpa Alta; propone instalar ahí el primer Sistema Universal de Salud",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOM1NFeE5GMVAzLUt0SkxLV0M0bXdEd1ZBUkhxclJJcWlMT1RIVHl3d1FkM2M0YjdBaXlJN0hWWWYwSXYxN291WHRCSlg4b2lVR1VjQlVoTHozRlV5Szk5bDRJcHBRczd4UllIMEdzOVlHeUFFRUdQOHYyQzNJNHR2Y0VEeHUydjdSMl9ZdkZwbTBwSGxDOVNwdFpqdy0ycWR6THRrNVc0MHV5dFJZeHV0bml3X3dDWjRoX1Y0M1dodFJuUUl2bENEVHZqWl9tX0k?oc=5",
+          "source": "W Radio México",
+          "date": "2026-10-11",
+          "published_at": "2026-10-12T04:21:51Z",
+          "category": "CDMX",
           "borough": "Milpa Alta",
           "location": "Milpa Alta (mencionada en el titular)"
         },
@@ -1148,7 +1192,7 @@
     },
     {
       "name": "Tlalpan",
-      "count": 15,
+      "count": 16,
       "articles": [
         {
           "title": "Bomberos Controlaron Fuga de Gas en un Tanque en Tlalpan, CDMX",
@@ -1223,6 +1267,17 @@
           "source": "TV Azteca",
           "date": "2026-10-09",
           "published_at": "2026-10-09T23:32:22Z",
+          "category": "CDMX",
+          "borough": "Tlalpan",
+          "location": "Tlalpan (mencionada en el titular)"
+        },
+        {
+          "title": "Microsismo Magnitud 2.2 Sacude la Alcaldía Tlalpan; ¿Sonó la Alerta Sísmica en CDMX?",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOWmVMRWtKM0dnanpLODB1XzA2d20yeUVBeUVGMGRCNDUwTFltV2w2cGdNeWdNQmc4eXl1VDJRcEhXanJBeGgzWExmNXktVEl6eEZhcF9qMFNTcUNBc1V4dHZ3MmRfSXJ5YTE2TmUzaWp4TXo2bEFxNnU5MDBBdkowVm9uVlR5ME9kZ1lTMXV0bC1rcWg3eHNaNkVBNHJYQ3QxQ1BIYW5vUnc?oc=5",
+          "source": "N+",
+          "date": "2026-10-09",
+          "published_at": "2026-10-09T23:28:55Z",
           "category": "CDMX",
           "borough": "Tlalpan",
           "location": "Tlalpan (mencionada en el titular)"
