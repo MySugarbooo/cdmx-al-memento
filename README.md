@@ -51,3 +51,13 @@ y la historia con su foto está inmediatamente después.
 Los contenidos históricos son síntesis con fuentes enlazadas, no transcripciones
 de artículos ajenos ni reportes periodísticos; el número de noticias por
 alcaldía depende de las menciones explícitas del nombre en los titulares.
+
+## Mapa ilustrado de la Ciudad de México
+
+- Portada: tarjeta clicable en la columna derecha, antes de las alcaldías. En móvil, las noticias siguen primero.
+- Página completa: `/mapa/`, mapa Leaflet con base CARTO/OSM de apariencia suave, zoom, búsqueda de 11 monumentos representados con estampas SVG dibujadas para el proyecto.
+- Capas con geometrías de referencia del **Atlas Público de Movilidad Integrada de SIGIRPC CDMX** (FeatureServer): Metro, Metrobús, RTP, Trolebús, Tren Ligero, Cablebús y transporte concesionado (corredores/servicios zonales).
+- `functions/api/transporte.js`: función de Cloudflare Pages, consulta y limita la respuesta del servicio público. Si la función no está desplegada, el navegador intenta acceder directamente al atlas (sujeto a CORS).
+- Los trazados son históricos/cartográficos de referencia: NO son seguimiento de camiones ni horarios en tiempo real. No se garantiza cobertura exhaustiva de microbuses/combis y las rutas pueden haber cambiado.
+- La tarjeta mini `/mapa/mini.svg` es puramente ilustrativa, no un plano geográfico.
+- Uso de datos sujetos a atribución: `https://serviciosatlas.sgirpc.cdmx.gob.mx/arcgis/rest/services/AtlasCapasPublicas/Movilidad_Integrada_CDMX/FeatureServer`; mapas de fondo © OpenStreetMap contributors y © CARTO.
