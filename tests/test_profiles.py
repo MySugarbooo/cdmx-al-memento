@@ -54,5 +54,20 @@ class ProfileTests(unittest.TestCase):
         self.assertIn("url.hash='#noticias-alcaldia'", js)
 
 
+    def test_mobile_topic_tabs_scroll_to_news_not_borough_menu(self):
+        home = (ROOT / "index.html").read_text(encoding="utf-8")
+        css = (ROOT / "styles.css").read_text(encoding="utf-8")
+        js = (ROOT / "app.js").read_text(encoding="utf-8")
+        self.assertIn('href="#noticias" data-filter=""', home)
+        self.assertIn('href="#noticias" data-filter="Metro"', home)
+        self.assertIn('href="#noticias" data-filter="Seguridad"', home)
+        self.assertIn('.news-main{width:100%;order:0}', css)
+        self.assertIn('.borough-rail{width:100%;position:static;order:1;', css)
+        self.assertIn("document.querySelector('.news-main .bar')", js)
+        self.assertIn('window.scrollTo({top:', js)
+        self.assertIn('/styles.css?v=20261012-tabs2', home)
+        self.assertIn('/app.js?v=20261012-tabs2', home)
+
+
 if __name__ == "__main__":
     unittest.main()
