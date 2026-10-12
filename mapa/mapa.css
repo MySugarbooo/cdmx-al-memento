@@ -118,3 +118,7 @@ body.mapa-expandido{overflow:hidden}
 .mapa-frame.mapa-ampliado .mapa-ampliar{top:max(14px,env(safe-area-inset-top));left:15px}
 .mapa-frame.mapa-ampliado .mapa-sticker{top:max(14px,env(safe-area-inset-top))}
 @media(max-width:550px){.mapa-frame .mapa-ampliar{top:10px;left:10px;padding:8px 10px;font-size:10px}.mapa-frame:not(.mapa-ampliado) .mapa-sticker{top:auto;right:auto;left:9px;bottom:25px}}
+
+/* Capa de parques y áreas naturales. */
+.capa-punto.naturaleza{background:#4bbd8b}
+.mapa-lugar:focus-visible{outline:2px solid #b8f9cb;outline-offset:2px}
