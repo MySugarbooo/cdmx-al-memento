@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="es"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Vista previa del mapa de Ciudad de México</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css">
+<style>
+html,body,#mini-mapa{margin:0;width:100%;height:100%;overflow:hidden;background:#f3ede0}
+.leaflet-container{background:#f3ede0}
+.leaflet-tile-pane{filter:saturate(.85) contrast(.91) sepia(.14)}
+.leaflet-control-attribution{font-size:8px!important;background:#fff8edec!important;white-space:nowrap}
+.mini-monumento{border:2px solid #6c395d;border-radius:12px;background:#fff3dd;box-shadow:3px 3px 0 #aa6a90bb;display:flex;align-items:center;justify-content:center;width:28px;height:28px;font-size:17px}
+</style>
+</head><body>
+<div id="mini-mapa" role="img" aria-label="Vista del mapa real de Ciudad de México con monumentos y líneas del transporte"></div>
+<script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+(()=>{
+ if(!window.L){document.getElementById('mini-mapa').style.background='center/cover no-repeat url("/mapa/mini.svg")';return}
+ const map=L.map('mini-mapa',{zoomControl:false,attributionControl:true,dragging:false,touchZoom:false,doubleClickZoom:false,scrollWheelZoom:false,boxZoom:false,keyboard:false,tap:false,preferCanvas:true,zoomSnap:.1})
+  .setView([19.41,-99.145],10.8);
+ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{
+  maxZoom:19,attribution:'&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">OpenStreetMap</a> contributors'
+ }).addTo(map);
+ const spots=[
+  [19.4352,-99.1412,'🎭'],[19.4364,-99.1546,'🏛️'],
+  [19.4270,-99.1677,'✨'],[19.4326,-99.1317,'🇲🇽'],
+  [19.4205,-99.1819,'🏰'],[19.4848,-99.1170,'⛪']
+ ];
+ spots.forEach(([lat,lng,icon])=>{
+  L.marker([lat,lng],{interactive:false,keyboard:false,icon:L.divIcon({
+   className:'',html:'<span class="mini-monumento">'+icon+'</span>',iconSize:[28,28],iconAnchor:[14,26]
+  })}).addTo(map);
+ });
+ // Vista real, reducida: no se dibujan rutas ficticias.
+ const controls=document.querySelector('.leaflet-control-container');
+ if(controls)controls.style.pointerEvents='none';
+})();
+</script></body></html>
