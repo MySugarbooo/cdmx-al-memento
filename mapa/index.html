@@ -1,14 +1,14 @@
 <!doctype html>
 <html lang="es"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Mapa ilustrado de CDMX | Metro, Metrobús, camiones y monumentos</title>
-<meta name="description" content="Explora un mapa interactivo e ilustrado de Ciudad de México: rutas del Metro, Metrobús, Tren Ligero, Cablebús, RTP, Trolebús y camiones; descubre monumentos y sitios históricos.">
+<title>Mapa ilustrado CDMX | Transporte, monumentos y áreas naturales</title>
+<meta name="description" content="Explora un mapa interactivo e ilustrado de Ciudad de México: rutas del Metro, Metrobús, Tren Ligero, Cablebús, RTP, Trolebús y camiones; descubre monumentos, Los Dinamos y áreas naturales.">
 <link rel="canonical" href="https://cdmx-al-memento.pages.dev/mapa/">
 <meta name="theme-color" content="#101116">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="stylesheet" href="/styles.css?v=20261012-map1">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css">
-<link rel="stylesheet" href="/mapa/mapa.css?v=2">
+<link rel="stylesheet" href="/mapa/mapa.css?v=3">
 <meta property="og:type" content="website"><meta property="og:title" content="CDMX en un mapa ilustrado · CDMX AL MEMENTO"><meta property="og:url" content="https://cdmx-al-memento.pages.dev/mapa/">
 </head>
 <body class="mapa-body">
@@ -19,8 +19,8 @@
 <section class="mapa-hero"><div>
 <p class="eyebrow">EXPLORA · CIUDAD DE MÉXICO</p>
 <h1>Una ciudad, <span>mil caminos.</span> 🗺️</h1>
-<p>Viaja por la capital con rutas de transporte sobre el mapa y monumentos dibujados como pequeñas estampas. Activa las líneas que quieras explorar, toca los lugares y descubre su historia.</p>
-<div class="mapa-hero-chips"><span>🚇 Metro</span><span>🚌 Metrobús y camiones</span><span>🚡 Cablebús</span><span>🏛️ Monumentos</span></div>
+<p>Viaja por la capital con rutas de transporte, monumentos dibujados y áreas naturales como Los Dinamos. Activa las capas que quieras explorar, toca los lugares y conoce más sobre ellos.</p>
+<div class="mapa-hero-chips"><span>🚇 Metro</span><span>🚌 Metrobús y camiones</span><span>🚡 Cablebús</span><span>🏛️ Monumentos</span><span>🌿 Áreas naturales</span></div>
 </div><div class="mapa-hero-badge"><span>EDICIÓN ILUSTRADA</span><strong>CDMX</strong><span>RUTAS + CULTURA</span></div></section>
 <div class="mapa-layout">
 <aside class="mapa-panel" aria-label="Filtros y sitios turísticos">
@@ -34,21 +34,22 @@
   <label class="mapa-capa"><input type="checkbox" value="rtp"><span class="capa-punto rtp"></span><span><strong>Camiones RTP</strong><small>Rutas públicas del atlas</small></span></label>
   <label class="mapa-capa"><input type="checkbox" value="camiones"><span class="capa-punto camiones"></span><span><strong>Camiones concesionados</strong><small>Corredores y servicios zonales</small></span></label>
   <label class="mapa-capa"><input type="checkbox" value="monumentos" checked><span class="capa-punto monumentos"></span><span><strong>Monumentos ilustrados</strong><small>Pincha sus estampas</small></span></label>
+  <label class="mapa-capa"><input type="checkbox" value="naturaleza" checked><span class="capa-punto naturaleza"></span><span><strong>Áreas naturales</strong><small>Los Dinamos y bosques</small></span></label>
  </div>
  <p id="mapa-status" class="mapa-status" role="status" aria-live="polite">Preparando mapa y trazados…</p>
- <div class="mapa-panel-buttons"><button type="button" id="solo-monumentos">Solo monumentos</button><button type="button" id="todas-capitas">Restablecer</button></div>
- <div class="mapa-sites"><h2>📍 Sitios para descubrir</h2><label class="mapa-search-label" for="mapa-buscar">Buscar un monumento</label><input id="mapa-buscar" type="search" placeholder="Ej. Bellas Artes…" autocomplete="off">
+ <div class="mapa-panel-buttons"><button type="button" id="solo-monumentos">Solo lugares</button><button type="button" id="todas-capitas">Restablecer</button></div>
+ <div class="mapa-sites"><h2>📍 Sitios para descubrir</h2><label class="mapa-search-label" for="mapa-buscar">Buscar monumentos o áreas naturales</label><input id="mapa-buscar" type="search" placeholder="Ej. Los Dinamos…" autocomplete="off">
  <div id="mapa-lugares" class="mapa-sites-list"></div></div>
 </aside>
 <div class="mapa-view-wrap">
  <div class="mapa-view-head"><div><p class="eyebrow">EL MAPA DE NUESTRA CIUDAD</p><h2>Ciudad de México <span class="pink-mark">.</span></h2></div><button id="mapa-centrar" type="button">⌖ Ver toda la ciudad</button></div>
  <div class="mapa-frame">
  <button type="button" id="mapa-ampliar" class="mapa-ampliar" aria-pressed="false" aria-label="Ampliar mapa de Ciudad de México">⤢ Ver mapa grande</button>
- <div id="mapa-interactivo" aria-label="Mapa interactivo con rutas y monumentos de Ciudad de México" role="application"></div>
+ <div id="mapa-interactivo" aria-label="Mapa interactivo con rutas, monumentos y áreas naturales de Ciudad de México" role="application"></div>
  <div class="mapa-sticker" aria-hidden="true">HECHO PARA EXPLORAR ✦</div>
  </div>
- <div class="mapa-controls-note">Pulsa «Ver mapa grande» para expandirlo a toda la pantalla. 👆 Arrastra para moverte · Haz zoom con los botones + y − · Toca una ruta para identificarla · Toca una estampa para ver el monumento.</div>
- <div class="mapa-legend"><strong>Colores en el mapa</strong><span>🌸 Metro por línea</span><span>🟣 Metrobús por línea</span><span>🟢 Transporte eléctrico</span><span>🔵 RTP y camiones</span><span>🏛️ Monumentos</span></div>
+ <div class="mapa-controls-note">Pulsa «Ver mapa grande» para expandirlo a toda la pantalla. 👆 Arrastra para moverte · Haz zoom con los botones + y − · Toca una ruta para identificarla · Toca un monumento o un árbol para conocer el lugar.</div>
+ <div class="mapa-legend"><strong>Colores en el mapa</strong><span>🌸 Metro por línea</span><span>🟣 Metrobús por línea</span><span>🟢 Transporte eléctrico</span><span>🔵 RTP y camiones</span><span>🏛️ Monumentos</span><span>🌿 Áreas naturales</span></div>
 </div>
 </div>
 <section class="mapa-about notice">
@@ -58,5 +59,5 @@
 </main>
 <footer><div class="wrap">© 2026 CDMX AL MEMENTO · Mapa informativo ilustrado · Datos de SIGIRPC y cartografía © colaboradores de OpenStreetMap. <p><a href="/sobre-nosotros.html">Sobre nosotros</a><a href="/privacidad.html">Privacidad</a><a href="/politica-editorial.html">Política editorial</a><a href="/contacto.html">Contacto</a></p></div></footer>
 <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js" defer></script>
-<script src="/mapa/mapa.js?v=2" defer></script>
+<script src="/mapa/mapa.js?v=3" defer></script>
 </body></html>
