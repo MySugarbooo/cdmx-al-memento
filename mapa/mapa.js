@@ -28,7 +28,15 @@
   {id:'xochimilco',name:'Embarcadero de Nativitas',kind:'trajineras',emoji:'🛶',lat:19.2546,lng:-99.0996,area:'Xochimilco',info:'Punto de partida de trajineras para recorrer los canales tradicionales.'},
   {id:'unam',name:'Biblioteca Central UNAM',kind:'biblioteca',emoji:'📚',lat:19.3319,lng:-99.1871,area:'Ciudad Universitaria · Coyoacán',info:'Biblioteca reconocida por sus mosaicos monumentales de Juan O’Gorman.'},
   {id:'soumaya',name:'Museo Soumaya',kind:'soumaya',emoji:'🖼️',lat:19.4406,lng:-99.2047,area:'Nuevo Polanco · Miguel Hidalgo',info:'Museo de arte distinguido por su fachada curvada de hexágonos brillantes.'},
-  {id:'catedral',name:'Catedral Metropolitana',kind:'catedral',emoji:'⛪',lat:19.4352,lng:-99.1334,area:'Zócalo · Cuauhtémoc',info:'Catedral frente al Zócalo, con dos torres y siglos de historia arquitectónica.'}
+  {id:'catedral',name:'Catedral Metropolitana',kind:'catedral',emoji:'⛪',lat:19.4352,lng:-99.1334,area:'Zócalo · Cuauhtémoc',info:'Catedral frente al Zócalo, con dos torres y siglos de historia arquitectónica.'},
+  {id:'los-dinamos',type:'natural',name:'Parque Los Dinamos',kind:'naturaleza',emoji:'🌲',lat:19.2959,lng:-99.2555,area:'La Magdalena Contreras · Río Magdalena',info:'Bosque de oyamel y encino junto al Río Magdalena, con senderos y cascadas. Marcador de referencia, no acceso único.'},
+  {id:'desierto-leones',type:'natural',name:'Desierto de los Leones',kind:'naturaleza',emoji:'🌳',lat:19.295,lng:-99.312778,area:'Cuajimalpa y Álvaro Obregón',info:'Parque nacional de bosque templado y senderos. Punto aproximado del área protegida.'},
+  {id:'bosque-tlalpan',type:'natural',name:'Bosque de Tlalpan',kind:'naturaleza',emoji:'🌿',lat:19.291111,lng:-99.199167,area:'Tlalpan',info:'Área natural protegida con senderos y vegetación del Pedregal. Marcador de referencia.'},
+  {id:'cumbres-ajusco',type:'natural',name:'Cumbres del Ajusco',kind:'naturaleza',emoji:'⛰️',lat:19.21,lng:-99.259444,area:'Tlalpan · Sierra del Ajusco',info:'Parque nacional montañoso con bosques de altura y panorámicas de la capital. Marcador aproximado.'},
+  {id:'fuentes-brotantes',type:'natural',name:'Fuentes Brotantes de Tlalpan',kind:'naturaleza',emoji:'💧',lat:19.285833,lng:-99.179444,area:'Tlalpan',info:'Parque nacional con manantiales y espacios arbolados. Marcador de referencia.'},
+  {id:'cerro-estrella',type:'natural',name:'Cerro de la Estrella',kind:'naturaleza',emoji:'🌄',lat:19.338056,lng:-99.091389,area:'Iztapalapa',info:'Cerro con vegetación de matorral y valor ecológico y cultural. Punto de referencia.'},
+  {id:'ejidos-xochimilco',type:'natural',name:'Zona de conservación de Xochimilco',kind:'naturaleza',emoji:'🪷',lat:19.278056,lng:-99.077778,area:'Xochimilco y San Gregorio Atlapulco',info:'Zona de conservación ecológica en el paisaje lacustre y chinampero. Pin orientativo, no entrada.'},
+  {id:'sierra-guadalupe',type:'natural',name:'Sierra de Guadalupe',kind:'naturaleza',emoji:'🌵',lat:19.566111,lng:-99.119444,area:'Gustavo A. Madero',info:'Área natural protegida al norte de CDMX. Marcador aproximado del área.'}
  ];
  function esc(value){return String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
  function art(kind){
@@ -44,7 +52,8 @@
    trajineras:'<path d="M7 42H57L49 56H16Z" fill="'+pink+'"/><path d="M17 42V20Q32 6 47 20V42" stroke="'+line+'" stroke-width="3" fill="none"/><path d="M17 24h30M24 18v23m16-23v23" stroke="'+line+'" stroke-width="2"/><path d="M9 60q6-4 12 0t12 0t12 0t12 0" stroke="'+blue+'" stroke-width="3" fill="none"/><circle cx="32" cy="22" r="5" fill="'+peach+'"/>',
    biblioteca:'<rect x="12" y="12" width="40" height="44" rx="2" fill="'+cream+'"/><path d="M12 20h40M12 31h40M12 42h40M24 12v44m16-44v44" fill="none" stroke="'+pink+'" stroke-width="4"/><path d="M19 25l6 5m15-5-7 6m-14 7 6-5m15 4-7-7" stroke="'+line+'" stroke-width="2"/>',
    soumaya:'<path d="M26 8Q45 4 42 20Q39 32 47 52L50 56H17Q10 46 20 31Q29 19 26 8Z" fill="'+blue+'"/><path d="M24 16h16M19 25h22M15 36h30M16 46h31" stroke="'+cream+'" stroke-width="3"/><path d="M26 8Q45 4 42 20Q39 32 47 52L50 56H17Q10 46 20 31Q29 19 26 8Z" fill="none" stroke="'+line+'" stroke-width="2"/>',
-   catedral:'<path d="M12 31h40v24H12Z" fill="'+cream+'"/><path d="M10 30V13h12v18M42 31V13h12v18" fill="'+pink+'"/><path d="M16 12V6m-5 4h10M48 12V6m-5 4h10" stroke="'+line+'" stroke-width="2"/><path d="M24 55V42q8-8 16 0v13" fill="'+blue+'"/>'
+   catedral:'<path d="M12 31h40v24H12Z" fill="'+cream+'"/><path d="M10 30V13h12v18M42 31V13h12v18" fill="'+pink+'"/><path d="M16 12V6m-5 4h10M48 12V6m-5 4h10" stroke="'+line+'" stroke-width="2"/><path d="M24 55V42q8-8 16 0v13" fill="'+blue+'"/>',
+   naturaleza:'<path d="M31 55V37" stroke="#85563c" stroke-width="6"/><path d="M32 8 13 31h9L9 43h46L42 31h9Z" fill="#6bc9a0" stroke="#2b715c" stroke-width="3"/><path d="M25 24h14M20 35h24" stroke="#e9ffe9" stroke-width="2"/>'
   };
   const drawing=pieces[kind]||pieces.palacio;
   return '<div class="mapa-pin"><svg viewBox="0 0 64 64" width="64" height="64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M9 8Q32-2 55 8L61 38Q63 56 42 60H22Q2 57 3 38Z" fill="#fff7e9" stroke="'+line+'" stroke-width="3"/><g stroke="'+line+'" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round">'+drawing+'</g></svg></div>';
@@ -86,7 +95,7 @@
    b.append(em,txt);b.addEventListener('click',()=>focusPlace(place));
    lugares.append(b);
   }
-  if(!lugares.children.length){const p=document.createElement('p');p.className='muted';p.textContent='No hay monumentos con ese nombre.';lugares.append(p)}
+  if(!lugares.children.length){const p=document.createElement('p');p.className='muted';p.textContent='No hay lugares con ese nombre.';lugares.append(p)}
  }
  redrawList();
  buscar?.addEventListener('input',()=>redrawList(buscar.value));
@@ -105,17 +114,18 @@
  });
  tiles.addTo(map);
  L.control.zoom({position:'bottomright'}).addTo(map);
- const layerMonuments=L.layerGroup().addTo(map), markers=new Map();
+ const layerMonuments=L.layerGroup().addTo(map),layerNature=L.layerGroup().addTo(map),markers=new Map();
  for(const place of places){
   const marker=L.marker([place.lat,place.lng],{
    icon:L.divIcon({className:'mapa-pin-wrap',html:art(place.kind),iconSize:[64,70],iconAnchor:[32,65],popupAnchor:[0,-55]}),
    keyboard:true,title:place.name,alt:place.name,riseOnHover:true
   });
   marker.bindPopup(placePopup(place),{maxWidth:270,autoPan:true});
-  marker.addTo(layerMonuments);markers.set(place.id,marker);
+  marker.addTo(place.type==='natural'?layerNature:layerMonuments);markers.set(place.id,marker);
  }
  function focusPlace(place){
-  if(!checked('monumentos')){const el=capas.querySelector('input[value="monumentos"]');el.checked=true;toggleLayer('monumentos')}
+  const layer=place.type==='natural'?'naturaleza':'monumentos';
+  if(!checked(layer)){const el=capas.querySelector('input[value="'+layer+'"]');el.checked=true;toggleLayer(layer)}
   map.flyTo([place.lat,place.lng],Math.max(14,map.getZoom()),{duration:.7});
   setTimeout(()=>markers.get(place.id)?.openPopup(),450);
   $('mapa-interactivo').scrollIntoView({block:'center',behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});
@@ -179,8 +189,9 @@
   }
  }
  function toggleLayer(mode){
-  if(mode==='monumentos'){
-   if(checked(mode))layerMonuments.addTo(map);else map.removeLayer(layerMonuments);
+  if(mode==='monumentos'||mode==='naturaleza'){
+   const group=mode==='naturaleza'?layerNature:layerMonuments;
+   if(checked(mode))group.addTo(map);else map.removeLayer(group);
    return;
   }
   const info=state.get(mode);
@@ -192,12 +203,12 @@
  }
  capas.addEventListener('change',event=>{
   const mode=event.target.value;
-  if(Object.prototype.hasOwnProperty.call(systems,mode)||mode==='monumentos')toggleLayer(mode);
+  if(Object.prototype.hasOwnProperty.call(systems,mode)||mode==='monumentos'||mode==='naturaleza')toggleLayer(mode);
  });
  function setDefaults(onlyPlaces=false){
   capas.querySelectorAll('input[type="checkbox"]').forEach(el=>{
    const before=el.checked;
-   el.checked=onlyPlaces?el.value==='monumentos':['metro','metrobus','monumentos'].includes(el.value);
+   el.checked=onlyPlaces?['monumentos','naturaleza'].includes(el.value):['metro','metrobus','monumentos','naturaleza'].includes(el.value);
    if(before!==el.checked)toggleLayer(el.value);
   });
  }
