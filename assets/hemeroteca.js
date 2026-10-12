@@ -143,7 +143,7 @@
     select.append(option);
    }
    const requested=params.get('mes')||'';
-   if(months.some(x=>x.month===requested))select.value=requested;
+   select.value=months.some(x=>x.month===requested)?requested:months[0].month;
    chooseMonth();
   }).catch(()=>{
    status.textContent='No fue posible consultar los meses archivados.';

@@ -260,3 +260,5 @@ footer a{color:#ffc3df}
 @media(max-width:1040px){.alcaldia-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media(max-width:790px){.alcaldia-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.archive-feed{grid-template-columns:1fr}.archive-teaser{padding:22px}.archive-teaser .section-heading{align-items:flex-start}}
 @media(max-width:500px){.alcaldia-card{min-height:75px;padding:12px 10px;gap:6px}.alcaldia-card strong{font-size:11px}.borough-index{font-size:10px}.archive-control-panel{padding:14px}.archive-field{min-width:100%}.archive-teaser{padding:19px}.archive-month-link{flex:1}}
+
+.alcaldia-card.active,.alcaldia-card[aria-current="true"]{border-color:#ffacd3;background:linear-gradient(130deg,#643150,#20283b);box-shadow:0 0 0 2px #e884b033}
