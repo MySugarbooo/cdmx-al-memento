@@ -97,8 +97,11 @@
  }
  const L=window.L;
  const map=L.map('mapa-interactivo',{zoomControl:false,preferCanvas:true,worldCopyJump:false,minZoom:9,maxZoom:19}).setView([19.414,-99.145],11);
- const tiles=L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png',{
-  subdomains:'abcd',maxZoom:19,attribution:'&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions" target="_blank" rel="noopener noreferrer">CARTO</a>'
+ // CARTO exige una API key desde 2026; OSM Standard no requiere clave.
+ // Usar su URL oficial, caché normal del navegador y atribución visible.
+ const tiles=L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{
+  maxZoom:19,
+  attribution:'&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">OpenStreetMap</a> contributors'
  });
  tiles.addTo(map);
  L.control.zoom({position:'bottomright'}).addTo(map);
@@ -201,6 +204,20 @@
  $('solo-monumentos')?.addEventListener('click',()=>setDefaults(true));
  $('todas-capitas')?.addEventListener('click',()=>{setDefaults(false);map.setView([19.414,-99.145],11)});
  $('mapa-centrar')?.addEventListener('click',()=>map.setView([19.414,-99.145],11));
+ const enlarge=$('mapa-ampliar'), frame=document.querySelector('.mapa-frame');
+ function setExpanded(enabled){
+  if(!frame||!enlarge)return;
+  frame.classList.toggle('mapa-ampliado',enabled);
+  document.body.classList.toggle('mapa-expandido',enabled);
+  enlarge.textContent=enabled?'✕ Cerrar mapa grande':'⤢ Ver mapa grande';
+  enlarge.setAttribute('aria-pressed',String(enabled));
+  enlarge.setAttribute('aria-label',enabled?'Cerrar mapa grande':'Ampliar mapa de Ciudad de México');
+  window.setTimeout(()=>map.invalidateSize({pan:false}),80);
+ }
+ enlarge?.addEventListener('click',()=>setExpanded(!frame.classList.contains('mapa-ampliado')));
+ document.addEventListener('keydown',event=>{
+  if(event.key==='Escape'&&frame?.classList.contains('mapa-ampliado'))setExpanded(false);
+ });
  for(const mode of ['metro','metrobus'])toggleLayer(mode);
  setTimeout(()=>map.invalidateSize(),250);
  const named=new URLSearchParams(location.search).get('lugar');
