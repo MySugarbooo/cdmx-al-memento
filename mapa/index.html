@@ -8,7 +8,7 @@
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="stylesheet" href="/styles.css?v=20261012-map1">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css">
-<link rel="stylesheet" href="/mapa/mapa.css?v=1">
+<link rel="stylesheet" href="/mapa/mapa.css?v=2">
 <meta property="og:type" content="website"><meta property="og:title" content="CDMX en un mapa ilustrado · CDMX AL MEMENTO"><meta property="og:url" content="https://cdmx-al-memento.pages.dev/mapa/">
 </head>
 <body class="mapa-body">
@@ -43,10 +43,11 @@
 <div class="mapa-view-wrap">
  <div class="mapa-view-head"><div><p class="eyebrow">EL MAPA DE NUESTRA CIUDAD</p><h2>Ciudad de México <span class="pink-mark">.</span></h2></div><button id="mapa-centrar" type="button">⌖ Ver toda la ciudad</button></div>
  <div class="mapa-frame">
+ <button type="button" id="mapa-ampliar" class="mapa-ampliar" aria-pressed="false" aria-label="Ampliar mapa de Ciudad de México">⤢ Ver mapa grande</button>
  <div id="mapa-interactivo" aria-label="Mapa interactivo con rutas y monumentos de Ciudad de México" role="application"></div>
  <div class="mapa-sticker" aria-hidden="true">HECHO PARA EXPLORAR ✦</div>
  </div>
- <div class="mapa-controls-note">👆 Arrastra para moverte · Haz zoom con los botones + y − · Toca una ruta para identificarla · Toca una estampa para ver el monumento.</div>
+ <div class="mapa-controls-note">Pulsa «Ver mapa grande» para expandirlo a toda la pantalla. 👆 Arrastra para moverte · Haz zoom con los botones + y − · Toca una ruta para identificarla · Toca una estampa para ver el monumento.</div>
  <div class="mapa-legend"><strong>Colores en el mapa</strong><span>🌸 Metro por línea</span><span>🟣 Metrobús por línea</span><span>🟢 Transporte eléctrico</span><span>🔵 RTP y camiones</span><span>🏛️ Monumentos</span></div>
 </div>
 </div>
@@ -55,7 +56,7 @@
 </section>
 <section class="mapa-end"><div><p class="eyebrow">LA CIUDAD TAMBIÉN SE CUENTA</p><h2>Después del paseo, conoce sus noticias</h2><p>Visita la portada para seguir los titulares de CDMX y explorar las historias de sus 16 alcaldías.</p></div><a class="btn" href="/">Volver a las noticias ↗</a></section>
 </main>
-<footer><div class="wrap">© 2026 CDMX AL MEMENTO · Mapa informativo ilustrado · Datos de SIGIRPC y cartografía © OpenStreetMap, © CARTO. <p><a href="/sobre-nosotros.html">Sobre nosotros</a><a href="/privacidad.html">Privacidad</a><a href="/politica-editorial.html">Política editorial</a><a href="/contacto.html">Contacto</a></p></div></footer>
+<footer><div class="wrap">© 2026 CDMX AL MEMENTO · Mapa informativo ilustrado · Datos de SIGIRPC y cartografía © colaboradores de OpenStreetMap. <p><a href="/sobre-nosotros.html">Sobre nosotros</a><a href="/privacidad.html">Privacidad</a><a href="/politica-editorial.html">Política editorial</a><a href="/contacto.html">Contacto</a></p></div></footer>
 <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js" defer></script>
-<script src="/mapa/mapa.js?v=1" defer></script>
+<script src="/mapa/mapa.js?v=2" defer></script>
 </body></html>
