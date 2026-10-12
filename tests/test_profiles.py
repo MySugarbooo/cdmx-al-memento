@@ -65,7 +65,7 @@ class ProfileTests(unittest.TestCase):
         self.assertIn('.borough-rail{width:100%;position:static;order:1;', css)
         self.assertIn("document.querySelector('.news-main .bar')", js)
         self.assertIn('window.scrollTo({top:', js)
-        self.assertIn('/styles.css?v=20261012-tabs2', home)
+        self.assertIn('/styles.css?v=20261012-map1', home)
         self.assertIn('/app.js?v=20261012-tabs2', home)
 
 
@@ -87,6 +87,8 @@ class ProfileTests(unittest.TestCase):
             self.assertIn(mode+':', proxy)
         self.assertIn("Atlas de Movilidad Integrada", page)
         self.assertIn('geojson', proxy)
+        self.assertIn('"mapa/"', (ROOT / 'update_news.py').read_text(encoding='utf-8'))
+        self.assertIn('/styles.css?v=20261012-map1', page)
         self.assertIn('minZoom:9,maxZoom:19', script)
 
 
