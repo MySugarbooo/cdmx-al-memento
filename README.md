@@ -66,3 +66,5 @@ alcaldía depende de las menciones explícitas del nombre en los titulares.
 - `/mapa/preview.html`: mapa real pequeño (no diagrama decorativo) del centro de CDMX en un recuadro dentro de la portada, con estampas de monumentos y carga diferida.
 - El mapa completo aparece primero en un cuadro compacto con botón **Ver mapa grande**, que lo expande a la pantalla del móvil o PC y permite cerrarlo con un botón (o Esc en PC).
 - Los mapas usan **OpenStreetMap Standard** para evitar el aviso **API KEY REQUIRED** de CARTO. Se conserva la atribución visible y caché de mosaicos normal del navegador, sin predescargas.
+
+En móvil, el recuadro del mapa precede a las noticias en la sección principal; la lista de las 16 alcaldías aparece tras las noticias. Los filtros del menú se desplazan expresamente a los titulares, sin detenerse en el mapa ni las alcaldías.
