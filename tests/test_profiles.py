@@ -65,18 +65,24 @@ class ProfileTests(unittest.TestCase):
         self.assertIn('.borough-rail{width:100%;position:static;order:1;', css)
         self.assertIn("document.querySelector('.news-main .bar')", js)
         self.assertIn('window.scrollTo({top:', js)
-        self.assertIn('/styles.css?v=20261012-map2', home)
+        self.assertIn('/styles.css?v=20261012-map-top', home)
         self.assertIn('/app.js?v=20261012-tabs2', home)
 
 
-    def test_illustrated_map_appears_as_side_card_and_real_transport_layers(self):
+    def test_illustrated_map_featured_above_news_and_real_transport_layers(self):
         home=(ROOT / "index.html").read_text(encoding="utf-8")
         page=(ROOT / "mapa" / "index.html").read_text(encoding="utf-8")
         script=(ROOT / "mapa" / "mapa.js").read_text(encoding="utf-8")
         proxy=(ROOT / "functions" / "api" / "transporte.js").read_text(encoding="utf-8")
         css=(ROOT / "styles.css").read_text(encoding="utf-8")
         self.assertIn('class="news-side-column"', home)
-        self.assertIn('class="city-map-teaser"', home)
+        self.assertIn('class="city-map-teaser city-map-teaser--top"', home)
+        self.assertEqual(home.count('class="city-map-teaser city-map-teaser--top"'), 1)
+        self.assertTrue(home.index('class="home-map-section"') < home.index('class="hero hero-editorial"'))
+        self.assertTrue(home.index('class="home-map-section"') < home.index('class="news-side-column"'))
+        self.assertNotIn('class="city-map-teaser"', home)
+        self.assertIn('loading="eager" tabindex="-1" aria-hidden="true"', home)
+        self.assertIn('.home-map-section .city-map-teaser--top', css)
         self.assertIn('href="/mapa/"', home)
         self.assertIn('src="/mapa/preview.html?v=2"', home)
         preview=(ROOT / "mapa" / "preview.html").read_text(encoding="utf-8")
