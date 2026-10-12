@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-12 12:56 UTC",
+  "updated": "2026-10-12 13:47 UTC",
   "boroughs": [
     {
       "name": "La Magdalena Contreras",
@@ -435,8 +435,19 @@
     },
     {
       "name": "Cuauhtémoc",
-      "count": 11,
+      "count": 12,
       "articles": [
+        {
+          "title": "Hombre cae desde el cuarto piso de un hotel en la colonia Centro, alcaldía Cuauhtémoc",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPRFB0TXZsQTctVUd2TFdHSV9RcTBoUmRkb05CVXJqajAtS2FXWTFyTUNOZnExSTlYeGpzTUhPdXFWV1JLQ2ZhRUpkaUx1UVNpNUJGNU9jeUVpZE1sMURmbklpdEhDdWZtMzVGbk9jSWkwZ3lyWjdXSVo3ekY0Um1RRlphbUN5OENXMFFlNzQwNDg0aURjSWVUdFg0RXVSb2_SAZ8BQVVfeXFMUF9oajVEWWctdUFpaHptT1V3OVVqU19ZUWRTU2ZNN0FGOUM1MlZ6aUNhMHI3Uk9SdjIyUFpRNUlqeGs1S09zb1hKQ3NjR0tZTHVmOFN1VnRlcFhmVnNXVjNIUG5XRmp6aklPZGJzbkRQNENRMzZnR09uVkFOUlhVQTVITWNvZHhkZjV2SGRrZ0RqMVczWTR5MjRVaUt3R0hF?oc=5",
+          "source": "Telediario",
+          "date": "2026-10-12",
+          "published_at": "2026-10-12T13:37:00Z",
+          "category": "CDMX",
+          "borough": "Cuauhtémoc",
+          "location": "Cuauhtémoc (mencionada en el titular)"
+        },
         {
           "title": "Alito sale en defensa de Alessandra Rojo de la Vega tras enfrentamiento en la Cuauhtémoc",
           "description": "Consulta los detalles y las actualizaciones en el medio original.",
@@ -861,7 +872,7 @@
     },
     {
       "name": "Milpa Alta",
-      "count": 17,
+      "count": 20,
       "articles": [
         {
           "title": "Inauguran novena Utopía en Milpa Alta con inversión de 190 millones de pesos y servicios gratuitos",
@@ -941,6 +952,28 @@
           "location": "Milpa Alta (mencionada en el titular)"
         },
         {
+          "title": "Clara Brugada inaugura UTOPÍA en Milpa Alta y anuncia obras para mejorar la movilidad en la CDMX",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOS0tNOEdLRmVSMXNJTElpenRON2VpNEJqUFAwcGNBS1lVVExnNzJ4R2lGdUx5YjR5VlZVLUoxMEYzZV9uN3Q3enUzVjgzb1hrRDZUX2hrTmYyNm9Rbnk4ajJvaU9FSG42cnFYcEk4UF9WUEZWNUNpLWNoUjhjTVM1ZWRhOHFTYkNwU3oyZVd2MDJoWGpMQlJ5SjFFc3RaWmtOU25TNEFBOU01MVRmOTBkeF9BcW0tX0pWNGJ6QUl4N20wTzJEb1FfU2d6dktMcVhybG91bi1uRU5PNk8wVjNZZHlEUG8zV3fSAewBQVVfeXFMTjRVWHF1Q0F2S3c3NzhFdVpjYUhybm9VRW1teDlhZWR1OG55aTh4T2FBQWtNYlpBRmxKSUUwR3plUmMyOUNtUlA5LVQzQXJURGZZR2lkbnRBWVBpblV1VlBqQW42dk9FYnJKU1ROM0hBelJJMU5MVko1X0RaeTJGMHRlWGpOTGNHeHE4dkEyRldwN2w3a2Q1bnNHODgwRFd0ZGlrLThndDFKeVlPN3ZVU3JpdW1YdFI2ZWpYamhEcDB3NHZGanhzV1RReVV0MlFBc2Z6c01RVDc0TDlObXNNb1ZCRDRNWV8zcTJIaEw?oc=5",
+          "source": "Radio Fórmula",
+          "date": "2026-10-11",
+          "published_at": "2026-10-12T00:05:29Z",
+          "category": "CDMX",
+          "borough": "Milpa Alta",
+          "location": "Milpa Alta (mencionada en el titular)"
+        },
+        {
+          "title": "Juegos mecánicos, alberca y temazcal gratis: así es la nueva Utopía que abrió en Milpa Alta",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPaUF4a0lYRmI3N2FJMEtQLUhSUGZJOHdIZnBaUWdaQzVGMTVaWkctTE1QTG8yQUpGMVU4Y21ianlYSG1jbkZwUkJhOEQxWWdOQzlSZUYtZ3d1XzJYMzFxbzA0RDN1S2hUemFRTlh0WmRvUjdaeGw3YXV5ZzZTdWJTV1lVeElKMFdhU3JfMVRNY0hvUVhXNUtvTzd0QlBveGlqU2dRdkJtVFZiYnAwM0V0WTNSNndaOHg5bXpkaExTSjJnb05zMFI4LUI2VEhJYVBwRXY1WtIB2gFBVV95cUxPLWI0bnk3RUxxWDBlRGw3bUluV0paeTZ4eVNsXzh2dmZ6dWRpM1VOZW1PN251RWxhNUlBWXFwUFVnX2dZdW9SLTl6dll4TjRoZUdXYjZyU0NnTmJHMnZvZTZBX21iRVlJa2t6ZW1iekpqakhvQTNkUWNwcDhQUWlURWNZcnhablloUEs2dHQ0Y3hzckQ3Wi0yQkxlZWNmZ1NmMkpoLUNIRDBtOW5pcEgyRjgwS1dWejJTcnlqS1pKamVDOEtueVZpbVlqa0dzckRZb2dfNklqOUhyQQ?oc=5",
+          "source": "PostaMx",
+          "date": "2026-10-11",
+          "published_at": "2026-10-12T00:03:00Z",
+          "category": "CDMX",
+          "borough": "Milpa Alta",
+          "location": "Milpa Alta (mencionada en el titular)"
+        },
+        {
           "title": "Clara Brugada inaugura la novena Utopía en Milpa Alta; invierten 190 millones de pesos en espacio gratuito",
           "description": "Consulta los detalles y las actualizaciones en el medio original.",
           "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQLUZNbGhSSWRERnEwVVNOWnNnR1p2VjJXU19nbEZVQ2xscmlxdFQyZEtuZnpYVVplSXR3VWVVMkRheHBZWnA4MUZrSFhzSklGN1F5SWFnQXZ1UVVEXzczYzk0Rmk2SG5MV0UwQzh6UTRWaTJuU2dZTlFDZTdxQTQ5SWJudnBTcEh0RjNLTko2Wi11SVJrZ2hRVElwTWxuLUVXNFhZcC1NaG1nX3ptRDJ6N0RFYnBGc3NOQVA0OFBIenp4QXlCTXZVelZlak9zOEpGU2xwQkdRTURNSlpDYmtnbw?oc=5",
@@ -959,6 +992,17 @@
           "date": "2026-10-12",
           "published_at": null,
           "category": "Gobierno",
+          "borough": "Milpa Alta",
+          "location": "Milpa Alta (mencionada en el titular)"
+        },
+        {
+          "title": "Clara Brugada inaugura nueva Utopía en Milpa Alta; tendrá servicios médicos gratuitos y espacios deportivos",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNek1hTUJFanNvc0RscTgxSXl2VlFiYXBWY3V4SlN4WDhzbVZDZXdqZ0lwRHZFdWpfbkZQM1dtQ1BqbmR5VFk2bmpha3djNWx2RDZyRTJZdFBlOUQtY0NaeE5mYXZZN3FHaDRfV1RDelpDcGVCcmZBYUhXc3FqVjgzWFF6bHlmNVEyZ2ZLVkY4VC12YzB0VThUOU84a1ljNHRuRS1qZnl6UmhBSjNXLTNJU1MxOWtLRlVWMXVCdjNzSkFOUUpMNDNMNlJuQmVDTlEtRG1FWDFPS1pQU1o0LWt3SE1SMGfSAf8BQVVfeXFMUFJsdlBmSFROMEpXRmJnSkpldmZpaTE0QVlmdmJEenR6SWcxUzJuZnNnc1M1ek9pdmRjQkt0d18zRXlLQ2JUYXA2RWRLcmx4V3ltYnRtZVpYcHBRdTI4TERwM1NMa3M2UFExd21LWU9NNE42T0F2RlFrdFlPLUlKOWlQODMtQVNDWl9QZEZaR1FHZkF6MnVSajJFczI3Mm9HY0NwbV9LUTI3VG1QU3lfMFc1LVRsTkFPSVpNNGpwREt4WXM4LUkzNWJ1VVdPb3MxWlBxaTBVakhSZEJfbUhDSm4xVEl1amUyLWF5aURwZlV5eGR2c25TTGtxaE5mQWFn?oc=5",
+          "source": "La Razón de México",
+          "date": "2026-10-11",
+          "published_at": "2026-10-12T00:00:00Z",
+          "category": "CDMX",
           "borough": "Milpa Alta",
           "location": "Milpa Alta (mencionada en el titular)"
         },
