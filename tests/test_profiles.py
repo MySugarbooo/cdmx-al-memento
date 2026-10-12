@@ -69,5 +69,26 @@ class ProfileTests(unittest.TestCase):
         self.assertIn('/app.js?v=20261012-tabs2', home)
 
 
+    def test_illustrated_map_appears_as_side_card_and_real_transport_layers(self):
+        home=(ROOT / "index.html").read_text(encoding="utf-8")
+        page=(ROOT / "mapa" / "index.html").read_text(encoding="utf-8")
+        script=(ROOT / "mapa" / "mapa.js").read_text(encoding="utf-8")
+        proxy=(ROOT / "functions" / "api" / "transporte.js").read_text(encoding="utf-8")
+        css=(ROOT / "styles.css").read_text(encoding="utf-8")
+        self.assertIn('class="news-side-column"', home)
+        self.assertIn('class="city-map-teaser"', home)
+        self.assertIn('href="/mapa/"', home)
+        self.assertIn('src="/mapa/mini.svg"', home)
+        self.assertIn('.news-side-column{order:1;width:100%}', css)
+        self.assertIn('id="mapa-interactivo"', page)
+        for mode in ['metro', 'metrobus', 'ligero', 'cablebus', 'trolebus', 'rtp', 'camiones']:
+            self.assertIn('value="'+mode+'"', page)
+            self.assertIn(mode+':', script)
+            self.assertIn(mode+':', proxy)
+        self.assertIn("Atlas de Movilidad Integrada", page)
+        self.assertIn('geojson', proxy)
+        self.assertIn('minZoom:9,maxZoom:19', script)
+
+
 if __name__ == "__main__":
     unittest.main()
