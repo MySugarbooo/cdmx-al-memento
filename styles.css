@@ -383,3 +383,10 @@ footer a{color:#ffc3df}
  .city-map-teaser-bottom strong{font-size:15px}
  .city-map-teaser-bottom small{font-size:10px}
 }
+
+/* Previsualización real del mapa de CDMX en la portada; toda la tarjeta abre vista grande. */
+.city-map-preview{display:block;width:100%;height:185px;overflow:hidden;position:relative;background:#f4ecdc center/cover no-repeat url('/mapa/mini.svg');border-bottom:2px solid #a06c93}
+.city-map-preview iframe{display:block;width:100%;height:100%;border:0;pointer-events:none;background:transparent}
+.city-map-teaser{cursor:pointer}
+@media(max-width:790px){.city-map-preview{height:100%;min-height:188px;max-height:236px;border-bottom:0;border-right:2px solid #a06c93}}
+@media(max-width:430px){.city-map-preview{min-height:195px;max-height:none}}
