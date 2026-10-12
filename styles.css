@@ -356,3 +356,30 @@ footer a{color:#ffc3df}
 @media(max-width:790px){.borough-details-layout{display:flex;flex-direction:column}.borough-news-column{order:0;width:100%}.borough-history-panel{order:1;width:100%;max-height:none;position:static}.borough-news-feed{grid-template-columns:repeat(2,minmax(0,1fr))}.borough-heading-line{align-items:start}.borough-change{min-width:200px}}
 @media(max-width:590px){.borough-page-top{margin:24px 0 18px}.borough-heading-line{flex-direction:column;gap:14px}.borough-change{width:100%}.borough-news-top{align-items:start}.borough-news-feed{grid-template-columns:1fr}.borough-history-photo{height:220px}.borough-history-content{padding:21px 20px}.borough-footer-link{padding-bottom:15px}}
 @media(prefers-reduced-motion:reduce){.borough-details-layout *{scroll-behavior:auto!important}}
+
+/* Mini mapa ilustrado junto a la hemeroteca y las alcaldías. */
+.news-side-column{min-width:0;display:grid;align-self:start;align-content:start;gap:17px}
+.city-map-teaser{display:block;min-width:0;overflow:hidden;border:2px solid #b7749f;border-radius:19px;background:linear-gradient(145deg,#432442,#232838);box-shadow:0 15px 29px #05081560;color:#fff;text-decoration:none;transition:border-color .2s,transform .2s}
+.city-map-teaser:hover,.city-map-teaser:focus-visible{transform:translateY(-3px);border-color:#ffc6df;color:#fff}
+.city-map-teaser-head{padding:12px 14px;display:flex;align-items:center;justify-content:space-between;gap:7px;background:#4d2949;color:#ffd6ea;font-size:10px;font-weight:950;letter-spacing:.55px}
+.city-map-teaser-head b{font-size:20px}
+.city-map-teaser img{display:block;width:100%;height:145px;object-fit:cover;object-position:center;border-bottom:2px solid #a06c93}
+.city-map-teaser-bottom{display:grid;gap:8px;padding:16px}
+.city-map-teaser-bottom strong{font-size:17px;line-height:1.16;letter-spacing:-.3px}
+.city-map-teaser-bottom small{font-size:11px;line-height:1.55;color:#d5c9d9}
+.city-map-teaser-button{display:inline-flex;justify-content:space-between;align-items:center;border:1px solid #eaa6ca;border-radius:9px;background:#c44d88;font-size:11px;font-weight:900;color:#fff;padding:9px 11px;margin-top:2px}
+@media(max-width:790px){
+ .news-side-column{order:1;width:100%}
+ .city-map-teaser{display:grid;grid-template-columns:47% 1fr;grid-template-rows:auto 1fr}
+ .city-map-teaser-head{grid-column:1/-1}
+ .city-map-teaser img{height:100%;min-height:174px;max-height:236px;border-bottom:0;border-right:2px solid #a06c93}
+ .city-map-teaser-bottom{align-content:center}
+ .news-side-column .borough-rail{order:initial}
+}
+@media(max-width:430px){
+ .city-map-teaser{grid-template-columns:43% 1fr}
+ .city-map-teaser img{min-height:191px;max-height:none}
+ .city-map-teaser-bottom{padding:11px;gap:6px}
+ .city-map-teaser-bottom strong{font-size:15px}
+ .city-map-teaser-bottom small{font-size:10px}
+}
