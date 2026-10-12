@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-12 22:07 UTC",
+  "updated": "2026-10-12 22:32 UTC",
   "boroughs": [
     {
       "name": "La Magdalena Contreras",
@@ -445,7 +445,7 @@
     },
     {
       "name": "Coyoacán",
-      "count": 8,
+      "count": 9,
       "articles": [
         {
           "title": "Habitantes de Hidalgo Protestan Frente a Conagua en Coyoacán",
@@ -487,6 +487,17 @@
           "source": "sdpnoticias",
           "date": "2026-10-11",
           "published_at": "2026-10-11T23:57:41Z",
+          "category": "CDMX",
+          "borough": "Coyoacán",
+          "location": "Coyoacán (mencionada en el titular)"
+        },
+        {
+          "title": "Sentencian al líder de “Los Molina” con más de 240 años de cárcel por el multihomicidio de siete personas en Coyoacán",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxPVUVOZU92bEdYWjgwVUZ3RW9BYk9ONkJJWlJDQk02NDI3N2pGc3cyRjZvbThRdTkzbmhKdE4xZU9xdUxmNkJnMXdEQ21HbVJEM05hTHNWZFllaE1uSGxaNWI2a1hnZkRXU0x2cVJNbmhUUmp0cjdwNFJYRjFJcFBBWnBMbFRsRGRya3I5Q2Nia0Z0ZU1TbnZtSTZVVkdqZGxkUXVLMFNzM1ItbDZUa1dyLTRPam8xSVRWdEJiRVFtYU1uckVkbk5SYnhyaHZVX0hZbUhCR1ZDYkVwYUR5MEhEU3owa2pzNzlUOERwbEozb9IBigJBVV95cUxPY3RtOG9SWTNySHd2LWpuTkZETW9Sdk5tMUFORWR1VVRPZk83THE5d2owbDBCV1FwZ25RMWFSbE9kWnhIeEJWNHpIWUl2ZkhUNmpRTHpKVmtxWWlCVWhIN1FDQWhXNlNQN3hOTjY1dkNXc1ptZlQ3Y2dyS3lQZ0FVSW9UaUxjT3ZUNkhlMDNnMjFSMTF6bWFSV2lhZTJzRTZBbU9jRTd6ZThEVTdsaE9TelNYYm9ybGJ2ZnI1VGdzUXRTc3Z2cWZPRmNHVkxjaVlvU1NXdGtGZTZnU2RJX3hBcnd4a0hRaVdGTHpGYVM3SE1yLUpYQlRvS3NYSFZYSUJ1VDhxeUlZOXNNUQ?oc=5",
+          "source": "Infobae",
+          "date": "2026-10-11",
+          "published_at": "2026-10-11T23:46:00Z",
           "category": "CDMX",
           "borough": "Coyoacán",
           "location": "Coyoacán (mencionada en el titular)"
@@ -1478,8 +1489,19 @@
     },
     {
       "name": "Tlalpan",
-      "count": 19,
+      "count": 20,
       "articles": [
+        {
+          "title": "Más de 5 mil personas de 35 organizaciones se reúnen con Gaby Osorio en Tlalpan",
+          "description": "Consulta los detalles y las actualizaciones en el medio original.",
+          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNYm9iSUVnZzBWU3BWTjRsa05IdGsweXFJUkdPOVZOaEdaZXA3ekdhMGl0cGdvdi1odlVxNHh0NUcyRjFJYWhPanZ5bjVVZVlTUlowTVlXVTJHeHg2aW5lQ3lnOHFUMlQ4X2dhZWtmZmlYSUYydEFULXB2RTl1amh5d1RWR2pEWE5LeDZ4M1ROdl9pN1RfTWFVN3dNU21XcUlKYkt5Q0UzRDhVd3R2Qjdyamc3RGZJMTFqMS1SMWszclEyX1A0dmZHcnFDcmk2UQ?oc=5",
+          "source": "Reporte Indigo",
+          "date": "2026-10-12",
+          "published_at": "2026-10-12T20:53:56Z",
+          "category": "CDMX",
+          "borough": "Tlalpan",
+          "location": "Tlalpan (mencionada en el titular)"
+        },
         {
           "title": "Detienen a Sujeto por Matar a Balazos a un Perro en Tlalpan, CDMX | Video",
           "description": "Consulta los detalles y las actualizaciones en el medio original.",
