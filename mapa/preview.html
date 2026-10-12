@@ -11,7 +11,7 @@ html,body,#mini-mapa{margin:0;width:100%;height:100%;overflow:hidden;background:
 .mini-monumento{border:2px solid #6c395d;border-radius:12px;background:#fff3dd;box-shadow:3px 3px 0 #aa6a90bb;display:flex;align-items:center;justify-content:center;width:28px;height:28px;font-size:17px}
 </style>
 </head><body>
-<div id="mini-mapa" role="img" aria-label="Vista del mapa real de Ciudad de México con monumentos y líneas del transporte"></div>
+<div id="mini-mapa" role="img" aria-label="Vista del mapa real de Ciudad de México con monumentos y áreas naturales"></div>
 <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js"></script>
 <script>
 (()=>{
@@ -24,7 +24,9 @@ html,body,#mini-mapa{margin:0;width:100%;height:100%;overflow:hidden;background:
  const spots=[
   [19.4352,-99.1412,'🎭'],[19.4364,-99.1546,'🏛️'],
   [19.4270,-99.1677,'✨'],[19.4326,-99.1317,'🇲🇽'],
-  [19.4205,-99.1819,'🏰'],[19.4848,-99.1170,'⛪']
+  [19.4205,-99.1819,'🏰'],[19.4848,-99.1170,'⛪'],
+  [19.2959,-99.2555,'🌲'],[19.295,-99.312778,'🌳'],
+  [19.291111,-99.199167,'🌿'],[19.21,-99.259444,'⛰️']
  ];
  spots.forEach(([lat,lng,icon])=>{
   L.marker([lat,lng],{interactive:false,keyboard:false,icon:L.divIcon({
