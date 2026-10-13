@@ -20,6 +20,8 @@ from email.utils import parsedate_to_datetime
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
+from scripts.analisis_editorial import build_editorial
+
 ROOT = Path(__file__).resolve().parent
 DEST = ROOT / "news.json"
 ARCHIVE_DIR = ROOT / "archivo"
@@ -396,9 +398,20 @@ def generate_report():
             '<p>Resumen automatizado con enlaces a medios externos y fecha de publicación.</p>',
             '<div class="notice">No constituye investigación ni verificación independiente. '
             'La alcaldía se infiere exclusivamente cuando el titular la menciona.</div>',
+            build_editorial(rows, datetime.now(timezone.utc)),
+            '<div class="report-separation"><h2>Los titulares originales, por tema</h2>'
+            '<p>Este listado sirve para seguir cada noticia en su medio de origen. '
+            'La lectura editorial anterior no añade hechos que estos titulares no acrediten.</p></div>',
         ]
         for category in GENERAL_FEEDS:
-            group = [x for x in rows if x.get("category") == category][:9]
+            group = [x for x in rows if x.get("category") == category
+                     and (category != "Metro" or re.search(
+                         r"\\bmetro\\b|\\bmetrob[uú]s\\b|l[ií]nea\\s+(?:[1-9]|1[02]|A|B)\\b",
+                         x.get("title", ""), re.I))
+                     and (category != "Seguridad" or re.search(
+                         r"seguridad|ssc|polic[ií]a|detien|homicid|robo|asalto|"
+                         r"delit|denunci|prisi[oó]n|penitenciari|fiscal[ií]a",
+                         x.get("title", ""), re.I))][:9]
             if not group:
                 continue
             parts.append('<h2>' + escape(category) + '</h2><ol>')
@@ -428,7 +441,11 @@ def generate_report():
         })
     entries.sort(key=lambda e: e["date"], reverse=True)
     write_json(REPORTS, {"updated": current.get("updated", ""), "reports": entries})
-    listing = ('<h1>Reportes automáticos de CDMX</h1>'
+    listing = ('<h1>Reportes y análisis editoriales de CDMX</h1>'
+               '<p>Cada entrega separa una tesis de lectura, lo que permiten afirmar '
+               'los titulares, lo que falta por comprobar, la opinión editorial '
+               'y los enlaces originales. El texto es una lectura automatizada, '
+               'no investigación independiente ni reportaje de campo.</p>'
                '<p>Recopilaciones con fuentes externas; los reportes antiguos se retiran '
                'después de 365 días. <a href="/archivo/">Consultar archivo mensual de noticias</a>.</p><ul>')
     for item in entries:
