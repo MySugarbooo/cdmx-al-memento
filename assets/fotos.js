@@ -111,7 +111,7 @@
 
  const selections=new Map();
  const normalize=id=>String(id||"");
- function src(id){return images[id]?'/assets/fotos/'+id+'.jpg':''}
+ function src(id){const image=images[id];return image?(image.url||'/assets/fotos/'+id+'.jpg'):''}
  function source(id){
   const item=images[id];
   if(!item)return '';
@@ -120,7 +120,7 @@
  }
  function hash(input){let h=2166136261;for(const cp of String(input||'')){h^=cp.codePointAt(0);h=Math.imul(h,16777619)}return h>>>0}
  function pick(category,title){
-  const group=groups[category]||groups.CDMX;
+  const group=candidates(category);
   return group.length?group[hash(title)%group.length]:'';
  }
  function addCatalog(catalog){
@@ -136,13 +136,40 @@
   }
   return added;
  }
+ function addRecentCatalog(catalog){
+  if(!catalog||!Array.isArray(catalog.photos))return 0;
+  let added=0;
+  const today=Date.now();
+  for(const item of catalog.photos){
+   if(!item||!/^reciente_[a-f0-9]{16}$/.test(item.id)||images[item.id])continue;
+   if(!groups[item.category]||!/^https:\/\/upload\.wikimedia\.org\/wikipedia\/commons\//.test(item.url||''))continue;
+   if(!/^https:\/\/commons\.wikimedia\.org\/wiki\/File:/.test(item.source||''))continue;
+   if(!/^https:\/\/creativecommons\.org\//.test(item.licenseUrl||''))continue;
+   if(typeof item.author!=='string'||!item.author.trim()||typeof item.topic!=='string'||typeof item.license!=='string')continue;
+   const uploaded=Date.parse(item.uploaded_at||'');
+   // Nunca revivir fotografías cuya subida ya quedó fuera de la ventana editorial.
+   if(!Number.isFinite(uploaded)||uploaded>today+86400000||today-uploaded>181*86400000)continue;
+   images[item.id]={
+    file:item.file,author:item.author.slice(0,130),topic:item.topic.slice(0,150),
+    license:item.license,licenseUrl:item.licenseUrl,source:item.source,category:item.category,
+    url:item.url,uploaded_at:item.uploaded_at,captured_at:item.captured_at||null
+   };
+   groups[item.category].unshift(item.id);
+   added++;
+  }
+  return added;
+ }
+ function candidatesForArticle(category){
+  const list=groups[category]||groups.CDMX;
+  return [...list.filter(id=>Boolean(images[id]?.uploaded_at)),...list.filter(id=>!images[id]?.uploaded_at)];
+ }
  function prepare(articles){
   selections.clear();
   const used=new Set(),waiting=[];
   // Primera vuelta: reservar una fotografía local distinta de la categoría correspondiente.
   for(const article of articles){
-   const candidates=groups[article.category]||groups.CDMX;
-   const start=hash(article.title)%Math.max(1,candidates.length);
+   const candidates=candidatesForArticle(article.category);
+   const start=0;
    let choice='';
    for(let i=0;i<candidates.length;i++){
     const id=candidates[(start+i)%candidates.length];
@@ -155,7 +182,7 @@
   const all=Object.keys(images),general=groups.CDMX;
   for(const article of waiting){
    const begin=hash(article.title);
-   const available=general.concat(all.filter(id=>!general.includes(id)));
+   const available=candidatesForArticle(article.category).concat(general,all.filter(id=>!general.includes(id)));
    let choice='';
    for(let i=0;i<available.length;i++){
     const id=available[(begin+i)%available.length];
@@ -168,8 +195,8 @@
  }
  function forArticle(article){return selections.get(article.url)||pick(article.category,article.title)}
  function alternatives(category,exclude){
-  const preferred=(groups[category]||groups.CDMX).concat(groups.CDMX);
+  const preferred=candidatesForArticle(category).concat(groups.CDMX);
   return [...new Set(preferred.concat(Object.keys(images)))].filter(id=>id!==exclude);
  }
- window.CDMX_FOTOS={images,groups,src,source,pick,addCatalog,prepare,forArticle,alternatives};
+ window.CDMX_FOTOS={images,groups,src,source,pick,addCatalog,addRecentCatalog,candidatesForArticle,prepare,forArticle,alternatives};
 })();
