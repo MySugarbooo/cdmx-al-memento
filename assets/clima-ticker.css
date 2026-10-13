@@ -105,3 +105,26 @@ body>.skip:focus{z-index:2000;top:var(--weather-strip-height)}
  .weather-ribbon__window{flex:1 1 0%;min-width:0}
  .weather-ribbon__control{flex:0 0 auto}
 }
+
+/* Fecha visible y fija al extremo derecho de la tira. */
+.weather-ribbon__date{
+ display:flex;flex-direction:column;justify-content:center;align-items:center;
+ align-self:stretch;flex:0 0 auto;min-width:170px;max-width:215px;
+ background:#fff3fbdc;border-left:1px solid #ce7eab80;
+ padding:5px 13px;text-align:center;line-height:1.35;
+ color:#752a52;font:800 11px/1.35 system-ui,-apple-system,"Segoe UI",sans-serif;
+ white-space:nowrap;
+}
+.weather-date__weekday{font-size:12px;font-weight:950;color:#963a6b}
+.weather-date__long{font-size:11px}
+.weather-date__short{display:none}
+@media(max-width:700px){
+ .weather-ribbon__date{min-width:92px;max-width:100px;padding:4px 5px;font-size:10px}
+ .weather-date__weekday{font-size:10px}
+ .weather-date__long{display:none}
+ .weather-date__short{display:block;font-size:10px}
+}
+@media(max-width:370px){
+ .weather-ribbon__date{min-width:81px;max-width:86px;padding:3px}
+ .weather-date__weekday,.weather-date__short{font-size:9px}
+}
