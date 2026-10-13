@@ -145,7 +145,7 @@
   const today=Date.now();
   for(const item of catalog.photos){
    if(!item||!/^reciente_[a-f0-9]{16}$/.test(item.id)||images[item.id])continue;
-   if(!groups[item.category]||!/^https:\/\/upload\.wikimedia\.org\/wikipedia\/commons\//.test(item.url||''))continue;
+   if(!groups[item.category]||!/^https:\/\/(?:upload\.wikimedia\.org\/wikipedia\/commons\/|thumb\.wikimedia\.org\/wikipedia\/commons\/thumb\/)/.test(item.url||''))continue;
    if(!/^https:\/\/commons\.wikimedia\.org\/wiki\/File:/.test(item.source||''))continue;
    if(!/^https:\/\/creativecommons\.org\//.test(item.licenseUrl||''))continue;
    // Protección adicional para el navegador: rechazar imágenes de otras ciudades.
