@@ -32,7 +32,9 @@
  -webkit-mask-image:linear-gradient(90deg,transparent,#000 3%,#000 97%,transparent)}
 .weather-ribbon__track{
  display:flex;align-items:center;width:max-content;min-width:100%;
- animation:weather-slide 35s linear infinite;will-change:transform;
+ animation:weather-slide var(--weather-duration,36s) linear infinite;
+ transform:translate3d(0,0,0);will-change:transform;
+ backface-visibility:hidden;
 }
 .weather-ribbon__set{
  display:flex;align-items:center;flex-shrink:0;min-height:var(--weather-strip-height);
@@ -65,27 +67,41 @@ a.weather-chip--credit:hover,a.weather-chip--credit:focus-visible{background:#ff
 .weather-ribbon__control select:focus-visible{outline:2px solid #8c2962;outline-offset:-3px}
 .weather-ribbon:hover .weather-ribbon__track,
 .weather-ribbon:focus-within .weather-ribbon__track{animation-play-state:paused}
-@keyframes weather-slide{to{transform:translateX(-50%)}}
+@keyframes weather-slide{to{transform:translate3d(-50%,0,0)}}
 /* El encabezado permanece debajo de la tira, sin solaparse al bajar. */
 body>header{top:var(--weather-strip-height)}
 body>.skip:focus{z-index:2000;top:var(--weather-strip-height)}
 @media(max-width:700px){
  :root{--weather-strip-height:48px}
- .weather-ribbon__brand{min-width:75px;padding:0 8px;font-size:10px;letter-spacing:0}
+ .weather-ribbon__brand{min-width:68px;padding:0 7px;font-size:10px;letter-spacing:0}
  .weather-ribbon__set{gap:8px;padding-right:8px}
  .weather-chip{font-size:11px;min-height:29px;padding:5px 11px}
  .weather-chip--temp{font-size:12px}
- .weather-ribbon__control{padding:0 6px;max-width:142px}
- .weather-ribbon__control select{width:126px;font-size:10px;padding:4px 18px 4px 7px}
- .weather-ribbon__track{animation-duration:30s}
+ .weather-ribbon__control{padding:0 5px;max-width:105px}
+ .weather-ribbon__control select{width:95px;min-width:0;font-size:10px;padding:4px 17px 4px 7px}
 }
 @media(max-width:370px){
- .weather-ribbon__brand{min-width:61px;padding:0 5px;font-size:9px}
- .weather-ribbon__control{max-width:119px}
- .weather-ribbon__control select{width:105px}
+ .weather-ribbon__brand{min-width:57px;padding:0 4px;font-size:9px}
+ .weather-ribbon__control{max-width:83px}
+ .weather-ribbon__control select{width:73px}
 }
 @media(prefers-reduced-motion:reduce){
  .weather-ribbon__window{overflow-x:auto;scrollbar-width:thin;mask-image:none;-webkit-mask-image:none}
  .weather-ribbon__track{animation:none;will-change:auto}
  .weather-ribbon__set[aria-hidden="true"]{display:none}
+}
+
+/* Temperatura y alcaldía caben juntas en una sola tarjeta por lugar;
+   en teléfonos gana espacio el carrusel, no el selector desplegable. */
+.weather-ribbon__set{min-width:0;flex:0 0 auto}
+.weather-ribbon__track{min-width:max-content;gap:0}
+.weather-chip--borough{font-variant-numeric:tabular-nums}
+.weather-chip--selected{background:#fff;color:#87234f;border-color:#d864a1}
+.weather-ribbon__window{display:block;overflow:hidden}
+.weather-ribbon__window:focus-within{overflow:visible}
+@media(max-width:700px){
+ .weather-ribbon{min-height:var(--weather-strip-height)}
+ .weather-chip--borough{font-size:11px;font-weight:800}
+ .weather-ribbon__window{flex:1 1 0%;min-width:0}
+ .weather-ribbon__control{flex:0 0 auto}
 }
