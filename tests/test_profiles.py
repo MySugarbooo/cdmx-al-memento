@@ -120,7 +120,7 @@ class ProfileTests(unittest.TestCase):
         self.assertIn("id:'bosque-tlalpan'", script)
         self.assertIn("id:'cumbres-ajusco'", script)
         self.assertIn('layerNature=L.layerGroup().addTo(map)', script)
-        self.assertIn("group=mode==='naturaleza'?layerNature:layerMonuments", script)
+        self.assertIn("group=mode==='naturaleza'?layerNature:mode==='museos'?layerMuseums:mode==='salud'?layerHealth:layerMonuments", script)
         self.assertIn('id="menu-superior"', home)
         self.assertIn('data-nav-shift="-1"', home)
         self.assertIn('scroll-snap-type:x proximity', css)
