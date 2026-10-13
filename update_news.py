@@ -355,7 +355,7 @@ def report_shell(title, body):
         '<meta name="viewport" content="width=device-width,initial-scale=1">'
         '<title>' + escape(title) + ' | CDMX AL MEMENTO</title>'
         '<link rel="stylesheet" href="/styles.css">'
-        '<link rel="stylesheet" href="/assets/clima-ticker.css?v=1"></head><body>'
+        '<link rel="stylesheet" href="/assets/clima-ticker.css?v=2"></head><body>'
         + weather +
         '<header><div class="wrap"><div class="top"><a class="logo" href="/">CDMX <span>AL MEMENTO</span></a></div>'
         '<nav><a href="/">Noticias</a><a href="/archivo/">Archivo mensual</a>'
@@ -363,7 +363,7 @@ def report_shell(title, body):
         '<main class="wrap prose">' + body + '</main><footer><div class="wrap">'
         '<a href="/politica-editorial.html">Política editorial</a> · '
         '<a href="mailto:' + MAIL + '">' + MAIL + '</a></div></footer>'
-        '<script src="/assets/clima-ticker.js?v=1" defer></script></body></html>'
+        '<script src="/assets/clima-ticker.js?v=2" defer></script></body></html>'
     )
 
 
