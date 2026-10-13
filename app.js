@@ -24,7 +24,7 @@ function articleVisual(a){
  if(!photo){figure.append(element('span','photo-unavailable','Fotografía no disponible'));return figure}
  const image=document.createElement('img');
  image.loading='lazy';image.decoding='async';image.width=640;image.height=400;
- const label=element('span','visual-label','FOTO DE ARCHIVO');
+ const label=element('span','visual-label','FOTOGRAFÍA DE CONTEXTO');
  const credit=element('a','photo-credit-inline');
  credit.target='_blank';credit.rel='noopener noreferrer';credit.title='Origen y licencia de la fotografía';
  let active=first;
@@ -35,7 +35,9 @@ function articleVisual(a){
   image.src=photoLibrary.src(id);
   image.alt='Fotografía de archivo: '+entry.topic+'. No muestra el suceso descrito.';
   image.dataset.photoId=id;
-  credit.textContent='© '+entry.author+' · '+entry.license;
+  credit.textContent='© '+entry.author+' · '+entry.license+
+   (entry.uploaded_at?' · Subida a Commons: '+entry.uploaded_at:'');
+
   credit.href=photoLibrary.source(id);
  }
  image.addEventListener('error',()=>{
@@ -46,6 +48,50 @@ function articleVisual(a){
  display(first);
  figure.append(image,label,credit);
  return figure;
+}
+// Cambiar también las fotografías de portada y temas cuando haya nuevas
+// imágenes verificadas. En caso de error, restaurar la foto y atribución anterior.
+function refreshStaticPhotos(){
+ if(!photoLibrary?.candidatesForArticle)return;
+ const rotation={};
+ for(const img of document.querySelectorAll('img[data-fallback-photo]')){
+  const oldSrc=img.getAttribute('src')||'';
+  const match=oldSrc.match(/^\/assets\/fotos\/([a-z0-9_]+)\.jpg$/);
+  if(!match)continue;
+  const original=photoLibrary.images[match[1]];
+  const cat=original?.category||'CDMX';
+  const fresh=photoLibrary.candidatesForArticle(cat).filter(id=>photoLibrary.images[id]?.uploaded_at);
+  if(!fresh.length)continue;
+  const nextId=fresh[(rotation[cat]||0)%fresh.length];
+  rotation[cat]=(rotation[cat]||0)+1;
+  const updated=photoLibrary.images[nextId];
+  const container=img.closest('.hero-main-photo,.topic-card,.resource-image,.photo-tile');
+  const credits=container?.querySelector('.hero-photo-label small,.topic-photo-credit,.photo-credit-over,figcaption span');
+  const caption=img.closest('figure')?.querySelector('figcaption strong');
+  const oldCredits=credits?.cloneNode(true);
+  const oldCaption=caption?.textContent;
+  const oldAlt=img.alt;
+  const creditText='© '+updated.author+' · '+updated.license+' · Wikimedia Commons';
+  const rollback=()=>{
+   if(credits&&oldCredits)credits.replaceWith(oldCredits);
+   if(caption&&oldCaption)caption.textContent=oldCaption;
+   img.alt=oldAlt;
+   img.src=oldSrc;
+  };
+  img.addEventListener('error',rollback,{once:true});
+  img.alt='Fotografía de contexto de '+cat+': '+updated.topic+'. No representa necesariamente la noticia.';
+  if(caption)caption.textContent=updated.topic;
+  if(credits){
+   credits.replaceChildren(document.createTextNode(creditText+' · '));
+   const link=document.createElement('a');
+   link.href=updated.source;
+   link.target='_blank';
+   link.rel='noopener noreferrer';
+   link.textContent='Fuente y licencia ↗';
+   credits.append(link);
+  }
+  img.src=photoLibrary.src(nextId);
+ }
 }
 function articleMeta(a){
  const meta=element('div','meta date-location');
@@ -262,9 +308,12 @@ Promise.allSettled([
  fetch('/news.json?t='+Date.now()).then(r=>{if(!r.ok)throw Error('news');return r.json()}),
  fetch('/reports.json?t='+Date.now()).then(r=>{if(!r.ok)throw Error('reports');return r.json()}),
  fetch('/assets/fotos/catalogo.json?t='+Date.now()).then(r=>{if(!r.ok)throw Error('catalog');return r.json()}),
- fetch('/archivo/meses.json?t='+Date.now()).then(r=>{if(!r.ok)throw Error('months');return r.json()})
-]).then(([news,reports,catalog,months])=>{
+ fetch('/archivo/meses.json?t='+Date.now()).then(r=>{if(!r.ok)throw Error('months');return r.json()}),
+ fetch('/assets/fotos/recientes.json?t='+Date.now()).then(r=>{if(!r.ok)throw Error('recent');return r.json()})
+]).then(([news,reports,catalog,months,recent])=>{
  if(catalog.status==='fulfilled')photoLibrary?.addCatalog(catalog.value);
+ if(recent.status==='fulfilled')photoLibrary?.addRecentCatalog(recent.value);
+ refreshStaticPhotos();
  if(news.status==='fulfilled'&&Array.isArray(news.value.articles)){
   articles=news.value.articles.filter(a=>a&&typeof a.title==='string'&&validLink(a.url));
   photoLibrary?.prepare(articles);
