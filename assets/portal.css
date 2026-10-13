@@ -1,0 +1,64 @@
+/* CDMX AL MEMENTO · Portal local: identidad rosa, lectura cómoda y móviles ligeros */
+:root{--portal-ink:#f9f5ff;--portal-muted:#bbc4d3;--portal-panel:#1a2030;--portal-line:#41506a;--portal-pink:#ee8eba}
+.portal-hero{padding:39px 32px;border:1px solid #915679;border-radius:22px;background:radial-gradient(ellipse at 89% 3%,#b52a7650,transparent 60%),linear-gradient(135deg,#2c2138,#141d2b);margin:29px 0}
+.portal-hero h1{font-size:clamp(32px,5vw,53px);line-height:1.12;margin:9px 0;color:#fff;letter-spacing:-1.5px}
+.portal-hero p{max-width:720px;color:var(--portal-muted)}
+.portal-hero .eyebrow{color:#ffb7db}
+.portal-layout{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:19px;margin:21px 0 35px}
+.portal-card{min-width:0;padding:23px;border-radius:18px;border:1px solid var(--portal-line);background:var(--portal-panel)}
+.portal-card h2{font-size:clamp(21px,2.4vw,27px);margin:3px 0 10px;line-height:1.2}
+.portal-card p{color:var(--portal-muted);font-size:14px}
+.portal-card h3{font-size:17px;line-height:1.35;margin:10px 0;color:#fff}
+.portal-card a:not(.btn){color:#ffd1e5}
+.portal-actions{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0 0}
+.portal-actions a,.portal-actions button,.portal-btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;border-radius:10px;border:1px solid #a86b96;background:#432941;padding:9px 14px;color:#fff!important;font-size:13px;font-weight:750;text-decoration:none;cursor:pointer}
+.portal-actions a:hover,.portal-actions button:hover,.portal-btn:hover{background:#73416a}
+.portal-select{display:block;width:100%;min-width:0;margin:12px 0 8px;border-radius:11px;border:1px solid #8e7a97;background:#29283a;color:#fff;padding:13px 14px;font:inherit}
+.portal-list{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.portal-list li{min-width:0;background:#222b3b;border:1px solid #36475d;border-radius:11px;padding:12px 14px}
+.portal-list a{display:block;text-decoration:none;color:#ffcee1;font-size:14px;font-weight:750;line-height:1.45}
+.portal-list a:hover{text-decoration:underline}
+.portal-list small,.portal-meta{display:block;color:#bfc9db;font-size:11px;line-height:1.6;margin-top:7px}
+.portal-featured{grid-column:1/-1}
+.portal-featured .portal-list{grid-template-columns:repeat(3,minmax(0,1fr))}
+.portal-note{background:#292438;border-left:3px solid #e97fac;border-radius:8px;padding:12px 15px;font-size:13px;color:#dce3ec}
+.portal-badge{display:inline-block;padding:5px 9px;border-radius:99px;background:#4c2c4c;color:#ffcbdf;font-size:11px;font-weight:850;letter-spacing:.3px}
+.portal-line-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:18px 0 26px}
+.metro-line-card{border:1px solid #445269;background:#202838;border-radius:14px;padding:14px;min-width:0}
+.metro-line-card:focus-within{outline:2px solid #ffbddd}
+.metro-line-card button{border:none;background:transparent;color:#fff;text-align:left;padding:0;cursor:pointer;width:100%;font:inherit}
+.metro-line-card strong{display:block;font-size:23px;font-weight:950;line-height:1.2;margin:3px 0 7px}
+.metro-line-card small{display:block;color:#c0ccdb;font-size:11px}
+.metro-line-card[data-active="true"]{border-color:#f0aaca;background:#402941}
+.metro-line-indicator{display:block;width:100%;height:7px;border-radius:4px}
+.portal-quick-links{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:15px 0 28px}
+.portal-quick-links a{background:#202b3d;color:#ffd0e2;text-decoration:none;padding:17px;border:1px solid #456079;border-radius:13px;font-size:14px;font-weight:800}
+.portal-quick-links a:hover{background:#33415b}
+.fav-save{align-self:flex-start;background:#3a2741;color:#ffe1ee;border:1px solid #9b6389;border-radius:9px;padding:6px 10px;font-size:12px;cursor:pointer;margin-top:12px}
+.fav-save[aria-pressed="true"]{background:#873660;border-color:#dd89b5}
+.fav-save:hover{filter:brightness(1.15)}
+.portal-favorite-item{display:flex;gap:12px;align-items:start;justify-content:space-between}
+.portal-favorite-item .portal-btn{flex-shrink:0}
+.portal-row{display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap}
+.portal-today{margin:21px 0 22px;padding:22px;border:1px solid #955f85;border-radius:18px;background:linear-gradient(125deg,#292239,#1a2534)}
+.portal-today h2{margin:5px 0 15px;font-size:clamp(24px,3vw,32px)}
+.portal-today .portal-list{grid-template-columns:repeat(3,minmax(0,1fr))}
+.portal-mini-local{display:grid;grid-template-columns:1fr 1.5fr;gap:16px;align-items:start}
+.portal-mini-local .portal-select{margin-top:2px}
+.portal-info{color:#bfc9d9;font-size:13px}
+@media(max-width:980px){
+ .portal-line-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+ .portal-featured .portal-list{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:700px){
+ .portal-hero{padding:24px 20px;margin:18px 0;border-radius:15px}
+ .portal-layout{grid-template-columns:1fr}
+ .portal-card{padding:17px}
+ .portal-featured .portal-list,.portal-today .portal-list{grid-template-columns:1fr}
+ .portal-line-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .portal-quick-links{grid-template-columns:1fr 1fr}
+ .portal-mini-local{grid-template-columns:1fr}
+ .portal-today{padding:18px}
+}
+@media(max-width:430px){.portal-quick-links{grid-template-columns:1fr}.portal-hero h1{letter-spacing:-.6px}}
+@media(prefers-reduced-motion:reduce){.portal-card *,.portal-line-grid *{animation:none!important;transition:none!important}}
