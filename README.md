@@ -128,3 +128,10 @@ El extremo derecho de la tira rosa muestra el **día de la semana, día, mes y a
 
 ### Calendario laboral
 Se añadió `/herramientas/calendario-laboral.html` con fechas generales de descanso obligatorio 2026–2035, cálculo local de lunes trasladados y fuente LFT. Las celebraciones culturales de las alcaldías se distinguen de los descansos obligatorios. No se piden datos personales.
+
+
+### Portada de noticias y análisis editorial (octubre 2026)
+
+El módulo de accesos a guías, agenda, comercios y calculadoras está **debajo de los titulares y de la galería** en la portada. En móvil es una franja horizontal desplazable a la derecha en lugar de un bloque grande que empuje las noticias hacia abajo.
+
+Cada reporte diario generado por `update_news.py` contiene una lectura editorial estructurada: tesis, qué dicen los titulares, qué falta por confirmar, opinión editorial empática separada de los hechos, conclusión razonada y enlaces a los medios con fechas. Se usa el módulo `scripts/analisis_editorial.py`, que exige al menos dos medios distintos con encabezados pertinentes a un mismo tema antes de ofrecer una lectura temática. Si no los encuentra, **no genera afirmaciones concretas sin sustento** y explica sus límites. Nunca inventa entrevistas ni noticias de campo. La portada enlaza automáticamente al reporte más reciente.
