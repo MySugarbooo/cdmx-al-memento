@@ -9,6 +9,8 @@ on:
       - '.github/workflows/news.yml'
       - 'update_news.py'
       - 'scripts/generar_guias.py'
+      - 'scripts/analisis_editorial.py'
+      - 'tests/test_editorial.py'
       - 'assets/agenda.js'
       - 'assets/negocios.js'
       - 'assets/herramientas.js'
