@@ -476,7 +476,7 @@ def generate_report():
         "politica-editorial.html", "creditos-fotograficos.html",
         "guias/", "reportes/", "archivo/", "alcaldias/", "mapa/",
         "cerca/", "movilidad/", "avisos/",
-        "descubre/", "agenda/", "negocios/", "herramientas/", "publicidad/", "herramientas/calendario-laboral.html",
+        "noticias/", "descubre/", "agenda/", "negocios/", "herramientas/", "publicidad/", "herramientas/calendario-laboral.html",
     ]
     urls += [
         "guias/" + name for name in (
