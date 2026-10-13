@@ -40,8 +40,8 @@ function conditions(symbol){
   if(s.includes('snow')||s.includes('sleet'))return {description:'Precipitación invernal',icon:'🌨️'};
   if(s.includes('rain')||s.includes('drizzle'))return {description:s.includes('heavy')?'Lluvia intensa':'Posibilidad de lluvia',icon:'🌧️'};
   if(s.includes('fog'))return {description:'Neblina',icon:'🌫️'};
-  if(s.includes('cloudy'))return {description:'Nublado',icon:'☁️'};
   if(s.includes('partlycloudy'))return {description:'Parcialmente nublado',icon:'⛅'};
+  if(s.includes('cloudy'))return {description:'Nublado',icon:'☁️'};
   if(s.includes('fair'))return {description:'Cielo mayormente despejado',icon:'🌤️'};
   if(s.includes('clearsky'))return {description:'Cielo despejado',icon:'☀️'};
   return {description:'Clima variable',icon:'🌸'};
