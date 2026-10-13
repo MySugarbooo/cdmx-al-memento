@@ -78,7 +78,7 @@ class RecentPhotoTests(unittest.TestCase):
         with TemporaryDirectory() as folder:
             dest = Path(folder) / "recientes.json"
             with patch.object(photos, "DEST", dest):
-                with patch.object(photos, "QUERIES", {"Metro": ("Metro CDMX",)}):
+                with patch.object(photos, "QUERIES", {"Metro": ("Metro CDMX",)}), patch.object(photos, "request_curated", return_value={}):
                     with patch.object(photos, "request_photos", return_value=[sample_page()]) as get:
                         output = photos.update(self.now)
                         self.assertEqual(len(output["photos"]), 1)
