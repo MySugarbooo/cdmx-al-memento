@@ -52,7 +52,7 @@ class MonetizacionTests(unittest.TestCase):
             self.assertTrue(event["official"].startswith("https://"))
             self.assertIn(event["borough"],txt("assets/agenda.js"))
         js=txt("assets/agenda.js")
-        self.assertIn("e.ends>=now",js)
+        self.assertIn("x.ends>=now",js)
         self.assertIn("No tenemos eventos con fecha",js)
 
     def test_market_directory_and_sponsorship_are_honest(self):
