@@ -12,6 +12,7 @@ on:
       - 'assets/agenda.js'
       - 'assets/negocios.js'
       - 'assets/herramientas.js'
+      - 'assets/calendario-laboral.js'
       - 'assets/explora-list.js'
       - 'agenda/eventos.json'
       - 'tests/test_monetizacion.py'
@@ -50,6 +51,7 @@ jobs:
           node --check assets/agenda.js
           node --check assets/negocios.js
           node --check assets/herramientas.js
+          node --check assets/calendario-laboral.js
           node --check assets/explora-list.js
           node --check mapa/mapa.js
       - name: Recopilar titulares y actualizar archivo anual
