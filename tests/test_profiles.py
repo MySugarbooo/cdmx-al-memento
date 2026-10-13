@@ -73,7 +73,7 @@ class ProfileTests(unittest.TestCase):
         self.assertIn("id=\"home-view\"", home)
         self.assertIn("id=\"topic-stage-grid\"", home)
         self.assertIn(".topic-stage[hidden],.home-view[hidden]", css)
-        self.assertIn('/styles.css?v=20261013-cercadeti', home)
+        self.assertIn('/styles.css?v=20261013-slide', home)
         self.assertIn('/app.js?v=20261013-deslizamiento', home)
 
 
