@@ -24,6 +24,26 @@ USER_AGENT = "CDMXAlMemento/3.0 (https://cdmx-al-memento.pages.dev/contacto.html
 CHECK_EVERY_HOURS = 23
 MAX_AGE_DAYS = 180
 MAX_PER_TOPIC = 4
+# Archivos concretos cuya ubicación y fecha han sido revisadas en sus fichas de Commons.
+# Sirven como base; además se siguen descubriendo nuevas imágenes diariamente.
+CURATED = {
+    'Metro': (
+        'Metro Hangares (2026) 2.jpg',
+        'Metro Terminal Aérea (2026) 1.jpg',
+        'Metro Bellas Artes - Línea 2 del Metro de la Ciudad de México - 2026 - 03.jpg',
+    ),
+    'Movilidad': (
+        'Metrobús Hidalgo L7 (2026).jpg',
+        'Metrobús Manuela Saénz (701851600 1422559626579369 6048225853831060350 n).jpg',
+    ),
+    'Cultura': (
+        'Marcha del Orgullo en la Ciudad de México, 2026 01.jpg',
+        'Museo del Cacao & Chocolate, CDMX 2026.jpg',
+    ),
+    'CDMX': (
+        'Edificios, Paseo de la Reforma (CDMX) 0131.jpg',
+    ),
+}
 
 QUERIES = {
     "CDMX": ("Ciudad de México", "Mexico City"),
@@ -112,12 +132,12 @@ def matches_place(title, category):
     return any(fold(keyword) in words for keyword in KEYWORDS[category])
 
 
-def candidate(page, category, now):
+def candidate(page, category, now, verified_location=False):
     title = str(page.get("title", ""))
     if not title.startswith("File:") or not re.search(r"\.(jpe?g|png)$", title, re.I):
         return None
     filename = title[5:]
-    if not matches_place(filename, category):
+    if not verified_location and not matches_place(filename, category):
         return None
     # Un título que identifica un año anterior no se debe clasificar como
     # fotografía actual por el simple hecho de haber sido subida ahora.
@@ -192,6 +212,27 @@ def request_photos(search):
     return result.get("query", {}).get("pages", [])
 
 
+def request_curated():
+    """Obtiene los metadatos de archivos revisados y no los sustituye por copias locales."""
+    titles = ["File:" + title for files in CURATED.values() for title in files]
+    if not titles:
+        return {}
+    params = urllib.parse.urlencode({
+        "action": "query", "titles": "|".join(titles),
+        "prop": "imageinfo",
+        "iiprop": "url|extmetadata|timestamp|size",
+        "iiurlwidth": "1100",
+        "iiextmetadatafilter": "Artist|LicenseShortName|LicenseUrl|DateTimeOriginal",
+        "format": "json", "formatversion": "2",
+    })
+    req = urllib.request.Request(ENDPOINT + "?" + params, headers={"User-Agent": USER_AGENT})
+    with urllib.request.urlopen(req, timeout=15) as response:
+        result = json.loads(response.read(1_800_000))
+    if "error" in result:
+        raise ValueError("Wikimedia API: " + str(result["error"])[:150])
+    return {page.get("title"): page for page in result.get("query", {}).get("pages", [])}
+
+
 def load():
     try:
         obj = json.loads(DEST.read_text(encoding="utf-8"))
@@ -214,8 +255,21 @@ def update(now=None, force=False):
     seen = set()
     photos = []
     successful_requests = 0
+    try:
+        curated_pages = request_curated()
+        successful_requests += 1
+    except (OSError, ValueError, KeyError) as exc:
+        print("Wikimedia (selección contrastada):", str(exc)[:120])
+        curated_pages = {}
     for category, queries in QUERIES.items():
         count = 0
+        for filename in CURATED.get(category, ()):
+            page = curated_pages.get("File:" + filename)
+            result = candidate(page, category, now, verified_location=True) if page else None
+            if result and result["source"] not in seen:
+                seen.add(result["source"])
+                photos.append(result)
+                count += 1
         for phrase in queries:
             if count >= MAX_PER_TOPIC:
                 break
