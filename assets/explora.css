@@ -65,3 +65,11 @@
 }
 @media(max-width:400px){.explore-grid{grid-template-columns:1fr}}
 @media(prefers-reduced-motion:reduce){.explore-card{transition:none}}
+
+/* Rápido en teléfonos sin impedir la lectura ni cambiar el orden editorial. */
+header>.wrap>nav{display:flex;align-items:center;overflow-x:auto;white-space:nowrap;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch}
+header>.wrap>nav a{flex-shrink:0}
+.explore-card img{height:auto;aspect-ratio:16/10}
+@media(min-width:660px){
+ .explore-grid .explore-card{content-visibility:auto;contain-intrinsic-size:auto 310px}
+}
