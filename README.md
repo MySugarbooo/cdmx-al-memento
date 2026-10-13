@@ -106,10 +106,10 @@ El workflow horario sigue realizando la actualización de titulares y la comprob
 
 - Una **tira horizontal animada y compacta** aparece en la parte superior de la portada, el mapa, alcaldías, guías, reportes y páginas informativas. Es adaptable al celular, se detiene cuando el cursor o foco está encima y respeta `prefers-reduced-motion`.
 - Muestra **pronóstico meteorológico estimado**, temperatura, condiciones, humedad, viento, hora del pronóstico y alcaldía seleccionada. Nunca se inventan datos si el proveedor no responde.
-- El selector de la propia tira usa `cdmx.memento.alcaldia.v1` en `localStorage` y se sincroniza en la misma pestaña con las noticias personalizadas de `/cerca/`. No se solicita ubicación GPS ni domicilio.
+- La tira ya no incluye un selector desplegable, que resultaba poco legible en celulares. La elección de alcaldía permanece en `/cerca/` y su preferencia local `cdmx.memento.alcaldia.v1` sigue resaltando esa alcaldía dentro de las 16 noticias meteorológicas. No se usa GPS ni domicilio.
 - El cliente `assets/clima-ticker.js` consulta exclusivamente `/api/clima?alcaldia=...`. La función de Cloudflare Pages `functions/api/clima.js` acepta solo las 16 alcaldías conocidas y consulta una coordenada representativa por cada una.
 - Origen: **MET Norway Locationforecast 2.0** (`https://api.met.no/`), con atribución visible y enlace al proveedor. Sus datos CC BY admiten reutilización comercial con atribución. La función se identifica por `User-Agent` y reutiliza los datos de forma temporal según la vigencia de la respuesta para evitar consultas innecesarias. No se necesita una API key.
-- Se intenta renovar la lectura cada **15 minutos** mientras la página está visible. La hora indicada es la hora del pronóstico; **no** es una medición instrumental tomada en la alcaldía ni una alerta meteorológica oficial.
+- Se intenta renovar la lectura cada **30 minutos** mientras la página está visible. La hora indicada es la hora del pronóstico; **no** es una medición instrumental tomada en la alcaldía ni una alerta meteorológica oficial.
 - `tests/test_weather.py` verifica inclusión del widget, las 16 alcaldías, accesibilidad, atribución, código de integración y la plantilla de nuevos reportes.
 
 
