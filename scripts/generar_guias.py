@@ -148,60 +148,60 @@ def build():
         }
         title="Qué conocer en "+name+" | CDMX AL MEMENTO"
         desc="Guía cultural e histórica de "+name+": "+", ".join(item["landmarks"])+". Lugares, consejos y fuentes."
-        content=(
-            '<!doctype html><html lang="es-MX"><head><meta charset="utf-8">'
-            '<meta name="viewport" content="width=device-width,initial-scale=1">'
-            '<title>'+e(title)+'</title><meta name="description" content="'+e(desc)+'">'
-            '<meta name="theme-color" content="#141623"><link rel="canonical" href="'+SITE+'/descubre/'+e(slug)+'.html">'
-            '<link rel="icon" type="image/svg+xml" href="/favicon.svg">'
-            '<link rel="stylesheet" href="/styles.css?v=20261013-cercadeti">'
-            '<link rel="stylesheet" href="/assets/portal.css?v=1">'
-            '<link rel="stylesheet" href="/assets/explora.css?v=1">'
-            '<link rel="stylesheet" href="/assets/clima-ticker.css?v=4">'
-            '<script type="application/ld+json">'+json.dumps(article,ensure_ascii=False).replace("<","\\u003c")+'</script>'
-            '</head><body><a class="skip" href="#contenido">Saltar al contenido</a>'
-            '<div id="weather-ribbon" class="weather-ribbon" role="region" aria-label="Clima estimado por alcaldía">'
-            '<a class="weather-ribbon__brand" href="/cerca/">🌸 CLIMA</a>'
-            '<div class="weather-ribbon__window"><div class="weather-ribbon__track" id="weather-ribbon-track">'
-            '<div class="weather-ribbon__set"><span class="weather-chip">🌤️ Consultando el clima…</span></div></div></div>'
-            '<span class="weather-sr-only" id="weather-screen-reader" role="status" aria-live="polite"></span></div>'
-            '<header><div class="wrap"><div class="top"><a class="logo" href="/">CDMX <span>AL MEMENTO</span></a></div>'
-            '<nav><a href="/">Noticias</a><a href="/descubre/">16 alcaldías</a><a href="/agenda/">Agenda</a>'
-            '<a href="/negocios/">Comercios</a><a href="/herramientas/">Herramientas</a><a href="/mapa/">Mapa</a></nav></div></header>'
-            '<main id="contenido" class="wrap"><nav class="explore-breadcrumb">'
-            '<a href="/">Inicio</a> › <a href="/descubre/">Descubre</a> › '+e(name)+'</nav>'
-            '<section class="explore-hero"><p class="eyebrow">GUÍA CULTURAL · 16 ALCALDÍAS</p>'
-            '<h1>Qué conocer en '+e(name)+': historia y lugares</h1><p>'+e(intro)+'</p></section>'
-            '<div class="explore-cols"><article class="explore-article">'
-            '<p class="explore-tag">GUÍA EDITORIAL · OCTUBRE DE 2026</p>'+legend
-            '<h2>Historia e identidad de '+e(name)+'</h2>'
-            +''.join('<p>'+e(paragraph)+'</p>' for paragraph in item["history"])+
-            '<h2>Tres maneras de explorar el territorio</h2><p>'+e(point1)+'</p><p>'+e(point2)+'</p>'
-            '<ul>'+places+'</ul><h2>Cómo planear tu visita</h2><p>'+e(advice)+'</p>'
-            '<p>No todas las referencias de esta guía están cerca entre sí: usa el mapa para calcular distancias reales. '
-            'Los horarios de entrada, los cierres, la disponibilidad de servicios y los precios pueden cambiar. '
-            'Verifícalos en la institución responsable antes de salir.</p>'
-            '<h2>Un recorrido respetuoso</h2><p>El patrimonio de cada alcaldía también es el espacio cotidiano '
-            'de vecinos, comerciantes y comunidades. Evita entrar a terrenos agrícolas sin permiso, respeta '
-            'las ceremonias y deposita los residuos en los lugares habilitados. Para visitar áreas '
-            'naturales, comprueba el clima y los senderos autorizados.</p>'
-            '<h2>Fuentes y contexto</h2><p>Esta guía sintetiza fuentes públicas y ofrece recomendaciones '
-            'para planear una visita; no confirma horarios ni inventa eventos.</p>'
-            '<ul>'+source_list+
-            '<li><a href="https://cartelera.cdmx.gob.mx/" target="_blank" rel="noopener noreferrer">Cartelera oficial CDMX ↗</a></li></ul>'
-            '</article><aside class="explore-side"><p class="explore-tag">MÁS INFORMACIÓN</p><h2>'+e(name)+'</h2>'
-            '<ul class="explore-linklist"><li><a href="/alcaldias/?alcaldia='+e(name)+'#noticias-alcaldia">Noticias locales ↗</a></li>'
-            '<li><a href="/agenda/">Agenda y eventos ↗</a></li>'
-            '<li><a href="/mapa/">Mapa interactivo ↗</a></li>'
-            '<li><a href="/negocios/">Directorio comercial ↗</a></li>'
-            '<li><a href="/descubre/">Explorar las 16 alcaldías ↗</a></li></ul>'
-            '<p class="explore-note">Todas las alcaldías cuentan con el mismo espacio editorial, '
-            'sin posiciones pagadas entre las guías.</p></aside></div></main>'
-            '<footer><div class="wrap">CDMX AL MEMENTO · '
-            '<a href="/privacidad.html">Privacidad</a> · <a href="/politica-editorial.html">Política editorial</a> · '
-            '<a href="/publicidad/">Publicidad y transparencia</a></div></footer>'
-            '<script defer src="/assets/clima-ticker.js?v=4"></script></body></html>'
-        )
+        content="".join([
+            '<!doctype html><html lang="es-MX"><head><meta charset="utf-8">',
+            '<meta name="viewport" content="width=device-width,initial-scale=1">',
+            '<title>'+e(title)+'</title><meta name="description" content="'+e(desc)+'">',
+            '<meta name="theme-color" content="#141623"><link rel="canonical" href="'+SITE+'/descubre/'+e(slug)+'.html">',
+            '<link rel="icon" type="image/svg+xml" href="/favicon.svg">',
+            '<link rel="stylesheet" href="/styles.css?v=20261013-cercadeti">',
+            '<link rel="stylesheet" href="/assets/portal.css?v=1">',
+            '<link rel="stylesheet" href="/assets/explora.css?v=1">',
+            '<link rel="stylesheet" href="/assets/clima-ticker.css?v=4">',
+            '<script type="application/ld+json">'+json.dumps(article,ensure_ascii=False).replace("<","\\u003c")+'</script>',
+            '</head><body><a class="skip" href="#contenido">Saltar al contenido</a>',
+            '<div id="weather-ribbon" class="weather-ribbon" role="region" aria-label="Clima estimado por alcaldía">',
+            '<a class="weather-ribbon__brand" href="/cerca/">🌸 CLIMA</a>',
+            '<div class="weather-ribbon__window"><div class="weather-ribbon__track" id="weather-ribbon-track">',
+            '<div class="weather-ribbon__set"><span class="weather-chip">🌤️ Consultando el clima…</span></div></div></div>',
+            '<span class="weather-sr-only" id="weather-screen-reader" role="status" aria-live="polite"></span></div>',
+            '<header><div class="wrap"><div class="top"><a class="logo" href="/">CDMX <span>AL MEMENTO</span></a></div>',
+            '<nav><a href="/">Noticias</a><a href="/descubre/">16 alcaldías</a><a href="/agenda/">Agenda</a>',
+            '<a href="/negocios/">Comercios</a><a href="/herramientas/">Herramientas</a><a href="/mapa/">Mapa</a></nav></div></header>',
+            '<main id="contenido" class="wrap"><nav class="explore-breadcrumb">',
+            '<a href="/">Inicio</a> › <a href="/descubre/">Descubre</a> › '+e(name)+'</nav>',
+            '<section class="explore-hero"><p class="eyebrow">GUÍA CULTURAL · 16 ALCALDÍAS</p>',
+            '<h1>Qué conocer en '+e(name)+': historia y lugares</h1><p>'+e(intro)+'</p></section>',
+            '<div class="explore-cols"><article class="explore-article">',
+            '<p class="explore-tag">GUÍA EDITORIAL · OCTUBRE DE 2026</p>'+legend,
+            '<h2>Historia e identidad de '+e(name)+'</h2>',
+            ''.join('<p>'+e(paragraph)+'</p>' for paragraph in item["history"]),
+            '<h2>Tres maneras de explorar el territorio</h2><p>'+e(point1)+'</p><p>'+e(point2)+'</p>',
+            '<ul>'+places+'</ul><h2>Cómo planear tu visita</h2><p>'+e(advice)+'</p>',
+            '<p>No todas las referencias de esta guía están cerca entre sí: usa el mapa para calcular distancias reales. ',
+            'Los horarios de entrada, los cierres, la disponibilidad de servicios y los precios pueden cambiar. ',
+            'Verifícalos en la institución responsable antes de salir.</p>',
+            '<h2>Un recorrido respetuoso</h2><p>El patrimonio de cada alcaldía también es el espacio cotidiano ',
+            'de vecinos, comerciantes y comunidades. Evita entrar a terrenos agrícolas sin permiso, respeta ',
+            'las ceremonias y deposita los residuos en los lugares habilitados. Para visitar áreas ',
+            'naturales, comprueba el clima y los senderos autorizados.</p>',
+            '<h2>Fuentes y contexto</h2><p>Esta guía sintetiza fuentes públicas y ofrece recomendaciones ',
+            'para planear una visita; no confirma horarios ni inventa eventos.</p>',
+            '<ul>'+source_list,
+            '<li><a href="https://cartelera.cdmx.gob.mx/" target="_blank" rel="noopener noreferrer">Cartelera oficial CDMX ↗</a></li></ul>',
+            '</article><aside class="explore-side"><p class="explore-tag">MÁS INFORMACIÓN</p><h2>'+e(name)+'</h2>',
+            '<ul class="explore-linklist"><li><a href="/alcaldias/?alcaldia='+e(name)+'#noticias-alcaldia">Noticias locales ↗</a></li>',
+            '<li><a href="/agenda/">Agenda y eventos ↗</a></li>',
+            '<li><a href="/mapa/">Mapa interactivo ↗</a></li>',
+            '<li><a href="/negocios/">Directorio comercial ↗</a></li>',
+            '<li><a href="/descubre/">Explorar las 16 alcaldías ↗</a></li></ul>',
+            '<p class="explore-note">Todas las alcaldías cuentan con el mismo espacio editorial, ',
+            'sin posiciones pagadas entre las guías.</p></aside></div></main>',
+            '<footer><div class="wrap">CDMX AL MEMENTO · ',
+            '<a href="/privacidad.html">Privacidad</a> · <a href="/politica-editorial.html">Política editorial</a> · ',
+            '<a href="/publicidad/">Publicidad y transparencia</a></div></footer>',
+            '<script defer src="/assets/clima-ticker.js?v=4"></script></body></html>',
+        ])
         target=DEST/(slug+".html")
         if not target.exists() or target.read_text(encoding="utf-8")!=content:
             target.write_text(content,encoding="utf-8")
