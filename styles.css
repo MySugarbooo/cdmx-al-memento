@@ -520,3 +520,24 @@ html,body{overflow-x:clip}
 @media(prefers-reduced-motion:reduce){
  .topic-transition-ghost{display:none}
 }
+
+/* Deslizamiento entre documentos nativo cuando el navegador lo admite.
+   En iPhone sin View Transitions funciona el respaldo JavaScript. */
+@view-transition{navigation:auto}
+@keyframes memento-page-leave{
+ from{transform:translateX(0)}
+ to{transform:translateX(-100%)}
+}
+@keyframes memento-page-arrive{
+ from{transform:translateX(100%)}
+ to{transform:translateX(0)}
+}
+::view-transition-old(root){
+ animation:memento-page-leave 670ms cubic-bezier(.22,.61,.36,1) both
+}
+::view-transition-new(root){
+ animation:memento-page-arrive 670ms cubic-bezier(.22,.61,.36,1) both
+}
+@media(prefers-reduced-motion:reduce){
+ ::view-transition-old(root),::view-transition-new(root){animation:none}
+}
