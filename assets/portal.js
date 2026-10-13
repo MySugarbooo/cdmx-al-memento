@@ -3,7 +3,7 @@
    Noticias recopiladas del RSS: NO son alertas oficiales de operación en vivo. */
 (()=>{
  const KEY_BOROUGH='cdmx.memento.alcaldia.v1',KEY_FAV='cdmx.memento.favoritos.v1';
- const BOROUGHS=["La Magdalena Contreras","Álvaro Obregón","Azcapotzalco","Benito Juárez","Coyoacán","Cuajimalpa de Morelos","Cuauhtémoc","Gustavo A. Madero","Iztacalco","Iztapalapa","Miguel Hidalgo","Milpa Alta","Tláhuac","Tlalpan","Venustiano Carranza","Xochimilco"];
+ const BOROUGHS=["Álvaro Obregón","Azcapotzalco","Benito Juárez","Coyoacán","Cuajimalpa de Morelos","Cuauhtémoc","Gustavo A. Madero","Iztacalco","Iztapalapa","La Magdalena Contreras","Miguel Hidalgo","Milpa Alta","Tláhuac","Tlalpan","Venustiano Carranza","Xochimilco"];
  const $=id=>document.getElementById(id);
  const validArticle=a=>a&&typeof a.title==='string'&&typeof a.url==='string'&&/^https:\/\/news\.google\.com\//.test(a.url);
  const cleanBorough=name=>BOROUGHS.includes(name)?name:'';
