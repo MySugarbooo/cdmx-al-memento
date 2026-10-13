@@ -165,7 +165,8 @@ def candidate(page, category, now, verified_location=False):
     thumb = str(item.get("thumburl", ""))
     source = str(item.get("descriptionurl", ""))
     # Evitar servidores de terceros o enlaces arbitrarios.
-    if not thumb.startswith("https://upload.wikimedia.org/wikipedia/commons/"):
+    if not thumb.startswith(("https://upload.wikimedia.org/wikipedia/commons/",
+                             "https://thumb.wikimedia.org/wikipedia/commons/thumb/")):
         return None
     if not source.startswith("https://commons.wikimedia.org/wiki/File:"):
         return None
