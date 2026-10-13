@@ -36,7 +36,16 @@
   {id:'fuentes-brotantes',type:'natural',name:'Fuentes Brotantes de Tlalpan',kind:'naturaleza',emoji:'💧',lat:19.285833,lng:-99.179444,area:'Tlalpan',info:'Parque nacional con manantiales y espacios arbolados. Marcador de referencia.'},
   {id:'cerro-estrella',type:'natural',name:'Cerro de la Estrella',kind:'naturaleza',emoji:'🌄',lat:19.338056,lng:-99.091389,area:'Iztapalapa',info:'Cerro con vegetación de matorral y valor ecológico y cultural. Punto de referencia.'},
   {id:'ejidos-xochimilco',type:'natural',name:'Zona de conservación de Xochimilco',kind:'naturaleza',emoji:'🪷',lat:19.278056,lng:-99.077778,area:'Xochimilco y San Gregorio Atlapulco',info:'Zona de conservación ecológica en el paisaje lacustre y chinampero. Pin orientativo, no entrada.'},
-  {id:'sierra-guadalupe',type:'natural',name:'Sierra de Guadalupe',kind:'naturaleza',emoji:'🌵',lat:19.566111,lng:-99.119444,area:'Gustavo A. Madero',info:'Área natural protegida al norte de CDMX. Marcador aproximado del área.'}
+  {id:'sierra-guadalupe',type:'natural',name:'Sierra de Guadalupe',kind:'naturaleza',emoji:'🌵',lat:19.566111,lng:-99.119444,area:'Gustavo A. Madero',info:'Área natural protegida al norte de CDMX. Marcador aproximado del área.'},
+  {id:'bosque-chapultepec',type:'natural',name:'Bosque de Chapultepec',kind:'naturaleza',emoji:'🌳',lat:19.4205,lng:-99.1930,area:'Miguel Hidalgo',info:'Parque urbano histórico con museos, lagos y zonas boscosas. Punto representativo, no acceso.'},
+  {id:'museo-antropologia',type:'museo',name:'Museo Nacional de Antropología',kind:'museo',emoji:'🏺',lat:19.4260,lng:-99.1864,area:'Chapultepec · Miguel Hidalgo',info:'Museo dedicado a las culturas de México, con colecciones arqueológicas y etnográficas. Comprueba horario en la web oficial.'},
+  {id:'museo-frida-kahlo',type:'museo',name:'Museo Frida Kahlo',kind:'museo',emoji:'🎨',lat:19.3550,lng:-99.1625,area:'Del Carmen · Coyoacán',info:'Museo instalado en la Casa Azul, relacionado con la vida y obra de Frida Kahlo. Consulta entradas y horarios oficiales.'},
+  {id:'museo-memoria',type:'museo',name:'Museo Memoria y Tolerancia',kind:'museo',emoji:'🕊️',lat:19.4336,lng:-99.1455,area:'Centro · Cuauhtémoc',info:'Museo enfocado en derechos humanos, memoria histórica y cultura de paz.'},
+  {id:'templo-mayor',type:'museo',name:'Zona Arqueológica del Templo Mayor',kind:'museo',emoji:'🏺',lat:19.4344,lng:-99.1323,area:'Centro Histórico · Cuauhtémoc',info:'Sitio arqueológico del antiguo recinto sagrado mexica. Consulta horarios y acceso con el INAH.'},
+  {id:'cuicuilco',type:'museo',name:'Zona Arqueológica de Cuicuilco',kind:'museo',emoji:'🏛️',lat:19.3016,lng:-99.1837,area:'Tlalpan',info:'Zona arqueológica al sur de la ciudad, conocida por su basamento circular. Comprueba acceso oficial.'},
+  {id:'hospital-general',type:'salud',name:'Hospital General de México',kind:'salud',emoji:'🏥',lat:19.4125,lng:-99.1525,area:'Doctores · Cuauhtémoc',info:'Institución de atención médica. Marcador orientativo; no confirma admisión, servicios ni disponibilidad de urgencias.'},
+  {id:'hospital-siglo-xxi',type:'salud',name:'Centro Médico Nacional Siglo XXI',kind:'salud',emoji:'🏥',lat:19.4069,lng:-99.1555,area:'Doctores · Cuauhtémoc',info:'Complejo hospitalario del IMSS. Marcador de referencia, no sustituye información de acceso o atención.'},
+  {id:'hospital-la-raza',type:'salud',name:'Centro Médico Nacional La Raza',kind:'salud',emoji:'🏥',lat:19.4700,lng:-99.1440,area:'La Raza · Azcapotzalco',info:'Complejo médico del IMSS. Punto aproximado, sin información sobre camas, urgencias o disponibilidad.'}
  ];
  function esc(value){return String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
  function art(kind){
@@ -53,7 +62,9 @@
    biblioteca:'<rect x="12" y="12" width="40" height="44" rx="2" fill="'+cream+'"/><path d="M12 20h40M12 31h40M12 42h40M24 12v44m16-44v44" fill="none" stroke="'+pink+'" stroke-width="4"/><path d="M19 25l6 5m15-5-7 6m-14 7 6-5m15 4-7-7" stroke="'+line+'" stroke-width="2"/>',
    soumaya:'<path d="M26 8Q45 4 42 20Q39 32 47 52L50 56H17Q10 46 20 31Q29 19 26 8Z" fill="'+blue+'"/><path d="M24 16h16M19 25h22M15 36h30M16 46h31" stroke="'+cream+'" stroke-width="3"/><path d="M26 8Q45 4 42 20Q39 32 47 52L50 56H17Q10 46 20 31Q29 19 26 8Z" fill="none" stroke="'+line+'" stroke-width="2"/>',
    catedral:'<path d="M12 31h40v24H12Z" fill="'+cream+'"/><path d="M10 30V13h12v18M42 31V13h12v18" fill="'+pink+'"/><path d="M16 12V6m-5 4h10M48 12V6m-5 4h10" stroke="'+line+'" stroke-width="2"/><path d="M24 55V42q8-8 16 0v13" fill="'+blue+'"/>',
-   naturaleza:'<path d="M31 55V37" stroke="#85563c" stroke-width="6"/><path d="M32 8 13 31h9L9 43h46L42 31h9Z" fill="#6bc9a0" stroke="#2b715c" stroke-width="3"/><path d="M25 24h14M20 35h24" stroke="#e9ffe9" stroke-width="2"/>'
+   naturaleza:'<path d="M31 55V37" stroke="#85563c" stroke-width="6"/><path d="M32 8 13 31h9L9 43h46L42 31h9Z" fill="#6bc9a0" stroke="#2b715c" stroke-width="3"/><path d="M25 24h14M20 35h24" stroke="#e9ffe9" stroke-width="2"/>',
+   museo:'<path d="M8 26 32 12 56 26v4H8Z" fill="#dcb4f8"/><path d="M12 50h40v7H12z" fill="#ffdb8b"/><path d="M17 30v20m10-20v20m10-20v20m10-20v20" stroke="#8b699f" stroke-width="5"/>',
+   salud:'<rect x="10" y="20" width="44" height="36" rx="4" fill="#c8edf5"/><path d="M27 25h10v8h8v10h-8v8H27v-8h-8V33h8Z" fill="#dd5076"/>'
   };
   const drawing=pieces[kind]||pieces.palacio;
   return '<div class="mapa-pin"><svg viewBox="0 0 64 64" width="64" height="64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M9 8Q32-2 55 8L61 38Q63 56 42 60H22Q2 57 3 38Z" fill="#fff7e9" stroke="'+line+'" stroke-width="3"/><g stroke="'+line+'" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round">'+drawing+'</g></svg></div>';
@@ -114,17 +125,19 @@
  });
  tiles.addTo(map);
  L.control.zoom({position:'bottomright'}).addTo(map);
- const layerMonuments=L.layerGroup().addTo(map),layerNature=L.layerGroup().addTo(map),markers=new Map();
+ const layerMonuments=L.layerGroup().addTo(map),layerNature=L.layerGroup().addTo(map),
+       layerMuseums=L.layerGroup().addTo(map),layerHealth=L.layerGroup(),markers=new Map();
+ const pointLayer=type=>type==='natural'?layerNature:type==='museo'?layerMuseums:type==='salud'?layerHealth:layerMonuments;
  for(const place of places){
   const marker=L.marker([place.lat,place.lng],{
    icon:L.divIcon({className:'mapa-pin-wrap',html:art(place.kind),iconSize:[64,70],iconAnchor:[32,65],popupAnchor:[0,-55]}),
    keyboard:true,title:place.name,alt:place.name,riseOnHover:true
   });
   marker.bindPopup(placePopup(place),{maxWidth:270,autoPan:true});
-  marker.addTo(place.type==='natural'?layerNature:layerMonuments);markers.set(place.id,marker);
+  marker.addTo(pointLayer(place.type));markers.set(place.id,marker);
  }
  function focusPlace(place){
-  const layer=place.type==='natural'?'naturaleza':'monumentos';
+  const layer=place.type==='natural'?'naturaleza':place.type==='museo'?'museos':place.type==='salud'?'salud':'monumentos';
   if(!checked(layer)){const el=capas.querySelector('input[value="'+layer+'"]');el.checked=true;toggleLayer(layer)}
   map.flyTo([place.lat,place.lng],Math.max(14,map.getZoom()),{duration:.7});
   setTimeout(()=>markers.get(place.id)?.openPopup(),450);
@@ -189,8 +202,8 @@
   }
  }
  function toggleLayer(mode){
-  if(mode==='monumentos'||mode==='naturaleza'){
-   const group=mode==='naturaleza'?layerNature:layerMonuments;
+  if(['monumentos','naturaleza','museos','salud'].includes(mode)){
+   const group=mode==='naturaleza'?layerNature:mode==='museos'?layerMuseums:mode==='salud'?layerHealth:layerMonuments;
    if(checked(mode))group.addTo(map);else map.removeLayer(group);
    return;
   }
@@ -203,12 +216,12 @@
  }
  capas.addEventListener('change',event=>{
   const mode=event.target.value;
-  if(Object.prototype.hasOwnProperty.call(systems,mode)||mode==='monumentos'||mode==='naturaleza')toggleLayer(mode);
+  if(Object.prototype.hasOwnProperty.call(systems,mode)||['monumentos','naturaleza','museos','salud'].includes(mode))toggleLayer(mode);
  });
  function setDefaults(onlyPlaces=false){
   capas.querySelectorAll('input[type="checkbox"]').forEach(el=>{
    const before=el.checked;
-   el.checked=onlyPlaces?['monumentos','naturaleza'].includes(el.value):['metro','metrobus','monumentos','naturaleza'].includes(el.value);
+   el.checked=onlyPlaces?['monumentos','naturaleza','museos','salud'].includes(el.value):['metro','metrobus','monumentos','naturaleza','museos'].includes(el.value);
    if(before!==el.checked)toggleLayer(el.value);
   });
  }
