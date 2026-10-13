@@ -73,7 +73,7 @@ class ProfileTests(unittest.TestCase):
         self.assertIn("id=\"home-view\"", home)
         self.assertIn("id=\"topic-stage-grid\"", home)
         self.assertIn(".topic-stage[hidden],.home-view[hidden]", css)
-        self.assertIn('/styles.css?v=20261012-topical-pages', home)
+        self.assertIn('/styles.css?v=20261013-cercadeti', home)
         self.assertIn('/app.js?v=20261012-fotos-recientes', home)
 
 
@@ -112,7 +112,7 @@ class ProfileTests(unittest.TestCase):
         self.assertIn("Atlas de Movilidad Integrada", page)
         self.assertIn('geojson', proxy)
         self.assertIn('"mapa/"', (ROOT / 'update_news.py').read_text(encoding='utf-8'))
-        self.assertIn('/styles.css?v=20261012-map1', page)
+        self.assertIn('/styles.css?v=20261013-cercadeti', page)
         self.assertIn('minZoom:9,maxZoom:19', script)
         self.assertIn('value="naturaleza" checked', page)
         self.assertIn("id:'los-dinamos'", script)
