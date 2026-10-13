@@ -342,6 +342,8 @@ def update():
 
 def report_shell(title, body):
     from html import escape
+    match = re.fullmatch(r"Reporte (\\d{4}-\\d{2}-\\d{2})", title)
+    canonical = SITE + ("/reportes/" + match.group(1) + ".html" if match else "/reportes/")
     weather = (
         '<div id="weather-ribbon" class="weather-ribbon" role="region" aria-label="Clima estimado en la CDMX">'
         '<a class="weather-ribbon__brand" href="/cerca/">🌸 CLIMA</a>'
@@ -354,7 +356,10 @@ def report_shell(title, body):
         '<!doctype html><html lang="es"><head><meta charset="utf-8">'
         '<meta name="viewport" content="width=device-width,initial-scale=1">'
         '<title>' + escape(title) + ' | CDMX AL MEMENTO</title>'
+        '<meta name="description" content="Análisis editorial de los titulares de CDMX con tesis, evidencia enlazada, opinión diferenciada y límites de verificación.">'
+        '<link rel="canonical" href="' + escape(canonical, quote=True) + '">'
         '<link rel="stylesheet" href="/styles.css">'
+        '<link rel="stylesheet" href="/assets/explora.css?v=2">'
         '<link rel="stylesheet" href="/assets/clima-ticker.css?v=4"></head><body>'
         + weather +
         '<header><div class="wrap"><div class="top"><a class="logo" href="/">CDMX <span>AL MEMENTO</span></a></div>'
