@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-13 19:46 UTC",
+  "updated": "2026-10-13 20:48 UTC",
   "boroughs": [
     {
       "name": "La Magdalena Contreras",
@@ -943,8 +943,36 @@
     },
     {
       "name": "Benito Juárez",
-      "count": 16,
+      "count": 17,
       "articles": [
+        {
+          "title": "Lleva a tu mascota: Alcaldía Benito Juárez supera las 500 esterilizaciones de perros y gatos",
+          "description": "La información publicada por El Sol de México trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQT0tVNVZ1azlZaWdHM3dhSkFIcDVPQTR1MFZQUUw0OTViYkV3Z1dJNlZJdEZZczdYYnVaVjZsakFCNXY3Tkx4bm4tMXZuVlp6b3ZySDBLQ1d3UEhTcXEtRW1RNGd5R2ctbG5MN1BEVkNiZThlOC1vRWRPdXhjYjlibXZJQk04REZGNXVXNW1zUXB6U1Bfbk43aWpjS2w2MFNqS2xRcElGQ254b21GckVqQ3V3TlFBSmI0aVBucVlkd2locGFybk9mRDB3?oc=5",
+          "source": "El Sol de México",
+          "date": "2026-10-13",
+          "published_at": "2026-10-13T20:02:14Z",
+          "category": "CDMX",
+          "borough": "Benito Juárez",
+          "location": "Benito Juárez (mencionada en el titular)",
+          "local_url": "/noticias/?id=52968ac4b3f3fd6e3eb4&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por El Sol de México trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_benito-juarez",
+            "url": "/assets/alcaldias/benito-juarez.jpg",
+            "category": "CDMX",
+            "borough": "Benito Juárez",
+            "topic": "Parque Hundido, alcaldía Benito Juárez",
+            "author": "User:etnoboris",
+            "license": "CC BY-SA 3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Parque_Hundido.jpeg"
+          }
+        },
         {
           "title": "Dos Mujeres se Iban Sin Pagar Cuenta de Más de 50 Mil Pesos: Las Detuvieron en Benito Juárez",
           "description": "La información publicada por N+ trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -2395,7 +2423,7 @@
     },
     {
       "name": "Iztapalapa",
-      "count": 25,
+      "count": 26,
       "articles": [
         {
           "title": "Jazlyn, nieta de la “Abuelita Heroína” de Iztapalapa, recibe cirugía gratuita de médicos estadounidenses en México",
@@ -2616,6 +2644,24 @@
           }
         },
         {
+          "title": "Riña en partido de futbol en Iztapalapa termina con disparos al aire y un detenido; todo queda grabado en video",
+          "description": "La información publicada por Infobae trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxNb3RQYnp4VWNfaVFSV2R2clRDRVJybDJJY1pVMzZvbGEyX2FKTWoxV09XaTlVUlAwbm11MVdqcnZyalBscW9tNFRtNnBhQjJRZUc5MmdVOVMzRFE0V28zSm5DRGwxejV6Zk5FRUprX0djT3M2OEtCaUhyMkRmemd4WGtjRWdPUGI1d1pqZzZ2YkJ2ZGJBLUFBZFZkOHlpQlVVOTJBNUlVS3FaaWxKVGhudDM3aWc5V0RUWHNMd0dwZU13eWthbDlwMUVqMDE1QVZIZHA5QVVWeDlvLTRjZDNTdUN1UGFrNWlab0RVUjdBWVhiVmttVUlrRExhZFF6Z0UwSHY40gGDAkFVX3lxTE1vdFBienhVY19pUVJXZHZyVENFUnJsMkljWlUzNm9sYTJfYUpNajFXT1dpOVVSUDBubXUxV2pydnJqUGxxb200VG02cGFCMlFlRzkyZ1U5UzNEUTRXbzNKbkNEbDF6NXpmTkVFSmtfR2NPczY4S0JpSHIyRGZ6Z3hYa2NFZ09QYjV3WmpnNnZiQnZkYkEtQUFkVmQ4eWlCVVU5MkE1SVVLcVppbEpUaG50MzdpZzlXRFRYc0x3R3BlTXd5a2FsOXAxRWowMTVBVkhkcDlBVVZ4OW8tNGNkM1N1Q3VQYWs1aVpvRFVSN0FZWGJWa21VSWtETGFkUXpnRTBIdjg?oc=5",
+          "source": "Infobae",
+          "date": "2026-10-10",
+          "published_at": "2026-10-10T23:22:49Z",
+          "category": "CDMX",
+          "borough": "Iztapalapa",
+          "location": "Iztapalapa (mencionada en el titular)",
+          "local_url": "/noticias/?id=d8da1703ba73a5611a82&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por Infobae trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          }
+        },
+        {
           "title": "\"Me trataron mucho mejor que los de Polanco\": Jorge Losa recuerda con amor a sus vecinos de Iztapalapa",
           "description": "De acuerdo con un titular publicado por Radio Fórmula, el tema de actualidad está relacionado con un asunto de interés público relacionado con la Ciudad de México. La atribución corresponde al medio citado, no a una comprobación independiente de nuestra redacción. El encabezado menciona Iztapalapa; esa referencia no demuestra por sí misma dónde ocurrieron todos los hechos.",
           "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxPZWh2TTFnaFU1Y0cxV2YyOXhBYllyT2VVVXRNejQtaFV0RG1aQ3hhZW5CLWYtdURNcUQ4M3AxWWF1SDBXd3BkR1dXc2JtdXZtamIzU2MycklZVWFwMnl5LXluR2VCU2tUM0NzWlBJZlVwODJ6b3hpNXR5RnRBS2tqWFJQWFhkME80b0haM01XNXhhS0llcG5kTVRud1RWblpreVhpdlllazJtaGNkQ2RCTzVlMkx5T3psUnFWb0lLMW9YemhKczU0LUczaDBQYXdHNnZQREx4SFNqb1lRc1g0V3JGenhfVmVaX0lOci05Q2JKM1ZIVmfSAfsBQVVfeXFMTkR0a1AwT29tRFFYc0k5ZWd6RlhjUDB2ZnZ3eWhtOV9OZlNZeEoweE9QY1U3MVhUWE9Wc3JfTjJIanR4cE5mVklOZnNHd0hzVFBJZEJWNUcwTHFfamh3SWUwQ0FfRmlnSzVHZGlMekctVHFMSjVpX0pqbVU5dlh1SENFNlBJbjNWdTRXV1NLcVhLTGxVRFk3czJtXzk0bXV5Mjd5bzROd3h4UXA5UGZzS2VpbkZwbTF1VVlUcWdDeVZKTDNhT3BQMlpReDF0ZWlaREtrWWRZNksxZVRFUy0zSDZfdFFrSERlZ3V4R1FuYU9fdFI4WUFGTzBYX2s?oc=5",
@@ -2830,31 +2876,69 @@
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           }
-        },
-        {
-          "title": "Encapuchados lanzan cohetones en el Cobach 6 de Iztapalapa y dejan un maestro lesionado",
-          "description": "De acuerdo con un titular publicado por BajaNews, el tema de actualidad está relacionado con un asunto de interés público relacionado con la Ciudad de México. La atribución corresponde al medio citado, no a una comprobación independiente de nuestra redacción. El encabezado menciona Iztapalapa; esa referencia no demuestra por sí misma dónde ocurrieron todos los hechos.",
-          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPcEpjcTVra3hkcVViLVgxUHdsTnFzUF9ZRlJNbkhobWI2SWI0eEJTb0xGdVR4eHI0QklvU3k4d3VGbExaeTkwdE9nYmFwRHBZSlltdmI1RWtkR0E0b2k4U1dQYlJFVldFcE9zNWFDMGZZY1dlUzRBNG1CZ29wTEp2TmduYmlqOVZvcDNOOHB0bTZJaEplRWxHX01lc0ptVjFPVUItWHh5S3lmSTlBaXBFVF9fSERkY0p4Q2tLNmRKNA?oc=5",
-          "source": "BajaNews",
-          "date": "2026-10-09",
-          "published_at": "2026-10-09T19:22:13Z",
-          "category": "CDMX",
-          "borough": "Iztapalapa",
-          "location": "Iztapalapa (mencionada en el titular)",
-          "local_url": "/noticias/?id=6288013a64bd33d2f886&mes=2026-10",
-          "brief": {
-            "lead": "De acuerdo con un titular publicado por BajaNews, el tema de actualidad está relacionado con un asunto de interés público relacionado con la Ciudad de México. La atribución corresponde al medio citado, no a una comprobación independiente de nuestra redacción. El encabezado menciona Iztapalapa; esa referencia no demuestra por sí misma dónde ocurrieron todos los hechos.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
         }
       ]
     },
     {
       "name": "Miguel Hidalgo",
-      "count": 20,
+      "count": 22,
       "articles": [
+        {
+          "title": "Cae revendedor de relojes robados en la Miguel Hidalgo",
+          "description": "La información publicada por El Norte trata un asunto registrado en la sección de Seguridad del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPMlVHdlhPRDJMUHVYWEFSWkZjMnRLWWRDMk40UmtNR0xQa3pDNlhXa2FJdWZiN25PZVNTQjVWZWxaWjlZLXZidkJ6MDJSQlNFTWlqNXE4RzFSQWpwcmhvVTN1Ti0zcTN2Q3lTTWl3M3ZnQ1FqcVY1dXh6VlRpb0NtTU8ySXBna0xhYzRjU2YxLTZPUQ?oc=5",
+          "source": "El Norte",
+          "date": "2026-10-13",
+          "published_at": "2026-10-13T20:10:14Z",
+          "category": "Seguridad",
+          "borough": "Miguel Hidalgo",
+          "location": "Miguel Hidalgo (mencionada en el titular)",
+          "local_url": "/noticias/?id=78989aaca2877fad6d33&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por El Norte trata un asunto registrado en la sección de Seguridad del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_miguel-hidalgo",
+            "url": "/assets/alcaldias/miguel-hidalgo.jpg",
+            "category": "CDMX",
+            "borough": "Miguel Hidalgo",
+            "topic": "Bosque de Chapultepec, alcaldía Miguel Hidalgo",
+            "author": "ProtoplasmaKid",
+            "license": "CC0",
+            "source": "https://commons.wikimedia.org/wiki/File:Audiorama_de_Chapultepec_1.jpg"
+          }
+        },
+        {
+          "title": "Robo de relojes de Alta Gama en la mira: “Detienen a Josimar Antonio “N” en la Alcaldía Miguel Hidalgo”",
+          "description": "Una nota de Reporte Indigo comunica un caso relacionado con una detención o una presunta conducta delictiva en Miguel Hidalgo. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
+          "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPUV92bFNUeE54ZGVsZXM3WVhKV1hTc0VObHczc1BCX1B1TklXRTZqdng2aVNIcDNkMW55eVdDbVpUc1FOaURfWFFfVy1DeGJSdWwyMUYtZEJ2ZmhwNTYzejZoUzNRa002T01XNV9CamtHTmRadTVOVXR2ZjRQSldGSjBnek9sTUthYXFDTDV6TDBVNkRmVGFBLU10OVQyaDVGRHpuSGFYLWFDVGZtVDY1SXdtNDBDdk53RHQ3QmdBX1ZteXFIMVBRSUFpdmowRUVhQlVOSEdJZDhtZXY2UHViVHVxQnZaMmM?oc=5",
+          "source": "Reporte Indigo",
+          "date": "2026-10-13",
+          "published_at": "2026-10-13T19:53:53Z",
+          "category": "Seguridad",
+          "borough": "Miguel Hidalgo",
+          "location": "Miguel Hidalgo (mencionada en el titular)",
+          "local_url": "/noticias/?id=eaa9bc6891d6df716a86&mes=2026-10",
+          "brief": {
+            "lead": "Una nota de Reporte Indigo comunica un caso relacionado con una detención o una presunta conducta delictiva en Miguel Hidalgo. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
+            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "archivo_seguridad_002",
+            "url": "/assets/fotos/archivo_seguridad_002.jpg",
+            "category": "Seguridad",
+            "borough": "",
+            "topic": "Patrulla vecinal",
+            "author": "Daniel Yonka",
+            "license": "CC BY-SA 4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Patrulla_vecinal.jpg"
+          }
+        },
         {
           "title": "Cae robarelojes en Tacubaya tras asalto en la Miguel Hidalgo | Agencia NVM",
           "description": "Una nota de agencianvm.com.mx comunica un caso relacionado con una detención o una presunta conducta delictiva en Miguel Hidalgo. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
@@ -3833,8 +3917,92 @@
     },
     {
       "name": "Tlalpan",
-      "count": 36,
+      "count": 39,
       "articles": [
+        {
+          "title": "Fuga de diésel en Tlalpan provoca evacuaciones; IPN e INE suspenden actividades",
+          "description": "La información publicada por Eje Central trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNYlV3UDFVZ01vbW5scWZpdGVuNngzRS1ZQjU1Mk8tYXctR2JBWHI1RXpyalJKMjB0cDlDZGtReHk4cGZObnFIUXp4SzFNcTZYVTVyMGdYTjJrazYtV1NuNWFrR29pSDYxM1RPT0RwcTJ0NWJ0ZW1tb0Jxem5MNTRDM3dLVXNXZDJsS25XQzZmSVgxbmZ6SUdlZkdaaGlsaklvMW9oR01oMC1wWG0zVTRmcWp1NGxpbHZQREFLZA?oc=5",
+          "source": "Eje Central",
+          "date": "2026-10-13",
+          "published_at": "2026-10-13T20:14:24Z",
+          "category": "CDMX",
+          "borough": "Tlalpan",
+          "location": "Tlalpan (mencionada en el titular)",
+          "local_url": "/noticias/?id=4a570e11021542f3cd4e&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por Eje Central trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_tlalpan",
+            "url": "/assets/alcaldias/tlalpan.jpg",
+            "category": "CDMX",
+            "borough": "Tlalpan",
+            "topic": "Quiosco de la plaza principal de Tlalpan",
+            "author": "farid estrada",
+            "license": "CC BY-SA 3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Kiosko_plaza_de_la_constitucion%2C_tlapan.JPG"
+          }
+        },
+        {
+          "title": "Fuga de combustible en gasolinera de Tlalpan; evacúan a 220 personas por riesgo de hidrocarburo",
+          "description": "La información publicada por El Universal trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNazNUV1o5RklUSm0xNElEeHJsZFVLS1VGNXJJOHBaMGFsMlhLTm8xWThXeFM5U3lMWWNBSGNGajVjUEdHcWNfSko1NnNsZkxTNGQtSzlSQmpVeHFheXVFZnUtcnBYUEtIaEN3cWlxSktsZm9LQ3NETUZiU2YtWjFyazVFZWdBaUtpU09CZzRmYnBzYy1uZXBwc0RsU3cxdnRzNDJQTmJWVkhROF9nUEpITU1CaW85WG1ORmJwZk9WWGgxS2dsbG5XQWEwV1lkLWRJa0E?oc=5",
+          "source": "El Universal",
+          "date": "2026-10-13",
+          "published_at": "2026-10-13T20:05:00Z",
+          "category": "CDMX",
+          "borough": "Tlalpan",
+          "location": "Tlalpan (mencionada en el titular)",
+          "local_url": "/noticias/?id=f64255d4eaf889d7dc7a&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por El Universal trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "reciente_f2fceb86e231b250",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Edificios%2C_Paseo_de_la_Reforma_%28CDMX%29_0131.jpg/1280px-Edificios%2C_Paseo_de_la_Reforma_%28CDMX%29_0131.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "category": "CDMX",
+            "borough": "",
+            "topic": "Edificios, Paseo de la Reforma (CDMX) 0131",
+            "author": "Juan Carlos Fonseca Mata",
+            "license": "CC BY-SA 4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Edificios,_Paseo_de_la_Reforma_(CDMX)_0131.jpg"
+          }
+        },
+        {
+          "title": "Protección Civil de la CDMX Reporta 3,500 Evacuados por Fuga de Hidrocarburo en Tlalpan",
+          "description": "La información publicada por N+ trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxNdkJNRVVqOHRPY2l2dXZjWktXelJQUHVXQm52d3VjN201d3oxZDRhNmRwam1qb1JVVU1tSGZBVF8zREtNLUxDOEYxMWE4VmVfZ3JabkxPMlR6WDRIa1dYOGpaRUJlUjdUbERwa29wTHAtbno4c3VZNzlheWlVMlVUY0c0TVg0NlNUdEV3NGg0bm5EbWlBRkNNaFh6RldjYU44U1dzdGFxUm85X2hpU2ZqWjlfZVNncl9iN2trQW5YOUVQbGc2R2d1b2owa1ZrQ0tTeEtiSWJXYUYxVjhXMG9BSGZGSC1zelJ3eHhWS0NPWE9HazJY?oc=5",
+          "source": "N+",
+          "date": "2026-10-13",
+          "published_at": "2026-10-13T19:29:25Z",
+          "category": "CDMX",
+          "borough": "Tlalpan",
+          "location": "Tlalpan (mencionada en el titular)",
+          "local_url": "/noticias/?id=eb782d0ffd6d3608a5a8&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por N+ trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_coyoacan",
+            "url": "/assets/alcaldias/coyoacan.jpg",
+            "category": "CDMX",
+            "borough": "Coyoacán",
+            "topic": "Jardín Centenario de Coyoacán",
+            "author": "AlejandroLinaresGarcia",
+            "license": "CC BY-SA 4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:JardinCentenarioCoyoacan.JPG"
+          }
+        },
         {
           "title": "Realizan Desalojos en Tlalpan por Fuerte Olor a Hidrocarburo",
           "description": "La información publicada por N+ trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -4268,60 +4436,6 @@
           "local_url": "/noticias/?id=cd54b1cf12d857db13d8&mes=2026-10",
           "brief": {
             "lead": "De acuerdo con un titular publicado por N+, el tema de actualidad está relacionado con un asunto de interés público relacionado con la Ciudad de México. La atribución corresponde al medio citado, no a una comprobación independiente de nuestra redacción. El encabezado menciona Tlalpan; esa referencia no demuestra por sí misma dónde ocurrieron todos los hechos.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
-        },
-        {
-          "title": "Temblor hoy en CDMX: se registra microsismo de magnitud 2.2 en Tlalpan",
-          "description": "De acuerdo con un titular publicado por Récord, el tema de actualidad está relacionado con un asunto de interés público relacionado con la Ciudad de México. La atribución corresponde al medio citado, no a una comprobación independiente de nuestra redacción. El encabezado menciona Tlalpan; esa referencia no demuestra por sí misma dónde ocurrieron todos los hechos.",
-          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPV1ZqVlR4ZU00aFc0enBPZjNDeFg0QWV4NTNPWDd6S01WOHFLY3pZSlh4WUN3eExQWEZUYjJfU2cwYWRlWnd2T0ptYU53MkZLTzhlRjc1dXFXMGFnM0x6eWYwZHVCX1JEa09PaV9CYlRodnJRUUN5dUV2X0xhdDl1bGRsNmRIVlN0SVNZMDhOM0p2eTBLUXRZNlRLOFd6YzZzNDUwSS1Ob3FwaWIteGNiU1lVZENaNFY0NzZ6TDdFRXI?oc=5",
-          "source": "Récord",
-          "date": "2026-10-09",
-          "published_at": "2026-10-09T23:55:00Z",
-          "category": "CDMX",
-          "borough": "Tlalpan",
-          "location": "Tlalpan (mencionada en el titular)",
-          "local_url": "/noticias/?id=a3e02e34800a471d0abe&mes=2026-10",
-          "brief": {
-            "lead": "De acuerdo con un titular publicado por Récord, el tema de actualidad está relacionado con un asunto de interés público relacionado con la Ciudad de México. La atribución corresponde al medio citado, no a una comprobación independiente de nuestra redacción. El encabezado menciona Tlalpan; esa referencia no demuestra por sí misma dónde ocurrieron todos los hechos.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
-        },
-        {
-          "title": "Sismológico Nacional reporta sismo de 2.2 en la alcaldía Tlalpan",
-          "description": "De acuerdo con un titular publicado por El Sol de México, el tema de actualidad está relacionado con un asunto de interés público relacionado con la Ciudad de México. La atribución corresponde al medio citado, no a una comprobación independiente de nuestra redacción. El encabezado menciona Tlalpan; esa referencia no demuestra por sí misma dónde ocurrieron todos los hechos.",
-          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNTVNsRVY5Z3dHZ1k3ZWdxczQ2anBLWm9xWG93M2tCbEJvc2FMcXJvVXpzT1JsWldQdHRzSFJPQkVGQ21DOUZMeTFrM0Z3allBWkdNQ2lTSUR2emRlYVl4aVFIekJzcjBYMlJGNWduaEtGMVdnYi1CLURCcTBsaE5HNUE3WElDdGlELTlhN200aDlfMXROUDgzbzhIdW1lMjFjYWRwa3JKMTBjWUFTZmNaak5DRS1QaVh3VlFNR3JmUEU0TWszQlN2M1pB?oc=5",
-          "source": "El Sol de México",
-          "date": "2026-10-09",
-          "published_at": "2026-10-09T23:40:09Z",
-          "category": "CDMX",
-          "borough": "Tlalpan",
-          "location": "Tlalpan (mencionada en el titular)",
-          "local_url": "/noticias/?id=92ff6bae9dea74a41401&mes=2026-10",
-          "brief": {
-            "lead": "De acuerdo con un titular publicado por El Sol de México, el tema de actualidad está relacionado con un asunto de interés público relacionado con la Ciudad de México. La atribución corresponde al medio citado, no a una comprobación independiente de nuestra redacción. El encabezado menciona Tlalpan; esa referencia no demuestra por sí misma dónde ocurrieron todos los hechos.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
-        },
-        {
-          "title": "Microsismo en Tlalpan, CDMX, hoy 9 de octubre: ¿de cuánto fue el temblor?",
-          "description": "La publicación de La Crónica de Hoy plantea una pregunta sobre un asunto de interés público relacionado con la Ciudad de México. El encabezado invita a conocer una respuesta que no puede darse por comprobada solo con el índice de noticias. El encabezado menciona Tlalpan; esa referencia no demuestra por sí misma dónde ocurrieron todos los hechos.",
-          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNMTNYNzdNR3JCNTY1UDN0X19qbGttZHN2YXZES1hjR243ODc5d1pGUHh5bkhyemtPVVQtRW1PandwcUlIQlFqYmVhX0Q2QmpuN1I3bEd1bFVOUjJBWUtFeW1Vdmg4b1ozaDM5Q2hMMF84elpZZ3pnTXR6dHRUSGRqUWhfNFVhbW1fWF8wcVY4eFlwcmI5eFVvZG1MY1ltRXpWcm1scjY3Qk9NZzBsWmh5NXd5eDJOd2JT?oc=5",
-          "source": "La Crónica de Hoy",
-          "date": "2026-10-09",
-          "published_at": "2026-10-09T23:35:10Z",
-          "category": "CDMX",
-          "borough": "Tlalpan",
-          "location": "Tlalpan (mencionada en el titular)",
-          "local_url": "/noticias/?id=46183daeee679e4ada9c&mes=2026-10",
-          "brief": {
-            "lead": "La publicación de La Crónica de Hoy plantea una pregunta sobre un asunto de interés público relacionado con la Ciudad de México. El encabezado invita a conocer una respuesta que no puede darse por comprobada solo con el índice de noticias. El encabezado menciona Tlalpan; esa referencia no demuestra por sí misma dónde ocurrieron todos los hechos.",
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
