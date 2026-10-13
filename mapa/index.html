@@ -10,10 +10,10 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css">
 <link rel="stylesheet" href="/mapa/mapa.css?v=4">
 <meta property="og:type" content="website"><meta property="og:title" content="CDMX en un mapa ilustrado · CDMX AL MEMENTO"><meta property="og:url" content="https://cdmx-al-memento.pages.dev/mapa/">
-</head>
+<link rel="stylesheet" href="/assets/clima-ticker.css?v=1"></head>
 <body class="mapa-body">
 <a class="skip" href="#contenido">Saltar al contenido</a>
-<header><div class="wrap"><div class="top"><a class="logo" href="/">CDMX <span>AL MEMENTO</span></a><span class="tag">LA CAPITAL, AL INSTANTE.</span></div>
+<div id="weather-ribbon" class="weather-ribbon" role="region" aria-label="Tira de pronóstico meteorológico para la CDMX"><a class="weather-ribbon__brand" href="/cerca/" title="Explorar clima y noticias por alcaldía">🌸 CLIMA</a><div class="weather-ribbon__window" aria-label="Clima estimado en movimiento; se detiene al señalar la tira"><div id="weather-ribbon-track" class="weather-ribbon__track"><div class="weather-ribbon__set"><span class="weather-chip">⛅ Consultando el clima de la CDMX…</span></div></div></div><label class="weather-ribbon__control" title="Seleccionar otra alcaldía"><span class="weather-sr-only">Cambiar alcaldía del clima</span><select id="weather-borough" aria-label="Seleccionar alcaldía para consultar el clima"></select></label><span class="weather-sr-only" id="weather-screen-reader" role="status" aria-live="polite"></span></div><header><div class="wrap"><div class="top"><a class="logo" href="/">CDMX <span>AL MEMENTO</span></a><span class="tag">LA CAPITAL, AL INSTANTE.</span></div>
 <nav aria-label="Navegación principal"><a href="/">Última hora</a><a href="/alcaldias/">Alcaldías</a><a href="/archivo/">Archivo mensual</a><a class="active" href="/mapa/" aria-current="page">Mapa ilustrado</a><a href="/guias/">Guías</a></nav></div></header>
 <main class="wrap mapa-main" id="contenido">
 <section class="mapa-hero"><div>
@@ -62,4 +62,4 @@
 <footer><div class="wrap">© 2026 CDMX AL MEMENTO · Mapa informativo ilustrado · Datos de SIGIRPC y cartografía © colaboradores de OpenStreetMap. <p><a href="/sobre-nosotros.html">Sobre nosotros</a><a href="/privacidad.html">Privacidad</a><a href="/politica-editorial.html">Política editorial</a><a href="/contacto.html">Contacto</a></p></div></footer>
 <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js" defer></script>
 <script src="/mapa/mapa.js?v=4" defer></script>
-</body></html>
+<script src="/assets/clima-ticker.js?v=1" defer></script></body></html>
