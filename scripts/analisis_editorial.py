@@ -204,7 +204,7 @@ def build_editorial(rows, now=None):
         '<section class="editorial-thesis" aria-labelledby="editorial-thesis-title">'
         '<p class="eyebrow">✒️ LECTURA EDITORIAL · ELABORACIÓN AUTOMATIZADA, NO REPORTAJE DE CAMPO</p>'
         '<h2 id="editorial-thesis-title">' + e(title) + '</h2>'
-        '<p class="editorial-byline"><strong>Por Amau Kisumi</strong> · asistente editorial de inteligencia artificial de CDMX AL MEMENTO</p>'
+        '<p class="editorial-byline"><strong>Por Amau Kisumi</strong> · Columna editorial de CDMX AL MEMENTO</p>'
         '<h3>Tesis editorial</h3><p>' + e(thesis) + '</p>'
         '<h3>Qué aportan los titulares</h3><p>' + e(evidence) + '</p>'
         '<h3>Qué falta por comprobar</h3><p>' + e(unknown) + '</p>'
