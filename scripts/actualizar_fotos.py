@@ -42,11 +42,12 @@ KEYWORDS = {
 }
 LOCATION_WORDS = ("ciudad de mexico", "mexico city", "cdmx", "mexico df", "mexico, d.f.",
                   "distrito federal", "mexico city", "mexico-city", "ciudad de méxico")
-LOCATION_LANDMARKS = ("zocalo", "bellas artes", "palacio nacional", "metrobús", "metrobus",
-                      "torre latinoamericana", "paseo de la reforma", "chapultepec",
-                      "angel de la independencia", "basílica de guadalupe")
+LOCATION_LANDMARKS = ("zocalo tenochtitlan", "zócalo-tenochtitlan", "torre latinoamericana",
+                      "paseo de la reforma", "angel de la independencia", "ángel de la independencia")
 OTHER_PLACES = ("louisville", "kentucky", "zacatecas", "chihuahua", "san francisco",
-                "california", "new york", "guadalajara", "monterrey", "puebla, mexico")
+                "california", "new york", "guadalajara", "monterrey", "puebla, mexico",
+                "barranquilla", "bogota", "bogotá", "colombia", "medellin", "medellín",
+                "palace of fine arts")
 
 
 class TextOnly(HTMLParser):
@@ -117,6 +118,11 @@ def candidate(page, category, now):
         return None
     filename = title[5:]
     if not matches_place(filename, category):
+        return None
+    # Un título que identifica un año anterior no se debe clasificar como
+    # fotografía actual por el simple hecho de haber sido subida ahora.
+    years = [int(y) for y in re.findall(r"(?<!\d)(20\d{2})(?!\d)", filename)]
+    if years and max(years) < now.year:
         return None
     infos = page.get("imageinfo", [])
     if not infos:
