@@ -33,8 +33,8 @@ class WeatherRibbonTests(unittest.TestCase):
                 self.assertLess(html.index('id="weather-ribbon"'), html.index('<header>'))
                 self.assertIn('/assets/clima-ticker.css?v=4', html)
                 self.assertIn('/assets/clima-ticker.js?v=4', html)
-        self.assertIn('/assets/portal.js?v=4', text('index.html'))
-        self.assertIn('/assets/portal.js?v=4', text('cerca/index.html'))
+        self.assertIn('/assets/portal.js?v=6', text('index.html'))
+        self.assertIn('/assets/portal.js?v=6', text('cerca/index.html'))
 
     def test_api_has_16_alcaldias_and_never_invents_data(self):
         api = text('functions/api/clima.js')
