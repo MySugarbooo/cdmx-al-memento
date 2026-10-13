@@ -345,17 +345,15 @@ def report_shell(title, body):
         '<a class="weather-ribbon__brand" href="/cerca/">🌸 CLIMA</a>'
         '<div class="weather-ribbon__window"><div id="weather-ribbon-track" class="weather-ribbon__track">'
         '<div class="weather-ribbon__set"><span class="weather-chip">⛅ Consultando clima de CDMX…</span></div>'
-        '</div></div><label class="weather-ribbon__control">'
-        '<span class="weather-sr-only">Cambiar alcaldía del clima</span>'
-        '<select id="weather-borough" aria-label="Seleccionar alcaldía para consultar el clima"></select>'
-        '</label><span class="weather-sr-only" id="weather-screen-reader" role="status" aria-live="polite"></span></div>'
+        '</div></div>'
+        '<span class="weather-sr-only" id="weather-screen-reader" role="status" aria-live="polite"></span></div>'
     )
     return (
         '<!doctype html><html lang="es"><head><meta charset="utf-8">'
         '<meta name="viewport" content="width=device-width,initial-scale=1">'
         '<title>' + escape(title) + ' | CDMX AL MEMENTO</title>'
         '<link rel="stylesheet" href="/styles.css">'
-        '<link rel="stylesheet" href="/assets/clima-ticker.css?v=3"></head><body>'
+        '<link rel="stylesheet" href="/assets/clima-ticker.css?v=4"></head><body>'
         + weather +
         '<header><div class="wrap"><div class="top"><a class="logo" href="/">CDMX <span>AL MEMENTO</span></a></div>'
         '<nav><a href="/">Noticias</a><a href="/archivo/">Archivo mensual</a>'
@@ -363,7 +361,7 @@ def report_shell(title, body):
         '<main class="wrap prose">' + body + '</main><footer><div class="wrap">'
         '<a href="/politica-editorial.html">Política editorial</a> · '
         '<a href="mailto:' + MAIL + '">' + MAIL + '</a></div></footer>'
-        '<script src="/assets/clima-ticker.js?v=3" defer></script></body></html>'
+        '<script src="/assets/clima-ticker.js?v=4" defer></script></body></html>'
     )
 
 
