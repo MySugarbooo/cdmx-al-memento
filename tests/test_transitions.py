@@ -64,7 +64,7 @@ class TransitionTests(unittest.TestCase):
     def test_generators_preserve_animation(self):
         self.assertIn('page-transitions.js?v=1',read("update_news.py"))
         self.assertIn('page-transitions.js?v=1',read("scripts/generar_guias.py"))
-        self.assertIn('/app.js?v=20261013-deslizamiento',read("index.html"))
+        self.assertIn('/app.js?v=20261013-slide-full',read("index.html"))
 
 if __name__=="__main__":
     unittest.main()
