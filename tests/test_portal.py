@@ -22,7 +22,7 @@ class PortalTests(unittest.TestCase):
         for url in ("/cerca/", "/movilidad/", "/avisos/", "/favoritos/"):
             self.assertIn('href="' + url + '"', home)
         self.assertIn('/assets/portal.css?v=1', home)
-        self.assertIn('/assets/portal.js?v=4', home)
+        self.assertIn('/assets/portal.js?v=5', home)
         # El mapa sigue justo después del titular principal; no se pierde.
         self.assertLess(home.index('id="main-title"'), home.index('class="home-map-section"'))
         self.assertLess(home.index('class="home-map-section"'), home.index('id="portal-today-list"'))
@@ -45,7 +45,7 @@ class PortalTests(unittest.TestCase):
                 self.assertIn('https://cdmx-al-memento.pages.dev/' + path, html)
                 self.assertIn('<meta name="description"', html)
                 self.assertIn('/assets/portal.css?v=1', html)
-                self.assertIn('/assets/portal.js?v=4', html)
+                self.assertIn('/assets/portal.js?v=5', html)
                 self.assertIn('href="/politica-editorial.html"', html)
                 self.assertIn('href="/privacidad.html"', html)
         self.assertIn('content="noindex,follow"', get("favoritos/index.html"))
