@@ -46,6 +46,17 @@ class RecentPhotoTests(unittest.TestCase):
         self.assertFalse(photos.matches_place("Busto Pedro Biava Bellas Artes Barranquilla 2026.jpg", "Cultura"))
         self.assertFalse(photos.matches_place("Random station.jpg", "Metro"))
 
+    def test_curated_source_still_needs_license_and_recent_date(self):
+        page = sample_page(title="File:Metro Hangares (2026) 2.jpg")
+        # Un nombre de estación puede revisarse manualmente en Commons, pero
+        # eso nunca exime de comprobar fecha de captura y licencia.
+        self.assertIsNone(photos.candidate(page, "Metro", self.now))
+        selected = photos.candidate(page, "Metro", self.now, verified_location=True)
+        self.assertTrue(selected["reviewed_location"])
+        self.assertEqual(selected["category"], "Metro")
+        invalid = sample_page(title="File:Metro Hangares (2026) 2.jpg", taken="2018-03-01")
+        self.assertIsNone(photos.candidate(invalid, "Metro", self.now, verified_location=True))
+
     def test_timestamp_is_upload_not_capture(self):
         recent = photos.candidate(sample_page(), "Metro", self.now)
         self.assertEqual(recent["uploaded_at"], "2026-10-11")
