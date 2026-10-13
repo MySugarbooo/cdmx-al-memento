@@ -132,7 +132,7 @@ class ProfileTests(unittest.TestCase):
         self.assertIn('changeTopic(el.dataset.filter', (ROOT / "app.js").read_text(encoding='utf-8'))
         self.assertIn('transform:\'translateX(', (ROOT / "app.js").read_text(encoding='utf-8'))
         self.assertIn('const ghost=outgoing.cloneNode(true)', (ROOT / "app.js").read_text(encoding='utf-8'))
-        self.assertIn("const duration=480", (ROOT / "app.js").read_text(encoding='utf-8'))
+        self.assertIn("const duration=720", (ROOT / "app.js").read_text(encoding='utf-8'))
         self.assertIn("behavior:'smooth'", (ROOT / "app.js").read_text(encoding='utf-8'))
         self.assertIn('.news-slide-viewport{min-width:0;', css)
         # Las pestañas aparecen en el mismo orden lógico arriba y en el filtro secundario.
