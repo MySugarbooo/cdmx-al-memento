@@ -62,6 +62,11 @@ class RecentPhotoTests(unittest.TestCase):
         self.assertEqual(recent["uploaded_at"], "2026-10-11")
         self.assertEqual(recent["captured_at"], "2026-10-11")
         self.assertIn("upload.wikimedia.org", recent["url"])
+        image = sample_page()
+        image["imageinfo"][0]["thumburl"] = (
+            "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/example.jpg/1280px-example.jpg"
+        )
+        self.assertIsNotNone(photos.candidate(image, "Metro", self.now))
         old_photo = sample_page(taken="2013-01-10 12:00:00")
         self.assertIsNone(photos.candidate(old_photo, "Metro", self.now))
         old_year = sample_page(title="File:Metro Ciudad de México 2025.jpg")
