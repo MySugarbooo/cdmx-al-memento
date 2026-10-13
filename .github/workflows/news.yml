@@ -9,6 +9,9 @@ on:
       - '.github/workflows/news.yml'
       - 'update_news.py'
       - 'scripts/generar_guias.py'
+      - 'scripts/notas_locales.py'
+      - 'tests/test_local_news.py'
+      - 'assets/noticias-locales.js'
       - 'scripts/analisis_editorial.py'
       - 'tests/test_editorial.py'
       - 'assets/agenda.js'
@@ -52,6 +55,7 @@ jobs:
         run: |
           node --check app.js
           node --check assets/page-transitions.js
+          node --check assets/noticias-locales.js
           node --check assets/portal.js
           node --check assets/clima-ticker.js
           node --check --input-type=module < functions/api/clima.js
