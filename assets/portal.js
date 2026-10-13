@@ -120,7 +120,7 @@
   fillStories('portal-metro-news',feed.articles.filter(a=>a.category==='Metro'),7);
   fillStories('portal-mobility-news',feed.articles.filter(a=>a.category==='Movilidad'),6);
  }
- const alertPattern=/lluvia|inundaci[oó]n|tormenta|contingencia|calidad del aire|cierre vial|bloqueo|manifestaci[oó]n|afectaci[oó]n|sismo|protecci[oó]n civil|alerta amarilla|alerta naranja|alerta roja/i;
+ const alertPattern=/lluvia|inundaci[oó]n|tormenta|contingencia|calidad del aire|cierre vial|bloqueo|manifestaci[oó]n|afectaci[oó]n|sismo|protecci[oó]n civil|alerta amarilla|alerta naranja|alerta roja|suspensi[oó]n|sin servicio|retrasos|estaci[oó]n cerrada/i;
  function renderAlerts(){
   if(!feed)return;
   const recent=feed.articles.filter(a=>alertPattern.test(a.title)).slice(0,9);
@@ -234,8 +234,9 @@
  function matchingNotifications(items){
   const borough=chooseBorough();
   const fourHours=Date.now()-4*60*60*1000;
-  return items.filter(a=>validArticle(a)&&(!borough||a.borough===borough)&&
-   (!a.published_at||Date.parse(a.published_at)>fourHours));
+  return items.filter(a=>validArticle(a)&&alertPattern.test(a.title)&&
+   (!borough||a.borough===borough)&&
+   (a.published_at&&Date.parse(a.published_at)>fourHours));
  }
  function enableNotifications(){
   const info=$('portal-notification-status');
