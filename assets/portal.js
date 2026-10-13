@@ -69,8 +69,15 @@
    const li=document.createElement('li'),link=document.createElement('a'),small=document.createElement('small');
    link.textContent=a.title;link.href=a.url;link.target='_blank';link.rel='noopener noreferrer nofollow';
    small.textContent=(a.source||'Medio externo')+' · '+(a.published_at?dateMX(a.published_at):a.date||'Fecha no indicada')+' · '+(a.category||'CDMX');
-   li.append(link,small);el.append(li);
+   const saveButton=document.createElement('button');
+   saveButton.type='button';saveButton.className='fav-save';
+   saveButton.dataset.favoriteUrl=a.url;
+   saveButton.dataset.favoriteTitle=a.title;
+   saveButton.dataset.favoriteCategory=a.category||'CDMX';
+   saveButton.dataset.favoriteSource=a.source||'Medio externo';
+   li.append(link,small,saveButton);el.append(li);
   }
+  refreshSaveButtons();
  }
  function todayMX(date){
   const parts=new Intl.DateTimeFormat('en-US',{timeZone:'America/Mexico_City',year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(date);
@@ -199,7 +206,8 @@
   const urls=new Set(readFavorites().map(x=>x.url));
   document.querySelectorAll('.fav-save').forEach(btn=>{
    const active=urls.has(btn.dataset.favoriteUrl);
-   btn.textContent=active?'♥ Guardada':'♡ Guardar';
+   const label=active?'♥ Guardada':'♡ Guardar';
+   if(btn.textContent!==label)btn.textContent=label;
    btn.setAttribute('aria-pressed',String(active));
    btn.setAttribute('aria-label',active?'Quitar de favoritos':'Guardar noticia en favoritos');
   });
