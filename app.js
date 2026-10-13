@@ -20,6 +20,20 @@ function element(tag,cls,txt){const e=document.createElement(tag);if(cls)e.class
 function validLink(u){try{const p=new URL(u);return p.protocol==='https:'&&p.hostname==='news.google.com'}catch{return false}}
 function articleVisual(a){
  const figure=element('div','news-visual');
+ const assignedPhoto=a.photo;
+ if(assignedPhoto&&assignedPhoto.url&&(/^\/assets\/(?:fotos|alcaldias)\/[a-z0-9_-]+\.jpg$/.test(assignedPhoto.url)||
+  /^https:\/\/(?:thumb|upload)\.wikimedia\.org\/wikipedia\/commons\//.test(assignedPhoto.url))){
+  const image=document.createElement('img');
+  image.src=assignedPhoto.url;image.loading='lazy';image.decoding='async';image.width=640;image.height=400;
+  image.alt='Fotografía real de contexto: '+(assignedPhoto.topic||'Ciudad de México')+'. No representa necesariamente el hecho.';
+  image.onerror=()=>{image.hidden=true;figure.append(element('span','photo-unavailable','Fotografía no disponible'))};
+  const label=element('span','visual-label','FOTOGRAFÍA REAL DE CONTEXTO');
+  const credit=element('a','photo-credit-inline','© '+(assignedPhoto.author||'Wikimedia Commons')+' · '+(assignedPhoto.license||'Licencia en Commons'));
+  if(/^https:\/\/commons\.wikimedia\.org\/wiki\/File:/.test(assignedPhoto.source||'')){
+   credit.href=assignedPhoto.source;credit.target='_blank';credit.rel='noopener noreferrer';
+  }
+  figure.append(image,label,credit);return figure;
+ }
  const first=photoLibrary?.forArticle(a);
  const photo=first?photoLibrary.images[first]:null;
  if(!photo){figure.append(element('span','photo-unavailable','Fotografía no disponible'));return figure}
@@ -116,13 +130,14 @@ function buildCard(a,featured=false,large=false){
  const c=element('article',featured?'card featured-card'+(large?' featured-main':''):'card');
  const visual=articleVisual(a),inside=element('div','inside');
  const badge=element('span','badge',a.category||'CDMX');
- const title=element('h3','',a.title);
- const description=element('p','',featured
-   ?'Lee la cobertura completa y confirma los detalles con el medio que publicó esta noticia.'
-   :'Titular recopilado automáticamente. Consulta la fuente original para obtener contexto.');
+ const title=element('h3');
+ const headingLink=element('a','headline-link',a.title);
+ headingLink.href=a.local_url||'/noticias/';
+ title.append(headingLink);
+ const description=element('p','',a.brief?.lead||'Lee la síntesis de la información disponible en nuestro periódico.');
  const meta=articleMeta(a);
- const link=element('a','read','Leer noticia original ↗');
- link.href=a.url;link.target='_blank';link.rel='noopener noreferrer nofollow';
+ const link=element('a','read','Leer resumen de Amau Kisumi →');
+ link.href=a.local_url||'/noticias/';
  inside.append(badge,title,description,meta,link);
  c.append(visual,inside);
  return c;
