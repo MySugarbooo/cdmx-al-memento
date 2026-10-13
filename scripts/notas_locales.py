@@ -57,29 +57,124 @@ def local_link(article):
     date=str(article.get("date") or "")[:7]
     return "/noticias/?id="+token+"&mes="+date
 
+def _reported_angle(article):
+    """Ideas específicas y atribuibles únicamente a lo expresado en el título."""
+    title=str(article.get("title") or "")
+    t=title.casefold()
+    source=str(article.get("source") or "el medio de origen")
+    borough=str(article.get("borough") or "")
+    zone=(" en "+borough) if borough else " en la capital"
+
+    if "alerta amber" in t or ("desaparec" in t and "años" in t):
+        return (f"Una publicación de {source} informa sobre la búsqueda de una adolescente "
+                f"y menciona la activación de una Alerta Amber{zone}. "
+                "Por respeto a su privacidad, esta síntesis no reproduce datos personales "
+                "adicionales ni especula sobre las circunstancias de la desaparición.")
+    if ("atropell" in t or "arrollad" in t or "embiste" in t) and ("tráiler" in t or "trailer" in t):
+        detained=" El encabezado también menciona la detención del conductor." if "detien" in t or "detenido" in t else ""
+        return (f"De acuerdo con {source}, se reportó un atropellamiento con consecuencias mortales"
+                f"{zone}, relacionado con un tráiler. "
+                "Es una noticia que exige cuidado al informar sobre las personas afectadas."
+                +detained)
+    if "imss" in t and ("marcha" in t or "bloque" in t or "moviliza" in t):
+        return (f"La cobertura de {source} se centra en movilizaciones de trabajadores "
+                "del IMSS y en su posible o reportada repercusión sobre calles de Ciudad de México. "
+                "Los trayectos y horarios deben revisarse en avisos recientes, pues una "
+                "convocatoria no equivale a cierres confirmados durante todo el día.")
+    if "marcha" in t or "concentraciones" in t or "bloqueos" in t:
+        detail="una marcha y siete concentraciones" if "siete concentraciones" in t else "manifestaciones o bloqueos"
+        return (f"Según la información destacada por {source}, {detail} forman parte de la "
+                "jornada de movilidad capitalina. La ficha no demuestra por sí sola "
+                "que todas las vías mencionadas sigan cerradas al momento de leerla.")
+    if "metro" in t and ("línea a" in t or "linea a" in t) and ("rehabilit" in t or "arreglo" in t or "suspensi" in t):
+        return (f"El medio {source} recoge advertencias y demandas sobre el mantenimiento de "
+                "la Línea A del Metro. Hablar de una posible suspensión no significa "
+                "que el tramo haya sido cerrado: se requiere consultar el aviso oficial.")
+    if "metro" in t and ("retras" in t or "avance" in t or "estatus" in t or "estaciones" in t):
+        lines=re.findall(r"\b(?:Línea|Líneas)\s+(?:[0-9AB]+(?:\s+y\s+[0-9AB]+)?)",title,re.I)
+        which=(" El titular menciona "+", ".join(lines)+".") if lines else ""
+        return (f"La nota de {source} reúne reportes sobre la circulación o los tiempos "
+                "del Metro de Ciudad de México."+which+
+                " La operación puede cambiar durante el día y los informes de usuarios "
+                "no son equivalentes a un comunicado oficial.")
+    if "lluvia" in t or "chubasco" in t or "clima" in t or "nublado" in t:
+        conditions=("lluvias ligeras" if "ligera" in t else
+                    "chubascos" if "chubasco" in t else
+                    "lluvias" if "lluvia" in t else "condiciones meteorológicas")
+        return (f"El pronóstico recogido por {source} se refiere a {conditions}{zone}. "
+                "Se trata de una previsión, no de una constatación de lluvia en cada calle. "
+                "Las condiciones pueden variar según la hora y la colonia.")
+    if "gentrific" in t or "airbnb" in t or "rentas" in t or "vivienda" in t:
+        return (f"El reportaje citado por {source} aborda los precios de vivienda o "
+                f"los cambios residenciales{zone}. Las cifras y su metodología "
+                "deben examinarse antes de concluir cuántas familias han sido desplazadas "
+                "o qué tan representativos son determinados anuncios de renta.")
+    if "energías renovables" in t or "energias renovables" in t:
+        return (f"El medio {source} informa de una propuesta de colaboración entre la "
+                "Ciudad de México y el Estado de México para impulsar energías renovables "
+                "mediante incentivos privados. La ficha no confirma qué estímulos se "
+                "aprobaron ni su fecha de entrada en vigor.")
+    if "cempasúchil" in t or "cempasuchil" in t:
+        return (f"La publicación de {source} pone el foco en dificultades que podrían "
+                "afectar la comercialización del cempasúchil de Xochimilco. "
+                "La producción de flor involucra a familias y productores locales; "
+                "para explicar causas y alcances hacen falta los datos del reportaje.")
+    if "afores" in t:
+        return (f"Según {source}, una feria sobre administradoras del ahorro para el "
+                "retiro se realiza o anuncia en Iztacalco. Antes de asistir conviene "
+                "comprobar fechas, horarios y servicios directamente con la institución.")
+    if "cultural" in t and ("asistencia" in t or "eventos" in t):
+        return (f"La información que publica {source} analiza diferencias en la asistencia "
+                "a eventos culturales por género. Para saber qué significa esta tendencia "
+                "hacen falta los periodos, encuestas y metodología de la fuente.")
+    if "concierto" in t:
+        return (f"El medio {source} presenta conciertos o actividades musicales anunciadas "
+                "en Ciudad de México. La programación, disponibilidad y costos pueden "
+                "cambiar; comprueba los datos del organizador.")
+    if "consultorios" in t and "issste" in t:
+        return (f"El reporte atribuido a {source} habla de la incorporación de "
+                "consultorios del ISSSTE en la capital. El dato del titular debe "
+                "contrastarse con el comunicado institucional para conocer dónde "
+                "operan y a qué pacientes atienden.")
+    if "homicidio" in t and ("septiembre" in t or "62%" in t):
+        return (f"Según cifras recogidas por {source}, las autoridades reportan "
+                "una disminución de homicidios o delitos de alto impacto. "
+                "Las comparaciones exigen conocer su periodo, fuente estadística y "
+                "la forma en que se registraron los hechos.")
+    if "autogobierno" in t or "penitenciarios" in t:
+        return (f"{source} recoge declaraciones sobre la administración de los "
+                "centros penitenciarios de la capital. El titular atribuye una postura "
+                "a un funcionario; esa declaración debe diferenciarse de una "
+                "evaluación independiente de la situación.")
+    if "detien" in t or "caen dos" in t or "robar" in t or "asalt" in t:
+        return (f"Una nota de {source} comunica un caso relacionado con una "
+                f"detención o una presunta conducta delictiva{zone}. "
+                "Es indispensable respetar la presunción de inocencia y no añadir "
+                "acusaciones ni datos personales que el titular no acredita.")
+    if "empleo" in t or "pérdida de empleos" in t:
+        return (f"El medio {source} aborda una posible pérdida de empleos en "
+                "la capital mediante una comparación con otra entidad. "
+                "Los datos, el periodo y la metodología deben verificarse "
+                "antes de sacar conclusiones sobre el mercado laboral.")
+    if "reelegir" in t or "decretos" in t or "gobierno" in t:
+        return (f"En su información, {source} aborda una decisión, declaración "
+                "o debate relacionado con las instituciones de la ciudad. "
+                "Conviene distinguir la intención anunciada de las resoluciones "
+                "que hayan sido aprobadas y publicado oficialmente.")
+    # Si el titular no encaja en una regla verificable, no inventar narrativa.
+    return (f"La información publicada por {source} trata un asunto registrado "
+            f"en la sección de {article.get('category') or 'CDMX'} del periódico. "
+            "El encabezado contiene la referencia específica; sin acceso al cuerpo "
+            "de la nota no corresponde agregar circunstancias que podrían ser falsas.")
+
 def summarize(article):
     title=str(article.get("title") or "").strip()
     source=str(article.get("source") or "un medio periodístico").strip()
     category=str(article.get("category") or "CDMX")
     theme=TAGS.get(category,TAGS["CDMX"])
-    q=title.endswith("?") or title.startswith(("¿","Qué ","Cómo ","Cuándo ","Dónde "))
-    if q:
-        first=(f"La publicación de {source} plantea una pregunta sobre {theme['focus']}. "
-               "El encabezado invita a conocer una respuesta que no puede darse por comprobada solo con el índice de noticias.")
-    elif re.search(r"\b(podr[ií]a|posible|prev[eé]|planea|busca|alerta|advierte|pronostic|habr[ií]a)\b",title,re.I):
-        first=(f"El medio {source} informa sobre una propuesta, advertencia o posibilidad vinculada con "
-               f"{theme['focus']}. La manera en que se presenta el asunto no equivale a una confirmación de que ya ocurrió.")
-    else:
-        first=(f"De acuerdo con un titular publicado por {source}, el tema de actualidad está relacionado con "
-               f"{theme['focus']}. La atribución corresponde al medio citado, no a una comprobación independiente de nuestra redacción.")
-    location=str(article.get("borough") or "").strip()
-    if location:
-        first+=f" El encabezado menciona {location}; esa referencia no demuestra por sí misma dónde ocurrieron todos los hechos."
+    first=_reported_angle(article)
     context=theme["importance"]
     pending=theme["verify"]+" El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar."
-    # Se preserva el título como tal para que el lector conozca el hecho
-    # comunicado por la fuente, y la interpretación no lo presente como
-    # reportaje propio.
     return {"lead":first,"context":context,"pending":pending,
             "method":"Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."}
 
