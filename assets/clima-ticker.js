@@ -1,153 +1,239 @@
 'use strict';
-/* Clima estimado por alcaldía, con atribución MET Norway.
-   No usa geolocalización ni datos meteorológicos inventados. */
+/* Franja meteorológica para las 16 alcaldías.
+   Siempre inicia con Cuauhtémoc y recorre las demás en orden aleatorio.
+   Pronósticos de MET Norway: nunca se inventa la temperatura.
+   La alcaldía seleccionada en el control personaliza las noticias, pero no
+   cambia el orden de la tira, que siempre comienza en el centro de CDMX. */
 (()=>{
- const ribbon=document.getElementById('weather-ribbon');
  const track=document.getElementById('weather-ribbon-track');
  const select=document.getElementById('weather-borough');
  const reader=document.getElementById('weather-screen-reader');
- if(!ribbon||!track||!select)return;
+ if(!track||!select)return;
  const KEY='cdmx.memento.alcaldia.v1';
+ const CACHE_KEY='cdmx.memento.clima.cache.v2';
+ const CENTER='Cuauhtémoc';
+ const CACHE_AGE=40*60*1000; // Reducir peticiones en teléfonos que cambian de página.
+ const MAX_STALE=120*60*1000; // Nunca enseñar como reciente un dato viejo.
  const NAMES=[
-  'La Magdalena Contreras','Álvaro Obregón','Azcapotzalco','Benito Juárez',
-  'Coyoacán','Cuajimalpa de Morelos','Cuauhtémoc','Gustavo A. Madero',
+  'Cuauhtémoc','La Magdalena Contreras','Álvaro Obregón','Azcapotzalco',
+  'Benito Juárez','Coyoacán','Cuajimalpa de Morelos','Gustavo A. Madero',
   'Iztacalco','Iztapalapa','Miguel Hidalgo','Milpa Alta','Tláhuac',
   'Tlalpan','Venustiano Carranza','Xochimilco'
  ];
- const DEFAULT='Cuauhtémoc';
- const safeName=name=>NAMES.includes(name)?name:DEFAULT;
- const savedName=()=>{
-  try{return safeName(localStorage.getItem(KEY))}catch{return DEFAULT}
+ const safeName=name=>NAMES.includes(name)?name:CENTER;
+ const getStored=()=>{
+  try{return safeName(localStorage.getItem(KEY))}catch{return CENTER}
  };
- const writeName=name=>{
+ const store=name=>{
   try{localStorage.setItem(KEY,name)}catch{/* preferencias opcionales */}
  };
- function chip(text,extraClass=''){
-  // La atribución permite consultar directamente la fuente meteorológica.
-  const sourceLink=extraClass==='weather-chip--credit';
-  const node=document.createElement(sourceLink?'a':'span');
-  node.className='weather-chip'+(extraClass?' '+extraClass:'');
-  node.textContent=sourceLink?text+' ↗':text;
-  if(sourceLink){
-   node.href='https://api.met.no/';
-   node.target='_blank';
-   node.rel='noopener noreferrer';
-   node.title='Fuente del pronóstico: Instituto Meteorológico de Noruega (MET Norway)';
+ const randomOrder=()=>{
+  const rest=NAMES.filter(name=>name!==CENTER);
+  // Fisher-Yates, orden nuevo en cada carga; Cuauhtémoc siempre primero.
+  for(let i=rest.length-1;i>0;i--){
+   const j=Math.floor(Math.random()*(i+1));
+   [rest[i],rest[j]]=[rest[j],rest[i]];
   }
-  return node;
+  return [CENTER,...rest];
+ };
+ const order=randomOrder();
+ const cache=new Map();
+ function validData(data,name){
+  const temp=data?.temperature_c;
+  return data&&data.alcaldia===name&&data.source==='MET Norway'&&
+   typeof temp==='number'&&Number.isFinite(temp)&&temp>=-40&&temp<=55;
  }
- // Dos grupos idénticos producen un bucle perfecto sin vacíos al terminar.
- // El segundo se oculta a tecnologías de asistencia y no contiene controles.
- function show(parts,screenText){
-  const originals=document.createElement('div');
-  originals.className='weather-ribbon__set';
-  originals.dataset.weatherGroup='1';
-  for(const [text,extraClass] of parts)originals.append(chip(text,extraClass||''));
-  const copy=originals.cloneNode(true);
-  copy.dataset.weatherGroup='2';
-  copy.setAttribute('aria-hidden','true');
-  // El duplicado es solo visual: no crea otro enlace enfocable por teclado.
-  copy.querySelectorAll('a').forEach(a=>a.tabIndex=-1);
-  track.replaceChildren(originals,copy);
-  if(reader)reader.textContent=screenText;
- }
- let currentName=savedName();
- for(const name of NAMES){
-  const option=document.createElement('option');
-  option.value=name;option.textContent=name;select.append(option);
- }
- select.value=currentName;
- let currentRequest=null,requestId=0,lastFetched=0;
- function hourMX(iso){
-  const date=new Date(iso);
-  if(!Number.isFinite(date.getTime()))return '';
-  return new Intl.DateTimeFormat('es-MX',{
-   timeZone:'America/Mexico_City',hour:'2-digit',minute:'2-digit',hour12:false
-  }).format(date);
- }
- function renderPending(name){
-  show([
-   ['🌸 CLIMA · CDMX','weather-chip--title'],
-   ['📍 '+name,'weather-chip--place'],
-   ['☁️ Consultando el pronóstico…','']
-  ],'Consultando el pronóstico para '+name+'.');
- }
- function renderUnavailable(name){
-  show([
-   ['🌸 CLIMA · CDMX','weather-chip--title'],
-   ['📍 '+name,'weather-chip--place'],
-   ['☁️ Clima no disponible por ahora',''],
-   ['♡ Visita de nuevo en unos minutos','']
-  ],'Pronóstico no disponible para '+name+'. No se muestran datos sin verificar.');
- }
- function renderWeather(data){
-  const name=currentName;
-  const temperature=Number(data.temperature_c);
-  if(!Number.isFinite(temperature))throw Error('Pronóstico sin temperatura');
-  const temperatureText=Math.round(temperature)+' °C';
-  const parts=[
-   ['🌸 CLIMA ESTIMADO · CDMX','weather-chip--title'],
-   ['📍 '+name,'weather-chip--place'],
-   [(typeof data.icon==='string'?data.icon:'🌤️')+' '+temperatureText,'weather-chip--temp'],
-   ['💗 '+String(data.description||'Pronóstico variable'),''],
-  ];
-  if(data.humidity_pct!==null&&Number.isFinite(Number(data.humidity_pct))){
-   parts.push(['💧 Humedad '+Math.round(Number(data.humidity_pct))+' %','']);
-  }
-  if(data.wind_kmh!==null&&Number.isFinite(Number(data.wind_kmh))){
-   parts.push(['🍃 Viento '+Math.round(Number(data.wind_kmh))+' km/h','']);
-  }
-  const hour=hourMX(data.forecast_for);
-  if(hour)parts.push(['🕒 Pronóstico para las '+hour+' h','']);
-  parts.push(['✦ Fuente: MET Norway','weather-chip--credit']);
-  show(parts,'Pronóstico estimado para '+name+': '+temperatureText+', '+String(data.description||'')+
-   '. Datos de MET Norway; no es una medición de una estación en tiempo real.');
- }
- async function loadWeather(force=false){
-  const name=currentName;
-  if(!force&&Date.now()-lastFetched<14*60*1000)return;
-  const id=++requestId;
-  currentRequest?.abort();
-  const controller=new AbortController();
-  currentRequest=controller;
-  renderPending(name);
+ function loadCache(){
   try{
-   const response=await fetch('/api/clima?alcaldia='+encodeURIComponent(name),{
-    signal:controller.signal,headers:{Accept:'application/json'}
-   });
-   if(!response.ok)throw Error('Error de consulta');
-   const data=await response.json();
-   if(id!==requestId)return;
-   if(data.alcaldia!==name||!Number.isFinite(Number(data.temperature_c)))throw Error('Información incompleta');
-   renderWeather(data);
-   lastFetched=Date.now();
-  }catch(error){
-   if(id===requestId&&error.name!=='AbortError')renderUnavailable(name);
+   const entries=JSON.parse(localStorage.getItem(CACHE_KEY)||'{}');
+   if(!entries||typeof entries!=='object')return;
+   for(const name of NAMES){
+    const item=entries[name];
+    if(item&&Number.isFinite(item.at)&&Date.now()-item.at<MAX_STALE&&validData(item.data,name)){
+     cache.set(name,item);
+    }
+   }
+  }catch{/* El widget funciona incluso con almacenamiento bloqueado. */}
+ }
+ function saveCache(){
+  try{
+   const entries={};
+   for(const [name,value] of cache)entries[name]=value;
+   localStorage.setItem(CACHE_KEY,JSON.stringify(entries));
+  }catch{/* Bloqueos de almacenamiento no impiden mostrar los datos. */}
+ }
+ function pick(name){
+  const item=cache.get(name);
+  return item&&Date.now()-item.at<MAX_STALE?item:null;
+ }
+ const original=document.createElement('div');
+ original.className='weather-ribbon__set';
+ original.dataset.weatherGroup='1';
+ const textNodes=new Map();
+ function chip(name){
+  const chip=document.createElement('span');
+  chip.className='weather-chip weather-chip--borough';
+  chip.dataset.weatherBorough=name;
+  chip.textContent='📍 '+name+' · consultando…';
+  return chip;
+ }
+ for(const name of order){
+  const node=chip(name);
+  textNodes.set(name,node);
+  original.append(node);
+ }
+ const source=document.createElement('a');
+ source.className='weather-chip weather-chip--credit';
+ source.href='https://api.met.no/';
+ source.target='_blank';
+ source.rel='noopener noreferrer';
+ source.textContent='✦ Pronósticos: MET Norway ↗';
+ original.append(source);
+ const duplicate=original.cloneNode(true);
+ duplicate.dataset.weatherGroup='2';
+ duplicate.setAttribute('aria-hidden','true');
+ duplicate.querySelectorAll('a').forEach(a=>a.tabIndex=-1);
+ track.replaceChildren(original,duplicate);
+ const copies=new Map();
+ for(const node of duplicate.querySelectorAll('[data-weather-borough]')){
+  copies.set(node.dataset.weatherBorough,node);
+ }
+ let selected=getStored();
+ for(const name of NAMES){
+  const option=document.createElement('option');option.value=name;option.textContent=name;
+  select.append(option);
+ }
+ select.value=selected;
+ function highlightSelected(){
+  for(const [name,node] of textNodes){
+   node.classList.toggle('weather-chip--selected',name===selected);
+   copies.get(name)?.classList.toggle('weather-chip--selected',name===selected);
   }
  }
- function changeBorough(name,emit=false){
+ function renderOne(name){
+  const item=pick(name);
+  let txt='📍 '+name+' · consultando…';
+  if(item){
+   const data=item.data;
+   const temp=Math.round(data.temperature_c)+'°C';
+   const symbol=typeof data.icon==='string'?data.icon:'🌤️';
+   const cond=typeof data.description==='string'?data.description:'Pronóstico variable';
+   txt=symbol+' '+name+' · '+temp+' · '+cond;
+   if(Date.now()-item.at>CACHE_AGE)txt+=' (dato anterior)';
+  }
+  textNodes.get(name).textContent=txt;
+  copies.get(name).textContent=txt;
+ }
+ let geometryJob=0;
+ function alignSpeed(){
+  if(geometryJob)return;
+  geometryJob=requestAnimationFrame(()=>{
+   geometryJob=0;
+   // Velocidad constante en píxeles/segundo: el texto sigue siendo legible,
+   // aunque el carrusel contenga muchas alcaldías, también en móvil.
+   const width=original.scrollWidth;
+   if(width>0){
+    const speed=window.innerWidth<600?78:88;
+    track.style.setProperty('--weather-duration',Math.max(18,Math.min(110,width/speed)).toFixed(1)+'s');
+   }
+  });
+ }
+ function render(name){
+  renderOne(name);highlightSelected();alignSpeed();
+ }
+ function updateReader(){
+  const c=pick(CENTER);
+  if(reader){
+   reader.textContent=c?
+    'Clima estimado en Cuauhtémoc: '+Math.round(c.data.temperature_c)+
+      ' grados. La franja recorre las dieciséis alcaldías en orden aleatorio; fuente MET Norway.':
+    'Clima estimado de las dieciséis alcaldías: consultando Cuauhtémoc primero.';
+  }
+ }
+ function setSelected(name,emit){
   const next=safeName(name);
-  if(next===currentName){select.value=next;return;}
-  currentName=next;
+  selected=next;
   select.value=next;
-  lastFetched=0;
+  highlightSelected();
   if(emit){
-   writeName(next);
+   store(next);
    window.dispatchEvent(new CustomEvent('cdmx:borough-changed',{detail:{borough:next}}));
   }
-  loadWeather(true);
  }
- select.addEventListener('change',()=>changeBorough(select.value,true));
+ select.addEventListener('change',()=>setSelected(select.value,true));
  window.addEventListener('cdmx:borough-changed',event=>{
-  if(event.detail?.borough)changeBorough(event.detail.borough);
+  if(event.detail?.borough)setSelected(event.detail.borough,false);
  });
  window.addEventListener('storage',event=>{
-  if(event.key===KEY)changeBorough(savedName());
+  if(event.key===KEY)setSelected(getStored(),false);
  });
+ loadCache();
+ for(const name of order)renderOne(name);
+ highlightSelected();
+ updateReader();
+ alignSpeed();
+ // Evitar perder todos los datos en conexiones móviles intermitentes.
+ const inFlight=new Map();
+ async function loadOne(name,force=false){
+  const old=pick(name);
+  if(old&&Date.now()-old.at<CACHE_AGE&&!force)return;
+  if(inFlight.has(name))return inFlight.get(name);
+  const promise=(async()=>{
+   const controller=new AbortController();
+   const timer=setTimeout(()=>controller.abort(),9000);
+   try{
+    const response=await fetch('/api/clima?alcaldia='+encodeURIComponent(name),{
+     headers:{Accept:'application/json'},signal:controller.signal
+    });
+    if(!response.ok)throw Error('Servicio no disponible');
+    const data=await response.json();
+    if(!validData(data,name))throw Error('Datos incompletos');
+    cache.set(name,{at:Date.now(),data});
+    saveCache();
+    render(name);
+    if(name===CENTER)updateReader();
+   }catch{
+    // No sustituir cifras válidas de caché por valores inventados.
+    const item=pick(name);
+    if(!item){
+     const text='☁️ '+name+' · sin datos por ahora';
+     textNodes.get(name).textContent=text;
+     copies.get(name).textContent=text;
+     alignSpeed();
+    }
+    if(name===CENTER){
+     if(reader)reader.textContent='Pronóstico no disponible en este momento. No se muestran datos sin verificar.';
+    }
+   }finally{
+    clearTimeout(timer);
+    inFlight.delete(name);
+   }
+  })();
+  inFlight.set(name,promise);
+  return promise;
+ }
+ let refreshing=false;
+ async function refreshAll(){
+  if(refreshing)return;
+  refreshing=true;
+  try{
+   // En móvil primero el centro, después solo tres consultas paralelas.
+   await loadOne(CENTER);
+   const queue=order.slice(1);
+   async function worker(){
+    while(queue.length){
+     if(document.visibilityState==='hidden')return;
+     const name=queue.shift();
+     await loadOne(name);
+    }
+   }
+   await Promise.all([worker(),worker(),worker()]);
+  }finally{refreshing=false;}
+ }
+ refreshAll();
+ window.addEventListener('resize',alignSpeed,{passive:true});
  document.addEventListener('visibilitychange',()=>{
-  if(document.visibilityState==='visible'&&Date.now()-lastFetched>14*60*1000)loadWeather(true);
+  if(document.visibilityState==='visible'){for(const name of order)renderOne(name);refreshAll();}
  });
- window.setInterval(()=>{if(document.visibilityState==='visible')loadWeather(true)},15*60*1000);
- renderPending(currentName);
- loadWeather(true);
+ window.setInterval(()=>{if(document.visibilityState==='visible')refreshAll()},30*60*1000);
 })();
