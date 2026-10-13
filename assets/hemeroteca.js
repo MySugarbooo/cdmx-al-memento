@@ -1,12 +1,7 @@
 'use strict';
 /* Directorio y archivo mensual: sin dependencias, sin imágenes de eventos inventadas. */
 (() => {
- const BOROUGHS = [
-  'La Magdalena Contreras','Álvaro Obregón','Azcapotzalco','Benito Juárez',
-  'Coyoacán','Cuajimalpa de Morelos','Cuauhtémoc','Gustavo A. Madero',
-  'Iztacalco','Iztapalapa','Miguel Hidalgo','Milpa Alta','Tláhuac','Tlalpan',
-  'Venustiano Carranza','Xochimilco'
- ];
+ const BOROUGHS = ["Álvaro Obregón","Azcapotzalco","Benito Juárez","Coyoacán","Cuajimalpa de Morelos","Cuauhtémoc","Gustavo A. Madero","Iztacalco","Iztapalapa","La Magdalena Contreras","Miguel Hidalgo","Milpa Alta","Tláhuac","Tlalpan","Venustiano Carranza","Xochimilco"];
  const TOPICS=['Metro','Movilidad','Seguridad','Cultura','Gobierno','CDMX'];
  const $=id=>document.getElementById(id);
  const make=(tag,cls,text)=>{
@@ -159,7 +154,7 @@
         photo=$('borough-photo'), photoCaption=$('borough-photo-caption'),
         photoSource=$('borough-image-source'), photoLicense=$('borough-image-license');
   const requested=params.get('alcaldia');
-  let active=BOROUGHS.includes(requested)?requested:BOROUGHS[0];
+  let active=BOROUGHS.includes(requested)?requested:'Cuauhtémoc';
   const entries=new Map(), histories=new Map(), photos=new Map();
   let newsReady=false, historyReady=false, photosReady=false, didAutoScroll=false;
 
@@ -269,7 +264,7 @@
   select.addEventListener('change',()=>change(select.value));
   window.addEventListener('popstate',()=>{
    const name=new URLSearchParams(window.location.search).get('alcaldia');
-   active=BOROUGHS.includes(name)?name:BOROUGHS[0];
+   active=BOROUGHS.includes(name)?name:'Cuauhtémoc';
    view();
   });
   view();
