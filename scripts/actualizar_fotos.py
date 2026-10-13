@@ -174,6 +174,7 @@ def candidate(page, category, now, verified_location=False):
     label, lic_url = license_info
     result = {
         "id": "reciente_" + hashlib.sha256(source.encode()).hexdigest()[:16],
+        "reviewed_location": bool(verified_location),
         "category": category,
         "topic": clean_html(filename.rsplit(".", 1)[0].replace("_", " "))[:150],
         "file": filename,
