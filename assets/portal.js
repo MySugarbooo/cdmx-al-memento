@@ -45,10 +45,18 @@
   document.querySelectorAll('[data-selected-borough]').forEach(markBorough);
  }
  function selectBorough(name){
-  save(KEY_BOROUGH,cleanBorough(name));
+  const selected=cleanBorough(name);
+  save(KEY_BOROUGH,selected);
   syncSelects();
   if(feed){renderToday();renderBorough();}
+  window.dispatchEvent(new CustomEvent('cdmx:borough-changed',{detail:{borough:selected}}));
  }
+ // Al cambiar la alcaldía desde la tira del clima, actualiza también las noticias
+ // de la portada o de "CDMX cerca de ti" sin recargar la página.
+ window.addEventListener('cdmx:borough-changed',()=>{
+  syncSelects();
+  if(feed){renderToday();renderBorough();}
+ });
  function linkToBorough(name){
   return '/alcaldias/?alcaldia='+encodeURIComponent(name)+'#noticias-alcaldia';
  }
