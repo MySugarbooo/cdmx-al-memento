@@ -75,11 +75,12 @@
   el.replaceChildren();
   for(const a of rows){
    const li=document.createElement('li'),link=document.createElement('a'),small=document.createElement('small');
-   link.textContent=a.title;link.href=a.url;link.target='_blank';link.rel='noopener noreferrer nofollow';
+   link.textContent=a.title;link.href=a.local_url||'/noticias/';
    small.textContent=(a.source||'Medio externo')+' · '+(a.published_at?dateMX(a.published_at):a.date||'Fecha no indicada')+' · '+(a.category||'CDMX');
    const saveButton=document.createElement('button');
    saveButton.type='button';saveButton.className='fav-save';
    saveButton.dataset.favoriteUrl=a.url;
+   saveButton.dataset.favoriteLocalUrl=a.local_url||'/noticias/';
    saveButton.dataset.favoriteTitle=a.title;
    saveButton.dataset.favoriteCategory=a.category||'CDMX';
    saveButton.dataset.favoriteSource=a.source||'Medio externo';
@@ -182,7 +183,7 @@
   const old=readFavorites();
   const found=old.some(x=>x.url===item.url);
   writeFavorites(found?old.filter(x=>x.url!==item.url):[{
-   url:item.url,title:String(item.title||'Noticia').slice(0,340),
+   url:item.url,local_url:String(item.local_url||'/noticias/').slice(0,160),title:String(item.title||'Noticia').slice(0,340),
    source:String(item.source||'Medio externo').slice(0,100),
    category:String(item.category||'CDMX').slice(0,40),
    date:String(item.date||new Date().toISOString().slice(0,10)).slice(0,28)
@@ -194,13 +195,15 @@
   // Procesa también tarjetas insertadas dinámicamente tras una actualización o pestaña.
   for(const card of document.querySelectorAll('.card,.featured-card')){
    if(card.querySelector('.fav-save'))continue;
-   const link=card.querySelector('a.read[href^="https://news.google.com/"]');
+   const link=card.querySelector('a.read[href^="/noticias/"]');
    if(!link)continue;
    const title=card.querySelector('h3')?.textContent||'Noticia';
    const category=card.querySelector('.badge')?.textContent||'CDMX';
    const source=(card.querySelector('.article-source')?.textContent||'').replace(/^Medio:\s*/,'');
    const button=document.createElement('button');button.className='fav-save';button.type='button';
-   button.dataset.favoriteUrl=link.href;
+   const origin=feed?.articles?.find(item=>item.local_url===link.getAttribute('href'));
+   button.dataset.favoriteUrl=origin?.url||link.href;
+   button.dataset.favoriteLocalUrl=link.getAttribute('href');
    button.dataset.favoriteTitle=title;
    button.dataset.favoriteCategory=category;
    button.dataset.favoriteSource=source;
@@ -229,7 +232,8 @@
   for(const item of rows){
    const li=document.createElement('li');li.className='portal-favorite-item';
    const main=document.createElement('div'),link=document.createElement('a'),detail=document.createElement('small');
-   link.href=item.url;link.textContent=item.title;link.target='_blank';link.rel='noopener noreferrer nofollow';
+   const savedLink=item.local_url||feed?.articles?.find(a=>a.url===item.url)?.local_url||'/noticias/';
+   link.href=savedLink;link.textContent=item.title;
    detail.textContent=[item.source,item.category,item.date].filter(Boolean).join(' · ');
    main.append(link,detail);
    const remove=document.createElement('button');remove.type='button';remove.className='portal-btn';remove.textContent='Quitar';
@@ -274,7 +278,7 @@
  }
  document.addEventListener('click',e=>{
   const btn=e.target.closest?.('.fav-save');if(!btn)return;
-  toggleFavorite({url:btn.dataset.favoriteUrl,title:btn.dataset.favoriteTitle,
+  toggleFavorite({url:btn.dataset.favoriteUrl,local_url:btn.dataset.favoriteLocalUrl,title:btn.dataset.favoriteTitle,
    source:btn.dataset.favoriteSource,category:btn.dataset.favoriteCategory,date:new Date().toISOString().slice(0,10)});
  });
  document.querySelectorAll('[data-borough-select]').forEach(select=>select.addEventListener('change',()=>selectBorough(select.value)));
