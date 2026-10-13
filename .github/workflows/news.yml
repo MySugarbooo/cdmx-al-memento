@@ -22,6 +22,10 @@ on:
       - 'tests/test_photos.py'
       - 'tests/test_archive.py'
       - 'tests/test_profiles.py'
+      - 'tests/test_transitions.py'
+      - 'assets/page-transitions.js'
+      - 'app.js'
+      - 'styles.css'
       - 'tests/test_portal.py'
       - 'tests/test_weather.py'
       - 'functions/api/clima.js'
@@ -47,6 +51,7 @@ jobs:
       - name: Verificar sintaxis de los scripts interactivos
         run: |
           node --check app.js
+          node --check assets/page-transitions.js
           node --check assets/portal.js
           node --check assets/clima-ticker.js
           node --check --input-type=module < functions/api/clima.js
