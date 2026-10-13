@@ -15,6 +15,7 @@ const topicStageDescription=document.getElementById('topic-stage-description');
 const topicStageCount=document.getElementById('topic-stage-count');
 const newsSlidePanel=document.getElementById('news-slide-panel');
 const reportList=document.getElementById('report-list');
+const editorialLatest=document.getElementById('editorial-latest-link');
 function element(tag,cls,txt){const e=document.createElement(tag);if(cls)e.className=cls;if(txt!==undefined)e.textContent=txt;return e}
 function validLink(u){try{const p=new URL(u);return p.protocol==='https:'&&p.hostname==='news.google.com'}catch{return false}}
 function articleVisual(a){
@@ -325,6 +326,16 @@ Promise.allSettled([
  if(reportList){
   reportList.replaceChildren();
   const data=reports.status==='fulfilled'&&Array.isArray(reports.value.reports)?reports.value.reports:[];
+  if(editorialLatest){
+   const latest=data.find(x=>/^\/reportes\/\d{4}-\d{2}-\d{2}\.html$/.test(x.url));
+   if(latest){
+    editorialLatest.href=latest.url;
+    editorialLatest.textContent='Leer la tesis, opinión y fuentes · '+latest.date+' ↗';
+   }else{
+    editorialLatest.href='/reportes/';
+    editorialLatest.textContent='Explorar reportes y sus fuentes ↗';
+   }
+  }
   for(const x of data.slice(0,5)){
    if(!/^\/reportes\/\d{4}-\d{2}-\d{2}\.html$/.test(x.url))continue;
    const li=element('li'),a=element('a','','Reporte del '+x.date);
