@@ -124,3 +124,44 @@ header>.wrap>nav a{flex-shrink:0}
 /* Firma transparente de las tesis periodísticas generadas con IA. */
 .editorial-byline{display:inline-block;padding:8px 12px;border-radius:9px;background:#3b2b44;border:1px solid #a66b91;color:#ffdbeb!important;font-size:12px;line-height:1.5;margin:0 0 12px!important}
 .editorial-byline strong{color:#fff!important;font-weight:850}
+
+/* Noticias originales: lectura completa dentro de CDMX AL MEMENTO. */
+.local-story-head{
+ padding:29px 30px 24px;margin:19px 0 23px;border-radius:19px;
+ background:radial-gradient(ellipse at 93% 7%,#a649744a,transparent 56%),linear-gradient(125deg,#251f34,#172334);
+ border:1px solid #875c7c
+}
+.local-story-head .eyebrow{font-size:11px;color:#ffbadc}
+.local-story-head h1{font-size:clamp(28px,4.5vw,48px);line-height:1.17;letter-spacing:-.9px;color:#fff;margin:9px 0 15px;overflow-wrap:anywhere}
+.local-story-meta{font-size:13px;color:#cbd2e0;line-height:1.6;margin:0 0 12px}
+.local-story-byline{color:#ffcadf;font-size:13px;line-height:1.5}
+.local-story-byline strong{color:white}
+.local-story-cols{display:grid;grid-template-columns:minmax(0,2fr) minmax(230px,1fr);gap:21px;align-items:start}
+.local-story-article,.local-story-side{border:1px solid #4c485f;border-radius:19px;background:#1c2333;padding:25px 29px;min-width:0}
+.local-story-article h2{color:#ffd3e6;font-size:clamp(19px,2.4vw,25px);margin:28px 0 10px;line-height:1.23}
+.local-story-article p{font-size:15px;color:#e2e5f0;line-height:1.85;margin:8px 0 20px}
+.local-story-article .local-story-lead{font-size:clamp(18px,2.25vw,22px);font-weight:650;color:#fff;line-height:1.7}
+.local-story-figure{margin:0 0 25px}
+.local-story-figure img{display:block;width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;background:#2a2e40;border-radius:13px}
+.local-story-figure figcaption{font-size:11px;color:#cbd1db;margin-top:9px;line-height:1.6}
+.local-story-figure a,.local-story-article a{color:#ffc7e0}
+.local-story-editorial{border-left:4px solid #da82af;padding:4px 15px;background:#292239;border-radius:8px;margin:22px 0}
+.local-story-editorial h2{margin:12px 0}
+.local-story-sources{margin:28px 0 8px;padding:18px;border:1px solid #6d5a72;border-radius:13px;background:#242338}
+.local-story-sources h2{margin:3px 0 12px}
+.local-story-sources p{font-size:12px;line-height:1.6}
+.local-source-link{font-size:12px;font-weight:700;text-decoration:underline}
+.local-story-side{padding:22px;position:sticky;top:160px}
+.local-story-side h2{font-size:20px;color:white;margin:3px 0 12px}
+.local-story-side p{font-size:13px;color:#c7cede;line-height:1.7}
+.local-story-side .explore-btn{display:block;margin:10px 0;text-align:center}
+.local-more{margin:38px 0}
+.local-more h2{color:#fff;font-size:25px}
+@media(max-width:730px){
+ .local-story-cols{grid-template-columns:1fr}
+ .local-story-side{position:static}
+ .local-story-head{padding:22px 18px}
+ .local-story-article{padding:17px}
+ .local-story-head h1{font-size:clamp(27px,7vw,35px)}
+ .local-more{margin:26px 0}
+}
