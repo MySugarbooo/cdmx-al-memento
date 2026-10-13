@@ -9,9 +9,14 @@
 <nav aria-label="Navegación principal"><a href="/">Noticias</a><a href="/reportes/">Reportes</a><a href="/guias/">Guías</a><a href="/politica-editorial.html">Política editorial</a><a href="/contacto.html">Contacto</a></nav></div></header>
 <main class="wrap" id="contenido"><article class="prose photo-credits-page">
 <p class="eyebrow">TRANSPARENCIA VISUAL</p><h1>Créditos fotográficos</h1>
-<p>Las imágenes de este sitio son <strong>fotografías auténticas de archivo</strong>, procedentes de <a href="https://commons.wikimedia.org/" target="_blank" rel="noopener noreferrer">Wikimedia Commons</a>. Las utilizamos para representar visualmente lugares y temas de la Ciudad de México.</p>
-<div class="notice"><strong>Importante:</strong> no afirmamos que estas fotografías muestren las noticias actuales junto a las que aparecen. Fueron tomadas en fechas distintas y representan lugares o categorías. Para ver imágenes del suceso, visita la noticia del medio original.</div>
-<p>Las fotografías que lo requieren se atribuyen a sus creadores bajo licencias Creative Commons, que permiten reutilización con sus condiciones. En las tarjetas se muestran copias JPEG optimizadas para web, con recortes visuales mediante CSS. Los archivos originales permanecen disponibles en sus páginas de Wikimedia.</p>
+<p>Las imágenes de este sitio son <strong>fotografías de contexto</strong>, algunas subidas recientemente, procedentes de <a href="https://commons.wikimedia.org/" target="_blank" rel="noopener noreferrer">Wikimedia Commons</a>. Las utilizamos para representar visualmente lugares y temas de la Ciudad de México.</p>
+<div class="notice"><strong>Importante:</strong> no afirmamos que estas fotografías muestren las noticias actuales junto a las que aparecen. Su fecha de subida a Wikimedia Commons no es necesariamente la fecha de captura; representan lugares o temas de la CDMX. Para ver imágenes del suceso, visita la noticia del medio original.</div>
+<p>Las fotografías que lo requieren se atribuyen a sus creadores bajo licencias Creative Commons, que permiten reutilización con sus condiciones. En las tarjetas se muestran copias JPEG propias o miniaturas oficiales de Wikimedia Commons, con recortes visuales mediante CSS. Los archivos originales permanecen disponibles en sus páginas de Wikimedia.</p>
+<section class="recent-credits" aria-labelledby="recent-credits-title">
+<h2 id="recent-credits-title">Fotografías contextuales incorporadas recientemente</h2>
+<p>Lista automática de imágenes seleccionadas del catálogo de Wikimedia Commons. Se indica cuándo se subieron a Commons, sin afirmar que fueron tomadas ese día.</p>
+<div id="recent-photo-credits" class="credit-list"><p class="muted">Consultando fotografías recientes…</p></div>
+</section>
 <div class="credit-list">
 <section class="credit-row"><div><h2>Paseo de la Reforma y Chapultepec</h2><p><strong>Fotografía:</strong> Jonathan Salvador / Wikimedia Commons · CC BY-SA 4.0.</p><p><a href="https://commons.wikimedia.org/wiki/File:Mexico_City_Reforma_skyline.jpg" target="_blank" rel="noopener noreferrer">Ver archivo original ↗</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.es" target="_blank" rel="noopener noreferrer">Ver licencia ↗</a></p></div></section>
 <section class="credit-row"><div><h2>Ángel de la Independencia en la noche</h2><p><strong>Fotografía:</strong> Angel david villaceballos avila / Wikimedia Commons · CC0 1.0.</p><p><a href="https://commons.wikimedia.org/wiki/File:El_angel_y_la_torre.jpg" target="_blank" rel="noopener noreferrer">Ver archivo original ↗</a> · <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.es" target="_blank" rel="noopener noreferrer">Ver licencia ↗</a></p></div></section>
@@ -35,4 +40,30 @@
 <p>Para dudas o solicitudes de corrección escribe a <a href="mailto:sanchezaxochitl@gmail.com">sanchezaxochitl@gmail.com</a>.</p>
 <p><a class="btn" href="/">Volver a las noticias ↗</a></p></article></main>
 <footer><div class="wrap">© 2026 CDMX AL MEMENTO · Proyecto informativo independiente.
-<p><a href="/">Noticias</a><a href="/privacidad.html">Privacidad</a><a href="/politica-editorial.html">Política editorial</a><a href="/contacto.html">Contacto</a></p></div></footer><script defer src="/assets/creditos.js"></script></body></html>
+<p><a href="/">Noticias</a><a href="/privacidad.html">Privacidad</a><a href="/politica-editorial.html">Política editorial</a><a href="/contacto.html">Contacto</a></p></div></footer><script defer src="/assets/creditos.js"></script><script>
+(()=>{
+ const box=document.getElementById('recent-photo-credits');
+ if(!box)return;
+ fetch('/assets/fotos/recientes.json?t='+Date.now())
+  .then(r=>{if(!r.ok)throw Error('catalog');return r.json()})
+  .then(catalog=>{
+   box.replaceChildren();
+   for(const photo of catalog.photos||[]){
+    if(!/^https:\/\/commons\.wikimedia\.org\/wiki\/File:/.test(photo.source||''))continue;
+    const row=document.createElement('section');row.className='credit-row';
+    const detail=document.createElement('div'),heading=document.createElement('h3');
+    heading.textContent=photo.category+' · '+photo.topic;
+    const info=document.createElement('p');
+    info.textContent='© '+photo.author+' · '+photo.license+' · Subida a Commons: '+photo.uploaded_at+
+      (photo.captured_at?' · Fecha de captura declarada: '+photo.captured_at:'');
+    const link=document.createElement('a');link.textContent='Ver fotografía original y atribución ↗';
+    link.href=photo.source;link.target='_blank';link.rel='noopener noreferrer';
+    detail.append(heading,info,link);row.append(detail);box.append(row);
+   }
+   if(!box.children.length){const note=document.createElement('p');note.className='muted';
+    note.textContent='Aún no hay fotografías nuevas que cumplan los criterios. Se mantienen las imágenes de archivo acreditadas abajo.';
+    box.append(note);}
+  }).catch(()=>{box.textContent='Las fotos de archivo y sus créditos permanecen disponibles debajo.';});
+})();
+</script>
+</body></html>
