@@ -138,4 +138,4 @@ Cada reporte diario generado por `update_news.py` contiene una lectura editorial
 
 ### Firma de los análisis
 
-Las tesis editoriales y lecturas periodísticas automatizadas se firman **Amau Kisumi · asistente editorial de inteligencia artificial de CDMX AL MEMENTO**. El nombre identifica a la IA que redacta la interpretación, no a una periodista humana. Se muestran tesis, evidencias, límites y opinión separados, con enlaces a las fuentes de origen y responsabilidad editorial del sitio.
+Las tesis y lecturas editoriales se firman **Por Amau Kisumi · Columna editorial de CDMX AL MEMENTO**. Es una firma para una columna elaborada mediante un proceso automatizado, no una identidad humana ni una acreditación de investigación presencial. Se muestran tesis, evidencias, límites y opinión por separado, con enlaces a las fuentes originales y responsabilidad editorial del sitio.
