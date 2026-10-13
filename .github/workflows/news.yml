@@ -9,6 +9,11 @@ on:
       - '.github/workflows/news.yml'
       - 'update_news.py'
       - 'scripts/generar_guias.py'
+      - 'assets/agenda.js'
+      - 'assets/negocios.js'
+      - 'assets/herramientas.js'
+      - 'assets/explora-list.js'
+      - 'agenda/eventos.json'
       - 'tests/test_monetizacion.py'
       - 'scripts/actualizar_fotos.py'
       - 'tests/test_photos.py'
@@ -42,6 +47,10 @@ jobs:
           node --check assets/portal.js
           node --check assets/clima-ticker.js
           node --check --input-type=module < functions/api/clima.js
+          node --check assets/agenda.js
+          node --check assets/negocios.js
+          node --check assets/herramientas.js
+          node --check assets/explora-list.js
           node --check mapa/mapa.js
       - name: Recopilar titulares y actualizar archivo anual
         run: python update_news.py
