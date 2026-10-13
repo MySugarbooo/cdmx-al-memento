@@ -37,7 +37,7 @@
   if(!a||a.hasAttribute('download')||(a.target&&a.target!=='_self')||a.hasAttribute('data-filter'))return;
   let target;
   try{target=new URL(a.href,location.href)}catch{return;}
-  if(target.origin!==location.origin||!/^https?:$/.test(target.protocol)||target.pathname===location.pathname)return;
+  if(target.origin!==location.origin||!/^https?:$/.test(target.protocol)||target.pathname===location.pathname&&target.search===location.search)return;
   if(/\.(?:json|xml|txt|jpg|png|webp|svg|pdf|mp4|css|js)$/i.test(target.pathname)||target.pathname.startsWith('/api/'))return;
   if(reduced()||typeof root.animate!=='function')return;
   event.preventDefault();
