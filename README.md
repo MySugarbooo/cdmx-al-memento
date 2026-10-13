@@ -135,3 +135,7 @@ Se añadió `/herramientas/calendario-laboral.html` con fechas generales de desc
 El módulo de accesos a guías, agenda, comercios y calculadoras está **debajo de los titulares y de la galería** en la portada. En móvil es una franja horizontal desplazable a la derecha en lugar de un bloque grande que empuje las noticias hacia abajo.
 
 Cada reporte diario generado por `update_news.py` contiene una lectura editorial estructurada: tesis, qué dicen los titulares, qué falta por confirmar, opinión editorial empática separada de los hechos, conclusión razonada y enlaces a los medios con fechas. Se usa el módulo `scripts/analisis_editorial.py`, que exige al menos dos medios distintos con encabezados pertinentes a un mismo tema antes de ofrecer una lectura temática. Si no los encuentra, **no genera afirmaciones concretas sin sustento** y explica sus límites. Nunca inventa entrevistas ni noticias de campo. La portada enlaza automáticamente al reporte más reciente.
+
+### Firma de los análisis
+
+Las tesis editoriales y lecturas periodísticas automatizadas se firman **Amau Kisumi · asistente editorial de inteligencia artificial de CDMX AL MEMENTO**. El nombre identifica a la IA que redacta la interpretación, no a una periodista humana. Se muestran tesis, evidencias, límites y opinión separados, con enlaces a las fuentes de origen y responsabilidad editorial del sitio.
