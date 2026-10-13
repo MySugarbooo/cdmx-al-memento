@@ -9,8 +9,21 @@
 <link rel="stylesheet" href="/assets/portal.css?v=1">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"CDMX AL MEMENTO","url":"https://cdmx-al-memento.pages.dev/","inLanguage":"es-MX","description":"Titulares enlazados de Ciudad de México y guías informativas"}</script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6521969406386261" crossorigin="anonymous"></script>
-</head>
+<link rel="stylesheet" href="/assets/clima-ticker.css?v=1"></head>
 <body><a class="skip" href="#contenido">Saltar al contenido</a>
+<div id="weather-ribbon" class="weather-ribbon" role="region" aria-label="Tira de pronóstico meteorológico para la CDMX">
+  <a class="weather-ribbon__brand" href="/cerca/" title="Explorar clima y noticias por alcaldía">🌸 CLIMA</a>
+  <div class="weather-ribbon__window" aria-label="Clima estimado en movimiento; se detiene al señalar la tira">
+    <div id="weather-ribbon-track" class="weather-ribbon__track">
+      <div class="weather-ribbon__set"><span class="weather-chip">⛅ Consultando el clima de la CDMX…</span></div>
+    </div>
+  </div>
+  <label class="weather-ribbon__control" title="Seleccionar otra alcaldía">
+    <span class="weather-sr-only">Cambiar alcaldía del clima</span>
+    <select id="weather-borough" aria-label="Seleccionar alcaldía para consultar el clima"></select>
+  </label>
+  <span class="weather-sr-only" id="weather-screen-reader" role="status" aria-live="polite"></span>
+</div>
 <header><div class="wrap"><div class="top"><a class="logo" href="/">CDMX <span>AL MEMENTO</span></a><span class="tag">LA CAPITAL, AL INSTANTE.</span></div>
 <div class="nav-carousel" aria-label="Menú horizontal"><button class="nav-arrow" type="button" data-nav-shift="-1" aria-label="Mover menú a la izquierda">‹</button><nav id="menu-superior" aria-label="Navegación principal"><a href="#noticias" data-filter="">Última hora</a><a href="#noticias" data-filter="Metro">Metro</a><a href="#noticias" data-filter="Seguridad">Seguridad</a><a href="#noticias" data-filter="Movilidad">Movilidad</a><a href="#noticias" data-filter="Cultura">Cultura</a><a href="#noticias" data-filter="Gobierno">Gobierno</a><a href="/alcaldias/">Alcaldías</a><a href="/mapa/">Mapa ilustrado</a><a href="/archivo/">Archivo mensual</a><a href="/reportes/">Reportes</a><a href="/guias/">Guías</a><a href="/cerca/">Mi alcaldía</a><a href="/movilidad/">Transporte</a><a href="/avisos/">Alertas</a><a href="/favoritos/">Guardados ♡</a></nav><button class="nav-arrow" type="button" data-nav-shift="1" aria-label="Mover menú a la derecha">›</button></div></div></header>
 <main id="contenido" class="wrap">
@@ -168,4 +181,4 @@
 <footer><div class="wrap">© <span id="year">2026</span> CDMX AL MEMENTO · Proyecto informativo independiente · Los artículos enlazados pertenecen a sus respectivos medios.
 <p><a href="/sobre-nosotros.html">Sobre nosotros</a><a href="/privacidad.html">Privacidad</a><a href="/politica-editorial.html">Política editorial</a><a href="/creditos-fotograficos.html">Créditos fotográficos</a><a href="/contacto.html">Contacto y correcciones</a><a href="mailto:sanchezaxochitl@gmail.com">sanchezaxochitl@gmail.com</a></p>
 </div></footer><script>document.getElementById('year').textContent=new Date().getFullYear()</script><script src="/assets/fotos.js" defer></script><script src="/app.js?v=20261012-fotos-recientes" defer></script>
-<script src="/assets/portal.js?v=3" defer></script></body></html>
+<script src="/assets/portal.js?v=4" defer></script><script src="/assets/clima-ticker.js?v=1" defer></script></body></html>
