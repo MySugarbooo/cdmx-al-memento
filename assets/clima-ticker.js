@@ -9,6 +9,35 @@
  const select=document.getElementById('weather-borough');
  const reader=document.getElementById('weather-screen-reader');
  if(!track||!select)return;
+ // Fecha local fija a la derecha: no depende de la conexión meteorológica.
+ const dateBadge=document.createElement('time');
+ dateBadge.className='weather-ribbon__date';
+ dateBadge.id='weather-current-date';
+ const weekday=document.createElement('span');
+ weekday.className='weather-date__weekday';
+ const fullDate=document.createElement('span');
+ fullDate.className='weather-date__long';
+ const shortDate=document.createElement('span');
+ shortDate.className='weather-date__short';
+ dateBadge.append(weekday,fullDate,shortDate);
+ const bar=document.getElementById('weather-ribbon');
+ if(bar)bar.append(dateBadge);
+ function refreshDate(){
+  const now=new Date();
+  const zone='America/Mexico_City';
+  const format=options=>new Intl.DateTimeFormat('es-MX',{timeZone:zone,...options}).format(now);
+  const day=format({weekday:'long'});
+  weekday.textContent='📅 '+day[0].toUpperCase()+day.slice(1);
+  fullDate.textContent=format({day:'numeric',month:'long',year:'numeric'});
+  shortDate.textContent=format({day:'numeric',month:'short',year:'numeric'});
+  const parts=new Intl.DateTimeFormat('en-US',{timeZone:zone,day:'2-digit',month:'2-digit',year:'numeric'}).formatToParts(now);
+  const get=t=>parts.find(x=>x.type===t)?.value||'';
+  dateBadge.dateTime=get('year')+'-'+get('month')+'-'+get('day');
+  dateBadge.setAttribute('aria-label','Fecha de hoy en CDMX: '+day+', '+fullDate.textContent);
+ }
+ refreshDate();
+ setInterval(refreshDate,60000);
+ document.addEventListener('visibilitychange',()=>{if(!document.hidden)refreshDate()});
  const KEY='cdmx.memento.alcaldia.v1';
  const CACHE_KEY='cdmx.memento.clima.cache.v2';
  const CENTER='Cuauhtémoc';
