@@ -120,3 +120,7 @@ header>.wrap>nav a{flex-shrink:0}
  .home-extras-track>a{flex-basis:210px!important}
  .editorial-thesis{padding:18px 16px}
 }
+
+/* Firma transparente de las tesis periodísticas generadas con IA. */
+.editorial-byline{display:inline-block;padding:8px 12px;border-radius:9px;background:#3b2b44;border:1px solid #a66b91;color:#ffdbeb!important;font-size:12px;line-height:1.5;margin:0 0 12px!important}
+.editorial-byline strong{color:#fff!important;font-weight:850}
