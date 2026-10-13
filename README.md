@@ -124,3 +124,7 @@ El cliente consulta primero Cuauhtémoc y luego utiliza tres consultas concurren
 ### Fecha local fija junto al clima
 
 El extremo derecho de la tira rosa muestra el **día de la semana, día, mes y año** de Ciudad de México. Se crea en el navegador con `Intl.DateTimeFormat('es-MX', {timeZone: 'America/Mexico_City'})` y se actualiza cada minuto, además de al volver a la pestaña, para reconocer el cambio de fecha a medianoche. En móviles se muestra el mes abreviado para conservar espacio para las 16 alcaldías y la animación. No depende del proveedor del clima ni requiere API.
+
+
+### Calendario laboral
+Se añadió `/herramientas/calendario-laboral.html` con fechas generales de descanso obligatorio 2026–2035, cálculo local de lunes trasladados y fuente LFT. Las celebraciones culturales de las alcaldías se distinguen de los descansos obligatorios. No se piden datos personales.
