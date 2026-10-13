@@ -17,7 +17,7 @@ class TransitionTests(unittest.TestCase):
         self.assertIn("const ghost=outgoing.cloneNode(true)",js)
         self.assertIn("document.body.append(ghost)",js)
         self.assertIn("displayTopic(next)",js)
-        self.assertIn("const duration=480",js)
+        self.assertIn("const duration=720",js)
         self.assertIn("const leave=ghost.animate([",js)
         self.assertIn("const arrive=incoming.animate([",js)
         self.assertIn("if(token!==topicSwitchToken)return",js)
@@ -25,6 +25,11 @@ class TransitionTests(unittest.TestCase):
         self.assertNotIn("behavior:'instant'",js)
         self.assertIn("navReducedMotion()",js)
         self.assertIn(".topic-transition-ghost",css)
+        self.assertIn("@view-transition{navigation:auto}",css)
+        self.assertIn("memento-page-leave",css)
+        self.assertIn("memento-page-arrive",css)
+        self.assertIn("const outgoing=before?topicStage:homeView",js)
+        self.assertIn("const incoming=next?topicStage:homeView",js)
 
     def test_interpage_slides_preserve_real_navigation(self):
         js=read("assets/page-transitions.js")
