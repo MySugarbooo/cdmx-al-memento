@@ -200,7 +200,8 @@ def build():
             '<footer><div class="wrap">CDMX AL MEMENTO · ',
             '<a href="/privacidad.html">Privacidad</a> · <a href="/politica-editorial.html">Política editorial</a> · ',
             '<a href="/publicidad/">Publicidad y transparencia</a></div></footer>',
-            '<script defer src="/assets/clima-ticker.js?v=4"></script></body></html>',
+            '<script defer src="/assets/clima-ticker.js?v=4"></script>'
+            '<script defer src="/assets/page-transitions.js?v=1"></script></body></html>',
         ])
         target=DEST/(slug+".html")
         if not target.exists() or target.read_text(encoding="utf-8")!=content:
