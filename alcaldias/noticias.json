@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-13 20:48 UTC",
+  "updated": "2026-10-13 21:43 UTC",
   "boroughs": [
     {
       "name": "La Magdalena Contreras",
@@ -3917,7 +3917,7 @@
     },
     {
       "name": "Tlalpan",
-      "count": 39,
+      "count": 40,
       "articles": [
         {
           "title": "Fuga de diésel en Tlalpan provoca evacuaciones; IPN e INE suspenden actividades",
@@ -3973,6 +3973,34 @@
             "author": "Juan Carlos Fonseca Mata",
             "license": "CC BY-SA 4.0",
             "source": "https://commons.wikimedia.org/wiki/File:Edificios,_Paseo_de_la_Reforma_(CDMX)_0131.jpg"
+          }
+        },
+        {
+          "title": "Detienen a sujeto por matar a balazos a un perro por ladrar mucho en Tlalpan, CDMX",
+          "description": "Una nota de Quinta Fuerza comunica un caso relacionado con una detención o una presunta conducta delictiva en Tlalpan. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPbEE2a0F2aS1zUTVCRUlkWnp1Rks4RFMwRk1mNjc5UWN0SDZXUnNzVk1ManR0SVlqeUVNX2w3bUFGa29RcklTb2UzSmhJbU1QMGh4b0ZORHN5N01CQnR5bEFCbzVEWmZHNzZDdFVfd0Y4YjZjZDhTZm1vUDN1VU0wRTFUUzhIYnhCbHRtNkNGVU9CYmVWT0txOA?oc=5",
+          "source": "Quinta Fuerza",
+          "date": "2026-10-13",
+          "published_at": "2026-10-13T19:31:04Z",
+          "category": "CDMX",
+          "borough": "Tlalpan",
+          "location": "Tlalpan (mencionada en el titular)",
+          "local_url": "/noticias/?id=2b51a9065248eace2d2e&mes=2026-10",
+          "brief": {
+            "lead": "Una nota de Quinta Fuerza comunica un caso relacionado con una detención o una presunta conducta delictiva en Tlalpan. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_iztapalapa",
+            "url": "/assets/alcaldias/iztapalapa.jpg",
+            "category": "CDMX",
+            "borough": "Iztapalapa",
+            "topic": "Vista de Iztapalapa desde el Cerro de la Estrella",
+            "author": "Secretaría de Cultura Ciudad de México from México",
+            "license": "CC BY 2.0",
+            "source": "https://commons.wikimedia.org/wiki/File:MX_MM_MUSEO_CERRO_DE_LA_ESTRELLA_%2849522225751%29.jpg"
           }
         },
         {
@@ -4418,24 +4446,6 @@
           "local_url": "/noticias/?id=30c20984ef80dd50ddde&mes=2026-10",
           "brief": {
             "lead": "De acuerdo con un titular publicado por El Heraldo de México, el tema de actualidad está relacionado con un asunto de interés público relacionado con la Ciudad de México. La atribución corresponde al medio citado, no a una comprobación independiente de nuestra redacción. El encabezado menciona Tlalpan; esa referencia no demuestra por sí misma dónde ocurrieron todos los hechos.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
-        },
-        {
-          "title": "Trabajadores del IMSS Reabren la Circulación en Tlalpan Tras Seis Horas de Protesta",
-          "description": "De acuerdo con un titular publicado por N+, el tema de actualidad está relacionado con un asunto de interés público relacionado con la Ciudad de México. La atribución corresponde al medio citado, no a una comprobación independiente de nuestra redacción. El encabezado menciona Tlalpan; esa referencia no demuestra por sí misma dónde ocurrieron todos los hechos.",
-          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQRlluejVNeWJsY1NscTNhb2NVcE1BMTlZdG1hdGVwRjJRRG9sWkFuSGlSSEw0WDlRWjNsS2g5ZXVqZm5ua1RpMnBjNlAwWnJqM1ZHYms2MWY1eTdSakFUdUpuaW1qbmpUXzB0MkI2bDA3N3VlUVlxaEgtenRvR0NscWdLbDRDTDF1cVhVM20zRXlQN2pnaWFxMXNPcWJPcmY4X3NYc0JseHhzWjhxeDJjanFwZWZjWTNIOG5GMm9YNA?oc=5",
-          "source": "N+",
-          "date": "2026-10-09",
-          "published_at": "2026-10-10T00:01:48Z",
-          "category": "CDMX",
-          "borough": "Tlalpan",
-          "location": "Tlalpan (mencionada en el titular)",
-          "local_url": "/noticias/?id=cd54b1cf12d857db13d8&mes=2026-10",
-          "brief": {
-            "lead": "De acuerdo con un titular publicado por N+, el tema de actualidad está relacionado con un asunto de interés público relacionado con la Ciudad de México. La atribución corresponde al medio citado, no a una comprobación independiente de nuestra redacción. El encabezado menciona Tlalpan; esa referencia no demuestra por sí misma dónde ocurrieron todos los hechos.",
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
