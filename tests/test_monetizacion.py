@@ -35,7 +35,7 @@ class MonetizacionTests(unittest.TestCase):
         self.assertNotIn('class="alcaldia-card principal"',home)
         for path in ("/descubre/","/agenda/","/negocios/","/herramientas/"):
             self.assertIn('href="'+path+'"',home)
-        self.assertIn("CDMX PARA TODOS",home)
+        self.assertIn("EXPLORA MÁS DE LA CDMX",home)
         self.assertLess(home.index("Álvaro Obregón"),home.index("La Magdalena Contreras"))
 
     def test_event_agenda_has_verified_dates_and_no_expired_cards(self):
