@@ -2,13 +2,12 @@
 /* Franja meteorológica para las 16 alcaldías.
    Siempre inicia con Cuauhtémoc y recorre las demás en orden aleatorio.
    Pronósticos de MET Norway: nunca se inventa la temperatura.
-   La alcaldía seleccionada en el control personaliza las noticias, pero no
-   cambia el orden de la tira, que siempre comienza en el centro de CDMX. */
+   La alcaldía se elige en la sección «Mi alcaldía», no en la tira.
+   La cinta siempre comienza en el centro de CDMX. */
 (()=>{
  const track=document.getElementById('weather-ribbon-track');
- const select=document.getElementById('weather-borough');
  const reader=document.getElementById('weather-screen-reader');
- if(!track||!select)return;
+ if(!track)return;
  // Fecha local fija a la derecha: no depende de la conexión meteorológica.
  const dateBadge=document.createElement('time');
  dateBadge.className='weather-ribbon__date';
@@ -52,9 +51,6 @@
  const safeName=name=>NAMES.includes(name)?name:CENTER;
  const getStored=()=>{
   try{return safeName(localStorage.getItem(KEY))}catch{return CENTER}
- };
- const store=name=>{
-  try{localStorage.setItem(KEY,name)}catch{/* preferencias opcionales */}
  };
  const randomOrder=()=>{
   const rest=NAMES.filter(name=>name!==CENTER);
@@ -128,11 +124,6 @@
   copies.set(node.dataset.weatherBorough,node);
  }
  let selected=getStored();
- for(const name of NAMES){
-  const option=document.createElement('option');option.value=name;option.textContent=name;
-  select.append(option);
- }
- select.value=selected;
  function highlightSelected(){
   for(const [name,node] of textNodes){
    node.classList.toggle('weather-chip--selected',name===selected);
@@ -179,22 +170,17 @@
     'Clima estimado de las dieciséis alcaldías: consultando Cuauhtémoc primero.';
   }
  }
- function setSelected(name,emit){
-  const next=safeName(name);
-  selected=next;
-  select.value=next;
+ function setSelected(name){
+  selected=safeName(name);
   highlightSelected();
-  if(emit){
-   store(next);
-   window.dispatchEvent(new CustomEvent('cdmx:borough-changed',{detail:{borough:next}}));
-  }
  }
- select.addEventListener('change',()=>setSelected(select.value,true));
+ // La barra es únicamente informativa. El selector de alcaldía continúa
+ // disponible en "CDMX cerca de ti", no dentro del carrusel estrecho.
  window.addEventListener('cdmx:borough-changed',event=>{
-  if(event.detail?.borough)setSelected(event.detail.borough,false);
+  if(event.detail?.borough)setSelected(event.detail.borough);
  });
  window.addEventListener('storage',event=>{
-  if(event.key===KEY)setSelected(getStored(),false);
+  if(event.key===KEY)setSelected(getStored());
  });
  loadCache();
  for(const name of order)renderOne(name);
