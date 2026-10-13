@@ -53,18 +53,7 @@
 .weather-chip--credit{background:#f9e7ff;color:#72436b;font-weight:800}
 a.weather-chip--credit{text-decoration:none}
 a.weather-chip--credit:hover,a.weather-chip--credit:focus-visible{background:#fff;color:#832955;text-decoration:underline}
-.weather-ribbon__control{
- flex-shrink:0;max-width:190px;padding:0 10px;height:100%;display:flex;align-items:center;
- background:#fff5fbc4;border-left:1px solid #c96a9870;
-}
-.weather-ribbon__control select{
- width:165px;min-width:0;min-height:31px;padding:5px 26px 5px 10px;
- background:#fff9ff;border:1px solid #cf7ba8;border-radius:999px;
- color:#7a2c56;font:750 11px/1.2 system-ui,-apple-system,Segoe UI,sans-serif;
- text-overflow:ellipsis;cursor:pointer;
-}
-.weather-ribbon__brand:focus-visible,
-.weather-ribbon__control select:focus-visible{outline:2px solid #8c2962;outline-offset:-3px}
+.weather-ribbon__brand:focus-visible{outline:2px solid #8c2962;outline-offset:-3px}
 .weather-ribbon:hover .weather-ribbon__track,
 .weather-ribbon:focus-within .weather-ribbon__track{animation-play-state:paused}
 @keyframes weather-slide{to{transform:translate3d(-50%,0,0)}}
@@ -77,13 +66,9 @@ body>.skip:focus{z-index:2000;top:var(--weather-strip-height)}
  .weather-ribbon__set{gap:8px;padding-right:8px}
  .weather-chip{font-size:11px;min-height:29px;padding:5px 11px}
  .weather-chip--temp{font-size:12px}
- .weather-ribbon__control{padding:0 5px;max-width:105px}
- .weather-ribbon__control select{width:95px;min-width:0;font-size:10px;padding:4px 17px 4px 7px}
 }
 @media(max-width:370px){
  .weather-ribbon__brand{min-width:57px;padding:0 4px;font-size:9px}
- .weather-ribbon__control{max-width:83px}
- .weather-ribbon__control select{width:73px}
 }
 @media(prefers-reduced-motion:reduce){
  .weather-ribbon__window{overflow-x:auto;scrollbar-width:thin;mask-image:none;-webkit-mask-image:none}
@@ -91,19 +76,18 @@ body>.skip:focus{z-index:2000;top:var(--weather-strip-height)}
  .weather-ribbon__set[aria-hidden="true"]{display:none}
 }
 
-/* Temperatura y alcaldía caben juntas en una sola tarjeta por lugar;
-   en teléfonos gana espacio el carrusel, no el selector desplegable. */
+/* Temperatura y alcaldía caben juntas en una sola tarjeta por lugar.
+   Sin selector desplegable, el carrusel ocupa el ancho libre en celular. */
 .weather-ribbon__set{min-width:0;flex:0 0 auto}
 .weather-ribbon__track{min-width:max-content;gap:0}
 .weather-chip--borough{font-variant-numeric:tabular-nums}
 .weather-chip--selected{background:#fff;color:#87234f;border-color:#d864a1}
-.weather-ribbon__window{display:block;overflow:hidden}
+.weather-ribbon__window{display:block;overflow:hidden;flex:1 1 0%;min-width:0}
 /* Mantener contenido dentro de la franja incluso con enlaces enfocados. */
 @media(max-width:700px){
  .weather-ribbon{min-height:var(--weather-strip-height)}
  .weather-chip--borough{font-size:11px;font-weight:800}
  .weather-ribbon__window{flex:1 1 0%;min-width:0}
- .weather-ribbon__control{flex:0 0 auto}
 }
 
 /* Fecha visible y fija al extremo derecho de la tira. */
