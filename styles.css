@@ -511,3 +511,12 @@ footer a{color:#ffc3df}
  .card h3{font-size:18px}
  .portal-card,.portal-today{contain:layout style}
 }
+
+/* Las categorías se deslizan realmente: vista anterior e inmediata comparten
+   pantalla durante 480 ms, sin pantallazo vacío ni scroll teletransportado. */
+html,body{overflow-x:clip}
+.topic-transition-ghost{contain:paint;isolation:isolate;will-change:transform,opacity;box-shadow:0 9px 24px #0a081429}
+.topic-stage-hero,.hero-editorial{backface-visibility:hidden}
+@media(prefers-reduced-motion:reduce){
+ .topic-transition-ghost{display:none}
+}
