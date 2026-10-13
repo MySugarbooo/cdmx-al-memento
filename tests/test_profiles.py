@@ -74,7 +74,7 @@ class ProfileTests(unittest.TestCase):
         self.assertIn("id=\"topic-stage-grid\"", home)
         self.assertIn(".topic-stage[hidden],.home-view[hidden]", css)
         self.assertIn('/styles.css?v=20261012-topical-pages', home)
-        self.assertIn('/app.js?v=20261012-topical-pages', home)
+        self.assertIn('/app.js?v=20261012-fotos-recientes', home)
 
 
     def test_illustrated_map_featured_above_news_and_real_transport_layers(self):
