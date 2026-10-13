@@ -60,7 +60,7 @@ class PortalTests(unittest.TestCase):
         self.assertIn('toggleFavorite(item)', js)
         self.assertIn('new MutationObserver', js)
         self.assertIn("card.querySelector('a.read", js)
-        self.assertIn("news.google.com", js)
+        self.assertIn("a.local_url||'/noticias/'", js)
         self.assertNotIn('fetch(\'/api/save', js)
         priv = get('privacidad.html')
         self.assertIn('cdmx.memento.alcaldia.v1', priv)
