@@ -54,7 +54,7 @@ alcaldía depende de las menciones explícitas del nombre en los titulares.
 
 ## Mapa ilustrado de la Ciudad de México
 
-- Portada: tarjeta clicable en la columna derecha, antes de las alcaldías. En móvil, las noticias siguen primero.
+- Portada: mapa compacto debajo de «La ciudad nunca se detiene. Nosotros tampoco.», con enlace al mapa ampliado.
 - Página completa: `/mapa/`, mapa Leaflet con base CARTO/OSM de apariencia suave, zoom, búsqueda de 11 monumentos representados con estampas SVG dibujadas para el proyecto.
 - Capas con geometrías de referencia del **Atlas Público de Movilidad Integrada de SIGIRPC CDMX** (FeatureServer): Metro, Metrobús, RTP, Trolebús, Tren Ligero, Cablebús y transporte concesionado (corredores/servicios zonales).
 - `functions/api/transporte.js`: función de Cloudflare Pages, consulta y limita la respuesta del servicio público. Si la función no está desplegada, el navegador intenta acceder directamente al atlas (sujeto a CORS).
@@ -70,7 +70,7 @@ alcaldía depende de las menciones explícitas del nombre en los titulares.
 En móvil, el recuadro del mapa precede a las noticias en la sección principal; la lista de las 16 alcaldías aparece tras las noticias. Los filtros del menú se desplazan expresamente a los titulares, sin detenerse en el mapa ni las alcaldías.
 
 ### Prominencia del mapa en Inicio
-Desde el 12 de octubre de 2026, la tarjeta clicable del mapa se presenta inmediatamente debajo del menú principal de la portada, **antes del hero, las noticias y la lista de alcaldías**, para que sea visible en PC y móvil sin tener que desplazarse. La vista compacta tiene su mapa geográfico real y abre `/mapa/` al pulsar cualquier parte de la tarjeta. Solo se muestra una vez en la portada; la lista de alcaldías permanece más abajo y los filtros conducen a noticias.
+Desde el 12 de octubre de 2026, la tarjeta compacta del mapa se presenta debajo del título principal de la portada, para que sea visible en PC y móvil sin tener que desplazarse. La vista compacta tiene su mapa geográfico real y abre `/mapa/` al pulsar cualquier parte de la tarjeta. Solo se muestra una vez en la portada; la lista de alcaldías permanece más abajo y los filtros conducen a noticias.
 
 
 ## Renovación diaria de fotografías de contexto
@@ -81,3 +81,22 @@ Desde el 12 de octubre de 2026, la tarjeta clicable del mapa se presenta inmedia
 - Prioriza las imágenes contextuales recientes en titulares, fotografías de portada, tarjetas de temas y galería, con el catálogo local como respaldo si el servicio no devuelve resultados o falla una imagen.
 - **Precisión editorial:** fecha de subida a Commons ≠ fecha de toma ni fecha del acontecimiento. Ninguna foto de contexto demuestra que muestre el hecho de un titular.
 - Si Wikimedia no devuelve archivos aptos, permanece la imagen de archivo; no se inventan fotografías ni procedencias. El número de imágenes puede variar por categoría.
+
+
+## CDMX CERCA DE TI: funciones para lectores (octubre 2026)
+
+Se amplió el portal directamente en GitHub y Cloudflare Pages con estas páginas informativas originales:
+
+- **Inicio**: resumen «Hoy en la CDMX», con seis titulares y fecha real de publicación cuando conste. Si todavía no hay notas del día, se indica expresamente que se muestran las más recientes.
+- **/cerca/**: personalización por una de las 16 alcaldías (se guarda mediante `localStorage` únicamente en ese navegador), noticias que mencionan el nombre de la zona, enlaces a historias de las alcaldías y mapa. No utiliza GPS.
+- **/movilidad/**: las 12 líneas del Metro con colores y terminales cartográficas de referencia, enlaces directos a Metro, Metrobús y SEMOVI y noticias relacionadas. **NO consulta ni certifica el estado en tiempo real**.
+- **/avisos/**: enlaces oficiales de protección civil, calidad del aire y movilidad, con filtro transparente por palabras de los titulares (no son alertas operativas certificadas).
+- **/favoritos/**: guardar/quitar titulares desde tarjetas y resúmenes, almacenados en el dispositivo, sin iniciar sesión y sin seguimiento.
+- **Notificaciones voluntarias**: botón del lector que solicita el permiso explícito; el navegador compara titulares nuevos cada 15 minutos **solo mientras la página permanece abierta**. No se implementó Web Push persistente ni se prometen avisos de emergencia en segundo plano.
+- **/mapa/**: además de Metro, transporte, monumentos y parques, capas de museos, patrimonio arqueológico y hospitales orientativos (no horarios, disponibilidad ni acceso de urgencias).
+- **Accesibilidad y diseño**: enlaces de navegación claros, tarjetas adaptables, controles táctiles y reducción de movimiento cuando el navegador lo solicita.
+- **Editorial/AdSense**: cuatro páginas de contexto original, enlaces a fuentes oficiales, descripción de la metodología, créditos fotográficos, títulos y metadatos, sitemap actualizado y privacidad transparente. Una mejora editorial no garantiza aprobación de AdSense.
+
+El workflow horario sigue realizando la actualización de titulares y la comprobación diaria de fotos. Revisa también sintaxis de JavaScript y todas las pruebas unitarias antes de publicar nuevos datos. Las fotografías contextuales no necesariamente pertenecen al acontecimiento reportado.
+
+**Enlaces y vigencia:** para saber si una línea está operando o una alerta sigue activa, el lector debe verificar en las fuentes oficiales. Las tarjetas de noticias son recopilaciones informativas de enlaces a medios externos, no informes propios.
