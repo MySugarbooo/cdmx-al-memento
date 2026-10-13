@@ -213,7 +213,7 @@ const topicDescriptions={
  Gobierno:'Anuncios oficiales, servicios públicos, decisiones y políticas.',
  CDMX:'Lo que ocurre en la Ciudad de México, más allá de un solo tema.'
 };
-let topicSwitchToken=0,activeTopicAnimation=null;
+let topicSwitchToken=0,activeTopicAnimation=null,pendingTopicScroll=null;
 const topicStagePrev=document.getElementById('topic-stage-prev');
 const topicStageNext=document.getElementById('topic-stage-next');
 function syncTopicTabs(selected=category){
@@ -236,6 +236,16 @@ function displayTopic(next){
  if(homeView)homeView.hidden=Boolean(next);
  render();
 }
+function cancelTopicTransition(){
+ if(pendingTopicScroll!==null){window.clearTimeout(pendingTopicScroll);pendingTopicScroll=null;}
+ if(!activeTopicAnimation)return;
+ for(const animation of activeTopicAnimation.animations){
+  animation.onfinish=null;
+  animation.cancel();
+ }
+ activeTopicAnimation.ghost?.remove();
+ activeTopicAnimation=null;
+}
 function changeTopic(requested){
  const next=topicOrder.includes(requested)?requested:'';
  const before=category;
@@ -243,38 +253,58 @@ function changeTopic(requested){
  const navItem=Array.from(topNav?.querySelectorAll('a[data-filter]')||[]).find(el=>el.dataset.filter===next);
  if(navItem)centerNavItem(navItem);
  if(next===before){syncTopicTabs(next);return;}
- // No desplazamiento animado hacia las noticias: cambiar el panel bajo el menú.
- // Si se está leyendo una sección inferior, volver arriba INSTANTÁNEAMENTE.
- if(window.scrollY>16)window.scrollTo({top:0,behavior:'instant'});
  const token=++topicSwitchToken;
- activeTopicAnimation?.cancel();
- activeTopicAnimation=null;
+ cancelTopicTransition();
  if(search)search.value='';
  syncTopicTabs(next);
- const outgoing=before?topicStage:homeView?.querySelector('.hero-editorial');
- const supportsAnimation=Boolean(outgoing&&typeof outgoing.animate==='function'&&!navReducedMotion());
  const swap=()=>{
   if(token!==topicSwitchToken)return;
+  pendingTopicScroll=null;
+  const outgoing=before?topicStage?.querySelector('.topic-stage-hero'):homeView?.querySelector('.hero-editorial');
+  const canAnimate=Boolean(outgoing&&typeof outgoing.animate==='function'&&!navReducedMotion());
+  if(!canAnimate){displayTopic(next);return;}
+  // Se conservan ambas vistas durante el movimiento: no hay teletransporte.
+  const bounds=outgoing.getBoundingClientRect();
+  const ghost=outgoing.cloneNode(true);
+  ghost.removeAttribute('id');
+  ghost.querySelectorAll('[id]').forEach(el=>el.removeAttribute('id'));
+  ghost.querySelectorAll('iframe,video').forEach(el=>el.remove());
+  ghost.classList.add('topic-transition-ghost');
+  Object.assign(ghost.style,{
+   position:'fixed',top:bounds.top+'px',left:bounds.left+'px',
+   width:bounds.width+'px',height:bounds.height+'px',
+   margin:'0',pointerEvents:'none',overflow:'hidden',zIndex:'18',
+   backfaceVisibility:'hidden'
+  });
+  document.body.append(ghost);
   displayTopic(next);
-  const incoming=next?topicStage:homeView?.querySelector('.hero-editorial');
-  if(!incoming||!supportsAnimation)return;
-  const enter=incoming.animate([
-   {transform:'translateX('+(direction*115)+'px)',opacity:0},
+  const incoming=next?topicStage?.querySelector('.topic-stage-hero'):homeView?.querySelector('.hero-editorial');
+  if(!incoming){ghost.remove();return;}
+  const travel=Math.min(460,Math.max(240,window.innerWidth*.88));
+  const duration=480;
+  const leave=ghost.animate([
+   {transform:'translateX(0)',opacity:1},
+   {transform:'translateX('+(-direction*travel)+'px)',opacity:.07}
+  ],{duration,easing:'cubic-bezier(.33,0,.6,1)',fill:'both'});
+  const arrive=incoming.animate([
+   {transform:'translateX('+(direction*travel)+'px)',opacity:.12},
    {transform:'translateX(0)',opacity:1}
-  ],{duration:340,easing:'cubic-bezier(.2,.75,.25,1)',fill:'both'});
-  activeTopicAnimation=enter;
-  enter.onfinish=()=>{
+  ],{duration,easing:'cubic-bezier(.18,.72,.25,1)',fill:'both'});
+  activeTopicAnimation={animations:[leave,arrive],ghost};
+  arrive.onfinish=()=>{
    if(token!==topicSwitchToken)return;
-   enter.cancel();activeTopicAnimation=null;
+   cancelTopicTransition();
   };
  };
- if(!supportsAnimation){swap();return;}
- const exit=outgoing.animate([
-  {transform:'translateX(0)',opacity:1},
-  {transform:'translateX('+(-direction*110)+'px)',opacity:0}
- ],{duration:160,easing:'ease-in',fill:'forwards'});
- activeTopicAnimation=exit;
- exit.onfinish=()=>{exit.cancel();swap();};
+ // Si la persona lee más abajo, volver al encabezado DESLIZANDO el documento.
+ if(window.scrollY>24&&!navReducedMotion()){
+  const distance=window.scrollY;
+  window.scrollTo({top:0,behavior:'smooth'});
+  pendingTopicScroll=window.setTimeout(swap,Math.min(580,310+distance*.2));
+ }else{
+  if(window.scrollY>16)window.scrollTo({top:0,behavior:'auto'});
+  swap();
+ }
 }
 // Las páginas independientes (mapa, hemeroteca, etc.) conservan sus enlaces.
 topNav?.querySelectorAll('a:not([data-filter])').forEach(el=>el.addEventListener('click',()=>centerNavItem(el)));
