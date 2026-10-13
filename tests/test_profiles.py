@@ -74,7 +74,7 @@ class ProfileTests(unittest.TestCase):
         self.assertIn("id=\"topic-stage-grid\"", home)
         self.assertIn(".topic-stage[hidden],.home-view[hidden]", css)
         self.assertIn('/styles.css?v=20261013-cercadeti', home)
-        self.assertIn('/app.js?v=20261013-editorial', home)
+        self.assertIn('/app.js?v=20261013-deslizamiento', home)
 
 
     def test_illustrated_map_featured_above_news_and_real_transport_layers(self):
@@ -131,6 +131,9 @@ class ProfileTests(unittest.TestCase):
         self.assertIn('function changeTopic(requested)', (ROOT / "app.js").read_text(encoding='utf-8'))
         self.assertIn('changeTopic(el.dataset.filter', (ROOT / "app.js").read_text(encoding='utf-8'))
         self.assertIn('transform:\'translateX(', (ROOT / "app.js").read_text(encoding='utf-8'))
+        self.assertIn('const ghost=outgoing.cloneNode(true)', (ROOT / "app.js").read_text(encoding='utf-8'))
+        self.assertIn("const duration=480", (ROOT / "app.js").read_text(encoding='utf-8'))
+        self.assertIn("behavior:'smooth'", (ROOT / "app.js").read_text(encoding='utf-8'))
         self.assertIn('.news-slide-viewport{min-width:0;', css)
         # Las pestañas aparecen en el mismo orden lógico arriba y en el filtro secundario.
         self.assertLess(home.index('button class="filter" data-filter="Seguridad"'),home.index('button class="filter" data-filter="Movilidad"'))
