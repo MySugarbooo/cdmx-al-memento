@@ -499,3 +499,15 @@ footer a{color:#ffc3df}
  .topic-stage-grid .news-visual{height:200px}
  .topic-stage-count{margin:17px 0 14px}
 }
+
+/* Mejor legibilidad y navegación en tarjetas sin alterar la estructura editorial. */
+.card .inside{gap:5px}.card .read{display:inline-block;padding-top:3px}
+.card:focus-within,.topic-card:focus-visible,.alcaldia-card:focus-visible{outline:2px solid #ffb4d5;outline-offset:3px}
+.card img{background:#2d3042;object-fit:cover}
+@media(max-width:590px){
+ .hero-editorial{overflow-x:clip}
+ .news-main{min-width:0}
+ .card .inside{padding:17px}
+ .card h3{font-size:18px}
+ .portal-card,.portal-today{contain:layout style}
+}
