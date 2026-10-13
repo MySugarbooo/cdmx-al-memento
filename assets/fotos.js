@@ -130,6 +130,9 @@
    if(!item||!/^archivo_[a-z0-9_]{2,50}$/.test(item.id)||images[item.id])continue;
    if(typeof item.author!=='string'||typeof item.topic!=='string'||typeof item.license!=='string')continue;
    if(!/^https:\/\/commons\.wikimedia\.org\/wiki\/File:/.test(item.source||''))continue;
+   // El catálogo histórico contiene algunos archivos de otras ciudades.
+   const title=String(item.file||'').toLocaleLowerCase('es-MX');
+   if(/louisville|kentucky|zacatecas|chihuahua|san francisco|palace of fine arts/i.test(title))continue;
    const cat=groups[item.category]?item.category:'CDMX';
    images[item.id]={file:item.file,author:item.author.slice(0,140),topic:item.topic.slice(0,140),license:item.license,licenseUrl:item.licenseUrl||'',source:item.source,category:cat};
    groups[cat].push(item.id);added++;
