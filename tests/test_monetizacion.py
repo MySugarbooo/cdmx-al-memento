@@ -77,6 +77,13 @@ class MonetizacionTests(unittest.TestCase):
             self.assertIn('id="tool-'+name+'"',doc)
             self.assertIn('id="tool-'+name+'-out"',doc)
         self.assertIn("profedet",doc.lower())
+        self.assertIn('/herramientas/calendario-laboral.html',doc)
+        calendar=txt("herramientas/calendario-laboral.html")
+        script=txt("assets/calendario-laboral.js")
+        self.assertIn("descanso obligatorio",calendar)
+        self.assertIn('id="calendar-year"',calendar)
+        self.assertIn("nthMonday",script)
+        self.assertIn("artículo 74",script)
         self.assertIn("function vacations(years)",js)
         self.assertIn("daysInYear",js)
         self.assertIn("salary*15*days/total",js)
@@ -87,7 +94,7 @@ class MonetizacionTests(unittest.TestCase):
         sitemap=txt("sitemap.xml")
         robots=txt("robots.txt")
         self.assertIn("Sitemap: https://cdmx-al-memento.pages.dev/sitemap.xml",robots)
-        for path in ("/descubre/","/agenda/","/negocios/","/herramientas/","/publicidad/"):
+        for path in ("/descubre/","/agenda/","/negocios/","/herramientas/","/publicidad/","/herramientas/calendario-laboral.html"):
             self.assertIn("https://cdmx-al-memento.pages.dev"+path,sitemap)
         for item in json.loads(txt("assets/alcaldias/historias.json"))["boroughs"]:
             self.assertIn("/descubre/"+item["slug"]+".html",sitemap)
