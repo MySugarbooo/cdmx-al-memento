@@ -1,0 +1,86 @@
+/* Tira de clima CDMX: pronóstico estimado y alcaldía; estilo rosa pastel */
+:root{--weather-strip-height:52px}
+.weather-ribbon{
+ position:sticky;top:0;z-index:1000;isolation:isolate;
+ display:flex;align-items:center;height:var(--weather-strip-height);
+ width:100%;min-width:0;gap:0;overflow:hidden;
+ border-bottom:1px solid #fff9;
+ background:linear-gradient(100deg,#ffc1db 0%,#ffdbea 45%,#f5c4e9 75%,#ffd2e7 100%);
+ box-shadow:0 8px 23px #4b18353b;color:#5b2146;
+ font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+}
+.weather-ribbon::before{
+ content:"";position:absolute;inset:0;pointer-events:none;z-index:-1;opacity:.5;
+ background:radial-gradient(circle at 25% 30%,#fff 0 2px,transparent 3px),
+ radial-gradient(circle at 61% 75%,#fff 0 3px,transparent 4px),
+ radial-gradient(circle at 91% 34%,#fff 0 2px,transparent 3px);
+ background-size:160px 52px,270px 66px,390px 52px;
+}
+.weather-ribbon__brand{
+ flex-shrink:0;display:flex;align-items:center;justify-content:center;
+ height:100%;min-width:99px;padding:0 13px;
+ background:#fff6fcaf;border-right:1px solid #c96a9870;
+ color:#782a52;font-size:12px;font-weight:950;letter-spacing:.65px;
+ text-decoration:none;white-space:nowrap;
+}
+.weather-ribbon__brand:hover{color:#8b1d59;background:#fff8fd}
+.weather-ribbon__window{min-width:0;flex:1;overflow:hidden;position:relative;
+ mask-image:linear-gradient(90deg,transparent,#000 3%,#000 97%,transparent);
+ -webkit-mask-image:linear-gradient(90deg,transparent,#000 3%,#000 97%,transparent)}
+.weather-ribbon__track{
+ display:flex;align-items:center;width:max-content;min-width:100%;
+ animation:weather-slide 35s linear infinite;will-change:transform;
+}
+.weather-ribbon__set{
+ display:flex;align-items:center;flex-shrink:0;min-height:var(--weather-strip-height);
+ gap:11px;padding-right:11px;white-space:nowrap;
+}
+.weather-chip{
+ display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;
+ padding:5px 14px;line-height:1.35;min-height:31px;white-space:nowrap;
+ background:#fff9f1e3;border:1px solid #fff;border-radius:999px;
+ box-shadow:0 3px 10px #ce689b2e;
+ color:#70304e;font-size:12px;font-weight:760;letter-spacing:.02px;
+}
+.weather-chip--title{color:#8d2a64;background:#fff0f8;letter-spacing:.5px;font-weight:900}
+.weather-chip--place{background:#fff;color:#8e2666;font-weight:900}
+.weather-chip--temp{color:#6a214d;font-size:14px;font-weight:950}
+.weather-chip--credit{background:#f9e7ff;color:#72436b;font-weight:800}
+.weather-ribbon__control{
+ flex-shrink:0;max-width:190px;padding:0 10px;height:100%;display:flex;align-items:center;
+ background:#fff5fbc4;border-left:1px solid #c96a9870;
+}
+.weather-ribbon__control select{
+ width:165px;min-width:0;min-height:31px;padding:5px 26px 5px 10px;
+ background:#fff9ff;border:1px solid #cf7ba8;border-radius:999px;
+ color:#7a2c56;font:750 11px/1.2 system-ui,-apple-system,Segoe UI,sans-serif;
+ text-overflow:ellipsis;cursor:pointer;
+}
+.weather-ribbon__brand:focus-visible,
+.weather-ribbon__control select:focus-visible{outline:2px solid #8c2962;outline-offset:-3px}
+.weather-ribbon:hover .weather-ribbon__track,
+.weather-ribbon:focus-within .weather-ribbon__track{animation-play-state:paused}
+@keyframes weather-slide{to{transform:translateX(-50%)}}
+/* El encabezado permanece debajo de la tira, sin solaparse al bajar. */
+body>header{top:var(--weather-strip-height)}
+body>.skip:focus{z-index:2000;top:var(--weather-strip-height)}
+@media(max-width:700px){
+ :root{--weather-strip-height:48px}
+ .weather-ribbon__brand{min-width:75px;padding:0 8px;font-size:10px;letter-spacing:0}
+ .weather-ribbon__set{gap:8px;padding-right:8px}
+ .weather-chip{font-size:11px;min-height:29px;padding:5px 11px}
+ .weather-chip--temp{font-size:12px}
+ .weather-ribbon__control{padding:0 6px;max-width:142px}
+ .weather-ribbon__control select{width:126px;font-size:10px;padding:4px 18px 4px 7px}
+ .weather-ribbon__track{animation-duration:30s}
+}
+@media(max-width:370px){
+ .weather-ribbon__brand{min-width:61px;padding:0 5px;font-size:9px}
+ .weather-ribbon__control{max-width:119px}
+ .weather-ribbon__control select{width:105px}
+}
+@media(prefers-reduced-motion:reduce){
+ .weather-ribbon__window{overflow-x:auto;scrollbar-width:thin;mask-image:none;-webkit-mask-image:none}
+ .weather-ribbon__track{animation:none;will-change:auto}
+ .weather-ribbon__set[aria-hidden="true"]{display:none}
+}
