@@ -73,7 +73,9 @@
   }
  }
  function todayMX(date){
-  return new Intl.DateTimeFormat('en-CA',{timeZone:'America/Mexico_City',year:'numeric',month:'2-digit',day:'2-digit'}).format(date);
+  const parts=new Intl.DateTimeFormat('en-US',{timeZone:'America/Mexico_City',year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(date);
+  const get=type=>parts.find(p=>p.type===type)?.value||'';
+  return get('year')+'-'+get('month')+'-'+get('day');
  }
  function renderToday(){
   if(!feed)return;
@@ -276,7 +278,7 @@
   lastSeen=new Set(data.articles.map(a=>a.url));
   renderToday();renderBorough();renderTransport();renderAlerts();
   const btn=$('portal-enable-notifications');
-  if(btn&&Notification?.permission==='granted'){
+  if(btn&&'Notification' in window&&Notification.permission==='granted'){
    const note=$('portal-notification-status');
    if(note)note.textContent='Permiso concedido. Pulsa Activar para recibir avisos mientras tengas la pestaña abierta.';
   }
