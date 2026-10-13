@@ -120,3 +120,7 @@ La franja **siempre comienza con Cuauhtémoc** y presenta una tarjeta de pronós
 El carrusel avanza con velocidad controlada por el ancho real de las tarjetas (aproximadamente 78 píxeles/segundo en celular y 88 en escritorio), suficiente para que la lectura resulte cómoda. La tira fija reserva más espacio central en pantallas pequeñas; la animación se mantiene sin reconstruir el DOM durante cada actualización.
 
 El cliente consulta primero Cuauhtémoc y luego utiliza tres consultas concurrentes para las demás alcaldías. Mantiene una caché local de máximo dos horas, renueva datos válidos pasados 40 minutos y vuelve a consultar en intervalos de 30 minutos. Si un origen falla, muestra explícitamente **«sin datos por ahora»**, sin inventar temperaturas. En modo de movimiento reducido, la tira deja de animarse y permite desplazamiento manual.
+
+### Fecha local fija junto al clima
+
+El extremo derecho de la tira rosa muestra el **día de la semana, día, mes y año** de Ciudad de México. Se crea en el navegador con `Intl.DateTimeFormat('es-MX', {timeZone: 'America/Mexico_City'})` y se actualiza cada minuto, además de al volver a la pestaña, para reconocer el cambio de fecha a medianoche. En móviles se muestra el mes abreviado para conservar espacio para las 16 alcaldías y la animación. No depende del proveedor del clima ni requiere API.
