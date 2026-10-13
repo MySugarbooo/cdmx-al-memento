@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-13 14:13 UTC",
+  "updated": "2026-10-13 14:39 UTC",
   "boroughs": [
     {
       "name": "La Magdalena Contreras",
@@ -315,7 +315,7 @@
     },
     {
       "name": "Álvaro Obregón",
-      "count": 10,
+      "count": 11,
       "articles": [
         {
           "title": "Julio 'N', agente de la Guardia Nacional, es detenido por un asesinato tras riña en la Álvaro Obregón",
@@ -333,6 +333,34 @@
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          }
+        },
+        {
+          "title": "Clima y pronóstico en Álvaro Obregón: martes 13 de octubre con lluvia ligera y ambiente templado",
+          "description": "El pronóstico recogido por El Heraldo de México se refiere a lluvias ligeras en Álvaro Obregón. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
+          "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxONEZ0TThpdFRKb0lCaHg4TnNfTkFWaG1STHBrbHI2eGVjcE9iYmpKT1NKbDZjTFltWlR2UUNVNHdWQU5mX3RJbm9kTU9KTGUwSDBWTWVyVHN3aVphd3g2TGlBZHBrSy1hU1ZlQnhWNkJLeVVLbmY1dm5BR0Vaby1ZQnk4eHVzbG9HUWY4di1qUkVJQWlCNEtkY21JZklXU1hqdzlLdVNoMTMyeHY4UndMTl9IbDkxS2dhY3B4aEZ5WGdBWEdBSzM2S21NczNjbGJ1c3RIcklZeEtURGF6bnpfZmJXUXRuSHZ5YWc?oc=5",
+          "source": "El Heraldo de México",
+          "date": "2026-10-12",
+          "published_at": "2026-10-13T05:00:00Z",
+          "category": "CDMX",
+          "borough": "Álvaro Obregón",
+          "location": "Álvaro Obregón (mencionada en el titular)",
+          "local_url": "/noticias/?id=a378036c9daf09a2f5d2&mes=2026-10",
+          "brief": {
+            "lead": "El pronóstico recogido por El Heraldo de México se refiere a lluvias ligeras en Álvaro Obregón. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "archivo_cultura_008",
+            "url": "/assets/fotos/archivo_cultura_008.jpg",
+            "category": "Cultura",
+            "borough": "",
+            "topic": "Palacio de Bellas Artes México DF",
+            "author": "Eliasjorge4",
+            "license": "CC BY 3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Palacio_de_Bellas_Artes_M%C3%A9xico_DF.JPG"
           }
         },
         {
@@ -501,8 +529,36 @@
     },
     {
       "name": "Azcapotzalco",
-      "count": 17,
+      "count": 18,
       "articles": [
+        {
+          "title": "Gana hasta 15 mil pesos: la Alcaldía Azcapotzalco lanza su Concurso de Ofrendas de Día de Muertos 2026",
+          "description": "La información publicada por Infobae trata un asunto registrado en la sección de Metro del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNc19NeXJ2blZURXVjbnpaYmxIajUybnhtSnpKaXhEV2pmUDFMOWRWX0pvT2JFUkpQdVJxM0dIMHVpWFlBa2RtaFF1amZkYVFUeEtXVlpxZmtuTi11TnYzcmhaOFBLVnhpS3JVaDZPbTNKUDNMc0xuMnZSNzd1SGdEck9JQXF0R2lSNDFCVUVTSHhCOFpqVU1jb29UR2x3YXEzd1pGek1YWE9hZXNZWUdodzdsbk1WZjF5MWtvOFBMek1SOHZpdGRubjJKUzdsZ3U3NG42VnJ5NGdwb3Yy0gH3AUFVX3lxTFB5U09NelMxMldwWVNiVXRTQ0FPMTVmd2c0WmdwQ2lFbTNaOExneTNUSFJhOFFQQlAtU3F0WXB6bElPMXhfMmJTY1dSWVBIa1dnYlJWbS1lRDNDUkRDMGx5akFFOXZDSXFXcVZuemg5R1F0aWFhcTlTNHRPQnh5VUVlZm14Y1BTSnVkNk8tWVdPNmNxTm1jVFRNVzUxUFU1TFd1WW9XNVZ3V0VGUXhPNU9ZVldVQTdoWnlkeGYzWTROSkZaWHBlRzY1NmNBc0RYTU1BcTBLN2ZSOTZTXzJHVWxsNzh1amttWGxJY1lxNUF6R2QtV1Rac3M?oc=5",
+          "source": "Infobae",
+          "date": "2026-10-13",
+          "published_at": "2026-10-13T14:35:03Z",
+          "category": "Metro",
+          "borough": "Azcapotzalco",
+          "location": "Azcapotzalco (mencionada en el titular)",
+          "local_url": "/noticias/?id=0fa50a94777bf8e7c6b9&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por Infobae trata un asunto registrado en la sección de Metro del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Los cambios en este sistema pueden afectar los horarios, las conexiones y la planeación de los viajes cotidianos.",
+            "pending": "El estado operativo, las estaciones y las alternativas de traslado deben comprobarse en los avisos actuales del Metro. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_azcapotzalco",
+            "url": "/assets/alcaldias/azcapotzalco.jpg",
+            "category": "CDMX",
+            "borough": "Azcapotzalco",
+            "topic": "Parroquia de Santa Catarina, Azcapotzalco",
+            "author": "Ivan alcantara",
+            "license": "CC BY-SA 3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:PARROQUIA_DE_SANTA_CATARINA_%28AZCAPOTZALCO%29.jpg"
+          }
+        },
         {
           "title": "Pronóstico del clima en Azcapotzalco este martes 13 de octubre: Lluvia ligera y ambiente templado",
           "description": "De acuerdo con un titular publicado por El Heraldo de México, el tema de actualidad está relacionado con un asunto de interés público relacionado con la Ciudad de México. La atribución corresponde al medio citado, no a una comprobación independiente de nuestra redacción. El encabezado menciona Azcapotzalco; esa referencia no demuestra por sí misma dónde ocurrieron todos los hechos.",
@@ -2163,7 +2219,7 @@
     },
     {
       "name": "Iztapalapa",
-      "count": 21,
+      "count": 23,
       "articles": [
         {
           "title": "Persecución y balacera entre motociclistas desatan el terror en Iztapalapa y dejan a un herido",
@@ -2250,6 +2306,42 @@
           "local_url": "/noticias/?id=f4419e1e30639e8fa43b&mes=2026-10",
           "brief": {
             "lead": "De acuerdo con un titular publicado por TV Azteca, el tema de actualidad está relacionado con un asunto de interés público relacionado con la Ciudad de México. La atribución corresponde al medio citado, no a una comprobación independiente de nuestra redacción. El encabezado menciona Iztapalapa; esa referencia no demuestra por sí misma dónde ocurrieron todos los hechos.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          }
+        },
+        {
+          "title": "Adiós a la Condesa: Iztapalapa se vuelve el refugio de los jóvenes profesionistas con rentas desde 6,000 pesos",
+          "description": "El reportaje citado por Obras aborda los precios de vivienda o los cambios residenciales en Iztapalapa. Las cifras y su metodología deben examinarse antes de concluir cuántas familias han sido desplazadas o qué tan representativos son determinados anuncios de renta.",
+          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPam1uVWRiV1hyMGFJUC1BdjVydy12bjl6Wl83QThCanZyalFOOEt4NWxhS3Azb0ItWjNRRXRtY2ZYcXhVdTJYcHZvbldqTll2X3Q5U2tSRUJMVHRaY2RicXVjWWFWRnVSeUNSbDR2XzJfQ1RrM0lLYmRoZXlzNWJCSzJmc3lybFBCZjR6aQ?oc=5",
+          "source": "Obras",
+          "date": "2026-10-12",
+          "published_at": "2026-10-12T14:20:00Z",
+          "category": "CDMX",
+          "borough": "Iztapalapa",
+          "location": "Iztapalapa (mencionada en el titular)",
+          "local_url": "/noticias/?id=c02439e8ca1e936d3532&mes=2026-10",
+          "brief": {
+            "lead": "El reportaje citado por Obras aborda los precios de vivienda o los cambios residenciales en Iztapalapa. Las cifras y su metodología deben examinarse antes de concluir cuántas familias han sido desplazadas o qué tan representativos son determinados anuncios de renta.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          }
+        },
+        {
+          "title": "Clima en Iztapalapa: lunes 12 de octubre con lluvia ligera y ambiente templado",
+          "description": "El pronóstico recogido por El Heraldo de México se refiere a lluvias ligeras en Iztapalapa. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
+          "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNWE5BVWMyM2Vtd0NERlNXd21EMDFJOFBYSmg3aHZyd3J0dlo4ajlXc1ZMbFZ2azc1QTcwcnpvX3RuZ3oybWZIZ0FZZF9ZUmVhUGFvbS1ObloyRnY4M1c0NnBxRU1jOHlpY3NHZVljcTFGWFhkOWpLR0l4RDlUb3NEVEFuT3NvaGFpTHFDR0ljT3dxRXIyOGgteEpNb1NqWHVGYVUyVVJlcnJjOWF2akpXRU5ZZHpVLWtBdzFON1pXVElUNUhDRHg3bm5FYTdEMFBlMUZkOA?oc=5",
+          "source": "El Heraldo de México",
+          "date": "2026-10-11",
+          "published_at": "2026-10-12T05:00:00Z",
+          "category": "CDMX",
+          "borough": "Iztapalapa",
+          "location": "Iztapalapa (mencionada en el titular)",
+          "local_url": "/noticias/?id=8572041c0a82fd751d3d&mes=2026-10",
+          "brief": {
+            "lead": "El pronóstico recogido por El Heraldo de México se refiere a lluvias ligeras en Iztapalapa. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
