@@ -8,6 +8,8 @@ on:
     paths:
       - '.github/workflows/news.yml'
       - 'update_news.py'
+      - 'scripts/actualizar_fotos.py'
+      - 'tests/test_photos.py'
       - 'tests/test_archive.py'
       - 'tests/test_profiles.py'
 permissions:
@@ -28,11 +30,13 @@ jobs:
         run: python -m unittest discover -s tests -p 'test_*.py' -v
       - name: Recopilar titulares y actualizar archivo anual
         run: python update_news.py
+      - name: Buscar fotografías recientes y revisar licencias en Wikimedia Commons
+        run: python scripts/actualizar_fotos.py
       - name: Publicar cambios y eliminar noticias vencidas
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A -- news.json reports.json reportes/ archivo/ alcaldias/noticias.json sitemap.xml
+          git add -A -- news.json reports.json reportes/ archivo/ alcaldias/noticias.json sitemap.xml assets/fotos/recientes.json
           if ! git diff --cached --quiet; then
             git commit -m "Actualización y depuración automática de noticias CDMX"
             git pull --rebase origin main
