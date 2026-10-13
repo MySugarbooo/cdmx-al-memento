@@ -29,6 +29,11 @@ jobs:
           python-version: '3.12'
       - name: Verificar ubicación, fecha y retención antes de actualizar
         run: python -m unittest discover -s tests -p 'test_*.py' -v
+      - name: Verificar sintaxis de los scripts interactivos
+        run: |
+          node --check app.js
+          node --check assets/portal.js
+          node --check mapa/mapa.js
       - name: Recopilar titulares y actualizar archivo anual
         run: python update_news.py
       - name: Buscar fotografías recientes y revisar licencias en Wikimedia Commons
