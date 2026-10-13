@@ -13,6 +13,9 @@ on:
       - 'tests/test_archive.py'
       - 'tests/test_profiles.py'
       - 'tests/test_portal.py'
+      - 'tests/test_weather.py'
+      - 'functions/api/clima.js'
+      - 'assets/clima-ticker.js'
 permissions:
   contents: write
 concurrency:
@@ -33,6 +36,8 @@ jobs:
         run: |
           node --check app.js
           node --check assets/portal.js
+          node --check assets/clima-ticker.js
+          node --check --input-type=module < functions/api/clima.js
           node --check mapa/mapa.js
       - name: Recopilar titulares y actualizar archivo anual
         run: python update_news.py
