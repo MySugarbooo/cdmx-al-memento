@@ -35,6 +35,8 @@ class EditorialTests(unittest.TestCase):
                      "Nuestra opinión editorial","Conclusión razonada",
                      "Fuentes periodísticas relacionadas", "Metro CDMX"):
             self.assertIn(part,output)
+        self.assertIn("Por Amau Kisumi",output)
+        self.assertIn("asistente editorial de inteligencia artificial",output)
         self.assertIn("N+",output)
         self.assertIn("El Sol de México",output)
         self.assertIn("no permiten afirmar un cierre efectivo",output)
@@ -90,6 +92,8 @@ class EditorialTests(unittest.TestCase):
         policy=read("politica-editorial.html")
         self.assertIn("build_editorial(rows, datetime.now(timezone.utc))",generator)
         self.assertIn("Análisis editorial",policy)
+        self.assertIn("Amau Kisumi",policy)
+        self.assertIn("asistente de inteligencia artificial",policy)
         self.assertIn("opinión",policy)
         self.assertIn("Fuentes",policy)
         self.assertIn("re.fullmatch",generator)
