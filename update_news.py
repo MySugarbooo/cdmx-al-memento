@@ -21,6 +21,7 @@ from pathlib import Path
 from zoneinfo import ZoneInfo
 
 from scripts.analisis_editorial import build_editorial
+from scripts.notas_locales import local_link, summarize, assign_photos
 
 ROOT = Path(__file__).resolve().parent
 DEST = ROOT / "news.json"
@@ -155,9 +156,9 @@ def standardize(article):
         return None
     borough, location = identify_location(title)
     category = article.get("category") if article.get("category") in GENERAL_FEEDS else "CDMX"
-    return {
+    result = {
         "title": title,
-        "description": "Consulta los detalles y las actualizaciones en el medio original.",
+        "description": "",
         "url": url,
         "source": source or "Medio externo",
         "date": date,
@@ -166,6 +167,12 @@ def standardize(article):
         "borough": borough,
         "location": location,
     }
+    result["local_url"] = local_link(result)
+    result["brief"] = article.get("brief") if isinstance(article.get("brief"), dict) else summarize(result)
+    if isinstance(article.get("photo"), dict):
+        result["photo"] = article["photo"]
+    result["description"] = result["brief"]["lead"]
+    return result
 
 
 def article_key(article):
@@ -335,6 +342,8 @@ def update():
             if (item := standardize(raw)) and sort_key(item) >= now - timedelta(days=3)
         ]
         print("Utilizando solo noticias todavía recientes que ya estaban guardadas.")
+    picture_stats = assign_photos(items[:60])
+    print("Fotografías verificadas para portada:", picture_stats)
     consolidate_archive(items, cutoff, updated)
     write_json(DEST, {"updated": updated, "articles": items[:60]})
     print("Portada: ", min(60, len(items)), "noticias con fecha, hora disponible y zona indicada")
@@ -430,7 +439,7 @@ def generate_report():
                 loc = article.get("location", "Ubicación no indicada")
                 parts.append(
                     '<li><a target="_blank" rel="noopener noreferrer nofollow" href="' +
-                    escape(url, quote=True) + '">' + escape(article.get("title", "")) +
+                    escape(article.get("local_url") or local_link(article), quote=True) + '">' + escape(article.get("title", "")) +
                     '</a> — ' + escape(article.get("source", "")) +
                     ' · Publicada: ' + escape(when) +
                     ' · Zona: ' + escape(loc) + '</li>'
