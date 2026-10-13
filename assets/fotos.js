@@ -151,7 +151,7 @@
    // Protección adicional para el navegador: rechazar imágenes de otras ciudades.
    const title=String(item.file||'').toLocaleLowerCase('es-MX');
    if(/louisville|kentucky|zacatecas|chihuahua|san francisco|barranquilla|bogot[aá]|colombia|medell[ií]n|california/.test(title))continue;
-   if(!/ciudad de m[eé]xico|cdmx|mexico city|distrito federal|z[oó]calo[- ]tenochtitlan|torre latinoamericana|paseo de la reforma/i.test(title))continue;
+   if(!item.reviewed_location&&!/ciudad de m[eé]xico|cdmx|mexico city|distrito federal|z[oó]calo[- ]tenochtitlan|torre latinoamericana|paseo de la reforma/i.test(title))continue;
    if(/\b20\d{2}\b/.test(title)&&Math.max(...(title.match(/\b20\d{2}\b/g)||[]).map(Number))<new Date().getFullYear())continue;
    if(typeof item.author!=='string'||!item.author.trim()||typeof item.topic!=='string'||typeof item.license!=='string')continue;
    const uploaded=Date.parse(item.uploaded_at||'');
