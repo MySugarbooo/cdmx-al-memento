@@ -1,0 +1,32 @@
+{
+  "updated": "2026-10-13",
+  "method": "Selección manual de actividades con fuente oficial. Si el evento terminó, el sitio deja de mostrarlo en la agenda próxima.",
+  "events": [
+    {
+      "id": "expo-mercados-2026",
+      "title": "Por preguntar no se cobra: fotografías de los mercados de la capital",
+      "borough": "Cuauhtémoc",
+      "category": "Exposición",
+      "venue": "Ágora, Galería del Pueblo",
+      "starts": "2026-09-30",
+      "ends": "2027-04-25",
+      "price": "Entrada libre",
+      "free": true,
+      "official": "https://cultura.cdmx.gob.mx/index.php/comunicacion/nota/398-26",
+      "description": "Exposición fotográfica de Ilse Hidalgo sobre historias y personas que trabajan en los mercados de la ciudad. La Secretaría de Cultura anuncia su permanencia hasta abril de 2027."
+    },
+    {
+      "id": "maldita-vecindad-2026",
+      "title": "Maldita Vecindad en Arena CDMX",
+      "borough": "Azcapotzalco",
+      "category": "Música",
+      "venue": "Arena CDMX, Avenida de las Granjas",
+      "starts": "2026-10-30",
+      "ends": "2026-10-30",
+      "price": "Boletos de pago; consulta los precios actuales",
+      "free": false,
+      "official": "https://cartelera.cdmx.gob.mx/32402/20-09-2025/maldita-vecindad",
+      "description": "Concierto anunciado en la cartelera cultural oficial; confirma fecha, disponibilidad y costo antes de comprar."
+    }
+  ]
+}
