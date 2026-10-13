@@ -71,3 +71,13 @@ En móvil, el recuadro del mapa precede a las noticias en la sección principal;
 
 ### Prominencia del mapa en Inicio
 Desde el 12 de octubre de 2026, la tarjeta clicable del mapa se presenta inmediatamente debajo del menú principal de la portada, **antes del hero, las noticias y la lista de alcaldías**, para que sea visible en PC y móvil sin tener que desplazarse. La vista compacta tiene su mapa geográfico real y abre `/mapa/` al pulsar cualquier parte de la tarjeta. Solo se muestra una vez en la portada; la lista de alcaldías permanece más abajo y los filtros conducen a noticias.
+
+
+## Renovación diaria de fotografías de contexto
+
+- En cada ejecución horaria, el workflow comprueba si toca la **consulta diaria** de imágenes mediante `scripts/actualizar_fotos.py`.
+- Busca archivos **subidos durante los últimos 180 días** a Wikimedia Commons, asociados explícitamente con Ciudad de México y alguno de los seis temas, y verifica autor, permiso de reutilización (CC BY, CC BY-SA o CC0) y miniatura oficial. Si la fecha de captura consta y es antigua, descarta la imagen.
+- Guarda metadatos y miniaturas, **sin copiar fotos de medios periodísticos**, en `assets/fotos/recientes.json`, con enlaces a sus créditos en `/creditos-fotograficos.html`.
+- Prioriza las imágenes contextuales recientes en titulares, fotografías de portada, tarjetas de temas y galería, con el catálogo local como respaldo si el servicio no devuelve resultados o falla una imagen.
+- **Precisión editorial:** fecha de subida a Commons ≠ fecha de toma ni fecha del acontecimiento. Ninguna foto de contexto demuestra que muestre el hecho de un titular.
+- Si Wikimedia no devuelve archivos aptos, permanece la imagen de archivo; no se inventan fotografías ni procedencias. El número de imágenes puede variar por categoría.
