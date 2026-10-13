@@ -122,3 +122,6 @@ body.mapa-expandido{overflow:hidden}
 /* Capa de parques y áreas naturales. */
 .capa-punto.naturaleza{background:#4bbd8b}
 .mapa-lugar:focus-visible{outline:2px solid #b8f9cb;outline-offset:2px}
+
+.capa-punto.museos{background:#bf92e9}
+.capa-punto.salud{background:#e36981}
