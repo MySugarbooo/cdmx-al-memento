@@ -43,6 +43,7 @@ class RecentPhotoTests(unittest.TestCase):
         self.assertTrue(photos.matches_place("Metro Ciudad de México 2026.jpg", "Metro"))
         self.assertFalse(photos.matches_place("Metro Louisville Kentucky.jpg", "Metro"))
         self.assertFalse(photos.matches_place("Palace of Fine Arts San Francisco.jpg", "Gobierno"))
+        self.assertFalse(photos.matches_place("Busto Pedro Biava Bellas Artes Barranquilla 2026.jpg", "Cultura"))
         self.assertFalse(photos.matches_place("Random station.jpg", "Metro"))
 
     def test_timestamp_is_upload_not_capture(self):
@@ -52,6 +53,8 @@ class RecentPhotoTests(unittest.TestCase):
         self.assertIn("upload.wikimedia.org", recent["url"])
         old_photo = sample_page(taken="2013-01-10 12:00:00")
         self.assertIsNone(photos.candidate(old_photo, "Metro", self.now))
+        old_year = sample_page(title="File:Metro Ciudad de México 2025.jpg")
+        self.assertIsNone(photos.candidate(old_year, "Metro", self.now))
         old_upload = sample_page(uploaded="2020-01-01T12:00:00Z")
         self.assertIsNone(photos.candidate(old_upload, "Metro", self.now))
 
