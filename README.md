@@ -111,3 +111,12 @@ El workflow horario sigue realizando la actualización de titulares y la comprob
 - Origen: **MET Norway Locationforecast 2.0** (`https://api.met.no/`), con atribución visible y enlace al proveedor. Sus datos CC BY admiten reutilización comercial con atribución. La función se identifica por `User-Agent` y reutiliza los datos de forma temporal según la vigencia de la respuesta para evitar consultas innecesarias. No se necesita una API key.
 - Se intenta renovar la lectura cada **15 minutos** mientras la página está visible. La hora indicada es la hora del pronóstico; **no** es una medición instrumental tomada en la alcaldía ni una alerta meteorológica oficial.
 - `tests/test_weather.py` verifica inclusión del widget, las 16 alcaldías, accesibilidad, atribución, código de integración y la plantilla de nuevos reportes.
+
+
+### Mejora para móviles y recorrido meteorológico (13 de octubre de 2026)
+
+La franja **siempre comienza con Cuauhtémoc** y presenta una tarjeta de pronóstico para cada una de las 15 alcaldías restantes, en orden aleatorio distinto cada vez que se abre la página. La selección personal de `Mi alcaldía` sigue funcionando y resalta su tarjeta, pero no cambia ese recorrido.
+
+El carrusel avanza con velocidad controlada por el ancho real de las tarjetas (aproximadamente 78 píxeles/segundo en celular y 88 en escritorio), suficiente para que la lectura resulte cómoda. La tira fija reserva más espacio central en pantallas pequeñas; la animación se mantiene sin reconstruir el DOM durante cada actualización.
+
+El cliente consulta primero Cuauhtémoc y luego utiliza tres consultas concurrentes para las demás alcaldías. Mantiene una caché local de máximo dos horas, renueva datos válidos pasados 40 minutos y vuelve a consultar en intervalos de 30 minutos. Si un origen falla, muestra explícitamente **«sin datos por ahora»**, sin inventar temperaturas. En modo de movimiento reducido, la tira deja de animarse y permite desplazamiento manual.
