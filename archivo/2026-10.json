@@ -1,6 +1,6 @@
 {
   "month": "2026-10",
-  "updated": "2026-10-13 13:52 UTC",
+  "updated": "2026-10-13 13:59 UTC",
   "articles": [
     {
       "title": "Una marcha y siete concentraciones complicarán la circulación vial en la CDMX",
@@ -456,6 +456,34 @@
         "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
         "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      }
+    },
+    {
+      "title": "PAN CDMX hacia 2027: Sin estrategia ni definición ideológica, apuesta por “cuidar casillas”",
+      "description": "La información publicada por Proceso trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOeEE2am0tRGpxS0VUczRuSFFXRUNlcUtxZmxMN3l3WnAzWkxjd3EtaTdOc3BtTmNlZ1ZmeWNOMmc0UWtFaHZDN3JndE9DVjRhaVBlcUFxRUxFd2dFa0duakpMOE5vbERpOGg4aE9iRGptX0NHY3hOZFhTTW1Fd2d5QkN3MlZIODBhUEo0eWd4Si1SeF90cGxBT0tVSWdKNTBHUmd0S1pGWV9rUUh0dDN3RFBxYmxjT0Nwa1dLYnYweEZwRjBpUlZCbnVRUldpUEdxdU9abDRiSnNuSlRHUlBFVS1zQ2gydw?oc=5",
+      "source": "Proceso",
+      "date": "2026-10-13",
+      "published_at": "2026-10-13T11:00:00Z",
+      "category": "CDMX",
+      "borough": "",
+      "location": "Ciudad de México (sin alcaldía identificada)",
+      "local_url": "/noticias/?id=671ca2823db24289c000&mes=2026-10",
+      "brief": {
+        "lead": "La información publicada por Proceso trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+        "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+        "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "alcaldia_coyoacan",
+        "url": "/assets/alcaldias/coyoacan.jpg",
+        "category": "CDMX",
+        "borough": "Coyoacán",
+        "topic": "Jardín Centenario de Coyoacán",
+        "author": "AlejandroLinaresGarcia",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:JardinCentenarioCoyoacan.JPG"
       }
     },
     {
