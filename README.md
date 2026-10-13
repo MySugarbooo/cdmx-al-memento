@@ -139,3 +139,9 @@ Cada reporte diario generado por `update_news.py` contiene una lectura editorial
 ### Firma de los análisis
 
 Las tesis y lecturas editoriales se firman **Por Amau Kisumi · Columna editorial de CDMX AL MEMENTO**. Es una firma para una columna elaborada mediante un proceso automatizado, no una identidad humana ni una acreditación de investigación presencial. Se muestran tesis, evidencias, límites y opinión por separado, con enlaces a las fuentes originales y responsabilidad editorial del sitio.
+
+### Transiciones animadas de navegación (octubre 2026)
+
+Las pestañas de noticias (Última hora, Metro, Seguridad, Movilidad, Cultura y Gobierno) ahora mantienen visible brevemente el panel anterior como una copia de presentación y **deslizan al mismo tiempo el nuevo** durante 480 ms. Si la persona está desplazada más abajo, la pantalla vuelve suavemente al encabezado antes del cambio en lugar de saltar de inmediato.
+
+Las páginas internas (alcaldías, hemeroteca, reportes, mapa, guías, herramientas, etc.) incorporan `assets/page-transitions.js`: al seguir un enlace interno, el contenido se desliza antes de navegar y la página siguiente entra desde el lado correspondiente. La URL real y los enlaces normales se conservan; no afecta enlaces externos, descargas, anclas de la misma página, botones con modificadores ni las preferencias de movimiento reducido del sistema. Los generadores de reportes y guías conservan la animación. La verificación de cobertura está en `tests/test_transitions.py`.
