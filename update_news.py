@@ -432,6 +432,7 @@ def generate_report():
         "", "contacto.html", "privacidad.html", "sobre-nosotros.html",
         "politica-editorial.html", "creditos-fotograficos.html",
         "guias/", "reportes/", "archivo/", "alcaldias/", "mapa/",
+        "cerca/", "movilidad/", "avisos/",
     ]
     urls += [
         "guias/" + name for name in (
