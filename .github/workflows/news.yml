@@ -63,10 +63,35 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A -- news.json reports.json reportes/ archivo/ alcaldias/noticias.json sitemap.xml assets/fotos/recientes.json descubre/
-          if ! git diff --cached --quiet; then
-            git commit -m "Actualización y depuración automática de noticias CDMX"
-            git pull --rebase origin main
-            git push origin HEAD:main
-          else
-            echo "Noticias sin cambios."
+          if git diff --cached --quiet; then
+            echo "Noticias y guías sin cambios."
+            exit 0
           fi
+          git commit -m "Actualización y depuración automática de noticias CDMX"
+          if git pull --rebase origin main && git push origin HEAD:main; then
+            echo "Noticias publicadas."
+            exit 0
+          fi
+          # El contenido RSS puede cambiar mientras se edita el repositorio.
+          # Recalcular desde la versión más reciente evita conflictos en news.json.
+          git rebase --abort || true
+          for attempt in 1 2 3; do
+            echo "Reconstruyendo cambios sobre main actualizado: intento $attempt"
+            git fetch origin main
+            git reset --hard origin/main
+            python scripts/generar_guias.py
+            python update_news.py
+            python scripts/actualizar_fotos.py
+            git add -A -- news.json reports.json reportes/ archivo/ alcaldias/noticias.json sitemap.xml assets/fotos/recientes.json descubre/
+            if git diff --cached --quiet; then
+              echo "El repositorio ya tiene las últimas noticias."
+              exit 0
+            fi
+            git commit -m "Actualización y depuración automática de noticias CDMX"
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+            sleep 3
+          done
+          echo "No fue posible publicar después de tres intentos." >&2
+          exit 1
