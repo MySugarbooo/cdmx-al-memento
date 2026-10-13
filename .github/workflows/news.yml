@@ -12,6 +12,7 @@ on:
       - 'tests/test_photos.py'
       - 'tests/test_archive.py'
       - 'tests/test_profiles.py'
+      - 'tests/test_portal.py'
 permissions:
   contents: write
 concurrency:
