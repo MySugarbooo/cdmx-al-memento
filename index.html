@@ -6,12 +6,13 @@
 <meta name="theme-color" content="#101116"><meta property="og:site_name" content="CDMX AL MEMENTO"><meta property="og:title" content="CDMX AL MEMENTO · La capital, al instante">
 <meta property="og:description" content="Noticias enlazadas, reportes automáticos y guías útiles sobre Ciudad de México."><meta property="og:type" content="website"><meta property="og:url" content="https://cdmx-al-memento.pages.dev/">
 <link rel="stylesheet" href="/styles.css?v=20261012-topical-pages">
+<link rel="stylesheet" href="/assets/portal.css?v=1">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"CDMX AL MEMENTO","url":"https://cdmx-al-memento.pages.dev/","inLanguage":"es-MX","description":"Titulares enlazados de Ciudad de México y guías informativas"}</script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6521969406386261" crossorigin="anonymous"></script>
 </head>
 <body><a class="skip" href="#contenido">Saltar al contenido</a>
 <header><div class="wrap"><div class="top"><a class="logo" href="/">CDMX <span>AL MEMENTO</span></a><span class="tag">LA CAPITAL, AL INSTANTE.</span></div>
-<div class="nav-carousel" aria-label="Menú horizontal"><button class="nav-arrow" type="button" data-nav-shift="-1" aria-label="Mover menú a la izquierda">‹</button><nav id="menu-superior" aria-label="Navegación principal"><a href="#noticias" data-filter="">Última hora</a><a href="#noticias" data-filter="Metro">Metro</a><a href="#noticias" data-filter="Seguridad">Seguridad</a><a href="#noticias" data-filter="Movilidad">Movilidad</a><a href="#noticias" data-filter="Cultura">Cultura</a><a href="#noticias" data-filter="Gobierno">Gobierno</a><a href="/alcaldias/">Alcaldías</a><a href="/mapa/">Mapa ilustrado</a><a href="/archivo/">Archivo mensual</a><a href="/reportes/">Reportes</a><a href="/guias/">Guías</a></nav><button class="nav-arrow" type="button" data-nav-shift="1" aria-label="Mover menú a la derecha">›</button></div></div></header>
+<div class="nav-carousel" aria-label="Menú horizontal"><button class="nav-arrow" type="button" data-nav-shift="-1" aria-label="Mover menú a la izquierda">‹</button><nav id="menu-superior" aria-label="Navegación principal"><a href="#noticias" data-filter="">Última hora</a><a href="#noticias" data-filter="Metro">Metro</a><a href="#noticias" data-filter="Seguridad">Seguridad</a><a href="#noticias" data-filter="Movilidad">Movilidad</a><a href="#noticias" data-filter="Cultura">Cultura</a><a href="#noticias" data-filter="Gobierno">Gobierno</a><a href="/alcaldias/">Alcaldías</a><a href="/mapa/">Mapa ilustrado</a><a href="/archivo/">Archivo mensual</a><a href="/reportes/">Reportes</a><a href="/guias/">Guías</a><a href="/cerca/">Mi alcaldía</a><a href="/movilidad/">Transporte</a><a href="/avisos/">Alertas</a><a href="/favoritos/">Guardados ♡</a></nav><button class="nav-arrow" type="button" data-nav-shift="1" aria-label="Mover menú a la derecha">›</button></div></div></header>
 <main id="contenido" class="wrap">
 <section id="topic-stage" class="topic-stage" aria-labelledby="topic-stage-heading" hidden>
   <div class="topic-stage-hero">
@@ -46,6 +47,25 @@
  <div class="hero-main-photo media-photo"><img src="/assets/fotos/reforma.jpg" data-fallback-photo="angel" alt="Fotografía panorámica de Paseo de la Reforma y Chapultepec en Ciudad de México" width="960" height="680" loading="eager" decoding="async" fetchpriority="high">
  <div class="hero-photo-label"><span class="picture-kicker">FOTOGRAFÍA DE ARCHIVO · CIUDAD DE MÉXICO</span><strong>La capital desde otra perspectiva.</strong><small>© Jonathan Salvador / Wikimedia Commons · <a href="/creditos-fotograficos.html">Licencia y créditos</a></small></div></div>
 </div>
+</section>
+<section class="portal-today" aria-labelledby="portal-hoy-heading">
+<div class="portal-row"><div><p class="eyebrow">✦ RESUMEN DEL DÍA</p><h2 id="portal-hoy-heading">Hoy en la CDMX <span class="pink-mark">.</span></h2><span class="portal-badge" id="portal-date"></span></div>
+<div class="portal-actions"><a href="/avisos/">🌧️ Revisar avisos ↗</a><a href="/favoritos/">♡ Mis guardados ↗</a></div></div>
+<ul class="portal-list" id="portal-today-list"><li>Buscando titulares publicados hoy…</li></ul>
+<p id="portal-today-note" class="portal-info">Recopilando información de medios con fecha y fuente.</p>
+</section>
+<section class="portal-card" aria-labelledby="portal-local-heading">
+<div class="portal-row"><div><p class="eyebrow">📍 CDMX CERCA DE TI</p><h2 id="portal-local-heading">Las noticias de tu alcaldía</h2><p>Elige tu alcaldía para ver titulares relacionados. Tu selección se guarda en este dispositivo.</p></div>
+<span data-selected-borough class="portal-badge">Elige tu alcaldía</span></div>
+<div class="portal-mini-local"><div><label for="home-borough-select" class="portal-info">Seleccionar alcaldía</label>
+<select id="home-borough-select" data-borough-select class="portal-select" aria-label="Alcaldía para noticias personalizadas"></select>
+<div class="portal-actions"><a id="portal-borough-more" href="/alcaldias/">Noticias e historia local ↗</a><a id="portal-nearby-map" href="/mapa/">Explorar mapa ↗</a></div></div>
+<div><h3 id="portal-borough-heading">Tu alcaldía, tus noticias</h3><ul id="portal-borough-list" class="portal-list"><li>Preparando noticias de la zona…</li></ul></div></div>
+</section>
+<section class="portal-quick-links" aria-label="Herramientas de la ciudad">
+<a href="/movilidad/">🚇 Metro y Metrobús <small class="portal-meta">Líneas y fuentes oficiales</small></a>
+<a href="/avisos/">🌧️ Avisos de la CDMX <small class="portal-meta">Lluvias, aire y movilidad</small></a>
+<a href="/cerca/">🏙️ Mi alcaldía <small class="portal-meta">Historia y noticias locales</small></a>
 </section>
 <div class="notice"><strong>Transparencia editorial:</strong> los titulares y reportes de seguimiento se recopilan automáticamente. No representan investigaciones o verificaciones independientes. Consulta siempre el medio original y la fecha de la noticia. <strong>Las fotografías son de contexto</strong>, algunas subidas recientemente a Wikimedia Commons. La fecha de subida no garantiza la fecha de captura, y ninguna imagen se presenta como prueba del suceso.</div>
 <section id="temas" class="section topic-section" aria-label="Explorar las noticias por tema">
@@ -141,4 +161,5 @@
 </main>
 <footer><div class="wrap">© <span id="year">2026</span> CDMX AL MEMENTO · Proyecto informativo independiente · Los artículos enlazados pertenecen a sus respectivos medios.
 <p><a href="/sobre-nosotros.html">Sobre nosotros</a><a href="/privacidad.html">Privacidad</a><a href="/politica-editorial.html">Política editorial</a><a href="/creditos-fotograficos.html">Créditos fotográficos</a><a href="/contacto.html">Contacto y correcciones</a><a href="mailto:sanchezaxochitl@gmail.com">sanchezaxochitl@gmail.com</a></p>
-</div></footer><script>document.getElementById('year').textContent=new Date().getFullYear()</script><script src="/assets/fotos.js" defer></script><script src="/app.js?v=20261012-fotos-recientes" defer></script></body></html>
+</div></footer><script>document.getElementById('year').textContent=new Date().getFullYear()</script><script src="/assets/fotos.js" defer></script><script src="/app.js?v=20261012-fotos-recientes" defer></script>
+<script src="/assets/portal.js?v=1" defer></script></body></html>
