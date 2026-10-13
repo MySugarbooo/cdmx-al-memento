@@ -23,9 +23,17 @@
   try{localStorage.setItem(KEY,name)}catch{/* preferencias opcionales */}
  };
  function chip(text,extraClass=''){
-  const node=document.createElement('span');
+  // La atribución permite consultar directamente la fuente meteorológica.
+  const sourceLink=extraClass==='weather-chip--credit';
+  const node=document.createElement(sourceLink?'a':'span');
   node.className='weather-chip'+(extraClass?' '+extraClass:'');
-  node.textContent=text;
+  node.textContent=sourceLink?text+' ↗':text;
+  if(sourceLink){
+   node.href='https://api.met.no/';
+   node.target='_blank';
+   node.rel='noopener noreferrer';
+   node.title='Fuente del pronóstico: Instituto Meteorológico de Noruega (MET Norway)';
+  }
   return node;
  }
  // Dos grupos idénticos producen un bucle perfecto sin vacíos al terminar.
@@ -38,6 +46,8 @@
   const copy=originals.cloneNode(true);
   copy.dataset.weatherGroup='2';
   copy.setAttribute('aria-hidden','true');
+  // El duplicado es solo visual: no crea otro enlace enfocable por teclado.
+  copy.querySelectorAll('a').forEach(a=>a.tabIndex=-1);
   track.replaceChildren(originals,copy);
   if(reader)reader.textContent=screenText;
  }
