@@ -368,7 +368,8 @@ def report_shell(title, body):
         '<main class="wrap prose">' + body + '</main><footer><div class="wrap">'
         '<a href="/politica-editorial.html">Política editorial</a> · '
         '<a href="mailto:' + MAIL + '">' + MAIL + '</a></div></footer>'
-        '<script src="/assets/clima-ticker.js?v=4" defer></script></body></html>'
+        '<script src="/assets/clima-ticker.js?v=4" defer></script>'
+        '<script src="/assets/page-transitions.js?v=1" defer></script></body></html>'
     )
 
 
