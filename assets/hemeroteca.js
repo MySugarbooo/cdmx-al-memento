@@ -45,9 +45,7 @@
   const title=make('h3');
   const a=make('a','',article.title||'Noticia sin título');
   if(validExternal(article.url)){
-   a.href=article.url;
-   a.target='_blank';
-   a.rel='noopener noreferrer nofollow';
+   a.href=article.local_url||'/noticias/';
   }else{a.removeAttribute('href');}
   title.append(a);
   const details=make('div','date-location');
