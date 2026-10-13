@@ -273,7 +273,7 @@
    const story=news[0];const note=new Notification('CDMX AL MEMENTO · '+(story.category||'Noticia'),{
     body:story.title,tag:'cdmx-memento-nuevo',icon:'/favicon.svg'
    });
-   note.onclick=()=>{window.focus();window.open(story.url,'_blank','noopener');note.close()};
+   note.onclick=()=>{window.focus();window.open(story.local_url||'/noticias/','_blank','noopener');note.close()};
   }catch{/* Si la red falla, no inventar ni repetir notificaciones. */}
  }
  document.addEventListener('click',e=>{
