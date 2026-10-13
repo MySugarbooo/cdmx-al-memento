@@ -260,7 +260,7 @@ function changeTopic(requested){
  const swap=()=>{
   if(token!==topicSwitchToken)return;
   pendingTopicScroll=null;
-  const outgoing=before?topicStage?.querySelector('.topic-stage-hero'):homeView?.querySelector('.hero-editorial');
+  const outgoing=before?topicStage:homeView;
   const canAnimate=Boolean(outgoing&&typeof outgoing.animate==='function'&&!navReducedMotion());
   if(!canAnimate){displayTopic(next);return;}
   // Se conservan ambas vistas durante el movimiento: no hay teletransporte.
@@ -272,24 +272,24 @@ function changeTopic(requested){
   ghost.classList.add('topic-transition-ghost');
   Object.assign(ghost.style,{
    position:'fixed',top:bounds.top+'px',left:bounds.left+'px',
-   width:bounds.width+'px',height:bounds.height+'px',
+   width:bounds.width+'px',height:Math.min(bounds.height,Math.max(180,window.innerHeight-bounds.top+12))+'px',
    margin:'0',pointerEvents:'none',overflow:'hidden',zIndex:'18',
    backfaceVisibility:'hidden'
   });
   document.body.append(ghost);
   displayTopic(next);
-  const incoming=next?topicStage?.querySelector('.topic-stage-hero'):homeView?.querySelector('.hero-editorial');
+  const incoming=next?topicStage:homeView;
   if(!incoming){ghost.remove();return;}
-  const travel=Math.min(460,Math.max(240,window.innerWidth*.88));
-  const duration=480;
+  const travel=Math.max(window.innerWidth+18,bounds.width+18);
+  const duration=720;
   const leave=ghost.animate([
    {transform:'translateX(0)',opacity:1},
-   {transform:'translateX('+(-direction*travel)+'px)',opacity:.07}
-  ],{duration,easing:'cubic-bezier(.33,0,.6,1)',fill:'both'});
+   {transform:'translateX('+(-direction*travel)+'px)',opacity:1}
+  ],{duration,easing:'cubic-bezier(.22,.61,.36,1)',fill:'both'});
   const arrive=incoming.animate([
-   {transform:'translateX('+(direction*travel)+'px)',opacity:.12},
+   {transform:'translateX('+(direction*travel)+'px)',opacity:1},
    {transform:'translateX(0)',opacity:1}
-  ],{duration,easing:'cubic-bezier(.18,.72,.25,1)',fill:'both'});
+  ],{duration,easing:'cubic-bezier(.22,.61,.36,1)',fill:'both'});
   activeTopicAnimation={animations:[leave,arrive],ghost};
   arrive.onfinish=()=>{
    if(token!==topicSwitchToken)return;
