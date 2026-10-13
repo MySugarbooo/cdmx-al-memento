@@ -49,6 +49,8 @@
 .weather-chip--place{background:#fff;color:#8e2666;font-weight:900}
 .weather-chip--temp{color:#6a214d;font-size:14px;font-weight:950}
 .weather-chip--credit{background:#f9e7ff;color:#72436b;font-weight:800}
+a.weather-chip--credit{text-decoration:none}
+a.weather-chip--credit:hover,a.weather-chip--credit:focus-visible{background:#fff;color:#832955;text-decoration:underline}
 .weather-ribbon__control{
  flex-shrink:0;max-width:190px;padding:0 10px;height:100%;display:flex;align-items:center;
  background:#fff5fbc4;border-left:1px solid #c96a9870;
