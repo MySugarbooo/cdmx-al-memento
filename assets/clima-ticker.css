@@ -98,7 +98,7 @@ body>.skip:focus{z-index:2000;top:var(--weather-strip-height)}
 .weather-chip--borough{font-variant-numeric:tabular-nums}
 .weather-chip--selected{background:#fff;color:#87234f;border-color:#d864a1}
 .weather-ribbon__window{display:block;overflow:hidden}
-.weather-ribbon__window:focus-within{overflow:visible}
+/* Mantener contenido dentro de la franja incluso con enlaces enfocados. */
 @media(max-width:700px){
  .weather-ribbon{min-height:var(--weather-strip-height)}
  .weather-chip--borough{font-size:11px;font-weight:800}
