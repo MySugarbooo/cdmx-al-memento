@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-13 16:36 UTC",
+  "updated": "2026-10-13 17:34 UTC",
   "boroughs": [
     {
       "name": "La Magdalena Contreras",
@@ -1163,8 +1163,36 @@
     },
     {
       "name": "Coyoacán",
-      "count": 10,
+      "count": 11,
       "articles": [
+        {
+          "title": "Coyoacán tendrá Festival de Día de Muertos: talleres de calaveritas, venta de artesanía y más",
+          "description": "La información publicada por Chilango trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOR0R2SW8xY2NUNEdQYkpsYWFMNDNIbjVaemJ4TjhUUE1qUWtmb2R5Vm9MQVUtY2N3WGdybzllbnNnNG5ZeFYzaUttTUVxMHdRU0hRLVRwOHdsS05IWVo2Vy10UDVGTVNsaVIwMUxrdkE3cFhHOHlOUXZ3Z0tHUmlKOHJTaHotc1EzY19wXzlUZnpISERDcWxOeUptOUY4SWEzRXdoWjZ1NTl6Nkwzd21ZUTRKWEUyQUh2bEJUaXBiZWRtd2MyOFE2LQ?oc=5",
+          "source": "Chilango",
+          "date": "2026-10-13",
+          "published_at": "2026-10-13T17:01:26Z",
+          "category": "CDMX",
+          "borough": "Coyoacán",
+          "location": "Coyoacán (mencionada en el titular)",
+          "local_url": "/noticias/?id=7348938d9462d61b77c5&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por Chilango trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_coyoacan",
+            "url": "/assets/alcaldias/coyoacan.jpg",
+            "category": "CDMX",
+            "borough": "Coyoacán",
+            "topic": "Jardín Centenario de Coyoacán",
+            "author": "AlejandroLinaresGarcia",
+            "license": "CC BY-SA 4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:JardinCentenarioCoyoacan.JPG"
+          }
+        },
         {
           "title": "Coyoacán extiende el acceso a la cultura",
           "description": "De acuerdo con un titular publicado por La Política Online, el tema de actualidad está relacionado con un asunto de interés público relacionado con la Ciudad de México. La atribución corresponde al medio citado, no a una comprobación independiente de nuestra redacción. El encabezado menciona Coyoacán; esa referencia no demuestra por sí misma dónde ocurrieron todos los hechos.",
@@ -3475,8 +3503,36 @@
     },
     {
       "name": "Tláhuac",
-      "count": 4,
+      "count": 5,
       "articles": [
+        {
+          "title": "Habrá recorrido de Día de Muertos para perros en Tláhuac ¡GRATIS!",
+          "description": "La información publicada por Dónde Ir trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNZGxtOEdoQlc2UVdXWEhWbDdfQ1ljM0g1bjRKQ2htWW1ubWVaYmJJcjNGWktlUmdYMDF2R2lmQXdJaU1ndnVUY0dUdXM2N2pwWlVQRUdLeDZjZ2RKVTlFbzA5LWhKanJ2ZFdNZFlRcWM2YUtlbGM1U3hFYktvdHlyYU5FQ2loUkZCUXM2S09aLUxxWHJhcHJYUUQ3RXQzQ0tRQ0JWLUF3bXo?oc=5",
+          "source": "Dónde Ir",
+          "date": "2026-10-13",
+          "published_at": "2026-10-13T17:00:46Z",
+          "category": "CDMX",
+          "borough": "Tláhuac",
+          "location": "Tláhuac (mencionada en el titular)",
+          "local_url": "/noticias/?id=49e521e8090fe1b3edb6&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por Dónde Ir trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_tlahuac",
+            "url": "/assets/alcaldias/tlahuac.jpg",
+            "category": "CDMX",
+            "borough": "Tláhuac",
+            "topic": "Plaza central de San Pedro Tláhuac",
+            "author": "Yavidaxiu",
+            "license": "CC BY 3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Tl%C3%A1huac-Plaza_central.JPG"
+          }
+        },
         {
           "title": "Desaparece Saori Peña Vargas de 16 años en la alcaldía Tláhuac; activan Alerta Amber en CDMX",
           "description": "El medio www.adn40.mx informa sobre una propuesta, advertencia o posibilidad vinculada con un asunto de interés público relacionado con la Ciudad de México. La manera en que se presenta el asunto no equivale a una confirmación de que ya ocurrió. El encabezado menciona Tláhuac; esa referencia no demuestra por sí misma dónde ocurrieron todos los hechos.",
@@ -3553,8 +3609,92 @@
     },
     {
       "name": "Tlalpan",
-      "count": 31,
+      "count": 34,
       "articles": [
+        {
+          "title": "Barda Colapsa y Cae Sobre Vehículo en el Centro de Tlalpan",
+          "description": "La información publicada por N+ trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQYnFlcGZheDV4eFRmT3lRN2E5NHVkZ1lEdVZ2b25BMXEyUVdENWFkOW83aXBHdjRyT3Bsa1FOcU1NeU9ST0FkNGxnWUJvMXZyalh0Qjh5dERoUDFHbF9SQTl5N09BdGJXRS1wTFVYY1QxX1RTcE1vQ2hWOTBFMVdpaDhxQ2Z3ZW1YaW1CaUE5aHlXaWRGLVNndXNXbXp6ZU0?oc=5",
+          "source": "N+",
+          "date": "2026-10-13",
+          "published_at": "2026-10-13T17:06:54Z",
+          "category": "CDMX",
+          "borough": "Tlalpan",
+          "location": "Tlalpan (mencionada en el titular)",
+          "local_url": "/noticias/?id=d488714bd38354da7b42&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por N+ trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_tlalpan",
+            "url": "/assets/alcaldias/tlalpan.jpg",
+            "category": "CDMX",
+            "borough": "Tlalpan",
+            "topic": "Quiosco de la plaza principal de Tlalpan",
+            "author": "farid estrada",
+            "license": "CC BY-SA 3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Kiosko_plaza_de_la_constitucion%2C_tlapan.JPG"
+          }
+        },
+        {
+          "title": "Colapsa barda y aplasta auto en el centro de Tlalpan",
+          "description": "La información publicada por El Sol de México trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOZmhpWEhfX1hqcC1qZjNuTWZ3Znl5Ni1Yc09oMUcxSFZlNnZjM2FmU3dYWXd4MDgzeGppYkljdHVlZDRUdzRZLThNLVF3UTFZaW9aT1ZScEVkTlpoY29iQlpnMTZxWklxQnFrNlZGTHdwdjFwTzFMLXJGc1ZfaE92UVY5R256T01GUnFjbmhEQnotZkV3MTBLVGw1YkxEaVNFY2c?oc=5",
+          "source": "El Sol de México",
+          "date": "2026-10-13",
+          "published_at": "2026-10-13T16:59:05Z",
+          "category": "CDMX",
+          "borough": "Tlalpan",
+          "location": "Tlalpan (mencionada en el titular)",
+          "local_url": "/noticias/?id=2d0ef4bd670d9364a02a&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por El Sol de México trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "archivo_cdmx_013",
+            "url": "/assets/fotos/archivo_cdmx_013.jpg",
+            "category": "CDMX",
+            "borough": "",
+            "topic": "D.F. - panoramio (9)",
+            "author": "eurimaco",
+            "license": "CC BY-SA 3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:D.F._-_panoramio_%289%29.jpg"
+          }
+        },
+        {
+          "title": "“Habían avisado que estaba en riesgo”: Cae losa en Tlalpan y aplasta auto estacionado; otras afectaciones en C",
+          "description": "La información publicada por TV Azteca trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPZDEzY2xpbUlqMHlkT2l4WTVzTlJvcmtlWjJOVGJ3Y3cwOVpxSEtLX1JMNnVJQVlUY25zOFBmMEJkcWlxUmZNaEszWVVmU2haVlFvNkhFZkdtZEttc0lNOTNZc013cmlVZURUYmtDRHNsWFZFa1dESVZMMFNXeWFkdnpUaGg1cm9vUUowbU5iZ3RhV2dUSjJDR25HaTZRR1RhMGcxLWxfdE83SUV2WDd5eFJCenVKYXdocEFqLXBTWG9rbG1GcmtHd09kZUpZZ2PSAdwBQVVfeXFMT25fRkpSWElkQ0VFR2gyV1NUNm1YempyN0ZQM2xOREdTU21BRTRTMWRKN1JZUDUtNC1Dd1ExRFZTOTlTU3A1SHhYN2NUcEpsVUR1QTBOWGhwVk51UW13cjl2N1ZQV0tnTFd5alFfa3k3aVRMaUxmSjNjeGdkeFIwREZXcFBPVmNUcjRtZEUweXBCNXJpaEFiZ3F3M3pxVTQxcHUteEVGUXotUFIyODI3QmdfYjVkdUExXzNveEU5cEd1VElIaDVGOTZJdmpJV3N1b1ZxeUpXRW9RTVB1eg?oc=5",
+          "source": "TV Azteca",
+          "date": "2026-10-13",
+          "published_at": "2026-10-13T16:51:01Z",
+          "category": "CDMX",
+          "borough": "Tlalpan",
+          "location": "Tlalpan (mencionada en el titular)",
+          "local_url": "/noticias/?id=3b706080720df833f9ec&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por TV Azteca trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "archivo_cdmx_014",
+            "url": "/assets/fotos/archivo_cdmx_014.jpg",
+            "category": "CDMX",
+            "borough": "",
+            "topic": "Cathedral (155478679)",
+            "author": "Francisco Donaldo Cabrera Cruz",
+            "license": "CC BY-SA 3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Cathedral_%28155478679%29.jpeg"
+          }
+        },
         {
           "title": "Ley seca en Tlalpan: conoce las fechas, horarios y colonia de CDMX donde se prohibirá la venta de alcohol",
           "description": "La información publicada por UnoTV trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -3938,60 +4078,6 @@
           "local_url": "/noticias/?id=99b460cf907e48e9fbc0&mes=2026-10",
           "brief": {
             "lead": "La publicación de N+ plantea una pregunta sobre un asunto de interés público relacionado con la Ciudad de México. El encabezado invita a conocer una respuesta que no puede darse por comprobada solo con el índice de noticias. El encabezado menciona Tlalpan; esa referencia no demuestra por sí misma dónde ocurrieron todos los hechos.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
-        },
-        {
-          "title": "Microsismo de magnitud 2.2 sacude la alcaldía Tlalpan",
-          "description": "De acuerdo con un titular publicado por El Sol de México, el tema de actualidad está relacionado con un asunto de interés público relacionado con la Ciudad de México. La atribución corresponde al medio citado, no a una comprobación independiente de nuestra redacción. El encabezado menciona Tlalpan; esa referencia no demuestra por sí misma dónde ocurrieron todos los hechos.",
-          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQakJ2M3VFTWVlZHpMTnlweHNneEVmWHJBRDdZMDhST3c5bnVXQ3hwQzVQVWo2cGF6VTc0VEE2d0xkSmYxMnRDekJWYXZULUVZN2xqRXNyVFdlMEMxdjhKazBwRU9sUHdLR2JteExuaEtTeDFQdDVjdUt4WW15RXlwRk0zdkFyQVhLa0RCSXhwdzFIN0xfWjB0VXM3TXpqRDkxLVdtVEZFOWZGdWxHbERNMg?oc=5",
-          "source": "El Sol de México",
-          "date": "2026-10-09",
-          "published_at": "2026-10-09T23:27:05Z",
-          "category": "CDMX",
-          "borough": "Tlalpan",
-          "location": "Tlalpan (mencionada en el titular)",
-          "local_url": "/noticias/?id=2326e96e8c52af4d3903&mes=2026-10",
-          "brief": {
-            "lead": "De acuerdo con un titular publicado por El Sol de México, el tema de actualidad está relacionado con un asunto de interés público relacionado con la Ciudad de México. La atribución corresponde al medio citado, no a una comprobación independiente de nuestra redacción. El encabezado menciona Tlalpan; esa referencia no demuestra por sí misma dónde ocurrieron todos los hechos.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
-        },
-        {
-          "title": "Microsismo de 2.2 en alcaldía Tlalpan HOY viernes 9 de octubre",
-          "description": "De acuerdo con un titular publicado por Milenio, el tema de actualidad está relacionado con un asunto de interés público relacionado con la Ciudad de México. La atribución corresponde al medio citado, no a una comprobación independiente de nuestra redacción. El encabezado menciona Tlalpan; esa referencia no demuestra por sí misma dónde ocurrieron todos los hechos.",
-          "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9lMGE3LWJzZU1qMkRZcUlzUFNGcHVKYl9RTjRuRjQ2VnBzQ3pWMUNVUDdLb3h3RHNENXkwTnQ2WE1LRnB3WnVoaThTcVdNYVFnSEp4RzVNRHg1VTZXZFBRanBDTE1NRFhVaWo3R0tqdF9TeERwSVByLS1jTdIBe0FVX3lxTE9lMGE3LWJzZU1qMkRZcUlzUFNGcHVKYl9RTjRuRjQ2VnBzQ3pWMUNVUDdLb3h3RHNENXkwTnQ2WE1LRnB3WnVoaThTcVdNYVFnSEp4RzVNRHg1VTZXZFBRanBDTE1NRFhVaWo3R0tqdF9TeERwSVByLS1jTQ?oc=5",
-          "source": "Milenio",
-          "date": "2026-10-09",
-          "published_at": "2026-10-09T23:26:00Z",
-          "category": "CDMX",
-          "borough": "Tlalpan",
-          "location": "Tlalpan (mencionada en el titular)",
-          "local_url": "/noticias/?id=facc2fcd68353a5af788&mes=2026-10",
-          "brief": {
-            "lead": "De acuerdo con un titular publicado por Milenio, el tema de actualidad está relacionado con un asunto de interés público relacionado con la Ciudad de México. La atribución corresponde al medio citado, no a una comprobación independiente de nuestra redacción. El encabezado menciona Tlalpan; esa referencia no demuestra por sí misma dónde ocurrieron todos los hechos.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
-        },
-        {
-          "title": "Se Registra Microsismo de Magnitud 2.2 con Epicentro en Tlalpan, CDMX",
-          "description": "De acuerdo con un titular publicado por N+, el tema de actualidad está relacionado con un asunto de interés público relacionado con la Ciudad de México. La atribución corresponde al medio citado, no a una comprobación independiente de nuestra redacción. El encabezado menciona Tlalpan; esa referencia no demuestra por sí misma dónde ocurrieron todos los hechos.",
-          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPYm9iWHV4cHN5emdoSllaamY0M0E2OGRoLS1DZVBZZDdrQk1weU9EYkptZlBjWmQyVDM1XzV5a0d1eDZZRG1RcjZYQmcyQlN4SmlCbDNXenFkekNESy1uUlZGMjNzRmNUcDBTN0c2RTI2ODJUeGE4aVhmQ3FreUktbThyb3o5MDZSNnlzTFZaTmVGeV80MXBveVR1Y0RhSFBuMVhaQXNabm5SY3dDOVUteW94RENDdw?oc=5",
-          "source": "N+",
-          "date": "2026-10-09",
-          "published_at": "2026-10-09T23:21:34Z",
-          "category": "CDMX",
-          "borough": "Tlalpan",
-          "location": "Tlalpan (mencionada en el titular)",
-          "local_url": "/noticias/?id=6a539b8884431b48e8b2&mes=2026-10",
-          "brief": {
-            "lead": "De acuerdo con un titular publicado por N+, el tema de actualidad está relacionado con un asunto de interés público relacionado con la Ciudad de México. La atribución corresponde al medio citado, no a una comprobación independiente de nuestra redacción. El encabezado menciona Tlalpan; esa referencia no demuestra por sí misma dónde ocurrieron todos los hechos.",
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
