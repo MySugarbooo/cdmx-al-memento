@@ -95,7 +95,7 @@
  $('demo-btn')?.addEventListener('click',()=>{
   loadFile(makeDemoWav());
   if(!$('lyrics-text').value.trim()){
-   $('lyrics-text').value='[00:00.30] KISUMI NEON STUDIO\\n[00:02.20] Las luces siguen tu ritmo\\n[00:04.30] Tu música, tu universo\\n[00:06.30] Crea tu video';
+   $('lyrics-text').value='[00:00.30] KISUMI NEON STUDIO\n[00:02.20] Las luces siguen tu ritmo\n[00:04.30] Tu música, tu universo\n[00:06.30] Crea tu video';
    readLyrics(true);
   }
   status('audio-status','♫ Demo instrumental original de 8 segundos lista. Pulsa ▶ para escuchar y crear un video.');
