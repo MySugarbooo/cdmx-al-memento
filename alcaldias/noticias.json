@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-14 20:45 UTC",
+  "updated": "2026-10-14 21:45 UTC",
   "boroughs": [
     {
       "name": "La Magdalena Contreras",
@@ -1637,8 +1637,36 @@
     },
     {
       "name": "Coyoacán",
-      "count": 16,
+      "count": 17,
       "articles": [
+        {
+          "title": "Automóvil Se Sube al Camellón tras Fuerte Choque frente a Cenart, Alcaldía Coyoacán",
+          "description": "La información publicada por N+ trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQS014aXgyQVFrcmpFR0dLVTM3djdHR0JzeGtUU3RjVG8zV243cVI2V2RLRmJnWWhpSVNRckZGcHdUcUVZelR2VEhESFFtOTFROG1iSlQ0TWdaX2p4ZnFVTmhzem5qSVduNjhSMVFJLURUOTBTVy1GdmIwc0R0SEx2TkxOM001MG10NmRBdUpzWXRtaFlKNGN5c0o3Wk9mWGpyM0dSQ2ZNSFB4bTVvMThHdzB6bTJoQmxLRkkxRWJKYlpWdzN0aGhGLXhJaFlRUzRCNnZyYVdDMFJlb3hLRkNTVHBrV2NfclJUcjJSSU1YYnE?oc=5",
+          "source": "N+",
+          "date": "2026-10-14",
+          "published_at": "2026-10-14T21:38:27Z",
+          "category": "CDMX",
+          "borough": "Coyoacán",
+          "location": "Coyoacán (mencionada en el titular)",
+          "local_url": "/noticias/?id=1a9153bfacf34e33567d&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por N+ trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_coyoacan",
+            "url": "/assets/alcaldias/coyoacan.jpg",
+            "category": "CDMX",
+            "borough": "Coyoacán",
+            "topic": "Jardín Centenario de Coyoacán",
+            "author": "AlejandroLinaresGarcia",
+            "license": "CC BY-SA 4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:JardinCentenarioCoyoacan.JPG"
+          }
+        },
         {
           "title": "Coyoacán seguirá apostando por las próximas generaciones, asegura Giovani Gutiérrez",
           "description": "La información publicada por La Razón de México trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -3355,7 +3383,7 @@
     },
     {
       "name": "Iztapalapa",
-      "count": 37,
+      "count": 38,
       "articles": [
         {
           "title": "Balacera en tianguis de Iztapalapa deja una mujer sin vida; hay detenidos",
@@ -3467,6 +3495,34 @@
             "author": "eurimaco",
             "license": "CC BY-SA 3.0",
             "source": "https://commons.wikimedia.org/wiki/File:D.F._-_panoramio_%289%29.jpg"
+          }
+        },
+        {
+          "title": "Ataque en tianguis de Iztapalapa deja una mujer muerta y tres lesionados; autoridades buscan identificarla",
+          "description": "La información publicada por Infobae trata un asunto registrado en la sección de Metro del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPUHVLREtQaUNpSUJHMmxRSFNiMzFpQVh0NlIxMEY2NnhWZHl6b2RaeE5MaHVLTkg5T3RTR3BwMmZmSUtNV0VyVU1hTDNYZ0hYSXF3Y3NfMW5BSDUtOGNOTWNJdXRfTUpEdTVKQS1kMjBxb1luY29mdkpzZGpKUjFjS3V5SmtiZWJ1NmlvNmZSTUVOOVdMdHJhT1E3YmpEcklnTk1FcjZTejRXWHpHRGZ0S0Z6aDJXTV9jRnh1TGJUNGxMTGhCX2dTSmd0bHBGWVRqb1B6aVVHSFNJcWhjMm51OUN30gH8AUFVX3lxTFBFWEMtS1RjeDVKelMyU3U3WE1xRUZfNXE1eXgweGkzN2c2UTdfYS16ZnZJWUZkNEJ4c2ZRUktuemRKNXNDVDNuUVA0WjdMVHQ2aXh1YXMxdzBHME9fdDVrUG5VYWhhT2lwTmlQbk9KNUhNc3lkbFdZZGJfM1h4eHpOR2RHOEhNWUtRanA0UEZibmlqcXk2cUxaWFB3X040VVh0dEt3dnN3OHJ6ZGVKTUI3ZjlRWWszb3NqTE1qcWhCX1MtUUY4SV9zTXNPUWwxRE5SLU94MzBsamtFa0pzdVE5X1B2UjNZdG9pYTR0czJrS21kcXpxWExlZ001MA?oc=5",
+          "source": "Infobae",
+          "date": "2026-10-14",
+          "published_at": "2026-10-14T19:25:10Z",
+          "category": "Metro",
+          "borough": "Iztapalapa",
+          "location": "Iztapalapa (mencionada en el titular)",
+          "local_url": "/noticias/?id=2d596f20176d2f019cd5&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por Infobae trata un asunto registrado en la sección de Metro del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Los cambios en este sistema pueden afectar los horarios, las conexiones y la planeación de los viajes cotidianos.",
+            "pending": "El estado operativo, las estaciones y las alternativas de traslado deben comprobarse en los avisos actuales del Metro. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "archivo_metro_003",
+            "url": "/assets/fotos/archivo_metro_003.jpg",
+            "category": "Metro",
+            "borough": "",
+            "topic": "Parafernalia del Metro (Ciudad de México)",
+            "author": "Juan Carlos Fonseca Mata",
+            "license": "CC BY-SA 4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Parafernalia_del_Metro_%28Ciudad_de_M%C3%A9xico%29.jpg"
           }
         },
         {
@@ -3876,24 +3932,6 @@
           "local_url": "/noticias/?id=d8da1703ba73a5611a82&mes=2026-10",
           "brief": {
             "lead": "La información publicada por Infobae trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
-        },
-        {
-          "title": "\"Me trataron mucho mejor que los de Polanco\": Jorge Losa recuerda con amor a sus vecinos de Iztapalapa",
-          "description": "De acuerdo con un titular publicado por Radio Fórmula, el tema de actualidad está relacionado con un asunto de interés público relacionado con la Ciudad de México. La atribución corresponde al medio citado, no a una comprobación independiente de nuestra redacción. El encabezado menciona Iztapalapa; esa referencia no demuestra por sí misma dónde ocurrieron todos los hechos.",
-          "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxPZWh2TTFnaFU1Y0cxV2YyOXhBYllyT2VVVXRNejQtaFV0RG1aQ3hhZW5CLWYtdURNcUQ4M3AxWWF1SDBXd3BkR1dXc2JtdXZtamIzU2MycklZVWFwMnl5LXluR2VCU2tUM0NzWlBJZlVwODJ6b3hpNXR5RnRBS2tqWFJQWFhkME80b0haM01XNXhhS0llcG5kTVRud1RWblpreVhpdlllazJtaGNkQ2RCTzVlMkx5T3psUnFWb0lLMW9YemhKczU0LUczaDBQYXdHNnZQREx4SFNqb1lRc1g0V3JGenhfVmVaX0lOci05Q2JKM1ZIVmfSAfsBQVVfeXFMTkR0a1AwT29tRFFYc0k5ZWd6RlhjUDB2ZnZ3eWhtOV9OZlNZeEoweE9QY1U3MVhUWE9Wc3JfTjJIanR4cE5mVklOZnNHd0hzVFBJZEJWNUcwTHFfamh3SWUwQ0FfRmlnSzVHZGlMekctVHFMSjVpX0pqbVU5dlh1SENFNlBJbjNWdTRXV1NLcVhLTGxVRFk3czJtXzk0bXV5Mjd5bzROd3h4UXA5UGZzS2VpbkZwbTF1VVlUcWdDeVZKTDNhT3BQMlpReDF0ZWlaREtrWWRZNksxZVRFUy0zSDZfdFFrSERlZ3V4R1FuYU9fdFI4WUFGTzBYX2s?oc=5",
-          "source": "Radio Fórmula",
-          "date": "2026-10-10",
-          "published_at": "2026-10-10T22:33:29Z",
-          "category": "CDMX",
-          "borough": "Iztapalapa",
-          "location": "Iztapalapa (mencionada en el titular)",
-          "local_url": "/noticias/?id=34b86da93c8e31adfe37&mes=2026-10",
-          "brief": {
-            "lead": "De acuerdo con un titular publicado por Radio Fórmula, el tema de actualidad está relacionado con un asunto de interés público relacionado con la Ciudad de México. La atribución corresponde al medio citado, no a una comprobación independiente de nuestra redacción. El encabezado menciona Iztapalapa; esa referencia no demuestra por sí misma dónde ocurrieron todos los hechos.",
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
@@ -4833,7 +4871,7 @@
     },
     {
       "name": "Tláhuac",
-      "count": 22,
+      "count": 23,
       "articles": [
         {
           "title": "Detienen a “El Dámaso”, presunto mando del Cártel de Tláhuac; investigan extorsión y despojo",
@@ -4917,6 +4955,24 @@
             "author": "Francisco Donaldo Cabrera Cruz",
             "license": "CC BY-SA 3.0",
             "source": "https://commons.wikimedia.org/wiki/File:Cathedral_%28155478679%29.jpeg"
+          }
+        },
+        {
+          "title": "Bloquean Eje 10 Sur en Tláhuac para exigir justicia por estudiante del CETis 1",
+          "description": "La información publicada por 24-horas trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQdDNTcW1DdVBTS3NHeWxhMU9BWU1ZRi1VSE8xV2kyRlY0a3ZXY3FYWTdva2ZKY3FKc2hxbnpHT2ZJUkJKVzhoeFYzMzVCNlJBZmN6dmkzbW1mWnE5NkxETUxLWTMzcF8wU2tPLWhiRkRDSEFnbVJNV01iTDA5NGFyUDlXc3ZBTVdUREJWVFE5T2JNT0ZjcElpMTJCdXRZV2NoMjY1MzZ0Zw?oc=5",
+          "source": "24-horas",
+          "date": "2026-10-14",
+          "published_at": "2026-10-14T17:03:08Z",
+          "category": "CDMX",
+          "borough": "Tláhuac",
+          "location": "Tláhuac (mencionada en el titular)",
+          "local_url": "/noticias/?id=125415124f52916e21d9&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por 24-horas trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           }
         },
         {

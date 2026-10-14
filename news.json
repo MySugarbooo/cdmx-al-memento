@@ -1,17 +1,409 @@
 {
-  "updated": "2026-10-14 20:45 UTC",
+  "updated": "2026-10-14 21:45 UTC",
   "articles": [
+    {
+      "title": "Nuevo Banco de la Ciudad de México: ¿qué es, cómo funcionará y quiénes podrán usarlo?",
+      "description": "La información publicada por La Crónica de Hoy trata un asunto registrado en la sección de Gobierno del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQNmNnRFRHcmdad2wza2h2SjlRSzFBMDlJQ2hOanNFeUJPWVNWYjFJSDR0aG1rR0pRd3Njd1hMQlFuUEplajUtNWZYdjNJb285TzhaVjBDTk85TUdlVGFBc25aZFBaLTlCT0s4V2xRSHJpNTVGM2NremtMUHhrWUIxQTEzVklWTlZXenRTLWJZbThBTFFkS1NleDBhb202c1EwUXJJdDlUeWJBMkROQXZBd3NJd1h0Si1JZ1QtN2MwZm5BNGlUemxwSm5R?oc=5",
+      "source": "La Crónica de Hoy",
+      "date": "2026-10-14",
+      "published_at": "2026-10-14T21:40:33Z",
+      "category": "Gobierno",
+      "borough": "",
+      "location": "Ciudad de México (sin alcaldía identificada)",
+      "local_url": "/noticias/?id=5b8ab5e5601b0c4b7253&mes=2026-10",
+      "brief": {
+        "lead": "La información publicada por La Crónica de Hoy trata un asunto registrado en la sección de Gobierno del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+        "context": "Las decisiones administrativas pueden influir en servicios, trámites y derechos; conviene conocer sus condiciones y a quiénes afectan.",
+        "pending": "Es indispensable consultar los acuerdos, comunicados o documentos oficiales antes de dar una medida por vigente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "archivo_gobierno_001",
+        "url": "/assets/fotos/archivo_gobierno_001.jpg",
+        "category": "Gobierno",
+        "borough": "",
+        "topic": "Palacio de Bellas Artes",
+        "author": "Carolina López",
+        "license": "CC BY 2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Palacio_de_Bellas_Artes.jpg"
+      }
+    },
+    {
+      "title": "Automóvil Se Sube al Camellón tras Fuerte Choque frente a Cenart, Alcaldía Coyoacán",
+      "description": "La información publicada por N+ trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQS014aXgyQVFrcmpFR0dLVTM3djdHR0JzeGtUU3RjVG8zV243cVI2V2RLRmJnWWhpSVNRckZGcHdUcUVZelR2VEhESFFtOTFROG1iSlQ0TWdaX2p4ZnFVTmhzem5qSVduNjhSMVFJLURUOTBTVy1GdmIwc0R0SEx2TkxOM001MG10NmRBdUpzWXRtaFlKNGN5c0o3Wk9mWGpyM0dSQ2ZNSFB4bTVvMThHdzB6bTJoQmxLRkkxRWJKYlpWdzN0aGhGLXhJaFlRUzRCNnZyYVdDMFJlb3hLRkNTVHBrV2NfclJUcjJSSU1YYnE?oc=5",
+      "source": "N+",
+      "date": "2026-10-14",
+      "published_at": "2026-10-14T21:38:27Z",
+      "category": "CDMX",
+      "borough": "Coyoacán",
+      "location": "Coyoacán (mencionada en el titular)",
+      "local_url": "/noticias/?id=1a9153bfacf34e33567d&mes=2026-10",
+      "brief": {
+        "lead": "La información publicada por N+ trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+        "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+        "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "alcaldia_coyoacan",
+        "url": "/assets/alcaldias/coyoacan.jpg",
+        "category": "CDMX",
+        "borough": "Coyoacán",
+        "topic": "Jardín Centenario de Coyoacán",
+        "author": "AlejandroLinaresGarcia",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:JardinCentenarioCoyoacan.JPG"
+      }
+    },
+    {
+      "title": "Brugada anuncia construcción de plantel en la UNAM en suroriente de CDMX",
+      "description": "La información publicada por Grupo Animal trata un asunto registrado en la sección de Gobierno del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE0wMVVDbkZjMFdXbXVyUEJEZmJvZTBRbWpHRm8tb3pFazk0dkJuWnJFc3NIZHdtajg5a1o3RGN1VWxQWVVCeUk5bm1XbS1PMzFmZGZlRFByaHlLcFRXOTBrNlhpTWxkbkR1UHlxRS1LSlk1dw?oc=5",
+      "source": "Grupo Animal",
+      "date": "2026-10-14",
+      "published_at": "2026-10-14T21:35:56Z",
+      "category": "Gobierno",
+      "borough": "",
+      "location": "Ciudad de México (sin alcaldía identificada)",
+      "local_url": "/noticias/?id=e6b5ebbf9478cfc1301f&mes=2026-10",
+      "brief": {
+        "lead": "La información publicada por Grupo Animal trata un asunto registrado en la sección de Gobierno del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+        "context": "Las decisiones administrativas pueden influir en servicios, trámites y derechos; conviene conocer sus condiciones y a quiénes afectan.",
+        "pending": "Es indispensable consultar los acuerdos, comunicados o documentos oficiales antes de dar una medida por vigente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "archivo_gobierno_002",
+        "url": "/assets/fotos/archivo_gobierno_002.jpg",
+        "category": "Gobierno",
+        "borough": "",
+        "topic": "Palacio Nacional Ciudad de Mexico",
+        "author": "Joaquín Martínez",
+        "license": "CC BY 2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Palacio_Nacional_Ciudad_de_Mexico.jpg"
+      }
+    },
+    {
+      "title": "Nuevo plantel de la UNAM en CDMX: ¿dónde estará y cuándo se inaugurará? Esto anunció Clara Brugada",
+      "description": "La información publicada por La Crónica de Hoy trata un asunto registrado en la sección de Gobierno del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQcGUxUE1yVUxLMFh1UEdINnhiQjc1dlVFU1FoM1JFSF9zbE5qQlhDZ1VEb2NjLXI4aHAya0hhVTQtcnZhTlBRVFNDaVN4UkdMeDRSczR4amtZX29vY1BtRjhISF9ERk1DbndnTmJ4NUEzLXlXNnFJb1FvYm14M3ZUREtvbG0teGFzVUNmVGV0ZzJTY01VTnRjWUdsTmxYWDNPRmhFX1p3dDdEaUM0ekNfb0U2OUVaYjhjRHluZUZfb041Q0VJdm83NmpPSTFTZkktSVdDS1JRSHZzUmc?oc=5",
+      "source": "La Crónica de Hoy",
+      "date": "2026-10-14",
+      "published_at": "2026-10-14T21:28:42Z",
+      "category": "Gobierno",
+      "borough": "",
+      "location": "Ciudad de México (sin alcaldía identificada)",
+      "local_url": "/noticias/?id=308b03594132ad4c8581&mes=2026-10",
+      "brief": {
+        "lead": "La información publicada por La Crónica de Hoy trata un asunto registrado en la sección de Gobierno del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+        "context": "Las decisiones administrativas pueden influir en servicios, trámites y derechos; conviene conocer sus condiciones y a quiénes afectan.",
+        "pending": "Es indispensable consultar los acuerdos, comunicados o documentos oficiales antes de dar una medida por vigente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "archivo_gobierno_003",
+        "url": "/assets/fotos/archivo_gobierno_003.jpg",
+        "category": "Gobierno",
+        "borough": "",
+        "topic": "Palacio Nacional Ciudad de México DF",
+        "author": "Crater_sp",
+        "license": "CC BY-SA 2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Palacio_Nacional_Ciudad_de_M%C3%A9xico_DF.jpg"
+      }
+    },
+    {
+      "title": "Brugada descarta aumentar el predial en CDMX y prevé eliminar multas y recargos en 2027",
+      "description": "La información publicada por El Economista trata un asunto registrado en la sección de Gobierno del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPRW9JYllhdnBaTGNhbzVrTXcxSjlmNEREbFBkV2lsN2I1UVBXUUMxWGJNRUpYLW83M3JPcU1EelJ6Mk5OWndrdUVqZnF3OG5CQUxZZlc4Tjh0TmNWQm5UREMxOHIzSjQwQlV3QV9yZS0yTFZMdGphaU9XSXNCWE1LRjJjTHZxNXlvMFMtSDFTaU02R3RWM2dPckwwY0hNQWQ1Y1ZPejNKdWtqRDhrOGNTUkRwR2NJdlVUWXhwdWdKXzUxVFN3aDFxdl9R0gHPAUFVX3lxTE51M0FQSmFwb1dpUHhIRGhGN1NHS3J1LV9tZHZnc3hXNTBIUVZSWGFXamxTcE1ia0JLWHN3REE5d3VWeEhoXzFoaWxZZXNNQ3V1al84QkVEY3dIb3pNSmJXVnRtZEc5TEFIbXFNSDQ0eUZYUjBwRmM5TFFoa3ZJT2tTdHpxbHEwd1U5WmM5T05uOWItVDFYSWNLVTBXTHlXU0tCQnZULVFwOXMxZV9XaDBXcWtpZTFFN3lKQ2Z5QlZBVlAzM3prWnA4cmw1dlZuRQ?oc=5",
+      "source": "El Economista",
+      "date": "2026-10-14",
+      "published_at": "2026-10-14T21:19:13Z",
+      "category": "Gobierno",
+      "borough": "",
+      "location": "Ciudad de México (sin alcaldía identificada)",
+      "local_url": "/noticias/?id=3da66d4a965f0b1c0958&mes=2026-10",
+      "brief": {
+        "lead": "La información publicada por El Economista trata un asunto registrado en la sección de Gobierno del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+        "context": "Las decisiones administrativas pueden influir en servicios, trámites y derechos; conviene conocer sus condiciones y a quiénes afectan.",
+        "pending": "Es indispensable consultar los acuerdos, comunicados o documentos oficiales antes de dar una medida por vigente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "archivo_gobierno_004",
+        "url": "/assets/fotos/archivo_gobierno_004.jpg",
+        "category": "Gobierno",
+        "borough": "",
+        "topic": "Palacio Nacional Ciudad de México City DF",
+        "author": "stevecadman",
+        "license": "CC BY-SA 2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Palacio_Nacional_Ciudad_de_M%C3%A9xico_City_DF.jpg"
+      }
+    },
+    {
+      "title": "Clara Brugada anuncia construcción de nuevo plantel de la UNAM en Ciudad de México",
+      "description": "La información publicada por El Universal trata un asunto registrado en la sección de Gobierno del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQQVREbzF6SXJwN1B2TEJ1MFkyN3pLb1ZMRmlYVk9GMi1MTEdmQ2xKLUdpeWE5NTQ0UWtXNXNpNlBBU2psbVAwQlhRVGFTNjFoQW9TN2lhWlYyWl83N0tCazE1Yjg0cUhLN2h6bmdmY0E4TFo1S0R1bjZDMzBLYmJvU1EwNks0R1FMUkVIWmNxT3dQc2lQVVoyS0xrWl9oOFhTMU00TEhkNFpRT3QzZW1Xa2RWdWR6d1M5UDFReXZWOW1vdjRWalNZZVdJdm5VTkg4YXpnU19xbUdyeU1LZURYXzFGZU05Z0c3dF9SMklTVHZmd9IBhgJBVV95cUxNSG5NeTMyYlc3VTBNTG91ekkyQTlUS2xzaS05NTFYQkVkbU0yWWpFc3pQcEdNdk0tY1I5OXlFcmVyeExraHVuMVp2bmZGSWN6VzN2QWhWOThTanZ3XzhZbENrVDh5NTFZaEdWREI3U1FteHkzWkpROE5aWThzUWJuTS1qVnNFQXNwU0Y5ODRLTVJEN2VQVF9sYTEyVUhncmsydTVHY1FPVlc0Z0gwZ0hia1JvdFk1b1M1dlh3UndQSFFKOXhPdUlxS0FTRTRmWVFiWnlFNFlscFRzUXM4RjhlWTYyTUE1RlBtRHJWTW1EdWlLNkVmWkhpWThDX3Q0MmdpWUo0MVVn?oc=5",
+      "source": "El Universal",
+      "date": "2026-10-14",
+      "published_at": "2026-10-14T21:18:45Z",
+      "category": "Gobierno",
+      "borough": "",
+      "location": "Ciudad de México (sin alcaldía identificada)",
+      "local_url": "/noticias/?id=afe4070ea6a12359dd4a&mes=2026-10",
+      "brief": {
+        "lead": "La información publicada por El Universal trata un asunto registrado en la sección de Gobierno del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+        "context": "Las decisiones administrativas pueden influir en servicios, trámites y derechos; conviene conocer sus condiciones y a quiénes afectan.",
+        "pending": "Es indispensable consultar los acuerdos, comunicados o documentos oficiales antes de dar una medida por vigente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "archivo_gobierno_007",
+        "url": "/assets/fotos/archivo_gobierno_007.jpg",
+        "category": "Gobierno",
+        "borough": "",
+        "topic": "Calle Calle Francisco I. Madero de la Ciudad de México, con el Palacio Nacional al fondo",
+        "author": "Luisalvaz",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Calle_Calle_Francisco_I._Madero_de_la_Ciudad_de_M%C3%A9xico%2C_con_el_Palacio_Nacional_al_fondo.JPG"
+      }
+    },
+    {
+      "title": "Legisladores reconocen avances del Gobierno de la CDMX en distintos rubros",
+      "description": "En su información, Congreso de la Ciudad de México aborda una decisión, declaración o debate relacionado con las instituciones de la ciudad. Conviene distinguir la intención anunciada de las resoluciones que hayan sido aprobadas y publicado oficialmente.",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQVUJFS2NFS1FkNzdodmV5anlIU2VQRlBIUlEzXzZLWVVjZGdYa3RuanpEeWowQVFhVVBpUFNXRXRITmg5UGNJWGxRYmtqbDMyS2QzNkdvbjdQaklBdFpTdkVheS1qa3dIUTJueWgxWHVzSl9ZN0VlZ01yS1ktYTFnYVBPalJTb2V4a0dtRk1NQUEtLWlBZ1ROOWI4NUQ4M2ZEOV9NemlrRFp2bUU4RTJhd0dB?oc=5",
+      "source": "Congreso de la Ciudad de México",
+      "date": "2026-10-14",
+      "published_at": "2026-10-14T21:18:32Z",
+      "category": "Gobierno",
+      "borough": "",
+      "location": "Ciudad de México (sin alcaldía identificada)",
+      "local_url": "/noticias/?id=1e5f76762b2124a0ee30&mes=2026-10",
+      "brief": {
+        "lead": "En su información, Congreso de la Ciudad de México aborda una decisión, declaración o debate relacionado con las instituciones de la ciudad. Conviene distinguir la intención anunciada de las resoluciones que hayan sido aprobadas y publicado oficialmente.",
+        "context": "Las decisiones administrativas pueden influir en servicios, trámites y derechos; conviene conocer sus condiciones y a quiénes afectan.",
+        "pending": "Es indispensable consultar los acuerdos, comunicados o documentos oficiales antes de dar una medida por vigente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "archivo_gobierno_008",
+        "url": "/assets/fotos/archivo_gobierno_008.jpg",
+        "category": "Gobierno",
+        "borough": "",
+        "topic": "Calles Seminario y Moneda Centro Histórico Ciudad de México 01",
+        "author": "Correogsk",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Calles_Seminario_y_Moneda_Centro_Hist%C3%B3rico_Ciudad_de_M%C3%A9xico_01.jpg"
+      }
+    },
+    {
+      "title": "Regular rentas, educación desde el nacimiento, bienestar emocional y justicia cívica: las propuestas de Clara Brugada para CDMX",
+      "description": "El reportaje citado por Expansión Política aborda los precios de vivienda o los cambios residenciales en la capital. Las cifras y su metodología deben examinarse antes de concluir cuántas familias han sido desplazadas o qué tan representativos son determinados anuncios de renta.",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBNYTNvUkxRYUlqdTBncnZBb1FKRU1wTllJczREY085VDFCOXU0QjEyY2NidVp5UEkxUWpyVHlYOWRYekc1MGJSaEhYcGEzT2xCMXQzN1NRVk95TTJJNXBoLURyUlYtV0ZHM1NMbXV3cjktY0x4QTljdlZqWHHSAYoBQVVfeXFMTk9mYkM3T3JqZHozZS1qUjQwV0dDNjBRZEh4cVdwZzBQNzVMZkltYmVtZTFpV0pJSjRkLWFxWFJfUVRJWFIzNWhNbmI1ZUE4a2s4dlBGZUZyanI4dXFFRmVhdG5YQkVOeTRld0FvbXpnWlNNLVFFd1MwektRWlQ2N21lVWZmNlN2bmVn?oc=5",
+      "source": "Expansión Política",
+      "date": "2026-10-14",
+      "published_at": "2026-10-14T21:13:00Z",
+      "category": "Gobierno",
+      "borough": "",
+      "location": "Ciudad de México (sin alcaldía identificada)",
+      "local_url": "/noticias/?id=a6ccbab6251b845e30d9&mes=2026-10",
+      "brief": {
+        "lead": "El reportaje citado por Expansión Política aborda los precios de vivienda o los cambios residenciales en la capital. Las cifras y su metodología deben examinarse antes de concluir cuántas familias han sido desplazadas o qué tan representativos son determinados anuncios de renta.",
+        "context": "Las decisiones administrativas pueden influir en servicios, trámites y derechos; conviene conocer sus condiciones y a quiénes afectan.",
+        "pending": "Es indispensable consultar los acuerdos, comunicados o documentos oficiales antes de dar una medida por vigente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "archivo_gobierno_009",
+        "url": "/assets/fotos/archivo_gobierno_009.jpg",
+        "category": "Gobierno",
+        "borough": "",
+        "topic": "Ciudad de México - Luces",
+        "author": "Juan Carlos Fonseca Mata",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Ciudad_de_M%C3%A9xico_-_Luces.jpg"
+      }
+    },
+    {
+      "title": "Cercan el Congreso por segundo informe de Clara Brugada - La Prensa",
+      "description": "La información publicada por El Sol de México trata un asunto registrado en la sección de Gobierno del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQWVZ1MlRhRFRmeV9OUm9lcUJQbUJlaTVTc05VYVR5NHRRNGtIcWJvLXBkVVZYOUUzNGhrRm5iYmhocTJBbzdtbzREVUVUcXlvbWtCTVAxOUMtRUVTd0h5dFMzemhXZTJ1T3l1b3l5WmFFeXU3Vmh3aC1sU0JnVjEtOGcyWmh6cXRyMTZGV1RTSFM5QnB1dlk4QVVPUU12ZFF6WGwzYkJ3?oc=5",
+      "source": "El Sol de México",
+      "date": "2026-10-14",
+      "published_at": "2026-10-14T21:11:15Z",
+      "category": "Gobierno",
+      "borough": "",
+      "location": "Ubicación no indicada por el titular",
+      "local_url": "/noticias/?id=923631b586e91e4773ad&mes=2026-10",
+      "brief": {
+        "lead": "La información publicada por El Sol de México trata un asunto registrado en la sección de Gobierno del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+        "context": "Las decisiones administrativas pueden influir en servicios, trámites y derechos; conviene conocer sus condiciones y a quiénes afectan.",
+        "pending": "Es indispensable consultar los acuerdos, comunicados o documentos oficiales antes de dar una medida por vigente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "archivo_cdmx_003",
+        "url": "/assets/fotos/archivo_cdmx_003.jpg",
+        "category": "CDMX",
+        "borough": "",
+        "topic": "D.F. - panoramio (7)",
+        "author": "eurimaco",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:D.F._-_panoramio_%287%29.jpg"
+      }
+    },
+    {
+      "title": "Policía de Investigación Realiza Diligencia en Edificio de la Colonia Juárez, CDMX",
+      "description": "La información publicada por N+ trata un asunto registrado en la sección de Seguridad del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPT24wWW1zMkZRTFVPNkRHeTZHNzdWVk13cVRpd0JRei1VSE13eFV2V1plVXFSUWZuLTh5SFZxak5Jd3E5cUxvLTIyNS0tRVdZUVRlMUwzNG9MZC1peEo1X28tNTRFbTB5OVR2QUVYYTJkd1ByMllUMGU2OUY3bkppb21ydDQ1ZmZSZkNYWkkwVjNEVGpLSjItVENLT2l0S1pXbV9GLWlMVFVvUFE0TmI1RGJ2SWN1c3FvWjQtX1MzQlVneTQ4ekdEQ3VQV29mVGUyd3BDWk5hZTlqQUFmQVBpOQ?oc=5",
+      "source": "N+",
+      "date": "2026-10-14",
+      "published_at": "2026-10-14T21:05:04Z",
+      "category": "Seguridad",
+      "borough": "",
+      "location": "Ciudad de México (sin alcaldía identificada)",
+      "local_url": "/noticias/?id=f1b97d559f4df3b3e765&mes=2026-10",
+      "brief": {
+        "lead": "La información publicada por N+ trata un asunto registrado en la sección de Seguridad del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+        "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+        "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "archivo_seguridad_001",
+        "url": "/assets/fotos/archivo_seguridad_001.jpg",
+        "category": "Seguridad",
+        "borough": "",
+        "topic": "Adquisición patrullas para la Policía 03",
+        "author": "Gobierno de la Ciudad de México",
+        "license": "CC BY 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Adquisici%C3%B3n_patrullas_para_la_Polic%C3%ADa_03.jpg"
+      }
+    },
+    {
+      "title": "UNAM tendrá un nuevo plantel en CDMX: ¿dónde estará?",
+      "description": "La información publicada por Chilango trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPbWUwSjM3UkJWYnpyTk9hYnZHQ1pjTm4wdWtaY2xScENIQlFiMlZaT1ZwOFNTU1o2TU5rY3Fpb0xScl9iSWJNa2l4U2RhUFMxMTg0bFExMzFPcXBueVBiUXJoMW1aWWY4NlN4SU13WnlJV3p1QWpjZ2lkMVN5TmRnS3lYX0Y1dGo5MHpRZDFrTDI0RHFWeGdfeXh5a2tMQQ?oc=5",
+      "source": "Chilango",
+      "date": "2026-10-14",
+      "published_at": "2026-10-14T21:04:03Z",
+      "category": "CDMX",
+      "borough": "",
+      "location": "Ciudad de México (sin alcaldía identificada)",
+      "local_url": "/noticias/?id=8a2b66a9a0edb40cb7ae&mes=2026-10",
+      "brief": {
+        "lead": "La información publicada por Chilango trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+        "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+        "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "archivo_cdmx_006",
+        "url": "/assets/fotos/archivo_cdmx_006.jpg",
+        "category": "CDMX",
+        "borough": "",
+        "topic": "Catedral Ii (172219027)",
+        "author": "Waender Alonso Bello",
+        "license": "CC BY 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Catedral_Ii_%28172219027%29.jpeg"
+      }
+    },
+    {
+      "title": "Brugada descarta cifra negra en delitos de feminicidios en CDMX y desestima datos del INEGI: “No son correctos”",
+      "description": "La información publicada por Infobae trata un asunto registrado en la sección de Seguridad del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNeWx4TDJRWmtPeVY1SmVPeDdmRUg1dW1HNzhaT1lZM0RlM0dqc0l2YXRxeWRwamtRQjljUHFOMXhHTlhQNHZXRUtuTGRObUhqU244RDQ4RDUtbDdFcGJZOFZMVzRLM21rS0M0UEZtMTUtYm0zTU9RdkZzQlZqZjROMGhwTERJT2dkRXd3Q3ZkWVpKSGpQWGY3aWUtbEZpNUpIdFQ5bFE4ZHJNQ2g0QjBPdk4yVWQ2ZDF1Nk5iTjJFYnA3QW5DRzA0V2U1emxxVF9WYmx4YVdiQXd3U01sdWlnZS1ObHZLUdIBgAJBVV95cUxQd09KV3V0MTNpTG5oLUJNbm9OeEpJb01GNF9oek9Ga2trS0l3Sy1ab25LUGhGT3JwSkFiZFowN2x4UUlsVUdEamU5cnNtd3ZoN3ZvWEczRmFwVkViZWtrSUQ5N0k3NHJjZy1uaXNoSjNGVE1lbE5jRDdLR0VYa09yM3pmWk5hTG5XUmlURnczVnJWLW1XcGZ3QXFFaF9KdEtVT3JTbWVxdGFKanlTc1dGdC12bFZmdUZiMkpSdUwwMm9XRVMwcU1tNTZkaTBuMzBLX0hDMWJmRnVJNFh0UGI2QzlRQlREbXVYdjN0R1Q2bWNVbC1HaHFubXQ3Rmx3WDV1?oc=5",
+      "source": "Infobae",
+      "date": "2026-10-14",
+      "published_at": "2026-10-14T20:57:52Z",
+      "category": "Seguridad",
+      "borough": "",
+      "location": "Ciudad de México (sin alcaldía identificada)",
+      "local_url": "/noticias/?id=1338bd33375b44b167a9&mes=2026-10",
+      "brief": {
+        "lead": "La información publicada por Infobae trata un asunto registrado en la sección de Seguridad del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+        "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+        "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "archivo_seguridad_002",
+        "url": "/assets/fotos/archivo_seguridad_002.jpg",
+        "category": "Seguridad",
+        "borough": "",
+        "topic": "Patrulla vecinal",
+        "author": "Daniel Yonka",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Patrulla_vecinal.jpg"
+      }
+    },
+    {
+      "title": "CDMX adquirirá 390 nuevos autobuses de RTP con recursos de licencia permanente: Brugada",
+      "description": "La información publicada por Chilango trata un asunto registrado en la sección de Gobierno del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNLWd0V01DMV9TbEhZcTdaQlN0WE1MdUNRcWE5bkpvLTRQaTQwUWltcTB5MWRqV3lCVzk1cEd0SHBjbFdydE1qT0JnRjc4MDJJa1U5enluWEUzc2ZUN05YUjNySElBNXR1SjNMOEJodFpSbEtTLWw4LUQ4MWtYY1BkUzRULXVGcWN1MWhiRERQQ0NqWElILVF0NnRYQm5MSDZOdTFGUWs2QmdQRlFqREFNcXRqQ2RFRkVZMFU0?oc=5",
+      "source": "Chilango",
+      "date": "2026-10-14",
+      "published_at": "2026-10-14T20:44:11Z",
+      "category": "Gobierno",
+      "borough": "",
+      "location": "Ciudad de México (sin alcaldía identificada)",
+      "local_url": "/noticias/?id=b2a129ecdf2b0cf163d8&mes=2026-10",
+      "brief": {
+        "lead": "La información publicada por Chilango trata un asunto registrado en la sección de Gobierno del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+        "context": "Las decisiones administrativas pueden influir en servicios, trámites y derechos; conviene conocer sus condiciones y a quiénes afectan.",
+        "pending": "Es indispensable consultar los acuerdos, comunicados o documentos oficiales antes de dar una medida por vigente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "archivo_cdmx_013",
+        "url": "/assets/fotos/archivo_cdmx_013.jpg",
+        "category": "CDMX",
+        "borough": "",
+        "topic": "D.F. - panoramio (9)",
+        "author": "eurimaco",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:D.F._-_panoramio_%289%29.jpg"
+      }
+    },
+    {
+      "title": "Clara Brugada niega que haya aumentado el despojo en la CdMx",
+      "description": "La información publicada por Milenio trata un asunto registrado en la sección de Gobierno del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPWE16UExUM01OUEVVb3RvaTBiX21VaWNMa0lfLXVDdExpOUo1VVhxTFFoNXVYVEtnc2NCOWpkWGRQVmgzVDJ1MUh6WWtXOFFtWDB1SjNEcmZ1UlZIYXJGMUZMLXZzQWNNNHZ0VEIyaHZDLXMwWDlNdDNJVnpKSWUtZW5pWFgyVXFpQndKLTdQNDk5UEpjaFZWMNIBmAFBVV95cUxNZnQ3a0pNVXcyWGxjRG5kVnFNQ1BVZGE4VjN4NGFKNkF4LWVhSnZERV9BTXU3RjlDb3R2aVRKeDhqenZ1ckNxb01oUWVReGVEZVFmY1FuUjlkVmladk1RWU9VbmdkTk5Ob0ZKVllYWlozWDNEaFctdDdJTVpsaFplUFFRbEt1eko2TTJVU3hGeHVvNnZfZm02dQ?oc=5",
+      "source": "Milenio",
+      "date": "2026-10-14",
+      "published_at": "2026-10-14T20:36:00Z",
+      "category": "Gobierno",
+      "borough": "",
+      "location": "Ciudad de México (sin alcaldía identificada)",
+      "local_url": "/noticias/?id=9b6219ac4fa381b08ab7&mes=2026-10",
+      "brief": {
+        "lead": "La información publicada por Milenio trata un asunto registrado en la sección de Gobierno del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+        "context": "Las decisiones administrativas pueden influir en servicios, trámites y derechos; conviene conocer sus condiciones y a quiénes afectan.",
+        "pending": "Es indispensable consultar los acuerdos, comunicados o documentos oficiales antes de dar una medida por vigente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "archivo_cdmx_014",
+        "url": "/assets/fotos/archivo_cdmx_014.jpg",
+        "category": "CDMX",
+        "borough": "",
+        "topic": "Cathedral (155478679)",
+        "author": "Francisco Donaldo Cabrera Cruz",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Cathedral_%28155478679%29.jpeg"
+      }
+    },
     {
       "title": "Balacera en tianguis de Iztapalapa deja una mujer sin vida; hay detenidos",
       "description": "La información publicada por 24-horas trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQb2djWFhGemg0WmZZOXZycERpSnVSMmVLMGJzUXo0MnQ0UUZQTmRQbmVkNnhTQTZZVmtfN0hGZ1hMck16NnBiU1NmM3RLbW9ZZ3NhWXdZal8yc2xzMHp6cVBxdFo2YWNEUVBrTDk4ZUFvbm9ienU3NHQ1T3prc0haeGtDMGVLMGdNTzNlRXVBaTJ3OW9IYVZDSTVrQ3hmWktjMVlGOUJMRTE2X2tuMFBhV3BCUUVnUmYw?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQZU5ITHpWRFM1bU9JRHIzNXA1MHhsMTQ3NEMtb2FZNTZVLWhnYXpObWZ1VllQaFJ5dHRrNHBnVjVPRHhRUm96YklwbHZUV01rOWxXMTBoZlJIY0hqTnNwQTRwSlhic1NwS2gtcUNrck00cHFhZTlmdmhCdUNGc2c0c1N2SGkzRTA5QUgwMl9UZkNGUTVJNWNPNjM4LW43U1dsOUNreE9TV0ZaaC1FRnMtTFV4d1FmMWFaYlV0bA?oc=5",
       "source": "24-horas",
       "date": "2026-10-14",
       "published_at": "2026-10-14T20:33:47Z",
       "category": "CDMX",
       "borough": "Iztapalapa",
       "location": "Iztapalapa (mencionada en el titular)",
-      "local_url": "/noticias/?id=dafa810486fbc0b91d12&mes=2026-10",
+      "local_url": "/noticias/?id=31384bffe62d267d9673&mes=2026-10",
       "brief": {
         "lead": "La información publicada por 24-horas trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
         "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
@@ -75,42 +467,42 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_gobierno_001",
-        "url": "/assets/fotos/archivo_gobierno_001.jpg",
-        "category": "Gobierno",
+        "id": "archivo_cdmx_019",
+        "url": "/assets/fotos/archivo_cdmx_019.jpg",
+        "category": "CDMX",
         "borough": "",
-        "topic": "Palacio de Bellas Artes",
-        "author": "Carolina López",
-        "license": "CC BY 2.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Palacio_de_Bellas_Artes.jpg"
+        "topic": "El Paraguas (126505121)",
+        "author": "Octavio Alonso Maya Castro",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:El_Paraguas_%28126505121%29.jpeg"
       }
     },
     {
-      "title": "Brugada descarta cifra negra en delitos de feminicidios en CDMX y desestima datos del INEGI: “No son correctos”",
-      "description": "La información publicada por Infobae trata un asunto registrado en la sección de Seguridad del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNeWx4TDJRWmtPeVY1SmVPeDdmRUg1dW1HNzhaT1lZM0RlM0dqc0l2YXRxeWRwamtRQjljUHFOMXhHTlhQNHZXRUtuTGRObUhqU244RDQ4RDUtbDdFcGJZOFZMVzRLM21rS0M0UEZtMTUtYm0zTU9RdkZzQlZqZjROMGhwTERJT2dkRXd3Q3ZkWVpKSGpQWGY3aWUtbEZpNUpIdFQ5bFE4ZHJNQ2g0QjBPdk4yVWQ2ZDF1Nk5iTjJFYnA3QW5DRzA0V2U1emxxVF9WYmx4YVdiQXd3U01sdWlnZS1ObHZLUdIBgAJBVV95cUxQd09KV3V0MTNpTG5oLUJNbm9OeEpJb01GNF9oek9Ga2trS0l3Sy1ab25LUGhGT3JwSkFiZFowN2x4UUlsVUdEamU5cnNtd3ZoN3ZvWEczRmFwVkViZWtrSUQ5N0k3NHJjZy1uaXNoSjNGVE1lbE5jRDdLR0VYa09yM3pmWk5hTG5XUmlURnczVnJWLW1XcGZ3QXFFaF9KdEtVT3JTbWVxdGFKanlTc1dGdC12bFZmdUZiMkpSdUwwMm9XRVMwcU1tNTZkaTBuMzBLX0hDMWJmRnVJNFh0UGI2QzlRQlREbXVYdjN0R1Q2bWNVbC1HaHFubXQ3Rmx3WDV1?oc=5",
-      "source": "Infobae",
+      "title": "México refuerza su sistema penitenciario con apoyo de Italia y la ONU",
+      "description": "La información publicada por Diario del Yaqui trata un asunto registrado en la sección de Seguridad del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPV3lzTmNSSG4wZmc1M2VwY0xzOVlXR0hwVkVFTUF0cm1pTG02LTItQXpTYU05SVdSWkxqZ01WRHVMQVExdDFsN0xwclF1Vmk3VC1lWV81Q0RlTTFwWjM5UGVlSTNwMkg1aEZlX3lfdk1GdEt1SDhOYkRVLVB3a0ctRXF5ay1pSnNZZzB5Rzd4UHU5WXV5TlZ6UWppZzdJZTV6M2tLLVphZ0NFNEVqR0V4dw?oc=5",
+      "source": "Diario del Yaqui",
       "date": "2026-10-14",
-      "published_at": "2026-10-14T20:16:53Z",
+      "published_at": "2026-10-14T20:17:49Z",
       "category": "Seguridad",
       "borough": "",
-      "location": "Ciudad de México (sin alcaldía identificada)",
-      "local_url": "/noticias/?id=1338bd33375b44b167a9&mes=2026-10",
+      "location": "Ubicación no indicada por el titular",
+      "local_url": "/noticias/?id=4f4fb03b3f0653eb0cff&mes=2026-10",
       "brief": {
-        "lead": "La información publicada por Infobae trata un asunto registrado en la sección de Seguridad del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+        "lead": "La información publicada por Diario del Yaqui trata un asunto registrado en la sección de Seguridad del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
         "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
         "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_seguridad_001",
-        "url": "/assets/fotos/archivo_seguridad_001.jpg",
+        "id": "archivo_seguridad_003",
+        "url": "/assets/fotos/archivo_seguridad_003.jpg",
         "category": "Seguridad",
         "borough": "",
-        "topic": "Adquisición patrullas para la Policía 03",
+        "topic": "Adquisición patrullas para la Policía 02",
         "author": "Gobierno de la Ciudad de México",
         "license": "CC BY 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Adquisici%C3%B3n_patrullas_para_la_Polic%C3%ADa_03.jpg"
+        "source": "https://commons.wikimedia.org/wiki/File:Adquisici%C3%B3n_patrullas_para_la_Polic%C3%ADa_02.jpg"
       }
     },
     {
@@ -131,14 +523,14 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_gobierno_002",
-        "url": "/assets/fotos/archivo_gobierno_002.jpg",
-        "category": "Gobierno",
+        "id": "reciente_f2fceb86e231b250",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Edificios%2C_Paseo_de_la_Reforma_%28CDMX%29_0131.jpg/1280px-Edificios%2C_Paseo_de_la_Reforma_%28CDMX%29_0131.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "category": "CDMX",
         "borough": "",
-        "topic": "Palacio Nacional Ciudad de Mexico",
-        "author": "Joaquín Martínez",
-        "license": "CC BY 2.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Palacio_Nacional_Ciudad_de_Mexico.jpg"
+        "topic": "Edificios, Paseo de la Reforma (CDMX) 0131",
+        "author": "Juan Carlos Fonseca Mata",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Edificios,_Paseo_de_la_Reforma_(CDMX)_0131.jpg"
       }
     },
     {
@@ -159,14 +551,14 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_seguridad_002",
-        "url": "/assets/fotos/archivo_seguridad_002.jpg",
+        "id": "archivo_seguridad_004",
+        "url": "/assets/fotos/archivo_seguridad_004.jpg",
         "category": "Seguridad",
         "borough": "",
-        "topic": "Patrulla vecinal",
-        "author": "Daniel Yonka",
-        "license": "CC BY-SA 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Patrulla_vecinal.jpg"
+        "topic": "Adquisición patrullas para la Policía 01",
+        "author": "Gobierno de la Ciudad de México",
+        "license": "CC BY 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Adquisici%C3%B3n_patrullas_para_la_Polic%C3%ADa_01.jpg"
       }
     },
     {
@@ -198,34 +590,6 @@
       }
     },
     {
-      "title": "Presenta Brugada Segundo Informe con énfasis en finanzas sanas",
-      "description": "La información publicada por Diario de México trata un asunto registrado en la sección de Gobierno del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQd0RwWEtSRHN3RkE3Wmt4MUZ4eVYtc1lpd3p0UXZiZU4zcmMteEd2aDE5M3JINHRibm1DR191c0JIWnY3QXI1MXFYcGNrX1dJVHF2TnZMd0cybnNmc0FzSWdBbWRIakhpSWQ5YnVJeTAyN3BIY0FwY3pCZURJZDRuUjFBY083YlU3OE1mZUpQNG93bTl5MVptTmlTa0ZPc2hJaUJWUjB30gGrAUFVX3lxTFB6VGpQd2FHRW1pUEtJWEFoZ2RES1JZaTcxTGwxcEdka2EtMXhTNTBWcHdhQk9qUjdOZnFkcllpaXJKQ2FnR0xXWWo3WGl0UTRRTmlkWVVuQ3AySFJuV0x2YnJqOV9ENFJ1WWlCQ1ZWdThFaktDYUJwZ2ZpNUNHVFBUWGJ2dFN4elRLWmFYRnRYaEplRlk1bmNaTG9qQ2FZbEYtaGlGWTJZeEsxYw?oc=5",
-      "source": "Diario de México",
-      "date": "2026-10-14",
-      "published_at": "2026-10-14T20:10:12Z",
-      "category": "Gobierno",
-      "borough": "",
-      "location": "Ubicación no indicada por el titular",
-      "local_url": "/noticias/?id=3bab6d9fda4be692af03&mes=2026-10",
-      "brief": {
-        "lead": "La información publicada por Diario de México trata un asunto registrado en la sección de Gobierno del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-        "context": "Las decisiones administrativas pueden influir en servicios, trámites y derechos; conviene conocer sus condiciones y a quiénes afectan.",
-        "pending": "Es indispensable consultar los acuerdos, comunicados o documentos oficiales antes de dar una medida por vigente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "archivo_gobierno_003",
-        "url": "/assets/fotos/archivo_gobierno_003.jpg",
-        "category": "Gobierno",
-        "borough": "",
-        "topic": "Palacio Nacional Ciudad de México DF",
-        "author": "Crater_sp",
-        "license": "CC BY-SA 2.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Palacio_Nacional_Ciudad_de_M%C3%A9xico_DF.jpg"
-      }
-    },
-    {
       "title": "Detienen en Iztacalco a dos hombres con 221 paquetes de droga; tienen antecedentes penales",
       "description": "Una nota de Noticias en la Mira comunica un caso relacionado con una detención o una presunta conducta delictiva en Iztacalco. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
       "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNRk5oNE1ObDE0alVXRS1PQ1FlWk5Tck45WE5ZcGhmdWJBQWI3WDJJSm45Sy1Hd0pQVThNaUJIV1BHMlJ6elcyc21xNENjSjQ4UndTOFltSV9tcVllWGdQcEl3SEhNSUpGaUFlbnJuR1JlR2RSdExkMEx4RDBnMHZvbXoyZmQxRnVnTnV4aVhOTV9HQnl2eGF1NzhWSS1xQjN6SzEyTm5IbXc3c0ZlSTE4TXFsd2lUUkFHSHItNkpuVVpEZw?oc=5",
@@ -254,31 +618,31 @@
       }
     },
     {
-      "title": "Qué se sabe de la Ley de Rentas Justas que presentó Clara Brugada ante el Congreso de CDMX",
-      "description": "El reportaje citado por El Sol de México aborda los precios de vivienda o los cambios residenciales en la capital. Las cifras y su metodología deben examinarse antes de concluir cuántas familias han sido desplazadas o qué tan representativos son determinados anuncios de renta.",
-      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPR2RlQ0pxM0lfbHF2bXR6TGlZdmZ1aVlZcTd3Rnl5cHA2cmxuZ09RSjZJX3k4TlNkM21lcXRjdEMyNDIwc2VPMENscVpMdC1nbkU4ZGlKamVOMEdfdW16SGJIWWc2aGFCaW5LbUliQ1ZzdlQ1cTlBMkNuZ1ZEXzMxdnd1R1dNOENKbUtkWHFFUVFGVXFPVGNtNFpOeWFxWHEwT1BtTVlLbVRQYUpsQmR2cWtnSmNfLVIxLVFOMWZxUTlOQnpfNHRDcERoVV9uVXRMXzZha1haNVNKZDZicXc?oc=5",
-      "source": "El Sol de México",
+      "title": "¡Indignante! Exhiben presunto modus operandi de carteristas en el Metro CDMX | VIDEO",
+      "description": "La información publicada por ADN 40 trata un asunto registrado en la sección de Metro del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOTVl1eFp2eXdiRDJYSjFjOTk2NFR5MzJQUWdJRW5XeVA4N0pqMHV5bEgydm9CU1BaYmVJVzZPR25fLTFsWWQ4d1VzRnNFWHdTUnFrZkpGVG1uUkR6MmlKNGNMSnVOTGRBREdhTXRReXlkdXNqZkdOYnE3QkJWeWpsMkNpTHB6aFZzOUxGSU5XQzQ3Y0tMamlLQjJpWm0xV3cxTGNCTVp3WG40Tm9TajI1VmZCb1BCcEpwejZOZQ?oc=5",
+      "source": "ADN 40",
       "date": "2026-10-14",
-      "published_at": "2026-10-14T20:03:46Z",
-      "category": "Gobierno",
+      "published_at": "2026-10-14T20:07:53Z",
+      "category": "Metro",
       "borough": "",
       "location": "Ciudad de México (sin alcaldía identificada)",
-      "local_url": "/noticias/?id=a5b957d771b43c0a593a&mes=2026-10",
+      "local_url": "/noticias/?id=9f990f8aee11c0e7a41f&mes=2026-10",
       "brief": {
-        "lead": "El reportaje citado por El Sol de México aborda los precios de vivienda o los cambios residenciales en la capital. Las cifras y su metodología deben examinarse antes de concluir cuántas familias han sido desplazadas o qué tan representativos son determinados anuncios de renta.",
-        "context": "Las decisiones administrativas pueden influir en servicios, trámites y derechos; conviene conocer sus condiciones y a quiénes afectan.",
-        "pending": "Es indispensable consultar los acuerdos, comunicados o documentos oficiales antes de dar una medida por vigente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "lead": "La información publicada por ADN 40 trata un asunto registrado en la sección de Metro del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+        "context": "Los cambios en este sistema pueden afectar los horarios, las conexiones y la planeación de los viajes cotidianos.",
+        "pending": "El estado operativo, las estaciones y las alternativas de traslado deben comprobarse en los avisos actuales del Metro. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_gobierno_004",
-        "url": "/assets/fotos/archivo_gobierno_004.jpg",
-        "category": "Gobierno",
+        "id": "archivo_metro_002",
+        "url": "/assets/fotos/archivo_metro_002.jpg",
+        "category": "Metro",
         "borough": "",
-        "topic": "Palacio Nacional Ciudad de México City DF",
-        "author": "stevecadman",
-        "license": "CC BY-SA 2.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Palacio_Nacional_Ciudad_de_M%C3%A9xico_City_DF.jpg"
+        "topic": "Estación Juárez del Metro de la Ciudad de México 09",
+        "author": "ProtoplasmaKid",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Estaci%C3%B3n_Ju%C3%A1rez_del_Metro_de_la_Ciudad_de_M%C3%A9xico_09.jpg"
       }
     },
     {
@@ -299,14 +663,42 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_seguridad_003",
-        "url": "/assets/fotos/archivo_seguridad_003.jpg",
+        "id": "archivo_seguridad_005",
+        "url": "/assets/fotos/archivo_seguridad_005.jpg",
         "category": "Seguridad",
         "borough": "",
-        "topic": "Adquisición patrullas para la Policía 02",
+        "topic": "Jeep policia cdmx",
         "author": "Gobierno de la Ciudad de México",
-        "license": "CC BY 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Adquisici%C3%B3n_patrullas_para_la_Polic%C3%ADa_02.jpg"
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Jeep_policia_cdmx.jpg"
+      }
+    },
+    {
+      "title": "Una voz en el deporte, el Tight End que impulsa el americano en México",
+      "description": "La información publicada por Tecnológico de Monterrey trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQVmY1ZjFTdzlJYjhxcTF2STdEVjUwTTA3Z1k1NjJoaTBKajNfaTZCSy1UcUlIdHlpV29xMktsV01Jb3p1TXFCU29VOXk4Ql9kUU82UldrMjJ5bVdYUl9wT3hqcnB5N2YxdTRqRmhGNFVnVHRmTmR4eGdsWGxMQWZ0VC1yZjhRRFRpTjZDQzZJRElDQkJWYnRCSUNkZGVhUURXOVZqa1FCaE1MYjRfX3ZDTm8wUEY0NkwwZ0ItX1k4Vmw?oc=5",
+      "source": "Tecnológico de Monterrey",
+      "date": "2026-10-14",
+      "published_at": "2026-10-14T19:57:09Z",
+      "category": "CDMX",
+      "borough": "",
+      "location": "Ubicación no indicada por el titular",
+      "local_url": "/noticias/?id=6bcd0f467190ef5ef694&mes=2026-10",
+      "brief": {
+        "lead": "La información publicada por Tecnológico de Monterrey trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+        "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+        "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "alcaldia_magdalena-contreras",
+        "url": "/assets/alcaldias/magdalena-contreras.jpg",
+        "category": "CDMX",
+        "borough": "La Magdalena Contreras",
+        "topic": "Río y bosque de Los Dinamos, La Magdalena Contreras",
+        "author": "Ananda xd",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Rio_de_los_Dinamos_en_CDMX.jpg"
       }
     },
     {
@@ -327,14 +719,14 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_gobierno_007",
-        "url": "/assets/fotos/archivo_gobierno_007.jpg",
-        "category": "Gobierno",
-        "borough": "",
-        "topic": "Calle Calle Francisco I. Madero de la Ciudad de México, con el Palacio Nacional al fondo",
-        "author": "Luisalvaz",
+        "id": "alcaldia_alvaro-obregon",
+        "url": "/assets/alcaldias/alvaro-obregon.jpg",
+        "category": "CDMX",
+        "borough": "Álvaro Obregón",
+        "topic": "Plaza del Carmen, barrio de San Ángel",
+        "author": "Reginaesc",
         "license": "CC BY-SA 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Calle_Calle_Francisco_I._Madero_de_la_Ciudad_de_M%C3%A9xico%2C_con_el_Palacio_Nacional_al_fondo.JPG"
+        "source": "https://commons.wikimedia.org/wiki/File:Plaza_del_Carmen%2C_Regina_Escandon%2C_23.sep.15._San_%C3%81ngel%2C_Del._%C3%81lvaro_Obreg%C3%B3n_01000_Ciudad_de_M%C3%A9xico.JPG"
       }
     },
     {
@@ -355,14 +747,42 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_cdmx_003",
-        "url": "/assets/fotos/archivo_cdmx_003.jpg",
+        "id": "alcaldia_azcapotzalco",
+        "url": "/assets/alcaldias/azcapotzalco.jpg",
         "category": "CDMX",
-        "borough": "",
-        "topic": "D.F. - panoramio (7)",
-        "author": "eurimaco",
+        "borough": "Azcapotzalco",
+        "topic": "Parroquia de Santa Catarina, Azcapotzalco",
+        "author": "Ivan alcantara",
         "license": "CC BY-SA 3.0",
-        "source": "https://commons.wikimedia.org/wiki/File:D.F._-_panoramio_%287%29.jpg"
+        "source": "https://commons.wikimedia.org/wiki/File:PARROQUIA_DE_SANTA_CATARINA_%28AZCAPOTZALCO%29.jpg"
+      }
+    },
+    {
+      "title": "Clima en CDMX hoy 14 de octubre: Lluvias fuertes y granizo amenazan estas zonas de la capital durante la tarde",
+      "description": "El pronóstico recogido por Infobae se refiere a lluvias en la capital. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPTzljNGMzZkQ0UWpuczFxcl84U3E5TmIwVzdYNVFFS21YSjcyeGg2aDhXR2psbzBsX1pibFoyaG1zc09CdjE0TFZONWRpYUxPSFJBcEx5aWtHckxDdWlscm5KWFhzaE8tNUtjS0JzVWoxUmpMbmp0aXA3WTlYdTJpM3ZIT3hvNFYxaXF0bUhrWUt0QkJEQmgzSFJzRnhxRjFudFRQVXU0YndueWhpNHoybzZaN013NGhmYWluMWlwM2Y5UkpWVDdv0gHiAUFVX3lxTE0xdXNoVWtZRFd0eVJrOWFac1JtSFhMWkZtY1l2U0htVm80VTV2ZGJJaXliU1JBQkItOS03bVJwSlBfYUduTkZfRFBGR2FzWF9Rc1lBclcwX3JDOWNjWHZYUl8tVk5wQlhNODNnN050TVNZWXhYeVFqZU1ZemYybmR2UzJCMThhanZ1NmJoQ3A1Szcwcm54eUJlSm9rQWtNZy1ZRTduSC0wUGpQZWxnSVFqSnRTM2xob1d3RFJIMjlJUTVsVlJFRHVpQllNREFVaVRvWlpPNDBUbE9GbHY4RDdLOVE?oc=5",
+      "source": "Infobae",
+      "date": "2026-10-14",
+      "published_at": "2026-10-14T19:43:37Z",
+      "category": "CDMX",
+      "borough": "",
+      "location": "Ciudad de México (sin alcaldía identificada)",
+      "local_url": "/noticias/?id=8f6f511006950da3e582&mes=2026-10",
+      "brief": {
+        "lead": "El pronóstico recogido por Infobae se refiere a lluvias en la capital. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
+        "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+        "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "alcaldia_benito-juarez",
+        "url": "/assets/alcaldias/benito-juarez.jpg",
+        "category": "CDMX",
+        "borough": "Benito Juárez",
+        "topic": "Parque Hundido, alcaldía Benito Juárez",
+        "author": "User:etnoboris",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Parque_Hundido.jpeg"
       }
     },
     {
@@ -383,14 +803,42 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_cdmx_006",
-        "url": "/assets/fotos/archivo_cdmx_006.jpg",
+        "id": "alcaldia_cuajimalpa",
+        "url": "/assets/alcaldias/cuajimalpa.jpg",
         "category": "CDMX",
-        "borough": "",
-        "topic": "Catedral Ii (172219027)",
-        "author": "Waender Alonso Bello",
-        "license": "CC BY 3.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Catedral_Ii_%28172219027%29.jpeg"
+        "borough": "Cuajimalpa de Morelos",
+        "topic": "Centro del antiguo pueblo de Cuajimalpa",
+        "author": "AlejandroLinaresGarcia",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:CuajimalpaCentro01.JPG"
+      }
+    },
+    {
+      "title": "Brugada presenta cuatro nuevas iniciativas de ley para CDMX: rentas justas, educación inicial y más",
+      "description": "El reportaje citado por Chilango aborda los precios de vivienda o los cambios residenciales en la capital. Las cifras y su metodología deben examinarse antes de concluir cuántas familias han sido desplazadas o qué tan representativos son determinados anuncios de renta.",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQMjBDQWhqR3AwOWdJOVdHdDFtU1NFUWk1YlpqbDJ0cUVlNEt1OGR5dENXeC1KMVpDc2FQV1JXVGwydjJsTXlzcHJfWENfVTUxTy03bDZDNllTdE92aFhDNUlER05Ub2tDMmhPTDNyck5Hc1JQT3FKOGNIOS1tVkU1eXM0N1h5Ync5blA1MGMyZ19Na2daY180Z252UW0zZnFZYVFkVjJuMU5qbGE5em80UEFuMGlid3ZJRGMzWEJn?oc=5",
+      "source": "Chilango",
+      "date": "2026-10-14",
+      "published_at": "2026-10-14T19:42:09Z",
+      "category": "CDMX",
+      "borough": "",
+      "location": "Ciudad de México (sin alcaldía identificada)",
+      "local_url": "/noticias/?id=28720838c73109e3b48e&mes=2026-10",
+      "brief": {
+        "lead": "El reportaje citado por Chilango aborda los precios de vivienda o los cambios residenciales en la capital. Las cifras y su metodología deben examinarse antes de concluir cuántas familias han sido desplazadas o qué tan representativos son determinados anuncios de renta.",
+        "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+        "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "alcaldia_cuauhtemoc",
+        "url": "/assets/alcaldias/cuauhtemoc.jpg",
+        "category": "CDMX",
+        "borough": "Cuauhtémoc",
+        "topic": "Palacio de Bellas Artes en la alcaldía Cuauhtémoc",
+        "author": "Timothy Neesam",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Palacio_de_Bellas_Artes%2C_Mexico_City%2C_MX.jpg"
       }
     },
     {
@@ -411,14 +859,14 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_gobierno_008",
-        "url": "/assets/fotos/archivo_gobierno_008.jpg",
-        "category": "Gobierno",
-        "borough": "",
-        "topic": "Calles Seminario y Moneda Centro Histórico Ciudad de México 01",
-        "author": "Correogsk",
-        "license": "CC BY-SA 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Calles_Seminario_y_Moneda_Centro_Hist%C3%B3rico_Ciudad_de_M%C3%A9xico_01.jpg"
+        "id": "alcaldia_gustavo-a-madero",
+        "url": "/assets/alcaldias/gustavo-a-madero.jpg",
+        "category": "CDMX",
+        "borough": "Gustavo A. Madero",
+        "topic": "Capilla del Cerrito en el Tepeyac, Gustavo A. Madero",
+        "author": "Catedrales e Iglesias/Cathedrals and Churches",
+        "license": "CC BY 2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Capilla_Cerrito_del_Tepeyac_%28Basilica_Nuestra_Se%C3%B1ora_de_Guadalupe%29_Gustavo_A_Madero%2C_Ciudad_de_M%C3%A9xico_02.jpg"
       }
     },
     {
@@ -439,14 +887,14 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_gobierno_009",
-        "url": "/assets/fotos/archivo_gobierno_009.jpg",
-        "category": "Gobierno",
-        "borough": "",
-        "topic": "Ciudad de México - Luces",
-        "author": "Juan Carlos Fonseca Mata",
-        "license": "CC BY-SA 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Ciudad_de_M%C3%A9xico_-_Luces.jpg"
+        "id": "alcaldia_miguel-hidalgo",
+        "url": "/assets/alcaldias/miguel-hidalgo.jpg",
+        "category": "CDMX",
+        "borough": "Miguel Hidalgo",
+        "topic": "Bosque de Chapultepec, alcaldía Miguel Hidalgo",
+        "author": "ProtoplasmaKid",
+        "license": "CC0",
+        "source": "https://commons.wikimedia.org/wiki/File:Audiorama_de_Chapultepec_1.jpg"
       }
     },
     {
@@ -467,14 +915,42 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_cdmx_013",
-        "url": "/assets/fotos/archivo_cdmx_013.jpg",
+        "id": "alcaldia_milpa-alta",
+        "url": "/assets/alcaldias/milpa-alta.jpg",
         "category": "CDMX",
-        "borough": "",
-        "topic": "D.F. - panoramio (9)",
-        "author": "eurimaco",
+        "borough": "Milpa Alta",
+        "topic": "Villa Milpa Alta y su entorno rural",
+        "author": "Comisión Mexicana de Filmaciones from México D. F., México",
+        "license": "CC BY-SA 2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Villa_Milpa_Alta%2C_Ciudad_de_M%C3%A9xico_%2832886264042%29.jpg"
+      }
+    },
+    {
+      "title": "Clara Brugada afirma que no hay cifra negra en homicidios ni feminicidios en CDMX",
+      "description": "La información publicada por sdpnoticias trata un asunto registrado en la sección de Gobierno del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPVTM2ZGJrdElxNkZra2tPLVBSeWQtVE5nVXRNN2JTaWt5b3dkaFJWbnNUWlBERnBRUWlPNnRScW9yd3ZIempwZ2Q0cVp5Z3ZfOTdHdlBWU2l3c0g1UHZUbzBjRDBEQ2VUaThaV2NyXzFUTDBGdWxSdDI2eWd6VU9mYU9nX0dwVDlsNVh3Q1piVG9JNllPS0k5SGRsSDU4WGFvVy11NTVfRF80UVVmX19VVjJtb3ZMQVZQbkJjVURLQXA?oc=5",
+      "source": "sdpnoticias",
+      "date": "2026-10-14",
+      "published_at": "2026-10-14T19:37:36Z",
+      "category": "Gobierno",
+      "borough": "",
+      "location": "Ciudad de México (sin alcaldía identificada)",
+      "local_url": "/noticias/?id=7cb0047a51998404577d&mes=2026-10",
+      "brief": {
+        "lead": "La información publicada por sdpnoticias trata un asunto registrado en la sección de Gobierno del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+        "context": "Las decisiones administrativas pueden influir en servicios, trámites y derechos; conviene conocer sus condiciones y a quiénes afectan.",
+        "pending": "Es indispensable consultar los acuerdos, comunicados o documentos oficiales antes de dar una medida por vigente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "alcaldia_tlalpan",
+        "url": "/assets/alcaldias/tlalpan.jpg",
+        "category": "CDMX",
+        "borough": "Tlalpan",
+        "topic": "Quiosco de la plaza principal de Tlalpan",
+        "author": "farid estrada",
         "license": "CC BY-SA 3.0",
-        "source": "https://commons.wikimedia.org/wiki/File:D.F._-_panoramio_%289%29.jpg"
+        "source": "https://commons.wikimedia.org/wiki/File:Kiosko_plaza_de_la_constitucion%2C_tlapan.JPG"
       }
     },
     {
@@ -495,27 +971,27 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_cdmx_014",
-        "url": "/assets/fotos/archivo_cdmx_014.jpg",
+        "id": "alcaldia_venustiano-carranza",
+        "url": "/assets/alcaldias/venustiano-carranza.jpg",
         "category": "CDMX",
-        "borough": "",
-        "topic": "Cathedral (155478679)",
-        "author": "Francisco Donaldo Cabrera Cruz",
+        "borough": "Venustiano Carranza",
+        "topic": "Palacio de Lecumberri, hoy Archivo General de la Nación",
+        "author": "Raymundo Perera",
         "license": "CC BY-SA 3.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Cathedral_%28155478679%29.jpeg"
+        "source": "https://commons.wikimedia.org/wiki/File:Palacio_de_Lecumberri.jpg"
       }
     },
     {
-      "title": "Álvaro Obregón, Tlalpan y seis municipios mexiquenses: donde más mujeres desaparecen en México",
+      "title": "Ataque en tianguis de Iztapalapa deja una mujer muerta y tres lesionados; autoridades buscan identificarla",
       "description": "La información publicada por Infobae trata un asunto registrado en la sección de Metro del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOOUlMY2w0dFhPWFkxSElNVjFaTWw0Vzk1Z3MyV2g1Y0plX2NzYkJ6SEZ3elBOeDRLeXpZY2VyRHRkX2tnWUd1YzhhYlhHWG04d250WlNTYWlNb1pJZmtCcF85M016ZS1BZ0FBYVc0cHlxdElqZ1o4TVg5SldwbmRQWE5Nakx0TElBY0pUZW5HUnp6d0c5QVRZUWZ3RTE3cU95SnFiNUdNMEMwOGV0WVlMd18tOFRJc3BkTURna0dYWWlVSXhYX0IycEZLMTdfNnFu0gHrAUFVX3lxTE0zdWtkNlkyNGI0RkI3d0pMSmhfZ2xVWWcwSFZRaW1MVi1LNnJEZDNORFpwUHBiSTRMTjI1UW5GUHhhV25rR0diZVYtUnNXdkY5RE1WaURLUG1yZUhXdjd6UDlaalJFRmsxek95VVFwcWJXNVRYRGNFU2NZczFzWFhvZWJuMXUtdGVUdG5PRWhScUR6anNWbHRiczY0UDhQWkVnbXNnVXMwRW5iQTEyanM0S0puMHppUmUwb29EcGR2ejZLQXpZZmtzT3FMakNPMjhRZEprQ2FwZ3NLeTZIbjUySTVsMTFZc2pSbHM?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPUHVLREtQaUNpSUJHMmxRSFNiMzFpQVh0NlIxMEY2NnhWZHl6b2RaeE5MaHVLTkg5T3RTR3BwMmZmSUtNV0VyVU1hTDNYZ0hYSXF3Y3NfMW5BSDUtOGNOTWNJdXRfTUpEdTVKQS1kMjBxb1luY29mdkpzZGpKUjFjS3V5SmtiZWJ1NmlvNmZSTUVOOVdMdHJhT1E3YmpEcklnTk1FcjZTejRXWHpHRGZ0S0Z6aDJXTV9jRnh1TGJUNGxMTGhCX2dTSmd0bHBGWVRqb1B6aVVHSFNJcWhjMm51OUN30gH8AUFVX3lxTFBFWEMtS1RjeDVKelMyU3U3WE1xRUZfNXE1eXgweGkzN2c2UTdfYS16ZnZJWUZkNEJ4c2ZRUktuemRKNXNDVDNuUVA0WjdMVHQ2aXh1YXMxdzBHME9fdDVrUG5VYWhhT2lwTmlQbk9KNUhNc3lkbFdZZGJfM1h4eHpOR2RHOEhNWUtRanA0UEZibmlqcXk2cUxaWFB3X040VVh0dEt3dnN3OHJ6ZGVKTUI3ZjlRWWszb3NqTE1qcWhCX1MtUUY4SV9zTXNPUWwxRE5SLU94MzBsamtFa0pzdVE5X1B2UjNZdG9pYTR0czJrS21kcXpxWExlZ001MA?oc=5",
       "source": "Infobae",
       "date": "2026-10-14",
-      "published_at": "2026-10-14T19:24:43Z",
+      "published_at": "2026-10-14T19:25:10Z",
       "category": "Metro",
-      "borough": "",
-      "location": "Ubicación no indicada por el titular",
-      "local_url": "/noticias/?id=dca7cb3ec494b897b86d&mes=2026-10",
+      "borough": "Iztapalapa",
+      "location": "Iztapalapa (mencionada en el titular)",
+      "local_url": "/noticias/?id=2d596f20176d2f019cd5&mes=2026-10",
       "brief": {
         "lead": "La información publicada por Infobae trata un asunto registrado en la sección de Metro del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
         "context": "Los cambios en este sistema pueden afectar los horarios, las conexiones y la planeación de los viajes cotidianos.",
@@ -523,14 +999,42 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_metro_002",
-        "url": "/assets/fotos/archivo_metro_002.jpg",
+        "id": "archivo_metro_003",
+        "url": "/assets/fotos/archivo_metro_003.jpg",
         "category": "Metro",
         "borough": "",
-        "topic": "Estación Juárez del Metro de la Ciudad de México 09",
+        "topic": "Parafernalia del Metro (Ciudad de México)",
+        "author": "Juan Carlos Fonseca Mata",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Parafernalia_del_Metro_%28Ciudad_de_M%C3%A9xico%29.jpg"
+      }
+    },
+    {
+      "title": "¿Te atreves? Habrá Cine-Picnic de terror en uno de los rincones más verdes del Ajusco en CDMX",
+      "description": "La información publicada por Infobae trata un asunto registrado en la sección de Metro del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPcm9qbFRjNEVqTS1NUjBiVVFBcGktWWppc2dEMkhLSEJWMTAwMG1fb3NGLURVQUpaUkdadW9yY2l2MkZtUUs0NkxlZmxXN28yOGtLT0xJWTVraVU2NkZxX1VXc3E4OTU5TTJvYS1TTnV4bVRvMU5lSjA4YnlsVWxTeWZndU1WNTNfM0xMeEU1cmZOTWU3RlpNZGpwbVZ3bTJhYTFJVUhVNzliYWJsTVM0YWt0a2txSFNpXzRxSEx6T2JBdnJKaklwUU9adkExaE3SAeoBQVVfeXFMTXN2cklVVXdIeGFYTGNMQk5xanQwTklDWTJyYllranE0Z3JfRy12eWlHbTB5NGN6SFZRRTJiYWs5NmtFVUs0WG8yTWhUTThfUkl3aUVDUUVmcnhuUVpTVXJNSXAyLWM0eW9IbnZJYlFETTAxM0FWeGZYdVkyM0M5ZzRYSURYR3J2UGkyblhzMkhaVjV6MGFtQmZmcUhZSHRRa2dtMldZREZQRURVV0FoZWlqekpwVFFPVTQ1OENCREcxcWFPeU8zR3gtbmNsSjY5dFJnWXprSGt0Z3JPY2RCNW0zZ0RPZk1UUWt3?oc=5",
+      "source": "Infobae",
+      "date": "2026-10-14",
+      "published_at": "2026-10-14T19:25:06Z",
+      "category": "Metro",
+      "borough": "",
+      "location": "Ciudad de México (sin alcaldía identificada)",
+      "local_url": "/noticias/?id=f66e61869c3fac0e3c98&mes=2026-10",
+      "brief": {
+        "lead": "La información publicada por Infobae trata un asunto registrado en la sección de Metro del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+        "context": "Los cambios en este sistema pueden afectar los horarios, las conexiones y la planeación de los viajes cotidianos.",
+        "pending": "El estado operativo, las estaciones y las alternativas de traslado deben comprobarse en los avisos actuales del Metro. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "archivo_metro_004",
+        "url": "/assets/fotos/archivo_metro_004.jpg",
+        "category": "Metro",
+        "borough": "",
+        "topic": "Estación Sevilla de la Línea 1 del Metro de la Ciudad de México - 01 - Túnel de salida",
         "author": "ProtoplasmaKid",
         "license": "CC BY-SA 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Estaci%C3%B3n_Ju%C3%A1rez_del_Metro_de_la_Ciudad_de_M%C3%A9xico_09.jpg"
+        "source": "https://commons.wikimedia.org/wiki/File:Estaci%C3%B3n_Sevilla_de_la_L%C3%ADnea_1_del_Metro_de_la_Ciudad_de_M%C3%A9xico_-_01_-_T%C3%BAnel_de_salida.jpg"
       }
     },
     {
@@ -551,27 +1055,27 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_metro_003",
-        "url": "/assets/fotos/archivo_metro_003.jpg",
+        "id": "archivo_metro_005",
+        "url": "/assets/fotos/archivo_metro_005.jpg",
         "category": "Metro",
         "borough": "",
-        "topic": "Parafernalia del Metro (Ciudad de México)",
-        "author": "Juan Carlos Fonseca Mata",
+        "topic": "Estación Sevilla de la Línea 1 del Metro de la Ciudad de México - 01 - Andén",
+        "author": "ProtoplasmaKid",
         "license": "CC BY-SA 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Parafernalia_del_Metro_%28Ciudad_de_M%C3%A9xico%29.jpg"
+        "source": "https://commons.wikimedia.org/wiki/File:Estaci%C3%B3n_Sevilla_de_la_L%C3%ADnea_1_del_Metro_de_la_Ciudad_de_M%C3%A9xico_-_01_-_And%C3%A9n.jpg"
       }
     },
     {
       "title": "VIDEOS SENSIBLES | Asesinan a mujer de la tercera edad durante balacera en el Tianguis El Salado, en Iztapalapa",
       "description": "La información publicada por Diario de México trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPNnZTdGxiWGRJMW5QOU5XZWw4dFJfWjUxakprOWJwcmduSWNTQWU0WEY0aE5rMUVGSkJmYXN6VzFlcUo5ZXFITHV6VTBwekk1OXhGUEhqdHNaZlNFZXVucndmWmxGdDNMN2ZLbE1SQmhMaTFDY2dDSGNsUm95Q0VFbG9Pa09ycXN5QWNibEU5T1FINWlnYTRYa0F5N3VPQW9Gd2JhOVY3QVlRVXJEQXllT0N3R2tRM0ZQWDF2cjNqSVZhdW0yRXdIOHI0NnpQT19r0gHWAUFVX3lxTE9fRU5ieDNheDE3OFRxY2hrTTZmdERGR0dUakxZeXJjajZHNW1xakxsU2lKVGxQeEhGTVNlVWJSY3lqZ2Jlbk9PWlFiV1BTNnk3WUpENVN5YVlnS2tKc0U3cElJNHV3UTM4Nkl2Qk5tRks0cVduZUxVNV9PYUNYT2dHLUZNQUQybDR5eHNJenJQRWZ4Zk1WNXlqdmJhMGtUWFNKbHFOVlVrOTRrQndhU3BQenRRV0RVMmVseHhHT0h6ME5RcVpRSnRLYXRHWE02Q01RdHNiNXc?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPX0VOYngzYXgxNzhUcWNoa002ZnRERkdHVGpMWXlyY2o2RzVtcWpMbFNpSlRsUHhIRk1TZVViUmN5amdiZW5PT1pRYldQUzZ5N1lKRDVTeWFZZ0trSnNFN3BJSTR1d1EzODZJdkJObUZLNHFXbmVMVTVfT2FDWE9nRy1GTUFEMmw0eXhzSXpyUEVmeGZNVjV5anZiYTBrVFhTSmxxTlZVazk0a0J3YVNwUHp0UVdEVTJlbHh4R09IejBOUXFaUUp0S2F0R1hNNkNNUXRzYjV30gHWAUFVX3lxTE9fRU5ieDNheDE3OFRxY2hrTTZmdERGR0dUakxZeXJjajZHNW1xakxsU2lKVGxQeEhGTVNlVWJSY3lqZ2Jlbk9PWlFiV1BTNnk3WUpENVN5YVlnS2tKc0U3cElJNHV3UTM4Nkl2Qk5tRks0cVduZUxVNV9PYUNYT2dHLUZNQUQybDR5eHNJenJQRWZ4Zk1WNXlqdmJhMGtUWFNKbHFOVlVrOTRrQndhU3BQenRRV0RVMmVseHhHT0h6ME5RcVpRSnRLYXRHWE02Q01RdHNiNXc?oc=5",
       "source": "Diario de México",
       "date": "2026-10-14",
       "published_at": "2026-10-14T19:20:50Z",
       "category": "CDMX",
       "borough": "Iztapalapa",
       "location": "Iztapalapa (mencionada en el titular)",
-      "local_url": "/noticias/?id=a61ce1a11a8045426550&mes=2026-10",
+      "local_url": "/noticias/?id=73e797ab3d1a939942f7&mes=2026-10",
       "brief": {
         "lead": "La información publicada por Diario de México trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
         "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
@@ -579,14 +1083,14 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_cdmx_019",
-        "url": "/assets/fotos/archivo_cdmx_019.jpg",
+        "id": "alcaldia_xochimilco",
+        "url": "/assets/alcaldias/xochimilco.jpg",
         "category": "CDMX",
-        "borough": "",
-        "topic": "El Paraguas (126505121)",
-        "author": "Octavio Alonso Maya Castro",
-        "license": "CC BY-SA 3.0",
-        "source": "https://commons.wikimedia.org/wiki/File:El_Paraguas_%28126505121%29.jpeg"
+        "borough": "Xochimilco",
+        "topic": "Trajineras y canales de Xochimilco",
+        "author": "Xbauerx",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Trajineras_de_Xochimilco.jpg"
       }
     },
     {
@@ -607,14 +1111,14 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "reciente_f2fceb86e231b250",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Edificios%2C_Paseo_de_la_Reforma_%28CDMX%29_0131.jpg/1280px-Edificios%2C_Paseo_de_la_Reforma_%28CDMX%29_0131.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "category": "CDMX",
+        "id": "archivo_cultura_001",
+        "url": "/assets/fotos/archivo_cultura_001.jpg",
+        "category": "Cultura",
         "borough": "",
-        "topic": "Edificios, Paseo de la Reforma (CDMX) 0131",
-        "author": "Juan Carlos Fonseca Mata",
-        "license": "CC BY-SA 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Edificios,_Paseo_de_la_Reforma_(CDMX)_0131.jpg"
+        "topic": "PALACIO DE BELLAS ARTES, CIUDAD DE MEXICO.",
+        "author": "Acuentacuentos",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:PALACIO_DE_BELLAS_ARTES%2C_CIUDAD_DE_MEXICO..jpg"
       }
     },
     {
@@ -635,14 +1139,42 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_metro_004",
-        "url": "/assets/fotos/archivo_metro_004.jpg",
+        "id": "archivo_metro_006",
+        "url": "/assets/fotos/archivo_metro_006.jpg",
         "category": "Metro",
         "borough": "",
-        "topic": "Estación Sevilla de la Línea 1 del Metro de la Ciudad de México - 01 - Túnel de salida",
+        "topic": "Estación Pino Suárez de la Línea 1 del Metro de la Ciudad de México 02",
         "author": "ProtoplasmaKid",
         "license": "CC BY-SA 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Estaci%C3%B3n_Sevilla_de_la_L%C3%ADnea_1_del_Metro_de_la_Ciudad_de_M%C3%A9xico_-_01_-_T%C3%BAnel_de_salida.jpg"
+        "source": "https://commons.wikimedia.org/wiki/File:Estaci%C3%B3n_Pino_Su%C3%A1rez_de_la_L%C3%ADnea_1_del_Metro_de_la_Ciudad_de_M%C3%A9xico_02.jpg"
+      }
+    },
+    {
+      "title": "CDMX y Edomex esperan un jueves 15 de octubre con mañanas frescas y cielo nublado",
+      "description": "El pronóstico recogido por El Financiero se refiere a condiciones meteorológicas en la capital. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNR1dSSVZyLXZZTUR3aFpVSzZvcEdwMEt2TFZ5a3M3X3k1ODFRMmFpOWsybVhwQ1g3X09xTnBtWmZHT2w5aERlZUFEeVUzdFlJWHlXYk82R1pSRkk3aDJGZWQ1TFV2X1pFQXJqMW44STBFWngzXzJ4LWk3NGFOMUlUNlNUOVBmTXBVV2daS2w3NTJUYmhxRDNhbldNUHloMm95MlM4VGY1bHRFbUtLQUNNUXNwaE9XOEJYZW5LRkdFR3kxYlJvVjdCTGdBRlFzRFdHLUR1UQ?oc=5",
+      "source": "El Financiero",
+      "date": "2026-10-14",
+      "published_at": "2026-10-14T19:13:54Z",
+      "category": "CDMX",
+      "borough": "",
+      "location": "Ciudad de México (sin alcaldía identificada)",
+      "local_url": "/noticias/?id=c92b5fdb659503d384e6&mes=2026-10",
+      "brief": {
+        "lead": "El pronóstico recogido por El Financiero se refiere a condiciones meteorológicas en la capital. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
+        "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+        "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "archivo_cultura_002",
+        "url": "/assets/fotos/archivo_cultura_002.jpg",
+        "category": "Cultura",
+        "borough": "",
+        "topic": "Palacio Nacional de Bellas Artes Ciudad de México D.F",
+        "author": "Luis Yamamoto",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Palacio_Nacional_de_Bellas_Artes_Ciudad_de_M%C3%A9xico_D.F.jpg"
       }
     },
     {
@@ -663,14 +1195,14 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_metro_005",
-        "url": "/assets/fotos/archivo_metro_005.jpg",
+        "id": "archivo_metro_007",
+        "url": "/assets/fotos/archivo_metro_007.jpg",
         "category": "Metro",
         "borough": "",
-        "topic": "Estación Sevilla de la Línea 1 del Metro de la Ciudad de México - 01 - Andén",
+        "topic": "Estación Sevilla de la Línea 1 del Metro de la Ciudad de México - 01 - Tren en espera",
         "author": "ProtoplasmaKid",
         "license": "CC BY-SA 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Estaci%C3%B3n_Sevilla_de_la_L%C3%ADnea_1_del_Metro_de_la_Ciudad_de_M%C3%A9xico_-_01_-_And%C3%A9n.jpg"
+        "source": "https://commons.wikimedia.org/wiki/File:Estaci%C3%B3n_Sevilla_de_la_L%C3%ADnea_1_del_Metro_de_la_Ciudad_de_M%C3%A9xico_-_01_-_Tren_en_espera.jpg"
       }
     },
     {
@@ -691,14 +1223,14 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_metro_006",
-        "url": "/assets/fotos/archivo_metro_006.jpg",
+        "id": "archivo_metro_008",
+        "url": "/assets/fotos/archivo_metro_008.jpg",
         "category": "Metro",
         "borough": "",
-        "topic": "Estación Pino Suárez de la Línea 1 del Metro de la Ciudad de México 02",
+        "topic": "Estación Pino Suárez de la Línea 1 del Metro de la Ciudad de México 04",
         "author": "ProtoplasmaKid",
         "license": "CC BY-SA 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Estaci%C3%B3n_Pino_Su%C3%A1rez_de_la_L%C3%ADnea_1_del_Metro_de_la_Ciudad_de_M%C3%A9xico_02.jpg"
+        "source": "https://commons.wikimedia.org/wiki/File:Estaci%C3%B3n_Pino_Su%C3%A1rez_de_la_L%C3%ADnea_1_del_Metro_de_la_Ciudad_de_M%C3%A9xico_04.jpg"
       }
     },
     {
@@ -719,42 +1251,14 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_seguridad_004",
-        "url": "/assets/fotos/archivo_seguridad_004.jpg",
+        "id": "archivo_seguridad_006",
+        "url": "/assets/fotos/archivo_seguridad_006.jpg",
         "category": "Seguridad",
         "borough": "",
-        "topic": "Adquisición patrullas para la Policía 01",
+        "topic": "Entrega Claudia Sheinbaum 113 nuevas patrullas en Gustavo A Madero 03",
         "author": "Gobierno de la Ciudad de México",
         "license": "CC BY 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Adquisici%C3%B3n_patrullas_para_la_Polic%C3%ADa_01.jpg"
-      }
-    },
-    {
-      "title": "Gobierno de Tamaulipas negó contratos a empresas vinculadas con el Cártel del Noreste: municipio de Nuevo Laredo reconoce que sí las contrató",
-      "description": "En su información, Infobae aborda una decisión, declaración o debate relacionado con las instituciones de la ciudad. Conviene distinguir la intención anunciada de las resoluciones que hayan sido aprobadas y publicado oficialmente.",
-      "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxNVkhlREZDMGRxY1NPT1RjZG5GVXlyYnZ2UUltYXk3dU1OclhRQnF5TC10SW1mSUNUR0U4TFhScWJ6eF9WdHkyX3QyLW11VGt6c1AyYko2OVAwN0I0X2N4bkpudmxWMWRNdW10OEJqSWRDbGJqNDFGZS1zUVhYMmJTeG1NNXhaM2I4N2xWV2tfcnZVV25XaXNtNHcxc3l1ZnhzOUF4MUdsdVNETEhha1dwVVhkTFVzeWVXd1NyNTRURjdoN0czd1VLb3FzNzNyUndIZ2wwWkI5THlNRHNFNnVmWU5qRXM5eWl0T0VVMWFaWjJrYlJmOVdEVl9Zd015dHRD0gGbAkFVX3lxTE41TWhSd2hGUlNTSjJrTTd3UzFqTnlVOTQxYmhSTHA1b18tdy1KcTVLVlNJcVBFVzJ1WHpEZHk1Uk00aExCOHgteDlpRW9DUC1WZThBdFF3SWVmOTMzNWliMl9HNlBSMXRrMHlRbDBjOUJtTWZxcm4xcWJfZkltVTJzNGV0UkFMdE95TnhEeDZtOHp2QkxiYVJTNDR1LUFrUmlVMGxTdHh4UHFQWjZuQVdVby1xNk83b3pydnNyb2g0RU1wdTJSM1dmTUVlaFBJblZ5cktPelBBZmZvNzBKM2p2a1BPN0pwSzExZHFYRU05eXdtWnZRRXJHYmE4TVhYWEVacWpKcU1qaVZydEw2WkY1TGkya0xvT2dlelU?oc=5",
-      "source": "Infobae",
-      "date": "2026-10-14",
-      "published_at": "2026-10-14T19:08:09Z",
-      "category": "Metro",
-      "borough": "",
-      "location": "Ubicación no indicada por el titular",
-      "local_url": "/noticias/?id=402dac8893a3de79d2a7&mes=2026-10",
-      "brief": {
-        "lead": "En su información, Infobae aborda una decisión, declaración o debate relacionado con las instituciones de la ciudad. Conviene distinguir la intención anunciada de las resoluciones que hayan sido aprobadas y publicado oficialmente.",
-        "context": "Los cambios en este sistema pueden afectar los horarios, las conexiones y la planeación de los viajes cotidianos.",
-        "pending": "El estado operativo, las estaciones y las alternativas de traslado deben comprobarse en los avisos actuales del Metro. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "archivo_metro_007",
-        "url": "/assets/fotos/archivo_metro_007.jpg",
-        "category": "Metro",
-        "borough": "",
-        "topic": "Estación Sevilla de la Línea 1 del Metro de la Ciudad de México - 01 - Tren en espera",
-        "author": "ProtoplasmaKid",
-        "license": "CC BY-SA 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Estaci%C3%B3n_Sevilla_de_la_L%C3%ADnea_1_del_Metro_de_la_Ciudad_de_M%C3%A9xico_-_01_-_Tren_en_espera.jpg"
+        "source": "https://commons.wikimedia.org/wiki/File:Entrega_Claudia_Sheinbaum_113_nuevas_patrullas_en_Gustavo_A_Madero_03.jpg"
       }
     },
     {
@@ -775,14 +1279,14 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_seguridad_005",
-        "url": "/assets/fotos/archivo_seguridad_005.jpg",
+        "id": "archivo_seguridad_007",
+        "url": "/assets/fotos/archivo_seguridad_007.jpg",
         "category": "Seguridad",
         "borough": "",
-        "topic": "Jeep policia cdmx",
+        "topic": "Entrega Claudia Sheinbaum 113 nuevas patrullas en Gustavo A Madero 01",
         "author": "Gobierno de la Ciudad de México",
-        "license": "CC BY-SA 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Jeep_policia_cdmx.jpg"
+        "license": "CC BY 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Entrega_Claudia_Sheinbaum_113_nuevas_patrullas_en_Gustavo_A_Madero_01.jpg"
       }
     },
     {
@@ -803,14 +1307,14 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "alcaldia_magdalena-contreras",
-        "url": "/assets/alcaldias/magdalena-contreras.jpg",
-        "category": "CDMX",
-        "borough": "La Magdalena Contreras",
-        "topic": "Río y bosque de Los Dinamos, La Magdalena Contreras",
-        "author": "Ananda xd",
-        "license": "CC BY-SA 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Rio_de_los_Dinamos_en_CDMX.jpg"
+        "id": "archivo_cultura_003",
+        "url": "/assets/fotos/archivo_cultura_003.jpg",
+        "category": "Cultura",
+        "borough": "",
+        "topic": "Mexico City Palacio de bellas artes",
+        "author": "Jeses",
+        "license": "CC BY-SA 2.5",
+        "source": "https://commons.wikimedia.org/wiki/File:Mexico_City_Palacio_de_bellas_artes.jpg"
       }
     },
     {
@@ -831,14 +1335,14 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "alcaldia_alvaro-obregon",
-        "url": "/assets/alcaldias/alvaro-obregon.jpg",
-        "category": "CDMX",
-        "borough": "Álvaro Obregón",
-        "topic": "Plaza del Carmen, barrio de San Ángel",
-        "author": "Reginaesc",
+        "id": "archivo_cultura_004",
+        "url": "/assets/fotos/archivo_cultura_004.jpg",
+        "category": "Cultura",
+        "borough": "",
+        "topic": "Palacio de Bellas Artes (nocturno), Ciudad de México.",
+        "author": "MaríaJoséFelgueresPlanells",
         "license": "CC BY-SA 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Plaza_del_Carmen%2C_Regina_Escandon%2C_23.sep.15._San_%C3%81ngel%2C_Del._%C3%81lvaro_Obreg%C3%B3n_01000_Ciudad_de_M%C3%A9xico.JPG"
+        "source": "https://commons.wikimedia.org/wiki/File:Palacio_de_Bellas_Artes_%28nocturno%29%2C_Ciudad_de_M%C3%A9xico..jpg"
       }
     },
     {
@@ -859,14 +1363,14 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_metro_008",
-        "url": "/assets/fotos/archivo_metro_008.jpg",
+        "id": "archivo_metro_009",
+        "url": "/assets/fotos/archivo_metro_009.jpg",
         "category": "Metro",
         "borough": "",
-        "topic": "Estación Pino Suárez de la Línea 1 del Metro de la Ciudad de México 04",
+        "topic": "Estación Pino Suárez de la Línea 1 del Metro de la Ciudad de México 03",
         "author": "ProtoplasmaKid",
         "license": "CC BY-SA 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Estaci%C3%B3n_Pino_Su%C3%A1rez_de_la_L%C3%ADnea_1_del_Metro_de_la_Ciudad_de_M%C3%A9xico_04.jpg"
+        "source": "https://commons.wikimedia.org/wiki/File:Estaci%C3%B3n_Pino_Su%C3%A1rez_de_la_L%C3%ADnea_1_del_Metro_de_la_Ciudad_de_M%C3%A9xico_03.jpg"
       }
     },
     {
@@ -887,14 +1391,14 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_metro_009",
-        "url": "/assets/fotos/archivo_metro_009.jpg",
+        "id": "archivo_metro_010",
+        "url": "/assets/fotos/archivo_metro_010.jpg",
         "category": "Metro",
         "borough": "",
-        "topic": "Estación Pino Suárez de la Línea 1 del Metro de la Ciudad de México 03",
+        "topic": "Estación Pino Suárez de la Línea 1 del Metro de la Ciudad de México 07",
         "author": "ProtoplasmaKid",
         "license": "CC BY-SA 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Estaci%C3%B3n_Pino_Su%C3%A1rez_de_la_L%C3%ADnea_1_del_Metro_de_la_Ciudad_de_M%C3%A9xico_03.jpg"
+        "source": "https://commons.wikimedia.org/wiki/File:Estaci%C3%B3n_Pino_Su%C3%A1rez_de_la_L%C3%ADnea_1_del_Metro_de_la_Ciudad_de_M%C3%A9xico_07.jpg"
       }
     },
     {
@@ -915,27 +1419,27 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_metro_010",
-        "url": "/assets/fotos/archivo_metro_010.jpg",
+        "id": "archivo_metro_011",
+        "url": "/assets/fotos/archivo_metro_011.jpg",
         "category": "Metro",
         "borough": "",
-        "topic": "Estación Pino Suárez de la Línea 1 del Metro de la Ciudad de México 07",
+        "topic": "Estación Pino Suárez de la Línea 1 del Metro de la Ciudad de México 08",
         "author": "ProtoplasmaKid",
         "license": "CC BY-SA 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Estaci%C3%B3n_Pino_Su%C3%A1rez_de_la_L%C3%ADnea_1_del_Metro_de_la_Ciudad_de_M%C3%A9xico_07.jpg"
+        "source": "https://commons.wikimedia.org/wiki/File:Estaci%C3%B3n_Pino_Su%C3%A1rez_de_la_L%C3%ADnea_1_del_Metro_de_la_Ciudad_de_M%C3%A9xico_08.jpg"
       }
     },
     {
       "title": "Adulta mayor es asesinada durante balacera en tianguis de Santa Martha, Iztapalapa; estaba comiendo en puesto",
       "description": "La información publicada por Telediario trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQOXpCNm9CcHdycWFaeEJfaEZyWDk3QzhvMmhjSWM1ZVFhWUpfTzYyal94bEd0YVlwRzVQNkZodFYxM2ZnSWgwSFd5dWlFQmVMajhOR3lMYlRyZm5IQWY5NElyRTdrTDlKVWUzSk05OFBNenlwV1dqM3pIcTVJRjFFdUZfOVVSQkk0eUJDTzJuRlZFTV9pTWF4NWNVRdIBmwFBVV95cUxOLVpzcjItM2hZV1FfMlpFcDY0WnVBNDJ1U2pIamhtUWV3UXl4STVjd2puaUlwdVUzeXROYjZSbUduTF9kdFEtV2R0eHptcUYyVlRBTDF4SEdSanZzNm9jQzlOcElKMzgwbjlTSU1KSV83ZnhjbmpCVkhKTzBERmxfTE5mUjJCTU8zdUJtS3ViRWJNTl9BdWtsUkJqWQ?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOLVpzcjItM2hZV1FfMlpFcDY0WnVBNDJ1U2pIamhtUWV3UXl4STVjd2puaUlwdVUzeXROYjZSbUduTF9kdFEtV2R0eHptcUYyVlRBTDF4SEdSanZzNm9jQzlOcElKMzgwbjlTSU1KSV83ZnhjbmpCVkhKTzBERmxfTE5mUjJCTU8zdUJtS3ViRWJNTl9BdWtsUkJqWdIBmwFBVV95cUxOLVpzcjItM2hZV1FfMlpFcDY0WnVBNDJ1U2pIamhtUWV3UXl4STVjd2puaUlwdVUzeXROYjZSbUduTF9kdFEtV2R0eHptcUYyVlRBTDF4SEdSanZzNm9jQzlOcElKMzgwbjlTSU1KSV83ZnhjbmpCVkhKTzBERmxfTE5mUjJCTU8zdUJtS3ViRWJNTl9BdWtsUkJqWQ?oc=5",
       "source": "Telediario",
       "date": "2026-10-14",
       "published_at": "2026-10-14T18:37:00Z",
       "category": "CDMX",
       "borough": "Iztapalapa",
       "location": "Iztapalapa (mencionada en el titular)",
-      "local_url": "/noticias/?id=17a3c2305583b3b21bf2&mes=2026-10",
+      "local_url": "/noticias/?id=65f4c11c1fc1432907b3&mes=2026-10",
       "brief": {
         "lead": "La información publicada por Telediario trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
         "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
@@ -943,14 +1447,14 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "alcaldia_azcapotzalco",
-        "url": "/assets/alcaldias/azcapotzalco.jpg",
-        "category": "CDMX",
-        "borough": "Azcapotzalco",
-        "topic": "Parroquia de Santa Catarina, Azcapotzalco",
-        "author": "Ivan alcantara",
+        "id": "archivo_cultura_005",
+        "url": "/assets/fotos/archivo_cultura_005.jpg",
+        "category": "Cultura",
+        "borough": "",
+        "topic": "Palacio de Bellas Artes, México D.F., México, 2013-10-13, DD 40",
+        "author": "Diego Delso",
         "license": "CC BY-SA 3.0",
-        "source": "https://commons.wikimedia.org/wiki/File:PARROQUIA_DE_SANTA_CATARINA_%28AZCAPOTZALCO%29.jpg"
+        "source": "https://commons.wikimedia.org/wiki/File:Palacio_de_Bellas_Artes%2C_M%C3%A9xico_D.F.%2C_M%C3%A9xico%2C_2013-10-13%2C_DD_40.jpg"
       }
     },
     {
@@ -971,14 +1475,14 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "alcaldia_benito-juarez",
-        "url": "/assets/alcaldias/benito-juarez.jpg",
-        "category": "CDMX",
-        "borough": "Benito Juárez",
-        "topic": "Parque Hundido, alcaldía Benito Juárez",
-        "author": "User:etnoboris",
-        "license": "CC BY-SA 3.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Parque_Hundido.jpeg"
+        "id": "archivo_cultura_006",
+        "url": "/assets/fotos/archivo_cultura_006.jpg",
+        "category": "Cultura",
+        "borough": "",
+        "topic": "Detalles del exterior del Palacio de Bellas Artes, Ciudad de México 06",
+        "author": "Luisalvaz",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Detalles_del_exterior_del_Palacio_de_Bellas_Artes%2C_Ciudad_de_M%C3%A9xico_06.JPG"
       }
     },
     {
@@ -999,42 +1503,42 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "alcaldia_coyoacan",
-        "url": "/assets/alcaldias/coyoacan.jpg",
-        "category": "CDMX",
-        "borough": "Coyoacán",
-        "topic": "Jardín Centenario de Coyoacán",
-        "author": "AlejandroLinaresGarcia",
+        "id": "archivo_cultura_007",
+        "url": "/assets/fotos/archivo_cultura_007.jpg",
+        "category": "Cultura",
+        "borough": "",
+        "topic": "Palacio de Bellas Artes, Ciudad de México, México, 2015-07-18, DD 10",
+        "author": "Diego Delso",
         "license": "CC BY-SA 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:JardinCentenarioCoyoacan.JPG"
+        "source": "https://commons.wikimedia.org/wiki/File:Palacio_de_Bellas_Artes%2C_Ciudad_de_M%C3%A9xico%2C_M%C3%A9xico%2C_2015-07-18%2C_DD_10.JPG"
       }
     },
     {
-      "title": "¿Ya tiene equipo? Rafaela Pimenta responde a la incógnita sobre el futuro de Gilberto Mora en el futbol de Europa",
-      "description": "La información publicada por Infobae trata un asunto registrado en la sección de Metro del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-      "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxQY1NuTllRQ0FKTzZNcndUc2lwOGlFNE5hVWVyTkZ5ZnBlZDNpeTlDdktMUXpHckg5SUlMNFNWYkx2NzJqTm9hZkt5eTI2dVhHMjJBSGFMZDRSWEJFa05jMk9TZE56NHhzM0ZIdFltdXdkWEVPY2MxYzNYLWlTMXlBWmU5S1N4LWtKb1padHFGU0dadDd4WDRuWWJUZ0JoM1ZrZ3h4eWxMLXRlekF2VzNIaUgyUFRPTmpZTTNWWi15SXlWVE1BZmx2M3ZkcWJSaVhwMXZxQ2o0YTFGN25TaVkydmp5R1FXTENibFFQRHFrU3ZUMGFla0HSAZACQVVfeXFMT254X2xWcTY5dWdyd3RaOFpMbGRzcDlFVEpYZEVrY2MtMkJjalRVR2phYndDeDlWRHBzVGluQl9HMFVRTzJGOGRZZzFSWDFtSS1ZQktoMEdmVS1DelppOTA4REZFWnpSSm8wbW5MUlpDcWs0MHhBdDhROGUxVllTRDFFY0V4N0hUNWRCeEx0MktkYXBjbk9GelphZWpHY0tYRjJzOFpzM2ZQRW9SdnU5NHlUMFh2NFdnV3ZSZmdjY21OQ05Icm5ZQTJSQkUtU1h5X1JGQkl1OWRhMDNFRWdnQjhtOWtkb2tqV3doTnJNTGdhVktUenhqM3d1U28tbG41THJhWXFnRmpkYlAtVk5iaks?oc=5",
-      "source": "Infobae",
+      "title": "Alebrije de Benito Juárez: “Marea Guardiana BJ” llegará al desfile 2026",
+      "description": "La información publicada por Capital CDMX trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNd0FYT19mVFFaR3BoSzRLTjdCQU14YzF4bW5hRThCWVJOdWlwSzdhWDluQjVIRVljYkppYzk2MllmTUpobFRGMUIxcjl2LTVycmJYY2ktaDNic1RvWE5wS3N0RkhKOEtnQ2hxZ2pwUGVrN1ZVelczbU9YR043RTRqZE55QQ?oc=5",
+      "source": "Capital CDMX",
       "date": "2026-10-14",
-      "published_at": "2026-10-14T18:29:22Z",
-      "category": "Metro",
-      "borough": "",
-      "location": "Ubicación no indicada por el titular",
-      "local_url": "/noticias/?id=d76b4dbcf3a5e26700af&mes=2026-10",
+      "published_at": "2026-10-14T18:29:48Z",
+      "category": "CDMX",
+      "borough": "Benito Juárez",
+      "location": "Benito Juárez (mencionada en el titular)",
+      "local_url": "/noticias/?id=987a6159c6a7631b92eb&mes=2026-10",
       "brief": {
-        "lead": "La información publicada por Infobae trata un asunto registrado en la sección de Metro del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-        "context": "Los cambios en este sistema pueden afectar los horarios, las conexiones y la planeación de los viajes cotidianos.",
-        "pending": "El estado operativo, las estaciones y las alternativas de traslado deben comprobarse en los avisos actuales del Metro. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "lead": "La información publicada por Capital CDMX trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+        "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+        "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_metro_011",
-        "url": "/assets/fotos/archivo_metro_011.jpg",
-        "category": "Metro",
+        "id": "archivo_cultura_008",
+        "url": "/assets/fotos/archivo_cultura_008.jpg",
+        "category": "Cultura",
         "borough": "",
-        "topic": "Estación Pino Suárez de la Línea 1 del Metro de la Ciudad de México 08",
-        "author": "ProtoplasmaKid",
-        "license": "CC BY-SA 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Estaci%C3%B3n_Pino_Su%C3%A1rez_de_la_L%C3%ADnea_1_del_Metro_de_la_Ciudad_de_M%C3%A9xico_08.jpg"
+        "topic": "Palacio de Bellas Artes México DF",
+        "author": "Eliasjorge4",
+        "license": "CC BY 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Palacio_de_Bellas_Artes_M%C3%A9xico_DF.JPG"
       }
     },
     {
@@ -1055,14 +1559,14 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_seguridad_006",
-        "url": "/assets/fotos/archivo_seguridad_006.jpg",
+        "id": "archivo_seguridad_008",
+        "url": "/assets/fotos/archivo_seguridad_008.jpg",
         "category": "Seguridad",
         "borough": "",
-        "topic": "Entrega Claudia Sheinbaum 113 nuevas patrullas en Gustavo A Madero 03",
+        "topic": "Claudia Sheinbaum entrega patrullas Iztapalapa 03",
         "author": "Gobierno de la Ciudad de México",
         "license": "CC BY 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Entrega_Claudia_Sheinbaum_113_nuevas_patrullas_en_Gustavo_A_Madero_03.jpg"
+        "source": "https://commons.wikimedia.org/wiki/File:Claudia_Sheinbaum_entrega_patrullas_Iztapalapa_03.jpg"
       }
     },
     {
@@ -1083,14 +1587,14 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_seguridad_007",
-        "url": "/assets/fotos/archivo_seguridad_007.jpg",
+        "id": "archivo_seguridad_009",
+        "url": "/assets/fotos/archivo_seguridad_009.jpg",
         "category": "Seguridad",
         "borough": "",
-        "topic": "Entrega Claudia Sheinbaum 113 nuevas patrullas en Gustavo A Madero 01",
+        "topic": "Entrega Claudia Sheinbaum 113 nuevas patrullas en Gustavo A Madero 02",
         "author": "Gobierno de la Ciudad de México",
         "license": "CC BY 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Entrega_Claudia_Sheinbaum_113_nuevas_patrullas_en_Gustavo_A_Madero_01.jpg"
+        "source": "https://commons.wikimedia.org/wiki/File:Entrega_Claudia_Sheinbaum_113_nuevas_patrullas_en_Gustavo_A_Madero_02.jpg"
       }
     },
     {
@@ -1139,14 +1643,14 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_seguridad_008",
-        "url": "/assets/fotos/archivo_seguridad_008.jpg",
+        "id": "archivo_seguridad_010",
+        "url": "/assets/fotos/archivo_seguridad_010.jpg",
         "category": "Seguridad",
         "borough": "",
-        "topic": "Claudia Sheinbaum entrega patrullas Iztapalapa 03",
+        "topic": "Entrega Claudia Sheinbaum 113 nuevas patrullas en Gustavo A Madero 04",
         "author": "Gobierno de la Ciudad de México",
         "license": "CC BY 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Claudia_Sheinbaum_entrega_patrullas_Iztapalapa_03.jpg"
+        "source": "https://commons.wikimedia.org/wiki/File:Entrega_Claudia_Sheinbaum_113_nuevas_patrullas_en_Gustavo_A_Madero_04.jpg"
       }
     },
     {
@@ -1175,510 +1679,6 @@
         "author": "ProtoplasmaKid",
         "license": "CC BY-SA 4.0",
         "source": "https://commons.wikimedia.org/wiki/File:Mosaico_de_Isabel_Tecuichpo_en_la_estaci%C3%B3n_Pantitl%C3%A1n_del_Metro_de_la_Ciudad_de_M%C3%A9xico_03.jpg"
-      }
-    },
-    {
-      "title": "Santos Laguna encuentra una cábala de la suerte: Aleco Irarragorri se vuelve viral por su doble persignada",
-      "description": "La información publicada por Infobae trata un asunto registrado en la sección de Metro del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-      "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxOQmZnZktrQ2sxeUIxalRWNVp5MHZKNGRGMFpHaXhXR05JVl9Wb3c4TXZLaVhyRTlkMlNDX2pDWWdUZGtLbHFLYlhSeVMxaWUtZ2JUYW9qM1BWVm1XRThQY1NfWEVBNEFYbnFXMXNZeDQxUEtWRVAzTm5NeHdGVTRPcU9uOEFWTDROZW1VbVRjMXhXc1JpWWtTbjRKTU5rVkVHSm1wSl9yRWk3VS01WkNIM1BuM1BzbTNVSTk4SWhlRlNqcUdROXVScjJwdU9Ub3d2Q0xLbG4yZUJ1LWpienlEVDVEeWtFVjhxZkFGQjRB0gGIAkFVX3lxTE5CaXFZMk1ySm9qZFRIR3Njb1NUd0xaMGVub3VLR01mMjFxTFVMRHV1Z3h2bVMyZU5rampQNk9DZ2ZscmNfaEc1SkI4VG0xVmNxamVSa3RqSlRfMnROMHZxLW9oNlZ1eXBaTXVka0l5bG5CM2lrMDFqYjFlakxZOFotSGlWLTVub2szMnNveHVQVmMyTUNBMTVOYlZoOTF3eElVSTh0SUhxQ1QyZ2hZbXd6bVlPVkhsX3gxclAwOVdJcWU3Q1VlaVB1MjNhSXozQmxpM1pMMTRxZDJ6S3o1UlBBQUt6NmhJUEtidFNDamtwd3I4c0xDZDk2Rlp4Z3c5VnNqYlZjOVl2cA?oc=5",
-      "source": "Infobae",
-      "date": "2026-10-14",
-      "published_at": "2026-10-14T18:10:00Z",
-      "category": "Metro",
-      "borough": "",
-      "location": "Ubicación no indicada por el titular",
-      "local_url": "/noticias/?id=6fc3dc442622bddbf55c&mes=2026-10",
-      "brief": {
-        "lead": "La información publicada por Infobae trata un asunto registrado en la sección de Metro del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-        "context": "Los cambios en este sistema pueden afectar los horarios, las conexiones y la planeación de los viajes cotidianos.",
-        "pending": "El estado operativo, las estaciones y las alternativas de traslado deben comprobarse en los avisos actuales del Metro. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "reciente_804968a923fefbd5",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/Metro_Hangares_%282026%29_2.jpg/1280px-Metro_Hangares_%282026%29_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "category": "Metro",
-        "borough": "",
-        "topic": "Metro Hangares (2026) 2",
-        "author": "Tbhotch",
-        "license": "CC BY-SA 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Metro_Hangares_(2026)_2.jpg"
-      }
-    },
-    {
-      "title": "Balacera en Iztapalapa Hoy: Así Fue Ataque que Dejó a Una Mujer Muerta en Tianguis El Salado",
-      "description": "La información publicada por N+ trata un asunto registrado en la sección de Seguridad del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPeGVaMmtrUk5YY0pHUWFIUkhaUEhDNVhrVmRkY0RzWHB0cVJpbHhvU1paVklNYW56dk02LWxhc2VFVkFTYWJHWEExOTRJWlpWZmxjMDc4V0VocVpfelhmYnp3UWx0UU1GZlJra042OHJKU004RFJ3RTdQdk1aVHQ5NGdJVXUweFdjaTk3VWtWeS0tbVlaaDUzTm9zdlJjZ0RQd3RfOFVyVFJSUHI0aWJLTXU1ZEx0d0Y4UVBFM0hzVQ?oc=5",
-      "source": "N+",
-      "date": "2026-10-14",
-      "published_at": "2026-10-14T18:08:50Z",
-      "category": "Seguridad",
-      "borough": "Iztapalapa",
-      "location": "Iztapalapa (mencionada en el titular)",
-      "local_url": "/noticias/?id=f8785caa42939ed533ed&mes=2026-10",
-      "brief": {
-        "lead": "La información publicada por N+ trata un asunto registrado en la sección de Seguridad del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-        "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
-        "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "archivo_seguridad_009",
-        "url": "/assets/fotos/archivo_seguridad_009.jpg",
-        "category": "Seguridad",
-        "borough": "",
-        "topic": "Entrega Claudia Sheinbaum 113 nuevas patrullas en Gustavo A Madero 02",
-        "author": "Gobierno de la Ciudad de México",
-        "license": "CC BY 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Entrega_Claudia_Sheinbaum_113_nuevas_patrullas_en_Gustavo_A_Madero_02.jpg"
-      }
-    },
-    {
-      "title": "Arranca entrega de Canasta Alimentaria Bienestar: cómo solicitar la despensa en el Edomex",
-      "description": "La información publicada por Infobae trata un asunto registrado en la sección de Metro del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOeG82dGdjQnFDVlNIOC1McXREQ3RabVg0cDJWVjBIR0ZuWjFYNkM2bWM1d1lXMU1BZVQwalZ3dElMVmFGVmNTN2QwYkVGNGZGUWlscEFSZU1GdmxLQ2JrWjAxbFZyQkE0X19yYXd5S2NrMDJkcHZpSHgyaWhwZWVIejlpVEZ4UzFmRHlubTljWGVrYVVGY2VXdUJpZ3BXeHpoakpOeHFEUjVoSTRSRFhLMXBJSUdBU0MzUTR5VElFb1E5ZFhZMFlNdF9mSdIB5gFBVV95cUxNUFVnNUhNUkdOT1MyNlZVQVBEZU1wdnNHdFBkSXBIUllTdXAtdzI4b29TN0NWcWRTQU55NnBMMHhiUElwT0NpbDZrNVd2d2xlX0xyRUJYMzZYNWZmUnpWblhGalRKS2luRFUyX0JoTFlqeVlEZ0hkMUdlSExkZ2wwOU5uYWFvLWJGWUZQSW5WMVlXTDZsV2E2WU1qVjdlaWVIRkJpc0xhZ05KQ1o5MnRtZzNLU2pJc1RuTngzQnJmalI2Szk2ODl1anl0Qjd6NHdxMVYxZFFyaElZMzF0eDdienQxM2s5QQ?oc=5",
-      "source": "Infobae",
-      "date": "2026-10-14",
-      "published_at": "2026-10-14T18:03:00Z",
-      "category": "Metro",
-      "borough": "",
-      "location": "Ubicación no indicada por el titular",
-      "local_url": "/noticias/?id=8206226521929efeb5e1&mes=2026-10",
-      "brief": {
-        "lead": "La información publicada por Infobae trata un asunto registrado en la sección de Metro del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-        "context": "Los cambios en este sistema pueden afectar los horarios, las conexiones y la planeación de los viajes cotidianos.",
-        "pending": "El estado operativo, las estaciones y las alternativas de traslado deben comprobarse en los avisos actuales del Metro. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "reciente_c4e1387f207f104c",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Metro_Terminal_A%C3%A9rea_%282026%29_1.jpg/1280px-Metro_Terminal_A%C3%A9rea_%282026%29_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "category": "Metro",
-        "borough": "",
-        "topic": "Metro Terminal Aérea (2026) 1",
-        "author": "Tbhotch",
-        "license": "CC BY-SA 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Metro_Terminal_A%C3%A9rea_(2026)_1.jpg"
-      }
-    },
-    {
-      "title": "Cae 'El Dámaso', presunto segundo al mando del Cártel de Tláhuac",
-      "description": "La información publicada por Milenio trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQWkdkUTFmMHJRQ05KYXJpU2lRTmx4cDg1WG43LWo2MDRtZHpVOHE4WEFBczVOOGh4aDBQR0kwcXZJX1FJRkJ3Nzc3TUo4ZDBuZF9NREtwUktfLXAyWU5Jd1U4aElidkhxeVk4bHdTYUR4TkNsOTRQMmxaYWRzT1Nnb3dOQ2FDclNWSHU4VHlYam9za2JrYUsyetIBmAFBVV95cUxNdmdWd3RoS2hLbjlwcGxVMGpzRGp3b2kzaDBnWl9KazFYY1d6Y0ttT2JmYzFaQUhGZWlRWm5HeW9wUzBWWVZwMFNOQjNLblpRMXdOS195M09odFVUWTR1b2F2MnBVM2FpZjdJcmZqcktOQWhtUURqT1I5WXNNS3prZ0tVcTVkLUxEZG5Rc3FaQzlLTXVRYWZNYg?oc=5",
-      "source": "Milenio",
-      "date": "2026-10-14",
-      "published_at": "2026-10-14T17:56:00Z",
-      "category": "CDMX",
-      "borough": "Tláhuac",
-      "location": "Tláhuac (mencionada en el titular)",
-      "local_url": "/noticias/?id=9338040d3b5898bc5cc9&mes=2026-10",
-      "brief": {
-        "lead": "La información publicada por Milenio trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-        "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-        "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "alcaldia_cuajimalpa",
-        "url": "/assets/alcaldias/cuajimalpa.jpg",
-        "category": "CDMX",
-        "borough": "Cuajimalpa de Morelos",
-        "topic": "Centro del antiguo pueblo de Cuajimalpa",
-        "author": "AlejandroLinaresGarcia",
-        "license": "CC BY-SA 3.0",
-        "source": "https://commons.wikimedia.org/wiki/File:CuajimalpaCentro01.JPG"
-      }
-    },
-    {
-      "title": "Día de Muertos CDMX 2026: calendario de todos los eventos, fechas, lugares, desfile de alebrijes, catrinas, mega ofrenda",
-      "description": "La información publicada por Revista Merca2.0 trata un asunto registrado en la sección de Cultura del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQYzcwa0lxbTNKSUJfVUE0ZHY4dmt1ODZMOTBwU0lrR05nTk1ERl9OU1ZTVWJ6UlRITjV5bHpoSFNkd1lkN3JiU1cwNWVKT2NFeERxekROc3NOakVTVTh5VTVtdWR0MlEtTUw0ejRwaTczdVFDNmNrS3h5S1Q3Q3Q5aF9yR29HdVJ4eGpKQ3RVMEgwaXdnSWtHdE12WGtiOG8xUktpNmROMENESEtaSF9reENOZmpOY1diWFMxZlduSzBaYUZFUW1VV3d5X3MzY18wNV80M2F3?oc=5",
-      "source": "Revista Merca2.0",
-      "date": "2026-10-14",
-      "published_at": "2026-10-14T17:51:32Z",
-      "category": "Cultura",
-      "borough": "",
-      "location": "Ciudad de México (sin alcaldía identificada)",
-      "local_url": "/noticias/?id=694cb4fadbbddbba7a9d&mes=2026-10",
-      "brief": {
-        "lead": "La información publicada por Revista Merca2.0 trata un asunto registrado en la sección de Cultura del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-        "context": "La actividad cultural abre oportunidades de encuentro, aprendizaje y disfrute para habitantes y visitantes.",
-        "pending": "Los accesos, boletos, sedes, cupos y horarios deben consultarse con la institución organizadora. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "archivo_cultura_001",
-        "url": "/assets/fotos/archivo_cultura_001.jpg",
-        "category": "Cultura",
-        "borough": "",
-        "topic": "PALACIO DE BELLAS ARTES, CIUDAD DE MEXICO.",
-        "author": "Acuentacuentos",
-        "license": "CC BY-SA 3.0",
-        "source": "https://commons.wikimedia.org/wiki/File:PALACIO_DE_BELLAS_ARTES%2C_CIUDAD_DE_MEXICO..jpg"
-      }
-    },
-    {
-      "title": "Feria y Festival Cultural Alfeñique 2026 llena de sabor y color el Centro Histórico de Toluca",
-      "description": "La información publicada por Central Municipal trata un asunto registrado en la sección de Cultura del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPM1V1NG5aRXFxQlhKSzluWDN4YzVXX2tsXzBKRkl6M0NWS0IwV1VYQTRrM3daWmpaMGNWV0RiTFZ2cURZenlyY2ZYVm1rdzFXaVRabXBmNXFfTmt3VmN3aGNjeWxuQnUwQjVWRzZacTRDNElDUVE3N0xmWWF6R1h4MDZ6RkFwQnJwdU50d3B1N0dFa0oyOXB1YWl3SDZ1TFdsbmhVRklsYlZEUHp2WXNLVUNKb01kbmZJaG1hNllSdS15T2NxbGc1R3JieGFhQWJoTndZNEY0b0o2WERI?oc=5",
-      "source": "Central Municipal",
-      "date": "2026-10-14",
-      "published_at": "2026-10-14T17:38:26Z",
-      "category": "Cultura",
-      "borough": "",
-      "location": "Ubicación no indicada por el titular",
-      "local_url": "/noticias/?id=f4e6adfd21992185dc2b&mes=2026-10",
-      "brief": {
-        "lead": "La información publicada por Central Municipal trata un asunto registrado en la sección de Cultura del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-        "context": "La actividad cultural abre oportunidades de encuentro, aprendizaje y disfrute para habitantes y visitantes.",
-        "pending": "Los accesos, boletos, sedes, cupos y horarios deben consultarse con la institución organizadora. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "archivo_cultura_002",
-        "url": "/assets/fotos/archivo_cultura_002.jpg",
-        "category": "Cultura",
-        "borough": "",
-        "topic": "Palacio Nacional de Bellas Artes Ciudad de México D.F",
-        "author": "Luis Yamamoto",
-        "license": "CC BY-SA 3.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Palacio_Nacional_de_Bellas_Artes_Ciudad_de_M%C3%A9xico_D.F.jpg"
-      }
-    },
-    {
-      "title": "Autorizan cambio de uso de suelo en la Álamos CDMX",
-      "description": "La información publicada por Excélsior trata un asunto registrado en la sección de Gobierno del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQbEVKLU56SmZjR1ZQUWpNc0NxMHgySU44cjNPQ1hGbWZvZjJxYTVfdE8ydzZuN0lLUGpJOGxmSFpXTUZ5RS1kTFBvcmNkNFYzd1ZMM3ktUXloMnplTXlEX2kzQ3FKTWhLRm1BZVpGdTRtVHhDeklwa2QyaGlQR0FSemJEdnhDeW5nQ3JCctIBkgFBVV95cUxOOXRoN2s0WG9Dam5JUGJmWC1IU0xkWWtlOG1lT1NVdU5WOTluRElueFYwMF90VVVfSTRBZUFJUzh5Sk5zRS1xLVBPRXdjZjIzdFpvNE5GdEZZdjdSTUUxNUZhVkhuanB2ZEp3ZDJmT1BJakZoRUQ3bXYzbUI0bnFpOHdWSm9IanBqMFNwRHoxRklzdw?oc=5",
-      "source": "Excélsior",
-      "date": "2026-10-14",
-      "published_at": "2026-10-14T17:32:42Z",
-      "category": "Gobierno",
-      "borough": "",
-      "location": "Ciudad de México (sin alcaldía identificada)",
-      "local_url": "/noticias/?id=65ad2da35fea0319d508&mes=2026-10",
-      "brief": {
-        "lead": "La información publicada por Excélsior trata un asunto registrado en la sección de Gobierno del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-        "context": "Las decisiones administrativas pueden influir en servicios, trámites y derechos; conviene conocer sus condiciones y a quiénes afectan.",
-        "pending": "Es indispensable consultar los acuerdos, comunicados o documentos oficiales antes de dar una medida por vigente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "alcaldia_cuauhtemoc",
-        "url": "/assets/alcaldias/cuauhtemoc.jpg",
-        "category": "CDMX",
-        "borough": "Cuauhtémoc",
-        "topic": "Palacio de Bellas Artes en la alcaldía Cuauhtémoc",
-        "author": "Timothy Neesam",
-        "license": "CC BY-SA 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Palacio_de_Bellas_Artes%2C_Mexico_City%2C_MX.jpg"
-      }
-    },
-    {
-      "title": "Clara Brugada presenta su Segundo Informe de Gobierno en el Congreso de CDMX",
-      "description": "En su información, El Heraldo de México aborda una decisión, declaración o debate relacionado con las instituciones de la ciudad. Conviene distinguir la intención anunciada de las resoluciones que hayan sido aprobadas y publicado oficialmente.",
-      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNNWYwdXhqUmxXZUtjM3Y0T3lUcGhwZWNRek12Y3dDSFlKOWFxMXUybFR5SVlIOWZpdEM2RVdNb1NsaW9QWjRBa05uRHNZOURKZ1RFTUdQOHV5Zm9SRGxoMmhfOS1OcXducXVOM0poZGZaZ21RV3ZoNmFvb09iRVg4bWpSMkM2TUFLSklsdTF6VGgwWW00dVZFLWZmMURzWlVTR2l4bGpqdDNlczliRk44UFFZYVV6aEJkVnFFcjF4bE1YZVZuYWpRSUhpMURFQWtpcU5hMFNn?oc=5",
-      "source": "El Heraldo de México",
-      "date": "2026-10-14",
-      "published_at": "2026-10-14T17:26:00Z",
-      "category": "Gobierno",
-      "borough": "",
-      "location": "Ciudad de México (sin alcaldía identificada)",
-      "local_url": "/noticias/?id=da0a1fc8b00f8fe3c8db&mes=2026-10",
-      "brief": {
-        "lead": "En su información, El Heraldo de México aborda una decisión, declaración o debate relacionado con las instituciones de la ciudad. Conviene distinguir la intención anunciada de las resoluciones que hayan sido aprobadas y publicado oficialmente.",
-        "context": "Las decisiones administrativas pueden influir en servicios, trámites y derechos; conviene conocer sus condiciones y a quiénes afectan.",
-        "pending": "Es indispensable consultar los acuerdos, comunicados o documentos oficiales antes de dar una medida por vigente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "alcaldia_gustavo-a-madero",
-        "url": "/assets/alcaldias/gustavo-a-madero.jpg",
-        "category": "CDMX",
-        "borough": "Gustavo A. Madero",
-        "topic": "Capilla del Cerrito en el Tepeyac, Gustavo A. Madero",
-        "author": "Catedrales e Iglesias/Cathedrals and Churches",
-        "license": "CC BY 2.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Capilla_Cerrito_del_Tepeyac_%28Basilica_Nuestra_Se%C3%B1ora_de_Guadalupe%29_Gustavo_A_Madero%2C_Ciudad_de_M%C3%A9xico_02.jpg"
-      }
-    },
-    {
-      "title": "Gobierno de CDMX exige entrega de la Casa de Cultura Alfonso Reyes; Rojo de la Vega acusa “venganza política”",
-      "description": "En su información, El Imparcial aborda una decisión, declaración o debate relacionado con las instituciones de la ciudad. Conviene distinguir la intención anunciada de las resoluciones que hayan sido aprobadas y publicado oficialmente.",
-      "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxPVnNYU0pteGpiSUw5Z1VzZDV3Y3F5NWNUX3V4d2s3WFJaS1JrZjB1NmdWUWY5eXpJVGhHb2RPX29ySGFYbHpMZmJDT2w4OWNoc214V0F4SHZnMXVnQ01BMGc4dkpzbllyQTN1ZVZUaFVXelJlcEM1d3FJR0Mzb3NOREcyVnQ2NTlqVW5UNm5fN2htSzhZUlhmTGRCV0Q1WHF6MVhrTmxuZ1U5REQ0VTJpbktfNEp5SE9uX3VzZm9VNlVCNk9NWmpyYUFZdnBXUXk4clJRTG5RbzR2UlBjMl9TTXlpenk3RGFPVXZBWm5RcFN4NHZvZDIzSWRERnYycHdmSmM40gGDAkFVX3lxTE9Wc1hTSm14amJJTDlnVXNkNXdjcXk1Y1RfdXh3azdYUlpLUmtmMHU2Z1ZRZjl5eklUaEdvZE9fb3JIYVhsekxmYkNPbDg5Y2hzbXhXQXhIdmcxdWdDTUEwZzh2SnNuWXJBM3VlVlRoVVd6UmVwQzV3cUlHQzNvc05ERzJWdDY1OWpVblQ2bl83aG1LOFlSWGZMZEJXRDVYcXoxWGtObG5nVTlERDRVMmluS180SnlIT25fdXNmb1U2VUI2T01aanJhQVl2cFdReThyUlFMblFvNHZSUGMyX1NNeWl6eTdEYU9VdkFablFwU3g0dm9kMjNJZERGdjJwd2ZKYzg?oc=5",
-      "source": "El Imparcial",
-      "date": "2026-10-14",
-      "published_at": "2026-10-14T17:24:22Z",
-      "category": "Gobierno",
-      "borough": "",
-      "location": "Ciudad de México (sin alcaldía identificada)",
-      "local_url": "/noticias/?id=cc0ddc42ac653e92bff2&mes=2026-10",
-      "brief": {
-        "lead": "En su información, El Imparcial aborda una decisión, declaración o debate relacionado con las instituciones de la ciudad. Conviene distinguir la intención anunciada de las resoluciones que hayan sido aprobadas y publicado oficialmente.",
-        "context": "Las decisiones administrativas pueden influir en servicios, trámites y derechos; conviene conocer sus condiciones y a quiénes afectan.",
-        "pending": "Es indispensable consultar los acuerdos, comunicados o documentos oficiales antes de dar una medida por vigente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "alcaldia_miguel-hidalgo",
-        "url": "/assets/alcaldias/miguel-hidalgo.jpg",
-        "category": "CDMX",
-        "borough": "Miguel Hidalgo",
-        "topic": "Bosque de Chapultepec, alcaldía Miguel Hidalgo",
-        "author": "ProtoplasmaKid",
-        "license": "CC0",
-        "source": "https://commons.wikimedia.org/wiki/File:Audiorama_de_Chapultepec_1.jpg"
-      }
-    },
-    {
-      "title": "Bloqueo en Periférico Norte HOY: rutas alternas por protesta en Naucalpan",
-      "description": "La información publicada por Eje Central trata un asunto registrado en la sección de Movilidad del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPMmpiV0FBYl9XejJ5QTN2YkVzbXNhSTE4Z3Y2U3h5OGEyOVZ3cl9SeC1RWF81QjdxN0F0YW95T2J2NFRjYnRvdE1fS1JOMXkwZUQ5VFVfWllEV3VUcEZaZUx5UkJLaC1keGJvOHpucFNibHdIc0hhNVRCQ3VZMlRtUGdlMFJnR3VGUDF3WUhwYy1Nb0RITWRlbGZPTDIzenZlNkRINXZTeVEydlliMEZ6MFVwQVI?oc=5",
-      "source": "Eje Central",
-      "date": "2026-10-14",
-      "published_at": "2026-10-14T17:22:31Z",
-      "category": "Movilidad",
-      "borough": "",
-      "location": "Ubicación no indicada por el titular",
-      "local_url": "/noticias/?id=ee8a63e7ab3c41ecd3ab&mes=2026-10",
-      "brief": {
-        "lead": "La información publicada por Eje Central trata un asunto registrado en la sección de Movilidad del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-        "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
-        "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "archivo_movilidad_001",
-        "url": "/assets/fotos/archivo_movilidad_001.jpg",
-        "category": "Movilidad",
-        "borough": "",
-        "topic": "Articulado MASA U-18 RTP -Fénix D- -Metrobús- 05",
-        "author": "SerialKiller 666 RTP",
-        "license": "CC BY-SA 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Articulado_MASA_U-18_RTP_-F%C3%A9nix_D-_-Metrob%C3%BAs-_05.jpg"
-      }
-    },
-    {
-      "title": "Clara Brugada presenta Segundo Informe gobierno ante el Congreso de CdMx",
-      "description": "En su información, Telediario aborda una decisión, declaración o debate relacionado con las instituciones de la ciudad. Conviene distinguir la intención anunciada de las resoluciones que hayan sido aprobadas y publicado oficialmente.",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPczlXeTZrNW02eXpYc2daTWlJTkc2czBNVVo1d2hlOEtJUjN3bnFLdGM0NWhBSTRlODc5d211aW9yNFhvQVBIWHJMZ1RZOVdDdC1hRV9iY1FIWXVxTkhBYU1MZlctX1JiWTFYM2xSWndrRGFIblV0WEpkcUNkd3pNdlZyTmwwZDhnbWszemlwN2hlRHhIbXRBNVF5ZTdxcUpNUE1n0gGjAUFVX3lxTE0tRF92UHRtX2F1dXhCWVdYQlBsS1VsT21qUU9ZTXllN0RmQW5BRGY2LTYtQTJ3eTh4SFI4TTc2TlBFUzJKa19HWVNyanRBd2dfeDQzTWNuOUhTZksxY3dJaGFtdl9CbWUwWlQwRUVIbkVhcGotekYwVTNtQmwzdmhwbktZaEVHNzRJT3hJWHpiVmMtd1YwdUhPd004MDRoNlpDSVE?oc=5",
-      "source": "Telediario",
-      "date": "2026-10-14",
-      "published_at": "2026-10-14T17:12:00Z",
-      "category": "Gobierno",
-      "borough": "",
-      "location": "Ciudad de México (sin alcaldía identificada)",
-      "local_url": "/noticias/?id=0ebb327715f67bfe7ed3&mes=2026-10",
-      "brief": {
-        "lead": "En su información, Telediario aborda una decisión, declaración o debate relacionado con las instituciones de la ciudad. Conviene distinguir la intención anunciada de las resoluciones que hayan sido aprobadas y publicado oficialmente.",
-        "context": "Las decisiones administrativas pueden influir en servicios, trámites y derechos; conviene conocer sus condiciones y a quiénes afectan.",
-        "pending": "Es indispensable consultar los acuerdos, comunicados o documentos oficiales antes de dar una medida por vigente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "alcaldia_milpa-alta",
-        "url": "/assets/alcaldias/milpa-alta.jpg",
-        "category": "CDMX",
-        "borough": "Milpa Alta",
-        "topic": "Villa Milpa Alta y su entorno rural",
-        "author": "Comisión Mexicana de Filmaciones from México D. F., México",
-        "license": "CC BY-SA 2.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Villa_Milpa_Alta%2C_Ciudad_de_M%C3%A9xico_%2832886264042%29.jpg"
-      }
-    },
-    {
-      "title": "Gobierno de CDMX descarta alza al predial y busca diálogo por plan metropolitano",
-      "description": "En su información, Grupo en Concreto aborda una decisión, declaración o debate relacionado con las instituciones de la ciudad. Conviene distinguir la intención anunciada de las resoluciones que hayan sido aprobadas y publicado oficialmente.",
-      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPRXdxdjRMLXZVenAwMEU2TFY5a0VpQlhicVNoc0oyYXZqUl90RnVZYUlNT1dtTUlhVVFHM2h1RXRoWWV1cHFpNXRSQ1FBdFA3eF9WQnBIR2N3VjE2M1BOV0tsVzNqc2hnZEV1Mm92UWc5aFJlZFFFRnhLR242QWhPSkhEUENyMC1uVVU2OUMzVzVJMy1mTUxGMG5VS08zWktVemlFN05hd3Z1andDMlJfVnN1UVktSjFYZHhLMTNkSzAzSjRzVWNHbEFzSQ?oc=5",
-      "source": "Grupo en Concreto",
-      "date": "2026-10-14",
-      "published_at": "2026-10-14T17:02:52Z",
-      "category": "Gobierno",
-      "borough": "",
-      "location": "Ciudad de México (sin alcaldía identificada)",
-      "local_url": "/noticias/?id=c5ce47ce66fdb2432d8c&mes=2026-10",
-      "brief": {
-        "lead": "En su información, Grupo en Concreto aborda una decisión, declaración o debate relacionado con las instituciones de la ciudad. Conviene distinguir la intención anunciada de las resoluciones que hayan sido aprobadas y publicado oficialmente.",
-        "context": "Las decisiones administrativas pueden influir en servicios, trámites y derechos; conviene conocer sus condiciones y a quiénes afectan.",
-        "pending": "Es indispensable consultar los acuerdos, comunicados o documentos oficiales antes de dar una medida por vigente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "alcaldia_tlalpan",
-        "url": "/assets/alcaldias/tlalpan.jpg",
-        "category": "CDMX",
-        "borough": "Tlalpan",
-        "topic": "Quiosco de la plaza principal de Tlalpan",
-        "author": "farid estrada",
-        "license": "CC BY-SA 3.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Kiosko_plaza_de_la_constitucion%2C_tlapan.JPG"
-      }
-    },
-    {
-      "title": "Feria del Chilacayote y Calabaza: ¿Cuándo y dónde será este evento?",
-      "description": "La información publicada por Gastrolab trata un asunto registrado en la sección de Cultura del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNQVB3TU0wT196UTFkVmp2VnFJS0czVXRzM2J3M2s5YW85Unp3VWRVZ3pjWFhIbHduQ2dwWVdPVFYwU25KeTZvSEZacnZpZjNfS195bWpRZ1NwbDBOdzQtelBLVFRESDBTUkJjOFZDdVNkVG5GMWdrdllxSkx1M21ZdV9rQWcxeTRidm1SdlR2SnlNODFFd3hJdWo3dkFPNjhiZzZQMi1DRDZ1QzhzbXcxRlN0cmh6MkphT1NXZjlfZUMzTU5JNGc?oc=5",
-      "source": "Gastrolab",
-      "date": "2026-10-14",
-      "published_at": "2026-10-14T17:02:19Z",
-      "category": "Cultura",
-      "borough": "",
-      "location": "Ubicación no indicada por el titular",
-      "local_url": "/noticias/?id=cfc83e7f74faccb6450b&mes=2026-10",
-      "brief": {
-        "lead": "La información publicada por Gastrolab trata un asunto registrado en la sección de Cultura del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-        "context": "La actividad cultural abre oportunidades de encuentro, aprendizaje y disfrute para habitantes y visitantes.",
-        "pending": "Los accesos, boletos, sedes, cupos y horarios deben consultarse con la institución organizadora. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "archivo_cultura_003",
-        "url": "/assets/fotos/archivo_cultura_003.jpg",
-        "category": "Cultura",
-        "borough": "",
-        "topic": "Mexico City Palacio de bellas artes",
-        "author": "Jeses",
-        "license": "CC BY-SA 2.5",
-        "source": "https://commons.wikimedia.org/wiki/File:Mexico_City_Palacio_de_bellas_artes.jpg"
-      }
-    },
-    {
-      "title": "Desfile del Día de Muertos 2026 en CDMX: ¡Fecha, horario y ruta!",
-      "description": "La información publicada por Dónde Ir trata un asunto registrado en la sección de Cultura del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOUTdoa0w2WFJxOGlMNDBQX0tHMDhTdEFVejg4MTRFWHo3WjJwdkhFc0JGdDFVdFZkeW5kV1JQeDU2bkFubzNzaklhS2tKNndYNWI0c2hJWENiblBFbVNVdzN0SFFrallqel8wUEFVN0tRX2tJOGtKVXdRV2dYTTBaWGZFRGZqV0hXdzRnU3NjRzZHbUdneEVhX2prTUd5Q3U3bnp1Z3VyMVN4Z0lKSVJHVXY2Zw?oc=5",
-      "source": "Dónde Ir",
-      "date": "2026-10-14",
-      "published_at": "2026-10-14T17:01:45Z",
-      "category": "Cultura",
-      "borough": "",
-      "location": "Ciudad de México (sin alcaldía identificada)",
-      "local_url": "/noticias/?id=22a1c81b627ace803a47&mes=2026-10",
-      "brief": {
-        "lead": "La información publicada por Dónde Ir trata un asunto registrado en la sección de Cultura del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-        "context": "La actividad cultural abre oportunidades de encuentro, aprendizaje y disfrute para habitantes y visitantes.",
-        "pending": "Los accesos, boletos, sedes, cupos y horarios deben consultarse con la institución organizadora. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "archivo_cultura_004",
-        "url": "/assets/fotos/archivo_cultura_004.jpg",
-        "category": "Cultura",
-        "borough": "",
-        "topic": "Palacio de Bellas Artes (nocturno), Ciudad de México.",
-        "author": "MaríaJoséFelgueresPlanells",
-        "license": "CC BY-SA 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Palacio_de_Bellas_Artes_%28nocturno%29%2C_Ciudad_de_M%C3%A9xico..jpg"
-      }
-    },
-    {
-      "title": "¿Continuarán las protestas de trabajadores del IMSS? Calles afectadas por marchas y bloqueos este miércoles",
-      "description": "La cobertura de TV Azteca se centra en movilizaciones de trabajadores del IMSS y en su posible o reportada repercusión sobre calles de Ciudad de México. Los trayectos y horarios deben revisarse en avisos recientes, pues una convocatoria no equivale a cierres confirmados durante todo el día.",
-      "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxQN012eElyWmhJdDUzSjg1TmFTakU4enNFWXV4NWJzOTF0RnBMU1ZvWms4dWJhNnlGaEhpWGhPbFFQeklJQ0NUVnljMVk1RXduUWFhcjdub21LUzdqdEhaclpncnYyTnd1cU1HVlFrS2tvX3ZPWG5XcEstMy1faG41azhJcFRGTzNjdzV0ZWpnQTU4ZFpPV2ZYaktONnJlYlB2cV9RS05oTVJEVUc0d2lnWUVxLWIwdmI1OGZ4cDhHbWNwa1JKVGwzT0JvT0VLeDN6emhMQ3g4SWJETm9la0tvY1BsdTJGSVh5ZEJwbWlVVzV4V05CVjAzeVl6bFVlczRfV1HSAY8CQVVfeXFMUGdzWFhPeklzNW5ZcWprcHh3MmhiaDlHZjQzTWlvQVh6WnNBUHlNd1N0ZG5TSW5GbU1GT0tBUzBvNDJpNE1TdzJWOTdSM1dNVkRnRVVUN3lFRHdBN2FuS3oxempoaXVMdi1TbFc3YzNfdWFzMjNVMlVoVXg1UFU3bkZwa05qLVlFS2tLelhSSWRhSWlRaXpqSWVpcUlydDZobTNpR0p2T2JiQjBxQVR3ZFJMNzhaZHVLc2JQajItOTFwU214NEpoejdXa1o0OHRLNVRuZzJ4S2E3bURmQmgxSHJuTFBETUtyWk9IWjlneGplUXRYLVZBMFJ6WmJKNE9sd3ZKRjVCM1lPRV80XzJOcw?oc=5",
-      "source": "TV Azteca",
-      "date": "2026-10-14",
-      "published_at": "2026-10-14T16:58:47Z",
-      "category": "Movilidad",
-      "borough": "",
-      "location": "Ubicación no indicada por el titular",
-      "local_url": "/noticias/?id=702240c48e7aaaec13bb&mes=2026-10",
-      "brief": {
-        "lead": "La cobertura de TV Azteca se centra en movilizaciones de trabajadores del IMSS y en su posible o reportada repercusión sobre calles de Ciudad de México. Los trayectos y horarios deben revisarse en avisos recientes, pues una convocatoria no equivale a cierres confirmados durante todo el día.",
-        "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
-        "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "archivo_movilidad_002",
-        "url": "/assets/fotos/archivo_movilidad_002.jpg",
-        "category": "Movilidad",
-        "borough": "",
-        "topic": "Metrobús Línea 4 Centro Histórico",
-        "author": "ProtoplasmaKid",
-        "license": "CC BY-SA 3.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Metrob%C3%BAs_L%C3%ADnea_4_Centro_Hist%C3%B3rico.jpg"
-      }
-    },
-    {
-      "title": "¿Quién es \"El Dámaso\"?; el presunto líder del cártel de Tláhuac fue detenido por la FGJ CDMX",
-      "description": "La información publicada por El Universal trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNTkwxT1ZleTlUdzJ2czdjUFB6VGc5TFNiWTFOOU1fVzFobmpCTlRLQU0wZXhGOFFlQWpKckZJX2ZaVlBZX0wzaE9mUUxIQWpuRndhOWh4Y1J2S2hsb3ROT1owNFZSTzE4c25tNFVMMGtEWlpvQVN0eUlIbUdNckI0SFdYMzRRX05pQU5XbWJZQTRISHVnQ194S1VFQVRJdUpfWFh3OEVJTC1xdS1ONFh6TEJmWWtqQk1GLTRmQjdBUGN2UGlWX2NyLQ?oc=5",
-      "source": "El Universal",
-      "date": "2026-10-14",
-      "published_at": "2026-10-14T16:52:26Z",
-      "category": "CDMX",
-      "borough": "Tláhuac",
-      "location": "Tláhuac (mencionada en el titular)",
-      "local_url": "/noticias/?id=da9328a4c7676a0c8d42&mes=2026-10",
-      "brief": {
-        "lead": "La información publicada por El Universal trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-        "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-        "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "alcaldia_venustiano-carranza",
-        "url": "/assets/alcaldias/venustiano-carranza.jpg",
-        "category": "CDMX",
-        "borough": "Venustiano Carranza",
-        "topic": "Palacio de Lecumberri, hoy Archivo General de la Nación",
-        "author": "Raymundo Perera",
-        "license": "CC BY-SA 3.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Palacio_de_Lecumberri.jpg"
-      }
-    },
-    {
-      "title": "Carpas, lonas y vallas: así amaneció el Centro por el informe de Brugada",
-      "description": "La información publicada por Maya Comunicación trata un asunto registrado en la sección de Seguridad del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNRUdPaHVtYnZkWTFaS3JuN3VBRUZ3ZkpCNEtfTU5mNElDWWJzMExnTWJaeldkbGdEb0pEZDUxTDBzOVdVSEVldlhWYUxvNmgzU2ZnMGxqeUpUZmp1bXpBTTNWVjY4WktFUVdhbk0wTFAtNmVxaVNDUG9nb1BtQThsUi1IQVREWHo1ZElQTHY0blIwd3dMeUZVcU9mems1OGVZVDJKaHN3?oc=5",
-      "source": "Maya Comunicación",
-      "date": "2026-10-14",
-      "published_at": "2026-10-14T16:49:05Z",
-      "category": "Seguridad",
-      "borough": "",
-      "location": "Ubicación no indicada por el titular",
-      "local_url": "/noticias/?id=d287ef6ffa172b430efe&mes=2026-10",
-      "brief": {
-        "lead": "La información publicada por Maya Comunicación trata un asunto registrado en la sección de Seguridad del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-        "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
-        "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "archivo_seguridad_010",
-        "url": "/assets/fotos/archivo_seguridad_010.jpg",
-        "category": "Seguridad",
-        "borough": "",
-        "topic": "Entrega Claudia Sheinbaum 113 nuevas patrullas en Gustavo A Madero 04",
-        "author": "Gobierno de la Ciudad de México",
-        "license": "CC BY 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Entrega_Claudia_Sheinbaum_113_nuevas_patrullas_en_Gustavo_A_Madero_04.jpg"
-      }
-    },
-    {
-      "title": "Caminata al Mictlán: el recorrido nocturno que llevará el Día de Muertos a la calzada flotante de Tlalpan, gratis",
-      "description": "La información publicada por Infobae trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-      "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOOWFQdFEtanJwMEVXSVZqWjdpZWpiZDlhSWtpZ0c3VXNhdDBDNUs5Tm1Vb1lsWjNsNF9YRHkzVENYblJCdm9tUjVKSjNuYVdCaEZtblppZnpGOVVZZnc4X04tc1hJV2d4V0RUaVN0VW0tcXFIZC1BQVI1c3IwMGt2QlpOVGFXYVFXSDZPMXhZeUVLY3EwaHBWRE53MGNwZzRwd1h0ZFBUVVlWMXN4cEZ6MnBuVzFlaGVlMmcxaDhCeWpweFg1cUhWNXdCSVl0U0dTcmtWVnRrSlh0bmF2b2FnN2YweGtQVFdhclHSAYQCQVVfeXFMTlp6cTRUWmY3YlotNDNaNG9VTUdvTGRYWHUzd0tFQ29hd0l1MHBVUU1pS2x0TmNHWWEtYzY5Umk3YVBHVklPTzdEUEdSbnJvdW9PbnpCNmN2Vld3eWlXemFOVFdyVGRwVGZoS2dMc2lWQXdaS0UwdF9ZXzFxUk1oQ1JzT3NpbW1OckVwcEhDcjZpeUxxNXpBS1hORHYwUVJnVWYtOWlrbno2NUZXOTZxTE1yWHUtR0JlbGpReU1USmE1am5ab0o4UWxxMGZDOWs1dmtSeXd5VXFxLU9HMU12WXZldkVjT2dWRVphbXBOcXNXNS15bGJOYU5yYWswa2xHdHE4c20?oc=5",
-      "source": "Infobae",
-      "date": "2026-10-14",
-      "published_at": "2026-10-14T16:37:00Z",
-      "category": "CDMX",
-      "borough": "Tlalpan",
-      "location": "Tlalpan (mencionada en el titular)",
-      "local_url": "/noticias/?id=a58a946c7a23ddad4564&mes=2026-10",
-      "brief": {
-        "lead": "La información publicada por Infobae trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-        "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-        "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "alcaldia_xochimilco",
-        "url": "/assets/alcaldias/xochimilco.jpg",
-        "category": "CDMX",
-        "borough": "Xochimilco",
-        "topic": "Trajineras y canales de Xochimilco",
-        "author": "Xbauerx",
-        "license": "CC BY-SA 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Trajineras_de_Xochimilco.jpg"
       }
     }
   ]
