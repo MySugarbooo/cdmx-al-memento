@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-14 14:47 UTC",
+  "updated": "2026-10-14 15:52 UTC",
   "boroughs": [
     {
       "name": "La Magdalena Contreras",
@@ -2761,8 +2761,36 @@
     },
     {
       "name": "Iztacalco",
-      "count": 25,
+      "count": 26,
       "articles": [
+        {
+          "title": "Lo llevaron en un carrito de súper: Abandonan el cuerpo de un hombre junto a un árbol en calles de Iztacalco;",
+          "description": "La información publicada por TV Azteca trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNODN5Nm55a0JOanpzWFdyT1NROWZldjdjZE5RVDFpV1Uza01FSlUxcjY1cmRxREl5ZG9lVGUwbWZjLTFFSFNHUTdzSmlXNDVreVBGdUJuWUktOWw5SzZzZ2Y1WHh6ZXlybkJrSUdjeHVxMUZJRTlyWmg4VHVoUkExaW1QMUROdzBmTTBEZHgwRjVIOVBLVHpJM0lhaHhsaVh3WHd5Y21tTUNadXhmX0E3bmdtUW8zUdIBwwFBVV95cUxPVkJoMDBZaU5pNEZISGVvYVk0T1UzLVo3NnBUb0VhYmNESGFMajBKZjNZVkxpbEpGRjdHNTJ0TGhwN2NVei1BYTRSR3dwMGoyNXUzZlNpX3A4QnZrbnk3T0hydnExczNCQXVMUkpHVUJmc256alB4LXpZQ3NvQU5zMkU2Q29zTDFVaEZHaUJYcDAwOE9WbFNOazZKbUo2eHVCQVRhRlJ4cWdPOGs1cFhFTTRzcU10b0prRkF6ZjU0MnRuS00?oc=5",
+          "source": "TV Azteca",
+          "date": "2026-10-14",
+          "published_at": "2026-10-14T15:18:56Z",
+          "category": "CDMX",
+          "borough": "Iztacalco",
+          "location": "Iztacalco (mencionada en el titular)",
+          "local_url": "/noticias/?id=ca02178866472556c2fe&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por TV Azteca trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_iztacalco",
+            "url": "/assets/alcaldias/iztacalco.jpg",
+            "category": "CDMX",
+            "borough": "Iztacalco",
+            "topic": "Iglesia de San Matías en el antiguo pueblo de Iztacalco",
+            "author": "AlejandroLinaresGarcia",
+            "license": "CC BY-SA 3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:SanMatiasChurchIztacalco02.jpg"
+          }
+        },
         {
           "title": "Hallan a una persona sin vida en Iztacalco y detienen a cuatro hombres",
           "description": "Una nota de El Sol de México comunica un caso relacionado con una detención o una presunta conducta delictiva en Iztacalco. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
@@ -3250,24 +3278,6 @@
           "borough": "Iztacalco",
           "location": "Iztacalco (mencionada en el titular)",
           "local_url": "/noticias/?id=32485863e37c1a38537a&mes=2026-10",
-          "brief": {
-            "lead": "De acuerdo con un titular publicado por N+, el tema de actualidad está relacionado con un asunto de interés público relacionado con la Ciudad de México. La atribución corresponde al medio citado, no a una comprobación independiente de nuestra redacción. El encabezado menciona Iztacalco; esa referencia no demuestra por sí misma dónde ocurrieron todos los hechos.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
-        },
-        {
-          "title": "Desde el Aire: Repliegan Manifestación del IMSS en Iztacalco, CDMX",
-          "description": "De acuerdo con un titular publicado por N+, el tema de actualidad está relacionado con un asunto de interés público relacionado con la Ciudad de México. La atribución corresponde al medio citado, no a una comprobación independiente de nuestra redacción. El encabezado menciona Iztacalco; esa referencia no demuestra por sí misma dónde ocurrieron todos los hechos.",
-          "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNVEtNZmhweXRoWkY0alZlUlRGNEFHZ0FETUdLTUd3R0pDZWJrallfMWRYWlFYYTRBQUZpZmxrc1RHeG1wQ1Qzd3FjRXpsWHZUUmVpdVA1NmhhNGd1V2FKdkdvb1RDS21pUEhLakl0TF9aSDY1c3lSSXVMd0pYekJiclhncTEzX0hZdEJieXJrdWxRSGg2eHliUWpEUHZ4YW1TS1lwN1lMbEc4X2RsbnVnSVVxVFN2YlkzTDFCc0ZYTzVsYm9UZXNyWkpIeWdhRkhkUHBhMg?oc=5",
-          "source": "N+",
-          "date": "2026-10-09",
-          "published_at": "2026-10-09T22:59:19Z",
-          "category": "CDMX",
-          "borough": "Iztacalco",
-          "location": "Iztacalco (mencionada en el titular)",
-          "local_url": "/noticias/?id=895b44f16be1a7776ef5&mes=2026-10",
           "brief": {
             "lead": "De acuerdo con un titular publicado por N+, el tema de actualidad está relacionado con un asunto de interés público relacionado con la Ciudad de México. La atribución corresponde al medio citado, no a una comprobación independiente de nuestra redacción. El encabezado menciona Iztacalco; esa referencia no demuestra por sí misma dónde ocurrieron todos los hechos.",
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
@@ -4677,8 +4687,120 @@
     },
     {
       "name": "Tláhuac",
-      "count": 12,
+      "count": 16,
       "articles": [
+        {
+          "title": "Capturan 'El Dámaso', líder del Cártel de Tláhuac en CDMX",
+          "description": "La información publicada por INFO7 trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNSGJsN0wta2F3T3N3M2xrQXB3eEVjR0FHQ0hRMkdXS2JwazVMaGppbWhPbUFMMnRWRFd1c0hxNjVCNVlrZDhzZ0VQcmdaZy14cTRJUERSOVhpckNBNlItTkN4bXBxMWkwVmdRQjcxampxU3R6NUdqNm1iZTBDZDZMaVQ3Tm1HWDdWSnlRV3pKc2s4NENDTnc?oc=5",
+          "source": "INFO7",
+          "date": "2026-10-14",
+          "published_at": "2026-10-14T15:36:00Z",
+          "category": "CDMX",
+          "borough": "Tláhuac",
+          "location": "Tláhuac (mencionada en el titular)",
+          "local_url": "/noticias/?id=60fcf929055fac3a22b8&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por INFO7 trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_tlahuac",
+            "url": "/assets/alcaldias/tlahuac.jpg",
+            "category": "CDMX",
+            "borough": "Tláhuac",
+            "topic": "Plaza central de San Pedro Tláhuac",
+            "author": "Yavidaxiu",
+            "license": "CC BY 3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Tl%C3%A1huac-Plaza_central.JPG"
+          }
+        },
+        {
+          "title": "Cae en CDMX \"El Dámaso\", identificado como segundo al mando del Cártel de Tláhuac",
+          "description": "La información publicada por LatinUS trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPeVB4V0p5aE1VbkV2RnQyalJKUUZzeXBLZzFTbkhKd0VpLWw5dlNjNFlEQm1FQjJOZVFRUkQ1R3E4Vy1SOFdhUE5IZXVjRjA4bmxGQXpVVGtfcUlHR1pBenZDZW9kdVItRkFxM0pJbG9sc3EyREtCYzJCcXZxanU3b1hYd3Q2c2Y2VzEtMjlnUjBabVNLSnpkRHR4MVRKQldMbWNoZDRWb0RaX2ZNNncwNUpneF81LTBadzI0RVJYRHlhb2pvSEHSAcYBQVVfeXFMT3lQeFdKeWhNVW5FdkZ0MmpSSlFGc3lwS2cxU25ISndFaS1sOXZTYzRZREJtRUIyTmVRUVJENUdxOFctUjhXYVBOSGV1Y0YwOG5sRkF6VVRrX3FJR0daQXp2Q2VvZHVSLUZBcTNKSWxvbHNxMkRLQmMyQnF2cWp1N29YWHd0NnNmNlcxLTI5Z1IwWm1TS0p6ZER0eDFUSkJXTG1jaGQ0Vm9EWl9mTTZ3MDVKZ3hfNS0wWncyNEVSWER5YW9qb0hB?oc=5",
+          "source": "LatinUS",
+          "date": "2026-10-14",
+          "published_at": "2026-10-14T15:28:00Z",
+          "category": "CDMX",
+          "borough": "Tláhuac",
+          "location": "Tláhuac (mencionada en el titular)",
+          "local_url": "/noticias/?id=baaa40c54ea75e36fda7&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por LatinUS trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "archivo_cdmx_003",
+            "url": "/assets/fotos/archivo_cdmx_003.jpg",
+            "category": "CDMX",
+            "borough": "",
+            "topic": "D.F. - panoramio (7)",
+            "author": "eurimaco",
+            "license": "CC BY-SA 3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:D.F._-_panoramio_%287%29.jpg"
+          }
+        },
+        {
+          "title": "Detiene Fiscalía Capitalina a “El Dámaso”, identificado como uno de los presuntos líderes del Cártel de Tláhuac",
+          "description": "Una nota de 24-horas comunica un caso relacionado con una detención o una presunta conducta delictiva en Tláhuac. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
+          "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOOHM0UUZ6YzJvcWt1TUdmMHVOZ1J3SzFDWEtJM0tpekl1NzA0cUhZMThTUmFiQk14QTV3TGMwOHBDRGxfUjBZZ2JMdVhiU0ZiTUlIS2dWXzRnalg2bGw4MlNUTUNKNG9Rbm5KVUlEQS1IR0dTNGxvZ3N0bURxb1loWWJQRzgtSk5fbDF6Yld2Y1NreGJfajViUTNXT3VWM09Gd2J2WEFCZWs5VjhaMjNmS1NyaDZBRDdsSUE0cEpVcjF1cDNJVW1fajdfTGQxN3M?oc=5",
+          "source": "24-horas",
+          "date": "2026-10-14",
+          "published_at": "2026-10-14T15:10:07Z",
+          "category": "CDMX",
+          "borough": "Tláhuac",
+          "location": "Tláhuac (mencionada en el titular)",
+          "local_url": "/noticias/?id=9ac1974e296797a44f47&mes=2026-10",
+          "brief": {
+            "lead": "Una nota de 24-horas comunica un caso relacionado con una detención o una presunta conducta delictiva en Tláhuac. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "archivo_cdmx_006",
+            "url": "/assets/fotos/archivo_cdmx_006.jpg",
+            "category": "CDMX",
+            "borough": "",
+            "topic": "Catedral Ii (172219027)",
+            "author": "Waender Alonso Bello",
+            "license": "CC BY 3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Catedral_Ii_%28172219027%29.jpeg"
+          }
+        },
+        {
+          "title": "Cae Feliciano 'N', alias 'El Dámaso', líder del Cártel de Tláhuac",
+          "description": "La información publicada por Telediario trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPTnNReEFFV1lyWi01QnlqWnpiak1TY2FKNFZFMXdmQ25MSHc0QmZFeEg1N0hxc2xSaVFMMXc3Y3dzcUNxNmt1MEJ6QWs4UVpxbXdDNDNQc0VGQTlQR0dsRkZwb1RLM2NIc0Q3LXhBajJuclN0N3V2WjBObHNJcmtueG54YkVmUy1CSzd2Z0lqS3E2bDTSAZMBQVVfeXFMTTlyS0JFN3RacDNJWUFNUHEyNkxwem9BOTIxV1RDV21VNk91bUJoMFRONS1LR1ZBdFN5WlM1LTU2alQzWW9XM1U5TVhrUV9yb1d6VlY1TGVJRndpVDg5ODRnM095SU9oOGtUOE1jLXJvNWdvUnpvZ3NGSFZUdmZ6aFhEd3habl9tM1JsTnZPOENVTmlR?oc=5",
+          "source": "Telediario",
+          "date": "2026-10-14",
+          "published_at": "2026-10-14T14:50:00Z",
+          "category": "CDMX",
+          "borough": "Tláhuac",
+          "location": "Tláhuac (mencionada en el titular)",
+          "local_url": "/noticias/?id=2e1b7652c60a2729a202&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por Telediario trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "archivo_cdmx_013",
+            "url": "/assets/fotos/archivo_cdmx_013.jpg",
+            "category": "CDMX",
+            "borough": "",
+            "topic": "D.F. - panoramio (9)",
+            "author": "eurimaco",
+            "license": "CC BY-SA 3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:D.F._-_panoramio_%289%29.jpg"
+          }
+        },
         {
           "title": "Cae 'El Dámaso', uno de los líderes del Cártel de Tláhuac en CDMX",
           "description": "La información publicada por Excélsior trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -4979,8 +5101,36 @@
     },
     {
       "name": "Tlalpan",
-      "count": 44,
+      "count": 45,
       "articles": [
+        {
+          "title": "Caminata al Mictlán: el recorrido nocturno que llevará el Día de Muertos a la calzada flotante de Tlalpan, gratis",
+          "description": "La información publicada por Infobae trata un asunto registrado en la sección de Gobierno del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOOWFQdFEtanJwMEVXSVZqWjdpZWpiZDlhSWtpZ0c3VXNhdDBDNUs5Tm1Vb1lsWjNsNF9YRHkzVENYblJCdm9tUjVKSjNuYVdCaEZtblppZnpGOVVZZnc4X04tc1hJV2d4V0RUaVN0VW0tcXFIZC1BQVI1c3IwMGt2QlpOVGFXYVFXSDZPMXhZeUVLY3EwaHBWRE53MGNwZzRwd1h0ZFBUVVlWMXN4cEZ6MnBuVzFlaGVlMmcxaDhCeWpweFg1cUhWNXdCSVl0U0dTcmtWVnRrSlh0bmF2b2FnN2YweGtQVFdhclHSAYQCQVVfeXFMTlp6cTRUWmY3YlotNDNaNG9VTUdvTGRYWHUzd0tFQ29hd0l1MHBVUU1pS2x0TmNHWWEtYzY5Umk3YVBHVklPTzdEUEdSbnJvdW9PbnpCNmN2Vld3eWlXemFOVFdyVGRwVGZoS2dMc2lWQXdaS0UwdF9ZXzFxUk1oQ1JzT3NpbW1OckVwcEhDcjZpeUxxNXpBS1hORHYwUVJnVWYtOWlrbno2NUZXOTZxTE1yWHUtR0JlbGpReU1USmE1am5ab0o4UWxxMGZDOWs1dmtSeXd5VXFxLU9HMU12WXZldkVjT2dWRVphbXBOcXNXNS15bGJOYU5yYWswa2xHdHE4c20?oc=5",
+          "source": "Infobae",
+          "date": "2026-10-14",
+          "published_at": "2026-10-14T15:44:11Z",
+          "category": "Gobierno",
+          "borough": "Tlalpan",
+          "location": "Tlalpan (mencionada en el titular)",
+          "local_url": "/noticias/?id=a58a946c7a23ddad4564&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por Infobae trata un asunto registrado en la sección de Gobierno del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Las decisiones administrativas pueden influir en servicios, trámites y derechos; conviene conocer sus condiciones y a quiénes afectan.",
+            "pending": "Es indispensable consultar los acuerdos, comunicados o documentos oficiales antes de dar una medida por vigente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_tlalpan",
+            "url": "/assets/alcaldias/tlalpan.jpg",
+            "category": "CDMX",
+            "borough": "Tlalpan",
+            "topic": "Quiosco de la plaza principal de Tlalpan",
+            "author": "farid estrada",
+            "license": "CC BY-SA 3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Kiosko_plaza_de_la_constitucion%2C_tlapan.JPG"
+          }
+        },
         {
           "title": "Clima y pronóstico en Tlalpan: miércoles 14 de octubre con lluvia ligera",
           "description": "El pronóstico recogido por El Heraldo de México se refiere a lluvias ligeras en Tlalpan. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
@@ -5534,24 +5684,6 @@
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           }
-        },
-        {
-          "title": "Ley Seca en Tlalpan por fiestas patronales: Fechas y colonias afectadas",
-          "description": "De acuerdo con un titular publicado por El Sol de México, el tema de actualidad está relacionado con un asunto de interés público relacionado con la Ciudad de México. La atribución corresponde al medio citado, no a una comprobación independiente de nuestra redacción. El encabezado menciona Tlalpan; esa referencia no demuestra por sí misma dónde ocurrieron todos los hechos.",
-          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPTUVTTjRyS0M2dUJ2b2J4Y1BXYnBObmtQOF9yaWtDVUlOY0dhUXFNVGNxdm9pVU1fMVlNeWtOYjViLVZtUlZ0OXdVcnFuWkN1eV9JUWhrWHVfc2oyQjRvcXhseDFyY1lPVmxvMEJXVVpVWS1Tbmt4RTVTZGRRcTNWaGJTZUZzc255N0ZCNE84a2Zsa0JYS2UzcEIxZUdVX0VzLW1WbkxIcWxZNlgxLW5wZVFGb1JUM0d2ZF9ESnJRemItLTc4MW9R?oc=5",
-          "source": "El Sol de México",
-          "date": "2026-10-12",
-          "published_at": "2026-10-12T16:25:54Z",
-          "category": "CDMX",
-          "borough": "Tlalpan",
-          "location": "Tlalpan (mencionada en el titular)",
-          "local_url": "/noticias/?id=912a28da05a7b22786b8&mes=2026-10",
-          "brief": {
-            "lead": "De acuerdo con un titular publicado por El Sol de México, el tema de actualidad está relacionado con un asunto de interés público relacionado con la Ciudad de México. La atribución corresponde al medio citado, no a una comprobación independiente de nuestra redacción. El encabezado menciona Tlalpan; esa referencia no demuestra por sí misma dónde ocurrieron todos los hechos.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
         }
       ]
     },
@@ -5627,7 +5759,7 @@
     },
     {
       "name": "Xochimilco",
-      "count": 18,
+      "count": 19,
       "articles": [
         {
           "title": "Festival de pulque y ofrendas llega a Xochimilco por Día de Muertos: fechas, horarios y cómo llegar",
@@ -5742,6 +5874,24 @@
           "local_url": "/noticias/?id=8dd5cb3d4d01e034c163&mes=2026-10",
           "brief": {
             "lead": "De acuerdo con un titular publicado por La Silla Rota, el tema de actualidad está relacionado con un asunto de interés público relacionado con la Ciudad de México. La atribución corresponde al medio citado, no a una comprobación independiente de nuestra redacción. El encabezado menciona Xochimilco; esa referencia no demuestra por sí misma dónde ocurrieron todos los hechos.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          }
+        },
+        {
+          "title": "CdMx crea Hospital de Abejas en Xochimilco ante ley que prohíbe destruir enjambres urbanos",
+          "description": "La información publicada por Milenio trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOOEpZLTJRUk5TQXVWcDNGanlGbWZpSVhxM0hDaG90S3NDU1JRX1lEc2NKeUVEMHpLQ3kyazZkNFk5RTNKUl8tMmh0Z1dwOElmeERvYjJfMUhnTDFWRkR6SmJRYjRnMnNIQndaZHViV1pibTVGNjh3QUpnckRfbkdZaHhaekpsTlo4d2RFQjExZ0LSAZABQVVfeXFMTXJ0b0Y4UFBsNm1Zd2NHOFNYV0pFTXN5UG1FMEVHQjhIR24zMFRIdHc1a0ZmSzJXSm54MDQ3QTZUZkFUVkdkV3FubWdZRE9iMkFBbU1yTXhBanBHQ0p6ZDlYNnFOWThleV9yampPYkVtMlpudmZUSFA3UG9xZUFIbHc2VDRVTVVzQlIzUXozVXA5?oc=5",
+          "source": "Milenio",
+          "date": "2026-10-12",
+          "published_at": "2026-10-12T07:09:29Z",
+          "category": "CDMX",
+          "borough": "Xochimilco",
+          "location": "Xochimilco (mencionada en el titular)",
+          "local_url": "/noticias/?id=f4fe6816bd10ed84902a&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por Milenio trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
