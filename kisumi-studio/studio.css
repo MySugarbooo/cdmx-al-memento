@@ -6,3 +6,25 @@
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
 
 .demo-row{display:flex;justify-content:flex-start;margin:10px 0 3px}.demo-row button{border:1px solid #62538b;color:#dac8fa;border-radius:9px;background:#201e3d;font-size:11px;padding:9px 12px;font-weight:750}.demo-row button:hover{background:#413061;color:#fff}
+
+/* Protección de memoria, mensaje claro de compatibilidad y controles accesibles. */
+.ios-notice{margin:12px 0 16px;padding:13px 14px;border:1px solid #9972a6;background:#312442;border-radius:12px}
+.ios-notice strong{font-size:12px;color:#ffdfed}
+.ios-notice p{font-size:11px;color:#cbc4dc;line-height:1.65;margin:7px 0 12px}
+.ios-notice button{border:1px solid #9a77b3;border-radius:9px;background:#59416c;color:#fff;padding:10px 12px;font-size:11px;font-weight:750}
+.cancel-transcribe{border:1px solid #d77ca8;border-radius:9px;background:#41273b;color:#ffe1ee;width:100%;padding:11px;margin-top:10px;font-size:11px;font-weight:700}
+.primary-outline:disabled{opacity:.5}
+@media(max-width:640px){
+ .ai-card{padding:12px;gap:9px;margin-bottom:12px}
+ .ai-card p{font-size:10px;line-height:1.55}
+ .ai-card strong{font-size:11px}
+ .ai-mark{font-size:21px}
+ .lyrics-module .module-top{margin-bottom:13px}
+ .lyrics-module .module-top p{font-size:10px;line-height:1.45}
+ .lyrics-tabs{margin-bottom:12px}
+ .lyrics-tabs button{font-size:10px;padding:10px 5px}
+ .lyric-timing{margin-top:15px}
+ .lyric-lines{max-height:245px}
+ .sync-action button{min-height:43px;line-height:1.4}
+ .module-top{gap:11px}
+}
