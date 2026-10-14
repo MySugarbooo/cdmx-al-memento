@@ -3,10 +3,16 @@
  const $=id=>document.getElementById(id);
  const canvas=$('visualizer'),g=canvas.getContext('2d',{alpha:false});
  const audio=$('audio'),fileInput=$('audio-file'),drop=$('audio-drop');
+ const isCompact=window.matchMedia?.('(max-width:730px)').matches===true;
+ const targetFPS=isCompact?24:30;
+ if(isCompact){canvas.width=960;canvas.height=540;}
  const CW=canvas.width,CH=canvas.height,TAU=Math.PI*2;
+ $('export-resolution').textContent=CW+' × '+CH;
+ $('export-fps').textContent=String(targetFPS);
+ $('render-label').textContent=(isCompact?'MÓVIL':'HD')+' · 16:9';
  const state={style:'aurora',file:null,url:null,ctx:null,src:null,analyser:null,recDest:null,record:null,blobURL:null,lyrics:[],sync:false,syncIndex:0,exporting:false,intensity:.72,sensitivity:.65,
   bass:0,mid:0,treble:0,overall:0,freq:new Uint8Array(1024),timeData:new Uint8Array(2048)};
- const particles=Array.from({length:160},(_,i)=>({seed:i,x:((i*9176+13)%1009)/1009,y:((i*3079+23)%997)/997,
+ const particles=Array.from({length:isCompact?75:160},(_,i)=>({seed:i,x:((i*9176+13)%1009)/1009,y:((i*3079+23)%997)/997,
   z:.28+((i*73)%100)/100,s:.5+((i*31)%79)/28}));
  const palettes={
   aurora:['#f671df','#9975ff','#67eeec'],laser:['#ff4aa3','#a683ff','#68fff3'],
@@ -50,6 +56,7 @@
    status('audio-status','Selecciona un archivo de audio compatible.');return;
   }
   if(state.exporting){status('audio-status','Detén la grabación antes de cambiar de audio.');return;}
+  if(transcribing)stopTranscription('Se cambió la pista; se detuvo la transcripción anterior para evitar mezclar letras.');
   audio.pause();if(state.url)URL.revokeObjectURL(state.url);
   state.file=file;state.url=URL.createObjectURL(file);
   audio.src=state.url;audio.volume=Number($('volume').value);
@@ -283,6 +290,7 @@
   setTranscribing(false);
   if(message)status('ai-status',message);
  }
+ $('ios-manual-btn')?.addEventListener('click',()=>document.querySelector('[data-pane="write"]')?.click());
  $('cancel-transcribe')?.addEventListener('click',()=>{
   if(!transcribing)return;
   stopTranscription(lastSegments.length?
@@ -546,7 +554,8 @@
  let last=0;
  function frame(t){
   requestAnimationFrame(frame);
-  if(t-last<16&&!state.exporting)return;last=t;
+  if(document.hidden&&!state.exporting)return;
+  if(t-last<1000/targetFPS&&!state.exporting)return;last=t;
   energy();softBackground(t);
   if(state.style==='aurora')drawAurora(t);
   if(state.style==='laser')drawLaser(t);
@@ -571,12 +580,15 @@
   if(state.exporting)return;
   let visualStream,all,rec;
   try{
+   if(isCompact&&audio.duration>95){
+    throw Error('Para evitar cierres por memoria en el teléfono, exporta canciones de hasta 95 segundos. Para canciones largas utiliza una computadora.');
+   }
    await initSound();
    if(!state.recDest?.stream.getAudioTracks().length)throw Error('No se pudo crear una pista de audio.');
    audio.pause();audio.currentTime=0;updateTransport();
-   visualStream=canvas.captureStream(30);
+   visualStream=canvas.captureStream(targetFPS);
    all=new MediaStream([...visualStream.getVideoTracks(),...state.recDest.stream.getAudioTracks()]);
-   rec=new MediaRecorder(all,{mimeType:chosen,videoBitsPerSecond:6000000,audioBitsPerSecond:160000});
+   rec=new MediaRecorder(all,{mimeType:chosen,videoBitsPerSecond:isCompact?2300000:6000000,audioBitsPerSecond:128000});
    const chunks=[];
    rec.ondataavailable=e=>{if(e.data?.size)chunks.push(e.data)};
    rec.onerror=e=>status('export-status','Falló la grabación: '+(e.error?.message||'error de codificador'));
