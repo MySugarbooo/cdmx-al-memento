@@ -61,6 +61,38 @@
   $('export-btn').disabled=false;$('seek').disabled=false;
   if(state.lyrics.length)readLyrics(false);
  }
+ // Muestra musical de elaboración propia: sin archivo externo ni derechos ajenos.
+ function makeDemoWav(){
+  const sampleRate=22050,seconds=8,total=sampleRate*seconds;
+  const buffer=new ArrayBuffer(44+total*2),view=new DataView(buffer);
+  const str=(at,value)=>{for(let i=0;i<value.length;i++)view.setUint8(at+i,value.charCodeAt(i));};
+  str(0,'RIFF');view.setUint32(4,36+total*2,true);str(8,'WAVE');
+  str(12,'fmt ');view.setUint32(16,16,true);view.setUint16(20,1,true);
+  view.setUint16(22,1,true);view.setUint32(24,sampleRate,true);
+  view.setUint32(28,sampleRate*2,true);view.setUint16(32,2,true);view.setUint16(34,16,true);
+  str(36,'data');view.setUint32(40,total*2,true);
+  const notes=[220,261.63,329.63,293.66,392,329.63,261.63,246.94];
+  const beat=.5;
+  for(let i=0;i<total;i++){
+   const t=i/sampleRate,step=Math.floor(t/beat),frequency=notes[step%notes.length];
+   const b=t%beat,pluck=Math.exp(-b*3.5),kick=Math.sin(2*Math.PI*(65-28*b)*b)*Math.exp(-b*18);
+   const sh=t%(beat/2),noise=Math.sin(i*19.17)*Math.sin(i*7.42)*Math.exp(-sh*45);
+   const pads=Math.sin(2*Math.PI*110*t)*.1+Math.sin(2*Math.PI*164.81*t)*.07;
+   const synth=(Math.sin(2*Math.PI*frequency*t)*.22+Math.sin(2*Math.PI*frequency*2*t)*.065)*pluck;
+   const envelope=Math.min(1,t*4,(seconds-t)*3);
+   const sample=clamp((synth+pads+kick*.25+noise*.065)*Math.max(0,envelope),-.95,.95);
+   view.setInt16(44+i*2,Math.round(sample*32767),true);
+  }
+  return new File([buffer],'kisumi-demo-original.wav',{type:'audio/wav'});
+ }
+ $('demo-btn')?.addEventListener('click',()=>{
+  loadFile(makeDemoWav());
+  if(!$('lyrics-text').value.trim()){
+   $('lyrics-text').value='[00:00.30] KISUMI NEON STUDIO\\n[00:02.20] Las luces siguen tu ritmo\\n[00:04.30] Tu música, tu universo\\n[00:06.30] Crea tu video';
+   readLyrics(true);
+  }
+  status('audio-status','♫ Demo instrumental original de 8 segundos lista. Pulsa ▶ para escuchar y crear un video.');
+ });
  fileInput.addEventListener('change',()=>loadFile(fileInput.files?.[0]));
  ['dragenter','dragover'].forEach(name=>drop.addEventListener(name,event=>{event.preventDefault();drop.classList.add('is-over');}));
  ['dragleave','drop'].forEach(name=>drop.addEventListener(name,event=>{event.preventDefault();drop.classList.remove('is-over');}));
