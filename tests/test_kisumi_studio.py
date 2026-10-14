@@ -27,7 +27,7 @@ class StudioTests(unittest.TestCase):
         self.assertIn("1280",html)
         self.assertIn("720",html)
         self.assertIn("studio.css?v=5",html)
-        self.assertIn("studio.js?v=5",html)
+        self.assertIn("studio.js?v=6",html)
         self.assertIn("page-transitions.js?v=1",html)
         self.assertIn("@media(max-width:640px)",self.css)
         self.assertIn("prefers-reduced-motion",self.css)
@@ -85,6 +85,8 @@ class StudioTests(unittest.TestCase):
         self.assertIn("function speechSamples(",self.js)
         self.assertIn("setTimeout(",self.js)
         self.assertIn("targetFPS=isCompact?24:30",self.js)
+        self.assertIn("sessionStorage.setItem(DRAFT_KEY",self.js)
+        self.assertIn("sessionStorage.getItem(DRAFT_KEY)",self.js)
         self.assertIn("canvas.width=960;canvas.height=540",self.js)
 
 if __name__=="__main__":
