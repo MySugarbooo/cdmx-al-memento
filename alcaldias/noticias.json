@@ -1,10 +1,38 @@
 {
-  "updated": "2026-10-14 00:58 UTC",
+  "updated": "2026-10-14 01:42 UTC",
   "boroughs": [
     {
       "name": "La Magdalena Contreras",
-      "count": 21,
+      "count": 22,
       "articles": [
+        {
+          "title": "Roban $150 mil a conductor en alcaldía-Magdalena-Contreras, CdMx",
+          "description": "La información publicada por Milenio trata un asunto registrado en la sección de Seguridad del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPeU43azlKSmFlQmlxbFhXQ1hDTVBndVl0WEVYZ2J2YjdpU0ZZcWY0aFRyUUdHQUF3MFZPSGpOaFh1QVlfVnpYdlRmVDFITk1QemNKYmg5UXV2M1h2aDVLeGxyZkIxV3k0b01MTV95RnFNeGdnQnNmUVA5NjdCc1JYQkFlaDNSai1JUnNkdGpNNnREY28?oc=5",
+          "source": "Milenio",
+          "date": "2026-10-13",
+          "published_at": "2026-10-14T00:59:35Z",
+          "category": "Seguridad",
+          "borough": "La Magdalena Contreras",
+          "location": "La Magdalena Contreras (mencionada en el titular)",
+          "local_url": "/noticias/?id=a5d8e350943e7887d352&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por Milenio trata un asunto registrado en la sección de Seguridad del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_magdalena-contreras",
+            "url": "/assets/alcaldias/magdalena-contreras.jpg",
+            "category": "CDMX",
+            "borough": "La Magdalena Contreras",
+            "topic": "Río y bosque de Los Dinamos, La Magdalena Contreras",
+            "author": "Ananda xd",
+            "license": "CC BY-SA 4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Rio_de_los_Dinamos_en_CDMX.jpg"
+          }
+        },
         {
           "title": "Vecinos de la Magdalena Contreras cuestionan predial y propiedad privada en el plan de ordenamiento de CdMx",
           "description": "La información publicada por MILENIO trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -631,8 +659,36 @@
     },
     {
       "name": "Azcapotzalco",
-      "count": 19,
+      "count": 20,
       "articles": [
+        {
+          "title": "Azcapotzalco ofrece hasta 15 mil pesos por las mejores ofrendas del Día de Muertos: así puedes participar",
+          "description": "La información publicada por Maya Comunicación trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPbHpzZVl4WTF3Vlh5cWtSdFV1Ylp2VzBXS012a0dUWk9PTHJEaW5lRUtFZDhJU1lnYjlNemtxaGlTazhETDZRSEtmU1Zmb1ItSUZneV9mT0Q3T1dueFh6VE5aTzVlV2hjYjBtYWxnRFlxRUIybjN2dVB3LThyZzk1NFA3bDJUY05GOFFIWm52dXd0SER3ejlYVXpScjZpZHQ2X2NJOXNGTVM2aDhRNG1PM2MyNzRtU1RUVEpPUUZPbzNyZDR1QmMzSVp0dFV3QXBkOFlz?oc=5",
+          "source": "Maya Comunicación",
+          "date": "2026-10-13",
+          "published_at": "2026-10-14T00:58:38Z",
+          "category": "CDMX",
+          "borough": "Azcapotzalco",
+          "location": "Azcapotzalco (mencionada en el titular)",
+          "local_url": "/noticias/?id=d8bd6150d2f20a8baa59&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por Maya Comunicación trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_azcapotzalco",
+            "url": "/assets/alcaldias/azcapotzalco.jpg",
+            "category": "CDMX",
+            "borough": "Azcapotzalco",
+            "topic": "Parroquia de Santa Catarina, Azcapotzalco",
+            "author": "Ivan alcantara",
+            "license": "CC BY-SA 3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:PARROQUIA_DE_SANTA_CATARINA_%28AZCAPOTZALCO%29.jpg"
+          }
+        },
         {
           "title": "UAM Azcapotzalco alista Librofest Metropolitano 2026, para “Euforia Cultural”",
           "description": "La información publicada por La Crónica de Hoy trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -1359,8 +1415,92 @@
     },
     {
       "name": "Coyoacán",
-      "count": 11,
+      "count": 14,
       "articles": [
+        {
+          "title": "Coyoacán rehabilita Secundaria 229 en Pedregal de Carrasco; reporta cerca de 60 planteles atendidos",
+          "description": "La información publicada por Capital CDMX trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBUSFBSNHVXS01aaG5qSC1tNDFBRERScjhDR0d6elNRSzNaTkRueVJjVnpGcE1UVTRzd1FyLU16eTcwSEE4T0hDSGlzMGJmZVRQYnJWcUdLamNveG5ZYlZUUHhhSm1wc0p3b0pEa3FuaUFuTkFRUVRZWEl3?oc=5",
+          "source": "Capital CDMX",
+          "date": "2026-10-13",
+          "published_at": "2026-10-14T01:24:13Z",
+          "category": "CDMX",
+          "borough": "Coyoacán",
+          "location": "Coyoacán (mencionada en el titular)",
+          "local_url": "/noticias/?id=58bcae36e4f30d103823&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por Capital CDMX trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_coyoacan",
+            "url": "/assets/alcaldias/coyoacan.jpg",
+            "category": "CDMX",
+            "borough": "Coyoacán",
+            "topic": "Jardín Centenario de Coyoacán",
+            "author": "AlejandroLinaresGarcia",
+            "license": "CC BY-SA 4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:JardinCentenarioCoyoacan.JPG"
+          }
+        },
+        {
+          "title": "Giovani Gutiérrez entrega obras de rehabilitación en secundaria de Coyoacán",
+          "description": "La información publicada por sdpnoticias trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPQ3NVU21zeEN5TUZLUVNlZ2V6VEc5Wmg4VHJOblhMdDJsQWtOaWRGLUZXQjk2alRYYjlLOEg3Tm94RElGanNSVEptWGcwRlo5Z19oMXV0X3RXeVJabUpyYjNYdjNmWGgxa3JLN01hb09Xb3htQlUzMmNJcTVzTUxJaXhZdjI0dHJxX3BpTTZCVGhSRXNHdm9ZT1l0VlNVTk9SU2pOZVFZTkJFazBoRkt4cGd1cXh6NzRY?oc=5",
+          "source": "sdpnoticias",
+          "date": "2026-10-13",
+          "published_at": "2026-10-14T01:18:00Z",
+          "category": "CDMX",
+          "borough": "Coyoacán",
+          "location": "Coyoacán (mencionada en el titular)",
+          "local_url": "/noticias/?id=ffd72b776798a7bf3e73&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por sdpnoticias trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "archivo_cdmx_006",
+            "url": "/assets/fotos/archivo_cdmx_006.jpg",
+            "category": "CDMX",
+            "borough": "",
+            "topic": "Catedral Ii (172219027)",
+            "author": "Waender Alonso Bello",
+            "license": "CC BY 3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Catedral_Ii_%28172219027%29.jpeg"
+          }
+        },
+        {
+          "title": "Lleva Coyoacán la cultura a todos los rincones de la demarcación: Giovani Gutiérrez",
+          "description": "La información publicada por CDMX Magacín trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNeDZ5d2Z5c0pxeTA5YkFRcGhFcTNIYTR0TW5MbWNaUmd4SXhvRU8tZDVsMlVCR2FzNF9tYXRNMDg1MzVRaGNwcEx2RUFmNFRxemZEU2NaaC1qMUpTNF80OE5tRjNzeHRGUUxVQ0tWRnpBUzRQclVTNWlVYVBJTnlGLWtLVll6dDV2cGtGVDFOUlFxeWtLNFZGSE9YUXZHRzZmeXdz?oc=5",
+          "source": "CDMX Magacín",
+          "date": "2026-10-13",
+          "published_at": "2026-10-14T01:11:31Z",
+          "category": "CDMX",
+          "borough": "Coyoacán",
+          "location": "Coyoacán (mencionada en el titular)",
+          "local_url": "/noticias/?id=13030d696ec32e2d1730&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por CDMX Magacín trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "archivo_cdmx_013",
+            "url": "/assets/fotos/archivo_cdmx_013.jpg",
+            "category": "CDMX",
+            "borough": "",
+            "topic": "D.F. - panoramio (9)",
+            "author": "eurimaco",
+            "license": "CC BY-SA 3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:D.F._-_panoramio_%289%29.jpg"
+          }
+        },
         {
           "title": "Coyoacán tendrá Festival de Día de Muertos: talleres de calaveritas, venta de artesanía y más",
           "description": "La información publicada por Chilango trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -1697,8 +1837,36 @@
     },
     {
       "name": "Cuauhtémoc",
-      "count": 20,
+      "count": 21,
       "articles": [
+        {
+          "title": "Alcaldía Cuauhtémoc da de baja a tres funcionarios por conducta indebida",
+          "description": "La información publicada por CDMX Magacín trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNWGRkSzB6Y1V6WnBxVVRwbjkyRS1taUtHTFI4MW1TMF9Ja2pVMnhPODFwZmF0OXJKdVBBVGFxNzF2cUtTRFpHVU9lRGViRW00REpBcDhxSWc0bEZIUE1oeUQ3bU1Kc3FXZkNkQS01OGJmY2dzNmVYVmNDbExaSEZXWDRLU3RKcXJNTXc1SWZQaDE1azdqMGc?oc=5",
+          "source": "CDMX Magacín",
+          "date": "2026-10-13",
+          "published_at": "2026-10-14T01:02:16Z",
+          "category": "CDMX",
+          "borough": "Cuauhtémoc",
+          "location": "Cuauhtémoc (mencionada en el titular)",
+          "local_url": "/noticias/?id=310694ea0ac10692d427&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por CDMX Magacín trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_cuauhtemoc",
+            "url": "/assets/alcaldias/cuauhtemoc.jpg",
+            "category": "CDMX",
+            "borough": "Cuauhtémoc",
+            "topic": "Palacio de Bellas Artes en la alcaldía Cuauhtémoc",
+            "author": "Timothy Neesam",
+            "license": "CC BY-SA 4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Palacio_de_Bellas_Artes%2C_Mexico_City%2C_MX.jpg"
+          }
+        },
         {
           "title": "Ariadna Montiel: Citlalli Hernández no le ha confirmado si buscará Cuauhtémoc",
           "description": "La información publicada por sdpnoticias trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -2241,8 +2409,36 @@
     },
     {
       "name": "Iztacalco",
-      "count": 16,
+      "count": 17,
       "articles": [
+        {
+          "title": "Lo llevaron en un carrito de supermercado: abandonan cuerpo en calles de Iztacalco; hay 4 detenidos | VIDEO",
+          "description": "La información publicada por Milenio trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPbkh6V0o2Rko1cHIzMmtLdGdWX05oZFR4Wks5XzQ4cjBCc3lScGNqOTQ5UkVhbHNheHlHajRJZG1ZaE94ODhxanFZclhxOUtJYzhVRThjeUhnUVpWWXgzTmxPNTlsY2pZbUtBMDFEYll3M1drOVhGZXgwUnlQd3M0eXNOMEpPMnY4a1JEZDA2bGtKNEhsVkQxYdIBmAFBVV95cUxNV0p4cXVhZmg5VUNrb3NqSmVpUFRpSG5JaXhMaFJaMzU3RmpldzFjSmlZSDI3LWpZeGk4dWRpdlNtaUt3aEVMVXB4WkwzR1pUUWZUQ1B5a0JOQ2p5MmdOTDREcXBBV2pHQVR1THgwWlloUk9LcC1kU3JJcmhhd2szSU9qQWtMQ0ZvYjRJX05QREU0Vm9TRHYzQw?oc=5",
+          "source": "Milenio",
+          "date": "2026-10-13",
+          "published_at": "2026-10-14T01:21:00Z",
+          "category": "CDMX",
+          "borough": "Iztacalco",
+          "location": "Iztacalco (mencionada en el titular)",
+          "local_url": "/noticias/?id=4a5778947cf158f43ffa&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por Milenio trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_iztacalco",
+            "url": "/assets/alcaldias/iztacalco.jpg",
+            "category": "CDMX",
+            "borough": "Iztacalco",
+            "topic": "Iglesia de San Matías en el antiguo pueblo de Iztacalco",
+            "author": "AlejandroLinaresGarcia",
+            "license": "CC BY-SA 3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:SanMatiasChurchIztacalco02.jpg"
+          }
+        },
         {
           "title": "Inaugura CONSAR la Feria de Afores 2026 en Iztacalco",
           "description": "De acuerdo con un titular publicado por Gob MX, el tema de actualidad está relacionado con un asunto de interés público relacionado con la Ciudad de México. La atribución corresponde al medio citado, no a una comprobación independiente de nuestra redacción. El encabezado menciona Iztacalco; esa referencia no demuestra por sí misma dónde ocurrieron todos los hechos.",
