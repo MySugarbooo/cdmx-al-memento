@@ -192,7 +192,7 @@
   $('sync-next').disabled=!state.sync;
   $('export-lrc').disabled=total===0;$('clear-lyrics').disabled=total===0;
   if(!total){list.append(makeElement('p','empty-lines','Tus versos aparecerán aquí para ajustar el tiempo.'));return;}
-  state.lyrics.forEach((line,i)=>{
+  state.lyrics.slice(0,isCompact?90:180).forEach((line,i)=>{
    const row=makeElement('div','lyric-row');row.dataset.line=String(i);
    const input=document.createElement('input');input.type='text';input.inputMode='decimal';
    input.value=clock(line.start)+'.'+String(Math.round((line.start%1)*100)).padStart(2,'0');
@@ -204,6 +204,11 @@
    btn.addEventListener('click',()=>{state.lyrics.splice(i,1);showRows();});
    row.append(input,text,btn);list.append(row);
   });
+  const maxVisible=isCompact?90:180;
+  if(total>maxVisible){
+   list.append(makeElement('p','empty-lines','Mostrando '+maxVisible+
+    ' de '+total+' líneas para ahorrar memoria. Todas se conservan en el archivo LRC.'));
+  }
  }
  function makeElement(tag,cls,text){const e=document.createElement(tag);if(cls)e.className=cls;if(text!==undefined)e.textContent=text;return e;}
  function currentLine(time){
