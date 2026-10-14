@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-14 05:45 UTC",
+  "updated": "2026-10-14 06:59 UTC",
   "boroughs": [
     {
       "name": "La Magdalena Contreras",
@@ -715,7 +715,7 @@
     },
     {
       "name": "Azcapotzalco",
-      "count": 21,
+      "count": 24,
       "articles": [
         {
           "title": "Pronóstico del clima en Azcapotzalco este miércoles 14 de octubre: Lluvia ligera y ambiente templado",
@@ -799,6 +799,42 @@
             "author": "Ivan alcantara",
             "license": "CC BY-SA 3.0",
             "source": "https://commons.wikimedia.org/wiki/File:PARROQUIA_DE_SANTA_CATARINA_%28AZCAPOTZALCO%29.jpg"
+          }
+        },
+        {
+          "title": "Asesinan a hombre en la Nueva Santa María, Azcapotzalco, y vecinos aseguran que era delincuente",
+          "description": "La información publicada por PostaMx trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQb3ZGd3h1YXowYlVfT3JMZWd6TkJ4M2xRT2hDV0d0cDY2UHRQZk1aZnppc1JvUW5KcVgzb2ZkSFc2c18xOS00LTlWQXdDMlFhVWFvUGN3RHVlVF9adjc4MjZTLURudU5rS3JBQy1nWm1fdnpOZFNrLTBPQ1NvZWgxZzk5S2w0THdGVkFrT9IBjAFBVV95cUxQb3ZGd3h1YXowYlVfT3JMZWd6TkJ4M2xRT2hDV0d0cDY2UHRQZk1aZnppc1JvUW5KcVgzb2ZkSFc2c18xOS00LTlWQXdDMlFhVWFvUGN3RHVlVF9adjc4MjZTLURudU5rS3JBQy1nWm1fdnpOZFNrLTBPQ1NvZWgxZzk5S2w0THdGVkFrTw?oc=5",
+          "source": "PostaMx",
+          "date": "2026-10-13",
+          "published_at": "2026-10-13T20:03:00Z",
+          "category": "CDMX",
+          "borough": "Azcapotzalco",
+          "location": "Azcapotzalco (mencionada en el titular)",
+          "local_url": "/noticias/?id=241c431d014cf447b2cb&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por PostaMx trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          }
+        },
+        {
+          "title": "Concurso de Ofrendas en Azcapotzalco 2026: premios de hasta 15 mil pesos y así puedes participar",
+          "description": "La información publicada por Debate trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOTmlyeUFkVlpmZHlRS1JhdWVmby0xVlZWYl9rS3JMbldRbjE3NmpXZUF5Ul93VFVIQU51NGJZV0RvYXlGM3A1ZmkzenFvREN4ZmN3eW1ST0NfaHBEU212Wl84a1k2VGtmbkQzUDZ4YTJBbExsTUQzYnd3YWNSMUhrcWZRWC1lV0h6cGhHT1R0c2NDT3d2N1RQYndMR08xRlR1czN3cFRNTEE0c3BmN2s0Ym82Y0NMQ0NIMnMtWVZia2lqNE9pbXhvZjVEQnRxbHR6aGZZb2VObEVsM0JQa2c?oc=5",
+          "source": "Debate",
+          "date": "2026-10-13",
+          "published_at": "2026-10-13T17:34:44Z",
+          "category": "CDMX",
+          "borough": "Azcapotzalco",
+          "location": "Azcapotzalco (mencionada en el titular)",
+          "local_url": "/noticias/?id=a94f3fb40828707c4c79&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por Debate trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           }
         },
         {
@@ -986,6 +1022,24 @@
           "local_url": "/noticias/?id=3a9e2a8fa8a3f7ddc006&mes=2026-10",
           "brief": {
             "lead": "De acuerdo con un titular publicado por Telediario, el tema de actualidad está relacionado con un asunto de interés público relacionado con la Ciudad de México. La atribución corresponde al medio citado, no a una comprobación independiente de nuestra redacción. El encabezado menciona Azcapotzalco; esa referencia no demuestra por sí misma dónde ocurrieron todos los hechos.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          }
+        },
+        {
+          "title": "Balacera en Azcapotzalco deja muerto a joven de 25 años y desata reclamos por la inseguridad",
+          "description": "La información publicada por PostaMx trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNeE4zODEzWFRPSm5peG1malVwdWdITzRaNU1Rc0pUUFVsOVZwQlBpODdpVTJxTzZDak5TazJCa2VuVFlkeG04cEMxRVkyWllYOS1GUi1OOXNTWnp0QnFGdkNjVm5fVS1NR0JJSnkwV3FxdzRWcXJfZzdOemZBaF9kZDFGZGthUFdGMnMzd1FydUVhN2RCekg2UmFpREtfMExQWWpPQ2p1OFZfS3dpb0hMNVE3Y0hvVWU1ZEo3aVRYbzXSAcYBQVVfeXFMTjUyNWZCNnJkVmJ6MEJPWFJZdUlhZzNQLUoxU0VzVzhwTHRjQkVDY1g5ZGFzTmRqOHE1WDVqb0l2UFdtUFZ1aWJJUFkwNXZoVUlfWU83UVVLdTRWTjNUdGtmMFQ4a0IyMWJZbXFNcUIxakJ5RmFuX0k5S1Z6Ty04U29XLVRLMzExU1UxRzJaZVVWQ0xlVVA0dllZTTFCb2ZXbkkzX05lbGQyU1lGYlhiSmZCdHJyU0NLNWZfMGhpRjJjSVFJV0J3?oc=5",
+          "source": "PostaMx",
+          "date": "2026-10-12",
+          "published_at": "2026-10-12T14:56:00Z",
+          "category": "CDMX",
+          "borough": "Azcapotzalco",
+          "location": "Azcapotzalco (mencionada en el titular)",
+          "local_url": "/noticias/?id=7561c29d0330493b3558&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por PostaMx trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
@@ -1995,8 +2049,36 @@
     },
     {
       "name": "Cuauhtémoc",
-      "count": 23,
+      "count": 24,
       "articles": [
+        {
+          "title": "Éxodo en la Cuauhtémoc: Más de 400 mil familias han sido desplazadas por gentrificación en la CDMX",
+          "description": "El reportaje citado por Cúspide México aborda los precios de vivienda o los cambios residenciales en Cuauhtémoc. Las cifras y su metodología deben examinarse antes de concluir cuántas familias han sido desplazadas o qué tan representativos son determinados anuncios de renta.",
+          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQRm8zTTNONlVNSkZQVmdBLVdIV1BmRVRXWUQ3ZUJhdk9DRi1vd29XaUNmRXotLUNxM1I5LS1wLTVUSUVJT0FsWHYtYXN3VUpVd25UUDdITy1KTS1ySGpnaE1lSlowd0ZkSjZBbVlYWmQtZTFSdFRyd2dlNlF5UmdDcGpCbU9wTDN4a1J2YUREY2JxaVBLNXZhS1Y5a2ZCS1YtYjV1bmhVelBEY3l3MExwbUI1LU5qa1VpcVptN0pGcWRJV0JSV2oxVWRXRHA0Q1BW?oc=5",
+          "source": "Cúspide México",
+          "date": "2026-10-14",
+          "published_at": "2026-10-14T06:23:45Z",
+          "category": "CDMX",
+          "borough": "Cuauhtémoc",
+          "location": "Cuauhtémoc (mencionada en el titular)",
+          "local_url": "/noticias/?id=9f0403c76d539fe8fbb8&mes=2026-10",
+          "brief": {
+            "lead": "El reportaje citado por Cúspide México aborda los precios de vivienda o los cambios residenciales en Cuauhtémoc. Las cifras y su metodología deben examinarse antes de concluir cuántas familias han sido desplazadas o qué tan representativos son determinados anuncios de renta.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_cuauhtemoc",
+            "url": "/assets/alcaldias/cuauhtemoc.jpg",
+            "category": "CDMX",
+            "borough": "Cuauhtémoc",
+            "topic": "Palacio de Bellas Artes en la alcaldía Cuauhtémoc",
+            "author": "Timothy Neesam",
+            "license": "CC BY-SA 4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Palacio_de_Bellas_Artes%2C_Mexico_City%2C_MX.jpg"
+          }
+        },
         {
           "title": "Gobierno de CDMX solicita a Cuauhtémoc entregar la Casa de Cultura Alfonso Reyes",
           "description": "En su información, La Jornada aborda una decisión, declaración o debate relacionado con las instituciones de la ciudad. Conviene distinguir la intención anunciada de las resoluciones que hayan sido aprobadas y publicado oficialmente.",
@@ -4539,8 +4621,36 @@
     },
     {
       "name": "Tláhuac",
-      "count": 6,
+      "count": 7,
       "articles": [
+        {
+          "title": "Último Momento | Cae “El Dámaso”, presunto líder del “Cártel de Tláhuac”, en la CDMX",
+          "description": "La información publicada por Reporte Indigo trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPeU1qUEs5Uk1VYmUyUE5uVndfd1JpbW9Ka1J2TnhuWml4NFptU2NXTEx5dmJrSHpWb2hrbThHY2sxSmtiVkNTM2tDakpGR0VWdjdDS0FxaGVGRXFocUtwZl9PZG5MQXNJV01PU1FVWW1xeDBFU3RGZnk5ZVpfUUVfbURVWEo1VUZEZXVLM0NHVkdHTHRyd21weW1aT3RmYlhseWxNaFZLWW5UUXJXd0puR2o2emVJYWdaRXFZUDIzZGFxQWs3Q1N6ZXJJcw?oc=5",
+          "source": "Reporte Indigo",
+          "date": "2026-10-14",
+          "published_at": "2026-10-14T06:06:43Z",
+          "category": "CDMX",
+          "borough": "Tláhuac",
+          "location": "Tláhuac (mencionada en el titular)",
+          "local_url": "/noticias/?id=f00cccec0f3871075404&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por Reporte Indigo trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_tlahuac",
+            "url": "/assets/alcaldias/tlahuac.jpg",
+            "category": "CDMX",
+            "borough": "Tláhuac",
+            "topic": "Plaza central de San Pedro Tláhuac",
+            "author": "Yavidaxiu",
+            "license": "CC BY 3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Tl%C3%A1huac-Plaza_central.JPG"
+          }
+        },
         {
           "title": "Clima en Tláhuac: miércoles 14 de octubre con lluvia ligera y ambiente templado",
           "description": "El pronóstico recogido por El Heraldo de México se refiere a lluvias ligeras en Tláhuac. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
