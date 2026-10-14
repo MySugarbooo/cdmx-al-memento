@@ -24,6 +24,13 @@
  const reduced=window.matchMedia?.('(prefers-reduced-motion:reduce)').matches===true;
  const status=(id,text)=>{const el=$(id);if(el)el.textContent=text;};
  const displayLyrics=()=>state.lyrics.filter(x=>x.text.trim().length).length;
+ const DRAFT_KEY='kisumi.studio.lyric-draft.v1';
+ function saveLyricDraft(){
+  try{
+   if(!state.lyrics.length){sessionStorage.removeItem(DRAFT_KEY);return;}
+   sessionStorage.setItem(DRAFT_KEY,JSON.stringify(state.lyrics.slice(0,600)));
+  }catch{/* Si el navegador bloquea almacenamiento, todo sigue funcionando. */}
+ }
  function setPlayState(){const playing=!audio.paused; $('play-btn').textContent=playing?'Ⅱ':'▶';$('play-btn').setAttribute('aria-label',playing?'Pausar':'Reproducir');}
  function updateTransport(){
   $('time-now').textContent=clock(audio.currentTime);$('time-total').textContent=clock(audio.duration);
@@ -181,7 +188,7 @@
  function readLyrics(fromText=true){
   if(fromText)state.lyrics=parseLyrics($('lyrics-text').value);
   else if(state.lyrics.length&&!state.lyrics.some(x=>x.sourceTimed))state.lyrics=parseLyrics($('lyrics-text').value);
-  state.sync=false;state.syncIndex=0;showRows();updateHighlight();
+  state.sync=false;state.syncIndex=0;saveLyricDraft();showRows();updateHighlight();
   status('audio-status',state.lyrics.length?'✓ '+state.lyrics.length+' líneas de letra cargadas.':'Sin letras; puedes crear solo el visualizador.');
  }
  function showRows(){
@@ -197,11 +204,11 @@
    const input=document.createElement('input');input.type='text';input.inputMode='decimal';
    input.value=clock(line.start)+'.'+String(Math.round((line.start%1)*100)).padStart(2,'0');
    input.setAttribute('aria-label','Inicio de la línea '+(i+1));
-   input.addEventListener('change',()=>{const n=parseTimestamp(input.value);if(Number.isFinite(n)){line.start=n;line.sourceTimed=true;state.lyrics.sort((a,b)=>a.start-b.start);updateHighlight();}
+   input.addEventListener('change',()=>{const n=parseTimestamp(input.value);if(Number.isFinite(n)){line.start=n;line.sourceTimed=true;state.lyrics.sort((a,b)=>a.start-b.start);saveLyricDraft();updateHighlight();}
     else input.value=clock(line.start)+'.'+String(Math.round((line.start%1)*100)).padStart(2,'0');});
    const text=makeElement('span','lyric-text',line.text);
    const btn=makeElement('button','','×');btn.type='button';btn.title='Eliminar línea';
-   btn.addEventListener('click',()=>{state.lyrics.splice(i,1);showRows();});
+   btn.addEventListener('click',()=>{state.lyrics.splice(i,1);saveLyricDraft();showRows();});
    row.append(input,text,btn);list.append(row);
   });
   const maxVisible=isCompact?90:180;
@@ -231,7 +238,7 @@
   const file=event.target.files?.[0];if(!file)return;
   try{$('lyrics-text').value=await file.text();readLyrics(true);}catch{status('audio-status','No se pudo abrir el archivo de texto.');}
  });
- $('clear-lyrics').addEventListener('click',()=>{state.lyrics=[];$('lyrics-text').value='';showRows();});
+ $('clear-lyrics').addEventListener('click',()=>{state.lyrics=[];$('lyrics-text').value='';saveLyricDraft();showRows();});
  for(const button of document.querySelectorAll('[data-pane]')){
   button.addEventListener('click',()=>{
    const selected=button.dataset.pane;
@@ -257,7 +264,7 @@
    state.sync=false;$('sync-start').textContent='◉ Marcar tiempos mientras suena';
    $('sync-next').disabled=true;status('audio-status','✓ Sincronización manual completada.');
   }
-  showRows();
+  saveLyricDraft();showRows();
  }
  $('sync-next').addEventListener('click',markNext);
  document.addEventListener('keydown',event=>{
@@ -350,7 +357,7 @@
    text:x.text.trim(),sourceTimed:true}));
   $('lyrics-text').value=state.lyrics.map(x=>lrcStamp(x.start)+x.text).join('\n');
   // Render only at chunk boundaries, not once per token.
-  state.sync=false;showRows();updateHighlight();
+  state.sync=false;saveLyricDraft();showRows();updateHighlight();
  }
  $('transcribe-btn').addEventListener('click',async()=>{
   if(isIOS)return; // Prevent the reported crash, including direct programmatic clicks.
@@ -629,5 +636,18 @@
   if(state.url)URL.revokeObjectURL(state.url);
   if(state.blobURL)URL.revokeObjectURL(state.blobURL);
  });
+ try{
+  const raw=sessionStorage.getItem(DRAFT_KEY);
+  if(raw){
+   const draft=JSON.parse(raw);
+   if(Array.isArray(draft)){
+    state.lyrics=draft.filter(x=>x&&typeof x.text==='string'&&Number.isFinite(x.start)).slice(0,600);
+    if(state.lyrics.length){
+     $('lyrics-text').value=state.lyrics.map(x=>lrcStamp(x.start)+x.text).join('\n');
+     status('audio-status','Recuperamos '+state.lyrics.length+' líneas de tu sesión anterior. Sube de nuevo tu audio para continuar.');
+    }
+   }
+  }
+ }catch{/* Restauración opcional: nunca bloquear el reproductor. */}
  showRows();
 })();
