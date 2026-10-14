@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-14 17:46 UTC",
+  "updated": "2026-10-14 18:56 UTC",
   "boroughs": [
     {
       "name": "La Magdalena Contreras",
@@ -1221,8 +1221,36 @@
     },
     {
       "name": "Benito Juárez",
-      "count": 19,
+      "count": 20,
       "articles": [
+        {
+          "title": "Alebrije de Benito Juárez: “Marea Guardiana BJ” llegará al desfile 2026",
+          "description": "La información publicada por Capital CDMX trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNd0FYT19mVFFaR3BoSzRLTjdCQU14YzF4bW5hRThCWVJOdWlwSzdhWDluQjVIRVljYkppYzk2MllmTUpobFRGMUIxcjl2LTVycmJYY2ktaDNic1RvWE5wS3N0RkhKOEtnQ2hxZ2pwUGVrN1ZVelczbU9YR043RTRqZE55QQ?oc=5",
+          "source": "Capital CDMX",
+          "date": "2026-10-14",
+          "published_at": "2026-10-14T18:29:48Z",
+          "category": "CDMX",
+          "borough": "Benito Juárez",
+          "location": "Benito Juárez (mencionada en el titular)",
+          "local_url": "/noticias/?id=987a6159c6a7631b92eb&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por Capital CDMX trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_benito-juarez",
+            "url": "/assets/alcaldias/benito-juarez.jpg",
+            "category": "CDMX",
+            "borough": "Benito Juárez",
+            "topic": "Parque Hundido, alcaldía Benito Juárez",
+            "author": "User:etnoboris",
+            "license": "CC BY-SA 3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Parque_Hundido.jpeg"
+          }
+        },
         {
           "title": "Pronóstico del clima en Benito Juárez para el miércoles 14 de octubre: Lluvias ligeras y ambiente templado",
           "description": "El pronóstico recogido por El Heraldo de México se refiere a lluvias ligeras en Benito Juárez. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
@@ -3317,8 +3345,92 @@
     },
     {
       "name": "Iztapalapa",
-      "count": 29,
+      "count": 32,
       "articles": [
+        {
+          "title": "Adulta mayor es asesinada durante balacera en tianguis de Santa Martha, Iztapalapa; estaba comiendo en puesto",
+          "description": "La información publicada por Telediario trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQOXpCNm9CcHdycWFaeEJfaEZyWDk3QzhvMmhjSWM1ZVFhWUpfTzYyal94bEd0YVlwRzVQNkZodFYxM2ZnSWgwSFd5dWlFQmVMajhOR3lMYlRyZm5IQWY5NElyRTdrTDlKVWUzSk05OFBNenlwV1dqM3pIcTVJRjFFdUZfOVVSQkk0eUJDTzJuRlZFTV9pTWF4NWNVRdIBmwFBVV95cUxOLVpzcjItM2hZV1FfMlpFcDY0WnVBNDJ1U2pIamhtUWV3UXl4STVjd2puaUlwdVUzeXROYjZSbUduTF9kdFEtV2R0eHptcUYyVlRBTDF4SEdSanZzNm9jQzlOcElKMzgwbjlTSU1KSV83ZnhjbmpCVkhKTzBERmxfTE5mUjJCTU8zdUJtS3ViRWJNTl9BdWtsUkJqWQ?oc=5",
+          "source": "Telediario",
+          "date": "2026-10-14",
+          "published_at": "2026-10-14T18:37:00Z",
+          "category": "CDMX",
+          "borough": "Iztapalapa",
+          "location": "Iztapalapa (mencionada en el titular)",
+          "local_url": "/noticias/?id=17a3c2305583b3b21bf2&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por Telediario trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_iztapalapa",
+            "url": "/assets/alcaldias/iztapalapa.jpg",
+            "category": "CDMX",
+            "borough": "Iztapalapa",
+            "topic": "Vista de Iztapalapa desde el Cerro de la Estrella",
+            "author": "Secretaría de Cultura Ciudad de México from México",
+            "license": "CC BY 2.0",
+            "source": "https://commons.wikimedia.org/wiki/File:MX_MM_MUSEO_CERRO_DE_LA_ESTRELLA_%2849522225751%29.jpg"
+          }
+        },
+        {
+          "title": "Balacera en el famoso tianguis El Salado deja una mujer muerta y otra lesionada en Iztapalapa, CDMX",
+          "description": "La información publicada por La Jornada Hidalgo trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOejVrTUw2TmNTRWM0Y0NVMndnVXV2N2JfVHVCX0VXdngydkFlMHJiQnR0ZzB0MlRTM1ExZVR4TUJCR2hGRmFpZ2FzM0RTRVFWR1dKdDhOMDM1THBOS2RYZmItb0VfYm1mV2pOdko5Mm05dUkxU01yNm83ajFEaVlyT29CbWRqQlZ2OG40bFcweFdqTExOZ0E1QUl2UkdqczRtY1pmNjhOTWFsSEhFMkJSVTdSSDZvTmppLWlDSFNvdHA1OURwNXdv?oc=5",
+          "source": "La Jornada Hidalgo",
+          "date": "2026-10-14",
+          "published_at": "2026-10-14T18:36:32Z",
+          "category": "CDMX",
+          "borough": "Iztapalapa",
+          "location": "Iztapalapa (mencionada en el titular)",
+          "local_url": "/noticias/?id=badfdcec130075330dbf&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por La Jornada Hidalgo trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "archivo_cdmx_006",
+            "url": "/assets/fotos/archivo_cdmx_006.jpg",
+            "category": "CDMX",
+            "borough": "",
+            "topic": "Catedral Ii (172219027)",
+            "author": "Waender Alonso Bello",
+            "license": "CC BY 3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Catedral_Ii_%28172219027%29.jpeg"
+          }
+        },
+        {
+          "title": "Balacera en Iztapalapa Hoy: Así Fue Ataque que Dejó a Una Mujer Muerta en Tianguis El Salado",
+          "description": "La información publicada por N+ trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPeGVaMmtrUk5YY0pHUWFIUkhaUEhDNVhrVmRkY0RzWHB0cVJpbHhvU1paVklNYW56dk02LWxhc2VFVkFTYWJHWEExOTRJWlpWZmxjMDc4V0VocVpfelhmYnp3UWx0UU1GZlJra042OHJKU004RFJ3RTdQdk1aVHQ5NGdJVXUweFdjaTk3VWtWeS0tbVlaaDUzTm9zdlJjZ0RQd3RfOFVyVFJSUHI0aWJLTXU1ZEx0d0Y4UVBFM0hzVQ?oc=5",
+          "source": "N+",
+          "date": "2026-10-14",
+          "published_at": "2026-10-14T18:08:50Z",
+          "category": "CDMX",
+          "borough": "Iztapalapa",
+          "location": "Iztapalapa (mencionada en el titular)",
+          "local_url": "/noticias/?id=f8785caa42939ed533ed&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por N+ trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "archivo_cdmx_013",
+            "url": "/assets/fotos/archivo_cdmx_013.jpg",
+            "category": "CDMX",
+            "borough": "",
+            "topic": "D.F. - panoramio (9)",
+            "author": "eurimaco",
+            "license": "CC BY-SA 3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:D.F._-_panoramio_%289%29.jpg"
+          }
+        },
         {
           "title": "El rinconcito familiar de Iztapalapa en CDMX donde encuentras el mejor chicharrón casero y crujiente; hay longaniza, carnitas, quesadillas y más",
           "description": "La información publicada por Radio Fórmula trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -3722,60 +3834,6 @@
           "local_url": "/noticias/?id=8035317d206d9d316ef9&mes=2026-10",
           "brief": {
             "lead": "De acuerdo con un titular publicado por Telediario, el tema de actualidad está relacionado con un asunto de interés público relacionado con la Ciudad de México. La atribución corresponde al medio citado, no a una comprobación independiente de nuestra redacción. El encabezado menciona Iztapalapa; esa referencia no demuestra por sí misma dónde ocurrieron todos los hechos.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
-        },
-        {
-          "title": "Policías de la CDMX Encapsulan a Manifestantes en Calzada Zaragoza, Iztapalapa",
-          "description": "De acuerdo con un titular publicado por N+, el tema de actualidad está relacionado con un asunto de interés público relacionado con la Ciudad de México. La atribución corresponde al medio citado, no a una comprobación independiente de nuestra redacción. El encabezado menciona Iztapalapa; esa referencia no demuestra por sí misma dónde ocurrieron todos los hechos.",
-          "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQV1UyczJ3OWRBQXNJSGp5UU5fSTBWb1B4ZkY1UEFReHIwYno1WUE0aXhSa0lIMkdGS2ZlOEVfTVN2cG1QTk9fZVFpUU9OTlRSVzZOZmdROUFHRlFMYS1reG9SMXdLa3U0YVB3M2dXb2JJdTVaNU5YZ0ZXQ1ZjSHk3bTBha0lNM3lRWlk1TW5TSG90TU5sTHgwWUdUTmswbjN5djNDWmtFLWV4OWFmNHhpSzdnSUIyZm1qSXBJSTJSSlZIRHZsZnBCbWlhT3pYZG9leE5GT0dKYTMxN3NTV3lSeElYZ0U0UQ?oc=5",
-          "source": "N+",
-          "date": "2026-10-09",
-          "published_at": "2026-10-10T03:25:48Z",
-          "category": "CDMX",
-          "borough": "Iztapalapa",
-          "location": "Iztapalapa (mencionada en el titular)",
-          "local_url": "/noticias/?id=54f19ca444d0b66c7b91&mes=2026-10",
-          "brief": {
-            "lead": "De acuerdo con un titular publicado por N+, el tema de actualidad está relacionado con un asunto de interés público relacionado con la Ciudad de México. La atribución corresponde al medio citado, no a una comprobación independiente de nuestra redacción. El encabezado menciona Iztapalapa; esa referencia no demuestra por sí misma dónde ocurrieron todos los hechos.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
-        },
-        {
-          "title": "Encapuchados lanzan cohetones y lesionan a maestro en Bachilleres 6 de Iztapalapa, Cdmx",
-          "description": "De acuerdo con un titular publicado por Quinta Fuerza, el tema de actualidad está relacionado con un asunto de interés público relacionado con la Ciudad de México. La atribución corresponde al medio citado, no a una comprobación independiente de nuestra redacción. El encabezado menciona Iztapalapa; esa referencia no demuestra por sí misma dónde ocurrieron todos los hechos.",
-          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQeFRHbkdrcXAtNDljX0VmZ0JZU2ZEZW16S24yMTNWdEtySGJUaTYteGFJQm1MMzV5LTRfZ21Ua1dUeEZoNzVhWE1KOUpNZ2VJa3RYOUNCV1UtRWdaeWVPblgtbE51X3BraWkxQ1VNRzhGQkJrQXI4SkxTUlhSOHRJbkZ1ZGlVZm43SS1Xa3pkU0FRTzBSb2QxaXVKMFRHM1BQeXBYblJoQk1xUQ?oc=5",
-          "source": "Quinta Fuerza",
-          "date": "2026-10-09",
-          "published_at": "2026-10-10T03:03:28Z",
-          "category": "CDMX",
-          "borough": "Iztapalapa",
-          "location": "Iztapalapa (mencionada en el titular)",
-          "local_url": "/noticias/?id=d321fe27739b1687e198&mes=2026-10",
-          "brief": {
-            "lead": "De acuerdo con un titular publicado por Quinta Fuerza, el tema de actualidad está relacionado con un asunto de interés público relacionado con la Ciudad de México. La atribución corresponde al medio citado, no a una comprobación independiente de nuestra redacción. El encabezado menciona Iztapalapa; esa referencia no demuestra por sí misma dónde ocurrieron todos los hechos.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
-        },
-        {
-          "title": "Ataque en Colegio de Bachilleres de Iztapalapa deja un profesor herido",
-          "description": "De acuerdo con un titular publicado por sipse.com, el tema de actualidad está relacionado con un asunto de interés público relacionado con la Ciudad de México. La atribución corresponde al medio citado, no a una comprobación independiente de nuestra redacción. El encabezado menciona Iztapalapa; esa referencia no demuestra por sí misma dónde ocurrieron todos los hechos.",
-          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOZ1BUaG5RRXd6UnhjTTJJYU1PcUFpajJ3ZEtlQW9pWFdaWGo0aWlNS2lIcTBXWVFDbG9aSU8zSm1CSkw4SzFZLXEwTTlfQ0E1WFRFOTVTOE8zS3Jodk9xTmdacUpaYnN5OWJqZmE0dnI1QUhNTjhMdXpDSHVoRmFlUWZUNVR3QWpkbGVWVE5XV19UYlZFQm9adVJ3bXkyc1hRZThIX01uQWIyb0nSAbABQVVfeXFMT3c3Mzd6VGtVeWFZQXNOdWxxWjQ2UFdrYXZZM1VYN0ZfMFJJRDBER0V2eFNoTXprR2JBQzBCbGtianBsR1lrRGFKZEpoX3cxcEtFY3dRMm0xYXZYMkJhck9tLU43X3lIVU4wQ0Y1ZEJaZE9iVk5PN3VmTGpobXhHWnZPTXp5WHcxekFsTkRXd3pnNjBFQnlRQURZSXFxblZvMHdVdFpZR2hGM1B3OEdEcko?oc=5",
-          "source": "sipse.com",
-          "date": "2026-10-09",
-          "published_at": "2026-10-09T23:55:24Z",
-          "category": "CDMX",
-          "borough": "Iztapalapa",
-          "location": "Iztapalapa (mencionada en el titular)",
-          "local_url": "/noticias/?id=ba70fa451e6ef35521e5&mes=2026-10",
-          "brief": {
-            "lead": "De acuerdo con un titular publicado por sipse.com, el tema de actualidad está relacionado con un asunto de interés público relacionado con la Ciudad de México. La atribución corresponde al medio citado, no a una comprobación independiente de nuestra redacción. El encabezado menciona Iztapalapa; esa referencia no demuestra por sí misma dónde ocurrieron todos los hechos.",
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
@@ -4715,8 +4773,64 @@
     },
     {
       "name": "Tláhuac",
-      "count": 19,
+      "count": 21,
       "articles": [
+        {
+          "title": "Padres de familia del CETIS 1 bloquean Eje 10 Sur en Tláhuac",
+          "description": "La información publicada por MVS Noticias trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxON2QteC1sTURCeFpVZURLeUVIaWZqQ1pvX1NZTVl0VEVXc3EtT2RWYUpPWGhMWVNiSjlQS1Qyb2ZZWU1aLVlPS2UxSVVPZ0VnaWlRa0NNYTk5YVNrdzBucXZvWFFFLWVCNG0tQ2lxSmpqckpRYUhaSFQtOFg2VVpzVUNwVHZROUxGT3pNOVFRaUhpbVhuTHhELUVTWlUyQmdKSzlFX2EzMkNfWEEzekRLdVQtWFZxWDFuOUlMWmZ3?oc=5",
+          "source": "MVS Noticias",
+          "date": "2026-10-14",
+          "published_at": "2026-10-14T18:34:43Z",
+          "category": "CDMX",
+          "borough": "Tláhuac",
+          "location": "Tláhuac (mencionada en el titular)",
+          "local_url": "/noticias/?id=c55421b96a4d68c1ea90&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por MVS Noticias trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_tlahuac",
+            "url": "/assets/alcaldias/tlahuac.jpg",
+            "category": "CDMX",
+            "borough": "Tláhuac",
+            "topic": "Plaza central de San Pedro Tláhuac",
+            "author": "Yavidaxiu",
+            "license": "CC BY 3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Tl%C3%A1huac-Plaza_central.JPG"
+          }
+        },
+        {
+          "title": "Cae 'El Dámaso', presunto segundo al mando del Cártel de Tláhuac",
+          "description": "La información publicada por Milenio trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQWkdkUTFmMHJRQ05KYXJpU2lRTmx4cDg1WG43LWo2MDRtZHpVOHE4WEFBczVOOGh4aDBQR0kwcXZJX1FJRkJ3Nzc3TUo4ZDBuZF9NREtwUktfLXAyWU5Jd1U4aElidkhxeVk4bHdTYUR4TkNsOTRQMmxaYWRzT1Nnb3dOQ2FDclNWSHU4VHlYam9za2JrYUsyetIBmAFBVV95cUxNdmdWd3RoS2hLbjlwcGxVMGpzRGp3b2kzaDBnWl9KazFYY1d6Y0ttT2JmYzFaQUhGZWlRWm5HeW9wUzBWWVZwMFNOQjNLblpRMXdOS195M09odFVUWTR1b2F2MnBVM2FpZjdJcmZqcktOQWhtUURqT1I5WXNNS3prZ0tVcTVkLUxEZG5Rc3FaQzlLTXVRYWZNYg?oc=5",
+          "source": "Milenio",
+          "date": "2026-10-14",
+          "published_at": "2026-10-14T17:56:00Z",
+          "category": "CDMX",
+          "borough": "Tláhuac",
+          "location": "Tláhuac (mencionada en el titular)",
+          "local_url": "/noticias/?id=9338040d3b5898bc5cc9&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por Milenio trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "archivo_cdmx_014",
+            "url": "/assets/fotos/archivo_cdmx_014.jpg",
+            "category": "CDMX",
+            "borough": "",
+            "topic": "Cathedral (155478679)",
+            "author": "Francisco Donaldo Cabrera Cruz",
+            "license": "CC BY-SA 3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Cathedral_%28155478679%29.jpeg"
+          }
+        },
         {
           "title": "¿Quién es \"El Dámaso\"?; el presunto líder del cártel de Tláhuac fue detenido por la FGJ CDMX",
           "description": "La información publicada por El Universal trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
