@@ -265,21 +265,22 @@
  });
  // Whisper Tiny multilingual via Transformers.js. La inferencia es local
  // (el navegador descarga el modelo en la primera ejecución).
- let recognizer=null,transcribing=false;
+ let transcribing=false;
+ const mobile=/iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
  async function speechSamples(file){
   const C=window.AudioContext||window.webkitAudioContext;
-  if(!C)throw Error('Este navegador no dispone de audio compatible.');
+  if(!C)throw Error('Audio no compatible.');
   const context=new C();
   try{
-   const data=await file.arrayBuffer();
-   const buffer=await context.decodeAudioData(data);
-   if(buffer.duration>8*60)throw Error('Para evitar agotar la memoria, usa un audio de 8 minutos o menos en transcripción automática.');
-   const size=Math.round(buffer.duration*16000);
-   const mono=new Float32Array(size),channels=Array.from({length:buffer.numberOfChannels},(_,i)=>buffer.getChannelData(i)),ratio=buffer.sampleRate/16000;
+   const buffer=await context.decodeAudioData(await file.arrayBuffer());
+   const limit=mobile?35:90;
+   if(buffer.duration>limit)throw Error('Para proteger la memoria de este dispositivo, la transcripción local admite hasta '+limit+' segundos. Recorta el audio o importa un archivo LRC/SRT.');
+   const rate=16000,size=Math.floor(buffer.duration*rate);
+   const mono=new Float32Array(size),ratio=buffer.sampleRate/rate;
+   const channels=Array.from({length:buffer.numberOfChannels},(_,i)=>buffer.getChannelData(i));
    for(let i=0;i<size;i++){
-    const pos=i*ratio,idx=Math.floor(pos),t=pos-idx;let sum=0;
-    for(const ch of channels)sum+=(ch[idx]||0)*(1-t)+(ch[Math.min(idx+1,ch.length-1)]||0)*t;
-    mono[i]=sum/channels.length;
+    const idx=Math.min(channels[0].length-1,Math.floor(i*ratio));let v=0;
+    for(const ch of channels)v+=ch[idx];mono[i]=v/channels.length;
    }
    return mono;
   }finally{context.close().catch(()=>{});}
@@ -287,48 +288,67 @@
  $('transcribe-btn').addEventListener('click',async()=>{
   if(!state.file){status('ai-status','Primero sube un audio para analizarlo.');return;}
   if(transcribing)return;
+  if(mobile){
+   status('ai-status','Para evitar que iPhone o Android cierren la página por falta de memoria, la transcripción con IA está desactivada en móviles. Puedes importar letras TXT, LRC o SRT y sincronizarlas desde esta misma página. Para transcripción automática, abre el estudio en una computadora.');
+   return;
+  }
   transcribing=true;$('transcribe-btn').disabled=true;
   const progress=$('ai-progress'),bar=$('ai-progress-bar');progress.hidden=false;bar.style.width='6%';
+  let worker;
   try{
-   status('ai-status','Preparando el audio localmente…');
+   status('ai-status','Preparando audio para reconocer la voz…');
    const samples=await speechSamples(state.file);bar.style.width='12%';
-   if(!recognizer){
-    status('ai-status','Descargando Whisper Tiny multilingüe. Puede tardar varios minutos la primera vez…');
-    const module=await import('https://cdn.jsdelivr.net/npm/@huggingface/transformers@3.8.1');
-    const {pipeline,env}=module;
-    env.allowLocalModels=false;
-    recognizer=await pipeline('automatic-speech-recognition','onnx-community/whisper-tiny',{
-     device:'wasm',progress_callback:info=>{
-      if(info?.status==='progress'&&Number.isFinite(info.progress)){
-       bar.style.width=(12+Math.min(1,info.progress/100)*48)+'%';
-       status('ai-status','Descargando modelo: '+Math.round(info.progress)+'% · Puede tardar…');
-      }else if(info?.status==='ready'){bar.style.width='60%';}
-     }
-    });
-   }
-   bar.style.width='64%';
-   status('ai-status','Reconociendo voz y tiempos; no cierres esta pestaña…');
-   const opts={chunk_length_s:30,stride_length_s:5,return_timestamps:true,task:'transcribe'};
-   if($('speech-language').value)opts.language=$('speech-language').value;
-   const result=await recognizer(samples,opts);
-   let chunks=Array.isArray(result?.chunks)?result.chunks.filter(x=>x&&typeof x.text==='string'):[];
-   if(!chunks.length&&result?.text)chunks=[{text:result.text,timestamp:[0,Math.min(audio.duration||30,30)]}];
+   const workerSource=`
+    self.onmessage=async(event)=>{
+     try{
+      const {samples,language}=event.data;
+      const {pipeline,env}=await import('https://cdn.jsdelivr.net/npm/@huggingface/transformers@3.8.1');
+      env.allowLocalModels=false;
+      env.backends.onnx.wasm.numThreads=1;
+      self.postMessage({type:'status',message:'Descargando el modelo de voz…'});
+      const pipe=await pipeline('automatic-speech-recognition','onnx-community/whisper-tiny',{
+       device:'wasm',dtype:'q8',progress_callback:p=>{
+        if(p?.status==='progress'&&Number.isFinite(p.progress))
+         self.postMessage({type:'progress',percent:p.progress});
+       }
+      });
+      self.postMessage({type:'status',message:'Reconociendo palabras y tiempos…'});
+      const options={return_timestamps:true,task:'transcribe'};
+      if(language)options.language=language;
+      const result=await pipe(samples,options);
+      self.postMessage({type:'result',result});
+     }catch(error){self.postMessage({type:'error',message:String(error?.message||error)});}
+    };
+   `;
+   const blob=URL.createObjectURL(new Blob([workerSource],{type:'text/javascript'}));
+   try{worker=new Worker(blob,{type:'module'});}finally{URL.revokeObjectURL(blob);}
+   const result=await new Promise((resolve,reject)=>{
+    const timeout=setTimeout(()=>reject(Error('La transcripción excedió el tiempo de espera. Prueba un fragmento más corto.')),180000);
+    worker.onmessage=event=>{
+     const msg=event.data;
+     if(msg.type==='status')status('ai-status',msg.message);
+     if(msg.type==='progress'){bar.style.width=(12+Math.min(1,msg.percent/100)*55)+'%';status('ai-status','Descargando modelo: '+Math.round(msg.percent)+'%');}
+     if(msg.type==='result'||msg.type==='error'){clearTimeout(timeout);msg.type==='error'?reject(Error(msg.message)):resolve(msg.result);}
+    };
+    worker.onerror=event=>{clearTimeout(timeout);reject(Error(event.message||'El proceso de IA no pudo iniciarse.'));};
+    worker.postMessage({samples,language:$('speech-language').value},[samples.buffer]);
+   });
+   const chunks=Array.isArray(result?.chunks)?result.chunks.filter(x=>typeof x?.text==='string'):[];
+   if(!chunks.length&&result?.text)chunks.push({text:result.text,timestamp:[0,Math.min(audio.duration||30,30)]});
    const lines=chunks.map((x,i)=>{
     const ts=Array.isArray(x.timestamp)?x.timestamp:[i*4,(i+1)*4];
     const start=Number.isFinite(ts[0])?Math.max(0,ts[0]):i*4;
     return {start,end:Number.isFinite(ts[1])?ts[1]:start+4,text:x.text.trim(),sourceTimed:true};
-   }).filter(x=>x.text.length).sort((a,b)=>a.start-b.start);
-   if(!lines.length)throw Error('No se identificaron palabras en este audio. Prueba importar la letra como texto.');
-   state.lyrics=lines;$('lyrics-text').value=lines.map(x=>lrcStamp(x.start)+x.text).join('\n');
+   }).filter(x=>x.text).sort((a,b)=>a.start-b.start);
+   if(!lines.length)throw Error('No se reconocieron palabras. Puedes importar la letra manualmente.');
+   state.lyrics=lines;$('lyrics-text').value=lines.map(x=>lrcStamp(x.start)+x.text).join('\\n');
    state.sync=false;showRows();bar.style.width='100%';
-   status('ai-status','✓ Reconocidas '+lines.length+' frases con tiempos aproximados. Revisa la letra, especialmente si hay canto o instrumentos.');
+   status('ai-status','✓ Transcripción terminada: '+lines.length+' frases. Revisa la sincronización.');
    document.querySelector('[data-pane="write"]')?.click();
-  }catch(e){
-   status('ai-status','No se pudo transcribir aquí: '+String(e.message||e).slice(0,240)+'. Puedes importar TXT, SRT o LRC y sincronizar manualmente.');
-   console.warn('Reconocimiento local no disponible:',e);
-  }finally{transcribing=false;$('transcribe-btn').disabled=false;setTimeout(()=>{progress.hidden=true;bar.style.width='0%';},2200);}
+  }catch(e){status('ai-status','No se pudo transcribir: '+String(e.message||e).slice(0,200)+' Usa letras TXT, LRC o SRT como alternativa.');}
+  finally{worker?.terminate();transcribing=false;$('transcribe-btn').disabled=false;setTimeout(()=>{progress.hidden=true;bar.style.width='0%';},2200);}
  });
- function energy(){
+  function energy(){
   if(!state.analyser||audio.paused){state.bass*=.95;state.mid*=.95;state.treble*=.95;state.overall*=.95;return;}
   state.analyser.getByteFrequencyData(state.freq);
   const mean=(a,b)=>{let n=0;for(let i=a;i<Math.min(state.freq.length,b);i++)n+=state.freq[i];return n/Math.max(1,b-a)/255;};
