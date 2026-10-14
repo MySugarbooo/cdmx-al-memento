@@ -31,6 +31,8 @@ on:
       - 'styles.css'
       - 'tests/test_portal.py'
       - 'tests/test_weather.py'
+      - 'tests/test_kisumi_studio.py'
+      - 'kisumi-studio/**'
       - 'functions/api/clima.js'
       - 'assets/clima-ticker.js'
 permissions:
@@ -55,6 +57,7 @@ jobs:
         run: |
           node --check app.js
           node --check assets/page-transitions.js
+          node --check kisumi-studio/studio.js
           node --check assets/noticias-locales.js
           node --check assets/portal.js
           node --check assets/clima-ticker.js
