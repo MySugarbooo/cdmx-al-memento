@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-14 07:51 UTC",
+  "updated": "2026-10-14 08:49 UTC",
   "boroughs": [
     {
       "name": "La Magdalena Contreras",
@@ -1581,8 +1581,36 @@
     },
     {
       "name": "Coyoacán",
-      "count": 15,
+      "count": 16,
       "articles": [
+        {
+          "title": "Coyoacán seguirá apostando por las próximas generaciones, asegura Giovani Gutiérrez",
+          "description": "La información publicada por La Razón de México trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOSmRFSWVxZDV4ZVp2WllTQlZtUWQ0US1uUFZ0YnBjNkU0aFdBSllBU1VEdVdiZEJFcUNrU21NcEREdEhIUjlWWDJzdGFXZ1Juc25GU2V1ZmFjM1RNMW92MmFwcUVhWnNkcU1PZHBMWXMtOXUtRENTdmg3c0taY0k0ejlWVXEzWFNYb0c0RU1nMEgyUVpvNFAzQVJCZTVnQUdlSHBrS1BMS1huWmp4cDcwTnl6em1ENnJSSEdILXgwc3Nwd2lsSk10dWJRLVJvM1VmajFnTnRyYnBNWTd2YnlN0gHfAUFVX3lxTE5KZEVJZXFkNXhlWnZaWVNCVm1RZDRRLW5QVnRicGM2RTRoV0FKWUFTVUR1V2JkQkVxQ2tTbU1wRER0SEhSOVZYMnN0YVdnUm5zbkZTZXVmYWMzVE0xb3YyYXBxRWFac2RxTU9kcExZcy05dS1EQ1N2aDdzS1pjSTR6OVZVcTNYU1hvRzRFTWcwSDJRWm80UDNBUkJlNWdBR2VIcGtLUExLWG5aanhwNzBOeXp6bUQ2clJIR0gteDBzc3B3aWxKTXR1YlEtUm8zVWZqMWdOdHJicE1ZN3ZieU0?oc=5",
+          "source": "La Razón de México",
+          "date": "2026-10-13",
+          "published_at": "2026-10-14T02:18:10Z",
+          "category": "CDMX",
+          "borough": "Coyoacán",
+          "location": "Coyoacán (mencionada en el titular)",
+          "local_url": "/noticias/?id=d330229d4f444823ab62&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por La Razón de México trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "archivo_cultura_005",
+            "url": "/assets/fotos/archivo_cultura_005.jpg",
+            "category": "Cultura",
+            "borough": "",
+            "topic": "Palacio de Bellas Artes, México D.F., México, 2013-10-13, DD 40",
+            "author": "Diego Delso",
+            "license": "CC BY-SA 3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Palacio_de_Bellas_Artes%2C_M%C3%A9xico_D.F.%2C_M%C3%A9xico%2C_2013-10-13%2C_DD_40.jpg"
+          }
+        },
         {
           "title": "Rehabilita Coyoacán casi 60 escuelas durante la gestión de Giovani Gutiérrez",
           "description": "La información publicada por MVS Noticias trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -4211,7 +4239,7 @@
     },
     {
       "name": "Milpa Alta",
-      "count": 26,
+      "count": 27,
       "articles": [
         {
           "title": "¡Con globos aerostáticos, juegos mecánicos y más! Así es la nueva Utopía Temictli Tecómitl en Milpa Alta",
@@ -4628,18 +4656,18 @@
           }
         },
         {
-          "title": "Inaugura Clara Brugada la Utopía Temictli Tecómitl en Milpa Alta, la primera con juegos de feria",
-          "description": "De acuerdo con un titular publicado por Diario de México, el tema de actualidad está relacionado con un asunto de interés público relacionado con la Ciudad de México. La atribución corresponde al medio citado, no a una comprobación independiente de nuestra redacción. El encabezado menciona Milpa Alta; esa referencia no demuestra por sí misma dónde ocurrieron todos los hechos.",
-          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQbFNtUkl6ckhScXowYmZmOTYwakpIeXQ2dlVJazBrX01nUkpILURuOG1uZ1ZrZWFYNGVfclMyeUIwTmdQM0lNSTZ6ZEJtNFNlZlBxVEZpaElEcTBrSzRuWVU1UHdvVGlLMzU5Y3JuNkhJZC1GSm1JY1JIWFVqQlFfcWdNQnZiY2ZlYkpKVVE3dmxNSDVqWUZSTjAtYXFBdFYtY01aSXZ5SmtJcWtVQUl4Uy1yRG1YSVVHaHVjUTFjbmwxc1ZrdlHSAcsBQVVfeXFMUGJFOWVyU3NYdTEyRWUyR2RXM2lWV2dHU1NuYlp1VFoyOTBSMGItYXZ2cHFKcnJUQmY5emlOU2NBUXRJMDlweDQ5cFpVSGpuTjdTY3BlQ0pjSWhZYzdJRWNQajJVMUtDOUVXaUhpSWQzeEtUd2I0V1h6WU03VHpTYi1wOTZ6RlRWX0pDRko5NDBzZW1pSHl1eGxJMU84a1lWREoyNVNjcjhSV1UzMXlLN0NVNmloREpmdWtMUGFrb0VLUVRMMk9BTE4wR3M?oc=5",
-          "source": "Diario de México",
+          "title": "Clara Brugada inaugura la Utopía Tecómitl, en Milpa Alta con 80 espacios para el ejercicio de derechos al cuidado, al bienestar, la cultura y el deporte",
+          "description": "La información publicada por Fernanda Tapia trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMijAJBVV95cUxPOWdqb296VTNHeFBiUHpQT3hwendUSTNkT2dMeVNHTlhEY2QzQ25WeUZ3eVo0MFFObjBRaG5mckk0YW1hZ3kzNEI0NW02VE5JSi1pclN5M2t3NlJ6WmZRaVlCamN6UkxsMXFhaG40VGN5VExUYlByN2ktSnRranA5SEFBOVprV3YtalVUaDdDV24teTV5NG1POEtzeFJLLWhtcXhacGNhRmFQQzZPQ3RteTl6NGdPMUdySXlqamRaRk5LNTB6SWp1SWpjNWJiVmNaSjF5Q1d6cXBwMllmV1ZjZG0xb2JoYTZlRkYxcXFhNll6dmJLd1dkTV9LY3NJRHpwek82bnMzZ091eHR6?oc=5",
+          "source": "Fernanda Tapia",
           "date": "2026-10-11",
-          "published_at": "2026-10-11T19:03:49Z",
+          "published_at": "2026-10-11T22:00:00Z",
           "category": "CDMX",
           "borough": "Milpa Alta",
           "location": "Milpa Alta (mencionada en el titular)",
-          "local_url": "/noticias/?id=b5bd1b79e191c8d79092&mes=2026-10",
+          "local_url": "/noticias/?id=ac5a27b8cb8645a3bd2f&mes=2026-10",
           "brief": {
-            "lead": "De acuerdo con un titular publicado por Diario de México, el tema de actualidad está relacionado con un asunto de interés público relacionado con la Ciudad de México. La atribución corresponde al medio citado, no a una comprobación independiente de nuestra redacción. El encabezado menciona Milpa Alta; esa referencia no demuestra por sí misma dónde ocurrieron todos los hechos.",
+            "lead": "La información publicada por Fernanda Tapia trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
@@ -4649,7 +4677,7 @@
     },
     {
       "name": "Tláhuac",
-      "count": 7,
+      "count": 8,
       "articles": [
         {
           "title": "Último Momento | Cae “El Dámaso”, presunto líder del “Cártel de Tláhuac”, en la CDMX",
@@ -4677,6 +4705,34 @@
             "author": "Yavidaxiu",
             "license": "CC BY 3.0",
             "source": "https://commons.wikimedia.org/wiki/File:Tl%C3%A1huac-Plaza_central.JPG"
+          }
+        },
+        {
+          "title": "Capturan a “El Dámaso”, presunto líder del Cártel de Tláhuac",
+          "description": "La información publicada por TV Azteca trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxONGNFYTltS29hSHhCaHFqTEEzRi1PcFZKUmZHVGc5TndnR2VkQm1pd0Q3WUpQVjJFZ2JwOFJyV0lQRndFM2xIWmszX1ZvbVFEZ1VpNTFsN29xdkhzdlc5VXNLZ3U2VTYzRk8zWEthU25vb2p1WGZ1MkRvSmR2Z19FTkpGM2dTTkM2S1hPUVFDdmtKdnlRQ3dTaHJHUVd2UjJIR3U2ajF3Rl83UFBR0gG6AUFVX3lxTFBXYjk2SHhtbkNtbzlWLThLX0lNNTJmWFZRQXROdGdOSU1JaHhodEZ5R1FvalM0T0g5R2JhNEpqTGl4aWxBbFljWmFQeWFRMl9ZZHhNOF9sbVU1NVBOZG0zMXlXeDg2SUdpR190OWhKOFJFTThrWkgzTFVIOTJxVERZN29aS0dva0hBNlQ4RG00T0RpcEY1eHZEOEhxR29xY2tqd3RKU2hSaVIxeFFhb2FINDZyQWRhUnhSdw?oc=5",
+          "source": "TV Azteca",
+          "date": "2026-10-13",
+          "published_at": "2026-10-14T05:27:23Z",
+          "category": "CDMX",
+          "borough": "Tláhuac",
+          "location": "Tláhuac (mencionada en el titular)",
+          "local_url": "/noticias/?id=24e712760b8087dc8932&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por TV Azteca trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "archivo_cdmx_014",
+            "url": "/assets/fotos/archivo_cdmx_014.jpg",
+            "category": "CDMX",
+            "borough": "",
+            "topic": "Cathedral (155478679)",
+            "author": "Francisco Donaldo Cabrera Cruz",
+            "license": "CC BY-SA 3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Cathedral_%28155478679%29.jpeg"
           }
         },
         {
