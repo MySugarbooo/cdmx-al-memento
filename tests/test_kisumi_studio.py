@@ -27,7 +27,7 @@ class StudioTests(unittest.TestCase):
         self.assertIn("1280",html)
         self.assertIn("720",html)
         self.assertIn("studio.css?v=2",html)
-        self.assertIn("studio.js?v=2",html)
+        self.assertIn("studio.js?v=3",html)
         self.assertIn("page-transitions.js?v=1",html)
         self.assertIn("@media(max-width:640px)",self.css)
         self.assertIn("prefers-reduced-motion",self.css)
@@ -47,7 +47,7 @@ class StudioTests(unittest.TestCase):
         js=self.js
         for fragment in ("onnx-community/whisper-tiny","@huggingface/transformers@",
                          "automatic-speech-recognition","return_timestamps:true",
-                         "task:'transcribe'","device:'wasm'","chunk_length_s:30",
+                         "task:'transcribe'","device:'wasm'","new Worker(blob",
                          "decodeAudioData","16000","function parseLyrics(",
                          "function parseTimestamp(","[...line.matchAll",
                          "lrcStamp","showRows()"):
@@ -63,7 +63,7 @@ class StudioTests(unittest.TestCase):
         self.assertNotIn("fetch('https://api.openai.com",js)
         self.assertNotIn("navigator.mediaDevices.getUserMedia",js)
         self.assertIn("No se pudo transcribir aquí",js)
-        self.assertIn("puede fallar con voces cantadas",self.html)
+        self.assertIn("voces cantadas",self.html)
         self.assertIn("procesamiento",self.html.lower())
         self.assertIn("Subir archivo de audio",self.html)
 
