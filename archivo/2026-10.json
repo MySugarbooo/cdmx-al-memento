@@ -1,7 +1,63 @@
 {
   "month": "2026-10",
-  "updated": "2026-10-14 10:48 UTC",
+  "updated": "2026-10-14 11:44 UTC",
   "articles": [
+    {
+      "title": "Marchas del sector salud y bloqueos en CdMx 14 de octubre 2026: alcaldías afectadas",
+      "description": "Según la información destacada por Sin Embargo, manifestaciones o bloqueos forman parte de la jornada de movilidad capitalina. La ficha no demuestra por sí sola que todas las vías mencionadas sigan cerradas al momento de leerla.",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNallLTnA3QXh0SWZOSEp6SjNkRFBPVXBQcURMc3h1aV9nTE5JSlZtcFYwSE55MndZU2ZiR084c3FJSFdZM1g3T29CbmhNdXFMWm1RV1hFYjlNSkdEQU5rSlRFQWZuV3VxZTF6YjB4Y2V3RXBYOXQ0a0l2YmVBODVzenZPSFVaeFZYcDZjR3hNTGp0Mmp3dkFObm9nM0FzN2ZoVnlPZ1M3OGtqOHNWSEM3QVFZR2lTTXI3?oc=5",
+      "source": "Sin Embargo",
+      "date": "2026-10-14",
+      "published_at": "2026-10-14T11:38:21Z",
+      "category": "Seguridad",
+      "borough": "",
+      "location": "Ciudad de México (sin alcaldía identificada)",
+      "local_url": "/noticias/?id=0be22c0b3f7be67c08e1&mes=2026-10",
+      "brief": {
+        "lead": "Según la información destacada por Sin Embargo, manifestaciones o bloqueos forman parte de la jornada de movilidad capitalina. La ficha no demuestra por sí sola que todas las vías mencionadas sigan cerradas al momento de leerla.",
+        "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+        "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "archivo_seguridad_001",
+        "url": "/assets/fotos/archivo_seguridad_001.jpg",
+        "category": "Seguridad",
+        "borough": "",
+        "topic": "Adquisición patrullas para la Policía 03",
+        "author": "Gobierno de la Ciudad de México",
+        "license": "CC BY 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Adquisici%C3%B3n_patrullas_para_la_Polic%C3%ADa_03.jpg"
+      }
+    },
+    {
+      "title": "Hasta 28 °C en al menos cinco alcaldías de la CDMX en esta tarde de miércoles",
+      "description": "La información publicada por Meteored México trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQR1lrQkFxbUVaeUlrSDZ1OUZ1THhyTjhTYXRHSjFrVTJnMngwb0pwWE11OWszTmo5bnRnTU5McEU5QndTd0RHOFVtU2pjTWpkUUE4cGxtZGE1Q0NsNWE0dk9ZcGF6dW5pWnBHWkJlM0lYY0ZkLVFJaWpmcmNKZjZwLXB1ZFlyRmdpYktzWTdlRjEzVTVLRVZtZWRJVUNkaFlGNkE5Ynhxbm1XWUVIT2J4Y0NmRDMyY1gzdkpEREtEVk5iMFk?oc=5",
+      "source": "Meteored México",
+      "date": "2026-10-14",
+      "published_at": "2026-10-14T11:01:00Z",
+      "category": "CDMX",
+      "borough": "",
+      "location": "Ciudad de México (sin alcaldía identificada)",
+      "local_url": "/noticias/?id=f9e42ff8bad288401262&mes=2026-10",
+      "brief": {
+        "lead": "La información publicada por Meteored México trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+        "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+        "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "archivo_cdmx_003",
+        "url": "/assets/fotos/archivo_cdmx_003.jpg",
+        "category": "CDMX",
+        "borough": "",
+        "topic": "D.F. - panoramio (7)",
+        "author": "eurimaco",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:D.F._-_panoramio_%287%29.jpg"
+      }
+    },
     {
       "title": "Ciudad de México: cuál es el precio de la gasolina este 13 de octubre",
       "description": "La información publicada por Infobae trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -112,6 +168,34 @@
         "author": "SerialKiller 666 RTP",
         "license": "CC BY-SA 4.0",
         "source": "https://commons.wikimedia.org/wiki/File:Articulado_MASA_U-18_RTP_-F%C3%A9nix_D-_-Metrob%C3%BAs-_05.jpg"
+      }
+    },
+    {
+      "title": "Hoy No Circula del miércoles 14 de octubre: autos que descansan en CdMx y Edomex hoy",
+      "description": "La información publicada por Sin Embargo trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQMkNsaUNiZlBXUjZBX3RUa2F1MFFiOFR3a2xKbDFVVkhlM242UkRLRjRsc0tlV0cxWi1wT3N4UXNBUTQtbkZ3eWNsWXNVLWFiMmJxY0I5TmdXTFZnNG9xbGpHekgzOW9lblVIcktMYk5KQ1NTa0JzYmlYWDFVczlGeGxnUlZxYXEzNDQyMFp5Zk02RzZ0dEpJZ1RvODVZVHZTQk5ncEIwUXlTaldIMnFZM1B0VmV6dW1idWc?oc=5",
+      "source": "Sin Embargo",
+      "date": "2026-10-14",
+      "published_at": "2026-10-14T08:50:07Z",
+      "category": "CDMX",
+      "borough": "",
+      "location": "Ciudad de México (sin alcaldía identificada)",
+      "local_url": "/noticias/?id=ba410d5221eea8b21b81&mes=2026-10",
+      "brief": {
+        "lead": "La información publicada por Sin Embargo trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+        "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+        "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "archivo_cdmx_014",
+        "url": "/assets/fotos/archivo_cdmx_014.jpg",
+        "category": "CDMX",
+        "borough": "",
+        "topic": "Cathedral (155478679)",
+        "author": "Francisco Donaldo Cabrera Cruz",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Cathedral_%28155478679%29.jpeg"
       }
     },
     {
@@ -672,6 +756,34 @@
         "author": "ProtoplasmaKid",
         "license": "CC BY-SA 4.0",
         "source": "https://commons.wikimedia.org/wiki/File:L%C3%ADnea_2_del_Metro_de_la_Ciudad_de_M%C3%A9xico_-_Metro_Pino_Su%C3%A1rez_L%C3%ADnea_2_-_10.jpg"
+      }
+    },
+    {
+      "title": "André-Pierre Gignac sorprende en partido junto a Damián Álvarez entre rumores de su regreso a Tigres",
+      "description": "La información publicada por Infobae trata un asunto registrado en la sección de Metro del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPN0dtdHozQkVYMVlmaXdnZHZOaVZMV3poZVlSZkw0MG9OMEZLQjV1QzdSNlBvdS0zLUlmaXFQNXdwWUNUMzdEWTNxbllZNzJyemZ1RldhbUNoZ0ViVkpoUW9hanFrREw5X2VKUXpQeUVGa3lYbjBWRV9UbEdJN3pMZHFYR3hDQy1iM2FWSlBsNHhndjg3dWpvdW5GLVd2X1FmbFJXYzczOUUxcFpCTFkyNU1NUFl5cEJhRW5vUVVuYnBFM3RyYVRGTE9IdmpQQnliX2JBelh4SXlBdFZsZkZKREFYU3ZtS2fSAYICQVVfeXFMUHZEVzFMYmhVeE9YQUV3UzRyUkhlVDh5dzNuY3hYYXlVZ3FzQUdwOEpUTTc1Tm5fVThxaUdJUU0zQ0xNckRhNzdkeFh0OVNmaXgzMVBQTGoyalZzaXkwUmFEWE9zcC1NMFN0YjlsTWtzdzNmeHhwUWpqcUlCXzlkZjNmY0VBN1BIeXMwbzBOZVBJbzNnVFZManRtcHI0a09yUl9aMTFYSmU3OVpJQ1hmMkVwOXN5dElYT2liWVJFYVktRV9wQ0lxc0REZm5LMXNNRmRPT0Q5eXV5c0Y4U1FxTmFDMndCbjU0WnY1S1VnY19BNllaNEZlWExyNmhSWkEzNTl3?oc=5",
+      "source": "Infobae",
+      "date": "2026-10-13",
+      "published_at": "2026-10-14T04:18:00Z",
+      "category": "Metro",
+      "borough": "",
+      "location": "Ubicación no indicada por el titular",
+      "local_url": "/noticias/?id=be3806b73a1e11e476bd&mes=2026-10",
+      "brief": {
+        "lead": "La información publicada por Infobae trata un asunto registrado en la sección de Metro del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+        "context": "Los cambios en este sistema pueden afectar los horarios, las conexiones y la planeación de los viajes cotidianos.",
+        "pending": "El estado operativo, las estaciones y las alternativas de traslado deben comprobarse en los avisos actuales del Metro. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "archivo_metro_002",
+        "url": "/assets/fotos/archivo_metro_002.jpg",
+        "category": "Metro",
+        "borough": "",
+        "topic": "Estación Juárez del Metro de la Ciudad de México 09",
+        "author": "ProtoplasmaKid",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Estaci%C3%B3n_Ju%C3%A1rez_del_Metro_de_la_Ciudad_de_M%C3%A9xico_09.jpg"
       }
     },
     {
