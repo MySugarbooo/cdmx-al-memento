@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-15 15:49 UTC",
+  "updated": "2026-10-15 16:48 UTC",
   "boroughs": [
     {
       "name": "La Magdalena Contreras",
@@ -957,7 +957,7 @@
     },
     {
       "name": "Azcapotzalco",
-      "count": 27,
+      "count": 28,
       "articles": [
         {
           "title": "Clima en Azcapotzalco: pronóstico de lluvia ligera para este jueves 15 de octubre",
@@ -1189,6 +1189,24 @@
             "author": "Ivan alcantara",
             "license": "CC BY-SA 3.0",
             "source": "https://commons.wikimedia.org/wiki/File:PARROQUIA_DE_SANTA_CATARINA_%28AZCAPOTZALCO%29.jpg"
+          }
+        },
+        {
+          "title": "La Alcaldía Azcapotzalco lanza su Concurso de Ofrendas de Día de Muertos 2026",
+          "description": "La información publicada por Infobae trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNc19NeXJ2blZURXVjbnpaYmxIajUybnhtSnpKaXhEV2pmUDFMOWRWX0pvT2JFUkpQdVJxM0dIMHVpWFlBa2RtaFF1amZkYVFUeEtXVlpxZmtuTi11TnYzcmhaOFBLVnhpS3JVaDZPbTNKUDNMc0xuMnZSNzd1SGdEck9JQXF0R2lSNDFCVUVTSHhCOFpqVU1jb29UR2x3YXEzd1pGek1YWE9hZXNZWUdodzdsbk1WZjF5MWtvOFBMek1SOHZpdGRubjJKUzdsZ3U3NG42VnJ5NGdwb3Yy0gH3AUFVX3lxTFB5U09NelMxMldwWVNiVXRTQ0FPMTVmd2c0WmdwQ2lFbTNaOExneTNUSFJhOFFQQlAtU3F0WXB6bElPMXhfMmJTY1dSWVBIa1dnYlJWbS1lRDNDUkRDMGx5akFFOXZDSXFXcVZuemg5R1F0aWFhcTlTNHRPQnh5VUVlZm14Y1BTSnVkNk8tWVdPNmNxTm1jVFRNVzUxUFU1TFd1WW9XNVZ3V0VGUXhPNU9ZVldVQTdoWnlkeGYzWTROSkZaWHBlRzY1NmNBc0RYTU1BcTBLN2ZSOTZTXzJHVWxsNzh1amttWGxJY1lxNUF6R2QtV1Rac3M?oc=5",
+          "source": "Infobae",
+          "date": "2026-10-13",
+          "published_at": "2026-10-13T14:29:45Z",
+          "category": "CDMX",
+          "borough": "Azcapotzalco",
+          "location": "Azcapotzalco (mencionada en el titular)",
+          "local_url": "/noticias/?id=0fa50a94777bf8e7c6b9&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por Infobae trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           }
         },
         {
@@ -1438,24 +1456,6 @@
           "local_url": "/noticias/?id=d6c224bfc4037baab622&mes=2026-10",
           "brief": {
             "lead": "De acuerdo con un titular publicado por Diario Basta!, el tema de actualidad está relacionado con un asunto de interés público relacionado con la Ciudad de México. La atribución corresponde al medio citado, no a una comprobación independiente de nuestra redacción. El encabezado menciona Azcapotzalco; esa referencia no demuestra por sí misma dónde ocurrieron todos los hechos.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
-        },
-        {
-          "title": "Clima en Azcapotzalco este sábado 10 de octubre: Lluvia ligera y ambiente fresco",
-          "description": "De acuerdo con un titular publicado por El Heraldo de México, el tema de actualidad está relacionado con un asunto de interés público relacionado con la Ciudad de México. La atribución corresponde al medio citado, no a una comprobación independiente de nuestra redacción. El encabezado menciona Azcapotzalco; esa referencia no demuestra por sí misma dónde ocurrieron todos los hechos.",
-          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOUUNRX0U0S2ZQUTgyRURvRWJvWHFEZnUydm1wa1BKSEUtMzhZbzN5WEJFQnduclN6eWFaTWNHRUdLZ0d0Mzd0am9tXzc3N01lSEZQZXZaMDBpM1VwcVI5U1N2dVliMkYtUG5Gc0JwNXJEZnlYZWZNWEdjSzM2dnJQdFBYV3c5cVhtVExYZmp5RFVQT1JUVzYyWmItRjJJWnRGbWtGUVFDeTlxdUtMM3QwT3FMM1hxOU9MaFdRMGVYT1ZYMmdIemZoNVdDOVVQWTVQNG9rLXdB?oc=5",
-          "source": "El Heraldo de México",
-          "date": "2026-10-09",
-          "published_at": "2026-10-10T05:00:00Z",
-          "category": "CDMX",
-          "borough": "Azcapotzalco",
-          "location": "Azcapotzalco (mencionada en el titular)",
-          "local_url": "/noticias/?id=fe12d24c80b1f4224110&mes=2026-10",
-          "brief": {
-            "lead": "De acuerdo con un titular publicado por El Heraldo de México, el tema de actualidad está relacionado con un asunto de interés público relacionado con la Ciudad de México. La atribución corresponde al medio citado, no a una comprobación independiente de nuestra redacción. El encabezado menciona Azcapotzalco; esa referencia no demuestra por sí misma dónde ocurrieron todos los hechos.",
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
@@ -4139,8 +4139,36 @@
     },
     {
       "name": "Iztapalapa",
-      "count": 46,
+      "count": 47,
       "articles": [
+        {
+          "title": "Comerciantes del Mercado San Juan bloquean Zaragoza; rechazan pagos electrónicos en Iztapalapa",
+          "description": "La información publicada por El Universal trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQUWFSWnE1cDFNTnIwLU1WTmdnSWZ3azdjazJKLXd4U2hjV1YxTFFodGZhR1JhNnBqMDAwSXcwUXZZSE11S3lOUkRlUlJuWlJHTGo5RDJqQXpQdWtZOFc4WGhtY0VKMW4yNGNCQ3lDSW5Obk9XTFlaSk5Zb1JEWElydDBuQVNyRUhVeVl4UlBNUktaZGRfYjdjdFltMXRxRDBNVE5XcDV5U1ZnQTNLS3Nwczl1QkZzbjdObW9KT29QU01ZU050WDZxTm0xWGxkUFdw?oc=5",
+          "source": "El Universal",
+          "date": "2026-10-15",
+          "published_at": "2026-10-15T14:53:03Z",
+          "category": "CDMX",
+          "borough": "Iztapalapa",
+          "location": "Iztapalapa (mencionada en el titular)",
+          "local_url": "/noticias/?id=25cba91d7c44783a1bf3&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por El Universal trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_iztapalapa",
+            "url": "/assets/alcaldias/iztapalapa.jpg",
+            "category": "CDMX",
+            "borough": "Iztapalapa",
+            "topic": "Vista de Iztapalapa desde el Cerro de la Estrella",
+            "author": "Secretaría de Cultura Ciudad de México from México",
+            "license": "CC BY 2.0",
+            "source": "https://commons.wikimedia.org/wiki/File:MX_MM_MUSEO_CERRO_DE_LA_ESTRELLA_%2849522225751%29.jpg"
+          }
+        },
         {
           "title": "Balacera en tianguis de Iztapalapa, CDMX deja una mujer muerta y tres lesionados",
           "description": "La información publicada por Quinta Fuerza trata un asunto registrado en la sección de Seguridad del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -4744,31 +4772,41 @@
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           }
-        },
-        {
-          "title": "Se elevan los precios de las rentas en Iztapalapa",
-          "description": "De acuerdo con un titular publicado por Diario Basta!, el tema de actualidad está relacionado con un asunto de interés público relacionado con la Ciudad de México. La atribución corresponde al medio citado, no a una comprobación independiente de nuestra redacción. El encabezado menciona Iztapalapa; esa referencia no demuestra por sí misma dónde ocurrieron todos los hechos.",
-          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQOTJ4ME9Ud21rUVljd1dzY0V2cUtNQkdxVzVWZEx2ejBldFNhb0FhVTdxSzBsSk5YT3ljTXpqckxjRWFnWXR4dUtUald1RXFpZ2hXNlo1d191TUdHY0NCZEN1elJMVlpKOU9NYWpUdjF6ZnVsSXZaOUQ0aXVSMVc2WFJFOGpqbHBIcjFtVmZ3?oc=5",
-          "source": "Diario Basta!",
-          "date": "2026-10-12",
-          "published_at": "2026-10-12T21:53:58Z",
-          "category": "CDMX",
-          "borough": "Iztapalapa",
-          "location": "Iztapalapa (mencionada en el titular)",
-          "local_url": "/noticias/?id=57adb6885caa4a018ae4&mes=2026-10",
-          "brief": {
-            "lead": "De acuerdo con un titular publicado por Diario Basta!, el tema de actualidad está relacionado con un asunto de interés público relacionado con la Ciudad de México. La atribución corresponde al medio citado, no a una comprobación independiente de nuestra redacción. El encabezado menciona Iztapalapa; esa referencia no demuestra por sí misma dónde ocurrieron todos los hechos.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
         }
       ]
     },
     {
       "name": "Miguel Hidalgo",
-      "count": 25,
+      "count": 26,
       "articles": [
+        {
+          "title": "Vecinos Denuncian Presunta Casa de Citas en la Alcaldía Miguel Hidalgo",
+          "description": "La información publicada por N+ trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQa2FadlRadzRIajg4TjFvMzZEZXhUenlZUElWQ1Z6bjEyOHplemhxWGlydmI2STJmQ183NWpiSXFNWlpodFdmVVFOMU1ObjZGRVRwYl9GMEVRdldLQXhEWFlzMXhMcHhRNmxpYUxIcF85SWR3UlJaWXZNb0JTOGpxbXpLQmZoOVBnZ3EyR2o2TTg4LWNoRzJoVHRscUJ0bGtueDdXQ21Nc0VSdnNpTmozVnFMRUZ0Z0FvYmc?oc=5",
+          "source": "N+",
+          "date": "2026-10-15",
+          "published_at": "2026-10-15T16:17:34Z",
+          "category": "CDMX",
+          "borough": "Miguel Hidalgo",
+          "location": "Miguel Hidalgo (mencionada en el titular)",
+          "local_url": "/noticias/?id=e3242a90ca7c51210697&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por N+ trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_miguel-hidalgo",
+            "url": "/assets/alcaldias/miguel-hidalgo.jpg",
+            "category": "CDMX",
+            "borough": "Miguel Hidalgo",
+            "topic": "Bosque de Chapultepec, alcaldía Miguel Hidalgo",
+            "author": "ProtoplasmaKid",
+            "license": "CC0",
+            "source": "https://commons.wikimedia.org/wiki/File:Audiorama_de_Chapultepec_1.jpg"
+          }
+        },
         {
           "title": "Clima en Miguel Hidalgo: jueves 15 de octubre con lluvia ligera y ambiente templado",
           "description": "El pronóstico recogido por El Heraldo de México se refiere a lluvias ligeras en Miguel Hidalgo. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
@@ -5298,24 +5336,6 @@
           "local_url": "/noticias/?id=949292557eafd8950b39&mes=2026-10",
           "brief": {
             "lead": "De acuerdo con un titular publicado por Sociedad Noticias, el tema de actualidad está relacionado con un asunto de interés público relacionado con la Ciudad de México. La atribución corresponde al medio citado, no a una comprobación independiente de nuestra redacción. El encabezado menciona Miguel Hidalgo; esa referencia no demuestra por sí misma dónde ocurrieron todos los hechos.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
-        },
-        {
-          "title": "Clima en Miguel Hidalgo este sábado 10 de octubre: jornada fresca y con lluvias ligeras",
-          "description": "De acuerdo con un titular publicado por El Heraldo de México, el tema de actualidad está relacionado con un asunto de interés público relacionado con la Ciudad de México. La atribución corresponde al medio citado, no a una comprobación independiente de nuestra redacción. El encabezado menciona Miguel Hidalgo; esa referencia no demuestra por sí misma dónde ocurrieron todos los hechos.",
-          "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNcGRrb2laYjNNdExEQlpkalNfeGF6aGNPS0tvS3BpcGo1SGJ1dG40cGJQalZVUXpjRlZjcE9DM3k3eGZRTFB6OEhpYXNNVDU4aVN3UVVzTHM1NnRUTHNfRi1aQzl4VXNlLXp6VUpnczItTllGWDAzbHdEU181X3ktYkNqQ0h4NTVULTFZVkZrZ0dZXzFtWk42anVsdlBxMU1pWkZ0Vjh5eEN1MU1pZlUtZklFaGFaSmtHNEJDVVRPOXg5bGo3NDhkYzRZeDZPS0hKU3RIaWVFaWRYR3d6ek5J?oc=5",
-          "source": "El Heraldo de México",
-          "date": "2026-10-09",
-          "published_at": "2026-10-10T05:00:00Z",
-          "category": "CDMX",
-          "borough": "Miguel Hidalgo",
-          "location": "Miguel Hidalgo (mencionada en el titular)",
-          "local_url": "/noticias/?id=0402c15c265282ac7b5d&mes=2026-10",
-          "brief": {
-            "lead": "De acuerdo con un titular publicado por El Heraldo de México, el tema de actualidad está relacionado con un asunto de interés público relacionado con la Ciudad de México. La atribución corresponde al medio citado, no a una comprobación independiente de nuestra redacción. El encabezado menciona Miguel Hidalgo; esa referencia no demuestra por sí misma dónde ocurrieron todos los hechos.",
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
@@ -6989,7 +7009,7 @@
     },
     {
       "name": "Venustiano Carranza",
-      "count": 3,
+      "count": 4,
       "articles": [
         {
           "title": "Adulto mayor es arrollado por Metrobús en el CETRAM Pantitlán, en la Venustiano Carranza",
@@ -7017,6 +7037,24 @@
             "author": "Raymundo Perera",
             "license": "CC BY-SA 3.0",
             "source": "https://commons.wikimedia.org/wiki/File:Palacio_de_Lecumberri.jpg"
+          }
+        },
+        {
+          "title": "Atiende Venustiano Carranza socavones y drenaje en colonias",
+          "description": "La información publicada por El Momento Nacional trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQRk5iemMwOEh0cEFJZ2JsbDB4TE03Vlk4dG4xRUZRdHdic3JvaWhwVnVoVUxXRWJCdkV0RzloaFNoRENjRUxET3pvT3NMSzgxcGlBaXRFVlRPd3pLaVhGUHhTbjlfMGhOd0ViaXBDNFJwTEhYdUp1R21yYWRTUW83bHFOOTJrY3Zv?oc=5",
+          "source": "El Momento Nacional",
+          "date": "2026-10-13",
+          "published_at": "2026-10-14T00:13:42Z",
+          "category": "CDMX",
+          "borough": "Venustiano Carranza",
+          "location": "Venustiano Carranza (mencionada en el titular)",
+          "local_url": "/noticias/?id=280a96ff72a713305c6d&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por El Momento Nacional trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           }
         },
         {
@@ -7059,8 +7097,36 @@
     },
     {
       "name": "Xochimilco",
-      "count": 23,
+      "count": 24,
       "articles": [
+        {
+          "title": "Balacera en Xochimilco deja un hombre muerto; investigan ataque",
+          "description": "La información publicada por Telediario trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQaWUxWV9lSmw2aENDVnEzRXJzRGNpZWdqWC04ZGJaQnAtWkZReGl3WUNSdHhFcVdGM01xa2NReTk3SzFjaGVxY19TQjBwYWZUdE1YWHpFZzg4cDBOeHh0WnpxMWxJbUJsOXp5X0RGTlZkXzhyRTQ3X1VQWlZ5MWR6TV9iSVMwSGJzYVpXOEw2YTFGM2Mx0gGUAUFVX3lxTE12QmlZdjdxbXV0aHp2Tk5qWEZQRFJhZFpRY0RvWmdWOEpkUlR3VW03aVphczV5UHcwRjJGaEp1aV9oVlR4dllTY0x6WWhrVGwtNGh0Ymw1bDBCcGVZMmhPOEdOb3FBalJEdVlrYThDX21aT2FOVkUzTGJsSnZBekFPM0djaHVfam5Ubm4zb0dGd29MWUY?oc=5",
+          "source": "Telediario",
+          "date": "2026-10-15",
+          "published_at": "2026-10-15T16:33:51Z",
+          "category": "CDMX",
+          "borough": "Xochimilco",
+          "location": "Xochimilco (mencionada en el titular)",
+          "local_url": "/noticias/?id=9bafcf1ae3b2605a17f3&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por Telediario trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_xochimilco",
+            "url": "/assets/alcaldias/xochimilco.jpg",
+            "category": "CDMX",
+            "borough": "Xochimilco",
+            "topic": "Trajineras y canales de Xochimilco",
+            "author": "Xbauerx",
+            "license": "CC BY-SA 4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Trajineras_de_Xochimilco.jpg"
+          }
+        },
         {
           "title": "Hombre es asesinado a balazos durante ataque en la colonia Tierra Nueva, Xochimilco",
           "description": "La información publicada por Telediario trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
