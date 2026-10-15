@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-15 07:51 UTC",
+  "updated": "2026-10-15 08:50 UTC",
   "boroughs": [
     {
       "name": "La Magdalena Contreras",
@@ -511,7 +511,7 @@
     },
     {
       "name": "Álvaro Obregón",
-      "count": 18,
+      "count": 20,
       "articles": [
         {
           "title": "2770: En la alcaldía Álvaro Obregón, uniformados de la SSC detuvieron a un hombre en posesión de varias dosis de aparente narcótico",
@@ -707,6 +707,42 @@
             "author": "Reginaesc",
             "license": "CC BY-SA 4.0",
             "source": "https://commons.wikimedia.org/wiki/File:Plaza_del_Carmen%2C_Regina_Escandon%2C_23.sep.15._San_%C3%81ngel%2C_Del._%C3%81lvaro_Obreg%C3%B3n_01000_Ciudad_de_M%C3%A9xico.JPG"
+          }
+        },
+        {
+          "title": "Mujeres impulsan mejoras en Álvaro Obregón: Casarín",
+          "description": "La información publicada por El Momento Nacional trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE15c2JqOEZxRWpBWFJJbzl5S1hmcUtOTGp1amdhLXhjeEpBOExVQm5QV3ZQelhqWWhzcThGMWZnOUFtRi1MTDlYWE9HOE1qNlUwdnU1NVFvUi1DNk5wVmMyVXlBUEhWdnd4UFp6SGQwU1kzWV9tZ2lJS25paHU?oc=5",
+          "source": "El Momento Nacional",
+          "date": "2026-10-13",
+          "published_at": "2026-10-14T01:24:09Z",
+          "category": "CDMX",
+          "borough": "Álvaro Obregón",
+          "location": "Álvaro Obregón (mencionada en el titular)",
+          "local_url": "/noticias/?id=4dd0ca1810f009c58e79&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por El Momento Nacional trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          }
+        },
+        {
+          "title": "Le prometió a su mamá que volvería pronto y terminó asesinado en calles de la Álvaro Obregón",
+          "description": "La información publicada por PostaMx trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNS20teWVseUtpUU40MFotWVFDbHhDTUlkSm9uTlE5NVBYaF82MkNoZDFNdnpYZk9rVUI3OVFDb2o1QU5sai15R284SUlSdFVDMHJHc2dLejVkeDViTzBZQjlvRTJjZzdyN05pVkJmQ1lPMzFsQ3Jpc2RPR2lJYjZhNDI5WUUyT3h2NktZV2lDU0lFX3RZM0drRHJKbUtmVW5odlY3ZVJVdmN5cUk4dzJhS3lWWEFvTUxWeDREUFJ5ZTh6Wl81SjFkQUJrd1rSAcwBQVVfeXFMTUttLXllbHlLaVFONDBaLVlRQ2x4Q01JZEpvbk5ROTVQWGhfNjJDaGQxTXZ6WGZPa1VCNzlRQ29qNUFObGoteUdvOElJUnRVQzByR3NnS3o1ZHg1Yk8wWUI5b0UyY2c3cjdOaVZCZkNZTzMxbENyaXNkT0dpSWI2YTQyOVlFMk94djZLWVdpQ1NJRV90WTNHa0RySm1LZlVuaHZWN2VSVXZjeXFJOHcyYUt5VlhBb01MVng0RFBSeWU4elpfNUoxZEFCa3da?oc=5",
+          "source": "PostaMx",
+          "date": "2026-10-13",
+          "published_at": "2026-10-13T18:38:18Z",
+          "category": "CDMX",
+          "borough": "Álvaro Obregón",
+          "location": "Álvaro Obregón (mencionada en el titular)",
+          "local_url": "/noticias/?id=9b15aaad8a8505c7dee2&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por PostaMx trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           }
         },
         {
