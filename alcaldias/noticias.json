@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-15 18:55 UTC",
+  "updated": "2026-10-15 19:43 UTC",
   "boroughs": [
     {
       "name": "La Magdalena Contreras",
@@ -1965,8 +1965,64 @@
     },
     {
       "name": "Coyoacán",
-      "count": 24,
+      "count": 26,
       "articles": [
+        {
+          "title": "2779: Oficiales de la SSC detuvieron a un hombre posiblemente relacionado con el robo de mercancía de una tienda de conveniencia, en Coyoacán",
+          "description": "La información publicada por Secretaría de Seguridad Ciudadana de la CDMX trata un asunto registrado en la sección de Seguridad del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFB3d1g0SnZRdUh5anBveGJBS3hzU1ltSktWRTB4R2J3Mkh6WTJwVEtkRGFSclBQa1hfTU5ZTzVVcmV6SXJBYjFYS3d2bFJFdXEtdXN0U0lBMHlkY0FINm5uMVFJUG11cUZSMWYzSUtlTQ?oc=5",
+          "source": "Secretaría de Seguridad Ciudadana de la CDMX",
+          "date": "2026-10-15",
+          "published_at": "2026-10-15T19:16:53Z",
+          "category": "Seguridad",
+          "borough": "Coyoacán",
+          "location": "Coyoacán (mencionada en el titular)",
+          "local_url": "/noticias/?id=140cf1ffe2b79257ba46&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por Secretaría de Seguridad Ciudadana de la CDMX trata un asunto registrado en la sección de Seguridad del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_coyoacan",
+            "url": "/assets/alcaldias/coyoacan.jpg",
+            "category": "CDMX",
+            "borough": "Coyoacán",
+            "topic": "Jardín Centenario de Coyoacán",
+            "author": "AlejandroLinaresGarcia",
+            "license": "CC BY-SA 4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:JardinCentenarioCoyoacan.JPG"
+          }
+        },
+        {
+          "title": "Alejandro Robles presentará el libro “Pueblo” de AMLO en Coyoacán",
+          "description": "La información publicada por Maya Comunicación trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNQ2p5SzlreTQ3WHdZM25QdHEtZDR5U0NwdVpPRmNUS2Vxd0sxTlplZFViaG5SWFdxVW1fTHAxNmVSNGtZcGx4V2FUcUNnVTZUQ19xUjVLeXNnN19lZnNwS1FmNjJKdE5YVEFqYWFDeHVzRmVLRXpmNzNCaDNrMTFkSVl1UlVEZjFRZE9OeFNzRXQ?oc=5",
+          "source": "Maya Comunicación",
+          "date": "2026-10-15",
+          "published_at": "2026-10-15T19:14:52Z",
+          "category": "CDMX",
+          "borough": "Coyoacán",
+          "location": "Coyoacán (mencionada en el titular)",
+          "local_url": "/noticias/?id=10dd4789b98a750aab2b&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por Maya Comunicación trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "archivo_cdmx_013",
+            "url": "/assets/fotos/archivo_cdmx_013.jpg",
+            "category": "CDMX",
+            "borough": "",
+            "topic": "D.F. - panoramio (9)",
+            "author": "eurimaco",
+            "license": "CC BY-SA 3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:D.F._-_panoramio_%289%29.jpg"
+          }
+        },
         {
           "title": "2769: Por su probable participación en un robo a una ciudadana, oficiales de la SSC detuvieron a dos personas, en la alcaldía Coyoacán",
           "description": "La información publicada por Secretaría de Seguridad Ciudadana de la CDMX trata un asunto registrado en la sección de Seguridad del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -2502,49 +2558,41 @@
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           }
-        },
-        {
-          "title": "Filarmónica de Coyoacán lleva concierto gratuito a Los Culhuacanes",
-          "description": "De acuerdo con un titular publicado por Capital CDMX, el tema de actualidad está relacionado con un asunto de interés público relacionado con la Ciudad de México. La atribución corresponde al medio citado, no a una comprobación independiente de nuestra redacción. El encabezado menciona Coyoacán; esa referencia no demuestra por sí misma dónde ocurrieron todos los hechos.",
-          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQYzk4VjVaTkFmMFRsczE5cnZ3RW8tTWtqb2NZOU5RZkw4RTA0TUw5T1FMMjlHTlFsamFVMFFzWU9xUFVHYlVpcW1kNGRPWWp2MnR6NTMxWFZyZVoyZ0E0QjdiY19PVFNXNk1WZmhWenhPRWlPYlhCVUU0cDRWNXEybFRUMk5jQnBKZkl2YmdRNWUtQmc5TkVRaVBR?oc=5",
-          "source": "Capital CDMX",
-          "date": "2026-10-11",
-          "published_at": "2026-10-11T23:06:13Z",
-          "category": "CDMX",
-          "borough": "Coyoacán",
-          "location": "Coyoacán (mencionada en el titular)",
-          "local_url": "/noticias/?id=0b44cdedcea07a53d570&mes=2026-10",
-          "brief": {
-            "lead": "De acuerdo con un titular publicado por Capital CDMX, el tema de actualidad está relacionado con un asunto de interés público relacionado con la Ciudad de México. La atribución corresponde al medio citado, no a una comprobación independiente de nuestra redacción. El encabezado menciona Coyoacán; esa referencia no demuestra por sí misma dónde ocurrieron todos los hechos.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
-        },
-        {
-          "title": "Cambio de nomenclatura en CDMX | La Alcaldía Coyoacán sustituirá 481 placas de calles en Santo Domingo y Educación",
-          "description": "De acuerdo con un titular publicado por El Cronista, el tema de actualidad está relacionado con un asunto de interés público relacionado con la Ciudad de México. La atribución corresponde al medio citado, no a una comprobación independiente de nuestra redacción. El encabezado menciona Coyoacán; esa referencia no demuestra por sí misma dónde ocurrieron todos los hechos.",
-          "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPM3NWbEJQSDRDSW5mMVV1RjlDYXJJbWVZTHczU1ZKdHZlTkxqOXBJZ0N6N21hdldrN2lTYzhlUW9hSjZHMVJCZVpLQjlIQTZ1dkpjaDNfSHJjamVDRlZ3RVdoZXhyMjdGX3hlVHRyQ2RyRTlQbUxhVENONUJmZ3daMEhvNTNLNzhSbnBKQk00YmhWSldWbm1uaXNvaXBxa3kwVmxTT3lMUEdPZjF5T25wRTVYWDRuclRkSVMwZzJaOXl6UGNON01CUExpVHROLXpJRzNBSks0SGwtOGo1RTJjQ0k1bk9ESGRLeUxXbjZDY0fSAYsCQVVfeXFMTWRHdkpnaGdlU0pwS3RuanQ4VnRqYlVxQkNpZmlXcE4ySmNHenhURzEwcUx2UndHQ21lUWRXdC1yUjBCeDUxTmtsMGVyUFZUZ0FxSGExZFUwT0FVV0t1SUFtWnBYbUIyM0ZoU1hYdGVuWTJ3VU1mSXREcWVzcHpKc1hBQ3lkY1IyVk44a05wSHhJcE1vam9yWFRpX2RpaWVWV2Y0TnJWZkg3dVkwRzRJbDZGWEtiRXJ6NjVvTnctM3NJN2RsS2ltdnBEZkdVWm50WFYyM3gtaWNtTVBNOFhZNkhlN3J4TWtfRjlXQm1PcmdvcHFqZS1jX0xCTG5DaUtrZ3FJWDA2YW9veG5r?oc=5",
-          "source": "El Cronista",
-          "date": "2026-10-09",
-          "published_at": "2026-10-10T01:26:04Z",
-          "category": "CDMX",
-          "borough": "Coyoacán",
-          "location": "Coyoacán (mencionada en el titular)",
-          "local_url": "/noticias/?id=af1fbe2a7d503d1971d1&mes=2026-10",
-          "brief": {
-            "lead": "De acuerdo con un titular publicado por El Cronista, el tema de actualidad está relacionado con un asunto de interés público relacionado con la Ciudad de México. La atribución corresponde al medio citado, no a una comprobación independiente de nuestra redacción. El encabezado menciona Coyoacán; esa referencia no demuestra por sí misma dónde ocurrieron todos los hechos.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
         }
       ]
     },
     {
       "name": "Cuajimalpa de Morelos",
-      "count": 8,
+      "count": 9,
       "articles": [
+        {
+          "title": "2777: En posesión de una réplica de arma de fuego, probables narcóticos y vaporizadores, policías de la SSC detuvieron a un hombre en calles de la alcaldía Cuajimalpa de Morelos",
+          "description": "La información publicada por Secretaría de Seguridad Ciudadana de la CDMX trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE83MnQtUnhhVXpZR1BLcVFmRWd4Q0RzT21vck5TZkJKckVEam1oR0lTcGxZX2FnQ2dfcUtsX3hjblByV0htM2NLbTljSW5wcXBtajhHWTJvT0pzSzNmR01uNHUxT09NSlR2cnZkNTg5bWFWdw?oc=5",
+          "source": "Secretaría de Seguridad Ciudadana de la CDMX",
+          "date": "2026-10-15",
+          "published_at": "2026-10-15T18:32:02Z",
+          "category": "CDMX",
+          "borough": "Cuajimalpa de Morelos",
+          "location": "Cuajimalpa de Morelos (mencionada en el titular)",
+          "local_url": "/noticias/?id=17b975ec039cc200ed00&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por Secretaría de Seguridad Ciudadana de la CDMX trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_cuajimalpa",
+            "url": "/assets/alcaldias/cuajimalpa.jpg",
+            "category": "CDMX",
+            "borough": "Cuajimalpa de Morelos",
+            "topic": "Centro del antiguo pueblo de Cuajimalpa",
+            "author": "AlejandroLinaresGarcia",
+            "license": "CC BY-SA 3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:CuajimalpaCentro01.JPG"
+          }
+        },
         {
           "title": "Cuajimalpa mantiene a la baja los delitos de alto impacto; disminuyen 16% de enero a septiembre",
           "description": "La información publicada por El Financiero trata un asunto registrado en la sección de Seguridad del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -3281,8 +3329,64 @@
     },
     {
       "name": "Gustavo A. Madero",
-      "count": 14,
+      "count": 16,
       "articles": [
+        {
+          "title": "2780: En la alcaldía Gustavo A. Madero, personal operativo de la SSC detuvo a un hombre en posesión de aparente droga",
+          "description": "La información publicada por Secretaría de Seguridad Ciudadana de la CDMX trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5EY1JNY0kxa1VQbEsteDQ2dVg1OTNqaTVocUNhcndKcVhXaEpnamJoRUZvbnRQM2p3U1ZrdjM3N2lKd0owWmhiMUs3U2RlbVdZZko0VGZHVE5vLXRYbTdMX3NVNV95cTU1clI0YXo1TUh1dw?oc=5",
+          "source": "Secretaría de Seguridad Ciudadana de la CDMX",
+          "date": "2026-10-15",
+          "published_at": "2026-10-15T19:31:06Z",
+          "category": "CDMX",
+          "borough": "Gustavo A. Madero",
+          "location": "Gustavo A. Madero (mencionada en el titular)",
+          "local_url": "/noticias/?id=114f6e87f53201b519f2&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por Secretaría de Seguridad Ciudadana de la CDMX trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_gustavo-a-madero",
+            "url": "/assets/alcaldias/gustavo-a-madero.jpg",
+            "category": "CDMX",
+            "borough": "Gustavo A. Madero",
+            "topic": "Capilla del Cerrito en el Tepeyac, Gustavo A. Madero",
+            "author": "Catedrales e Iglesias/Cathedrals and Churches",
+            "license": "CC BY 2.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Capilla_Cerrito_del_Tepeyac_%28Basilica_Nuestra_Se%C3%B1ora_de_Guadalupe%29_Gustavo_A_Madero%2C_Ciudad_de_M%C3%A9xico_02.jpg"
+          }
+        },
+        {
+          "title": "Muere Adulto Mayor en Calles de la Gustavo A. Madero",
+          "description": "La información publicada por N+ trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQSzB0Qzd6RlRCMGk0VUd4eGhRTTlOQlB5OXBpSDNoYXlINGJnQ0JuZEtuUU9nazhCT012aG4wemJxZTk5aklLUFN0bE0yOXotRllnUF9Tdm1ncG5ZdzBFQ0ZCSFdKU2NNLTJXYjRaYnpGTl9fNTdHSUdNejh3RlJrbTc1X1AwNktTWlBqRWFjRQ?oc=5",
+          "source": "N+",
+          "date": "2026-10-15",
+          "published_at": "2026-10-15T18:55:36Z",
+          "category": "CDMX",
+          "borough": "Gustavo A. Madero",
+          "location": "Gustavo A. Madero (mencionada en el titular)",
+          "local_url": "/noticias/?id=bc2b210929cc27034f89&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por N+ trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "reciente_f2fceb86e231b250",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Edificios%2C_Paseo_de_la_Reforma_%28CDMX%29_0131.jpg/1280px-Edificios%2C_Paseo_de_la_Reforma_%28CDMX%29_0131.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "category": "CDMX",
+            "borough": "",
+            "topic": "Edificios, Paseo de la Reforma (CDMX) 0131",
+            "author": "Juan Carlos Fonseca Mata",
+            "license": "CC BY-SA 4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Edificios,_Paseo_de_la_Reforma_(CDMX)_0131.jpg"
+          }
+        },
         {
           "title": "2771: En la alcaldía Gustavo A. Madero, personal de la SSC detuvo a dos hombres en posesión de 75 dosis de aparente marihuana",
           "description": "La información publicada por Secretaría de Seguridad Ciudadana de la CDMX trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -6439,8 +6543,36 @@
     },
     {
       "name": "Tlalpan",
-      "count": 46,
+      "count": 47,
       "articles": [
+        {
+          "title": "A Cristalazos: Así Opera el Ladrón de San Lorenzo Huipulco, Tlalpan",
+          "description": "La información publicada por N+ trata un asunto registrado en la sección de Seguridad del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQVjVMa3BnVHY4bUcyQmU0VWRDNlRGMVVNT2N3Q1lET1BQWkZoQ1JrOG1KTC1YV0hfYXpKSG53TkFmR21lWm1lVlh2T0VUU2MwVGFocDJXY1pMeDd0aklHTUNyQndrelJHRmNkNHowU2V6MHcwM0hXeGxwby1sdDk3UlFBeXlMNHc0NUNua1ozZGkwTUdwdlNJTzNsOGpTemlj?oc=5",
+          "source": "N+",
+          "date": "2026-10-15",
+          "published_at": "2026-10-15T19:19:27Z",
+          "category": "Seguridad",
+          "borough": "Tlalpan",
+          "location": "Tlalpan (mencionada en el titular)",
+          "local_url": "/noticias/?id=eca0a635fb3cf26821c5&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por N+ trata un asunto registrado en la sección de Seguridad del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_tlalpan",
+            "url": "/assets/alcaldias/tlalpan.jpg",
+            "category": "CDMX",
+            "borough": "Tlalpan",
+            "topic": "Quiosco de la plaza principal de Tlalpan",
+            "author": "farid estrada",
+            "license": "CC BY-SA 3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Kiosko_plaza_de_la_constitucion%2C_tlapan.JPG"
+          }
+        },
         {
           "title": "¡Se busca! Desaparece Ivonne Montero Villarreal, de 16 años, en Tlalpan; activan Alerta Amber en CDMX",
           "description": "Una publicación de www.adn40.mx informa sobre la búsqueda de una adolescente y menciona la activación de una Alerta Amber en Tlalpan. Por respeto a su privacidad, esta síntesis no reproduce datos personales adicionales ni especula sobre las circunstancias de la desaparición.",
@@ -7010,24 +7142,6 @@
           "local_url": "/noticias/?id=4d02109b40cf9eb6b6e6&mes=2026-10",
           "brief": {
             "lead": "De acuerdo con un titular publicado por La Política Online, el tema de actualidad está relacionado con un asunto de interés público relacionado con la Ciudad de México. La atribución corresponde al medio citado, no a una comprobación independiente de nuestra redacción. El encabezado menciona Tlalpan; esa referencia no demuestra por sí misma dónde ocurrieron todos los hechos.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
-        },
-        {
-          "title": "Detienen a hombre por matar a balazos a un perro en Tlalpan; dijo que le ladraba mucho",
-          "description": "De acuerdo con un titular publicado por Excélsior, el tema de actualidad está relacionado con un asunto de interés público relacionado con la Ciudad de México. La atribución corresponde al medio citado, no a una comprobación independiente de nuestra redacción. El encabezado menciona Tlalpan; esa referencia no demuestra por sí misma dónde ocurrieron todos los hechos.",
-          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQMmktem5HWm9VTUphRjdTUy1HUjlBM2d4QjlKazliOHpHMW9aXzhQMldLVXVJQTd4amF0UE94NXBTZW9lQXNHTkVwQWxZaWlWeUVFOVBxNXpYNEVPMHUwekYteFB3YmhLVVp0RE9SZnV1Z2FJVDlVWlRrWXVrZzhXVHBQN1djNXZaWGRPeFp5THlEUzExRWd3SWJuYmhZSzBBby1Ha002OFBmSXd4OHhoLXNxS3UxQV9KRVFn0gHAAUFVX3lxTE9DRXdlUEFRRklpelVINWJ4Rm43Vm5VbFlpbzl1WC1XTjktWXBKMy1Db2dLMEJiZGdwZjNVUWJ2bDZoZmRHQlF6VVJMZ0pWcjRHdnROdi14NHAzZ3pBb18wdFJld2NlQjBqMGhGelNoYWdUQW9oY3RidGVJNS1jQldvZlpxclNMUzhrYmJZdnJOam83OWxXRTYtUmExdDAwQWxyUUozWHdKazAzR1d1Q0RyWWF0aktwZFlQZGxWYTFISA?oc=5",
-          "source": "Excélsior",
-          "date": "2026-10-12",
-          "published_at": "2026-10-12T20:24:01Z",
-          "category": "CDMX",
-          "borough": "Tlalpan",
-          "location": "Tlalpan (mencionada en el titular)",
-          "local_url": "/noticias/?id=0179d6c76e340ac26f66&mes=2026-10",
-          "brief": {
-            "lead": "De acuerdo con un titular publicado por Excélsior, el tema de actualidad está relacionado con un asunto de interés público relacionado con la Ciudad de México. La atribución corresponde al medio citado, no a una comprobación independiente de nuestra redacción. El encabezado menciona Tlalpan; esa referencia no demuestra por sí misma dónde ocurrieron todos los hechos.",
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
