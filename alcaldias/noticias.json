@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-14 23:40 UTC",
+  "updated": "2026-10-15 00:55 UTC",
   "boroughs": [
     {
       "name": "La Magdalena Contreras",
@@ -501,8 +501,36 @@
     },
     {
       "name": "Álvaro Obregón",
-      "count": 14,
+      "count": 15,
       "articles": [
+        {
+          "title": "Vuelca Camioneta de Carga en Torres de Potrero, Alcaldía Álvaro Obregón",
+          "description": "La información publicada por N+ trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNcmZiTUhfRk5TUFY1ZEh0Wk5HeXNDT2MyYzRKMU5OalotNHhYdm9TVDNNdk43bWM4cTVoQWFtM2YtT1prazRLQXg3dGh4djZNT1RicnFuVXhCYkdQQUV0aUt6NEFJcDdJbXY3MHh3R1FzSWcxcE1KeWhpUGtoc0I4SUVGcWFyTklCQWlRcXRPOGp5RnByZEVrYmhFYkI4cl9jSnREQl90QVRQNmVFdlN0a2puY203ZkZYNDkwMXpHdWxyUlItZUZsZDNGci12Q3cyRlZ4OUVrR3JVNkNQYU91QQ?oc=5",
+          "source": "N+",
+          "date": "2026-10-14",
+          "published_at": "2026-10-15T00:46:14Z",
+          "category": "CDMX",
+          "borough": "Álvaro Obregón",
+          "location": "Álvaro Obregón (mencionada en el titular)",
+          "local_url": "/noticias/?id=cd9a66e74d310842e361&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por N+ trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_alvaro-obregon",
+            "url": "/assets/alcaldias/alvaro-obregon.jpg",
+            "category": "CDMX",
+            "borough": "Álvaro Obregón",
+            "topic": "Plaza del Carmen, barrio de San Ángel",
+            "author": "Reginaesc",
+            "license": "CC BY-SA 4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Plaza_del_Carmen%2C_Regina_Escandon%2C_23.sep.15._San_%C3%81ngel%2C_Del._%C3%81lvaro_Obreg%C3%B3n_01000_Ciudad_de_M%C3%A9xico.JPG"
+          }
+        },
         {
           "title": "Cierran Calzada de las Águilas por Mega Fuga de Agua en Álvaro Obregón",
           "description": "La información publicada por N+ trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -1693,8 +1721,64 @@
     },
     {
       "name": "Coyoacán",
-      "count": 18,
+      "count": 20,
       "articles": [
+        {
+          "title": "Intensa lluvia con granizo provoca severos encharcamientos en Coyoacán",
+          "description": "El pronóstico recogido por El Sol de México se refiere a lluvias en Coyoacán. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
+          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOLS0yR2tNc2Zoc2I4aDVfYTBDVkZPQUk3RFNQaVBfek5TM3ltRm84V3pSYjR2aDhTcW05SGNqOUJCWjhmNmpBYXpvLXdDUS1SRklCUlVSS3FiYzU5X1Rma2JKXzFVVEJJYjlXOGhkYWlvem42ZkJLaEdhU3ZWN3BCVFdiUno2QVJBWTA4VWpld2txeThsUmtxVE5fTC1naTBSbVVyYjlZU1pzRFV6LVdVWVRpUUFkbUkzR1JQZWhQc2NIcTYweUpRN3BFbmE?oc=5",
+          "source": "El Sol de México",
+          "date": "2026-10-14",
+          "published_at": "2026-10-15T00:11:55Z",
+          "category": "CDMX",
+          "borough": "Coyoacán",
+          "location": "Coyoacán (mencionada en el titular)",
+          "local_url": "/noticias/?id=c1883410508efb9406f1&mes=2026-10",
+          "brief": {
+            "lead": "El pronóstico recogido por El Sol de México se refiere a lluvias en Coyoacán. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_coyoacan",
+            "url": "/assets/alcaldias/coyoacan.jpg",
+            "category": "CDMX",
+            "borough": "Coyoacán",
+            "topic": "Jardín Centenario de Coyoacán",
+            "author": "AlejandroLinaresGarcia",
+            "license": "CC BY-SA 4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:JardinCentenarioCoyoacan.JPG"
+          }
+        },
+        {
+          "title": "'Bastante Granizo': Vecino de Coyoacán Temió que se Rompieran los Domos de su Casa",
+          "description": "La información publicada por N+ trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOWDdhS1cwdWhoYm9kaUdXdUJMdmZ1c3gzWEliYjhjMHR4ZXJCR2RBQkgwenBVa3Y4X244b1M5bWJyUzJ0X1M1Qm5sNTFEX2dmYnIwOElDU1FZZkl4RHYwYk85U1hvMUl1eVJ1eXZCaEtBZGhqN25yeG9sSWZ3SUhMSV95dzlxV1JlOFA3SEhnQjJJQVQ4VGZEanc0aG1pdThhUUlKUUpzek5Qak9fZDhaU2duZ0lFYnBhOGktb0V6NTNmUQ?oc=5",
+          "source": "N+",
+          "date": "2026-10-14",
+          "published_at": "2026-10-14T23:45:02Z",
+          "category": "CDMX",
+          "borough": "Coyoacán",
+          "location": "Coyoacán (mencionada en el titular)",
+          "local_url": "/noticias/?id=73f81a804c8d51fe04c6&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por N+ trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "archivo_cdmx_014",
+            "url": "/assets/fotos/archivo_cdmx_014.jpg",
+            "category": "CDMX",
+            "borough": "",
+            "topic": "Cathedral (155478679)",
+            "author": "Francisco Donaldo Cabrera Cruz",
+            "license": "CC BY-SA 3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Cathedral_%28155478679%29.jpeg"
+          }
+        },
         {
           "title": "Fuerte Lluvia con Granizo Cubren Calles de Coyoacán, CDMX",
           "description": "El pronóstico recogido por N+ se refiere a lluvias en Coyoacán. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
@@ -2245,8 +2329,36 @@
     },
     {
       "name": "Cuauhtémoc",
-      "count": 25,
+      "count": 26,
       "articles": [
+        {
+          "title": "Citlalli Hernández se descarta para la Cuauhtémoc: “No tengo interés en una candidatura”",
+          "description": "La información publicada por Proceso trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOR1JVamtBRXhYbTNaOHRpaE1PbHVVYWs3UE5TdWJkVGJPbXFUS2NNOHNCbkRqRFN2UktWMVdJdVN6dnZXazEzYl9DeUNCdm5PTkR5M1ZRNUtsOXIxcmhEdERmbVFyemN5bXVOeWN4RVNMeHJZQ2FCTjlUZGFQa2lWVG4tajZTOWZrSEoydWdZUGdBY3JNTEplSHVnbHlmR3JHRTNpSFRXbW16RXNtd3k2bndkekVZTzM1UkRaQWM2OUJCZk1nc1NVNkhOeUF0bWdLZW5TVGd2cy1ycUp6ODNhQ2tPSQ?oc=5",
+          "source": "Proceso",
+          "date": "2026-10-14",
+          "published_at": "2026-10-14T23:52:00Z",
+          "category": "CDMX",
+          "borough": "Cuauhtémoc",
+          "location": "Cuauhtémoc (mencionada en el titular)",
+          "local_url": "/noticias/?id=be994915b5176e5f6af1&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por Proceso trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_cuauhtemoc",
+            "url": "/assets/alcaldias/cuauhtemoc.jpg",
+            "category": "CDMX",
+            "borough": "Cuauhtémoc",
+            "topic": "Palacio de Bellas Artes en la alcaldía Cuauhtémoc",
+            "author": "Timothy Neesam",
+            "license": "CC BY-SA 4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Palacio_de_Bellas_Artes%2C_Mexico_City%2C_MX.jpg"
+          }
+        },
         {
           "title": "Descarta Citlali inscribirse para buscar la alcaldía Cuauhtémoc",
           "description": "La información publicada por Capital CDMX trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -2720,24 +2832,6 @@
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           }
-        },
-        {
-          "title": "Fuerte Lluvia en la Colonia Buenavista de la Alcaldía Cuauhtémoc, en CDMX",
-          "description": "De acuerdo con un titular publicado por N+, el tema de actualidad está relacionado con un asunto de interés público relacionado con la Ciudad de México. La atribución corresponde al medio citado, no a una comprobación independiente de nuestra redacción. El encabezado menciona Cuauhtémoc; esa referencia no demuestra por sí misma dónde ocurrieron todos los hechos.",
-          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOUEtUVUwySmRBUHJ6VmN1MzllRnY5VlhHY2JZRFZkWlVwbFhDQ1g1TjQ3MjNCWndlc0MyYmNZVHE5X1FjdHB4UlBDaDdaRVlheEJzWkJ2NExNV3BITEFKb25RTVFjaXFZTnFfWnMzbGVIR3Ywc1M4bGxRWV9meklLUVE3NlFrUUxWNHJhTU1ZMWZZUE05anNuWDBiYXRjcVVseHhyQWhzMDE?oc=5",
-          "source": "N+",
-          "date": "2026-10-09",
-          "published_at": "2026-10-10T01:57:08Z",
-          "category": "CDMX",
-          "borough": "Cuauhtémoc",
-          "location": "Cuauhtémoc (mencionada en el titular)",
-          "local_url": "/noticias/?id=5033c462eda5c5496601&mes=2026-10",
-          "brief": {
-            "lead": "De acuerdo con un titular publicado por N+, el tema de actualidad está relacionado con un asunto de interés público relacionado con la Ciudad de México. La atribución corresponde al medio citado, no a una comprobación independiente de nuestra redacción. El encabezado menciona Cuauhtémoc; esa referencia no demuestra por sí misma dónde ocurrieron todos los hechos.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
         }
       ]
     },
@@ -2939,8 +3033,36 @@
     },
     {
       "name": "Iztacalco",
-      "count": 29,
+      "count": 30,
       "articles": [
+        {
+          "title": "¡Eran de 'Los Tanzanios'! Sujetos intentan asaltar a jóvenes en Iztacalco; les dispararon al defenderse | VIDEO",
+          "description": "Una nota de Telediario comunica un caso relacionado con una detención o una presunta conducta delictiva en Iztacalco. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNenNkM1cyMjhkNWN2QVE5aEpmQzdtd3AyZ1JYQTByZkZKZU9PMmZSdGdHZzZTLU1hMTNVRngtZ3VHWkNhQkp6b0R1R0wydG9YVk9ta0JURnl2Y2hVVTExbUdXc0FvMFlPRXFxQ2lIdk1EazRIOUpfMGhPWUljMmpPSDVmaXFvenFfa1duQWVUVVRQQ0RnSnZidWJLNjNrdW5VclE?oc=5",
+          "source": "Telediario",
+          "date": "2026-10-14",
+          "published_at": "2026-10-14T23:52:00Z",
+          "category": "CDMX",
+          "borough": "Iztacalco",
+          "location": "Iztacalco (mencionada en el titular)",
+          "local_url": "/noticias/?id=0767809413ef9578a8c8&mes=2026-10",
+          "brief": {
+            "lead": "Una nota de Telediario comunica un caso relacionado con una detención o una presunta conducta delictiva en Iztacalco. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_iztacalco",
+            "url": "/assets/alcaldias/iztacalco.jpg",
+            "category": "CDMX",
+            "borough": "Iztacalco",
+            "topic": "Iglesia de San Matías en el antiguo pueblo de Iztacalco",
+            "author": "AlejandroLinaresGarcia",
+            "license": "CC BY-SA 3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:SanMatiasChurchIztacalco02.jpg"
+          }
+        },
         {
           "title": "Inaugura CONSAR la Feria de Afores 2026 en Iztacalco",
           "description": "Según Gob MX, una feria sobre administradoras del ahorro para el retiro se realiza o anuncia en Iztacalco. Antes de asistir conviene comprobar fechas, horarios y servicios directamente con la institución.",
@@ -3464,31 +3586,41 @@
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           }
-        },
-        {
-          "title": "Inaugura CONSAR la Feria de Afores 2026 en Iztacalco",
-          "description": "De acuerdo con un titular publicado por Gob MX, el tema de actualidad está relacionado con un asunto de interés público relacionado con la Ciudad de México. La atribución corresponde al medio citado, no a una comprobación independiente de nuestra redacción. El encabezado menciona Iztacalco; esa referencia no demuestra por sí misma dónde ocurrieron todos los hechos.",
-          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPXzMxbTNNQzVQSDMwMklBU1RxNnJyMEhINWxObExwUElKY3p2VXM1bE54aXl6UWhIMWhrenhQNk1zRDJCdlVLTmxsQkRxRXNzZm82X3ZibFZFZzJheHpYWlY1Y091Zk9QdHE2NVVQN1NWZm92OURXZ0dKZm5zSWdvMFFMVkZzNUZYR3lQS1ZjWnk2Tm1HYTRqWTNncUxuc2tyd0x4V2FkZw?oc=5",
-          "source": "Gob MX",
-          "date": "2026-10-11",
-          "published_at": "2026-10-11T21:50:25Z",
-          "category": "CDMX",
-          "borough": "Iztacalco",
-          "location": "Iztacalco (mencionada en el titular)",
-          "local_url": "/noticias/?id=5247684f18495678806f&mes=2026-10",
-          "brief": {
-            "lead": "De acuerdo con un titular publicado por Gob MX, el tema de actualidad está relacionado con un asunto de interés público relacionado con la Ciudad de México. La atribución corresponde al medio citado, no a una comprobación independiente de nuestra redacción. El encabezado menciona Iztacalco; esa referencia no demuestra por sí misma dónde ocurrieron todos los hechos.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
         }
       ]
     },
     {
       "name": "Iztapalapa",
-      "count": 39,
+      "count": 40,
       "articles": [
+        {
+          "title": "Detienen a joven por el asesinato de una adulta mayor en la balacera del tianguis de El Salado, Iztapalapa",
+          "description": "Una nota de Telediario comunica un caso relacionado con una detención o una presunta conducta delictiva en Iztapalapa. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
+          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQbnRVdE95RHdXWnEzUzRxbm5CekNFZFlIU3RycVhEWHBST2dlUF80N1UtVWhUZFhpSVVWT0NLTUY2S1RPSW9Fb09RX2I4aTMtMFpzNy1nV3FrbWNKWGM2SlZHTE1qMDRFaFEzMmtGcHA3dk00SXZOUW9obU5SV29SM3EyMUR1QVc0VUFOSFhQSWdYcVN20gGUAUFVX3lxTFBudFV0T3lEd1dacTNTNHFubkJ6Q0VkWUhTdHJxWERYcFJPZ2VQXzQ3VS1VaFRkWGlJVVZPQ0tNRjZLVE9Jb0VvT1FfYjhpMy0wWnM3LWdXcWttY0pYYzZKVkdMTWowNEVoUTMya0ZwcDd2TTRJdk5Rb2htTlJXb1IzcTIxRHVBVzRVQU5IWFBJZ1hxU3Y?oc=5",
+          "source": "Telediario",
+          "date": "2026-10-14",
+          "published_at": "2026-10-14T22:38:00Z",
+          "category": "CDMX",
+          "borough": "Iztapalapa",
+          "location": "Iztapalapa (mencionada en el titular)",
+          "local_url": "/noticias/?id=10fdfb3ac72715a6d20e&mes=2026-10",
+          "brief": {
+            "lead": "Una nota de Telediario comunica un caso relacionado con una detención o una presunta conducta delictiva en Iztapalapa. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_tlahuac",
+            "url": "/assets/alcaldias/tlahuac.jpg",
+            "category": "CDMX",
+            "borough": "Tláhuac",
+            "topic": "Plaza central de San Pedro Tláhuac",
+            "author": "Yavidaxiu",
+            "license": "CC BY 3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Tl%C3%A1huac-Plaza_central.JPG"
+          }
+        },
         {
           "title": "Detienen a Omar N acusado de abandonar el cuerpo de un sujeto en calles de Iztapalapa",
           "description": "Una nota de El Sol de México comunica un caso relacionado con una detención o una presunta conducta delictiva en Iztapalapa. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
@@ -4028,24 +4160,6 @@
           "local_url": "/noticias/?id=9f5a010365756b18b1ac&mes=2026-10",
           "brief": {
             "lead": "La publicación de Reporte Indigo plantea una pregunta sobre un asunto de interés público relacionado con la Ciudad de México. El encabezado invita a conocer una respuesta que no puede darse por comprobada solo con el índice de noticias. El encabezado menciona Iztapalapa; esa referencia no demuestra por sí misma dónde ocurrieron todos los hechos.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
-        },
-        {
-          "title": "Iztapalapa impulsa el boxeo y garantiza apoyo a niños, adolescentes y deportistas",
-          "description": "La información publicada por El Sol de México trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQVGdKWHQ3N1UyQ1d1ZHIzVUFfX0Q3UUMyc2pQMzRxMkZZSUYwN0NPTWpMQVJPbFI2ZmVhak9ueUQtUTliLW5CRDJZYmR3TU1lLS1qVHVOOEF0bF9XcHNOXzhWVXBGOFBhcU41SVc0a0VQOWNkemhGWmNLUnpsUkRjN212eTIyZ0Jfd2t5WGtCU3ljVVBqNHVrSHpHOVIzRVNDdDJsOGNHeFlyWW9qLU42NnlCUXB4VEw1aElhRmQxdGw0aEdLcGJn?oc=5",
-          "source": "El Sol de México",
-          "date": "2026-10-10",
-          "published_at": "2026-10-11T03:23:37Z",
-          "category": "CDMX",
-          "borough": "Iztapalapa",
-          "location": "Iztapalapa (mencionada en el titular)",
-          "local_url": "/noticias/?id=fdc8252ddd5cea1f660e&mes=2026-10",
-          "brief": {
-            "lead": "La información publicada por El Sol de México trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
@@ -6261,8 +6375,36 @@
     },
     {
       "name": "Xochimilco",
-      "count": 19,
+      "count": 20,
       "articles": [
+        {
+          "title": "Caída de Árbol Suspende el Servicio del Tren Ligero en Xochimilco, CDMX",
+          "description": "La información publicada por N+ trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOVFVnUXlCTEtOSWlwM2ppc2FtdWtJUGd2Z2VtWTY3elc0bTNEMDZSem9Ua1dxMEMyT1dubHUwYVJ2N1I2MHp1RlhIYVktZUdoVF9ialB0eXN5OXVQQ1BHVzlHb3R6b0ZudEVDdDV2a2lBNC1RQ09YM3IwNVdQZFJNWkRLOVBVWk4xNGEtd2tfeTROUXNCd0Y4TFVFcnk2aVMwd0ppd2lncFlCZnhNZHN4eXplNk1acFZBVEkxcFE1Q0c2NTJDSmR1YXRlOHRHSlJfRW0xbGlqMnBldw?oc=5",
+          "source": "N+",
+          "date": "2026-10-14",
+          "published_at": "2026-10-15T00:41:53Z",
+          "category": "CDMX",
+          "borough": "Xochimilco",
+          "location": "Xochimilco (mencionada en el titular)",
+          "local_url": "/noticias/?id=42f64f95fca00886e280&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por N+ trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_xochimilco",
+            "url": "/assets/alcaldias/xochimilco.jpg",
+            "category": "CDMX",
+            "borough": "Xochimilco",
+            "topic": "Trajineras y canales de Xochimilco",
+            "author": "Xbauerx",
+            "license": "CC BY-SA 4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Trajineras_de_Xochimilco.jpg"
+          }
+        },
         {
           "title": "Festival de pulque y ofrendas llega a Xochimilco por Día de Muertos: fechas, horarios y cómo llegar",
           "description": "La información publicada por Infobae trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
