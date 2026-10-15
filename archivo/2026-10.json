@@ -1,7 +1,315 @@
 {
   "month": "2026-10",
-  "updated": "2026-10-15 04:46 UTC",
+  "updated": "2026-10-15 05:45 UTC",
   "articles": [
+    {
+      "title": "UNAM y Gobierno de la CDMX construirán nueva ENES en el suroriente para 20 mil estudiantes",
+      "description": "En su información, Revista Fortuna aborda una decisión, declaración o debate relacionado con las instituciones de la ciudad. Conviene distinguir la intención anunciada de las resoluciones que hayan sido aprobadas y publicado oficialmente.",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQeVAwOVRSVThJLWZrRGxHRVBReUkxLVpSc3RnempLRDV5bEtJTl9oS2Z2dkpsZ3hHNjdXQTNSZXR1MEtsUGlhY1V4ano3R2wxNGFmb3VQZGV0cEFEbVJuZm0yaHA5MHJ6VGpwQnliV3NLYUJDRm1WdDJJNEd3UnFQMVRRUzRZbVVnU2ZpN1dWNmxfRWdqWnFPSTdyNDBBWWhrZmZBYTdXMy1saHFqOVRsUFA1TUJOcExyek5UZkVKMG8tNW80bzEtN3R0R0U?oc=5",
+      "source": "Revista Fortuna",
+      "date": "2026-10-14",
+      "published_at": "2026-10-15T05:32:13Z",
+      "category": "Gobierno",
+      "borough": "",
+      "location": "Ciudad de México (sin alcaldía identificada)",
+      "local_url": "/noticias/?id=b0a09ca05cadc4757f6a&mes=2026-10",
+      "brief": {
+        "lead": "En su información, Revista Fortuna aborda una decisión, declaración o debate relacionado con las instituciones de la ciudad. Conviene distinguir la intención anunciada de las resoluciones que hayan sido aprobadas y publicado oficialmente.",
+        "context": "Las decisiones administrativas pueden influir en servicios, trámites y derechos; conviene conocer sus condiciones y a quiénes afectan.",
+        "pending": "Es indispensable consultar los acuerdos, comunicados o documentos oficiales antes de dar una medida por vigente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "archivo_gobierno_001",
+        "url": "/assets/fotos/archivo_gobierno_001.jpg",
+        "category": "Gobierno",
+        "borough": "",
+        "topic": "Palacio de Bellas Artes",
+        "author": "Carolina López",
+        "license": "CC BY 2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Palacio_de_Bellas_Artes.jpg"
+      }
+    },
+    {
+      "title": "Clima en Álvaro Obregón: jueves 15 de octubre con lluvia ligera y ambiente templado",
+      "description": "El pronóstico recogido por El Heraldo de México se refiere a lluvias ligeras en Álvaro Obregón. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQX21meVBVVHBDbG9qYVdHQWY4RFI1Y1NSVVdCXzFKOUxvTnFMaW9FU2RUV29zdVdCRHZZRWs3dmZDcm52ZVplX2ZlUUdEU1ktUVBCZHhRaXlMeVRSdDFkNlhyVTZ3NGJtZFBLSW5ESEV2OGl3ZjlHcmZJUU51Ymwtd1pkbGI4ZGlHUlNrSGdtbC1IQ0h1ZTJXVjJ6LXFwQzVnbGNHbjB3YWNjQnVCNmlXZ2RCTzUyUS1WdzY3RV9GZ2ZSM1JleTlBQkVSTW1fRGZUU1Vta1RtWW5oeUU?oc=5",
+      "source": "El Heraldo de México",
+      "date": "2026-10-14",
+      "published_at": "2026-10-15T05:00:00Z",
+      "category": "CDMX",
+      "borough": "Álvaro Obregón",
+      "location": "Álvaro Obregón (mencionada en el titular)",
+      "local_url": "/noticias/?id=8194e35bd644bba2ffd4&mes=2026-10",
+      "brief": {
+        "lead": "El pronóstico recogido por El Heraldo de México se refiere a lluvias ligeras en Álvaro Obregón. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
+        "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+        "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "alcaldia_alvaro-obregon",
+        "url": "/assets/alcaldias/alvaro-obregon.jpg",
+        "category": "CDMX",
+        "borough": "Álvaro Obregón",
+        "topic": "Plaza del Carmen, barrio de San Ángel",
+        "author": "Reginaesc",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Plaza_del_Carmen%2C_Regina_Escandon%2C_23.sep.15._San_%C3%81ngel%2C_Del._%C3%81lvaro_Obreg%C3%B3n_01000_Ciudad_de_M%C3%A9xico.JPG"
+      }
+    },
+    {
+      "title": "Clima en Azcapotzalco: pronóstico de lluvia ligera para este jueves 15 de octubre",
+      "description": "El pronóstico recogido por El Heraldo de México se refiere a lluvias ligeras en Azcapotzalco. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPangyZExBMm8wMExpQ3dQSllBODE4d0R3aWRCdVdBWFN5aWJSNVZ2emF1elNIWXNIb1hfZWNKMmpLM29uLVNJOURCT2VrSi1mTVBwRm43bzRGWVItVXRnaDRYeHNVTHFRNDF1M0xOUmxNeFNkd3dwSVZKS3BSTGlURGtHSHFxYnhfRzNoUEdja0dtRWMwcTBIOE1yWWRnMmN6cmV3N1QtUm5YcC1lMzl5MFVGM0xCTGZNb2g3UXl2dUpqdzlsZVd3ZGF5UDFGdU5Hc0tPaVNNVzJIdnc?oc=5",
+      "source": "El Heraldo de México",
+      "date": "2026-10-14",
+      "published_at": "2026-10-15T05:00:00Z",
+      "category": "CDMX",
+      "borough": "Azcapotzalco",
+      "location": "Azcapotzalco (mencionada en el titular)",
+      "local_url": "/noticias/?id=300ae33c9b882cde6044&mes=2026-10",
+      "brief": {
+        "lead": "El pronóstico recogido por El Heraldo de México se refiere a lluvias ligeras en Azcapotzalco. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
+        "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+        "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "alcaldia_azcapotzalco",
+        "url": "/assets/alcaldias/azcapotzalco.jpg",
+        "category": "CDMX",
+        "borough": "Azcapotzalco",
+        "topic": "Parroquia de Santa Catarina, Azcapotzalco",
+        "author": "Ivan alcantara",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:PARROQUIA_DE_SANTA_CATARINA_%28AZCAPOTZALCO%29.jpg"
+      }
+    },
+    {
+      "title": "Clima en Coyoacán: Jueves 15 de octubre con lluvia ligera y ambiente templado",
+      "description": "El pronóstico recogido por El Heraldo de México se refiere a lluvias ligeras en Coyoacán. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNNW5JempkUkhZRjg3STNuSmQwR2xuTG9KSm1aMnFFckRyNkdDbjAtbXJ6c0V6SGU5X1JIak5GcHF5VExMLXBPdWllMkpIMG5ONjZGVmVreWpDRXktWGVmaS1hN1g0RklVUVd5WldZVThBT3JlZjE3SXVHRENDSmllR1hJa281LWZKN3NYdnYzaFplN01sWFhYU1VVQjBSeU5HUUwtRm1QSDYwRHd2emI5amlfNU5PSERaWmNHT3kxVi1MNnVWR3RTQjI5Tno0SUp1QW1J?oc=5",
+      "source": "El Heraldo de México",
+      "date": "2026-10-14",
+      "published_at": "2026-10-15T05:00:00Z",
+      "category": "CDMX",
+      "borough": "Coyoacán",
+      "location": "Coyoacán (mencionada en el titular)",
+      "local_url": "/noticias/?id=e652a3fafbad19702f06&mes=2026-10",
+      "brief": {
+        "lead": "El pronóstico recogido por El Heraldo de México se refiere a lluvias ligeras en Coyoacán. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
+        "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+        "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "alcaldia_coyoacan",
+        "url": "/assets/alcaldias/coyoacan.jpg",
+        "category": "CDMX",
+        "borough": "Coyoacán",
+        "topic": "Jardín Centenario de Coyoacán",
+        "author": "AlejandroLinaresGarcia",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:JardinCentenarioCoyoacan.JPG"
+      }
+    },
+    {
+      "title": "Clima en Alcaldía Cuauhtémoc: Jueves 15 de octubre con lluvia ligera y ambiente templado",
+      "description": "El pronóstico recogido por El Heraldo de México se refiere a lluvias ligeras en Cuauhtémoc. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
+      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPTk5pdWhjNkZJQTZPMXhOa1FHQnU5VVhMTzV4V0tOcmFvbkp3RmhzLWhqb2JMc2tMMmptSEIxUVVoaFdDTS1RQ0lkZ0NjenIyMXhOTW1nM1hTV0puMEtwUWl6WTg5azVEdUtMZzVrOFpITXJRdGQxeUgwYlA4bWNXeWV4SC1fNFZBZzRWZVJJT2NET3VkVnZ1T1k4em9XU3BDRUo5M1AzU1NLdEhCVUVrNmdtdmItVnZubWRaQ3ZXUmdYbDZhSTBqX2djNWRKV3NHeDUyc2NscVJZZEtVUmJqb2ZB?oc=5",
+      "source": "El Heraldo de México",
+      "date": "2026-10-14",
+      "published_at": "2026-10-15T05:00:00Z",
+      "category": "CDMX",
+      "borough": "Cuauhtémoc",
+      "location": "Cuauhtémoc (mencionada en el titular)",
+      "local_url": "/noticias/?id=1feadb9794f45edd5bbb&mes=2026-10",
+      "brief": {
+        "lead": "El pronóstico recogido por El Heraldo de México se refiere a lluvias ligeras en Cuauhtémoc. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
+        "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+        "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "alcaldia_cuauhtemoc",
+        "url": "/assets/alcaldias/cuauhtemoc.jpg",
+        "category": "CDMX",
+        "borough": "Cuauhtémoc",
+        "topic": "Palacio de Bellas Artes en la alcaldía Cuauhtémoc",
+        "author": "Timothy Neesam",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Palacio_de_Bellas_Artes%2C_Mexico_City%2C_MX.jpg"
+      }
+    },
+    {
+      "title": "Pronóstico del clima en Gustavo A. Madero: Jueves 15 de octubre con lluvia ligera",
+      "description": "El pronóstico recogido por El Heraldo de México se refiere a lluvias ligeras en Gustavo A. Madero. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
+      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPQmo0Q2RYTEVzdGxPa2dCbE5ESHZvTkZ0TEhvMDNuT1ZBQlNLWllESjlldGxTV3JnMGpHS0JObF9SQVFSd05QM2N3RUNmUWRBXy1Qb0pCdTNjVFJoRU93X0l0NHViVDZQNGE3VlA2eTdLRmdnRkIyYXRIOXY2OU1Xd0FPQWh2ZHMwVWtWNWQzUUNaNEtKYW52RHoySWU3YWJtM29WTnQzbTdkck84QmJTNnEtSEdxWThpLU5MdklSLU1UZ0JodG5RZFdsMURnVGU5a1pjQ2hiYzQ5UQ?oc=5",
+      "source": "El Heraldo de México",
+      "date": "2026-10-14",
+      "published_at": "2026-10-15T05:00:00Z",
+      "category": "CDMX",
+      "borough": "Gustavo A. Madero",
+      "location": "Gustavo A. Madero (mencionada en el titular)",
+      "local_url": "/noticias/?id=eaa02aab03dd9e2d8dc0&mes=2026-10",
+      "brief": {
+        "lead": "El pronóstico recogido por El Heraldo de México se refiere a lluvias ligeras en Gustavo A. Madero. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
+        "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+        "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "alcaldia_gustavo-a-madero",
+        "url": "/assets/alcaldias/gustavo-a-madero.jpg",
+        "category": "CDMX",
+        "borough": "Gustavo A. Madero",
+        "topic": "Capilla del Cerrito en el Tepeyac, Gustavo A. Madero",
+        "author": "Catedrales e Iglesias/Cathedrals and Churches",
+        "license": "CC BY 2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Capilla_Cerrito_del_Tepeyac_%28Basilica_Nuestra_Se%C3%B1ora_de_Guadalupe%29_Gustavo_A_Madero%2C_Ciudad_de_M%C3%A9xico_02.jpg"
+      }
+    },
+    {
+      "title": "Clima en Miguel Hidalgo: jueves 15 de octubre con lluvia ligera y ambiente templado",
+      "description": "El pronóstico recogido por El Heraldo de México se refiere a lluvias ligeras en Miguel Hidalgo. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNOFNOWVgwc2tQRGlIWnpmUGw1a2l6SEQtMlNoLVl3d1kyZ1Vfd0I3dDRnNzhCZExQUFRaNXVZbk9SSUxaUDN3NWNGallmVW1YbFNyN0hEQUtWbXhSSTZQM3BwZVVJV2NTU0xPVk9WUXZ5VDBZRE92U0FVUVpNUUdxTjVNR09mc1V3Z2tTSlJBOF9QaXNGZzJPSnA0bXkzVUx5dGMyV21lOExNVGpkbnB5WVZVMWFwM2c1eHpyeGc2b1FHYWJjOTdQd3pJSEl0d21ESHpjc3lwV3JUTTg?oc=5",
+      "source": "El Heraldo de México",
+      "date": "2026-10-14",
+      "published_at": "2026-10-15T05:00:00Z",
+      "category": "CDMX",
+      "borough": "Miguel Hidalgo",
+      "location": "Miguel Hidalgo (mencionada en el titular)",
+      "local_url": "/noticias/?id=daf29c130f0420aa3158&mes=2026-10",
+      "brief": {
+        "lead": "El pronóstico recogido por El Heraldo de México se refiere a lluvias ligeras en Miguel Hidalgo. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
+        "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+        "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "alcaldia_miguel-hidalgo",
+        "url": "/assets/alcaldias/miguel-hidalgo.jpg",
+        "category": "CDMX",
+        "borough": "Miguel Hidalgo",
+        "topic": "Bosque de Chapultepec, alcaldía Miguel Hidalgo",
+        "author": "ProtoplasmaKid",
+        "license": "CC0",
+        "source": "https://commons.wikimedia.org/wiki/File:Audiorama_de_Chapultepec_1.jpg"
+      }
+    },
+    {
+      "title": "Clima en Xochimilco: jueves 15 de octubre con lluvia ligera y 25°C de máxima",
+      "description": "El pronóstico recogido por El Heraldo de México se refiere a lluvias ligeras en Xochimilco. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPNGxPeDZ0NGJSbElmUldXVVJRcDc1VVFiU2VtRDFtMjVuekwydjZwMTMwRUtkYi01R2pMU2FCRlBWSUk1SlRxeFVYS2NHZGIzT1lkbnBaYjVnd1EtTENoQWtVcEIwaGlIb0dqODN5SUItQ2dBZEZtS2hNNHgtUGEzbFpOQmYxRmp1SmdVNl9ESWxJaW1WMmZUY1VjcmQyRHBOV2VVRjlYYnNvaDNYZEpISGd3Q2ZLSTlBMnFWU0FUZ0RycG1IemdIZkFPRjRIXy0w?oc=5",
+      "source": "El Heraldo de México",
+      "date": "2026-10-14",
+      "published_at": "2026-10-15T05:00:00Z",
+      "category": "CDMX",
+      "borough": "Xochimilco",
+      "location": "Xochimilco (mencionada en el titular)",
+      "local_url": "/noticias/?id=a8f79ec8b32351b62f6a&mes=2026-10",
+      "brief": {
+        "lead": "El pronóstico recogido por El Heraldo de México se refiere a lluvias ligeras en Xochimilco. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
+        "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+        "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "alcaldia_xochimilco",
+        "url": "/assets/alcaldias/xochimilco.jpg",
+        "category": "CDMX",
+        "borough": "Xochimilco",
+        "topic": "Trajineras y canales de Xochimilco",
+        "author": "Xbauerx",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Trajineras_de_Xochimilco.jpg"
+      }
+    },
+    {
+      "title": "Línea 7 del Metro presenta marcha lenta por incidente en zona de vías",
+      "description": "Según la información destacada por El Heraldo de México, manifestaciones o bloqueos forman parte de la jornada de movilidad capitalina. La ficha no demuestra por sí sola que todas las vías mencionadas sigan cerradas al momento de leerla.",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQb2p6NkE5NmxPRTY2RXBNeHl3NG0yemVqcnlKc3hZT2hPbDZDVGs2eXp3TWNJWEF3Mkp4TmlyR2xOeDZCMnk5SGZTTDlpSDU0UVcwY2JxVEtFVG9hVmtkS2ZQbjlFQjZ5VjdqS2c2QlIwZ3NCTUdZM29hcUF3M1NaOTJYdEswNkVjcEhjZU8tTmQ4RG5WNHFUbnpPdTBpMmg5S2Z2RENPWThaNnRlTkMxblpGblFoR1lHMHcyT2gwbF9XclBlczk2NEZR?oc=5",
+      "source": "El Heraldo de México",
+      "date": "2026-10-14",
+      "published_at": "2026-10-15T04:59:00Z",
+      "category": "Metro",
+      "borough": "",
+      "location": "Ubicación no indicada por el titular",
+      "local_url": "/noticias/?id=3be02eb29d5a0f2f3119&mes=2026-10",
+      "brief": {
+        "lead": "Según la información destacada por El Heraldo de México, manifestaciones o bloqueos forman parte de la jornada de movilidad capitalina. La ficha no demuestra por sí sola que todas las vías mencionadas sigan cerradas al momento de leerla.",
+        "context": "Los cambios en este sistema pueden afectar los horarios, las conexiones y la planeación de los viajes cotidianos.",
+        "pending": "El estado operativo, las estaciones y las alternativas de traslado deben comprobarse en los avisos actuales del Metro. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "archivo_metro_001",
+        "url": "/assets/fotos/archivo_metro_001.jpg",
+        "category": "Metro",
+        "borough": "",
+        "topic": "Línea 2 del Metro de la Ciudad de México - Metro Pino Suárez Línea 2 - 10",
+        "author": "ProtoplasmaKid",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:L%C3%ADnea_2_del_Metro_de_la_Ciudad_de_M%C3%A9xico_-_Metro_Pino_Su%C3%A1rez_L%C3%ADnea_2_-_10.jpg"
+      }
+    },
+    {
+      "title": "Línea 8 del Metro suspende servicio por maniobras de rescate en vías",
+      "description": "La información publicada por El Heraldo de México trata un asunto registrado en la sección de Metro del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPZ3BxVTY1Q2JpV1ZrZXhYcXZTZDgzS21XdWFOaHBxeTA0eVVQeXBlNU55NVNuR0FqZUxEb3B4ekphckVqcEhkUVlqZkdwY01wcUl4TXk1Sk96NUcwU19fSDZrQjZCQy1yZXVDS0lpSVZmQVFlTHRCNjVUUmJXV3R0MVVtdjBtS2g4RElBby1MMFpjcGh0b1ROZnA2UmM0cDZYRlVmQVM0M3hoVWM4WWlvdGNaTFdOTmFXWGxNV25vVjlfZjd3ZFlTRA?oc=5",
+      "source": "El Heraldo de México",
+      "date": "2026-10-14",
+      "published_at": "2026-10-15T04:59:00Z",
+      "category": "Metro",
+      "borough": "",
+      "location": "Ubicación no indicada por el titular",
+      "local_url": "/noticias/?id=212ba9f0ff65e8a4566c&mes=2026-10",
+      "brief": {
+        "lead": "La información publicada por El Heraldo de México trata un asunto registrado en la sección de Metro del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+        "context": "Los cambios en este sistema pueden afectar los horarios, las conexiones y la planeación de los viajes cotidianos.",
+        "pending": "El estado operativo, las estaciones y las alternativas de traslado deben comprobarse en los avisos actuales del Metro. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "archivo_metro_002",
+        "url": "/assets/fotos/archivo_metro_002.jpg",
+        "category": "Metro",
+        "borough": "",
+        "topic": "Estación Juárez del Metro de la Ciudad de México 09",
+        "author": "ProtoplasmaKid",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Estaci%C3%B3n_Ju%C3%A1rez_del_Metro_de_la_Ciudad_de_M%C3%A9xico_09.jpg"
+      }
+    },
+    {
+      "title": "¿Qué Pasó en la Línea 8 del Metro de CDMX? Suspende Servicio y Desalojan a Usuarios",
+      "description": "La información publicada por N+ trata un asunto registrado en la sección de Metro del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQbko5a2ZwX2JBZ0QzNDFQdXl3T3otcWNtQzJmRnM3QnAyWlBOb2dnb0xmby1MNHZodmlCOUd2dEc3MTVQT1hUREd3a0pGc3NUV0NwNG9wUFFLYlBObk5jdHN0Q3RHTnoyMGRLZE16NTdUWmo4QUR0ZmF0LVZtXy1lZHJWMDQtQW5LQlplYVBKNzlRNU5jaHlGX2xQOTY0bWNjeWpUbkJjZXBxVFcyTENKb2U4VTl0bzRPSFBQRzlNWUV1cWZ6alBLTDE2QXRaOWFSdnNSWEtWU18?oc=5",
+      "source": "N+",
+      "date": "2026-10-14",
+      "published_at": "2026-10-15T04:41:36Z",
+      "category": "Metro",
+      "borough": "",
+      "location": "Ciudad de México (sin alcaldía identificada)",
+      "local_url": "/noticias/?id=d4fd16c9a7aa2783b419&mes=2026-10",
+      "brief": {
+        "lead": "La información publicada por N+ trata un asunto registrado en la sección de Metro del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+        "context": "Los cambios en este sistema pueden afectar los horarios, las conexiones y la planeación de los viajes cotidianos.",
+        "pending": "El estado operativo, las estaciones y las alternativas de traslado deben comprobarse en los avisos actuales del Metro. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "archivo_metro_003",
+        "url": "/assets/fotos/archivo_metro_003.jpg",
+        "category": "Metro",
+        "borough": "",
+        "topic": "Parafernalia del Metro (Ciudad de México)",
+        "author": "Juan Carlos Fonseca Mata",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Parafernalia_del_Metro_%28Ciudad_de_M%C3%A9xico%29.jpg"
+      }
+    },
     {
       "title": "VIDEO | Cae sujeto por engañar a abuelitos en cajeros automáticos de Azcapotzalco; así operaba",
       "description": "La información publicada por Telediario trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -84,6 +392,34 @@
         "author": "Gobierno de la Ciudad de México",
         "license": "CC BY 4.0",
         "source": "https://commons.wikimedia.org/wiki/File:Adquisici%C3%B3n_patrullas_para_la_Polic%C3%ADa_03.jpg"
+      }
+    },
+    {
+      "title": "Clara Brugada presenta iniciativas por rentas justas, educación inicial y nuevo plantel de la UNAM en CDMX",
+      "description": "El reportaje citado por Infobae aborda los precios de vivienda o los cambios residenciales en la capital. Las cifras y su metodología deben examinarse antes de concluir cuántas familias han sido desplazadas o qué tan representativos son determinados anuncios de renta.",
+      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQWTZsZmIxSnRzWnY2WURFOGZRWlJteG5IcHRQa2IwMVE3X3JrQ3JqcHhhbElHMTZzb0Vud18tSWE0TWJpNk9Sci1yajY2UnBUbkJjVFdfQWNmTWo1MzdIeHpvbTBsVUlwajNIN3htSTFaXzRiU3E5ZkNfRFRabzdPRmFRT242M1pwZ18xRVZrODNFVzg2Z0VzSmtHenRFNURfLXlhN3pocUxxZDVBOW1hcWJBdVpaQWlvU2FCMF8tQmROTnlwcEJyYk03Z1RLMVdadUMzMzVCbkxQRkw3UVY0ZllR0gH8AUFVX3lxTE5taVdxcGZjby1BeXJuQ3R3Sy1zVG5KbURrN19CZXI0RUdOT0d6R3BfTTRKczlfUnNKaHBRTVpIdXJiNFE4c0kwNElaQzVvN2YyRVZNeG4wLWg5eEJmbEpRUVk4dk9jenpZLUd4ckRvbEhTSW00azVyemx1UWFJM0ZsMlViU3llTmxJYTZDZy1TNEcwX29WM0QwUUlfLVFRUzRXMmNFbC1HU1JTZGROQ0tJQTBwdjNsZ1lyZC1xNDhVelRTamExT3JBb2tpeExDa0drakN2Ul9NY3cwYm1qVl82M0pDSjY1bmtvSHRDd3ZSbHFLQ3l3Z1ZDVlIwbw?oc=5",
+      "source": "Infobae",
+      "date": "2026-10-14",
+      "published_at": "2026-10-15T04:24:42Z",
+      "category": "CDMX",
+      "borough": "",
+      "location": "Ciudad de México (sin alcaldía identificada)",
+      "local_url": "/noticias/?id=3bb75dd1379775c68b10&mes=2026-10",
+      "brief": {
+        "lead": "El reportaje citado por Infobae aborda los precios de vivienda o los cambios residenciales en la capital. Las cifras y su metodología deben examinarse antes de concluir cuántas familias han sido desplazadas o qué tan representativos son determinados anuncios de renta.",
+        "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+        "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "archivo_cdmx_006",
+        "url": "/assets/fotos/archivo_cdmx_006.jpg",
+        "category": "CDMX",
+        "borough": "",
+        "topic": "Catedral Ii (172219027)",
+        "author": "Waender Alonso Bello",
+        "license": "CC BY 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Catedral_Ii_%28172219027%29.jpeg"
       }
     },
     {
@@ -196,6 +532,34 @@
         "author": "ProtoplasmaKid",
         "license": "CC0",
         "source": "https://commons.wikimedia.org/wiki/File:Audiorama_de_Chapultepec_1.jpg"
+      }
+    },
+    {
+      "title": "Qué hacer en Día de Muertos con niños: talleres, experiencias y más",
+      "description": "La información publicada por Time Out México trata un asunto registrado en la sección de Cultura del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPY3pOZDBFaHNVb2RIVjAyTVVONW80RVZYN0hSQ2tORHNzRTE0dXlqSzd5X0hiQlJmOXpjRWlVWVNMN1pxYmhqaU40Z2tLMUg4b1poT1BnRGZqalp6X0Z6U3Y4OGJrb3JLOFh3MW5mX2h6RndOYjB6cFZULUVISC1HZDZwdEdhM3FleDJjVTlmQzZiZnEybzJUaU91SjhwczQ?oc=5",
+      "source": "Time Out México",
+      "date": "2026-10-14",
+      "published_at": "2026-10-15T04:09:28Z",
+      "category": "Cultura",
+      "borough": "",
+      "location": "Ubicación no indicada por el titular",
+      "local_url": "/noticias/?id=fdf3c3c563deb02e0a15&mes=2026-10",
+      "brief": {
+        "lead": "La información publicada por Time Out México trata un asunto registrado en la sección de Cultura del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+        "context": "La actividad cultural abre oportunidades de encuentro, aprendizaje y disfrute para habitantes y visitantes.",
+        "pending": "Los accesos, boletos, sedes, cupos y horarios deben consultarse con la institución organizadora. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "archivo_cultura_001",
+        "url": "/assets/fotos/archivo_cultura_001.jpg",
+        "category": "Cultura",
+        "borough": "",
+        "topic": "PALACIO DE BELLAS ARTES, CIUDAD DE MEXICO.",
+        "author": "Acuentacuentos",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:PALACIO_DE_BELLAS_ARTES%2C_CIUDAD_DE_MEXICO..jpg"
       }
     },
     {
@@ -364,6 +728,62 @@
         "author": "ProtoplasmaKid",
         "license": "CC BY-SA 4.0",
         "source": "https://commons.wikimedia.org/wiki/File:L%C3%ADnea_2_del_Metro_de_la_Ciudad_de_M%C3%A9xico_-_Metro_Pino_Su%C3%A1rez_L%C3%ADnea_2_-_10.jpg"
+      }
+    },
+    {
+      "title": "Hallan el cuerpo de un hombre en Canal Nacional de CDMX; es el segundo cadáver esta semana",
+      "description": "La información publicada por ADN 40 trata un asunto registrado en la sección de Seguridad del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxONDFSRHMyZDBjUl8zMkM1Z19WS1gyX3ZEcGtMajNPTkFaRnNJM1hkZGV0WHdqMk9sRW9yM2NqVVpHQ0MyeXpNbXFGMWVhc0lxZnhWQjEwcE5kVXJ1QVdOcV9GWThVc3hJd2pfbHc4Q3JkUjVJRE5BLVNlcTY4b0YtaVMwQnc1ZVE3STFEWGUwMHZmZy1ZU2JwMTZWWHgzSGlfY2tyQlpQa1BjMVRuNTBoNWdSaTZiVlFnZDgxX1JQeEhGVmFYOU5wNnhPUHI?oc=5",
+      "source": "ADN 40",
+      "date": "2026-10-14",
+      "published_at": "2026-10-15T03:07:03Z",
+      "category": "Seguridad",
+      "borough": "",
+      "location": "Ciudad de México (sin alcaldía identificada)",
+      "local_url": "/noticias/?id=9c66b2d32e70ad6364b0&mes=2026-10",
+      "brief": {
+        "lead": "La información publicada por ADN 40 trata un asunto registrado en la sección de Seguridad del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+        "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+        "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "archivo_seguridad_004",
+        "url": "/assets/fotos/archivo_seguridad_004.jpg",
+        "category": "Seguridad",
+        "borough": "",
+        "topic": "Adquisición patrullas para la Policía 01",
+        "author": "Gobierno de la Ciudad de México",
+        "license": "CC BY 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Adquisici%C3%B3n_patrullas_para_la_Polic%C3%ADa_01.jpg"
+      }
+    },
+    {
+      "title": "Lluvia provoca retrasos en Líneas 2, 3, 5, 8, 12 y A: Avance del Metro CDMX EN VIVO",
+      "description": "La nota de TV Azteca reúne reportes sobre la circulación o los tiempos del Metro de Ciudad de México. El titular menciona Líneas 2. La operación puede cambiar durante el día y los informes de usuarios no son equivalentes a un comunicado oficial.",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNZHNmbENMTkdsZ2VHZEctWTFMVlBwUTVLVjQ2Z2dLTkxmTVVsMnlwczVCVnJtQk1WRXY2d3RTRFRZQW50MDlDMjZkYmpYY2pPTE41OUl1WmFXdXFPQi1qazNQaUJ2ajhWTHJFcVFwSU9UNlFrRFRqVU8zZkFINlI5UHlkLUFad0ZYeHVheUFkNEpiZ1hWcEdmVEJuWERjb1k5Y3dGaXJ2alh2UE5LbURYUXNJX3NFemfSAcQBQVVfeXFMTlRvdkRUdVZsd1dBRF9ULTR6VWo3OWg3UVV4bnVITGZ1c3REWGNvTmxhSHpNaU16cUY0aUxOMURBZ0E4bUlKa250a0x3cmNMd2J3RkdUQUw4NTVkZkJKVnJWTjMxR3BMeFVQc3N1YkFhRDY5OE5ZWF85cUpfSkllci1SanhOWV9hQ1JjekVPbC11MzVwM1pLOW9mOU5CN0hnZlpMcVdCMEVkbDl3dC01dDVTUDlCSGlqMjV3RjFSUDdleFByZA?oc=5",
+      "source": "TV Azteca",
+      "date": "2026-10-14",
+      "published_at": "2026-10-15T03:03:59Z",
+      "category": "Metro",
+      "borough": "",
+      "location": "Ciudad de México (sin alcaldía identificada)",
+      "local_url": "/noticias/?id=f9c91a8c209147a085a4&mes=2026-10",
+      "brief": {
+        "lead": "La nota de TV Azteca reúne reportes sobre la circulación o los tiempos del Metro de Ciudad de México. El titular menciona Líneas 2. La operación puede cambiar durante el día y los informes de usuarios no son equivalentes a un comunicado oficial.",
+        "context": "Los cambios en este sistema pueden afectar los horarios, las conexiones y la planeación de los viajes cotidianos.",
+        "pending": "El estado operativo, las estaciones y las alternativas de traslado deben comprobarse en los avisos actuales del Metro. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "archivo_metro_006",
+        "url": "/assets/fotos/archivo_metro_006.jpg",
+        "category": "Metro",
+        "borough": "",
+        "topic": "Estación Pino Suárez de la Línea 1 del Metro de la Ciudad de México 02",
+        "author": "ProtoplasmaKid",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Estaci%C3%B3n_Pino_Su%C3%A1rez_de_la_L%C3%ADnea_1_del_Metro_de_la_Ciudad_de_M%C3%A9xico_02.jpg"
       }
     },
     {
@@ -784,6 +1204,34 @@
         "author": "Luisalvaz",
         "license": "CC BY-SA 4.0",
         "source": "https://commons.wikimedia.org/wiki/File:Calle_Calle_Francisco_I._Madero_de_la_Ciudad_de_M%C3%A9xico%2C_con_el_Palacio_Nacional_al_fondo.JPG"
+      }
+    },
+    {
+      "title": "Citlalli Hernández descarta buscar la alcaldía Cuauhtémoc; prioriza su cargo en Morena",
+      "description": "La información publicada por El Sol de México trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNTENxUXVReGZ1UktqQmFLZVdidC1IdGZJRzhFZExkUnR4TGdtRXdITDdBclRHMG4xNTkyY1NOeGZqTVNNTFN6Q1lwM3VMcno4c0Utd2F6ZlY1RG1NVjFVdk9WZGl0MmRnM1prNDdFNzFnMXFTZGRBVHh5d0h3LU4wWHRVZExRdnlRb1pIaDR3OUxGb3haVmtfSW9Jb25oMHhqQklvOG9ucUZUQ1hZVjJqT2R5SGdaVHdiZDRTZjZ6clVZTW5pZzRKbmtfT2JudHpPMFVJ?oc=5",
+      "source": "El Sol de México",
+      "date": "2026-10-14",
+      "published_at": "2026-10-15T01:48:16Z",
+      "category": "CDMX",
+      "borough": "Cuauhtémoc",
+      "location": "Cuauhtémoc (mencionada en el titular)",
+      "local_url": "/noticias/?id=c53dcf7c791e1c6c304e&mes=2026-10",
+      "brief": {
+        "lead": "La información publicada por El Sol de México trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+        "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+        "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "alcaldia_tlalpan",
+        "url": "/assets/alcaldias/tlalpan.jpg",
+        "category": "CDMX",
+        "borough": "Tlalpan",
+        "topic": "Quiosco de la plaza principal de Tlalpan",
+        "author": "farid estrada",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Kiosko_plaza_de_la_constitucion%2C_tlapan.JPG"
       }
     },
     {
@@ -2184,6 +2632,24 @@
         "author": "Reginaesc",
         "license": "CC BY-SA 4.0",
         "source": "https://commons.wikimedia.org/wiki/File:Plaza_del_Carmen%2C_Regina_Escandon%2C_23.sep.15._San_%C3%81ngel%2C_Del._%C3%81lvaro_Obreg%C3%B3n_01000_Ciudad_de_M%C3%A9xico.JPG"
+      }
+    },
+    {
+      "title": "Destaca Clara Brugada récord en reducción de pobreza, anuncia nuevo plantel de la UNAM y llama a la unidad política ante el Congreso de la CDMX",
+      "description": "La información publicada por SPR Informa trata un asunto registrado en la sección de Gobierno del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxQWmRTaDBneENfSDJKRV9CR2ZzUVdtQ3dNUkxJczQ4UEpQY0JNLV9fZVZmSVloazZwb0Q2ejVaeVBuLWJuX051eGJZMWh0SWl2ei1ISDFraGhOdDA1cEkwSTA5VFRCeFJ6dHp4V1FFMFJCeXpWVUVqM25LSFAxcGNMTzlPejlmRnBFaTktc3hWdU1jOUhIVGM0cGlheWd5Y2g4VkFldzBEVThZU1lTMXdfMmhvNXJ5aGZyZ3ZDV2VnRVlXaWI0TEgtbWZhZDJYSU93OXRYU3BjOVU5YTVMZmppTk1MZXZvM1BFRmstV2tTdUIxdk41VEsyQWlNWV9FdXd5LUxyb08yQQ?oc=5",
+      "source": "SPR Informa",
+      "date": "2026-10-14",
+      "published_at": "2026-10-14T22:58:19Z",
+      "category": "Gobierno",
+      "borough": "",
+      "location": "Ciudad de México (sin alcaldía identificada)",
+      "local_url": "/noticias/?id=52bf4145a457aa097ec9&mes=2026-10",
+      "brief": {
+        "lead": "La información publicada por SPR Informa trata un asunto registrado en la sección de Gobierno del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+        "context": "Las decisiones administrativas pueden influir en servicios, trámites y derechos; conviene conocer sus condiciones y a quiénes afectan.",
+        "pending": "Es indispensable consultar los acuerdos, comunicados o documentos oficiales antes de dar una medida por vigente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       }
     },
     {
