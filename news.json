@@ -1,6 +1,62 @@
 {
-  "updated": "2026-10-15 09:47 UTC",
+  "updated": "2026-10-15 10:48 UTC",
   "articles": [
+    {
+      "title": "Clara Brugada presenta segundo informe ante Congreso de CDMX",
+      "description": "La información publicada por El Independiente trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOWk50ekFWTGRQUU9xOG1HcEhPWWxLWFpZTDNRbXlZWjROeEkzNE1sUlMtX3l1SFpha1dEdXdiLWxtZWxLWTB5b3Z5QXVHbFpKb2w1UDRtSTc2TWxSTVdjdXRWbURqVFh0UFNCdTY4dS1wZWNNVUljNjNndXAxc2lyRjZZNFBRVEZLRVZGRTVNWWhReXJ2WTFVVG1ncnk1bUJCc183RTI2aVhyeDJTRjN3?oc=5",
+      "source": "El Independiente",
+      "date": "2026-10-15",
+      "published_at": "2026-10-15T10:00:00Z",
+      "category": "CDMX",
+      "borough": "",
+      "location": "Ciudad de México (sin alcaldía identificada)",
+      "local_url": "/noticias/?id=12fea8963f55d2148b86&mes=2026-10",
+      "brief": {
+        "lead": "La información publicada por El Independiente trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+        "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+        "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "archivo_cdmx_003",
+        "url": "/assets/fotos/archivo_cdmx_003.jpg",
+        "category": "CDMX",
+        "borough": "",
+        "topic": "D.F. - panoramio (7)",
+        "author": "eurimaco",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:D.F._-_panoramio_%287%29.jpg"
+      }
+    },
+    {
+      "title": "Habrá nuevo plantel de la UNAM en CDMX, anuncia Clara Brugada",
+      "description": "La información publicada por El Sol de México trata un asunto registrado en la sección de Gobierno del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOVUwxUmctbEh6VjVzUTBGVnF4UzBRRGpBV0ZWYmNPVS1HdUswVlJsU3pWY3JRbG83Vm4xR0VjcFRTVlVYS2Q1aGdkalpfb1c1QlhTWEs3bjV6bTJXWHhLVkp5YnNORklYeFJDZmtJV1RBV3d4V1ROMHc2bGxXX2IteHQ5ajhUalVfa0xjc3I0SS1mMV9SM1FQNVQ5N0d5NW9OQUhvazN4czhRbEVLQ2d4OHBB?oc=5",
+      "source": "El Sol de México",
+      "date": "2026-10-15",
+      "published_at": "2026-10-15T09:46:14Z",
+      "category": "Gobierno",
+      "borough": "",
+      "location": "Ciudad de México (sin alcaldía identificada)",
+      "local_url": "/noticias/?id=2e1f443a6048f3e4e4b4&mes=2026-10",
+      "brief": {
+        "lead": "La información publicada por El Sol de México trata un asunto registrado en la sección de Gobierno del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+        "context": "Las decisiones administrativas pueden influir en servicios, trámites y derechos; conviene conocer sus condiciones y a quiénes afectan.",
+        "pending": "Es indispensable consultar los acuerdos, comunicados o documentos oficiales antes de dar una medida por vigente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "archivo_gobierno_001",
+        "url": "/assets/fotos/archivo_gobierno_001.jpg",
+        "category": "Gobierno",
+        "borough": "",
+        "topic": "Palacio de Bellas Artes",
+        "author": "Carolina López",
+        "license": "CC BY 2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Palacio_de_Bellas_Artes.jpg"
+      }
+    },
     {
       "title": "Freno a rentas de corta estancia en CDMX crearía mercado negro",
       "description": "El reportaje citado por El Financiero aborda los precios de vivienda o los cambios residenciales en la capital. Las cifras y su metodología deben examinarse antes de concluir cuántas familias han sido desplazadas o qué tan representativos son determinados anuncios de renta.",
@@ -19,42 +75,14 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_cdmx_003",
-        "url": "/assets/fotos/archivo_cdmx_003.jpg",
+        "id": "archivo_cdmx_006",
+        "url": "/assets/fotos/archivo_cdmx_006.jpg",
         "category": "CDMX",
         "borough": "",
-        "topic": "D.F. - panoramio (7)",
-        "author": "eurimaco",
-        "license": "CC BY-SA 3.0",
-        "source": "https://commons.wikimedia.org/wiki/File:D.F._-_panoramio_%287%29.jpg"
-      }
-    },
-    {
-      "title": "Metrobús y Metro CDMX: así operan este miércoles las líneas afectadas",
-      "description": "La información publicada por Identidad Correntina trata un asunto registrado en la sección de Metro del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQN3YteGkwOXZfNDV5ZlphTnloeHVTVUV4U0tUUklZRVZPc2hyb3ZyMDNfcWVES1Z5VVhtZFAxbm5qdS0wajI3aU1SNko2clNnX2JpZFpOcTFIZFlua2tJV3dXYV8wV2thM2w2Si1TWUFNWGhoYk5QWGoxV0NPd3IzeU0tSks4ekcxTFpVck15TERwNGFYNEZJZDllN0M0eW5yVEtYWFRDWFdGemFOcjJweTBYMm8zZ0JidzVESVBR?oc=5",
-      "source": "Identidad Correntina",
-      "date": "2026-10-15",
-      "published_at": "2026-10-15T09:03:35Z",
-      "category": "Metro",
-      "borough": "",
-      "location": "Ciudad de México (sin alcaldía identificada)",
-      "local_url": "/noticias/?id=dc8b7692429e008dca07&mes=2026-10",
-      "brief": {
-        "lead": "La información publicada por Identidad Correntina trata un asunto registrado en la sección de Metro del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-        "context": "Los cambios en este sistema pueden afectar los horarios, las conexiones y la planeación de los viajes cotidianos.",
-        "pending": "El estado operativo, las estaciones y las alternativas de traslado deben comprobarse en los avisos actuales del Metro. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "archivo_metro_001",
-        "url": "/assets/fotos/archivo_metro_001.jpg",
-        "category": "Metro",
-        "borough": "",
-        "topic": "Línea 2 del Metro de la Ciudad de México - Metro Pino Suárez Línea 2 - 10",
-        "author": "ProtoplasmaKid",
-        "license": "CC BY-SA 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:L%C3%ADnea_2_del_Metro_de_la_Ciudad_de_M%C3%A9xico_-_Metro_Pino_Su%C3%A1rez_L%C3%ADnea_2_-_10.jpg"
+        "topic": "Catedral Ii (172219027)",
+        "author": "Waender Alonso Bello",
+        "license": "CC BY 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Catedral_Ii_%28172219027%29.jpeg"
       }
     },
     {
@@ -75,42 +103,14 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_gobierno_001",
-        "url": "/assets/fotos/archivo_gobierno_001.jpg",
+        "id": "archivo_gobierno_002",
+        "url": "/assets/fotos/archivo_gobierno_002.jpg",
         "category": "Gobierno",
         "borough": "",
-        "topic": "Palacio de Bellas Artes",
-        "author": "Carolina López",
+        "topic": "Palacio Nacional Ciudad de Mexico",
+        "author": "Joaquín Martínez",
         "license": "CC BY 2.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Palacio_de_Bellas_Artes.jpg"
-      }
-    },
-    {
-      "title": "Prevén lluvias fuertes y granizo en CDMX este jueves 15 de octubre",
-      "description": "El pronóstico recogido por UnoTV se refiere a lluvias en la capital. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQZ3JFUVVjcmhkT2o2YXEwZjF4RVd0Zl92MnlwbDg4MWdVNXo0MlpKYmc1cHJkeXdJOTE2NHN6c1lEWTVCX21UcGhhdy1VNGNYd3VuMzBXYnJLbWZIYl9vYUpaUzlDY00zakx5QjIzZTZieDlRbXJ3cUszdWNiRUNQaWpud2dJYUc4R241a0R3LVluMk9wZmFaY3A0TQ?oc=5",
-      "source": "UnoTV",
-      "date": "2026-10-15",
-      "published_at": "2026-10-15T08:34:56Z",
-      "category": "CDMX",
-      "borough": "",
-      "location": "Ciudad de México (sin alcaldía identificada)",
-      "local_url": "/noticias/?id=43c1d257e1665b133a95&mes=2026-10",
-      "brief": {
-        "lead": "El pronóstico recogido por UnoTV se refiere a lluvias en la capital. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
-        "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-        "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "archivo_cdmx_006",
-        "url": "/assets/fotos/archivo_cdmx_006.jpg",
-        "category": "CDMX",
-        "borough": "",
-        "topic": "Catedral Ii (172219027)",
-        "author": "Waender Alonso Bello",
-        "license": "CC BY 3.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Catedral_Ii_%28172219027%29.jpeg"
+        "source": "https://commons.wikimedia.org/wiki/File:Palacio_Nacional_Ciudad_de_Mexico.jpg"
       }
     },
     {
@@ -131,14 +131,42 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_gobierno_002",
-        "url": "/assets/fotos/archivo_gobierno_002.jpg",
+        "id": "archivo_gobierno_003",
+        "url": "/assets/fotos/archivo_gobierno_003.jpg",
         "category": "Gobierno",
         "borough": "",
-        "topic": "Palacio Nacional Ciudad de Mexico",
-        "author": "Joaquín Martínez",
-        "license": "CC BY 2.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Palacio_Nacional_Ciudad_de_Mexico.jpg"
+        "topic": "Palacio Nacional Ciudad de México DF",
+        "author": "Crater_sp",
+        "license": "CC BY-SA 2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Palacio_Nacional_Ciudad_de_M%C3%A9xico_DF.jpg"
+      }
+    },
+    {
+      "title": "Clara Brugada reivindica la vivienda como un derecho y descarta alza al predial en su segundo informe",
+      "description": "El reportaje citado por Diario Red aborda los precios de vivienda o los cambios residenciales en la capital. Las cifras y su metodología deben examinarse antes de concluir cuántas familias han sido desplazadas o qué tan representativos son determinados anuncios de renta.",
+      "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxQN3JsRzlHMVJXdG8zZlBsazlJUGRMazhNRHVpeVR3MmJqOG5wRFZmZlhjRkV4V05xTU5NMXZSNEwzTUVXS2tkQUg1LXBZcWxleG5KMlZBWGg3UWZBNFVUakZoWDVCR2huVkNXek1Ba0NKdUZrdHlMSGpleWl5cjloN2RxRFA3a3k4bFV5bEZvNWZzOXlYREExZDNWNGRPTEtJcEZON1NiOWJtTHhIUEV5d2FSemI0YXhTeWoxd1RDMnNzUjVxV3lNY1poNDlHdllRVzJfY0o5STNwcWFCNUtBbm1McnNXSW9LaEpuSDlyV3RCQkXSAfMBQVVfeXFMUDdybEc5RzFSV3RvM2ZQbGs5SVBkTGs4TUR1aXlUdzJiajhucERWZmZYY0ZFeFdOcU1OTTF2UjRMM01FV0trZEFINS1wWXFsZXhuSjJWQVhoN1FmQTRVVGpGaFg1QkdoblZDV3pNQWtDSnVGa3R5TEhqZXlpeXI5aDdkcURQN2t5OGxVeWxGbzVmczl5WERBMWQzVjRkT0xLSXBGTjdTYjlibUx4SFBFeXdhUnpiNGF4U3lqMXdUQzJzc1I1cVd5TWNaaDQ5R3ZZUVcyX2NKOUkzcHFhQjVLQW5tTHJzV0lvS2hKbkg5cld0QkJF?oc=5",
+      "source": "Diario Red",
+      "date": "2026-10-15",
+      "published_at": "2026-10-15T08:00:00Z",
+      "category": "Gobierno",
+      "borough": "",
+      "location": "Ubicación no indicada por el titular",
+      "local_url": "/noticias/?id=56ab62e49e52b590162d&mes=2026-10",
+      "brief": {
+        "lead": "El reportaje citado por Diario Red aborda los precios de vivienda o los cambios residenciales en la capital. Las cifras y su metodología deben examinarse antes de concluir cuántas familias han sido desplazadas o qué tan representativos son determinados anuncios de renta.",
+        "context": "Las decisiones administrativas pueden influir en servicios, trámites y derechos; conviene conocer sus condiciones y a quiénes afectan.",
+        "pending": "Es indispensable consultar los acuerdos, comunicados o documentos oficiales antes de dar una medida por vigente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "archivo_gobierno_004",
+        "url": "/assets/fotos/archivo_gobierno_004.jpg",
+        "category": "Gobierno",
+        "borough": "",
+        "topic": "Palacio Nacional Ciudad de México City DF",
+        "author": "stevecadman",
+        "license": "CC BY-SA 2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Palacio_Nacional_Ciudad_de_M%C3%A9xico_City_DF.jpg"
       }
     },
     {
@@ -187,14 +215,14 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_gobierno_003",
-        "url": "/assets/fotos/archivo_gobierno_003.jpg",
+        "id": "archivo_gobierno_007",
+        "url": "/assets/fotos/archivo_gobierno_007.jpg",
         "category": "Gobierno",
         "borough": "",
-        "topic": "Palacio Nacional Ciudad de México DF",
-        "author": "Crater_sp",
-        "license": "CC BY-SA 2.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Palacio_Nacional_Ciudad_de_M%C3%A9xico_DF.jpg"
+        "topic": "Calle Calle Francisco I. Madero de la Ciudad de México, con el Palacio Nacional al fondo",
+        "author": "Luisalvaz",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Calle_Calle_Francisco_I._Madero_de_la_Ciudad_de_M%C3%A9xico%2C_con_el_Palacio_Nacional_al_fondo.JPG"
       }
     },
     {
@@ -282,6 +310,34 @@
       }
     },
     {
+      "title": "Balacera en tianguis de Iztapalapa, CDMX deja una mujer muerta y tres lesionados",
+      "description": "La información publicada por Quinta Fuerza trata un asunto registrado en la sección de Seguridad del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPVk5MbmgzVjB4N0NHM2RNU0NDOTNSQl9MTVludlIzSVkwYTdVZWw2bXk1SGQ1bHlhN0hUVE52Vmd5TldWazl4NW5iSjEzZ1F1dUFaQjB4azJIRmduc3c1Vk9hT0RrZS0tbmtYNDk1MlkxdG51WnljN0VGZU1SYmNqX2I1V2ZGTk81dHJIUWR4TEswT2NMMWh3c3Y4dFhyU2U1YjRIb0pKbVJmWlpKbkdKdlEzaWk?oc=5",
+      "source": "Quinta Fuerza",
+      "date": "2026-10-15",
+      "published_at": "2026-10-15T06:29:05Z",
+      "category": "Seguridad",
+      "borough": "Iztapalapa",
+      "location": "Iztapalapa (mencionada en el titular)",
+      "local_url": "/noticias/?id=e5db0ce309f5bbeb67cf&mes=2026-10",
+      "brief": {
+        "lead": "La información publicada por Quinta Fuerza trata un asunto registrado en la sección de Seguridad del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+        "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+        "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "alcaldia_iztapalapa",
+        "url": "/assets/alcaldias/iztapalapa.jpg",
+        "category": "CDMX",
+        "borough": "Iztapalapa",
+        "topic": "Vista de Iztapalapa desde el Cerro de la Estrella",
+        "author": "Secretaría de Cultura Ciudad de México from México",
+        "license": "CC BY 2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:MX_MM_MUSEO_CERRO_DE_LA_ESTRELLA_%2849522225751%29.jpg"
+      }
+    },
+    {
       "title": "Brugada anuncia creación del Banco de la Ciudad de México",
       "description": "La información publicada por Grupo Animal trata un asunto registrado en la sección de Gobierno del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
       "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE14VUZSRVJmaHNfV0l6Q2lGV0J0LUVtUHRtcVdPZEVYT0dXcUtFMTVpUDgxVExBeWdyUk1aTU9UbVMxYWJ2bDdibmJGSXpTNTduaDlMMjBORkMwNC1xVGJhSUJmcnJTeE5JQW5NeUR5RWZHNXV5?oc=5",
@@ -299,14 +355,14 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_gobierno_004",
-        "url": "/assets/fotos/archivo_gobierno_004.jpg",
+        "id": "archivo_gobierno_008",
+        "url": "/assets/fotos/archivo_gobierno_008.jpg",
         "category": "Gobierno",
         "borough": "",
-        "topic": "Palacio Nacional Ciudad de México City DF",
-        "author": "stevecadman",
-        "license": "CC BY-SA 2.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Palacio_Nacional_Ciudad_de_M%C3%A9xico_City_DF.jpg"
+        "topic": "Calles Seminario y Moneda Centro Histórico Ciudad de México 01",
+        "author": "Correogsk",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Calles_Seminario_y_Moneda_Centro_Hist%C3%B3rico_Ciudad_de_M%C3%A9xico_01.jpg"
       }
     },
     {
@@ -327,42 +383,14 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_metro_002",
-        "url": "/assets/fotos/archivo_metro_002.jpg",
+        "id": "archivo_metro_001",
+        "url": "/assets/fotos/archivo_metro_001.jpg",
         "category": "Metro",
         "borough": "",
-        "topic": "Estación Juárez del Metro de la Ciudad de México 09",
+        "topic": "Línea 2 del Metro de la Ciudad de México - Metro Pino Suárez Línea 2 - 10",
         "author": "ProtoplasmaKid",
         "license": "CC BY-SA 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Estaci%C3%B3n_Ju%C3%A1rez_del_Metro_de_la_Ciudad_de_M%C3%A9xico_09.jpg"
-      }
-    },
-    {
-      "title": "Habrá nueva sede de la UNAM al sur de la CDMX, la primera que se construye en 50 años",
-      "description": "La información publicada por Crónica del Poder trata un asunto registrado en la sección de Gobierno del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPQWN1YXJjWUozdUt1ZUtDUXh0T0ZCY0l1czBQeUlNQUhWbVRRMGo4VGlsNmYzdFNsXzVnWnc2Ujg0UktCNm5PX0YtYmxPQnI5UVEyb2R1RlBqaGJybnlhamZ3OVJtOGZSTmRYQXZJbm1ObXQ5T2NJY3pBaDhMbjZ1SktRVEJWaE9uMzNvOUFSOE5wc1JRXzdKRGliUXl6dGF0N0EyOFkycGJWWmI0bGpGLXI5cGFWeU1RSnB1VGJmNG5UQQ?oc=5",
-      "source": "Crónica del Poder",
-      "date": "2026-10-15",
-      "published_at": "2026-10-15T06:13:58Z",
-      "category": "Gobierno",
-      "borough": "",
-      "location": "Ciudad de México (sin alcaldía identificada)",
-      "local_url": "/noticias/?id=571897454afa629f15aa&mes=2026-10",
-      "brief": {
-        "lead": "La información publicada por Crónica del Poder trata un asunto registrado en la sección de Gobierno del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-        "context": "Las decisiones administrativas pueden influir en servicios, trámites y derechos; conviene conocer sus condiciones y a quiénes afectan.",
-        "pending": "Es indispensable consultar los acuerdos, comunicados o documentos oficiales antes de dar una medida por vigente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "archivo_gobierno_007",
-        "url": "/assets/fotos/archivo_gobierno_007.jpg",
-        "category": "Gobierno",
-        "borough": "",
-        "topic": "Calle Calle Francisco I. Madero de la Ciudad de México, con el Palacio Nacional al fondo",
-        "author": "Luisalvaz",
-        "license": "CC BY-SA 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Calle_Calle_Francisco_I._Madero_de_la_Ciudad_de_M%C3%A9xico%2C_con_el_Palacio_Nacional_al_fondo.JPG"
+        "source": "https://commons.wikimedia.org/wiki/File:L%C3%ADnea_2_del_Metro_de_la_Ciudad_de_M%C3%A9xico_-_Metro_Pino_Su%C3%A1rez_L%C3%ADnea_2_-_10.jpg"
       }
     },
     {
@@ -383,14 +411,14 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "alcaldia_iztapalapa",
-        "url": "/assets/alcaldias/iztapalapa.jpg",
-        "category": "CDMX",
-        "borough": "Iztapalapa",
-        "topic": "Vista de Iztapalapa desde el Cerro de la Estrella",
-        "author": "Secretaría de Cultura Ciudad de México from México",
-        "license": "CC BY 2.0",
-        "source": "https://commons.wikimedia.org/wiki/File:MX_MM_MUSEO_CERRO_DE_LA_ESTRELLA_%2849522225751%29.jpg"
+        "id": "archivo_seguridad_002",
+        "url": "/assets/fotos/archivo_seguridad_002.jpg",
+        "category": "Seguridad",
+        "borough": "",
+        "topic": "Patrulla vecinal",
+        "author": "Daniel Yonka",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Patrulla_vecinal.jpg"
       }
     },
     {
@@ -579,14 +607,14 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_gobierno_008",
-        "url": "/assets/fotos/archivo_gobierno_008.jpg",
+        "id": "archivo_gobierno_009",
+        "url": "/assets/fotos/archivo_gobierno_009.jpg",
         "category": "Gobierno",
         "borough": "",
-        "topic": "Calles Seminario y Moneda Centro Histórico Ciudad de México 01",
-        "author": "Correogsk",
+        "topic": "Ciudad de México - Luces",
+        "author": "Juan Carlos Fonseca Mata",
         "license": "CC BY-SA 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Calles_Seminario_y_Moneda_Centro_Hist%C3%B3rico_Ciudad_de_M%C3%A9xico_01.jpg"
+        "source": "https://commons.wikimedia.org/wiki/File:Ciudad_de_M%C3%A9xico_-_Luces.jpg"
       }
     },
     {
@@ -607,14 +635,14 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_gobierno_009",
-        "url": "/assets/fotos/archivo_gobierno_009.jpg",
-        "category": "Gobierno",
+        "id": "reciente_f2fceb86e231b250",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Edificios%2C_Paseo_de_la_Reforma_%28CDMX%29_0131.jpg/1280px-Edificios%2C_Paseo_de_la_Reforma_%28CDMX%29_0131.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "category": "CDMX",
         "borough": "",
-        "topic": "Ciudad de México - Luces",
+        "topic": "Edificios, Paseo de la Reforma (CDMX) 0131",
         "author": "Juan Carlos Fonseca Mata",
         "license": "CC BY-SA 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Ciudad_de_M%C3%A9xico_-_Luces.jpg"
+        "source": "https://commons.wikimedia.org/wiki/File:Edificios,_Paseo_de_la_Reforma_(CDMX)_0131.jpg"
       }
     },
     {
@@ -663,14 +691,14 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "reciente_f2fceb86e231b250",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Edificios%2C_Paseo_de_la_Reforma_%28CDMX%29_0131.jpg/1280px-Edificios%2C_Paseo_de_la_Reforma_%28CDMX%29_0131.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "id": "alcaldia_azcapotzalco",
+        "url": "/assets/alcaldias/azcapotzalco.jpg",
         "category": "CDMX",
-        "borough": "",
-        "topic": "Edificios, Paseo de la Reforma (CDMX) 0131",
-        "author": "Juan Carlos Fonseca Mata",
-        "license": "CC BY-SA 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Edificios,_Paseo_de_la_Reforma_(CDMX)_0131.jpg"
+        "borough": "Azcapotzalco",
+        "topic": "Parroquia de Santa Catarina, Azcapotzalco",
+        "author": "Ivan alcantara",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:PARROQUIA_DE_SANTA_CATARINA_%28AZCAPOTZALCO%29.jpg"
       }
     },
     {
@@ -691,14 +719,14 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "alcaldia_azcapotzalco",
-        "url": "/assets/alcaldias/azcapotzalco.jpg",
+        "id": "alcaldia_benito-juarez",
+        "url": "/assets/alcaldias/benito-juarez.jpg",
         "category": "CDMX",
-        "borough": "Azcapotzalco",
-        "topic": "Parroquia de Santa Catarina, Azcapotzalco",
-        "author": "Ivan alcantara",
+        "borough": "Benito Juárez",
+        "topic": "Parque Hundido, alcaldía Benito Juárez",
+        "author": "User:etnoboris",
         "license": "CC BY-SA 3.0",
-        "source": "https://commons.wikimedia.org/wiki/File:PARROQUIA_DE_SANTA_CATARINA_%28AZCAPOTZALCO%29.jpg"
+        "source": "https://commons.wikimedia.org/wiki/File:Parque_Hundido.jpeg"
       }
     },
     {
@@ -719,14 +747,14 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "alcaldia_benito-juarez",
-        "url": "/assets/alcaldias/benito-juarez.jpg",
+        "id": "alcaldia_cuajimalpa",
+        "url": "/assets/alcaldias/cuajimalpa.jpg",
         "category": "CDMX",
-        "borough": "Benito Juárez",
-        "topic": "Parque Hundido, alcaldía Benito Juárez",
-        "author": "User:etnoboris",
+        "borough": "Cuajimalpa de Morelos",
+        "topic": "Centro del antiguo pueblo de Cuajimalpa",
+        "author": "AlejandroLinaresGarcia",
         "license": "CC BY-SA 3.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Parque_Hundido.jpeg"
+        "source": "https://commons.wikimedia.org/wiki/File:CuajimalpaCentro01.JPG"
       }
     },
     {
@@ -747,14 +775,14 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "alcaldia_cuajimalpa",
-        "url": "/assets/alcaldias/cuajimalpa.jpg",
+        "id": "alcaldia_miguel-hidalgo",
+        "url": "/assets/alcaldias/miguel-hidalgo.jpg",
         "category": "CDMX",
-        "borough": "Cuajimalpa de Morelos",
-        "topic": "Centro del antiguo pueblo de Cuajimalpa",
-        "author": "AlejandroLinaresGarcia",
-        "license": "CC BY-SA 3.0",
-        "source": "https://commons.wikimedia.org/wiki/File:CuajimalpaCentro01.JPG"
+        "borough": "Miguel Hidalgo",
+        "topic": "Bosque de Chapultepec, alcaldía Miguel Hidalgo",
+        "author": "ProtoplasmaKid",
+        "license": "CC0",
+        "source": "https://commons.wikimedia.org/wiki/File:Audiorama_de_Chapultepec_1.jpg"
       }
     },
     {
@@ -775,14 +803,14 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "alcaldia_miguel-hidalgo",
-        "url": "/assets/alcaldias/miguel-hidalgo.jpg",
+        "id": "alcaldia_milpa-alta",
+        "url": "/assets/alcaldias/milpa-alta.jpg",
         "category": "CDMX",
-        "borough": "Miguel Hidalgo",
-        "topic": "Bosque de Chapultepec, alcaldía Miguel Hidalgo",
-        "author": "ProtoplasmaKid",
-        "license": "CC0",
-        "source": "https://commons.wikimedia.org/wiki/File:Audiorama_de_Chapultepec_1.jpg"
+        "borough": "Milpa Alta",
+        "topic": "Villa Milpa Alta y su entorno rural",
+        "author": "Comisión Mexicana de Filmaciones from México D. F., México",
+        "license": "CC BY-SA 2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Villa_Milpa_Alta%2C_Ciudad_de_M%C3%A9xico_%2832886264042%29.jpg"
       }
     },
     {
@@ -803,14 +831,14 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "alcaldia_milpa-alta",
-        "url": "/assets/alcaldias/milpa-alta.jpg",
+        "id": "alcaldia_tlahuac",
+        "url": "/assets/alcaldias/tlahuac.jpg",
         "category": "CDMX",
-        "borough": "Milpa Alta",
-        "topic": "Villa Milpa Alta y su entorno rural",
-        "author": "Comisión Mexicana de Filmaciones from México D. F., México",
-        "license": "CC BY-SA 2.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Villa_Milpa_Alta%2C_Ciudad_de_M%C3%A9xico_%2832886264042%29.jpg"
+        "borough": "Tláhuac",
+        "topic": "Plaza central de San Pedro Tláhuac",
+        "author": "Yavidaxiu",
+        "license": "CC BY 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Tl%C3%A1huac-Plaza_central.JPG"
       }
     },
     {
@@ -831,42 +859,98 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "alcaldia_tlahuac",
-        "url": "/assets/alcaldias/tlahuac.jpg",
+        "id": "alcaldia_tlalpan",
+        "url": "/assets/alcaldias/tlalpan.jpg",
         "category": "CDMX",
-        "borough": "Tláhuac",
-        "topic": "Plaza central de San Pedro Tláhuac",
-        "author": "Yavidaxiu",
-        "license": "CC BY 3.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Tl%C3%A1huac-Plaza_central.JPG"
+        "borough": "Tlalpan",
+        "topic": "Quiosco de la plaza principal de Tlalpan",
+        "author": "farid estrada",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Kiosko_plaza_de_la_constitucion%2C_tlapan.JPG"
       }
     },
     {
-      "title": "Feria de las Calacas Cenart 2026: fechas, horarios y actividades GRATIS para celebrar el Día de Muertos en CD",
-      "description": "La información publicada por La Lista trata un asunto registrado en la sección de Cultura del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-      "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxOSXN3ZlB4NmJxZmVRejJFLWJqMkZXeWFaS3JQTHpweDBKcjFON2drT2hGNGRYTXYtclQ4UG1KdU40QUhyNkxkbGpkcXVhNElDTmhkN1ZIaHRxVE9jUWppdjFaTm5NRHdZYkpSWVYxUkNHM1c5SXQwTTVqQXhINU5fRGR2dTFzWjBhdmlXYm1fcW1CdXJpUl8tTU1HSWd4UVkway1EaXZGWmNpVGk2bWhVYlZjUDhmZWFyVG5EZjV4UTVXendBekdlOHJzN3NjX3k4emVzYnNNdVNsd0RwYV9Na1RmUnFyUFczSHJwVHFhOHRtQTk3WURIRklhd9IB-wFBVV95cUxOSXN3ZlB4NmJxZmVRejJFLWJqMkZXeWFaS3JQTHpweDBKcjFON2drT2hGNGRYTXYtclQ4UG1KdU40QUhyNkxkbGpkcXVhNElDTmhkN1ZIaHRxVE9jUWppdjFaTm5NRHdZYkpSWVYxUkNHM1c5SXQwTTVqQXhINU5fRGR2dTFzWjBhdmlXYm1fcW1CdXJpUl8tTU1HSWd4UVkway1EaXZGWmNpVGk2bWhVYlZjUDhmZWFyVG5EZjV4UTVXendBekdlOHJzN3NjX3k4emVzYnNNdVNsd0RwYV9Na1RmUnFyUFczSHJwVHFhOHRtQTk3WURIRklhdw?oc=5",
-      "source": "La Lista",
+      "title": "Línea 7 del Metro presenta marcha lenta por incidente en zona de vías",
+      "description": "Según la información destacada por El Heraldo de México, manifestaciones o bloqueos forman parte de la jornada de movilidad capitalina. La ficha no demuestra por sí sola que todas las vías mencionadas sigan cerradas al momento de leerla.",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQb2p6NkE5NmxPRTY2RXBNeHl3NG0yemVqcnlKc3hZT2hPbDZDVGs2eXp3TWNJWEF3Mkp4TmlyR2xOeDZCMnk5SGZTTDlpSDU0UVcwY2JxVEtFVG9hVmtkS2ZQbjlFQjZ5VjdqS2c2QlIwZ3NCTUdZM29hcUF3M1NaOTJYdEswNkVjcEhjZU8tTmQ4RG5WNHFUbnpPdTBpMmg5S2Z2RENPWThaNnRlTkMxblpGblFoR1lHMHcyT2gwbF9XclBlczk2NEZR?oc=5",
+      "source": "El Heraldo de México",
       "date": "2026-10-14",
-      "published_at": "2026-10-15T04:53:33Z",
-      "category": "Cultura",
+      "published_at": "2026-10-15T04:59:00Z",
+      "category": "Metro",
       "borough": "",
       "location": "Ubicación no indicada por el titular",
-      "local_url": "/noticias/?id=1545aa3c273c43f39eb2&mes=2026-10",
+      "local_url": "/noticias/?id=3be02eb29d5a0f2f3119&mes=2026-10",
       "brief": {
-        "lead": "La información publicada por La Lista trata un asunto registrado en la sección de Cultura del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-        "context": "La actividad cultural abre oportunidades de encuentro, aprendizaje y disfrute para habitantes y visitantes.",
-        "pending": "Los accesos, boletos, sedes, cupos y horarios deben consultarse con la institución organizadora. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "lead": "Según la información destacada por El Heraldo de México, manifestaciones o bloqueos forman parte de la jornada de movilidad capitalina. La ficha no demuestra por sí sola que todas las vías mencionadas sigan cerradas al momento de leerla.",
+        "context": "Los cambios en este sistema pueden afectar los horarios, las conexiones y la planeación de los viajes cotidianos.",
+        "pending": "El estado operativo, las estaciones y las alternativas de traslado deben comprobarse en los avisos actuales del Metro. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_cultura_001",
-        "url": "/assets/fotos/archivo_cultura_001.jpg",
-        "category": "Cultura",
+        "id": "archivo_metro_002",
+        "url": "/assets/fotos/archivo_metro_002.jpg",
+        "category": "Metro",
         "borough": "",
-        "topic": "PALACIO DE BELLAS ARTES, CIUDAD DE MEXICO.",
-        "author": "Acuentacuentos",
-        "license": "CC BY-SA 3.0",
-        "source": "https://commons.wikimedia.org/wiki/File:PALACIO_DE_BELLAS_ARTES%2C_CIUDAD_DE_MEXICO..jpg"
+        "topic": "Estación Juárez del Metro de la Ciudad de México 09",
+        "author": "ProtoplasmaKid",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Estaci%C3%B3n_Ju%C3%A1rez_del_Metro_de_la_Ciudad_de_M%C3%A9xico_09.jpg"
+      }
+    },
+    {
+      "title": "Línea 8 del Metro suspende servicio por maniobras de rescate en vías",
+      "description": "La información publicada por El Heraldo de México trata un asunto registrado en la sección de Metro del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPZ3BxVTY1Q2JpV1ZrZXhYcXZTZDgzS21XdWFOaHBxeTA0eVVQeXBlNU55NVNuR0FqZUxEb3B4ekphckVqcEhkUVlqZkdwY01wcUl4TXk1Sk96NUcwU19fSDZrQjZCQy1yZXVDS0lpSVZmQVFlTHRCNjVUUmJXV3R0MVVtdjBtS2g4RElBby1MMFpjcGh0b1ROZnA2UmM0cDZYRlVmQVM0M3hoVWM4WWlvdGNaTFdOTmFXWGxNV25vVjlfZjd3ZFlTRA?oc=5",
+      "source": "El Heraldo de México",
+      "date": "2026-10-14",
+      "published_at": "2026-10-15T04:59:00Z",
+      "category": "Metro",
+      "borough": "",
+      "location": "Ubicación no indicada por el titular",
+      "local_url": "/noticias/?id=212ba9f0ff65e8a4566c&mes=2026-10",
+      "brief": {
+        "lead": "La información publicada por El Heraldo de México trata un asunto registrado en la sección de Metro del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+        "context": "Los cambios en este sistema pueden afectar los horarios, las conexiones y la planeación de los viajes cotidianos.",
+        "pending": "El estado operativo, las estaciones y las alternativas de traslado deben comprobarse en los avisos actuales del Metro. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "archivo_metro_003",
+        "url": "/assets/fotos/archivo_metro_003.jpg",
+        "category": "Metro",
+        "borough": "",
+        "topic": "Parafernalia del Metro (Ciudad de México)",
+        "author": "Juan Carlos Fonseca Mata",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Parafernalia_del_Metro_%28Ciudad_de_M%C3%A9xico%29.jpg"
+      }
+    },
+    {
+      "title": "Línea 8 del Metro restablece el servicio tras una pausa operativa",
+      "description": "La información publicada por El Heraldo de México trata un asunto registrado en la sección de Metro del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQNERlU25Dcm0xRnc3VEQ2cFVneFhKUVV0aVFSTE5LT0Z4OC1jSWRhN3BuYS04ZkVJM1p2SmoycWVPTnNRM2NiVVM0VUZDcXdKZnhRTDE4N3g1UlRIRkZvMmpNVF85NnFxNG5oRFl6Q3dIay11aXQzV3dPOEpSX090OVpHeUd3a25PRW5wa1puQ1NJbW5lT2tKdWZPb2NrOGd6bU56ZEo4RWozUVVsc0s4YWFCelc5ejhFNWFsaktSOE16eVAy?oc=5",
+      "source": "El Heraldo de México",
+      "date": "2026-10-14",
+      "published_at": "2026-10-15T04:59:00Z",
+      "category": "Metro",
+      "borough": "",
+      "location": "Ubicación no indicada por el titular",
+      "local_url": "/noticias/?id=37690b5ae0b39bcaea0a&mes=2026-10",
+      "brief": {
+        "lead": "La información publicada por El Heraldo de México trata un asunto registrado en la sección de Metro del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+        "context": "Los cambios en este sistema pueden afectar los horarios, las conexiones y la planeación de los viajes cotidianos.",
+        "pending": "El estado operativo, las estaciones y las alternativas de traslado deben comprobarse en los avisos actuales del Metro. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "archivo_metro_004",
+        "url": "/assets/fotos/archivo_metro_004.jpg",
+        "category": "Metro",
+        "borough": "",
+        "topic": "Estación Sevilla de la Línea 1 del Metro de la Ciudad de México - 01 - Túnel de salida",
+        "author": "ProtoplasmaKid",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Estaci%C3%B3n_Sevilla_de_la_L%C3%ADnea_1_del_Metro_de_la_Ciudad_de_M%C3%A9xico_-_01_-_T%C3%BAnel_de_salida.jpg"
       }
     },
     {
@@ -887,14 +971,14 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_metro_003",
-        "url": "/assets/fotos/archivo_metro_003.jpg",
+        "id": "archivo_metro_005",
+        "url": "/assets/fotos/archivo_metro_005.jpg",
         "category": "Metro",
         "borough": "",
-        "topic": "Parafernalia del Metro (Ciudad de México)",
-        "author": "Juan Carlos Fonseca Mata",
+        "topic": "Estación Sevilla de la Línea 1 del Metro de la Ciudad de México - 01 - Andén",
+        "author": "ProtoplasmaKid",
         "license": "CC BY-SA 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Parafernalia_del_Metro_%28Ciudad_de_M%C3%A9xico%29.jpg"
+        "source": "https://commons.wikimedia.org/wiki/File:Estaci%C3%B3n_Sevilla_de_la_L%C3%ADnea_1_del_Metro_de_la_Ciudad_de_M%C3%A9xico_-_01_-_And%C3%A9n.jpg"
       }
     },
     {
@@ -915,34 +999,6 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "alcaldia_tlalpan",
-        "url": "/assets/alcaldias/tlalpan.jpg",
-        "category": "CDMX",
-        "borough": "Tlalpan",
-        "topic": "Quiosco de la plaza principal de Tlalpan",
-        "author": "farid estrada",
-        "license": "CC BY-SA 3.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Kiosko_plaza_de_la_constitucion%2C_tlapan.JPG"
-      }
-    },
-    {
-      "title": "Metro CDMX: ¿qué pasó en la Línea 8 HOY 14 de octubre?",
-      "description": "La información publicada por El Heraldo de México trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPcGJQTmQtSEpVQ2E4ZTY2c3h2ZVB2cjRidlNJeUNraHB6ZzJzdUlIRVlSUVByUzZmalZFLXlXNk45bEJQWUtHOUV0ZnRVUTBtNko4aWtGTnptX0FZWFRFQjdocmVGUGcyZEtvOHpiY2kyc1duejlvM1Y1RWZTbHNFZnpST3EzSmhaMlVxVkwwTnV2ZEFkdUtEZU5aaUJCQmUyWGZhdHRLb3loTWpLaWtaVlhB?oc=5",
-      "source": "El Heraldo de México",
-      "date": "2026-10-14",
-      "published_at": "2026-10-15T04:35:00Z",
-      "category": "CDMX",
-      "borough": "",
-      "location": "Ciudad de México (sin alcaldía identificada)",
-      "local_url": "/noticias/?id=997a573f8aee8ac60825&mes=2026-10",
-      "brief": {
-        "lead": "La información publicada por El Heraldo de México trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-        "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-        "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
         "id": "alcaldia_venustiano-carranza",
         "url": "/assets/alcaldias/venustiano-carranza.jpg",
         "category": "CDMX",
@@ -954,12 +1010,40 @@
       }
     },
     {
+      "title": "Metro CDMX: ¿qué pasó en la Línea 8 HOY 14 de octubre?",
+      "description": "La información publicada por El Heraldo de México trata un asunto registrado en la sección de Metro del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPcGJQTmQtSEpVQ2E4ZTY2c3h2ZVB2cjRidlNJeUNraHB6ZzJzdUlIRVlSUVByUzZmalZFLXlXNk45bEJQWUtHOUV0ZnRVUTBtNko4aWtGTnptX0FZWFRFQjdocmVGUGcyZEtvOHpiY2kyc1duejlvM1Y1RWZTbHNFZnpST3EzSmhaMlVxVkwwTnV2ZEFkdUtEZU5aaUJCQmUyWGZhdHRLb3loTWpLaWtaVlhB?oc=5",
+      "source": "El Heraldo de México",
+      "date": "2026-10-14",
+      "published_at": "2026-10-15T04:35:00Z",
+      "category": "Metro",
+      "borough": "",
+      "location": "Ciudad de México (sin alcaldía identificada)",
+      "local_url": "/noticias/?id=997a573f8aee8ac60825&mes=2026-10",
+      "brief": {
+        "lead": "La información publicada por El Heraldo de México trata un asunto registrado en la sección de Metro del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+        "context": "Los cambios en este sistema pueden afectar los horarios, las conexiones y la planeación de los viajes cotidianos.",
+        "pending": "El estado operativo, las estaciones y las alternativas de traslado deben comprobarse en los avisos actuales del Metro. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "archivo_metro_006",
+        "url": "/assets/fotos/archivo_metro_006.jpg",
+        "category": "Metro",
+        "borough": "",
+        "topic": "Estación Pino Suárez de la Línea 1 del Metro de la Ciudad de México 02",
+        "author": "ProtoplasmaKid",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Estaci%C3%B3n_Pino_Su%C3%A1rez_de_la_L%C3%ADnea_1_del_Metro_de_la_Ciudad_de_M%C3%A9xico_02.jpg"
+      }
+    },
+    {
       "title": "Destaca SRE resultados en materia de seguridad",
       "description": "La información publicada por Capital CDMX trata un asunto registrado en la sección de Seguridad del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
       "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBGY0lRQUl1ZzVtR3RUT0kxUklnQTNmOGRSRnU2SEowaEhBSHhfOGYxdW91MGFmLVY2bHdqcU1ZTy1HbW5QRmNZbVgwdk1Oc3FHSkEtU19IQlFYVkhyZTJxT2V6WVRMUVJKcXR2MWRQc0lndmVjU0NvQzRTOHE?oc=5",
       "source": "Capital CDMX",
       "date": "2026-10-14",
-      "published_at": "2026-10-15T04:28:03Z",
+      "published_at": "2026-10-15T04:31:38Z",
       "category": "Seguridad",
       "borough": "",
       "location": "Ubicación no indicada por el titular",
@@ -971,42 +1055,14 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_seguridad_002",
-        "url": "/assets/fotos/archivo_seguridad_002.jpg",
+        "id": "archivo_seguridad_003",
+        "url": "/assets/fotos/archivo_seguridad_003.jpg",
         "category": "Seguridad",
         "borough": "",
-        "topic": "Patrulla vecinal",
-        "author": "Daniel Yonka",
-        "license": "CC BY-SA 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Patrulla_vecinal.jpg"
-      }
-    },
-    {
-      "title": "Balacera en tianguis de Iztapalapa, CDMX deja una mujer muerta y tres lesionados",
-      "description": "La información publicada por Quinta Fuerza trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPVk5MbmgzVjB4N0NHM2RNU0NDOTNSQl9MTVludlIzSVkwYTdVZWw2bXk1SGQ1bHlhN0hUVE52Vmd5TldWazl4NW5iSjEzZ1F1dUFaQjB4azJIRmduc3c1Vk9hT0RrZS0tbmtYNDk1MlkxdG51WnljN0VGZU1SYmNqX2I1V2ZGTk81dHJIUWR4TEswT2NMMWh3c3Y4dFhyU2U1YjRIb0pKbVJmWlpKbkdKdlEzaWk?oc=5",
-      "source": "Quinta Fuerza",
-      "date": "2026-10-14",
-      "published_at": "2026-10-15T04:21:56Z",
-      "category": "CDMX",
-      "borough": "Iztapalapa",
-      "location": "Iztapalapa (mencionada en el titular)",
-      "local_url": "/noticias/?id=e5db0ce309f5bbeb67cf&mes=2026-10",
-      "brief": {
-        "lead": "La información publicada por Quinta Fuerza trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-        "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-        "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "archivo_cultura_002",
-        "url": "/assets/fotos/archivo_cultura_002.jpg",
-        "category": "Cultura",
-        "borough": "",
-        "topic": "Palacio Nacional de Bellas Artes Ciudad de México D.F",
-        "author": "Luis Yamamoto",
-        "license": "CC BY-SA 3.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Palacio_Nacional_de_Bellas_Artes_Ciudad_de_M%C3%A9xico_D.F.jpg"
+        "topic": "Adquisición patrullas para la Policía 02",
+        "author": "Gobierno de la Ciudad de México",
+        "license": "CC BY 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Adquisici%C3%B3n_patrullas_para_la_Polic%C3%ADa_02.jpg"
       }
     },
     {
@@ -1027,14 +1083,14 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_cultura_003",
-        "url": "/assets/fotos/archivo_cultura_003.jpg",
+        "id": "archivo_cultura_001",
+        "url": "/assets/fotos/archivo_cultura_001.jpg",
         "category": "Cultura",
         "borough": "",
-        "topic": "Mexico City Palacio de bellas artes",
-        "author": "Jeses",
-        "license": "CC BY-SA 2.5",
-        "source": "https://commons.wikimedia.org/wiki/File:Mexico_City_Palacio_de_bellas_artes.jpg"
+        "topic": "PALACIO DE BELLAS ARTES, CIUDAD DE MEXICO.",
+        "author": "Acuentacuentos",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:PALACIO_DE_BELLAS_ARTES%2C_CIUDAD_DE_MEXICO..jpg"
       }
     },
     {
@@ -1055,14 +1111,14 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_cultura_004",
-        "url": "/assets/fotos/archivo_cultura_004.jpg",
+        "id": "archivo_cultura_002",
+        "url": "/assets/fotos/archivo_cultura_002.jpg",
         "category": "Cultura",
         "borough": "",
-        "topic": "Palacio de Bellas Artes (nocturno), Ciudad de México.",
-        "author": "MaríaJoséFelgueresPlanells",
-        "license": "CC BY-SA 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Palacio_de_Bellas_Artes_%28nocturno%29%2C_Ciudad_de_M%C3%A9xico..jpg"
+        "topic": "Palacio Nacional de Bellas Artes Ciudad de México D.F",
+        "author": "Luis Yamamoto",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Palacio_Nacional_de_Bellas_Artes_Ciudad_de_M%C3%A9xico_D.F.jpg"
       }
     },
     {
@@ -1083,14 +1139,14 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_cultura_005",
-        "url": "/assets/fotos/archivo_cultura_005.jpg",
+        "id": "archivo_cultura_003",
+        "url": "/assets/fotos/archivo_cultura_003.jpg",
         "category": "Cultura",
         "borough": "",
-        "topic": "Palacio de Bellas Artes, México D.F., México, 2013-10-13, DD 40",
-        "author": "Diego Delso",
-        "license": "CC BY-SA 3.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Palacio_de_Bellas_Artes%2C_M%C3%A9xico_D.F.%2C_M%C3%A9xico%2C_2013-10-13%2C_DD_40.jpg"
+        "topic": "Mexico City Palacio de bellas artes",
+        "author": "Jeses",
+        "license": "CC BY-SA 2.5",
+        "source": "https://commons.wikimedia.org/wiki/File:Mexico_City_Palacio_de_bellas_artes.jpg"
       }
     },
     {
@@ -1139,14 +1195,14 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_seguridad_003",
-        "url": "/assets/fotos/archivo_seguridad_003.jpg",
+        "id": "archivo_seguridad_004",
+        "url": "/assets/fotos/archivo_seguridad_004.jpg",
         "category": "Seguridad",
         "borough": "",
-        "topic": "Adquisición patrullas para la Policía 02",
+        "topic": "Adquisición patrullas para la Policía 01",
         "author": "Gobierno de la Ciudad de México",
         "license": "CC BY 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Adquisici%C3%B3n_patrullas_para_la_Polic%C3%ADa_02.jpg"
+        "source": "https://commons.wikimedia.org/wiki/File:Adquisici%C3%B3n_patrullas_para_la_Polic%C3%ADa_01.jpg"
       }
     },
     {
@@ -1167,14 +1223,14 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_cultura_006",
-        "url": "/assets/fotos/archivo_cultura_006.jpg",
+        "id": "archivo_cultura_004",
+        "url": "/assets/fotos/archivo_cultura_004.jpg",
         "category": "Cultura",
         "borough": "",
-        "topic": "Detalles del exterior del Palacio de Bellas Artes, Ciudad de México 06",
-        "author": "Luisalvaz",
+        "topic": "Palacio de Bellas Artes (nocturno), Ciudad de México.",
+        "author": "MaríaJoséFelgueresPlanells",
         "license": "CC BY-SA 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Detalles_del_exterior_del_Palacio_de_Bellas_Artes%2C_Ciudad_de_M%C3%A9xico_06.JPG"
+        "source": "https://commons.wikimedia.org/wiki/File:Palacio_de_Bellas_Artes_%28nocturno%29%2C_Ciudad_de_M%C3%A9xico..jpg"
       }
     },
     {
@@ -1195,14 +1251,14 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_cultura_007",
-        "url": "/assets/fotos/archivo_cultura_007.jpg",
+        "id": "archivo_cultura_005",
+        "url": "/assets/fotos/archivo_cultura_005.jpg",
         "category": "Cultura",
         "borough": "",
-        "topic": "Palacio de Bellas Artes, Ciudad de México, México, 2015-07-18, DD 10",
+        "topic": "Palacio de Bellas Artes, México D.F., México, 2013-10-13, DD 40",
         "author": "Diego Delso",
-        "license": "CC BY-SA 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Palacio_de_Bellas_Artes%2C_Ciudad_de_M%C3%A9xico%2C_M%C3%A9xico%2C_2015-07-18%2C_DD_10.JPG"
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Palacio_de_Bellas_Artes%2C_M%C3%A9xico_D.F.%2C_M%C3%A9xico%2C_2013-10-13%2C_DD_40.jpg"
       }
     },
     {
@@ -1223,14 +1279,14 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_cultura_008",
-        "url": "/assets/fotos/archivo_cultura_008.jpg",
+        "id": "archivo_cultura_006",
+        "url": "/assets/fotos/archivo_cultura_006.jpg",
         "category": "Cultura",
         "borough": "",
-        "topic": "Palacio de Bellas Artes México DF",
-        "author": "Eliasjorge4",
-        "license": "CC BY 3.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Palacio_de_Bellas_Artes_M%C3%A9xico_DF.JPG"
+        "topic": "Detalles del exterior del Palacio de Bellas Artes, Ciudad de México 06",
+        "author": "Luisalvaz",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Detalles_del_exterior_del_Palacio_de_Bellas_Artes%2C_Ciudad_de_M%C3%A9xico_06.JPG"
       }
     },
     {
@@ -1251,14 +1307,14 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_seguridad_004",
-        "url": "/assets/fotos/archivo_seguridad_004.jpg",
+        "id": "archivo_seguridad_005",
+        "url": "/assets/fotos/archivo_seguridad_005.jpg",
         "category": "Seguridad",
         "borough": "",
-        "topic": "Adquisición patrullas para la Policía 01",
+        "topic": "Jeep policia cdmx",
         "author": "Gobierno de la Ciudad de México",
-        "license": "CC BY 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Adquisici%C3%B3n_patrullas_para_la_Polic%C3%ADa_01.jpg"
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Jeep_policia_cdmx.jpg"
       }
     },
     {
@@ -1279,42 +1335,14 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_metro_004",
-        "url": "/assets/fotos/archivo_metro_004.jpg",
+        "id": "archivo_metro_007",
+        "url": "/assets/fotos/archivo_metro_007.jpg",
         "category": "Metro",
         "borough": "",
-        "topic": "Estación Sevilla de la Línea 1 del Metro de la Ciudad de México - 01 - Túnel de salida",
+        "topic": "Estación Sevilla de la Línea 1 del Metro de la Ciudad de México - 01 - Tren en espera",
         "author": "ProtoplasmaKid",
         "license": "CC BY-SA 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Estaci%C3%B3n_Sevilla_de_la_L%C3%ADnea_1_del_Metro_de_la_Ciudad_de_M%C3%A9xico_-_01_-_T%C3%BAnel_de_salida.jpg"
-      }
-    },
-    {
-      "title": "Hallan el cuerpo de un hombre en Canal Nacional de CDMX; es el segundo cadáver esta semana",
-      "description": "La información publicada por ADN 40 trata un asunto registrado en la sección de Seguridad del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxONDFSRHMyZDBjUl8zMkM1Z19WS1gyX3ZEcGtMajNPTkFaRnNJM1hkZGV0WHdqMk9sRW9yM2NqVVpHQ0MyeXpNbXFGMWVhc0lxZnhWQjEwcE5kVXJ1QVdOcV9GWThVc3hJd2pfbHc4Q3JkUjVJRE5BLVNlcTY4b0YtaVMwQnc1ZVE3STFEWGUwMHZmZy1ZU2JwMTZWWHgzSGlfY2tyQlpQa1BjMVRuNTBoNWdSaTZiVlFnZDgxX1JQeEhGVmFYOU5wNnhPUHI?oc=5",
-      "source": "ADN 40",
-      "date": "2026-10-14",
-      "published_at": "2026-10-15T03:07:03Z",
-      "category": "Seguridad",
-      "borough": "",
-      "location": "Ciudad de México (sin alcaldía identificada)",
-      "local_url": "/noticias/?id=9c66b2d32e70ad6364b0&mes=2026-10",
-      "brief": {
-        "lead": "La información publicada por ADN 40 trata un asunto registrado en la sección de Seguridad del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-        "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
-        "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "archivo_seguridad_005",
-        "url": "/assets/fotos/archivo_seguridad_005.jpg",
-        "category": "Seguridad",
-        "borough": "",
-        "topic": "Jeep policia cdmx",
-        "author": "Gobierno de la Ciudad de México",
-        "license": "CC BY-SA 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Jeep_policia_cdmx.jpg"
+        "source": "https://commons.wikimedia.org/wiki/File:Estaci%C3%B3n_Sevilla_de_la_L%C3%ADnea_1_del_Metro_de_la_Ciudad_de_M%C3%A9xico_-_01_-_Tren_en_espera.jpg"
       }
     },
     {
@@ -1335,14 +1363,14 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_metro_005",
-        "url": "/assets/fotos/archivo_metro_005.jpg",
+        "id": "archivo_metro_008",
+        "url": "/assets/fotos/archivo_metro_008.jpg",
         "category": "Metro",
         "borough": "",
-        "topic": "Estación Sevilla de la Línea 1 del Metro de la Ciudad de México - 01 - Andén",
+        "topic": "Estación Pino Suárez de la Línea 1 del Metro de la Ciudad de México 04",
         "author": "ProtoplasmaKid",
         "license": "CC BY-SA 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Estaci%C3%B3n_Sevilla_de_la_L%C3%ADnea_1_del_Metro_de_la_Ciudad_de_M%C3%A9xico_-_01_-_And%C3%A9n.jpg"
+        "source": "https://commons.wikimedia.org/wiki/File:Estaci%C3%B3n_Pino_Su%C3%A1rez_de_la_L%C3%ADnea_1_del_Metro_de_la_Ciudad_de_M%C3%A9xico_04.jpg"
       }
     },
     {
@@ -1363,14 +1391,14 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_metro_006",
-        "url": "/assets/fotos/archivo_metro_006.jpg",
+        "id": "archivo_metro_009",
+        "url": "/assets/fotos/archivo_metro_009.jpg",
         "category": "Metro",
         "borough": "",
-        "topic": "Estación Pino Suárez de la Línea 1 del Metro de la Ciudad de México 02",
+        "topic": "Estación Pino Suárez de la Línea 1 del Metro de la Ciudad de México 03",
         "author": "ProtoplasmaKid",
         "license": "CC BY-SA 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Estaci%C3%B3n_Pino_Su%C3%A1rez_de_la_L%C3%ADnea_1_del_Metro_de_la_Ciudad_de_M%C3%A9xico_02.jpg"
+        "source": "https://commons.wikimedia.org/wiki/File:Estaci%C3%B3n_Pino_Su%C3%A1rez_de_la_L%C3%ADnea_1_del_Metro_de_la_Ciudad_de_M%C3%A9xico_03.jpg"
       }
     },
     {
@@ -1391,14 +1419,14 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_cultura_009",
-        "url": "/assets/fotos/archivo_cultura_009.jpg",
+        "id": "archivo_cultura_007",
+        "url": "/assets/fotos/archivo_cultura_007.jpg",
         "category": "Cultura",
         "borough": "",
-        "topic": "Detalles del exterior del Palacio de Bellas Artes, Ciudad de México 05",
-        "author": "Luisalvaz",
+        "topic": "Palacio de Bellas Artes, Ciudad de México, México, 2015-07-18, DD 10",
+        "author": "Diego Delso",
         "license": "CC BY-SA 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Detalles_del_exterior_del_Palacio_de_Bellas_Artes%2C_Ciudad_de_M%C3%A9xico_05.JPG"
+        "source": "https://commons.wikimedia.org/wiki/File:Palacio_de_Bellas_Artes%2C_Ciudad_de_M%C3%A9xico%2C_M%C3%A9xico%2C_2015-07-18%2C_DD_10.JPG"
       }
     },
     {
@@ -1419,14 +1447,14 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_cultura_010",
-        "url": "/assets/fotos/archivo_cultura_010.jpg",
+        "id": "archivo_cultura_008",
+        "url": "/assets/fotos/archivo_cultura_008.jpg",
         "category": "Cultura",
         "borough": "",
-        "topic": "Palacio de Bellas Artes, Ciudad de México (32044319304)",
-        "author": "Comisión Mexicana de Filmaciones from México D. F., México",
-        "license": "CC BY-SA 2.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Palacio_de_Bellas_Artes%2C_Ciudad_de_M%C3%A9xico_%2832044319304%29.jpg"
+        "topic": "Palacio de Bellas Artes México DF",
+        "author": "Eliasjorge4",
+        "license": "CC BY 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Palacio_de_Bellas_Artes_M%C3%A9xico_DF.JPG"
       }
     },
     {
@@ -1447,14 +1475,14 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_cultura_011",
-        "url": "/assets/fotos/archivo_cultura_011.jpg",
+        "id": "archivo_cultura_009",
+        "url": "/assets/fotos/archivo_cultura_009.jpg",
         "category": "Cultura",
         "borough": "",
-        "topic": "Palacio de Bellas Artes - CDMX",
-        "author": "JUAN CARLOS GONZALEZ",
-        "license": "CC0",
-        "source": "https://commons.wikimedia.org/wiki/File:Palacio_de_Bellas_Artes_-_CDMX.jpg"
+        "topic": "Detalles del exterior del Palacio de Bellas Artes, Ciudad de México 05",
+        "author": "Luisalvaz",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Detalles_del_exterior_del_Palacio_de_Bellas_Artes%2C_Ciudad_de_M%C3%A9xico_05.JPG"
       }
     },
     {
@@ -1475,14 +1503,14 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_metro_007",
-        "url": "/assets/fotos/archivo_metro_007.jpg",
-        "category": "Metro",
+        "id": "archivo_cultura_010",
+        "url": "/assets/fotos/archivo_cultura_010.jpg",
+        "category": "Cultura",
         "borough": "",
-        "topic": "Estación Sevilla de la Línea 1 del Metro de la Ciudad de México - 01 - Tren en espera",
-        "author": "ProtoplasmaKid",
-        "license": "CC BY-SA 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Estaci%C3%B3n_Sevilla_de_la_L%C3%ADnea_1_del_Metro_de_la_Ciudad_de_M%C3%A9xico_-_01_-_Tren_en_espera.jpg"
+        "topic": "Palacio de Bellas Artes, Ciudad de México (32044319304)",
+        "author": "Comisión Mexicana de Filmaciones from México D. F., México",
+        "license": "CC BY-SA 2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Palacio_de_Bellas_Artes%2C_Ciudad_de_M%C3%A9xico_%2832044319304%29.jpg"
       }
     },
     {
@@ -1503,14 +1531,14 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_metro_008",
-        "url": "/assets/fotos/archivo_metro_008.jpg",
-        "category": "Metro",
+        "id": "archivo_cultura_011",
+        "url": "/assets/fotos/archivo_cultura_011.jpg",
+        "category": "Cultura",
         "borough": "",
-        "topic": "Estación Pino Suárez de la Línea 1 del Metro de la Ciudad de México 04",
-        "author": "ProtoplasmaKid",
-        "license": "CC BY-SA 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Estaci%C3%B3n_Pino_Su%C3%A1rez_de_la_L%C3%ADnea_1_del_Metro_de_la_Ciudad_de_M%C3%A9xico_04.jpg"
+        "topic": "Palacio de Bellas Artes - CDMX",
+        "author": "JUAN CARLOS GONZALEZ",
+        "license": "CC0",
+        "source": "https://commons.wikimedia.org/wiki/File:Palacio_de_Bellas_Artes_-_CDMX.jpg"
       }
     },
     {
@@ -1531,14 +1559,14 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_metro_009",
-        "url": "/assets/fotos/archivo_metro_009.jpg",
+        "id": "archivo_metro_010",
+        "url": "/assets/fotos/archivo_metro_010.jpg",
         "category": "Metro",
         "borough": "",
-        "topic": "Estación Pino Suárez de la Línea 1 del Metro de la Ciudad de México 03",
+        "topic": "Estación Pino Suárez de la Línea 1 del Metro de la Ciudad de México 07",
         "author": "ProtoplasmaKid",
         "license": "CC BY-SA 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Estaci%C3%B3n_Pino_Su%C3%A1rez_de_la_L%C3%ADnea_1_del_Metro_de_la_Ciudad_de_M%C3%A9xico_03.jpg"
+        "source": "https://commons.wikimedia.org/wiki/File:Estaci%C3%B3n_Pino_Su%C3%A1rez_de_la_L%C3%ADnea_1_del_Metro_de_la_Ciudad_de_M%C3%A9xico_07.jpg"
       }
     },
     {
@@ -1559,14 +1587,14 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_metro_010",
-        "url": "/assets/fotos/archivo_metro_010.jpg",
+        "id": "archivo_metro_011",
+        "url": "/assets/fotos/archivo_metro_011.jpg",
         "category": "Metro",
         "borough": "",
-        "topic": "Estación Pino Suárez de la Línea 1 del Metro de la Ciudad de México 07",
+        "topic": "Estación Pino Suárez de la Línea 1 del Metro de la Ciudad de México 08",
         "author": "ProtoplasmaKid",
         "license": "CC BY-SA 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Estaci%C3%B3n_Pino_Su%C3%A1rez_de_la_L%C3%ADnea_1_del_Metro_de_la_Ciudad_de_M%C3%A9xico_07.jpg"
+        "source": "https://commons.wikimedia.org/wiki/File:Estaci%C3%B3n_Pino_Su%C3%A1rez_de_la_L%C3%ADnea_1_del_Metro_de_la_Ciudad_de_M%C3%A9xico_08.jpg"
       }
     },
     {
@@ -1638,34 +1666,6 @@
       "local_url": "/noticias/?id=5a75208efcef5ba942d8&mes=2026-10",
       "brief": {
         "lead": "La información publicada por TV Azteca trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-        "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-        "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "archivo_metro_011",
-        "url": "/assets/fotos/archivo_metro_011.jpg",
-        "category": "Metro",
-        "borough": "",
-        "topic": "Estación Pino Suárez de la Línea 1 del Metro de la Ciudad de México 08",
-        "author": "ProtoplasmaKid",
-        "license": "CC BY-SA 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Estaci%C3%B3n_Pino_Su%C3%A1rez_de_la_L%C3%ADnea_1_del_Metro_de_la_Ciudad_de_M%C3%A9xico_08.jpg"
-      }
-    },
-    {
-      "title": "Migas de Tepito y machetes de la Guerrero en Feria de los Barrios de CDMX",
-      "description": "La información publicada por La Jornada trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNVzExb1NTWnl5eURqRG1yZHpfdHBQQXVjbFo0bmloQ3BHOFZvdF9xcXh6NWdETzRWb0dJVnNKc041NFo4ZVMxV01UOWdfazVLRTA0Qm5jRXZfU3U1RXdOQ2Y1czFWbmJZaUJISmw5WEJYZmZfSk9PRlNRTTBMOHJXbk9GMEE2dlVSREdfOEY5bS1xVVNMYnlyUERqb3gyR2ptRzN4d3NMZXd1c3hQOHhNeGZpaEhPOUt4bXR1bks0cG9aQkEzaUE?oc=5",
-      "source": "La Jornada",
-      "date": "2026-10-14",
-      "published_at": "2026-10-15T01:59:00Z",
-      "category": "CDMX",
-      "borough": "",
-      "location": "Ciudad de México (sin alcaldía identificada)",
-      "local_url": "/noticias/?id=74ea23636b43aebd4230&mes=2026-10",
-      "brief": {
-        "lead": "La información publicada por La Jornada trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
         "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
         "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."

@@ -1,7 +1,63 @@
 {
   "month": "2026-10",
-  "updated": "2026-10-15 09:47 UTC",
+  "updated": "2026-10-15 10:48 UTC",
   "articles": [
+    {
+      "title": "Clara Brugada presenta segundo informe ante Congreso de CDMX",
+      "description": "La información publicada por El Independiente trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOWk50ekFWTGRQUU9xOG1HcEhPWWxLWFpZTDNRbXlZWjROeEkzNE1sUlMtX3l1SFpha1dEdXdiLWxtZWxLWTB5b3Z5QXVHbFpKb2w1UDRtSTc2TWxSTVdjdXRWbURqVFh0UFNCdTY4dS1wZWNNVUljNjNndXAxc2lyRjZZNFBRVEZLRVZGRTVNWWhReXJ2WTFVVG1ncnk1bUJCc183RTI2aVhyeDJTRjN3?oc=5",
+      "source": "El Independiente",
+      "date": "2026-10-15",
+      "published_at": "2026-10-15T10:00:00Z",
+      "category": "CDMX",
+      "borough": "",
+      "location": "Ciudad de México (sin alcaldía identificada)",
+      "local_url": "/noticias/?id=12fea8963f55d2148b86&mes=2026-10",
+      "brief": {
+        "lead": "La información publicada por El Independiente trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+        "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+        "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "archivo_cdmx_003",
+        "url": "/assets/fotos/archivo_cdmx_003.jpg",
+        "category": "CDMX",
+        "borough": "",
+        "topic": "D.F. - panoramio (7)",
+        "author": "eurimaco",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:D.F._-_panoramio_%287%29.jpg"
+      }
+    },
+    {
+      "title": "Habrá nuevo plantel de la UNAM en CDMX, anuncia Clara Brugada",
+      "description": "La información publicada por El Sol de México trata un asunto registrado en la sección de Gobierno del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOVUwxUmctbEh6VjVzUTBGVnF4UzBRRGpBV0ZWYmNPVS1HdUswVlJsU3pWY3JRbG83Vm4xR0VjcFRTVlVYS2Q1aGdkalpfb1c1QlhTWEs3bjV6bTJXWHhLVkp5YnNORklYeFJDZmtJV1RBV3d4V1ROMHc2bGxXX2IteHQ5ajhUalVfa0xjc3I0SS1mMV9SM1FQNVQ5N0d5NW9OQUhvazN4czhRbEVLQ2d4OHBB?oc=5",
+      "source": "El Sol de México",
+      "date": "2026-10-15",
+      "published_at": "2026-10-15T09:46:14Z",
+      "category": "Gobierno",
+      "borough": "",
+      "location": "Ciudad de México (sin alcaldía identificada)",
+      "local_url": "/noticias/?id=2e1f443a6048f3e4e4b4&mes=2026-10",
+      "brief": {
+        "lead": "La información publicada por El Sol de México trata un asunto registrado en la sección de Gobierno del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+        "context": "Las decisiones administrativas pueden influir en servicios, trámites y derechos; conviene conocer sus condiciones y a quiénes afectan.",
+        "pending": "Es indispensable consultar los acuerdos, comunicados o documentos oficiales antes de dar una medida por vigente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "archivo_gobierno_001",
+        "url": "/assets/fotos/archivo_gobierno_001.jpg",
+        "category": "Gobierno",
+        "borough": "",
+        "topic": "Palacio de Bellas Artes",
+        "author": "Carolina López",
+        "license": "CC BY 2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Palacio_de_Bellas_Artes.jpg"
+      }
+    },
     {
       "title": "Freno a rentas de corta estancia en CDMX crearía mercado negro",
       "description": "El reportaje citado por El Financiero aborda los precios de vivienda o los cambios residenciales en la capital. Las cifras y su metodología deben examinarse antes de concluir cuántas familias han sido desplazadas o qué tan representativos son determinados anuncios de renta.",
@@ -143,6 +199,34 @@
       }
     },
     {
+      "title": "Clara Brugada reivindica la vivienda como un derecho y descarta alza al predial en su segundo informe",
+      "description": "El reportaje citado por Diario Red aborda los precios de vivienda o los cambios residenciales en la capital. Las cifras y su metodología deben examinarse antes de concluir cuántas familias han sido desplazadas o qué tan representativos son determinados anuncios de renta.",
+      "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxQN3JsRzlHMVJXdG8zZlBsazlJUGRMazhNRHVpeVR3MmJqOG5wRFZmZlhjRkV4V05xTU5NMXZSNEwzTUVXS2tkQUg1LXBZcWxleG5KMlZBWGg3UWZBNFVUakZoWDVCR2huVkNXek1Ba0NKdUZrdHlMSGpleWl5cjloN2RxRFA3a3k4bFV5bEZvNWZzOXlYREExZDNWNGRPTEtJcEZON1NiOWJtTHhIUEV5d2FSemI0YXhTeWoxd1RDMnNzUjVxV3lNY1poNDlHdllRVzJfY0o5STNwcWFCNUtBbm1McnNXSW9LaEpuSDlyV3RCQkXSAfMBQVVfeXFMUDdybEc5RzFSV3RvM2ZQbGs5SVBkTGs4TUR1aXlUdzJiajhucERWZmZYY0ZFeFdOcU1OTTF2UjRMM01FV0trZEFINS1wWXFsZXhuSjJWQVhoN1FmQTRVVGpGaFg1QkdoblZDV3pNQWtDSnVGa3R5TEhqZXlpeXI5aDdkcURQN2t5OGxVeWxGbzVmczl5WERBMWQzVjRkT0xLSXBGTjdTYjlibUx4SFBFeXdhUnpiNGF4U3lqMXdUQzJzc1I1cVd5TWNaaDQ5R3ZZUVcyX2NKOUkzcHFhQjVLQW5tTHJzV0lvS2hKbkg5cld0QkJF?oc=5",
+      "source": "Diario Red",
+      "date": "2026-10-15",
+      "published_at": "2026-10-15T08:00:00Z",
+      "category": "Gobierno",
+      "borough": "",
+      "location": "Ubicación no indicada por el titular",
+      "local_url": "/noticias/?id=56ab62e49e52b590162d&mes=2026-10",
+      "brief": {
+        "lead": "El reportaje citado por Diario Red aborda los precios de vivienda o los cambios residenciales en la capital. Las cifras y su metodología deben examinarse antes de concluir cuántas familias han sido desplazadas o qué tan representativos son determinados anuncios de renta.",
+        "context": "Las decisiones administrativas pueden influir en servicios, trámites y derechos; conviene conocer sus condiciones y a quiénes afectan.",
+        "pending": "Es indispensable consultar los acuerdos, comunicados o documentos oficiales antes de dar una medida por vigente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "archivo_gobierno_004",
+        "url": "/assets/fotos/archivo_gobierno_004.jpg",
+        "category": "Gobierno",
+        "borough": "",
+        "topic": "Palacio Nacional Ciudad de México City DF",
+        "author": "stevecadman",
+        "license": "CC BY-SA 2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Palacio_Nacional_Ciudad_de_M%C3%A9xico_City_DF.jpg"
+      }
+    },
+    {
       "title": "SSC reporta baja de 8% en extorsiones en la Ciudad de México pese a aumento señalado por PAN",
       "description": "La información publicada por El Sol de México trata un asunto registrado en la sección de Seguridad del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
       "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPRnl3bnFaa1JVUFhzUENRVzk1VVkyYkE2YUIwcy1CeXZQakc1RUR2UlliYkFUTUdTalJBcjFDNFhCNVhJdmEtYVlYM001WkdwVXBfWGZOaUxIdGtnVkdiSDBGUzJDQWVGSzNpbV9KRVdXVHZ0WndMNktENGtGcUVuSE9XNlptMkE0UVhSbFNZU3IxcTBENkpSa1BBb2Q0Zm9rNWhXSnRRcHBFVFJBSXY0UGg1ZVZ3Ml8tZHBLdkVaTWNyb21pZl9DWnZfQ1pjRTRhYUdCWDNXZ01Eb0U?oc=5",
@@ -280,6 +364,34 @@
         "author": "Timothy Neesam",
         "license": "CC BY-SA 4.0",
         "source": "https://commons.wikimedia.org/wiki/File:Palacio_de_Bellas_Artes%2C_Mexico_City%2C_MX.jpg"
+      }
+    },
+    {
+      "title": "Balacera en tianguis de Iztapalapa, CDMX deja una mujer muerta y tres lesionados",
+      "description": "La información publicada por Quinta Fuerza trata un asunto registrado en la sección de Seguridad del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPVk5MbmgzVjB4N0NHM2RNU0NDOTNSQl9MTVludlIzSVkwYTdVZWw2bXk1SGQ1bHlhN0hUVE52Vmd5TldWazl4NW5iSjEzZ1F1dUFaQjB4azJIRmduc3c1Vk9hT0RrZS0tbmtYNDk1MlkxdG51WnljN0VGZU1SYmNqX2I1V2ZGTk81dHJIUWR4TEswT2NMMWh3c3Y4dFhyU2U1YjRIb0pKbVJmWlpKbkdKdlEzaWk?oc=5",
+      "source": "Quinta Fuerza",
+      "date": "2026-10-15",
+      "published_at": "2026-10-15T06:29:05Z",
+      "category": "Seguridad",
+      "borough": "Iztapalapa",
+      "location": "Iztapalapa (mencionada en el titular)",
+      "local_url": "/noticias/?id=e5db0ce309f5bbeb67cf&mes=2026-10",
+      "brief": {
+        "lead": "La información publicada por Quinta Fuerza trata un asunto registrado en la sección de Seguridad del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+        "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+        "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "alcaldia_iztapalapa",
+        "url": "/assets/alcaldias/iztapalapa.jpg",
+        "category": "CDMX",
+        "borough": "Iztapalapa",
+        "topic": "Vista de Iztapalapa desde el Cerro de la Estrella",
+        "author": "Secretaría de Cultura Ciudad de México from México",
+        "license": "CC BY 2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:MX_MM_MUSEO_CERRO_DE_LA_ESTRELLA_%2849522225751%29.jpg"
       }
     },
     {
@@ -19657,6 +19769,24 @@
         "lead": "La publicación de Milenio plantea una pregunta sobre la vida cultural, el patrimonio y las actividades de la ciudad. El encabezado invita a conocer una respuesta que no puede darse por comprobada solo con el índice de noticias.",
         "context": "La actividad cultural abre oportunidades de encuentro, aprendizaje y disfrute para habitantes y visitantes.",
         "pending": "Los accesos, boletos, sedes, cupos y horarios deben consultarse con la institución organizadora. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      }
+    },
+    {
+      "title": "#InformeDeSeguridad | Discurso del secretario de #SeguridadCiudadana, Pablo Vázquez Camacho",
+      "description": "La información publicada por Secretaría de Seguridad Ciudadana de la CDMX trata un asunto registrado en la sección de Seguridad del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5QekptQXQtRzZqcmQxeUJORDJiY01mZjNyVnAteENlSmNPclhoQ1g3YS1NdHU5T2djcXB1S2YtWUtUMFhmOTA2N0pFcFdrSmR5U1RkVFQtSmRkUQ?oc=5",
+      "source": "Secretaría de Seguridad Ciudadana de la CDMX",
+      "date": "2026-10-12",
+      "published_at": "2026-10-13T01:03:19Z",
+      "category": "Seguridad",
+      "borough": "",
+      "location": "Ubicación no indicada por el titular",
+      "local_url": "/noticias/?id=31f5538ec72ecf2af005&mes=2026-10",
+      "brief": {
+        "lead": "La información publicada por Secretaría de Seguridad Ciudadana de la CDMX trata un asunto registrado en la sección de Seguridad del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+        "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+        "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       }
     },
