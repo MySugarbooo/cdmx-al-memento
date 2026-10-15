@@ -70,13 +70,13 @@ jobs:
           node --check mapa/mapa.js
       - name: Recopilar titulares y actualizar archivo anual
         run: python update_news.py
-      - name: Buscar fotografías recientes y revisar licencias en Wikimedia Commons
+      - name: Generar titulares recientes de animales\n        run: python scripts/animales_feed.py\n      - name: Buscar fotografías recientes y revisar licencias en Wikimedia Commons
         run: python scripts/actualizar_fotos.py
       - name: Publicar cambios y eliminar noticias vencidas
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A -- news.json reports.json reportes/ archivo/ alcaldias/noticias.json sitemap.xml assets/fotos/recientes.json descubre/
+          git add -A -- animales/actualidad.html news.json reports.json reportes/ archivo/ alcaldias/noticias.json sitemap.xml assets/fotos/recientes.json descubre/
           if git diff --cached --quiet; then
             echo "Noticias y guías sin cambios."
             exit 0
@@ -95,7 +95,7 @@ jobs:
             git reset --hard origin/main
             python scripts/generar_guias.py
             python update_news.py
-            python scripts/actualizar_fotos.py
+            python scripts/animales_feed.py\n            python scripts/actualizar_fotos.py
             git add -A -- news.json reports.json reportes/ archivo/ alcaldias/noticias.json sitemap.xml assets/fotos/recientes.json descubre/
             if git diff --cached --quiet; then
               echo "El repositorio ya tiene las últimas noticias."
