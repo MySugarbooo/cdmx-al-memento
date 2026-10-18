@@ -1,0 +1,10 @@
+.site-like-bar{display:flex;align-items:center;justify-content:flex-end;gap:14px;padding-top:18px;padding-bottom:4px;flex-wrap:wrap}
+.site-like-button{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:46px;padding:10px 17px;border:1px solid #dc89b0;border-radius:999px;background:#211923;color:#f4bdd6;font:600 14px system-ui,sans-serif;cursor:pointer}
+.site-like-button:hover:not(:disabled){background:#392133}
+.site-like-button:focus-visible{outline:3px solid #f4bdd6;outline-offset:4px}
+.site-like-button:disabled{cursor:default}
+.site-like-button[aria-pressed="true"]{background:#e4a0c1;color:#19121a;border-color:#e4a0c1}
+.site-like-heart{font-size:25px;line-height:1}
+.site-like-count{font-variant-numeric:tabular-nums;min-width:27px;text-align:center;border-left:1px solid currentColor;padding-left:10px}
+.site-like-status{margin:0;font-size:12px;color:#c5b8c1;max-width:310px;line-height:1.5}
+@media(max-width:580px){.site-like-bar{justify-content:flex-start;gap:8px}.site-like-status{width:100%;max-width:none}}
