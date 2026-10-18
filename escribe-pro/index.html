@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f6fc">
+  <meta name="description" content="Escribe Pro: crea y administra documentos desde tu navegador, sin cuentas ni suscripciones.">
+  <title>Escribe Pro — Tu espacio para escribir</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app" id="app">
+    <aside class="sidebar" id="sidebar" aria-label="Mis documentos">
+      <div class="side-head">
+        <div class="brand-icon" aria-hidden="true">✦</div>
+        <div class="brand-title">escribe<span>pro</span><small>Tu estudio de documentos</small></div>
+        <button class="icon-btn mobile-close" id="closeSidebar" aria-label="Cerrar menú">✕</button>
+      </div>
+      <button class="new-document" id="newDocument">＋ &nbsp; Nuevo documento</button>
+      <p class="side-label">TU ESPACIO</p>
+      <label class="side-search"><span aria-hidden="true">⌕</span><input id="documentSearch" type="search" placeholder="Buscar documentos…" aria-label="Buscar documentos"></label>
+      <div class="documents-list" id="documentsList" aria-live="polite"></div>
+      <p class="side-label templates-label">CREAR A PARTIR DE…</p>
+      <div class="template-shortcuts">
+        <button data-template="letter"><span>✉</span> Carta profesional</button>
+        <button data-template="resume"><span>♧</span> Currículum</button>
+        <button data-template="report"><span>▤</span> Informe</button>
+        <button data-template="notes"><span>☷</span> Apuntes</button>
+      </div>
+      <div class="sidebar-bottom"><div class="privacy-icon">◈</div><div><strong>Privado por diseño</strong><small>Tus archivos se guardan en este dispositivo, no en la nube.</small></div></div>
+    </aside>
+    <div class="scrim" id="scrim" hidden></div>
+    <div class="app-main">
+      <header class="topbar">
+        <div class="top-left">
+          <button class="icon-btn mobile-menu" id="openSidebar" aria-label="Abrir mis documentos">☰</button>
+          <div class="doc-title-area"><input id="documentTitle" type="text" maxlength="100" aria-label="Título del documento" value="Documento sin título" spellcheck="false"><span class="save-status" id="saveStatus" aria-live="polite">Guardado en este dispositivo</span></div>
+        </div>
+        <div class="top-actions">
+          <button class="quiet-button desktop-only" id="importButton" title="Abrir archivo DOCX, HTML o TXT">↥ <span>Importar</span></button>
+          <button class="quiet-button desktop-only" id="printButton" title="Imprimir o guardar como PDF">▣ <span>PDF</span></button>
+          <div class="dropdown-wrap"><button class="primary-button" id="exportButton" aria-expanded="false" aria-controls="exportMenu">↓ <span>Descargar</span> <small>⌄</small></button>
+            <div class="menu-dropdown" id="exportMenu" hidden>
+              <button data-export="import"><strong>↥</strong><span>Abrir documento<small>.docx · .txt · .html</small></span></button>
+              <button data-export="docx"><strong>W</strong><span>Documento de Word<small>.docx</small></span></button>
+              <button data-export="pdf"><strong>▣</strong><span>Guardar como PDF<small>Desde imprimir</small></span></button>
+              <button data-export="html"><strong>⌘</strong><span>Página HTML<small>.html</small></span></button>
+              <button data-export="txt"><strong>≡</strong><span>Texto sin formato<small>.txt</small></span></button>
+            </div>
+          </div>
+          <button class="icon-btn top-theme" id="themeButton" aria-label="Cambiar modo de color" title="Modo oscuro">☾</button>
+        </div>
+      </header>
+      <div class="menu-bar">
+        <button class="tab active" id="homeTab">Inicio</button>
+        <button class="tab" id="insertTab">Insertar</button>
+        <button class="tab" id="layoutTab">Diseño</button>
+        <button class="tab" id="toolsTab">Herramientas</button>
+        <span class="menu-spacer"></span>
+        <button class="assistant-switch" id="assistantButton" aria-expanded="false" aria-controls="assistantPanel">✧ <span>Asistente local</span></button>
+      </div>
+      <div class="ribbon" id="homeRibbon" role="toolbar" aria-label="Formato de texto">
+        <div class="ribbon-group font-tools">
+          <select id="fontFamily" aria-label="Fuente" title="Fuente"><option value="Arial">Arial</option><option value="Georgia">Georgia</option><option value="Times New Roman">Times New Roman</option><option value="Verdana">Verdana</option><option value="Trebuchet MS">Trebuchet MS</option><option value="Courier New">Courier New</option></select>
+          <select id="fontSize" aria-label="Tamaño de letra" title="Tamaño de letra"><option value="2">10</option><option value="3" selected>12</option><option value="4">14</option><option value="5">18</option><option value="6">24</option><option value="7">32</option></select>
+          <span class="ribbon-divider"></span>
+          <button class="format-button" data-command="bold" title="Negrita (Ctrl+B)" aria-label="Negrita"><b>B</b></button>
+          <button class="format-button" data-command="italic" title="Cursiva (Ctrl+I)" aria-label="Cursiva"><i>I</i></button>
+          <button class="format-button" data-command="underline" title="Subrayado (Ctrl+U)" aria-label="Subrayado"><u>U</u></button>
+          <button class="format-button" data-command="strikeThrough" title="Tachado" aria-label="Tachado"><s>S</s></button>
+          <label class="color-tool" title="Color del texto"><span>A</span><input type="color" id="fontColor" value="#263149" aria-label="Color del texto"></label>
+          <label class="color-tool" title="Resaltar texto"><span>▤</span><input type="color" id="highlightColor" value="#fff0a4" aria-label="Color de resaltado"></label>
+        </div>
+        <div class="ribbon-group paragraph-tools">
+          <select id="textStyle" aria-label="Estilo de párrafo" title="Estilo"><option value="p">Párrafo normal</option><option value="h1">Título 1</option><option value="h2">Título 2</option><option value="h3">Título 3</option><option value="blockquote">Cita</option></select>
+          <span class="ribbon-divider"></span>
+          <button class="format-button" data-command="justifyLeft" title="Alinear a la izquierda">☰</button>
+          <button class="format-button" data-command="justifyCenter" title="Centrar">≡</button>
+          <button class="format-button" data-command="justifyRight" title="Alinear a la derecha">☷</button>
+          <button class="format-button" data-command="justifyFull" title="Justificar">▤</button>
+          <button class="format-button" data-command="insertUnorderedList" title="Lista de viñetas">• ≡</button>
+          <button class="format-button" data-command="insertOrderedList" title="Lista numerada">1. ≡</button>
+          <button class="format-button" data-command="outdent" title="Reducir sangría">⇤</button>
+          <button class="format-button" data-command="indent" title="Aumentar sangría">⇥</button>
+        </div>
+        <div class="ribbon-group history-tools">
+          <button class="format-button" data-command="undo" title="Deshacer (Ctrl+Z)">↶</button>
+          <button class="format-button" data-command="redo" title="Rehacer (Ctrl+Y)">↷</button>
+          <button class="format-button" data-command="removeFormat" title="Quitar formato">Tx</button>
+        </div>
+      </div>
+      <div class="ribbon" id="insertRibbon" role="toolbar" aria-label="Insertar elementos" hidden>
+        <button class="ribbon-action" id="insertImage">▧ &nbsp; Imagen</button>
+        <button class="ribbon-action" id="insertTable">▦ &nbsp; Tabla</button>
+        <button class="ribbon-action" id="insertLink">↗ &nbsp; Enlace</button>
+        <button class="ribbon-action" id="insertRule">― &nbsp; Separador</button>
+        <button class="ribbon-action" id="insertDate">▣ &nbsp; Fecha de hoy</button>
+        <button class="ribbon-action" id="imageSmall" title="Selecciona una imagen primero">Imagen 25%</button>
+        <button class="ribbon-action" id="imageMedium" title="Selecciona una imagen primero">Imagen 50%</button>
+        <button class="ribbon-action" id="imageLarge" title="Selecciona una imagen primero">Imagen 100%</button>
+        <button class="ribbon-action" id="insertBreak">↡ &nbsp; Salto de página</button>
+        <button class="ribbon-action" id="addTableRow">⊞ &nbsp; Fila debajo</button>
+        <button class="ribbon-action" id="addTableColumn">⊞ &nbsp; Columna derecha</button>
+        <button class="ribbon-action" id="removeTableRow">⊟ &nbsp; Eliminar fila</button>
+      </div>
+      <div class="ribbon" id="layoutRibbon" role="toolbar" aria-label="Diseño del documento" hidden>
+        <label class="control-label">Papel <select id="paperSize"><option value="a4">A4</option><option value="letter">Carta</option></select></label>
+        <label class="control-label">Márgenes <select id="pageMargins"><option value="normal">Normales</option><option value="narrow">Estrechos</option><option value="wide">Amplios</option></select></label>
+        <label class="control-label">Interlineado <select id="lineSpacing"><option value="1.2">1.2</option><option value="1.5" selected>1.5</option><option value="1.8">1.8</option><option value="2">2</option></select></label>
+        <label class="control-label">Encabezado <input id="headerText" type="text" placeholder="Opcional…" maxlength="100"></label>
+        <label class="control-label">Pie <input id="footerText" type="text" placeholder="Opcional…" maxlength="100"></label>
+        <label class="control-label" title="Incluir numeración en Word y PDF (según el navegador)"><input id="pageNumbering" type="checkbox" checked> Numerar páginas</label>
+      </div>
+      <div class="ribbon" id="toolsRibbon" role="toolbar" aria-label="Herramientas del documento" hidden>
+        <input type="search" id="findText" placeholder="Buscar en el texto" aria-label="Buscar en el documento">
+        <input type="text" id="replaceText" placeholder="Reemplazar por" aria-label="Texto de reemplazo">
+        <button class="ribbon-action" id="findNext">Buscar siguiente</button>
+        <button class="ribbon-action" id="replaceOne">Reemplazar</button>
+        <button class="ribbon-action" id="replaceAll">Reemplazar todo</button>
+        <span class="find-status" id="findStatus"></span>
+      </div>
+      <div class="editor-layout">
+        <main class="workspace" id="workspace">
+          <div class="workspace-info"><span class="workspace-tag">✦ &nbsp; TU DOCUMENTO</span><div class="workspace-view">A4 / Carta · Vista de edición</div></div>
+          <div class="page-container" id="pageContainer">
+            <div class="page-header" id="pageHeader" contenteditable="false" aria-label="Encabezado del documento"></div>
+            <article class="paper-editor" id="editor" contenteditable="true" spellcheck="true" role="textbox" aria-multiline="true" aria-label="Editor de documentos"><h1>Una página en blanco, mil posibilidades.</h1><p>Empieza a escribir aquí. Tu trabajo se guardará automáticamente en este dispositivo.</p></article>
+            <div class="page-footer" id="pageFooter" contenteditable="false" aria-label="Pie del documento"></div>
+          </div>
+          <div class="editor-hint">Consejo: usa <kbd>Ctrl</kbd> + <kbd>S</kbd> para guardar y <kbd>Ctrl</kbd> + <kbd>B</kbd> para negritas.</div>
+        </main>
+        <aside class="assistant-panel" id="assistantPanel" hidden aria-label="Asistente de escritura">
+          <div class="assistant-head"><div><span class="assistant-star">✧</span><strong>Asistente local</strong><small>Sin cuenta ni servicios externos</small></div><button class="icon-btn" id="closeAssistant" aria-label="Cerrar asistente">✕</button></div>
+          <div class="assistant-inner">
+            <div class="assistant-card"><span class="eyebrow">REVISIÓN RÁPIDA</span><h3>Ayuda para tus textos</h3><p>Selecciona un fragmento, o usa el documento completo. Estos procesos funcionan en tu navegador.</p></div>
+            <button class="assistant-tool" id="cleanupText"><span>✎</span><div><strong>Limpiar espacios</strong><small>Corrige espacios repetidos y puntuación básica.</small></div><span>→</span></button>
+            <button class="assistant-tool" id="upperText"><span>Aa</span><div><strong>Convertir a MAYÚSCULAS</strong><small>Selecciona texto antes de aplicar.</small></div><span>→</span></button>
+            <button class="assistant-tool" id="lowerText"><span>aa</span><div><strong>Convertir a minúsculas</strong><small>Selecciona texto antes de aplicar.</small></div><span>→</span></button>
+            <button class="assistant-tool" id="summarizeText"><span>☷</span><div><strong>Crear resumen extractivo</strong><small>Identifica frases clave mediante reglas locales.</small></div><span>→</span></button>
+            <button class="assistant-tool" id="copyText"><span>▣</span><div><strong>Copiar texto completo</strong><small>Para compartirlo donde prefieras.</small></div><span>→</span></button>
+            <div class="assistant-output" id="assistantOutput" aria-live="polite">Aquí aparecerá el resultado de tu resumen.</div>
+            <p class="assistant-disclaimer">Esto no es IA generativa: son utilidades gratuitas que funcionan de forma local y no envían tu texto a servidores.</p>
+          </div>
+        </aside>
+      </div>
+      <footer class="statusbar"><div><span id="wordCount">0 palabras</span><span class="status-dot">·</span><span id="characterCount">0 caracteres</span><span class="status-dot desktop-only">·</span><span class="desktop-only" id="readingTime">0 min lectura</span></div><div><span id="pageCount">1 página aprox.</span><span class="status-dot">·</span><span id="storageStatus">Local</span><span class="status-dot">·</span><button id="zoomOut" aria-label="Alejar">−</button><span id="zoomLevel">100%</span><button id="zoomIn" aria-label="Acercar">＋</button></div></footer>
+    </div>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <dialog id="promptDialog" class="modal"><form method="dialog" id="promptForm"><h2 id="promptHeading">Insertar enlace</h2><p id="promptDescription"></p><div id="promptFields"></div><div class="modal-actions"><button class="quiet-button" value="cancel">Cancelar</button><button class="primary-button" value="ok" id="promptConfirm">Aceptar</button></div></form></dialog>
+  <input type="file" id="fileInput" accept=".docx,.html,.htm,.txt" hidden>
+  <input type="file" id="imageInput" accept="image/png,image/jpeg,image/webp,image/gif" hidden>
+  <!-- El editor arranca primero. Las bibliotecas DOCX se cargan como complemento. -->
+  <script defer src="script.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/docx@9.5.1/dist/index.iife.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mammoth@1.11.0/mammoth.browser.min.js"></script>
+</body>
+</html>
