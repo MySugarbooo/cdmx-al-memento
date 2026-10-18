@@ -10,3 +10,258 @@ body.dark{color-scheme:dark;--bg:#141827;--panel:#202638;--panel-soft:#292f44;--
 @media print{@page{size:A4;margin:15mm}*{-webkit-print-color-adjust:exact;print-color-adjust:exact}html,body,.app,.app-main,.editor-layout,.workspace{background:#fff!important;display:block!important;margin:0!important;padding:0!important;width:100%!important;height:auto!important;min-height:0!important;overflow:visible!important}.sidebar,.scrim,.topbar,.menu-bar,.ribbon,.workspace-info,.editor-hint,.statusbar,.assistant-panel,.toast,.modal{display:none!important}.page-container,.page-container.paper-letter{box-shadow:none!important;border:none!important;width:auto!important;min-height:0!important;max-width:none!important;margin:0!important;padding:0!important;zoom:1!important;display:block!important}.paper-editor{min-height:0!important;font-size:11pt!important;overflow:visible!important}.paper-editor .page-break{break-after:page;page-break-after:always;border:0;height:0;margin:0}.paper-editor .page-break:after{display:none}.paper-editor img{max-width:100%!important}.paper-editor table{break-inside:auto}.paper-editor tr{break-inside:avoid}.page-header:not(:empty){margin-bottom:12px}.page-footer:not(:empty){margin-top:12px}}
 
 .control-label input[type=checkbox]{width:16px;height:16px;accent-color:var(--accent)}
+
+/* ==============================================================
+   ESCRIBE PRO · EDICIÓN CLÁSICA (inspirada en Word de escritorio)
+   Las reglas de esta sección sustituyen el antiguo aspecto SaaS.
+   La cinta es operativa y el área de edición sigue siendo responsive.
+   ============================================================== */
+:root{
+  --bg:#d9dfe7;--panel:#ffffff;--panel-soft:#f4f6f9;
+  --text:#25344c;--muted:#64748b;--line:#d7dce4;
+  --accent:#2b579a;--accent-dark:#1f497d;--accent-bg:#eaf2fc;
+  --green:#c9e6d4;
+  --shadow:0 3px 14px rgba(39,53,75,.12);
+  font-family:Arial,"Segoe UI",system-ui,sans-serif;
+  font-size:13px;
+}
+.svg-library{position:absolute;width:0;height:0;overflow:hidden}
+svg{width:19px;height:19px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
+html,body{height:100%}
+.app{height:100dvh;min-height:0;overflow:hidden}
+.app-main{height:100dvh;min-height:0;width:100%;overflow:hidden;background:var(--bg)}
+/* La biblioteca se abre desde la W: no ocupa espacio permanentemente. */
+.sidebar{position:fixed;top:0;bottom:0;left:0;width:min(292px,90vw);height:100dvh;
+  transform:translateX(-110%);transition:transform .22s ease;box-shadow:12px 2px 32px #1528402c;
+  z-index:80;padding-top:22px;flex-basis:auto}
+.sidebar.open{transform:translateX(0)}
+.sidebar .mobile-close{display:block;margin-left:auto}
+.scrim{z-index:75}
+.side-head{padding-bottom:23px}
+.brand-icon,.new-document{background:linear-gradient(125deg,#376fbb,#1f497d);border-radius:4px;box-shadow:none}
+.brand-title span{color:#2b579a}
+.new-document{border-radius:5px}
+.document-item,.template-shortcuts button,.side-search{border-radius:4px}
+
+/* Franja azul superior: guardar, deshacer y título. */
+.topbar{flex:0 0 43px;height:43px;display:grid;grid-template-columns:minmax(170px,1fr) minmax(160px,2fr) minmax(200px,1fr);
+  gap:8px;align-items:center;background:#2b579a;color:white;border:0;padding:0 13px}
+.quick-access,.top-actions{display:flex;align-items:center;gap:2px;min-width:0}
+.top-actions{justify-content:flex-end}
+.word-app{width:33px;height:30px;display:grid;place-items:center;background:#1d457d;border:1px solid #ffffff35;
+  color:white;border-radius:3px;font-weight:bold;font-size:20px;font-family:Georgia,serif}
+.word-app:hover{background:#1a3c69}
+.quick-icon{border:0;background:transparent;color:#e2ecfa;display:grid;place-items:center;width:30px;height:32px;border-radius:3px;flex:0 0 auto;font-size:18px}
+.quick-icon svg{width:17px;height:17px}
+.quick-icon:hover,.quick-title:hover,.top-export:hover{color:#fff;background:#ffffff26}
+.quick-divider{height:19px;width:1px;background:#ffffff4f;margin:0 6px}
+.quick-title{border:0;border-radius:3px;background:transparent;color:#e2ecfa;font-size:11px;padding:7px 8px;white-space:nowrap}
+.doc-title-area{align-items:center;justify-content:center;min-width:0;gap:0;width:100%;line-height:1}
+#documentTitle{width:min(430px,100%);margin:0;color:white;text-align:center;font-weight:600;font-size:13px;padding:2px 4px;
+  min-width:0;line-height:18px;border:1px solid transparent;border-radius:2px}
+#documentTitle:hover,#documentTitle:focus{background:#ffffff1f;border-color:#ffffff42;color:white}
+.save-status{font-size:10px;line-height:13px;color:#d2e6ff!important;white-space:nowrap;max-width:100%;overflow:hidden;text-overflow:ellipsis}
+.top-export{display:flex;align-items:center;gap:5px;background:#ffffff14;color:white;border:1px solid #ffffff48;
+  border-radius:3px;font-size:11px;font-weight:600;padding:6px 9px;white-space:nowrap}
+.top-export svg{width:16px;height:16px}.little-chevron{opacity:.75;font-size:13px}
+.topbar .menu-dropdown{top:calc(100% + 5px);border-radius:4px;color:#223653}
+.dropdown-wrap{position:relative}
+
+/* Fichas horizontales: Archivo e Inicio ... Vista */
+.menu-bar{flex:0 0 37px;height:37px;display:flex;align-items:stretch;gap:0;background:#2b579a;
+  padding:0 12px;border:0;overflow-x:auto;overflow-y:hidden;scrollbar-width:none}
+.menu-bar::-webkit-scrollbar{display:none}
+.menu-bar button{flex:0 0 auto}
+.menu-bar .tab,.file-tab{padding:0 15px;border:0;border-radius:0;background:transparent;font-size:12px;
+  font-weight:500;color:#eff5ff;white-space:nowrap}
+.menu-bar .tab:hover,.file-tab:hover{color:white;background:#ffffff18}
+.menu-bar .tab.active{background:#fff;color:#285894;border:0;font-weight:600}
+.file-tab{background:#214b82!important;font-weight:700!important}
+.file-tab:hover{background:#173e72!important}
+.menu-spacer{flex:1;min-width:12px}
+.assistant-switch{color:#f1f6ff;font-weight:500;font-size:11px;padding:0 13px}
+.assistant-switch:hover{color:#fff;background:#ffffff19}
+
+/* Cinta de herramientas separada en grupos rotulados, como Word. */
+.ribbon{height:121px;flex:0 0 121px;min-height:121px;padding:7px 11px 5px;align-items:stretch;
+  display:flex;flex-wrap:nowrap;white-space:nowrap;gap:0;overflow-x:auto;overflow-y:hidden;
+  background:#fff;border-bottom:1px solid #cfd5dd;scrollbar-width:thin;scrollbar-color:#c8d2e0 transparent}
+.ribbon-group,.ribbon-section{display:flex;align-items:center;justify-content:center;position:relative;flex:0 0 auto;
+  padding:1px 13px 23px;min-height:107px;border-right:1px solid #e0e4eb;gap:4px}
+.ribbon-caption{position:absolute;bottom:4px;left:5px;right:5px;font-size:10px;color:#758294;
+  text-align:center;letter-spacing:.1px;font-weight:400;pointer-events:none}
+.ribbon-items{display:flex;align-items:center;gap:5px;height:74px}
+.view-tile{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;
+  width:74px;height:74px;border:1px solid transparent;border-radius:2px;background:transparent;
+  color:#344357;font-size:10px;line-height:1.12;text-align:center;padding:5px 3px;white-space:normal}
+.view-tile svg{width:29px;height:29px;color:#37659c;stroke-width:1.6}
+.view-tile:hover,.view-small-action:hover,.view-tile.active{background:#eaf2fc;border-color:#bcd1e8}
+.view-tile.active{color:#1b4e85}
+.view-tile span{display:block}
+.view-types{min-width:246px}
+.view-types .ribbon-items{gap:2px}
+.view-show{min-width:208px}
+.checkbox-items{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:6px}
+.ribbon-check{display:flex;gap:6px;align-items:center;font-size:11px;line-height:16px;color:#263f60;cursor:pointer;white-space:nowrap}
+.ribbon-check input{appearance:auto;margin:0;accent-color:#2b579a;width:14px;height:14px;cursor:pointer}
+.ribbon-check-button{background:none;border:0;padding:1px 0;text-align:left;font:inherit}
+.ribbon-check-button svg{width:14px;height:14px;color:#2b579a}
+.ribbon-check-button:hover{color:#1d568d;text-decoration:underline}
+.view-zoom{min-width:157px}
+.view-window{min-width:159px;border-right:0}
+.view-window .view-tile{width:83px}
+.ribbon-group select,.control-label select{border-radius:2px;border-color:#bfc8d2;background:#fff;height:28px;padding:4px 6px}
+.ribbon-group #fontFamily{width:126px}
+.ribbon-group #fontSize{width:55px}
+.format-button{border-radius:2px;height:30px;min-width:29px;padding:3px 5px}
+.format-button:hover,.format-button.active{border-color:#bcd1e8;background:#e6f0fc;color:#1b4e85}
+.color-tool{border-radius:2px}
+.ribbon-divider{background:#d7dce4;height:32px;margin:0 2px}
+.ribbon-action{border-radius:2px;padding:11px 10px;border-color:transparent;font-weight:500;min-height:39px;
+  font-size:11px;background:#fff;color:#2c425f}
+.ribbon-action:hover{background:#eaf2fc;border-color:#bcd1e8}
+.control-label{color:#344357;font-weight:500;font-size:11px}
+.control-label input{border-radius:2px}
+#layoutRibbon,#insertRibbon,#toolsRibbon,#designRibbon{align-items:center;gap:7px}
+#layoutRibbon label{flex-shrink:0}
+#toolsRibbon input{height:33px;border-radius:2px}
+.view-small-action{display:flex;align-items:center;gap:7px;border:1px solid transparent;border-radius:2px;
+  padding:8px;background:transparent;font-size:11px;color:#2c425f;height:37px;white-space:nowrap}
+.view-small-action svg{width:18px;height:18px;color:#37659c}
+#designRibbon .ribbon-items{gap:8px}
+#designRibbon .ribbon-section{min-width:174px}
+#designRibbon .ribbon-section:nth-child(2) .ribbon-items{flex-direction:column;gap:0;align-items:flex-start}
+.paper-swatch{height:32px;width:30px;display:grid!important;place-items:center;border:1px solid #aebbd1;font-family:Georgia,serif;font-size:17px;color:#345178}
+.paper-swatch-white{background:#fff}.paper-swatch-cream{background:#fff4db}
+
+/* Regla milimetrada del documento y hoja central. */
+.ruler-shell{height:24px;flex:0 0 24px;background:#e7e9ed;border-bottom:1px solid #c3cad3;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.ruler-inner{width:794px;max-width:calc(100% - 30px);height:20px;position:relative;background-color:#f8f9fb;
+  background-image:repeating-linear-gradient(to right,#8798ac 0 1px,transparent 1px 8px),repeating-linear-gradient(to right,#70839c 0 1px,transparent 1px 80px);
+  background-size:100% 5px,100% 11px;background-repeat:repeat-x;background-position:left bottom,left bottom;
+  border-left:1px solid #a4b0c0;border-right:1px solid #a4b0c0}
+.ruler-marker{position:absolute;bottom:1px;width:0;height:0;border-left:5px solid transparent;border-right:5px solid transparent;border-top:6px solid #467eb7}
+.marker-left{left:calc(10% - 5px)}.marker-right{right:calc(10% - 5px)}
+.editor-layout{min-height:0;overflow:hidden;flex:1}
+.workspace{position:relative;background:#d9dde5;overflow:auto;min-height:0;padding:20px 20px 45px;scrollbar-color:#b0bac8 #e6e9ee;scrollbar-width:thin}
+.workspace-info{display:none}
+.page-container{width:210mm;max-width:100%;min-height:297mm;padding:var(--paper-padding,19mm 20mm);
+  background:#fff;border:1px solid #c6cdd6;box-shadow:0 2px 8px #233d5e25;border-radius:0;color:#263244}
+.paper-editor{font-size:15px;min-height:820px;color:#263244;font-family:Calibri,Arial,sans-serif;line-height:var(--line-height,1.5)}
+.paper-editor h1,.paper-editor h2,.paper-editor h3{color:#1f3b5c}
+.vertical-ruler{width:19px;height:1122px;position:absolute;left:max(8px,calc(50% - 425px));top:20px;pointer-events:none;opacity:.7;
+  background-color:#f4f6f8;background-image:repeating-linear-gradient(to bottom,#a1acb9 0 1px,transparent 1px 8px);
+  background-size:5px 100%;background-position:right top;background-repeat:repeat-y;border:1px solid #cbd3df}
+.editor-hint{font-size:10px;color:#596778;max-width:794px}
+.paper-editor:focus{outline:none}
+.page-container.grid-visible{background-color:#fff;background-image:linear-gradient(to right,#dce6f2aa 1px,transparent 1px),linear-gradient(to bottom,#dce6f2aa 1px,transparent 1px);background-size:25px 25px}
+.page-container.cream-page{background-color:#fff8e9}
+.web-layout .page-container{width:min(1080px,100%);min-height:78vh;padding:34px 45px;box-shadow:none;border-color:#d1d6df}
+.web-layout .paper-editor{min-height:72vh}
+.reading-mode .paper-editor{cursor:default;user-select:text}
+.reading-mode .page-container{box-shadow:0 0 0 2px #9eb9db,0 2px 8px #233d5e22}
+
+/* Franja de estado e indicador de zoom inferior. */
+.statusbar{height:32px;flex:0 0 32px;background:#f5f7fa;border-top:1px solid #c9d1dc;color:#45586f;
+  font-size:10px;padding:0 12px;gap:10px}
+.statusbar>div{gap:9px;min-width:0}
+.status-divider{height:13px;width:1px;background:#c4cbd4;display:inline-block}
+.status-dot{color:#8493a6}
+.status-language{color:#536780}
+.status-view{width:25px;height:25px;display:grid;place-items:center;border-radius:1px!important;border:1px solid transparent!important}
+.status-view.active{background:#ddeaf9;border-color:#bdd1ea!important}
+.status-view svg{width:15px;height:15px}
+.statusbar button:hover{background:#e5effb}
+.statusbar button{color:#435c7e;padding:3px 5px}
+.zoom-slider{width:90px;height:3px;accent-color:#4271ad;cursor:pointer}
+#zoomLevel{min-width:32px;text-align:right}
+.focus-exit{position:fixed;top:11px;right:15px;z-index:100;border:1px solid #bbd0e4;border-radius:4px;
+  background:#2b579a;color:white;padding:8px 13px;font-size:12px}
+.focus-mode .topbar,.focus-mode .menu-bar,.focus-mode .ribbon,.focus-mode .ruler-shell{display:none!important}
+.focus-mode .workspace{padding-top:25px}
+.help-modal p{font-size:13px;line-height:1.6}
+/* La cinta azul se mantiene legible con interfaz oscura. */
+body.dark{--bg:#171e2b;--panel:#20293a;--panel-soft:#293448;--text:#e9f0fb;--muted:#aab8cd;
+  --line:#38455b;--accent:#89b7fb;--accent-dark:#3769b0;--accent-bg:#304864;--green:#9ad5b4}
+.dark .topbar,.dark .menu-bar{background:#1c3c70}
+.dark .file-tab{background:#15315b!important}
+.dark .menu-bar .tab.active{background:#253951;color:#c9e3ff}
+.dark .ribbon{background:#222c3d;border-color:#42516a}
+.dark .ribbon-group,.dark .ribbon-section{border-right-color:#4a556c}
+.dark .view-tile,.dark .ribbon-check,.dark .ribbon-action,.dark .view-small-action{color:#e5edf7;background:transparent}
+.dark .view-tile svg,.dark .view-small-action svg{color:#a2c6ef}
+.dark .view-tile.active,.dark .view-tile:hover,.dark .ribbon-action:hover,.dark .view-small-action:hover{background:#304a69;border-color:#527396;color:#eef6ff}
+.dark .ribbon-caption{color:#a3b2c7}
+.dark .workspace{background:#151c2a}
+.dark .ruler-shell{background:#263143;border-color:#3c4e69}
+.dark .statusbar{background:#222d40;color:#d4e1f5;border-color:#3d4d66}
+.dark .statusbar button{color:#d4e1f5}
+.dark .status-view.active{background:#405c82}
+.dark .paper-editor{color:#263244}
+.dark .page-container{background-color:#fff}
+.dark .page-container.cream-page{background-color:#fff8e9}
+.dark .page-container.grid-visible{background-image:linear-gradient(to right,#dce6f2aa 1px,transparent 1px),linear-gradient(to bottom,#dce6f2aa 1px,transparent 1px)}
+.dark .ribbon-group select,.dark .control-label select{background:#293448;color:#e9f0fb;border-color:#4b5970}
+/* Ajustes para tablet y teléfono, incluida Safari en iPhone. */
+@media(max-width:1200px){
+  .ribbon{padding-left:6px;padding-right:6px}
+  .topbar{grid-template-columns:minmax(105px,1fr) minmax(140px,2fr) minmax(155px,1fr)}
+  .quick-title{display:none}
+}
+@media(max-width:780px){
+  .topbar{height:46px;flex-basis:46px;padding:0 8px;grid-template-columns:minmax(100px,1fr) minmax(110px,1.4fr) minmax(80px,1fr);gap:3px}
+  .quick-icon{width:26px;height:30px}
+  .quick-access{gap:0}
+  .quick-divider{margin:0 2px}
+  .doc-title-area{width:100%;max-width:unset}
+  #documentTitle{width:100%;font-size:12px}
+  .save-status{font-size:9px}
+  .top-export{padding:6px 7px;font-size:11px;gap:3px}
+  .top-export span:not(.little-chevron){display:none}
+  .top-export svg{width:17px;height:17px}
+  .menu-bar{padding:0 3px;height:38px;flex-basis:38px}
+  .menu-bar .tab,.file-tab{padding:0 12px;font-size:12px}
+  .assistant-switch{padding:0 9px}
+  .ribbon{height:107px;flex-basis:107px;min-height:107px;padding:4px 4px 3px}
+  .ribbon-group,.ribbon-section{min-height:99px;padding-bottom:22px}
+  .ribbon-items{height:66px}
+  .view-tile{height:66px;width:69px}
+  .view-tile svg{width:25px;height:25px}
+  .view-types{min-width:218px}
+  .view-show{min-width:198px}
+  .ruler-shell{height:20px;flex-basis:20px}
+  .vertical-ruler{display:none}
+  .workspace{padding:12px 8px 30px}
+  .page-container,.page-container.paper-letter{width:100%;max-width:100%;min-height:78vh;padding:25px 20px;border-radius:0}
+  .paper-editor{min-height:65vh;font-size:15px}
+  .web-layout .page-container{padding:18px 16px}
+  .assistant-panel{top:84px;bottom:32px;z-index:55}
+  .statusbar{padding:0 8px;height:34px;flex-basis:34px}
+  .statusbar>div{gap:5px}
+  .zoom-slider{width:60px}
+  .editor-hint{font-size:10px}
+}
+@media(max-width:460px){
+  .topbar{grid-template-columns:97px minmax(100px,1fr) 74px}
+  .word-app{height:27px;width:28px;font-size:17px}
+  .quick-icon{width:23px;padding:0}
+  .quick-icon svg{width:15px;height:15px}
+  .quick-divider{display:none}
+  .top-actions{gap:1px}
+  .top-export{padding:5px}
+  .top-export .little-chevron{display:none}
+  .menu-bar .tab,.file-tab{padding:0 10px}
+  .menu-spacer{min-width:5px}
+  .statusbar{font-size:9px}
+  .statusbar .status-dot,.statusbar .status-divider{display:none}
+  .status-left #pageCount{max-width:88px;overflow:hidden;text-overflow:ellipsis}
+  .status-view{width:22px;height:25px}
+  .zoom-slider{display:none}
+  #zoomLevel{min-width:29px}
+  .page-container{padding:20px 16px!important}
+}
+@media print{
+  .ruler-shell,.vertical-ruler,.focus-exit{display:none!important}
+  .workspace{overflow:visible!important}
+  .page-container,.page-container.paper-letter{background:#fff!important;background-image:none!important}
+}
