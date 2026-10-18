@@ -238,6 +238,8 @@
       ' en los últimos 365 días · Se muestran hasta 24 titulares recientes.';
   }
   function view(){
+   const reviewedStory=$('borough-reviewed-story');
+   if(reviewedStory)reviewedStory.hidden=active!=='Miguel Hidalgo';
    heading.textContent=active;
    document.title=active+' · historia y noticias | CDMX AL MEMENTO';
    select.value=active;
