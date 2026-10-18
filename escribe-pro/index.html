@@ -3,13 +3,35 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f5f6fc">
+  <meta name="theme-color" content="#2b579a">
   <meta name="description" content="Escribe Pro: crea y administra documentos desde tu navegador, sin cuentas ni suscripciones.">
-  <title>Escribe Pro — Tu espacio para escribir</title>
+  <title>Escribe Pro — Editor de documentos</title>
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=word-clasico-20261018">
 </head>
 <body>
+  <!-- Símbolos SVG locales para la cinta de opciones (sin librerías de iconos). -->
+  <svg class="svg-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+    <symbol id="i-save" viewBox="0 0 24 24"><path d="M4 3h13l4 4v14H3V3h1zm3 0v7h10V3M7 21v-8h10v8"/><path d="M10 3v5h4V3"/></symbol>
+    <symbol id="i-undo" viewBox="0 0 24 24"><path d="M9 7 4 12l5 5M4 12h11a5 5 0 0 1 0 10"/></symbol>
+    <symbol id="i-redo" viewBox="0 0 24 24"><path d="m15 7 5 5-5 5m5-5H9a5 5 0 0 0 0 10"/></symbol>
+    <symbol id="i-file" viewBox="0 0 24 24"><path d="M6 2h8l5 5v15H6zM14 2v6h5M9 12h7M9 16h7"/></symbol>
+    <symbol id="i-page" viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="1"/><path d="M8 7h8M8 10h8M8 13h5M8 17h8"/></symbol>
+    <symbol id="i-book" viewBox="0 0 24 24"><path d="M12 5c-3-2-7-2-10-1v15c3-1 7-1 10 1 3-2 7-2 10-1V4c-3-1-7-1-10 1ZM12 5v15M5 8h4M15 8h4"/></symbol>
+    <symbol id="i-web" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 9h20M6 6.5h.01M9 6.5h.01M12 12h7M12 15h6"/></symbol>
+    <symbol id="i-grid" viewBox="0 0 24 24"><path d="M2 2h20v20H2zM8 2v20M16 2v20M2 8h20M2 16h20"/></symbol>
+    <symbol id="i-ruler" viewBox="0 0 24 24"><path d="M3 6h18v12H3zM7 6v5M11 6v3M15 6v5M19 6v3"/></symbol>
+    <symbol id="i-zoom" viewBox="0 0 24 24"><circle cx="10" cy="10" r="7"/><path d="m15 15 6 6M7 10h6M10 7v6"/></symbol>
+    <symbol id="i-width" viewBox="0 0 24 24"><path d="M3 3v18M21 3v18M6 12h12m-9-4-4 4 4 4m6-8 4 4-4 4"/></symbol>
+    <symbol id="i-window" viewBox="0 0 24 24"><rect x="2" y="3" width="15" height="14" rx="1"/><path d="M7 17v4h15V8h-5M2 7h15"/></symbol>
+    <symbol id="i-focus" viewBox="0 0 24 24"><path d="M4 10V4h6m4 0h6v6m0 4v6h-6m-4 0H4v-6"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m4 12 5 5L20 6"/></symbol>
+    <symbol id="i-print" viewBox="0 0 24 24"><path d="M6 9V3h12v6M6 17H3V9h18v8h-3M6 14h12v8H6zM17 12h1"/></symbol>
+    <symbol id="i-folder" viewBox="0 0 24 24"><path d="M2 6h8l2 3h10v12H2zM2 9V4h7l2 2"/></symbol>
+    <symbol id="i-panel" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="18" rx="2"/><path d="M8 3v18M3 8h4M3 12h4"/></symbol>
+    <symbol id="i-help" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9 9a3 3 0 1 1 5 2c-1 1-2 1-2 3m0 4h.01"/></symbol>
+    <symbol id="i-image" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="18" rx="1"/><circle cx="8" cy="9" r="2"/><path d="m3 19 6-6 4 4 4-6 4 7"/></symbol>
+  </svg>
   <div class="app" id="app">
     <aside class="sidebar" id="sidebar" aria-label="Mis documentos">
       <div class="side-head">
@@ -32,15 +54,25 @@
     </aside>
     <div class="scrim" id="scrim" hidden></div>
     <div class="app-main">
+      <!-- Barra de título y acceso rápido, como la interfaz clásica de Word. -->
       <header class="topbar">
-        <div class="top-left">
-          <button class="icon-btn mobile-menu" id="openSidebar" aria-label="Abrir mis documentos">☰</button>
-          <div class="doc-title-area"><input id="documentTitle" type="text" maxlength="100" aria-label="Título del documento" value="Documento sin título" spellcheck="false"><span class="save-status" id="saveStatus" aria-live="polite">Guardado en este dispositivo</span></div>
+        <div class="quick-access" aria-label="Acceso rápido">
+          <button class="word-app" id="openSidebar" aria-label="Abrir mis documentos" title="Mis documentos">W</button>
+          <button class="quick-icon" id="quickSave" aria-label="Guardar documento" title="Guardar (Ctrl+S)"><svg><use href="#i-save"/></svg></button>
+          <button class="quick-icon" id="quickUndo" aria-label="Deshacer" title="Deshacer"><svg><use href="#i-undo"/></svg></button>
+          <button class="quick-icon" id="quickRedo" aria-label="Rehacer" title="Rehacer"><svg><use href="#i-redo"/></svg></button>
+          <span class="quick-divider"></span>
+          <button class="quick-title" id="quickNew" title="Crear documento nuevo">＋ Nuevo</button>
+        </div>
+        <div class="doc-title-area">
+          <input id="documentTitle" type="text" maxlength="100" aria-label="Título del documento" value="Documento sin título" spellcheck="false">
+          <span class="save-status" id="saveStatus" aria-live="polite">Guardado en este dispositivo</span>
         </div>
         <div class="top-actions">
-          <button class="quiet-button desktop-only" id="importButton" title="Abrir archivo DOCX, HTML o TXT">↥ <span>Importar</span></button>
-          <button class="quiet-button desktop-only" id="printButton" title="Imprimir o guardar como PDF">▣ <span>PDF</span></button>
-          <div class="dropdown-wrap"><button class="primary-button" id="exportButton" aria-expanded="false" aria-controls="exportMenu">↓ <span>Descargar</span> <small>⌄</small></button>
+          <button class="quick-icon desktop-only" id="importButton" aria-label="Abrir archivo Word" title="Abrir .docx, .txt o .html"><svg><use href="#i-folder"/></svg></button>
+          <button class="quick-icon desktop-only" id="printButton" aria-label="Imprimir o guardar PDF" title="Imprimir / PDF"><svg><use href="#i-print"/></svg></button>
+          <div class="dropdown-wrap">
+            <button class="top-export" id="exportButton" aria-expanded="false" aria-controls="exportMenu"><svg><use href="#i-save"/></svg><span>Descargar</span><span class="little-chevron">⌄</span></button>
             <div class="menu-dropdown" id="exportMenu" hidden>
               <button data-export="import"><strong>↥</strong><span>Abrir documento<small>.docx · .txt · .html</small></span></button>
               <button data-export="docx"><strong>W</strong><span>Documento de Word<small>.docx</small></span></button>
@@ -49,18 +81,23 @@
               <button data-export="txt"><strong>≡</strong><span>Texto sin formato<small>.txt</small></span></button>
             </div>
           </div>
-          <button class="icon-btn top-theme" id="themeButton" aria-label="Cambiar modo de color" title="Modo oscuro">☾</button>
+          <button class="quick-icon" id="themeButton" aria-label="Cambiar modo de color" title="Modo oscuro">☾</button>
         </div>
       </header>
-      <div class="menu-bar">
-        <button class="tab active" id="homeTab">Inicio</button>
-        <button class="tab" id="insertTab">Insertar</button>
-        <button class="tab" id="layoutTab">Diseño</button>
-        <button class="tab" id="toolsTab">Herramientas</button>
+      <!-- Pestañas de la cinta de opciones. No hay botones decorativos sin acción. -->
+      <nav class="menu-bar" aria-label="Pestañas del editor">
+        <button class="file-tab" id="fileTab" title="Crear, abrir o guardar">Archivo</button>
+        <button class="tab" id="homeTab" aria-controls="homeRibbon">Inicio</button>
+        <button class="tab" id="insertTab" aria-controls="insertRibbon">Insertar</button>
+        <button class="tab" id="designTab" aria-controls="designRibbon">Diseño</button>
+        <button class="tab" id="layoutTab" aria-controls="layoutRibbon">Disposición</button>
+        <button class="tab" id="toolsTab" aria-controls="toolsRibbon">Revisar</button>
+        <button class="tab active" id="viewTab" aria-controls="viewRibbon" aria-current="page">Vista</button>
+        <button class="tab" id="helpTab">Ayuda</button>
         <span class="menu-spacer"></span>
         <button class="assistant-switch" id="assistantButton" aria-expanded="false" aria-controls="assistantPanel">✧ <span>Asistente local</span></button>
-      </div>
-      <div class="ribbon" id="homeRibbon" role="toolbar" aria-label="Formato de texto">
+      </nav>
+      <div class="ribbon" id="homeRibbon" role="toolbar" aria-label="Formato de texto" hidden>
         <div class="ribbon-group font-tools">
           <select id="fontFamily" aria-label="Fuente" title="Fuente"><option value="Arial">Arial</option><option value="Georgia">Georgia</option><option value="Times New Roman">Times New Roman</option><option value="Verdana">Verdana</option><option value="Trebuchet MS">Trebuchet MS</option><option value="Courier New">Courier New</option></select>
           <select id="fontSize" aria-label="Tamaño de letra" title="Tamaño de letra"><option value="2">10</option><option value="3" selected>12</option><option value="4">14</option><option value="5">18</option><option value="6">24</option><option value="7">32</option></select>
@@ -71,6 +108,7 @@
           <button class="format-button" data-command="strikeThrough" title="Tachado" aria-label="Tachado"><s>S</s></button>
           <label class="color-tool" title="Color del texto"><span>A</span><input type="color" id="fontColor" value="#263149" aria-label="Color del texto"></label>
           <label class="color-tool" title="Resaltar texto"><span>▤</span><input type="color" id="highlightColor" value="#fff0a4" aria-label="Color de resaltado"></label>
+          <span class="ribbon-caption">Fuente</span>
         </div>
         <div class="ribbon-group paragraph-tools">
           <select id="textStyle" aria-label="Estilo de párrafo" title="Estilo"><option value="p">Párrafo normal</option><option value="h1">Título 1</option><option value="h2">Título 2</option><option value="h3">Título 3</option><option value="blockquote">Cita</option></select>
@@ -83,11 +121,13 @@
           <button class="format-button" data-command="insertOrderedList" title="Lista numerada">1. ≡</button>
           <button class="format-button" data-command="outdent" title="Reducir sangría">⇤</button>
           <button class="format-button" data-command="indent" title="Aumentar sangría">⇥</button>
+          <span class="ribbon-caption">Párrafo</span>
         </div>
         <div class="ribbon-group history-tools">
           <button class="format-button" data-command="undo" title="Deshacer (Ctrl+Z)">↶</button>
           <button class="format-button" data-command="redo" title="Rehacer (Ctrl+Y)">↷</button>
           <button class="format-button" data-command="removeFormat" title="Quitar formato">Tx</button>
+          <span class="ribbon-caption">Edición</span>
         </div>
       </div>
       <div class="ribbon" id="insertRibbon" role="toolbar" aria-label="Insertar elementos" hidden>
@@ -120,9 +160,43 @@
         <button class="ribbon-action" id="replaceAll">Reemplazar todo</button>
         <span class="find-status" id="findStatus"></span>
       </div>
+      <div class="ribbon" id="designRibbon" role="toolbar" aria-label="Diseño visual" hidden>
+        <div class="ribbon-section design-options"><div class="ribbon-items">
+          <button class="view-tile active" id="paperWhite" title="Papel blanco"><span class="paper-swatch paper-swatch-white">A</span><span>Blanco</span></button>
+          <button class="view-tile" id="paperCream" title="Papel color marfil"><span class="paper-swatch paper-swatch-cream">A</span><span>Marfil</span></button>
+        </div><span class="ribbon-caption">Color de página (solo vista)</span></div>
+        <div class="ribbon-section"><div class="ribbon-items">
+          <button class="view-small-action" id="designMargins"><svg><use href="#i-page"/></svg> Márgenes</button>
+          <button class="view-small-action" id="designTheme"><svg><use href="#i-focus"/></svg> Modo oscuro</button>
+        </div><span class="ribbon-caption">Presentación</span></div>
+      </div>
+      <!-- Esta es la cinta mostrada inicialmente: refleja la pestaña Vista de Word. -->
+      <div class="ribbon view-ribbon" id="viewRibbon" role="toolbar" aria-label="Herramientas de vista">
+        <div class="ribbon-section view-types"><div class="ribbon-items">
+          <button class="view-tile" id="viewRead" title="Leer sin editar"><svg><use href="#i-book"/></svg><span>Modo<br>lectura</span></button>
+          <button class="view-tile active" id="viewPrint" title="Página como en Word"><svg><use href="#i-page"/></svg><span>Diseño de<br>impresión</span></button>
+          <button class="view-tile" id="viewWeb" title="Adaptar el documento al ancho"><svg><use href="#i-web"/></svg><span>Diseño<br>web</span></button>
+        </div><span class="ribbon-caption">Vistas</span></div>
+        <div class="ribbon-section view-show"><div class="ribbon-items checkbox-items">
+          <label class="ribbon-check"><input id="showRuler" type="checkbox" checked> Regla</label>
+          <label class="ribbon-check"><input id="showGrid" type="checkbox"> Líneas de cuadrícula</label>
+          <button class="ribbon-check ribbon-check-button" id="showNavigation"><svg><use href="#i-panel"/></svg> Panel de navegación</button>
+        </div><span class="ribbon-caption">Mostrar</span></div>
+        <div class="ribbon-section view-zoom"><div class="ribbon-items">
+          <button class="view-tile" id="viewZoom100" title="Restablecer zoom"><svg><use href="#i-zoom"/></svg><span>Zoom<br>100%</span></button>
+          <button class="view-tile" id="viewZoomFit" title="Ajustar al ancho de la ventana"><svg><use href="#i-width"/></svg><span>Ancho de<br>página</span></button>
+        </div><span class="ribbon-caption">Zoom</span></div>
+        <div class="ribbon-section view-window"><div class="ribbon-items">
+          <button class="view-tile" id="viewFocus" title="Ocultar herramientas temporalmente"><svg><use href="#i-focus"/></svg><span>Concentración</span></button>
+          <button class="view-tile" id="viewAssistant" title="Mostrar asistente de escritura"><svg><use href="#i-window"/></svg><span>Panel<br>asistente</span></button>
+        </div><span class="ribbon-caption">Ventana</span></div>
+      </div>
+      <!-- Regla visual activable; no altera el contenido del documento. -->
+      <div class="ruler-shell" id="rulerShell" aria-hidden="true"><div class="ruler-inner"><span class="ruler-marker marker-left"></span><span class="ruler-marker marker-right"></span></div></div>
       <div class="editor-layout">
         <main class="workspace" id="workspace">
-          <div class="workspace-info"><span class="workspace-tag">✦ &nbsp; TU DOCUMENTO</span><div class="workspace-view">A4 / Carta · Vista de edición</div></div>
+          <div class="vertical-ruler" id="verticalRuler" aria-hidden="true"></div>
+          <div class="workspace-info"><span class="workspace-tag">✦ &nbsp; ESCRIBE PRO</span><div class="workspace-view">A4 · Diseño de impresión</div></div>
           <div class="page-container" id="pageContainer">
             <div class="page-header" id="pageHeader" contenteditable="false" aria-label="Encabezado del documento"></div>
             <article class="paper-editor" id="editor" contenteditable="true" spellcheck="true" role="textbox" aria-multiline="true" aria-label="Editor de documentos"><h1>Una página en blanco, mil posibilidades.</h1><p>Empieza a escribir aquí. Tu trabajo se guardará automáticamente en este dispositivo.</p></article>
@@ -144,15 +218,27 @@
           </div>
         </aside>
       </div>
-      <footer class="statusbar"><div><span id="wordCount">0 palabras</span><span class="status-dot">·</span><span id="characterCount">0 caracteres</span><span class="status-dot desktop-only">·</span><span class="desktop-only" id="readingTime">0 min lectura</span></div><div><span id="pageCount">1 página aprox.</span><span class="status-dot">·</span><span id="storageStatus">Local</span><span class="status-dot">·</span><button id="zoomOut" aria-label="Alejar">−</button><span id="zoomLevel">100%</span><button id="zoomIn" aria-label="Acercar">＋</button></div></footer>
+      <footer class="statusbar" aria-label="Barra de estado">
+        <div class="status-left"><span id="pageCount">1 página aprox.</span><span class="status-divider"></span><span id="wordCount">0 palabras</span><span class="status-dot">·</span><span id="characterCount" class="desktop-only">0 caracteres</span><span class="desktop-only" id="readingTime">0 min lectura</span><span class="status-divider desktop-only"></span><span class="status-language desktop-only">Español (México)</span></div>
+        <div class="status-right"><span id="storageStatus" class="desktop-only">Local</span>
+          <button class="status-view" id="statusRead" title="Modo lectura" aria-label="Modo lectura"><svg><use href="#i-book"/></svg></button>
+          <button class="status-view active" id="statusPrint" title="Diseño de impresión" aria-label="Diseño de impresión"><svg><use href="#i-page"/></svg></button>
+          <button class="status-view" id="statusWeb" title="Diseño web" aria-label="Diseño web"><svg><use href="#i-web"/></svg></button>
+          <span class="status-divider"></span><button id="zoomOut" aria-label="Alejar">−</button>
+          <input id="zoomSlider" class="zoom-slider" type="range" min="70" max="150" step="10" value="100" aria-label="Zoom del documento">
+          <button id="zoomIn" aria-label="Acercar">＋</button><span id="zoomLevel">100%</span>
+        </div>
+      </footer>
+      <button class="focus-exit" id="focusExit" hidden>Salir del modo concentración ✕</button>
     </div>
   </div>
+  <dialog id="helpDialog" class="modal help-modal" aria-labelledby="helpHeading"><h2 id="helpHeading">Ayuda · Escribe Pro</h2><p>Escribe y da formato desde <strong>Inicio</strong>. En <strong>Insertar</strong> agrega imágenes, tablas y enlaces. En <strong>Vista</strong> cambia la presentación, activa la regla o abre tus documentos.</p><p>Tu trabajo se guarda automáticamente en este dispositivo. Para llevarte una copia, usa <strong>Descargar → Word (.docx)</strong> o PDF. Los archivos DOCX requieren conexión a internet.</p><button class="primary-button" id="closeHelp">Entendido</button></dialog>
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
   <dialog id="promptDialog" class="modal"><form method="dialog" id="promptForm"><h2 id="promptHeading">Insertar enlace</h2><p id="promptDescription"></p><div id="promptFields"></div><div class="modal-actions"><button class="quiet-button" value="cancel">Cancelar</button><button class="primary-button" value="ok" id="promptConfirm">Aceptar</button></div></form></dialog>
   <input type="file" id="fileInput" accept=".docx,.html,.htm,.txt" hidden>
   <input type="file" id="imageInput" accept="image/png,image/jpeg,image/webp,image/gif" hidden>
   <!-- El editor arranca primero. Las bibliotecas DOCX se cargan como complemento. -->
-  <script defer src="script.js"></script>
+  <script defer src="script.js?v=word-clasico-20261018"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/docx@9.5.1/dist/index.iife.js"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/mammoth@1.11.0/mammoth.browser.min.js"></script>
 </body>
