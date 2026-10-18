@@ -81,3 +81,18 @@ En `style.css`, cambia `--accent` para modificar el color principal. En `script.
 - [Mammoth](https://github.com/mwilliamson/mammoth.js), licencia BSD-2-Clause: lectura de DOCX.
 
 Ambas se cargan únicamente en el cliente; no es necesaria una API propia.
+
+## Apariencia clásica Word (18 de octubre de 2026)
+
+El editor ahora incluye **una interfaz de estilo Word clásico**, con barra azul superior, pestañas Archivo/Inicio/Insertar/Diseño/Disposición/Revisar/Vista, grupos de herramientas de la cinta, regla horizontal y barra inferior de estado/zoom. La pestaña Vista es la seleccionada inicialmente para mostrar los controles que aparecen en la captura de referencia.
+
+- **Archivo**: abre el menú para importar y descargar DOCX, PDF (impresión), HTML o TXT.
+- **Inicio**: fuentes, tamaños, negritas, colores, párrafos y listas.
+- **Insertar**: imágenes, tablas, enlaces y salto de página.
+- **Diseño**: color visual de la hoja y acceso a márgenes/tema oscuro.
+- **Disposición**: tamaño del papel, márgenes, encabezado, pie y numeración.
+- **Revisar**: buscar y reemplazar.
+- **Vista**: modo lectura (solo ver), impresión, vista web, regla, cuadrícula, panel de documentos y zoom.
+- **Ayuda**: instrucciones breves dentro del editor.
+
+En celulares, la cinta y las pestañas se pueden **deslizar horizontalmente** para mostrar todas las herramientas. El botón **W** abre la biblioteca de documentos. La barra superior y el pie permanecen visibles al desplazarse por la página. No es una copia de Microsoft Word, no tiene paginación física ni servicios de Microsoft.
