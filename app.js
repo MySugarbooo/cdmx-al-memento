@@ -140,6 +140,7 @@ function buildCard(a,featured=false,large=false){
  link.href=a.local_url||'/noticias/';
  inside.append(badge,title,description,meta,link);
  c.append(visual,inside);
+ window.CDMX_addArticleLike?.(c,a);
  return c;
 }
 function featuredArticles(items){
