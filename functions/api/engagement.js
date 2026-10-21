@@ -1,3 +1,4 @@
+// API de visitantes y Me gusta por publicación. Cloudflare Pages Function.
 const json=(data,status=200,cookie)=>new Response(JSON.stringify(data),{status,headers:{"Content-Type":"application/json; charset=utf-8","Cache-Control":"no-store","X-Content-Type-Options":"nosniff",...(cookie?{"Set-Cookie":`__Host-cdmx_reader=${cookie}; Path=/; Max-Age=31536000; Secure; HttpOnly; SameSite=Lax`}:{})}});
 const getCookie=(req)=>req.headers.get("Cookie")?.split(";").map(x=>x.trim()).find(x=>x.startsWith("__Host-cdmx_reader="))?.split("=")[1];
 const digest=async s=>Array.from(new Uint8Array(await crypto.subtle.digest("SHA-256",new TextEncoder().encode(s))),x=>x.toString(16).padStart(2,"0")).join("");
