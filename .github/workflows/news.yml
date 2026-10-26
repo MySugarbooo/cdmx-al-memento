@@ -19,6 +19,7 @@ on:
       - 'assets/comments-config.js'
       - 'assets/comments.css'
       - 'noticias/index.html'
+      - 'comunidad/index.html'
       - 'firebase/firestore.rules'
       - 'assets/negocios.js'
       - 'assets/herramientas.js'
