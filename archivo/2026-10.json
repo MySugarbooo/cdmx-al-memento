@@ -1,7 +1,91 @@
 {
   "month": "2026-10",
-  "updated": "2026-10-26 15:43 UTC",
+  "updated": "2026-10-26 16:01 UTC",
   "articles": [
+    {
+      "title": "Concluye tercera fase en el Panteón Civil de Dolores: suman 65 individuos adultos",
+      "description": "La información publicada por Rotativo trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPVmxGM3k0SjJJU1JZdlNpSS1UbjFydkM5czdTUHVVX0xXOUQyNEt4MFlTc2VOZFF0LTZsMHF1SnlQcnJ4a3owdnBlQWtOODl5bXRHVThMSkhCUktTZVQ5NG9fbEhtTVB1bVFIUnhzaThSVHdMX1E5QWR0T0I5RE9IbVkwV3F3ZWlHV3JWY1FmRWpmc1dRSHNXOHExRVcwTDA?oc=5",
+      "source": "Rotativo",
+      "date": "2026-10-26",
+      "published_at": "2026-10-26T15:56:47Z",
+      "category": "CDMX",
+      "borough": "",
+      "location": "Ubicación no indicada por el titular",
+      "local_url": "/noticias/?id=7c8876fe27dc835ee3c1&mes=2026-10",
+      "brief": {
+        "lead": "La información publicada por Rotativo trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+        "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+        "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "archivo_cdmx_003",
+        "url": "/assets/fotos/archivo_cdmx_003.jpg",
+        "category": "CDMX",
+        "borough": "",
+        "topic": "D.F. - panoramio (7)",
+        "author": "eurimaco",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:D.F._-_panoramio_%287%29.jpg"
+      }
+    },
+    {
+      "title": "La SSC de la CDMX pide verificar adopciones y reportar maltrato de perros y gatos negros",
+      "description": "La información publicada por Rotativo trata un asunto registrado en la sección de Seguridad del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOUGRjSVJBVWxqZjdNR0dNbUNSV0s4U3VuTmlXYTRJOVFvZTRKTHpPNFZiWXA3WHJ5YXBzZVFfSlJOQ2VYZmdnVGtHTUhqZlZmX2FVd0tYa0NHeWhfRTVZQXJwR2twY2NOV0NsbkliMDBMNmVCYzhGREJTWDE0LTNvUWlRR3JPNTZfX2c?oc=5",
+      "source": "Rotativo",
+      "date": "2026-10-26",
+      "published_at": "2026-10-26T15:47:01Z",
+      "category": "Seguridad",
+      "borough": "",
+      "location": "Ciudad de México (sin alcaldía identificada)",
+      "local_url": "/noticias/?id=16ec5d6ab52295f199fe&mes=2026-10",
+      "brief": {
+        "lead": "La información publicada por Rotativo trata un asunto registrado en la sección de Seguridad del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+        "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+        "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "archivo_seguridad_001",
+        "url": "/assets/fotos/archivo_seguridad_001.jpg",
+        "category": "Seguridad",
+        "borough": "",
+        "topic": "Adquisición patrullas para la Policía 03",
+        "author": "Gobierno de la Ciudad de México",
+        "license": "CC BY 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Adquisici%C3%B3n_patrullas_para_la_Polic%C3%ADa_03.jpg"
+      }
+    },
+    {
+      "title": "Clara Brugada regalará boletos para asistir gratis a la F1 en México; esto se sabe",
+      "description": "La información publicada por El Informador trata un asunto registrado en la sección de Gobierno del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOSDZ3Wl9HVjh2QnpEU3dDbW45b1NVYkxvejZDOWdDUHlMUTNrZTl2NE5NTDl0aFNiSWxYckNIWDByWXJWN0cySWFxVDhhYTFMN0x0cWZCN3Y2SXZwNl9GaE5aVnZwZ0NOLXBzdWlwVjFKaWMxc1NzQnZmX3dQX3lWc2ZMQVEwN245NUxWWEtWOGlLdEtsRDFhV2ZObk9pUnNuUElFSnVHOVhTYmx6MEZOYnlRYTJldWl0LVp5NHFhQnBPejVWbGVRamxZWGlnODlU0gHWAUFVX3lxTE5FT2lSUnIyU2w0YXlfSkFtWW0tUGphUmIzTkZvZG52alZkcllId0gzQllnUTFldm1BeXlfWEdJcDNOdVNicXY0QTlHdVlWLTBoVjdKLXhOZzlkNnpUMjJmTndfMW5KeG51LUw1MHRFZnJ0R1pRZktYNmRuLS1xTUdPRkplRVZQc3Q5V2pQR09ic0xjWmtuRExuRHZJb0VpU1BDRjUwT0Z2TkNLQjB0cTlRV0cxRFJ2czcwLWk4SVRNcWVuQlI4SjVrYmdoZGtiZUZiWEg5S2c?oc=5",
+      "source": "El Informador",
+      "date": "2026-10-26",
+      "published_at": "2026-10-26T15:44:22Z",
+      "category": "Gobierno",
+      "borough": "",
+      "location": "Ubicación no indicada por el titular",
+      "local_url": "/noticias/?id=464159372c28601b7e1b&mes=2026-10",
+      "brief": {
+        "lead": "La información publicada por El Informador trata un asunto registrado en la sección de Gobierno del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+        "context": "Las decisiones administrativas pueden influir en servicios, trámites y derechos; conviene conocer sus condiciones y a quiénes afectan.",
+        "pending": "Es indispensable consultar los acuerdos, comunicados o documentos oficiales antes de dar una medida por vigente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "archivo_gobierno_001",
+        "url": "/assets/fotos/archivo_gobierno_001.jpg",
+        "category": "Gobierno",
+        "borough": "",
+        "topic": "Palacio de Bellas Artes",
+        "author": "Carolina López",
+        "license": "CC BY 2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Palacio_de_Bellas_Artes.jpg"
+      }
+    },
     {
       "title": "Gerardo Villanueva levanta la mano por Coyoacán; apuesta por la unidad de Morena",
       "description": "La información publicada por 24-horas trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -199,6 +283,34 @@
       }
     },
     {
+      "title": "Paro de transportistas en CDMX hoy: estas son las autopistas y casetas afectadas",
+      "description": "La información publicada por Expansión Política trata un asunto registrado en la sección de Seguridad del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNMnM5NDFBd3N6MlVYMm1DV0dOYmwwQzE2dkp4eHdQOFV4SWNJZS1UM1drRFZIU3ItLWZVQUZxT0FkdFlIQVdOTHZBTkxsTUxEQXVYeUhtdmJabU55T05wNm1obmQzbWRWbmFLZEFtc1F6WElOTkhxX2o2aUF5UW5QdjhQcnoxcmhVVWQ2WWpEQUlrb2VRdUNTMFpjUktncllGQUNR0gGjAUFVX3lxTE0yczk0MUF3c3oyVVgybUNXR05ibDBDMTZ2Snh4d1A4VXhJY0llLVQzV2tEVkhTci0tZlVBRnFPQWR0WUhBV05MdkFOTGxNTERBdVh5SG12YlptTnlPTnA2bWhuZDNtZFZuYUtkQW1zUXpYSU5OSHFfajZpQXlRblB2OFByejFyaFVVZDZZakRBSWtvZVF1Q1MwWmNSS2dyWUZBQ1E?oc=5",
+      "source": "Expansión Política",
+      "date": "2026-10-26",
+      "published_at": "2026-10-26T13:58:00Z",
+      "category": "Seguridad",
+      "borough": "",
+      "location": "Ciudad de México (sin alcaldía identificada)",
+      "local_url": "/noticias/?id=5418bd6da59596f308d2&mes=2026-10",
+      "brief": {
+        "lead": "La información publicada por Expansión Política trata un asunto registrado en la sección de Seguridad del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+        "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+        "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "archivo_seguridad_004",
+        "url": "/assets/fotos/archivo_seguridad_004.jpg",
+        "category": "Seguridad",
+        "borough": "",
+        "topic": "Adquisición patrullas para la Policía 01",
+        "author": "Gobierno de la Ciudad de México",
+        "license": "CC BY 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Adquisici%C3%B3n_patrullas_para_la_Polic%C3%ADa_01.jpg"
+      }
+    },
+    {
       "title": "Marchas y bloqueos en la Cdmx este lunes 26 de octubre: rutas y horarios",
       "description": "Según la información destacada por Sociedad Noticias, manifestaciones o bloqueos forman parte de la jornada de movilidad capitalina. La ficha no demuestra por sí sola que todas las vías mencionadas sigan cerradas al momento de leerla.",
       "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOYkhhV0ZvdUVQaDk4akJrcjBOOGl6UEVvNzhRUDRIMWxuOHBURWZVQ2dtb05jRFpMY0tJY09OZHZPbmVVb2lGU0hhTmY3Wkx0OG9WQ3Q3eDRHMURUMmRBWlczR1NCSlRma0dwMFBuM1diSV9DSXFxWTlidl9FSDFDbVJpYzNQUzRQSVFWY2hidktQbkFhN3lySDdZZnJVTjgyeHFxTFBpa2hUUjdDTjN0cUVnRQ?oc=5",
@@ -392,6 +504,34 @@
         "author": "Octavio Alonso Maya Castro",
         "license": "CC BY-SA 3.0",
         "source": "https://commons.wikimedia.org/wiki/File:El_Paraguas_%28126505121%29.jpeg"
+      }
+    },
+    {
+      "title": "“Si te pasa algo, me pasa a mí”: el mensaje de Ari Gameplays a El Komanche antes de los reportes sobre su muerte",
+      "description": "La información publicada por Infobae trata un asunto registrado en la sección de Metro del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQVUlMaVVTOGtIbUNfWEJhZ2ZDbW9aeXB5RHpydWpUZEU5VHY2c3d1Y0NhRXozRHJIYklkVTJTM2JIU0FkbERyODJ0eFYyM0dZSGpoU3huR1Z0dFBaZGdrUmtrb1VhbTZyMmRSeGk2Q1RtYkRQc2luUDNfRXVCNjFqcW9BM05rMU5IOVVmVkxUOHR6VDJTOFRWQU1BYngxY0hBNFBieHlSeGFOYm9SUEdMcFhTSkxVNVAtM2tj0gHWAUFVX3lxTE85bUVUbWlVV3NGZ1c5cVI0d0lqUlFacTZYaWlMUWdjdi1JR1VFTFVPN3pBM05jLWkyN1ktYVFrSnU3TDZqR09hZHBlT0tsWGFTb0EyVlpBY25kNUoyVzJiZG43MF9Bc2RCUHlFckhDcGJRd3dCbWxKMi0yNGVySmFyQV9Vd2pRQnlzWV9fbWRGa2xTWHhoeDZEYUp0ZjREU01tYlhDcWEtZVVaVk5Ib0RqQVVFWHRuNXY5aFZfaGstb1hCbzM3UV9OTl9Wb0FPZmVpdlRHX1E?oc=5",
+      "source": "Infobae",
+      "date": "2026-10-26",
+      "published_at": "2026-10-26T13:14:29Z",
+      "category": "Metro",
+      "borough": "",
+      "location": "Ubicación no indicada por el titular",
+      "local_url": "/noticias/?id=b6b2b47e57144adbabe7&mes=2026-10",
+      "brief": {
+        "lead": "La información publicada por Infobae trata un asunto registrado en la sección de Metro del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+        "context": "Los cambios en este sistema pueden afectar los horarios, las conexiones y la planeación de los viajes cotidianos.",
+        "pending": "El estado operativo, las estaciones y las alternativas de traslado deben comprobarse en los avisos actuales del Metro. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "archivo_metro_005",
+        "url": "/assets/fotos/archivo_metro_005.jpg",
+        "category": "Metro",
+        "borough": "",
+        "topic": "Estación Sevilla de la Línea 1 del Metro de la Ciudad de México - 01 - Andén",
+        "author": "ProtoplasmaKid",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Estaci%C3%B3n_Sevilla_de_la_L%C3%ADnea_1_del_Metro_de_la_Ciudad_de_M%C3%A9xico_-_01_-_And%C3%A9n.jpg"
       }
     },
     {
