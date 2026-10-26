@@ -86,7 +86,8 @@ class ProfileTests(unittest.TestCase):
         self.assertIn('class="news-side-column"', home)
         self.assertIn('class="city-map-teaser city-map-teaser--hero"', home)
         self.assertEqual(home.count('class="city-map-teaser city-map-teaser--hero"'), 1)
-        self.assertTrue(home.index('id="main-title"') < home.index('class="home-map-section"') < home.index('class="hero-ctas"'))
+        # El mapa conserva su posición después del titular principal; la versión actual ya no usa hero-ctas.
+        self.assertLess(home.index('id="main-title"'), home.index('class="home-map-section"'))
         self.assertTrue(home.index('class="home-map-section"') < home.index('class="news-side-column"'))
         self.assertNotIn('class="city-map-teaser"', home)
         self.assertIn('loading="lazy" tabindex="-1" aria-hidden="true"', home)
