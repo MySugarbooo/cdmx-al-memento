@@ -8,7 +8,7 @@
   strip.append(label,value,note);
   const date=document.getElementById('weather-current-date');
   const compact=document.createElement('span');compact.id='header-visitors-number';compact.textContent='—';
-  if(date){const small=document.createElement('span');small.className='weather-date__visitors';small.append('👥 Visitas: ',compact);date.append(small);} 
+  if(date){const small=document.createElement('span');small.className='weather-date__visitors';small.append('👥 Visitas: ',compact);date.append(small);const community=document.createElement('div');community.className='community-feature';const link=document.createElement('a');link.href='/comunidad/';link.textContent='💬 Mi comunidad →';link.setAttribute('aria-label','Abrir Mi comunidad y comentar');community.append(link);date.append(community);} 
   if(root)root.after(strip);else document.querySelector('main')?.prepend(strip);
   async function request(article,body) {
     const url='/api/engagement'+(article?'?article='+encodeURIComponent(article):'');
