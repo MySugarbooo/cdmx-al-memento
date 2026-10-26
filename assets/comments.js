@@ -41,12 +41,18 @@ function display(rows){
  if(!rows.length){const li=document.createElement('li');li.textContent='Todavía no hay comentarios. Sé la primera persona en participar.';list.append(li);return;}
  for(const row of rows){
   const c=row.data(),li=document.createElement('li');
+  const profile=document.createElement('div');profile.className='community-profile';
+  const avatar=document.createElement('span');avatar.className='community-avatar';
+  const photo=String(c.photoURL||'');
+  if(/^https:\/\//i.test(photo)&&photo.length<1500){const img=document.createElement('img');img.src=photo;img.alt='Foto de perfil de '+String(c.name||'Lector').slice(0,80);img.loading='lazy';img.referrerPolicy='no-referrer';img.onerror=()=>{img.remove();avatar.textContent=String(c.name||'L').trim().charAt(0).toUpperCase()};avatar.append(img)}
+  else avatar.textContent=String(c.name||'L').trim().charAt(0).toUpperCase();
+  const details=document.createElement('div');details.className='community-profile-details';
   const name=document.createElement('strong');name.textContent=String(c.name||'Lector').slice(0,80);
   const time=document.createElement('time');
   const stamp=c.createdAt?.toDate?.();
   time.textContent=stamp?new Intl.DateTimeFormat('es-MX',{dateStyle:'medium',timeStyle:'short',timeZone:'America/Mexico_City'}).format(stamp):'Fecha pendiente';
   const p=document.createElement('p');p.textContent=String(c.text||'').slice(0,1000);
-  li.append(name,time,p);
+  details.append(name,time);profile.append(avatar,details);li.append(profile,p);
   if(user&&c.uid===user.uid){
    const remove=document.createElement('button');remove.className='secondary';remove.type='button';remove.textContent='Eliminar mi comentario';
    remove.onclick=async()=>{if(!confirm('¿Eliminar tu comentario?'))return;remove.disabled=true;try{await fs.deleteDoc(row.ref)}catch{status.textContent='No fue posible eliminar el comentario.'}finally{remove.disabled=false}};
@@ -58,8 +64,8 @@ function display(rows){
 mod.onAuthStateChanged(auth,person=>{
  user=person;
  login.hidden=!!person;editor.hidden=!person;signout.hidden=!person;
- if(person){status.textContent='Participas como '+(person.displayName||'usuario autenticado')+'. Los comentarios son públicos.';}
- else status.textContent='Inicia sesión con Google o Facebook para comentar. Tu comentario y nombre serán públicos.';
+ if(person){status.textContent='Participas como '+(person.displayName||'usuario autenticado')+'. Tu nombre, foto de perfil y comentarios son públicos.';}
+ else status.textContent='Inicia sesión con Google o Facebook para comentar. Tu comentario, nombre y foto de perfil de Google serán públicos.';
  if(unsubscribe){unsubscribe();unsubscribe=null;}
  const q=fs.query(collection,fs.orderBy('createdAt','desc'),fs.limit(50));
  unsubscribe=fs.onSnapshot(q,snapshot=>display(snapshot.docs),error=>{status.textContent='No se pudieron cargar los comentarios ('+(error.code||'error')+'). Revisa las reglas de Firestore.';});
@@ -84,7 +90,7 @@ send.onclick=async()=>{
  if(!user||text.length<2||text.length>1000){status.textContent='Escribe un comentario de 2 a 1000 caracteres.';return;}
  send.disabled=true;
  try{
-  await fs.addDoc(collection,{uid:user.uid,name:(user.displayName||'Lector').slice(0,80),text,createdAt:fs.serverTimestamp()});
+  await fs.addDoc(collection,{uid:user.uid,name:(user.displayName||'Lector').slice(0,80),photoURL:(user.photoURL||'').slice(0,1500),text,createdAt:fs.serverTimestamp()});
   textarea.value='';status.textContent='Comentario publicado correctamente.';
  }catch(error){console.error('Error al publicar comentario:',error);status.textContent='No se pudo publicar ('+(error.code||'error desconocido')+'). '+(error.code==='permission-denied'?'La base de datos rechazó el permiso; vuelve a iniciar sesión e inténtalo.':'Comprueba tu conexión e inténtalo de nuevo.');}
  finally{send.disabled=false;}
