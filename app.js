@@ -29,17 +29,21 @@ const leadStory={
 };
 function renderLeadStory(items){
  if(!leadStory.title)return;
- const now=Date.now(),freshAfter=now-72*60*60*1000;
- const newest=(Array.isArray(items)?items:[]).filter(a=>{
+ const now=Date.now();
+ const candidates=(Array.isArray(items)?items:[]).filter(a=>{
   const ts=Date.parse(a.published_at||'');
-  return validLink(a.url)&&Number.isFinite(ts)&&ts>=freshAfter&&ts<=now+15*60*1000;
- }).sort((a,b)=>{
- const score=x=>{const age=(now-Date.parse(x.published_at))/3600000;const title=String(x.title||'').toLocaleLowerCase('es-MX');const important=/alerta|urgente|sismo|terremoto|inundaci[oó]n|incendio|explosi[oó]n|desaparecid|emergencia|evacuaci[oó]n|cierre|suspensi[oó]n|accidente|metro|bloqueo|manifestaci[oó]n|viral|tendencia|hist[oó]rico|protecci[oó]n civil/.test(title)?35:0;return important+Math.max(0,72-age)*1.4;};
- const diff=score(b)-score(a);return diff||Date.parse(b.published_at)-Date.parse(a.published_at);
- })[0];
+  return validLink(a.url)&&Number.isFinite(ts)&&ts<=now+15*60*1000;
+ });
+ // Se elige una portada distinta en cada visita, evitando repetir la anterior si hay opciones.
+ const lastKey='cdmx-last-cover';
+ let previous='';try{previous=localStorage.getItem(lastKey)||''}catch(e){}
+ const pool=candidates.length>1?candidates.filter(a=>a.url!==previous):candidates;
+ const random=pool.length?(crypto?.getRandomValues?crypto.getRandomValues(new Uint32Array(1))[0]/4294967296:Math.random()):0;
+ const newest=pool.length?pool[Math.floor(random*pool.length)]:null;
+ if(newest){try{localStorage.setItem(lastKey,newest.url)}catch(e){}}
  if(!newest){
-  leadStory.kicker.textContent='SIN NOTICIA PRINCIPAL RECIENTE';
-  leadStory.title.textContent='No hay titulares recientes disponibles para destacar';
+  leadStory.kicker.textContent='SIN NOTICIAS PUBLICADAS DISPONIBLES';
+  leadStory.title.textContent='No hay noticias publicadas disponibles para destacar';
   leadStory.summary.textContent='El recopilador todavía no proporciona una noticia con fecha reciente. Consulta los reportes anteriores sin confundirlos con noticias de hoy.';
   leadStory.meta.textContent='No se mostrará como actual ninguna noticia antigua.';
   leadStory.link.href='/reportes/';
@@ -47,7 +51,7 @@ function renderLeadStory(items){
   return;
  }
  leadStory.kicker.textContent=(newest.borough?newest.borough.toLocaleUpperCase('es-MX')+' · ':'')+
-  'TITULAR RECIENTE · '+String(newest.category||'CDMX').toLocaleUpperCase('es-MX');
+  'NOTICIA PUBLICADA · '+String(newest.category||'CDMX').toLocaleUpperCase('es-MX');
  leadStory.title.textContent=newest.title;
  leadStory.summary.textContent=newest.brief?.lead||
   'Titular recopilado de una fuente externa. Consulta la publicación original para verificar los detalles.';
