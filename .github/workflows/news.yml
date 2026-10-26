@@ -22,6 +22,7 @@ on:
       - 'agenda/eventos.json'
       - 'tests/test_monetizacion.py'
       - 'scripts/actualizar_fotos.py'
+      - 'scripts/animales_feed.py'
       - 'tests/test_photos.py'
       - 'tests/test_archive.py'
       - 'tests/test_profiles.py'
