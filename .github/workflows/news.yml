@@ -15,6 +15,11 @@ on:
       - 'scripts/analisis_editorial.py'
       - 'tests/test_editorial.py'
       - 'assets/agenda.js'
+      - 'assets/comments.js'
+      - 'assets/comments-config.js'
+      - 'assets/comments.css'
+      - 'noticias/index.html'
+      - 'firebase/firestore.rules'
       - 'assets/negocios.js'
       - 'assets/herramientas.js'
       - 'assets/calendario-laboral.js'
@@ -64,6 +69,8 @@ jobs:
           node --check assets/portal.js
           node --check assets/clima-ticker.js
           node --check --input-type=module < functions/api/clima.js
+          node --check assets/comments.js
+          node --check assets/comments-config.js
           node --check assets/agenda.js
           node --check assets/negocios.js
           node --check assets/herramientas.js
