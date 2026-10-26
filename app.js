@@ -79,6 +79,17 @@ async function refreshHomepageNews(){
   if(status)status.textContent='No fue posible comprobar noticias nuevas. Consulta el archivo.';
  }finally{newsRefreshInProgress=false}
 }
+function illustratedFallback(a,figure){
+ const category=String(a.category||'CDMX');
+ const scenes={Metro:['#203451','#b3d5ef','🚇'],Movilidad:['#284c57','#bde4e2','🚌'],Seguridad:['#26394f','#b8d2ef','🚓'],Cultura:['#543c61','#efd0ec','🎭'],Gobierno:['#3e4b65','#d6deed','🏛️'],CDMX:['#3b435f','#f6c4da','🏙️']};
+ const [dark,light,icon]=scenes[category]||scenes.CDMX;
+ const svg='<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500"><defs><linearGradient id="g" x2="1" y2="1"><stop stop-color="'+dark+'"/><stop offset="1" stop-color="'+light+'"/></linearGradient></defs><rect width="800" height="500" fill="url(#g)"/><circle cx="650" cy="90" r="105" fill="#fff" opacity=".15"/><path d="M0 410 L120 300 210 350 330 220 440 320 560 240 680 320 800 250 V500 H0Z" fill="#fff" opacity=".18"/><rect x="52" y="52" width="696" height="396" rx="24" fill="none" stroke="#fff" stroke-opacity=".45" stroke-width="4"/><text x="400" y="245" font-size="115" text-anchor="middle">'+icon+'</text><text x="400" y="325" fill="#fff" font-family="Arial,sans-serif" font-size="36" font-weight="bold" text-anchor="middle">ILUSTRACIÓN DE CONTEXTO</text><text x="400" y="365" fill="#fff" font-family="Arial,sans-serif" font-size="25" text-anchor="middle">'+category.replace(/[&<>"]/g,'')+'</text></svg>';
+ figure.replaceChildren();
+ const img=document.createElement('img');img.src='data:image/svg+xml;charset=utf-8,'+encodeURIComponent(svg);img.alt='Ilustración digital de contexto sobre '+category+'. No es fotografía del acontecimiento.';img.loading='lazy';img.width=800;img.height=500;
+ const label=element('span','visual-label','ILUSTRACIÓN DIGITAL · NO ES FOTO REAL');
+ const credit=element('span','photo-credit-inline','© CDMX AL MEMENTO · Ilustración generada mediante código');
+ figure.append(img,label,credit);
+}
 function articleVisual(a){
  const figure=element('div','news-visual');
  const assignedPhoto=a.photo;
@@ -87,7 +98,7 @@ function articleVisual(a){
   const image=document.createElement('img');
   image.src=assignedPhoto.url;image.loading='lazy';image.decoding='async';image.width=640;image.height=400;
   image.alt='Fotografía real de contexto: '+(assignedPhoto.topic||'Ciudad de México')+'. No representa necesariamente el hecho.';
-  image.onerror=()=>{image.hidden=true;figure.append(element('span','photo-unavailable','Fotografía no disponible'))};
+  image.onerror=()=>{illustratedFallback(a,figure)};
   const label=element('span','visual-label','FOTOGRAFÍA REAL DE CONTEXTO');
   const credit=element('a','photo-credit-inline','© '+(assignedPhoto.author||'Wikimedia Commons')+' · '+(assignedPhoto.license||'Licencia en Commons'));
   if(/^https:\/\/commons\.wikimedia\.org\/wiki\/File:/.test(assignedPhoto.source||'')){
@@ -97,7 +108,7 @@ function articleVisual(a){
  }
  const first=photoLibrary?.forArticle(a);
  const photo=first?photoLibrary.images[first]:null;
- if(!photo){figure.append(element('span','photo-unavailable','Fotografía no disponible'));return figure}
+ if(!photo){illustratedFallback(a,figure);return figure}
  const image=document.createElement('img');
  image.loading='lazy';image.decoding='async';image.width=640;image.height=400;
  const label=element('span','visual-label','FOTOGRAFÍA DE CONTEXTO');
@@ -119,7 +130,7 @@ function articleVisual(a){
  image.addEventListener('error',()=>{
   const next=photoLibrary.alternatives(a.category,active).find(id=>!attempted.has(id));
   if(next)display(next);
-  else{image.hidden=true;figure.append(element('span','photo-unavailable','Fotografía no disponible'))}
+  else{illustratedFallback(a,figure)}
  });
  display(first);
  figure.append(image,label,credit);
