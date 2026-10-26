@@ -190,7 +190,7 @@
   const all=Object.keys(images),general=groups.CDMX;
   for(const article of waiting){
    const begin=hash(article.title);
-   const available=candidatesForArticle(article.category).concat(general,all.filter(id=>!general.includes(id)));
+   const available=candidatesForArticle(article.category);
    let choice='';
    for(let i=0;i<available.length;i++){
     const id=available[(begin+i)%available.length];
@@ -203,8 +203,8 @@
  }
  function forArticle(article){return selections.get(article.url)||pick(article.category,article.title)}
  function alternatives(category,exclude){
-  const preferred=candidatesForArticle(category).concat(groups.CDMX);
-  return [...new Set(preferred.concat(Object.keys(images)))].filter(id=>id!==exclude);
+  const preferred=candidatesForArticle(category);
+  return [...new Set(preferred)].filter(id=>id!==exclude);
  }
  window.CDMX_FOTOS={images,groups,src,source,pick,addCatalog,addRecentCatalog,candidatesForArticle,prepare,forArticle,alternatives};
 })();
