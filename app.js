@@ -475,6 +475,7 @@ document.querySelectorAll('img[data-fallback-photo]').forEach(img=>{
 function showEmbeddedNews(){
  try{const node=document.getElementById('embedded-news-fallback');const list=JSON.parse(node?.textContent||'[]');if(!Array.isArray(list)||!list.length)return false;applyNewsFeed({articles:list,updated:'Archivo publicado'});return true;}catch(e){return false;}
 }
+showEmbeddedNews();
 Promise.allSettled([
  fetch('/news.json?t='+Date.now()).then(r=>{if(!r.ok)throw Error('news');return r.json()}),
  fetch('/reports.json?t='+Date.now()).then(r=>{if(!r.ok)throw Error('reports');return r.json()}),
