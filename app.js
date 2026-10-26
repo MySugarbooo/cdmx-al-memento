@@ -41,7 +41,7 @@ function drawLeadIllustration(article){
  const svg='<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 390"><defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#24203e"/><stop offset="1" stop-color="#b56b9b"/></linearGradient></defs><rect width="800" height="390" rx="22" fill="url(#bg)"/><circle cx="680" cy="80" r="125" fill="#fff" opacity=".10"/>'+svgParts[theme]+'<rect x="0" y="345" width="800" height="45" fill="#201b34" opacity=".85"/><text x="400" y="373" fill="#fff" font-size="19" font-family="Arial,sans-serif" text-anchor="middle">ILUSTRACIÓN DIGITAL · NO ES FOTO REAL</text></svg>';
  const img=document.createElement('img');img.src='data:image/svg+xml;charset=utf-8,'+encodeURIComponent(svg);img.alt='Ilustración vectorial de contexto para: '+title;img.loading='eager';img.decoding='async';
  const credit=document.createElement('small');credit.textContent='Ilustración original creada con código · CDMX AL MEMENTO';
- target.replaceChildren(img,credit);
+ const link=document.createElement('a');link.href=article.local_url||article.url||'#';link.className='lead-art-click';link.setAttribute('aria-label','Leer noticia: '+title);link.append(img);const badge=document.createElement('span');badge.className='lead-art-badge';badge.textContent='VER NOTICIA ↗';link.append(badge);target.replaceChildren(link,credit);
 }
 function renderLeadStory(items){
  if(!leadStory.title)return;
