@@ -1,10 +1,38 @@
 {
-  "updated": "2026-10-26 05:49 UTC",
+  "updated": "2026-10-26 07:04 UTC",
   "boroughs": [
     {
       "name": "La Magdalena Contreras",
-      "count": 63,
+      "count": 64,
       "articles": [
+        {
+          "title": "Clima en La Magdalena Contreras: lunes 26 de octubre con nubes y ambiente fresco",
+          "description": "El pronóstico recogido por El Heraldo de México se refiere a condiciones meteorológicas en La Magdalena Contreras. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
+          "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPc1FlaWVkSllpSUgtOEFYTk5OR0Z1endoMS03VFExOWpQY1VhbVNFNzBzQXFoOE1USllndGFrdk1nMVRxV1JlaGRtUy0wTEphNFdlMUpBQTVvalRtb0JFSEVnVVJQZ3hCZkxDb244d0dRV21vUlhMaVZDOWQ1dFNBWnRCdXNvSVdZUWFPWHZQSDhMa2FZQktGYjVXMUplbG12T0t6Y203a01MYWp5cWNpZTBFLVpGOUJKc1ZtcDRxSHhWZGZmcU9yc3M0Ukw3OS1fcU0wNU0tVQ?oc=5",
+          "source": "El Heraldo de México",
+          "date": "2026-10-25",
+          "published_at": "2026-10-26T05:00:00Z",
+          "category": "CDMX",
+          "borough": "La Magdalena Contreras",
+          "location": "La Magdalena Contreras (mencionada en el titular)",
+          "local_url": "/noticias/?id=ca906b82c0de7ef3fba6&mes=2026-10",
+          "brief": {
+            "lead": "El pronóstico recogido por El Heraldo de México se refiere a condiciones meteorológicas en La Magdalena Contreras. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_magdalena-contreras",
+            "url": "/assets/alcaldias/magdalena-contreras.jpg",
+            "category": "CDMX",
+            "borough": "La Magdalena Contreras",
+            "topic": "Río y bosque de Los Dinamos, La Magdalena Contreras",
+            "author": "Ananda xd",
+            "license": "CC BY-SA 4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Rio_de_los_Dinamos_en_CDMX.jpg"
+          }
+        },
         {
           "title": "Riña en Fiesta Religiosa Deja Dos Muertos y un Herido en Magdalena Contreras",
           "description": "La información publicada por N+ trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -446,24 +474,6 @@
             "lead": "La información publicada por ContraRéplica trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
-        },
-        {
-          "title": "Niño muere atropellado por camión de bomberos en la Magdalena Contreras, Cdmx",
-          "description": "La información publicada por Quinta Fuerza trata un asunto registrado en la sección de Seguridad del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNZDFQV2EtUmpLR01zTDdqSmVBU2RKTXdEai1WUng1RWVIaUJraWM1VHNWcUszUGdubWxpZ2Q5enhYNHZacXdyeXNBRTJEZkQ2U1JtN2hlWE9xSlNlMDYwQXdzZlA3RC1ERW5IMEVwMGtyOW9lOG0yODR0c0RlRkRQWEpjSFJWTXFSX2M0bUptaDJUTjR1MUk4eQ?oc=5",
-          "source": "Quinta Fuerza",
-          "date": "2026-10-18",
-          "published_at": "2026-10-19T05:09:43Z",
-          "category": "Seguridad",
-          "borough": "La Magdalena Contreras",
-          "location": "La Magdalena Contreras (mencionada en el titular)",
-          "local_url": "/noticias/?id=e8a1473ef5eee2eb7785&mes=2026-10",
-          "brief": {
-            "lead": "La información publicada por Quinta Fuerza trata un asunto registrado en la sección de Seguridad del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
-            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           }
         }
