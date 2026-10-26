@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-26 11:28 UTC",
+  "updated": "2026-10-26 12:54 UTC",
   "boroughs": [
     {
       "name": "La Magdalena Contreras",
@@ -939,8 +939,36 @@
     },
     {
       "name": "Azcapotzalco",
-      "count": 60,
+      "count": 61,
       "articles": [
+        {
+          "title": "La pelea por la candidatura de Morena en Azcapotzalco",
+          "description": "La información publicada por El Universal trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOZTJDQlJMUS1FQkVvRTlZMzdMMWJiSmZwamhpTWpVclhMZ3VpLWF0cXRRSmVjVnE0eXRtSHNjNV9rd2hEeWRWOWVMeEc0RzJLbkhkQ3NUaVprRTcyLWt1Rm5ld0FqQXE2OEh0dHNRdEQtSjRkS2l5dFdGN3lPY0tISF9ITDdZQnVMX0VUSDdEVWFNU3JOcmFJdEY1bFV6ZEZLb3JxZ2J0MGRTQQ?oc=5",
+          "source": "El Universal",
+          "date": "2026-10-26",
+          "published_at": "2026-10-26T10:54:26Z",
+          "category": "CDMX",
+          "borough": "Azcapotzalco",
+          "location": "Azcapotzalco (mencionada en el titular)",
+          "local_url": "/noticias/?id=7009a8215d2a2088a7db&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por El Universal trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_azcapotzalco",
+            "url": "/assets/alcaldias/azcapotzalco.jpg",
+            "category": "CDMX",
+            "borough": "Azcapotzalco",
+            "topic": "Parroquia de Santa Catarina, Azcapotzalco",
+            "author": "Ivan alcantara",
+            "license": "CC BY-SA 3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:PARROQUIA_DE_SANTA_CATARINA_%28AZCAPOTZALCO%29.jpg"
+          }
+        },
         {
           "title": "Azcapotzalco activa operativo de seguridad por Día de Muertos",
           "description": "La información publicada por Sociedad Noticias trata un asunto registrado en la sección de Seguridad del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -1360,24 +1388,6 @@
           "local_url": "/noticias/?id=0e6f4abfbf1fbfb7963b&mes=2026-10",
           "brief": {
             "lead": "La información publicada por La Silla Rota trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
-        },
-        {
-          "title": "Ataque a balazos a empresario chino en Azcapotzalco deja un muerto y un detenido",
-          "description": "La información publicada por Imagen Televisión trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNZ3B6Y1loZEVaVG1RbHFOS3FRU01YZmxzSmhBOFlGMXFiTUFObmxHQ0NfZzVEU1pKQUpuQmVDUnZRaWhKb21wR01BTkFVWmJ4VUhBcG0wcG1vTi1QS1FIajlxSFVCalRyeGVoN0NUcGxWSGRZM0hWYTdQY3B6cnV0ZjJqRkxjcEdQeFV4Y2xYZkQtVTJyUUdlWTJqRllEakFWQS0xQ041NU9mX1B5Tk9COVlOS0JKcUR4MUN2XzJoYnhVYWwyVWdkT3VRcEkydVJh?oc=5",
-          "source": "Imagen Televisión",
-          "date": "2026-10-17",
-          "published_at": "2026-10-17T06:22:51Z",
-          "category": "CDMX",
-          "borough": "Azcapotzalco",
-          "location": "Azcapotzalco (mencionada en el titular)",
-          "local_url": "/noticias/?id=a980ddfc6028bd9554ef&mes=2026-10",
-          "brief": {
-            "lead": "La información publicada por Imagen Televisión trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
@@ -3645,8 +3655,36 @@
     },
     {
       "name": "Iztacalco",
-      "count": 75,
+      "count": 77,
       "articles": [
+        {
+          "title": "Grito de Independencia en Iztacalco costó casi 10 mdp; contrato se adjudicó directamente a apoderado de varias competidoras registradas en la alcaldía",
+          "description": "La información publicada por www.24-horas.mx trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOSnhHMTk2SmliNi1JSzgxT3pzdWFKaEZSMkU4U0JiNHBzQkZfZjRpNm92TUFabHc0aFktWGNMbFRNLWRWNHY1N3JVY001cVdNQnJlQUNtWElERWMtUVM5Wm9faklYOHoyM1ZleHgwOFdLcVY0WllCekpGRlVlTDY4SFQxQTluelJCdlFiZDhaWmxyZXp6Zk96ZDFxY3Q2WG9PeXYtSER4dWFGYVNzNmxJLVNQZHp5MkxfUU5JVFBLbGYtUG1FR1Rz?oc=5",
+          "source": "www.24-horas.mx",
+          "date": "2026-10-26",
+          "published_at": "2026-10-26T11:30:00Z",
+          "category": "CDMX",
+          "borough": "Iztacalco",
+          "location": "Iztacalco (mencionada en el titular)",
+          "local_url": "/noticias/?id=6dd2dbdbbe4eb048d0c8&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por www.24-horas.mx trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_iztacalco",
+            "url": "/assets/alcaldias/iztacalco.jpg",
+            "category": "CDMX",
+            "borough": "Iztacalco",
+            "topic": "Iglesia de San Matías en el antiguo pueblo de Iztacalco",
+            "author": "AlejandroLinaresGarcia",
+            "license": "CC BY-SA 3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:SanMatiasChurchIztacalco02.jpg"
+          }
+        },
         {
           "title": "Alcaldía Iztacalco y Lourdes Paz benefician a más de 4 mil personas con salidas culturales",
           "description": "La información publicada por El Heraldo de México trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -3701,6 +3739,24 @@
             "author": "eurimaco",
             "license": "CC BY-SA 3.0",
             "source": "https://commons.wikimedia.org/wiki/File:D.F._-_panoramio_%289%29.jpg"
+          }
+        },
+        {
+          "title": "Captan robo de motocicleta en Iztacalco; vecinos exigen vigilancia",
+          "description": "La información publicada por Telediario trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQZTBxQ2JxTWZNdFpnbkk1TWhnaFVGSndHbTI0bmV6WXR5LUdycXphNGlGZ1pNaDd1Y0xqM0YwVTlLa3NjQUk4eWRhMjc5RVBDNTlZZjFYSVVIc0V1R3JvVklYa1Bld1JCVDdSTHRkWWNHZmllN0RGeHpkUWs2eGFCVlE0SEJCZ2xCeWlkQjBzbTNwRGFqeUJoeVVmUFRIX1psOWd6Rm1UNXJZQmlMQW15bdIBsAFBVV95cUxOcXNfbjk5RHo3SGZ5MTg0aGg2MUsxRnBpMFFUU2p3UEFCSDRPYTlmUzRpdnJIMnFTOGVxNWRyT3NmQVlIUWpsMXlId2haME0yV1NDR1BydUJuNGgtalpVQTN0ZHlUdzROZ2FxMlRsUXM1aFV0cWNLcDVaOTE1eThIcjRhVmtjVXhScTJuOVdMaHFaU1Ewbnp2YzNNRXVyWkc1SF9DeU9peHlMRkd6dmxncg?oc=5",
+          "source": "Telediario",
+          "date": "2026-10-25",
+          "published_at": "2026-10-25T17:31:13Z",
+          "category": "CDMX",
+          "borough": "Iztacalco",
+          "location": "Iztacalco (mencionada en el titular)",
+          "local_url": "/noticias/?id=107b767aab0cec18993b&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por Telediario trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           }
         },
         {
@@ -4058,42 +4114,6 @@
           "local_url": "/noticias/?id=fa493bf3a3741f50389f&mes=2026-10",
           "brief": {
             "lead": "La información publicada por Diario de México trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
-        },
-        {
-          "title": "Chocan dos unidades del Metrobús en Iztacalco; hay 27 lesionados",
-          "description": "La información publicada por DigitalMex Periodismo confiable trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPZzZzUHBTTDREaVB3OV9PS0I5eE5vWTdDQk96Si1TXzhKVGRWeXVpX241MTBER05BNXJrY1Q3RndFSTlPdmx4VGpEUEgxSm1HR3N3SXNPQkZxY083VmcwbEZxU2hFeEtfdVlibEJ2NTk0cDVhQnl3OVdwS2MzeFZOOWlKdUdrM2s2R3dxNFJiam9MUmhyRWZBMVpyZFJMenZKTHZNUGRiQks4NFg0QnkzSmpGa3lRUQ?oc=5",
-          "source": "DigitalMex Periodismo confiable",
-          "date": "2026-10-21",
-          "published_at": "2026-10-21T20:38:00Z",
-          "category": "CDMX",
-          "borough": "Iztacalco",
-          "location": "Iztacalco (mencionada en el titular)",
-          "local_url": "/noticias/?id=559a17dd4da11737ff56&mes=2026-10",
-          "brief": {
-            "lead": "La información publicada por DigitalMex Periodismo confiable trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
-        },
-        {
-          "title": "Choque de Metrobús en Iztacalco, CdMX deja 27 lesionados",
-          "description": "La información publicada por INFO7 trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPSWwwVXdJWFFWQVJYWTZMVG0tSGRmZlY5eVJLc1RMdnVSaUxCWnM3aXJwN3NlQ2hGOTcyZ2FSYk1SYV9oTGNNQ3JFQTFqallNVG1mSEtySmZ4S0t1RnlnQkpKenhLbW05RUJlVTZCT1dfRzF1Vkk0MjRSd2dweHJPbk1SWjNkeVFrTXRZb09ucjhRUjBmMzgwMzl2d19UZw?oc=5",
-          "source": "INFO7",
-          "date": "2026-10-21",
-          "published_at": "2026-10-21T19:48:00Z",
-          "category": "CDMX",
-          "borough": "Iztacalco",
-          "location": "Iztacalco (mencionada en el titular)",
-          "local_url": "/noticias/?id=8ec5f24dfceff2f7b59d&mes=2026-10",
-          "brief": {
-            "lead": "La información publicada por INFO7 trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
@@ -4551,8 +4571,36 @@
     },
     {
       "name": "Miguel Hidalgo",
-      "count": 67,
+      "count": 68,
       "articles": [
+        {
+          "title": "Detienen a dos hombres con presunta droga en Miguel Hidalgo",
+          "description": "Una nota de Sociedad Noticias comunica un caso relacionado con una detención o una presunta conducta delictiva en Miguel Hidalgo. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOdk8tZVRBWE00TWRDRlI0OGluakc1TG1Rank0VVpjYjRCNkRuN29Yb0VrRzllNWxkWDhWTm96ZGtNdXF1VFFjX0MyUGd3RVlWcjRsaEl4M2RXN1M5NTFqTE5DekJWX1c1aDVfeUktczI4UXZfbDNQRENwdl81a1VhbERqZ0d4dXVGa1JwTUVhSXV0STdlSDI5UTBFVnVnbGlJcWlN?oc=5",
+          "source": "Sociedad Noticias",
+          "date": "2026-10-26",
+          "published_at": "2026-10-26T11:30:00Z",
+          "category": "CDMX",
+          "borough": "Miguel Hidalgo",
+          "location": "Miguel Hidalgo (mencionada en el titular)",
+          "local_url": "/noticias/?id=770fe57ef7b5546e49d1&mes=2026-10",
+          "brief": {
+            "lead": "Una nota de Sociedad Noticias comunica un caso relacionado con una detención o una presunta conducta delictiva en Miguel Hidalgo. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_miguel-hidalgo",
+            "url": "/assets/alcaldias/miguel-hidalgo.jpg",
+            "category": "CDMX",
+            "borough": "Miguel Hidalgo",
+            "topic": "Bosque de Chapultepec, alcaldía Miguel Hidalgo",
+            "author": "ProtoplasmaKid",
+            "license": "CC0",
+            "source": "https://commons.wikimedia.org/wiki/File:Audiorama_de_Chapultepec_1.jpg"
+          }
+        },
         {
           "title": "Clima en Miguel Hidalgo: Lunes 26 de octubre con ambiente fresco y cielo nublado",
           "description": "El pronóstico recogido por El Heraldo de México se refiere a condiciones meteorológicas en Miguel Hidalgo. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
@@ -4976,30 +5024,12 @@
             "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           }
-        },
-        {
-          "title": "Realizan Operativo para Reducir Accidentes a Bordo de Motos en la Miguel Hidalgo",
-          "description": "La información publicada por N+ trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPS25HcVlsdDVuNDBtc0o2NlQzdEhBZjR4a1k2WW1vbkgzVDh5Q1lKdl9wZG1zTHBlOWZhUjV4bkVpWkp3UDJUUlJ4M1NPeHJ2eVlKS21KalhqWjJyZDctbU9LUWp4VGNzVC1WSnBFLWZNc3ZyWlNRQXZHcjk5ejVHbXlKNkhLb1F6RmkyVjl1UURPTi0zS0ROUUg3M1A5TWt5?oc=5",
-          "source": "N+",
-          "date": "2026-10-20",
-          "published_at": "2026-10-20T22:04:24Z",
-          "category": "CDMX",
-          "borough": "Miguel Hidalgo",
-          "location": "Miguel Hidalgo (mencionada en el titular)",
-          "local_url": "/noticias/?id=1ee41750669fd855d712&mes=2026-10",
-          "brief": {
-            "lead": "La información publicada por N+ trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
         }
       ]
     },
     {
       "name": "Milpa Alta",
-      "count": 46,
+      "count": 47,
       "articles": [
         {
           "title": "Desde el Congreso CDMX impulsan continuidad de apoyos para productores de nopal en Milpa Alta",
@@ -5030,6 +5060,24 @@
           "borough": "Milpa Alta",
           "location": "Milpa Alta (mencionada en el titular)",
           "local_url": "/noticias/?id=2a22eee21e4770b98910&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por El Sol de México trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          }
+        },
+        {
+          "title": "Día de Muertos 2026: Tierra de Nahuales se presenta en Milpa Alta",
+          "description": "La información publicada por El Sol de México trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxONVBoN0lvNDlkVmZiNTZRUXFpdTJsc2Q5WHc1ckd0Y0JQVDNSeEZoODlSVGN0NmxDRkR0Zy1FNTEzbHpQQmlkd3VJT2JucFJjRExnUjJNZHp0ckZkbDRtUW9ET3NGU0xqaTdMeHdJNkNpaWtuSmREWUY0RXBxSXJlUXM3eE8xS203YnpnLV9mdW92VzRLWktXamcxWWhOUWk0dWZtcnJjWWhGQk11bDdDb2pESWdmaFpUa3l4bU5DNA?oc=5",
+          "source": "El Sol de México",
+          "date": "2026-10-23",
+          "published_at": "2026-10-23T19:22:59Z",
+          "category": "CDMX",
+          "borough": "Milpa Alta",
+          "location": "Milpa Alta (mencionada en el titular)",
+          "local_url": "/noticias/?id=54e84296831937634927&mes=2026-10",
           "brief": {
             "lead": "La información publicada por El Sol de México trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
@@ -5412,24 +5460,6 @@
             "lead": "De acuerdo con un titular publicado por El Heraldo de México, el tema de actualidad está relacionado con un asunto de interés público relacionado con la Ciudad de México. La atribución corresponde al medio citado, no a una comprobación independiente de nuestra redacción. El encabezado menciona Milpa Alta; esa referencia no demuestra por sí misma dónde ocurrieron todos los hechos.",
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
-        },
-        {
-          "title": "Milpa Alta estrena su primera Utopía con globos aerostáticos, carrusel y carritos chocones",
-          "description": "De acuerdo con un titular publicado por Expansión Política, el tema de actualidad está relacionado con decisiones públicas e instituciones de la capital. La atribución corresponde al medio citado, no a una comprobación independiente de nuestra redacción. El encabezado menciona Milpa Alta; esa referencia no demuestra por sí misma dónde ocurrieron todos los hechos.",
-          "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFAyRmk1M18tejBNYTBCU2d3VWN2Sl9MbGgxVkJqUlp5MHd5Wmhkc1FPYzFMeFhEVDVaekV4OUhEZkxfSDZlRnNnb2JJelVFUkkydVpBR0lrdk5GVElhcGdBTGJCR0l3RENRN281djRRUmlobXktZ2dlb1FGT1REZ9IBfkFVX3lxTFAyRmk1M18tejBNYTBCU2d3VWN2Sl9MbGgxVkJqUlp5MHd5Wmhkc1FPYzFMeFhEVDVaekV4OUhEZkxfSDZlRnNnb2JJelVFUkkydVpBR0lrdk5GVElhcGdBTGJCR0l3RENRN281djRRUmlobXktZ2dlb1FGT1REZw?oc=5",
-          "source": "Expansión Política",
-          "date": "2026-10-11",
-          "published_at": "2026-10-12T04:27:00Z",
-          "category": "Gobierno",
-          "borough": "Milpa Alta",
-          "location": "Milpa Alta (mencionada en el titular)",
-          "local_url": "/noticias/?id=e3d4dcc57e30a3c40906&mes=2026-10",
-          "brief": {
-            "lead": "De acuerdo con un titular publicado por Expansión Política, el tema de actualidad está relacionado con decisiones públicas e instituciones de la capital. La atribución corresponde al medio citado, no a una comprobación independiente de nuestra redacción. El encabezado menciona Milpa Alta; esa referencia no demuestra por sí misma dónde ocurrieron todos los hechos.",
-            "context": "Las decisiones administrativas pueden influir en servicios, trámites y derechos; conviene conocer sus condiciones y a quiénes afectan.",
-            "pending": "Es indispensable consultar los acuerdos, comunicados o documentos oficiales antes de dar una medida por vigente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           }
         }
