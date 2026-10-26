@@ -64,6 +64,7 @@ class TransitionTests(unittest.TestCase):
     def test_generators_preserve_animation(self):
         self.assertIn('page-transitions.js?v=1',read("update_news.py"))
         self.assertIn('page-transitions.js?v=1',read("scripts/generar_guias.py"))
+        self.assertIn('page-transitions.js?v=1',read("scripts/animales_feed.py"))
         self.assertRegex(read("index.html"), r'<script[^>]+src="/app\.js\?v=[^"]+"')
 
 if __name__=="__main__":
