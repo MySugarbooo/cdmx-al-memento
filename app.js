@@ -484,7 +484,7 @@ Promise.allSettled([
 });
 
 // Mientras la portada permanezca abierta, actualizar noticias sin recargar la página.
-setInterval(()=>{if(document.visibilityState==='visible')refreshHomepageNews()},15*60*1000);
+setInterval(()=>{if(document.visibilityState==='visible')refreshHomepageNews()},2*60*60*1000);
 document.addEventListener('visibilitychange',()=>{
  if(document.visibilityState==='visible')refreshHomepageNews();
 });
