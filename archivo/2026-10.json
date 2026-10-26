@@ -1,7 +1,35 @@
 {
   "month": "2026-10",
-  "updated": "2026-10-26 02:38 UTC",
+  "updated": "2026-10-26 02:43 UTC",
   "articles": [
+    {
+      "title": "¿Continuarán las lluvias en CDMX? Conoce el pronóstico del clima para la última semana de octubre",
+      "description": "El pronóstico recogido por Ciudad de México Secreta se refiere a lluvias en la capital. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1vdk9fR1ltRVA5dE9EM1R6MFJ5OWJOWGswWk52MFFrbEFUU09NbTc2VjU3R3hGMmRiWURaYUswUjVxNFZORGctc1djRnduaGtRWjd6NFQ5NTNUMjczODNXODJCSQ?oc=5",
+      "source": "Ciudad de México Secreta",
+      "date": "2026-10-25",
+      "published_at": "2026-10-26T02:35:08Z",
+      "category": "CDMX",
+      "borough": "",
+      "location": "Ciudad de México (sin alcaldía identificada)",
+      "local_url": "/noticias/?id=76c57342fd64ff5101fb&mes=2026-10",
+      "brief": {
+        "lead": "El pronóstico recogido por Ciudad de México Secreta se refiere a lluvias en la capital. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
+        "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+        "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "archivo_cdmx_003",
+        "url": "/assets/fotos/archivo_cdmx_003.jpg",
+        "category": "CDMX",
+        "borough": "",
+        "topic": "D.F. - panoramio (7)",
+        "author": "eurimaco",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:D.F._-_panoramio_%287%29.jpg"
+      }
+    },
     {
       "title": "Kygo en México 2027: fechas, preventa y boletos para sus conciertos en CDMX y Guadalajara",
       "description": "El medio Infobae presenta conciertos o actividades musicales anunciadas en Ciudad de México. La programación, disponibilidad y costos pueden cambiar; comprueba los datos del organizador.",
@@ -560,6 +588,34 @@
         "author": "Octavio Alonso Maya Castro",
         "license": "CC BY-SA 3.0",
         "source": "https://commons.wikimedia.org/wiki/File:El_Paraguas_%28126505121%29.jpeg"
+      }
+    },
+    {
+      "title": "Alcaldesa de Xalapa pide paciencia por obras viales y tráfico",
+      "description": "La información publicada por El Sol de México trata un asunto registrado en la sección de Movilidad del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQLVlTQXpPLV9uc0JxY2FtYXVXa1g2RjNpdUdyNkFKeHFlNzRxOXN6cDFiNE4xVnBoUjdxa1ZQeFF6VDFSMWtxMWd1bzdhU1pDZVRKY1phOElZWktSaHpwQVhGcnFVOEdzbm9aTjlWWVVJRnVPdGFNSHo2cTI2NGluS0JSVGRuNFI2SlByNEtTYVVHTVlfMzZmNDBQT1dmWTBQYXZBa19kU0lfM2QybVBFVEQ0OXF0OVV2bE45bEo3TkJITHM?oc=5",
+      "source": "El Sol de México",
+      "date": "2026-10-25",
+      "published_at": "2026-10-25T23:57:05Z",
+      "category": "Movilidad",
+      "borough": "",
+      "location": "Ubicación no indicada por el titular",
+      "local_url": "/noticias/?id=5236a366010dce9d2688&mes=2026-10",
+      "brief": {
+        "lead": "La información publicada por El Sol de México trata un asunto registrado en la sección de Movilidad del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+        "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
+        "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "archivo_movilidad_002",
+        "url": "/assets/fotos/archivo_movilidad_002.jpg",
+        "category": "Movilidad",
+        "borough": "",
+        "topic": "Metrobús Línea 4 Centro Histórico",
+        "author": "ProtoplasmaKid",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Metrob%C3%BAs_L%C3%ADnea_4_Centro_Hist%C3%B3rico.jpg"
       }
     },
     {
