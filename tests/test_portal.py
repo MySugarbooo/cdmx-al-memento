@@ -42,7 +42,10 @@ class PortalTests(unittest.TestCase):
         self.assertRegex(home, r'<script[^>]+src="/app\.js\?v=[^"]+"[^>]*>')
         self.assertIn("function renderLeadStory(items)", script)
         self.assertIn("renderLeadStory(articles)", script)
-        self.assertIn("freshAfter=now-72*60*60*1000", script)
+        # La portada actual prioriza noticias de hoy y ayer en hora de México.
+        self.assertIn("const today=mxDay(new Date(now))", script)
+        self.assertIn("const todayNews=fromDay(today),yesterdayNews=fromDay(yesterday)", script)
+        self.assertIn("const candidates=todayNews.length?todayNews:yesterdayNews.length?yesterdayNews:published", script)
         self.assertIn("function applyNewsFeed(feed)", script)
         self.assertIn("refreshHomepageNews()", script)
         self.assertIn("document.visibilityState==='visible'", script)
