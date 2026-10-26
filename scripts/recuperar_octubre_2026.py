@@ -8,6 +8,8 @@ from __future__ import annotations
 import concurrent.futures
 import json
 import re
+import sys
+from pathlib import Path
 import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
@@ -16,6 +18,8 @@ from datetime import date, datetime, timedelta, timezone
 from email.utils import parsedate_to_datetime
 from html import escape
 
+# Ejecutado como script desde scripts/: incluir la raíz del repositorio.
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 import update_news as news
 
 START = date(2026, 10, 16)
