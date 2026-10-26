@@ -27,6 +27,8 @@ on:
       - 'assets/explora-list.js'
       - 'agenda/eventos.json'
       - 'tests/test_monetizacion.py'
+      - 'tests/test_portal.py'
+      - 'tests/test_profiles.py'
       - 'scripts/actualizar_fotos.py'
       - 'scripts/animales_feed.py'
       - 'scripts/recuperar_octubre_2026.py'
