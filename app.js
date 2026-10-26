@@ -31,12 +31,16 @@ function drawLeadIllustration(article){
  const target=document.getElementById('lead-story-art');if(!target)return;
  if(!article){target.replaceChildren();return;}
  const title=String(article.title||'');const lower=title.toLocaleLowerCase('es-MX');
- const symbol=/metro|estaci[oó]n|tren/.test(lower)?'🚇':/gasolina|combustible|precio/.test(lower)?'⛽':/seguridad|polic[ií]a|operativo/.test(lower)?'🚓':/lluvia|inundaci[oó]n|clima/.test(lower)?'🌧️':/escuela|educaci[oó]n/.test(lower)?'🏫':/salud|hospital/.test(lower)?'🏥':/cultura|museo|festival/.test(lower)?'🎨':'🏙️';
- const escape=t=>String(t).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
- const label=escape(title.length>62?title.slice(0,59)+'…':title);
- const svg='<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 390" role="img"><defs><linearGradient id="g" x2="1" y2="1"><stop stop-color="#25233f"/><stop offset="1" stop-color="#e3a5cc"/></linearGradient></defs><rect width="800" height="390" rx="20" fill="url(#g)"/><circle cx="620" cy="80" r="110" fill="#fff" opacity=".13"/><path d="M0 320L100 250 200 290 320 180 450 270 580 200 800 300V390H0Z" fill="#fff" opacity=".15"/><text x="400" y="185" font-size="115" text-anchor="middle">'+symbol+'</text><text x="400" y="265" fill="white" font-size="24" font-family="Arial" font-weight="bold" text-anchor="middle">ILUSTRACIÓN DIGITAL</text><text x="400" y="310" fill="white" font-size="17" font-family="Arial" text-anchor="middle">Imagen de referencia · No representa los hechos</text></svg>';
- const img=document.createElement('img');img.src='data:image/svg+xml;charset=utf-8,'+encodeURIComponent(svg);img.alt='Ilustración digital no fotográfica para la noticia: '+title;img.loading='eager';
- const credit=document.createElement('small');credit.textContent='Ilustración vectorial generada por código · CDMX AL MEMENTO';
+ const theme=/metro|tren|estaci[oó]n/.test(lower)?'metro':/gasolina|combustible/.test(lower)?'gas':/seguridad|polic[ií]a|operativo|accidente/.test(lower)?'security':/lluvia|clima|inundaci[oó]n/.test(lower)?'rain':'city';
+ const svgParts={
+ city:'<path d="M65 290V170h90v120M190 290V95h120v195M340 290V145h110v145M490 290V80h120v210M645 290V170h85v120" fill="#403455" stroke="#fff" stroke-width="8"/><path d="M220 120h55m-55 35h55m-55 35h55m-55 35h55m295-110h60m-60 40h60m-60 40h60" stroke="#ffdbed" stroke-width="14"/>',
+ metro:'<rect x="180" y="85" width="440" height="220" rx="45" fill="#493a62" stroke="white" stroke-width="12"/><rect x="230" y="125" width="340" height="90" rx="14" fill="#b8e5ee"/><circle cx="270" cy="265" r="19" fill="#ffd3e9"/><circle cx="530" cy="265" r="19" fill="#ffd3e9"/><path d="M210 345h380" stroke="#fff" stroke-width="12"/>',
+ gas:'<rect x="230" y="95" width="225" height="230" rx="18" fill="#493a62" stroke="#fff" stroke-width="10"/><rect x="260" y="130" width="165" height="90" rx="10" fill="#b8e5ee"/><path d="M455 145q110 0 100 95v45" fill="none" stroke="#fff" stroke-width="14"/><circle cx="550" cy="305" r="18" fill="#ffd3e9"/>',
+ security:'<path d="M400 65l175 65v110q-20 90-175 135-155-45-175-135V130z" fill="#493a62" stroke="#fff" stroke-width="12"/><path d="M400 140v155m-75-80h150" stroke="#ffd3e9" stroke-width="22"/>',
+ rain:'<path d="M260 215q-80-65 0-120 60-50 120 0 90-60 145 30 95 15 40 90z" fill="#fff" opacity=".8"/><path d="M290 260l-25 55m125-55l-25 55m125-55l-25 55" stroke="#b8e5ee" stroke-width="20" stroke-linecap="round"/>'};
+ const svg='<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 390"><defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#24203e"/><stop offset="1" stop-color="#b56b9b"/></linearGradient></defs><rect width="800" height="390" rx="22" fill="url(#bg)"/><circle cx="680" cy="80" r="125" fill="#fff" opacity=".10"/>'+svgParts[theme]+'<rect x="0" y="345" width="800" height="45" fill="#201b34" opacity=".85"/><text x="400" y="373" fill="#fff" font-size="19" font-family="Arial,sans-serif" text-anchor="middle">ILUSTRACIÓN DIGITAL · NO ES FOTO REAL</text></svg>';
+ const img=document.createElement('img');img.src='data:image/svg+xml;charset=utf-8,'+encodeURIComponent(svg);img.alt='Ilustración vectorial de contexto para: '+title;img.loading='eager';img.decoding='async';
+ const credit=document.createElement('small');credit.textContent='Ilustración original creada con código · CDMX AL MEMENTO';
  target.replaceChildren(img,credit);
 }
 function renderLeadStory(items){
