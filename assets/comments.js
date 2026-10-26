@@ -53,7 +53,7 @@ function display(rows){
   time.textContent=stamp?new Intl.DateTimeFormat('es-MX',{dateStyle:'medium',timeStyle:'short',timeZone:'America/Mexico_City'}).format(stamp):'Fecha pendiente';
   const p=document.createElement('p');p.textContent=String(c.text||'').slice(0,1000);
   details.append(name,time);profile.append(avatar,details);li.append(profile,p);
-  if(user){const mention=document.createElement('button');mention.type='button';mention.className='community-mention';mention.textContent='↩ Responder';mention.setAttribute('aria-label','Mencionar a '+name.textContent+' en tu respuesta');mention.onclick=()=>{const mentionName=name.textContent.replace(/\\s+/g,' ').trim();textarea.value=(textarea.value?textarea.value.trimEnd()+'\\n':'')+'@'+mentionName+' ';textarea.focus();textarea.setSelectionRange(textarea.value.length,textarea.value.length);editor.scrollIntoView({block:'nearest',behavior:'smooth'});};li.append(mention)}
+  if(user){const mention=document.createElement('button');mention.type='button';mention.className='community-mention';mention.textContent='↩ Responder';mention.setAttribute('aria-label','Mencionar a '+name.textContent+' en tu respuesta');mention.onclick=()=>{const mentionName=name.textContent.replace(/\s+/g,' ').trim();textarea.value=(textarea.value?textarea.value.trimEnd()+'\n':'')+'@'+mentionName+' ';textarea.focus();textarea.setSelectionRange(textarea.value.length,textarea.value.length);editor.scrollIntoView({block:'nearest',behavior:'smooth'});};li.append(mention)}
 
   if(user&&c.uid===user.uid){
    const remove=document.createElement('button');remove.className='secondary';remove.type='button';remove.textContent='Eliminar mi comentario';
