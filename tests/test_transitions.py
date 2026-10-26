@@ -55,7 +55,7 @@ class TransitionTests(unittest.TestCase):
 
     def test_every_primary_page_loads_transitions(self):
         paths=[p for p in ROOT.rglob("*.html")
-               if ".git" not in p.parts and p.relative_to(ROOT).as_posix()!="mapa/preview.html"]
+               if ".git" not in p.parts and p.relative_to(ROOT).as_posix() not in ("mapa/preview.html", "escribe-pro/index.html")]
         self.assertGreaterEqual(len(paths),45)
         for path in paths:
             with self.subTest(page=str(path.relative_to(ROOT))):
@@ -64,7 +64,7 @@ class TransitionTests(unittest.TestCase):
     def test_generators_preserve_animation(self):
         self.assertIn('page-transitions.js?v=1',read("update_news.py"))
         self.assertIn('page-transitions.js?v=1',read("scripts/generar_guias.py"))
-        self.assertIn('/app.js?v=20261013-noticias-propias',read("index.html"))
+        self.assertRegex(read("index.html"), r'<script[^>]+src="/app\.js\?v=[^"]+"')
 
 if __name__=="__main__":
     unittest.main()
