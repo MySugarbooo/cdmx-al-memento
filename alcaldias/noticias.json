@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-26 22:48 UTC",
+  "updated": "2026-10-26 23:43 UTC",
   "boroughs": [
     {
       "name": "La Magdalena Contreras",
@@ -3715,8 +3715,36 @@
     },
     {
       "name": "Iztacalco",
-      "count": 77,
+      "count": 78,
       "articles": [
+        {
+          "title": "Iztacalco retira ramas en riesgo de caer en jardín de niños",
+          "description": "La información publicada por El Momento Nacional trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQWk5EcTNCNnZjUDJ0NEI4UHBISVlNUmN3NmRYOE9vbWxHVWUyakJqOUl2eGg3dW5wVWZDNVFfZG1Uekx5R01OMlVXMXg2UERJWXNDcWRTeWZGUkNVTDhlZDdLR3oxc1V5RTFOOTdHaWtHcEMtSy1oQkhVRnYzeUxyZThLVjBWdl9W?oc=5",
+          "source": "El Momento Nacional",
+          "date": "2026-10-26",
+          "published_at": "2026-10-26T22:53:08Z",
+          "category": "CDMX",
+          "borough": "Iztacalco",
+          "location": "Iztacalco (mencionada en el titular)",
+          "local_url": "/noticias/?id=0acb4668d276fbeab17d&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por El Momento Nacional trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_iztacalco",
+            "url": "/assets/alcaldias/iztacalco.jpg",
+            "category": "CDMX",
+            "borough": "Iztacalco",
+            "topic": "Iglesia de San Matías en el antiguo pueblo de Iztacalco",
+            "author": "AlejandroLinaresGarcia",
+            "license": "CC BY-SA 3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:SanMatiasChurchIztacalco02.jpg"
+          }
+        },
         {
           "title": "Grito de Independencia en Iztacalco costó casi 10 mdp; contrato se adjudicó directamente a apoderado de varias competidoras registradas en la alcaldía",
           "description": "La información publicada por www.24-horas.mx trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -4156,24 +4184,6 @@
           "local_url": "/noticias/?id=ba46ce26c5af90f8bb3d&mes=2026-10",
           "brief": {
             "lead": "La información publicada por El Heraldo de México trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
-        },
-        {
-          "title": "Accidente de Metrobús en CDMX hoy: Unidades chocan en Iztacalco y dejan al menos 24 heridos",
-          "description": "La información publicada por Diario de México trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNQlpYT01sdmhaWU5Jb1V2cWxqQ2hlTlU5X1hMNDc0MTNpQW1RRXZ4V2dCenpzM3NLM25meFhxcjVLTFh3bW0yNy15THdpSDJoWV9UWnlSYTdQR0pPNGVoUDV0OXQ4U1A5SG5qTmFTTXAtaUs0RlZQNzEtcHk1NHowOGJBZGliNHFoTmFpVzMxZmxPYjlMSTZMeXNNa2gwaDVMaXVSbU1ockd1d3NQTUZ1MlJmNU9GWkg3dGRDRXh0MEXSAcYBQVVfeXFMTk5JSzdXZHVPZ0wxdi1OUWx1OURrZTF6c29wQ01fVnlaSmppeDhUOVVHNERmbEpaS0lfcV9jUXF3bmY4SS12MUhTX0NHdUhHckktNTFIUE9xdWMzOHR3WloyVEVEVHZSNnZRTzBfemJXeVdlU1NKZWt1QmdoODdoZmtqZzNZX1RDTDdnZXRXMDM0YXdFYlF2bUJJcC1vbm1EMHBEM0JtUU1mSHJ6eFBFTWdfaXZzV3ZJWkZNS0tuSzgwcnNFSzZB?oc=5",
-          "source": "Diario de México",
-          "date": "2026-10-21",
-          "published_at": "2026-10-21T21:29:00Z",
-          "category": "CDMX",
-          "borough": "Iztacalco",
-          "location": "Iztacalco (mencionada en el titular)",
-          "local_url": "/noticias/?id=fa493bf3a3741f50389f&mes=2026-10",
-          "brief": {
-            "lead": "La información publicada por Diario de México trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
@@ -4631,7 +4641,7 @@
     },
     {
       "name": "Miguel Hidalgo",
-      "count": 70,
+      "count": 71,
       "articles": [
         {
           "title": "Alcaldía Miguel Hidalgo desplegará operativos por Día de Muertos y Fórmula 1",
@@ -4659,6 +4669,24 @@
             "author": "ProtoplasmaKid",
             "license": "CC0",
             "source": "https://commons.wikimedia.org/wiki/File:Audiorama_de_Chapultepec_1.jpg"
+          }
+        },
+        {
+          "title": "Víctor Hugo Romo alista ejército guinda en Miguel Hidalgo",
+          "description": "La información publicada por infopoder trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOYUlTUjBYdHZPMmVQTjJYWUd3SFdsek5MRFRfRjV6Wm9JbUZfVXQ2ZGdOU1d3VXdiWWhkN2pFWDN1WDdfN2ZDemZramFLTUI2Y0NyTjVUaGdFbk5ZSHV0OWpXbGMzWjkteGR2NVBDSG5QZHl1NUFpa1EzV0g0Q2hURm9GMVgtVFR2bG1j?oc=5",
+          "source": "infopoder",
+          "date": "2026-10-26",
+          "published_at": "2026-10-26T17:17:49Z",
+          "category": "CDMX",
+          "borough": "Miguel Hidalgo",
+          "location": "Miguel Hidalgo (mencionada en el titular)",
+          "local_url": "/noticias/?id=70e63180600c1ec3d1e1&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por infopoder trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           }
         },
         {
@@ -5072,24 +5100,6 @@
           "local_url": "/noticias/?id=2349ca0cfbd0c0f3509f&mes=2026-10",
           "brief": {
             "lead": "El pronóstico recogido por El Heraldo de México se refiere a lluvias ligeras en Miguel Hidalgo. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
-        },
-        {
-          "title": "Pronóstico climático en Miguel Hidalgo: miércoles 21 de octubre con ambiente fresco y nubes",
-          "description": "La información publicada por El Heraldo de México trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQQ191LV9BN2QweTR4eUN2T0dRS1g4WHZBczhFWFJ6Smp2blpQdXJjeGhQVTI5NE13SW1PSlVYOUZJOC1HMmEyb2l6RUJ5V190MXhhNkd6dmtid25odDhBVUJBWEVaTzZKRVAwaThnVVI5RTBSTWVZVnExSG1sWDZIUGpxRFFjdmJKazZleGQzaUZFYUNfcTVTbWZVZUdIbjRXTlI0YXZyR05kODVtNThuT0xlUTZJRDdtRThLcjVHR0pTckZOOTFGMGptTTUxTkhCbXpJcHU4WnN5Mk9XVzBJWjVyQ0NuUQ?oc=5",
-          "source": "El Heraldo de México",
-          "date": "2026-10-20",
-          "published_at": "2026-10-21T05:00:00Z",
-          "category": "CDMX",
-          "borough": "Miguel Hidalgo",
-          "location": "Miguel Hidalgo (mencionada en el titular)",
-          "local_url": "/noticias/?id=cc2336704a5048ccdea7&mes=2026-10",
-          "brief": {
-            "lead": "La información publicada por El Heraldo de México trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
@@ -5537,8 +5547,36 @@
     },
     {
       "name": "Tláhuac",
-      "count": 73,
+      "count": 74,
       "articles": [
+        {
+          "title": "¡De Tláhuac para el mundo! Calaveras Gigantes celebran 15 años con catrinas y dioses prehispánicos",
+          "description": "La información publicada por Chilango trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNU0NxSE04dDJHeGNOYkJkTks2UWdhM0NSZU5ESWhBZ3FRb0FxcE12ZzBTclFYZEJUeVI3N0hlcDJJVkMtWmw4bHFtYzM1X0dXMU1XaDVfN1N6QVhHVWV0SGF1ejJTeEUyRjB0a25tdjdKQU9GQ2loNWYyOTROX1NzeUpBVmwzZE9MWC1SNldqNHJRckJ2XzNJNDdFbjZQdWlRQ3lGTmpB?oc=5",
+          "source": "Chilango",
+          "date": "2026-10-26",
+          "published_at": "2026-10-26T23:05:48Z",
+          "category": "CDMX",
+          "borough": "Tláhuac",
+          "location": "Tláhuac (mencionada en el titular)",
+          "local_url": "/noticias/?id=248517012fc5e6a75233&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por Chilango trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_tlahuac",
+            "url": "/assets/alcaldias/tlahuac.jpg",
+            "category": "CDMX",
+            "borough": "Tláhuac",
+            "topic": "Plaza central de San Pedro Tláhuac",
+            "author": "Yavidaxiu",
+            "license": "CC BY 3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Tl%C3%A1huac-Plaza_central.JPG"
+          }
+        },
         {
           "title": "Talleres de maquillaje, máscaras y paseo de perritos disfrazados: así es el Bazar Paseo de las Ánimas en Tláhuac por Día de Muertos",
           "description": "La información publicada por Infobae trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -5982,31 +6020,41 @@
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           }
-        },
-        {
-          "title": "Tláhuac refuerza operativo de seguridad en Mixquic y Tlaltenco",
-          "description": "La información publicada por Diario CDMX trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQZWUxLWI0bzhKYS1wb2s3R1NnbVViVlBLTVYwUTZER0tpSW1RWGxzU0UxSm5qTnh5QlpHTjh5azJOVnBYdUJyME9NNXRLa0dtTVBuaXdmZ19ZdDhENk9xbjhCUzFPbmlOUXhyeG5LVGdNZVpNTnlVTzlVaGdsZXVXRWlhOG1XMHllUTJ4X0dsaWFZaGfSAZgBQVVfeXFMUG5WX0pBQ0l3ZjZDYnBfWVh2MFJjSG00N2Vrb3RQYXUxZU1kRmE1TlMyaFVjN2RsNHZnd3hYVGdTT19oWGxHQVNUelJwWWl4bFNhSkhqMURkMTh1OXUyZmFpdnRYeGpRMmdzZDNoLTY3cUxzbFFqQlNJRjF4cUNiVFJkZl93TGttUkhLLU1KOHpud1JEcmttd2c?oc=5",
-          "source": "Diario CDMX",
-          "date": "2026-10-19",
-          "published_at": "2026-10-19T19:10:12Z",
-          "category": "CDMX",
-          "borough": "Tláhuac",
-          "location": "Tláhuac (mencionada en el titular)",
-          "local_url": "/noticias/?id=a9e4f45ab511fdfba30a&mes=2026-10",
-          "brief": {
-            "lead": "La información publicada por Diario CDMX trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
         }
       ]
     },
     {
       "name": "Tlalpan",
-      "count": 117,
+      "count": 118,
       "articles": [
+        {
+          "title": "Tlalpan reduce la percepción de inseguridad a 50.7%",
+          "description": "La información publicada por El Universal trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOTzA5N3I5QlVDZGNkUHFwZ1AzdERtLWdELUhQaU9PUGg3WUIxZEhNREc4bHFkRHV5VnU2M1dOdnRsOHkzemZveW5VZllUTWU3UWZVNk1OWXpTSk43S0p4azJPMG8wMW1EWWxTVVNoTE43SHQxRno2VUlCT3M0WXVYOGFfTVJTdzhaMEhLYmJXR2tXY0pJTm1VN0FOSVVBMFpqcDJfYUhSQm9qSWRYZnctZDA5c05QX2syOXNCRmJyZ0NUSkJKWlAtU3lob3VxRnVUSnJMMTR0TdIB6wFBVV95cUxNUTdsV3RsNlFHU0JueWZUQnQ0LXZER1FhLXptQXNaWEtnQ0ZjQmNjcDktN0NpRU9jTGZtdVEzSlg0QlVLbk15QzVMeDZZMnF4UndnMGF2VkFiSDBiN1V2MEExeS1jd1Y4NmtMWTdaVkQzODN4bURQNlNNSERUem1va3JWODFDMElRZVBZVnA4bGNPVWx1Um9NdDZnS3JESUhOVDFMUHJ1YWR6a3lkaU1ZalllYUFFWklraHVvcHI0THA4ZmVQTXZyb1BiQU1FX1FmUnAxVzd2YVM3OUFYUkFGUWVCR0E3WXhkcDYw?oc=5",
+          "source": "El Universal",
+          "date": "2026-10-26",
+          "published_at": "2026-10-26T23:17:25Z",
+          "category": "CDMX",
+          "borough": "Tlalpan",
+          "location": "Tlalpan (mencionada en el titular)",
+          "local_url": "/noticias/?id=34de485193d846ec6fa2&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por El Universal trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_tlalpan",
+            "url": "/assets/alcaldias/tlalpan.jpg",
+            "category": "CDMX",
+            "borough": "Tlalpan",
+            "topic": "Quiosco de la plaza principal de Tlalpan",
+            "author": "farid estrada",
+            "license": "CC BY-SA 3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Kiosko_plaza_de_la_constitucion%2C_tlapan.JPG"
+          }
+        },
         {
           "title": "Se desploma percepción de inseguridad en Tlalpan; registra la mayor baja en la CDMX con 13.7 puntos menos: INEGI",
           "description": "La información publicada por Excélsior trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -6486,24 +6534,6 @@
           "local_url": "/noticias/?id=9b18ff5f8c93566cd020&mes=2026-10",
           "brief": {
             "lead": "El pronóstico recogido por El Heraldo de México se refiere a lluvias ligeras en Tlalpan. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
-        },
-        {
-          "title": "La Calzada Flotante de Tlalpan será sede de la Caminata al Mictlán",
-          "description": "La información publicada por Descubre México trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNeGxYQ19aSll0d3Q5UHA2Sy10eDhJX0NHWG5veWx0WXNIMlZuMlBiZTdyZWJtdlI5bVpWM1NJc2VtV3NnX0FLZ3JteHFoREx6c2llb0thMENKSjBaREtSOE9qVkRTdEFYQmVIdHBfMmVOXzFwUVQ1MFhreWpmYXJNcmU5a0xaMEVjbGUtOS1xOWVqNVo5azhZZWxfZ3c?oc=5",
-          "source": "Descubre México",
-          "date": "2026-10-21",
-          "published_at": "2026-10-22T03:23:38Z",
-          "category": "CDMX",
-          "borough": "Tlalpan",
-          "location": "Tlalpan (mencionada en el titular)",
-          "local_url": "/noticias/?id=6eaf1d855be80ef27d04&mes=2026-10",
-          "brief": {
-            "lead": "La información publicada por Descubre México trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
