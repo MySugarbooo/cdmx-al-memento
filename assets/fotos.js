@@ -177,7 +177,7 @@
   // Primera vuelta: reservar una fotografía local distinta de la categoría correspondiente.
   for(const article of articles){
    const candidates=candidatesForArticle(article.category);
-   const start=0;
+   const start=hash(article.url)%candidates.length;
    let choice='';
    for(let i=0;i<candidates.length;i++){
     const id=candidates[(start+i)%candidates.length];
