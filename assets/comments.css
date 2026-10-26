@@ -11,3 +11,18 @@
 .cdmx-comments-list time{font-size:.83rem;color:#c7bec8;display:block}
 .cdmx-comments-list p{white-space:pre-wrap}
 .cdmx-comments-status{color:#ffcadf}
+
+/* Tarjetas sociales para Mi comunidad */
+.cdmx-comments{background:linear-gradient(155deg,#221d31,#171b29 75%);border-color:#9d547e;box-shadow:0 14px 45px #0003}
+.cdmx-comments-list{display:grid;gap:14px;margin:1.5rem 0}
+.cdmx-comments-list li{border:1px solid #63445f;border-radius:20px;padding:18px;background:linear-gradient(135deg,#32273c,#24283b);box-shadow:0 8px 18px #0002;overflow-wrap:anywhere}
+.cdmx-comments-list li p{font-size:1rem;line-height:1.7;margin:14px 0 4px;color:#f7f1f6}
+.community-profile{display:flex;align-items:center;gap:13px}
+.community-avatar{width:52px;height:52px;flex:0 0 52px;display:grid;place-items:center;border-radius:50%;background:linear-gradient(135deg,#ed8bbd,#8e55a6);color:white;font-size:1.45rem;font-weight:800;overflow:hidden;border:2px solid #f7b5d6}
+.community-avatar img{width:100%;height:100%;object-fit:cover;display:block}
+.community-profile-details{min-width:0;display:flex;flex-direction:column;gap:3px}
+.community-profile-details strong{font-size:1.05rem;color:#ffb8dc}
+.community-profile-details time{color:#bcb7c9;font-size:.78rem}
+.cdmx-comments textarea{border-radius:16px;min-height:130px;border:2px solid #a96a96}
+.cdmx-comments button{border-radius:14px}
+@media(max-width:600px){.cdmx-comments{padding:1rem;margin:1.2rem auto}.cdmx-comments-list li{padding:14px}.community-avatar{width:46px;height:46px;flex-basis:46px}}
