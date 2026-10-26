@@ -1,0 +1,13 @@
+.cdmx-comments{margin:2.2rem auto;padding:1.5rem;border:1px solid #6c455f;border-radius:18px;background:#191c27;color:#f4edf2;max-width:960px}
+.cdmx-comments h2{color:#ffacd4;margin-top:0}
+.cdmx-comments p,.cdmx-comments small{line-height:1.6}
+.cdmx-comments button{cursor:pointer;border:1px solid #e990be;background:#b72d75;color:white;border-radius:10px;padding:.7rem 1rem;margin:.3rem .5rem .3rem 0;font-weight:700}
+.cdmx-comments button:disabled{opacity:.55;cursor:not-allowed}
+.cdmx-comments button.secondary{background:transparent}
+.cdmx-comments textarea{display:block;width:100%;min-height:105px;border:1px solid #a97394;border-radius:10px;padding:.85rem;background:#fff;color:#161616;resize:vertical;box-sizing:border-box}
+.cdmx-comments-list{list-style:none;padding:0;margin:1rem 0}
+.cdmx-comments-list li{border-top:1px solid #584359;padding:1rem 0;overflow-wrap:anywhere}
+.cdmx-comments-list strong{color:#ffd0e6}
+.cdmx-comments-list time{font-size:.83rem;color:#c7bec8;display:block}
+.cdmx-comments-list p{white-space:pre-wrap}
+.cdmx-comments-status{color:#ffcadf}
