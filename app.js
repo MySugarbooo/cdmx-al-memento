@@ -62,10 +62,12 @@ function renderLeadStory(items){
  const importance=a=>{const title=String(a.title||'').toLowerCase();const age=(now-Date.parse(a.published_at||''))/3600000;return (/alerta|urgente|sismo|evacuaci[oó]n|suspensi[oó]n|cierre|inundaci[oó]n|protecci[oó]n civil/.test(title)?12:0)+(/metro|movilidad|seguridad|agua|transporte|salud/.test(title)?4:0)-Math.max(0,Number.isFinite(age)?age:72)/12};
  const ranked=[...candidates].sort((a,b)=>importance(b)-importance(a));
  const shortlist=ranked.slice(0,Math.min(5,ranked.length));
+ const initialCover=(()=>{try{return sessionStorage.getItem('cdmx-visit-cover')||''}catch{return ''}})();
+ const chosenOnEntry=candidates.find(a=>a.url===initialCover);
  const pool=shortlist.length>1?shortlist.filter(a=>a.url!==previous):shortlist;
  const random=pool.length?(globalThis.crypto?.getRandomValues?crypto.getRandomValues(new Uint32Array(1))[0]/4294967296:Math.random()):0;
- const newest=pool.length?pool[Math.floor(random*pool.length)]:null;
- if(newest){try{localStorage.setItem(lastKey,newest.url)}catch(e){}}
+ const newest=chosenOnEntry||(pool.length?pool[Math.floor(random*pool.length)]:null);
+ if(newest){try{localStorage.setItem(lastKey,newest.url);sessionStorage.setItem('cdmx-visit-cover',newest.url)}catch(e){}}
  if(!newest){
   drawLeadIllustration(null);
   leadStory.kicker.textContent='SIN NOTICIAS PUBLICADAS DISPONIBLES';
@@ -78,7 +80,7 @@ function renderLeadStory(items){
  }
  drawLeadIllustration(newest);
  const articleText=String(newest.brief?.lead||newest.summary||'');
- const readingMinutes=Math.max(1,Math.ceil((articleText.split(/\\s+/).filter(Boolean).length+String(newest.title||'').split(/\\s+/).length)/180));
+ const readingMinutes=Math.max(1,Math.ceil((articleText.split(/\s+/).filter(Boolean).length+String(newest.title||'').split(/\s+/).length)/180));
  const editorial=document.getElementById('lead-editorial-extras');
  if(editorial){editorial.replaceChildren();
   const fast=element('p','lead-read-time','⏱️ Lectura aproximada: '+readingMinutes+' min');editorial.append(fast);
