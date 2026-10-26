@@ -26,3 +26,6 @@
 .cdmx-comments textarea{border-radius:16px;min-height:130px;border:2px solid #a96a96}
 .cdmx-comments button{border-radius:14px}
 @media(max-width:600px){.cdmx-comments{padding:1rem;margin:1.2rem auto}.cdmx-comments-list li{padding:14px}.community-avatar{width:46px;height:46px;flex-basis:46px}}
+
+/* Fase F2: mención rápida sin desplazar contenido */
+.cdmx-comments .community-mention{background:transparent;color:#ffd0e5;border:1px solid #a96b92;font-size:.83rem;padding:7px 11px;margin-top:10px;border-radius:999px}.cdmx-comments .community-mention:hover,.cdmx-comments .community-mention:focus-visible{background:#543152}
