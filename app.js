@@ -261,7 +261,11 @@ function buildCard(a,featured=false,large=false){
  const meta=articleMeta(a);
  const link=element('a','read','Leer resumen de Amau Kisumi →');
  link.href=a.local_url||'/noticias/';
- inside.append(badge,title,description,meta,link);
+ const share=document.createElement('a');share.className='article-share';share.target='_blank';share.rel='noopener noreferrer';share.textContent='↗ Compartir por WhatsApp';
+ const absolute=new URL(a.local_url||a.url,location.origin).href;
+ share.href='https://api.whatsapp.com/send?text='+encodeURIComponent(a.title+' — '+absolute);
+ share.setAttribute('aria-label','Compartir noticia por WhatsApp: '+a.title);
+ inside.append(badge,title,description,meta,link,share);
  c.append(visual,inside);
  window.CDMX_addArticleLike?.(c,a);
  return c;
