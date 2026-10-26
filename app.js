@@ -489,9 +489,9 @@ Promise.allSettled([
  if(news.status==='fulfilled'&&Array.isArray(news.value.articles)){
   applyNewsFeed(news.value);
  }else{
-  if(!showEmbeddedNews())renderLeadStory([]);
+  if(!articles.length&&!showEmbeddedNews())renderLeadStory([]);
   if(status)status.textContent='Mostrando noticias publicadas disponibles.';
-  if(featuredGrid)featuredGrid.replaceChildren(element('p','muted','No fue posible cargar las noticias destacadas.'));
+  if(featuredGrid&&!featuredGrid.children.length)featuredGrid.replaceChildren(element('p','muted','No fue posible cargar las noticias destacadas.'));
  }
  if(reportList){
   reportList.replaceChildren();
@@ -534,7 +534,7 @@ Promise.allSettled([
 });
 
 // Mientras la portada permanezca abierta, actualizar noticias sin recargar la página.
-setInterval(()=>{if(document.visibilityState==='visible')refreshHomepageNews()},2*60*60*1000);
+setInterval(()=>{if(document.visibilityState==='visible')refreshHomepageNews()},15*60*1000);
 document.addEventListener('visibilitychange',()=>{
  if(document.visibilityState==='visible')refreshHomepageNews();
 });
