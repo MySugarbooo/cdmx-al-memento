@@ -39,7 +39,7 @@ class PortalTests(unittest.TestCase):
             self.assertIn('id="' + ident + '"', home)
         self.assertNotIn('id="nota-tortas-don-pepe"', home)
         self.assertNotIn("Vecinos marchan en defensa de Tortas Don Pepe", home)
-        self.assertRegex(home, r'<script[^>]+src="/app\\.js\\?v=[^"]+"[^>]*>')
+        self.assertRegex(home, r'<script[^>]+src="/app\.js\?v=[^"]+"[^>]*>')
         self.assertIn("function renderLeadStory(items)", script)
         self.assertIn("renderLeadStory(articles)", script)
         self.assertIn("freshAfter=now-72*60*60*1000", script)
