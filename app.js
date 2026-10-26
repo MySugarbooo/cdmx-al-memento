@@ -47,9 +47,9 @@ function renderLeadStory(items){
  const yesterday=mxDay(new Date(now-24*60*60*1000));
  const published=(Array.isArray(items)?items:[]).filter(a=>{
   const ts=Date.parse(a.published_at||'');
-  return validLink(a.url)&&Number.isFinite(ts)&&ts<=now+15*60*1000;
+  return validLink(a.url)&&(!Number.isFinite(ts)||ts<=now+15*60*1000);
  });
- const fromDay=day=>published.filter(a=>mxDay(new Date(a.published_at))===day);
+ const fromDay=day=>published.filter(a=>Number.isFinite(Date.parse(a.published_at||''))&&mxDay(new Date(a.published_at))===day);
  const todayNews=fromDay(today),yesterdayNews=fromDay(yesterday);
  const candidates=todayNews.length?todayNews:yesterdayNews.length?yesterdayNews:published;
  // Se elige una portada distinta en cada visita, evitando repetir la anterior si hay opciones.
@@ -102,8 +102,8 @@ async function refreshHomepageNews(){
   applyNewsFeed(await res.json());
  }catch(error){
   // Sin confirmación reciente no hay que seguir mostrando la nota principal anterior.
-  renderLeadStory([]);
-  if(status)status.textContent='No fue posible comprobar noticias nuevas. Consulta el archivo.';
+  if(articles.length)renderLeadStory(articles);
+  if(status)status.textContent='No se pudo comprobar si hay noticias nuevas. Se mantienen las publicadas.';
  }finally{newsRefreshInProgress=false}
 }
 function illustratedFallback(a,figure){
