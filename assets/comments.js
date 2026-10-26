@@ -13,9 +13,10 @@ const textarea=document.getElementById('cdmx-comments-text');
 const signout=document.getElementById('cdmx-comments-logout');
 const google=document.getElementById('cdmx-comments-google');
 const facebook=document.getElementById('cdmx-comments-facebook');
+const isCommunity=root.dataset.commentsScope==='community';
 const params=new URLSearchParams(location.search);
 const id=params.get('id'),month=params.get('mes');
-if(!/^[a-f0-9]{20}$/.test(id||'')||!/^20\d\d-(0[1-9]|1[0-2])$/.test(month||'')){
+if(!isCommunity&&(!/^[a-f0-9]{20}$/.test(id||'')||!/^20\d\d-(0[1-9]|1[0-2])$/.test(month||''))){
  status.textContent='Abre una noticia concreta para consultar sus comentarios.';login.hidden=true;return;
 }
 const cfg=window.CDMX_COMMENTS_FIREBASE;
@@ -34,7 +35,7 @@ try{
  auth=mod.getAuth(app);db=fs.getFirestore(app);
  await mod.getRedirectResult(auth);
 }catch(e){status.textContent='No se pudo conectar el servicio de comentarios. Inténtalo más tarde.';login.hidden=true;return;}
-const collection=fs.collection(db,'articles',month+'_'+id,'comments');
+const collection=isCommunity?fs.collection(db,'community','main','comments'):fs.collection(db,'articles',month+'_'+id,'comments');
 function display(rows){
  list.replaceChildren();
  if(!rows.length){const li=document.createElement('li');li.textContent='Todavía no hay comentarios. Sé la primera persona en participar.';list.append(li);return;}
@@ -61,7 +62,7 @@ mod.onAuthStateChanged(auth,person=>{
  else status.textContent='Inicia sesión con Google o Facebook para comentar. Tu comentario y nombre serán públicos.';
  if(unsubscribe){unsubscribe();unsubscribe=null;}
  const q=fs.query(collection,fs.orderBy('createdAt','desc'),fs.limit(50));
- unsubscribe=fs.onSnapshot(q,snapshot=>display(snapshot.docs),()=>{status.textContent='No se pudieron cargar los comentarios. Revisa la configuración y las reglas de Firestore.';});
+ unsubscribe=fs.onSnapshot(q,snapshot=>display(snapshot.docs),error=>{status.textContent='No se pudieron cargar los comentarios ('+(error.code||'error')+'). Revisa las reglas de Firestore.';});
 });
 async function authenticate(provider){
  try{
@@ -75,7 +76,8 @@ async function authenticate(provider){
  }
 }
 google.onclick=()=>authenticate(new mod.GoogleAuthProvider());
-facebook.onclick=()=>authenticate(new mod.FacebookAuthProvider());
+// Facebook requiere una aplicación Meta habilitada.
+if(facebook)facebook.hidden=true;
 signout.onclick=()=>mod.signOut(auth);
 send.onclick=async()=>{
  const text=textarea.value.trim();
@@ -84,7 +86,7 @@ send.onclick=async()=>{
  try{
   await fs.addDoc(collection,{uid:user.uid,name:(user.displayName||'Lector').slice(0,80),text,createdAt:fs.serverTimestamp()});
   textarea.value='';status.textContent='Comentario publicado correctamente.';
- }catch{status.textContent='No se pudo publicar. Comprueba tu conexión o las reglas de seguridad.';}
+ }catch(error){console.error('Error al publicar comentario:',error);status.textContent='No se pudo publicar ('+(error.code||'error desconocido')+'). '+(error.code==='permission-denied'?'La base de datos rechazó el permiso; vuelve a iniciar sesión e inténtalo.':'Comprueba tu conexión e inténtalo de nuevo.');}
  finally{send.disabled=false;}
 };
 })();
