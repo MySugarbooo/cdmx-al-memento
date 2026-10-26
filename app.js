@@ -33,7 +33,10 @@ function renderLeadStory(items){
  const newest=(Array.isArray(items)?items:[]).filter(a=>{
   const ts=Date.parse(a.published_at||'');
   return validLink(a.url)&&Number.isFinite(ts)&&ts>=freshAfter&&ts<=now+15*60*1000;
- }).sort((a,b)=>Date.parse(b.published_at)-Date.parse(a.published_at))[0];
+ }).sort((a,b)=>{
+ const score=x=>{const age=(now-Date.parse(x.published_at))/3600000;const title=String(x.title||'').toLocaleLowerCase('es-MX');const important=/alerta|urgente|sismo|terremoto|inundaci[oó]n|incendio|explosi[oó]n|desaparecid|emergencia|evacuaci[oó]n|cierre|suspensi[oó]n|accidente|metro|bloqueo|manifestaci[oó]n|viral|tendencia|hist[oó]rico|protecci[oó]n civil/.test(title)?35:0;return important+Math.max(0,72-age)*1.4;};
+ const diff=score(b)-score(a);return diff||Date.parse(b.published_at)-Date.parse(a.published_at);
+ })[0];
  if(!newest){
   leadStory.kicker.textContent='SIN NOTICIA PRINCIPAL RECIENTE';
   leadStory.title.textContent='No hay titulares recientes disponibles para destacar';
