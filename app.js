@@ -18,6 +18,67 @@ const reportList=document.getElementById('report-list');
 const editorialLatest=document.getElementById('editorial-latest-link');
 function element(tag,cls,txt){const e=document.createElement(tag);if(cls)e.className=cls;if(txt!==undefined)e.textContent=txt;return e}
 function validLink(u){try{const p=new URL(u);return p.protocol==='https:'&&p.hostname==='news.google.com'}catch{return false}}
+// La noticia principal de la portada procede del mismo feed que las demás notas.
+// Nunca fijar un titular antiguo en el HTML ni presentarlo como noticia de hoy.
+const leadStory={
+ kicker:document.getElementById('lead-story-kicker'),
+ title:document.getElementById('lead-story-title'),
+ summary:document.getElementById('lead-story-summary'),
+ meta:document.getElementById('lead-story-meta'),
+ link:document.getElementById('lead-story-link')
+};
+function renderLeadStory(items){
+ if(!leadStory.title)return;
+ const now=Date.now(),freshAfter=now-72*60*60*1000;
+ const newest=(Array.isArray(items)?items:[]).filter(a=>{
+  const ts=Date.parse(a.published_at||'');
+  return validLink(a.url)&&Number.isFinite(ts)&&ts>=freshAfter&&ts<=now+15*60*1000;
+ }).sort((a,b)=>Date.parse(b.published_at)-Date.parse(a.published_at))[0];
+ if(!newest){
+  leadStory.kicker.textContent='SIN NOTICIA PRINCIPAL RECIENTE';
+  leadStory.title.textContent='No hay titulares recientes disponibles para destacar';
+  leadStory.summary.textContent='El recopilador todavía no proporciona una noticia con fecha reciente. Consulta los reportes anteriores sin confundirlos con noticias de hoy.';
+  leadStory.meta.textContent='No se mostrará como actual ninguna noticia antigua.';
+  leadStory.link.href='/reportes/';
+  leadStory.link.textContent='Consultar reportes anteriores →';
+  return;
+ }
+ leadStory.kicker.textContent=(newest.borough?newest.borough.toLocaleUpperCase('es-MX')+' · ':'')+
+  'TITULAR RECIENTE · '+String(newest.category||'CDMX').toLocaleUpperCase('es-MX');
+ leadStory.title.textContent=newest.title;
+ leadStory.summary.textContent=newest.brief?.lead||
+  'Titular recopilado de una fuente externa. Consulta la publicación original para verificar los detalles.';
+ const when=new Intl.DateTimeFormat('es-MX',{timeZone:'America/Mexico_City',dateStyle:'medium',timeStyle:'short'})
+  .format(new Date(newest.published_at));
+ leadStory.meta.textContent='Fuente: '+(newest.source||'Medio externo')+
+  ' · Publicado: '+when+' · Zona: '+(newest.location||'No precisada en el titular')+
+  '. Resumen automatizado; consulta la fuente original.';
+ leadStory.link.href=/^\/noticias\/\?id=[a-f0-9]{20}&mes=\d{4}-\d{2}$/.test(newest.local_url||'')
+  ?newest.local_url:'/noticias/';
+ leadStory.link.textContent='Leer la noticia y sus fuentes →';
+}
+function applyNewsFeed(feed){
+ if(!feed||!Array.isArray(feed.articles))throw Error('Formato de noticias incorrecto');
+ articles=feed.articles.filter(a=>a&&typeof a.title==='string'&&validLink(a.url));
+ photoLibrary?.prepare(articles);
+ updated=String(feed.updated||'sin fecha');
+ render();
+ renderLeadStory(articles);
+}
+let newsRefreshInProgress=false;
+async function refreshHomepageNews(){
+ if(newsRefreshInProgress)return;
+ newsRefreshInProgress=true;
+ try{
+  const res=await fetch('/news.json?t='+Date.now(),{cache:'no-store'});
+  if(!res.ok)throw Error('Noticias no disponibles');
+  applyNewsFeed(await res.json());
+ }catch(error){
+  // Sin confirmación reciente no hay que seguir mostrando la nota principal anterior.
+  renderLeadStory([]);
+  if(status)status.textContent='No fue posible comprobar noticias nuevas. Consulta el archivo.';
+ }finally{newsRefreshInProgress=false}
+}
 function articleVisual(a){
  const figure=element('div','news-visual');
  const assignedPhoto=a.photo;
@@ -362,10 +423,9 @@ Promise.allSettled([
  if(recent.status==='fulfilled')photoLibrary?.addRecentCatalog(recent.value);
  refreshStaticPhotos();
  if(news.status==='fulfilled'&&Array.isArray(news.value.articles)){
-  articles=news.value.articles.filter(a=>a&&typeof a.title==='string'&&validLink(a.url));
-  photoLibrary?.prepare(articles);
-  updated=String(news.value.updated||'sin fecha');render();
+  applyNewsFeed(news.value);
  }else{
+  renderLeadStory([]);
   if(status)status.textContent='No fue posible cargar las noticias.';
   if(featuredGrid)featuredGrid.replaceChildren(element('p','muted','No fue posible cargar las noticias destacadas.'));
  }
@@ -407,4 +467,10 @@ Promise.allSettled([
    link.href='/archivo/';monthList.append(link);
   }
  }
+});
+
+// Mientras la portada permanezca abierta, actualizar noticias sin recargar la página.
+setInterval(()=>{if(document.visibilityState==='visible')refreshHomepageNews()},15*60*1000);
+document.addEventListener('visibilitychange',()=>{
+ if(document.visibilityState==='visible')refreshHomepageNews();
 });
