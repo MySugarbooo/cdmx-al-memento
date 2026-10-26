@@ -43,7 +43,7 @@ function display(rows){
   const c=row.data(),li=document.createElement('li');
   const profile=document.createElement('div');profile.className='community-profile';
   const avatar=document.createElement('span');avatar.className='community-avatar';
-  const photo=String(c.photoURL||'');
+  const photo=String(c.photoURL||(user&&c.uid===user.uid?user.photoURL:'')||'');
   if(/^https:\/\//i.test(photo)&&photo.length<1500){const img=document.createElement('img');img.src=photo;img.alt='Foto de perfil de '+String(c.name||'Lector').slice(0,80);img.loading='lazy';img.referrerPolicy='no-referrer';img.onerror=()=>{img.remove();avatar.textContent=String(c.name||'L').trim().charAt(0).toUpperCase()};avatar.append(img)}
   else avatar.textContent=String(c.name||'L').trim().charAt(0).toUpperCase();
   const details=document.createElement('div');details.className='community-profile-details';
@@ -90,9 +90,12 @@ send.onclick=async()=>{
  if(!user||text.length<2||text.length>1000){status.textContent='Escribe un comentario de 2 a 1000 caracteres.';return;}
  send.disabled=true;
  try{
-  await fs.addDoc(collection,{uid:user.uid,name:(user.displayName||'Lector').slice(0,80),photoURL:(user.photoURL||'').slice(0,1500),text,createdAt:fs.serverTimestamp()});
+  const payload={uid:user.uid,name:(user.displayName||'Lector').slice(0,80),text,createdAt:fs.serverTimestamp()};
+  // Compatibilidad con reglas antiguas de Firestore: permiten solo cuatro campos.
+  // Guardar photoURL sin actualizar reglas produce permission-denied.
+  await fs.addDoc(collection,payload);
   textarea.value='';status.textContent='Comentario publicado correctamente.';
- }catch(error){console.error('Error al publicar comentario:',error);status.textContent='No se pudo publicar ('+(error.code||'error desconocido')+'). '+(error.code==='permission-denied'?'La base de datos rechazó el permiso; vuelve a iniciar sesión e inténtalo.':'Comprueba tu conexión e inténtalo de nuevo.');}
+ }catch(error){console.error('Error al publicar comentario:',error);status.textContent='No se pudo publicar ('+(error.code||'error desconocido')+'). '+(error.code==='permission-denied'?'La base de datos rechazó el permiso. Comprueba las reglas publicadas de Firestore.':'Comprueba tu conexión e inténtalo de nuevo.');}
  finally{send.disabled=false;}
 };
 })();
