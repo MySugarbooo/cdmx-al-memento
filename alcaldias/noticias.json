@@ -1,9 +1,9 @@
 {
-  "updated": "2026-10-26 01:57 UTC",
+  "updated": "2026-10-26 02:02 UTC",
   "boroughs": [
     {
       "name": "La Magdalena Contreras",
-      "count": 35,
+      "count": 37,
       "articles": [
         {
           "title": "Riña en Fiesta Religiosa Deja Dos Muertos y un Herido en Magdalena Contreras",
@@ -31,6 +31,34 @@
             "author": "ProtoplasmaKid",
             "license": "CC0",
             "source": "https://commons.wikimedia.org/wiki/File:Audiorama_de_Chapultepec_1.jpg"
+          }
+        },
+        {
+          "title": "¿Quiénes son las víctimas de la balacera en la fiesta patronal de San Judas Tadeo en la Magdalena Contreras?",
+          "description": "La información publicada por Guillermo Ortega - Tu sitio de noticias trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOdlFJNjBZRmpTMjhWWjVpd0diRUY5dzJWbmxtNXFCRGRXclhVbFdHQkN0LXNCWUx0cWpxb3NKeXRIdEh3UG9GSDBhZWQ4M0hyYnk0M3F4aGljWVhLeTI3a2l3em9QTWZSYkgwUmxZdC1WaHc5VkNIdzQ4cWRqOFM1NTZJRGV0enIyOW5VSTB3R2ZDNGlJbVhOVVFGeWh6dlpNcGl2SXhPc01tTjdWZFJkRGdic3NkZEh3dXpCcGotcUxNa3VEWVpvRUZLbVQwM0FUd2FiM1hR?oc=5",
+          "source": "Guillermo Ortega - Tu sitio de noticias",
+          "date": "2026-10-25",
+          "published_at": "2026-10-25T20:11:00Z",
+          "category": "CDMX",
+          "borough": "La Magdalena Contreras",
+          "location": "La Magdalena Contreras (mencionada en el titular)",
+          "local_url": "/noticias/?id=33578483295d0ea71f02&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por Guillermo Ortega - Tu sitio de noticias trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "archivo_metro_007",
+            "url": "/assets/fotos/archivo_metro_007.jpg",
+            "category": "Metro",
+            "borough": "",
+            "topic": "Estación Sevilla de la Línea 1 del Metro de la Ciudad de México - 01 - Tren en espera",
+            "author": "ProtoplasmaKid",
+            "license": "CC BY-SA 4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Estaci%C3%B3n_Sevilla_de_la_L%C3%ADnea_1_del_Metro_de_la_Ciudad_de_M%C3%A9xico_-_01_-_Tren_en_espera.jpg"
           }
         },
         {
@@ -146,6 +174,24 @@
           "local_url": "/noticias/?id=122db81699dcbfb6a994&mes=2026-10",
           "brief": {
             "lead": "El pronóstico recogido por El Heraldo de México se refiere a condiciones meteorológicas en La Magdalena Contreras. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          }
+        },
+        {
+          "title": "Desalojan asilo de ancianos por incendio en La Magdalena Contreras",
+          "description": "La información publicada por Diario Basta! trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNbTdwLUhoUFRjbURXVVJvaGR4VnhkZ0tFWDljMkNmeU9VeWd2Z0dSckpoVmprQVhLX1c2dDMyeGE0VDc0WFN6a2FncEUxcUdHOHRQQjlaY1gwQjlmelI4VXZWdlhsQkNEMmhUUk9uQ1dNRXpLNW01MnU3SE9TSENlWDhrM0taaDViN2xXcDNYR0ZVYW9RR2RBcmd6WmN1SDlCblNudw?oc=5",
+          "source": "Diario Basta!",
+          "date": "2026-10-23",
+          "published_at": "2026-10-23T07:16:42Z",
+          "category": "CDMX",
+          "borough": "La Magdalena Contreras",
+          "location": "La Magdalena Contreras (mencionada en el titular)",
+          "local_url": "/noticias/?id=e6faa82acd038dbc0726&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por Diario Basta! trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
@@ -496,42 +542,6 @@
           "local_url": "/noticias/?id=6a5e6fc8d8472b2f3d0e&mes=2026-10",
           "brief": {
             "lead": "De acuerdo con un titular publicado por MVS Noticias, el tema de actualidad está relacionado con un asunto de interés público relacionado con la Ciudad de México. La atribución corresponde al medio citado, no a una comprobación independiente de nuestra redacción. El encabezado menciona La Magdalena Contreras; esa referencia no demuestra por sí misma dónde ocurrieron todos los hechos.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
-        },
-        {
-          "title": "Dará alcaldía apoyos a núcleos agrarios de La Magdalena Contreras",
-          "description": "De acuerdo con un titular publicado por El Momento Nacional, el tema de actualidad está relacionado con un asunto de interés público relacionado con la Ciudad de México. La atribución corresponde al medio citado, no a una comprobación independiente de nuestra redacción. El encabezado menciona La Magdalena Contreras; esa referencia no demuestra por sí misma dónde ocurrieron todos los hechos.",
-          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNNmwtdFNxNHl6blVHZm5nNzI4ZEdaMlZUN1E3NmJRNWNDQWV6RTQzRzNIc1prQXJFc2c0VkZVQnBwNm1na0txS1B4cFRjUl9FRUFJbG1aelNfVmk0OWwzQkM0RWY2aXdkMVREaXBnVVB2QkZzdFlTMWo1eExlR0JSeVVqNnY5OGhYaUZpYjBhYlI?oc=5",
-          "source": "El Momento Nacional",
-          "date": "2026-10-12",
-          "published_at": "2026-10-13T01:58:03Z",
-          "category": "CDMX",
-          "borough": "La Magdalena Contreras",
-          "location": "La Magdalena Contreras (mencionada en el titular)",
-          "local_url": "/noticias/?id=5af789e3369b84ab343c&mes=2026-10",
-          "brief": {
-            "lead": "De acuerdo con un titular publicado por El Momento Nacional, el tema de actualidad está relacionado con un asunto de interés público relacionado con la Ciudad de México. La atribución corresponde al medio citado, no a una comprobación independiente de nuestra redacción. El encabezado menciona La Magdalena Contreras; esa referencia no demuestra por sí misma dónde ocurrieron todos los hechos.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
-        },
-        {
-          "title": "Línea 5 del Cablebús mejorará movilidad en La Magdalena Contreras",
-          "description": "De acuerdo con un titular publicado por CDMX Magacín, el tema de actualidad está relacionado con un asunto de interés público relacionado con la Ciudad de México. La atribución corresponde al medio citado, no a una comprobación independiente de nuestra redacción. El encabezado menciona La Magdalena Contreras; esa referencia no demuestra por sí misma dónde ocurrieron todos los hechos.",
-          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNRWU3eHVLYWhCSk5EbmhXNEkyTXRQVWV5ODRfTjFQNldhRWVycjdRcmF4LW9mUHBjeVM1TkNLZnVDbWxJV1VxdUFqaUNBOUpSSGJoZGtaV1B1MzVkQWtzU2NHc1lIYWlReVJKZEJiU0gyTTJRTlJvRFRQSWtRN194c1h2Yjc5djhGenBoag?oc=5",
-          "source": "CDMX Magacín",
-          "date": "2026-10-12",
-          "published_at": "2026-10-13T00:43:39Z",
-          "category": "CDMX",
-          "borough": "La Magdalena Contreras",
-          "location": "La Magdalena Contreras (mencionada en el titular)",
-          "local_url": "/noticias/?id=8d23999cf586d706662e&mes=2026-10",
-          "brief": {
-            "lead": "De acuerdo con un titular publicado por CDMX Magacín, el tema de actualidad está relacionado con un asunto de interés público relacionado con la Ciudad de México. La atribución corresponde al medio citado, no a una comprobación independiente de nuestra redacción. El encabezado menciona La Magdalena Contreras; esa referencia no demuestra por sí misma dónde ocurrieron todos los hechos.",
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
@@ -1587,7 +1597,7 @@
     },
     {
       "name": "Benito Juárez",
-      "count": 36,
+      "count": 37,
       "articles": [
         {
           "title": "Mercados de Benito Juárez celebran el Día de Muertos con romerías y productos tradicionales - La Prensa",
@@ -1604,6 +1614,24 @@
             "lead": "La información publicada por El Sol de México trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          }
+        },
+        {
+          "title": "Alcaldía Benito Juárez refuerza seguridad en sus 56 colonias con reuniones vecinales",
+          "description": "La información publicada por El Sol de México trata un asunto registrado en la sección de Seguridad del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQeUNLeV9MREV0RUIwNU5Id0VEaFo0ejNyTkM4bFFsVGgzN0xYSkd5VUtydjFFclExeDhUNkwyc0hDUFFQZk8yMjhvSWdCd295YTI3cnU2RzdtdXB0MFB3TWRvYmRNQTlwVzBUcGhXemcySnFaUHUwTzhVaWhIX3VKVmVTNXdXZTNfWlJZbDFBbE1LTklZSTJCY3RnT1dQUUQtZm92Z3VzQnZmVlpzUmNkb1lzdEpaNTgzV2ljblR2ZFpicWJqeEY5Y0xMdms?oc=5",
+          "source": "El Sol de México",
+          "date": "2026-10-25",
+          "published_at": "2026-10-25T06:25:35Z",
+          "category": "Seguridad",
+          "borough": "Benito Juárez",
+          "location": "Benito Juárez (mencionada en el titular)",
+          "local_url": "/noticias/?id=10b422aaab7cdf60f058&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por El Sol de México trata un asunto registrado en la sección de Seguridad del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           }
         },
@@ -2078,24 +2106,6 @@
           "local_url": "/noticias/?id=23ff908305731fb09bf6&mes=2026-10",
           "brief": {
             "lead": "De acuerdo con un titular publicado por Sociedad Noticias, el tema de actualidad está relacionado con un asunto de interés público relacionado con la Ciudad de México. La atribución corresponde al medio citado, no a una comprobación independiente de nuestra redacción. El encabezado menciona Benito Juárez; esa referencia no demuestra por sí misma dónde ocurrieron todos los hechos.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
-        },
-        {
-          "title": "Mujer Muere Arrollada por Tráiler en la Alcaldía Benito Juárez",
-          "description": "De acuerdo con un titular publicado por N+, el tema de actualidad está relacionado con un asunto de interés público relacionado con la Ciudad de México. La atribución corresponde al medio citado, no a una comprobación independiente de nuestra redacción. El encabezado menciona Benito Juárez; esa referencia no demuestra por sí misma dónde ocurrieron todos los hechos.",
-          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNYVppSEl5WEpXLUdEYXJXWmZERl9qMHRGNjJ1Nmw5RE9PWWpFQ2t3YTlRU1EyS0Z5aEs3OFl4dzJpWGtzSU9XWm90OGxqZ3VDVFBFcXF0QUxTTnVVTUpDTGhrbU1KWlJONVdNSXo1TXN5MzcxMXhtbDl2VGtscmtkVzJZU3RteVNyU05ockhjT1NCdGdEeXZkM1J0U1lGTzluVzM4Wm4zU0F2T0h1WTNuNTlhYmt5SGh4X0dXaw?oc=5",
-          "source": "N+",
-          "date": "2026-10-12",
-          "published_at": "2026-10-12T21:24:11Z",
-          "category": "CDMX",
-          "borough": "Benito Juárez",
-          "location": "Benito Juárez (mencionada en el titular)",
-          "local_url": "/noticias/?id=117dad0d627ae5b5ceb4&mes=2026-10",
-          "brief": {
-            "lead": "De acuerdo con un titular publicado por N+, el tema de actualidad está relacionado con un asunto de interés público relacionado con la Ciudad de México. La atribución corresponde al medio citado, no a una comprobación independiente de nuestra redacción. El encabezado menciona Benito Juárez; esa referencia no demuestra por sí misma dónde ocurrieron todos los hechos.",
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
@@ -5267,7 +5277,7 @@
     },
     {
       "name": "Miguel Hidalgo",
-      "count": 37,
+      "count": 39,
       "articles": [
         {
           "title": "2855: En el la alcaldía Miguel Hidalgo, policías de la SSC detuvieron a un hombre que posiblemente despojó de sus pertenencias a una mujer",
@@ -5450,6 +5460,24 @@
           }
         },
         {
+          "title": "Prometen nueva Utopía en la Miguel Hidalgo",
+          "description": "La información publicada por Luces del Siglo trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOS1FqY2JjSzFmZGU5ZG43SGR0UC1QbE5GQnJXc2NwM214MHRnLV9jbGFmSmJNSV9sWEg4YWNmMXFRZ2JkOHVKY1l5SkstcDAzWmVqazRoZGo0bW1MbjVITVFvZWEwd2Ytd01GX3R1N2VMY19LYVJjNUhRNVItdDl6MkNRZFFoVjRReE1WaGF3?oc=5",
+          "source": "Luces del Siglo",
+          "date": "2026-10-23",
+          "published_at": "2026-10-23T14:23:54Z",
+          "category": "CDMX",
+          "borough": "Miguel Hidalgo",
+          "location": "Miguel Hidalgo (mencionada en el titular)",
+          "local_url": "/noticias/?id=460092c513879215255b&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por Luces del Siglo trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          }
+        },
+        {
           "title": "Clima en Miguel Hidalgo: viernes 23 de octubre de 2026 con ambiente fresco y nubes dispersas",
           "description": "El pronóstico recogido por El Heraldo de México se refiere a condiciones meteorológicas en Miguel Hidalgo. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
           "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNbExtc2IxWGVjYkJfOUpYVmtJdnhxUDFGM19HWjFtOUMxeE9qRFJPSm1JMnlENlA1SUIyd1JCdHY2QkttNURIaUZZaGZ5d0JyeVM1TDdGdUg0Y2ZsMkNEbTFUM0htcjFJcF81ZUhYbFR2b2NqNm9jUGtfdkZ4WVZEWHRFTENKZTlCYVZlQWdVUFVoRHNMNDkxLWFWcUJqWHlXUjcwV0E0STB4TG5LS2N4NXB0cG56blQtSlZ6N1FEY1VYT1ZheWxTNlFnNm5leUxJMFlLa1ptYjVrWmU0TVFrUU9IWE1xOTQ?oc=5",
@@ -5462,6 +5490,24 @@
           "local_url": "/noticias/?id=7d61efe0428b5880a091&mes=2026-10",
           "brief": {
             "lead": "El pronóstico recogido por El Heraldo de México se refiere a condiciones meteorológicas en Miguel Hidalgo. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          }
+        },
+        {
+          "title": "Anuncia Clara Brugada nueva Utopía y renovación de escuelas, en la alcaldía Miguel Hidalgo; ante vecinos, refrendó que no aumentará el predial en la Ciudad de México",
+          "description": "La información publicada por Hoja de Ruta Digital trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMinAJBVV95cUxNTjIySzI5OW9lUEpKN3RjYzYwZTB2RFczNWRpcFhkYzdHeHJLRkNQVEdpajFxNkI1MVNIVlVzYlAySE9iMVd4NlBkS2s4c0lYQ0RZVTZINFhrOHlRNTVwM1AzYTV1TTcxNHNiNjhLMnIwdnRLNnRoa2MwSkI1Sngtd0E0THd2RkNMb0dLdkNNLVJJaVlFZ3pZMHZzSnlWX1lrRTRCaG9sWnh0czYyNTNCamNvWFpDTXdmUDZwV09OM0J2VHRCc29sOEZmWjJ2TkNibnpheDZKM0NJdlBiNThaREJrOGM5SFNZTXhwY1JtUms3SG5wbXlKbDdQYXhhZ0tlcnRCZzVMV0M1dEN6SHN3eTRhT3hKWDQwLTRkcA?oc=5",
+          "source": "Hoja de Ruta Digital",
+          "date": "2026-10-22",
+          "published_at": "2026-10-23T04:46:13Z",
+          "category": "CDMX",
+          "borough": "Miguel Hidalgo",
+          "location": "Miguel Hidalgo (mencionada en el titular)",
+          "local_url": "/noticias/?id=56035a7d9b9c8af17cb2&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por Hoja de Ruta Digital trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
@@ -5773,62 +5819,6 @@
             "author": "Octavio Alonso Maya Castro",
             "license": "CC BY-SA 3.0",
             "source": "https://commons.wikimedia.org/wiki/File:El_Paraguas_%28126505121%29.jpeg"
-          }
-        },
-        {
-          "title": "VIDEO| Hombre muere atropellado por tráiler en calles de la Miguel Hidalgo; el conductor fue detenido",
-          "description": "De acuerdo con un titular publicado por TV Azteca, el tema de actualidad está relacionado con un asunto de interés público relacionado con la Ciudad de México. La atribución corresponde al medio citado, no a una comprobación independiente de nuestra redacción. El encabezado menciona Miguel Hidalgo; esa referencia no demuestra por sí misma dónde ocurrieron todos los hechos.",
-          "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNRzU5VF9aNnFqaUM3SERYZEg3Q2Y1bFVvRHlMYUxQdmhCbzNjMDZpRnBFdEJoR2JzQ3NFQXJMY1gyZkFqU1NJQVJYazN5R3lIWnp2SnRJQ1dyN01tYU8xRTNzVk1kLV9hbzBLTGFuZlo2VWVfOUhtZjllRzcwRGVoMGFqUE5iY0lRN0M0VFc3emJGb2hlTHJqX3NDRTFUUm05T3ZKVUNrNTRndmUySy1PYnRoVDQ0V2tISGJCTS1BaWM3MkRQUC02eTJMbTJtTEdTdkRGWnhERU5pQ2RHTkE?oc=5",
-          "source": "TV Azteca",
-          "date": "2026-10-13",
-          "published_at": "2026-10-13T13:45:03Z",
-          "category": "CDMX",
-          "borough": "Miguel Hidalgo",
-          "location": "Miguel Hidalgo (mencionada en el titular)",
-          "local_url": "/noticias/?id=cc7c09c00d49c3e641f8&mes=2026-10",
-          "brief": {
-            "lead": "De acuerdo con un titular publicado por TV Azteca, el tema de actualidad está relacionado con un asunto de interés público relacionado con la Ciudad de México. La atribución corresponde al medio citado, no a una comprobación independiente de nuestra redacción. El encabezado menciona Miguel Hidalgo; esa referencia no demuestra por sí misma dónde ocurrieron todos los hechos.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "alcaldia_miguel-hidalgo",
-            "url": "/assets/alcaldias/miguel-hidalgo.jpg",
-            "category": "CDMX",
-            "borough": "Miguel Hidalgo",
-            "topic": "Bosque de Chapultepec, alcaldía Miguel Hidalgo",
-            "author": "ProtoplasmaKid",
-            "license": "CC0",
-            "source": "https://commons.wikimedia.org/wiki/File:Audiorama_de_Chapultepec_1.jpg"
-          }
-        },
-        {
-          "title": "Muere hombre tras ser atropellado por tráiler sobre avenida Mariano Escobedo en la Miguel Hidalgo",
-          "description": "De acuerdo con un titular publicado por Telediario, el tema de actualidad está relacionado con un asunto de interés público relacionado con la Ciudad de México. La atribución corresponde al medio citado, no a una comprobación independiente de nuestra redacción. El encabezado menciona Miguel Hidalgo; esa referencia no demuestra por sí misma dónde ocurrieron todos los hechos.",
-          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNbkhBNUFEM3ZJZklXSVJMZ0J5WkI3QngyVVVTS05GXzA0djh1N0FnaHcyazdVYVRJU0lFNUdZVUpiRms4ejFEeDFuQ1lGaDh5UmRVYUpma0pYZzV2Qlg5NmtOelBHbXNLV1VNYmhsSWtRNExjRzZUNWNvODluTllUOXQ4cUJFWDVJNDlwVDhuOXZBZHV1QjAxRnBJVEJUY29HUXRxZnJWd1HSAagBQVVfeXFMT250RVZWOGhUWVlhVGtKcWVGNGR1d2lMWWI1N29UT3VpYU1QUlZnU3BGSWxUQ3g5b2V3dTZuTU92bW5uRGRjSE5UaERSS3dMaEoxcG5CQjlGM1Zqcy1JNnlEWnllU3AwS2pUbWRFMzZmaExwZXBMMHRYcmNrM3JUcFJtMzZ2SWVIczRlNmNuVkM5OU93ZWVNTjNlZTVob3JuRUsyTEE3dml4?oc=5",
-          "source": "Telediario",
-          "date": "2026-10-13",
-          "published_at": "2026-10-13T13:40:00Z",
-          "category": "CDMX",
-          "borough": "Miguel Hidalgo",
-          "location": "Miguel Hidalgo (mencionada en el titular)",
-          "local_url": "/noticias/?id=0d955e9f7afdebd4bcf8&mes=2026-10",
-          "brief": {
-            "lead": "De acuerdo con un titular publicado por Telediario, el tema de actualidad está relacionado con un asunto de interés público relacionado con la Ciudad de México. La atribución corresponde al medio citado, no a una comprobación independiente de nuestra redacción. El encabezado menciona Miguel Hidalgo; esa referencia no demuestra por sí misma dónde ocurrieron todos los hechos.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "alcaldia_miguel-hidalgo",
-            "url": "/assets/alcaldias/miguel-hidalgo.jpg",
-            "category": "CDMX",
-            "borough": "Miguel Hidalgo",
-            "topic": "Bosque de Chapultepec, alcaldía Miguel Hidalgo",
-            "author": "ProtoplasmaKid",
-            "license": "CC0",
-            "source": "https://commons.wikimedia.org/wiki/File:Audiorama_de_Chapultepec_1.jpg"
           }
         }
       ]
