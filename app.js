@@ -27,6 +27,18 @@ const leadStory={
  meta:document.getElementById('lead-story-meta'),
  link:document.getElementById('lead-story-link')
 };
+function drawLeadIllustration(article){
+ const target=document.getElementById('lead-story-art');if(!target)return;
+ if(!article){target.replaceChildren();return;}
+ const title=String(article.title||'');const lower=title.toLocaleLowerCase('es-MX');
+ const symbol=/metro|estaci[oó]n|tren/.test(lower)?'🚇':/gasolina|combustible|precio/.test(lower)?'⛽':/seguridad|polic[ií]a|operativo/.test(lower)?'🚓':/lluvia|inundaci[oó]n|clima/.test(lower)?'🌧️':/escuela|educaci[oó]n/.test(lower)?'🏫':/salud|hospital/.test(lower)?'🏥':/cultura|museo|festival/.test(lower)?'🎨':'🏙️';
+ const escape=t=>String(t).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+ const label=escape(title.length>62?title.slice(0,59)+'…':title);
+ const svg='<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 390" role="img"><defs><linearGradient id="g" x2="1" y2="1"><stop stop-color="#25233f"/><stop offset="1" stop-color="#e3a5cc"/></linearGradient></defs><rect width="800" height="390" rx="20" fill="url(#g)"/><circle cx="620" cy="80" r="110" fill="#fff" opacity=".13"/><path d="M0 320L100 250 200 290 320 180 450 270 580 200 800 300V390H0Z" fill="#fff" opacity=".15"/><text x="400" y="185" font-size="115" text-anchor="middle">'+symbol+'</text><text x="400" y="265" fill="white" font-size="24" font-family="Arial" font-weight="bold" text-anchor="middle">ILUSTRACIÓN DIGITAL</text><text x="400" y="310" fill="white" font-size="17" font-family="Arial" text-anchor="middle">Imagen de referencia · No representa los hechos</text></svg>';
+ const img=document.createElement('img');img.src='data:image/svg+xml;charset=utf-8,'+encodeURIComponent(svg);img.alt='Ilustración digital no fotográfica para la noticia: '+title;img.loading='eager';
+ const credit=document.createElement('small');credit.textContent='Ilustración vectorial generada por código · CDMX AL MEMENTO';
+ target.replaceChildren(img,credit);
+}
 function renderLeadStory(items){
  if(!leadStory.title)return;
  const now=Date.now();
@@ -48,6 +60,7 @@ function renderLeadStory(items){
  const newest=pool.length?pool[Math.floor(random*pool.length)]:null;
  if(newest){try{localStorage.setItem(lastKey,newest.url)}catch(e){}}
  if(!newest){
+  drawLeadIllustration(null);
   leadStory.kicker.textContent='SIN NOTICIAS PUBLICADAS DISPONIBLES';
   leadStory.title.textContent='No hay noticias publicadas disponibles para destacar';
   leadStory.summary.textContent='No hay noticias publicadas disponibles en el listado. Consulta el archivo.';
@@ -56,6 +69,7 @@ function renderLeadStory(items){
   leadStory.link.textContent='Consultar reportes anteriores →';
   return;
  }
+ drawLeadIllustration(newest);
  leadStory.kicker.textContent=(newest.borough?newest.borough.toLocaleUpperCase('es-MX')+' · ':'')+
   (todayNews.length?'NOTICIA DE HOY':yesterdayNews.length?'NOTICIA DE AYER':'NOTICIA DE ARCHIVO')+' · '+String(newest.category||'CDMX').toLocaleUpperCase('es-MX');
  leadStory.title.textContent=newest.title;
