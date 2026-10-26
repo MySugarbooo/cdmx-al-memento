@@ -6,6 +6,9 @@
   const value=document.createElement('strong'); value.textContent='—';
   const note=document.createElement('small'); note.textContent='Visitantes aproximados por navegador desde la activación del contador.';
   strip.append(label,value,note);
+  const date=document.getElementById('weather-current-date');
+  const compact=document.createElement('span');compact.id='header-visitors-number';compact.textContent='—';
+  if(date){const small=document.createElement('span');small.className='weather-date__visitors';small.append('👥 Visitas: ',compact);date.append(small);} 
   if(root)root.after(strip);else document.querySelector('main')?.prepend(strip);
   async function request(article,body) {
     const url='/api/engagement'+(article?'?article='+encodeURIComponent(article):'');
