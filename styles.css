@@ -554,3 +554,5 @@ html,body{overflow-x:clip}
 #lead-story-title{font-size:clamp(27px,5.8vw,48px);line-height:1.12;letter-spacing:-.025em;color:#fff;margin:14px 0}
 #lead-story-kicker{color:#f7a6cf;font-weight:800}
 #lead-story-summary{font-size:clamp(15px,2vw,19px);line-height:1.6}
+
+#lead-story-art{width:100%;margin:12px 0 18px}#lead-story-art img{width:100%;height:auto;display:block;border-radius:14px;max-height:300px;object-fit:cover}#lead-story-art small{display:block;color:#d8bbce;font-size:11px;margin-top:5px}
