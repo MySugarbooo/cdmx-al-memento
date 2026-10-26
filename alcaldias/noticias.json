@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-26 09:57 UTC",
+  "updated": "2026-10-26 10:53 UTC",
   "boroughs": [
     {
       "name": "La Magdalena Contreras",
@@ -939,8 +939,36 @@
     },
     {
       "name": "Azcapotzalco",
-      "count": 59,
+      "count": 60,
       "articles": [
+        {
+          "title": "Azcapotzalco activa operativo de seguridad por Día de Muertos",
+          "description": "La información publicada por Sociedad Noticias trata un asunto registrado en la sección de Seguridad del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxORW9fQWt4Q3FSTEtYZjB5U19hSXk0anY5TUo0ek9rN0VZNWItMVZLYnJJR01IdHF0bG1PTDRrWnhHUWt5N0hwRXVKNVpzeVBSb1hudWdkdjRBMm1iZEFSQmFMMTkxNk5KMU1CMDhzeTBGOHpXaUhVa1I2N2VRWmxxb0pqX1F3M3pkT2ttV0NmbzhqTDBIUkZiaVRFN1R6U1ppVW9jdUN3?oc=5",
+          "source": "Sociedad Noticias",
+          "date": "2026-10-26",
+          "published_at": "2026-10-26T10:30:00Z",
+          "category": "Seguridad",
+          "borough": "Azcapotzalco",
+          "location": "Azcapotzalco (mencionada en el titular)",
+          "local_url": "/noticias/?id=9162d127ead5628b105c&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por Sociedad Noticias trata un asunto registrado en la sección de Seguridad del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_azcapotzalco",
+            "url": "/assets/alcaldias/azcapotzalco.jpg",
+            "category": "CDMX",
+            "borough": "Azcapotzalco",
+            "topic": "Parroquia de Santa Catarina, Azcapotzalco",
+            "author": "Ivan alcantara",
+            "license": "CC BY-SA 3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:PARROQUIA_DE_SANTA_CATARINA_%28AZCAPOTZALCO%29.jpg"
+          }
+        },
         {
           "title": "Captan robo de autopartes en calles de Azcapotzalco",
           "description": "La información publicada por Telediario trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -1350,24 +1378,6 @@
           "local_url": "/noticias/?id=a980ddfc6028bd9554ef&mes=2026-10",
           "brief": {
             "lead": "La información publicada por Imagen Televisión trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
-        },
-        {
-          "title": "Hombre baleado en Azcapotzalco muere en el hospital y presunto agresor confiesa pago de 10 mil pesos",
-          "description": "La información publicada por PostaMx trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPa0FEVGVHMDlKQUR2RldMUlFsM05QZEJubmVWM2RKem5TT2s5aEsteTYzNmlzdFI2QWhnQVhlRzUxWE1WWFFZdkozNTZnSGI0WFdqRjdEY04zVUNRN3lwaUJLWE5iX0lIcFpUelRfMmdLenR5T28wcXVCMzN1NVlzeW5POWtOdm5YZGtHWnVWVG9nR1ZfRzlxUFZzNjJYS2ZCcURoWUVqelM2ZE5zQVdpMldXMjBaQTE3RmRvUHJ30gHDAUFVX3lxTE1tdlEtNDI3UUhXX0Z2Zkxlb0dIZXdIRVhjLUZxbWZrdkZDTElzNm1CNkxZeEdaRUp1Qzl2Nm1rbzZodXRsLUw4V0JxT1lBVmRKbFg5UlRMcnpmSlVPWVh0S2ZSWmtlelAxZGhNM0V3RkRsOVVLbnJOU2tyNll1UXpWQWI1RDlRNE1yYWFGdF8tX0dJZ2taYjdpTVJpY2RTVkY3dXEwcWZSUy1DcE4ya0hNbjEzSmJGdmNBYk5lR210bFUzTQ?oc=5",
-          "source": "PostaMx",
-          "date": "2026-10-16",
-          "published_at": "2026-10-17T01:06:00Z",
-          "category": "CDMX",
-          "borough": "Azcapotzalco",
-          "location": "Azcapotzalco (mencionada en el titular)",
-          "local_url": "/noticias/?id=88b3c9fc2696b489aa25&mes=2026-10",
-          "brief": {
-            "lead": "La información publicada por PostaMx trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
