@@ -14,10 +14,10 @@
     if(!response.ok)throw Error('Sin conexión');
     return response.json();
   }
-  request('',{action:'visit'}).then(d=>value.textContent=d.visitors.toLocaleString('es-MX'))
-    .catch(()=>value.textContent='No disponible');
+  request('',{action:'visit'}).then(d=>{const n=d.visitors.toLocaleString('es-MX');value.textContent=n;const h=document.getElementById('header-visitors-number');if(h)h.textContent=n;})
+    .catch(()=>{value.textContent='No disponible';const h=document.getElementById('header-visitors-number');if(h)h.textContent='No disponible';});
   window.CDMX_addArticleLike=(card,article)=>{
-    const id=article.local_url||article.url;
+    const id=article.url||article.local_url;
     if(!id||id.length>220)return;
     const button=document.createElement('button');
     button.className='article-like';button.type='button';button.disabled=true;
