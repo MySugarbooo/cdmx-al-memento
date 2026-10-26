@@ -1,9 +1,9 @@
 {
-  "updated": "2026-10-26 02:02 UTC",
+  "updated": "2026-10-26 02:03 UTC",
   "boroughs": [
     {
       "name": "La Magdalena Contreras",
-      "count": 37,
+      "count": 38,
       "articles": [
         {
           "title": "Riña en Fiesta Religiosa Deja Dos Muertos y un Herido en Magdalena Contreras",
@@ -174,6 +174,24 @@
           "local_url": "/noticias/?id=122db81699dcbfb6a994&mes=2026-10",
           "brief": {
             "lead": "El pronóstico recogido por El Heraldo de México se refiere a condiciones meteorológicas en La Magdalena Contreras. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          }
+        },
+        {
+          "title": "Incendio consume casa de tres niveles en La Magdalena Contreras",
+          "description": "La información publicada por Telediario trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNQ3VOc0l3N2xzbjB5aFc4RUlEeG02dDI0X2tYZFZmYTFmM1pQSnI1Zm5sVXFJSDNOQzhLalY5ZlJqZlhNUFBabFBEd3JvSEhYVU9PRktuUDVBT1Vvd2RiTUk0NXRKSi0tSnQ3TjdZQV8zLTlYaHFUdHB1OHBVZkVQUzR6ajZMOFN2V01IM0VkQldmNkRjUXdCQUxlZnRpWXBMSWdZeXpR0gGmAUFVX3lxTE1DdU5zSXc3bHNuMHloVzhFSUR4bTZ0MjRfa1hkVmZhMWYzWlBKcjVmbmxVcUlIM05DOEtqVjlmUmpmWE1QUFpsUER3cm9ISFhVT09GS25QNUFPVW93ZGJNSTQ1dEpKLS1KdDdON1lBXzMtOVhocVR0cHU4cFVmRVBTNHpqNkw4U3ZXTUgzRWRCV2Y2RGNRd0JBTGVmdGlZcExJZ1l5elE?oc=5",
+          "source": "Telediario",
+          "date": "2026-10-23",
+          "published_at": "2026-10-23T16:38:38Z",
+          "category": "CDMX",
+          "borough": "La Magdalena Contreras",
+          "location": "La Magdalena Contreras (mencionada en el titular)",
+          "local_url": "/noticias/?id=2edd967a93eac73f5a32&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por Telediario trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
@@ -524,24 +542,6 @@
           "local_url": "/noticias/?id=eb26171c947939fc664a&mes=2026-10",
           "brief": {
             "lead": "De acuerdo con un titular publicado por sdpnoticias, el tema de actualidad está relacionado con un asunto de interés público relacionado con la Ciudad de México. La atribución corresponde al medio citado, no a una comprobación independiente de nuestra redacción. El encabezado menciona La Magdalena Contreras; esa referencia no demuestra por sí misma dónde ocurrieron todos los hechos.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
-        },
-        {
-          "title": "Mujer se arroja de taxi en movimiento tras presunto asalto en la Magdalena Contreras",
-          "description": "De acuerdo con un titular publicado por MVS Noticias, el tema de actualidad está relacionado con un asunto de interés público relacionado con la Ciudad de México. La atribución corresponde al medio citado, no a una comprobación independiente de nuestra redacción. El encabezado menciona La Magdalena Contreras; esa referencia no demuestra por sí misma dónde ocurrieron todos los hechos.",
-          "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQNlpfZTVWcFVfNjMyRkFpQVM1ZTlUMGJtZEJ0RG9XRVd0NkRFWjM2YkhFem1GQjVSRjBoNUZKSnZlazJsZ2JFQ0Y1Ui1YTUxWb0lmNUIteWpNOHJmRzlRSm5GbUtJWTZ4RkhtVmNuQ2FiZUpMYW1DcjMwbVlNaklUeXU5X09nSi1KRVg5ZmJLUjUyQjlkNjlISC10ZllJemhEcTJFR0VaWDdrYnZrMUw3Mk5lcUpTX2V4RTI0R1dXbEpLM2dhSHVMSkhXSjFnaFlldlFLcmdrbHZRa3F3R2dXdzJRY20?oc=5",
-          "source": "MVS Noticias",
-          "date": "2026-10-12",
-          "published_at": "2026-10-13T02:25:56Z",
-          "category": "CDMX",
-          "borough": "La Magdalena Contreras",
-          "location": "La Magdalena Contreras (mencionada en el titular)",
-          "local_url": "/noticias/?id=6a5e6fc8d8472b2f3d0e&mes=2026-10",
-          "brief": {
-            "lead": "De acuerdo con un titular publicado por MVS Noticias, el tema de actualidad está relacionado con un asunto de interés público relacionado con la Ciudad de México. La atribución corresponde al medio citado, no a una comprobación independiente de nuestra redacción. El encabezado menciona La Magdalena Contreras; esa referencia no demuestra por sí misma dónde ocurrieron todos los hechos.",
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
@@ -4709,7 +4709,7 @@
     },
     {
       "name": "Iztapalapa",
-      "count": 60,
+      "count": 61,
       "articles": [
         {
           "title": "Clima en Iztapalapa: Sábado 24 de octubre con ambiente frío y nubes persistentes",
@@ -4778,6 +4778,24 @@
           "local_url": "/noticias/?id=11cd4f374f47a9f00235&mes=2026-10",
           "brief": {
             "lead": "La información publicada por Proceso trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          }
+        },
+        {
+          "title": "Ataque armado en la Calzada Ermita-Iztapalapa deja 2 muertos y un herido; detienen a presuntos responsables",
+          "description": "Una nota de Telediario comunica un caso relacionado con una detención o una presunta conducta delictiva en Iztapalapa. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNc3ZMUC01SGtUV2I5OGdtLVpKd09tOUN4YVBHbWU1S2xHMFpIbTV6THcyd2xHRFhVUi1LOUVWMnUwak4zb2JiMUtqYWVyUTZvUDFnUEZYNDVUdlR3eUtFblV5cFhuM1I3RDRzLXJ6bE5abXRUaFNiZTU3eHlTVC1xbGtiQlFoY09BOWtFWnczY2pJQ0pnUFRDbWVvNnJJVWhZY3fSAaIBQVVfeXFMTXN2TFAtNUhrVFdiOThnbS1aSndPbTlDeGFQR21lNUtsRzBaSG01ekx3MndsR0RYVVItSzlFVjJ1MGpOM29iYjFLamFlclE2b1AxZ1BGWDQ1VHZUd3lLRW5VeXBYbjNSN0Q0cy1yemxOWm10VGhTYmU1N3h5U1QtcWxrYkJRaGNPQTlrRVp3M2NqSUNKZ1BUQ21lbzZySVVoWWN3?oc=5",
+          "source": "Telediario",
+          "date": "2026-10-23",
+          "published_at": "2026-10-24T01:25:00Z",
+          "category": "CDMX",
+          "borough": "Iztapalapa",
+          "location": "Iztapalapa (mencionada en el titular)",
+          "local_url": "/noticias/?id=b6b989980c50bcd46a98&mes=2026-10",
+          "brief": {
+            "lead": "Una nota de Telediario comunica un caso relacionado con una detención o una presunta conducta delictiva en Iztapalapa. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
@@ -5243,34 +5261,6 @@
             "author": "eurimaco",
             "license": "CC BY-SA 3.0",
             "source": "https://commons.wikimedia.org/wiki/File:D.F._-_panoramio_%287%29.jpg"
-          }
-        },
-        {
-          "title": "Balacera en tianguis El Salado de Iztapalapa: mujer muere por bala perdida mientras comía tacos; hay 3 heridos y un detenido",
-          "description": "La información publicada por Eje Central trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxPSzVuck1hcEVsTEoxaUdYQzluWDROM2hRcFUwVjZIN092bEYxekpvaktJalhvVGVhdWZYZ1FrbThwVFF1MEd3SUt2NWk4WWV3cnB6RTFJMFZObnpkV3lLaW9kNXNJUnJORVBYak9MeW56OVlyWlhqU3VGNlZFV3liNnBjMUtvSVdteXYyanJnR3VPXzBmamR1eV82TExBSXZ4Zk5kdExhWHh1ZjdVVnVhem9nWmdTUjZUR2hwYk1iMjh0M3FxM2FfSWRWVkhkTUVmNjNuaVpYTGJUUzZDSFRJMnJyMFZjM093U2xoQXZ0OW5tb2ZRalA4?oc=5",
-          "source": "Eje Central",
-          "date": "2026-10-14",
-          "published_at": "2026-10-14T19:42:32Z",
-          "category": "CDMX",
-          "borough": "Iztapalapa",
-          "location": "Iztapalapa (mencionada en el titular)",
-          "local_url": "/noticias/?id=a9b4bb5936845ae967c3&mes=2026-10",
-          "brief": {
-            "lead": "La información publicada por Eje Central trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "archivo_cdmx_006",
-            "url": "/assets/fotos/archivo_cdmx_006.jpg",
-            "category": "CDMX",
-            "borough": "",
-            "topic": "Catedral Ii (172219027)",
-            "author": "Waender Alonso Bello",
-            "license": "CC BY 3.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Catedral_Ii_%28172219027%29.jpeg"
           }
         }
       ]
