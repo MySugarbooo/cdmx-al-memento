@@ -30,6 +30,23 @@ class PortalTests(unittest.TestCase):
         self.assertIn('id="topic-stage"', home)
         self.assertIn('id="topic-stage-grid"', home)
 
+    def test_home_main_story_uses_recent_feed_instead_of_a_fixed_article(self):
+        home = get("index.html")
+        script = get("app.js")
+        self.assertIn('id="nota-principal"', home)
+        for ident in ("lead-story-kicker", "lead-story-title", "lead-story-summary",
+                      "lead-story-meta", "lead-story-link"):
+            self.assertIn('id="' + ident + '"', home)
+        self.assertNotIn('id="nota-tortas-don-pepe"', home)
+        self.assertNotIn("Vecinos marchan en defensa de Tortas Don Pepe", home)
+        self.assertIn("/app.js?v=20261025-noticia-principal", home)
+        self.assertIn("function renderLeadStory(items)", script)
+        self.assertIn("renderLeadStory(articles)", script)
+        self.assertIn("freshAfter=now-72*60*60*1000", script)
+        self.assertIn("function applyNewsFeed(feed)", script)
+        self.assertIn("refreshHomepageNews()", script)
+        self.assertIn("document.visibilityState==='visible'", script)
+
     def test_original_pages_have_metadata_and_content(self):
         cases = {
             "cerca/": ("CDMX cerca de ti", 'data-borough-select'),
