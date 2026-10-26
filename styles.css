@@ -541,3 +541,10 @@ html,body{overflow-x:clip}
 @media(prefers-reduced-motion:reduce){
  ::view-transition-old(root),::view-transition-new(root){animation:none}
 }
+
+/* Mapa compacto en portada: reglas finales para prevalecer sobre diseño anterior. */
+.home-map-section{width:min(100%,300px)!important;max-width:300px!important;margin:12px 0 14px!important}
+.home-map-section .city-map-teaser--hero{width:100%!important;max-width:300px!important;grid-template-rows:auto 95px auto!important}
+.home-map-section .city-map-teaser--hero .city-map-preview{height:95px!important;min-height:0!important;max-height:95px!important}
+.home-map-section .city-map-teaser--hero .city-map-preview iframe{height:95px!important;min-height:0!important}
+@media(max-width:590px){.home-map-section{width:min(100%,240px)!important;max-width:240px!important}.home-map-section .city-map-teaser--hero{max-width:240px!important;grid-template-rows:auto 80px auto!important}.home-map-section .city-map-teaser--hero .city-map-preview,.home-map-section .city-map-teaser--hero .city-map-preview iframe{height:80px!important;max-height:80px!important}}
