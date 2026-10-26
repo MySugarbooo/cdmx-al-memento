@@ -30,10 +30,16 @@ const leadStory={
 function renderLeadStory(items){
  if(!leadStory.title)return;
  const now=Date.now();
- const candidates=(Array.isArray(items)?items:[]).filter(a=>{
+ const mxDay=date=>new Intl.DateTimeFormat('en-CA',{timeZone:'America/Mexico_City',year:'numeric',month:'2-digit',day:'2-digit'}).format(date);
+ const today=mxDay(new Date(now));
+ const yesterday=mxDay(new Date(now-24*60*60*1000));
+ const published=(Array.isArray(items)?items:[]).filter(a=>{
   const ts=Date.parse(a.published_at||'');
   return validLink(a.url)&&Number.isFinite(ts)&&ts<=now+15*60*1000;
  });
+ const fromDay=day=>published.filter(a=>mxDay(new Date(a.published_at))===day);
+ const todayNews=fromDay(today),yesterdayNews=fromDay(yesterday);
+ const candidates=todayNews.length?todayNews:yesterdayNews.length?yesterdayNews:published;
  // Se elige una portada distinta en cada visita, evitando repetir la anterior si hay opciones.
  const lastKey='cdmx-last-cover';
  let previous='';try{previous=localStorage.getItem(lastKey)||''}catch(e){}
@@ -44,14 +50,14 @@ function renderLeadStory(items){
  if(!newest){
   leadStory.kicker.textContent='SIN NOTICIAS PUBLICADAS DISPONIBLES';
   leadStory.title.textContent='No hay noticias publicadas disponibles para destacar';
-  leadStory.summary.textContent='El recopilador todavía no proporciona una noticia con fecha reciente. Consulta los reportes anteriores sin confundirlos con noticias de hoy.';
-  leadStory.meta.textContent='No se mostrará como actual ninguna noticia antigua.';
+  leadStory.summary.textContent='No hay noticias publicadas disponibles en el listado. Consulta el archivo.';
+  leadStory.meta.textContent='Las noticias se mostrarán con su fecha original.';
   leadStory.link.href='/reportes/';
   leadStory.link.textContent='Consultar reportes anteriores →';
   return;
  }
  leadStory.kicker.textContent=(newest.borough?newest.borough.toLocaleUpperCase('es-MX')+' · ':'')+
-  'NOTICIA PUBLICADA · '+String(newest.category||'CDMX').toLocaleUpperCase('es-MX');
+  (todayNews.length?'NOTICIA DE HOY':yesterdayNews.length?'NOTICIA DE AYER':'NOTICIA DE ARCHIVO')+' · '+String(newest.category||'CDMX').toLocaleUpperCase('es-MX');
  leadStory.title.textContent=newest.title;
  leadStory.summary.textContent=newest.brief?.lead||
   'Titular recopilado de una fuente externa. Consulta la publicación original para verificar los detalles.';
