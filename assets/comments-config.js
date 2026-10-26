@@ -2,7 +2,12 @@
    Registra el proyecto en Firebase, activa Google y Facebook en Authentication,
    crea Firestore y añade el dominio cdmx-al-memento.pages.dev a dominios autorizados.
    La app de Facebook también debe permitir el redirect de Firebase Auth. */
-window.CDMX_COMMENTS_FIREBASE = null;
+window.CDMX_COMMENTS_FIREBASE = {
+  apiKey: 'AIzaSyAbbaz25BSHNHqQpwmdyMk_eTEb7ZDXtfc',
+  authDomain: 'cdmx-al-memento.firebaseapp.com',
+  projectId: 'cdmx-al-memento',
+  appId: '1:266320120973:web:f6f1b3129435284b3c26c4'
+};
 // Ejemplo (reemplazar null por la configuración web pública de Firebase):
 // window.CDMX_COMMENTS_FIREBASE = {
 //   apiKey: "...", authDomain: "tu-proyecto.firebaseapp.com",
