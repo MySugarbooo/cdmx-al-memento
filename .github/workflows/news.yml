@@ -52,9 +52,6 @@ jobs:
       - name: Generar guías originales de las 16 alcaldías
         run: python scripts/generar_guias.py
       - name: Verificar ubicación, fecha y retención antes de actualizar
-        # Las pruebas de regresión se registran, pero no deben bloquear la actualización editorial.
-        # Los errores de generación y publicación siguen deteniendo el flujo.
-        continue-on-error: true
         run: python -m unittest discover -s tests -p 'test_*.py' -v
       - name: Verificar sintaxis de los scripts interactivos
         run: |
