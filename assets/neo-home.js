@@ -22,8 +22,8 @@ const photoUrl=a=>{
 function el(tag,cls,txt){const x=document.createElement(tag);if(cls)x.className=cls;if(txt!==undefined)x.textContent=txt;return x}
 const skyline='<svg class="neo-brand-mark" viewBox="0 0 100 85" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="neoRose" x1="0" x2="1"><stop stop-color="#ff8bcb"/><stop offset="1" stop-color="#ec2790"/></linearGradient></defs><g fill="url(#neoRose)"><path d="M4 79h92v4H4zM12 77V54l9-5 9 6v22zM34 77V25l8-5 7 9v48zM53 77V35l11-8 7 7v43zM76 77V47l8-4 5 8v26z"/><path d="M43 20l4-15 5 16-5 3zM45 4l3-4 2 4zM60 27l-2-15 7 7-1 11z"/><path d="M9 55l5-15 3 13zM38 27v-12h6v10zM80 47V34h4v11z"/></g><g fill="#ffd4e8"><rect x="40" y="38" width="3" height="8"/><rect x="60" y="42" width="3" height="6"/><rect x="80" y="55" width="3" height="7"/></g></svg>';
 const boroughSvg='<svg viewBox="0 0 230 265" role="img" aria-label="Mosaico ilustrativo rosa inspirado en la forma de Ciudad de México; consulta el mapa oficial para límites precisos"><defs><clipPath id="neoShape"><path d="M108 8l26 21 17-6 7 25 22 16-3 23 31 24-13 26 17 33-22 12 1 31-25 8-7 28-28-8-28 14-28-16-30 1-13-26-20-13 12-34-14-26 13-24-7-24 29-9 7-29 20 3z"/></clipPath></defs><g clip-path="url(#neoShape)" stroke="#86254e" stroke-width="1"><path fill="#ec4793" d="M0 0h240v270H0z"/><path fill="#fa6aad" d="M5 8h100v52H5z"/><path fill="#cc3982" d="M105 0h115v67H105z"/><path fill="#fa81bb" d="M0 63h69v60H0z"/><path fill="#e74b94" d="M68 60h66v68H68z"/><path fill="#fd79b5" d="M134 66h116v65H134z"/><path fill="#aa3975" d="M0 121h59v75H0z"/><path fill="#c63d82" d="M57 126h71v65H57z"/><path fill="#f96eaa" d="M128 131h53v73h-53z"/><path fill="#df4f96" d="M181 132h58v65h-58z"/><path fill="#f68cbf" d="M0 194h88v70H0z"/><path fill="#ef5b9c" d="M88 193h61v74H88z"/><path fill="#b93e7b" d="M149 204h100v62H149z"/><path fill="#da3e88" d="M15 28l50 36-14 50-44-28z"/><path fill="#fd8fc3" d="M98 22l42 57-31 52-29-55z"/><path fill="#a73574" d="M31 169l54-39 25 37-45 52z"/><path fill="#eb4a90" d="M153 101l51 22-22 40-37-23z"/></g><path d="M108 8l26 21 17-6 7 25 22 16-3 23 31 24-13 26 17 33-22 12 1 31-25 8-7 28-28-8-28 14-28-16-30 1-13-26-20-13 12-34-14-26 13-24-7-24 29-9 7-29 20 3z" fill="none" stroke="#fbb4d5" stroke-width="2"/></svg>';
-const shell=document.createElement('section');shell.id='neo-home';shell.setAttribute('aria-label','Portada de CDMX AL MEMENTO');
-shell.innerHTML=[
+const shell=document.getElementById('neo-home')||document.createElement('section');shell.id='neo-home';shell.setAttribute('aria-label','Portada de CDMX AL MEMENTO');
+if(!shell.hasChildNodes())shell.innerHTML=[
 '<header class="neo-head"><div class="neo-head-top"><div class="neo-head-status"><time id="neo-date"></time><span class="neo-visitor" id="neo-visitors">Visitas: consultando…</span></div>',
 '<a class="neo-brand" href="/" aria-label="CDMX AL MEMENTO · inicio">',skyline,'<strong class="neo-brand-name">CDMX<em>AL MEMENTO</em></strong></a>',
 '<div class="neo-head-actions"><form class="neo-search" id="neo-search-form" role="search"><input id="neo-search-input" type="search" placeholder="Buscar noticias..." aria-label="Buscar noticias"><button type="submit" aria-label="Buscar">⌕</button></form><button id="neo-theme" class="neo-circle" aria-label="Cambiar tema" title="Cambiar tema" type="button">☾</button><a class="neo-circle neo-user" href="/comunidad/" aria-label="Mi comunidad">♙</a></div></div>',
@@ -127,25 +127,66 @@ async function communityPreview(){
   }
  }catch(err){out.replaceChildren(el('p','neo-community-intro','Visita el foro para consultar preguntas, publicaciones y respuestas reales.'));}
 }
-async function start(){
+function eligibleStories(feed){
+ const items=Array.isArray(feed)?feed:(Array.isArray(feed?.articles)?feed.articles:[]);
+ return items.filter(a=>a&&typeof a.title==='string'
+  &&/^https:\/\/news\.google\.com\//.test(a.url||'')
+  &&/^\/noticias\/\?/.test(a.local_url||''));
+}
+function applyStories(items){
+ if(!items.length)return false;
+ // Conservar la noticia que el lector está viendo cuando se actualiza el feed.
+ const old=state.stories[state.current]?.url||'';
+ const existing=old?items.findIndex(a=>a.url===old):-1;
+ state.stories=items;
+ let current=existing;
+ if(current<0){
+  let last='';try{last=sessionStorage.getItem('cdmx-neo-last-feature')||''}catch{}
+  const other=items.slice(0,Math.min(12,items.length)).findIndex(a=>a.url!==last);
+  current=other<0?0:other;
+ }
+ state.current=current;
+ try{sessionStorage.setItem('cdmx-neo-last-feature',items[current].url)}catch{}
+ renderHero();renderNews();
+ return true;
+}
+function start(){
+ // El diseño tiene que existir inmediatamente, independientemente de la red,
+ // del RSS, de Firebase, de Google AdSense y de la autorización de permisos.
  try{
-  const resp=await fetch('/news.json?t='+Date.now(),{cache:'no-store'});
-  if(!resp.ok)throw Error('feed no disponible');
-  const feed=await resp.json();
-  const articles=(Array.isArray(feed.articles)?feed.articles:[]).filter(a=>a&&typeof a.title==='string'&&/^https:\/\/news\.google\.com\//.test(a.url||'')&&/^\/noticias\/\?/.test(a.local_url||''));
-  if(!articles.length)throw Error('feed vacío');
-  state.stories=articles;
   initStatic();
-  root.prepend(shell);
-  try{const prev=sessionStorage.getItem('cdmx-neo-last-feature');const next=articles.slice(0,12).findIndex(a=>a.url!==prev);state.current=next<0?0:next;sessionStorage.setItem('cdmx-neo-last-feature',articles[state.current].url)}catch{state.current=0}
-  renderHero();const incoming=new URLSearchParams(location.search).get('buscar');if(incoming){state.query=incoming.slice(0,90).trim().toLocaleLowerCase('es-MX');shell.querySelector('#neo-search-input').value=incoming.slice(0,90)}renderNews();
+  if(!shell.isConnected)root.prepend(shell);
   document.documentElement.classList.add('neo-active');
+  const incoming=new URLSearchParams(location.search).get('buscar');
+  if(incoming){
+   state.query=incoming.slice(0,90).trim().toLocaleLowerCase('es-MX');
+   shell.querySelector('#neo-search-input').value=incoming.slice(0,90);
+  }
+  const fallback=document.getElementById('embedded-news-fallback');
+  if(fallback?.textContent){
+   try{applyStories(eligibleStories(JSON.parse(fallback.textContent)))}
+   catch(err){console.warn('No se pudo leer la copia local de noticias:',err)}
+  }
+  if(!state.stories.length){
+   shell.querySelector('#neo-news-status').textContent='Actualizando titulares. Mientras tanto puedes consultar las secciones y el archivo.';
+  }
   mirrorVisits();
+  // La comunidad se carga aparte; sus errores nunca cambian la portada.
   communityPreview();
  }catch(err){
-  // La portada anterior permanece disponible ante fallos del feed, navegador o conexión.
-  console.warn('La nueva portada no pudo iniciarse; se mantiene el diseño anterior.',err);
+  console.error('Error al inicializar los widgets de portada:',err);
+  // El HTML estático conserva la interfaz nueva aunque falle cualquier widget.
  }
+ // Actualizar las noticias en segundo plano. Nunca mostrar la portada antigua.
+ fetch('/news.json?t='+Date.now(),{cache:'no-store'})
+ .then(resp=>{if(!resp.ok)throw Error('Noticias no disponibles (HTTP '+resp.status+')');return resp.json()})
+ .then(feed=>{
+  const items=eligibleStories(feed);
+  if(!applyStories(items))console.warn('Feed sin titulares válidos: se mantiene el contenido disponible.');
+ })
+ .catch(err=>{
+  console.warn('No se pudo refrescar el feed: sigue activa la portada y sus noticias de respaldo.',err);
+ });
 }
 start();
 })();
