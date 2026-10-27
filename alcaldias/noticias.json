@@ -1,10 +1,38 @@
 {
-  "updated": "2026-10-27 04:47 UTC",
+  "updated": "2026-10-27 05:47 UTC",
   "boroughs": [
     {
       "name": "La Magdalena Contreras",
-      "count": 68,
+      "count": 69,
       "articles": [
+        {
+          "title": "Clima en La Magdalena Contreras: Martes 27 de octubre con lluvia ligera y ambiente templado",
+          "description": "El pronóstico recogido por El Heraldo de México se refiere a lluvias ligeras en La Magdalena Contreras. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
+          "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNSEpLbThndFNzeS1hcFpGRU0wOGNUZUZQSzViMVkyajlWUUhjb01xTmdSTldPQk04LUdodlBBODkySk9yZjZZUzRJVGNWVkRERWpsbDVXSGNWaXo4YXRtaW4zeUQwT1g5bnY1RFd4aTlvX3ZVdm9nczRPWDhIN2dsdnpncXZlSTlYVGRNTVl0Wkh0aV8wZjB2ak9mSTBhbTdmZnMzSUJTb1BNbWJ4Q2RsN19kQk43MlFzMHZTc3Utb1JQbGJZS3U4THlrRlBKMzFvcjduRDJOaWlONTFVRERFeG9HWkMtdw?oc=5",
+          "source": "El Heraldo de México",
+          "date": "2026-10-26",
+          "published_at": "2026-10-27T05:00:00Z",
+          "category": "CDMX",
+          "borough": "La Magdalena Contreras",
+          "location": "La Magdalena Contreras (mencionada en el titular)",
+          "local_url": "/noticias/?id=2ae66a2cae9a32a43f7d&mes=2026-10",
+          "brief": {
+            "lead": "El pronóstico recogido por El Heraldo de México se refiere a lluvias ligeras en La Magdalena Contreras. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_magdalena-contreras",
+            "url": "/assets/alcaldias/magdalena-contreras.jpg",
+            "category": "CDMX",
+            "borough": "La Magdalena Contreras",
+            "topic": "Río y bosque de Los Dinamos, La Magdalena Contreras",
+            "author": "Ananda xd",
+            "license": "CC BY-SA 4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Rio_de_los_Dinamos_en_CDMX.jpg"
+          }
+        },
         {
           "title": "Balacera en fiesta patronal de Magdalena Contreras deja dos muertos",
           "description": "La información publicada por Telediario trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -484,24 +512,6 @@
           "local_url": "/noticias/?id=39b8fd15cf59850d84f7&mes=2026-10",
           "brief": {
             "lead": "La información publicada por N+ trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
-        },
-        {
-          "title": "Incendio consume tres vehículos y una vivienda en Magdalena Contreras, CDMX",
-          "description": "El reportaje citado por Excélsior aborda los precios de vivienda o los cambios residenciales en La Magdalena Contreras. Las cifras y su metodología deben examinarse antes de concluir cuántas familias han sido desplazadas o qué tan representativos son determinados anuncios de renta.",
-          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPY0hxUVB0Z3dTM2VJYWdYUjI4NVZhZ1NhdE9tc1ZDZUFRTmhWSUhpWE9fdUZnZFN3dHp5akxrR2RxLU5uMFk4TGs3bmNpM2NIclI4LTV1SEMzNEl0akJWODhxRHRmc0tDTHUtekxrWm0xYWduT0VNOGxMMnpSWl96bzlTd2RkRHdsQUw1bnZ1LWw0dWthUTlKSnF4VUV5ZlFaZzNIWVFYaGNJMWN5RG91a3JRY9IBuAFBVV95cUxQaVZzamx6TXBZWGRsV1dXc0FfYkI4VDIwRXA3ZVZZS3JkbS1iSFJZSG1YZzQ2NWsxNldHT1NZeHZfb1RWcE9mR05lMHJnYmpoenBSY3QwdzRJaWxLWVE3Q2JKYUQwcHQ0WHJCbUZoZUZXal9pc1N4VG5ZYUctSmxCR2dBYlpGX2d4VDhPU1lDV3d2SG9Wek53ZXZIYUxPb2NZSE1vYm10Rk1mSVh4ZXJ0V0NaRS1iZnBu?oc=5",
-          "source": "Excélsior",
-          "date": "2026-10-22",
-          "published_at": "2026-10-22T14:20:27Z",
-          "category": "CDMX",
-          "borough": "La Magdalena Contreras",
-          "location": "La Magdalena Contreras (mencionada en el titular)",
-          "local_url": "/noticias/?id=734a002aad56b7c170c8&mes=2026-10",
-          "brief": {
-            "lead": "El reportaje citado por Excélsior aborda los precios de vivienda o los cambios residenciales en La Magdalena Contreras. Las cifras y su metodología deben examinarse antes de concluir cuántas familias han sido desplazadas o qué tan representativos son determinados anuncios de renta.",
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
@@ -1447,8 +1457,36 @@
     },
     {
       "name": "Benito Juárez",
-      "count": 76,
+      "count": 77,
       "articles": [
+        {
+          "title": "Clima en Benito Juárez: martes 27 de octubre con lluvia ligera y ambiente templado",
+          "description": "El pronóstico recogido por El Heraldo de México se refiere a lluvias ligeras en Benito Juárez. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
+          "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPSGJZYU1WaFgxS3FVVEFDM0QzMkxPVHRxcHdvbHhvUHFiRllzN19URUk5ODBEZzF2VXNoVGNaekdqaVQzQUlnUE5nZllkVnh3ZFM5eVdlNHVxeDY3YWZ1NWxMWFNLel9LMXA0VlQ2SmVHRTM4ck9kMUlVMFpadVp6UFBDUm9HMjZ0UE1XZ2FPdTMtMF9RcHRpZTZxbFk0MnVlTnQ2NVJnUnNIQWhWbzB1NzE3bGFXNXBydnkyMVBnY2pyMVB5WG1QMXVsUXpfeEJIbnJzN3F3LUl3Zw?oc=5",
+          "source": "El Heraldo de México",
+          "date": "2026-10-26",
+          "published_at": "2026-10-27T05:00:00Z",
+          "category": "CDMX",
+          "borough": "Benito Juárez",
+          "location": "Benito Juárez (mencionada en el titular)",
+          "local_url": "/noticias/?id=de0ed1526df60ab45d8d&mes=2026-10",
+          "brief": {
+            "lead": "El pronóstico recogido por El Heraldo de México se refiere a lluvias ligeras en Benito Juárez. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_benito-juarez",
+            "url": "/assets/alcaldias/benito-juarez.jpg",
+            "category": "CDMX",
+            "borough": "Benito Juárez",
+            "topic": "Parque Hundido, alcaldía Benito Juárez",
+            "author": "User:etnoboris",
+            "license": "CC BY-SA 3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Parque_Hundido.jpeg"
+          }
+        },
         {
           "title": "Beca Benito Juárez 2026. qué beneficiarios reciben su pago mañana martes 27 de octubre",
           "description": "La información publicada por Infobae trata un asunto registrado en la sección de Metro del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -1872,30 +1910,12 @@
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           }
-        },
-        {
-          "title": "Trabajadores IMSS de la Clínica 4 bloquean Av. Benito Juárez, en Guadalupe",
-          "description": "La cobertura de ABC Noticias se centra en movilizaciones de trabajadores del IMSS y en su posible o reportada repercusión sobre calles de Ciudad de México. Los trayectos y horarios deben revisarse en avisos recientes, pues una convocatoria no equivale a cierres confirmados durante todo el día.",
-          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNSW5RZE9YdnVRVHhXdXZQLURLM0V5QWJqOXN3R1ZKckNmN2Y0SktpZ2NTQnoyOS1pdURsVDhfcmRZYkpDWjZKVjRtbmVITUVaNW5ybWtJSl83ZWw3MWpvYXlxOXB1ZEhvZENtYWZ0SDhnQ3lfM0dmcmJBRVpKc0tQTkp1WENTTUhzeVlmUXpwdWM3WkxlTmd6SHZTMGx0Y2NoUEtqeU12bTUxMXNnSjc1UENJaG9PaHAyMnZ0bFhjZ21ldw?oc=5",
-          "source": "ABC Noticias",
-          "date": "2026-10-21",
-          "published_at": "2026-10-22T05:14:52Z",
-          "category": "CDMX",
-          "borough": "Benito Juárez",
-          "location": "Benito Juárez (mencionada en el titular)",
-          "local_url": "/noticias/?id=85849f5d79697c5f44ed&mes=2026-10",
-          "brief": {
-            "lead": "La cobertura de ABC Noticias se centra en movilizaciones de trabajadores del IMSS y en su posible o reportada repercusión sobre calles de Ciudad de México. Los trayectos y horarios deben revisarse en avisos recientes, pues una convocatoria no equivale a cierres confirmados durante todo el día.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
         }
       ]
     },
     {
       "name": "Coyoacán",
-      "count": 73,
+      "count": 74,
       "articles": [
         {
           "title": "Gerardo Villanueva busca coordinar Morena en Coyoacán rumbo a 2027",
@@ -1969,6 +1989,24 @@
             "author": "AlejandroLinaresGarcia",
             "license": "CC BY-SA 4.0",
             "source": "https://commons.wikimedia.org/wiki/File:JardinCentenarioCoyoacan.JPG"
+          }
+        },
+        {
+          "title": "Morena busca ganar Coyoacán en el 2027",
+          "description": "La información publicada por Diario Basta! trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFA0TXU3bktFTW4ySWxwODhDR1ZOTjNKYTRBajVqR1ZlVU83X1ljclNXRFNITG5zMkx4czhoVk4zVUR2aW9hZnFuWDFuWFcybmdGZklnS0VKWnRZTU83TFFPZnJQVUxncy1BMjQtWjJLWEdlejJjX0ZqdXRvbl9vUEU?oc=5",
+          "source": "Diario Basta!",
+          "date": "2026-10-25",
+          "published_at": "2026-10-25T07:00:00Z",
+          "category": "CDMX",
+          "borough": "Coyoacán",
+          "location": "Coyoacán (mencionada en el titular)",
+          "local_url": "/noticias/?id=0004b8b101c1ee7bc754&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por Diario Basta! trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           }
         },
         {
@@ -2330,30 +2368,12 @@
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           }
-        },
-        {
-          "title": "Coyoacán y el Tribunal de Justicia Administrativa de la CDMX se unen para orientación legal",
-          "description": "La información publicada por La Silla Rota trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOYkJfLXJrRVVEUF8zWFIxYkFacExQUzlqa1ZwbmVhU1hGbmhHX1FDdjZVMjhwUmdJaXhFTnMxdXB0eXVtcHVrNS1Idkd2MXBUQmhzb0pkYkYtUkpwZ2Job2xVR0NSNXljUE1UbUJjWndjSFhoVzZUN3hRd3ZPWTc3SmgxVUI2XzY0a2RySS15OVYwemkxMGZtZU9ROS1zcS1MaTFIbmtmN2hQRDZjb3NOTzVjMDFkbXRja3BXdzVrdDBPZzhlR3F4LUlPOFdnS3FvNWctclZhQ0k2MmZRVDQxMXd3?oc=5",
-          "source": "La Silla Rota",
-          "date": "2026-10-19",
-          "published_at": "2026-10-20T01:14:00Z",
-          "category": "CDMX",
-          "borough": "Coyoacán",
-          "location": "Coyoacán (mencionada en el titular)",
-          "local_url": "/noticias/?id=1c152dc0180fc520f698&mes=2026-10",
-          "brief": {
-            "lead": "La información publicada por La Silla Rota trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
         }
       ]
     },
     {
       "name": "Cuajimalpa de Morelos",
-      "count": 20,
+      "count": 21,
       "articles": [
         {
           "title": "Cuajimalpa fortalece la economía de 5 mil 500 familias con Tarjeta Madre",
@@ -2368,6 +2388,24 @@
           "local_url": "/noticias/?id=6b6b5b5fe8c81e52d8d0&mes=2026-10",
           "brief": {
             "lead": "La información publicada por El Momento Nacional trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          }
+        },
+        {
+          "title": "Cuajimalpa lidera baja en percepción de inseguridad en la CDMX con caída de 9.7 puntos: Inegi",
+          "description": "La información publicada por El Sol de México trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQVDhTVTNVMWRTUkVNQUU4aWV2bUxBTFFJOFRwYTJkSnY3VFoydmFuNW9heUpDS3RCVWVwdDJ5UGR3VGM5MW9BdjEtd2o5b01yYkRQSmFySjJaVlpsOHVtQ3FJQl84SE9zRzNGX01iaXVvS3VPaTFvREVuVkNIUlQybVBUQWRROXdCM1Zhb1p5dEswdTJTcGZlRjN3OEhIem5JN0FUbHdaREY3clBrUWhoRWlBaFNqWW10Tk9JQTJBZHJXNjIzOUR1VFFvSzhyQnY0U1RxN3VlZ0l1UHJnZGFSUEwzTGZGa09Pc2c?oc=5",
+          "source": "El Sol de México",
+          "date": "2026-10-24",
+          "published_at": "2026-10-24T06:03:29Z",
+          "category": "CDMX",
+          "borough": "Cuajimalpa de Morelos",
+          "location": "Cuajimalpa de Morelos (mencionada en el titular)",
+          "local_url": "/noticias/?id=a8116c32f8f911258c6f&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por El Sol de México trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
@@ -3237,8 +3275,36 @@
     },
     {
       "name": "Gustavo A. Madero",
-      "count": 44,
+      "count": 45,
       "articles": [
+        {
+          "title": "Pronóstico del clima en Gustavo A. Madero para el martes 27 de octubre: lluvia ligera y ambiente templado",
+          "description": "El pronóstico recogido por El Heraldo de México se refiere a lluvias ligeras en Gustavo A. Madero. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
+          "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxNMENGUm5nV1Z6OW5PVEd2cFdhYkd4eko0MnpvTG9GNVFWc1c1SzFCWFhVNmxNano3TkxXcUVTX29SVmNXVHctOVZtZHZOUTdjY0o1ZERYVzJ1Z0VEVmZaN2pTUGxDWXA5QVh2X2R6ZHRTVkxoNEZHNUU3ZlVKVEN3MUdCZzB3Wm4tSFZLS0VUTktLU3B2MkRxY0hER1FqZlFtMkdFblVkX1VkbTY4RDNuZXhncm8tY2kyTXNxNFE5R2RJdERKcmtZZjROMjU1S3NlLWVnazZtN1NMSEh6Z01kQlB0c3BSaTVkZnBxVHVfUTZqQjZFOUxN?oc=5",
+          "source": "El Heraldo de México",
+          "date": "2026-10-26",
+          "published_at": "2026-10-27T05:00:00Z",
+          "category": "CDMX",
+          "borough": "Gustavo A. Madero",
+          "location": "Gustavo A. Madero (mencionada en el titular)",
+          "local_url": "/noticias/?id=5a31c5d7b8baa9e9efe9&mes=2026-10",
+          "brief": {
+            "lead": "El pronóstico recogido por El Heraldo de México se refiere a lluvias ligeras en Gustavo A. Madero. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_gustavo-a-madero",
+            "url": "/assets/alcaldias/gustavo-a-madero.jpg",
+            "category": "CDMX",
+            "borough": "Gustavo A. Madero",
+            "topic": "Capilla del Cerrito en el Tepeyac, Gustavo A. Madero",
+            "author": "Catedrales e Iglesias/Cathedrals and Churches",
+            "license": "CC BY 2.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Capilla_Cerrito_del_Tepeyac_%28Basilica_Nuestra_Se%C3%B1ora_de_Guadalupe%29_Gustavo_A_Madero%2C_Ciudad_de_M%C3%A9xico_02.jpg"
+          }
+        },
         {
           "title": "Detienen a hombre con 40 dosis de presunto cristal en Gustavo A. Madero",
           "description": "Una nota de Sociedad Noticias comunica un caso relacionado con una detención o una presunta conducta delictiva en Gustavo A. Madero. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
@@ -3708,24 +3774,6 @@
           "local_url": "/noticias/?id=53cb809ee1ab1243c2f0&mes=2026-10",
           "brief": {
             "lead": "La información publicada por Excélsior trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
-        },
-        {
-          "title": "Santander reconoce a tres policías de la CDMX que recuperaron y devolvieron 16 mil 800 pesos olvidados en cajeros automáticos del aeropuerto y Gustavo A. Madero",
-          "description": "La información publicada por El Imparcial trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMi0AJBVV95cUxPS3I4WW5kVVZpSXdoNWU4b3p2Rk16RndoZEcxa3hxZ2tuYWFWajZqajhiWk1lWGV1akt5bmcwWUhualRmeS1GWDFjMkF4a1VKbEhJVVdqM2k0MmFzcVNrdEszNHNvLTU2dVFpSy1MdENJcHZjYVRZSEdtSEQ3bVFSa1BUNUFORUZDU3A1S013aU5MVUVqVlNWeThibVVXek1iRzlPMGttZlItTXdtWHB2ZFJNRTVoSWFGV0RXZTdKamJoQmVkOVpoejJ4b000dzZBT3dXaFBueUljTWhRajRnREc2dGpiZ01ZR056eko0LUJPMW9IVjRuc3F1THl5TDhEYzk4X2lUR3o4VHBpRW1YN1c3ME9yMjF6Z0p6OTVRMGFKaUh4LUl5RTNDSU9jM1l3amJ3YWdkcVRhTlVPNkxpVlNVU1Zwb1hHOV9wOVZUU27SAcoCQVVfeXFMT1BGZno4dUotNXU3XzRsNVQwWTVWZngwY3kxcWpTTDFhc2MwbC1ZQkdMbzhsa0J0NGdjaVNGMV9FWEdmVS1QSm51cW94SVA0bzJRMmhVb0NDWFlfajBsMFEyOVdQcl9yWGg2Sm50b2x1QXh5NWp2c0E4akVDZEZNV0hqSHNWejFTdkdyNXRPTkxTbnRXdXRtQ3BldHE2cEhJdHdxbDRuZVFWUkw2ZENBa3ZON0JiZWN4aUE2NDJDdUF0cGhlbjczcXZncE84RE5VczFxV28yNVdXblFrcGhWVklyWHFsZUo3dFpHeWo4ZmdEMWhXU2NhSWpVQ2xRSUtpN3AwTHpiTV9Wa09PdG5UejctREJ1WUhFLTB6cDJ5Y0ZvNjlMZXBrRElwTk4xaDlNQTNoNXB3djMzYlREejFUTXVhb2xpa3MxMzRB?oc=5",
-          "source": "El Imparcial",
-          "date": "2026-10-19",
-          "published_at": "2026-10-19T17:55:29Z",
-          "category": "CDMX",
-          "borough": "Gustavo A. Madero",
-          "location": "Gustavo A. Madero (mencionada en el titular)",
-          "local_url": "/noticias/?id=b6ba81256deba9fb2a74&mes=2026-10",
-          "brief": {
-            "lead": "La información publicada por El Imparcial trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
@@ -4223,8 +4271,36 @@
     },
     {
       "name": "Iztapalapa",
-      "count": 137,
+      "count": 138,
       "articles": [
+        {
+          "title": "Clima en Iztapalapa: martes 27 de octubre con lluvia ligera y ambiente templado",
+          "description": "El pronóstico recogido por El Heraldo de México se refiere a lluvias ligeras en Iztapalapa. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
+          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQdG1QLXhzR0wyZ21JWXg1ODluaHhhRTQzZk5ISTJway04VXVLc2V0NGxyQ3NLSEMyVlJEVDJkX1JEVTZRZE4wRGhzeTI1SnliT2ZrbnZUTWoxUGtSTmFSZGg1NTFYZ3o5VnpSWHNuZnZ3RThpTlgxUjF5blYyR3I1VE15SVBWZGNwUFJtTmxsR0NiZGh5a01wbFY1RWFHLXNVQ3Fmd19CS2U5YlNQZXpCWUNqRWs1eGVLbDV5YXllaFhhS3pmcmZZdXFaUGJoNk1WbTlSSUpn?oc=5",
+          "source": "El Heraldo de México",
+          "date": "2026-10-26",
+          "published_at": "2026-10-27T05:00:00Z",
+          "category": "CDMX",
+          "borough": "Iztapalapa",
+          "location": "Iztapalapa (mencionada en el titular)",
+          "local_url": "/noticias/?id=706aca18a18046956cd2&mes=2026-10",
+          "brief": {
+            "lead": "El pronóstico recogido por El Heraldo de México se refiere a lluvias ligeras en Iztapalapa. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_iztapalapa",
+            "url": "/assets/alcaldias/iztapalapa.jpg",
+            "category": "CDMX",
+            "borough": "Iztapalapa",
+            "topic": "Vista de Iztapalapa desde el Cerro de la Estrella",
+            "author": "Secretaría de Cultura Ciudad de México from México",
+            "license": "CC BY 2.0",
+            "source": "https://commons.wikimedia.org/wiki/File:MX_MM_MUSEO_CERRO_DE_LA_ESTRELLA_%2849522225751%29.jpg"
+          }
+        },
         {
           "title": "Falta mantenimiento en caminos seguros de Iztapalapa",
           "description": "La información publicada por El Sol de México trata un asunto registrado en la sección de Seguridad del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -4648,31 +4724,41 @@
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           }
-        },
-        {
-          "title": "Balacera en Iztapalapa, CDMX, Deja 2 Muertos y Un Herido; Hay 2 Detenidos",
-          "description": "La información publicada por N+ trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPRjRDV2NuUDBVQXk0SEVYTFBOVTdiUG1LMkF3YjhMV3h5Qkw2R1JsMDlyTnZ6cHBFVmN5MFpVNlRTRll2RHp3RWI1VTNDYmoyUGJzWFpVVlk5ZnFJU200eFpNTzdySzhMVXJnanRCSWNmbnY0MjJnUjVrZzZhV01hZG9zNE9DaTVfR29SdGU0VVlGd2R6VHIzbGV6eksxbng3RjU3WjlSUzN4RlZ2VXE1Ynl5Y2xrenQtRF9DNkI3SQ?oc=5",
-          "source": "N+",
-          "date": "2026-10-23",
-          "published_at": "2026-10-23T23:40:41Z",
-          "category": "CDMX",
-          "borough": "Iztapalapa",
-          "location": "Iztapalapa (mencionada en el titular)",
-          "local_url": "/noticias/?id=43329b7591a76633d06b&mes=2026-10",
-          "brief": {
-            "lead": "La información publicada por N+ trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
         }
       ]
     },
     {
       "name": "Miguel Hidalgo",
-      "count": 78,
+      "count": 79,
       "articles": [
+        {
+          "title": "Clima en Miguel Hidalgo: Martes 27 de octubre con lluvia ligera y ambiente templado",
+          "description": "El pronóstico recogido por El Heraldo de México se refiere a lluvias ligeras en Miguel Hidalgo. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
+          "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPX0hvdU0ySUNPSjlubm4xYXBMUlFKeFdZLVRrZzd0cmtDSDJNWUNFaXB6SGV2UFFDQk8tRlhjTXVJWlVaUjZPYkl0YjFva0tNT0I3d2Zxclh5bDFpM25pX21CWndia2l0UjhUU0dVTDg4eWtrQXQ0ekcydHlUZWZvNjJ6STliY2F2QzI0Nk9QaTBsRXFiMDRoUk1Kd0ZMRnZrWlBmUjZ3RWJlQjRvamt6ZnRhQmZYTzROekFLMUl1SEpDMHJORDU5TEhJZlNnNHdnczc5LVpJRHdVaG8?oc=5",
+          "source": "El Heraldo de México",
+          "date": "2026-10-26",
+          "published_at": "2026-10-27T05:00:00Z",
+          "category": "CDMX",
+          "borough": "Miguel Hidalgo",
+          "location": "Miguel Hidalgo (mencionada en el titular)",
+          "local_url": "/noticias/?id=0e392770ebd22c683511&mes=2026-10",
+          "brief": {
+            "lead": "El pronóstico recogido por El Heraldo de México se refiere a lluvias ligeras en Miguel Hidalgo. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_miguel-hidalgo",
+            "url": "/assets/alcaldias/miguel-hidalgo.jpg",
+            "category": "CDMX",
+            "borough": "Miguel Hidalgo",
+            "topic": "Bosque de Chapultepec, alcaldía Miguel Hidalgo",
+            "author": "ProtoplasmaKid",
+            "license": "CC0",
+            "source": "https://commons.wikimedia.org/wiki/File:Audiorama_de_Chapultepec_1.jpg"
+          }
+        },
         {
           "title": "Mauricio Tabe busca que Miguel Hidalgo sea la alcaldía más segura de la CDMX",
           "description": "La información publicada por El Heraldo de México trata un asunto registrado en la sección de Seguridad del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -5186,24 +5272,6 @@
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           }
-        },
-        {
-          "title": "Clara Brugada anuncia nueva Utopía en la Miguel Hidalgo y refrenda compromiso de no aumentar predial",
-          "description": "La información publicada por Diario de México trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNNUNiUWRkOFUwWlB1TjE2OFhidldNUWRkeTVldFBPV3JXRVZ6TU45RFdCa1Jhazk5LW5JcEN2QkR2M2ZEZUdQd1NlLTBRTXdyVFJvMGdBdWtZX0FNMzZ1MDlmeDZzalRIQ19fOUdrcjFlWFUwWktqamZEY3E4dUdtQng3aExtdlYzaTZvTHR0eWtJRDhpZU1SLVJIanNEMlROYjBXM2pNNmcxdkl4QldXR0M4OXZ6ZGQtMUx1MGxQdTU2Q0RPd2hFSW5sS3J6UQ?oc=5",
-          "source": "Diario de México",
-          "date": "2026-10-23",
-          "published_at": "2026-10-23T15:15:49Z",
-          "category": "CDMX",
-          "borough": "Miguel Hidalgo",
-          "location": "Miguel Hidalgo (mencionada en el titular)",
-          "local_url": "/noticias/?id=6f920ee31a4a2b6ef266&mes=2026-10",
-          "brief": {
-            "lead": "La información publicada por Diario de México trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
         }
       ]
     },
@@ -5657,8 +5725,36 @@
     },
     {
       "name": "Tláhuac",
-      "count": 75,
+      "count": 76,
       "articles": [
+        {
+          "title": "Clima en Tláhuac hoy martes 27 de octubre: jornada templada con ligeros aguaceros",
+          "description": "El pronóstico recogido por El Heraldo de México se refiere a condiciones meteorológicas en Tláhuac. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
+          "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNTUQ4ZTBienBEaS1uV3RlS3RWQURxTUgzWmlGY245eFA0Wm91M3RDendFZ2d5OXFySVFqSUNSYlczU2hNOU9pcHBzZDFfRGUtLXpNYmFrd0NvdUl4Q01FaF9uUlkyY0VKTFdDb0ZqSUZXcFNoZEgxQlNDNkhxQjVzWncxbE5RNE9CYmk0RThieTVEWEVOMGN6Tmt0Y3dEY0tROXk2WThlRmVlUHZhaGJTNHNULW10dklNSWxGT3ZMdS1QSVJRNFRFV0d0c3ZIOUdEV2JYUjRLcmtILVE?oc=5",
+          "source": "El Heraldo de México",
+          "date": "2026-10-26",
+          "published_at": "2026-10-27T05:00:00Z",
+          "category": "CDMX",
+          "borough": "Tláhuac",
+          "location": "Tláhuac (mencionada en el titular)",
+          "local_url": "/noticias/?id=6ac084c2e0e412bc94ab&mes=2026-10",
+          "brief": {
+            "lead": "El pronóstico recogido por El Heraldo de México se refiere a condiciones meteorológicas en Tláhuac. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_tlahuac",
+            "url": "/assets/alcaldias/tlahuac.jpg",
+            "category": "CDMX",
+            "borough": "Tláhuac",
+            "topic": "Plaza central de San Pedro Tláhuac",
+            "author": "Yavidaxiu",
+            "license": "CC BY 3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Tl%C3%A1huac-Plaza_central.JPG"
+          }
+        },
         {
           "title": "Dictan prisión preventiva a \"El Dámaso\", mando del Cártel de Tláhuac",
           "description": "La información publicada por MVS Noticias trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -6122,31 +6218,41 @@
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           }
-        },
-        {
-          "title": "Tláhuac aplicará Ley Seca por Día de Muertos y siete festividades más",
-          "description": "La información publicada por La Silla Rota trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQZ01heDYxTjJnT0lSTE9fWFlLNjVHZV9MVUNzVTNvczhmWEE5TFpjZlhpaGRQSDg1YkJ1NURnNGtnVVBTanppSFUtWEJtMnl5MFRZWFRiSWhud05iVDVBelp4WGFKRTlWN2FJWWNHeVM2XzY5eTUyUDhScVhIdlhpRE5Hd0Y1WF9WVEpiY3FDRnhtdmQ4cGR6OWNsQkNDREpZVWtXRVlOTTNEdnh5ZWZTSDA3d2pRalJfMXFfaDhHaXJObUJ0?oc=5",
-          "source": "La Silla Rota",
-          "date": "2026-10-19",
-          "published_at": "2026-10-19T22:31:14Z",
-          "category": "CDMX",
-          "borough": "Tláhuac",
-          "location": "Tláhuac (mencionada en el titular)",
-          "local_url": "/noticias/?id=33ef2f709b27d493869d&mes=2026-10",
-          "brief": {
-            "lead": "La información publicada por La Silla Rota trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
         }
       ]
     },
     {
       "name": "Tlalpan",
-      "count": 118,
+      "count": 119,
       "articles": [
+        {
+          "title": "Clima en Tlalpan: martes 27 de octubre con lluvia ligera y ambiente templado",
+          "description": "El pronóstico recogido por El Heraldo de México se refiere a lluvias ligeras en Tlalpan. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
+          "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNOE9fcDNpcDFpb21pTm5pbmZyYk5DY1lJQ2twaDhpTmNKOTJuQ2QzT0ZuSFdhQ3N3bkRuSGVNanNJTnNobU1jeEMxRXljQU5jTGJCWWMySkJNak5iTHEtRmRZckVJejhmYWcxRGZ3Vm1jUlVWTllWaXBMRmpZRlI2cEcwWXo4RUxGUjY3cW40NGtzdnBZcWwxXzAyWWt0TG9UeWtxalJfMW1iVm5jS21EbklTOVVaZWNUR2czcGItWVY3Y01FRVZYQjd2OVVXNzNpMXc?oc=5",
+          "source": "El Heraldo de México",
+          "date": "2026-10-26",
+          "published_at": "2026-10-27T05:00:00Z",
+          "category": "CDMX",
+          "borough": "Tlalpan",
+          "location": "Tlalpan (mencionada en el titular)",
+          "local_url": "/noticias/?id=ee8c89c020b66bb395c5&mes=2026-10",
+          "brief": {
+            "lead": "El pronóstico recogido por El Heraldo de México se refiere a lluvias ligeras en Tlalpan. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_tlalpan",
+            "url": "/assets/alcaldias/tlalpan.jpg",
+            "category": "CDMX",
+            "borough": "Tlalpan",
+            "topic": "Quiosco de la plaza principal de Tlalpan",
+            "author": "farid estrada",
+            "license": "CC BY-SA 3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Kiosko_plaza_de_la_constitucion%2C_tlapan.JPG"
+          }
+        },
         {
           "title": "Tlalpan reduce la percepción de inseguridad a 50.7%",
           "description": "La información publicada por El Universal trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -6636,24 +6742,6 @@
           "local_url": "/noticias/?id=e5db36df6d0fbab8e835&mes=2026-10",
           "brief": {
             "lead": "La información publicada por El Universal trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
-        },
-        {
-          "title": "Clima en Tlalpan: pronóstico para este jueves 22 de octubre de 2026 con lluvia ligera",
-          "description": "El pronóstico recogido por El Heraldo de México se refiere a lluvias ligeras en Tlalpan. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
-          "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQX3NlWk90M0t6c3hXUS00M2E0UXJfNEFfenJKel9XNC1IWHlVZkpFbDJya3JublpES01tWW5HOHA1cFdSZUViNVg4QzRuUDRLZVpRYjEwRjA2NFdGMS1rUTFYLXhKRDdzZ2wtUnE2Ykhib1lhYVQyMlYtTnpMSHFEX2NlSFlFVnhoZm9PaTFNcEQ4LVl4bTBFZDNwdDMzdFNkZ3hXak5XdDNnR3hJZUxVTTl5NUJIR1NFQkxTRGl5VmVhWkg4UlBkSXBSRUZiVk9xUFZpZENrWi0xTlpVelkxcw?oc=5",
-          "source": "El Heraldo de México",
-          "date": "2026-10-21",
-          "published_at": "2026-10-22T05:00:00Z",
-          "category": "CDMX",
-          "borough": "Tlalpan",
-          "location": "Tlalpan (mencionada en el titular)",
-          "local_url": "/noticias/?id=9b18ff5f8c93566cd020&mes=2026-10",
-          "brief": {
-            "lead": "El pronóstico recogido por El Heraldo de México se refiere a lluvias ligeras en Tlalpan. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
