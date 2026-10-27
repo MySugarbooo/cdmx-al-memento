@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-27 14:20 UTC",
+  "updated": "2026-10-27 14:47 UTC",
   "boroughs": [
     {
       "name": "La Magdalena Contreras",
@@ -2807,8 +2807,36 @@
     },
     {
       "name": "Cuauhtémoc",
-      "count": 65,
+      "count": 66,
       "articles": [
+        {
+          "title": "AUTORIDADES FEDERALES Y DE LA CDMX ASEGURAN SEIS TONELADAS DE CIGARROS EN LA ALCALDÍA CUAUHTÉMOC",
+          "description": "La información publicada por Gob MX trata un asunto registrado en la sección de Seguridad del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQeGhXZnREWkVRaHRaN3o5bVNKc3FEOG82TDNFODVBbTIzT2EyT0VxZEhtaVowWTYzaTJVVWs1UlhJVEJOZ2VUZFJPZ2taUklUUl84UGlrcHhRTldlM1ZjOWpSZmV6b3NUTHd0WFotTUxoRFJPa0RXNWI2Ui1nNmxrN1ZzZklvMl9MdjVTY1JwcXNQYkFVRWUxNEl6eUJjM19tUmtZQm1xWTJzYlI5al82S0JUUzBFdFlMcGFDN2o4R19NNDZLOWc?oc=5",
+          "source": "Gob MX",
+          "date": "2026-10-27",
+          "published_at": "2026-10-27T13:43:37Z",
+          "category": "Seguridad",
+          "borough": "Cuauhtémoc",
+          "location": "Cuauhtémoc (mencionada en el titular)",
+          "local_url": "/noticias/?id=eeb54e8231538d3cd02b&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por Gob MX trata un asunto registrado en la sección de Seguridad del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_cuauhtemoc",
+            "url": "/assets/alcaldias/cuauhtemoc.jpg",
+            "category": "CDMX",
+            "borough": "Cuauhtémoc",
+            "topic": "Palacio de Bellas Artes en la alcaldía Cuauhtémoc",
+            "author": "Timothy Neesam",
+            "license": "CC BY-SA 4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Palacio_de_Bellas_Artes%2C_Mexico_City%2C_MX.jpg"
+          }
+        },
         {
           "title": "Aseguran seis toneladas de cigarros apócrifos tras cuatro cateos en la Cuauhtémoc, CdMx",
           "description": "La información publicada por MILENIO trata un asunto registrado en la sección de Seguridad del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -3288,24 +3316,6 @@
           "local_url": "/noticias/?id=5bef63edb8a2f1cce019&mes=2026-10",
           "brief": {
             "lead": "La información publicada por sdpnoticias trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
-        },
-        {
-          "title": "La alcaldía Cuauhtémoc reporta cero feminicidios durante septiembre",
-          "description": "La información publicada por 24-horas trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNQndpTVp6Yi1VVTdESDZaSDY5TGNsMG5DQXpRMlRRSzJvYkdVN1Q4YUxDd09jWG9oamtKaGd6VmJuNGc5OE5mUS1hQ1RRcG5BVkVEZlMyQV9DT1FXejh2Q0cyWkRrSTlqbE1QaFF6ZUZySjJJM3pRdl9UUWFiczhuZkY4N3o1NjFWNHFhcHktd01NaGROamJ1Wg?oc=5",
-          "source": "24-horas",
-          "date": "2026-10-20",
-          "published_at": "2026-10-20T20:29:32Z",
-          "category": "CDMX",
-          "borough": "Cuauhtémoc",
-          "location": "Cuauhtémoc (mencionada en el titular)",
-          "local_url": "/noticias/?id=a568ea896be998881495&mes=2026-10",
-          "brief": {
-            "lead": "La información publicada por 24-horas trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
@@ -5765,7 +5775,7 @@
     },
     {
       "name": "Tláhuac",
-      "count": 77,
+      "count": 78,
       "articles": [
         {
           "title": "Clima en Tláhuac hoy martes 27 de octubre: jornada templada con ligeros aguaceros",
@@ -5961,6 +5971,24 @@
             "author": "Timothy Neesam",
             "license": "CC BY-SA 4.0",
             "source": "https://commons.wikimedia.org/wiki/File:Palacio_de_Bellas_Artes%2C_Mexico_City%2C_MX.jpg"
+          }
+        },
+        {
+          "title": "Habrá Ley Seca en Tláhuac por Día de Muertos 2026: fechas, pueblos y más",
+          "description": "La información publicada por Dónde Ir trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOM3FVdlVYSHo3MTAxMlFKaXRRbURqVDBNSjFGUUVnNzBfYTJWRF91Tm5Cc1RtUDlwQUViQkN4NVVGTElXdUdqMGJYVUVkTmRtUEtHd2NybTY1ZnRhQllLSHRMUnhoTGpLWkV4aFZYbl8zcUhxcG91VUZIcWd0aktVQmpNTUhXUjUxUEMycVdPVnVaVkpyZHZobWxUbGJ5MWdBejRrRFZpRThYTUNFblVN?oc=5",
+          "source": "Dónde Ir",
+          "date": "2026-10-26",
+          "published_at": "2026-10-26T07:00:00Z",
+          "category": "CDMX",
+          "borough": "Tláhuac",
+          "location": "Tláhuac (mencionada en el titular)",
+          "local_url": "/noticias/?id=6b7a833a3ee25aa7247b&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por Dónde Ir trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           }
         },
         {
@@ -6250,31 +6278,41 @@
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           }
-        },
-        {
-          "title": "Herramientas, asfalto y shows: así Tláhuac entregó 23 mdp a proveedor irregular",
-          "description": "La información publicada por Reporte Indigo trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNNEVqTjd0Q3YwQlRreDczT3hPRTJ5RlNPSG10dlB4SldRVGtiMkpmRk5PM3JNSUlDSXZLM096aU54TmkwUWFyVlVwTkFlcUJVdFRCbEthelRudHNpbUR6azZtcHhzLVl2akcyNzRsQVkycTVIck5NX3FXUnNWVl9WbnBBbDhob01PRnBSeFV6VjR4YVdEdFFnRjY3QUpkWmdGc1lJcTVSWnlSNU16UHBkNUg3RjdYSE0xZS00bUFpSVExS2lsSC1sX0xTSQ?oc=5",
-          "source": "Reporte Indigo",
-          "date": "2026-10-19",
-          "published_at": "2026-10-20T04:53:38Z",
-          "category": "CDMX",
-          "borough": "Tláhuac",
-          "location": "Tláhuac (mencionada en el titular)",
-          "local_url": "/noticias/?id=e10ed7844d4adc0fa99f&mes=2026-10",
-          "brief": {
-            "lead": "La información publicada por Reporte Indigo trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
         }
       ]
     },
     {
       "name": "Tlalpan",
-      "count": 119,
+      "count": 120,
       "articles": [
+        {
+          "title": "Tlalpan tendrá Noche de Leyendas de Día de Muertos en el Panteón 20 de Noviembre: fechas, horarios y cómo asistir gratis",
+          "description": "La información publicada por Infobae trata un asunto registrado en la sección de Metro del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNb2JRRWMxcUZsUkN2SzFQaGJxMGVkc040SGlSR3FVdEdWNTJobW5Jbzd1SWMwTzJKOWdTUGxrSHlvVnRidktfYWpoVG9telFKT1U0WUM0c0xvMDNWMzZFcFlsQUM5NjhuUk9PWTdIQTZmZm4tVjlvQll3cXdaSHBiTURsakhTdVJKSDNaamxBWnoxcDNoODAyY2lpUEhEQm5YZnpwdW1EeUQxVE1uVUhISmxDZ2VyMUpLdWlLOEUtWWRxQnROc0Vuam8xalZNU3lOVUJZMHdJRk4yMzdnTi0wbElxMmlhQXlkQ2FGZmktNzAxeEXSAY4CQVVfeXFMTndvU2ZNVWpqcTNnbWtqRVZiems0NWJ6VkgySjlyLW95N0NxZUFaWklraU5nZkgxamFScXRCcDU2QnhUWHhFNklYYnl3Y2wwQ1lZWmRORWxrRHhzNk5idERtbkNEZllIeGJvc1FKeEw0NmFpRGFyM1BDYVNxbE16a0lncFhiZjV4WWQ5TnEydkJVMWJtX3lvZUdxaGhfVW9IY3E4elUwTHBNZ1VVbEZMRDJJc05YLTB0VThzNTA4TU9qQVNNdndPNS1WTmgwZ01HWWZHNFR3YWNISVY4cGQzc2xUTnl2VF95MHJLZVZST05ZSTh2aUNSbERRNlpicGcxSTBsOVRXSkY1TjNDVk5B?oc=5",
+          "source": "Infobae",
+          "date": "2026-10-27",
+          "published_at": "2026-10-27T14:40:45Z",
+          "category": "Metro",
+          "borough": "Tlalpan",
+          "location": "Tlalpan (mencionada en el titular)",
+          "local_url": "/noticias/?id=6134ed08ddf0e21fece4&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por Infobae trata un asunto registrado en la sección de Metro del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Los cambios en este sistema pueden afectar los horarios, las conexiones y la planeación de los viajes cotidianos.",
+            "pending": "El estado operativo, las estaciones y las alternativas de traslado deben comprobarse en los avisos actuales del Metro. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_tlalpan",
+            "url": "/assets/alcaldias/tlalpan.jpg",
+            "category": "CDMX",
+            "borough": "Tlalpan",
+            "topic": "Quiosco de la plaza principal de Tlalpan",
+            "author": "farid estrada",
+            "license": "CC BY-SA 3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Kiosko_plaza_de_la_constitucion%2C_tlapan.JPG"
+          }
+        },
         {
           "title": "Clima en Tlalpan: martes 27 de octubre con lluvia ligera y ambiente templado",
           "description": "El pronóstico recogido por El Heraldo de México se refiere a lluvias ligeras en Tlalpan. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
@@ -6774,24 +6812,6 @@
           "local_url": "/noticias/?id=4c131bfe875829816129&mes=2026-10",
           "brief": {
             "lead": "La información publicada por sabrositadigital.mx trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
-        },
-        {
-          "title": "MC denuncia promoción anticipada en Tlalpan",
-          "description": "La información publicada por El Universal trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQMVdmVWJ3b2p6aUxTQWxFcmMzNkhBeUZuMndVOGdYQVIzX2g3YjdBUnF5OE9wYnpFODJ6TURwYjJXbktGejc1bHdBX2VFdjFENnhibGdWX3hBY19KZWRSRUEzc1pEQmNBMFpiUTc4a294cm1lMjJsLWpuaF94MWdJbVNZRURjb01KYzZMc3dhWXdfNHk3WjhXaU1kZlBuYTJmTHfSAaIBQVVfeXFMUDFXZlVid29qemlMU0FsRXJjMzZIQXlGbjJ3VThnWEFSM19oN2I3QVJxeThPcGJ6RTgyek1EcGIyV25LRno3NWx3QV9lRXYxRDZ4YmxnVl94QWNfSmVkUkVBM3NaREJjQTBaYlE3OGtveHJtZTIybC1qbmhfeDFnSW1TWUVEY29NSmM2THN3YVl3XzR5N1o4V2lNZGZQbmEyZkx3?oc=5",
-          "source": "El Universal",
-          "date": "2026-10-22",
-          "published_at": "2026-10-22T09:09:41Z",
-          "category": "CDMX",
-          "borough": "Tlalpan",
-          "location": "Tlalpan (mencionada en el titular)",
-          "local_url": "/noticias/?id=e5db36df6d0fbab8e835&mes=2026-10",
-          "brief": {
-            "lead": "La información publicada por El Universal trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
