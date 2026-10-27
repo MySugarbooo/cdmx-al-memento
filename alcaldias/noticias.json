@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-27 21:48 UTC",
+  "updated": "2026-10-27 22:17 UTC",
   "boroughs": [
     {
       "name": "La Magdalena Contreras",
@@ -1497,8 +1497,36 @@
     },
     {
       "name": "Benito Juárez",
-      "count": 79,
+      "count": 80,
       "articles": [
+        {
+          "title": "¿Qué hacer en CDMX?Así es el nuevo tranvía gratuito de Benito Juárez con Ruta del Pan y del Taco",
+          "description": "La información publicada por Grupo Animal trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNVjhxR1NuUTQwOW5xbU1jV0RLQlJfblpZWnFtMThDSU1WQTBuNU4yQzBYX2tEdnF2ZEY2Y3BJcUMwSURvbUE1ZkRsVnozTlkzZzNZQV90QXB4b3hqTWx3R0trYmZla21WRDNVVGotMVFzUGd3S3U2UmxMOXlCWjZLMGpSbE9CZWJzUXE0OTZ2TzNIdjJr?oc=5",
+          "source": "Grupo Animal",
+          "date": "2026-10-27",
+          "published_at": "2026-10-27T22:02:53Z",
+          "category": "CDMX",
+          "borough": "Benito Juárez",
+          "location": "Benito Juárez (mencionada en el titular)",
+          "local_url": "/noticias/?id=f5c63497101c49efef4f&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por Grupo Animal trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_benito-juarez",
+            "url": "/assets/alcaldias/benito-juarez.jpg",
+            "category": "CDMX",
+            "borough": "Benito Juárez",
+            "topic": "Parque Hundido, alcaldía Benito Juárez",
+            "author": "User:etnoboris",
+            "license": "CC BY-SA 3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Parque_Hundido.jpeg"
+          }
+        },
         {
           "title": "Beca Benito Juárez 2026: qué beneficiarios reciben su pago mañana miércoles 28 de octubre",
           "description": "La información publicada por Infobae trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -1942,31 +1970,41 @@
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           }
-        },
-        {
-          "title": "Vuelca Triciclo de Tamales en Benito Juárez: Vendedor Sufre Quemaduras",
-          "description": "La información publicada por N+ trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPT1JkX24zWC14QUJBcjA4b2lZQW1iVTAxQjRYX1FES2l0YzJ6Q3M4V3g2UHZxMThwZnQ0VWJXSmlXbkdRc084Qk54RUYzOV9Ha0ljSmpwMEFCT0J6NmVKbnVSemhuemxPaUZzbEMwVzA2ZzRlNGozM1FRR1NhbkFEYjJIS1ZERG14dXVfTzBUNHBBREZpVTdDSDVYeTNEeGlpODNfZlVTWkZRRDRnTkNUcHFQSG9lNHFyTndHaEhEd21JbXRDLU5lMjV5NkNGQjducmw0Tk1DMmo5eFR4THFR?oc=5",
-          "source": "N+",
-          "date": "2026-10-23",
-          "published_at": "2026-10-23T16:05:15Z",
-          "category": "CDMX",
-          "borough": "Benito Juárez",
-          "location": "Benito Juárez (mencionada en el titular)",
-          "local_url": "/noticias/?id=6bab83c653909f8a2289&mes=2026-10",
-          "brief": {
-            "lead": "La información publicada por N+ trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
         }
       ]
     },
     {
       "name": "Coyoacán",
-      "count": 78,
+      "count": 79,
       "articles": [
+        {
+          "title": "Desfile de catrinas en Coyoacán 2026 ya tiene fecha y esto debes saber para asistir",
+          "description": "La información publicada por PostaMx trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOaWw1Nm1XUVpvd09BeGFhdjVkWXZDOEdFYldTVGNDUm9GOHFnRXh1U2FWTTNuVjZnYURTX0hlRVhWaFhKU09DZ0RROTNfWDNMbEdpYmtJMUpfUDJUU2VOcWJqRTc1SHg1Vi1QdWR0cHpfd0pQQ1JvRWw5b3JydWtxSkxvbVhwUkxtVHFWeFVUSlBRVDJLWFHSAZsBQVVfeXFMT0swQkx3amxnc0lqN2k3NWdKRnBnTi1fNTk0SEk3V3hCcVlROFFWcFNvblpNdFVHUE1ZbGFRM1FiMUIyNW9OSkhXYnJvRzBjd21LZy1CRF9qU2dfV0JVdkxIQUpaVFRqMUFGdUtacGk1UGtFMXUxS2ExdXRTNEtISmQtWWF3c19EZ0Z2MFVkdTctMW0wLTJhUDd6dFk?oc=5",
+          "source": "PostaMx",
+          "date": "2026-10-27",
+          "published_at": "2026-10-27T21:43:00Z",
+          "category": "CDMX",
+          "borough": "Coyoacán",
+          "location": "Coyoacán (mencionada en el titular)",
+          "local_url": "/noticias/?id=89c2fa648d6f18fe0a5d&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por PostaMx trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_coyoacan",
+            "url": "/assets/alcaldias/coyoacan.jpg",
+            "category": "CDMX",
+            "borough": "Coyoacán",
+            "topic": "Jardín Centenario de Coyoacán",
+            "author": "AlejandroLinaresGarcia",
+            "license": "CC BY-SA 4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:JardinCentenarioCoyoacan.JPG"
+          }
+        },
         {
           "title": "Alerta en CDMX: Veladora de altar de Día de Muertos desata incendio en inmueble de Coyoacán; otras afectacione",
           "description": "La información publicada por TV Azteca trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -2426,24 +2464,6 @@
           "local_url": "/noticias/?id=f7a8fb4120f001f77995&mes=2026-10",
           "brief": {
             "lead": "La información publicada por PostaMx trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
-        },
-        {
-          "title": "Este restaurante en Coyoacán es ideal para sentir el verdadero sentido del Día de Muertos: comida mexicana, pan de muerto y una hermosa ofrenda",
-          "description": "La información publicada por Directo al Paladar México trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQLUt4TFpSUk0wR2ZGVTQ2SGNNX0JWLS1UOXdHeURGQ3FDSlpaUmQ3dFdNR3ZxU2YzNzIxMG5VVmhZVjVna2FMYUYzaXpDVUV6MzJ6WEFUNF9QaG90LTgxcE5DaHRjSXhpZHlMWkFDaWl3U0VNeTJPdGlVWm1iZV9paWpMdm9ZWlN6ZS13ZXd4TnpuZTNnV0NGOHNlT2RaN1B2eW9fQmxlQ0cyb1ZJQXkwYU1QeXJTa3NkeHdlcEI4UHd1aXRlWmF5Z1htWk8zazlhVXcyTzB5QXNBMDhBcXh0RkQ1MkRRbGNBWjRJ0gHwAUFVX3lxTFB0QXUyMjA5bUZkQjZDRUVWRzNoay1UTjMwSXVSQ2JadVUtZjdOejJYQVV1NGZJd0FMNzlVbjN6UHFEbnZwUjZWbm4yT0VMZERIWU9mRUl5Sk5sZlpjVVAtQ3I5aUNpQ3FnelJEWmNOWWswLWxfcEpfTms4T1dhRjBpZ1JDTGcxU2ZNQUhfT2ZvYzR4LWZwMzBkVGRyNjZNeVhFZ1FPU3MxUk16TWZkZ2t4Mmp2Z0l1M0ZGNU9ad3ZuYm5SNUpEUkFpQWhfajdYN2lqTVNpX3NxR3FCZF9yR1RWWG4tb2o3OERreEFqWk54cg?oc=5",
-          "source": "Directo al Paladar México",
-          "date": "2026-10-20",
-          "published_at": "2026-10-20T19:00:00Z",
-          "category": "CDMX",
-          "borough": "Coyoacán",
-          "location": "Coyoacán (mencionada en el titular)",
-          "local_url": "/noticias/?id=231586d2c4f662fbe926&mes=2026-10",
-          "brief": {
-            "lead": "La información publicada por Directo al Paladar México trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
@@ -5505,8 +5525,36 @@
     },
     {
       "name": "Milpa Alta",
-      "count": 48,
+      "count": 49,
       "articles": [
+        {
+          "title": "Catrina Tlacualera de 7 metros encabeza la Ofrenda Monumental de Día de Muertos en Milpa Alta",
+          "description": "La información publicada por El Sol de México trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQWTNia3MwZFRmUGFHZG1pYUhnbmdyTW5iTDQ3d1dZUVJXa3BPWVA4RzhnTkVCaHVjZ2RoSmZtRTVHUDdSQ0pEYThpdGFqejVrTi1qaTJLRUpFS1pLSm50YjVMN1pKVDFnX3pxZ0ZBQTM2SWlIU2NlZ0FrR1E1VnJEdkJOMFdwQ2dGQkg0SklYYnVFVkNuVUp4M0x4ZTY4eTZzeXRPcURnVEQ1MkF3QkZaMmprX0haZmZXTmUtQ2ZkVktNbVg2ZFVPWHg1eU11S3ZveWZVQTFZcEFPbHQxUkgxdDZzbHVxcEtBQ0pN?oc=5",
+          "source": "El Sol de México",
+          "date": "2026-10-27",
+          "published_at": "2026-10-27T22:02:37Z",
+          "category": "CDMX",
+          "borough": "Milpa Alta",
+          "location": "Milpa Alta (mencionada en el titular)",
+          "local_url": "/noticias/?id=63a7b69d0d95d3189b89&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por El Sol de México trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_milpa-alta",
+            "url": "/assets/alcaldias/milpa-alta.jpg",
+            "category": "CDMX",
+            "borough": "Milpa Alta",
+            "topic": "Villa Milpa Alta y su entorno rural",
+            "author": "Comisión Mexicana de Filmaciones from México D. F., México",
+            "license": "CC BY-SA 2.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Villa_Milpa_Alta%2C_Ciudad_de_M%C3%A9xico_%2832886264042%29.jpg"
+          }
+        },
         {
           "title": "Inaugura Octavio Rivero, alcalde en Milpa Alta, el Parque Ecológico y Recreativo Milpa Aventuras, un nuevo espacio para las familias de Milpa Alta",
           "description": "La información publicada por Diario Basta! trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -5926,24 +5974,6 @@
           "local_url": "/noticias/?id=7c654864cdbb0d3a23a7&mes=2026-10",
           "brief": {
             "lead": "De acuerdo con un titular publicado por Maya Comunicación, el tema de actualidad está relacionado con un asunto de interés público relacionado con la Ciudad de México. La atribución corresponde al medio citado, no a una comprobación independiente de nuestra redacción. El encabezado menciona Milpa Alta; esa referencia no demuestra por sí misma dónde ocurrieron todos los hechos.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
-        },
-        {
-          "title": "Inauguran novena Utopía en Milpa Alta con inversión de 190 millones de pesos y servicios gratuitos",
-          "description": "De acuerdo con un titular publicado por Sociedad Noticias, el tema de actualidad está relacionado con un asunto de interés público relacionado con la Ciudad de México. La atribución corresponde al medio citado, no a una comprobación independiente de nuestra redacción. El encabezado menciona Milpa Alta; esa referencia no demuestra por sí misma dónde ocurrieron todos los hechos.",
-          "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQN3pFRjFUeDdsd25Xc3lKSXlLcWFfNjJHbTNOU3VFSzVjTVdzaTFPc2VEX3J6eWZtTUNMeWwxSU9HMm5sdnlldUlzaldVaEFldndQRzRmdjdUQVQwX1dySzZXWFRzWV8xRm1tTzFuVXVjckRPZ3dDekp1eXBvUjM0MVpTa2JLaUtMaXJpMndia0JXbWtFdVZGSDZFcFZ5TWhyemFJemRRNmZNdUtqbGZ3eUN5WV9fQlhpX2lORkt3d29RQ3VzOElKTzFPOVl2bjd0dm9vRldscw?oc=5",
-          "source": "Sociedad Noticias",
-          "date": "2026-10-12",
-          "published_at": "2026-10-12T08:30:00Z",
-          "category": "CDMX",
-          "borough": "Milpa Alta",
-          "location": "Milpa Alta (mencionada en el titular)",
-          "local_url": "/noticias/?id=86dcdbbba848697bdce8&mes=2026-10",
-          "brief": {
-            "lead": "De acuerdo con un titular publicado por Sociedad Noticias, el tema de actualidad está relacionado con un asunto de interés público relacionado con la Ciudad de México. La atribución corresponde al medio citado, no a una comprobación independiente de nuestra redacción. El encabezado menciona Milpa Alta; esa referencia no demuestra por sí misma dónde ocurrieron todos los hechos.",
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
@@ -7527,7 +7557,7 @@
     },
     {
       "name": "Xochimilco",
-      "count": 108,
+      "count": 109,
       "articles": [
         {
           "title": "Embarcadero Nuevo Nativitas en Xochimilco: denuncian inundaciones, puentes dañados y bajas ventas tras remodelación",
@@ -7836,6 +7866,24 @@
           }
         },
         {
+          "title": "Trailero transporta a transeúnte, pero al otro mundo: Hombre muere atropellado en Xochimilco",
+          "description": "De acuerdo con El Grafico, se reportó un atropellamiento con consecuencias mortales en Xochimilco, relacionado con un tráiler. Es una noticia que exige cuidado al informar sobre las personas afectadas.",
+          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQeEUwSFoyS0JjRHM1UHJteW9mWlR2UWoxUU1uQTN4TkduLUJXeHlSZ3VYOWYxYUxkenZ5azZFaERnMWFLa0xJTnFIQmkzWVl3UkUycUJ6eE1xSE5WOFZHSlhPNF83ZGlEVy1FRmtESF9aR0s5cXY5RS10SGNLX252M21ZOHNnbzZMSEJJUXB5Mk5kbGZDUVlKQzV0TU1WRjFUMnZBVUVZTURpRVduOEVYUzBfb1RGcmc4OHBRbHN3RXdKSXo1a3lzUTlkTlJ6SHl2?oc=5",
+          "source": "El Grafico",
+          "date": "2026-10-25",
+          "published_at": "2026-10-25T15:05:23Z",
+          "category": "CDMX",
+          "borough": "Xochimilco",
+          "location": "Xochimilco (mencionada en el titular)",
+          "local_url": "/noticias/?id=6d0f5061a81886b51f2d&mes=2026-10",
+          "brief": {
+            "lead": "De acuerdo con El Grafico, se reportó un atropellamiento con consecuencias mortales en Xochimilco, relacionado con un tráiler. Es una noticia que exige cuidado al informar sobre las personas afectadas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          }
+        },
+        {
           "title": "Clima en Xochimilco este domingo 25 de octubre: frío y lluvia ligera persiste en la alcaldía",
           "description": "El pronóstico recogido por El Heraldo de México se refiere a lluvias ligeras en Xochimilco. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
           "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQVDdNWE1nT2hJQ1k2VFF0Y2dBRVdtU1BXVlZyTlVhYW9NNHgwM3VGeUppLU1ZMGUxNW9tTWV2OVR2Q1JFTkdLRU55d29YMjg5TTM4aXNRU0xYVVJKR2p5Q3RMTHRpdVZ4Ul8tMXcwUENmTVlhbHl1dUZEdXhDZWwzZl9Mdm5GczZQUzhaVnpPa1VTWjhtaFhaMFFzZUVlM0FlOGpITXI4QjFCRmU2aG8weXpGUXYyOHEwcDgwQ0o4aEV0NzR2d2VqQjJSX0VIdXQ5ck5HbTM0ODZ1LW5iRmNEXzQxaXJfSVU?oc=5",
@@ -8028,24 +8076,6 @@
           "local_url": "/noticias/?id=9b6b0e2c3fba109e3aaa&mes=2026-10",
           "brief": {
             "lead": "La información publicada por Consulta Monterrey trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
-        },
-        {
-          "title": "Baja percepción de inseguridad en México, pero Xochimilco lidera la alcaldía con mayor temor en CdMx",
-          "description": "La información publicada por Milenio trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPTmlIcWIxdWVMWEJDdDc5M2VKVGREdEtnOHV1NHpYXzVIcFU4bXR3VWJURG1jLTFGczNJdlRfei1lT2tQYU5SVGdsd0ZFbERrRFdLWnpoSFJMOUU4V0p3LXZlQm9FTHQwRVR5V1NBeEtHcGxFLURqUzJtbUM2c05MWmZZRFZmcVBKS3NxaHhJdm9qS1BNQ3Y0UUgxX3FyeVHSAZ8BQVVfeXFMT05pSHFiMXVlTFhCQ3Q3OTNlSlRkRHRLZzh1dTR6WF81SHBVOG10d1ViVERtYy0xRnMzSXZUX3otZU9rUGFOUlRnbHdGRWxEa0RXS1p6aEhSTDlFOFdKdy12ZUJvRUx0MEVUeVdTQXhLR3BsRS1EalMybW1DNnNOTFpmWURWZnFQSktzcWh4SXZvaktQTUN2NFFIMV9xcnlR?oc=5",
-          "source": "Milenio",
-          "date": "2026-10-23",
-          "published_at": "2026-10-23T15:59:00Z",
-          "category": "CDMX",
-          "borough": "Xochimilco",
-          "location": "Xochimilco (mencionada en el titular)",
-          "local_url": "/noticias/?id=a8165151d988e16685a8&mes=2026-10",
-          "brief": {
-            "lead": "La información publicada por Milenio trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
