@@ -18,6 +18,7 @@
   const main=document.querySelector('main');if(!main||document.body.classList.contains('neo-site-inner'))return;
   document.body.classList.add('neo-site-inner');
   const section=(function(){
+   if(path.startsWith('/cdmx/'))return ['CDMX','Últimas noticias de la capital con fecha y fuente','/assets/fotos/reforma.jpg'];
    if(path.startsWith('/seguridad/'))return ['Seguridad','Noticias y prevención','/assets/fotos/seguridad.jpg'];
    if(path.startsWith('/servicios/'))return ['Servicios','Guías y herramientas útiles para tu ciudad','/assets/fotos/gobierno.jpg'];
    if(path.startsWith('/alcaldias/'))return ['Alcaldías','Noticias e historia de las 16 demarcaciones','/assets/fotos/reforma.jpg'];
@@ -43,7 +44,7 @@
    return ['CDMX AL MEMENTO','Noticias, información y recursos de la capital','/assets/fotos/angel.jpg'];
   })();
   const navItems=[
-   ['Portada','/'],['Alcaldías','/alcaldias/'],['CDMX','/descubre/'],
+   ['Portada','/'],['Alcaldías','/alcaldias/'],['CDMX','/cdmx/'],
    ['Seguridad','/seguridad/'],['Movilidad','/movilidad/'],['Servicios','/servicios/'],
    ['Animales','/animales/'],['Fotografías','/creditos-fotograficos.html'],['Mi comunidad','/comunidad/']
   ];
@@ -85,7 +86,7 @@
   const active=(href)=>{
     if(href==='/')return false;
     if(href==='/alcaldias/')return path.startsWith('/alcaldias/');
-    if(href==='/descubre/')return path.startsWith('/descubre/');
+    if(href==='/cdmx/')return path.startsWith('/cdmx/');
     if(href==='/seguridad/')return path.startsWith('/seguridad/')||path.startsWith('/avisos/');
     if(href==='/servicios/')return path.startsWith('/servicios/')||path.startsWith('/guias/')||path.startsWith('/herramientas/');
     if(href==='/creditos-fotograficos.html')return path.includes('fotograf');
