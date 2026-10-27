@@ -166,3 +166,18 @@ html.neo-active.neo-soft #contenido{background:#251a31}
 html.neo-active.neo-soft .neo-box{background:#32223c;border-color:#b05a8b}
 html.neo-active.neo-soft .neo-head{background:#302039}
 html.neo-active.neo-soft .neo-nav{background:#302039}
+
+
+/* El lector puede seguir bajando: noticias adicionales sin salto de página. */
+#neo-home .neo-news-more{display:block;width:100%;padding:11px 12px;margin:15px 0 3px;
+ background:#392039;color:#ffcee7;border:1px solid #a25181;border-radius:9px;
+ font-size:12px;font-weight:740;cursor:pointer;transition:background .2s}
+#neo-home .neo-news-more:hover{background:#623152}
+#neo-home .neo-news-more[hidden]{display:none!important}
+#neo-home .neo-news-grid{align-items:start}
+#neo-home .neo-news-card{min-width:0}
+#neo-home .neo-news-card h3{overflow-wrap:anywhere}
+@media(max-width:650px){
+ #neo-home .neo-news-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ #neo-home .neo-news-more{min-height:44px}
+}
