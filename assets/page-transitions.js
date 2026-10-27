@@ -46,7 +46,7 @@
   const navItems=[
    ['Portada','/'],['Alcaldías','/alcaldias/'],['CDMX','/cdmx/'],
    ['Seguridad','/seguridad/'],['Movilidad','/movilidad/'],['Servicios','/servicios/'],
-   ['Animales','/animales/'],['Fotografías','/creditos-fotograficos.html'],['Mi comunidad','/comunidad/']
+   ['Animales','/animales/'],['Fotografías','/fotografias/'],['Mi comunidad','/comunidad/']
   ];
   const icon='<svg viewBox="0 0 100 85" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="site-pink" x1="0" x2="1"><stop stop-color="#ff9dce"/><stop offset="1" stop-color="#ee3896"/></linearGradient></defs><g fill="url(#site-pink)"><path d="M4 79h92v4H4zM12 77V54l9-5 9 6v22zM34 77V25l8-5 7 9v48zM53 77V35l11-8 7 7v43zM76 77V47l8-4 5 8v26zM43 20l4-15 5 16-5 3zM45 4l3-4 2 4zM60 27l-2-15 7 7-1 11z"/></g><g fill="#ffe0ed"><rect x="40" y="38" width="3" height="8"/><rect x="60" y="42" width="3" height="6"/><rect x="80" y="55" width="3" height="7"/></g></svg>';
   let header=document.querySelector('body > header');
@@ -89,7 +89,7 @@
     if(href==='/cdmx/')return path.startsWith('/cdmx/');
     if(href==='/seguridad/')return path.startsWith('/seguridad/')||path.startsWith('/avisos/');
     if(href==='/servicios/')return path.startsWith('/servicios/')||path.startsWith('/guias/')||path.startsWith('/herramientas/');
-    if(href==='/creditos-fotograficos.html')return path.includes('fotograf');
+    if(href==='/fotografias/')return path.includes('fotograf');
     return path.startsWith(href);
   };
   for(const [label,href] of navItems){
