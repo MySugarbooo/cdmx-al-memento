@@ -6,7 +6,7 @@
 const root=document.getElementById('contenido');
 if(!root)return;
 const boroughs=['Álvaro Obregón','Azcapotzalco','Benito Juárez','Coyoacán','Cuajimalpa de Morelos','Cuauhtémoc','Gustavo A. Madero','Iztacalco','Iztapalapa','La Magdalena Contreras','Miguel Hidalgo','Milpa Alta','Tláhuac','Tlalpan','Venustiano Carranza','Xochimilco'];
-const quick=[['♟','Alcaldías','/alcaldias/'],['▥','CDMX','/descubre/'],['⬟','Seguridad','/avisos/'],['▤','Movilidad','/movilidad/'],['✿','Servicios','/guias/'],['🐾','Animales','/animales/'],['▧','Fotografías','/creditos-fotograficos.html'],['♧','Comunidad','/comunidad/']];
+const quick=[['♟','Alcaldías','/alcaldias/'],['▥','CDMX','/cdmx/'],['⬟','Seguridad','/seguridad/'],['▤','Movilidad','/movilidad/'],['✿','Servicios','/servicios/'],['🐾','Animales','/animales/'],['▧','Fotografías','/creditos-fotograficos.html'],['♧','Comunidad','/comunidad/']];
 const photoFallback={Metro:'/assets/fotos/metro.jpg',Movilidad:'/assets/fotos/movilidad.jpg',Seguridad:'/assets/fotos/seguridad.jpg',Gobierno:'/assets/fotos/gobierno.jpg',Cultura:'/assets/fotos/cultura.jpg',CDMX:'/assets/fotos/reforma.jpg'};
 const mxDate=new Intl.DateTimeFormat('es-MX',{timeZone:'America/Mexico_City',weekday:'long',day:'numeric',month:'long',year:'numeric'});
 const shortDate=new Intl.DateTimeFormat('es-MX',{timeZone:'America/Mexico_City',day:'numeric',month:'short',year:'numeric'});
@@ -27,24 +27,24 @@ shell.innerHTML=[
 '<header class="neo-head"><div class="neo-head-top"><div class="neo-head-status"><time id="neo-date"></time><span class="neo-visitor" id="neo-visitors">Visitas: consultando…</span></div>',
 '<a class="neo-brand" href="/" aria-label="CDMX AL MEMENTO · inicio">',skyline,'<strong class="neo-brand-name">CDMX<em>AL MEMENTO</em></strong></a>',
 '<div class="neo-head-actions"><form class="neo-search" id="neo-search-form" role="search"><input id="neo-search-input" type="search" placeholder="Buscar noticias..." aria-label="Buscar noticias"><button type="submit" aria-label="Buscar">⌕</button></form><button id="neo-theme" class="neo-circle" aria-label="Cambiar tema" title="Cambiar tema" type="button">☾</button><a class="neo-circle neo-user" href="/comunidad/" aria-label="Mi comunidad">♙</a></div></div>',
-'<nav class="neo-nav" aria-label="Secciones del periódico"><a class="neo-active-link" href="/" aria-current="page">Portada</a><a href="/alcaldias/">Alcaldías</a><button type="button" data-neo-filter="CDMX">CDMX</button><button type="button" data-neo-filter="Seguridad">Seguridad</button><button type="button" data-neo-filter="Movilidad">Movilidad</button><a href="/guias/">Servicios</a><a href="/animales/">Animales</a><a href="/creditos-fotograficos.html">Fotografías</a><a href="/comunidad/">Mi comunidad</a><span class="neo-nav-spacer"></span><span class="neo-social-nav"><a href="/archivo/" title="Archivo mensual">▤</a><a href="/mapa/" title="Mapa">⌖</a><a href="/comunidad/" title="Participa">♡</a></span></nav></header>',
+'<nav class="neo-nav" aria-label="Secciones del periódico"><a class="neo-active-link" href="/" aria-current="page">Portada</a><a href="/alcaldias/">Alcaldías</a><a href="/cdmx/">CDMX</a><a href="/seguridad/">Seguridad</a><a href="/movilidad/">Movilidad</a><a href="/servicios/">Servicios</a><a href="/animales/">Animales</a><a href="/creditos-fotograficos.html">Fotografías</a><a href="/comunidad/">Mi comunidad</a><span class="neo-nav-spacer"></span><span class="neo-social-nav"><a href="/archivo/" title="Archivo mensual">▤</a><a href="/mapa/" title="Mapa">⌖</a><a href="/comunidad/" title="Participa">♡</a></span></nav></header>',
 '<div class="neo-dashboard">',
 '<section class="neo-hero neo-box" aria-labelledby="neo-hero-title"><img id="neo-hero-img" class="neo-hero-image" src="/assets/fotos/reforma.jpg" alt="Fotografía de archivo de la Ciudad de México"><div class="neo-hero-inner"><span class="neo-kicker">DESTACADA</span><a id="neo-hero-title" class="neo-hero-title" href="/noticias/">Noticias de Ciudad de México</a><p class="neo-hero-description" id="neo-hero-description">Titulares actualizados desde medios identificados.</p><div class="neo-hero-bottom"><span id="neo-hero-category">⌖ CDMX</span><span id="neo-hero-date"></span><span class="neo-hero-source" id="neo-hero-source"></span><span class="neo-feature-like" id="neo-hero-like"></span></div><div class="neo-hero-credit" id="neo-hero-credit">Foto de archivo · no corresponde necesariamente al hecho noticioso</div></div><div class="neo-hero-controls"><button id="neo-hero-next" type="button" aria-label="Siguiente noticia destacada">›</button></div></section>',
 '<section class="neo-map neo-box" aria-labelledby="neo-map-title"><h2 id="neo-map-title">Explora las alcaldías</h2><a href="/alcaldias/" class="neo-map-area" aria-label="Consultar las 16 alcaldías">',boroughSvg,'</a><a class="neo-map-link" href="/mapa/">Ver mapa interactivo ↗</a></section>',
 '<aside class="neo-boroughs neo-box" aria-labelledby="neo-borough-title"><h2 id="neo-borough-title">Noticias por alcaldía</h2><ul id="neo-borough-list"></ul></aside>',
-'<section class="neo-latest neo-box" aria-labelledby="neo-latest-title"><div class="neo-block-title"><h2 id="neo-latest-title">▣ Últimas noticias</h2><a href="/archivo/">Ver todas →</a></div><div class="neo-news-grid" id="neo-news-grid"></div><p id="neo-news-status" class="neo-feed-note">Titulares y fechas de medios externos · Fotos de archivo</p></section>',
+'<section class="neo-latest neo-box" aria-labelledby="neo-latest-title"><div class="neo-block-title"><h2 id="neo-latest-title">▣ Últimas noticias</h2><a href="/archivo/">Ver todas →</a></div><div class="neo-news-grid" id="neo-news-grid"></div><button class="neo-news-more" type="button" id="neo-news-more" hidden>Mostrar más noticias ↓</button><p id="neo-news-status" class="neo-feed-note">Titulares y fechas de medios externos · Fotos de archivo</p></section>',
 '<aside class="neo-community neo-box" aria-labelledby="neo-community-title"><div class="neo-block-title"><h2 id="neo-community-title">Mi comunidad</h2><a href="/comunidad/#cdmx-comments-editor" class="neo-pill">＋ Publicar</a></div><div class="neo-community-tabs"><a href="/comunidad/">Recientes</a><a href="/comunidad/#forum-sort">Populares</a><a href="/comunidad/#cdmx-comments-editor">Preguntas</a></div><p class="neo-community-intro">Pregunta a tus vecinos, comenta y participa con tu cuenta de Google.</p><div id="neo-community-posts"><p class="neo-feed-note">Consultando conversaciones públicas…</p></div><div class="neo-community-footer"><a href="/comunidad/">Abrir el foro y responder ↗</a></div></aside>',
 '<nav class="neo-links" id="neo-links" aria-label="Accesos rápidos"></nav>',
 '</div><nav class="neo-dock" aria-label="Navegación del celular"><a class="neo-dock-active" href="/"><span>⌂</span>Inicio</a><a href="/alcaldias/"><span>▤</span>Alcaldías</a><a class="neo-dock-publish" href="/comunidad/#cdmx-comments-editor" aria-label="Publicar en la comunidad">＋</a><a href="/comunidad/"><span>♧</span>Comunidad</a><a href="/favoritos/"><span>♙</span>Guardados</a></nav>'
 ].join('');
-const state={stories:[],current:0,filter:'',query:''};
+const state={stories:[],current:0,filter:'',query:'',visible:8};
 function initStatic(){
  const date=shell.querySelector('#neo-date');date.textContent=mxDate.format(new Date());
  const list=shell.querySelector('#neo-borough-list');
  for(const name of boroughs){const li=el('li');const a=el('a');a.href='/alcaldias/?alcaldia='+encodeURIComponent(name)+'#noticias-alcaldia';const arrow=el('span','', '›');a.append(document.createTextNode(name),arrow);li.append(a);list.append(li)}
  const links=shell.querySelector('#neo-links');
  for(const [icon,label,href] of quick){const a=el('a','neo-quick');a.href=href;const s=el('span','',icon);a.append(s,document.createTextNode(label));links.append(a)}
- shell.querySelector('#neo-hero-next').addEventListener('click',()=>{state.current=(state.current+1)%Math.min(state.stories.length,12);renderHero()});
+ shell.querySelector('#neo-hero-next').addEventListener('click',()=>{state.current=(state.current+1)%Math.min(state.stories.length,12);renderHero()});const more=shell.querySelector('#neo-news-more');more.addEventListener('click',()=>{state.visible+=8;renderNews()});if('IntersectionObserver' in window){const observer=new IntersectionObserver(entries=>{if(entries.some(x=>x.isIntersecting)&&!more.hidden){state.visible+=8;renderNews()}},{rootMargin:'160px'});observer.observe(more)}
  shell.querySelectorAll('[data-neo-filter]').forEach(btn=>btn.addEventListener('click',()=>{
    state.filter=state.filter===btn.dataset.neoFilter?'':btn.dataset.neoFilter;state.query='';shell.querySelector('#neo-search-input').value='';
    shell.querySelectorAll('[data-neo-filter]').forEach(b=>b.classList.toggle('neo-active-link',state.filter===b.dataset.neoFilter));
@@ -77,7 +77,7 @@ function renderNews(){
  const all=state.stories;
  const matched=all.filter(a=>(!state.filter||a.category===state.filter)&&(!state.query||(a.title+' '+(a.borough||'')+' '+(a.source||'')).toLocaleLowerCase('es-MX').includes(state.query)));
  const out=shell.querySelector('#neo-news-grid');out.replaceChildren();
- for(const a of matched.slice(0,4)){
+ for(const a of matched.slice(0,state.visible)){
   const card=el('article','neo-news-card');
   const thumb=el('a','neo-thumb');thumb.href=articleLink(a);
   const img=el('img');img.src=photoUrl(a);img.alt='Foto de archivo relacionada con '+(a.category||'CDMX');img.loading='lazy';img.decoding='async';img.onerror=()=>{img.onerror=null;img.src=photoFallback.CDMX};
@@ -88,7 +88,7 @@ function renderNews(){
   card.append(thumb,h,meta,credit);
   out.append(card);
  }
- if(!matched.length)out.append(el('p','neo-feed-note','No hay noticias que coincidan. Prueba con otra búsqueda.'));
+ if(!matched.length)out.append(el('p','neo-feed-note','No hay noticias que coincidan. Prueba con otra búsqueda.'));const more=shell.querySelector('#neo-news-more');if(more)more.hidden=matched.length<=state.visible;
  shell.querySelector('#neo-news-status').textContent=(state.filter||state.query?'Resultados: '+matched.length+' · ':'')+'Actualización: '+(state.stories.length?'titulares del feed automático':'no disponible')+' · Fotografías de archivo, no necesariamente del hecho';
 }
 function mirrorVisits(){
@@ -138,7 +138,7 @@ async function start(){
   initStatic();
   root.prepend(shell);
   try{const prev=sessionStorage.getItem('cdmx-neo-last-feature');const next=articles.slice(0,12).findIndex(a=>a.url!==prev);state.current=next<0?0:next;sessionStorage.setItem('cdmx-neo-last-feature',articles[state.current].url)}catch{state.current=0}
-  renderHero();renderNews();
+  renderHero();const incoming=new URLSearchParams(location.search).get('buscar');if(incoming){state.query=incoming.slice(0,90).trim().toLocaleLowerCase('es-MX');shell.querySelector('#neo-search-input').value=incoming.slice(0,90)}renderNews();
   document.documentElement.classList.add('neo-active');
   mirrorVisits();
   communityPreview();
