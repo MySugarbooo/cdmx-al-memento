@@ -11,7 +11,8 @@
  if(![...document.styleSheets].some(s=>s.href&&/\/styles\.css(?:\?|$)/.test(s.href))){
    const core=document.createElement('link');core.rel='stylesheet';core.href='/styles.css?v=20261027-unificado';document.head.append(core);
  }
- const themeLink=document.createElement('link');themeLink.rel='stylesheet';themeLink.href='/assets/neo-site.css?v=20261027-b';document.head.append(themeLink);
+ // Las páginas con styles.css ya importan el tema; el resto lo reciben por la hoja central.
+ // Esta navegación no añade un segundo archivo CSS duplicado.
  if(path==='/'||path==='/index.html')return;
  function init(){
   const main=document.querySelector('main');if(!main||document.body.classList.contains('neo-site-inner'))return;
