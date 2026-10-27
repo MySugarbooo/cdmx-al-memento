@@ -107,7 +107,7 @@ async function communityPreview(){
   ]);
   const app=appmod.getApps().find(x=>x.name==='neo-community-view')||appmod.initializeApp(cfg,'neo-community-view');
   const db=fs.getFirestore(app);
-  const q=fs.query(fs.collection(db,'community','main','comments'),fs.orderBy('createdAt','desc'),fs.limit(20));
+  const q=fs.query(fs.collection(db,'community','main','comments'),fs.orderBy('createdAt','desc'),fs.limit(8));
   const docs=await fs.getDocs(q);
   const posts=docs.docs.map(d=>d.data()).filter(c=>typeof c.text==='string'&&!c.text.startsWith('[FORO:RESPUESTA:')).slice(0,3);
   out.replaceChildren();
