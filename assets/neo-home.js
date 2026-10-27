@@ -37,12 +37,12 @@ if(!shell.hasChildNodes())shell.innerHTML=[
 '<nav class="neo-links" id="neo-links" aria-label="Accesos rápidos"></nav>',
 '</div><nav class="neo-dock" aria-label="Navegación del celular"><a class="neo-dock-active" href="/"><span>⌂</span>Inicio</a><a href="/alcaldias/"><span>▤</span>Alcaldías</a><a class="neo-dock-publish" href="/comunidad/#cdmx-comments-editor" aria-label="Publicar en la comunidad">＋</a><a href="/comunidad/"><span>♧</span>Comunidad</a><a href="/favoritos/"><span>♙</span>Guardados</a></nav>'
 ].join('');
-const state={stories:[],current:0,filter:'',query:'',visible:8};
+const state={stories:[],current:0,filter:'',query:'',visible:8,fromBackup:true};
 function initStatic(){
  const date=shell.querySelector('#neo-date');date.textContent=mxDate.format(new Date());
- const list=shell.querySelector('#neo-borough-list');
+ const list=shell.querySelector('#neo-borough-list');list.replaceChildren();
  for(const name of boroughs){const li=el('li');const a=el('a');a.href='/alcaldias/?alcaldia='+encodeURIComponent(name)+'#noticias-alcaldia';const arrow=el('span','', '›');a.append(document.createTextNode(name),arrow);li.append(a);list.append(li)}
- const links=shell.querySelector('#neo-links');
+ const links=shell.querySelector('#neo-links');links.replaceChildren();
  for(const [icon,label,href] of quick){const a=el('a','neo-quick');a.href=href;const s=el('span','',icon);a.append(s,document.createTextNode(label));links.append(a)}
  shell.querySelector('#neo-hero-next').addEventListener('click',()=>{state.current=(state.current+1)%Math.min(state.stories.length,12);renderHero()});const more=shell.querySelector('#neo-news-more');more.addEventListener('click',()=>{state.visible+=8;renderNews()});if('IntersectionObserver' in window){const observer=new IntersectionObserver(entries=>{if(entries.some(x=>x.isIntersecting)&&!more.hidden){state.visible+=8;renderNews()}},{rootMargin:'160px'});observer.observe(more)}
  shell.querySelectorAll('[data-neo-filter]').forEach(btn=>btn.addEventListener('click',()=>{
@@ -89,7 +89,7 @@ function renderNews(){
   out.append(card);
  }
  if(!matched.length)out.append(el('p','neo-feed-note','No hay noticias que coincidan. Prueba con otra búsqueda.'));const more=shell.querySelector('#neo-news-more');if(more)more.hidden=matched.length<=state.visible;
- shell.querySelector('#neo-news-status').textContent=(state.filter||state.query?'Resultados: '+matched.length+' · ':'')+'Actualización: '+(state.stories.length?'titulares del feed automático':'no disponible')+' · Fotografías de archivo, no necesariamente del hecho';
+ shell.querySelector('#neo-news-status').textContent=(state.filter||state.query?'Resultados: '+matched.length+' · ':'')+(state.fromBackup?'Titulares de respaldo (pueden no estar actualizados)':'Titulares del feed automático')+' · Fotografías de archivo, no necesariamente del hecho';
 }
 function mirrorVisits(){
  const target=shell.querySelector('#neo-visitors');const origin=document.getElementById('header-visitors-number');
@@ -133,12 +133,12 @@ function eligibleStories(feed){
   &&/^https:\/\/news\.google\.com\//.test(a.url||'')
   &&/^\/noticias\/\?/.test(a.local_url||''));
 }
-function applyStories(items){
+function applyStories(items,source){
  if(!items.length)return false;
  // Conservar la noticia que el lector está viendo cuando se actualiza el feed.
  const old=state.stories[state.current]?.url||'';
  const existing=old?items.findIndex(a=>a.url===old):-1;
- state.stories=items;
+ state.stories=items;state.fromBackup=source!=='online';
  let current=existing;
  if(current<0){
   let last='';try{last=sessionStorage.getItem('cdmx-neo-last-feature')||''}catch{}
@@ -164,7 +164,7 @@ function start(){
   }
   const fallback=document.getElementById('embedded-news-fallback');
   if(fallback?.textContent){
-   try{applyStories(eligibleStories(JSON.parse(fallback.textContent)))}
+   try{applyStories(eligibleStories(JSON.parse(fallback.textContent)),'backup')}
    catch(err){console.warn('No se pudo leer la copia local de noticias:',err)}
   }
   if(!state.stories.length){
@@ -182,7 +182,7 @@ function start(){
  .then(resp=>{if(!resp.ok)throw Error('Noticias no disponibles (HTTP '+resp.status+')');return resp.json()})
  .then(feed=>{
   const items=eligibleStories(feed);
-  if(!applyStories(items))console.warn('Feed sin titulares válidos: se mantiene el contenido disponible.');
+  if(!applyStories(items,'online'))console.warn('Feed sin titulares válidos: se mantiene el contenido disponible.');
  })
  .catch(err=>{
   console.warn('No se pudo refrescar el feed: sigue activa la portada y sus noticias de respaldo.',err);
