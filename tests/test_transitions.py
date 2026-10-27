@@ -53,14 +53,14 @@ class TransitionTests(unittest.TestCase):
         self.assertGreaterEqual(len(paths),45)
         for path in paths:
             with self.subTest(page=str(path.relative_to(ROOT))):
-                self.assertRegex(path.read_text(encoding="utf-8"),r'page-transitions\\.js\\?v=[^"\\s]+')
+                self.assertRegex(path.read_text(encoding="utf-8"),r'page-transitions\.js\?v=[^"\s]+')
 
     def test_generators_preserve_navigation(self):
         self.assertIn("page-transitions.js",read("update_news.py"))
         self.assertIn("page-transitions.js",read("scripts/generar_guias.py"))
         self.assertIn("page-transitions.js",read("scripts/animales_feed.py"))
         self.assertIn("styles.css?v=20261027-unificado",read("scripts/animales_feed.py"))
-        self.assertRegex(read("index.html"), r'<script[^>]+src="/app\\.js\\?v=[^"]+"')
+        self.assertRegex(read("index.html"), r'<script[^>]+src="/app\.js\?v=[^"]+"')
 
     def test_section_landing_pages_use_verified_feed_and_theme(self):
         css=read("styles.css")
