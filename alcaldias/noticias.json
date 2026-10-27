@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-27 17:56 UTC",
+  "updated": "2026-10-27 18:56 UTC",
   "boroughs": [
     {
       "name": "La Magdalena Contreras",
@@ -1945,8 +1945,36 @@
     },
     {
       "name": "Coyoacán",
-      "count": 74,
+      "count": 75,
       "articles": [
+        {
+          "title": "¡La huesuda se pone guapa! Habrá desfile de catrinas en Coyoacán; ¿cuándo es?",
+          "description": "La información publicada por Chilango trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQcmMyMUFQYTc5LTUtcFNsRXNmNFlqaWlBcXNKZ1dLZnd2c2JVZVZsaWE5am8ybVVrazN2VlVYN0RwaUpyUkwyUHFkdVAxOTg5SUdlRU1xRmZBR3lndVJEUEZiQmdSRWhTWGlac1FscW01aktYYUtudUFoc2QtSmtncFlMNHROaGc2QVlFbE9keVVKNVRqN0pLUHlQRC1tRkI5LVpFajdsQ2g0VmZjRkFSRHdScmlxSHZT?oc=5",
+          "source": "Chilango",
+          "date": "2026-10-27",
+          "published_at": "2026-10-27T18:21:46Z",
+          "category": "CDMX",
+          "borough": "Coyoacán",
+          "location": "Coyoacán (mencionada en el titular)",
+          "local_url": "/noticias/?id=0bdd1857a542b2dc9c29&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por Chilango trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_coyoacan",
+            "url": "/assets/alcaldias/coyoacan.jpg",
+            "category": "CDMX",
+            "borough": "Coyoacán",
+            "topic": "Jardín Centenario de Coyoacán",
+            "author": "AlejandroLinaresGarcia",
+            "license": "CC BY-SA 4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:JardinCentenarioCoyoacan.JPG"
+          }
+        },
         {
           "title": "Gerardo Villanueva busca coordinar Morena en Coyoacán rumbo a 2027",
           "description": "La información publicada por Sociedad Noticias trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -2380,31 +2408,41 @@
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           }
-        },
-        {
-          "title": "Coyoacán y el TJACDMX ofrecen orientación legal gratuita a la ciudadanía",
-          "description": "La información publicada por sdpnoticias trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNaTA2eVZpYmt4WUhsUjBxc3BhajhxdjBOZlp6LXVrcHpjc2FPU1Fqa1NNVmlwbEVoUG5yNHI1M0R0ZV9lYWRGTVpna0hfVHM3TGtSam9Gb19LUzBTRE8yZjNwZWdzajAxOF9qOFB4V21BbUFCNHE2U0UyVV84SHd1TnZReGVySDJtaXN3cU1YYm1ZR0hIMFZRUURhcEc0NGxGVnR2bTVQTEpjZzJSMy1aMUJ0dXk?oc=5",
-          "source": "sdpnoticias",
-          "date": "2026-10-19",
-          "published_at": "2026-10-20T01:20:00Z",
-          "category": "CDMX",
-          "borough": "Coyoacán",
-          "location": "Coyoacán (mencionada en el titular)",
-          "local_url": "/noticias/?id=353e9374ada088208157&mes=2026-10",
-          "brief": {
-            "lead": "La información publicada por sdpnoticias trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
         }
       ]
     },
     {
       "name": "Cuajimalpa de Morelos",
-      "count": 21,
+      "count": 22,
       "articles": [
+        {
+          "title": "¿Vuela? Video registra el momento exacto en el que un auto se accidenta en Lomas de Chamizal, Cuajimalpa",
+          "description": "La información publicada por Milenio trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNVlowR3B0dmFDVlhzNFJDSkl3RV80eXhTWGJqb0k0cVF3NXU5dEppSHJzTUpRYlY4ZVY5Ni1vWld1eVlfTGsxUktGSHhvbDFTTzlWTEV6eUVEcXlSMlo1aEtvS0t3T1ZudFpFYUs1SmFDbDNldkg2ZjctRmE2RVJHcnJDN2RraDBvUlMxVnhzeXRONFZ6UkFIMm9sM2LSAZwBQVVfeXFMUGlCNWF4cm1qTHBUU2lfeUpJbzBKS3dUNUJTa25ZWDd4TGNfRzVzSUFwWmFSMl96WEI5Uk9EMXNrTHVZNWlHanN5UUpmY1hwSlZjM2RZcHFKWjFyS0tFQk9HR0d5TlJqSERjRG9kNkRUZVo3ckljcGZoWGhiYjN4Y1hCR2UzeUc1OWJ2YlhPVUx1SXBEb2g3MHNld0gx?oc=5",
+          "source": "Milenio",
+          "date": "2026-10-27",
+          "published_at": "2026-10-27T18:38:00Z",
+          "category": "CDMX",
+          "borough": "Cuajimalpa de Morelos",
+          "location": "Cuajimalpa de Morelos (mencionada en el titular)",
+          "local_url": "/noticias/?id=47080598d8e494302bcd&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por Milenio trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_cuajimalpa",
+            "url": "/assets/alcaldias/cuajimalpa.jpg",
+            "category": "CDMX",
+            "borough": "Cuajimalpa de Morelos",
+            "topic": "Centro del antiguo pueblo de Cuajimalpa",
+            "author": "AlejandroLinaresGarcia",
+            "license": "CC BY-SA 3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:CuajimalpaCentro01.JPG"
+          }
+        },
         {
           "title": "Cuajimalpa fortalece la economía de 5 mil 500 familias con Tarjeta Madre",
           "description": "La información publicada por El Momento Nacional trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -2827,8 +2865,36 @@
     },
     {
       "name": "Cuauhtémoc",
-      "count": 69,
+      "count": 70,
       "articles": [
+        {
+          "title": "Aseguran seis toneladas de cigarros pirata en Cuauhtémoc",
+          "description": "La información publicada por El Heraldo de México trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxORkQtQ2dKUWpuYWtFM3VxeGtRTW1PRUwtRDVyb2huR3FESGRuVHVEdndaN2Exa0w5bFNhM1A2SUdGTmNZRlVad0tyVjJEUURNajhabXFucTNZRk9IZ2RtQjAxNjB6SkdWOWJrYnk5VEhwTnhLMk14SnIyX2xheTRUa05hRVVfSzVicklBVkFVVGE0NXBnODNXZE9JVGJ5QktmRmlsbjVaNlpnTDJYNUMteUpuUEF2MlE2angw?oc=5",
+          "source": "El Heraldo de México",
+          "date": "2026-10-27",
+          "published_at": "2026-10-27T17:53:00Z",
+          "category": "CDMX",
+          "borough": "Cuauhtémoc",
+          "location": "Cuauhtémoc (mencionada en el titular)",
+          "local_url": "/noticias/?id=dd7c8b61ddeca5858c0b&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por El Heraldo de México trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_cuauhtemoc",
+            "url": "/assets/alcaldias/cuauhtemoc.jpg",
+            "category": "CDMX",
+            "borough": "Cuauhtémoc",
+            "topic": "Palacio de Bellas Artes en la alcaldía Cuauhtémoc",
+            "author": "Timothy Neesam",
+            "license": "CC BY-SA 4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Palacio_de_Bellas_Artes%2C_Mexico_City%2C_MX.jpg"
+          }
+        },
         {
           "title": "Aseguran seis toneladas de cigarros apócrifos durante cuatro cateos en la alcaldía Cuauhtémoc, CDMX",
           "description": "La información publicada por Libertad Oaxaca trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -3348,24 +3414,6 @@
           "local_url": "/noticias/?id=d2e649829f9259da909e&mes=2026-10",
           "brief": {
             "lead": "El pronóstico recogido por El Heraldo de México se refiere a condiciones meteorológicas en Cuauhtémoc. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
-        },
-        {
-          "title": "Menos delitos en Cuauhtémoc la alcaldía reporta tres meses consecutivos de reducción",
-          "description": "La información publicada por PostaMx trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOT29xYUN4eDBWVE1lcFo4ek15LWMwaHoxVGpSTnVCdElYZlFFSWdPSGNkUFBwVWxPTm9KZHI5Ym5CSUpydkRYZDJIQzdBdmZheE1reTdfQ1hJZXRvcTdCTldxYXRnOFpiZ2M1WUdSVFRPWkw4aGZwM1ZWM2MzWV9IWTJIX25wREFSX3RxNVV3MmhlbkFGanlNSnM5ckpKVENSa2xFOGhoWHo0eEFhVmlIeHJxQTZiNkIyYTJJOWU0NFEwQdIBxwFBVV95cUxQMk9sakVWRFczUGJTVHZNU2x4Y0tFNDJZZnlROGxRSGlTYVRhMnJxbEFsRktzYzFNRUU5ZThaUXZCMXZuRTFWcWh0Tms1SnhLN05VRXVKM0o2aGVia1QzVlN0ZzFCREFsQ012aHJDbTBMR19OTUxjRHE1c2hNU2RCWnBYVF9CUGI0eU5OdWhFWlNIS1RVSEYxb3g4bVVBR0pFUTBtMlBDaGtTb01TTUR5T05LWHZDX1loQ3NKakZ1Z3UzRHNKYW5R?oc=5",
-          "source": "PostaMx",
-          "date": "2026-10-20",
-          "published_at": "2026-10-21T00:21:00Z",
-          "category": "CDMX",
-          "borough": "Cuauhtémoc",
-          "location": "Cuauhtémoc (mencionada en el titular)",
-          "local_url": "/noticias/?id=c1f2e5d82ec554a85936&mes=2026-10",
-          "brief": {
-            "lead": "La información publicada por PostaMx trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
@@ -6871,8 +6919,36 @@
     },
     {
       "name": "Venustiano Carranza",
-      "count": 23,
+      "count": 24,
       "articles": [
+        {
+          "title": "Caso de desaparición de un adolescente en la Venustiano Carranza exhibe deficiencias en la búsqueda de personas",
+          "description": "La información publicada por Proceso trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxQR3RFZmlUTVBZS0F6Qkw1ZWFzT1ZKQXN4RTk4RjlGMTV6QnBwM1A4US0zeVVGdVlDMzVKMXdBeklQRUhwYjl6M1JtMGlVdmZnZ2otbGhwVWNCcDNxNUVvQUZxdWFrRGJpNDJJcndUVlJwbjd4SHBOQzlpam5EOGFaUGVsdWJiOXVBSmJ5cjdtQjZncG9rTzdncFotS3NyVXk3b1VFbDNkVmVtSnd5clZNTDhkbGE1T19Db2ZxUDNFSzhPOGxpTHlWeGlIWDJjcENDRWpHLUxZb2pTSVlIbzlfODNNeHZ6YzRMQnJ4Wkl4bE81RHhLV1E?oc=5",
+          "source": "Proceso",
+          "date": "2026-10-27",
+          "published_at": "2026-10-27T18:30:02Z",
+          "category": "CDMX",
+          "borough": "Venustiano Carranza",
+          "location": "Venustiano Carranza (mencionada en el titular)",
+          "local_url": "/noticias/?id=5b14dfa4fcecea999b70&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por Proceso trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_venustiano-carranza",
+            "url": "/assets/alcaldias/venustiano-carranza.jpg",
+            "category": "CDMX",
+            "borough": "Venustiano Carranza",
+            "topic": "Palacio de Lecumberri, hoy Archivo General de la Nación",
+            "author": "Raymundo Perera",
+            "license": "CC BY-SA 3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Palacio_de_Lecumberri.jpg"
+          }
+        },
         {
           "title": "Venustiano Carranza reduce percepción de inseguridad: ENSU",
           "description": "La información publicada por infopoder trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
