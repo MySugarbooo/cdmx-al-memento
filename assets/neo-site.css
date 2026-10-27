@@ -204,3 +204,15 @@ body.neo-site-inner>main>*:not(.neo-inner-banner){scroll-margin-top:145px}
  body.neo-site-inner .neo-global-date{padding-top:5px}
  body.neo-site-inner .neo-inner-banner~*{min-width:0}
 }
+
+
+/* Galería fotográfica con créditos auténticos */
+body.neo-site-inner .neo-photo-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,275px),1fr));gap:17px;margin:20px 0}
+body.neo-site-inner .neo-photo-card{display:block;margin:0;background:#27192e;border:1px solid #87496e;border-radius:14px;overflow:hidden;box-shadow:0 8px 25px #08030c55}
+body.neo-site-inner .neo-photo-card img{width:100%;height:230px;object-fit:cover;display:block;transition:transform .25s}
+body.neo-site-inner .neo-photo-card:hover img{transform:scale(1.035)}
+body.neo-site-inner .neo-photo-card figcaption{padding:13px 15px;display:grid;gap:4px;line-height:1.4}
+body.neo-site-inner .neo-photo-card strong{font-size:14px}
+body.neo-site-inner .neo-photo-card small{color:#d0b4c5;font-size:11px}
+body.neo-site-inner .neo-photo-card a{font-size:11px;font-weight:700;color:#ff9ccb}
+@media(prefers-reduced-motion:reduce){body.neo-site-inner .neo-photo-card img{transition:none!important;transform:none!important}}
