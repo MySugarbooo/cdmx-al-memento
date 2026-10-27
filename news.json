@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-27 14:15 UTC",
+  "updated": "2026-10-27 14:16 UTC",
   "articles": [
     {
       "title": "Día de Muertos dejará más de 12 mil millones de pesos en CDMX: impulsará las ventas de panaderías y hoteles",
@@ -647,30 +647,30 @@
     },
     {
       "title": "¿Hay Bloqueo de Transportistas Hoy en CDMX? Canacar Confirma Reunión en Zona Centro",
-      "description": "La información publicada por N+ trata un asunto registrado en la sección de Seguridad del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "description": "La información publicada por N+ trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
       "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPYWNoMGgzRlhpNzhtQ25BNnZvVzBncnBOUHVjRUtCTU11ZWEzNTV6bzI1OXoyMGxGZlV5MXhadHZETFRvejZWTXdEWU1mbmJnR3V0Wkp4LURXRDFCUVdTOExXaTZJTUZFeTBXd1hiTHZLSC1VN2RqNE05QjlhVUFNbTFiS2JEYnA2YXVoTkMySFdrMF9MMm41QkdyeEl2YmhmYUJ1MDdlRFNQSzFxOURLZTRYMkdKZG5selZjNUFza2ppWFBQREFiRmM1aHlBODYtbGh0TnhR?oc=5",
       "source": "N+",
       "date": "2026-10-27",
       "published_at": "2026-10-27T12:36:36Z",
-      "category": "Seguridad",
+      "category": "CDMX",
       "borough": "",
       "location": "Ciudad de México (sin alcaldía identificada)",
       "local_url": "/noticias/?id=11a7c400bc0d87383407&mes=2026-10",
       "brief": {
-        "lead": "La información publicada por N+ trata un asunto registrado en la sección de Seguridad del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-        "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
-        "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "lead": "La información publicada por N+ trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+        "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+        "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_seguridad_011",
-        "url": "/assets/fotos/archivo_seguridad_011.jpg",
-        "category": "Seguridad",
-        "borough": "",
-        "topic": "Claudia Sheinbaum entrega patrullas Iztapalapa 02",
-        "author": "Gobierno de la Ciudad de México",
-        "license": "CC BY 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Claudia_Sheinbaum_entrega_patrullas_Iztapalapa_02.jpg"
+        "id": "alcaldia_alvaro-obregon",
+        "url": "/assets/alcaldias/alvaro-obregon.jpg",
+        "category": "CDMX",
+        "borough": "Álvaro Obregón",
+        "topic": "Plaza del Carmen, barrio de San Ángel",
+        "author": "Reginaesc",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Plaza_del_Carmen%2C_Regina_Escandon%2C_23.sep.15._San_%C3%81ngel%2C_Del._%C3%81lvaro_Obreg%C3%B3n_01000_Ciudad_de_M%C3%A9xico.JPG"
       }
     },
     {
@@ -775,14 +775,14 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "alcaldia_alvaro-obregon",
-        "url": "/assets/alcaldias/alvaro-obregon.jpg",
+        "id": "alcaldia_azcapotzalco",
+        "url": "/assets/alcaldias/azcapotzalco.jpg",
         "category": "CDMX",
-        "borough": "Álvaro Obregón",
-        "topic": "Plaza del Carmen, barrio de San Ángel",
-        "author": "Reginaesc",
-        "license": "CC BY-SA 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Plaza_del_Carmen%2C_Regina_Escandon%2C_23.sep.15._San_%C3%81ngel%2C_Del._%C3%81lvaro_Obreg%C3%B3n_01000_Ciudad_de_M%C3%A9xico.JPG"
+        "borough": "Azcapotzalco",
+        "topic": "Parroquia de Santa Catarina, Azcapotzalco",
+        "author": "Ivan alcantara",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:PARROQUIA_DE_SANTA_CATARINA_%28AZCAPOTZALCO%29.jpg"
       }
     },
     {
@@ -831,27 +831,27 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "alcaldia_azcapotzalco",
-        "url": "/assets/alcaldias/azcapotzalco.jpg",
+        "id": "alcaldia_benito-juarez",
+        "url": "/assets/alcaldias/benito-juarez.jpg",
         "category": "CDMX",
-        "borough": "Azcapotzalco",
-        "topic": "Parroquia de Santa Catarina, Azcapotzalco",
-        "author": "Ivan alcantara",
+        "borough": "Benito Juárez",
+        "topic": "Parque Hundido, alcaldía Benito Juárez",
+        "author": "User:etnoboris",
         "license": "CC BY-SA 3.0",
-        "source": "https://commons.wikimedia.org/wiki/File:PARROQUIA_DE_SANTA_CATARINA_%28AZCAPOTZALCO%29.jpg"
+        "source": "https://commons.wikimedia.org/wiki/File:Parque_Hundido.jpeg"
       }
     },
     {
       "title": "“Seis de cada 10 se sienten seguros en la M. Hidalgo”",
       "description": "La información publicada por El Universal trata un asunto registrado en la sección de Seguridad del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPajhoT0ZuX01KZ2dnS01pYUxERXVpS1ZnSG5oWm1vZDRKa1htU1dzcy1waTJ1TzRTbUhXLTJ4WWhjWHFLTTFiZk41SFNVcll0Q3RzRThDMDgtVk5iWk9kN2ZDTmJOTEtKUzZVdnNjZzM1ZU1abm9kNzJwZU95cV9oRUwyclFOMXR0X2N2bkE1M0RYeXFOWWN30gGrAUFVX3lxTE9ZZXJUTk85bm9IMl9mdXZnSkt0c3dMVy1PR3ZSdHhoaUQ1dXIyQkYyd3RfcjN5Y2Vhc21pTFdIWmdVVW1JeGxKVk1LbFFiSHVsNzVYQUpKamtZZGpiSndXYmZsWVpJQTZTcnRsUzlYVFp6T2JsSVpRWHhQa2FiTDNHMHAtWTJNbE9iMUdkR2NhV29saFJkNkpyWEJFTWZZUnZDYkg3QUJoYl8zMA?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPWWVyVE5POW5vSDJfZnV2Z0pLdHN3TFctT0d2UnR4aGlENXVyMkJGMnd0X3IzeWNlYXNtaUxXSFpnVVVtSXhsSlZNS2xRYkh1bDc1WEFKSmprWWRqYkp3V2JmbFlaSUE2U3J0bFM5WFRaek9ibElaUVh4UGthYkwzRzBwLVkyTWxPYjFHZEdjYVdvbGhSZDZKclhCRU1mWVJ2Q2JIN0FCaGJfMzDSAasBQVVfeXFMT1llclROTzlub0gyX2Z1dmdKS3Rzd0xXLU9HdlJ0eGhpRDV1cjJCRjJ3dF9yM3ljZWFzbWlMV0haZ1VVbUl4bEpWTUtsUWJIdWw3NVhBSkpqa1lkamJKd1diZmxZWklBNlNydGxTOVhUWnpPYmxJWlFYeFBrYWJMM0cwcC1ZMk1sT2IxR2RHY2FXb2xoUmQ2SnJYQkVNZllSdkNiSDdBQmhiXzMw?oc=5",
       "source": "El Universal",
       "date": "2026-10-27",
       "published_at": "2026-10-27T11:18:55Z",
       "category": "Seguridad",
       "borough": "",
       "location": "Ubicación no indicada por el titular",
-      "local_url": "/noticias/?id=58dccc7147f26be19b57&mes=2026-10",
+      "local_url": "/noticias/?id=b4bc84b289d96da669cb&mes=2026-10",
       "brief": {
         "lead": "La información publicada por El Universal trata un asunto registrado en la sección de Seguridad del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
         "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
@@ -859,14 +859,14 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_seguridad_012",
-        "url": "/assets/fotos/archivo_seguridad_012.jpg",
+        "id": "archivo_seguridad_011",
+        "url": "/assets/fotos/archivo_seguridad_011.jpg",
         "category": "Seguridad",
         "borough": "",
-        "topic": "Entrega de Patrullas en Benito Juárez 03",
+        "topic": "Claudia Sheinbaum entrega patrullas Iztapalapa 02",
         "author": "Gobierno de la Ciudad de México",
         "license": "CC BY 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Entrega_de_Patrullas_en_Benito_Ju%C3%A1rez_03.jpg"
+        "source": "https://commons.wikimedia.org/wiki/File:Claudia_Sheinbaum_entrega_patrullas_Iztapalapa_02.jpg"
       }
     },
     {
@@ -943,14 +943,14 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "alcaldia_benito-juarez",
-        "url": "/assets/alcaldias/benito-juarez.jpg",
+        "id": "alcaldia_coyoacan",
+        "url": "/assets/alcaldias/coyoacan.jpg",
         "category": "CDMX",
-        "borough": "Benito Juárez",
-        "topic": "Parque Hundido, alcaldía Benito Juárez",
-        "author": "User:etnoboris",
-        "license": "CC BY-SA 3.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Parque_Hundido.jpeg"
+        "borough": "Coyoacán",
+        "topic": "Jardín Centenario de Coyoacán",
+        "author": "AlejandroLinaresGarcia",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:JardinCentenarioCoyoacan.JPG"
       }
     },
     {
@@ -971,14 +971,14 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "alcaldia_coyoacan",
-        "url": "/assets/alcaldias/coyoacan.jpg",
+        "id": "alcaldia_cuajimalpa",
+        "url": "/assets/alcaldias/cuajimalpa.jpg",
         "category": "CDMX",
-        "borough": "Coyoacán",
-        "topic": "Jardín Centenario de Coyoacán",
+        "borough": "Cuajimalpa de Morelos",
+        "topic": "Centro del antiguo pueblo de Cuajimalpa",
         "author": "AlejandroLinaresGarcia",
-        "license": "CC BY-SA 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:JardinCentenarioCoyoacan.JPG"
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:CuajimalpaCentro01.JPG"
       }
     },
     {
@@ -999,14 +999,14 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "alcaldia_cuajimalpa",
-        "url": "/assets/alcaldias/cuajimalpa.jpg",
+        "id": "alcaldia_gustavo-a-madero",
+        "url": "/assets/alcaldias/gustavo-a-madero.jpg",
         "category": "CDMX",
-        "borough": "Cuajimalpa de Morelos",
-        "topic": "Centro del antiguo pueblo de Cuajimalpa",
-        "author": "AlejandroLinaresGarcia",
-        "license": "CC BY-SA 3.0",
-        "source": "https://commons.wikimedia.org/wiki/File:CuajimalpaCentro01.JPG"
+        "borough": "Gustavo A. Madero",
+        "topic": "Capilla del Cerrito en el Tepeyac, Gustavo A. Madero",
+        "author": "Catedrales e Iglesias/Cathedrals and Churches",
+        "license": "CC BY 2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Capilla_Cerrito_del_Tepeyac_%28Basilica_Nuestra_Se%C3%B1ora_de_Guadalupe%29_Gustavo_A_Madero%2C_Ciudad_de_M%C3%A9xico_02.jpg"
       }
     },
     {
@@ -1083,14 +1083,14 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_seguridad_013",
-        "url": "/assets/fotos/archivo_seguridad_013.jpg",
+        "id": "archivo_seguridad_012",
+        "url": "/assets/fotos/archivo_seguridad_012.jpg",
         "category": "Seguridad",
         "borough": "",
-        "topic": "Entrega de Patrullas en Benito Juárez 02",
+        "topic": "Entrega de Patrullas en Benito Juárez 03",
         "author": "Gobierno de la Ciudad de México",
         "license": "CC BY 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Entrega_de_Patrullas_en_Benito_Ju%C3%A1rez_02.jpg"
+        "source": "https://commons.wikimedia.org/wiki/File:Entrega_de_Patrullas_en_Benito_Ju%C3%A1rez_03.jpg"
       }
     },
     {
@@ -1111,14 +1111,42 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "alcaldia_gustavo-a-madero",
-        "url": "/assets/alcaldias/gustavo-a-madero.jpg",
+        "id": "alcaldia_iztacalco",
+        "url": "/assets/alcaldias/iztacalco.jpg",
         "category": "CDMX",
-        "borough": "Gustavo A. Madero",
-        "topic": "Capilla del Cerrito en el Tepeyac, Gustavo A. Madero",
-        "author": "Catedrales e Iglesias/Cathedrals and Churches",
-        "license": "CC BY 2.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Capilla_Cerrito_del_Tepeyac_%28Basilica_Nuestra_Se%C3%B1ora_de_Guadalupe%29_Gustavo_A_Madero%2C_Ciudad_de_M%C3%A9xico_02.jpg"
+        "borough": "Iztacalco",
+        "topic": "Iglesia de San Matías en el antiguo pueblo de Iztacalco",
+        "author": "AlejandroLinaresGarcia",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:SanMatiasChurchIztacalco02.jpg"
+      }
+    },
+    {
+      "title": "ONU-Hábitat reconoce las Utopías de Ciudad de México",
+      "description": "La información publicada por elindependiente.mx trata un asunto registrado en la sección de Gobierno del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPR0Z1QURXR0xra1BRa0tNZjhSYjVNWFdsa1cxWkFEblEwd3FOYTljY29Db2gzZWU1eWpfOVpvZFhGVUk4bkVucHBjRzdVY0k1c0VrSXV5VVVEN2N1azlWc2I2SFpnSHJXams3MVNQRlFnUHUxZ1dNdFIwU3huRklTVDdBa3V3SE4wcWxiM0duMm55dDhwTjVfWjlBZlF1VWtFeF9Udw?oc=5",
+      "source": "elindependiente.mx",
+      "date": "2026-10-27",
+      "published_at": "2026-10-27T07:50:00Z",
+      "category": "Gobierno",
+      "borough": "",
+      "location": "Ciudad de México (sin alcaldía identificada)",
+      "local_url": "/noticias/?id=e86f78b08c86e68722f9&mes=2026-10",
+      "brief": {
+        "lead": "La información publicada por elindependiente.mx trata un asunto registrado en la sección de Gobierno del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+        "context": "Las decisiones administrativas pueden influir en servicios, trámites y derechos; conviene conocer sus condiciones y a quiénes afectan.",
+        "pending": "Es indispensable consultar los acuerdos, comunicados o documentos oficiales antes de dar una medida por vigente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "archivo_gobierno_004",
+        "url": "/assets/fotos/archivo_gobierno_004.jpg",
+        "category": "Gobierno",
+        "borough": "",
+        "topic": "Palacio Nacional Ciudad de México City DF",
+        "author": "stevecadman",
+        "license": "CC BY-SA 2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Palacio_Nacional_Ciudad_de_M%C3%A9xico_City_DF.jpg"
       }
     },
     {
@@ -1139,14 +1167,14 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "alcaldia_iztacalco",
-        "url": "/assets/alcaldias/iztacalco.jpg",
+        "id": "alcaldia_iztapalapa",
+        "url": "/assets/alcaldias/iztapalapa.jpg",
         "category": "CDMX",
-        "borough": "Iztacalco",
-        "topic": "Iglesia de San Matías en el antiguo pueblo de Iztacalco",
-        "author": "AlejandroLinaresGarcia",
-        "license": "CC BY-SA 3.0",
-        "source": "https://commons.wikimedia.org/wiki/File:SanMatiasChurchIztacalco02.jpg"
+        "borough": "Iztapalapa",
+        "topic": "Vista de Iztapalapa desde el Cerro de la Estrella",
+        "author": "Secretaría de Cultura Ciudad de México from México",
+        "license": "CC BY 2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:MX_MM_MUSEO_CERRO_DE_LA_ESTRELLA_%2849522225751%29.jpg"
       }
     },
     {
@@ -1167,14 +1195,14 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "alcaldia_iztapalapa",
-        "url": "/assets/alcaldias/iztapalapa.jpg",
+        "id": "alcaldia_miguel-hidalgo",
+        "url": "/assets/alcaldias/miguel-hidalgo.jpg",
         "category": "CDMX",
-        "borough": "Iztapalapa",
-        "topic": "Vista de Iztapalapa desde el Cerro de la Estrella",
-        "author": "Secretaría de Cultura Ciudad de México from México",
-        "license": "CC BY 2.0",
-        "source": "https://commons.wikimedia.org/wiki/File:MX_MM_MUSEO_CERRO_DE_LA_ESTRELLA_%2849522225751%29.jpg"
+        "borough": "Miguel Hidalgo",
+        "topic": "Bosque de Chapultepec, alcaldía Miguel Hidalgo",
+        "author": "ProtoplasmaKid",
+        "license": "CC0",
+        "source": "https://commons.wikimedia.org/wiki/File:Audiorama_de_Chapultepec_1.jpg"
       }
     },
     {
@@ -1195,14 +1223,14 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_gobierno_004",
-        "url": "/assets/fotos/archivo_gobierno_004.jpg",
+        "id": "archivo_gobierno_007",
+        "url": "/assets/fotos/archivo_gobierno_007.jpg",
         "category": "Gobierno",
         "borough": "",
-        "topic": "Palacio Nacional Ciudad de México City DF",
-        "author": "stevecadman",
-        "license": "CC BY-SA 2.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Palacio_Nacional_Ciudad_de_M%C3%A9xico_City_DF.jpg"
+        "topic": "Calle Calle Francisco I. Madero de la Ciudad de México, con el Palacio Nacional al fondo",
+        "author": "Luisalvaz",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Calle_Calle_Francisco_I._Madero_de_la_Ciudad_de_M%C3%A9xico%2C_con_el_Palacio_Nacional_al_fondo.JPG"
       }
     },
     {
@@ -1223,14 +1251,14 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_seguridad_014",
-        "url": "/assets/fotos/archivo_seguridad_014.jpg",
+        "id": "archivo_seguridad_013",
+        "url": "/assets/fotos/archivo_seguridad_013.jpg",
         "category": "Seguridad",
         "borough": "",
-        "topic": "Entrega de Patrullas en Benito Juárez 04",
+        "topic": "Entrega de Patrullas en Benito Juárez 02",
         "author": "Gobierno de la Ciudad de México",
         "license": "CC BY 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Entrega_de_Patrullas_en_Benito_Ju%C3%A1rez_04.jpg"
+        "source": "https://commons.wikimedia.org/wiki/File:Entrega_de_Patrullas_en_Benito_Ju%C3%A1rez_02.jpg"
       }
     },
     {
@@ -1251,14 +1279,14 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "alcaldia_miguel-hidalgo",
-        "url": "/assets/alcaldias/miguel-hidalgo.jpg",
+        "id": "alcaldia_milpa-alta",
+        "url": "/assets/alcaldias/milpa-alta.jpg",
         "category": "CDMX",
-        "borough": "Miguel Hidalgo",
-        "topic": "Bosque de Chapultepec, alcaldía Miguel Hidalgo",
-        "author": "ProtoplasmaKid",
-        "license": "CC0",
-        "source": "https://commons.wikimedia.org/wiki/File:Audiorama_de_Chapultepec_1.jpg"
+        "borough": "Milpa Alta",
+        "topic": "Villa Milpa Alta y su entorno rural",
+        "author": "Comisión Mexicana de Filmaciones from México D. F., México",
+        "license": "CC BY-SA 2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Villa_Milpa_Alta%2C_Ciudad_de_M%C3%A9xico_%2832886264042%29.jpg"
       }
     },
     {
@@ -1279,14 +1307,14 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "alcaldia_milpa-alta",
-        "url": "/assets/alcaldias/milpa-alta.jpg",
+        "id": "alcaldia_tlahuac",
+        "url": "/assets/alcaldias/tlahuac.jpg",
         "category": "CDMX",
-        "borough": "Milpa Alta",
-        "topic": "Villa Milpa Alta y su entorno rural",
-        "author": "Comisión Mexicana de Filmaciones from México D. F., México",
-        "license": "CC BY-SA 2.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Villa_Milpa_Alta%2C_Ciudad_de_M%C3%A9xico_%2832886264042%29.jpg"
+        "borough": "Tláhuac",
+        "topic": "Plaza central de San Pedro Tláhuac",
+        "author": "Yavidaxiu",
+        "license": "CC BY 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Tl%C3%A1huac-Plaza_central.JPG"
       }
     },
     {
@@ -1307,14 +1335,14 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "alcaldia_tlahuac",
-        "url": "/assets/alcaldias/tlahuac.jpg",
+        "id": "alcaldia_tlalpan",
+        "url": "/assets/alcaldias/tlalpan.jpg",
         "category": "CDMX",
-        "borough": "Tláhuac",
-        "topic": "Plaza central de San Pedro Tláhuac",
-        "author": "Yavidaxiu",
-        "license": "CC BY 3.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Tl%C3%A1huac-Plaza_central.JPG"
+        "borough": "Tlalpan",
+        "topic": "Quiosco de la plaza principal de Tlalpan",
+        "author": "farid estrada",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Kiosko_plaza_de_la_constitucion%2C_tlapan.JPG"
       }
     },
     {
@@ -1335,14 +1363,14 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "alcaldia_tlalpan",
-        "url": "/assets/alcaldias/tlalpan.jpg",
+        "id": "alcaldia_venustiano-carranza",
+        "url": "/assets/alcaldias/venustiano-carranza.jpg",
         "category": "CDMX",
-        "borough": "Tlalpan",
-        "topic": "Quiosco de la plaza principal de Tlalpan",
-        "author": "farid estrada",
+        "borough": "Venustiano Carranza",
+        "topic": "Palacio de Lecumberri, hoy Archivo General de la Nación",
+        "author": "Raymundo Perera",
         "license": "CC BY-SA 3.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Kiosko_plaza_de_la_constitucion%2C_tlapan.JPG"
+        "source": "https://commons.wikimedia.org/wiki/File:Palacio_de_Lecumberri.jpg"
       }
     },
     {
@@ -1363,14 +1391,14 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "alcaldia_venustiano-carranza",
-        "url": "/assets/alcaldias/venustiano-carranza.jpg",
-        "category": "CDMX",
-        "borough": "Venustiano Carranza",
-        "topic": "Palacio de Lecumberri, hoy Archivo General de la Nación",
-        "author": "Raymundo Perera",
+        "id": "archivo_cultura_002",
+        "url": "/assets/fotos/archivo_cultura_002.jpg",
+        "category": "Cultura",
+        "borough": "",
+        "topic": "Palacio Nacional de Bellas Artes Ciudad de México D.F",
+        "author": "Luis Yamamoto",
         "license": "CC BY-SA 3.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Palacio_de_Lecumberri.jpg"
+        "source": "https://commons.wikimedia.org/wiki/File:Palacio_Nacional_de_Bellas_Artes_Ciudad_de_M%C3%A9xico_D.F.jpg"
       }
     },
     {
@@ -1391,14 +1419,14 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_cultura_002",
-        "url": "/assets/fotos/archivo_cultura_002.jpg",
+        "id": "archivo_cultura_003",
+        "url": "/assets/fotos/archivo_cultura_003.jpg",
         "category": "Cultura",
         "borough": "",
-        "topic": "Palacio Nacional de Bellas Artes Ciudad de México D.F",
-        "author": "Luis Yamamoto",
-        "license": "CC BY-SA 3.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Palacio_Nacional_de_Bellas_Artes_Ciudad_de_M%C3%A9xico_D.F.jpg"
+        "topic": "Mexico City Palacio de bellas artes",
+        "author": "Jeses",
+        "license": "CC BY-SA 2.5",
+        "source": "https://commons.wikimedia.org/wiki/File:Mexico_City_Palacio_de_bellas_artes.jpg"
       }
     },
     {
@@ -1419,14 +1447,14 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_cultura_003",
-        "url": "/assets/fotos/archivo_cultura_003.jpg",
+        "id": "archivo_cultura_004",
+        "url": "/assets/fotos/archivo_cultura_004.jpg",
         "category": "Cultura",
         "borough": "",
-        "topic": "Mexico City Palacio de bellas artes",
-        "author": "Jeses",
-        "license": "CC BY-SA 2.5",
-        "source": "https://commons.wikimedia.org/wiki/File:Mexico_City_Palacio_de_bellas_artes.jpg"
+        "topic": "Palacio de Bellas Artes (nocturno), Ciudad de México.",
+        "author": "MaríaJoséFelgueresPlanells",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Palacio_de_Bellas_Artes_%28nocturno%29%2C_Ciudad_de_M%C3%A9xico..jpg"
       }
     },
     {
@@ -1447,14 +1475,14 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_cultura_004",
-        "url": "/assets/fotos/archivo_cultura_004.jpg",
+        "id": "archivo_cultura_005",
+        "url": "/assets/fotos/archivo_cultura_005.jpg",
         "category": "Cultura",
         "borough": "",
-        "topic": "Palacio de Bellas Artes (nocturno), Ciudad de México.",
-        "author": "MaríaJoséFelgueresPlanells",
-        "license": "CC BY-SA 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Palacio_de_Bellas_Artes_%28nocturno%29%2C_Ciudad_de_M%C3%A9xico..jpg"
+        "topic": "Palacio de Bellas Artes, México D.F., México, 2013-10-13, DD 40",
+        "author": "Diego Delso",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Palacio_de_Bellas_Artes%2C_M%C3%A9xico_D.F.%2C_M%C3%A9xico%2C_2013-10-13%2C_DD_40.jpg"
       }
     },
     {
@@ -1475,14 +1503,14 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_cultura_005",
-        "url": "/assets/fotos/archivo_cultura_005.jpg",
+        "id": "archivo_cultura_006",
+        "url": "/assets/fotos/archivo_cultura_006.jpg",
         "category": "Cultura",
         "borough": "",
-        "topic": "Palacio de Bellas Artes, México D.F., México, 2013-10-13, DD 40",
-        "author": "Diego Delso",
-        "license": "CC BY-SA 3.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Palacio_de_Bellas_Artes%2C_M%C3%A9xico_D.F.%2C_M%C3%A9xico%2C_2013-10-13%2C_DD_40.jpg"
+        "topic": "Detalles del exterior del Palacio de Bellas Artes, Ciudad de México 06",
+        "author": "Luisalvaz",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Detalles_del_exterior_del_Palacio_de_Bellas_Artes%2C_Ciudad_de_M%C3%A9xico_06.JPG"
       }
     },
     {
@@ -1503,14 +1531,14 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_cultura_006",
-        "url": "/assets/fotos/archivo_cultura_006.jpg",
+        "id": "archivo_cultura_007",
+        "url": "/assets/fotos/archivo_cultura_007.jpg",
         "category": "Cultura",
         "borough": "",
-        "topic": "Detalles del exterior del Palacio de Bellas Artes, Ciudad de México 06",
-        "author": "Luisalvaz",
+        "topic": "Palacio de Bellas Artes, Ciudad de México, México, 2015-07-18, DD 10",
+        "author": "Diego Delso",
         "license": "CC BY-SA 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Detalles_del_exterior_del_Palacio_de_Bellas_Artes%2C_Ciudad_de_M%C3%A9xico_06.JPG"
+        "source": "https://commons.wikimedia.org/wiki/File:Palacio_de_Bellas_Artes%2C_Ciudad_de_M%C3%A9xico%2C_M%C3%A9xico%2C_2015-07-18%2C_DD_10.JPG"
       }
     },
     {
@@ -1643,42 +1671,14 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_gobierno_007",
-        "url": "/assets/fotos/archivo_gobierno_007.jpg",
+        "id": "archivo_gobierno_008",
+        "url": "/assets/fotos/archivo_gobierno_008.jpg",
         "category": "Gobierno",
         "borough": "",
-        "topic": "Calle Calle Francisco I. Madero de la Ciudad de México, con el Palacio Nacional al fondo",
-        "author": "Luisalvaz",
+        "topic": "Calles Seminario y Moneda Centro Histórico Ciudad de México 01",
+        "author": "Correogsk",
         "license": "CC BY-SA 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Calle_Calle_Francisco_I._Madero_de_la_Ciudad_de_M%C3%A9xico%2C_con_el_Palacio_Nacional_al_fondo.JPG"
-      }
-    },
-    {
-      "title": "Líneas 2 y 3 del Metro: esto pasará martes y miércoles",
-      "description": "La información publicada por La Silla Rota trata un asunto registrado en la sección de Metro del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQX2ZXbjU3MGNOaHQ2clRXYWN6TEkxQkNYMUJmNFNscFZoOFVhTXR5dUlOTWttaUhVWmhkc1VLNVc0MUpVTVdvRzYyaFVYNTNFQ0YzSjBCQ2VScnNNZ2VkenJrVEU2bHlRX05Hc2YzTTJLT29VcGNnQ3I3bk1tU0FJVkdhYzRXMmh3X1hEV200MkF4eThHZjdQS3pxbUQ5bGQxSlJEVTBlQklhYzczWnow?oc=5",
-      "source": "La Silla Rota",
-      "date": "2026-10-26",
-      "published_at": "2026-10-27T03:37:00Z",
-      "category": "Metro",
-      "borough": "",
-      "location": "Ubicación no indicada por el titular",
-      "local_url": "/noticias/?id=089df4b2e280cfb420eb&mes=2026-10",
-      "brief": {
-        "lead": "La información publicada por La Silla Rota trata un asunto registrado en la sección de Metro del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-        "context": "Los cambios en este sistema pueden afectar los horarios, las conexiones y la planeación de los viajes cotidianos.",
-        "pending": "El estado operativo, las estaciones y las alternativas de traslado deben comprobarse en los avisos actuales del Metro. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "archivo_metro_008",
-        "url": "/assets/fotos/archivo_metro_008.jpg",
-        "category": "Metro",
-        "borough": "",
-        "topic": "Estación Pino Suárez de la Línea 1 del Metro de la Ciudad de México 04",
-        "author": "ProtoplasmaKid",
-        "license": "CC BY-SA 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Estaci%C3%B3n_Pino_Su%C3%A1rez_de_la_L%C3%ADnea_1_del_Metro_de_la_Ciudad_de_M%C3%A9xico_04.jpg"
+        "source": "https://commons.wikimedia.org/wiki/File:Calles_Seminario_y_Moneda_Centro_Hist%C3%B3rico_Ciudad_de_M%C3%A9xico_01.jpg"
       }
     }
   ]
