@@ -159,3 +159,10 @@ html.neo-active a{color:inherit}
  .neo-dock .neo-dock-active{color:#ff80b9}
 }
 @media(prefers-reduced-motion:reduce){#neo-home *{animation:none!important;transition:none!important}}
+
+/* Alternancia de apariencia: sin afectar ajustes de otras páginas */
+html.neo-active.neo-soft body{background:radial-gradient(ellipse at top right,#8d416f,#26172e 65%)}
+html.neo-active.neo-soft #contenido{background:#251a31}
+html.neo-active.neo-soft .neo-box{background:#32223c;border-color:#b05a8b}
+html.neo-active.neo-soft .neo-head{background:#302039}
+html.neo-active.neo-soft .neo-nav{background:#302039}
