@@ -475,7 +475,7 @@ def generate_report():
         "", "contacto.html", "privacidad.html", "sobre-nosotros.html",
         "politica-editorial.html", "creditos-fotograficos.html",
         "guias/", "reportes/", "archivo/", "alcaldias/", "mapa/",
-        "cerca/", "movilidad/", "avisos/", "cdmx/", "seguridad/", "servicios/",
+        "cerca/", "movilidad/", "avisos/", "cdmx/", "seguridad/", "servicios/", "fotografias/",
         "noticias/", "descubre/", "agenda/", "negocios/", "herramientas/", "publicidad/", "herramientas/calendario-laboral.html",
     ]
     urls += [
