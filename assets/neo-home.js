@@ -222,10 +222,12 @@ start();
   });
   node.replaceChildren(svg);
  }
- async function init(){const node=document.getElementById('neo-official-map');if(!node||node.dataset.loaded||busy)return;busy=true;
+ async function init(){const node=document.getElementById('neo-official-map');if(!node||node.dataset.loaded||busy)return;busy=true;node.dataset.loaded='pending';
   try{const res=await fetch(endpoint,{mode:'cors'});if(!res.ok)throw Error('HTTP '+res.status);paint(node,await res.json());node.dataset.loaded='1'}
-  catch(e){node.replaceChildren();const a=document.createElement('a');a.href='/alcaldias/';a.textContent='Consultar las 16 alcaldías ↗';node.append(a);console.warn('Mapa oficial no disponible:',e)}finally{busy=false}
+  catch(e){node.dataset.loaded='failed';node.replaceChildren();const a=document.createElement('a');a.href='/alcaldias/';a.textContent='Consultar las 16 alcaldías ↗';node.append(a);console.warn('Mapa oficial no disponible:',e)}finally{busy=false}
  }
- new MutationObserver(()=>{if(document.getElementById('neo-official-map'))init()}).observe(document.documentElement,{childList:true,subtree:true});
- if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);else init();
+ const watcher=new MutationObserver(()=>{if(document.getElementById('neo-official-map')){watcher.disconnect();init()}});
+ if(document.getElementById('neo-official-map'))init();
+ else{watcher.observe(document.documentElement,{childList:true,subtree:true});
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',()=>{watcher.disconnect();init()},{once:true});}
 })();
