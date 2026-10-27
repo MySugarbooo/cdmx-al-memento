@@ -1,0 +1,5 @@
+# Documento principal: revisar versión HTML en cada visita sin invalidar archivos de imagen ni anuncios.
+/
+  Cache-Control: no-cache, must-revalidate
+/index.html
+  Cache-Control: no-cache, must-revalidate
