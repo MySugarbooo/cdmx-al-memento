@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-27 17:11 UTC",
+  "updated": "2026-10-27 17:56 UTC",
   "boroughs": [
     {
       "name": "La Magdalena Contreras",
@@ -521,8 +521,64 @@
     },
     {
       "name": "Álvaro Obregón",
-      "count": 46,
+      "count": 48,
       "articles": [
+        {
+          "title": "Casarín rinde Informe de Labores en la alcaldía Álvaro Obregón",
+          "description": "La información publicada por El Heraldo de México trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNeGNyd1Y2dVVLYkJIaDRWSlZ2VldnaUtBaEYyLXNoa0dqR182eWJXeExyYlZIS1pmdGNjMnA4MkFsWHljalVXb2NyU0VVdWpEMko3a0hWeUswZUVQMHdLM1FRWjdDazd0bVd0ZmtzeVZjWm5yWkx3N0xESGczcnc1YUktUHB4ZjBPZXBab3h3VmlRRlNHalc4SkI4MTdtS0ZTYUl2Q0pEZ3ZGWTdSaGNtNG9HQmhfa3ZDTUNWSFRhWjBSbGM?oc=5",
+          "source": "El Heraldo de México",
+          "date": "2026-10-27",
+          "published_at": "2026-10-27T17:36:00Z",
+          "category": "CDMX",
+          "borough": "Álvaro Obregón",
+          "location": "Álvaro Obregón (mencionada en el titular)",
+          "local_url": "/noticias/?id=865bb432bfc0a9a79cc7&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por El Heraldo de México trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_alvaro-obregon",
+            "url": "/assets/alcaldias/alvaro-obregon.jpg",
+            "category": "CDMX",
+            "borough": "Álvaro Obregón",
+            "topic": "Plaza del Carmen, barrio de San Ángel",
+            "author": "Reginaesc",
+            "license": "CC BY-SA 4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Plaza_del_Carmen%2C_Regina_Escandon%2C_23.sep.15._San_%C3%81ngel%2C_Del._%C3%81lvaro_Obreg%C3%B3n_01000_Ciudad_de_M%C3%A9xico.JPG"
+          }
+        },
+        {
+          "title": "Antonio Betancourt denuncia amenazas de muerte tras accidente con camión de la alcaldía Álvaro Obregón; \"ese el tipo de gobierno que tenemos”, dice",
+          "description": "En su información, El Universal aborda una decisión, declaración o debate relacionado con las instituciones de la ciudad. Conviene distinguir la intención anunciada de las resoluciones que hayan sido aprobadas y publicado oficialmente.",
+          "url": "https://news.google.com/rss/articles/CBMilAJBVV95cUxNYjUxX0VKb0k0MHkxWjVpNWJHVkQtNG0zOEtsYkZPeTUzcXduaXJHTzBoZ0owZXM4Qm15NWttT2t2YURrR3ZDSE5jeHB0b1VHbmRWNkNwZ0NaT3VvZHpFckxZLUc3VnRybVBvb3NjTk1maER6dlpOWC14bFVLZVllNnYtNUd0RnVRRXFhZVpPTklkOHJsU0dia05CcnNERWNvdk0xNHhleVVBbktFMXR5UlNqMXRfaHJTc2JwQm1fU1p4MXY3ZGIta0lHbmtQZ1ExSjZuTXFTUkZoU05oVUgwcGpMcGluZjNSYi1SUE9ZcE1ob0lia3ROREt2RDBDN3VaQzRla3dId2M0OWVtQWJTMDVaTUU?oc=5",
+          "source": "El Universal",
+          "date": "2026-10-27",
+          "published_at": "2026-10-27T17:22:00Z",
+          "category": "CDMX",
+          "borough": "Álvaro Obregón",
+          "location": "Álvaro Obregón (mencionada en el titular)",
+          "local_url": "/noticias/?id=44577b955dac384cff48&mes=2026-10",
+          "brief": {
+            "lead": "En su información, El Universal aborda una decisión, declaración o debate relacionado con las instituciones de la ciudad. Conviene distinguir la intención anunciada de las resoluciones que hayan sido aprobadas y publicado oficialmente.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "archivo_cdmx_014",
+            "url": "/assets/fotos/archivo_cdmx_014.jpg",
+            "category": "CDMX",
+            "borough": "",
+            "topic": "Cathedral (155478679)",
+            "author": "Francisco Donaldo Cabrera Cruz",
+            "license": "CC BY-SA 3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Cathedral_%28155478679%29.jpeg"
+          }
+        },
         {
           "title": "Clima en Álvaro Obregón: Lunes 26 de octubre con nubes y ambiente fresco en la capital",
           "description": "El pronóstico recogido por El Heraldo de México se refiere a condiciones meteorológicas en Álvaro Obregón. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
@@ -934,42 +990,6 @@
           "local_url": "/noticias/?id=e25db7891a9bccdec9bc&mes=2026-10",
           "brief": {
             "lead": "La nota de El Sol de México reúne reportes sobre la circulación o los tiempos del Metro de Ciudad de México. El titular menciona Línea 12. La operación puede cambiar durante el día y los informes de usuarios no son equivalentes a un comunicado oficial.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
-        },
-        {
-          "title": "Clima y pronóstico en Álvaro Obregón este domingo 18 de octubre: ambiente frío y nublado",
-          "description": "El pronóstico recogido por El Heraldo de México se refiere a condiciones meteorológicas en Álvaro Obregón. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
-          "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQOVhRUmdMMjFrT1JvRmVTbFdpZkVKbWNLdGd2OW1HS29KRzJLdGVGQm5xNTVkX3JGRlJQeXltcDNHSXRLM2pkOHhPOVV0cFlLV1ZlNjZ0Y0NfT3EySE5GUUV2a3ktUzNzMXIycHZ0YWV0cDB3TEU4OHRaVFkxTW1xQ3B0bUZuRU13S3M3REktcXFlY2hSY2ZwRDlEc3JDVWdHOXNGcGNoeFhjRENSQkw3T2pPRGZrM0RmSmRtc1pQWnJXZXNIRUloZktHbTkwVndUTmxCYlZHZGZWamhHNnBZ?oc=5",
-          "source": "El Heraldo de México",
-          "date": "2026-10-17",
-          "published_at": "2026-10-17T07:00:00Z",
-          "category": "CDMX",
-          "borough": "Álvaro Obregón",
-          "location": "Álvaro Obregón (mencionada en el titular)",
-          "local_url": "/noticias/?id=eaa86af3ccf27f975c84&mes=2026-10",
-          "brief": {
-            "lead": "El pronóstico recogido por El Heraldo de México se refiere a condiciones meteorológicas en Álvaro Obregón. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
-        },
-        {
-          "title": "Clima y pronóstico en Álvaro Obregón este sábado 17 de octubre: jornada fresca con lluvia ligera",
-          "description": "El pronóstico recogido por El Heraldo de México se refiere a lluvias ligeras en Álvaro Obregón. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
-          "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOeGQzT29IODQxUUszU0xGRnRVRC1RdUd2N0RVMnMteHhNTmR6WWoycFRaNmt3SS1zcWdOV3JLdnNVdldaYU55N3ROMW1JTnk0TFMxZXNDYkNfaFAtZExoSVZ6SmdYUWl1SExKaFV3d3NZQk9LU3ZvUmFDdXZkTUdlTURPUjR6V3Fyam8yYmUydjNZWmlCOG1GbTB5Z0VrVWZiNm1zQkl3MWs0ZVNad2VCM1F2OXJpODFDSEVkUE5UbHduU1lUQTY1SzM5Qmp4R2w4MHp2dEZnNlFjdXU1U2FLTVZaRE56Tzd5ZVM3LQ?oc=5",
-          "source": "El Heraldo de México",
-          "date": "2026-10-16",
-          "published_at": "2026-10-17T05:00:00Z",
-          "category": "CDMX",
-          "borough": "Álvaro Obregón",
-          "location": "Álvaro Obregón (mencionada en el titular)",
-          "local_url": "/noticias/?id=2b64b16c4db016da2926&mes=2026-10",
-          "brief": {
-            "lead": "El pronóstico recogido por El Heraldo de México se refiere a lluvias ligeras en Álvaro Obregón. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
