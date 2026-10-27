@@ -37,6 +37,13 @@ on:
       - 'tests/test_profiles.py'
       - 'tests/test_transitions.py'
       - 'assets/page-transitions.js'
+      - 'assets/neo-site.css'
+      - 'assets/neo-home.css'
+      - 'assets/neo-home.js'
+      - 'assets/neo-sections.js'
+      - 'seguridad/index.html'
+      - 'servicios/index.html'
+      - 'cdmx/index.html'
       - 'app.js'
       - 'styles.css'
       - 'tests/test_portal.py'
@@ -67,6 +74,8 @@ jobs:
         run: |
           node --check app.js
           node --check assets/page-transitions.js
+          node --check assets/neo-home.js
+          node --check assets/neo-sections.js
           node --check kisumi-studio/studio.js
           node --check assets/noticias-locales.js
           node --check assets/portal.js
