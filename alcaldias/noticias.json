@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-27 01:53 UTC",
+  "updated": "2026-10-27 02:47 UTC",
   "boroughs": [
     {
       "name": "La Magdalena Contreras",
@@ -3725,8 +3725,36 @@
     },
     {
       "name": "Iztacalco",
-      "count": 78,
+      "count": 79,
       "articles": [
+        {
+          "title": "Enfrentamiento entre Manifestantes, Civiles y Servidores Públicos en Iztacalco, CDMX",
+          "description": "La información publicada por N+ trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPeC16cEZfVFNuaERkektHMUdRV0ZWazB5NllQQnJ4UzloU1dFS2Q0YVRzSDlYdVRfTllXeF9BWTluMHdwMHczVmhwa2pzZnRaU0dRZ0ZnRGswSHdsN3dhRWRYT282TXFoMTNWSWVqbC1hZnpSNElCMDY4YmJkaXBKMjV6YWhGZEp3NkcxUW1Qc3ZJVjRqbDVmcTJDSmJvM2xFQkkxX0dPQjZseTNHeE9VSTNjUXM1SDU5aWhUeGpVaUthVEIydTlMajRtSThQWjFyT2xvdEFVSUl5TWV1MW1VcDJ5anZmM3dnOXNkUQ?oc=5",
+          "source": "N+",
+          "date": "2026-10-26",
+          "published_at": "2026-10-27T01:52:39Z",
+          "category": "CDMX",
+          "borough": "Iztacalco",
+          "location": "Iztacalco (mencionada en el titular)",
+          "local_url": "/noticias/?id=7c6fcf0ea0c7c28dcb8c&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por N+ trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_iztacalco",
+            "url": "/assets/alcaldias/iztacalco.jpg",
+            "category": "CDMX",
+            "borough": "Iztacalco",
+            "topic": "Iglesia de San Matías en el antiguo pueblo de Iztacalco",
+            "author": "AlejandroLinaresGarcia",
+            "license": "CC BY-SA 3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:SanMatiasChurchIztacalco02.jpg"
+          }
+        },
         {
           "title": "Iztacalco retira ramas en riesgo de caer en jardín de niños",
           "description": "La información publicada por El Momento Nacional trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -4180,30 +4208,12 @@
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           }
-        },
-        {
-          "title": "Choque entre dos unidades de Metrobús deja 27 heridos en calles de Iztacalco, CDMX",
-          "description": "La información publicada por El Heraldo de México trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNTzZia0hJRWpUcXV5LWsxUDdjUXFLbWg4TENGeDh3VWRuQkFCRUVlYVJkQ2JPQnNYTHlvSHZpQnl4Umk0bjd1WTZ1c2VoNzdQTGFZSHo4alI5dHh2ckhKSDNidUE3MTQyTXVTaENsUVBMTGdsejdQVk5qdzZBZk84b2tOOVlvOXFSMXJrdDl4cjZaWVh0VDJpYzJEZjU3bWtqOEhGb0lyeGVKRGxWU0txT3JHaFJMWFpnMW8zN0J6SXF1YjdVb0ZtNWhIZ0tfbU1HemJ4WEQtZTlhNExO?oc=5",
-          "source": "El Heraldo de México",
-          "date": "2026-10-21",
-          "published_at": "2026-10-21T21:33:00Z",
-          "category": "CDMX",
-          "borough": "Iztacalco",
-          "location": "Iztacalco (mencionada en el titular)",
-          "local_url": "/noticias/?id=ba46ce26c5af90f8bb3d&mes=2026-10",
-          "brief": {
-            "lead": "La información publicada por El Heraldo de México trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
         }
       ]
     },
     {
       "name": "Iztapalapa",
-      "count": 135,
+      "count": 136,
       "articles": [
         {
           "title": "Falta mantenimiento en caminos seguros de Iztapalapa",
@@ -4318,6 +4328,24 @@
           "local_url": "/noticias/?id=fbbe34fef44b8884d44e&mes=2026-10",
           "brief": {
             "lead": "La información publicada por Excélsior trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          }
+        },
+        {
+          "title": "Detienen a dos presuntos responsables de balacera en Iztapalapa",
+          "description": "Una nota de El Independiente comunica un caso relacionado con una detención o una presunta conducta delictiva en Iztapalapa. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQeGNnZzFxOTF6RUNMUlZSR0JhVF82YjBfZ2VSNjN0X2hiZmF3THZPNWo0WUFveTJkSjdUbDFTckZJZmNKZHpvT0pTWHYwV2p6ZTh2WVNObzgyaVluMHpUak1hdDJVUVIzSFF1OFFnSkZaTGd4cDJXeGJKSnVfdUpLZTBDTHprbHU5djVNM3JIQ3g0RWw3Q0ZvUmJuN2RqTlBpYUxRWk9ZZUdQc0pVUzdBOV9iRQ?oc=5",
+          "source": "El Independiente",
+          "date": "2026-10-24",
+          "published_at": "2026-10-24T16:03:21Z",
+          "category": "CDMX",
+          "borough": "Iztapalapa",
+          "location": "Iztapalapa (mencionada en el titular)",
+          "local_url": "/noticias/?id=05db869896661eefefe5&mes=2026-10",
+          "brief": {
+            "lead": "Una nota de El Independiente comunica un caso relacionado con una detención o una presunta conducta delictiva en Iztapalapa. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
@@ -4628,31 +4656,41 @@
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           }
-        },
-        {
-          "title": "Dos Muertos por Ataque con Arma de Fuego en Ermita Iztapalapa, CDMX",
-          "description": "La información publicada por N+ trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPZlZqOVZUZC1ZRm9ubGZrVTJjVzU4RHBKRThzVXJLZ1NMZ3NaSjIzQ1E0eVJVcHhtemd6WWF6d0V4NnVaMzk1MGFDMXVmcjhLdmsxN0UybVZtRjJmRWRabm1vTzhVby1ET29VRzA2OXNFVzNGMTFRTGdYU3FRTENrckRRQ1ZqMkplVm1HWTE0c2Vqd21oUkdVOVRSb1JPM1NFbjUxOE9rTk9SdGdSdGtKR3dZemg4QTd5Um1FbGEzQWVkYVVSUkFteXpLMGU?oc=5",
-          "source": "N+",
-          "date": "2026-10-23",
-          "published_at": "2026-10-23T22:25:34Z",
-          "category": "CDMX",
-          "borough": "Iztapalapa",
-          "location": "Iztapalapa (mencionada en el titular)",
-          "local_url": "/noticias/?id=4a7a4497faccd7eb73ee&mes=2026-10",
-          "brief": {
-            "lead": "La información publicada por N+ trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
         }
       ]
     },
     {
       "name": "Miguel Hidalgo",
-      "count": 77,
+      "count": 78,
       "articles": [
+        {
+          "title": "Mauricio Tabe busca que Miguel Hidalgo sea la alcaldía más segura de la CDMX",
+          "description": "La información publicada por El Heraldo de México trata un asunto registrado en la sección de Seguridad del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOblk4bEkwVEFHS1pxa1NyZVFFNDVLTmotSmtWRHNIc2RySDhpLWs0YzAtYWR4ZExIOEtDcnNpMmZlMjI1OUFjb2pxMWViRVBvb04zUGFHdzF2M3VYRE9XSURxQ0dKVXloT2hHLW9NdEFZNGxUUVFsTndabDNuUzlwWHZES2dReGtaTzJrZG42NVR1X3l5VW9qRDhTMzNhazEyR05pNnFmRnBMQ3VFUG5hSjJQMFNRN0VBZ1BLdG1mLTlmczh3dUdsR2dfRlJ6VU1TUVNJS2NR?oc=5",
+          "source": "El Heraldo de México",
+          "date": "2026-10-26",
+          "published_at": "2026-10-27T02:05:00Z",
+          "category": "Seguridad",
+          "borough": "Miguel Hidalgo",
+          "location": "Miguel Hidalgo (mencionada en el titular)",
+          "local_url": "/noticias/?id=4cab3e27328220f4b8e5&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por El Heraldo de México trata un asunto registrado en la sección de Seguridad del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_miguel-hidalgo",
+            "url": "/assets/alcaldias/miguel-hidalgo.jpg",
+            "category": "CDMX",
+            "borough": "Miguel Hidalgo",
+            "topic": "Bosque de Chapultepec, alcaldía Miguel Hidalgo",
+            "author": "ProtoplasmaKid",
+            "license": "CC0",
+            "source": "https://commons.wikimedia.org/wiki/File:Audiorama_de_Chapultepec_1.jpg"
+          }
+        },
         {
           "title": "Mauricio Tabe busca que Miguel Hidalgo sea la alcaldía más segura de CDMX",
           "description": "La información publicada por sdpnoticias trata un asunto registrado en la sección de Seguridad del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -5154,24 +5192,6 @@
             "lead": "La información publicada por Diario de México trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
-        },
-        {
-          "title": "Cierre Vial Afectará el Tráfico en la Calle Miguel Hidalgo de Veracruz",
-          "description": "La información publicada por N+ trata un asunto registrado en la sección de Movilidad del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQMUxtS09PWTBCcmRzWXJod2xvYVNYREdXLUpTekVPSkw1dEFqWEV2YS12Q2tqSHdBWVBUS0YyZUpwdHBDbnFFQnZFcjc3TnUwMENnUkRkRmpkSF9WczQxSVVxUERKdDUteDE2YTVVaGVSbFVEeXNPY3djMkNKcXVNLTBiN3VlYXFqZDZwUEFLU0hoNm01VWkyZzF0b1BtLU5Uelh3ZkVFN3FVaDdOZnlwcndhQ0RGczhydHZFQk1OYw?oc=5",
-          "source": "N+",
-          "date": "2026-10-23",
-          "published_at": "2026-10-23T15:01:24Z",
-          "category": "Movilidad",
-          "borough": "Miguel Hidalgo",
-          "location": "Miguel Hidalgo (mencionada en el titular)",
-          "local_url": "/noticias/?id=3a8ae9d60664522402d8&mes=2026-10",
-          "brief": {
-            "lead": "La información publicada por N+ trata un asunto registrado en la sección de Movilidad del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
-            "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           }
         }
@@ -7085,7 +7105,7 @@
     },
     {
       "name": "Xochimilco",
-      "count": 103,
+      "count": 104,
       "articles": [
         {
           "title": "La Llorona Xochimilco 2026: ¿De qué trata la historia de Nahui?",
@@ -7098,6 +7118,34 @@
           "borough": "Xochimilco",
           "location": "Xochimilco (mencionada en el titular)",
           "local_url": "/noticias/?id=d68e5655d43bd6e7374b&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por Milenio trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_xochimilco",
+            "url": "/assets/alcaldias/xochimilco.jpg",
+            "category": "CDMX",
+            "borough": "Xochimilco",
+            "topic": "Trajineras y canales de Xochimilco",
+            "author": "Xbauerx",
+            "license": "CC BY-SA 4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Trajineras_de_Xochimilco.jpg"
+          }
+        },
+        {
+          "title": "¿De qué trata La Llorona de Xochimilco? La historia detrás de Nahui que inspira la obra en CdMx",
+          "description": "La información publicada por Milenio trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBYQ2Exck1kMHhoZnB3bGVUZkNPQTQtN1ZEMk1vREFSSF9KZWE3NnZwSXJiQmVVSmtvYjktQUVfYk4yMS03SWl1VS1ha3R4Vm1PcmI4NjExVG1jWVN4SE5ZSTFJVTVKUi0yMEotNnR2LUs5QmdhMGl2NXgzMG5TUdIBfkFVX3lxTFBYQ2Exck1kMHhoZnB3bGVUZkNPQTQtN1ZEMk1vREFSSF9KZWE3NnZwSXJiQmVVSmtvYjktQUVfYk4yMS03SWl1VS1ha3R4Vm1PcmI4NjExVG1jWVN4SE5ZSTFJVTVKUi0yMEotNnR2LUs5QmdhMGl2NXgzMG5TUQ?oc=5",
+          "source": "Milenio",
+          "date": "2026-10-26",
+          "published_at": "2026-10-27T01:09:00Z",
+          "category": "CDMX",
+          "borough": "Xochimilco",
+          "location": "Xochimilco (mencionada en el titular)",
+          "local_url": "/noticias/?id=3ce47819da1bf0a19cff&mes=2026-10",
           "brief": {
             "lead": "La información publicada por Milenio trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
@@ -7536,24 +7584,6 @@
           "local_url": "/noticias/?id=c75dc5bf30ba1b6b6a4f&mes=2026-10",
           "brief": {
             "lead": "La publicación de El Congresista pone el foco en dificultades que podrían afectar la comercialización del cempasúchil de Xochimilco. La producción de flor involucra a familias y productores locales; para explicar causas y alcances hacen falta los datos del reportaje.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
-        },
-        {
-          "title": "Clima en Xochimilco: viernes 23 de octubre de 2026 con frío y nubes dispersas",
-          "description": "El pronóstico recogido por El Heraldo de México se refiere a condiciones meteorológicas en Xochimilco. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
-          "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNdzA1MVVHMHpPOG5FTWN3VUJPb2FWQ291OEI0Yy1ydGo5VHB5MFc1NHU2bkt6UWZEeFN5Unpwa2xXbThyNDNFOFduRUdHSFFFTk80S2l4OWFBQ28tRkc2VEU0b2kyakV6ZlFEcmtaM0dZOGJ4U2hxcE1GNUI5cExGb05Sbnp3eUw2eGw3NGViaF9VUFZGbVBfYUhEYTd0VzBNOENybXczRTZiZE9ybzNoWGZ6eDVvTXNqUzVRX0x3aXJEdFJLTnlUN1F4QmlNRDdsR21r?oc=5",
-          "source": "El Heraldo de México",
-          "date": "2026-10-22",
-          "published_at": "2026-10-23T05:00:00Z",
-          "category": "CDMX",
-          "borough": "Xochimilco",
-          "location": "Xochimilco (mencionada en el titular)",
-          "local_url": "/noticias/?id=988019db95b13170223b&mes=2026-10",
-          "brief": {
-            "lead": "El pronóstico recogido por El Heraldo de México se refiere a condiciones meteorológicas en Xochimilco. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
