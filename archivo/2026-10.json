@@ -1,7 +1,63 @@
 {
   "month": "2026-10",
-  "updated": "2026-10-27 02:47 UTC",
+  "updated": "2026-10-27 03:49 UTC",
   "articles": [
+    {
+      "title": "Nancy apaga mil cámaras en Azcapotzalco",
+      "description": "La información publicada por CDMX Magacín trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9nX3VDQkswaHFzckpEUmlBcjd3VXZrMUVGS1JGMU9GajZNbWtnSHlaNEtWR05YUG93NUl5UUQ2QVFGY2s3WTg0dHljanlocUlQeFdrNlBMUHRMZXhlRUFmNW1KTGVISVVnUlE?oc=5",
+      "source": "CDMX Magacín",
+      "date": "2026-10-26",
+      "published_at": "2026-10-27T03:15:03Z",
+      "category": "CDMX",
+      "borough": "Azcapotzalco",
+      "location": "Azcapotzalco (mencionada en el titular)",
+      "local_url": "/noticias/?id=3701c31a9cfca53597db&mes=2026-10",
+      "brief": {
+        "lead": "La información publicada por CDMX Magacín trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+        "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+        "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "alcaldia_azcapotzalco",
+        "url": "/assets/alcaldias/azcapotzalco.jpg",
+        "category": "CDMX",
+        "borough": "Azcapotzalco",
+        "topic": "Parroquia de Santa Catarina, Azcapotzalco",
+        "author": "Ivan alcantara",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:PARROQUIA_DE_SANTA_CATARINA_%28AZCAPOTZALCO%29.jpg"
+      }
+    },
+    {
+      "title": "En 30 minutos, Gobierno del Estado traslada hígado a la capital del país",
+      "description": "En su información, Curul Puebla aborda una decisión, declaración o debate relacionado con las instituciones de la ciudad. Conviene distinguir la intención anunciada de las resoluciones que hayan sido aprobadas y publicado oficialmente.",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPWjdMVklJUVZiZWhnOGdqRzlkdklqeXVXMTNNNFlNR0tRalBmWXVvQm01NlRCS2trWGtOLTJOQk9wNWI5V04tMXAzZ19fNy1EeVF5UUxUMVFaOGE1dGpKNUc1N210RW1PRkF6NGZsRnZkRkk5bTJ5Q1RXc25VZnRDdHNBNm11azdhVlhPTE8zTTFMVmMzTmVhQg?oc=5",
+      "source": "Curul Puebla",
+      "date": "2026-10-26",
+      "published_at": "2026-10-27T02:45:02Z",
+      "category": "Gobierno",
+      "borough": "",
+      "location": "Ciudad de México (sin alcaldía identificada)",
+      "local_url": "/noticias/?id=863dba4051ebf1482f43&mes=2026-10",
+      "brief": {
+        "lead": "En su información, Curul Puebla aborda una decisión, declaración o debate relacionado con las instituciones de la ciudad. Conviene distinguir la intención anunciada de las resoluciones que hayan sido aprobadas y publicado oficialmente.",
+        "context": "Las decisiones administrativas pueden influir en servicios, trámites y derechos; conviene conocer sus condiciones y a quiénes afectan.",
+        "pending": "Es indispensable consultar los acuerdos, comunicados o documentos oficiales antes de dar una medida por vigente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "archivo_gobierno_001",
+        "url": "/assets/fotos/archivo_gobierno_001.jpg",
+        "category": "Gobierno",
+        "borough": "",
+        "topic": "Palacio de Bellas Artes",
+        "author": "Carolina López",
+        "license": "CC BY 2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Palacio_de_Bellas_Artes.jpg"
+      }
+    },
     {
       "title": "La ruta para llegar a la F1 en el Autódromo Hermanos Rodríguez en la CDMX sin quedarte atrapado en el tráfico",
       "description": "La información publicada por TV Azteca trata un asunto registrado en la sección de Metro del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -31,6 +87,90 @@
       }
     },
     {
+      "title": "Congreso de la Cdmx y CISS firman convenio en materia de salud",
+      "description": "La información publicada por Sociedad Noticias trata un asunto registrado en la sección de Seguridad del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQTzNPX2VieE41X2UweFQxckJXRTJGSGMwSlU4ZnNaeFYybzQwQ19QZW9lbzlSazZBelV4UXl4T2piczRIVmZZa0hmSHgtcGZieFJZWHdZblJMVm1IRC1YMFMyZ2doVURLZjRJa1RNdzVKZkpCcVZLTWFUcE1nTDlxakVncDktYWgySjc1a0FIQ29Sa2ZINzB5dlNwbDRoblprWTZnbmpibw?oc=5",
+      "source": "Sociedad Noticias",
+      "date": "2026-10-26",
+      "published_at": "2026-10-27T02:37:02Z",
+      "category": "Seguridad",
+      "borough": "",
+      "location": "Ciudad de México (sin alcaldía identificada)",
+      "local_url": "/noticias/?id=0099177c0362e751142b&mes=2026-10",
+      "brief": {
+        "lead": "La información publicada por Sociedad Noticias trata un asunto registrado en la sección de Seguridad del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+        "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+        "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "archivo_seguridad_001",
+        "url": "/assets/fotos/archivo_seguridad_001.jpg",
+        "category": "Seguridad",
+        "borough": "",
+        "topic": "Adquisición patrullas para la Policía 03",
+        "author": "Gobierno de la Ciudad de México",
+        "license": "CC BY 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Adquisici%C3%B3n_patrullas_para_la_Polic%C3%ADa_03.jpg"
+      }
+    },
+    {
+      "title": "Firman convenio de colaboración Congreso CDMX y Conferencia Interamericana de Seguridad Social",
+      "description": "La información publicada por El Capitalino trata un asunto registrado en la sección de Seguridad del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOUlJaMDNUaVRjV0NST2VXX3JiVkJJWEhjZ0h5VHR1NXhlZE5iaWlJOUNLVEFrUndNU1VpNW90ZlZDVHMtT2FmZW9nUjJDTTNfNnZiUnIxTG1ERlRyVzNOc2xveDAzcVRRMzFEZXpJX2ZsVE9peTBpSWN6V3I5OW9jT09STnVna3NJSXVOSHUtUGxOd3oydFdCa1poRk40N3N6Vkt6eF9jQTN2clFNSFhRTHdvZFAwMWdtUWxLbThWbFljQnFNaWc?oc=5",
+      "source": "El Capitalino",
+      "date": "2026-10-26",
+      "published_at": "2026-10-27T02:36:20Z",
+      "category": "Seguridad",
+      "borough": "",
+      "location": "Ciudad de México (sin alcaldía identificada)",
+      "local_url": "/noticias/?id=e5e32fd5fb4d162839f1&mes=2026-10",
+      "brief": {
+        "lead": "La información publicada por El Capitalino trata un asunto registrado en la sección de Seguridad del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+        "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+        "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "archivo_seguridad_002",
+        "url": "/assets/fotos/archivo_seguridad_002.jpg",
+        "category": "Seguridad",
+        "borough": "",
+        "topic": "Patrulla vecinal",
+        "author": "Daniel Yonka",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Patrulla_vecinal.jpg"
+      }
+    },
+    {
+      "title": "Inaugura Octavio Rivero, alcalde en Milpa Alta, el Parque Ecológico y Recreativo Milpa Aventuras, un nuevo espacio para las familias de Milpa Alta",
+      "description": "La información publicada por Diario Basta! trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "url": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxPU3FSRGx0dldpSDVyYkRMVkV1bUw0dmJrZEt4LXJZZGxVcXRTc3REcHFGeno3QXJORHYtejJrRlZ1WDlUaFFFS3BYcFZJb2N4UWxSZ1BFOHdRek82TUROQXJTYkNwTTdvSnBMYUlreEp4TENSdVM1OHdiS1ByUEFPODQ2T1ZqLUo1MDBHTGlJMkNMYlM2ZWY1R1c2M2xIM3dRcEgxNDg1RzlPdFdaV0ZmeFlCdXdFV2JjWTdPN09NTjVWdGlwUTZuMDNnM1pxdnRKWWhzOGtPY19VOUR3THE0cEQ0NUpyVnFnamN2NU9xU3JVUk9feGlFYXMwMlpWbUJQZlRPVFNHVzdCY0E?oc=5",
+      "source": "Diario Basta!",
+      "date": "2026-10-26",
+      "published_at": "2026-10-27T02:35:13Z",
+      "category": "CDMX",
+      "borough": "Milpa Alta",
+      "location": "Milpa Alta (mencionada en el titular)",
+      "local_url": "/noticias/?id=e0995f8303304d107e5b&mes=2026-10",
+      "brief": {
+        "lead": "La información publicada por Diario Basta! trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+        "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+        "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "alcaldia_milpa-alta",
+        "url": "/assets/alcaldias/milpa-alta.jpg",
+        "category": "CDMX",
+        "borough": "Milpa Alta",
+        "topic": "Villa Milpa Alta y su entorno rural",
+        "author": "Comisión Mexicana de Filmaciones from México D. F., México",
+        "license": "CC BY-SA 2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Villa_Milpa_Alta%2C_Ciudad_de_M%C3%A9xico_%2832886264042%29.jpg"
+      }
+    },
+    {
       "title": "Mauricio Tabe busca que Miguel Hidalgo sea la alcaldía más segura de la CDMX",
       "description": "La información publicada por El Heraldo de México trata un asunto registrado en la sección de Seguridad del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
       "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOblk4bEkwVEFHS1pxa1NyZVFFNDVLTmotSmtWRHNIc2RySDhpLWs0YzAtYWR4ZExIOEtDcnNpMmZlMjI1OUFjb2pxMWViRVBvb04zUGFHdzF2M3VYRE9XSURxQ0dKVXloT2hHLW9NdEFZNGxUUVFsTndabDNuUzlwWHZES2dReGtaTzJrZG42NVR1X3l5VW9qRDhTMzNhazEyR05pNnFmRnBMQ3VFUG5hSjJQMFNRN0VBZ1BLdG1mLTlmczh3dUdsR2dfRlJ6VU1TUVNJS2NR?oc=5",
@@ -56,6 +196,34 @@
         "author": "ProtoplasmaKid",
         "license": "CC0",
         "source": "https://commons.wikimedia.org/wiki/File:Audiorama_de_Chapultepec_1.jpg"
+      }
+    },
+    {
+      "title": "Brugada Molina anuncia que la Ciudad de México será sede del décimo cuarto Foro Urbano Mundial del 31 de julio al 4 agosto de 2028",
+      "description": "La información publicada por Talla Politica trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxQdUlsbE1QVTlZMWlJanFmanRiV1VtSDJjeFZkSm5NUWFVT3NlbXdJNWRGMkUtVi1BWkVNSXhlQWZhQmN1YXZjdXNzYnctblRha3R1UFBRM0tkeVdhRU44R1NyVVduR3g5Tm54U1k4SkVVZi1vWk5vcXBMem50WGxjNjdZT0lKQTI2LTRFelFKUXlnSnNxS0NwVHpXajZzNjVYQ1BrUXprZXZDaG9qdjFfQm9QUDV2N3FkYTctbjkwUWl4RURBM1pBUUZBX0xSaWc2S05qamdOX05DaXZCbWVqSkVKOTh3cnV6eWQwdW5Pc2c2czFQYklF?oc=5",
+      "source": "Talla Politica",
+      "date": "2026-10-26",
+      "published_at": "2026-10-27T01:56:38Z",
+      "category": "CDMX",
+      "borough": "",
+      "location": "Ciudad de México (sin alcaldía identificada)",
+      "local_url": "/noticias/?id=348c25eefc231f088291&mes=2026-10",
+      "brief": {
+        "lead": "La información publicada por Talla Politica trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+        "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+        "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "archivo_cdmx_003",
+        "url": "/assets/fotos/archivo_cdmx_003.jpg",
+        "category": "CDMX",
+        "borough": "",
+        "topic": "D.F. - panoramio (7)",
+        "author": "eurimaco",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:D.F._-_panoramio_%287%29.jpg"
       }
     },
     {
@@ -812,6 +980,34 @@
         "author": "Joaquín Martínez",
         "license": "CC BY 2.0",
         "source": "https://commons.wikimedia.org/wiki/File:Palacio_Nacional_Ciudad_de_Mexico.jpg"
+      }
+    },
+    {
+      "title": "Siguen las renuncias en el INE: toca turno a Valeria Ramírez, novia del jefe de Oficina de Guadalupe Taddei",
+      "description": "La información publicada por Infobae trata un asunto registrado en la sección de Metro del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQUjVfVENHY09uem1IRUpRVkpnYUpuYmxWTVJTVkVnYTJ0c2NGRXl5MkoxVWctZk9VTHNBeWJpQ3J3aHFkVmJyV18yZmpuanMxT1hIbklhZm5RSlFBQW1uajZoZVAzTFVmZ2dXNlVBSUhIVWtjUjhWb29aaTV4TzYwSl9JZkNleHJ0S2x5MFFUMEJ1cFdsTFpueXNSa2l3Mk1kSVN0RDJ3clNXdG5vUWFmNHpTZjhXYTVyQWJNeXVRSHk2TlJ2WWtfeWdfWm1rd1lVSExjNnJIS3l3bkpEN2dBVXVn0gH8AUFVX3lxTFBSU0haSHpQNjVXRU5DZlFEb3RhQm1YNElzdHB0UGpKdHdsaGp4ME93X2o4djZiZGl2eTBITVNUT0Jab3paTlU5YlB4Y2VTemY1OEpMT1d1VUktZzJvZXF3ZE5YbGtzM3NZSEo4T3l6WlZfUndiMzgzZHoyRDBIWDZZbHF4dl9ZX01obWpsT2FyQ1ZqbzIyZm5DVDRreE9vVUZjbmdocW12Q25IVzZ6RG1yX3VMY1ZjTGV3NU1RSkl1cjZGYllfSUlneFQ0NElHNWpLYkhwS0VrMjRveVdyT0NVVDE5dkNUc1lOM3cyR01WbjlrNTBEaHdfaEREaw?oc=5",
+      "source": "Infobae",
+      "date": "2026-10-26",
+      "published_at": "2026-10-27T00:21:00Z",
+      "category": "Metro",
+      "borough": "",
+      "location": "Ubicación no indicada por el titular",
+      "local_url": "/noticias/?id=700bf111bbcef76cc8cf&mes=2026-10",
+      "brief": {
+        "lead": "La información publicada por Infobae trata un asunto registrado en la sección de Metro del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+        "context": "Los cambios en este sistema pueden afectar los horarios, las conexiones y la planeación de los viajes cotidianos.",
+        "pending": "El estado operativo, las estaciones y las alternativas de traslado deben comprobarse en los avisos actuales del Metro. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "archivo_metro_005",
+        "url": "/assets/fotos/archivo_metro_005.jpg",
+        "category": "Metro",
+        "borough": "",
+        "topic": "Estación Sevilla de la Línea 1 del Metro de la Ciudad de México - 01 - Andén",
+        "author": "ProtoplasmaKid",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Estaci%C3%B3n_Sevilla_de_la_L%C3%ADnea_1_del_Metro_de_la_Ciudad_de_M%C3%A9xico_-_01_-_And%C3%A9n.jpg"
       }
     },
     {
@@ -2205,6 +2401,24 @@
       }
     },
     {
+      "title": "Gerardo Villanueva busca coordinar Morena en Coyoacán rumbo a 2027",
+      "description": "La información publicada por Sociedad Noticias trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxONkhFRmxQMm1DSkYtdWhiMnc2QTJaYTlUdE02cnlOeEJVTENpZFBEc2ttUVJvNldnaVpmY1ZoT3I0SGdlZ19kV01vaEVBMGxnWWxwend5TFlwOWsyeWlsZEZQV0k4eWhWSFFYOUlYUllBQllBdVVxTkJFTGR2ZjF2cEd2N2t2LThQa2xlQ01aSGxqRHh1RFdqZF9YSzdLQ1BtVm9meG1QQzRza3VE?oc=5",
+      "source": "Sociedad Noticias",
+      "date": "2026-10-26",
+      "published_at": "2026-10-26T21:30:00Z",
+      "category": "CDMX",
+      "borough": "Coyoacán",
+      "location": "Coyoacán (mencionada en el titular)",
+      "local_url": "/noticias/?id=d3de9ecba359616c2d83&mes=2026-10",
+      "brief": {
+        "lead": "La información publicada por Sociedad Noticias trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+        "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+        "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      }
+    },
+    {
       "title": "¿Riesgo por partículas PM2.5? Calidad del aire en CDMX y Edomex; recomendaciones hoy",
       "description": "La información publicada por ADN 40 trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
       "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNSDBTRkZucWdqVWVnZDJJd2VQalpPdG9DY2stR2MzdEFCREEyenhjbWtDV3piYllXWHVLNlJJQUdlRU5WTjN2UDZuTHphTmk4VWphbHdiMDVIWUFVTDdaNVM3d2gxQThOVXBJbV9tWndiRUZJdnJ0NUVlcDVSU1dRUVdQTVZkNXAyR1FpejNzVUJrWFdSaDBpU05IeV91ZzBRWHpuSENtTW1sb0RySi1uRHhhWTlRWFVXUVJHVw?oc=5",
@@ -2342,6 +2556,24 @@
         "author": "Joaquín Martínez",
         "license": "CC BY 2.0",
         "source": "https://commons.wikimedia.org/wiki/File:Palacio_Nacional_Ciudad_de_Mexico.jpg"
+      }
+    },
+    {
+      "title": "Festival de Día de Muertos en alcaldía Cuauhtémoc: fechas, sedes y todas las actividades en CDMX",
+      "description": "La información publicada por La Crónica de Hoy trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOZHI3MnMxaUYyUy1XejdwU3NZazRySlNyak9YRHFCTXo5RTd0NnE1b09aSHFma0l0OGFiNEF2M3JFZks5VXRRVU9fSGlJNW1pdXVCM2swZWtJQ1FZZDc5blhwbTFFQ0lJaGdIcEhWRE1pN2NFMHV1Rm15S3VDOUlJT1pLRl9zMVJGWlFLcXFILUlBc05HUFRMZkJFTG5WbVotM2l6S3RtcGtaRWZWR3FiNnk3a2VfZDc1NlFORWRn?oc=5",
+      "source": "La Crónica de Hoy",
+      "date": "2026-10-26",
+      "published_at": "2026-10-26T21:01:57Z",
+      "category": "CDMX",
+      "borough": "Cuauhtémoc",
+      "location": "Cuauhtémoc (mencionada en el titular)",
+      "local_url": "/noticias/?id=081233bdcbe04201dd07&mes=2026-10",
+      "brief": {
+        "lead": "La información publicada por La Crónica de Hoy trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+        "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+        "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       }
     },
     {
@@ -11621,6 +11853,24 @@
         "lead": "La información publicada por Secretaría de Seguridad Ciudadana de la CDMX trata un asunto registrado en la sección de Seguridad del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
         "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
         "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      }
+    },
+    {
+      "title": "2851: Efectivos de la SSC detuvieron a dos probables responsables del robo a un negocio, en la alcaldía Iztapalapa",
+      "description": "La información publicada por Secretaría de Seguridad Ciudadana de la CDMX trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5Mbnd0aG5FbWRMOXk2a3FWQlRDREllLThrR1dPRTcyN2dwc1hCeWlENThwWkxuV3JycWVmNGNxLTc5REFUZXNOOG1abTZFdzltbDI5eTVJZnliNWw5cG1HcldXY20tZ1hmcU9sMHltRQ?oc=5",
+      "source": "Secretaría de Seguridad Ciudadana de la CDMX",
+      "date": "2026-10-25",
+      "published_at": "2026-10-25T06:00:00Z",
+      "category": "CDMX",
+      "borough": "Iztapalapa",
+      "location": "Iztapalapa (mencionada en el titular)",
+      "local_url": "/noticias/?id=9a767ced701faf34318d&mes=2026-10",
+      "brief": {
+        "lead": "La información publicada por Secretaría de Seguridad Ciudadana de la CDMX trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+        "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+        "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       }
     },

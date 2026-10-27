@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-27 02:47 UTC",
+  "updated": "2026-10-27 03:49 UTC",
   "boroughs": [
     {
       "name": "La Magdalena Contreras",
@@ -969,8 +969,36 @@
     },
     {
       "name": "Azcapotzalco",
-      "count": 64,
+      "count": 65,
       "articles": [
+        {
+          "title": "Nancy apaga mil cámaras en Azcapotzalco",
+          "description": "La información publicada por CDMX Magacín trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9nX3VDQkswaHFzckpEUmlBcjd3VXZrMUVGS1JGMU9GajZNbWtnSHlaNEtWR05YUG93NUl5UUQ2QVFGY2s3WTg0dHljanlocUlQeFdrNlBMUHRMZXhlRUFmNW1KTGVISVVnUlE?oc=5",
+          "source": "CDMX Magacín",
+          "date": "2026-10-26",
+          "published_at": "2026-10-27T03:15:03Z",
+          "category": "CDMX",
+          "borough": "Azcapotzalco",
+          "location": "Azcapotzalco (mencionada en el titular)",
+          "local_url": "/noticias/?id=3701c31a9cfca53597db&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por CDMX Magacín trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_azcapotzalco",
+            "url": "/assets/alcaldias/azcapotzalco.jpg",
+            "category": "CDMX",
+            "borough": "Azcapotzalco",
+            "topic": "Parroquia de Santa Catarina, Azcapotzalco",
+            "author": "Ivan alcantara",
+            "license": "CC BY-SA 3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:PARROQUIA_DE_SANTA_CATARINA_%28AZCAPOTZALCO%29.jpg"
+          }
+        },
         {
           "title": "Festival Tlalmalli Azcatl 2026 en Azcapotzalco: cartelera, sedes y operativo de seguridad",
           "description": "La información publicada por El Sol de México trata un asunto registrado en la sección de Cultura del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -1410,24 +1438,6 @@
           "local_url": "/noticias/?id=22e2ccfdbc57e1629585&mes=2026-10",
           "brief": {
             "lead": "La información publicada por La Política Online trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
-        },
-        {
-          "title": "¿Qué es IMR, la empresa de Gilberto Vázquez y Junjie Liang, víctimas del ataque en Azcapotzalco?",
-          "description": "La información publicada por Guillermo Ortega - Tu sitio de noticias trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQb0NONllZYWQzTENWdGZDUGpxVS1XMTVqVV9IdHRMZFJpM2ZYM0lrVDUwdFpCR1hMOGhRUURNLTYwNy05WTNsWWtmVURfeXoycDZiSDJYS3FKOW1WUUJFUVJ4UlNhR1dwRmpmZUJYQ2ZSaDlCZU5QTlhnOFVFa0lVcmd0QmlZVVZTTHliZDZtc0pZWFY4eVVjMWdtNjhVYm5IMm5XM2Z0MFBJMmJYeDV4ZngzWE5KQlJrMzZ2Rm1lY1lqQUU?oc=5",
-          "source": "Guillermo Ortega - Tu sitio de noticias",
-          "date": "2026-10-18",
-          "published_at": "2026-10-18T19:04:00Z",
-          "category": "CDMX",
-          "borough": "Azcapotzalco",
-          "location": "Azcapotzalco (mencionada en el titular)",
-          "local_url": "/noticias/?id=bb17208a95cfb1ced04b&mes=2026-10",
-          "brief": {
-            "lead": "La información publicada por Guillermo Ortega - Tu sitio de noticias trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
@@ -1885,8 +1895,26 @@
     },
     {
       "name": "Coyoacán",
-      "count": 72,
+      "count": 73,
       "articles": [
+        {
+          "title": "Gerardo Villanueva busca coordinar Morena en Coyoacán rumbo a 2027",
+          "description": "La información publicada por Sociedad Noticias trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxONkhFRmxQMm1DSkYtdWhiMnc2QTJaYTlUdE02cnlOeEJVTENpZFBEc2ttUVJvNldnaVpmY1ZoT3I0SGdlZ19kV01vaEVBMGxnWWxwend5TFlwOWsyeWlsZEZQV0k4eWhWSFFYOUlYUllBQllBdVVxTkJFTGR2ZjF2cEd2N2t2LThQa2xlQ01aSGxqRHh1RFdqZF9YSzdLQ1BtVm9meG1QQzRza3VE?oc=5",
+          "source": "Sociedad Noticias",
+          "date": "2026-10-26",
+          "published_at": "2026-10-26T21:30:00Z",
+          "category": "CDMX",
+          "borough": "Coyoacán",
+          "location": "Coyoacán (mencionada en el titular)",
+          "local_url": "/noticias/?id=d3de9ecba359616c2d83&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por Sociedad Noticias trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          }
+        },
         {
           "title": "Gerardo Villanueva levanta la mano por Coyoacán; apuesta por la unidad de Morena",
           "description": "La información publicada por 24-horas trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -2320,24 +2348,6 @@
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           }
-        },
-        {
-          "title": "Lleva Coyoacán cultura a todos los rincones de la demarcación: Giovani Gutiérrez",
-          "description": "La información publicada por CDMX Magacín trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPejBZUGhkVUd0OHdCVWtxdFNuTGZnbXVRbFRCa01tLWV1ZVJBcXZVTTcyQVJFY0o4b3dRR1lWdGVkQ1p3U0V0X01JTVhzN3A2dVpkVWVaMjVRbWg3QTVya3JqSmFBVzBVSFJJamxOQ0wza1AwcXhFVkREajJsVEJjMGdQQ2RYNUxjc19zVjdXMlpZUThrWHZ3QjhDZ2huMFk?oc=5",
-          "source": "CDMX Magacín",
-          "date": "2026-10-19",
-          "published_at": "2026-10-20T01:08:13Z",
-          "category": "CDMX",
-          "borough": "Coyoacán",
-          "location": "Coyoacán (mencionada en el titular)",
-          "local_url": "/noticias/?id=d64ad07b6417cc487ddc&mes=2026-10",
-          "brief": {
-            "lead": "La información publicada por CDMX Magacín trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
         }
       ]
     },
@@ -2749,8 +2759,26 @@
     },
     {
       "name": "Cuauhtémoc",
-      "count": 61,
+      "count": 62,
       "articles": [
+        {
+          "title": "Festival de Día de Muertos en alcaldía Cuauhtémoc: fechas, sedes y todas las actividades en CDMX",
+          "description": "La información publicada por La Crónica de Hoy trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOZHI3MnMxaUYyUy1XejdwU3NZazRySlNyak9YRHFCTXo5RTd0NnE1b09aSHFma0l0OGFiNEF2M3JFZks5VXRRVU9fSGlJNW1pdXVCM2swZWtJQ1FZZDc5blhwbTFFQ0lJaGdIcEhWRE1pN2NFMHV1Rm15S3VDOUlJT1pLRl9zMVJGWlFLcXFILUlBc05HUFRMZkJFTG5WbVotM2l6S3RtcGtaRWZWR3FiNnk3a2VfZDc1NlFORWRn?oc=5",
+          "source": "La Crónica de Hoy",
+          "date": "2026-10-26",
+          "published_at": "2026-10-26T21:01:57Z",
+          "category": "CDMX",
+          "borough": "Cuauhtémoc",
+          "location": "Cuauhtémoc (mencionada en el titular)",
+          "local_url": "/noticias/?id=081233bdcbe04201dd07&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por La Crónica de Hoy trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          }
+        },
         {
           "title": "Clima en Alcaldía Cuauhtémoc: Lunes 26 de octubre con nubes y ambiente fresco",
           "description": "El pronóstico recogido por El Heraldo de México se refiere a condiciones meteorológicas en Cuauhtémoc. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
@@ -3200,24 +3228,6 @@
           "local_url": "/noticias/?id=e128ddd74167e3768a4e&mes=2026-10",
           "brief": {
             "lead": "La información publicada por TV Azteca trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
-        },
-        {
-          "title": "Por qué Citlalli no va por Cuauhtémoc",
-          "description": "La información publicada por CDMX Magacín trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5MQ2pyUXRxc0xENDNibnJZdE9zN2hHaEdKREhOaFVqSThpZno4U1Uyd2RBRks1U2JqWWI3ZndrZ0VaVXpoMEV1a3ppczdiNWpOQmRZRGI3UFhaeDZHN1hDSDR5MlhiUkU?oc=5",
-          "source": "CDMX Magacín",
-          "date": "2026-10-18",
-          "published_at": "2026-10-19T04:06:01Z",
-          "category": "CDMX",
-          "borough": "Cuauhtémoc",
-          "location": "Cuauhtémoc (mencionada en el titular)",
-          "local_url": "/noticias/?id=4e4da2deecca7deee203&mes=2026-10",
-          "brief": {
-            "lead": "La información publicada por CDMX Magacín trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
@@ -4213,7 +4223,7 @@
     },
     {
       "name": "Iztapalapa",
-      "count": 136,
+      "count": 137,
       "articles": [
         {
           "title": "Falta mantenimiento en caminos seguros de Iztapalapa",
@@ -4256,6 +4266,24 @@
           "local_url": "/noticias/?id=e630985ee7bd1fbd27b6&mes=2026-10",
           "brief": {
             "lead": "La información publicada por El Sol de México trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          }
+        },
+        {
+          "title": "2851: Efectivos de la SSC detuvieron a dos probables responsables del robo a un negocio, en la alcaldía Iztapalapa",
+          "description": "La información publicada por Secretaría de Seguridad Ciudadana de la CDMX trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5Mbnd0aG5FbWRMOXk2a3FWQlRDREllLThrR1dPRTcyN2dwc1hCeWlENThwWkxuV3JycWVmNGNxLTc5REFUZXNOOG1abTZFdzltbDI5eTVJZnliNWw5cG1HcldXY20tZ1hmcU9sMHltRQ?oc=5",
+          "source": "Secretaría de Seguridad Ciudadana de la CDMX",
+          "date": "2026-10-25",
+          "published_at": "2026-10-25T06:00:00Z",
+          "category": "CDMX",
+          "borough": "Iztapalapa",
+          "location": "Iztapalapa (mencionada en el titular)",
+          "local_url": "/noticias/?id=9a767ced701faf34318d&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por Secretaría de Seguridad Ciudadana de la CDMX trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
@@ -4634,24 +4662,6 @@
           "local_url": "/noticias/?id=43329b7591a76633d06b&mes=2026-10",
           "brief": {
             "lead": "La información publicada por N+ trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
-        },
-        {
-          "title": "Doble homicidio en Iztapalapa: asesinan a dos hombres a balazos y detienen a presuntos responsables",
-          "description": "Una nota de PostaMx comunica un caso relacionado con una detención o una presunta conducta delictiva en Iztapalapa. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
-          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNZ0NGS0pFbUxtNVExa0p2UVZ4VDlvbFgyd0lWMDJzTzJfUTdkUUc5ZE9LMzVKV2c2RXhvWC1SbjR1ZldOb0RzRWw5SjVwTVVDWXNzbzNkb3pmYWlDbC04WmVpU19BaDhsc3NrOGdDZWVTMDZQbGNUVmd5c0hyRDJIN1lFM2NXTGprYklBSHNncEhRNDl4LWdaR05OZDhUdW9wN0dQQW1EbFhyWWFoTEh4bEljaHVTSy1jdGfSAboBQVVfeXFMTWdDRktKRW1MbTVRMWtKdlFWeFQ5b2xYMndJVjAyc08yX1E3ZFFHOWRPSzM1SldnNkV4b1gtUm40dWZXTm9Ec0VsOUo1cE1VQ1lzc28zZG96ZmFpQ2wtOFplaVNfQWg4bHNzazhnQ2VlUzA2UGxjVFZneXNIckQySDdZRTNjV0xqa2JJQUhzZ3BIUTQ5eC1nWkdOTmQ4VHVvcDdHUEFtRGxYcllhaExIeGxJY2h1U0stY3Rn?oc=5",
-          "source": "PostaMx",
-          "date": "2026-10-23",
-          "published_at": "2026-10-23T23:17:00Z",
-          "category": "CDMX",
-          "borough": "Iztapalapa",
-          "location": "Iztapalapa (mencionada en el titular)",
-          "local_url": "/noticias/?id=3e9ca60c10bc0148515d&mes=2026-10",
-          "brief": {
-            "lead": "Una nota de PostaMx comunica un caso relacionado con una detención o una presunta conducta delictiva en Iztapalapa. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
@@ -5199,8 +5209,36 @@
     },
     {
       "name": "Milpa Alta",
-      "count": 47,
+      "count": 48,
       "articles": [
+        {
+          "title": "Inaugura Octavio Rivero, alcalde en Milpa Alta, el Parque Ecológico y Recreativo Milpa Aventuras, un nuevo espacio para las familias de Milpa Alta",
+          "description": "La información publicada por Diario Basta! trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxPU3FSRGx0dldpSDVyYkRMVkV1bUw0dmJrZEt4LXJZZGxVcXRTc3REcHFGeno3QXJORHYtejJrRlZ1WDlUaFFFS3BYcFZJb2N4UWxSZ1BFOHdRek82TUROQXJTYkNwTTdvSnBMYUlreEp4TENSdVM1OHdiS1ByUEFPODQ2T1ZqLUo1MDBHTGlJMkNMYlM2ZWY1R1c2M2xIM3dRcEgxNDg1RzlPdFdaV0ZmeFlCdXdFV2JjWTdPN09NTjVWdGlwUTZuMDNnM1pxdnRKWWhzOGtPY19VOUR3THE0cEQ0NUpyVnFnamN2NU9xU3JVUk9feGlFYXMwMlpWbUJQZlRPVFNHVzdCY0E?oc=5",
+          "source": "Diario Basta!",
+          "date": "2026-10-26",
+          "published_at": "2026-10-27T02:35:13Z",
+          "category": "CDMX",
+          "borough": "Milpa Alta",
+          "location": "Milpa Alta (mencionada en el titular)",
+          "local_url": "/noticias/?id=e0995f8303304d107e5b&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por Diario Basta! trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_milpa-alta",
+            "url": "/assets/alcaldias/milpa-alta.jpg",
+            "category": "CDMX",
+            "borough": "Milpa Alta",
+            "topic": "Villa Milpa Alta y su entorno rural",
+            "author": "Comisión Mexicana de Filmaciones from México D. F., México",
+            "license": "CC BY-SA 2.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Villa_Milpa_Alta%2C_Ciudad_de_M%C3%A9xico_%2832886264042%29.jpg"
+          }
+        },
         {
           "title": "Desde el Congreso CDMX impulsan continuidad de apoyos para productores de nopal en Milpa Alta",
           "description": "La información publicada por La Crónica de Hoy trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -5610,24 +5648,6 @@
           "local_url": "/noticias/?id=86dcdbbba848697bdce8&mes=2026-10",
           "brief": {
             "lead": "De acuerdo con un titular publicado por Sociedad Noticias, el tema de actualidad está relacionado con un asunto de interés público relacionado con la Ciudad de México. La atribución corresponde al medio citado, no a una comprobación independiente de nuestra redacción. El encabezado menciona Milpa Alta; esa referencia no demuestra por sí misma dónde ocurrieron todos los hechos.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
-        },
-        {
-          "title": "Clima en Milpa Alta: lunes 12 de octubre con lluvia ligera y ambiente templado",
-          "description": "De acuerdo con un titular publicado por El Heraldo de México, el tema de actualidad está relacionado con un asunto de interés público relacionado con la Ciudad de México. La atribución corresponde al medio citado, no a una comprobación independiente de nuestra redacción. El encabezado menciona Milpa Alta; esa referencia no demuestra por sí misma dónde ocurrieron todos los hechos.",
-          "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNTGUwR3ZvN3ctUmJXY3c2Mzg4c2ZyNnJlSG5CVXdsNlhtbGVXb09IN2RkbHVtMUxJakhWR25FaFNTZ0x2UDU2c0dxWW5RX2hVaXhNdFlRX3J1UlA2N1hHUTNIODFFV2JzN0VTNE1WSElSeklyRlRva3ZLekFtLTBWQi1mS2p5SmNGVG10VUJVRXpDNUZHS2N3RE9rQWxwdURidlAxUVhNWjBJYTVZSnFSRy1wdng1Sm5pYmJwZ3YyY2hacklvUDZyT2VlVUlkLXJpRnM3OQ?oc=5",
-          "source": "El Heraldo de México",
-          "date": "2026-10-11",
-          "published_at": "2026-10-12T05:00:00Z",
-          "category": "CDMX",
-          "borough": "Milpa Alta",
-          "location": "Milpa Alta (mencionada en el titular)",
-          "local_url": "/noticias/?id=6435f65763003092a81c&mes=2026-10",
-          "brief": {
-            "lead": "De acuerdo con un titular publicado por El Heraldo de México, el tema de actualidad está relacionado con un asunto de interés público relacionado con la Ciudad de México. La atribución corresponde al medio citado, no a una comprobación independiente de nuestra redacción. El encabezado menciona Milpa Alta; esa referencia no demuestra por sí misma dónde ocurrieron todos los hechos.",
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
