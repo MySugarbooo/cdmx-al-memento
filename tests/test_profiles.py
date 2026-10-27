@@ -41,7 +41,7 @@ class ProfileTests(unittest.TestCase):
         home = (ROOT / "index.html").read_text(encoding="utf-8")
         html = (ROOT / "alcaldias" / "index.html").read_text(encoding="utf-8")
         js = (ROOT / "assets" / "hemeroteca.js").read_text(encoding="utf-8")
-        self.assertEqual(home.count("#noticias-alcaldia"), 16)
+        self.assertEqual(home.count("#noticias-alcaldia"), 16 * (2 if 'id="neo-home"' in home else 1))
         self.assertIn('<section class="borough-news-column" id="noticias-alcaldia"', html)
         self.assertNotIn('<section class="borough-page-top" id="noticias-alcaldia"', html)
         css = (ROOT / 'styles.css').read_text(encoding='utf-8')
