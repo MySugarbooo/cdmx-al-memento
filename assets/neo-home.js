@@ -30,7 +30,7 @@ shell.innerHTML=[
 '<nav class="neo-nav" aria-label="Secciones del periódico"><a class="neo-active-link" href="/" aria-current="page">Portada</a><a href="/alcaldias/">Alcaldías</a><a href="/cdmx/">CDMX</a><a href="/seguridad/">Seguridad</a><a href="/movilidad/">Movilidad</a><a href="/servicios/">Servicios</a><a href="/animales/">Animales</a><a href="/fotografias/">Fotografías</a><a href="/comunidad/">Mi comunidad</a><span class="neo-nav-spacer"></span><span class="neo-social-nav"><a href="/archivo/" title="Archivo mensual">▤</a><a href="/mapa/" title="Mapa">⌖</a><a href="/comunidad/" title="Participa">♡</a></span></nav></header>',
 '<div class="neo-dashboard">',
 '<section class="neo-hero neo-box" aria-labelledby="neo-hero-title"><img id="neo-hero-img" class="neo-hero-image" src="/assets/fotos/reforma.jpg" alt="Fotografía de archivo de la Ciudad de México"><div class="neo-hero-inner"><span class="neo-kicker">DESTACADA</span><a id="neo-hero-title" class="neo-hero-title" href="/noticias/">Noticias de Ciudad de México</a><p class="neo-hero-description" id="neo-hero-description">Titulares actualizados desde medios identificados.</p><div class="neo-hero-bottom"><span id="neo-hero-category">⌖ CDMX</span><span id="neo-hero-date"></span><span class="neo-hero-source" id="neo-hero-source"></span><span class="neo-feature-like" id="neo-hero-like"></span></div><div class="neo-hero-credit" id="neo-hero-credit">Foto de archivo · no corresponde necesariamente al hecho noticioso</div></div><div class="neo-hero-controls"><button id="neo-hero-next" type="button" aria-label="Siguiente noticia destacada">›</button></div></section>',
-'<section class="neo-map neo-box" aria-labelledby="neo-map-title"><h2 id="neo-map-title">Explora las alcaldías</h2><a href="/alcaldias/" class="neo-map-area" aria-label="Consultar las 16 alcaldías">',boroughSvg,'</a><a class="neo-map-link" href="/mapa/">Ver mapa interactivo ↗</a></section>',
+'<section class="neo-map neo-box" aria-labelledby="neo-map-title"><h2 id="neo-map-title">Explora las alcaldías</h2><div class="neo-map-area" id="neo-official-map" aria-label="Mapa interactivo de las 16 alcaldías"><span role="status">Cargando límites oficiales…</span></div><a class="neo-map-link" href="/alcaldias/">Ver noticias por alcaldía ↗</a></section>',
 '<aside class="neo-boroughs neo-box" aria-labelledby="neo-borough-title"><h2 id="neo-borough-title">Noticias por alcaldía</h2><ul id="neo-borough-list"></ul></aside>',
 '<section class="neo-latest neo-box" aria-labelledby="neo-latest-title"><div class="neo-block-title"><h2 id="neo-latest-title">▣ Últimas noticias</h2><a href="/archivo/">Ver todas →</a></div><div class="neo-news-grid" id="neo-news-grid"></div><button class="neo-news-more" type="button" id="neo-news-more" hidden>Mostrar más noticias ↓</button><p id="neo-news-status" class="neo-feed-note">Titulares y fechas de medios externos · Fotos de archivo</p></section>',
 '<aside class="neo-community neo-box" aria-labelledby="neo-community-title"><div class="neo-block-title"><h2 id="neo-community-title">Mi comunidad</h2><a href="/comunidad/#cdmx-comments-editor" class="neo-pill">＋ Publicar</a></div><div class="neo-community-tabs"><a href="/comunidad/">Recientes</a><a href="/comunidad/#forum-sort">Populares</a><a href="/comunidad/#cdmx-comments-editor">Preguntas</a></div><p class="neo-community-intro">Pregunta a tus vecinos, comenta y participa con tu cuenta de Google.</p><div id="neo-community-posts"><p class="neo-feed-note">Consultando conversaciones públicas…</p></div><div class="neo-community-footer"><a href="/comunidad/">Abrir el foro y responder ↗</a></div></aside>',
@@ -148,4 +148,43 @@ async function start(){
  }
 }
 start();
+})();
+/* Límites geográficos oficiales, no mosaico ilustrado. El mapa se carga después de renderizar la portada. */
+(function(){
+ const endpoint='https://serviciosatlas.sgirpc.cdmx.gob.mx/arcgis/rest/services/AtlasOnline/AOB_Atlas_de_Riesgos/FeatureServer/2/query?where=1%3D1&outFields=nombre_del&returnGeometry=true&outSR=4326&f=geojson';
+ const NS='http://www.w3.org/2000/svg';let busy=false;
+ function svgEl(tag,attrs){const e=document.createElementNS(NS,tag);Object.entries(attrs||{}).forEach(([k,v])=>e.setAttribute(k,v));return e}
+ function paint(node,data){
+  const features=(data.features||[]).filter(f=>f.geometry&&f.properties&&f.properties.nombre_del);
+  if(features.length!==16)throw Error('Se esperaban 16 alcaldías; recibidas '+features.length);
+  const coords=[];function walk(a){if(typeof a[0]==='number'){coords.push(a);return}a.forEach(walk)}
+  features.forEach(f=>walk(f.geometry.coordinates));
+  const minX=Math.min(...coords.map(c=>c[0])),maxX=Math.max(...coords.map(c=>c[0]));
+  const minY=Math.min(...coords.map(c=>c[1])),maxY=Math.max(...coords.map(c=>c[1]));
+  const width=250,height=300,pad=9,scale=Math.min((width-2*pad)/(maxX-minX),(height-2*pad)/(maxY-minY));
+  const project=p=>[(p[0]-minX)*scale+pad,(maxY-p[1])*scale+pad];
+  const svg=svgEl('svg',{viewBox:'0 0 250 300',role:'group','aria-label':'Límites reales de las 16 alcaldías de la Ciudad de México'});
+  const colors=['#fa6aad','#cf3485','#ff8ec2','#a52b70','#ec4793','#f45aab'];
+  features.forEach((f,i)=>{
+   const name=f.properties.nombre_del;
+   const rings=f.geometry.type==='Polygon'?[f.geometry.coordinates]:f.geometry.coordinates;
+   const d=rings.map(poly=>poly.map(ring=>ring.map((p,j)=>{const [x,y]=project(p);return(j?'L':'M')+x.toFixed(2)+' '+y.toFixed(2)}).join(' ')+'Z').join(' ')).join(' ');
+   const a=svgEl('a',{href:'/alcaldias/?alcaldia='+encodeURIComponent(name),'aria-label':'Ver noticias de '+name,tabindex:'0'});
+   const path=svgEl('path',{d,fill:colors[i%colors.length],stroke:'#f7b0d5','stroke-width':'0.8','fill-rule':'evenodd'});
+   const title=svgEl('title');title.textContent=name;a.append(path,title);
+   a.addEventListener('pointerenter',()=>{path.setAttribute('stroke','#fff');path.setAttribute('stroke-width','2.5')});
+   a.addEventListener('pointerleave',()=>{path.setAttribute('stroke','#f7b0d5');path.setAttribute('stroke-width','0.8')});
+   a.addEventListener('focus',()=>{path.setAttribute('stroke','#fff');path.setAttribute('stroke-width','2.5')});
+   a.addEventListener('blur',()=>{path.setAttribute('stroke','#f7b0d5');path.setAttribute('stroke-width','0.8')});
+   a.addEventListener('click',()=>{svg.querySelectorAll('path').forEach(p=>p.setAttribute('stroke-width','0.8'));path.setAttribute('stroke-width','2.5');path.setAttribute('stroke','#fff')});
+   svg.append(a);
+  });
+  node.replaceChildren(svg);
+ }
+ async function init(){const node=document.getElementById('neo-official-map');if(!node||node.dataset.loaded||busy)return;busy=true;
+  try{const res=await fetch(endpoint,{mode:'cors'});if(!res.ok)throw Error('HTTP '+res.status);paint(node,await res.json());node.dataset.loaded='1'}
+  catch(e){node.replaceChildren();const a=document.createElement('a');a.href='/alcaldias/';a.textContent='Consultar las 16 alcaldías ↗';node.append(a);console.warn('Mapa oficial no disponible:',e)}finally{busy=false}
+ }
+ new MutationObserver(()=>{if(document.getElementById('neo-official-map'))init()}).observe(document.documentElement,{childList:true,subtree:true});
+ if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);else init();
 })();
