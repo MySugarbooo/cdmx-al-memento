@@ -1,7 +1,35 @@
 {
   "month": "2026-10",
-  "updated": "2026-10-27 16:58 UTC",
+  "updated": "2026-10-27 17:11 UTC",
   "articles": [
+    {
+      "title": "Rastro de cigarros falsificados lleva a seis toneladas en CDMX",
+      "description": "La información publicada por Código San Luis trata un asunto registrado en la sección de Seguridad del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9ON0pLWWF6UGZJZ000c3JQNVAzcnkxanowVFZBYlJBd3lWaThkUmQ1SWsxVnJsTEF3aEVGLVktM0o5WV9jYi1VZWNDeUZocUhtR1FnUXBWMy1pRS1NYWkwMU5mMA?oc=5",
+      "source": "Código San Luis",
+      "date": "2026-10-27",
+      "published_at": "2026-10-27T16:58:46Z",
+      "category": "Seguridad",
+      "borough": "",
+      "location": "Ciudad de México (sin alcaldía identificada)",
+      "local_url": "/noticias/?id=b452a9d8e8faf1c94a13&mes=2026-10",
+      "brief": {
+        "lead": "La información publicada por Código San Luis trata un asunto registrado en la sección de Seguridad del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+        "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+        "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "archivo_seguridad_001",
+        "url": "/assets/fotos/archivo_seguridad_001.jpg",
+        "category": "Seguridad",
+        "borough": "",
+        "topic": "Adquisición patrullas para la Policía 03",
+        "author": "Gobierno de la Ciudad de México",
+        "license": "CC BY 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Adquisici%C3%B3n_patrullas_para_la_Polic%C3%ADa_03.jpg"
+      }
+    },
     {
       "title": "Incautan 6 toneladas de cigarros piratas en la colonia Morelos",
       "description": "La información publicada por 24-horas trata un asunto registrado en la sección de Seguridad del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -59,6 +87,62 @@
       }
     },
     {
+      "title": "¿Dónde sale más barato el pan de muerto en CDMX? Profeco compara los precios en Walmart, Soriana, Chedraui, La Comer y Bodega Aurrera",
+      "description": "La información publicada por Ciudad de México Secreta trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE04aEFOSDVOVjczU1B2bTREQXZUZXRadEdlWmVJR1FLb2w2U0lyWU1rdGxRc0hnZ0c1SWI0Y21qZmR3bW5sdmRlVnJERHZ0azNUa2RPVTdSTHpVWUVBMDhZbGxYd2JueDBIZGdIWjVqUVk?oc=5",
+      "source": "Ciudad de México Secreta",
+      "date": "2026-10-27",
+      "published_at": "2026-10-27T16:27:47Z",
+      "category": "CDMX",
+      "borough": "",
+      "location": "Ciudad de México (sin alcaldía identificada)",
+      "local_url": "/noticias/?id=a8e12540766c72f9cc2a&mes=2026-10",
+      "brief": {
+        "lead": "La información publicada por Ciudad de México Secreta trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+        "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+        "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "archivo_cdmx_003",
+        "url": "/assets/fotos/archivo_cdmx_003.jpg",
+        "category": "CDMX",
+        "borough": "",
+        "topic": "D.F. - panoramio (7)",
+        "author": "eurimaco",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:D.F._-_panoramio_%287%29.jpg"
+      }
+    },
+    {
+      "title": "Marchas y cierres viales HOY: ¿Dónde hay bloqueos? Lista de zonas afectadas CDMX y carreteras",
+      "description": "Según la información destacada por Reporte Indigo, manifestaciones o bloqueos forman parte de la jornada de movilidad capitalina. La ficha no demuestra por sí sola que todas las vías mencionadas sigan cerradas al momento de leerla.",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNSURaQkxhank1Q1BCUzRBbEN2R1ZYWlBadktidUpxRkdRVWt0Sy03YURNa1JPVmZjVlF2NTZyNk1SYURMbjVxOUEtWVJKY3lnYjJfTWdGTjVOZWtHeUFqWDBCeXNFVkd1XzUtU3lkZkl6bHB3WlltWG5LN2xPeHVjclFGM01xajNEVVN0bGNlU0otSjgtbWx3VlItY3BMb3I3Wjk2dGdlaGJTMW9aQUZ5WFV5Mk9TZXNfczBn?oc=5",
+      "source": "Reporte Indigo",
+      "date": "2026-10-27",
+      "published_at": "2026-10-27T16:26:57Z",
+      "category": "CDMX",
+      "borough": "",
+      "location": "Ciudad de México (sin alcaldía identificada)",
+      "local_url": "/noticias/?id=1117fed266b9fb78e54e&mes=2026-10",
+      "brief": {
+        "lead": "Según la información destacada por Reporte Indigo, manifestaciones o bloqueos forman parte de la jornada de movilidad capitalina. La ficha no demuestra por sí sola que todas las vías mencionadas sigan cerradas al momento de leerla.",
+        "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+        "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "archivo_cdmx_006",
+        "url": "/assets/fotos/archivo_cdmx_006.jpg",
+        "category": "CDMX",
+        "borough": "",
+        "topic": "Catedral Ii (172219027)",
+        "author": "Waender Alonso Bello",
+        "license": "CC BY 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Catedral_Ii_%28172219027%29.jpeg"
+      }
+    },
+    {
       "title": "México enviará a jefes de Seguridad a Sinaloa para supervisar operativos contra el crimen",
       "description": "La información publicada por Infobae trata un asunto registrado en la sección de Seguridad del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
       "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOblRKMWc2MEoyVWxQX1lOaFBoNGNvZ3BsVG1wLW52UGpaemk0WFhUVkRwX0oxdl9UZV9PeDRYSXBvMEptYkxiUHNvXzN4VEZsYldHdnUwaFlVODZnOHk2VEJMN2k5cHdnX1pWcnRMTkdHbXFmanc0eUVCWEI4YU5SNE44ZXl3eFdnd2hpaS1FTlg3Wkp3Y2M4UGFFTllHOVJvU0Vvcjhna3NJTUdCYzB5VjN5cF9xODZIaThkUGcyenU5V0EtaDROUWpaX0xoT2VpdkpBeU1McVZpQdIB9AFBVV95cUxQWW5LMWZvbzlpZjhtNlhianBncTZHNzIwcG9xdHMyQW1iTDZmOG4tLWxIdzNRamJLbUtxT2lOZGltdVdDTUhHTDBFcV95cmlMNDVFMVVibTZ5MUp0Z19MRVVLMlAxakZfcWd1VVU5SHk4U1BQX3lfdjQxRWxoSzFuM1VnMTNTd1ZLVjJrSGw3VTQ1WWk4NmhCWkFKOGV3UmRGZXJxUU1PbDNDQW5YSFFiSW9mOURnLVJVQnlDd2xVeEJfMHFPNk1WU0xzQ3RiNnl5dmlMRFpwSThmYzJKWDBfU2dQeUpwUllGMHFpUWdMOGtRcnJ4?oc=5",
@@ -84,6 +168,34 @@
         "author": "Daniel Yonka",
         "license": "CC BY-SA 4.0",
         "source": "https://commons.wikimedia.org/wiki/File:Patrulla_vecinal.jpg"
+      }
+    },
+    {
+      "title": "Once concentraciones se prevén en la CDMX este martes; familiares de menor atropellado y trabajadores del IMSS participarán",
+      "description": "Según la información destacada por Noticias en la Mira, manifestaciones o bloqueos forman parte de la jornada de movilidad capitalina. La ficha no demuestra por sí sola que todas las vías mencionadas sigan cerradas al momento de leerla.",
+      "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPY3JEMlhuRHpka2lCNFJuOEVONWRfcUxwTWF4djdOaEhIcFNVV2g2WE5mODlmX2g1U3BsOEtnVm5zLXpBUzF3S1RvY1dMcS11NjVxTDZkZDcxVlpLdWYwNkc5QjlNWk03QVplcDVZeGRyTEp4UlF6aDA1ZE1GTEpUMXNVaHJ0cUJrSVBacVFFY3c1djNWdTl1UlphMWx2ZTdzbFc4UXJPWFJpM1hJODJsdElmUTROR2YxRmhMRV9DV3ZWTmxScEtmUl9SRnQxcWtIS28tUHBjNndzZW9wVF9Ic3BoQ0VaLTF1Y3FDTkVR?oc=5",
+      "source": "Noticias en la Mira",
+      "date": "2026-10-27",
+      "published_at": "2026-10-27T16:22:45Z",
+      "category": "CDMX",
+      "borough": "",
+      "location": "Ciudad de México (sin alcaldía identificada)",
+      "local_url": "/noticias/?id=4ef957eab3a04ea8b0b5&mes=2026-10",
+      "brief": {
+        "lead": "Según la información destacada por Noticias en la Mira, manifestaciones o bloqueos forman parte de la jornada de movilidad capitalina. La ficha no demuestra por sí sola que todas las vías mencionadas sigan cerradas al momento de leerla.",
+        "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+        "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "archivo_cdmx_013",
+        "url": "/assets/fotos/archivo_cdmx_013.jpg",
+        "category": "CDMX",
+        "borough": "",
+        "topic": "D.F. - panoramio (9)",
+        "author": "eurimaco",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:D.F._-_panoramio_%289%29.jpg"
       }
     },
     {
@@ -196,6 +308,34 @@
         "author": "eurimaco",
         "license": "CC BY-SA 3.0",
         "source": "https://commons.wikimedia.org/wiki/File:D.F._-_panoramio_%287%29.jpg"
+      }
+    },
+    {
+      "title": "Aeroméxico y Delta anuncian 3 nuevas rutas desde Ciudad de México",
+      "description": "La información publicada por Notisistema trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPaVJiNzY1SVI3RGhrWkpIMXV6WDFzWF9NaktmdHdCWVdRcWU4ZEJqa1dzV3Y4dExEcmlzR0R4OE5yT1k4NEVKTVRPd3JBVTR5aUFIVmJhVlBXdlhxMjFoSFZLT0hoMDJuY05Hd1JWWVA1RmFZcFFVS3BUcFpwQ0xkRk1LSXJnakNUZ19fandlMDF6eTk3b0dvMV9BMUxEU2RDSFhlQzZR?oc=5",
+      "source": "Notisistema",
+      "date": "2026-10-27",
+      "published_at": "2026-10-27T16:16:00Z",
+      "category": "CDMX",
+      "borough": "",
+      "location": "Ciudad de México (sin alcaldía identificada)",
+      "local_url": "/noticias/?id=7638bbd2abc39351276b&mes=2026-10",
+      "brief": {
+        "lead": "La información publicada por Notisistema trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+        "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+        "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "archivo_cdmx_019",
+        "url": "/assets/fotos/archivo_cdmx_019.jpg",
+        "category": "CDMX",
+        "borough": "",
+        "topic": "El Paraguas (126505121)",
+        "author": "Octavio Alonso Maya Castro",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:El_Paraguas_%28126505121%29.jpeg"
       }
     },
     {
@@ -392,6 +532,34 @@
         "author": "Acuentacuentos",
         "license": "CC BY-SA 3.0",
         "source": "https://commons.wikimedia.org/wiki/File:PALACIO_DE_BELLAS_ARTES%2C_CIUDAD_DE_MEXICO..jpg"
+      }
+    },
+    {
+      "title": "¿A qué hora hará más frío en CDMX? El pronóstico del clima y lluvias para este martes; zonas afectadas por baj",
+      "description": "El pronóstico recogido por TV Azteca se refiere a lluvias en la capital. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
+      "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxPTkh5YndRV25FeUxrRWZSa1lSRUlBdk5OLU9sQWtVN3dsYURuQnNtbTdJNE9JQ0g5dkhLNm1mX1hSVktfRURSZE5JU28wM0lZSUNKaUVCVXZqUDRPTVduczhlLUE0X0JqY2trQ2stYi1oc21Cd3FXaTVfME90VFJJamZWak16dmM2Y0V1c1JGY3NTdGdmR2xlbzRKam5uMUE2YzdwRXNtUlVQSEQwbDJ6Z1h0WkM0Mmo5YkZObk5Tb2EtbjZuOExZV0pXTVNFWjJmakc5QWVDR1BFVEpIOUhwbUZIMzF4MzVrbEhRRUhHbGUyUdIB8gFBVV95cUxPTkh5YndRV25FeUxrRWZSa1lSRUlBdk5OLU9sQWtVN3dsYURuQnNtbTdJNE9JQ0g5dkhLNm1mX1hSVktfRURSZE5JU28wM0lZSUNKaUVCVXZqUDRPTVduczhlLUE0X0JqY2trQ2stYi1oc21Cd3FXaTVfME90VFJJamZWak16dmM2Y0V1c1JGY3NTdGdmR2xlbzRKam5uMUE2YzdwRXNtUlVQSEQwbDJ6Z1h0WkM0Mmo5YkZObk5Tb2EtbjZuOExZV0pXTVNFWjJmakc5QWVDR1BFVEpIOUhwbUZIMzF4MzVrbEhRRUhHbGUyUQ?oc=5",
+      "source": "TV Azteca",
+      "date": "2026-10-27",
+      "published_at": "2026-10-27T15:24:55Z",
+      "category": "CDMX",
+      "borough": "",
+      "location": "Ciudad de México (sin alcaldía identificada)",
+      "local_url": "/noticias/?id=75b2ac30b5f08c5befcb&mes=2026-10",
+      "brief": {
+        "lead": "El pronóstico recogido por TV Azteca se refiere a lluvias en la capital. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
+        "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+        "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "reciente_f2fceb86e231b250",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Edificios%2C_Paseo_de_la_Reforma_%28CDMX%29_0131.jpg/1280px-Edificios%2C_Paseo_de_la_Reforma_%28CDMX%29_0131.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "category": "CDMX",
+        "borough": "",
+        "topic": "Edificios, Paseo de la Reforma (CDMX) 0131",
+        "author": "Juan Carlos Fonseca Mata",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Edificios,_Paseo_de_la_Reforma_(CDMX)_0131.jpg"
       }
     },
     {
@@ -756,6 +924,62 @@
         "author": "ProtoplasmaKid",
         "license": "CC BY-SA 4.0",
         "source": "https://commons.wikimedia.org/wiki/File:L%C3%ADnea_2_del_Metro_de_la_Ciudad_de_M%C3%A9xico_-_Metro_Pino_Su%C3%A1rez_L%C3%ADnea_2_-_10.jpg"
+      }
+    },
+    {
+      "title": "México reporta un déficit comercial de 606,1 millones de dólares en septiembre",
+      "description": "La información publicada por Yahoo trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNZkVkbWhrYkVTT3pTV3dab3pKMjB1QURsSThkREJfUFl4Y0NDOFFnSW9PQzBncnpJbkc2RUQ3Ym91X2RxbkIxNkcwNEs4UHJ0Z0dHWjJubmtfaHo5WUtZTjBnMFZremVlckVVMEdQWGUyMVFPeWtRSGl1bnYwcEdfdGJpdG1CRFBncEJuelVPM3RSYWYyX3hwYkVR?oc=5",
+      "source": "Yahoo",
+      "date": "2026-10-27",
+      "published_at": "2026-10-27T14:33:33Z",
+      "category": "CDMX",
+      "borough": "",
+      "location": "Ubicación no indicada por el titular",
+      "local_url": "/noticias/?id=19c60695741fe4635d64&mes=2026-10",
+      "brief": {
+        "lead": "La información publicada por Yahoo trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+        "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+        "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "alcaldia_azcapotzalco",
+        "url": "/assets/alcaldias/azcapotzalco.jpg",
+        "category": "CDMX",
+        "borough": "Azcapotzalco",
+        "topic": "Parroquia de Santa Catarina, Azcapotzalco",
+        "author": "Ivan alcantara",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:PARROQUIA_DE_SANTA_CATARINA_%28AZCAPOTZALCO%29.jpg"
+      }
+    },
+    {
+      "title": "Dónde ver el Showrun de Checo Pérez en Reforma CDMX: horario y canal HOY miércoles 28 de octubre",
+      "description": "La información publicada por El Heraldo de México trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNdjN0Y1VjUWlSdHF2UnlCa3VOdG1EZ2NqNWRVZkxQaVg3d0hHRHlLUzNVQ0tUNlJJNkotV3NfbmxVR2c2UndzWUEyXy1GRGppN2RBSGRuWU42MDhhZzBlaWF1TUJzTEs3cXl6TzhtSnp2aWpkaFdqMzFmcThsZ0RqemZsSEIycHdLRVBfZGNBTEJBREExU25IQ1JPVTlWNEc3cHY1SG5FdGZWXzZvV1hYdzBYQW0zMGwzOEJ5MF9DRFpLWE1wXy10cXZfUkVHcy1Hb1VUOXBpQ0gtT2dFM005LXc3Y0pYU3drNDk3aA?oc=5",
+      "source": "El Heraldo de México",
+      "date": "2026-10-27",
+      "published_at": "2026-10-27T14:31:00Z",
+      "category": "CDMX",
+      "borough": "",
+      "location": "Ciudad de México (sin alcaldía identificada)",
+      "local_url": "/noticias/?id=782ded9cd9bd26d3bc9b&mes=2026-10",
+      "brief": {
+        "lead": "La información publicada por El Heraldo de México trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+        "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+        "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "alcaldia_benito-juarez",
+        "url": "/assets/alcaldias/benito-juarez.jpg",
+        "category": "CDMX",
+        "borough": "Benito Juárez",
+        "topic": "Parque Hundido, alcaldía Benito Juárez",
+        "author": "User:etnoboris",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Parque_Hundido.jpeg"
       }
     },
     {
@@ -7838,6 +8062,24 @@
         "author": "Waender Alonso Bello",
         "license": "CC BY 3.0",
         "source": "https://commons.wikimedia.org/wiki/File:Catedral_Ii_%28172219027%29.jpeg"
+      }
+    },
+    {
+      "title": "El Día de Muertos dejará más de 12 mil millones de pesos en CDMX: ¿qué negocios serán los más beneficiados?",
+      "description": "La información publicada por Récord trata un asunto registrado en la sección de Cultura del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxNSXNqOURCQ1pDc21QVTdZd1pRdmFJZnJ3X0kyUkN1OXl2VHRrV0ZpdXJzWDJTM0JCaGNUVFN6a0Fla0dFN25XRG5Id2RlLXdGSmQyVWQwUDV5YnM1QnpqblQ3QmduaDZWRGlGM1NJbWtsRUpfZVZYMVlsWDVzVl9hWWF5OERlYjFCa1h6M2FLZ1NoRURvbU4zeVB4M3hmcTZnQ1k1OW5Jdi1FVGRZVmNITHk3SjdEck05YkJXMnZlQVdLTkYzR2hiaVlyanBwc3VET1RkRDdlT0pVMzNZb1NGZXloZklHVzdLMkxGemd0RkY?oc=5",
+      "source": "Récord",
+      "date": "2026-10-26",
+      "published_at": "2026-10-26T19:06:00Z",
+      "category": "Cultura",
+      "borough": "",
+      "location": "Ciudad de México (sin alcaldía identificada)",
+      "local_url": "/noticias/?id=73a9fa2153c7e49075ab&mes=2026-10",
+      "brief": {
+        "lead": "La información publicada por Récord trata un asunto registrado en la sección de Cultura del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+        "context": "La actividad cultural abre oportunidades de encuentro, aprendizaje y disfrute para habitantes y visitantes.",
+        "pending": "Los accesos, boletos, sedes, cupos y horarios deben consultarse con la institución organizadora. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       }
     },
     {
