@@ -45,6 +45,14 @@ const PAGE_SIZE=isCommunity?100:50;
 const moreButton=document.getElementById('forum-load-more');
 const forumNotice=document.getElementById('forum-search-note');
 const editorLabel=document.querySelector('label[for="forum-question-title"]');
+const composerFeedback=document.getElementById('forum-editor-feedback');
+function showComposerFeedback(message,type='info'){
+ if(composerFeedback){composerFeedback.textContent=message;composerFeedback.dataset.type=type;}
+}
+function clearComposerFeedback(){
+ if(composerFeedback){composerFeedback.textContent='';composerFeedback.dataset.type='info';}
+}
+
 let previousSend=0;
 const questionInput=document.getElementById('forum-question-title');
 const forumFeed=document.getElementById('forum-topics');
@@ -90,8 +98,8 @@ function setReply(topic){
  textarea?.focus();
 }
 forumCancel?.addEventListener('click',clearReply);
-questionInput?.addEventListener('input',updateLimit);
-textarea?.addEventListener('input',updateLimit);
+questionInput?.addEventListener('input',()=>{updateLimit();clearComposerFeedback()});
+textarea?.addEventListener('input',()=>{updateLimit();clearComposerFeedback()});
 updateLimit();
 document.querySelectorAll('[data-forum-topic]').forEach(button=>button.addEventListener('click',()=>{
  forumQuery=button.dataset.forumTopic.toLocaleLowerCase('es-MX');
@@ -373,11 +381,17 @@ send.onclick=async()=>{
  const text=isCommunity?(activeQuestion?replyPrefix+activeQuestion.id+'] '+message:questionPrefix+title+'\n'+message):message;
  if(!user){promptSignIn();return}
  if(message.length<2||text.length>1000||(isCommunity&&!activeQuestion&&(title.length<8||title.length>110))){
-  status.textContent=isCommunity?'Título: 8 a 110 caracteres. La pregunta completa, incluidos título y mensaje, debe tener hasta 1000 caracteres.':'Escribe un comentario de 2 a 1000 caracteres.';
+  const problem=isCommunity?'El título debe tener entre 8 y 110 caracteres y la pregunta completa hasta 1000. Revisa los campos antes de publicar.':'Escribe un comentario de 2 a 1000 caracteres.';
+  status.textContent=problem;showComposerFeedback(problem,'error');
+  if(isCommunity&&!activeQuestion&&(title.length<8||title.length>110))questionInput?.focus();
+  else textarea?.focus();
   return;
  }
  const now=Date.now();
- if(now-previousSend<15000){status.textContent='Por favor, espera unos segundos antes de volver a publicar.';return}
+ if(now-previousSend<15000){
+  const warning='Espera unos segundos antes de volver a publicar.';
+  status.textContent=warning;showComposerFeedback(warning,'warning');return;
+ }
  send.disabled=true;
  try{
   const identity=await verifiedIdentity(user);
@@ -394,10 +408,12 @@ send.onclick=async()=>{
   }
   previousSend=Date.now();textarea.value='';if(questionInput)questionInput.value='';clearReply();
   status.textContent=isCommunity?'Publicación enviada correctamente.':'Comentario publicado correctamente.';
+  showComposerFeedback(status.textContent,'success');
  }catch(error){
   console.error('Error al publicar comentario:',error);
   status.textContent='No se pudo publicar ('+(error.code||'error desconocido')+'). '+
-   (error.code==='permission-denied'?'Firebase rechazó el permiso: comprueba que las reglas de seguridad nuevas estén desplegadas y que tu cuenta no esté bloqueada.':'Comprueba tu conexión e inténtalo de nuevo.');
+   (error.code==='permission-denied'?'Firebase rechazó el permiso. Verifica que estés usando una cuenta Google autorizada.':'Comprueba tu conexión e inténtalo de nuevo.');
+  showComposerFeedback(status.textContent,'error');
  }finally{send.disabled=false}
 };
 
