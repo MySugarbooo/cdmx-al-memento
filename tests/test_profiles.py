@@ -101,7 +101,7 @@ class ProfileTests(unittest.TestCase):
         self.assertIn("layer.on('mouseover'",script)
         self.assertIn("layer.on('click'",script)
         self.assertIn('window.location.assign(urlFor(name))',script)
-        self.assertIn("color:'#fff'",script)
+        self.assertIn("color:'#ffffff'",script)
         self.assertIn("fillColor:'#f077ad'",preview)
         self.assertIn("window.parent.location.assign(link)",preview)
         self.assertIn('value="naturaleza" checked',page)
