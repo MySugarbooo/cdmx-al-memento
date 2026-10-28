@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-28 21:55 UTC",
+  "updated": "2026-10-28 22:51 UTC",
   "boroughs": [
     {
       "name": "La Magdalena Contreras",
@@ -1019,8 +1019,64 @@
     },
     {
       "name": "Azcapotzalco",
-      "count": 69,
+      "count": 71,
       "articles": [
+        {
+          "title": "Cae árbol de 15 metros en unidad habitacional de Azcapotzalco",
+          "description": "La información publicada por Telediario trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNWXBNTTZqbUdvVlpZckluWkk5UmRldlhRa0pBelNLSG5DNEd6cFFjbklUOFl1UC1QV2hkbDZyemFOOUo0ak9TVkJBUUJsYWxweHExTlh2NmJ4M2FfendOb2dJMjI2ckFVSDY2MGZ4UnRWMVBqN2wtRlFSc0pvMVQ1ODFJcUEwNXAxblJRYVZvbzJLdEw5MU9PV0ZfX2psd9IBngFBVV95cUxNdHlpUTNYaUhSeHc4YU53al80NTlVdS1zNXhMVWdKb09VbmhwVVZRQTNmNEw3SU55RTlkRWZyczV5TVJUQUFqdGJ0TUZmRU55bUZqTGs0SzdVOWdFaVE4MnZZSDZ0clF4NmxHcmVHSTRYWWRibnJFUkQxZ0k1eS1NQnkya1hSNUJGQnpEXzNnUWJOU3hBcUtoUGNrYzMxdw?oc=5",
+          "source": "Telediario",
+          "date": "2026-10-28",
+          "published_at": "2026-10-28T22:32:34Z",
+          "category": "CDMX",
+          "borough": "Azcapotzalco",
+          "location": "Azcapotzalco (mencionada en el titular)",
+          "local_url": "/noticias/?id=3d99673c9c32768f4acb&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por Telediario trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_azcapotzalco",
+            "url": "/assets/alcaldias/azcapotzalco.jpg",
+            "category": "CDMX",
+            "borough": "Azcapotzalco",
+            "topic": "Parroquia de Santa Catarina, Azcapotzalco",
+            "author": "Ivan alcantara",
+            "license": "CC BY-SA 3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:PARROQUIA_DE_SANTA_CATARINA_%28AZCAPOTZALCO%29.jpg"
+          }
+        },
+        {
+          "title": "VIDEO | Denuncian a sujeto por fotografiar a una joven en un microbús de Azcapotzalco",
+          "description": "La información publicada por Diario de México trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPSTQzNDFQZmstTVBwYUZHRlRwV0d2dTREdUFzWUJUa1NCNnc0cHRYY0pwRlhvcE85T3lVQTlMeEZmZXVnblRUS01Nem94MF94Q2ZPTXdzVk9mWGlsdHRCb3hpbFFJYXNkVFZMclBqdXhMTkVpUWVvQXh5NDNxRUxkbXlnRVBiOTY3Ulp1X3haLU9iS1JTcFl5eWJ6Yk1QaS1oem9veUJ4UnVDdWlJdzJj0gG0AUFVX3lxTE5hTUJOSmc5VGpyUXh3OENOZENvblhvTHo3SmV6NHhvUm9pMWhBdUgyVEpOaXhSNU9XQmZVdE9jQ3EzeEo1WExTamtYSmJSdlUxd2pKT1E2MFNxamJRaDFUQnJkLW03MjBFVE9QS3lIODRYZTNoVFBmeW9OcHNTUGF3VWJsNmZlMjNqU1hFdWZ5ZGhRME9tQ0RPRVdlaWhOQ0xnZWtXejB2VTlCbm9wNGxsRWdxcQ?oc=5",
+          "source": "Diario de México",
+          "date": "2026-10-28",
+          "published_at": "2026-10-28T22:17:51Z",
+          "category": "CDMX",
+          "borough": "Azcapotzalco",
+          "location": "Azcapotzalco (mencionada en el titular)",
+          "local_url": "/noticias/?id=c2957ae065a997c4946d&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por Diario de México trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "archivo_cdmx_013",
+            "url": "/assets/fotos/archivo_cdmx_013.jpg",
+            "category": "CDMX",
+            "borough": "",
+            "topic": "D.F. - panoramio (9)",
+            "author": "eurimaco",
+            "license": "CC BY-SA 3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:D.F._-_panoramio_%289%29.jpg"
+          }
+        },
         {
           "title": "La incesante búsqueda de fugas en ductos de Pemex; Azcapotzalco, la alcaldía con mayor número de tomas clandes",
           "description": "La información publicada por MILENIO trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -1476,49 +1532,41 @@
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           }
-        },
-        {
-          "title": "Clima en Azcapotzalco: martes 20 de octubre con lluvia ligera y ambiente fresco",
-          "description": "El pronóstico recogido por El Heraldo de México se refiere a lluvias ligeras en Azcapotzalco. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
-          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNYXBmaWMzbzZZXzN2UEdSdEZxYmJJMlhoUC1KXzdDeTFscGl1RXNCcUljUnNWMjAtT2RWN0t3V2tXUDJuc3NVT2lpNkdRY09tWW5hMldFMUltM01seUZsdGM5Y21DVzg5eVdDWnRXYTFvZ2dzOHRfaXA2ekZxcmhfZ3ZXWFl5S0RpVXVzakZFOW5femgtajdDQWtiY2xCc1FLM3FiLWV5QWluZFNxRU1UblBOY3Rza0phbVhiNjhUTUxTX0ZsYndmRThMXy1Uc3BhMTI0UjR3?oc=5",
-          "source": "El Heraldo de México",
-          "date": "2026-10-19",
-          "published_at": "2026-10-20T05:00:00Z",
-          "category": "CDMX",
-          "borough": "Azcapotzalco",
-          "location": "Azcapotzalco (mencionada en el titular)",
-          "local_url": "/noticias/?id=0e65528c4414b67dffa2&mes=2026-10",
-          "brief": {
-            "lead": "El pronóstico recogido por El Heraldo de México se refiere a lluvias ligeras en Azcapotzalco. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
-        },
-        {
-          "title": "Gabriela Jiménez va por Azcapotzalco - La Prensa",
-          "description": "La información publicada por El Sol de México trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQVGpEcjkzZ1NfVF9WbExqNks5YTBMUnd1ZllHRkpaWF9jNWFqQkNRYUpualYzM2I3RUJ6dzd1RmU2T3BvYVZVa09WRk1tQm5MR0pyY09mUEJfV1ROQzdUSnhpLXBldUpIM0hvVjRuY3k0ek96eGdXSHJQc3ZkU3RRWV92VzRJS1h0ZDM4Rw?oc=5",
-          "source": "El Sol de México",
-          "date": "2026-10-19",
-          "published_at": "2026-10-20T03:04:38Z",
-          "category": "CDMX",
-          "borough": "Azcapotzalco",
-          "location": "Azcapotzalco (mencionada en el titular)",
-          "local_url": "/noticias/?id=15b4d3c9450162ec2112&mes=2026-10",
-          "brief": {
-            "lead": "La información publicada por El Sol de México trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
         }
       ]
     },
     {
       "name": "Benito Juárez",
-      "count": 90,
+      "count": 91,
       "articles": [
+        {
+          "title": "Motociclista Lesionado por Choque en la Avenida Xola, Alcaldía Benito Juárez",
+          "description": "La información publicada por N+ trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxON1JsNUs4WFBhRXIyS2hLWVgzeU81a3lETDB0RkxGaTNGXzNzeFNUSVZYWGVieEFhZmR3OThxcHdvVS1ZYnJqMHJKOXVQaTVrUFVMQllHUTZPc1h3aWV3S3dNTzNTN1FuLUE1VGpjc01QVlhmLTlZVkJNdHhHVlJfRHZjaEM1UzJuTXNieVBjb2w3MTJnTjdJVVZQdVF3SXVZNXp3dWQ4TUY2T3RPQWpTekUxN3hZYmlaNkNWalVOU2hnSV9UNF9KRi1iYjgzOE4zN3NKbzg1ZUdKeDd0cEZWWU02eGVjdEU?oc=5",
+          "source": "N+",
+          "date": "2026-10-28",
+          "published_at": "2026-10-28T22:26:15Z",
+          "category": "CDMX",
+          "borough": "Benito Juárez",
+          "location": "Benito Juárez (mencionada en el titular)",
+          "local_url": "/noticias/?id=5dc87e5d8ac3b92f309a&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por N+ trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_benito-juarez",
+            "url": "/assets/alcaldias/benito-juarez.jpg",
+            "category": "CDMX",
+            "borough": "Benito Juárez",
+            "topic": "Parque Hundido, alcaldía Benito Juárez",
+            "author": "User:etnoboris",
+            "license": "CC BY-SA 3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Parque_Hundido.jpeg"
+          }
+        },
         {
           "title": "Árbol a punto de Caer Moviliza Cuerpos de Emergencia en Benito Juárez, CDMX",
           "description": "La información publicada por N+ trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -1998,24 +2046,6 @@
           "local_url": "/noticias/?id=b5bbb301b79e19f99531&mes=2026-10",
           "brief": {
             "lead": "El pronóstico recogido por El Heraldo de México se refiere a condiciones meteorológicas en Benito Juárez. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
-        },
-        {
-          "title": "Benito Juárez, la alcaldía más segura de CDMX con 86.3% de aprobación",
-          "description": "La información publicada por El Congresista trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBEWGljMFk1VWQ1Q1NhYkluUm5XWDJSblFGd21wczVHSklPeV9zNzR6UDBZLWtyQjEtdVNSUWtpdkpJWE9JXzZLTm5hM0JlMkhkWUp4TFY0U3hWdmVSTXh3MFU0bnZFZmxEdGtkUmNYYzlkQklhN0E?oc=5",
-          "source": "El Congresista",
-          "date": "2026-10-23",
-          "published_at": "2026-10-24T04:32:00Z",
-          "category": "CDMX",
-          "borough": "Benito Juárez",
-          "location": "Benito Juárez (mencionada en el titular)",
-          "local_url": "/noticias/?id=837fe5c0130cd2a2092f&mes=2026-10",
-          "brief": {
-            "lead": "La información publicada por El Congresista trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
@@ -4091,8 +4121,36 @@
     },
     {
       "name": "Iztacalco",
-      "count": 82,
+      "count": 83,
       "articles": [
+        {
+          "title": "Día de Muertos en Iztacalco mantendrá vivas las tradiciones - La Prensa",
+          "description": "La información publicada por El Sol de México trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQLUlvd3NDRndRd2E4b1FsYXJIZE1pT1VEbkZHTHdzc0hJa0lBc2hnLTg5YjJSTmIxdWhTMDZ5TXNnMGx3TEZXV29NcG1reDcyTXQ3NjRxQ1Btc3UtalFJckJ3X0F3S2dMSHM2VmU1b1BjTko1QlVPRkQ3Y2VKWkZGcVZRVkNER1VzS1FSUGdzRXM3Q1VDNlcyUUxQelA0WWE1bE1kMG9CN3BpM0U?oc=5",
+          "source": "El Sol de México",
+          "date": "2026-10-28",
+          "published_at": "2026-10-28T22:40:03Z",
+          "category": "CDMX",
+          "borough": "Iztacalco",
+          "location": "Iztacalco (mencionada en el titular)",
+          "local_url": "/noticias/?id=12ce0656ead98965da72&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por El Sol de México trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_iztacalco",
+            "url": "/assets/alcaldias/iztacalco.jpg",
+            "category": "CDMX",
+            "borough": "Iztacalco",
+            "topic": "Iglesia de San Matías en el antiguo pueblo de Iztacalco",
+            "author": "AlejandroLinaresGarcia",
+            "license": "CC BY-SA 3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:SanMatiasChurchIztacalco02.jpg"
+          }
+        },
         {
           "title": "Choca Vehículo Particular con Tráiler en Agrícola Oriental, Iztacalco",
           "description": "La información publicada por N+ trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -4572,24 +4630,6 @@
           "local_url": "/noticias/?id=e36b82796161ddf6af8f&mes=2026-10",
           "brief": {
             "lead": "De acuerdo con ADN 40, se reportó un atropellamiento con consecuencias mortales en Iztacalco, relacionado con un tráiler. Es una noticia que exige cuidado al informar sobre las personas afectadas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
-        },
-        {
-          "title": "Clima en Iztacalco: jueves 22 de octubre con lluvia ligera y ambiente fresco",
-          "description": "El pronóstico recogido por El Heraldo de México se refiere a lluvias ligeras en Iztacalco. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
-          "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQUWMzSDZ2eWRPbDd5QVd6M2F1UVVzV0htLVdkTy1tcll0dGNsM0hqaEM3Q1F0Ul9tTHlEbFMtRHFXcFJ0UzBJcF9jU3ZKNFkwLVc4RkxZT29TdmRYRDZ4eDZ2ZWpBR29lcEozZ1FhTHA1V01hdnlKM0cyWnFuaml6cFFWaUhNRFpZd3A4b1dnckNKVXR6Z1pmUjl2WG90MXBRNWNYQ0R2bEhnUnRIVjR4ZlNiQW9UVEZERXp4by1VZ0VBb0x3MXJoYzl1Z0lsXzNDQmc?oc=5",
-          "source": "El Heraldo de México",
-          "date": "2026-10-21",
-          "published_at": "2026-10-22T05:00:00Z",
-          "category": "CDMX",
-          "borough": "Iztacalco",
-          "location": "Iztacalco (mencionada en el titular)",
-          "local_url": "/noticias/?id=67c2caf1b4ad4ef30d56&mes=2026-10",
-          "brief": {
-            "lead": "El pronóstico recogido por El Heraldo de México se refiere a lluvias ligeras en Iztacalco. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
