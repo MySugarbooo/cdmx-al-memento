@@ -16,6 +16,21 @@
   return response.json();
  };
  const params=new URLSearchParams(window.location.search);
+ const slugify=name=>String(name).normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
+ const bySlug=new Map(BOROUGHS.map(name=>[slugify(name),name]));
+ const boroughUrl=name=>'/alcaldias/'+slugify(name)+'/';
+ function readSelectedBorough(){
+  // Priorizar URL real. Aceptar enlaces tradicionales ?alcaldia= por compatibilidad.
+  const requested=new URLSearchParams(window.location.search).get('alcaldia');
+  const parts=window.location.pathname.split('/').filter(Boolean);
+  const pathValue=parts[0]==='alcaldias'?bySlug.get(parts[1]):'';
+  const fromPage=document.body.dataset.alcaldia||'';
+  if(requested!==null){
+   const direct=BOROUGHS.find(x=>x===requested.trim());
+   return direct||bySlug.get(slugify(requested))||'';
+  }
+  return pathValue||BOROUGHS.find(x=>x===fromPage)||'';
+ }
  const validExternal=url=>{
   try{const p=new URL(url);return p.protocol==='https:'&&p.hostname==='news.google.com'}catch{return false}
  };
@@ -151,8 +166,8 @@
         landmarks=$('borough-landmarks'), sourceLinks=$('borough-history-links'),
         photo=$('borough-photo'), photoCaption=$('borough-photo-caption'),
         photoSource=$('borough-image-source'), photoLicense=$('borough-image-license');
-  const requested=params.get('alcaldia');
-  let active=BOROUGHS.includes(requested)?requested:'Cuauhtémoc';
+  const requested=readSelectedBorough();
+  let active=requested||'Cuauhtémoc';
   const entries=new Map(), histories=new Map(), photos=new Map();
   let newsReady=false, historyReady=false, photosReady=false, didAutoScroll=false;
 
@@ -251,10 +266,11 @@
   function change(name){
    if(!BOROUGHS.includes(name))return;
    active=name;
-   const url=new URL(window.location.href);
-   url.searchParams.set('alcaldia',name);
-   url.hash='#noticias-alcaldia';
-   history.replaceState(null,'',url);
+   document.body.dataset.alcaldia=name;
+   const url=boroughUrl(name)+'#noticias-alcaldia';
+   history.pushState({alcaldia:name},'',url);
+   const canonical=document.querySelector('link[rel="canonical"]');
+   if(canonical)canonical.href=new URL(boroughUrl(name),window.location.origin).href;
    view();
    $('noticias-alcaldia')?.scrollIntoView({
     behavior:window.matchMedia?.('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',
@@ -263,10 +279,11 @@
   }
   select.addEventListener('change',()=>change(select.value));
   window.addEventListener('popstate',()=>{
-   const name=new URLSearchParams(window.location.search).get('alcaldia');
-   active=BOROUGHS.includes(name)?name:'Cuauhtémoc';
+   active=readSelectedBorough()||'Cuauhtémoc';
+   document.body.dataset.alcaldia=active;
    view();
   });
+  document.body.dataset.alcaldia=active;
   view();
   Promise.allSettled([
     fetchJSON('/alcaldias/noticias.json'),
