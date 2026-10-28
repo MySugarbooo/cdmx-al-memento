@@ -2,18 +2,53 @@ rules_version = '2';
 service cloud.firestore {
   match /databases/{database}/documents {
     function signedIn() { return request.auth != null; }
+    function signedInGoogle() {
+      return signedIn() &&
+        request.auth.token.firebase.sign_in_provider == 'google.com';
+    }
+    function moderator() {
+      // El privilegio se asigna con Admin SDK en servidor, nunca desde el navegador.
+      return signedIn() && request.auth.token.get('moderator', false) == true;
+    }
+    function notBlocked() {
+      return !exists(/databases/$(database)/documents/communityBans/$(request.auth.uid));
+    }
+    function verifiedName() {
+      let claim = request.auth.token.get('name', '');
+      return claim is string && claim.size() >= 1 && claim.size() <= 80
+        ? claim : 'Lector';
+    }
+    function validPhoto(data) {
+      let photo = data.get('photoURL', '');
+      let verified = request.auth.token.get('picture', '');
+      return photo is string && photo.size() <= 1500 &&
+        (photo == '' ||
+          (verified is string && verified.size() > 0 &&
+           photo == verified && photo.matches('https://.+')));
+    }
     function validComment() {
-      return signedIn()
-        && request.resource.data.keys().hasOnly(['uid', 'name', 'text', 'createdAt'])
+      return signedInGoogle() && notBlocked()
+        && request.resource.data.keys().hasOnly(['uid', 'name', 'text', 'createdAt', 'photoURL'])
         && request.resource.data.keys().hasAll(['uid', 'name', 'text', 'createdAt'])
         && request.resource.data.uid == request.auth.uid
-        && request.resource.data.name is string
-        && request.resource.data.name.size() >= 1
-        && !(request.resource.data.name.size() > 80)
+        && request.resource.data.name == verifiedName()
         && request.resource.data.text is string
         && request.resource.data.text.size() >= 2
-        && !(request.resource.data.text.size() > 1000)
-        && request.resource.data.createdAt == request.time;
+        && request.resource.data.text.size() <= 1000
+        && request.resource.data.createdAt == request.time
+        && validPhoto(request.resource.data);
+    }
+    function validReport(reportId) {
+      return signedInGoogle() && notBlocked()
+        && request.resource.data.keys().hasOnly(['uid', 'commentId', 'reason', 'createdAt'])
+        && request.resource.data.keys().hasAll(['uid', 'commentId', 'reason', 'createdAt'])
+        && request.resource.data.uid == request.auth.uid
+        && request.resource.data.commentId is string
+        && request.resource.data.commentId.matches('[a-zA-Z0-9]{20}')
+        && reportId == request.auth.uid + '_' + request.resource.data.commentId
+        && request.resource.data.reason in ['spam', 'abuso', 'privacidad', 'desinformacion', 'otro']
+        && request.resource.data.createdAt == request.time
+        && exists(/databases/$(database)/documents/community/main/comments/$(request.resource.data.commentId));
     }
     match /articles/{articleId}/comments/{commentId} {
       function validArticle() {
@@ -22,13 +57,23 @@ service cloud.firestore {
       allow read: if validArticle();
       allow create: if validArticle() && validComment();
       allow update: if false;
-      allow delete: if signedIn() && resource.data.uid == request.auth.uid;
+      allow delete: if moderator() || (signedIn() && resource.data.uid == request.auth.uid);
     }
     match /community/main/comments/{commentId} {
       allow read: if true;
       allow create: if validComment();
       allow update: if false;
-      allow delete: if signedIn() && resource.data.uid == request.auth.uid;
+      allow delete: if moderator() || (signedIn() && resource.data.uid == request.auth.uid);
+    }
+    match /community/main/reports/{reportId} {
+      // Los reportes no son públicos: solo moderadores con rol firmado.
+      allow read, delete: if moderator();
+      allow create: if validReport(reportId);
+      allow update: if false;
+    }
+    match /communityBans/{uid} {
+      // Bloqueos gestionados únicamente con Admin SDK / consola administrativa.
+      allow read, write: if false;
     }
   }
 }
