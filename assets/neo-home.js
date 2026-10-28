@@ -125,7 +125,8 @@ async function communityPreview(){
     picture.src=avatarUrl;picture.alt='';picture.loading='lazy';
     picture.referrerPolicy='no-referrer';
     picture.style.cssText='display:block;width:100%;height:100%;object-fit:cover;border-radius:50%';
-    picture.onerror=()=>picture.remove();
+    picture.onerror=()=>{picture.remove();avatar.textContent=(post.name||'V').slice(0,1).toUpperCase();};
+    avatar.textContent='';
     avatar.append(picture);
    }
    const name=el('strong','',String(post.name||'Vecino').slice(0,60));
