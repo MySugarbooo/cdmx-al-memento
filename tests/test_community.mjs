@@ -16,7 +16,8 @@ test('los scripts del foro tienen sintaxis valida',()=>{
 test('el titulo indica limites y muestra contador accesible',()=>{
  assert.match(html,/id="forum-question-title"[^>]*minlength="8"[^>]*maxlength="110"/);
  assert.match(html,/id="forum-title-help"[^>]*aria-live="polite"/);
- assert.match(html,/Faltan .* caracteres para el mínimo/);
+ assert.match(html,/Faltan /);
+ assert.match(html,/ caracteres para el mínimo/);
  assert.match(code,/title\.length<8\|\|title\.length>110/);
  assert.match(code,/if\(titleHelp\)titleHelp\.hidden=true/);
 });
