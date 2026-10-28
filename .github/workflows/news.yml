@@ -91,6 +91,7 @@ jobs:
           node --check assets/clima-ticker.js
           node --check --input-type=module < functions/api/clima.js
           node --check assets/comments.js
+          node --check firebase/asignar-moderador.mjs
           node --check assets/comments-config.js
           node --check assets/agenda.js
           node --check assets/negocios.js
