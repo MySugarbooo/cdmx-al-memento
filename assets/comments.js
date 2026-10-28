@@ -270,14 +270,78 @@ function display(rows){
   list.append(li);
  }
 }
-mod.onAuthStateChanged(auth,person=>{
- user=person;
+let unsubscribeReports=null;
+function stopModeratorFeed(){if(unsubscribeReports){unsubscribeReports();unsubscribeReports=null}}
+function moderatorFeed(){
+ const panel=document.getElementById('forum-moderator-panel'),items=document.getElementById('forum-moderator-list');
+ if(!panel||!items)return;
+ panel.hidden=!isModerator;
+ stopModeratorFeed();
+ if(!isModerator)return;
+ const reports=fs.collection(db,'community','main','reports');
+ const q=fs.query(reports,fs.orderBy('createdAt','desc'),fs.limit(50));
+ unsubscribeReports=fs.onSnapshot(q,snapshot=>{
+  items.replaceChildren();
+  if(snapshot.empty){const li=document.createElement('li');li.textContent='No hay reportes pendientes.';items.append(li);return}
+  for(const row of snapshot.docs){
+   const data=row.data(),li=document.createElement('li');
+   const title=document.createElement('strong');
+   title.textContent='Motivo: '+String(data.reason||'Sin motivo').slice(0,40);
+   const description=document.createElement('span');
+   description.textContent=' · Publicación '+String(data.commentId||'').slice(0,24)+' · ';
+   const inspect=document.createElement('a');inspect.href='#post-'+data.commentId;inspect.textContent='Buscar en el foro';
+   const remove=document.createElement('button');remove.type='button';remove.textContent='Retirar publicación';
+   remove.addEventListener('click',async()=>{
+    if(!window.confirm('¿Eliminar esta publicación denunciada? Esta acción es irreversible.'))return;
+    remove.disabled=true;
+    try{
+     await fs.deleteDoc(fs.doc(db,'community','main','comments',data.commentId));
+     await fs.deleteDoc(row.ref);
+     status.textContent='Publicación retirada tras la revisión.';
+    }catch(error){status.textContent='La moderación no pudo completarse ('+(error.code||'error')+').'}
+    finally{remove.disabled=false}
+   });
+   const resolve=document.createElement('button');resolve.type='button';resolve.textContent='Descartar reporte';
+   resolve.addEventListener('click',async()=>{
+    resolve.disabled=true;
+    try{await fs.deleteDoc(row.ref)}catch(error){status.textContent='No se pudo cerrar el reporte ('+(error.code||'error')+').'}
+    finally{resolve.disabled=false}
+   });
+   li.append(title,description,inspect,remove,resolve);items.append(li);
+  }
+ },error=>{items.replaceChildren();const li=document.createElement('li');li.textContent='No se pudieron consultar reportes ('+(error.code||'error')+'). Comprueba el despliegue de reglas.';items.append(li)});
+}
+mod.onAuthStateChanged(auth,async person=>{
+ user=person;isModerator=false;
  login.hidden=!!person;editor.hidden=!person;signout.hidden=!person;
- if(person){status.textContent='Participas como '+(person.displayName||'usuario autenticado')+'. Tu nombre, foto de perfil y comentarios son públicos.';}
- else status.textContent='Inicia sesión con Google o Facebook para comentar. Tu comentario, nombre y foto de perfil de Google serán públicos.';
- if(unsubscribe){unsubscribe();unsubscribe=null;}
- const q=fs.query(collection,fs.orderBy('createdAt','desc'),fs.limit(isCommunity?200:50));
- unsubscribe=fs.onSnapshot(q,snapshot=>display(snapshot.docs),error=>{status.textContent='No se pudieron cargar los comentarios ('+(error.code||'error')+'). Revisa las reglas de Firestore.';});
+ if(person){
+  status.textContent='Sesión iniciada con '+(person.displayName||'Google')+'. Tu nombre y tus publicaciones son públicos.';
+  try{
+   const result=await mod.getIdTokenResult(person);
+   if(auth.currentUser===person){
+    isModerator=result.claims.moderator===true;
+    moderatorFeed();
+   }
+  }catch(error){console.warn('Rol del foro no disponible:',error)}
+ }else{
+  status.textContent='Inicia sesión con Google para participar. Tu nombre y, si está disponible, tu foto de perfil serán públicos.';
+  stopModeratorFeed();const panel=document.getElementById('forum-moderator-panel');if(panel)panel.hidden=true;
+ }
+ if(unsubscribe){unsubscribe();unsubscribe=null}
+ liveRows=[];olderRows.clear();pageCursor=null;hasMore=false;
+ const q=fs.query(collection,fs.orderBy('createdAt','desc'),fs.limit(PAGE_SIZE));
+ unsubscribe=fs.onSnapshot(q,snapshot=>{
+  liveRows=snapshot.docs;
+  if(!olderRows.size)pageCursor=liveRows[liveRows.length-1]||null;
+  hasMore=olderRows.size?hasMore:liveRows.length===PAGE_SIZE;
+  renderMerged();
+ },error=>{
+  status.textContent='No se pudieron cargar las conversaciones ('+(error.code||'error')+'). Comprueba tu conexión o los permisos del foro.';
+  list.replaceChildren();
+  const li=document.createElement('li');li.className='forum-empty';
+  li.textContent='Error de carga. Recarga la página para reintentar.';
+  list.append(li);if(moreButton)moreButton.hidden=true;
+ });
 });
 async function authenticate(provider){
  try{
@@ -294,19 +358,46 @@ google.onclick=()=>authenticate(new mod.GoogleAuthProvider());
 // Facebook requiere una aplicación Meta habilitada.
 if(facebook)facebook.hidden=true;
 signout.onclick=()=>mod.signOut(auth);
+async function verifiedIdentity(person){
+ const result=await mod.getIdTokenResult(person);
+ const claimed=result.claims.name;
+ const name=typeof claimed==='string'&&claimed.length>0&&claimed.length<=80?claimed:'Lector';
+ const picture=result.claims.picture;
+ const photoURL=typeof picture==='string'&&picture.startsWith('https://')&&picture.length<=1500?picture:'';
+ return {name,photoURL};
+}
 send.onclick=async()=>{
  const message=textarea.value.trim();
  const title=questionInput?.value.trim()||'';
  const text=isCommunity?(activeQuestion?replyPrefix+activeQuestion.id+'] '+message:questionPrefix+title+'\n'+message):message;
- if(!user||message.length<2||text.length>1000||(isCommunity&&!activeQuestion&&(title.length<8||title.length>110))){status.textContent=isCommunity?'Escribe un título de 8 a 110 caracteres y un mensaje válido (máximo 1000 caracteres en total).':'Escribe un comentario de 2 a 1000 caracteres.';return;}
+ if(!user){promptSignIn();return}
+ if(message.length<2||text.length>1000||(isCommunity&&!activeQuestion&&(title.length<8||title.length>110))){
+  status.textContent=isCommunity?'Título: 8 a 110 caracteres. La pregunta completa, incluidos título y mensaje, debe tener hasta 1000 caracteres.':'Escribe un comentario de 2 a 1000 caracteres.';
+  return;
+ }
+ const now=Date.now();
+ if(now-previousSend<15000){status.textContent='Por favor, espera unos segundos antes de volver a publicar.';return}
  send.disabled=true;
  try{
-  const payload={uid:user.uid,name:(user.displayName||'Lector').slice(0,80),text,createdAt:fs.serverTimestamp()};
-  // Compatibilidad con reglas antiguas de Firestore: permiten solo cuatro campos.
-  // Guardar photoURL sin actualizar reglas produce permission-denied.
-  await fs.addDoc(collection,payload);
-  textarea.value='';if(questionInput)questionInput.value='';clearReply();status.textContent=isCommunity?'Publicación enviada correctamente.':'Comentario publicado correctamente.';
- }catch(error){console.error('Error al publicar comentario:',error);status.textContent='No se pudo publicar ('+(error.code||'error desconocido')+'). '+(error.code==='permission-denied'?'La base de datos rechazó el permiso. Comprueba las reglas publicadas de Firestore.':'Comprueba tu conexión e inténtalo de nuevo.');}
- finally{send.disabled=false;}
+  const identity=await verifiedIdentity(user);
+  const payload={uid:user.uid,name:identity.name,text,createdAt:fs.serverTimestamp()};
+  if(identity.photoURL)payload.photoURL=identity.photoURL;
+  try{
+   await fs.addDoc(collection,payload);
+  }catch(error){
+   // Las reglas antiguas aceptan solo cuatro campos. Reintentar sin foto
+   // mantiene las publicaciones en funcionamiento durante la migración.
+   if(error.code!=='permission-denied'||!payload.photoURL)throw error;
+   delete payload.photoURL;
+   await fs.addDoc(collection,payload);
+  }
+  previousSend=Date.now();textarea.value='';if(questionInput)questionInput.value='';clearReply();
+  status.textContent=isCommunity?'Publicación enviada correctamente.':'Comentario publicado correctamente.';
+ }catch(error){
+  console.error('Error al publicar comentario:',error);
+  status.textContent='No se pudo publicar ('+(error.code||'error desconocido')+'). '+
+   (error.code==='permission-denied'?'Firebase rechazó el permiso: comprueba que las reglas de seguridad nuevas estén desplegadas y que tu cuenta no esté bloqueada.':'Comprueba tu conexión e inténtalo de nuevo.');
+ }finally{send.disabled=false}
 };
+
 })();
