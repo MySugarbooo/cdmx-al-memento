@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="es"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>16 alcaldías · Vista previa CDMX AL MEMENTO</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css">
+<style>
+html,body,#mini-mapa{margin:0;width:100%;height:100%;overflow:hidden;background:#f3ede0}
+.leaflet-container{background:#f3ede0;cursor:default}
+.leaflet-tile-pane{filter:saturate(.8) contrast(.91) sepia(.14)}
+.leaflet-control-attribution{font-size:8px!important;background:#fff8eddf!important}
+.leaflet-interactive{cursor:pointer}
+.leaflet-tooltip.alcaldia-mini{background:#2e1c39;color:#fff;border:1px solid #f4bfdc;
+ border-radius:7px;padding:3px 6px;font-size:11px;font-weight:800;box-shadow:0 2px 5px #1a101955}
+.leaflet-tooltip.alcaldia-mini::before{display:none}
+.mini-indicacion{position:absolute;z-index:600;top:8px;left:8px;background:#ffe8f3ee;color:#713459;
+ border:1px solid #d487ac;border-radius:8px;padding:6px 9px;font:800 11px system-ui,sans-serif;
+ pointer-events:none;box-shadow:0 3px 7px #3920323d}
+</style>
+</head><body>
+<div id="mini-mapa" role="application" aria-label="Vista previa de las 16 alcaldías; selecciona una para ver sus noticias"></div>
+<span class="mini-indicacion">Toca una alcaldía · ver sus noticias</span>
+<script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+(async ()=>{
+ const frame=document.getElementById('mini-mapa');
+ const fallback=()=>{
+  frame.innerHTML='';
+  frame.style.background='center/contain no-repeat url("/mapa/mini.svg?v=20261028"),#f3ede0';
+ };
+ if(!window.L){fallback();return}
+ const L=window.L;
+ const map=L.map('mini-mapa',{zoomControl:false,dragging:false,touchZoom:false,doubleClickZoom:false,
+  scrollWheelZoom:false,boxZoom:false,keyboard:false,preferCanvas:false,zoomSnap:.1,minZoom:7})
+  .setView([19.31,-99.14],9.5);
+ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{
+  maxZoom:19,attribution:'&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">OpenStreetMap</a> contributors'
+ }).addTo(map);
+ try{
+  const response=await fetch('/mapa/alcaldias.geojson?v=20261028');
+  if(!response.ok)throw Error('No se obtuvo el GeoJSON');
+  const data=await response.json();
+  if(data.features?.length!==16)throw Error('Geometría incompleta');
+  const regions=L.geoJSON(data,{
+   style:()=>({color:'#fff',weight:1.7,fillColor:'#f077ad',fillOpacity:.29}),
+   onEachFeature:(feature,layer)=>{
+    const name=feature.properties.nomgeo;
+    layer.bindTooltip(name,{sticky:true,className:'alcaldia-mini'});
+    layer.on('mouseover',()=>{layer.setStyle({color:'#fff',weight:4,fillColor:'#f34e96',fillOpacity:.58});layer.bringToFront()});
+    layer.on('mouseout',()=>regions.resetStyle(layer));
+    layer.on('click',()=>{
+     const slug=name.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
+     const link='/alcaldias/'+slug+'/';
+     window.parent.location.assign(link);
+    });
+   }
+  }).addTo(map);
+  map.fitBounds(regions.getBounds(),{padding:[12,12],maxZoom:11,animate:false});
+  const controls=document.querySelector('.leaflet-control-container');
+  if(controls)controls.style.pointerEvents='none';
+ }catch(error){
+  console.error('Vista previa alcaldías:',error);
+  map.remove();fallback();
+ }
+})();
+</script></body></html>
