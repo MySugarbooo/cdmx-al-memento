@@ -48,7 +48,8 @@ html,body,#mini-mapa{margin:0;width:100%;height:100%;overflow:hidden;background:
     layer.on('mouseover',()=>{layer.setStyle({color:'#fff',weight:4,fillColor:'#f34e96',fillOpacity:.58});layer.bringToFront()});
     layer.on('mouseout',()=>regions.resetStyle(layer));
     layer.on('click',()=>{
-     const link='/alcaldias/?alcaldia='+encodeURIComponent(name)+'#noticias-alcaldia';
+     const slug=name.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
+     const link='/alcaldias/'+slug+'/';
      window.parent.location.assign(link);
     });
    }
