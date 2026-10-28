@@ -49,3 +49,30 @@ La interfaz consulta 100 documentos por página y ofrece **Cargar conversaciones
 - Dejar la página abierta durante nuevas publicaciones y usar **Cargar conversaciones anteriores** varias veces; comprobar que no haya duplicados y que la búsqueda muestre solo contenido cargado.
 
 Si una regla no se ha desplegado, no debe afirmarse que el endurecimiento está activo en producción.
+
+## Asignar cuenta de moderación por correo Google (sin publicar contraseñas)
+
+El correo identifica una cuenta **verificada** en Firebase Authentication; escribirlo públicamente nunca concede privilegios. El rol real se asigna mediante la custom claim firmada `moderator: true`. No compartas contraseñas, tokens ni claves JSON.
+
+Desde **Google Cloud Shell** en el proyecto **cdmx-al-memento**, con permisos administrativos de Firebase Authentication:
+
+```bash
+gcloud config set project cdmx-al-memento
+gcloud auth application-default login
+git clone https://github.com/MySugarbooo/cdmx-al-memento.git
+cd cdmx-al-memento
+npm install --no-save firebase-admin
+node firebase/asignar-moderador.mjs --email CORREO_DE_GOOGLE --grant
+```
+
+El último comando solo **simula**: comprueba que la cuenta Google existe y está verificada. Para conceder el rol tras revisar los resultados:
+
+```bash
+node firebase/asignar-moderador.mjs --email CORREO_DE_GOOGLE --grant --apply
+```
+
+Para revocarlo: `--revoke --apply`. El script mantiene los demás roles existentes. La cuenta debe cerrar su sesión de Mi comunidad y volver a entrar para renovar el token y mostrar el panel privado.
+
+El **correo para recibir alertas** es una función distinta: en la web actual las denuncias se guardan en Firestore y aparecen en el panel de moderación, pero no envían mensajes automáticos. Para notificaciones por email se necesita una función de servidor o proveedor externo y credenciales privadas. No coloques claves de administrador ni contraseñas en el JavaScript público.
+
+Si Cloud Shell da un error de IAM, revisa primero los permisos del proyecto; no descargues ni publiques credenciales de servicio.
