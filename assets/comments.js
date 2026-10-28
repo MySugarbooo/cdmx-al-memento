@@ -92,7 +92,8 @@ function setReply(topic){
 forumCancel?.addEventListener('click',clearReply);
 questionInput?.addEventListener('input',updateLimit);
 textarea?.addEventListener('input',updateLimit);
-root.querySelectorAll('[data-forum-topic]').forEach(button=>button.addEventListener('click',()=>{
+updateLimit();
+document.querySelectorAll('[data-forum-topic]').forEach(button=>button.addEventListener('click',()=>{
  forumQuery=button.dataset.forumTopic.toLocaleLowerCase('es-MX');
  if(forumSearch)forumSearch.value=button.dataset.forumTopic;
  display(currentRows);
