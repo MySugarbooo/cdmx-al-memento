@@ -125,3 +125,31 @@ body.mapa-expandido{overflow:hidden}
 
 .capa-punto.museos{background:#bf92e9}
 .capa-punto.salud{background:#e36981}
+
+
+/* Alcaldías reales: contornos visibles, selección blanca y navegación accesible. */
+.mapa-frame .leaflet-interactive{cursor:pointer}
+.mapa-frame .alcaldia-tooltip{
+ background:#24152fdc;color:#fff8fc;border:1px solid #ffe0f1;border-radius:7px;
+ box-shadow:0 2px 5px #180a2488;padding:2px 4px;font-size:10px;font-weight:800;
+ white-space:nowrap;text-shadow:0 1px 2px #1a1329;pointer-events:none
+}
+.mapa-frame .alcaldia-tooltip::before{display:none}
+.mapa-popup-alcaldia a{display:inline-block;margin-top:8px;padding:9px 12px;border-radius:9px;
+ background:#c64d88;color:white!important;font-size:12px;font-weight:800;text-decoration:none}
+.mapa-alcaldia-info{margin:8px 14px 15px;padding:12px 13px;border:1px solid #bb7eaa;
+ background:#362339;border-radius:12px;color:#f8d9ec;font-size:12px;line-height:1.6}
+.mapa-alcaldia-info strong{display:block;font-size:14px;color:#fff}
+.mapa-alcaldia-info span{display:block;color:#d7c8da}
+.mapa-alcaldia-info a{display:inline-block;margin-top:7px;color:#fff;background:#bc4581;
+ border:1px solid #f7a9d2;border-radius:8px;padding:7px 9px;font-weight:800;text-decoration:none}
+.mapa-alcaldia-info a:hover,.mapa-alcaldia-info a:focus-visible{background:#8b3565}
+.mapa-boroughs{margin:0 13px 15px;border:1px solid #6f5572;border-radius:12px;background:#22253a;padding:10px}
+.mapa-boroughs summary{cursor:pointer;font-size:13px;font-weight:850;color:#ffcee8}
+.mapa-boroughs summary span{font-size:10px;color:#c4b5ce;font-weight:450}
+.mapa-alcaldias-lista{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-top:11px;max-height:190px;overflow:auto}
+.mapa-alcaldias-lista button{min-width:0;border-radius:7px;border:1px solid #6a567c;background:#2d2940;
+ color:#fff8fd;text-align:left;padding:7px;font-size:11px;line-height:1.3;cursor:pointer}
+.mapa-alcaldias-lista button:hover,.mapa-alcaldias-lista button:focus-visible,
+.mapa-alcaldias-lista button[aria-pressed="true"]{border-color:#ffbedf;background:#73355e}
+@media(max-width:750px){.mapa-frame .alcaldia-tooltip{font-size:8px;padding:1px 3px}}
