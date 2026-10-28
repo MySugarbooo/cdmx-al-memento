@@ -476,7 +476,7 @@ def generate_report():
         "politica-editorial.html", "creditos-fotograficos.html",
         "guias/", "reportes/", "archivo/", "alcaldias/", "mapa/",
         "cerca/", "movilidad/", "avisos/", "cdmx/", "seguridad/", "servicios/", "fotografias/",
-        "noticias/", "descubre/", "agenda/", "negocios/", "herramientas/", "publicidad/", "herramientas/calendario-laboral.html",
+        "noticias/", "descubre/", "agenda/", "negocios/", "herramientas/", "publicidad/", "comunidad/", "herramientas/calendario-laboral.html",
     ]
     urls += [
         "guias/" + name for name in (
@@ -484,6 +484,8 @@ def generate_report():
             "cierres-viales.html", "tramites-cdmx.html"
         )
     ]
+    urls += ["alcaldias/" + p.name + "/" for p in sorted((ROOT / "alcaldias").iterdir())
+             if p.is_dir() and (p / "index.html").is_file()]
     urls += ["descubre/" + p.name for p in sorted((ROOT / "descubre").glob("*.html")) if p.name != "index.html"]
     urls += ["reportes/" + p.name for p in sorted(REPORT_DIR.glob("????-??-??.html"))]
     (ROOT / "sitemap.xml").write_text(
