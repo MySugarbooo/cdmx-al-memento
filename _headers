@@ -10,3 +10,48 @@
   Cache-Control: no-cache, must-revalidate
 /mapa/preview.html
   Cache-Control: no-cache, must-revalidate
+
+/comunidad/
+  Cache-Control: no-cache, must-revalidate
+
+/comunidad/index.html
+  Cache-Control: no-cache, must-revalidate
+
+/alcaldias/
+  Cache-Control: no-cache, must-revalidate
+
+/alcaldias/index.html
+  Cache-Control: no-cache, must-revalidate
+
+/alcaldias/*
+  Cache-Control: no-cache, must-revalidate
+
+/archivo/
+  Cache-Control: no-cache, must-revalidate
+
+/archivo/index.html
+  Cache-Control: no-cache, must-revalidate
+
+/noticias/
+  Cache-Control: no-cache, must-revalidate
+
+/noticias/index.html
+  Cache-Control: no-cache, must-revalidate
+
+/seguridad/
+  Cache-Control: no-cache, must-revalidate
+
+/seguridad/index.html
+  Cache-Control: no-cache, must-revalidate
+
+/servicios/
+  Cache-Control: no-cache, must-revalidate
+
+/servicios/index.html
+  Cache-Control: no-cache, must-revalidate
+
+/reportes/
+  Cache-Control: no-cache, must-revalidate
+
+/reportes/index.html
+  Cache-Control: no-cache, must-revalidate
