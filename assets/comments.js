@@ -182,6 +182,16 @@ function renderMerged(){
   return bb-aa;
  });
  display(rows);
+ if(isCommunity&&window.location.hash.startsWith('#post-')){
+  const postId=window.location.hash.slice(1);
+  if(/^post-[a-zA-Z0-9]{20}$/.test(postId)){
+   const target=document.getElementById(postId);
+   if(target&&!target.dataset.hashVisited){
+    target.dataset.hashVisited='1';
+    requestAnimationFrame(()=>target.scrollIntoView({block:'center',behavior:'auto'}));
+   }
+  }
+ }
  if(moreButton){moreButton.hidden=!isCommunity||!hasMore;moreButton.disabled=loadingOlder;moreButton.textContent=loadingOlder?'Cargando…':'Cargar conversaciones anteriores'}
  if(forumNotice)forumNotice.textContent='Búsqueda y contadores sobre '+rows.length+' mensajes cargados. Puedes cargar conversaciones anteriores.';
 }
