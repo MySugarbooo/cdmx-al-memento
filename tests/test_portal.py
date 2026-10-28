@@ -1,4 +1,5 @@
 """Regresiones para el portal de alcaldías, noticias y movilidad."""
+import json
 import re
 import unittest
 from pathlib import Path
