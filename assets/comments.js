@@ -40,6 +40,12 @@ const collection=isCommunity?fs.collection(db,'community','main','comments'):fs.
 // Formato: [FORO:PREGUNTA] título\\ncontenido o [FORO:RESPUESTA:ID] contenido.
 const questionPrefix='[FORO:PREGUNTA] ',replyPrefix='[FORO:RESPUESTA:';
 let currentRows=[],activeQuestion=null,forumFilter='all',forumQuery='';
+let liveRows=[],olderRows=new Map(),pageCursor=null,hasMore=false,loadingOlder=false;
+const PAGE_SIZE=isCommunity?100:50;
+const moreButton=document.getElementById('forum-load-more');
+const forumNotice=document.getElementById('forum-search-note');
+const editorLabel=document.querySelector('label[for="forum-question-title"]');
+let previousSend=0;
 const questionInput=document.getElementById('forum-question-title');
 const forumFeed=document.getElementById('forum-topics');
 const forumSearch=document.getElementById('forum-search');
@@ -47,9 +53,56 @@ const forumSort=document.getElementById('forum-sort');
 const forumHeading=document.getElementById('forum-editor-heading');
 const forumCancel=document.getElementById('forum-cancel-reply');
 function decode(row){const c=row.data();const raw=String(c.text||'');const isQuestion=raw.startsWith(questionPrefix);const reply=raw.match(/^\[FORO:RESPUESTA:([a-zA-Z0-9]{8,40})\] /);const body=isQuestion?raw.slice(questionPrefix.length):reply?raw.slice(reply[0].length):raw;const newline=body.indexOf('\n');return {row,id:row.id,c,kind:isQuestion?'question':reply?'reply':'legacy',parent:reply?reply[1]:null,title:isQuestion?(newline<0?body:body.slice(0,newline)).trim().slice(0,110):'',body:isQuestion?(newline<0?'':body.slice(newline+1)):body};}
-function clearReply(){activeQuestion=null;if(questionInput)questionInput.hidden=false;if(forumHeading)forumHeading.textContent='Haz una pregunta a la comunidad';if(forumCancel)forumCancel.hidden=true;if(textarea)textarea.placeholder='Explica tu pregunta o comparte un detalle que ayude a otros a responder…';}
-function setReply(topic){activeQuestion=topic;if(questionInput)questionInput.hidden=true;if(forumHeading)forumHeading.textContent='Responder a: '+topic.title;if(forumCancel)forumCancel.hidden=false;if(textarea){textarea.value='';textarea.placeholder='Escribe una respuesta útil y respetuosa…';}editor.hidden=!user;editor.scrollIntoView({block:'center',behavior:'smooth'});textarea?.focus();if(!user)status.textContent='Inicia sesión con Google para responder a esta pregunta.';}
+function updateLimit(){
+ if(!isCommunity||!textarea)return;
+ const prefix=activeQuestion?replyPrefix+activeQuestion.id+'] ':questionPrefix+(questionInput?.value.trim()||'')+'\n';
+ const available=Math.max(2,1000-prefix.length);
+ textarea.maxLength=available;
+ const counter=document.getElementById('forum-length');
+ if(counter)counter.textContent=textarea.value.length+' / '+available+' caracteres para este mensaje';
+}
+function clearReply(){
+ activeQuestion=null;
+ if(questionInput)questionInput.hidden=false;
+ if(editorLabel)editorLabel.hidden=false;
+ if(forumHeading)forumHeading.textContent='Haz una pregunta a la comunidad';
+ if(forumCancel)forumCancel.hidden=true;
+ if(textarea)textarea.placeholder='Explica tu pregunta o comparte un detalle que ayude a otros a responder…';
+ updateLimit();
+}
+function promptSignIn(){
+ status.textContent='Inicia sesión con Google para publicar o responder.';
+ document.getElementById('cdmx-comments-login')?.scrollIntoView({block:'center',behavior:'smooth'});
+ google?.focus();
+}
+
+function setReply(topic){
+ activeQuestion=topic;
+ if(questionInput)questionInput.hidden=true;
+ if(editorLabel)editorLabel.hidden=true;
+ if(forumHeading)forumHeading.textContent='Responder a: '+topic.title;
+ if(forumCancel)forumCancel.hidden=false;
+ if(textarea){textarea.value='';textarea.placeholder='Escribe una respuesta útil y respetuosa…';}
+ updateLimit();
+ editor.hidden=!user;
+ if(!user){promptSignIn();return;}
+ editor.scrollIntoView({block:'center',behavior:'smooth'});
+ textarea?.focus();
+}
 forumCancel?.addEventListener('click',clearReply);
+questionInput?.addEventListener('input',updateLimit);
+textarea?.addEventListener('input',updateLimit);
+root.querySelectorAll('[data-forum-topic]').forEach(button=>button.addEventListener('click',()=>{
+ forumQuery=button.dataset.forumTopic.toLocaleLowerCase('es-MX');
+ if(forumSearch)forumSearch.value=button.dataset.forumTopic;
+ display(currentRows);
+ document.getElementById('forum-search')?.scrollIntoView({block:'center',behavior:'smooth'});
+}));
+document.querySelectorAll('[data-open-forum-editor]').forEach(link=>link.addEventListener('click',event=>{
+ event.preventDefault();
+ if(!user){promptSignIn();return;}
+ editor.hidden=false;editor.scrollIntoView({block:'center',behavior:'smooth'});questionInput?.focus();
+}));
 forumSearch?.addEventListener('input',()=>{forumQuery=forumSearch.value.trim().toLocaleLowerCase('es-MX');display(currentRows)});
 forumSort?.addEventListener('change',()=>display(currentRows));
 root.querySelectorAll('[data-forum-filter]').forEach(b=>b.addEventListener('click',()=>{forumFilter=b.dataset.forumFilter;root.querySelectorAll('[data-forum-filter]').forEach(x=>{x.classList.toggle('active',x===b);x.setAttribute('aria-pressed',String(x===b))});display(currentRows)}));
