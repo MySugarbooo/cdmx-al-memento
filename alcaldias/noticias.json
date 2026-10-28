@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-28 22:51 UTC",
+  "updated": "2026-10-28 23:48 UTC",
   "boroughs": [
     {
       "name": "La Magdalena Contreras",
@@ -2055,8 +2055,92 @@
     },
     {
       "name": "Coyoacán",
-      "count": 80,
+      "count": 83,
       "articles": [
+        {
+          "title": "Coyoacán inaugura ofrenda monumental a Frida Kahlo, Juan Rulfo y otros creadores",
+          "description": "La información publicada por Capital CDMX trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE03amlsUEdBWEhnZlp4ZFRFX3ZOLUkxay1qbUUwN05oOTFpSnR5WFRkc2xzSHZZWDFFT0s5ZEN3UGRRTkFTVFkyb3V1UU9adl9VUEl3M1M4RW9uZFhpQ1lRb1JXQzNyWjFaQkJmakVqR3JVQlhmMS1HYzBGcWRQQQ?oc=5",
+          "source": "Capital CDMX",
+          "date": "2026-10-28",
+          "published_at": "2026-10-28T23:33:50Z",
+          "category": "CDMX",
+          "borough": "Coyoacán",
+          "location": "Coyoacán (mencionada en el titular)",
+          "local_url": "/noticias/?id=2ba8d61cde1ab5eb74e7&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por Capital CDMX trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_coyoacan",
+            "url": "/assets/alcaldias/coyoacan.jpg",
+            "category": "CDMX",
+            "borough": "Coyoacán",
+            "topic": "Jardín Centenario de Coyoacán",
+            "author": "AlejandroLinaresGarcia",
+            "license": "CC BY-SA 4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:JardinCentenarioCoyoacan.JPG"
+          }
+        },
+        {
+          "title": "«coyoacanenses mas vivos que nunca”: una ofrenda a la memoria cultural de Coyoacán",
+          "description": "La información publicada por CDMX Magacín trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQNDQyRXRfMV9wdjFzLVFOLUR6cGZKUHByem1KVWxhaGJseUlCSnBFRVlwUlVkMzNzSWp2T051ang5V2pZSlNpOG5fR3JlamdnOC1qUlFNZ3hnYV9FWU5ESTVNeHJrX2p2UmlCclg3T2YtWkNmTG4tMTF1LVI0TUVoLTR6Y3c1NmNfSzlxY1RKR1RIeXl4UnV4SlpUTENIYlE?oc=5",
+          "source": "CDMX Magacín",
+          "date": "2026-10-28",
+          "published_at": "2026-10-28T22:57:09Z",
+          "category": "CDMX",
+          "borough": "Coyoacán",
+          "location": "Coyoacán (mencionada en el titular)",
+          "local_url": "/noticias/?id=30444760419f4354beca&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por CDMX Magacín trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "archivo_cdmx_014",
+            "url": "/assets/fotos/archivo_cdmx_014.jpg",
+            "category": "CDMX",
+            "borough": "",
+            "topic": "Cathedral (155478679)",
+            "author": "Francisco Donaldo Cabrera Cruz",
+            "license": "CC BY-SA 3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Cathedral_%28155478679%29.jpeg"
+          }
+        },
+        {
+          "title": "Coyoacán: inauguran ofrenda monumental en homenaje a Frida Kahlo y otros artistas",
+          "description": "La información publicada por MVS Noticias trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNb3VzS1F6eld3YjYzV1hjdl90NWxoU3R5QzR2WWNNRlhLTlYzcFR3Y19nR2VWOHBuMl9FZkJxTm8zYmtXNzNINjdSOGVZbW9HNWJuc05YSS1ENFVXZU1uRXNSeGxHVmtheE9ZbkM5bTBReDdqakRsS1UwYUUtZ2dGamtaQ2RFbFFtVGh2ZTVjTkMybWIyWENFV0sxUGM5cmdTbzhDeVJ3UlhUdDZEUjJlT2tzZUN1a2toU2daOTFHVm92U1dlQm5KQTBOWUlWUkpuaXJ4bklQU3k?oc=5",
+          "source": "MVS Noticias",
+          "date": "2026-10-28",
+          "published_at": "2026-10-28T22:53:38Z",
+          "category": "CDMX",
+          "borough": "Coyoacán",
+          "location": "Coyoacán (mencionada en el titular)",
+          "local_url": "/noticias/?id=fd8bceaeb9a85c000d89&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por MVS Noticias trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "archivo_cdmx_019",
+            "url": "/assets/fotos/archivo_cdmx_019.jpg",
+            "category": "CDMX",
+            "borough": "",
+            "topic": "El Paraguas (126505121)",
+            "author": "Octavio Alonso Maya Castro",
+            "license": "CC BY-SA 3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:El_Paraguas_%28126505121%29.jpeg"
+          }
+        },
         {
           "title": "Desfile de catrinas en Coyoacán 2026 ya tiene fecha y esto debes saber para asistir",
           "description": "La información publicada por PostaMx trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -2490,60 +2574,6 @@
           "local_url": "/noticias/?id=0d8e0aac2da5dcbcc6a0&mes=2026-10",
           "brief": {
             "lead": "El pronóstico recogido por El Heraldo de México se refiere a lluvias ligeras en Coyoacán. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
-        },
-        {
-          "title": "Coyoacán festeja en sus barrios el segundo Festival Internacional de Danza Folclórica",
-          "description": "La información publicada por El Heraldo de México trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQZTNfb3pFblhrNzV0aGxrZm15WFJleVYwTk9pYkZSaUlmUWRrWWZQYS12d1Y1QnlVdkRiZXBWQ2REU2gxYUg1RGxVam1pYlcyQ2h1RFAySVVSeGUwS2k2UmtEeUYxLTZtU0JTUzh3bG9ySTBmRE4wN2ZKT0R6T3lHN1FWdlNtSUdycWs1UjJuRmREVURBN1QyNU9lRzh4NXBfejFlLWFJMjNFUUJIT25PejJZX3BDSXp3bnROTVJ3ekZqMzRzc3NBSm5qek53RlJoTUxtMjFLSWQ3LTZTSk1tbDVB?oc=5",
-          "source": "El Heraldo de México",
-          "date": "2026-10-21",
-          "published_at": "2026-10-22T00:59:00Z",
-          "category": "CDMX",
-          "borough": "Coyoacán",
-          "location": "Coyoacán (mencionada en el titular)",
-          "local_url": "/noticias/?id=f6c6ae5ce2eb07f83a55&mes=2026-10",
-          "brief": {
-            "lead": "La información publicada por El Heraldo de México trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
-        },
-        {
-          "title": "Llega el Astroconcierto de Super Flumina a Coyoacán",
-          "description": "El medio Robotto.mx presenta conciertos o actividades musicales anunciadas en Ciudad de México. La programación, disponibilidad y costos pueden cambiar; comprueba los datos del organizador.",
-          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNVDQzTl9QSll1SzI4bEE5b2MxVmRiWEc0ZEFPNktXYW1iSTFpdXRhcnF1aDhqWVJ6THBDSGloazYzSDBpWWdjUkp3X0M3V1FMYjUyRzAtQWpPY1hud09hRVpaZEw3TWtSRTRzWEwwWlFFMUx0bEdpRXRjaXQ4eV9hOS02ejA5YVAxa0o0Z0lpRGs?oc=5",
-          "source": "Robotto.mx",
-          "date": "2026-10-21",
-          "published_at": "2026-10-22T00:43:07Z",
-          "category": "CDMX",
-          "borough": "Coyoacán",
-          "location": "Coyoacán (mencionada en el titular)",
-          "local_url": "/noticias/?id=3d93611d64683fd25b8d&mes=2026-10",
-          "brief": {
-            "lead": "El medio Robotto.mx presenta conciertos o actividades musicales anunciadas en Ciudad de México. La programación, disponibilidad y costos pueden cambiar; comprueba los datos del organizador.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
-        },
-        {
-          "title": "Comerciante interviene para detener agresión en calles de Coyoacán",
-          "description": "La información publicada por Telediario trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQZDJkX2xEaWtDeUhzM2hxV2lybDlsU21QOWRYbEF6aU1kanJHSkZkVG9HV1QxNERzdEQxejh3QU9FckJoX050Nk5JWUNNczFWMkFlQ25lcHBoYmpJYVZ2YW1LVTlFYlg2R3djWVpVY3lhUy1ldXhWd3hRZTd6Ql80ZDJNWnprVmZuVzdNTThSTmZ0REptbXJJMHlBWWbSAZwBQVVfeXFMUGQyZF9sRGlrQ3lIczNocVdpcmw5bFNtUDlkWGxBemlNZGpyR0pGZFRvR1dUMTREc3REMXo4d0FPRXJCaF9OdDZOSVlDTXMxVjJBZUNuZXBwaGJqSWFWdmFtS1U5RWJYNkd3Y1laVWN5YVMtZXV4Vnd4UWU3ekJfNGQyTVp6a1Zmblc3TU04Uk5mdERKbW1ySTB5QVlm?oc=5",
-          "source": "Telediario",
-          "date": "2026-10-21",
-          "published_at": "2026-10-21T20:29:07Z",
-          "category": "CDMX",
-          "borough": "Coyoacán",
-          "location": "Coyoacán (mencionada en el titular)",
-          "local_url": "/noticias/?id=7333c4e9681b4e331b8f&mes=2026-10",
-          "brief": {
-            "lead": "La información publicada por Telediario trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
@@ -6123,8 +6153,36 @@
     },
     {
       "name": "Tláhuac",
-      "count": 83,
+      "count": 84,
       "articles": [
+        {
+          "title": "Habrá Ley seca por Día de Muertos en la Alcaldía Tláhuac: Estas son las fechas y zonas donde no se venderá alcohol",
+          "description": "La información publicada por Expansión Política trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOUzlhWVFGNW84bGI0WkRCNUVFdERBMUpWVXBudzJDZFcwYlFfZGJ1dnd3RG1tajU4b2hGaHZJR05QWVIxaFpyZTJaOF9hM0lSRXJFZEc4TGVubUhfZndpQ01aYXRzNDk3N0UtNGZETFhfYU1qaHZITlR6Z2s5LUpFODRLVFpKdTVtMTNVWl9tMHk0TGJ1Y2JHSGRoMXV4M0JiT2J6a0c5ZkjSAbYBQVVfeXFMT2VHX2JMVENDUF9BbmstVHM3N1RxMmFnV01FbXNkNXIzNEVSRExfZ1BHWFhrbHEway1YNWpIcm95Y2F1RzZwenpWWEhpVTJiSzdUTHZBT0plYlN5UDZRcXM0N3l5Z0llcWt0VWYxQXpaTVZFUzAxR205eVBJZ2dEVWYyRGxjSUpuQWZVY2JkT1BkRHhrcXNkLUFzNUtxbWRxa1VqMEsxWmtfRm0xTS04bHVZM0VWRlE?oc=5",
+          "source": "Expansión Política",
+          "date": "2026-10-28",
+          "published_at": "2026-10-28T22:46:00Z",
+          "category": "CDMX",
+          "borough": "Tláhuac",
+          "location": "Tláhuac (mencionada en el titular)",
+          "local_url": "/noticias/?id=34d92557b4bf111cb839&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por Expansión Política trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_tlahuac",
+            "url": "/assets/alcaldias/tlahuac.jpg",
+            "category": "CDMX",
+            "borough": "Tláhuac",
+            "topic": "Plaza central de San Pedro Tláhuac",
+            "author": "Yavidaxiu",
+            "license": "CC BY 3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Tl%C3%A1huac-Plaza_central.JPG"
+          }
+        },
         {
           "title": "Daniel mantiene viva la tradición del Día de Muertos en Tláhuac",
           "description": "La información publicada por El Universal trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -6634,24 +6692,6 @@
           "local_url": "/noticias/?id=0869ade014392712d0b3&mes=2026-10",
           "brief": {
             "lead": "La información publicada por Milenio trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
-        },
-        {
-          "title": "Día de Muertos en Tláhuac 2026: Emmanuel, La Sonora Dinamita y Cadetes de Linares darán conciertos gratis",
-          "description": "El medio Maya Comunicación presenta conciertos o actividades musicales anunciadas en Ciudad de México. La programación, disponibilidad y costos pueden cambiar; comprueba los datos del organizador.",
-          "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOdkZTWTZBN1k5cEMya2Z2ODVMQTVZdk5lbVJhRjhjeEh3aFhxSV83cWFPSTdLTDZoaHBxazlPVzNyMUF5NlN3dEZ4UGt5cWNjT2hBOHlrdjJ6a3ZhWTBra0c2QU11TVJzbXNUOXRnNTAxaWxXS2RxWUszdFYwdjVlaVYwZ09qUGMydnFNMDIxN1owNFBHZkFZTjQtX1Z4ZGY4RlhGaEhVMmNKY2IzX3MtS0JsVDh3VTN5NXNIUGJvcWR6QS1WOU9pYThZODRNRWdvTWc?oc=5",
-          "source": "Maya Comunicación",
-          "date": "2026-10-21",
-          "published_at": "2026-10-22T01:14:29Z",
-          "category": "CDMX",
-          "borough": "Tláhuac",
-          "location": "Tláhuac (mencionada en el titular)",
-          "local_url": "/noticias/?id=024e5899f612ce05d728&mes=2026-10",
-          "brief": {
-            "lead": "El medio Maya Comunicación presenta conciertos o actividades musicales anunciadas en Ciudad de México. La programación, disponibilidad y costos pueden cambiar; comprueba los datos del organizador.",
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
