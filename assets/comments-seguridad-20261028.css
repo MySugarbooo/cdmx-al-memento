@@ -56,3 +56,13 @@
 .cdmx-comments .forum-editor label[hidden],.cdmx-comments .forum-editor input[hidden]{display:none!important}
 @media(max-width:900px){.community-sidebar .forum-quick-topics{flex-direction:row;flex-wrap:wrap}.community-sidebar .forum-quick-topics button{width:auto;padding:7px 10px;font-size:12px}}
 @media(max-width:600px){.cdmx-comments .forum-report-editor select{max-width:100%;width:100%}.cdmx-comments .forum-report-editor{width:100%}.cdmx-comments .forum-moderator-panel li{align-items:stretch}}
+
+/* Foro v8: mensajes de validación junto al editor y visibilidad accesible. */
+.cdmx-comments .forum-editor[hidden],.cdmx-comments .forum-editor [hidden]{display:none!important}
+.cdmx-comments .forum-editor-feedback{font-size:.91rem;line-height:1.5;white-space:normal;margin:0;color:#d5d0df;min-height:1em}
+.cdmx-comments .forum-editor-feedback:empty{display:none}
+.cdmx-comments .forum-editor-feedback[data-type=error]{color:#ffc6c6}
+.cdmx-comments .forum-editor-feedback[data-type=warning]{color:#ffe3a8}
+.cdmx-comments .forum-editor-feedback[data-type=success]{color:#bcf2d0}
+.cdmx-comments #forum-title-help{display:block;color:#ffc5de;font-size:.84rem;line-height:1.45}
+.cdmx-comments #forum-title-help[hidden]{display:none!important}
