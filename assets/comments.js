@@ -45,6 +45,7 @@ const PAGE_SIZE=isCommunity?100:50;
 const moreButton=document.getElementById('forum-load-more');
 const forumNotice=document.getElementById('forum-search-note');
 const editorLabel=document.querySelector('label[for="forum-question-title"]');
+const titleHelp=document.getElementById('forum-title-help');
 const composerFeedback=document.getElementById('forum-editor-feedback');
 function showComposerFeedback(message,type='info'){
  if(composerFeedback){composerFeedback.textContent=message;composerFeedback.dataset.type=type;}
@@ -73,6 +74,7 @@ function clearReply(){
  activeQuestion=null;
  if(questionInput)questionInput.hidden=false;
  if(editorLabel)editorLabel.hidden=false;
+ if(titleHelp)titleHelp.hidden=false;
  if(forumHeading)forumHeading.textContent='Haz una pregunta a la comunidad';
  if(forumCancel)forumCancel.hidden=true;
  if(textarea)textarea.placeholder='Explica tu pregunta o comparte un detalle que ayude a otros a responder…';
@@ -88,6 +90,7 @@ function setReply(topic){
  activeQuestion=topic;
  if(questionInput)questionInput.hidden=true;
  if(editorLabel)editorLabel.hidden=true;
+ if(titleHelp)titleHelp.hidden=true;
  if(forumHeading)forumHeading.textContent='Responder a: '+topic.title;
  if(forumCancel)forumCancel.hidden=false;
  if(textarea){textarea.value='';textarea.placeholder='Escribe una respuesta útil y respetuosa…';}
