@@ -58,7 +58,9 @@ Desde **Google Cloud Shell** en el proyecto **cdmx-al-memento**, con permisos ad
 
 ```bash
 gcloud config set project cdmx-al-memento
-gcloud auth application-default login
+# Usa credenciales temporales de una cuenta de servicio autorizada.
+# Sustituye SERVICE_ACCOUNT_EMAIL por el correo real de tu cuenta de servicio de Firebase.
+gcloud auth application-default login --impersonate-service-account=SERVICE_ACCOUNT_EMAIL
 git clone https://github.com/MySugarbooo/cdmx-al-memento.git
 cd cdmx-al-memento
 npm install --no-save firebase-admin
@@ -75,4 +77,4 @@ Para revocarlo: `--revoke --apply`. El script mantiene los demás roles existent
 
 El **correo para recibir alertas** es una función distinta: en la web actual las denuncias se guardan en Firestore y aparecen en el panel de moderación, pero no envían mensajes automáticos. Para notificaciones por email se necesita una función de servidor o proveedor externo y credenciales privadas. No coloques claves de administrador ni contraseñas en el JavaScript público.
 
-Si Cloud Shell da un error de IAM, revisa primero los permisos del proyecto; no descargues ni publiques credenciales de servicio.
+**Importante:** Firebase Authentication no acepta las credenciales de usuario predeterminadas del cliente OAuth de gcloud para el Admin SDK. Por eso el ejemplo usa suplantación temporal de una cuenta de servicio (service account impersonation), no una clave JSON. La cuenta de Google que ejecuta el comando necesita el permiso IAM **Service Account Token Creator**, y la cuenta de servicio seleccionada necesita permisos de administración de Firebase Authentication. Puedes encontrar la cuenta de servicio en Firebase Console → Configuración del proyecto → Cuentas de servicio. Si falla por IAM, revisa esos permisos antes de seguir. No descargues ni publiques credenciales de servicio.
