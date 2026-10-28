@@ -114,16 +114,23 @@ class PortalTests(unittest.TestCase):
         self.assertIn('911', alerts)
         self.assertIn('no es un sistema de alarma', alerts)
 
-    def test_map_has_categories_and_points_without_emergency_claims(self):
+    def test_map_has_verified_boroughs_nature_and_museums_without_emergency_claims(self):
         page = get('mapa/index.html')
         js = get('mapa/mapa.js')
-        for mode in ('museos', 'salud', 'naturaleza', 'monumentos'):
+        geojson = json.loads(get('mapa/alcaldias.geojson'))
+        self.assertEqual(len(geojson['features']), 16)
+        self.assertEqual(len({feature['properties']['nomgeo'] for feature in geojson['features']}), 16)
+        for mode in ('museos', 'naturaleza'):
             self.assertIn('value="' + mode + '"', page)
-        for place in ('museo-antropologia', 'templo-mayor', 'hospital-general', 'bosque-chapultepec'):
+            self.assertIn(mode + ':L.layerGroup().addTo(map)', js)
+        for removed in ('value="salud"', 'value="metro"', 'value="monumentos"'):
+            self.assertNotIn(removed, page)
+        for place in ('museo-antropologia', 'bosque-chapultepec', 'los-dinamos'):
             self.assertIn("id:'" + place + "'", js)
-        self.assertIn('layerMuseums=L.layerGroup().addTo(map)', js)
-        self.assertIn('layerHealth=L.layerGroup()', js)
-        self.assertIn('no informan capacidad, urgencias', page)
+        self.assertIn('/mapa/alcaldias.geojson?v=', js)
+        self.assertIn("layer.on('mouseover'", js)
+        self.assertIn("window.location.assign(urlFor(name))", js)
+        self.assertNotIn('hospital-general', js)
 
     def test_sitemap_and_automatic_checks(self):
         python = get('update_news.py')
