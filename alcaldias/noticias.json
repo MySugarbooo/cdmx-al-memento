@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-28 19:20 UTC",
+  "updated": "2026-10-28 19:21 UTC",
   "boroughs": [
     {
       "name": "La Magdalena Contreras",
@@ -1507,7 +1507,7 @@
     },
     {
       "name": "Benito Juárez",
-      "count": 88,
+      "count": 89,
       "articles": [
         {
           "title": "Alcaldía Benito Juárez atiende más de 45 encharcamientos tras intensas lluvias",
@@ -1563,6 +1563,24 @@
             "author": "Comisión Mexicana de Filmaciones from México D. F., México",
             "license": "CC BY-SA 2.0",
             "source": "https://commons.wikimedia.org/wiki/File:Villa_Milpa_Alta%2C_Ciudad_de_M%C3%A9xico_%2832886264042%29.jpg"
+          }
+        },
+        {
+          "title": "Pega lluvia fuerte en la Benito Juárez",
+          "description": "El pronóstico recogido por Reforma se refiere a lluvias en Benito Juárez. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
+          "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5faGZVTTRtM2l5VXh2MlR5WmtjMDdZNDZ5SExZVGx4OV85NEtMSzJlRTg1eXFGVGNMY2FjRk1LNDFSLWVSSFVvLTY1N01GbUkzMDV6WWltbi1GZEEyeXoyaWNSNVBFT0xXLVA4V3lHd0pHb1M2ZlpSZm8welY?oc=5",
+          "source": "Reforma",
+          "date": "2026-10-27",
+          "published_at": "2026-10-28T04:18:45Z",
+          "category": "CDMX",
+          "borough": "Benito Juárez",
+          "location": "Benito Juárez (mencionada en el titular)",
+          "local_url": "/noticias/?id=7d3c78a9aa669365016c&mes=2026-10",
+          "brief": {
+            "lead": "El pronóstico recogido por Reforma se refiere a lluvias en Benito Juárez. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           }
         },
         {
@@ -1978,24 +1996,6 @@
           "local_url": "/noticias/?id=b0a4509a4fbdce7c6238&mes=2026-10",
           "brief": {
             "lead": "La información publicada por Capital CDMX trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
-        },
-        {
-          "title": "Benito Juárez, segunda con menor inseguridad en México",
-          "description": "La información publicada por infopoder trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQbjRKbG1YMEM4aDMtNVlrSHJGUHIyUEt4VXpxRW1ORlV5OG5IYzJEb0s5ZkpleFJXSm5TZ3ViNG1iSHVvelJwMDE2ekoyWGhPaHpvUGtxVE1ub0F4X1JIOWY2bkNzOXpaaWlfd3J0TzNmODFQLUtNTEJpR3FJcklrenhpWXdLbngtanFzdTJJTzJ6UzdjREdCMEg5WWN6Q0U?oc=5",
-          "source": "infopoder",
-          "date": "2026-10-23",
-          "published_at": "2026-10-23T22:52:25Z",
-          "category": "CDMX",
-          "borough": "Benito Juárez",
-          "location": "Benito Juárez (mencionada en el titular)",
-          "local_url": "/noticias/?id=4f7e0c08b8a32f370524&mes=2026-10",
-          "brief": {
-            "lead": "La información publicada por infopoder trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
