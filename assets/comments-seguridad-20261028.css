@@ -66,3 +66,8 @@
 .cdmx-comments .forum-editor-feedback[data-type=success]{color:#bcf2d0}
 .cdmx-comments #forum-title-help{display:block;color:#ffc5de;font-size:.84rem;line-height:1.45}
 .cdmx-comments #forum-title-help[hidden]{display:none!important}
+
+/* Foro v9: contraste del menu nativo de motivos en navegadores oscuros (Brave/macOS). */
+.cdmx-comments .forum-report-editor select{color-scheme:light!important;background-color:#fff!important;color:#17141c!important;-webkit-text-fill-color:#17141c!important}
+.cdmx-comments .forum-report-editor select option{background-color:#fff!important;color:#17141c!important;-webkit-text-fill-color:#17141c!important}
+.cdmx-comments .forum-report-editor select:focus-visible{outline:3px solid #f6a3d1;outline-offset:2px}
