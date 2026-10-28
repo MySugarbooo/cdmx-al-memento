@@ -33,3 +33,26 @@
 /* Foro CDMX: preguntas, hilos y búsqueda */
 .forum-intro{color:#e9d8e7}.forum-toolbar{display:grid;grid-template-columns:minmax(0,2fr) minmax(130px,1fr);gap:12px;margin:20px 0 12px}.forum-toolbar label,.forum-editor label{display:grid;gap:6px;color:#ffd2e8;font-size:.92rem;font-weight:700}.forum-toolbar input,.forum-toolbar select,.forum-editor input{width:100%;min-width:0;box-sizing:border-box;padding:12px;border-radius:12px;border:1px solid #b37a9d;background:#fff;color:#17141c;font:inherit}.forum-filters{display:flex;gap:6px;flex-wrap:wrap}.cdmx-comments .forum-filters button{background:#2d293e;border-color:#886384;font-size:.83rem;padding:8px 13px;border-radius:999px}.cdmx-comments .forum-filters button.active{background:#ba367b;border-color:#f5b1d7}.forum-count{color:#e4b4d2;font-size:.9rem}.forum-editor{margin:18px 0;padding:18px;border:1px solid #b56e9b;border-radius:18px;background:#292237;display:grid;gap:12px}.forum-editor h3{margin:0;color:#ffb9dc}.forum-topic-head{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:12px}.forum-topic-badge{background:#a72d76;color:white;padding:5px 11px;border-radius:999px;font-size:.77rem;font-weight:800}.forum-reply-count{color:#dcc4d8;font-size:.84rem}.cdmx-comments-list .forum-topic-title{font-size:clamp(1.12rem,2.6vw,1.4rem);line-height:1.35;color:#fff;margin:8px 0 16px}.cdmx-comments-list .forum-topic-body{margin:15px 0 10px;white-space:pre-wrap}.forum-actions{display:flex;flex-wrap:wrap;gap:8px;align-items:center}.forum-thread{border-left:3px solid #d46aab;margin:18px 0 0 12px;padding:0 0 0 16px;display:grid;gap:12px}.forum-answer{padding:14px;border-radius:14px;background:#1b1c2e;border:1px solid #55435d}.forum-answer .community-avatar{width:38px;height:38px;flex-basis:38px;font-size:1rem}.forum-answer p{margin:10px 0!important}.cdmx-comments .forum-delete{font-size:.77rem;padding:6px 10px}.cdmx-comments-list .forum-empty{color:#ffdfed;text-align:center}.forum-topic:target{outline:2px solid #ffb1d5}
 @media(max-width:600px){.forum-toolbar{grid-template-columns:1fr}.forum-editor{padding:12px}.forum-thread{margin-left:2px;padding-left:9px}.forum-answer{padding:10px}}
+
+/* Foro v7 · Seguridad, reportes y navegación  */
+.cdmx-comments .forum-report-wrap{display:inline-flex;flex-direction:column;gap:7px;align-items:flex-start;max-width:100%}
+.cdmx-comments .forum-report{background:transparent;border-color:#987e9b;color:#ffe2f0;font-size:.8rem;padding:6px 10px}
+.cdmx-comments .forum-report-editor[hidden],.forum-moderator-panel[hidden]{display:none!important}
+.cdmx-comments .forum-report-editor{display:flex;gap:7px;align-items:center;flex-wrap:wrap;padding:10px;border-radius:10px;background:#211b2e;border:1px solid #765572}
+.cdmx-comments .forum-report-editor select{max-width:200px;min-width:155px;padding:8px 10px;border-radius:8px;border:1px solid #9a7596;background:#fff;color:#222;font:inherit;font-size:13px}
+.cdmx-comments .forum-report-editor button{font-size:12px;padding:8px 10px;margin:0}
+.cdmx-comments .forum-load-more{display:block;margin:18px auto 24px!important;padding:12px 20px!important;background:#b7377c;border-radius:999px}
+.cdmx-comments .forum-load-more[hidden]{display:none!important}
+.cdmx-comments .forum-search-note{font-size:.78rem;color:#d6c4d1;margin:2px 0 14px}
+.community-sidebar .forum-quick-topics{display:flex;flex-direction:column;gap:5px}
+.community-sidebar .forum-quick-topics button{width:100%;display:block;border:0;background:transparent;color:#f8e7f0;text-align:left;text-decoration:none;padding:11px 12px;border-radius:10px;font-weight:650;font:inherit;cursor:pointer}
+.community-sidebar .forum-quick-topics button:hover,.community-sidebar .forum-quick-topics button:focus-visible{background:#493149}
+.cdmx-comments .forum-moderator-panel{margin:28px 0 16px;padding:16px;border-radius:14px;border:2px solid #dfa5c1;background:#302436}
+.cdmx-comments .forum-moderator-panel h3{color:#ffe6f2}
+.cdmx-comments .forum-moderator-panel ul{list-style:none;padding:0}
+.cdmx-comments .forum-moderator-panel li{display:flex;gap:8px;flex-wrap:wrap;align-items:center;padding:12px;border:1px solid #9c7298;border-radius:9px;margin:9px 0}
+.cdmx-comments .forum-moderator-panel li a{color:#ffd6ec}
+.cdmx-comments .forum-moderator-panel li button{font-size:12px;padding:8px}
+.cdmx-comments .forum-editor label[hidden],.cdmx-comments .forum-editor input[hidden]{display:none!important}
+@media(max-width:900px){.community-sidebar .forum-quick-topics{flex-direction:row;flex-wrap:wrap}.community-sidebar .forum-quick-topics button{width:auto;padding:7px 10px;font-size:12px}}
+@media(max-width:600px){.cdmx-comments .forum-report-editor select{max-width:100%;width:100%}.cdmx-comments .forum-report-editor{width:100%}.cdmx-comments .forum-moderator-panel li{align-items:stretch}}
