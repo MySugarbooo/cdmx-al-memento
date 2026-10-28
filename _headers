@@ -3,3 +3,10 @@
   Cache-Control: no-cache, must-revalidate
 /index.html
   Cache-Control: no-cache, must-revalidate
+
+/mapa/
+  Cache-Control: no-cache, must-revalidate
+/mapa/index.html
+  Cache-Control: no-cache, must-revalidate
+/mapa/preview.html
+  Cache-Control: no-cache, must-revalidate
