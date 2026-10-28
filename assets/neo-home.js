@@ -107,15 +107,27 @@ async function communityPreview(){
   ]);
   const app=appmod.getApps().find(x=>x.name==='neo-community-view')||appmod.initializeApp(cfg,'neo-community-view');
   const db=fs.getFirestore(app);
-  const q=fs.query(fs.collection(db,'community','main','comments'),fs.orderBy('createdAt','desc'),fs.limit(8));
+  const q=fs.query(fs.collection(db,'community','main','comments'),fs.orderBy('createdAt','desc'),fs.limit(12));
   const docs=await fs.getDocs(q);
-  const posts=docs.docs.map(d=>d.data()).filter(c=>typeof c.text==='string'&&!c.text.startsWith('[FORO:RESPUESTA:')).slice(0,3);
+  const posts=docs.docs.map(d=>({id:d.id,...d.data()})).filter(c=>typeof c.text==='string'&&!c.text.startsWith('[FORO:RESPUESTA:')).slice(0,3);
   out.replaceChildren();
-  if(!posts.length){out.append(el('p','neo-community-intro','Aún no hay conversaciones visibles. ¡Inicia una pregunta!'));return}
+  if(!posts.length){
+   const note=docs.empty?'Aún no hay conversaciones visibles. ¡Inicia una pregunta!':'Hay respuestas recientes; abre el foro para ver las conversaciones completas.';
+   out.append(el('p','neo-community-intro',note));return;
+  }
   for(const post of posts){
-   const a=el('a','neo-question');a.href='/comunidad/';
+   const a=el('a','neo-question');a.href='/comunidad/#post-'+encodeURIComponent(post.id);
    const author=el('div','neo-question-title');
    const avatar=el('span','neo-avatar',(post.name||'V').slice(0,1).toUpperCase());
+   const avatarUrl=typeof post.photoURL==='string'?post.photoURL:'';
+   if(/^https:\/\//i.test(avatarUrl)&&avatarUrl.length<=1500){
+    const picture=document.createElement('img');
+    picture.src=avatarUrl;picture.alt='';picture.loading='lazy';
+    picture.referrerPolicy='no-referrer';
+    picture.style.cssText='display:block;width:100%;height:100%;object-fit:cover;border-radius:50%';
+    picture.onerror=()=>picture.remove();
+    avatar.append(picture);
+   }
    const name=el('strong','',String(post.name||'Vecino').slice(0,60));
    author.append(avatar,name);a.append(author);
    let text=String(post.text||'').replace(/^\[FORO:PREGUNTA\]\s*/,'');
