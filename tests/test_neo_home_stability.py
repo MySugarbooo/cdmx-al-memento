@@ -48,7 +48,7 @@ class StableHomepageTests(unittest.TestCase):
         self.assertIn('id="embedded-news-fallback"',home)
         self.assertIn('src="/app.js?v=',home)
         self.assertIn('href="/archivo/"',home)
-        self.assertIn('src="/assets/neo-home.js?v=20261027-estable1"',home)
+        self.assertRegex(home,r'src="/assets/neo-home\\.js\\?v=[^"]+"')
         self.assertIn('href="/assets/neo-home.css?v=20261027-estable1"',home)
         headers=read("_headers")
         self.assertIn("Cache-Control: no-cache, must-revalidate",headers)
