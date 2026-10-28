@@ -49,7 +49,9 @@ class TransitionTests(unittest.TestCase):
 
     def test_every_primary_page_loads_transitions(self):
         paths=[p for p in ROOT.rglob("*.html")
-               if ".git" not in p.parts and p.relative_to(ROOT).as_posix() not in ("mapa/preview.html", "escribe-pro/index.html")]
+               if ".git" not in p.parts and p.relative_to(ROOT).as_posix() not in (
+                    "mapa/preview.html", "mapa/preview-alcaldias-rutas-20261028.html",
+                    "mapa/preview-oficial-20261028.html", "escribe-pro/index.html")]
         self.assertGreaterEqual(len(paths),45)
         for path in paths:
             with self.subTest(page=str(path.relative_to(ROOT))):
