@@ -86,7 +86,8 @@
  const selectedStyle={color:'#ffffff',weight:4.4,opacity:1,fillColor:'#f44a9d',fillOpacity:.48};
  const regionMap=new Map();
  let active=null,selectedName='',fullBounds=null;
- function urlFor(name){return '/alcaldias/?alcaldia='+encodeURIComponent(name)+'#noticias-alcaldia'}
+ function slugify(name){return String(name).normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'')}
+ function urlFor(name){return '/alcaldias/'+slugify(name)+'/'};
  function resetHighlight(layer){layer.setStyle(layer===active?selectedStyle:baseStyle)}
  function panel(name){
   if(!infoAlcaldia)return;
@@ -123,7 +124,7 @@
    layer.bindPopup('<div class="mapa-popup mapa-popup-alcaldia"><span class="mapa-type">ALCALDÍA · CDMX</span><h3>'+esc(name)+'</h3><a href="'+url+'">Consultar noticias de esta alcaldía ↗</a></div>',{maxWidth:280});
    layer.on('mouseover',()=>{layer.setStyle(hoverStyle);layer.bringToFront();panel(name)});
    layer.on('mouseout',()=>{resetHighlight(layer);panel(selectedName)});
-   layer.on('click',()=>selectRegion(layer,name));
+   layer.on('click',()=>{selectRegion(layer,name);window.location.assign(urlFor(name))});
   }
  }).addTo(map);
  const layers={
@@ -173,7 +174,7 @@
    const button=document.createElement('button');
    button.type='button';button.dataset.region=name;button.textContent=name;
    button.setAttribute('aria-pressed','false');
-   button.addEventListener('click',()=>selectRegion(regionMap.get(name),name,true));
+   button.addEventListener('click',()=>{selectRegion(regionMap.get(name),name,false);window.location.assign(urlFor(name))});
    listaAlcaldias.append(button);
   }
  }
