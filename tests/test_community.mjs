@@ -66,7 +66,7 @@ test('se prohíben escrituras no autorizadas y se respetan autores',()=>{
  assert.match(rules,/allow read, write: if false/);
 });
 test('páginas usan la misma versión del script de comentarios',()=>{
- assert.match(html,/\/assets\/comments\.js\?v=8-comunidad/);
- assert.match(news,/\/assets\/comments\.js\?v=8-comunidad/);
+ assert.match(html,/\/assets\/comments\.js\?v=9-enlaces/);
+ assert.match(news,/\/assets\/comments\.js\?v=9-enlaces/);
  assert.match(html,/\/assets\/comments-seguridad-20261028\.css\?v=8-estable/);
 });
