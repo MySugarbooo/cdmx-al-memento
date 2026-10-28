@@ -101,8 +101,9 @@
  }
  panel('');
  function selectRegion(layer,name,focus=false){
-  if(active&&active!==layer)resetHighlight(active);
+  const previous=active;
   active=layer;selectedName=name;
+  if(previous&&previous!==layer)resetHighlight(previous);
   layer.setStyle(selectedStyle);layer.bringToFront();
   panel(name);
   if(focus)map.fitBounds(layer.getBounds(),{padding:[35,35],maxZoom:12,animate:true});
@@ -159,8 +160,10 @@
   else map.setView([19.33,-99.15],10);
  }
  function clearSelection(){
-  if(active)resetHighlight(active);
-  active=null;selectedName='';panel('');
+  const previous=active;
+  active=null;selectedName='';
+  if(previous)resetHighlight(previous);
+  panel('');
   for(const b of (listaAlcaldias?.querySelectorAll('button')||[]))b.setAttribute('aria-pressed','false');
  }
  function buildRegionButtons(){
