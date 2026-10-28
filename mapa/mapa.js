@@ -1,34 +1,17 @@
 'use strict';
-/* Mapa ilustrado: las rutas se leen del Atlas Público SIGIRPC; no se dibujan recorridos inventados. */
+/* Mapa CDMX: límites reales de las 16 alcaldías (Atlas SIGIRPC/INEGI). */
 (() => {
  const $=id=>document.getElementById(id);
  const status=$('mapa-status'),capas=$('capas'),lugares=$('mapa-lugares'),buscar=$('mapa-buscar');
+ const listaAlcaldias=$('mapa-alcaldias-lista'),infoAlcaldia=$('mapa-alcaldia-info');
  if(!status||!capas||!lugares)return;
- const origin='https://serviciosatlas.sgirpc.cdmx.gob.mx/arcgis/rest/services/AtlasCapasPublicas/Movilidad_Integrada_CDMX/FeatureServer';
- const sources={metro:1,metrobus:3,rtp:5,trolebus:7,ligero:9,cablebus:11,camiones:16};
- const systems={
-  metro:{name:'Metro',color:'#df5a99'},
-  metrobus:{name:'Metrobús',color:'#9560c5'},
-  ligero:{name:'Tren Ligero',color:'#dfa838'},
-  cablebus:{name:'Cablebús',color:'#3a9fc6'},
-  trolebus:{name:'Trolebús',color:'#168d85'},
-  rtp:{name:'RTP',color:'#436add'},
-  camiones:{name:'Camiones concesionados',color:'#cc7856'}
+ const dataUrl='/mapa/alcaldias.geojson?v=20261028';
+ const shortNames={
+  'Álvaro Obregón':'Álvaro O.','La Magdalena Contreras':'Magdalena C.',
+  'Cuajimalpa de Morelos':'Cuajimalpa','Gustavo A. Madero':'G. A. Madero',
+  'Venustiano Carranza':'Venustiano C.','Benito Juárez':'Benito Juárez'
  };
- const metroColors={'1':'#e966a1','2':'#2369ba','3':'#afa415','4':'#66ac9d','5':'#e8c500','6':'#e95345','7':'#e67534','8':'#329c6d','9':'#78504a','A':'#a73e9b','B':'#9ba2ad','12':'#bb9a45'};
- const metrobusColors={'1':'#c52d54','2':'#884da8','3':'#478b74','4':'#e6a040','5':'#3874bd','6':'#b4508e','7':'#478b54'};
  const places=[
-  {id:'bellas',name:'Palacio de Bellas Artes',kind:'palacio',emoji:'🎭',lat:19.4352,lng:-99.1412,area:'Centro Histórico · Cuauhtémoc',info:'Palacio de mármol y cúpula icónica donde conviven exposiciones, ópera, danza y muralismo.'},
-  {id:'revolucion',name:'Monumento a la Revolución',kind:'arco',emoji:'🏛️',lat:19.4364,lng:-99.1546,area:'Tabacalera · Cuauhtémoc',info:'Arcos monumentales y mirador que recuerdan la Revolución mexicana.'},
-  {id:'nacional',name:'Palacio Nacional',kind:'palacio-nacional',emoji:'🇲🇽',lat:19.4326,lng:-99.1317,area:'Zócalo · Cuauhtémoc',info:'Histórico edificio frente a la Plaza de la Constitución, sede del Poder Ejecutivo federal.'},
-  {id:'angel',name:'Ángel de la Independencia',kind:'angel',emoji:'✨',lat:19.4270,lng:-99.1677,area:'Paseo de la Reforma · Cuauhtémoc',info:'Columna coronada por la Victoria Alada, uno de los símbolos de la ciudad.'},
-  {id:'chapultepec',name:'Castillo de Chapultepec',kind:'castillo',emoji:'🏰',lat:19.4205,lng:-99.1819,area:'Bosque de Chapultepec · Miguel Hidalgo',info:'Castillo en lo alto del cerro, hoy sede del Museo Nacional de Historia.'},
-  {id:'latino',name:'Torre Latinoamericana',kind:'torre',emoji:'🏙️',lat:19.4339,lng:-99.1408,area:'Centro Histórico · Cuauhtémoc',info:'Rascacielos histórico con mirador sobre el corazón de la capital.'},
-  {id:'basilica',name:'Basílica de Guadalupe',kind:'basilica',emoji:'⛪',lat:19.4848,lng:-99.1170,area:'Villa de Guadalupe · Gustavo A. Madero',info:'Conjunto de templos y explanadas, lugar emblemático de peregrinación.'},
-  {id:'xochimilco',name:'Embarcadero de Nativitas',kind:'trajineras',emoji:'🛶',lat:19.2546,lng:-99.0996,area:'Xochimilco',info:'Punto de partida de trajineras para recorrer los canales tradicionales.'},
-  {id:'unam',name:'Biblioteca Central UNAM',kind:'biblioteca',emoji:'📚',lat:19.3319,lng:-99.1871,area:'Ciudad Universitaria · Coyoacán',info:'Biblioteca reconocida por sus mosaicos monumentales de Juan O’Gorman.'},
-  {id:'soumaya',name:'Museo Soumaya',kind:'soumaya',emoji:'🖼️',lat:19.4406,lng:-99.2047,area:'Nuevo Polanco · Miguel Hidalgo',info:'Museo de arte distinguido por su fachada curvada de hexágonos brillantes.'},
-  {id:'catedral',name:'Catedral Metropolitana',kind:'catedral',emoji:'⛪',lat:19.4352,lng:-99.1334,area:'Zócalo · Cuauhtémoc',info:'Catedral frente al Zócalo, con dos torres y siglos de historia arquitectónica.'},
   {id:'los-dinamos',type:'natural',name:'Parque Los Dinamos',kind:'naturaleza',emoji:'🌲',lat:19.2959,lng:-99.2555,area:'La Magdalena Contreras · Río Magdalena',info:'Bosque de oyamel y encino junto al Río Magdalena, con senderos y cascadas. Marcador de referencia, no acceso único.'},
   {id:'desierto-leones',type:'natural',name:'Desierto de los Leones',kind:'naturaleza',emoji:'🌳',lat:19.295,lng:-99.312778,area:'Cuajimalpa y Álvaro Obregón',info:'Parque nacional de bosque templado y senderos. Punto aproximado del área protegida.'},
   {id:'bosque-tlalpan',type:'natural',name:'Bosque de Tlalpan',kind:'naturaleza',emoji:'🌿',lat:19.291111,lng:-99.199167,area:'Tlalpan',info:'Área natural protegida con senderos y vegetación del Pedregal. Marcador de referencia.'},
@@ -43,9 +26,6 @@
   {id:'museo-memoria',type:'museo',name:'Museo Memoria y Tolerancia',kind:'museo',emoji:'🕊️',lat:19.4336,lng:-99.1455,area:'Centro · Cuauhtémoc',info:'Museo enfocado en derechos humanos, memoria histórica y cultura de paz.'},
   {id:'templo-mayor',type:'museo',name:'Zona Arqueológica del Templo Mayor',kind:'museo',emoji:'🏺',lat:19.4344,lng:-99.1323,area:'Centro Histórico · Cuauhtémoc',info:'Sitio arqueológico del antiguo recinto sagrado mexica. Consulta horarios y acceso con el INAH.'},
   {id:'cuicuilco',type:'museo',name:'Zona Arqueológica de Cuicuilco',kind:'museo',emoji:'🏛️',lat:19.3016,lng:-99.1837,area:'Tlalpan',info:'Zona arqueológica al sur de la ciudad, conocida por su basamento circular. Comprueba acceso oficial.'},
-  {id:'hospital-general',type:'salud',name:'Hospital General de México',kind:'salud',emoji:'🏥',lat:19.4125,lng:-99.1525,area:'Doctores · Cuauhtémoc',info:'Institución de atención médica. Marcador orientativo; no confirma admisión, servicios ni disponibilidad de urgencias.'},
-  {id:'hospital-siglo-xxi',type:'salud',name:'Centro Médico Nacional Siglo XXI',kind:'salud',emoji:'🏥',lat:19.4069,lng:-99.1555,area:'Doctores · Cuauhtémoc',info:'Complejo hospitalario del IMSS. Marcador de referencia, no sustituye información de acceso o atención.'},
-  {id:'hospital-la-raza',type:'salud',name:'Centro Médico Nacional La Raza',kind:'salud',emoji:'🏥',lat:19.4700,lng:-99.1440,area:'La Raza · Azcapotzalco',info:'Complejo médico del IMSS. Punto aproximado, sin información sobre camas, urgencias o disponibilidad.'}
  ];
  function esc(value){return String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
  function art(kind){
@@ -72,163 +52,160 @@
  function placePopup(place){
   return '<div class="mapa-popup"><div class="mapa-type">'+esc(place.area)+'</div><h3>'+esc(place.emoji+' '+place.name)+'</h3><p>'+esc(place.info)+'</p><p><strong>Ilustración representativa, no fotografía.</strong></p></div>';
  }
- function routeName(feature,mode){
-  const p=feature.properties||{};
-  const line=String(p.linea||'').trim();
-  const route=String(p.ruta||'').trim();
-  return systems[mode].name+(line?' · Línea '+line:'')+(route?' · '+route:'');
+ function show(message,failed=false){
+  status.textContent=message;
+  status.toggleAttribute('data-error',failed);
  }
- function simpleLine(line){
-  const text=String(line||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toUpperCase().replace(/\s+/g,' ').trim();
-  const tokens=text.match(/(?:^| )L(?:INEA)?\s*([A-B]|12|[1-9])\b/);
-  if(tokens)return tokens[1];
-  if(/^([A-B]|12|[1-9])$/.test(text))return text;
-  return '';
- }
- function colorFor(mode,feature){
-  const raw=feature?.properties?.linea;
-  const id=simpleLine(raw);
-  return (mode==='metro'&&metroColors[id])||(mode==='metrobus'&&metrobusColors[id])||systems[mode].color;
- }
- function styleFor(mode,feature){
-  return {color:colorFor(mode,feature),weight:mode==='metro'?5:mode==='metrobus'?4.6:3.5,opacity:.92,dashArray:mode==='cablebus'?'8 6':mode==='rtp'||mode==='camiones'?'7 5':undefined,lineCap:'round',lineJoin:'round',className:'ruta-'+mode};
- }
- const state=new Map();
- const checked=mode=>Boolean(capas.querySelector('input[value="'+mode+'"]')?.checked);
- function show(message,failed=false){status.textContent=message;failed?status.setAttribute('data-error',''):status.removeAttribute('data-error')}
+ function checked(type){return Boolean(capas.querySelector('input[value="'+type+'"]')?.checked)}
  function redrawList(filter=''){
   const term=filter.toLocaleLowerCase('es-MX').trim();
   lugares.replaceChildren();
-  for(const place of places.filter(x=>(x.name+' '+x.area).toLocaleLowerCase('es-MX').includes(term))){
+  for(const place of places.filter(p=>(p.name+' '+p.area).toLocaleLowerCase('es-MX').includes(term))){
    const b=document.createElement('button');b.type='button';b.className='mapa-lugar';
    const em=document.createElement('span');em.textContent=place.emoji;
-   const txt=document.createElement('span');txt.textContent=place.name;
-   b.append(em,txt);b.addEventListener('click',()=>focusPlace(place));
-   lugares.append(b);
+   const name=document.createElement('span');name.textContent=place.name;
+   b.append(em,name);b.addEventListener('click',()=>focusPlace(place));lugares.append(b);
   }
-  if(!lugares.children.length){const p=document.createElement('p');p.className='muted';p.textContent='No hay lugares con ese nombre.';lugares.append(p)}
+  if(!lugares.children.length){const p=document.createElement('p');p.className='muted';p.textContent='No hay museos ni áreas verdes con ese nombre.';lugares.append(p)}
  }
  redrawList();
  buscar?.addEventListener('input',()=>redrawList(buscar.value));
- if(typeof window.L==='undefined'){
-  $('mapa-interactivo').textContent='El mapa necesita conectarse al servidor de cartografía. Comprueba tu conexión y recarga la página.';
-  show('No se pudo iniciar la biblioteca del mapa.',true);
-  return;
+ if(!window.L){
+  $('mapa-interactivo').textContent='No fue posible cargar el mapa interactivo. Revisa tu conexión.';
+  show('No se pudo cargar la biblioteca del mapa.',true);return;
  }
  const L=window.L;
- const map=L.map('mapa-interactivo',{zoomControl:false,preferCanvas:true,worldCopyJump:false,minZoom:9,maxZoom:19}).setView([19.414,-99.145],11);
- // CARTO exige una API key desde 2026; OSM Standard no requiere clave.
- // Usar su URL oficial, caché normal del navegador y atribución visible.
- const tiles=L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{
-  maxZoom:19,
-  attribution:'&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">OpenStreetMap</a> contributors'
- });
- tiles.addTo(map);
+ const map=L.map('mapa-interactivo',{zoomControl:false,preferCanvas:false,minZoom:9,maxZoom:18})
+  .setView([19.33,-99.15],10);
+ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{
+  maxZoom:19,attribution:'&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">OpenStreetMap</a> contributors'
+ }).addTo(map);
  L.control.zoom({position:'bottomright'}).addTo(map);
- const layerMonuments=L.layerGroup().addTo(map),layerNature=L.layerGroup().addTo(map),
-       layerMuseums=L.layerGroup().addTo(map),layerHealth=L.layerGroup(),markers=new Map();
- const pointLayer=type=>type==='natural'?layerNature:type==='museo'?layerMuseums:type==='salud'?layerHealth:layerMonuments;
+ const baseStyle={color:'#fff2fa',weight:1.8,opacity:1,fillColor:'#e879ad',fillOpacity:.17};
+ const hoverStyle={color:'#ffffff',weight:4,opacity:1,fillColor:'#fb7fb6',fillOpacity:.4};
+ const selectedStyle={color:'#ffffff',weight:4.4,opacity:1,fillColor:'#f44a9d',fillOpacity:.48};
+ const regionMap=new Map();
+ let active=null,selectedName='',fullBounds=null;
+ function urlFor(name){return '/alcaldias/?alcaldia='+encodeURIComponent(name)+'#noticias-alcaldia'}
+ function resetHighlight(layer){layer.setStyle(layer===active?selectedStyle:baseStyle)}
+ function panel(name){
+  if(!infoAlcaldia)return;
+  infoAlcaldia.replaceChildren();
+  const title=document.createElement('strong');title.textContent=name||'Selecciona una alcaldía';
+  const help=document.createElement('span');help.textContent=name?' Consulta sus notas locales o elige otra zona del mapa.':' Pasa el cursor para ver el contorno blanco, o toca una región.';
+  infoAlcaldia.append(title,help);
+  if(name){
+   const a=document.createElement('a');a.href=urlFor(name);a.textContent='Ver noticias de '+name+' ↗';
+   infoAlcaldia.append(a);
+  }
+ }
+ panel('');
+ function selectRegion(layer,name,focus=false){
+  if(active&&active!==layer)resetHighlight(active);
+  active=layer;selectedName=name;
+  layer.setStyle(selectedStyle);layer.bringToFront();
+  panel(name);
+  if(focus)map.fitBounds(layer.getBounds(),{padding:[35,35],maxZoom:12,animate:true});
+  layer.openPopup();
+  for(const button of (listaAlcaldias?.querySelectorAll('button')||[])){
+   button.setAttribute('aria-pressed',String(button.dataset.region===name));
+  }
+ }
+ const polygons=L.geoJSON(null,{
+  style:()=>({...baseStyle}),
+  onEachFeature:(feature,layer)=>{
+   const name=String(feature.properties?.nomgeo||'');
+   if(!name)return;
+   regionMap.set(name,layer);
+   const url=urlFor(name);
+   layer.bindTooltip(shortNames[name]||name,{permanent:true,direction:'center',className:'alcaldia-tooltip',opacity:.96});
+   layer.bindPopup('<div class="mapa-popup mapa-popup-alcaldia"><span class="mapa-type">ALCALDÍA · CDMX</span><h3>'+esc(name)+'</h3><a href="'+url+'">Consultar noticias de esta alcaldía ↗</a></div>',{maxWidth:280});
+   layer.on('mouseover',()=>{layer.setStyle(hoverStyle);layer.bringToFront();panel(name)});
+   layer.on('mouseout',()=>{resetHighlight(layer);panel(selectedName)});
+   layer.on('click',()=>selectRegion(layer,name));
+  }
+ }).addTo(map);
+ const layers={
+  naturaleza:L.layerGroup().addTo(map),
+  museos:L.layerGroup().addTo(map)
+ };
+ const markers=new Map();
  for(const place of places){
   const marker=L.marker([place.lat,place.lng],{
    icon:L.divIcon({className:'mapa-pin-wrap',html:art(place.kind),iconSize:[64,70],iconAnchor:[32,65],popupAnchor:[0,-55]}),
    keyboard:true,title:place.name,alt:place.name,riseOnHover:true
   });
   marker.bindPopup(placePopup(place),{maxWidth:270,autoPan:true});
-  marker.addTo(pointLayer(place.type));markers.set(place.id,marker);
+  marker.addTo(place.type==='natural'?layers.naturaleza:layers.museos);
+  markers.set(place.id,marker);
  }
+ function toggleLayer(type){
+  const group=layers[type];if(!group)return;
+  if(checked(type))group.addTo(map);else map.removeLayer(group);
+ }
+ capas.addEventListener('change',event=>toggleLayer(event.target.value));
  function focusPlace(place){
-  const layer=place.type==='natural'?'naturaleza':place.type==='museo'?'museos':place.type==='salud'?'salud':'monumentos';
-  if(!checked(layer)){const el=capas.querySelector('input[value="'+layer+'"]');el.checked=true;toggleLayer(layer)}
-  map.flyTo([place.lat,place.lng],Math.max(14,map.getZoom()),{duration:.7});
-  setTimeout(()=>markers.get(place.id)?.openPopup(),450);
+  const type=place.type==='natural'?'naturaleza':'museos';
+  if(!checked(type)){
+   const el=capas.querySelector('input[value="'+type+'"]');
+   if(el){el.checked=true;toggleLayer(type)}
+  }
+  map.flyTo([place.lat,place.lng],Math.max(13,map.getZoom()),{duration:.7});
+  window.setTimeout(()=>markers.get(place.id)?.openPopup(),730);
   $('mapa-interactivo').scrollIntoView({block:'center',behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});
  }
- async function obtain(mode,offset){
-  const proxied='/api/transporte?modo='+encodeURIComponent(mode)+'&offset='+offset;
-  const official=origin+'/'+sources[mode]+'/query?'+new URLSearchParams({
-   where:'1=1',outFields:'*',returnGeometry:'true',outSR:'4326',
-   resultOffset:String(offset),resultRecordCount:'350',f:'geojson'
-  });
-  let reason=null;
-  for(const path of [proxied,official]){
-   try{
-    const controller=new AbortController();
-    const id=setTimeout(()=>controller.abort(),14000);
-    let response;
-    try{response=await fetch(path,{signal:controller.signal})}
-    finally{clearTimeout(id)}
-    if(!response.ok)throw Error('HTTP '+response.status);
-    const json=await response.json();
-    if(json.error||!Array.isArray(json.features))throw Error('Geometrías no disponibles');
-    return {features:json.features,nextOffset:json.nextOffset===undefined?
-      (json.features.length>=350?offset+350:null):json.nextOffset};
-   }catch(error){reason=error}
-  }
-  throw reason||Error('No fue posible consultar las rutas');
+ function fitCity(){
+  if(fullBounds?.isValid())map.fitBounds(fullBounds,{padding:[22,22],maxZoom:11,animate:false});
+  else map.setView([19.33,-99.15],10);
  }
- async function loadMode(mode){
-  const layer=L.geoJSON(null,{
-   style:feature=>styleFor(mode,feature),
-   onEachFeature:(feature,obj)=>{
-    const title=routeName(feature,mode);
-    obj.bindPopup('<div class="mapa-popup"><span class="mapa-type">'+esc(systems[mode].name)+'</span><h3>'+esc(title)+'</h3><p>Trazo geográfico de referencia publicado por el Atlas CDMX. No indica circulación o servicio actual.</p></div>',{maxWidth:280});
-    obj.on('mouseover',()=>obj.setStyle({weight:7,opacity:1}));
-    obj.on('mouseout',()=>layer.resetStyle(obj));
-   }
-  });
-  const info={layer,loaded:false,loading:true,total:0};
-  state.set(mode,info);
-  if(checked(mode))layer.addTo(map);
+ function clearSelection(){
+  if(active)resetHighlight(active);
+  active=null;selectedName='';panel('');
+  for(const b of (listaAlcaldias?.querySelectorAll('button')||[]))b.setAttribute('aria-pressed','false');
+ }
+ function buildRegionButtons(){
+  if(!listaAlcaldias)return;
+  listaAlcaldias.replaceChildren();
+  for(const name of [...regionMap.keys()].sort((a,b)=>a.localeCompare(b,'es-MX'))){
+   const button=document.createElement('button');
+   button.type='button';button.dataset.region=name;button.textContent=name;
+   button.setAttribute('aria-pressed','false');
+   button.addEventListener('click',()=>selectRegion(regionMap.get(name),name,true));
+   listaAlcaldias.append(button);
+  }
+ }
+ async function loadRegions(){
+  show('Cargando límites de las 16 alcaldías…');
   try{
-   let offset=0;
-   for(let page=0;page<16;page++){
-    const result=await obtain(mode,offset);
-    const features=result.features.filter(f=>f&&f.geometry&&['LineString','MultiLineString'].includes(f.geometry.type));
-    layer.addData({type:'FeatureCollection',features});
-    info.total+=features.length;
-    if(checked(mode))show('Cargando '+systems[mode].name+' · '+info.total+' trazos…');
-    if(result.nextOffset==null)break;
-    offset=result.nextOffset;
-    if(page===15){show('Se alcanzó el límite de rutas para '+systems[mode].name+'.',true)}
-   }
-   info.loaded=true;
-   if(info.total===0)throw Error('El atlas no devolvió rutas para esta capa.');
+   const response=await fetch(dataUrl,{cache:'default'});
+   if(!response.ok)throw Error('No se pudieron descargar las divisiones');
+   const data=await response.json();
+   if(data.type!=='FeatureCollection'||data.features?.length!==16)throw Error('Los límites no incluyen 16 alcaldías');
+   if(new Set(data.features.map(f=>f.properties?.cvegeo)).size!==16)throw Error('Hay claves de alcaldía duplicadas');
+   polygons.addData(data);
+   if(regionMap.size!==16)throw Error('No se dibujaron todas las alcaldías');
+   fullBounds=polygons.getBounds();
+   buildRegionButtons();
+   fitCity();
+   show('16 alcaldías cargadas · Pasa el cursor para resaltar el contorno blanco.');
   }catch(error){
-   info.error=error;
-   if(checked(mode)){show('No se pudieron descargar las rutas de '+systems[mode].name+'. Intenta desactivar y activar de nuevo. Los monumentos siguen disponibles.',true)}
-  }finally{
-   info.loading=false;
-   if(!info.error&&checked(mode))show(systems[mode].name+' · '+info.total+' trazos del atlas cargados.');
+   console.error('Mapa de alcaldías:',error);
+   show('No se pudieron cargar los límites territoriales. Actualiza la página para reintentar.',true);
   }
  }
- function toggleLayer(mode){
-  if(['monumentos','naturaleza','museos','salud'].includes(mode)){
-   const group=mode==='naturaleza'?layerNature:mode==='museos'?layerMuseums:mode==='salud'?layerHealth:layerMonuments;
-   if(checked(mode))group.addTo(map);else map.removeLayer(group);
-   return;
+ $('solo-monumentos')?.addEventListener('click',()=>{
+  for(const el of capas.querySelectorAll('input[type="checkbox"]')){
+   el.checked=el.value==='naturaleza';toggleLayer(el.value);
   }
-  const info=state.get(mode);
-  if(checked(mode)){
-   if(!info){loadMode(mode);return}
-   if(info.error){state.delete(mode);loadMode(mode);return}
-   info.layer.addTo(map);
-  }else if(info){map.removeLayer(info.layer)}
- }
- capas.addEventListener('change',event=>{
-  const mode=event.target.value;
-  if(Object.prototype.hasOwnProperty.call(systems,mode)||['monumentos','naturaleza','museos','salud'].includes(mode))toggleLayer(mode);
  });
- function setDefaults(onlyPlaces=false){
-  capas.querySelectorAll('input[type="checkbox"]').forEach(el=>{
-   const before=el.checked;
-   el.checked=onlyPlaces?['monumentos','naturaleza','museos','salud'].includes(el.value):['metro','metrobus','monumentos','naturaleza','museos'].includes(el.value);
-   if(before!==el.checked)toggleLayer(el.value);
-  });
- }
- $('solo-monumentos')?.addEventListener('click',()=>setDefaults(true));
- $('todas-capitas')?.addEventListener('click',()=>{setDefaults(false);map.setView([19.414,-99.145],11)});
- $('mapa-centrar')?.addEventListener('click',()=>map.setView([19.414,-99.145],11));
- const enlarge=$('mapa-ampliar'), frame=document.querySelector('.mapa-frame');
+ $('todas-capitas')?.addEventListener('click',()=>{
+  for(const el of capas.querySelectorAll('input[type="checkbox"]')){
+   el.checked=true;toggleLayer(el.value);
+  }
+  clearSelection();fitCity();
+ });
+ $('mapa-centrar')?.addEventListener('click',()=>{clearSelection();fitCity()});
+ const enlarge=$('mapa-ampliar'),frame=document.querySelector('.mapa-frame');
  function setExpanded(enabled){
   if(!frame||!enlarge)return;
   frame.classList.toggle('mapa-ampliado',enabled);
@@ -236,14 +213,14 @@
   enlarge.textContent=enabled?'✕ Cerrar mapa grande':'⤢ Ver mapa grande';
   enlarge.setAttribute('aria-pressed',String(enabled));
   enlarge.setAttribute('aria-label',enabled?'Cerrar mapa grande':'Ampliar mapa de Ciudad de México');
-  window.setTimeout(()=>map.invalidateSize({pan:false}),80);
+  window.setTimeout(()=>map.invalidateSize({pan:false}),100);
  }
  enlarge?.addEventListener('click',()=>setExpanded(!frame.classList.contains('mapa-ampliado')));
  document.addEventListener('keydown',event=>{
   if(event.key==='Escape'&&frame?.classList.contains('mapa-ampliado'))setExpanded(false);
  });
- for(const mode of ['metro','metrobus'])toggleLayer(mode);
- setTimeout(()=>map.invalidateSize(),250);
+ loadRegions();
+ window.setTimeout(()=>map.invalidateSize({pan:false}),250);
  const named=new URLSearchParams(location.search).get('lugar');
- if(named){const place=places.find(p=>p.id===named);if(place)setTimeout(()=>focusPlace(place),750)}
+ if(named){const place=places.find(p=>p.id===named);if(place)window.setTimeout(()=>focusPlace(place),800)}
 })();
