@@ -19,47 +19,44 @@
 <section class="mapa-hero"><div>
 <p class="eyebrow">EXPLORA · CIUDAD DE MÉXICO</p>
 <h1>Una ciudad, <span>mil caminos.</span> 🗺️</h1>
-<p>Viaja por la capital con rutas de transporte, monumentos dibujados y áreas naturales como Los Dinamos. Activa las capas que quieras explorar, toca los lugares y conoce más sobre ellos.</p>
-<div class="mapa-hero-chips"><span>🚇 Metro</span><span>🚌 Metrobús y camiones</span><span>🚡 Cablebús</span><span>🏛️ Monumentos</span><span>🌿 Áreas naturales</span><span>🏺 Museos</span><span>🏥 Salud</span></div>
-</div><div class="mapa-hero-badge"><span>EDICIÓN ILUSTRADA</span><strong>CDMX</strong><span>RUTAS + CULTURA</span></div></section>
+<p>Explora las 16 alcaldías con límites cartográficos reales. Pasa el cursor o toca una alcaldía para resaltarla y consultar sus noticias; descubre también áreas verdes y museos.</p>
+<div class="mapa-hero-chips"><span>🗺️ 16 alcaldías reales</span><span>🤍 Contorno blanco al seleccionar</span><span>🌿 Áreas verdes</span><span>🏺 Museos</span></div>
+</div><div class="mapa-hero-badge"><span>EDICIÓN ILUSTRADA</span><strong>CDMX</strong><span>ALCALDÍAS + CULTURA</span></div></section>
 <div class="mapa-layout">
-<aside class="mapa-panel" aria-label="Filtros y sitios turísticos">
- <div class="mapa-panel-top"><p class="eyebrow">ELIGE QUÉ VER</p><h2>Capas del mapa</h2><p>Puedes combinar transportes. Las rutas de camiones se consultan bajo demanda para que el mapa cargue rápido.</p></div>
+<aside class="mapa-panel" aria-label="Alcaldías, áreas verdes y museos">
+ <div class="mapa-panel-top"><p class="eyebrow">ELIGE QUÉ VER</p><h2>Capas del mapa</h2><p>Solo aparecen áreas verdes y museos; las 16 alcaldías se mantienen delimitadas.</p></div>
  <div id="capas" class="mapa-capas">
-  <label class="mapa-capa"><input type="checkbox" value="metro" checked><span class="capa-punto metro"></span><span><strong>Metro</strong><small>Líneas del STC</small></span></label>
-  <label class="mapa-capa"><input type="checkbox" value="metrobus" checked><span class="capa-punto metrobus"></span><span><strong>Metrobús</strong><small>Corredores y líneas</small></span></label>
-  <label class="mapa-capa"><input type="checkbox" value="ligero"><span class="capa-punto ligero"></span><span><strong>Tren Ligero</strong><small>Corredor sur</small></span></label>
-  <label class="mapa-capa"><input type="checkbox" value="cablebus"><span class="capa-punto cablebus"></span><span><strong>Cablebús</strong><small>Trazados disponibles</small></span></label>
-  <label class="mapa-capa"><input type="checkbox" value="trolebus"><span class="capa-punto trolebus"></span><span><strong>Trolebús</strong><small>Corredores eléctricos</small></span></label>
-  <label class="mapa-capa"><input type="checkbox" value="rtp"><span class="capa-punto rtp"></span><span><strong>Camiones RTP</strong><small>Rutas públicas del atlas</small></span></label>
-  <label class="mapa-capa"><input type="checkbox" value="camiones"><span class="capa-punto camiones"></span><span><strong>Camiones concesionados</strong><small>Corredores y servicios zonales</small></span></label>
-  <label class="mapa-capa"><input type="checkbox" value="monumentos" checked><span class="capa-punto monumentos"></span><span><strong>Monumentos ilustrados</strong><small>Pincha sus estampas</small></span></label>
-  <label class="mapa-capa"><input type="checkbox" value="naturaleza" checked><span class="capa-punto naturaleza"></span><span><strong>Áreas naturales</strong><small>Los Dinamos y bosques</small></span></label>
-  <label class="mapa-capa"><input type="checkbox" value="museos" checked><span class="capa-punto museos"></span><span><strong>Museos y arqueología</strong><small>Patrimonio y arte</small></span></label>
-  <label class="mapa-capa"><input type="checkbox" value="salud"><span class="capa-punto salud"></span><span><strong>Hospitales de referencia</strong><small>Sin disponibilidad de urgencias</small></span></label>
+  <label class="mapa-capa"><input type="checkbox" value="naturaleza" checked><span class="capa-punto naturaleza"></span><span><strong>Áreas verdes</strong><small>Bosques, parques y naturaleza</small></span></label>
+  <label class="mapa-capa"><input type="checkbox" value="museos" checked><span class="capa-punto museos"></span><span><strong>Museos y arqueología</strong><small>Patrimonio cultural</small></span></label>
  </div>
  <p id="mapa-status" class="mapa-status" role="status" aria-live="polite">Preparando mapa y trazados…</p>
- <div class="mapa-panel-buttons"><button type="button" id="solo-monumentos">Solo lugares</button><button type="button" id="todas-capitas">Restablecer</button></div>
- <div class="mapa-sites"><h2>📍 Sitios para descubrir</h2><label class="mapa-search-label" for="mapa-buscar">Buscar monumentos, museos, parques u hospitales</label><input id="mapa-buscar" type="search" placeholder="Ej. Los Dinamos…" autocomplete="off">
+ <div class="mapa-panel-buttons"><button type="button" id="solo-monumentos">Solo áreas verdes</button><button type="button" id="todas-capitas">Restablecer</button></div>
+ <div id="mapa-alcaldia-info" class="mapa-alcaldia-info" aria-live="polite"><strong>Selecciona una alcaldía</strong><span> Pasa el cursor o toca una región.</span></div>
+ <details class="mapa-boroughs"><summary>Las 16 alcaldías <span>· Selecciona una</span></summary><div id="mapa-alcaldias-lista" class="mapa-alcaldias-lista"></div></details>
+ <div class="mapa-sites"><h2>🌿 Áreas verdes y museos</h2><label class="mapa-search-label" for="mapa-buscar">Buscar parques o museos</label><input id="mapa-buscar" type="search" placeholder="Ej. Los Dinamos…" autocomplete="off">
  <div id="mapa-lugares" class="mapa-sites-list"></div></div>
 </aside>
 <div class="mapa-view-wrap">
  <div class="mapa-view-head"><div><p class="eyebrow">EL MAPA DE NUESTRA CIUDAD</p><h2>Ciudad de México <span class="pink-mark">.</span></h2></div><button id="mapa-centrar" type="button">⌖ Ver toda la ciudad</button></div>
  <div class="mapa-frame">
  <button type="button" id="mapa-ampliar" class="mapa-ampliar" aria-pressed="false" aria-label="Ampliar mapa de Ciudad de México">⤢ Ver mapa grande</button>
- <div id="mapa-interactivo" aria-label="Mapa interactivo con rutas, monumentos y áreas naturales de Ciudad de México" role="application"></div>
+ <div id="mapa-interactivo" aria-label="Mapa interactivo de las 16 alcaldías de Ciudad de México con límites oficiales, parques y museos" role="application"></div>
  <div class="mapa-sticker" aria-hidden="true">HECHO PARA EXPLORAR ✦</div>
  </div>
- <div class="mapa-controls-note">Pulsa «Ver mapa grande» para expandirlo a toda la pantalla. 👆 Arrastra para moverte · Haz zoom con los botones + y − · Toca una ruta para identificarla · Toca un monumento o un árbol para conocer el lugar.</div>
- <div class="mapa-legend"><strong>Colores en el mapa</strong><span>🌸 Metro por línea</span><span>🟣 Metrobús por línea</span><span>🟢 Transporte eléctrico</span><span>🔵 RTP y camiones</span><span>🏛️ Monumentos</span><span>🌿 Áreas naturales</span><span>🏺 Museos</span><span>🏥 Salud</span></div>
+ <div class="mapa-controls-note">Pulsa «Ver mapa grande» para ampliar. Pasa el cursor para ver el contorno blanco y el nombre de cada alcaldía; toca una región para abrir sus noticias. Arrastra y usa los controles para acercarte a los parques y museos.</div>
+ <div class="mapa-legend"><strong>Colores en el mapa</strong><span>🌸 16 alcaldías delimitadas</span><span>🤍 Contorno blanco al resaltar</span><span>🌿 Áreas verdes</span><span>🏺 Museos</span></div>
 </div>
 </div>
 <section class="mapa-about notice">
- <strong>Sobre la precisión de las rutas:</strong> geometrías de referencia publicadas en el <a href="https://serviciosatlas.sgirpc.cdmx.gob.mx/arcgis/rest/services/AtlasCapasPublicas/Movilidad_Integrada_CDMX/FeatureServer" target="_blank" rel="noopener noreferrer">Atlas de Movilidad Integrada de la CDMX (SIGIRPC)</a>. Algunas rutas pueden haber cambiado y no se incluyen todos los servicios de microbuses o combis. Este mapa no informa horarios, cierres ni unidades en tiempo real. Los hospitales son puntos aproximados y no informan capacidad, urgencias, admisiones ni disponibilidad de atención. Verifica tu viaje con <a href="https://www.metro.cdmx.gob.mx/" target="_blank" rel="noopener noreferrer">Metro</a>, <a href="https://www.metrobus.cdmx.gob.mx/" target="_blank" rel="noopener noreferrer">Metrobús</a> o <a href="https://www.semovi.cdmx.gob.mx/" target="_blank" rel="noopener noreferrer">SEMOVI</a>. La apariencia ilustrada es decorativa; las líneas corresponden a las geometrías del atlas, no a un diagrama inventado. <strong>Áreas naturales:</strong> los pinos marcan ubicaciones orientativas, no rutas de senderismo, polígonos de protección ni entradas oficiales. Las coordenadas provienen de <a href="https://www.inegi.org.mx/app/cuadroentidad/CDMX/2021/02/2_1" target="_blank" rel="noopener noreferrer">INEGI (áreas federales)</a>, <a href="https://www.inegi.org.mx/app/cuadroentidad/CDMX/2021/02/2_2" target="_blank" rel="noopener noreferrer">INEGI (áreas locales)</a> y <a href="https://losdinamos.com/" target="_blank" rel="noopener noreferrer">Los Dinamos</a>.
+ <strong>Fuente cartográfica:</strong> límites de las 16 alcaldías publicados por el
+ <a href="https://serviciosatlas.sgirpc.cdmx.gob.mx/arcgis/rest/services/AtlasCapasPublicas/Limites/FeatureServer/2" target="_blank" rel="noopener noreferrer">Atlas de Riesgos de CDMX (SIGIRPC)</a>, con cartografía de referencia de INEGI.
+ Las geometrías se simplificaron ligeramente para ofrecer una carga más rápida en teléfonos; no deben utilizarse para trámites legales ni mediciones catastrales.
+ Puedes consultar también el <a href="https://datos.cdmx.gob.mx/dataset/alcaldias" target="_blank" rel="noopener noreferrer">conjunto de datos abiertos de alcaldías</a>.
+ Los marcadores de parques y museos son orientativos y pueden no señalar el acceso principal. Mapa base: © colaboradores de OpenStreetMap.
 </section>
 <section class="mapa-end"><div><p class="eyebrow">LA CIUDAD TAMBIÉN SE CUENTA</p><h2>Después del paseo, conoce sus noticias</h2><p>Visita la portada para seguir los titulares de CDMX y explorar las historias de sus 16 alcaldías.</p></div><a class="btn" href="/">Volver a las noticias ↗</a></section>
 </main>
-<footer><div class="wrap">© 2026 CDMX AL MEMENTO · Mapa informativo ilustrado · Datos de SIGIRPC y cartografía © colaboradores de OpenStreetMap. <p><a href="/sobre-nosotros.html">Sobre nosotros</a><a href="/privacidad.html">Privacidad</a><a href="/politica-editorial.html">Política editorial</a><a href="/contacto.html">Contacto</a></p></div></footer>
+<footer><div class="wrap">© 2026 CDMX AL MEMENTO · Límites de alcaldías SIGIRPC / INEGI · Cartografía © colaboradores de OpenStreetMap. <p><a href="/sobre-nosotros.html">Sobre nosotros</a><a href="/privacidad.html">Privacidad</a><a href="/politica-editorial.html">Política editorial</a><a href="/contacto.html">Contacto</a></p></div></footer>
 <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js" defer></script>
-<script src="/mapa/mapa.js?v=4" defer></script>
+<script src="/mapa/mapa.js?v=20261028-oficial" defer></script>
 <script src="/assets/clima-ticker.js?v=4" defer></script><script src="/assets/page-transitions.js?v=1" defer></script></body></html>
