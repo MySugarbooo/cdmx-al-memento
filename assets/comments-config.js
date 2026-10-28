@@ -1,7 +1,7 @@
 /* Configuración pública de Firebase (NO colocar secretos aquí).
-   Registra el proyecto en Firebase, activa Google y Facebook en Authentication,
-   crea Firestore y añade el dominio cdmx-al-memento.pages.dev a dominios autorizados.
-   La app de Facebook también debe permitir el redirect de Firebase Auth. */
+   Activa Google en Firebase Authentication y añade cdmx-al-memento.pages.dev
+   a los dominios autorizados. El inicio de sesión con Facebook no está habilitado.
+   apiKey es la clave pública de configuración web, no una credencial de administrador. */
 window.CDMX_COMMENTS_FIREBASE = {
   apiKey: 'AIzaSyAbbaz25BSHNHqQpwmdyMk_eTEb7ZDXtfc',
   authDomain: 'cdmx-al-memento.firebaseapp.com',
