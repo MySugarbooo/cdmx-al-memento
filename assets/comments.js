@@ -107,14 +107,168 @@ forumSearch?.addEventListener('input',()=>{forumQuery=forumSearch.value.trim().t
 forumSort?.addEventListener('change',()=>display(currentRows));
 root.querySelectorAll('[data-forum-filter]').forEach(b=>b.addEventListener('click',()=>{forumFilter=b.dataset.forumFilter;root.querySelectorAll('[data-forum-filter]').forEach(x=>{x.classList.toggle('active',x===b);x.setAttribute('aria-pressed',String(x===b))});display(currentRows)}));
 function profileFor(topic){const c=topic.c;const profile=document.createElement('div');profile.className='community-profile';const avatar=document.createElement('span');avatar.className='community-avatar';const photo=String(c.photoURL||(user&&c.uid===user.uid?user.photoURL:'')||'');if(/^https:\/\//i.test(photo)&&photo.length<1500){const img=document.createElement('img');img.src=photo;img.alt='Foto de perfil';img.loading='lazy';img.referrerPolicy='no-referrer';img.onerror=()=>{img.remove();avatar.textContent=String(c.name||'L').charAt(0).toUpperCase()};avatar.append(img)}else avatar.textContent=String(c.name||'L').charAt(0).toUpperCase();const details=document.createElement('div');details.className='community-profile-details';const name=document.createElement('strong');name.textContent=String(c.name||'Lector').slice(0,80);const time=document.createElement('time');const stamp=c.createdAt?.toDate?.();time.textContent=stamp?new Intl.DateTimeFormat('es-MX',{dateStyle:'medium',timeStyle:'short',timeZone:'America/Mexico_City'}).format(stamp):'Fecha pendiente';details.append(name,time);profile.append(avatar,details);return profile;}
-function ownDelete(topic){if(!user||topic.c.uid!==user.uid)return null;const b=document.createElement('button');b.type='button';b.className='secondary forum-delete';b.textContent='Eliminar';b.onclick=async()=>{if(!confirm('¿Eliminar esta publicación?'))return;b.disabled=true;try{await fs.deleteDoc(topic.row.ref)}catch{status.textContent='No fue posible eliminar la publicación.'}finally{b.disabled=false}};return b;}
-function display(rows){currentRows=rows;list.replaceChildren();
- if(!isCommunity){for(const row of rows){const topic=decode(row);const li=document.createElement('li');li.append(profileFor(topic));const p=document.createElement('p');p.textContent=topic.body;li.append(p);const remove=ownDelete(topic);if(remove)li.append(remove);list.append(li)}if(!rows.length){const li=document.createElement('li');li.textContent='Todavía no hay comentarios.';list.append(li)}return;}if(forumFeed)forumFeed.replaceChildren();const items=rows.map(decode),topics=items.filter(x=>x.kind==='question'),replies=items.filter(x=>x.kind==='reply'),legacy=items.filter(x=>x.kind==='legacy');const count=document.getElementById('forum-count');if(count)count.textContent=topics.length+' preguntas · '+replies.length+' respuestas';
- const allTopics=topics.concat(legacy.map(x=>({...x,kind:'legacy',title:x.body.slice(0,90),body:x.body})));let shown=allTopics.filter(t=>{const matching=!forumQuery||(t.title+' '+t.body+' '+t.c.name).toLocaleLowerCase('es-MX').includes(forumQuery);const responses=replies.filter(r=>r.parent===t.id).length;return matching&&(forumFilter==='all'||forumFilter==='unanswered'&&responses===0||forumFilter==='answered'&&responses>0)});
- if(forumSort?.value==='popular')shown.sort((a,b)=>replies.filter(r=>r.parent===b.id).length-replies.filter(r=>r.parent===a.id).length);
- if(!shown.length){const empty=document.createElement('li');empty.className='forum-empty';empty.textContent=allTopics.length?'No hay preguntas que coincidan con el filtro.':'Todavía no hay preguntas. ¡Inicia la conversación!';list.append(empty);return;}
- for(const topic of shown){const li=document.createElement('li');li.className='forum-topic';const head=document.createElement('div');head.className='forum-topic-head';const badge=document.createElement('span');badge.className='forum-topic-badge';badge.textContent=topic.kind==='legacy'?'Conversación':'Pregunta';head.append(badge);const related=replies.filter(r=>r.parent===topic.id);const countBadge=document.createElement('span');countBadge.className='forum-reply-count';countBadge.textContent=related.length+' '+(related.length===1?'respuesta':'respuestas');head.append(countBadge);const title=document.createElement('h3');title.className='forum-topic-title';title.textContent=topic.title||'Conversación de la comunidad';const body=document.createElement('p');body.className='forum-topic-body';body.textContent=topic.body;li.append(head,title,profileFor(topic),body);const actions=document.createElement('div');actions.className='forum-actions';const respond=document.createElement('button');respond.type='button';respond.className='community-mention';respond.textContent='↩ Responder';respond.onclick=()=>setReply(topic);actions.append(respond);const del=ownDelete(topic);if(del)actions.append(del);li.append(actions);
- if(related.length){const thread=document.createElement('div');thread.className='forum-thread';thread.setAttribute('aria-label','Respuestas a '+topic.title);for(const answer of related.slice().reverse()){const box=document.createElement('div');box.className='forum-answer';box.append(profileFor(answer));const p=document.createElement('p');p.textContent=answer.body;box.append(p);const remove=ownDelete(answer);if(remove)box.append(remove);thread.append(box)}li.append(thread)}list.append(li)}
+let isModerator=false;
+function ownDelete(topic){
+ if(!user||(!isModerator&&topic.c.uid!==user.uid))return null;
+ const button=document.createElement('button');
+ button.type='button';button.className='secondary forum-delete';button.textContent='Eliminar';
+ button.addEventListener('click',async()=>{
+  const warning=topic.kind==='question'?'¿Eliminar tu pregunta? Las respuestas de otras personas seguirán disponibles.':'¿Eliminar esta publicación?';
+  if(!window.confirm(warning))return;
+  button.disabled=true;
+  try{
+   await fs.deleteDoc(topic.row.ref);
+   olderRows.delete(topic.id);
+   if(isCommunity)renderMerged();
+   status.textContent='Publicación eliminada.';
+  }catch(error){
+   status.textContent='No fue posible eliminar: '+(error.code||'error de permisos')+'.';
+  }finally{button.disabled=false}
+ });
+ return button;
+}
+function reportButton(topic){
+ if(!isCommunity||!topic.row)return null;
+ const box=document.createElement('span');box.className='forum-report-wrap';
+ const button=document.createElement('button');button.type='button';button.className='secondary forum-report';button.textContent='Reportar';
+ const editor=document.createElement('span');editor.className='forum-report-editor';editor.hidden=true;
+ const select=document.createElement('select');select.setAttribute('aria-label','Motivo del reporte');
+ for(const [value,label] of [['spam','Publicidad o spam'],['abuso','Acoso o insultos'],['privacidad','Información privada'],['desinformacion','Información engañosa'],['otro','Otro motivo']]){
+  const option=document.createElement('option');option.value=value;option.textContent=label;select.append(option);
+ }
+ const submit=document.createElement('button');submit.type='button';submit.textContent='Enviar reporte';
+ const cancel=document.createElement('button');cancel.type='button';cancel.textContent='Cancelar';cancel.className='secondary';
+ button.addEventListener('click',()=>{
+  if(!user){promptSignIn();return}
+  editor.hidden=!editor.hidden;if(!editor.hidden)select.focus();
+ });
+ cancel.addEventListener('click',()=>editor.hidden=true);
+ submit.addEventListener('click',async()=>{
+  if(!user){promptSignIn();return}
+  submit.disabled=true;
+  try{
+   const reportId=user.uid+'_'+topic.id;
+   await fs.setDoc(fs.doc(db,'community','main','reports',reportId),{
+    uid:user.uid,commentId:topic.id,reason:select.value,createdAt:fs.serverTimestamp()
+   });
+   editor.hidden=true;button.disabled=true;button.textContent='Reportado';
+   status.textContent='Reporte recibido para revisión. Gracias por avisar.';
+  }catch(error){
+   status.textContent=error.code==='permission-denied'?
+    'No se pudo enviar el reporte. Es necesario activar las nuevas reglas de seguridad de Firebase, o ya reportaste este mensaje.':
+    'No se pudo enviar el reporte ('+(error.code||'error')+').';
+  }finally{submit.disabled=false}
+ });
+ editor.append(select,submit,cancel);box.append(button,editor);return box;
+}
+function renderMerged(){
+ const all=new Map();
+ for(const row of liveRows)all.set(row.id,row);
+ for(const [id,row] of olderRows)if(!all.has(id))all.set(id,row);
+ const rows=[...all.values()].sort((a,b)=>{
+  const aa=a.data().createdAt?.toMillis?.()||0,bb=b.data().createdAt?.toMillis?.()||0;
+  return bb-aa;
+ });
+ display(rows);
+ if(moreButton){moreButton.hidden=!isCommunity||!hasMore;moreButton.disabled=loadingOlder;moreButton.textContent=loadingOlder?'Cargando…':'Cargar conversaciones anteriores'}
+ if(forumNotice)forumNotice.textContent='Búsqueda y contadores sobre '+rows.length+' mensajes cargados. Puedes cargar conversaciones anteriores.';
+}
+async function loadOlder(){
+ if(!isCommunity||loadingOlder||!hasMore||!pageCursor)return;
+ loadingOlder=true;renderMerged();
+ try{
+  const q=fs.query(collection,fs.orderBy('createdAt','desc'),fs.startAfter(pageCursor),fs.limit(PAGE_SIZE));
+  const snap=await fs.getDocs(q);
+  for(const row of snap.docs)olderRows.set(row.id,row);
+  if(snap.docs.length)pageCursor=snap.docs[snap.docs.length-1];
+  hasMore=snap.docs.length===PAGE_SIZE;
+  status.textContent=snap.docs.length?'Se agregaron '+snap.docs.length+' mensajes anteriores.':'No hay más conversaciones para cargar.';
+ }catch(error){status.textContent='No se pudieron cargar mensajes anteriores ('+(error.code||'error')+').'}
+ finally{loadingOlder=false;renderMerged()}
+}
+moreButton?.addEventListener('click',loadOlder);
+function display(rows){
+ currentRows=rows;list.replaceChildren();
+ if(!isCommunity){
+  for(const row of rows){const topic=decode(row);const li=document.createElement('li');li.append(profileFor(topic));
+   const p=document.createElement('p');p.textContent=topic.body;li.append(p);
+   const remove=ownDelete(topic);if(remove)li.append(remove);list.append(li)
+  }
+  if(!rows.length){const li=document.createElement('li');li.textContent='Todavía no hay comentarios.';list.append(li)}
+  return;
+ }
+ if(forumFeed)forumFeed.replaceChildren();
+ const items=rows.map(decode),topics=items.filter(x=>x.kind==='question'),
+  replies=items.filter(x=>x.kind==='reply'),legacy=items.filter(x=>x.kind==='legacy');
+ const topicMap=new Map(topics.concat(legacy).map(t=>[t.id,t]));
+ const replyMap=new Map();
+ for(const reply of replies){
+  if(!replyMap.has(reply.parent))replyMap.set(reply.parent,[]);
+  replyMap.get(reply.parent).push(reply);
+ }
+ const count=document.getElementById('forum-count');
+ if(count)count.textContent=topics.length+' preguntas · '+replies.length+' respuestas · '+legacy.length+' conversaciones anteriores (cargadas)';
+ const allTopics=topics.concat(legacy.map(x=>({...x,kind:'legacy',title:x.body.slice(0,90)})));
+ const orphanGroups=[...replyMap.entries()]
+  .filter(([id])=>!topicMap.has(id))
+  .map(([parent,answers])=>({id:'orphan-'+parent,kind:'orphan',parent,
+   title:'Pregunta eliminada o pendiente de cargar',body:'Las respuestas se conservan para no perder la conversación.',
+   c:{name:'Comunidad',uid:''},answers}));
+ const counts=new Map(allTopics.map(t=>[t.id,(replyMap.get(t.id)||[]).length]));
+ const shown=allTopics.concat(orphanGroups).filter(t=>{
+  const responses=t.kind==='orphan'?t.answers.length:counts.get(t.id)||0;
+  const text=(t.title+' '+t.body+' '+String(t.c.name||'')+' '+
+   (replyMap.get(t.id)||t.answers||[]).map(r=>r.body).join(' ')).toLocaleLowerCase('es-MX');
+  return (!forumQuery||text.includes(forumQuery)) &&
+   (forumFilter==='all'||forumFilter==='unanswered'&&responses===0||forumFilter==='answered'&&responses>0);
+ });
+ if(forumSort?.value==='popular')shown.sort((a,b)=>
+  (b.kind==='orphan'?b.answers.length:counts.get(b.id)||0)-
+  (a.kind==='orphan'?a.answers.length:counts.get(a.id)||0));
+ if(!shown.length){
+  const li=document.createElement('li');li.className='forum-empty';
+  li.textContent=allTopics.length||orphanGroups.length?'No hay conversaciones que coincidan con el filtro.':'Todavía no hay preguntas. ¡Inicia la conversación!';
+  list.append(li);return;
+ }
+ for(const topic of shown){
+  const li=document.createElement('li');li.className='forum-topic';li.id='post-'+topic.id;
+  const related=topic.kind==='orphan'?topic.answers:replyMap.get(topic.id)||[];
+  const head=document.createElement('div');head.className='forum-topic-head';
+  const badge=document.createElement('span');badge.className='forum-topic-badge';
+  badge.textContent=topic.kind==='legacy'?'Conversación':topic.kind==='orphan'?'Respuestas conservadas':'Pregunta';
+  const countBadge=document.createElement('span');countBadge.className='forum-reply-count';
+  countBadge.textContent=related.length+' '+(related.length===1?'respuesta':'respuestas');
+  head.append(badge,countBadge);
+  const title=document.createElement('h3');title.className='forum-topic-title';
+  title.textContent=topic.title||'Conversación de la comunidad';
+  const body=document.createElement('p');body.className='forum-topic-body';body.textContent=topic.body;
+  li.append(head,title);
+  if(topic.kind!=='orphan')li.append(profileFor(topic));
+  li.append(body);
+  if(topic.kind!=='orphan'){
+   const actions=document.createElement('div');actions.className='forum-actions';
+   const respond=document.createElement('button');respond.type='button';
+   respond.className='community-mention';respond.textContent='↩ Responder';respond.onclick=()=>setReply(topic);actions.append(respond);
+   const del=ownDelete(topic);if(del)actions.append(del);
+   const report=reportButton(topic);if(report)actions.append(report);
+   li.append(actions);
+  }
+  if(related.length){
+   const thread=document.createElement('div');thread.className='forum-thread';
+   thread.setAttribute('aria-label','Respuestas a '+topic.title);
+   for(const answer of related.slice().reverse()){
+    const answerBox=document.createElement('div');answerBox.className='forum-answer';answerBox.id='post-'+answer.id;
+    answerBox.append(profileFor(answer));
+    const p=document.createElement('p');p.textContent=answer.body;answerBox.append(p);
+    const acts=document.createElement('div');acts.className='forum-actions';
+    const remove=ownDelete(answer);if(remove)acts.append(remove);
+    const report=reportButton(answer);if(report)acts.append(report);
+    answerBox.append(acts);thread.append(answerBox);
+   }
+   li.append(thread);
+  }
+  list.append(li);
+ }
 }
 mod.onAuthStateChanged(auth,person=>{
  user=person;
