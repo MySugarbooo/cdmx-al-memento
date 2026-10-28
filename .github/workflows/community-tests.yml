@@ -1,0 +1,28 @@
+name: Pruebas del foro Mi comunidad
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/community-tests.yml'
+      - 'tests/test_community.mjs'
+      - 'assets/comments.js'
+      - 'assets/comments-seguridad-20261028.css'
+      - 'comunidad/index.html'
+      - 'noticias/index.html'
+      - 'firebase/firestore.rules'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  pruebas-comunidad:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verificar JavaScript y reglas de integración del foro
+        run: |
+          node --check assets/comments.js
+          node --test tests/test_community.mjs
