@@ -92,20 +92,36 @@ function json(body,ttl){
    'public, max-age='+ttl+', s-maxage='+ttl:'no-store'}
  });
 }
+function safeFailure(error){
+ const message=String(error?.message||'');
+ const match=message.match(/HTTP (\d{3})/);
+ if(match)return 'upstream-http-'+match[1];
+ if(/Fecha oficial no válida|No hay fecha\/hora oficial|desactualizado/.test(message))return 'source-date-invalid-or-stale';
+ if(/Categoría, riesgo o contaminante|Sin contaminantes|Clasificación desconocida/.test(message))return 'source-format-changed';
+ if(/excesivamente grande|inesperada/.test(message))return 'source-format-unexpected';
+ if(error?.name==='AbortError'||error?.name==='TimeoutError')return 'upstream-timeout';
+ return 'source-unreachable';
+}
 export async function onRequestGet({request,context}){
  const cache=typeof caches==='undefined'?null:caches.default;
  const key=new Request(new URL('/api/aire',request.url).toString());
  if(cache){try{const found=await cache.match(key);if(found)return found}catch{}}
  let result,ttl=0;
+ const failures=[];
  try{
   let air;
   try{air=await fromOfficial(REPORT)}
-  catch{air=await fromOfficial(LIGHT)}
+  catch(error){
+   failures.push(safeFailure(error));
+   air=await fromOfficial(LIGHT);
+  }
   result={schema:1,status:'ok',checked_at:new Date().toISOString(),air};
   ttl=600; // No convertir la hora de consulta en hora del reporte oficial.
- }catch{
+ }catch(error){
+  failures.push(safeFailure(error));
   result={schema:1,status:'unavailable',checked_at:new Date().toISOString(),
-   air:null,note:'No hay un índice oficial reciente comprobable. Consulta Aire CDMX.'};
+   air:null,diagnostic:failures,
+   note:'No hay un índice oficial reciente comprobable. Consulta Aire CDMX.'};
  }
  const response=json(result,ttl);
  if(cache&&context?.waitUntil&&ttl>0){
