@@ -106,12 +106,7 @@ async function fromOfficial(url){
   if(!response.ok)throw Error('HTTP '+response.status);
   const content=await response.text();
   if(content.length>450000)throw Error('Respuesta demasiado grande');
-  try{return parseAirReport(content)}
-  catch(error){
-   error.publicPreview=strip(content).slice(0,430);
-   error.publicSize=content.length;
-   throw error;
-  }
+  return parseAirReport(content);
  }finally{clearTimeout(timeout)}
 }
 function json(body,ttl){
@@ -138,23 +133,19 @@ export async function onRequestGet({request,context}){
  if(cache){try{const found=await cache.match(key);if(found)return found}catch{}}
  let result,ttl=0;
  const failures=[];
- const samples=[];
- const debug=new URL(request.url).searchParams.get('diagnostico')==='si';
  try{
   let air;
   try{air=await fromOfficial(REPORT)}
   catch(error){
    failures.push(safeFailure(error));
-   if(debug)samples.push({source:'reporte',preview:error.publicPreview||'',size:error.publicSize||0});
    air=await fromOfficial(LIGHT);
   }
   result={schema:1,status:'ok',checked_at:new Date().toISOString(),air};
   ttl=600; // No convertir la hora de consulta en hora del reporte oficial.
  }catch(error){
   failures.push(safeFailure(error));
-  if(debug)samples.push({source:'portada',preview:error.publicPreview||'',size:error.publicSize||0});
   result={schema:1,status:'unavailable',checked_at:new Date().toISOString(),
-   air:null,diagnostic:failures,...(debug?{samples}:{}),
+   air:null,diagnostic:failures,
    note:'No hay un índice oficial reciente comprobable. Consulta Aire CDMX.'};
  }
  const response=json(result,ttl);
