@@ -28,8 +28,8 @@ try{
   import('https://www.gstatic.com/firebasejs/10.14.1/firebase-auth.js')
  ]);
  fs=firestore;authApi=authentication;
- const app=appApi.getApps().find(x=>x.name==='cdmx-public-profiles')||
-  appApi.initializeApp(config,'cdmx-public-profiles');
+ const app=appApi.getApps().find(x=>x.name==='cdmx-comments')||
+  appApi.initializeApp(config,'cdmx-comments');
  db=fs.getFirestore(app);auth=authApi.getAuth(app);
 }catch(error){
  name.textContent='No se pudo cargar el perfil';
