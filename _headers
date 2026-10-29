@@ -17,6 +17,11 @@
 /comunidad/index.html
   Cache-Control: no-cache, must-revalidate
 
+/moderacion/
+  Cache-Control: no-cache, must-revalidate
+/moderacion/index.html
+  Cache-Control: no-cache, must-revalidate
+
 /alcaldias/
   Cache-Control: no-cache, must-revalidate
 
