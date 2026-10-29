@@ -25,6 +25,10 @@ on:
       - 'firebase/README.md'
       - 'tests/test_community_site.py'
       - 'tests/test_community_votes.py'
+      - 'tests/test_community_profiles.py'
+      - 'perfiles/index.html'
+      - 'assets/community-profiles.css'
+      - 'assets/community-profiles.js'
       - 'assets/forum-votes.css'
       - 'privacidad.html'
       - 'sitemap.xml'
@@ -100,6 +104,7 @@ jobs:
           node --check assets/clima-ticker.js
           node --check --input-type=module < functions/api/clima.js
           node --check assets/comments.js
+          node --check assets/community-profiles.js
           node --check firebase/asignar-moderador.mjs
           node --check assets/comments-config.js
           node --check assets/agenda.js
