@@ -13,11 +13,19 @@ const POLLUTANTS=['O3','PM2.5','PM10','NO2','SO2','CO'];
 const MAX_AGE=150*60*1000;
 const HEADERS={'Content-Type':'application/json; charset=utf-8','X-Content-Type-Options':'nosniff'};
 function strip(html){
+ const accents={aacute:'á',eacute:'é',iacute:'í',oacute:'ó',uacute:'ú',
+  ntilde:'ñ',uuml:'ü',amp:'&',nbsp:' ',quot:'"',apos:"'",lt:'<',gt:'>'};
  return String(html||'').replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi,'')
   .replace(/<style\b[^>]*>[\s\S]*?<\/style>/gi,'')
-  .replace(/<[^>]+>/g,' ').replace(/&nbsp;|&#160;/g,' ')
-  .replace(/&aacute;/g,'á').replace(/&eacute;/g,'é').replace(/&iacute;/g,'í')
-  .replace(/&oacute;/g,'ó').replace(/&uacute;/g,'ú').replace(/&ntilde;/g,'ñ')
+  .replace(/<[^>]+>/g,' ')
+  .replace(/&#(x[0-9a-f]+|\d+);/gi,(raw,n)=>{
+   const number=n.toLowerCase().startsWith('x')?parseInt(n.slice(1),16):parseInt(n,10);
+   return Number.isInteger(number)&&number>0&&number<0x110000?String.fromCodePoint(number):' ';
+  })
+  .replace(/&([a-zA-Z]+);/g,(raw,name)=>{
+   const val=accents[name.toLowerCase()];
+   return val===undefined?raw:(name[0]===name[0].toUpperCase()?val.toUpperCase():val);
+  })
   .replace(/\s+/g,' ').trim();
 }
 function sourceStamp(year,month,day,hour,minute){
