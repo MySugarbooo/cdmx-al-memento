@@ -1,0 +1,42 @@
+/* CDMX AL MEMENTO · Etapa 10 · diseño editorial premium, versión inicial.
+   Capa progresiva: no altera scripts, anuncios, Firebase ni flujos de noticias. */
+:root{--premium-pink:#f257a6;--premium-soft:#ffc5e3;--premium-ink:#fff3fa;--premium-muted:#d6bfd0;--premium-edge:#87516f;--premium-glass:#211728e8}
+html{scroll-padding-top:115px}
+body{font-optical-sizing:auto;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+body :is(h1,h2,h3){text-wrap:balance}
+body :is(p,li){overflow-wrap:break-word}
+body :is(a,button,input,select,textarea):focus-visible{outline:3px solid #ffafd8!important;outline-offset:3px!important}
+body :is(a,button){-webkit-tap-highlight-color:#e4489255}
+body :is(.wrap,.community-page,.citizen-page,.portal-layout){min-width:0}
+body :is(.card,.portal-card,.citizen-card,.citizen-panel,.neo-safety-item,.community-hero,.portal-hero){box-shadow:0 12px 36px #0a05142e;transition:box-shadow .2s ease,border-color .2s ease,transform .2s ease}
+@media(hover:hover){body :is(.card,.portal-card,.citizen-card,.neo-safety-item):hover{border-color:#c979a8;box-shadow:0 18px 42px #08040d6b;transform:translateY(-2px)}}
+body :is(.portal-hero,.citizen-hero,.community-hero){isolation:isolate;position:relative;overflow:hidden}
+body :is(.portal-hero,.citizen-hero,.community-hero)::after{content:"";position:absolute;inset:auto -18% -88px 38%;height:160px;pointer-events:none;background:radial-gradient(ellipse,#e35b9c21,transparent 70%);z-index:-1}
+body :is(.portal-hero,.citizen-hero,.community-hero) h1{letter-spacing:-.035em;line-height:1.11}
+body :is(.portal-card,.citizen-panel,.card){border-color:var(--premium-edge);background-image:linear-gradient(145deg,#e5a4ca0b,transparent 54%)}
+body :is(.portal-card,.citizen-panel,.card) :is(h2,h3){color:var(--premium-ink)}
+body :is(.portal-card,.citizen-panel,.card) :is(p,small){line-height:1.65}
+body :is(.portal-actions a,.citizen-button,.portal-btn){transition:background .2s ease,border-color .2s ease,transform .2s ease;min-height:42px}
+@media(hover:hover){body :is(.portal-actions a,.citizen-button,.portal-btn):hover{transform:translateY(-1px);border-color:var(--premium-soft)}}
+body :is(.portal-actions a,.citizen-button,.portal-btn):active{transform:translateY(0)}
+body :is(.portal-actions a,.citizen-button,.portal-btn):disabled{transform:none}
+body :is(.portal-select,.citizen-page input:not([type=checkbox]),.citizen-page select,.citizen-page textarea){accent-color:var(--premium-pink)}
+body :is(.portal-note,.notice,.citizen-notice){border-radius:13px}
+body :is(.portal-list li,.citizen-card){overflow-wrap:anywhere}
+body :is(.portal-list a,.portal-card a,.citizen-page a){text-underline-offset:3px}
+body .logo{letter-spacing:-.055em}
+body .eyebrow,body .citizen-kicker{font-weight:850;letter-spacing:.095em}
+body .portal-list li{transition:border-color .2s ease,background .2s ease}
+@media(hover:hover){body .portal-list li:hover{border-color:#a96b93;background:#30273b}}
+body :is(.portal-quick-links,.portal-line-grid,.citizen-method-grid){min-width:0}
+body img{max-width:100%}
+body .portal-card img{object-fit:cover}
+@media(max-width:720px){
+ body :is(.portal-hero,.citizen-hero,.community-hero){border-radius:17px}
+ body :is(.portal-card,.citizen-panel,.card){border-radius:15px}
+ body :is(.portal-hero,.citizen-hero,.community-hero) h1{letter-spacing:-.025em}
+ body .portal-actions a{min-height:44px}
+ body :is(.portal-layout,.citizen-layout){gap:14px}
+}
+@media(max-width:380px){body .wrap{padding-left:13px;padding-right:13px}body .citizen-page{width:calc(100% - 18px)}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto!important}body :is(.card,.portal-card,.citizen-card,.citizen-panel,.neo-safety-item,.community-hero,.portal-hero,.portal-actions a,.citizen-button,.portal-btn,.portal-list li){transition:none!important;transform:none!important}}
