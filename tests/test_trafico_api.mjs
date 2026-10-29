@@ -22,7 +22,7 @@ const item=(title,ageHours,link='https://news.google.com/rss/articles/ABC?oc=5',
 <title><![CDATA[${title} - ${source}]]></title><link>${link.replaceAll('&','&amp;')}</link>
 <pubDate>${new Date(now-ageHours*3600000).toUTCString()}</pubDate><source url="https://example.com">${source}</source></item>`;
 const xml='<?xml version="1.0"?><rss><channel>'+
-item('Cierre vial por protesta en CDMX',1)+
+item('Cierre vial en CDMX por evento',1)+
 item('Obras con reducción de carriles en Iztapalapa',3)+
 item('Marcha en Xalapa Veracruz para mañana en CDMX',1)+
 item('Precio del euro en México',1)+
@@ -32,7 +32,7 @@ item('Cierre vial en CDMX',1,'https://evil.example/rss/articles/ABC')+
 const parsed=parseRSS(xml,now);
 assert.equal(parsed.length,2);
 assert.deepEqual(parsed.map(x=>x.type),['cierres','obras']);
-assert.equal(parsed[0].title,'Cierre vial por protesta en CDMX');
+assert.equal(parsed[0].title,'Cierre vial en CDMX por evento');
 assert.equal(parsed[1].borough,'Iztapalapa');
 const merged=mergeFeeds([parsed,[parsed[0]]]);
 assert.equal(merged.length,2);
