@@ -22,6 +22,27 @@ Las nuevas publicaciones incluyen `uid`, nombre del token de Google, texto y fec
 
 Las publicaciones antiguas se conservan sin modificarse. Las fotos que no estaban guardadas no se pueden recuperar retroactivamente de Firebase Authentication desde el navegador de otra persona: seguirán usando una inicial.
 
+## Votos útiles y mejores respuestas (etapa 3)
+
+Los votos de Mi comunidad usan dos rutas de Firestore:
+
+- `community/main/votes/{commentId}/users/{uid}`: un registro por usuario y publicación. Solo su dueño puede consultar, crear o eliminar su propio registro; la enumeración de votantes está prohibida.
+- `community/main/voteTotals/{commentId}`: únicamente el número total de votos, visible al público.
+
+Una transacción actualiza ambos documentos de forma atómica. Las reglas usan `getAfter` y `existsAfter` para impedir incrementos manuales o votos falsos. El botón permite retirar el voto; al volver a votar solo se conserva un registro. Las respuestas con más votos útiles de cada hilo cargado se colocan primero y reciben una etiqueta. **La popularidad no significa que la información esté verificada.**
+
+**Paso obligatorio de despliegue:** este repositorio no controla automáticamente las reglas activas de Firebase. Tras publicar el JavaScript en Cloudflare Pages, abre Firebase Console del proyecto `cdmx-al-memento` > Firestore Database > Rules, revisa el archivo fuente completo `firebase/firestore.rules` y publícalo. Sin publicar las reglas, el foro detectará `permission-denied` en los votos y los deshabilitará, sin interrumpir preguntas, respuestas ni moderación. Es importante **reemplazar las reglas completas, no pegar únicamente la nueva sección**, para no perder las reglas anteriores.
+
+Pruebas funcionales sugeridas después de activar las reglas:
+
+1. Sin iniciar sesión: leer el foro y el número de votos, pero no emitir votos.
+2. Cuenta Google A: votar una respuesta y confirmar que el número sube uno; retirarlo y confirmar que baja uno.
+3. Cuenta Google B: votar la misma respuesta y comprobar que los votos independientes se suman.
+4. Intentar modificar el contador o votar a nombre de otra cuenta con una petición no autorizada: Firestore debe rechazarlo.
+5. Comprobar que los reportes siguen siendo privados y que el panel de moderación mantiene sus permisos.
+
+**Límite conocido:** al eliminar una publicación, Firestore no borra automáticamente los documentos de votos asociados. Se requiere una tarea de limpieza privilegiada para purgarlos definitivamente. La interfaz no vuelve a contabilizar votos de publicaciones que ya no existen.
+
 ## Moderación
 
 Los reportes se guardan en una colección privada. Un moderador con la **custom claim** `moderator: true` tiene panel para ver reportes, eliminar publicaciones denunciadas y cerrar reportes. Solo un entorno de administración con **Firebase Admin SDK** debe asignar esa custom claim, nunca el JavaScript público.
