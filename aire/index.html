@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Calidad del aire y clima por alcaldía | CDMX AL MEMENTO</title>
+<meta name="description" content="Consulta el Índice AIRE Y SALUD oficial de Ciudad de México, el clima estimado de sus 16 alcaldías y los comunicados de contingencia ambiental de la CAMe, con fechas y fuentes.">
+<meta name="robots" content="index,follow">
+<meta name="theme-color" content="#1a1425">
+<link rel="canonical" href="https://cdmx-al-memento.pages.dev/aire/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/styles.css?v=20261027-global">
+<link rel="stylesheet" href="/assets/clima-ticker.css?v=4">
+<link rel="stylesheet" href="/assets/aire.css?v=1">
+</head>
+<body>
+<a class="skip" href="#contenido">Saltar al contenido</a>
+<div id="weather-ribbon" class="weather-ribbon" role="region" aria-label="Pronóstico estimado de las 16 alcaldías">
+<a class="weather-ribbon__brand" href="/cerca/">🌸 CLIMA</a>
+<div class="weather-ribbon__window" aria-label="Recorrido de temperaturas por alcaldía"><div id="weather-ribbon-track" class="weather-ribbon__track"><div class="weather-ribbon__set"><span class="weather-chip">Consultando temperaturas…</span></div></div></div>
+<span id="weather-screen-reader" class="weather-sr-only" role="status" aria-live="polite"></span>
+</div>
+<header><div class="wrap"><div class="top"><a class="logo" href="/">CDMX <span>AL MEMENTO</span></a><span class="tag">MEDIO AMBIENTE · FUENTES IDENTIFICADAS</span></div>
+<nav aria-label="Secciones"><a href="/">Portada</a><a href="/aire/" aria-current="page">Aire y clima</a><a href="/cerca/">Mi alcaldía</a><a href="/avisos/">Avisos</a><a href="/trafico/">Tráfico</a><a href="/comunidad/">Mi comunidad</a></nav></div></header>
+<main class="air-page" id="contenido">
+<section class="air-hero">
+<p class="air-eyebrow">CDMX AL MEMENTO · MONITOREO AMBIENTAL</p>
+<h1>Calidad del aire y clima de la CDMX</h1>
+<p>Información oficial del <strong>Índice AIRE Y SALUD</strong> para la ciudad y pronósticos meteorológicos estimados para las 16 alcaldías. Las mediciones ambientales y los pronósticos son datos diferentes: no presentamos un índice de contaminación por alcaldía cuando la fuente no lo informa.</p>
+<div class="air-hero-links"><a href="#indice-aire">Índice oficial</a><a href="#clima-alcaldias">Clima por alcaldía</a><a href="#contingencias">Contingencias</a></div>
+</section>
+<section id="indice-aire" class="air-main-section" aria-labelledby="air-title">
+<div class="air-section-title"><div><p class="air-eyebrow">SEDEMA · AIRE CDMX</p><h2 id="air-title">Índice AIRE Y SALUD</h2></div><button id="air-refresh" type="button" class="air-action">Consultar de nuevo</button></div>
+<p class="air-description">Resumen general reportado por la Dirección de Monitoreo Atmosférico. <strong>No equivale a la calidad del aire de cada colonia, alcaldía o estación.</strong></p>
+<div class="air-index-summary">
+<div class="air-index-primary" data-level="unknown" id="air-index-primary">
+<span class="air-index-kicker">CALIDAD DEL AIRE · REPORTE GENERAL</span>
+<strong id="air-index-value">Sin verificación reciente</strong>
+<span id="air-index-risk">Riesgo no confirmado</span>
+</div>
+<div class="air-index-details">
+<div><span>Contaminante informado</span><strong id="air-index-pollutant">—</strong></div>
+<div><span>Hora del reporte oficial</span><strong id="air-index-reported">—</strong></div>
+<div><span>Hora de nuestra consulta</span><strong id="air-index-checked">—</strong></div>
+</div>
+</div>
+<p id="air-index-status" role="status" aria-live="polite" class="air-status">Consultando la fuente oficial…</p>
+<p id="air-index-recommendation" class="air-advice">Revisa el Índice AIRE Y SALUD antes de realizar actividades prolongadas al aire libre.</p>
+<div class="air-scale" aria-label="Escala oficial de cinco categorías de Aire y Salud">
+<div data-level="good"><span>●</span> Buena</div><div data-level="fair"><span>●</span> Aceptable</div>
+<div data-level="bad"><span>●</span> Mala</div><div data-level="very-bad"><span>●</span> Muy mala</div>
+<div data-level="extreme"><span>●</span> Extremadamente mala</div>
+</div>
+<p class="air-small">Los colores representan las <strong>categorías oficiales del índice</strong>, no un cálculo propio ni un diagnóstico médico. Si no hay datos recientes, no seleccionamos ninguna categoría.</p>
+<div class="air-source-links"><a href="https://www.aire.cdmx.gob.mx/ultima-hora-reporte.php" target="_blank" rel="noopener noreferrer">Consultar reporte oficial Aire CDMX ↗</a><a href="https://www.gob.mx/aire/recomendaciones.html" target="_blank" rel="noopener noreferrer">Riesgos y recomendaciones oficiales ↗</a></div>
+</section>
+<section id="clima-alcaldias" class="air-main-section" aria-labelledby="weather-title">
+<div class="air-section-title"><div><p class="air-eyebrow">PRONÓSTICO ESTIMADO · MET NORWAY</p><h2 id="weather-title">Clima de las 16 alcaldías</h2></div><button id="air-weather-refresh" type="button" class="air-action">Actualizar pronósticos</button></div>
+<p class="air-description">Temperatura, humedad, viento y lluvia estimados para una <strong>coordenada representativa</strong> de cada alcaldía. Son pronósticos de modelos meteorológicos; no mediciones de la calle donde estás.</p>
+<div class="air-filter">
+<label for="air-borough">Selecciona una alcaldía
+<select id="air-borough"><option value="all">Todas las alcaldías</option></select></label>
+<p id="air-weather-update" role="status" aria-live="polite">Consultando pronósticos…</p>
+</div>
+<div id="air-weather-grid" class="air-weather-grid" aria-label="Pronóstico por alcaldía"></div>
+<p class="air-small">«Lluvia estimada» expresa milímetros pronosticados para 1 o 6 horas, <strong>no probabilidad de lluvia ni precipitación observada</strong>. Si no está disponible, se indica.</p>
+<div class="air-source-links"><a href="https://api.met.no/" target="_blank" rel="noopener noreferrer">Pronósticos: MET Norway ↗</a><a href="/cerca/">Noticias por alcaldía ↗</a></div>
+</section>
+<section id="contingencias" class="air-main-section" aria-labelledby="air-contingency-title">
+<div class="air-section-title"><div><p class="air-eyebrow">COMISIÓN AMBIENTAL DE LA MEGALÓPOLIS</p><h2 id="air-contingency-title">Avisos de contingencia ambiental</h2></div><a class="air-action" href="https://www.gob.mx/comisionambiental/es/archivo/prensa" target="_blank" rel="noopener noreferrer">Abrir CAMe ↗</a></div>
+<p class="air-description">Aquí se consultan los últimos <strong>comunicados oficiales publicados</strong> sobre activaciones, continuaciones o suspensiones. <strong>Un aviso antiguo no informa si existe una contingencia en este momento.</strong> La calidad del aire «mala» tampoco implica, por sí sola, una contingencia declarada.</p>
+<p class="air-status" id="air-contingency-status" role="status" aria-live="polite">Consultando comunicados oficiales…</p>
+<div class="air-advisories" id="air-contingency-list"></div>
+<p class="air-small">Las medidas de circulación vehicular y restricciones sólo deben aplicarse según el boletín oficial vigente. Consulta directamente la <a href="https://www.gob.mx/comisionambiental/es" target="_blank" rel="noopener noreferrer">CAMe</a> y <a href="https://www.aire.cdmx.gob.mx/default.php" target="_blank" rel="noopener noreferrer">Aire CDMX</a> antes de decidir.</p>
+</section>
+<section class="air-method" aria-label="Metodología de datos">
+<h2>Cómo verificamos esta información</h2>
+<div class="air-method-grid">
+<div><h3>Índice de aire</h3><p>Procede del reporte general de Aire CDMX. Si la hora publicada tiene más de 150 minutos, no mostramos un nivel como vigente.</p></div>
+<div><h3>Pronóstico meteorológico</h3><p>Estimaciones de MET Norway para las 16 alcaldías, con fecha de pronóstico. Si faltan datos, mostramos un aviso y no inventamos cifras.</p></div>
+<div><h3>Contingencias</h3><p>Comunicados fechados de la CAMe. Son documentos históricos; para confirmar medidas vigentes hay que leer la publicación oficial más reciente.</p></div>
+</div>
+</section>
+</main>
+<footer><div class="wrap">© 2026 CDMX AL MEMENTO · Proyecto informativo independiente · <a href="/politica-editorial.html">Política editorial</a> · <a href="/privacidad.html">Privacidad</a> · <a href="/contacto.html">Contacto</a></div></footer>
+<script src="/assets/aire.js?v=1" defer></script>
+<script src="/assets/clima-ticker.js?v=4" defer></script>
+<script src="/assets/page-transitions.js?v=1" defer></script>
+</body></html>
