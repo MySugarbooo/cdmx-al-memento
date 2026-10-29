@@ -96,7 +96,9 @@ function safeFailure(error){
  const message=String(error?.message||'');
  const match=message.match(/HTTP (\d{3})/);
  if(match)return 'upstream-http-'+match[1];
- if(/Fecha oficial no válida|No hay fecha\/hora oficial|desactualizado/.test(message))return 'source-date-invalid-or-stale';
+ if(/No hay fecha\/hora oficial/.test(message))return 'source-time-missing';
+ if(/Fecha oficial no válida/.test(message))return 'source-date-invalid';
+ if(/desactualizado/.test(message))return 'source-report-stale';
  if(/Categoría, riesgo o contaminante|Sin contaminantes|Clasificación desconocida/.test(message))return 'source-format-changed';
  if(/excesivamente grande|inesperada/.test(message))return 'source-format-unexpected';
  if(error?.name==='AbortError'||error?.name==='TimeoutError')return 'upstream-timeout';
