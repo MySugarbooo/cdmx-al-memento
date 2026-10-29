@@ -24,6 +24,8 @@ on:
       - 'reportes-ciudadanos/index.html'
       - 'assets/reportes-ciudadanos.js'
       - 'assets/reportes-ciudadanos.css'
+      - 'assets/premium-2026.css'
+      - 'tests/test_premium_ui.py'
       - 'tests/test_citizen_reports.py'
       - 'tests/test_citizen_reports.mjs'
       - 'firebase/asignar-moderador.mjs'
