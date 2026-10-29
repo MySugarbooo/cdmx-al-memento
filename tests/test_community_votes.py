@@ -52,7 +52,7 @@ class CommunityVotingTests(unittest.TestCase):
         forum = read("comunidad/index.html")
         self.assertIn("assets/forum-votes.css", forum)
         self.assertIn("id=\"forum-voting-note\"", forum)
-        self.assertRegex(forum, r"comments\\.js\\?v=[a-zA-Z0-9_-]+")
+        self.assertRegex(forum, r"comments\.js\?v=[a-zA-Z0-9_-]+")
         self.assertIn("las respuestas más votadas", forum.lower())
         css = read("assets/forum-votes.css")
         self.assertIn(".forum-best-answer", css)
