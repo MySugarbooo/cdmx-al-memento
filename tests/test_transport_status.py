@@ -110,7 +110,9 @@ class TransportStatusTests(unittest.TestCase):
             "function isFresh(data)",
             "function isComplete(data)",
             "checked_at",
-            "'/transporte/estado.json?v='",
+            "'/api/estado-transporte?t='",
+            "'/transporte/estado.json?t='",
+            "new AbortController()",
             "textContent",
             "Sin verificación reciente",
         ):
