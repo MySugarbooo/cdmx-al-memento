@@ -97,7 +97,10 @@ async function loadReports(){
  try{
   const snap=await getDocs(query(reportCollection,orderBy('createdAt','desc'),limit(50)));
   if(serial!==generation||!canAct(viewer))return;
-  const data=snap.docs;
+  // Envoltorios propios: no modificamos objetos internos del SDK de Firestore.
+  const data=snap.docs.map(row=>({
+   id:row.id,ref:row.ref,data:()=>row.data(),_post:null,_display:[]
+  }));
   // Consulta progresiva: máximo ocho lecturas de publicaciones a la vez.
   for(let i=0;i<data.length;i+=8){
    const batch=data.slice(i,i+8);
@@ -208,7 +211,7 @@ async function decide(report,action,rawNote,card,error,dismiss,remove,viewer){
   if(!canAct(viewer))return;
   error.textContent='No se realizó la acción ('+(e.code||e.message||'error')+').'+
    (e.code==='permission-denied'?' Comprueba que las reglas nuevas de Firebase estén publicadas.':'');
-  dismiss.disabled=false;remove.disabled=action==='remove'?false:!report._post;
+  dismiss.disabled=false;remove.disabled=!validComment(commentId)||!report._post;
  }
 }
 async function loadHistory(){
