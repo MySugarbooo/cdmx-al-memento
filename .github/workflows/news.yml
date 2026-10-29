@@ -85,6 +85,15 @@ on:
       - 'functions/api/trafico.js'
       - 'tests/test_traffic_page.py'
       - 'tests/test_trafico_api.mjs'
+      - 'aire/index.html'
+      - 'assets/aire.js'
+      - 'assets/aire.css'
+      - 'functions/api/aire.js'
+      - 'functions/api/contingencias.js'
+      - 'tests/test_air_page.py'
+      - 'tests/test_aire_api.mjs'
+      - 'cerca/index.html'
+      - 'avisos/index.html'
       - 'tests/test_kisumi_studio.py'
       - 'kisumi-studio/**'
       - 'functions/api/clima.js'
@@ -124,6 +133,10 @@ jobs:
           node --check --input-type=module < functions/api/trafico.js
           node --check assets/trafico.js
           node tests/test_trafico_api.mjs
+          node --check assets/aire.js
+          node --check --input-type=module < functions/api/aire.js
+          node --check --input-type=module < functions/api/contingencias.js
+          node tests/test_aire_api.mjs
           node --check assets/estado-transporte.js
           node tests/test_transporte_api.mjs
           node --check assets/comments.js
