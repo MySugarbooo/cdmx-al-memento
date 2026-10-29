@@ -68,13 +68,18 @@ function parseAirReport(markup,now=Date.now()){
  const riskMatch=/(?:Nivel de riesgo|Riesgo):\s*(EXTREMADAMENTE ALTO|MUY ALTO|MODERADO|BAJO|ALTO)\b/i.exec(
   plain.slice(Math.max(0,idx-250),idx+450)
  );
- const contaminantMatch=/Contaminante\(s\):\s*([\s\S]*?)(?=\s*(?:Nivel de riesgo|Riesgo|Recomendaci[oó]n|Hoy no circulan|[│|])\s*:|$)/i.exec(after);
+ const pollutantLabel=/Contaminante\(s\):/i.exec(after);
  const risk=riskMatch?.[1]?.toUpperCase();
- if(!BANDS.includes(category)||!RISKS.includes(risk)||!contaminantMatch)
+ if(!BANDS.includes(category)||!RISKS.includes(risk)||!pollutantLabel)
   throw Error('Categoría, riesgo o contaminante ausente');
- const pollutantTokens=contaminantMatch[1].toUpperCase().replace(/\s+/g,'').slice(0,120);
+ // El portal inserta textos accesorios después del nombre del contaminante.
+ // Identificar únicamente las fórmulas dentro del campo encabezado, sin
+ // depender de una etiqueta HTML específica o de una coma final.
+ const pollutantField=after.slice(pollutantLabel.index+pollutantLabel[0].length)
+  .split(/\b(?:Nivel de riesgo|Riesgo|Recomendaci[oó]n|Hoy no circulan|Información|Reporte)\b/i)[0]
+  .slice(0,95).toUpperCase().replace(/\s+/g,'');
  const detected=POLLUTANTS.filter(p=>
-  new RegExp('(?:^|[,;/])'+p.replace('.','\\.')+'(?:$|[,;/])').test(pollutantTokens)
+  new RegExp('(?:^|[^A-Z0-9.])'+p.replace('.','\\.')+'(?:$|[^A-Z0-9.])').test(pollutantField)
  );
  if(!detected.length)throw Error('Sin contaminantes identificables');
  return {
