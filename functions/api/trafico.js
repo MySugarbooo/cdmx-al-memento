@@ -125,8 +125,9 @@ async function fetchOne(q){
  }finally{clearTimeout(timer)}
 }
 function resultJSON(object,ttl=CACHE_SECONDS){
+ const cacheControl=ttl>0?'public, max-age='+ttl+', s-maxage='+ttl:'no-store';
  return new Response(JSON.stringify(object),{
-  status:200,headers:{...CORS,'Cache-Control':'public, max-age='+ttl+', s-maxage='+ttl}
+  status:200,headers:{...CORS,'Cache-Control':cacheControl}
  });
 }
 export async function onRequestGet({request,context}){
@@ -144,8 +145,11 @@ export async function onRequestGet({request,context}){
   streams_consulted:good.length,streams_expected:SOURCES.length,
   window_hours:48,articles:records
  };
- const response=resultJSON(output,good.length?CACHE_SECONDS:90);
- if(cache&&context?.waitUntil)context.waitUntil(cache.put(key,response.clone()).catch(()=>{}));
+ // Fallos transitorios de Google News no se guardan en caché: permitir reintento.
+ const response=resultJSON(output,good.length?CACHE_SECONDS:0);
+ if(cache&&context?.waitUntil&&good.length){
+  context.waitUntil(cache.put(key,response.clone()).catch(()=>{}));
+ }
  return response;
 }
 export {decodeXML,tagValue,identifyType,placeFromTitle,hasCDMXContext,linkSafe,parseRSS,mergeFeeds};
