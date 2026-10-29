@@ -5,7 +5,7 @@
 <meta name="theme-color" content="#101116"><link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="/styles.css?v=20261012-topical-pages"><link rel="stylesheet" href="/assets/portal.css?v=1">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6521969406386261" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="/assets/clima-ticker.css?v=4"></head><body>
+<link rel="stylesheet" href="/assets/clima-ticker.css?v=4"><link rel="stylesheet" href="/assets/estado-transporte.css?v=1"></head><body>
 <a class="skip" href="#contenido">Saltar al contenido</a>
 <div id="weather-ribbon" class="weather-ribbon" role="region" aria-label="Tira de pronóstico meteorológico para la CDMX"><a class="weather-ribbon__brand" href="/cerca/" title="Explorar clima y noticias por alcaldía">🌸 CLIMA</a><div class="weather-ribbon__window" aria-label="Clima estimado en movimiento; se detiene al señalar la tira"><div id="weather-ribbon-track" class="weather-ribbon__track"><div class="weather-ribbon__set"><span class="weather-chip">⛅ Consultando el clima de la CDMX…</span></div></div></div><span class="weather-sr-only" id="weather-screen-reader" role="status" aria-live="polite"></span></div><header><div class="wrap"><div class="top"><a class="logo" href="/">CDMX <span>AL MEMENTO</span></a><span class="tag">LA CAPITAL, AL INSTANTE.</span></div>
 <nav aria-label="Navegación principal"><a href="/">Inicio</a><a href="/cerca/">Mi alcaldía</a><a href="/movilidad/">Transporte</a><a href="/avisos/">Alertas</a><a href="/mapa/">Mapa</a><a href="/favoritos/">Guardados</a></nav></div></header>
@@ -15,6 +15,37 @@
 <div class="portal-actions"><a href="https://www.metro.cdmx.gob.mx/la-red" target="_blank" rel="noopener noreferrer">Red oficial del Metro ↗</a>
 <a href="https://www.metrobus.cdmx.gob.mx/ServicioMB" target="_blank" rel="noopener noreferrer">Avisos de Metrobús ↗</a>
 <a href="/mapa/">Ver rutas en nuestro mapa ↗</a></div></section>
+<section class="transport-live" id="transport-live" aria-labelledby="transport-live-title">
+ <p class="transport-eyebrow">ESTADO DEL SERVICIO · TABLERO PÚBLICO OFICIAL</p>
+ <h2 id="transport-live-title">Metro y Metrobús, línea por línea</h2>
+ <p class="transport-description">Consulta periódica de las incidencias publicadas en el tablero de movilidad del Gobierno de la Ciudad de México. Los avisos se muestran con su estado y tramo cuando la fuente aporta esos datos. <strong>«Servicio regular» no significa necesariamente que haya trenes o autobuses circulando ahora.</strong></p>
+ <div class="transport-summary">
+  <p id="transport-updated">Consultando la última información disponible…</p>
+  <button type="button" id="transport-refresh">Revisar datos publicados</button>
+ </div>
+ <div class="transport-stat-list" aria-label="Resumen de incidencias informadas">
+  <div class="transport-stat"><strong id="transport-stat-metro">—</strong><span>Líneas de Metro con incidencias</span></div>
+  <div class="transport-stat"><strong id="transport-stat-mb">—</strong><span>Líneas de Metrobús con incidencias</span></div>
+  <div class="transport-stat"><strong id="transport-stat-affected">—</strong><span>Líneas con incidencias en total</span></div>
+ </div>
+ <div class="transport-tabs" role="group" aria-label="Filtrar por sistema">
+  <button type="button" class="active" data-transport-filter="all" aria-pressed="true">Todos</button>
+  <button type="button" data-transport-filter="stc" aria-pressed="false">Metro · 12 líneas</button>
+  <button type="button" data-transport-filter="mb" aria-pressed="false">Metrobús · 7 líneas</button>
+ </div>
+ <p id="transport-status" class="transport-status" role="status" aria-live="polite">Sin comprobar todavía.</p>
+ <div id="transport-grid" class="transport-grid" aria-label="Avisos por línea"></div>
+ <p id="transport-note" class="transport-note"></p>
+ <aside class="transport-official" aria-label="Fuentes y límites de los datos">
+  <h3>Verifica antes de viajar</h3>
+  <p>La hora mostrada es la de la <strong>consulta automática</strong>, no la de inicio de un incidente. Si la última consulta completa tiene más de 90 minutos, todos los estados pasan a «Sin verificación reciente». Un aviso puede cambiar antes de la siguiente comprobación.</p>
+  <div class="transport-official-links">
+   <a href="https://www.metro.cdmx.gob.mx/la-red/estado-del-servicio" target="_blank" rel="noopener noreferrer">Estado oficial del Metro ↗</a>
+   <a href="https://metrobus.cdmx.gob.mx/ServicioMB" target="_blank" rel="noopener noreferrer">Estado oficial de Metrobús ↗</a>
+   <a href="https://metrobus.cdmx.gob.mx/portal-ciudadano/datos-abiertos" target="_blank" rel="noopener noreferrer">Datos abiertos de Metrobús ↗</a>
+  </div>
+ </aside>
+</section>
 <section aria-labelledby="metro-lines-title"><p class="eyebrow">REFERENCIA CARTOGRÁFICA</p><h2 id="metro-lines-title">Conoce las doce líneas</h2>
 <p class="portal-info">Selecciona una línea para ver sus terminales de referencia. El listado no representa el servicio actual: una estación o tramo puede estar cerrado temporalmente.</p>
 <div id="portal-metro-lines" class="portal-line-grid"></div>
@@ -31,4 +62,4 @@
 </section></main>
 <footer><div class="wrap">© 2026 CDMX AL MEMENTO · Proyecto informativo independiente.
 <p><a href="/sobre-nosotros.html">Sobre nosotros</a><a href="/politica-editorial.html">Política editorial</a><a href="/creditos-fotograficos.html">Créditos fotográficos</a><a href="/privacidad.html">Privacidad</a><a href="/contacto.html">Contacto</a></p></div></footer>
-<script src="/assets/portal.js?v=6" defer></script><script src="/assets/clima-ticker.js?v=4" defer></script><script src="/assets/page-transitions.js?v=1" defer></script></body></html>
+<script src="/assets/estado-transporte.js?v=1" defer></script><script src="/assets/portal.js?v=6" defer></script><script src="/assets/clima-ticker.js?v=4" defer></script><script src="/assets/page-transitions.js?v=1" defer></script></body></html>
