@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="es-MX"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Reportes ciudadanos por colonia | CDMX AL MEMENTO</title>
+<meta name="description" content="Espacio vecinal para compartir reportes sobre baches, fugas, alumbrado y servicios de CDMX. Revisión editorial antes de publicar y consulta del SUAC oficial.">
+<meta name="robots" content="index,follow"><meta name="theme-color" content="#1c1726">
+<link rel="canonical" href="https://cdmx-al-memento.pages.dev/reportes-ciudadanos/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/styles.css?v=20261027-global">
+<link rel="stylesheet" href="/assets/clima-ticker.css?v=4">
+<link rel="stylesheet" href="/assets/reportes-ciudadanos.css?v=1">
+</head><body>
+<a class="skip" href="#contenido">Saltar al contenido</a>
+<div id="weather-ribbon" class="weather-ribbon" role="region" aria-label="Clima estimado en la CDMX">
+<a class="weather-ribbon__brand" href="/cerca/">🌸 CLIMA</a>
+<div class="weather-ribbon__window" aria-label="Pronósticos por alcaldía"><div id="weather-ribbon-track" class="weather-ribbon__track"><div class="weather-ribbon__set"><span class="weather-chip">Consultando clima…</span></div></div></div>
+<span class="weather-sr-only" id="weather-screen-reader" role="status" aria-live="polite"></span>
+</div>
+<header><div class="wrap"><div class="top"><a class="logo" href="/">CDMX <span>AL MEMENTO</span></a><span class="tag">TU COMUNIDAD · TU CIUDAD</span></div>
+<nav aria-label="Navegación principal"><a href="/">Portada</a><a href="/reportes-ciudadanos/" aria-current="page">Reportes ciudadanos</a><a href="/comunidad/">Mi comunidad</a><a href="/cerca/">Mi alcaldía</a><a href="/servicios/">Servicios</a></nav></div></header>
+<main class="citizen-page" id="contenido">
+<section class="citizen-hero">
+<p class="citizen-kicker">REPORTES VECINALES · CDMX AL MEMENTO</p>
+<h1>Tu colonia también tiene voz</h1>
+<p>Comparte problemas de servicios urbanos como baches, fugas de agua, basura o luminarias apagadas. Los reportes se publican <strong>únicamente después de revisión editorial</strong> y no se consideran denuncias oficiales ni hechos verificados por las autoridades.</p>
+<div class="citizen-hero-actions"><a href="#nuevo-reporte">Enviar un reporte</a><a href="#publicados">Ver reportes revisados</a><a href="#canal-oficial">Solicitar atención oficial</a></div>
+</section>
+<section class="citizen-notice" id="canal-oficial" aria-labelledby="citizen-suac-title">
+<div><p class="citizen-kicker">CANAL DEL GOBIERNO DE CDMX</p><h2 id="citizen-suac-title">Para que la autoridad atienda el problema</h2>
+<p>Publicar aquí <strong>no genera un folio SUAC</strong> ni envía la solicitud al gobierno. Si buscas atención y seguimiento institucional, registra tu solicitud en el Sistema Unificado de Atención Ciudadana (SUAC).</p></div>
+<div class="citizen-suac-actions"><a href="https://atencionciudadana.cdmx.gob.mx/" target="_blank" rel="noopener noreferrer">Ir al portal SUAC ↗</a><small>Emergencias: 911 · LOCATEL: *0311</small></div>
+</section>
+<section class="citizen-layout" aria-label="Publicaciones y formulario">
+<div class="citizen-column">
+<section class="citizen-panel" id="publicados" aria-labelledby="citizen-public-title">
+<div class="citizen-heading"><div><p class="citizen-kicker">PUBLICACIONES REVISADAS</p><h2 id="citizen-public-title">Reportes de la comunidad</h2></div><button id="citizen-public-refresh" type="button" class="citizen-button citizen-button-outline">Actualizar</button></div>
+<p class="citizen-intro">Cada publicación es un <strong>testimonio vecinal no comprobado por CDMX AL MEMENTO</strong>. Solo se muestran reportes aprobados, sin nombre, correo ni identificador de cuenta de la persona que los envió.</p>
+<div class="citizen-filters">
+<label for="citizen-filter-borough">Alcaldía<select id="citizen-filter-borough"><option value="">Todas las alcaldías</option></select></label>
+<label for="citizen-filter-category">Tipo de problema<select id="citizen-filter-category"><option value="">Todos los tipos</option><option value="baches">Baches</option><option value="fugas">Agua y fugas</option><option value="alumbrado">Alumbrado</option><option value="basura">Basura</option><option value="banquetas">Banquetas</option><option value="transporte">Transporte</option><option value="otro">Otro</option></select></label>
+<label for="citizen-filter-text">Buscar colonia o palabra<input id="citizen-filter-text" type="search" maxlength="80" placeholder="Ej. alumbrado, Roma Norte"></label>
+</div>
+<p class="citizen-status" id="citizen-public-status" role="status" aria-live="polite">Conectando con los reportes revisados…</p>
+<div id="citizen-public-list" class="citizen-cards"></div>
+<p class="citizen-fineprint">Esta página es un espacio informativo independiente; no está afiliada a SUAC ni verifica que una reparación se haya realizado. Para urgencias usa el 911, no este formulario.</p>
+</section>
+</div>
+<div class="citizen-side">
+<section class="citizen-panel" id="nuevo-reporte" aria-labelledby="citizen-form-title">
+<p class="citizen-kicker">PARTICIPA CON TU CUENTA GOOGLE</p><h2 id="citizen-form-title">Enviar reporte vecinal</h2>
+<p class="citizen-intro">Tus datos de inicio de sesión no aparecerán en la lista pública. <strong>No compartas domicilios particulares, nombres de terceros, teléfonos ni fotografías de personas.</strong></p>
+<div class="citizen-auth"><p id="citizen-auth-status" role="status" aria-live="polite">Conectando con Google…</p>
+<button type="button" id="citizen-login" class="citizen-button">Entrar con Google</button>
+<button type="button" id="citizen-logout" class="citizen-button citizen-button-outline" hidden>Cerrar sesión</button></div>
+<form id="citizen-form" hidden>
+<label for="citizen-borough">Alcaldía <span aria-hidden="true">*</span><select id="citizen-borough" required><option value="">Selecciona alcaldía</option></select></label>
+<label for="citizen-colonia">Colonia (opcional)<input id="citizen-colonia" type="text" minlength="3" maxlength="70" placeholder="Solo colonia; no calle ni número"></label>
+<label for="citizen-category">¿Qué problema observaste? <span aria-hidden="true">*</span><select id="citizen-category" required><option value="">Selecciona tipo</option><option value="baches">Bache o pavimento</option><option value="fugas">Fuga o agua</option><option value="alumbrado">Alumbrado público</option><option value="basura">Basura y limpieza</option><option value="banquetas">Banquetas y accesibilidad</option><option value="transporte">Transporte público</option><option value="otro">Otro servicio urbano</option></select></label>
+<label for="citizen-title">Título del reporte <span aria-hidden="true">*</span><input id="citizen-title" type="text" minlength="8" maxlength="110" placeholder="Ej. Luminarias apagadas en la colonia" required></label>
+<label for="citizen-description">Describe lo que observaste <span aria-hidden="true">*</span><textarea id="citizen-description" rows="5" minlength="20" maxlength="900" required placeholder="Explica de forma respetuosa el problema, sin direcciones privadas ni datos personales."></textarea></label>
+<label class="citizen-consent"><input id="citizen-consent" type="checkbox" required><span>Acepto que el texto, categoría y zona del reporte puedan publicarse tras revisión editorial, sin mostrar mi identidad de Google. Entiendo que este envío no genera un folio de atención gubernamental.</span></label>
+<button id="citizen-send" type="submit" class="citizen-button citizen-button-full">Enviar para revisión</button>
+<p id="citizen-send-status" class="citizen-status" role="status" aria-live="polite"></p>
+</form>
+</section>
+<section class="citizen-panel citizen-my" id="mis-reportes" hidden aria-labelledby="citizen-mine-title">
+<div class="citizen-heading"><h2 id="citizen-mine-title">Mis reportes</h2><button id="citizen-my-refresh" type="button" class="citizen-button citizen-button-outline">Actualizar</button></div>
+<p class="citizen-intro">Tus reportes pendientes o descartados solo son visibles desde tu cuenta. Puedes retirar un reporte pendiente.</p>
+<p id="citizen-my-status" class="citizen-status" role="status" aria-live="polite"></p>
+<div id="citizen-my-list" class="citizen-my-list"></div>
+</section>
+</div></section>
+<section id="citizen-moderator" class="citizen-panel citizen-moderator" hidden aria-labelledby="citizen-mod-title">
+<div class="citizen-heading"><div><p class="citizen-kicker">SOLO CUENTAS CON PERMISO DE MODERACIÓN</p><h2 id="citizen-mod-title">Revisión editorial de reportes</h2></div><button type="button" class="citizen-button citizen-button-outline" id="citizen-mod-refresh">Actualizar cola</button></div>
+<p>Las publicaciones se revisan antes de aparecer en el sitio. Comprueba que no incluyan datos privados, acusaciones sin pruebas o descripciones sensibles. Los botones requieren el rol <code>moderator: true</code> emitido por Firebase Admin SDK.</p>
+<p class="citizen-status" id="citizen-mod-status" role="status" aria-live="polite"></p>
+<div id="citizen-mod-list" class="citizen-mod-list"></div>
+</section>
+<section class="citizen-method"><h2>Cómo funciona</h2><div class="citizen-method-grid">
+<div><strong>1. Envías un reporte</strong><p>Google confirma tu sesión; guardamos el envío de forma privada y lo marcamos «Pendiente».</p></div>
+<div><strong>2. Se revisa</strong><p>Un moderador puede aprobarlo o descartarlo. La lista pública no revela tu cuenta.</p></div>
+<div><strong>3. Se da seguimiento editorial</strong><p>Podemos marcarlo «Cerrado», lo que <strong>no acredita reparación ni respuesta oficial</strong>. Para atención institucional usa el SUAC.</p></div>
+</div></section>
+</main>
+<footer><div class="wrap">© 2026 CDMX AL MEMENTO · Proyecto informativo independiente · <a href="/privacidad.html">Privacidad</a> · <a href="/comunidad/">Mi comunidad</a> · <a href="/contacto.html">Contacto</a></div></footer>
+<script src="/assets/comments-config.js?v=1" defer></script>
+<script src="/assets/reportes-ciudadanos.js?v=1" defer></script>
+<script src="/assets/clima-ticker.js?v=4" defer></script>
+<script src="/assets/page-transitions.js?v=1" defer></script>
+</body></html>
