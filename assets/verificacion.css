@@ -1,0 +1,12 @@
+/* Ficha editorial: evidencia disponible sin afirmar verificación de hechos no comprobados. */
+.local-verification{background:linear-gradient(135deg,#352437,#1f2433);color:#f8edf5;border:1px solid #aa6892;border-left:4px solid #ea7ab7;border-radius:15px;padding:clamp(15px,3vw,23px);margin:20px 0 26px}
+.local-verification h2{margin:0 0 8px!important;color:#ffbddc;font-size:1.45rem}
+.local-verification .local-verification-state{display:inline-flex;background:#54354d;border:1px solid #bd819f;border-radius:999px;padding:7px 12px;color:#ffdaeb;font-weight:750;font-size:.87rem;line-height:1.35;margin:8px 0 19px}
+.local-verification-data{margin:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.local-verification-field{border:1px solid #715369;border-radius:11px;padding:12px;overflow-wrap:anywhere;background:#231e2e}
+.local-verification-field dt{font-weight:800;font-size:.82rem;color:#efabc9;margin:0 0 5px}
+.local-verification-field dd{margin:0;font-size:.95rem;line-height:1.45;color:#fff0f7}
+.local-verification-method{margin:15px 0;color:#ddcada;font-size:.9rem;line-height:1.5}
+.local-verification-source{display:inline-flex;align-items:center;min-height:38px;padding:7px 13px;border:1px solid #f3abc9;border-radius:10px;color:#ffe0ee!important;text-decoration:none;font-weight:750}
+.local-verification-source:hover,.local-verification-source:focus-visible{background:#5c3b56}
+@media(max-width:620px){.local-verification-data{grid-template-columns:1fr}.local-verification .local-verification-state{border-radius:12px}}
