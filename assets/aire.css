@@ -1,0 +1,79 @@
+/* Etapa 8 · Aire y clima · CDMX AL MEMENTO. Estilos limitados a /aire/. */
+.air-page{width:min(1160px,calc(100% - 30px));margin:24px auto 80px;color:#f8eff7}
+.air-page *{box-sizing:border-box}
+.air-hero{padding:clamp(24px,4vw,41px);border-radius:23px;background:radial-gradient(circle at 88% 5%,#b53b7650,transparent 47%),linear-gradient(120deg,#3a253e,#1b2131);border:1px solid #94617d}
+.air-eyebrow{font-size:.77rem;color:#ffb3d6;letter-spacing:.09em;font-weight:850;margin:0 0 7px}
+.air-hero h1{font-size:clamp(1.9rem,4vw,2.9rem);margin:10px 0;color:#ffe2f1;line-height:1.16}
+.air-hero p{max-width:860px;color:#e7d2e1;line-height:1.65}
+.air-hero-links{display:flex;gap:10px;flex-wrap:wrap;margin:22px 0 0}
+.air-hero-links a{background:#422a48;color:#ffdeec;border:1px solid #9e6d8c;border-radius:11px;text-decoration:none;padding:10px 14px;font-size:.89rem;font-weight:800}
+.air-hero-links a:first-child{background:#cc3f8a;color:#fff;border-color:#eb9bc6}
+.air-main-section{margin:31px 0;background:#252335;border:1px solid #71506c;border-radius:20px;padding:clamp(18px,3vw,27px)}
+.air-section-title{display:flex;gap:15px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.air-section-title h2{color:#ffebf5;font-size:clamp(1.4rem,3vw,2rem);margin:3px 0}
+.air-section-title .air-eyebrow{margin:0 0 7px}
+.air-action{display:inline-flex;align-items:center;justify-content:center;min-height:41px;padding:10px 15px;border:1px solid #e1a0c2;border-radius:10px;background:#bc347c;color:white!important;text-decoration:none;cursor:pointer;font:inherit;font-size:.88rem;font-weight:800}
+.air-action:disabled{opacity:.6;cursor:wait}
+.air-description{line-height:1.62;color:#e2d1df;margin:11px 0 19px}
+.air-index-summary{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(260px,1fr);gap:14px}
+.air-index-primary{padding:27px;border:1px solid #9a7c99;border-radius:17px;background:#352e41;display:grid;align-content:center;gap:11px;min-height:202px}
+.air-index-kicker{letter-spacing:.07em;font-size:.76rem;font-weight:800;color:#e9cce2}
+.air-index-primary strong{color:#fff5fc;font-size:clamp(1.65rem,3vw,2.2rem);line-height:1.24}
+.air-index-primary>span:last-child{color:#f7d7e8;font-weight:750}
+.air-index-primary[data-level=good]{background:#1c443a;border-color:#79b897}
+.air-index-primary[data-level=fair]{background:#53492b;border-color:#d6b969}
+.air-index-primary[data-level=bad]{background:#60432d;border-color:#dfa06d}
+.air-index-primary[data-level=very-bad]{background:#61333a;border-color:#e4868d}
+.air-index-primary[data-level=extreme]{background:#5b365b;border-color:#d298d8}
+.air-index-details{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.air-index-details>div{border:1px solid #6c4d6b;border-radius:12px;background:#30283e;padding:15px;display:grid;gap:7px;align-content:center;min-width:0}
+.air-index-details>div:first-child{grid-column:1/-1}
+.air-index-details span{font-size:.8rem;color:#e4c4d9}
+.air-index-details strong{font-size:1rem;color:#fff1f8;overflow-wrap:anywhere;line-height:1.4;font-variant-numeric:tabular-nums}
+.air-status{line-height:1.57;color:#f1bdd9;font-size:.9rem;margin:15px 0}
+.air-advice{color:#ffe4f1;background:#3f3046;border-left:3px solid #f18cbd;border-radius:6px;padding:13px 15px;margin:16px 0;line-height:1.6}
+.air-scale{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin:18px 0}
+.air-scale>div{border:1px solid #74566c;background:#332b40;color:#eadae5;border-radius:10px;padding:9px 8px;font-size:.8rem;display:flex;gap:6px;align-items:center;justify-content:center;line-height:1.3;text-align:center}
+.air-scale>div>span{font-size:1.1rem}
+.air-scale [data-level=good]>span{color:#5dc79e}
+.air-scale [data-level=fair]>span{color:#f0d263}
+.air-scale [data-level=bad]>span{color:#f6a75b}
+.air-scale [data-level=very-bad]>span{color:#f16a77}
+.air-scale [data-level=extreme]>span{color:#c17bda}
+.air-small{font-size:.84rem;color:#cfbfd0;line-height:1.6;margin:12px 0}
+.air-page a{color:#ffc0dd;text-underline-offset:3px}
+.air-source-links{display:flex;gap:12px;flex-wrap:wrap;margin:17px 0 0}
+.air-source-links a{font-size:.89rem;font-weight:800}
+.air-filter{display:flex;flex-wrap:wrap;align-items:end;justify-content:space-between;gap:12px;background:#332940;border:1px solid #79536c;padding:15px;border-radius:14px;margin:16px 0}
+.air-filter label{display:grid;gap:7px;min-width:min(260px,100%);font-weight:800;color:#f1c0dc;font-size:.87rem}
+.air-filter select{min-height:43px;background:#191725;color:#fff;border:1px solid #a47896;padding:9px 12px;border-radius:11px;font:inherit}
+.air-filter p{margin:0;color:#d5bdd0;font-size:.84rem}
+.air-weather-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:13px}
+.air-weather-card{background:#2d293d;border:1px solid #755571;border-radius:15px;padding:15px;min-width:0}
+.air-weather-card[data-selected=true]{border-color:#ffabd1;background:#46304b}
+.air-weather-card h3{font-size:1.01rem;color:#ffe5f1;margin:2px 0 12px;line-height:1.36}
+.air-weather-line{display:flex;gap:8px;align-items:center}
+.air-weather-icon{font-size:1.6rem}
+.air-weather-temp{font-size:1.85rem;font-weight:900;font-variant-numeric:tabular-nums;color:#ffabd7;line-height:1.1}
+.air-weather-description{font-size:.85rem;color:#ede0e9;margin:9px 0}
+.air-weather-details{display:grid;gap:5px;color:#dfccd9;font-size:.81rem;margin:12px 0}
+.air-weather-card small{display:block;color:#c9b7c6;font-size:.72rem;line-height:1.5}
+.air-weather-card .air-borough-link{display:inline-flex;font-size:.79rem;margin-top:12px;font-weight:800}
+.air-advisories{display:grid;gap:11px}
+.air-advisory{background:#30283d;border:1px solid #78566d;padding:15px 18px;border-radius:14px}
+.air-advisory-tag{display:inline-flex;font-size:.75rem;font-weight:800;color:#ffdbef;border-radius:99px;background:#584153;border:1px solid #916b88;padding:5px 10px}
+.air-advisory h3{font-size:1.07rem;margin:11px 0 8px;color:#fff1f8;line-height:1.48}
+.air-advisory p{font-size:.87rem;color:#dcc7d6;margin:8px 0;line-height:1.55}
+.air-advisory a{font-weight:800;font-size:.86rem}
+.air-empty{padding:18px 20px;background:#332c3d;border:1px dashed #93738b;border-radius:12px;color:#e4d1dd;line-height:1.5}
+.air-method{border-top:1px solid #75506c;margin:36px 0;padding-top:22px}
+.air-method h2{font-size:1.45rem;color:#ffe1ef}
+.air-method-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.air-method-grid>div{border:1px solid #6b4c68;border-radius:15px;padding:18px;background:#292436}
+.air-method-grid h3{color:#ffc8e3;margin:0 0 8px;font-size:1.02rem}
+.air-method-grid p{color:#dccbdd;font-size:.89rem;line-height:1.6;margin:0}
+.air-page :focus-visible{outline:3px solid #ffbedf;outline-offset:3px}
+@media(max-width:1040px){.air-weather-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:760px){.air-index-summary{grid-template-columns:1fr}.air-weather-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.air-scale{grid-template-columns:repeat(3,1fr)}.air-method-grid{grid-template-columns:1fr}.air-filter label{flex:1}}
+@media(max-width:500px){.air-page{width:calc(100% - 20px);margin-top:12px}.air-main-section{padding:15px}.air-index-details{grid-template-columns:1fr}.air-index-details>div:first-child{grid-column:auto}.air-weather-grid{grid-template-columns:1fr}.air-scale{grid-template-columns:repeat(2,1fr)}.air-section-title .air-action{width:100%}.air-index-primary{min-height:155px;padding:20px}}
+@media(prefers-reduced-motion:reduce){.air-page *{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
