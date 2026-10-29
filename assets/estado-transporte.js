@@ -140,9 +140,19 @@ async function load(){
  loading=true;button.disabled=true;button.textContent='Consultando…';
  const serial=++activeRequest;
  try{
-  const resp=await fetch('/transporte/estado.json?v='+Date.now(),{cache:'no-store'});
-  if(!resp.ok)throw Error('HTTP '+resp.status);
-  const body=await resp.json();
+  let body=null;
+  try{
+   const resp=await fetch('/api/estado-transporte?t='+Date.now(),{cache:'no-store'});
+   if(resp.ok){
+    const live=await resp.json();
+    if(isFresh(live))body=live;
+   }
+  }catch(error){console.warn('Consulta directa de transporte no disponible:',error.message||error)}
+  if(!body){
+   const resp=await fetch('/transporte/estado.json?t='+Date.now(),{cache:'no-store'});
+   if(!resp.ok)throw Error('HTTP '+resp.status);
+   body=await resp.json();
+  }
   if(serial!==activeRequest)return;
   snapshot=body;previousCheck=Date.now();render();
  }catch(error){
