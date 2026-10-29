@@ -81,7 +81,7 @@ function clearReply(){
  updateLimit();
 }
 function promptSignIn(){
- status.textContent='Inicia sesión con Google para publicar o responder.';
+ status.textContent='Inicia sesión con Google para votar, publicar o responder.';
  document.getElementById('cdmx-comments-login')?.scrollIntoView({block:'center',behavior:'smooth'});
  google?.focus();
 }
@@ -360,7 +360,9 @@ async function loadOlder(){
 }
 moreButton?.addEventListener('click',loadOlder);
 function display(rows){
- currentRows=rows;list.replaceChildren();voteButtons.clear();
+ currentRows=rows;
+ voteObserver?.disconnect();
+ list.replaceChildren();voteButtons.clear();
  if(!isCommunity){
   for(const row of rows){const topic=decode(row);const li=document.createElement('li');li.append(profileFor(topic));
    const p=document.createElement('p');p.textContent=topic.body;li.append(p);
