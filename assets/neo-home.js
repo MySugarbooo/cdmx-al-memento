@@ -37,6 +37,14 @@ if(!shell.hasChildNodes())shell.innerHTML=[
 '<nav class="neo-links" id="neo-links" aria-label="Accesos rápidos"></nav>',
 '</div><nav class="neo-dock" aria-label="Navegación del celular"><a class="neo-dock-active" href="/"><span>⌂</span>Inicio</a><a href="/alcaldias/"><span>▤</span>Alcaldías</a><a class="neo-dock-publish" href="/comunidad/#cdmx-comments-editor" aria-label="Publicar en la comunidad">＋</a><a href="/comunidad/"><span>♧</span>Comunidad</a><a href="/favoritos/"><span>♙</span>Guardados</a></nav>'
 ].join('');
+// Enlace de seguimiento compatible con portadas estáticas o generadas.
+const developmentNav=shell.querySelector('.neo-nav');
+if(developmentNav&&!developmentNav.querySelector('a[href="/noticias-en-desarrollo/"]')){
+ const developmentLink=el('a','','En desarrollo');
+ developmentLink.href='/noticias-en-desarrollo/';
+ const spacer=developmentNav.querySelector('.neo-nav-spacer');
+ developmentNav.insertBefore(developmentLink,spacer||null);
+}
 const state={stories:[],current:0,filter:'',query:'',visible:8,fromBackup:true};
 function initStatic(){
  const date=shell.querySelector('#neo-date');date.textContent=mxDate.format(new Date());
