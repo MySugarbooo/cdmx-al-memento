@@ -51,7 +51,7 @@ class PublicProfilesTests(unittest.TestCase):
         self.assertIn("inner.href='/perfiles/?uid='+encodeURIComponent(uid)", script)
         self.assertIn("myProfile.href=person?'/perfiles/?uid='+encodeURIComponent(person.uid)", script)
         self.assertIn("id=\"community-my-profile\"", page)
-        self.assertIn("comments.js?v=11-perfiles", page)
+        self.assertIn("comments.js?v=12-perfiles", page)
         self.assertIn("/assets/community-profiles.css", page)
 
     def test_no_security_rule_change_necessary(self):
