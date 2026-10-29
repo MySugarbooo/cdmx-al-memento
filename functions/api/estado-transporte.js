@@ -15,7 +15,7 @@ const EXPECTED={
 };
 const TABLE='frmEstadoServicio:tblEstadoServicio';
 const TTL_SECONDS=300;
-const TIMEOUT_MS=11500;
+const TIMEOUT_MS=7500;
 const HEADERS={'Content-Type':'application/json; charset=utf-8','X-Content-Type-Options':'nosniff'};
 const NORMAL='servicio regular';
 
@@ -151,7 +151,10 @@ export async function onRequestGet({request,context}){
  }
  let output,cacheSeconds=TTL_SECONDS;
  try{
-  const [metro,metrobus]=await Promise.all([readSystem('stc'),readSystem('mb')]);
+  const [metro,metrobus]=await Promise.race([
+   Promise.all([readSystem('stc'),readSystem('mb')]),
+   new Promise((_,reject)=>setTimeout(()=>reject(Error('Tiempo de espera agotado')),10000))
+  ]);
   output={
    schema:1,status:'ok',checked_at:new Date().toISOString(),
    source:'Tablero público oficial de incidentes de movilidad CDMX',
