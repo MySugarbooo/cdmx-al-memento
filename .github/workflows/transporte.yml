@@ -1,15 +1,8 @@
 name: Estado oficial del Metro y Metrobús
 on:
-  schedule:
-    # Los horarios de GitHub Actions pueden sufrir retrasos.
-    - cron: '9,39 * * * *'
+  # Respaldo manual: la consulta recurrente la hace Cloudflare Pages Functions,
+  # evitando consumir cientos de compilaciones gratuitas cada mes.
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths:
-      - '.github/workflows/transporte.yml'
-      - 'scripts/estado_transporte.py'
-      - 'tests/test_transport_status.py'
 permissions:
   contents: write
 concurrency:
