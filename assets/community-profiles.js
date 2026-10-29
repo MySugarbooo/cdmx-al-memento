@@ -89,10 +89,11 @@ function render(){
  $('profile-legacy-count').textContent=String(legacy);
  $('profile-total-count').textContent=String(entries.length);
  const recent=entries.find(x=>String(x.data.name||'').trim()||safePhoto(x.data.photoURL));
+ const photoPost=entries.find(x=>safePhoto(x.data.photoURL));
  const display=String(recent?.data.name|| (ownUser?.uid===targetUid?ownUser.displayName:'')||'Lector').slice(0,80);
  name.textContent=display;
  document.title=display+' · Perfil público | CDMX AL MEMENTO';
- setAvatar(recent?.data.photoURL||(ownUser?.uid===targetUid?ownUser.photoURL:''),display);
+ setAvatar(photoPost?.data.photoURL||(ownUser?.uid===targetUid?ownUser.photoURL:''),display);
  subtitle.textContent=entries.length?
   'Preguntas y respuestas compartidas públicamente en Mi comunidad.':
   'Esta cuenta todavía no tiene mensajes públicos disponibles en el foro.';
