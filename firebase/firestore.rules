@@ -65,6 +65,68 @@ service cloud.firestore {
       allow update: if false;
       allow delete: if moderator() || (signedIn() && resource.data.uid == request.auth.uid);
     }
+    // Etapa 3: solo el total de votos es público; las identidades no se listan.
+    // Un voto y su total cambian en una misma transacción de Firestore.
+    function voteTotalPath(commentId) {
+      return /databases/$(database)/documents/community/main/voteTotals/$(commentId);
+    }
+    function myVotePath(commentId) {
+      return /databases/$(database)/documents/community/main/votes/$(commentId)/users/$(request.auth.uid);
+    }
+    function validVoteCount() {
+      return request.resource.data.keys().hasOnly(['count'])
+        && request.resource.data.keys().hasAll(['count'])
+        && request.resource.data.count is int
+        && request.resource.data.count >= 0;
+    }
+    function validVotedComment(commentId) {
+      return commentId.matches('[a-zA-Z0-9]{20}')
+        && exists(/databases/$(database)/documents/community/main/comments/$(commentId));
+    }
+    match /community/main/votes/{commentId}/users/{voterId} {
+      // Solo el dueño puede saber si su cuenta votó; nunca se puede enumerar usuarios.
+      allow get: if signedIn() && voterId == request.auth.uid;
+      allow list: if false;
+      allow create: if signedInGoogle() && notBlocked()
+        && voterId == request.auth.uid
+        && validVotedComment(commentId)
+        && request.resource.data.keys().hasOnly(['createdAt'])
+        && request.resource.data.keys().hasAll(['createdAt'])
+        && request.resource.data.createdAt == request.time
+        && getAfter(voteTotalPath(commentId)).data.count ==
+          (exists(voteTotalPath(commentId)) ? get(voteTotalPath(commentId)).data.count + 1 : 1);
+      allow update: if false;
+      allow delete: if signedInGoogle() && notBlocked()
+        && voterId == request.auth.uid
+        && exists(voteTotalPath(commentId))
+        && get(voteTotalPath(commentId)).data.count > 0
+        && getAfter(voteTotalPath(commentId)).data.count ==
+          get(voteTotalPath(commentId)).data.count - 1;
+    }
+    match /community/main/voteTotals/{commentId} {
+      allow read: if true;
+      allow create: if signedInGoogle() && notBlocked()
+        && validVotedComment(commentId) && validVoteCount()
+        && request.resource.data.count == 1
+        && !exists(myVotePath(commentId))
+        && existsAfter(myVotePath(commentId))
+        && getAfter(myVotePath(commentId)).data.createdAt == request.time;
+      allow update: if signedInGoogle() && notBlocked()
+        && validVoteCount()
+        && (
+          (request.resource.data.count == resource.data.count + 1
+            && validVotedComment(commentId)
+            && !exists(myVotePath(commentId))
+            && existsAfter(myVotePath(commentId))
+            && getAfter(myVotePath(commentId)).data.createdAt == request.time)
+          ||
+          (resource.data.count > 0
+            && request.resource.data.count == resource.data.count - 1
+            && exists(myVotePath(commentId))
+            && !existsAfter(myVotePath(commentId)))
+        );
+      allow delete: if false;
+    }
     match /community/main/reports/{reportId} {
       // Los reportes no son públicos: solo moderadores con rol firmado.
       allow read, delete: if moderator();
