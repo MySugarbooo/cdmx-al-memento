@@ -87,6 +87,11 @@
 /reportes/index.html
   Cache-Control: no-cache, must-revalidate
 
+/reportes-ciudadanos/
+  Cache-Control: no-cache, must-revalidate
+/reportes-ciudadanos/index.html
+  Cache-Control: no-cache, must-revalidate
+
 /privacidad.html
   Cache-Control: no-cache, must-revalidate
 
