@@ -64,6 +64,11 @@
 /trafico/index.html
   Cache-Control: no-cache, must-revalidate
 
+/aire/
+  Cache-Control: no-cache, must-revalidate
+/aire/index.html
+  Cache-Control: no-cache, must-revalidate
+
 /seguridad/
   Cache-Control: no-cache, must-revalidate
 
