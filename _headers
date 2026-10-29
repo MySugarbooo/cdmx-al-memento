@@ -97,3 +97,8 @@
 
 /sitemap.xml
   Cache-Control: no-cache, must-revalidate
+
+/estadisticas/
+  Cache-Control: no-cache, must-revalidate
+/estadisticas/index.html
+  Cache-Control: no-cache, must-revalidate
