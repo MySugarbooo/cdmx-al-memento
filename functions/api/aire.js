@@ -78,8 +78,9 @@ function parseAirReport(markup,now=Date.now()){
  );
  const pollutantLabel=/Contaminante\(s\):/i.exec(after);
  const risk=riskMatch?.[1]?.toUpperCase();
- if(!BANDS.includes(category)||!RISKS.includes(risk)||!pollutantLabel)
-  throw Error('Categoría, riesgo o contaminante ausente');
+ if(!BANDS.includes(category))throw Error('Categoría oficial ilegible');
+ if(!RISKS.includes(risk))throw Error('Riesgo oficial ilegible');
+ if(!pollutantLabel)throw Error('Etiqueta de contaminante ausente');
  // El portal inserta textos accesorios después del nombre del contaminante.
  // Identificar únicamente las fórmulas dentro del campo encabezado, sin
  // depender de una etiqueta HTML específica o de una coma final.
@@ -89,7 +90,7 @@ function parseAirReport(markup,now=Date.now()){
  const detected=POLLUTANTS.filter(p=>
   new RegExp('(?:^|[^A-Z0-9.])'+p.replace('.','\\.')+'(?:$|[^A-Z0-9.])').test(pollutantField)
  );
- if(!detected.length)throw Error('Sin contaminantes identificables');
+ if(!detected.length)throw Error('Fórmula de contaminante ilegible');
  return {
   category,risk,pollutants:detected,reported_at:publishedAt,
   source_url:REPORT,official:true,
@@ -122,6 +123,10 @@ function safeFailure(error){
  if(/No hay fecha\/hora oficial/.test(message))return 'source-time-missing';
  if(/Fecha oficial no válida/.test(message))return 'source-date-invalid';
  if(/desactualizado/.test(message))return 'source-report-stale';
+ if(/Categoría oficial ilegible/.test(message))return 'source-category-not-readable';
+ if(/Riesgo oficial ilegible/.test(message))return 'source-risk-not-readable';
+ if(/Etiqueta de contaminante ausente/.test(message))return 'source-pollutant-label-absent';
+ if(/Fórmula de contaminante ilegible/.test(message))return 'source-pollutant-not-readable';
  if(/Categoría, riesgo o contaminante|Sin contaminantes|Clasificación desconocida/.test(message))return 'source-format-changed';
  if(/excesivamente grande|inesperada/.test(message))return 'source-format-unexpected';
  if(error?.name==='AbortError'||error?.name==='TimeoutError')return 'upstream-timeout';
