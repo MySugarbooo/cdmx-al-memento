@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "source": "Tablero público oficial de incidentes de movilidad CDMX",
+  "source_url": "https://incidentesmovilidad.cdmx.gob.mx/public/bandejaEstadoServicio.xhtml",
+  "checked_at": null,
+  "status": "unavailable",
+  "operators": {
+    "stc": {
+      "url": "https://www.metro.cdmx.gob.mx/la-red/estado-del-servicio",
+      "rows": []
+    },
+    "mb": {
+      "url": "https://metrobus.cdmx.gob.mx/ServicioMB",
+      "rows": []
+    }
+  },
+  "note": "Sin consulta verificada todavía. No representa el estado actual."
+}
