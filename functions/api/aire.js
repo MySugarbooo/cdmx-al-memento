@@ -34,43 +34,53 @@ function sourceStamp(year,month,day,hour,minute){
  return date.toISOString();
 }
 function parseAirReport(markup,now=Date.now()){
- const first=String(markup||'').split(/<table\b/i)[0];
- if(first.length<130||first.length>450000)throw Error('Respuesta oficial inesperada');
- const paragraphs=[...first.matchAll(/<p\b[^>]*>([\s\S]*?)<\/p>/gi)].map(item=>strip(item[1]));
- let dateText='',hour=null,minute=0;
- for(const p of paragraphs){
-  const full=p.match(/(?:^|[\s,])([01]?\d|2[0-3]):([0-5]\d)\s*h\s*,?\s*(.*)/i);
-  if(full){hour=Number(full[1]);minute=Number(full[2]);dateText=full[3];break}
- }
- // La portada ligera publica hora y fecha en párrafos separados.
- if(hour===null){
-  const h=paragraphs.find(p=>/^([01]?\d|2[0-3])\s*horas?$/i.test(p));
-  if(h){hour=Number(h.match(/\d+/)[0]);minute=0}
-  dateText=paragraphs.find(p=>/(\d{1,2})\s+de\s+([a-záéíóú]+)\s+de\s+(20\d\d)/i.test(p))||'';
- }
- const dateParts=dateText.match(/(\d{1,2})\s+de\s+([a-záéíóú]+)\s+de\s+(20\d\d)/i);
- if(hour===null||!dateParts)throw Error('No hay fecha/hora oficial');
- const month=MONTHS[dateParts[2].toLowerCase()];
- const publishedAt=sourceStamp(Number(dateParts[3]),month,Number(dateParts[1]),hour,minute);
+ // El portal puede responder con tablas de presentación antes del indicador;
+ // no cortar el HTML en la primera tabla ni depender de párrafos específicos.
+ const raw=String(markup||'');
+ if(raw.length<130||raw.length>450000)throw Error('Respuesta oficial inesperada');
+ const plain=strip(raw).normalize('NFC');
+ const indexMatch=/Índice\s+AIRE\s+Y\s+SALUD:\s*(EXTREMADAMENTE MALA|MUY MALA|ACEPTABLE|BUENA|MALA)\b/i.exec(plain);
+ if(!indexMatch)throw Error('Categoría, riesgo o contaminante ausente');
+ const idx=indexMatch.index;
+ // Sólo aceptamos datos alrededor del encabezado del reporte, no texto de
+ // informes históricos o tablas de otros años en el resto del documento.
+ const before=plain.slice(Math.max(0,idx-1700),idx);
+ const after=plain.slice(idx,idx+550);
+ const dates=[...before.matchAll(/(\d{1,2})\s+de\s+([a-záéíóú]+)\s+de\s+(20\d\d)/gi)];
+ const dateParts=dates.at(-1);
+ if(!dateParts)throw Error('No hay fecha/hora oficial');
+ const hours=[...before.matchAll(/(?:^|\s)([01]?\d|2[0-3]):([0-5]\d)\s*h\b/gi)];
+ const hoursPlain=[...before.matchAll(/(?:^|\s)([01]?\d|2[0-3])\s*horas?\b/gi)];
+ const timeCandidates=[
+  ...hours.map(m=>({index:m.index,hour:Number(m[1]),minute:Number(m[2])})),
+  ...hoursPlain.map(m=>({index:m.index,hour:Number(m[1]),minute:0}))
+ ].sort((a,b)=>a.index-b.index);
+ const time=timeCandidates.at(-1);
+ if(!time)throw Error('No hay fecha/hora oficial');
+ const publishedAt=sourceStamp(
+  Number(dateParts[3]),MONTHS[dateParts[2].toLowerCase()],
+  Number(dateParts[1]),time.hour,time.minute
+ );
  if(!publishedAt)throw Error('Fecha oficial no válida');
  const age=now-Date.parse(publishedAt);
  if(age< -15*60*1000||age>MAX_AGE)throw Error('Índice oficial desactualizado');
- const flat=paragraphs.join(' | ').normalize('NFC');
- const b=flat.match(/Índice\s+AIRE\s+Y\s+SALUD:\s*(EXTREMADAMENTE MALA|MUY MALA|ACEPTABLE|BUENA|MALA)\b/i);
- const r=flat.match(/(?:Nivel de riesgo|Riesgo):\s*(EXTREMADAMENTE ALTO|MUY ALTO|MODERADO|BAJO|ALTO)\b/i);
- const pollution=paragraphs.find(p=>/^Contaminante\(s\):\s*/i.test(p));
- if(!b||!r||!pollution)throw Error('Categoría, riesgo o contaminante ausente');
- const category=b[1].toUpperCase(),risk=r[1].toUpperCase();
- if(!BANDS.includes(category)||!RISKS.includes(risk))throw Error('Clasificación desconocida');
- const raw=pollution.replace(/^Contaminante\(s\):\s*/i,'');
- const joined=raw.toUpperCase().replace(/\s+/g,'');
- const detected=POLLUTANTS.filter(p=>new RegExp('(?:^|[,;/])'+p.replace('.','\\.')+'(?:$|[,;/])').test(joined));
- if(!detected.length||raw.length>120)throw Error('Sin contaminantes identificables');
+ const category=indexMatch[1].toUpperCase();
+ const riskMatch=/(?:Nivel de riesgo|Riesgo):\s*(EXTREMADAMENTE ALTO|MUY ALTO|MODERADO|BAJO|ALTO)\b/i.exec(
+  plain.slice(Math.max(0,idx-250),idx+450)
+ );
+ const contaminantMatch=/Contaminante\(s\):\s*([\s\S]*?)(?=\s*(?:Nivel de riesgo|Riesgo|Recomendaci[oó]n|Hoy no circulan|[│|])\s*:|$)/i.exec(after);
+ const risk=riskMatch?.[1]?.toUpperCase();
+ if(!BANDS.includes(category)||!RISKS.includes(risk)||!contaminantMatch)
+  throw Error('Categoría, riesgo o contaminante ausente');
+ const pollutantTokens=contaminantMatch[1].toUpperCase().replace(/\s+/g,'').slice(0,120);
+ const detected=POLLUTANTS.filter(p=>
+  new RegExp('(?:^|[,;/])'+p.replace('.','\\.')+'(?:$|[,;/])').test(pollutantTokens)
+ );
+ if(!detected.length)throw Error('Sin contaminantes identificables');
  return {
-  category,risk,pollutants:detected,
-  reported_at:publishedAt,source_url:REPORT,
-  scope:'Reporte general de la Ciudad de México; no equivale al nivel de ninguna alcaldía o estación.',
-  official:true
+  category,risk,pollutants:detected,reported_at:publishedAt,
+  source_url:REPORT,official:true,
+  scope:'Reporte general de la Ciudad de México; no equivale al nivel de ninguna alcaldía o estación.'
  };
 }
 async function fromOfficial(url){
