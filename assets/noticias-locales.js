@@ -67,7 +67,33 @@
   if(cardWrap)cardWrap.hidden=false;
   if(more){more.replaceChildren();for(const x of items.filter(validArticle))more.append(storyCard(x));}
  }
- function renderArticle(article,items){
+ function addVerification(article,updated){
+  const section=elem('section','local-verification');
+  section.setAttribute('aria-label','Ficha de verificación y procedencia');
+  section.append(elem('h2','','Ficha de verificación'));
+  section.append(elem('p','local-verification-state','Referencia periodística identificada · Verificación independiente pendiente'));
+  const data=elem('dl','local-verification-data');
+  function field(label,value){
+   const pair=elem('div','local-verification-field');
+   pair.append(elem('dt','',label),elem('dd','',String(value||'No informado')));
+   data.append(pair);
+  }
+  field('Información disponible','Titular y metadatos de un medio identificado; no equivale a confirmar los hechos relatados.');
+  field('Medio de origen',article.source||'No indicado');
+  field('Fecha del medio',publication(article));
+  field('Archivo actualizado',updated||'Fecha de actualización no informada');
+  field('Alcaldía',article.borough?article.borough+' (mencionada en el titular, no ubicación comprobada)':'Sin alcaldía confirmada');
+  section.append(data);
+  section.append(elem('p','local-verification-method',article.brief?.method||
+   'Síntesis preparada a partir del título y metadatos disponibles.'));
+  if(safeExternal(article.url)){
+   const source=elem('a','local-verification-source','Consultar la fuente original');
+   source.href=article.url;source.target='_blank';source.rel='noopener noreferrer nofollow';
+   section.append(source);
+  }
+  body.append(section);
+ }
+ function renderArticle(article,items,updated){
   title.textContent=article.title;
   breadcrumb.textContent=article.category||'Noticia local';
   document.title=article.title.slice(0,65)+' | CDMX AL MEMENTO';
@@ -76,6 +102,7 @@
    (article.borough?' · Alcaldía mencionada: '+article.borough:'');
   intro.textContent=article.brief?.lead||'La publicación citada aborda el tema del encabezado; el índice disponible no permite confirmar más detalles.';
   body.replaceChildren();
+  addVerification(article,updated);
   addText(body,'Por qué importa',article.brief?.context||'La noticia puede ser relevante para quienes viven y trabajan en la Ciudad de México.');
   addText(body,'Qué falta por confirmar',article.brief?.pending||'Los hechos y los cambios posteriores requieren fuentes actualizadas.');
   const editorial=elem('section','local-story-editorial');
@@ -124,11 +151,11 @@
   const recent=Array.isArray(current.articles)?current.articles.filter(validArticle):[];
   if(!requested){renderList(recent);return;}
   let found=recent.find(x=>x.local_url===('/noticias/?id='+id+'&mes='+month));
-  if(found){renderArticle(found,recent);return;}
+  if(found){renderArticle(found,recent,current.updated);return;}
   const archive=await readJSON(monthURL);
   const all=Array.isArray(archive.articles)?archive.articles.filter(validArticle):[];
   found=all.find(x=>x.local_url===('/noticias/?id='+id+'&mes='+month));
-  if(found){renderArticle(found,all);return;}
+  if(found){renderArticle(found,all,archive.updated);return;}
   title.textContent='No encontramos esta noticia en el archivo';
   intro.textContent='Es posible que haya vencido el periodo de conservación del periódico. Explora los titulares que siguen disponibles.';
   renderList(recent);
