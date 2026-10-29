@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-29 22:54 UTC",
+  "updated": "2026-10-29 23:49 UTC",
   "boroughs": [
     {
       "name": "La Magdalena Contreras",
@@ -2085,8 +2085,36 @@
     },
     {
       "name": "Coyoacán",
-      "count": 87,
+      "count": 89,
       "articles": [
+        {
+          "title": "Una combi choca contra un puesto de verduras en Coyoacán, dejando a dos personas heridas este 29 de octubre.",
+          "description": "La información publicada por El Congresista trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9VWmw4RC1nanZZT281emkzQUVQdHhzejN5YVBKd2c2Y1Rkck5TSE5DN2ZvOTZoYU5LYW4tM3lqVjNiSk8yUGxzUXlDZ0pkOVBjNXBLV1U1YTFNSm00SHo2bnZBWjh1WTNwZ1RWYmZSRGV6WXc5Rm1JOHJKc0s?oc=5",
+          "source": "El Congresista",
+          "date": "2026-10-29",
+          "published_at": "2026-10-29T23:20:31Z",
+          "category": "CDMX",
+          "borough": "Coyoacán",
+          "location": "Coyoacán (mencionada en el titular)",
+          "local_url": "/noticias/?id=6c280486dd79d7e0cf24&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por El Congresista trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_coyoacan",
+            "url": "/assets/alcaldias/coyoacan.jpg",
+            "category": "CDMX",
+            "borough": "Coyoacán",
+            "topic": "Jardín Centenario de Coyoacán",
+            "author": "AlejandroLinaresGarcia",
+            "license": "CC BY-SA 4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:JardinCentenarioCoyoacan.JPG"
+          }
+        },
         {
           "title": "Camioneta de transporte público choca contra puesto de verduras en Coyoacán",
           "description": "La información publicada por El Universal trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -2169,6 +2197,24 @@
             "author": "AlejandroLinaresGarcia",
             "license": "CC BY-SA 4.0",
             "source": "https://commons.wikimedia.org/wiki/File:JardinCentenarioCoyoacan.JPG"
+          }
+        },
+        {
+          "title": "Mega ofrenda para mascotas en Coyoacán. ¡Habrá adopciones, concursos y más!",
+          "description": "La información publicada por Dónde Ir trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNekpRcWVvQ2U0SWZYQzJUaTlHcTVyUkpjaTFKcTR4bmZjQUpxNWF4M1c5aWFzSG02ZTRYamt6MDNxVDQxSkFWUGlDZk9UWnFxUkFLU2F1blJBU1BHSXJhSkM1cmhZc1lpMkhkbXFWUGp6dGh4YzJTX0dpd0NRdUpsM1V1NlE3YnR4UDdlNngxcm05dGRvY3lZZXNaYzNROXp2OGlLS2JqdktRbnFYU0tIV1NrNTYyWTdlcnZz?oc=5",
+          "source": "Dónde Ir",
+          "date": "2026-10-29",
+          "published_at": "2026-10-29T19:00:10Z",
+          "category": "CDMX",
+          "borough": "Coyoacán",
+          "location": "Coyoacán (mencionada en el titular)",
+          "local_url": "/noticias/?id=406c7240ae6d7b04f37f&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por Dónde Ir trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           }
         },
         {
@@ -2608,42 +2654,6 @@
           "local_url": "/noticias/?id=2cab4a0616fe920c454e&mes=2026-10",
           "brief": {
             "lead": "La publicación de DiarioNoticiasWeb.Com pone el foco en dificultades que podrían afectar la comercialización del cempasúchil de Xochimilco. La producción de flor involucra a familias y productores locales; para explicar causas y alcances hacen falta los datos del reportaje.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
-        },
-        {
-          "title": "Fuertes vientos desprenden grandes ramas sobre un camión en Coyoacán; afectaciones en CDMX | EN VIVO",
-          "description": "La información publicada por TV Azteca trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNS3pOLUNPT2lxTFo4WWZPOTNsTmtWcGNLTVFNZlZVZXZTRDExczNBT0FvWE40ZlpNbGhfb3FvZWkxV2RhVjZqYUp0cVlJcXdrckxUSzVfU1dzYTVNbnROcl9mX1lJLVhoajJwYU9vTW5JVUR2ODg4a2ZJemctWEZaS29QQ3k2OHBnNTBSTlZUVlpzNm91N0pGMDhnUEVWdTk3cXdUeXV3RWd2MUI1WGFMdnJldmxtZjRMYkRCTk8xeHFTTThKb0dET2thaTM?oc=5",
-          "source": "TV Azteca",
-          "date": "2026-10-22",
-          "published_at": "2026-10-23T01:23:42Z",
-          "category": "CDMX",
-          "borough": "Coyoacán",
-          "location": "Coyoacán (mencionada en el titular)",
-          "local_url": "/noticias/?id=27211c8e85ef79baf971&mes=2026-10",
-          "brief": {
-            "lead": "La información publicada por TV Azteca trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
-        },
-        {
-          "title": "Coyoacán y el Tribunal de Justicia Administrativa de la CdMx se unen para orientación legal",
-          "description": "La información publicada por Milenio trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNTnVEcnFreEFTUEl4N2ptb0txbUxZVXpHN0IwdjZOazVleVNuZWNWQVhhX2k4WENzM09aSG1OaVJCejZ1OVZOYmQtdEhoSTAwZllQWm14YVNEZ0Z0bVlSNGFzR2RrbVlWLXFwaFpJSFdod1I4N1FEVkhVRzVxVEpCeExWVUk2Z2U0UWZZOF94dURLekZoS044RHdB0gGaAUFVX3lxTE8xeTBxT09QX2NHX0ZkYjRRaHVlRThKRTVxZVRzSUhtMVZsRV9oZ1gxVzNDWE9sQnBLbmw3UnNSY0RTQ29yanBrZHZ4VU5hUURBWVo2eFk1RjRudU9zSzJMVmJFZzZrd2pDQktyenRHMmt3QW82S1lCY0tRa3dRbnlERXlpSkhLYkcwZGN6bzFTVTc3UzBhNWJnVXc?oc=5",
-          "source": "Milenio",
-          "date": "2026-10-22",
-          "published_at": "2026-10-22T20:54:00Z",
-          "category": "CDMX",
-          "borough": "Coyoacán",
-          "location": "Coyoacán (mencionada en el titular)",
-          "local_url": "/noticias/?id=8dde0cdca4280e63127c&mes=2026-10",
-          "brief": {
-            "lead": "La información publicada por Milenio trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
