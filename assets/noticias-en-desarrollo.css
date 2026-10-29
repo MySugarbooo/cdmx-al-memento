@@ -1,0 +1,30 @@
+/* Noticias en desarrollo: estilo aislado para preservar la portada y el foro. */
+.dev-page{width:min(1100px,calc(100% - 28px));max-width:1100px;margin:25px auto 70px;color:#f7ebf3}
+.dev-intro{padding:clamp(20px,4vw,35px);background:linear-gradient(115deg,#3d253d,#202233 78%);border:1px solid #955c7d;border-radius:19px}
+.dev-intro h1{font-size:clamp(1.9rem,4vw,2.8rem);line-height:1.2;color:#ffc7e4;margin:8px 0 13px}
+.dev-intro p{line-height:1.65;max-width:790px}
+.dev-intro .dev-eyebrow{color:#ffafda;font-size:.8rem;letter-spacing:.08em;font-weight:800}
+.dev-controls{display:flex;flex-wrap:wrap;align-items:end;gap:12px;margin:22px 0;padding:15px;background:#252331;border:1px solid #674b63;border-radius:15px}
+.dev-controls label{display:grid;gap:6px;flex:1 1 195px;color:#f5d8ea;font-size:.88rem;font-weight:700}
+.dev-controls select,.dev-controls input{box-sizing:border-box;width:100%;min-height:42px;border:1px solid #94708b;background:#171725;border-radius:9px;color:#fff;padding:9px 12px;font:inherit}
+.dev-controls button,.dev-more{border:0;border-radius:10px;background:#d74491;color:#fff;padding:12px 15px;font:inherit;font-weight:750;cursor:pointer;min-height:42px}
+.dev-status{color:#dbbdce;margin:15px 2px;font-size:.94rem}
+.dev-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(220px,275px);gap:22px;align-items:start}
+.dev-grid h2{font-size:1.3rem;color:#fff0f8;margin:12px 0 21px}
+.dev-timeline{margin-left:9px;border-left:2px solid #e97faf;padding-left:22px}
+.dev-story{position:relative;margin:0 0 15px;background:#242333;border:1px solid #705169;border-radius:15px;padding:18px}
+.dev-story:before{position:absolute;content:'';width:12px;height:12px;border-radius:50%;border:3px solid #201827;background:#ff90c8;top:20px;left:-32px}
+.dev-story time,.dev-story .dev-category{display:inline-block;color:#e7b6ce;font-size:.83rem}
+.dev-story h3{font-size:1.16rem;line-height:1.45;margin:9px 0;color:#fff6fb}
+.dev-story p{color:#e1d5df;line-height:1.5;margin:9px 0}
+.dev-story .dev-source{color:#e6c2d5;font-size:.85rem}
+.dev-story .dev-links{display:flex;gap:14px;flex-wrap:wrap;margin-top:13px}
+.dev-page a{color:#ffbadc}
+.dev-story .dev-links a{font-weight:700;font-size:.9rem}
+.dev-aside{position:sticky;top:18px;background:#242333;border:1px solid #705169;border-radius:15px;padding:20px}
+.dev-aside p{line-height:1.6;color:#e3cbd9}
+.dev-more{display:block;margin:14px auto}
+.dev-more[hidden]{display:none}
+.dev-page :focus-visible{outline:3px solid #ffbade;outline-offset:3px}
+@media(max-width:850px){.dev-grid{grid-template-columns:1fr}.dev-aside{position:static}.dev-page{margin-top:13px}}
+@media(max-width:540px){.dev-controls button{width:100%}.dev-story{padding:15px}.dev-timeline{padding-left:18px}.dev-story:before{left:-28px}}
