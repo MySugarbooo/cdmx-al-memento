@@ -1,0 +1,116 @@
+/* Datos oficiales de Aire y Salud para CDMX; no son mediciones de cada alcaldía.
+ * Fuente: https://www.aire.cdmx.gob.mx/ultima-hora-reporte.php
+ * Si la hora de la fuente está atrasada, o cambió el formato, devolver "unavailable".
+ * No se calculan índices ni se declara el estado de contingencia aquí.
+ */
+const REPORT='https://www.aire.cdmx.gob.mx/ultima-hora-reporte.php';
+const LIGHT='https://www.aire.cdmx.gob.mx/default.php';
+const MONTHS={enero:1,febrero:2,marzo:3,abril:4,mayo:5,junio:6,julio:7,
+ agosto:8,septiembre:9,setiembre:9,octubre:10,noviembre:11,diciembre:12};
+const BANDS=['BUENA','ACEPTABLE','MALA','MUY MALA','EXTREMADAMENTE MALA'];
+const RISKS=['BAJO','MODERADO','ALTO','MUY ALTO','EXTREMADAMENTE ALTO'];
+const POLLUTANTS=['O3','PM2.5','PM10','NO2','SO2','CO'];
+const MAX_AGE=150*60*1000;
+const HEADERS={'Content-Type':'application/json; charset=utf-8','X-Content-Type-Options':'nosniff'};
+function strip(html){
+ return String(html||'').replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi,'')
+  .replace(/<style\b[^>]*>[\s\S]*?<\/style>/gi,'')
+  .replace(/<[^>]+>/g,' ').replace(/&nbsp;|&#160;/g,' ')
+  .replace(/&aacute;/g,'á').replace(/&eacute;/g,'é').replace(/&iacute;/g,'í')
+  .replace(/&oacute;/g,'ó').replace(/&uacute;/g,'ú').replace(/&ntilde;/g,'ñ')
+  .replace(/\s+/g,' ').trim();
+}
+function sourceStamp(year,month,day,hour,minute){
+ if(!Number.isInteger(year)||!Number.isInteger(month)||!Number.isInteger(day)
+   ||!Number.isInteger(hour)||!Number.isInteger(minute)
+   ||year<2024||year>2100||month<1||month>12||day<1||day>31||hour>23||hour<0
+   ||minute<0||minute>59)return null;
+ const date=new Date(Date.UTC(year,month-1,day,hour+6,minute));
+ // Ciudad de México está en UTC-6 todo el año desde 2022.
+ const local=new Intl.DateTimeFormat('en-US',{timeZone:'America/Mexico_City',
+  year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',hourCycle:'h23',minute:'2-digit'}).formatToParts(date);
+ const v=part=>Number(local.find(t=>t.type===part)?.value);
+ if(v('year')!==year||v('month')!==month||v('day')!==day||v('hour')!==hour||v('minute')!==minute)return null;
+ return date.toISOString();
+}
+function parseAirReport(markup,now=Date.now()){
+ const first=String(markup||'').split(/<table\b/i)[0];
+ if(first.length<130||first.length>450000)throw Error('Respuesta oficial inesperada');
+ const paragraphs=[...first.matchAll(/<p\b[^>]*>([\s\S]*?)<\/p>/gi)].map(item=>strip(item[1]));
+ let dateText='',hour=null,minute=0;
+ for(const p of paragraphs){
+  const full=p.match(/(?:^|[\s,])([01]?\d|2[0-3]):([0-5]\d)\s*h\s*,?\s*(.*)/i);
+  if(full){hour=Number(full[1]);minute=Number(full[2]);dateText=full[3];break}
+ }
+ // La portada ligera publica hora y fecha en párrafos separados.
+ if(hour===null){
+  const h=paragraphs.find(p=>/^([01]?\d|2[0-3])\s*horas?$/i.test(p));
+  if(h){hour=Number(h.match(/\d+/)[0]);minute=0}
+  dateText=paragraphs.find(p=>/(\d{1,2})\s+de\s+([a-záéíóú]+)\s+de\s+(20\d\d)/i.test(p))||'';
+ }
+ const dateParts=dateText.match(/(\d{1,2})\s+de\s+([a-záéíóú]+)\s+de\s+(20\d\d)/i);
+ if(hour===null||!dateParts)throw Error('No hay fecha/hora oficial');
+ const month=MONTHS[dateParts[2].toLowerCase()];
+ const publishedAt=sourceStamp(Number(dateParts[3]),month,Number(dateParts[1]),hour,minute);
+ if(!publishedAt)throw Error('Fecha oficial no válida');
+ const age=now-Date.parse(publishedAt);
+ if(age< -15*60*1000||age>MAX_AGE)throw Error('Índice oficial desactualizado');
+ const flat=paragraphs.join(' | ').normalize('NFC');
+ const b=flat.match(/Índice\s+AIRE\s+Y\s+SALUD:\s*(EXTREMADAMENTE MALA|MUY MALA|ACEPTABLE|BUENA|MALA)\b/i);
+ const r=flat.match(/(?:Nivel de riesgo|Riesgo):\s*(EXTREMADAMENTE ALTO|MUY ALTO|MODERADO|BAJO|ALTO)\b/i);
+ const pollution=paragraphs.find(p=>/^Contaminante\(s\):\s*/i.test(p));
+ if(!b||!r||!pollution)throw Error('Categoría, riesgo o contaminante ausente');
+ const category=b[1].toUpperCase(),risk=r[1].toUpperCase();
+ if(!BANDS.includes(category)||!RISKS.includes(risk))throw Error('Clasificación desconocida');
+ const raw=pollution.replace(/^Contaminante\(s\):\s*/i,'');
+ const joined=raw.toUpperCase().replace(/\s+/g,'');
+ const detected=POLLUTANTS.filter(p=>new RegExp('(?:^|[,;/])'+p.replace('.','\\.')+'(?:$|[,;/])').test(joined));
+ if(!detected.length||raw.length>120)throw Error('Sin contaminantes identificables');
+ return {
+  category,risk,pollutants:detected,
+  reported_at:publishedAt,source_url:REPORT,
+  scope:'Reporte general de la Ciudad de México; no equivale al nivel de ninguna alcaldía o estación.',
+  official:true
+ };
+}
+async function fromOfficial(url){
+ const controller=new AbortController();
+ const timeout=setTimeout(()=>controller.abort(),7800);
+ try{
+  const response=await fetch(url,{headers:{
+   Accept:'text/html','User-Agent':'CDMXALMEMENTO/1.0 (https://cdmx-al-memento.pages.dev/contacto.html)'
+  },signal:controller.signal});
+  if(!response.ok)throw Error('HTTP '+response.status);
+  const content=await response.text();
+  if(content.length>450000)throw Error('Respuesta demasiado grande');
+  return parseAirReport(content);
+ }finally{clearTimeout(timeout)}
+}
+function json(body,ttl){
+ return new Response(JSON.stringify(body),{
+  status:200,headers:{...HEADERS,'Cache-Control':ttl>0?
+   'public, max-age='+ttl+', s-maxage='+ttl:'no-store'}
+ });
+}
+export async function onRequestGet({request,context}){
+ const cache=typeof caches==='undefined'?null:caches.default;
+ const key=new Request(new URL('/api/aire',request.url).toString());
+ if(cache){try{const found=await cache.match(key);if(found)return found}catch{}}
+ let result,ttl=0;
+ try{
+  let air;
+  try{air=await fromOfficial(REPORT)}
+  catch{air=await fromOfficial(LIGHT)}
+  result={schema:1,status:'ok',checked_at:new Date().toISOString(),air};
+  ttl=600; // No convertir la hora de consulta en hora del reporte oficial.
+ }catch{
+  result={schema:1,status:'unavailable',checked_at:new Date().toISOString(),
+   air:null,note:'No hay un índice oficial reciente comprobable. Consulta Aire CDMX.'};
+ }
+ const response=json(result,ttl);
+ if(cache&&context?.waitUntil&&ttl>0){
+  context.waitUntil(cache.put(key,response.clone()).catch(()=>{}));
+ }
+ return response;
+}
+export {parseAirReport,sourceStamp,strip};
