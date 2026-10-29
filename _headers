@@ -38,6 +38,12 @@
 /noticias/index.html
   Cache-Control: no-cache, must-revalidate
 
+/noticias-en-desarrollo/
+  Cache-Control: no-cache, must-revalidate
+
+/noticias-en-desarrollo/index.html
+  Cache-Control: no-cache, must-revalidate
+
 /seguridad/
   Cache-Control: no-cache, must-revalidate
 
