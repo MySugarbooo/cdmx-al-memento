@@ -133,6 +133,46 @@ service cloud.firestore {
       allow create: if validReport(reportId);
       allow update: if false;
     }
+    // Etapa 5: historial privado de decisiones tomadas desde el panel.
+    // Cada acción requiere cerrar el reporte en la MISMA transacción.
+    function moderationReportPath(reportId) {
+      return /databases/$(database)/documents/community/main/reports/$(reportId);
+    }
+    function moderationCommentPath(commentId) {
+      return /databases/$(database)/documents/community/main/comments/$(commentId);
+    }
+    function validModerationAction(actionId) {
+      let data = request.resource.data;
+      return moderator()
+        && actionId.matches('[A-Za-z0-9]{20}')
+        && data.keys().hasOnly(['actorUid', 'reportId', 'commentId',
+          'action', 'reason', 'note', 'createdAt'])
+        && data.keys().hasAll(['actorUid', 'reportId', 'commentId',
+          'action', 'reason', 'note', 'createdAt'])
+        && data.actorUid == request.auth.uid
+        && data.reportId is string
+        && data.reportId.matches('[A-Za-z0-9_-]{8,128}_[A-Za-z0-9]{20}')
+        && data.commentId is string
+        && data.commentId.matches('[A-Za-z0-9]{20}')
+        && data.action in ['dismiss', 'remove']
+        && data.reason in ['spam', 'abuso', 'privacidad', 'desinformacion', 'otro']
+        && data.note is string && data.note.size() <= 240
+        && data.createdAt == request.time
+        && exists(moderationReportPath(data.reportId))
+        && get(moderationReportPath(data.reportId)).data.commentId == data.commentId
+        && get(moderationReportPath(data.reportId)).data.reason == data.reason
+        && !existsAfter(moderationReportPath(data.reportId))
+        && (data.action != 'remove' ||
+            (exists(moderationCommentPath(data.commentId))
+              && !existsAfter(moderationCommentPath(data.commentId))));
+    }
+    match /community/main/moderationActions/{actionId} {
+      // Solo las cuentas con rol firmado pueden leer o crear entradas.
+      // Ningún cliente puede editarlas ni borrarlas después.
+      allow read: if moderator();
+      allow create: if validModerationAction(actionId);
+      allow update, delete: if false;
+    }
     match /communityBans/{uid} {
       // Bloqueos gestionados únicamente con Admin SDK / consola administrativa.
       allow read, write: if false;
