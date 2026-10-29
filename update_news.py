@@ -369,7 +369,7 @@ def report_shell(title, body):
         '<link rel="canonical" href="' + escape(canonical, quote=True) + '">'
         '<link rel="stylesheet" href="/styles.css">'
         '<link rel="stylesheet" href="/assets/explora.css?v=3">'
-        '<link rel="stylesheet" href="/assets/clima-ticker.css?v=4"></head><body>'
+        '<link rel="stylesheet" href="/assets/clima-ticker.css?v=4">'\n        '<link rel="stylesheet" href="/assets/premium-2026.css?v=1"></head><body>'
         + weather +
         '<header><div class="wrap"><div class="top"><a class="logo" href="/">CDMX <span>AL MEMENTO</span></a></div>'
         '<nav><a href="/">Noticias</a><a href="/archivo/">Archivo mensual</a>'
