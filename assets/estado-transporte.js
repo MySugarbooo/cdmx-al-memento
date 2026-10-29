@@ -142,11 +142,17 @@ async function load(){
  try{
   let body=null;
   try{
-   const resp=await fetch('/api/estado-transporte?t='+Date.now(),{cache:'no-store'});
-   if(resp.ok){
-    const live=await resp.json();
-    if(isFresh(live))body=live;
-   }
+   const controller=new AbortController();
+   const timeout=setTimeout(()=>controller.abort(),9000);
+   try{
+    const resp=await fetch('/api/estado-transporte?t='+Date.now(),{
+     cache:'no-store',signal:controller.signal
+    });
+    if(resp.ok){
+     const live=await resp.json();
+     if(isFresh(live))body=live;
+    }
+   }finally{clearTimeout(timeout)}
   }catch(error){console.warn('Consulta directa de transporte no disponible:',error.message||error)}
   if(!body){
    const resp=await fetch('/transporte/estado.json?t='+Date.now(),{cache:'no-store'});
