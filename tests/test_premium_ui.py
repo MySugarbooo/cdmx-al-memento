@@ -4,7 +4,14 @@ import unittest
 ROOT=Path(__file__).resolve().parents[1]
 PAGES=['index.html','comunidad/index.html','movilidad/index.html',
 'servicios/index.html','alcaldias/index.html','reportes-ciudadanos/index.html',
-'aire/index.html','trafico/index.html','avisos/index.html','cerca/index.html']
+'aire/index.html','trafico/index.html','avisos/index.html','cerca/index.html',
+'guias/index.html','seguridad/index.html','reportes/index.html',
+'contacto.html','privacidad.html','sobre-nosotros.html',
+'politica-editorial.html','creditos-fotograficos.html',
+'archivo/index.html','mapa/index.html','cdmx/index.html',
+'fotografias/index.html','noticias/index.html','descubre/index.html',
+'agenda/index.html','negocios/index.html','herramientas/index.html',
+'publicidad/index.html']
 class PremiumUI(unittest.TestCase):
  def test_stylesheet_on_critical_pages(self):
   for page in PAGES:
@@ -13,6 +20,9 @@ class PremiumUI(unittest.TestCase):
     self.assertIn('/assets/premium-2026.css?v=1',html)
     self.assertEqual(html.count('/assets/premium-2026.css?v=1'),1)
     self.assertIn('</head>',html)
+ def test_generated_reports_preserve_design(self):
+  generator=(ROOT/'update_news.py').read_text(encoding='utf-8')
+  self.assertIn('premium-2026.css?v=1',generator)
  def test_reduced_motion_keyboard_and_mobile(self):
   css=(ROOT/'assets/premium-2026.css').read_text(encoding='utf-8')
   for item in ['prefers-reduced-motion:reduce',':focus-visible','@media(max-width:720px)','overflow-wrap:anywhere','min-height:44px']:
