@@ -118,7 +118,33 @@ document.querySelectorAll('[data-open-forum-editor]').forEach(link=>link.addEven
 forumSearch?.addEventListener('input',()=>{forumQuery=forumSearch.value.trim().toLocaleLowerCase('es-MX');display(currentRows)});
 forumSort?.addEventListener('change',()=>display(currentRows));
 root.querySelectorAll('[data-forum-filter]').forEach(b=>b.addEventListener('click',()=>{forumFilter=b.dataset.forumFilter;root.querySelectorAll('[data-forum-filter]').forEach(x=>{x.classList.toggle('active',x===b);x.setAttribute('aria-pressed',String(x===b))});display(currentRows)}));
-function profileFor(topic){const c=topic.c;const profile=document.createElement('div');profile.className='community-profile';const avatar=document.createElement('span');avatar.className='community-avatar';const photo=String(c.photoURL||(user&&c.uid===user.uid?user.photoURL:'')||'');if(/^https:\/\//i.test(photo)&&photo.length<1500){const img=document.createElement('img');img.src=photo;img.alt='Foto de perfil';img.loading='lazy';img.referrerPolicy='no-referrer';img.onerror=()=>{img.remove();avatar.textContent=String(c.name||'L').charAt(0).toUpperCase()};avatar.append(img)}else avatar.textContent=String(c.name||'L').charAt(0).toUpperCase();const details=document.createElement('div');details.className='community-profile-details';const name=document.createElement('strong');name.textContent=String(c.name||'Lector').slice(0,80);const time=document.createElement('time');const stamp=c.createdAt?.toDate?.();time.textContent=stamp?new Intl.DateTimeFormat('es-MX',{dateStyle:'medium',timeStyle:'short',timeZone:'America/Mexico_City'}).format(stamp):'Fecha pendiente';details.append(name,time);profile.append(avatar,details);return profile;}
+function profileFor(topic){
+ const c=topic.c;
+ const profile=document.createElement('div');profile.className='community-profile';
+ const uid=String(c.uid||'');
+ const linked=isCommunity&&/^[A-Za-z0-9_-]{8,128}$/.test(uid);
+ const inner=document.createElement(linked?'a':'div');
+ inner.className='community-profile-inner'+(linked?' community-profile-link':'');
+ if(linked){
+  inner.href='/perfiles/?uid='+encodeURIComponent(uid);
+  inner.setAttribute('aria-label','Ver el perfil público de '+String(c.name||'Lector').slice(0,80));
+ }
+ const avatar=document.createElement('span');avatar.className='community-avatar';
+ const photo=String(c.photoURL||(user&&c.uid===user.uid?user.photoURL:'')||'');
+ if(/^https:\/\//i.test(photo)&&photo.length<1500){
+  const img=document.createElement('img');img.src=photo;img.alt='';
+  img.loading='lazy';img.referrerPolicy='no-referrer';
+  img.onerror=()=>{img.remove();avatar.textContent=String(c.name||'L').charAt(0).toUpperCase()};
+  avatar.append(img);
+ }else avatar.textContent=String(c.name||'L').charAt(0).toUpperCase();
+ const details=document.createElement('div');details.className='community-profile-details';
+ const name=document.createElement('strong');name.textContent=String(c.name||'Lector').slice(0,80);
+ const time=document.createElement('time');const stamp=c.createdAt?.toDate?.();
+ time.textContent=stamp?new Intl.DateTimeFormat('es-MX',{
+  dateStyle:'medium',timeStyle:'short',timeZone:'America/Mexico_City'
+ }).format(stamp):'Fecha pendiente';
+ details.append(name,time);inner.append(avatar,details);profile.append(inner);return profile;
+}
 let isModerator=false;
 
 /* Votos útiles: un voto por usuario y publicación, con agregado público.
@@ -494,6 +520,11 @@ mod.onAuthStateChanged(auth,async person=>{
  user=person;isModerator=false;
  voteVersion++;voteOwn.clear();voteQueue.length=0;voteQueued.clear();voteBusy.clear();
  login.hidden=!!person;editor.hidden=!person;signout.hidden=!person;
+ const myProfile=document.getElementById('community-my-profile');
+ if(myProfile){
+  myProfile.hidden=!person;
+  myProfile.href=person?'/perfiles/?uid='+encodeURIComponent(person.uid):'/perfiles/';
+ }
  if(person){
   status.textContent='Sesión iniciada con '+(person.displayName||'Google')+'. Tu nombre y tus publicaciones son públicos.';
   try{
