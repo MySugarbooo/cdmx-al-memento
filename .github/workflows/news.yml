@@ -46,6 +46,10 @@ on:
       - 'assets/neo-site.css'
       - 'assets/neo-home.css'
       - 'assets/neo-home.js'
+      - 'noticias-en-desarrollo/index.html'
+      - 'assets/noticias-en-desarrollo.js'
+      - 'assets/noticias-en-desarrollo.css'
+      - 'tests/test_development_news.py'
       - 'assets/neo-sections.js'
       - 'seguridad/index.html'
       - 'servicios/index.html'
@@ -83,6 +87,7 @@ jobs:
           node --check app.js
           node --check assets/page-transitions.js
           node --check assets/neo-home.js
+          node --check assets/noticias-en-desarrollo.js
           node --check assets/neo-sections.js
           node --check assets/neo-gallery.js
           node --check kisumi-studio/studio.js
