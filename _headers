@@ -59,6 +59,11 @@
 /movilidad/index.html
   Cache-Control: no-cache, must-revalidate
 
+/trafico/
+  Cache-Control: no-cache, must-revalidate
+/trafico/index.html
+  Cache-Control: no-cache, must-revalidate
+
 /seguridad/
   Cache-Control: no-cache, must-revalidate
 
