@@ -50,6 +50,8 @@ on:
       - 'assets/noticias-en-desarrollo.js'
       - 'assets/noticias-en-desarrollo.css'
       - 'tests/test_development_news.py'
+      - 'assets/verificacion.css'
+      - 'tests/test_verification_ui.py'
       - 'assets/neo-sections.js'
       - 'seguridad/index.html'
       - 'servicios/index.html'
