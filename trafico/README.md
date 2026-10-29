@@ -8,7 +8,7 @@ Etapa 7 del plan editorial. Página: `/trafico/`.
 - Titulares **periodísticos**, recopilados de Google News RSS, sobre marchas, cierres viales, bloqueos, obras e incidentes viales relacionados con CDMX.
 - Hora y fecha de **publicación del titular**, su medio original, alcaldía únicamente si aparece en el titular, buscador y filtros por tema y alcaldía.
 - Mostrar solo titulares de las **últimas 48 horas**, no como incidencias activas.
-- Índice automático en `/api/trafico` mediante Cloudflare Pages Functions, caché de 15 minutos (errores: 90 segundos) y tres búsquedas acotadas de Google News.
+- Índice automático en `/api/trafico` mediante Cloudflare Pages Functions, caché de 15 minutos para consultas correctas; los errores transitorios no se guardan en caché y tres búsquedas acotadas de Google News.
 - Respaldo mediante `news.json` si la API de titulares no devuelve noticias. Ese respaldo **tampoco** afirma estados del tráfico.
 
 ## Lo que NO hace
