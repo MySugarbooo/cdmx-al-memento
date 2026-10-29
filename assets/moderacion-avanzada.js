@@ -10,7 +10,7 @@ import {
 } from 'https://www.gstatic.com/firebasejs/10.14.1/firebase-auth.js';
 import {
  getFirestore,collection,doc,getDoc,getDocs,query,orderBy,limit,
- runTransaction,serverTimestamp,deleteDoc
+ runTransaction,serverTimestamp,writeBatch
 } from 'https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore.js';
 
 const $=id=>document.getElementById(id);
@@ -179,9 +179,11 @@ async function decide(report,action,rawNote,card,error,dismiss,remove,viewer){
  dismiss.disabled=true;remove.disabled=true;error.textContent='';
  try{
   if(compat){
-   // Las reglas antiguas conservan el funcionamiento existente.
-   if(action==='remove')await deleteDoc(doc(db,'community','main','comments',commentId));
-   await deleteDoc(report.ref);
+   // Compatibilidad con las reglas anteriores sin cierres parciales.
+   const batch=writeBatch(db);
+   if(action==='remove')batch.delete(doc(db,'community','main','comments',commentId));
+   batch.delete(report.ref);
+   await batch.commit();
   }else{
    const auditRef=doc(auditCollection);
    const postRef=doc(db,'community','main','comments',commentId);
