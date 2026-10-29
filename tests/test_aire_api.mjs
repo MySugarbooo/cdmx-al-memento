@@ -30,6 +30,13 @@ const tableLayout=`<body><table><tr><td>Menú</td></tr></table>
 <div>Riesgo: MODERADO</div></body>`;
 assert.equal(air.parseAirReport(tableLayout,now).category,'ACEPTABLE',
  'Las tablas de diseño antes del índice no deben impedir leer el informe.');
+const additional=`<table><tr><td>Menú</td></tr></table>
+<div>08:00 h, jueves 29 de octubre de 2026</div>
+<div>Índice AIRE Y SALUD: ACEPTABLE</div>
+<div>Contaminante(s): PM<sub>2.5</sub> Recomendación UV: no informado</div>
+<div>Riesgo: MODERADO</div>`;
+assert.deepEqual(air.parseAirReport(additional,now).pollutants,['PM2.5'],
+ 'El reporte puede incluir texto adicional después del contaminante.');
 const light=`<p>Ciudad de México, jueves 29 de octubre de 2026</p>
 <p>08 horas</p><p><strong>Índice AIRE Y SALUD: BUENA</strong></p>
 <p><strong>Nivel de riesgo:</strong> BAJO</p>
