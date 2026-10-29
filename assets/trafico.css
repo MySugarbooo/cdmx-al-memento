@@ -1,0 +1,54 @@
+/* Etapa 7 · Tráfico y cierres. Estilo propio, sin interferir con Comunidad. */
+.traffic-page{width:min(1140px,calc(100% - 28px));margin:24px auto 80px;color:#f8edf6}
+.traffic-page *{box-sizing:border-box}
+.traffic-hero{border:1px solid #935d82;border-radius:24px;padding:clamp(22px,5vw,40px);background:linear-gradient(122deg,#412541,#1b1c2f 82%);box-shadow:0 22px 44px #0e0b1638}
+.traffic-eyebrow{display:block;color:#ffacd3;font-size:.79rem;letter-spacing:.09em;font-weight:850}
+.traffic-hero h1{font-size:clamp(1.85rem,4vw,2.9rem);line-height:1.2;margin:8px 0 17px;color:#ffe2f0}
+.traffic-hero p{font-size:1.04rem;line-height:1.68;max-width:780px;color:#e9d5e3}
+.traffic-actions{display:flex;flex-wrap:wrap;gap:11px;margin-top:21px}
+.traffic-actions a{display:inline-flex;align-items:center;justify-content:center;min-height:41px;padding:10px 15px;text-decoration:none;border-radius:11px;border:1px solid #a8769a;background:#382942;color:#ffe0f0;font-weight:750}
+.traffic-actions a:first-child{background:#cc3b8c;border-color:#f3a0cd;color:white}
+.traffic-official-section,.traffic-feed-section{margin:34px 0}
+.traffic-title-row{display:flex;justify-content:space-between;align-items:center;gap:15px;flex-wrap:wrap}
+.traffic-title-row h2{font-size:clamp(1.3rem,3vw,1.95rem);color:#fff1f8;margin:6px 0 11px}
+.traffic-description{color:#e7d1df;max-width:900px;line-height:1.63}
+.traffic-official-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px;margin:18px 0 12px}
+.traffic-official-card{display:flex;align-items:flex-start;gap:13px;border:1px solid #82546e;border-radius:17px;background:#2a2436;padding:19px;min-width:0;min-height:235px}
+.traffic-source-mark{display:grid;place-items:center;flex:0 0 43px;width:43px;height:43px;border-radius:12px;background:#874271;color:#ffe4f2;border:1px solid #ce83a9;font-size:.78rem;font-weight:850}
+.traffic-source-type{color:#ffadd5;font-size:.7rem;font-weight:800;letter-spacing:.07em}
+.traffic-official-card h3{font-size:1.08rem;color:#ffe6f2;line-height:1.35;margin:7px 0}
+.traffic-official-card p{color:#e6d1e0;font-size:.89rem;line-height:1.6;margin:8px 0 13px}
+.traffic-page a{color:#ffbcdc}
+.traffic-official-card a{font-weight:750;font-size:.9rem}
+.traffic-source-note{font-size:.82rem;color:#cfb9c9;line-height:1.6}
+.traffic-reload,.traffic-more{background:#d64190;border:1px solid #f6a9cf;color:#fff;border-radius:10px;padding:11px 15px;font:inherit;font-weight:800;cursor:pointer}
+.traffic-reload:disabled{opacity:.6;cursor:wait}
+.traffic-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px;margin:18px 0}
+.traffic-stats>div{background:#282336;border:1px solid #71506a;border-radius:15px;padding:15px;display:grid;gap:6px}
+.traffic-stats strong{font-size:clamp(1.15rem,2.7vw,1.8rem);line-height:1.2;font-variant-numeric:tabular-nums;color:#ffa5d1}
+.traffic-stats span{font-size:.83rem;color:#e3cad9}
+.traffic-filters{display:grid;grid-template-columns:1fr 1.05fr 1.3fr;gap:12px;padding:17px;background:#30283c;border:1px solid #76506c;border-radius:15px}
+.traffic-filters label{display:grid;gap:6px;color:#f3c6dd;font-size:.84rem;font-weight:750}
+.traffic-filters select,.traffic-filters input{width:100%;min-height:43px;background:#171725;border:1px solid #98738d;border-radius:10px;padding:10px 12px;color:#fff;font:inherit}
+.traffic-status{color:#edc4d9;font-size:.91rem;margin:15px 0;line-height:1.55}
+.traffic-layout{display:grid;grid-template-columns:minmax(0,1fr) 270px;align-items:start;gap:20px}
+.traffic-list{display:grid;gap:14px}
+.traffic-card{background:#252335;border:1px solid #73516d;border-radius:16px;padding:18px 20px;min-width:0;overflow-wrap:anywhere}
+.traffic-card-top{display:flex;gap:9px;align-items:center;flex-wrap:wrap}
+.traffic-card-kind{display:inline-flex;background:#633553;color:#ffe5ef;border:1px solid #b77b9f;padding:5px 9px;border-radius:999px;font-size:.76rem;font-weight:800}
+.traffic-card time{font-size:.81rem;color:#dab4ca}
+.traffic-card h3{font-size:1.12rem;color:#fff1f8;margin:13px 0 10px;line-height:1.5;overflow-wrap:anywhere}
+.traffic-card-desc{margin:8px 0;color:#e1cbd9;font-size:.89rem;line-height:1.5}
+.traffic-card-source{display:flex;gap:9px;align-items:center;flex-wrap:wrap;color:#ddc2d3;font-size:.84rem}
+.traffic-card .traffic-card-link{display:inline-flex;margin-top:12px;font-size:.9rem;font-weight:780}
+.traffic-empty{padding:24px 20px;background:#292537;border:1px dashed #a17c92;border-radius:14px;color:#e6d4e0;line-height:1.6}
+.traffic-aside{position:sticky;top:20px;border:1px solid #7a5373;border-radius:17px;background:#2a2436;padding:21px;color:#e5d1df}
+.traffic-aside h3{color:#ffdeef;font-size:1.12rem;margin:0 0 13px}
+.traffic-aside ol{padding-left:22px}
+.traffic-aside li,.traffic-aside p{line-height:1.6;font-size:.92rem;margin-bottom:10px}
+.traffic-aside a{font-weight:750}
+.traffic-more{display:block;margin:18px auto}
+.traffic-more[hidden]{display:none!important}
+.traffic-page :focus-visible{outline:3px solid #ffb6d6;outline-offset:3px}
+@media(max-width:900px){.traffic-official-grid{grid-template-columns:1fr 1fr}.traffic-official-card{min-height:unset}.traffic-layout{grid-template-columns:1fr}.traffic-aside{position:static}}
+@media(max-width:610px){.traffic-page{width:calc(100% - 20px);margin:14px auto 60px}.traffic-hero{padding:22px 18px}.traffic-actions a{flex:1 1 140px}.traffic-official-grid{grid-template-columns:1fr}.traffic-filters{grid-template-columns:1fr;padding:13px}.traffic-stats{gap:7px}.traffic-stats>div{padding:10px 9px}.traffic-stats span{font-size:.75rem}.traffic-card{padding:16px}.traffic-reload{flex:1 1 auto}.traffic-official-card{padding:16px}}
