@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tráfico, marchas y cierres viales en CDMX | CDMX AL MEMENTO</title>
+<meta name="description" content="Consulta fuentes oficiales de tránsito y la agenda de movilizaciones de CDMX, más titulares recientes sobre marchas, cierres, obras e incidentes viales con fecha y medio.">
+<meta name="theme-color" content="#160e21">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://cdmx-al-memento.pages.dev/trafico/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/styles.css?v=20261027-global">
+<link rel="stylesheet" href="/assets/portal.css?v=1">
+<link rel="stylesheet" href="/assets/trafico.css?v=1">
+<link rel="stylesheet" href="/assets/clima-ticker.css?v=4">
+</head>
+<body>
+<a class="skip" href="#contenido">Saltar al contenido</a>
+<div id="weather-ribbon" class="weather-ribbon" role="region" aria-label="Pronóstico meteorológico de la Ciudad de México">
+ <a class="weather-ribbon__brand" href="/cerca/" title="Clima y alcaldías">🌸 CLIMA</a>
+ <div class="weather-ribbon__window" aria-label="Pronóstico de la CDMX"><div id="weather-ribbon-track" class="weather-ribbon__track"><div class="weather-ribbon__set"><span class="weather-chip">Consultando clima…</span></div></div></div>
+ <span class="weather-sr-only" id="weather-screen-reader" role="status" aria-live="polite"></span>
+</div>
+<header><div class="wrap"><div class="top"><a class="logo" href="/">CDMX <span>AL MEMENTO</span></a><span class="tag">MOVILIDAD · FUENTES CONSULTABLES</span></div>
+<nav aria-label="Navegación principal">
+ <a href="/">Portada</a><a href="/movilidad/">Metro y Metrobús</a><a href="/trafico/" aria-current="page">Tráfico y marchas</a><a href="/avisos/">Avisos</a><a href="/comunidad/">Mi comunidad</a>
+</nav></div></header>
+<main id="contenido" class="traffic-page">
+<section class="traffic-hero">
+ <p class="traffic-eyebrow">CDMX AL MEMENTO · INFORMACIÓN VIAL</p>
+ <h1>Tráfico, marchas y cierres viales</h1>
+ <p>Consulta primero los <strong>avisos de las autoridades</strong> y después los titulares periodísticos recientes sobre posibles afectaciones. Los artículos no acreditan por sí mismos que una calle siga cerrada o que una marcha haya comenzado.</p>
+ <div class="traffic-actions"><a href="#fuentes-oficiales">Ver avisos oficiales</a><a href="#titulares">Explorar titulares recientes</a><a href="/movilidad/">Metro y Metrobús</a></div>
+</section>
+<section id="fuentes-oficiales" class="traffic-official-section" aria-labelledby="traffic-official-title">
+ <div class="traffic-title-row"><div><span class="traffic-eyebrow">AUTORIDADES · CONSULTA DIRECTA</span><h2 id="traffic-official-title">Fuentes oficiales para salir informado</h2></div></div>
+ <p class="traffic-description">Los enlaces llevan a canales de las autoridades. Revisa la fecha de cada publicación y confirma calle, sentido, tramo y vigencia. Las movilizaciones programadas no implican un cierre confirmado.</p>
+ <div class="traffic-official-grid">
+  <article class="traffic-official-card">
+   <span class="traffic-source-mark" aria-hidden="true">SSC</span>
+   <div><span class="traffic-source-type">REPORTE OFICIAL</span><h3>Orientación Vial · SSC CDMX</h3>
+   <p>Incidentes, restricciones de circulación, marchas y alternativas viales publicadas por la autoridad.</p>
+   <a href="https://x.com/OVIALCDMX" target="_blank" rel="noopener noreferrer">Abrir @OVIALCDMX</a></div>
+  </article>
+  <article class="traffic-official-card">
+   <span class="traffic-source-mark" aria-hidden="true">SSC</span>
+   <div><span class="traffic-source-type">AGENDA PROGRAMADA</span><h3>Agenda de movilizaciones</h3>
+   <p>Concentraciones y marchas previstas; verifica la fecha de la agenda. Un evento programado puede cambiar o cancelarse.</p>
+   <a href="https://www.ssc.cdmx.gob.mx/ciudadania/agenda-de-movilizaciones-sociales" target="_blank" rel="noopener noreferrer">Consultar agenda SSC</a></div>
+  </article>
+  <article class="traffic-official-card">
+   <span class="traffic-source-mark" aria-hidden="true">C5</span>
+   <div><span class="traffic-source-type">SEGUIMIENTO OFICIAL</span><h3>C5 Ciudad de México</h3>
+   <p>Información difundida por el centro de atención a emergencias y monitoreo de incidentes de la ciudad.</p>
+   <a href="https://x.com/C5_CDMX" target="_blank" rel="noopener noreferrer">Abrir @C5_CDMX</a></div>
+  </article>
+ </div>
+ <p class="traffic-source-note">Los canales de X pueden solicitar inicio de sesión. CDMX AL MEMENTO no controla sus publicaciones ni proporciona rutas alternativas calculadas.</p>
+</section>
+<section id="titulares" class="traffic-feed-section" aria-labelledby="traffic-feed-title">
+ <div class="traffic-title-row">
+  <div><span class="traffic-eyebrow">HEMEROTECA RECIENTE · FUENTES ENLAZADAS</span><h2 id="traffic-feed-title">Noticias relacionadas con afectaciones viales</h2></div>
+  <button type="button" id="traffic-reload" class="traffic-reload">Actualizar titulares</button>
+ </div>
+ <p class="traffic-description">La selección usa palabras del titular y solo muestra publicaciones de las últimas <strong>48 horas</strong>. No es un mapa de bloqueos activos ni un inventario oficial de calles cerradas.</p>
+ <div class="traffic-stats" aria-label="Resumen de la consulta">
+  <div><strong id="traffic-total">—</strong><span>Titulares recientes consultados</span></div>
+  <div><strong id="traffic-borough-count">—</strong><span>Alcaldías mencionadas</span></div>
+  <div><strong id="traffic-last-checked">—</strong><span>Hora de la consulta</span></div>
+ </div>
+ <div class="traffic-filters" aria-label="Filtros de noticias">
+  <label for="traffic-type">Tema<select id="traffic-type">
+   <option value="all">Todos</option><option value="marchas">Marchas y protestas</option><option value="cierres">Bloqueos y cierres</option><option value="obras">Obras y carriles</option><option value="incidentes">Incidentes viales</option>
+  </select></label>
+  <label for="traffic-borough">Alcaldía mencionada<select id="traffic-borough"><option value="all">Todas las zonas</option></select></label>
+  <label for="traffic-search">Buscar calle o tema<input id="traffic-search" type="search" placeholder="Ej. Insurgentes, Reforma" maxlength="80"></label>
+ </div>
+ <p id="traffic-status" class="traffic-status" role="status" aria-live="polite">Consultando titulares recientes…</p>
+ <div class="traffic-layout">
+  <section aria-label="Listado de noticias">
+   <div id="traffic-list" class="traffic-list"></div>
+   <button type="button" id="traffic-more" class="traffic-more" hidden>Mostrar más titulares</button>
+  </section>
+  <aside class="traffic-aside">
+   <h3>Antes de tomar una ruta</h3>
+   <ol><li>Comprueba si el aviso corresponde a <strong>hoy</strong>.</li>
+   <li>Confirma si es un evento <strong>previsto</strong> o una afectación <strong>reportada</strong>.</li>
+   <li>Revisa calle, tramo y sentido en <a href="https://x.com/OVIALCDMX" target="_blank" rel="noopener noreferrer">OVIAL</a>.</li>
+   <li>Consulta la autoridad nuevamente antes de desplazarte.</li></ol>
+   <p>Una noticia puede seguir apareciendo aunque la circulación ya se haya restablecido. El reloj de esta página indica cuándo <strong>se consultaron los titulares</strong>, no cuándo se produjo o terminó el cierre.</p>
+   <a href="/guias/cierres-viales.html">Guía para comprobar cierres viales</a>
+  </aside>
+ </div>
+</section>
+</main>
+<footer><div class="wrap">© 2026 CDMX AL MEMENTO · Proyecto informativo independiente · <a href="/politica-editorial.html">Política editorial</a> · <a href="/contacto.html">Contacto</a></div></footer>
+<script src="/assets/trafico.js?v=1" defer></script>
+<script src="/assets/clima-ticker.js?v=4" defer></script>
+<script src="/assets/page-transitions.js?v=1" defer></script>
+</body>
+</html>
