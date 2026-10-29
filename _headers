@@ -54,6 +54,11 @@
 /noticias-en-desarrollo/index.html
   Cache-Control: no-cache, must-revalidate
 
+/movilidad/
+  Cache-Control: no-cache, must-revalidate
+/movilidad/index.html
+  Cache-Control: no-cache, must-revalidate
+
 /seguridad/
   Cache-Control: no-cache, must-revalidate
 
