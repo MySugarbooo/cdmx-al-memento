@@ -1,0 +1,30 @@
+/* Etapa 5: moderación privada. Estilos aislados del sitio público. */
+.mod-wrap{max-width:1160px}
+.mod-tools{display:flex;flex-wrap:wrap;gap:12px;align-items:end;padding:16px 18px;margin:16px 0 20px;border:1px solid #825875;background:#292433;border-radius:16px}
+.mod-tools label{display:grid;gap:6px;color:#f2c4dd;font-size:.88rem;font-weight:750;min-width:180px;flex:1}
+.mod-tools select,.mod-tools input,.mod-card textarea{box-sizing:border-box;width:100%;min-height:40px;border:1px solid #ba8bac;background:#191824;color:#fff;border-radius:10px;padding:9px 11px;font:inherit}
+.mod-tools input::placeholder,.mod-card textarea::placeholder{color:#bdafbd}
+.mod-stats{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0 8px}
+.mod-stat{border:1px solid #715168;background:#292433;padding:12px 16px;border-radius:13px;min-width:145px;display:grid;gap:5px}
+.mod-stat strong{font-size:1.45rem;color:#ffb1dc;font-variant-numeric:tabular-nums}
+.mod-stat span{font-size:.82rem;color:#e5c7d8}
+.mod-card .mod-repeat{display:inline-block;font-size:.8rem;font-weight:800;color:#ffe2bf;background:#574139;border:1px solid #9d8060;border-radius:999px;padding:5px 9px;margin:4px 0}
+.mod-card .mod-note-label{display:block;margin:12px 0 5px;color:#f4c5dd;font-size:.86rem;font-weight:750}
+.mod-card textarea{resize:vertical;min-height:66px;max-height:160px}
+.mod-card .mod-actions-row{display:flex;gap:11px;align-items:center;flex-wrap:wrap;margin-top:13px}
+.mod-card .mod-actions-row button{margin:0}
+.mod-card .mod-actions-row a{padding:7px 0}
+.mod-card .mod-error{color:#ffcccf}
+.mod-card .mod-author{color:#e5cddd}
+.mod-note,.mod-subtitle{color:#dec8d8;line-height:1.6}
+.mod-hist-card{background:#211f2e;border:1px solid #78536d;border-radius:14px;padding:14px 16px;margin:10px 0;overflow-wrap:anywhere}
+.mod-hist-card h3{font-size:1.05rem;margin:5px 0;color:#ffd1e6}
+.mod-hist-card p{margin:8px 0;white-space:pre-wrap;line-height:1.45}
+.mod-hist-card small{color:#d7bacd}
+.mod-history{margin-top:36px;padding-top:19px;border-top:1px solid #78536d}
+.mod-history h2{margin:0 0 8px;color:#f8d6e9}
+.mod-history .mod-tools{margin-top:12px}
+.mod-empty{color:#dfc9d7;padding:14px 0}
+.mod-wrap :focus-visible{outline:3px solid #ffbbda;outline-offset:3px}
+.mod-card button:disabled,.mod-actions button:disabled{cursor:not-allowed}
+@media(max-width:650px){.mod-tools{padding:12px}.mod-tools label{flex-basis:100%}.mod-stat{flex:1 1 110px;min-width:0}.mod-card .mod-actions-row{align-items:stretch}.mod-card .mod-actions-row button{flex:1 1 160px}.mod-wrap{padding:0 12px}.mod-card{padding:15px}}
