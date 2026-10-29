@@ -172,5 +172,9 @@ reload.addEventListener('click',load);
 document.addEventListener('visibilitychange',()=>{
  if(document.visibilityState==='visible'&&Date.now()-lastLoad>15*60*1000)void load();
 });
+// Mantener una pestaña abierta al día sin peticiones por segundo.
+setInterval(()=>{
+ if(document.visibilityState==='visible'&&Date.now()-lastLoad>=15*60*1000)void load();
+},60*1000);
 load();
 })();
