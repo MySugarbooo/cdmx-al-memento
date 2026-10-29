@@ -24,6 +24,8 @@ on:
       - 'firebase/asignar-moderador.mjs'
       - 'firebase/README.md'
       - 'tests/test_community_site.py'
+      - 'tests/test_community_votes.py'
+      - 'assets/forum-votes.css'
       - 'privacidad.html'
       - 'sitemap.xml'
       - '_headers'
