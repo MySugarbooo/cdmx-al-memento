@@ -35,3 +35,14 @@
 .profiles-page :focus-visible{outline:3px solid #ffbcda;outline-offset:3px}
 @media(max-width:850px){.profiles-content{grid-template-columns:1fr}.profiles-aside{position:static}}
 @media(max-width:600px){.profiles-page{width:calc(100% - 22px);margin-top:13px}.profiles-hero{gap:11px;flex-wrap:wrap}.profiles-avatar{width:70px;height:70px;flex-basis:70px;font-size:1.7rem;border-width:3px}.profiles-back{flex:1 1 100%;margin-top:5px}.profiles-stats{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin:13px 0 22px}.profiles-stats>div{padding:13px 7px}.profiles-list>li{padding:14px}.profiles-list time{margin-top:6px;margin-left:0;display:block}}
+
+/* Enlaces de autor dentro del foro existente. */
+.community-profile-inner{display:flex;align-items:center;gap:13px;min-width:0}
+.community-profile-link{color:inherit;text-decoration:none;min-width:0;border-radius:12px}
+.community-profile-link:hover .community-profile-details strong{text-decoration:underline;text-underline-offset:3px;color:#ffe1f1}
+.community-profile-link:focus-visible{outline:3px solid #f6a3d1;outline-offset:3px}
+.community-header-actions{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.community-self-profile{display:inline-flex;align-items:center;justify-content:center;border:1px solid #d78ab6;border-radius:999px;padding:11px 16px;text-decoration:none!important;font-weight:750;color:#ffe2ef!important;background:#4c2a48}
+.community-self-profile:hover{background:#663357}
+.community-self-profile[hidden]{display:none!important}
+@media(max-width:600px){.community-header-actions{width:100%}.community-header-actions .community-new-post{flex:1}.community-self-profile{flex:0 0 auto}}
