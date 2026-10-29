@@ -122,3 +122,32 @@ Para revocarlo: `--revoke --apply`. El script mantiene los demás roles existent
 El **correo para recibir alertas** es una función distinta: en la web actual las denuncias se guardan en Firestore y aparecen en el panel de moderación, pero no envían mensajes automáticos. Para notificaciones por email se necesita una función de servidor o proveedor externo y credenciales privadas. No coloques claves de administrador ni contraseñas en el JavaScript público.
 
 **Importante:** Firebase Authentication no acepta las credenciales de usuario predeterminadas del cliente OAuth de gcloud para el Admin SDK. Por eso el ejemplo usa suplantación temporal de una cuenta de servicio (service account impersonation), no una clave JSON. La cuenta de Google que ejecuta el comando necesita el permiso IAM **Service Account Token Creator**, y la cuenta de servicio seleccionada necesita permisos de administración de Firebase Authentication. Puedes encontrar la cuenta de servicio en Firebase Console → Configuración del proyecto → Cuentas de servicio. Si falla por IAM, revisa esos permisos antes de seguir. No descargues ni publiques credenciales de servicio.
+
+## Etapa 9: reportes ciudadanos por colonia
+
+Página independiente: `/reportes-ciudadanos/`. **No confundir con `/reportes/`**, que conserva los análisis editoriales de noticias.
+
+**Se requiere publicar las reglas completas de Firestore actualizadas.** GitHub, Cloudflare y sus despliegues no modifican las reglas del proyecto Firebase. Abrir:
+https://console.firebase.google.com/project/cdmx-al-memento/firestore/rules
+y copiar el archivo **entero** `firebase/firestore.rules` desde la rama `main`; después pulsar Publicar. No pegar únicamente el bloque de reportes, porque se perderían los permisos del foro, los votos y la moderación anterior.
+
+### Esquema de datos y visibilidad
+
+- `citizenReports/{reportId}`: registro privado. Contiene `uid`, `borough`, `colonia`, `category`, `title`, `description`, `status`, `createdAt`, `updatedAt` y `moderatedBy`. Lectura solo de su dueño o de una cuenta con rol `moderator: true`. Nuevo reporte siempre `pending`. No se acepta nombre, correo, teléfono, URL de foto, GPS, contenido multimedia ni campos adicionales en este documento.
+- `citizenReportsPublic/{reportId}`: reflejo público **sin UID ni datos de autenticación**. Contiene únicamente `borough`, `colonia`, `category`, `title`, `description`, `status`, `createdAt` y `updatedAt`. Solo un moderador autorizado puede crear este reflejo cuando cambia de `pending` a `published` en el **mismo lote atómico**. La igualdad se comprueba con `getAfter()`.
+- Un moderador puede pasar de `published` a `closed` (cierre editorial, no reparación comprobada), o descartar desde `pending` o retirar una publicación. La actualización del privado y la del reflejo público deben ser atómicas; los clientes no pueden alterar los reportes de otros usuarios.
+- El propietario puede borrar su reporte privado solo cuando esté `pending` o `rejected`. Después de publicarlo, debe solicitar su retiro a moderación. La fecha de creación y el contenido original son inmutables; la fecha de actualización y el UID moderador se registran en los cambios.
+- El usuario de Google no necesita un rol nuevo. **Los mismos moderadores actuales** pueden aprobar y retirar reportes; el rol se asigna en el servidor, nunca desde el navegador.
+
+### Cómo probar después de publicar las reglas
+
+1. En incógnito, sin iniciar sesión: abrir `/reportes-ciudadanos/` y comprobar que la lista pública carga, pero el formulario esté oculto. Un visitante NO debe poder leer `citizenReports` de otra cuenta.
+2. Cuenta Google normal: entrar, crear un reporte inocuo de prueba («Prueba de alumbrado en mi colonia», sin domicilios ni PII). Debe aparecer **solo** en «Mis reportes», con estado `pending`, no en la lista pública.
+3. Cuenta moderadora: abrir la misma página, verificar que se muestra «Revisión editorial», y aprobar el reporte. Debe aparecer públicamente sin UID, nombre ni correo; y el propietario debe ver el cambio de estado.
+4. Cuenta moderadora: «Cerrar seguimiento» y luego «Retirar de la web»; confirmar que el cierre no dice que la avería fue reparada. Si hay errores `permission-denied`, comprobar primero el archivo completo de reglas publicado.
+5. Intentar escribir directamente en `citizenReportsPublic` desde una cuenta normal: debe ser denegado. Intentar marcar un envío privado como publicado o modificar otro usuario debe ser denegado.
+6. Revisar que la comunidad, votos, denuncias del foro e historial de moderación siguen funcionando.
+
+### Limitaciones de seguridad
+
+La revisión de contenido es manual. El enfriamiento de 60 segundos en JavaScript **no** es un límite real en el servidor; las reglas por sí solas no pueden imponer una cuota fiable de publicaciones por minuto. Antes de escalar el servicio es recomendable implementar **Firebase App Check + Cloud Functions u otro backend confiable con cuotas por UID**, y considerar revisión reforzada de datos personales antes de publicar. Las reglas de Firestore no filtran palabras sensibles en un campo libre y un moderador debe revisar cada publicación.
