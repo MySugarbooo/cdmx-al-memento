@@ -47,6 +47,7 @@ function conditions(symbol){
   return {description:'Clima variable',icon:'🌸'};
 }
 function validNumber(x,min,max) {
+  if(x===null||x===undefined||typeof x==='boolean'||x==='')return null;
   const n=Number(x);
   return Number.isFinite(n)&&n>=min&&n<=max?n:null;
 }
@@ -77,6 +78,10 @@ export async function onRequestGet({request}) {
     const temperature=validNumber(details.air_temperature,-40,55);
     const humidity=validNumber(details.relative_humidity,0,100);
     const windMs=validNumber(details.wind_speed,0,100);
+    const precipitation1h=validNumber(current.data?.next_1_hours?.details?.precipitation_amount,0,1000);
+    const precipitation6h=validNumber(current.data?.next_6_hours?.details?.precipitation_amount,0,1000);
+    const precip=precipitation1h!==null?precipitation1h:precipitation6h;
+    const precipHours=precipitation1h!==null?1:precipitation6h!==null?6:null;
     if(temperature===null)throw Error('Temperatura no disponible');
     const rawExpires=Date.parse(response.headers.get('Expires')||'');
     const seconds=Number.isFinite(rawExpires)?Math.max(300,Math.min(86400,Math.ceil((rawExpires-Date.now())/1000))):1800;
@@ -87,6 +92,8 @@ export async function onRequestGet({request}) {
       temperature_c:temperature,
       humidity_pct:humidity,
       wind_kmh:windMs===null?null:Math.round(windMs*3.6),
+      precipitation_mm:precip,
+      precipitation_window_hours:precipHours,
       description,icon,
       forecast_for:current.time,
       source:'MET Norway',
