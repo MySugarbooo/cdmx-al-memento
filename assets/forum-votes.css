@@ -1,0 +1,9 @@
+/* CDMX AL MEMENTO · etapa 3: votos útiles en Mi comunidad */
+.cdmx-comments .forum-vote{background:#372b44;border:1px solid #b378a4;color:#ffdaec;font-size:.83rem;padding:7px 12px;margin:0;border-radius:999px;font-weight:750;white-space:nowrap;line-height:1.35;transition:background .15s ease,transform .15s ease}
+.cdmx-comments .forum-vote:hover:not(:disabled){background:#633658;transform:translateY(-1px)}
+.cdmx-comments .forum-vote.forum-vote-active{background:#df5ba2;border-color:#ffb9df;color:#281121}
+.cdmx-comments .forum-vote:focus-visible{outline:3px solid #ffc3e4;outline-offset:3px}
+.cdmx-comments .forum-best-answer{display:inline-flex;align-items:center;gap:6px;margin:12px 0 0;color:#f8e2bb;background:#453c38;border:1px solid #e4b870;border-radius:9px;padding:5px 10px;font-size:.78rem;font-weight:750;line-height:1.45;max-width:100%;overflow-wrap:anywhere}
+.cdmx-comments .forum-voting-note{color:#e8bfd7;font-size:.87rem;line-height:1.55;margin:8px 0 16px}
+.cdmx-comments .forum-thread .forum-answer:has(.forum-best-answer){border-color:#bc8c7a;background:#2c2636}
+@media(max-width:590px){.cdmx-comments .forum-vote{font-size:.78rem;padding:7px 10px}.cdmx-comments .forum-best-answer{font-size:.73rem}}
