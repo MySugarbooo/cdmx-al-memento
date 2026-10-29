@@ -23,6 +23,13 @@ assert.deepEqual(got.pollutants,['PM2.5']);
 assert.equal(got.reported_at,'2026-10-29T14:00:00.000Z');
 assert.equal(got.scope.includes('no equivale'),true);
 
+const tableLayout=`<body><table><tr><td>Menú</td></tr></table>
+<div><span>08:00 h, jueves 29 de octubre de 2026</span></div>
+<div>Índice AIRE Y SALUD: ACEPTABLE</div>
+<div>Contaminante(s): PM<sub>2.5</sub></div>
+<div>Riesgo: MODERADO</div></body>`;
+assert.equal(air.parseAirReport(tableLayout,now).category,'ACEPTABLE',
+ 'Las tablas de diseño antes del índice no deben impedir leer el informe.');
 const light=`<p>Ciudad de México, jueves 29 de octubre de 2026</p>
 <p>08 horas</p><p><strong>Índice AIRE Y SALUD: BUENA</strong></p>
 <p><strong>Nivel de riesgo:</strong> BAJO</p>
