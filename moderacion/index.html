@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="es-MX"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Moderación privada | CDMX AL MEMENTO</title><meta name="robots" content="noindex,nofollow">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/styles.css?v=20261027-dark">
+<style>
+.mod-wrap{max-width:1080px;margin:28px auto 70px;padding:0 18px;color:#f8edf5}.mod-head{padding:26px;border:1px solid #80516e;border-radius:20px;background:#242233}.mod-head h1{margin:8px 0;color:#ffc0e1}.mod-head p{color:#e5cddc}.mod-actions{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0}.mod-actions button,.mod-card button{background:#d74491;color:white;border:0;border-radius:10px;padding:11px 16px;cursor:pointer;font-weight:700}.mod-actions button.secondary,.mod-card button.secondary{background:#494052}.mod-actions button:disabled,.mod-card button:disabled{opacity:.55;cursor:wait}.mod-card{background:#242233;border:1px solid #75516b;border-radius:16px;padding:20px;margin:16px 0;overflow-wrap:anywhere}.mod-card p{white-space:pre-wrap;line-height:1.5}.mod-card small{color:#dcc7d6}.mod-card .buttons{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}.mod-status{padding:14px 0;min-height:2em}a{color:#ffb5d8}button:focus-visible,a:focus-visible{outline:3px solid #ffb5d8;outline-offset:3px}[hidden]{display:none!important}
+</style></head><body>
+<header><div class="wrap"><div class="top"><a class="logo" href="/">CDMX <span>AL MEMENTO</span></a><span class="tag">MODERACIÓN</span></div><nav><a href="/">Noticias</a><a href="/comunidad/">Mi comunidad</a></nav></div></header>
+<main class="mod-wrap"><section class="mod-head"><p>ÁREA PRIVADA</p><h1>Panel de moderación</h1><p>Revisa denuncias y decide si corresponde retirar una publicación. Las acciones son irreversibles.</p></section>
+<div class="mod-actions"><button id="login" type="button" hidden>Entrar con Google</button><button id="refresh" type="button" hidden>Actualizar reportes</button><button id="logout" class="secondary" type="button" hidden>Cerrar sesión</button></div>
+<p id="status" class="mod-status" role="status" aria-live="polite">Verificando acceso…</p><section id="private" hidden><h2>Reportes recientes</h2><p>Se muestran los 50 reportes más recientes. Eliminar un reporte no elimina la publicación.</p><div id="reports"></div></section></main>
+<footer><div class="wrap">© 2026 CDMX AL MEMENTO · <a href="/comunidad/">Volver al foro</a></div></footer>
+<script src="/assets/comments-config.js?v=2"></script><script type="module">
+import {initializeApp} from 'https://www.gstatic.com/firebasejs/10.14.1/firebase-app.js';
+import {getAuth,onAuthStateChanged,GoogleAuthProvider,signInWithPopup,signInWithRedirect,getRedirectResult,signOut,getIdTokenResult} from 'https://www.gstatic.com/firebasejs/10.14.1/firebase-auth.js';
+import {getFirestore,collection,doc,getDoc,getDocs,query,orderBy,limit,deleteDoc} from 'https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore.js';
+const $=id=>document.getElementById(id),status=$('status'),login=$('login'),logout=$('logout'),refresh=$('refresh'),privateArea=$('private'),reports=$('reports');
+const cfg=window.CDMX_COMMENTS_FIREBASE;
+if(!cfg?.apiKey||!cfg?.projectId||!cfg?.authDomain||!cfg?.appId){status.textContent='Falta configurar Firebase.';throw Error('Firebase config missing');}
+const app=initializeApp(cfg,'cdmx-moderation'),auth=getAuth(app),db=getFirestore(app);
+let allowed=false,loadSerial=0;
+const reasonNames={spam:'Publicidad o spam',abuso:'Acoso o insultos',privacidad:'Información privada',desinformacion:'Información engañosa',otro:'Otro motivo'};
+const when=value=>{try{return value?.toDate?.().toLocaleString('es-MX',{dateStyle:'medium',timeStyle:'short'})||'Fecha pendiente';}catch{return 'Fecha no disponible';}};
+const p=(parent,content,tag='p')=>{const el=document.createElement(tag);el.textContent=content;parent.append(el);return el;};
+async function loadReports(){
+ if(!allowed||!auth.currentUser)return;
+ const serial=++loadSerial;refresh.disabled=true;status.textContent='Consultando reportes…';
+ try{
+  const q=query(collection(db,'community','main','reports'),orderBy('createdAt','desc'),limit(50));
+  const snapshot=await getDocs(q);if(serial!==loadSerial||!allowed)return;
+  reports.replaceChildren();status.textContent=snapshot.size+' reporte(s) cargado(s).';
+  if(snapshot.empty){p(reports,'No hay reportes pendientes.');return;}
+  for(const report of snapshot.docs){
+   const data=report.data(),id=String(data.commentId||''),card=document.createElement('article');card.className='mod-card';
+   p(card,reasonNames[data.reason]||'Motivo no especificado','h3');
+   p(card,'Reportado: '+when(data.createdAt)+' · ID: '+id,'small');
+   const detail=document.createElement('div');card.append(detail);
+   if(!/^[A-Za-z0-9]{20}$/.test(id)){p(detail,'Identificador inválido: no se puede abrir la publicación.');}
+   else{
+    try{
+     const post=await getDoc(doc(db,'community','main','comments',id));
+     if(serial!==loadSerial||!allowed)return;
+     if(post.exists()){const d=post.data();p(detail,'Autor: '+String(d.name||'Sin nombre').slice(0,80));p(detail,String(d.text||'').slice(0,1000));p(detail,'Publicado: '+when(d.createdAt),'small');}
+     else p(detail,'Esta publicación ya no existe.');
+    }catch(e){p(detail,'No fue posible consultar la publicación ('+(e.code||'error')+').');}
+   }
+   const buttons=document.createElement('div');buttons.className='buttons';
+   const link=document.createElement('a');link.href='/comunidad/#post-'+encodeURIComponent(id);link.textContent='Abrir en el foro';buttons.append(link);
+   const dismiss=document.createElement('button');dismiss.className='secondary';dismiss.textContent='Descartar reporte';
+   dismiss.onclick=async()=>{if(!allowed||!confirm('¿Cerrar este reporte sin eliminar la publicación?'))return;dismiss.disabled=true;try{await deleteDoc(report.ref);card.remove();status.textContent='Reporte descartado.';}catch(e){status.textContent='Error al descartar ('+(e.code||'error')+').';dismiss.disabled=false;}};
+   const remove=document.createElement('button');remove.textContent='Eliminar publicación';
+   remove.disabled=!/^[A-Za-z0-9]{20}$/.test(id);
+   remove.onclick=async()=>{
+    if(!allowed||!confirm('¿Eliminar definitivamente esta publicación denunciada?'))return;
+    remove.disabled=true;dismiss.disabled=true;
+    try{
+     await deleteDoc(doc(db,'community','main','comments',id));
+     await deleteDoc(report.ref);
+     card.remove();status.textContent='Publicación eliminada y reporte cerrado.';
+    }catch(e){status.textContent='Error de moderación ('+(e.code||'error')+'). Comprueba el reporte y reintenta.';remove.disabled=false;dismiss.disabled=false;}
+   };
+   buttons.append(dismiss,remove);card.append(buttons);reports.append(card);
+  }
+ }catch(e){if(serial===loadSerial)status.textContent='No se pudieron consultar reportes ('+(e.code||'error')+').';}
+ finally{if(serial===loadSerial)refresh.disabled=false;}
+}
+login.onclick=async()=>{try{await signInWithPopup(auth,new GoogleAuthProvider());}catch(e){if(e.code==='auth/popup-blocked'){await signInWithRedirect(auth,new GoogleAuthProvider());}else status.textContent='No se pudo iniciar sesión ('+(e.code||'error')+').';}};
+logout.onclick=()=>signOut(auth);refresh.onclick=loadReports;
+getRedirectResult(auth).catch(()=>{});
+onAuthStateChanged(auth,async user=>{
+ const serial=++loadSerial;allowed=false;privateArea.hidden=true;reports.replaceChildren();refresh.hidden=true;
+ login.hidden=!!user;logout.hidden=!user;
+ if(!user){status.textContent='Inicia sesión con Google para verificar tu acceso.';return;}
+ status.textContent='Verificando permisos de moderación…';
+ try{
+  const token=await getIdTokenResult(user,true);if(serial!==loadSerial)return;
+  allowed=token.claims.moderator===true;
+  if(!allowed){status.textContent='Acceso denegado: esta cuenta no tiene permisos de moderación.';return;}
+  privateArea.hidden=false;refresh.hidden=false;status.textContent='Acceso autorizado.';await loadReports();
+ }catch(e){if(serial===loadSerial)status.textContent='No se pudo verificar el permiso ('+(e.code||'error')+').';}
+});
+</script></body></html>
