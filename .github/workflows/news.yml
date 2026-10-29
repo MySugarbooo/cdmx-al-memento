@@ -72,6 +72,13 @@ on:
       - 'styles.css'
       - 'tests/test_portal.py'
       - 'tests/test_weather.py'
+      - 'tests/test_transport_status.py'
+      - 'tests/test_transporte_api.mjs'
+      - 'scripts/estado_transporte.py'
+      - 'functions/api/estado-transporte.js'
+      - 'assets/estado-transporte.js'
+      - 'assets/estado-transporte.css'
+      - 'movilidad/index.html'
       - 'tests/test_kisumi_studio.py'
       - 'kisumi-studio/**'
       - 'functions/api/clima.js'
@@ -107,6 +114,9 @@ jobs:
           node --check assets/portal.js
           node --check assets/clima-ticker.js
           node --check --input-type=module < functions/api/clima.js
+          node --check --input-type=module < functions/api/estado-transporte.js
+          node --check assets/estado-transporte.js
+          node tests/test_transporte_api.mjs
           node --check assets/comments.js
           node --check assets/community-profiles.js
           node --check --input-type=module < assets/moderacion-avanzada.js
