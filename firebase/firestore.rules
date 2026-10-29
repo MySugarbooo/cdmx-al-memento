@@ -173,6 +173,139 @@ service cloud.firestore {
       allow create: if validModerationAction(actionId);
       allow update, delete: if false;
     }
+    // Etapa 9: reportes ciudadanos independientes del foro.
+    // Los borradores privados solo los ven su autor y moderadores.
+    // SOLO la proyección aprobada, sin UID, se muestra al público.
+    function citizenPrivatePath(reportId) {
+      return /databases/$(database)/documents/citizenReports/$(reportId);
+    }
+    function citizenPublicPath(reportId) {
+      return /databases/$(database)/documents/citizenReportsPublic/$(reportId);
+    }
+    function citizenBorough(value) {
+      return value in [
+        'Álvaro Obregón', 'Azcapotzalco', 'Benito Juárez', 'Coyoacán',
+        'Cuajimalpa de Morelos', 'Cuauhtémoc', 'Gustavo A. Madero',
+        'Iztacalco', 'Iztapalapa', 'La Magdalena Contreras',
+        'Miguel Hidalgo', 'Milpa Alta', 'Tláhuac', 'Tlalpan',
+        'Venustiano Carranza', 'Xochimilco'
+      ];
+    }
+    function citizenCategory(value) {
+      return value in ['baches', 'fugas', 'alumbrado', 'basura',
+        'banquetas', 'transporte', 'otro'];
+    }
+    function validCitizenFields(data) {
+      return data.keys().hasOnly([
+          'uid', 'borough', 'colonia', 'category', 'title', 'description',
+          'status', 'createdAt', 'updatedAt', 'moderatedBy'
+        ])
+        && data.keys().hasAll([
+          'uid', 'borough', 'colonia', 'category', 'title', 'description',
+          'status', 'createdAt', 'updatedAt', 'moderatedBy'
+        ])
+        && data.uid is string && data.uid.size() >= 8 && data.uid.size() <= 128
+        && citizenBorough(data.borough)
+        && citizenCategory(data.category)
+        && data.colonia is string && data.colonia.size() <= 70
+        && data.title is string && data.title.size() >= 8 && data.title.size() <= 110
+        && data.description is string && data.description.size() >= 20
+        && data.description.size() <= 900
+        && data.moderatedBy is string && data.moderatedBy.size() <= 128;
+    }
+    function validCitizenSubmission(reportId) {
+      let data = request.resource.data;
+      return signedInGoogle() && notBlocked()
+        && reportId.matches('[A-Za-z0-9]{20}')
+        && validCitizenFields(data)
+        && data.uid == request.auth.uid
+        && data.status == 'pending'
+        && data.moderatedBy == ''
+        && data.createdAt == request.time
+        && data.updatedAt == request.time;
+    }
+    function matchingCitizenPublic(pub, priv) {
+      return pub.keys().hasOnly([
+          'borough', 'colonia', 'category', 'title', 'description',
+          'status', 'createdAt', 'updatedAt'
+        ])
+        && pub.keys().hasAll([
+          'borough', 'colonia', 'category', 'title', 'description',
+          'status', 'createdAt', 'updatedAt'
+        ])
+        && pub.borough == priv.borough
+        && pub.colonia == priv.colonia
+        && pub.category == priv.category
+        && pub.title == priv.title
+        && pub.description == priv.description
+        && pub.status == priv.status
+        && pub.createdAt == priv.createdAt
+        && pub.updatedAt == priv.updatedAt
+        && pub.status in ['published', 'closed'];
+    }
+    function validCitizenModeration(reportId) {
+      let next = request.resource.data;
+      let previous = resource.data;
+      return moderator()
+        && validCitizenFields(next)
+        && next.diff(previous).affectedKeys().hasOnly([
+          'status', 'moderatedBy', 'updatedAt'
+        ])
+        && next.moderatedBy == request.auth.uid
+        && next.updatedAt == request.time
+        && (
+          (previous.status == 'pending'
+            && next.status in ['published', 'rejected'])
+          || (previous.status == 'published'
+            && next.status in ['closed', 'rejected'])
+          || (previous.status == 'closed' && next.status == 'rejected')
+        )
+        && (
+          (next.status in ['published', 'closed']
+            && existsAfter(citizenPublicPath(reportId))
+            && matchingCitizenPublic(
+              getAfter(citizenPublicPath(reportId)).data, next
+            ))
+          || (next.status == 'rejected'
+            && !existsAfter(citizenPublicPath(reportId)))
+        );
+    }
+    match /citizenReports/{reportId} {
+      // Se lee únicamente con rol moderador o desde la cuenta autora.
+      // Las consultas de un usuario deben incluir where('uid','==',auth.uid).
+      allow get, list: if moderator() ||
+        (signedInGoogle() && resource.data.uid == request.auth.uid);
+      allow create: if validCitizenSubmission(reportId);
+      allow update: if validCitizenModeration(reportId);
+      allow delete: if signedInGoogle() && resource.data.uid == request.auth.uid
+        && resource.data.status in ['pending', 'rejected'];
+    }
+    match /citizenReportsPublic/{reportId} {
+      // No contiene UID, nombre, correo, fotografía ni teléfono del autor.
+      allow read: if true;
+      allow create: if moderator()
+        && reportId.matches('[A-Za-z0-9]{20}')
+        && exists(citizenPrivatePath(reportId))
+        && get(citizenPrivatePath(reportId)).data.status == 'pending'
+        && existsAfter(citizenPrivatePath(reportId))
+        && getAfter(citizenPrivatePath(reportId)).data.status == 'published'
+        && matchingCitizenPublic(request.resource.data,
+          getAfter(citizenPrivatePath(reportId)).data);
+      allow update: if moderator()
+        && resource.data.status == 'published'
+        && request.resource.data.status == 'closed'
+        && request.resource.data.diff(resource.data).affectedKeys().hasOnly([
+          'status', 'updatedAt'
+        ])
+        && existsAfter(citizenPrivatePath(reportId))
+        && getAfter(citizenPrivatePath(reportId)).data.status == 'closed'
+        && matchingCitizenPublic(request.resource.data,
+          getAfter(citizenPrivatePath(reportId)).data);
+      allow delete: if moderator()
+        && existsAfter(citizenPrivatePath(reportId))
+        && getAfter(citizenPrivatePath(reportId)).data.status == 'rejected';
+    }
+
     match /communityBans/{uid} {
       // Bloqueos gestionados únicamente con Admin SDK / consola administrativa.
       allow read, write: if false;
