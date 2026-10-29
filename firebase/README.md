@@ -51,6 +51,29 @@ En un entorno de administración autenticado, consulta las claims anteriores del
 
 Para bloquear un usuario, el administrador puede crear con privilegios de servidor un documento `communityBans/{uid}`. Las reglas impiden que usuarios normales creen o lean esa lista.
 
+## Etapa 5 · Filtros e historial privado de decisiones
+
+El panel `/moderacion/` conserva el acceso por el claim firmado `moderator: true`, el nombre y la fotografía de la cuenta de Google. Añade búsqueda y filtros por motivo, visualización de varias denuncias sobre una misma publicación, notas internas e historial de decisiones. La repetición de reportes **no demuestra una infracción**.
+
+El registro nuevo se guarda exclusivamente en `community/main/moderationActions/{id}` con:
+
+- `actorUid`: la cuenta moderadora que toma la decisión;
+- `reportId`, `commentId`, `reason`, `action` (`dismiss` o `remove`), `note` (hasta 240 caracteres) y `createdAt` (fecha/hora del servidor).
+
+Las reglas dejan leer el historial **solo a moderadores** y crear registros **solo al moderador que ejecuta la acción**. La creación requiere cerrar el reporte en la misma transacción, y en caso de retirada también borrar la publicación. Los clientes no pueden modificar ni eliminar entradas ya creadas. Un administrador con privilegios de servidor sí puede gestionar los datos, por lo que esto no reemplaza un sistema forense de auditoría independiente.
+
+**Activación obligatoria para registrar decisiones:**
+1. Copia el archivo **completo** `firebase/firestore.rules` a Firebase Console > Firestore Database > Rules y publícalo. **No borres** las reglas de moderación, votos, publicaciones o denuncias existentes.
+2. Vuelve al panel, inicia sesión con Google y selecciona **Actualizar historial**. Debe aparecer que el historial privado está activo.
+3. Con una denuncia de prueba, comprueba una decisión autorizada y verifica que aparece en el historial. No borres publicaciones reales solo para probar.
+4. En una cuenta sin permiso, el panel debe mostrar acceso denegado y Firestore debe rechazar la lectura del historial.
+
+**Compatibilidad:** si la lectura del historial falla (por ejemplo, porque las nuevas reglas aún no se publicaron), el panel permite las acciones anteriores con una confirmación que avisa expresamente que no quedarán en el historial. El historial registra **solo las decisiones hechas desde este panel a partir de la activación**; no reconstruye decisiones anteriores ni registra las eliminaciones hechas desde el propio foro u otras interfaces.
+
+Las notas internas y los UID de las cuentas moderadoras son privados. No incluyas correos, domicilios ni otras claves personales en las notas. No se guardan copias del texto de publicaciones eliminadas en el registro. No hay depuración automática configurada para `moderationActions`; se deberá definir una política de retención y limpieza administrada si el volumen crece.
+
+La opción **Contacto** se utiliza para solicitar revisión de decisiones; no existe aún un sistema de apelaciones con identificador de caso ni garantías de respuesta automática.
+
 ## Compatibilidad e historial
 
 La estructura de mensajes previa se conserva:
