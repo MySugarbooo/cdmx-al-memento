@@ -21,6 +21,11 @@ on:
       - 'noticias/index.html'
       - 'comunidad/index.html'
       - 'firebase/firestore.rules'
+      - 'reportes-ciudadanos/index.html'
+      - 'assets/reportes-ciudadanos.js'
+      - 'assets/reportes-ciudadanos.css'
+      - 'tests/test_citizen_reports.py'
+      - 'tests/test_citizen_reports.mjs'
       - 'firebase/asignar-moderador.mjs'
       - 'firebase/README.md'
       - 'tests/test_community_site.py'
@@ -134,6 +139,8 @@ jobs:
           node --check assets/trafico.js
           node tests/test_trafico_api.mjs
           node --check assets/aire.js
+          node --check assets/reportes-ciudadanos.js
+          node tests/test_citizen_reports.mjs
           node --check --input-type=module < functions/api/aire.js
           node --check --input-type=module < functions/api/contingencias.js
           node tests/test_aire_api.mjs
