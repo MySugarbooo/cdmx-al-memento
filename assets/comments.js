@@ -349,6 +349,23 @@ function reportButton(topic){
  });
  editor.append(select,submit,cancel);box.append(button,editor);return box;
 }
+const profileDeepLinksAttempted=new Set();
+async function loadProfileDeepLink(commentId){
+ try{
+  const doc=await fs.getDoc(fs.doc(db,'community','main','comments',commentId));
+  if(!doc.exists())return;
+  olderRows.set(doc.id,doc);
+  const text=String(doc.data().text||'');
+  const parent=text.match(/^\[FORO:RESPUESTA:([a-zA-Z0-9]{8,40})\] /);
+  if(parent&&!olderRows.has(parent[1])&&!liveRows.some(row=>row.id===parent[1])){
+   const parentDoc=await fs.getDoc(fs.doc(db,'community','main','comments',parent[1]));
+   if(parentDoc.exists())olderRows.set(parentDoc.id,parentDoc);
+  }
+  renderMerged();
+ }catch(error){
+  console.warn('No se pudo abrir la publicación del perfil:',error.code||error);
+ }
+}
 function renderMerged(){
  const all=new Map();
  for(const row of liveRows)all.set(row.id,row);
@@ -365,6 +382,10 @@ function renderMerged(){
    if(target&&!target.dataset.hashVisited){
     target.dataset.hashVisited='1';
     requestAnimationFrame(()=>target.scrollIntoView({block:'center',behavior:'auto'}));
+   }else if(!target&&!profileDeepLinksAttempted.has(postId.slice(5))){
+    const commentId=postId.slice(5);
+    profileDeepLinksAttempted.add(commentId);
+    void loadProfileDeepLink(commentId);
    }
   }
  }
