@@ -1,0 +1,52 @@
+/* CDMX AL MEMENTO · Estado de servicio por línea. Estilo aislado de Movilidad. */
+.transport-live{margin:28px 0 32px;background:linear-gradient(120deg,#211b31,#1e202e 70%);color:#f9eff7;border:1px solid #975b7c;border-radius:20px;padding:clamp(17px,3vw,27px);box-shadow:0 14px 30px #0c08142b}
+.transport-live h2{color:#fff0f9;font-size:clamp(1.45rem,3vw,2rem);margin:6px 0 12px}
+.transport-live p{line-height:1.58}
+.transport-eyebrow{font-size:.72rem!important;letter-spacing:.13em;font-weight:800;color:#ffafd5}
+.transport-description{color:#e9d0df;margin:6px 0 16px;max-width:850px}
+.transport-summary{display:flex;flex-wrap:wrap;gap:13px;align-items:center;justify-content:space-between;padding:12px 15px;background:#30243a;border:1px solid #8a5c7d;border-radius:14px;margin:18px 0}
+.transport-summary p{margin:0;color:#ffd4e7;font-weight:750}
+.transport-summary button{cursor:pointer;background:#d63f91;border:0;color:white;padding:11px 15px;border-radius:10px;font:inherit;font-size:.9rem;font-weight:700}
+.transport-summary button:disabled{opacity:.6;cursor:progress}
+.transport-note{color:#dbc2d3;font-size:.84rem;margin-top:9px!important}
+.transport-stat-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:16px 0}
+.transport-stat{display:grid;gap:5px;border:1px solid #79516d;border-radius:13px;background:#252335;padding:13px 15px}
+.transport-stat strong{font-size:1.7rem;color:#ffadd7;font-variant-numeric:tabular-nums}
+.transport-stat span{font-size:.85rem;color:#e3c8d7}
+.transport-tabs{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:22px 0 12px}
+.transport-tabs button{cursor:pointer;min-height:40px;border-radius:999px;border:1px solid #a97296;background:#392a41;color:#ffe3f0;padding:8px 16px;font:inherit;font-size:.9rem;font-weight:750}
+.transport-tabs button.active{border-color:#ffaed7;background:#d13e87;color:#fff}
+.transport-status{color:#f5d9e8;font-size:.91rem;line-height:1.55}
+.transport-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:13px;margin:17px 0}
+.transport-line{background:#262638;border:1px solid #76536d;border-radius:15px;padding:16px;display:flex;flex-direction:column;gap:12px}
+.transport-line-head{display:grid;gap:9px;justify-items:start}
+.transport-line-label{display:inline-flex;align-items:center;gap:7px;font-weight:800;color:#fff3f9;font-size:.94rem}
+.transport-line-label:before{content:'';width:11px;height:11px;border-radius:50%;background:#eaa6cc;box-shadow:0 0 0 2px #f5bfd538}
+.transport-line-label[data-system=stc][data-line="1"]:before{background:#ef87bd}
+.transport-line-label[data-system=stc][data-line="2"]:before{background:#2477b1}
+.transport-line-label[data-system=stc][data-line="3"]:before{background:#b4b529}
+.transport-line-label[data-system=stc][data-line="4"]:before{background:#69bcc4}
+.transport-line-label[data-system=stc][data-line="5"]:before{background:#f4d445}
+.transport-line-label[data-system=stc][data-line="6"]:before{background:#d94145}
+.transport-line-label[data-system=stc][data-line="7"]:before{background:#ed8f37}
+.transport-line-label[data-system=stc][data-line="8"]:before{background:#299668}
+.transport-line-label[data-system=stc][data-line="9"]:before{background:#976449}
+.transport-line-label[data-system=stc][data-line="12"]:before{background:#b5aa75}
+.transport-line-label[data-system=stc][data-line="A"]:before{background:#ab67be}
+.transport-line-label[data-system=stc][data-line="B"]:before{background:#8eb9a3}
+.transport-line-state{display:inline-flex;align-items:center;border-radius:9px;padding:5px 9px;font-size:.75rem;line-height:1.4}
+.transport-line-state[data-state=incident]{background:#643d38;border:1px solid #d69a77;color:#ffe8d7}
+.transport-line-state[data-state=regular]{background:#263e37;border:1px solid #5c9681;color:#d4f6e5}
+.transport-line-state[data-state=unknown]{background:#493d4d;border:1px solid #997d9c;color:#eedbea}
+.transport-incident{padding:11px 12px;border-left:3px solid #ebaa8b;background:#292633;border-radius:5px 10px 10px 5px}
+.transport-incident strong{display:block;color:#ffe3cf}
+.transport-incident p{margin:5px 0 0;color:#ede0e9;font-size:.86rem;overflow-wrap:anywhere}
+.transport-line-info{color:#e1d0dd;font-size:.86rem;margin:0}
+.transport-line-links{margin-top:auto;border-top:1px solid #5b4561;padding-top:10px}
+.transport-live a{color:#ffbadd;font-weight:750;text-decoration:underline;text-underline-offset:3px}
+.transport-live a:hover{color:#fff}
+.transport-live :focus-visible{outline:3px solid #ffc5e4;outline-offset:3px}
+.transport-official{margin:15px 0 0;padding:15px 18px;background:#282235;border:1px solid #855771;border-radius:13px}
+.transport-official h3{font-size:1rem;margin:0 0 9px;color:#ffd2e7}
+.transport-official-links{display:flex;flex-wrap:wrap;gap:12px}
+@media(max-width:660px){.transport-stat-list{grid-template-columns:repeat(3,minmax(0,1fr));gap:7px}.transport-stat{padding:11px 9px}.transport-stat strong{font-size:1.4rem}.transport-stat span{font-size:.77rem}.transport-summary button{width:100%}.transport-live{margin:18px 0 28px;padding:15px}.transport-grid{grid-template-columns:1fr}.transport-tabs button{flex:1 1 auto}}
