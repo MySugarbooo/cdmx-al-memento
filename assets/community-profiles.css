@@ -1,0 +1,37 @@
+/* Etapa 4 · perfiles públicos. No afecta estilos del foro ni páginas de noticias. */
+.profiles-page{width:min(1160px,calc(100% - 32px));margin:23px auto 75px;color:#f9eff7}
+.profiles-breadcrumb{display:flex;gap:10px;align-items:center;margin:0 0 18px;color:#d7afc6;font-size:.86rem}
+.profiles-breadcrumb a{color:#f3a8cc;text-decoration:none}
+.profiles-hero{background:linear-gradient(118deg,#3d253f 0%,#1d2032 77%);border:1px solid #98617f;border-radius:22px;display:flex;align-items:center;gap:22px;padding:clamp(22px,4vw,36px);box-shadow:0 10px 35px #10091855}
+.profiles-avatar{width:110px;height:110px;flex:0 0 110px;display:grid;place-items:center;border-radius:50%;background:linear-gradient(130deg,#f384bb,#923e96);border:4px solid #f3a6cb;color:#fff;font-size:2.6rem;font-weight:850;overflow:hidden}
+.profiles-avatar img{display:block;width:100%;height:100%;object-fit:cover}
+.profiles-intro{min-width:0;flex:1}
+.profiles-eyebrow{font-size:.76rem;color:#ffabd2;letter-spacing:.09em;font-weight:850}
+.profiles-intro h1{color:#fff4fa;font-size:clamp(1.6rem,4vw,2.4rem);margin:5px 0 7px;overflow-wrap:anywhere}
+.profiles-intro p{color:#dbc4d4;margin:5px 0;line-height:1.55}
+.profiles-back,.profiles-more{background:#ce3e8e;border:1px solid #fca4d2;border-radius:13px;color:#fff!important;text-decoration:none;padding:11px 16px;font-weight:750;cursor:pointer;text-align:center}
+.profiles-status{color:#f0c3db;line-height:1.5;margin:18px 0}
+.profiles-stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:20px 0 28px}
+.profiles-stats>div{border:1px solid #72516c;border-radius:14px;background:#262337;padding:19px 13px;display:grid;gap:5px;text-align:center}
+.profiles-stats strong{font-size:clamp(1.3rem,2.9vw,1.9rem);color:#ff9ecb;font-weight:850;font-variant-numeric:tabular-nums}
+.profiles-stats span{color:#e8d6e2;font-size:.82rem;line-height:1.4}
+.profiles-content{display:grid;grid-template-columns:minmax(0,1fr) minmax(225px,290px);gap:20px;align-items:start}
+.profiles-content h2{color:#ffe1f0;font-size:1.3rem;margin:0 0 15px}
+.profiles-title-row{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.profiles-title-row label{display:flex;align-items:center;gap:9px;color:#f0b9d6;font-size:.88rem;font-weight:750}
+.profiles-title-row select{background:#292134;color:#fff;border:1px solid #c187aa;border-radius:9px;padding:8px 12px;font:inherit;min-height:41px}
+.profiles-list{list-style:none;padding:0;margin:3px 0 18px;display:grid;gap:13px}
+.profiles-list>li{background:#252335;border:1px solid #75536d;border-radius:16px;padding:18px;overflow-wrap:anywhere}
+.profiles-post-type{display:inline-block;background:#773462;color:#ffdbea;border:1px solid #c97ba9;border-radius:999px;padding:5px 10px;font-size:.75rem;font-weight:800}
+.profiles-list time{display:inline-block;color:#e6c1d4;font-size:.81rem;margin-left:10px}
+.profiles-list h3{color:#fff2f9;font-size:1.15rem;line-height:1.4;margin:13px 0 8px}
+.profiles-list p{white-space:pre-wrap;line-height:1.6;color:#ece0e9;margin:9px 0 13px}
+.profiles-list a{color:#ffb7db;font-weight:750}
+.profiles-aside{position:sticky;top:18px;background:#262337;border:1px solid #72516c;border-radius:16px;padding:19px}
+.profiles-aside p{line-height:1.62;color:#e3cbd9}
+.profiles-aside a{color:#ffc2e0}
+.profiles-more{display:block;margin:18px auto}
+.profiles-more[hidden]{display:none!important}
+.profiles-page :focus-visible{outline:3px solid #ffbcda;outline-offset:3px}
+@media(max-width:850px){.profiles-content{grid-template-columns:1fr}.profiles-aside{position:static}}
+@media(max-width:600px){.profiles-page{width:calc(100% - 22px);margin-top:13px}.profiles-hero{gap:11px;flex-wrap:wrap}.profiles-avatar{width:70px;height:70px;flex-basis:70px;font-size:1.7rem;border-width:3px}.profiles-back{flex:1 1 100%;margin-top:5px}.profiles-stats{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin:13px 0 22px}.profiles-stats>div{padding:13px 7px}.profiles-list>li{padding:14px}.profiles-list time{margin-top:6px;margin-left:0;display:block}}
