@@ -60,7 +60,8 @@
   const title=make('h3');
   const a=make('a','',article.title||'Noticia sin título');
   if(validExternal(article.url)){
-   a.href=article.local_url||'/noticias/';
+   const ident=/^\/noticias\/\?id=([a-f0-9]{20})&mes=\d{4}-\d{2}$/.exec(article.local_url||'');
+   a.href=ident?'/articulos/'+ident[1]+'/':(article.local_url||'/noticias/');
   }else{a.removeAttribute('href');}
   title.append(a);
   const details=make('div','date-location');
