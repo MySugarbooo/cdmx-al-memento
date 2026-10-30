@@ -102,3 +102,13 @@
   Cache-Control: no-cache, must-revalidate
 /estadisticas/index.html
   Cache-Control: no-cache, must-revalidate
+
+# Galería editorial y su catálogo: impedir que se conserve una versión desactualizada.
+/fotografias/
+  Cache-Control: no-cache, must-revalidate
+/fotografias/index.html
+  Cache-Control: no-cache, must-revalidate
+/creditos-fotograficos.html
+  Cache-Control: no-cache, must-revalidate
+/assets/fotos/catalogo-editorial-1100.json
+  Cache-Control: no-cache, must-revalidate
