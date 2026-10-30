@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-30 02:59 UTC",
+  "updated": "2026-10-30 03:27 UTC",
   "boroughs": [
     {
       "name": "La Magdalena Contreras",
@@ -4341,8 +4341,36 @@
     },
     {
       "name": "Iztacalco",
-      "count": 88,
+      "count": 89,
       "articles": [
+        {
+          "title": "Elizabeth Mateos se registra para buscar coordinación de Morena en Iztacalco",
+          "description": "La información publicada por 24-horas trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOWkVxbTd5WHppMWd4ZGhXYko2eWJlYVJCbXQ3UHNjSnl1MENaQk5ydURsVENSSXFnOVcyX3RGLTFNU2pFWVA5a1RDQWs2UmVfZlhGeXpPLXVXZkFya21LT09Qc2NkSnRIcVhfLUVFcWdtekYwTkpTU1Z3OFdDOGEzZ3EwSnQtb3d5aTVnQll4U2tMemhGd2cwZEdKanFYSlF5Y2hKeg?oc=5",
+          "source": "24-horas",
+          "date": "2026-10-29",
+          "published_at": "2026-10-30T03:11:40Z",
+          "category": "CDMX",
+          "borough": "Iztacalco",
+          "location": "Iztacalco (mencionada en el titular)",
+          "local_url": "/noticias/?id=8f51d00077c5de804de3&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por 24-horas trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_iztacalco",
+            "url": "/assets/alcaldias/iztacalco.jpg",
+            "category": "CDMX",
+            "borough": "Iztacalco",
+            "topic": "Iglesia de San Matías en el antiguo pueblo de Iztacalco",
+            "author": "AlejandroLinaresGarcia",
+            "license": "CC BY-SA 3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:SanMatiasChurchIztacalco02.jpg"
+          }
+        },
         {
           "title": "Fallece un hombre arrollado por trolebús en Iztacalco",
           "description": "La información publicada por El Norte trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -4862,24 +4890,6 @@
           "local_url": "/noticias/?id=8573efbe727e56e19f24&mes=2026-10",
           "brief": {
             "lead": "La información publicada por Fiscalía General de Justicia de la CDMX trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
-        },
-        {
-          "title": "Agua, drenaje y alumbrado: los servicios urbanos que más atiende Iztacalco en 2026",
-          "description": "La información publicada por El Sol de México trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNaTFpeWM1NWVUVXJiUzdxUzVUUmk5bWhsQVpRV0N4WUJIYndJSlBuVzRzR1gtajh2V1VOWks2OWhIdEhnQ3NBeFRldV9jVUh0cmhzRjg3ZlFGZVU2UzZiNTdvVUN4YjZpWWhhaTJBVmptZFBtQzQzYjA0VnJLMHJmRVlfa0ZHYkNicjcyOTFjRGlBQ3VxaWpVZVYwNlo4RzlFM3hVTFQ5RkJiUVkxdTExQ2x2a010eGR4cWk1VVFkR1pfckt3LWpqVWN0TGdINEstcjBYTjlQbEUyZw?oc=5",
-          "source": "El Sol de México",
-          "date": "2026-10-22",
-          "published_at": "2026-10-23T03:03:06Z",
-          "category": "CDMX",
-          "borough": "Iztacalco",
-          "location": "Iztacalco (mencionada en el titular)",
-          "local_url": "/noticias/?id=a1acf242f1ffb8da1c46&mes=2026-10",
-          "brief": {
-            "lead": "La información publicada por El Sol de México trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
@@ -7629,8 +7639,26 @@
     },
     {
       "name": "Venustiano Carranza",
-      "count": 25,
+      "count": 26,
       "articles": [
+        {
+          "title": "La alcaldía Venustiano Carranza alista jornada de Día de Muertos con conciertos, Feria de Pan de Muerto y experiencia de terror gratis",
+          "description": "El medio Infobae presenta conciertos o actividades musicales anunciadas en Ciudad de México. La programación, disponibilidad y costos pueden cambiar; comprueba los datos del organizador.",
+          "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxQbUdZRHptcVdDNU9LZnZ6R2I4UmUtdC03WHJTdGVEZzU3M0FCa3RYaV85MkpIRWF3T19GZ0ZqNHFoYzRNWExnTldPQnJHeUxrMmc2VmxWT0xrem54ZjRUOW5hM2hzSHhWV1VfQ1RMSWxGSXJsUkVOb3QyZW9HNnloclpkeVFfa2FISkVBUjlLbDlzZ000cThyS3lTWktUNURuRWRzcDdPRk1sbjBKd3p5Yjcwbzlwa0YtdGVUMGR5dVVZQ1l0ZGp4VllISzFmZ05sX3FyRjkzblR3elFsYTFCdENOdkhnVkF2NlF6Ty1XZ9IBigJBVV95cUxPWk10V1k3amo3eXBISFllSUNtWHd2dmR2bFN0NEd0REJEbzNsRjVJcWFsdVRIZ3IwQmNNRW5neFhMSDc0YnlrcTFrTFhiR0d5MzJac0NTT1B4LWVZdXV0bC1GQi1lT3RDTE5lTEh2aThCY0FaZmRPWXJVMm9YTU9YX0ZKR1J1TGxqUTd2QVpvU2dZc0s3SFRVTWF1X2wyUFd0bGhsOXo4Q2s5TWdwcTVSNEdIZzB2YUw1azlKdm0xQXdCZ05CQ0M0eUEtX1FZTE80SkpYZEhmZ2ZrWXVZaWQ2aW9Wbk5xc1ZNQnA1Q3lULU1wNEUwd1ZTREt3TWV3Zk9ZNGROamlNMjMwZw?oc=5",
+          "source": "Infobae",
+          "date": "2026-10-28",
+          "published_at": "2026-10-28T14:47:00Z",
+          "category": "CDMX",
+          "borough": "Venustiano Carranza",
+          "location": "Venustiano Carranza (mencionada en el titular)",
+          "local_url": "/noticias/?id=5174edc2d7fd297bd46f&mes=2026-10",
+          "brief": {
+            "lead": "El medio Infobae presenta conciertos o actividades musicales anunciadas en Ciudad de México. La programación, disponibilidad y costos pueden cambiar; comprueba los datos del organizador.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          }
+        },
         {
           "title": "Concierto de los Askis, Feria de Pan de Muerto y Hospital Zombie en la Venustiano Carranza este fin de semana por Día de Muertos",
           "description": "El medio Ciudad de México Secreta presenta conciertos o actividades musicales anunciadas en Ciudad de México. La programación, disponibilidad y costos pueden cambiar; comprueba los datos del organizador.",
@@ -8124,31 +8152,41 @@
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           }
-        },
-        {
-          "title": "Pronóstico del clima en Venustiano Carranza: lluvia ligera para este martes 13 de octubre",
-          "description": "De acuerdo con un titular publicado por El Heraldo de México, el tema de actualidad está relacionado con un asunto de interés público relacionado con la Ciudad de México. La atribución corresponde al medio citado, no a una comprobación independiente de nuestra redacción. El encabezado menciona Venustiano Carranza; esa referencia no demuestra por sí misma dónde ocurrieron todos los hechos.",
-          "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQUHBfZ2tJLURLNjZKZ3o2aUJmZzByVHVCbWJJV3lmSFZnNU12MGNSUURUcENjMWQxaGVodHVERVo5M01BMk5IUUFyWkY3SG5neDFBcS1RREVSMXVsYUtmaG44c2h6dUxHTlVjeHpxUkpTeVdPUUMtdjd4NTRDMlpONFhjTGZiSWVnVWlSSzJiTDBLX3VYVGdGN0tYSjMyalRxWGZTWmFXU0NCTWJJVVREUk80RUJrVkoyVnB6Zk5GTGVOenY4LUx4am5ZVm9ob2UzelczLWZTZFo1VklJRFc2MjRqeGgwZw?oc=5",
-          "source": "El Heraldo de México",
-          "date": "2026-10-12",
-          "published_at": "2026-10-13T05:00:00Z",
-          "category": "CDMX",
-          "borough": "Venustiano Carranza",
-          "location": "Venustiano Carranza (mencionada en el titular)",
-          "local_url": "/noticias/?id=d549aaf4567bb06feecb&mes=2026-10",
-          "brief": {
-            "lead": "De acuerdo con un titular publicado por El Heraldo de México, el tema de actualidad está relacionado con un asunto de interés público relacionado con la Ciudad de México. La atribución corresponde al medio citado, no a una comprobación independiente de nuestra redacción. El encabezado menciona Venustiano Carranza; esa referencia no demuestra por sí misma dónde ocurrieron todos los hechos.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
         }
       ]
     },
     {
       "name": "Xochimilco",
-      "count": 120,
+      "count": 121,
       "articles": [
+        {
+          "title": "Vecinos de Xochimilco Protestan por Olor de 80 Toneladas por Carne Podrida",
+          "description": "La información publicada por N+ trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQclBueHNmNTlhWUVyVGthUGpOWk5GZ3hXSzJOU2RwSGFxVThRYXVrQVNQelJqMlhkTEJKRWw4TXlETDl3ZWROa1dDeGhhZ21Sam9ObVlmZkJfVG1fbmZONFN1bFZsNG9xREhIZFNoYi01WGFsY1d6QnI1c05GbHBsNXByZzM0TzNBR0JOYlJQODhuWV9VN1pxSG9DcnREdnBNcU9EcFlCVEJtTGliMTZYTjdmeXIyS2QyaW5VbXZCM2dtQ2FQ?oc=5",
+          "source": "N+",
+          "date": "2026-10-29",
+          "published_at": "2026-10-30T03:02:27Z",
+          "category": "CDMX",
+          "borough": "Xochimilco",
+          "location": "Xochimilco (mencionada en el titular)",
+          "local_url": "/noticias/?id=5f979cca9ca4c086baa0&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por N+ trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_xochimilco",
+            "url": "/assets/alcaldias/xochimilco.jpg",
+            "category": "CDMX",
+            "borough": "Xochimilco",
+            "topic": "Trajineras y canales de Xochimilco",
+            "author": "Xbauerx",
+            "license": "CC BY-SA 4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Trajineras_de_Xochimilco.jpg"
+          }
+        },
         {
           "title": "Xochimilco vende el 90% de su cempasúchil, pero aún hay flores disponibles",
           "description": "La publicación de Diario del Yaqui pone el foco en dificultades que podrían afectar la comercialización del cempasúchil de Xochimilco. La producción de flor involucra a familias y productores locales; para explicar causas y alcances hacen falta los datos del reportaje.",
@@ -8688,24 +8726,6 @@
           "local_url": "/noticias/?id=e1fe2ec662cc12b8bbb2&mes=2026-10",
           "brief": {
             "lead": "La publicación de El Porvenir - Portada pone el foco en dificultades que podrían afectar la comercialización del cempasúchil de Xochimilco. La producción de flor involucra a familias y productores locales; para explicar causas y alcances hacen falta los datos del reportaje.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
-        },
-        {
-          "title": "Trailero transporta a transeúnte, pero al otro mundo: Hombre muere atropellado en Xochimilco",
-          "description": "De acuerdo con El Grafico, se reportó un atropellamiento con consecuencias mortales en Xochimilco, relacionado con un tráiler. Es una noticia que exige cuidado al informar sobre las personas afectadas.",
-          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQeEUwSFoyS0JjRHM1UHJteW9mWlR2UWoxUU1uQTN4TkduLUJXeHlSZ3VYOWYxYUxkenZ5azZFaERnMWFLa0xJTnFIQmkzWVl3UkUycUJ6eE1xSE5WOFZHSlhPNF83ZGlEVy1FRmtESF9aR0s5cXY5RS10SGNLX252M21ZOHNnbzZMSEJJUXB5Mk5kbGZDUVlKQzV0TU1WRjFUMnZBVUVZTURpRVduOEVYUzBfb1RGcmc4OHBRbHN3RXdKSXo1a3lzUTlkTlJ6SHl2?oc=5",
-          "source": "El Grafico",
-          "date": "2026-10-25",
-          "published_at": "2026-10-25T15:05:23Z",
-          "category": "CDMX",
-          "borough": "Xochimilco",
-          "location": "Xochimilco (mencionada en el titular)",
-          "local_url": "/noticias/?id=6d0f5061a81886b51f2d&mes=2026-10",
-          "brief": {
-            "lead": "De acuerdo con El Grafico, se reportó un atropellamiento con consecuencias mortales en Xochimilco, relacionado con un tráiler. Es una noticia que exige cuidado al informar sobre las personas afectadas.",
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
