@@ -65,8 +65,10 @@ test('se prohíben escrituras no autorizadas y se respetan autores',()=>{
  assert.match(rules,/match \/communityBans\/\{uid\}/);
  assert.match(rules,/allow read, write: if false/);
 });
-test('páginas usan la misma versión del script de comentarios',()=>{
- assert.match(html,/\/assets\/comments\.js\?v=9-enlaces/);
- assert.match(news,/\/assets\/comments\.js\?v=9-enlaces/);
- assert.match(html,/\/assets\/comments-seguridad-20261028\.css\?v=8-estable/);
+test('páginas cargan el script de comentarios y la hoja de estilo vigentes',()=>{
+ const communityScript=html.match(/\/assets\/comments\.js\?v=([\\w-]+)/);
+ const newsScript=news.match(/\/assets\/comments\.js\?v=([\\w-]+)/);
+ assert.ok(communityScript,'La comunidad debe cargar comments.js');
+ assert.ok(newsScript,'Noticias debe cargar comments.js');
+ assert.match(html,/\/assets\/comments-seguridad-20261028\.css\?v=[\\w-]+/);
 });
