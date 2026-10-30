@@ -317,3 +317,21 @@ body.neo-site-inner .neo-inner-dock a{min-height:45px}
 @media(prefers-reduced-motion:reduce){
  body.neo-site-inner .neo-photo-card:hover img{transform:none!important}
 }
+
+/* Navegación horizontal: indicar que existen más secciones fuera de pantalla. */
+@media(min-width:701px) and (max-width:1150px){
+ body.neo-site-inner .neo-global-nav::after{
+  content:"Desliza ›";position:sticky;right:0;align-self:stretch;
+  flex:none;display:flex;align-items:center;margin-left:auto;padding:0 10px;
+  color:#ffd4eb;background:linear-gradient(90deg,#0a101b33,#0a101b);
+  pointer-events:none;font-size:11px;font-weight:750;
+ }
+}
+@media(max-width:700px){
+ body.neo-site-inner .neo-global-nav::after{
+  content:"›";position:sticky;right:0;align-self:stretch;
+  flex:none;display:flex;align-items:center;margin-left:auto;padding:0 8px;
+  color:#ffa6d5;background:linear-gradient(90deg,#0a101b33,#0a101b);
+  pointer-events:none;font-size:23px;
+ }
+}
