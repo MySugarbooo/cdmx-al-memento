@@ -107,6 +107,16 @@
   title.textContent=article.title;
   breadcrumb.textContent=article.category||'Noticia local';
   document.title=article.title.slice(0,65)+' | CDMX AL MEMENTO';
+  // Metadatos específicos de cada noticia, sin modificar el diseño visible.
+  const description=(article.brief?.lead||'Noticia de Ciudad de México con fuentes y contexto editorial.').slice(0,155);
+  const descriptionTag=document.querySelector('meta[name="description"]');
+  if(descriptionTag)descriptionTag.setAttribute('content',description);
+  const canonicalTag=document.querySelector('link[rel="canonical"]');
+  if(canonicalTag&&validArticle(article))canonicalTag.href=new URL(article.local_url,location.origin).href;
+  const ogTitle=document.querySelector('meta[property="og:title"]');
+  if(ogTitle)ogTitle.setAttribute('content',article.title);
+  const ogDescription=document.querySelector('meta[property="og:description"]');
+  if(ogDescription)ogDescription.setAttribute('content',description);
   meta.textContent=(article.category||'CDMX')+' · '+publication(article)+
    ' · Fuente identificada: '+(article.source||'Medio de origen')+
    (article.borough?' · Alcaldía mencionada: '+article.borough:'');
