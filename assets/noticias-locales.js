@@ -48,7 +48,7 @@
   const img=elem('img');
   img.src=info.url;img.loading=small?'lazy':'eager';img.decoding='async';
   img.width=small?480:1200;img.height=small?300:750;
-  img.alt='Fotografía real de archivo: '+(info.topic||'Ciudad de México')+'. No muestra necesariamente el acontecimiento de la noticia.';
+  img.alt='Imagen ilustrativa y referencial: '+(info.topic||'Ciudad de México')+'. No constituye evidencia gráfica del acontecimiento.';
   img.addEventListener('error',()=>{img.hidden=true;});
   return img;
  }
@@ -140,7 +140,7 @@
    caption.append(document.createTextNode('Fotografía de archivo: '+(rights.topic||'CDMX')+
     ' · Autor: '+(rights.author||'Fuente original')+
     ' · '+(rights.license||'Licencia en la fuente')+
-    ' · No corresponde necesariamente al suceso. '));
+    ' · Imagen de carácter ilustrativo y referencial; no constituye evidencia gráfica de los hechos descritos. '));
    if(safeExternal(rights.source)){
     const origin=elem('a','','Obra y autor ↗');
     origin.href=rights.source;origin.target='_blank';origin.rel='noopener noreferrer';
