@@ -17,8 +17,10 @@ const articleLink=a=>typeof a.local_url==='string'&&/^\/noticias\/\?/.test(a.loc
 const safePhotoUrl=u=>/^\/assets\/fotos\/[a-zA-Z0-9_-]+\.jpe?g$/.test(String(u||''))||/^https:\/\/(?:upload|thumb)\.wikimedia\.org\/wikipedia\/commons\//.test(String(u||''));
 const photoInfo=a=>{const api=window.CDMX_FOTOS;if(!api?.ready||typeof api.forArticle!=='function')return null;const id=api.forArticle(a);return api.images?.[id]||null};
 const sizedPhotoUrl=(url,width)=>{
- if(!/^https:\/\/thumb\.wikimedia\.org\/wikipedia\/commons\/thumb\//.test(url))return url;
- return url.replace(/\/(\d+)px-([^/?]+)(\?.*)?$/,(_full,current,file,query)=>Number(current)>width?'/'+width+'px-'+file+(query||''):_full);
+ if(/^https:\/\/thumb\.wikimedia\.org\/wikipedia\/commons\/thumb\//.test(url))
+  return url.replace(/\/(\d+)px-([^/?]+)(\?.*)?$/,(_full,current,file,query)=>Number(current)>width?'/'+width+'px-'+file+(query||''):_full);
+ const original=String(url).match(/^https:\/\/upload\.wikimedia\.org\/wikipedia\/commons\/([0-9a-f]\/\w{2}\/([^/?]+\.(?:jpe?g|png)))(?:\?.*)?$/i);
+ return original?'https://upload.wikimedia.org/wikipedia/commons/thumb/'+original[1]+'/'+width+'px-'+original[2]:url;
 };
 const loadPhoto=(img,url,width)=>{
  const optimized=sizedPhotoUrl(url,width);
