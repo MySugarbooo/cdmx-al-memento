@@ -5,7 +5,7 @@ ROOT=Path(__file__).resolve().parents[1]
 class Stats(unittest.TestCase):
  def test_panel_has_accessible_sources(self):
   html=(ROOT/'estadisticas/index.html').read_text(encoding='utf-8')
-  for value in ['stats-visitors','stats-likes','stats-news','stats-updated','stats-status','stats-refresh','/assets/estadisticas.js?v=2','/assets/premium-2026.css?v=1']:
+  for value in ['stats-visitors','stats-likes','stats-news','stats-updated','stats-status','stats-refresh','/assets/estadisticas.js?v=3','/assets/premium-2026.css?v=1']:
    self.assertIn(value,html)
  def test_no_counter_pollution(self):
   js=(ROOT/'assets/estadisticas.js').read_text(encoding='utf-8')
