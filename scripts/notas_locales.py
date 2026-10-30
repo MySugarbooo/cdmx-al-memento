@@ -208,9 +208,9 @@ def verified_event_photo(article, catalog=None):
         if p.get("event_match_confirmed") is not True or p.get("rights_confirmed") is not True:
             continue
         image = str(p.get("url") or "")
-        if not (re.fullmatch(r"/assets/fotos/[a-z0-9_-]+\\.jpg", image)
+        if not (re.fullmatch(r"/assets/fotos/[a-z0-9_-]+\.jpg", image)
                 and (ROOT / image.lstrip("/")).is_file()
-                or re.match(r"^https://(?:upload|thumb)\\.wikimedia\\.org/wikipedia/commons/", image)):
+                or re.match(r"^https://(?:upload|thumb)\.wikimedia\.org/wikipedia/commons/", image)):
             continue
         source = str(p.get("source") or "")
         evidence = str(p.get("evidence_url") or "")
@@ -229,7 +229,7 @@ def verified_event_photo(article, catalog=None):
                 continue
         except (TypeError, ValueError):
             continue
-        rights = re.fullmatch(r"CC BY(-SA)? (2\\.0|2\\.5|3\\.0|4\\.0)", license_name, re.I)
+        rights = re.fullmatch(r"CC BY(-SA)? (2\.0|2\.5|3\.0|4\.0)", license_name, re.I)
         if rights:
             slug = "by-sa" if rights.group(1) else "by"
             expected = f"https://creativecommons.org/licenses/{slug}/{rights.group(2)}/"
@@ -258,8 +258,8 @@ def _pool():
     # Excluye piezas con lugar no identificado, fuera de CDMX o duplicados.
     unsuitable=re.compile(r"louisville|kentucky|zacatecas|chihuahua|san francisco|"
                           r"california|el paso street|paleando nieve|old new city|"
-                          r"cloudy \\(|aesthetic|harmony \\(|valle destrucci[oó]n|"
-                          r"v of \\(|last sunlight|palace of fine arts \\(",re.I)
+                          r"cloudy \(|aesthetic|harmony \(|valle destrucci[oó]n|"
+                          r"v of \(|last sunlight|palace of fine arts \(",re.I)
     for item in catalog:
         photo_id=str(item.get("id") or "")
         if not re.fullmatch(r"archivo_[a-z0-9_]+",photo_id):continue
