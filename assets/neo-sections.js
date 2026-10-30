@@ -33,9 +33,10 @@
    const card=node('article',undefined,'neo-section-story');
    const image=node('img');
    const photo=article.photo||{};
-   const usable=validPhoto(photo.url);
+   const usable=validPhoto(photo.url)&&Boolean(photo.author&&photo.license&&safeCredits(photo.source));
+   const verified=usable&&photo.kind==='hecho'&&photo.verified===true&&Boolean(photo.licenseUrl&&photo.evidence_url);
    image.src=usable?photo.url:fallback[category]||'/assets/fotos/reforma.jpg';
-   image.alt='Imagen ilustrativa y referencial sobre '+category+'. No constituye evidencia gráfica del hecho.';
+   image.alt=verified?'Fotografía verificada del acontecimiento: '+(photo.topic||article.title):'Imagen representativa sobre '+category+'. No constituye evidencia del hecho.';
    image.loading='lazy';image.decoding='async';
    image.onerror=()=>{
     image.onerror=null;
@@ -45,7 +46,7 @@
    };
    const h=node('h3');const link=node('a',article.title);link.href=article.local_url;h.append(link);
    const info=node('p',(article.source||'Medio externo')+' · '+escapeDate(article.published_at||article.date));
-   const caption=node('p',notice,'neo-photo-attribution');
+   const caption=node('p',verified?'Fotografía verificada del acontecimiento.':'Imagen representativa del tema; no corresponde necesariamente al hecho descrito.','neo-photo-attribution');
    if(usable&&photo.author&&photo.license&&safeCredits(photo.source)){
     caption.append(document.createTextNode(' · Autor: '+photo.author+' · '+photo.license+' · '));
     const credit=node('a','Fuente y licencia ↗');credit.href=photo.source;
