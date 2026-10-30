@@ -148,9 +148,10 @@ function articleVisual(a){
   /^https:\/\/(?:thumb|upload)\.wikimedia\.org\/wikipedia\/commons\//.test(assignedPhoto.url))){
   const image=document.createElement('img');
   image.src=assignedPhoto.url;image.loading='lazy';image.decoding='async';image.width=640;image.height=400;
-  image.alt='Imagen de carácter ilustrativo y referencial: '+(assignedPhoto.topic||'Ciudad de México')+'. No constituye evidencia gráfica del acontecimiento.';
+  const documented=assignedPhoto.kind==='hecho'&&assignedPhoto.verified===true&&Boolean(assignedPhoto.evidence_url&&assignedPhoto.licenseUrl);
+  image.alt=documented?'Fotografía verificada del acontecimiento: '+(assignedPhoto.topic||a.title):'Imagen representativa del tema: '+(assignedPhoto.topic||'Ciudad de México')+'. No es evidencia del acontecimiento.';
   image.onerror=()=>{illustratedFallback(a,figure)};
-  const label=element('span','visual-label','IMAGEN ILUSTRATIVA Y REFERENCIAL');
+  const label=element('span','visual-label',documented?'FOTOGRAFÍA VERIFICADA DEL ACONTECIMIENTO':'IMAGEN REPRESENTATIVA DEL TEMA');
   const credit=element('a','photo-credit-inline','© '+(assignedPhoto.author||'Wikimedia Commons')+' · '+(assignedPhoto.license||'Licencia en Commons'));
   if(/^https:\/\/commons\.wikimedia\.org\/wiki\/File:/.test(assignedPhoto.source||'')){
    credit.href=assignedPhoto.source;credit.target='_blank';credit.rel='noopener noreferrer';
