@@ -88,7 +88,7 @@ function initStatic(){
 }
 function renderHero(){
  const a=state.stories[state.current];if(!a)return;
- const img=shell.querySelector('#neo-hero-img');img.src=photoUrl(a);img.alt='Imagen de carácter ilustrativo y referencial sobre '+(a.category||'CDMX')+'. No constituye evidencia del hecho';img.onerror=()=>{img.onerror=null;img.src=photoFallback.CDMX};
+ const img=shell.querySelector('#neo-hero-img');const nextPhoto=photoUrl(a);if(img.getAttribute('src')!==nextPhoto)img.src=nextPhoto;img.fetchPriority='high';img.alt='Imagen de carácter ilustrativo y referencial sobre '+(a.category||'CDMX')+'. No constituye evidencia del hecho';img.onerror=()=>{img.onerror=null;img.src=photoFallback.CDMX};
  const title=shell.querySelector('#neo-hero-title');title.textContent=a.title;title.href=articleLink(a);
  shell.querySelector('#neo-hero-description').textContent=String(a.description||a.brief?.lead||'Consulta la nota y su fuente original para conocer más detalles.').slice(0,260);
  shell.querySelector('#neo-hero-category').textContent='⌖ '+(a.borough||a.category||'CDMX');
