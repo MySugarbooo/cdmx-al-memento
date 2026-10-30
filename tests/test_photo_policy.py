@@ -74,6 +74,45 @@ class NewsPhotoPolicyTests(unittest.TestCase):
             with self.subTest(changes=changes):
                 self.assertIsNone(photos.verified_event_photo(ARTICLE, [approval(**changes)]))
 
+    def test_context_photo_matches_exact_metro_line_not_another_line(self):
+        article = dict(ARTICLE, title="Usuarios del Metro caminan por la Línea 12", category="Metro")
+        line_two = dict(context_photo("linea_2"), topic="Metro Línea 2 CDMX", category="Metro")
+        generic = dict(context_photo("metro_generico"), topic="Metro de la Ciudad de México", category="Metro")
+        line_twelve = dict(context_photo("linea_12"), topic="Metro Línea 12 CDMX", category="Metro")
+        old_accident = dict(context_photo("accidente_2021"),
+                            topic="Incidente Línea 12 Ciudad México 2021", category="Metro")
+        self.assertLess(photos._photo_score(article, line_two), 0)
+        self.assertLess(photos._photo_score(article, old_accident), 0)
+        self.assertGreater(photos._photo_score(article, line_twelve),
+                           photos._photo_score(article, generic))
+        with patch.object(photos, "_pool", return_value=[line_two, generic, line_twelve, old_accident]):
+            with patch.object(photos, "VERIFIED_EVENTS", Path("/tmp/never-loaded-photo-registry.json")):
+                photos.assign_photos([article])
+        self.assertEqual(article["photo"]["id"], "linea_12")
+        self.assertEqual(article["photo"]["kind"], "representativa")
+
+    def test_subject_outranks_generic_category_or_unrelated_picture(self):
+        examples = (
+            ("Desfile de Catrinas en el Zócalo de CDMX", "Cultura",
+             ("desfile", "Desfile de Catrinas Ciudad de México", "CDMX"),
+             ("museo", "Palacio de Bellas Artes Ciudad de México", "Cultura")),
+            ("Rescatan perritos en parque de la capital", "Seguridad",
+             ("animales", "Animales Bosque de Tlalpan", "Medio Ambiente"),
+             ("patrulla", "Patrulla CDMX", "Seguridad")),
+            ("Problemas en Iztapalapa", "CDMX",
+             ("iztapalapa", "Panorama de Iztapalapa", "Alcaldías"),
+             ("reforma", "Paseo de la Reforma", "CDMX")),
+        )
+        for title, category, preferred, other in examples:
+            with self.subTest(title=title):
+                article=dict(ARTICLE,title=title,category=category)
+                if "Iztapalapa" in title:
+                    article["borough"]="Iztapalapa"
+                important=dict(context_photo(preferred[0]),topic=preferred[1],category=preferred[2])
+                generic=dict(context_photo(other[0]),topic=other[1],category=other[2])
+                self.assertGreater(photos._photo_score(article,important),
+                                   photos._photo_score(article,generic))
+
     def test_exact_preferred_then_licensed_representative(self):
         with TemporaryDirectory() as tmp:
             registry = Path(tmp) / "hechos.json"
