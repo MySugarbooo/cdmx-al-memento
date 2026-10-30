@@ -34,13 +34,15 @@
   catch{return false;}
  }
  function representativePhoto(x){
+  // La imagen elegida por título y lugar en el RSS tiene prioridad.
+  const stored=x?.photo;
+  if(stored&&stored.kind==='representativa'&&stored.author&&stored.license&&stored.source&&stored.url)return stored;
   const api=window.CDMX_FOTOS;
   if(api?.ready&&typeof api.forArticle==='function'){
    const id=api.forArticle(x),item=api.images?.[id];
    if(item&&item.author&&item.license&&item.source&&item.url)return {...item,kind:'representativa'};
   }
-  const stored=x?.photo;
-  return stored&&stored.kind!=='hecho'&&stored.author&&stored.license&&stored.source?{...stored,kind:'representativa'}:null;
+  return stored&&stored.kind!=='hecho'&&stored.author&&stored.license&&stored.source&&stored.url?{...stored,kind:'representativa'}:null;
  }
  function selectedPhoto(x){
   const exact=x?.photo;
