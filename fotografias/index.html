@@ -39,6 +39,12 @@
  .neo-photo-filters button{min-height:40px;font-size:12px}
  .neo-photo-search{min-height:46px;font-size:15px}
 }
+.neo-photo-skeleton{height:330px;border:1px solid #3f4e62;border-radius:15px;background:#141d2d;padding:0 0 12px;overflow:hidden}
+.neo-skeleton-image{height:210px;background:linear-gradient(110deg,#222e40 15%,#3d465a 45%,#222e40 75%);background-size:220% 100%;animation:neo-skeleton-loading 1.8s linear infinite}
+.neo-skeleton-line{height:15px;margin:17px 16px 0;background:#384359;border-radius:6px;width:75%}
+.neo-skeleton-line.short{width:48%;margin-top:11px}
+@keyframes neo-skeleton-loading{to{background-position-x:-220%}}
+@media(prefers-reduced-motion:reduce){.neo-skeleton-image{animation:none}}
 </style></head>
 <body><a class="skip" href="#contenido">Saltar al contenido</a><header><div class="wrap"><div class="top"><a class="logo" href="/">CDMX <span>AL MEMENTO</span></a><span class="tag">FOTOGRAFÍAS</span></div><nav aria-label="Secciones principales"><a href="/">Portada</a><a href="/alcaldias/">Alcaldías</a><a href="/seguridad/">Seguridad</a><a href="/movilidad/">Movilidad</a><a href="/servicios/">Servicios</a><a href="/fotografias/">Fotografías</a><a href="/comunidad/">Mi comunidad</a></nav></div></header>
 <main class="wrap" id="contenido">
