@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-30 01:15 UTC",
+  "updated": "2026-10-30 02:03 UTC",
   "boroughs": [
     {
       "name": "La Magdalena Contreras",
@@ -2085,7 +2085,7 @@
     },
     {
       "name": "Coyoacán",
-      "count": 89,
+      "count": 90,
       "articles": [
         {
           "title": "Una combi choca contra un puesto de verduras en Coyoacán, dejando a dos personas heridas este 29 de octubre.",
@@ -2113,6 +2113,24 @@
             "author": "AlejandroLinaresGarcia",
             "license": "CC BY-SA 4.0",
             "source": "https://commons.wikimedia.org/wiki/File:JardinCentenarioCoyoacan.JPG"
+          }
+        },
+        {
+          "title": "FOTOS | Choque en Coyoacán: transporte público se impacta contra puesto donde había dos personas",
+          "description": "La información publicada por PostaMx trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNcG1YZDhwY3dndXBfU1EteS05aUpPRU1SN1VpbjF2VEVBU1dQQ2hraHNvcFVOYmZYY1pFV0FTSFN6aDV4ZzgyVnFna0E2LUlZQ05LTWJ4OEk3SFQ4TG96Y3NEaVRMNXlvLWpNR3NoakhzcHNyQUFOWlFBeF9oLUhHX1JsR1BpYjdrMURxLURvSC1zZThSZDZjYXNqbE4yMnZ1aUFhNzRIdlNVOE4xTmVfeS14YkRrSFA0N1UwUnBaTlZ3UUlETWfSAcYBQVVfeXFMTXBtWGQ4cGN3Z3VwX1NRLXktOWlKT0VNUjdVaW4xdlRFQVNXUENoa2hzb3BVTmJmWGNaRVdBU0hTemg1eGc4MlZxZ2tBNi1JWUNOS01ieDhJN0hUOExvemNzRGlUTDV5by1qTUdzaGpIc3BzckFBTlpRQXhfaC1IR19SbEdQaWI3azFEcS1Eb0gtc2U4UmQ2Y2FzamxOMjJ2dWlBYTc0SHZTVThOMU5lX3kteGJEa0hQNDdVMFJwWk5Wd1FJRE1n?oc=5",
+          "source": "PostaMx",
+          "date": "2026-10-29",
+          "published_at": "2026-10-29T20:56:00Z",
+          "category": "CDMX",
+          "borough": "Coyoacán",
+          "location": "Coyoacán (mencionada en el titular)",
+          "local_url": "/noticias/?id=f53d9fe3b5989edb008d&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por PostaMx trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           }
         },
         {
@@ -2640,24 +2658,6 @@
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           }
-        },
-        {
-          "title": "Patrimonio y tradición en el corazón de Coyoacán: Cempasúchil, Mictlán y la sombra de la Época de Oro del Cine",
-          "description": "La publicación de DiarioNoticiasWeb.Com pone el foco en dificultades que podrían afectar la comercialización del cempasúchil de Xochimilco. La producción de flor involucra a familias y productores locales; para explicar causas y alcances hacen falta los datos del reportaje.",
-          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPTnA5TU01TTV1YjdRcXQydHlvSk9wZDUyZEd5cEdHOUhnVk1ORzUzTkpFMnZSSHZodjBHbUNZem05ZWU5Wm5peVFzNEJFazdQUzdzd1htYXUyVXhNbjZvS3ZhdUhpT3M0Q2lmVmozS2o0am9rSXowZmdLTFN4cGtzWGNsLWc4Z2RmMHkzX0RTeFgycnZGb0VIMTNzUTdIMjRpR3FyRGRDanJtT3hEbFFPemJqOEl5cEFaVjViNmxnd2RSSzhpMk9qQnNhQ1ZLT29CU0FCMDV30gHbAUFVX3lxTE9yelpqNFhDMjhRbzQ2NUlEN0FhbFNPV1EtRDVZWUJSNEVESTJPX1NCZ0ZiOFF0S3h1akRxcFNvN2Z5bXZZMkE1NmNzTjl3Q1FqV05uaF9PQkZESUU2QWo5VWk5U1QxU3RRZkVOeWlha2lqUS0yeXoxR0ZVeklGLWdiamwxSVJHNnhDcDNVUU53djdVd1dCOWZ4UDZiWjJoYzV6cDctQ3VlMGZVWDBUazYyUnpoV0ZibnFuQUYtNXFGRUZadkloZEZjeDlLd0M5b203NG93NXZMME82UQ?oc=5",
-          "source": "DiarioNoticiasWeb.Com",
-          "date": "2026-10-23",
-          "published_at": "2026-10-23T10:20:56Z",
-          "category": "CDMX",
-          "borough": "Coyoacán",
-          "location": "Coyoacán (mencionada en el titular)",
-          "local_url": "/noticias/?id=2cab4a0616fe920c454e&mes=2026-10",
-          "brief": {
-            "lead": "La publicación de DiarioNoticiasWeb.Com pone el foco en dificultades que podrían afectar la comercialización del cempasúchil de Xochimilco. La producción de flor involucra a familias y productores locales; para explicar causas y alcances hacen falta los datos del reportaje.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
         }
       ]
     },
@@ -3115,8 +3115,36 @@
     },
     {
       "name": "Cuauhtémoc",
-      "count": 119,
+      "count": 120,
       "articles": [
+        {
+          "title": "Clara Jusidman destaca el legado de Cuauhtémoc Cárdenas y los retos de la primera jefatura de Gobierno de la CDMX",
+          "description": "En su información, El Heraldo de México aborda una decisión, declaración o debate relacionado con las instituciones de la ciudad. Conviene distinguir la intención anunciada de las resoluciones que hayan sido aprobadas y publicado oficialmente.",
+          "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxPNlcwNXFBeU42aTNjT0hSbjZWZGMwRjRTaWFwUWo4YVQ3a3h5S1BOdFEwcy1IekFlcDN1UVdNTnh6RTk0alhNR3dyd3h0Rzc4ckFVRE9pRy1Cd0tXdUJjSnJ2T2ZPaWdnUDNFcS1Ed0tBbWU0cF9UUEF3MWU4eHptRjRMb0ZWbjVJMVlIMXZxZE5vMWI2VFVUZnlKOFkzcWowNXptMVJuNXM3d2NlYThaUHBJZWdfSlpQZXdtOGJEZ1NsYzR3bDJiSnh2X2R1M19ZY1VFcXlZRUo4Yjh4c2tlaGxSclJhU1p3QnJxdTNNQ05tNEp3V19ER2lDdzJyMUNNM05CSw?oc=5",
+          "source": "El Heraldo de México",
+          "date": "2026-10-29",
+          "published_at": "2026-10-30T01:25:00Z",
+          "category": "Gobierno",
+          "borough": "Cuauhtémoc",
+          "location": "Cuauhtémoc (mencionada en el titular)",
+          "local_url": "/noticias/?id=795e5988bd1c9eca0ce1&mes=2026-10",
+          "brief": {
+            "lead": "En su información, El Heraldo de México aborda una decisión, declaración o debate relacionado con las instituciones de la ciudad. Conviene distinguir la intención anunciada de las resoluciones que hayan sido aprobadas y publicado oficialmente.",
+            "context": "Las decisiones administrativas pueden influir en servicios, trámites y derechos; conviene conocer sus condiciones y a quiénes afectan.",
+            "pending": "Es indispensable consultar los acuerdos, comunicados o documentos oficiales antes de dar una medida por vigente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_cuauhtemoc",
+            "url": "/assets/alcaldias/cuauhtemoc.jpg",
+            "category": "CDMX",
+            "borough": "Cuauhtémoc",
+            "topic": "Palacio de Bellas Artes en la alcaldía Cuauhtémoc",
+            "author": "Timothy Neesam",
+            "license": "CC BY-SA 4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Palacio_de_Bellas_Artes%2C_Mexico_City%2C_MX.jpg"
+          }
+        },
         {
           "title": "Despiden a Cuauhtémoc Cárdenas, símbolo de la izquierda mexicana, en el Panteón Francés de la CDMX",
           "description": "La información publicada por La Jornada Maya trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -3759,34 +3787,6 @@
             "author": "farid estrada",
             "license": "CC BY-SA 3.0",
             "source": "https://commons.wikimedia.org/wiki/File:Kiosko_plaza_de_la_constitucion%2C_tlapan.JPG"
-          }
-        },
-        {
-          "title": "Despliegan policías por funeral de Cuauhtémoc Cárdenas en Panteón Francés de la CDMX",
-          "description": "La información publicada por El Heraldo de México trata un asunto registrado en la sección de Seguridad del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOMDhWaDFueFhpeXNzODgyS1pIbk5xel9sV0M3blVNWlZ5aG1QNnRnM3ZIRzBCZjRvNFdibC1KVm5kczNvaUJLVTZadENLb0NoUmhCRHVXYWNGVE9xbnJTMFVpcXNzSEd2cUxJWmhJTTk1WWVDSDRZOEctU0NOSzRYb0VZUmdJbnYwMEpHMktqU2c5cUhBb3J5MW0yRDhVLUlTdUZ3SE51ZzlFNi04bFpXUlpxSzNDNmhhTW9nY200cnQtcmxyVDdGN0NMbFRQMmFGY0VmQ29KSnM5Q3BxSUZKYg?oc=5",
-          "source": "El Heraldo de México",
-          "date": "2026-10-29",
-          "published_at": "2026-10-29T15:00:00Z",
-          "category": "Seguridad",
-          "borough": "Cuauhtémoc",
-          "location": "Cuauhtémoc (mencionada en el titular)",
-          "local_url": "/noticias/?id=4221abcc1a6397ab2509&mes=2026-10",
-          "brief": {
-            "lead": "La información publicada por El Heraldo de México trata un asunto registrado en la sección de Seguridad del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
-            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "archivo_seguridad_016",
-            "url": "/assets/fotos/archivo_seguridad_016.jpg",
-            "category": "Seguridad",
-            "borough": "",
-            "topic": "Entrega de Patrullas en Alcaldías 01",
-            "author": "Gobierno de la Ciudad de México",
-            "license": "CC BY 4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Entrega_de_Patrullas_en_Alcald%C3%ADas_01.jpg"
           }
         }
       ]
