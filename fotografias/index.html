@@ -2,16 +2,34 @@
 <title>Fotografías de Ciudad de México | CDMX AL MEMENTO</title><meta name="description" content="Galería de fotografías de archivo de Ciudad de México con créditos, autores y licencias verificables.">
 <link rel="canonical" href="https://cdmx-al-memento.pages.dev/fotografias/"><link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <meta name="theme-color" content="#19101f"><link rel="stylesheet" href="/styles.css?v=20261027-unificado"><link rel="stylesheet" href="/assets/premium-2026.css?v=1">
-</head>
+<style id="galeria-100-20261029">
+.neo-photo-filters{display:flex;gap:9px;flex-wrap:wrap;margin:16px 0 20px}
+.neo-photo-filters button{padding:9px 13px;border:1px solid #a14e80;border-radius:999px;background:#251927;color:#ffe7f3;cursor:pointer;font-weight:700;font-size:13px}
+.neo-photo-filters button.active,.neo-photo-filters button:hover{background:#ef3893;border-color:#ff8dc3;color:#fff}
+#neo-photo-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:15px;margin:12px 0 30px}
+#neo-photo-grid .neo-photo-card{min-width:0;background:#151b27;border:1px solid #5a3954;border-radius:15px;overflow:hidden;margin:0;box-shadow:0 8px 25px #0004;display:flex;flex-direction:column}
+#neo-photo-grid img{width:100%;height:180px;object-fit:cover;display:block;background:#33283a}
+#neo-photo-grid figcaption{display:flex;flex-direction:column;gap:7px;padding:12px;flex:1}
+#neo-photo-grid figcaption strong{font-size:14px;line-height:1.35;color:#fff}
+#neo-photo-grid figcaption small{font-size:11px;line-height:1.4;color:#d2bbcb}
+#neo-photo-grid .neo-photo-category{color:#ff9aca;font-weight:800;font-size:11px;text-transform:uppercase}
+#neo-photo-grid .neo-photo-links{display:flex;flex-wrap:wrap;gap:5px 13px;margin-top:auto}
+#neo-photo-grid .neo-photo-links a{color:#ffa1d4;font-size:11px;text-decoration:underline}
+#neo-photo-grid .neo-photo-warning{font-size:10px}
+#neo-photo-grid .neo-photo-error{padding:40px 15px;color:#f6a4cd}
+@media(max-width:1100px){#neo-photo-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:700px){#neo-photo-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}#neo-photo-grid img{height:125px}#neo-photo-grid figcaption{padding:9px}#neo-photo-grid figcaption strong{font-size:12px}}
+@media(max-width:380px){#neo-photo-grid{grid-template-columns:1fr}#neo-photo-grid img{height:180px}}
+</style></head>
 <body><a class="skip" href="#contenido">Saltar al contenido</a><header></header>
 <main class="wrap" id="contenido">
-<section class="portal-hero"><p class="eyebrow">GALERÍA DE LA CIUDAD</p><h1>CDMX en fotografías <span class="pink-mark">.</span></h1>
-<p>Calles, monumentos, transporte y rincones de la capital. Son fotografías de archivo y no constituyen documentación de noticias específicas. Cada imagen conserva autor y licencia.</p>
+<section class="portal-hero"><p class="eyebrow">GALERÍA DE LA CIUDAD</p><h1>100 fotografías de la CDMX <span class="pink-mark">.</span></h1>
+<p>Explora 100 imágenes de archivo organizadas por tema. Cada fotografía muestra su autor, licencia y enlace a Wikimedia Commons. Las imágenes contextualizan las noticias, pero no se presentan como fotografías del suceso.</p>
 <div class="portal-actions"><a class="btn" href="/creditos-fotograficos.html">Ver todos los créditos</a><a class="btn btn-soft" href="/descubre/">Explorar las alcaldías</a></div></section>
 <section aria-labelledby="fotos-galeria"><h2 id="fotos-galeria">Explora la galería</h2><p id="neo-photo-status" role="status">Preparando fotografías acreditadas…</p>
 <div id="neo-photo-grid" class="neo-photo-grid"></div></section>
 <p class="notice">Fotografías de contexto procedentes de Wikimedia Commons. Consulta sus licencias y autorías antes de reutilizarlas.</p></main>
 <footer><div class="wrap">© 2026 CDMX AL MEMENTO · <a href="/creditos-fotograficos.html">Créditos fotográficos</a> · <a href="/contacto.html">Contacto</a></div></footer>
 <script src="/assets/page-transitions.js?v=20261027-b" defer></script>
-<script defer src="/assets/neo-gallery.js?v=20261027-a"></script>
+<script defer src="/assets/neo-gallery.js?v=20261029-100"></script>
 </body></html>
