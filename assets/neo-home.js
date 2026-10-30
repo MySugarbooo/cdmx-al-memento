@@ -13,11 +13,18 @@ const shortDate=new Intl.DateTimeFormat('es-MX',{timeZone:'America/Mexico_City',
 const shortTime=new Intl.DateTimeFormat('es-MX',{timeZone:'America/Mexico_City',hour:'2-digit',minute:'2-digit'});
 const escapeDate=d=>{const date=new Date(d);return Number.isFinite(date.getTime())?shortDate.format(date):'Fecha por confirmar'};
 const articleLink=a=>typeof a.local_url==='string'&&/^\/noticias\/\?/.test(a.local_url)?a.local_url:'/noticias/';
+const safePhotoUrl=u=>/^\/assets\/fotos\/[a-zA-Z0-9_-]+\.jpe?g$/.test(String(u||''))||/^https:\/\/(?:upload|thumb)\.wikimedia\.org\/wikipedia\/commons\//.test(String(u||''));
+const photoInfo=a=>{const api=window.CDMX_FOTOS;if(!api||typeof api.forArticle!=='function')return null;const id=api.forArticle(a);return api.images?.[id]||null};
 const photoUrl=a=>{
- if(a&&a.photo&&typeof a.photo.url==='string'&&/^\/assets\/fotos\/[a-zA-Z0-9_-]+\.jpe?g$/.test(a.photo.url))return a.photo.url;
- const chosen=window.CDMX_FOTOS&&typeof window.CDMX_FOTOS.forArticle==='function'?window.CDMX_FOTOS.forArticle(a):'';
- const result=window.CDMX_FOTOS&&typeof window.CDMX_FOTOS.src==='function'?window.CDMX_FOTOS.src(chosen):'';
- return /^\/assets\/fotos\/[a-zA-Z0-9_-]+\.jpe?g$/.test(result)?result:(photoFallback[a.category]||photoFallback.CDMX);
+ const p=photoInfo(a);
+ if(p&&safePhotoUrl(p.url))return p.url;
+ if(a&&a.photo&&safePhotoUrl(a.photo.url))return a.photo.url;
+ return photoFallback[a.category]||photoFallback.CDMX;
+};
+const photoCredit=a=>{
+ const p=photoInfo(a);return p&&p.author&&p.license
+  ?{text:'Archivo: '+p.author+' · '+p.license+' · No es foto del hecho',source:p.source}
+  :{text:'Fotografía de archivo · No corresponde necesariamente al hecho',source:''};
 };
 function el(tag,cls,txt){const x=document.createElement(tag);if(cls)x.className=cls;if(txt!==undefined)x.textContent=txt;return x}
 const skyline='<svg class="neo-brand-mark" viewBox="0 0 100 85" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="neoRose" x1="0" x2="1"><stop stop-color="#ff8bcb"/><stop offset="1" stop-color="#ec2790"/></linearGradient></defs><g fill="url(#neoRose)"><path d="M4 79h92v4H4zM12 77V54l9-5 9 6v22zM34 77V25l8-5 7 9v48zM53 77V35l11-8 7 7v43zM76 77V47l8-4 5 8v26z"/><path d="M43 20l4-15 5 16-5 3zM45 4l3-4 2 4zM60 27l-2-15 7 7-1 11z"/><path d="M9 55l5-15 3 13zM38 27v-12h6v10zM80 47V34h4v11z"/></g><g fill="#ffd4e8"><rect x="40" y="38" width="3" height="8"/><rect x="60" y="42" width="3" height="6"/><rect x="80" y="55" width="3" height="7"/></g></svg>';
@@ -77,7 +84,10 @@ function renderHero(){
  shell.querySelector('#neo-hero-category').textContent='⌖ '+(a.borough||a.category||'CDMX');
  const when=a.published_at||a.date;shell.querySelector('#neo-hero-date').textContent='▦ '+escapeDate(when)+(a.published_at?' · '+shortTime.format(new Date(a.published_at)):'');
  shell.querySelector('#neo-hero-source').textContent=a.source||'Medio externo';
- shell.querySelector('#neo-hero-credit').textContent='Foto de archivo'+(a.photo?.author?' · '+a.photo.author:'')+' · no corresponde necesariamente al hecho';
+ const heroCredit=shell.querySelector('#neo-hero-credit'),creditInfo=photoCredit(a);heroCredit.replaceChildren();
+ if(/^https:\/\/commons\.wikimedia\.org\/wiki\/File:/.test(creditInfo.source)){
+  const link=el('a','',creditInfo.text+' · Ver autor y licencia ↗');link.href=creditInfo.source;link.target='_blank';link.rel='noopener noreferrer';heroCredit.append(link);
+ }else heroCredit.textContent=creditInfo.text;
  const likes=shell.querySelector('#neo-hero-like');likes.replaceChildren();
  if(typeof window.CDMX_addArticleLike==='function')window.CDMX_addArticleLike(likes,a);
 }
@@ -92,7 +102,9 @@ function renderNews(){
   const category=el('span','neo-category',a.category||'CDMX');thumb.append(img,category);
   const h=el('h3');const link=el('a','',a.title);link.href=articleLink(a);h.append(link);
   const meta=el('div','neo-card-meta',escapeDate(a.published_at||a.date)+' · '+(a.borough||a.source||'CDMX'));
-  const credit=el('small','neo-credit',a.photo?.author?'Archivo: '+a.photo.author:'Imagen de archivo');
+  const c=photoCredit(a),credit=el('small','neo-credit');
+  if(/^https:\/\/commons\.wikimedia\.org\/wiki\/File:/.test(c.source)){const l=el('a','',c.text+' ↗');l.href=c.source;l.rel='noopener noreferrer';l.target='_blank';credit.append(l)}
+  else credit.textContent=c.text;
   card.append(thumb,h,meta,credit);
   out.append(card);
  }
@@ -160,6 +172,7 @@ function applyStories(items,source){
  const old=state.stories[state.current]?.url||'';
  const existing=old?items.findIndex(a=>a.url===old):-1;
  state.stories=items;state.fromBackup=source!=='online';
+ if(window.CDMX_FOTOS?.ready&&typeof window.CDMX_FOTOS.prepare==='function')window.CDMX_FOTOS.prepare(items);
  let current=existing;
  if(current<0){
   let last='';try{last=sessionStorage.getItem('cdmx-neo-last-feature')||''}catch{}
@@ -209,6 +222,7 @@ function start(){
   console.warn('No se pudo refrescar el feed: sigue activa la portada y sus noticias de respaldo.',err);
  });
 }
+document.addEventListener('cdmx-fotos-ready',()=>{if(state.stories.length){try{window.CDMX_FOTOS.prepare(state.stories);renderHero();renderNews()}catch(e){console.warn('Fotos de archivo:',e)}}});
 start();
 })();
 /* Límites geográficos oficiales, no mosaico ilustrado. El mapa se carga después de renderizar la portada. */
