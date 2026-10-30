@@ -4,7 +4,7 @@
  const grid=document.getElementById('neo-photo-grid');
  const status=document.getElementById('neo-photo-status');
  if(!grid||!status)return;
- const DATA='/assets/fotos/catalogo-editorial-1100.json';
+ const DATA='/assets/fotos/catalogo-editorial-1100.json?v=20261029-auditoria1';
  const NOTICE='Imagen de carácter ilustrativo y referencial; no constituye evidencia gráfica de los hechos descritos.';
  const safeImage=u=>/^\/assets\/fotos\/[a-z0-9_]+\.jpg$/i.test(String(u||''))||/^https:\/\/(?:upload|thumb)\.wikimedia\.org\/wikipedia\/commons\//.test(String(u||''));
  const safeCommons=u=>/^https:\/\/commons\.wikimedia\.org\/wiki\/File:/.test(String(u||''));
@@ -12,7 +12,15 @@
  const el=(tag,cls,text)=>{const n=document.createElement(tag);if(cls)n.className=cls;if(text!==undefined)n.textContent=text;return n};
  const fold=x=>String(x||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
  const SIZE=24;
- fetch(DATA,{cache:'no-cache'}).then(r=>{if(!r.ok)throw Error('HTTP '+r.status);return r.json()})
+ const skeleton=document.createDocumentFragment();
+ for(let i=0;i<6;i++){
+  const card=el('div','neo-photo-skeleton');
+  card.setAttribute('aria-hidden','true');
+  card.append(el('div','neo-skeleton-image'),el('div','neo-skeleton-line'),el('div','neo-skeleton-line short'));
+  skeleton.append(card);
+ }
+ grid.append(skeleton);
+ fetch(DATA,{cache:'force-cache'}).then(r=>{if(!r.ok)throw Error('HTTP '+r.status);return r.json()})
  .then(data=>{
   const photos=(Array.isArray(data.photos)?data.photos:[]).filter(p=>
    p&&safeImage(p.url)&&safeCommons(p.source)&&safeLicense(p.licenseUrl)&&p.author&&p.license&&p.topic);
