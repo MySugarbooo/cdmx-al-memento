@@ -7,6 +7,7 @@ const root=document.getElementById('contenido');
 if(!root)return;
 const boroughs=['Álvaro Obregón','Azcapotzalco','Benito Juárez','Coyoacán','Cuajimalpa de Morelos','Cuauhtémoc','Gustavo A. Madero','Iztacalco','Iztapalapa','La Magdalena Contreras','Miguel Hidalgo','Milpa Alta','Tláhuac','Tlalpan','Venustiano Carranza','Xochimilco'];
 const quick=[['♟','Alcaldías','/alcaldias/'],['▥','CDMX','/cdmx/'],['⬟','Seguridad','/seguridad/'],['▤','Movilidad','/movilidad/'],['✿','Servicios','/servicios/'],['🐾','Animales','/animales/'],['▧','Fotografías','/fotografias/'],['♧','Comunidad','/comunidad/']];
+const neonIconPaths={"alcaldias":"<path d=\"M12 31 25 26 38 31 51 26 51 52 38 57 25 52 12 57Z\"/><path d=\"M25 26V52M38 31V57\"/><path d=\"M32 36C32 36 19 24 19 17a13 13 0 0 1 26 0c0 7-13 19-13 19Z\"/><circle cx=\"32\" cy=\"17\" r=\"4\"/>","cdmx":"<path d=\"M10 54H54M16 54V34h10v20M29 54V18h9v36M41 54V29h8v25M32 18V8M26 13l6-5 6 5\"/><path d=\"M18 38h6M18 44h6M31 26h5M31 33h5M31 40h5M43 36h4M43 43h4\"/>","seguridad":"<path d=\"M32 7 53 16v16c0 13-8 21-21 27C19 53 11 45 11 32V16Z\"/><path d=\"m21 32 7 7 15-17\"/>","movilidad":"<rect x=\"15\" y=\"9\" width=\"34\" height=\"40\" rx=\"9\"/><path d=\"M15 22h34M21 49l-6 9M43 49l6 9M22 31h20\"/><circle cx=\"23\" cy=\"41\" r=\"2\"/><circle cx=\"41\" cy=\"41\" r=\"2\"/>","servicios":"<path d=\"m16 13 8 8-4 5-9-3-3-10 8 0Z\"/><path d=\"m21 24 24 24M45 48l5 5M46 9l-8 8 4 5 10-3 3-10-9 0Z\"/><path d=\"M39 25 16 48l-5 5M21 43l-6-6\"/>","animales":"<ellipse cx=\"32\" cy=\"43\" rx=\"14\" ry=\"11\"/><ellipse cx=\"16\" cy=\"24\" rx=\"5\" ry=\"7\" transform=\"rotate(-20 16 24)\"/><ellipse cx=\"28\" cy=\"17\" rx=\"5\" ry=\"7\" transform=\"rotate(-8 28 17)\"/><ellipse cx=\"40\" cy=\"17\" rx=\"5\" ry=\"7\" transform=\"rotate(8 40 17)\"/><ellipse cx=\"51\" cy=\"24\" rx=\"5\" ry=\"7\" transform=\"rotate(20 51 24)\"/>","fotografias":"<rect x=\"8\" y=\"20\" width=\"48\" height=\"33\" rx=\"5\"/><path d=\"M18 20l5-8h18l5 8\"/><circle cx=\"32\" cy=\"37\" r=\"11\"/><circle cx=\"32\" cy=\"37\" r=\"5\"/><path d=\"M47 27h3\"/>","comunidad":"<circle cx=\"23\" cy=\"22\" r=\"8\"/><circle cx=\"43\" cy=\"22\" r=\"8\"/><path d=\"M8 52V44c0-8 6-13 15-13s15 5 15 13v8Z\"/><path d=\"M38 34c8-5 18 1 18 11v7H39\"/>"};
 const photoFallback={Metro:'/assets/fotos/metro.jpg',Movilidad:'/assets/fotos/movilidad.jpg',Seguridad:'/assets/fotos/seguridad.jpg',Gobierno:'/assets/fotos/gobierno.jpg',Cultura:'/assets/fotos/cultura.jpg',CDMX:'/assets/fotos/reforma.jpg'};
 const mxDate=new Intl.DateTimeFormat('es-MX',{timeZone:'America/Mexico_City',weekday:'long',day:'numeric',month:'long',year:'numeric'});
 const shortDate=new Intl.DateTimeFormat('es-MX',{timeZone:'America/Mexico_City',day:'numeric',month:'short',year:'numeric'});
@@ -58,7 +59,16 @@ function initStatic(){
  const list=shell.querySelector('#neo-borough-list');list.replaceChildren();
  for(const name of boroughs){const li=el('li');const a=el('a');a.href='/alcaldias/?alcaldia='+encodeURIComponent(name)+'#noticias-alcaldia';const arrow=el('span','', '›');a.append(document.createTextNode(name),arrow);li.append(a);list.append(li)}
  const links=shell.querySelector('#neo-links');links.replaceChildren();
- for(const [icon,label,href] of quick){const a=el('a','neo-quick');a.href=href;const img=document.createElement('img');img.className='neo-category-logo';img.src='/assets/category-logo-'+href.split('/')[1]+'-20261027.svg?v=second-design-2';img.alt='';img.width=70;img.height=70;img.loading='eager';img.decoding='async';a.append(img,document.createTextNode(label));links.append(a)}
+ for(const [icon,label,href] of quick){
+ const a=el('a','neo-quick neo-quick-neon');a.href=href;
+ const category=href.split('/')[1];
+ const svg=document.createElementNS('http://www.w3.org/2000/svg','svg');
+ svg.setAttribute('viewBox','0 0 64 64');svg.setAttribute('aria-hidden','true');
+ svg.setAttribute('class','neo-neon-symbol');
+ svg.innerHTML='<g fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">'+(neonIconPaths[category]||neonIconPaths.cdmx)+'</g>';
+ const frame=el('span','neo-neon-frame');frame.append(svg);
+ a.append(frame,document.createTextNode(label));links.append(a);
+}
  shell.querySelector('#neo-hero-next').addEventListener('click',()=>{state.current=(state.current+1)%Math.min(state.stories.length,12);renderHero()});const more=shell.querySelector('#neo-news-more');more.addEventListener('click',()=>{state.visible+=8;renderNews()});if('IntersectionObserver' in window){const observer=new IntersectionObserver(entries=>{if(entries.some(x=>x.isIntersecting)&&!more.hidden){state.visible+=8;renderNews()}},{rootMargin:'160px'});observer.observe(more)}
  shell.querySelectorAll('[data-neo-filter]').forEach(btn=>btn.addEventListener('click',()=>{
    state.filter=state.filter===btn.dataset.neoFilter?'':btn.dataset.neoFilter;state.query='';shell.querySelector('#neo-search-input').value='';
