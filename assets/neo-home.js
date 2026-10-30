@@ -102,9 +102,11 @@ function renderNews(){
   const category=el('span','neo-category',a.category||'CDMX');thumb.append(img,category);
   const h=el('h3');const link=el('a','',a.title);link.href=articleLink(a);h.append(link);
   const meta=el('div','neo-card-meta',escapeDate(a.published_at||a.date)+' · '+(a.borough||a.source||'CDMX'));
-  const c=photoCredit(a),credit=el('small','neo-credit');
-  if(/^https:\/\/commons\.wikimedia\.org\/wiki\/File:/.test(c.source)){const l=el('a','',c.text+' ↗');l.href=c.source;l.rel='noopener noreferrer';l.target='_blank';credit.append(l)}
-  else credit.textContent=c.text;
+  const c=photoCredit(a),p=photoInfo(a),credit=el('small','neo-credit');
+  const shortCredit=p&&p.author?'Imagen ilustrativa y referencial · '+p.author+' · '+p.license:'Imagen ilustrativa y referencial';
+  credit.title=c.text;
+  if(/^https:\/\/commons\.wikimedia\.org\/wiki\/File:/.test(c.source)){const l=el('a','',shortCredit+' ↗');l.href=c.source;l.rel='noopener noreferrer';l.target='_blank';credit.append(l)}
+  else credit.textContent=shortCredit;
   card.append(thumb,h,meta,credit);
   out.append(card);
  }
