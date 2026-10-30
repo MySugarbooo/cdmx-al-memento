@@ -53,7 +53,14 @@ class FototecaEditorialTests(unittest.TestCase):
                          re.I)
         for p in self.photos:
             with self.subTest(file=p["file"]):
-                self.assertIsNone(bad.search(p["file"]))
+                filename = p["file"]
+                # Medellín es también una calle de la colonia Roma (CDMX).
+                is_cdmx_street = bool(re.search(
+                    r"medell[ií]n\s+y\s+[aá]lvaro\s+obreg[oó]n.*colonia\s+roma.*ciudad\s+de\s+m[eé]xico",
+                    filename, re.I))
+                if is_cdmx_street:
+                    filename = re.sub(r"medell[ií]n", "", filename, flags=re.I)
+                self.assertIsNone(bad.search(filename))
 
     def test_frontend_uses_catalog_and_formal_notice(self):
         gallery = (ROOT / "assets/neo-gallery.js").read_text(encoding="utf-8")
