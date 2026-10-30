@@ -22,6 +22,7 @@ BOROUGH_PHOTOS=ROOT/"assets/alcaldias/fotos.json"
 ARCHIVE_PHOTOS=ROOT/"assets/fotos/catalogo.json"
 RECENT_PHOTOS=ROOT/"assets/fotos/recientes.json"
 NEWS_PHOTOS=ROOT/"assets/fotos/indice-noticias-1100.json"
+TOPIC_PHOTOS=ROOT/"assets/fotos/contexto-tematico.json"
 VERIFIED_EVENTS=ROOT/"assets/fotos/hechos-verificados.json"
 
 TAGS={
@@ -259,7 +260,7 @@ def _pool():
     photos=[]
     # La fototeca ampliada incluye 1,100 fotos con descriptores y créditos.
     # Buscar por tema es más preciso que asignar la primera imagen de una categoría.
-    for item in _load(NEWS_PHOTOS,"photos"):
+    for item in (_load(TOPIC_PHOTOS,"photos")+_load(NEWS_PHOTOS,"photos")):
         if not isinstance(item,dict):
             continue
         photo_id=str(item.get("id") or "")
@@ -342,7 +343,8 @@ SUBJECT_RULES = (
     (r"\b(?:hospital|clinica|drenaje|bache|basura|abasto|mercado|agua potable)\w*\b", "Servicios"),
     (r"\b(?:catrina|dia de muertos|cempasuchil|concierto|desfile|museo|"
      r"festival|exposicion|teatro|cultura)\w*\b", "Cultura"),
-    (r"\b(?:marcha|bloqueo|trafico|carretera|movilidad|vialidad|"
+    (r"\b(?:hoy no circula|contingencia ambiental|holograma|verificacion vehicular|"
+     r"marcha|bloqueo|trafico|carretera|movilidad|vialidad|"
      r"gran premio|formula 1|autodromo|circuito|automovili)\w*\b", "Movilidad"),
     (r"\b(?:policia|patrulla|fiscalia|robo|homicidio|detenid|"
      r"asalto|extorsion|delito|investigacion)\w*\b", "Seguridad"),
@@ -371,6 +373,8 @@ RELATED_WORDS = (
      ("catrina", "catrinas", "desfile")),
     (r"\b(?:automovili|formula 1|gran premio|autodromo|circuito)\w*\b",
      ("auto", "automovil", "vehiculo", "transito", "autodromo")),
+    (r"\b(?:hoy no circula|contingencia ambiental|verificacion vehicular|holograma)\b",
+     ("trafico", "vehicular", "automoviles", "autos", "transito", "movilidad")),
     (r"\b(?:hospital|clinica|imss|issste)\w*\b",
      ("hospital", "salud", "clinica", "imss", "issste")),
     (r"\b(?:desazolve|drenaje|agua potable)\w*\b",
