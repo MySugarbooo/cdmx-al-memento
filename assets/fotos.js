@@ -208,3 +208,66 @@
  }
  window.CDMX_FOTOS={images,groups,src,source,pick,addCatalog,addRecentCatalog,candidatesForArticle,prepare,forArticle,alternatives};
 })();
+/* Fototeca editorial validada (100 fotografías): se carga sin bloquear el feed. */
+(()=>{
+ const api=window.CDMX_FOTOS;if(!api)return;
+ const norm=value=>String(value||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
+ const block=new Set(['ciudad','mexico','noticia','noticias','sobre','desde','para','entre','tras','ante','este','esta','varios','varias','alcaldia','alcaldias','gobierno','fotos','fotografia']);
+ const validSource=url=>/^https:\/\/commons\.wikimedia\.org\/wiki\/File:/.test(String(url||''));
+ const validImage=url=>/^\/assets\/fotos\/[a-z0-9_]+\.jpg$/i.test(String(url||''))||/^https:\/\/(?:upload|thumb)\.wikimedia\.org\/wikipedia\/commons\//.test(String(url||''));
+ const validLicense=url=>/^https?:\/\/creativecommons\.org\//.test(String(url||''));
+ const hash=x=>{let h=2166136261;for(const c of String(x||'')){h^=c.codePointAt(0);h=Math.imul(h,16777619)}return h>>>0};
+ const selections=new Map();let ready=false;
+ function categoryFor(a){const cat=String(a?.category||'CDMX');const title=norm(a?.title||'');
+  if(title.includes('metrobus')||title.includes('metrobús'))return 'Movilidad';
+  if(/\bmetro\b|linea del metro|estacion del metro/.test(title))return 'Metro';
+  if(/policia|patrulla|detencion|homicidio|robo|seguridad/.test(title))return 'Seguridad';
+  if(/museo|concierto|exposicion|festival|bellas artes/.test(title))return 'Cultura';
+  return Array.isArray(api.groups[cat])?cat:'CDMX';
+ }
+ function scorePhoto(p,a,preferred){
+  const title=norm(a?.title||''),borough=norm(a?.borough||''),text=norm(title+' '+borough);
+  const subject=norm(p.topic+' '+(p.keywords||[]).join(' '));
+  let score=p.category===preferred?35:0;
+  if(p.category==='CDMX'&&preferred!=='CDMX')score+=2;
+  if(borough.length>4&&subject.includes(borough))score+=45;
+  const words=new Set(text.split(/[^a-z0-9]+/).filter(x=>x.length>=5&&!block.has(x)));
+  let semantic=0;
+  for(const word of words){if(subject.includes(word))semantic+=8}
+  score+=Math.min(semantic,40);
+  if(preferred==='Metro'&&/metro|estacion|tren/.test(subject))score+=9;
+  if(preferred==='Movilidad'&&/metrobus|autobus|reforma|transporte/.test(subject))score+=9;
+  if(preferred==='Seguridad'&&/patrulla|policia/.test(subject))score+=9;
+  return score;
+ }
+ function choose(a,used){
+  const preferred=categoryFor(a);
+  const all=Object.keys(api.images);
+  const relevant=all.filter(id=>api.images[id]?.category===preferred);
+  const list=relevant.length?relevant:all;
+  if(!list.length)return '';
+  const seed=a?.url||a?.local_url||a?.title||'CDMX';
+  return list.map(id=>({id,score:scorePhoto(api.images[id],a,preferred),salt:hash(seed+'#'+id)}))
+    .sort((a,b)=>b.score-a.score||a.salt-b.salt)
+    .find(x=>!used?.has(x.id))?.id||list[hash(seed)%list.length];
+ }
+ function forArticle(a){const key=String(a?.url||a?.local_url||a?.title||'');return selections.get(key)||choose(a,new Set())}
+ function prepare(articles){selections.clear();const used=new Set();for(const a of articles||[]){const key=String(a?.url||a?.local_url||a?.title||'');const id=choose(a,used);if(id){used.add(id);selections.set(key,id)}}return {assigned:selections.size,distinct:new Set(selections.values()).size,available:Object.keys(api.images).length}}
+ fetch('/assets/fotos/seleccion-100.json',{cache:'no-cache'}).then(r=>{if(!r.ok)throw Error('fototeca HTTP '+r.status);return r.json()})
+ .then(json=>{
+  const items=Array.isArray(json.photos)?json.photos:[];
+  if(items.length!==100)throw Error('El catálogo debe contener 100 fotografías');
+  const seen=new Set();
+  for(const p of items){if(!p||!/^([a-z0-9_]+)$/.test(p.id)||!validImage(p.url)||!validSource(p.source)||!validLicense(p.licenseUrl)||!p.author||!p.license||seen.has(p.id))throw Error('Fotografía no acreditada: '+(p?.id||'?'));seen.add(p.id)}
+  for(const key of Object.keys(api.images))delete api.images[key];
+  for(const key of Object.keys(api.groups))api.groups[key].length=0;
+  for(const p of items){api.images[p.id]=p;if(!api.groups[p.category])api.groups[p.category]=[];api.groups[p.category].push(p.id)}
+  api.forArticle=forArticle;api.prepare=prepare;api.pick=(cat,title)=>choose({category:cat,title},new Set());
+  api.src=id=>api.images[id]?.url||'';api.source=id=>api.images[id]?.source||'';
+  api.candidatesForArticle=cat=>(api.groups[cat]||api.groups.CDMX||[]).slice();
+  api.alternatives=(cat,exclude)=>api.candidatesForArticle(cat).filter(id=>id!==exclude);
+  api.addCatalog=()=>0;api.addRecentCatalog=()=>0;
+  api.ready=true;ready=true;
+  document.dispatchEvent(new Event('cdmx-fotos-ready'));
+ }).catch(err=>{console.warn('Fototeca de 100 imágenes no disponible: se mantiene el respaldo local.',err)});
+})();
