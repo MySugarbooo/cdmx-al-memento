@@ -148,9 +148,9 @@ function articleVisual(a){
   /^https:\/\/(?:thumb|upload)\.wikimedia\.org\/wikipedia\/commons\//.test(assignedPhoto.url))){
   const image=document.createElement('img');
   image.src=assignedPhoto.url;image.loading='lazy';image.decoding='async';image.width=640;image.height=400;
-  image.alt='Fotografía real de contexto: '+(assignedPhoto.topic||'Ciudad de México')+'. No representa necesariamente el hecho.';
+  image.alt='Imagen de carácter ilustrativo y referencial: '+(assignedPhoto.topic||'Ciudad de México')+'. No constituye evidencia gráfica del acontecimiento.';
   image.onerror=()=>{illustratedFallback(a,figure)};
-  const label=element('span','visual-label','FOTOGRAFÍA REAL DE CONTEXTO');
+  const label=element('span','visual-label','IMAGEN ILUSTRATIVA Y REFERENCIAL');
   const credit=element('a','photo-credit-inline','© '+(assignedPhoto.author||'Wikimedia Commons')+' · '+(assignedPhoto.license||'Licencia en Commons'));
   if(/^https:\/\/commons\.wikimedia\.org\/wiki\/File:/.test(assignedPhoto.source||'')){
    credit.href=assignedPhoto.source;credit.target='_blank';credit.rel='noopener noreferrer';
@@ -162,7 +162,7 @@ function articleVisual(a){
  if(!photo){illustratedFallback(a,figure);return figure}
  const image=document.createElement('img');
  image.loading='lazy';image.decoding='async';image.width=640;image.height=400;
- const label=element('span','visual-label','FOTOGRAFÍA DE CONTEXTO');
+ const label=element('span','visual-label','IMAGEN ILUSTRATIVA Y REFERENCIAL');
  const credit=element('a','photo-credit-inline');
  credit.target='_blank';credit.rel='noopener noreferrer';credit.title='Origen y licencia de la fotografía';
  let active=first;
@@ -171,7 +171,7 @@ function articleVisual(a){
   active=id;attempted.add(id);
   const entry=photoLibrary.images[id];
   image.src=photoLibrary.src(id);
-  image.alt='Fotografía de archivo: '+entry.topic+'. No muestra el suceso descrito.';
+  image.alt='Imagen de carácter ilustrativo y referencial: '+entry.topic+'. No constituye evidencia gráfica de los hechos descritos.';
   image.dataset.photoId=id;
   credit.textContent='© '+entry.author+' · '+entry.license+
    (entry.uploaded_at?' · Subida a Commons: '+entry.uploaded_at:'');
@@ -543,4 +543,9 @@ Promise.allSettled([
 setInterval(()=>{if(document.visibilityState==='visible')refreshHomepageNews()},15*60*1000);
 document.addEventListener('visibilitychange',()=>{
  if(document.visibilityState==='visible')refreshHomepageNews();
+});
+/* El catálogo ampliado se obtiene después del feed: actualizar fotografías sin recargar la página. */
+document.addEventListener('cdmx-fotos-ready',()=>{
+ try{if(articles.length){photoLibrary?.prepare(articles);render()}}
+ catch(error){console.warn('No se pudo refrescar la fototeca temática:',error)}
 });
