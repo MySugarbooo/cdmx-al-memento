@@ -122,3 +122,19 @@
   Cache-Control: no-cache, must-revalidate
 /assets/fotos/indice-noticias-1100.json
   Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+
+# Cache de imágenes editoriales: no afecta feeds, HTML, ni datos de noticias.
+/assets/fotos/*.jpg
+  Cache-Control: public, max-age=2592000, stale-while-revalidate=604800
+/assets/fotos/*.jpeg
+  Cache-Control: public, max-age=2592000, stale-while-revalidate=604800
+
+# Iconografía SVG con nombres y versiones propios.
+/assets/*.svg
+  Cache-Control: public, max-age=604800, stale-while-revalidate=86400
+
+# Scripts de portada versionados mediante sus URLs en HTML.
+/assets/neo-home.js
+  Cache-Control: public, max-age=86400, stale-while-revalidate=86400
+/assets/fotos.js
+  Cache-Control: public, max-age=86400, stale-while-revalidate=86400
