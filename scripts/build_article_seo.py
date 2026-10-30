@@ -53,6 +53,7 @@ def main():
     articles = data.get("articles") or []
     OUT.mkdir(exist_ok=True)
     urls = []
+    recent_links = []
     for item in articles:
         ident = article_id(item)
         if not ident or not item.get("title"):
@@ -61,9 +62,29 @@ def main():
         dest.mkdir(exist_ok=True)
         (dest / "index.html").write_text(render(item, ident), encoding="utf-8")
         urls.append(BASE + "/articulos/" + ident + "/")
+        if len(recent_links) < 12:
+            recent_links.append((ident, item["title"]))
     xml = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
     xml += "".join("  <url><loc>" + esc(u) + "</loc></url>\n" for u in sorted(set(urls)))
     SITEMAP.write_text(xml + "</urlset>\n", encoding="utf-8")
+    # Static HTML anchors are visible to crawlers without running JavaScript.
+    link_html = '<ul class="seo-recent-articles">' + "".join(
+        '<li><a href="/articulos/' + ident + '/">' + esc(title) + '</a></li>'
+        for ident, title in recent_links
+    ) + '</ul>'
+    for relative in ("index.html", "archivo/index.html"):
+        page = ROOT / relative
+        original = page.read_text(encoding="utf-8")
+        updated, replacements = re.subn(
+            r"<!-- SEO_ARTICLES_START -->.*?<!-- SEO_ARTICLES_END -->",
+            lambda match: "<!-- SEO_ARTICLES_START -->" + link_html + "<!-- SEO_ARTICLES_END -->",
+            original, count=1, flags=re.DOTALL
+        )
+        if replacements != 1:
+            raise RuntimeError("Missing SEO article links markers in " + relative)
+        if updated != original:
+            page.write_text(updated, encoding="utf-8")
+
     # Advertise the article sitemap only after its XML has been generated.
     robots = ROOT / "robots.txt"
     robots_text = robots.read_text(encoding="utf-8")
