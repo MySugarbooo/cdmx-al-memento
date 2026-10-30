@@ -33,13 +33,20 @@
    (u.hostname==='news.google.com'||u.hostname==='commons.wikimedia.org');}
   catch{return false;}
  }
- function selectedPhoto(x){
+ function representativePhoto(x){
   const api=window.CDMX_FOTOS;
   if(api?.ready&&typeof api.forArticle==='function'){
    const id=api.forArticle(x),item=api.images?.[id];
-   if(item&&item.author&&item.license&&item.source&&item.url)return item;
+   if(item&&item.author&&item.license&&item.source&&item.url)return {...item,kind:'representativa'};
   }
-  return x.photo||null;
+  const stored=x?.photo;
+  return stored&&stored.kind!=='hecho'&&stored.author&&stored.license&&stored.source?{...stored,kind:'representativa'}:null;
+ }
+ function selectedPhoto(x){
+  const exact=x?.photo;
+  // El registro editorial aprobado tiene prioridad sobre la fototeca de contexto.
+  if(exact?.kind==='hecho'&&exact.verified===true&&exact.author&&exact.license&&exact.source&&exact.licenseUrl&&exact.evidence_url)return exact;
+  return representativePhoto(x);
  }
  function photo(x,small=false){
   const info=selectedPhoto(x);
@@ -48,8 +55,14 @@
   const img=elem('img');
   img.src=info.url;img.loading=small?'lazy':'eager';img.decoding='async';
   img.width=small?480:1200;img.height=small?300:750;
-  img.alt='Imagen ilustrativa y referencial: '+(info.topic||'Ciudad de México')+'. No constituye evidencia gráfica del acontecimiento.';
-  img.addEventListener('error',()=>{img.hidden=true;});
+  img.alt=info.kind==='hecho'&&info.verified===true?'Fotografía verificada del acontecimiento: '+(info.topic||x.title):'Imagen representativa: '+(info.topic||'Ciudad de México')+'. No constituye evidencia del acontecimiento.';
+  img.addEventListener('error',()=>{
+   const alternate=info.kind==='hecho'?representativePhoto(x):null;
+   if(alternate&&alternate.url&&alternate.url!==info.url){
+    img.onerror=()=>{img.hidden=true};img.src=alternate.url;
+    img.alt='Imagen representativa; no corresponde necesariamente al hecho descrito.';
+   }else img.hidden=true;
+  });
   return img;
  }
  function addText(container,heading,content){
@@ -146,13 +159,24 @@
   const img=photo(article);
   if(img&&figure){
    picture.src=img.src;picture.alt=img.alt;picture.hidden=false;figure.hidden=false;
-   picture.onerror=()=>{figure.hidden=true;};
-   caption.replaceChildren();
    const rights=selectedPhoto(article)||{};
-   caption.append(document.createTextNode('Fotografía de archivo: '+(rights.topic||'CDMX')+
+   picture.onerror=()=>{
+    const alternate=rights.kind==='hecho'?representativePhoto(article):null;
+    if(!alternate||!alternate.url||alternate.url===rights.url){figure.hidden=true;return}
+    picture.onerror=()=>{figure.hidden=true};
+    picture.src=alternate.url;
+    picture.alt='Imagen representativa del tema; no documenta el acontecimiento.';
+    caption.replaceChildren(document.createTextNode('Imagen representativa del tema, no corresponde necesariamente al hecho · Autor: '+
+     alternate.author+' · '+alternate.license+' · '));
+    if(safeExternal(alternate.source)){
+     const link=elem('a','','Obra y autor ↗');link.href=alternate.source;link.target='_blank';link.rel='noopener noreferrer';caption.append(link);
+    }
+   };
+   caption.replaceChildren();
+   const label=rights.kind==='hecho'&&rights.verified===true?'Fotografía verificada del acontecimiento: ':'Imagen representativa; no corresponde necesariamente al hecho descrito: ';
+   caption.append(document.createTextNode(label+(rights.topic||'CDMX')+
     ' · Autor: '+(rights.author||'Fuente original')+
-    ' · '+(rights.license||'Licencia en la fuente')+
-    ' · Imagen de carácter ilustrativo y referencial; no constituye evidencia gráfica de los hechos descritos. '));
+    ' · '+(rights.license||'Licencia en la fuente')+' · '));
    if(safeExternal(rights.source)){
     const origin=elem('a','','Obra y autor ↗');
     origin.href=rights.source;origin.target='_blank';origin.rel='noopener noreferrer';
