@@ -1,0 +1,62 @@
+{
+  "version": 1,
+  "notice": "Fotografías de contexto reutilizables con licencia. No son fotos del hecho noticioso.",
+  "photos": [
+    {
+      "id": "contexto_perros_parque_espana",
+      "kind": "representativa",
+      "category": "Medio Ambiente",
+      "topic": "Perros descansando en el Parque España, Ciudad de México (fotografía de 2016)",
+      "keywords": [
+        "perros",
+        "perro",
+        "mascotas",
+        "parque España",
+        "Condesa"
+      ],
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Perros_en_el_Parque_Espa%C3%B1a%2C_Ciudad_de_M%C3%A9xico.jpg/1280px-Perros_en_el_Parque_Espa%C3%B1a%2C_Ciudad_de_M%C3%A9xico.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Perros_en_el_Parque_Espa%C3%B1a,_Ciudad_de_M%C3%A9xico.jpg",
+      "author": "Raul21940",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    {
+      "id": "contexto_autodromo_hermanos_rodriguez",
+      "kind": "representativa",
+      "category": "Movilidad",
+      "topic": "Vista aérea del Autódromo Hermanos Rodríguez, Ciudad de México (fotografía de 2025)",
+      "keywords": [
+        "autódromo",
+        "Hermanos Rodríguez",
+        "gran premio",
+        "formula 1",
+        "F1",
+        "automovilismo"
+      ],
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Vista_a%C3%A9rea_del_Aut%C3%B3dromo_Hermanos_Rodr%C3%ADguez_03.jpg/1280px-Vista_a%C3%A9rea_del_Aut%C3%B3dromo_Hermanos_Rodr%C3%ADguez_03.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Vista_a%C3%A9rea_del_Aut%C3%B3dromo_Hermanos_Rodr%C3%ADguez_03.jpg",
+      "author": "ProtoplasmaKid",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    {
+      "id": "contexto_trafico_eje_central",
+      "kind": "representativa",
+      "category": "Movilidad",
+      "topic": "Tráfico vehicular en Eje Central, Ciudad de México (fotografía de 2018)",
+      "keywords": [
+        "tráfico",
+        "vehículos",
+        "automóviles",
+        "movilidad",
+        "hoy no circula",
+        "vialidad"
+      ],
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Eje_Central_CDMX.jpg/1280px-Eje_Central_CDMX.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Eje_Central_CDMX.jpg",
+      "author": "Sergio Estrada Flores",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  ]
+}
