@@ -3,7 +3,8 @@
 La fuente automática disponible es un índice RSS de titulares; no dispone del
 texto íntegro de cada reportaje. No recrear declaraciones, números ni escenas.
 Cada nota explica el alcance, el interés público y lo que falta por confirmar.
-Las imágenes son fotos reales DE CONTEXTO, nunca fotografías de los hechos.
+Solo se marca como foto DEL HECHO una imagen con revisión editorial y licencia comprobadas.
+Sin esa prueba se usan fotografías reales REPRESENTATIVAS, nunca evidencia atribuida.
 """
 from __future__ import annotations
 
@@ -11,6 +12,7 @@ import hashlib
 import html
 import json
 import re
+from datetime import datetime
 from pathlib import Path
 from urllib.parse import urlparse
 
@@ -18,6 +20,7 @@ ROOT=Path(__file__).resolve().parents[1]
 BOROUGH_PHOTOS=ROOT/"assets/alcaldias/fotos.json"
 ARCHIVE_PHOTOS=ROOT/"assets/fotos/catalogo.json"
 RECENT_PHOTOS=ROOT/"assets/fotos/recientes.json"
+VERIFIED_EVENTS=ROOT/"assets/fotos/hechos-verificados.json"
 
 TAGS={
  "Metro":{
@@ -184,6 +187,69 @@ def _load(path,key):
     except (OSError,ValueError,TypeError):
         return []
 
+def verified_event_photo(article, catalog=None):
+    """Requiere cotejo editorial explícito del hecho, autor, origen y licencia.
+
+    Un título similar, una búsqueda en Commons o una foto subida recientemente
+    NO demuestran por sí solos que la imagen corresponda al acontecimiento.
+    """
+    records = catalog if catalog is not None else _load(VERIFIED_EVENTS, "photos")
+    if not isinstance(records, list):
+        return None
+    url = str(article.get("url") or "")
+    title = str(article.get("title") or "").strip()
+    if not url.startswith("https://news.google.com/rss/articles/") or not title:
+        return None
+    for p in records:
+        if not isinstance(p, dict) or p.get("article_url") != url:
+            continue
+        if str(p.get("article_title") or "").strip().casefold() != title.casefold():
+            continue
+        if p.get("event_match_confirmed") is not True or p.get("rights_confirmed") is not True:
+            continue
+        image = str(p.get("url") or "")
+        if not (re.fullmatch(r"/assets/fotos/[a-z0-9_-]+\\.jpg", image)
+                and (ROOT / image.lstrip("/")).is_file()
+                or re.match(r"^https://(?:upload|thumb)\\.wikimedia\\.org/wikipedia/commons/", image)):
+            continue
+        source = str(p.get("source") or "")
+        evidence = str(p.get("evidence_url") or "")
+        author = str(p.get("author") or "").strip()
+        license_name = str(p.get("license") or "").strip()
+        license_url = str(p.get("licenseUrl") or "")
+        reviewer = str(p.get("reviewed_by") or "").strip()
+        reviewed_at = str(p.get("reviewed_at") or "")
+        if not (source.startswith("https://commons.wikimedia.org/wiki/File:")
+                and evidence.startswith("https://")
+                and author and len(author) <= 140 and reviewer
+                and 0 < len(reviewer) <= 100):
+            continue
+        try:
+            if not datetime.fromisoformat(reviewed_at.replace("Z", "+00:00")).tzinfo:
+                continue
+        except (TypeError, ValueError):
+            continue
+        rights = re.fullmatch(r"CC BY(-SA)? (2\\.0|2\\.5|3\\.0|4\\.0)", license_name, re.I)
+        if rights:
+            slug = "by-sa" if rights.group(1) else "by"
+            expected = f"https://creativecommons.org/licenses/{slug}/{rights.group(2)}/"
+        elif license_name.upper() in ("CC0", "CC0 1.0"):
+            expected = "https://creativecommons.org/publicdomain/zero/1.0/"
+        else:
+            continue
+        if not license_url.startswith(expected):
+            continue
+        return {
+            "id": "hecho_" + hashlib.sha256((url + source).encode()).hexdigest()[:20],
+            "kind": "hecho", "verified": True,
+            "url": image, "source": source, "author": author,
+            "license": license_name, "licenseUrl": license_url,
+            "topic": str(p.get("topic") or title)[:150],
+            "evidence_url": evidence, "reviewed_at": reviewed_at,
+        }
+    return None
+
+
 def _pool():
     catalog=_load(ARCHIVE_PHOTOS,"photos")
     recent=_load(RECENT_PHOTOS,"photos")
@@ -192,39 +258,38 @@ def _pool():
     # Excluye piezas con lugar no identificado, fuera de CDMX o duplicados.
     unsuitable=re.compile(r"louisville|kentucky|zacatecas|chihuahua|san francisco|"
                           r"california|el paso street|paleando nieve|old new city|"
-                          r"cloudy \(|aesthetic|harmony \(|valle destrucci[oó]n|"
-                          r"v of \(|last sunlight|palace of fine arts \(",re.I)
+                          r"cloudy \\(|aesthetic|harmony \\(|valle destrucci[oó]n|"
+                          r"v of \\(|last sunlight|palace of fine arts \\(",re.I)
     for item in catalog:
         photo_id=str(item.get("id") or "")
         if not re.fullmatch(r"archivo_[a-z0-9_]+",photo_id):continue
         filename=str(item.get("file") or "")
         if unsuitable.search(filename):continue
         if not str(item.get("source","")).startswith("https://commons.wikimedia.org/wiki/File:"):continue
-        photos.append(dict(id=photo_id,url="/assets/fotos/"+photo_id+".jpg",
+        photos.append(dict(id=photo_id,kind="representativa",url="/assets/fotos/"+photo_id+".jpg",
                            category=item.get("category","CDMX"),borough="",
                            topic=item.get("topic") or filename,
                            author=item.get("author"),license=item.get("license"),
-                           source=item["source"]))
+                           licenseUrl=item.get("licenseUrl",""),source=item["source"]))
     for item in recent:
         if not item.get("reviewed_location"):continue
         if not str(item.get("source","")).startswith("https://commons.wikimedia.org/wiki/File:"):continue
         url=str(item.get("url") or "")
         if not url.startswith(("https://thumb.wikimedia.org/wikipedia/commons/",
                                "https://upload.wikimedia.org/wikipedia/commons/")):continue
-        photos.append(dict(id=item.get("id"),url=url,category=item.get("category","CDMX"),
+        photos.append(dict(id=item.get("id"),kind="representativa",url=url,category=item.get("category","CDMX"),
                            borough="",topic=item.get("topic") or "Ciudad de México",
-                           author=item.get("author"),license=item.get("license"),source=item["source"]))
+                           author=item.get("author"),license=item.get("license"),
+                           licenseUrl=item.get("licenseUrl",""),source=item["source"]))
     for item in borough:
         slug=str(item.get("slug") or "")
         if not re.fullmatch(r"[a-z-]+",slug):continue
-        photos.append(dict(id="alcaldia_"+slug,url="/assets/alcaldias/"+slug+".jpg",
+        photos.append(dict(id="alcaldia_"+slug,kind="representativa",url="/assets/alcaldias/"+slug+".jpg",
                            category="CDMX",borough=item.get("name",""),
                            topic=item.get("caption","Ciudad de México"),
-                           author=item.get("author"),license=item.get("license"),source=item.get("source")))
-    # Fotografías históricas de contexto cuya procedencia y licencias figuran
-    # en el archivo fotos.js; mismas imágenes que la página ya usa.
-    # Evitar duplicados de Commons por URL original y contenido.
-    base=_load(ROOT/"assets/fotos/catalogo.json","photos")
+                           author=item.get("author"),license=item.get("license"),
+                           licenseUrl=item.get("licenseUrl",""),source=item.get("source")))
+    # Deduplicar por página original de Commons para evitar atribuciones distintas.
     unique={}
     for p in photos:
         src=p.get("source")
@@ -232,20 +297,34 @@ def _pool():
             unique.setdefault(src,p)
     return list(unique.values())
 
+
 def assign_photos(items):
-    """Una imagen REAL distinta para cada noticia de la portada (hasta 60)."""
+    """Foto licenciada del hecho (si fue comprobada); si no, foto representativa."""
     pool=_pool()
     reserved=set()
-    # Primero mantener imágenes previamente asignadas cuando sean del catálogo.
     known={p["id"]:p for p in pool}
+    verified_catalog=_load(VERIFIED_EVENTS,"photos")
+    exact_count=0
     for a in items:
+        exact=verified_event_photo(a,verified_catalog)
+        if exact:
+            a["photo"]=exact
+            exact_count+=1
+            continue
+        # Una atribución exacta previa no sobrevive sin su expediente aprobado.
         prev=a.get("photo")
+        if isinstance(prev,dict) and (prev.get("kind")=="hecho" or prev.get("verified") is True):
+            a.pop("photo",None)
+            prev=None
         if isinstance(prev,dict) and prev.get("id") in known and prev["id"] not in reserved:
             a["photo"]=known[prev["id"]]
             reserved.add(prev["id"])
     for a in items:
         prev=a.get("photo")
-        if isinstance(prev,dict) and prev.get("id") in reserved:continue
+        if isinstance(prev,dict) and prev.get("kind")=="hecho" and prev.get("verified") is True:
+            continue
+        if isinstance(prev,dict) and prev.get("id") in reserved:
+            continue
         borough=str(a.get("borough") or "")
         category=str(a.get("category") or "CDMX")
         ordered=(
@@ -259,6 +338,7 @@ def assign_photos(items):
             a["photo"]=choice
             reserved.add(choice["id"])
         else:
-            a.pop("photo",None) # Jamás prometer una imagen distinta si se agotaron.
+            a.pop("photo",None)
     return {"available":len(pool),"assigned":sum(bool(a.get("photo")) for a in items),
-            "unique":len({a["photo"]["id"] for a in items if a.get("photo")})}
+            "unique":len({a["photo"]["id"] for a in items if a.get("photo")}),
+            "del_hecho_verificadas":exact_count}
