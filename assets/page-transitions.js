@@ -107,7 +107,11 @@
   const intro=document.createElement('div');const kicker=document.createElement('span');kicker.className='neo-inner-label';kicker.textContent='CDMX AL MEMENTO · EXPLORA';
   const label=document.createElement('strong');label.textContent=section[0];const desc=document.createElement('p');desc.textContent=section[1];intro.append(kicker,label,desc);
   const back=document.createElement('a');back.href='/';back.className='neo-back';back.textContent='← Volver a portada';
-  banner.append(intro,back);main.prepend(banner);
+  // La sección ya presenta un título editorial propio: no duplicarlo con otra banda.
+  // Conservar la cabecera y navegación global, sin agregar un segundo encabezado.
+  if(!main.querySelector('h1,[role="heading"][aria-level="1"]')){
+    banner.append(intro,back);main.prepend(banner);
+  }
   let dock=document.querySelector('body > nav.neo-inner-dock');
   if(!dock){dock=document.createElement('nav');dock.className='neo-inner-dock';dock.setAttribute('aria-label','Navegación móvil');
     const entries=[['⌂','Inicio','/'],['▤','Alcaldías','/alcaldias/'],['＋','Publicar','/comunidad/#cdmx-comments-editor'],['♧','Comunidad','/comunidad/'],['♡','Guardados','/favoritos/']];
