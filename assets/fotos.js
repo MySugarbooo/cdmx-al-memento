@@ -234,7 +234,7 @@
  function matchScore(item,article,category){
   const borough=norm(article?.borough||'');
   const title=norm(article?.title||'');
-  const context=norm([item.topic,item.file,...(item.keywords||[])].join(' '));
+  const context=norm([item.topic,...(item.keywords||[])].join(' '));
   let score=item.category===category?55:item.category==='CDMX'?8:0;
   if(borough.length>5&&context.includes(borough))score+=115;
   const words=[...new Set(title.split(/[^a-z0-9]+/).filter(s=>s.length>4&&!ignored.has(s)))];
@@ -269,17 +269,17 @@
   }
   return {assigned:selections.size,distinct:new Set(selections.values()).size,available:allKeys.length};
  }
- fetch('/assets/fotos/catalogo-editorial-1100.json',{cache:'no-cache'})
+ fetch('/assets/fotos/indice-noticias-1100.json?v=20261029-1',{cache:'force-cache'})
  .then(r=>{if(!r.ok)throw Error('HTTP '+r.status);return r.json()})
  .then(data=>{
    const items=Array.isArray(data.photos)?data.photos:[];
    if(items.length<901||items.length!==data.count)throw Error('Cantidad de fotografías inconsistente');
-   const ids=new Set(),files=new Set();
+   const ids=new Set(),sources=new Set();
    for(const p of items){
-    if(!p||!/^([a-z0-9_]+)$/.test(p.id)||ids.has(p.id)||files.has(norm(p.file))||
+    if(!p||!/^([a-z0-9_]+)$/.test(p.id)||ids.has(p.id)||sources.has(p.source)||
        !validImage(p.url)||!validSource(p.source)||!validLicense(p.licenseUrl)||!p.author||!p.license||!p.topic)
       throw Error('Metadatos fotográficos incompletos o repetidos');
-    ids.add(p.id);files.add(norm(p.file));
+    ids.add(p.id);sources.add(p.source);
    }
    for(const id of Object.keys(api.images))delete api.images[id];
    for(const cat of Object.keys(api.groups))api.groups[cat].length=0;
