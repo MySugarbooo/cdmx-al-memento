@@ -19,12 +19,15 @@ const photoInfo=a=>{
  const exact=a?.photo;
  // La fototeca nunca debe reemplazar una fotografía documental aprobada.
  if(exact?.kind==='hecho'&&exact.verified===true&&safePhotoUrl(exact.url)&&exact.author&&exact.license&&exact.source&&exact.licenseUrl&&exact.evidence_url)return exact;
+ // Respeta la selección por tema y lugar que hizo el actualizador de noticias.
+ // La fototeca del navegador es solo una alternativa si falta esa asignación.
+ const context=a?.photo;
+ if(context&&context.kind==='representativa'&&safePhotoUrl(context.url)&&context.author&&context.license&&context.source)return context;
  const api=window.CDMX_FOTOS;
  if(api?.ready&&typeof api.forArticle==='function'){
   const id=api.forArticle(a),p=api.images?.[id];
   if(p&&safePhotoUrl(p.url)&&p.author&&p.license&&p.source)return {...p,kind:'representativa'};
  }
- const context=a?.photo;
  return context&&context.kind!=='hecho'&&safePhotoUrl(context.url)&&context.author&&context.license&&context.source?{...context,kind:'representativa'}:null;
 };
 const sizedPhotoUrl=(url,width)=>{
