@@ -56,9 +56,18 @@ class FototecaEditorialTests(unittest.TestCase):
                 self.assertIsNone(bad.search(p["file"]))
 
     def test_frontend_uses_catalog_and_formal_notice(self):
-        for script in ("assets/neo-gallery.js", "assets/fotos.js", "assets/creditos.js"):
+        for script in ("assets/neo-gallery.js", "assets/creditos.js"):
             text = (ROOT / script).read_text(encoding="utf-8")
             self.assertIn("/assets/fotos/catalogo-editorial-1100.json", text)
+        news_script = (ROOT / "assets/fotos.js").read_text(encoding="utf-8")
+        self.assertIn("/assets/fotos/indice-noticias-1100.json", news_script)
+        fast_index = json.loads((ROOT / "assets/fotos/indice-noticias-1100.json").read_text(encoding="utf-8"))
+        self.assertEqual(len(fast_index["photos"]), len(self.photos))
+        self.assertLess(len(json.dumps(fast_index)), len(json.dumps(self.data)))
+        self.assertEqual(
+            {p["id"] for p in fast_index["photos"]},
+            {p["id"] for p in self.photos}
+        )
         self.assertIn(DISCLAIMER, (ROOT / "assets/neo-gallery.js").read_text(encoding="utf-8"))
         self.assertIn(DISCLAIMER, (ROOT / "assets/noticias-locales.js").read_text(encoding="utf-8"))
         self.assertIn(DISCLAIMER, (ROOT / "assets/neo-home.js").read_text(encoding="utf-8"))
