@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-30 02:49 UTC",
+  "updated": "2026-10-30 02:51 UTC",
   "boroughs": [
     {
       "name": "La Magdalena Contreras",
@@ -3115,7 +3115,7 @@
     },
     {
       "name": "Cuauhtémoc",
-      "count": 121,
+      "count": 122,
       "articles": [
         {
           "title": "Clara Jusidman destaca el legado de Cuauhtémoc Cárdenas y los retos de la primera jefatura de Gobierno de la CDMX",
@@ -3255,6 +3255,34 @@
             "author": "Waender Alonso Bello",
             "license": "CC BY 3.0",
             "source": "https://commons.wikimedia.org/wiki/File:Catedral_Ii_%28172219027%29.jpeg"
+          }
+        },
+        {
+          "title": "Clara Brugada anuncia homenaje a Cuauhtémoc Cárdenas en CDMX",
+          "description": "La información publicada por W Radio México trata un asunto registrado en la sección de Gobierno del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPOFJ1bDlGNGxkVDVOQVFvMkpsb0k4VlJ1dW9Ic1Bia3BQaEk3NEU1c1dtdndUd2RUdEFDNk9HMFBNSVU1Nm5QSmRnbWo5MjItTmtxS3BHRkZtaUdMNzVLaHMwNGQwOUItRG1MTWlic05QbTE0QUM4N1NoUThpQ0tJMlFIVjdMcnVrNC0teVJnQlpkOFF0NFlndGdR?oc=5",
+          "source": "W Radio México",
+          "date": "2026-10-29",
+          "published_at": "2026-10-29T22:43:48Z",
+          "category": "Gobierno",
+          "borough": "Cuauhtémoc",
+          "location": "Cuauhtémoc (mencionada en el titular)",
+          "local_url": "/noticias/?id=9585636b4af0a59cd22f&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por W Radio México trata un asunto registrado en la sección de Gobierno del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Las decisiones administrativas pueden influir en servicios, trámites y derechos; conviene conocer sus condiciones y a quiénes afectan.",
+            "pending": "Es indispensable consultar los acuerdos, comunicados o documentos oficiales antes de dar una medida por vigente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "archivo_gobierno_009",
+            "url": "/assets/fotos/archivo_gobierno_009.jpg",
+            "category": "Gobierno",
+            "borough": "",
+            "topic": "Ciudad de México - Luces",
+            "author": "Juan Carlos Fonseca Mata",
+            "license": "CC BY-SA 4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Ciudad_de_M%C3%A9xico_-_Luces.jpg"
           }
         },
         {
@@ -3759,34 +3787,6 @@
             "author": "Ivan alcantara",
             "license": "CC BY-SA 3.0",
             "source": "https://commons.wikimedia.org/wiki/File:PARROQUIA_DE_SANTA_CATARINA_%28AZCAPOTZALCO%29.jpg"
-          }
-        },
-        {
-          "title": "Funeral de Cuauhtémoc Cárdenas: ¿Dónde descansarán los restos del tres veces candidato presidencial?",
-          "description": "La información publicada por El Financiero trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxObjV2M2pWMEtoNmZlWktIclFpN0ZZODF1TkpSTVRFMlZ2eXZiTGFzeEFKRUpUcEliTnVDMjFkM1oxb3NuX1piNWh2dlI0Sno2ZHgwc0o4MTJBZWJNb1RFcnhiTWRjb2dINmNERDdCWDRzc0g5d3l0M0pIdFZVUDNtdDZtb0lmZ25zNTZkclM5RmgwdXBfTzFpMmp5NU9nX1hTZWtVV3FqWU9PZjVHOXJBeEoydXZrQUZuQ09LN0kwWjFJSm94dlNfTkltNjdoRjFVMkgtU2d2U1VkV1p4UXdn?oc=5",
-          "source": "El Financiero",
-          "date": "2026-10-29",
-          "published_at": "2026-10-29T16:05:42Z",
-          "category": "CDMX",
-          "borough": "Cuauhtémoc",
-          "location": "Cuauhtémoc (mencionada en el titular)",
-          "local_url": "/noticias/?id=d2e19447de9d31c23904&mes=2026-10",
-          "brief": {
-            "lead": "La información publicada por El Financiero trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "alcaldia_miguel-hidalgo",
-            "url": "/assets/alcaldias/miguel-hidalgo.jpg",
-            "category": "CDMX",
-            "borough": "Miguel Hidalgo",
-            "topic": "Bosque de Chapultepec, alcaldía Miguel Hidalgo",
-            "author": "ProtoplasmaKid",
-            "license": "CC0",
-            "source": "https://commons.wikimedia.org/wiki/File:Audiorama_de_Chapultepec_1.jpg"
           }
         }
       ]
@@ -8147,7 +8147,7 @@
     },
     {
       "name": "Xochimilco",
-      "count": 119,
+      "count": 120,
       "articles": [
         {
           "title": "Xochimilco vende el 90% de su cempasúchil, pero aún hay flores disponibles",
@@ -8175,6 +8175,24 @@
             "author": "Xbauerx",
             "license": "CC BY-SA 4.0",
             "source": "https://commons.wikimedia.org/wiki/File:Trajineras_de_Xochimilco.jpg"
+          }
+        },
+        {
+          "title": "Xochimilco publica padrón de beneficiarios para atención a enfermos crónicos, ¿cómo acceder?",
+          "description": "La información publicada por El Sol de México trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPUHc4SHlfMEdZcEVfTzh6OXNMaEFON1pjaGhsaE13TTZEejJNRElKN1E2aUZIeF9RaFNkNzB0SnJFdGZ2SXcwd0twYWdmbEJTOHhqVm45QmxmRnM5T2VhbVMwSUNCU01kb3luZVpDMzdVQlNwTFVGbXBieEFPVTVRTVFPOEViZ05fRk0zTmd3VTQzRElWQXhvUVNISmdJM3BkXzNyeENTQ1g3UkV5ZjMzRTg5WncxSnBsY0dhLVdKc0lFUWdwWHhfZmh4aW8xZXhod2lF?oc=5",
+          "source": "El Sol de México",
+          "date": "2026-10-29",
+          "published_at": "2026-10-29T21:32:02Z",
+          "category": "CDMX",
+          "borough": "Xochimilco",
+          "location": "Xochimilco (mencionada en el titular)",
+          "local_url": "/noticias/?id=ff12e04c6979c2d75619&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por El Sol de México trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           }
         },
         {
@@ -8688,24 +8706,6 @@
           "local_url": "/noticias/?id=6d0f5061a81886b51f2d&mes=2026-10",
           "brief": {
             "lead": "De acuerdo con El Grafico, se reportó un atropellamiento con consecuencias mortales en Xochimilco, relacionado con un tráiler. Es una noticia que exige cuidado al informar sobre las personas afectadas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
-        },
-        {
-          "title": "Clima en Xochimilco este domingo 25 de octubre: frío y lluvia ligera persiste en la alcaldía",
-          "description": "El pronóstico recogido por El Heraldo de México se refiere a lluvias ligeras en Xochimilco. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
-          "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQVDdNWE1nT2hJQ1k2VFF0Y2dBRVdtU1BXVlZyTlVhYW9NNHgwM3VGeUppLU1ZMGUxNW9tTWV2OVR2Q1JFTkdLRU55d29YMjg5TTM4aXNRU0xYVVJKR2p5Q3RMTHRpdVZ4Ul8tMXcwUENmTVlhbHl1dUZEdXhDZWwzZl9Mdm5GczZQUzhaVnpPa1VTWjhtaFhaMFFzZUVlM0FlOGpITXI4QjFCRmU2aG8weXpGUXYyOHEwcDgwQ0o4aEV0NzR2d2VqQjJSX0VIdXQ5ck5HbTM0ODZ1LW5iRmNEXzQxaXJfSVU?oc=5",
-          "source": "El Heraldo de México",
-          "date": "2026-10-24",
-          "published_at": "2026-10-25T05:00:00Z",
-          "category": "CDMX",
-          "borough": "Xochimilco",
-          "location": "Xochimilco (mencionada en el titular)",
-          "local_url": "/noticias/?id=947822cf64a478a7d5a9&mes=2026-10",
-          "brief": {
-            "lead": "El pronóstico recogido por El Heraldo de México se refiere a lluvias ligeras en Xochimilco. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
