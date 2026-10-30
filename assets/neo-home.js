@@ -51,7 +51,7 @@ const photoUrl=a=>{
 };
 const photoCredit=a=>{
  const p=photoInfo(a),real=p?.kind==='hecho'&&p.verified===true;
- const label=real?'Fotografía verificada del acontecimiento':'Imagen representativa; no constituye evidencia gráfica del acontecimiento';
+ const label=real?'Fotografía verificada del acontecimiento':'Imagen representativa · Imagen de carácter ilustrativo y referencial; no constituye evidencia gráfica de los hechos descritos.';
  return p&&p.author&&p.license
   ?{text:label+' · Autor: '+p.author+' · '+p.license,short:label+' · '+p.author+' · '+p.license,source:p.source,real}
   :{text:'Imagen representativa del tema; no corresponde necesariamente al hecho descrito.',short:'Imagen representativa del tema',source:'',real:false};
