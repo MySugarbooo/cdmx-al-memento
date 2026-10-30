@@ -54,10 +54,14 @@ def main():
     OUT.mkdir(exist_ok=True)
     urls = []
     recent_links = []
+    seen_ids = set()
     for item in articles:
         ident = article_id(item)
         if not ident or not item.get("title"):
             continue
+        if ident in seen_ids:
+            raise RuntimeError("Duplicate article identifier: " + ident)
+        seen_ids.add(ident)
         dest = OUT / ident
         dest.mkdir(exist_ok=True)
         (dest / "index.html").write_text(render(item, ident), encoding="utf-8")
@@ -67,6 +71,13 @@ def main():
     xml = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
     xml += "".join("  <url><loc>" + esc(u) + "</loc></url>\n" for u in sorted(set(urls)))
     SITEMAP.write_text(xml + "</urlset>\n", encoding="utf-8")
+    # Fail the workflow if any generated article or sitemap entry is missing.
+    for ident in seen_ids:
+        page = OUT / ident / "index.html"
+        if not page.is_file() or (BASE + "/articulos/" + ident + "/") not in xml:
+            raise RuntimeError("Missing generated article or sitemap URL: " + ident)
+    if len(urls) != len(seen_ids):
+        raise RuntimeError("Article count does not match unique identifiers")
     # Static HTML anchors are visible to crawlers without running JavaScript.
     link_html = '<ul class="seo-recent-articles">' + "".join(
         '<li><a href="/articulos/' + ident + '/">' + esc(title) + '</a></li>'
