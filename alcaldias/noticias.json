@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-30 15:06 UTC",
+  "updated": "2026-10-30 15:19 UTC",
   "boroughs": [
     {
       "name": "La Magdalena Contreras",
@@ -3205,8 +3205,38 @@
     },
     {
       "name": "Cuauhtémoc",
-      "count": 126,
+      "count": 127,
       "articles": [
+        {
+          "title": "Cae el envenenador de Cuauhtémoc: mataba perros dejando cebos con veneno en Condesa y Parque España por venganza",
+          "description": "La información publicada por Ambito trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQdFBZMHo5Qm5yTGR6ZzZGRmxYVWwzaWpjbXE5d3RYSk9QWTJTWC1tSEhfU2MxbEZjV3ExN2VjQy12bnpfeWNwMDZqYUdSdFlENEdYbXcwRlZkVzItUGJuRnZQNm9mcGc1ME5yS0ozUlpzVU9tQ1dsazRqNXRDZWpIZ25rZUJLVlRjX2xacXVWY0NXM2V6dk0yWGczSVJCRmxyMEo2UlFOcXhFVjQwVktVWTJFRk91RjdpNGplelpFaEZXTmVuYXRmZVhRcHlkTFhqRm8zYmNUc1poSVltX0ozdWtSd0pIazN6cEVwStIB8gFBVV95cUxPVnFFM3R2NGUyWHNBV1RKNXp0eGoyeU5uX2lfOVBieWdwR0ZJYjA1cUpqVTlvTGNiODdpaGJLU2hrbEctYktDOTJLNEpxLWNYMDdWRms2Wi1mQmtySXdFMFpNcWZoblkwNGo0MWVoVFJrU1ZBcGI1cW5SZ19YcXJwaDVneldQYktMeEZVbi1tVThtcjRSZ09VQkFiX2ZibFpyYXlNQURGOEpDQUwyTWtTWkVWUVdoOWR6Ui10YWVRS1h3UHdOZmpGS0o0S0NfbG5kLUppZXpBc2k5bE1CRkVpMENqZFBiakZ6Vk96Qnk4TXBGQQ?oc=5",
+          "source": "Ambito",
+          "date": "2026-10-30",
+          "published_at": "2026-10-30T13:22:52Z",
+          "category": "CDMX",
+          "borough": "Cuauhtémoc",
+          "location": "Cuauhtémoc (mencionada en el titular)",
+          "local_url": "/noticias/?id=dbba5281f4898e56fc1b&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por Ambito trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_cuauhtemoc",
+            "kind": "representativa",
+            "url": "/assets/alcaldias/cuauhtemoc.jpg",
+            "category": "CDMX",
+            "borough": "Cuauhtémoc",
+            "topic": "Palacio de Bellas Artes en la alcaldía Cuauhtémoc",
+            "author": "Timothy Neesam",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Palacio_de_Bellas_Artes%2C_Mexico_City%2C_MX.jpg"
+          }
+        },
         {
           "title": "Habrá homenaje de cuerpo presente a Cuauhtémoc Cárdenas, en Bellas Artes",
           "description": "La información publicada por Vanguardia de Veracruz trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -3850,40 +3880,12 @@
             "license": "CC BY-SA 3.0",
             "source": "https://commons.wikimedia.org/wiki/File:D.F._-_panoramio_%289%29.jpg"
           }
-        },
-        {
-          "title": "Reconoce Brugada legado de Cuauhtémoc Cárdenas en CDMX",
-          "description": "La información publicada por Excélsior trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOSko5RHRXNHBaU3dfTmZKY3lnaUFxYXpIMjJKNG5DemZubDB2QjFfZENNWDNHTXI4RTJWU0sxaS12eUFCeHVwMEtzQTYybGZCSlphZlJrV2R4LXJCNE5ERTNrRUpOSm5SdGdzWXM4dlVvb09fczIxVVJTSlVKU0VnQnMydjVpMWpHZ2NCb1J1R0xLOGNvX3hxV3l30gGfAUFVX3lxTE4zMXFXdXoxQnhGSUlrQlhGRGtQTHpiRG0tVGpJR29LZk9pcGowRkEtSXdabTRtendmSFU2NWU3eGZJVzY0VkpGMjhuX2tyQzJoVlhBNnNDTEZRemZHVy1tVzc1N0lCTGdGVEhhenRJTjZoYW12Qm96YmFERTJMOW4xb29iUmhEVzRDaFhmX0N2ak5aYjg3VTdUczZPQlljWQ?oc=5",
-          "source": "Excélsior",
-          "date": "2026-10-29",
-          "published_at": "2026-10-29T18:30:02Z",
-          "category": "CDMX",
-          "borough": "Cuauhtémoc",
-          "location": "Cuauhtémoc (mencionada en el titular)",
-          "local_url": "/noticias/?id=f6b63832b61ca32384b4&mes=2026-10",
-          "brief": {
-            "lead": "La información publicada por Excélsior trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "alcaldia_cuauhtemoc",
-            "url": "/assets/alcaldias/cuauhtemoc.jpg",
-            "category": "CDMX",
-            "borough": "Cuauhtémoc",
-            "topic": "Palacio de Bellas Artes en la alcaldía Cuauhtémoc",
-            "author": "Timothy Neesam",
-            "license": "CC BY-SA 4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Palacio_de_Bellas_Artes%2C_Mexico_City%2C_MX.jpg"
-          }
         }
       ]
     },
     {
       "name": "Gustavo A. Madero",
-      "count": 52,
+      "count": 53,
       "articles": [
         {
           "title": "Clima y pronóstico en Gustavo A. Madero este viernes 30 de octubre de 2026: jornada templada con nubes dispersas",
@@ -3911,6 +3913,24 @@
             "author": "AlejandroLinaresGarcia",
             "license": "CC BY-SA 3.0",
             "source": "https://commons.wikimedia.org/wiki/File:SanMatiasChurchIztacalco02.jpg"
+          }
+        },
+        {
+          "title": "Se abre socavón en la Gustavo A. Madero",
+          "description": "La información publicada por El Norte trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9TVlI0YlZ2bGVHSFc5SEt5V1d3NE1faEhsYlV6WUplNlFnYUExT001TXBkVURfTHJMalFDNnhBQy0zaUp3N1JMSFFqbFNISDdLdjdzWk9sU0NfWnUyUkVSN1pjbUJuNkY2Wng3OXpxUVoyV3ZjWDlZUjI2Yy0?oc=5",
+          "source": "El Norte",
+          "date": "2026-10-29",
+          "published_at": "2026-10-30T00:09:22Z",
+          "category": "CDMX",
+          "borough": "Gustavo A. Madero",
+          "location": "Gustavo A. Madero (mencionada en el titular)",
+          "local_url": "/noticias/?id=54241d748473cf02e8f8&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por El Norte trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           }
         },
         {
@@ -4414,24 +4434,6 @@
           "local_url": "/noticias/?id=e07d24271ad88b3a4113&mes=2026-10",
           "brief": {
             "lead": "El pronóstico recogido por El Heraldo de México se refiere a lluvias ligeras en Gustavo A. Madero. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
-        },
-        {
-          "title": "La Tremenda Korte, Grupo Aroma y La Sonora Santanera tendrán concierto gratuito en la Gustavo A. Madero: cuándo y dónde verlos",
-          "description": "El medio Infobae presenta conciertos o actividades musicales anunciadas en Ciudad de México. La programación, disponibilidad y costos pueden cambiar; comprueba los datos del organizador.",
-          "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxNTEFDUVlfb2o5eWNHVi0wSnB1bE9vRmVBQzlvdDFRa0dYeU5CT1NHUU1lb01ESDBJdGMzYl9XZWJMdnp6VHBycFRsV1F2VUNPakZ3Uml0UG5YNTNaQUIzcklSNVFUVnFXcWlhRlFWMXBBMDIxdzRYbnQ2c1ZqMlF2ODJsNlpRbk9vQ1U4QkQ3TFBDeVhMOTNTR1hIWWJnak9ZMEdGWWxkOFY2VVI4S3poZEhPVXJHZkNlcmVYVUE3LXNIbVl1SzF6Q2hMMi1PV0xWNHRub1h3b0FpejQtdXl0V1JaWnktSWROclA5TTNyQjRhb0V6ZndBdmpB0gGUAkFVX3lxTFB5bjZ0MnFXZHZnLXZhRXJyUHNVa1J4TjFFcVZ3cGx2ZWVhVS1XbEowVnFpVC1Ydno2WHZZWmNqalcyYjV4bnUtYnY5Zmo4VjRkX3dUVEFPOFBQTnJJYjBXeUp3dXRiYXZZUmJySDNiSEZHa1A5N09GYlRqTmh5VG5WYVB1ODdpRjdvTXRHUHBSc2RDRFY0cmxfWEY0bi1DazRCaGItNzdsQjJWRjNuZnJES0h0UWtOb3FOS3hQY2hiTTBWSFByc0xxVS10RnY5em1DWEhncDRkWi1TLXF6dGZpM0tmYmsxX3kzQmR1S3NCME5yaFJJSW9SS05fbk11SzVydlF6dnZOSDd0SVcwMFBUMk1aZQ?oc=5",
-          "source": "Infobae",
-          "date": "2026-10-21",
-          "published_at": "2026-10-21T22:11:00Z",
-          "category": "CDMX",
-          "borough": "Gustavo A. Madero",
-          "location": "Gustavo A. Madero (mencionada en el titular)",
-          "local_url": "/noticias/?id=80db7ed56cd1db4a8c9c&mes=2026-10",
-          "brief": {
-            "lead": "El medio Infobae presenta conciertos o actividades musicales anunciadas en Ciudad de México. La programación, disponibilidad y costos pueden cambiar; comprueba los datos del organizador.",
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
