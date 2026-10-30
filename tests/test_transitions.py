@@ -48,8 +48,14 @@ class TransitionTests(unittest.TestCase):
         self.assertIn("/servicios/",js)
 
     def test_every_primary_page_loads_transitions(self):
+        # Las fichas /articulos/ son páginas editoriales generadas (no portales).
+        # El archivo de propiedad de Google contiene texto plano, no una página HTML.
+        # Ambas clases se prueban por separado, sin exigirles el JS de navegación.
         paths=[p for p in ROOT.rglob("*.html")
-               if ".git" not in p.parts and p.relative_to(ROOT).as_posix() not in (
+               if ".git" not in p.parts
+               and p.relative_to(ROOT).parts[0] != "articulos"
+               and p.name != "googlecde9a329fb7b31d9.html"
+               and p.relative_to(ROOT).as_posix() not in (
                     "mapa/preview.html", "mapa/preview-alcaldias-rutas-20261028.html",
                     "mapa/preview-oficial-20261028.html", "escribe-pro/index.html")]
         self.assertGreaterEqual(len(paths),45)
