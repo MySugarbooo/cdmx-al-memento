@@ -37,7 +37,12 @@
    image.src=usable?photo.url:fallback[category]||'/assets/fotos/reforma.jpg';
    image.alt='Imagen ilustrativa y referencial sobre '+category+'. No constituye evidencia gráfica del hecho.';
    image.loading='lazy';image.decoding='async';
-   image.onerror=()=>{image.onerror=null;image.src=fallback[category]||'/assets/fotos/reforma.jpg'};
+   image.onerror=()=>{
+    image.onerror=null;
+    image.src=fallback[category]||'/assets/fotos/reforma.jpg';
+    const shownCredit=card.querySelector('.neo-photo-attribution');
+    if(shownCredit)shownCredit.textContent=notice+' · Imagen de recurso editorial. Consulta los créditos de la fototeca.';
+   };
    const h=node('h3');const link=node('a',article.title);link.href=article.local_url;h.append(link);
    const info=node('p',(article.source||'Medio externo')+' · '+escapeDate(article.published_at||article.date));
    const caption=node('p',notice,'neo-photo-attribution');
