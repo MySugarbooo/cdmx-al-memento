@@ -216,3 +216,104 @@ body.neo-site-inner .neo-photo-card strong{font-size:14px}
 body.neo-site-inner .neo-photo-card small{color:#d0b4c5;font-size:11px}
 body.neo-site-inner .neo-photo-card a{font-size:11px;font-weight:700;color:#ff9ccb}
 @media(prefers-reduced-motion:reduce){body.neo-site-inner .neo-photo-card img{transition:none!important;transform:none!important}}
+
+
+/* 2026-10-29 · Capa editorial unificada. Mismos tokens visuales en todas las secciones.
+   Se limita a páginas interiores para preservar el estilo independiente de la portada. */
+body.neo-site-inner{
+ --rosa:#ed318d;--rosa-light:#ffacd5;--bg:#080e18;--card:#101827;
+ --txt:#f7f8fc;--muted:#c2c8d3;--border:#3d4655;
+ background:radial-gradient(ellipse at 85% 0%,#b42f7b1a,transparent 48%),#080e18!important;
+ color:var(--txt)!important;
+}
+body.neo-site-inner::before{background:linear-gradient(#080e18de,#080e18f2),url("/assets/fotos/reforma.jpg") center/cover no-repeat;opacity:.12}
+body.neo-site-inner>header.neo-global-header{
+ width:min(98%,1510px)!important;max-width:1510px!important;
+ margin:0 auto!important;border:0;border-bottom:1px solid #ed318d;
+ border-radius:0!important;background:#0a101bf9;box-shadow:0 8px 28px #05081366
+}
+body.neo-site-inner .neo-global-top{min-height:88px;padding:13px clamp(14px,2.4vw,33px)}
+body.neo-site-inner .neo-global-date .neo-site-local{background:#152033;border-color:#43506a;color:#e9cde0}
+body.neo-site-inner .neo-global-search{background:#101a2a;border-color:#6f6677}
+body.neo-site-inner .neo-global-actions>a,body.neo-site-inner .neo-global-actions>button{background:#172033;border-color:#4e5267}
+body.neo-site-inner .neo-global-nav{background:#0a101b;border-color:#303949;padding-block:9px!important}
+body.neo-site-inner .neo-global-nav a{font-size:13px!important;min-height:40px;display:flex;align-items:center}
+body.neo-site-inner .neo-global-nav a[aria-current=page]{background:#e83291!important;color:#fff!important}
+body.neo-site-inner>main{
+ width:min(98%,1510px)!important;max-width:1510px!important;
+ border:0;border-radius:0!important;background:#0a111df2!important;
+ margin:0 auto 16px!important;padding:clamp(18px,2.4vw,34px)!important;
+ min-height:64vh;
+}
+body.neo-site-inner>footer{
+ width:min(98%,1510px)!important;max-width:1510px!important;
+ margin:0 auto 16px!important;border:1px solid #313e52!important;
+ border-radius:13px;background:#0d1524e8
+}
+body.neo-site-inner .neo-inner-banner{
+ min-height:72px;padding:12px 18px;margin-bottom:16px;
+ border:1px solid #3d475b;border-radius:12px;
+ background:linear-gradient(100deg,#221d32,#111c2d);
+}
+body.neo-site-inner .neo-inner-banner:after{opacity:.12}
+body.neo-site-inner :is(.panel,.card,.portal-card,.citizen-panel,.community-sidebar,.cdmx-comments,.borough-rail,.topic-card,article.card,.neo-safety-item){
+ background-color:#121c2b;border-color:#3f4a5a;
+ box-shadow:0 6px 20px #04091445;
+}
+body.neo-site-inner :is(.portal-hero,.citizen-hero,.community-hero,.mapa-hero,.borough-page-top,.archive-page-intro){
+ background:linear-gradient(115deg,#172338,#151d2c 76%)!important;
+ border:1px solid #546079!important;border-radius:16px!important;
+}
+body.neo-site-inner :is(.panel,.card,.portal-card,.community-sidebar,.neo-safety-item) :is(h2,h3){color:#f8f6fb}
+body.neo-site-inner :is(.panel,.card,.portal-card,.community-sidebar,.neo-safety-item) :is(p,small){color:#d2cbd8}
+body.neo-site-inner .eyebrow{color:#ff91c2}
+body.neo-site-inner .neo-section-story{background:#111c2c;border-color:#41516a}
+body.neo-site-inner .neo-section-story img{height:185px}
+body.neo-site-inner .neo-section-story p{font-size:13px;color:#d6cbd5;line-height:1.5}
+body.neo-site-inner .neo-section-story p.neo-photo-attribution{font-size:12px;color:#ffe0ef}
+body.neo-site-inner .neo-section-story .neo-photo-attribution a{color:#ffacd2;font-weight:700}
+body.neo-site-inner :is(.meta,.muted,.photo-credit,.image-disclaimer){color:#c4c8d4}
+body.neo-site-inner .neo-photo-card{background:#121c2c;border-color:#455066}
+body.neo-site-inner .neo-photo-card img{height:215px}
+body.neo-site-inner .neo-photo-card figcaption{min-width:0}
+body.neo-site-inner .neo-photo-card :is(small,a){font-size:12px;line-height:1.45;overflow-wrap:anywhere}
+body.neo-site-inner .neo-photo-card strong{font-size:15px;overflow-wrap:anywhere}
+body.neo-site-inner .neo-photo-card .neo-photo-warning{font-size:12px}
+body.neo-site-inner .neo-photo-card .neo-photo-links{display:flex;flex-wrap:wrap;gap:5px 14px}
+body.neo-site-inner .credit-row{background:#101b29;border-color:#41516a}
+body.neo-site-inner .credit-row :is(p,a){font-size:13px}
+body.neo-site-inner .community-page .forum-toolbar :is(input,select,button){min-height:42px}
+body.neo-site-inner .community-hero{margin-top:6px!important}
+body.neo-site-inner .community-hero-cta{min-height:46px}
+body.neo-site-inner :is(.btn,.portal-btn,.community-hero-cta,.community-new-post){min-height:44px}
+body.neo-site-inner .community-sidebar .forum-quick-topics button{min-height:36px}
+body.neo-site-inner .neo-inner-dock{background:#101a29f5;border-top-color:#cc4f91}
+body.neo-site-inner .neo-inner-dock a{min-height:45px}
+@media(min-width:701px) and (max-width:1080px){
+ body.neo-site-inner .neo-global-top{gap:12px}
+ body.neo-site-inner>main{padding:18px 20px!important}
+ body.neo-site-inner .neo-global-nav{gap:3px}
+ body.neo-site-inner .neo-global-nav a{padding:8px 12px!important}
+}
+@media(max-width:700px){
+ body.neo-site-inner{padding-bottom:calc(88px + env(safe-area-inset-bottom))!important}
+ body.neo-site-inner>header.neo-global-header{width:100%!important;margin:0!important}
+ body.neo-site-inner .neo-global-top{min-height:58px;padding:9px 12px}
+ body.neo-site-inner>main{width:100%!important;padding:15px 13px 28px!important}
+ body.neo-site-inner>footer{width:100%!important;margin:0 auto 10px!important}
+ body.neo-site-inner .neo-global-nav a{min-height:41px;font-size:12px!important}
+ body.neo-site-inner .neo-inner-dock a{min-width:0;flex:1;min-height:48px;padding:5px 3px;font-size:11px}
+ body.neo-site-inner .neo-photo-card img{height:190px}
+ body.neo-site-inner :is(.panel,.portal-card,.citizen-panel){padding:16px}
+ body.neo-site-inner .community-hero{padding:20px 17px!important}
+ body.neo-site-inner .neo-section-story img{height:170px}
+}
+@media(max-width:420px){
+ body.neo-site-inner .neo-global-brand strong{font-size:20px}
+ body.neo-site-inner .neo-global-brand svg{width:38px;height:38px}
+ body.neo-site-inner .neo-global-date .neo-site-local{display:none}
+ body.neo-site-inner .neo-photo-card img{height:210px}
+}
+@media(prefers-reduced-motion:reduce){
+ body.neo-site-inner .neo-photo-card:hover img{transform:none!important}
+}
