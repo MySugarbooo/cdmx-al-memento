@@ -1,0 +1,29 @@
+name: Check public SEO URLs
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '41 */6 * * *'
+permissions:
+  contents: read
+jobs:
+  public-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check public sitemaps and article HTTP responses
+        shell: bash
+        run: |
+          set -uo pipefail
+          failed=0
+          for path in /robots.txt /sitemap.xml /sitemap-articulos.xml /articulos/cea4c461a4f0251f4cb5/; do
+            url="https://cdmx-al-memento.pages.dev${path}"
+            echo "::group::${url}"
+            response=$(curl --location --silent --show-error --max-time 25 --retry 2 --retry-delay 3 --output /dev/null --write-out '%{http_code} %{content_type} %{url_effective}' "${url}") || response="000 connection-error ${url}"
+            echo "HTTP status, content type, final URL: ${response}"
+            code="${response%% *}"
+            if [[ "${code}" != "200" ]]; then
+              echo "::error::Public URL did not return HTTP 200: ${url} (${response})"
+              failed=1
+            fi
+            echo "::endgroup::"
+          done
+          exit "${failed}"
