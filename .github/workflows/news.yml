@@ -26,6 +26,10 @@ on:
       - 'assets/reportes-ciudadanos.css'
       - 'assets/premium-2026.css'
       - 'tests/test_premium_ui.py'
+      - 'tests/test_estadisticas.py'
+      - 'estadisticas/index.html'
+      - 'assets/estadisticas.js'
+      - 'assets/estadisticas.css'
       - 'tests/test_citizen_reports.py'
       - 'tests/test_citizen_reports.mjs'
       - 'firebase/asignar-moderador.mjs'
@@ -133,6 +137,7 @@ jobs:
           node --check assets/neo-gallery.js
           node --check kisumi-studio/studio.js
           node --check assets/noticias-locales.js
+          node --check assets/estadisticas.js
           node --check assets/portal.js
           node --check assets/clima-ticker.js
           node --check --input-type=module < functions/api/clima.js
