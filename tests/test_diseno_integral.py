@@ -22,8 +22,8 @@ class DesignAuditRegressionTests(unittest.TestCase):
         ):
             with self.subTest(page=page):
                 content = read(page)
-                self.assertEqual(len(re.findall(r"<main\\b", content)), 1)
-                self.assertEqual(len(re.findall(r"</main\\s*>", content)), 1)
+                self.assertEqual(len(re.findall(r"<main\b", content)), 1)
+                self.assertEqual(len(re.findall(r"</main\s*>", content)), 1)
 
     def test_visible_non_js_header_fallbacks(self):
         for page in ("seguridad/index.html", "servicios/index.html", "fotografias/index.html"):
