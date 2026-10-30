@@ -15,7 +15,7 @@
  // Esta navegación no añade un segundo archivo CSS duplicado.
  if(path==='/'||path==='/index.html')return;
  function init(){
-  const main=document.querySelector('main');if(!main||document.body.classList.contains('neo-site-inner'))return;
+  const main=document.querySelector('main');if(!main||document.body.classList.contains('neo-site-inner')){document.documentElement.classList.add('neo-ready');return;}
   document.body.classList.add('neo-site-inner');
   const section=(function(){
    if(path.startsWith('/cdmx/'))return ['CDMX','Últimas noticias de la capital con fecha y fuente','/assets/fotos/reforma.jpg'];
@@ -132,6 +132,8 @@
       target.scrollIntoView({behavior:'smooth',block:'start'})}
   });
  }
- if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init,{once:true});
+ const originalInit=init;
+ function revealAfterInit(){try{originalInit()}finally{document.documentElement.classList.add('neo-ready')}}
+ if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',revealAfterInit,{once:true});
  else init();
 })();
