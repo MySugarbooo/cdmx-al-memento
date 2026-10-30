@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-30 02:10 UTC",
+  "updated": "2026-10-30 02:49 UTC",
   "boroughs": [
     {
       "name": "La Magdalena Contreras",
@@ -3115,7 +3115,7 @@
     },
     {
       "name": "Cuauhtémoc",
-      "count": 120,
+      "count": 121,
       "articles": [
         {
           "title": "Clara Jusidman destaca el legado de Cuauhtémoc Cárdenas y los retos de la primera jefatura de Gobierno de la CDMX",
@@ -3143,6 +3143,34 @@
             "author": "Timothy Neesam",
             "license": "CC BY-SA 4.0",
             "source": "https://commons.wikimedia.org/wiki/File:Palacio_de_Bellas_Artes%2C_Mexico_City%2C_MX.jpg"
+          }
+        },
+        {
+          "title": "CDMX: Sheinbaum despide a Cuauhtémoc Cárdenas con guardia de honor en el Panteón Francés",
+          "description": "La información publicada por gamavisión trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPcjh1elBua29nTERLczg5TTNLY2Rralc1YTFDaUg5eENBRkxmZ1cxZ0ZRVHJXSVhVUm9xY2NLNlJZcTVkWlhaS01Ga1VsUHNHYmdBcWF3cjdpUG1lalBxX1ctWWE0QTRpU0VsTENkbnpBX2V2c0lCa2FNRHA2M2ZtWUU4b05UaXZkbFJxT3pUXzlqZ0xGc1FXZ1JBSndCblBHRnk3T2U2NlBLSGF0c3pteGlhZWx5dGFwWXYw?oc=5",
+          "source": "gamavisión",
+          "date": "2026-10-29",
+          "published_at": "2026-10-30T00:34:03Z",
+          "category": "CDMX",
+          "borough": "Cuauhtémoc",
+          "location": "Cuauhtémoc (mencionada en el titular)",
+          "local_url": "/noticias/?id=4639ede78b63782731e1&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por gamavisión trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_alvaro-obregon",
+            "url": "/assets/alcaldias/alvaro-obregon.jpg",
+            "category": "CDMX",
+            "borough": "Álvaro Obregón",
+            "topic": "Plaza del Carmen, barrio de San Ángel",
+            "author": "Reginaesc",
+            "license": "CC BY-SA 4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Plaza_del_Carmen%2C_Regina_Escandon%2C_23.sep.15._San_%C3%81ngel%2C_Del._%C3%81lvaro_Obreg%C3%B3n_01000_Ciudad_de_M%C3%A9xico.JPG"
           }
         },
         {
@@ -3759,34 +3787,6 @@
             "author": "ProtoplasmaKid",
             "license": "CC0",
             "source": "https://commons.wikimedia.org/wiki/File:Audiorama_de_Chapultepec_1.jpg"
-          }
-        },
-        {
-          "title": "Claudia Sheinbaum asistirá al funeral de Cuauhtémoc Cárdenas en el Panteón Francés, buscará hacer homenaje con la familia",
-          "description": "La información publicada por Infobae trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxPNF9ZNElDcVJab01PLUtGdDVYcURDd1lBbjV1Y1dxeHNTclBYMEM4bWc3M3JtUXA0c3NsNnRqb192eXZHU0tKNmdMY25qYnMxd01aTTRZTlRwSWg0MHZwSGJMVktId19ZbVFBMEFwUnlFRGszSGl5bTlXel9OeURSb2ljdDJRWk81ODgyS0Q4QXBneFF6X2otWjBtcGVrUXl2clM3V3pTaTFsS0trQlBaaVlncE8xN0FMOUdkZldfaElpeE1kN1l2bzZsaUcySFVCQXZLM2VqNVFYYUtOQm1nNU9RSGZjTm9YRjZjbThhNXFSaGRsaXfSAZACQVVfeXFMTm4ybmhJa19NWjVkM2ZJVUdwUV9HU214TU0yaUhtWThDYll1WTFoakkybUYwWVVNNXRPc3hIX1Q2ZW9PSlpFczcxa0pUZzdFUFZlUW1WV1E0OFQzMzBTcWw1cE5xd0toZWMtcWdIVFpBZ0ktTFdLV0NnYXpKQ3dfY0VUN09JbmJKTnFKR2JidHdlcUwxNHZHR3VoU3FXZEdFaVBZTlUwbEN0UWhKRzZwbnBZOFhpM2lLWGxtWGt2eVlNYlI0MDRlNHYyT29lZDRVeERrOG9zQ3lUeE04SGlhampnMEViWHdObEVLSjRzV1VoUjlCaUR5VkY4T1VYYnVYRnlqX0t4TUtOa19WNkszRDE?oc=5",
-          "source": "Infobae",
-          "date": "2026-10-29",
-          "published_at": "2026-10-29T15:54:00Z",
-          "category": "CDMX",
-          "borough": "Cuauhtémoc",
-          "location": "Cuauhtémoc (mencionada en el titular)",
-          "local_url": "/noticias/?id=8dcfe1a40cf85795f76d&mes=2026-10",
-          "brief": {
-            "lead": "La información publicada por Infobae trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "alcaldia_tlalpan",
-            "url": "/assets/alcaldias/tlalpan.jpg",
-            "category": "CDMX",
-            "borough": "Tlalpan",
-            "topic": "Quiosco de la plaza principal de Tlalpan",
-            "author": "farid estrada",
-            "license": "CC BY-SA 3.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Kiosko_plaza_de_la_constitucion%2C_tlapan.JPG"
           }
         }
       ]
@@ -4889,8 +4889,36 @@
     },
     {
       "name": "Iztapalapa",
-      "count": 152,
+      "count": 154,
       "articles": [
+        {
+          "title": "Detienen a tres hombres y aseguran 178 empaques de droga en Iztapalapa",
+          "description": "Una nota de Sociedad Noticias comunica un caso relacionado con una detención o una presunta conducta delictiva en Iztapalapa. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxONjhxbDRzRVNaaEZnX1RUVmw5dHk3a0lsbEszUS1tb2pHdFByQndOTURhX2dEZThnMWhuX3dVQ1ZyQUQwT2hfQ3VTVEF3d01uNlNZMW51VDVnemRKYUNiUnJQajFoS0FWQWxkX25IYkdtczdrdVRMeWFiNEdpaFI2RXFPYXItd0dINmdwZlBKclZYZlBtTWIzVmFrQWtfU190bmYyM3BJMDV2bFdXN3RRS3R3?oc=5",
+          "source": "Sociedad Noticias",
+          "date": "2026-10-29",
+          "published_at": "2026-10-30T02:30:00Z",
+          "category": "CDMX",
+          "borough": "Iztapalapa",
+          "location": "Iztapalapa (mencionada en el titular)",
+          "local_url": "/noticias/?id=ef2782ece4492f83faa4&mes=2026-10",
+          "brief": {
+            "lead": "Una nota de Sociedad Noticias comunica un caso relacionado con una detención o una presunta conducta delictiva en Iztapalapa. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_iztapalapa",
+            "url": "/assets/alcaldias/iztapalapa.jpg",
+            "category": "CDMX",
+            "borough": "Iztapalapa",
+            "topic": "Vista de Iztapalapa desde el Cerro de la Estrella",
+            "author": "Secretaría de Cultura Ciudad de México from México",
+            "license": "CC BY 2.0",
+            "source": "https://commons.wikimedia.org/wiki/File:MX_MM_MUSEO_CERRO_DE_LA_ESTRELLA_%2849522225751%29.jpg"
+          }
+        },
         {
           "title": "Ofrenda monumental en Iztapalapa: fechas, horario y todo lo que debes saber",
           "description": "La información publicada por TV Azteca trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -4917,6 +4945,24 @@
             "author": "Secretaría de Cultura Ciudad de México from México",
             "license": "CC BY 2.0",
             "source": "https://commons.wikimedia.org/wiki/File:MX_MM_MUSEO_CERRO_DE_LA_ESTRELLA_%2849522225751%29.jpg"
+          }
+        },
+        {
+          "title": "Aleida Alavez alista operativo en siete panteones de Iztapalapa: horarios y cierres",
+          "description": "La información publicada por Capital CDMX trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOVkF2eGlLdTRrbFJWa1JfUFdfWURJNWVsWUlPVmNZRThhcE9TV3cyS0pmV1RGenRvR1VVbHA2YXViM2JOQTFJbmROSXBHQ3ZRY3JOdTRDSmNJWnVuajNhMzVNMjIwaUE4TXAzMTVBVDJkTWdUbFVLdENWRkU0QS1RLUhYOFhXR0xUU2RDRER3?oc=5",
+          "source": "Capital CDMX",
+          "date": "2026-10-29",
+          "published_at": "2026-10-29T20:29:07Z",
+          "category": "CDMX",
+          "borough": "Iztapalapa",
+          "location": "Iztapalapa (mencionada en el titular)",
+          "local_url": "/noticias/?id=c55faab16ccdb8606a4a&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por Capital CDMX trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           }
         },
         {
@@ -5362,42 +5408,6 @@
           "local_url": "/noticias/?id=fbbe34fef44b8884d44e&mes=2026-10",
           "brief": {
             "lead": "La información publicada por Excélsior trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
-        },
-        {
-          "title": "Detienen a dos presuntos responsables de balacera en Iztapalapa",
-          "description": "Una nota de El Independiente comunica un caso relacionado con una detención o una presunta conducta delictiva en Iztapalapa. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
-          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQeGNnZzFxOTF6RUNMUlZSR0JhVF82YjBfZ2VSNjN0X2hiZmF3THZPNWo0WUFveTJkSjdUbDFTckZJZmNKZHpvT0pTWHYwV2p6ZTh2WVNObzgyaVluMHpUak1hdDJVUVIzSFF1OFFnSkZaTGd4cDJXeGJKSnVfdUpLZTBDTHprbHU5djVNM3JIQ3g0RWw3Q0ZvUmJuN2RqTlBpYUxRWk9ZZUdQc0pVUzdBOV9iRQ?oc=5",
-          "source": "El Independiente",
-          "date": "2026-10-24",
-          "published_at": "2026-10-24T16:03:21Z",
-          "category": "CDMX",
-          "borough": "Iztapalapa",
-          "location": "Iztapalapa (mencionada en el titular)",
-          "local_url": "/noticias/?id=05db869896661eefefe5&mes=2026-10",
-          "brief": {
-            "lead": "Una nota de El Independiente comunica un caso relacionado con una detención o una presunta conducta delictiva en Iztapalapa. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
-        },
-        {
-          "title": "Clima en Iztapalapa: Sábado 24 de octubre con ambiente frío y nubes persistentes",
-          "description": "El pronóstico recogido por El Heraldo de México se refiere a condiciones meteorológicas en Iztapalapa. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
-          "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNb2JKRE5xRWxaaE9IR056WnUxT3lnRF9aaHVwRjBqXzlQYVowd3FaYWpHOGFYbS1fOWtReEw2S01hSDdsS280OTRPd0ctbHRsM19CVmdjMkpVOWgtVFEwUkI4MU15VGJHU2N2VHZrazNIWEVWd3N6aUFQUHhqWm9TMnJOanhCdkYzX19MRzdhaGNnMGtYWXJWOFlwTllJYndHR2VzZGgwc3Q3VXpDb0c5eG5fcG9nRHB3Y3JpYXd2c0k1NWpzeFJ4X1RKNWVwYTJXXy0xOTEtVQ?oc=5",
-          "source": "El Heraldo de México",
-          "date": "2026-10-23",
-          "published_at": "2026-10-24T05:00:00Z",
-          "category": "CDMX",
-          "borough": "Iztapalapa",
-          "location": "Iztapalapa (mencionada en el titular)",
-          "local_url": "/noticias/?id=50d4dd6a5330ea808418&mes=2026-10",
-          "brief": {
-            "lead": "El pronóstico recogido por El Heraldo de México se refiere a condiciones meteorológicas en Iztapalapa. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
@@ -8137,8 +8147,36 @@
     },
     {
       "name": "Xochimilco",
-      "count": 118,
+      "count": 119,
       "articles": [
+        {
+          "title": "Xochimilco vende el 90% de su cempasúchil, pero aún hay flores disponibles",
+          "description": "La publicación de Diario del Yaqui pone el foco en dificultades que podrían afectar la comercialización del cempasúchil de Xochimilco. La producción de flor involucra a familias y productores locales; para explicar causas y alcances hacen falta los datos del reportaje.",
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOV0JwcEhNRWVQRF9jbnhtLXhqU0FJNzVvVl8tQVR3X0xuMmRQbHFEWjRIWjQ1MXlhbTY3NndJSkpYOFZZR29PYUhaelJnRzRkeXQzOXowNkxlVGFQWnVFSE5icGdDeFo0UjJKeWtsSDRObnB5bU9ndmVUNUR1cDBXQUFtRVhpMmtfRlBLYlVrWHRUeGRTNHdhcUdXTWZjMGs4TGlsLXNsSGtTSzNUeEtsbFp1TnA?oc=5",
+          "source": "Diario del Yaqui",
+          "date": "2026-10-29",
+          "published_at": "2026-10-30T02:09:32Z",
+          "category": "CDMX",
+          "borough": "Xochimilco",
+          "location": "Xochimilco (mencionada en el titular)",
+          "local_url": "/noticias/?id=999a92af690e9843e734&mes=2026-10",
+          "brief": {
+            "lead": "La publicación de Diario del Yaqui pone el foco en dificultades que podrían afectar la comercialización del cempasúchil de Xochimilco. La producción de flor involucra a familias y productores locales; para explicar causas y alcances hacen falta los datos del reportaje.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_xochimilco",
+            "url": "/assets/alcaldias/xochimilco.jpg",
+            "category": "CDMX",
+            "borough": "Xochimilco",
+            "topic": "Trajineras y canales de Xochimilco",
+            "author": "Xbauerx",
+            "license": "CC BY-SA 4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Trajineras_de_Xochimilco.jpg"
+          }
+        },
         {
           "title": "Concejal Eder Moreno impulsa seguridad, cultura y participación en Xochimilco",
           "description": "La información publicada por Partido del Trabajo trata un asunto registrado en la sección de Seguridad del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -8668,24 +8706,6 @@
           "local_url": "/noticias/?id=947822cf64a478a7d5a9&mes=2026-10",
           "brief": {
             "lead": "El pronóstico recogido por El Heraldo de México se refiere a lluvias ligeras en Xochimilco. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
-        },
-        {
-          "title": "Cempasúchil de Xochimilco: cuatro meses de cultivo en chinampas",
-          "description": "La publicación de La Silla Rota pone el foco en dificultades que podrían afectar la comercialización del cempasúchil de Xochimilco. La producción de flor involucra a familias y productores locales; para explicar causas y alcances hacen falta los datos del reportaje.",
-          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQdVJHa3V5S1ZZd09xN2VpV1JqNVN5MTl1U19GRzlOT0s4QkV1V3ZCRW4yclpVQ1F1LXdSQUpVbFhxNlU5SGZtWmU1WC1Ld293M21xZ0RVa2FDRW9SLXI0V2xNNnhicTZlNHBXWjNwdEk0YXNlTDk0bUR5blhja2tFYkloOWUwaXoyRU1sMnNGY21rQ2JJMHRPRW14dDdlWU91eEx5X1FpSFh5LXBDbGhOTWxqMmQ5LXJDUjlz?oc=5",
-          "source": "La Silla Rota",
-          "date": "2026-10-24",
-          "published_at": "2026-10-25T02:56:00Z",
-          "category": "CDMX",
-          "borough": "Xochimilco",
-          "location": "Xochimilco (mencionada en el titular)",
-          "local_url": "/noticias/?id=f66b49325ba91882bf2e&mes=2026-10",
-          "brief": {
-            "lead": "La publicación de La Silla Rota pone el foco en dificultades que podrían afectar la comercialización del cempasúchil de Xochimilco. La producción de flor involucra a familias y productores locales; para explicar causas y alcances hacen falta los datos del reportaje.",
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
