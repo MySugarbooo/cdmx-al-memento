@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-30 15:36 UTC",
+  "updated": "2026-10-30 15:38 UTC",
   "boroughs": [
     {
       "name": "La Magdalena Contreras",
@@ -6637,8 +6637,38 @@
     },
     {
       "name": "Tláhuac",
-      "count": 88,
+      "count": 89,
       "articles": [
+        {
+          "title": "Doble Feminicidio en CDMX: Matan a Balazos a Madre y su Hija Adolescente en Tláhuac",
+          "description": "La información publicada por N+ trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQWWplZDNzR3ltTU5vc1dUQjNncUhvd3hkTWFhZU9FU1pNbDI0RnZuR2hCSkRyaGp1U200Z3B3ZjhaMUVVMUtHblAxeFdhQTNnRHhfdUU5X3VQallDS2x1LWtHQmFnWHhreHlKLURENGdQalZ3UWtuS2JmUUg4UEdQYXNYYWE5STJfbFZGRENJRHZERFMwMi1pWDVsa2h2RHpUZUE1bV9mdFZ4TW9iMEp6dldyQU1uaFlHaDlmT09hdkJvNXllQ3k5YUs0MUl5S2M?oc=5",
+          "source": "N+",
+          "date": "2026-10-30",
+          "published_at": "2026-10-30T15:33:39Z",
+          "category": "CDMX",
+          "borough": "Tláhuac",
+          "location": "Tláhuac (mencionada en el titular)",
+          "local_url": "/noticias/?id=ad9c9bbadce736a2a8dc&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por N+ trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_tlahuac",
+            "kind": "representativa",
+            "url": "/assets/alcaldias/tlahuac.jpg",
+            "category": "CDMX",
+            "borough": "Tláhuac",
+            "topic": "Plaza central de San Pedro Tláhuac",
+            "author": "Yavidaxiu",
+            "license": "CC BY 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Tl%C3%A1huac-Plaza_central.JPG"
+          }
+        },
         {
           "title": "Asesinan a balazos a madre e hija en Tláhuac, CdMx; vecinos golpean y retienen al presunto agresor",
           "description": "La información publicada por Telediario trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -7190,24 +7220,6 @@
           "local_url": "/noticias/?id=25cd492c2bc7e35ddc05&mes=2026-10",
           "brief": {
             "lead": "La información publicada por MVS Noticias trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
-        },
-        {
-          "title": "Manifestantes Bloquean Avenida Tláhuac y Denuncian Casos de Extorsión",
-          "description": "La información publicada por N+ trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPSFlWTC01UEVjejFsQ0hlUFFTWEdJUGwyWVI1QUZSRGxGa2p0TFZGUW5iX2hxb214QTJzOEtycFkwUUM2WlZuc1Q2Wk1BSlE5Zl92WjJDNDlVVm1Cb05kREt6RXRqSXVqYnRuWlN4MjNnSGxBSmZpYTFkRGY1UnhtSEg4cXZJT21uUnFncDBIXzNqOU9TaFlGMThXR09IY0tDaFJVSVVHbl9nYUhSck1YQ0tUS0o0MDg1SklpeTVZYmxrVlFMTVI5aU9UdmlTb1lQ?oc=5",
-          "source": "N+",
-          "date": "2026-10-23",
-          "published_at": "2026-10-23T21:46:55Z",
-          "category": "CDMX",
-          "borough": "Tláhuac",
-          "location": "Tláhuac (mencionada en el titular)",
-          "local_url": "/noticias/?id=30e401e84ba5e88219b0&mes=2026-10",
-          "brief": {
-            "lead": "La información publicada por N+ trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
