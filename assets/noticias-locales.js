@@ -176,7 +176,7 @@
     }
    };
    caption.replaceChildren();
-   const label=rights.kind==='hecho'&&rights.verified===true?'Fotografía verificada del acontecimiento: ':'Imagen representativa; no corresponde necesariamente al hecho descrito: ';
+   const label=rights.kind==='hecho'&&rights.verified===true?'Fotografía verificada del acontecimiento: ':'Imagen representativa · Imagen de carácter ilustrativo y referencial; no constituye evidencia gráfica de los hechos descritos. ';
    caption.append(document.createTextNode(label+(rights.topic||'CDMX')+
     ' · Autor: '+(rights.author||'Fuente original')+
     ' · '+(rights.license||'Licencia en la fuente')+' · '));
