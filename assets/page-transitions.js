@@ -135,5 +135,5 @@
  const originalInit=init;
  function revealAfterInit(){try{originalInit()}finally{document.documentElement.classList.add('neo-ready')}}
  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',revealAfterInit,{once:true});
- else init();
+ else revealAfterInit();
 })();
