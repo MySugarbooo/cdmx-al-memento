@@ -62,6 +62,7 @@ on:
       - 'tests/test_photos.py'
       - 'tests/test_photo_policy.py'
       - 'assets/fotos/hechos-verificados.json'
+      - 'assets/fotos/contexto-tematico.json'
       - 'tests/test_archive.py'
       - 'tests/test_profiles.py'
       - 'tests/test_transitions.py'
