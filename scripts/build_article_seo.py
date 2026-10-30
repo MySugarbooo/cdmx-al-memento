@@ -69,7 +69,7 @@ def main():
     robots_text = robots.read_text(encoding="utf-8")
     article_sitemap = "Sitemap: " + BASE + "/sitemap-articulos.xml"
     if article_sitemap not in robots_text:
-        robots.write_text(robots_text.rstrip() + "\\n" + article_sitemap + "\\n", encoding="utf-8")
+        robots.write_text(robots_text.rstrip() + "\n" + article_sitemap + "\n", encoding="utf-8")
     print(f"Generated {len(urls)} article pages and sitemap-articulos.xml")
 
 if __name__ == "__main__":
