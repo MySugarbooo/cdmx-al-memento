@@ -4,7 +4,7 @@
  const grid=document.getElementById('neo-photo-grid');
  const status=document.getElementById('neo-photo-status');
  if(!grid||!status)return;
- const DATA='/assets/fotos/catalogo-editorial-1100.json?v=20261029-auditoria1';
+ const DATA='/assets/fotos/indice-noticias-1100.json?v=20261029-1';
  const NOTICE='Imagen de carácter ilustrativo y referencial; no constituye evidencia gráfica de los hechos descritos.';
  const safeImage=u=>/^\/assets\/fotos\/[a-z0-9_]+\.jpg$/i.test(String(u||''))||/^https:\/\/(?:upload|thumb)\.wikimedia\.org\/wikipedia\/commons\//.test(String(u||''));
  const safeCommons=u=>/^https:\/\/commons\.wikimedia\.org\/wiki\/File:/.test(String(u||''));
@@ -59,7 +59,7 @@
    license.href=p.licenseUrl;license.rel='noopener noreferrer';license.target='_blank';
    links.append(origin,license);
    const notice=el('small','neo-photo-warning',NOTICE);
-   const adaptation=el('small','neo-photo-warning',p.adaptation||'Fotografía conservada como archivo.');
+   const adaptation=el('small','neo-photo-warning',p.url.startsWith('/assets/')?'Copia optimizada para visualización web; consulta la obra original.':'Vista previa servida desde Wikimedia Commons; consulta la obra original.');
    caption.append(categoryTag,title,author,links,notice,adaptation);
    figure.append(img,caption);return figure;
   };
