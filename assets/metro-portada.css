@@ -1,0 +1,104 @@
+/* CDMX AL MEMENTO · Metro por línea: maqueta aprobada 30 oct 2026. */
+#neo-home .neo-metro-card{
+  grid-area:metro;display:flex;flex-direction:column;gap:10px;min-width:0;
+  background:#0a111d;border:1px solid #d23c8d;border-radius:14px;padding:14px;
+  color:#f8f8ff;box-shadow:inset 0 1px 0 #ffffff13;
+}
+#neo-home .neo-metro-head{display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap}
+#neo-home .neo-metro-head h2{font-size:clamp(17px,1.4vw,21px);font-weight:830;line-height:1.2;margin:0;color:#fff}
+#neo-home .neo-metro-label{font-size:10px;color:#f6dce9;border:1px solid #76516c;background:#2b2135;border-radius:20px;padding:5px 8px;white-space:nowrap}
+#neo-home .neo-metro-photo{width:100%;height:clamp(110px,11vw,145px);border-radius:9px;object-fit:cover;display:block}
+#neo-home .neo-metro-overview{display:grid;gap:4px;border-bottom:1px solid #394253;padding-bottom:9px}
+#neo-home .neo-metro-overview strong{font-size:14px;color:#fff;line-height:1.3}
+#neo-home .neo-metro-overview small{color:#d5b9cd;font-size:11px;line-height:1.5}
+#neo-home .neo-metro-group{border:1px solid #323948;background:#101824;border-radius:10px;overflow:hidden}
+#neo-home .neo-metro-group h3{display:flex;align-items:center;gap:7px;font-size:14px;line-height:1.4;margin:0;padding:8px 10px;border-bottom:1px solid #323948}
+#neo-home .neo-metro-group h3 .neo-metro-dot{width:9px;height:9px;flex:none;border-radius:50%}
+#neo-home .neo-metro-group--crowd h3{color:#ffdb63}
+#neo-home .neo-metro-group--crowd .neo-metro-dot{background:#ffd335;box-shadow:0 0 9px #ffd33555}
+#neo-home .neo-metro-group--incidents h3{color:#ff8c96}
+#neo-home .neo-metro-group--incidents .neo-metro-dot{background:#ff5369;box-shadow:0 0 9px #ff536955}
+#neo-home .neo-metro-group--regular h3{color:#71e6a6}
+#neo-home .neo-metro-group--regular .neo-metro-dot{background:#42d993;box-shadow:0 0 9px #42d99355}
+#neo-home .neo-metro-items{display:grid;gap:3px;padding:6px 9px}
+#neo-home .neo-metro-row{display:flex;align-items:center;gap:9px;padding:5px 2px;text-decoration:none;border-radius:7px}
+#neo-home .neo-metro-row:hover,#neo-home .neo-metro-row:focus-visible{background:#2e3140}
+#neo-home .neo-metro-badge,#neo-home .neo-metro-chip{flex:none;display:grid;place-items:center;min-width:32px;min-height:25px;border-radius:5px;font-size:11px;line-height:1;font-weight:850;background:#cf3d86;color:#fff}
+#neo-home .neo-metro-row-text{min-width:0;display:flex;flex-direction:column;gap:1px}
+#neo-home .neo-metro-row-text strong{font-size:12px;color:#f8eff5}
+#neo-home .neo-metro-row-text small{font-size:11px;line-height:1.4;color:#c5b6c8;overflow-wrap:anywhere}
+#neo-home .neo-metro-badge[data-line="1"],#neo-home .neo-metro-chip[data-line="1"]{background:#e987b8;color:#21172c}
+#neo-home .neo-metro-badge[data-line="2"],#neo-home .neo-metro-chip[data-line="2"]{background:#166ac1}
+#neo-home .neo-metro-badge[data-line="3"],#neo-home .neo-metro-chip[data-line="3"]{background:#a49a28;color:#111}
+#neo-home .neo-metro-badge[data-line="4"],#neo-home .neo-metro-chip[data-line="4"]{background:#44c0bf;color:#10202a}
+#neo-home .neo-metro-badge[data-line="5"],#neo-home .neo-metro-chip[data-line="5"]{background:#e6c929;color:#242019}
+#neo-home .neo-metro-badge[data-line="6"],#neo-home .neo-metro-chip[data-line="6"]{background:#e53c51}
+#neo-home .neo-metro-badge[data-line="7"],#neo-home .neo-metro-chip[data-line="7"]{background:#e9822a;color:#161b23}
+#neo-home .neo-metro-badge[data-line="8"],#neo-home .neo-metro-chip[data-line="8"]{background:#218f60}
+#neo-home .neo-metro-badge[data-line="9"],#neo-home .neo-metro-chip[data-line="9"]{background:#8d5943}
+#neo-home .neo-metro-badge[data-line="12"],#neo-home .neo-metro-chip[data-line="12"]{background:#c9af60;color:#28231b}
+#neo-home .neo-metro-badge[data-line="A"],#neo-home .neo-metro-chip[data-line="A"]{background:#9850bc}
+#neo-home .neo-metro-badge[data-line="B"],#neo-home .neo-metro-chip[data-line="B"]{background:#77a69b;color:#1a2425}
+#neo-home .neo-metro-empty{font-size:12px;line-height:1.45;color:#d6c8d7;margin:0;padding:5px 2px}
+#neo-home .neo-metro-more{font-size:11px;color:#e7b8d0;margin:0;padding:4px 2px}
+#neo-home .neo-metro-unverified{border:1px solid #434a59;border-radius:9px;padding:9px;background:#151d2a}
+#neo-home .neo-metro-unverified[hidden]{display:none!important}
+#neo-home .neo-metro-unverified-title{display:block;margin-bottom:9px;font-size:12px;color:#dfd3e1}
+#neo-home .neo-metro-chips{display:flex;flex-wrap:wrap;gap:6px}
+#neo-home .neo-metro-chip{text-decoration:none;min-width:34px}
+#neo-home .neo-metro-chip:hover{outline:2px solid white;outline-offset:2px}
+#neo-home .neo-metro-actions{display:flex;flex-direction:column;gap:7px;margin-top:auto}
+#neo-home .neo-metro-actions a{display:block;text-align:center;background:#f13093;color:#fff;border:1px solid #ff85bd;text-decoration:none;border-radius:8px;padding:11px 9px;font-size:12px;font-weight:800}
+#neo-home .neo-metro-actions a+a{background:#202a39;border-color:#48556b}
+#neo-home .neo-metro-note{font-size:10px;line-height:1.5;color:#c8b8c9;margin:0}
+@media(min-width:1250px){
+ #neo-home .neo-dashboard{
+  grid-template-columns:minmax(0,1.85fr) minmax(300px,.88fr) minmax(320px,1fr)!important;
+  grid-template-areas:"hero sidebar metro" "latest latest community" "links links community" "borough borough borough"!important;
+  gap:14px!important;align-items:start!important;
+ }
+ #neo-home .neo-hero{grid-area:hero!important;height:clamp(530px,51vw,720px)!important}
+ #neo-home .neo-right-column{grid-area:sidebar!important;display:flex!important;flex-direction:column!important;gap:14px;min-width:0}
+ #neo-home .neo-right-column>.hnc-card{grid-area:auto!important;width:100%!important;min-width:300px!important;height:auto!important;flex:none}
+ #neo-home .neo-right-column>.neo-map{grid-area:auto!important;width:100%!important;min-width:0;height:285px!important;display:flex;flex-direction:column}
+ #neo-home .neo-right-column>.neo-map .neo-map-area{flex:1;height:auto!important;min-height:190px}
+ #neo-home .neo-metro-card{grid-area:metro!important;min-height:0!important;height:auto!important}
+ #neo-home .neo-latest{grid-area:latest!important}
+ #neo-home .neo-news-grid{grid-template-columns:repeat(4,minmax(0,1fr))!important}
+ #neo-home .neo-links{grid-area:links!important;grid-template-columns:repeat(8,minmax(0,1fr))!important}
+ #neo-home .neo-community{grid-area:community!important}
+ #neo-home .neo-boroughs{grid-area:borough!important}
+}
+@media(min-width:721px) and (max-width:1249px){
+ #neo-home .neo-dashboard{display:grid!important;grid-template-columns:minmax(0,1fr) minmax(330px,1fr)!important;grid-template-areas:"hero hero" "sidebar metro" "latest latest" "community community" "links links" "borough borough"!important;gap:14px!important}
+ #neo-home .neo-hero{grid-area:hero!important;height:440px!important}
+ #neo-home .neo-right-column{grid-area:sidebar!important;display:flex!important;flex-direction:column!important;min-width:0}
+ #neo-home .neo-right-column>.hnc-card{min-width:0!important;width:100%!important;grid-area:auto!important}
+ #neo-home .neo-right-column>.neo-map{width:100%!important;height:285px!important;grid-area:auto!important}
+ #neo-home .neo-metro-card{grid-area:metro!important;min-height:0!important}
+ #neo-home .neo-latest{grid-area:latest!important}
+ #neo-home .neo-community{grid-area:community!important}
+ #neo-home .neo-links{grid-area:links!important;grid-template-columns:repeat(4,minmax(0,1fr))!important}
+ #neo-home .neo-boroughs{grid-area:borough!important}
+}
+@media(max-width:720px){
+ #neo-home .neo-dashboard{display:flex!important;flex-direction:column!important}
+ #neo-home .neo-dashboard>.neo-hero{order:1!important}
+ #neo-home .neo-right-column{display:contents!important}
+ #neo-home .hnc-card{order:2!important;width:100%!important;min-width:0!important}
+ #neo-home .neo-metro-card{order:3!important;width:100%!important}
+ #neo-home .neo-latest{order:4!important}
+ #neo-home .neo-map{order:5!important}
+ #neo-home .neo-community{order:6!important}
+ #neo-home .neo-links{order:7!important}
+ #neo-home .neo-boroughs{order:8!important}
+ #neo-home .neo-metro-photo{height:145px}
+ #neo-home .neo-metro-head h2{font-size:19px}
+ #neo-home .neo-metro-group h3{font-size:14px}
+}
+@media(max-width:390px){
+ #neo-home .neo-metro-card{padding:11px}
+ #neo-home .neo-metro-photo{height:125px}
+ #neo-home .neo-news-grid{grid-template-columns:1fr!important}
+ #neo-home .neo-links{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+}
