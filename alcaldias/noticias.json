@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-30 15:24 UTC",
+  "updated": "2026-10-30 15:25 UTC",
   "boroughs": [
     {
       "name": "La Magdalena Contreras",
@@ -1079,8 +1079,38 @@
     },
     {
       "name": "Azcapotzalco",
-      "count": 75,
+      "count": 76,
       "articles": [
+        {
+          "title": "Matan a balazos a un hombre en calles de Azcapotzalco",
+          "description": "La información publicada por El Universal trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNazRhVUlOazFTcWlVNkZYY3Y0MFpLSHUtRERMYmNqR09MLUJtN1hocFBLSXJXdFhBcFYwX0dOWFNhUERjajBhM19CN3lZZGxTQzhmbmJLN0ZjcDA4Ym84TldBZXZQR25ycmFzWHdCaHB4X2g5RlR4TnB2Wk5JUVVleWF2TU5jR0Ryd3ZGazJSZHdRUldnTkd3R2g2VzBlZ182eWVicmFKNE5CNkt4Qm1XTFFhSmhaMFZ4NkHSAc4BQVVfeXFMTU5SclhQdU1Gd1h2d3FuM204a0owRGxOUGpTaWNaWWZseThqdWpEbTBMRWY1RkFTd1dBaWw5cE9rNEhndjJSY1JjX2h5LTQ3b2F5amxMLWdyeUxxV0JtVExZWkVRcnNvZXUxMEdVVjgtQU9SY1BWcy1td2lySlZBcG5Ma0dYOWhzemNpWGMtWUtkR1VTdUl6dGRLRFhraUcyWF96QzhJdEw5X0E5TmpuVDQwejR3cGdMcDZJeTBfcVpadnJuRThUUWZENlNiZ1E?oc=5",
+          "source": "El Universal",
+          "date": "2026-10-30",
+          "published_at": "2026-10-30T15:16:25Z",
+          "category": "CDMX",
+          "borough": "Azcapotzalco",
+          "location": "Azcapotzalco (mencionada en el titular)",
+          "local_url": "/noticias/?id=6068de1ebc21485dd49b&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por El Universal trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_azcapotzalco",
+            "kind": "representativa",
+            "url": "/assets/alcaldias/azcapotzalco.jpg",
+            "category": "CDMX",
+            "borough": "Azcapotzalco",
+            "topic": "Parroquia de Santa Catarina, Azcapotzalco",
+            "author": "Ivan alcantara",
+            "license": "CC BY-SA 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:PARROQUIA_DE_SANTA_CATARINA_%28AZCAPOTZALCO%29.jpg"
+          }
+        },
         {
           "title": "Clima en Azcapotzalco este viernes 30 de octubre: un día templado con nubes dispersas",
           "description": "El pronóstico recogido por El Heraldo de México se refiere a condiciones meteorológicas en Azcapotzalco. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
@@ -1580,24 +1610,6 @@
           "local_url": "/noticias/?id=8ce9efa86df5ab81d9a5&mes=2026-10",
           "brief": {
             "lead": "La información publicada por Telediario trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
-        },
-        {
-          "title": "Azcapotzalco pondrá a bailar a la CDMX con más de 50 sonidos - La Prensa",
-          "description": "La información publicada por El Sol de México trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOMGxMNG9XakNOVTNTN0o2cXVaOEl0Sk1SbmpsTlFKc0F1LWhHVXNZMlNDMUJkb1dTT09lWnVDcy03azNxbnZoaHZkRHR2VEhWVmlCOE1aNTFWOUlBRlpDaDdkYk0xQXdiV3RSVndxVUJiR0FyQ3VCRlNrbEstUEMtT1RsSDY2b3lhbDV2RlBPdlBrVHAxQ0JGSjZjTFdadmdueWVyUERJb2JmU1p2?oc=5",
-          "source": "El Sol de México",
-          "date": "2026-10-23",
-          "published_at": "2026-10-23T16:30:07Z",
-          "category": "CDMX",
-          "borough": "Azcapotzalco",
-          "location": "Azcapotzalco (mencionada en el titular)",
-          "local_url": "/noticias/?id=7ceaddcd479db2946ec5&mes=2026-10",
-          "brief": {
-            "lead": "La información publicada por El Sol de México trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
@@ -7193,7 +7205,7 @@
     },
     {
       "name": "Tlalpan",
-      "count": 140,
+      "count": 141,
       "articles": [
         {
           "title": "Tlalpan registra la mayor reducción anual en percepción de inseguridad entre alcaldías de CDMX",
@@ -7490,6 +7502,24 @@
           }
         },
         {
+          "title": "Hallan cuerpo calcinado junto a cancha de futbol en Tlalpan, CDMX",
+          "description": "La información publicada por Proyecto Puente trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNdGhGYmZHNlBUNGszbUhGdjlTak1zZ201d2poWEtqUy00bmVhUGw3dmZsSFVjQnBrSUFoLTQ4YzZQOEtJYW9faFgwU1FnYjdEaFNiZy1PbXZJeUFiV0J4ZE43eEljM0JXMG1tWWhVZHh3UHdicGRqUE50REVkaWhGaU1KSWZZWmwzQUZpQ0hoVERqZTVYaXhNUjJDa2ZndjVCODRhRi1MRlBVdw?oc=5",
+          "source": "Proyecto Puente",
+          "date": "2026-10-27",
+          "published_at": "2026-10-28T02:08:58Z",
+          "category": "CDMX",
+          "borough": "Tlalpan",
+          "location": "Tlalpan (mencionada en el titular)",
+          "local_url": "/noticias/?id=2ce1d669c5e144f57bda&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por Proyecto Puente trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          }
+        },
+        {
           "title": "Hallan cuerpo calcinado frente a cancha de fútbol en Tlalpan, CdMx",
           "description": "La información publicada por Milenio trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
           "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNdTBmcS1SZ3FBcllZdnFZNkI4TUt4U2UzbGFpRkk5d0lSOXVOaGc0dzdIRXdYSDdGN0JtMnNVSFk0YVc5RDZmeW1MQV9YejNlS3FzSG9oMnFUMHZnd0dIdzBtbU9odXEtUlFJWDB4RjBPdVo4b2drZF9xdmttQThxRWs5SWZ5OUxTbTc5a1NlUVVjWWlhTjhiN0NjY083QdIBngFBVV95cUxNTVFvTzZwWmdRbGp6OU12a0dNVTRNdmR3cjZQWmdfM3hjR01YUHhRV2RKSWZWVjV5bnZhWENXMEQxS01KUmpEOFFYNlJZVnowN3NoUExiSlZXUEs3VG9DQ0oxUUc0cWxkdGRlVk8wdlg0NThvTXR3UmFYd3hwVV94dHhGY00wUG8xSk9wTWQwWTNUU19QUm9jdGQ1Y051dw?oc=5",
@@ -7694,34 +7724,6 @@
           "local_url": "/noticias/?id=34de485193d846ec6fa2&mes=2026-10",
           "brief": {
             "lead": "La información publicada por El Universal trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "alcaldia_tlalpan",
-            "url": "/assets/alcaldias/tlalpan.jpg",
-            "category": "CDMX",
-            "borough": "Tlalpan",
-            "topic": "Quiosco de la plaza principal de Tlalpan",
-            "author": "farid estrada",
-            "license": "CC BY-SA 3.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Kiosko_plaza_de_la_constitucion%2C_tlapan.JPG"
-          }
-        },
-        {
-          "title": "Se desploma percepción de inseguridad en Tlalpan; registra la mayor baja en la CDMX con 13.7 puntos menos: INEGI",
-          "description": "La información publicada por Excélsior trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQbnM5T1IzVDloSFgxcWIzdEE3WE1ZSjdGR2UyVTFJME0xTjNNd25Pa3REWW5FQnlnaWVvX2h4Z2I1ZmdBY3lpTXJJX3VHZ3I0b3M1LWJFdmtSbklrYW9UdF9zcl9xT1llcVo1d05xZmtNaDNOS084N01wS2w5N1pZamFYdERtWkpaTmp4ZEx4OF9NQ3RxbW9aTVB5Qy1CRDRZUXFpcjFGLU1oVXRBTDFGbFFUdTNrSlBCMC04U2c3U0hnWkJ3NXRPb2k1R0hTd9IB0wFBVV95cUxObEZSSDk5RHA3VXlkQzdTTDl1WDFEQ1AySFJ6djMtcC1GSHdYY1NZQ3RWU0pSRVYzcEhOMUhUdll5dVFnMWkyNG5MVkhablVFczNqdEl2MmpxaGdZX3pSbDV6R1pQaElXaWoybjdidW0wRE5ac2xscEhxanpJTzMxOFRzVTRNOFBfSzh3TEtjV0x1N2x3RVM2MFV1cFR1dWNFN1JoZUlMTlJHNkYyeUp4MjU3TUNrQ0REazlnTnNaQ20zb2tXMGNVc09KT0E3dUo0aTJB?oc=5",
-          "source": "Excélsior",
-          "date": "2026-10-26",
-          "published_at": "2026-10-26T20:47:28Z",
-          "category": "CDMX",
-          "borough": "Tlalpan",
-          "location": "Tlalpan (mencionada en el titular)",
-          "local_url": "/noticias/?id=d341ad40f804c2c8d376&mes=2026-10",
-          "brief": {
-            "lead": "La información publicada por Excélsior trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
