@@ -64,6 +64,12 @@ def main():
     xml = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
     xml += "".join("  <url><loc>" + esc(u) + "</loc></url>\n" for u in sorted(set(urls)))
     SITEMAP.write_text(xml + "</urlset>\n", encoding="utf-8")
+    # Advertise the article sitemap only after its XML has been generated.
+    robots = ROOT / "robots.txt"
+    robots_text = robots.read_text(encoding="utf-8")
+    article_sitemap = "Sitemap: " + BASE + "/sitemap-articulos.xml"
+    if article_sitemap not in robots_text:
+        robots.write_text(robots_text.rstrip() + "\\n" + article_sitemap + "\\n", encoding="utf-8")
     print(f"Generated {len(urls)} article pages and sitemap-articulos.xml")
 
 if __name__ == "__main__":
