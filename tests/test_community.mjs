@@ -66,9 +66,9 @@ test('se prohíben escrituras no autorizadas y se respetan autores',()=>{
  assert.match(rules,/allow read, write: if false/);
 });
 test('páginas cargan el script de comentarios y la hoja de estilo vigentes',()=>{
- const communityScript=html.match(/\/assets\/comments\.js\?v=([\\w-]+)/);
- const newsScript=news.match(/\/assets\/comments\.js\?v=([\\w-]+)/);
+ const communityScript=html.match(/\/assets\/comments\.js\?v=([A-Za-z0-9_-]+)/);
+ const newsScript=news.match(/\/assets\/comments\.js\?v=([A-Za-z0-9_-]+)/);
  assert.ok(communityScript,'La comunidad debe cargar comments.js');
  assert.ok(newsScript,'Noticias debe cargar comments.js');
- assert.match(html,/\/assets\/comments-seguridad-20261028\.css\?v=[\\w-]+/);
+ assert.match(html,/\/assets\/comments-seguridad-20261028\.css\?v=[A-Za-z0-9_-]+/);
 });
