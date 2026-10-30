@@ -335,3 +335,21 @@ body.neo-site-inner .neo-inner-dock a{min-height:45px}
   pointer-events:none;font-size:23px;
  }
 }
+
+
+/* 2026-10-30 · Lienzo consistente con portada: evita encogimiento entre apartados. */
+@view-transition{navigation:none}
+html{scrollbar-gutter:stable}
+body.neo-site-inner>header.neo-global-header,
+body.neo-site-inner>main,
+body.neo-site-inner>footer{
+ box-sizing:border-box!important;width:100%!important;max-width:1800px!important;
+ margin-left:auto!important;margin-right:auto!important;
+}
+body.neo-site-inner>header.neo-global-header{border-radius:0!important;margin-top:0!important}
+body.neo-site-inner>main{min-width:0!important}
+@media(max-width:720px){
+ body.neo-site-inner>header.neo-global-header,
+ body.neo-site-inner>main,
+ body.neo-site-inner>footer{width:100%!important;max-width:100%!important}
+}
