@@ -33,8 +33,16 @@
    (u.hostname==='news.google.com'||u.hostname==='commons.wikimedia.org');}
   catch{return false;}
  }
+ function selectedPhoto(x){
+  const api=window.CDMX_FOTOS;
+  if(api?.ready&&typeof api.forArticle==='function'){
+   const id=api.forArticle(x),item=api.images?.[id];
+   if(item&&item.author&&item.license&&item.source&&item.url)return item;
+  }
+  return x.photo||null;
+ }
  function photo(x,small=false){
-  const info=x.photo;
+  const info=selectedPhoto(x);
   if(!info||!info.url||!/^\/assets\/(?:fotos|alcaldias)\/[a-z0-9_-]+\.jpg$/.test(info.url)&&
     !/^https:\/\/(?:thumb|upload)\.wikimedia\.org\/wikipedia\/commons\//.test(info.url))return null;
   const img=elem('img');
@@ -93,7 +101,9 @@
   }
   body.append(section);
  }
+ let activeArticle=null;
  function renderArticle(article,items,updated){
+  activeArticle={article,items,updated};
   title.textContent=article.title;
   breadcrumb.textContent=article.category||'Noticia local';
   document.title=article.title.slice(0,65)+' | CDMX AL MEMENTO';
@@ -126,13 +136,19 @@
    picture.src=img.src;picture.alt=img.alt;picture.hidden=false;figure.hidden=false;
    picture.onerror=()=>{figure.hidden=true;};
    caption.replaceChildren();
-   caption.append(document.createTextNode('Fotografía real de contexto: '+(article.photo.topic||'CDMX')+
-    ' · © '+(article.photo.author||'Autor indicado en Wikimedia Commons')+
-    ' · '+(article.photo.license||'Licencia en la fuente')+' · '));
-   if(safeExternal(article.photo.source)){
-    const origin=elem('a','','Fotografía y licencia en Wikimedia Commons ↗');
-    origin.href=article.photo.source;origin.target='_blank';origin.rel='noopener noreferrer';
+   const rights=selectedPhoto(article)||{};
+   caption.append(document.createTextNode('Fotografía de archivo: '+(rights.topic||'CDMX')+
+    ' · Autor: '+(rights.author||'Fuente original')+
+    ' · '+(rights.license||'Licencia en la fuente')+
+    ' · No corresponde necesariamente al suceso. '));
+   if(safeExternal(rights.source)){
+    const origin=elem('a','','Obra y autor ↗');
+    origin.href=rights.source;origin.target='_blank';origin.rel='noopener noreferrer';
     caption.append(origin);
+   }
+   if(/^https?:\/\/creativecommons\.org\//.test(rights.licenseUrl||'')){
+    const l=elem('a','',' · Licencia y condiciones ↗');l.href=rights.licenseUrl;
+    l.target='_blank';l.rel='noopener noreferrer';caption.append(l);
    }
   }else if(figure)figure.hidden=true;
   more?.replaceChildren();
@@ -141,6 +157,7 @@
    more?.append(storyCard(other));
   }
  }
+ document.addEventListener('cdmx-fotos-ready',()=>{if(activeArticle)renderArticle(activeArticle.article,activeArticle.items,activeArticle.updated)});
  const requested=/^[a-f0-9]{20}$/.test(id)&&/^\d{4}-\d{2}$/.test(month);
  const monthURL=requested?'/archivo/'+month+'.json':null;
  async function readJSON(path){
