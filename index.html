@@ -293,6 +293,52 @@ html.neo-active #contenido{width:min(100%,1800px);max-width:1800px;margin:0 auto
  #neo-home .neo-dock a{min-width:0}
 }
 @media(prefers-reduced-motion:reduce){#neo-home *,#neo-home *:before,#neo-home *:after{animation:none!important;transition:none!important}}
+</style>
+<style id="maqueta-final-3-paneles-20261030">
+/* Nueva composición editorial 3 paneles, reemplaza distribución anterior. */
+@media(min-width:1250px){
+ #neo-home .neo-dashboard{display:grid!important;grid-template-columns:minmax(0,1.65fr) minmax(245px,.73fr) minmax(245px,.73fr)!important;grid-template-areas:"hero map hnc" "latest latest community" "links links community" "borough borough borough"!important;align-items:start;gap:16px}
+ #neo-home .neo-right-column{display:contents!important}
+ #neo-home .neo-right-column>.neo-map{grid-area:map!important;height:490px!important;display:flex;flex-direction:column;min-width:0}
+ #neo-home .neo-right-column>.neo-map .neo-map-area{flex:1;min-height:0;height:auto!important}
+ #neo-home .neo-right-column>.hnc-card{grid-area:hnc!important;min-width:0;max-height:none}
+ #neo-home .neo-hero{height:490px!important}
+ #neo-home .neo-latest{grid-area:latest!important}
+ #neo-home .neo-news-grid{grid-template-columns:repeat(4,minmax(0,1fr))!important}
+ #neo-home .neo-thumb{height:clamp(125px,11vw,180px)!important}
+ #neo-home .neo-community{grid-area:community!important}
+ #neo-home .neo-links{grid-area:links!important;grid-template-columns:repeat(8,minmax(0,1fr))!important}
+ #neo-home .neo-boroughs{grid-area:borough!important}
+ #neo-home .neo-brand-name{font-size:clamp(27px,2.9vw,46px)}
+ #neo-home .neo-brand-mark{width:85px;height:78px}
+ #neo-home .neo-head-top{min-height:110px}
+}
+@media(min-width:721px) and (max-width:1249px){
+ #neo-home .neo-dashboard{display:grid!important;grid-template-columns:minmax(0,1fr)!important;grid-template-areas:"hero" "sidebar" "latest" "community" "links" "borough"!important}
+ #neo-home .neo-right-column{grid-area:sidebar!important;display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:14px}
+ #neo-home .neo-right-column>.neo-map,#neo-home .neo-right-column>.hnc-card{grid-area:auto!important;width:100%;height:auto!important}
+ #neo-home .neo-news-grid{grid-template-columns:repeat(3,minmax(0,1fr))!important}
+ #neo-home .neo-links{grid-template-columns:repeat(4,minmax(0,1fr))!important}
+}
+@media(max-width:720px){
+ #neo-home .neo-dashboard{display:flex!important;flex-direction:column!important}
+ #neo-home .neo-right-column{display:contents!important}
+ #neo-home .neo-hero{order:1}
+ #neo-home .hnc-card{order:2}
+ #neo-home .neo-latest{order:3}
+ #neo-home .neo-map{order:4}
+ #neo-home .neo-community{order:5}
+ #neo-home .neo-links{order:6}
+ #neo-home .neo-boroughs{order:7}
+ #neo-home .neo-news-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+ #neo-home .neo-links{grid-template-columns:repeat(4,minmax(0,1fr))!important}
+ #neo-home .neo-map{height:auto!important}
+ #neo-home .neo-map .neo-map-area{height:210px!important}
+}
+@media(max-width:390px){
+ #neo-home .neo-news-grid{grid-template-columns:1fr!important}
+ #neo-home .neo-links{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+}
 </style></head>
 <body><a class="skip" href="#contenido">Saltar al contenido</a>
 <div id="weather-ribbon" class="weather-ribbon" role="region" aria-label="Tira de pronóstico meteorológico para la CDMX">
