@@ -594,3 +594,19 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid #ffb1
 @media(prefers-reduced-motion:reduce){
  ::view-transition-old(root),::view-transition-new(root){animation:none!important}
 }
+
+/* Identidad editorial compartida por las secciones del periódico · 2026-10-29 */
+:root{--rosa:#ed318d;--rosa-light:#ffa6d3;--bg:#090e19;--card:#101827;--txt:#f9f7fb;--muted:#c4bdca;--border:#394052}
+body{background:#090e19;color:#f9f7fb}
+body>header{background:#090e19f5;border-bottom:1px solid #ed318d;box-shadow:0 6px 25px #03071044}
+body>header .logo{font-weight:950;letter-spacing:-1.4px}
+body>header .logo span{color:#f23d98}
+body>header nav a{font-weight:700}
+body>header nav a:hover{color:#ff87c0}
+main.wrap{max-width:1510px;width:min(96%,1510px)}
+body :is(.card,.panel,.portal-card,.citizen-panel,.community-hero,.portal-hero,.citizen-card){border-radius:16px;border-color:#394052;background-color:#101827}
+body :is(.card,.panel,.portal-card,.citizen-panel) :is(h2,h3){color:#fff7fc}
+body :is(.eyebrow,.badge){color:#ff7cba}
+body :is(.btn,.portal-btn){border-radius:9px}
+body :is(input,textarea,select){border-color:#5e4a65;background:#151b29;color:#fff}
+@media(max-width:650px){main.wrap{width:100%;padding-left:13px;padding-right:13px}body>header .wrap{padding-left:13px;padding-right:13px}}
