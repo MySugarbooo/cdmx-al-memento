@@ -16,6 +16,19 @@ const escapeDate=d=>{const date=new Date(d);return Number.isFinite(date.getTime(
 const articleLink=a=>typeof a.local_url==='string'&&/^\/noticias\/\?/.test(a.local_url)?a.local_url:'/noticias/';
 const safePhotoUrl=u=>/^\/assets\/fotos\/[a-zA-Z0-9_-]+\.jpe?g$/.test(String(u||''))||/^https:\/\/(?:upload|thumb)\.wikimedia\.org\/wikipedia\/commons\//.test(String(u||''));
 const photoInfo=a=>{const api=window.CDMX_FOTOS;if(!api?.ready||typeof api.forArticle!=='function')return null;const id=api.forArticle(a);return api.images?.[id]||null};
+const sizedPhotoUrl=(url,width)=>{
+ if(!/^https:\/\/thumb\.wikimedia\.org\/wikipedia\/commons\/thumb\//.test(url))return url;
+ return url.replace(/\/(\d+)px-([^/?]+)(\?.*)?$/,(_full,current,file,query)=>Number(current)>width?'/'+width+'px-'+file+(query||''):_full);
+};
+const loadPhoto=(img,url,width)=>{
+ const optimized=sizedPhotoUrl(url,width);
+ img.onerror=()=>{
+  const failed=img.getAttribute('src');
+  img.onerror=()=>{img.onerror=null;img.src=photoFallback.CDMX};
+  img.src=failed===optimized&&optimized!==url?url:photoFallback.CDMX;
+ };
+ if(img.getAttribute('src')!==optimized)img.src=optimized;
+};
 const photoUrl=a=>{
  const p=photoInfo(a);
  if(p&&safePhotoUrl(p.url))return p.url;
@@ -88,7 +101,7 @@ function initStatic(){
 }
 function renderHero(){
  const a=state.stories[state.current];if(!a)return;
- const img=shell.querySelector('#neo-hero-img');const nextPhoto=photoUrl(a);if(img.getAttribute('src')!==nextPhoto)img.src=nextPhoto;img.fetchPriority='high';img.alt='Imagen de carácter ilustrativo y referencial sobre '+(a.category||'CDMX')+'. No constituye evidencia del hecho';img.onerror=()=>{img.onerror=null;img.src=photoFallback.CDMX};
+ const img=shell.querySelector('#neo-hero-img');img.fetchPriority='high';img.alt='Imagen de carácter ilustrativo y referencial sobre '+(a.category||'CDMX')+'. No constituye evidencia del hecho';loadPhoto(img,photoUrl(a),720);
  const title=shell.querySelector('#neo-hero-title');title.textContent=a.title;title.href=articleLink(a);
  shell.querySelector('#neo-hero-description').textContent=String(a.description||a.brief?.lead||'Consulta la nota y su fuente original para conocer más detalles.').slice(0,260);
  shell.querySelector('#neo-hero-category').textContent='⌖ '+(a.borough||a.category||'CDMX');
@@ -108,7 +121,7 @@ function renderNews(){
  for(const a of matched.slice(0,state.visible)){
   const card=el('article','neo-news-card');
   const thumb=el('a','neo-thumb');thumb.href=articleLink(a);
-  const img=el('img');img.src=photoUrl(a);img.alt='Imagen ilustrativa y referencial sobre '+(a.category||'CDMX')+'. No documenta los hechos descritos';img.loading='lazy';img.decoding='async';img.onerror=()=>{img.onerror=null;img.src=photoFallback.CDMX};
+  const img=el('img');img.loading='lazy';img.decoding='async';img.alt='Imagen ilustrativa y referencial sobre '+(a.category||'CDMX')+'. No documenta los hechos descritos';loadPhoto(img,photoUrl(a),480);
   const category=el('span','neo-category',a.category||'CDMX');thumb.append(img,category);
   const h=el('h3');const link=el('a','',a.title);link.href=articleLink(a);h.append(link);
   const meta=el('div','neo-card-meta',escapeDate(a.published_at||a.date)+' · '+(a.borough||a.source||'CDMX'));
@@ -127,6 +140,15 @@ function mirrorVisits(){
  const target=shell.querySelector('#neo-visitors');const origin=document.getElementById('header-visitors-number');
  const update=()=>{const n=origin?.textContent?.trim()||'—';target.textContent=n==='—'?'Visitas: consultando…':'Visitas: '+n};
  update();if(origin)new MutationObserver(update).observe(origin,{subtree:true,childList:true,characterData:true});
+}
+function scheduleCommunityPreview(){
+ const node=shell.querySelector('#neo-community-posts');
+ if(!node)return;
+ if(!('IntersectionObserver' in window)){communityPreview();return}
+ const observer=new IntersectionObserver(entries=>{
+  if(entries.some(entry=>entry.isIntersecting)){observer.disconnect();communityPreview()}
+ },{rootMargin:'400px 0px'});
+ observer.observe(node);
 }
 async function communityPreview(){
  const out=shell.querySelector('#neo-community-posts');
@@ -218,7 +240,7 @@ function start(){
   }
   mirrorVisits();
   // La comunidad se carga aparte; sus errores nunca cambian la portada.
-  communityPreview();
+  scheduleCommunityPreview();
  }catch(err){
   console.error('Error al inicializar los widgets de portada:',err);
   // El HTML estático conserva la interfaz nueva aunque falle cualquier widget.
