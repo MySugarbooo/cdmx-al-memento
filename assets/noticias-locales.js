@@ -57,7 +57,9 @@
   container.append(h,p);
  }
  function storyCard(x){
-  const card=elem('a','explore-card');card.href=x.local_url;
+  const card=elem('a','explore-card');
+  const match=/^\/noticias\/\?id=([a-f0-9]{20})&mes=\d{4}-\d{2}$/.exec(x.local_url||'');
+  card.href=match?'/articulos/'+match[1]+'/':x.local_url;
   const image=photo(x,true);if(image)card.append(image);
   const text=elem('span','explore-card-body');
   text.append(elem('span','explore-tag',x.category||'CDMX'),
