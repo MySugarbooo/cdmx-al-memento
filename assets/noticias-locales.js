@@ -56,10 +56,13 @@
   img.src=info.url;img.loading=small?'lazy':'eager';img.decoding='async';
   img.width=small?480:1200;img.height=small?300:750;
   img.alt=info.kind==='hecho'&&info.verified===true?'Fotografía verificada del acontecimiento: '+(info.topic||x.title):'Imagen representativa: '+(info.topic||'Ciudad de México')+'. No constituye evidencia del acontecimiento.';
+  let retried=false;
   img.addEventListener('error',()=>{
+   if(retried){img.hidden=true;return}
+   retried=true;
    const alternate=info.kind==='hecho'?representativePhoto(x):null;
    if(alternate&&alternate.url&&alternate.url!==info.url){
-    img.onerror=()=>{img.hidden=true};img.src=alternate.url;
+    img.src=alternate.url;
     img.alt='Imagen representativa; no corresponde necesariamente al hecho descrito.';
    }else img.hidden=true;
   });
