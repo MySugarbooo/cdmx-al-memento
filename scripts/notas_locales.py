@@ -12,6 +12,7 @@ import hashlib
 import html
 import json
 import re
+import unicodedata
 from datetime import datetime
 from pathlib import Path
 from urllib.parse import urlparse
@@ -20,6 +21,7 @@ ROOT=Path(__file__).resolve().parents[1]
 BOROUGH_PHOTOS=ROOT/"assets/alcaldias/fotos.json"
 ARCHIVE_PHOTOS=ROOT/"assets/fotos/catalogo.json"
 RECENT_PHOTOS=ROOT/"assets/fotos/recientes.json"
+NEWS_PHOTOS=ROOT/"assets/fotos/indice-noticias-1100.json"
 VERIFIED_EVENTS=ROOT/"assets/fotos/hechos-verificados.json"
 
 TAGS={
@@ -255,6 +257,31 @@ def _pool():
     recent=_load(RECENT_PHOTOS,"photos")
     borough=_load(BOROUGH_PHOTOS,"photos")
     photos=[]
+    # La fototeca ampliada incluye 1,100 fotos con descriptores y créditos.
+    # Buscar por tema es más preciso que asignar la primera imagen de una categoría.
+    for item in _load(NEWS_PHOTOS,"photos"):
+        if not isinstance(item,dict):
+            continue
+        photo_id=str(item.get("id") or "")
+        url=str(item.get("url") or "")
+        source=str(item.get("source") or "")
+        if not re.fullmatch(r"[a-z0-9_]+",photo_id):
+            continue
+        if not (re.fullmatch(r"/assets/fotos/[a-z0-9_-]+\.jpg",url) or
+                re.match(r"https://(?:upload|thumb)\.wikimedia\.org/wikipedia/commons/",url)):
+            continue
+        if not (source.startswith("https://commons.wikimedia.org/wiki/File:")
+                and item.get("author") and item.get("license")
+                and str(item.get("licenseUrl") or "").startswith("https://creativecommons.org/")):
+            continue
+        keywords=item.get("keywords")
+        photos.append(dict(
+            id=photo_id,kind="representativa",url=url,
+            category=item.get("category","CDMX"),borough="",
+            topic=str(item.get("topic") or "")[:150],
+            keywords=[str(word)[:100] for word in keywords[:8]] if isinstance(keywords,list) else [],
+            author=item["author"],license=item["license"],
+            licenseUrl=item["licenseUrl"],source=source))
     # Excluye piezas con lugar no identificado, fuera de CDMX o duplicados.
     unsuitable=re.compile(r"louisville|kentucky|zacatecas|chihuahua|san francisco|"
                           r"california|el paso street|paleando nieve|old new city|"
@@ -298,47 +325,144 @@ def _pool():
     return list(unique.values())
 
 
+# No se usan fotografías de accidentes, manifestaciones particulares o
+# emergencias anteriores como si ilustraran un nuevo hecho similar.
+SENSITIVE_CONTEXT = re.compile(
+    r"\b(?:incidente|colapso|accidente|siniestro|victimas|fallecidos|"
+    r"marcha del orgullo|8 de marzo|manifestacion por|homenaje a)\b"
+)
+
+# Se inferiere el tema del titular antes de recurrir a la categoría RSS.
+# En el feed general muchas noticias de Metro, clima o cultura figuran como CDMX.
+SUBJECT_RULES = (
+    (r"\b(?:metrobus|cablebus|trolebus|ecobici|ciclovia)\b", "Movilidad"),
+    (r"\b(?:metro|linea \d{1,2}|linea [ab]|tren ligero)\b", "Metro"),
+    (r"\b(?:perro|perrito|mascota|gato|animal|fauna|veterinari)\w*\b", "Medio Ambiente"),
+    (r"\b(?:lluvia|tormenta|clima|inundacion|contaminacion|arbol|bosque)\w*\b", "Medio Ambiente"),
+    (r"\b(?:hospital|clinica|drenaje|bache|basura|abasto|mercado|agua potable)\w*\b", "Servicios"),
+    (r"\b(?:catrina|dia de muertos|cempasuchil|concierto|desfile|museo|"
+     r"festival|exposicion|teatro|cultura)\w*\b", "Cultura"),
+    (r"\b(?:marcha|bloqueo|trafico|carretera|movilidad|vialidad|"
+     r"gran premio|formula 1|autodromo|circuito|automovili)\w*\b", "Movilidad"),
+    (r"\b(?:policia|patrulla|fiscalia|robo|homicidio|detenid|"
+     r"asalto|extorsion|delito|investigacion)\w*\b", "Seguridad"),
+    (r"\b(?:alcalde|gobierno|congreso|presupuesto|secretaria)\w*\b", "Gobierno"),
+)
+STOP_WORDS = {
+    "ciudad","mexico","cdmx","noticia","noticias","hoy","ayer","mañana",
+    "este","esta","estos","estas","para","sobre","entre","ante","desde",
+    "tras","segun","este","viernes","sabado","domingo","lunes","martes",
+    "miercoles","jueves","octubre","noviembre","2026","2025","del","las",
+    "los","una","uno","unos","unas","que","con","por","cuando","como",
+    "cual","sera","seran","tiene","habra","hace","deja","al","la","el",
+    "son","sus","todo","tambien","reportan","reporta","informa","nuevo",
+    "nueva","capital","mexicana","mexicano","zona","calle","calles",
+}
+RELATED_WORDS = (
+    (r"\b(?:perro|perrito|mascota|gato|animal|fauna)\w*\b",
+     ("animal", "animales", "fauna", "mascota", "veterinario")),
+    (r"\b(?:policia|patrulla|fiscalia|detenid|robo|asalto)\w*\b",
+     ("policia", "patrulla", "seguridad")),
+    (r"\b(?:lluvia|inundacion|tormenta|clima)\w*\b",
+     ("lluvia", "agua", "clima", "nubes", "cielo")),
+    (r"\b(?:marcha|protesta|manifestacion|bloqueo)\w*\b",
+     ("movilidad", "vialidad", "reforma", "calle")),
+    (r"\b(?:catrina|dia de muertos|desfile)\w*\b",
+     ("catrina", "catrinas", "desfile")),
+    (r"\b(?:automovili|formula 1|gran premio|autodromo|circuito)\w*\b",
+     ("auto", "automovil", "vehiculo", "transito", "autodromo")),
+    (r"\b(?:hospital|clinica|imss|issste)\w*\b",
+     ("hospital", "salud", "clinica", "imss", "issste")),
+    (r"\b(?:desazolve|drenaje|agua potable)\w*\b",
+     ("agua", "desazolve", "drenaje")),
+)
+
+def _photo_fold(text):
+    text=unicodedata.normalize("NFKD",str(text or "").casefold())
+    text="".join(char for char in text if not unicodedata.combining(char))
+    return " ".join(re.findall(r"[a-z0-9]+",text))
+
+
+def _photo_category(article):
+    headline=_photo_fold(article.get("title"))
+    for pattern,category in SUBJECT_RULES:
+        if re.search(pattern,headline):
+            return category
+    return str(article.get("category") or "CDMX")
+
+
+def _photo_score(article, photo):
+    """Puntúa relación real con el título; nunca declara un hecho verificado."""
+    headline=_photo_fold(article.get("title"))
+    topic=_photo_fold(photo.get("topic"))
+    keywords=_photo_fold(" ".join(str(x) for x in photo.get("keywords",[])))
+    context=topic+" "+keywords
+    category=_photo_category(article)
+    photo_category=str(photo.get("category") or "CDMX")
+    if not topic or SENSITIVE_CONTEXT.search(topic):
+        return -10000
+    # Una línea distinta del Metro es peor que una foto genérica del Metro.
+    if category=="Metro":
+        wanted=re.search(r"\blinea ([0-9]{1,2}|a|b)\b",headline)
+        shown=re.search(r"\b(?:linea|line) ([0-9]{1,2}|a|b)\b",topic)
+        if wanted and shown and wanted.group(1)!=shown.group(1):
+            return -10000
+    borough=_photo_fold(article.get("borough"))
+    score=65 if photo_category==category else (12 if photo_category=="CDMX" else 0)
+    if photo_category=="Alcaldías" and not borough:
+        score-=30
+    if borough and borough in topic:
+        score+=170
+    elif borough and borough in keywords:
+        score+=100
+    tokens={x for x in headline.split() if len(x)>3 and x not in STOP_WORDS}
+    for word in tokens:
+        if re.search(r"\b"+re.escape(word)+r"\b",topic):
+            score+=34
+        elif re.search(r"\b"+re.escape(word)+r"\b",keywords):
+            score+=12
+    for pattern,similar in RELATED_WORDS:
+        if re.search(pattern,headline) and any(
+            re.search(r"\b"+re.escape(word)+r"\b",topic) for word in similar
+        ):
+            score+=80
+    if category=="Metro":
+        wanted=re.search(r"\blinea ([0-9]{1,2}|a|b)\b",headline)
+        shown=re.search(r"\b(?:linea|line) ([0-9]{1,2}|a|b)\b",topic)
+        if wanted and shown and wanted.group(1)==shown.group(1):
+            score+=220
+    return score
+
+
 def assign_photos(items):
-    """Foto licenciada del hecho (si fue comprobada); si no, foto representativa."""
+    """Acontecimiento aprobado primero; si no, tema y lugar más próximos."""
     pool=_pool()
     reserved=set()
-    known={p["id"]:p for p in pool}
     verified_catalog=_load(VERIFIED_EVENTS,"photos")
     exact_count=0
+    # Un orden estable evita cambios arbitrarios entre actualizaciones del feed.
     for a in items:
         exact=verified_event_photo(a,verified_catalog)
         if exact:
             a["photo"]=exact
             exact_count+=1
             continue
-        # Una atribución exacta previa no sobrevive sin su expediente aprobado.
-        prev=a.get("photo")
-        if isinstance(prev,dict) and (prev.get("kind")=="hecho" or prev.get("verified") is True):
-            a.pop("photo",None)
-            prev=None
-        if isinstance(prev,dict) and prev.get("id") in known and prev["id"] not in reserved:
-            a["photo"]=known[prev["id"]]
-            reserved.add(prev["id"])
-    for a in items:
-        prev=a.get("photo")
-        if isinstance(prev,dict) and prev.get("kind")=="hecho" and prev.get("verified") is True:
+        # La imagen antigua no tiene preferencia sobre otra que represente mejor el tema.
+        a.pop("photo",None)
+        available=[p for p in pool if p.get("id") not in reserved]
+        candidates=available or pool
+        if not candidates:
             continue
-        if isinstance(prev,dict) and prev.get("id") in reserved:
+        # La puntuación de pertinencia tiene prioridad absoluta sobre la variedad.
+        best=max(candidates,key=lambda p:(
+            _photo_score(a,p),
+            # Desempate estable, sin elegir siempre el primer elemento de la categoría.
+            hashlib.sha256((str(a.get("url"))+"|"+str(p.get("id"))).encode()).hexdigest(),
+        ))
+        if _photo_score(a,best)<0:
             continue
-        borough=str(a.get("borough") or "")
-        category=str(a.get("category") or "CDMX")
-        ordered=(
-            [p for p in pool if borough and p["borough"]==borough]+
-            [p for p in pool if p["category"]==category]+
-            [p for p in pool if p["category"]=="CDMX"]+
-            pool
-        )
-        choice=next((p for p in ordered if p["id"] not in reserved),None)
-        if choice:
-            a["photo"]=choice
-            reserved.add(choice["id"])
-        else:
-            a.pop("photo",None)
+        a["photo"]=best
+        reserved.add(best["id"])
     return {"available":len(pool),"assigned":sum(bool(a.get("photo")) for a in items),
             "unique":len({a["photo"]["id"] for a in items if a.get("photo")}),
             "del_hecho_verificadas":exact_count}
