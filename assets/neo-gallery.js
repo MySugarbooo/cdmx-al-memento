@@ -29,7 +29,7 @@
     const origin=el('a','','Obra y autor ↗');origin.href=p.source;origin.rel='noopener noreferrer';origin.target='_blank';
     const license=el('a','','Licencia y condiciones ↗');license.href=p.licenseUrl;license.rel='noopener noreferrer';license.target='_blank';
     links.append(origin,license);
-    const note=el('small','neo-photo-warning','Imagen de archivo; no documenta necesariamente una noticia.');
+    const note=el('small','neo-photo-warning',p.url.startsWith('/assets/')?'Imagen de archivo optimizada (resolución y compresión) para esta web; no documenta necesariamente una noticia.':'Fotografía de archivo alojada en Wikimedia Commons; no documenta necesariamente una noticia.');
     caption.append(categoryTag,title,author,links,note);
     figure.append(img,caption);grid.append(figure);
    }
