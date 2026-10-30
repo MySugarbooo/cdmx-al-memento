@@ -7,7 +7,7 @@
  fetch('/assets/fotos-manifest.json',{cache:'force-cache'})
  .then(r=>{if(!r.ok)throw Error('sin archivo');return r.json()})
  .then(j=>{
-  const list=(Array.isArray(j.photos)?j.photos:[]).filter(p=>p&&/^[a-z0-9_]{2,40}$/.test(p.id||'')&&typeof p.file==='string'&&typeof p.author==='string').slice(0,24);
+  const list=(Array.isArray(j.photos)?j.photos:[]).filter(p=>p&&/^[a-z0-9_]{2,40}$/.test(p.id||'')&&typeof p.file==='string'&&typeof p.author==='string').slice(0,100);
   if(!list.length)throw Error('no hay fotos');
   out.replaceChildren();
   for(const p of list){
@@ -15,7 +15,7 @@
    const image=document.createElement('img');image.src='/assets/fotos/'+p.id+'.jpg';image.alt='Foto de archivo: '+String(p.topic||'Ciudad de México');image.loading='lazy';image.decoding='async';
    const caption=document.createElement('figcaption');
    const title=note('strong',p.topic||'Ciudad de México');
-   const author=note('small','© '+p.author+' · '+(p.license||'Licencia indicada por la fuente'));
+   const author=note('small','Autor: '+p.author+' · '+(p.license||'Licencia indicada por la fuente'));
    const link=document.createElement('a');link.href='https://commons.wikimedia.org/wiki/File:'+encodeURIComponent(p.file.replace(/ /g,'_'));
    link.rel='noopener noreferrer';link.target='_blank';link.textContent='Fuente y licencia ↗';
    caption.append(title,author,link);card.append(image,caption);out.append(card)
