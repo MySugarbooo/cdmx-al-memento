@@ -14,7 +14,7 @@ const shortTime=new Intl.DateTimeFormat('es-MX',{timeZone:'America/Mexico_City',
 const escapeDate=d=>{const date=new Date(d);return Number.isFinite(date.getTime())?shortDate.format(date):'Fecha por confirmar'};
 const articleLink=a=>typeof a.local_url==='string'&&/^\/noticias\/\?/.test(a.local_url)?a.local_url:'/noticias/';
 const safePhotoUrl=u=>/^\/assets\/fotos\/[a-zA-Z0-9_-]+\.jpe?g$/.test(String(u||''))||/^https:\/\/(?:upload|thumb)\.wikimedia\.org\/wikipedia\/commons\//.test(String(u||''));
-const photoInfo=a=>{const api=window.CDMX_FOTOS;if(!api||typeof api.forArticle!=='function')return null;const id=api.forArticle(a);return api.images?.[id]||null};
+const photoInfo=a=>{const api=window.CDMX_FOTOS;if(!api?.ready||typeof api.forArticle!=='function')return null;const id=api.forArticle(a);return api.images?.[id]||null};
 const photoUrl=a=>{
  const p=photoInfo(a);
  if(p&&safePhotoUrl(p.url))return p.url;
