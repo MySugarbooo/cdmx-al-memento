@@ -15,19 +15,31 @@ const shortTime=new Intl.DateTimeFormat('es-MX',{timeZone:'America/Mexico_City',
 const escapeDate=d=>{const date=new Date(d);return Number.isFinite(date.getTime())?shortDate.format(date):'Fecha por confirmar'};
 const articleLink=a=>typeof a.local_url==='string'&&/^\/noticias\/\?/.test(a.local_url)?a.local_url:'/noticias/';
 const safePhotoUrl=u=>/^\/assets\/fotos\/[a-zA-Z0-9_-]+\.jpe?g$/.test(String(u||''))||/^https:\/\/(?:upload|thumb)\.wikimedia\.org\/wikipedia\/commons\//.test(String(u||''));
-const photoInfo=a=>{const api=window.CDMX_FOTOS;if(!api?.ready||typeof api.forArticle!=='function')return null;const id=api.forArticle(a);return api.images?.[id]||null};
+const photoInfo=a=>{
+ const exact=a?.photo;
+ // La fototeca nunca debe reemplazar una fotografía documental aprobada.
+ if(exact?.kind==='hecho'&&exact.verified===true&&safePhotoUrl(exact.url)&&exact.author&&exact.license&&exact.source&&exact.licenseUrl&&exact.evidence_url)return exact;
+ const api=window.CDMX_FOTOS;
+ if(api?.ready&&typeof api.forArticle==='function'){
+  const id=api.forArticle(a),p=api.images?.[id];
+  if(p&&safePhotoUrl(p.url)&&p.author&&p.license&&p.source)return {...p,kind:'representativa'};
+ }
+ const context=a?.photo;
+ return context&&context.kind!=='hecho'&&safePhotoUrl(context.url)&&context.author&&context.license&&context.source?{...context,kind:'representativa'}:null;
+};
 const sizedPhotoUrl=(url,width)=>{
  if(/^https:\/\/thumb\.wikimedia\.org\/wikipedia\/commons\/thumb\//.test(url))
   return url.replace(/\/(\d+)px-([^/?]+)(\?.*)?$/,(_full,current,file,query)=>Number(current)>width?'/'+width+'px-'+file+(query||''):_full);
  const original=String(url).match(/^https:\/\/upload\.wikimedia\.org\/wikipedia\/commons\/([0-9a-f]\/\w{2}\/([^/?]+\.(?:jpe?g|png)))(?:\?.*)?$/i);
  return original?'https://upload.wikimedia.org/wikipedia/commons/thumb/'+original[1]+'/'+width+'px-'+original[2]:url;
 };
-const loadPhoto=(img,url,width)=>{
+const loadPhoto=(img,url,width,onFallback)=>{
  const optimized=sizedPhotoUrl(url,width);
+ const fallback=()=>{img.onerror=null;img.src=photoFallback.CDMX;if(onFallback)onFallback()};
  img.onerror=()=>{
   const failed=img.getAttribute('src');
-  img.onerror=()=>{img.onerror=null;img.src=photoFallback.CDMX};
-  img.src=failed===optimized&&optimized!==url?url:photoFallback.CDMX;
+  if(failed===optimized&&optimized!==url){img.onerror=fallback;img.src=url}
+  else fallback();
  };
  if(img.getAttribute('src')!==optimized)img.src=optimized;
 };
@@ -38,9 +50,11 @@ const photoUrl=a=>{
  return photoFallback[a.category]||photoFallback.CDMX;
 };
 const photoCredit=a=>{
- const p=photoInfo(a);return p&&p.author&&p.license
-  ?{text:'Autor: '+p.author+' · '+p.license+' · Imagen de carácter ilustrativo y referencial; no constituye evidencia gráfica de los hechos descritos.',source:p.source}
-  :{text:'Imagen de carácter ilustrativo y referencial; no constituye evidencia gráfica de los hechos descritos.',source:''};
+ const p=photoInfo(a),real=p?.kind==='hecho'&&p.verified===true;
+ const label=real?'Fotografía verificada del acontecimiento':'Imagen representativa; no constituye evidencia gráfica del acontecimiento';
+ return p&&p.author&&p.license
+  ?{text:label+' · Autor: '+p.author+' · '+p.license,short:label+' · '+p.author+' · '+p.license,source:p.source,real}
+  :{text:'Imagen representativa del tema; no corresponde necesariamente al hecho descrito.',short:'Imagen representativa del tema',source:'',real:false};
 };
 function el(tag,cls,txt){const x=document.createElement(tag);if(cls)x.className=cls;if(txt!==undefined)x.textContent=txt;return x}
 const skyline='<svg class="neo-brand-mark" viewBox="0 0 100 85" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="neoRose" x1="0" x2="1"><stop stop-color="#ff8bcb"/><stop offset="1" stop-color="#ec2790"/></linearGradient></defs><g fill="url(#neoRose)"><path d="M4 79h92v4H4zM12 77V54l9-5 9 6v22zM34 77V25l8-5 7 9v48zM53 77V35l11-8 7 7v43zM76 77V47l8-4 5 8v26z"/><path d="M43 20l4-15 5 16-5 3zM45 4l3-4 2 4zM60 27l-2-15 7 7-1 11z"/><path d="M9 55l5-15 3 13zM38 27v-12h6v10zM80 47V34h4v11z"/></g><g fill="#ffd4e8"><rect x="40" y="38" width="3" height="8"/><rect x="60" y="42" width="3" height="6"/><rect x="80" y="55" width="3" height="7"/></g></svg>';
@@ -103,7 +117,9 @@ function initStatic(){
 }
 function renderHero(){
  const a=state.stories[state.current];if(!a)return;
- const img=shell.querySelector('#neo-hero-img');img.fetchPriority='high';img.alt='Imagen de carácter ilustrativo y referencial sobre '+(a.category||'CDMX')+'. No constituye evidencia del hecho';loadPhoto(img,photoUrl(a),720);
+ const img=shell.querySelector('#neo-hero-img');img.fetchPriority='high';const heroPhoto=photoInfo(a);
+ img.alt=heroPhoto?.kind==='hecho'&&heroPhoto.verified===true?'Fotografía verificada del acontecimiento: '+(heroPhoto.topic||a.title):'Imagen representativa sobre '+(a.category||'CDMX')+'. No constituye evidencia del acontecimiento';
+ loadPhoto(img,photoUrl(a),720,()=>{img.alt='Imagen representativa del tema';shell.querySelector('#neo-hero-credit').textContent='Imagen de recurso editorial; no corresponde necesariamente al acontecimiento · Consultar créditos fotográficos';});
  const title=shell.querySelector('#neo-hero-title');title.textContent=a.title;title.href=articleLink(a);
  shell.querySelector('#neo-hero-description').textContent=String(a.description||a.brief?.lead||'Consulta la nota y su fuente original para conocer más detalles.').slice(0,260);
  shell.querySelector('#neo-hero-category').textContent='⌖ '+(a.borough||a.category||'CDMX');
@@ -123,12 +139,14 @@ function renderNews(){
  for(const a of matched.slice(0,state.visible)){
   const card=el('article','neo-news-card');
   const thumb=el('a','neo-thumb');thumb.href=articleLink(a);
-  const img=el('img');img.loading='lazy';img.decoding='async';img.alt='Imagen ilustrativa y referencial sobre '+(a.category||'CDMX')+'. No documenta los hechos descritos';loadPhoto(img,photoUrl(a),480);
+  const img=el('img');img.loading='lazy';img.decoding='async';const p=photoInfo(a);
+  img.alt=p?.kind==='hecho'&&p.verified===true?'Fotografía verificada del acontecimiento: '+(p.topic||a.title):'Imagen representativa del tema '+(a.category||'CDMX')+'. No documenta el acontecimiento';
+  loadPhoto(img,photoUrl(a),480,()=>{img.alt='Imagen representativa del tema';const label=card.querySelector('.neo-credit');if(label)label.textContent='Imagen de recurso editorial, no del acontecimiento · Consultar créditos fotográficos';});
   const category=el('span','neo-category',a.category||'CDMX');thumb.append(img,category);
   const h=el('h3');const link=el('a','',a.title);link.href=articleLink(a);h.append(link);
   const meta=el('div','neo-card-meta',escapeDate(a.published_at||a.date)+' · '+(a.borough||a.source||'CDMX'));
-  const c=photoCredit(a),p=photoInfo(a),credit=el('small','neo-credit');
-  const shortCredit=p&&p.author?'Imagen ilustrativa y referencial · '+p.author+' · '+p.license:'Imagen ilustrativa y referencial';
+  const c=photoCredit(a),credit=el('small','neo-credit');
+  const shortCredit=c.short;
   credit.title=c.text;
   if(/^https:\/\/commons\.wikimedia\.org\/wiki\/File:/.test(c.source)){const l=el('a','',shortCredit+' ↗');l.href=c.source;l.rel='noopener noreferrer';l.target='_blank';credit.append(l)}
   else credit.textContent=shortCredit;
@@ -136,7 +154,7 @@ function renderNews(){
   out.append(card);
  }
  if(!matched.length)out.append(el('p','neo-feed-note','No hay noticias que coincidan. Prueba con otra búsqueda.'));const more=shell.querySelector('#neo-news-more');if(more)more.hidden=matched.length<=state.visible;
- shell.querySelector('#neo-news-status').textContent=(state.filter||state.query?'Resultados: '+matched.length+' · ':'')+(state.fromBackup?'Titulares de respaldo (pueden no estar actualizados)':'Titulares del feed automático')+' · Fotografías de archivo, no necesariamente del hecho';
+ shell.querySelector('#neo-news-status').textContent=(state.filter||state.query?'Resultados: '+matched.length+' · ':'')+(state.fromBackup?'Titulares de respaldo (pueden no estar actualizados)':'Titulares del feed automático')+' · Fotos del hecho solo si están verificadas; las demás son representativas';
 }
 function mirrorVisits(){
  const target=shell.querySelector('#neo-visitors');const origin=document.getElementById('header-visitors-number');
