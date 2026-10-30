@@ -28,6 +28,17 @@
 .neo-photo-more:hover,.neo-photo-more:focus-visible{background:#f5449a}
 .neo-photo-more[hidden]{display:none}
 #neo-photo-status{font-size:13px;color:#e3c5d7}
+/* Galería legible: evitar dos columnas de créditos comprimidos en celulares. */
+@media(max-width:980px){#neo-photo-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:620px){#neo-photo-grid{grid-template-columns:1fr;gap:15px}
+ #neo-photo-grid img{height:210px}
+ #neo-photo-grid figcaption{padding:14px;gap:9px}
+ #neo-photo-grid figcaption :is(strong,small,a){font-size:13px;line-height:1.5}
+ #neo-photo-grid .neo-photo-links a{font-size:13px}
+ .neo-photo-filters{gap:7px}
+ .neo-photo-filters button{min-height:40px;font-size:12px}
+ .neo-photo-search{min-height:46px;font-size:15px}
+}
 </style></head>
 <body><a class="skip" href="#contenido">Saltar al contenido</a><header><div class="wrap"><div class="top"><a class="logo" href="/">CDMX <span>AL MEMENTO</span></a><span class="tag">FOTOGRAFÍAS</span></div><nav aria-label="Secciones principales"><a href="/">Portada</a><a href="/alcaldias/">Alcaldías</a><a href="/seguridad/">Seguridad</a><a href="/movilidad/">Movilidad</a><a href="/servicios/">Servicios</a><a href="/fotografias/">Fotografías</a><a href="/comunidad/">Mi comunidad</a></nav></div></header>
 <main class="wrap" id="contenido">
