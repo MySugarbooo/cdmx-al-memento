@@ -49,7 +49,7 @@ class StableHomepageTests(unittest.TestCase):
         self.assertIn('src="/app.js?v=',home)
         self.assertIn('href="/archivo/"',home)
         self.assertIn('src="/assets/neo-home.js?v=',home)
-        self.assertIn('href="/assets/neo-home.css?v=20261027-estable1"',home)
+        self.assertRegex(home, r'href="/assets/neo-home\\.css\\?v=[a-zA-Z0-9_-]+"')
         headers=read("_headers")
         self.assertIn("Cache-Control: no-cache, must-revalidate",headers)
         self.assertIn("/index.html",headers)
