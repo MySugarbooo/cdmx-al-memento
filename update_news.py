@@ -103,8 +103,8 @@ def identify_location(title):
             if borough in ("Cuauhtémoc", "Benito Juárez", "Miguel Hidalgo",
                            "Álvaro Obregón", "Venustiano Carranza", "Gustavo A. Madero"):
                 if not re.search(
-                    r"\\b(?:alcaldia|demarcacion|colonia|zona|delegacion|"
-                    r"en la alcaldia|en la colonia)\\s+(?:de\\s+)?"+re.escape(name)+r"\\b",
+                    r"\b(?:alcaldia|demarcacion|colonia|zona|delegacion|"
+                    r"en la alcaldia|en la colonia)\s+(?:de\s+)?"+re.escape(name)+r"\b",
                     words,
                 ):
                     continue
