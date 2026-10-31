@@ -104,7 +104,7 @@ def identify_location(title):
                            "Álvaro Obregón", "Venustiano Carranza", "Gustavo A. Madero"):
                 if not re.search(
                     r"\b(?:alcaldia|demarcacion|colonia|zona|delegacion|"
-                    r"en la alcaldia|en la colonia)\s+(?:de\s+)?"+re.escape(name)+r"\b",
+                    r"en la alcaldia|en la colonia|en|hacia|desde)\s+(?:de\s+)?"+re.escape(name)+r"\b",
                     words,
                 ):
                     continue
