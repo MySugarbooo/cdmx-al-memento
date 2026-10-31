@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-30 23:48 UTC",
+  "updated": "2026-10-31 01:13 UTC",
   "boroughs": [
     {
       "name": "La Magdalena Contreras",
@@ -2230,10 +2230,40 @@
     },
     {
       "name": "Coyoacán",
-      "count": 102,
+      "count": 103,
       "articles": [
         {
           "title": "Choque contra local de tortas deja una persona muerta y varios lesionados en Coyoacán",
+          "description": "La información publicada por La Silla Rota trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOakw1QUgwVWxRemJPWlNTT2RISE1tMURnUnJWcS11UTNTMGI1ZUtiZTZfeE9JcldUY0cwM3duc05EV0pVNWV2UWV0ZEduZDM0QmstMUVXakFtS0dBVmMwTDAyWFBYNTRSbW0yQzJrXzJ6U1RtQUQtX0dvYm8zZjZrbDZ2MzJfSHpZMVJrcGYyWTgzMWtmMHZQUnRNcHFyZDRMaXg2ME9sa2tvamhfcTZseTREcmdhcUJLamNIQTJKMA?oc=5",
+          "source": "La Silla Rota",
+          "date": "2026-10-30",
+          "published_at": "2026-10-30T21:16:17Z",
+          "category": "CDMX",
+          "borough": "Coyoacán",
+          "location": "Coyoacán (mencionada en el titular)",
+          "local_url": "/noticias/?id=ea68bc328a28f65c9512&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por La Silla Rota trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_coyoacan",
+            "kind": "representativa",
+            "url": "/assets/alcaldias/coyoacan.jpg",
+            "category": "CDMX",
+            "borough": "Coyoacán",
+            "topic": "Jardín Centenario de Coyoacán",
+            "author": "AlejandroLinaresGarcia",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:JardinCentenarioCoyoacan.JPG"
+          }
+        },
+        {
+          "title": "Choque contra local de tortas deja una persona muerta en Coyoacán",
           "description": "La información publicada por La Silla Rota trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
           "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOakw1QUgwVWxRemJPWlNTT2RISE1tMURnUnJWcS11UTNTMGI1ZUtiZTZfeE9JcldUY0cwM3duc05EV0pVNWV2UWV0ZEduZDM0QmstMUVXakFtS0dBVmMwTDAyWFBYNTRSbW0yQzJrXzJ6U1RtQUQtX0dvYm8zZjZrbDZ2MzJfSHpZMVJrcGYyWTgzMWtmMHZQUnRNcHFyZDRMaXg2ME9sa2tvamhfcTZseTREcmdhcUJLamNIQTJKMA?oc=5",
           "source": "La Silla Rota",
@@ -2878,41 +2908,46 @@
             "license": "CC BY-SA 4.0",
             "source": "https://commons.wikimedia.org/wiki/File:JardinCentenarioCoyoacan.JPG"
           }
-        },
-        {
-          "title": "Alerta en CDMX: Veladora de altar de Día de Muertos desata incendio en inmueble de Coyoacán; otras afectacione",
-          "description": "La información publicada por TV Azteca trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNWDRCSXRLZGlWazRwcmo4MGFxU25XVVBFdVhTRG83M3JKTGdScmFOOUR6NHlSa09uWnJYY1dMWjllRkkyZGFGMnFRblJNWUR5bnlLWkdjZ1dkYWI3SzFLeWJlZG9Uc0doRGtHb2NUYkljbzUyLUtpVjRFem1xWUY2N2ZTUUVPZUR2ZXd0aTNyUG9fMXhua01qZHhfdFNVRTJEeDh0a2JDNUZzQUtXN0ZaSzFUMkc5TFhyWmE1MmYzYTh3T2tpcUItcjEtbUFSQlkx0gHeAUFVX3lxTFAzLXQtWjVCbVF1c2R2TWxjdS13R3hnY1Z1VDJMbmVmRXc5UE9nRTd5Ql9JWXNlSk0xbXJYLUlLNUZRemF4QTVSZFV2eVhuRmZXS1NrRVpJZXJSTXVzWmtNSm1CMjdWck5LTnRmdS02STR4bmhCVVpsQ1g4MWdDdDJYRkZWbVZwN1lmb29MVlhpR2dUQnkxUXVEdGlCWkpuV0NLQ3BhOFBoSWlXZUJJYmdqNEhtdS1icGRBM0tMTkhJYy1hVE9MQTBzVmpHTElSa28xd0E1dXlmWXQwMk1Gdw?oc=5",
-          "source": "TV Azteca",
-          "date": "2026-10-27",
-          "published_at": "2026-10-27T20:25:00Z",
-          "category": "CDMX",
-          "borough": "Coyoacán",
-          "location": "Coyoacán (mencionada en el titular)",
-          "local_url": "/noticias/?id=1182a6d628d5578d4ec9&mes=2026-10",
-          "brief": {
-            "lead": "La información publicada por TV Azteca trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "alcaldia_coyoacan",
-            "url": "/assets/alcaldias/coyoacan.jpg",
-            "category": "CDMX",
-            "borough": "Coyoacán",
-            "topic": "Jardín Centenario de Coyoacán",
-            "author": "AlejandroLinaresGarcia",
-            "license": "CC BY-SA 4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:JardinCentenarioCoyoacan.JPG"
-          }
         }
       ]
     },
     {
       "name": "Cuajimalpa de Morelos",
-      "count": 22,
+      "count": 23,
       "articles": [
+        {
+          "title": "Cuajimalpa registra la mayor caída en percepción de inseguridad en CDMX",
+          "description": "La información publicada por La Crónica de Hoy trata un asunto registrado en la sección de Seguridad del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPN29VQ1ZleGhvTHdwcUY1TVVCZGZQanY3ZUVKMmhDOUg0TVpFd0VHa1lNd29DVk0tV3haSldDb2RoeTQ0MFcyX1ZDYl9ldjhfNzZMMmozanUyN3RDVGZleG9rYVhONnFhZ1d1b2xnek1RYVhSLVRTc3NFUkhvemhxNUQyX2FzS0xfdHZhcHZ0VzBNc3otSldhaEd3TWJ0bGhLVWY0ejZxX096OUZqcDhadUFHWFF0aDQ4Ty1KZA?oc=5",
+          "source": "La Crónica de Hoy",
+          "date": "2026-10-30",
+          "published_at": "2026-10-30T23:12:55Z",
+          "category": "Seguridad",
+          "borough": "Cuajimalpa de Morelos",
+          "location": "Cuajimalpa de Morelos (mencionada en el titular)",
+          "local_url": "/noticias/?id=ca47026381760812b3cd&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por La Crónica de Hoy trata un asunto registrado en la sección de Seguridad del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "commons_157006043",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Nuevas_patrullas_para_Cuajimalpa_05.jpg/960px-Nuevas_patrullas_para_Cuajimalpa_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "category": "Seguridad",
+            "borough": "",
+            "topic": "Nuevas patrullas para Cuajimalpa 05",
+            "keywords": [
+              "Secretaría de Seguridad Ciudadana CDMX patrulla"
+            ],
+            "author": "Gobierno de la Ciudad de México",
+            "license": "CC BY 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Nuevas_patrullas_para_Cuajimalpa_05.jpg"
+          }
+        },
         {
           "title": "¿Vuela? Video registra el momento exacto en el que un auto se accidenta en Lomas de Chamizal, Cuajimalpa",
           "description": "La información publicada por Milenio trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -6860,8 +6895,71 @@
     },
     {
       "name": "Tláhuac",
-      "count": 89,
+      "count": 91,
       "articles": [
+        {
+          "title": "Mujer y su hija de 15 años son asesinadas a balazos en Tláhuac, Cdmx",
+          "description": "La información publicada por Quinta Fuerza trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1LQnZsakx0SHBOaEVEM2RLdHdDMkx0bm1OdWpSNjhFWnVUaThtNDJ2M0JnQWpXU1ZzUHlnbFNfRjM2V2VEUkEyWEFDa0JHSjluc1IzZHhCRG1rb0owSUk3cEJSeXQtOGtrRHBWM3dmcU94Zw?oc=5",
+          "source": "Quinta Fuerza",
+          "date": "2026-10-30",
+          "published_at": "2026-10-31T01:03:08Z",
+          "category": "CDMX",
+          "borough": "Tláhuac",
+          "location": "Tláhuac (mencionada en el titular)",
+          "local_url": "/noticias/?id=7f7025ec7781fe3a6f81&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por Quinta Fuerza trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_tlahuac",
+            "kind": "representativa",
+            "url": "/assets/alcaldias/tlahuac.jpg",
+            "category": "CDMX",
+            "borough": "Tláhuac",
+            "topic": "Plaza central de San Pedro Tláhuac",
+            "author": "Yavidaxiu",
+            "license": "CC BY 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Tl%C3%A1huac-Plaza_central.JPG"
+          }
+        },
+        {
+          "title": "Balacera deja a madre e hija muertas en Tláhuac, CdMx; el agresor era pareja sentimental de una de las víctim",
+          "description": "La información publicada por MILENIO trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQQmtxRjRKLWhyeWd0Rk9FWU5jbnVaaEw3eHFBcEtGTUp6ZVY3TmtIeWpobFFFNlRIMEhGQ3kyNUdpSlhBSldMVm1IdGxSMkVzZzRxRUhKR1lZdWptQlBZMzg0aTllLTlhZi1kNVZxRlRCcWtOeXVVdC1Cb0hIQTFzVVNZMVpzWlZ0ZVJWX9IBjAFBVV95cUxNVWFxX3VTUzJ5aEQwSlZtZXlUcUdXOVBOU2xJMDdEeVd4WjlTMExYSUQ2QzFVQ2tFUzNCZEhSaHFJaERNRjVqMWkwVlM4Vmw1U2lSQ01xMzU5M2N1bHRULVVFTmNybUlXbmJ6SmJFcWltbEFHazRwMDBOQVhpemtSbHdKX21fTkpGa1pxMw?oc=5",
+          "source": "MILENIO",
+          "date": "2026-10-30",
+          "published_at": "2026-10-31T00:34:22Z",
+          "category": "CDMX",
+          "borough": "Tláhuac",
+          "location": "Tláhuac (mencionada en el titular)",
+          "local_url": "/noticias/?id=d268d1007adf19142902&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por MILENIO trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "commons_114051285",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Coro_de_la_Catedral_metropolitana_de_la_Ciudad_de_M%C3%A9xico_05.jpg/960px-Coro_de_la_Catedral_metropolitana_de_la_Ciudad_de_M%C3%A9xico_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "category": "CDMX",
+            "borough": "",
+            "topic": "Coro de la Catedral metropolitana de la Ciudad de México 05",
+            "keywords": [
+              "Catedral Metropolitana Ciudad de México"
+            ],
+            "author": "Luis Alvaz",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Coro_de_la_Catedral_metropolitana_de_la_Ciudad_de_M%C3%A9xico_05.jpg"
+          }
+        },
         {
           "title": "Doble Feminicidio en CDMX: Matan a Balazos a Madre y su Hija Adolescente en Tláhuac",
           "description": "La información publicada por N+ trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -7407,42 +7505,6 @@
           "local_url": "/noticias/?id=623301dfd945107a155d&mes=2026-10",
           "brief": {
             "lead": "La información publicada por Diario CDMX trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
-        },
-        {
-          "title": "Líder comunitario Kanek Zacarías da revés al gobierno de Tláhuac",
-          "description": "En su información, CDMX Magacín aborda una decisión, declaración o debate relacionado con las instituciones de la ciudad. Conviene distinguir la intención anunciada de las resoluciones que hayan sido aprobadas y publicado oficialmente.",
-          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQdUtCMEVydUJFdFVHcFlGNDhnd1hqYjJHM3R3WnQtNktNQmszYkhjQ3EtV0s5cDRORWk5UjlEZTFDU0NDUUdqa245bzdjZkU2MTFMVk1raU9tTjNEOXdSM1NjakUtZTZpbkFtdzRCN2NCaEJXTXBjVnZKdFFHNVJ6Vl9NcDVfWUplbDFJ?oc=5",
-          "source": "CDMX Magacín",
-          "date": "2026-10-23",
-          "published_at": "2026-10-24T02:39:57Z",
-          "category": "CDMX",
-          "borough": "Tláhuac",
-          "location": "Tláhuac (mencionada en el titular)",
-          "local_url": "/noticias/?id=95bfb2bcc0566d8b3695&mes=2026-10",
-          "brief": {
-            "lead": "En su información, CDMX Magacín aborda una decisión, declaración o debate relacionado con las instituciones de la ciudad. Conviene distinguir la intención anunciada de las resoluciones que hayan sido aprobadas y publicado oficialmente.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
-        },
-        {
-          "title": "Bloquean comerciantes avenida Tláhuac y Calzada Taxqueña",
-          "description": "La información publicada por MVS Noticias trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPMFE4WjB0bm56VmdVTzI5eEM1VmRQM2RiWWZfdV9UTXFkc0lUbEE5TlhrdTZGX2NmX2paQXgtSzNZbnJpUkpNTTczWUd2SjBLejBRRVlfMDc1Z3I4QTE5a3V1NjRTTHltZVZvd2lpVVV6VTBtMU1YOUJDNHFXVjlOcWVIWmdUWkZsNU1Femp2Q2lOa25ac0dBOHdEalVTaktDeXh3djN2b3FhZFc0ZG1zSjB4MjJiZTJH?oc=5",
-          "source": "MVS Noticias",
-          "date": "2026-10-23",
-          "published_at": "2026-10-24T00:23:12Z",
-          "category": "CDMX",
-          "borough": "Tláhuac",
-          "location": "Tláhuac (mencionada en el titular)",
-          "local_url": "/noticias/?id=25cd492c2bc7e35ddc05&mes=2026-10",
-          "brief": {
-            "lead": "La información publicada por MVS Noticias trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
