@@ -49,6 +49,12 @@ GENERAL_FEEDS = {
     "Gobierno": "gobierno Ciudad de México",
     "CDMX": "noticias Ciudad de México",
 }
+# Cobertura vecinal: buscar el hecho en medios, sin importar posts sin verificar.
+LOCAL_EVENT_QUERIES = (
+    "CDMX inundaciones encharcamientos lluvias protección civil",
+    "CDMX incendio fuga de gas choque emergencia",
+    "CDMX colonias falta de agua cierre vial vecinos",
+)
 HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; CDMXAlMemento/2.0; news aggregator)"}
 SOCIAL_SOURCES = {
     "facebook", "instagram", "tiktok", "youtube", "twitter", "x.com", "threads",
@@ -240,6 +246,8 @@ def gather():
 
     for category, query in GENERAL_FEEDS.items():
         read_feed(query, category, max_items=30)
+    for query in LOCAL_EVENT_QUERIES:
+        read_feed(query, "CDMX", max_items=20)
     # Búsquedas puntuales para dar cobertura a las 16 alcaldías.
     # Solo se etiqueta la alcaldía si aparece explícitamente en el titular.
     for borough in BOROUGHS:
