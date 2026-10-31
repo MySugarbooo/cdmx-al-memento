@@ -375,7 +375,43 @@ html.neo-active #contenido{width:min(100%,1800px);max-width:1800px;margin:0 auto
 #neo-home .neo-boroughs{order:8}
 #neo-home .neo-metro-photo{height:170px}
 }
-</style><link rel="stylesheet" href="/assets/metro-portada.css?v=20261030-aprobado1"></head>
+</style><link rel="stylesheet" href="/assets/metro-portada.css?v=20261030-aprobado1"><style id="ios-header-layout-fix-20261031">
+/* iPhone/Safari: evitar que el encabezado y la portada se monten o recorten. */
+@media (max-width:720px){
+ html.neo-active body{overflow-x:hidden}
+ html.neo-active #contenido{overflow:visible}
+ #neo-home .neo-head{position:relative;z-index:2;overflow:visible}
+ #neo-home .neo-head-top{
+  display:grid!important;grid-template-columns:minmax(0,1fr) auto!important;
+  grid-template-areas:"brand actions" "status status"!important;
+  align-items:center!important;gap:10px 8px!important;
+  min-height:0!important;height:auto!important;padding:12px 14px!important
+ }
+ #neo-home .neo-brand{grid-area:brand!important;grid-column:1!important;grid-row:1!important;
+  min-width:0!important;max-width:100%!important;margin:0!important;justify-content:flex-start!important}
+ #neo-home .neo-brand-mark{width:42px!important;height:42px!important;flex-shrink:0!important}
+ #neo-home .neo-brand-name{font-size:clamp(19px,5.4vw,26px)!important;line-height:1.05!important;letter-spacing:-.7px!important}
+ #neo-home .neo-brand-name em{line-height:1.15!important;margin-top:2px!important}
+ #neo-home .neo-head-actions{grid-area:actions!important;grid-column:2!important;grid-row:1!important;
+  min-width:0!important;max-width:42vw!important;justify-content:flex-end!important}
+ #neo-home .neo-head-status{grid-area:status!important;grid-column:1/-1!important;grid-row:2!important;
+  min-width:0!important;display:flex!important;flex-wrap:wrap!important;justify-content:flex-start!important;
+  align-items:center!important;gap:6px 10px!important;font-size:12px!important;line-height:1.4!important}
+ #neo-home .neo-head-status time{white-space:normal!important}
+ #neo-home .neo-visitor{max-width:100%!important;white-space:normal!important}
+ #neo-home .neo-dashboard{position:relative;z-index:1}
+ #neo-home .neo-hero{height:auto!important;min-height:350px!important;display:flex!important;
+  flex-direction:column!important;justify-content:flex-end!important;overflow:hidden!important}
+ #neo-home .neo-hero-inner{position:relative!important;left:auto!important;right:auto!important;
+  bottom:auto!important;width:100%!important;min-width:0!important;padding:18px 54px 18px 16px!important}
+ #neo-home .neo-hero-title{font-size:clamp(21px,5.6vw,29px)!important;line-height:1.2!important;
+  overflow-wrap:anywhere!important}
+ #neo-home .neo-hero-description{font-size:13px!important;line-height:1.45!important}
+ #neo-home .neo-hero-credit{overflow-wrap:anywhere!important}
+ #neo-home .neo-hero-controls{right:9px!important;top:50%!important;transform:translateY(-50%)}
+}
+</style>
+</head>
 <body><a class="skip" href="#contenido">Saltar al contenido</a>
 <div id="weather-ribbon" class="weather-ribbon" role="region" aria-label="Tira de pronóstico meteorológico para la CDMX">
   <a class="weather-ribbon__brand" href="/cerca/" title="Explorar clima y noticias por alcaldía">🌸 CLIMA</a>
