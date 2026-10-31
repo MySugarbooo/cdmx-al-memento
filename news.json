@@ -1,37 +1,207 @@
 {
-  "updated": "2026-10-31 13:00 UTC",
+  "updated": "2026-10-31 13:53 UTC",
   "articles": [
     {
-      "title": "Información en tiempo real: estaciones del Metrobús sin servicio este 31 de octubre",
-      "description": "La nota de Infobae reúne reportes sobre la circulación o los tiempos del Metro de Ciudad de México. La operación puede cambiar durante el día y los informes de usuarios no son equivalentes a un comunicado oficial.",
-      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQTzBLenVmM2llVHJ4c0NWLXI2MWlldDRQWV9UcGZHclNKTWp3eHRSYkhRQjh4eFBZdFQydGdlUlBDSzBGb3dsd0Q5SE1KR3RBWHNxSS1TVVZCTUppUFU2eDBQWVRRbFVkWXdTLWJ3Sng2S01jU0ttMmhSbFAwdEc3Qlh5MFpuWjlqZUw0elpWTVNvZ1Nvdm5idmtEbV9aSkZlaGJxTmU2eTF1QlIzMlRidDBCNXRwemF1NWZ6Y2RrRDFkMmfSAd4BQVVfeXFMUEpQQXZpcHl5VHc1MHctWVh5Y213WVZ1bGdUVGxwdnhEZU1PcS1oQmFmTWxaTVl1MjMxWFdZcVV4blFwM1JaRVIxenVjYXpnbW1obUZ4anNDajFmMWtfVzdYRDc0NXgwQm9HQUtoZG5PMGNqSEJia1RmNTRXTnhZMGxZZUZsNk1xdHMxWnJPOEFYRUVtZmJFeGctUmx2a2tTVFJfNXlwdUR3S1JkN1h6ZHhTeFBwN2Z4Y0lIdVdQSUFiTDU5bG1hbUcxS3I5N3FTc1VxZjdTeDR1U3dISlV3?oc=5",
-      "source": "Infobae",
+      "title": "Caos vehicular y tráfico por bloqueos del IMSS en CDMX hoy",
+      "description": "La cobertura de www.adn40.mx se centra en movilizaciones de trabajadores del IMSS y en su posible o reportada repercusión sobre calles de Ciudad de México. Los trayectos y horarios deben revisarse en avisos recientes, pues una convocatoria no equivale a cierres confirmados durante todo el día.",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNaTdCZGFfTTh5a2pFZkZYOE5iV29aZzk1SWZaYnBhXzRwS1hOMjd0ZXhUQ1pYY0NWMFQ5NkQzNU1pem0wZWJZTlRyQUk2N3Rib2VyVG94TVVPNWFyandFZUFhRWRDaC1LdWVTUlVYM2UzbDV5enZOdzJTY1VMTW1hRHdUZzVIekFHU2dYakFfLUtlWnYzRlNHd29YaURmSDg?oc=5",
+      "source": "www.adn40.mx",
       "date": "2026-10-31",
-      "published_at": "2026-10-31T12:22:08Z",
+      "published_at": "2026-10-31T13:43:36Z",
+      "category": "Movilidad",
+      "borough": "",
+      "location": "Ciudad de México (sin alcaldía identificada)",
+      "local_url": "/noticias/?id=842af87aac73fa102193&mes=2026-10",
+      "brief": {
+        "lead": "La cobertura de www.adn40.mx se centra en movilizaciones de trabajadores del IMSS y en su posible o reportada repercusión sobre calles de Ciudad de México. Los trayectos y horarios deben revisarse en avisos recientes, pues una convocatoria no equivale a cierres confirmados durante todo el día.",
+        "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
+        "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "commons_99396538",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/MX_MM_PASEO_DE_LA_REFORMA.jpg/960px-MX_MM_PASEO_DE_LA_REFORMA.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "category": "Movilidad",
+        "borough": "",
+        "topic": "MX MM PASEO DE LA REFORMA",
+        "keywords": [
+          "Metrobús Paseo de la Reforma CDMX"
+        ],
+        "author": "Secretaría de Cultura CDMX",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:MX_MM_PASEO_DE_LA_REFORMA.jpg"
+      }
+    },
+    {
+      "title": "No te quedes atorado en el tráfico en CDMX hoy 31 de octubre: calles cerradas por el Gran Desfile Día de Muert",
+      "description": "La información publicada por TV Azteca trata un asunto registrado en la sección de Movilidad del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPcFkwMjliVnFxLTYzSzVzZjY4dmpTYjNYRXdqN0hQZXJlRjhqX21HNFg3X2xNTFZsdHpjUjBiYTdfa3RtazduMlIzS01QMGhRMUU4Vi12R3hiZmZ3YjFldC1USGtkWU45REMxOEdtblJlSzhnX0QxU2ZoeXRBSGo1ajJyaEZIcDhYcEp0b1I2WEdnX0hvRks4OTZTZWhVR2xKclJ6SnFIcGE0bFhwTXBsVWU1cWpmWm5Hdk55dDJaZm9QZ9IBzwFBVV95cUxQMDNTUDhrc1Q0Njl2SXVKLVpnRE5TRTFHc3EzRUJ4ZHFWUjlhTU52NlFuckNUOWlZVk1oZzNMaHJQMERxQ2hjcVlxc1NHTjVBb1ZqcjhVbXVDM1VyYnQ3bk1iMlhrcWRDdUlIZWxYVXJ0dGdvY05XUGhyekFWLVhydlZqd3RLek12SjhJTldXeDBibmNCYzJyRUZ1UXNNYWM0Rmx6RXB6aThCVTlvRjI3dkg4TnB4a2QzYlRCWXVGQTJyQ0k3M1A4WGJXaWFkMWs?oc=5",
+      "source": "TV Azteca",
+      "date": "2026-10-31",
+      "published_at": "2026-10-31T13:34:26Z",
+      "category": "Movilidad",
+      "borough": "",
+      "location": "Ciudad de México (sin alcaldía identificada)",
+      "local_url": "/noticias/?id=0381b097d0e14b5e4abd&mes=2026-10",
+      "brief": {
+        "lead": "La información publicada por TV Azteca trata un asunto registrado en la sección de Movilidad del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+        "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
+        "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "reciente_d3bf2851210c8f52",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Desfile_de_Catrinas_in_Mexico_City_2026_%2853%29.jpg/1280px-Desfile_de_Catrinas_in_Mexico_City_2026_%2853%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "category": "CDMX",
+        "borough": "",
+        "topic": "Desfile de Catrinas in Mexico City 2026 (53)",
+        "keywords": [
+          "CDMX"
+        ],
+        "author": "Gedankenstuecke",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Desfile_de_Catrinas_in_Mexico_City_2026_(53).jpg"
+      }
+    },
+    {
+      "title": "Ofrendas, pan de muerto.... Guía para disfrutar del Día de Muertos en la CdMx",
+      "description": "La información publicada por Sin Embargo trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPVDBmb21MT2Q3Rlo5YS03MHhKdG5jSjVjU2RGZEY2a1UyaGVEQTBnZExyZWZ6RURJTE5uN0lrSmV6eTlTNmVta29uRFZnZHVoX3JrXzBpZFZsMGV5aHVxOWhQUUhOcEFMSDk0bkdsUnBONlY5S2xVeHlhb2FreTN2eHZVSWVvUXNjWnVPVHhIVDFWZ2J0MERYT3dEb0JfVy1VNjJiV3pqTmhOSWM?oc=5",
+      "source": "Sin Embargo",
+      "date": "2026-10-31",
+      "published_at": "2026-10-31T13:30:33Z",
       "category": "CDMX",
       "borough": "",
-      "location": "Ubicación no indicada por el titular",
-      "local_url": "/noticias/?id=255748a3490b528aae2a&mes=2026-10",
+      "location": "Ciudad de México (sin alcaldía identificada)",
+      "local_url": "/noticias/?id=a0da98316371f616a7db&mes=2026-10",
       "brief": {
-        "lead": "La nota de Infobae reúne reportes sobre la circulación o los tiempos del Metro de Ciudad de México. La operación puede cambiar durante el día y los informes de usuarios no son equivalentes a un comunicado oficial.",
+        "lead": "La información publicada por Sin Embargo trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
         "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
         "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_movilidad_008",
+        "id": "reciente_a5a3bc52fa77c066",
         "kind": "representativa",
-        "url": "/assets/fotos/archivo_movilidad_008.jpg",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Desfile_de_Catrinas_in_Mexico_City_2026_%2852%29.jpg/1280px-Desfile_de_Catrinas_in_Mexico_City_2026_%2852%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "category": "CDMX",
+        "borough": "",
+        "topic": "Desfile de Catrinas in Mexico City 2026 (52)",
+        "keywords": [
+          "CDMX"
+        ],
+        "author": "Gedankenstuecke",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Desfile_de_Catrinas_in_Mexico_City_2026_(52).jpg"
+      }
+    },
+    {
+      "title": "¿Qué está pasando en el Metro y Metrobús hoy 31 de octubre?",
+      "description": "La información publicada por Infobae trata un asunto registrado en la sección de Metro del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOSVlRYTV4TkJPRWdiU0FROXpJd2ZST1Ntdmp5Y084ZW1OZ1FJMWgtMlNXN05XYTU1ZXRuOGNqOTdJUFRWbDJRVGdiWHpoeGh0Nkk5aVZ6eGZFNC0tMk9acnRHMHc2VG91TjhSRFVBY1NkX1lTUE1ycDJrMGJvdWYySzJMN29FVm1yODFjRzVoVzJLNkJ6UURRV1B4MjdRUXRSWUE?oc=5",
+      "source": "Infobae",
+      "date": "2026-10-31",
+      "published_at": "2026-10-31T13:05:59Z",
+      "category": "Metro",
+      "borough": "",
+      "location": "Ubicación no indicada por el titular",
+      "local_url": "/noticias/?id=3e66b45aefcd121628dd&mes=2026-10",
+      "brief": {
+        "lead": "La información publicada por Infobae trata un asunto registrado en la sección de Metro del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+        "context": "Los cambios en este sistema pueden afectar los horarios, las conexiones y la planeación de los viajes cotidianos.",
+        "pending": "El estado operativo, las estaciones y las alternativas de traslado deben comprobarse en los avisos actuales del Metro. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "commons_139480740",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Tren_ligero_y_metro_en_la_estaci%C3%B3n_Tasque%C3%B1a_04.jpg/960px-Tren_ligero_y_metro_en_la_estaci%C3%B3n_Tasque%C3%B1a_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
         "category": "Movilidad",
         "borough": "",
-        "topic": "Estación Buenavista Metrobús Ciudad de México",
+        "topic": "Tren ligero y metro en la estación Tasqueña 04",
         "keywords": [
-          "Movilidad"
+          "Tren ligero Ciudad de México"
+        ],
+        "author": "Luis Alvaz",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Tren_ligero_y_metro_en_la_estaci%C3%B3n_Tasque%C3%B1a_04.jpg"
+      }
+    },
+    {
+      "title": "Hoy No Circula: Así aplica este sábado 31 de octubre en CDMX y Edomex",
+      "description": "La información publicada por El Informador trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNRWdydUJvNGoxSlVuMHFqczRPYUpCUkZwRVV2YXd3SVRmR3NkMVFkN1lWUzQ0b21PcHZ0X3c4QmpjZnpQOXNuaU42UDN1VjlSSEpJRkM3bWxkWUNwNWpXdC1fdkNBRmtFV1h3SEZ2VktReGFqLXpiaVJ2N1BrT01JeG1qbDk4eG9wWmV2dnJvRVFQazlKYTJQVldIRFVyb2FVNmJkUjhTWUlWaXFIWk02a2JHOTlsX1VxVzBPV9IBwgFBVV95cUxNRldjekZrdk9uNFktaFlzVkxXcFBUQm5WT3B4YkV0YzA3eENDYU1uZ1U4SGxWRUI1N2pFV0htTUFRb3JzOW5SNTNLSHhRR0daa2ZYakpja2pQakVUNkVpYzJlSk81a2RTbTlOTTRiX3lrQWhCWXVrRHZtbjc1dkQyVDNCeFpycFFzWHJ1REsxRENSWmdVQlZmNE1FTmV6bkNFZ2VKWGNWcGRObTRKdUliRE5oYVVWYVJ0Y21YVWl0LXRmZw?oc=5",
+      "source": "El Informador",
+      "date": "2026-10-31",
+      "published_at": "2026-10-31T12:51:21Z",
+      "category": "CDMX",
+      "borough": "",
+      "location": "Ciudad de México (sin alcaldía identificada)",
+      "local_url": "/noticias/?id=a65fcce1f6b7cbea10e8&mes=2026-10",
+      "brief": {
+        "lead": "La información publicada por El Informador trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+        "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+        "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "contexto_trafico_eje_central",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Eje_Central_CDMX.jpg/1280px-Eje_Central_CDMX.jpg",
+        "category": "Movilidad",
+        "borough": "",
+        "topic": "Tráfico vehicular en Eje Central, Ciudad de México (fotografía de 2018)",
+        "keywords": [
+          "tráfico",
+          "vehículos",
+          "automóviles",
+          "movilidad",
+          "hoy no circula",
+          "vialidad"
+        ],
+        "author": "Sergio Estrada Flores",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:Eje_Central_CDMX.jpg"
+      }
+    },
+    {
+      "title": "La calidad del aire en la CDMX este 31 de octubre",
+      "description": "La información publicada por Infobae trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQWG1UaEstMk9wQzFqbHdUR0RsWHZIcjZNWUN6MWU2ZzFwc3dpOE1NdUJOSHlucGFQM2w5UHFfUHd1TDFfejlja3lWOEFHMWJhY1hzODE5Y2ZzTVd5Y1ZzT0RkTXdfSlVSb0J5NV9Uc2ljSW5jRi1aZmRCczlXSEhHVjdadUlycHdZUFNzblhRMUdMMGlGQmNV0gGyAUFVX3lxTE9OOUNKWkFzaWVNNFQzdzJ6QnRrTzFEc0tVNndES1pfSk8xTV90Nzd0Q2g3ODg1RDBtTVlCSzFqb0dKUWJvQmZoQ1JvVThDVGR4ekRrZnNlcVQ5NGNObjQ5M0U2TVJiZDJzem9lSWc4Y1RwZzd6RTJVRnVJb3VXZjNwdWlQZVVaU1liLXotRnE5aHd5WktXZmtsS05MWFNuR3lQellrVXB4Y01BZDVPVW1Wemc?oc=5",
+      "source": "Infobae",
+      "date": "2026-10-31",
+      "published_at": "2026-10-31T12:30:00Z",
+      "category": "CDMX",
+      "borough": "",
+      "location": "Ciudad de México (sin alcaldía identificada)",
+      "local_url": "/noticias/?id=cdc53d46e1ce10eb3829&mes=2026-10",
+      "brief": {
+        "lead": "La información publicada por Infobae trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+        "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+        "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "commons_149563961",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Alameda_Central_desde_el_aire_1.jpg/960px-Alameda_Central_desde_el_aire_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "category": "CDMX",
+        "borough": "",
+        "topic": "Alameda Central desde el aire 1",
+        "keywords": [
+          "Alameda Central Ciudad de México"
         ],
         "author": "ProtoplasmaKid",
         "license": "CC BY-SA 4.0",
         "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Estaci%C3%B3n_Buenavista_Metrob%C3%BAs_Ciudad_de_M%C3%A9xico.JPG"
+        "source": "https://commons.wikimedia.org/wiki/File:Alameda_Central_desde_el_aire_1.jpg"
       }
     },
     {
@@ -68,6 +238,39 @@
       }
     },
     {
+      "title": "Todo sobre el Gran Desfile de Día de Muertos, marchas y protestas este 31 de octubre",
+      "description": "Según la información destacada por Sin Embargo, manifestaciones o bloqueos forman parte de la jornada de movilidad capitalina. La ficha no demuestra por sí sola que todas las vías mencionadas sigan cerradas al momento de leerla.",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQVnk1a1hLcHNWcXYzSkoyM2VSemVZWl9McU90TjlvQzJKNDVJVGdIRTZrdXM5TVVxZWNBVGJ4WDdUc0c4ZG5iTnBkTE15TlZfeFRtaS1tSHd6NEgxcE9ZeTlYTnRObEN0bWdxTkZEWk9LaDNoRHJSXzE0X2tZNWEzTm9TdGp2bE1CVzdWeWJUcjhnamk0ZjJUM1pLVGdwNXJzV2dOQjJvbWNqSEZIN2E0SUFGWGpHVE03Unc?oc=5",
+      "source": "Sin Embargo",
+      "date": "2026-10-31",
+      "published_at": "2026-10-31T12:17:02Z",
+      "category": "Seguridad",
+      "borough": "",
+      "location": "Ubicación no indicada por el titular",
+      "local_url": "/noticias/?id=d67ccb10233327f7cc3b&mes=2026-10",
+      "brief": {
+        "lead": "Según la información destacada por Sin Embargo, manifestaciones o bloqueos forman parte de la jornada de movilidad capitalina. La ficha no demuestra por sí sola que todas las vías mencionadas sigan cerradas al momento de leerla.",
+        "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+        "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "commons_125279452",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Edificios_%28Paseo_de_la_Reforma%2C_CDMX%29.jpg/960px-Edificios_%28Paseo_de_la_Reforma%2C_CDMX%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "category": "CDMX",
+        "borough": "",
+        "topic": "Edificios (Paseo de la Reforma, CDMX)",
+        "keywords": [
+          "CDMX"
+        ],
+        "author": "Juan Carlos Fonseca Mata",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Edificios_(Paseo_de_la_Reforma,_CDMX).jpg"
+      }
+    },
+    {
       "title": "Clima CDMX hoy 31 de octubre: tráfico, Hoy No Circula y desfile de Día de Muertos",
       "description": "El pronóstico recogido por Maya Comunicación se refiere a condiciones meteorológicas en la capital. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
       "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5wdGZib0ctSHgyc0tTWkhKV3dyZ0EtMTdYYk1pUTk5VS1YZVhuVGg0Y2tDYV9jTzBIX3oxcFdPQ1Y0NUNKS1FEdDhoc0JTN3JOcy1mN2E2TmFVcEhJQ2tvbGJUaExHRUliNzhXZlI1SjY?oc=5",
@@ -98,72 +301,6 @@
         "license": "CC BY 4.0",
         "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
         "source": "https://commons.wikimedia.org/wiki/File:Cosecha_de_Lluvia_02.jpg"
-      }
-    },
-    {
-      "title": "La calidad del aire en la CDMX este 31 de octubre",
-      "description": "La información publicada por Infobae trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQWG1UaEstMk9wQzFqbHdUR0RsWHZIcjZNWUN6MWU2ZzFwc3dpOE1NdUJOSHlucGFQM2w5UHFfUHd1TDFfejlja3lWOEFHMWJhY1hzODE5Y2ZzTVd5Y1ZzT0RkTXdfSlVSb0J5NV9Uc2ljSW5jRi1aZmRCczlXSEhHVjdadUlycHdZUFNzblhRMUdMMGlGQmNV0gGyAUFVX3lxTE9OOUNKWkFzaWVNNFQzdzJ6QnRrTzFEc0tVNndES1pfSk8xTV90Nzd0Q2g3ODg1RDBtTVlCSzFqb0dKUWJvQmZoQ1JvVThDVGR4ekRrZnNlcVQ5NGNObjQ5M0U2TVJiZDJzem9lSWc4Y1RwZzd6RTJVRnVJb3VXZjNwdWlQZVVaU1liLXotRnE5aHd5WktXZmtsS05MWFNuR3lQellrVXB4Y01BZDVPVW1Wemc?oc=5",
-      "source": "Infobae",
-      "date": "2026-10-31",
-      "published_at": "2026-10-31T11:33:27Z",
-      "category": "CDMX",
-      "borough": "",
-      "location": "Ciudad de México (sin alcaldía identificada)",
-      "local_url": "/noticias/?id=cdc53d46e1ce10eb3829&mes=2026-10",
-      "brief": {
-        "lead": "La información publicada por Infobae trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-        "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-        "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "commons_149563961",
-        "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Alameda_Central_desde_el_aire_1.jpg/960px-Alameda_Central_desde_el_aire_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "category": "CDMX",
-        "borough": "",
-        "topic": "Alameda Central desde el aire 1",
-        "keywords": [
-          "Alameda Central Ciudad de México"
-        ],
-        "author": "ProtoplasmaKid",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Alameda_Central_desde_el_aire_1.jpg"
-      }
-    },
-    {
-      "title": "CDMX invirtió 74 mdp a la rehabilitación de 127 puentes peatonales",
-      "description": "La información publicada por El Sol de México trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxObWg3TFFrbVlnRDVOaENRZ2N2RnJCemc5NGEzZGRtM295Q3l5aVVhSGNOTnJXYXlBTy03d3RnQi1IUmtteWJ5ckdZLWQ4YmhYY0RudkF4OXBFaWhwMkJrcGNqTXB1Qno3UTBsMGJmdHhrVks5ZE1HZ2FvM3o0NDRwRnZmRjZiVnZQeXI1NTFaVktRbGNYa1B3dnp3cWYxUklReFVscHJxYmcxUWhZY25zZ3BHc0k4anhDY1E?oc=5",
-      "source": "El Sol de México",
-      "date": "2026-10-31",
-      "published_at": "2026-10-31T11:12:41Z",
-      "category": "CDMX",
-      "borough": "",
-      "location": "Ciudad de México (sin alcaldía identificada)",
-      "local_url": "/noticias/?id=7f092b96e88d54c94fbb&mes=2026-10",
-      "brief": {
-        "lead": "La información publicada por El Sol de México trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-        "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-        "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "commons_65983211",
-        "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Angel_de_la_Independencia_y_Torre_HSBC_CDMX.jpg/960px-Angel_de_la_Independencia_y_Torre_HSBC_CDMX.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "category": "CDMX",
-        "borough": "",
-        "topic": "Angel de la Independencia y Torre HSBC CDMX",
-        "keywords": [
-          "Ángel de la Independencia Ciudad de México"
-        ],
-        "author": "AnatGutman",
-        "license": "CC0",
-        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
-        "source": "https://commons.wikimedia.org/wiki/File:Angel_de_la_Independencia_y_Torre_HSBC_CDMX.jpg"
       }
     },
     {
@@ -250,85 +387,19 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "reciente_a5a3bc52fa77c066",
+        "id": "commons_153734741",
         "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Desfile_de_Catrinas_in_Mexico_City_2026_%2852%29.jpg/1280px-Desfile_de_Catrinas_in_Mexico_City_2026_%2852%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "category": "CDMX",
-        "borough": "",
-        "topic": "Desfile de Catrinas in Mexico City 2026 (52)",
-        "keywords": [
-          "CDMX"
-        ],
-        "author": "Gedankenstuecke",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Desfile_de_Catrinas_in_Mexico_City_2026_(52).jpg"
-      }
-    },
-    {
-      "title": "De Tepito a Meave: así aparece CDMX en el mapa de la piratería",
-      "description": "La información publicada por El Sol de México trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOd1dVRnJvN3lWcWJlWWd1dGtDcFN0SWJpZzlTbmNqUGxFWkQ2NTVISTRZdzBlZXBSdE5Ld1B6UkV6bnlONW55RHMzcGVkcWYxakJxQnZFWnhreGQ1enJWQVRHSDU5VWNpMllNMndTb0dUS0F0aVpPWnptVUswRzc3Q1I5WmtETFYzbVIxN3FIZE1kdDRyeXFSOHc5OVVfUmRIeW5nYWRHVjBVaHMwRXc?oc=5",
-      "source": "El Sol de México",
-      "date": "2026-10-31",
-      "published_at": "2026-10-31T09:27:41Z",
-      "category": "CDMX",
-      "borough": "",
-      "location": "Ciudad de México (sin alcaldía identificada)",
-      "local_url": "/noticias/?id=e3da15d845563ca1145e&mes=2026-10",
-      "brief": {
-        "lead": "La información publicada por El Sol de México trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-        "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-        "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "commons_145192393",
-        "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/DECLARATORIA_DE_CARNAVALES_COMO_PATRIMONIO_CULTURAL_INMATERIAL_DE_LA_CIUDAD_DE_M%C3%89XICO_03.jpg/960px-DECLARATORIA_DE_CARNAVALES_COMO_PATRIMONIO_CULTURAL_INMATERIAL_DE_LA_CIUDAD_DE_M%C3%89XICO_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "category": "CDMX",
-        "borough": "",
-        "topic": "DECLARATORIA DE CARNAVALES COMO PATRIMONIO CULTURAL INMATERIAL DE LA CIUDAD DE MÉXICO 03",
-        "keywords": [
-          "Calles Ciudad de México"
-        ],
-        "author": "Secretaría de Cultura CDMX",
-        "license": "CC BY 2.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-        "source": "https://commons.wikimedia.org/wiki/File:DECLARATORIA_DE_CARNAVALES_COMO_PATRIMONIO_CULTURAL_INMATERIAL_DE_LA_CIUDAD_DE_M%C3%89XICO_03.jpg"
-      }
-    },
-    {
-      "title": "¿Qué concierto hay hoy en CDMX? Agenda musical de Halloween completa 31 de octubre de 2026",
-      "description": "El medio Reporte Indigo presenta conciertos o actividades musicales anunciadas en Ciudad de México. La programación, disponibilidad y costos pueden cambiar; comprueba los datos del organizador.",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxObEFhVUxrQ24zd2EyYjhDeHFsU0tSZ25BLUVuYUNoVjFRQU8tMEh2bzdTNUJ6MVFMOHVtSFFLZmxnMTBFN0VScmFkTmdoRko3c1JEZy05bFotV1dQU2FHLV9zbE42SXZJako1ZDZYWlRnald3UTFyX0U3RjAtcE5nVWk1SG5HY2RTMWh3bzA0S05ZMzlwY0JiNEdwbw?oc=5",
-      "source": "Reporte Indigo",
-      "date": "2026-10-31",
-      "published_at": "2026-10-31T09:21:00Z",
-      "category": "CDMX",
-      "borough": "",
-      "location": "Ciudad de México (sin alcaldía identificada)",
-      "local_url": "/noticias/?id=e997e3b7f8f94c9626fc&mes=2026-10",
-      "brief": {
-        "lead": "El medio Reporte Indigo presenta conciertos o actividades musicales anunciadas en Ciudad de México. La programación, disponibilidad y costos pueden cambiar; comprueba los datos del organizador.",
-        "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-        "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "commons_153734744",
-        "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Vista_a%C3%A9rea_del_Castillo_de_Chapultepec_6.jpg/960px-Vista_a%C3%A9rea_del_Castillo_de_Chapultepec_6.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Vista_a%C3%A9rea_del_Castillo_de_Chapultepec_3.jpg/960px-Vista_a%C3%A9rea_del_Castillo_de_Chapultepec_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
         "category": "Cultura",
         "borough": "",
-        "topic": "Vista aérea del Castillo de Chapultepec 6",
+        "topic": "Vista aérea del Castillo de Chapultepec 3",
         "keywords": [
           "Castillo de Chapultepec Ciudad de México"
         ],
         "author": "Own work",
         "license": "CC BY-SA 4.0",
         "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Vista_a%C3%A9rea_del_Castillo_de_Chapultepec_6.jpg"
+        "source": "https://commons.wikimedia.org/wiki/File:Vista_a%C3%A9rea_del_Castillo_de_Chapultepec_3.jpg"
       }
     },
     {
@@ -365,6 +436,39 @@
       }
     },
     {
+      "title": "Retiran a sujeto que ingresó a las vías de la Línea 1 del Metro CDMX, entre Sevilla y Chapultepec",
+      "description": "La información publicada por Infobae trata un asunto registrado en la sección de Metro del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQRkNSQkFuekNHMDc3UERBUVR6MmN2UTZzRnN1ZTJtVEFpbWJzU3NSODZXSk1MNWVoNUhrWkt4STRTNnl3V0FDSVRUV2lFSXEtMWRfSHBPVmxhb2JvcGM2Y1J1Nl91VmMybDFDMmR2ejk1VTNnMURUNjB4UkdROVgyVWloeGppVkMtS1lQelVtRVI4QUFNMHVjQVNmOTZTSjBQb2R3V0M3RkdHeHJTS3I4SDhETFAyTzNfbWktS016T0ZiNEstNDlzTGZnaWo4MUxCUUkydXhB0gHwAUFVX3lxTE45UGRuaXVobG13QUpxZTh4OGdQamlYTjFQUmZ2RkpURGtXYkVPYU14cGFNMmhfdGZFR3oxZUdNQ0ZHWHh1YW9XcUxOOVVpYjFwRzZ4NmtkOXdpR1VDalIwNVUtOHlFZkhxQ3FDcHllSHRVRU5ndkdGUG42WVhJdUt4ZVZXVkRjdDN6RnowMXlLckNNU25FZVBoUVdSWnJpQmcxV1h0MEsyNU5PTm4tOFlGdjhGTkoxUEppWDMxa0ctampsaFpNSHBfQXk2alJfOGV5dlpfSU9raXpEeW5JYTZqV1ZZOXFTNk5ndzVmRkN2aA?oc=5",
+      "source": "Infobae",
+      "date": "2026-10-31",
+      "published_at": "2026-10-31T08:25:00Z",
+      "category": "Metro",
+      "borough": "",
+      "location": "Ciudad de México (sin alcaldía identificada)",
+      "local_url": "/noticias/?id=3781b7f52faf2acb2539&mes=2026-10",
+      "brief": {
+        "lead": "La información publicada por Infobae trata un asunto registrado en la sección de Metro del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+        "context": "Los cambios en este sistema pueden afectar los horarios, las conexiones y la planeación de los viajes cotidianos.",
+        "pending": "El estado operativo, las estaciones y las alternativas de traslado deben comprobarse en los avisos actuales del Metro. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "commons_164801808",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/Estaci%C3%B3n_Sevilla_de_la_L%C3%ADnea_1_del_Metro_de_la_Ciudad_de_M%C3%A9xico_-_01_-_Escaleras_de_salida.jpg/960px-Estaci%C3%B3n_Sevilla_de_la_L%C3%ADnea_1_del_Metro_de_la_Ciudad_de_M%C3%A9xico_-_01_-_Escaleras_de_salida.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "category": "Metro",
+        "borough": "",
+        "topic": "Estación Sevilla de la Línea 1 del Metro de la Ciudad de México - 01 - Escaleras de salida",
+        "keywords": [
+          "Metro Ciudad de México Línea 1 estación"
+        ],
+        "author": "ProtoplasmaKid",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Estaci%C3%B3n_Sevilla_de_la_L%C3%ADnea_1_del_Metro_de_la_Ciudad_de_M%C3%A9xico_-_01_-_Escaleras_de_salida.jpg"
+      }
+    },
+    {
       "title": "Clima en Ciudad de México hoy: el pronóstico para el sábado 31 de octubre de 2026",
       "description": "El pronóstico recogido por El Informador se refiere a condiciones meteorológicas en la capital. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
       "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNWlYxOFFaU08wSThmdWZfOFp4aGVYclY5ZjFJck9rNk8zQnJ5d25vTVd1bGtyTTF3eFc2RkFHUmVELWpkdmdCQTZ4RlJXMXJQVXRTU3FBa1BmWnpkUXR2ODRObk5GSTA2V1hDazFzZnVzN3VqaENpY2ZQNzdHZnJPWU5HRDBLVEZ3eXFubmpTZEFsVW5fd19zZ0h3TnN3TFJ1WlFmQm5RTzRoQmNBeEZjQm9zSVh3UmtkX1Rwd1ByaFo5bWRaQmNxamNkZFfSAdIBQVVfeXFMTkozS3lPZEtabXB0N2c1ZldKV3dqbEdQRTRUU1NTdmxOamVCdmh0OGlQQThNS0lDYjRjaUdyb21wWV91VzlFdmRUOWdJYm5fdklBYW01UjF6NzNpdUJ0ck50cVZOVVNZVGIzUTdrWjdxY0RKcWh5R2dUWWpGTXlFc2xlTHdaVHI0SnVtREZaeGo3cEp0eGppc2pxYzFyQjlIVHJPOVZTWGZnLTdRRGg3Xy1RRnYycUREdXNuanc3c0hlUUFOZTNMZ042YnJ3ZHJRUHlR?oc=5",
@@ -395,39 +499,6 @@
         "license": "CC BY-SA 4.0",
         "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
         "source": "https://commons.wikimedia.org/wiki/File:Plantas_con_gotas_de_lluvia,_Ciudad_de_M%C3%A9xico.jpg"
-      }
-    },
-    {
-      "title": "Retiran a sujeto que ingresó a las vías de la Línea 1 del Metro CDMX, entre Sevilla y Chapultepec",
-      "description": "La información publicada por Infobae trata un asunto registrado en la sección de Metro del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQRkNSQkFuekNHMDc3UERBUVR6MmN2UTZzRnN1ZTJtVEFpbWJzU3NSODZXSk1MNWVoNUhrWkt4STRTNnl3V0FDSVRUV2lFSXEtMWRfSHBPVmxhb2JvcGM2Y1J1Nl91VmMybDFDMmR2ejk1VTNnMURUNjB4UkdROVgyVWloeGppVkMtS1lQelVtRVI4QUFNMHVjQVNmOTZTSjBQb2R3V0M3RkdHeHJTS3I4SDhETFAyTzNfbWktS016T0ZiNEstNDlzTGZnaWo4MUxCUUkydXhB0gHwAUFVX3lxTE45UGRuaXVobG13QUpxZTh4OGdQamlYTjFQUmZ2RkpURGtXYkVPYU14cGFNMmhfdGZFR3oxZUdNQ0ZHWHh1YW9XcUxOOVVpYjFwRzZ4NmtkOXdpR1VDalIwNVUtOHlFZkhxQ3FDcHllSHRVRU5ndkdGUG42WVhJdUt4ZVZXVkRjdDN6RnowMXlLckNNU25FZVBoUVdSWnJpQmcxV1h0MEsyNU5PTm4tOFlGdjhGTkoxUEppWDMxa0ctampsaFpNSHBfQXk2alJfOGV5dlpfSU9raXpEeW5JYTZqV1ZZOXFTNk5ndzVmRkN2aA?oc=5",
-      "source": "Infobae",
-      "date": "2026-10-31",
-      "published_at": "2026-10-31T07:28:41Z",
-      "category": "Metro",
-      "borough": "",
-      "location": "Ciudad de México (sin alcaldía identificada)",
-      "local_url": "/noticias/?id=3781b7f52faf2acb2539&mes=2026-10",
-      "brief": {
-        "lead": "La información publicada por Infobae trata un asunto registrado en la sección de Metro del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-        "context": "Los cambios en este sistema pueden afectar los horarios, las conexiones y la planeación de los viajes cotidianos.",
-        "pending": "El estado operativo, las estaciones y las alternativas de traslado deben comprobarse en los avisos actuales del Metro. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "commons_164801808",
-        "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/Estaci%C3%B3n_Sevilla_de_la_L%C3%ADnea_1_del_Metro_de_la_Ciudad_de_M%C3%A9xico_-_01_-_Escaleras_de_salida.jpg/960px-Estaci%C3%B3n_Sevilla_de_la_L%C3%ADnea_1_del_Metro_de_la_Ciudad_de_M%C3%A9xico_-_01_-_Escaleras_de_salida.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "category": "Metro",
-        "borough": "",
-        "topic": "Estación Sevilla de la Línea 1 del Metro de la Ciudad de México - 01 - Escaleras de salida",
-        "keywords": [
-          "Metro Ciudad de México Línea 1 estación"
-        ],
-        "author": "ProtoplasmaKid",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Estaci%C3%B3n_Sevilla_de_la_L%C3%ADnea_1_del_Metro_de_la_Ciudad_de_M%C3%A9xico_-_01_-_Escaleras_de_salida.jpg"
       }
     },
     {
@@ -535,33 +606,33 @@
       }
     },
     {
-      "title": "Clima en Azcapotzalco: sábado 31 de octubre con cielo claro y ambiente templado",
-      "description": "El pronóstico recogido por El Heraldo de México se refiere a condiciones meteorológicas en Azcapotzalco. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
-      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPZkx2M0p1ZG1vbW9pZEh5dlVqcjJiUFp6cExTank1MkxFVHI0aV96WElSUDlPeG8yQVVSVC1SY1gxczA4Zm1Kem9vTF9MMW9BRlgzaklCQUtJUXpZVmZ3cVJ2UGF5ekQwZ3hVZ3c5OVZobEZwOC11RDVxM25VcDZ2VHpnUEdQaUpldXVQWGtXcmRSNUc1cjZiTzFMWDBZa2FUNmwyUFZTM3hzMk1Sa2pSVXZhekZ0Z2dyeHNhWHNBUHBZYVkyc0Z4aTA3dkJ2QUtqZGZsWWVR?oc=5",
+      "title": "Clima en Benito Juárez: sábado 31 de octubre con cielo claro y ambiente templado",
+      "description": "El pronóstico recogido por El Heraldo de México se refiere a condiciones meteorológicas en Benito Juárez. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
+      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOazBwQnAtR2RYRWVxWHRfRUdjUHZRWE4zY1RYOFZvYVdhT2E5ZkhGcG5sUDVPWVRFSEdDclFXMUZUdVY0RW9tbkNyc1VxUWRnUlZoWEJNSGJHUXE0d1FnNVg3dlpneTdiNlFBM2ltY1VUMFh6T0tYRmFxVnkyTjh2bXpfdjZZMWFMV21GTnU3NVZUb2thWEZjTUlKVk5qeVRfS09ENnNIaEdvMEZ3bWs4M0RybnE3WEpkQUVyM3B4YUNXM3RaU09NaEZ5LWtILWVxRHNoeGVjYw?oc=5",
       "source": "El Heraldo de México",
       "date": "2026-10-30",
       "published_at": "2026-10-31T05:00:00Z",
       "category": "CDMX",
-      "borough": "Azcapotzalco",
-      "location": "Azcapotzalco (mencionada en el titular)",
-      "local_url": "/noticias/?id=9b528e60a62874049eec&mes=2026-10",
+      "borough": "Benito Juárez",
+      "location": "Benito Juárez (mencionada en el titular)",
+      "local_url": "/noticias/?id=ddcb7e349105329c2a88&mes=2026-10",
       "brief": {
-        "lead": "El pronóstico recogido por El Heraldo de México se refiere a condiciones meteorológicas en Azcapotzalco. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
+        "lead": "El pronóstico recogido por El Heraldo de México se refiere a condiciones meteorológicas en Benito Juárez. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
         "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
         "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "alcaldia_azcapotzalco",
+        "id": "alcaldia_benito-juarez",
         "kind": "representativa",
-        "url": "/assets/alcaldias/azcapotzalco.jpg",
+        "url": "/assets/alcaldias/benito-juarez.jpg",
         "category": "CDMX",
-        "borough": "Azcapotzalco",
-        "topic": "Parroquia de Santa Catarina, Azcapotzalco",
-        "author": "Ivan alcantara",
+        "borough": "Benito Juárez",
+        "topic": "Parque Hundido, alcaldía Benito Juárez",
+        "author": "User:etnoboris",
         "license": "CC BY-SA 3.0",
         "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-        "source": "https://commons.wikimedia.org/wiki/File:PARROQUIA_DE_SANTA_CATARINA_%28AZCAPOTZALCO%29.jpg"
+        "source": "https://commons.wikimedia.org/wiki/File:Parque_Hundido.jpeg"
       }
     },
     {
@@ -793,39 +864,6 @@
       }
     },
     {
-      "title": "¡Que no te agarre el desfile! Estas calles estarán cerradas",
-      "description": "La información publicada por ADN 40 trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQeE02WWM5R2RrSEpwNy1WT0pxMTZIdVdySFhncmZ1UU5nOFFPaFJRX2FkOGI4Vl9wcVZBclRFMUZjUGNPUlRGek9LVnNJMnMwTVpsNm44ZkNrQ2ZQUktoTzVadUVzLXgxckRfUkNfWmhIMlZ2Ym1mcHZNS0pRMGFFYTY2TzJULUtNNHlHNzJDcG5yWkg5akJJWUktNmZXdk00Qzd4X3k4Nzk4VjUtV21TeVhKbHVYY1NpMlJnb214cmJ0dDdyUkR3aWNvUEpmOEU?oc=5",
-      "source": "ADN 40",
-      "date": "2026-10-30",
-      "published_at": "2026-10-31T03:24:18Z",
-      "category": "CDMX",
-      "borough": "",
-      "location": "Ubicación no indicada por el titular",
-      "local_url": "/noticias/?id=43963dd018160fdbaaaa&mes=2026-10",
-      "brief": {
-        "lead": "La información publicada por ADN 40 trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-        "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-        "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "reciente_d3bf2851210c8f52",
-        "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Desfile_de_Catrinas_in_Mexico_City_2026_%2853%29.jpg/1280px-Desfile_de_Catrinas_in_Mexico_City_2026_%2853%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "category": "CDMX",
-        "borough": "",
-        "topic": "Desfile de Catrinas in Mexico City 2026 (53)",
-        "keywords": [
-          "CDMX"
-        ],
-        "author": "Gedankenstuecke",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Desfile_de_Catrinas_in_Mexico_City_2026_(53).jpg"
-      }
-    },
-    {
       "title": "¿Vas al GP de México? El Metro CDMX abrirá más temprano este domingo",
       "description": "La información publicada por sdpnoticias trata un asunto registrado en la sección de Metro del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
       "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOSGU5N25yLXBUVkl5WUwwR3BMVnhOcGhYUFU0bUE3VmtVdi1Fem1ZSUgwQkR2LW9sZG94aGNaQnZhUG5UUklUZmpfbkc5VTlOM1VrZnNVdTNOUExJRlB2eWR5UUhTQ1hKTGRyLXA3Ulc2SGNXTUs4cnJfdHk2dXVQZUJVYjR2SG9kNTRmbFZqUW9VaFRPWkJMMGZHd0ZXVjFmN00wd1MxZV9rRzRO?oc=5",
@@ -889,6 +927,39 @@
         "license": "CC BY-SA 3.0",
         "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
         "source": "https://commons.wikimedia.org/wiki/File:Cacerolazo_contra_la_violencia_-_Ciudad_de_M%C3%A9xico_-_3.jpg"
+      }
+    },
+    {
+      "title": "Trabajadores del IMSS anuncian otra megamarcha en CDMX; comisión ingresa a Segob para dialogar",
+      "description": "La cobertura de El Financiero se centra en movilizaciones de trabajadores del IMSS y en su posible o reportada repercusión sobre calles de Ciudad de México. Los trayectos y horarios deben revisarse en avisos recientes, pues una convocatoria no equivale a cierres confirmados durante todo el día.",
+      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPZUdSd25aMEw3T2hjMXlTWlNnVnNjdUpJZ0lCTDB5OUFfQ2tKbzVfckxzcVhMQnl3MVl3ODFpSGt1WDVsZ0tyR1JFX21PNVhMLXltU0hMSDduWVFnSHVZcFF4bUpDc0NjQkV6V1c3MEFVU3VYN05JRGVDZ3ZKOU4yZUJaRV9tZmdPMWNEX2s0NGpHaEt1aGc5ZHJ2WUdjSVZoZVRobE5LUnhCNnF5RHdTdGtsRUxXeHRfVzZEbXJybUY1cnBPZHd2U1Rmb25KekdqM04xNG5zZWRkSldzTV9v?oc=5",
+      "source": "El Financiero",
+      "date": "2026-10-30",
+      "published_at": "2026-10-31T03:12:00Z",
+      "category": "CDMX",
+      "borough": "",
+      "location": "Ciudad de México (sin alcaldía identificada)",
+      "local_url": "/noticias/?id=c113e2e765569ecf7ff5&mes=2026-10",
+      "brief": {
+        "lead": "La cobertura de El Financiero se centra en movilizaciones de trabajadores del IMSS y en su posible o reportada repercusión sobre calles de Ciudad de México. Los trayectos y horarios deben revisarse en avisos recientes, pues una convocatoria no equivale a cierres confirmados durante todo el día.",
+        "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+        "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "commons_90047682",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Z%C3%B3calo_de_la_Ciudad_de_M%C3%A9xico%2C_M%C3%A9xico.jpg/960px-Z%C3%B3calo_de_la_Ciudad_de_M%C3%A9xico%2C_M%C3%A9xico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "category": "CDMX",
+        "borough": "",
+        "topic": "Zócalo de la Ciudad de México, México",
+        "keywords": [
+          "Zócalo Ciudad de México"
+        ],
+        "author": "Ale Ramos M",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Z%C3%B3calo_de_la_Ciudad_de_M%C3%A9xico,_M%C3%A9xico.jpg"
       }
     },
     {
@@ -1123,6 +1194,39 @@
       }
     },
     {
+      "title": "Megamarcha del IMSS EN VIVO: Comitiva ingresa a la Secretaría de Gobernación",
+      "description": "La cobertura de TV Azteca se centra en movilizaciones de trabajadores del IMSS y en su posible o reportada repercusión sobre calles de Ciudad de México. Los trayectos y horarios deben revisarse en avisos recientes, pues una convocatoria no equivale a cierres confirmados durante todo el día.",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNazlyRTlDbHpqRTE5NkRjVkQxWFE5OTBZaVp4eW1qUzZUY0dSR09PSGktdzBVajdCRF9RTkJ2RkhNQ1J4aldMRExlaU9pZWxoakVudTM1VnBITFBYeGhyMkNyTnF2ejZCV0ZadkFUQTR4V0ZuTnNFRjUyVWxNZkt3dk5RbWdDdmVSaHRyWXBDZlVMNGpNV3V1LXJoUFgxSGhaQWV3d2dWTU9wVWVr?oc=5",
+      "source": "TV Azteca",
+      "date": "2026-10-30",
+      "published_at": "2026-10-31T02:23:40Z",
+      "category": "CDMX",
+      "borough": "",
+      "location": "Ubicación no indicada por el titular",
+      "local_url": "/noticias/?id=2b8335e94faffbddfb3c&mes=2026-10",
+      "brief": {
+        "lead": "La cobertura de TV Azteca se centra en movilizaciones de trabajadores del IMSS y en su posible o reportada repercusión sobre calles de Ciudad de México. Los trayectos y horarios deben revisarse en avisos recientes, pues una convocatoria no equivale a cierres confirmados durante todo el día.",
+        "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+        "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "commons_98002544",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Sala_de_Tesorer%C3%ADa_en_Palacio_Nacional_-_V.jpg/960px-Sala_de_Tesorer%C3%ADa_en_Palacio_Nacional_-_V.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "category": "Gobierno",
+        "borough": "",
+        "topic": "Sala de Tesorería en Palacio Nacional - V",
+        "keywords": [
+          "Palacio Nacional Ciudad de México"
+        ],
+        "author": "J Mndz",
+        "license": "CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Sala_de_Tesorer%C3%ADa_en_Palacio_Nacional_-_V.jpg"
+      }
+    },
+    {
       "title": "Motociclista muere tras ser impactado por un camión en Coyoacán",
       "description": "La información publicada por El Sol de México trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
       "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNN1RaRUNZamxydWlFZm03aDU2UWs4OE9CMUpOdmhwbXhHNEFkR25nMjNKYWhCQXdSUjAtQl9iQ2M1MTRpcUlyMVJyY19nc3Y1M0ZNbXlsWUNkb002ZGtXLUFvLWJTZUhtMGFJX3BZUzdUS2YwdFJSeWlLcXJhOU83SmtybEc1YTFTc2pYM1dSS2RGZ0NERWR2NHUxd0Y1NllpQmxvRjVOaF9mci1vOGx4NA?oc=5",
@@ -1189,39 +1293,6 @@
       }
     },
     {
-      "title": "CDMX suma ocho semanas sin casos de sarampión",
-      "description": "La información publicada por Once Noticias Digital trata un asunto registrado en la sección de Gobierno del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPMUYxdHlYMkJhdXZ4SFpuLXJHREppeUE5RkZ2UEtKSTFEYmY5VUFQWVNlOGU1WXh2Vm5DNEhTdklOOGhMMzR3ZVFuLU9pQ1Bpd3JBXzlXSGw3ejgyRnI1anhNODgweThSYi1GYXI1QzFiM3dKbHdzOGxrTnlwWm0xcjVadEVySC1BY21HeTYtb3o5Z9IBkgFBVV95cUxPMUYxdHlYMkJhdXZ4SFpuLXJHREppeUE5RkZ2UEtKSTFEYmY5VUFQWVNlOGU1WXh2Vm5DNEhTdklOOGhMMzR3ZVFuLU9pQ1Bpd3JBXzlXSGw3ejgyRnI1anhNODgweThSYi1GYXI1QzFiM3dKbHdzOGxrTnlwWm0xcjVadEVySC1BY21HeTYtb3o5Zw?oc=5",
-      "source": "Once Noticias Digital",
-      "date": "2026-10-30",
-      "published_at": "2026-10-31T01:51:18Z",
-      "category": "Gobierno",
-      "borough": "",
-      "location": "Ciudad de México (sin alcaldía identificada)",
-      "local_url": "/noticias/?id=828e194783ec996b9372&mes=2026-10",
-      "brief": {
-        "lead": "La información publicada por Once Noticias Digital trata un asunto registrado en la sección de Gobierno del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-        "context": "Las decisiones administrativas pueden influir en servicios, trámites y derechos; conviene conocer sus condiciones y a quiénes afectan.",
-        "pending": "Es indispensable consultar los acuerdos, comunicados o documentos oficiales antes de dar una medida por vigente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "commons_186333073",
-        "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Fachada_del_Palacio_Nacional%2C_Ciudad_de_M%C3%A9xico_01.jpg/960px-Fachada_del_Palacio_Nacional%2C_Ciudad_de_M%C3%A9xico_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "category": "Gobierno",
-        "borough": "",
-        "topic": "Fachada del Palacio Nacional, Ciudad de México 01",
-        "keywords": [
-          "Palacio Nacional Ciudad de México"
-        ],
-        "author": "Luisalvaz",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Fachada_del_Palacio_Nacional,_Ciudad_de_M%C3%A9xico_01.jpg"
-      }
-    },
-    {
       "title": "Asiste al Desfile de Día de Muertos 2026",
       "description": "La información publicada por Once Noticias Digital trata un asunto registrado en la sección de Cultura del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
       "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQZU1CVXU4ZWRrTTdYSnJBNDcxRFJaUldlUi1HUkNiLXFZMExWaXUxckZTbnQ3NGhBQ3kxakZ2UWxHWTJEY0RnN0t6NWlCNHprZ08tT0t5SmNJQUJIMWFPZVpCNXl0bEl0YWZ1a0VwVXB5bUU4SmI5M2NVVURlZU52YVRBU0dkQUQ4a3FmdWNFVWI2eEsyLUHSAZYBQVVfeXFMUGVNQlV1OGVka003WEpyQTQ3MURSWlJXZVItR1JDYi1xWTBMVml1MXJGU250NzRoQUN5MWpGdlFsR1kyRGNEZzdLejVpQjR6a2dPLU9LeUpjSUFCSDFhT2VaQjV5dGxJdGFmdWtFcFVweW1FOEpiOTNjVVVEZWVOdmFUQVNHZEFEOGtxZnVjRVViNnhLMi1B?oc=5",
@@ -1285,39 +1356,6 @@
         "license": "CC BY 4.0",
         "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
         "source": "https://commons.wikimedia.org/wiki/File:Adquisici%C3%B3n_patrullas_para_la_Polic%C3%ADa_01.jpg"
-      }
-    },
-    {
-      "title": "Destaca titular de SOBSE 2 mil 697 obras en dos años de gobierno en CDMX",
-      "description": "En su información, El Sol de México aborda una decisión, declaración o debate relacionado con las instituciones de la ciudad. Conviene distinguir la intención anunciada de las resoluciones que hayan sido aprobadas y publicado oficialmente.",
-      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQU0JDMXN4andLaGZaS3BBUHdUNnNqSVFuQkhyXzlnWU9BT1A0VFFBZUctakVUMDI3UGpmQ2hlT1QxRTFncTVwX21HOWdBMmVnZWVrZ0xqbXF4WnFXdndzd3I2YlhhWWJtV0g2ZElQT3o0ZEhKZjJkZFdJVzlrUkhxOTc5V0lLZGlEUks0T1FRM0R3clg1VTQ5ejVqOG1OblRaMm1wLW0yUXhySDhIYkdtanhIWWpXakNyRHBiS1NyVmlnZDF6RTRjSmpn?oc=5",
-      "source": "El Sol de México",
-      "date": "2026-10-30",
-      "published_at": "2026-10-31T01:21:14Z",
-      "category": "Gobierno",
-      "borough": "",
-      "location": "Ciudad de México (sin alcaldía identificada)",
-      "local_url": "/noticias/?id=166dd32e3778c8c0743d&mes=2026-10",
-      "brief": {
-        "lead": "En su información, El Sol de México aborda una decisión, declaración o debate relacionado con las instituciones de la ciudad. Conviene distinguir la intención anunciada de las resoluciones que hayan sido aprobadas y publicado oficialmente.",
-        "context": "Las decisiones administrativas pueden influir en servicios, trámites y derechos; conviene conocer sus condiciones y a quiénes afectan.",
-        "pending": "Es indispensable consultar los acuerdos, comunicados o documentos oficiales antes de dar una medida por vigente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "archivo_gobierno_003",
-        "kind": "representativa",
-        "url": "/assets/fotos/archivo_gobierno_003.jpg",
-        "category": "Gobierno",
-        "borough": "",
-        "topic": "Palacio Nacional Ciudad de México DF",
-        "keywords": [
-          "Gobierno"
-        ],
-        "author": "Crater_sp",
-        "license": "CC BY-SA 2.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Palacio_Nacional_Ciudad_de_M%C3%A9xico_DF.jpg"
       }
     },
     {
@@ -1483,6 +1521,39 @@
       }
     },
     {
+      "title": "¡Y que arranque la carrera! Dónde disfrutar de la fiebre por la F1 en la CDMX",
+      "description": "La información publicada por Chilango trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNdGhOT1dIRGI3UXhGWUl0X0dOdVp0QldyZUhFNGEwVmdIeWhlSXp3NWxoRmw0Rk9nWDBBc2xLMjVCTTFHQXpteXhyZUZ4SjB6Vk9qdTc2Y0E3elZqRzltMVdNTmtsWXduNVR4LXFkMlY1NHUxMjY0eHNLRTV0bEVMQXRGMkM2QQ?oc=5",
+      "source": "Chilango",
+      "date": "2026-10-30",
+      "published_at": "2026-10-31T00:12:48Z",
+      "category": "CDMX",
+      "borough": "",
+      "location": "Ciudad de México (sin alcaldía identificada)",
+      "local_url": "/noticias/?id=ed149b8a03eb6d969b42&mes=2026-10",
+      "brief": {
+        "lead": "La información publicada por Chilango trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+        "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+        "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "commons_149171771",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Plaza_de_la_Constituci%C3%B3n_-_Z%C3%B3calo_de_la_Ciudad_de_M%C3%A9xico_-_1.jpg/960px-Plaza_de_la_Constituci%C3%B3n_-_Z%C3%B3calo_de_la_Ciudad_de_M%C3%A9xico_-_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "category": "CDMX",
+        "borough": "",
+        "topic": "Plaza de la Constitución - Zócalo de la Ciudad de México - 1",
+        "keywords": [
+          "CDMX"
+        ],
+        "author": "ProtoplasmaKid",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Plaza_de_la_Constituci%C3%B3n_-_Z%C3%B3calo_de_la_Ciudad_de_M%C3%A9xico_-_1.jpg"
+      }
+    },
+    {
       "title": "Caos en el Metro CDMX: Hay retrasos de hasta 30 minutos en Línea 1",
       "description": "La nota de TV Azteca reúne reportes sobre la circulación o los tiempos del Metro de Ciudad de México. El titular menciona Línea 1. La operación puede cambiar durante el día y los informes de usuarios no son equivalentes a un comunicado oficial.",
       "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOU19kbjA0bXRGYzlfeEIxVVBJLUtGSXQ0emZtdjZqWjNURG5IS1NmYWt5WFZTTjdPTEVrWGtkZXJYRVl5enZiRUJmNVl1dk9BazduSmZLWFhTNmlUTkFzOTgxUWhXTTJ5eTRBR2dCaVppVGpmSGJvNFlNcDdFQjJlV1dVV0VtVEY5MGJ0NXFoYk9qNXdOMmkxUkd6ZFJDcHgwaHVrRVpqWmZhYVRYQTZEM2N4Z21kLWZGVEw1Ymc5OVpMVmEzcEVibWJoYUM2TllCamZz0gHgAUFVX3lxTE5CRzlVX1ZuMmlZejBsM3BkamEtWVFnR2ZueERROFJNV2pkUGZuMDZWWmJlTDVvalJyaFowcHVBQTdOdmNtd09TNzFXVVNHOTZTWHBBTmZJQldoNS1jUE9zRks5VUVwMVM4ZEt5b0Z0YV9tdFlUZ2hBcWN2SnZiQVFJeFdWanB1TS1JWmszQVRsNjdtNUliYl9aMUZwRU1SOHRna0h5NldWRUxrYnNlcWJvNEhSX2VPcXYtRnZQVjFGWmhfTmdzU1R3QWktWUFLVnJTV0l4Rlp4LU5ycTlFWmFq?oc=5",
@@ -1533,24 +1604,19 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "contexto_trafico_eje_central",
+        "id": "commons_48005112",
         "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Eje_Central_CDMX.jpg/1280px-Eje_Central_CDMX.jpg",
-        "category": "Movilidad",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Polic%C3%ADa_de_tr%C3%A1nsito_Ciudad_de_M%C3%A9xico_con_automovilistas.jpg/960px-Polic%C3%ADa_de_tr%C3%A1nsito_Ciudad_de_M%C3%A9xico_con_automovilistas.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "category": "Seguridad",
         "borough": "",
-        "topic": "Tráfico vehicular en Eje Central, Ciudad de México (fotografía de 2018)",
+        "topic": "Policía de tránsito Ciudad de México con automovilistas",
         "keywords": [
-          "tráfico",
-          "vehículos",
-          "automóviles",
-          "movilidad",
-          "hoy no circula",
-          "vialidad"
+          "Policía Ciudad de México"
         ],
-        "author": "Sergio Estrada Flores",
-        "license": "CC BY 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
-        "source": "https://commons.wikimedia.org/wiki/File:Eje_Central_CDMX.jpg"
+        "author": "ProtoplasmaKid",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Polic%C3%ADa_de_tr%C3%A1nsito_Ciudad_de_M%C3%A9xico_con_automovilistas.jpg"
       }
     },
     {
@@ -1786,39 +1852,6 @@
       }
     },
     {
-      "title": "GOBIERNO DE LA CIUDAD DE MÉXICO INAUGURA OFRENDA MONUMENTAL 2026 EN EL ZÓCALO Y OBTIENE EL TÍTULO DE GUINNESS WORLD RECORDS™️ CON LA CATRINA MÁS ALTA DEL MUNDO",
-      "description": "En su información, Certeza Diario aborda una decisión, declaración o debate relacionado con las instituciones de la ciudad. Conviene distinguir la intención anunciada de las resoluciones que hayan sido aprobadas y publicado oficialmente.",
-      "url": "https://news.google.com/rss/articles/CBMingJBVV95cUxPdXdRQ2ZFNklNYnZ0MmJTblBhLWhiLU1FYm9VRjNaR01XZFc1U0FxWFBiVmtxZmlPNG9rWGlNM3YyZjYtWmdxT3pkMUs3NTRNSGVzMThjMENvSmxWa3VlWWJla1V4MGQ2OFBZcnVpRTV5cGMybjZEbVJuem9lZ3NZU2RlLWpzWVYyWUNvSVFBeXNoczFmeEVCTlZibWxpekx2M2RZSFp5MGxna0dKbE5kRXNUcFoxZVlTcTVCRTFMQ0Fvd2FmYlppWjdpWUxyRVNiVGVZMnA1cUpiRUNmbjBEcXVNVTJvUkE4VG4zZWR6M0JLQTdMZnppMG9rZmxaVE1GVkt1WUcyNXJJV2dCMkV3cFpMU0hzbHJuR21md1RB?oc=5",
-      "source": "Certeza Diario",
-      "date": "2026-10-30",
-      "published_at": "2026-10-30T22:52:33Z",
-      "category": "Gobierno",
-      "borough": "",
-      "location": "Ciudad de México (sin alcaldía identificada)",
-      "local_url": "/noticias/?id=432f9de0ca963ea54824&mes=2026-10",
-      "brief": {
-        "lead": "En su información, Certeza Diario aborda una decisión, declaración o debate relacionado con las instituciones de la ciudad. Conviene distinguir la intención anunciada de las resoluciones que hayan sido aprobadas y publicado oficialmente.",
-        "context": "Las decisiones administrativas pueden influir en servicios, trámites y derechos; conviene conocer sus condiciones y a quiénes afectan.",
-        "pending": "Es indispensable consultar los acuerdos, comunicados o documentos oficiales antes de dar una medida por vigente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "commons_111185857",
-        "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Fachada_del_Museo_Nacional_de_las_Culturas_del_Mundo_INAH%2C_Centro_Hist%C3%B3rico%2C_Ciudad_de_M%C3%A9xico.jpg/960px-Fachada_del_Museo_Nacional_de_las_Culturas_del_Mundo_INAH%2C_Centro_Hist%C3%B3rico%2C_Ciudad_de_M%C3%A9xico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "category": "Cultura",
-        "borough": "",
-        "topic": "Fachada del Museo Nacional de las Culturas del Mundo INAH, Centro Histórico, Ciudad de México",
-        "keywords": [
-          "Museo Nacional de Antropología Ciudad de México"
-        ],
-        "author": "Karla Jaqueline Peniche Romero",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Fachada_del_Museo_Nacional_de_las_Culturas_del_Mundo_INAH,_Centro_Hist%C3%B3rico,_Ciudad_de_M%C3%A9xico.jpg"
-      }
-    },
-    {
       "title": "Metro CDMX tendrá maratón gratuito de películas de terror en la Glorieta de Insurgentes",
       "description": "La información publicada por PolíticoMX trata un asunto registrado en la sección de Metro del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
       "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPYThzOTI4YjhOZjk3V3BVZi00NGNSLWloem01WDFleDRBVUI1VkZjOUlMWEQ1NEJfZThDNHpRZmo5SDZycjJOdTBFTHhrYjBIbGU3VjN5alBlbF9PUGNhN0FUaG9IRVE3WnNQN050a3lfX2lZMThGYTh0NXQtSExqQUx4OXcxQnJyaGo2UEJBT3FBVE9TSEkxbloxMnlPTWdvSmhKMTNrZGl0UXVSQ1NwYW1uOGtDZm1CejhV?oc=5",
@@ -1869,49 +1902,19 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "alcaldia_benito-juarez",
+        "id": "commons_153940184",
         "kind": "representativa",
-        "url": "/assets/alcaldias/benito-juarez.jpg",
-        "category": "CDMX",
-        "borough": "Benito Juárez",
-        "topic": "Parque Hundido, alcaldía Benito Juárez",
-        "author": "User:etnoboris",
-        "license": "CC BY-SA 3.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Parque_Hundido.jpeg"
-      }
-    },
-    {
-      "title": "Mega Rodada del Terror 2026 en CDMX: fechas, horarios y operativo de seguridad",
-      "description": "La información publicada por sdpnoticias trata un asunto registrado en la sección de Seguridad del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNMnpJbkNZeXU5WmtsZmhyYTd4VWl0dndmd1F0aWoyamVqTmV0cDdoU2xKMnVKeElMWHhoMC03S1l5ZE5leGFSWENoc1JsZ1RYWHRVMVVYYVBUdUZRYjBIVkk4bFVwM1NpWXVibHZsUE9wVi1LeWxVQTF6MG1xTnh4Mml2Qmg0R01heEYxWEMtM0kxUmYzdXFzNzlBRm5uY3BNWXM5TmY4aUFrTXVobk44TGdlVklBVEhmU1E?oc=5",
-      "source": "sdpnoticias",
-      "date": "2026-10-30",
-      "published_at": "2026-10-30T22:38:04Z",
-      "category": "Seguridad",
-      "borough": "",
-      "location": "Ciudad de México (sin alcaldía identificada)",
-      "local_url": "/noticias/?id=7efd456d2df28387feec&mes=2026-10",
-      "brief": {
-        "lead": "La información publicada por sdpnoticias trata un asunto registrado en la sección de Seguridad del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-        "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
-        "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "seguridad",
-        "kind": "representativa",
-        "url": "/assets/fotos/seguridad.jpg",
-        "category": "Seguridad",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Entrega_de_Patrullas_en_Benito_Ju%C3%A1rez_03.jpg/960px-Entrega_de_Patrullas_en_Benito_Ju%C3%A1rez_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "category": "Alcaldías",
         "borough": "",
-        "topic": "Patrulla de Ciudad de México",
+        "topic": "Entrega de Patrullas en Benito Juárez 03",
         "keywords": [
-          "Seguridad"
+          "Benito Juárez alcaldía Ciudad de México"
         ],
-        "author": "RainerRowe",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.es",
-        "source": "https://commons.wikimedia.org/wiki/File:Patrulla_cdmx.jpg"
+        "author": "Gobierno de la Ciudad de México",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Entrega_de_Patrullas_en_Benito_Ju%C3%A1rez_03.jpg"
       }
     },
     {
