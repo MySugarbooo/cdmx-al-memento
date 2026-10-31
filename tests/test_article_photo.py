@@ -18,6 +18,10 @@ class ArticlePhotoTests(unittest.TestCase):
         self.assertIn("Autor de prueba", html)
         self.assertIn("CC BY 4.0", html)
 
+    def test_borough_photo(self):
+        self.assertIn('src="/assets/alcaldias/azcapotzalco.jpg"',
+                      render_photo({"photo": {"url": "/assets/alcaldias/azcapotzalco.jpg"}}))
+
     def test_https_remote_photo(self):
         self.assertIn('src="https://example.org/image.jpg"',
                       render_photo({"photo": {"url": "https://example.org/image.jpg"}}))
