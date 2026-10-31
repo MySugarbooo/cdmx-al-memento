@@ -28,12 +28,12 @@ def render_photo(item):
     image_url = str(photo.get("url") or "")
     # HTTPS remoto o ruta local absoluta sin segmentos de recorrido ni URL de protocolo.
     parsed_image = urlparse(image_url)
-    local_image = (image_url.startswith("/assets/fotos/") and
+    local_image = (image_url.startswith(("/assets/fotos/", "/assets/alcaldias/")) and
                    not image_url.startswith("//") and
                    not parsed_image.scheme and not parsed_image.netloc and
                    not parsed_image.query and not parsed_image.fragment and
                    all(part not in (".", "..") for part in parsed_image.path.split("/")) and
-                   re.fullmatch(r"/assets/fotos/[a-zA-Z0-9_./-]+", parsed_image.path) is not None)
+                   re.fullmatch(r"/assets/(?:fotos|alcaldias)/[a-zA-Z0-9_./-]+", parsed_image.path) is not None)
     if parsed_image.scheme != "https" and not local_image:
         return ""
     caption = "Imagen representativa; no corresponde necesariamente al hecho." if photo.get("kind") == "representativa" else "Fotografía asociada a la noticia."
@@ -82,6 +82,23 @@ def render(item, ident):
 def main():
     data = json.loads(SOURCE.read_text(encoding="utf-8"))
     articles = data.get("articles") or []
+    # Incluir hemeroteca: news.json solo contiene las noticias más recientes.
+    manifest = ROOT / "archivo" / "meses.json"
+    if manifest.is_file():
+        months = json.loads(manifest.read_text(encoding="utf-8")).get("months", [])
+        for month in months:
+            month_name = month.get("month", "")
+            if not re.fullmatch(r"\\d{4}-\\d{2}", month_name):
+                continue
+            archive_path = ROOT / "archivo" / (month_name + ".json")
+            if not archive_path.is_file():
+                raise RuntimeError("Archivo mensual ausente: " + str(archive_path))
+            archived = json.loads(archive_path.read_text(encoding="utf-8"))
+            if isinstance(archived, dict):
+                archived = archived.get("articles", archived.get("news", []))
+            if not isinstance(archived, list):
+                raise RuntimeError("Formato de archivo mensual inválido: " + month_name)
+            articles.extend(archived)
     OUT.mkdir(exist_ok=True)
     urls = []
     recent_links = []
@@ -91,7 +108,7 @@ def main():
         if not ident or not item.get("title"):
             continue
         if ident in seen_ids:
-            raise RuntimeError("Duplicate article identifier: " + ident)
+            continue  # La versión reciente tiene prioridad sobre la copia del archivo.
         seen_ids.add(ident)
         dest = OUT / ident
         dest.mkdir(exist_ok=True)
