@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-31 18:56 UTC",
+  "updated": "2026-10-31 19:46 UTC",
   "boroughs": [
     {
       "name": "La Magdalena Contreras",
@@ -5927,8 +5927,38 @@
     },
     {
       "name": "Iztacalco",
-      "count": 90,
+      "count": 91,
       "articles": [
+        {
+          "title": "Inauguran centro de evaluación laboral en Iztacalco; buscan facilitar empleos formales",
+          "description": "El medio El Sol de México aborda una posible pérdida de empleos en la capital mediante una comparación con otra entidad. Los datos, el periodo y la metodología deben verificarse antes de sacar conclusiones sobre el mercado laboral.",
+          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQSGk2cmxiVUh3a3BNY0psZ2x1VFduTEFiMDYzOVNFeFpoVlhqM2dNekZ2NmtfM1RXWVdyR3c2QTVudVRFQi1sVXdDWUM0RXVvTzB0S3RMaWZBemhycE0yYkIzd1dGaUVCLWZFVS1qNGFMaG1XSjk3R2QySFJ6eWJJR1hvdmdCRWJIejVtUTVJczVMdEFWeXJsbDRCYlNTRl9vS1JDN2NJWW4tOUYxOFlqQU1wYnIwajRHNnIzOUdRYnRDVV9OWlVCRlpiWkg4dw?oc=5",
+          "source": "El Sol de México",
+          "date": "2026-10-31",
+          "published_at": "2026-10-31T18:58:46Z",
+          "category": "CDMX",
+          "borough": "Iztacalco",
+          "location": "Iztacalco (mencionada en el titular)",
+          "local_url": "/noticias/?id=1b4a1b977df6b46e5d56&mes=2026-10",
+          "brief": {
+            "lead": "El medio El Sol de México aborda una posible pérdida de empleos en la capital mediante una comparación con otra entidad. Los datos, el periodo y la metodología deben verificarse antes de sacar conclusiones sobre el mercado laboral.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_iztacalco",
+            "kind": "representativa",
+            "url": "/assets/alcaldias/iztacalco.jpg",
+            "category": "CDMX",
+            "borough": "Iztacalco",
+            "topic": "Iglesia de San Matías en el antiguo pueblo de Iztacalco",
+            "author": "AlejandroLinaresGarcia",
+            "license": "CC BY-SA 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:SanMatiasChurchIztacalco02.jpg"
+          }
+        },
         {
           "title": "Gran Premio de México Hoy: Alternativas Viales por Evento en Iztacalco",
           "description": "La información publicada por N+ trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -6617,39 +6647,6 @@
             "license": "CC BY 3.0",
             "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
             "source": "https://commons.wikimedia.org/wiki/File:CICLOTON_DF_IZTACALCO_(BY_LION)_-_panoramio.jpg"
-          }
-        },
-        {
-          "title": "FISCALÍA CAPITALINA VINCULA A PROCESO A DOS MUJERES POR ROBO DE VALORADO EN 200 MIL PESOS EN LA ALCALDÍA IZTACALCO",
-          "description": "La información publicada por CDMX trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxONzQ2dE9ZOGE4TnpTMjVVQmd4QzZnZDl6Y1lFc0RpNENydzd4Rkh6ZW0xNzFGRTQ5TVJZYi01ZWdmemwtR2JJRXJMVU84M0wtV0htaUNuX1BfdTlJWThBcWVJWWMxWUVBdkc1S1h4TUh2a2Q4NldxZC1GN3dZbmQycXpXaUhOYk9VNXdxNExwZDVtaWhucGVRcU5aQVc4TFVkdlNpdExNR0JlcDJSaFhBWnhGZXJlSFo5SGJQYy1HTmIyaWEzRFlidW96a0p6WHhadE5qWlQzYlVKTlZwUGNwR2tkNWdWLTFqeVE?oc=5",
-          "source": "CDMX",
-          "date": "2026-10-23",
-          "published_at": "2026-10-23T07:00:00Z",
-          "category": "CDMX",
-          "borough": "Iztacalco",
-          "location": "Iztacalco (mencionada en el titular)",
-          "local_url": "/noticias/?id=f036f10fb86b3c45ff7c&mes=2026-10",
-          "brief": {
-            "lead": "La información publicada por CDMX trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "commons_75042711",
-            "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/007290-001_ESCUELA_DE_PINTUA_EN_IZTACALCO_FEBRERO_19_1946_%2831757715646%29.jpg/960px-007290-001_ESCUELA_DE_PINTUA_EN_IZTACALCO_FEBRERO_19_1946_%2831757715646%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "category": "Alcaldías",
-            "borough": "",
-            "topic": "007290-001 ESCUELA DE PINTUA EN IZTACALCO FEBRERO 19 1946 (31757715646)",
-            "keywords": [
-              "Iztacalco Ciudad de México"
-            ],
-            "author": "Gobierno CDMX",
-            "license": "CC0",
-            "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
-            "source": "https://commons.wikimedia.org/wiki/File:007290-001_ESCUELA_DE_PINTUA_EN_IZTACALCO_FEBRERO_19_1946_(31757715646).jpg"
           }
         }
       ]
