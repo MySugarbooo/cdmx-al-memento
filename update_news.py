@@ -293,6 +293,15 @@ def consolidate_archive(new_items, cutoff, updated):
             if not old or (item.get("published_at") and not old.get("published_at")):
                 existing[key] = item
 
+    # Reparar el histórico gradualmente sin sobrescribir fotografías ya verificadas.
+    # Limitar cada ejecución evita cambios masivos y tiempos excesivos en Actions.
+    missing = [item for item in existing.values() if not item.get("photo")]
+    batch = missing[:300]
+    if batch:
+        stats = assign_photos(batch)
+        print("Fotografías del archivo (lote):", len(batch), "revisadas;",
+              stats["assigned"], "asignadas;", len(missing) - len(batch), "pendientes de revisar")
+
     by_month = defaultdict(list)
     by_borough = defaultdict(list)
     for item in existing.values():
