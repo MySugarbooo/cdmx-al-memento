@@ -21,8 +21,31 @@ def article_id(item):
     match = re.fullmatch(r"/noticias/\?id=([a-f0-9]{20})&mes=\d{4}-\d{2}", item.get("local_url", ""))
     return match.group(1) if match else None
 
+def render_photo(item):
+    photo = item.get("photo")
+    if not isinstance(photo, dict):
+        return ""
+    image_url = str(photo.get("url") or "")
+    if urlparse(image_url).scheme != "https":
+        return ""
+    caption = "Imagen representativa; no corresponde necesariamente al hecho." if photo.get("kind") == "representativa" else "Fotografía asociada a la noticia."
+    author = str(photo.get("author") or "Autor no identificado")
+    license_name = str(photo.get("license") or "Licencia no especificada")
+    credit = esc(author) + " · " + esc(license_name)
+    license_url = str(photo.get("licenseUrl") or "")
+    source_url = str(photo.get("source") or "")
+    if urlparse(license_url).scheme == "https":
+        credit += ' · <a href="' + esc(license_url) + '" rel="noopener noreferrer">Ver licencia</a>'
+    if urlparse(source_url).scheme == "https":
+        credit += ' · <a href="' + esc(source_url) + '" rel="noopener noreferrer">Origen de la imagen</a>'
+    return ('<figure class="article-photo"><img src="' + esc(image_url) + '" alt="' +
+            esc("Imagen representativa de " + str(item.get("category") or "Ciudad de México") if photo.get("kind") == "representativa" else "Fotografía relacionada con la noticia") +
+            '" loading="lazy" decoding="async" style="max-width:100%;height:auto">' +
+            '<figcaption>' + esc(caption) + ' Crédito: ' + credit + '</figcaption></figure>')
+
 def render(item, ident):
     title = esc(item["title"])
+    photo_html = render_photo(item)
     brief = item.get("brief") or {}
     lead = esc(brief.get("lead") or item.get("description") or "")
     context = esc(brief.get("context") or "Consulta las fuentes y los avisos oficiales.")
@@ -43,7 +66,7 @@ def render(item, ident):
 <link rel="stylesheet" href="/styles.css"><script type="application/ld+json">{structured}</script></head>
 <body><header><div class="wrap"><a href="/">CDMX AL MEMENTO</a> · <a href="/noticias/">Noticias</a></div></header>
 <main class="wrap" id="contenido"><article><p>CDMX · {date} · Fuente: {source}</p><h1>{title}</h1>
-<p>{lead}</p><h2>Por qué importa</h2><p>{context}</p><h2>Qué falta por confirmar</h2><p>{pending}</p>
+{photo_html}<p>{lead}</p><h2>Por qué importa</h2><p>{context}</p><h2>Qué falta por confirmar</h2><p>{pending}</p>
 <h2>Fuentes y método</h2><p>{method}</p><p>Esta síntesis no equivale a una verificación independiente de los hechos.</p>
 {source_link}<p><a href="{esc(item['local_url'])}">Ver noticia y comentarios en el periódico</a></p></article></main>
 <footer><div class="wrap"><a href="/">Portada</a> · <a href="/politica-editorial.html">Política editorial</a></div></footer></body></html>"""
