@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-31 08:54 UTC",
+  "updated": "2026-10-31 09:52 UTC",
   "boroughs": [
     {
       "name": "La Magdalena Contreras",
@@ -9605,8 +9605,38 @@
     },
     {
       "name": "Tlalpan",
-      "count": 145,
+      "count": 146,
       "articles": [
+        {
+          "title": "Clima y pronóstico en Tlalpan este sábado 31 de octubre: jornada templada y cielo claro",
+          "description": "El pronóstico recogido por El Heraldo de México se refiere a condiciones meteorológicas en Tlalpan. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
+          "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQZWVnS0lManFDU1ktd1JHQm5tRF9jeDhKZFFCSER4Q0JiLV8xZzFyUjM0aXM3V2xaMlNHaG9BRXp1cEc1STRJMm9zX0JGSTRvMzgtVkxEUjdwSTRmaFR0UlhkaXF3RkRIWkpYS0NHWHkxZ1JMTHh1LXJoSWZJWTRzbXluVlJ2REV1SkdZLVVtTzFqLVRWb1VEUDRMODlKbVB6WDZHamRkQlVxTUlsRVczbEkyOVNPSWhrZzZpMlNUS2stX0JxdjVQeWlQRFIwemRDR2Q0Z2RBUzBwT2tlVXc?oc=5",
+          "source": "El Heraldo de México",
+          "date": "2026-10-30",
+          "published_at": "2026-10-31T05:00:00Z",
+          "category": "CDMX",
+          "borough": "Tlalpan",
+          "location": "Tlalpan (mencionada en el titular)",
+          "local_url": "/noticias/?id=378087d9a7f54ae1e860&mes=2026-10",
+          "brief": {
+            "lead": "El pronóstico recogido por El Heraldo de México se refiere a condiciones meteorológicas en Tlalpan. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_tlalpan",
+            "kind": "representativa",
+            "url": "/assets/alcaldias/tlalpan.jpg",
+            "category": "CDMX",
+            "borough": "Tlalpan",
+            "topic": "Quiosco de la plaza principal de Tlalpan",
+            "author": "farid estrada",
+            "license": "CC BY-SA 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Kiosko_plaza_de_la_constitucion%2C_tlapan.JPG"
+          }
+        },
         {
           "title": "Tlalpan cumple al 100% en transparencia; en sesión de Gabinete, Gaby Osorio reafirma compromiso de mantener estos resultados",
           "description": "La información publicada por Eje Central trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -10325,34 +10355,6 @@
             "license": "CC BY-SA 2.0",
             "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
             "source": "https://commons.wikimedia.org/wiki/File:Bosque_de_Tlalpan,_Ciudad_de_M%C3%A9xico-_Mexico_City_(16573595462).jpg"
-          }
-        },
-        {
-          "title": "Hallan Cadáver Calcinado en Canchas de Futbol en Tlalpan",
-          "description": "La información publicada por N+ trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQbEhyeEFNNl9NYXBZeHZhWXBHWTNPV2ZEbHpzNWZGZF9rMkZCS2JDaGE4UURNbVZleHM2XzJPRGN2am5oZHZRZWdfVFBNMFk0amdOeUlxM2d0YXdQZUJZZE1HcUZzb01ZS2xBeVFJSWdObnM0eUhjYTd1eHMyMFVHaGNYVFZUN1lMeFNWOVVjRXBCMlpLMUJlTkNERWduaVAzYmRzczNpWG9WNE9zSTRYcXQyc2FTd05qSEtuNkpNSXk0ZjdILVNlRU53WGRjdw?oc=5",
-          "source": "N+",
-          "date": "2026-10-27",
-          "published_at": "2026-10-27T20:17:21Z",
-          "category": "CDMX",
-          "borough": "Tlalpan",
-          "location": "Tlalpan (mencionada en el titular)",
-          "local_url": "/noticias/?id=99bf2f6e89cfc981756c&mes=2026-10",
-          "brief": {
-            "lead": "La información publicada por N+ trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "alcaldia_tlalpan",
-            "url": "/assets/alcaldias/tlalpan.jpg",
-            "category": "CDMX",
-            "borough": "Tlalpan",
-            "topic": "Quiosco de la plaza principal de Tlalpan",
-            "author": "farid estrada",
-            "license": "CC BY-SA 3.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Kiosko_plaza_de_la_constitucion%2C_tlapan.JPG"
           }
         }
       ]
