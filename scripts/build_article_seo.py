@@ -26,7 +26,15 @@ def render_photo(item):
     if not isinstance(photo, dict):
         return ""
     image_url = str(photo.get("url") or "")
-    if urlparse(image_url).scheme != "https":
+    # HTTPS remoto o ruta local absoluta sin segmentos de recorrido ni URL de protocolo.
+    parsed_image = urlparse(image_url)
+    local_image = (image_url.startswith("/assets/fotos/") and
+                   not image_url.startswith("//") and
+                   not parsed_image.scheme and not parsed_image.netloc and
+                   not parsed_image.query and not parsed_image.fragment and
+                   all(part not in (".", "..") for part in parsed_image.path.split("/")) and
+                   re.fullmatch(r"/assets/fotos/[a-zA-Z0-9_./-]+", parsed_image.path) is not None)
+    if parsed_image.scheme != "https" and not local_image:
         return ""
     caption = "Imagen representativa; no corresponde necesariamente al hecho." if photo.get("kind") == "representativa" else "Fotografía asociada a la noticia."
     author = str(photo.get("author") or "Autor no identificado")
