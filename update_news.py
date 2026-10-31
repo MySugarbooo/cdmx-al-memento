@@ -92,10 +92,24 @@ def fold(value):
 
 def identify_location(title):
     words = " " + fold(title) + " "
-    found = [
-        borough for borough, aliases in ALIASES.items()
-        if any(" " + fold(alias) + " " in words for alias in aliases)
-    ]
+    found = []
+    for borough, aliases in ALIASES.items():
+        for alias in aliases:
+            name = fold(alias)
+            if " " + name + " " not in words:
+                continue
+            # Nombres de personajes no son automáticamente ubicaciones.
+            # Exigir contexto geográfico para las alcaldías homónimas.
+            if borough in ("Cuauhtémoc", "Benito Juárez", "Miguel Hidalgo",
+                           "Álvaro Obregón", "Venustiano Carranza", "Gustavo A. Madero"):
+                if not re.search(
+                    r"\\b(?:alcaldia|demarcacion|colonia|zona|delegacion|"
+                    r"en la alcaldia|en la colonia)\\s+(?:de\\s+)?"+re.escape(name)+r"\\b",
+                    words,
+                ):
+                    continue
+            found.append(borough)
+            break
     # Si nombra varias demarcaciones no elegir una como lugar de los hechos.
     if len(found) == 1:
         return found[0], found[0] + " (mencionada en el titular)"
