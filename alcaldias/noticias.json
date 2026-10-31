@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-31 07:07 UTC",
+  "updated": "2026-10-31 08:00 UTC",
   "boroughs": [
     {
       "name": "La Magdalena Contreras",
@@ -4305,6 +4305,18 @@
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_cuajimalpa",
+            "kind": "representativa",
+            "url": "/assets/alcaldias/cuajimalpa.jpg",
+            "category": "CDMX",
+            "borough": "Cuajimalpa de Morelos",
+            "topic": "Centro del antiguo pueblo de Cuajimalpa",
+            "author": "AlejandroLinaresGarcia",
+            "license": "CC BY-SA 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:CuajimalpaCentro01.JPG"
           }
         },
         {
@@ -4323,6 +4335,21 @@
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "commons_98002543",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Sala_de_Tesorer%C3%ADa_en_Palacio_Nacional_-_II.jpg/960px-Sala_de_Tesorer%C3%ADa_en_Palacio_Nacional_-_II.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "category": "Gobierno",
+            "borough": "",
+            "topic": "Sala de Tesorería en Palacio Nacional - II",
+            "keywords": [
+              "Palacio Nacional Ciudad de México"
+            ],
+            "author": "J Mndz",
+            "license": "CC BY-SA 2.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Sala_de_Tesorer%C3%ADa_en_Palacio_Nacional_-_II.jpg"
           }
         },
         {
@@ -4341,6 +4368,21 @@
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "commons_98002541",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Sala_de_Tesorer%C3%ADa_en_Palacio_Nacional_-_I.jpg/960px-Sala_de_Tesorer%C3%ADa_en_Palacio_Nacional_-_I.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "category": "Gobierno",
+            "borough": "",
+            "topic": "Sala de Tesorería en Palacio Nacional - I",
+            "keywords": [
+              "Palacio Nacional Ciudad de México"
+            ],
+            "author": "J Mndz",
+            "license": "CC BY-SA 2.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Sala_de_Tesorer%C3%ADa_en_Palacio_Nacional_-_I.jpg"
           }
         },
         {
@@ -4359,6 +4401,21 @@
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "commons_75263513",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Operativo_de_Lluvias_CDMX_-i---i-_%2836294397303%29.jpg/960px-Operativo_de_Lluvias_CDMX_-i---i-_%2836294397303%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "category": "Medio Ambiente",
+            "borough": "",
+            "topic": "Operativo de Lluvias CDMX -i---i- (36294397303)",
+            "keywords": [
+              "Lluvia Ciudad de México"
+            ],
+            "author": "Gobierno CDMX",
+            "license": "CC0",
+            "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+            "source": "https://commons.wikimedia.org/wiki/File:Operativo_de_Lluvias_CDMX_-i---i-_(36294397303).jpg"
           }
         },
         {
@@ -9536,7 +9593,7 @@
     },
     {
       "name": "Tlalpan",
-      "count": 144,
+      "count": 145,
       "articles": [
         {
           "title": "Tlalpan cumple al 100% en transparencia; en sesión de Gabinete, Gaby Osorio reafirma compromiso de mantener estos resultados",
@@ -9566,6 +9623,24 @@
             "license": "CC BY-SA 3.0",
             "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
             "source": "https://commons.wikimedia.org/wiki/File:Kiosko_plaza_de_la_constitucion%2C_tlapan.JPG"
+          }
+        },
+        {
+          "title": "Panteón de Tlalpan tendrá una noche de leyendas",
+          "description": "La información publicada por Descubre México trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOYzF2WmVmdTktZE84YWY3cTN6YVRCRVQ0U2M5dTRqeXhLdk02akRnZTBOcm1XQkNNTU9pMGhocHRzN1hMSXFMdGJiMVFJZEZjRU9EN1lGenRIdFEtT2ZTN1R5Y3owMWJKMFNhbUtGOTMzV09fS25DSW0xZGcwdjgwd3QtZw?oc=5",
+          "source": "Descubre México",
+          "date": "2026-10-30",
+          "published_at": "2026-10-30T16:01:46Z",
+          "category": "CDMX",
+          "borough": "Tlalpan",
+          "location": "Tlalpan (mencionada en el titular)",
+          "local_url": "/noticias/?id=ad827cc4582c664b673b&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por Descubre México trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           }
         },
         {
@@ -10255,34 +10330,6 @@
             "license": "CC BY-SA 3.0",
             "source": "https://commons.wikimedia.org/wiki/File:Kiosko_plaza_de_la_constitucion%2C_tlapan.JPG"
           }
-        },
-        {
-          "title": "Tlalpan tendrá Noche de Leyendas de Día de Muertos en el Panteón 20 de Noviembre: fechas, horarios y cómo asistir gratis",
-          "description": "La información publicada por Infobae trata un asunto registrado en la sección de Metro del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNb2JRRWMxcUZsUkN2SzFQaGJxMGVkc040SGlSR3FVdEdWNTJobW5Jbzd1SWMwTzJKOWdTUGxrSHlvVnRidktfYWpoVG9telFKT1U0WUM0c0xvMDNWMzZFcFlsQUM5NjhuUk9PWTdIQTZmZm4tVjlvQll3cXdaSHBiTURsakhTdVJKSDNaamxBWnoxcDNoODAyY2lpUEhEQm5YZnpwdW1EeUQxVE1uVUhISmxDZ2VyMUpLdWlLOEUtWWRxQnROc0Vuam8xalZNU3lOVUJZMHdJRk4yMzdnTi0wbElxMmlhQXlkQ2FGZmktNzAxeEXSAY4CQVVfeXFMTndvU2ZNVWpqcTNnbWtqRVZiems0NWJ6VkgySjlyLW95N0NxZUFaWklraU5nZkgxamFScXRCcDU2QnhUWHhFNklYYnl3Y2wwQ1lZWmRORWxrRHhzNk5idERtbkNEZllIeGJvc1FKeEw0NmFpRGFyM1BDYVNxbE16a0lncFhiZjV4WWQ5TnEydkJVMWJtX3lvZUdxaGhfVW9IY3E4elUwTHBNZ1VVbEZMRDJJc05YLTB0VThzNTA4TU9qQVNNdndPNS1WTmgwZ01HWWZHNFR3YWNISVY4cGQzc2xUTnl2VF95MHJLZVZST05ZSTh2aUNSbERRNlpicGcxSTBsOVRXSkY1TjNDVk5B?oc=5",
-          "source": "Infobae",
-          "date": "2026-10-27",
-          "published_at": "2026-10-27T14:40:45Z",
-          "category": "Metro",
-          "borough": "Tlalpan",
-          "location": "Tlalpan (mencionada en el titular)",
-          "local_url": "/noticias/?id=6134ed08ddf0e21fece4&mes=2026-10",
-          "brief": {
-            "lead": "La información publicada por Infobae trata un asunto registrado en la sección de Metro del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Los cambios en este sistema pueden afectar los horarios, las conexiones y la planeación de los viajes cotidianos.",
-            "pending": "El estado operativo, las estaciones y las alternativas de traslado deben comprobarse en los avisos actuales del Metro. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "alcaldia_tlalpan",
-            "url": "/assets/alcaldias/tlalpan.jpg",
-            "category": "CDMX",
-            "borough": "Tlalpan",
-            "topic": "Quiosco de la plaza principal de Tlalpan",
-            "author": "farid estrada",
-            "license": "CC BY-SA 3.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Kiosko_plaza_de_la_constitucion%2C_tlapan.JPG"
-          }
         }
       ]
     },
@@ -10761,7 +10808,7 @@
     },
     {
       "name": "Xochimilco",
-      "count": 128,
+      "count": 129,
       "articles": [
         {
           "title": "La pastelería de Xochimilco en CDMX que conquista con su pastel de tres leches bien jugosito y tienen línea baja en azúcar",
@@ -11060,6 +11107,24 @@
             "license": "CC BY-SA 4.0",
             "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
             "source": "https://commons.wikimedia.org/wiki/File:Coloridas_trajineras_en_Xochimilco,_Ciudad_de_M%C3%A9xico.jpg"
+          }
+        },
+        {
+          "title": "Chinamperos de Xochimilco denuncian bloqueo y cobros excesivos en la Central de Abasto",
+          "description": "La información publicada por El Sol de México trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNd0Z6OVR6OHE1Y3FPd2xPVndkQnZYdldCYkpweTExR2cyRHdaTnNUVGcwOGpuRzdhVHpEMkxHYTQ1YnVhNWhVWXlSVG4zLXExUHBWSUJLdGhDRnRvTDlNSTFuWThaTG5lTm5jZDRLWFR5Y1BjaHJsWVVxb3FKcTdVaTQyNzFKeGxVc2hVTUVOOFM0c1NwTFdBT0hzdzlWTTlrUVZsQnZPSXJqQ3NHYzZvVjQtNnJ2S2dORVpNREFyVU9BcnQxNE5yd2NYNkw1Tzg?oc=5",
+          "source": "El Sol de México",
+          "date": "2026-10-29",
+          "published_at": "2026-10-29T09:20:47Z",
+          "category": "CDMX",
+          "borough": "Xochimilco",
+          "location": "Xochimilco (mencionada en el titular)",
+          "local_url": "/noticias/?id=1e4fb0c4d4d0d149b8e2&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por El Sol de México trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           }
         },
         {
@@ -11439,34 +11504,6 @@
           "borough": "Xochimilco",
           "location": "Xochimilco (mencionada en el titular)",
           "local_url": "/noticias/?id=d68e5655d43bd6e7374b&mes=2026-10",
-          "brief": {
-            "lead": "La información publicada por Milenio trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "alcaldia_xochimilco",
-            "url": "/assets/alcaldias/xochimilco.jpg",
-            "category": "CDMX",
-            "borough": "Xochimilco",
-            "topic": "Trajineras y canales de Xochimilco",
-            "author": "Xbauerx",
-            "license": "CC BY-SA 4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Trajineras_de_Xochimilco.jpg"
-          }
-        },
-        {
-          "title": "¿De qué trata La Llorona de Xochimilco? La historia detrás de Nahui que inspira la obra en CdMx",
-          "description": "La información publicada por Milenio trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBYQ2Exck1kMHhoZnB3bGVUZkNPQTQtN1ZEMk1vREFSSF9KZWE3NnZwSXJiQmVVSmtvYjktQUVfYk4yMS03SWl1VS1ha3R4Vm1PcmI4NjExVG1jWVN4SE5ZSTFJVTVKUi0yMEotNnR2LUs5QmdhMGl2NXgzMG5TUdIBfkFVX3lxTFBYQ2Exck1kMHhoZnB3bGVUZkNPQTQtN1ZEMk1vREFSSF9KZWE3NnZwSXJiQmVVSmtvYjktQUVfYk4yMS03SWl1VS1ha3R4Vm1PcmI4NjExVG1jWVN4SE5ZSTFJVTVKUi0yMEotNnR2LUs5QmdhMGl2NXgzMG5TUQ?oc=5",
-          "source": "Milenio",
-          "date": "2026-10-26",
-          "published_at": "2026-10-27T01:09:00Z",
-          "category": "CDMX",
-          "borough": "Xochimilco",
-          "location": "Xochimilco (mencionada en el titular)",
-          "local_url": "/noticias/?id=3ce47819da1bf0a19cff&mes=2026-10",
           "brief": {
             "lead": "La información publicada por Milenio trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
