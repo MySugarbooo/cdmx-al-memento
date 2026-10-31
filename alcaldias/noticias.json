@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-31 22:47 UTC",
+  "updated": "2026-10-31 23:45 UTC",
   "boroughs": [
     {
       "name": "La Magdalena Contreras",
@@ -2987,7 +2987,7 @@
     },
     {
       "name": "Coyoacán",
-      "count": 114,
+      "count": 115,
       "articles": [
         {
           "title": "COYOACÁN. Encuesta rumbo a las alcaldías de la CDMX 2027. Octubre 2026.",
@@ -3090,6 +3090,36 @@
         },
         {
           "title": "Cierres viales por Día de Muertos en Alcaldía Coyoacán en CDMX: residente solo podrán ingresar identificación",
+          "description": "La información publicada por El Cronista trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPVmdpa0NnbjRLckFpZkZqSTlDeVBGSkNxMkpQMExoRGtlOW15MWtISC1OUXFPVmNTRndlMUpmUW42WFdTVFVLS25nTkJqeHk3V1VwOWVUWDVEYnRlOXlsbWtOZk9BLTRzNXY0cmFEMjdVaTI1ZFd1UFFQQkFGTFBuVk95V3lzakI4NlJNVnpmanNVdUpMc2VweHVPVGRQLVhLZjZKaFlxQ2piaUMzZ3ZLRk5VMm13bXp3LVRlc2UwbTlIQUVPTXhaRmlIeW1ZdmVzbllKa21ycHI2YU1zTHFoX1lmZ3B3LXdDN2sw0gGGAkFVX3lxTFBUQjJHSjFFNDA2Umx6eUtNYkVIcXVKTVVTQlZpQkkwV1h5MklkbmtVUElGZk43cUdQWWJKVmJUYWNmVmlNWEJTU1kxbmp4T2hHR1UybGJxNG9kR29UZGoycmRuRUF5Rm4tUjVVZVZ4WW1QQ0pUYWVtU1hDcFlYdWJabVBFNE5ncXFFeEZkRFU1UnJlbDVzRzEzczkyYklFdFpNWU4xZmhwb3FzbUpsOVhQeGlmVDdBZDdBOVdwSnliUkJBRVA5VEJIV3liRThRZVJ3VDVQM2FuQ1NfRTJuNXdKZ1Y1cE9uenhWay1CSWpmcDlrYWxfdG5JTFRfQnd4WUh6NzBXSEE?oc=5",
+          "source": "El Cronista",
+          "date": "2026-10-31",
+          "published_at": "2026-10-31T15:01:51Z",
+          "category": "CDMX",
+          "borough": "Coyoacán",
+          "location": "Coyoacán (mencionada en el titular)",
+          "local_url": "/noticias/?id=22f454cdcb22a6dd565b&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por El Cronista trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_coyoacan",
+            "kind": "representativa",
+            "url": "/assets/alcaldias/coyoacan.jpg",
+            "category": "CDMX",
+            "borough": "Coyoacán",
+            "topic": "Jardín Centenario de Coyoacán",
+            "author": "AlejandroLinaresGarcia",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:JardinCentenarioCoyoacan.JPG"
+          }
+        },
+        {
+          "title": "Cierres viales por Día de Muertos en Alcaldía Coyoacán en CDMX: residente solo podrán ingresar con identificación",
           "description": "La información publicada por El Cronista trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
           "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPVmdpa0NnbjRLckFpZkZqSTlDeVBGSkNxMkpQMExoRGtlOW15MWtISC1OUXFPVmNTRndlMUpmUW42WFdTVFVLS25nTkJqeHk3V1VwOWVUWDVEYnRlOXlsbWtOZk9BLTRzNXY0cmFEMjdVaTI1ZFd1UFFQQkFGTFBuVk95V3lzakI4NlJNVnpmanNVdUpMc2VweHVPVGRQLVhLZjZKaFlxQ2piaUMzZ3ZLRk5VMm13bXp3LVRlc2UwbTlIQUVPTXhaRmlIeW1ZdmVzbllKa21ycHI2YU1zTHFoX1lmZ3B3LXdDN2sw0gGGAkFVX3lxTFBUQjJHSjFFNDA2Umx6eUtNYkVIcXVKTVVTQlZpQkkwV1h5MklkbmtVUElGZk43cUdQWWJKVmJUYWNmVmlNWEJTU1kxbmp4T2hHR1UybGJxNG9kR29UZGoycmRuRUF5Rm4tUjVVZVZ4WW1QQ0pUYWVtU1hDcFlYdWJabVBFNE5ncXFFeEZkRFU1UnJlbDVzRzEzczkyYklFdFpNWU4xZmhwb3FzbUpsOVhQeGlmVDdBZDdBOVdwSnliUkJBRVA5VEJIV3liRThRZVJ3VDVQM2FuQ1NfRTJuNXdKZ1Y1cE9uenhWay1CSWpmcDlrYWxfdG5JTFRfQnd4WUh6NzBXSEE?oc=5",
           "source": "El Cronista",
@@ -3715,34 +3745,6 @@
             "author": "Luisalvaz",
             "license": "CC BY-SA 4.0",
             "source": "https://commons.wikimedia.org/wiki/File:Detalles_del_exterior_del_Palacio_de_Bellas_Artes%2C_Ciudad_de_M%C3%A9xico_05.JPG"
-          }
-        },
-        {
-          "title": "Una combi choca contra un puesto de verduras en Coyoacán, dejando a dos personas heridas este 29 de octubre.",
-          "description": "La información publicada por El Congresista trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9VWmw4RC1nanZZT281emkzQUVQdHhzejN5YVBKd2c2Y1Rkck5TSE5DN2ZvOTZoYU5LYW4tM3lqVjNiSk8yUGxzUXlDZ0pkOVBjNXBLV1U1YTFNSm00SHo2bnZBWjh1WTNwZ1RWYmZSRGV6WXc5Rm1JOHJKc0s?oc=5",
-          "source": "El Congresista",
-          "date": "2026-10-29",
-          "published_at": "2026-10-29T23:20:31Z",
-          "category": "CDMX",
-          "borough": "Coyoacán",
-          "location": "Coyoacán (mencionada en el titular)",
-          "local_url": "/noticias/?id=6c280486dd79d7e0cf24&mes=2026-10",
-          "brief": {
-            "lead": "La información publicada por El Congresista trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "alcaldia_coyoacan",
-            "url": "/assets/alcaldias/coyoacan.jpg",
-            "category": "CDMX",
-            "borough": "Coyoacán",
-            "topic": "Jardín Centenario de Coyoacán",
-            "author": "AlejandroLinaresGarcia",
-            "license": "CC BY-SA 4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:JardinCentenarioCoyoacan.JPG"
           }
         }
       ]
@@ -5940,8 +5942,38 @@
     },
     {
       "name": "Iztacalco",
-      "count": 91,
+      "count": 92,
       "articles": [
+        {
+          "title": "Despliegan operativo de Protección Civil por el Gran Premio de México 2026 en Iztacalco - La Prensa",
+          "description": "La información publicada por El Sol de México trata un asunto registrado en la sección de Seguridad del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNWnZsRkd5ZzF6bzRENFNfTkZPaXlqVUVmLVdEdFhzeFM1Y291M3ZJanJjT1RVYmdEUGJBM0xuU3l5N1h3cDVnUC10LTFfaTdYSU5FQVdlWGpjY3JaTDBCUVJnR0lxWjhOQ0p4MXBNQ0Q2MHdzYV9SWExWZFRfdGhvUWR0RkVLMm12WVFxM3ZzRmY0MmZFSnZiQ29uV2ZULUZaNXJFdXhvTkw1eFNuUDh1Yi1aNWpielZQMk5mZ0d0aXZsOThZNnBCVVhmOEprVUE?oc=5",
+          "source": "El Sol de México",
+          "date": "2026-10-31",
+          "published_at": "2026-10-31T22:26:59Z",
+          "category": "Seguridad",
+          "borough": "Iztacalco",
+          "location": "Iztacalco (mencionada en el titular)",
+          "local_url": "/noticias/?id=3ba2eb949255fa528498&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por El Sol de México trata un asunto registrado en la sección de Seguridad del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_iztacalco",
+            "kind": "representativa",
+            "url": "/assets/alcaldias/iztacalco.jpg",
+            "category": "CDMX",
+            "borough": "Iztacalco",
+            "topic": "Iglesia de San Matías en el antiguo pueblo de Iztacalco",
+            "author": "AlejandroLinaresGarcia",
+            "license": "CC BY-SA 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:SanMatiasChurchIztacalco02.jpg"
+          }
+        },
         {
           "title": "Inauguran centro de evaluación laboral en Iztacalco; buscan facilitar empleos formales",
           "description": "El medio El Sol de México aborda una posible pérdida de empleos en la capital mediante una comparación con otra entidad. Los datos, el periodo y la metodología deben verificarse antes de sacar conclusiones sobre el mercado laboral.",
@@ -6628,46 +6660,43 @@
             "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
             "source": "https://commons.wikimedia.org/wiki/File:Capilla_posa_Virgen_de_Guadalupe_en_la_fiesta_del_Jubileo_en_Iztacalco,_Ciudad_de_M%C3%A9xico.jpg"
           }
-        },
-        {
-          "title": "Reportan la desaparición de Ana Paula Beltrán Pérez, alumna del CCH Oriente, en Iztacalco",
-          "description": "La información publicada por LatinUS trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxORW16OHc4NDNFb2FfZ0Z4amdNeXBtMnFsTHNjWGVyY2tobXpmRTRvVHZFWnZvdUF1MEYwcHhHODE0ODJVS2JoTmRQR0VHbWxWbElRYlo2VUpOYkZHTHRUV1pJdnY0cGlabmNNcm5mX2hacnZxWVVyaDRzMElnNy1KQzkzQnJXWXRXd0huajB6MEVBcUtpU01RNGpRU1E4ZGdfNFBOdnJGSkJpNjlheEl2NTBnblctQ0hRNkkyaGw2VC12TU16TmRJVEFkNVNfNm45UHc?oc=5",
-          "source": "LatinUS",
-          "date": "2026-10-23",
-          "published_at": "2026-10-23T16:40:11Z",
-          "category": "CDMX",
-          "borough": "Iztacalco",
-          "location": "Iztacalco (mencionada en el titular)",
-          "local_url": "/noticias/?id=c114f9e3acfb88954a25&mes=2026-10",
-          "brief": {
-            "lead": "La información publicada por LatinUS trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "commons_41703830",
-            "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/CICLOTON_DF_IZTACALCO_%28BY_LION%29_-_panoramio.jpg/960px-CICLOTON_DF_IZTACALCO_%28BY_LION%29_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "category": "Alcaldías",
-            "borough": "",
-            "topic": "CICLOTON DF IZTACALCO (BY LION) - panoramio",
-            "keywords": [
-              "Iztacalco Ciudad de México"
-            ],
-            "author": "LEON23",
-            "license": "CC BY 3.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
-            "source": "https://commons.wikimedia.org/wiki/File:CICLOTON_DF_IZTACALCO_(BY_LION)_-_panoramio.jpg"
-          }
         }
       ]
     },
     {
       "name": "Iztapalapa",
-      "count": 163,
+      "count": 164,
       "articles": [
+        {
+          "title": "Construye ProximityParks recinto en Iztapalapa",
+          "description": "La información publicada por Somos Industria trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNY1l3TjZBakpTd245WHVwek9lNElTWXlNNFM3TGE3d3pydmg1bVUzQVhEaE9TM1BINlRMZE51a0l3UDNDZlZjalRKQXNtRnlvVWZUcTAwNDBIVExSUGFKMTVtX3FxY2tEZVlRRFJzQm8tdkJVWkRPWWVEZFN6d3pPR1VtRVFIMVdseVZwajlnblE?oc=5",
+          "source": "Somos Industria",
+          "date": "2026-10-31",
+          "published_at": "2026-10-31T22:50:20Z",
+          "category": "CDMX",
+          "borough": "Iztapalapa",
+          "location": "Iztapalapa (mencionada en el titular)",
+          "local_url": "/noticias/?id=cafe86a8346313742f18&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por Somos Industria trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_iztapalapa",
+            "kind": "representativa",
+            "url": "/assets/alcaldias/iztapalapa.jpg",
+            "category": "CDMX",
+            "borough": "Iztapalapa",
+            "topic": "Vista de Iztapalapa desde el Cerro de la Estrella",
+            "author": "Secretaría de Cultura Ciudad de México from México",
+            "license": "CC BY 2.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+            "source": "https://commons.wikimedia.org/wiki/File:MX_MM_MUSEO_CERRO_DE_LA_ESTRELLA_%2849522225751%29.jpg"
+          }
+        },
         {
           "title": "Horarios de visita al Panteón Civil San Lorenzo Tezonco en Iztapalapa, CdMx por el Día de Muertos",
           "description": "La información publicada por Telediario trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -7364,39 +7393,6 @@
             "author": "Secretaría de Cultura Ciudad de México from México",
             "license": "CC BY 2.0",
             "source": "https://commons.wikimedia.org/wiki/File:MX_MM_MUSEO_CERRO_DE_LA_ESTRELLA_%2849522225751%29.jpg"
-          }
-        },
-        {
-          "title": "Únete GRATIS a la rodada de Día de Muertos 2026 en Iztapalapa",
-          "description": "La información publicada por Dónde Ir trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOd2NlMlEtS2M0VjdlRXpjbU5tRGY5alJYeDNiSndGVUVuRUUyNTZFY0czQkdOQlgxbWlLeERKdzlBX3pkaUk1akFXYWcwZnRaV0JvSFpkMUlBWkFVb0hGT3dXVmxfQVVqeW5HUVhmb09Qb1FHajhjRWh2NEc5ODNGSmZaNFZ1SUM0SEZBaWRTUF9aUmVvSGdNODFCdUlEVWFOemNN?oc=5",
-          "source": "Dónde Ir",
-          "date": "2026-10-27",
-          "published_at": "2026-10-27T07:00:00Z",
-          "category": "CDMX",
-          "borough": "Iztapalapa",
-          "location": "Iztapalapa (mencionada en el titular)",
-          "local_url": "/noticias/?id=4d40a2d81d43ebf0cc4c&mes=2026-10",
-          "brief": {
-            "lead": "La información publicada por Dónde Ir trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "commons_57104818",
-            "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Maceta_en_el_Castillo_de_Chapultepec_-_panoramio_%281%29.jpg/960px-Maceta_en_el_Castillo_de_Chapultepec_-_panoramio_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "category": "Cultura",
-            "borough": "",
-            "topic": "Maceta en el Castillo de Chapultepec - panoramio (1)",
-            "keywords": [
-              "Castillo de Chapultepec Ciudad de México"
-            ],
-            "author": "Veto Zereptram",
-            "license": "CC BY 3.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Maceta_en_el_Castillo_de_Chapultepec_-_panoramio_(1).jpg"
           }
         }
       ]
@@ -8910,8 +8906,71 @@
     },
     {
       "name": "Tláhuac",
-      "count": 92,
+      "count": 94,
       "articles": [
+        {
+          "title": "El Dámaso del Cártel de Tláhuac se queda preso en el Reclusorio Oriente: juez lo procesa por extorsionar una llantera",
+          "description": "La información publicada por Infobae trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPb2ttU0trRG45T2RsWk9YSXFWMEM1emo2REh5MzloSExXdVkyeVpBUWc0N3NicUY4anN5emNfSHZyUFBRSHBaaDdSLUo3NGxvRFloNGhKSk55TDRZYjMtNXZFTzZhTklBakVXRE1udVo2N0FNMWhuMlVPMGtEZzVoWjhHcmE0b1VTRlVZaV9PM1VOMkNxbnBVY1owczluLVh5TmhiYTFiWHI4OHFfclRoUVktMVdxa0k2UVo3YnVtREE0Wmk1VkNCWnJvZk1Nbl9kRjNHcjloT0RRUURTSkVLMGRFM0hxNDJzWjJnZ3BxRjTSAYsCQVVfeXFMTUhPVWpiZ1VqN3B0V3VwNjBZSFduZ0NBS1ZJdzh0ZWNYQjNKR1dqMWRBcUZjLTdpRjJUZE96OVBvcUlBeHVCLU5VVFYyRHQ1djJIc2lld3pWU2o3YlpRYnhGc0RzeU55WnA1M0U5OXQ2T3FmbXNFSjl1QjlJOWY4MnhwQVo4b0MzZnk4UzQxVF9CTnYxM1d6YmwzVzZfemRUSTFsYnliWXhfRkJQcXlHY3FsWDZPWjQxb3A0OWlUeHU3MTZvc0pYVVhBVlFzd1RNQTh5dDJqSVIzRDlFVFl4dnNxdVY3YUlWcV9sZkdGcDEzTGZ0M1RKQi1IM1dYQkQ3X045STVOaEgzMkI0?oc=5",
+          "source": "Infobae",
+          "date": "2026-10-31",
+          "published_at": "2026-10-31T23:30:29Z",
+          "category": "CDMX",
+          "borough": "Tláhuac",
+          "location": "Tláhuac (mencionada en el titular)",
+          "local_url": "/noticias/?id=aad2b1f120a3aaf46547&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por Infobae trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_tlahuac",
+            "kind": "representativa",
+            "url": "/assets/alcaldias/tlahuac.jpg",
+            "category": "CDMX",
+            "borough": "Tláhuac",
+            "topic": "Plaza central de San Pedro Tláhuac",
+            "author": "Yavidaxiu",
+            "license": "CC BY 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Tl%C3%A1huac-Plaza_central.JPG"
+          }
+        },
+        {
+          "title": "¿Cuánto dinero exigía “El Dámaso” a un comerciante de Tláhuac? Lo vinculan por extorsión",
+          "description": "La información publicada por TV Azteca trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNck9jWEdodjZ6WTlrS2RkV2ZrWUc5c01PRzhDZ0ZyeENSWWtId3NDM3hkZDJpT0pGLUZoeE5NX2JzTFB4bGJrbXhOdmFxS1hZazIzUFZZaW5iRWZwdHZRVFZPS05rbWl2RVV4TlkxY1hPbF9FbzJ0clhZdE9Hd08yRHVsdFZuc3YxeU5xS1I2cmoxRkNCQnVpTWY4SE9kcDdZNGlYekRlRGhTeXMtWjZWTkVyVDNleFhJOXpBc3VaT1hSc2x2QnlWZjF5SkdidVNYVDkxSEJDcTNFdXM5c0FqONIB7gFBVV95cUxOWlVzNF9Od21YVzVZYnA1RnhJR3N1RFNMUGZjQTk1ckdNQTNYR1JYT2poVUkxcEFXZGNVV2luLTRGVmlIVHJ2WlB1TlYzMXh5VTdwa0s3U1kzUWEzNklpVkhqZXNPaXE0bjNXdTBOZ1hCUlVBaFlMWFJpVGxxaHNGMUQxVUh1SHJTOEFUSUVCb1hlQXU0Q2QycmczX0w4eUFxcU5LbVZnc09feS1hT04xM0RRcTEtUXRJbjR3Ujg1VEc0U0Q5c3hEMEx2enUwT3ZSaTQ1ZzgtZjVuTmI0Q0VjZkM4dVlvcXNjWGJTbVpn?oc=5",
+          "source": "TV Azteca",
+          "date": "2026-10-31",
+          "published_at": "2026-10-31T22:52:42Z",
+          "category": "CDMX",
+          "borough": "Tláhuac",
+          "location": "Tláhuac (mencionada en el titular)",
+          "local_url": "/noticias/?id=c0c7e238ed4e5c60abbf&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por TV Azteca trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "commons_75246064",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Graduaci%C3%B3n_de_la_Polic%C3%ADa_de_la_Ciudad_de_M%C3%A9xico_-i---i-_%2836371686484%29.jpg/960px-Graduaci%C3%B3n_de_la_Polic%C3%ADa_de_la_Ciudad_de_M%C3%A9xico_-i---i-_%2836371686484%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "category": "Seguridad",
+            "borough": "",
+            "topic": "Graduación de la Policía de la Ciudad de México -i---i- (36371686484)",
+            "keywords": [
+              "Policía Ciudad de México"
+            ],
+            "author": "Gobierno CDMX",
+            "license": "CC0",
+            "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+            "source": "https://commons.wikimedia.org/wiki/File:Graduaci%C3%B3n_de_la_Polic%C3%ADa_de_la_Ciudad_de_M%C3%A9xico_-i---i-_(36371686484).jpg"
+          }
+        },
         {
           "title": "Tláhuac inaugura Festival de Día de Muertos 2026; esperan más de 3 millones de visitantes",
           "description": "La información publicada por El Sol de México trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -9553,69 +9612,6 @@
             "license": "CC BY 3.0",
             "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
             "source": "https://commons.wikimedia.org/wiki/File:Tl%C3%A1huac-Plaza_central.JPG"
-          }
-        },
-        {
-          "title": "Alistan Feria del Atole en Tláhuac con 65 expositores",
-          "description": "La información publicada por El Momento Nacional trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxObzZMNXpDNUZWTEVpRUZEN1E4bm51OTRnU05VMXROVkxHR3lxMVdMQjJsTkdGMFZBeVpKc3Y1ZFEzZjcyb0ZSUUZBNXZEZjNMc3lfVXMwbTVjTXpUQXZnWnBrS3EzeHBvN1kzaDRBOG5oeHh0RDZSTlJyc1NsZUo4cA?oc=5",
-          "source": "El Momento Nacional",
-          "date": "2026-10-25",
-          "published_at": "2026-10-26T01:01:09Z",
-          "category": "CDMX",
-          "borough": "Tláhuac",
-          "location": "Tláhuac (mencionada en el titular)",
-          "local_url": "/noticias/?id=3328e0aaecf0df6f92c0&mes=2026-10",
-          "brief": {
-            "lead": "La información publicada por El Momento Nacional trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "commons_114051286",
-            "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Coro_de_la_Catedral_metropolitana_de_la_Ciudad_de_M%C3%A9xico_06.jpg/960px-Coro_de_la_Catedral_metropolitana_de_la_Ciudad_de_M%C3%A9xico_06.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "category": "CDMX",
-            "borough": "",
-            "topic": "Coro de la Catedral metropolitana de la Ciudad de México 06",
-            "keywords": [
-              "Catedral Metropolitana Ciudad de México"
-            ],
-            "author": "Luis Alvaz",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Coro_de_la_Catedral_metropolitana_de_la_Ciudad_de_M%C3%A9xico_06.jpg"
-          }
-        },
-        {
-          "title": "Avanzan preparativos para Día de Muertos en Tláhuac",
-          "description": "La información publicada por El Momento Nacional trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE8wcWhVV0ZaUUNlZERXelRiOVM5T3hQWTJxcEhyUDMtbHljV2tWNnFmVG1aWl9uMmZZUFAwQXo3M2IxLXhhY0tabVp0YTBxS1pES1A0Tk13dGJ0R2F3Sk9nNmZqMTluLWFFNWdiWlh2ZDZUYUFLVk9Yd0drQ0xvZw?oc=5",
-          "source": "El Momento Nacional",
-          "date": "2026-10-24",
-          "published_at": "2026-10-25T01:00:30Z",
-          "category": "CDMX",
-          "borough": "Tláhuac",
-          "location": "Tláhuac (mencionada en el titular)",
-          "local_url": "/noticias/?id=2e15b1e286b9356a8192&mes=2026-10",
-          "brief": {
-            "lead": "La información publicada por El Momento Nacional trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "archivo_cultura_007",
-            "kind": "representativa",
-            "url": "/assets/fotos/archivo_cultura_007.jpg",
-            "category": "Cultura",
-            "borough": "",
-            "topic": "Palacio de Bellas Artes, Ciudad de México, México, 2015-07-18, DD 10",
-            "author": "Diego Delso",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Palacio_de_Bellas_Artes%2C_Ciudad_de_M%C3%A9xico%2C_M%C3%A9xico%2C_2015-07-18%2C_DD_10.JPG"
           }
         }
       ]
