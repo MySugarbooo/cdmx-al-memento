@@ -1,6 +1,6 @@
 {
   "month": "2026-10",
-  "updated": "2026-11-01 16:53 UTC",
+  "updated": "2026-11-01 16:55 UTC",
   "articles": [
     {
       "title": "Expropiará el gobierno de la CDMX capitalino tres predios para vivienda pública",
@@ -14334,7 +14334,7 @@
       "published_at": "2026-10-30T16:51:08Z",
       "category": "Movilidad",
       "borough": "",
-      "location": "Ubicación no indicada por el titular",
+      "location": "España (fuera de CDMX)",
       "local_url": "/noticias/?id=eb1040e0f1fc510b65ff&mes=2026-10",
       "brief": {
         "lead": "De acuerdo con Yahoo, el titular publicado es: «México confirma un desaparecido y siete heridos en el accidente de tren en España». De acuerdo con Yahoo, se informa de un hecho vial relacionado con personas o vehículos involucrados en la capital. El propio titular menciona personas lesionadas, sin datos médicos adicionales verificados. Se requiere consultar la nota original para conocer el punto exacto, las circunstancias y los reportes oficiales, sin atribuir responsabilidades sin pruebas.",
@@ -112400,14 +112400,19 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_metro_011",
-        "url": "/assets/fotos/archivo_metro_011.jpg",
+        "id": "commons_173338445",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Afluencia_Pantitl%C3%A1n_L%C3%ADnea_5_%282024%29.png/960px-Afluencia_Pantitl%C3%A1n_L%C3%ADnea_5_%282024%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
         "category": "Metro",
         "borough": "",
-        "topic": "Estación Pino Suárez de la Línea 1 del Metro de la Ciudad de México 08",
-        "author": "ProtoplasmaKid",
-        "license": "CC BY-SA 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Estaci%C3%B3n_Pino_Su%C3%A1rez_de_la_L%C3%ADnea_1_del_Metro_de_la_Ciudad_de_M%C3%A9xico_08.jpg"
+        "topic": "Afluencia Pantitlán Línea 5 (2024)",
+        "keywords": [
+          "Estación Pantitlán del Metro de la Ciudad de México"
+        ],
+        "author": "Sistema Transporte Colectivo / Gobierno de la Ciudad de México",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Afluencia_Pantitl%C3%A1n_L%C3%ADnea_5_(2024).png"
       }
     },
     {
@@ -112792,14 +112797,19 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_metro_002",
-        "url": "/assets/fotos/archivo_metro_002.jpg",
-        "category": "Metro",
+        "id": "commons_139480767",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Tren_ligero_y_metro_en_la_estaci%C3%B3n_Tasque%C3%B1a_08.jpg/960px-Tren_ligero_y_metro_en_la_estaci%C3%B3n_Tasque%C3%B1a_08.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "category": "Movilidad",
         "borough": "",
-        "topic": "Estación Juárez del Metro de la Ciudad de México 09",
-        "author": "ProtoplasmaKid",
+        "topic": "Tren ligero y metro en la estación Tasqueña 08",
+        "keywords": [
+          "Tren ligero Ciudad de México"
+        ],
+        "author": "Luis Alvaz",
         "license": "CC BY-SA 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Estaci%C3%B3n_Ju%C3%A1rez_del_Metro_de_la_Ciudad_de_M%C3%A9xico_09.jpg"
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Tren_ligero_y_metro_en_la_estaci%C3%B3n_Tasque%C3%B1a_08.jpg"
       }
     },
     {
@@ -113105,14 +113115,19 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_seguridad_001",
-        "url": "/assets/fotos/archivo_seguridad_001.jpg",
-        "category": "Seguridad",
+        "id": "reciente_2ddd98d3699be715",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Edificios%2C_Paseo_de_la_Reforma_-_CDMX78428.jpg/1280px-Edificios%2C_Paseo_de_la_Reforma_-_CDMX78428.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "category": "Movilidad",
         "borough": "",
-        "topic": "Adquisición patrullas para la Policía 03",
-        "author": "Gobierno de la Ciudad de México",
-        "license": "CC BY 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Adquisici%C3%B3n_patrullas_para_la_Polic%C3%ADa_03.jpg"
+        "topic": "Edificios, Paseo de la Reforma - CDMX78428",
+        "keywords": [
+          "Movilidad"
+        ],
+        "author": "Juan Carlos Fonseca Mata",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Edificios,_Paseo_de_la_Reforma_-_CDMX78428.jpg"
       }
     },
     {
@@ -113504,14 +113519,19 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_metro_001",
-        "url": "/assets/fotos/archivo_metro_001.jpg",
-        "category": "Metro",
+        "id": "archivo_movilidad_004",
+        "kind": "representativa",
+        "url": "/assets/fotos/archivo_movilidad_004.jpg",
+        "category": "Movilidad",
         "borough": "",
-        "topic": "Línea 2 del Metro de la Ciudad de México - Metro Pino Suárez Línea 2 - 10",
-        "author": "ProtoplasmaKid",
-        "license": "CC BY-SA 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:L%C3%ADnea_2_del_Metro_de_la_Ciudad_de_M%C3%A9xico_-_Metro_Pino_Su%C3%A1rez_L%C3%ADnea_2_-_10.jpg"
+        "topic": "Metrobus en revolucion",
+        "keywords": [
+          "Movilidad"
+        ],
+        "author": "Hook89",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Metrobus_en_revolucion.jpg"
       }
     },
     {
@@ -114232,14 +114252,19 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_cultura_005",
-        "url": "/assets/fotos/archivo_cultura_005.jpg",
-        "category": "Cultura",
+        "id": "commons_162985532",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Viveros_de_Coyoacan_1.jpg/960px-Viveros_de_Coyoacan_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "category": "Medio Ambiente",
         "borough": "",
-        "topic": "Palacio de Bellas Artes, México D.F., México, 2013-10-13, DD 40",
-        "author": "Diego Delso",
-        "license": "CC BY-SA 3.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Palacio_de_Bellas_Artes%2C_M%C3%A9xico_D.F.%2C_M%C3%A9xico%2C_2013-10-13%2C_DD_40.jpg"
+        "topic": "Viveros de Coyoacan 1",
+        "keywords": [
+          "Viveros de Coyoacán Ciudad de México"
+        ],
+        "author": "Chivista",
+        "license": "CC0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "source": "https://commons.wikimedia.org/wiki/File:Viveros_de_Coyoacan_1.jpg"
       }
     },
     {
@@ -114484,14 +114509,19 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_metro_001",
-        "url": "/assets/fotos/archivo_metro_001.jpg",
+        "id": "commons_159788313",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Estaci%C3%B3n_Ju%C3%A1rez_del_Metro_de_la_Ciudad_de_M%C3%A9xico_02.jpg/960px-Estaci%C3%B3n_Ju%C3%A1rez_del_Metro_de_la_Ciudad_de_M%C3%A9xico_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
         "category": "Metro",
         "borough": "",
-        "topic": "Línea 2 del Metro de la Ciudad de México - Metro Pino Suárez Línea 2 - 10",
+        "topic": "Estación Juárez del Metro de la Ciudad de México 02",
+        "keywords": [
+          "Metro Ciudad de México Línea 3"
+        ],
         "author": "ProtoplasmaKid",
         "license": "CC BY-SA 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:L%C3%ADnea_2_del_Metro_de_la_Ciudad_de_M%C3%A9xico_-_Metro_Pino_Su%C3%A1rez_L%C3%ADnea_2_-_10.jpg"
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Estaci%C3%B3n_Ju%C3%A1rez_del_Metro_de_la_Ciudad_de_M%C3%A9xico_02.jpg"
       }
     },
     {
@@ -114540,14 +114570,19 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_metro_004",
-        "url": "/assets/fotos/archivo_metro_004.jpg",
-        "category": "Metro",
+        "id": "commons_169677340",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Estaci%C3%B3n_La_Viga_de_la_L%C3%ADnea_8_del_Metro_de_la_Ciudad_de_M%C3%A9xico_01.jpg/960px-Estaci%C3%B3n_La_Viga_de_la_L%C3%ADnea_8_del_Metro_de_la_Ciudad_de_M%C3%A9xico_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "category": "Alcaldías",
         "borough": "",
-        "topic": "Estación Sevilla de la Línea 1 del Metro de la Ciudad de México - 01 - Túnel de salida",
+        "topic": "Estación La Viga de la Línea 8 del Metro de la Ciudad de México 01",
+        "keywords": [
+          "Cuauhtémoc alcaldía Ciudad de México"
+        ],
         "author": "ProtoplasmaKid",
         "license": "CC BY-SA 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Estaci%C3%B3n_Sevilla_de_la_L%C3%ADnea_1_del_Metro_de_la_Ciudad_de_M%C3%A9xico_-_01_-_T%C3%BAnel_de_salida.jpg"
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Estaci%C3%B3n_La_Viga_de_la_L%C3%ADnea_8_del_Metro_de_la_Ciudad_de_M%C3%A9xico_01.jpg"
       }
     },
     {
@@ -114652,14 +114687,19 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_metro_001",
-        "url": "/assets/fotos/archivo_metro_001.jpg",
-        "category": "Metro",
+        "id": "commons_169677341",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Estaci%C3%B3n_La_Viga_de_la_L%C3%ADnea_8_del_Metro_de_la_Ciudad_de_M%C3%A9xico_02.jpg/960px-Estaci%C3%B3n_La_Viga_de_la_L%C3%ADnea_8_del_Metro_de_la_Ciudad_de_M%C3%A9xico_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "category": "Alcaldías",
         "borough": "",
-        "topic": "Línea 2 del Metro de la Ciudad de México - Metro Pino Suárez Línea 2 - 10",
+        "topic": "Estación La Viga de la Línea 8 del Metro de la Ciudad de México 02",
+        "keywords": [
+          "Cuauhtémoc alcaldía Ciudad de México"
+        ],
         "author": "ProtoplasmaKid",
         "license": "CC BY-SA 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:L%C3%ADnea_2_del_Metro_de_la_Ciudad_de_M%C3%A9xico_-_Metro_Pino_Su%C3%A1rez_L%C3%ADnea_2_-_10.jpg"
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Estaci%C3%B3n_La_Viga_de_la_L%C3%ADnea_8_del_Metro_de_la_Ciudad_de_M%C3%A9xico_02.jpg"
       }
     },
     {
@@ -114820,14 +114860,19 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_cultura_003",
-        "url": "/assets/fotos/archivo_cultura_003.jpg",
-        "category": "Cultura",
+        "id": "commons_66033728",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Z%C3%B3calo%2C_Ciudad_de_M%C3%A9xico_%2832846556446%29.jpg/960px-Z%C3%B3calo%2C_Ciudad_de_M%C3%A9xico_%2832846556446%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "category": "CDMX",
         "borough": "",
-        "topic": "Mexico City Palacio de bellas artes",
-        "author": "Jeses",
-        "license": "CC BY-SA 2.5",
-        "source": "https://commons.wikimedia.org/wiki/File:Mexico_City_Palacio_de_bellas_artes.jpg"
+        "topic": "Zócalo, Ciudad de México (32846556446)",
+        "keywords": [
+          "Zócalo Ciudad de México"
+        ],
+        "author": "Comisión Mexicana de Filmaciones from México D. F., México",
+        "license": "CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Z%C3%B3calo,_Ciudad_de_M%C3%A9xico_(32846556446).jpg"
       }
     },
     {
@@ -115049,14 +115094,19 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_seguridad_001",
-        "url": "/assets/fotos/archivo_seguridad_001.jpg",
-        "category": "Seguridad",
+        "id": "archivo_movilidad_008",
+        "kind": "representativa",
+        "url": "/assets/fotos/archivo_movilidad_008.jpg",
+        "category": "Movilidad",
         "borough": "",
-        "topic": "Adquisición patrullas para la Policía 03",
-        "author": "Gobierno de la Ciudad de México",
-        "license": "CC BY 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Adquisici%C3%B3n_patrullas_para_la_Polic%C3%ADa_03.jpg"
+        "topic": "Estación Buenavista Metrobús Ciudad de México",
+        "keywords": [
+          "Movilidad"
+        ],
+        "author": "ProtoplasmaKid",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Estaci%C3%B3n_Buenavista_Metrob%C3%BAs_Ciudad_de_M%C3%A9xico.JPG"
       }
     },
     {
@@ -115502,14 +115552,19 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_metro_001",
-        "url": "/assets/fotos/archivo_metro_001.jpg",
-        "category": "Metro",
+        "id": "commons_75246045",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Graduaci%C3%B3n_de_la_Polic%C3%ADa_de_la_Ciudad_de_M%C3%A9xico_-i---i-_%2837018417736%29.jpg/960px-Graduaci%C3%B3n_de_la_Polic%C3%ADa_de_la_Ciudad_de_M%C3%A9xico_-i---i-_%2837018417736%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "category": "Seguridad",
         "borough": "",
-        "topic": "Línea 2 del Metro de la Ciudad de México - Metro Pino Suárez Línea 2 - 10",
-        "author": "ProtoplasmaKid",
-        "license": "CC BY-SA 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:L%C3%ADnea_2_del_Metro_de_la_Ciudad_de_M%C3%A9xico_-_Metro_Pino_Su%C3%A1rez_L%C3%ADnea_2_-_10.jpg"
+        "topic": "Graduación de la Policía de la Ciudad de México -i---i- (37018417736)",
+        "keywords": [
+          "Policía Ciudad de México"
+        ],
+        "author": "Gobierno CDMX",
+        "license": "CC0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "source": "https://commons.wikimedia.org/wiki/File:Graduaci%C3%B3n_de_la_Polic%C3%ADa_de_la_Ciudad_de_M%C3%A9xico_-i---i-_(37018417736).jpg"
       }
     },
     {
@@ -116469,14 +116524,19 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_seguridad_002",
-        "url": "/assets/fotos/archivo_seguridad_002.jpg",
-        "category": "Seguridad",
+        "id": "archivo_gobierno_003",
+        "kind": "representativa",
+        "url": "/assets/fotos/archivo_gobierno_003.jpg",
+        "category": "Gobierno",
         "borough": "",
-        "topic": "Patrulla vecinal",
-        "author": "Daniel Yonka",
-        "license": "CC BY-SA 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Patrulla_vecinal.jpg"
+        "topic": "Palacio Nacional Ciudad de México DF",
+        "keywords": [
+          "Gobierno"
+        ],
+        "author": "Crater_sp",
+        "license": "CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Palacio_Nacional_Ciudad_de_M%C3%A9xico_DF.jpg"
       }
     },
     {
@@ -116497,14 +116557,19 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_seguridad_001",
-        "url": "/assets/fotos/archivo_seguridad_001.jpg",
-        "category": "Seguridad",
+        "id": "reciente_d3bf2851210c8f52",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Desfile_de_Catrinas_in_Mexico_City_2026_%2853%29.jpg/1280px-Desfile_de_Catrinas_in_Mexico_City_2026_%2853%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "category": "CDMX",
         "borough": "",
-        "topic": "Adquisición patrullas para la Policía 03",
-        "author": "Gobierno de la Ciudad de México",
-        "license": "CC BY 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Adquisici%C3%B3n_patrullas_para_la_Polic%C3%ADa_03.jpg"
+        "topic": "Desfile de Catrinas in Mexico City 2026 (53)",
+        "keywords": [
+          "CDMX"
+        ],
+        "author": "Gedankenstuecke",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Desfile_de_Catrinas_in_Mexico_City_2026_(53).jpg"
       }
     },
     {
@@ -116665,14 +116730,24 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_metro_004",
-        "url": "/assets/fotos/archivo_metro_004.jpg",
-        "category": "Metro",
+        "id": "contexto_autodromo_hermanos_rodriguez",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Vista_a%C3%A9rea_del_Aut%C3%B3dromo_Hermanos_Rodr%C3%ADguez_03.jpg/1280px-Vista_a%C3%A9rea_del_Aut%C3%B3dromo_Hermanos_Rodr%C3%ADguez_03.jpg",
+        "category": "Movilidad",
         "borough": "",
-        "topic": "Estación Sevilla de la Línea 1 del Metro de la Ciudad de México - 01 - Túnel de salida",
+        "topic": "Vista aérea del Autódromo Hermanos Rodríguez, Ciudad de México (fotografía de 2025)",
+        "keywords": [
+          "autódromo",
+          "Hermanos Rodríguez",
+          "gran premio",
+          "formula 1",
+          "F1",
+          "automovilismo"
+        ],
         "author": "ProtoplasmaKid",
         "license": "CC BY-SA 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Estaci%C3%B3n_Sevilla_de_la_L%C3%ADnea_1_del_Metro_de_la_Ciudad_de_M%C3%A9xico_-_01_-_T%C3%BAnel_de_salida.jpg"
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:Vista_a%C3%A9rea_del_Aut%C3%B3dromo_Hermanos_Rodr%C3%ADguez_03.jpg"
       }
     },
     {
@@ -116693,14 +116768,19 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_movilidad_001",
-        "url": "/assets/fotos/archivo_movilidad_001.jpg",
-        "category": "Movilidad",
+        "id": "commons_152180165",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Cosecha_de_Lluvia_05.jpg/960px-Cosecha_de_Lluvia_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "category": "Medio Ambiente",
         "borough": "",
-        "topic": "Articulado MASA U-18 RTP -Fénix D- -Metrobús- 05",
-        "author": "SerialKiller 666 RTP",
-        "license": "CC BY-SA 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Articulado_MASA_U-18_RTP_-F%C3%A9nix_D-_-Metrob%C3%BAs-_05.jpg"
+        "topic": "Cosecha de Lluvia 05",
+        "keywords": [
+          "Lluvia Ciudad de México"
+        ],
+        "author": "Gobierno de la Ciudad de México",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Cosecha_de_Lluvia_05.jpg"
       }
     },
     {
@@ -117553,14 +117633,19 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_cultura_002",
-        "url": "/assets/fotos/archivo_cultura_002.jpg",
-        "category": "Cultura",
+        "id": "commons_153635975",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Angel_de_la_independencia_2n.jpg/960px-Angel_de_la_independencia_2n.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "category": "CDMX",
         "borough": "",
-        "topic": "Palacio Nacional de Bellas Artes Ciudad de México D.F",
-        "author": "Luis Yamamoto",
-        "license": "CC BY-SA 3.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Palacio_Nacional_de_Bellas_Artes_Ciudad_de_M%C3%A9xico_D.F.jpg"
+        "topic": "Angel de la independencia 2n",
+        "keywords": [
+          "Ángel de la Independencia Ciudad de México"
+        ],
+        "author": "OliAzor",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Angel_de_la_independencia_2n.jpg"
       }
     },
     {
@@ -117838,14 +117923,19 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_metro_001",
-        "url": "/assets/fotos/archivo_metro_001.jpg",
-        "category": "Metro",
+        "id": "commons_109733610",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/MX_NS_LA_MAGDALENA_CONTRERAS_12.jpg/960px-MX_NS_LA_MAGDALENA_CONTRERAS_12.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "category": "Alcaldías",
         "borough": "",
-        "topic": "Línea 2 del Metro de la Ciudad de México - Metro Pino Suárez Línea 2 - 10",
-        "author": "ProtoplasmaKid",
-        "license": "CC BY-SA 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:L%C3%ADnea_2_del_Metro_de_la_Ciudad_de_M%C3%A9xico_-_Metro_Pino_Su%C3%A1rez_L%C3%ADnea_2_-_10.jpg"
+        "topic": "MX NS LA MAGDALENA CONTRERAS 12",
+        "keywords": [
+          "Magdalena Contreras Ciudad de México"
+        ],
+        "author": "Secretaría de Cultura CDMX",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:MX_NS_LA_MAGDALENA_CONTRERAS_12.jpg"
       }
     },
     {
@@ -118711,14 +118801,19 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_metro_001",
-        "url": "/assets/fotos/archivo_metro_001.jpg",
+        "id": "commons_173338466",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Afluencia_Pantitl%C3%A1n_L%C3%ADnea_A_%282024%29.png/960px-Afluencia_Pantitl%C3%A1n_L%C3%ADnea_A_%282024%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
         "category": "Metro",
         "borough": "",
-        "topic": "Línea 2 del Metro de la Ciudad de México - Metro Pino Suárez Línea 2 - 10",
-        "author": "ProtoplasmaKid",
-        "license": "CC BY-SA 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:L%C3%ADnea_2_del_Metro_de_la_Ciudad_de_M%C3%A9xico_-_Metro_Pino_Su%C3%A1rez_L%C3%ADnea_2_-_10.jpg"
+        "topic": "Afluencia Pantitlán Línea A (2024)",
+        "keywords": [
+          "Estación Pantitlán del Metro de la Ciudad de México"
+        ],
+        "author": "Sistema Transporte Colectivo / Gobierno de la Ciudad de México",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Afluencia_Pantitl%C3%A1n_L%C3%ADnea_A_(2024).png"
       }
     },
     {
@@ -118940,14 +119035,19 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_gobierno_007",
-        "url": "/assets/fotos/archivo_gobierno_007.jpg",
-        "category": "Gobierno",
+        "id": "commons_153940347",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Supervisi%C3%B3n_de_Obras_en_Avenida_Ceyl%C3%A1n_03.jpg/960px-Supervisi%C3%B3n_de_Obras_en_Avenida_Ceyl%C3%A1n_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "category": "Servicios",
         "borough": "",
-        "topic": "Calle Calle Francisco I. Madero de la Ciudad de México, con el Palacio Nacional al fondo",
-        "author": "Luisalvaz",
-        "license": "CC BY-SA 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Calle_Calle_Francisco_I._Madero_de_la_Ciudad_de_M%C3%A9xico%2C_con_el_Palacio_Nacional_al_fondo.JPG"
+        "topic": "Supervisión de Obras en Avenida Ceylán 03",
+        "keywords": [
+          "Drenaje Ciudad de México"
+        ],
+        "author": "Gobierno de la Ciudad de México",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Supervisi%C3%B3n_de_Obras_en_Avenida_Ceyl%C3%A1n_03.jpg"
       }
     },
     {
@@ -119380,19 +119480,16 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_seguridad_011",
+        "id": "alcaldia_iztapalapa",
         "kind": "representativa",
-        "url": "/assets/fotos/archivo_seguridad_011.jpg",
-        "category": "Seguridad",
-        "borough": "",
-        "topic": "Claudia Sheinbaum entrega patrullas Iztapalapa 02",
-        "keywords": [
-          "Seguridad"
-        ],
-        "author": "Gobierno de la Ciudad de México",
-        "license": "CC BY 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Claudia_Sheinbaum_entrega_patrullas_Iztapalapa_02.jpg"
+        "url": "/assets/alcaldias/iztapalapa.jpg",
+        "category": "CDMX",
+        "borough": "Iztapalapa",
+        "topic": "Vista de Iztapalapa desde el Cerro de la Estrella",
+        "author": "Secretaría de Cultura Ciudad de México from México",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:MX_MM_MUSEO_CERRO_DE_LA_ESTRELLA_%2849522225751%29.jpg"
       }
     },
     {
@@ -119469,14 +119566,19 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_metro_001",
-        "url": "/assets/fotos/archivo_metro_001.jpg",
-        "category": "Metro",
+        "id": "commons_152180159",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Cosecha_de_Lluvia_02.jpg/960px-Cosecha_de_Lluvia_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "category": "Medio Ambiente",
         "borough": "",
-        "topic": "Línea 2 del Metro de la Ciudad de México - Metro Pino Suárez Línea 2 - 10",
-        "author": "ProtoplasmaKid",
-        "license": "CC BY-SA 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:L%C3%ADnea_2_del_Metro_de_la_Ciudad_de_M%C3%A9xico_-_Metro_Pino_Su%C3%A1rez_L%C3%ADnea_2_-_10.jpg"
+        "topic": "Cosecha de Lluvia 02",
+        "keywords": [
+          "Lluvia Ciudad de México"
+        ],
+        "author": "Gobierno de la Ciudad de México",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Cosecha_de_Lluvia_02.jpg"
       }
     },
     {
@@ -119693,14 +119795,19 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_metro_004",
-        "url": "/assets/fotos/archivo_metro_004.jpg",
-        "category": "Metro",
+        "id": "gobierno",
+        "kind": "representativa",
+        "url": "/assets/fotos/gobierno.jpg",
+        "category": "Gobierno",
         "borough": "",
-        "topic": "Estación Sevilla de la Línea 1 del Metro de la Ciudad de México - 01 - Túnel de salida",
-        "author": "ProtoplasmaKid",
+        "topic": "Fachada del Palacio Nacional",
+        "keywords": [
+          "Gobierno"
+        ],
+        "author": "MichaelCamacho",
         "license": "CC BY-SA 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Estaci%C3%B3n_Sevilla_de_la_L%C3%ADnea_1_del_Metro_de_la_Ciudad_de_M%C3%A9xico_-_01_-_T%C3%BAnel_de_salida.jpg"
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.es",
+        "source": "https://commons.wikimedia.org/wiki/File:Palacio_Nacional_Ciudad_de_M%C3%A9xico.jpg"
       }
     },
     {
@@ -119721,14 +119828,19 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_seguridad_002",
-        "url": "/assets/fotos/archivo_seguridad_002.jpg",
-        "category": "Seguridad",
+        "id": "commons_20428753",
+        "kind": "representativa",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Palacio_Nacional_Ciudad_de_M%C3%A9xico_City.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "category": "Gobierno",
         "borough": "",
-        "topic": "Patrulla vecinal",
-        "author": "Daniel Yonka",
-        "license": "CC BY-SA 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Patrulla_vecinal.jpg"
+        "topic": "Palacio Nacional Ciudad de México City",
+        "keywords": [
+          "Gobierno"
+        ],
+        "author": "Flickr user Eric Menjívar",
+        "license": "CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Palacio_Nacional_Ciudad_de_M%C3%A9xico_City.jpg"
       }
     },
     {
@@ -119861,14 +119973,19 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_metro_002",
-        "url": "/assets/fotos/archivo_metro_002.jpg",
-        "category": "Metro",
+        "id": "commons_89299418",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Medidas_de_sanidad_en_los_mercados_de_la_Ciudad_de_M%C3%A9xico_durante_la_epidemia_de_COVID-19._1.jpg/960px-Medidas_de_sanidad_en_los_mercados_de_la_Ciudad_de_M%C3%A9xico_durante_la_epidemia_de_COVID-19._1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "category": "Servicios",
         "borough": "",
-        "topic": "Estación Juárez del Metro de la Ciudad de México 09",
-        "author": "ProtoplasmaKid",
+        "topic": "Medidas de sanidad en los mercados de la Ciudad de México durante la epidemia de COVID-19. 1",
+        "keywords": [
+          "Mercados públicos Ciudad de México"
+        ],
+        "author": "EneasMx",
         "license": "CC BY-SA 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Estaci%C3%B3n_Ju%C3%A1rez_del_Metro_de_la_Ciudad_de_M%C3%A9xico_09.jpg"
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Medidas_de_sanidad_en_los_mercados_de_la_Ciudad_de_M%C3%A9xico_durante_la_epidemia_de_COVID-19._1.jpg"
       }
     },
     {
