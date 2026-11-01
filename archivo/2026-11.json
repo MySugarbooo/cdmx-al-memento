@@ -1,7 +1,37 @@
 {
   "month": "2026-11",
-  "updated": "2026-11-01 14:45 UTC",
+  "updated": "2026-11-01 14:50 UTC",
   "articles": [
+    {
+      "title": "Desde 2022, indicios de oligopolio en proveeduría del INE",
+      "description": "De acuerdo con La Jornada, el titular publicado es: «Desde 2022, indicios de oligopolio en proveeduría del INE». La información publicada por La Jornada trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPazZiM3BnaVJDblZic3h0eVpWeFNUVDdCMzE0RjBFR1hXdWtTZXFXV2hCc0FKbXZDNm1aUm1BWjF2c0I1aTRDQUdqbWZiWHpSZEdCNlVQZkNBTUFQVkgxR2JPNFhrczBrSmRXZ3IyX0VUc0lwbkZ3M0NqRDdIaVFjWENWbmowMG5PYk9TU0dHd2dPdU9ud1Y1ekx3M2loa1RnQlVnb3lTQ2VmY2JFM3VRWQ?oc=5",
+      "source": "La Jornada",
+      "date": "2026-11-01",
+      "published_at": "2026-11-01T14:44:00Z",
+      "category": "CDMX",
+      "borough": "",
+      "location": "Ubicación no indicada por el titular",
+      "local_url": "/noticias/?id=84732ef9efb171da539e&mes=2026-11",
+      "brief": {
+        "lead": "De acuerdo con La Jornada, el titular publicado es: «Desde 2022, indicios de oligopolio en proveeduría del INE». La información publicada por La Jornada trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+        "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+        "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "alcaldia_tlalpan",
+        "kind": "representativa",
+        "url": "/assets/alcaldias/tlalpan.jpg",
+        "category": "CDMX",
+        "borough": "Tlalpan",
+        "topic": "Quiosco de la plaza principal de Tlalpan",
+        "author": "farid estrada",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Kiosko_plaza_de_la_constitucion%2C_tlapan.JPG"
+      }
+    },
     {
       "title": "Construcción del tren Ciudad de México - Querétaro tiene avance del 32 por ciento: Sheinbaum",
       "description": "De acuerdo con El Heraldo de México, el titular publicado es: «Construcción del tren Ciudad de México - Querétaro tiene avance del 32 por ciento: Sheinbaum». La información publicada por El Heraldo de México trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -385,16 +415,19 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_seguridad_016",
+        "id": "commons_52904580",
         "kind": "representativa",
-        "url": "/assets/fotos/archivo_seguridad_016.jpg",
-        "category": "Seguridad",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Ecobici_Estaci%C3%B3n_4_-_panoramio.jpg/960px-Ecobici_Estaci%C3%B3n_4_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "category": "Movilidad",
         "borough": "",
-        "topic": "Entrega de Patrullas en Alcaldías 01",
-        "author": "Gobierno de la Ciudad de México",
-        "license": "CC BY 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Entrega_de_Patrullas_en_Alcald%C3%ADas_01.jpg"
+        "topic": "Ecobici Estación 4 - panoramio",
+        "keywords": [
+          "ECOBICI Ciudad de México"
+        ],
+        "author": "Hari Seldon",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Ecobici_Estaci%C3%B3n_4_-_panoramio.jpg"
       }
     },
     {
@@ -681,19 +714,19 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_seguridad_004",
+        "id": "commons_82750992",
         "kind": "representativa",
-        "url": "/assets/fotos/archivo_seguridad_004.jpg",
-        "category": "Seguridad",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Avenida_Francisco_I._Madero%2C_Centro_Hist%C3%B3rico%2C_Ciudad_de_M%C3%A9xico_-_Torre_Latinoamericana.jpg/960px-Avenida_Francisco_I._Madero%2C_Centro_Hist%C3%B3rico%2C_Ciudad_de_M%C3%A9xico_-_Torre_Latinoamericana.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "category": "CDMX",
         "borough": "",
-        "topic": "Adquisición patrullas para la Policía 01",
+        "topic": "Avenida Francisco I. Madero, Centro Histórico, Ciudad de México - Torre Latinoamericana",
         "keywords": [
-          "Seguridad"
+          "Torre Latinoamericana Ciudad de México"
         ],
-        "author": "Gobierno de la Ciudad de México",
-        "license": "CC BY 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Adquisici%C3%B3n_patrullas_para_la_Polic%C3%ADa_01.jpg"
+        "author": "Juan Carlos Fonseca Mata",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Avenida_Francisco_I._Madero,_Centro_Hist%C3%B3rico,_Ciudad_de_M%C3%A9xico_-_Torre_Latinoamericana.jpg"
       }
     },
     {
