@@ -22,7 +22,7 @@ from pathlib import Path
 from zoneinfo import ZoneInfo
 
 from scripts.analisis_editorial import build_editorial
-from scripts.notas_locales import local_link, summarize, assign_photos
+from scripts.notas_locales import local_link, summarize, assign_photos, _photo_score
 
 ROOT = Path(__file__).resolve().parent
 DEST = ROOT / "news.json"
@@ -338,14 +338,26 @@ def consolidate_archive(new_items, cutoff, updated):
             if not old or (item.get("published_at") and not old.get("published_at")):
                 existing[key] = item
 
-    # Reparar el histórico gradualmente sin sobrescribir fotografías ya verificadas.
-    # Limitar cada ejecución evita cambios masivos y tiempos excesivos en Actions.
+    # Reparar también fotografías antiguas incongruentes después de corregir
+    # la clasificación RSS. Conservar fotografías del hecho verificadas.
+    mismatched = [
+        item for item in existing.values()
+        if isinstance(item.get("photo"), dict)
+        and item["photo"].get("kind") != "hecho"
+        and _photo_score(item, item["photo"]) < 0
+    ]
     missing = [item for item in existing.values() if not item.get("photo")]
-    batch = missing[:300]
+    # Priorizar imágenes engañosas y limitar la reparación a 300 por ejecución.
+    # Como máximo 24 son reemplazos; el resto conserva el tratamiento previo.
+    refresh = mismatched[:24]
+    batch = refresh + missing[:max(0, 300 - len(refresh))]
     if batch:
         stats = assign_photos(batch)
         print("Fotografías del archivo (lote):", len(batch), "revisadas;",
-              stats["assigned"], "asignadas;", len(missing) - len(batch), "pendientes de revisar")
+              len(refresh), "incongruentes reconsideradas;",
+              stats["assigned"], "asignadas;",
+              len(mismatched) - len(refresh), "incongruentes pendientes;",
+              len(missing) - (len(batch) - len(refresh)), "sin foto pendientes")
 
     by_month = defaultdict(list)
     by_borough = defaultdict(list)
