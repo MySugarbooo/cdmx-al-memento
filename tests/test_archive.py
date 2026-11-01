@@ -26,6 +26,21 @@ class BoroughAndArchiveTests(unittest.TestCase):
         self.assertEqual(news.identify_location("En Coyoacán y Tlalpan")[0], "")
         self.assertEqual(news.identify_location("Los planes del Metro CDMX")[0], "")
 
+    def test_unambiguous_outside_region_is_not_promoted_or_mislocated(self):
+        title = "Muere conductor tras chocar contra autobús en Carretera a Laredo en Escobedo"
+        self.assertTrue(news.outside_cdmx_scope(title))
+        self.assertFalse(news.outside_cdmx_scope("Familias acuden a panteones de CdMx y Monterrey"))
+        self.assertFalse(news.outside_cdmx_scope("Cierre vial en la alcaldía Xochimilco"))
+        self.assertFalse(news.outside_cdmx_scope("CDMX y Escobedo: carreteras a Laredo en discusión"))
+        date = datetime.now(timezone.utc).date().isoformat()
+        outside = news.standardize(fake(title, date))
+        local = news.standardize(fake("Cierre vial en Xochimilco CDMX", date))
+        self.assertEqual(outside["location"], "Escobedo, Nuevo León (fuera de CDMX)")
+        self.assertEqual(news.homepage_articles([outside, local], [], datetime.now(timezone.utc)),
+                         [local])
+        # El registro puede conservarse en la hemeroteca; solo se evita
+        # su incorporación a la portada de noticias de CDMX.
+
     def test_source_time_is_real_or_missing(self):
         now="2026-10-11T23:40:00Z"
         article=news.standardize(fake("Una noticia sobre Xochimilco en CDMX", "2026-10-11", now))
