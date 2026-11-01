@@ -18,7 +18,7 @@ class VerificationUiTests(unittest.TestCase):
         self.assertIn("no equivale a confirmar los hechos", script)
         self.assertIn("archive.updated", script)
         self.assertIn("current.updated", script)
-        self.assertIn("safeExternal(article.url)", script)
+        self.assertIn("safeExternal(article.url,article.editorial_verified===true)", script)
 
 
 if __name__ == "__main__":
