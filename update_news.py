@@ -234,8 +234,11 @@ def standardize(article):
             result["location"] = clean(article["location"])[:180]
     else:
         result["brief"] = summarize(result)  # Recalcular fichas RSS al ajustar reglas.
-    if isinstance(article.get("photo"), dict):
+    if (isinstance(article.get("photo"), dict) and
+            not (curated and result.get("sensitive_media") is True)):
         result["photo"] = article["photo"]
+    # Fotografías de accidentes de archivo pueden ser solo contexto; no
+    # conservarlas tras la revisión editorial si no documentan ese hecho.
     result["description"] = result["brief"]["lead"]
     return result
 
