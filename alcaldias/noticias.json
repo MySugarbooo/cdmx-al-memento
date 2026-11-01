@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-01 02:59 UTC",
+  "updated": "2026-11-01 04:02 UTC",
   "boroughs": [
     {
       "name": "La Magdalena Contreras",
@@ -1499,8 +1499,38 @@
     },
     {
       "name": "Azcapotzalco",
-      "count": 81,
+      "count": 82,
       "articles": [
+        {
+          "title": "Rodada del Terror Recorre Calles de Azcapotzalco por el Día de Muertos, CDMX",
+          "description": "La información publicada por N+ trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQVEZYcmpKWEVqdWlmSFdUUmg2RVdWNHZhLXgzQ04tcEZJaG5vNkxuTEdPX0RaUTBMcktwcjBtZThjMzB2YWJhdC1PR2RPSzl2U1BwdXAzeld6SkpvUlVMMnVyN1JxdTlvYkNWTE5xbXZJVW1nVlNnTkZ5UDlCWUFISEJNRHlsUDlQU2JCNDVRUkllaktMN2d1WDVudmRtZHN4S1hydzBLWlZyTmFvYjV6OUlXbUpTYXpCYTdoR090RjYwbHIyMkZ1dXR2czJ6b182MlE?oc=5",
+          "source": "N+",
+          "date": "2026-10-31",
+          "published_at": "2026-11-01T03:52:43Z",
+          "category": "CDMX",
+          "borough": "Azcapotzalco",
+          "location": "Azcapotzalco (mencionada en el titular)",
+          "local_url": "/noticias/?id=17dff7369ebece6a03e3&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por N+ trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_azcapotzalco",
+            "kind": "representativa",
+            "url": "/assets/alcaldias/azcapotzalco.jpg",
+            "category": "CDMX",
+            "borough": "Azcapotzalco",
+            "topic": "Parroquia de Santa Catarina, Azcapotzalco",
+            "author": "Ivan alcantara",
+            "license": "CC BY-SA 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:PARROQUIA_DE_SANTA_CATARINA_%28AZCAPOTZALCO%29.jpg"
+          }
+        },
         {
           "title": "Clima en Azcapotzalco: sábado 31 de octubre con cielo claro y ambiente templado",
           "description": "El pronóstico recogido por El Heraldo de México se refiere a condiciones meteorológicas en Azcapotzalco. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
@@ -2189,39 +2219,6 @@
             "license": "CC BY 2.0",
             "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
             "source": "https://commons.wikimedia.org/wiki/File:MX_TV_CASA_DE_LA_CULTURA_AZCAPOTZALCO_-_2.jpg"
-          }
-        },
-        {
-          "title": "Clima y pronóstico en Azcapotzalco para el domingo 25 de octubre: frío y lluvia",
-          "description": "El pronóstico recogido por El Heraldo de México se refiere a lluvias en Azcapotzalco. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
-          "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPbUJxMHdqd0ZLbnFXcF93TWk4U2ZXS0VIS0ZhdXdxSVhvekdiQmYxdmJOVFl1eW5jSEt5UEdyV0lVUXlkdDJKUE9zU0VoTXhxSks5aUU2azI5QjFfaG1xZUgxdGVYc0QxODllMkQ4UnNGLUZOWHE1bXZ5eGxuWUFVVEV0bXVTc1NHYkRRMEFMUm5HNENnU2tXejRMZWdHeFhST2ZpMldNbDJwVXN4WGZtTGJ4RFpXSklYY0F6X2VDcGVSZ205d0R2Q205MlhiSDFSbFY4?oc=5",
-          "source": "El Heraldo de México",
-          "date": "2026-10-24",
-          "published_at": "2026-10-25T05:00:00Z",
-          "category": "CDMX",
-          "borough": "Azcapotzalco",
-          "location": "Azcapotzalco (mencionada en el titular)",
-          "local_url": "/noticias/?id=c47f6d3105ac24d8c47f&mes=2026-10",
-          "brief": {
-            "lead": "El pronóstico recogido por El Heraldo de México se refiere a lluvias en Azcapotzalco. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "commons_13461451",
-            "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Avenida_Azcapotzalco.JPG/960px-Avenida_Azcapotzalco.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "category": "Alcaldías",
-            "borough": "",
-            "topic": "Avenida Azcapotzalco",
-            "keywords": [
-              "Azcapotzalco Ciudad de México"
-            ],
-            "author": "ProtoplasmaKid",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Avenida_Azcapotzalco.JPG"
           }
         }
       ]
