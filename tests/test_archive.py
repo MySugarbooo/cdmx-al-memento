@@ -103,6 +103,12 @@ class BoroughAndArchiveTests(unittest.TestCase):
         self.assertGreaterEqual(news._photo_score(closures, {
             "category": "Movilidad", "topic": "Tráfico vehicular en avenida Reforma",
         }), 0)
+        self.assertLess(news._photo_score(closures, {
+            "category": "Movilidad", "topic": "Trolebús Línea 2 sobre Avenida Yucatán",
+        }), 0)
+        self.assertLess(news._photo_score(gp_security, {
+            "category": "CDMX", "topic": "Calles Seminario y Moneda Centro Histórico",
+        }), 0)
 
     def test_unambiguous_outside_region_is_not_promoted_or_mislocated(self):
         title = "Muere conductor tras chocar contra autobús en Carretera a Laredo en Escobedo"
