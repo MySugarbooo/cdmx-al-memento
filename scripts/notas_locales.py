@@ -76,12 +76,24 @@ def _reported_angle(article):
                 f"y menciona la activación de una Alerta Amber{zone}. "
                 "Por respeto a su privacidad, esta síntesis no reproduce datos personales "
                 "adicionales ni especula sobre las circunstancias de la desaparición.")
-    if ("atropell" in t or "arrollad" in t or "embiste" in t) and ("tráiler" in t or "trailer" in t):
-        detained=" El encabezado también menciona la detención del conductor." if "detien" in t or "detenido" in t else ""
-        return (f"De acuerdo con {source}, se reportó un atropellamiento con consecuencias mortales"
-                f"{zone}, relacionado con un tráiler. "
-                "Es una noticia que exige cuidado al informar sobre las personas afectadas."
-                +detained)
+    # Accidentes de motos, choques y siniestros: informar incluso si el hecho es
+    # grave, sin inventar fallecimientos, lesiones, imágenes o circunstancias.
+    if re.search(r"\\b(?:accident\\w*|choqu\\w*|colisi[oó]n\\w*|volcadur\\w*|"
+                 r"atropell\\w*|arroll\\w*|derrap\\w*|siniestro vial)\\b", t):
+        vehicle=("una motocicleta" if re.search(r"\\b(?:moto|motocicleta|motociclista)\\w*\\b", t)
+                 else "vehículos" if re.search(r"\\b(?:automovil|auto|camion|trailer|tráiler|vehiculo)\\w*\\b", t)
+                 else "personas o vehículos involucrados")
+        if re.search(r"\\b(?:fallec\\w*|muert\\w*|murio|murieron|sin vida|pierde la vida|"
+                     r"perdio la vida|fatal|mortal)\\b", t):
+            outcome="El propio titular señala un fallecimiento, sin que esta ficha agregue cifras ni identidades."
+        elif re.search(r"\\b(?:herid\\w*|lesionad\\w*|hospitalizad\\w*)\\b", t):
+            outcome="El propio titular menciona personas lesionadas, sin datos médicos adicionales verificados."
+        else:
+            outcome="El encabezado no permite determinar por sí solo si hubo personas lesionadas o fallecidas."
+        return (f"De acuerdo con {source}, se informa de un hecho vial relacionado con "
+                f"{vehicle}{zone}. {outcome} "
+                "Se requiere consultar la nota original para conocer el punto exacto, las "
+                "circunstancias y los reportes oficiales, sin atribuir responsabilidades sin pruebas.")
     if "imss" in t and ("marcha" in t or "bloque" in t or "moviliza" in t):
         return (f"La cobertura de {source} se centra en movilizaciones de trabajadores "
                 "del IMSS y en su posible o reportada repercusión sobre calles de Ciudad de México. "
@@ -343,8 +355,8 @@ def _pool():
     return list(unique.values())
 
 
-# No se usan fotografías de accidentes, manifestaciones particulares o
-# emergencias anteriores como si ilustraran un nuevo hecho similar.
+# Sí se informa sobre accidentes y hechos graves, incluso con material sensible
+# verificado. Solo se evita presentar fotos de otros siniestros como si fueran actuales.
 SENSITIVE_CONTEXT = re.compile(
     r"\b(?:incidente|colapso|accidente|siniestro|victimas|fallecidos|"
     r"marcha del orgullo|8 de marzo|manifestacion por|homenaje a)\b"
