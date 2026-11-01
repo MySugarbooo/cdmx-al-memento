@@ -349,7 +349,9 @@ def consolidate_archive(new_items, cutoff, updated):
     missing = [item for item in existing.values() if not item.get("photo")]
     # Priorizar imágenes engañosas y limitar la reparación a 300 por ejecución.
     # Como máximo 24 son reemplazos; el resto conserva el tratamiento previo.
-    refresh = mismatched[:24]
+    # Atender primero las noticias recientes; el orden de archivos en disco
+    # puede colocar miles de notas antiguas antes de los errores de hoy.
+    refresh = sorted(mismatched, key=sort_key, reverse=True)[:24]
     batch = refresh + missing[:max(0, 300 - len(refresh))]
     if batch:
         stats = assign_photos(batch)
