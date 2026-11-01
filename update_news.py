@@ -54,6 +54,10 @@ GENERAL_FEEDS = {
 LOCAL_EVENT_QUERIES = (
     "CDMX inundaciones encharcamientos lluvias protección civil",
     "CDMX incendio fuga de gas choque emergencia",
+    # Accidentes viales: cobertura específica sin excluir hechos con víctimas.
+    "CDMX motociclista accidente moto derrape choque",
+    "CDMX choque volcadura atropellamiento colisión vial",
+    "CDMX accidente carretera motocicleta lesionados fallecidos",
     "CDMX colonias falta de agua cierre vial vecinos",
 )
 HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; CDMXAlMemento/2.0; news aggregator)"}
@@ -162,6 +166,11 @@ def category_by_headline(title, feed_category):
     """Corrige etiquetas RSS evidentes sin inventar ubicaciones o hechos."""
     normalized = fold(title)
     if re.search(r"\b(?:muevete en bici|paseo dominical|bicicletas?|ciclistas?|ciclismo|ciclovias?|ecobici|cicloton)\b", normalized):
+        return "Movilidad"
+    # Distinguir siniestros viales de delitos, aunque provengan de otro feed RSS.
+    if re.search(r"\b(?:accidentes?|choques?|colisiones?|volcaduras?|atropellamientos?|arrollamientos?|derrapes?|percances? viales?|siniestros? viales?)\b", normalized):
+        if re.search(r"\b(?:homicidio|balacera|asalto|atentado|delito|persecucion policial)\b", normalized):
+            return "Seguridad"
         return "Movilidad"
     if (feed_category == "Seguridad"
             and re.search(r"\b(?:robot|robots|robotica|robotico|roboticos)\b", normalized)
