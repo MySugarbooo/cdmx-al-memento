@@ -20,7 +20,11 @@
   request('',{action:'visit'}).then(d=>{const n=d.visitors.toLocaleString('es-MX');value.textContent=n;const h=document.getElementById('header-visitors-number');if(h)h.textContent=n;})
     .catch(()=>{value.textContent='No disponible';const h=document.getElementById('header-visitors-number');if(h)h.textContent='No disponible';});
   window.CDMX_addArticleLike=(card,article)=>{
-    const id=article.url||article.local_url;
+    // Keep existing votes for short Google News URLs; use a stable local key
+    // when the source URL exceeds the API's 220-character limit.
+    const source=typeof article.url==='string'?article.url:'';
+    const local=typeof article.local_url==='string'?article.local_url:'';
+    const id=source.length<=220&&source.startsWith('https://news.google.com/')?source:local;
     if(!id||id.length>220)return;
     const button=document.createElement('button');
     button.className='article-like';button.type='button';button.disabled=true;
