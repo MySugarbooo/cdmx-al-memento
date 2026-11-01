@@ -1,6 +1,6 @@
 {
   "month": "2026-10",
-  "updated": "2026-11-01 22:41 UTC",
+  "updated": "2026-11-01 22:43 UTC",
   "articles": [
     {
       "title": "Expropiará el gobierno de la CDMX capitalino tres predios para vivienda pública",
@@ -766,18 +766,6 @@
         "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
         "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "alcaldia_azcapotzalco",
-        "kind": "representativa",
-        "url": "/assets/alcaldias/azcapotzalco.jpg",
-        "category": "CDMX",
-        "borough": "Azcapotzalco",
-        "topic": "Parroquia de Santa Catarina, Azcapotzalco",
-        "author": "Ivan alcantara",
-        "license": "CC BY-SA 3.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-        "source": "https://commons.wikimedia.org/wiki/File:PARROQUIA_DE_SANTA_CATARINA_%28AZCAPOTZALCO%29.jpg"
       }
     },
     {
@@ -961,21 +949,6 @@
         "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
         "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "commons_75245995",
-        "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Graduaci%C3%B3n_de_la_Polic%C3%ADa_de_la_Ciudad_de_M%C3%A9xico_-i---i-_%2836371673094%29.jpg/960px-Graduaci%C3%B3n_de_la_Polic%C3%ADa_de_la_Ciudad_de_M%C3%A9xico_-i---i-_%2836371673094%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "category": "Seguridad",
-        "borough": "",
-        "topic": "Graduación de la Policía de la Ciudad de México -i---i- (36371673094)",
-        "keywords": [
-          "Policía Ciudad de México"
-        ],
-        "author": "Gobierno CDMX",
-        "license": "CC0",
-        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
-        "source": "https://commons.wikimedia.org/wiki/File:Graduaci%C3%B3n_de_la_Polic%C3%ADa_de_la_Ciudad_de_M%C3%A9xico_-i---i-_(36371673094).jpg"
       }
     },
     {
@@ -2209,21 +2182,6 @@
         "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
         "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "commons_157006041",
-        "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/Nuevas_patrullas_para_Cuajimalpa_04.jpg/960px-Nuevas_patrullas_para_Cuajimalpa_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "category": "Seguridad",
-        "borough": "",
-        "topic": "Nuevas patrullas para Cuajimalpa 04",
-        "keywords": [
-          "Secretaría de Seguridad Ciudadana CDMX patrulla"
-        ],
-        "author": "Gobierno de la Ciudad de México",
-        "license": "CC BY 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Nuevas_patrullas_para_Cuajimalpa_04.jpg"
       }
     },
     {
@@ -2611,19 +2569,24 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "commons_90954290",
+        "id": "contexto_autodromo_hermanos_rodriguez",
         "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/InsurgentesReformaIntersection.jpg/960px-InsurgentesReformaIntersection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Vista_a%C3%A9rea_del_Aut%C3%B3dromo_Hermanos_Rodr%C3%ADguez_03.jpg/1280px-Vista_a%C3%A9rea_del_Aut%C3%B3dromo_Hermanos_Rodr%C3%ADguez_03.jpg",
         "category": "Movilidad",
         "borough": "",
-        "topic": "InsurgentesReformaIntersection",
+        "topic": "Vista aérea del Autódromo Hermanos Rodríguez, Ciudad de México (fotografía de 2025)",
         "keywords": [
-          "Metrobús Paseo de la Reforma CDMX"
+          "autódromo",
+          "Hermanos Rodríguez",
+          "gran premio",
+          "formula 1",
+          "F1",
+          "automovilismo"
         ],
-        "author": "Alexandre Guevara",
-        "license": "CC BY-SA 3.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-        "source": "https://commons.wikimedia.org/wiki/File:InsurgentesReformaIntersection.jpg"
+        "author": "ProtoplasmaKid",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:Vista_a%C3%A9rea_del_Aut%C3%B3dromo_Hermanos_Rodr%C3%ADguez_03.jpg"
       }
     },
     {
@@ -2875,19 +2838,24 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "commons_175548195",
+        "id": "contexto_trafico_eje_central",
         "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/Avance_Metrob%C3%BAs_L7_05_01.jpg/960px-Avance_Metrob%C3%BAs_L7_05_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Eje_Central_CDMX.jpg/1280px-Eje_Central_CDMX.jpg",
         "category": "Movilidad",
         "borough": "",
-        "topic": "Avance Metrobús L7 05 01",
+        "topic": "Tráfico vehicular en Eje Central, Ciudad de México (fotografía de 2018)",
         "keywords": [
-          "Metrobús Paseo de la Reforma CDMX"
+          "tráfico",
+          "vehículos",
+          "automóviles",
+          "movilidad",
+          "hoy no circula",
+          "vialidad"
         ],
-        "author": "Gobierno de la Ciudad de México",
+        "author": "Sergio Estrada Flores",
         "license": "CC BY 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Avance_Metrob%C3%BAs_L7_05_01.jpg"
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:Eje_Central_CDMX.jpg"
       }
     },
     {
@@ -3314,19 +3282,19 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "commons_145192405",
+        "id": "commons_48072549",
         "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/DECLARATORIA_DE_CARNAVALES_COMO_PATRIMONIO_CULTURAL_INMATERIAL_DE_LA_CIUDAD_DE_M%C3%89XICO_09.jpg/960px-DECLARATORIA_DE_CARNAVALES_COMO_PATRIMONIO_CULTURAL_INMATERIAL_DE_LA_CIUDAD_DE_M%C3%89XICO_09.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "category": "CDMX",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Polic%C3%ADa_de_tr%C3%A1nsito_Ciudad_de_M%C3%A9xico_marcando_alto_a_auto.jpg/960px-Polic%C3%ADa_de_tr%C3%A1nsito_Ciudad_de_M%C3%A9xico_marcando_alto_a_auto.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "category": "Seguridad",
         "borough": "",
-        "topic": "DECLARATORIA DE CARNAVALES COMO PATRIMONIO CULTURAL INMATERIAL DE LA CIUDAD DE MÉXICO 09",
+        "topic": "Policía de tránsito Ciudad de México marcando alto a auto",
         "keywords": [
-          "Calles Ciudad de México"
+          "Policía Ciudad de México"
         ],
-        "author": "Secretaría de Cultura CDMX",
-        "license": "CC BY 2.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-        "source": "https://commons.wikimedia.org/wiki/File:DECLARATORIA_DE_CARNAVALES_COMO_PATRIMONIO_CULTURAL_INMATERIAL_DE_LA_CIUDAD_DE_M%C3%89XICO_09.jpg"
+        "author": "ProtoplasmaKid",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Polic%C3%ADa_de_tr%C3%A1nsito_Ciudad_de_M%C3%A9xico_marcando_alto_a_auto.jpg"
       }
     },
     {
@@ -5799,19 +5767,19 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "commons_175548203",
+        "id": "commons_71154185",
         "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Avance_Metrob%C3%BAs_L7_08_01.jpg/960px-Avance_Metrob%C3%BAs_L7_08_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Metrob%C3%BAs_at_Paseo_de_la_Reforma.jpg/960px-Metrob%C3%BAs_at_Paseo_de_la_Reforma.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
         "category": "Movilidad",
         "borough": "",
-        "topic": "Avance Metrobús L7 08 01",
+        "topic": "Metrobús at Paseo de la Reforma",
         "keywords": [
           "Metrobús Paseo de la Reforma CDMX"
         ],
-        "author": "Gobierno de la Ciudad de México",
-        "license": "CC BY 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Avance_Metrob%C3%BAs_L7_08_01.jpg"
+        "author": "Cocu15",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Metrob%C3%BAs_at_Paseo_de_la_Reforma.jpg"
       }
     },
     {
@@ -6755,21 +6723,6 @@
         "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
         "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "commons_76480853",
-        "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Transporte_p%C3%BAblico_de_la_Ciudad_de_M%C3%A9xico_IMG_1004_%2826911178281%29.jpg/960px-Transporte_p%C3%BAblico_de_la_Ciudad_de_M%C3%A9xico_IMG_1004_%2826911178281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "category": "Movilidad",
-        "borough": "",
-        "topic": "Transporte público de la Ciudad de México IMG 1004 (26911178281)",
-        "keywords": [
-          "Metrobús Ciudad de México"
-        ],
-        "author": "Gobierno CDMX",
-        "license": "CC0",
-        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
-        "source": "https://commons.wikimedia.org/wiki/File:Transporte_p%C3%BAblico_de_la_Ciudad_de_M%C3%A9xico_IMG_1004_(26911178281).jpg"
       }
     },
     {
@@ -7699,19 +7652,19 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "commons_145192439",
+        "id": "commons_178088525",
         "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/DECLARATORIA_DE_CARNAVALES_COMO_PATRIMONIO_CULTURAL_INMATERIAL_DE_LA_CIUDAD_DE_M%C3%89XICO_13.jpg/960px-DECLARATORIA_DE_CARNAVALES_COMO_PATRIMONIO_CULTURAL_INMATERIAL_DE_LA_CIUDAD_DE_M%C3%89XICO_13.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "category": "CDMX",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Estaci%C3%B3n_Insurgentes_de_la_L%C3%ADnea_1_del_Metro_de_la_Ciudad_de_M%C3%A9xico_3.jpg/960px-Estaci%C3%B3n_Insurgentes_de_la_L%C3%ADnea_1_del_Metro_de_la_Ciudad_de_M%C3%A9xico_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "category": "Metro",
         "borough": "",
-        "topic": "DECLARATORIA DE CARNAVALES COMO PATRIMONIO CULTURAL INMATERIAL DE LA CIUDAD DE MÉXICO 13",
+        "topic": "Estación Insurgentes de la Línea 1 del Metro de la Ciudad de México 3",
         "keywords": [
-          "Calles Ciudad de México"
+          "Metro Ciudad de México Línea 3"
         ],
-        "author": "Secretaría de Cultura CDMX",
-        "license": "CC BY 2.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-        "source": "https://commons.wikimedia.org/wiki/File:DECLARATORIA_DE_CARNAVALES_COMO_PATRIMONIO_CULTURAL_INMATERIAL_DE_LA_CIUDAD_DE_M%C3%89XICO_13.jpg"
+        "author": "ProtoplasmaKid",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Estaci%C3%B3n_Insurgentes_de_la_L%C3%ADnea_1_del_Metro_de_la_Ciudad_de_M%C3%A9xico_3.jpg"
       }
     },
     {
@@ -7871,18 +7824,6 @@
         "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
         "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "alcaldia_iztapalapa",
-        "kind": "representativa",
-        "url": "/assets/alcaldias/iztapalapa.jpg",
-        "category": "CDMX",
-        "borough": "Iztapalapa",
-        "topic": "Vista de Iztapalapa desde el Cerro de la Estrella",
-        "author": "Secretaría de Cultura Ciudad de México from México",
-        "license": "CC BY 2.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-        "source": "https://commons.wikimedia.org/wiki/File:MX_MM_MUSEO_CERRO_DE_LA_ESTRELLA_%2849522225751%29.jpg"
       }
     },
     {
@@ -8000,21 +7941,6 @@
         "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
         "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "commons_157006039",
-        "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Nuevas_patrullas_para_Cuajimalpa_03.jpg/960px-Nuevas_patrullas_para_Cuajimalpa_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "category": "Seguridad",
-        "borough": "",
-        "topic": "Nuevas patrullas para Cuajimalpa 03",
-        "keywords": [
-          "Secretaría de Seguridad Ciudadana CDMX patrulla"
-        ],
-        "author": "Gobierno de la Ciudad de México",
-        "license": "CC BY 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Nuevas_patrullas_para_Cuajimalpa_03.jpg"
       }
     },
     {
@@ -8891,19 +8817,19 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "commons_175548199",
+        "id": "movilidad",
         "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/Avance_Metrob%C3%BAs_L7_01_01.jpg/960px-Avance_Metrob%C3%BAs_L7_01_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "url": "/assets/fotos/movilidad.jpg",
         "category": "Movilidad",
         "borough": "",
-        "topic": "Avance Metrobús L7 01 01",
+        "topic": "Metrobús en Paseo de la Reforma",
         "keywords": [
-          "Metrobús Paseo de la Reforma CDMX"
+          "Movilidad"
         ],
-        "author": "Gobierno de la Ciudad de México",
-        "license": "CC BY 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Avance_Metrob%C3%BAs_L7_01_01.jpg"
+        "author": "Juan Carlos Fonseca Mata",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.es",
+        "source": "https://commons.wikimedia.org/wiki/File:Paseo_de_la_Reforma%2C_CDMX_191022.jpg"
       }
     },
     {
@@ -10054,21 +9980,6 @@
         "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
         "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "commons_157006039",
-        "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Nuevas_patrullas_para_Cuajimalpa_03.jpg/960px-Nuevas_patrullas_para_Cuajimalpa_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "category": "Seguridad",
-        "borough": "",
-        "topic": "Nuevas patrullas para Cuajimalpa 03",
-        "keywords": [
-          "Secretaría de Seguridad Ciudadana CDMX patrulla"
-        ],
-        "author": "Gobierno de la Ciudad de México",
-        "license": "CC BY 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Nuevas_patrullas_para_Cuajimalpa_03.jpg"
       }
     },
     {
@@ -11741,21 +11652,6 @@
         "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
         "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "archivo_seguridad_002",
-        "kind": "representativa",
-        "url": "/assets/fotos/archivo_seguridad_002.jpg",
-        "category": "Seguridad",
-        "borough": "",
-        "topic": "Patrulla vecinal",
-        "keywords": [
-          "Seguridad"
-        ],
-        "author": "Daniel Yonka",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Patrulla_vecinal.jpg"
       }
     },
     {
@@ -12202,21 +12098,6 @@
         "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
         "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "commons_75261189",
-        "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Protecci%C3%B3n_civil_CDMX_-i---i-_%2836371604084%29.jpg/960px-Protecci%C3%B3n_civil_CDMX_-i---i-_%2836371604084%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "category": "Seguridad",
-        "borough": "",
-        "topic": "Protección civil CDMX -i---i- (36371604084)",
-        "keywords": [
-          "Protección Civil CDMX"
-        ],
-        "author": "Gobierno CDMX",
-        "license": "CC0",
-        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
-        "source": "https://commons.wikimedia.org/wiki/File:Protecci%C3%B3n_civil_CDMX_-i---i-_(36371604084).jpg"
       }
     },
     {
@@ -14087,21 +13968,6 @@
         "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
         "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "reciente_71c9abb0b2bc60b6",
-        "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Metrob%C3%BAs_Hidalgo_L7_%282026%29.jpg/1280px-Metrob%C3%BAs_Hidalgo_L7_%282026%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "category": "Movilidad",
-        "borough": "",
-        "topic": "Metrobús Hidalgo L7 (2026)",
-        "keywords": [
-          "Movilidad"
-        ],
-        "author": "Tbhotch",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Metrob%C3%BAs_Hidalgo_L7_(2026).jpg"
       }
     },
     {
@@ -14122,19 +13988,19 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "commons_145192393",
+        "id": "commons_178088523",
         "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/DECLARATORIA_DE_CARNAVALES_COMO_PATRIMONIO_CULTURAL_INMATERIAL_DE_LA_CIUDAD_DE_M%C3%89XICO_03.jpg/960px-DECLARATORIA_DE_CARNAVALES_COMO_PATRIMONIO_CULTURAL_INMATERIAL_DE_LA_CIUDAD_DE_M%C3%89XICO_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "category": "CDMX",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Estaci%C3%B3n_Insurgentes_de_la_L%C3%ADnea_1_del_Metro_de_la_Ciudad_de_M%C3%A9xico_2.jpg/960px-Estaci%C3%B3n_Insurgentes_de_la_L%C3%ADnea_1_del_Metro_de_la_Ciudad_de_M%C3%A9xico_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "category": "Metro",
         "borough": "",
-        "topic": "DECLARATORIA DE CARNAVALES COMO PATRIMONIO CULTURAL INMATERIAL DE LA CIUDAD DE MÉXICO 03",
+        "topic": "Estación Insurgentes de la Línea 1 del Metro de la Ciudad de México 2",
         "keywords": [
-          "Calles Ciudad de México"
+          "Metro Ciudad de México Línea 2"
         ],
-        "author": "Secretaría de Cultura CDMX",
-        "license": "CC BY 2.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-        "source": "https://commons.wikimedia.org/wiki/File:DECLARATORIA_DE_CARNAVALES_COMO_PATRIMONIO_CULTURAL_INMATERIAL_DE_LA_CIUDAD_DE_M%C3%89XICO_03.jpg"
+        "author": "ProtoplasmaKid",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Estaci%C3%B3n_Insurgentes_de_la_L%C3%ADnea_1_del_Metro_de_la_Ciudad_de_M%C3%A9xico_2.jpg"
       }
     },
     {
@@ -14279,21 +14145,6 @@
         "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
         "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "commons_75245972",
-        "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Graduaci%C3%B3n_de_la_Polic%C3%ADa_de_la_Ciudad_de_M%C3%A9xico_-i---i-_%2836810771760%29.jpg/960px-Graduaci%C3%B3n_de_la_Polic%C3%ADa_de_la_Ciudad_de_M%C3%A9xico_-i---i-_%2836810771760%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "category": "Seguridad",
-        "borough": "",
-        "topic": "Graduación de la Policía de la Ciudad de México -i---i- (36810771760)",
-        "keywords": [
-          "Policía Ciudad de México"
-        ],
-        "author": "Gobierno CDMX",
-        "license": "CC0",
-        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
-        "source": "https://commons.wikimedia.org/wiki/File:Graduaci%C3%B3n_de_la_Polic%C3%ADa_de_la_Ciudad_de_M%C3%A9xico_-i---i-_(36810771760).jpg"
       }
     },
     {
@@ -20483,19 +20334,19 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "commons_175548203",
+        "id": "commons_175612248",
         "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Avance_Metrob%C3%BAs_L7_08_01.jpg/960px-Avance_Metrob%C3%BAs_L7_08_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/Troleb%C3%BAs_de_la_L%C3%ADnea_2_sobre_Avenida_Yucat%C3%A1n.jpg/960px-Troleb%C3%BAs_de_la_L%C3%ADnea_2_sobre_Avenida_Yucat%C3%A1n.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
         "category": "Movilidad",
         "borough": "",
-        "topic": "Avance Metrobús L7 08 01",
+        "topic": "Trolebús de la Línea 2 sobre Avenida Yucatán",
         "keywords": [
-          "Metrobús Paseo de la Reforma CDMX"
+          "Trolebús Ciudad de México"
         ],
-        "author": "Gobierno de la Ciudad de México",
-        "license": "CC BY 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Avance_Metrob%C3%BAs_L7_08_01.jpg"
+        "author": "ProtoplasmaKid",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Troleb%C3%BAs_de_la_L%C3%ADnea_2_sobre_Avenida_Yucat%C3%A1n.jpg"
       }
     },
     {
@@ -20722,19 +20573,19 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "commons_145192456",
+        "id": "commons_83241759",
         "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/DECLARATORIA_DE_CARNAVALES_COMO_PATRIMONIO_CULTURAL_INMATERIAL_DE_LA_CIUDAD_DE_M%C3%89XICO_18.jpg/960px-DECLARATORIA_DE_CARNAVALES_COMO_PATRIMONIO_CULTURAL_INMATERIAL_DE_LA_CIUDAD_DE_M%C3%89XICO_18.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Calles_Seminario_y_Moneda_Centro_Hist%C3%B3rico_Ciudad_de_M%C3%A9xico_05.jpg/960px-Calles_Seminario_y_Moneda_Centro_Hist%C3%B3rico_Ciudad_de_M%C3%A9xico_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
         "category": "CDMX",
         "borough": "",
-        "topic": "DECLARATORIA DE CARNAVALES COMO PATRIMONIO CULTURAL INMATERIAL DE LA CIUDAD DE MÉXICO 18",
+        "topic": "Calles Seminario y Moneda Centro Histórico Ciudad de México 05",
         "keywords": [
-          "Calles Ciudad de México"
+          "Centro Histórico Ciudad de México"
         ],
-        "author": "Secretaría de Cultura CDMX",
-        "license": "CC BY 2.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-        "source": "https://commons.wikimedia.org/wiki/File:DECLARATORIA_DE_CARNAVALES_COMO_PATRIMONIO_CULTURAL_INMATERIAL_DE_LA_CIUDAD_DE_M%C3%89XICO_18.jpg"
+        "author": "Correogsk",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Calles_Seminario_y_Moneda_Centro_Hist%C3%B3rico_Ciudad_de_M%C3%A9xico_05.jpg"
       }
     },
     {
@@ -20943,19 +20794,19 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "commons_145192505",
+        "id": "commons_36264295",
         "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/DECLARATORIA_DE_CARNAVALES_COMO_PATRIMONIO_CULTURAL_INMATERIAL_DE_LA_CIUDAD_DE_M%C3%89XICO_24.jpg/960px-DECLARATORIA_DE_CARNAVALES_COMO_PATRIMONIO_CULTURAL_INMATERIAL_DE_LA_CIUDAD_DE_M%C3%89XICO_24.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Monumento_a_Col%C3%B3n_Paseo_de_la_Reforma_Ciudad_de_M%C3%A9xico_4.jpg/960px-Monumento_a_Col%C3%B3n_Paseo_de_la_Reforma_Ciudad_de_M%C3%A9xico_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
         "category": "CDMX",
         "borough": "",
-        "topic": "DECLARATORIA DE CARNAVALES COMO PATRIMONIO CULTURAL INMATERIAL DE LA CIUDAD DE MÉXICO 24",
+        "topic": "Monumento a Colón Paseo de la Reforma Ciudad de México 4",
         "keywords": [
-          "Calles Ciudad de México"
+          "CDMX"
         ],
-        "author": "Secretaría de Cultura CDMX",
-        "license": "CC BY 2.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-        "source": "https://commons.wikimedia.org/wiki/File:DECLARATORIA_DE_CARNAVALES_COMO_PATRIMONIO_CULTURAL_INMATERIAL_DE_LA_CIUDAD_DE_M%C3%89XICO_24.jpg"
+        "author": "ProtoplasmaKid",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Monumento_a_Col%C3%B3n_Paseo_de_la_Reforma_Ciudad_de_M%C3%A9xico_4.jpg"
       }
     },
     {
