@@ -88,7 +88,7 @@ def main():
         months = json.loads(manifest.read_text(encoding="utf-8")).get("months", [])
         for month in months:
             month_name = month.get("month", "")
-            if not re.fullmatch(r"\\d{4}-\\d{2}", month_name):
+            if not re.fullmatch(r"\d{4}-\d{2}", month_name):
                 continue
             archive_path = ROOT / "archivo" / (month_name + ".json")
             if not archive_path.is_file():
