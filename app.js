@@ -17,7 +17,15 @@ const newsSlidePanel=document.getElementById('news-slide-panel');
 const reportList=document.getElementById('report-list');
 const editorialLatest=document.getElementById('editorial-latest-link');
 function element(tag,cls,txt){const e=document.createElement(tag);if(cls)e.className=cls;if(txt!==undefined)e.textContent=txt;return e}
-function validLink(u){try{const p=new URL(u);return p.protocol==='https:'&&p.hostname==='news.google.com'}catch{return false}}
+function validLink(u,article){
+ try{
+  const p=new URL(u);
+  if(p.protocol!=='https:'||p.username||p.password)return false;
+  if(p.hostname==='news.google.com')return true;
+  return article?.editorial_verified===true&&
+   ['comova.mx','mayacomunicacion.com.mx','www.elgrafico.mx'].includes(p.hostname)&&p.pathname!=='/';
+ }catch{return false}
+}
 // La noticia principal de la portada procede del mismo feed que las demás notas.
 // Nunca fijar un titular antiguo en el HTML ni presentarlo como noticia de hoy.
 const leadStory={
@@ -51,7 +59,7 @@ function renderLeadStory(items){
  const yesterday=mxDay(new Date(now-24*60*60*1000));
  const published=(Array.isArray(items)?items:[]).filter(a=>{
   const ts=Date.parse(a.published_at||'');
-  return validLink(a.url)&&(!Number.isFinite(ts)||ts<=now+15*60*1000);
+  return validLink(a.url,a)&&(!Number.isFinite(ts)||ts<=now+15*60*1000);
  });
  const fromDay=day=>published.filter(a=>Number.isFinite(Date.parse(a.published_at||''))&&mxDay(new Date(a.published_at))===day);
  const todayNews=fromDay(today),yesterdayNews=fromDay(yesterday);
@@ -110,7 +118,7 @@ function renderLeadStory(items){
 }
 function applyNewsFeed(feed){
  if(!feed||!Array.isArray(feed.articles))throw Error('Formato de noticias incorrecto');
- articles=feed.articles.filter(a=>a&&typeof a.title==='string'&&validLink(a.url));
+ articles=feed.articles.filter(a=>a&&typeof a.title==='string'&&validLink(a.url,a));
  photoLibrary?.prepare(articles);
  updated=String(feed.updated||'sin fecha');
  render();
@@ -291,7 +299,7 @@ function render(){
     'Preparando titulares…';
   if(topicStageGrid){
    topicStageGrid.replaceChildren();
-   for(const a of filtered){if(validLink(a.url))topicStageGrid.append(buildCard(a))}
+   for(const a of filtered){if(validLink(a.url,a))topicStageGrid.append(buildCard(a))}
    if(articles.length&&!filtered.length){
     topicStageGrid.append(element('p','muted','Todavía no hay noticias en este tema. Prueba otro del menú superior.'));
    }
@@ -305,13 +313,13 @@ function render(){
  if(featuredSection)featuredSection.hidden=!isFront||!front.length;
  if(featuredGrid){
   featuredGrid.replaceChildren();
-  for(const [i,a] of front.entries()){if(validLink(a.url))featuredGrid.append(buildCard(a,true,i===0))}
+  for(const [i,a] of front.entries()){if(validLink(a.url,a))featuredGrid.append(buildCard(a,true,i===0))}
  }
  if(currentTopic)currentTopic.textContent=category?'Noticias de '+category:'Última hora · Todas las noticias';
  if(status)status.textContent=filtered.length?
   filtered.length+' noticias disponibles · Última sincronización: '+updated:
   'No hay noticias para esta búsqueda. Prueba otro tema.';
- if(grid){grid.replaceChildren();for(const a of filtered){if(!validLink(a.url)||featuredSet.has(a))continue;grid.append(buildCard(a))}}
+ if(grid){grid.replaceChildren();for(const a of filtered){if(!validLink(a.url,a)||featuredSet.has(a))continue;grid.append(buildCard(a))}}
  document.querySelectorAll('[data-filter]').forEach(el=>{
   const active=el.dataset.filter===category;
   el.classList.toggle('active',active);
