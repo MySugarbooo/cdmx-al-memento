@@ -103,7 +103,18 @@ def fold(value):
     return re.sub(r"[^a-z0-9]+", " ", value).strip()
 
 
+def outside_cdmx_scope(title):
+    """Detecta solo una ubicación externa inequívoca, sin inferirla del RSS."""
+    words = " " + fold(title) + " "
+    # Una noticia que mencione explícitamente CDMX podría tratar ambas regiones.
+    if any(" " + name + " " in words for name in ("cdmx", "ciudad de mexico")):
+        return False
+    return " carretera a laredo " in words and " escobedo " in words
+
+
 def identify_location(title):
+    if outside_cdmx_scope(title):
+        return "", "Escobedo, Nuevo León (fuera de CDMX)"
     words = " " + fold(title) + " "
     found = []
     for borough, aliases in ALIASES.items():
@@ -272,6 +283,8 @@ def gather():
             link = (item.findtext("link") or "").strip()
             if not allowed(source) or not title or len(title) < 20 or JUNK.search(title) or not valid_link(link):
                 continue
+            if outside_cdmx_scope(title):
+                continue
             try:
                 stamp = parsedate_to_datetime(item.findtext("pubDate")).astimezone(timezone.utc)
             except (ValueError, TypeError, OverflowError):
@@ -425,11 +438,12 @@ def consolidate_archive(new_items, cutoff, updated):
 
 def homepage_articles(items, reviewed, now, limit=60):
     """Mostrar temporalmente accidentes relevantes cotejados, sin fijarlos para siempre."""
-    front = list(items[:limit])
+    front = [item for item in items if not outside_cdmx_scope(item.get("title", ""))][:limit]
     if not front:
         return front
     visible = {item["url"] for item in front}
-    for article in sorted(reviewed, key=sort_key, reverse=True):
+    for article in sorted((item for item in reviewed if not outside_cdmx_scope(item.get("title", ""))),
+                          key=sort_key, reverse=True):
         if article["url"] in visible:
             continue
         published = sort_key(article)
