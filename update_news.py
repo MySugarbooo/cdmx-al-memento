@@ -420,6 +420,27 @@ def consolidate_archive(new_items, cutoff, updated):
     return months
 
 
+def homepage_articles(items, reviewed, now, limit=60):
+    """Mostrar temporalmente accidentes relevantes cotejados, sin fijarlos para siempre."""
+    front = list(items[:limit])
+    if not front:
+        return front
+    visible = {item["url"] for item in front}
+    for article in sorted(reviewed, key=sort_key, reverse=True):
+        if article["url"] in visible:
+            continue
+        published = sort_key(article)
+        age = now - published
+        if not timedelta(0) <= age <= timedelta(hours=48):
+            continue
+        if len(front) >= limit:
+            removed = front.pop()
+            visible.discard(removed["url"])
+        front.append(article)
+        visible.add(article["url"])
+    return sorted(front, key=sort_key, reverse=True)
+
+
 def update():
     now = datetime.now(timezone.utc)
     cutoff = now - timedelta(days=RETENTION_DAYS)
@@ -451,7 +472,8 @@ def update():
     picture_stats = assign_photos(items[:60])
     print("Fotografías verificadas para portada:", picture_stats)
     consolidate_archive(items, cutoff, updated)
-    write_json(DEST, {"updated": updated, "articles": items[:60]})
+    # Cobertura editorial importante de las últimas 48 h, junto al resto de titulares.
+    write_json(DEST, {"updated": updated, "articles": homepage_articles(items, reviewed, now)})
     print("Portada: ", min(60, len(items)), "noticias con fecha, hora disponible y zona indicada")
 
 
