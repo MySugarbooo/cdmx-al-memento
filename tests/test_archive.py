@@ -50,6 +50,42 @@ class BoroughAndArchiveTests(unittest.TestCase):
         self.assertEqual(news.category_by_headline(
             "Detienen a dos tras cierre vial por balacera", "Seguridad"), "Seguridad")
 
+    def test_specific_news_photos_reject_unrelated_subjects(self):
+        # Tres fotografías efectivamente detectadas en la portada del 1 de noviembre.
+        fountain = {"title": "ONU premia rescate de la Fuente Iztaccíhuatl en Cuauhtémoc",
+                    "category": "CDMX", "borough": "Cuauhtémoc"}
+        self.assertLess(news._photo_score(fountain, {
+            "category": "Alcaldías", "topic": "Rescate de Unidades Habitacionales Alcaldía Cuauhtémoc 02",
+            "keywords": ["Cuauhtémoc alcaldía Ciudad de México"],
+        }), 0)
+        self.assertGreaterEqual(news._photo_score(fountain, {
+            "category": "CDMX", "topic": "Fuente monumental en plaza de Ciudad de México",
+        }), 0)
+
+        motorcycles = {"title": "Al corralón más de 500 motos en Rodada del Terror en CDMX",
+                       "category": "Seguridad"}
+        self.assertLess(news._photo_score(motorcycles, {
+            "category": "Seguridad", "topic": "Protección civil CDMX",
+        }), 0)
+        self.assertGreaterEqual(news._photo_score(motorcycles, {
+            "category": "Seguridad", "topic": "Rodada de motociclistas en CDMX",
+        }), 0)
+
+        racing = {"title": "Bandera roja en CDMX por accidente de Bottas",
+                  "category": "Movilidad"}
+        self.assertLess(news._photo_score(racing, {
+            "category": "Movilidad", "topic": "Mexico City Metrobus Hamburgo Station",
+        }), 0)
+        self.assertGreaterEqual(news._photo_score(racing, {
+            "category": "Movilidad", "topic": "Autódromo Hermanos Rodríguez, circuito de carreras",
+        }), 0)
+        # No afectar la noticia distinta sobre cierres viales del GP.
+        closures = {"title": "GP de México: Calles Cerradas y Alternativas Viales en CDMX",
+                    "category": "Movilidad"}
+        self.assertGreaterEqual(news._photo_score(closures, {
+            "category": "Movilidad", "topic": "Tráfico vehicular en avenida Reforma",
+        }), 0)
+
     def test_unambiguous_outside_region_is_not_promoted_or_mislocated(self):
         title = "Muere conductor tras chocar contra autobús en Carretera a Laredo en Escobedo"
         self.assertTrue(news.outside_cdmx_scope(title))
