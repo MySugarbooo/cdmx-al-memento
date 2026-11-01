@@ -3,10 +3,16 @@ on:
   workflow_dispatch:
   schedule:
     - cron: '23 */3 * * *'
+  workflow_run:
+    workflows: ["Actualizar noticias CDMX AL MEMENTO"]
+    types: [completed]
+    branches: [main]
   push:
     paths:
       - 'news.json'
       - 'scripts/build_article_seo.py'
+      - '.github/workflows/article-seo.yml'
+      - 'tests/test_article_seo_workflow.py'
 permissions:
   contents: write
 concurrency:
@@ -14,6 +20,7 @@ concurrency:
   cancel-in-progress: false
 jobs:
   build:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -24,6 +31,8 @@ jobs:
           python-version: '3.11'
       - name: Test article photo rendering
         run: python -m unittest discover -s tests -p "test_article_photo.py" -v
+      - name: Test SEO refresh workflow
+        run: python -m unittest discover -s tests -p "test_article_seo_workflow.py" -v
       - name: Generate article HTML and XML
         run: python scripts/build_article_seo.py
       - name: Commit only generated SEO artifacts
