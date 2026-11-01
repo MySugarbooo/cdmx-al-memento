@@ -59,6 +59,20 @@ service cloud.firestore {
       allow update: if false;
       allow delete: if moderator() || (signedIn() && resource.data.uid == request.auth.uid);
     }
+    // Insignias públicas: solamente el propio moderador con claim firmado
+    // puede registrar su UID. Los visitantes solo pueden leer UID, no roles editables.
+    match /community/main/adminBadges/{adminUid} {
+      allow get, list: if true;
+      allow create: if moderator()
+        && adminUid == request.auth.uid
+        && adminUid.matches('[A-Za-z0-9_-]{8,128}')
+        && request.resource.data.keys().hasOnly(['verifiedAt'])
+        && request.resource.data.keys().hasAll(['verifiedAt'])
+        && request.resource.data.verifiedAt == request.time;
+      allow update: if false;
+      // Revocación: eliminar con Firebase Console o Admin SDK al quitar el claim.
+      allow delete: if false;
+    }
     match /community/main/comments/{commentId} {
       allow read: if true;
       allow create: if validComment();
