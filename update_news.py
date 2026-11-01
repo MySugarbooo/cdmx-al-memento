@@ -27,6 +27,8 @@ from scripts.notas_locales import local_link, summarize, assign_photos, _photo_s
 ROOT = Path(__file__).resolve().parent
 DEST = ROOT / "news.json"
 ARCHIVE_DIR = ROOT / "archivo"
+CURATED_INCIDENTS = ROOT / "editorial" / "accidentes-verificados-2026-11.json"
+CURATED_HOSTS = frozenset({"comova.mx", "mayacomunicacion.com.mx", "www.elgrafico.mx"})
 BOROUGH_DIR = ROOT / "alcaldias"
 REPORT_DIR = ROOT / "reportes"
 REPORTS = ROOT / "reports.json"
@@ -147,9 +149,14 @@ def normalize_title(title, source):
     return title
 
 
-def valid_link(url):
+def valid_link(url, editorial_verified=False):
     parts = urllib.parse.urlparse(str(url))
-    return parts.scheme == "https" and parts.hostname == "news.google.com"
+    if parts.scheme != "https" or parts.username or parts.password:
+        return False
+    if parts.hostname == "news.google.com":
+        return True
+    # Enlaces externos adicionales: exclusivamente fichas revisadas en el repositorio.
+    return editorial_verified is True and parts.hostname in CURATED_HOSTS and bool(parts.path.strip("/"))
 
 
 def published_datetime(value):
@@ -185,12 +192,13 @@ def standardize(article):
         return None
     title = clean(article.get("title"))[:320]
     url = article.get("url")
+    curated = article.get("editorial_verified") is True
     source = clean(article.get("source"))[:110]
     date = str(article.get("date", ""))
     published = published_datetime(article.get("published_at"))
     if published:
         date = published.astimezone(MX).date().isoformat()
-    if not title or not valid_link(url) or not DAY_RE.fullmatch(date):
+    if not title or not valid_link(url, curated) or not DAY_RE.fullmatch(date):
         return None
     try:
         datetime.fromisoformat(date)
@@ -211,7 +219,21 @@ def standardize(article):
         "location": location,
     }
     result["local_url"] = local_link(result)
-    result["brief"] = summarize(result)  # Actualizar también las fichas archivadas al cambiar reglas editoriales.
+    if curated:
+        source_brief = article.get("brief")
+        required = ("lead", "context", "pending", "method")
+        if not isinstance(source_brief, dict) or not all(
+            isinstance(source_brief.get(key), str) and source_brief[key].strip()
+            for key in required
+        ):
+            return None
+        result["brief"] = {key: clean(source_brief[key])[:2200] for key in required}
+        result["editorial_verified"] = True
+        result["sensitive_media"] = article.get("sensitive_media") is True
+        if isinstance(article.get("location"), str) and article["location"].strip():
+            result["location"] = clean(article["location"])[:180]
+    else:
+        result["brief"] = summarize(result)  # Recalcular fichas RSS al ajustar reglas.
     if isinstance(article.get("photo"), dict):
         result["photo"] = article["photo"]
     result["description"] = result["brief"]["lead"]
@@ -402,6 +424,21 @@ def update():
     cutoff = now - timedelta(days=RETENTION_DAYS)
     updated = now.strftime("%Y-%m-%d %H:%M UTC")
     items = gather()
+    # Integrar reportes editoriales cotejados con fuentes y resúmenes originales.
+    # Persisten entre ejecuciones y en la hemeroteca sin simular enlaces de Google News.
+    curated_data = load_json(CURATED_INCIDENTS, {"articles": []})
+    reviewed = []
+    for raw in curated_data.get("articles", []):
+        entry = standardize(raw)
+        if entry and entry.get("editorial_verified") and still_valid(entry, cutoff):
+            reviewed.append(entry)
+    curated_keys = {article_key(entry) for entry in reviewed}
+    curated_urls = {entry["url"] for entry in reviewed}
+    items = sorted(
+        reviewed + [item for item in items if article_key(item) not in curated_keys
+                    and item.get("url") not in curated_urls],
+        key=sort_key, reverse=True,
+    )
     # Fallback únicamente si siguen siendo recientes; nunca mostrar noticias caducadas.
     if not items:
         old = load_json(DEST, {"articles": []})
