@@ -452,6 +452,35 @@ def consolidate_archive(new_items, cutoff, updated):
     return months
 
 
+def fill_recent_from_archive(items, now, limit=60):
+    """Rescata titulares recientes si el RSS trae menos noticias que la portada.
+
+    El archivo mensual sigue siendo la fuente de respaldo aunque existan
+    algunas noticias editoriales verificadas: no basta con comprobar
+    `if not items`, porque esas noticias ocultaban caídas completas del RSS.
+    """
+    if len(items) >= limit:
+        return items
+    cutoff = now - timedelta(days=3)
+    combined = {article_key(item): item for item in items}
+    for path in ARCHIVE_DIR.glob("????-??.json"):
+        if not MONTH_RE.fullmatch(path.stem):
+            continue
+        for raw in load_json(path, {"articles": []}).get("articles", []):
+            item = standardize(raw)
+            if not item or outside_cdmx_scope(item.get("title", "")):
+                continue
+            stamp = sort_key(item)
+            if not cutoff <= stamp <= now + timedelta(minutes=15):
+                continue
+            combined.setdefault(article_key(item), item)
+    result = sorted(combined.values(), key=sort_key, reverse=True)[:limit]
+    if len(result) > len(items):
+        print("Portada: recuperados", len(result) - len(items),
+              "titulares recientes del archivo ante RSS insuficiente.")
+    return result
+
+
 def homepage_articles(items, reviewed, now, limit=60):
     """Mostrar temporalmente accidentes relevantes cotejados, sin fijarlos para siempre."""
     front = [item for item in items if not outside_cdmx_scope(item.get("title", ""))][:limit]
@@ -502,6 +531,8 @@ def update():
             if (item := standardize(raw)) and sort_key(item) >= now - timedelta(days=3)
         ]
         print("Utilizando solo noticias todavía recientes que ya estaban guardadas.")
+    # Unas pocas noticias editoriales no deben ocultar una caída del RSS.
+    items = fill_recent_from_archive(items, now)
     picture_stats = assign_photos(items[:60])
     print("Fotografías verificadas para portada:", picture_stats)
     consolidate_archive(items, cutoff, updated)
