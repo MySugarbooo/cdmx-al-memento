@@ -143,11 +143,9 @@ function profileFor(topic){
  time.textContent=stamp?new Intl.DateTimeFormat('es-MX',{
   dateStyle:'medium',timeStyle:'short',timeZone:'America/Mexico_City'
  }).format(stamp):'Fecha pendiente';
- // Distintivo basado únicamente en el permiso firmado de Firebase.
- // Lista visual de los dos nombres confirmados por la administración.
- // No concede privilegios: los permisos de moderación siguen dependiendo del claim de Firebase.
- const adminDisplayNames=new Set(['MySugarboo','Pani Waters']);
- if((user&&isModerator&&uid===user.uid)||adminDisplayNames.has(String(c.name||'').trim())){
+ // Nunca inferir privilegios del nombre editable en Google o de datos de publicaciones.
+ // El claim firmado de Firebase valida únicamente la cuenta autenticada.
+ if(user&&isModerator&&uid===user.uid){
   const badge=document.createElement('small');badge.className='community-admin-badge';
   badge.textContent='Admin';badge.setAttribute('aria-label','Administrador verificado');
   name.append(' ',badge);
