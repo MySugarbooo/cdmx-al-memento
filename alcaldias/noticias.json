@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-01 15:12 UTC",
+  "updated": "2026-11-01 15:16 UTC",
   "boroughs": [
     {
       "name": "La Magdalena Contreras",
@@ -2564,19 +2564,16 @@
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           },
           "photo": {
-            "id": "commons_153940184",
+            "id": "alcaldia_benito-juarez",
             "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Entrega_de_Patrullas_en_Benito_Ju%C3%A1rez_03.jpg/960px-Entrega_de_Patrullas_en_Benito_Ju%C3%A1rez_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "category": "Alcaldías",
-            "borough": "",
-            "topic": "Entrega de Patrullas en Benito Juárez 03",
-            "keywords": [
-              "Benito Juárez alcaldía Ciudad de México"
-            ],
-            "author": "Gobierno de la Ciudad de México",
-            "license": "CC BY 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Entrega_de_Patrullas_en_Benito_Ju%C3%A1rez_03.jpg"
+            "url": "/assets/alcaldias/benito-juarez.jpg",
+            "category": "CDMX",
+            "borough": "Benito Juárez",
+            "topic": "Parque Hundido, alcaldía Benito Juárez",
+            "author": "User:etnoboris",
+            "license": "CC BY-SA 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Parque_Hundido.jpeg"
           }
         },
         {
@@ -5405,19 +5402,16 @@
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           },
           "photo": {
-            "id": "archivo_seguridad_009",
+            "id": "alcaldia_gustavo-a-madero",
             "kind": "representativa",
-            "url": "/assets/fotos/archivo_seguridad_009.jpg",
-            "category": "Seguridad",
-            "borough": "",
-            "topic": "Entrega Claudia Sheinbaum 113 nuevas patrullas en Gustavo A Madero 02",
-            "keywords": [
-              "Seguridad"
-            ],
-            "author": "Gobierno de la Ciudad de México",
-            "license": "CC BY 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Entrega_Claudia_Sheinbaum_113_nuevas_patrullas_en_Gustavo_A_Madero_02.jpg"
+            "url": "/assets/alcaldias/gustavo-a-madero.jpg",
+            "category": "CDMX",
+            "borough": "Gustavo A. Madero",
+            "topic": "Capilla del Cerrito en el Tepeyac, Gustavo A. Madero",
+            "author": "Catedrales e Iglesias/Cathedrals and Churches",
+            "license": "CC BY 2.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Capilla_Cerrito_del_Tepeyac_%28Basilica_Nuestra_Se%C3%B1ora_de_Guadalupe%29_Gustavo_A_Madero%2C_Ciudad_de_M%C3%A9xico_02.jpg"
           }
         },
         {
@@ -8924,7 +8918,7 @@
     },
     {
       "name": "Tláhuac",
-      "count": 98,
+      "count": 99,
       "articles": [
         {
           "title": "Dictan segundo proceso contra \"El Dámaso\", líder del Cártel de Tláhuac, esta vez por extorsión agravada",
@@ -9200,6 +9194,36 @@
             "license": "CC BY-SA 4.0",
             "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
             "source": "https://commons.wikimedia.org/wiki/File:Coro_de_la_Catedral_metropolitana_de_la_Ciudad_de_M%C3%A9xico_05.jpg"
+          }
+        },
+        {
+          "title": "Asesinan a dos mujeres en Tláhuac; vecinos exigen justicia",
+          "description": "De acuerdo con Telediario, el titular publicado es: «Asesinan a dos mujeres en Tláhuac; vecinos exigen justicia». La información publicada por Telediario trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOZlZHM2trQ3c0MU1jd2RHNkdOLTZrVFp2NTBnaUx5OFlsMlk0ZlIwaW9mbUdMYnB0dXlxVm56aHF2WHZILTczVmxOYWQzNGtLTUd5YVdsRzZsdEdKMWFFMm92bTM5RWFhcmRpVmdUY01uR3lKR2JtYWFCWUlxQ040Si00NHBaRVJ6cVkxUkkxckVIU2FVY2YwUHd2TkNuUjFTQU9fSTk0cGYwR3BtakHSAa4BQVVfeXFMT082c294RFNQVFJidDhQejJPZDR1cWs1dTJyNF9ETjFVUzlEbmp4b0ZXY21xMHpJay1pWktpMWs5dXdhRHFCWnlGX3g0ZnRNYVE5eHdsYTBWYm5xUVJOM0RWbzRmUElNZTVQRWZZSnlOSTVpWlE2VzVzSWFCaHhoaWdra2RCdDFZbklJdDVBdmZLelFVWkVoSVFvTHN2OFlET0tNQXlTZjNMOXpYQUdR?oc=5",
+          "source": "Telediario",
+          "date": "2026-10-30",
+          "published_at": "2026-10-30T16:12:04Z",
+          "category": "CDMX",
+          "borough": "Tláhuac",
+          "location": "Tláhuac (mencionada en el titular)",
+          "local_url": "/noticias/?id=54b3141cc5c0f534eee2&mes=2026-10",
+          "brief": {
+            "lead": "De acuerdo con Telediario, el titular publicado es: «Asesinan a dos mujeres en Tláhuac; vecinos exigen justicia». La información publicada por Telediario trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_tlahuac",
+            "kind": "representativa",
+            "url": "/assets/alcaldias/tlahuac.jpg",
+            "category": "CDMX",
+            "borough": "Tláhuac",
+            "topic": "Plaza central de San Pedro Tláhuac",
+            "author": "Yavidaxiu",
+            "license": "CC BY 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Tl%C3%A1huac-Plaza_central.JPG"
           }
         },
         {
@@ -9608,34 +9632,6 @@
             "author": "Timothy Neesam",
             "license": "CC BY-SA 4.0",
             "source": "https://commons.wikimedia.org/wiki/File:Palacio_de_Bellas_Artes%2C_Mexico_City%2C_MX.jpg"
-          }
-        },
-        {
-          "title": "¡De Tláhuac para el mundo! Calaveras Gigantes celebran 15 años con catrinas y dioses prehispánicos",
-          "description": "De acuerdo con Chilango, el titular publicado es: «¡De Tláhuac para el mundo! Calaveras Gigantes celebran 15 años con catrinas y dioses prehispánicos». La información publicada por Chilango trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNU0NxSE04dDJHeGNOYkJkTks2UWdhM0NSZU5ESWhBZ3FRb0FxcE12ZzBTclFYZEJUeVI3N0hlcDJJVkMtWmw4bHFtYzM1X0dXMU1XaDVfN1N6QVhHVWV0SGF1ejJTeEUyRjB0a25tdjdKQU9GQ2loNWYyOTROX1NzeUpBVmwzZE9MWC1SNldqNHJRckJ2XzNJNDdFbjZQdWlRQ3lGTmpB?oc=5",
-          "source": "Chilango",
-          "date": "2026-10-26",
-          "published_at": "2026-10-26T23:05:48Z",
-          "category": "CDMX",
-          "borough": "Tláhuac",
-          "location": "Tláhuac (mencionada en el titular)",
-          "local_url": "/noticias/?id=248517012fc5e6a75233&mes=2026-10",
-          "brief": {
-            "lead": "De acuerdo con Chilango, el titular publicado es: «¡De Tláhuac para el mundo! Calaveras Gigantes celebran 15 años con catrinas y dioses prehispánicos». La información publicada por Chilango trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "alcaldia_tlahuac",
-            "url": "/assets/alcaldias/tlahuac.jpg",
-            "category": "CDMX",
-            "borough": "Tláhuac",
-            "topic": "Plaza central de San Pedro Tláhuac",
-            "author": "Yavidaxiu",
-            "license": "CC BY 3.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Tl%C3%A1huac-Plaza_central.JPG"
           }
         }
       ]
