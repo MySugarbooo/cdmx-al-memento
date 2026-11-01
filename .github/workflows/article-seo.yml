@@ -8,6 +8,7 @@ on:
     types: [completed]
     branches: [main]
   push:
+    branches: [main]
     paths:
       - 'news.json'
       - 'scripts/build_article_seo.py'
@@ -20,7 +21,7 @@ concurrency:
   cancel-in-progress: false
 jobs:
   build:
-    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
+    if: github.ref == 'refs/heads/main' && (github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success')
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
