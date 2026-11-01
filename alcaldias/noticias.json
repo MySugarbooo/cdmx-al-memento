@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-01 14:48 UTC",
+  "updated": "2026-11-01 14:49 UTC",
   "boroughs": [
     {
       "name": "La Magdalena Contreras",
@@ -6984,14 +6984,16 @@
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           },
           "photo": {
-            "id": "archivo_cultura_001",
-            "url": "/assets/fotos/archivo_cultura_001.jpg",
-            "category": "Cultura",
-            "borough": "",
-            "topic": "PALACIO DE BELLAS ARTES, CIUDAD DE MEXICO.",
-            "author": "Acuentacuentos",
-            "license": "CC BY-SA 3.0",
-            "source": "https://commons.wikimedia.org/wiki/File:PALACIO_DE_BELLAS_ARTES%2C_CIUDAD_DE_MEXICO..jpg"
+            "id": "alcaldia_iztapalapa",
+            "kind": "representativa",
+            "url": "/assets/alcaldias/iztapalapa.jpg",
+            "category": "CDMX",
+            "borough": "Iztapalapa",
+            "topic": "Vista de Iztapalapa desde el Cerro de la Estrella",
+            "author": "Secretaría de Cultura Ciudad de México from México",
+            "license": "CC BY 2.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+            "source": "https://commons.wikimedia.org/wiki/File:MX_MM_MUSEO_CERRO_DE_LA_ESTRELLA_%2849522225751%29.jpg"
           }
         },
         {
