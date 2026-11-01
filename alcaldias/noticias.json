@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-01 21:48 UTC",
+  "updated": "2026-11-01 22:06 UTC",
   "boroughs": [
     {
       "name": "La Magdalena Contreras",
@@ -7697,14 +7697,19 @@
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           },
           "photo": {
-            "id": "alcaldia_miguel-hidalgo",
-            "url": "/assets/alcaldias/miguel-hidalgo.jpg",
+            "id": "commons_36264296",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Monumento_a_Col%C3%B3n_Paseo_de_la_Reforma_Ciudad_de_M%C3%A9xico_6.jpg/960px-Monumento_a_Col%C3%B3n_Paseo_de_la_Reforma_Ciudad_de_M%C3%A9xico_6.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
             "category": "CDMX",
-            "borough": "Miguel Hidalgo",
-            "topic": "Bosque de Chapultepec, alcaldía Miguel Hidalgo",
+            "borough": "",
+            "topic": "Monumento a Colón Paseo de la Reforma Ciudad de México 6",
+            "keywords": [
+              "Paseo de la Reforma Ciudad de México"
+            ],
             "author": "ProtoplasmaKid",
-            "license": "CC0",
-            "source": "https://commons.wikimedia.org/wiki/File:Audiorama_de_Chapultepec_1.jpg"
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Monumento_a_Col%C3%B3n_Paseo_de_la_Reforma_Ciudad_de_M%C3%A9xico_6.jpg"
           }
         },
         {
