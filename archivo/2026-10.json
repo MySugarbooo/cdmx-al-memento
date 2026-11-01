@@ -1,6 +1,6 @@
 {
   "month": "2026-10",
-  "updated": "2026-11-01 14:50 UTC",
+  "updated": "2026-11-01 15:11 UTC",
   "articles": [
     {
       "title": "Expropiará el gobierno de la CDMX capitalino tres predios para vivienda pública",
@@ -4269,6 +4269,41 @@
         "license": "CC BY-SA 4.0",
         "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
         "source": "https://commons.wikimedia.org/wiki/File:Boleto_cine_Esperanza_Coyoac%C3%A1n_Ciudad_de_M%C3%A9xico_6_de_mayo_de_1928_02.jpg"
+      }
+    },
+    {
+      "title": "Reportan dos motociclistas fallecidos en hechos viales de Miguel Hidalgo y Coyoacán",
+      "description": "El Gráfico publicó el 31 de octubre un reportaje sobre dos motociclistas fallecidos en accidentes distintos de Ciudad de México. El primero fue descrito como un derrape contra un muro de contención en Periférico, cerca del Bosque de Chapultepec, alcaldía Miguel Hidalgo. El segundo ocurrió tras un choque con un camión de carga en avenida Carlota Armero, San Francisco Culhuacán, Coyoacán. El medio reportó la intervención de paramédicos y autoridades.",
+      "url": "https://www.elgrafico.mx/la-roja/2026/10/31/bikers-dados-de-baja-motociclistas-pierden-la-vida-en-las-alcaldias-miguel-hidalgo-y-coyoacan/",
+      "source": "El Gráfico",
+      "date": "2026-10-31",
+      "published_at": "2026-10-31T18:17:00Z",
+      "category": "Movilidad",
+      "borough": "Coyoacán",
+      "location": "Periférico en Miguel Hidalgo y avenida Carlota Armero en Coyoacán",
+      "local_url": "/noticias/?id=e2ae561058f2fa8116fb&mes=2026-10",
+      "brief": {
+        "lead": "El Gráfico publicó el 31 de octubre un reportaje sobre dos motociclistas fallecidos en accidentes distintos de Ciudad de México. El primero fue descrito como un derrape contra un muro de contención en Periférico, cerca del Bosque de Chapultepec, alcaldía Miguel Hidalgo. El segundo ocurrió tras un choque con un camión de carga en avenida Carlota Armero, San Francisco Culhuacán, Coyoacán. El medio reportó la intervención de paramédicos y autoridades.",
+        "context": "Ambos hechos requieren distinguir las circunstancias de cada accidente. La nota periodística se publicó el sábado 31 de octubre, pero describe los sucesos como ocurridos un viernes; esta ficha no fija una fecha exacta para los accidentes.",
+        "pending": "La identidad de las víctimas y las causas de los accidentes no estaban esclarecidas en la información citada. No corresponde atribuir responsabilidades sin resultados de las investigaciones.",
+        "method": "Resumen original basado en el reportaje de El Gráfico publicado el 31 de octubre de 2026. No se reproducen fotografías ajenas ni se presenta una imagen de otro accidente como si fuera del hecho."
+      },
+      "editorial_verified": true,
+      "sensitive_media": true,
+      "photo": {
+        "id": "commons_106559908",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/8._Coyoac%C3%A1n_Jard%C3%ADn_Hidalgo%2C_Ciudad_de_M%C3%A9xico.jpg/960px-8._Coyoac%C3%A1n_Jard%C3%ADn_Hidalgo%2C_Ciudad_de_M%C3%A9xico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "category": "Alcaldías",
+        "borough": "",
+        "topic": "8. Coyoacán Jardín Hidalgo, Ciudad de México",
+        "keywords": [
+          "Coyoacán Ciudad de México"
+        ],
+        "author": "Machristen",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:8._Coyoac%C3%A1n_Jard%C3%ADn_Hidalgo,_Ciudad_de_M%C3%A9xico.jpg"
       }
     },
     {
@@ -25242,14 +25277,24 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_seguridad_003",
-        "url": "/assets/fotos/archivo_seguridad_003.jpg",
-        "category": "Seguridad",
+        "id": "contexto_autodromo_hermanos_rodriguez",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Vista_a%C3%A9rea_del_Aut%C3%B3dromo_Hermanos_Rodr%C3%ADguez_03.jpg/1280px-Vista_a%C3%A9rea_del_Aut%C3%B3dromo_Hermanos_Rodr%C3%ADguez_03.jpg",
+        "category": "Movilidad",
         "borough": "",
-        "topic": "Adquisición patrullas para la Policía 02",
-        "author": "Gobierno de la Ciudad de México",
-        "license": "CC BY 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Adquisici%C3%B3n_patrullas_para_la_Polic%C3%ADa_02.jpg"
+        "topic": "Vista aérea del Autódromo Hermanos Rodríguez, Ciudad de México (fotografía de 2025)",
+        "keywords": [
+          "autódromo",
+          "Hermanos Rodríguez",
+          "gran premio",
+          "formula 1",
+          "F1",
+          "automovilismo"
+        ],
+        "author": "ProtoplasmaKid",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:Vista_a%C3%A9rea_del_Aut%C3%B3dromo_Hermanos_Rodr%C3%ADguez_03.jpg"
       }
     },
     {
@@ -25270,14 +25315,19 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_seguridad_004",
-        "url": "/assets/fotos/archivo_seguridad_004.jpg",
-        "category": "Seguridad",
+        "id": "archivo_movilidad_002",
+        "kind": "representativa",
+        "url": "/assets/fotos/archivo_movilidad_002.jpg",
+        "category": "Movilidad",
         "borough": "",
-        "topic": "Adquisición patrullas para la Policía 01",
-        "author": "Gobierno de la Ciudad de México",
-        "license": "CC BY 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Adquisici%C3%B3n_patrullas_para_la_Polic%C3%ADa_01.jpg"
+        "topic": "Metrobús Línea 4 Centro Histórico",
+        "keywords": [
+          "Movilidad"
+        ],
+        "author": "ProtoplasmaKid",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Metrob%C3%BAs_L%C3%ADnea_4_Centro_Hist%C3%B3rico.jpg"
       }
     },
     {
@@ -25761,14 +25811,19 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_seguridad_009",
-        "url": "/assets/fotos/archivo_seguridad_009.jpg",
-        "category": "Seguridad",
+        "id": "commons_76480821",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Transporte_p%C3%BAblico_de_la_Ciudad_de_M%C3%A9xico_IMG_3370_%2825720315370%29.jpg/960px-Transporte_p%C3%BAblico_de_la_Ciudad_de_M%C3%A9xico_IMG_3370_%2825720315370%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "category": "Movilidad",
         "borough": "",
-        "topic": "Entrega Claudia Sheinbaum 113 nuevas patrullas en Gustavo A Madero 02",
-        "author": "Gobierno de la Ciudad de México",
-        "license": "CC BY 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Entrega_Claudia_Sheinbaum_113_nuevas_patrullas_en_Gustavo_A_Madero_02.jpg"
+        "topic": "Transporte público de la Ciudad de México IMG 3370 (25720315370)",
+        "keywords": [
+          "Metrobús Ciudad de México"
+        ],
+        "author": "Gobierno CDMX",
+        "license": "CC0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "source": "https://commons.wikimedia.org/wiki/File:Transporte_p%C3%BAblico_de_la_Ciudad_de_M%C3%A9xico_IMG_3370_(25720315370).jpg"
       }
     },
     {
@@ -25878,14 +25933,19 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_seguridad_010",
-        "url": "/assets/fotos/archivo_seguridad_010.jpg",
-        "category": "Seguridad",
+        "id": "commons_122844394",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Marcopolo_Gran_Viale_-_Ciudad_de_M%C3%A9xico.jpg/960px-Marcopolo_Gran_Viale_-_Ciudad_de_M%C3%A9xico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "category": "Movilidad",
         "borough": "",
-        "topic": "Entrega Claudia Sheinbaum 113 nuevas patrullas en Gustavo A Madero 04",
-        "author": "Gobierno de la Ciudad de México",
-        "license": "CC BY 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Entrega_Claudia_Sheinbaum_113_nuevas_patrullas_en_Gustavo_A_Madero_04.jpg"
+        "topic": "Marcopolo Gran Viale - Ciudad de México",
+        "keywords": [
+          "Metrobús Ciudad de México"
+        ],
+        "author": "Corsario CL",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Marcopolo_Gran_Viale_-_Ciudad_de_M%C3%A9xico.jpg"
       }
     },
     {
@@ -26285,14 +26345,23 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_seguridad_011",
-        "url": "/assets/fotos/archivo_seguridad_011.jpg",
-        "category": "Seguridad",
+        "id": "contexto_perros_parque_espana",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Perros_en_el_Parque_Espa%C3%B1a%2C_Ciudad_de_M%C3%A9xico.jpg/1280px-Perros_en_el_Parque_Espa%C3%B1a%2C_Ciudad_de_M%C3%A9xico.jpg",
+        "category": "Medio Ambiente",
         "borough": "",
-        "topic": "Claudia Sheinbaum entrega patrullas Iztapalapa 02",
-        "author": "Gobierno de la Ciudad de México",
-        "license": "CC BY 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Claudia_Sheinbaum_entrega_patrullas_Iztapalapa_02.jpg"
+        "topic": "Perros descansando en el Parque España, Ciudad de México (fotografía de 2016)",
+        "keywords": [
+          "perros",
+          "perro",
+          "mascotas",
+          "parque España",
+          "Condesa"
+        ],
+        "author": "Raul21940",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:Perros_en_el_Parque_Espa%C3%B1a,_Ciudad_de_M%C3%A9xico.jpg"
       }
     },
     {
@@ -26341,14 +26410,19 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_seguridad_012",
-        "url": "/assets/fotos/archivo_seguridad_012.jpg",
-        "category": "Seguridad",
+        "id": "commons_180982324",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Metrob%C3%BAs_F%C3%A9lix_Cuevas_Sur.jpg/960px-Metrob%C3%BAs_F%C3%A9lix_Cuevas_Sur.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "category": "Movilidad",
         "borough": "",
-        "topic": "Entrega de Patrullas en Benito Juárez 03",
-        "author": "Gobierno de la Ciudad de México",
-        "license": "CC BY 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Entrega_de_Patrullas_en_Benito_Ju%C3%A1rez_03.jpg"
+        "topic": "Metrobús Félix Cuevas Sur",
+        "keywords": [
+          "Metrobús Ciudad de México"
+        ],
+        "author": "Cocu15",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Metrob%C3%BAs_F%C3%A9lix_Cuevas_Sur.jpg"
       }
     },
     {
@@ -26483,14 +26557,19 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_seguridad_014",
-        "url": "/assets/fotos/archivo_seguridad_014.jpg",
-        "category": "Seguridad",
+        "id": "commons_43641130",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Parque_ecol%C3%B3gico_de_la_ciudad_de_M%C3%A9xico_37.jpg/960px-Parque_ecol%C3%B3gico_de_la_ciudad_de_M%C3%A9xico_37.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "category": "Medio Ambiente",
         "borough": "",
-        "topic": "Entrega de Patrullas en Benito Juárez 04",
-        "author": "Gobierno de la Ciudad de México",
-        "license": "CC BY 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Entrega_de_Patrullas_en_Benito_Ju%C3%A1rez_04.jpg"
+        "topic": "Parque ecológico de la ciudad de México 37",
+        "keywords": [
+          "Parques Ciudad de México"
+        ],
+        "author": "AbrahamCollantes",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Parque_ecol%C3%B3gico_de_la_ciudad_de_M%C3%A9xico_37.jpg"
       }
     },
     {
@@ -26681,14 +26760,19 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_metro_006",
-        "url": "/assets/fotos/archivo_metro_006.jpg",
-        "category": "Metro",
+        "id": "commons_139480766",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Tren_ligero_y_metro_en_la_estaci%C3%B3n_Tasque%C3%B1a_09.jpg/960px-Tren_ligero_y_metro_en_la_estaci%C3%B3n_Tasque%C3%B1a_09.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "category": "Movilidad",
         "borough": "",
-        "topic": "Estación Pino Suárez de la Línea 1 del Metro de la Ciudad de México 02",
-        "author": "ProtoplasmaKid",
+        "topic": "Tren ligero y metro en la estación Tasqueña 09",
+        "keywords": [
+          "Tren ligero Ciudad de México"
+        ],
+        "author": "Luis Alvaz",
         "license": "CC BY-SA 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Estaci%C3%B3n_Pino_Su%C3%A1rez_de_la_L%C3%ADnea_1_del_Metro_de_la_Ciudad_de_M%C3%A9xico_02.jpg"
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Tren_ligero_y_metro_en_la_estaci%C3%B3n_Tasque%C3%B1a_09.jpg"
       }
     },
     {
@@ -26709,14 +26793,19 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_seguridad_015",
-        "url": "/assets/fotos/archivo_seguridad_015.jpg",
-        "category": "Seguridad",
+        "id": "commons_43608155",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Parque_Ecol%C3%B3gico_de_la_Ciudad_de_M%C3%A9xico_1.JPG/960px-Parque_Ecol%C3%B3gico_de_la_Ciudad_de_M%C3%A9xico_1.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "category": "Medio Ambiente",
         "borough": "",
-        "topic": "Claudia Sheinbaum entrega patrullas Iztapalapa 01",
-        "author": "Gobierno de la Ciudad de México",
-        "license": "CC BY 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Claudia_Sheinbaum_entrega_patrullas_Iztapalapa_01.jpg"
+        "topic": "Parque Ecológico de la Ciudad de México 1",
+        "keywords": [
+          "Parques Ciudad de México"
+        ],
+        "author": "Jafpe93",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Parque_Ecol%C3%B3gico_de_la_Ciudad_de_M%C3%A9xico_1.JPG"
       }
     },
     {
@@ -26826,14 +26915,19 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_cultura_001",
-        "url": "/assets/fotos/archivo_cultura_001.jpg",
-        "category": "Cultura",
+        "id": "commons_21290356",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Ciudad_de_mexico_de_noche.JPG/960px-Ciudad_de_mexico_de_noche.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "category": "CDMX",
         "borough": "",
-        "topic": "PALACIO DE BELLAS ARTES, CIUDAD DE MEXICO.",
-        "author": "Acuentacuentos",
+        "topic": "Ciudad de mexico de noche",
+        "keywords": [
+          "Ángel de la Independencia Ciudad de México"
+        ],
+        "author": "SDOs",
         "license": "CC BY-SA 3.0",
-        "source": "https://commons.wikimedia.org/wiki/File:PALACIO_DE_BELLAS_ARTES%2C_CIUDAD_DE_MEXICO..jpg"
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Ciudad_de_mexico_de_noche.JPG"
       }
     },
     {
@@ -26910,14 +27004,19 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_metro_008",
-        "url": "/assets/fotos/archivo_metro_008.jpg",
-        "category": "Metro",
+        "id": "commons_76480855",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/Transporte_p%C3%BAblico_de_la_Ciudad_de_M%C3%A9xico_IMG_1003_%2826911179701%29.jpg/960px-Transporte_p%C3%BAblico_de_la_Ciudad_de_M%C3%A9xico_IMG_1003_%2826911179701%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "category": "Movilidad",
         "borough": "",
-        "topic": "Estación Pino Suárez de la Línea 1 del Metro de la Ciudad de México 04",
-        "author": "ProtoplasmaKid",
-        "license": "CC BY-SA 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Estaci%C3%B3n_Pino_Su%C3%A1rez_de_la_L%C3%ADnea_1_del_Metro_de_la_Ciudad_de_M%C3%A9xico_04.jpg"
+        "topic": "Transporte público de la Ciudad de México IMG 1003 (26911179701)",
+        "keywords": [
+          "Metrobús Ciudad de México"
+        ],
+        "author": "Gobierno CDMX",
+        "license": "CC0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "source": "https://commons.wikimedia.org/wiki/File:Transporte_p%C3%BAblico_de_la_Ciudad_de_M%C3%A9xico_IMG_1003_(26911179701).jpg"
       }
     },
     {
@@ -26966,14 +27065,19 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_cultura_003",
-        "url": "/assets/fotos/archivo_cultura_003.jpg",
-        "category": "Cultura",
+        "id": "commons_114047310",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Busto_de_Cuauht%C3%A9moc_en_el_z%C3%B3calo_de_la_CDMX_01.jpg/960px-Busto_de_Cuauht%C3%A9moc_en_el_z%C3%B3calo_de_la_CDMX_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "category": "CDMX",
         "borough": "",
-        "topic": "Mexico City Palacio de bellas artes",
-        "author": "Jeses",
-        "license": "CC BY-SA 2.5",
-        "source": "https://commons.wikimedia.org/wiki/File:Mexico_City_Palacio_de_bellas_artes.jpg"
+        "topic": "Busto de Cuauhtémoc en el zócalo de la CDMX 01",
+        "keywords": [
+          "Zócalo Ciudad de México"
+        ],
+        "author": "Luis Alvaz",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Busto_de_Cuauht%C3%A9moc_en_el_z%C3%B3calo_de_la_CDMX_01.jpg"
       }
     },
     {
@@ -26994,14 +27098,19 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_cultura_004",
-        "url": "/assets/fotos/archivo_cultura_004.jpg",
-        "category": "Cultura",
+        "id": "commons_75245968",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Graduaci%C3%B3n_de_la_Polic%C3%ADa_de_la_Ciudad_de_M%C3%A9xico_-i---i-_%2837018523396%29.jpg/960px-Graduaci%C3%B3n_de_la_Polic%C3%ADa_de_la_Ciudad_de_M%C3%A9xico_-i---i-_%2837018523396%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "category": "Seguridad",
         "borough": "",
-        "topic": "Palacio de Bellas Artes (nocturno), Ciudad de México.",
-        "author": "MaríaJoséFelgueresPlanells",
-        "license": "CC BY-SA 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Palacio_de_Bellas_Artes_%28nocturno%29%2C_Ciudad_de_M%C3%A9xico..jpg"
+        "topic": "Graduación de la Policía de la Ciudad de México -i---i- (37018523396)",
+        "keywords": [
+          "Policía Ciudad de México"
+        ],
+        "author": "Gobierno CDMX",
+        "license": "CC0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "source": "https://commons.wikimedia.org/wiki/File:Graduaci%C3%B3n_de_la_Polic%C3%ADa_de_la_Ciudad_de_M%C3%A9xico_-i---i-_(37018523396).jpg"
       }
     },
     {
@@ -27022,14 +27131,19 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_metro_009",
-        "url": "/assets/fotos/archivo_metro_009.jpg",
-        "category": "Metro",
+        "id": "reciente_a5a3bc52fa77c066",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Desfile_de_Catrinas_in_Mexico_City_2026_%2852%29.jpg/1280px-Desfile_de_Catrinas_in_Mexico_City_2026_%2852%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "category": "CDMX",
         "borough": "",
-        "topic": "Estación Pino Suárez de la Línea 1 del Metro de la Ciudad de México 03",
-        "author": "ProtoplasmaKid",
+        "topic": "Desfile de Catrinas in Mexico City 2026 (52)",
+        "keywords": [
+          "CDMX"
+        ],
+        "author": "Gedankenstuecke",
         "license": "CC BY-SA 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Estaci%C3%B3n_Pino_Su%C3%A1rez_de_la_L%C3%ADnea_1_del_Metro_de_la_Ciudad_de_M%C3%A9xico_03.jpg"
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Desfile_de_Catrinas_in_Mexico_City_2026_(52).jpg"
       }
     },
     {
@@ -27050,14 +27164,19 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_cultura_005",
-        "url": "/assets/fotos/archivo_cultura_005.jpg",
-        "category": "Cultura",
+        "id": "commons_38607089",
+        "kind": "representativa",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Plaza_de_la_Constituci%C3%B3n_%28Z%C3%B3calo%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "category": "CDMX",
         "borough": "",
-        "topic": "Palacio de Bellas Artes, México D.F., México, 2013-10-13, DD 40",
-        "author": "Diego Delso",
-        "license": "CC BY-SA 3.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Palacio_de_Bellas_Artes%2C_M%C3%A9xico_D.F.%2C_M%C3%A9xico%2C_2013-10-13%2C_DD_40.jpg"
+        "topic": "Plaza de la Constitución (Zócalo)",
+        "keywords": [
+          "Zócalo Ciudad de México"
+        ],
+        "author": "Cbustani1",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Plaza_de_la_Constituci%C3%B3n_(Z%C3%B3calo).jpg"
       }
     },
     {
@@ -27139,14 +27258,19 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_metro_010",
-        "url": "/assets/fotos/archivo_metro_010.jpg",
-        "category": "Metro",
+        "id": "commons_169677340",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Estaci%C3%B3n_La_Viga_de_la_L%C3%ADnea_8_del_Metro_de_la_Ciudad_de_M%C3%A9xico_01.jpg/960px-Estaci%C3%B3n_La_Viga_de_la_L%C3%ADnea_8_del_Metro_de_la_Ciudad_de_M%C3%A9xico_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "category": "Alcaldías",
         "borough": "",
-        "topic": "Estación Pino Suárez de la Línea 1 del Metro de la Ciudad de México 07",
+        "topic": "Estación La Viga de la Línea 8 del Metro de la Ciudad de México 01",
+        "keywords": [
+          "Cuauhtémoc alcaldía Ciudad de México"
+        ],
         "author": "ProtoplasmaKid",
         "license": "CC BY-SA 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Estaci%C3%B3n_Pino_Su%C3%A1rez_de_la_L%C3%ADnea_1_del_Metro_de_la_Ciudad_de_M%C3%A9xico_07.jpg"
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Estaci%C3%B3n_La_Viga_de_la_L%C3%ADnea_8_del_Metro_de_la_Ciudad_de_M%C3%A9xico_01.jpg"
       }
     },
     {
@@ -27195,14 +27319,19 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_cultura_006",
-        "url": "/assets/fotos/archivo_cultura_006.jpg",
-        "category": "Cultura",
+        "id": "commons_107566585",
+        "kind": "representativa",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/25/Ciudad_de_M%C3%A9xico%2C_calles_y_plazas_1986_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "category": "CDMX",
         "borough": "",
-        "topic": "Detalles del exterior del Palacio de Bellas Artes, Ciudad de México 06",
-        "author": "Luisalvaz",
+        "topic": "Ciudad de México, calles y plazas 1986 05",
+        "keywords": [
+          "Calles Ciudad de México"
+        ],
+        "author": "LBM1948",
         "license": "CC BY-SA 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Detalles_del_exterior_del_Palacio_de_Bellas_Artes%2C_Ciudad_de_M%C3%A9xico_06.JPG"
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Ciudad_de_M%C3%A9xico,_calles_y_plazas_1986_05.jpg"
       }
     },
     {
@@ -27223,14 +27352,19 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_cultura_007",
-        "url": "/assets/fotos/archivo_cultura_007.jpg",
-        "category": "Cultura",
+        "id": "commons_83241759",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Calles_Seminario_y_Moneda_Centro_Hist%C3%B3rico_Ciudad_de_M%C3%A9xico_05.jpg/960px-Calles_Seminario_y_Moneda_Centro_Hist%C3%B3rico_Ciudad_de_M%C3%A9xico_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "category": "CDMX",
         "borough": "",
-        "topic": "Palacio de Bellas Artes, Ciudad de México, México, 2015-07-18, DD 10",
-        "author": "Diego Delso",
+        "topic": "Calles Seminario y Moneda Centro Histórico Ciudad de México 05",
+        "keywords": [
+          "Centro Histórico Ciudad de México"
+        ],
+        "author": "Correogsk",
         "license": "CC BY-SA 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Palacio_de_Bellas_Artes%2C_Ciudad_de_M%C3%A9xico%2C_M%C3%A9xico%2C_2015-07-18%2C_DD_10.JPG"
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Calles_Seminario_y_Moneda_Centro_Hist%C3%B3rico_Ciudad_de_M%C3%A9xico_05.jpg"
       }
     },
     {
@@ -27251,14 +27385,19 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_cultura_008",
-        "url": "/assets/fotos/archivo_cultura_008.jpg",
-        "category": "Cultura",
+        "id": "commons_75139347",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Equipo_de_trabajo_de_los_Bomberos_CDMX_IMG_3048_%2844661910351%29.jpg/960px-Equipo_de_trabajo_de_los_Bomberos_CDMX_IMG_3048_%2844661910351%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "category": "Seguridad",
         "borough": "",
-        "topic": "Palacio de Bellas Artes México DF",
-        "author": "Eliasjorge4",
-        "license": "CC BY 3.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Palacio_de_Bellas_Artes_M%C3%A9xico_DF.JPG"
+        "topic": "Equipo de trabajo de los Bomberos CDMX IMG 3048 (44661910351)",
+        "keywords": [
+          "Bomberos Ciudad de México"
+        ],
+        "author": "Gobierno CDMX",
+        "license": "CC0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "source": "https://commons.wikimedia.org/wiki/File:Equipo_de_trabajo_de_los_Bomberos_CDMX_IMG_3048_(44661910351).jpg"
       }
     },
     {
@@ -27312,14 +27451,19 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_cultura_009",
-        "url": "/assets/fotos/archivo_cultura_009.jpg",
-        "category": "Cultura",
+        "id": "commons_71154185",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Metrob%C3%BAs_at_Paseo_de_la_Reforma.jpg/960px-Metrob%C3%BAs_at_Paseo_de_la_Reforma.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "category": "Movilidad",
         "borough": "",
-        "topic": "Detalles del exterior del Palacio de Bellas Artes, Ciudad de México 05",
-        "author": "Luisalvaz",
+        "topic": "Metrobús at Paseo de la Reforma",
+        "keywords": [
+          "Metrobús Paseo de la Reforma CDMX"
+        ],
+        "author": "Cocu15",
         "license": "CC BY-SA 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Detalles_del_exterior_del_Palacio_de_Bellas_Artes%2C_Ciudad_de_M%C3%A9xico_05.JPG"
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Metrob%C3%BAs_at_Paseo_de_la_Reforma.jpg"
       }
     },
     {
@@ -27939,24 +28083,19 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "contexto_autodromo_hermanos_rodriguez",
+        "id": "reciente_d3bf2851210c8f52",
         "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Vista_a%C3%A9rea_del_Aut%C3%B3dromo_Hermanos_Rodr%C3%ADguez_03.jpg/1280px-Vista_a%C3%A9rea_del_Aut%C3%B3dromo_Hermanos_Rodr%C3%ADguez_03.jpg",
-        "category": "Movilidad",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Desfile_de_Catrinas_in_Mexico_City_2026_%2853%29.jpg/1280px-Desfile_de_Catrinas_in_Mexico_City_2026_%2853%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "category": "CDMX",
         "borough": "",
-        "topic": "Vista aérea del Autódromo Hermanos Rodríguez, Ciudad de México (fotografía de 2025)",
+        "topic": "Desfile de Catrinas in Mexico City 2026 (53)",
         "keywords": [
-          "autódromo",
-          "Hermanos Rodríguez",
-          "gran premio",
-          "formula 1",
-          "F1",
-          "automovilismo"
+          "CDMX"
         ],
-        "author": "ProtoplasmaKid",
+        "author": "Gedankenstuecke",
         "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-        "source": "https://commons.wikimedia.org/wiki/File:Vista_a%C3%A9rea_del_Aut%C3%B3dromo_Hermanos_Rodr%C3%ADguez_03.jpg"
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Desfile_de_Catrinas_in_Mexico_City_2026_(53).jpg"
       }
     },
     {
@@ -28766,19 +28905,19 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "commons_16185756",
+        "id": "commons_36264199",
         "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Calle_Madero_-_Mexico_City.jpg/960px-Calle_Madero_-_Mexico_City.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "category": "Alcaldías",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Monumento_a_Col%C3%B3n_Paseo_de_la_Reforma_Ciudad_de_M%C3%A9xico.jpg/960px-Monumento_a_Col%C3%B3n_Paseo_de_la_Reforma_Ciudad_de_M%C3%A9xico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "category": "CDMX",
         "borough": "",
-        "topic": "Calle Madero - Mexico City",
+        "topic": "Monumento a Colón Paseo de la Reforma Ciudad de México",
         "keywords": [
-          "Cuauhtémoc alcaldía Ciudad de México"
+          "Paseo de la Reforma Ciudad de México"
         ],
-        "author": "Own work",
+        "author": "ProtoplasmaKid",
         "license": "CC BY-SA 4.0",
         "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Calle_Madero_-_Mexico_City.jpg"
+        "source": "https://commons.wikimedia.org/wiki/File:Monumento_a_Col%C3%B3n_Paseo_de_la_Reforma_Ciudad_de_M%C3%A9xico.jpg"
       }
     },
     {
@@ -28862,19 +29001,16 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "commons_153940186",
+        "id": "alcaldia_benito-juarez",
         "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Entrega_de_Patrullas_en_Benito_Ju%C3%A1rez_02.jpg/960px-Entrega_de_Patrullas_en_Benito_Ju%C3%A1rez_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "category": "Alcaldías",
-        "borough": "",
-        "topic": "Entrega de Patrullas en Benito Juárez 02",
-        "keywords": [
-          "Benito Juárez alcaldía Ciudad de México"
-        ],
-        "author": "Gobierno de la Ciudad de México",
-        "license": "CC BY 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Entrega_de_Patrullas_en_Benito_Ju%C3%A1rez_02.jpg"
+        "url": "/assets/alcaldias/benito-juarez.jpg",
+        "category": "CDMX",
+        "borough": "Benito Juárez",
+        "topic": "Parque Hundido, alcaldía Benito Juárez",
+        "author": "User:etnoboris",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Parque_Hundido.jpeg"
       }
     },
     {
@@ -28895,19 +29031,16 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_seguridad_011",
+        "id": "alcaldia_iztapalapa",
         "kind": "representativa",
-        "url": "/assets/fotos/archivo_seguridad_011.jpg",
-        "category": "Seguridad",
-        "borough": "",
-        "topic": "Claudia Sheinbaum entrega patrullas Iztapalapa 02",
-        "keywords": [
-          "Seguridad"
-        ],
-        "author": "Gobierno de la Ciudad de México",
-        "license": "CC BY 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Claudia_Sheinbaum_entrega_patrullas_Iztapalapa_02.jpg"
+        "url": "/assets/alcaldias/iztapalapa.jpg",
+        "category": "CDMX",
+        "borough": "Iztapalapa",
+        "topic": "Vista de Iztapalapa desde el Cerro de la Estrella",
+        "author": "Secretaría de Cultura Ciudad de México from México",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:MX_MM_MUSEO_CERRO_DE_LA_ESTRELLA_%2849522225751%29.jpg"
       }
     },
     {

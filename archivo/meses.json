@@ -1,16 +1,16 @@
 {
-  "updated": "2026-11-01 14:50 UTC",
+  "updated": "2026-11-01 15:11 UTC",
   "retention_days": 365,
   "months": [
     {
       "month": "2026-11",
       "url": "/archivo/2026-11.json",
-      "count": 30
+      "count": 39
     },
     {
       "month": "2026-10",
       "url": "/archivo/2026-10.json",
-      "count": 5037
+      "count": 5038
     }
   ]
 }
