@@ -2,7 +2,7 @@
 import json
 import tempfile
 import unittest
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from unittest.mock import patch
 
@@ -54,6 +54,29 @@ class VerifiedAccidentsTests(unittest.TestCase):
         ):
             photos.assign_photos([article])
         self.assertNotIn("photo", article)
+
+    def test_recent_verified_incident_is_visible_but_old_incident_is_not_pinned(self):
+        now = datetime.now(timezone.utc)
+        items = [{
+            "title": f"Noticia general {i}",
+            "date": now.date().isoformat(),
+            "url": f"https://news.google.com/rss/articles/item{i}",
+            "published_at": (now - timedelta(minutes=i)).isoformat(),
+        } for i in range(60)]
+        recent = {
+            "title": "Accidente vial cotejado",
+            "date": now.date().isoformat(),
+            "url": "https://comova.mx/aviso/accidente-verificado/",
+            "published_at": (now - timedelta(hours=30)).isoformat(),
+        }
+        stale = {
+            **recent, "url": "https://comova.mx/aviso/accidente-vencido/",
+            "published_at": (now - timedelta(days=4)).isoformat(),
+        }
+        visible = news.homepage_articles(items, [recent, stale], now)
+        self.assertEqual(len(visible), 60)
+        self.assertIn(recent["url"], [entry["url"] for entry in visible])
+        self.assertNotIn(stale["url"], [entry["url"] for entry in visible])
 
     def test_update_includes_curated_items_in_feed_and_archive(self):
         now = datetime.now(timezone.utc)
