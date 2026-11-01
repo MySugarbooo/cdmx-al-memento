@@ -452,14 +452,18 @@ def _photo_score(article, photo):
     if re.search(r"\b(?:muevete en bici|paseo dominical|bicicletas?|ciclistas?|ciclismo|ciclovias?|ecobici|cicloton)\b", headline):
         if not re.search(r"\b(?:bici|bicicletas?|ciclistas?|ciclovias?|ecobici|cicloton)\b", context):
             return -10000
-    # Un Gran Premio o GP requiere contexto real en el tema de la foto,
-    # no basta una palabra genérica en las etiquetas de la imagen.
+    # Distinguir noticias del circuito de avisos de cierres viales por el GP.
+    # Una imagen del transporte público o una calle ajena no ilustra el evento.
     if re.search(r"\b(?:gp de mexico|gran premio|formula 1|autodromo)\b", headline):
-        if not re.search(
-            r"\b(?:formula 1|gran premio|autodromo|circuito|carrera|autos?|"
-            r"automoviles?|vehiculos?|vialidad|trafico|avenida|calles?|"
-            r"calzada|reforma|insurgentes|periferico)\b", topic
-        ):
+        race_context = r"\b(?:formula 1|f1|gran premio|autodromo|circuito|carrera|monoplaza|piloto|automovilismo)\b"
+        road_context = r"\b(?:vialidad|trafico|avenida|calles?|calzada|reforma|insurgentes|periferico|cierres? viales?)\b"
+        road_closure = re.search(r"\b(?:calles? cerradas?|cierres?|alternativas viales|rutas alternas)\b", headline)
+        if road_closure:
+            if re.search(r"\b(?:metrobus|trolebus|ecobici|bicicletas?|estacion)\b", topic):
+                return -10000
+            if not (re.search(race_context, topic) or re.search(road_context, topic)):
+                return -10000
+        elif not re.search(race_context, topic):
             return -10000
     # Un rescate patrimonial de una fuente no se ilustra con rescates de viviendas.
     # Coincidir en el verbo "rescate" y en la alcaldía no basta.
