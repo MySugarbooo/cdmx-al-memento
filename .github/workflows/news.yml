@@ -8,6 +8,8 @@ on:
     paths:
       - '.github/workflows/news.yml'
       - 'update_news.py'
+      - 'editorial/accidentes-verificados-2026-11.json'
+      - 'tests/test_editorial_accidents.py'
       - 'scripts/generar_guias.py'
       - 'scripts/notas_locales.py'
       - 'tests/test_local_news.py'
