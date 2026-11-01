@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-01 15:19 UTC",
+  "updated": "2026-11-01 15:21 UTC",
   "boroughs": [
     {
       "name": "La Magdalena Contreras",
@@ -2242,19 +2242,7 @@
             "method": "Síntesis original de Amau Kisumi a partir del aviso público enlazado; no constituye inspección directa del accidente. La situación vial puede cambiar después de su publicación."
           },
           "editorial_verified": true,
-          "sensitive_media": true,
-          "photo": {
-            "id": "alcaldia_benito-juarez",
-            "kind": "representativa",
-            "url": "/assets/alcaldias/benito-juarez.jpg",
-            "category": "CDMX",
-            "borough": "Benito Juárez",
-            "topic": "Parque Hundido, alcaldía Benito Juárez",
-            "author": "User:etnoboris",
-            "license": "CC BY-SA 3.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Parque_Hundido.jpeg"
-          }
+          "sensitive_media": true
         },
         {
           "title": "Clima en Benito Juárez, CDMX: domingo 1 de noviembre con ambiente templado y nubes dispersas",
@@ -3087,22 +3075,7 @@
             "method": "Resumen original basado en el reportaje de El Gráfico publicado el 31 de octubre de 2026. No se reproducen fotografías ajenas ni se presenta una imagen de otro accidente como si fuera del hecho."
           },
           "editorial_verified": true,
-          "sensitive_media": true,
-          "photo": {
-            "id": "commons_106559908",
-            "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/8._Coyoac%C3%A1n_Jard%C3%ADn_Hidalgo%2C_Ciudad_de_M%C3%A9xico.jpg/960px-8._Coyoac%C3%A1n_Jard%C3%ADn_Hidalgo%2C_Ciudad_de_M%C3%A9xico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "category": "Alcaldías",
-            "borough": "",
-            "topic": "8. Coyoacán Jardín Hidalgo, Ciudad de México",
-            "keywords": [
-              "Coyoacán Ciudad de México"
-            ],
-            "author": "Machristen",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:8._Coyoac%C3%A1n_Jard%C3%ADn_Hidalgo,_Ciudad_de_M%C3%A9xico.jpg"
-          }
+          "sensitive_media": true
         },
         {
           "title": "Automóvil arrolla a personas en Coyoacán; una mujer pierde la vida (VIDEO)",
