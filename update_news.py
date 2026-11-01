@@ -1,3 +1,4 @@
+# Ejecución puntual solicitada el 2026-11-01; la programación horaria continúa.
 """Actualizador de noticias CDMX AL MEMENTO.
 
 Recopila titulares de RSS, los ordena por fecha de publicación verificable,
