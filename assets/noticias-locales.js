@@ -140,7 +140,7 @@
   meta.textContent=(article.category||'CDMX')+' · '+publication(article)+
    ' · Fuente identificada: '+(article.source||'Medio de origen')+
    (article.borough?' · Alcaldía mencionada: '+article.borough:'');
-  intro.textContent=article.brief?.lead||'La publicación citada aborda el tema del encabezado; el índice disponible no permite confirmar más detalles.';
+  intro.textContent='Síntesis editorial con fuente identificada y límites de verificación explícitos.';
   body.replaceChildren();
   // Resumen primero; contexto y pendientes solo cuando hay datos atribuibles.
   const summary=elem('section','local-story-summary');
@@ -149,34 +149,26 @@
   if(article.brief?.context)summary.append(elem('p','',article.brief.context));
   if(article.brief?.pending)summary.append(elem('p','',article.brief.pending));
   body.append(summary);
+  const quick=elem('aside','local-story-highlights');
+  quick.append(elem('h2','','Lo más importante'));
+  const points=elem('ul');
+  points.append(elem('li','','Tema: '+article.title));
+  points.append(elem('li','','Medio que lo reporta: '+(article.source||'Sin identificar')+'.'));
+  points.append(elem('li','',article.borough?'Alcaldía mencionada: '+article.borough+' (sin ubicación independiente confirmada).':'Lugar exacto no confirmado en los datos disponibles.'));
+  quick.append(points);body.append(quick);
   const original=elem('section','local-story-sources');
   original.append(elem('h2','','Fuente original'));
   if(safeExternal(article.url)){
    const link=elem('a','local-source-link','Leer publicación de '+(article.source||'medio de origen')+' ↗');
    link.href=article.url;link.target='_blank';link.rel='noopener noreferrer nofollow';original.append(link);
   }else original.append(elem('p','','Enlace directo no disponible; consulta el medio identificado en la ficha de verificación.'));
-  body.append(original);
+  original.append(elem('p','','El enlace puede pasar por Google Noticias antes de abrir el medio.'));body.append(original);
   body.append(elem('p','local-story-byline','Redacción y resumen: Amau Kisumi · CDMX AL MEMENTO · Fuente informativa: '+(article.source||'No identificada')));
   addVerification(article,updated);
-  /*
-  addText(body,'Qué falta por confirmar',article.brief?.pending||'Los hechos y los cambios posteriores requieren fuentes actualizadas.');
-  */
   const editorial=elem('section','local-story-editorial');
-  editorial.append(elem('h2','','Nota de Amau Kisumi'),
-    elem('p','','Nuestro compromiso es informar con empatía y claridad: distinguimos lo que dice una fuente de lo que aún está pendiente de confirmar. No afirmamos haber hecho entrevistas ni haber visto imágenes del suceso.'));
+  editorial.append(elem('h2','','Criterio editorial'),
+    elem('p','','La síntesis se basa en la información atribuible disponible. No se inventan testimonios ni datos no confirmados.'));
   body.append(editorial);
-  const source=elem('section','local-story-sources');
-  source.append(elem('h2','','Fuentes y método'),
-   elem('p','',article.brief?.method||'Esta nota se ha elaborado a partir del título y la fecha del medio citado.'));
-  const pub=elem('p','', 'Medio de origen: '+(article.source||'Fuente periodística')+
-   '. Fecha de publicación comunicada por el medio: '+publication(article)+'.');
-  source.append(pub);
-  if(safeExternal(article.url)){
-   const ref=elem('a','local-source-link','Consultar la fuente original (opcional) ↗');
-   ref.href=article.url;ref.target='_blank';ref.rel='noopener noreferrer nofollow';
-   source.append(ref);
-  }
-  body.append(source);
   const img=photo(article);
   if(img&&figure){
    picture.src=img.src;picture.alt=img.alt;picture.hidden=false;figure.hidden=false;
