@@ -54,6 +54,8 @@ def render_photo(item):
 def render(item, ident):
     title = esc(item["title"])
     photo_html = render_photo(item)
+    if item.get("sensitive_media") is True and not photo_html:
+        photo_html = '<p class="photo-notice">Sin fotografía autenticada del hecho; no se utilizan imágenes de accidentes ajenos.</p>'
     brief = item.get("brief") or {}
     lead = esc(brief.get("lead") or item.get("description") or "")
     context = esc(brief.get("context") or "Consulta las fuentes y los avisos oficiales.")
@@ -64,7 +66,13 @@ def render(item, ident):
     url = BASE + "/articulos/" + ident + "/"
     original = item.get("url") or ""
     source_link = ""
-    if urlparse(original).scheme == "https" and urlparse(original).hostname in ("news.google.com", "commons.wikimedia.org"):
+    origin = urlparse(original)
+    allowed_hosts = ("news.google.com", "commons.wikimedia.org")
+    curated_hosts = ("comova.mx", "mayacomunicacion.com.mx", "www.elgrafico.mx")
+    authorized = (origin.hostname in allowed_hosts or
+                  (item.get("editorial_verified") is True and
+                   origin.hostname in curated_hosts and origin.path != "/"))
+    if origin.scheme == "https" and not origin.username and not origin.password and authorized:
         source_link = '<p class="source-top"><span>Fuente: ' + source + '</span> <a class="source-action" href="' + esc(original) + '" target="_blank" rel="nofollow noopener noreferrer">Ver fuente original ↗</a></p>'
     structured = json.dumps({"@context":"https://schema.org","@type":"NewsArticle","headline":item["title"],"datePublished":item.get("published_at") or item.get("date"),"author":{"@type":"Organization","name":"CDMX AL MEMENTO"},"publisher":{"@type":"Organization","name":"CDMX AL MEMENTO"},"mainEntityOfPage":url},ensure_ascii=False).replace("<","\\u003c")
     return f"""<!doctype html><html lang="es-MX"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
