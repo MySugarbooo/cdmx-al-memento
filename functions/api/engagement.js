@@ -7,7 +7,9 @@ export async function onRequest({request,env}){
  if(!env.LIKES_DB)return json({error:"La base de datos aún no está configurada."},503);
  const u=new URL(request.url);
  const slug=u.searchParams.get("article")||"";
- if(slug.length>220||slug&&!/^https:\/\/news\.google\.com\//.test(slug)&&!/^\/[a-z0-9/_-]+\.html$/.test(slug))return json({error:"Artículo inválido"},400);
+ const validSource=/^https:\/\/news\.google\.com\//.test(slug)||/^\/[a-z0-9/_-]+\.html$/.test(slug);
+ const validLocal=/^\/noticias\/\?id=[a-f0-9]{20}&mes=20\d{2}-(0[1-9]|1[0-2])$/.test(slug);
+ if(slug.length>220||(slug&&!validSource&&!validLocal))return json({error:"Artículo inválido"},400);
  let token=getCookie(request);
  if(!/^[a-f0-9]{64}$/.test(token||""))token=Array.from(crypto.getRandomValues(new Uint8Array(32)),x=>x.toString(16).padStart(2,"0")).join("");
  const hash=await digest(token);

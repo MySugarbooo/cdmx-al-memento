@@ -72,6 +72,9 @@ on:
       - 'assets/neo-site.css'
       - 'assets/neo-home.css'
       - 'assets/neo-home.js'
+      - 'assets/engagement.js'
+      - 'functions/api/engagement.js'
+      - 'tests/test_engagement.mjs'
       - 'noticias-en-desarrollo/index.html'
       - 'assets/noticias-en-desarrollo.js'
       - 'assets/noticias-en-desarrollo.css'
@@ -137,6 +140,9 @@ jobs:
           node --check app.js
           node --check assets/page-transitions.js
           node --check assets/neo-home.js
+          node --check assets/engagement.js
+          node --check --input-type=module < functions/api/engagement.js
+          node --test tests/test_engagement.mjs
           node --check assets/noticias-en-desarrollo.js
           node --check assets/neo-sections.js
           node --check assets/neo-gallery.js
