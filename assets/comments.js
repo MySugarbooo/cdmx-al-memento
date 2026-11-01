@@ -143,6 +143,12 @@ function profileFor(topic){
  time.textContent=stamp?new Intl.DateTimeFormat('es-MX',{
   dateStyle:'medium',timeStyle:'short',timeZone:'America/Mexico_City'
  }).format(stamp):'Fecha pendiente';
+ // Distintivo basado únicamente en el permiso firmado de Firebase.
+ if(user&&isModerator&&uid===user.uid){
+  const badge=document.createElement('small');badge.className='community-admin-badge';
+  badge.textContent='Admin';badge.setAttribute('aria-label','Administrador verificado');
+  name.append(' ',badge);
+ }
  details.append(name,time);inner.append(avatar,details);profile.append(inner);return profile;
 }
 let isModerator=false;
@@ -552,6 +558,7 @@ mod.onAuthStateChanged(auth,async person=>{
    const result=await mod.getIdTokenResult(person);
    if(auth.currentUser===person){
     isModerator=result.claims.moderator===true;
+    renderMerged();
     moderatorFeed();
    }
   }catch(error){console.warn('Rol del foro no disponible:',error)}
