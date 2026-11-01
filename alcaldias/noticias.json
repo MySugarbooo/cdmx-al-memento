@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-01 05:56 UTC",
+  "updated": "2026-11-01 07:15 UTC",
   "boroughs": [
     {
       "name": "La Magdalena Contreras",
@@ -6688,7 +6688,7 @@
     },
     {
       "name": "Iztapalapa",
-      "count": 164,
+      "count": 165,
       "articles": [
         {
           "title": "Construye ProximityParks recinto en Iztapalapa",
@@ -6934,6 +6934,36 @@
             "license": "CC BY 4.0",
             "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
             "source": "https://commons.wikimedia.org/wiki/File:Claudia_Sheinbaum_entrega_patrullas_Iztapalapa_02.jpg"
+          }
+        },
+        {
+          "title": "Cateo en Iztapalapa: Deja Tres Personas Detenidas y Aseguran Armas Largas",
+          "description": "La información publicada por N+ trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPeVNoLVBscU5neVZ6aG11cXdQbnlsOENjMFRfS0FiYU5jdXVpbDNjbjA4YWJfRC1ybjlJVDZ4NDJmWWo3ZEYzYVE1aUZ0N18zRVh3RGFfeU50ZVFfUTRZRGlza3FvdmF3ODdqSzZxUE1CTDJLaEpWSVlKWU42TjNuZ09uQ2hpLW9ndTd2YXJkUlhWUHo4SXNlcGZwNFZyY0txVVZJN2FCUGd4dVY3UWx0dzVrWmIxNEFOMURn?oc=5",
+          "source": "N+",
+          "date": "2026-10-30",
+          "published_at": "2026-10-30T16:04:39Z",
+          "category": "CDMX",
+          "borough": "Iztapalapa",
+          "location": "Iztapalapa (mencionada en el titular)",
+          "local_url": "/noticias/?id=633466006c1a00ae7e02&mes=2026-10",
+          "brief": {
+            "lead": "La información publicada por N+ trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "archivo_seguridad_015",
+            "kind": "representativa",
+            "url": "/assets/fotos/archivo_seguridad_015.jpg",
+            "category": "Seguridad",
+            "borough": "",
+            "topic": "Claudia Sheinbaum entrega patrullas Iztapalapa 01",
+            "author": "Gobierno de la Ciudad de México",
+            "license": "CC BY 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Claudia_Sheinbaum_entrega_patrullas_Iztapalapa_01.jpg"
           }
         },
         {
@@ -7388,34 +7418,6 @@
             "license": "CC BY-SA 4.0",
             "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
             "source": "https://commons.wikimedia.org/wiki/File:Calles_Seminario_y_Moneda_Centro_Hist%C3%B3rico_Ciudad_de_M%C3%A9xico_02.jpg"
-          }
-        },
-        {
-          "title": "Festejo de San Judas Tadeo 2026: ¿Cómo llegar a la iglesia de San Hipólito desde Iztapalapa en Metro?",
-          "description": "La información publicada por EL GRÁFICO trata un asunto registrado en la sección de Metro del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNS2VraVUyQWVtTkhyTmpiOFRGQmZQVlJWc2Rqa2JkcVpkSW1MeE1XOUg1M0VDVndJVXZENHpmbURSbHY0S3N2UW1ZUnkwMGdjc2lTbWJ4UFU2RFJPWm5EQkhzVHg3YWMzMEdsOUxqUnVJSDAyTWZnUDd0M1h2VjNKMEVwb2NtWHlWcERWQWg3OFEzSkFhMFNLQm1JRGxwUGVzaTN6TWlXLWJBcE5vRnluOWtZR0tnNmkydmdSb2pHOUNpc1NGbGgzUGRkcGhLeUlySVZxWENDRTV2d9IB7gFBVV95cUxNYVR1SW4zMDF6U29MT2stVVVXU05tRklleFRSTG9LMmRmYkJqT0V0cWh0MGtVWUV0U3VnUS00M3F0S1VkUnNBV0tzc2gxZjM3eEVneTdQWUxJX185ekE5N09yY3FibExmZVRYbGxtZWVmeVk4ZDBnUVdmRzl0ZFM5Slk2cERXbDE0M2dEMklPQXhzcG1heXJRVUR3azFHTGlSXzU0QnZmaXF0emRpbWFtSlBMbHo1ZWRUSGRzSFh4Q3g2LVZBMTUzTFhkRlBsMk5XUHFwYU5SbkgyWmZZMDh2Zy1NdUlNNnU5eEZBRXdB?oc=5",
-          "source": "EL GRÁFICO",
-          "date": "2026-10-27",
-          "published_at": "2026-10-27T18:52:12Z",
-          "category": "Metro",
-          "borough": "Iztapalapa",
-          "location": "Iztapalapa (mencionada en el titular)",
-          "local_url": "/noticias/?id=44fd00aed93a46a35791&mes=2026-10",
-          "brief": {
-            "lead": "La información publicada por EL GRÁFICO trata un asunto registrado en la sección de Metro del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Los cambios en este sistema pueden afectar los horarios, las conexiones y la planeación de los viajes cotidianos.",
-            "pending": "El estado operativo, las estaciones y las alternativas de traslado deben comprobarse en los avisos actuales del Metro. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "alcaldia_iztapalapa",
-            "url": "/assets/alcaldias/iztapalapa.jpg",
-            "category": "CDMX",
-            "borough": "Iztapalapa",
-            "topic": "Vista de Iztapalapa desde el Cerro de la Estrella",
-            "author": "Secretaría de Cultura Ciudad de México from México",
-            "license": "CC BY 2.0",
-            "source": "https://commons.wikimedia.org/wiki/File:MX_MM_MUSEO_CERRO_DE_LA_ESTRELLA_%2849522225751%29.jpg"
           }
         }
       ]
@@ -10940,8 +10942,41 @@
     },
     {
       "name": "Xochimilco",
-      "count": 130,
+      "count": 131,
       "articles": [
+        {
+          "title": "Clima en Xochimilco este domingo 1 de noviembre: día templado con nubes dispersas",
+          "description": "El pronóstico recogido por El Heraldo de México se refiere a condiciones meteorológicas en Xochimilco. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
+          "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPd2FiUmE5dTlRVG5IQUI2ZzBVd2VpRk1UcG9nY2FSZmVnYldzd2FnLVVOVGI0RXNKN2M3VldCcjY4WGNwanp6Y1R1OXQ2QUwwenUyeTZtZ1JvX0FKVHcyYTAzU1dTYTNfdmdPTkpobkN5aHY4M1FMd01CVzhPanFZb3l1aHpqb0tBdkxMVjFzamdxTFJSSHRYZHdUZlg0ZUFIVnB3Rk05WENhdHd2MTVpRV93RkFSYjdCakoyZ1ozZzR5UDhJVXdwV1R1WVh6TFZkOEREeFFUMEs?oc=5",
+          "source": "El Heraldo de México",
+          "date": "2026-10-31",
+          "published_at": "2026-11-01T05:00:00Z",
+          "category": "CDMX",
+          "borough": "Xochimilco",
+          "location": "Xochimilco (mencionada en el titular)",
+          "local_url": "/noticias/?id=ee71f0a1bc58a0bef159&mes=2026-10",
+          "brief": {
+            "lead": "El pronóstico recogido por El Heraldo de México se refiere a condiciones meteorológicas en Xochimilco. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "commons_80038563",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Mariachis_-_Xochimilco%2C_Ciudad_de_M%C3%A9xico_II.jpg/960px-Mariachis_-_Xochimilco%2C_Ciudad_de_M%C3%A9xico_II.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "category": "CDMX",
+            "borough": "",
+            "topic": "Mariachis - Xochimilco, Ciudad de México II",
+            "keywords": [
+              "CDMX"
+            ],
+            "author": "Juan Carlos Fonseca Mata",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Mariachis_-_Xochimilco,_Ciudad_de_M%C3%A9xico_II.jpg"
+          }
+        },
         {
           "title": "Pan de muerto rosa y negro revive tradiciones ancestrales de Xochimilco",
           "description": "La información publicada por 24-horas.mx trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -11638,39 +11673,6 @@
             "author": "Xbauerx",
             "license": "CC BY-SA 4.0",
             "source": "https://commons.wikimedia.org/wiki/File:Trajineras_de_Xochimilco.jpg"
-          }
-        },
-        {
-          "title": "Campos de cempasúchil en CDMX: recorre Xochimilco en tractor este otoño",
-          "description": "La publicación de Descubre México pone el foco en dificultades que podrían afectar la comercialización del cempasúchil de Xochimilco. La producción de flor involucra a familias y productores locales; para explicar causas y alcances hacen falta los datos del reportaje.",
-          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxONWhmTHd4WU1rM0FOOXk0cXI3TW94VFFFZkl4dm9FWWVLMldqTTJlZFlrOVlrTi1Sakh1Skw1eEk4OVJMbWFTdGZxWlE5Nnh0ZUJLU29WNW9hZDNOblJCeHFNR0ZzekdROVpCZzJ0ZWpqTENpNXRsYXFxQkxZX3d6T251aFh1dG0zdWZ2SlZ1MjRISjFtOXd6Sm92U3JnVngxYnc?oc=5",
-          "source": "Descubre México",
-          "date": "2026-10-26",
-          "published_at": "2026-10-27T02:46:20Z",
-          "category": "CDMX",
-          "borough": "Xochimilco",
-          "location": "Xochimilco (mencionada en el titular)",
-          "local_url": "/noticias/?id=74a16d50c9eb832aa251&mes=2026-10",
-          "brief": {
-            "lead": "La publicación de Descubre México pone el foco en dificultades que podrían afectar la comercialización del cempasúchil de Xochimilco. La producción de flor involucra a familias y productores locales; para explicar causas y alcances hacen falta los datos del reportaje.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "commons_115242762",
-            "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Xochimilco%2C_Ciudad_de_M%C3%A9xico%2C_M%C3%A9xico.jpg/960px-Xochimilco%2C_Ciudad_de_M%C3%A9xico%2C_M%C3%A9xico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "category": "Alcaldías",
-            "borough": "",
-            "topic": "Xochimilco, Ciudad de México, México",
-            "keywords": [
-              "Xochimilco Ciudad de México"
-            ],
-            "author": "Lepog",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Xochimilco,_Ciudad_de_M%C3%A9xico,_M%C3%A9xico.jpg"
           }
         }
       ]
