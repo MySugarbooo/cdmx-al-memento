@@ -452,6 +452,15 @@ def _photo_score(article, photo):
     if re.search(r"\b(?:muevete en bici|paseo dominical|bicicletas?|ciclistas?|ciclismo|ciclovias?|ecobici|cicloton)\b", headline):
         if not re.search(r"\b(?:bici|bicicletas?|ciclistas?|ciclovias?|ecobici|cicloton)\b", context):
             return -10000
+    # Un Gran Premio o GP requiere contexto de calles, tránsito o automovilismo.
+    # Una estación de bicicletas no representa adecuadamente ese acontecimiento.
+    if re.search(r"\b(?:gp de mexico|gran premio|formula 1|autodromo)\b", headline):
+        if not re.search(
+            r"\b(?:formula 1|gran premio|autodromo|circuito|carrera|autos?|"
+            r"automoviles?|vehiculos?|vialidad|trafico|avenida|calles?|"
+            r"calzada|reforma|insurgentes|periferico)\b", context
+        ):
+            return -10000
     # Una línea distinta del Metro es peor que una foto genérica del Metro.
     if category=="Metro":
         wanted=re.search(r"\blinea ([0-9]{1,2}|a|b)\b",headline)
