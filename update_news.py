@@ -196,6 +196,11 @@ def category_by_headline(title, feed_category):
     normalized = fold(title)
     if re.search(r"\b(?:muevete en bici|paseo dominical|bicicletas?|ciclistas?|ciclismo|ciclovias?|ecobici|cicloton)\b", normalized):
         return "Movilidad"
+    # Los cierres y rutas alternas son movilidad, no operativos policiales.
+    # Evitar imágenes de patrullas cuando un feed de Seguridad incluye tráfico.
+    if (re.search(r"\b(?:calles cerradas|cierres? viales?|alternativas? viales?|rutas? alternas?|desvios? viales?)\b", normalized)
+            and not re.search(r"\b(?:balacera|homicidio|asalto|delito|detenidos?|detienen|persecucion policial)\b", normalized)):
+        return "Movilidad"
     # Distinguir siniestros viales de delitos, aunque provengan de otro feed RSS.
     if re.search(r"\b(?:accidentes?|choques?|colisiones?|volcaduras?|atropell\w*|arroll\w*|derrap\w*|percances? viales?|siniestros? viales?)\b", normalized):
         if re.search(r"\b(?:homicidio|balacera|asalto|atentado|delito|persecucion policial)\b", normalized):
