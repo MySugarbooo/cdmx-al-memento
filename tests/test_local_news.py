@@ -52,10 +52,10 @@ class LocalNewsTests(unittest.TestCase):
         self.assertIn("const rights=selectedPhoto(article)||{}",js)
         self.assertIn("safeExternal(rights.source)",js)
         self.assertIn("origin.href=rights.source",js)
-        self.assertIn("Consultar la fuente original (opcional)",js)
+        self.assertIn("Consultar la fuente original",js)
         self.assertIn('title.textContent=article.title',js)
         self.assertIn("id='+id+'&mes='+month",js)
-        self.assertIn("source.append(ref)",js)
+        self.assertIn("section.append(source)",js)
 
     def test_home_and_portals_open_local_pages(self):
         home=(ROOT/"app.js").read_text(encoding="utf-8")
