@@ -120,5 +120,50 @@ class BoroughAndArchiveTests(unittest.TestCase):
             self.assertEqual(by_title[verified["title"]]["photo"]["id"], "hecho_confirmado")
 
 
+    def test_archive_prioritizes_recent_mismatched_photos(self):
+        now = datetime.now(timezone.utc)
+        records = {}
+        for age in range(26, 0, -1):
+            day = (now - timedelta(days=age)).date().isoformat()
+            item = news.standardize(fake(f"Muévete en Bici recorre seis alcaldías {age}", day))
+            item["category"] = "Seguridad"
+            item["photo"] = {
+                "id": f"patrullas_{age}", "kind": "representativa",
+                "category": "Seguridad", "topic": "Entrega de patrullas",
+                "url": "/assets/fotos/patrullas.jpg",
+            }
+            records.setdefault(day[:7], []).append(item)
+
+        selected = []
+
+        def repair(items):
+            selected.extend(item["date"] for item in items)
+            for item in items:
+                item["photo"] = {
+                    "id": "bici", "kind": "representativa",
+                    "category": "Movilidad", "topic": "Bicicletas",
+                    "url": "/assets/fotos/bicicletas.jpg",
+                }
+            return {"assigned": len(items)}
+
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            archive = root / "archivo"
+            archive.mkdir()
+            for month, articles in records.items():
+                news.write_json(archive / (month + ".json"), {
+                    "month": month, "articles": articles,
+                })
+            with patch.multiple(news, ARCHIVE_DIR=archive,
+                                BOROUGH_DIR=root / "alcaldias",
+                                DEST=root / "news.json"):
+                with patch.object(news, "assign_photos", side_effect=repair):
+                    news.consolidate_archive([], now - timedelta(days=365), "Prueba")
+
+        self.assertEqual(len(selected), 24)
+        self.assertEqual(selected[0], (now - timedelta(days=1)).date().isoformat())
+        self.assertEqual(selected[-1], (now - timedelta(days=24)).date().isoformat())
+
+
 if __name__ == "__main__":
     unittest.main()
