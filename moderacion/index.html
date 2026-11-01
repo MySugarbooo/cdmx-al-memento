@@ -10,6 +10,20 @@
 <div id="identity" class="mod-identity" hidden><img id="identity-photo" alt="Foto de perfil de Google" hidden><div><strong id="identity-name"></strong><span id="identity-role"></span></div></div><div class="mod-actions"><button id="login" type="button" hidden>Entrar con Google</button><button id="refresh" type="button" hidden>Actualizar reportes</button><button id="logout" class="secondary" type="button" hidden>Cerrar sesión</button></div>
 <p id="status" class="mod-status" role="status" aria-live="polite">Verificando acceso…</p>
 <section id="private" hidden>
+<section class="mod-card" aria-labelledby="editorial-dashboard-title">
+<h2 id="editorial-dashboard-title">Panel editorial · indicadores operativos</h2>
+<p>Solo visible tras autenticar una cuenta moderadora. Los datos proceden de fuentes públicas; no son ingresos de AdSense ni usuarios en tiempo real.</p>
+<div class="mod-stats">
+<div class="mod-stat"><strong id="editorial-news">—</strong><span>Noticias del índice</span></div>
+<div class="mod-stat"><strong id="editorial-stale">—</strong><span>Estado de actualización</span></div>
+<div class="mod-stat"><strong id="editorial-sources">—</strong><span>Medios distintos</span></div>
+</div>
+<p id="editorial-updated">Última actualización: pendiente</p>
+<p id="editorial-alert" role="status">Esperando autorización.</p>
+<button id="editorial-refresh" type="button">Actualizar indicadores</button>
+<a href="/estadisticas/">Ver estadísticas públicas detalladas ↗</a>
+</section>
+
  <p class="mod-note"><strong>Nuevo:</strong> <a href="/reportes-ciudadanos/#citizen-moderator">Revisar reportes ciudadanos por colonia ↗</a> (cola y aprobación con tu cuenta moderadora).</p>
  <h2>Reportes recientes</h2>
  <p class="mod-subtitle">Se revisan los 50 reportes más recientes. Un reporte es una denuncia pendiente de revisión, no una infracción comprobada.</p>
@@ -51,4 +65,28 @@
  <p class="mod-note">¿Se retiró una publicación por error? La persona afectada puede solicitar una revisión desde <a href="/contacto.html">Contacto</a>, indicando el enlace o identificador de su publicación. No compartas datos privados públicamente.</p>
 </section></main>
 <footer><div class="wrap">© 2026 CDMX AL MEMENTO · <a href="/comunidad/">Volver al foro</a></div></footer>
-<script src="/assets/comments-config.js?v=2"></script><script type="module" src="/assets/moderacion-avanzada.js?v=2"></script><script src="/assets/page-transitions.js?v=1" defer></script></body></html>
+<script src="/assets/comments-config.js?v=2"></script><script type="module" src="/assets/moderacion-avanzada.js?v=2"></script><script src="/assets/page-transitions.js?v=1" defer></script><script>
+(()=>{'use strict';
+const panel=document.getElementById('private'),button=document.getElementById('editorial-refresh');
+const set=(id,value)=>document.getElementById(id).textContent=value;
+async function refresh(){
+ if(panel.hidden)return;
+ set('editorial-alert','Consultando índice…');
+ try{
+  const r=await fetch('/news.json?t='+Date.now(),{cache:'no-store'});
+  if(!r.ok)throw Error('HTTP '+r.status);
+  const data=await r.json(),articles=Array.isArray(data.articles)?data.articles:[];
+  set('editorial-news',articles.length.toLocaleString('es-MX'));
+  set('editorial-sources',new Set(articles.map(a=>a.source).filter(Boolean)).size);
+  const date=new Date(data.updated||'');
+  const age=Date.now()-date.getTime();
+  set('editorial-stale',Number.isFinite(age)&&age>=0?(age>3*3600000?'Revisar':'Al día'):'Sin datos');
+  set('editorial-updated',Number.isFinite(date.getTime())?'Última actualización del índice: '+date.toLocaleString('es-MX',{timeZone:'America/Mexico_City'}):'No hay fecha válida del índice');
+  set('editorial-alert',age>3*3600000?'Aviso: el índice supera tres horas sin actualizar.':'Datos del índice consultados correctamente.');
+ }catch(e){set('editorial-alert','No se pudo consultar el índice: '+e.message)}
+}
+button.addEventListener('click',refresh);
+const observer=new MutationObserver(()=>{if(!panel.hidden)refresh()});
+observer.observe(panel,{attributes:true,attributeFilter:['hidden']});
+})();
+</script></body></html>
