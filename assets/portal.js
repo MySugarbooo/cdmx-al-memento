@@ -5,7 +5,16 @@
  const KEY_BOROUGH='cdmx.memento.alcaldia.v1',KEY_FAV='cdmx.memento.favoritos.v1';
  const BOROUGHS=["Álvaro Obregón","Azcapotzalco","Benito Juárez","Coyoacán","Cuajimalpa de Morelos","Cuauhtémoc","Gustavo A. Madero","Iztacalco","Iztapalapa","La Magdalena Contreras","Miguel Hidalgo","Milpa Alta","Tláhuac","Tlalpan","Venustiano Carranza","Xochimilco"];
  const $=id=>document.getElementById(id);
- const validArticle=a=>a&&typeof a.title==='string'&&typeof a.url==='string'&&/^https:\/\/news\.google\.com\//.test(a.url);
+ const trustedURL=(raw,verified=false)=>{
+  try{
+   const u=new URL(raw);
+   return u.protocol==='https:'&&!u.username&&!u.password&&(
+    u.hostname==='news.google.com'||
+    (verified===true&&['comova.mx','mayacomunicacion.com.mx','www.elgrafico.mx'].includes(u.hostname)&&u.pathname!=='/')
+   );
+  }catch{return false}
+ };
+ const validArticle=a=>a&&typeof a.title==='string'&&trustedURL(a.url,a.editorial_verified);
  const cleanBorough=name=>BOROUGHS.includes(name)?name:'';
  const stored=(key)=>{try{return localStorage.getItem(key)}catch{return null}};
  const save=(key,value)=>{try{localStorage.setItem(key,value);return true}catch{return false}};
@@ -15,7 +24,7 @@
   if(!Number.isFinite(d.getTime()))return 'Fecha no indicada';
   return new Intl.DateTimeFormat('es-MX',{timeZone:'America/Mexico_City',dateStyle:'medium'}).format(d);
  };
- const safeURL=u=>typeof u==='string'&&/^https:\/\/news\.google\.com\//.test(u)?u:'';
+ const safeURL=u=>trustedURL(u,true)?u:'';
  let feed=null;
  const feedPromise=fetch('/news.json?t='+Date.now(),{cache:'no-store'}).then(r=>{
   if(!r.ok)throw Error('No se pudieron obtener los titulares');
