@@ -28,10 +28,14 @@
   const d=new Date(x.published_at||'');
   return Number.isFinite(d.getTime())?dateFormat.format(d):x.date||'Fecha sin confirmar';
  }
- function safeExternal(url){
-  try{const u=new URL(url);return u.protocol==='https:'&&
-   (u.hostname==='news.google.com'||u.hostname==='commons.wikimedia.org');}
-  catch{return false;}
+ function safeExternal(url,verified=false){
+  try{
+   const u=new URL(url);
+   return u.protocol==='https:'&&!u.username&&!u.password&&(
+    u.hostname==='news.google.com'||u.hostname==='commons.wikimedia.org'||
+    (verified===true&&['comova.mx','mayacomunicacion.com.mx','www.elgrafico.mx'].includes(u.hostname)&&u.pathname!=='/')
+   );
+  }catch{return false;}
  }
  function representativePhoto(x){
   // La imagen elegida por título y lugar en el RSS tiene prioridad.
@@ -115,7 +119,7 @@
   section.append(data);
   section.append(elem('p','local-verification-method',article.brief?.method||
    'Síntesis preparada a partir del título y metadatos disponibles.'));
-  if(safeExternal(article.url)){
+  if(safeExternal(article.url,article.editorial_verified===true)){
    const source=elem('a','local-verification-source','Consultar la fuente original');
    source.href=article.url;source.target='_blank';source.rel='noopener noreferrer nofollow';
    section.append(source);
@@ -131,7 +135,7 @@
    topSource.replaceChildren();
    topSource.hidden=false;
    topSource.append(document.createTextNode('Información de '+(article.source||'medio identificado')+' · '));
-   if(safeExternal(article.url)){
+   if(safeExternal(article.url,article.editorial_verified===true)){
     const link=elem('a','source-action','Ver fuente original ↗');
     link.href=article.url;link.target='_blank';link.rel='noopener noreferrer nofollow';
     topSource.append(link);
@@ -172,7 +176,7 @@
   quick.append(points);body.append(quick);
   const original=elem('section','local-story-sources');
   original.append(elem('h2','','Fuente original'));
-  if(safeExternal(article.url)){
+  if(safeExternal(article.url,article.editorial_verified===true)){
    const link=elem('a','local-source-link','Leer publicación de '+(article.source||'medio de origen')+' ↗');
    link.href=article.url;link.target='_blank';link.rel='noopener noreferrer nofollow';original.append(link);
   }else original.append(elem('p','','Enlace directo no disponible; consulta el medio identificado en la ficha de verificación.'));
