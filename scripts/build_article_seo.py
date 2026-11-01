@@ -65,18 +65,18 @@ def render(item, ident):
     original = item.get("url") or ""
     source_link = ""
     if urlparse(original).scheme == "https" and urlparse(original).hostname in ("news.google.com", "commons.wikimedia.org"):
-        source_link = '<p><a href="' + esc(original) + '" rel="nofollow noopener noreferrer">Consultar fuente original</a></p>'
+        source_link = '<p class="source-top"><span>Fuente: ' + source + '</span> <a class="source-action" href="' + esc(original) + '" target="_blank" rel="nofollow noopener noreferrer">Ver fuente original ↗</a></p>'
     structured = json.dumps({"@context":"https://schema.org","@type":"NewsArticle","headline":item["title"],"datePublished":item.get("published_at") or item.get("date"),"author":{"@type":"Organization","name":"CDMX AL MEMENTO"},"publisher":{"@type":"Organization","name":"CDMX AL MEMENTO"},"mainEntityOfPage":url},ensure_ascii=False).replace("<","\\u003c")
     return f"""<!doctype html><html lang="es-MX"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{title} | CDMX AL MEMENTO</title><meta name="description" content="{esc(brief.get('lead') or item.get('description') or '')[:155]}">
 <link rel="canonical" href="{url}"><meta property="og:type" content="article"><meta property="og:title" content="{title}">
 <meta property="og:description" content="{lead[:155]}"><meta property="og:url" content="{url}">
-<link rel="stylesheet" href="/styles.css"><script type="application/ld+json">{structured}</script></head>
+<link rel="stylesheet" href="/styles.css"><style>.source-top{{display:flex;flex-wrap:wrap;align-items:center;gap:.65rem;padding:1rem;border-left:4px solid #de3186;background:rgba(222,49,134,.08);border-radius:12px}}.source-action{{display:inline-block;padding:.65rem 1rem;background:#ca2378;color:white!important;border-radius:999px;font-weight:700;text-decoration:none}}.article-photo img{{border-radius:14px}}.byline{{font-weight:700;color:#bc2778}}</style><script type="application/ld+json">{structured}</script></head>
 <body><header><div class="wrap"><a href="/">CDMX AL MEMENTO</a> · <a href="/noticias/">Noticias</a></div></header>
-<main class="wrap" id="contenido"><article><p>CDMX · {date} · Fuente: {source}</p><h1>{title}</h1>
-{photo_html}<p>{lead}</p><h2>Por qué importa</h2><p>{context}</p><h2>Qué falta por confirmar</h2><p>{pending}</p>
+<main class="wrap" id="contenido"><article>{source_link}<p>CDMX · {date} · Fuente: {source}</p><h1>{title}</h1><p class="byline">Resumen y redacción: Amau Kisumi · CDMX AL MEMENTO</p>
+{photo_html}<h2>Qué ocurrió y qué se sabe</h2><p>{lead}</p><h2>Por qué importa</h2><p>{context}</p><h2>Qué falta por confirmar</h2><p>{pending}</p>
 <h2>Fuentes y método</h2><p>{method}</p><p>Esta síntesis no equivale a una verificación independiente de los hechos.</p>
-{source_link}<p><a href="{esc(item['local_url'])}">Ver noticia y comentarios en el periódico</a></p></article></main>
+<p><a href="{esc(item['local_url'])}">Ver noticia y comentarios en el periódico</a></p></article></main>
 <footer><div class="wrap"><a href="/">Portada</a> · <a href="/politica-editorial.html">Política editorial</a></div></footer></body></html>"""
 
 def main():
