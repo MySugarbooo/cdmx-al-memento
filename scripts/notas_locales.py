@@ -498,6 +498,11 @@ def assign_photos(items):
             a["photo"]=exact
             exact_count+=1
             continue
+        # Los siniestros cotejados no deben ilustrarse con otra emergencia histórica.
+        # Sin foto del hecho autenticada, el sitio utiliza su ilustración neutral.
+        if a.get("editorial_verified") is True and a.get("sensitive_media") is True:
+            a.pop("photo", None)
+            continue
         # La imagen antigua no tiene preferencia sobre otra que represente mejor el tema.
         a.pop("photo",None)
         available=[p for p in pool if p.get("id") not in reserved]
