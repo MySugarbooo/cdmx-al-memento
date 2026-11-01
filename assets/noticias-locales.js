@@ -128,7 +128,7 @@
   title.textContent=article.title;
   const topSource=$('local-source-top');
   if(topSource){
-   const existing=topSource.querySelector('a');if(existing)existing.remove();
+   topSource.replaceChildren();
    topSource.hidden=false;
    topSource.append(document.createTextNode('Información de '+(article.source||'medio identificado')+' · '));
    if(safeExternal(article.url)){
