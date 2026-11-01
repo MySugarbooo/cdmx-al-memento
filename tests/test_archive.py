@@ -29,6 +29,10 @@ class BoroughAndArchiveTests(unittest.TestCase):
     def test_unambiguous_outside_region_is_not_promoted_or_mislocated(self):
         title = "Muere conductor tras chocar contra autobús en Carretera a Laredo en Escobedo"
         self.assertTrue(news.outside_cdmx_scope(title))
+        spain = "México confirma once connacionales heridos en el accidente de tren en España"
+        self.assertTrue(news.outside_cdmx_scope(spain))
+        self.assertEqual(news.identify_location(spain)[1], "España (fuera de CDMX)")
+        self.assertFalse(news.outside_cdmx_scope("Exposición sobre trenes de España en CDMX"))
         self.assertFalse(news.outside_cdmx_scope("Familias acuden a panteones de CdMx y Monterrey"))
         self.assertFalse(news.outside_cdmx_scope("Cierre vial en la alcaldía Xochimilco"))
         self.assertFalse(news.outside_cdmx_scope("CDMX y Escobedo: carreteras a Laredo en discusión"))

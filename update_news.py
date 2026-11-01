@@ -103,18 +103,29 @@ def fold(value):
     return re.sub(r"[^a-z0-9]+", " ", value).strip()
 
 
-def outside_cdmx_scope(title):
-    """Detecta solo una ubicación externa inequívoca, sin inferirla del RSS."""
+def outside_cdmx_location(title):
+    """Identifica solo hechos con lugar externo inequívoco en el titular."""
     words = " " + fold(title) + " "
-    # Una noticia que mencione explícitamente CDMX podría tratar ambas regiones.
+    # Mantener titulares que mencionen CDMX junto a otras regiones.
     if any(" " + name + " " in words for name in ("cdmx", "ciudad de mexico")):
-        return False
-    return " carretera a laredo " in words and " escobedo " in words
+        return ""
+    if " carretera a laredo " in words and " escobedo " in words:
+        return "Escobedo, Nuevo León"
+    # Un accidente ocurrido en España no es una incidencia vial de CDMX,
+    # aunque el medio mencione a personas mexicanas afectadas.
+    if re.search(r"\b(?:accidente|choque|descarrilamiento)\b.{0,90}\ben espana\b", words):
+        return "España"
+    return ""
+
+
+def outside_cdmx_scope(title):
+    return bool(outside_cdmx_location(title))
 
 
 def identify_location(title):
-    if outside_cdmx_scope(title):
-        return "", "Escobedo, Nuevo León (fuera de CDMX)"
+    external = outside_cdmx_location(title)
+    if external:
+        return "", external + " (fuera de CDMX)"
     words = " " + fold(title) + " "
     found = []
     for borough, aliases in ALIASES.items():
