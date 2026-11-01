@@ -26,6 +26,22 @@ class BoroughAndArchiveTests(unittest.TestCase):
         self.assertEqual(news.identify_location("En Coyoacán y Tlalpan")[0], "")
         self.assertEqual(news.identify_location("Los planes del Metro CDMX")[0], "")
 
+    def test_road_closures_are_mobility_and_reject_patrol_photos(self):
+        article = fake("GP de México 2026: Calles Cerradas y Alternativas Viales en CDMX", "2026-11-01")
+        article["category"] = "Seguridad"  # Clasificación de origen RSS.
+        article["photo"] = {
+            "id": "patrullas", "kind": "representativa",
+            "category": "Seguridad", "topic": "Nuevas patrullas para Cuajimalpa",
+            "url": "/assets/fotos/patrullas.jpg",
+        }
+        fixed = news.standardize(article)
+        self.assertEqual(fixed["category"], "Movilidad")
+        self.assertLess(news._photo_score(fixed, fixed["photo"]), 0)
+        self.assertEqual(news.category_by_headline(
+            "Cierre vial en Xochimilco", "Seguridad"), "Movilidad")
+        self.assertEqual(news.category_by_headline(
+            "Detienen a dos tras cierre vial por balacera", "Seguridad"), "Seguridad")
+
     def test_unambiguous_outside_region_is_not_promoted_or_mislocated(self):
         title = "Muere conductor tras chocar contra autobús en Carretera a Laredo en Escobedo"
         self.assertTrue(news.outside_cdmx_scope(title))
