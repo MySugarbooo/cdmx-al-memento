@@ -37,6 +37,14 @@ class BoroughAndArchiveTests(unittest.TestCase):
         fixed = news.standardize(article)
         self.assertEqual(fixed["category"], "Movilidad")
         self.assertLess(news._photo_score(fixed, fixed["photo"]), 0)
+        self.assertLess(news._photo_score(fixed, {
+            "id": "ecobici", "kind": "representativa",
+            "category": "Movilidad", "topic": "Ecobici Estación 15",
+        }), 0)
+        self.assertGreaterEqual(news._photo_score(fixed, {
+            "id": "avenida", "kind": "representativa",
+            "category": "Movilidad", "topic": "Tráfico vehicular en avenida Reforma",
+        }), 0)
         self.assertEqual(news.category_by_headline(
             "Cierre vial en Xochimilco", "Seguridad"), "Movilidad")
         self.assertEqual(news.category_by_headline(
