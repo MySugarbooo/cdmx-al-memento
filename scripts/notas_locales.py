@@ -452,13 +452,13 @@ def _photo_score(article, photo):
     if re.search(r"\b(?:muevete en bici|paseo dominical|bicicletas?|ciclistas?|ciclismo|ciclovias?|ecobici|cicloton)\b", headline):
         if not re.search(r"\b(?:bici|bicicletas?|ciclistas?|ciclovias?|ecobici|cicloton)\b", context):
             return -10000
-    # Un Gran Premio o GP requiere contexto de calles, tránsito o automovilismo.
-    # Una estación de bicicletas no representa adecuadamente ese acontecimiento.
+    # Un Gran Premio o GP requiere contexto real en el tema de la foto,
+    # no basta una palabra genérica en las etiquetas de la imagen.
     if re.search(r"\b(?:gp de mexico|gran premio|formula 1|autodromo)\b", headline):
         if not re.search(
             r"\b(?:formula 1|gran premio|autodromo|circuito|carrera|autos?|"
             r"automoviles?|vehiculos?|vialidad|trafico|avenida|calles?|"
-            r"calzada|reforma|insurgentes|periferico)\b", context
+            r"calzada|reforma|insurgentes|periferico)\b", topic
         ):
             return -10000
     # Un rescate patrimonial de una fuente no se ilustra con rescates de viviendas.
@@ -467,10 +467,11 @@ def _photo_score(article, photo):
             and re.search(r"\b(?:rescate|restauracion|rehabilitacion|premia|premio)\b", headline)):
         if not re.search(r"\b(?:fuentes?|esculturas?|monumentos?|patrimonio|plazas?|jardines?)\b", topic):
             return -10000
-    # Rodadas y corralones de motos requieren imágenes de motocicletas,
+    # La Rodada del Terror y los corralones de motos requieren imágenes de motocicletas,
     # no una foto genérica de Protección Civil.
-    if (re.search(r"\b(?:rodada|corralon)\b", headline)
-            and re.search(r"\b(?:motos?|motocicletas?|motociclistas?)\b", headline)):
+    if (re.search(r"\brodada del terror\b", headline)
+            or (re.search(r"\bcorralon\b", headline)
+                and re.search(r"\b(?:motos?|motocicletas?|motociclistas?)\b", headline))):
         if not re.search(r"\b(?:motos?|motocicletas?|motociclistas?|rodada)\b", context):
             return -10000
     # Un incidente en pista de Fórmula 1 no es un incidente del Metrobús.
