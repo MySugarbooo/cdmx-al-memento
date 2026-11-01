@@ -1,7 +1,40 @@
 {
   "month": "2026-11",
-  "updated": "2026-11-01 08:10 UTC",
+  "updated": "2026-11-01 08:58 UTC",
   "articles": [
+    {
+      "title": "Drones se integran a operativos de seguridad en eventos masivos",
+      "description": "La información publicada por Sociedad Noticias trata un asunto registrado en la sección de Seguridad del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOMVNXMUlwX0EwX0h3U1pWRmx0MGh5dF9OUlpLdnp4OHlHbVpEWXJxNkxxLWUxanZ6NTV6TkFnc1Z2Y0VUMFJoSEVGTmFaZHZFRno5ejlXTWdDQmd2VkZPMkY3d1FqeUxTWXp0UENlOFF0aG9JUEdpRUZPbjFfZkd4T2tQR0o2VWtqNV9Ia2VzRU5rdDVndUl4c1FMMGd5SmctTGFLYTRXanU?oc=5",
+      "source": "Sociedad Noticias",
+      "date": "2026-11-01",
+      "published_at": "2026-11-01T08:30:00Z",
+      "category": "Seguridad",
+      "borough": "",
+      "location": "Ubicación no indicada por el titular",
+      "local_url": "/noticias/?id=4bebaaaa2a4f356df224&mes=2026-11",
+      "brief": {
+        "lead": "La información publicada por Sociedad Noticias trata un asunto registrado en la sección de Seguridad del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+        "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+        "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "archivo_seguridad_003",
+        "kind": "representativa",
+        "url": "/assets/fotos/archivo_seguridad_003.jpg",
+        "category": "Seguridad",
+        "borough": "",
+        "topic": "Adquisición patrullas para la Policía 02",
+        "keywords": [
+          "Seguridad"
+        ],
+        "author": "Gobierno de la Ciudad de México",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Adquisici%C3%B3n_patrullas_para_la_Polic%C3%ADa_02.jpg"
+      }
+    },
     {
       "title": "Clima en Ciudad de México hoy: el pronóstico para el domingo 1 de noviembre de 2026",
       "description": "El pronóstico recogido por El Informador se refiere a condiciones meteorológicas en la capital. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
