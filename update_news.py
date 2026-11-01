@@ -188,7 +188,7 @@ def standardize(article):
         "location": location,
     }
     result["local_url"] = local_link(result)
-    result["brief"] = article.get("brief") if isinstance(article.get("brief"), dict) else summarize(result)
+    result["brief"] = summarize(result)  # Actualizar también las fichas archivadas al cambiar reglas editoriales.
     if isinstance(article.get("photo"), dict):
         result["photo"] = article["photo"]
     result["description"] = result["brief"]["lead"]
