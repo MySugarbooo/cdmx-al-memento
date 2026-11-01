@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-01 11:10 UTC",
+  "updated": "2026-11-01 11:13 UTC",
   "boroughs": [
     {
       "name": "La Magdalena Contreras",
@@ -8165,8 +8165,38 @@
     },
     {
       "name": "Milpa Alta",
-      "count": 57,
+      "count": 58,
       "articles": [
+        {
+          "title": "Milpa Alta, frontera del boom inmobiliario",
+          "description": "De acuerdo con El Sol de México, el titular publicado es: «Milpa Alta, frontera del boom inmobiliario». La información publicada por El Sol de México trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQZFpCWm9haEJkTC04OHJpNjRGZzMxclhEb2JiTkp3UThoUVI3Ui1za1ZrZnpoUHNqS0F1dG9uNzNCcnpvTUdKQXpfTzNZSXhzQTlGRWJkclRCQXhLLU4xblJXVy1mTlJlX1U3ZHdhc1ZPWEFLc0VNUXFrOW1YcUlFaG1PTXBxVFhvdWd0cXZMcGstaG9PaEZjYQ?oc=5",
+          "source": "El Sol de México",
+          "date": "2026-11-01",
+          "published_at": "2026-11-01T11:07:14Z",
+          "category": "CDMX",
+          "borough": "Milpa Alta",
+          "location": "Milpa Alta (mencionada en el titular)",
+          "local_url": "/noticias/?id=977c5bf980eb291d372d&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con El Sol de México, el titular publicado es: «Milpa Alta, frontera del boom inmobiliario». La información publicada por El Sol de México trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_milpa-alta",
+            "kind": "representativa",
+            "url": "/assets/alcaldias/milpa-alta.jpg",
+            "category": "CDMX",
+            "borough": "Milpa Alta",
+            "topic": "Villa Milpa Alta y su entorno rural",
+            "author": "Comisión Mexicana de Filmaciones from México D. F., México",
+            "license": "CC BY-SA 2.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Villa_Milpa_Alta%2C_Ciudad_de_M%C3%A9xico_%2832886264042%29.jpg"
+          }
+        },
         {
           "title": "Clima en Milpa Alta: domingo 1 de noviembre con nubes dispersas y ambiente templado",
           "description": "De acuerdo con El Heraldo de México, el titular publicado es: «Clima en Milpa Alta: domingo 1 de noviembre con nubes dispersas y ambiente templado». El pronóstico recogido por El Heraldo de México se refiere a condiciones meteorológicas en Milpa Alta. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
@@ -8886,39 +8916,6 @@
             "license": "CC0",
             "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
             "source": "https://commons.wikimedia.org/wiki/File:Milpa_Alta_-_Stock_IMG_1784_(24888451713).jpg"
-          }
-        },
-        {
-          "title": "Incendio en Milpa Alta: Así se Ve Desde el Aire la Bodega Consumida por las Llamas",
-          "description": "De acuerdo con N+, el titular publicado es: «Incendio en Milpa Alta: Así se Ve Desde el Aire la Bodega Consumida por las Llamas». La información publicada por N+ trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPeFEteW5sTTIxVkIyUHJZTHlYRXZGdjR2bDMtQ3lTcDQtUHhjQlA0bmNzdkFnWnVpazJkOUNBWG94X042SHkwTmJCNGd3Z0N6Q1ptemYzcnV2LW00M1VkbGk4cEtwYzFaU2ZVWWxJU0FVckZ4eERHSFJBZHhGMkpOMjloWEhGY3ZoMExHeFgyclJDbE9WdEc3SWZKUlV1NUlDNnlJQmVnaWE2OW5UejdBSlBR?oc=5",
-          "source": "N+",
-          "date": "2026-10-19",
-          "published_at": "2026-10-19T18:59:11Z",
-          "category": "CDMX",
-          "borough": "Milpa Alta",
-          "location": "Milpa Alta (mencionada en el titular)",
-          "local_url": "/noticias/?id=de32392655e59e3a7cd4&mes=2026-10",
-          "brief": {
-            "lead": "De acuerdo con N+, el titular publicado es: «Incendio en Milpa Alta: Así se Ve Desde el Aire la Bodega Consumida por las Llamas». La información publicada por N+ trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "commons_75454539",
-            "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Milpa_Alta_-_Stock_IMG_1815_%2825396669672%29.jpg/960px-Milpa_Alta_-_Stock_IMG_1815_%2825396669672%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "category": "Alcaldías",
-            "borough": "",
-            "topic": "Milpa Alta - Stock IMG 1815 (25396669672)",
-            "keywords": [
-              "Milpa Alta CDMX"
-            ],
-            "author": "Gobierno CDMX",
-            "license": "CC0",
-            "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
-            "source": "https://commons.wikimedia.org/wiki/File:Milpa_Alta_-_Stock_IMG_1815_(25396669672).jpg"
           }
         }
       ]
