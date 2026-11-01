@@ -73,5 +73,52 @@ class BoroughAndArchiveTests(unittest.TestCase):
                 self.assertEqual(len(directory["boroughs"]), 16)
 
 
+    def test_archive_repairs_unrelated_photo_and_preserves_verified_photo(self):
+        now = datetime.now(timezone.utc)
+        date = (now - timedelta(days=1)).date().isoformat()
+        old = news.standardize(fake("Muévete en Bici recorre seis alcaldías", date))
+        old["category"] = "Seguridad"  # Etiqueta RSS anterior, corregida al releer.
+        old["photo"] = {
+            "id": "patrullas", "kind": "representativa",
+            "category": "Seguridad", "topic": "Entrega de patrullas",
+            "url": "/assets/fotos/patrullas.jpg",
+        }
+        verified = news.standardize(fake("Ciclistas recorren avenida de CDMX", date))
+        verified["photo"] = {
+            "id": "hecho_confirmado", "kind": "hecho", "verified": True,
+            "category": "Movilidad", "topic": "Ciclistas en la avenida",
+            "url": "/assets/fotos/hecho_confirmado.jpg",
+        }
+
+        def assign_replacement(items):
+            self.assertEqual(len(items), 1)
+            self.assertEqual(items[0]["category"], "Movilidad")
+            items[0]["photo"] = {
+                "id": "bicicletas", "kind": "representativa",
+                "category": "Movilidad", "topic": "Estación de bicicletas",
+                "url": "/assets/fotos/bicicletas.jpg",
+            }
+            return {"assigned": 1}
+
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            archive = root / "archivo"
+            archive.mkdir()
+            news.write_json(archive / (date[:7] + ".json"), {
+                "month": date[:7], "articles": [old, verified],
+            })
+            with patch.multiple(news, ARCHIVE_DIR=archive,
+                                BOROUGH_DIR=root / "alcaldias",
+                                DEST=root / "news.json"):
+                with patch.object(news, "assign_photos", side_effect=assign_replacement) as replacement:
+                    news.consolidate_archive([], now - timedelta(days=365), "Prueba")
+                    replacement.assert_called_once()
+            saved = json.loads((archive / (date[:7] + ".json")).read_text(encoding="utf-8"))
+            self.assertEqual(len(saved["articles"]), 2)
+            by_title = {item["title"]: item for item in saved["articles"]}
+            self.assertEqual(by_title[old["title"]]["photo"]["id"], "bicicletas")
+            self.assertEqual(by_title[verified["title"]]["photo"]["id"], "hecho_confirmado")
+
+
 if __name__ == "__main__":
     unittest.main()
