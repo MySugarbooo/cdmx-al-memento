@@ -23,6 +23,11 @@ class ArticleSeoWorkflowTests(unittest.TestCase):
         self.assertIn("cron: '23 */3 * * *'", self.workflow)
         self.assertIn("'.github/workflows/article-seo.yml'", self.workflow)
 
+    def test_only_main_can_publish_generated_pages(self):
+        push_trigger = self.workflow.split('  push:\n', 1)[1].split('permissions:\n', 1)[0]
+        self.assertIn('branches: [main]', push_trigger)
+        self.assertIn("github.ref == 'refs/heads/main'", self.workflow)
+
 
 if __name__ == "__main__":
     unittest.main()
