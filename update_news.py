@@ -198,7 +198,7 @@ def category_by_headline(title, feed_category):
         return "Movilidad"
     # Los cierres y rutas alternas son movilidad, no operativos policiales.
     # Evitar imágenes de patrullas cuando un feed de Seguridad incluye tráfico.
-    if (re.search(r"\b(?:calles cerradas|cierres? viales?|alternativas? viales?|rutas? alternas?|desvios? viales?)\b", normalized)
+    if (re.search(r"\b(?:calles cerradas|cierres? vial(?:es)?|alternativas? vial(?:es)?|rutas? alternas?|desvios? vial(?:es)?)\b", normalized)
             and not re.search(r"\b(?:balacera|homicidio|asalto|delito|detenidos?|detienen|persecucion policial)\b", normalized)):
         return "Movilidad"
     # Distinguir siniestros viales de delitos, aunque provengan de otro feed RSS.
