@@ -110,7 +110,16 @@ def _reported_angle(article):
         return (f"El pronóstico recogido por {source} se refiere a {conditions}{zone}. "
                 "Se trata de una previsión, no de una constatación de lluvia en cada calle. "
                 "Las condiciones pueden variar según la hora y la colonia.")
-    if "gentrific" in t or "airbnb" in t or "rentas" in t or "vivienda" in t:
+    if "expropi" in t and ("predio" in t or "vivienda" in t):
+        return (f"Según {source}, el titular informa sobre una expropiación o su anuncio "
+                f"relacionado con predios destinados a vivienda pública{zone}. "
+                "La ubicación, situación jurídica y alcance de la medida deben "
+                "comprobarse en documentos oficiales; el anuncio no prueba su ejecución.")
+    if "vivienda pública" in t or "vivienda social" in t:
+        return (f"El medio {source} informa sobre una iniciativa o medida relacionada "
+                f"con vivienda pública{zone}. Su alcance, condiciones y estado "
+                "de aprobación requieren consultar la publicación completa y fuentes oficiales.")
+    if "gentrific" in t or "airbnb" in t or "rentas" in t:
         return (f"El reportaje citado por {source} aborda los precios de vivienda o "
                 f"los cambios residenciales{zone}. Las cifras y su metodología "
                 "deben examinarse antes de concluir cuántas familias han sido desplazadas "
@@ -157,7 +166,12 @@ def _reported_angle(article):
                 f"detención o una presunta conducta delictiva{zone}. "
                 "Es indispensable respetar la presunción de inocencia y no añadir "
                 "acusaciones ni datos personales que el titular no acredita.")
-    if "empleo" in t or "pérdida de empleos" in t:
+    if ("centro" in t and ("evaluación laboral" in t or "evaluacion laboral" in t)) or ("inaugur" in t and "laboral" in t):
+        return (f"De acuerdo con {source}, el titular informa de la inauguración "
+                f"de un centro o servicio relacionado con evaluación laboral{zone}. "
+                "Los servicios disponibles, requisitos y horarios requieren "
+                "confirmación en la fuente y ante la institución responsable.")
+    if "pérdida de empleos" in t or "perdida de empleos" in t:
         return (f"El medio {source} aborda una posible pérdida de empleos en "
                 "la capital mediante una comparación con otra entidad. "
                 "Los datos, el periodo y la metodología deben verificarse "
