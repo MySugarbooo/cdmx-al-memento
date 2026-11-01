@@ -86,6 +86,7 @@
   card.append(text);return card;
  }
  function renderList(items){
+  const topSource=$('local-source-top');if(topSource){topSource.hidden=true;topSource.replaceChildren();}
   title.textContent='Noticias de CDMX: elige una lectura';
   breadcrumb.textContent='Titulares locales';
   meta.textContent='Todos los resúmenes se pueden leer sin salir del sitio.';
@@ -125,6 +126,17 @@
  function renderArticle(article,items,updated){
   activeArticle={article,items,updated};
   title.textContent=article.title;
+  const topSource=$('local-source-top');
+  if(topSource){
+   const existing=topSource.querySelector('a');if(existing)existing.remove();
+   topSource.hidden=false;
+   topSource.append(document.createTextNode('Información de '+(article.source||'medio identificado')+' · '));
+   if(safeExternal(article.url)){
+    const link=elem('a','source-action','Ver fuente original ↗');
+    link.href=article.url;link.target='_blank';link.rel='noopener noreferrer nofollow';
+    topSource.append(link);
+   }else topSource.append(document.createTextNode('Enlace original no disponible'));
+  }
   breadcrumb.textContent=article.category||'Noticia local';
   document.title=article.title.slice(0,65)+' | CDMX AL MEMENTO';
   // Metadatos específicos de cada noticia, sin modificar el diseño visible.
@@ -144,17 +156,19 @@
   body.replaceChildren();
   // Resumen primero; contexto y pendientes solo cuando hay datos atribuibles.
   const summary=elem('section','local-story-summary');
-  summary.append(elem('h2','','Resumen de la noticia'));
+  summary.append(elem('p','reading-label','LECTURA BREVE · REDACCIÓN: AMAU KISUMI'));
+  summary.append(elem('h2','','Qué ocurrió y qué se sabe'));
   summary.append(elem('p','',article.brief?.lead||'La fuente citada informa sobre el asunto del titular. No se dispone de datos suficientes para ampliar los hechos.'));
-  if(article.brief?.context)summary.append(elem('p','',article.brief.context));
-  if(article.brief?.pending)summary.append(elem('p','',article.brief.pending));
+  if(article.brief?.context){summary.append(elem('h3','','Por qué importa'));summary.append(elem('p','',article.brief.context));}
+  if(article.brief?.pending){summary.append(elem('h3','','Qué falta confirmar'));summary.append(elem('p','',article.brief.pending));}
   body.append(summary);
   const quick=elem('aside','local-story-highlights');
   quick.append(elem('h2','','Lo más importante'));
   const points=elem('ul');
-  points.append(elem('li','','Tema: '+article.title));
+  points.append(elem('li','','El titular reportado: '+article.title));
   points.append(elem('li','','Medio que lo reporta: '+(article.source||'Sin identificar')+'.'));
   points.append(elem('li','',article.borough?'Alcaldía mencionada: '+article.borough+' (sin ubicación independiente confirmada).':'Lugar exacto no confirmado en los datos disponibles.'));
+  points.append(elem('li','','Fecha del medio: '+publication(article)+'.'));
   quick.append(points);body.append(quick);
   const original=elem('section','local-story-sources');
   original.append(elem('h2','','Fuente original'));
@@ -202,7 +216,10 @@
   }else if(figure)figure.hidden=true;
   more?.replaceChildren();
   if(cardWrap)cardWrap.hidden=false;
-  for(const other of items.filter(x=>validArticle(x)&&x.local_url!==article.local_url).slice(0,4)){
+  const related=items.filter(x=>validArticle(x)&&x.local_url!==article.local_url);
+  const sameTopic=related.filter(x=>x.category===article.category);
+  const recommended=[...sameTopic,...related.filter(x=>x.category!==article.category)].slice(0,6);
+  for(const other of recommended){
    more?.append(storyCard(other));
   }
  }
