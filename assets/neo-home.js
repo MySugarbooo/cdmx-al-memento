@@ -118,6 +118,15 @@ function initStatic(){
    e.currentTarget.textContent=on?'☀':'☾';e.currentTarget.setAttribute('aria-pressed',String(on));
  });
 }
+function editorialDaypart(){
+ const hour=Number(new Intl.DateTimeFormat('en-GB',{timeZone:'America/Mexico_City',hour:'2-digit',hourCycle:'h23'}).format(new Date()));
+ const title=shell.querySelector('#neo-latest-title');
+ if(title)title.textContent=hour<12?'▣ Noticias de la mañana':hour<19?'▣ Noticias de la tarde':'▣ Resumen de la noche';
+ const kicker=shell.querySelector('.neo-kicker');
+ if(kicker)kicker.textContent=hour<12?'PORTADA DE LA MAÑANA':hour<19?'PORTADA DE LA TARDE':'PORTADA NOCTURNA';
+}
+editorialDaypart();
+setInterval(editorialDaypart,60000);
 function renderHero(){
  const a=state.stories[state.current];if(!a)return;
  const img=shell.querySelector('#neo-hero-img');img.fetchPriority='high';const heroPhoto=photoInfo(a);
