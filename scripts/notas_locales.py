@@ -192,7 +192,10 @@ def summarize(article):
     source=str(article.get("source") or "un medio periodístico").strip()
     category=str(article.get("category") or "CDMX")
     theme=TAGS.get(category,TAGS["CDMX"])
-    first=_reported_angle(article)
+    # Encabezar con el dato específico y comprobable del RSS, no con una
+    # explicación genérica que pueda corresponder a otra noticia.
+    first=(f"De acuerdo con {source}, el titular publicado es: «{title}». "
+           + _reported_angle(article))
     context=theme["importance"]
     pending=theme["verify"]+" El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar."
     return {"lead":first,"context":context,"pending":pending,
