@@ -461,6 +461,23 @@ def _photo_score(article, photo):
             r"calzada|reforma|insurgentes|periferico)\b", context
         ):
             return -10000
+    # Un rescate patrimonial de una fuente no se ilustra con rescates de viviendas.
+    # Coincidir en el verbo "rescate" y en la alcaldía no basta.
+    if (re.search(r"\bfuente [a-z]", headline)
+            and re.search(r"\b(?:rescate|restauracion|rehabilitacion|premia|premio)\b", headline)):
+        if not re.search(r"\b(?:fuentes?|esculturas?|monumentos?|patrimonio|plazas?|jardines?)\b", topic):
+            return -10000
+    # Rodadas y corralones de motos requieren imágenes de motocicletas,
+    # no una foto genérica de Protección Civil.
+    if (re.search(r"\b(?:rodada|corralon)\b", headline)
+            and re.search(r"\b(?:motos?|motocicletas?|motociclistas?)\b", headline)):
+        if not re.search(r"\b(?:motos?|motocicletas?|motociclistas?|rodada)\b", context):
+            return -10000
+    # Un incidente en pista de Fórmula 1 no es un incidente del Metrobús.
+    if (re.search(r"\b(?:bottas|verstappen|hamilton|formula 1|f1)\b", headline)
+            and re.search(r"\b(?:accidente|bandera roja|choque)\b", headline)):
+        if not re.search(r"\b(?:formula 1|f1|autodromo|circuito|carrera|monoplaza|piloto|automovilismo)\b", topic):
+            return -10000
     # Una línea distinta del Metro es peor que una foto genérica del Metro.
     if category=="Metro":
         wanted=re.search(r"\blinea ([0-9]{1,2}|a|b)\b",headline)
