@@ -158,6 +158,18 @@ def published_datetime(value):
         return None
 
 
+def category_by_headline(title, feed_category):
+    """Corrige etiquetas RSS evidentes sin inventar ubicaciones o hechos."""
+    normalized = fold(title)
+    if re.search(r"\b(?:muevete en bici|paseo dominical|bicicletas?|ciclistas?|ciclismo|ciclovias?|ecobici|cicloton)\b", normalized):
+        return "Movilidad"
+    if (feed_category == "Seguridad"
+            and re.search(r"\b(?:robot|robots|robotica|robotico|roboticos)\b", normalized)
+            and not re.search(r"\b(?:policias?|patrullas?|fiscalia|delito|detenidos?)\b", normalized)):
+        return "CDMX"
+    return feed_category
+
+
 def standardize(article):
     """Relee noticias antiguas sin inventar la hora que no venía en el RSS."""
     if not isinstance(article, dict):
@@ -177,6 +189,7 @@ def standardize(article):
         return None
     borough, location = identify_location(title)
     category = article.get("category") if article.get("category") in GENERAL_FEEDS else "CDMX"
+    category = category_by_headline(title, category)
     result = {
         "title": title,
         "description": "",
