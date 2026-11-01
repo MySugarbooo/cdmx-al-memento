@@ -79,6 +79,24 @@ class BoroughAndArchiveTests(unittest.TestCase):
         self.assertGreaterEqual(news._photo_score(racing, {
             "category": "Movilidad", "topic": "Autódromo Hermanos Rodríguez, circuito de carreras",
         }), 0)
+        # Etiquetas genéricas como "Calles Ciudad de México" no vuelven
+        # pertinente una foto de carnavales para un operativo del GP.
+        gp_security = {"title": "GP de México: detienen a 30 y detectan acreditaciones falsas",
+                       "category": "Seguridad"}
+        self.assertLess(news._photo_score(gp_security, {
+            "category": "CDMX", "topic": "Declaratoria de carnavales como patrimonio cultural",
+            "keywords": ["Calles Ciudad de México"],
+        }), 0)
+        self.assertGreaterEqual(news._photo_score(gp_security, {
+            "category": "CDMX", "topic": "Autódromo Hermanos Rodríguez",
+        }), 0)
+        # También cubre titulares de la Rodada del Terror que dicen
+        # "vehículos" en lugar de "motos".
+        rodada = {"title": "Remiten 515 vehículos durante la Mega Rodada del Terror 2026",
+                  "category": "Seguridad"}
+        self.assertLess(news._photo_score(rodada, {
+            "category": "Seguridad", "topic": "Graduación de la Policía de CDMX",
+        }), 0)
         # No afectar la noticia distinta sobre cierres viales del GP.
         closures = {"title": "GP de México: Calles Cerradas y Alternativas Viales en CDMX",
                     "category": "Movilidad"}
