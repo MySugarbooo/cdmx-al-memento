@@ -118,6 +118,14 @@ document.querySelectorAll('[data-open-forum-editor]').forEach(link=>link.addEven
 forumSearch?.addEventListener('input',()=>{forumQuery=forumSearch.value.trim().toLocaleLowerCase('es-MX');display(currentRows)});
 forumSort?.addEventListener('change',()=>display(currentRows));
 root.querySelectorAll('[data-forum-filter]').forEach(b=>b.addEventListener('click',()=>{forumFilter=b.dataset.forumFilter;root.querySelectorAll('[data-forum-filter]').forEach(x=>{x.classList.toggle('active',x===b);x.setAttribute('aria-pressed',String(x===b))});display(currentRows)}));
+// UIDs registrados por Firebase, no nombres de perfil editables.
+const verifiedAdminUids=new Set();
+const adminBadges=fs.collection(db,'community','main','adminBadges');
+fs.onSnapshot(adminBadges,snapshot=>{
+ verifiedAdminUids.clear();
+ for(const doc of snapshot.docs)verifiedAdminUids.add(doc.id);
+ if(isCommunity)renderMerged();
+},error=>console.warn('Insignias Admin no disponibles hasta publicar reglas de Firebase:',error.code||error));
 function profileFor(topic){
  const c=topic.c;
  const profile=document.createElement('div');profile.className='community-profile';
@@ -145,7 +153,7 @@ function profileFor(topic){
  }).format(stamp):'Fecha pendiente';
  // Nunca inferir privilegios del nombre editable en Google o de datos de publicaciones.
  // El claim firmado de Firebase valida únicamente la cuenta autenticada.
- if(user&&isModerator&&uid===user.uid){
+ if(verifiedAdminUids.has(uid)||(user&&isModerator&&uid===user.uid)){
   const badge=document.createElement('small');badge.className='community-admin-badge';
   badge.textContent='Admin';badge.setAttribute('aria-label','Administrador verificado');
   name.append(' ',badge);
@@ -559,6 +567,13 @@ mod.onAuthStateChanged(auth,async person=>{
    const result=await mod.getIdTokenResult(person);
    if(auth.currentUser===person){
     isModerator=result.claims.moderator===true;
+    if(isModerator){
+     // El servidor comprueba el claim moderator antes de permitir registrar este UID.
+     fs.setDoc(fs.doc(adminBadges,person.uid),{verifiedAt:fs.serverTimestamp()})
+      .catch(error=>{
+       if(error.code!=='permission-denied')console.warn('Registro de insignia Admin:',error.code||error);
+      });
+    }
     renderMerged();
     moderatorFeed();
    }
