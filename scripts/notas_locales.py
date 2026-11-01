@@ -423,6 +423,9 @@ def _photo_fold(text):
 
 def _photo_category(article):
     headline=_photo_fold(article.get("title"))
+    # "Poner en marcha" un programa no describe una marcha o protesta vial.
+    headline=re.sub(r"\b(?:pone|ponen|puso|poner|puesta|entra|entro|entrara)\s+en\s+marcha\b",
+                    "activa", headline)
     for pattern,category in SUBJECT_RULES:
         if re.search(pattern,headline):
             return category
@@ -482,6 +485,20 @@ def _photo_score(article, photo):
     if (re.search(r"\b(?:bottas|verstappen|hamilton|formula 1|f1)\b", headline)
             and re.search(r"\b(?:accidente|bandera roja|choque)\b", headline)):
         if not re.search(r"\b(?:formula 1|f1|autodromo|circuito|carrera|monoplaza|piloto|automovilismo)\b", topic):
+            return -10000
+    # La consulta infantil no se ilustra con una fotografía de cuarentena.
+    if (re.search(r"\b(?:urnas?|consulta|votacion|elecciones?)\b", headline)
+            and re.search(r"\b(?:ninos?|menores?|infancia|adolescentes?)\b", headline)):
+        if not re.search(r"\b(?:urnas?|votacion|elecciones?|consulta|infancia|ninos?|menores?|escuelas?|estudiantes?|boletas?)\b", topic):
+            return -10000
+    # Un programa invernal requiere contexto de frío o asistencia social.
+    if re.search(r"\b(?:temporada invernal|plan invernal|frente frio|cobijas?|vacunacion)\b", headline):
+        if not re.search(r"\b(?:invierno|invernal|frio|cobijas?|albergue|vacunacion|abrigo|apoyo social|proteccion civil|clima|nubes|temperatura)\b", topic):
+            return -10000
+    # Los pilotos y abandonos de F1 no se ilustran con paisajes turísticos.
+    if (re.search(r"\b(?:alonso|bottas|verstappen|hamilton|antonelli|checo)\b", headline)
+            and re.search(r"\b(?:abandon\w*|gran premio|formula 1|gp|carrera|piloto|campeon\w*|bandera roja)\b", headline)):
+        if not re.search(r"\b(?:formula 1|f1|gran premio|autodromo|circuito|carrera|monoplaza|piloto|automovilismo)\b", topic):
             return -10000
     # Una línea distinta del Metro es peor que una foto genérica del Metro.
     if category=="Metro":

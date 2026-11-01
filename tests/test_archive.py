@@ -110,6 +110,34 @@ class BoroughAndArchiveTests(unittest.TestCase):
             "category": "CDMX", "topic": "Calles Seminario y Moneda Centro Histórico",
         }), 0)
 
+    def test_new_headlines_require_relevant_photo_context(self):
+        # Ejemplos publicados el 1 de noviembre, no fotografías del hecho.
+        children = {"title": "¡Los niños también van a las urnas! CDMX abre consulta para menores",
+                    "category": "CDMX"}
+        self.assertLess(news._photo_score(children, {
+            "category": "CDMX", "topic": "Ciudad de México en cuarentena 1",
+        }), 0)
+        self.assertGreaterEqual(news._photo_score(children, {
+            "category": "CDMX", "topic": "Consulta infantil con urnas y boletas",
+        }), 0)
+
+        winter = {"title": "CDMX pone en marcha programa de atención por temporada invernal",
+                  "category": "CDMX"}
+        self.assertLess(news._photo_score(winter, {
+            "category": "Movilidad", "topic": "Metrobús en Paseo de la Reforma",
+        }), 0)
+        self.assertGreaterEqual(news._photo_score(winter, {
+            "category": "CDMX", "topic": "Albergue de invierno y entrega de cobijas",
+        }), 0)
+
+        racing = {"title": "Alonso abandonó en Ciudad de México", "category": "CDMX"}
+        self.assertLess(news._photo_score(racing, {
+            "category": "CDMX", "topic": "Trajineras en Xochimilco",
+        }), 0)
+        self.assertGreaterEqual(news._photo_score(racing, {
+            "category": "CDMX", "topic": "Autódromo Hermanos Rodríguez circuito",
+        }), 0)
+
     def test_unambiguous_outside_region_is_not_promoted_or_mislocated(self):
         title = "Muere conductor tras chocar contra autobús en Carretera a Laredo en Escobedo"
         self.assertTrue(news.outside_cdmx_scope(title))
