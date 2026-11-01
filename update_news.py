@@ -368,7 +368,8 @@ def consolidate_archive(new_items, cutoff, updated):
         and item["photo"].get("kind") != "hecho"
         and _photo_score(item, item["photo"]) < 0
     ]
-    missing = [item for item in existing.values() if not item.get("photo")]
+    missing = [item for item in existing.values() if not item.get("photo")
+               and not (item.get("editorial_verified") is True and item.get("sensitive_media") is True)]
     # Priorizar imágenes engañosas y limitar la reparación a 300 por ejecución.
     # Como máximo 24 son reemplazos; el resto conserva el tratamiento previo.
     # Atender primero las noticias recientes; el orden de archivos en disco
