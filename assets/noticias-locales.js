@@ -142,9 +142,25 @@
    (article.borough?' · Alcaldía mencionada: '+article.borough:'');
   intro.textContent=article.brief?.lead||'La publicación citada aborda el tema del encabezado; el índice disponible no permite confirmar más detalles.';
   body.replaceChildren();
+  // Resumen primero; contexto y pendientes solo cuando hay datos atribuibles.
+  const summary=elem('section','local-story-summary');
+  summary.append(elem('h2','','Resumen de la noticia'));
+  summary.append(elem('p','',article.brief?.lead||'La fuente citada informa sobre el asunto del titular. No se dispone de datos suficientes para ampliar los hechos.'));
+  if(article.brief?.context)summary.append(elem('p','',article.brief.context));
+  if(article.brief?.pending)summary.append(elem('p','',article.brief.pending));
+  body.append(summary);
+  const original=elem('section','local-story-sources');
+  original.append(elem('h2','','Fuente original'));
+  if(safeExternal(article.url)){
+   const link=elem('a','local-source-link','Leer publicación de '+(article.source||'medio de origen')+' ↗');
+   link.href=article.url;link.target='_blank';link.rel='noopener noreferrer nofollow';original.append(link);
+  }else original.append(elem('p','','Enlace directo no disponible; consulta el medio identificado en la ficha de verificación.'));
+  body.append(original);
+  body.append(elem('p','local-story-byline','Redacción y resumen: Amau Kisumi · CDMX AL MEMENTO · Fuente informativa: '+(article.source||'No identificada')));
   addVerification(article,updated);
-  addText(body,'Por qué importa',article.brief?.context||'La noticia puede ser relevante para quienes viven y trabajan en la Ciudad de México.');
+  /*
   addText(body,'Qué falta por confirmar',article.brief?.pending||'Los hechos y los cambios posteriores requieren fuentes actualizadas.');
+  */
   const editorial=elem('section','local-story-editorial');
   editorial.append(elem('h2','','Nota de Amau Kisumi'),
     elem('p','','Nuestro compromiso es informar con empatía y claridad: distinguimos lo que dice una fuente de lo que aún está pendiente de confirmar. No afirmamos haber hecho entrevistas ni haber visto imágenes del suceso.'));
