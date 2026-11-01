@@ -353,6 +353,9 @@ SENSITIVE_CONTEXT = re.compile(
 # Se inferiere el tema del titular antes de recurrir a la categoría RSS.
 # En el feed general muchas noticias de Metro, clima o cultura figuran como CDMX.
 SUBJECT_RULES = (
+    # El RSS puede etiquetar temas recreativos o tecnológicos como Seguridad.
+    (r"\b(?:muevete en bici|paseo dominical|bicicletas?|ciclistas?|ciclismo|ciclovias?|ecobici|cicloton)\b", "Movilidad"),
+    (r"\b(?:robot|robots|robotica|robotico|roboticos)\b", "CDMX"),
     (r"\b(?:metrobus|cablebus|trolebus|ecobici|ciclovia)\b", "Movilidad"),
     (r"\b(?:metro|linea \d{1,2}|linea [ab]|tren ligero)\b", "Metro"),
     (r"\b(?:perro|perrito|mascota|gato|animal|fauna|veterinari)\w*\b", "Medio Ambiente"),
@@ -378,6 +381,8 @@ STOP_WORDS = {
     "nueva","capital","mexicana","mexicano","zona","calle","calles",
 }
 RELATED_WORDS = (
+    (r"\b(?:muevete en bici|paseo dominical|bicicletas?|ciclistas?|ciclismo|ciclovias?|ecobici|cicloton)\b",
+     ("bici", "bicicleta", "bicicletas", "ciclista", "ciclistas", "ciclovia", "ecobici", "cicloton")),
     (r"\b(?:perro|perrito|mascota|gato|animal|fauna)\w*\b",
      ("animal", "animales", "fauna", "mascota", "veterinario")),
     (r"\b(?:policia|patrulla|fiscalia|detenid|robo|asalto)\w*\b",
@@ -422,6 +427,19 @@ def _photo_score(article, photo):
     photo_category=str(photo.get("category") or "CDMX")
     if not topic or SENSITIVE_CONTEXT.search(topic):
         return -10000
+    # No presentar patrullas o acciones policiales en noticias ajenas a Seguridad.
+    if category!="Seguridad" and (
+        photo_category=="Seguridad" or
+        re.search(r"\b(?:patrullas?|policias?|fiscalia|detenciones?|armamento)\b", context)
+    ):
+        return -10000
+    # Una clasificación RSS errónea no autoriza cambiar el tema de la imagen.
+    if photo_category not in (category, "CDMX", "Alcaldías"):
+        return -10000
+    # Para noticias de ciclismo, exigir una fotografía relacionada con bicicletas.
+    if re.search(r"\b(?:muevete en bici|paseo dominical|bicicletas?|ciclistas?|ciclismo|ciclovias?|ecobici|cicloton)\b", headline):
+        if not re.search(r"\b(?:bici|bicicletas?|ciclistas?|ciclovias?|ecobici|cicloton)\b", context):
+            return -10000
     # Una línea distinta del Metro es peor que una foto genérica del Metro.
     if category=="Metro":
         wanted=re.search(r"\blinea ([0-9]{1,2}|a|b)\b",headline)
