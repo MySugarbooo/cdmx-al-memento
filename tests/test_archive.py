@@ -208,5 +208,34 @@ class BoroughAndArchiveTests(unittest.TestCase):
         self.assertEqual(selected[-1], (now - timedelta(days=24)).date().isoformat())
 
 
+    def test_recent_archive_restores_homepage_when_only_curated_news_arrives(self):
+        now = datetime(2026, 11, 1, 22, 10, tzinfo=timezone.utc)
+        curated = news.standardize(fake(
+            "Accidente de motocicleta confirmado en CDMX", "2026-11-01",
+            (now - timedelta(minutes=5)).isoformat()))
+        with tempfile.TemporaryDirectory() as tmp:
+            archive = Path(tmp) / "archivo"
+            archive.mkdir()
+            recent = []
+            for i in range(14):
+                stamp = now - timedelta(minutes=15 + i)
+                item = fake(f"Reporte de movilidad en CDMX número {i}", "2026-11-01",
+                            stamp.isoformat())
+                item["url"] = f"https://news.google.com/rss/articles/recent{i}"
+                recent.append(news.standardize(item))
+            expired = news.standardize(fake(
+                "Noticia antigua de movilidad en CDMX", "2026-10-20",
+                "2026-10-20T10:00:00+00:00"))
+            news.write_json(archive / "2026-11.json", {"articles": recent})
+            news.write_json(archive / "2026-10.json", {"articles": [expired]})
+            with patch.object(news, "ARCHIVE_DIR", archive):
+                result = news.fill_recent_from_archive([curated], now)
+        self.assertEqual(len(result), 15)
+        self.assertEqual(len({news.article_key(x) for x in result}), 15)
+        self.assertIn(curated["title"], [x["title"] for x in result])
+        self.assertNotIn(expired["title"], [x["title"] for x in result])
+
+
+
 if __name__ == "__main__":
     unittest.main()
