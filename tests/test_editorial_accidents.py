@@ -43,6 +43,17 @@ class VerifiedAccidentsTests(unittest.TestCase):
         self.assertFalse(news.valid_link("https://comova.mx@untrusted.example/story", True))
         self.assertIsNone(news.standardize({**good, "editorial_verified": False}))
 
+    def test_sensitive_report_discards_legacy_unverified_photo(self):
+        raw = dict(self.records[0])
+        raw["photo"] = {
+            "id": "foto_ajena", "kind": "representativa",
+            "topic": "Patrullas en Ciudad de México",
+            "url": "/assets/fotos/foto_ajena.jpg",
+        }
+        cleaned = news.standardize(raw)
+        self.assertNotIn("photo", cleaned)
+        self.assertIs(cleaned["sensitive_media"], True)
+
     def test_sensitive_report_never_receives_unrelated_context_photo(self):
         article = news.standardize(self.records[0])
         police_photo = {
