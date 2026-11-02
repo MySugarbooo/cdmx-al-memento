@@ -1,6 +1,6 @@
 {
   "month": "2026-11",
-  "updated": "2026-11-02 03:08 UTC",
+  "updated": "2026-11-02 03:10 UTC",
   "articles": [
     {
       "title": "La Ciudad de México inicia noviembre con mañanas frías y rachas de viento intensas: el clima este lunes 1 de noviembre 2026",
@@ -33,6 +33,36 @@
         "license": "CC BY 4.0",
         "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
         "source": "https://commons.wikimedia.org/wiki/File:Cosecha_de_Lluvia_04.jpg"
+      }
+    },
+    {
+      "title": "Detienen a tres hombres por construcción irregular en suelo de conservación de Tláhuac",
+      "description": "De acuerdo con La Silla Rota, el titular publicado es: «Detienen a tres hombres por construcción irregular en suelo de conservación de Tláhuac». Una nota de La Silla Rota comunica un caso relacionado con una detención o una presunta conducta delictiva en Tláhuac. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
+      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPanFRMEFuNFlrLW1ORVdRdFZ3TTEycm5mMXpWQVhVWW1lXzh2aHdYeUw4b284Q2lWMkl6S18zMjZ3Y3F4SGFTNTRIbzNESThJQ1JJXzd3dUJQVk9aaXBJaFlQaXpLY2lGRGtpWmQ4WG9FQVRKRWNnODFtZTZXU2JROGpnTzc0SDdRMWs2YklIMEtpRzQtc1hVYk00SWZQaTRiS2s4dEMtZWljRXhlcXh4RnQ3QTAxQU12bnU1aXRsckNpcmRKZTRYYUhraGtoZk51SVJGZHFKakFqZw?oc=5",
+      "source": "La Silla Rota",
+      "date": "2026-11-01",
+      "published_at": "2026-11-02T02:41:48Z",
+      "category": "Seguridad",
+      "borough": "Tláhuac",
+      "location": "Tláhuac (mencionada en el titular)",
+      "local_url": "/noticias/?id=0fcd77f6143b426f2f98&mes=2026-11",
+      "brief": {
+        "lead": "De acuerdo con La Silla Rota, el titular publicado es: «Detienen a tres hombres por construcción irregular en suelo de conservación de Tláhuac». Una nota de La Silla Rota comunica un caso relacionado con una detención o una presunta conducta delictiva en Tláhuac. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
+        "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+        "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "alcaldia_tlahuac",
+        "kind": "representativa",
+        "url": "/assets/alcaldias/tlahuac.jpg",
+        "category": "CDMX",
+        "borough": "Tláhuac",
+        "topic": "Plaza central de San Pedro Tláhuac",
+        "author": "Yavidaxiu",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Tl%C3%A1huac-Plaza_central.JPG"
       }
     },
     {
@@ -176,19 +206,19 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "commons_75246045",
+        "id": "archivo_seguridad_010",
         "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Graduaci%C3%B3n_de_la_Polic%C3%ADa_de_la_Ciudad_de_M%C3%A9xico_-i---i-_%2837018417736%29.jpg/960px-Graduaci%C3%B3n_de_la_Polic%C3%ADa_de_la_Ciudad_de_M%C3%A9xico_-i---i-_%2837018417736%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "url": "/assets/fotos/archivo_seguridad_010.jpg",
         "category": "Seguridad",
         "borough": "",
-        "topic": "Graduación de la Policía de la Ciudad de México -i---i- (37018417736)",
+        "topic": "Entrega Claudia Sheinbaum 113 nuevas patrullas en Gustavo A Madero 04",
         "keywords": [
-          "Policía Ciudad de México"
+          "Seguridad"
         ],
-        "author": "Gobierno CDMX",
-        "license": "CC0",
-        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
-        "source": "https://commons.wikimedia.org/wiki/File:Graduaci%C3%B3n_de_la_Polic%C3%ADa_de_la_Ciudad_de_M%C3%A9xico_-i---i-_(37018417736).jpg"
+        "author": "Gobierno de la Ciudad de México",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Entrega_Claudia_Sheinbaum_113_nuevas_patrullas_en_Gustavo_A_Madero_04.jpg"
       }
     },
     {
@@ -395,21 +425,6 @@
         "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
         "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "commons_175612248",
-        "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/Troleb%C3%BAs_de_la_L%C3%ADnea_2_sobre_Avenida_Yucat%C3%A1n.jpg/960px-Troleb%C3%BAs_de_la_L%C3%ADnea_2_sobre_Avenida_Yucat%C3%A1n.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "category": "Movilidad",
-        "borough": "",
-        "topic": "Trolebús de la Línea 2 sobre Avenida Yucatán",
-        "keywords": [
-          "Trolebús Ciudad de México"
-        ],
-        "author": "ProtoplasmaKid",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Troleb%C3%BAs_de_la_L%C3%ADnea_2_sobre_Avenida_Yucat%C3%A1n.jpg"
       }
     },
     {
@@ -1067,19 +1082,19 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "commons_75245999",
+        "id": "archivo_seguridad_002",
         "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Graduaci%C3%B3n_de_la_Polic%C3%ADa_de_la_Ciudad_de_M%C3%A9xico_-i---i-_%2836810914290%29.jpg/960px-Graduaci%C3%B3n_de_la_Polic%C3%ADa_de_la_Ciudad_de_M%C3%A9xico_-i---i-_%2836810914290%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "url": "/assets/fotos/archivo_seguridad_002.jpg",
         "category": "Seguridad",
         "borough": "",
-        "topic": "Graduación de la Policía de la Ciudad de México -i---i- (36810914290)",
+        "topic": "Patrulla vecinal",
         "keywords": [
-          "Policía Ciudad de México"
+          "Seguridad"
         ],
-        "author": "Gobierno CDMX",
-        "license": "CC0",
-        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
-        "source": "https://commons.wikimedia.org/wiki/File:Graduaci%C3%B3n_de_la_Polic%C3%ADa_de_la_Ciudad_de_M%C3%A9xico_-i---i-_(36810914290).jpg"
+        "author": "Daniel Yonka",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Patrulla_vecinal.jpg"
       }
     },
     {
