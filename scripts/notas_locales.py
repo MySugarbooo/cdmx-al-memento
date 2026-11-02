@@ -444,7 +444,7 @@ def _photo_category(article):
     if re.search(r"\b(?:ataque armado|balacera|asesina(?:n)?|asesinato)\b", headline):
         return "Seguridad"
     # Las víctimas de disparos son un tema de seguridad, aunque el RSS diga CDMX.
-    if re.search(r"\\b(?:balead\\w*|balear\\w*|balean|baleo)\\b", headline):
+    if re.search(r"\b(?:balead\w*|balear\w*|balean|baleo)\b", headline):
         return "Seguridad"
     # Un operativo policial durante una festividad sigue siendo Seguridad.
     if re.search(r"\bpolicias?\b.*\b(?:cuidan|vigilan|operativo|despliegan)\b", headline):
@@ -483,14 +483,14 @@ STRICT_PHOTO_TOPICS = (
     (r"\b(?:ataque armado|balacera|asesina(?:n)?|asesinato)\b",
      r"\b(?:fiscalia|investigacion penal|justicia|ministerio publico|peritos?|escena del crimen|operativo policial)\b"),
     # Un tiroteo no se ilustra con una graduación o ceremonia policial.
-    (r"\\b(?:balead\\w*|balear\\w*|balean|baleo)\\b",
-     r"\\b(?:fiscalia|investigacion penal|justicia|ministerio publico|peritos?|escena del crimen|operativo policial)\\b"),
+    (r"\b(?:balead\w*|balear\w*|balean|baleo)\b",
+     r"\b(?:fiscalia|investigacion penal|justicia|ministerio publico|peritos?|escena del crimen|operativo policial)\b"),
     # La captación de agua pluvial requiere sistemas de recolección, no gotas en plantas.
-    (r"\\b(?:captacion de agua de lluvia|cosecha de lluvia|recoleccion de agua pluvial)\\b",
-     r"\\b(?:captacion|cosecha de lluvia|recoleccion|sistema pluvial|cisternas?|tinacos?|canaletas?|almacenamiento de agua|depositos? de agua|filtros? de agua)\\b"),
+    (r"\b(?:captacion de agua de lluvia|cosecha de lluvia|recoleccion de agua pluvial)\b",
+     r"\b(?:captacion|cosecha de lluvia|recoleccion|sistema pluvial|cisternas?|tinacos?|canaletas?|almacenamiento de agua|depositos? de agua|filtros? de agua)\b"),
     # Una detención en un reclusorio no se ilustra con una estación del Metro.
-    (r"\\breclusorio\\b",
-     r"\\b(?:reclusorio|centro penitenciario|penitenciaria|prision|fiscalia|detencion|ministerio publico|operativo policial)\\b"),
+    (r"\breclusorio\b",
+     r"\b(?:reclusorio|centro penitenciario|penitenciaria|prision|fiscalia|detencion|ministerio publico|operativo policial)\b"),
     # La búsqueda de desaparecidos no se ilustra con un monumento sin relación.
     (r"\b(?:busqueda de personas|personas desaparecidas)\b",
      r"\b(?:colectivos? de busqueda|personas desaparecidas|busqueda|fiscalia|familias? buscadoras?|protestas?|manifestaciones?)\b"),
