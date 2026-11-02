@@ -451,7 +451,7 @@ STRICT_PHOTO_TOPICS = (
     (r"\b(?:fallece motociclista|muere motociclista|motociclistas? fallecidos?)\b",
      r"\b(?:motos?|motocicletas?|carretera|vialidad|trafico|transito|vehicular)\b"),
     (r"\b(?:bloquean? avenida|bloqueos? en avenida)\b",
-     r"\b(?:manifestacion|protesta|bloqueo|avenida|vialidad|trafico|calles?|reforma|juarez)\b"),
+     r"\b(?:manifestacion|protesta|bloqueo|colectivo de busqueda|personas desaparecidas)\b"),
     (r"\b(?:panteon|cementerio|tumba)\b",
      r"\b(?:panteon|cementerio|tumbas?|sepulturas?|mausoleo)\b"),
     (r"\b(?:desfile|catrinas?)\b",
@@ -487,6 +487,10 @@ def _photo_score(article, photo):
     for headline_pattern, photo_pattern in STRICT_PHOTO_TOPICS:
         if re.search(headline_pattern, headline) and not re.search(photo_pattern, context):
             return -10000
+    # Una graduación policial no ilustra una muerte violenta o sentencia penal.
+    if (re.search(r"\b(?:matan|balazos|asesinan|homicidio|condenad[oa]s?|condenan|prision)\b", headline)
+            and re.search(r"\b(?:graduacion|ceremonia de policia|entrega de patrullas)\b", topic)):
+        return -10000
     # Una nota del Hoy No Circula requiere contexto vehicular, no fotos de la festividad.
     if re.search(r"\bhoy no circula\b", headline):
         if not re.search(r"\b(?:vehiculos?|vehicular|automoviles?|autos?|coches?|transito|trafico|vialidad|circulacion|hologramas?|verificacion vehicular|hoy no circula)\b", context):
