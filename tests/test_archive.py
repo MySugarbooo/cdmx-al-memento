@@ -960,6 +960,17 @@ class BoroughAndArchiveTests(unittest.TestCase):
         self.assertLess(news._photo_score(protest, {
             "category": "Movilidad", "topic": "Ecobici Estación 8 - panoramio",
         }), 0)
+        atropellamiento = {
+            "title": "Muere mujer tras ser atropellada por conductor ebrio en Coyoacán",
+            "category": "Movilidad",
+        }
+        self.assertLess(news._photo_score(atropellamiento, {
+            "category": "Movilidad",
+            "topic": "PAVIMENTACIÓN EN LA CARRETERA DE LOS DINAMOS EN LA MAGDALENA CONTRERAS FEBRERO 20 1941",
+        }), 0)
+        self.assertGreaterEqual(news._photo_score(atropellamiento, {
+            "category": "Movilidad", "topic": "Tráfico vehicular en avenida de Coyoacán",
+        }), 0)
 
 
 if __name__ == "__main__":
