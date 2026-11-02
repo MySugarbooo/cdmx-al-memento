@@ -431,6 +431,9 @@ def _photo_category(article):
     # Un aviso del Hoy No Circula no es una nota cultural aunque mencione Día de Muertos.
     if re.search(r"\bhoy no circula\b", headline):
         return "Movilidad"
+    # Un operativo policial durante una festividad sigue siendo Seguridad.
+    if re.search(r"\bpolicias?\b.*\b(?:cuidan|vigilan|operativo|despliegan)\b", headline):
+        return "Seguridad"
     for pattern,category in SUBJECT_RULES:
         if re.search(pattern,headline):
             return category
