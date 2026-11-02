@@ -194,6 +194,17 @@ def published_datetime(value):
 def category_by_headline(title, feed_category):
     """Corrige etiquetas RSS evidentes sin inventar ubicaciones o hechos."""
     normalized = fold(title)
+    # Etiquetas editoriales inequívocas aunque el feed general use "CDMX".
+    if (feed_category in {"CDMX", "Gobierno"}
+            and re.search(r"\b(?:matan a balazos|asesinan a|homicidio|condenad[oa]s?|condenan|prision)\b", normalized)):
+        return "Seguridad"
+    if (re.search(r"\b(?:gran desfile de dia de muertos|desfile de catrinas)\b", normalized)
+            and not re.search(r"\b(?:policias?|detienen|seguridad|operativo)\b", normalized)):
+        return "Cultura"
+    if re.search(r"\bcolectivo de busqueda\b.*\bbloquea(?:n)? avenida\b", normalized):
+        return "Movilidad"
+    if re.search(r"\b(?:fallece motociclista|muere motociclista|motociclistas? fallecidos?)\b", normalized):
+        return "Movilidad"
     # Una detención de personas es seguridad, aunque el RSS venga de Gobierno.
     # Exigir "a" y una referencia humana evita confundirla con obras detenidas.
     if (feed_category in {"Gobierno", "CDMX"}
