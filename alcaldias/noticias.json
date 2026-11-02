@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-02 01:58 UTC",
+  "updated": "2026-11-02 03:01 UTC",
   "boroughs": [
     {
       "name": "La Magdalena Contreras",
@@ -1514,8 +1514,38 @@
     },
     {
       "name": "Azcapotzalco",
-      "count": 85,
+      "count": 86,
       "articles": [
+        {
+          "title": "Matan a Balazos a un Hombre de 30 Años en la Alcaldía Azcapotzalco, CDMX",
+          "description": "De acuerdo con N+, el titular publicado es: «Matan a Balazos a un Hombre de 30 Años en la Alcaldía Azcapotzalco, CDMX». La información publicada por N+ trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQcWs1VW1MYWs2SjF2aThTWVBHTkcydGE3Z2ZfeUNkekV0dUZxdmNZRHhWS1ZxckdzWDB2bzlvZVozZThXZUZBTElHbTBEcHJRZVlETmxGMzVVWFV0QUxLVmMxUnZVeGRwek5EQklWSzZHa050RDU5OWVkNlBGRmpHcUhPcG9OYUhiWVRNTGtORE93RkR4R2pZeEVTaElUNDRJTGd1NEgyUHp0OXZvbnRHLU5RU0tZeUhfVnEyWG83YnRkVkJGNW1Kc29QcERZbm5QRVhBZ3ZYcnU0T2w4SDZxOHBR?oc=5",
+          "source": "N+",
+          "date": "2026-11-01",
+          "published_at": "2026-11-02T02:00:53Z",
+          "category": "CDMX",
+          "borough": "Azcapotzalco",
+          "location": "Azcapotzalco (mencionada en el titular)",
+          "local_url": "/noticias/?id=03bc3b844f0aa6e7d455&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con N+, el titular publicado es: «Matan a Balazos a un Hombre de 30 Años en la Alcaldía Azcapotzalco, CDMX». La información publicada por N+ trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_azcapotzalco",
+            "kind": "representativa",
+            "url": "/assets/alcaldias/azcapotzalco.jpg",
+            "category": "CDMX",
+            "borough": "Azcapotzalco",
+            "topic": "Parroquia de Santa Catarina, Azcapotzalco",
+            "author": "Ivan alcantara",
+            "license": "CC BY-SA 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:PARROQUIA_DE_SANTA_CATARINA_%28AZCAPOTZALCO%29.jpg"
+          }
+        },
         {
           "title": "Microbús Atropella y Mata a un Hombre en Situación de Calle en Azcapotzalco, CDMX",
           "description": "De acuerdo con N+, el titular publicado es: «Microbús Atropella y Mata a un Hombre en Situación de Calle en Azcapotzalco, CDMX». De acuerdo con N+, se informa de un hecho vial relacionado con personas o vehículos involucrados en Azcapotzalco. El encabezado no permite determinar por sí solo si hubo personas lesionadas o fallecidas. Se requiere consultar la nota original para conocer el punto exacto, las circunstancias y los reportes oficiales, sin atribuir responsabilidades sin pruebas.",
@@ -2177,34 +2207,6 @@
             "lead": "De acuerdo con El Universal, el titular publicado es: «La pelea por la candidatura de Morena en Azcapotzalco». La información publicada por El Universal trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "alcaldia_azcapotzalco",
-            "url": "/assets/alcaldias/azcapotzalco.jpg",
-            "category": "CDMX",
-            "borough": "Azcapotzalco",
-            "topic": "Parroquia de Santa Catarina, Azcapotzalco",
-            "author": "Ivan alcantara",
-            "license": "CC BY-SA 3.0",
-            "source": "https://commons.wikimedia.org/wiki/File:PARROQUIA_DE_SANTA_CATARINA_%28AZCAPOTZALCO%29.jpg"
-          }
-        },
-        {
-          "title": "Azcapotzalco activa operativo de seguridad por Día de Muertos",
-          "description": "De acuerdo con Sociedad Noticias, el titular publicado es: «Azcapotzalco activa operativo de seguridad por Día de Muertos». La información publicada por Sociedad Noticias trata un asunto registrado en la sección de Seguridad del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxORW9fQWt4Q3FSTEtYZjB5U19hSXk0anY5TUo0ek9rN0VZNWItMVZLYnJJR01IdHF0bG1PTDRrWnhHUWt5N0hwRXVKNVpzeVBSb1hudWdkdjRBMm1iZEFSQmFMMTkxNk5KMU1CMDhzeTBGOHpXaUhVa1I2N2VRWmxxb0pqX1F3M3pkT2ttV0NmbzhqTDBIUkZiaVRFN1R6U1ppVW9jdUN3?oc=5",
-          "source": "Sociedad Noticias",
-          "date": "2026-10-26",
-          "published_at": "2026-10-26T10:30:00Z",
-          "category": "Seguridad",
-          "borough": "Azcapotzalco",
-          "location": "Azcapotzalco (mencionada en el titular)",
-          "local_url": "/noticias/?id=9162d127ead5628b105c&mes=2026-10",
-          "brief": {
-            "lead": "De acuerdo con Sociedad Noticias, el titular publicado es: «Azcapotzalco activa operativo de seguridad por Día de Muertos». La información publicada por Sociedad Noticias trata un asunto registrado en la sección de Seguridad del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
-            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           },
           "photo": {
@@ -2953,8 +2955,41 @@
     },
     {
       "name": "Coyoacán",
-      "count": 119,
+      "count": 120,
       "articles": [
+        {
+          "title": "Coyoacán sin agua las próximas 40 horas: LISTA de colonias afectadas",
+          "description": "De acuerdo con El Heraldo de México, el titular publicado es: «Coyoacán sin agua las próximas 40 horas: LISTA de colonias afectadas». La información publicada por El Heraldo de México trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPQl9Sc2RPblljMU1hM1VFc2hoWm9CMk91MGNQX2FHckx3QU9RMi1KX2VsWnlqdVBuN3JJR2R0QUN4NGN4TVZSV0cxSXBqRHRfNzBHLWVCUzJWalRPUUExRkdwVERrdnl3SmN3c21vRGVlbnFHWTlOcUptcEZZU20tazkxVmhSaE5IOXc3Zmhaak1GNVZaZ3hLSmIyNmFFOVNYX3dZUzRnM0pBYnFFa0RyQ3p2VV9DQmxfM1V4Tk1wazJsb2RPYmFhWA?oc=5",
+          "source": "El Heraldo de México",
+          "date": "2026-11-01",
+          "published_at": "2026-11-02T01:58:00Z",
+          "category": "CDMX",
+          "borough": "Coyoacán",
+          "location": "Coyoacán (mencionada en el titular)",
+          "local_url": "/noticias/?id=c33cb4da63dc77d89fe2&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con El Heraldo de México, el titular publicado es: «Coyoacán sin agua las próximas 40 horas: LISTA de colonias afectadas». La información publicada por El Heraldo de México trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "commons_106559901",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/1._Coyoac%C3%A1n_Ciudad_de_M%C3%A9xico.jpg/960px-1._Coyoac%C3%A1n_Ciudad_de_M%C3%A9xico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "category": "CDMX",
+            "borough": "",
+            "topic": "1. Coyoacán Ciudad de México",
+            "keywords": [
+              "CDMX"
+            ],
+            "author": "Machristen",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:1._Coyoac%C3%A1n_Ciudad_de_M%C3%A9xico.jpg"
+          }
+        },
         {
           "title": "Video viral muestra choque en Coyoacán: auto arrolla y mata a mujer",
           "description": "De acuerdo con SéUnoNoticias, el titular publicado es: «Video viral muestra choque en Coyoacán: auto arrolla y mata a mujer». De acuerdo con SéUnoNoticias, se informa de un hecho vial relacionado con vehículos en Coyoacán. El encabezado no permite determinar por sí solo si hubo personas lesionadas o fallecidas. Se requiere consultar la nota original para conocer el punto exacto, las circunstancias y los reportes oficiales, sin atribuir responsabilidades sin pruebas.",
@@ -3675,36 +3710,6 @@
             "license": "CC BY-SA 4.0",
             "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
             "source": "https://commons.wikimedia.org/wiki/File:1._Coyoac%C3%A1n_Ciudad_de_M%C3%A9xico.jpg"
-          }
-        },
-        {
-          "title": "Héctor Barrera pone en marcha ‘Escucha 365′ para atender demandas vecinales en Coyoacán",
-          "description": "De acuerdo con El Financiero, el titular publicado es: «Héctor Barrera pone en marcha ‘Escucha 365′ para atender demandas vecinales en Coyoacán». Según la información destacada por El Financiero, manifestaciones o bloqueos forman parte de la jornada de movilidad capitalina. La ficha no demuestra por sí sola que todas las vías mencionadas sigan cerradas al momento de leerla.",
-          "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPOWpzeGFTMXplRFgtY1J6VU43UGE5U2d3OVBqMlBtSFprZ29TZFdTR2czdGIyV080ZFpveUYwNUIxVkFPXzY0WlItN1dFakFBa2xNMzVmb19IR1VGeHN2ZzhWeUpCcm02bFp6YVJfbDJBajEtS2s1cnppV1k4TFAwRjNIQS1YbjViUjYwNzZQeVYtd2hlWlRlaF9ySFoxQXJmXzN0dnJvVWlBSTBKaDBHMERaQ1VPbmluWVA1SWZySU1seDdWdHlnUGRzeHA0c1E?oc=5",
-          "source": "El Financiero",
-          "date": "2026-10-30",
-          "published_at": "2026-10-30T18:45:06Z",
-          "category": "CDMX",
-          "borough": "Coyoacán",
-          "location": "Coyoacán (mencionada en el titular)",
-          "local_url": "/noticias/?id=4e44b9b9acae52df90e1&mes=2026-10",
-          "brief": {
-            "lead": "De acuerdo con El Financiero, el titular publicado es: «Héctor Barrera pone en marcha ‘Escucha 365′ para atender demandas vecinales en Coyoacán». Según la información destacada por El Financiero, manifestaciones o bloqueos forman parte de la jornada de movilidad capitalina. La ficha no demuestra por sí sola que todas las vías mencionadas sigan cerradas al momento de leerla.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "alcaldia_coyoacan",
-            "kind": "representativa",
-            "url": "/assets/alcaldias/coyoacan.jpg",
-            "category": "CDMX",
-            "borough": "Coyoacán",
-            "topic": "Jardín Centenario de Coyoacán",
-            "author": "AlejandroLinaresGarcia",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:JardinCentenarioCoyoacan.JPG"
           }
         }
       ]
@@ -8861,8 +8866,38 @@
     },
     {
       "name": "Tláhuac",
-      "count": 101,
+      "count": 102,
       "articles": [
+        {
+          "title": "Detienen a tres hombres por construcción irregular en suelo de conservación de Tláhuac; ¿qué pasó?",
+          "description": "De acuerdo con Eje Central, el titular publicado es: «Detienen a tres hombres por construcción irregular en suelo de conservación de Tláhuac; ¿qué pasó?». Una nota de Eje Central comunica un caso relacionado con una detención o una presunta conducta delictiva en Tláhuac. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
+          "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNeFhLT3lqNWNMUDBoSUk2SG1SQ0M1WnhTcmllLWltVXctekNHVGZ2T0dfLUxfbjJQNi1sNU91LWN0OXF1dWd4QmlPNThWeS1ISHh2UDVrazItN011WDF6OFNuMDI1bjJaSWRmeWxNSFA0Q2VOV2pyR3YzeTZOaDdEMTlOUE1Lc2Z1Y2tjejQ5OGVGV180aUd0bDdwM2Faak9GeHpGMnJqWVhPR0l0V2t6bU52dkhZN2NDQzgyWlE4bHY5NUNLRkVIX2p3VXlhV3V3VVMw?oc=5",
+          "source": "Eje Central",
+          "date": "2026-11-01",
+          "published_at": "2026-11-02T02:16:08Z",
+          "category": "Seguridad",
+          "borough": "Tláhuac",
+          "location": "Tláhuac (mencionada en el titular)",
+          "local_url": "/noticias/?id=f22aa177c6dd27e34ea4&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con Eje Central, el titular publicado es: «Detienen a tres hombres por construcción irregular en suelo de conservación de Tláhuac; ¿qué pasó?». Una nota de Eje Central comunica un caso relacionado con una detención o una presunta conducta delictiva en Tláhuac. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
+            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_tlahuac",
+            "kind": "representativa",
+            "url": "/assets/alcaldias/tlahuac.jpg",
+            "category": "CDMX",
+            "borough": "Tláhuac",
+            "topic": "Plaza central de San Pedro Tláhuac",
+            "author": "Yavidaxiu",
+            "license": "CC BY 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Tl%C3%A1huac-Plaza_central.JPG"
+          }
+        },
         {
           "title": "Detienen a tres hombres por obras irregulares en Tláhuac",
           "description": "De acuerdo con Sociedad Noticias, el titular publicado es: «Detienen a tres hombres por obras irregulares en Tláhuac». Una nota de Sociedad Noticias comunica un caso relacionado con una detención o una presunta conducta delictiva en Tláhuac. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
@@ -9554,34 +9589,6 @@
             "license": "CC BY-SA 4.0",
             "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
             "source": "https://commons.wikimedia.org/wiki/File:Vista_del_Z%C3%B3calo_de_la_Ciudad_de_M%C3%A9xico.jpg"
-          }
-        },
-        {
-          "title": "Clima en Tláhuac hoy martes 27 de octubre: jornada templada con ligeros aguaceros",
-          "description": "De acuerdo con El Heraldo de México, el titular publicado es: «Clima en Tláhuac hoy martes 27 de octubre: jornada templada con ligeros aguaceros». El pronóstico recogido por El Heraldo de México se refiere a condiciones meteorológicas en Tláhuac. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
-          "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNTUQ4ZTBienBEaS1uV3RlS3RWQURxTUgzWmlGY245eFA0Wm91M3RDendFZ2d5OXFySVFqSUNSYlczU2hNOU9pcHBzZDFfRGUtLXpNYmFrd0NvdUl4Q01FaF9uUlkyY0VKTFdDb0ZqSUZXcFNoZEgxQlNDNkhxQjVzWncxbE5RNE9CYmk0RThieTVEWEVOMGN6Tmt0Y3dEY0tROXk2WThlRmVlUHZhaGJTNHNULW10dklNSWxGT3ZMdS1QSVJRNFRFV0d0c3ZIOUdEV2JYUjRLcmtILVE?oc=5",
-          "source": "El Heraldo de México",
-          "date": "2026-10-26",
-          "published_at": "2026-10-27T05:00:00Z",
-          "category": "CDMX",
-          "borough": "Tláhuac",
-          "location": "Tláhuac (mencionada en el titular)",
-          "local_url": "/noticias/?id=6ac084c2e0e412bc94ab&mes=2026-10",
-          "brief": {
-            "lead": "De acuerdo con El Heraldo de México, el titular publicado es: «Clima en Tláhuac hoy martes 27 de octubre: jornada templada con ligeros aguaceros». El pronóstico recogido por El Heraldo de México se refiere a condiciones meteorológicas en Tláhuac. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "alcaldia_tlahuac",
-            "url": "/assets/alcaldias/tlahuac.jpg",
-            "category": "CDMX",
-            "borough": "Tláhuac",
-            "topic": "Plaza central de San Pedro Tláhuac",
-            "author": "Yavidaxiu",
-            "license": "CC BY 3.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Tl%C3%A1huac-Plaza_central.JPG"
           }
         }
       ]

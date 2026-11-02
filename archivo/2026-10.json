@@ -1,6 +1,6 @@
 {
   "month": "2026-10",
-  "updated": "2026-11-02 01:58 UTC",
+  "updated": "2026-11-02 03:01 UTC",
   "articles": [
     {
       "title": "Expropiará el gobierno de la CDMX capitalino tres predios para vivienda pública",
@@ -8656,6 +8656,26 @@
         "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
         "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "contexto_autodromo_hermanos_rodriguez",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Vista_a%C3%A9rea_del_Aut%C3%B3dromo_Hermanos_Rodr%C3%ADguez_03.jpg/1280px-Vista_a%C3%A9rea_del_Aut%C3%B3dromo_Hermanos_Rodr%C3%ADguez_03.jpg",
+        "category": "Movilidad",
+        "borough": "",
+        "topic": "Vista aérea del Autódromo Hermanos Rodríguez, Ciudad de México (fotografía de 2025)",
+        "keywords": [
+          "autódromo",
+          "Hermanos Rodríguez",
+          "gran premio",
+          "formula 1",
+          "F1",
+          "automovilismo"
+        ],
+        "author": "ProtoplasmaKid",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:Vista_a%C3%A9rea_del_Aut%C3%B3dromo_Hermanos_Rodr%C3%ADguez_03.jpg"
       }
     },
     {
@@ -57063,19 +57083,24 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "commons_51906804",
+        "id": "contexto_trafico_eje_central",
         "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Plantas_con_gotas_de_lluvia%2C_Ciudad_de_M%C3%A9xico.jpg/960px-Plantas_con_gotas_de_lluvia%2C_Ciudad_de_M%C3%A9xico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "category": "Medio Ambiente",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Eje_Central_CDMX.jpg/1280px-Eje_Central_CDMX.jpg",
+        "category": "Movilidad",
         "borough": "",
-        "topic": "Plantas con gotas de lluvia, Ciudad de México",
+        "topic": "Tráfico vehicular en Eje Central, Ciudad de México (fotografía de 2018)",
         "keywords": [
-          "Lluvia Ciudad de México"
+          "tráfico",
+          "vehículos",
+          "automóviles",
+          "movilidad",
+          "hoy no circula",
+          "vialidad"
         ],
-        "author": "LEG95",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Plantas_con_gotas_de_lluvia,_Ciudad_de_M%C3%A9xico.jpg"
+        "author": "Sergio Estrada Flores",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:Eje_Central_CDMX.jpg"
       }
     },
     {
@@ -58271,16 +58296,6 @@
         "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
         "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "alcaldia_xochimilco",
-        "url": "/assets/alcaldias/xochimilco.jpg",
-        "category": "CDMX",
-        "borough": "Xochimilco",
-        "topic": "Trajineras y canales de Xochimilco",
-        "author": "Xbauerx",
-        "license": "CC BY-SA 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Trajineras_de_Xochimilco.jpg"
       }
     },
     {
@@ -60451,21 +60466,6 @@
         "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
         "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "commons_152180163",
-        "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Cosecha_de_Lluvia_06.jpg/960px-Cosecha_de_Lluvia_06.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "category": "Medio Ambiente",
-        "borough": "",
-        "topic": "Cosecha de Lluvia 06",
-        "keywords": [
-          "Lluvia Ciudad de México"
-        ],
-        "author": "Gobierno de la Ciudad de México",
-        "license": "CC BY 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Cosecha_de_Lluvia_06.jpg"
       }
     },
     {
@@ -62259,21 +62259,6 @@
         "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
         "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "commons_93188323",
-        "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/Registro_de_agua._Primera_Secci%C3%B3n_del_Bosque_de_Chapultepec_-_4.jpg/960px-Registro_de_agua._Primera_Secci%C3%B3n_del_Bosque_de_Chapultepec_-_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "category": "CDMX",
-        "borough": "",
-        "topic": "Registro de agua. Primera Sección del Bosque de Chapultepec - 4",
-        "keywords": [
-          "Medio Ambiente"
-        ],
-        "author": "ProtoplasmaKid",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Registro_de_agua._Primera_Secci%C3%B3n_del_Bosque_de_Chapultepec_-_4.jpg"
       }
     },
     {
@@ -66068,21 +66053,6 @@
         "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
         "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "archivo_movilidad_006",
-        "kind": "representativa",
-        "url": "/assets/fotos/archivo_movilidad_006.jpg",
-        "category": "Movilidad",
-        "borough": "",
-        "topic": "Metrobús - Cidade do México, DF-03",
-        "keywords": [
-          "Movilidad"
-        ],
-        "author": "EMBARQ BRASIL",
-        "license": "CC BY 2.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Metrob%C3%BAs_-_Cidade_do_M%C3%A9xico%2C_DF-03.jpg"
       }
     },
     {
@@ -66728,21 +66698,6 @@
         "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
         "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "commons_75263513",
-        "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Operativo_de_Lluvias_CDMX_-i---i-_%2836294397303%29.jpg/960px-Operativo_de_Lluvias_CDMX_-i---i-_%2836294397303%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "category": "Medio Ambiente",
-        "borough": "",
-        "topic": "Operativo de Lluvias CDMX -i---i- (36294397303)",
-        "keywords": [
-          "Lluvia Ciudad de México"
-        ],
-        "author": "Gobierno CDMX",
-        "license": "CC0",
-        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
-        "source": "https://commons.wikimedia.org/wiki/File:Operativo_de_Lluvias_CDMX_-i---i-_(36294397303).jpg"
       }
     },
     {
@@ -71746,21 +71701,6 @@
         "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
         "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "commons_139480766",
-        "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Tren_ligero_y_metro_en_la_estaci%C3%B3n_Tasque%C3%B1a_09.jpg/960px-Tren_ligero_y_metro_en_la_estaci%C3%B3n_Tasque%C3%B1a_09.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "category": "Movilidad",
-        "borough": "",
-        "topic": "Tren ligero y metro en la estación Tasqueña 09",
-        "keywords": [
-          "Tren ligero Ciudad de México"
-        ],
-        "author": "Luis Alvaz",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Tren_ligero_y_metro_en_la_estaci%C3%B3n_Tasque%C3%B1a_09.jpg"
       }
     },
     {
@@ -85307,21 +85247,6 @@
         "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
         "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "commons_152180159",
-        "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Cosecha_de_Lluvia_02.jpg/960px-Cosecha_de_Lluvia_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "category": "Medio Ambiente",
-        "borough": "",
-        "topic": "Cosecha de Lluvia 02",
-        "keywords": [
-          "Lluvia Ciudad de México"
-        ],
-        "author": "Gobierno de la Ciudad de México",
-        "license": "CC BY 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Cosecha_de_Lluvia_02.jpg"
       }
     },
     {
@@ -87745,21 +87670,6 @@
         "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
         "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "commons_152180160",
-        "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Cosecha_de_Lluvia_03.jpg/960px-Cosecha_de_Lluvia_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "category": "Medio Ambiente",
-        "borough": "",
-        "topic": "Cosecha de Lluvia 03",
-        "keywords": [
-          "Lluvia Ciudad de México"
-        ],
-        "author": "Gobierno de la Ciudad de México",
-        "license": "CC BY 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Cosecha_de_Lluvia_03.jpg"
       }
     },
     {
@@ -91155,21 +91065,6 @@
         "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
         "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "commons_152180165",
-        "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Cosecha_de_Lluvia_05.jpg/960px-Cosecha_de_Lluvia_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "category": "Medio Ambiente",
-        "borough": "",
-        "topic": "Cosecha de Lluvia 05",
-        "keywords": [
-          "Lluvia Ciudad de México"
-        ],
-        "author": "Gobierno de la Ciudad de México",
-        "license": "CC BY 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Cosecha_de_Lluvia_05.jpg"
       }
     },
     {
@@ -93516,21 +93411,6 @@
         "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
         "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "commons_152180159",
-        "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Cosecha_de_Lluvia_02.jpg/960px-Cosecha_de_Lluvia_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "category": "Medio Ambiente",
-        "borough": "",
-        "topic": "Cosecha de Lluvia 02",
-        "keywords": [
-          "Lluvia Ciudad de México"
-        ],
-        "author": "Gobierno de la Ciudad de México",
-        "license": "CC BY 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Cosecha_de_Lluvia_02.jpg"
       }
     },
     {
@@ -95662,21 +95542,6 @@
         "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
         "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "commons_93188323",
-        "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/Registro_de_agua._Primera_Secci%C3%B3n_del_Bosque_de_Chapultepec_-_4.jpg/960px-Registro_de_agua._Primera_Secci%C3%B3n_del_Bosque_de_Chapultepec_-_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "category": "CDMX",
-        "borough": "",
-        "topic": "Registro de agua. Primera Sección del Bosque de Chapultepec - 4",
-        "keywords": [
-          "Medio Ambiente"
-        ],
-        "author": "ProtoplasmaKid",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Registro_de_agua._Primera_Secci%C3%B3n_del_Bosque_de_Chapultepec_-_4.jpg"
       }
     },
     {
@@ -95893,21 +95758,6 @@
         "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
         "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "commons_76480853",
-        "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Transporte_p%C3%BAblico_de_la_Ciudad_de_M%C3%A9xico_IMG_1004_%2826911178281%29.jpg/960px-Transporte_p%C3%BAblico_de_la_Ciudad_de_M%C3%A9xico_IMG_1004_%2826911178281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "category": "Movilidad",
-        "borough": "",
-        "topic": "Transporte público de la Ciudad de México IMG 1004 (26911178281)",
-        "keywords": [
-          "Metrobús Ciudad de México"
-        ],
-        "author": "Gobierno CDMX",
-        "license": "CC0",
-        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
-        "source": "https://commons.wikimedia.org/wiki/File:Transporte_p%C3%BAblico_de_la_Ciudad_de_M%C3%A9xico_IMG_1004_(26911178281).jpg"
       }
     },
     {
@@ -96619,21 +96469,6 @@
         "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
         "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "commons_43610483",
-        "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Parque_Ecol%C3%B3gico_de_la_Ciudad_de_M%C3%A9xico_12.JPG/960px-Parque_Ecol%C3%B3gico_de_la_Ciudad_de_M%C3%A9xico_12.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "category": "Medio Ambiente",
-        "borough": "",
-        "topic": "Parque Ecológico de la Ciudad de México 12",
-        "keywords": [
-          "Parques Ciudad de México"
-        ],
-        "author": "Jafpe93",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Parque_Ecol%C3%B3gico_de_la_Ciudad_de_M%C3%A9xico_12.JPG"
       }
     },
     {
@@ -96652,21 +96487,6 @@
         "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
         "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "commons_76480857",
-        "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Transporte_p%C3%BAblico_de_la_Ciudad_de_M%C3%A9xico_IMG_1002_%2826911181031%29.jpg/960px-Transporte_p%C3%BAblico_de_la_Ciudad_de_M%C3%A9xico_IMG_1002_%2826911181031%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "category": "Movilidad",
-        "borough": "",
-        "topic": "Transporte público de la Ciudad de México IMG 1002 (26911181031)",
-        "keywords": [
-          "Metrobús Ciudad de México"
-        ],
-        "author": "Gobierno CDMX",
-        "license": "CC0",
-        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
-        "source": "https://commons.wikimedia.org/wiki/File:Transporte_p%C3%BAblico_de_la_Ciudad_de_M%C3%A9xico_IMG_1002_(26911181031).jpg"
       }
     },
     {
@@ -112086,16 +111906,6 @@
         "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
         "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "alcaldia_magdalena-contreras",
-        "url": "/assets/alcaldias/magdalena-contreras.jpg",
-        "category": "CDMX",
-        "borough": "La Magdalena Contreras",
-        "topic": "Río y bosque de Los Dinamos, La Magdalena Contreras",
-        "author": "Ananda xd",
-        "license": "CC BY-SA 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Rio_de_los_Dinamos_en_CDMX.jpg"
       }
     },
     {
@@ -115785,16 +115595,6 @@
         "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
         "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "archivo_cdmx_013",
-        "url": "/assets/fotos/archivo_cdmx_013.jpg",
-        "category": "CDMX",
-        "borough": "",
-        "topic": "D.F. - panoramio (9)",
-        "author": "eurimaco",
-        "license": "CC BY-SA 3.0",
-        "source": "https://commons.wikimedia.org/wiki/File:D.F._-_panoramio_%289%29.jpg"
       }
     },
     {
@@ -121185,16 +120985,6 @@
         "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
         "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "archivo_metro_003",
-        "url": "/assets/fotos/archivo_metro_003.jpg",
-        "category": "Metro",
-        "borough": "",
-        "topic": "Parafernalia del Metro (Ciudad de México)",
-        "author": "Juan Carlos Fonseca Mata",
-        "license": "CC BY-SA 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Parafernalia_del_Metro_%28Ciudad_de_M%C3%A9xico%29.jpg"
       }
     },
     {
@@ -122162,16 +121952,6 @@
         "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
         "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "archivo_cdmx_003",
-        "url": "/assets/fotos/archivo_cdmx_003.jpg",
-        "category": "CDMX",
-        "borough": "",
-        "topic": "D.F. - panoramio (7)",
-        "author": "eurimaco",
-        "license": "CC BY-SA 3.0",
-        "source": "https://commons.wikimedia.org/wiki/File:D.F._-_panoramio_%287%29.jpg"
       }
     },
     {
@@ -123014,16 +122794,6 @@
         "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
         "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "archivo_cdmx_014",
-        "url": "/assets/fotos/archivo_cdmx_014.jpg",
-        "category": "CDMX",
-        "borough": "",
-        "topic": "Cathedral (155478679)",
-        "author": "Francisco Donaldo Cabrera Cruz",
-        "license": "CC BY-SA 3.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Cathedral_%28155478679%29.jpeg"
       }
     },
     {
@@ -126351,16 +126121,6 @@
         "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
         "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "archivo_cdmx_003",
-        "url": "/assets/fotos/archivo_cdmx_003.jpg",
-        "category": "CDMX",
-        "borough": "",
-        "topic": "D.F. - panoramio (7)",
-        "author": "eurimaco",
-        "license": "CC BY-SA 3.0",
-        "source": "https://commons.wikimedia.org/wiki/File:D.F._-_panoramio_%287%29.jpg"
       }
     },
     {
@@ -127961,16 +127721,6 @@
         "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
         "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "alcaldia_benito-juarez",
-        "url": "/assets/alcaldias/benito-juarez.jpg",
-        "category": "CDMX",
-        "borough": "Benito Juárez",
-        "topic": "Parque Hundido, alcaldía Benito Juárez",
-        "author": "User:etnoboris",
-        "license": "CC BY-SA 3.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Parque_Hundido.jpeg"
       }
     },
     {
@@ -130578,16 +130328,6 @@
         "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
         "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "alcaldia_xochimilco",
-        "url": "/assets/alcaldias/xochimilco.jpg",
-        "category": "CDMX",
-        "borough": "Xochimilco",
-        "topic": "Trajineras y canales de Xochimilco",
-        "author": "Xbauerx",
-        "license": "CC BY-SA 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Trajineras_de_Xochimilco.jpg"
       }
     },
     {
@@ -130634,21 +130374,6 @@
         "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
         "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "commons_152180159",
-        "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Cosecha_de_Lluvia_02.jpg/960px-Cosecha_de_Lluvia_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "category": "Medio Ambiente",
-        "borough": "",
-        "topic": "Cosecha de Lluvia 02",
-        "keywords": [
-          "Lluvia Ciudad de México"
-        ],
-        "author": "Gobierno de la Ciudad de México",
-        "license": "CC BY 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Cosecha_de_Lluvia_02.jpg"
       }
     },
     {
