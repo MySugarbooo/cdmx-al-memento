@@ -440,10 +440,31 @@ def _photo_category(article):
 # Resguardos editoriales: una coincidencia geográfica o de categoría no basta.
 # Si la fototeca no tiene contexto del tema, se prefiere publicar sin imagen.
 STRICT_PHOTO_TOPICS = (
+    # Un edificio turístico no representa retrasos de vuelos ni operaciones aéreas.
+    (r"\b(?:aeropuerto|vuelos? demorados?|vuelos? retrasados?)\b",
+     r"\b(?:aeropuerto|aeronautica|aviones?|aeronaves?|vuelos?|terminal aerea|pista de aterrizaje)\b"),
+    # La captación de lluvia no es una imagen de pronóstico, frío o viento.
+    (r"\b(?:clima|pronostico|rachas de viento|mananas frias|frente frio)\b",
+     r"\b(?:clima|pronostico|meteorologia|temperatura|viento|frio|nubes?|cielo|tormenta|neblina)\b"),
+    # Atropellamientos y muertes viales no se ilustran con iglesias o plazas.
+    (r"\b(?:atropell\w*|arroll\w*)\b",
+     r"\b(?:microbus|autobus|vehiculos?|vehicular|trafico|transito|vialidad|carretera|avenida|peatones?|cruce peatonal)\b"),
+    # Los operativos de vigilancia no se ilustran con museos sin relación.
+    (r"\bpolicias?\b.*\b(?:cuidan|vigilan|operativo|despliegan)\b",
+     r"\b(?:policias?|patrullas?|vigilancia|seguridad|operativo|agentes?)\b"),
+    # Para detenciones de personas, una plaza de la misma alcaldía no basta.
+    (r"\b(?:detienen|arrestan|capturan|aprehenden)\s+a\s+(?:\d+|un|una|dos|tres|cuatro|cinco|seis|personas|hombres|mujeres)\b",
+     r"\b(?:policias?|patrullas?|fiscalia|justicia|tribunal|detencion|seguridad|investigacion penal)\b"),
+    (r"\bempleo de mujeres\b",
+     r"\b(?:empleo|trabajo|mujeres|oficinas?|economia|trabajadoras?)\b"),
+    (r"\bmorena\b.*\b(?:militantes|reunio|asamblea)\b",
+     r"\b(?:morena|militantes|asamblea|reunion|partido politico|politica)\b"),
+    (r"\b(?:asamblea comunitaria|autoridades auxiliares)\b",
+     r"\b(?:asamblea|comunitaria|vecinos|cabildo|reunion|autoridades auxiliares)\b"),
     (r"\b(?:juan atkins|pionero del techno)\b",
      r"\b(?:techno|musica|dj|vinilos?|discos?|escenario|concierto|musico|productor musical)\b"),
     (r"\b(?:perritos?|perros?|mascotas?|envenenamientos? de perros?)\b",
-     r"\b(?:perritos?|perros?|mascotas?|caninos?|animales?|veterinaria)\b"),
+     r"\b(?:perritos?|perros?|mascotas?|caninos?|veterinaria)\b"),
     (r"\b(?:matan|balazos|asesinan|homicidio|condenad[oa]s?|condenan|prision|delitos? contra)\b",
      r"\b(?:fiscalia|justicia|tribunal|juzgado|penitenciario|prision|ministerio publico|investigacion penal)\b"),
     (r"\b(?:sin agua|falta de agua|suspension de agua|corte de agua)\b",
