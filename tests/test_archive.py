@@ -942,6 +942,10 @@ class BoroughAndArchiveTests(unittest.TestCase):
                 self.assertGreaterEqual(news._photo_score(article, {
                     "category": category, "topic": appropriate,
                 }), 0)
+        self.assertEqual(news._photo_category({
+            "title": "Día de Muertos en CDMX: Panteones Reciben a Familias con Operativos de Seguridad",
+            "category": "Seguridad",
+        }), "Seguridad")
         cycling = {
             "title": "Prevén movilizaciones, rodadas ciclistas y eventos por Día de Muertos en CDMX",
             "category": "Movilidad",
