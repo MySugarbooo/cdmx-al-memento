@@ -42,6 +42,23 @@ class BoroughAndArchiveTests(unittest.TestCase):
         self.assertEqual(news.category_by_headline(
             "Capturan a dos sospechosos en CDMX", "CDMX"), "Seguridad")
 
+    def test_hoy_no_circula_is_mobility_and_rejects_catrina_photos(self):
+        title = "Día de Muertos, no de multas: Así aplica el Hoy No Circula este lunes 2 de noviembre"
+        self.assertEqual(news.category_by_headline(title, "CDMX"), "Movilidad")
+        self.assertEqual(news.category_by_headline(title, "Cultura"), "Movilidad")
+        article = fake(title, "2026-11-01")
+        self.assertEqual(news.standardize(article)["category"], "Movilidad")
+        self.assertEqual(news._photo_category(article), "Movilidad")
+        self.assertLess(news._photo_score(article, {
+            "category": "CDMX", "topic": "Desfile de Catrinas in Mexico City 2026 (53)",
+        }), 0)
+        self.assertLess(news._photo_score(article, {
+            "category": "Cultura", "topic": "Día de Muertos y desfile de Catrinas",
+        }), 0)
+        self.assertGreaterEqual(news._photo_score(article, {
+            "category": "Movilidad", "topic": "Tráfico vehicular en Paseo de la Reforma",
+        }), 0)
+
     def test_road_closures_are_mobility_and_reject_patrol_photos(self):
         article = fake("GP de México 2026: Calles Cerradas y Alternativas Viales en CDMX", "2026-11-01")
         article["category"] = "Seguridad"  # Clasificación de origen RSS.

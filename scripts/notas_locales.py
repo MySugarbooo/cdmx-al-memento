@@ -426,6 +426,9 @@ def _photo_category(article):
     # "Poner en marcha" un programa no describe una marcha o protesta vial.
     headline=re.sub(r"\b(?:pone|ponen|puso|poner|puesta|entra|entro|entrara)\s+en\s+marcha\b",
                     "activa", headline)
+    # Un aviso del Hoy No Circula no es una nota cultural aunque mencione Día de Muertos.
+    if re.search(r"\bhoy no circula\b", headline):
+        return "Movilidad"
     for pattern,category in SUBJECT_RULES:
         if re.search(pattern,headline):
             return category
@@ -451,6 +454,10 @@ def _photo_score(article, photo):
     # Una clasificación RSS errónea no autoriza cambiar el tema de la imagen.
     if photo_category not in (category, "CDMX", "Alcaldías"):
         return -10000
+    # Una nota del Hoy No Circula requiere contexto vehicular, no fotos de la festividad.
+    if re.search(r"\bhoy no circula\b", headline):
+        if not re.search(r"\b(?:vehiculos?|vehicular|automoviles?|autos?|coches?|transito|trafico|vialidad|circulacion|hologramas?|verificacion vehicular|hoy no circula)\b", context):
+            return -10000
     # Para noticias de ciclismo, exigir una fotografía relacionada con bicicletas.
     if re.search(r"\b(?:muevete en bici|paseo dominical|bicicletas?|ciclistas?|ciclismo|ciclovias?|ecobici|cicloton)\b", headline):
         if not re.search(r"\b(?:bici|bicicletas?|ciclistas?|ciclovias?|ecobici|cicloton)\b", context):
