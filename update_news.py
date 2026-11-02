@@ -210,6 +210,14 @@ def category_by_headline(title, feed_category):
     if (feed_category in {"CDMX", "Gobierno"}
             and re.search(r"\b(?:grupos? criminales?|organizaciones? criminales?|crimen organizado)\b", normalized)):
         return "Seguridad"
+    # Una agresión violenta no es Cultura por mencionar el Día de Muertos.
+    if (feed_category in {"CDMX", "Gobierno", "Cultura"}
+            and re.search(r"\b(?:ataque armado|balacera|asesina(?:n)? a|asesinato)\b", normalized)):
+        return "Seguridad"
+    # Las marchas y concentraciones anunciadas son información vial, no un delito.
+    if (re.search(r"\bmarchas?\b.*\b(?:hoy|noviembre|bloqueos?|concentraciones?)\b", normalized)
+            and not re.search(r"\b(?:detienen|policias?|operativo policial|balacera|ataque armado)\b", normalized)):
+        return "Movilidad"
     # Etiquetas editoriales inequívocas aunque el feed general use "CDMX".
     if (feed_category in {"CDMX", "Gobierno"}
             and re.search(r"\b(?:matan a balazos|asesinan a|homicidio|condenad[oa]s?|condenan|prision)\b", normalized)):
