@@ -440,6 +440,15 @@ def _photo_category(article):
     # Un aviso del Hoy No Circula no es una nota cultural aunque mencione Día de Muertos.
     if re.search(r"\bhoy no circula\b", headline):
         return "Movilidad"
+    # Los resultados deportivos del GP no deben heredar fotografías de tráfico.
+    if re.search(r"\b(?:formula 1|gp ciudad de mexico|gran premio|nascar)\b", headline):
+        if re.search(
+            r"\b(?:cierres? viales?|calles? cerradas?|trafico|congestionamiento|"
+            r"desvios?|rutas? alternas?|alternativas? viales?|transporte publico|"
+            r"estacionamientos?)\b", headline
+        ):
+            return "Movilidad"
+        return "CDMX"
     # Los ataques y homicidios prevalecen sobre menciones a festividades.
     if re.search(r"\b(?:ataque armado|balacera|asesina(?:n)?|asesinad\w*|asesinato)\b", headline):
         return "Seguridad"

@@ -246,9 +246,16 @@ def published_datetime(value):
 def category_by_headline(title, feed_category):
     """Corrige etiquetas RSS evidentes sin inventar ubicaciones o hechos."""
     normalized = fold(title)
-    # No clasificar como Metro noticias deportivas de Fórmula 1 o NASCAR.
+    # El automovilismo es deporte, no un aviso de tránsito ni del Metro.
+    # Solo sus cierres y afectaciones viales pertenecen a Movilidad.
     if re.search(r"\b(?:formula 1|gp ciudad de mexico|gran premio|nascar)\b", normalized):
-        return "Movilidad"
+        if re.search(
+            r"\b(?:cierres? viales?|calles? cerradas?|trafico|congestionamiento|"
+            r"desvios?|rutas? alternas?|alternativas? viales?|transporte publico|"
+            r"estacionamientos?)\b", normalized
+        ):
+            return "Movilidad"
+        return "CDMX"
     # El estado del Metrobús pertenece a Movilidad, no a la categoría general.
     if re.search(r"\bmetrobus\b", normalized):
         return "Movilidad"

@@ -232,6 +232,29 @@ class BoroughAndArchiveTests(unittest.TestCase):
             "category": "CDMX", "topic": "Autódromo Hermanos Rodríguez circuito",
         }), 0)
 
+    def test_formula_one_results_are_not_traffic_advisories(self):
+        # Caso real del 02-11: un ranking de pilotos mostraba consejos de traslado.
+        racing = (
+            "El polémico lugar que un medio inglés le dio a Franco Colapinto "
+            "en su ranking del GP Ciudad de México de Fórmula 1"
+        )
+        for feed in ("CDMX", "Metro", "Movilidad"):
+            with self.subTest(feed=feed):
+                self.assertEqual(news.category_by_headline(racing, feed), "CDMX")
+        article = fake(racing, "2026-11-02")
+        article["category"] = "Movilidad"
+        fixed = news.standardize(article)
+        self.assertEqual(fixed["category"], "CDMX")
+        self.assertEqual(_photo_category(fixed), "CDMX")
+        self.assertNotIn("organizar recorridos", fixed["brief"]["context"])
+        self.assertNotIn("autoridades de movilidad", fixed["brief"]["pending"])
+
+        closures = "GP Ciudad de México: calles cerradas y alternativas viales"
+        self.assertEqual(news.category_by_headline(closures, "Metro"), "Movilidad")
+        self.assertEqual(_photo_category({"title": closures, "category": "CDMX"}), "Movilidad")
+        self.assertEqual(news.category_by_headline(
+            "NASCAR: resultados de la carrera en CDMX", "Metro"), "CDMX")
+
     def test_formula_one_victory_requires_racing_photo(self):
         # La portada del 2 de noviembre mostraba una calle del Centro Histórico
         # para una victoria de Verstappen; la coincidencia "CDMX" no basta.
