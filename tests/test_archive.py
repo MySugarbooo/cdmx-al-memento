@@ -1050,6 +1050,9 @@ class BoroughAndArchiveTests(unittest.TestCase):
 
     def test_november_2_new_photo_mismatches_are_rejected(self):
         # Emparejamientos observados en el índice público a las 20:22 UTC.
+        self.assertEqual(news.category_by_headline(
+            "Mujer y menor de edad son asesinados a tiros en Tepito, alcaldía Cuauhtémoc",
+            "CDMX"), "Seguridad")
         cases = (
             ("Mirna Vargas realiza caminata de CDMX a Xalapa buscando recuperar a su hija",
              "Jardin Escénico del Bosque de Chapultepec 01",
