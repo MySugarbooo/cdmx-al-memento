@@ -456,7 +456,7 @@ STRICT_PHOTO_TOPICS = (
      r"\b(?:bloqueos?|manifestaciones?|protestas?|trafico|transito|vialidad|accidentes?|vehicular)\b"),
     # Una noticia sanitaria sobre carne descompuesta no es turismo de Xochimilco.
     (r"\b(?:carne podrida|frigorifico|toneladas de carne)\b",
-     r"\b(?:carne|frigorifico|carnicerias?|alimentos?|mercados?|inspeccion sanitaria|refrigeracion)\b"),
+     r"\b(?:carne|frigorifico|carnicerias?|alimentos?|inspeccion sanitaria|refrigeracion)\b"),
     # Megarrodada sin el sufijo "del Terror" también exige motos.
     (r"\b(?:mega ?rodada|megarrodada)\b",
      r"\b(?:motos?|motocicletas?|motociclistas?|rodada)\b"),
