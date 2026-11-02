@@ -55,9 +55,11 @@ class PortalTests(unittest.TestCase):
         home = get("index.html")
         hero = home.split('id="neo-home"', 1)[1].split('class="neo-right-column"', 1)[0]
         # La portada HTML inicial también la leen robots y navegadores sin JS.
-        self.assertIn('Noticias pendientes de verificación fotográfica', hero)
+        self.assertIn('Noticias de Ciudad de México', hero)
         self.assertNotIn('Falta mantenimiento en caminos seguros de Iztapalapa', hero)
-        self.assertNotIn('id="neo-hero-img" class="neo-hero-image" src=', hero)
+        # Foto de contexto estática permitida con una etiqueta que evita confundirla con el suceso.
+        self.assertIn('id="neo-hero-img" class="neo-hero-image" src="/assets/fotos/reforma.jpg"', hero)
+        self.assertIn('Imagen de archivo representativa', hero)
         news = home.split('id="neo-news-grid"', 1)[1].split('id="neo-news-more"', 1)[0]
         self.assertNotIn('class="neo-news-card"', news)
         lead = home.split('id="nota-principal"', 1)[1].split('id="topic-stage"', 1)[0]
