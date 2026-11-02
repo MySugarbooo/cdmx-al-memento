@@ -1,7 +1,25 @@
 {
   "month": "2026-11",
-  "updated": "2026-11-02 17:13 UTC",
+  "updated": "2026-11-02 17:15 UTC",
   "articles": [
+    {
+      "title": "¿Cómo Estará el Clima Mañana en CDMX? Conagua Informa Si Habrá Lluvias o Bajas Temperaturas",
+      "description": "De acuerdo con N+, el titular publicado es: «¿Cómo Estará el Clima Mañana en CDMX? Conagua Informa Si Habrá Lluvias o Bajas Temperaturas». El pronóstico recogido por N+ se refiere a lluvias en la capital. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
+      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPREhQTGs0QmRUa3FBUTRJOWtEa09ZZzZMMFlid1FoVTZvMU12dFZzWXVPVGYtblhwX1poY09nd3ZLeGxFS09obWt3SUM1RzdwSTlzdXBjUnVjcC0zOW44RGx5Q04zS0xHSkFWeUo4WE5VcTI3WjhQdUR0b2Q3M0pXaVBOdndKdHhrd0JjRjhTWUdDWWxrVWwtOHJZa19La0F5SE5wVW5aNEZnUHhiMWItNVBHQjRxOVJ1WW1fWTBabXRjMjJOUko2TXdkajJJVlhoQkVvVWstR0o?oc=5",
+      "source": "N+",
+      "date": "2026-11-02",
+      "published_at": "2026-11-02T17:08:10Z",
+      "category": "CDMX",
+      "borough": "",
+      "location": "Ciudad de México (sin alcaldía identificada)",
+      "local_url": "/noticias/?id=dc7db2b8ade62aefdb10&mes=2026-11",
+      "brief": {
+        "lead": "De acuerdo con N+, el titular publicado es: «¿Cómo Estará el Clima Mañana en CDMX? Conagua Informa Si Habrá Lluvias o Bajas Temperaturas». El pronóstico recogido por N+ se refiere a lluvias en la capital. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
+        "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+        "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      }
+    },
     {
       "title": "Rescatan a dos hombres tras caer a una fosa de seis metros en Milpa Alta | VIDEO",
       "description": "De acuerdo con Excélsior, el titular publicado es: «Rescatan a dos hombres tras caer a una fosa de seis metros en Milpa Alta | VIDEO». La información publicada por Excélsior aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -4436,19 +4454,24 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "commons_75043472",
+        "id": "contexto_trafico_eje_central",
         "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/005278-003_PAVIMENTACI%C3%93N_EN_LA_CARRETERA_DE_LOS_DINAMOS_EN_LA_MAGDALENA_CONTRERAS_FEBRERO_20_1941_%2826963275808%29.jpg/960px-005278-003_PAVIMENTACI%C3%93N_EN_LA_CARRETERA_DE_LOS_DINAMOS_EN_LA_MAGDALENA_CONTRERAS_FEBRERO_20_1941_%2826963275808%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "category": "Alcaldías",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Eje_Central_CDMX.jpg/1280px-Eje_Central_CDMX.jpg",
+        "category": "Movilidad",
         "borough": "",
-        "topic": "005278-003 PAVIMENTACIÓN EN LA CARRETERA DE LOS DINAMOS EN LA MAGDALENA CONTRERAS FEBRERO 20 1941 (26963275808)",
+        "topic": "Tráfico vehicular en Eje Central, Ciudad de México (fotografía de 2018)",
         "keywords": [
-          "Magdalena Contreras Ciudad de México"
+          "tráfico",
+          "vehículos",
+          "automóviles",
+          "movilidad",
+          "hoy no circula",
+          "vialidad"
         ],
-        "author": "Gobierno CDMX",
-        "license": "CC0",
-        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
-        "source": "https://commons.wikimedia.org/wiki/File:005278-003_PAVIMENTACI%C3%93N_EN_LA_CARRETERA_DE_LOS_DINAMOS_EN_LA_MAGDALENA_CONTRERAS_FEBRERO_20_1941_(26963275808).jpg"
+        "author": "Sergio Estrada Flores",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:Eje_Central_CDMX.jpg"
       }
     },
     {
