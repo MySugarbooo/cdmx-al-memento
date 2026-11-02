@@ -997,5 +997,56 @@ class BoroughAndArchiveTests(unittest.TestCase):
         }), 0)
 
 
+    def test_november_2_live_editorial_regressions(self):
+        # Incidencias confirmadas en news.json y HTML públicos del 2 de noviembre.
+        shooting = {
+            "title": "Tepito: una mujer y un niño murieron baleados en el cruce de Peñón y Tenochtitlán",
+            "category": "Seguridad",
+        }
+        self.assertEqual(news.category_by_headline(shooting["title"], "CDMX"), "Seguridad")
+        self.assertEqual(_photo_category(shooting), "Seguridad")
+        self.assertLess(news._photo_score(shooting, {
+            "category": "Seguridad",
+            "topic": "Graduación de la Policía de la Ciudad de México -i---i- (37018695916)",
+            "keywords": ["Policía Ciudad de México"],
+        }), 0)
+        self.assertGreaterEqual(news._photo_score(shooting, {
+            "category": "Seguridad", "topic": "Investigación penal de Fiscalía CDMX",
+        }), 0)
+
+        rainwater = {
+            "title": "La captación de agua de lluvia busca transformar la vida en el sur de la Ciudad de México",
+            "category": "CDMX", "source": "ABC Noticias",
+        }
+        lead = news.summarize(rainwater)["lead"].lower()
+        self.assertIn("captación", lead)
+        self.assertNotIn("pronóstico", lead)
+        self.assertIn("no de una previsión del tiempo", lead)
+        self.assertLess(news._photo_score(rainwater, {
+            "category": "Medio Ambiente", "topic": "Plantas con gotas de lluvia, Ciudad de México",
+        }), 0)
+        self.assertGreaterEqual(news._photo_score(rainwater, {
+            "category": "Medio Ambiente", "topic": "Sistema de captación de agua de lluvia con cisterna",
+        }), 0)
+
+        prison = {
+            "title": "Una Mujer acompañada por un menor, Intentan ingresar marihuana al Reclusorio Varonil Oriente en Iztapalapa; y los detienen",
+            "category": "Seguridad", "borough": "Iztapalapa",
+        }
+        self.assertLess(news._photo_score(prison, {
+            "category": "Seguridad", "topic": "Metro Iztapalapa 02",
+        }), 0)
+        self.assertGreaterEqual(news._photo_score(prison, {
+            "category": "Seguridad", "topic": "Reclusorio Varonil Oriente Iztapalapa",
+        }), 0)
+
+        self.assertEqual(news.category_by_headline(
+            "Movilizaciones en CDMX hoy 2 de noviembre: ¿Dónde habrá concentraciones, eventos y plantones?",
+            "Seguridad"), "Movilidad")
+        self.assertEqual(news.category_by_headline(
+            "La Catrina monumental del Zócalo de la Ciudad de México rompe récord Guinness",
+            "Gobierno"), "Cultura")
+
+
 if __name__ == "__main__":
     unittest.main()
