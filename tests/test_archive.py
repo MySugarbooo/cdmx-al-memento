@@ -172,6 +172,57 @@ class BoroughAndArchiveTests(unittest.TestCase):
             "category": "CDMX", "topic": "Autódromo Hermanos Rodríguez circuito",
         }), 0)
 
+    def test_new_photo_guardrails_reject_mismatched_landmarks(self):
+        # Fotografías representativas sí, pero no iglesias para muertes,
+        # parques para mascotas, ni edificios de gobierno para bloqueos.
+        cases = [
+            ("Fallece Juan Atkins, pionero de la música techno, en la CDMX",
+             "Iglesia de San Juan Bautista en Coyoacán", "DJ en escenario de música techno"),
+            ("Perritos piden calaverita en la Central de Abastos",
+             "Parque Lira Ciudad de México", "Perros y mascotas en una plaza"),
+            ("Matan a Balazos a un Hombre en Azcapotzalco",
+             "Parroquia de Santa Catarina", "Edificio de la Fiscalía de CDMX"),
+            ("Coyoacán sin agua las próximas 40 horas",
+             "Plaza central de Coyoacán", "Tuberías de abastecimiento de agua"),
+            ("Fallece motociclista en la México-Cuernavaca",
+             "Ángel de la Independencia en la noche", "Motocicletas en carretera"),
+            ("Colectivo de Búsqueda Bloquea Avenida Juárez",
+             "Sala de Tesorería en Palacio Nacional", "Protesta en avenida Juárez"),
+            ("Panteón donde descansan ídolos de México",
+             "Plaza central de San Pedro Tláhuac", "Panteón y tumbas históricas"),
+            ("Gran Desfile de Día de Muertos reúne a miles",
+             "Exposición en el Museo Nacional de Antropología", "Desfile de Catrinas"),
+            ("Recuerdo de Bono del concierto de U2 en CDMX",
+             "Ciudad Universitaria dedication plaque", "Concierto de música rock"),
+            ("Trámite de licencia de conducir permanente",
+             "Palacio Nacional Ciudad de México", "Trámite de licencia de conducir"),
+            ("Cuál es la calidad del aire en CDMX",
+             "Alameda Central desde el aire", "Contaminación del aire en CDMX"),
+        ]
+        for title, unrelated, relevant in cases:
+            article = {"title": title, "category": "CDMX"}
+            with self.subTest(title=title):
+                self.assertLess(news._photo_score(article, {
+                    "category": "CDMX", "topic": unrelated,
+                }), 0)
+                self.assertGreaterEqual(news._photo_score(article, {
+                    "category": "CDMX", "topic": relevant,
+                }), 0)
+
+    def test_editorial_headline_categories_for_crime_parade_and_road(self):
+        self.assertEqual(news.category_by_headline(
+            "Matan a Balazos a un Hombre en Azcapotzalco", "CDMX"), "Seguridad")
+        self.assertEqual(news.category_by_headline(
+            "Condenan a un hombre a prisión en CDMX", "CDMX"), "Seguridad")
+        self.assertEqual(news.category_by_headline(
+            "Gran Desfile de Día de Muertos reúne a miles", "Seguridad"), "Cultura")
+        self.assertEqual(news.category_by_headline(
+            "Colectivo de Búsqueda Bloquea Avenida Juárez", "Gobierno"), "Movilidad")
+        self.assertEqual(news.category_by_headline(
+            "Fallece motociclista en la México-Cuernavaca", "CDMX"), "Movilidad")
+        self.assertEqual(news.category_by_headline(
+            "Desfile de policías por operativo de seguridad", "Seguridad"), "Seguridad")
+
     def test_unambiguous_outside_region_is_not_promoted_or_mislocated(self):
         title = "Muere conductor tras chocar contra autobús en Carretera a Laredo en Escobedo"
         self.assertTrue(news.outside_cdmx_scope(title))
