@@ -6,6 +6,7 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from unittest.mock import patch
 import update_news as news
+from scripts.notas_locales import _photo_category
 
 
 def fake(title, date, published_at=None):
@@ -48,7 +49,7 @@ class BoroughAndArchiveTests(unittest.TestCase):
         self.assertEqual(news.category_by_headline(title, "Cultura"), "Movilidad")
         article = fake(title, "2026-11-01")
         self.assertEqual(news.standardize(article)["category"], "Movilidad")
-        self.assertEqual(news._photo_category(article), "Movilidad")
+        self.assertEqual(_photo_category(article), "Movilidad")
         self.assertLess(news._photo_score(article, {
             "category": "CDMX", "topic": "Desfile de Catrinas in Mexico City 2026 (53)",
         }), 0)
