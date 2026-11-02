@@ -445,7 +445,7 @@ STRICT_PHOTO_TOPICS = (
     (r"\b(?:perritos?|perros?|mascotas?|envenenamientos? de perros?)\b",
      r"\b(?:perritos?|perros?|mascotas?|caninos?|animales?|veterinaria)\b"),
     (r"\b(?:matan|balazos|asesinan|homicidio|condenad[oa]s?|condenan|prision|delitos? contra)\b",
-     r"\b(?:policias?|fiscalia|justicia|tribunal|juzgado|penitenciario|prision|seguridad|ministerio publico)\b"),
+     r"\b(?:fiscalia|justicia|tribunal|juzgado|penitenciario|prision|ministerio publico|investigacion penal)\b"),
     (r"\b(?:sin agua|falta de agua|suspension de agua|corte de agua)\b",
      r"\b(?:agua|tuberias?|acueducto|pozo|abastecimiento|red hidraulica|cisterna|pipas?|grifos?)\b"),
     (r"\b(?:fallece motociclista|muere motociclista|motociclistas? fallecidos?)\b",
