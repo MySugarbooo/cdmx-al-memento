@@ -4,7 +4,7 @@ import unittest
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
-from build_article_seo import render_photo
+from build_article_seo import render, render_photo
 
 
 class ArticlePhotoTests(unittest.TestCase):
@@ -14,6 +14,20 @@ class ArticlePhotoTests(unittest.TestCase):
         self.assertIn("Aeropuerto Internacional de la Ciudad de México", page)
         self.assertNotIn("Monumento_a_Col", page)
         self.assertIn("Sin fotografía del aeropuerto", page)
+
+    def test_external_archive_article_is_not_labeled_as_cdmx(self):
+        item = {
+            "title": "Asamblea comunitaria determina relevo de autoridades auxiliares en Álvaro Obregón",
+            "source": "Meganoticias.mx", "date": "2026-11-01",
+            "local_url": "/noticias/?id=69e99bd8aec5a3438db7&mes=2026-11",
+            "location": "Álvaro Obregón, Juchitán, Oaxaca (fuera de CDMX)",
+            "category": "CDMX",
+        }
+        page = render(item, "69e99bd8aec5a3438db7")
+        self.assertIn("Álvaro Obregón, Juchitán, Oaxaca (fuera de CDMX) · 2026-11-01", page)
+        self.assertNotIn("<p>CDMX · 2026-11-01", page)
+        item["location"] = "Coyoacán (mencionada en el titular)"
+        self.assertIn("<p>CDMX · 2026-11-01", render(item, "69e99bd8aec5a3438db7"))
 
     def test_local_photo_keeps_credits(self):
         html = render_photo({"category": "Seguridad", "photo": {
