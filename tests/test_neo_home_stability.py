@@ -21,7 +21,11 @@ class StableHomepageTests(unittest.TestCase):
         self.assertIn('id="neo-official-map"', home)
         self.assertIn('id="neo-news-grid"', home)
         self.assertIn('id="neo-links"', home)
-        self.assertGreaterEqual(home.count('class="neo-news-card"'), 4)
+        # El HTML inicial conserva el diseño, sin publicar tarjetas antiguas
+        # con fotos genéricas cuando no existe evidencia documental del hecho.
+        self.assertNotIn('class="neo-news-card"', home)
+        self.assertIn('Comprobando noticias con fotografías documentales verificadas', home)
+        self.assertIn('Noticias pendientes de verificación fotográfica', home)
         for path in ("/cdmx/", "/seguridad/", "/servicios/", "/alcaldias/", "/comunidad/"):
             self.assertIn('href="' + path + '"', home)
         self.assertEqual(home.count('id="neo-home"'), 1)
