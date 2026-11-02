@@ -448,9 +448,9 @@ def _photo_category(article):
 # Resguardos editoriales: una coincidencia geográfica o de categoría no basta.
 # Si la fototeca no tiene contexto del tema, se prefiere publicar sin imagen.
 STRICT_PHOTO_TOPICS = (
-    # No ilustrar noticias sobre crimen organizado con teatro u obras culturales.
+    # Para crimen organizado, ni teatro ni graduaciones de policía o patrullas genéricas.
     (r"\b(?:grupos? criminales?|organizaciones? criminales?|crimen organizado)\b",
-     r"\b(?:fiscalia|justicia|investigacion penal|policias?|patrullas?|seguridad|delitos?|crimen organizado|operativo policial|central de abasto)\b"),
+     r"\b(?:fiscalia|investigacion penal|crimen organizado|operativo policial|central de abasto)\b"),
     # Los precios de gasolina necesitan imagen de combustible o estación de servicio.
     (r"\b(?:precios? de (?:la )?gasolina|gasolineras?|combustibles?)\b",
      r"\b(?:gasolina|gasolineras?|combustibles?|estacion de servicio|surtidor|bomba de gasolina)\b"),
