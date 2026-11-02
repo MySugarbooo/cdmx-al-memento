@@ -645,7 +645,7 @@ def generate_report():
         for category in GENERAL_FEEDS:
             group = [x for x in rows if x.get("category") == category
                      and (category != "Metro" or re.search(
-                         r"\bmetro\\b|\\bmetrob[uú]s\\b|l[ií]nea\\s+(?:[1-9]|1[02]|A|B)\\b",
+                         r"\\bmetro\\b|\\bmetrob[uú]s\\b|l[ií]nea\\s+(?:[1-9]|1[02]|A|B)\\b",
                          x.get("title", ""), re.I))
                      and (category != "Seguridad" or re.search(
                          r"seguridad|ssc|polic[ií]a|detien|homicid|robo|asalto|"
