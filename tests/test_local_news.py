@@ -42,6 +42,20 @@ class LocalNewsTests(unittest.TestCase):
         self.assertIn("titular",brief["method"])
         self.assertNotIn("entrevistamos",brief["lead"])
 
+    def test_fatal_microbus_headline_is_not_described_as_unknown_outcome(self):
+        article = {
+            "title": "Microbús Atropella y Mata a un Hombre en Situación de Calle en Azcapotzalco",
+            "url": "https://news.google.com/rss/articles/example-fatal-microbus",
+            "source": "N+", "date": "2026-11-01",
+            "category": "Movilidad", "borough": "Azcapotzalco",
+        }
+        lead = summarize(article)["lead"]
+        self.assertIn("un microbús", lead)
+        self.assertIn("El propio titular señala un fallecimiento", lead)
+        self.assertNotIn("no permite determinar", lead)
+        article["title"] = "Choque entre dos vehículos en Azcapotzalco"
+        self.assertIn("no permite determinar", summarize(article)["lead"])
+
     def test_reader_is_internal_and_signed(self):
         html=(ROOT/"noticias/index.html").read_text(encoding="utf-8")
         js=(ROOT/"assets/noticias-locales.js").read_text(encoding="utf-8")
