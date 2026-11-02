@@ -512,6 +512,40 @@ class BoroughAndArchiveTests(unittest.TestCase):
         # El registro puede conservarse en la hemeroteca; solo se evita
         # su incorporación a la portada de noticias de CDMX.
 
+    def test_november_2_arrests_crash_and_water_photo_mismatches(self):
+        # Fotografías observadas en el índice público del 2 de noviembre.
+        cases = [
+            ("Accidente en Iztacalco Hoy: Hay Autos Destrozados y una Motocicleta Aplastada",
+             "Movilidad", "Iztacalco",
+             "Vista aérea del Autódromo Hermanos Rodríguez, Ciudad de México (fotografía de 2025)",
+             "Tráfico de autos y motocicletas en avenida de Iztacalco"),
+            ("Detienen a tres con más de cien dosis de droga en la Cdmx",
+             "Seguridad", "",
+             "Policía controlando el semáforo, Ciudad de México",
+             "Operativo policial de detención en Ciudad de México"),
+            ("Detienen a tres hombres por construcción irregular en suelo de conservación de Tláhuac",
+             "Seguridad", "Tláhuac",
+             "Nuevas patrullas para Cuajimalpa 02",
+             "Operativo de Fiscalía en Tláhuac"),
+            ("Detienen a tres hombres por construcción irregular en suelo de conservación de Tláhuac; ¿qué pasó?",
+             "Seguridad", "Tláhuac",
+             "Entrega Claudia Sheinbaum 113 nuevas patrullas en Gustavo A Madero 02",
+             "Operativo de Fiscalía en Tláhuac"),
+            ("Coyoacán sin agua las próximas 40 horas: LISTA de colonias afectadas",
+             "CDMX", "Coyoacán",
+             "Registro de agua. Primera Sección del Bosque de Chapultepec - 4",
+             "Tuberías de abastecimiento de agua en Coyoacán"),
+        ]
+        for title, category, borough, unrelated, relevant in cases:
+            article = {"title": title, "category": category, "borough": borough}
+            with self.subTest(title=title):
+                self.assertLess(news._photo_score(article, {
+                    "category": category, "topic": unrelated,
+                }), 0)
+                self.assertGreaterEqual(news._photo_score(article, {
+                    "category": category, "topic": relevant,
+                }), 0)
+
     def test_motorcycle_crash_does_not_use_church_photo(self):
         # Incongruencia comprobada en news.json del 2 de noviembre.
         crash = {
