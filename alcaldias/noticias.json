@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-02 03:01 UTC",
+  "updated": "2026-11-02 03:08 UTC",
   "boroughs": [
     {
       "name": "La Magdalena Contreras",
@@ -1518,32 +1518,35 @@
       "articles": [
         {
           "title": "Matan a Balazos a un Hombre de 30 Años en la Alcaldía Azcapotzalco, CDMX",
-          "description": "De acuerdo con N+, el titular publicado es: «Matan a Balazos a un Hombre de 30 Años en la Alcaldía Azcapotzalco, CDMX». La información publicada por N+ trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "description": "De acuerdo con N+, el titular publicado es: «Matan a Balazos a un Hombre de 30 Años en la Alcaldía Azcapotzalco, CDMX». La información publicada por N+ trata un asunto registrado en la sección de Seguridad del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
           "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQcWs1VW1MYWs2SjF2aThTWVBHTkcydGE3Z2ZfeUNkekV0dUZxdmNZRHhWS1ZxckdzWDB2bzlvZVozZThXZUZBTElHbTBEcHJRZVlETmxGMzVVWFV0QUxLVmMxUnZVeGRwek5EQklWSzZHa050RDU5OWVkNlBGRmpHcUhPcG9OYUhiWVRNTGtORE93RkR4R2pZeEVTaElUNDRJTGd1NEgyUHp0OXZvbnRHLU5RU0tZeUhfVnEyWG83YnRkVkJGNW1Kc29QcERZbm5QRVhBZ3ZYcnU0T2w4SDZxOHBR?oc=5",
           "source": "N+",
           "date": "2026-11-01",
           "published_at": "2026-11-02T02:00:53Z",
-          "category": "CDMX",
+          "category": "Seguridad",
           "borough": "Azcapotzalco",
           "location": "Azcapotzalco (mencionada en el titular)",
           "local_url": "/noticias/?id=03bc3b844f0aa6e7d455&mes=2026-11",
           "brief": {
-            "lead": "De acuerdo con N+, el titular publicado es: «Matan a Balazos a un Hombre de 30 Años en la Alcaldía Azcapotzalco, CDMX». La información publicada por N+ trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "lead": "De acuerdo con N+, el titular publicado es: «Matan a Balazos a un Hombre de 30 Años en la Alcaldía Azcapotzalco, CDMX». La información publicada por N+ trata un asunto registrado en la sección de Seguridad del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           },
           "photo": {
-            "id": "alcaldia_azcapotzalco",
+            "id": "commons_75246045",
             "kind": "representativa",
-            "url": "/assets/alcaldias/azcapotzalco.jpg",
-            "category": "CDMX",
-            "borough": "Azcapotzalco",
-            "topic": "Parroquia de Santa Catarina, Azcapotzalco",
-            "author": "Ivan alcantara",
-            "license": "CC BY-SA 3.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-            "source": "https://commons.wikimedia.org/wiki/File:PARROQUIA_DE_SANTA_CATARINA_%28AZCAPOTZALCO%29.jpg"
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Graduaci%C3%B3n_de_la_Polic%C3%ADa_de_la_Ciudad_de_M%C3%A9xico_-i---i-_%2837018417736%29.jpg/960px-Graduaci%C3%B3n_de_la_Polic%C3%ADa_de_la_Ciudad_de_M%C3%A9xico_-i---i-_%2837018417736%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "category": "Seguridad",
+            "borough": "",
+            "topic": "Graduación de la Policía de la Ciudad de México -i---i- (37018417736)",
+            "keywords": [
+              "Policía Ciudad de México"
+            ],
+            "author": "Gobierno CDMX",
+            "license": "CC0",
+            "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+            "source": "https://commons.wikimedia.org/wiki/File:Graduaci%C3%B3n_de_la_Polic%C3%ADa_de_la_Ciudad_de_M%C3%A9xico_-i---i-_(37018417736).jpg"
           }
         },
         {
@@ -1746,19 +1749,19 @@
         },
         {
           "title": "Asesinan a balazos a un hombre en la colonia Tlatilco, Azcapotzalco",
-          "description": "De acuerdo con Telediario, el titular publicado es: «Asesinan a balazos a un hombre en la colonia Tlatilco, Azcapotzalco». La información publicada por Telediario trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "description": "De acuerdo con Telediario, el titular publicado es: «Asesinan a balazos a un hombre en la colonia Tlatilco, Azcapotzalco». La información publicada por Telediario trata un asunto registrado en la sección de Seguridad del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
           "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNT01FQjY2U3NuMWl1RjhqMEppNmNmYnZwZFJBVklpT3oyUjVuVWpwemlVQ2NTN29zSjFDZEtCS05vZkZXbkhVakhkYXVwdWg3TFJoZnVxa2hiYUoxMUxvbDRmakhhcVcxSDI1MzFqcF9JMEs1YTRMTC1RTHRwYlhCUVRseU9zdV9XUkQzMFVma3RzWUdBT0ZhX09LMjhGUFVjd0FKemNEZGlDU2fSAasBQVVfeXFMTkl6X3FxR0laSUJLY1lxcDdteGdoeV9yWTU3V0RwQmRLTDVLVjgxdEZORjdPamFWZk5RUVZQRExQYndoWlFzUGxCdFFQMkRYSzhNdUVNZDhaQk1GMWFoWGpKSVlTOGRFY2xwSjRQSDNiTWxzQzRUTDVtVURGU1lQNXIxOUlEN08xc3RiMnVZWXVrZTdYZVI4azFHSlNlMkhManFBRTAyVzNMc2gw?oc=5",
           "source": "Telediario",
           "date": "2026-10-30",
           "published_at": "2026-10-30T16:11:28Z",
-          "category": "CDMX",
+          "category": "Seguridad",
           "borough": "Azcapotzalco",
           "location": "Azcapotzalco (mencionada en el titular)",
           "local_url": "/noticias/?id=e280fe1f21bf3075a73d&mes=2026-10",
           "brief": {
-            "lead": "De acuerdo con Telediario, el titular publicado es: «Asesinan a balazos a un hombre en la colonia Tlatilco, Azcapotzalco». La información publicada por Telediario trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "lead": "De acuerdo con Telediario, el titular publicado es: «Asesinan a balazos a un hombre en la colonia Tlatilco, Azcapotzalco». La información publicada por Telediario trata un asunto registrado en la sección de Seguridad del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           },
           "photo": {
@@ -1776,19 +1779,19 @@
         },
         {
           "title": "Matan a balazos a un hombre en calles de Azcapotzalco",
-          "description": "De acuerdo con El Universal, el titular publicado es: «Matan a balazos a un hombre en calles de Azcapotzalco». La información publicada por El Universal trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "description": "De acuerdo con El Universal, el titular publicado es: «Matan a balazos a un hombre en calles de Azcapotzalco». La información publicada por El Universal trata un asunto registrado en la sección de Seguridad del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
           "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNazRhVUlOazFTcWlVNkZYY3Y0MFpLSHUtRERMYmNqR09MLUJtN1hocFBLSXJXdFhBcFYwX0dOWFNhUERjajBhM19CN3lZZGxTQzhmbmJLN0ZjcDA4Ym84TldBZXZQR25ycmFzWHdCaHB4X2g5RlR4TnB2Wk5JUVVleWF2TU5jR0Ryd3ZGazJSZHdRUldnTkd3R2g2VzBlZ182eWVicmFKNE5CNkt4Qm1XTFFhSmhaMFZ4NkHSAc4BQVVfeXFMTU5SclhQdU1Gd1h2d3FuM204a0owRGxOUGpTaWNaWWZseThqdWpEbTBMRWY1RkFTd1dBaWw5cE9rNEhndjJSY1JjX2h5LTQ3b2F5amxMLWdyeUxxV0JtVExZWkVRcnNvZXUxMEdVVjgtQU9SY1BWcy1td2lySlZBcG5Ma0dYOWhzemNpWGMtWUtkR1VTdUl6dGRLRFhraUcyWF96QzhJdEw5X0E5TmpuVDQwejR3cGdMcDZJeTBfcVpadnJuRThUUWZENlNiZ1E?oc=5",
           "source": "El Universal",
           "date": "2026-10-30",
           "published_at": "2026-10-30T15:16:25Z",
-          "category": "CDMX",
+          "category": "Seguridad",
           "borough": "Azcapotzalco",
           "location": "Azcapotzalco (mencionada en el titular)",
           "local_url": "/noticias/?id=6068de1ebc21485dd49b&mes=2026-10",
           "brief": {
-            "lead": "De acuerdo con El Universal, el titular publicado es: «Matan a balazos a un hombre en calles de Azcapotzalco». La información publicada por El Universal trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "lead": "De acuerdo con El Universal, el titular publicado es: «Matan a balazos a un hombre en calles de Azcapotzalco». La información publicada por El Universal trata un asunto registrado en la sección de Seguridad del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           },
           "photo": {
@@ -2975,19 +2978,19 @@
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           },
           "photo": {
-            "id": "commons_106559901",
+            "id": "commons_93188323",
             "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/1._Coyoac%C3%A1n_Ciudad_de_M%C3%A9xico.jpg/960px-1._Coyoac%C3%A1n_Ciudad_de_M%C3%A9xico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/Registro_de_agua._Primera_Secci%C3%B3n_del_Bosque_de_Chapultepec_-_4.jpg/960px-Registro_de_agua._Primera_Secci%C3%B3n_del_Bosque_de_Chapultepec_-_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
             "category": "CDMX",
             "borough": "",
-            "topic": "1. Coyoacán Ciudad de México",
+            "topic": "Registro de agua. Primera Sección del Bosque de Chapultepec - 4",
             "keywords": [
-              "CDMX"
+              "Medio Ambiente"
             ],
-            "author": "Machristen",
+            "author": "ProtoplasmaKid",
             "license": "CC BY-SA 4.0",
             "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:1._Coyoac%C3%A1n_Ciudad_de_M%C3%A9xico.jpg"
+            "source": "https://commons.wikimedia.org/wiki/File:Registro_de_agua._Primera_Secci%C3%B3n_del_Bosque_de_Chapultepec_-_4.jpg"
           }
         },
         {
@@ -8163,18 +8166,6 @@
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "alcaldia_milpa-alta",
-            "kind": "representativa",
-            "url": "/assets/alcaldias/milpa-alta.jpg",
-            "category": "CDMX",
-            "borough": "Milpa Alta",
-            "topic": "Villa Milpa Alta y su entorno rural",
-            "author": "Comisión Mexicana de Filmaciones from México D. F., México",
-            "license": "CC BY-SA 2.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Villa_Milpa_Alta%2C_Ciudad_de_M%C3%A9xico_%2832886264042%29.jpg"
           }
         },
         {
@@ -9239,19 +9230,19 @@
         },
         {
           "title": "Asesinan a dos mujeres en Tláhuac; vecinos exigen justicia",
-          "description": "De acuerdo con Telediario, el titular publicado es: «Asesinan a dos mujeres en Tláhuac; vecinos exigen justicia». La información publicada por Telediario trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "description": "De acuerdo con Telediario, el titular publicado es: «Asesinan a dos mujeres en Tláhuac; vecinos exigen justicia». La información publicada por Telediario trata un asunto registrado en la sección de Seguridad del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
           "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOZlZHM2trQ3c0MU1jd2RHNkdOLTZrVFp2NTBnaUx5OFlsMlk0ZlIwaW9mbUdMYnB0dXlxVm56aHF2WHZILTczVmxOYWQzNGtLTUd5YVdsRzZsdEdKMWFFMm92bTM5RWFhcmRpVmdUY01uR3lKR2JtYWFCWUlxQ040Si00NHBaRVJ6cVkxUkkxckVIU2FVY2YwUHd2TkNuUjFTQU9fSTk0cGYwR3BtakHSAa4BQVVfeXFMT082c294RFNQVFJidDhQejJPZDR1cWs1dTJyNF9ETjFVUzlEbmp4b0ZXY21xMHpJay1pWktpMWs5dXdhRHFCWnlGX3g0ZnRNYVE5eHdsYTBWYm5xUVJOM0RWbzRmUElNZTVQRWZZSnlOSTVpWlE2VzVzSWFCaHhoaWdra2RCdDFZbklJdDVBdmZLelFVWkVoSVFvTHN2OFlET0tNQXlTZjNMOXpYQUdR?oc=5",
           "source": "Telediario",
           "date": "2026-10-30",
           "published_at": "2026-10-30T16:12:04Z",
-          "category": "CDMX",
+          "category": "Seguridad",
           "borough": "Tláhuac",
           "location": "Tláhuac (mencionada en el titular)",
           "local_url": "/noticias/?id=54b3141cc5c0f534eee2&mes=2026-10",
           "brief": {
-            "lead": "De acuerdo con Telediario, el titular publicado es: «Asesinan a dos mujeres en Tláhuac; vecinos exigen justicia». La información publicada por Telediario trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "lead": "De acuerdo con Telediario, el titular publicado es: «Asesinan a dos mujeres en Tláhuac; vecinos exigen justicia». La información publicada por Telediario trata un asunto registrado en la sección de Seguridad del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           },
           "photo": {
@@ -9269,19 +9260,19 @@
         },
         {
           "title": "Doble Feminicidio en CDMX: Matan a Balazos a Madre y su Hija Adolescente en Tláhuac",
-          "description": "De acuerdo con N+, el titular publicado es: «Doble Feminicidio en CDMX: Matan a Balazos a Madre y su Hija Adolescente en Tláhuac». La información publicada por N+ trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "description": "De acuerdo con N+, el titular publicado es: «Doble Feminicidio en CDMX: Matan a Balazos a Madre y su Hija Adolescente en Tláhuac». La información publicada por N+ trata un asunto registrado en la sección de Seguridad del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
           "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQWWplZDNzR3ltTU5vc1dUQjNncUhvd3hkTWFhZU9FU1pNbDI0RnZuR2hCSkRyaGp1U200Z3B3ZjhaMUVVMUtHblAxeFdhQTNnRHhfdUU5X3VQallDS2x1LWtHQmFnWHhreHlKLURENGdQalZ3UWtuS2JmUUg4UEdQYXNYYWE5STJfbFZGRENJRHZERFMwMi1pWDVsa2h2RHpUZUE1bV9mdFZ4TW9iMEp6dldyQU1uaFlHaDlmT09hdkJvNXllQ3k5YUs0MUl5S2M?oc=5",
           "source": "N+",
           "date": "2026-10-30",
           "published_at": "2026-10-30T15:33:39Z",
-          "category": "CDMX",
+          "category": "Seguridad",
           "borough": "Tláhuac",
           "location": "Tláhuac (mencionada en el titular)",
           "local_url": "/noticias/?id=ad9c9bbadce736a2a8dc&mes=2026-10",
           "brief": {
-            "lead": "De acuerdo con N+, el titular publicado es: «Doble Feminicidio en CDMX: Matan a Balazos a Madre y su Hija Adolescente en Tláhuac». La información publicada por N+ trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "lead": "De acuerdo con N+, el titular publicado es: «Doble Feminicidio en CDMX: Matan a Balazos a Madre y su Hija Adolescente en Tláhuac». La información publicada por N+ trata un asunto registrado en la sección de Seguridad del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           },
           "photo": {
@@ -9299,19 +9290,19 @@
         },
         {
           "title": "Asesinan a balazos a madre e hija en Tláhuac, CdMx; vecinos golpean y retienen al presunto agresor",
-          "description": "De acuerdo con Telediario, el titular publicado es: «Asesinan a balazos a madre e hija en Tláhuac, CdMx; vecinos golpean y retienen al presunto agresor». La información publicada por Telediario trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "description": "De acuerdo con Telediario, el titular publicado es: «Asesinan a balazos a madre e hija en Tláhuac, CdMx; vecinos golpean y retienen al presunto agresor». La información publicada por Telediario trata un asunto registrado en la sección de Seguridad del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
           "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQRXFEZUtXOTM2NkZZVzlQcEpDSkotb2JlVE85ejhOeGdmYXE0Qi0wMlZLcW8xNE5XUkU3REg5NXZxRHlfVUpsaDlhQkRuRjd4RzEwQWFSTTk4Q3NPRUkxeVQ5clB4TDdyWVl2YXV6OURIcG1OT29pbUcyWTFMV0xYSExlNWNnVlAxU2FoMENHLUJQbVd2U1JSQVNDNlBnbjVVR2fSAaIBQVVfeXFMUGJfRG5nSTZmWU12UGJFaXJzaEtwclBXTkhXY2hHd3ZZY1RWUDRZeFpjZDZrejd6SDU4N2lkV2JUQzNUYWpvbFlrYXE5VlZjNFVVWVQ1Z3dqT1ozRlJCWWxwTVBuSVJaa29TY3dKcEI2ZVhRS0xncnV2WjEwNHh5bEZOUUZxWEh6dG10QU5xSnZMcUhDZDQ5ZVRGQms1MTlPbkl3?oc=5",
           "source": "Telediario",
           "date": "2026-10-30",
           "published_at": "2026-10-30T15:20:51Z",
-          "category": "CDMX",
+          "category": "Seguridad",
           "borough": "Tláhuac",
           "location": "Tláhuac (mencionada en el titular)",
           "local_url": "/noticias/?id=efecf439b5a929fc9a54&mes=2026-10",
           "brief": {
-            "lead": "De acuerdo con Telediario, el titular publicado es: «Asesinan a balazos a madre e hija en Tláhuac, CdMx; vecinos golpean y retienen al presunto agresor». La información publicada por Telediario trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "lead": "De acuerdo con Telediario, el titular publicado es: «Asesinan a balazos a madre e hija en Tláhuac, CdMx; vecinos golpean y retienen al presunto agresor». La información publicada por Telediario trata un asunto registrado en la sección de Seguridad del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           },
           "photo": {
@@ -10342,8 +10333,41 @@
     },
     {
       "name": "Venustiano Carranza",
-      "count": 17,
+      "count": 18,
       "articles": [
+        {
+          "title": "Detienen a hombre por agredir y robar a mujer en Venustiano Carranza",
+          "description": "De acuerdo con Telediario, el titular publicado es: «Detienen a hombre por agredir y robar a mujer en Venustiano Carranza». Una nota de Telediario comunica un caso relacionado con una detención o una presunta conducta delictiva en Venustiano Carranza. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
+          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOVFVlcVRtRVk1eF8wSXNjOHZtbXVITm5jZmdTeF9Kek56Um5SV1dVNnRjSGQwWmNxYjdPSV9qanRHWHE4U2s4bG91N2VjR2R3ek8xNm5ZLW92bENyM3BfLWJocXdvUGxWLVRwamYyTmN5cTdsZFdnRURFR2Z3RzUtTUhPYzZaOFNZNGVRUFhzUkhpRVJBRFlnZjZZbl9SSU5MU2FZalNMZ9IBpwFBVV95cUxQblRPX1hhdFhnMldXelNZaEQyR1JqT1RGWUY0OUc5c1ZvTFBScVkyUUR5Um9WT2NraklDYjA0RDJNQVBIWkVIMl9nWVVaQ181aEFNMTJLVF9tam5HSURwT3ljbHpaS1k0ZHRueWFuZnpFekM4SUNTeG5YVUotQ0pvNVlFdF9Hd1ZsNUtpY3ZXNkFMdHM1VXUzQ3NSR1l1WG11aHF5OTA4MA?oc=5",
+          "source": "Telediario",
+          "date": "2026-11-01",
+          "published_at": "2026-11-01T14:11:04Z",
+          "category": "CDMX",
+          "borough": "Venustiano Carranza",
+          "location": "Venustiano Carranza (mencionada en el titular)",
+          "local_url": "/noticias/?id=bbf4f1a34f9c8f049d5e&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con Telediario, el titular publicado es: «Detienen a hombre por agredir y robar a mujer en Venustiano Carranza». Una nota de Telediario comunica un caso relacionado con una detención o una presunta conducta delictiva en Venustiano Carranza. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "commons_153668358",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Ciudad_de_M%C3%A9xico_-_Colonia_Centro_6990.JPG/960px-Ciudad_de_M%C3%A9xico_-_Colonia_Centro_6990.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "category": "CDMX",
+            "borough": "",
+            "topic": "Ciudad de México - Colonia Centro 6990",
+            "keywords": [
+              "Centro Histórico Ciudad de México"
+            ],
+            "author": "Phyrexian",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Ciudad_de_M%C3%A9xico_-_Colonia_Centro_6990.JPG"
+          }
+        },
         {
           "title": "Justicia para Mario García Puga: Vinculan a proceso a Hugo ‘N’, quien lo atropelló en Venustiano Carranza",
           "description": "De acuerdo con El Financiero, el titular publicado es: «Justicia para Mario García Puga: Vinculan a proceso a Hugo ‘N’, quien lo atropelló en Venustiano Carranza». De acuerdo con El Financiero, se informa de un hecho vial relacionado con personas o vehículos involucrados en Venustiano Carranza. El encabezado no permite determinar por sí solo si hubo personas lesionadas o fallecidas. Se requiere consultar la nota original para conocer el punto exacto, las circunstancias y los reportes oficiales, sin atribuir responsabilidades sin pruebas.",
@@ -10506,19 +10530,19 @@
         },
         {
           "title": "Caen tres por robos de relojes de lujo; muere motociclista durante persecución en Venustiano Carranza",
-          "description": "De acuerdo con Diario de México, el titular publicado es: «Caen tres por robos de relojes de lujo; muere motociclista durante persecución en Venustiano Carranza». La información publicada por Diario de México trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "description": "De acuerdo con Diario de México, el titular publicado es: «Caen tres por robos de relojes de lujo; muere motociclista durante persecución en Venustiano Carranza». La información publicada por Diario de México trata un asunto registrado en la sección de Movilidad del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
           "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQbXJrTHNhQlZwckFDcTRGbGJSU2V2Qm9kMTNmbkRKRkNfU1JnYlA5UlpGdnJHa2xTa19FeXBSZndocE1Zd3duRzN4WERDa0E5aDFlVU82V0ZOYmc2OGszZWpybHNpbm9ZdFlmRnFmUFNsYnBGVmZqc2xHVUVOdXBVdlVfa084blVoMElPNF9HdF9ZcS1jX3AteXBlZVBWOHpsSUU1Smt0SF9zdWVXMGhuOU5rYk1Kc3ZQeG5qaWJGeGtHaFdvM3BHU1p4ZjFMWHc20gHWAUFVX3lxTE1ZaG56bVlsd0ZqOGF1S1o3d3ZFR25LZWJJZTIxZk1HWmNGanVqekYtVFhLNS1IZ1dod3lmekhVSGtFOEtQN2V1bi1pVENNOEVXUDFtSzBLLW5xNjdGbDVUVGQ5MjRVbWJpekEtbkJQQTVOVDFlY2pOQXJXOW9Wa2RIU2JWTmhHU0NHb1BsWnROM1pEUGN5RE5hMEpDdnlYd0VaWVh2bllaSk5OOUMyNzUxZVhWdGl3c3VJT2NDbnkwaExHWjZPQWRzczJvN2tjbzE2RFdwYUE?oc=5",
           "source": "Diario de México",
           "date": "2026-10-24",
           "published_at": "2026-10-24T23:17:28Z",
-          "category": "CDMX",
+          "category": "Movilidad",
           "borough": "Venustiano Carranza",
           "location": "Venustiano Carranza (mencionada en el titular)",
           "local_url": "/noticias/?id=e7bcb5677b104f62c67a&mes=2026-10",
           "brief": {
-            "lead": "De acuerdo con Diario de México, el titular publicado es: «Caen tres por robos de relojes de lujo; muere motociclista durante persecución en Venustiano Carranza». La información publicada por Diario de México trata un asunto registrado en la sección de CDMX del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "lead": "De acuerdo con Diario de México, el titular publicado es: «Caen tres por robos de relojes de lujo; muere motociclista durante persecución en Venustiano Carranza». La información publicada por Diario de México trata un asunto registrado en la sección de Movilidad del periódico. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
+            "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           },
           "photo": {
@@ -10916,19 +10940,19 @@
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           },
           "photo": {
-            "id": "commons_66033709",
+            "id": "commons_35624629",
             "kind": "representativa",
-            "url": "https://upload.wikimedia.org/wikipedia/commons/2/26/Canales_de_Xochimilco%2C_Ciudad_de_M%C3%A9xico_%2832226551093%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-            "category": "CDMX",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Animales_Bosque_de_Tlalpan_04.JPG/960px-Animales_Bosque_de_Tlalpan_04.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "category": "Alcaldías",
             "borough": "",
-            "topic": "Canales de Xochimilco, Ciudad de México (32226551093)",
+            "topic": "Animales Bosque de Tlalpan 04",
             "keywords": [
-              "CDMX"
+              "Tlalpan Ciudad de México"
             ],
-            "author": "Comisión Mexicana de Filmaciones from México D. F., México",
-            "license": "CC BY-SA 2.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Canales_de_Xochimilco,_Ciudad_de_M%C3%A9xico_(32226551093).jpg"
+            "author": "Inakiherrasti",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Animales_Bosque_de_Tlalpan_04.JPG"
           }
         },
         {
