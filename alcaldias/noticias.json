@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-02 15:00 UTC",
+  "updated": "2026-11-02 15:02 UTC",
   "boroughs": [
     {
       "name": "La Magdalena Contreras",
@@ -261,16 +261,6 @@
             "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
             "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "alcaldia_magdalena-contreras",
-            "url": "/assets/alcaldias/magdalena-contreras.jpg",
-            "category": "CDMX",
-            "borough": "La Magdalena Contreras",
-            "topic": "Río y bosque de Los Dinamos, La Magdalena Contreras",
-            "author": "Ananda xd",
-            "license": "CC BY-SA 4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Rio_de_los_Dinamos_en_CDMX.jpg"
           }
         },
         {
@@ -2024,19 +2014,24 @@
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           },
           "photo": {
-            "id": "commons_13461387",
+            "id": "contexto_trafico_eje_central",
             "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Azcapotzalco_-_Casa_en_Avenida_Azcapotzalco.JPG/960px-Azcapotzalco_-_Casa_en_Avenida_Azcapotzalco.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "category": "Alcaldías",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Eje_Central_CDMX.jpg/1280px-Eje_Central_CDMX.jpg",
+            "category": "Movilidad",
             "borough": "",
-            "topic": "Azcapotzalco - Casa en Avenida Azcapotzalco",
+            "topic": "Tráfico vehicular en Eje Central, Ciudad de México (fotografía de 2018)",
             "keywords": [
-              "Azcapotzalco Ciudad de México"
+              "tráfico",
+              "vehículos",
+              "automóviles",
+              "movilidad",
+              "hoy no circula",
+              "vialidad"
             ],
-            "author": "ProtoplasmaKid",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Azcapotzalco_-_Casa_en_Avenida_Azcapotzalco.JPG"
+            "author": "Sergio Estrada Flores",
+            "license": "CC BY 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+            "source": "https://commons.wikimedia.org/wiki/File:Eje_Central_CDMX.jpg"
           }
         },
         {
@@ -4795,21 +4790,6 @@
             "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
             "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "archivo_seguridad_008",
-            "kind": "representativa",
-            "url": "/assets/fotos/archivo_seguridad_008.jpg",
-            "category": "Seguridad",
-            "borough": "",
-            "topic": "Claudia Sheinbaum entrega patrullas Iztapalapa 03",
-            "keywords": [
-              "Seguridad"
-            ],
-            "author": "Gobierno de la Ciudad de México",
-            "license": "CC BY 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Claudia_Sheinbaum_entrega_patrullas_Iztapalapa_03.jpg"
           }
         },
         {
@@ -6005,7 +5985,7 @@
     },
     {
       "name": "Iztapalapa",
-      "count": 170,
+      "count": 171,
       "articles": [
         {
           "title": "Noche de terror en CDMX: Balacera deja un muerto y un herido en calles de Iztapalapa| Mientras Dormía",
@@ -6020,6 +6000,24 @@
           "local_url": "/noticias/?id=d08f25b53684a439909e&mes=2026-11",
           "brief": {
             "lead": "De acuerdo con TV Azteca, el titular publicado es: «Noche de terror en CDMX: Balacera deja un muerto y un herido en calles de Iztapalapa| Mientras Dormía». La información publicada por TV Azteca aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          }
+        },
+        {
+          "title": "Balacera en Iztapalapa deja un muerto y un hombre gravemente herido",
+          "description": "De acuerdo con Telediario, el titular publicado es: «Balacera en Iztapalapa deja un muerto y un hombre gravemente herido». La información publicada por Telediario aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOVWFyZVIxdnJOX3NTNFZiRTVBTTRqZ0NWaUpTTGNwZ3k3QWhqbFp0UmtHajBlTmx0bndiV3JWZmZoaHdSbHkzeGZvRDZTZG5aVW9yMU1nbFFEX2R6RE1pTTJ5WVBxZzNCd0sxemoxS3FVUVMzYkhvdEFab0xNSWtUdURZRUUwR0s3WFFVZUx1UHpwMEVLaC1udFJ2bGRUd0NyMmtLWjJ6c1JWZDd1eHV4MTZB0gGyAUFVX3lxTE5adkZRMTRuSlNyUm1vZjdNU2ZBTEFDNktEVjJudEdMTmxMVUpNUlA3ZnVrSUdVeUMzamgxdnRnM0p1alVxVk5GZnRXUG81T0FKTGFOcXJxSkdjdUdvclNRcFY4Ums2cXZyVVEzSGpvWXFLN0t5cHEtZk9RSTBmMXBWN1Y5dXhlX01LU2k3c0hoOFFaVkwzODV4aTZZRTIyaDVfb1BZR1J4cUtTZlJFNlFZb1E?oc=5",
+          "source": "Telediario",
+          "date": "2026-11-02",
+          "published_at": "2026-11-02T13:22:28Z",
+          "category": "Seguridad",
+          "borough": "Iztapalapa",
+          "location": "Iztapalapa (mencionada en el titular)",
+          "local_url": "/noticias/?id=543625db923ccb9e3d91&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con Telediario, el titular publicado es: «Balacera en Iztapalapa deja un muerto y un hombre gravemente herido». La información publicada por Telediario aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
             "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
             "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
@@ -6599,39 +6597,6 @@
             "license": "CC BY 2.0",
             "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
             "source": "https://commons.wikimedia.org/wiki/File:MX_MM_MUSEO_CERRO_DE_LA_ESTRELLA_%2849522225751%29.jpg"
-          }
-        },
-        {
-          "title": "Aseguran más de 8 mil productos pirata en tiendas de Iztapalapa y Tacuba",
-          "description": "De acuerdo con Excélsior, el titular publicado es: «Aseguran más de 8 mil productos pirata en tiendas de Iztapalapa y Tacuba». La información publicada por Excélsior aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPTE94WkU1M1BjdDhaek9wQ0w3TFJTZjVURFpOdkd1TzhfLWdBSGhSd3VyUHRnbnlHVHQ2NklvSUYteWZfdjRJTzdXRldPN09aNGMzU0F0MGR4NUprTmhvbWlkUERoVk92OGM4aVRReUtQMjFpZXQtYTI1VGxiRHRvRW5QUDg3UTZxUnJOUlVZS0ZYTkFVZFRKcmRGZ2RPZ9IBowFBVV95cUxOaG1MVDNyNU1SZkZtQnNmY1R6ai15d24tRXY0bDZXQ3RTcUVIbEdVQkhkSy1VY0JHM0EzbTh1U1pOb2hhekpnSXlEWk93dG5GQWtEQ1pnMGVKSUJxVVNlczIza3FHUExRTWk2UUdtRjNwcGFpUlFjLURaZVl0eUhLdVcybVJ1MGo4b0szYVBTaDhYZWlheWZLX1lpMDRrU3FzRWRR?oc=5",
-          "source": "Excélsior",
-          "date": "2026-10-28",
-          "published_at": "2026-10-29T02:12:27Z",
-          "category": "CDMX",
-          "borough": "Iztapalapa",
-          "location": "Iztapalapa (mencionada en el titular)",
-          "local_url": "/noticias/?id=da5c52ccdb683b3af877&mes=2026-10",
-          "brief": {
-            "lead": "De acuerdo con Excélsior, el titular publicado es: «Aseguran más de 8 mil productos pirata en tiendas de Iztapalapa y Tacuba». La información publicada por Excélsior aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "commons_20284563",
-            "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Metro_Iztapalapa_02.jpg/960px-Metro_Iztapalapa_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "category": "Alcaldías",
-            "borough": "",
-            "topic": "Metro Iztapalapa 02",
-            "keywords": [
-              "Iztapalapa Ciudad de México"
-            ],
-            "author": "GAED",
-            "license": "CC BY-SA 3.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Metro_Iztapalapa_02.jpg"
           }
         }
       ]
