@@ -26,6 +26,22 @@ class BoroughAndArchiveTests(unittest.TestCase):
         self.assertEqual(news.identify_location("En Coyoacán y Tlalpan")[0], "")
         self.assertEqual(news.identify_location("Los planes del Metro CDMX")[0], "")
 
+    def test_person_detentions_from_government_feed_are_security(self):
+        title = "Detienen a tres hombres por obras irregulares en Tláhuac"
+        self.assertEqual(news.category_by_headline(title, "Gobierno"), "Seguridad")
+        article = fake(title, "2026-11-01")
+        article["category"] = "Gobierno"
+        fixed = news.standardize(article)
+        self.assertEqual(fixed["category"], "Seguridad")
+        self.assertEqual(fixed["borough"], "Tláhuac")
+        # Detener obras o servicios no equivale a detener personas.
+        self.assertEqual(news.category_by_headline(
+            "Detienen obras irregulares en Tláhuac", "Gobierno"), "Gobierno")
+        self.assertEqual(news.category_by_headline(
+            "Detienen el servicio de agua por reparaciones", "Gobierno"), "Gobierno")
+        self.assertEqual(news.category_by_headline(
+            "Capturan a dos sospechosos en CDMX", "CDMX"), "Seguridad")
+
     def test_road_closures_are_mobility_and_reject_patrol_photos(self):
         article = fake("GP de México 2026: Calles Cerradas y Alternativas Viales en CDMX", "2026-11-01")
         article["category"] = "Seguridad"  # Clasificación de origen RSS.
