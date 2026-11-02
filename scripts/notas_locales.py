@@ -448,6 +448,21 @@ def _photo_category(article):
 # Resguardos editoriales: una coincidencia geográfica o de categoría no basta.
 # Si la fototeca no tiene contexto del tema, se prefiere publicar sin imagen.
 STRICT_PHOTO_TOPICS = (
+    # Visitar tumbas requiere contexto funerario, no actos políticos universitarios.
+    (r"\b(?:visitan? panteones?|adornar tumbas|familias? visitan? panteones?)\b",
+     r"\b(?:panteones?|cementerios?|tumbas?|sepulturas?|ofrendas? funerarias?)\b"),
+    # Marchas anunciadas no se ilustran con vehículos de transporte público.
+    (r"\bmarchas?\b.*\b(?:hoy|noviembre|bloqueos?|concentraciones?)\b",
+     r"\b(?:manifestaciones?|protestas?|marchas?|bloqueos?|concentraciones?|movilizaciones?)\b"),
+    # Una agresión letal no es una celebración ni una imagen genérica de rescate.
+    (r"\b(?:ataque armado|balacera|asesina(?:n)?|asesinato)\b",
+     r"\b(?:policias?|fiscalia|investigacion penal|justicia|ministerio publico|peritos?|escena del crimen)\b"),
+    # La búsqueda de desaparecidos no se ilustra con un monumento sin relación.
+    (r"\b(?:busqueda de personas|personas desaparecidas)\b",
+     r"\b(?:colectivos? de busqueda|personas desaparecidas|busqueda|fiscalia|familias? buscadoras?|protestas?|manifestaciones?)\b"),
+    # Los datos de deuda pública requieren contexto económico o institucional.
+    (r"\b(?:deuda de estados|deuda publica|deuda estatal)\b",
+     r"\b(?:finanzas?|economia|presupuesto|deuda|bancos?|gobierno|auditoria|congreso)\b"),
     # La agenda de movilizaciones requiere una protesta o rodada, no bomberos.
     (r"\bagenda de (?:movilizaciones|marchas|bloqueos)\b",
      r"\b(?:manifestaciones?|protestas?|marchas?|bloqueos?|rodadas?|motocicletas?|motociclistas?|concentraciones?)\b"),
@@ -578,9 +593,15 @@ def _photo_score(article, photo):
             and not re.search(r"\b(?:autodromo|formula 1|f1|gran premio|carrera|circuito|bottas|verstappen|hamilton|alonso|checo|antonelli)\b", headline)
             and re.search(r"\b(?:autodromo|formula 1|gran premio|pista de carreras)\b", topic)):
         return -10000
+    # Choques de autos o motocicletas no se ilustran con trolebuses ni trenes.
+    if (re.search(r"\b(?:accident\w*|choqu\w*|choc\w*|colisi\w*|volcadur\w*|derrap\w*)\b", headline)
+            and re.search(r"\b(?:autos?|automovil\w*|motociclet\w*|motociclist\w*|motos?)\b", headline)
+            and not re.search(r"\b(?:trolebus|metrobus|tren ligero|metro)\b", headline)
+            and re.search(r"\b(?:trolebus|metrobus|tren ligero|estacion del metro)\b", topic)):
+        return -10000
     # Una detención no se ilustra con entrega de patrullas o policía dirigiendo tráfico.
     if re.search(r"\b(?:detienen|detenido\w*|arrestan|capturan|aprehenden)\b", headline):
-        if re.search(r"\b(?:entrega de (?:nuevas? )?patrullas|nuevas? patrullas|graduacion|ceremonia|controlando el semaforo|policia de transito)\b", topic):
+        if re.search(r"\b(?:entrega (?:de )?(?:nuevas? )?patrullas|nuevas? patrullas|graduacion|ceremonia|controlando el semaforo|policia de transito)\b", topic):
             return -10000
     # Un corte de agua no se ilustra con elementos decorativos de un parque.
     if re.search(r"\b(?:sin agua|falta de agua|corte de agua|suspension de agua)\b", headline):
