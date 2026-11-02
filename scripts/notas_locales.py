@@ -464,6 +464,25 @@ def _photo_category(article):
 # Resguardos editoriales: una coincidencia geográfica o de categoría no basta.
 # Si la fototeca no tiene contexto del tema, se prefiere publicar sin imagen.
 STRICT_PHOTO_TOPICS = (
+    # El mismo municipio no convierte un jardín o monumento en imagen de búsqueda.
+    (r"\b(?:caminata\b.*\b(?:recuperar a su hija|buscando a su hija)|madres? buscadoras?)\b",
+     r"\b(?:caminata|colectivos? de busqueda|familias? buscadoras?|madres? buscadoras?|personas desaparecidas|manifestacion|protesta)\b"),
+    # Una protesta sindical exige manifestantes, no una calle turística.
+    (r"\b(?:protesta sindical|comitiva de trabajadores)\b",
+     r"\b(?:protestas?|manifestaciones?|sindical|trabajadores?|plantones?|marchas?)\b"),
+    (r"\bmochila de emergencia\b",
+     r"\b(?:mochilas?|emergencias?|proteccion civil|suministros?|botiquines?|evacuacion)\b"),
+    # Titulares de empleo y becas no se ilustran con monumentos o avenidas.
+    (r"\b(?:embajada\b.*\bvacantes?|vacantes?\b.*\bembajada)\b",
+     r"\b(?:embajada|vacantes?|empleo|trabajo|oficinas?|alemania)\b"),
+    (r"\bbeca de transporte\b",
+     r"\b(?:becas?|universitarios?|estudiantes?|transporte|metro|autobuses?)\b"),
+    # La rotura de una tubería no se representa con iglesias del mismo barrio.
+    (r"\bfuga de agua\b",
+     r"\b(?:fuga de agua|tuberias?|reparacion|fontaneria|agua potable|red hidraulica)\b"),
+    # "Asesinados" y "asesinadas" no coincidían con el patrón "asesinan".
+    (r"\b(?:asesinad\w*|asesina(?:n)?|homicidios?|balacera|ataque armado)\b",
+     r"\b(?:fiscalia|investigacion penal|justicia|ministerio publico|peritos?|escena del crimen|operativo policial)\b"),
     # Fotos representativas deben corresponder al asunto, no solo a la ciudad.
     (r"\b(?:panteones?|cementerios?|camposantos?)\b",
      r"\b(?:panteones?|cementerios?|camposantos?|tumbas?|sepulturas?|ofrendas? funerarias?)\b"),
