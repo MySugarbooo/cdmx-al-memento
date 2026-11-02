@@ -1188,5 +1188,30 @@ class BoroughAndArchiveTests(unittest.TestCase):
             "Metro"), "Metro")
 
 
+    def test_november_2_current_photo_subjects_require_relevant_context(self):
+        # Emparejamientos observados en news.json, 2026-11-02 22:30 UTC.
+        cases = (
+            ("Trabajadores del IMSS anuncian nueva marcha en CDMX; aún no definen fecha",
+             "CDMX", "Metrobús at Paseo de la Reforma", "Marcha de trabajadores del IMSS"),
+            ("Gobierno CDMX confirma multas a bicicletas eléctricas o scooters sin placas",
+             "Movilidad", "Ícono Ecobici CDMX", "Bicicletas eléctricas y scooters en CDMX"),
+            ("La Catrina monumental del Zócalo de la CDMX establece récord Guinness",
+             "Cultura", "Desfile de Catrinas in Mexico City 2026 (53)",
+             "Escultura monumental de Catrina en el Zócalo"),
+            ("Caos en el Metro CDMX: retrasos en la Línea 12",
+             "Metro", "Obras en el Metro Línea 12 -i---i- (36371601954)",
+             "Estación de la Línea 12 del Metro de la Ciudad de México"),
+        )
+        for title, category, wrong, relevant in cases:
+            article = {"title": title, "category": category}
+            with self.subTest(title=title):
+                self.assertLess(news._photo_score(article, {
+                    "category": category, "topic": wrong,
+                }), 0)
+                self.assertGreaterEqual(news._photo_score(article, {
+                    "category": category, "topic": relevant,
+                }), 0)
+
+
 if __name__ == "__main__":
     unittest.main()

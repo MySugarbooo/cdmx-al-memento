@@ -655,6 +655,26 @@ def _photo_score(article, photo):
     # Una clasificación RSS errónea no autoriza cambiar el tema de la imagen.
     if photo_category not in (category, "CDMX", "Alcaldías"):
         return -10000
+    # Una convocatoria de marcha del IMSS no se ilustra con transporte público.
+    if ("imss" in headline
+            and re.search(r"\b(?:marchas?|protestas?|plantones?|movilizaciones?)\b", headline)
+            and not re.search(r"\b(?:manifestantes?|protestas?|marchas?|plantones?|movilizaciones?|concentraciones?|sindicatos?|trabajadores?)\b", context)):
+        return -10000
+    # Las multas a bicicletas eléctricas o scooters no se ilustran con el logo EcoBici.
+    if (re.search(r"\b(?:scooters?|monopatines?|bicicletas? electricas?)\b", headline)
+            and "ecobici" not in headline
+            and re.search(r"\becobici\w*\b", context)):
+        return -10000
+    # Una Catrina monumental no equivale a un desfile de disfraces.
+    if (re.search(r"\bcatrina monumental\b", headline)
+            and not re.search(r"\b(?:monumental|monumento|escultura|instalacion)\b", context)):
+        return -10000
+    # Los retrasos de Metro no se representan con obras antiguas sin relación.
+    if (category == "Metro"
+            and re.search(r"\b(?:retrasos?|demoras?|caos|avances?|operan|servicio)\b", headline)
+            and not re.search(r"\b(?:obras?|construccion|remodelacion)\b", headline)
+            and re.search(r"\b(?:obras?|construccion|remodelacion)\b", topic)):
+        return -10000
     # El título y el descriptor deben compartir el asunto real de la nota.
     for headline_pattern, photo_pattern in STRICT_PHOTO_TOPICS:
         if re.search(headline_pattern, headline) and not re.search(photo_pattern, context):
