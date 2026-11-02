@@ -28,7 +28,9 @@ function validLink(u,article){
 }
 function hasDocumentaryPhoto(article){
  const p=article?.photo||{};
- return p.kind==='hecho'&&p.verified===true&&Boolean(p.author&&p.license&&p.licenseUrl&&p.source&&p.evidence_url)
+ const documented=p.kind==='hecho'&&p.verified===true&&Boolean(p.evidence_url);
+ if(article?.sensitive_media&&!documented)return false;
+ return (documented||p.kind==='representativa')&&Boolean(p.author&&p.license&&p.licenseUrl&&p.source)
   &&(/^\/assets\/fotos\/[a-z0-9_-]+\.jpg$/.test(p.url||'')
     ||/^https:\/\/(?:upload|thumb)\.wikimedia\.org\/wikipedia\/commons\//.test(p.url||''));
 }
@@ -50,12 +52,13 @@ function drawLeadIllustration(article){
  const link=document.createElement('a');link.href=article.local_url||article.url;
  link.className='lead-art-click';link.setAttribute('aria-label','Leer noticia: '+article.title);
  const img=document.createElement('img');img.src=photo.url;
- img.alt='Fotografía comprobada del acontecimiento: '+article.title;
+ const documented=photo.kind==='hecho'&&photo.verified===true;
+ img.alt=documented?'Fotografía documentada del acontecimiento: '+article.title:'Imagen representativa del tema; no documenta el acontecimiento: '+article.title;
  img.loading='eager';img.decoding='async';
  img.addEventListener('error',()=>target.replaceChildren(),{once:true});
  const badge=element('span','lead-art-badge','VER NOTICIA ↗');link.append(img,badge);
  const credit=document.createElement('a');credit.className='photo-credit-inline';
- credit.textContent='© '+photo.author+' · '+photo.license;
+ credit.textContent=(documented?'Fotografía del acontecimiento':'Imagen representativa, no del hecho')+' · © '+photo.author+' · '+photo.license;
  credit.href=photo.source;credit.target='_blank';credit.rel='noopener noreferrer';
  target.append(link,credit);
 }
