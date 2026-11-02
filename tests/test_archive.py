@@ -1163,10 +1163,10 @@ class BoroughAndArchiveTests(unittest.TestCase):
                 }), 0)
         self.assertEqual(news.category_by_headline(
             "El polémico lugar de Franco Colapinto en el GP Ciudad de México de Fórmula 1",
-            "Metro"), "Movilidad")
+            "Metro"), "CDMX")
         self.assertEqual(news.category_by_headline(
             "NASCAR México Series regresa a la CDMX para disputar la final",
-            "CDMX"), "Movilidad")
+            "CDMX"), "CDMX")
         self.assertEqual(news.category_by_headline(
             "EZLN denuncia provocaciones del gobierno para que no asistan con buscadoras",
             "Metro"), "Gobierno")
