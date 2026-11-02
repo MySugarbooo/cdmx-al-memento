@@ -69,13 +69,14 @@ class VerifiedAccidentsTests(unittest.TestCase):
     def test_recent_verified_incident_is_visible_but_old_incident_is_not_pinned(self):
         now = datetime.now(timezone.utc)
         items = [{
-            "title": f"Noticia general {i}",
+            "title": f"Noticia general en CDMX {i}",
             "date": now.date().isoformat(),
             "url": f"https://news.google.com/rss/articles/item{i}",
             "published_at": (now - timedelta(minutes=i)).isoformat(),
         } for i in range(60)]
         recent = {
             "title": "Accidente vial cotejado",
+            "editorial_verified": True,
             "date": now.date().isoformat(),
             "url": "https://comova.mx/aviso/accidente-verificado/",
             "published_at": (now - timedelta(hours=30)).isoformat(),
