@@ -512,6 +512,47 @@ class BoroughAndArchiveTests(unittest.TestCase):
         # El registro puede conservarse en la hemeroteca; solo se evita
         # su incorporación a la portada de noticias de CDMX.
 
+    def test_november_2_followup_photo_mismatches(self):
+        # Nuevas asignaciones incongruentes tras regenerar news.json.
+        cases = [
+            ("Familias Visitan Panteones de CDMX para Adornar Tumbas con Cempasúchil",
+             "CDMX", "Recepción de Marichuy Patricio en Ciudad Universitaria UNAM 06",
+             "Cementerio con tumbas y ofrendas funerarias en CDMX"),
+            ("Detienen a tres hombres por obras irregulares y cambio ilegal de uso de suelo en Tláhuac, CdMx",
+             "Seguridad", "Claudia Sheinbaum entrega patrullas Iztapalapa 03",
+             "Operativo de Fiscalía en Tláhuac"),
+            ("Ataque armado en Tepito deja 2 muertos en pleno festejo de Día de Muertos en CDMX",
+             "CDMX", "Desfile de Catrinas in Mexico City 2026",
+             "Investigación de Fiscalía en CDMX"),
+            ("Marchas en CDMX hoy 2 de noviembre: ¿Dónde y a qué hora habrá bloqueos?",
+             "Movilidad", "Metrobús en Paseo de la Reforma",
+             "Manifestación de personas en avenida CDMX"),
+            ("Estas Son las Marchas, Concentraciones y Eventos en la CDMX para Este Lunes",
+             "Seguridad", "Trolebús de la Línea 5 en Paseo de la Reforma",
+             "Protestas y concentraciones en la CDMX"),
+            ("Búsqueda de personas se realiza de manera individual, algunas desde 1952: Luis Gómez",
+             "CDMX", "Ángel de la Independencia Ciudad de México",
+             "Colectivo de búsqueda de personas desaparecidas"),
+            ("Desciende deuda de estados; cinco concentran 54%, señala Auditoría",
+             "CDMX", "Casa Centro Histórico de la Ciudad de México",
+             "Auditoría de deuda y presupuesto público"),
+            ("Accidente en Iztacalco Hoy: Hay Autos Destrozados y una Motocicleta Aplastada",
+             "Movilidad", "Trolebús de la Línea 2 sobre Avenida Yucatán",
+             "Tráfico vehicular de autos y motocicletas en avenida de Iztacalco"),
+            ("Asesina a Mujer y a Menor de 4 Años en Tepito; Agresores Escapan en Bici Eléctrica",
+             "Seguridad", "Protección civil CDMX",
+             "Fiscalía e investigación penal en CDMX"),
+        ]
+        for title, category, unrelated, relevant in cases:
+            article = {"title": title, "category": category}
+            with self.subTest(title=title):
+                self.assertLess(news._photo_score(article, {
+                    "category": category, "topic": unrelated,
+                }), 0)
+                self.assertGreaterEqual(news._photo_score(article, {
+                    "category": category, "topic": relevant,
+                }), 0)
+
     def test_november_2_arrests_crash_and_water_photo_mismatches(self):
         # Fotografías observadas en el índice público del 2 de noviembre.
         cases = [
