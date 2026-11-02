@@ -296,6 +296,20 @@ class BoroughAndArchiveTests(unittest.TestCase):
         }), 0)
         self.assertEqual(news.homepage_articles([veracruz_article], [], datetime.now(timezone.utc)), [])
         self.assertFalse(news.outside_cdmx_scope("Feria de café de Veracruz se celebra en CDMX"))
+        # El medio publicó esta noticia en su sección CDMX, pero el cuerpo
+        # identifica la agencia municipal de Juchitán, Oaxaca.
+        oaxaca = "Asamblea comunitaria determina relevo de autoridades auxiliares en Álvaro Obregón"
+        self.assertTrue(news.outside_cdmx_scope(oaxaca))
+        self.assertEqual(news.identify_location(oaxaca),
+                         ("", "Álvaro Obregón, Juchitán, Oaxaca (fuera de CDMX)"))
+        oaxaca_article = news.standardize(fake(oaxaca, datetime.now(timezone.utc).date().isoformat()))
+        self.assertEqual(oaxaca_article["borough"], "")
+        self.assertEqual(news.homepage_articles([oaxaca_article], [], datetime.now(timezone.utc)), [])
+        # No excluir asambleas reales de la alcaldía homónima.
+        self.assertFalse(news.outside_cdmx_scope(
+            "Asamblea vecinal en la alcaldía Álvaro Obregón CDMX"))
+        self.assertFalse(news.outside_cdmx_scope(
+            "Asamblea comunitaria determina relevo de autoridades auxiliares en Álvaro Obregón CDMX"))
         spain = "México confirma once connacionales heridos en el accidente de tren en España"
         self.assertTrue(news.outside_cdmx_scope(spain))
         self.assertEqual(news.identify_location(spain)[1], "España (fuera de CDMX)")
