@@ -502,6 +502,10 @@ def _photo_score(article, photo):
     topic=_photo_fold(photo.get("topic"))
     keywords=_photo_fold(" ".join(str(x) for x in photo.get("keywords",[])))
     context=topic+" "+keywords
+    # El catálogo local no debe ilustrar noticias situadas fuera de la capital.
+    # No presentar un templo o calle de CDMX como una finca de Veracruz.
+    if "(fuera de CDMX)" in str(article.get("location") or ""):
+        return -10000
     category=_photo_category(article)
     photo_category=str(photo.get("category") or "CDMX")
     if not topic or SENSITIVE_CONTEXT.search(topic):
