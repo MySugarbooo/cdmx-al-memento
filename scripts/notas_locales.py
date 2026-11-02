@@ -81,10 +81,12 @@ def _reported_angle(article):
     if re.search(r"\b(?:accident\w*|choqu\w*|colisi[oó]n\w*|volcadur\w*|"
                  r"atropell\w*|arroll\w*|derrap\w*|siniestro vial)\b", t):
         vehicle=("una motocicleta" if re.search(r"\b(?:moto|motocicleta|motociclista)\w*\b", t)
+                 else "un microbús" if re.search(r"\bmicrob[uú]s\b", t)
+                 else "un autobús" if re.search(r"\bautob[uú]s\b", t)
                  else "vehículos" if re.search(r"\b(?:automovil|auto|camion|trailer|tráiler|vehiculo)\w*\b", t)
                  else "personas o vehículos involucrados")
         if re.search(r"\b(?:fallec\w*|muert\w*|murio|murieron|sin vida|pierde la vida|"
-                     r"perdio la vida|fatal|mortal)\b", t):
+                     r"perdio la vida|fatal|mortal|muere|murio|murió|mata|matan|mat[oó])\b", t):
             outcome="El propio titular señala un fallecimiento, sin que esta ficha agregue cifras ni identidades."
         elif re.search(r"\b(?:herid\w*|lesionad\w*|hospitalizad\w*)\b", t):
             outcome="El propio titular menciona personas lesionadas, sin datos médicos adicionales verificados."
