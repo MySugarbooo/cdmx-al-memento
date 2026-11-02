@@ -454,7 +454,7 @@ STRICT_PHOTO_TOPICS = (
     (r"\b(?:puentes? peatonales?|pasarelas? peatonales?)\b",
      r"\b(?:puentes?|pasarelas?|pasos? peatonales?|cruces? elevados?)\b"),
     (r"\bmontachoques\b",
-     r"\b(?:choques?|automoviles?|autos?|vehiculos?|trafico|transito|vialidad|carretera|avenida|seguridad vial)\b"),
+     r"\b(?:choques?|automoviles?|autos?|vehiculos?|trafico|transito|seguridad vial)\b"),
     # La captación de lluvia no es una imagen de pronóstico, frío o viento.
     (r"\b(?:clima|pronostico|rachas de viento|mananas frias|frente frio)\b",
      r"\b(?:clima|pronostico|meteorologia|temperatura|viento|frio|nubes?|cielo|tormenta|neblina)\b"),

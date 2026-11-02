@@ -217,6 +217,18 @@ class BoroughAndArchiveTests(unittest.TestCase):
                     "category": "CDMX", "topic": relevant,
                 }), 0)
 
+    def test_montachoques_rejects_generic_avenue_photo(self):
+        article = {"title": "Montachoques en CDMX: cómo identificarlos, qué hacer si eres víctima",
+                   "category": "CDMX"}
+        self.assertLess(news._photo_score(article, {
+            "category": "CDMX",
+            "topic": "Avenida Francisco I. Madero, Centro Histórico, Ciudad de México - Torre Latinoamericana",
+        }), 0)
+        self.assertGreaterEqual(news._photo_score(article, {
+            "category": "CDMX",
+            "topic": "Policía de tránsito Ciudad de México marcando alto a auto",
+        }), 0)
+
     def test_november_photo_context_rejects_unrelated_stock_images(self):
         # Imágenes observadas en news.json público: ninguna es foto del hecho.
         cases = [
