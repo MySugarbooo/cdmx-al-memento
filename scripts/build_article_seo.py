@@ -63,6 +63,9 @@ def render(item, ident):
     method = esc(brief.get("method") or "Resumen basado en información atribuida a la fuente.")
     source = esc(item.get("source") or "Fuente identificada")
     date = esc(item.get("date") or "")
+    # No presentar como CDMX una nota archivada cuya ubicación externa está confirmada.
+    location = str(item.get("location") or "")
+    location_label = esc(location if location.endswith("(fuera de CDMX)") else "CDMX")
     url = BASE + "/articulos/" + ident + "/"
     original = item.get("url") or ""
     source_link = ""
@@ -81,7 +84,7 @@ def render(item, ident):
 <meta property="og:description" content="{lead[:155]}"><meta property="og:url" content="{url}">
 <link rel="stylesheet" href="/styles.css"><style>.source-top{{display:flex;flex-wrap:wrap;align-items:center;gap:.65rem;padding:1rem;border-left:4px solid #de3186;background:rgba(222,49,134,.08);border-radius:12px}}.source-action{{display:inline-block;padding:.65rem 1rem;background:#ca2378;color:white!important;border-radius:999px;font-weight:700;text-decoration:none}}.article-photo img{{border-radius:14px}}.byline{{font-weight:700;color:#bc2778}}</style><script type="application/ld+json">{structured}</script></head>
 <body><header><div class="wrap"><a href="/">CDMX AL MEMENTO</a> · <a href="/noticias/">Noticias</a></div></header>
-<main class="wrap" id="contenido"><article>{source_link}<p>CDMX · {date} · Fuente: {source}</p><h1>{title}</h1><p class="byline">Resumen y redacción: Amau Kisumi · CDMX AL MEMENTO</p>
+<main class="wrap" id="contenido"><article>{source_link}<p>{location_label} · {date} · Fuente: {source}</p><h1>{title}</h1><p class="byline">Resumen y redacción: Amau Kisumi · CDMX AL MEMENTO</p>
 {photo_html}<h2>Qué ocurrió y qué se sabe</h2><p>{lead}</p><h2>Por qué importa</h2><p>{context}</p><h2>Qué falta por confirmar</h2><p>{pending}</p>
 <h2>Fuentes y método</h2><p>{method}</p><p>Esta síntesis no equivale a una verificación independiente de los hechos.</p>
 <p><a href="{esc(item['local_url'])}">Ver noticia y comentarios en el periódico</a></p></article></main>
