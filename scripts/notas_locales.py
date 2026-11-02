@@ -459,7 +459,7 @@ STRICT_PHOTO_TOPICS = (
      r"\b(?:manifestacion(?:es)?|protestas?|marchas?|bloqueos?|concentraciones?|movilizaciones?)\b"),
     # Una agresión letal no es una celebración ni una imagen genérica de rescate.
     (r"\b(?:ataque armado|balacera|asesina(?:n)?|asesinato)\b",
-     r"\b(?:policias?|fiscalia|investigacion penal|justicia|ministerio publico|peritos?|escena del crimen)\b"),
+     r"\b(?:fiscalia|investigacion penal|justicia|ministerio publico|peritos?|escena del crimen|operativo policial)\b"),
     # La búsqueda de desaparecidos no se ilustra con un monumento sin relación.
     (r"\b(?:busqueda de personas|personas desaparecidas)\b",
      r"\b(?:colectivos? de busqueda|personas desaparecidas|busqueda|fiscalia|familias? buscadoras?|protestas?|manifestaciones?)\b"),
@@ -530,7 +530,7 @@ STRICT_PHOTO_TOPICS = (
     # Para detenciones de personas, una plaza de la misma alcaldía no basta.
     # En un operativo del Gran Premio también es pertinente el autódromo.
     (r"^(?!.*\b(?:gp de mexico|gran premio|formula 1|autodromo)\b).*\b(?:detienen|arrestan|capturan|aprehenden)\s+a\s+(?:\d+|un|una|dos|tres|cuatro|cinco|seis|personas|hombres|mujeres)\b",
-     r"\b(?:policias?|patrullas?|fiscalia|justicia|tribunal|detencion|seguridad|investigacion penal)\b"),
+     r"\b(?:fiscalia|justicia|tribunal|detencion|investigacion penal|operativo policial|ministerio publico)\b"),
     (r"\bempleo de mujeres\b",
      r"\b(?:empleo|trabajo|mujeres|oficinas?|economia|trabajadoras?)\b"),
     (r"\bmorena\b.*\b(?:militantes|reunio|asamblea)\b",
@@ -601,6 +601,14 @@ def _photo_score(article, photo):
             and re.search(r"\b(?:autos?|automovil\w*|motociclet\w*|motociclist\w*|motos?)\b", headline)
             and not re.search(r"\b(?:trolebus|metrobus|tren ligero|metro)\b", headline)
             and re.search(r"\b(?:trolebus|metrobus|tren ligero|estacion del metro)\b", topic)):
+        return -10000
+    # En choques de motos y autos, una carretera histórica o calle turística
+    # no basta: se exige tráfico, vehículos o el lugar exacto de la alcaldía.
+    borough=_photo_fold(article.get("borough"))
+    if (re.search(r"\b(?:accident\w*|choqu\w*|choc\w*|colisi\w*|volcadur\w*|derrap\w*)\b", headline)
+            and re.search(r"\b(?:autos?|automovil\w*|motociclet\w*|motociclist\w*|motos?)\b", headline)
+            and not (borough and borough in topic)
+            and not re.search(r"\b(?:motociclet\w*|motociclist\w*|motos?|autos?|automovil\w*|vehicular|trafico|transito|vialidad|choque)\b", topic)):
         return -10000
     # Una detención no se ilustra con entrega de patrullas o policía dirigiendo tráfico.
     if re.search(r"\b(?:detienen|detenido\w*|arrestan|capturan|aprehenden)\b", headline):

@@ -524,6 +524,33 @@ class BoroughAndArchiveTests(unittest.TestCase):
             "Estas Son las Marchas, Concentraciones y Eventos en la CDMX para Este Lunes",
             "Seguridad"), "Movilidad")
 
+    def test_violent_crime_arrest_and_crash_need_real_subject_match(self):
+        arrest = {"title": "Detienen a tres hombres por obras irregulares en Tláhuac",
+                  "category": "Seguridad", "borough": "Tláhuac"}
+        self.assertLess(news._photo_score(arrest, {
+            "category": "Seguridad", "topic": "Jeep policía CDMX",
+        }), 0)
+        self.assertGreaterEqual(news._photo_score(arrest, {
+            "category": "Seguridad", "topic": "Fiscalía investiga detención en Tláhuac",
+        }), 0)
+        murder = {"title": "Asesina a Mujer y a Menor de 4 Años en Tepito",
+                  "category": "Seguridad"}
+        self.assertLess(news._photo_score(murder, {
+            "category": "Seguridad", "topic": "Policía de tránsito Ciudad de México con automovilistas",
+        }), 0)
+        self.assertGreaterEqual(news._photo_score(murder, {
+            "category": "Seguridad", "topic": "Investigación penal de Fiscalía CDMX",
+        }), 0)
+        crash = {"title": "Accidente en Iztacalco Hoy: Hay Autos Destrozados y una Motocicleta Aplastada",
+                 "category": "Movilidad", "borough": "Iztacalco"}
+        self.assertLess(news._photo_score(crash, {
+            "category": "Movilidad",
+            "topic": "Pavimentación en la carretera de los Dinamos en Magdalena Contreras 1941",
+        }), 0)
+        self.assertGreaterEqual(news._photo_score(crash, {
+            "category": "Movilidad", "topic": "Tráfico vehicular con autos en avenida de CDMX",
+        }), 0)
+
     def test_regenerated_photos_reject_ceremonies_and_other_borough_avenues(self):
         arrest = {"title": "Detienen a tres hombres por obras irregulares y cambio ilegal de uso de suelo en Tláhuac",
                   "category": "Seguridad", "borough": "Tláhuac"}
