@@ -246,7 +246,8 @@ class BoroughAndArchiveTests(unittest.TestCase):
         fixed = news.standardize(article)
         self.assertEqual(fixed["category"], "CDMX")
         self.assertEqual(_photo_category(fixed), "CDMX")
-        self.assertNotIn("organizar recorridos", fixed["description"])
+        self.assertNotIn("organizar recorridos", fixed["brief"]["context"])
+        self.assertNotIn("autoridades de movilidad", fixed["brief"]["pending"])
 
         closures = "GP Ciudad de México: calles cerradas y alternativas viales"
         self.assertEqual(news.category_by_headline(closures, "Metro"), "Movilidad")
