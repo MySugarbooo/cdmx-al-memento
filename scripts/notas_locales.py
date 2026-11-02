@@ -453,6 +453,11 @@ STRICT_PHOTO_TOPICS = (
     # La captación de lluvia no es una imagen de pronóstico, frío o viento.
     (r"\b(?:clima|pronostico|rachas de viento|mananas frias|frente frio)\b",
      r"\b(?:clima|pronostico|meteorologia|temperatura|viento|frio|nubes?|cielo|tormenta|neblina)\b"),
+    # Los choques y derrapes de motos, camiones o vehículos requieren contexto
+    # de tránsito; compartir alcaldía no vuelve pertinente una iglesia.
+    (r"\b(?:accident\w*|choc\w*|choqu\w*|colisi\w*|volcadur\w*|derrap\w*)\b.*\b(?:motociclist\w*|motociclet\w*|moto\w*|camion\w*|vehicul\w*|automovil\w*)\b|"
+     r"\b(?:motociclist\w*|motociclet\w*|moto\w*|camion\w*|vehicul\w*|automovil\w*)\b.*\b(?:accident\w*|choc\w*|choqu\w*|colisi\w*|volcadur\w*|derrap\w*)\b",
+     r"\b(?:motociclet\w*|motociclist\w*|motos?|camion\w*|vehicul\w*|automovil\w*|vehicular|trafico|transito|vialidad|carretera|avenida|cruce peatonal)\b"),
     # Atropellamientos y muertes viales no se ilustran con iglesias o plazas.
     (r"\b(?:atropell\w*|arroll\w*)\b",
      r"\b(?:microbus|autobus|vehiculos?|vehicular|trafico|transito|vialidad|carretera|avenida|peatones?|cruce peatonal)\b"),
