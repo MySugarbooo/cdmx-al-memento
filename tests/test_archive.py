@@ -225,6 +225,10 @@ class BoroughAndArchiveTests(unittest.TestCase):
             "category": "Seguridad",
             "topic": "Graduación de la Policía de la Ciudad de México",
         }), 0)
+        self.assertLess(news._photo_score(crime, {
+            "category": "Seguridad",
+            "topic": "Entrega Claudia Sheinbaum 113 nuevas patrullas en Gustavo A Madero",
+        }), 0)
         self.assertGreaterEqual(news._photo_score(crime, {
             "category": "CDMX", "topic": "Edificio de la Fiscalía de CDMX",
         }), 0)
