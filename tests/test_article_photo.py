@@ -8,6 +8,13 @@ from build_article_seo import render_photo
 
 
 class ArticlePhotoTests(unittest.TestCase):
+    def test_historic_airport_article_does_not_show_unrelated_monument(self):
+        page = (Path(__file__).resolve().parents[1] /
+                "articulos/16c3ecff879d86a90e17/index.html").read_text(encoding="utf-8")
+        self.assertIn("Aeropuerto Internacional de la Ciudad de México", page)
+        self.assertNotIn("Monumento_a_Col", page)
+        self.assertIn("Sin fotografía del aeropuerto", page)
+
     def test_local_photo_keeps_credits(self):
         html = render_photo({"category": "Seguridad", "photo": {
             "url": "/assets/fotos/seguridad.jpg", "kind": "representativa",
