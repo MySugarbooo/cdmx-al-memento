@@ -89,7 +89,7 @@ class VerifiedAccidentsTests(unittest.TestCase):
         self.assertIn(recent["url"], [entry["url"] for entry in visible])
         self.assertNotIn(stale["url"], [entry["url"] for entry in visible])
 
-    def test_update_includes_curated_items_in_feed_and_archive(self):
+    def test_unphotographed_curated_incident_stays_in_archive_not_portada(self):
         now = datetime.now(timezone.utc)
         today = now.date().isoformat()
         stamp = now.isoformat(timespec="seconds")
@@ -108,9 +108,11 @@ class VerifiedAccidentsTests(unittest.TestCase):
                     news.update()
                 current = json.loads((folder / "news.json").read_text(encoding="utf-8"))
                 archive = json.loads((folder / "archivo" / (today[:7] + ".json")).read_text(encoding="utf-8"))
-                self.assertEqual(len(current["articles"]), 1)
+                # Una noticia sin imagen comprobada se conserva como antecedente,
+                # pero no se publica en la portada con una foto genérica.
+                self.assertEqual(len(current["articles"]), 0)
                 self.assertEqual(len(archive["articles"]), 1)
-                self.assertTrue(current["articles"][0]["editorial_verified"])
+                self.assertTrue(archive["articles"][0]["editorial_verified"])
                 self.assertEqual(archive["articles"][0]["brief"]["lead"], sample["brief"]["lead"])
 
 
