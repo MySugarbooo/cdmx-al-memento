@@ -448,11 +448,17 @@ function changeTopic(requested){
    cancelTopicTransition();
   };
  };
- // Si la persona lee más abajo, volver al encabezado DESLIZANDO el documento.
+ // Esperar hasta llegar realmente al encabezado antes de reemplazar el contenido.
+ // Un temporizador fijo cambiaba de tema a mitad del desplazamiento, causando un salto.
  if(window.scrollY>24&&!navReducedMotion()){
-  const distance=window.scrollY;
   window.scrollTo({top:0,behavior:'smooth'});
-  pendingTopicScroll=window.setTimeout(swap,Math.min(580,310+distance*.2));
+  const waitForTop=()=>{
+   if(token!==topicSwitchToken)return;
+   pendingTopicScroll=null;
+   if(window.scrollY<=8){swap();return;}
+   pendingTopicScroll=window.setTimeout(waitForTop,45);
+  };
+  pendingTopicScroll=window.setTimeout(waitForTop,45);
  }else{
   if(window.scrollY>16)window.scrollTo({top:0,behavior:'auto'});
   swap();
