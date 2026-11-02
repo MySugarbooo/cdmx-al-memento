@@ -209,6 +209,26 @@ class BoroughAndArchiveTests(unittest.TestCase):
                     "category": "CDMX", "topic": relevant,
                 }), 0)
 
+    def test_protest_and_crime_photos_need_more_than_shared_category(self):
+        blockade = {"title": "Colectivo de Búsqueda Bloquea Avenida Juárez",
+                    "category": "Movilidad"}
+        self.assertLess(news._photo_score(blockade, {
+            "category": "Movilidad",
+            "topic": "Trolebús de la Línea 2 sobre Avenida Yucatán",
+        }), 0)
+        self.assertGreaterEqual(news._photo_score(blockade, {
+            "category": "CDMX", "topic": "Protesta de colectivo en la ciudad",
+        }), 0)
+        crime = {"title": "Matan a Balazos a un Hombre en Azcapotzalco",
+                 "category": "Seguridad"}
+        self.assertLess(news._photo_score(crime, {
+            "category": "Seguridad",
+            "topic": "Graduación de la Policía de la Ciudad de México",
+        }), 0)
+        self.assertGreaterEqual(news._photo_score(crime, {
+            "category": "CDMX", "topic": "Edificio de la Fiscalía de CDMX",
+        }), 0)
+
     def test_editorial_headline_categories_for_crime_parade_and_road(self):
         self.assertEqual(news.category_by_headline(
             "Matan a Balazos a un Hombre en Azcapotzalco", "CDMX"), "Seguridad")
