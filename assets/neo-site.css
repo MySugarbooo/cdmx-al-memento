@@ -353,3 +353,25 @@ body.neo-site-inner>main{min-width:0!important}
  body.neo-site-inner>main,
  body.neo-site-inner>footer{width:100%!important;max-width:100%!important}
 }
+
+
+/* 2026-11-02 · Ancho estable entre portada y páginas interiores.
+   La portada alcanza 1800 px y 1900 px en pantallas grandes. */
+body.neo-site-inner > header.neo-global-header,
+body.neo-site-inner > main,
+body.neo-site-inner > footer{
+ width:min(100%,1800px)!important;
+ max-width:1800px!important;
+ margin-left:auto!important;
+ margin-right:auto!important;
+}
+@media(min-width:1900px){
+ body.neo-site-inner > header.neo-global-header,
+ body.neo-site-inner > main,
+ body.neo-site-inner > footer{max-width:1900px!important}
+}
+@media(max-width:700px){
+ body.neo-site-inner > header.neo-global-header,
+ body.neo-site-inner > main,
+ body.neo-site-inner > footer{width:100%!important}
+}
