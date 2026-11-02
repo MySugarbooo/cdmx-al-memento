@@ -435,6 +435,33 @@ def _photo_category(article):
     return str(article.get("category") or "CDMX")
 
 
+# Resguardos editoriales: una coincidencia geográfica o de categoría no basta.
+# Si la fototeca no tiene contexto del tema, se prefiere publicar sin imagen.
+STRICT_PHOTO_TOPICS = (
+    (r"\b(?:juan atkins|pionero del techno)\b",
+     r"\b(?:techno|musica|dj|vinilos?|discos?|escenario|concierto|musico|productor musical)\b"),
+    (r"\b(?:perritos?|perros?|mascotas?|envenenamientos? de perros?)\b",
+     r"\b(?:perritos?|perros?|mascotas?|caninos?|animales?|veterinaria)\b"),
+    (r"\b(?:matan|balazos|asesinan|homicidio|condenad[oa]s?|condenan|prision|delitos? contra)\b",
+     r"\b(?:policias?|fiscalia|justicia|tribunal|juzgado|penitenciario|prision|seguridad|ministerio publico)\b"),
+    (r"\b(?:sin agua|falta de agua|suspension de agua|corte de agua)\b",
+     r"\b(?:agua|tuberias?|acueducto|pozo|abastecimiento|red hidraulica|cisterna|pipas?|grifos?)\b"),
+    (r"\b(?:fallece motociclista|muere motociclista|motociclistas? fallecidos?)\b",
+     r"\b(?:motos?|motocicletas?|carretera|vialidad|trafico|transito|vehicular)\b"),
+    (r"\b(?:bloquean? avenida|bloqueos? en avenida)\b",
+     r"\b(?:manifestacion|protesta|bloqueo|avenida|vialidad|trafico|calles?|reforma|juarez)\b"),
+    (r"\b(?:panteon|cementerio|tumba)\b",
+     r"\b(?:panteon|cementerio|tumbas?|sepulturas?|mausoleo)\b"),
+    (r"\b(?:desfile|catrinas?)\b",
+     r"\b(?:desfile|catrinas?|comparsa|procesion|festival|dia de muertos)\b"),
+    (r"\b(?:concierto|u2|bono)\b",
+     r"\b(?:musica|concierto|escenario|bandas?|cantante|u2|guitarra|rock)\b"),
+    (r"\blicencia de conducir\b",
+     r"\b(?:licencia|conducir|vehiculos?|automoviles?|autos?|transito|tramite)\b"),
+    (r"\bcalidad del aire\b",
+     r"\b(?:contaminacion|aire|smog|atmosfera|emisiones|cielo|contaminantes)\b"),
+)
+
 def _photo_score(article, photo):
     """Puntúa relación real con el título; nunca declara un hecho verificado."""
     headline=_photo_fold(article.get("title"))
@@ -454,6 +481,10 @@ def _photo_score(article, photo):
     # Una clasificación RSS errónea no autoriza cambiar el tema de la imagen.
     if photo_category not in (category, "CDMX", "Alcaldías"):
         return -10000
+    # El título y el descriptor deben compartir el asunto real de la nota.
+    for headline_pattern, photo_pattern in STRICT_PHOTO_TOPICS:
+        if re.search(headline_pattern, headline) and not re.search(photo_pattern, context):
+            return -10000
     # Una nota del Hoy No Circula requiere contexto vehicular, no fotos de la festividad.
     if re.search(r"\bhoy no circula\b", headline):
         if not re.search(r"\b(?:vehiculos?|vehicular|automoviles?|autos?|coches?|transito|trafico|vialidad|circulacion|hologramas?|verificacion vehicular|hoy no circula)\b", context):
