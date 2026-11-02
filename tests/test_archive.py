@@ -845,5 +845,71 @@ class BoroughAndArchiveTests(unittest.TestCase):
 
 
 
+    def test_cdmx_headline_signal_blocks_unrelated_national_rss_results(self):
+        # Titulares realmente observados en el índice público del 02-11-2026.
+        unrelated = (
+            "Trágico accidente en la carretera federal 307 deja una mujer sin vida y un hombre grave",
+            "Tráfico colapsado, estrés y molestia: ¿Qué sucedió ayer en la Carretera Nacional?",
+            "“Pudo haber omisiones, pero de ninguna manera traición a la patria”: afirma defensa de César Jáuregui sobre agentes de EEUU en Chihuahua",
+            "Grecia Quiroz concluye en Uruapan el recorrido de velas que Carlos Manzo no pudo terminar",
+            "SRE informa sobre fallecimiento de mexicano en accidente de tren Madrid-Sevilla",
+            "Jesús Ochoa cuenta cómo fue su caída de un elevador",
+            "Entre color, música y añoranza: Así se vive el Día de Muertos en México",
+        )
+        for title in unrelated:
+            with self.subTest(title=title):
+                self.assertFalse(news.headline_has_cdmx_signal(title))
+                self.assertFalse(news.local_for_homepage({"title": title}))
+        local = (
+            "Choque en Eje Central deja vehículo destrozado en Gustavo A. Madero, CDMX",
+            "Metro CDMX confirma horario del servicio este lunes",
+            "Accidente vial en Xochimilco",
+            "La Central de Abasto se ha convertido en un centro de operación de grupos criminales",
+            "Feria de café de Veracruz se celebra en CDMX",
+        )
+        for title in local:
+            with self.subTest(title=title):
+                self.assertTrue(news.headline_has_cdmx_signal(title))
+        self.assertEqual(news.outside_cdmx_location(
+            "Accidente en la carretera federal 307"), "Carretera federal 307, sureste de México")
+        self.assertEqual(news.outside_cdmx_location(
+            "SRE informa sobre accidente de tren Madrid-Sevilla"), "España")
+        self.assertEqual(news.outside_cdmx_location(
+            "Agentes de EEUU en Chihuahua"), "Chihuahua")
+        self.assertEqual(news.outside_cdmx_location(
+            "Grecia Quiroz concluye en Uruapan su recorrido"), "Uruapan, Michoacán")
+
+    def test_unrelated_rss_headline_is_archived_without_reaching_cdmx_homepage(self):
+        now = datetime.now(timezone.utc)
+        date = now.date().isoformat()
+        outside = news.standardize(fake(
+            "Trágico accidente en la carretera federal 307 deja una mujer sin vida", date))
+        local = news.standardize(fake("Choque en Eje Central, CDMX", date))
+        self.assertEqual(news.homepage_articles([outside, local], [], now), [local])
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            archive = root / "archivo"
+            with patch.multiple(news, ARCHIVE_DIR=archive,
+                                BOROUGH_DIR=root / "alcaldias",
+                                DEST=root / "news.json"):
+                with patch.object(news, "assign_photos", return_value={"assigned": 0}):
+                    news.consolidate_archive([outside, local], now - timedelta(days=365), "Prueba")
+                saved = news.load_json(archive / (date[:7] + ".json"), {"articles": []})
+                restored = news.fill_recent_from_archive([], now)
+        self.assertEqual(len(saved["articles"]), 2)
+        self.assertEqual([item["title"] for item in restored], [local["title"]])
+
+    def test_protests_with_street_impacts_are_mobility_not_culture_or_crime(self):
+        self.assertEqual(news.category_by_headline(
+            "Manifestaciones en CDMX este 2 de noviembre: calles afectadas y horarios",
+            "Cultura"), "Movilidad")
+        self.assertEqual(news.category_by_headline(
+            "¿Dónde hay plantones de trabajadores? Zonas de CDMX con afectación",
+            "Seguridad"), "Movilidad")
+        self.assertEqual(news.category_by_headline(
+            "Las calles de la CDMX tendrán actividades, incluyendo marchas y plantones",
+            "Cultura"), "Movilidad")
+
+
 if __name__ == "__main__":
     unittest.main()
