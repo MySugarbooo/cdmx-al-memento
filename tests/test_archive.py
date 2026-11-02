@@ -172,6 +172,25 @@ class BoroughAndArchiveTests(unittest.TestCase):
             "category": "CDMX", "topic": "Autódromo Hermanos Rodríguez circuito",
         }), 0)
 
+    def test_formula_one_victory_requires_racing_photo(self):
+        # La portada del 2 de noviembre mostraba una calle del Centro Histórico
+        # para una victoria de Verstappen; la coincidencia "CDMX" no basta.
+        for title in (
+            "Gana Max Verstappen por sexta vez en CDMX",
+            "Checo Pérez triunfa en el Gran Premio de México",
+        ):
+            article = {"title": title, "category": "CDMX"}
+            with self.subTest(title=title):
+                self.assertLess(news._photo_score(article, {
+                    "category": "CDMX",
+                    "topic": "Calles Seminario y Moneda Centro Histórico Ciudad de México 02",
+                    "keywords": ["Centro Histórico Ciudad de México"],
+                }), 0)
+                self.assertGreaterEqual(news._photo_score(article, {
+                    "category": "CDMX",
+                    "topic": "Autódromo Hermanos Rodríguez, circuito de Fórmula 1",
+                }), 0)
+
     def test_november_photo_context_rejects_unrelated_stock_images(self):
         # Imágenes observadas en news.json público: ninguna es foto del hecho.
         cases = [
