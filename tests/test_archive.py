@@ -286,7 +286,8 @@ class BoroughAndArchiveTests(unittest.TestCase):
         title = "Muere conductor tras chocar contra autobús en Carretera a Laredo en Escobedo"
         self.assertTrue(news.outside_cdmx_scope(title))
         veracruz = ("Las fincas de café de Veracruz donde ves la pizca, "
-                    "el tostado y la cata: cuánto cuesta el recorrido")
+                    "el tostado y la cata: cuánto cuesta el recorrido "
+                    "en este Pueblo Mágico a 4 horas y media de CDMX")
         self.assertTrue(news.outside_cdmx_scope(veracruz))
         self.assertEqual(news.identify_location(veracruz)[1], "Veracruz (fuera de CDMX)")
         veracruz_article = news.standardize(fake(veracruz, datetime.now(timezone.utc).date().isoformat()))
