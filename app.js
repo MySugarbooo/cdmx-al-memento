@@ -26,6 +26,12 @@ function validLink(u,article){
    ['comova.mx','mayacomunicacion.com.mx','www.elgrafico.mx'].includes(p.hostname)&&p.pathname!=='/';
  }catch{return false}
 }
+function hasDocumentaryPhoto(article){
+ const p=article?.photo||{};
+ return p.kind==='hecho'&&p.verified===true&&Boolean(p.author&&p.license&&p.licenseUrl&&p.source&&p.evidence_url)
+  &&(/^\/assets\/fotos\/[a-z0-9_-]+\.jpg$/.test(p.url||'')
+    ||/^https:\/\/(?:upload|thumb)\.wikimedia\.org\/wikipedia\/commons\//.test(p.url||''));
+}
 // La noticia principal de la portada procede del mismo feed que las demás notas.
 // Nunca fijar un titular antiguo en el HTML ni presentarlo como noticia de hoy.
 const leadStory={
@@ -36,20 +42,22 @@ const leadStory={
  link:document.getElementById('lead-story-link')
 };
 function drawLeadIllustration(article){
- const target=document.getElementById('lead-story-art');if(!target)return;
- if(!article){target.replaceChildren();return;}
- const title=String(article.title||'');const lower=title.toLocaleLowerCase('es-MX');
- const theme=/metro|tren|estaci[oó]n/.test(lower)?'metro':/gasolina|combustible/.test(lower)?'gas':/seguridad|polic[ií]a|operativo|accidente/.test(lower)?'security':/lluvia|clima|inundaci[oó]n/.test(lower)?'rain':'city';
- const svgParts={
- city:'<path d="M65 290V170h90v120M190 290V95h120v195M340 290V145h110v145M490 290V80h120v210M645 290V170h85v120" fill="#403455" stroke="#fff" stroke-width="8"/><path d="M220 120h55m-55 35h55m-55 35h55m-55 35h55m295-110h60m-60 40h60m-60 40h60" stroke="#ffdbed" stroke-width="14"/>',
- metro:'<rect x="180" y="85" width="440" height="220" rx="45" fill="#493a62" stroke="white" stroke-width="12"/><rect x="230" y="125" width="340" height="90" rx="14" fill="#b8e5ee"/><circle cx="270" cy="265" r="19" fill="#ffd3e9"/><circle cx="530" cy="265" r="19" fill="#ffd3e9"/><path d="M210 345h380" stroke="#fff" stroke-width="12"/>',
- gas:'<rect x="230" y="95" width="225" height="230" rx="18" fill="#493a62" stroke="#fff" stroke-width="10"/><rect x="260" y="130" width="165" height="90" rx="10" fill="#b8e5ee"/><path d="M455 145q110 0 100 95v45" fill="none" stroke="#fff" stroke-width="14"/><circle cx="550" cy="305" r="18" fill="#ffd3e9"/>',
- security:'<path d="M400 65l175 65v110q-20 90-175 135-155-45-175-135V130z" fill="#493a62" stroke="#fff" stroke-width="12"/><path d="M400 140v155m-75-80h150" stroke="#ffd3e9" stroke-width="22"/>',
- rain:'<path d="M260 215q-80-65 0-120 60-50 120 0 90-60 145 30 95 15 40 90z" fill="#fff" opacity=".8"/><path d="M290 260l-25 55m125-55l-25 55m125-55l-25 55" stroke="#b8e5ee" stroke-width="20" stroke-linecap="round"/>'};
- const svg='<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 390"><defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#24203e"/><stop offset="1" stop-color="#b56b9b"/></linearGradient></defs><rect width="800" height="390" rx="22" fill="url(#bg)"/><circle cx="680" cy="80" r="125" fill="#fff" opacity=".10"/>'+svgParts[theme]+'<rect x="0" y="345" width="800" height="45" fill="#201b34" opacity=".85"/><text x="400" y="373" fill="#fff" font-size="19" font-family="Arial,sans-serif" text-anchor="middle">ILUSTRACIÓN DIGITAL · NO ES FOTO REAL</text></svg>';
- const img=document.createElement('img');img.src='data:image/svg+xml;charset=utf-8,'+encodeURIComponent(svg);img.alt='Ilustración vectorial de contexto para: '+title;img.loading='eager';img.decoding='async';
- const credit=document.createElement('small');credit.textContent='Ilustración original creada con código · CDMX AL MEMENTO';
- const link=document.createElement('a');link.href=article.local_url||article.url||'#';link.className='lead-art-click';link.setAttribute('aria-label','Leer noticia: '+title);link.append(img);const badge=document.createElement('span');badge.className='lead-art-badge';badge.textContent='VER NOTICIA ↗';link.append(badge);target.replaceChildren(link,credit);
+ const target=document.getElementById('lead-story-art');
+ if(!target)return;
+ target.replaceChildren();
+ if(!hasDocumentaryPhoto(article))return;
+ const photo=article.photo;
+ const link=document.createElement('a');link.href=article.local_url||article.url;
+ link.className='lead-art-click';link.setAttribute('aria-label','Leer noticia: '+article.title);
+ const img=document.createElement('img');img.src=photo.url;
+ img.alt='Fotografía comprobada del acontecimiento: '+article.title;
+ img.loading='eager';img.decoding='async';
+ img.addEventListener('error',()=>target.replaceChildren(),{once:true});
+ const badge=element('span','lead-art-badge','VER NOTICIA ↗');link.append(img,badge);
+ const credit=document.createElement('a');credit.className='photo-credit-inline';
+ credit.textContent='© '+photo.author+' · '+photo.license;
+ credit.href=photo.source;credit.target='_blank';credit.rel='noopener noreferrer';
+ target.append(link,credit);
 }
 function renderLeadStory(items){
  if(!leadStory.title)return;
@@ -118,7 +126,12 @@ function renderLeadStory(items){
 }
 function applyNewsFeed(feed){
  if(!feed||!Array.isArray(feed.articles))throw Error('Formato de noticias incorrecto');
- articles=feed.articles.filter(a=>a&&typeof a.title==='string'&&validLink(a.url,a));
+ const usedPhotos=new Set();
+ articles=feed.articles.filter(a=>{
+  if(!a||typeof a.title!=='string'||!validLink(a.url,a)||!hasDocumentaryPhoto(a))return false;
+  if(usedPhotos.has(a.photo.url))return false;
+  usedPhotos.add(a.photo.url);return true;
+ });
  photoLibrary?.prepare(articles);
  updated=String(feed.updated||'sin fecha');
  render();
@@ -158,7 +171,7 @@ function articleVisual(a){
   image.src=assignedPhoto.url;image.loading='lazy';image.decoding='async';image.width=640;image.height=400;
   const documented=assignedPhoto.kind==='hecho'&&assignedPhoto.verified===true&&Boolean(assignedPhoto.evidence_url&&assignedPhoto.licenseUrl);
   image.alt=documented?'Fotografía verificada del acontecimiento: '+(assignedPhoto.topic||a.title):'Imagen representativa del tema: '+(assignedPhoto.topic||'Ciudad de México')+'. No es evidencia del acontecimiento.';
-  image.onerror=()=>{illustratedFallback(a,figure)};
+  image.onerror=()=>{figure.closest('.card')?.remove();figure.replaceChildren()};
   const label=element('span','visual-label',documented?'FOTOGRAFÍA VERIFICADA DEL ACONTECIMIENTO':'IMAGEN REPRESENTATIVA DEL TEMA');
   const credit=element('a','photo-credit-inline','© '+(assignedPhoto.author||'Wikimedia Commons')+' · '+(assignedPhoto.license||'Licencia en Commons'));
   if(/^https:\/\/commons\.wikimedia\.org\/wiki\/File:/.test(assignedPhoto.source||'')){
