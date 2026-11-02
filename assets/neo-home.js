@@ -15,11 +15,14 @@ const shortTime=new Intl.DateTimeFormat('es-MX',{timeZone:'America/Mexico_City',
 const escapeDate=d=>{const date=new Date(d);return Number.isFinite(date.getTime())?shortDate.format(date):'Fecha por confirmar'};
 const articleLink=a=>typeof a.local_url==='string'&&/^\/noticias\/\?/.test(a.local_url)?a.local_url:'/noticias/';
 const safePhotoUrl=u=>/^\/assets\/fotos\/[a-zA-Z0-9_-]+\.jpe?g$/.test(String(u||''))||/^https:\/\/(?:upload|thumb)\.wikimedia\.org\/wikipedia\/commons\//.test(String(u||''));
-// La foto debe documentar el acontecimiento, no solo ilustrar el tema.
+// Las fotografías representativas son distintas de las pruebas del acontecimiento.
 const photoInfo=a=>{
  const p=a?.photo;
- return p?.kind==='hecho'&&p.verified===true&&safePhotoUrl(p.url)
-  &&p.author&&p.license&&p.licenseUrl&&p.source&&p.evidence_url?p:null;
+ if(!p||!safePhotoUrl(p.url)||!p.author||!p.license||!p.licenseUrl||!p.source)return null;
+ const documented=p.kind==='hecho'&&p.verified===true&&Boolean(p.evidence_url);
+ if(!documented&&p.kind!=='representativa')return null;
+ if(a?.sensitive_media&&!documented)return null;
+ return p;
 };
 const sizedPhotoUrl=(url,width)=>{
  if(/^https:\/\/thumb\.wikimedia\.org\/wikipedia\/commons\/thumb\//.test(url))
@@ -159,7 +162,7 @@ function renderNews(){
   out.append(card);
  }
  if(!matched.length)out.append(el('p','neo-feed-note',all.length?'No hay noticias que coincidan. Prueba con otra búsqueda.':'Aún no hay noticias con fotografías auténticas del acontecimiento, verificadas y autorizadas.'));const more=shell.querySelector('#neo-news-more');if(more)more.hidden=matched.length<=state.visible;
- shell.querySelector('#neo-news-status').textContent=(state.filter||state.query?'Resultados: '+matched.length+' · ':'')+(state.fromBackup?'Titulares de respaldo (pueden no estar actualizados)':'Titulares del feed automático')+' · Solo se publican fotos auténticas y verificadas del hecho';
+ shell.querySelector('#neo-news-status').textContent=(state.filter||state.query?'Resultados: '+matched.length+' · ':'')+(state.fromBackup?'Titulares de respaldo (pueden no estar actualizados)':'Titulares del feed automático')+' · Imágenes con autor y licencia: del hecho o representativas identificadas';
 }
 function mirrorVisits(){
  const target=shell.querySelector('#neo-visitors');const origin=document.getElementById('header-visitors-number');
@@ -236,7 +239,7 @@ function applyStories(items,source){
   state.stories=[];state.current=0;state.fromBackup=source!=='online';
   const img=shell.querySelector('#neo-hero-img');img.removeAttribute('src');img.style.display='none';
   const title=shell.querySelector('#neo-hero-title');title.textContent='Noticias pendientes de verificación fotográfica';title.href='/reportes/';
-  shell.querySelector('#neo-hero-description').textContent='No publicamos noticias sin imágenes auténticas del hecho y autorización de uso.';
+  shell.querySelector('#neo-hero-description').textContent='Mostramos noticias con fotografía acreditada del hecho o una imagen representativa claramente identificada.';
   shell.querySelector('#neo-hero-category').textContent='Revisión editorial';
   shell.querySelector('#neo-hero-date').textContent='';shell.querySelector('#neo-hero-source').textContent='';
   shell.querySelector('#neo-hero-credit').textContent='Sin fotografía documental verificada';
