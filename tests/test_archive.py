@@ -911,5 +911,45 @@ class BoroughAndArchiveTests(unittest.TestCase):
             "Cultura"), "Movilidad")
 
 
+    def test_current_portada_photos_require_subject_not_only_cdmx_context(self):
+        # Incongruencias observadas el 2 de noviembre en el índice público.
+        cases = (
+            ("Día de Muertos en CDMX: Panteones Reciben a Familias con Operativos de Seguridad",
+             "Seguridad", "Desfile de Catrinas in Mexico City 2026",
+             "Panteón con tumbas y ofrendas funerarias"),
+            ("Manifestaciones en CDMX este 2 de noviembre: calles afectadas y horarios",
+             "Movilidad", "Trolebús de la Línea 5 en Paseo de la Reforma",
+             "Manifestación con bloqueo y tráfico en avenida"),
+            ("Movilizaciones en la CDMX: cuatro concentraciones este lunes",
+             "CDMX", "Fuente Alameda Central, Ciudad de México",
+             "Concentración y protesta en calles de CDMX"),
+            ("Del Campo a tu Colonia: venta directa de productos del suelo de conservación en CDMX",
+             "CDMX", "Ciudad de México - Colonia Centro 6984",
+             "Mercado de productores de verduras de Xochimilco"),
+            ("De ARTZ Pedregal a Antara: las obras en CDMX de Javier Sordo Madaleno",
+             "CDMX", "Obras remodelación Zócalo Ciudad de México 2017",
+             "Arquitectura de centro comercial ARTZ Pedregal"),
+            ("Muere mujer tras ser atropellada por conductor ebrio en Coyoacán",
+             "Movilidad", "Trolebús de la Línea 2 sobre Avenida Yucatán",
+             "Tráfico vehicular en Avenida Coyoacán"),
+        )
+        for title, category, wrong, appropriate in cases:
+            article = {"title": title, "category": category}
+            with self.subTest(title=title):
+                self.assertLess(news._photo_score(article, {
+                    "category": category, "topic": wrong,
+                }), 0)
+                self.assertGreaterEqual(news._photo_score(article, {
+                    "category": category, "topic": appropriate,
+                }), 0)
+        cycling = {
+            "title": "Prevén movilizaciones, rodadas ciclistas y eventos por Día de Muertos en CDMX",
+            "category": "Movilidad",
+        }
+        self.assertGreaterEqual(news._photo_score(cycling, {
+            "category": "Movilidad", "topic": "Talleres de EcoBici",
+        }), 0)
+
+
 if __name__ == "__main__":
     unittest.main()

@@ -451,6 +451,15 @@ def _photo_category(article):
 # Resguardos editoriales: una coincidencia geográfica o de categoría no basta.
 # Si la fototeca no tiene contexto del tema, se prefiere publicar sin imagen.
 STRICT_PHOTO_TOPICS = (
+    # Fotos representativas deben corresponder al asunto, no solo a la ciudad.
+    (r"\b(?:panteones?|cementerios?|camposantos?)\b",
+     r"\b(?:panteones?|cementerios?|camposantos?|tumbas?|sepulturas?|ofrendas? funerarias?)\b"),
+    (r"\b(?:movilizaciones?|manifestaciones?|plantones?|concentraciones?)\b",
+     r"\b(?:movilizaciones?|manifestaciones?|plantones?|concentraciones?|protestas?|marchas?|bloqueos?|trafico|transito|vehicular|congestion|cierres? viales?|bicicletas?|ciclistas?|rodadas?|ecobici)\b"),
+    (r"\bdel campo a tu colonia\b",
+     r"\b(?:campo|mercados?|agricultura|productores?|verduras?|hortalizas?|cosecha|suelo de conservacion|venta directa|alimentos?)\b"),
+    (r"\b(?:artz pedregal|antara)\b",
+     r"\b(?:artz|antara|arquitectura|arquitectos?|centros? comerciales?|edificios?|construccion de edificios)\b"),
     # Visitar tumbas requiere contexto funerario, no actos políticos universitarios.
     (r"\b(?:visitan? panteones?|adornar tumbas|familias? visitan? panteones?)\b",
      r"\b(?:panteones?|cementerios?|tumbas?|sepulturas?|ofrendas? funerarias?)\b"),
@@ -523,7 +532,7 @@ STRICT_PHOTO_TOPICS = (
      r"\b(?:motociclet\w*|motociclist\w*|motos?|camion\w*|vehicul\w*|automovil\w*|vehicular|trafico|transito|vialidad|carretera|avenida|cruce peatonal)\b"),
     # Atropellamientos y muertes viales no se ilustran con iglesias o plazas.
     (r"\b(?:atropell\w*|arroll\w*)\b",
-     r"\b(?:microbus|autobus|vehiculos?|vehicular|trafico|transito|vialidad|carretera|avenida|peatones?|cruce peatonal)\b"),
+     r"\b(?:microbus|autobus|vehiculos?|vehicular|trafico|transito|vialidad|carretera|peatones?|cruce peatonal)\b"),
     # Los operativos de vigilancia no se ilustran con museos sin relación.
     (r"\bpolicias?\b.*\b(?:cuidan|vigilan|operativo|despliegan)\b",
      r"\b(?:policias?|patrullas?|vigilancia|seguridad|operativo|agentes?)\b"),
