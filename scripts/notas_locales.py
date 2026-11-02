@@ -466,7 +466,7 @@ def _photo_category(article):
 STRICT_PHOTO_TOPICS = (
     # Una ofrenda monumental no es la cafetería de un museo.
     (r"\bofrenda monumental\b",
-     r"\b(?:ofrendas?|altares?|dia de muertos|catrinas?|zocalo|decoracion funeraria)\b"),
+     r"\b(?:ofrendas?|altares?|dia de muertos|catrinas?|decoracion funeraria)\b"),
     # Una agenda de eventos de Día de Muertos requiere contexto festivo real.
     (r"\b(?:eventos? gratis|actividades gratis|que hacer)\b.*\bdia de muertos\b",
      r"\b(?:dia de muertos|ofrendas?|altares?|catrinas?|festivales?|eventos?|conciertos?|desfiles?|celebraciones?)\b"),
