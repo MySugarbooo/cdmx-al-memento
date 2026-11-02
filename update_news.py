@@ -249,6 +249,9 @@ def category_by_headline(title, feed_category):
     # No clasificar como Metro noticias deportivas de Fórmula 1 o NASCAR.
     if re.search(r"\b(?:formula 1|gp ciudad de mexico|gran premio|nascar)\b", normalized):
         return "Movilidad"
+    # El estado del Metrobús pertenece a Movilidad, no a la categoría general.
+    if re.search(r"\bmetrobus\b", normalized):
+        return "Movilidad"
     # Un comunicado del EZLN sobre el gobierno no es una incidencia del Metro.
     if (re.search(r"\bezln\b", normalized)
             and re.search(r"\b(?:buscadoras?|gobierno|movilizacion)\b", normalized)):
@@ -597,6 +600,33 @@ def fill_recent_from_archive(items, now, limit=60):
     return result
 
 
+def editorial_event_key(article):
+    """Identifica solo coberturas repetidas del mismo hecho inequívoco.
+
+    No fusiona la hemeroteca: distintas fuentes conservan sus registros.
+    """
+    title = fold(article.get("title", ""))
+    if (re.search(r"\bcoyoacan\b", title)
+            and re.search(r"\bsaldo blanco\b", title)
+            and re.search(r"\bdia de muertos\b", title)):
+        return ("coyoacan-dia-muertos-saldo-blanco", article.get("date"))
+    return None
+
+
+def dedupe_homepage_events(items):
+    """Evita reiterar un mismo suceso en portada, sin borrar fuentes."""
+    result = []
+    seen_events = set()
+    for article in items:
+        event = editorial_event_key(article)
+        if event is not None:
+            if event in seen_events:
+                continue
+            seen_events.add(event)
+        result.append(article)
+    return result
+
+
 def homepage_articles(items, reviewed, now, limit=60):
     """Mostrar temporalmente accidentes relevantes cotejados, sin fijarlos para siempre."""
     front = [item for item in items if local_for_homepage(item)][:limit]
@@ -681,6 +711,7 @@ def update():
             continue
         visible.append(article)
         used_photos.add(photo_url)
+    visible = dedupe_homepage_events(visible)
     write_json(DEST, {"updated": updated, "articles": visible})
     print("Portada con imágenes acreditadas y sin repetir:", len(visible),
           "de", len(candidates), "candidatas.")
