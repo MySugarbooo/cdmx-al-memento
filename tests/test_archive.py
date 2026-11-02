@@ -1162,5 +1162,31 @@ class BoroughAndArchiveTests(unittest.TestCase):
                 }), 0)
 
 
+    def test_same_coyoacan_event_is_shown_once_without_merging_archive_records(self):
+        # Tres titulares públicos del 02-11-2026 describen el mismo saldo blanco.
+        titles = [
+            "Coyoacán reporta saldo blanco tras recibir a más de 150 mil visitantes por Día de Muertos",
+            "Coyoacán recibe a más de 150 mil visitantes por Día de Muertos y reporta saldo blanco",
+            "Miles visitan Coyoacán con saldo blanco en conmemoración del Día de Muertos",
+        ]
+        entries = [dict(fake(title, "2026-11-02"), url=f"https://example.org/{i}")
+                   for i, title in enumerate(titles)]
+        unrelated = fake("Coyoacán anuncia actividades culturales para el viernes", "2026-11-02")
+        different_day = fake(titles[0], "2026-11-03")
+        visible = news.dedupe_homepage_events(entries + [unrelated, different_day])
+        self.assertEqual([item["title"] for item in visible],
+                         [titles[0], unrelated["title"], titles[0]])
+        self.assertEqual(len(entries), 3)  # Las fuentes originales no se alteran.
+        self.assertEqual(len({news.article_key(item) for item in entries}), 3)
+
+    def test_metrobus_status_is_mobility_without_reclassifying_metro(self):
+        self.assertEqual(news.category_by_headline(
+            "Esta es la última actualización del avance del Metrobús este 2 de noviembre",
+            "CDMX"), "Movilidad")
+        self.assertEqual(news.category_by_headline(
+            "Caos en Línea 1 del Metro CDMX: usuarios escapan por las ventanas",
+            "Metro"), "Metro")
+
+
 if __name__ == "__main__":
     unittest.main()
