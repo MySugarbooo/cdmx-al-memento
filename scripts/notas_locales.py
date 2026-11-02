@@ -434,6 +434,8 @@ def _photo_category(article):
     # Un operativo policial durante una festividad sigue siendo Seguridad.
     if re.search(r"\bpolicias?\b.*\b(?:cuidan|vigilan|operativo|despliegan)\b", headline):
         return "Seguridad"
+    if re.search(r"\b(?:detienen|arrestan|capturan|aprehenden)\s+a\s+(?:\d+|un|una|dos|tres|cuatro|cinco|seis|personas|hombres|mujeres)\b", headline):
+        return "Seguridad"
     for pattern,category in SUBJECT_RULES:
         if re.search(pattern,headline):
             return category
