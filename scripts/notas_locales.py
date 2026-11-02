@@ -434,6 +434,9 @@ def _photo_category(article):
     # Un aviso del Hoy No Circula no es una nota cultural aunque mencione Día de Muertos.
     if re.search(r"\bhoy no circula\b", headline):
         return "Movilidad"
+    # Los ataques y homicidios prevalecen sobre menciones a festividades.
+    if re.search(r"\b(?:ataque armado|balacera|asesina(?:n)?|asesinato)\b", headline):
+        return "Seguridad"
     # Un operativo policial durante una festividad sigue siendo Seguridad.
     if re.search(r"\bpolicias?\b.*\b(?:cuidan|vigilan|operativo|despliegan)\b", headline):
         return "Seguridad"
@@ -453,7 +456,7 @@ STRICT_PHOTO_TOPICS = (
      r"\b(?:panteones?|cementerios?|tumbas?|sepulturas?|ofrendas? funerarias?)\b"),
     # Marchas anunciadas no se ilustran con vehículos de transporte público.
     (r"\bmarchas?\b.*\b(?:hoy|noviembre|bloqueos?|concentraciones?)\b",
-     r"\b(?:manifestaciones?|protestas?|marchas?|bloqueos?|concentraciones?|movilizaciones?)\b"),
+     r"\b(?:manifestacion(?:es)?|protestas?|marchas?|bloqueos?|concentraciones?|movilizaciones?)\b"),
     # Una agresión letal no es una celebración ni una imagen genérica de rescate.
     (r"\b(?:ataque armado|balacera|asesina(?:n)?|asesinato)\b",
      r"\b(?:policias?|fiscalia|investigacion penal|justicia|ministerio publico|peritos?|escena del crimen)\b"),
