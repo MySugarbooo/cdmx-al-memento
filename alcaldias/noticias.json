@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-02 14:57 UTC",
+  "updated": "2026-11-02 15:00 UTC",
   "boroughs": [
     {
       "name": "La Magdalena Contreras",
@@ -6023,21 +6023,6 @@
             "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
             "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "commons_48072549",
-            "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Polic%C3%ADa_de_tr%C3%A1nsito_Ciudad_de_M%C3%A9xico_marcando_alto_a_auto.jpg/960px-Polic%C3%ADa_de_tr%C3%A1nsito_Ciudad_de_M%C3%A9xico_marcando_alto_a_auto.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "category": "Seguridad",
-            "borough": "",
-            "topic": "Policía de tránsito Ciudad de México marcando alto a auto",
-            "keywords": [
-              "Policía Ciudad de México"
-            ],
-            "author": "ProtoplasmaKid",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Polic%C3%ADa_de_tr%C3%A1nsito_Ciudad_de_M%C3%A9xico_marcando_alto_a_auto.jpg"
           }
         },
         {
@@ -7257,7 +7242,7 @@
     },
     {
       "name": "Milpa Alta",
-      "count": 64,
+      "count": 65,
       "articles": [
         {
           "title": "Dos hombres caen a una fosa de 6 metros dentro de un panteón en Milpa Alta; así los rescataron",
@@ -7308,6 +7293,24 @@
           "local_url": "/noticias/?id=7a52eb5622920ebc58a2&mes=2026-11",
           "brief": {
             "lead": "De acuerdo con Capital México, el titular publicado es: «Rescatan a 2 hombres que cayeron a una tumba de 6 metros en panteón de Milpa Alta». La información publicada por Capital México aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          }
+        },
+        {
+          "title": "Dramático rescate: caen a fosa de 6 metros en panteón de Milpa Alta y sobreviven",
+          "description": "De acuerdo con PostaMx, el titular publicado es: «Dramático rescate: caen a fosa de 6 metros en panteón de Milpa Alta y sobreviven». La información publicada por PostaMx aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOZmpIcW1kYW9ZTVl4Wi11SG1ncE9FclpYSEkyajRxWlJyZnU0TEM2MHJ1dU1wOHNtSHQxdk1kdkk5MHFNVWNqUXpMUlpMSEtBc3d5cHU3T2J2ZTljWGMwQ1RHTXJLcXg0dU5NRi1yQ3VLTFExZDhqTHQ5ak9Vb0lzOGFPb2ZpLU1MdTVrdVZaMHlNMll5WWM4cmw5X3V0MXZqY1BEQWFRczhzUXBBVHBERFhsa1hZaHFJeXIya0piNDDSAcABQVVfeXFMTmZqSHFtZGFvWU1ZeFotdUhtZ3BPRXJaWEhJMmo0cVpScmZ1NExDNjBydXVNcDhzbUh0MXZNZHZJOTBxTVVjalF6TFJaTEhLQXN3eXB1N09idmU5Y1hjMENUR01yS3F4NHVOTUYtckN1S0xRMWQ4akx0OWpPVW9JczhhT29maS1NTHU1a3VWWjB5TTJZeVljOHJsOV91dDF2amNQREFhUXM4c1FwQVRwRERYbGtYWWhxSXlyMmtKYjQw?oc=5",
+          "source": "PostaMx",
+          "date": "2026-11-01",
+          "published_at": "2026-11-02T00:00:00Z",
+          "category": "CDMX",
+          "borough": "Milpa Alta",
+          "location": "Milpa Alta (mencionada en el titular)",
+          "local_url": "/noticias/?id=bc6fb464e30289aec0b5&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con PostaMx, el titular publicado es: «Dramático rescate: caen a fosa de 6 metros en panteón de Milpa Alta y sobreviven». La información publicada por PostaMx aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
@@ -7859,39 +7862,6 @@
             "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
             "source": "https://commons.wikimedia.org/wiki/File:Milpa_Alta_-_Stock_IMG_1756_(25396649242).jpg"
           }
-        },
-        {
-          "title": "¡Heróico! Rescatan a un michi que quedó atrapado en un árbol en Milpa Alta",
-          "description": "De acuerdo con Escapada H, el titular publicado es: «¡Heróico! Rescatan a un michi que quedó atrapado en un árbol en Milpa Alta». La información publicada por Escapada H aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPa2xIX1liOWFqY2tHUVZBLWpPR2FEN1lxRnhBajdJQ1o4cWR4MzZXN0FPZm1fSGQ5a0Fab1QwWFV6c3oyREFfYVh1RWhzZkpCREFHUWEtMF9vZS0tZHViQkxRdXdFeGJoVFJmZHQtTjNTQlZtTDBwOWNtRFk3QUJDeW1CRkFTdGxuVjQ1YmJGWDN4SVZTZFdlRk1OSldYWWVJNzF1dklHN3pHZzlvV2ZLc0c0RFktVDdTVTBQbldhZkJ1VTA4RzdQYnkyR2NIMmhxdElJNHJfYUdmdy1SVFE?oc=5",
-          "source": "Escapada H",
-          "date": "2026-10-22",
-          "published_at": "2026-10-22T06:12:00Z",
-          "category": "CDMX",
-          "borough": "Milpa Alta",
-          "location": "Milpa Alta (mencionada en el titular)",
-          "local_url": "/noticias/?id=075a352c9891c5f971d4&mes=2026-10",
-          "brief": {
-            "lead": "De acuerdo con Escapada H, el titular publicado es: «¡Heróico! Rescatan a un michi que quedó atrapado en un árbol en Milpa Alta». La información publicada por Escapada H aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "commons_75454541",
-            "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Milpa_Alta_-_Stock_IMG_1820_%2825396671752%29.jpg/960px-Milpa_Alta_-_Stock_IMG_1820_%2825396671752%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "category": "Alcaldías",
-            "borough": "",
-            "topic": "Milpa Alta - Stock IMG 1820 (25396671752)",
-            "keywords": [
-              "Milpa Alta CDMX"
-            ],
-            "author": "Gobierno CDMX",
-            "license": "CC0",
-            "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
-            "source": "https://commons.wikimedia.org/wiki/File:Milpa_Alta_-_Stock_IMG_1820_(25396671752).jpg"
-          }
         }
       ]
     },
@@ -7915,21 +7885,6 @@
             "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
             "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "archivo_seguridad_005",
-            "kind": "representativa",
-            "url": "/assets/fotos/archivo_seguridad_005.jpg",
-            "category": "Seguridad",
-            "borough": "",
-            "topic": "Jeep policia cdmx",
-            "keywords": [
-              "Seguridad"
-            ],
-            "author": "Gobierno de la Ciudad de México",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Jeep_policia_cdmx.jpg"
           }
         },
         {
@@ -7948,21 +7903,6 @@
             "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
             "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "archivo_seguridad_002",
-            "kind": "representativa",
-            "url": "/assets/fotos/archivo_seguridad_002.jpg",
-            "category": "Seguridad",
-            "borough": "",
-            "topic": "Patrulla vecinal",
-            "keywords": [
-              "Seguridad"
-            ],
-            "author": "Daniel Yonka",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Patrulla_vecinal.jpg"
           }
         },
         {
@@ -7981,21 +7921,6 @@
             "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
             "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "seguridad",
-            "kind": "representativa",
-            "url": "/assets/fotos/seguridad.jpg",
-            "category": "Seguridad",
-            "borough": "",
-            "topic": "Patrulla de Ciudad de México",
-            "keywords": [
-              "Seguridad"
-            ],
-            "author": "RainerRowe",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.es",
-            "source": "https://commons.wikimedia.org/wiki/File:Patrulla_cdmx.jpg"
           }
         },
         {
@@ -8032,21 +7957,6 @@
             "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
             "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "archivo_seguridad_002",
-            "kind": "representativa",
-            "url": "/assets/fotos/archivo_seguridad_002.jpg",
-            "category": "Seguridad",
-            "borough": "",
-            "topic": "Patrulla vecinal",
-            "keywords": [
-              "Seguridad"
-            ],
-            "author": "Daniel Yonka",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Patrulla_vecinal.jpg"
           }
         },
         {
