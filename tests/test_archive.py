@@ -58,6 +58,13 @@ class BoroughAndArchiveTests(unittest.TestCase):
         self.assertLess(news._photo_score(fixed, {
             "category": "CDMX", "topic": "Obra de teatro De Cachetito en plaza pública Ciudad de México",
         }), 0)
+        self.assertLess(news._photo_score(fixed, {
+            "category": "Seguridad", "topic": "Graduación de la Policía de la Ciudad de México",
+            "keywords": ["Policía Ciudad de México"],
+        }), 0)
+        self.assertLess(news._photo_score(fixed, {
+            "category": "Seguridad", "topic": "Entrega de nuevas patrullas de CDMX",
+        }), 0)
         self.assertGreaterEqual(news._photo_score(fixed, {
             "category": "CDMX", "topic": "Central de Abasto de Ciudad de México",
         }), 0)
