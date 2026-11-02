@@ -536,7 +536,7 @@ STRICT_PHOTO_TOPICS = (
      r"\b(?:motociclet\w*|motociclist\w*|motos?|camion\w*|vehicul\w*|automovil\w*|vehicular|trafico|transito|vialidad|carretera|avenida|cruce peatonal)\b"),
     # Atropellamientos y muertes viales no se ilustran con iglesias o plazas.
     (r"\b(?:atropell\w*|arroll\w*)\b",
-     r"\b(?:microbus|autobus|vehiculos?|vehicular|trafico|transito|vialidad|carretera|peatones?|cruce peatonal)\b"),
+     r"\b(?:microbus|autobus|vehiculos?|vehicular|trafico|transito|vialidad|peatones?|cruce peatonal|automoviles?|autos?|coches?|atropellamientos?)\b"),
     # Los operativos de vigilancia no se ilustran con museos sin relación.
     (r"\bpolicias?\b.*\b(?:cuidan|vigilan|operativo|despliegan)\b",
      r"\b(?:policias?|patrullas?|vigilancia|seguridad|operativo|agentes?)\b"),
