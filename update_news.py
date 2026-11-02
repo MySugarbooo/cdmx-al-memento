@@ -112,6 +112,12 @@ def outside_cdmx_location(title):
             and (not re.search(r"\b(?:cdmx|ciudad de mexico)\b", words)
                  or re.search(r"\ba \d+ horas?(?: y media)? de (?:cdmx|ciudad de mexico)\b", words))):
         return "Veracruz"
+    # Meganoticias (01-11-2026): esta asamblea de autoridades auxiliares
+    # ocurrió en la agencia municipal de Juchitán, Oaxaca, no en la alcaldía
+    # homónima de CDMX. La coincidencia exacta evita excluir otras asambleas.
+    if (re.search(r"\basamblea comunitaria determina relevo de autoridades auxiliares en alvaro obregon\b", words)
+            and not re.search(r"\b(?:cdmx|ciudad de mexico)\b", words)):
+        return "Álvaro Obregón, Juchitán, Oaxaca"
     # Mantener titulares que sí mencionen CDMX junto a otras regiones.
     if any(" " + name + " " in words for name in ("cdmx", "ciudad de mexico")):
         return ""
