@@ -441,7 +441,7 @@ def _photo_category(article):
     if re.search(r"\bhoy no circula\b", headline):
         return "Movilidad"
     # Los ataques y homicidios prevalecen sobre menciones a festividades.
-    if re.search(r"\b(?:ataque armado|balacera|asesina(?:n)?|asesinato)\b", headline):
+    if re.search(r"\b(?:ataque armado|balacera|asesina(?:n)?|asesinad\w*|asesinato)\b", headline):
         return "Seguridad"
     # Las víctimas de disparos son un tema de seguridad, aunque el RSS diga CDMX.
     if re.search(r"\b(?:balead\w*|balear\w*|balean|baleo)\b", headline):
@@ -655,7 +655,7 @@ def _photo_score(article, photo):
         return -10000
     # Choques de autos o motocicletas no se ilustran con trolebuses ni trenes.
     if (re.search(r"\b(?:accident\w*|choqu\w*|choc\w*|colisi\w*|volcadur\w*|derrap\w*)\b", headline)
-            and re.search(r"\b(?:autos?|automovil\w*|motociclet\w*|motociclist\w*|motos?)\b", headline)
+            and re.search(r"\b(?:autos?|automovil\w*|vehicul\w*|motociclet\w*|motociclist\w*|motos?)\b", headline)
             and not re.search(r"\b(?:trolebus|metrobus|tren ligero|metro)\b", headline)
             and re.search(r"\b(?:trolebus|metrobus|tren ligero|estacion del metro)\b", topic)):
         return -10000

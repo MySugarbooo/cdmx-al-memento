@@ -252,7 +252,7 @@ def category_by_headline(title, feed_category):
         return "Seguridad"
     # Una agresión violenta no es Cultura por mencionar el Día de Muertos.
     if (feed_category in {"CDMX", "Gobierno", "Cultura"}
-            and re.search(r"\b(?:ataque armado|balacera|asesina(?:n)? a|asesinato)\b", normalized)):
+            and re.search(r"\b(?:ataque armado|balacera|asesina(?:n)? a|asesinad\w*|asesinato)\b", normalized)):
         return "Seguridad"
     # Las agresiones por disparos se clasifican como Seguridad aunque el RSS diga CDMX.
     if (feed_category in {"CDMX", "Gobierno", "Cultura"}
