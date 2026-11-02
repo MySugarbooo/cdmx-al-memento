@@ -953,6 +953,13 @@ class BoroughAndArchiveTests(unittest.TestCase):
         self.assertGreaterEqual(news._photo_score(cycling, {
             "category": "Movilidad", "topic": "Talleres de EcoBici",
         }), 0)
+        protest = {
+            "title": "Manifestaciones en CDMX este 2 de noviembre: calles afectadas y horarios",
+            "category": "Movilidad",
+        }
+        self.assertLess(news._photo_score(protest, {
+            "category": "Movilidad", "topic": "Ecobici Estación 8 - panoramio",
+        }), 0)
 
 
 if __name__ == "__main__":

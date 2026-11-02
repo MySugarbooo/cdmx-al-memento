@@ -604,6 +604,13 @@ def _photo_score(article, photo):
     for headline_pattern, photo_pattern in STRICT_PHOTO_TOPICS:
         if re.search(headline_pattern, headline) and not re.search(photo_pattern, context):
             return -10000
+    # Una protesta sin componente ciclista no se ilustra con estaciones de EcoBici.
+    # Sí conservar imágenes de rodadas cuando el titular las menciona expresamente.
+    if (re.search(r"\b(?:movilizaciones?|manifestaciones?|plantones?|concentraciones?)\b", headline)
+            and not re.search(r"\b(?:rodadas?|ciclistas?|bicicletas?|ecobici)\b", headline)
+            and re.search(r"\b(?:ecobici|bicicletas?|ciclistas?|rodadas?)\b", topic)
+            and not re.search(r"\b(?:protestas?|manifestaciones?|marchas?|bloqueos?|plantones?)\b", topic)):
+        return -10000
     # Un choque vial no ocurrió en un autódromo solo por compartir alcaldía.
     if (re.search(r"\b(?:accident\w*|choqu\w*|choc\w*|colisi\w*|volcadur\w*|derrap\w*)\b", headline)
             and not re.search(r"\b(?:autodromo|formula 1|f1|gran premio|carrera|circuito|bottas|verstappen|hamilton|alonso|checo|antonelli)\b", headline)
