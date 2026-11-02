@@ -468,7 +468,7 @@ STRICT_PHOTO_TOPICS = (
     (r"\bofrenda monumental\b",
      r"\b(?:ofrendas?|altares?|dia de muertos|catrinas?|zocalo|decoracion funeraria)\b"),
     # Una agenda de eventos de Día de Muertos requiere contexto festivo real.
-    (r"\b(?:eventos?|actividades|que hacer)\b.*\bdia de muertos\b",
+    (r"\b(?:eventos? gratis|actividades gratis|que hacer)\b.*\bdia de muertos\b",
      r"\b(?:dia de muertos|ofrendas?|altares?|catrinas?|festivales?|eventos?|conciertos?|desfiles?|celebraciones?)\b"),
     # No utilizar graduaciones policiales para remisiones de motocicletas.
     (r"\brodadas? del terror\b",
