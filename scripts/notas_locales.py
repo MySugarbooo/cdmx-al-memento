@@ -450,6 +450,11 @@ STRICT_PHOTO_TOPICS = (
     # Un edificio turístico no representa retrasos de vuelos ni operaciones aéreas.
     (r"\b(?:aeropuerto|vuelos? demorados?|vuelos? retrasados?)\b",
      r"\b(?:aeropuerto|aeronautica|aviones?|aeronaves?|vuelos?|terminal aerea|pista de aterrizaje)\b"),
+    # Una casa del Centro Histórico no ilustra puentes peatonales ni estafas viales.
+    (r"\b(?:puentes? peatonales?|pasarelas? peatonales?)\b",
+     r"\b(?:puentes?|pasarelas?|pasos? peatonales?|cruces? elevados?)\b"),
+    (r"\bmontachoques\b",
+     r"\b(?:choques?|automoviles?|autos?|vehiculos?|trafico|transito|vialidad|carretera|avenida|seguridad vial)\b"),
     # La captación de lluvia no es una imagen de pronóstico, frío o viento.
     (r"\b(?:clima|pronostico|rachas de viento|mananas frias|frente frio)\b",
      r"\b(?:clima|pronostico|meteorologia|temperatura|viento|frio|nubes?|cielo|tormenta|neblina)\b"),
@@ -561,7 +566,7 @@ def _photo_score(article, photo):
             return -10000
     # La Rodada del Terror y los corralones de motos requieren imágenes de motocicletas,
     # no una foto genérica de Protección Civil.
-    if (re.search(r"\brodada del terror\b", headline)
+    if (re.search(r"\b(?:rodada del terror|mega rodada del terror|megarodadadelterror)\b", headline)
             or (re.search(r"\bcorralon\b", headline)
                 and re.search(r"\b(?:motos?|motocicletas?|motociclistas?)\b", headline))):
         if not re.search(r"\b(?:motos?|motocicletas?|motociclistas?|rodada)\b", context):
@@ -577,7 +582,7 @@ def _photo_score(article, photo):
         if not re.search(r"\b(?:urnas?|votacion|elecciones?|consulta|infancia|ninos?|menores?|escuelas?|estudiantes?|boletas?)\b", topic):
             return -10000
     # Un programa invernal requiere contexto de frío o asistencia social.
-    if re.search(r"\b(?:temporada invernal|plan invernal|frente frio|cobijas?|vacunacion)\b", headline):
+    if re.search(r"\b(?:temporada invernal|plan invernal|programa invernal|frente frio|cobijas?|vacunacion)\b", headline):
         if not re.search(r"\b(?:invierno|invernal|frio|cobijas?|albergue|vacunacion|abrigo|apoyo social|proteccion civil|clima|nubes|temperatura)\b", topic):
             return -10000
     # Los pilotos, abandonos y triunfos de F1 no se ilustran con paisajes turísticos.
