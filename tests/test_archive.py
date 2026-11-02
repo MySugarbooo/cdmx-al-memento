@@ -289,6 +289,30 @@ class BoroughAndArchiveTests(unittest.TestCase):
             "topic": "Automóviles en tráfico vehicular de Ciudad de México",
         }), 0)
 
+    def test_traffic_light_rail_and_rtp_require_matching_transport_photos(self):
+        # Ejemplos detectados en la portada del 2 de noviembre: eran imágenes
+        # representativas, pero mostraban un medio de transporte distinto.
+        cases = [
+            ("Gráfica del día: ¿Cuáles son las ciudades de México con más tráfico?",
+             "Movilidad", "Tren ligero y metro en la estación Tasqueña 06",
+             "Tráfico vehicular en Eje Central, Ciudad de México"),
+            ("Alistan el Tren Ligero Río Hondo-Buenavista: conectará Naucalpan con CDMX",
+             "Metro", "Estación Sevilla de la Línea 1 del Metro de la Ciudad de México",
+             "Tren ligero y metro en la estación Tasqueña"),
+            ("Ampliará RTP CDMX ruta para llegar al Metro Mixiuhca",
+             "Metro", "Estación Pantitlán del Metro de la Ciudad de México",
+             "Autobús RTP de la Ciudad de México"),
+        ]
+        for title, category, unrelated, relevant in cases:
+            article = {"title": title, "category": category}
+            with self.subTest(title=title):
+                self.assertLess(news._photo_score(article, {
+                    "category": category, "topic": unrelated,
+                }), 0)
+                self.assertGreaterEqual(news._photo_score(article, {
+                    "category": category, "topic": relevant,
+                }), 0)
+
     def test_november_photo_context_rejects_unrelated_stock_images(self):
         # Imágenes observadas en news.json público: ninguna es foto del hecho.
         cases = [
