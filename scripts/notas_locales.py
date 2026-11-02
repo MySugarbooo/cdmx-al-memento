@@ -664,7 +664,7 @@ def _photo_score(article, photo):
             return -10000
     # Para noticias de ciclismo, exigir una fotografía relacionada con bicicletas.
     if re.search(r"\b(?:muevete en bici|paseo dominical|bicicletas?|ciclistas?|ciclismo|ciclovias?|ecobici|cicloton)\b", headline):
-        if not re.search(r"\b(?:bici|bicicletas?|ciclistas?|ciclovias?|ecobici|cicloton)\b", context):
+        if not re.search(r"\b(?:bici|bicicletas?|ciclistas?|ciclovias?|ecobici\w*|cicloton)\b", context):
             return -10000
     # Distinguir noticias del circuito de avisos de cierres viales por el GP.
     # Una imagen del transporte público o una calle ajena no ilustra el evento.
