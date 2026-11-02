@@ -512,6 +512,18 @@ class BoroughAndArchiveTests(unittest.TestCase):
         # El registro puede conservarse en la hemeroteca; solo se evita
         # su incorporación a la portada de noticias de CDMX.
 
+    def test_violence_and_marches_override_wrong_rss_categories(self):
+        self.assertEqual(news.category_by_headline(
+            "Ataque armado en Tepito deja 2 muertos en pleno festejo de Día de Muertos en CDMX",
+            "CDMX"), "Seguridad")
+        self.assertEqual(_photo_category({
+            "title": "Ataque armado en Tepito deja 2 muertos en Día de Muertos",
+            "category": "CDMX",
+        }), "Seguridad")
+        self.assertEqual(news.category_by_headline(
+            "Estas Son las Marchas, Concentraciones y Eventos en la CDMX para Este Lunes",
+            "Seguridad"), "Movilidad")
+
     def test_november_2_followup_photo_mismatches(self):
         # Nuevas asignaciones incongruentes tras regenerar news.json.
         cases = [
@@ -528,7 +540,7 @@ class BoroughAndArchiveTests(unittest.TestCase):
              "Movilidad", "Metrobús en Paseo de la Reforma",
              "Manifestación de personas en avenida CDMX"),
             ("Estas Son las Marchas, Concentraciones y Eventos en la CDMX para Este Lunes",
-             "Seguridad", "Trolebús de la Línea 5 en Paseo de la Reforma",
+             "Movilidad", "Trolebús de la Línea 5 en Paseo de la Reforma",
              "Protestas y concentraciones en la CDMX"),
             ("Búsqueda de personas se realiza de manera individual, algunas desde 1952: Luis Gómez",
              "CDMX", "Ángel de la Independencia Ciudad de México",
