@@ -222,6 +222,9 @@ def category_by_headline(title, feed_category):
     if (feed_category in {"Gobierno", "CDMX"}
             and re.search(r"\b(?:detienen|arrestan|capturan|aprehenden)\s+a\s+(?:\d+|un|una|dos|tres|cuatro|cinco|seis|siete|ocho|nueve|diez|varios|varias|personas|hombres|mujeres)\b", normalized)):
         return "Seguridad"
+    # Una ley de movilidad es un asunto vial aunque el RSS la clasifique como Seguridad.
+    if re.search(r"\bley de movilidad\b", normalized):
+        return "Movilidad"
     # La restricción vehicular sigue siendo Movilidad aunque el titular mencione festividades.
     if re.search(r"\bhoy no circula\b", normalized):
         return "Movilidad"

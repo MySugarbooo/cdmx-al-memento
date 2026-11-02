@@ -43,6 +43,22 @@ class BoroughAndArchiveTests(unittest.TestCase):
         self.assertEqual(news.category_by_headline(
             "Capturan a dos sospechosos en CDMX", "CDMX"), "Seguridad")
 
+    def test_mobility_law_rejects_transit_payment_photo(self):
+        title = "Urgen homologar ley de movilidad para evitar tragedias viales"
+        self.assertEqual(news.category_by_headline(title, "Seguridad"), "Movilidad")
+        article = fake(title, "2026-11-02")
+        article["category"] = "Seguridad"
+        fixed = news.standardize(article)
+        self.assertEqual(fixed["category"], "Movilidad")
+        self.assertLess(news._photo_score(fixed, {
+            "category": "Movilidad", "topic": "Pago de Metrobús Ciudad de México",
+            "keywords": ["Movilidad"],
+        }), 0)
+        self.assertGreaterEqual(news._photo_score(fixed, {
+            "category": "Movilidad", "topic": "Tráfico vehicular y seguridad vial en CDMX",
+        }), 0)
+        self.assertEqual(news.category_by_headline("Operativo de seguridad en CDMX", "Seguridad"), "Seguridad")
+
     def test_hoy_no_circula_is_mobility_and_rejects_catrina_photos(self):
         title = "Día de Muertos, no de multas: Así aplica el Hoy No Circula este lunes 2 de noviembre"
         self.assertEqual(news.category_by_headline(title, "CDMX"), "Movilidad")
