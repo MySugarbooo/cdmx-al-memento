@@ -316,6 +316,30 @@ class BoroughAndArchiveTests(unittest.TestCase):
                     "category": category, "topic": relevant,
                 }), 0)
 
+    def test_imss_planton_rejects_ecobici_photo_without_word_separator(self):
+        # Caso real del 2 de noviembre: el descriptor EcoBiciCdMexico
+        # no terminaba en límite de palabra y evadía la regla de protestas.
+        protest = {
+            "title": "¿Dónde Hay Plantones de Trabajadores y Jubilados del IMSS? Zonas de CDMX con Afectación",
+            "category": "Movilidad",
+        }
+        for unrelated in ("EcoBiciCdMexico", "Talleres de EcoBici"):
+            with self.subTest(photo=unrelated):
+                self.assertLess(news._photo_score(protest, {
+                    "category": "Movilidad", "topic": unrelated,
+                }), 0)
+        self.assertGreaterEqual(news._photo_score(protest, {
+            "category": "Movilidad",
+            "topic": "Protesta de trabajadores del IMSS en una avenida",
+        }), 0)
+        # El cambio no bloquea fotografías de bicicletas cuando la noticia
+        # trata efectivamente de una rodada ciclista.
+        cycling = {"title": "Rodada ciclista en Ciudad de México",
+                   "category": "Movilidad"}
+        self.assertGreaterEqual(news._photo_score(cycling, {
+            "category": "Movilidad", "topic": "EcoBiciCdMexico",
+        }), 0)
+
     def test_november_2_new_editorial_photo_mismatches(self):
         # Emparejamientos comprobados en news.json: son imágenes representativas,
         # pero ni la ubicación ni la categoría justifican un tema equivocado.
