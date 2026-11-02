@@ -51,6 +51,20 @@ class PortalTests(unittest.TestCase):
         self.assertIn("refreshHomepageNews()", script)
         self.assertIn("document.visibilityState==='visible'", script)
 
+    def test_empty_feed_static_home_does_not_publish_old_unverified_news(self):
+        home = get("index.html")
+        hero = home.split('id="neo-home"', 1)[1].split('class="neo-right-column"', 1)[0]
+        # La portada HTML inicial también la leen robots y navegadores sin JS.
+        self.assertIn('Noticias pendientes de verificación fotográfica', hero)
+        self.assertNotIn('Falta mantenimiento en caminos seguros de Iztapalapa', hero)
+        self.assertNotIn('id="neo-hero-img" class="neo-hero-image" src=', hero)
+        news = home.split('id="neo-news-grid"', 1)[1].split('id="neo-news-more"', 1)[0]
+        self.assertNotIn('class="neo-news-card"', news)
+        lead = home.split('id="nota-principal"', 1)[1].split('id="topic-stage"', 1)[0]
+        self.assertIn('No hay noticias con fotografía documental verificada', lead)
+        self.assertNotIn('Falta mantenimiento en caminos seguros de Iztapalapa', lead)
+        self.assertIn('href="/archivo/"', lead)
+
     def test_original_pages_have_metadata_and_content(self):
         cases = {
             "cerca/": ("CDMX cerca de ti", 'data-borough-select'),
