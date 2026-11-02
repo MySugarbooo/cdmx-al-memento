@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-02 16:55 UTC",
+  "updated": "2026-11-02 17:05 UTC",
   "boroughs": [
     {
       "name": "La Magdalena Contreras",
@@ -2581,6 +2581,18 @@
             "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
             "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_coyoacan",
+            "kind": "representativa",
+            "url": "/assets/alcaldias/coyoacan.jpg",
+            "category": "CDMX",
+            "borough": "Coyoacán",
+            "topic": "Jardín Centenario de Coyoacán",
+            "author": "AlejandroLinaresGarcia",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:JardinCentenarioCoyoacan.JPG"
           }
         },
         {
