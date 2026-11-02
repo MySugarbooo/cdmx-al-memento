@@ -172,6 +172,41 @@ class BoroughAndArchiveTests(unittest.TestCase):
             "category": "CDMX", "topic": "Autódromo Hermanos Rodríguez circuito",
         }), 0)
 
+    def test_november_photo_context_rejects_unrelated_stock_images(self):
+        # Imágenes observadas en news.json público: ninguna es foto del hecho.
+        cases = [
+            ("Aeropuerto Internacional de la Ciudad de México: estatus de vuelos demorados",
+             "Monumento a Colón Paseo de la Reforma", "Terminal aérea del aeropuerto de la CDMX"),
+            ("La Ciudad de México inicia noviembre con mañanas frías y rachas de viento",
+             "Cosecha de Lluvia 04", "Nubes y viento sobre Ciudad de México"),
+            ("Microbús Atropella y Mata a un Hombre en Azcapotzalco",
+             "Parroquia de Santa Catarina, Azcapotzalco", "Microbús en avenida de Ciudad de México"),
+            ("Día de Muertos en CDMX, más de 11 mil policías cuidan dichas festividades",
+             "Museo de Arte Moderno", "Patrullas de policía en operativo de vigilancia"),
+            ("Detienen a tres hombres por construcción irregular en Tláhuac",
+             "Plaza central de San Pedro Tláhuac", "Policías de la Fiscalía de CDMX"),
+            ("Activista denuncia envenenamientos de perros en Xochimilco",
+             "Animales Bosque de Tlalpan 04", "Perros en un parque de la ciudad"),
+            ("Azcapotzalco lidera empleo de mujeres CDMX",
+             "Ciclovía en proceso en Azcapotzalco", "Mujeres trabajadoras en oficinas"),
+            ("Morena se reunió con más de 6 mil militantes en la CDMX",
+             "Ciudad de México Alameda Central", "Reunión política de militantes de Morena"),
+            ("Asamblea comunitaria determina relevo de autoridades auxiliares en Álvaro Obregón",
+             "Avenida Álvaro Obregón, Colonia Roma", "Asamblea comunitaria de vecinos"),
+        ]
+        for title, unrelated, relevant in cases:
+            article = {"title": title, "category": "CDMX"}
+            with self.subTest(title=title):
+                self.assertLess(news._photo_score(article, {
+                    "category": "CDMX", "topic": unrelated,
+                }), 0)
+                self.assertGreaterEqual(news._photo_score(article, {
+                    "category": "CDMX", "topic": relevant,
+                }), 0)
+        police = {"title": "Día de Muertos, policías cuidan festividades",
+                  "category": "Seguridad"}
+        self.assertEqual(_photo_category(police), "Seguridad")
+
     def test_new_photo_guardrails_reject_mismatched_landmarks(self):
         # Fotografías representativas sí, pero no iglesias para muertes,
         # parques para mascotas, ni edificios de gobierno para bloqueos.
