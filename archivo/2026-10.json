@@ -1,6 +1,6 @@
 {
   "month": "2026-10",
-  "updated": "2026-11-02 21:34 UTC",
+  "updated": "2026-11-02 21:37 UTC",
   "articles": [
     {
       "title": "Expropiará el gobierno de la CDMX capitalino tres predios para vivienda pública",
@@ -3798,6 +3798,26 @@
         "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
         "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "contexto_trafico_eje_central",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Eje_Central_CDMX.jpg/1280px-Eje_Central_CDMX.jpg",
+        "category": "Movilidad",
+        "borough": "",
+        "topic": "Tráfico vehicular en Eje Central, Ciudad de México (fotografía de 2018)",
+        "keywords": [
+          "tráfico",
+          "vehículos",
+          "automóviles",
+          "movilidad",
+          "hoy no circula",
+          "vialidad"
+        ],
+        "author": "Sergio Estrada Flores",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:Eje_Central_CDMX.jpg"
       }
     },
     {
@@ -17053,16 +17073,19 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_gobierno_001",
+        "id": "commons_46666275",
         "kind": "representativa",
-        "url": "/assets/fotos/archivo_gobierno_001.jpg",
-        "category": "Gobierno",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Z%C3%B3calo_desde_la_Torre_Latinoamericana%2C_Ciudad_de_M%C3%A9xico.JPG/960px-Z%C3%B3calo_desde_la_Torre_Latinoamericana%2C_Ciudad_de_M%C3%A9xico.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "category": "CDMX",
         "borough": "",
-        "topic": "Palacio de Bellas Artes",
-        "author": "Carolina López",
-        "license": "CC BY 2.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Palacio_de_Bellas_Artes.jpg"
+        "topic": "Zócalo desde la Torre Latinoamericana, Ciudad de México",
+        "keywords": [
+          "Torre Latinoamericana Ciudad de México"
+        ],
+        "author": "Luisalvaz",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Z%C3%B3calo_desde_la_Torre_Latinoamericana,_Ciudad_de_M%C3%A9xico.JPG"
       }
     },
     {
@@ -19033,19 +19056,19 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "gobierno",
+        "id": "commons_123036058",
         "kind": "representativa",
-        "url": "/assets/fotos/gobierno.jpg",
-        "category": "Gobierno",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Vista_del_Z%C3%B3calo_de_la_Ciudad_de_M%C3%A9xico.jpg/960px-Vista_del_Z%C3%B3calo_de_la_Ciudad_de_M%C3%A9xico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "category": "CDMX",
         "borough": "",
-        "topic": "Fachada del Palacio Nacional",
+        "topic": "Vista del Zócalo de la Ciudad de México",
         "keywords": [
-          "Gobierno"
+          "Zócalo Ciudad de México"
         ],
-        "author": "MichaelCamacho",
+        "author": "Pequeño mar",
         "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.es",
-        "source": "https://commons.wikimedia.org/wiki/File:Palacio_Nacional_Ciudad_de_M%C3%A9xico.jpg"
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Vista_del_Z%C3%B3calo_de_la_Ciudad_de_M%C3%A9xico.jpg"
       }
     },
     {
@@ -21208,14 +21231,19 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "alcaldia_iztapalapa",
-        "url": "/assets/alcaldias/iztapalapa.jpg",
+        "id": "commons_59935340",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Obras_remodelaci%C3%B3n_Z%C3%B3calo_Ciudad_de_M%C3%A9xico_2017_-_2.jpg/960px-Obras_remodelaci%C3%B3n_Z%C3%B3calo_Ciudad_de_M%C3%A9xico_2017_-_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
         "category": "CDMX",
-        "borough": "Iztapalapa",
-        "topic": "Vista de Iztapalapa desde el Cerro de la Estrella",
-        "author": "Secretaría de Cultura Ciudad de México from México",
-        "license": "CC BY 2.0",
-        "source": "https://commons.wikimedia.org/wiki/File:MX_MM_MUSEO_CERRO_DE_LA_ESTRELLA_%2849522225751%29.jpg"
+        "borough": "",
+        "topic": "Obras remodelación Zócalo Ciudad de México 2017 - 2",
+        "keywords": [
+          "CDMX"
+        ],
+        "author": "Salvador alc",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Obras_remodelaci%C3%B3n_Z%C3%B3calo_Ciudad_de_M%C3%A9xico_2017_-_2.jpg"
       }
     },
     {
@@ -28816,14 +28844,19 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "alcaldia_coyoacan",
-        "url": "/assets/alcaldias/coyoacan.jpg",
+        "id": "commons_107542427",
+        "kind": "representativa",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/42/Ciudad_de_M%C3%A9xico%2C_Z%C3%B3calo_1986_06.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
         "category": "CDMX",
-        "borough": "Coyoacán",
-        "topic": "Jardín Centenario de Coyoacán",
-        "author": "AlejandroLinaresGarcia",
+        "borough": "",
+        "topic": "Ciudad de México, Zócalo 1986 06",
+        "keywords": [
+          "Zócalo Ciudad de México"
+        ],
+        "author": "LBM1948",
         "license": "CC BY-SA 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:JardinCentenarioCoyoacan.JPG"
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Ciudad_de_M%C3%A9xico,_Z%C3%B3calo_1986_06.jpg"
       }
     },
     {
@@ -29035,14 +29068,19 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_cdmx_019",
-        "url": "/assets/fotos/archivo_cdmx_019.jpg",
+        "id": "commons_183134543",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Z%C3%B3calo_de_la_Ciudad_de_M%C3%A9xico_en_c.1930.jpg/960px-Z%C3%B3calo_de_la_Ciudad_de_M%C3%A9xico_en_c.1930.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
         "category": "CDMX",
         "borough": "",
-        "topic": "El Paraguas (126505121)",
-        "author": "Octavio Alonso Maya Castro",
-        "license": "CC BY-SA 3.0",
-        "source": "https://commons.wikimedia.org/wiki/File:El_Paraguas_%28126505121%29.jpeg"
+        "topic": "Zócalo de la Ciudad de México en c.1930",
+        "keywords": [
+          "Zócalo Ciudad de México"
+        ],
+        "author": "Jerryacutedoggy",
+        "license": "CC0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "source": "https://commons.wikimedia.org/wiki/File:Z%C3%B3calo_de_la_Ciudad_de_M%C3%A9xico_en_c.1930.jpg"
       }
     },
     {
@@ -46479,16 +46517,6 @@
         "context": "Las decisiones administrativas pueden influir en servicios, trámites y derechos; conviene conocer sus condiciones y a quiénes afectan.",
         "pending": "Es indispensable consultar los acuerdos, comunicados o documentos oficiales antes de dar una medida por vigente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "archivo_gobierno_004",
-        "url": "/assets/fotos/archivo_gobierno_004.jpg",
-        "category": "Gobierno",
-        "borough": "",
-        "topic": "Palacio Nacional Ciudad de México City DF",
-        "author": "stevecadman",
-        "license": "CC BY-SA 2.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Palacio_Nacional_Ciudad_de_M%C3%A9xico_City_DF.jpg"
       }
     },
     {
@@ -46993,16 +47021,6 @@
         "context": "Las decisiones administrativas pueden influir en servicios, trámites y derechos; conviene conocer sus condiciones y a quiénes afectan.",
         "pending": "Es indispensable consultar los acuerdos, comunicados o documentos oficiales antes de dar una medida por vigente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "archivo_gobierno_001",
-        "url": "/assets/fotos/archivo_gobierno_001.jpg",
-        "category": "Gobierno",
-        "borough": "",
-        "topic": "Palacio de Bellas Artes",
-        "author": "Carolina López",
-        "license": "CC BY 2.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Palacio_de_Bellas_Artes.jpg"
       }
     },
     {
@@ -47161,16 +47179,6 @@
         "context": "Las decisiones administrativas pueden influir en servicios, trámites y derechos; conviene conocer sus condiciones y a quiénes afectan.",
         "pending": "Es indispensable consultar los acuerdos, comunicados o documentos oficiales antes de dar una medida por vigente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "archivo_gobierno_001",
-        "url": "/assets/fotos/archivo_gobierno_001.jpg",
-        "category": "Gobierno",
-        "borough": "",
-        "topic": "Palacio de Bellas Artes",
-        "author": "Carolina López",
-        "license": "CC BY 2.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Palacio_de_Bellas_Artes.jpg"
       }
     },
     {
@@ -47418,16 +47426,6 @@
         "context": "Las decisiones administrativas pueden influir en servicios, trámites y derechos; conviene conocer sus condiciones y a quiénes afectan.",
         "pending": "Es indispensable consultar los acuerdos, comunicados o documentos oficiales antes de dar una medida por vigente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "archivo_gobierno_003",
-        "url": "/assets/fotos/archivo_gobierno_003.jpg",
-        "category": "Gobierno",
-        "borough": "",
-        "topic": "Palacio Nacional Ciudad de México DF",
-        "author": "Crater_sp",
-        "license": "CC BY-SA 2.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Palacio_Nacional_Ciudad_de_M%C3%A9xico_DF.jpg"
       }
     },
     {
@@ -49361,14 +49359,19 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_cultura_001",
-        "url": "/assets/fotos/archivo_cultura_001.jpg",
-        "category": "Cultura",
+        "id": "reciente_a5a3bc52fa77c066",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Desfile_de_Catrinas_in_Mexico_City_2026_%2852%29.jpg/1280px-Desfile_de_Catrinas_in_Mexico_City_2026_%2852%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "category": "CDMX",
         "borough": "",
-        "topic": "PALACIO DE BELLAS ARTES, CIUDAD DE MEXICO.",
-        "author": "Acuentacuentos",
-        "license": "CC BY-SA 3.0",
-        "source": "https://commons.wikimedia.org/wiki/File:PALACIO_DE_BELLAS_ARTES%2C_CIUDAD_DE_MEXICO..jpg"
+        "topic": "Desfile de Catrinas in Mexico City 2026 (52)",
+        "keywords": [
+          "CDMX"
+        ],
+        "author": "Gedankenstuecke",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Desfile_de_Catrinas_in_Mexico_City_2026_(52).jpg"
       }
     },
     {
@@ -52754,14 +52757,19 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_cultura_001",
-        "url": "/assets/fotos/archivo_cultura_001.jpg",
-        "category": "Cultura",
+        "id": "reciente_d3bf2851210c8f52",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Desfile_de_Catrinas_in_Mexico_City_2026_%2853%29.jpg/1280px-Desfile_de_Catrinas_in_Mexico_City_2026_%2853%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "category": "CDMX",
         "borough": "",
-        "topic": "PALACIO DE BELLAS ARTES, CIUDAD DE MEXICO.",
-        "author": "Acuentacuentos",
-        "license": "CC BY-SA 3.0",
-        "source": "https://commons.wikimedia.org/wiki/File:PALACIO_DE_BELLAS_ARTES%2C_CIUDAD_DE_MEXICO..jpg"
+        "topic": "Desfile de Catrinas in Mexico City 2026 (53)",
+        "keywords": [
+          "CDMX"
+        ],
+        "author": "Gedankenstuecke",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Desfile_de_Catrinas_in_Mexico_City_2026_(53).jpg"
       }
     },
     {
@@ -53602,21 +53610,6 @@
         "context": "Las decisiones administrativas pueden influir en servicios, trámites y derechos; conviene conocer sus condiciones y a quiénes afectan.",
         "pending": "Es indispensable consultar los acuerdos, comunicados o documentos oficiales antes de dar una medida por vigente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "commons_149171776",
-        "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Plaza_de_la_Constituci%C3%B3n_-_Z%C3%B3calo_de_la_Ciudad_de_M%C3%A9xico_-_4.jpg/960px-Plaza_de_la_Constituci%C3%B3n_-_Z%C3%B3calo_de_la_Ciudad_de_M%C3%A9xico_-_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "category": "CDMX",
-        "borough": "",
-        "topic": "Plaza de la Constitución - Zócalo de la Ciudad de México - 4",
-        "keywords": [
-          "CDMX"
-        ],
-        "author": "ProtoplasmaKid",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Plaza_de_la_Constituci%C3%B3n_-_Z%C3%B3calo_de_la_Ciudad_de_M%C3%A9xico_-_4.jpg"
       }
     },
     {
@@ -66816,21 +66809,6 @@
         "context": "La actividad cultural abre oportunidades de encuentro, aprendizaje y disfrute para habitantes y visitantes.",
         "pending": "Los accesos, boletos, sedes, cupos y horarios deben consultarse con la institución organizadora. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "commons_16960056",
-        "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/Ciudad_Universitaria_UNAM_-_Torre_de_Rector%C3%ADa_-_2.jpg/960px-Ciudad_Universitaria_UNAM_-_Torre_de_Rector%C3%ADa_-_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "category": "Cultura",
-        "borough": "",
-        "topic": "Ciudad Universitaria UNAM - Torre de Rectoría - 2",
-        "keywords": [
-          "Ciudad Universitaria UNAM Ciudad de México"
-        ],
-        "author": "ProtoplasmaKid",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Ciudad_Universitaria_UNAM_-_Torre_de_Rector%C3%ADa_-_2.jpg"
       }
     },
     {
@@ -70560,19 +70538,19 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "commons_145397389",
+        "id": "commons_77200158",
         "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Parroquia_de_Corpus_Cristi_%28Gustavo_A_Madero%29_Ciudad_de_M%C3%A9xico_%283145523769%29.jpg/960px-Parroquia_de_Corpus_Cristi_%28Gustavo_A_Madero%29_Ciudad_de_M%C3%A9xico_%283145523769%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "category": "Alcaldías",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Z%C3%B3calo_de_la_Ciudad_de_M%C3%A9xico_durante_el_8M%2C_2019.jpg/960px-Z%C3%B3calo_de_la_Ciudad_de_M%C3%A9xico_durante_el_8M%2C_2019.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "category": "CDMX",
         "borough": "",
-        "topic": "Parroquia de Corpus Cristi (Gustavo A Madero) Ciudad de México (3145523769)",
+        "topic": "Zócalo de la Ciudad de México durante el 8M, 2019",
         "keywords": [
-          "Gustavo A Madero Ciudad de México"
+          "Zócalo Ciudad de México"
         ],
-        "author": "Catedrales e Iglesias/Cathedrals and Churches from Puebla de los Ángeles, Mexico",
-        "license": "CC BY 2.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Parroquia_de_Corpus_Cristi_(Gustavo_A_Madero)_Ciudad_de_M%C3%A9xico_(3145523769).jpg"
+        "author": "Sombra Inquieta",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Z%C3%B3calo_de_la_Ciudad_de_M%C3%A9xico_durante_el_8M,_2019.jpg"
       }
     },
     {
@@ -77295,21 +77273,6 @@
         "context": "La actividad cultural abre oportunidades de encuentro, aprendizaje y disfrute para habitantes y visitantes.",
         "pending": "Los accesos, boletos, sedes, cupos y horarios deben consultarse con la institución organizadora. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "commons_57104827",
-        "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Maceta_en_el_Castillo_de_Chapultepec_-_panoramio_%282%29.jpg/960px-Maceta_en_el_Castillo_de_Chapultepec_-_panoramio_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "category": "Cultura",
-        "borough": "",
-        "topic": "Maceta en el Castillo de Chapultepec - panoramio (2)",
-        "keywords": [
-          "Castillo de Chapultepec Ciudad de México"
-        ],
-        "author": "Veto Zereptram",
-        "license": "CC BY 3.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Maceta_en_el_Castillo_de_Chapultepec_-_panoramio_(2).jpg"
       }
     },
     {
@@ -77394,21 +77357,6 @@
         "context": "La actividad cultural abre oportunidades de encuentro, aprendizaje y disfrute para habitantes y visitantes.",
         "pending": "Los accesos, boletos, sedes, cupos y horarios deben consultarse con la institución organizadora. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "commons_76585162",
-        "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Museo_Nacional_de_Antropolog%C3%ADa_e_Historia%2C_Ciudad_de_M%C3%A9xico.jpg/960px-Museo_Nacional_de_Antropolog%C3%ADa_e_Historia%2C_Ciudad_de_M%C3%A9xico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "category": "Cultura",
-        "borough": "",
-        "topic": "Museo Nacional de Antropología e Historia, Ciudad de México",
-        "keywords": [
-          "Museo Nacional de Antropología Ciudad de México"
-        ],
-        "author": "Elgabilove",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Museo_Nacional_de_Antropolog%C3%ADa_e_Historia,_Ciudad_de_M%C3%A9xico.jpg"
       }
     },
     {
@@ -77724,21 +77672,6 @@
         "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
         "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "commons_149563961",
-        "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Alameda_Central_desde_el_aire_1.jpg/960px-Alameda_Central_desde_el_aire_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "category": "CDMX",
-        "borough": "",
-        "topic": "Alameda Central desde el aire 1",
-        "keywords": [
-          "Alameda Central Ciudad de México"
-        ],
-        "author": "ProtoplasmaKid",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Alameda_Central_desde_el_aire_1.jpg"
       }
     },
     {
@@ -77949,26 +77882,6 @@
         "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
         "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "contexto_autodromo_hermanos_rodriguez",
-        "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Vista_a%C3%A9rea_del_Aut%C3%B3dromo_Hermanos_Rodr%C3%ADguez_03.jpg/1280px-Vista_a%C3%A9rea_del_Aut%C3%B3dromo_Hermanos_Rodr%C3%ADguez_03.jpg",
-        "category": "Movilidad",
-        "borough": "",
-        "topic": "Vista aérea del Autódromo Hermanos Rodríguez, Ciudad de México (fotografía de 2025)",
-        "keywords": [
-          "autódromo",
-          "Hermanos Rodríguez",
-          "gran premio",
-          "formula 1",
-          "F1",
-          "automovilismo"
-        ],
-        "author": "ProtoplasmaKid",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-        "source": "https://commons.wikimedia.org/wiki/File:Vista_a%C3%A9rea_del_Aut%C3%B3dromo_Hermanos_Rodr%C3%ADguez_03.jpg"
       }
     },
     {
@@ -77987,21 +77900,6 @@
         "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
         "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "commons_82751008",
-        "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Palacio_de_Bellas_Artes%2C_Ciudad_de_M%C3%A9xico_-_Paseantes.jpg/960px-Palacio_de_Bellas_Artes%2C_Ciudad_de_M%C3%A9xico_-_Paseantes.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "category": "Cultura",
-        "borough": "",
-        "topic": "Palacio de Bellas Artes, Ciudad de México - Paseantes",
-        "keywords": [
-          "Palacio de Bellas Artes Ciudad de México"
-        ],
-        "author": "Juan Carlos Fonseca Mata",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Palacio_de_Bellas_Artes,_Ciudad_de_M%C3%A9xico_-_Paseantes.jpg"
       }
     },
     {
@@ -78020,21 +77918,6 @@
         "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
         "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "commons_66033728",
-        "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Z%C3%B3calo%2C_Ciudad_de_M%C3%A9xico_%2832846556446%29.jpg/960px-Z%C3%B3calo%2C_Ciudad_de_M%C3%A9xico_%2832846556446%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "category": "CDMX",
-        "borough": "",
-        "topic": "Zócalo, Ciudad de México (32846556446)",
-        "keywords": [
-          "Zócalo Ciudad de México"
-        ],
-        "author": "Comisión Mexicana de Filmaciones from México D. F., México",
-        "license": "CC BY-SA 2.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Z%C3%B3calo,_Ciudad_de_M%C3%A9xico_(32846556446).jpg"
       }
     },
     {
@@ -78053,21 +77936,6 @@
         "context": "Las decisiones administrativas pueden influir en servicios, trámites y derechos; conviene conocer sus condiciones y a quiénes afectan.",
         "pending": "Es indispensable consultar los acuerdos, comunicados o documentos oficiales antes de dar una medida por vigente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "commons_84580597",
-        "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Palacio_de_Bellas_Artes_-_Ciudad_de_M%C3%A9xico_-_Fachada_Nocturna.jpg/960px-Palacio_de_Bellas_Artes_-_Ciudad_de_M%C3%A9xico_-_Fachada_Nocturna.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "category": "Cultura",
-        "borough": "",
-        "topic": "Palacio de Bellas Artes - Ciudad de México - Fachada Nocturna",
-        "keywords": [
-          "Palacio de Bellas Artes Ciudad de México"
-        ],
-        "author": "Juan Carlos Fonseca Mata",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Palacio_de_Bellas_Artes_-_Ciudad_de_M%C3%A9xico_-_Fachada_Nocturna.jpg"
       }
     },
     {
@@ -78119,21 +77987,6 @@
         "context": "La actividad cultural abre oportunidades de encuentro, aprendizaje y disfrute para habitantes y visitantes.",
         "pending": "Los accesos, boletos, sedes, cupos y horarios deben consultarse con la institución organizadora. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "commons_122351782",
-        "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/Palacio_de_Bellas_Artes%2C_Centro_Hist%C3%B3rico.jpg/960px-Palacio_de_Bellas_Artes%2C_Centro_Hist%C3%B3rico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "category": "Cultura",
-        "borough": "",
-        "topic": "Palacio de Bellas Artes, Centro Histórico",
-        "keywords": [
-          "Palacio de Bellas Artes Ciudad de México"
-        ],
-        "author": "ItzaeItayetzi",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Palacio_de_Bellas_Artes,_Centro_Hist%C3%B3rico.jpg"
       }
     },
     {
@@ -78449,21 +78302,6 @@
         "context": "Los cambios en este sistema pueden afectar los horarios, las conexiones y la planeación de los viajes cotidianos.",
         "pending": "El estado operativo, las estaciones y las alternativas de traslado deben comprobarse en los avisos actuales del Metro. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "archivo_metro_003",
-        "kind": "representativa",
-        "url": "/assets/fotos/archivo_metro_003.jpg",
-        "category": "Metro",
-        "borough": "",
-        "topic": "Parafernalia del Metro (Ciudad de México)",
-        "keywords": [
-          "Metro"
-        ],
-        "author": "Juan Carlos Fonseca Mata",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Parafernalia_del_Metro_%28Ciudad_de_M%C3%A9xico%29.jpg"
       }
     },
     {
