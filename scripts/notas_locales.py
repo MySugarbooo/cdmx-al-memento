@@ -580,9 +580,9 @@ def _photo_score(article, photo):
     if re.search(r"\b(?:temporada invernal|plan invernal|frente frio|cobijas?|vacunacion)\b", headline):
         if not re.search(r"\b(?:invierno|invernal|frio|cobijas?|albergue|vacunacion|abrigo|apoyo social|proteccion civil|clima|nubes|temperatura)\b", topic):
             return -10000
-    # Los pilotos y abandonos de F1 no se ilustran con paisajes turísticos.
+    # Los pilotos, abandonos y triunfos de F1 no se ilustran con paisajes turísticos.
     if (re.search(r"\b(?:alonso|bottas|verstappen|hamilton|antonelli|checo)\b", headline)
-            and re.search(r"\b(?:abandon\w*|gran premio|formula 1|gp|carrera|piloto|campeon\w*|bandera roja)\b", headline)):
+            and re.search(r"\b(?:abandon\w*|gran premio|formula 1|gp|carrera|piloto|campeon\w*|bandera roja|gana|gano|ganaron|ganador\w*|triunf\w*|victoria|venc\w*|podio|pole|sexta vez)\b", headline)):
         if not re.search(r"\b(?:formula 1|f1|gran premio|autodromo|circuito|carrera|monoplaza|piloto|automovilismo)\b", topic):
             return -10000
     # Una línea distinta del Metro es peor que una foto genérica del Metro.
