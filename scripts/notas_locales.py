@@ -81,10 +81,12 @@ def _reported_angle(article):
     if re.search(r"\b(?:accident\w*|choqu\w*|colisi[oó]n\w*|volcadur\w*|"
                  r"atropell\w*|arroll\w*|derrap\w*|siniestro vial)\b", t):
         vehicle=("una motocicleta" if re.search(r"\b(?:moto|motocicleta|motociclista)\w*\b", t)
+                 else "un microbús" if re.search(r"\bmicrob[uú]s\b", t)
+                 else "un autobús" if re.search(r"\bautob[uú]s\b", t)
                  else "vehículos" if re.search(r"\b(?:automovil|auto|camion|trailer|tráiler|vehiculo)\w*\b", t)
                  else "personas o vehículos involucrados")
         if re.search(r"\b(?:fallec\w*|muert\w*|murio|murieron|sin vida|pierde la vida|"
-                     r"perdio la vida|fatal|mortal)\b", t):
+                     r"perdio la vida|fatal|mortal|muere|murio|murió|mata|matan|mat[oó])\b", t):
             outcome="El propio titular señala un fallecimiento, sin que esta ficha agregue cifras ni identidades."
         elif re.search(r"\b(?:herid\w*|lesionad\w*|hospitalizad\w*)\b", t):
             outcome="El propio titular menciona personas lesionadas, sin datos médicos adicionales verificados."
@@ -458,7 +460,8 @@ STRICT_PHOTO_TOPICS = (
     (r"\bpolicias?\b.*\b(?:cuidan|vigilan|operativo|despliegan)\b",
      r"\b(?:policias?|patrullas?|vigilancia|seguridad|operativo|agentes?)\b"),
     # Para detenciones de personas, una plaza de la misma alcaldía no basta.
-    (r"\b(?:detienen|arrestan|capturan|aprehenden)\s+a\s+(?:\d+|un|una|dos|tres|cuatro|cinco|seis|personas|hombres|mujeres)\b",
+    # En un operativo del Gran Premio también es pertinente el autódromo.
+    (r"^(?!.*\b(?:gp de mexico|gran premio|formula 1|autodromo)\b).*\b(?:detienen|arrestan|capturan|aprehenden)\s+a\s+(?:\d+|un|una|dos|tres|cuatro|cinco|seis|personas|hombres|mujeres)\b",
      r"\b(?:policias?|patrullas?|fiscalia|justicia|tribunal|detencion|seguridad|investigacion penal)\b"),
     (r"\bempleo de mujeres\b",
      r"\b(?:empleo|trabajo|mujeres|oficinas?|economia|trabajadoras?)\b"),
@@ -468,8 +471,11 @@ STRICT_PHOTO_TOPICS = (
      r"\b(?:asamblea|comunitaria|vecinos|cabildo|reunion|autoridades auxiliares)\b"),
     (r"\b(?:juan atkins|pionero del techno)\b",
      r"\b(?:techno|musica|dj|vinilos?|discos?|escenario|concierto|musico|productor musical)\b"),
-    (r"\b(?:perritos?|perros?|mascotas?|envenenamientos? de perros?)\b",
+    # Envenenamiento de perros exige imagen canina, no fauna genérica.
+    (r"\benvenenamientos?\b.*\b(?:perros?|mascotas?)\b",
      r"\b(?:perritos?|perros?|mascotas?|caninos?|veterinaria)\b"),
+    (r"\b(?:perritos?|perros?|mascotas?|envenenamientos? de perros?)\b",
+     r"\b(?:perritos?|perros?|mascotas?|caninos?|animales?|veterinaria)\b"),
     (r"\b(?:matan|balazos|asesinan|homicidio|condenad[oa]s?|condenan|prision|delitos? contra)\b",
      r"\b(?:fiscalia|justicia|tribunal|juzgado|penitenciario|prision|ministerio publico|investigacion penal)\b"),
     (r"\b(?:sin agua|falta de agua|suspension de agua|corte de agua)\b",
