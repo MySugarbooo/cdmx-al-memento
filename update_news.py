@@ -657,6 +657,10 @@ def update():
         documented = (photo.get("kind") == "hecho" and photo.get("verified") is True
                       and bool(photo.get("evidence_url")))
         contextual = photo.get("kind") == "representativa"
+        # El archivo puede conservar una foto anterior: validar de nuevo
+        # la pertinencia antes de mostrarla en portada.
+        if contextual and _photo_score(article, photo) < 0:
+            continue
         if (not trusted_url or photo_url in used_photos or
                 not all(photo.get(key) for key in
                         ("author", "license", "licenseUrl", "source")) or
