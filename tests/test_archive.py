@@ -232,6 +232,21 @@ class BoroughAndArchiveTests(unittest.TestCase):
             "category": "CDMX", "topic": "Autódromo Hermanos Rodríguez circuito",
         }), 0)
 
+    def test_traffic_at_toll_plazas_rejects_train_station_photo(self):
+        # La portada del 02-11 ilustraba tráfico en casetas con el Tren Ligero.
+        tolls = {
+            "title": "¿Cómo Va el Tráfico en las Principales Casetas de Acceso a CDMX Hoy 2 de Noviembre 2026?",
+            "category": "Movilidad",
+        }
+        self.assertLess(news._photo_score(tolls, {
+            "category": "Movilidad",
+            "topic": "Tren ligero y metro en la estación Tasqueña 07",
+        }), 0)
+        self.assertGreaterEqual(news._photo_score(tolls, {
+            "category": "Movilidad",
+            "topic": "Caseta de peaje en autopista México-Cuernavaca",
+        }), 0)
+
     def test_formula_one_results_are_not_traffic_advisories(self):
         # Caso real del 02-11: un ranking de pilotos mostraba consejos de traslado.
         racing = (
