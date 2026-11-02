@@ -573,6 +573,19 @@ def _photo_score(article, photo):
     for headline_pattern, photo_pattern in STRICT_PHOTO_TOPICS:
         if re.search(headline_pattern, headline) and not re.search(photo_pattern, context):
             return -10000
+    # Un choque vial no ocurrió en un autódromo solo por compartir alcaldía.
+    if (re.search(r"\\b(?:accident\\w*|choqu\\w*|choc\\w*|colisi\\w*|volcadur\\w*|derrap\\w*)\\b", headline)
+            and not re.search(r"\\b(?:autodromo|formula 1|f1|gran premio|carrera|circuito)\\b", headline)
+            and re.search(r"\\b(?:autodromo|formula 1|gran premio|pista de carreras)\\b", topic)):
+        return -10000
+    # Una detención no se ilustra con entrega de patrullas o policía dirigiendo tráfico.
+    if re.search(r"\\b(?:detienen|detenido\\w*|arrestan|capturan|aprehenden)\\b", headline):
+        if re.search(r"\\b(?:entrega de (?:nuevas? )?patrullas|nuevas? patrullas|graduacion|ceremonia|controlando el semaforo|policia de transito)\\b", topic):
+            return -10000
+    # Un corte de agua en Coyoacán no se ilustra con elementos de un parque ajeno.
+    if re.search(r"\\b(?:sin agua|falta de agua|corte de agua|suspension de agua)\\b", headline):
+        if re.search(r"\\b(?:bosque de chapultepec|parque|jardin|fuente ornamental)\\b", topic):
+            return -10000
     # Una graduación policial no ilustra una muerte violenta o sentencia penal.
     if (re.search(r"\b(?:matan|balazos|asesinan|homicidio|condenad[oa]s?|condenan|prision)\b", headline)
             and re.search(r"\b(?:graduacion|ceremonia de policia|entrega de patrullas)\b", topic)):
