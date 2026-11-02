@@ -109,6 +109,10 @@ def outside_cdmx_location(title):
     # Mantener titulares que mencionen CDMX junto a otras regiones.
     if any(" " + name + " " in words for name in ("cdmx", "ciudad de mexico")):
         return ""
+    # Una guía de fincas cafetaleras de Veracruz no es noticia local de CDMX.
+    # Conservarla en la hemeroteca, pero no promoverla a la portada capitalina.
+    if re.search(r"\bfincas? de cafe de veracruz\b", words):
+        return "Veracruz"
     if " carretera a laredo " in words and " escobedo " in words:
         return "Escobedo, Nuevo León"
     # Un accidente ocurrido en España no es una incidencia vial de CDMX,
