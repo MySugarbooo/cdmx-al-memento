@@ -1138,6 +1138,11 @@ class BoroughAndArchiveTests(unittest.TestCase):
 
 
     def test_ofrendas_and_day_of_dead_agenda_reject_unrelated_buildings(self):
+        self.assertLess(news._photo_score({
+            "title": "Ofrenda Monumental de Día de Muertos 2026 en CDMX",
+            "category": "Cultura",
+        }, {"category": "Cultura",
+            "topic": "Obras remodelación Zócalo Ciudad de México 2017 - 2"}), 0)
         cases = (
             ("Ofrenda Monumental de Día de Muertos 2026 en CDMX: dónde está",
              "Cafetería del Museo Nacional de Antropología - panoramio",
