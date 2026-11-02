@@ -123,6 +123,16 @@ def outside_cdmx_location(title):
         return ""
     if " carretera a laredo " in words and " escobedo " in words:
         return "Escobedo, Nuevo León"
+    # Estas referencias geográficas son externas, aunque el RSS proceda
+    # de una búsqueda sobre la capital. Conservar la noticia en el archivo.
+    if " carretera federal 307 " in words:
+        return "Carretera federal 307, sureste de México"
+    if " madrid sevilla " in words:
+        return "España"
+    if " en chihuahua " in words:
+        return "Chihuahua"
+    if " en uruapan " in words:
+        return "Uruapan, Michoacán"
     # Un accidente ocurrido en España no es una incidencia vial de CDMX,
     # aunque el medio mencione a personas mexicanas afectadas.
     if re.search(r"\b(?:accidente|choque|descarrilamiento)\b.{0,90}\ben espana\b", words):
@@ -165,6 +175,36 @@ def identify_location(title):
     )):
         return "", "Ciudad de México (sin alcaldía identificada)"
     return "", "Ubicación no indicada por el titular"
+
+
+def headline_has_cdmx_signal(title):
+    """Exige una referencia local en el titular; la búsqueda RSS no basta.
+
+    Google News puede devolver noticias de Chihuahua, Michoacán o España al
+    buscar «Metro CDMX». Los titulares ambiguos permanecen en el histórico,
+    pero no se presentan como noticias de la capital sin contexto comprobable.
+    """
+    if outside_cdmx_scope(title):
+        return False
+    words = " " + fold(title) + " "
+    anchors = (
+        "cdmx", "ciudad de mexico", "capital del pais", "metrobus",
+        "cablebus", "ecobici", "tren suburbano", "eje central",
+        "paseo de la reforma", "circuito interior", "aicm",
+        "autodromo hermanos rodriguez", "central de abasto",
+        "tepito",
+    )
+    if any(" " + anchor + " " in words for anchor in anchors):
+        return True
+    borough, _ = identify_location(title)
+    return bool(borough)
+
+
+def local_for_homepage(article):
+    title = article.get("title", "")
+    return (not outside_cdmx_scope(title)
+            and (article.get("editorial_verified") is True
+                 or headline_has_cdmx_signal(title)))
 
 
 def allowed(source):
@@ -214,6 +254,10 @@ def category_by_headline(title, feed_category):
     if (feed_category in {"CDMX", "Gobierno", "Cultura"}
             and re.search(r"\b(?:ataque armado|balacera|asesina(?:n)? a|asesinato)\b", normalized)):
         return "Seguridad"
+    # Manifestaciones y plantones con calles u horarios afectados son movilidad.
+    if (re.search(r"\b(?:manifestaciones|plantones|marchas)\b", normalized)
+            and re.search(r"\b(?:calles|afectadas|afectacion|horarios|bloqueos)\b", normalized)):
+        return "Movilidad"
     # Las marchas y concentraciones anunciadas son información vial, no un delito.
     if (re.search(r"\bmarchas?\b.*\b(?:hoy|noviembre|bloqueos?|concentraciones?)\b", normalized)
             and not re.search(r"\b(?:detienen|policias?|operativo policial|balacera|ataque armado)\b", normalized)):
@@ -345,7 +389,7 @@ def gather():
             link = (item.findtext("link") or "").strip()
             if not allowed(source) or not title or len(title) < 20 or JUNK.search(title) or not valid_link(link):
                 continue
-            if outside_cdmx_scope(title):
+            if not headline_has_cdmx_signal(title):
                 continue
             try:
                 stamp = parsedate_to_datetime(item.findtext("pubDate")).astimezone(timezone.utc)
@@ -514,7 +558,7 @@ def fill_recent_from_archive(items, now, limit=60):
             continue
         for raw in load_json(path, {"articles": []}).get("articles", []):
             item = standardize(raw)
-            if not item or outside_cdmx_scope(item.get("title", "")):
+            if not item or not local_for_homepage(item):
                 continue
             stamp = sort_key(item)
             if not cutoff <= stamp <= now + timedelta(minutes=15):
@@ -529,11 +573,11 @@ def fill_recent_from_archive(items, now, limit=60):
 
 def homepage_articles(items, reviewed, now, limit=60):
     """Mostrar temporalmente accidentes relevantes cotejados, sin fijarlos para siempre."""
-    front = [item for item in items if not outside_cdmx_scope(item.get("title", ""))][:limit]
+    front = [item for item in items if local_for_homepage(item)][:limit]
     if not front:
         return front
     visible = {item["url"] for item in front}
-    for article in sorted((item for item in reviewed if not outside_cdmx_scope(item.get("title", ""))),
+    for article in sorted((item for item in reviewed if local_for_homepage(item)),
                           key=sort_key, reverse=True):
         if article["url"] in visible:
             continue
@@ -574,7 +618,8 @@ def update():
         old = load_json(DEST, {"articles": []})
         items = [
             item for raw in old.get("articles", [])
-            if (item := standardize(raw)) and sort_key(item) >= now - timedelta(days=3)
+            if (item := standardize(raw)) and local_for_homepage(item)
+            and sort_key(item) >= now - timedelta(days=3)
         ]
         print("Utilizando solo noticias todavía recientes que ya estaban guardadas.")
     # Unas pocas noticias editoriales no deben ocultar una caída del RSS.
