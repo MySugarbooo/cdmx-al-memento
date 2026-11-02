@@ -43,6 +43,19 @@ class BoroughAndArchiveTests(unittest.TestCase):
         self.assertEqual(news.category_by_headline(
             "Capturan a dos sospechosos en CDMX", "CDMX"), "Seguridad")
 
+    def test_gasoline_price_rejects_unrelated_house_photo(self):
+        title = "Ciudad de México: cuál es el precio de la gasolina este 1 de noviembre"
+        article = fake(title, "2026-11-02")
+        fixed = news.standardize(article)
+        self.assertLess(news._photo_score(fixed, {
+            "category": "CDMX", "topic": "Casa González de Cosío, Coyoacán, Ciudad de México",
+        }), 0)
+        self.assertGreaterEqual(news._photo_score(fixed, {
+            "category": "CDMX", "topic": "Gasolinera y surtidor de combustible en Ciudad de México",
+        }), 0)
+        self.assertIn("este portal clasifica como CDMX", fixed["description"])
+        self.assertNotIn("sección de CDMX del periódico", fixed["description"])
+
     def test_mobility_law_rejects_transit_payment_photo(self):
         title = "Urgen homologar ley de movilidad para evitar tragedias viales"
         self.assertEqual(news.category_by_headline(title, "Seguridad"), "Movilidad")
