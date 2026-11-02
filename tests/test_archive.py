@@ -316,6 +316,45 @@ class BoroughAndArchiveTests(unittest.TestCase):
                     "category": category, "topic": relevant,
                 }), 0)
 
+    def test_november_2_new_editorial_photo_mismatches(self):
+        # Emparejamientos comprobados en news.json: son imágenes representativas,
+        # pero ni la ubicación ni la categoría justifican un tema equivocado.
+        cases = [
+            ("Agenda de movilizaciones, rodadas y eventos en la CdMx para hoy 2 de noviembre 2026",
+             "Seguridad", "Equipo de trabajo de los Bomberos CDMX",
+             "Manifestación y protesta en avenida de la CDMX"),
+            ("EN VIVO | Bloqueos, accidentes y manifestaciones hoy 2 de noviembre",
+             "Movilidad", "Edificios Paseo de la Reforma CDMX",
+             "Tráfico vehicular en una avenida de la CDMX"),
+            ("80 toneladas de carne que huelen a muerte: carne podrida en frigorífico enferma a vecinos de Xochimilco",
+             "CDMX", "Trajineras y canales de Xochimilco",
+             "Frigorífico y carne en un mercado de la CDMX"),
+            ("Megarrodada en CdMx deja 246 motociclistas detenidos y 514 motos",
+             "CDMX", "Jeep policía CDMX",
+             "Motociclistas en rodada por avenida de la CDMX"),
+            ("Día de Muertos: recuerdos y nostalgia marcan las visitas a cementerios de la Ciudad de México",
+             "CDMX", "Desfile de Catrinas in Mexico City 2026",
+             "Visitas a un panteón con tumbas y ofrendas funerarias"),
+            ("Día de muertos 2026: Actividades, conciertos y shows gratuitos por alcaldía en CDMX",
+             "Cultura", "Cafetería del Museo Nacional de Antropología",
+             "Festival de Día de Muertos con ofrendas y música"),
+            ("Conciertos en la CDMX hoy 2 de noviembre: Los mejores eventos en Día de Muertos",
+             "Cultura", "Desfile de Catrinas in Mexico City 2026",
+             "Concierto de música en escenario"),
+            ("Pulso CDMX / Día Mundial por el Derecho a Morir con Dignidad",
+             "CDMX", "Calle de Donceles, Centro Histórico de la Ciudad de México",
+             "Hospital y cuidados paliativos"),
+        ]
+        for title, category, unrelated, relevant in cases:
+            article = {"title": title, "category": category}
+            with self.subTest(title=title):
+                self.assertLess(news._photo_score(article, {
+                    "category": category, "topic": unrelated,
+                }), 0)
+                self.assertGreaterEqual(news._photo_score(article, {
+                    "category": category, "topic": relevant,
+                }), 0)
+
     def test_november_photo_context_rejects_unrelated_stock_images(self):
         # Imágenes observadas en news.json público: ninguna es foto del hecho.
         cases = [
