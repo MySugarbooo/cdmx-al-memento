@@ -43,6 +43,30 @@ class BoroughAndArchiveTests(unittest.TestCase):
         self.assertEqual(news.category_by_headline(
             "Capturan a dos sospechosos en CDMX", "CDMX"), "Seguridad")
 
+    def test_criminal_groups_at_central_de_abasto_reject_theater_photo(self):
+        title = "La Central de Abasto se ha convertido en un centro de operación de grupos criminales"
+        self.assertEqual(news.category_by_headline(title, "CDMX"), "Seguridad")
+        self.assertEqual(news.category_by_headline(title, "Gobierno"), "Seguridad")
+        fixed = news.standardize(fake(title, "2026-11-02"))
+        self.assertEqual(fixed["category"], "Seguridad")
+        self.assertEqual(_photo_category(fixed), "Seguridad")
+        # Imagen realmente publicada: puesta en escena teatral De Cachetito (2015).
+        self.assertLess(news._photo_score(fixed, {
+            "category": "Servicios", "topic": "MEX ED OBRA DE CACHETITO (20290223352)",
+            "keywords": ["Obras públicas Ciudad de México"],
+        }), 0)
+        self.assertLess(news._photo_score(fixed, {
+            "category": "CDMX", "topic": "Obra de teatro De Cachetito en plaza pública Ciudad de México",
+        }), 0)
+        self.assertGreaterEqual(news._photo_score(fixed, {
+            "category": "CDMX", "topic": "Central de Abasto de Ciudad de México",
+        }), 0)
+        self.assertGreaterEqual(news._photo_score(fixed, {
+            "category": "CDMX", "topic": "Fiscalía y seguridad de Ciudad de México",
+        }), 0)
+        self.assertEqual(news.category_by_headline(
+            "Feria cultural en la Central de Abasto", "CDMX"), "CDMX")
+
     def test_gasoline_price_rejects_unrelated_house_photo(self):
         title = "Ciudad de México: cuál es el precio de la gasolina este 1 de noviembre"
         article = fake(title, "2026-11-02")
