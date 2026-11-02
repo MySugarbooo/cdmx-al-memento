@@ -285,6 +285,16 @@ class BoroughAndArchiveTests(unittest.TestCase):
     def test_unambiguous_outside_region_is_not_promoted_or_mislocated(self):
         title = "Muere conductor tras chocar contra autobús en Carretera a Laredo en Escobedo"
         self.assertTrue(news.outside_cdmx_scope(title))
+        veracruz = ("Las fincas de café de Veracruz donde ves la pizca, "
+                    "el tostado y la cata: cuánto cuesta el recorrido")
+        self.assertTrue(news.outside_cdmx_scope(veracruz))
+        self.assertEqual(news.identify_location(veracruz)[1], "Veracruz (fuera de CDMX)")
+        veracruz_article = news.standardize(fake(veracruz, datetime.now(timezone.utc).date().isoformat()))
+        self.assertLess(news._photo_score(veracruz_article, {
+            "category": "CDMX", "topic": "Iglesia de San Matías en Iztacalco",
+        }), 0)
+        self.assertEqual(news.homepage_articles([veracruz_article], [], datetime.now(timezone.utc)), [])
+        self.assertFalse(news.outside_cdmx_scope("Feria de café de Veracruz se celebra en CDMX"))
         spain = "México confirma once connacionales heridos en el accidente de tren en España"
         self.assertTrue(news.outside_cdmx_scope(spain))
         self.assertEqual(news.identify_location(spain)[1], "España (fuera de CDMX)")
