@@ -608,7 +608,7 @@ def _photo_score(article, photo):
     # Sí conservar imágenes de rodadas cuando el titular las menciona expresamente.
     if (re.search(r"\b(?:movilizaciones?|manifestaciones?|plantones?|concentraciones?)\b", headline)
             and not re.search(r"\b(?:rodadas?|ciclistas?|bicicletas?|ecobici)\b", headline)
-            and re.search(r"\b(?:ecobici|bicicletas?|ciclistas?|rodadas?)\b", topic)
+            and re.search(r"\b(?:ecobici\w*|bicicletas?|ciclistas?|rodadas?)\b", topic)
             and not re.search(r"\b(?:protestas?|manifestaciones?|marchas?|bloqueos?|plantones?)\b", topic)):
         return -10000
     # Un choque vial no ocurrió en un autódromo solo por compartir alcaldía.
