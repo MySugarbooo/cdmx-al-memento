@@ -326,6 +326,28 @@ class BoroughAndArchiveTests(unittest.TestCase):
         # El registro puede conservarse en la hemeroteca; solo se evita
         # su incorporación a la portada de noticias de CDMX.
 
+    def test_motorcycle_crash_does_not_use_church_photo(self):
+        # Incongruencia comprobada en news.json del 2 de noviembre.
+        crash = {
+            "title": "Accidente en Azcapotzalco: motociclista choca contra camión en Aquiles Serdán",
+            "category": "Movilidad", "borough": "Azcapotzalco",
+        }
+        self.assertLess(news._photo_score(crash, {
+            "category": "CDMX", "topic": "Parroquia de Santa Catarina, Azcapotzalco",
+        }), 0)
+        self.assertGreaterEqual(news._photo_score(crash, {
+            "category": "Movilidad", "topic": "Tráfico vehicular en avenida Azcapotzalco",
+        }), 0)
+        derrape = {"title": "Motociclista derrapa en avenida de CDMX",
+                   "category": "Movilidad"}
+        self.assertLess(news._photo_score(derrape, {
+            "category": "CDMX", "topic": "Parroquia de Santa Catarina",
+        }), 0)
+        choque = {"title": "Choque entre camiones en CDMX", "category": "Movilidad"}
+        self.assertGreaterEqual(news._photo_score(choque, {
+            "category": "Movilidad", "topic": "Camión de carga en avenida",
+        }), 0)
+
     def test_source_time_is_real_or_missing(self):
         now="2026-10-11T23:40:00Z"
         article=news.standardize(fake("Una noticia sobre Xochimilco en CDMX", "2026-10-11", now))
