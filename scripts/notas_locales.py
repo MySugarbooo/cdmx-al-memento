@@ -117,6 +117,12 @@ def _reported_angle(article):
                 "del Metro de Ciudad de México."+which+
                 " La operación puede cambiar durante el día y los informes de usuarios "
                 "no son equivalentes a un comunicado oficial.")
+    # Aprovechar agua de lluvia no equivale a un pronóstico meteorológico.
+    if "captación de agua de lluvia" in t or "cosecha de lluvia" in t:
+        return (f"El titular de {source} aborda la captación y aprovechamiento de agua pluvial{zone}. "
+                "Se trata de una práctica o iniciativa relacionada con el uso del agua, "
+                "no de una previsión del tiempo. Para conocer su alcance y resultados "
+                "es necesario consultar el reportaje original.")
     if "lluvia" in t or "chubasco" in t or "clima" in t or "nublado" in t:
         conditions=("lluvias ligeras" if "ligera" in t else
                     "chubascos" if "chubasco" in t else
@@ -437,6 +443,9 @@ def _photo_category(article):
     # Los ataques y homicidios prevalecen sobre menciones a festividades.
     if re.search(r"\b(?:ataque armado|balacera|asesina(?:n)?|asesinato)\b", headline):
         return "Seguridad"
+    # Las víctimas de disparos son un tema de seguridad, aunque el RSS diga CDMX.
+    if re.search(r"\\b(?:balead\\w*|balear\\w*|balean|baleo)\\b", headline):
+        return "Seguridad"
     # Un operativo policial durante una festividad sigue siendo Seguridad.
     if re.search(r"\bpolicias?\b.*\b(?:cuidan|vigilan|operativo|despliegan)\b", headline):
         return "Seguridad"
@@ -473,6 +482,15 @@ STRICT_PHOTO_TOPICS = (
     # Una agresión letal no es una celebración ni una imagen genérica de rescate.
     (r"\b(?:ataque armado|balacera|asesina(?:n)?|asesinato)\b",
      r"\b(?:fiscalia|investigacion penal|justicia|ministerio publico|peritos?|escena del crimen|operativo policial)\b"),
+    # Un tiroteo no se ilustra con una graduación o ceremonia policial.
+    (r"\\b(?:balead\\w*|balear\\w*|balean|baleo)\\b",
+     r"\\b(?:fiscalia|investigacion penal|justicia|ministerio publico|peritos?|escena del crimen|operativo policial)\\b"),
+    # La captación de agua pluvial requiere sistemas de recolección, no gotas en plantas.
+    (r"\\b(?:captacion de agua de lluvia|cosecha de lluvia|recoleccion de agua pluvial)\\b",
+     r"\\b(?:captacion|cosecha de lluvia|recoleccion|sistema pluvial|cisternas?|tinacos?|canaletas?|almacenamiento de agua|depositos? de agua|filtros? de agua)\\b"),
+    # Una detención en un reclusorio no se ilustra con una estación del Metro.
+    (r"\\breclusorio\\b",
+     r"\\b(?:reclusorio|centro penitenciario|penitenciaria|prision|fiscalia|detencion|ministerio publico|operativo policial)\\b"),
     # La búsqueda de desaparecidos no se ilustra con un monumento sin relación.
     (r"\b(?:busqueda de personas|personas desaparecidas)\b",
      r"\b(?:colectivos? de busqueda|personas desaparecidas|busqueda|fiscalia|familias? buscadoras?|protestas?|manifestaciones?)\b"),
@@ -643,7 +661,7 @@ def _photo_score(article, photo):
             and re.search(r"\b(?:adquisicion|compra|presentacion|entrega)\b.*\bpatrullas?\b", topic)):
         return -10000
     # Una ceremonia policial o un desfile no representa un asesinato o ataque.
-    if (re.search(r"\b(?:asesina(?:n)?|asesinato|ataque armado|balacera|matan|homicidio)\b", headline)
+    if (re.search(r"\b(?:asesina(?:n)?|asesinato|ataque armado|balacera|matan|homicidio|balead\w*|balear\w*|balean)\b", headline)
             and re.search(r"\b(?:graduacion|ceremonia|adquisicion|entrega de patrullas|proteccion civil|desfile|catrinas?)\b", topic)):
         return -10000
     # Una avenida turística de otra zona no ilustra un choque local.
