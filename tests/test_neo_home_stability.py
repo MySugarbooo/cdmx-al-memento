@@ -24,8 +24,9 @@ class StableHomepageTests(unittest.TestCase):
         # El HTML inicial conserva el diseño, sin publicar tarjetas antiguas
         # con fotos genéricas cuando no existe evidencia documental del hecho.
         self.assertNotIn('class="neo-news-card"', home)
-        self.assertIn('Comprobando noticias con fotografías documentales verificadas', home)
-        self.assertIn('Noticias pendientes de verificación fotográfica', home)
+        self.assertIn('Cargando noticias con fotografías acreditadas', home)
+        self.assertIn('Noticias de Ciudad de México', home)
+        self.assertIn('id="neo-hero-img" class="neo-hero-image" src="/assets/fotos/reforma.jpg"', home)
         for path in ("/cdmx/", "/seguridad/", "/servicios/", "/alcaldias/", "/comunidad/"):
             self.assertIn('href="' + path + '"', home)
         self.assertEqual(home.count('id="neo-home"'), 1)
