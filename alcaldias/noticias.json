@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-02 16:02 UTC",
+  "updated": "2026-11-02 16:55 UTC",
   "boroughs": [
     {
       "name": "La Magdalena Contreras",
@@ -2372,7 +2372,7 @@
     },
     {
       "name": "Coyoacán",
-      "count": 123,
+      "count": 124,
       "articles": [
         {
           "title": "Muere mujer tras ser atropellada por conductor ebrio en Coyoacán",
@@ -2563,6 +2563,24 @@
             "license": "CC BY-SA 4.0",
             "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
             "source": "https://commons.wikimedia.org/wiki/File:4._Coyoac%C3%A1n_banca_Ciudad_de_M%C3%A9xico.jpg"
+          }
+        },
+        {
+          "title": "Revelan videos del brutal choque contra Tortas Gigantes Sur 12 en Coyoacán que dejó una mujer muerta y cuatro heridos",
+          "description": "De acuerdo con Eje Central, el titular publicado es: «Revelan videos del brutal choque contra Tortas Gigantes Sur 12 en Coyoacán que dejó una mujer muerta y cuatro heridos». De acuerdo con Eje Central, se informa de un hecho vial relacionado con personas o vehículos involucrados en Coyoacán. El propio titular señala un fallecimiento, sin que esta ficha agregue cifras ni identidades. Se requiere consultar la nota original para conocer el punto exacto, las circunstancias y los reportes oficiales, sin atribuir responsabilidades sin pruebas.",
+          "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQZnVCZHQxVVlHcjFvWDgwbG1pdUZOUWc0WnUzZGJkY3RGc2Z6X0dGMTM4Y2x2cmRkNjA2OTB3anRrVlIxX2NMZlpwMUljMllpeTg3LXlvdGxYU0xFbW5CX095a2JKbjJIRmRRTEY5OUFoaHNUWHMtZHN2OXZJczlBYjdWMjJJdklVay1HZmJEbVBieVFwb2IyeGt0QTlTaFRFNE5YN3p2RVhLNVdxZS0tZmpRekNJaHJJbHFrc0NlQXdyTncwNGRzMmR4MlFBREkyRUthUWxDN3JPWDhGdUhYeHRPamMtMVFmQXpDRmVTOU8?oc=5",
+          "source": "Eje Central",
+          "date": "2026-10-31",
+          "published_at": "2026-10-31T21:50:44Z",
+          "category": "Movilidad",
+          "borough": "Coyoacán",
+          "location": "Coyoacán (mencionada en el titular)",
+          "local_url": "/noticias/?id=84983497352184c85716&mes=2026-10",
+          "brief": {
+            "lead": "De acuerdo con Eje Central, el titular publicado es: «Revelan videos del brutal choque contra Tortas Gigantes Sur 12 en Coyoacán que dejó una mujer muerta y cuatro heridos». De acuerdo con Eje Central, se informa de un hecho vial relacionado con personas o vehículos involucrados en Coyoacán. El propio titular señala un fallecimiento, sin que esta ficha agregue cifras ni identidades. Se requiere consultar la nota original para conocer el punto exacto, las circunstancias y los reportes oficiales, sin atribuir responsabilidades sin pruebas.",
+            "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
+            "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           }
         },
         {
@@ -3065,44 +3083,6 @@
             "license": "CC BY 2.0",
             "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
             "source": "https://commons.wikimedia.org/wiki/File:MX_MM_COYOAC%C3%81N_-_Mercado.jpg"
-          }
-        },
-        {
-          "title": "Hombre de 25 años atropella a varias personas y choca contra tortería en Las Bombas, Coyoacán; un muerto y 4 heridos",
-          "description": "De acuerdo con La Jornada, el titular publicado es: «Hombre de 25 años atropella a varias personas y choca contra tortería en Las Bombas, Coyoacán; un muerto y 4 heridos». De acuerdo con La Jornada, se informa de un hecho vial relacionado con personas o vehículos involucrados en Coyoacán. El propio titular señala un fallecimiento, sin que esta ficha agregue cifras ni identidades. Se requiere consultar la nota original para conocer el punto exacto, las circunstancias y los reportes oficiales, sin atribuir responsabilidades sin pruebas.",
-          "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOdUozVF9aWmY3SUFya3VTREtVc1AxX2dmM0w3LVJuUVBJbG12bE1DSTV0b3M1bHZ6TDViUjJyZ2F1T3MxR202NkYzdXFKZkxiU0lOMW9zdHhzbTc3bkhROGtLOWVZSFJvNXRKYldqVFlETlluYkFtNFJZWHZRVXVRaFRnMzY3NXJrWmdjLTdJNUc1YzduRnVRTFFKWXBhU1VXcGoyLXJYU0NSdXJFUXJ3ckVfQ0lZOF9qblh4T2lSVm8wN2VBbnl5eTFxQkZ4bkRrTlAwTEdncUZ3WlRQRWpSb19B?oc=5",
-          "source": "La Jornada",
-          "date": "2026-10-30",
-          "published_at": "2026-10-30T19:58:00Z",
-          "category": "Movilidad",
-          "borough": "Coyoacán",
-          "location": "Coyoacán (mencionada en el titular)",
-          "local_url": "/noticias/?id=49bd4d88c850a9385969&mes=2026-10",
-          "brief": {
-            "lead": "De acuerdo con La Jornada, el titular publicado es: «Hombre de 25 años atropella a varias personas y choca contra tortería en Las Bombas, Coyoacán; un muerto y 4 heridos». De acuerdo con La Jornada, se informa de un hecho vial relacionado con personas o vehículos involucrados en Coyoacán. El propio titular señala un fallecimiento, sin que esta ficha agregue cifras ni identidades. Se requiere consultar la nota original para conocer el punto exacto, las circunstancias y los reportes oficiales, sin atribuir responsabilidades sin pruebas.",
-            "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
-            "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "contexto_trafico_eje_central",
-            "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Eje_Central_CDMX.jpg/1280px-Eje_Central_CDMX.jpg",
-            "category": "Movilidad",
-            "borough": "",
-            "topic": "Tráfico vehicular en Eje Central, Ciudad de México (fotografía de 2018)",
-            "keywords": [
-              "tráfico",
-              "vehículos",
-              "automóviles",
-              "movilidad",
-              "hoy no circula",
-              "vialidad"
-            ],
-            "author": "Sergio Estrada Flores",
-            "license": "CC BY 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
-            "source": "https://commons.wikimedia.org/wiki/File:Eje_Central_CDMX.jpg"
           }
         }
       ]
@@ -4489,8 +4469,38 @@
     },
     {
       "name": "Gustavo A. Madero",
-      "count": 36,
+      "count": 37,
       "articles": [
+        {
+          "title": "Volcadura en Gustavo A. Madero deja un hombre muerto y otro lesionado tras choque con Metrobús",
+          "description": "De acuerdo con PostaMx, el titular publicado es: «Volcadura en Gustavo A. Madero deja un hombre muerto y otro lesionado tras choque con Metrobús». De acuerdo con PostaMx, se informa de un hecho vial relacionado con personas o vehículos involucrados en Gustavo A. Madero. El propio titular señala un fallecimiento, sin que esta ficha agregue cifras ni identidades. Se requiere consultar la nota original para conocer el punto exacto, las circunstancias y los reportes oficiales, sin atribuir responsabilidades sin pruebas.",
+          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOQmdTd3p3Tk9vUW0yeGJNd004OFdTX3lwbE1iM1I0aTdJUmNWOVJ5OGdJY1UtMmZHWk91VXR0OEwwRGVkMjJvVXhIbXVqejNZc1g2RDk5Y2NYT0RPaC1DeWQ3eHN4NTM5ZFZYYVpuYnhkU3ExSDEtcW1Eby15OFo4SHBscGZVZ2Y0b3VqZWd6SG84b2tGUXpuWEIxcGtLYlRSQThjRHRKNERYcEV6bHByOUZpcWJjQVlBUElWQVlhLWkwSUJCZjJtZ1lIWmhTUdIB0wFBVV95cUxNYW94NDI4YXZrMmFIMU5kR3lzSGpqQm9sZ3pXTXlHLUZpOVVtZ3owaWRXblFUQWQ0NG9SMTNrVjltM3BuZEVmZjZXQWFwXzBwS1FWZFd3dXE1MlIxckFMTTRRR0s1bWJYUFJ6YUFtM1JsSGpSQWFSSDFKLW41SU1OZmx1M0w0Z2VRM190MFNrU2xJNWo1MWU1QjRZbk1TRDFnUUZnd3NzQU5VdjJtM2dGcUdoTm9PZTlzQVpDTXpfeWtCejdfazY1b0h5dU5VeEZweFlR?oc=5",
+          "source": "PostaMx",
+          "date": "2026-11-02",
+          "published_at": "2026-11-02T16:15:00Z",
+          "category": "Movilidad",
+          "borough": "Gustavo A. Madero",
+          "location": "Gustavo A. Madero (mencionada en el titular)",
+          "local_url": "/noticias/?id=3257ccc609b515ff01cf&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con PostaMx, el titular publicado es: «Volcadura en Gustavo A. Madero deja un hombre muerto y otro lesionado tras choque con Metrobús». De acuerdo con PostaMx, se informa de un hecho vial relacionado con personas o vehículos involucrados en Gustavo A. Madero. El propio titular señala un fallecimiento, sin que esta ficha agregue cifras ni identidades. Se requiere consultar la nota original para conocer el punto exacto, las circunstancias y los reportes oficiales, sin atribuir responsabilidades sin pruebas.",
+            "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
+            "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_gustavo-a-madero",
+            "kind": "representativa",
+            "url": "/assets/alcaldias/gustavo-a-madero.jpg",
+            "category": "CDMX",
+            "borough": "Gustavo A. Madero",
+            "topic": "Capilla del Cerrito en el Tepeyac, Gustavo A. Madero",
+            "author": "Catedrales e Iglesias/Cathedrals and Churches",
+            "license": "CC BY 2.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Capilla_Cerrito_del_Tepeyac_%28Basilica_Nuestra_Se%C3%B1ora_de_Guadalupe%29_Gustavo_A_Madero%2C_Ciudad_de_M%C3%A9xico_02.jpg"
+          }
+        },
         {
           "title": "VIDEO | Choque en Eje Central deja vehículo destrozado en Gustavo A. Madero, CDMX",
           "description": "De acuerdo con PostaMx, el titular publicado es: «VIDEO | Choque en Eje Central deja vehículo destrozado en Gustavo A. Madero, CDMX». De acuerdo con PostaMx, se informa de un hecho vial relacionado con personas o vehículos involucrados en Gustavo A. Madero. El encabezado no permite determinar por sí solo si hubo personas lesionadas o fallecidas. Se requiere consultar la nota original para conocer el punto exacto, las circunstancias y los reportes oficiales, sin atribuir responsabilidades sin pruebas.",
@@ -5089,39 +5099,6 @@
             "license": "CC BY 2.0",
             "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
             "source": "https://commons.wikimedia.org/wiki/File:Capilla_Cerrito_del_Tepeyac_%28Basilica_Nuestra_Se%C3%B1ora_de_Guadalupe%29_Gustavo_A_Madero%2C_Ciudad_de_M%C3%A9xico_02.jpg"
-          }
-        },
-        {
-          "title": "Clima hoy en Gustavo A. Madero: miércoles 21 de octubre con ambiente fresco y cielo nublado",
-          "description": "De acuerdo con El Heraldo de México, el titular publicado es: «Clima hoy en Gustavo A. Madero: miércoles 21 de octubre con ambiente fresco y cielo nublado». El pronóstico recogido por El Heraldo de México se refiere a condiciones meteorológicas en Gustavo A. Madero. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
-          "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPYVNobzIzOEdMbDBMMXFWc1NGYndDVV8tV1R3N25uamZnaG5NWm9kSEt2dGNpbzRVWmZhcGhWMUxaYTFzVS1ibGlvaE16U1h3T3prRDZGdWJlbUp4Z1VCaDN4RjRWby05aHdxaUxIdG1kcW4yU04tNktHNU4zaU5fbkJjSjE0cEpPUl82blVxRkdwTjYtclIzMWpmRzU1aHNDRVd6NVJ6U0lpZ3FPcTV1UXhGc0JIeTdaMjdZd09xNXVMVWZES01ieDYxRl9mTkRJZHpWbzZ0ZTdTWGozZzlRT1hGbjA?oc=5",
-          "source": "El Heraldo de México",
-          "date": "2026-10-20",
-          "published_at": "2026-10-21T05:00:00Z",
-          "category": "CDMX",
-          "borough": "Gustavo A. Madero",
-          "location": "Gustavo A. Madero (mencionada en el titular)",
-          "local_url": "/noticias/?id=1cd952e55d32aafd2047&mes=2026-10",
-          "brief": {
-            "lead": "De acuerdo con El Heraldo de México, el titular publicado es: «Clima hoy en Gustavo A. Madero: miércoles 21 de octubre con ambiente fresco y cielo nublado». El pronóstico recogido por El Heraldo de México se refiere a condiciones meteorológicas en Gustavo A. Madero. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "commons_145397418",
-            "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Parroquia_de_Corpus_Cristi_%28Gustavo_A_Madero%29_Ciudad_de_M%C3%A9xico_%283146334924%29.jpg/960px-Parroquia_de_Corpus_Cristi_%28Gustavo_A_Madero%29_Ciudad_de_M%C3%A9xico_%283146334924%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "category": "Alcaldías",
-            "borough": "",
-            "topic": "Parroquia de Corpus Cristi (Gustavo A Madero) Ciudad de México (3146334924)",
-            "keywords": [
-              "Gustavo A Madero Ciudad de México"
-            ],
-            "author": "Catedrales e Iglesias/Cathedrals and Churches from Puebla de los Ángeles, Mexico",
-            "license": "CC BY 2.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Parroquia_de_Corpus_Cristi_(Gustavo_A_Madero)_Ciudad_de_M%C3%A9xico_(3146334924).jpg"
           }
         }
       ]
@@ -5880,8 +5857,38 @@
     },
     {
       "name": "Iztapalapa",
-      "count": 171,
+      "count": 172,
       "articles": [
+        {
+          "title": "Una Mujer acompañada por un menor, Intentan ingresar marihuana al Reclusorio Varonil Oriente en Iztapalapa; y los detienen",
+          "description": "De acuerdo con Reporte Indigo, el titular publicado es: «Una Mujer acompañada por un menor, Intentan ingresar marihuana al Reclusorio Varonil Oriente en Iztapalapa; y los detienen». Una nota de Reporte Indigo comunica un caso relacionado con una detención o una presunta conducta delictiva en Iztapalapa. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
+          "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxPWTRrYVBVb2FlMFpJZWpRMGNnZHJCQm80RU5tMFl4TFdKSklaSWZtTmZoMEE0dGR6R19fTUtNalo0R3JrblE4Vkg0YUZNRWRpdHBwQ3VFOWNBNEdBYS1CdnlTbmZjaVozX3g3NGVqYjFmUWV4Wk85c2c1cTNhcDdRWDJEMDhjTkdQdmtTbF92X1hTQVFSS3BrWDZobHVnQlZLZ2ljLThBNEpObzdDVmdseWtPdUtMQV9ic1BnQjdWd1VhSXdENDNmZlh0RFNWYVRsV2o2S1NhU3lmQ0Fka2JCbWRnTzNjZk4tWVlLY2VUaE9ZZjQ1N1J0ZUZhTVFvdURyQXFXVA?oc=5",
+          "source": "Reporte Indigo",
+          "date": "2026-11-02",
+          "published_at": "2026-11-02T16:44:30Z",
+          "category": "Seguridad",
+          "borough": "Iztapalapa",
+          "location": "Iztapalapa (mencionada en el titular)",
+          "local_url": "/noticias/?id=353a76f6f279801d9e5a&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con Reporte Indigo, el titular publicado es: «Una Mujer acompañada por un menor, Intentan ingresar marihuana al Reclusorio Varonil Oriente en Iztapalapa; y los detienen». Una nota de Reporte Indigo comunica un caso relacionado con una detención o una presunta conducta delictiva en Iztapalapa. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
+            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_iztapalapa",
+            "kind": "representativa",
+            "url": "/assets/alcaldias/iztapalapa.jpg",
+            "category": "CDMX",
+            "borough": "Iztapalapa",
+            "topic": "Vista de Iztapalapa desde el Cerro de la Estrella",
+            "author": "Secretaría de Cultura Ciudad de México from México",
+            "license": "CC BY 2.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+            "source": "https://commons.wikimedia.org/wiki/File:MX_MM_MUSEO_CERRO_DE_LA_ESTRELLA_%2849522225751%29.jpg"
+          }
+        },
         {
           "title": "Noche de terror en CDMX: Balacera deja un muerto y un herido en calles de Iztapalapa| Mientras Dormía",
           "description": "De acuerdo con TV Azteca, el titular publicado es: «Noche de terror en CDMX: Balacera deja un muerto y un herido en calles de Iztapalapa| Mientras Dormía». La información publicada por TV Azteca aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -6461,36 +6468,6 @@
             "topic": "Vista de Iztapalapa desde el Cerro de la Estrella",
             "author": "Secretaría de Cultura Ciudad de México from México",
             "license": "CC BY 2.0",
-            "source": "https://commons.wikimedia.org/wiki/File:MX_MM_MUSEO_CERRO_DE_LA_ESTRELLA_%2849522225751%29.jpg"
-          }
-        },
-        {
-          "title": "Vecinos Bloquean Periférico y Eje 5 Oriente en Iztapalapa por Agua Contaminada",
-          "description": "De acuerdo con N+, el titular publicado es: «Vecinos Bloquean Periférico y Eje 5 Oriente en Iztapalapa por Agua Contaminada». La información publicada por N+ aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOQi1mVnppMnJOU3FwQWN5SWJUdWVlU0hWUDNSTzRJN2NQeFFKUVlLVHpleTNSZWNyMldwMW5wdTJVSHBkdzJkLWN1elM5dmZtN3daajl5cngyTHpUWVAzNUhvWlNhXzFqZkVHVTd1Mk5WNzZRSk0xVWtzQ1BOVHRPeGZWekNCZElPY0Zvb2NwY01lUUlwd05yNUs1VTI3Y0JNQnlnb0twZ0txcktEamRING1idjFHUDkzSk9UZUpjSG5TYzJJWmp6UFJ4TTB2OWE4SzV2cGZUbC1OaVE?oc=5",
-          "source": "N+",
-          "date": "2026-10-28",
-          "published_at": "2026-10-29T02:15:46Z",
-          "category": "CDMX",
-          "borough": "Iztapalapa",
-          "location": "Iztapalapa (mencionada en el titular)",
-          "local_url": "/noticias/?id=83bd3d4241fc53de0a10&mes=2026-10",
-          "brief": {
-            "lead": "De acuerdo con N+, el titular publicado es: «Vecinos Bloquean Periférico y Eje 5 Oriente en Iztapalapa por Agua Contaminada». La información publicada por N+ aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "alcaldia_iztapalapa",
-            "kind": "representativa",
-            "url": "/assets/alcaldias/iztapalapa.jpg",
-            "category": "CDMX",
-            "borough": "Iztapalapa",
-            "topic": "Vista de Iztapalapa desde el Cerro de la Estrella",
-            "author": "Secretaría de Cultura Ciudad de México from México",
-            "license": "CC BY 2.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
             "source": "https://commons.wikimedia.org/wiki/File:MX_MM_MUSEO_CERRO_DE_LA_ESTRELLA_%2849522225751%29.jpg"
           }
         }
