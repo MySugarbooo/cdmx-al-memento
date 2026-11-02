@@ -464,6 +464,18 @@ def _photo_category(article):
 # Resguardos editoriales: una coincidencia geográfica o de categoría no basta.
 # Si la fototeca no tiene contexto del tema, se prefiere publicar sin imagen.
 STRICT_PHOTO_TOPICS = (
+    # No utilizar graduaciones policiales para remisiones de motocicletas.
+    (r"\brodadas? del terror\b",
+     r"\b(?:motos?|motocicletas?|motociclistas?|rodadas?|corralones?|deposito vehicular)\b"),
+    # El saldo de visitantes durante Día de Muertos no es una entrada de cine histórica.
+    (r"\b(?:saldo blanco\b.*\bdia de muertos|dia de muertos\b.*\bsaldo blanco)\b",
+     r"\b(?:dia de muertos|panteones?|cementerios?|ofrendas?|catrinas?|celebracion|visitantes?|operativo de seguridad)\b"),
+    (r"\bforo urbano mundial\b",
+     r"\b(?:foro urbano|urbanismo|onu habitat|conferencias?|planeacion urbana|ciudades|vivienda|arquitectura)\b"),
+    (r"\bnascar\b",
+     r"\b(?:nascar|automovilismo|autodromo|carreras? de autos?|vehiculos? de carreras?|circuito de carreras?)\b"),
+    (r"\bezln\b.*\bbuscadoras?\b",
+     r"\b(?:ezln|zapatistas?|colectivos? de busqueda|madres? buscadoras?|personas desaparecidas|manifestaciones?|protestas?)\b"),
     # El mismo municipio no convierte un jardín o monumento en imagen de búsqueda.
     (r"\b(?:caminata\b.*\b(?:recuperar a su hija|buscando a su hija)|madres? buscadoras?)\b",
      r"\b(?:caminata|colectivos? de busqueda|familias? buscadoras?|madres? buscadoras?|personas desaparecidas|manifestacion|protesta)\b"),

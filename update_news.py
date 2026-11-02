@@ -246,6 +246,18 @@ def published_datetime(value):
 def category_by_headline(title, feed_category):
     """Corrige etiquetas RSS evidentes sin inventar ubicaciones o hechos."""
     normalized = fold(title)
+    # No clasificar como Metro noticias deportivas de Fórmula 1 o NASCAR.
+    if re.search(r"\b(?:formula 1|gp ciudad de mexico|gran premio|nascar)\b", normalized):
+        return "Movilidad"
+    # Un comunicado del EZLN sobre el gobierno no es una incidencia del Metro.
+    if (re.search(r"\bezln\b", normalized)
+            and re.search(r"\b(?:buscadoras?|gobierno|movilizacion)\b", normalized)):
+        return "Gobierno"
+    # Las visitas de Día de Muertos no son delitos por mencionar "saldo blanco".
+    if (re.search(r"\bdia de muertos\b", normalized)
+            and re.search(r"\b(?:visitantes?|saldo blanco|conmemoracion)\b", normalized)
+            and not re.search(r"\b(?:homicidio|ataque armado|balacera)\b", normalized)):
+        return "Cultura"
     # Los grupos criminales son materia de seguridad, aunque el RSS use CDMX.
     if (feed_category in {"CDMX", "Gobierno"}
             and re.search(r"\b(?:grupos? criminales?|organizaciones? criminales?|crimen organizado)\b", normalized)):

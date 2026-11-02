@@ -1093,5 +1093,49 @@ class BoroughAndArchiveTests(unittest.TestCase):
                 }), 0)
 
 
+    def test_november_2_followup_index_subjects(self):
+        cases = (
+            ("Rodadas del Terror dejan 762 motocicletas remitidas en Ciudad de México",
+             "Graduación de la Policía de la Ciudad de México",
+             "Motocicletas remitidas al corralón"),
+            ("Coyoacán reporta saldo blanco tras recibir a más de 150 mil visitantes por Día de Muertos",
+             "Boleto cine Esperanza Coyoacán Ciudad de México 6 de mayo de 1928",
+             "Ofrendas del Día de Muertos en Coyoacán"),
+            ("CDMX será sede del Foro Urbano Mundial de ONU-Hábitat en 2028",
+             "El Paraguas (126505121)",
+             "Conferencia del Foro Urbano Mundial de ONU Habitat"),
+            ("NASCAR México Series regresa a la CDMX para disputar la final de la temporada 2026",
+             "Declaratoria de carnavales como patrimonio cultural",
+             "NASCAR automovilismo en circuito de carreras"),
+            ("EZLN denuncia provocaciones del gobierno para que no asistan con buscadoras a la CDMX",
+             "Fachada del Palacio Nacional",
+             "Colectivo de madres buscadoras y personas desaparecidas"),
+            ("Miles visitan Coyoacán con saldo blanco en conmemoración del Día de Muertos",
+             "Iglesia de San Juan Bautista en Coyoacán Ciudad de México",
+             "Visitantes en ofrendas del Día de Muertos"),
+        )
+        for title, wrong, relevant in cases:
+            article = {"title": title, "category": "CDMX"}
+            with self.subTest(title=title):
+                self.assertLess(news._photo_score(article, {
+                    "category": "CDMX", "topic": wrong,
+                }), 0)
+                self.assertGreaterEqual(news._photo_score(article, {
+                    "category": "CDMX", "topic": relevant,
+                }), 0)
+        self.assertEqual(news.category_by_headline(
+            "El polémico lugar de Franco Colapinto en el GP Ciudad de México de Fórmula 1",
+            "Metro"), "Movilidad")
+        self.assertEqual(news.category_by_headline(
+            "NASCAR México Series regresa a la CDMX para disputar la final",
+            "CDMX"), "Movilidad")
+        self.assertEqual(news.category_by_headline(
+            "EZLN denuncia provocaciones del gobierno para que no asistan con buscadoras",
+            "Metro"), "Gobierno")
+        self.assertEqual(news.category_by_headline(
+            "Miles visitan Coyoacán con saldo blanco en conmemoración del Día de Muertos",
+            "Seguridad"), "Cultura")
+
+
 if __name__ == "__main__":
     unittest.main()
