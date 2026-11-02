@@ -524,6 +524,35 @@ class BoroughAndArchiveTests(unittest.TestCase):
             "Estas Son las Marchas, Concentraciones y Eventos en la CDMX para Este Lunes",
             "Seguridad"), "Movilidad")
 
+    def test_regenerated_photos_reject_ceremonies_and_other_borough_avenues(self):
+        arrest = {"title": "Detienen a tres hombres por obras irregulares y cambio ilegal de uso de suelo en Tláhuac",
+                  "category": "Seguridad", "borough": "Tláhuac"}
+        self.assertLess(news._photo_score(arrest, {
+            "category": "Seguridad", "topic": "Adquisición patrullas para la Policía 03",
+        }), 0)
+        self.assertGreaterEqual(news._photo_score(arrest, {
+            "category": "Seguridad", "topic": "Operativo de Fiscalía en Tláhuac",
+        }), 0)
+
+        crash = {"title": "Accidente en Iztacalco Hoy: Hay Autos Destrozados y una Motocicleta Aplastada",
+                 "category": "Movilidad", "borough": "Iztacalco"}
+        self.assertLess(news._photo_score(crash, {
+            "category": "CDMX",
+            "topic": "Avenida Francisco I. Madero, Centro Histórico, Ciudad de México - Torre Latinoamericana",
+        }), 0)
+        self.assertGreaterEqual(news._photo_score(crash, {
+            "category": "Movilidad", "topic": "Tráfico vehicular en avenida de Iztacalco",
+        }), 0)
+
+        murder = {"title": "Asesina a Mujer y a Menor de 4 Años en Tepito",
+                  "category": "Seguridad"}
+        self.assertLess(news._photo_score(murder, {
+            "category": "Seguridad", "topic": "Graduación de la Policía de la Ciudad de México",
+        }), 0)
+        self.assertGreaterEqual(news._photo_score(murder, {
+            "category": "Seguridad", "topic": "Investigación penal de Fiscalía CDMX",
+        }), 0)
+
     def test_november_2_followup_photo_mismatches(self):
         # Nuevas asignaciones incongruentes tras regenerar news.json.
         cases = [
