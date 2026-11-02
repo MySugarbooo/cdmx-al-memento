@@ -610,6 +610,22 @@ def _photo_score(article, photo):
     if re.search(r"\b(?:sin agua|falta de agua|corte de agua|suspension de agua)\b", headline):
         if re.search(r"\b(?:bosque de chapultepec|parque|jardin|fuente ornamental)\b", topic):
             return -10000
+    # Patrullas compradas para otra alcaldía no documentan una detención.
+    if (re.search(r"\b(?:detienen|detenido\w*|arrestan|capturan|aprehenden)\b", headline)
+            and re.search(r"\b(?:adquisicion|compra|presentacion|entrega)\b.*\bpatrullas?\b", topic)):
+        return -10000
+    # Una ceremonia policial o un desfile no representa un asesinato o ataque.
+    if (re.search(r"\b(?:asesina(?:n)?|asesinato|ataque armado|balacera|matan|homicidio)\b", headline)
+            and re.search(r"\b(?:graduacion|ceremonia|adquisicion|entrega de patrullas|proteccion civil|desfile|catrinas?)\b", topic)):
+        return -10000
+    # Una avenida turística de otra zona no ilustra un choque local.
+    borough=_photo_fold(article.get("borough"))
+    if (borough and re.search(r"\b(?:accident\w*|choqu\w*|choc\w*|colisi\w*|volcadur\w*|derrap\w*)\b", headline)
+            and re.search(r"\b(?:autos?|automovil\w*|motociclet\w*|motociclist\w*|motos?)\b", headline)
+            and re.search(r"\b(?:avenida|calle|paseo|centro historico|torre latinoamericana)\b", topic)
+            and borough not in topic
+            and not re.search(r"\b(?:trafico|transito|vehicular|vialidad|motos?|motociclet\w*|autos?|automovil\w*)\b", topic)):
+        return -10000
     # Una graduación policial no ilustra una muerte violenta o sentencia penal.
     if (re.search(r"\b(?:matan|balazos|asesinan|homicidio|condenad[oa]s?|condenan|prision)\b", headline)
             and re.search(r"\b(?:graduacion|ceremonia de policia|entrega de patrullas)\b", topic)):
