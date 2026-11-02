@@ -191,6 +191,32 @@ class BoroughAndArchiveTests(unittest.TestCase):
                     "topic": "Autódromo Hermanos Rodríguez, circuito de Fórmula 1",
                 }), 0)
 
+    def test_new_portada_photos_require_specific_subjects(self):
+        # Cuatro emparejamientos incorrectos detectados el 2 de noviembre.
+        cases = [
+            ("Zonas altas de CDMX recibirán apoyos del nuevo programa invernal",
+             "Centro Histórico de la Ciudad de México, Rostros de la Ciudad",
+             "Entrega de cobijas y abrigo por frío invernal"),
+            ("CDMX invierte 74 millones en rehabilitar puentes peatonales",
+             "Casa Centro Histórico de la Ciudad de México 03",
+             "Puente peatonal en avenida de Ciudad de México"),
+            ("Montachoques en CDMX: cómo identificarlos y dónde denunciarlos",
+             "Ángel de la Independencia y Torre HSBC CDMX",
+             "Choque de automóviles en avenida de Ciudad de México"),
+            ("MegaRodadaDelTerror: SSC CDMX remitió a 514 motocicletas a depósitos vehiculares",
+             "Graduación de la Policía de la Ciudad de México",
+             "Rodada de motociclistas por las calles de CDMX"),
+        ]
+        for title, unrelated, relevant in cases:
+            article = {"title": title, "category": "CDMX"}
+            with self.subTest(title=title):
+                self.assertLess(news._photo_score(article, {
+                    "category": "CDMX", "topic": unrelated,
+                }), 0)
+                self.assertGreaterEqual(news._photo_score(article, {
+                    "category": "CDMX", "topic": relevant,
+                }), 0)
+
     def test_november_photo_context_rejects_unrelated_stock_images(self):
         # Imágenes observadas en news.json público: ninguna es foto del hecho.
         cases = [
