@@ -196,8 +196,8 @@ def _reported_angle(article):
                 "Conviene distinguir la intención anunciada de las resoluciones "
                 "que hayan sido aprobadas y publicado oficialmente.")
     # Si el titular no encaja en una regla verificable, no inventar narrativa.
-    return (f"La información publicada por {source} trata un asunto registrado "
-            f"en la sección de {article.get('category') or 'CDMX'} del periódico. "
+    return (f"La información publicada por {source} aborda un asunto que este portal "
+            f"clasifica como {article.get('category') or 'CDMX'}. "
             "El encabezado contiene la referencia específica; sin acceso al cuerpo "
             "de la nota no corresponde agregar circunstancias que podrían ser falsas.")
 
@@ -447,6 +447,9 @@ def _photo_category(article):
 # Resguardos editoriales: una coincidencia geográfica o de categoría no basta.
 # Si la fototeca no tiene contexto del tema, se prefiere publicar sin imagen.
 STRICT_PHOTO_TOPICS = (
+    # Los precios de gasolina necesitan imagen de combustible o estación de servicio.
+    (r"\b(?:precios? de (?:la )?gasolina|gasolineras?|combustibles?)\b",
+     r"\b(?:gasolina|gasolineras?|combustibles?|estacion de servicio|surtidor|bomba de gasolina)\b"),
     # Una ley de seguridad vial no se ilustra con el pago de pasaje en Metrobús.
     (r"\b(?:ley de movilidad|tragedias viales)\b",
      r"\b(?:seguridad vial|transito|vialidad|trafico|vehicular|vehiculos?|automoviles?|carreteras?|cruces? peatonales?|peatones?|ciclistas?|siniestros? viales?|accidentes? viales?|senales? de transito)\b"),
