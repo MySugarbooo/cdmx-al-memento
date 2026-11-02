@@ -254,6 +254,20 @@ def category_by_headline(title, feed_category):
     if (feed_category in {"CDMX", "Gobierno", "Cultura"}
             and re.search(r"\b(?:ataque armado|balacera|asesina(?:n)? a|asesinato)\b", normalized)):
         return "Seguridad"
+    # Las agresiones por disparos se clasifican como Seguridad aunque el RSS diga CDMX.
+    if (feed_category in {"CDMX", "Gobierno", "Cultura"}
+            and re.search(r"\b(?:balead\w*|balear\w*|balean|baleo)\b", normalized)):
+        return "Seguridad"
+    # Manifestaciones, plantones y concentraciones anunciadas no son delitos.
+    if (re.search(r"\bmovilizaciones\b", normalized)
+            and re.search(r"\b(?:hoy|plantones|concentraciones|bloqueos|marchas)\b", normalized)
+            and not re.search(r"\b(?:ataque armado|balacera|detienen|homicidio)\b", normalized)):
+        return "Movilidad"
+    # Una Catrina monumental y su récord pertenecen a la agenda cultural.
+    if (re.search(r"\bcatrina\b", normalized)
+            and re.search(r"\b(?:monumental|record guinness|zocalo)\b", normalized)
+            and not re.search(r"\b(?:ataque armado|balacera|detienen)\b", normalized)):
+        return "Cultura"
     # Manifestaciones y plantones con calles u horarios afectados son movilidad.
     if (re.search(r"\b(?:manifestaciones|plantones|marchas)\b", normalized)
             and re.search(r"\b(?:calles|afectadas|afectacion|horarios|bloqueos)\b", normalized)):
