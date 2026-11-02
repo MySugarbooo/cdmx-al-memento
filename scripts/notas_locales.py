@@ -448,6 +448,15 @@ def _photo_category(article):
 # Resguardos editoriales: una coincidencia geográfica o de categoría no basta.
 # Si la fototeca no tiene contexto del tema, se prefiere publicar sin imagen.
 STRICT_PHOTO_TOPICS = (
+    # Una nota sobre congestión en ciudades requiere tránsito vial, no trenes.
+    (r"\\bciudades?\\b.*\\b(?:mas|mayor) trafico\\b",
+     r"\\b(?:trafico|vehicular|autos?|automoviles?|vehiculos?|congestion|carreteras?|vialidad|avenidas?|transito)\\b"),
+    # Proyectos de Tren Ligero no se ilustran con vagones de líneas del Metro.
+    (r"\\btren ligero\\b",
+     r"\\b(?:tren ligero|tranvia|ferrocarril ligero)\\b"),
+    # Una ampliación de ruta RTP requiere autobuses, no estaciones del Metro.
+    (r"\\brtp\\b",
+     r"\\b(?:rtp|autobuses?|camiones?|transporte publico|bus)\\b"),
     # Para crimen organizado, ni teatro ni graduaciones de policía o patrullas genéricas.
     (r"\b(?:grupos? criminales?|organizaciones? criminales?|crimen organizado)\b",
      r"\b(?:fiscalia|investigacion penal|crimen organizado|operativo policial|central de abasto)\b"),
