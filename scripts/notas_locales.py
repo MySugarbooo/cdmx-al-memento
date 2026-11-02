@@ -367,7 +367,7 @@ SENSITIVE_CONTEXT = re.compile(
 # Se inferiere el tema del titular antes de recurrir a la categoría RSS.
 # En el feed general muchas noticias de Metro, clima o cultura figuran como CDMX.
 SUBJECT_RULES = (
-    (r"\\b(?:grupos? criminales?|organizaciones? criminales?|crimen organizado)\\b", "Seguridad"),
+    (r"\b(?:grupos? criminales?|organizaciones? criminales?|crimen organizado)\b", "Seguridad"),
     # Las muertes violentas y condenas judiciales no son temas genéricos de CDMX.
     (r"\b(?:matan|balazos|asesinan|homicidio|condenad[oa]s?|condenan|prision)\b", "Seguridad"),
     # El RSS puede etiquetar temas recreativos o tecnológicos como Seguridad.
@@ -449,8 +449,8 @@ def _photo_category(article):
 # Si la fototeca no tiene contexto del tema, se prefiere publicar sin imagen.
 STRICT_PHOTO_TOPICS = (
     # No ilustrar noticias sobre crimen organizado con teatro u obras culturales.
-    (r"\\b(?:grupos? criminales?|organizaciones? criminales?|crimen organizado)\\b",
-     r"\\b(?:fiscalia|justicia|investigacion penal|policias?|patrullas?|seguridad|delitos?|crimen organizado|operativo policial|central de abasto)\\b"),
+    (r"\b(?:grupos? criminales?|organizaciones? criminales?|crimen organizado)\b",
+     r"\b(?:fiscalia|justicia|investigacion penal|policias?|patrullas?|seguridad|delitos?|crimen organizado|operativo policial|central de abasto)\b"),
     # Los precios de gasolina necesitan imagen de combustible o estación de servicio.
     (r"\b(?:precios? de (?:la )?gasolina|gasolineras?|combustibles?)\b",
      r"\b(?:gasolina|gasolineras?|combustibles?|estacion de servicio|surtidor|bomba de gasolina)\b"),
