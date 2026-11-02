@@ -450,7 +450,7 @@ def _photo_category(article):
 STRICT_PHOTO_TOPICS = (
     # Una nota sobre congestión en ciudades requiere tránsito vial, no trenes.
     (r"\bciudades?\b.*\b(?:mas|mayor) trafico\b",
-     r"\b(?:trafico|vehicular|autos?|automoviles?|vehiculos?|congestion|carreteras?|vialidad|avenidas?|transito)\b"),
+     r"\b(?:trafico|vehicular|autos?|automoviles?|vehiculos?|congestion|congestionamiento|embotellamiento|transito)\b"),
     # Proyectos de Tren Ligero no se ilustran con vagones de líneas del Metro.
     (r"\btren ligero\b",
      r"\b(?:tren ligero|tranvia|ferrocarril ligero)\b"),
