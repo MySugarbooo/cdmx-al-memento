@@ -1048,5 +1048,47 @@ class BoroughAndArchiveTests(unittest.TestCase):
             "Gobierno"), "Cultura")
 
 
+    def test_november_2_new_photo_mismatches_are_rejected(self):
+        # Emparejamientos observados en el índice público a las 20:22 UTC.
+        cases = (
+            ("Mirna Vargas realiza caminata de CDMX a Xalapa buscando recuperar a su hija",
+             "Jardin Escénico del Bosque de Chapultepec 01",
+             "Caminata de madres buscadoras por personas desaparecidas"),
+            ("Viajará comitiva de trabajadores del IMSS a CDMX para reforzar protesta sindical",
+             "Calle de Donceles, Centro Histórico de la Ciudad de México",
+             "Manifestación de trabajadores en protesta sindical"),
+            ("CDMX te recuerda la mochila de emergencia en medio de llamado mundial a almacenar suministros",
+             "Sala de Tesorería en Palacio Nacional - III",
+             "Mochila de emergencia y suministros de protección civil"),
+            ("EZLN señala que los tres órdenes de gobierno intentan impedir que se reúna con madres buscadoras en CDMX",
+             "Calle Francisco I. Madero con Palacio Nacional al fondo",
+             "Colectivo de madres buscadoras de personas desaparecidas"),
+            ("Trabajo en CDMX: Embajada de Alemania abrió vacantes con salarios de 21 mil pesos",
+             "Plaza de la Revolución y Monumento Revolución",
+             "Oficinas de la Embajada de Alemania"),
+            ("¡$1,500 al bimestre! Así es la Beca de Transporte para Universitarios que puedes pedir en CDMX",
+             "Avenida Francisco I. Madero - Torre Latinoamericana",
+             "Autobús de transporte para estudiantes universitarios"),
+            ("Fuga de agua afecta ocho viviendas en Gustavo A. Madero; reparan tubería dañada",
+             "Parroquia de Corpus Cristi Gustavo A Madero",
+             "Tuberías de agua potable en reparación"),
+            ("Mujer y menor de edad son asesinados a tiros en Tepito, alcaldía Cuauhtémoc",
+             "Busto de Cuauhtémoc en el zócalo de la CDMX",
+             "Investigación penal de Fiscalía CDMX"),
+            ("VIDEO | Choque en Eje Central deja vehículo destrozado en Gustavo A. Madero, CDMX",
+             "Trolebús de la Línea 2 sobre Avenida Yucatán",
+             "Tráfico vehicular en avenida de Ciudad de México"),
+        )
+        for title, wrong, relevant in cases:
+            article = {"title": title, "category": "CDMX"}
+            with self.subTest(title=title):
+                self.assertLess(news._photo_score(article, {
+                    "category": "CDMX", "topic": wrong,
+                }), 0)
+                self.assertGreaterEqual(news._photo_score(article, {
+                    "category": "CDMX", "topic": relevant,
+                }), 0)
+
+
 if __name__ == "__main__":
     unittest.main()
