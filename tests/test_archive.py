@@ -226,7 +226,7 @@ class BoroughAndArchiveTests(unittest.TestCase):
         }), 0)
         self.assertGreaterEqual(news._photo_score(article, {
             "category": "CDMX",
-            "topic": "Policía de tránsito Ciudad de México marcando alto a auto",
+            "topic": "Automóviles en tráfico vehicular de Ciudad de México",
         }), 0)
 
     def test_november_photo_context_rejects_unrelated_stock_images(self):
