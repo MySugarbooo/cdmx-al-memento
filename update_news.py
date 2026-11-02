@@ -199,6 +199,9 @@ def category_by_headline(title, feed_category):
     if (feed_category in {"Gobierno", "CDMX"}
             and re.search(r"\b(?:detienen|arrestan|capturan|aprehenden)\s+a\s+(?:\d+|un|una|dos|tres|cuatro|cinco|seis|siete|ocho|nueve|diez|varios|varias|personas|hombres|mujeres)\b", normalized)):
         return "Seguridad"
+    # La restricción vehicular sigue siendo Movilidad aunque el titular mencione festividades.
+    if re.search(r"\bhoy no circula\b", normalized):
+        return "Movilidad"
     if re.search(r"\b(?:muevete en bici|paseo dominical|bicicletas?|ciclistas?|ciclismo|ciclovias?|ecobici|cicloton)\b", normalized):
         return "Movilidad"
     # Los cierres y rutas alternas son movilidad, no operativos policiales.
