@@ -53,7 +53,7 @@ class PortalTests(unittest.TestCase):
 
     def test_empty_feed_static_home_does_not_publish_old_unverified_news(self):
         home = get("index.html")
-        hero = home.split('id="neo-home"', 1)[1].split('id="neo-right-column"', 1)[0]
+        hero = home.split('id="neo-home"', 1)[1].split('class="neo-right-column"', 1)[0]
         # La portada HTML inicial también la leen robots y navegadores sin JS.
         self.assertIn('Noticias pendientes de verificación fotográfica', hero)
         self.assertNotIn('Falta mantenimiento en caminos seguros de Iztapalapa', hero)
