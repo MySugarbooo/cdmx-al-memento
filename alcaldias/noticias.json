@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-02 22:30 UTC",
+  "updated": "2026-11-02 22:36 UTC",
   "boroughs": [
     {
       "name": "La Magdalena Contreras",
@@ -2799,6 +2799,26 @@
             "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
             "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "contexto_trafico_eje_central",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Eje_Central_CDMX.jpg/1280px-Eje_Central_CDMX.jpg",
+            "category": "Movilidad",
+            "borough": "",
+            "topic": "Tráfico vehicular en Eje Central, Ciudad de México (fotografía de 2018)",
+            "keywords": [
+              "tráfico",
+              "vehículos",
+              "automóviles",
+              "movilidad",
+              "hoy no circula",
+              "vialidad"
+            ],
+            "author": "Sergio Estrada Flores",
+            "license": "CC BY 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+            "source": "https://commons.wikimedia.org/wiki/File:Eje_Central_CDMX.jpg"
           }
         },
         {
