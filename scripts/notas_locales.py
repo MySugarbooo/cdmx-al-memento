@@ -564,6 +564,9 @@ STRICT_PHOTO_TOPICS = (
     # Un debate de salud y cuidados paliativos no es una calle cualquiera.
     (r"\b(?:derecho a morir|muerte digna)\b",
      r"\b(?:salud|hospital|medicina|cuidados paliativos|derechos|pacientes|bioetica|eutanasia)\b"),
+    # Las casetas de acceso y peaje son infraestructura carretera, no estaciones de tren.
+    (r"\b(?:casetas? de acceso|casetas? de peaje|trafico en (?:las )?casetas?)\b",
+     r"\b(?:casetas?|peaje|autopistas?|carreteras?|plazas? de cobro|cuotas?)\b"),
     # Una nota sobre congestión en ciudades requiere tránsito vial, no trenes.
     (r"\bciudades?\b.*\b(?:mas|mayor) trafico\b",
      r"\b(?:trafico|vehicular|autos?|automoviles?|vehiculos?|congestion|congestionamiento|embotellamiento|transito)\b"),
