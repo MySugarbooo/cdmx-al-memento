@@ -448,6 +448,27 @@ def _photo_category(article):
 # Resguardos editoriales: una coincidencia geográfica o de categoría no basta.
 # Si la fototeca no tiene contexto del tema, se prefiere publicar sin imagen.
 STRICT_PHOTO_TOPICS = (
+    # La agenda de movilizaciones requiere una protesta o rodada, no bomberos.
+    (r"\bagenda de (?:movilizaciones|marchas|bloqueos)\b",
+     r"\b(?:manifestaciones?|protestas?|marchas?|bloqueos?|rodadas?|motocicletas?|motociclistas?|concentraciones?)\b"),
+    # Un resumen de bloqueos y accidentes no se ilustra con edificios vacíos.
+    (r"\bbloqueos?\b.*\b(?:accidentes?|manifestaciones?|hoy)\b",
+     r"\b(?:bloqueos?|manifestaciones?|protestas?|trafico|transito|vialidad|accidentes?|vehicular)\b"),
+    # Una noticia sanitaria sobre carne descompuesta no es turismo de Xochimilco.
+    (r"\b(?:carne podrida|frigorifico|toneladas de carne)\b",
+     r"\b(?:carne|frigorifico|carnicerias?|alimentos?|mercados?|inspeccion sanitaria|refrigeracion)\b"),
+    # Megarrodada sin el sufijo "del Terror" también exige motos.
+    (r"\b(?:mega ?rodada|megarrodada)\b",
+     r"\b(?:motos?|motocicletas?|motociclistas?|rodada)\b"),
+    # Visitas a cementerios no son desfiles de Catrinas.
+    (r"\bvisitas? a (?:cementerios?|panteones?|tumbas?)\b",
+     r"\b(?:cementerios?|panteones?|tumbas?|sepulturas?|mausoleos?|ofrendas? funerarias?)\b"),
+    # La cartelera de Día de Muertos no es la cafetería de un museo.
+    (r"\b(?:actividades|conciertos?|shows?)\b.*\bdia de muertos\b|\bdia de muertos\b.*\b(?:actividades|conciertos?|shows?)\b",
+     r"\b(?:conciertos?|musica|escenario|espectaculos?|ofrendas?|altares?|desfile|catrinas?|festival|dia de muertos|celebraciones?)\b"),
+    # Un debate de salud y cuidados paliativos no es una calle cualquiera.
+    (r"\b(?:derecho a morir|muerte digna)\b",
+     r"\b(?:salud|hospital|medicina|cuidados paliativos|derechos|pacientes|bioetica|eutanasia)\b"),
     # Una nota sobre congestión en ciudades requiere tránsito vial, no trenes.
     (r"\bciudades?\b.*\b(?:mas|mayor) trafico\b",
      r"\b(?:trafico|vehicular|autos?|automoviles?|vehiculos?|congestion|congestionamiento|embotellamiento|transito)\b"),
@@ -517,7 +538,7 @@ STRICT_PHOTO_TOPICS = (
      r"\b(?:panteon|cementerio|tumbas?|sepulturas?|mausoleo)\b"),
     (r"\b(?:desfile|catrinas?)\b",
      r"\b(?:desfile|catrinas?|comparsa|procesion|festival|dia de muertos)\b"),
-    (r"\b(?:concierto|u2|bono)\b",
+    (r"\b(?:conciertos?|u2|bono)\b",
      r"\b(?:musica|concierto|escenario|bandas?|cantante|u2|guitarra|rock)\b"),
     (r"\blicencia de conducir\b",
      r"\b(?:licencia|conducir|vehiculos?|automoviles?|autos?|transito|tramite)\b"),
