@@ -106,13 +106,15 @@ def fold(value):
 def outside_cdmx_location(title):
     """Identifica solo hechos con lugar externo inequívoco en el titular."""
     words = " " + fold(title) + " "
-    # Mantener titulares que mencionen CDMX junto a otras regiones.
+    # Un titular turístico sobre fincas de Veracruz puede mencionar CDMX solo
+    # como referencia de distancia; eso no convierte el lugar en noticia local.
+    if (re.search(r"\bfincas? de cafe de veracruz\b", words)
+            and (not re.search(r"\b(?:cdmx|ciudad de mexico)\b", words)
+                 or re.search(r"\ba \d+ horas?(?: y media)? de (?:cdmx|ciudad de mexico)\b", words))):
+        return "Veracruz"
+    # Mantener titulares que sí mencionen CDMX junto a otras regiones.
     if any(" " + name + " " in words for name in ("cdmx", "ciudad de mexico")):
         return ""
-    # Una guía de fincas cafetaleras de Veracruz no es noticia local de CDMX.
-    # Conservarla en la hemeroteca, pero no promoverla a la portada capitalina.
-    if re.search(r"\bfincas? de cafe de veracruz\b", words):
-        return "Veracruz"
     if " carretera a laredo " in words and " escobedo " in words:
         return "Escobedo, Nuevo León"
     # Un accidente ocurrido en España no es una incidencia vial de CDMX,
