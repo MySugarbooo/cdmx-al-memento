@@ -575,7 +575,7 @@ def _photo_score(article, photo):
             return -10000
     # Un choque vial no ocurrió en un autódromo solo por compartir alcaldía.
     if (re.search(r"\b(?:accident\w*|choqu\w*|choc\w*|colisi\w*|volcadur\w*|derrap\w*)\b", headline)
-            and not re.search(r"\b(?:autodromo|formula 1|f1|gran premio|carrera|circuito)\b", headline)
+            and not re.search(r"\b(?:autodromo|formula 1|f1|gran premio|carrera|circuito|bottas|verstappen|hamilton|alonso|checo|antonelli)\b", headline)
             and re.search(r"\b(?:autodromo|formula 1|gran premio|pista de carreras)\b", topic)):
         return -10000
     # Una detención no se ilustra con entrega de patrullas o policía dirigiendo tráfico.
