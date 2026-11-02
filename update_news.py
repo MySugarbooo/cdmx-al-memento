@@ -583,24 +583,32 @@ def update():
     print("Fotografías verificadas para portada:", picture_stats)
     consolidate_archive(items, cutoff, updated)
     # Cobertura editorial importante de las últimas 48 h, junto al resto de titulares.
-    # Política editorial: no publicar en portada noticias sin foto verificable del hecho.
-    # Las fotografías de contexto no sustituyen al documento original del suceso.
+    # Cada noticia visible requiere imagen reutilizable, autor y licencia.
+    # Las imágenes de contexto se rotulan como representativas, nunca como prueba.
+    # Los sucesos sensibles solo admiten fotografías verificadas del hecho.
     candidates = homepage_articles(items, reviewed, now)
     visible = []
     used_photos = set()
     for article in candidates:
         photo = article.get("photo") or {}
         photo_url = str(photo.get("url") or "")
-        if (photo.get("kind") != "hecho" or photo.get("verified") is not True
-                or not all(photo.get(key) for key in
-                           ("author", "license", "licenseUrl", "source", "evidence_url"))
-                or not photo_url or photo_url in used_photos):
+        trusted_url = (photo_url.startswith("/assets/fotos/")
+                       or photo_url.startswith("https://thumb.wikimedia.org/wikipedia/commons/")
+                       or photo_url.startswith("https://upload.wikimedia.org/wikipedia/commons/"))
+        documented = (photo.get("kind") == "hecho" and photo.get("verified") is True
+                      and bool(photo.get("evidence_url")))
+        contextual = photo.get("kind") == "representativa"
+        if (not trusted_url or photo_url in used_photos or
+                not all(photo.get(key) for key in
+                        ("author", "license", "licenseUrl", "source")) or
+                not (documented or contextual) or
+                (article.get("sensitive_media") and not documented)):
             continue
         visible.append(article)
         used_photos.add(photo_url)
     write_json(DEST, {"updated": updated, "articles": visible})
-    print("Portada con foto del hecho comprobada:", len(visible),
-          "de", len(candidates), "candidatas; el resto queda sin publicar en portada.")
+    print("Portada con imágenes acreditadas y sin repetir:", len(visible),
+          "de", len(candidates), "candidatas.")
 
 
 def report_shell(title, body):
