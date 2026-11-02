@@ -365,6 +365,8 @@ SENSITIVE_CONTEXT = re.compile(
 # Se inferiere el tema del titular antes de recurrir a la categoría RSS.
 # En el feed general muchas noticias de Metro, clima o cultura figuran como CDMX.
 SUBJECT_RULES = (
+    # Las muertes violentas y condenas judiciales no son temas genéricos de CDMX.
+    (r"\b(?:matan|balazos|asesinan|homicidio|condenad[oa]s?|condenan|prision)\b", "Seguridad"),
     # El RSS puede etiquetar temas recreativos o tecnológicos como Seguridad.
     (r"\b(?:muevete en bici|paseo dominical|bicicletas?|ciclistas?|ciclismo|ciclovias?|ecobici|cicloton)\b", "Movilidad"),
     (r"\b(?:robot|robots|robotica|robotico|roboticos)\b", "CDMX"),
@@ -459,7 +461,7 @@ STRICT_PHOTO_TOPICS = (
     (r"\blicencia de conducir\b",
      r"\b(?:licencia|conducir|vehiculos?|automoviles?|autos?|transito|tramite)\b"),
     (r"\bcalidad del aire\b",
-     r"\b(?:contaminacion|aire|smog|atmosfera|emisiones|cielo|contaminantes)\b"),
+     r"\b(?:contaminacion|smog|atmosfera|emisiones|contaminantes|calidad del aire|medicion ambiental)\b"),
 )
 
 def _photo_score(article, photo):
