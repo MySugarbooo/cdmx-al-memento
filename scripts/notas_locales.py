@@ -464,6 +464,12 @@ def _photo_category(article):
 # Resguardos editoriales: una coincidencia geográfica o de categoría no basta.
 # Si la fototeca no tiene contexto del tema, se prefiere publicar sin imagen.
 STRICT_PHOTO_TOPICS = (
+    # Una ofrenda monumental no es la cafetería de un museo.
+    (r"\bofrenda monumental\b",
+     r"\b(?:ofrendas?|altares?|dia de muertos|catrinas?|zocalo|decoracion funeraria)\b"),
+    # Una agenda de eventos de Día de Muertos requiere contexto festivo real.
+    (r"\b(?:eventos?|actividades|que hacer)\b.*\bdia de muertos\b",
+     r"\b(?:dia de muertos|ofrendas?|altares?|catrinas?|festivales?|eventos?|conciertos?|desfiles?|celebraciones?)\b"),
     # No utilizar graduaciones policiales para remisiones de motocicletas.
     (r"\brodadas? del terror\b",
      r"\b(?:motos?|motocicletas?|motociclistas?|rodadas?|corralones?|deposito vehicular)\b"),

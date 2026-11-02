@@ -1137,5 +1137,25 @@ class BoroughAndArchiveTests(unittest.TestCase):
             "Seguridad"), "Cultura")
 
 
+    def test_ofrendas_and_day_of_dead_agenda_reject_unrelated_buildings(self):
+        cases = (
+            ("Ofrenda Monumental de Día de Muertos 2026 en CDMX: dónde está",
+             "Cafetería del Museo Nacional de Antropología - panoramio",
+             "Ofrenda monumental de Día de Muertos en el Zócalo"),
+            ("Qué hacer en CDMX hoy lunes 2 de noviembre: eventos gratis para la celebración de Día de Muertos",
+             "Detalles del exterior del Palacio de Bellas Artes",
+             "Desfile de Catrinas y ofrendas del Día de Muertos"),
+        )
+        for title, wrong, relevant in cases:
+            article = {"title": title, "category": "Cultura"}
+            with self.subTest(title=title):
+                self.assertLess(news._photo_score(article, {
+                    "category": "Cultura", "topic": wrong,
+                }), 0)
+                self.assertGreaterEqual(news._photo_score(article, {
+                    "category": "Cultura", "topic": relevant,
+                }), 0)
+
+
 if __name__ == "__main__":
     unittest.main()
