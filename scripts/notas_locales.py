@@ -447,6 +447,9 @@ def _photo_category(article):
 # Resguardos editoriales: una coincidencia geográfica o de categoría no basta.
 # Si la fototeca no tiene contexto del tema, se prefiere publicar sin imagen.
 STRICT_PHOTO_TOPICS = (
+    # Una ley de seguridad vial no se ilustra con el pago de pasaje en Metrobús.
+    (r"\b(?:ley de movilidad|tragedias viales)\b",
+     r"\b(?:seguridad vial|transito|vialidad|trafico|vehicular|vehiculos?|automoviles?|carreteras?|cruces? peatonales?|peatones?|ciclistas?|siniestros? viales?|accidentes? viales?|senales? de transito)\b"),
     # Un edificio turístico no representa retrasos de vuelos ni operaciones aéreas.
     (r"\b(?:aeropuerto|vuelos? demorados?|vuelos? retrasados?)\b",
      r"\b(?:aeropuerto|aeronautica|aviones?|aeronaves?|vuelos?|terminal aerea|pista de aterrizaje)\b"),
