@@ -194,6 +194,11 @@ def published_datetime(value):
 def category_by_headline(title, feed_category):
     """Corrige etiquetas RSS evidentes sin inventar ubicaciones o hechos."""
     normalized = fold(title)
+    # Una detención de personas es seguridad, aunque el RSS venga de Gobierno.
+    # Exigir "a" y una referencia humana evita confundirla con obras detenidas.
+    if (feed_category in {"Gobierno", "CDMX"}
+            and re.search(r"\b(?:detienen|arrestan|capturan|aprehenden)\s+a\s+(?:\d+|un|una|dos|tres|cuatro|cinco|seis|siete|ocho|nueve|diez|varios|varias|personas|hombres|mujeres)\b", normalized)):
+        return "Seguridad"
     if re.search(r"\b(?:muevete en bici|paseo dominical|bicicletas?|ciclistas?|ciclismo|ciclovias?|ecobici|cicloton)\b", normalized):
         return "Movilidad"
     # Los cierres y rutas alternas son movilidad, no operativos policiales.
