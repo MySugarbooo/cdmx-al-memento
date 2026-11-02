@@ -25,6 +25,14 @@ class CommunitySiteTests(unittest.TestCase):
         self.assertIn('"comunidad/"',update)
         self.assertIn('"alcaldias/" + p.name + "/"',update)
 
+    def test_article_comments_advertise_only_available_google_login(self):
+        page=read("noticias/index.html")
+        self.assertIn("Participa en esta noticia con tu cuenta de Google.",page)
+        self.assertNotIn("Google o Facebook",page)
+        self.assertIn('id="cdmx-comments-google"',page)
+        # Mantener el nodo oculto para no romper selectores de JavaScript.
+        self.assertIn('id="cdmx-comments-facebook" hidden',page)
+
     def test_cache_headers_cover_dynamic_public_page_html(self):
         headers=read("_headers")
         for path in ("/comunidad/", "/alcaldias/", "/alcaldias/*", "/noticias/", "/archivo/"):
