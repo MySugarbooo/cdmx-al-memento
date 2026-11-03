@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03 11:57 UTC",
+  "updated": "2026-11-03 19:31 UTC",
   "boroughs": [
     {
       "name": "La Magdalena Contreras",
@@ -2320,8 +2320,26 @@
     },
     {
       "name": "Coyoacán",
-      "count": 130,
+      "count": 131,
       "articles": [
+        {
+          "title": "Revelan nuevo video del atropellamiento múltiple en una tortería de Coyoacán, CDMX",
+          "description": "De acuerdo con Imagen Televisión, el titular publicado es: «Revelan nuevo video del atropellamiento múltiple en una tortería de Coyoacán, CDMX». De acuerdo con Imagen Televisión, se informa de un hecho vial relacionado con personas o vehículos involucrados en Coyoacán. El encabezado no permite determinar por sí solo si hubo personas lesionadas o fallecidas. Se requiere consultar la nota original para conocer el punto exacto, las circunstancias y los reportes oficiales, sin atribuir responsabilidades sin pruebas.",
+          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQb21paUwzUy0xc1BjQTZTNWhQZi00VEZ4NnZuNldBZGFzU1hKTHZyNFJKUkhpc0x5ZlNESnY4a2VyREY3aWFhQW1sejM1c2RqQjFacGpiU3BfTzFIOG1Mc1FfWENaVVVhSHhLRWNYXzk5cmRxS3M3V1VpbjlCZUtvdldqakxMeTVMdWkxZ3ROQ2ZZRXNFVlpkRndUc1g2cU9aQmFwOFZUSQ?oc=5",
+          "source": "Imagen Televisión",
+          "date": "2026-11-03",
+          "published_at": "2026-11-03T06:03:02Z",
+          "category": "Movilidad",
+          "borough": "Coyoacán",
+          "location": "Coyoacán (mencionada en el titular)",
+          "local_url": "/noticias/?id=26b115e4110f0e76165d&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con Imagen Televisión, el titular publicado es: «Revelan nuevo video del atropellamiento múltiple en una tortería de Coyoacán, CDMX». De acuerdo con Imagen Televisión, se informa de un hecho vial relacionado con personas o vehículos involucrados en Coyoacán. El encabezado no permite determinar por sí solo si hubo personas lesionadas o fallecidas. Se requiere consultar la nota original para conocer el punto exacto, las circunstancias y los reportes oficiales, sin atribuir responsabilidades sin pruebas.",
+            "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
+            "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          }
+        },
         {
           "title": "Clima en Coyoacán: martes 3 de noviembre con cielo claro y 29°C de máxima",
           "description": "De acuerdo con El Heraldo de México, el titular publicado es: «Clima en Coyoacán: martes 3 de noviembre con cielo claro y 29°C de máxima». El pronóstico recogido por El Heraldo de México se refiere a condiciones meteorológicas en Coyoacán. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
@@ -2488,6 +2506,21 @@
             "context": "La actividad cultural abre oportunidades de encuentro, aprendizaje y disfrute para habitantes y visitantes.",
             "pending": "Los accesos, boletos, sedes, cupos y horarios deben consultarse con la institución organizadora. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "commons_29696184",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Ofrenda_in_Ciudad_Universitaria%2C_Mexico_DF.jpg/960px-Ofrenda_in_Ciudad_Universitaria%2C_Mexico_DF.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "category": "Cultura",
+            "borough": "",
+            "topic": "Ofrenda in Ciudad Universitaria, Mexico DF",
+            "keywords": [
+              "Ciudad Universitaria UNAM Ciudad de México"
+            ],
+            "author": "User:Vhlafuente",
+            "license": "CC BY 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Ofrenda_in_Ciudad_Universitaria,_Mexico_DF.jpg"
           }
         },
         {
@@ -3002,36 +3035,6 @@
             "license": "CC BY-SA 4.0",
             "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
             "source": "https://commons.wikimedia.org/wiki/File:Boleto_cine_Esperanza_Coyoac%C3%A1n_Ciudad_de_M%C3%A9xico_6_de_mayo_de_1928_02.jpg"
-          }
-        },
-        {
-          "title": "Jardín Floral de los Viveros de Coyoacán: el rincón de la CDMX donde las plantas son las protagonistas",
-          "description": "De acuerdo con W Radio México, el titular publicado es: «Jardín Floral de los Viveros de Coyoacán: el rincón de la CDMX donde las plantas son las protagonistas». La información publicada por W Radio México aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNWnA4bDNNOUYzLW5MODNLRDJCUVgtZzlSSkcyM1o1ODJvTkM3UnRTRHU1Tjc1LVBkSGZ3cGZKMU1XcXdkYWg3NWdDZVRuSVpuWUphbEg0ZXhuV1RPSl9acUQzYlA1d25DUjdwSEZ1VHFjRUdRdzJON2I0b19FTDNXLWRRMm04VE0ybFpEUk9KMERxN2pmQnJEVTc3dEhmNVpueWFydUsxVzdEenNlNzljWmZlN05KTUtUN3BYUUs2dElwM0xmRTU3NkFGeE1fa2pY?oc=5",
-          "source": "W Radio México",
-          "date": "2026-10-30",
-          "published_at": "2026-10-30T22:21:26Z",
-          "category": "CDMX",
-          "borough": "Coyoacán",
-          "location": "Coyoacán (mencionada en el titular)",
-          "local_url": "/noticias/?id=720693eba4d2eef427c4&mes=2026-10",
-          "brief": {
-            "lead": "De acuerdo con W Radio México, el titular publicado es: «Jardín Floral de los Viveros de Coyoacán: el rincón de la CDMX donde las plantas son las protagonistas». La información publicada por W Radio México aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "alcaldia_coyoacan",
-            "kind": "representativa",
-            "url": "/assets/alcaldias/coyoacan.jpg",
-            "category": "CDMX",
-            "borough": "Coyoacán",
-            "topic": "Jardín Centenario de Coyoacán",
-            "author": "AlejandroLinaresGarcia",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:JardinCentenarioCoyoacan.JPG"
           }
         }
       ]
@@ -3759,7 +3762,7 @@
     },
     {
       "name": "Cuauhtémoc",
-      "count": 56,
+      "count": 57,
       "articles": [
         {
           "title": "Clima hoy en Alcaldía Cuauhtémoc: martes 3 de noviembre con cielo claro y ambiente templado",
@@ -3774,6 +3777,24 @@
           "local_url": "/noticias/?id=86c084263bc6fd908d37&mes=2026-11",
           "brief": {
             "lead": "De acuerdo con El Heraldo de México, el titular publicado es: «Clima hoy en Alcaldía Cuauhtémoc: martes 3 de noviembre con cielo claro y ambiente templado». El pronóstico recogido por El Heraldo de México se refiere a condiciones meteorológicas en Cuauhtémoc. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          }
+        },
+        {
+          "title": "Rehabilitan la fuente Iztaccíhuatl en la alcaldía Cuauhtémoc",
+          "description": "De acuerdo con Enfoque Noticias, el titular publicado es: «Rehabilitan la fuente Iztaccíhuatl en la alcaldía Cuauhtémoc». La información publicada por Enfoque Noticias aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOdWliR2wyVk93clFOMENLSVJYdGdlaXRSWWpCcGNpc3MyU2NvSE5DOW5TWEZFOUZBaFJGc1RFWjBySXFZZVgzcEJOVDlreDJMUmRXckJrWjBTdEdfU3VxeWhEOUgzQ1o2Y0gxMVV2eDRIZnlZUDVVOHZlRlU1aXowU0l4Uk4xMjZHMUlLVHZRS181S2E4UHdhYXFzblpEc09NeXc?oc=5",
+          "source": "Enfoque Noticias",
+          "date": "2026-11-02",
+          "published_at": "2026-11-02T23:37:00Z",
+          "category": "CDMX",
+          "borough": "Cuauhtémoc",
+          "location": "Cuauhtémoc (mencionada en el titular)",
+          "local_url": "/noticias/?id=f42f63d04bace2d0cdec&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con Enfoque Noticias, el titular publicado es: «Rehabilitan la fuente Iztaccíhuatl en la alcaldía Cuauhtémoc». La información publicada por Enfoque Noticias aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
@@ -4367,39 +4388,6 @@
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
-        },
-        {
-          "title": "Retiran 62 toneladas de basura en Alcaldía Cuauhtémoc",
-          "description": "De acuerdo con CDMX Magacín, el titular publicado es: «Retiran 62 toneladas de basura en Alcaldía Cuauhtémoc». La información publicada por CDMX Magacín aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBqMk4wdnNNd3o5VWpURUZtSmZYcE1SWmhFR3lkMzZxa1dXcU55QUdZTEVSakZiWEVGTEtUcjhYb2ZJMk5ObHBkaENCRUxLODJsNEJDNldfSmtpOVFuZWdIN2RGOWp2NDdIV0pHZURCLVFoZ1JGTEVtYUw2NTA?oc=5",
-          "source": "CDMX Magacín",
-          "date": "2026-10-22",
-          "published_at": "2026-10-22T22:33:10Z",
-          "category": "CDMX",
-          "borough": "Cuauhtémoc",
-          "location": "Cuauhtémoc (mencionada en el titular)",
-          "local_url": "/noticias/?id=1758443868a74f899f04&mes=2026-10",
-          "brief": {
-            "lead": "De acuerdo con CDMX Magacín, el titular publicado es: «Retiran 62 toneladas de basura en Alcaldía Cuauhtémoc». La información publicada por CDMX Magacín aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "commons_154003242",
-            "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Rescate_de_Unidades_Habitacionales_Alcald%C3%ADa_Cuauht%C3%A9moc_02.jpg/960px-Rescate_de_Unidades_Habitacionales_Alcald%C3%ADa_Cuauht%C3%A9moc_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "category": "Alcaldías",
-            "borough": "",
-            "topic": "Rescate de Unidades Habitacionales Alcaldía Cuauhtémoc 02",
-            "keywords": [
-              "Cuauhtémoc alcaldía Ciudad de México"
-            ],
-            "author": "Gobierno de la Ciudad de México",
-            "license": "CC BY 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Rescate_de_Unidades_Habitacionales_Alcald%C3%ADa_Cuauht%C3%A9moc_02.jpg"
           }
         }
       ]
@@ -5702,8 +5690,44 @@
     },
     {
       "name": "Iztapalapa",
-      "count": 178,
+      "count": 180,
       "articles": [
+        {
+          "title": "Motociclista es asesinado a balazos por sujetos en auto en Iztapalapa; dispararon al menos 6 veces",
+          "description": "De acuerdo con Telediario, el titular publicado es: «Motociclista es asesinado a balazos por sujetos en auto en Iztapalapa; dispararon al menos 6 veces». La información publicada por Telediario aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOc3dEVXhLVWFoTW9ub3IxRmVJTUhoYkVZa3FjQ3gzdnpwRWROenBoMjdkRk9FM3M5VURIZi01SEFJVUhEVFZMOExhMG1nU1hjM0lfcmlTRVVCOUxZeS1RUVluZFF2NmZvVkc0WmdYSW9KMzZDQVBMU251Y3hYbWI5Z01kZFNSN1dKWHN0OE1vcFXSAZABQVVfeXFMTnN3RFV4S1VhaE1vbm9yMUZlSU1IaGJFWWtxY0N4M3Z6cEVkTnpwaDI3ZEZPRTNzOVVESGYtNUhBSVVIRFRWTDhMYTBtZ1NYYzNJX3JpU0VVQjlMWXktUVFZbmRRdjZmb1ZHNFpnWElvSjM2Q0FQTFNudWN4WG1iOWdNZGRTUjdXSlhzdDhNb3BV?oc=5",
+          "source": "Telediario",
+          "date": "2026-11-03",
+          "published_at": "2026-11-03T13:46:00Z",
+          "category": "Seguridad",
+          "borough": "Iztapalapa",
+          "location": "Iztapalapa (mencionada en el titular)",
+          "local_url": "/noticias/?id=2194b633b52bbc856a2c&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con Telediario, el titular publicado es: «Motociclista es asesinado a balazos por sujetos en auto en Iztapalapa; dispararon al menos 6 veces». La información publicada por Telediario aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          }
+        },
+        {
+          "title": "Noche violenta en CDMX: Matan a balazos a hombre en calles de Iztapalapa; recibió varios disparo| Mientras Dor",
+          "description": "De acuerdo con TV Azteca, el titular publicado es: «Noche violenta en CDMX: Matan a balazos a hombre en calles de Iztapalapa; recibió varios disparo| Mientras Dor». La información publicada por TV Azteca aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPMzZRMEhqSTlUblFpN1lfMURMMVFqVHhNUXRRT0ZFY0hWZXVON2t1X2lDTU40UFRJWFQ2Wkw1YTNiQWk5ZnpqMWJCa1JWREtmWXlxcXhpQWduVm5hbnA2WHZLTGxBUEs1Umc5ZEpZTDVKcm45ekRtVVNYMTJWTDB6TnUzMDVsSWFwWHFvTzdYS01iU2lnUUtSeE83QXV4RlUzMzM2dXNNTER5aUg3U2xuSHE0YjhfbFJhZ2h2ZVVvTG0xakJoOXJfMTlR0gHXAUFVX3lxTFBRQ0Q5OVNFY2RqREIzeEtxeHRPV3pNU1VFX2dOemRrd3ljSTNYREFHbXFkakRjaFVMcG5pT3RsZ0FOdWlpRUg2SGhzTTF5d2FUdEl1emdSeHpXNHpxaDhBeGNJY1o4Zk9seDlmOEJoOXVacnlWMWF2UUZiVTV4TTZMa2tzdUdTNUUzWWJEMnN5Nm1heE5iU1ltYVpUSmdwTXB3cWhCbnR0YnV4cm4xZTZSRW9SRDU4cVpGZmNLVWtDQXh6ckJUalFobzROT2FRVGFTQU9WSXBR?oc=5",
+          "source": "TV Azteca",
+          "date": "2026-11-03",
+          "published_at": "2026-11-03T12:55:29Z",
+          "category": "Seguridad",
+          "borough": "Iztapalapa",
+          "location": "Iztapalapa (mencionada en el titular)",
+          "local_url": "/noticias/?id=c575076fb5fb4da89a5f&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con TV Azteca, el titular publicado es: «Noche violenta en CDMX: Matan a balazos a hombre en calles de Iztapalapa; recibió varios disparo| Mientras Dor». La información publicada por TV Azteca aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          }
+        },
         {
           "title": "¡Se sentían Tony Montana! Caen 3 narcomenudistas de 'Los Tanzanios' en Iztapalapa con altar santero | VIDEO",
           "description": "De acuerdo con Telediario, el titular publicado es: «¡Se sentían Tony Montana! Caen 3 narcomenudistas de 'Los Tanzanios' en Iztapalapa con altar santero | VIDEO». La información publicada por Telediario aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -6256,54 +6280,6 @@
             "license": "CC BY 2.0",
             "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
             "source": "https://commons.wikimedia.org/wiki/File:MX_MM_MUSEO_CERRO_DE_LA_ESTRELLA_%2849522225751%29.jpg"
-          }
-        },
-        {
-          "title": "Corte rechaza caso de adulto mayor de 83 años que quería evitar ser desalojado en Iztapalapa; dejó de pagar renta",
-          "description": "De acuerdo con El Universal, el titular publicado es: «Corte rechaza caso de adulto mayor de 83 años que quería evitar ser desalojado en Iztapalapa; dejó de pagar renta». La información publicada por El Universal aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOREdSbllZNndQb0FiYlFJSHNBeEZEd0xQSjlHdU9ic25FdHZfdFZjT1VMQ0k0cV9oQmhlbTRLMkg3Yml4RGxlbUhBRHp5eTdwYjYtODMtWFdkN1dDV216UFhnVzYwZDhpRThVUlpDVEc0enBuM25fSEk5NFVaUnVFR0dHeFU0ZzJwV1otRTFfU2QxUzlMMGFaVTBOOS1ESTRDZExKNmZIQllaVFo1UkVmNUZZQlRFSzRMRnBQWUU0ME9uOFYwZ0NISElycnRyanJwR09BRnY1ck1wSDdFT2NqQkFETU5Qdw?oc=5",
-          "source": "El Universal",
-          "date": "2026-10-29",
-          "published_at": "2026-10-30T03:53:53Z",
-          "category": "CDMX",
-          "borough": "Iztapalapa",
-          "location": "Iztapalapa (mencionada en el titular)",
-          "local_url": "/noticias/?id=3dfa5451499048e33a4b&mes=2026-10",
-          "brief": {
-            "lead": "De acuerdo con El Universal, el titular publicado es: «Corte rechaza caso de adulto mayor de 83 años que quería evitar ser desalojado en Iztapalapa; dejó de pagar renta». La información publicada por El Universal aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "alcaldia_iztapalapa",
-            "kind": "representativa",
-            "url": "/assets/alcaldias/iztapalapa.jpg",
-            "category": "CDMX",
-            "borough": "Iztapalapa",
-            "topic": "Vista de Iztapalapa desde el Cerro de la Estrella",
-            "author": "Secretaría de Cultura Ciudad de México from México",
-            "license": "CC BY 2.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-            "source": "https://commons.wikimedia.org/wiki/File:MX_MM_MUSEO_CERRO_DE_LA_ESTRELLA_%2849522225751%29.jpg"
-          }
-        },
-        {
-          "title": "Detienen a tres hombres y aseguran 178 empaques de droga en Iztapalapa",
-          "description": "De acuerdo con Sociedad Noticias, el titular publicado es: «Detienen a tres hombres y aseguran 178 empaques de droga en Iztapalapa». Una nota de Sociedad Noticias comunica un caso relacionado con una detención o una presunta conducta delictiva en Iztapalapa. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
-          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxONjhxbDRzRVNaaEZnX1RUVmw5dHk3a0lsbEszUS1tb2pHdFByQndOTURhX2dEZThnMWhuX3dVQ1ZyQUQwT2hfQ3VTVEF3d01uNlNZMW51VDVnemRKYUNiUnJQajFoS0FWQWxkX25IYkdtczdrdVRMeWFiNEdpaFI2RXFPYXItd0dINmdwZlBKclZYZlBtTWIzVmFrQWtfU190bmYyM3BJMDV2bFdXN3RRS3R3?oc=5",
-          "source": "Sociedad Noticias",
-          "date": "2026-10-29",
-          "published_at": "2026-10-30T02:30:00Z",
-          "category": "Seguridad",
-          "borough": "Iztapalapa",
-          "location": "Iztapalapa (mencionada en el titular)",
-          "local_url": "/noticias/?id=ef2782ece4492f83faa4&mes=2026-10",
-          "brief": {
-            "lead": "De acuerdo con Sociedad Noticias, el titular publicado es: «Detienen a tres hombres y aseguran 178 empaques de droga en Iztapalapa». Una nota de Sociedad Noticias comunica un caso relacionado con una detención o una presunta conducta delictiva en Iztapalapa. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
-            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
-            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           }
         }
       ]
@@ -9347,6 +9323,21 @@
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "commons_80618455",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Coloridas_trajineras_en_Xochimilco%2C_Ciudad_de_M%C3%A9xico.jpg/960px-Coloridas_trajineras_en_Xochimilco%2C_Ciudad_de_M%C3%A9xico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "category": "CDMX",
+            "borough": "",
+            "topic": "Coloridas trajineras en Xochimilco, Ciudad de México",
+            "keywords": [
+              "CDMX"
+            ],
+            "author": "Juan Carlos Fonseca Mata",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Coloridas_trajineras_en_Xochimilco,_Ciudad_de_M%C3%A9xico.jpg"
           }
         },
         {
@@ -9519,6 +9510,21 @@
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "commons_90725462",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/Trajinera_de_Xochimilco_-_Ciudad_de_M%C3%A9xico.jpg/960px-Trajinera_de_Xochimilco_-_Ciudad_de_M%C3%A9xico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "category": "CDMX",
+            "borough": "",
+            "topic": "Trajinera de Xochimilco - Ciudad de México",
+            "keywords": [
+              "CDMX"
+            ],
+            "author": "Juan Carlos Fonseca Mata",
+            "license": "CC BY-SA 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Trajinera_de_Xochimilco_-_Ciudad_de_M%C3%A9xico.jpg"
           }
         },
         {
