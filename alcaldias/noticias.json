@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-04 07:31 UTC",
+  "updated": "2026-11-04 16:21 UTC",
   "boroughs": [
     {
       "name": "La Magdalena Contreras",
@@ -602,6 +602,21 @@
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "commons_51892797",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Casa_en_la_Avenida_de_%C3%81lvaro_Obreg%C3%B3n%2C_Ciudad_de_M%C3%A9xico.jpg/960px-Casa_en_la_Avenida_de_%C3%81lvaro_Obreg%C3%B3n%2C_Ciudad_de_M%C3%A9xico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "category": "Alcaldías",
+            "borough": "",
+            "topic": "Casa en la Avenida de Álvaro Obregón, Ciudad de México",
+            "keywords": [
+              "Álvaro Obregón Ciudad de México"
+            ],
+            "author": "LEG95",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Casa_en_la_Avenida_de_%C3%81lvaro_Obreg%C3%B3n,_Ciudad_de_M%C3%A9xico.jpg"
           }
         },
         {
@@ -1179,7 +1194,7 @@
     },
     {
       "name": "Azcapotzalco",
-      "count": 95,
+      "count": 96,
       "articles": [
         {
           "title": "Pronóstico del clima en Azcapotzalco este miércoles 4 de noviembre: día templado con nubes",
@@ -1212,6 +1227,36 @@
           "local_url": "/noticias/?id=2779762be0ff7dacbf19&mes=2026-11",
           "brief": {
             "lead": "De acuerdo con RUBRUM, el titular publicado es: «Intención de voto en la elección de alcalde en Azcapotzalco, CDMX – Noviembre 2026». La información publicada por RUBRUM aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_azcapotzalco",
+            "kind": "representativa",
+            "url": "/assets/alcaldias/azcapotzalco.jpg",
+            "category": "CDMX",
+            "borough": "Azcapotzalco",
+            "topic": "Parroquia de Santa Catarina, Azcapotzalco",
+            "author": "Ivan alcantara",
+            "license": "CC BY-SA 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:PARROQUIA_DE_SANTA_CATARINA_%28AZCAPOTZALCO%29.jpg"
+          }
+        },
+        {
+          "title": "Ataque de motosicarios en Azcapotzalco termina con un hombre muerto ante la mirada de familias que pedían dulces",
+          "description": "De acuerdo con PostaMx, el titular publicado es: «Ataque de motosicarios en Azcapotzalco termina con un hombre muerto ante la mirada de familias que pedían dulces». La información publicada por PostaMx aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOWjhkU1VkczBUekRMa3BTQmJVS25BdGZsTVFHY1M1UzhvTkpydFptdnYxRkdGd3hfVVRQVTBRbW9LckJTZlQybzBxcm1FY1oxTWhiRW9QejNfQlFsYW1zc0Zsd0lZZ1RfY2lfUWRVdjBWUkl3MnFpRFV4TDlLOXJJY3ZyQ1hPNjREdnpiTmdUUmtPaGdHb1NRZjg0bGxmaENZYmZ2MlhSOHlmWDdGT3lkbnhUMUc4MVlEeTl0ckZDWENJOHMwbjh6TmhUTFBPTkhuU001dENvdWNwNFR4eVVjejRucUtkM3VTdW1PdtIB7AFBVV95cUxOWjhkU1VkczBUekRMa3BTQmJVS25BdGZsTVFHY1M1UzhvTkpydFptdnYxRkdGd3hfVVRQVTBRbW9LckJTZlQybzBxcm1FY1oxTWhiRW9QejNfQlFsYW1zc0Zsd0lZZ1RfY2lfUWRVdjBWUkl3MnFpRFV4TDlLOXJJY3ZyQ1hPNjREdnpiTmdUUmtPaGdHb1NRZjg0bGxmaENZYmZ2MlhSOHlmWDdGT3lkbnhUMUc4MVlEeTl0ckZDWENJOHMwbjh6TmhUTFBPTkhuU001dENvdWNwNFR4eVVjejRucUtkM3VTdW1Pdg?oc=5",
+          "source": "PostaMx",
+          "date": "2026-11-03",
+          "published_at": "2026-11-03T18:17:00Z",
+          "category": "CDMX",
+          "borough": "Azcapotzalco",
+          "location": "Azcapotzalco (mencionada en el titular)",
+          "local_url": "/noticias/?id=4d9d66a5bdc23d291b6a&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con PostaMx, el titular publicado es: «Ataque de motosicarios en Azcapotzalco termina con un hombre muerto ante la mirada de familias que pedían dulces». La información publicada por PostaMx aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
@@ -1679,34 +1724,6 @@
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
-        },
-        {
-          "title": "Cae árbol de 15 metros en unidad habitacional de Azcapotzalco",
-          "description": "De acuerdo con Telediario, el titular publicado es: «Cae árbol de 15 metros en unidad habitacional de Azcapotzalco». La información publicada por Telediario aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNWXBNTTZqbUdvVlpZckluWkk5UmRldlhRa0pBelNLSG5DNEd6cFFjbklUOFl1UC1QV2hkbDZyemFOOUo0ak9TVkJBUUJsYWxweHExTlh2NmJ4M2FfendOb2dJMjI2ckFVSDY2MGZ4UnRWMVBqN2wtRlFSc0pvMVQ1ODFJcUEwNXAxblJRYVZvbzJLdEw5MU9PV0ZfX2psd9IBngFBVV95cUxNdHlpUTNYaUhSeHc4YU53al80NTlVdS1zNXhMVWdKb09VbmhwVVZRQTNmNEw3SU55RTlkRWZyczV5TVJUQUFqdGJ0TUZmRU55bUZqTGs0SzdVOWdFaVE4MnZZSDZ0clF4NmxHcmVHSTRYWWRibnJFUkQxZ0k1eS1NQnkya1hSNUJGQnpEXzNnUWJOU3hBcUtoUGNrYzMxdw?oc=5",
-          "source": "Telediario",
-          "date": "2026-10-28",
-          "published_at": "2026-10-28T22:32:34Z",
-          "category": "CDMX",
-          "borough": "Azcapotzalco",
-          "location": "Azcapotzalco (mencionada en el titular)",
-          "local_url": "/noticias/?id=3d99673c9c32768f4acb&mes=2026-10",
-          "brief": {
-            "lead": "De acuerdo con Telediario, el titular publicado es: «Cae árbol de 15 metros en unidad habitacional de Azcapotzalco». La información publicada por Telediario aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "alcaldia_azcapotzalco",
-            "url": "/assets/alcaldias/azcapotzalco.jpg",
-            "category": "CDMX",
-            "borough": "Azcapotzalco",
-            "topic": "Parroquia de Santa Catarina, Azcapotzalco",
-            "author": "Ivan alcantara",
-            "license": "CC BY-SA 3.0",
-            "source": "https://commons.wikimedia.org/wiki/File:PARROQUIA_DE_SANTA_CATARINA_%28AZCAPOTZALCO%29.jpg"
           }
         }
       ]
@@ -3777,6 +3794,21 @@
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "commons_154003242",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Rescate_de_Unidades_Habitacionales_Alcald%C3%ADa_Cuauht%C3%A9moc_02.jpg/960px-Rescate_de_Unidades_Habitacionales_Alcald%C3%ADa_Cuauht%C3%A9moc_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "category": "Alcaldías",
+            "borough": "",
+            "topic": "Rescate de Unidades Habitacionales Alcaldía Cuauhtémoc 02",
+            "keywords": [
+              "Cuauhtémoc alcaldía Ciudad de México"
+            ],
+            "author": "Gobierno de la Ciudad de México",
+            "license": "CC BY 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Rescate_de_Unidades_Habitacionales_Alcald%C3%ADa_Cuauht%C3%A9moc_02.jpg"
           }
         },
         {
@@ -3813,6 +3845,21 @@
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "commons_114047310",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Busto_de_Cuauht%C3%A9moc_en_el_z%C3%B3calo_de_la_CDMX_01.jpg/960px-Busto_de_Cuauht%C3%A9moc_en_el_z%C3%B3calo_de_la_CDMX_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "category": "CDMX",
+            "borough": "",
+            "topic": "Busto de Cuauhtémoc en el zócalo de la CDMX 01",
+            "keywords": [
+              "Zócalo Ciudad de México"
+            ],
+            "author": "Luis Alvaz",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Busto_de_Cuauht%C3%A9moc_en_el_z%C3%B3calo_de_la_CDMX_01.jpg"
           }
         },
         {
@@ -4358,7 +4405,7 @@
     },
     {
       "name": "Gustavo A. Madero",
-      "count": 41,
+      "count": 42,
       "articles": [
         {
           "title": "Pronóstico del clima en Gustavo A. Madero para este miércoles 4 de noviembre: día templado con nubes",
@@ -4373,6 +4420,24 @@
           "local_url": "/noticias/?id=d0433a6f0fd1ff6a0ed0&mes=2026-11",
           "brief": {
             "lead": "De acuerdo con El Heraldo de México, el titular publicado es: «Pronóstico del clima en Gustavo A. Madero para este miércoles 4 de noviembre: día templado con nubes». El pronóstico recogido por El Heraldo de México se refiere a condiciones meteorológicas en Gustavo A. Madero. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          }
+        },
+        {
+          "title": "Vinculan a proceso a hombre acusado de violación agravada contra una exempleada en la alcaldía Gustavo A. Madero",
+          "description": "De acuerdo con Libertad Oaxaca, el titular publicado es: «Vinculan a proceso a hombre acusado de violación agravada contra una exempleada en la alcaldía Gustavo A. Madero». La información publicada por Libertad Oaxaca aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxORkRRSFA3WFQtWklVd0lnd1A3SUxkNFVOMnBMaGdJZXU4dUdSa1MzUXNuLVpYbkF0ZlpkOVBUSHpmZGpTYzdOTE1qNDQyaFVldGl0ay1ZbEtONnlFMkM2TW12TjdsYWxpd1J2YkRHbXQ0dTdyU0FmZ3J1UUVfUi1WZEpwaUFJUklycTBiRWpPOHVaUEN0cVgtUUEzem82QmZIZ2s2V2RWZG9RdG1PRnRIamZ1dVljRlR4MUFUdjQtQlZUcGUtMWplTkZUazg0eE4xQVhKQ3d1VW0?oc=5",
+          "source": "Libertad Oaxaca",
+          "date": "2026-11-03",
+          "published_at": "2026-11-04T04:58:56Z",
+          "category": "CDMX",
+          "borough": "Gustavo A. Madero",
+          "location": "Gustavo A. Madero (mencionada en el titular)",
+          "local_url": "/noticias/?id=59ca67327a72729120ce&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con Libertad Oaxaca, el titular publicado es: «Vinculan a proceso a hombre acusado de violación agravada contra una exempleada en la alcaldía Gustavo A. Madero». La información publicada por Libertad Oaxaca aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
@@ -4931,41 +4996,43 @@
             "license": "CC BY-SA 4.0",
             "source": "https://commons.wikimedia.org/wiki/File:Rio_de_los_Dinamos_en_CDMX.jpg"
           }
-        },
-        {
-          "title": "Clara Brugada inaugura Utopía La Soberana en Gustavo A. Madero",
-          "description": "De acuerdo con Ahora Tabasco Noticias, el titular publicado es: «Clara Brugada inaugura Utopía La Soberana en Gustavo A. Madero». La información publicada por Ahora Tabasco Noticias aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOSGhSbk9nWTk1U01yZ2hwWlMyTVdKRGZHTXVzSlJSdl9KeENmWkRxdlFzYmZrNG5oYUI5TE1POWo1a3E1cml4ZFJiem02OWpVV1pKV0dDWmtqS3N1anBlUmF4ckpjbThVXzVKUlMzYnJVMW1HRFNiVng3dERQbERqTHVtZ2c0bmFHeHd5TkdUUGk?oc=5",
-          "source": "Ahora Tabasco Noticias",
-          "date": "2026-10-25",
-          "published_at": "2026-10-25T22:11:13Z",
-          "category": "CDMX",
-          "borough": "Gustavo A. Madero",
-          "location": "Gustavo A. Madero (mencionada en el titular)",
-          "local_url": "/noticias/?id=ab16b39f5fb8270b3b9a&mes=2026-10",
-          "brief": {
-            "lead": "De acuerdo con Ahora Tabasco Noticias, el titular publicado es: «Clara Brugada inaugura Utopía La Soberana en Gustavo A. Madero». La información publicada por Ahora Tabasco Noticias aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "alcaldia_alvaro-obregon",
-            "url": "/assets/alcaldias/alvaro-obregon.jpg",
-            "category": "CDMX",
-            "borough": "Álvaro Obregón",
-            "topic": "Plaza del Carmen, barrio de San Ángel",
-            "author": "Reginaesc",
-            "license": "CC BY-SA 4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Plaza_del_Carmen%2C_Regina_Escandon%2C_23.sep.15._San_%C3%81ngel%2C_Del._%C3%81lvaro_Obreg%C3%B3n_01000_Ciudad_de_M%C3%A9xico.JPG"
-          }
         }
       ]
     },
     {
       "name": "Iztacalco",
-      "count": 100,
+      "count": 101,
       "articles": [
+        {
+          "title": "Hallan persona sin vida al interior de un inmueble en Iztacalco; el olor a fétido era intenso | Mientras Dormí",
+          "description": "De acuerdo con TV Azteca, el titular publicado es: «Hallan persona sin vida al interior de un inmueble en Iztacalco; el olor a fétido era intenso | Mientras Dormí». La información publicada por TV Azteca aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQNkpSTzR3dWhxaXZPcS0xWUlSV0prWWpvblJTeXJVYjFBMkZvLWRqX3BDbnJzaFJSQlpNLTNNWWlyQ1lhMzBWZTg5cWU4UnJCRDd1V2FVRE1LanNPN1NBVG5YZnlEaHBQVV9LSjFIalBTbnppdUlNOUF4bnY5blRpNERVMjQ3TVF2NFNTVDE1a0IxMlVhVWc5ZC1JMnLSAaoBQVVfeXFMUFhKUXlXalhQQ19xX1YyQlR1WHFqUHJ3em5lc0h2THc4bjZrUDB6WFZ2VzkteFNFUUVybnM2Yk9mSnB3UVJUT19KMkZLaVYxMUQ5UTNmOHZhSG5XU2Yzd3N0ajdCS1BFaXByclBUbktqQkpIM3FsbVNyOUdrVm5BbXNXYXFWcERoVDUyS2FGdzFRVXVBNmNmRS1pTTU3Vk1rREJ1ZHNSWF9BUFE?oc=5",
+          "source": "TV Azteca",
+          "date": "2026-11-04",
+          "published_at": "2026-11-04T12:55:18Z",
+          "category": "CDMX",
+          "borough": "Iztacalco",
+          "location": "Iztacalco (mencionada en el titular)",
+          "local_url": "/noticias/?id=eb9caf603018be559390&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con TV Azteca, el titular publicado es: «Hallan persona sin vida al interior de un inmueble en Iztacalco; el olor a fétido era intenso | Mientras Dormí». La información publicada por TV Azteca aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_iztacalco",
+            "kind": "representativa",
+            "url": "/assets/alcaldias/iztacalco.jpg",
+            "category": "CDMX",
+            "borough": "Iztacalco",
+            "topic": "Iglesia de San Matías en el antiguo pueblo de Iztacalco",
+            "author": "AlejandroLinaresGarcia",
+            "license": "CC BY-SA 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:SanMatiasChurchIztacalco02.jpg"
+          }
+        },
         {
           "title": "VIDEO | La morgue de las muñecas en Iztacalco: la trágica historia detrás de cada juguete",
           "description": "De acuerdo con PostaMx, el titular publicado es: «VIDEO | La morgue de las muñecas en Iztacalco: la trágica historia detrás de cada juguete». La información publicada por PostaMx aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -5608,42 +5675,12 @@
             "license": "CC BY-SA 3.0",
             "source": "https://commons.wikimedia.org/wiki/File:SanMatiasChurchIztacalco02.jpg"
           }
-        },
-        {
-          "title": "Con más de 4 mil personas, Lourdes Paz impulsa el turismo cultural en Iztacalco",
-          "description": "De acuerdo con Excélsior, el titular publicado es: «Con más de 4 mil personas, Lourdes Paz impulsa el turismo cultural en Iztacalco». La información publicada por Excélsior aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPakRxdjFZQVJXVG1YZ2pPMG5mSkJtTF9VaVYzOGNKcG5Dc0pkeHBpbkFENG5JWlhXcjZFdEFXck8taDJVel9WRGx2T3ViTFNVZzVfU2ZKWUxURUMtQkhSTFpldVUyNzFkOEdTTEZFWlhkZmFXMElfYThFXzRwZXhFRk1EYkNmU0diWDlBdklHVi11ZVR2T2pmUmlkbmNLcUJNQXpiajNRUGtwNTRvRVhTal96Z09Qd9IBuwFBVV95cUxPeGRaVHV5SEJxcGQ4LUR1a2RES1cwbEo2NGRlbW9YVFpIemNHZTA0Yjk2bFFfZU8zWWNZTURYUHZ0bTFkbVVuLTdHMVV2RVViQTRtNGJOa0hjRlQ2WGt4UTZBYnQ4V2FZN2dwZWlXbTdBRjhHaXF2UHVySWdQTkdKMmN4N2M1QmN5Y0Jua3ZISHdNQThqNHJwa1JfQy0tV0lZc0dKOG4ycDJRbGE4TzI0QWpGMTV1NUUxbzBj?oc=5",
-          "source": "Excélsior",
-          "date": "2026-10-25",
-          "published_at": "2026-10-26T01:45:17Z",
-          "category": "CDMX",
-          "borough": "Iztacalco",
-          "location": "Iztacalco (mencionada en el titular)",
-          "local_url": "/noticias/?id=3bd27e0f17b4f45c1674&mes=2026-10",
-          "brief": {
-            "lead": "De acuerdo con Excélsior, el titular publicado es: «Con más de 4 mil personas, Lourdes Paz impulsa el turismo cultural en Iztacalco». La información publicada por Excélsior aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "alcaldia_iztacalco",
-            "kind": "representativa",
-            "url": "/assets/alcaldias/iztacalco.jpg",
-            "category": "CDMX",
-            "borough": "Iztacalco",
-            "topic": "Iglesia de San Matías en el antiguo pueblo de Iztacalco",
-            "author": "AlejandroLinaresGarcia",
-            "license": "CC BY-SA 3.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-            "source": "https://commons.wikimedia.org/wiki/File:SanMatiasChurchIztacalco02.jpg"
-          }
         }
       ]
     },
     {
       "name": "Iztapalapa",
-      "count": 190,
+      "count": 191,
       "articles": [
         {
           "title": "Tiene apenas 20 años: Cae “El Chopersito” en Iztapalapa por 10 homicidios en CDMX",
@@ -5897,6 +5934,24 @@
             "license": "CC BY 2.0",
             "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
             "source": "https://commons.wikimedia.org/wiki/File:DECLARATORIA_DE_CARNAVALES_COMO_PATRIMONIO_CULTURAL_INMATERIAL_DE_LA_CIUDAD_DE_M%C3%89XICO_26.jpg"
+          }
+        },
+        {
+          "title": "Detienen a 'El Chopersito', generador de violencia vinculado a 10 casos en Iztapalapa",
+          "description": "De acuerdo con Milenio, el titular publicado es: «Detienen a 'El Chopersito', generador de violencia vinculado a 10 casos en Iztapalapa». Una nota de Milenio comunica un caso relacionado con una detención o una presunta conducta delictiva en Iztapalapa. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOYm5NeXRXUzNuUGpFVURYTk10LTZkZ1lHYndTVzdjSHhVMldnZGVhTnYxWEF5OEFwbF9hWFJPY3lDWl9ldkZaZW0tQndnc1ZNSWhVc2E0YndmTjNqVFpJa3lYQ18taVFvRGtxXzBkdXpKUkJtRlJoNDZ2VHlXZy1IczJObURjMEhrY0FJUkRR0gGOAUFVX3lxTE9lLWVvcHVncnhmVElabFJSa1h5RjkzNXFhTUpXcDJoblFHTG5uRW5NS1c4WjVid2J1Uy1qdU5iR2VtOTFmek5tcE1ocE9oSGpyUk1oRkFlZmFyYjdJOUtXY0VscG5ZdHF0RVBUUG1pZEhuejhjR1lybU80cGNtMGxwMFlYV3lxOFJLbjlySGc?oc=5",
+          "source": "Milenio",
+          "date": "2026-11-03",
+          "published_at": "2026-11-04T00:00:00Z",
+          "category": "CDMX",
+          "borough": "Iztapalapa",
+          "location": "Iztapalapa (mencionada en el titular)",
+          "local_url": "/noticias/?id=280cab3c2eb9f86bc005&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con Milenio, el titular publicado es: «Detienen a 'El Chopersito', generador de violencia vinculado a 10 casos en Iztapalapa». Una nota de Milenio comunica un caso relacionado con una detención o una presunta conducta delictiva en Iztapalapa. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           }
         },
         {
@@ -6209,43 +6264,31 @@
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           }
-        },
-        {
-          "title": "Construye ProximityParks recinto en Iztapalapa",
-          "description": "De acuerdo con Somos Industria, el titular publicado es: «Construye ProximityParks recinto en Iztapalapa». La información publicada por Somos Industria aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNY1l3TjZBakpTd245WHVwek9lNElTWXlNNFM3TGE3d3pydmg1bVUzQVhEaE9TM1BINlRMZE51a0l3UDNDZlZjalRKQXNtRnlvVWZUcTAwNDBIVExSUGFKMTVtX3FxY2tEZVlRRFJzQm8tdkJVWkRPWWVEZFN6d3pPR1VtRVFIMVdseVZwajlnblE?oc=5",
-          "source": "Somos Industria",
-          "date": "2026-10-31",
-          "published_at": "2026-10-31T22:50:20Z",
-          "category": "CDMX",
-          "borough": "Iztapalapa",
-          "location": "Iztapalapa (mencionada en el titular)",
-          "local_url": "/noticias/?id=cafe86a8346313742f18&mes=2026-10",
-          "brief": {
-            "lead": "De acuerdo con Somos Industria, el titular publicado es: «Construye ProximityParks recinto en Iztapalapa». La información publicada por Somos Industria aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "alcaldia_iztapalapa",
-            "kind": "representativa",
-            "url": "/assets/alcaldias/iztapalapa.jpg",
-            "category": "CDMX",
-            "borough": "Iztapalapa",
-            "topic": "Vista de Iztapalapa desde el Cerro de la Estrella",
-            "author": "Secretaría de Cultura Ciudad de México from México",
-            "license": "CC BY 2.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-            "source": "https://commons.wikimedia.org/wiki/File:MX_MM_MUSEO_CERRO_DE_LA_ESTRELLA_%2849522225751%29.jpg"
-          }
         }
       ]
     },
     {
       "name": "Miguel Hidalgo",
-      "count": 58,
+      "count": 61,
       "articles": [
+        {
+          "title": "Clima en Miguel Hidalgo: miércoles 4 de noviembre con ambiente templado y nubes",
+          "description": "De acuerdo con El Heraldo de México, el titular publicado es: «Clima en Miguel Hidalgo: miércoles 4 de noviembre con ambiente templado y nubes». El pronóstico recogido por El Heraldo de México se refiere a condiciones meteorológicas en Miguel Hidalgo. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
+          "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPWi1xRWlyRjdIOTFnTXkzWjV0VGdMUUJvNy02M0N0RkYzc0tXeVBZNFgteFgtLVNWbWtNQWMyZ3daWkNQNEtwSmx1Z3doaTljMVJKcG85emQxLUtnUVRBcmdRLWlaendTdDc5YkkxOVU5RF9UajY4ekExVHJhM21UeUJxYWZkTUtrd0JDS19DbGFod1dQRzJDRGF2eXFZdEtnbXFoN21KLVJRMXRLSXc2TWs2RDFDT201NDJhWjNmMFdnby1LUXdDT2JoSlR5TUxHSFE?oc=5",
+          "source": "El Heraldo de México",
+          "date": "2026-11-03",
+          "published_at": "2026-11-04T05:00:00Z",
+          "category": "CDMX",
+          "borough": "Miguel Hidalgo",
+          "location": "Miguel Hidalgo (mencionada en el titular)",
+          "local_url": "/noticias/?id=41834349080c2e6781c3&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con El Heraldo de México, el titular publicado es: «Clima en Miguel Hidalgo: miércoles 4 de noviembre con ambiente templado y nubes». El pronóstico recogido por El Heraldo de México se refiere a condiciones meteorológicas en Miguel Hidalgo. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          }
+        },
         {
           "title": "Intención de voto en la elección de alcalde en Miguel Hidalgo, CDMX – Noviembre 2026",
           "description": "De acuerdo con RUBRUM, el titular publicado es: «Intención de voto en la elección de alcalde en Miguel Hidalgo, CDMX – Noviembre 2026». La información publicada por RUBRUM aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -6277,6 +6320,24 @@
           }
         },
         {
+          "title": "Clima en Miguel Hidalgo este martes 3 de noviembre: cielo claro y ambiente templado",
+          "description": "De acuerdo con El Heraldo de México, el titular publicado es: «Clima en Miguel Hidalgo este martes 3 de noviembre: cielo claro y ambiente templado». El pronóstico recogido por El Heraldo de México se refiere a condiciones meteorológicas en Miguel Hidalgo. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
+          "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQVGdzMEVoR2hCbXhFSlM2RW1nRjVZVS1iRmFkMHFqUTVxUk9zZjRVLWhCWEQ4RmZnUzJYckxlc1E4NVNqZzBVWjlfY2R1Y01VbXhHWHgyc0JjU3A2YWdKTmJ4RVBuMHluRGszX3ZnekQ2YUJoWVVVOHkwd3k5RGVEM09XcVlWLW0yTkphM0lqdFpyajhIR3VTaHR2c3Bpd1ZTTHpRcHlnYVN4bHZNLW10aGppS21PNHdXSGFZSk1IUDVfSHNjeWpYdE5KazVZc0gtZTk2UUNUZw?oc=5",
+          "source": "El Heraldo de México",
+          "date": "2026-11-02",
+          "published_at": "2026-11-03T05:00:00Z",
+          "category": "CDMX",
+          "borough": "Miguel Hidalgo",
+          "location": "Miguel Hidalgo (mencionada en el titular)",
+          "local_url": "/noticias/?id=c6b9dc747785afdc67cc&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con El Heraldo de México, el titular publicado es: «Clima en Miguel Hidalgo este martes 3 de noviembre: cielo claro y ambiente templado». El pronóstico recogido por El Heraldo de México se refiere a condiciones meteorológicas en Miguel Hidalgo. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          }
+        },
+        {
           "title": "Mauricio Tabe supervisa operativo en panteones en Miguel Hidalgo; reporta saldo blanco",
           "description": "De acuerdo con 24-horas, el titular publicado es: «Mauricio Tabe supervisa operativo en panteones en Miguel Hidalgo; reporta saldo blanco». La información publicada por 24-horas aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
           "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQV0pQT09CeVhQNmRGQWdkRUtBeVpqN0VTNGJKWlhzV3dySDk1bTBZenJSNHpQb19RLWdUSjFNWWNDYjV3M2VndE9wVkEwLUxSUlg1RTZHbWUzY2pfYjUxaHpaT1BIZEt1Xy1ZUHhPZkxEeGd5SmdUc1ZJN0h5VFEwR0lRWG1CWVo2UlhXNEw1SGVqQTEtZGpNZWJqUHlSRmMxa1lKanJfaklwUG9XLWNDNWU0RHl2S05ObjRLZURQWQ?oc=5",
@@ -6289,6 +6350,24 @@
           "local_url": "/noticias/?id=4d50a00a3691b08eb7b3&mes=2026-11",
           "brief": {
             "lead": "De acuerdo con 24-horas, el titular publicado es: «Mauricio Tabe supervisa operativo en panteones en Miguel Hidalgo; reporta saldo blanco». La información publicada por 24-horas aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          }
+        },
+        {
+          "title": "Clima en Miguel Hidalgo: lunes 2 de noviembre con cielo despejado y ambiente templado",
+          "description": "De acuerdo con El Heraldo de México, el titular publicado es: «Clima en Miguel Hidalgo: lunes 2 de noviembre con cielo despejado y ambiente templado». El pronóstico recogido por El Heraldo de México se refiere a condiciones meteorológicas en Miguel Hidalgo. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
+          "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPSHFxZkFsdVBjTlVhN0ZjWndEUF9GQ3hWRWtlOHV2N3djSTV6YXppRXgtbWkyVGRkTV9qeGpDNGd2aVNaeGpMU18wSHc0bXFMSDNGLXNqWXROa1BqbF9QM3lGeFlkNEhkYUFfWlVIdU5pRmVFYU1RMkFYMDBGVDZ4QWdpdExpelpRa01CSDN0UHpzWTdHQVB6VDFGSEdrdjVTY1Q0VHNISHNnM29tRzZzU3R1QjVNSVZ2UlNiWUF2S3hxNXBzNzVBVGlRT1RqT3VjeHl2RVp5RkVRdw?oc=5",
+          "source": "El Heraldo de México",
+          "date": "2026-11-01",
+          "published_at": "2026-11-02T05:00:00Z",
+          "category": "CDMX",
+          "borough": "Miguel Hidalgo",
+          "location": "Miguel Hidalgo (mencionada en el titular)",
+          "local_url": "/noticias/?id=0dcdcc67e3182ec6fcea&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con El Heraldo de México, el titular publicado es: «Clima en Miguel Hidalgo: lunes 2 de noviembre con cielo despejado y ambiente templado». El pronóstico recogido por El Heraldo de México se refiere a condiciones meteorológicas en Miguel Hidalgo. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
@@ -6743,102 +6822,6 @@
             "license": "CC BY-SA 4.0",
             "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
             "source": "https://commons.wikimedia.org/wiki/File:Ciudad_de_M%C3%A9xico_-_Colonia_Centro_6990.JPG"
-          }
-        },
-        {
-          "title": "Construirán una nueva Utopía en la colonia Pensil, en Miguel Hidalgo, en CDMX",
-          "description": "De acuerdo con El Sol de México, el titular publicado es: «Construirán una nueva Utopía en la colonia Pensil, en Miguel Hidalgo, en CDMX». La información publicada por El Sol de México aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQdTU4dndvYjh6UUJEeU1XTXc0Q2wwNmo0aEFTSmlXVDMwMWgyUTQ0bklPVnBxWmowUTZmOFhxWmZJdHlzT05YWEw5RVcybHpmeURKcWo0RmhyQWpCaFF1NFE2UFNHQjZXakRKXzFxckJ2UmFZUFdENEx3NVVyUURENWN2SEs3TXVEX1dLcTFvM3N6QUt5QU1VT2hnZGRtZ0stcFlUb2U5OU5fODdaVUdPS09VT19QUmdjVWVaUkF6b05kNGRGRlE?oc=5",
-          "source": "El Sol de México",
-          "date": "2026-10-23",
-          "published_at": "2026-10-23T21:44:25Z",
-          "category": "CDMX",
-          "borough": "Miguel Hidalgo",
-          "location": "Miguel Hidalgo (mencionada en el titular)",
-          "local_url": "/noticias/?id=62c59ad91df40811a581&mes=2026-10",
-          "brief": {
-            "lead": "De acuerdo con El Sol de México, el titular publicado es: «Construirán una nueva Utopía en la colonia Pensil, en Miguel Hidalgo, en CDMX». La información publicada por El Sol de México aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "alcaldia_miguel-hidalgo",
-            "kind": "representativa",
-            "url": "/assets/alcaldias/miguel-hidalgo.jpg",
-            "category": "CDMX",
-            "borough": "Miguel Hidalgo",
-            "topic": "Bosque de Chapultepec, alcaldía Miguel Hidalgo",
-            "author": "ProtoplasmaKid",
-            "license": "CC0",
-            "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-            "source": "https://commons.wikimedia.org/wiki/File:Audiorama_de_Chapultepec_1.jpg"
-          }
-        },
-        {
-          "title": "Clara Brugada destaca disminución de incidencia delictiva en Miguel Hidalgo",
-          "description": "De acuerdo con Excélsior, el titular publicado es: «Clara Brugada destaca disminución de incidencia delictiva en Miguel Hidalgo». La información publicada por Excélsior aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQemNYZWpRUjItOC1CbmVPcGtjNHNiOG51M2tCSnV2NUxTQkxpWWNZSjdKSkJBXzNWQTF4bGx1VFR0SHdlTm5mTlpiZXVGd0ZkcXFndHFPeWZveTZNMFA0Rmtab01pd2t2dXVCT05tR2Z4RG1mem1FZFJUTlNkdlZQUVF1Qm5oeEtlMkU5SFVlMVlxY2vSAZgBQVVfeXFMUHlqSkluRDhOUWs0Wl9zMl93bGR4bkpuZXk4aEhTR05IMndPdlFzYVlCNjNmQjRlNlRLODlDenp6X2dZV3VQMTNYelBrZFNWV25RZTZVNnRFbU9hWVdyVG5GSk5tNTc0MXg0MW01SHFnNXFuWi10em16YjNfQXFadUZFWlZ4aFdtSjZvRW9hN0lsMHJmdFJaREI?oc=5",
-          "source": "Excélsior",
-          "date": "2026-10-23",
-          "published_at": "2026-10-23T20:38:54Z",
-          "category": "CDMX",
-          "borough": "Miguel Hidalgo",
-          "location": "Miguel Hidalgo (mencionada en el titular)",
-          "local_url": "/noticias/?id=6c3bcf050ae6bd9a7eea&mes=2026-10",
-          "brief": {
-            "lead": "De acuerdo con Excélsior, el titular publicado es: «Clara Brugada destaca disminución de incidencia delictiva en Miguel Hidalgo». La información publicada por Excélsior aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "commons_92221417",
-            "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Chapultepec_y_Paseo_de_la_Reforma%2C_Ciudad_de_M%C3%A9xico_1.jpg/960px-Chapultepec_y_Paseo_de_la_Reforma%2C_Ciudad_de_M%C3%A9xico_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "category": "CDMX",
-            "borough": "",
-            "topic": "Chapultepec y Paseo de la Reforma, Ciudad de México 1",
-            "keywords": [
-              "Paseo de la Reforma Ciudad de México"
-            ],
-            "author": "Los viajeros 77",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Chapultepec_y_Paseo_de_la_Reforma,_Ciudad_de_M%C3%A9xico_1.jpg"
-          }
-        },
-        {
-          "title": "Un acto de Brugada en Miguel Hidalgo expuso las tensiones de la 4T en la previa del 2027",
-          "description": "De acuerdo con La Política Online, el titular publicado es: «Un acto de Brugada en Miguel Hidalgo expuso las tensiones de la 4T en la previa del 2027». La información publicada por La Política Online aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQcmZIeHdYd0RNa3NTVmZxdUtJMDBNYmpGN1hyVlRkMEg1UzdDa04zYXFpUkdKZEctTEdXWGZ4VWNyN0NSWkFhZENBQlNQTE95ZFdfajdIOFdPOUJsQWQ2Ym0tYXlFR01zeUVpLWRIU29ZakczNzVmM3dMTV9BZTJNdlhBRk1Dd0g5cmprU2Y2S3d0OGtFUnZGeWVrUjJyX0tpTnF6R3pLclh6UV9Pd1FPWjlJMHV4V1EwdzI5d2hudGFSWUFUOHR2Vm5yWUIydHBJS09RVmRVOW9kNDJlQkE?oc=5",
-          "source": "La Política Online",
-          "date": "2026-10-23",
-          "published_at": "2026-10-23T18:03:18Z",
-          "category": "CDMX",
-          "borough": "Miguel Hidalgo",
-          "location": "Miguel Hidalgo (mencionada en el titular)",
-          "local_url": "/noticias/?id=3590043647c04c5a6541&mes=2026-10",
-          "brief": {
-            "lead": "De acuerdo con La Política Online, el titular publicado es: «Un acto de Brugada en Miguel Hidalgo expuso las tensiones de la 4T en la previa del 2027». La información publicada por La Política Online aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "commons_30224226",
-            "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Fuente_Alameda_Central%2C_Ciudad_de_M%C3%A9xico_04.JPG/960px-Fuente_Alameda_Central%2C_Ciudad_de_M%C3%A9xico_04.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "category": "CDMX",
-            "borough": "",
-            "topic": "Fuente Alameda Central, Ciudad de México 04",
-            "keywords": [
-              "Alameda Central Ciudad de México"
-            ],
-            "author": "CatmenGata",
-            "license": "CC BY-SA 3.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Fuente_Alameda_Central,_Ciudad_de_M%C3%A9xico_04.JPG"
           }
         }
       ]
@@ -7479,7 +7462,7 @@
     },
     {
       "name": "Tláhuac",
-      "count": 111,
+      "count": 113,
       "articles": [
         {
           "title": "Intención de voto en la elección de alcalde en Tláhuac, CDMX – Noviembre 2026",
@@ -7527,6 +7510,18 @@
             "context": "La actividad cultural abre oportunidades de encuentro, aprendizaje y disfrute para habitantes y visitantes.",
             "pending": "Los accesos, boletos, sedes, cupos y horarios deben consultarse con la institución organizadora. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_tlahuac",
+            "kind": "representativa",
+            "url": "/assets/alcaldias/tlahuac.jpg",
+            "category": "CDMX",
+            "borough": "Tláhuac",
+            "topic": "Plaza central de San Pedro Tláhuac",
+            "author": "Yavidaxiu",
+            "license": "CC BY 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Tl%C3%A1huac-Plaza_central.JPG"
           }
         },
         {
@@ -7560,6 +7555,24 @@
           }
         },
         {
+          "title": "Detienen a 3 personas por construcción irregular en suelo de conservación en Tláhuac",
+          "description": "De acuerdo con La Razón de México, el titular publicado es: «Detienen a 3 personas por construcción irregular en suelo de conservación en Tláhuac». Una nota de La Razón de México comunica un caso relacionado con una detención o una presunta conducta delictiva en Tláhuac. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
+          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQRlExQ21taG5SNXI1cXRSc015dFVCUjRjbjdpcTU2MHM2UTVOY29CeFRobmJtbkRnRVA0UmZOWnBLeWduNzNxaDdycE5qWkVJeFJHN2pjLUJUbmlETXpkbDRTSkJJbS0yNEQ0ZjZSMjNuM19uV3RBVTZXckkyYkdxTUMxWWNZTDJTN01vYjI0d0N6UjBIWjdIYWJ4WFB3Vm9lbGFHcUZWdV85dHA0RU5kcXlzTFdXdlpDMnpKUkl4bjJHbUVaakdV0gHiAUFVX3lxTE0xTzVZdXZzZGFtQVdzNjZ5SmpRNHNUeG82S09QUWVOaUpIWGQwNzdiM2gzaXRJQWJwcHhZYm92ZkRZbWZ3bWtZU0p6UVpyUVZidVJqZ0cxd1M5bGdwWm5uckpIYnZoU3AzYlB6cENPRk1hU09LbjBVbG54Uk1MUVJsalc1Ty1oT1I4RERDb0xSdEhobjdHbXJPVHM3TmpFdW5nVDgxWmhMcVRvYVE4Zko5N2MtOVJhV3VHOGo5TVhySF9RRHJGT19RVjFLZEpmMjdzQmlWeW10MWlXQzFlT2t2dXc?oc=5",
+          "source": "La Razón de México",
+          "date": "2026-11-02",
+          "published_at": "2026-11-03T00:00:00Z",
+          "category": "Seguridad",
+          "borough": "Tláhuac",
+          "location": "Tláhuac (mencionada en el titular)",
+          "local_url": "/noticias/?id=1058a96aaafb753280f6&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con La Razón de México, el titular publicado es: «Detienen a 3 personas por construcción irregular en suelo de conservación en Tláhuac». Una nota de La Razón de México comunica un caso relacionado con una detención o una presunta conducta delictiva en Tláhuac. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
+            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          }
+        },
+        {
           "title": "Fiscalía CDMX investiga a tres hombres por posible daño ambiental en la alcaldía Tláhuac",
           "description": "De acuerdo con Almomento.mx, el titular publicado es: «Fiscalía CDMX investiga a tres hombres por posible daño ambiental en la alcaldía Tláhuac». La información publicada por Almomento.mx aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
           "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQd0MxYWNVTk9McWo2cFBnZlR0aXhkZS1BX0xJVngzZzZVYVRDTHdBVEotRW1Va1pMQjBlQzRubU9GWEdfZUd1Q1ZCeUhZYmhYaUhETGlxSnRvcWs0NkZIVEd1Vlc1emNDMGVfTDIwcDYzREZRMVU5QnhSM2xqUVhuWGNNeUxPcUVRc3gtVmRDS285czVvdVZuQk4yOHp3X0F3LWl2c2hkMVZsTEhqVkRB?oc=5",
@@ -7587,6 +7600,24 @@
             "license": "CC BY 3.0",
             "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
             "source": "https://commons.wikimedia.org/wiki/File:Tl%C3%A1huac-Plaza_central.JPG"
+          }
+        },
+        {
+          "title": "Hombre es asesinado a balazos en Tláhuac y su madre lo encuentra dentro de su automóvil",
+          "description": "De acuerdo con PostaMx, el titular publicado es: «Hombre es asesinado a balazos en Tláhuac y su madre lo encuentra dentro de su automóvil». La información publicada por PostaMx aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPdm1zSlFXazJiSG85S2RFaF9ZMURjRGg4Ti01LV80eTNXdUFlUGxKMGhpelZ2TldiQlZjcTI2eTAwVWQ4ajduWEtQZTk1cjBxWDJpamFTNnFuR2JXc3o3NWRUT1V3YUFtN0UzV01xWXlxbnAzbzJ2OUlBMXVxZFl1ZkllQWFnSGtLWUcweGpyT25YYk9na2FJeHpqcVNhZXFjbTZyOTJmVEFPa3dQRmNwVzI5YXBmZ0UwTnVzcnVUM3ZiRnJrcHfSAcsBQVVfeXFMTnNSanhBZTl6RGJyQ2dwZGh3eEZwYVRONDRveFA3YTQySjkybGZRXzZRSVRoVDY0anpMOFRmTGlMNnZ3eTgzT3BVWFd2ZHZMUTZCUlJzdm9VTjdTbFJZOFRhSW1aOEVLSEpXTnpNMnVINXVHUEtIVHNKdkF6RDFXSDlpSHpJSGpQU0I4RXJfUjRkMXlwM1hQSUpkNHh6cnVEQVVvdFVOY242Q19QRVpOQ1J0NkxkVllsalFCekdyaGhjV0hwUWFDWFpSaFE?oc=5",
+          "source": "PostaMx",
+          "date": "2026-11-02",
+          "published_at": "2026-11-02T18:53:00Z",
+          "category": "Seguridad",
+          "borough": "Tláhuac",
+          "location": "Tláhuac (mencionada en el titular)",
+          "local_url": "/noticias/?id=ec082fd8c055fe7a5ef7&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con PostaMx, el titular publicado es: «Hombre es asesinado a balazos en Tláhuac y su madre lo encuentra dentro de su automóvil». La información publicada por PostaMx aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           }
         },
         {
@@ -7990,42 +8021,6 @@
             "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           }
-        },
-        {
-          "title": "Doble Feminicidio en CDMX: Matan a Balazos a Madre y su Hija Adolescente en Tláhuac",
-          "description": "De acuerdo con N+, el titular publicado es: «Doble Feminicidio en CDMX: Matan a Balazos a Madre y su Hija Adolescente en Tláhuac». La información publicada por N+ aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQWWplZDNzR3ltTU5vc1dUQjNncUhvd3hkTWFhZU9FU1pNbDI0RnZuR2hCSkRyaGp1U200Z3B3ZjhaMUVVMUtHblAxeFdhQTNnRHhfdUU5X3VQallDS2x1LWtHQmFnWHhreHlKLURENGdQalZ3UWtuS2JmUUg4UEdQYXNYYWE5STJfbFZGRENJRHZERFMwMi1pWDVsa2h2RHpUZUE1bV9mdFZ4TW9iMEp6dldyQU1uaFlHaDlmT09hdkJvNXllQ3k5YUs0MUl5S2M?oc=5",
-          "source": "N+",
-          "date": "2026-10-30",
-          "published_at": "2026-10-30T15:33:39Z",
-          "category": "Seguridad",
-          "borough": "Tláhuac",
-          "location": "Tláhuac (mencionada en el titular)",
-          "local_url": "/noticias/?id=ad9c9bbadce736a2a8dc&mes=2026-10",
-          "brief": {
-            "lead": "De acuerdo con N+, el titular publicado es: «Doble Feminicidio en CDMX: Matan a Balazos a Madre y su Hija Adolescente en Tláhuac». La información publicada por N+ aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
-            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
-        },
-        {
-          "title": "Asesinan a balazos a madre e hija en Tláhuac, CdMx; vecinos golpean y retienen al presunto agresor",
-          "description": "De acuerdo con Telediario, el titular publicado es: «Asesinan a balazos a madre e hija en Tláhuac, CdMx; vecinos golpean y retienen al presunto agresor». La información publicada por Telediario aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQRXFEZUtXOTM2NkZZVzlQcEpDSkotb2JlVE85ejhOeGdmYXE0Qi0wMlZLcW8xNE5XUkU3REg5NXZxRHlfVUpsaDlhQkRuRjd4RzEwQWFSTTk4Q3NPRUkxeVQ5clB4TDdyWVl2YXV6OURIcG1OT29pbUcyWTFMV0xYSExlNWNnVlAxU2FoMENHLUJQbVd2U1JSQVNDNlBnbjVVR2fSAaIBQVVfeXFMUGJfRG5nSTZmWU12UGJFaXJzaEtwclBXTkhXY2hHd3ZZY1RWUDRZeFpjZDZrejd6SDU4N2lkV2JUQzNUYWpvbFlrYXE5VlZjNFVVWVQ1Z3dqT1ozRlJCWWxwTVBuSVJaa29TY3dKcEI2ZVhRS0xncnV2WjEwNHh5bEZOUUZxWEh6dG10QU5xSnZMcUhDZDQ5ZVRGQms1MTlPbkl3?oc=5",
-          "source": "Telediario",
-          "date": "2026-10-30",
-          "published_at": "2026-10-30T15:20:51Z",
-          "category": "Seguridad",
-          "borough": "Tláhuac",
-          "location": "Tláhuac (mencionada en el titular)",
-          "local_url": "/noticias/?id=efecf439b5a929fc9a54&mes=2026-10",
-          "brief": {
-            "lead": "De acuerdo con Telediario, el titular publicado es: «Asesinan a balazos a madre e hija en Tláhuac, CdMx; vecinos golpean y retienen al presunto agresor». La información publicada por Telediario aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
-            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
         }
       ]
     },
@@ -8130,6 +8125,18 @@
             "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
             "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_tlalpan",
+            "kind": "representativa",
+            "url": "/assets/alcaldias/tlalpan.jpg",
+            "category": "CDMX",
+            "borough": "Tlalpan",
+            "topic": "Quiosco de la plaza principal de Tlalpan",
+            "author": "farid estrada",
+            "license": "CC BY-SA 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Kiosko_plaza_de_la_constitucion%2C_tlapan.JPG"
           }
         },
         {
@@ -8148,6 +8155,21 @@
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "commons_193467141",
+            "kind": "representativa",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/6/66/Calzada_Flotante_de_Tlalpan_en_construcci%C3%B3n_en_Ciudad_de_M%C3%A9xico_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+            "category": "Alcaldías",
+            "borough": "",
+            "topic": "Calzada Flotante de Tlalpan en construcción en Ciudad de México 01",
+            "keywords": [
+              "Tlalpan Ciudad de México"
+            ],
+            "author": "B.jars",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Calzada_Flotante_de_Tlalpan_en_construcci%C3%B3n_en_Ciudad_de_M%C3%A9xico_01.jpg"
           }
         },
         {
@@ -8602,8 +8624,41 @@
     },
     {
       "name": "Venustiano Carranza",
-      "count": 20,
+      "count": 21,
       "articles": [
+        {
+          "title": "Detienen a hombre con 78 dosis de marihuana en Venustiano Carranza",
+          "description": "De acuerdo con Sociedad Noticias, el titular publicado es: «Detienen a hombre con 78 dosis de marihuana en Venustiano Carranza». Una nota de Sociedad Noticias comunica un caso relacionado con una detención o una presunta conducta delictiva en Venustiano Carranza. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
+          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOcXhVMFZMcHJkN0Z3SnZFV20wWEN1TGU2U0pNdEpRVXlNLXA5aGRBb1JnU01yZ28zTzhIRF9uTjZUUmU1N1hDUklWTDhmd3FyTmVFNWRpUURjd2l3LXJZdU9OMjdVRk5vemg1YjlxMUJuSjZRanVDdVpaVnJmMlEtQmlFS1c2UlZEVVFVb3d6WlhnUWhhek1PZzVBM3dZV3dTZl9iYzdrUm1aWFRH?oc=5",
+          "source": "Sociedad Noticias",
+          "date": "2026-11-04",
+          "published_at": "2026-11-04T11:30:00Z",
+          "category": "CDMX",
+          "borough": "Venustiano Carranza",
+          "location": "Venustiano Carranza (mencionada en el titular)",
+          "local_url": "/noticias/?id=84e05b2340455d06e5f1&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con Sociedad Noticias, el titular publicado es: «Detienen a hombre con 78 dosis de marihuana en Venustiano Carranza». Una nota de Sociedad Noticias comunica un caso relacionado con una detención o una presunta conducta delictiva en Venustiano Carranza. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "commons_36264293",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Monumento_a_Col%C3%B3n_Paseo_de_la_Reforma_Ciudad_de_M%C3%A9xico_3.jpg/960px-Monumento_a_Col%C3%B3n_Paseo_de_la_Reforma_Ciudad_de_M%C3%A9xico_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "category": "CDMX",
+            "borough": "",
+            "topic": "Monumento a Colón Paseo de la Reforma Ciudad de México 3",
+            "keywords": [
+              "Paseo de la Reforma Ciudad de México"
+            ],
+            "author": "ProtoplasmaKid",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Monumento_a_Col%C3%B3n_Paseo_de_la_Reforma_Ciudad_de_M%C3%A9xico_3.jpg"
+          }
+        },
         {
           "title": "Intención de voto en la elección de alcalde en Venustiano Carranza, CDMX - Noviembre 2026",
           "description": "De acuerdo con RUBRUM, el titular publicado es: «Intención de voto en la elección de alcalde en Venustiano Carranza, CDMX - Noviembre 2026». La información publicada por RUBRUM aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -9215,8 +9270,59 @@
     },
     {
       "name": "Xochimilco",
-      "count": 148,
+      "count": 150,
       "articles": [
+        {
+          "title": "¿Qué delito se denuncia más en Xochimilco? Violencia familiar y el mapa histórico de cuatro pueblos",
+          "description": "De acuerdo con Capital CDMX, el titular publicado es: «¿Qué delito se denuncia más en Xochimilco? Violencia familiar y el mapa histórico de cuatro pueblos». La información publicada por Capital CDMX aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQMzM2VWZKNk14YncyX3lDdm12UGt4a1c1UmNtM0dqODlOZzBRM2pjSy1SdTVBTzVIdmNSdVdBOXV2V2RON2wtbTltd1pDSXBreC1KQWxCRVBxR2NxdS16emtaRmIzSTJsSU1LRGRqNkNQY2dUemZUYUdDTmg2Y2ZGZjh5eDYzbzkzc20wRA?oc=5",
+          "source": "Capital CDMX",
+          "date": "2026-11-04",
+          "published_at": "2026-11-04T07:34:56Z",
+          "category": "CDMX",
+          "borough": "Xochimilco",
+          "location": "Xochimilco (mencionada en el titular)",
+          "local_url": "/noticias/?id=266beb736bdf61e94511&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con Capital CDMX, el titular publicado es: «¿Qué delito se denuncia más en Xochimilco? Violencia familiar y el mapa histórico de cuatro pueblos». La información publicada por Capital CDMX aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "commons_66033709",
+            "kind": "representativa",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/2/26/Canales_de_Xochimilco%2C_Ciudad_de_M%C3%A9xico_%2832226551093%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+            "category": "CDMX",
+            "borough": "",
+            "topic": "Canales de Xochimilco, Ciudad de México (32226551093)",
+            "keywords": [
+              "CDMX"
+            ],
+            "author": "Comisión Mexicana de Filmaciones from México D. F., México",
+            "license": "CC BY-SA 2.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Canales_de_Xochimilco,_Ciudad_de_M%C3%A9xico_(32226551093).jpg"
+          }
+        },
+        {
+          "title": "Clima en Xochimilco para el miércoles 4 de noviembre: Temperaturas templadas y cielo nublado",
+          "description": "De acuerdo con El Heraldo de México, el titular publicado es: «Clima en Xochimilco para el miércoles 4 de noviembre: Temperaturas templadas y cielo nublado». El pronóstico recogido por El Heraldo de México se refiere a condiciones meteorológicas en Xochimilco. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
+          "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxONFg1MEJxQjkyN0F1MkxOaFc1bHZQMDZPWDNrTWl5WGFhRnpCdm93ejZEZ05OSDA5WTdLUlJYYXpUNWZHeTd3b1I3cmJDS0xTVGxBOWNmeTlvRE1TdXRselU0bzVuLV9jQnU0YXludW5LSkYxZ19iUGNIZk9xaVhGakNDWGhlaUU2cUprYV9ncDZERHVtbHlmZlBYTTZtTmxtb2xpSmx2SEVuV0pGdVFKRmVQYVQwMlkzMVRvWXhwLWR5UjF5aXp0dnBwUU5Fc3IzRTBjZTNFZTc2TkpLb0dlcXZ5TQ?oc=5",
+          "source": "El Heraldo de México",
+          "date": "2026-11-03",
+          "published_at": "2026-11-04T05:00:00Z",
+          "category": "CDMX",
+          "borough": "Xochimilco",
+          "location": "Xochimilco (mencionada en el titular)",
+          "local_url": "/noticias/?id=56c7136d74c3ad6bc7b1&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con El Heraldo de México, el titular publicado es: «Clima en Xochimilco para el miércoles 4 de noviembre: Temperaturas templadas y cielo nublado». El pronóstico recogido por El Heraldo de México se refiere a condiciones meteorológicas en Xochimilco. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          }
+        },
         {
           "title": "¿Qué delito se denuncia más en Xochimilco? Violencia familiar y el mapa histórico de cuatro pueblos",
           "description": "De acuerdo con Capital CDMX, el titular publicado es: «¿Qué delito se denuncia más en Xochimilco? Violencia familiar y el mapa histórico de cuatro pueblos». La información publicada por Capital CDMX aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -9299,6 +9405,21 @@
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "commons_35624631",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Animales_Bosque_de_Tlalpan_05.JPG/960px-Animales_Bosque_de_Tlalpan_05.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "category": "Alcaldías",
+            "borough": "",
+            "topic": "Animales Bosque de Tlalpan 05",
+            "keywords": [
+              "Tlalpan Ciudad de México"
+            ],
+            "author": "Inakiherrasti",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Animales_Bosque_de_Tlalpan_05.JPG"
           }
         },
         {
@@ -9317,6 +9438,21 @@
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "commons_80038563",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Mariachis_-_Xochimilco%2C_Ciudad_de_M%C3%A9xico_II.jpg/960px-Mariachis_-_Xochimilco%2C_Ciudad_de_M%C3%A9xico_II.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "category": "CDMX",
+            "borough": "",
+            "topic": "Mariachis - Xochimilco, Ciudad de México II",
+            "keywords": [
+              "CDMX"
+            ],
+            "author": "Juan Carlos Fonseca Mata",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Mariachis_-_Xochimilco,_Ciudad_de_M%C3%A9xico_II.jpg"
           }
         },
         {
@@ -9335,6 +9471,21 @@
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "commons_66033660",
+            "kind": "representativa",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/0/09/Explanada_Delegaci%C3%B3n_Xochimilco%2C_Ciudad_de_M%C3%A9xico_%2832915921061%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+            "category": "CDMX",
+            "borough": "",
+            "topic": "Explanada Delegación Xochimilco, Ciudad de México (32915921061)",
+            "keywords": [
+              "CDMX"
+            ],
+            "author": "Comisión Mexicana de Filmaciones from México D. F., México",
+            "license": "CC BY-SA 2.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Explanada_Delegaci%C3%B3n_Xochimilco,_Ciudad_de_M%C3%A9xico_(32915921061).jpg"
           }
         },
         {
@@ -9353,6 +9504,21 @@
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "commons_99791802",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Paseo_en_trajinera_-_Xochimilco%2C_Ciudad_de_M%C3%A9xico.jpg/960px-Paseo_en_trajinera_-_Xochimilco%2C_Ciudad_de_M%C3%A9xico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "category": "CDMX",
+            "borough": "",
+            "topic": "Paseo en trajinera - Xochimilco, Ciudad de México",
+            "keywords": [
+              "CDMX"
+            ],
+            "author": "Juan Carlos Fonseca Mata",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Paseo_en_trajinera_-_Xochimilco,_Ciudad_de_M%C3%A9xico.jpg"
           }
         },
         {
@@ -9791,62 +9957,6 @@
             "author": "Xbauerx",
             "license": "CC BY-SA 4.0",
             "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Trajineras_de_Xochimilco.jpg"
-          }
-        },
-        {
-          "title": "En 1962, Dolores Olmedo compró una hacienda del siglo XVI en Xochimilco; hoy su ofrenda de Día de Muertos es una de las más visitadas de CDMX",
-          "description": "De acuerdo con Ciudad de México Secreta, el titular publicado es: «En 1962, Dolores Olmedo compró una hacienda del siglo XVI en Xochimilco; hoy su ofrenda de Día de Muertos es una de las más visitadas de CDMX». La información publicada por Ciudad de México Secreta aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFAtTzY2UHgxM0l1Ny1zLWtEV0ZnY1R4OVhaa0tacWZBZUxIeDhTZXN1NXNBeG9uRno3ZUlLaGtScEZwVVdEcWVrOENaaHREOWFkWkRIakk1Ynh3RDk1Z0Vadzd4U09MbHJYT3JaVUxsbm1GckQ5SHc?oc=5",
-          "source": "Ciudad de México Secreta",
-          "date": "2026-10-30",
-          "published_at": "2026-10-30T12:12:00Z",
-          "category": "CDMX",
-          "borough": "Xochimilco",
-          "location": "Xochimilco (mencionada en el titular)",
-          "local_url": "/noticias/?id=04eaaaa7397877692822&mes=2026-10",
-          "brief": {
-            "lead": "De acuerdo con Ciudad de México Secreta, el titular publicado es: «En 1962, Dolores Olmedo compró una hacienda del siglo XVI en Xochimilco; hoy su ofrenda de Día de Muertos es una de las más visitadas de CDMX». La información publicada por Ciudad de México Secreta aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "alcaldia_xochimilco",
-            "url": "/assets/alcaldias/xochimilco.jpg",
-            "category": "CDMX",
-            "borough": "Xochimilco",
-            "topic": "Trajineras y canales de Xochimilco",
-            "author": "Xbauerx",
-            "license": "CC BY-SA 4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Trajineras_de_Xochimilco.jpg"
-          }
-        },
-        {
-          "title": "¡Xochimilco está de fiesta! Recibe la pulquería más grande de la ciudad en el marco del Día de Muertos",
-          "description": "De acuerdo con Milenio, el titular publicado es: «¡Xochimilco está de fiesta! Recibe la pulquería más grande de la ciudad en el marco del Día de Muertos». La información publicada por Milenio aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNQU84eDlDY2xsUWw1VFE1MWpIQTc0Wlh6VTczTWtaNkRObTBZc3N0MXI5QnY5UFJvOGdHanh1NlBUVGhGM0ZsaVlKTHlONjJOQ0xGeUNzSFR1RU5kY1RCZTZGcU0zX05Ea3JoUURtWWl6c003eS1sNy10T3EzVmlobnBiZVA3akpHS2FMUlhBTV9pV1Ribk1zSml30gGaAUFVX3lxTE1BTzh4OUNjbGxRbDVUUTUxakhBNzRaWHpVNzNNa1o2RE5tMFlzc3QxcjlCdjlQUm84Z0dqeHU2UFRUaEYzRmxpWUpMeU42Mk5DTEZ5Q3NIVHVFTmRjVEJlNkZxTTNfTkRrcmhRRG1ZaXpzTTd5LWw3LXRPcTNWaWhucGJlUDdqSkdLYUxSWEFNX2lXVGJuTXNKaXc?oc=5",
-          "source": "Milenio",
-          "date": "2026-10-29",
-          "published_at": "2026-10-30T05:30:09Z",
-          "category": "CDMX",
-          "borough": "Xochimilco",
-          "location": "Xochimilco (mencionada en el titular)",
-          "local_url": "/noticias/?id=78735cd3f58cde19b486&mes=2026-10",
-          "brief": {
-            "lead": "De acuerdo con Milenio, el titular publicado es: «¡Xochimilco está de fiesta! Recibe la pulquería más grande de la ciudad en el marco del Día de Muertos». La información publicada por Milenio aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "alcaldia_xochimilco",
-            "url": "/assets/alcaldias/xochimilco.jpg",
-            "category": "CDMX",
-            "borough": "Xochimilco",
-            "topic": "Trajineras y canales de Xochimilco",
-            "author": "Xbauerx",
-            "license": "CC BY-SA 4.0",
             "source": "https://commons.wikimedia.org/wiki/File:Trajineras_de_Xochimilco.jpg"
           }
         }
