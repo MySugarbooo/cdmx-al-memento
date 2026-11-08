@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "checked_at": "2026-11-07T02:51:56Z",
+  "checked_at": "2026-11-08T00:41:21Z",
   "source": "Wikimedia Commons · fotografías contextuales con licencia libre",
   "note": "Fecha de subida a Commons, NO fecha verificada de captura ni fotografía del suceso.",
   "photos": [
@@ -17,6 +17,20 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
       "uploaded_at": "2026-09-05",
       "captured_at": "2026-08-25"
+    },
+    {
+      "id": "reciente_1a3884b06b21503c",
+      "reviewed_location": false,
+      "category": "CDMX",
+      "topic": "Casa Xitla, Tlalpan, Ciudad de México",
+      "file": "Casa Xitla, Tlalpan, Ciudad de México.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/25/Casa_Xitla%2C_Tlalpan%2C_Ciudad_de_M%C3%A9xico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "source": "https://commons.wikimedia.org/wiki/File:Casa_Xitla,_Tlalpan,_Ciudad_de_M%C3%A9xico.jpg",
+      "author": "ElCielito",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "uploaded_at": "2026-11-07",
+      "captured_at": "2026-09-19"
     },
     {
       "id": "reciente_804968a923fefbd5",
@@ -171,20 +185,6 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
       "uploaded_at": "2026-10-26",
       "captured_at": "2026-10-23"
-    },
-    {
-      "id": "reciente_d3bf2851210c8f52",
-      "reviewed_location": false,
-      "category": "CDMX",
-      "topic": "Desfile de Catrinas in Mexico City 2026 (53)",
-      "file": "Desfile de Catrinas in Mexico City 2026 (53).jpg",
-      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Desfile_de_Catrinas_in_Mexico_City_2026_%2853%29.jpg/1280px-Desfile_de_Catrinas_in_Mexico_City_2026_%2853%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "source": "https://commons.wikimedia.org/wiki/File:Desfile_de_Catrinas_in_Mexico_City_2026_(53).jpg",
-      "author": "Gedankenstuecke",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "uploaded_at": "2026-10-26",
-      "captured_at": "2026-10-25"
     }
   ]
 }
