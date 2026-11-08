@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-08 07:25 UTC",
+  "updated": "2026-11-08 15:15 UTC",
   "boroughs": [
     {
       "name": "La Magdalena Contreras",
@@ -1229,8 +1229,38 @@
     },
     {
       "name": "Azcapotzalco",
-      "count": 111,
+      "count": 112,
       "articles": [
+        {
+          "title": "Reciben en Azcapotzalco agua sucia por ¡4 meses!",
+          "description": "De acuerdo con Reforma, el titular publicado es: «Reciben en Azcapotzalco agua sucia por ¡4 meses!». La información publicada por Reforma aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPeW95MV9NUVVLMERfMmVYQlZCUm1XOGQzd0d0VTNEb0lqaFVXSXdFOU9QUGpNcEtVeFYyUEJKZV9DMU1Wejh5QWlyS19wRzdmZ3NMdG9kcnh6NkNqdjJFWXc2elV6ZHI0eDI0VHFUNHVXdGJ3ZmxCckpkczZtM1lIWXUwbjhLUjA?oc=5",
+          "source": "Reforma",
+          "date": "2026-11-08",
+          "published_at": "2026-11-08T11:07:24Z",
+          "category": "CDMX",
+          "borough": "Azcapotzalco",
+          "location": "Azcapotzalco (mencionada en el titular)",
+          "local_url": "/noticias/?id=76f3631913a99929694a&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con Reforma, el titular publicado es: «Reciben en Azcapotzalco agua sucia por ¡4 meses!». La información publicada por Reforma aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_azcapotzalco",
+            "kind": "representativa",
+            "url": "/assets/alcaldias/azcapotzalco.jpg",
+            "category": "CDMX",
+            "borough": "Azcapotzalco",
+            "topic": "Parroquia de Santa Catarina, Azcapotzalco",
+            "author": "Ivan alcantara",
+            "license": "CC BY-SA 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:PARROQUIA_DE_SANTA_CATARINA_%28AZCAPOTZALCO%29.jpg"
+          }
+        },
         {
           "title": "Clima en Azcapotzalco: domingo 8 de noviembre con ambiente templado y nubes dispersas",
           "description": "De acuerdo con El Heraldo de México, el titular publicado es: «Clima en Azcapotzalco: domingo 8 de noviembre con ambiente templado y nubes dispersas». El pronóstico recogido por El Heraldo de México se refiere a condiciones meteorológicas en Azcapotzalco. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
@@ -1812,31 +1842,46 @@
             "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           }
-        },
-        {
-          "title": "Muere hombre en situación de calle atropellado cerca de gasolinera en Azcapotzalco",
-          "description": "De acuerdo con El Sol de México, el titular publicado es: «Muere hombre en situación de calle atropellado cerca de gasolinera en Azcapotzalco». De acuerdo con El Sol de México, se informa de un hecho vial relacionado con personas o vehículos involucrados en Azcapotzalco. El propio titular señala un fallecimiento, sin que esta ficha agregue cifras ni identidades. Se requiere consultar la nota original para conocer el punto exacto, las circunstancias y los reportes oficiales, sin atribuir responsabilidades sin pruebas.",
-          "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOanlNYkx3cTU3SlFxVWdJLUNaU3FiR3A5M2lJdWJJOEF4cG5CU3hkOWdzRHB1Qkt0MUlPeHdocjI2MTh5eUUwcTNzLU13WHkyMURhTGpzUTZCRHJ0NnViV05EYzN5LXc0RlFZNkItQmJOQUpETGkxVnVLc1AzSUx1Y09HU0IwTUJHV2NKRE1naTZTZk5pLThhNk56YWFybHpwUmdPTWdNZE9sRUFqaUYwX2RqdEV5ZGNMTUdIRGdDLU52eW9mQ2d2Unh0Z0xaYk1zTTVRdjhucw?oc=5",
-          "source": "El Sol de México",
-          "date": "2026-11-01",
-          "published_at": "2026-11-01T23:17:45Z",
-          "category": "Movilidad",
-          "borough": "Azcapotzalco",
-          "location": "Azcapotzalco (mencionada en el titular)",
-          "local_url": "/noticias/?id=8c547b7fe5bfe8c87e95&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con El Sol de México, el titular publicado es: «Muere hombre en situación de calle atropellado cerca de gasolinera en Azcapotzalco». De acuerdo con El Sol de México, se informa de un hecho vial relacionado con personas o vehículos involucrados en Azcapotzalco. El propio titular señala un fallecimiento, sin que esta ficha agregue cifras ni identidades. Se requiere consultar la nota original para conocer el punto exacto, las circunstancias y los reportes oficiales, sin atribuir responsabilidades sin pruebas.",
-            "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
-            "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
         }
       ]
     },
     {
       "name": "Benito Juárez",
-      "count": 71,
+      "count": 73,
       "articles": [
+        {
+          "title": "Choque en Benito Juárez: Camioneta se mete a tienda en Mixcoac y Revolución en CDMX",
+          "description": "De acuerdo con TV Azteca, el titular publicado es: «Choque en Benito Juárez: Camioneta se mete a tienda en Mixcoac y Revolución en CDMX». De acuerdo con TV Azteca, se informa de un hecho vial relacionado con vehículos en Benito Juárez. El encabezado no permite determinar por sí solo si hubo personas lesionadas o fallecidas. Se requiere consultar la nota original para conocer el punto exacto, las circunstancias y los reportes oficiales, sin atribuir responsabilidades sin pruebas.",
+          "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxOSWU1V3RrMDlhNGJLb2piRUdpaEFHbU1rajhBeXBLb0lzWGhtSlI3SVlBSkkxQUswRGU5TjhGS2V3dm1wODd0UnVxVG9Kd3l4bHRpdllyWWhJV1ZfQjVSbUJsQnJlMjR6b0VmZnd0WEpuRVdPdTQ5WGxBQ0lRdHJJOExUTHFNR2phanBseV9MOG5FRDBXUGNINFVUd0ZQSW1KcW5ZelA5T3pleV92ZDdkdU1mVjctaDdudm5lNk1HWXdaLWZqRkNNaHA1LXh1OTQ1aHZ2TFFPM3pBRUNDeXNWXzlKZXNjMWJNUHBpNE03Tjl3b0xJWUpJ?oc=5",
+          "source": "TV Azteca",
+          "date": "2026-11-08",
+          "published_at": "2026-11-08T14:40:22Z",
+          "category": "Movilidad",
+          "borough": "Benito Juárez",
+          "location": "Benito Juárez (mencionada en el titular)",
+          "local_url": "/noticias/?id=b14d3621d91ac7f8587f&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con TV Azteca, el titular publicado es: «Choque en Benito Juárez: Camioneta se mete a tienda en Mixcoac y Revolución en CDMX». De acuerdo con TV Azteca, se informa de un hecho vial relacionado con vehículos en Benito Juárez. El encabezado no permite determinar por sí solo si hubo personas lesionadas o fallecidas. Se requiere consultar la nota original para conocer el punto exacto, las circunstancias y los reportes oficiales, sin atribuir responsabilidades sin pruebas.",
+            "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
+            "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "commons_175612248",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/Troleb%C3%BAs_de_la_L%C3%ADnea_2_sobre_Avenida_Yucat%C3%A1n.jpg/960px-Troleb%C3%BAs_de_la_L%C3%ADnea_2_sobre_Avenida_Yucat%C3%A1n.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "category": "Movilidad",
+            "borough": "",
+            "topic": "Trolebús de la Línea 2 sobre Avenida Yucatán",
+            "keywords": [
+              "Trolebús Ciudad de México"
+            ],
+            "author": "ProtoplasmaKid",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Troleb%C3%BAs_de_la_L%C3%ADnea_2_sobre_Avenida_Yucat%C3%A1n.jpg"
+          }
+        },
         {
           "title": "Clima en Benito Juárez: domingo 8 de noviembre con nubes dispersas y ambiente templado",
           "description": "De acuerdo con El Heraldo de México, el titular publicado es: «Clima en Benito Juárez: domingo 8 de noviembre con nubes dispersas y ambiente templado». El pronóstico recogido por El Heraldo de México se refiere a condiciones meteorológicas en Benito Juárez. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
@@ -1971,6 +2016,24 @@
             "license": "CC BY-SA 4.0",
             "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
             "source": "https://commons.wikimedia.org/wiki/File:Perros_en_el_Parque_Espa%C3%B1a,_Ciudad_de_M%C3%A9xico.jpg"
+          }
+        },
+        {
+          "title": "Guardaparques en Benito Juárez: así será la vigilancia en parques",
+          "description": "De acuerdo con ADN 40, el titular publicado es: «Guardaparques en Benito Juárez: así será la vigilancia en parques». La información publicada por ADN 40 aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNdWJDOUoyTXNrOXhETE84R2ZTVTZfU1Zhc2YzeVdYWGxnNXM5V0tEYkFIZWl1UHlGS2hVVnpLdGVRT0poNDJtaXNFWV9uQU9ZZTNNbm5nMEF4c21UWldMV29tejY0d3d5c2NteU1rcTZrLVUyNUpVUlBxWVJtMmlPUjhMcHF5Z2d5ZU1EYS1aNktFY2REd0E0NXU4QnpHeHhON2VDaF8tVFlfZGx6aFQ2UzdyZG9sR2hRakdVUmhhcjAxZw?oc=5",
+          "source": "ADN 40",
+          "date": "2026-11-06",
+          "published_at": "2026-11-06T22:38:57Z",
+          "category": "CDMX",
+          "borough": "Benito Juárez",
+          "location": "Benito Juárez (mencionada en el titular)",
+          "local_url": "/noticias/?id=1eb4337f2e21f2efe73a&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con ADN 40, el titular publicado es: «Guardaparques en Benito Juárez: así será la vigilancia en parques». La información publicada por ADN 40 aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           }
         },
         {
@@ -2324,69 +2387,31 @@
             "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
             "source": "https://commons.wikimedia.org/wiki/File:Eje_Central_CDMX.jpg"
           }
-        },
-        {
-          "title": "Árbol a punto de Caer Moviliza Cuerpos de Emergencia en Benito Juárez, CDMX",
-          "description": "De acuerdo con N+, el titular publicado es: «Árbol a punto de Caer Moviliza Cuerpos de Emergencia en Benito Juárez, CDMX». La información publicada por N+ aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQMUNEVjNxV2ZaXzhCejBkbTJjbXJ5Uk04cWdDTTZ6Q0pVbTdkSWFnd2laM1RCTXBJMkgxc05GY1h3NkhwMXlxMG15LUJ6RlJRZnB2dTJQdC1qRjAzRTNYYndBcHNlbDhUcThaRXZPSzZBdjlDcGo2TWVrMWpmOEFORWo5cldRU3lGalZhUE1fWk5wazllOXNaQTVZbGNiNHZUbEJRTDdPcjlIZ1BST1FndVVnNDlPYkZVRkFCay03dmp4aUE?oc=5",
-          "source": "N+",
-          "date": "2026-10-28",
-          "published_at": "2026-10-28T21:36:11Z",
-          "category": "CDMX",
-          "borough": "Benito Juárez",
-          "location": "Benito Juárez (mencionada en el titular)",
-          "local_url": "/noticias/?id=dd73614e9175f20da7f1&mes=2026-10",
-          "brief": {
-            "lead": "De acuerdo con N+, el titular publicado es: «Árbol a punto de Caer Moviliza Cuerpos de Emergencia en Benito Juárez, CDMX». La información publicada por N+ aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "alcaldia_benito-juarez",
-            "url": "/assets/alcaldias/benito-juarez.jpg",
-            "category": "CDMX",
-            "borough": "Benito Juárez",
-            "topic": "Parque Hundido, alcaldía Benito Juárez",
-            "author": "User:etnoboris",
-            "license": "CC BY-SA 3.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Parque_Hundido.jpeg"
-          }
-        },
-        {
-          "title": "Alcaldía Benito Juárez atiende más de 45 encharcamientos tras intensas lluvias",
-          "description": "De acuerdo con El Universal, el titular publicado es: «Alcaldía Benito Juárez atiende más de 45 encharcamientos tras intensas lluvias». El pronóstico recogido por El Universal se refiere a lluvias en Benito Juárez. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
-          "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxQdUdSN0dXM2lJS2pBVnhPZE5NNERVMWJ3SWZPeHViRjJlRFZ5eFpwV0YwMDhpTW1UTjhhQnlWRTRhTzVmekpjNkRMMERVUlowLWlYSFRYSjJVdUpwa080QUNtZzJjck9WYWZVWlJiS18xaUpSdUY4dmtIOWliMFp6ajc3ZzJlZWROZ1I3QmRsUng2QndHb3BlUExreFczRFl4WThNN0cxcDdyR1RVbmVDTC1iVXd4cXBicjZxVFA4Uk1wRWdnTlFpM0J2cDNQTzVOVzd2a2xXWDlOMnFsVDZGZk9uQ3JFeWRUeU1NSGYtSdIBgwJBVV95cUxOSTVXN0NKdzlublAzR0hUeUFTZGVSN0I2em9TMVZFdzQ2bkhtcVVrY1RjdmFuaTlFMmpGc1NyblRCVVFkWDZ2emZLX1BNQnI5ZHEwNFRmWWtXdUpfOEI4MmlZQUNxaDg5YlE0UHFhYlNfSUMtTklBb0lzc2VDaVhMeEcwY1I3dXNVSUItMFU2ZE96R1hiWnpJREc2T1l5RUxCZVBqNzNuOVB6YlVBdmc0ZHk4YWdSVXZUMEZMZnFuX3RGckJJMFRkeURwaE14VUlFMG45eHRtalpWTFJmVi1rVnRrd25Nek9LN191ajZEUGwzWW5TeVh0OXZFdGdQa3FUd1RJ?oc=5",
-          "source": "El Universal",
-          "date": "2026-10-28",
-          "published_at": "2026-10-28T18:43:57Z",
-          "category": "CDMX",
-          "borough": "Benito Juárez",
-          "location": "Benito Juárez (mencionada en el titular)",
-          "local_url": "/noticias/?id=4eabc8508aa4f21bb713&mes=2026-10",
-          "brief": {
-            "lead": "De acuerdo con El Universal, el titular publicado es: «Alcaldía Benito Juárez atiende más de 45 encharcamientos tras intensas lluvias». El pronóstico recogido por El Universal se refiere a lluvias en Benito Juárez. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "alcaldia_benito-juarez",
-            "url": "/assets/alcaldias/benito-juarez.jpg",
-            "category": "CDMX",
-            "borough": "Benito Juárez",
-            "topic": "Parque Hundido, alcaldía Benito Juárez",
-            "author": "User:etnoboris",
-            "license": "CC BY-SA 3.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Parque_Hundido.jpeg"
-          }
         }
       ]
     },
     {
       "name": "Coyoacán",
-      "count": 159,
+      "count": 160,
       "articles": [
+        {
+          "title": "Clima en Coyoacán hoy domingo 8 de noviembre: ambiente templado con nubes dispersas",
+          "description": "De acuerdo con El Heraldo de México, el titular publicado es: «Clima en Coyoacán hoy domingo 8 de noviembre: ambiente templado con nubes dispersas». El pronóstico recogido por El Heraldo de México se refiere a condiciones meteorológicas en Coyoacán. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
+          "url": "https://news.google.com/rss/articles/CBMingJBVV95cUxNcUxlb1pFWWxGTXVrRzR6c0dxSHM3SENFSGN0djlISWJEM3lFZjktU3BSTGVlTl9UQ0g2bWJXYWVHa21ZVnRzRFc5dTJNd1V0WWVFcWM3NE1rMXVhcEpsdGFQclQ4cGhzTnFpbnN5WHNVRTNiT3BGa1hyd2NCZi1pYjFEMW9lbEpiaHpxWnRQS1ZYQVpjRzAycVZVOVFYMlFsbVZTN1ZLUDFVRGNkaXBKOVozczNtcDloQ2dlRTc2NkdFejA1blVEbGFJVF82bVNRU254cy1JdndhcXE1dlNNRzZkUmYxOEkxVEE5QjdzajV2VFpnSG12VHU1UHkwQnJGSk9oMzNHSjFpRnJFeXEtaXBjYnZsUTNRWkE2Z1Rn?oc=5",
+          "source": "El Heraldo de México",
+          "date": "2026-11-07",
+          "published_at": "2026-11-08T05:00:31Z",
+          "category": "CDMX",
+          "borough": "Coyoacán",
+          "location": "Coyoacán (mencionada en el titular)",
+          "local_url": "/noticias/?id=72032d54c50755a865d3&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con El Heraldo de México, el titular publicado es: «Clima en Coyoacán hoy domingo 8 de noviembre: ambiente templado con nubes dispersas». El pronóstico recogido por El Heraldo de México se refiere a condiciones meteorológicas en Coyoacán. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          }
+        },
         {
           "title": "Vecinos de Coyoacán recolectan firmas en contra del proyecto inmobiliario Skyline de 15 niveles",
           "description": "De acuerdo con RegeneraciónMX, el titular publicado es: «Vecinos de Coyoacán recolectan firmas en contra del proyecto inmobiliario Skyline de 15 niveles». La información publicada por RegeneraciónMX aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -3100,46 +3125,31 @@
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           }
-        },
-        {
-          "title": "Hannah de Lamadrid consolida liderazgo social en Coyoacán de cara al proceso de 2027",
-          "description": "De acuerdo con El Sol de México, el titular publicado es: «Hannah de Lamadrid consolida liderazgo social en Coyoacán de cara al proceso de 2027». La información publicada por El Sol de México aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNX3MzV3Utb0FBRXhxQXgwekpnbHBGRTdPSFF2T1V5bFA1U18xcVVza3NPRTNEVWphallhU18yMXlWUFdheEVMelZLaFZGcE9iMGNLMFZUQWJxYm5qb1d6NGkzbEE3Y3oyN3ZQY3g2UU0xWlVCTlM0b1pBaGtNNUNWMkltd3VTbVRQbWNFYWpZanJfRXRsRXVvUUg5c1poZE45aEFjLTdfaFdrWnNIQ0VteDZTc01NWDhyT3hoOEtnOVpKblp4TDlHXzl4WFg?oc=5",
-          "source": "El Sol de México",
-          "date": "2026-11-04",
-          "published_at": "2026-11-04T19:23:31Z",
-          "category": "CDMX",
-          "borough": "Coyoacán",
-          "location": "Coyoacán (mencionada en el titular)",
-          "local_url": "/noticias/?id=436800c239830c5319f8&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con El Sol de México, el titular publicado es: «Hannah de Lamadrid consolida liderazgo social en Coyoacán de cara al proceso de 2027». La información publicada por El Sol de México aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "commons_88843613",
-            "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Casa_Gonz%C3%A1lez_de_Cos%C3%ADo%2C_Coyoac%C3%A1n%2C_Ciudad_de_M%C3%A9xico.jpg/960px-Casa_Gonz%C3%A1lez_de_Cos%C3%ADo%2C_Coyoac%C3%A1n%2C_Ciudad_de_M%C3%A9xico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "category": "CDMX",
-            "borough": "",
-            "topic": "Casa González de Cosío, Coyoacán, Ciudad de México",
-            "keywords": [
-              "CDMX"
-            ],
-            "author": "ProtoplasmaKid",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Casa_Gonz%C3%A1lez_de_Cos%C3%ADo,_Coyoac%C3%A1n,_Ciudad_de_M%C3%A9xico.jpg"
-          }
         }
       ]
     },
     {
       "name": "Cuajimalpa de Morelos",
-      "count": 32,
+      "count": 33,
       "articles": [
+        {
+          "title": "Clima hoy en Cuajimalpa de Morelos: Pronóstico para este domingo 8 de noviembre",
+          "description": "De acuerdo con El Heraldo de México, el titular publicado es: «Clima hoy en Cuajimalpa de Morelos: Pronóstico para este domingo 8 de noviembre». El pronóstico recogido por El Heraldo de México se refiere a condiciones meteorológicas en Cuajimalpa de Morelos. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
+          "url": "https://news.google.com/rss/articles/CBMingJBVV95cUxPZlY3aklyVkRsa0prMm1NLVpFc2lsX2hwWTlCazJFZjFudWViWDg5SVF0clRjemd0WmVnNlZLcWEzdDV6ckFuTW1HY1Z2dVU5MmJsbk1zenpxTW02dkNLT3lmb1NIVFAtQy1MVGZIQ1ZWT0hKSDV1NHlrSE5oek1UOFczcU9MRUR5bDBjVEF3empFSU9hVVN1QWdnRi1JZGJaeTlfOUZ1WUlTeEM1RDdfMW1mZzZUX3pOblEyYTFaSjVrX1Mya2M4SC0wVDhtbDRzaC1wZjhUSGp5MW9FWGV1ZU1hMDhjM1JPZDVSQnljeGJIbTh0U2xKSmFodlhodUVhTTkzTndDNnp3a2RUd3d0Z2Y3M0o3M2ZPazZEbnRn?oc=5",
+          "source": "El Heraldo de México",
+          "date": "2026-11-07",
+          "published_at": "2026-11-08T05:00:00Z",
+          "category": "CDMX",
+          "borough": "Cuajimalpa de Morelos",
+          "location": "Cuajimalpa de Morelos (mencionada en el titular)",
+          "local_url": "/noticias/?id=d783a72291545727d5a8&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con El Heraldo de México, el titular publicado es: «Clima hoy en Cuajimalpa de Morelos: Pronóstico para este domingo 8 de noviembre». El pronóstico recogido por El Heraldo de México se refiere a condiciones meteorológicas en Cuajimalpa de Morelos. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          }
+        },
         {
           "title": "Mejoró seguridad en Cuajimalpa con tecnología, vigilancia y operativos",
           "description": "De acuerdo con Cúspide México, el titular publicado es: «Mejoró seguridad en Cuajimalpa con tecnología, vigilancia y operativos». La información publicada por Cúspide México aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -3791,41 +3801,31 @@
             "license": "CC BY-SA 3.0",
             "source": "https://commons.wikimedia.org/wiki/File:CuajimalpaCentro01.JPG"
           }
-        },
-        {
-          "title": "2777: En posesión de una réplica de arma de fuego, probables narcóticos y vaporizadores, policías de la SSC detuvieron a un hombre en calles de la alcaldía Cuajimalpa de Morelos",
-          "description": "De acuerdo con Secretaría de Seguridad Ciudadana de la CDMX, el titular publicado es: «2777: En posesión de una réplica de arma de fuego, probables narcóticos y vaporizadores, policías de la SSC detuvieron a un hombre en calles de la alcaldía Cuajimalpa de Morelos». La información publicada por Secretaría de Seguridad Ciudadana de la CDMX aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE83MnQtUnhhVXpZR1BLcVFmRWd4Q0RzT21vck5TZkJKckVEam1oR0lTcGxZX2FnQ2dfcUtsX3hjblByV0htM2NLbTljSW5wcXBtajhHWTJvT0pzSzNmR01uNHUxT09NSlR2cnZkNTg5bWFWdw?oc=5",
-          "source": "Secretaría de Seguridad Ciudadana de la CDMX",
-          "date": "2026-10-15",
-          "published_at": "2026-10-15T18:32:02Z",
-          "category": "CDMX",
-          "borough": "Cuajimalpa de Morelos",
-          "location": "Cuajimalpa de Morelos (mencionada en el titular)",
-          "local_url": "/noticias/?id=17b975ec039cc200ed00&mes=2026-10",
-          "brief": {
-            "lead": "De acuerdo con Secretaría de Seguridad Ciudadana de la CDMX, el titular publicado es: «2777: En posesión de una réplica de arma de fuego, probables narcóticos y vaporizadores, policías de la SSC detuvieron a un hombre en calles de la alcaldía Cuajimalpa de Morelos». La información publicada por Secretaría de Seguridad Ciudadana de la CDMX aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "alcaldia_cuajimalpa",
-            "url": "/assets/alcaldias/cuajimalpa.jpg",
-            "category": "CDMX",
-            "borough": "Cuajimalpa de Morelos",
-            "topic": "Centro del antiguo pueblo de Cuajimalpa",
-            "author": "AlejandroLinaresGarcia",
-            "license": "CC BY-SA 3.0",
-            "source": "https://commons.wikimedia.org/wiki/File:CuajimalpaCentro01.JPG"
-          }
         }
       ]
     },
     {
       "name": "Cuauhtémoc",
-      "count": 69,
+      "count": 70,
       "articles": [
+        {
+          "title": "Motociclista Choca Contra Camión de Bomberos en la Alcaldía Cuauhtémoc, CDMX",
+          "description": "De acuerdo con N+, el titular publicado es: «Motociclista Choca Contra Camión de Bomberos en la Alcaldía Cuauhtémoc, CDMX». La información publicada por N+ aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPV3Yzdl9POGFMeFlEM0FaLWhLM05nNDVRNWFaUHZXdC1KdkVTc3U5VTdQNVN1N1RBaWtzd1U0X2tHMEkwN0RJeXk2d0t1QUJUZEZXMXhfVEMyc19KSkRWVk5TWTZuMFJIMU9LNkFzd1NJc0wwRVQ4MGFBMl95YXc0TnNzTVVpZzU1Mi1NbmlMMHM2QmEyNm5mbDhBcGJXUjBPaGpjZDVhN3FhYnIzVmhGSXV4Vm1McWN6anJVMEJ5UlhuUVlPV3FLQXJMZlFTOG9ZUlIwT2E2TmxfZU1kdWNOSFVhZTZSVWM?oc=5",
+          "source": "N+",
+          "date": "2026-11-08",
+          "published_at": "2026-11-08T14:33:59Z",
+          "category": "CDMX",
+          "borough": "Cuauhtémoc",
+          "location": "Cuauhtémoc (mencionada en el titular)",
+          "local_url": "/noticias/?id=f7e04908f22e4c487062&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con N+, el titular publicado es: «Motociclista Choca Contra Camión de Bomberos en la Alcaldía Cuauhtémoc, CDMX». La información publicada por N+ aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          }
+        },
         {
           "title": "Clima y pronóstico para Alcaldía Cuauhtémoc este domingo 8 de noviembre: Nubes dispersas y ambiente templado",
           "description": "De acuerdo con El Heraldo de México, el titular publicado es: «Clima y pronóstico para Alcaldía Cuauhtémoc este domingo 8 de noviembre: Nubes dispersas y ambiente templado». El pronóstico recogido por El Heraldo de México se refiere a condiciones meteorológicas en Cuauhtémoc. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
@@ -4477,34 +4477,6 @@
             "author": "Timothy Neesam",
             "license": "CC BY-SA 4.0",
             "source": "https://commons.wikimedia.org/wiki/File:Palacio_de_Bellas_Artes%2C_Mexico_City%2C_MX.jpg"
-          }
-        },
-        {
-          "title": "Ale Rojo de la Vega suma 4 mil 332 vehículos retirados en Cuauhtémoc",
-          "description": "De acuerdo con SDPnoticias.com, el titular publicado es: «Ale Rojo de la Vega suma 4 mil 332 vehículos retirados en Cuauhtémoc». La información publicada por SDPnoticias.com aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOVy05RFFDUHYxcEVKM3FHX1hFSGNEd3VIQ3RXZGJPal9lalFpWnRaQW5TdHVWenFLeXRHZC1BWklld0ZsX1pWUXhUelk5a25vLVVfT3hDNUM1bW5yRHRmTHpYeVdXS0x0b09HNUtrb0dzUlpWNjN5X3AzbmlGRlQ5cWxsVkFqVlc0NE45S3psMlExdERuRzBYY0VkTWNNT3dLdS1yQUVELVlpc2FRZlVv?oc=5",
-          "source": "SDPnoticias.com",
-          "date": "2026-10-27",
-          "published_at": "2026-10-27T18:49:18Z",
-          "category": "CDMX",
-          "borough": "Cuauhtémoc",
-          "location": "Cuauhtémoc (mencionada en el titular)",
-          "local_url": "/noticias/?id=d96769529d59d8eb4e16&mes=2026-10",
-          "brief": {
-            "lead": "De acuerdo con SDPnoticias.com, el titular publicado es: «Ale Rojo de la Vega suma 4 mil 332 vehículos retirados en Cuauhtémoc». La información publicada por SDPnoticias.com aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "alcaldia_gustavo-a-madero",
-            "url": "/assets/alcaldias/gustavo-a-madero.jpg",
-            "category": "CDMX",
-            "borough": "Gustavo A. Madero",
-            "topic": "Capilla del Cerrito en el Tepeyac, Gustavo A. Madero",
-            "author": "Catedrales e Iglesias/Cathedrals and Churches",
-            "license": "CC BY 2.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Capilla_Cerrito_del_Tepeyac_%28Basilica_Nuestra_Se%C3%B1ora_de_Guadalupe%29_Gustavo_A_Madero%2C_Ciudad_de_M%C3%A9xico_02.jpg"
           }
         }
       ]
@@ -6441,6 +6413,18 @@
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_miguel-hidalgo",
+            "kind": "representativa",
+            "url": "/assets/alcaldias/miguel-hidalgo.jpg",
+            "category": "CDMX",
+            "borough": "Miguel Hidalgo",
+            "topic": "Bosque de Chapultepec, alcaldía Miguel Hidalgo",
+            "author": "ProtoplasmaKid",
+            "license": "CC0",
+            "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+            "source": "https://commons.wikimedia.org/wiki/File:Audiorama_de_Chapultepec_1.jpg"
           }
         },
         {
@@ -6986,8 +6970,26 @@
     },
     {
       "name": "Milpa Alta",
-      "count": 71,
+      "count": 72,
       "articles": [
+        {
+          "title": "Clima en Milpa Alta: domingo 8 de noviembre con ambiente templado y nubes dispersas",
+          "description": "De acuerdo con El Heraldo de México, el titular publicado es: «Clima en Milpa Alta: domingo 8 de noviembre con ambiente templado y nubes dispersas». El pronóstico recogido por El Heraldo de México se refiere a condiciones meteorológicas en Milpa Alta. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
+          "url": "https://news.google.com/rss/articles/CBMikAJBVV95cUxNd3JVUUk2TWMteGppTVBOUy1YR2JoVkdIU0RVWWRsbXpkUUhtQmMxQnZuQURkeDBOc0ZKY3hJQk0talZIY1d6SVptLXJZQU9PV3RiWFVCN054NlFsRE03QmhEMnd3RzFWY2ZzOUMxbzJkTFhvLVhReG9qQjhJQVNDU2JiRkNoQWtlM1pfNzdpV2swME9fSEtiNVAyTnBIOTBZaWl1UE44NWJJNGFEdkwyNG9QSWxURmV6a1JzcFhyTjFRWlBSRkRsZWQ5QmhPTlFrNmhpSkFmcHV2bGtUd0wwSWptZWtzV2VnVFQzcmNOc2pDWDEyWDVidUtKTV80ZE1HbjlBQVJPNWlwMGxaV1VBSA?oc=5",
+          "source": "El Heraldo de México",
+          "date": "2026-11-07",
+          "published_at": "2026-11-08T05:00:00Z",
+          "category": "CDMX",
+          "borough": "Milpa Alta",
+          "location": "Milpa Alta (mencionada en el titular)",
+          "local_url": "/noticias/?id=5c70d254a71f7a09d13f&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con El Heraldo de México, el titular publicado es: «Clima en Milpa Alta: domingo 8 de noviembre con ambiente templado y nubes dispersas». El pronóstico recogido por El Heraldo de México se refiere a condiciones meteorológicas en Milpa Alta. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          }
+        },
         {
           "title": "Clima en Milpa Alta este sábado 7 de noviembre: cielo claro y temperaturas templadas",
           "description": "De acuerdo con El Heraldo de México, el titular publicado es: «Clima en Milpa Alta este sábado 7 de noviembre: cielo claro y temperaturas templadas». El pronóstico recogido por El Heraldo de México se refiere a condiciones meteorológicas en Milpa Alta. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
@@ -7552,34 +7554,6 @@
             "context": "La actividad cultural abre oportunidades de encuentro, aprendizaje y disfrute para habitantes y visitantes.",
             "pending": "Los accesos, boletos, sedes, cupos y horarios deben consultarse con la institución organizadora. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
-        },
-        {
-          "title": "Inaugura Octavio Rivero, alcalde en Milpa Alta, el Parque Ecológico y Recreativo Milpa Aventuras, un nuevo espacio para las familias de Milpa Alta",
-          "description": "De acuerdo con Diario Basta!, el titular publicado es: «Inaugura Octavio Rivero, alcalde en Milpa Alta, el Parque Ecológico y Recreativo Milpa Aventuras, un nuevo espacio para las familias de Milpa Alta». La información publicada por Diario Basta! aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxPU3FSRGx0dldpSDVyYkRMVkV1bUw0dmJrZEt4LXJZZGxVcXRTc3REcHFGeno3QXJORHYtejJrRlZ1WDlUaFFFS3BYcFZJb2N4UWxSZ1BFOHdRek82TUROQXJTYkNwTTdvSnBMYUlreEp4TENSdVM1OHdiS1ByUEFPODQ2T1ZqLUo1MDBHTGlJMkNMYlM2ZWY1R1c2M2xIM3dRcEgxNDg1RzlPdFdaV0ZmeFlCdXdFV2JjWTdPN09NTjVWdGlwUTZuMDNnM1pxdnRKWWhzOGtPY19VOUR3THE0cEQ0NUpyVnFnamN2NU9xU3JVUk9feGlFYXMwMlpWbUJQZlRPVFNHVzdCY0E?oc=5",
-          "source": "Diario Basta!",
-          "date": "2026-10-26",
-          "published_at": "2026-10-27T02:35:13Z",
-          "category": "CDMX",
-          "borough": "Milpa Alta",
-          "location": "Milpa Alta (mencionada en el titular)",
-          "local_url": "/noticias/?id=e0995f8303304d107e5b&mes=2026-10",
-          "brief": {
-            "lead": "De acuerdo con Diario Basta!, el titular publicado es: «Inaugura Octavio Rivero, alcalde en Milpa Alta, el Parque Ecológico y Recreativo Milpa Aventuras, un nuevo espacio para las familias de Milpa Alta». La información publicada por Diario Basta! aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "alcaldia_milpa-alta",
-            "url": "/assets/alcaldias/milpa-alta.jpg",
-            "category": "CDMX",
-            "borough": "Milpa Alta",
-            "topic": "Villa Milpa Alta y su entorno rural",
-            "author": "Comisión Mexicana de Filmaciones from México D. F., México",
-            "license": "CC BY-SA 2.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Villa_Milpa_Alta%2C_Ciudad_de_M%C3%A9xico_%2832886264042%29.jpg"
           }
         }
       ]
@@ -8953,7 +8927,7 @@
     },
     {
       "name": "Venustiano Carranza",
-      "count": 29,
+      "count": 30,
       "articles": [
         {
           "title": "Clima en Venustiano Carranza: domingo 8 de noviembre con ambiente templado y nubes dispersas",
@@ -9004,6 +8978,24 @@
           "local_url": "/noticias/?id=55ce7b201e4d646a6854&mes=2026-11",
           "brief": {
             "lead": "De acuerdo con Eje Central, el titular publicado es: «Detienen a cuatro personas con más de 3 mil dosis de droga en Venustiano Carranza; una menor entre los arrestados». Una nota de Eje Central comunica un caso relacionado con una detención o una presunta conducta delictiva en Venustiano Carranza. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
+            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          }
+        },
+        {
+          "title": "Detienen a Cuatro Presuntos Integrantes de Célula Delictiva en Venustiano Carranza",
+          "description": "De acuerdo con N+, el titular publicado es: «Detienen a Cuatro Presuntos Integrantes de Célula Delictiva en Venustiano Carranza». Una nota de N+ comunica un caso relacionado con una detención o una presunta conducta delictiva en Venustiano Carranza. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
+          "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOQUlraTZNXzZmam8tNXgwcV9PUDNyWXk3UXhPbzg5SWJPbEJSa2dGcWZoOUs2NXgtNHZ3NkxjZGtFejVSRmt3bUlGblY3a1lvYXRReU5leFA5QzBTc0xvNzhJQTZNeklTdDQyb2c5SzEzcWE2ckRsLUM2N3FuWGRxdmxVR0ptbENxZ21XNGpWVl9qM2ozNGtPYXBwOVpaaF9ud3o5MGNfU3Z4ZXlURGVwTkFGTlQtWW9QeEJUQzhMdG92OGlFQkFmajZkQkZJS2FRVzN4M1Byc1ZaSks4T1dnNURR?oc=5",
+          "source": "N+",
+          "date": "2026-11-07",
+          "published_at": "2026-11-07T17:15:29Z",
+          "category": "Seguridad",
+          "borough": "Venustiano Carranza",
+          "location": "Venustiano Carranza (mencionada en el titular)",
+          "local_url": "/noticias/?id=9ecd420f3789d5c2db86&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con N+, el titular publicado es: «Detienen a Cuatro Presuntos Integrantes de Célula Delictiva en Venustiano Carranza». Una nota de N+ comunica un caso relacionado con una detención o una presunta conducta delictiva en Venustiano Carranza. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
             "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
             "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
@@ -9598,46 +9590,31 @@
             "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
             "source": "https://commons.wikimedia.org/wiki/File:Graduaci%C3%B3n_de_la_Polic%C3%ADa_de_la_Ciudad_de_M%C3%A9xico_-i---i-_(36810771760).jpg"
           }
-        },
-        {
-          "title": "Tractocamión provoca accidente y pierde la vida un biker en Venustiano Carranza",
-          "description": "De acuerdo con El Sol de México, el titular publicado es: «Tractocamión provoca accidente y pierde la vida un biker en Venustiano Carranza». De acuerdo con El Sol de México, se informa de un hecho vial relacionado con personas o vehículos involucrados en Venustiano Carranza. El propio titular señala un fallecimiento, sin que esta ficha agregue cifras ni identidades. Se requiere consultar la nota original para conocer el punto exacto, las circunstancias y los reportes oficiales, sin atribuir responsabilidades sin pruebas.",
-          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOQjhnRlpKai1VRm85aUU4ei0zeHc2OU9DMnpnZXJncEItZEFKMmZvdVItYURLdTFJMGkyYWs2OEV3dWFGSGJxQTdhaGJjSHdFcGhLLVNPNVNoVFlKa1Jzbk0wb28xQU1FdWctOUdpbkNUWno2VnJHMU5WNlJMSjZ4VlRHSUZaRXJfTEtjSk9USTFwZnlWQUFrc29XM05ldDVZRU1oeFdVRQ?oc=5",
-          "source": "El Sol de México",
-          "date": "2026-10-16",
-          "published_at": "2026-10-16T07:00:00Z",
-          "category": "Movilidad",
-          "borough": "Venustiano Carranza",
-          "location": "Venustiano Carranza (mencionada en el titular)",
-          "local_url": "/noticias/?id=83a01d81a35df3cd28df&mes=2026-10",
-          "brief": {
-            "lead": "De acuerdo con El Sol de México, el titular publicado es: «Tractocamión provoca accidente y pierde la vida un biker en Venustiano Carranza». De acuerdo con El Sol de México, se informa de un hecho vial relacionado con personas o vehículos involucrados en Venustiano Carranza. El propio titular señala un fallecimiento, sin que esta ficha agregue cifras ni identidades. Se requiere consultar la nota original para conocer el punto exacto, las circunstancias y los reportes oficiales, sin atribuir responsabilidades sin pruebas.",
-            "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
-            "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "commons_145192396",
-            "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/DECLARATORIA_DE_CARNAVALES_COMO_PATRIMONIO_CULTURAL_INMATERIAL_DE_LA_CIUDAD_DE_M%C3%89XICO_04.jpg/960px-DECLARATORIA_DE_CARNAVALES_COMO_PATRIMONIO_CULTURAL_INMATERIAL_DE_LA_CIUDAD_DE_M%C3%89XICO_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "category": "CDMX",
-            "borough": "",
-            "topic": "DECLARATORIA DE CARNAVALES COMO PATRIMONIO CULTURAL INMATERIAL DE LA CIUDAD DE MÉXICO 04",
-            "keywords": [
-              "Calles Ciudad de México"
-            ],
-            "author": "Secretaría de Cultura CDMX",
-            "license": "CC BY 2.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-            "source": "https://commons.wikimedia.org/wiki/File:DECLARATORIA_DE_CARNAVALES_COMO_PATRIMONIO_CULTURAL_INMATERIAL_DE_LA_CIUDAD_DE_M%C3%89XICO_04.jpg"
-          }
         }
       ]
     },
     {
       "name": "Xochimilco",
-      "count": 167,
+      "count": 168,
       "articles": [
+        {
+          "title": "Clima en Xochimilco: pronóstico templado para este domingo 8 de noviembre",
+          "description": "De acuerdo con El Heraldo de México, el titular publicado es: «Clima en Xochimilco: pronóstico templado para este domingo 8 de noviembre». El pronóstico recogido por El Heraldo de México se refiere a condiciones meteorológicas en Xochimilco. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
+          "url": "https://news.google.com/rss/articles/CBMingJBVV95cUxQT0VPcFpEeHpZaWFSQVRNNEF6djRnWXRmUElRU0Yya0VjUXhMMVdweXkxLU03VWNRT0x3TmN2MkVycWRBS2pyck5FMjV4aGZOZ0xhUzZITlNrZVhISFlUemZrT21uTnpBemRET1JaWG9NUDAzbXpTZzJGSmpyR3JJSU1CWXpvRFN0aWk0ZC1SaXplbUhqMVRTcWVoOWhFVl91VGhlS3J3WDV5U2RrTlhWRm5hb2RvMUJWOG1jUV9mUTVRTkZIYXFCaThsbmpSQUczMUdSWW4yMi1LYnZISjlrU2hWVEhMb2swaEZJUW11T3hPQzVmU3V2dkZMbFByX1h5WEpWSE12SVZPeHJMbmdKc0R2aldzS2JTMEVUWDln?oc=5",
+          "source": "El Heraldo de México",
+          "date": "2026-11-07",
+          "published_at": "2026-11-08T05:00:00Z",
+          "category": "CDMX",
+          "borough": "Xochimilco",
+          "location": "Xochimilco (mencionada en el titular)",
+          "local_url": "/noticias/?id=46ee3f57249f45b8c409&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con El Heraldo de México, el titular publicado es: «Clima en Xochimilco: pronóstico templado para este domingo 8 de noviembre». El pronóstico recogido por El Heraldo de México se refiere a condiciones meteorológicas en Xochimilco. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          }
+        },
         {
           "title": "Pitbull mata a abuelito de 92 años en Xochimilco; su nieto intentó salvarlo",
           "description": "De acuerdo con Eje Central, el titular publicado es: «Pitbull mata a abuelito de 92 años en Xochimilco; su nieto intentó salvarlo». La información publicada por Eje Central aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -10369,39 +10346,6 @@
             "license": "CC BY-SA 4.0",
             "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
             "source": "https://commons.wikimedia.org/wiki/File:Mariachis_-_Xochimilco,_Ciudad_de_M%C3%A9xico_II.jpg"
-          }
-        },
-        {
-          "title": "Así se Ven desde el Aire las Largas Filas de Vehículos por Bloqueo en Xochimilco, CDMX",
-          "description": "De acuerdo con N+, el titular publicado es: «Así se Ven desde el Aire las Largas Filas de Vehículos por Bloqueo en Xochimilco, CDMX». La información publicada por N+ aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPbHJUSjVUd3I2YU9VYnhDWmNYOWNZWnhidHFfODBHMW9yYmg2SG13REtLRmIyV0YtNmc5Snc3NzAxTU9RS3pZbnYzUkV0RlYyanI5UnBNTC1rUUd2TWtRTkZMV19Ob3dWanB2Wk54WUdocmNuR2dWWDc2SGtGOTZMTXlvLUEwS1EwZTRvZTJ4bEtVYlBmVUI4d2tiaEp0TUI2SmVkMXF1Z1hjZnVWbjdvTGNKdTJXaElrVEh1Q2ZzSVVRYnBXNVowSG1mUzVRNHZqQ0JXMHZSeTNjWlMxaHlzVmhQV3ZVZw?oc=5",
-          "source": "N+",
-          "date": "2026-11-03",
-          "published_at": "2026-11-03T20:21:43Z",
-          "category": "CDMX",
-          "borough": "Xochimilco",
-          "location": "Xochimilco (mencionada en el titular)",
-          "local_url": "/noticias/?id=43c2ed1ad9d900897b7f&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con N+, el titular publicado es: «Así se Ven desde el Aire las Largas Filas de Vehículos por Bloqueo en Xochimilco, CDMX». La información publicada por N+ aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "commons_66033660",
-            "kind": "representativa",
-            "url": "https://upload.wikimedia.org/wikipedia/commons/0/09/Explanada_Delegaci%C3%B3n_Xochimilco%2C_Ciudad_de_M%C3%A9xico_%2832915921061%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-            "category": "CDMX",
-            "borough": "",
-            "topic": "Explanada Delegación Xochimilco, Ciudad de México (32915921061)",
-            "keywords": [
-              "CDMX"
-            ],
-            "author": "Comisión Mexicana de Filmaciones from México D. F., México",
-            "license": "CC BY-SA 2.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Explanada_Delegaci%C3%B3n_Xochimilco,_Ciudad_de_M%C3%A9xico_(32915921061).jpg"
           }
         }
       ]
