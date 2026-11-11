@@ -396,7 +396,7 @@ SUBJECT_RULES = (
     # Las muertes violentas y condenas judiciales no son temas genéricos de CDMX.
     (r"\b(?:ejecutan|ejecutad\w*|ejecucion|matan|balazos|asesinan|homicidio|condenad[oa]s?|condenan|prision)\b", "Seguridad"),
     # Las explosiones de gas e incendios se tratan como emergencias, no como baches o drenaje.
-    (r"\b(?:explosion(?:es)? de gas|tanques? de gas|fugas? de gas|acumulacion de gas|estalla\s+(?:un\s+)?tanque(?:\s+de\s+gas)?|incendios?)\b", "Seguridad"),
+    (r"\b(?:pipas? de gas|gas lp|explosion(?:es)? de gas|tanques? de gas|fugas? de gas|acumulacion de gas|estalla\s+(?:un\s+)?tanque(?:\s+de\s+gas)?|incendios?)\b", "Seguridad"),
     # El RSS puede etiquetar temas recreativos o tecnológicos como Seguridad.
     (r"\b(?:muevete en bici|paseo dominical|bicicletas?|ciclistas?|ciclismo|ciclovias?|ecobici|cicloton)\b", "Movilidad"),
     (r"\b(?:robot|robots|robotica|robotico|roboticos)\b", "CDMX"),
@@ -495,7 +495,7 @@ def _photo_category(article):
 # Si la fototeca no tiene contexto del tema, se prefiere publicar sin imagen.
 STRICT_PHOTO_TOPICS = (
     # Mantener primero la regla de gas: el titular puede incluir un segundo asunto tras dos puntos.
-    (r"\b(?:explosion(?:es)? de gas|tanques? de gas|fugas? de gas|acumulacion de gas|estalla\s+(?:un\s+)?tanque(?:\s+de\s+gas)?|incendios?)\b",
+    (r"\b(?:pipas? de gas|gas lp|explosion(?:es)? de gas|tanques? de gas|fugas? de gas|acumulacion de gas|estalla\s+(?:un\s+)?tanque(?:\s+de\s+gas)?|incendios?)\b",
      r"\b(?:gas|tanques?|cilindros?|fugas?|bomberos|incendios?|extintores?|locales? comerciales?|mercados?|cocinas?|alimentos?)\b"),
     # El deporte adaptado requiere una imagen de la disciplina, no un monumento genérico.
     (r"\b(?:deporte adaptado|discapacidad motriz|baloncesto en silla de ruedas)\b",
@@ -733,6 +733,18 @@ STRICT_PHOTO_TOPICS = (
      # NFL y fútbol americano requieren contexto deportivo, no Metro ni un monumento.
      (r"\b(?:nfl|futbol americano|san francisco 49ers|minnesota vikings)\b",
       r"\b(?:american football|futbol americano|field goal|emparrillado|balon de futbol americano|partido de futbol americano)\b"),
+    # Una pipa de gas volcada requiere contexto de combustible o respuesta de bomberos.
+    (r"\b(?:pipas? de gas|gas lp|tanques? de gas|fugas? de gas|explosiones? de gas)\b",
+     r"\b(?:pipas?|gas|bomberos|incendios?|tanques?|cilindros?|fugas?|explosiones?|camiones? cisterna|camiones? tanque)\b"),
+    # Las chinampas requieren canales de Xochimilco o agricultura chinampera, no una plaza.
+    (r"\b(?:chinampas?|arca tierra|lucio usobiaga)\b",
+     r"\b(?:chinampas?|canales? de xochimilco|agricultura chinampera|cultivos? chinamperos?|hortalizas?|productores? de xochimilco|suelo de conservacion)\b"),
+    # El Día del Soltero necesita contexto de comercio, compras u ofertas.
+    (r"\b(?:dia del soltero|single(?:s)? day)\b",
+     r"\b(?:mercados?|compras?|tiendas?|ofertas?|descuentos?|comercio|centros? comerciales?|escaparates?|ventas?)\b"),
+    # La licencia permanente requiere contexto del trámite de conducción, no oficinas genéricas.
+    (r"\b(?:licencia permanente|licencia de conducir|modulos? de licencias?)\b",
+     r"\b(?:licencia(?:s)? de conducir|licencia permanente|modulos? de licencias?|tramite vehicular|semovi|control vehicular|examen de manejo)\b"),
 )
 
 def _photo_score(article, photo):
