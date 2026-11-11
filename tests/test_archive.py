@@ -797,6 +797,62 @@ class BoroughAndArchiveTests(unittest.TestCase):
         self.assertFalse(news.still_valid(old, cutoff))
         self.assertTrue(news.still_valid(current, cutoff))
 
+    def test_same_source_url_versions_merge_without_losing_titles(self):
+        first_date = "2026-11-10"
+        second_date = "2026-11-11"
+        first = fake("Arca Tierra y Lucio Usobiaga reciben reconocimiento por proteger Xochimilco", first_date)
+        second = fake("Lucio Usobiaga gana reconocimiento por preservar Xochimilco", second_date)
+        second["url"] = first["url"]
+        first = news.standardize(first)
+        second = news.standardize(second)
+        now = datetime(2026, 11, 11, 18, 0, tzinfo=timezone.utc)
+
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            archive = root / "archivo"
+            archive.mkdir()
+            news.write_json(archive / "2026-11.json", {
+                "month": "2026-11", "articles": [first]
+            })
+            with patch.multiple(news, ARCHIVE_DIR=archive,
+                                BOROUGH_DIR=root / "alcaldias", DEST=root / "news.json"):
+                news.consolidate_archive([second], now - timedelta(days=365), "Prueba")
+                saved = json.loads((archive / "2026-11.json").read_text(encoding="utf-8"))
+                self.assertEqual(len(saved["articles"]), 1)
+                primary = saved["articles"][0]
+                self.assertEqual(primary["title"], second["title"])
+                self.assertEqual(len(primary["alternate_versions"]), 1)
+                self.assertEqual(primary["alternate_versions"][0]["title"], first["title"])
+                self.assertEqual(primary["alternate_versions"][0]["date"], first_date)
+
+                # Una ejecución posterior no debe perder las versiones conservadas.
+                news.consolidate_archive([], now - timedelta(days=365), "Prueba posterior")
+                again = json.loads((archive / "2026-11.json").read_text(encoding="utf-8"))
+                self.assertEqual(len(again["articles"]), 1)
+                self.assertEqual(again["articles"][0]["alternate_versions"][0]["title"], first["title"])
+
+    def test_same_source_url_in_different_months_keeps_monthly_archive_entries(self):
+        first = news.standardize(fake("Titular original de una noticia en CDMX", "2026-10-31"))
+        second = news.standardize(fake("Titular actualizado de una noticia en CDMX", "2026-11-01"))
+        second["url"] = first["url"]
+        second = news.standardize(second)
+        now = datetime(2026, 11, 11, 18, 0, tzinfo=timezone.utc)
+
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            archive = root / "archivo"
+            archive.mkdir()
+            news.write_json(archive / "2026-10.json", {
+                "month": "2026-10", "articles": [first]
+            })
+            with patch.multiple(news, ARCHIVE_DIR=archive,
+                                BOROUGH_DIR=root / "alcaldias", DEST=root / "news.json"):
+                news.consolidate_archive([second], now - timedelta(days=365), "Prueba")
+                october = json.loads((archive / "2026-10.json").read_text(encoding="utf-8"))
+                november = json.loads((archive / "2026-11.json").read_text(encoding="utf-8"))
+                self.assertEqual(len(october["articles"]), 1)
+                self.assertEqual(len(november["articles"]), 1)
+
     def test_months_merge_and_old_files_deleted(self):
         now=datetime.now(timezone.utc)
         date=(now-timedelta(days=1)).date().isoformat()
@@ -1010,6 +1066,26 @@ class BoroughAndArchiveTests(unittest.TestCase):
             "Las calles de la CDMX tendrán actividades, incluyendo marchas y plantones",
             "Cultura"), "Movilidad")
 
+
+    def test_delivery_worker_mobilizations_are_mobility_unless_security_is_reported(self):
+        self.assertEqual(news.category_by_headline(
+            "Conductores y repartidores alistan movilización en CDMX este miércoles",
+            "Seguridad"), "Movilidad")
+        self.assertEqual(news.category_by_headline(
+            "Repartidores de aplicación toman HOY la CDMX: qué calles cerrarán este 11 de noviembre",
+            "CDMX"), "Movilidad")
+        self.assertEqual(news.category_by_headline(
+            "Bloqueo de Repartidores en la Glorieta de Camarones, Azcapotzalco, CDMX: Alternativas Viales",
+            "CDMX"), "Movilidad")
+        self.assertEqual(news.category_by_headline(
+            "Alcaldía Benito Juárez llama a resolver controversias ante manifestación de repartidores",
+            "CDMX"), "Movilidad")
+        self.assertEqual(news.category_by_headline(
+            "Repartidores protestan por vecino armado y vandalizan caseta en CDMX",
+            "CDMX"), "Seguridad")
+        self.assertEqual(news.category_by_headline(
+            "Repartidores bloquean una avenida tras presunta amenaza con arma",
+            "CDMX"), "Seguridad")
 
     def test_current_portada_photos_require_subject_not_only_cdmx_context(self):
         # Incongruencias observadas el 2 de noviembre en el índice público.
