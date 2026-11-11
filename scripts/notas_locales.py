@@ -885,7 +885,7 @@ def _photo_score(article, photo):
         return -10000
     # Una graduación policial no ilustra una muerte violenta o sentencia penal.
     if (re.search(r"\b(?:ejecutan|ejecutad\w*|ejecucion|matan|balazos|asesinan|homicidio|condenad[oa]s?|condenan|prision)\b", headline)
-            and re.search(r"\b(?:graduacion|ceremonia de policia|entrega de patrullas)\b", topic)):
+            and re.search(r"\b(?:graduacion|ceremonia de policia|(?:adquisicion|compra|presentacion|entrega)\b.*\b(?:nuevas?\s+)?patrullas?|entrega de patrullas)\b", topic)):
         return -10000
     # Una nota del Hoy No Circula requiere contexto vehicular, no fotos de la festividad.
     if re.search(r"\bhoy no circula\b", headline):
