@@ -481,7 +481,7 @@ STRICT_PHOTO_TOPICS = (
      r"\b(?:aeropuertos?|aviones?|aeronaves?|aviacion|terminal aerea|pista de aterrizaje|hangar de mantenimiento|mantenimiento aeronautico)\b"),
     # La apertura de hoteles exige una imagen de hospedaje, no un jardín cercano.
     (r"\bhyatt\b",
-     r"\b(?:hoteles?|hospedaje|alojamiento|resort|habitaciones?|recepcion|lobby)\b"),
+     r"\b(?:hotel(?:es)?|hospedaje|alojamiento|resort|habitaciones?|recepcion|lobby)\b"),
     # Las rachas meteorológicas no se ilustran con una plaza sin contexto del clima.
     (r"\brachas?\b",
      r"\b(?:viento|rachas?|meteorologia|clima|nubes?|cielo nublado|tormenta|temperatura|frio)\b"),
