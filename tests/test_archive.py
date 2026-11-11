@@ -893,14 +893,18 @@ class BoroughAndArchiveTests(unittest.TestCase):
     def test_archive_repairs_unrelated_photo_and_preserves_verified_photo(self):
         now = datetime.now(timezone.utc)
         date = (now - timedelta(days=1)).date().isoformat()
-        old = news.standardize(fake("Muévete en Bici recorre seis alcaldías", date))
+        old_raw = fake("Muévete en Bici recorre seis alcaldías", date)
+        old_raw["url"] = "https://example.org/muevete-en-bici-seis-alcaldias"
+        old = news.standardize(old_raw)
         old["category"] = "Seguridad"  # Etiqueta RSS anterior, corregida al releer.
         old["photo"] = {
             "id": "patrullas", "kind": "representativa",
             "category": "Seguridad", "topic": "Entrega de patrullas",
             "url": "/assets/fotos/patrullas.jpg",
         }
-        verified = news.standardize(fake("Ciclistas recorren avenida de CDMX", date))
+        verified_raw = fake("Ciclistas recorren avenida de CDMX", date)
+        verified_raw["url"] = "https://example.org/ciclistas-recorren-avenida-cdmx"
+        verified = news.standardize(verified_raw)
         verified["photo"] = {
             "id": "hecho_confirmado", "kind": "hecho", "verified": True,
             "category": "Movilidad", "topic": "Ciclistas en la avenida",
@@ -1048,9 +1052,13 @@ class BoroughAndArchiveTests(unittest.TestCase):
     def test_unrelated_rss_headline_is_archived_without_reaching_cdmx_homepage(self):
         now = datetime.now(timezone.utc)
         date = now.date().isoformat()
-        outside = news.standardize(fake(
-            "Trágico accidente en la carretera federal 307 deja una mujer sin vida", date))
-        local = news.standardize(fake("Choque en Eje Central, CDMX", date))
+        outside_raw = fake(
+            "Trágico accidente en la carretera federal 307 deja una mujer sin vida", date)
+        outside_raw["url"] = "https://example.org/accidente-carretera-federal-307"
+        outside = news.standardize(outside_raw)
+        local_raw = fake("Choque en Eje Central, CDMX", date)
+        local_raw["url"] = "https://example.org/choque-eje-central-cdmx"
+        local = news.standardize(local_raw)
         self.assertEqual(news.homepage_articles([outside, local], [], now), [local])
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
