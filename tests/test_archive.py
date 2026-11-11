@@ -465,7 +465,7 @@ class BoroughAndArchiveTests(unittest.TestCase):
              "CDMX", "CDMX", "Zócalo de la Ciudad de México, México",
              "Medio Ambiente", "Viento y nubes sobre Ciudad de México"),
             ("El taller de Mexicana de Aviación en el AICM busca dueño: siete empresas se disputan la compra antes de 2027",
-             "Metro", "Metro", "Estación Hidalgo (Línea 3) del Metro de la Ciudad de México 01",
+             "Metro", "Metro", "Metro Terminal Aérea (2026) 1",
              "CDMX", "Hangar de mantenimiento de aviones en el Aeropuerto Internacional de la Ciudad de México"),
             ("CDMX: Hyatt abrirá dos nuevos hoteles que sumarán 361 cuartos",
              "CDMX", "CDMX", "Jardin Escénico del Bosque de Chapultepec 02",

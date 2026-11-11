@@ -478,7 +478,7 @@ STRICT_PHOTO_TOPICS = (
      r"\b(?:musica|conciertos?|guitarras?|bandas?|escenarios?|rock|cantantes?|festivales?|auditorios?|estadios?)\b"),
     # Un taller de aviación en el AICM no se ilustra con una estación del Metro.
     (r"\b(?:aicm|mexicana de aviacion)\b",
-     r"\b(?:aeropuertos?|aviones?|aeronaves?|aviacion|terminal aerea|pista de aterrizaje|hangar de mantenimiento|mantenimiento aeronautico)\b"),
+     r"\b(?:aicm|aeropuertos?|aviones?|aeronaves?|aviacion|terminal aeroportuaria|pista de aterrizaje|hangar de mantenimiento|mantenimiento aeronautico)\b"),
     # La apertura de hoteles exige una imagen de hospedaje, no un jardín cercano.
     (r"\bhyatt\b",
      r"\b(?:hotel(?:es)?|hospedaje|alojamiento|resort|habitaciones?|recepcion|lobby)\b"),
