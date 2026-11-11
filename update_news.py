@@ -39,6 +39,7 @@ RETENTION_DAYS = 365
 ARCHIVE_VERSION_FIELDS = (
     "title", "description", "url", "source", "date", "published_at",
     "category", "borough", "location", "local_url", "brief", "photo",
+    "editorial_verified", "sensitive_media",
 )
 
 BOROUGHS = (
