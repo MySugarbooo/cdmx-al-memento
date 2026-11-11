@@ -777,10 +777,7 @@ def _photo_score(article, photo):
         return -10000
     # En titulares en vivo, el texto tras dos puntos puede resumir otros asuntos;
     # para la pertinencia visual se prioriza el hecho principal antes de los dos puntos.
-    gas_emergency = bool(re.search(
-        r"\\b(?:explosion(?:es)? de gas|tanques? de gas|fugas? de gas|acumulacion de gas|estalla\\s+(?:un\\s+)?tanque(?:\\s+de\\s+gas)?|incendios?)\\b",
-        headline,
-    ))
+    gas_emergency = bool(re.search(STRICT_PHOTO_TOPICS[0][0], headline))
     strict_headline = _photo_fold(raw_headline.split(":", 1)[0]) if gas_emergency else headline
     # El título y el descriptor deben compartir el asunto real de la nota.
     for headline_pattern, photo_pattern in STRICT_PHOTO_TOPICS:
