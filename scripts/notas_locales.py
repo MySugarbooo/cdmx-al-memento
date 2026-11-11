@@ -445,6 +445,12 @@ RELATED_WORDS = (
      ("hospital", "salud", "clinica", "imss", "issste")),
     (r"\b(?:desazolve|drenaje|agua potable)\w*\b",
      ("agua", "desazolve", "drenaje")),
+    (r"\b(?:pipas? de gas|gas lp|tanques? de gas|fugas? de gas|explosiones? de gas)\b",
+     ("bomberos", "pipas", "gas", "tanques", "camiones cisterna")),
+    (r"\b(?:chinampas?|arca tierra|lucio usobiaga)\b",
+     ("canales", "xochimilco", "chinampas", "agricultura", "hortalizas")),
+    (r"\b(?:dia del soltero|single(?:s)? day)\b",
+     ("mercado", "mercados", "compras", "tiendas", "ofertas", "comercio")),
 )
 
 def _photo_fold(text):
