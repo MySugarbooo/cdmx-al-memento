@@ -434,8 +434,10 @@ RELATED_WORDS = (
      ("policia", "patrulla", "seguridad")),
     (r"\b(?:lluvia|inundacion|tormenta|clima)\w*\b",
      ("lluvia", "agua", "clima", "nubes", "cielo")),
-    (r"\b(?:marcha|protesta|manifestacion|bloqueo)\w*\b",
-     ("movilidad", "vialidad", "reforma", "calle")),
+    (r"\b(?:marcha|protest\w*|manifestacion|bloque\w*|movilizacion|concentracion|planton)\w*\b",
+     ("marcha", "protesta", "manifestacion", "manifestantes", "bloqueo",
+      "movilizacion", "concentracion", "planton", "cacerolazo",
+      "trabajadores", "repartidores", "motociclistas")),
     (r"\b(?:catrina|dia de muertos|desfile)\w*\b",
      ("catrina", "catrinas", "desfile")),
     (r"\b(?:automovili|formula 1|gran premio|autodromo|circuito)\w*\b",
@@ -562,8 +564,10 @@ STRICT_PHOTO_TOPICS = (
     # Fotos representativas deben corresponder al asunto, no solo a la ciudad.
     (r"\b(?:panteones?|cementerios?|camposantos?)\b",
      r"\b(?:panteones?|cementerios?|camposantos?|tumbas?|sepulturas?|ofrendas? funerarias?)\b"),
-    (r"\b(?:movilizaciones?|manifestaciones?|plantones?|concentraciones?)\b",
-     r"\b(?:movilizaciones?|manifestaciones?|plantones?|concentraciones?|protestas?|marchas?|bloqueos?|trafico|transito|vehicular|congestion|cierres? viales?|bicicletas?|ciclistas?|rodadas?|ecobici)\b"),
+    (r"\b(?:movilizacion(?:es)?|manifestacion(?:es)?|planton(?:es)?|concentracion(?:es)?|protest\w*|marcha(?:s)?|bloque\w*)\b",
+     r"\b(?:movilizacion(?:es)?|manifestacion(?:es)?|planton(?:es)?|concentracion(?:es)?|protest\w*|manifestantes?|marcha(?:s)?|bloque\w*|cacerolazo|repartidores?|trabajadores?|motociclistas?|trafico|transito|vehicular|congestion|cierres? viales?|bicicletas?|ciclistas?|rodadas?|ecobici)\b"),
+    (r"\b(?:repartidores?|conductores? de aplicacion)\b.*\b(?:toman|bloque\w*|calles? cerraran)\b",
+     r"\b(?:repartidores?|conductores?|manifestantes?|protest\w*|marcha(?:s)?|bloque\w*|cacerolazo|movilizacion(?:es)?|trabajadores?|motociclistas?)\b"),
     (r"\bdel campo a tu colonia\b",
      r"\b(?:campo|mercados?|agricultura|productores?|verduras?|hortalizas?|cosecha|suelo de conservacion|venta directa|alimentos?)\b"),
     (r"\b(?:artz pedregal|antara)\b",
@@ -758,6 +762,10 @@ def _photo_score(article, photo):
     """Puntúa relación real con el título; nunca declara un hecho verificado."""
     raw_headline=str(article.get("title") or "")
     headline=_photo_fold(raw_headline)
+    headline_for_photos=re.sub(
+        r"\b(?:pone|ponen|puso|poner|puesta|entra|entro|entrara)\s+en\s+marcha\b",
+        "activa", headline,
+    )
     topic=_photo_fold(photo.get("topic"))
     keywords=_photo_fold(" ".join(str(x) for x in photo.get("keywords",[])))
     context=topic+" "+keywords
@@ -815,11 +823,26 @@ def _photo_score(article, photo):
         r"\b(?:jauria|sloopy|lobito|perros?|perritos?|mascotas?)\b", headline
     ))
     animal_photo = bool(re.search(r"\b(?:perros?|caninos?|mascotas?)\b", context))
+    protest_story = bool(
+        re.search(
+            r"\b(?:movilizacion(?:es)?|manifestacion(?:es)?|planton(?:es)?|concentracion(?:es)?|protest\w*|marcha(?:s)?|bloque\w*)\b",
+            headline_for_photos,
+        )
+        or re.search(
+            r"\b(?:repartidores?|conductores? de aplicacion)\b.*\b(?:toman|bloque\w*|calles? cerraran)\b",
+            headline_for_photos,
+        )
+    )
+    protest_photo = bool(re.search(
+        r"\b(?:movilizacion(?:es)?|manifestacion(?:es)?|planton(?:es)?|concentracion(?:es)?|protest\w*|manifestantes?|marcha(?:s)?|bloque\w*|cacerolazo|repartidores?|trabajadores?|motociclistas?)\b",
+        context,
+    ))
     themed_category = (
         (photo_category == "Cultura" and music_story and music_photo)
         or (photo_category == "Medio Ambiente" and (
             (weather_story and weather_photo) or (animal_story and animal_photo)
         ))
+        or (protest_story and protest_photo)
     )
     # Una categoría distinta no basta por sí sola para considerar pertinente una foto.
     if photo_category not in (category, "CDMX", "Alcaldías") and not themed_category:
@@ -846,12 +869,20 @@ def _photo_score(article, photo):
         return -10000
     # En titulares en vivo, el texto tras dos puntos puede resumir otros asuntos;
     # para la pertinencia visual se prioriza el hecho principal antes de los dos puntos.
-    gas_emergency = bool(re.search(STRICT_PHOTO_TOPICS[0][0], headline))
-    strict_headline = _photo_fold(raw_headline.split(":", 1)[0]) if gas_emergency else headline
+    gas_emergency = bool(re.search(STRICT_PHOTO_TOPICS[0][0], headline_for_photos))
+    strict_headline = _photo_fold(raw_headline.split(":", 1)[0]) if gas_emergency else headline_for_photos
     # El título y el descriptor deben compartir el asunto real de la nota.
     for headline_pattern, photo_pattern in STRICT_PHOTO_TOPICS:
         if re.search(headline_pattern, strict_headline) and not re.search(photo_pattern, context):
             return -10000
+    # Una amenaza sin protesta requiere contexto de seguridad, no un simulacro.
+    threat_story = bool(re.search(r"\b(?:amenaz\w*|vecino armado)\b", headline_for_photos))
+    threat_photo = bool(re.search(
+        r"\b(?:policias?|patrullas?|seguridad|fiscalia|investigacion penal|operativo policial)\b",
+        context,
+    ))
+    if threat_story and not protest_story and not threat_photo:
+        return -10000
     # Una protesta sin componente ciclista no se ilustra con estaciones de EcoBici.
     # Sí conservar imágenes de rodadas cuando el titular las menciona expresamente.
     if (re.search(r"\b(?:movilizaciones?|manifestaciones?|plantones?|concentraciones?)\b", headline)
@@ -991,14 +1022,14 @@ def _photo_score(article, photo):
         score+=170
     elif borough and borough in keywords:
         score+=100
-    tokens={x for x in headline.split() if len(x)>3 and x not in STOP_WORDS}
+    tokens={x for x in headline_for_photos.split() if len(x)>3 and x not in STOP_WORDS}
     for word in tokens:
         if re.search(r"\b"+re.escape(word)+r"\b",topic):
             score+=34
         elif re.search(r"\b"+re.escape(word)+r"\b",keywords):
             score+=12
     for pattern,similar in RELATED_WORDS:
-        if re.search(pattern,headline) and any(
+        if re.search(pattern,headline_for_photos) and any(
             re.search(r"\b"+re.escape(word)+r"\b",topic) for word in similar
         ):
             score+=80
