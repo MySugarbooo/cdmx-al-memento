@@ -747,6 +747,20 @@ def _photo_score(article, photo):
     photo_category=str(photo.get("category") or "CDMX")
     if not topic or SENSITIVE_CONTEXT.search(topic):
         return -10000
+    # En robos y detenciones, la coincidencia de alcaldía no basta:
+    # exigir una imagen con contexto de seguridad antes de puntuar el lugar.
+    crime_story = bool(re.search(
+        r"\b(?:robo|robos|roban|robado|robada|robaron|detienen|detenido\w*|"
+        r"arrestan|capturan|aprehenden|asalto|asaltan|extorsion|extorsionan)\b",
+        headline,
+    ))
+    crime_context = bool(re.search(
+        r"\b(?:policias?|patrullas?|seguridad|fiscalia|detencion|operativo policial|"
+        r"ministerio publico|investigacion penal|escena del crimen)\b",
+        context,
+    ))
+    if category == "Seguridad" and crime_story and not crime_context:
+        return -10000
     # No presentar patrullas o acciones policiales en noticias ajenas a Seguridad.
     if category!="Seguridad" and (
         photo_category=="Seguridad" or

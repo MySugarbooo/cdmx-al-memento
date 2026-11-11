@@ -5,6 +5,7 @@ from pathlib import Path
 from tempfile import TemporaryDirectory
 from unittest.mock import patch
 
+import update_news
 from scripts import notas_locales as photos
 
 
@@ -254,6 +255,53 @@ class NewsPhotoPolicyTests(unittest.TestCase):
                 self.assertEqual(stats["del_hecho_verificadas"], 0)
                 self.assertEqual(article["photo"]["kind"], "representativa")
                 self.assertFalse(article["photo"].get("verified", False))
+
+    def test_cable_theft_is_security_and_requires_security_context_photo(self):
+        title = "Detienen a hombre por robo de cable de alumbrado público en Iztapalapa"
+        article = dict(ARTICLE, title=title, category="CDMX", borough="Iztapalapa")
+        metro = dict(
+            context_photo("metro_iztapalapa"),
+            topic="Metro Iztapalapa 02",
+            category="Alcaldías",
+            keywords=["Iztapalapa Ciudad de México"],
+        )
+        patrol = dict(
+            context_photo("archivo_seguridad_002"),
+            topic="Patrulla vecinal",
+            category="Seguridad",
+            keywords=["patrulla", "seguridad"],
+        )
+
+        self.assertEqual(update_news.category_by_headline(title, "CDMX"), "Seguridad")
+        self.assertEqual(
+            update_news.category_by_headline(
+                "Robo de cable de alumbrado público en Iztapalapa", "CDMX"
+            ),
+            "Seguridad",
+        )
+        archived = update_news.standardize({
+            "title": title,
+            "url": "https://news.google.com/rss/articles/cable-theft-test",
+            "source": "Sociedad Noticias",
+            "date": "2026-11-11",
+            "category": "CDMX",
+            "photo": metro,
+        })
+        self.assertEqual(archived["category"], "Seguridad")
+        self.assertLess(photos._photo_score(archived, archived["photo"]), 0)
+        self.assertLess(photos._photo_score(article, metro), 0)
+        self.assertGreaterEqual(photos._photo_score(article, patrol), 0)
+
+        with patch.object(photos, "_pool", return_value=[metro, patrol]):
+            with patch.object(
+                photos,
+                "VERIFIED_EVENTS",
+                Path("/tmp/never-loaded-cable-theft-photo-registry.json"),
+            ):
+                photos.assign_photos([article])
+
+        self.assertEqual(article["photo"]["id"], "archivo_seguridad_002")
+        self.assertEqual(article["photo"]["kind"], "representativa")
 
 
 if __name__ == "__main__":

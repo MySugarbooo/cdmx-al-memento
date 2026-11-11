@@ -272,6 +272,11 @@ def category_by_headline(title, feed_category):
     if (feed_category in {"CDMX", "Gobierno"}
             and re.search(r"\b(?:grupos? criminales?|organizaciones? criminales?|crimen organizado)\b", normalized)):
         return "Seguridad"
+    # Robos de infraestructura y bienes no deben quedarse como CDMX genérico.
+    if (feed_category in {"CDMX", "Gobierno", "Cultura"}
+            and re.search(r"\b(?:robo|robos|roban|robado|robada|robaron)\b", normalized)
+            and re.search(r"\b(?:cable|alumbrado|vehiculo|vehiculos|auto|autopartes|celular|casa|vivienda|negocio|comercio|mercancia|tienda|dinero|joyas|equipo|carga|medidor|tuberia|materiales)\b", normalized)):
+        return "Seguridad"
     # Una agresión violenta no es Cultura por mencionar el Día de Muertos.
     if (feed_category in {"CDMX", "Gobierno", "Cultura"}
             and re.search(r"\b(?:ataque armado|balacera|asesina(?:n)? a|asesinad\w*|asesinato)\b", normalized)):
@@ -312,7 +317,7 @@ def category_by_headline(title, feed_category):
     # Una detención de personas es seguridad, aunque el RSS venga de Gobierno.
     # Exigir "a" y una referencia humana evita confundirla con obras detenidas.
     if (feed_category in {"Gobierno", "CDMX"}
-            and re.search(r"\b(?:detienen|arrestan|capturan|aprehenden)\s+a\s+(?:\d+|un|una|dos|tres|cuatro|cinco|seis|siete|ocho|nueve|diez|varios|varias|personas|hombres|mujeres)\b", normalized)):
+            and re.search(r"\b(?:detienen|arrestan|capturan|aprehenden)\s+a\s+(?:\d+|un|una|dos|tres|cuatro|cinco|seis|siete|ocho|nueve|diez|varios|varias|hombre|mujer|sujeto|individuo|persona|joven|menor|personas|hombres|mujeres)\b", normalized)):
         return "Seguridad"
     # Una ley de movilidad es un asunto vial aunque el RSS la clasifique como Seguridad.
     if re.search(r"\bley de movilidad\b", normalized):
