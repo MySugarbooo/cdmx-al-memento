@@ -2,6 +2,7 @@
 import unittest
 
 from scripts.notas_locales import _photo_category, _photo_score, assign_photos
+import update_news as news
 from update_news import category_by_headline
 
 
@@ -13,6 +14,59 @@ class PhotoRelevanceTests(unittest.TestCase):
             "Un robot en el centro de la Ciudad de México", "Seguridad"), "CDMX")
         self.assertEqual(category_by_headline(
             "Policía utiliza robot para investigar un robo", "Seguridad"), "Seguridad")
+
+    def test_execution_headline_uses_security_and_rejects_ciclovia_photo(self):
+        title = "VIDEO | Ejecutan a un hombre en la colonia Libertad, alcaldía Azcapotzalco"
+        self.assertEqual(category_by_headline(title, "CDMX"), "Seguridad")
+        article = news.standardize({
+            "title": title,
+            "url": "https://news.google.com/rss/articles/execution-regression",
+            "source": "Diario de México",
+            "date": "2026-11-11",
+            "category": "CDMX",
+        })
+        self.assertEqual(article["category"], "Seguridad")
+        ciclovia = {
+            "category": "Alcaldías",
+            "topic": "Ciclovía en proceso en la Alcaldía Azcapotzalco",
+            "keywords": ["Azcapotzalco Ciudad de México"],
+        }
+        patrol = {
+            "category": "Seguridad",
+            "topic": "Jeep policia cdmx",
+            "keywords": ["policia"],
+        }
+        self.assertLess(_photo_score(article, ciclovia), 0)
+        self.assertGreaterEqual(_photo_score(article, patrol), 0)
+        assign_photos([article])
+        self.assertEqual(article["photo"]["category"], "Seguridad")
+        self.assertTrue(any(word in article["photo"]["topic"].casefold()
+                            for word in ("policia", "patrulla")))
+
+    def test_nfl_event_is_not_metro_and_uses_licensed_football_photo(self):
+        title = ("NFL en México: estas son todas las actividades que podrás disfrutar "
+                 "en las calles de la CDMX previo al juego de San Francisco 49ers "
+                 "vs Minnesota Vikings")
+        self.assertEqual(category_by_headline(title, "Metro"), "CDMX")
+        article = news.standardize({
+            "title": title,
+            "url": "https://news.google.com/rss/articles/nfl-regression",
+            "source": "Infobae",
+            "date": "2026-11-11",
+            "category": "Metro",
+        })
+        self.assertEqual(article["category"], "CDMX")
+        self.assertNotIn("servicio del Metro", article["brief"]["lead"])
+        metro = {
+            "category": "Metro",
+            "topic": "Estación Ermita de la Línea 12 del Metro de la Ciudad de México",
+            "keywords": ["Metro Ciudad de México"],
+        }
+        self.assertLess(_photo_score(article, metro), 0)
+        assign_photos([article])
+        self.assertEqual(article["photo"]["id"], "contexto_futbol_americano_nfl")
+        self.assertEqual(article["photo"]["author"], "Torsten Bolten, AFpix.de")
+        self.assertEqual(article["photo"]["license"], "CC BY-SA 3.0")
 
     def test_mismatched_patrol_image_is_rejected(self):
         patrol = {"topic": "Adquisición de patrullas para la Policía",
