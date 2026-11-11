@@ -181,6 +181,40 @@ class NewsPhotoPolicyTests(unittest.TestCase):
         self.assertEqual(article["photo"]["kind"], "representativa")
         self.assertEqual(stats["assigned"], 1)
 
+    def test_adaptive_sports_story_uses_wheelchair_basketball_context(self):
+        article = dict(
+            ARTICLE,
+            title="Plantean a Clara Brugada festival de deporte adaptado para personas con discapacidad motriz en CDMX",
+            category="Gobierno",
+        )
+        unrelated = dict(
+            context_photo("bellas_artes"),
+            topic="Palacio de Bellas Artes, Ciudad de México",
+            category="Cultura",
+            keywords=["Cultura"],
+        )
+        wheelchair = next(
+            photo for photo in photos._pool()
+            if photo["id"] == "contexto_baloncesto_silla_ruedas"
+        )
+
+        self.assertLess(photos._photo_score(article, unrelated), 0)
+        self.assertGreaterEqual(photos._photo_score(article, wheelchair), 0)
+        self.assertEqual(wheelchair["author"], "2010 World Wheelchair Basketball Championship")
+        self.assertEqual(wheelchair["license"], "CC BY 2.0")
+        self.assertTrue(wheelchair["source"].startswith("https://commons.wikimedia.org/wiki/File:"))
+
+        with patch.object(
+            photos,
+            "VERIFIED_EVENTS",
+            Path("/tmp/never-loaded-adaptive-sports-photo-registry.json"),
+        ):
+            stats = photos.assign_photos([article])
+
+        self.assertEqual(article["photo"]["id"], "contexto_baloncesto_silla_ruedas")
+        self.assertEqual(article["photo"]["kind"], "representativa")
+        self.assertEqual(stats["assigned"], 1)
+
     def test_subject_outranks_generic_category_or_unrelated_picture(self):
         examples = (
             ("Desfile de Catrinas en el Zócalo de CDMX", "Cultura",
