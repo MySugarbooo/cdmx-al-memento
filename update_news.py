@@ -246,6 +246,11 @@ def published_datetime(value):
 def category_by_headline(title, feed_category):
     """Corrige etiquetas RSS evidentes sin inventar ubicaciones o hechos."""
     normalized = fold(title)
+    # La agenda de NFL y fútbol americano en CDMX es deportiva, no del Metro.
+    if re.search(r"\b(?:nfl|futbol americano|san francisco 49ers|minnesota vikings)\b", normalized):
+        if re.search(r"\b(?:cierres? viales?|calles? cerradas?|trafico|congestionamiento|desvios?|rutas? alternas?|alternativas? viales?)\b", normalized):
+            return "Movilidad"
+        return "CDMX"
     # El automovilismo es deporte, no un aviso de tránsito ni del Metro.
     # Solo sus cierres y afectaciones viales pertenecen a Movilidad.
     if re.search(r"\b(?:formula 1|gp ciudad de mexico|gran premio|nascar)\b", normalized):
@@ -279,7 +284,7 @@ def category_by_headline(title, feed_category):
         return "Seguridad"
     # Una agresión violenta no es Cultura por mencionar el Día de Muertos.
     if (feed_category in {"CDMX", "Gobierno", "Cultura"}
-            and re.search(r"\b(?:ataque armado|balacera|asesina(?:n)? a|asesinad\w*|asesinato)\b", normalized)):
+            and re.search(r"\b(?:ejecutan|ejecutad\w*|ejecucion|ataque armado|balacera|asesina(?:n)? a|asesinad\w*|asesinato)\b", normalized)):
         return "Seguridad"
     # Las agresiones por disparos se clasifican como Seguridad aunque el RSS diga CDMX.
     if (feed_category in {"CDMX", "Gobierno", "Cultura"}
