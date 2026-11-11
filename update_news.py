@@ -366,6 +366,12 @@ def category_by_headline(title, feed_category):
             and re.search(r"\b(?:robot|robots|robotica|robotico|roboticos)\b", normalized)
             and not re.search(r"\b(?:policias?|patrullas?|fiscalia|delito|detenidos?)\b", normalized)):
         return "CDMX"
+    # Si el titular identifica expresamente al Gobierno de la Ciudad de México,
+    # clasificarlo como Gobierno aunque el RSS lo haya agrupado en CDMX.
+    # Las reglas específicas de Seguridad y Movilidad anteriores conservan prioridad.
+    if (feed_category in {"CDMX", "Gobierno"}
+            and re.search(r"\bgobierno de la ciudad de mexico\b", normalized)):
+        return "Gobierno"
     return feed_category
 
 

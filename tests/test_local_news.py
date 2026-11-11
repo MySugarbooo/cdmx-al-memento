@@ -2,6 +2,7 @@
 import unittest
 from pathlib import Path
 from scripts.notas_locales import assign_photos, local_link, summarize
+from update_news import category_by_headline
 
 ROOT=Path(__file__).resolve().parents[1]
 
@@ -77,6 +78,15 @@ class LocalNewsTests(unittest.TestCase):
         lead = summarize(article)["lead"]
         self.assertIn("Metro, Metrobús y Tren Suburbano", lead)
         self.assertNotIn("solo", lead.casefold())
+
+    def test_capital_government_plan_headline_is_classified_as_government(self):
+        title = ("EN UN HECHO HISTÓRICO, APRUEBA GOBIERNO DE LA CIUDAD DE MÉXICO "
+                 "EL PROYECTO DEL PLAN GENERAL DE DESARROLLO 2025-2045 "
+                 "Y LO ENVÍA AL CONGRESO LOCAL.")
+        self.assertEqual(category_by_headline(title, "CDMX"), "Gobierno")
+        # Una regla general de Gobierno no debe ocultar una detención específica.
+        security_title = "Detienen a un hombre tras operativo del Gobierno de la Ciudad de México"
+        self.assertEqual(category_by_headline(security_title, "CDMX"), "Seguridad")
 
     def test_reader_is_internal_and_signed(self):
         html=(ROOT/"noticias/index.html").read_text(encoding="utf-8")
