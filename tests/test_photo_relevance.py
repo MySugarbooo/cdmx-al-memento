@@ -253,6 +253,59 @@ class PhotoRelevanceTests(unittest.TestCase):
             with self.subTest(title=title, topic=topic):
                 self.assertLess(_photo_score(article, photo), 0)
 
+    def test_delivery_worker_stories_reject_landmarks_and_keep_protest_context(self):
+        cases = [
+            (
+                "Repartidores protestan por vecino armado y vandalizan caseta en CDMX",
+                "Seguridad", "Monumento a Colón Paseo de la Reforma Ciudad de México 6", "CDMX",
+            ),
+            (
+                "Conductores y repartidores alistan movilización en CDMX este miércoles",
+                "Movilidad", "Macrosimulacro 2019 Ciudad de México 08", "Seguridad",
+            ),
+            (
+                "Bloqueo de Repartidores en la Glorieta de Camarones, Azcapotzalco, CDMX: Alternativas Viales",
+                "Movilidad", "Torre Latinoamericana desde Calle Madero, Ciudad de México", "CDMX",
+            ),
+            (
+                "Alcaldía Benito Juárez llama a resolver controversias por la vía legal ante manifestación de repartidores",
+                "Movilidad", "Parque Hundido, alcaldía Benito Juárez", "Alcaldías",
+            ),
+            (
+                "Difunden imágenes con el rostro del sujeto que amenazó a un repartidor",
+                "Seguridad", "Macrosimulacro 2019 Ciudad de México 01", "Seguridad",
+            ),
+            (
+                "Repartidores de aplicación toman HOY la CDMX: qué calles cerrarán este 11 de noviembre",
+                "Movilidad", "Monumento a Colón Paseo de la Reforma Ciudad de México 6", "CDMX",
+            ),
+        ]
+        for title, category, topic, photo_category in cases:
+            article = {"title": title, "category": category, "borough": ""}
+            photo = {"topic": topic, "category": photo_category, "keywords": []}
+            with self.subTest(title=title, topic=topic):
+                self.assertLess(_photo_score(article, photo), 0)
+
+        article = {
+            "title": "Repartidores protestan por vecino armado y vandalizan caseta en CDMX",
+            "category": "Seguridad", "borough": "",
+        }
+        protest_photo = {
+            "topic": "Cacerolazo contra la violencia - Ciudad de México - 1",
+            "category": "CDMX", "keywords": ["protesta", "manifestantes"],
+        }
+        self.assertGreaterEqual(_photo_score(article, protest_photo), 0)
+        assign_photos([article])
+        self.assertRegex(
+            article["photo"]["topic"].casefold(),
+            r"cacerolazo|marcha por la paz|manifestaci[oó]n",
+        )
+        self.assertEqual(article["photo"]["kind"], "representativa")
+        self.assertTrue(article["photo"].get("author"))
+        self.assertTrue(article["photo"].get("license"))
+        self.assertTrue(article["photo"].get("licenseUrl"))
+        self.assertTrue(article["photo"].get("source"))
+
     def test_published_choices_are_not_police_photos(self):
         articles = [
             {"title": "Muévete en Bici 1 de noviembre", "category": "Seguridad",
