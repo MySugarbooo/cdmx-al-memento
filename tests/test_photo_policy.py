@@ -146,6 +146,41 @@ class NewsPhotoPolicyTests(unittest.TestCase):
         self.assertEqual(article["photo"]["id"], "linea_12")
         self.assertEqual(article["photo"]["kind"], "representativa")
 
+    def test_gas_explosion_uses_bomberos_photo_not_unrelated_drainage(self):
+        article = dict(
+            ARTICLE,
+            title="Explosión de gas en local de Azcapotzalco: Baches, socavones y otras afectaciones en CDMX hoy",
+            category="CDMX",
+        )
+        drainage = dict(
+            context_photo("desazolve"),
+            topic="Programa de desazolves 2019 04",
+            category="CDMX",
+            keywords=["Drenaje Ciudad de México"],
+        )
+        firefighters = dict(
+            context_photo("bomberos"),
+            topic="Equipo de trabajo de los Bomberos CDMX IMG 2922",
+            category="Seguridad",
+            keywords=["Bomberos Ciudad de México"],
+        )
+
+        self.assertEqual(photos._photo_category(article), "Seguridad")
+        self.assertLess(photos._photo_score(article, drainage), 0)
+        self.assertGreaterEqual(photos._photo_score(article, firefighters), 0)
+
+        with patch.object(photos, "_pool", return_value=[drainage, firefighters]):
+            with patch.object(
+                photos,
+                "VERIFIED_EVENTS",
+                Path("/tmp/never-loaded-gas-photo-registry.json"),
+            ):
+                stats = photos.assign_photos([article])
+
+        self.assertEqual(article["photo"]["id"], "bomberos")
+        self.assertEqual(article["photo"]["kind"], "representativa")
+        self.assertEqual(stats["assigned"], 1)
+
     def test_subject_outranks_generic_category_or_unrelated_picture(self):
         examples = (
             ("Desfile de Catrinas en el Zócalo de CDMX", "Cultura",
