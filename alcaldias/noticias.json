@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-11 15:46 UTC",
+  "updated": "2026-11-11 16:07 UTC",
   "boroughs": [
     {
       "name": "La Magdalena Contreras",
@@ -2549,6 +2549,28 @@
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "contexto_baloncesto_silla_ruedas",
+            "kind": "representativa",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/e/e0/2010_World_Wheelchair_Basketball_Championship_Mexico_and_UK.jpg",
+            "category": "CDMX",
+            "borough": "",
+            "topic": "Partido de baloncesto en silla de ruedas entre México y Gran Bretaña; Campeonato Mundial 2010, Birmingham, Reino Unido (imagen representativa; no corr",
+            "keywords": [
+              "deporte adaptado",
+              "discapacidad motriz",
+              "baloncesto en silla de ruedas",
+              "deporte paralímpico",
+              "paralímpico",
+              "silla de ruedas",
+              "personas con discapacidad",
+              "México"
+            ],
+            "author": "2010 World Wheelchair Basketball Championship",
+            "license": "CC BY 2.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+            "source": "https://commons.wikimedia.org/wiki/File:2010_World_Wheelchair_Basketball_Championship_Mexico_and_UK.jpg"
           }
         },
         {
@@ -4010,6 +4032,21 @@
             "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
             "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "commons_114047310",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Busto_de_Cuauht%C3%A9moc_en_el_z%C3%B3calo_de_la_CDMX_01.jpg/960px-Busto_de_Cuauht%C3%A9moc_en_el_z%C3%B3calo_de_la_CDMX_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "category": "CDMX",
+            "borough": "",
+            "topic": "Busto de Cuauhtémoc en el zócalo de la CDMX 01",
+            "keywords": [
+              "Zócalo Ciudad de México"
+            ],
+            "author": "Luis Alvaz",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Busto_de_Cuauht%C3%A9moc_en_el_z%C3%B3calo_de_la_CDMX_01.jpg"
           }
         },
         {
@@ -5787,8 +5824,38 @@
     },
     {
       "name": "Iztapalapa",
-      "count": 234,
+      "count": 235,
       "articles": [
+        {
+          "title": "Iztapalapa celebrará el ritual prehispánico del Fuego Nuevo con recorridos por Cerro de la Estrella, danzas y peregrinación",
+          "description": "De acuerdo con Infobae, el titular publicado es: «Iztapalapa celebrará el ritual prehispánico del Fuego Nuevo con recorridos por Cerro de la Estrella, danzas y peregrinación». La información publicada por Infobae aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxQdDJrWFROXzlQTWNNTDB6cmR3RUJ6ZjFrenhOdWxqNzJCY1lMOUdmc1ZYRVc2Uk9UbHEzcWM5cU9hTmZVTmh3VnY3LTdxNlhDYVNSS3RDMXQtaEF2VE5PYlRKSWxiMmJSTU1ULV9vZ2JNTWJvYnRfUXFjaGRCRl9SRm16Q3RDSlI2REcyT2Fvd1ZhZWIwOXhqUWJpcDVZaHBYeWR6TDBnS2xtWlhqRWQ1cHU0aXZJWDJ0WHNDN1hvTUhsb0ZBOXl5ZUQxcmZfdTJVbUx6N1dMME9CaVJxMEZPZEhBYWt2al9ISmdld0l3eEVneVlZWHRxQdIBkwJBVV95cUxOakpBdnFrbWlwSHdUMDZSVmluZEJpUXRTQ1hvSTNxQXhmRmQ5SFhGcUN4UWRfWGZRdzlGM3U3X01TcWNlazhMQ1c0UWFXZy0wT2FSTjRURlBscXNzdW1rZUNGb0JoeXdVbktTMjFIWW9ZdE12SDh6WTZWYXY3emxWTm4zNmt1LWkyZENQODV3N3EzRkNzaTFOSV9YeXdGUHAxRnhOMWthVGtsQTVSWERncTdnYVpqQ3pJejExVmplZm9fSk5OTjVuWFlUNER2SVhfZ0s1RVBBSEVRQnloUXhzSUR4WkJYWEpDZXFuRG50UkJWVVpxdFlMaXJPTTM3VURxNUMxZEZOTkJRQTZ4X3Q3VEZpWQ?oc=5",
+          "source": "Infobae",
+          "date": "2026-11-11",
+          "published_at": "2026-11-11T15:45:00Z",
+          "category": "CDMX",
+          "borough": "Iztapalapa",
+          "location": "Iztapalapa (mencionada en el titular)",
+          "local_url": "/noticias/?id=3a87fc2e94670d86b5ba&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con Infobae, el titular publicado es: «Iztapalapa celebrará el ritual prehispánico del Fuego Nuevo con recorridos por Cerro de la Estrella, danzas y peregrinación». La información publicada por Infobae aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_iztapalapa",
+            "kind": "representativa",
+            "url": "/assets/alcaldias/iztapalapa.jpg",
+            "category": "CDMX",
+            "borough": "Iztapalapa",
+            "topic": "Vista de Iztapalapa desde el Cerro de la Estrella",
+            "author": "Secretaría de Cultura Ciudad de México from México",
+            "license": "CC BY 2.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+            "source": "https://commons.wikimedia.org/wiki/File:MX_MM_MUSEO_CERRO_DE_LA_ESTRELLA_%2849522225751%29.jpg"
+          }
+        },
         {
           "title": "Detienen a hombre por robo de cable de alumbrado público en Iztapalapa",
           "description": "De acuerdo con Sociedad Noticias, el titular publicado es: «Detienen a hombre por robo de cable de alumbrado público en Iztapalapa». Una nota de Sociedad Noticias comunica un caso relacionado con una detención o una presunta conducta delictiva en Iztapalapa. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
@@ -6414,36 +6481,6 @@
           "local_url": "/noticias/?id=2d703efabeada1600205&mes=2026-11",
           "brief": {
             "lead": "De acuerdo con ContraRéplica, el titular publicado es: «Restituyen vivienda a mujer que denunció despojo desde 2023 en Iztapalapa». La información publicada por ContraRéplica aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "alcaldia_iztapalapa",
-            "kind": "representativa",
-            "url": "/assets/alcaldias/iztapalapa.jpg",
-            "category": "CDMX",
-            "borough": "Iztapalapa",
-            "topic": "Vista de Iztapalapa desde el Cerro de la Estrella",
-            "author": "Secretaría de Cultura Ciudad de México from México",
-            "license": "CC BY 2.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-            "source": "https://commons.wikimedia.org/wiki/File:MX_MM_MUSEO_CERRO_DE_LA_ESTRELLA_%2849522225751%29.jpg"
-          }
-        },
-        {
-          "title": "¡Le atoró el brazo! Erika es arrastrada por auto conducido por su excuñada en Iztapalapa | VIDEO",
-          "description": "De acuerdo con Telediario, el titular publicado es: «¡Le atoró el brazo! Erika es arrastrada por auto conducido por su excuñada en Iztapalapa | VIDEO». La información publicada por Telediario aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQVThGOW9pV1RLZnRpV0pBZWVaQjVPZk96TjloUjBsZnNQR01rYkcycmIwWWtOWFB1ZGhSX1U5T0FZaWNSVmM2eGlSUzB0Rl9KemlGZGt2MFR2d09QUGtMR2RDYVd0NVFhV1pWRWl1NVk2b3JEbVZzMWNzaVlBdWJVaWFYNEF4dWxvR0pBR3ljdnNCUGR3Yzk4YnhONFVabWs50gGgAUFVX3lxTE5RRXdNUjhFdnpzaFZ0QVV3YlpnUDRtWkl0NnRIQmRvYVY1Y0JXeG9HRUV6aXFEVVVZVlRIRnp0WVBUVWdJUUFHVkl4TjcybW83ZTFSUmQ4UHJQNW9UNzQzaTN0dVdQaDlQMlMxcHc1NHpsRVR0YjFSSFAyOF9tekplcXhFcGxtRERFRVlxYTlxZUE4SU41Znc2SGtGbV9wemM?oc=5",
-          "source": "Telediario",
-          "date": "2026-11-06",
-          "published_at": "2026-11-06T19:28:00Z",
-          "category": "CDMX",
-          "borough": "Iztapalapa",
-          "location": "Iztapalapa (mencionada en el titular)",
-          "local_url": "/noticias/?id=876476ead347947e28e6&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con Telediario, el titular publicado es: «¡Le atoró el brazo! Erika es arrastrada por auto conducido por su excuñada en Iztapalapa | VIDEO». La información publicada por Telediario aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
@@ -8355,8 +8392,38 @@
     },
     {
       "name": "Tlalpan",
-      "count": 204,
+      "count": 205,
       "articles": [
+        {
+          "title": "¿Por qué está bloqueada Calzada de Tlalpan hoy 11 de noviembre?",
+          "description": "De acuerdo con El Heraldo de México, el titular publicado es: «¿Por qué está bloqueada Calzada de Tlalpan hoy 11 de noviembre?». La información publicada por El Heraldo de México aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPNFYtMFZPbThpeTF4ODJncXBWNXcwd1FjdFFIQzg5UExodDkxMzNKanJIcEpZQjl6MjdCZUN4UUZNWXEyM1J2Q19GMERwcXlXOF9CZDM5N0xqMHlPWC1sR01lV0hCanJkY2FtcmdpYl9CU2NYV3JmZ2x3ZVhNYlZVUzlwX1F4SnRQWG0tZGJMMkt0Z0xiQ3h3dFdwZl9WdnFRNzVaVWp6T2c0X1FpQl81U0hTcWg5NkN5ZzY2dmN2STM2YkU?oc=5",
+          "source": "El Heraldo de México",
+          "date": "2026-11-11",
+          "published_at": "2026-11-11T15:51:41Z",
+          "category": "CDMX",
+          "borough": "Tlalpan",
+          "location": "Tlalpan (mencionada en el titular)",
+          "local_url": "/noticias/?id=a5f7cdb8f6c2b72f79c4&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con El Heraldo de México, el titular publicado es: «¿Por qué está bloqueada Calzada de Tlalpan hoy 11 de noviembre?». La información publicada por El Heraldo de México aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_tlalpan",
+            "kind": "representativa",
+            "url": "/assets/alcaldias/tlalpan.jpg",
+            "category": "CDMX",
+            "borough": "Tlalpan",
+            "topic": "Quiosco de la plaza principal de Tlalpan",
+            "author": "farid estrada",
+            "license": "CC BY-SA 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Kiosko_plaza_de_la_constitucion%2C_tlapan.JPG"
+          }
+        },
         {
           "title": "Bloqueos en CDMX hoy 11 de noviembre: ¿cerrarán Reforma y Calzada de Tlalpan?",
           "description": "De acuerdo con Publimetro México, el titular publicado es: «Bloqueos en CDMX hoy 11 de noviembre: ¿cerrarán Reforma y Calzada de Tlalpan?». Según la información destacada por Publimetro México, manifestaciones o bloqueos forman parte de la jornada de movilidad capitalina. La ficha no demuestra por sí sola que todas las vías mencionadas sigan cerradas al momento de leerla.",
@@ -9068,24 +9135,6 @@
             "license": "CC BY-SA 4.0",
             "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
             "source": "https://commons.wikimedia.org/wiki/File:Animales_Bosque_de_Tlalpan_03.JPG"
-          }
-        },
-        {
-          "title": "Pronóstico del clima en Tlalpan, CDMX: Sábado 7 de noviembre con cielo claro y ambiente templado",
-          "description": "De acuerdo con El Heraldo de México, el titular publicado es: «Pronóstico del clima en Tlalpan, CDMX: Sábado 7 de noviembre con cielo claro y ambiente templado». El pronóstico recogido por El Heraldo de México se refiere a condiciones meteorológicas en Tlalpan. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
-          "url": "https://news.google.com/rss/articles/CBMingJBVV95cUxNT19kN2dBYUUxWUpBUUtOaVo1aFEwZnltZXBKNjlRelFHSnQySHhWMG1BNldpU2g5dGxXY0JMaTNadi1NcDhwUG8wMm8wQlE4OTJXY2ZPSk53ZXhxM1FnR1k3LWdSZEhLU3NPcktqbmFoNkNxRkxKTUdwbk41a0NBVVZsNnV4cXFWbnNJS0lzS2xkU0o3a0drRmpBR09RVGVNSHR6VUxTWGFvc2hKZS16aTV1VnM4Nm51UVh1NnZWakhyX0MyMnZUbThWU3hPZ0VQdkZtcHRnc1pFYnBiQ3FrTUg0dFY2ZWhQb24wSElGQk5pcWlDR05falVjQUNlUmctR0tJYUQxZDdwQW53bnB0dUVsaFpWODBfeV9uX21R?oc=5",
-          "source": "El Heraldo de México",
-          "date": "2026-11-06",
-          "published_at": "2026-11-07T05:00:21Z",
-          "category": "CDMX",
-          "borough": "Tlalpan",
-          "location": "Tlalpan (mencionada en el titular)",
-          "local_url": "/noticias/?id=01d7ae73190a76f2dc0b&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con El Heraldo de México, el titular publicado es: «Pronóstico del clima en Tlalpan, CDMX: Sábado 7 de noviembre con cielo claro y ambiente templado». El pronóstico recogido por El Heraldo de México se refiere a condiciones meteorológicas en Tlalpan. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           }
         }
       ]
