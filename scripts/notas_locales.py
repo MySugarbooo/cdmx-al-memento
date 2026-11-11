@@ -106,16 +106,35 @@ def _reported_angle(article):
         return (f"Según la información destacada por {source}, {detail} forman parte de la "
                 "jornada de movilidad capitalina. La ficha no demuestra por sí sola "
                 "que todas las vías mencionadas sigan cerradas al momento de leerla.")
-    if "metro" in t and ("línea a" in t or "linea a" in t) and ("rehabilit" in t or "arreglo" in t or "suspensi" in t):
+    has_metro = bool(re.search(r"\bmetro\b", t))
+    has_metrobus = bool(re.search(r"\bmetrob[uú]s\b", t))
+    has_tren_suburbano = bool(re.search(r"\btren suburbano\b", t))
+    if has_metro and ("línea a" in t or "linea a" in t) and ("rehabilit" in t or "arreglo" in t or "suspensi" in t):
         return (f"El medio {source} recoge advertencias y demandas sobre el mantenimiento de "
                 "la Línea A del Metro. Hablar de una posible suspensión no significa "
                 "que el tramo haya sido cerrado: se requiere consultar el aviso oficial.")
-    if "metro" in t and ("retras" in t or "avance" in t or "estatus" in t or "estaciones" in t):
-        lines=re.findall(r"\b(?:Línea|Líneas)\s+(?:[0-9AB]+(?:\s+y\s+[0-9AB]+)?)",title,re.I)
-        which=(" El titular menciona "+", ".join(lines)+".") if lines else ""
-        return (f"La nota de {source} reúne reportes sobre la circulación o los tiempos "
-                "del Metro de Ciudad de México."+which+
-                " La operación puede cambiar durante el día y los informes de usuarios "
+    if ((has_metro or has_metrobus or has_tren_suburbano)
+            and ("retras" in t or "atras" in t or "avance" in t or "estatus" in t
+                 or "estaciones" in t or "estado del servicio" in t)):
+        services = []
+        if has_metro:
+            services.append("Metro")
+        if has_metrobus:
+            services.append("Metrobús")
+        if has_tren_suburbano:
+            services.append("Tren Suburbano")
+        if len(services) == 1:
+            service_description = {
+                "Metro": "del Metro de Ciudad de México",
+                "Metrobús": "del Metrobús de Ciudad de México",
+                "Tren Suburbano": "del Tren Suburbano",
+            }[services[0]]
+            description = "el servicio " + service_description
+        else:
+            service_names = ", ".join(services[:-1]) + " y " + services[-1]
+            description = "los servicios de " + service_names + " en Ciudad de México"
+        return (f"La nota de {source} reúne reportes sobre {description}. "
+                "La operación puede cambiar durante el día y los informes de usuarios "
                 "no son equivalentes a un comunicado oficial.")
     # Aprovechar agua de lluvia no equivale a un pronóstico meteorológico.
     if "captación de agua de lluvia" in t or "cosecha de lluvia" in t:
