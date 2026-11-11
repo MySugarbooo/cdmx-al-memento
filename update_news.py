@@ -303,7 +303,7 @@ def category_by_headline(title, feed_category):
             normalized,
         )
         movement_signal = re.search(
-            r"\b(?:movilizacion(?:es)?|manifestacion(?:es)?|protest\w*|bloque\w*|toman|calles? cerraran|afectacion vial)\b",
+            r"\b(?:movilizacion(?:es)?|manifestacion(?:es)?|protest\w*|bloque(?:o|os|a|an|aron|ando|ado|ada|ados|adas|ar)|toman|calles? cerraran|afectacion vial)\b",
             normalized,
         )
         if security_signal:
