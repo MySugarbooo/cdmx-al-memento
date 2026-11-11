@@ -78,11 +78,12 @@ def _reported_angle(article):
                 "adicionales ni especula sobre las circunstancias de la desaparición.")
     # Accidentes de motos, choques y siniestros: informar incluso si el hecho es
     # grave, sin inventar fallecimientos, lesiones, imágenes o circunstancias.
-    if re.search(r"\b(?:accident\w*|choqu\w*|colisi[oó]n\w*|volcadur\w*|"
+    if re.search(r"\b(?:accident\w*|choqu\w*|colisi[oó]n\w*|volcadur\w*|vuelc\w*|"
                  r"atropell\w*|arroll\w*|derrap\w*|siniestro vial)\b", t):
         vehicle=("una motocicleta" if re.search(r"\b(?:moto|motocicleta|motociclista)\w*\b", t)
                  else "un microbús" if re.search(r"\bmicrob[uú]s\b", t)
                  else "un autobús" if re.search(r"\bautob[uú]s\b", t)
+                 else "una pipa de gas" if re.search(r"\b(?:pipas? de gas|gas lp)\b", t)
                  else "vehículos" if re.search(r"\b(?:automovil|auto|camion|trailer|tráiler|vehiculo)\w*\b", t)
                  else "personas o vehículos involucrados")
         if re.search(r"\b(?:fallec\w*|muert\w*|murio|murieron|sin vida|pierde la vida|"
