@@ -473,6 +473,21 @@ def _photo_category(article):
 # Resguardos editoriales: una coincidencia geográfica o de categoría no basta.
 # Si la fototeca no tiene contexto del tema, se prefiere publicar sin imagen.
 STRICT_PHOTO_TOPICS = (
+    # Un riff anunciado por una banda requiere una imagen musical, no un monumento.
+    (r"\briff\b",
+     r"\b(?:musica|conciertos?|guitarras?|bandas?|escenarios?|rock|cantantes?|festivales?|auditorios?|estadios?)\b"),
+    # Un taller de aviación en el AICM no se ilustra con una estación del Metro.
+    (r"\b(?:aicm|mexicana de aviacion)\b",
+     r"\b(?:aeropuertos?|aviones?|aeronaves?|aviacion|terminal aerea|pista de aterrizaje|hangar de mantenimiento|mantenimiento aeronautico)\b"),
+    # La apertura de hoteles exige una imagen de hospedaje, no un jardín cercano.
+    (r"\bhyatt\b",
+     r"\b(?:hoteles?|hospedaje|alojamiento|resort|habitaciones?|recepcion|lobby)\b"),
+    # Las rachas meteorológicas no se ilustran con una plaza sin contexto del clima.
+    (r"\brachas?\b",
+     r"\b(?:viento|rachas?|meteorologia|clima|nubes?|cielo nublado|tormenta|temperatura|frio)\b"),
+    # La cobertura de la Anti-Unión requiere contexto de investigación, no ceremonia policial.
+    (r"\banti[ -]?union\b",
+     r"\b(?:fiscalia|investigacion penal|detencion|ministerio publico|justicia|operativo policial|patrulla)\b"),
     # Una ofrenda monumental no es la cafetería de un museo.
     (r"\bofrenda monumental\b",
      r"\b(?:ofrendas?|altares?|dia de muertos|catrinas?|decoracion funeraria)\b"),
@@ -619,6 +634,9 @@ STRICT_PHOTO_TOPICS = (
      r"\b(?:asamblea|comunitaria|vecinos|cabildo|reunion|autoridades auxiliares)\b"),
     (r"\b(?:juan atkins|pionero del techno)\b",
      r"\b(?:techno|musica|dj|vinilos?|discos?|escenario|concierto|musico|productor musical)\b"),
+    # Sloopy y Lobito son los perros del caso de envenenamiento en Xochimilco.
+    (r"\b(?:sloopy|lobito)\b",
+     r"\b(?:perros?|caninos?|mascotas?|veterinaria)\b"),
     # Envenenamiento de perros exige imagen canina, no fauna genérica.
     (r"\benvenenamientos?\b.*\b(?:perros?|mascotas?)\b",
      r"\b(?:perritos?|perros?|mascotas?|caninos?|veterinaria)\b"),
@@ -644,7 +662,7 @@ STRICT_PHOTO_TOPICS = (
      r"\b(?:contaminacion|smog|atmosfera|emisiones|contaminantes|calidad del aire|medicion ambiental)\b"),
 
     # Un ataque de jauría necesita perros visibles; fauna genérica no basta.
-    (r"\b(?:jauria de perros?|perros? atacan?|ataque de perros?)\b",
+    (r"\b(?:jauria|perros? atacan?|ataque de perros?)\b",
      r"\b(?:perros?|caninos?|mascotas?|veterinaria)\b"),
     # Un socavón exige contexto de pavimento o infraestructura dañada, no edificios turísticos.
     (r"\b(?:socavon(?:es)?|hundimiento(?:s)?|bache(?:s)?|colapso de (?:la )?(?:calle|pavimento|asfalto))\b",
@@ -663,7 +681,7 @@ STRICT_PHOTO_TOPICS = (
      r"\b(?:verificentros?|verificacion vehicular|centro de verificacion|emisiones|vehiculos?|autos?|automoviles?)\b"),
     # Un foro metropolitano necesita contexto cívico o de planeación urbana.
     (r"\b(?:foro de pozmvm|pozmvm|foro urbano|cancelan foro)\b",
-     r"\b(?:foro|planeacion urbana|urbanismo|metropolitano|pozmvm|politica|partido|congreso|asamblea)\b"),
+     r"\b(?:planeacion urbana|urbanismo|pozmvm|politica|partido|congreso|asamblea|foro urbano|foro metropolitano)\b"),
     # Los fraudes por internet requieren contexto digital, no una ceremonia policial.
     (r"\b(?:fraudes? en compras por internet|fraude cibernetico|policia cibernetica)\b",
      r"\b(?:ciberseguridad|internet|computadora|tecnologia|fraude|phishing|seguridad digital|redes|dispositivo)\b"),
@@ -707,8 +725,29 @@ def _photo_score(article, photo):
         re.search(r"\b(?:patrullas?|policias?|fiscalia|detenciones?|armamento)\b", context)
     ):
         return -10000
-    # Una clasificación RSS errónea no autoriza cambiar el tema de la imagen.
-    if photo_category not in (category, "CDMX", "Alcaldías"):
+    # Admitir categorías temáticas solo cuando el descriptor coincide con la noticia.
+    music_story = bool(re.search(r"\briff\b", headline))
+    music_photo = bool(re.search(
+        r"\b(?:musica|conciertos?|guitarras?|bandas?|escenarios?|rock|cantantes?|festivales?|auditorios?|estadios?)\b",
+        context,
+    ))
+    weather_story = bool(re.search(r"\brachas?\b", headline))
+    weather_photo = bool(re.search(
+        r"\b(?:viento|rachas?|meteorologia|clima|nubes?|cielo nublado|tormenta|temperatura|frio)\b",
+        context,
+    ))
+    animal_story = bool(re.search(
+        r"\b(?:jauria|sloopy|lobito|perros?|perritos?|mascotas?)\b", headline
+    ))
+    animal_photo = bool(re.search(r"\b(?:perros?|caninos?|mascotas?)\b", context))
+    themed_category = (
+        (photo_category == "Cultura" and music_story and music_photo)
+        or (photo_category == "Medio Ambiente" and (
+            (weather_story and weather_photo) or (animal_story and animal_photo)
+        ))
+    )
+    # Una categoría distinta no basta por sí sola para considerar pertinente una foto.
+    if photo_category not in (category, "CDMX", "Alcaldías") and not themed_category:
         return -10000
     # Una convocatoria de marcha del IMSS no se ilustra con transporte público.
     if ("imss" in headline

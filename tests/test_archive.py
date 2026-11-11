@@ -455,6 +455,44 @@ class BoroughAndArchiveTests(unittest.TestCase):
                   "category": "Seguridad"}
         self.assertEqual(_photo_category(police), "Seguridad")
 
+    def test_current_portada_photo_mismatches_are_rejected(self):
+        # Casos detectados en news.json del 11 de noviembre de 2026.
+        cases = [
+            ("¡Jet está de vuelta! Su riff más famoso sonará en CDMX en 2027",
+             "CDMX", "CDMX", "Plaza de la Constitución (Zócalo) tras un día lluvioso",
+             "Cultura", "Banda de rock en concierto con guitarras en escenario"),
+            ("Hasta 35 km/h de rachas en alcaldías de la CDMX este miércoles 11 de noviembre",
+             "CDMX", "CDMX", "Zócalo de la Ciudad de México, México",
+             "Medio Ambiente", "Viento y nubes sobre Ciudad de México"),
+            ("El taller de Mexicana de Aviación en el AICM busca dueño: siete empresas se disputan la compra antes de 2027",
+             "Metro", "Metro", "Estación Hidalgo (Línea 3) del Metro de la Ciudad de México 01",
+             "CDMX", "Hangar de mantenimiento de aviones en el Aeropuerto Internacional de la Ciudad de México"),
+            ("CDMX: Hyatt abrirá dos nuevos hoteles que sumarán 361 cuartos",
+             "CDMX", "CDMX", "Jardin Escénico del Bosque de Chapultepec 02",
+             "CDMX", "Gran Hotel Ciudad de México formerly El Centro Mercantil"),
+            ("Caen dos presuntos integrantes de “La Anti-Unión” por despojar a siete familias de su vivienda en CDMX",
+             "Seguridad", "Seguridad", "Graduación de la Policía de la Ciudad de México -i---i- (36371720144)",
+             "Seguridad", "Patrulla de Ciudad de México"),
+            ("Cancelan foro de POZMVM en Coyoacán por pleito entre PAN y Morena",
+             "CDMX", "CDMX", "Zócalo de la CDMX, Catedral y Sagrario Metropolitano",
+             "CDMX", "Asamblea de planeación urbana y foro metropolitano"),
+            ("Tras muerte de Sloopy y Lobito, reavivan las denuncias por envenenamiento en Xochimilco",
+             "CDMX", "CDMX", "Trajinera de Xochimilco - Ciudad de México",
+             "Medio Ambiente", "Perros descansando en el Parque España, Ciudad de México (fotografía de 2016)"),
+            ("Jauría causa temor en la Magdalena Contreras; al menos dos personas han sido atacadas",
+             "CDMX", "Alcaldías", "MX NS LA MAGDALENA CONTRERAS 03",
+             "Medio Ambiente", "Perros descansando en el Parque España, Ciudad de México (fotografía de 2016)"),
+        ]
+        for title, category, bad_category, bad_topic, good_category, good_topic in cases:
+            article = {"title": title, "category": category}
+            with self.subTest(title=title):
+                self.assertLess(news._photo_score(article, {
+                    "category": bad_category, "topic": bad_topic,
+                }), 0)
+                self.assertGreaterEqual(news._photo_score(article, {
+                    "category": good_category, "topic": good_topic,
+                }), 0)
+
     def test_new_photo_guardrails_reject_mismatched_landmarks(self):
         # Fotografías representativas sí, pero no iglesias para muertes,
         # parques para mascotas, ni edificios de gobierno para bloqueos.
