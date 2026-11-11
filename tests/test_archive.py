@@ -1313,5 +1313,156 @@ class CybercrimePhotoTests(unittest.TestCase):
                       article["photo"]["source"])
 
 
+class CurrentNewsEditorialRegressionTests(unittest.TestCase):
+    def standardized(self, title, category):
+        article = fake(title, "2026-11-11")
+        article["category"] = category
+        return news.standardize(article)
+
+    def test_current_headlines_receive_their_editorial_categories(self):
+        cases = (
+            ("NFL en México: estas son todas las actividades que podrás disfrutar en las calles de la CDMX previo al juego de San Francisco 49ers vs Minnesota Vikings", "Metro", "CDMX"),
+            ("Vuelca pipa de gas en la México-Pachuca; hay al menos 2 lesionados y caos vial con dirección a la CDMX", "Seguridad", "Movilidad"),
+            ("Explosión de gas en local de Azcapotzalco: Baches, socavones y otras afectaciones en CDMX hoy", "CDMX", "Seguridad"),
+            ("Flamazo por acumulación de gas en calentador daña departamento en Álvaro Obregón", "CDMX", "Seguridad"),
+            ("VIDEO | Ejecutan a un hombre en la colonia Libertad, alcaldía Azcapotzalco", "CDMX", "Seguridad"),
+            ("¡Ya ni circular tranquilo por la CDMX se puede! Avientan piedras a carros en Periférico", "CDMX", "Seguridad"),
+            ("Repartidores de aplicación toman HOY la CDMX: ¿Qué calles cerrarán este 11 de noviembre?", "CDMX", "Movilidad"),
+            ("Conductores y repartidores por aplicación anuncian movilización en CDMX: a qué hora inicia y dónde será", "CDMX", "Movilidad"),
+            ("Brilla Fest 2026 llegará cerca de CDMX con espectáculos, comida y escenarios navideños", "CDMX", "Cultura"),
+            ("La Cenicienta llega a CDMX con funciones de ballet gratis", "CDMX", "Cultura"),
+            ("Exposición Centre Pompidou en Bellas Artes: cuándo abrirá y qué obras llegarán a CDMX", "CDMX", "Cultura"),
+        )
+        for title, feed_category, expected in cases:
+            with self.subTest(title=title):
+                self.assertEqual(news.category_by_headline(title, feed_category), expected)
+                self.assertEqual(self.standardized(title, feed_category)["category"], expected)
+        self.assertEqual(
+            news.category_by_headline(
+                "Repartidores protestan en CDMX tras amenaza de muerte a un compañero",
+                "Seguridad",
+            ),
+            "Seguridad",
+        )
+
+    def test_gas_tanker_articles_get_distinct_tanker_photos_not_police_or_metro(self):
+        titles = (
+            "Vuelca pipa de gas en la México-Pachuca; hay al menos 2 lesionados y caos vial con dirección a la CDMX",
+            "Accidente en la México-Pachuca Hoy: Vuelca Pipa de Gas y Afecta Tráfico Rumbo a la CDMX",
+            "Pipa de gas se vuelca en la autopista México-Pachuca; cierran carriles hacia Cdmx por emergencia",
+        )
+        articles = [
+            self.standardized(titles[0], "Seguridad"),
+            self.standardized(titles[1], "CDMX"),
+            self.standardized(titles[2], "CDMX"),
+        ]
+        self.assertTrue(all(a["category"] == "Movilidad" for a in articles))
+        unrelated = {
+            "category": "Seguridad",
+            "topic": "Graduación de la Policía de la Ciudad de México",
+            "keywords": ["ceremonia", "policía"],
+        }
+        for article in articles:
+            self.assertLess(news._photo_score(article, unrelated), 0)
+        stats = news.assign_photos(articles)
+        self.assertEqual(stats["assigned"], 3)
+        expected = {
+            "contexto_pipa_gas_lpg_india",
+            "contexto_pipa_gas_tanker_us95",
+            "contexto_pipa_gas_tanker_amisragas",
+        }
+        self.assertEqual({a["photo"]["id"] for a in articles}, expected)
+        for article in articles:
+            photo = article["photo"]
+            self.assertEqual(photo["kind"], "representativa")
+            self.assertTrue(photo["author"] and photo["license"] and photo["source"])
+        summary = news.summarize(articles[0])["lead"].lower()
+        self.assertIn("volcadura de una pipa de gas", summary)
+        self.assertIn("al menos dos personas lesionadas", summary)
+
+    def test_nfl_and_cultural_stories_use_topic_specific_images(self):
+        cases = (
+            ("NFL en México: estas son todas las actividades que podrás disfrutar en las calles de la CDMX previo al juego de San Francisco 49ers vs Minnesota Vikings", "Metro", "contexto_nfl_american_football_kick", "Estación Ermita de la Línea 12 del Metro"),
+            ("Brilla Fest 2026 llegará cerca de CDMX con espectáculos, comida y escenarios navideños", "CDMX", "contexto_luces_navidenas_cdmx", "Organillero en el Zócalo de Ciudad de México"),
+            ("La Cenicienta llega a CDMX con funciones de ballet gratis", "CDMX", "contexto_ballet_leap", "Boleto de cine de 1928"),
+            ("Emite Coparmex CDMX decálogo para compras inteligentes en Buen Fin 2026", "CDMX", "contexto_compras_carritos", "Catedral Metropolitana de Ciudad de México"),
+        )
+        for title, category, photo_id, unrelated_topic in cases:
+            with self.subTest(title=title):
+                article = self.standardized(title, category)
+                self.assertLess(news._photo_score(article, {
+                    "category": category, "topic": unrelated_topic,
+                }), 0)
+                stats = news.assign_photos([article])
+                self.assertEqual(stats["assigned"], 1)
+                self.assertEqual(article["photo"]["id"], photo_id)
+                self.assertTrue(article["photo"]["author"] and article["photo"]["license"])
+
+    def test_executions_stone_attacks_and_delivery_stories_reject_unrelated_photos(self):
+        murder = self.standardized(
+            "VIDEO | Ejecutan a un hombre en la colonia Libertad, alcaldía Azcapotzalco",
+            "CDMX",
+        )
+        stones = self.standardized(
+            "¡Ya ni circular tranquilo por la CDMX se puede! Avientan piedras a carros en Periférico",
+            "CDMX",
+        )
+        bike_lane = {"category": "Alcaldías", "topic": "Ciclovía en proceso en la Alcaldía Azcapotzalco"}
+        tower = {"category": "CDMX", "topic": "Torre Latinoamericana, Ciudad de México"}
+        self.assertEqual(murder["category"], "Seguridad")
+        self.assertEqual(stones["category"], "Seguridad")
+        self.assertLess(news._photo_score(murder, bike_lane), 0)
+        self.assertLess(news._photo_score(stones, tower), 0)
+        news.assign_photos([murder, stones])
+        for article in (murder, stones):
+            context = article["photo"]["topic"] + " " + " ".join(article["photo"].get("keywords", []))
+            self.assertRegex(context.lower(), r"patrulla|polic|fiscalia|investigacion penal|seguridad")
+            self.assertTrue(article["photo"]["author"] and article["photo"]["license"])
+
+        delivery_titles = (
+            ("Repartidores protestan en CDMX tras amenaza de muerte a un compañero", "Seguridad"),
+            ("Repartidores de aplicación toman HOY la CDMX: ¿Qué calles cerrarán este 11 de noviembre?", "CDMX"),
+            ("Conductores y repartidores por aplicación anuncian movilización en CDMX: a qué hora inicia y dónde será", "CDMX"),
+        )
+        for title, category in delivery_titles:
+            with self.subTest(title=title):
+                article = self.standardized(title, category)
+                self.assertLess(news._photo_score(article, {
+                    "category": "CDMX", "topic": "Monumento a Cristóbal Colón, Ciudad de México",
+                }), 0)
+                stats = news.assign_photos([article])
+                self.assertEqual(stats["assigned"], 1)
+                context = article["photo"]["topic"] + " " + " ".join(article["photo"].get("keywords", []))
+                self.assertRegex(context.lower(), r"delivery|repartidor|motociclet|motociclist")
+                self.assertTrue(article["photo"]["author"] and article["photo"]["license"])
+
+    def test_march_photo_must_show_traffic_or_protest_and_gas_flame_is_security(self):
+        march = self.standardized(
+            "Cuatro Marchas Afectarán Tráfico en CDMX Hoy 11 de noviembre: Calles Cerradas y Horarios",
+            "Movilidad",
+        )
+        trolleybus = {"category": "Movilidad", "topic": "Trolebús de la Línea 5 en Paseo de la Reforma"}
+        self.assertLess(news._photo_score(march, trolleybus), 0)
+        news.assign_photos([march])
+        context = march["photo"]["topic"] + " " + " ".join(march["photo"].get("keywords", []))
+        self.assertRegex(context.lower(), r"trafico|transito|vehicular|protesta|manifestacion|marcha|vialidad")
+
+        flamazo = self.standardized(
+            "Flamazo por acumulación de gas en calentador daña departamento en Álvaro Obregón",
+            "CDMX",
+        )
+        self.assertEqual(flamazo["category"], "Seguridad")
+        news.assign_photos([flamazo])
+        gas_context = flamazo["photo"]["topic"] + " " + " ".join(flamazo["photo"].get("keywords", []))
+        self.assertRegex(gas_context.lower(), r"bomberos|gas|tanque|fuga|incendio")
+
+        explosion = self.standardized(
+            "Explosión de gas en local de Azcapotzalco: Baches, socavones y otras afectaciones en CDMX hoy",
+            "CDMX",
+        )
+        self.assertIn("explosión de gas", news.summarize(explosion)["lead"].lower())
+        self.assertIn("no se asume que estén relacionados", news.summarize(explosion)["lead"].lower())
+
+
 if __name__ == "__main__":
     unittest.main()
