@@ -1,54 +1,388 @@
 {
-  "updated": "2026-11-11 22:40 UTC",
+  "updated": "2026-11-11 23:56 UTC",
   "articles": [
     {
-      "title": "Brugada presenta plan que marcará el desarrollo de CDMX hasta 2045",
-      "description": "De acuerdo con Ahora Tabasco Noticias, el titular publicado es: «Brugada presenta plan que marcará el desarrollo de CDMX hasta 2045». La información publicada por Ahora Tabasco Noticias aborda un asunto que este portal clasifica como Gobierno. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNMzliVkc1TEFUTzRoMXJ4RDhYU3VOVE4tU1ZhZTJiYXJfSWVodFdIRnVhczdYNTBXNmRMdDRJUW1vZGpBRjVOMVRQemZmblBsbzBZNnBrMG5TTDhQZktBNDJsVnlLcTRKcndPd1RsYjJiaVo4bEdkY3VMcmlZamNxVnZ6TldDd19oZUdiMWd2ekRnN1BPT0VR?oc=5",
-      "source": "Ahora Tabasco Noticias",
+      "title": "Vuelca pipa de gas en la México-Pachuca y afecta tránsito a CDMX",
+      "description": "De acuerdo con MVS Noticias, el titular publicado es: «Vuelca pipa de gas en la México-Pachuca y afecta tránsito a CDMX». De acuerdo con MVS Noticias, se informa de un hecho vial relacionado con una pipa de gas en la capital. El encabezado no permite determinar por sí solo si hubo personas lesionadas o fallecidas. Se requiere consultar la nota original para conocer el punto exacto, las circunstancias y los reportes oficiales, sin atribuir responsabilidades sin pruebas.",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxONWJVOTRXOE9jZ3ZRVDhzajdXR1FTanM3WmRxem0xbGdJanlMZHl0Sk9zSm55cy1tclVoTnhmMDVTWHVacWhJbWpPa3FaaGR6MndGR3RGVkRRZ2FRUWZyYmwxU0dIVklSR2lpVDR3WmR3Njd1NWZtcThzNlJhanppRl9jN1RNek9odHo3YjgzV09OYWpQeE9JM2hLM3pIMjZBYVZ0VmhLVFJfclVZRlF5d2p1T1ZyYXJ5aXBFaDJnNmVnbWFxek9n?oc=5",
+      "source": "MVS Noticias",
       "date": "2026-11-11",
-      "published_at": "2026-11-11T22:33:43Z",
+      "published_at": "2026-11-11T23:51:45Z",
+      "category": "Movilidad",
+      "borough": "",
+      "location": "Ciudad de México (sin alcaldía identificada)",
+      "local_url": "/noticias/?id=a7fef8e6819c8c1de41e&mes=2026-11",
+      "brief": {
+        "lead": "De acuerdo con MVS Noticias, el titular publicado es: «Vuelca pipa de gas en la México-Pachuca y afecta tránsito a CDMX». De acuerdo con MVS Noticias, se informa de un hecho vial relacionado con una pipa de gas en la capital. El encabezado no permite determinar por sí solo si hubo personas lesionadas o fallecidas. Se requiere consultar la nota original para conocer el punto exacto, las circunstancias y los reportes oficiales, sin atribuir responsabilidades sin pruebas.",
+        "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
+        "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "commons_75139305",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Equipo_de_trabajo_de_los_Bomberos_CDMX_IMG_2957_%2843752811055%29.jpg/960px-Equipo_de_trabajo_de_los_Bomberos_CDMX_IMG_2957_%2843752811055%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "category": "Seguridad",
+        "borough": "",
+        "topic": "Equipo de trabajo de los Bomberos CDMX IMG 2957 (43752811055)",
+        "keywords": [
+          "Bomberos Ciudad de México"
+        ],
+        "author": "Gobierno CDMX",
+        "license": "CC0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "source": "https://commons.wikimedia.org/wiki/File:Equipo_de_trabajo_de_los_Bomberos_CDMX_IMG_2957_(43752811055).jpg"
+      }
+    },
+    {
+      "title": "Armenta pide a Antorcha Campesina no manifestarse en CDMX",
+      "description": "De acuerdo con tribunanoticias.mx, el titular publicado es: «Armenta pide a Antorcha Campesina no manifestarse en CDMX». La información publicada por tribunanoticias.mx aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOUmZqZ29vNnBVNkp4TUJLTUlHdGZTNFZBQWVqbm1xaWJaYmp3LVdHWnh2R0piXzI2UFY4enhjMHlJc3VEWFhrNDlFeGludzREU2Zoc2lxUUUzRHVJTktiOXBXY0s3N1FmX1pNbzRnR0Nka2cxa1lERmhLT2ZtZVd1LS1LNmtfU3p5YzFjVGx3?oc=5",
+      "source": "tribunanoticias.mx",
+      "date": "2026-11-11",
+      "published_at": "2026-11-11T23:45:22Z",
+      "category": "CDMX",
+      "borough": "",
+      "location": "Ciudad de México (sin alcaldía identificada)",
+      "local_url": "/noticias/?id=6ae99878605e12df3ea1&mes=2026-11",
+      "brief": {
+        "lead": "De acuerdo con tribunanoticias.mx, el titular publicado es: «Armenta pide a Antorcha Campesina no manifestarse en CDMX». La información publicada por tribunanoticias.mx aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+        "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+        "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "commons_145192545",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/DECLARATORIA_DE_CARNAVALES_COMO_PATRIMONIO_CULTURAL_INMATERIAL_DE_LA_CIUDAD_DE_M%C3%89XICO_29.jpg/960px-DECLARATORIA_DE_CARNAVALES_COMO_PATRIMONIO_CULTURAL_INMATERIAL_DE_LA_CIUDAD_DE_M%C3%89XICO_29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "category": "CDMX",
+        "borough": "",
+        "topic": "DECLARATORIA DE CARNAVALES COMO PATRIMONIO CULTURAL INMATERIAL DE LA CIUDAD DE MÉXICO 29",
+        "keywords": [
+          "Calles Ciudad de México"
+        ],
+        "author": "Secretaría de Cultura CDMX",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:DECLARATORIA_DE_CARNAVALES_COMO_PATRIMONIO_CULTURAL_INMATERIAL_DE_LA_CIUDAD_DE_M%C3%89XICO_29.jpg"
+      }
+    },
+    {
+      "title": "Empresarios de CDMX llaman a fortalecer la inversión, el empleo y el crecimiento económico",
+      "description": "De acuerdo con El Sol de México, el titular publicado es: «Empresarios de CDMX llaman a fortalecer la inversión, el empleo y el crecimiento económico». La información publicada por El Sol de México aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQYTRVQlViemZMaXpWZDVFckNXVUU2V3FReFkzN1R0dGRpVk1TVlpxY3FBLUV6Q251MndSdFJFYzdZTktMSFlVR255dEl2U09sTXRlNGpfQlBtSmtpMVgxN2dGWUVZNDVjU1doSEFNZTZGaEZ3QUVjeXYxcC1tRnVoT1ZvRmFHS01JbXBvSkg3ZjU4RUIwZ2RyZWdQTUtMWFhiZHlTbVkyemtRU2c0UVY2WktSZHloLUJfUUhmVUdCUkZoRVJCTTIyS09ITm14Tkl1cFB3?oc=5",
+      "source": "El Sol de México",
+      "date": "2026-11-11",
+      "published_at": "2026-11-11T23:44:07Z",
+      "category": "CDMX",
+      "borough": "",
+      "location": "Ciudad de México (sin alcaldía identificada)",
+      "local_url": "/noticias/?id=76f9b3499b503834cb99&mes=2026-11",
+      "brief": {
+        "lead": "De acuerdo con El Sol de México, el titular publicado es: «Empresarios de CDMX llaman a fortalecer la inversión, el empleo y el crecimiento económico». La información publicada por El Sol de México aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+        "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+        "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "commons_145192440",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/DECLARATORIA_DE_CARNAVALES_COMO_PATRIMONIO_CULTURAL_INMATERIAL_DE_LA_CIUDAD_DE_M%C3%89XICO_15.jpg/960px-DECLARATORIA_DE_CARNAVALES_COMO_PATRIMONIO_CULTURAL_INMATERIAL_DE_LA_CIUDAD_DE_M%C3%89XICO_15.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "category": "CDMX",
+        "borough": "",
+        "topic": "DECLARATORIA DE CARNAVALES COMO PATRIMONIO CULTURAL INMATERIAL DE LA CIUDAD DE MÉXICO 15",
+        "keywords": [
+          "Calles Ciudad de México"
+        ],
+        "author": "Secretaría de Cultura CDMX",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:DECLARATORIA_DE_CARNAVALES_COMO_PATRIMONIO_CULTURAL_INMATERIAL_DE_LA_CIUDAD_DE_M%C3%89XICO_15.jpg"
+      }
+    },
+    {
+      "title": "Marchas en CDMX hoy 11 de noviembre: horarios, rutas y concentraciones",
+      "description": "De acuerdo con TV Azteca, el titular publicado es: «Marchas en CDMX hoy 11 de noviembre: horarios, rutas y concentraciones». Según la información destacada por TV Azteca, manifestaciones o bloqueos forman parte de la jornada de movilidad capitalina. La ficha no demuestra por sí sola que todas las vías mencionadas sigan cerradas al momento de leerla.",
+      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNdS1Wb1IzM0NsZndndERXcTc0Z3llNEZERjAxcnZXNl9kaU5OZ0VyTUdNVGFjeVhLS3ZFVVZfTWJ3U0lkMnIwcHRIUmo2LUtMc1JPVDVLYjdPbXBIMWo1SmcwTGYzOXhHWUxvOGQwdGVFVHFUN01YaktjN3ZzaUI0YWJ5STFRTWY1a2hnQlBuZEF5SnY4RTM1SmVNRVpyMFVXWjRJTC1FZXYyWkRIWF9sclJXaVFCZTA3NnpVUWEwc1hBN3hmd2JEbk1vT0NLa1BLMk1mWkZHRHZiaHMxQUtjLTlzYnZJWGM?oc=5",
+      "source": "TV Azteca",
+      "date": "2026-11-11",
+      "published_at": "2026-11-11T23:21:16Z",
+      "category": "Movilidad",
+      "borough": "",
+      "location": "Ciudad de México (sin alcaldía identificada)",
+      "local_url": "/noticias/?id=7c708f12dfe7335edb82&mes=2026-11",
+      "brief": {
+        "lead": "De acuerdo con TV Azteca, el titular publicado es: «Marchas en CDMX hoy 11 de noviembre: horarios, rutas y concentraciones». Según la información destacada por TV Azteca, manifestaciones o bloqueos forman parte de la jornada de movilidad capitalina. La ficha no demuestra por sí sola que todas las vías mencionadas sigan cerradas al momento de leerla.",
+        "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
+        "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "commons_54378318",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Ciudad_Universitaria_%28Marcha_por_la_paz%29_-_panoramio.jpg/960px-Ciudad_Universitaria_%28Marcha_por_la_paz%29_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "category": "Cultura",
+        "borough": "",
+        "topic": "Ciudad Universitaria (Marcha por la paz) - panoramio",
+        "keywords": [
+          "Ciudad Universitaria UNAM Ciudad de México"
+        ],
+        "author": "Malomalverde",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Ciudad_Universitaria_(Marcha_por_la_paz)_-_panoramio.jpg"
+      }
+    },
+    {
+      "title": "Barbacoa, pulque y frijol: ferias y eventos en la CDMX para chuparse los dedos",
+      "description": "De acuerdo con México Desconocido, el titular publicado es: «Barbacoa, pulque y frijol: ferias y eventos en la CDMX para chuparse los dedos». La información publicada por México Desconocido aborda un asunto que este portal clasifica como Cultura. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPXzE1YW11dW9TUklEakJIY2ZmMktDWXVRYThMQkJJVHJEZkxxTUU4dkZBb0t5UVNSVmlwckxlSjktQ3M1cDJJb2lvcWVZT21jLWxlendqWkZ0QXI2V25IM0o3QU9YNlZsTC10ckpITlVobXpfVmsxM05keGljXzlUV2VRYV9aUDF2RWRsaGNR?oc=5",
+      "source": "México Desconocido",
+      "date": "2026-11-11",
+      "published_at": "2026-11-11T23:21:01Z",
+      "category": "Cultura",
+      "borough": "",
+      "location": "Ciudad de México (sin alcaldía identificada)",
+      "local_url": "/noticias/?id=9984e8d4a3b932be4473&mes=2026-11",
+      "brief": {
+        "lead": "De acuerdo con México Desconocido, el titular publicado es: «Barbacoa, pulque y frijol: ferias y eventos en la CDMX para chuparse los dedos». La información publicada por México Desconocido aborda un asunto que este portal clasifica como Cultura. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+        "context": "La actividad cultural abre oportunidades de encuentro, aprendizaje y disfrute para habitantes y visitantes.",
+        "pending": "Los accesos, boletos, sedes, cupos y horarios deben consultarse con la institución organizadora. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "commons_147676841",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Jard%C3%ADn_Lateral_-_Chapultepec_Castle_-_Mexico_2024.jpg/960px-Jard%C3%ADn_Lateral_-_Chapultepec_Castle_-_Mexico_2024.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "category": "Cultura",
+        "borough": "",
+        "topic": "Jardín Lateral - Chapultepec Castle - Mexico 2024",
+        "keywords": [
+          "Castillo de Chapultepec Ciudad de México"
+        ],
+        "author": "José Luiz",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Jard%C3%ADn_Lateral_-_Chapultepec_Castle_-_Mexico_2024.jpg"
+      }
+    },
+    {
+      "title": "Presenta Clara Brugada proyecto de Plan General de Desarrollo de la CDMX 2025-2045; pide dejar de lado disputas políticas en su análisis",
+      "description": "De acuerdo con Reporte Indigo, el titular publicado es: «Presenta Clara Brugada proyecto de Plan General de Desarrollo de la CDMX 2025-2045; pide dejar de lado disputas políticas en su análisis». La información publicada por Reporte Indigo aborda un asunto que este portal clasifica como Gobierno. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "url": "https://news.google.com/rss/articles/CBMimAJBVV95cUxOb3haOWFFUWREbTZlV3Zld05XRmRIQzNSVXQ1T0RnYTR1bUhBNFVBR3pKTzh2bm5xMWVBdVpVYXV2M0k3YWRQM0pZTjVNUndvdU1wUkM1Ujc0T2IyTlVUM2RabUlaZm5xRlp4ZTl6SThPd1M5QU9ZQ0dOSDBUc2Vha0V0X0FyV01aaGkzR1N4WTJuYWM1UVlESVo3M2tGTncxOXZQa1kxYkJtcmNZaGNXd2pRd2o4aGhnZTBrb1hyTEhWRjVDUEdjV0N0dHY4Ni1iZy1teHBNN0RieFFXSGRUaldIN2doQWJkS2ZsTk94U1BialozYTFZd3BoT2hLUndTRzdtUnZGWmtkandMYlRVamhLTXh1M0ZS?oc=5",
+      "source": "Reporte Indigo",
+      "date": "2026-11-11",
+      "published_at": "2026-11-11T23:17:16Z",
       "category": "Gobierno",
       "borough": "",
       "location": "Ciudad de México (sin alcaldía identificada)",
-      "local_url": "/noticias/?id=23a4ca1831811b083534&mes=2026-11",
+      "local_url": "/noticias/?id=21f26816a1eeffe55877&mes=2026-11",
       "brief": {
-        "lead": "De acuerdo con Ahora Tabasco Noticias, el titular publicado es: «Brugada presenta plan que marcará el desarrollo de CDMX hasta 2045». La información publicada por Ahora Tabasco Noticias aborda un asunto que este portal clasifica como Gobierno. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+        "lead": "De acuerdo con Reporte Indigo, el titular publicado es: «Presenta Clara Brugada proyecto de Plan General de Desarrollo de la CDMX 2025-2045; pide dejar de lado disputas políticas en su análisis». La información publicada por Reporte Indigo aborda un asunto que este portal clasifica como Gobierno. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
         "context": "Las decisiones administrativas pueden influir en servicios, trámites y derechos; conviene conocer sus condiciones y a quiénes afectan.",
         "pending": "Es indispensable consultar los acuerdos, comunicados o documentos oficiales antes de dar una medida por vigente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "commons_98002546",
+        "id": "commons_98002545",
         "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Sala_de_Tesorer%C3%ADa_en_Palacio_Nacional_-_VI.jpg/960px-Sala_de_Tesorer%C3%ADa_en_Palacio_Nacional_-_VI.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Sala_de_Tesorer%C3%ADa_en_Palacio_Nacional_-_IV.jpg/960px-Sala_de_Tesorer%C3%ADa_en_Palacio_Nacional_-_IV.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
         "category": "Gobierno",
         "borough": "",
-        "topic": "Sala de Tesorería en Palacio Nacional - VI",
+        "topic": "Sala de Tesorería en Palacio Nacional - IV",
         "keywords": [
           "Palacio Nacional Ciudad de México"
         ],
         "author": "J Mndz",
         "license": "CC BY-SA 2.0",
         "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Sala_de_Tesorer%C3%ADa_en_Palacio_Nacional_-_VI.jpg"
+        "source": "https://commons.wikimedia.org/wiki/File:Sala_de_Tesorer%C3%ADa_en_Palacio_Nacional_-_IV.jpg"
       }
     },
     {
-      "title": "EN UN HECHO HISTÓRICO, APRUEBA GOBIERNO DE LA CIUDAD DE MÉXICO EL PROYECTO DEL PLAN GENERAL DE DESARROLLO 2025-2045 Y LO ENVÍA AL CONGRESO LOCAL.",
-      "description": "De acuerdo con Certeza Diario, el titular publicado es: «EN UN HECHO HISTÓRICO, APRUEBA GOBIERNO DE LA CIUDAD DE MÉXICO EL PROYECTO DEL PLAN GENERAL DE DESARROLLO 2025-2045 Y LO ENVÍA AL CONGRESO LOCAL.». En su información, Certeza Diario aborda una decisión, declaración o debate relacionado con las instituciones de la ciudad. Conviene distinguir la intención anunciada de las resoluciones que hayan sido aprobadas y publicado oficialmente.",
-      "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxPaFU4WXZWVTNycDNJX0tIZUZWckVabkZpZmxSbE9hWVA4NkVfaWJzWk9kNC1ORXZLMC1oSlRiVGV3UW1KekJzMFBkbnpUQ3dYMFJwbmxKTF9mUzRfMmM4OVR1Vnc5Q1VkSDZ4MmNXVzByeEdUblJxMDl4WVFXUmUxUzltSDNyOUNIZHo2RGdETEFyRFBjZVFzZndWd3NpWDhkRjlWRUYyeTdaSERyMmNEakk5Yjk1dmtEaXZMbTVXM29vWkNDWXlWZ1h5NzY0VkxNa1V4eEF1SUpiQ3VZd25UeFRaTzBpUDZKVVVOdEdCN0VRcVBmMEhfUjlZVVdvVUk?oc=5",
-      "source": "Certeza Diario",
+      "title": "Explosión de gas en local de Azcapotzalco: Baches, socavones y otras afectaciones en CDMX hoy",
+      "description": "De acuerdo con TV Azteca, el titular publicado es: «Explosión de gas en local de Azcapotzalco: Baches, socavones y otras afectaciones en CDMX hoy». La información publicada por TV Azteca aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPTXhTUEtEU29GVWF5WGNZajdaZURKTDNnOVNWV2dpM3EzVU9NNmY1MFMzNXk1dzJsakJZY2ZGQktDRHRfelFWaUNWazdZelYyQWh5V3pnSUd4YlJ2M3RnODZkWnRLSDFOS2N6VHZrajdRUzlqVFZldXh6ZkQ3Rk9MR0dmem5FbW9RVVNJXzZRNW1Gckd4ZDk5NEd4dEJfVm5KMTBsb3lZMTlDcngyUThEdXZacnQ0TkozZVBKWVVWMGVQdTJmQjJQR2xDRjBta3hmbjVPUGtaSWNBZw?oc=5",
+      "source": "TV Azteca",
       "date": "2026-11-11",
-      "published_at": "2026-11-11T22:32:23Z",
+      "published_at": "2026-11-11T23:02:29Z",
+      "category": "CDMX",
+      "borough": "Azcapotzalco",
+      "location": "Azcapotzalco (mencionada en el titular)",
+      "local_url": "/noticias/?id=b8362919917abfb6353a&mes=2026-11",
+      "brief": {
+        "lead": "De acuerdo con TV Azteca, el titular publicado es: «Explosión de gas en local de Azcapotzalco: Baches, socavones y otras afectaciones en CDMX hoy». La información publicada por TV Azteca aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+        "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+        "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "commons_75139343",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Equipo_de_trabajo_de_los_Bomberos_CDMX_IMG_3027_%2844661909031%29.jpg/960px-Equipo_de_trabajo_de_los_Bomberos_CDMX_IMG_3027_%2844661909031%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "category": "Seguridad",
+        "borough": "",
+        "topic": "Equipo de trabajo de los Bomberos CDMX IMG 3027 (44661909031)",
+        "keywords": [
+          "Bomberos Ciudad de México"
+        ],
+        "author": "Gobierno CDMX",
+        "license": "CC0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "source": "https://commons.wikimedia.org/wiki/File:Equipo_de_trabajo_de_los_Bomberos_CDMX_IMG_3027_(44661909031).jpg"
+      }
+    },
+    {
+      "title": "Trabajan Morelos, Cdmx y Estado de México con colectivos en jornada de búsqueda",
+      "description": "De acuerdo con Gobierno del Estado de Morelos, el titular publicado es: «Trabajan Morelos, Cdmx y Estado de México con colectivos en jornada de búsqueda». La información publicada por Gobierno del Estado de Morelos aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNMVNWRTJrNlBic3QxeFpaaHJCelJaajJ6dDNDRVA0MGhtVkt6am1qcmVTRHVjMEwycndtY1pNWVBvSzBjSkFmcVB3a0liSmltTUNnb1REWUR1WGJ4V2lLeWJYdkVmbWhoT0t4eEhxNk04OXFnMnRMa19wa3I0TWpVZGlCUjJ0REZjMXpMWDhwdm84S3Ffel9BcWhyMTNXeFVqampCbWpjQjEzMjFvWXZzdEVCRkFhX2pBUHMzQXhKSQ?oc=5",
+      "source": "Gobierno del Estado de Morelos",
+      "date": "2026-11-11",
+      "published_at": "2026-11-11T22:57:41Z",
       "category": "CDMX",
       "borough": "",
       "location": "Ciudad de México (sin alcaldía identificada)",
-      "local_url": "/noticias/?id=c9513fded2f32031abcd&mes=2026-11",
+      "local_url": "/noticias/?id=4d211cb42a0a77539c47&mes=2026-11",
       "brief": {
-        "lead": "De acuerdo con Certeza Diario, el titular publicado es: «EN UN HECHO HISTÓRICO, APRUEBA GOBIERNO DE LA CIUDAD DE MÉXICO EL PROYECTO DEL PLAN GENERAL DE DESARROLLO 2025-2045 Y LO ENVÍA AL CONGRESO LOCAL.». En su información, Certeza Diario aborda una decisión, declaración o debate relacionado con las instituciones de la ciudad. Conviene distinguir la intención anunciada de las resoluciones que hayan sido aprobadas y publicado oficialmente.",
+        "lead": "De acuerdo con Gobierno del Estado de Morelos, el titular publicado es: «Trabajan Morelos, Cdmx y Estado de México con colectivos en jornada de búsqueda». La información publicada por Gobierno del Estado de Morelos aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
         "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
         "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "commons_157736185",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Jardin_Esc%C3%A9nico_del_Bosque_de_Chapultepec_01.jpg/960px-Jardin_Esc%C3%A9nico_del_Bosque_de_Chapultepec_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "category": "CDMX",
+        "borough": "",
+        "topic": "Jardin Escénico del Bosque de Chapultepec 01",
+        "keywords": [
+          "Medio Ambiente"
+        ],
+        "author": "ProtoplasmaKid",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Jardin_Esc%C3%A9nico_del_Bosque_de_Chapultepec_01.jpg"
+      }
+    },
+    {
+      "title": "Gobierno de la CDMX aprueba Plan General de Desarrollo 2025-2045",
+      "description": "De acuerdo con Alcaldes de México, el titular publicado es: «Gobierno de la CDMX aprueba Plan General de Desarrollo 2025-2045». En su información, Alcaldes de México aborda una decisión, declaración o debate relacionado con las instituciones de la ciudad. Conviene distinguir la intención anunciada de las resoluciones que hayan sido aprobadas y publicado oficialmente.",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQdjZONWM2eVBBOHRMUi1KOTR2blp1UXluZWdvRUptbkxqbWxjUzIxc3N2Qm9VbGEtcjFMWG85bEFZdzlEUUpjOEh2MzVXQlF1X1c0UDJsekZ5RExyNm5CMmZyZHVZeHZORHNqNjcxSmRYWVBwNnNKMW5Jd2lGM1ZENVZ4blRJUENzcDdIZ29XalR0MjRjLVB3Z19rY3F3dWJ0X1RHVVg0eGh1Zk41Vnc?oc=5",
+      "source": "Alcaldes de México",
+      "date": "2026-11-11",
+      "published_at": "2026-11-11T22:57:39Z",
+      "category": "Gobierno",
+      "borough": "",
+      "location": "Ciudad de México (sin alcaldía identificada)",
+      "local_url": "/noticias/?id=a0e0d94cfd721fcdc67a&mes=2026-11",
+      "brief": {
+        "lead": "De acuerdo con Alcaldes de México, el titular publicado es: «Gobierno de la CDMX aprueba Plan General de Desarrollo 2025-2045». En su información, Alcaldes de México aborda una decisión, declaración o debate relacionado con las instituciones de la ciudad. Conviene distinguir la intención anunciada de las resoluciones que hayan sido aprobadas y publicado oficialmente.",
+        "context": "Las decisiones administrativas pueden influir en servicios, trámites y derechos; conviene conocer sus condiciones y a quiénes afectan.",
+        "pending": "Es indispensable consultar los acuerdos, comunicados o documentos oficiales antes de dar una medida por vigente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "gobierno",
+        "kind": "representativa",
+        "url": "/assets/fotos/gobierno.jpg",
+        "category": "Gobierno",
+        "borough": "",
+        "topic": "Fachada del Palacio Nacional",
+        "keywords": [
+          "Gobierno"
+        ],
+        "author": "MichaelCamacho",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.es",
+        "source": "https://commons.wikimedia.org/wiki/File:Palacio_Nacional_Ciudad_de_M%C3%A9xico.jpg"
+      }
+    },
+    {
+      "title": "2999: La SSC implementará un operativo de seguridad, vigilancia y vialidad por el “Buen Fin 2026”, con la participación más de 16 mil policías en la ciudad de México",
+      "description": "De acuerdo con Secretaría de Seguridad Ciudadana de la CDMX, el titular publicado es: «2999: La SSC implementará un operativo de seguridad, vigilancia y vialidad por el “Buen Fin 2026”, con la participación más de 16 mil policías en la ciudad de México». La información publicada por Secretaría de Seguridad Ciudadana de la CDMX aborda un asunto que este portal clasifica como Metro. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE56dW1kSG9MNDNQck9rS1M0SUJWX1hqQXJaeTBEc0FaNnJQUTdYY1htSkRFSkxuY3pZZ2FFZHNfRVZwT0RSa0lHVDZ5dXJrY3B3R1BTUGo5QmFfN2ZGVlJLSFZTQTVJWkpEYmxLM1pPa1dnUQ?oc=5",
+      "source": "Secretaría de Seguridad Ciudadana de la CDMX",
+      "date": "2026-11-11",
+      "published_at": "2026-11-11T22:47:06Z",
+      "category": "Metro",
+      "borough": "",
+      "location": "Ciudad de México (sin alcaldía identificada)",
+      "local_url": "/noticias/?id=b38427b6358dee9ac0ee&mes=2026-11",
+      "brief": {
+        "lead": "De acuerdo con Secretaría de Seguridad Ciudadana de la CDMX, el titular publicado es: «2999: La SSC implementará un operativo de seguridad, vigilancia y vialidad por el “Buen Fin 2026”, con la participación más de 16 mil policías en la ciudad de México». La información publicada por Secretaría de Seguridad Ciudadana de la CDMX aborda un asunto que este portal clasifica como Metro. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+        "context": "Los cambios en este sistema pueden afectar los horarios, las conexiones y la planeación de los viajes cotidianos.",
+        "pending": "El estado operativo, las estaciones y las alternativas de traslado deben comprobarse en los avisos actuales del Metro. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "contexto_seguridad_digital_laptop",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Secured_laptop.jpg/960px-Secured_laptop.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+        "category": "Seguridad",
+        "borough": "",
+        "topic": "Laptop asegurada con cadena y candado; fotografía representativa de seguridad informática",
+        "keywords": [
+          "ciberseguridad",
+          "seguridad digital",
+          "seguridad informática",
+          "delitos cibernéticos",
+          "delitos digitales",
+          "computadora",
+          "laptop",
+          "internet"
+        ],
+        "author": "Richard Nowell",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:Secured_laptop.jpg"
+      }
+    },
+    {
+      "title": "2997: En coordinación con autoridades del Estado de México, policías de la SSC y de la FGJ de la CDMX cumplimentaron dos órdenes de cateo en Iztapalapa y Cuauhtémoc, donde detuvieron a tres personas y aseguraron cerca de tres toneladas de autopar",
+      "description": "De acuerdo con Secretaría de Seguridad Ciudadana de la CDMX, el titular publicado es: «2997: En coordinación con autoridades del Estado de México, policías de la SSC y de la FGJ de la CDMX cumplimentaron dos órdenes de cateo en Iztapalapa y Cuauhtémoc, donde detuvieron a tres personas y aseguraron cerca de tres toneladas de autopar». La información publicada por Secretaría de Seguridad Ciudadana de la CDMX aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9UQ3M0RXR3bTVrOXlqY2x3QWduTlRGcXNXcm55b2d6VmdaSGhwNHVESlBGVzIxd285SzdScHdIamwwMzJaaTRxTmQxVUVwZXRvdjUzMEJScGt2ZzV4Z2Myc1JJenZuaDdsa1NNQld0eUpQQQ?oc=5",
+      "source": "Secretaría de Seguridad Ciudadana de la CDMX",
+      "date": "2026-11-11",
+      "published_at": "2026-11-11T22:47:06Z",
+      "category": "Seguridad",
+      "borough": "Iztapalapa",
+      "location": "Iztapalapa (mencionada en el titular)",
+      "local_url": "/noticias/?id=6223647921610961cd96&mes=2026-11",
+      "brief": {
+        "lead": "De acuerdo con Secretaría de Seguridad Ciudadana de la CDMX, el titular publicado es: «2997: En coordinación con autoridades del Estado de México, policías de la SSC y de la FGJ de la CDMX cumplimentaron dos órdenes de cateo en Iztapalapa y Cuauhtémoc, donde detuvieron a tres personas y aseguraron cerca de tres toneladas de autopar». La información publicada por Secretaría de Seguridad Ciudadana de la CDMX aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+        "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+        "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "archivo_seguridad_015",
+        "kind": "representativa",
+        "url": "/assets/fotos/archivo_seguridad_015.jpg",
+        "category": "Seguridad",
+        "borough": "",
+        "topic": "Claudia Sheinbaum entrega patrullas Iztapalapa 01",
+        "author": "Gobierno de la Ciudad de México",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Claudia_Sheinbaum_entrega_patrullas_Iztapalapa_01.jpg"
+      }
+    },
+    {
+      "title": "En un hecho histórico, aprueba Gobierno de la Ciudad de México el proyecto del Plan General de Desarrollo 2025-2045 y lo envía al congreso local. Pide Clara Brugada no hipotecar el futuro de la capital por disputas políticas",
+      "description": "De acuerdo con CDMX, el titular publicado es: «En un hecho histórico, aprueba Gobierno de la Ciudad de México el proyecto del Plan General de Desarrollo 2025-2045 y lo envía al congreso local. Pide Clara Brugada no hipotecar el futuro de la capital por disputas políticas». En su información, CDMX aborda una decisión, declaración o debate relacionado con las instituciones de la ciudad. Conviene distinguir la intención anunciada de las resoluciones que hayan sido aprobadas y publicado oficialmente.",
+      "url": "https://news.google.com/rss/articles/CBMikANBVV95cUxNdmZaUzlzdFdtdlZhTTJic3BVZDBrOXJYSTFRVTJyTjBrWENhbU5zeUJaMzZ5NHEzcXdSLVhGbXp2cDdZZDZKczBxTkVZemliTGt6dk9IdEJYeHJNWFBTMjNsYmdtWTFxTlJGdjcxNWUtOWY2VXJTSjA4UVBSczd6Mk11Wmc0TExnVHRVNmFYM0M0ZkVmNFJjZWV4SGE0UEwyTFdMOWc3SEU4Q204R3FJRF9xNTRfQkd0M1FLU1l6ZFJiaV9yVnFjNlFKbDZPNzFMSzVudTlGR3pkcm41VU52Ql9ZY1NFTzIzYmQyTldoQWRlZXRTeV9SQzVEZWViUzZiTzZkaDNZTzlnanlHcmNzdmJwdjgwQzZQMENhZTlkeTFCT08yWm9UZGNreTNhaC0zUDgwM2dhTGh4R1B0NG1xUGxwRGMxSURqRHYzTjdXLUEyODdQczl2enh1Wm53djZ0Z1k1OXlSN013eUJOOFFQUm1JU0dsc2R6RGI4ZFRydHpJcHJBVFZZV2hiX3pHYmdv?oc=5",
+      "source": "CDMX",
+      "date": "2026-11-11",
+      "published_at": "2026-11-11T22:44:18Z",
+      "category": "Gobierno",
+      "borough": "",
+      "location": "Ciudad de México (sin alcaldía identificada)",
+      "local_url": "/noticias/?id=975783c83aa048c4da75&mes=2026-11",
+      "brief": {
+        "lead": "De acuerdo con CDMX, el titular publicado es: «En un hecho histórico, aprueba Gobierno de la Ciudad de México el proyecto del Plan General de Desarrollo 2025-2045 y lo envía al congreso local. Pide Clara Brugada no hipotecar el futuro de la capital por disputas políticas». En su información, CDMX aborda una decisión, declaración o debate relacionado con las instituciones de la ciudad. Conviene distinguir la intención anunciada de las resoluciones que hayan sido aprobadas y publicado oficialmente.",
+        "context": "Las decisiones administrativas pueden influir en servicios, trámites y derechos; conviene conocer sus condiciones y a quiénes afectan.",
+        "pending": "Es indispensable consultar los acuerdos, comunicados o documentos oficiales antes de dar una medida por vigente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
@@ -65,6 +399,72 @@
         "license": "CC BY-SA 4.0",
         "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
         "source": "https://commons.wikimedia.org/wiki/File:Calles_Seminario_y_Moneda_Centro_Hist%C3%B3rico_Ciudad_de_M%C3%A9xico_01.jpg"
+      }
+    },
+    {
+      "title": "Fiscalía CDMX aprehende a un hombre por robo a casa habitación cometido por personas que se hicieron pasar por trabajadores de limpia en Gustavo A. Madero",
+      "description": "De acuerdo con Fiscalía General de Justicia de la CDMX, el titular publicado es: «Fiscalía CDMX aprehende a un hombre por robo a casa habitación cometido por personas que se hicieron pasar por trabajadores de limpia en Gustavo A. Madero». La información publicada por Fiscalía General de Justicia de la CDMX aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE4tenlJYXhZc3dTLU4tR29LY0Y3MUZTcjRMcnlyYXdNZHQ0TXlOM3hndV9HaUxGbXVlNmpCN0dJdHgyTHFxX2N3dUlfODJZVGZmZXJld3dPMUY2TkxhWVVXLWFpMjdCZw?oc=5",
+      "source": "Fiscalía General de Justicia de la CDMX",
+      "date": "2026-11-11",
+      "published_at": "2026-11-11T22:41:15Z",
+      "category": "Seguridad",
+      "borough": "Gustavo A. Madero",
+      "location": "Gustavo A. Madero (mencionada en el titular)",
+      "local_url": "/noticias/?id=b11b81b8e275a181341d&mes=2026-11",
+      "brief": {
+        "lead": "De acuerdo con Fiscalía General de Justicia de la CDMX, el titular publicado es: «Fiscalía CDMX aprehende a un hombre por robo a casa habitación cometido por personas que se hicieron pasar por trabajadores de limpia en Gustavo A. Madero». La información publicada por Fiscalía General de Justicia de la CDMX aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+        "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+        "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "archivo_seguridad_010",
+        "kind": "representativa",
+        "url": "/assets/fotos/archivo_seguridad_010.jpg",
+        "category": "Seguridad",
+        "borough": "",
+        "topic": "Entrega Claudia Sheinbaum 113 nuevas patrullas en Gustavo A Madero 04",
+        "keywords": [
+          "Seguridad"
+        ],
+        "author": "Gobierno de la Ciudad de México",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Entrega_Claudia_Sheinbaum_113_nuevas_patrullas_en_Gustavo_A_Madero_04.jpg"
+      }
+    },
+    {
+      "title": "EN UN HECHO HISTÓRICO, APRUEBA GOBIERNO DE LA CIUDAD DE MÉXICO EL PROYECTO DEL PLAN GENERAL DE DESARROLLO 2025-2045 Y LO ENVÍA AL CONGRESO LOCAL.",
+      "description": "De acuerdo con Certeza Diario, el titular publicado es: «EN UN HECHO HISTÓRICO, APRUEBA GOBIERNO DE LA CIUDAD DE MÉXICO EL PROYECTO DEL PLAN GENERAL DE DESARROLLO 2025-2045 Y LO ENVÍA AL CONGRESO LOCAL.». En su información, Certeza Diario aborda una decisión, declaración o debate relacionado con las instituciones de la ciudad. Conviene distinguir la intención anunciada de las resoluciones que hayan sido aprobadas y publicado oficialmente.",
+      "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxPaFU4WXZWVTNycDNJX0tIZUZWckVabkZpZmxSbE9hWVA4NkVfaWJzWk9kNC1ORXZLMC1oSlRiVGV3UW1KekJzMFBkbnpUQ3dYMFJwbmxKTF9mUzRfMmM4OVR1Vnc5Q1VkSDZ4MmNXVzByeEdUblJxMDl4WVFXUmUxUzltSDNyOUNIZHo2RGdETEFyRFBjZVFzZndWd3NpWDhkRjlWRUYyeTdaSERyMmNEakk5Yjk1dmtEaXZMbTVXM29vWkNDWXlWZ1h5NzY0VkxNa1V4eEF1SUpiQ3VZd25UeFRaTzBpUDZKVVVOdEdCN0VRcVBmMEhfUjlZVVdvVUk?oc=5",
+      "source": "Certeza Diario",
+      "date": "2026-11-11",
+      "published_at": "2026-11-11T22:32:23Z",
+      "category": "Gobierno",
+      "borough": "",
+      "location": "Ciudad de México (sin alcaldía identificada)",
+      "local_url": "/noticias/?id=c9513fded2f32031abcd&mes=2026-11",
+      "brief": {
+        "lead": "De acuerdo con Certeza Diario, el titular publicado es: «EN UN HECHO HISTÓRICO, APRUEBA GOBIERNO DE LA CIUDAD DE MÉXICO EL PROYECTO DEL PLAN GENERAL DE DESARROLLO 2025-2045 Y LO ENVÍA AL CONGRESO LOCAL.». En su información, Certeza Diario aborda una decisión, declaración o debate relacionado con las instituciones de la ciudad. Conviene distinguir la intención anunciada de las resoluciones que hayan sido aprobadas y publicado oficialmente.",
+        "context": "Las decisiones administrativas pueden influir en servicios, trámites y derechos; conviene conocer sus condiciones y a quiénes afectan.",
+        "pending": "Es indispensable consultar los acuerdos, comunicados o documentos oficiales antes de dar una medida por vigente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "archivo_gobierno_004",
+        "kind": "representativa",
+        "url": "/assets/fotos/archivo_gobierno_004.jpg",
+        "category": "Gobierno",
+        "borough": "",
+        "topic": "Palacio Nacional Ciudad de México City DF",
+        "keywords": [
+          "Gobierno"
+        ],
+        "author": "stevecadman",
+        "license": "CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Palacio_Nacional_Ciudad_de_M%C3%A9xico_City_DF.jpg"
       }
     },
     {
@@ -98,39 +498,6 @@
         "license": "CC BY-SA 4.0",
         "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
         "source": "https://commons.wikimedia.org/wiki/File:Jeep_policia_cdmx.jpg"
-      }
-    },
-    {
-      "title": "Marchas en CDMX hoy 11 de noviembre: horarios, rutas y concentraciones",
-      "description": "De acuerdo con TV Azteca, el titular publicado es: «Marchas en CDMX hoy 11 de noviembre: horarios, rutas y concentraciones». Según la información destacada por TV Azteca, manifestaciones o bloqueos forman parte de la jornada de movilidad capitalina. La ficha no demuestra por sí sola que todas las vías mencionadas sigan cerradas al momento de leerla.",
-      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNdS1Wb1IzM0NsZndndERXcTc0Z3llNEZERjAxcnZXNl9kaU5OZ0VyTUdNVGFjeVhLS3ZFVVZfTWJ3U0lkMnIwcHRIUmo2LUtMc1JPVDVLYjdPbXBIMWo1SmcwTGYzOXhHWUxvOGQwdGVFVHFUN01YaktjN3ZzaUI0YWJ5STFRTWY1a2hnQlBuZEF5SnY4RTM1SmVNRVpyMFVXWjRJTC1FZXYyWkRIWF9sclJXaVFCZTA3NnpVUWEwc1hBN3hmd2JEbk1vT0NLa1BLMk1mWkZHRHZiaHMxQUtjLTlzYnZJWGM?oc=5",
-      "source": "TV Azteca",
-      "date": "2026-11-11",
-      "published_at": "2026-11-11T22:02:35Z",
-      "category": "Movilidad",
-      "borough": "",
-      "location": "Ciudad de México (sin alcaldía identificada)",
-      "local_url": "/noticias/?id=7c708f12dfe7335edb82&mes=2026-11",
-      "brief": {
-        "lead": "De acuerdo con TV Azteca, el titular publicado es: «Marchas en CDMX hoy 11 de noviembre: horarios, rutas y concentraciones». Según la información destacada por TV Azteca, manifestaciones o bloqueos forman parte de la jornada de movilidad capitalina. La ficha no demuestra por sí sola que todas las vías mencionadas sigan cerradas al momento de leerla.",
-        "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
-        "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "commons_54378318",
-        "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Ciudad_Universitaria_%28Marcha_por_la_paz%29_-_panoramio.jpg/960px-Ciudad_Universitaria_%28Marcha_por_la_paz%29_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "category": "Cultura",
-        "borough": "",
-        "topic": "Ciudad Universitaria (Marcha por la paz) - panoramio",
-        "keywords": [
-          "Ciudad Universitaria UNAM Ciudad de México"
-        ],
-        "author": "Malomalverde",
-        "license": "CC BY-SA 3.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Ciudad_Universitaria_(Marcha_por_la_paz)_-_panoramio.jpg"
       }
     },
     {
@@ -320,52 +687,19 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_gobierno_004",
+        "id": "commons_98002544",
         "kind": "representativa",
-        "url": "/assets/fotos/archivo_gobierno_004.jpg",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Sala_de_Tesorer%C3%ADa_en_Palacio_Nacional_-_V.jpg/960px-Sala_de_Tesorer%C3%ADa_en_Palacio_Nacional_-_V.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
         "category": "Gobierno",
         "borough": "",
-        "topic": "Palacio Nacional Ciudad de México City DF",
+        "topic": "Sala de Tesorería en Palacio Nacional - V",
         "keywords": [
-          "Gobierno"
+          "Palacio Nacional Ciudad de México"
         ],
-        "author": "stevecadman",
+        "author": "J Mndz",
         "license": "CC BY-SA 2.0",
         "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Palacio_Nacional_Ciudad_de_M%C3%A9xico_City_DF.jpg"
-      }
-    },
-    {
-      "title": "En un hecho histórico, aprueba Gobierno de la Ciudad de México el proyecto del Plan General de Desarrollo 2025-2045 y lo envía al congreso local. Pide Clara Brugada no hipotecar el futuro de la capital por disputas políticas",
-      "description": "De acuerdo con Hoja de Ruta Digital, el titular publicado es: «En un hecho histórico, aprueba Gobierno de la Ciudad de México el proyecto del Plan General de Desarrollo 2025-2045 y lo envía al congreso local. Pide Clara Brugada no hipotecar el futuro de la capital por disputas políticas». En su información, Hoja de Ruta Digital aborda una decisión, declaración o debate relacionado con las instituciones de la ciudad. Conviene distinguir la intención anunciada de las resoluciones que hayan sido aprobadas y publicado oficialmente.",
-      "url": "https://news.google.com/rss/articles/CBMizAJBVV95cUxPMTFMM2lCTmRqc3lsbU05UGJVWVRpVjQ5ZmlDekhZQUVLb1NJalBSdGZ2YjVLbmdBbU11ZHFIMFlzUEJpdE9XVGM4YnAySnk0NG94UnRGa2o2QnZwajRhNHN0OTgyOGV6Uzd3MkZRQkkxUXVzemdmQkVPSTNjU3pOY3U2S1lHNHN3dVhGQWZUa05xSnNHeVZWZ2FjTmZaZEd0WlNXSVVWN2NnTDU1a04wMUdtVzU4c3pPRG95YVBZZVpySXlkLXVXb0RHV2VpYjhxQUs5SXZ6RUtHTGxWcW5TZE9EVEdZalpySlN3d0EwaFJpUVhVU3ZTWjFENEtFVmV5aU9HVWsyTEtWNUtobHJUYzdRSXhOWHB4OEpscmhwZVZCVWkzN2lrQWhFR3VZVDVveTZNaDNnb1duVkZiUHg5U241Uzh6VHNuWXFkMg?oc=5",
-      "source": "Hoja de Ruta Digital",
-      "date": "2026-11-11",
-      "published_at": "2026-11-11T21:26:43Z",
-      "category": "Gobierno",
-      "borough": "",
-      "location": "Ciudad de México (sin alcaldía identificada)",
-      "local_url": "/noticias/?id=eacc654457dffe15448a&mes=2026-11",
-      "brief": {
-        "lead": "De acuerdo con Hoja de Ruta Digital, el titular publicado es: «En un hecho histórico, aprueba Gobierno de la Ciudad de México el proyecto del Plan General de Desarrollo 2025-2045 y lo envía al congreso local. Pide Clara Brugada no hipotecar el futuro de la capital por disputas políticas». En su información, Hoja de Ruta Digital aborda una decisión, declaración o debate relacionado con las instituciones de la ciudad. Conviene distinguir la intención anunciada de las resoluciones que hayan sido aprobadas y publicado oficialmente.",
-        "context": "Las decisiones administrativas pueden influir en servicios, trámites y derechos; conviene conocer sus condiciones y a quiénes afectan.",
-        "pending": "Es indispensable consultar los acuerdos, comunicados o documentos oficiales antes de dar una medida por vigente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "commons_20428753",
-        "kind": "representativa",
-        "url": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Palacio_Nacional_Ciudad_de_M%C3%A9xico_City.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "category": "Gobierno",
-        "borough": "",
-        "topic": "Palacio Nacional Ciudad de México City",
-        "keywords": [
-          "Gobierno"
-        ],
-        "author": "Flickr user Eric Menjívar",
-        "license": "CC BY-SA 2.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Palacio_Nacional_Ciudad_de_M%C3%A9xico_City.jpg"
+        "source": "https://commons.wikimedia.org/wiki/File:Sala_de_Tesorer%C3%ADa_en_Palacio_Nacional_-_V.jpg"
       }
     },
     {
@@ -440,6 +774,39 @@
       }
     },
     {
+      "title": "Entrega Clara Brugada al Congreso Proyecto del Plan General de Desarrollo de la CDMX",
+      "description": "De acuerdo con El Sol de México, el titular publicado es: «Entrega Clara Brugada al Congreso Proyecto del Plan General de Desarrollo de la CDMX». La información publicada por El Sol de México aborda un asunto que este portal clasifica como Gobierno. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQaENpZUs3WEVTQnRBY1JrZmtpQ2pFT1lLeUdaUlpkQzZCaDdhMGVLWndCVm84X2pYek1zaThxRDVQZDZEbHRLWWxTRmwxQ1p6LUdwWVZGZTV1TG5tYkxZMFdGR3VlbVBxd3diUmRiekJhNmNCaHRpR1JOYTNyeGhtaVBSTzd5RUZzUGJsbFBhMFBXOExmaHBhaE4ybG93Mmd3V011NXA3WDREdHJXSHlHUE45MllXOS1FSzFHa2hvUlhLUDdHcmFZSFdXaTQ?oc=5",
+      "source": "El Sol de México",
+      "date": "2026-11-11",
+      "published_at": "2026-11-11T20:38:56Z",
+      "category": "Gobierno",
+      "borough": "",
+      "location": "Ciudad de México (sin alcaldía identificada)",
+      "local_url": "/noticias/?id=6c16a5b005e3877aa16b&mes=2026-11",
+      "brief": {
+        "lead": "De acuerdo con El Sol de México, el titular publicado es: «Entrega Clara Brugada al Congreso Proyecto del Plan General de Desarrollo de la CDMX». La información publicada por El Sol de México aborda un asunto que este portal clasifica como Gobierno. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+        "context": "Las decisiones administrativas pueden influir en servicios, trámites y derechos; conviene conocer sus condiciones y a quiénes afectan.",
+        "pending": "Es indispensable consultar los acuerdos, comunicados o documentos oficiales antes de dar una medida por vigente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "commons_169149220",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Candelaria_de_los_Patos_e_inmediaciones_con_dron_08.jpg/960px-Candelaria_de_los_Patos_e_inmediaciones_con_dron_08.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "category": "Gobierno",
+        "borough": "",
+        "topic": "Candelaria de los Patos e inmediaciones con dron 08",
+        "keywords": [
+          "Congreso de la Ciudad de México edificio"
+        ],
+        "author": "ProtoplasmaKid",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Candelaria_de_los_Patos_e_inmediaciones_con_dron_08.jpg"
+      }
+    },
+    {
       "title": "¿Qué pasa en el Metro CDMX hoy?",
       "description": "De acuerdo con TV Azteca, el titular publicado es: «¿Qué pasa en el Metro CDMX hoy?». La información publicada por TV Azteca aborda un asunto que este portal clasifica como Metro. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
       "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQeUtoVHBKUm5TcHdvZEx1UXZIQ0J4MDc4YUQyVG82RlFuNXcyVVQ0aVdyS2Q4bmtTZDJRSmVYZGx4Z1NoV3NURXNoeVpGZGJMNGlRbk9sVnIyeFdOOXdzR2RpQkRfcVo1bFdyd2ExQU9sZ2xrZUlONmhBdXl1TlhRR1oydktONnNTNHFlVjliRnExWUw5YWRLZGlQekNQTVRxYm5xb0tvUzZaMzBjcG9uT2JpYVJ5SlJQd1kyWmFoejgxajdqSlFxWkxmcGtnUWUxZTRlUlZPRi1UaGVneFBtVg?oc=5",
@@ -470,39 +837,6 @@
         "license": "CC BY-SA 4.0",
         "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
         "source": "https://commons.wikimedia.org/wiki/File:Estaci%C3%B3n_Observatorio_de_la_L%C3%ADnea_1_del_Metro_de_la_Ciudad_de_M%C3%A9xico_07.jpg"
-      }
-    },
-    {
-      "title": "Entrega Clara Brugada al Congreso Proyecto del Plan General de Desarrollo de la CDMX",
-      "description": "De acuerdo con El Sol de México, el titular publicado es: «Entrega Clara Brugada al Congreso Proyecto del Plan General de Desarrollo de la CDMX». La información publicada por El Sol de México aborda un asunto que este portal clasifica como Gobierno. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQaENpZUs3WEVTQnRBY1JrZmtpQ2pFT1lLeUdaUlpkQzZCaDdhMGVLWndCVm84X2pYek1zaThxRDVQZDZEbHRLWWxTRmwxQ1p6LUdwWVZGZTV1TG5tYkxZMFdGR3VlbVBxd3diUmRiekJhNmNCaHRpR1JOYTNyeGhtaVBSTzd5RUZzUGJsbFBhMFBXOExmaHBhaE4ybG93Mmd3V011NXA3WDREdHJXSHlHUE45MllXOS1FSzFHa2hvUlhLUDdHcmFZSFdXaTQ?oc=5",
-      "source": "El Sol de México",
-      "date": "2026-11-11",
-      "published_at": "2026-11-11T20:35:12Z",
-      "category": "Gobierno",
-      "borough": "",
-      "location": "Ciudad de México (sin alcaldía identificada)",
-      "local_url": "/noticias/?id=6c16a5b005e3877aa16b&mes=2026-11",
-      "brief": {
-        "lead": "De acuerdo con El Sol de México, el titular publicado es: «Entrega Clara Brugada al Congreso Proyecto del Plan General de Desarrollo de la CDMX». La información publicada por El Sol de México aborda un asunto que este portal clasifica como Gobierno. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-        "context": "Las decisiones administrativas pueden influir en servicios, trámites y derechos; conviene conocer sus condiciones y a quiénes afectan.",
-        "pending": "Es indispensable consultar los acuerdos, comunicados o documentos oficiales antes de dar una medida por vigente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "commons_169149220",
-        "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Candelaria_de_los_Patos_e_inmediaciones_con_dron_08.jpg/960px-Candelaria_de_los_Patos_e_inmediaciones_con_dron_08.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "category": "Gobierno",
-        "borough": "",
-        "topic": "Candelaria de los Patos e inmediaciones con dron 08",
-        "keywords": [
-          "Congreso de la Ciudad de México edificio"
-        ],
-        "author": "ProtoplasmaKid",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Candelaria_de_los_Patos_e_inmediaciones_con_dron_08.jpg"
       }
     },
     {
@@ -605,6 +939,39 @@
       }
     },
     {
+      "title": "Tabe en Miguel Hidalgo: cinco años de cambio",
+      "description": "De acuerdo con Capital CDMX, el titular publicado es: «Tabe en Miguel Hidalgo: cinco años de cambio». La información publicada por Capital CDMX aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE0ydjFOdDMwUmc5VDhMVjhWb3NjUVlTTGU0NUFxVEUwd19YazBVNWszbFo2SWh2OEx2SnQ4V19DaHY5VXVjdjZqS01jUnhMc0pqWlpMREdBd3dGYnU3a0djeXF6YWZhdWRYaVowb1FYTW40NFRk?oc=5",
+      "source": "Capital CDMX",
+      "date": "2026-11-11",
+      "published_at": "2026-11-11T20:00:41Z",
+      "category": "Seguridad",
+      "borough": "Miguel Hidalgo",
+      "location": "Miguel Hidalgo (mencionada en el titular)",
+      "local_url": "/noticias/?id=a8519a7db489cce31902&mes=2026-11",
+      "brief": {
+        "lead": "De acuerdo con Capital CDMX, el titular publicado es: «Tabe en Miguel Hidalgo: cinco años de cambio». La información publicada por Capital CDMX aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+        "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+        "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "commons_75139350",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Equipo_de_trabajo_de_los_Bomberos_CDMX_IMG_3073_%2844661911521%29.jpg/960px-Equipo_de_trabajo_de_los_Bomberos_CDMX_IMG_3073_%2844661911521%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "category": "Seguridad",
+        "borough": "",
+        "topic": "Equipo de trabajo de los Bomberos CDMX IMG 3073 (44661911521)",
+        "keywords": [
+          "Bomberos Ciudad de México"
+        ],
+        "author": "Gobierno CDMX",
+        "license": "CC0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "source": "https://commons.wikimedia.org/wiki/File:Equipo_de_trabajo_de_los_Bomberos_CDMX_IMG_3073_(44661911521).jpg"
+      }
+    },
+    {
       "title": "Alcaldía Benito Juárez llama a resolver controversias por la vía legal y solicita intervención de la Fiscalía capitalina ante manifestación de repartidores",
       "description": "De acuerdo con Capital CDMX, el titular publicado es: «Alcaldía Benito Juárez llama a resolver controversias por la vía legal y solicita intervención de la Fiscalía capitalina ante manifestación de repartidores». La información publicada por Capital CDMX aborda un asunto que este portal clasifica como Movilidad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
       "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPdWJkVGEyOXlWOElmVEYzdHpOazAtUjlfMzFxM3Q5dlJ4Z3FIWFVLbmlVTGNBUUVidVg4ZUlfLWh0UHhNTmpDODA1V05nOXIyaC1paHdfODJzbHdiYXhoVDc2V2pCOE85OXZ0V2M0T0RQVXF6eTNTMHZiVHVKcDdqWVpIVWdJU0xKXzRkaFpKNVFFLXpQQkE?oc=5",
@@ -671,36 +1038,69 @@
       }
     },
     {
+      "title": "¡Así celebrará La Orquesta Mondragón su 50 aniversario en CDMX!",
+      "description": "De acuerdo con TV Azteca, el titular publicado es: «¡Así celebrará La Orquesta Mondragón su 50 aniversario en CDMX!». La información publicada por TV Azteca aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOMUFubTNhdmhveEVhVVpZeTZqMFN2bS1QSk1Ud0pXdFphNkNva1E0bE9oLVRiNlZ6Q2htT09ZMUpXTHJybUhmUXk2aFRLZnY1QWlfdE1lQlYxSWo3aTBQQ1VwVzZkTjhFTjEzdG1yS25Rcml6X05uVHFxRnl3eDdRMEMzdDFMUHczbjVpUTR5RXowMnYxUkd2T0JfYkMyUTFHQldNVHROZWdtQVk4TVk4X0h1Q0Y?oc=5",
+      "source": "TV Azteca",
+      "date": "2026-11-11",
+      "published_at": "2026-11-11T19:51:56Z",
+      "category": "CDMX",
+      "borough": "",
+      "location": "Ciudad de México (sin alcaldía identificada)",
+      "local_url": "/noticias/?id=ac2a3dc2ae1b92772928&mes=2026-11",
+      "brief": {
+        "lead": "De acuerdo con TV Azteca, el titular publicado es: «¡Así celebrará La Orquesta Mondragón su 50 aniversario en CDMX!». La información publicada por TV Azteca aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+        "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+        "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "commons_114051297",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Coro_de_la_Catedral_metropolitana_de_la_Ciudad_de_M%C3%A9xico_09.jpg/960px-Coro_de_la_Catedral_metropolitana_de_la_Ciudad_de_M%C3%A9xico_09.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "category": "CDMX",
+        "borough": "",
+        "topic": "Coro de la Catedral metropolitana de la Ciudad de México 09",
+        "keywords": [
+          "Catedral Metropolitana Ciudad de México"
+        ],
+        "author": "Luis Alvaz",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Coro_de_la_Catedral_metropolitana_de_la_Ciudad_de_M%C3%A9xico_09.jpg"
+      }
+    },
+    {
       "title": "Adiós a bancas incómodas o bardas con picos: buscan prohibir la arquitectura hostil en CDMX que excluye a capitalinos",
-      "description": "De acuerdo con Infobae, el titular publicado es: «Adiós a bancas incómodas o bardas con picos: buscan prohibir la arquitectura hostil en CDMX que excluye a capitalinos». La información publicada por Infobae aborda un asunto que este portal clasifica como Metro. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "description": "De acuerdo con Infobae, el titular publicado es: «Adiós a bancas incómodas o bardas con picos: buscan prohibir la arquitectura hostil en CDMX que excluye a capitalinos». La información publicada por Infobae aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
       "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxOS0QzWDc3eFRybXZXQzYtYWxETlI5SlRiZWc0UDIwWGlsR0FRcDFFa2pYR184eWVNQlFUa2dMR1hmQlF0LWpaaDBzWTFrNHdvbnI2a2ZURjFzRnFtTDZZZnBBNXBrb3YxNGFoTzFoalpHSE9hN2Y2aHlHX19zMHZTZVNvdGpwa1Zsc3VaZ0JVZ2ZHS1FhTmdjZVRmaW00U1FySk9LV2p4TlV2UW1paF9CUGdHa080Z1dHMmI4VG4yeFBCbnJhQ19Ib0VMeFYyaENFU3JLNUhwUjBJa01HOHNLME42OTRDb2hpRG94Wk02U0rSAYsCQVVfeXFMTUlOdjZTTTBqSUlvTVhiR0dLcERveDVyQXB2elU0WFozVkx5Y2NUeV9vdWdUOFFsUnFxMkg3OW9hNzhzc0d2aXk0cnc3eHpaWGFMRTF1N3FKZERydnFsdmdvMUdMb3lNYUY1UWc3TG4xM3FzT0UtdUZhaWNJWlppRmFjYnJNUFJYVS1JeFk2VldLNlhpLW1FSG4wMVNKMVpVVmxrbHQ2UVZ0QXF0eWdRNWF5WGpZVy1yblZFdG5RMkU4TVhVUWh2aGFwQUZjVHJZa0lCMGx1cFpoZjlyNEZTeXV2QVBiR2RGSG9DbDUwSlp6eVJTY0pKcWowelFkcGI3bXJCQ0xHWllZRjdR?oc=5",
       "source": "Infobae",
       "date": "2026-11-11",
       "published_at": "2026-11-11T19:49:00Z",
-      "category": "Metro",
+      "category": "CDMX",
       "borough": "",
       "location": "Ciudad de México (sin alcaldía identificada)",
       "local_url": "/noticias/?id=a3b090dc6dad4916d175&mes=2026-11",
       "brief": {
-        "lead": "De acuerdo con Infobae, el titular publicado es: «Adiós a bancas incómodas o bardas con picos: buscan prohibir la arquitectura hostil en CDMX que excluye a capitalinos». La información publicada por Infobae aborda un asunto que este portal clasifica como Metro. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-        "context": "Los cambios en este sistema pueden afectar los horarios, las conexiones y la planeación de los viajes cotidianos.",
-        "pending": "El estado operativo, las estaciones y las alternativas de traslado deben comprobarse en los avisos actuales del Metro. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "lead": "De acuerdo con Infobae, el titular publicado es: «Adiós a bancas incómodas o bardas con picos: buscan prohibir la arquitectura hostil en CDMX que excluye a capitalinos». La información publicada por Infobae aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+        "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+        "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "commons_159825480",
+        "id": "commons_64051387",
         "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Estaci%C3%B3n_Hidalgo_%28L%C3%ADnea_3%29_del_Metro_de_la_Ciudad_de_M%C3%A9xico_02.jpg/960px-Estaci%C3%B3n_Hidalgo_%28L%C3%ADnea_3%29_del_Metro_de_la_Ciudad_de_M%C3%A9xico_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "category": "Metro",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Reforma_skullsp3.jpg/960px-Reforma_skullsp3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "category": "CDMX",
         "borough": "",
-        "topic": "Estación Hidalgo (Línea 3) del Metro de la Ciudad de México 02",
+        "topic": "Reforma skullsp3",
         "keywords": [
-          "Metro Ciudad de México Línea 3"
+          "Paseo de la Reforma Ciudad de México"
         ],
-        "author": "ProtoplasmaKid",
+        "author": "Carlos Valenzuela",
         "license": "CC BY-SA 4.0",
         "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Estaci%C3%B3n_Hidalgo_(L%C3%ADnea_3)_del_Metro_de_la_Ciudad_de_M%C3%A9xico_02.jpg"
+        "source": "https://commons.wikimedia.org/wiki/File:Reforma_skullsp3.jpg"
       }
     },
     {
@@ -741,43 +1141,36 @@
       }
     },
     {
-      "title": "Fraudes en línea encabezan los ciberdelitos en CDMX: reportan más de 31 mil casos durante 2026",
-      "description": "De acuerdo con www.monitorexpresso.com, el titular publicado es: «Fraudes en línea encabezan los ciberdelitos en CDMX: reportan más de 31 mil casos durante 2026». La información publicada por www.monitorexpresso.com aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPaXQ1N0d4endkUHV0QWRCMElrWFZyS0pqekNxcmc4aUh4TjE2aTFRcGctT1NtcjJxT0VQMVh2T1R4OVZSSUlSWmhDZUVXQVJDdHdDWEpxcVh1d01lMnA5MWdIQXFyZ2FjMV9NZm53WURGV1BXTFRhVldjMnN5dDhRemNwSDJEb0xMbzQ5VmFjQ3RxQXFob05fX2lQeDdMSVd4SUZwM1ExdnZxMDQ2RlpnLXZoY3BFT3BnY1ZHcTBUdmV1aDNN?oc=5",
-      "source": "www.monitorexpresso.com",
+      "title": "¿Metro CDMX Tendrá Horario Especial por Buen Fin 2026 del 13 al 17 de Noviembre?",
+      "description": "De acuerdo con N+, el titular publicado es: «¿Metro CDMX Tendrá Horario Especial por Buen Fin 2026 del 13 al 17 de Noviembre?». La información publicada por N+ aborda un asunto que este portal clasifica como Metro. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOMDhCQVNNSWo1NFcyb0x1TWt5S0M3M0VTc2JPaUZ4LWF4bGNRaFVjOEdoUFhpbW00STFQTmNhdTdVR0pER1ZLUUl4MllxRVZlX25BcXpuMkdUQ3B3NC1idllZa216U2ItMmdiRGdhVjVRZFhhOGdkazF4bEhwVVZEeE13Mll0WjhUMWtKQkluVWFMbFowMEp6aG5xa19vazV3bDRnRXpBemt4SW1nNFNmZ1NCRVlNT0RWWVd0VFFKaw?oc=5",
+      "source": "N+",
       "date": "2026-11-11",
-      "published_at": "2026-11-11T19:34:40Z",
-      "category": "Seguridad",
+      "published_at": "2026-11-11T19:14:51Z",
+      "category": "Metro",
       "borough": "",
       "location": "Ciudad de México (sin alcaldía identificada)",
-      "local_url": "/noticias/?id=a034754f6516c9e736d8&mes=2026-11",
+      "local_url": "/noticias/?id=7841278552f692d02252&mes=2026-11",
       "brief": {
-        "lead": "De acuerdo con www.monitorexpresso.com, el titular publicado es: «Fraudes en línea encabezan los ciberdelitos en CDMX: reportan más de 31 mil casos durante 2026». La información publicada por www.monitorexpresso.com aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-        "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
-        "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "lead": "De acuerdo con N+, el titular publicado es: «¿Metro CDMX Tendrá Horario Especial por Buen Fin 2026 del 13 al 17 de Noviembre?». La información publicada por N+ aborda un asunto que este portal clasifica como Metro. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+        "context": "Los cambios en este sistema pueden afectar los horarios, las conexiones y la planeación de los viajes cotidianos.",
+        "pending": "El estado operativo, las estaciones y las alternativas de traslado deben comprobarse en los avisos actuales del Metro. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "contexto_seguridad_digital_laptop",
+        "id": "commons_151844174",
         "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Secured_laptop.jpg/960px-Secured_laptop.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
-        "category": "Seguridad",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Estaci%C3%B3n_Zapata_de_la_l%C3%ADnea_12_del_Metro_de_la_Ciudad_de_M%C3%A9xico.jpg/960px-Estaci%C3%B3n_Zapata_de_la_l%C3%ADnea_12_del_Metro_de_la_Ciudad_de_M%C3%A9xico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "category": "Metro",
         "borough": "",
-        "topic": "Laptop asegurada con cadena y candado; fotografía representativa de seguridad informática",
+        "topic": "Estación Zapata de la línea 12 del Metro de la Ciudad de México",
         "keywords": [
-          "ciberseguridad",
-          "seguridad digital",
-          "seguridad informática",
-          "delitos cibernéticos",
-          "delitos digitales",
-          "computadora",
-          "laptop",
-          "internet"
+          "Metro Ciudad de México Línea 12"
         ],
-        "author": "Richard Nowell",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-        "source": "https://commons.wikimedia.org/wiki/File:Secured_laptop.jpg"
+        "author": "Diegoromch",
+        "license": "CC0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "source": "https://commons.wikimedia.org/wiki/File:Estaci%C3%B3n_Zapata_de_la_l%C3%ADnea_12_del_Metro_de_la_Ciudad_de_M%C3%A9xico.jpg"
       }
     },
     {
@@ -979,39 +1372,6 @@
       }
     },
     {
-      "title": "Brilla Fest 2026 llegará cerca de CDMX con espectáculos, comida y escenarios navideños: fecha y lugar",
-      "description": "De acuerdo con Infobae, el titular publicado es: «Brilla Fest 2026 llegará cerca de CDMX con espectáculos, comida y escenarios navideños: fecha y lugar». La información publicada por Infobae aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQcF9feVhRSXBTbG1ZYUt0aTFpNE00T0Q3OTdYRHR2Y25yeVVYbmJnU1hkTEtfQmIzZVgyWmpBUnVwRUduWEd2Yk9tbkNISVZXcVVWZ29qOEpRNmQ5bHI1b2IxOEZkd3dCVnZ5eTVfeVQ5anZOUGJyWHFTSDZPa2xRZ29mMHVPRWljT2hpMGNseTV1d0c4eWxjTlNCWWg4SktNODFOSGlFNFJaVEV5YnNHUEZzME5ySWVUck9UTWFNZklTMUJPUWdnNUNUSnVOVEoyZmhidkZCRzdNd9IB9AFBVV95cUxPb1VTSTRTcWdhR3F4dEdRelV2djQzbDBVdVJiRDRDR2xwc0RYYTlpYmdBZUc5S3ZjOW04TFh6SGNRRFpvdnFHRzNmdWpUQTVLSlVrVDdhRW9WbU8yc1p6djFOSGhIODlRR2tlWDJURVNUWHl5Y3htTWZqZXNaZGxTaVB2Z3hkWlQzaDNnOTBGbUlDcjVVZUtXYWhEX3kxTFhTOGx2bmEyRU1kMHdSMFR5OTJ3b3FzNHZLa0p6QU5BclZkWlJvUDhGS3VoQmxxLVFKUV9WVUJMbDg0bTQ1enVPRjV1aGg2c0RlZC0xSDJRaUMzNmFs?oc=5",
-      "source": "Infobae",
-      "date": "2026-11-11",
-      "published_at": "2026-11-11T18:53:00Z",
-      "category": "CDMX",
-      "borough": "",
-      "location": "Ciudad de México (sin alcaldía identificada)",
-      "local_url": "/noticias/?id=dc864495c991487a4426&mes=2026-11",
-      "brief": {
-        "lead": "De acuerdo con Infobae, el titular publicado es: «Brilla Fest 2026 llegará cerca de CDMX con espectáculos, comida y escenarios navideños: fecha y lugar». La información publicada por Infobae aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-        "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-        "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "commons_39750407",
-        "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Organillero_del_z%C3%B3calo_de_la_Ciudad_de_M%C3%A9xico_01.JPG/960px-Organillero_del_z%C3%B3calo_de_la_Ciudad_de_M%C3%A9xico_01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "category": "CDMX",
-        "borough": "",
-        "topic": "Organillero del zócalo de la Ciudad de México 01",
-        "keywords": [
-          "Zócalo Ciudad de México"
-        ],
-        "author": "Luisalvaz",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Organillero_del_z%C3%B3calo_de_la_Ciudad_de_M%C3%A9xico_01.JPG"
-      }
-    },
-    {
       "title": "Difunden imágenes con el rostro del sujeto que desató la furia de los repartidores de CDMX tras presuntamente amenazar a uno de ellos",
       "description": "De acuerdo con LatinUS, el titular publicado es: «Difunden imágenes con el rostro del sujeto que desató la furia de los repartidores de CDMX tras presuntamente amenazar a uno de ellos». La información publicada por LatinUS aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
       "url": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxPeml4ZGctckw1N0ZZNDVRMEhCM2JOUTNQbWg5RFB5S3pKR2hGYVNXMVM5Z3lNcDNaZ016SmcyVkZpeEk5THN0YlpNVklmaVdyeHpueEw5QW1nbk5jM3V6S1E0ZmN4OUpuakt6XzVmeVdVQ3I2MlJlbmgxemRoRzhxNG50RlVkeTRUXzVFaWZ3ZGJ2MjhYcnZTM3ZtNUZKelhDcVFBazcwenFkc3NqbUNtQWJ1aGlOVGhZMEFKSVgzS21WUlZzQm5PWEdRdHdWamFaeEZqYnlncHE2bU12RnBkRTV6aEFTTlJRR0RqU0N3RTRPVm8wWUpkTDIwbzd5aU85MW5qc01FNWNzNG8?oc=5",
@@ -1078,39 +1438,6 @@
       }
     },
     {
-      "title": "Tres detenidos y tres toneladas de autopartes aseguradas tras dos cateos de la SSC CDMX en Iztapalapa y Cuauhtémoc",
-      "description": "De acuerdo con El Heraldo de México, el titular publicado es: «Tres detenidos y tres toneladas de autopartes aseguradas tras dos cateos de la SSC CDMX en Iztapalapa y Cuauhtémoc». La información publicada por El Heraldo de México aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-      "url": "https://news.google.com/rss/articles/CBMiigJBVV95cUxNT2lfMlptd2ZwVEtSVmhpOFFGSzNleFh5UXk4VWQyN3ZaRWM5WWJ6a0ZQTWlRX0xKczYzOW5WYjFxQzNqTGR5OEpXbld1Z0Q5OWVUNHlvM2EzTUtub3FPdXlQRHphQS1GV3ZnRDZOY2NPNXRsckV4Wl83cmxqWVNwWjY2bzZ6UmN6NVdvcGx1UVpFRHB4UUVUSkNGWkRoMVRhbmN6NGRIblB5Q1FwMC1rOWhCemZkUEV5dnp6TldiNEgxbnVqS3RMU1pZYmNHQXVROUlDVU1pdElzaXZ5QUsxZzV2TTB1b0k3SzB3TzA2MWVZa1owZzFxZkpZcWhzNzlXMVhseEt1c255Zw?oc=5",
-      "source": "El Heraldo de México",
-      "date": "2026-11-11",
-      "published_at": "2026-11-11T18:21:50Z",
-      "category": "CDMX",
-      "borough": "Iztapalapa",
-      "location": "Iztapalapa (mencionada en el titular)",
-      "local_url": "/noticias/?id=16d970e5b32ccdd7bac6&mes=2026-11",
-      "brief": {
-        "lead": "De acuerdo con El Heraldo de México, el titular publicado es: «Tres detenidos y tres toneladas de autopartes aseguradas tras dos cateos de la SSC CDMX en Iztapalapa y Cuauhtémoc». La información publicada por El Heraldo de México aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-        "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-        "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "seguridad",
-        "kind": "representativa",
-        "url": "/assets/fotos/seguridad.jpg",
-        "category": "Seguridad",
-        "borough": "",
-        "topic": "Patrulla de Ciudad de México",
-        "keywords": [
-          "Seguridad"
-        ],
-        "author": "RainerRowe",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.es",
-        "source": "https://commons.wikimedia.org/wiki/File:Patrulla_cdmx.jpg"
-      }
-    },
-    {
       "title": "Costo de la renta en CDMX supera ingresos de los capitalinos; Brugada toma cartas en el asunto",
       "description": "De acuerdo con RegeneraciónMX, el titular publicado es: «Costo de la renta en CDMX supera ingresos de los capitalinos; Brugada toma cartas en el asunto». La información publicada por RegeneraciónMX aborda un asunto que este portal clasifica como Gobierno. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
       "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNU2tFY3hSdzlNU0pwZFVNWGhRYWVhdXM0Qld5TmZha29OOGRGZTJxTHRXeTFJQjJ2ZXc1T3g0b1J1NUFRZ1J4R0JHU3ljOTA5STQ1TGUycXFkS3pzWHMwYVF6ZmRzYzZMcDVnaWo1VTluUHE1MVVkN19PWXVIdk43MWVSc251cjFnWmctNWpPSlh4Nm1uV1RpYXNQNmRWUE13X3VYZ0VWc0FRT3h3UlpYUE9vTkpXU1UyNmc?oc=5",
@@ -1128,214 +1455,19 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "commons_98002544",
+        "id": "commons_98002540",
         "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Sala_de_Tesorer%C3%ADa_en_Palacio_Nacional_-_V.jpg/960px-Sala_de_Tesorer%C3%ADa_en_Palacio_Nacional_-_V.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Sala_de_Tesorer%C3%ADa_en_Palacio_Nacional_-_III.jpg/960px-Sala_de_Tesorer%C3%ADa_en_Palacio_Nacional_-_III.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
         "category": "Gobierno",
         "borough": "",
-        "topic": "Sala de Tesorería en Palacio Nacional - V",
+        "topic": "Sala de Tesorería en Palacio Nacional - III",
         "keywords": [
           "Palacio Nacional Ciudad de México"
         ],
         "author": "J Mndz",
         "license": "CC BY-SA 2.0",
         "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Sala_de_Tesorer%C3%ADa_en_Palacio_Nacional_-_V.jpg"
-      }
-    },
-    {
-      "title": "Aseguran casi 3 toneladas de autopartes y caen tres en Iztapalapa y Cuauhtémoc",
-      "description": "De acuerdo con Excélsior, el titular publicado es: «Aseguran casi 3 toneladas de autopartes y caen tres en Iztapalapa y Cuauhtémoc». La información publicada por Excélsior aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNN3FnVUpKTXBxTTZpSTJxNmZGRm1lb0NVeFVkQVU4YS1tajFsenFGc0c5ODd0aGNaTHp3bDRRV2ZzN2RRTmJ5TWw3bVlYQ1ZDdFFxcHhCVUVCc0YzblVUd1hhNldOQV8tSHVKZG02QXdPZ3hhdHVtMl9fNktFc2JDVjZNMFFRV0Z2T2g2R2dzVjhQTDc3TVNBVWU4Y2xfZ2V1VVp5TnpmTFRmSFNfNkZmcFRZZnc5Tzh10gG4AUFVX3lxTE03cWdVSkpNcHFNNmlJMnE2ZkZGbWVvQ1V4VWRBVThhLW1qMWx6cUZzRzk4N3RoY1pMendsNFFXZnM3ZFFOYnlNbDdtWVhDVkN0UXFweEJVRUJzRjNuVVR3WGE2V05BXy1IdUpkbTZBd09neGF0dW0yX182S0VzYkNWNk0wUVFXRnZPaDZHZ3NWOFBMNzdNU0FVZThjbF9nZXVVWnlOemZMVGZIU182RmZwVFlmdzlPOHU?oc=5",
-      "source": "Excélsior",
-      "date": "2026-11-11",
-      "published_at": "2026-11-11T17:58:47Z",
-      "category": "CDMX",
-      "borough": "Iztapalapa",
-      "location": "Iztapalapa (mencionada en el titular)",
-      "local_url": "/noticias/?id=c94f114b9857c0bd3db1&mes=2026-11",
-      "brief": {
-        "lead": "De acuerdo con Excélsior, el titular publicado es: «Aseguran casi 3 toneladas de autopartes y caen tres en Iztapalapa y Cuauhtémoc». La información publicada por Excélsior aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-        "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-        "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "commons_84580629",
-        "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Paseo_de_la_Reforma%2C_Bosque_de_Chapultepec_-_Ciudad_de_M%C3%A9xico.jpg/960px-Paseo_de_la_Reforma%2C_Bosque_de_Chapultepec_-_Ciudad_de_M%C3%A9xico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "category": "CDMX",
-        "borough": "",
-        "topic": "Paseo de la Reforma, Bosque de Chapultepec - Ciudad de México",
-        "keywords": [
-          "Paseo de la Reforma Ciudad de México"
-        ],
-        "author": "Juan Carlos Fonseca Mata",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Paseo_de_la_Reforma,_Bosque_de_Chapultepec_-_Ciudad_de_M%C3%A9xico.jpg"
-      }
-    },
-    {
-      "title": "Sujetos abandonan los cuerpos de una cabra, un perro y un gallo en calles de la CDMX; ¿cuántos años de cárcel podría enfrentar?",
-      "description": "De acuerdo con Infobae, el titular publicado es: «Sujetos abandonan los cuerpos de una cabra, un perro y un gallo en calles de la CDMX; ¿cuántos años de cárcel podría enfrentar?». La información publicada por Infobae aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-      "url": "https://news.google.com/rss/articles/CBMilAJBVV95cUxPU2gweHpPdzFlSGNIQ0NvVnMtSVpuckZpTmtvN043REVDV3FwVkVmNXB5TVRaMjA5UzZqNkZpdnhydXZrTkhxM05UUFkxd0F4SjlZcktQUW04U2JLLUZCUnBoVEFxV016VDhfSHp6RkJrTFdaNFB3SXFla0NNdHhBWHdoaGd5dDFIRHNqdE9jUTFXYUpLOGI0LXBmSWVfMHo4X2swNXNSczdDNWRCQ1dVLUkyUWtYRWF2b2k4X1ZwOWVIRE9UdWxDS3dlUlgtY2tvWTVRMldyWDhDRTJOd1JvWmFfRGtCYWd3ZXBHQXU5cDM5OU92T3FadndTY3Nodi1jZHByc2hMcHd6R0lKLVVsZ19weVfSAZQCQVVfeXFMT1NoMHh6T3cxZUhjSENDb1ZzLUlabnJGaU5rbzdON0RFQ1dxcFZFZjVweU1UWjIwOVM2ajZGaXZ4cnV2a05IcTNOVFBZMXdBeEo5WXJLUFFtOFNiSy1GQlJwaFRBcVdNelQ4X0h6ekZCa0xXWjRQd0lxZWtDTXR4QVh3aGhneXQxSERzanRPY1ExV2FKSzhiNC1wZkllXzB6OF9rMDVzUnM3QzVkQkNXVS1JMlFrWEVhdm9pOF9WcDllSERPVHVsQ0t3ZVJYLWNrb1k1UTJXclg4Q0UyTndSb1phX0RrQmFnd2VwR0F1OXAzOTlPdk9xWnZ3U2NzaHYtY2RwcnNoTHB3ekdJSi1VbGdfcHlX?oc=5",
-      "source": "Infobae",
-      "date": "2026-11-11",
-      "published_at": "2026-11-11T17:51:00Z",
-      "category": "Seguridad",
-      "borough": "",
-      "location": "Ciudad de México (sin alcaldía identificada)",
-      "local_url": "/noticias/?id=e34f8c7226d24d325ae0&mes=2026-11",
-      "brief": {
-        "lead": "De acuerdo con Infobae, el titular publicado es: «Sujetos abandonan los cuerpos de una cabra, un perro y un gallo en calles de la CDMX; ¿cuántos años de cárcel podría enfrentar?». La información publicada por Infobae aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-        "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
-        "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "commons_35624629",
-        "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Animales_Bosque_de_Tlalpan_04.JPG/960px-Animales_Bosque_de_Tlalpan_04.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "category": "Alcaldías",
-        "borough": "",
-        "topic": "Animales Bosque de Tlalpan 04",
-        "keywords": [
-          "Tlalpan Ciudad de México"
-        ],
-        "author": "Inakiherrasti",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Animales_Bosque_de_Tlalpan_04.JPG"
-      }
-    },
-    {
-      "title": "CDMX presenta sistema inteligente que detecta hasta 30 mil fugas de agua",
-      "description": "De acuerdo con La Jornada Estado de México, el titular publicado es: «CDMX presenta sistema inteligente que detecta hasta 30 mil fugas de agua». La información publicada por La Jornada Estado de México aborda un asunto que este portal clasifica como Gobierno. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOb3hTWXY2LVJfTmFsaVRDZXRmUW9tRWVXSVRQNlFMUFNRczZQS05SSWNjdlRxNnY0SFZoX0xFTnFUUEZjcFFlMUZsX29zTjg4VVNxbGdQdVFFbTJ2aUhqRmhybTB6MmVuX2taQ0tqbEVmaDdkRmxDM0ZHMjRBNXFKa3VzTV9JUEFSUUFNOHp4Qzl5eWtQ?oc=5",
-      "source": "La Jornada Estado de México",
-      "date": "2026-11-11",
-      "published_at": "2026-11-11T16:28:06Z",
-      "category": "Gobierno",
-      "borough": "",
-      "location": "Ciudad de México (sin alcaldía identificada)",
-      "local_url": "/noticias/?id=8079031eda6a78b19914&mes=2026-11",
-      "brief": {
-        "lead": "De acuerdo con La Jornada Estado de México, el titular publicado es: «CDMX presenta sistema inteligente que detecta hasta 30 mil fugas de agua». La información publicada por La Jornada Estado de México aborda un asunto que este portal clasifica como Gobierno. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-        "context": "Las decisiones administrativas pueden influir en servicios, trámites y derechos; conviene conocer sus condiciones y a quiénes afectan.",
-        "pending": "Es indispensable consultar los acuerdos, comunicados o documentos oficiales antes de dar una medida por vigente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "commons_93188323",
-        "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/Registro_de_agua._Primera_Secci%C3%B3n_del_Bosque_de_Chapultepec_-_4.jpg/960px-Registro_de_agua._Primera_Secci%C3%B3n_del_Bosque_de_Chapultepec_-_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "category": "CDMX",
-        "borough": "",
-        "topic": "Registro de agua. Primera Sección del Bosque de Chapultepec - 4",
-        "keywords": [
-          "Medio Ambiente"
-        ],
-        "author": "ProtoplasmaKid",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Registro_de_agua._Primera_Secci%C3%B3n_del_Bosque_de_Chapultepec_-_4.jpg"
-      }
-    },
-    {
-      "title": "Metro y Metrobús CDMX: Estaciones sin servicio y avance de trenes este miércoles 11 de noviembre",
-      "description": "De acuerdo con Tele Urban, el titular publicado es: «Metro y Metrobús CDMX: Estaciones sin servicio y avance de trenes este miércoles 11 de noviembre». La nota de Tele Urban reúne reportes sobre los servicios de Metro y Metrobús en Ciudad de México. La operación puede cambiar durante el día y los informes de usuarios no son equivalentes a un comunicado oficial.",
-      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOd05QbEk3QUhXR09ndHNrSmdSbnIxeTk5bFBjTGF6WTNkdG9QQU5QemIxVlZiTFRQcE5ySlRWV3ByczZfWVNHdnA5QlN4VndTOWRoTXc4blRiZ3UtOGNCZktkazUwV1J6cWNCYnlTT0lmbVBHcXNjSEJoMnFkS0g3czRwbUNsX3RTTTNXejNXOEo?oc=5",
-      "source": "Tele Urban",
-      "date": "2026-11-11",
-      "published_at": "2026-11-11T16:26:47Z",
-      "category": "Movilidad",
-      "borough": "",
-      "location": "Ciudad de México (sin alcaldía identificada)",
-      "local_url": "/noticias/?id=a1fae208f6199810baf3&mes=2026-11",
-      "brief": {
-        "lead": "De acuerdo con Tele Urban, el titular publicado es: «Metro y Metrobús CDMX: Estaciones sin servicio y avance de trenes este miércoles 11 de noviembre». La nota de Tele Urban reúne reportes sobre los servicios de Metro y Metrobús en Ciudad de México. La operación puede cambiar durante el día y los informes de usuarios no son equivalentes a un comunicado oficial.",
-        "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
-        "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "commons_175548202",
-        "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Avance_Metrob%C3%BAs_L7_03_01.jpg/960px-Avance_Metrob%C3%BAs_L7_03_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "category": "Movilidad",
-        "borough": "",
-        "topic": "Avance Metrobús L7 03 01",
-        "keywords": [
-          "Metrobús Paseo de la Reforma CDMX"
-        ],
-        "author": "Gobierno de la Ciudad de México",
-        "license": "CC BY 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Avance_Metrob%C3%BAs_L7_03_01.jpg"
-      }
-    },
-    {
-      "title": "Repartidores protestan en CDMX tras amenaza de muerte a un compañero",
-      "description": "De acuerdo con Sopitas.com, el titular publicado es: «Repartidores protestan en CDMX tras amenaza de muerte a un compañero». La información publicada por Sopitas.com aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQN3pGWlU0b1Q2dE9HdmJ2czJkYl8wYkdTN240S0tfaWEwVzdia0hLczh6ZWFfWTE4NFlQVEV3SkZaVXlYSVRIaW9rSzcyQXh6ZGlEZms0YWdBMkF0WkxQZzdEcHNyWUY4Y3hTQlhlVU9uSmk5NURPeDdSckJvRVBIRnBNcTIwM2hGYkhaUkYtaw?oc=5",
-      "source": "Sopitas.com",
-      "date": "2026-11-11",
-      "published_at": "2026-11-11T16:23:00Z",
-      "category": "Seguridad",
-      "borough": "",
-      "location": "Ciudad de México (sin alcaldía identificada)",
-      "local_url": "/noticias/?id=956aace06385ecd4d107&mes=2026-11",
-      "brief": {
-        "lead": "De acuerdo con Sopitas.com, el titular publicado es: «Repartidores protestan en CDMX tras amenaza de muerte a un compañero». La información publicada por Sopitas.com aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-        "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
-        "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "commons_16240278",
-        "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Cacerolazo_contra_la_violencia_-_Ciudad_de_M%C3%A9xico_-_3.jpg/960px-Cacerolazo_contra_la_violencia_-_Ciudad_de_M%C3%A9xico_-_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "category": "CDMX",
-        "borough": "",
-        "topic": "Cacerolazo contra la violencia - Ciudad de México - 3",
-        "keywords": [
-          "Ángel de la Independencia Ciudad de México"
-        ],
-        "author": "ProtoplasmaKid",
-        "license": "CC BY-SA 3.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Cacerolazo_contra_la_violencia_-_Ciudad_de_M%C3%A9xico_-_3.jpg"
-      }
-    },
-    {
-      "title": "Iztapalapa celebrará el ritual prehispánico del Fuego Nuevo con recorridos por Cerro de la Estrella, danzas y peregrinación",
-      "description": "De acuerdo con Infobae, el titular publicado es: «Iztapalapa celebrará el ritual prehispánico del Fuego Nuevo con recorridos por Cerro de la Estrella, danzas y peregrinación». La información publicada por Infobae aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-      "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxQdDJrWFROXzlQTWNNTDB6cmR3RUJ6ZjFrenhOdWxqNzJCY1lMOUdmc1ZYRVc2Uk9UbHEzcWM5cU9hTmZVTmh3VnY3LTdxNlhDYVNSS3RDMXQtaEF2VE5PYlRKSWxiMmJSTU1ULV9vZ2JNTWJvYnRfUXFjaGRCRl9SRm16Q3RDSlI2REcyT2Fvd1ZhZWIwOXhqUWJpcDVZaHBYeWR6TDBnS2xtWlhqRWQ1cHU0aXZJWDJ0WHNDN1hvTUhsb0ZBOXl5ZUQxcmZfdTJVbUx6N1dMME9CaVJxMEZPZEhBYWt2al9ISmdld0l3eEVneVlZWHRxQdIBkwJBVV95cUxOakpBdnFrbWlwSHdUMDZSVmluZEJpUXRTQ1hvSTNxQXhmRmQ5SFhGcUN4UWRfWGZRdzlGM3U3X01TcWNlazhMQ1c0UWFXZy0wT2FSTjRURlBscXNzdW1rZUNGb0JoeXdVbktTMjFIWW9ZdE12SDh6WTZWYXY3emxWTm4zNmt1LWkyZENQODV3N3EzRkNzaTFOSV9YeXdGUHAxRnhOMWthVGtsQTVSWERncTdnYVpqQ3pJejExVmplZm9fSk5OTjVuWFlUNER2SVhfZ0s1RVBBSEVRQnloUXhzSUR4WkJYWEpDZXFuRG50UkJWVVpxdFlMaXJPTTM3VURxNUMxZEZOTkJRQTZ4X3Q3VEZpWQ?oc=5",
-      "source": "Infobae",
-      "date": "2026-11-11",
-      "published_at": "2026-11-11T15:48:09Z",
-      "category": "CDMX",
-      "borough": "Iztapalapa",
-      "location": "Iztapalapa (mencionada en el titular)",
-      "local_url": "/noticias/?id=3a87fc2e94670d86b5ba&mes=2026-11",
-      "brief": {
-        "lead": "De acuerdo con Infobae, el titular publicado es: «Iztapalapa celebrará el ritual prehispánico del Fuego Nuevo con recorridos por Cerro de la Estrella, danzas y peregrinación». La información publicada por Infobae aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-        "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-        "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "archivo_cdmx_003",
-        "kind": "representativa",
-        "url": "/assets/fotos/archivo_cdmx_003.jpg",
-        "category": "CDMX",
-        "borough": "",
-        "topic": "D.F. - panoramio (7)",
-        "author": "eurimaco",
-        "license": "CC BY-SA 3.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-        "source": "https://commons.wikimedia.org/wiki/File:D.F._-_panoramio_%287%29.jpg"
+        "source": "https://commons.wikimedia.org/wiki/File:Sala_de_Tesorer%C3%ADa_en_Palacio_Nacional_-_III.jpg"
       }
     }
   ]
