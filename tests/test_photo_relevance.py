@@ -68,6 +68,128 @@ class PhotoRelevanceTests(unittest.TestCase):
         self.assertEqual(article["photo"]["author"], "Torsten Bolten, AFpix.de")
         self.assertEqual(article["photo"]["license"], "CC BY-SA 3.0")
 
+    def test_gas_tanker_rollovers_are_mobility_and_use_firefighter_context(self):
+        titles = [
+            "Vuelca pipa de gas en la México-Pachuca; hay al menos 2 lesionados y caos vial con dirección a la CDMX",
+            "Vuelca pipa de gas LP en la México-Pachuca y colapsa el tráfico con dirección a CDMX",
+            "Pipa de gas se vuelca en la autopista México-Pachuca; cierran carriles hacia Cdmx por emergencia",
+        ]
+        for title in titles:
+            with self.subTest(title=title):
+                self.assertEqual(category_by_headline(title, "CDMX"), "Movilidad")
+
+        article = news.standardize({
+            "title": titles[0],
+            "url": "https://news.google.com/rss/articles/gas-tanker-rollover-regression",
+            "source": "El Sol de México",
+            "date": "2026-11-11",
+            "category": "CDMX",
+        })
+        self.assertEqual(article["category"], "Movilidad")
+        self.assertIn("una pipa de gas", article["brief"]["lead"])
+        self.assertIn("personas lesionadas", article["brief"]["lead"])
+        self.assertEqual(_photo_category(article), "Seguridad")
+        police_graduation = {
+            "category": "Seguridad",
+            "topic": "Graduación de la Policía de la Ciudad de México",
+            "keywords": ["Policía Ciudad de México"],
+        }
+        metrobus = {
+            "category": "Movilidad",
+            "topic": "Mexico City Metrobus Line 1 Durango station",
+            "keywords": ["Metrobús Ciudad de México"],
+        }
+        firefighters = {
+            "category": "Seguridad",
+            "topic": "Equipo de trabajo de los Bomberos CDMX IMG 2922",
+            "keywords": ["Bomberos Ciudad de México"],
+        }
+        self.assertLess(_photo_score(article, police_graduation), 0)
+        self.assertLess(_photo_score(article, metrobus), 0)
+        self.assertGreaterEqual(_photo_score(article, firefighters), 0)
+        assign_photos([article])
+        self.assertIn("photo", article)
+        photo_context = (article["photo"]["topic"] + " " +
+                         " ".join(article["photo"].get("keywords", []))).casefold()
+        self.assertRegex(photo_context, r"bomberos|pipas?|gas|tanques?|cilindros?|fugas?|explosiones?")
+        self.assertEqual(article["photo"]["kind"], "representativa")
+
+    def test_chinampas_single_day_and_license_photos_need_matching_topics(self):
+        chinampas = {
+            "title": "Arca Tierra y Lucio Usobiaga reciben reconocimiento por proteger las chinampas de Xochimilco",
+            "category": "CDMX", "borough": "",
+        }
+        xochimilco_plaza = {
+            "category": "CDMX",
+            "topic": "Explanada Delegación Xochimilco, Ciudad de México",
+            "keywords": ["CDMX"],
+        }
+        xochimilco_canals = {
+            "category": "CDMX",
+            "topic": "Canales de Xochimilco, Ciudad de México",
+            "keywords": ["Xochimilco Ciudad de México"],
+        }
+        self.assertLess(_photo_score(chinampas, xochimilco_plaza), 0)
+        self.assertGreaterEqual(_photo_score(chinampas, xochimilco_canals), 0)
+
+        single_day = {
+            "title": "Día del Soltero hoy: Actividades en CDMX, escapadas y origen del 11/11",
+            "category": "Cultura", "borough": "",
+        }
+        unrelated_unam = {
+            "category": "Cultura",
+            "topic": "Recepción de Marichuy Patricio en Ciudad Universitaria UNAM 06",
+            "keywords": ["Ciudad Universitaria UNAM Ciudad de México"],
+        }
+        market = {
+            "category": "Alcaldías",
+            "topic": "MX MM COYOACÁN - Mercado",
+            "keywords": ["Coyoacán Ciudad de México"],
+        }
+        self.assertLess(_photo_score(single_day, unrelated_unam), 0)
+        self.assertGreaterEqual(_photo_score(single_day, market), 0)
+
+        permanent_license = {
+            "title": "Licencia permanente CDMX 2026: módulos para tramitarla sin cita",
+            "category": "Gobierno", "borough": "",
+        }
+        treasury_room = {
+            "category": "Gobierno",
+            "topic": "Sala de Tesorería en Palacio Nacional - IV",
+            "keywords": ["Palacio Nacional Ciudad de México"],
+        }
+        self.assertLess(_photo_score(permanent_license, treasury_room), 0)
+
+        chinampas_article = {
+            "title": chinampas["title"], "category": "CDMX", "borough": "Xochimilco",
+            "url": "https://news.google.com/rss/articles/chinampas-photo-regression",
+        }
+        assign_photos([chinampas_article])
+        self.assertIn("photo", chinampas_article)
+        chinampas_context = (chinampas_article["photo"]["topic"] + " " +
+                             " ".join(chinampas_article["photo"].get("keywords", []))).casefold()
+        self.assertRegex(chinampas_context, r"canales? de xochimilco|chinampas|agricultura|hortalizas?")
+
+        single_article = {
+            "title": single_day["title"], "category": "Cultura", "borough": "Coyoacán",
+            "url": "https://news.google.com/rss/articles/single-day-photo-regression",
+        }
+        assign_photos([single_article])
+        self.assertIn("photo", single_article)
+        single_context = (single_article["photo"]["topic"] + " " +
+                          " ".join(single_article["photo"].get("keywords", []))).casefold()
+        self.assertRegex(single_context, r"mercado|compras?|tiendas?|ofertas?|comercio")
+
+        license_article = {
+            "title": permanent_license["title"], "category": "Gobierno", "borough": "",
+            "url": "https://news.google.com/rss/articles/license-photo-regression",
+        }
+        assign_photos([license_article])
+        if "photo" in license_article:
+            license_context = (license_article["photo"]["topic"] + " " +
+                               " ".join(license_article["photo"].get("keywords", []))).casefold()
+            self.assertRegex(license_context, r"licencia|conducir|semovi|modulo de licencias?|tramite vehicular")
+
     def test_mismatched_patrol_image_is_rejected(self):
         patrol = {"topic": "Adquisición de patrullas para la Policía",
                   "category": "Seguridad", "keywords": ["seguridad"]}
