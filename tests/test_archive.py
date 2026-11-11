@@ -1313,5 +1313,70 @@ class CybercrimePhotoTests(unittest.TestCase):
                       article["photo"]["source"])
 
 
+class ArchiveUrlDeduplicationTests(unittest.TestCase):
+    def test_article_key_uses_source_url_across_title_and_date_changes(self):
+        first = fake("Titular original de una noticia", "2026-11-10")
+        second = dict(first, title="Titular actualizado de la misma noticia",
+                      date="2026-11-11", published_at="2026-11-11T15:00:00Z")
+        self.assertEqual(news.article_key(first), news.article_key(second))
+
+    def test_archive_merges_same_url_and_preserves_every_rss_version(self):
+        first = fake("Titular original de una noticia", "2026-11-10",
+                     "2026-11-10T15:00:00Z")
+        second = fake("Titular actualizado de la misma noticia", "2026-11-11",
+                      "2026-11-11T16:00:00Z")
+        second["url"] = first["url"]
+        photo = {
+            "id": "verified_archive_test",
+            "kind": "hecho",
+            "verified": True,
+            "evidence_url": "https://example.org/evidence",
+            "author": "Equipo de prueba",
+            "license": "CC BY 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+            "source": "https://example.org/photo",
+            "url": "https://example.org/photo.jpg",
+        }
+        first["photo"] = photo
+        second["photo"] = photo
+
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            archive = root / "archivo"
+            archive.mkdir()
+            news.write_json(archive / "2026-11.json", {
+                "month": "2026-11", "updated": "anterior",
+                "articles": [first, second],
+            })
+            with patch.multiple(
+                news,
+                ARCHIVE_DIR=archive,
+                BOROUGH_DIR=root / "alcaldias",
+                DEST=root / "news.json",
+            ):
+                news.consolidate_archive(
+                    [], datetime(2026, 11, 11, tzinfo=timezone.utc) - timedelta(days=365),
+                    "2026-11-11T20:00:00Z",
+                )
+            saved = json.loads((archive / "2026-11.json").read_text(encoding="utf-8"))
+
+        self.assertEqual(len(saved["articles"]), 1)
+        merged = saved["articles"][0]
+        self.assertEqual(merged["title"], "Titular actualizado de la misma noticia")
+        self.assertEqual(merged["date"], "2026-11-10")
+        self.assertEqual(merged["published_at"], "2026-11-10T15:00:00Z")
+        self.assertEqual(len(merged["archive_versions"]), 2)
+        self.assertEqual(
+            {version["title"] for version in merged["archive_versions"]},
+            {"Titular original de una noticia", "Titular actualizado de la misma noticia"},
+        )
+
+    def test_archive_ui_discloses_merged_versions_and_searches_old_titles(self):
+        script = (Path(__file__).resolve().parents[1] / "assets" / "hemeroteca.js").read_text(encoding="utf-8")
+        self.assertIn("archive_versions", script)
+        self.assertIn("Mismo enlace registrado", script)
+        self.assertIn("alternateTitles", script)
+
+
 if __name__ == "__main__":
     unittest.main()
