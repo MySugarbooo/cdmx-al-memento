@@ -161,8 +161,8 @@ function renderNews(){
   card.append(thumb,h,meta,credit);
   out.append(card);
  }
- if(!matched.length)out.append(el('p','neo-feed-note',all.length?'No hay noticias que coincidan. Prueba con otra búsqueda.':'Aún no hay noticias con fotografías auténticas del acontecimiento, verificadas y autorizadas.'));const more=shell.querySelector('#neo-news-more');if(more)more.hidden=matched.length<=state.visible;
- shell.querySelector('#neo-news-status').textContent=(state.filter||state.query?'Resultados: '+matched.length+' · ':'')+(state.fromBackup?'Titulares de respaldo (pueden no estar actualizados)':'Titulares del feed automático')+' · Imágenes con autor y licencia: del hecho o representativas identificadas';
+ if(!matched.length)out.append(el('p','neo-feed-note',all.length?'No hay noticias que coincidan. Prueba con otra búsqueda.':'No hay noticias de hoy o ayer con fotografías acreditadas. Consulta la hemeroteca.'));const more=shell.querySelector('#neo-news-more');if(more)more.hidden=matched.length<=state.visible;
+ shell.querySelector('#neo-news-status').textContent=(state.filter||state.query?'Resultados: '+matched.length+' · ':'')+(state.fromBackup?'Respaldo reciente (hoy o ayer)':'Titulares del feed automático')+' · Imágenes con autor y licencia: del hecho o representativas identificadas';
 }
 function mirrorVisits(){
  const target=shell.querySelector('#neo-visitors');const origin=document.getElementById('header-visitors-number');
@@ -222,12 +222,27 @@ async function communityPreview(){
   }
  }catch(err){out.replaceChildren(el('p','neo-community-intro','Visita el foro para consultar preguntas, publicaciones y respuestas reales.'));}
 }
+const homepageDateFormatter=new Intl.DateTimeFormat('en-CA',{timeZone:'America/Mexico_City',year:'numeric',month:'2-digit',day:'2-digit'});
+function homepageDay(value){
+ const raw=String(value||'').trim();
+ if(/^\d{4}-\d{2}-\d{2}$/.test(raw))return raw;
+ const date=new Date(raw);
+ return Number.isNaN(date.getTime())?'':homepageDateFormatter.format(date);
+}
+function isHomepageRecent(article,now=new Date()){
+ const day=homepageDay(article?.published_at||article?.date);
+ if(!day)return false;
+ const today=homepageDateFormatter.format(now);
+ const yesterday=homepageDateFormatter.format(new Date(now.getTime()-86400000));
+ return day===today||day===yesterday;
+}
 function eligibleStories(feed){
  const items=Array.isArray(feed)?feed:(Array.isArray(feed?.articles)?feed.articles:[]);
  const usedPhotos=new Set();
  return items.filter(a=>{
+  if(!a||typeof a.title!=='string'||!isHomepageRecent(a))return false;
   const p=photoInfo(a);
-  if(!a||typeof a.title!=='string'||!p||usedPhotos.has(p.url))return false;
+  if(!p||usedPhotos.has(p.url))return false;
   if(!(/^https:\/\/news\.google\.com\//.test(a.url||'')||a.editorial_verified===true))return false;
   if(!/^\/noticias\/\?/.test(a.local_url||''))return false;
   usedPhotos.add(p.url);
@@ -238,11 +253,11 @@ function applyStories(items,source){
  if(!items.length){
   state.stories=[];state.current=0;state.fromBackup=source!=='online';
   const img=shell.querySelector('#neo-hero-img');img.removeAttribute('src');img.style.display='none';
-  const title=shell.querySelector('#neo-hero-title');title.textContent='Noticias pendientes de verificación fotográfica';title.href='/reportes/';
-  shell.querySelector('#neo-hero-description').textContent='Mostramos noticias con fotografía acreditada del hecho o una imagen representativa claramente identificada.';
+  const title=shell.querySelector('#neo-hero-title');title.textContent='No hay noticias de hoy o ayer para destacar';title.href='/archivo/';
+  shell.querySelector('#neo-hero-description').textContent='La portada solo muestra titulares publicados hoy o ayer en horario de Ciudad de México. Consulta la hemeroteca para noticias anteriores.';
   shell.querySelector('#neo-hero-category').textContent='Revisión editorial';
   shell.querySelector('#neo-hero-date').textContent='';shell.querySelector('#neo-hero-source').textContent='';
-  shell.querySelector('#neo-hero-credit').textContent='Sin fotografía documental verificada';
+  shell.querySelector('#neo-hero-credit').textContent='Sin titulares recientes con fotografía acreditada';
   shell.querySelector('#neo-hero-like').replaceChildren();
   shell.querySelector('#neo-hero-next').hidden=true;
   renderNews();return true;

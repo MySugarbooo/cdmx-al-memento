@@ -47,6 +47,16 @@ class StableHomepageTests(unittest.TestCase):
         self.assertNotIn("se mantiene el diseño anterior",script)
         self.assertNotIn("if(!articles.length)throw Error('feed vacío')",script)
 
+    def test_homepage_only_shows_today_or_yesterday_in_mexico_city(self):
+        script = read("assets/neo-home.js")
+        self.assertIn("timeZone:'America/Mexico_City'", script)
+        self.assertIn("function homepageDay(value)", script)
+        self.assertIn("function isHomepageRecent(article,now=new Date())", script)
+        self.assertIn("!isHomepageRecent(a)", script)
+        self.assertIn("No hay noticias de hoy o ayer para destacar", script)
+        self.assertIn("Respaldo reciente (hoy o ayer)", script)
+        self.assertNotIn("Titulares de respaldo (pueden no estar actualizados)", script)
+
     def test_ads_archive_and_caching_unchanged(self):
         home = read("index.html")
         self.assertIn("ca-pub-6521969406386261",home)
