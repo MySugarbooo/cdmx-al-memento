@@ -887,7 +887,7 @@ def _photo_score(article, photo):
     metro_photo_line=None
     if category=="Metro":
         wanted=re.search(
-            r"\b(?:lineas?|lines?)\s+((?:[0-9]{1,2}|a|b)(?:\s*(?:,|y)\s*(?:[0-9]{1,2}|a|b))*)",
+            r"\b(?:lineas?|lines?)\s+((?:[0-9]{1,2}|a|b)(?:\s*(?:,|\by\b)?\s*(?:[0-9]{1,2}|a|b))*)",
             headline,
         )
         if wanted:
