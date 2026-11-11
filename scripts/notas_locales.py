@@ -712,7 +712,8 @@ STRICT_PHOTO_TOPICS = (
 
 def _photo_score(article, photo):
     """Puntúa relación real con el título; nunca declara un hecho verificado."""
-    headline=_photo_fold(article.get("title"))
+    raw_headline=str(article.get("title") or "")
+    headline=_photo_fold(raw_headline)
     topic=_photo_fold(photo.get("topic"))
     keywords=_photo_fold(" ".join(str(x) for x in photo.get("keywords",[])))
     context=topic+" "+keywords
@@ -780,7 +781,7 @@ def _photo_score(article, photo):
         r"\\b(?:explosion(?:es)? de gas|tanques? de gas|fugas? de gas|acumulacion de gas|estalla\\s+(?:un\\s+)?tanque(?:\\s+de\\s+gas)?|incendios?)\\b",
         headline,
     ))
-    strict_headline = headline.split(":", 1)[0] if gas_emergency else headline
+    strict_headline = _photo_fold(raw_headline.split(":", 1)[0]) if gas_emergency else headline
     # El título y el descriptor deben compartir el asunto real de la nota.
     for headline_pattern, photo_pattern in STRICT_PHOTO_TOPICS:
         if re.search(headline_pattern, strict_headline) and not re.search(photo_pattern, context):
