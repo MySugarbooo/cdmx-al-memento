@@ -801,6 +801,14 @@ class BoroughAndArchiveTests(unittest.TestCase):
         first_date = "2026-11-10"
         second_date = "2026-11-11"
         first = fake("Arca Tierra y Lucio Usobiaga reciben reconocimiento por proteger Xochimilco", first_date)
+        first["photo"] = {
+            "id": "xochimilco-original", "kind": "representativa",
+            "category": "CDMX", "topic": "Chinampas de Xochimilco",
+            "author": "Archivo de prueba", "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/",
+            "url": "/assets/fotos/xochimilco-original.jpg",
+        }
         second = fake("Lucio Usobiaga gana reconocimiento por preservar Xochimilco", second_date)
         second["url"] = first["url"]
         first = news.standardize(first)
@@ -824,6 +832,8 @@ class BoroughAndArchiveTests(unittest.TestCase):
                 self.assertEqual(len(primary["alternate_versions"]), 1)
                 self.assertEqual(primary["alternate_versions"][0]["title"], first["title"])
                 self.assertEqual(primary["alternate_versions"][0]["date"], first_date)
+                self.assertEqual(primary["alternate_versions"][0]["photo"]["id"], "xochimilco-original")
+                self.assertEqual(primary["alternate_versions"][0]["photo"]["license"], "CC BY-SA 4.0")
 
                 # Una ejecución posterior no debe perder las versiones conservadas.
                 news.consolidate_archive([], now - timedelta(days=365), "Prueba posterior")
