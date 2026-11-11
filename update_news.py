@@ -246,6 +246,30 @@ def published_datetime(value):
 def category_by_headline(title, feed_category):
     """Corrige etiquetas RSS evidentes sin inventar ubicaciones o hechos."""
     normalized = fold(title)
+    # Emergencias por explosión, fuga o acumulación de gas son asuntos de Seguridad.
+    if re.search(r"\b(?:explosion(?:es)? de gas|fuga(?:s)? de gas|acumulacion de gas|flamazo|estalla\s+(?:un\s+)?tanque(?:\s+de\s+gas)?|incendios?)\b", normalized):
+        return "Seguridad"
+    # Una pipa de gas volcada en carretera es una incidencia de Movilidad.
+    if (re.search(r"\b(?:pipa(?:s)? de gas|camion(?:es)? cisterna|autotanque(?:s)?)\b", normalized)
+            and re.search(r"\b(?:vuelca(?:n)?|volca(?:n)?|volcadur\w*|accidente|choque|colision|caos vial|carriles cerrados|cierra carriles)\b", normalized)):
+        return "Movilidad"
+    # La NFL es un evento deportivo de CDMX, no información del Metro.
+    if re.search(r"\b(?:nfl|football americano|futbol americano|san francisco 49ers|minnesota vikings)\b", normalized):
+        if re.search(r"\b(?:cierres? viales?|calles? cerradas?|trafico|congestionamiento|desvios?|rutas? alternas?)\b", normalized):
+            return "Movilidad"
+        return "CDMX"
+    # Ejecuciones y ataques contra automovilistas son información de Seguridad.
+    if re.search(r"\b(?:ejecutan|ejecutado|ejecutada|ejecucion|asesinan|asesinado|asesinada|homicidio|balacera|matan a balazos|avientan piedras a carros|lanzan piedras contra autos?|piedras contra vehiculos?)\b", normalized):
+        return "Seguridad"
+    # Las convocatorias de repartidores con bloqueos o cierres son Movilidad;
+    # una amenaza contra un compañero conserva su clasificación de Seguridad.
+    if (re.search(r"\b(?:repartidores?|conductores? por aplicacion)\b", normalized)
+            and re.search(r"\b(?:movilizacion|movilizan|calles cerraran|calles cerradas|bloqueos?|toman la cdmx|protestas?)\b", normalized)
+            and not re.search(r"\b(?:amenaza de muerte|amenaza contra|amenazad)\b", normalized)):
+        return "Movilidad"
+    # Ballet, exposiciones y festivales de luces pertenecen a Cultura.
+    if re.search(r"\b(?:ballet|cenicienta|brilla fest|festival de luces|exposicion|centre pompidou|museo|teatro)\b", normalized):
+        return "Cultura"
     # El automovilismo es deporte, no un aviso de tránsito ni del Metro.
     # Solo sus cierres y afectaciones viales pertenecen a Movilidad.
     if re.search(r"\b(?:formula 1|gp ciudad de mexico|gran premio|nascar)\b", normalized):
@@ -333,7 +357,7 @@ def category_by_headline(title, feed_category):
             and not re.search(r"\b(?:balacera|homicidio|asalto|delito|detenidos?|detienen|persecucion policial)\b", normalized)):
         return "Movilidad"
     # Distinguir siniestros viales de delitos, aunque provengan de otro feed RSS.
-    if re.search(r"\b(?:accidentes?|choques?|colisiones?|volcaduras?|atropell\w*|arroll\w*|derrap\w*|percances? viales?|siniestros? viales?)\b", normalized):
+    if re.search(r"\b(?:accidentes?|choques?|colisiones?|volcaduras?|vuelca(?:n)?|volca(?:n)?|volcado(?:s|as)?|atropell\w*|arroll\w*|derrap\w*|percances? viales?|siniestros? viales?)\b", normalized):
         if re.search(r"\b(?:homicidio|balacera|asalto|atentado|delito|persecucion policial)\b", normalized):
             return "Seguridad"
         return "Movilidad"
