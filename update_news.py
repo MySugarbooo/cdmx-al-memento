@@ -397,12 +397,23 @@ def standardize(article):
         result["photo"] = article["photo"]
     # Fotografías de accidentes de archivo pueden ser solo contexto; no
     # conservarlas tras la revisión editorial si no documentan ese hecho.
+    versions = article.get("archive_versions")
+    if isinstance(versions, list):
+        result["archive_versions"] = [version for version in versions if isinstance(version, dict)]
     result["description"] = result["brief"]["lead"]
     return result
 
 
 def article_key(article):
-    return fold(article.get("title", ""))[:250] + "|" + str(article.get("date", ""))
+    # La URL del medio es la identidad estable: el RSS puede cambiar el título
+    # o la fecha al volver a publicar la misma nota.
+    url = str(article.get("url") or "").strip()
+    if url:
+        return "url|" + url
+    local_url = str(article.get("local_url") or "").strip()
+    if local_url:
+        return "local|" + local_url
+    return "title|" + fold(article.get("title", ""))[:250] + "|" + str(article.get("date", ""))
 
 
 def gather():
@@ -476,6 +487,57 @@ def sort_key(item):
         return datetime(1970, 1, 1, tzinfo=timezone.utc)
 
 
+ARCHIVE_VERSION_FIELDS = (
+    "title", "description", "url", "source", "date", "published_at",
+    "category", "borough", "location", "local_url", "brief", "photo",
+    "editorial_verified", "sensitive_media",
+)
+
+
+def archive_version(item):
+    """Copia una versión RSS sin anidar su propio historial."""
+    return {key: item[key] for key in ARCHIVE_VERSION_FIELDS if key in item}
+
+
+def merge_archive_records(first, second):
+    """Unifica capturas del mismo enlace y conserva cada versión para auditoría."""
+    versions = []
+    for item in (first, second):
+        prior = item.get("archive_versions")
+        if isinstance(prior, list):
+            versions.extend(version for version in prior if isinstance(version, dict))
+        versions.append(archive_version(item))
+
+    unique = {}
+    for version in versions:
+        fingerprint = json.dumps(version, ensure_ascii=False, sort_keys=True)
+        unique.setdefault(fingerprint, version)
+
+    # El título y resumen más recientes son los visibles; la fecha publicada
+    # conserva el primer registro conocido. Las demás capturas quedan anexas.
+    canonical = second if sort_key(second) >= sort_key(first) else first
+    earliest = first if sort_key(first) <= sort_key(second) else second
+    merged = dict(canonical)
+    merged["date"] = earliest.get("date") or merged.get("date")
+    if earliest.get("published_at"):
+        merged["published_at"] = earliest["published_at"]
+    merged["local_url"] = local_link(merged)
+
+    if not merged.get("photo"):
+        other = first if canonical is second else second
+        if isinstance(other.get("photo"), dict):
+            merged["photo"] = other["photo"]
+
+    if len(unique) > 1:
+        merged["archive_versions"] = sorted(
+            unique.values(),
+            key=lambda version: (version.get("published_at") or version.get("date") or "", version.get("title") or ""),
+        )
+    else:
+        merged.pop("archive_versions", None)
+    return merged
+
+
 def still_valid(item, cutoff):
     return sort_key(item) >= cutoff
 
@@ -508,20 +570,22 @@ def consolidate_archive(new_items, cutoff, updated):
         for raw in month.get("articles", []):
             item = standardize(raw)
             if item and still_valid(item, cutoff):
-                existing[article_key(item)] = item
+                key = article_key(item)
+                previous = existing.get(key)
+                existing[key] = merge_archive_records(previous, item) if previous else item
     # Migrar el índice de la portada ANTES de sobrescribirlo.
     prior = load_json(DEST, {"articles": []})
     for raw in prior.get("articles", []):
         item = standardize(raw)
         if item and still_valid(item, cutoff):
-            existing.setdefault(article_key(item), item)
+            key = article_key(item)
+            previous = existing.get(key)
+            existing[key] = merge_archive_records(previous, item) if previous else item
     for item in new_items:
         if still_valid(item, cutoff):
             key = article_key(item)
             old = existing.get(key)
-            # Conservar el timestamp real cuando una versión antigua solo tenía fecha.
-            if not old or (item.get("published_at") and not old.get("published_at")):
-                existing[key] = item
+            existing[key] = merge_archive_records(old, item) if old else item
 
     # Reparar también fotografías antiguas incongruentes después de corregir
     # la clasificación RSS. Conservar fotografías del hecho verificadas.
