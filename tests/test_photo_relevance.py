@@ -306,6 +306,17 @@ class PhotoRelevanceTests(unittest.TestCase):
         self.assertTrue(article["photo"].get("licenseUrl"))
         self.assertTrue(article["photo"].get("source"))
 
+    def test_building_block_is_not_mistaken_for_a_road_blockade(self):
+        article = {
+            "title": "Construyen un nuevo bloque de departamentos en CDMX",
+            "category": "CDMX", "borough": "",
+        }
+        photo = {
+            "topic": "Edificio de departamentos en Ciudad de México",
+            "category": "CDMX", "keywords": [],
+        }
+        self.assertGreaterEqual(_photo_score(article, photo), 0)
+
     def test_published_choices_are_not_police_photos(self):
         articles = [
             {"title": "Muévete en Bici 1 de noviembre", "category": "Seguridad",
