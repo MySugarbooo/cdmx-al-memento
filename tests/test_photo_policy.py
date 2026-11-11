@@ -304,5 +304,38 @@ class NewsPhotoPolicyTests(unittest.TestCase):
         self.assertEqual(article["photo"]["kind"], "representativa")
 
 
+class ContextPhotoCreditTests(unittest.TestCase):
+    def test_context_catalog_images_have_complete_attribution_and_public_credit_listing(self):
+        catalog = json.loads(
+            (ROOT / "assets/fotos/contexto-tematico.json").read_text(encoding="utf-8")
+        )
+        by_id = {photo["id"]: photo for photo in catalog.get("photos", [])}
+        expected = {
+            "contexto_pipa_gas_lpg_india",
+            "contexto_pipa_gas_tanker_us95",
+            "contexto_pipa_gas_tanker_amisragas",
+            "contexto_nfl_american_football_kick",
+            "contexto_repartidores_yanji",
+            "contexto_repartidor_uber_eats_taipei",
+            "contexto_ballet_leap",
+            "contexto_luces_navidenas_cdmx",
+            "contexto_compras_carritos",
+        }
+        self.assertTrue(expected.issubset(by_id))
+        for photo in catalog["photos"]:
+            with self.subTest(photo=photo["id"]):
+                self.assertTrue(photo.get("author"))
+                self.assertTrue(photo.get("license"))
+                self.assertTrue(photo.get("licenseUrl", "").startswith("https://creativecommons.org/"))
+                self.assertTrue(photo.get("source", "").startswith("https://commons.wikimedia.org/wiki/File:"))
+                self.assertTrue(photo.get("url", "").startswith("https://"))
+        credits = get("assets/creditos.js")
+        self.assertIn("contexto-tematico.json", credits)
+        self.assertIn("contextPhotos", credits)
+        page = get("creditos-fotograficos.html")
+        self.assertIn("20261111-context-catalog1", page)
+        self.assertIn("fotografías contextuales", page)
+
+
 if __name__ == "__main__":
     unittest.main()
