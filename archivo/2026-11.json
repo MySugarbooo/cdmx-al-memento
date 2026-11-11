@@ -1,6 +1,6 @@
 {
   "month": "2026-11",
-  "updated": "2026-11-11 13:17 UTC",
+  "updated": "2026-11-11 13:20 UTC",
   "articles": [
     {
       "title": "Metro CDMX hoy 11 de noviembre: retrasos y trenes llenos afectan las Líneas 7, 12 y B",
@@ -519,6 +519,26 @@
         "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
         "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "contexto_trafico_eje_central",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Eje_Central_CDMX.jpg/1280px-Eje_Central_CDMX.jpg",
+        "category": "Movilidad",
+        "borough": "",
+        "topic": "Tráfico vehicular en Eje Central, Ciudad de México (fotografía de 2018)",
+        "keywords": [
+          "tráfico",
+          "vehículos",
+          "automóviles",
+          "movilidad",
+          "hoy no circula",
+          "vialidad"
+        ],
+        "author": "Sergio Estrada Flores",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:Eje_Central_CDMX.jpg"
       }
     },
     {
@@ -702,6 +722,25 @@
         "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
         "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "contexto_perros_parque_espana",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Perros_en_el_Parque_Espa%C3%B1a%2C_Ciudad_de_M%C3%A9xico.jpg/1280px-Perros_en_el_Parque_Espa%C3%B1a%2C_Ciudad_de_M%C3%A9xico.jpg",
+        "category": "Medio Ambiente",
+        "borough": "",
+        "topic": "Perros descansando en el Parque España, Ciudad de México (fotografía de 2016)",
+        "keywords": [
+          "perros",
+          "perro",
+          "mascotas",
+          "parque España",
+          "Condesa"
+        ],
+        "author": "Raul21940",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:Perros_en_el_Parque_Espa%C3%B1a,_Ciudad_de_M%C3%A9xico.jpg"
       }
     },
     {
@@ -720,21 +759,6 @@
         "context": "Los cambios en este sistema pueden afectar los horarios, las conexiones y la planeación de los viajes cotidianos.",
         "pending": "El estado operativo, las estaciones y las alternativas de traslado deben comprobarse en los avisos actuales del Metro. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "reciente_c4e1387f207f104c",
-        "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Metro_Terminal_A%C3%A9rea_%282026%29_1.jpg/1280px-Metro_Terminal_A%C3%A9rea_%282026%29_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "category": "Metro",
-        "borough": "",
-        "topic": "Metro Terminal Aérea (2026) 1",
-        "keywords": [
-          "Metro"
-        ],
-        "author": "Tbhotch",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Metro_Terminal_A%C3%A9rea_(2026)_1.jpg"
       }
     },
     {
@@ -3285,6 +3309,21 @@
         "context": "Las decisiones administrativas pueden influir en servicios, trámites y derechos; conviene conocer sus condiciones y a quiénes afectan.",
         "pending": "Es indispensable consultar los acuerdos, comunicados o documentos oficiales antes de dar una medida por vigente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "commons_93188323",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/Registro_de_agua._Primera_Secci%C3%B3n_del_Bosque_de_Chapultepec_-_4.jpg/960px-Registro_de_agua._Primera_Secci%C3%B3n_del_Bosque_de_Chapultepec_-_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "category": "CDMX",
+        "borough": "",
+        "topic": "Registro de agua. Primera Sección del Bosque de Chapultepec - 4",
+        "keywords": [
+          "Medio Ambiente"
+        ],
+        "author": "ProtoplasmaKid",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Registro_de_agua._Primera_Secci%C3%B3n_del_Bosque_de_Chapultepec_-_4.jpg"
       }
     },
     {
@@ -41424,18 +41463,6 @@
         "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
         "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "alcaldia_coyoacan",
-        "kind": "representativa",
-        "url": "/assets/alcaldias/coyoacan.jpg",
-        "category": "CDMX",
-        "borough": "Coyoacán",
-        "topic": "Jardín Centenario de Coyoacán",
-        "author": "AlejandroLinaresGarcia",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:JardinCentenarioCoyoacan.JPG"
       }
     },
     {
@@ -49780,21 +49807,6 @@
         "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
         "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "commons_51906804",
-        "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Plantas_con_gotas_de_lluvia%2C_Ciudad_de_M%C3%A9xico.jpg/960px-Plantas_con_gotas_de_lluvia%2C_Ciudad_de_M%C3%A9xico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "category": "Medio Ambiente",
-        "borough": "",
-        "topic": "Plantas con gotas de lluvia, Ciudad de México",
-        "keywords": [
-          "Lluvia Ciudad de México"
-        ],
-        "author": "LEG95",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Plantas_con_gotas_de_lluvia,_Ciudad_de_M%C3%A9xico.jpg"
       }
     },
     {
@@ -52048,21 +52060,6 @@
         "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
         "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "reforma",
-        "kind": "representativa",
-        "url": "/assets/fotos/reforma.jpg",
-        "category": "CDMX",
-        "borough": "",
-        "topic": "Paseo de la Reforma y Chapultepec",
-        "keywords": [
-          "CDMX"
-        ],
-        "author": "Jonathan Salvador",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.es",
-        "source": "https://commons.wikimedia.org/wiki/File:Mexico_City_Reforma_skyline.jpg"
       }
     },
     {
