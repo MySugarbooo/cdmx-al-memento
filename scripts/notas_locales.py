@@ -881,10 +881,23 @@ def _photo_score(article, photo):
         if not re.search(r"\b(?:formula 1|f1|gran premio|autodromo|circuito|carrera|monoplaza|piloto|automovilismo)\b", topic):
             return -10000
     # Una línea distinta del Metro es peor que una foto genérica del Metro.
+    # Los titulares pueden enumerar varias líneas: aceptar cualquiera de ellas,
+    # pero nunca ilustrar la nota con una línea que no aparece en esa lista.
+    metro_wanted_lines=set()
+    metro_photo_line=None
     if category=="Metro":
-        wanted=re.search(r"\blinea ([0-9]{1,2}|a|b)\b",headline)
+        wanted=re.search(
+            r"\b(?:lineas?|lines?)\s+((?:[0-9]{1,2}|a|b)(?:\s*(?:,|y)\s*(?:[0-9]{1,2}|a|b))*)",
+            headline,
+        )
+        if wanted:
+            metro_wanted_lines=set(
+                re.findall(r"\b(?:[0-9]{1,2}|a|b)\b",wanted.group(1))
+            )
         shown=re.search(r"\b(?:linea|line) ([0-9]{1,2}|a|b)\b",topic)
-        if wanted and shown and wanted.group(1)!=shown.group(1):
+        metro_photo_line=shown.group(1) if shown else None
+        if (metro_wanted_lines and metro_photo_line
+                and metro_photo_line not in metro_wanted_lines):
             return -10000
     if re.search(r"\b(?:cablebus|teleferico)\b", headline):
         wanted_lines = set(re.findall(r"\blineas? ([0-9]{1,2})\b", headline))
@@ -910,11 +923,8 @@ def _photo_score(article, photo):
             re.search(r"\b"+re.escape(word)+r"\b",topic) for word in similar
         ):
             score+=80
-    if category=="Metro":
-        wanted=re.search(r"\blinea ([0-9]{1,2}|a|b)\b",headline)
-        shown=re.search(r"\b(?:linea|line) ([0-9]{1,2}|a|b)\b",topic)
-        if wanted and shown and wanted.group(1)==shown.group(1):
-            score+=220
+    if category=="Metro" and metro_photo_line in metro_wanted_lines:
+        score+=220
     return score
 
 

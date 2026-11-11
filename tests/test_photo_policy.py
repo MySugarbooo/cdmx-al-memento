@@ -91,6 +91,61 @@ class NewsPhotoPolicyTests(unittest.TestCase):
         self.assertEqual(article["photo"]["id"], "linea_12")
         self.assertEqual(article["photo"]["kind"], "representativa")
 
+
+    def test_plural_metro_line_list_rejects_unlisted_lines(self):
+        cases = (
+            (
+                "Metro CDMX: Alta afluencia y retrasos en Líneas 3, 7, 12 y A este miércoles",
+                "Afluencia Ferrería-Arena Ciudad de México Línea 6 (2024)",
+                "Metro Línea 12 CDMX",
+            ),
+            (
+                "Metro CDMX hoy: retrasos y trenes llenos afectan las Líneas 7, 12 y B",
+                "Estación Pino Suárez de la Línea 1 del Metro de la Ciudad de México 01",
+                "Metro Línea 12 CDMX",
+            ),
+        )
+        generic = dict(
+            context_photo("metro_generico"),
+            topic="Metro de la Ciudad de México",
+            category="Metro",
+        )
+        for title, unrelated_topic, matching_topic in cases:
+            with self.subTest(title=title):
+                article = dict(ARTICLE, title=title, category="Metro")
+                unrelated = dict(
+                    context_photo("linea_no_mencionada"),
+                    topic=unrelated_topic,
+                    category="Metro",
+                )
+                matching = dict(
+                    context_photo("linea_mencionada"),
+                    topic=matching_topic,
+                    category="Metro",
+                )
+                self.assertLess(photos._photo_score(article, unrelated), 0)
+                self.assertGreater(
+                    photos._photo_score(article, matching),
+                    photos._photo_score(article, generic),
+                )
+
+        article = dict(ARTICLE, title=cases[0][0], category="Metro")
+        line_six = dict(
+            context_photo("linea_6"),
+            topic=cases[0][1],
+            category="Metro",
+        )
+        line_twelve = dict(
+            context_photo("linea_12"),
+            topic=cases[0][2],
+            category="Metro",
+        )
+        with patch.object(photos, "_pool", return_value=[line_six, generic, line_twelve]):
+            with patch.object(photos, "VERIFIED_EVENTS", Path("/tmp/never-loaded-photo-registry.json")):
+                photos.assign_photos([article])
+        self.assertEqual(article["photo"]["id"], "linea_12")
+        self.assertEqual(article["photo"]["kind"], "representativa")
+
     def test_subject_outranks_generic_category_or_unrelated_picture(self):
         examples = (
             ("Desfile de Catrinas en el Zócalo de CDMX", "Cultura",
