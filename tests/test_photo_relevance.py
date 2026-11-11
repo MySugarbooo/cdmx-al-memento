@@ -158,6 +158,36 @@ class PhotoRelevanceTests(unittest.TestCase):
         }
         self.assertLess(_photo_score(permanent_license, treasury_room), 0)
 
+        chinampas_article = {
+            "title": chinampas["title"], "category": "CDMX", "borough": "Xochimilco",
+            "url": "https://news.google.com/rss/articles/chinampas-photo-regression",
+        }
+        assign_photos([chinampas_article])
+        self.assertIn("photo", chinampas_article)
+        chinampas_context = (chinampas_article["photo"]["topic"] + " " +
+                             " ".join(chinampas_article["photo"].get("keywords", []))).casefold()
+        self.assertRegex(chinampas_context, r"canales? de xochimilco|chinampas|agricultura|hortalizas?")
+
+        single_article = {
+            "title": single_day["title"], "category": "Cultura", "borough": "Coyoacán",
+            "url": "https://news.google.com/rss/articles/single-day-photo-regression",
+        }
+        assign_photos([single_article])
+        self.assertIn("photo", single_article)
+        single_context = (single_article["photo"]["topic"] + " " +
+                          " ".join(single_article["photo"].get("keywords", []))).casefold()
+        self.assertRegex(single_context, r"mercado|compras?|tiendas?|ofertas?|comercio")
+
+        license_article = {
+            "title": permanent_license["title"], "category": "Gobierno", "borough": "",
+            "url": "https://news.google.com/rss/articles/license-photo-regression",
+        }
+        assign_photos([license_article])
+        if "photo" in license_article:
+            license_context = (license_article["photo"]["topic"] + " " +
+                               " ".join(license_article["photo"].get("keywords", []))).casefold()
+            self.assertRegex(license_context, r"licencia|conducir|semovi|modulo de licencias?|tramite vehicular")
+
     def test_mismatched_patrol_image_is_rejected(self):
         patrol = {"topic": "Adquisición de patrullas para la Policía",
                   "category": "Seguridad", "keywords": ["seguridad"]}
