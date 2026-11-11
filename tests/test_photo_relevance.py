@@ -36,6 +36,47 @@ class PhotoRelevanceTests(unittest.TestCase):
         self.assertLess(_photo_score(bike, generic_bus), 0)
         self.assertGreaterEqual(_photo_score(bike, real_bicycle), 0)
 
+    def test_recent_news_rejects_unrelated_context_photos(self):
+        cases = [
+            ("Socavón calles GAM: Afectaciones en la CDMX este martes",
+             "Edificios, Paseo de la Reforma (CDMX) 0131", "CDMX", "CDMX"),
+            ("¿Por qué repartidores vandalizaron la caseta de un inmueble en CDMX? Esto sabemos",
+             "El Paraguas (126505121)", "CDMX", "CDMX"),
+            ("Temperaturas en Ciudad de México: prepárate antes de salir de casa",
+             "Casa Centro Histórico de la Ciudad de México 01", "CDMX", "CDMX"),
+            ("Líneas 4, 5 y 6 del Cablebús mejorarán calidad de vida en seis alcaldías, afirma Gobierno de la CDMX",
+             "Estación Los Pinos - Línea 3 del Cablebús 07", "Gobierno", "Movilidad"),
+            ("Karol G en el Estadio GNP Seguros de la CDMX: el setlist que prepara la colombiana",
+             "Torre Latinoamericana y Edificio La Nacional", "CDMX", "CDMX"),
+            ("Verificentros CDMX suspenden servicio: día en el que reabren para no retrasar tu verificación",
+             "Ciudad de México - Alameda Central 0370", "CDMX", "CDMX"),
+            ("Cancelan foro de POZMVM en Coyoacán por pleito entre PAN y Morena",
+             "Boleto cine Esperanza Coyoacán Ciudad de México 6 de mayo de 1928 02", "CDMX", "CDMX"),
+            ("Fraudes en compras por internet se disparan en CDMX: Policía Cibernética atiende más de 31 mil reportes",
+             "Graduación de la Policía de la Ciudad de México", "Seguridad", "Seguridad"),
+            ("Tlalpan da nueva vida al papel con Recicla para Leer",
+             "Animales Bosque de Tlalpan 01", "CDMX", "Alcaldías"),
+            ("CDMX estrena sistema inteligente para detectar hasta 30 mil fugas de agua",
+             "Palacio de Bellas Artes", "CDMX", "CDMX"),
+            ("CDMX lleva 10 semanas sin casos activos de sarampión: Secretaría de Salud",
+             "Palacio Nacional Ciudad de México DF", "CDMX", "CDMX"),
+            ("Lanzan piedras contra autos en Periférico CDMX: denuncian ataques a la altura de Anatole France",
+             "Cacerolazo contra la violencia - Ciudad de México - 2", "CDMX", "CDMX"),
+            ("Repartidores bloquean zona en CDMX tras amenazas con arma de fuego (VIDEO)",
+             "Equipo de trabajo de los Bomberos CDMX IMG 3025", "Seguridad", "Seguridad"),
+            ("Repartidores de App Irrumpen en Unidad Habitacional de CDMX tras Amenaza con Arma de Fuego",
+             "Graduación de la Policía de la Ciudad de México", "Seguridad", "Seguridad"),
+            ("Repartidores anuncian bloqueos en CDMX: ¿qué calles cerrarán este viernes?",
+             "Trolebús de la Línea 5 en Paseo de la Reforma y Matamoros", "CDMX", "CDMX"),
+            ("VIDEO | Jauría de perros ataca a mujer que caminaba en la Magdalena Contreras; es el segundo caso reportado",
+             "Animales Bosque de Tlalpan 02", "CDMX", "Alcaldías"),
+        ]
+        for title, topic, category, photo_category in cases:
+            article = {"title": title, "category": category, "borough": ""}
+            photo = {"topic": topic, "category": photo_category, "keywords": []}
+            with self.subTest(title=title, topic=topic):
+                self.assertLess(_photo_score(article, photo), 0)
+
     def test_published_choices_are_not_police_photos(self):
         articles = [
             {"title": "Muévete en Bici 1 de noviembre", "category": "Seguridad",
