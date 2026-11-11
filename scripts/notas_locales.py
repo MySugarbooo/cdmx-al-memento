@@ -394,7 +394,7 @@ SENSITIVE_CONTEXT = re.compile(
 SUBJECT_RULES = (
     (r"\b(?:grupos? criminales?|organizaciones? criminales?|crimen organizado)\b", "Seguridad"),
     # Las muertes violentas y condenas judiciales no son temas genéricos de CDMX.
-    (r"\b(?:matan|balazos|asesinan|homicidio|condenad[oa]s?|condenan|prision)\b", "Seguridad"),
+    (r"\b(?:ejecutan|ejecutad\w*|ejecucion|matan|balazos|asesinan|homicidio|condenad[oa]s?|condenan|prision)\b", "Seguridad"),
     # Las explosiones de gas e incendios se tratan como emergencias, no como baches o drenaje.
     (r"\b(?:explosion(?:es)? de gas|tanques? de gas|fugas? de gas|acumulacion de gas|estalla\s+(?:un\s+)?tanque(?:\s+de\s+gas)?|incendios?)\b", "Seguridad"),
     # El RSS puede etiquetar temas recreativos o tecnológicos como Seguridad.
@@ -669,8 +669,8 @@ STRICT_PHOTO_TOPICS = (
      r"\b(?:perritos?|perros?|mascotas?|caninos?|veterinaria)\b"),
     (r"\b(?:perritos?|perros?|mascotas?|envenenamientos? de perros?)\b",
      r"\b(?:perritos?|perros?|mascotas?|caninos?|animales?|veterinaria)\b"),
-    (r"\b(?:matan|balazos|asesinan|homicidio|condenad[oa]s?|condenan|prision|delitos? contra)\b",
-     r"\b(?:fiscalia|justicia|tribunal|juzgado|penitenciario|prision|ministerio publico|investigacion penal)\b"),
+    (r"\b(?:ejecutan|ejecutad\w*|ejecucion|matan|balazos|asesinan|homicidio|condenad[oa]s?|condenan|prision|delitos? contra)\b",
+     r"\b(?:fiscalia|justicia|tribunal|juzgado|penitenciario|prision|ministerio publico|investigacion penal|policias?|patrullas?|operativo policial)\b"),
     (r"\b(?:sin agua|falta de agua|suspension de agua|corte de agua)\b",
      r"\b(?:agua|tuberias?|acueducto|pozo|abastecimiento|red hidraulica|cisterna|pipas?|grifos?)\b"),
     (r"\b(?:fallece motociclista|muere motociclista|motociclistas? fallecidos?)\b",
@@ -730,6 +730,9 @@ STRICT_PHOTO_TOPICS = (
     # Los bloqueos anunciados por repartidores requieren protesta, reparto o vialidad.
     (r"\b(?:repartidores? anuncian? bloqueos?|repartidores? bloquean? zona|bloqueos? de repartidores?)\b",
      r"\b(?:bloqueo|protesta|manifestacion|repartidor|motocicleta|trafico|transito|vialidad|calle)\b"),
+     # NFL y fútbol americano requieren contexto deportivo, no Metro ni un monumento.
+     (r"\b(?:nfl|futbol americano|san francisco 49ers|minnesota vikings)\b",
+      r"\b(?:american football|futbol americano|field goal|emparrillado|balon de futbol americano|partido de futbol americano)\b"),
 )
 
 def _photo_score(article, photo):
@@ -750,7 +753,7 @@ def _photo_score(article, photo):
     # En robos, asaltos y extorsiones, la coincidencia de alcaldía no basta:
     # exigir una imagen con contexto de seguridad antes de puntuar el lugar.
     crime_story = bool(re.search(
-        r"\b(?:robo|robos|roban|robado|robada|robaron|asalto|asaltan|extorsion|extorsionan)\b",
+        r"\b(?:robo|robos|roban|robado|robada|robaron|asalto|asaltan|extorsion|extorsionan|ejecutan|ejecutad\w*|ejecucion|asesinan|asesinad\w*|asesinato|homicidio|matan|balazos|balacera)\b",
         headline,
     ))
     crime_context = bool(re.search(
@@ -881,7 +884,7 @@ def _photo_score(article, photo):
             and not re.search(r"\b(?:trafico|transito|vehicular|vialidad|motos?|motociclet\w*|autos?|automovil\w*)\b", topic)):
         return -10000
     # Una graduación policial no ilustra una muerte violenta o sentencia penal.
-    if (re.search(r"\b(?:matan|balazos|asesinan|homicidio|condenad[oa]s?|condenan|prision)\b", headline)
+    if (re.search(r"\b(?:ejecutan|ejecutad\w*|ejecucion|matan|balazos|asesinan|homicidio|condenad[oa]s?|condenan|prision)\b", headline)
             and re.search(r"\b(?:graduacion|ceremonia de policia|entrega de patrullas)\b", topic)):
         return -10000
     # Una nota del Hoy No Circula requiere contexto vehicular, no fotos de la festividad.
