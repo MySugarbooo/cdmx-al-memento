@@ -106,9 +106,9 @@ def _reported_angle(article):
         return (f"Según la información destacada por {source}, {detail} forman parte de la "
                 "jornada de movilidad capitalina. La ficha no demuestra por sí sola "
                 "que todas las vías mencionadas sigan cerradas al momento de leerla.")
-    has_metro = bool(re.search(r"\\bmetro\\b", t))
-    has_metrobus = bool(re.search(r"\\bmetrob[uú]s\\b", t))
-    has_tren_suburbano = bool(re.search(r"\\btren suburbano\\b", t))
+    has_metro = bool(re.search(r"\bmetro\b", t))
+    has_metrobus = bool(re.search(r"\bmetrob[uú]s\b", t))
+    has_tren_suburbano = bool(re.search(r"\btren suburbano\b", t))
     if has_metro and ("línea a" in t or "linea a" in t) and ("rehabilit" in t or "arreglo" in t or "suspensi" in t):
         return (f"El medio {source} recoge advertencias y demandas sobre el mantenimiento de "
                 "la Línea A del Metro. Hablar de una posible suspensión no significa "
