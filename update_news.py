@@ -488,7 +488,9 @@ def merge_archive_records(first, second):
             brief.get("lead"), photo.get("id"),
         )
 
-    current_signature = signature(merged)
+    # La firma primaria se calcula antes de completar campos con la versión anterior;
+    # así no se vuelve a guardar la ficha vigente como una versión alternativa.
+    current_signature = signature(primary)
     seen = set()
     alternate_versions = []
     for version in versions:
