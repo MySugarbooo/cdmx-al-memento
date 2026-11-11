@@ -71,6 +71,87 @@ def _reported_angle(article):
     borough=str(article.get("borough") or "")
     zone=(" en "+borough) if borough else " en la capital"
 
+    # Volcaduras de pipas de gas: resumir solo lo que el titular confirma.
+    if (re.search(r"\b(?:pipa(?:s)? de gas|camion(?:es)? cisterna|autotanque(?:s)?)\b", t)
+            and re.search(r"\b(?:vuelca|vuelcan|volcadur\w*|accident\w*|choqu\w*|colisi[oó]n\w*|caos vial|carriles|tr[aá]fic[oó])\b", t)):
+        road="la autopista México-Pachuca" if "pachuca" in t else "una vialidad"
+        if re.search(r"\bal menos\s+2\b", t) and re.search(r"\blesionad\w*\b", t):
+            outcome="El titular menciona al menos dos personas lesionadas."
+        elif re.search(r"\blesionad\w*|\bherid\w*\b", t):
+            outcome="El titular menciona personas lesionadas."
+        elif re.search(r"\b(?:carriles|tr[aá]fic[oó]|caos vial)\b", t):
+            outcome="El encabezado menciona afectaciones al tránsito o cierre de carriles, pero no permite confirmar lesiones."
+        else:
+            outcome="El encabezado no permite determinar por sí solo si hubo personas lesionadas."
+        return (f"De acuerdo con {source}, el titular informa de la volcadura de una pipa de gas en {road}. "
+                f"{outcome} No se atribuyen causas ni responsabilidades sin consultar la nota original "
+                "y los avisos oficiales.")
+
+    # Explosiones y flamazos: no añadir causas, víctimas ni daños no publicados.
+    if re.search(r"\b(?:explosi[oó]n(?:es)? de gas|fuga(?:s)? de gas|acumulaci[oó]n de gas|flamazo|estalla\s+(?:un\s+)?tanque)\b", t):
+        if "flamazo" in t:
+            event="un flamazo por acumulación de gas"
+        elif re.search(r"explosi[oó]n", t):
+            event="una explosión de gas"
+        else:
+            event="una fuga o acumulación de gas"
+        if "azcapotzalco" in t and "local" in t:
+            place=" en un local de Azcapotzalco"
+            detail="El encabezado sitúa el hecho en un local."
+        elif ("alvaro" in t or "álvaro" in t) and "departamento" in t:
+            place=" en Álvaro Obregón"
+            detail="El titular menciona daños a un departamento."
+        else:
+            place=zone
+            detail="El encabezado no precisa por sí solo el alcance de los daños o lesiones."
+        extra=(" Los baches y socavones que aparecen después de los dos puntos son asuntos adicionales; "
+               "no se asume que estén relacionados con la explosión.") if ("baches" in t or "socavones" in t) else ""
+        return (f"El titular de {source} informa de {event}{place}. {detail}{extra} "
+                "No se agregan causas, lesiones ni daños que no estén expresamente en el encabezado.")
+
+    if re.search(r"\b(?:ejecutan|ejecutado|ejecutada|ejecuci[oó]n|asesinan|homicidio)\b", t):
+        place=(" en la colonia Libertad, alcaldía Azcapotzalco"
+               if "colonia libertad" in t and "azcapotzalco" in t else zone)
+        return (f"El titular de {source} informa de la ejecución de un hombre{place}. "
+                "No se añaden identidades, motivos ni circunstancias que no estén en el encabezado; "
+                "consulta la publicación original y los reportes de la autoridad investigadora.")
+
+    if "piedras" in t and re.search(r"\b(?:carros?|autos?|autom[oó]viles?)\b", t):
+        return (f"El titular de {source} reporta lanzamientos de piedras contra automóviles en Periférico. "
+                "No precisa el punto exacto, daños ni responsables; esos datos deben contrastarse "
+                "con la publicación original y los avisos de las autoridades.")
+
+    if re.search(r"\b(?:nfl|san francisco 49ers|minnesota vikings)\b", t):
+        teams=("San Francisco 49ers y Minnesota Vikings"
+               if "49ers" in t and "vikings" in t else "un encuentro de fútbol americano")
+        return (f"El titular de {source} reúne actividades anunciadas en las calles de CDMX antes del juego entre {teams}. "
+                "El encabezado no precisa sedes ni horarios; deben confirmarse con los organizadores y la publicación original.")
+
+    if re.search(r"\b(?:repartidores?|conductores? por aplicaci[oó]n)\b", t) and re.search(
+            r"\b(?:movilizaci[oó]n|calles cerraran|calles cerradas|bloqueos?|protestan|protesta|toman)\b", t):
+        if re.search(r"\b(?:amenaza de muerte|amenaza contra|amenazad)\b", t):
+            return (f"El titular de {source} informa de una protesta de repartidores tras una amenaza contra un compañero. "
+                    "No identifica a las personas ni confirma responsables; consulta la fuente original y los reportes oficiales.")
+        return (f"El titular de {source} anuncia una movilización de conductores y repartidores por aplicación en CDMX. "
+                "Los horarios, puntos de concentración y cierres deben confirmarse con avisos actualizados; "
+                "una convocatoria no demuestra que las calles ya estén cerradas.")
+
+    if "brilla fest" in t:
+        return (f"{source} anuncia Brilla Fest 2026, un festival de luces y espectáculos cerca de CDMX. "
+                "El encabezado no precisa la sede exacta ni los horarios; deben confirmarse con los organizadores.")
+
+    if "cenicienta" in t and "ballet" in t:
+        return (f"{source} anuncia funciones gratuitas del ballet La Cenicienta en CDMX. "
+                "Las fechas, sedes y disponibilidad deben confirmarse con la institución organizadora.")
+
+    if "buen fin" in t and "coparmex" in t:
+        return (f"{source} presenta un decálogo de Coparmex CDMX para compras durante Buen Fin 2026. "
+                "La ficha no garantiza descuentos ni condiciones; consulta la publicación original para revisar sus recomendaciones.")
+
+    if "centre pompidou" in t or "bellas artes" in t and "exposici" in t:
+        return (f"{source} anuncia una exposición del Centre Pompidou en el Palacio de Bellas Artes. "
+                "El titular no precisa la fecha de apertura ni la lista de obras; confírmalo con la institución y la publicación original.")
+
     if "alerta amber" in t or ("desaparec" in t and "años" in t):
         return (f"Una publicación de {source} informa sobre la búsqueda de una adolescente "
                 f"y menciona la activación de una Alerta Amber{zone}. "
@@ -470,8 +551,47 @@ def _photo_category(article):
         ):
             return "Movilidad"
         return "CDMX"
+    # Emergencias de gas prevalecen sobre la categoría general del RSS.
+    if re.search(r"\b(?:explosion(?:es)? de gas|fuga(?:s)? de gas|acumulacion de gas|flamazo|estalla\s+(?:un\s+)?tanque(?:\s+de\s+gas)?)\b", headline):
+        return "Seguridad"
+    # Una pipa de gas volcada es un incidente vial, no una pipa de agua.
+    if (re.search(r"\b(?:pipa(?:s)? de gas|camion(?:es)? cisterna|autotanque(?:s)?)\b", headline)
+            and re.search(r"\b(?:vuelca(?:n)?|volca(?:n)?|volcadur\w*|accident\w*|choqu\w*|colisi\w*|caos vial|carriles cerrados|cierra carriles)\b", headline)):
+        return "Movilidad"
+    if re.search(r"\b(?:nfl|football americano|futbol americano|san francisco 49ers|minnesota vikings)\b", headline):
+        if re.search(r"\b(?:cierres? viales?|calles? cerradas?|trafico|congestionamiento|desvios?|rutas? alternas?)\b", headline):
+            return "Movilidad"
+        return "CDMX"
+    if re.search(r"\b(?:repartidores?|conductores? por aplicacion)\b", headline):
+        if re.search(r"\b(?:amenaza de muerte|amenaza contra|amenazad)\b", headline):
+            return "Seguridad"
+        if re.search(r"\b(?:movilizacion|movilizan|calles cerraran|calles cerradas|bloqueos?|toman la cdmx|protestas?)\b", headline):
+            return "Movilidad"
+    if re.search(r"\b(?:ejecutan|ejecutado|ejecutada|ejecucion|avientan piedras a carros|piedras contra autos?|lanzan piedras contra vehiculos?)\b", headline):
+        return "Seguridad"
+    if re.search(r"\b(?:ballet|cenicienta|brilla fest|festival de luces|exposicion|centre pompidou|museo|teatro)\b", headline):
+        return "Cultura"
+    # Las emergencias de gas y las pipas volcadas deben distinguirse del abasto de agua.
+    if re.search(r"\b(?:explosion(?:es)? de gas|fuga(?:s)? de gas|acumulacion de gas|flamazo|estalla\s+(?:un\s+)?tanque(?:\s+de\s+gas)?)\b", headline):
+        return "Seguridad"
+    if (re.search(r"\b(?:pipa(?:s)? de gas|camion(?:es)? cisterna|autotanque(?:s)?)\b", headline)
+            and re.search(r"\b(?:vuelca(?:n)?|volca(?:n)?|volcadur\w*|accident\w*|choqu\w*|colisi\w*|caos vial|carriles cerrados|cierra carriles)\b", headline)):
+        return "Movilidad"
+    if re.search(r"\b(?:nfl|football americano|futbol americano|san francisco 49ers|minnesota vikings)\b", headline):
+        if re.search(r"\b(?:cierres? viales?|calles? cerradas?|trafico|congestionamiento|desvios?|rutas? alternas?)\b", headline):
+            return "Movilidad"
+        return "CDMX"
+    if re.search(r"\b(?:repartidores?|conductores? por aplicacion)\b", headline):
+        if re.search(r"\b(?:amenaza de muerte|amenaza contra|amenazad)\b", headline):
+            return "Seguridad"
+        if re.search(r"\b(?:movilizacion|movilizan|calles cerraran|calles cerradas|bloqueos?|toman la cdmx|protestas?)\b", headline):
+            return "Movilidad"
+    if re.search(r"\b(?:ejecutan|ejecutado|ejecutada|ejecucion|avientan piedras a carros|piedras contra autos?|lanzan piedras contra vehiculos?)\b", headline):
+        return "Seguridad"
+    if re.search(r"\b(?:ballet|cenicienta|brilla fest|festival de luces|exposicion|centre pompidou|museo|teatro)\b", headline):
+        return "Cultura"
     # Los ataques y homicidios prevalecen sobre menciones a festividades.
-    if re.search(r"\b(?:ataque armado|balacera|asesina(?:n)?|asesinad\w*|asesinato)\b", headline):
+    if re.search(r"\b(?:ataque armado|balacera|ejecutan|ejecutad\w*|ejecucion|asesina(?:n)?|asesinad\w*|asesinato|piedras? contra autos?)\b", headline):
         return "Seguridad"
     # Las víctimas de disparos son un tema de seguridad, aunque el RSS diga CDMX.
     if re.search(r"\b(?:balead\w*|balear\w*|balean|baleo)\b", headline):
@@ -497,6 +617,21 @@ STRICT_PHOTO_TOPICS = (
     # Mantener primero la regla de gas: el titular puede incluir un segundo asunto tras dos puntos.
     (r"\b(?:explosion(?:es)? de gas|tanques? de gas|fugas? de gas|acumulacion de gas|estalla\s+(?:un\s+)?tanque(?:\s+de\s+gas)?|incendios?)\b",
      r"\b(?:gas|tanques?|cilindros?|fugas?|bomberos|incendios?|extintores?|locales? comerciales?|mercados?|cocinas?|alimentos?)\b"),
+    (r"\b(?:pipa(?:s)? de gas|camiones? cisterna|autotanques? de gas)\b",
+     r"\b(?:pipas?|cisternas?|lpg|gas lp|gas tank|tank truck|transporte de gas|tanques? de gas)\b"),
+    (r"\b(?:nfl|futbol americano|football americano|san francisco 49ers|minnesota vikings)\b",
+     r"\b(?:american football|futbol americano|football|nfl|jugadores?|gol de campo|estadio)\b"),
+    (r"\b(?:repartidores?|conductores? por aplicacion|reparto a domicilio)\b",
+     r"\b(?:repartidores?|delivery|mensajeros?|motocicletas?|motociclistas?|motos?|reparto a domicilio|protestas?|manifestaciones?)\b"),
+    (r"\b(?:ballet|cenicienta)\b",
+     r"\b(?:ballet|bailarin\w*|danza clasica|escenario|coreografia)\b"),
+    (r"\b(?:brilla fest|festival de luces|luces navidenas)\b",
+     r"\b(?:christmas light|luces navidenas|festival de luces|iluminacion navidena|evento navideno|decoracion luminosa)\b"),
+    (r"\b(?:buen fin|compras inteligentes)\b",
+     r"\b(?:shopping|compras|carritos? de compra|tiendas?|comercio|retail|supermercados?|ofertas)\b"),
+    (r"\b(?:exposicion|centre pompidou)\b",
+     r"\b(?:exposicion|museos?|bellas artes|arte|galerias?|centros? culturales?|obras? de arte)\b"),
+
     # El deporte adaptado requiere una imagen de la disciplina, no un monumento genérico.
     (r"\b(?:deporte adaptado|discapacidad motriz|baloncesto en silla de ruedas)\b",
      r"\b(?:deporte adaptado|deportistas?|baloncesto|silla de ruedas|paralimpic\w*|discapacidad motriz|atletas?|gimnasio|cancha|competencia deportiva)\b"),
@@ -550,8 +685,8 @@ STRICT_PHOTO_TOPICS = (
     (r"\bfuga de agua\b",
      r"\b(?:fuga de agua|tuberias?|reparacion|fontaneria|agua potable|red hidraulica)\b"),
     # "Asesinados" y "asesinadas" no coincidían con el patrón "asesinan".
-    (r"\b(?:asesinad\w*|asesina(?:n)?|homicidios?|balacera|ataque armado)\b",
-     r"\b(?:fiscalia|investigacion penal|justicia|ministerio publico|peritos?|escena del crimen|operativo policial)\b"),
+    (r"\b(?:ejecutan|ejecutad\w*|ejecucion|asesinad\w*|asesina(?:n)?|homicidios?|balacera|ataque armado)\b",
+     r"\b(?:fiscalia|investigacion penal|justicia|ministerio publico|peritos?|escena del crimen|operativo policial|patrullas?|policias?|seguridad)\b"),
     # Fotos representativas deben corresponder al asunto, no solo a la ciudad.
     (r"\b(?:panteones?|cementerios?|camposantos?)\b",
      r"\b(?:panteones?|cementerios?|camposantos?|tumbas?|sepulturas?|ofrendas? funerarias?)\b"),
@@ -566,7 +701,7 @@ STRICT_PHOTO_TOPICS = (
      r"\b(?:panteones?|cementerios?|tumbas?|sepulturas?|ofrendas? funerarias?)\b"),
     # Marchas anunciadas no se ilustran con vehículos de transporte público.
     (r"\bmarchas?\b.*\b(?:hoy|noviembre|bloqueos?|concentraciones?)\b",
-     r"\b(?:manifestacion(?:es)?|protestas?|marchas?|bloqueos?|concentraciones?|movilizaciones?)\b"),
+     r"\b(?:manifestacion(?:es)?|protestas?|marchas?|bloqueos?|concentraciones?|movilizaciones?|trafico|transito|vehicular|vialidad|cierres? viales?)\b"),
     # Una agresión letal no es una celebración ni una imagen genérica de rescate.
     (r"\b(?:ataque armado|balacera|asesina(?:n)?|asesinato)\b",
      r"\b(?:fiscalia|investigacion penal|justicia|ministerio publico|peritos?|escena del crimen|operativo policial)\b"),
@@ -722,8 +857,8 @@ STRICT_PHOTO_TOPICS = (
     (r"\b(?:sarampion|dengue|influenza|covid|vacunacion|contagios?)\b",
      r"\b(?:sarampion|dengue|influenza|covid|vacunacion|vacunas?|centro de salud|hospital|clinica|medicos?|personal de salud|enfermeria|laboratorio|epidemiologia|virus)\b"),
     # Los ataques a automóviles requieren contexto vial o de vehículos.
-    (r"\b(?:lanzan piedras contra autos?|ataques? contra autos?|piedras contra vehiculos?)\b",
-     r"\b(?:autos?|vehiculos?|carretera|periferico|trafico|transito|vialidad|cruce)\b"),
+    (r"\b(?:avientan piedras a carros?|lanzan piedras contra autos?|ataques? contra autos?|piedras contra vehiculos?|ataques? a automovilistas?)\b",
+     r"\b(?:autos?|carros?|automoviles?|vehiculos?|carretera|periferico|trafico|transito|vialidad|cruce|patrullas?|policias?)\b"),
     # Las amenazas con arma en inmuebles no se ilustran con bomberos o graduaciones.
     (r"\b(?:amenazas? con arma de fuego|amenaza con arma|irrumpen en unidad habitacional)\b",
      r"\b(?:arma|repartidor|motocicleta|unidad habitacional|caseta|guardia|vigilancia|escena del crimen|investigacion penal|operativo policial)\b"),
@@ -750,7 +885,7 @@ def _photo_score(article, photo):
     # En robos, asaltos y extorsiones, la coincidencia de alcaldía no basta:
     # exigir una imagen con contexto de seguridad antes de puntuar el lugar.
     crime_story = bool(re.search(
-        r"\b(?:robo|robos|roban|robado|robada|robaron|asalto|asaltan|extorsion|extorsionan)\b",
+        r"\b(?:robo|robos|roban|robado|robada|robaron|asalto|asaltan|extorsion|extorsionan|ejecutan|ejecutado|ejecutada|ejecucion|asesinan|asesinato|homicidio|balacera|avientan piedras a carros|piedras contra autos|lanzan piedras contra autos)\b",
         headline,
     ))
     crime_context = bool(re.search(
@@ -793,11 +928,18 @@ def _photo_score(article, photo):
         r"\b(?:jauria|sloopy|lobito|perros?|perritos?|mascotas?)\b", headline
     ))
     animal_photo = bool(re.search(r"\b(?:perros?|caninos?|mascotas?)\b", context))
+    delivery_story = bool(re.search(
+        r"\b(?:repartidores?|conductores? por aplicacion|reparto a domicilio)\b", headline
+    ))
+    delivery_photo = bool(re.search(
+        r"\b(?:repartidores?|delivery|mensajeros?|motocicletas?|motociclistas?|motos?)\b", context
+    ))
     themed_category = (
         (photo_category == "Cultura" and music_story and music_photo)
         or (photo_category == "Medio Ambiente" and (
             (weather_story and weather_photo) or (animal_story and animal_photo)
         ))
+        or (photo_category == "Movilidad" and delivery_story and delivery_photo)
     )
     # Una categoría distinta no basta por sí sola para considerar pertinente una foto.
     if photo_category not in (category, "CDMX", "Alcaldías") and not themed_category:
@@ -869,7 +1011,7 @@ def _photo_score(article, photo):
             and re.search(r"\b(?:adquisicion|compra|presentacion|entrega)\b.*\bpatrullas?\b", topic)):
         return -10000
     # Una ceremonia policial o un desfile no representa un asesinato o ataque.
-    if (re.search(r"\b(?:asesina(?:n)?|asesinato|ataque armado|balacera|matan|homicidio|balead\w*|balear\w*|balean)\b", headline)
+    if (re.search(r"\b(?:ejecutan|ejecutado|ejecucion|asesina(?:n)?|asesinato|ataque armado|balacera|matan|homicidio|balead\w*|balear\w*|balean|avientan piedras a carros|piedras contra autos)\b", headline)
             and re.search(r"\b(?:graduacion|ceremonia|adquisicion|entrega de patrullas|proteccion civil|desfile|catrinas?)\b", topic)):
         return -10000
     # Una avenida turística de otra zona no ilustra un choque local.
