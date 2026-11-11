@@ -338,7 +338,7 @@ def category_by_headline(title, feed_category):
             and not re.search(r"\b(?:balacera|homicidio|asalto|delito|detenidos?|detienen|persecucion policial)\b", normalized)):
         return "Movilidad"
     # Distinguir siniestros viales de delitos, aunque provengan de otro feed RSS.
-    if re.search(r"\b(?:accidentes?|choques?|colisiones?|volcaduras?|atropell\w*|arroll\w*|derrap\w*|percances? viales?|siniestros? viales?)\b", normalized):
+    if re.search(r"\b(?:accidentes?|choques?|colisiones?|volcaduras?|vuelc\w*|atropell\w*|arroll\w*|derrap\w*|percances? viales?|siniestros? viales?)\b", normalized):
         if re.search(r"\b(?:homicidio|balacera|asalto|atentado|delito|persecucion policial)\b", normalized):
             return "Seguridad"
         return "Movilidad"
