@@ -621,7 +621,7 @@ STRICT_PHOTO_TOPICS = (
      r"\b(?:techno|musica|dj|vinilos?|discos?|escenario|concierto|musico|productor musical)\b"),
     # Envenenamiento de perros exige imagen canina, no fauna genérica.
     (r"\benvenenamientos?\b.*\b(?:perros?|mascotas?)\b",
-     r"\b(?:perritos?|perros?|mascotas?|caninos?|veterinaria)\b"),
+     r"\b(?:perritos?|perros?|mascotas?|caninos?|animales?|veterinaria)\b"),
     (r"\b(?:perritos?|perros?|mascotas?|envenenamientos? de perros?)\b",
      r"\b(?:perritos?|perros?|mascotas?|caninos?|veterinaria)\b"),
     (r"\b(?:matan|balazos|asesinan|homicidio|condenad[oa]s?|condenan|prision|delitos? contra)\b",
@@ -643,6 +643,9 @@ STRICT_PHOTO_TOPICS = (
     (r"\bcalidad del aire\b",
      r"\b(?:contaminacion|smog|atmosfera|emisiones|contaminantes|calidad del aire|medicion ambiental)\b"),
 
+    # Un ataque de jauría necesita perros visibles; fauna genérica no basta.
+    (r"\b(?:jauria de perros?|perros? atacan?|ataque de perros?)\b",
+     r"\b(?:perros?|caninos?|mascotas?|veterinaria)\b"),
     # Un socavón exige contexto de pavimento o infraestructura dañada, no edificios turísticos.
     (r"\b(?:socavon(?:es)?|hundimiento(?:s)?|bache(?:s)?|colapso de (?:la )?(?:calle|pavimento|asfalto))\b",
      r"\b(?:socavon(?:es)?|hundimiento(?:s)?|bache(?:s)?|pavimento|asfalto|drenaje|alcantarilla|excavacion|obra vial)\b"),
