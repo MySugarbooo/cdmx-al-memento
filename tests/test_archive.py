@@ -894,7 +894,7 @@ class BoroughAndArchiveTests(unittest.TestCase):
         now = datetime.now(timezone.utc)
         date = (now - timedelta(days=1)).date().isoformat()
         old_raw = fake("Muévete en Bici recorre seis alcaldías", date)
-        old_raw["url"] = "https://example.org/muevete-en-bici-seis-alcaldias"
+        old_raw["url"] = "https://news.google.com/rss/articles/muevete-en-bici-seis-alcaldias"
         old = news.standardize(old_raw)
         old["category"] = "Seguridad"  # Etiqueta RSS anterior, corregida al releer.
         old["photo"] = {
@@ -903,7 +903,7 @@ class BoroughAndArchiveTests(unittest.TestCase):
             "url": "/assets/fotos/patrullas.jpg",
         }
         verified_raw = fake("Ciclistas recorren avenida de CDMX", date)
-        verified_raw["url"] = "https://example.org/ciclistas-recorren-avenida-cdmx"
+        verified_raw["url"] = "https://news.google.com/rss/articles/ciclistas-recorren-avenida-cdmx"
         verified = news.standardize(verified_raw)
         verified["photo"] = {
             "id": "hecho_confirmado", "kind": "hecho", "verified": True,
@@ -1054,10 +1054,10 @@ class BoroughAndArchiveTests(unittest.TestCase):
         date = now.date().isoformat()
         outside_raw = fake(
             "Trágico accidente en la carretera federal 307 deja una mujer sin vida", date)
-        outside_raw["url"] = "https://example.org/accidente-carretera-federal-307"
+        outside_raw["url"] = "https://news.google.com/rss/articles/accidente-carretera-federal-307"
         outside = news.standardize(outside_raw)
         local_raw = fake("Choque en Eje Central, CDMX", date)
-        local_raw["url"] = "https://example.org/choque-eje-central-cdmx"
+        local_raw["url"] = "https://news.google.com/rss/articles/choque-eje-central-cdmx"
         local = news.standardize(local_raw)
         self.assertEqual(news.homepage_articles([outside, local], [], now), [local])
         with tempfile.TemporaryDirectory() as tmp:
