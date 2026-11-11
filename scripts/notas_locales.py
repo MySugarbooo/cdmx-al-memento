@@ -434,7 +434,7 @@ RELATED_WORDS = (
      ("policia", "patrulla", "seguridad")),
     (r"\b(?:lluvia|inundacion|tormenta|clima)\w*\b",
      ("lluvia", "agua", "clima", "nubes", "cielo")),
-    (r"\b(?:marcha|protest\w*|manifestacion|bloque\w*|movilizacion|concentracion|planton)\w*\b",
+    (r"\b(?:marcha(?:s)?|protest\w*|manifestacion(?:es)?|bloque(?:o|os|a|an|aron|ando|ado|ada|ados|adas|ar)|movilizacion(?:es)?|concentracion(?:es)?|planton(?:es)?)\b",
      ("marcha", "protesta", "manifestacion", "manifestantes", "bloqueo",
       "movilizacion", "concentracion", "planton", "cacerolazo",
       "trabajadores", "repartidores", "motociclistas")),
@@ -564,10 +564,10 @@ STRICT_PHOTO_TOPICS = (
     # Fotos representativas deben corresponder al asunto, no solo a la ciudad.
     (r"\b(?:panteones?|cementerios?|camposantos?)\b",
      r"\b(?:panteones?|cementerios?|camposantos?|tumbas?|sepulturas?|ofrendas? funerarias?)\b"),
-    (r"\b(?:movilizacion(?:es)?|manifestacion(?:es)?|planton(?:es)?|concentracion(?:es)?|protest\w*|marcha(?:s)?|bloque\w*)\b",
-     r"\b(?:movilizacion(?:es)?|manifestacion(?:es)?|planton(?:es)?|concentracion(?:es)?|protest\w*|manifestantes?|marcha(?:s)?|bloque\w*|cacerolazo|repartidores?|trabajadores?|motociclistas?|trafico|transito|vehicular|congestion|cierres? viales?|bicicletas?|ciclistas?|rodadas?|ecobici)\b"),
-    (r"\b(?:repartidores?|conductores? de aplicacion)\b.*\b(?:toman|bloque\w*|calles? cerraran)\b",
-     r"\b(?:repartidores?|conductores?|manifestantes?|protest\w*|marcha(?:s)?|bloque\w*|cacerolazo|movilizacion(?:es)?|trabajadores?|motociclistas?)\b"),
+    (r"\b(?:movilizacion(?:es)?|manifestacion(?:es)?|planton(?:es)?|concentracion(?:es)?|protest\w*|marcha(?:s)?|bloque(?:o|os|a|an|aron|ando|ado|ada|ados|adas|ar))\b",
+     r"\b(?:movilizacion(?:es)?|manifestacion(?:es)?|planton(?:es)?|concentracion(?:es)?|protest\w*|manifestantes?|marcha(?:s)?|bloque(?:o|os|a|an|aron|ando|ado|ada|ados|adas|ar)|cacerolazo|repartidores?|trabajadores?|motociclistas?|trafico|transito|vehicular|congestion|cierres? viales?|bicicletas?|ciclistas?|rodadas?|ecobici)\b"),
+    (r"\b(?:repartidores?|conductores? de aplicacion)\b.*\b(?:toman|bloque(?:o|os|a|an|aron|ando|ado|ada|ados|adas|ar)|calles? cerraran)\b",
+     r"\b(?:repartidores?|conductores?|manifestantes?|protest\w*|marcha(?:s)?|bloque(?:o|os|a|an|aron|ando|ado|ada|ados|adas|ar)|cacerolazo|movilizacion(?:es)?|trabajadores?|motociclistas?)\b"),
     (r"\bdel campo a tu colonia\b",
      r"\b(?:campo|mercados?|agricultura|productores?|verduras?|hortalizas?|cosecha|suelo de conservacion|venta directa|alimentos?)\b"),
     (r"\b(?:artz pedregal|antara)\b",
@@ -825,16 +825,16 @@ def _photo_score(article, photo):
     animal_photo = bool(re.search(r"\b(?:perros?|caninos?|mascotas?)\b", context))
     protest_story = bool(
         re.search(
-            r"\b(?:movilizacion(?:es)?|manifestacion(?:es)?|planton(?:es)?|concentracion(?:es)?|protest\w*|marcha(?:s)?|bloque\w*)\b",
+            r"\b(?:movilizacion(?:es)?|manifestacion(?:es)?|planton(?:es)?|concentracion(?:es)?|protest\w*|marcha(?:s)?|bloque(?:o|os|a|an|aron|ando|ado|ada|ados|adas|ar))\b",
             headline_for_photos,
         )
         or re.search(
-            r"\b(?:repartidores?|conductores? de aplicacion)\b.*\b(?:toman|bloque\w*|calles? cerraran)\b",
+            r"\b(?:repartidores?|conductores? de aplicacion)\b.*\b(?:toman|bloque(?:o|os|a|an|aron|ando|ado|ada|ados|adas|ar)|calles? cerraran)\b",
             headline_for_photos,
         )
     )
     protest_photo = bool(re.search(
-        r"\b(?:movilizacion(?:es)?|manifestacion(?:es)?|planton(?:es)?|concentracion(?:es)?|protest\w*|manifestantes?|marcha(?:s)?|bloque\w*|cacerolazo|repartidores?|trabajadores?|motociclistas?)\b",
+        r"\b(?:movilizacion(?:es)?|manifestacion(?:es)?|planton(?:es)?|concentracion(?:es)?|protest\w*|manifestantes?|marcha(?:s)?|bloque(?:o|os|a|an|aron|ando|ado|ada|ados|adas|ar)|cacerolazo|repartidores?|trabajadores?|motociclistas?)\b",
         context,
     ))
     themed_category = (
