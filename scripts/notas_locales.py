@@ -760,6 +760,18 @@ def _photo_score(article, photo):
     ))
     if category == "Seguridad" and crime_story and not crime_context:
         return -10000
+    # Los delitos cibernéticos requieren contexto de seguridad informática,
+    # no una fotografía genérica de Protección Civil o de una patrulla.
+    digital_story = bool(re.search(
+        r"\b(?:delitos? ciberneticos|ciberdelitos|fraudes? ciberneticos?|fraudes? digitales?|delitos? digitales?|ciberataques?|phishing|policia cibernetica)\b",
+        headline,
+    ))
+    digital_context = bool(re.search(
+        r"\b(?:ciberseguridad|seguridad digital|seguridad informatica|internet|computadoras?|laptops?|ordenadores?|tecnologia|phishing|fraudes?|redes|dispositivos?)\b",
+        context,
+    ))
+    if digital_story and not digital_context:
+        return -10000
     # No presentar patrullas o acciones policiales en noticias ajenas a Seguridad.
     if category!="Seguridad" and (
         photo_category=="Seguridad" or

@@ -1289,5 +1289,29 @@ class BoroughAndArchiveTests(unittest.TestCase):
                 }), 0)
 
 
+class CybercrimePhotoTests(unittest.TestCase):
+    def test_cybercrime_uses_digital_security_photo_not_civil_protection(self):
+        article = {
+            "title": "Alerta en CDMX por delitos cibernéticos: conoce las modalidades más reportadas este año",
+            "category": "Seguridad",
+            "url": "https://example.org/cdmx-delitos-ciberneticos",
+        }
+        unrelated = {
+            "category": "Seguridad",
+            "topic": "Protección civil CDMX -i---i- (36810690580)",
+            "keywords": ["Protección Civil CDMX"],
+        }
+        self.assertLess(news._photo_score(article, unrelated), 0)
+
+        stats = news.assign_photos([article])
+        self.assertEqual(stats["assigned"], 1)
+        self.assertEqual(article["photo"]["id"], "contexto_seguridad_digital_laptop")
+        self.assertEqual(article["photo"]["kind"], "representativa")
+        self.assertEqual(article["photo"]["author"], "Richard Nowell")
+        self.assertEqual(article["photo"]["license"], "CC BY-SA 4.0")
+        self.assertIn("commons.wikimedia.org/wiki/File:Secured_laptop.jpg",
+                      article["photo"]["source"])
+
+
 if __name__ == "__main__":
     unittest.main()
