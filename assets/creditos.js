@@ -9,15 +9,23 @@
  const validSource=u=>/^https:\/\/commons\.wikimedia\.org\/wiki\/File:/.test(String(u||''));
  const validLicense=u=>/^https:\/\/creativecommons\.org\//.test(String(u||''));
  const notice='Imagen de carácter ilustrativo y referencial; no constituye evidencia gráfica de los hechos descritos.';
- fetch('/assets/fotos/catalogo-editorial-1100.json?v=20261029-auditoria1',{cache:'force-cache'})
- .then(r=>{if(!r.ok)throw Error('HTTP '+r.status);return r.json()})
- .then(data=>{
-  const photos=(data.photos||[]).filter(p=>p&&p.author&&p.license&&validSource(p.source)&&validLicense(p.licenseUrl));
-  if(photos.length<901||photos.length!==data.count)throw Error('Catálogo incompleto');
+ Promise.all([
+  fetch('/assets/fotos/catalogo-editorial-1100.json?v=20261111-context-catalog1',{cache:'no-cache'})
+   .then(r=>{if(!r.ok)throw Error('HTTP '+r.status);return r.json()}),
+  fetch('/assets/fotos/contexto-tematico.json?v=20261111-context-catalog1',{cache:'no-cache'})
+   .then(r=>r.ok?r.json():{photos:[]}).catch(()=>({photos:[]})),
+ ])
+ .then(([data,contextData])=>{
+  const catalogPhotos=(data.photos||[]).filter(p=>p&&p.author&&p.license&&validSource(p.source)&&validLicense(p.licenseUrl));
+  if(catalogPhotos.length<901||catalogPhotos.length!==data.count)throw Error('Catálogo incompleto');
+  const validImage=u=>/^https:\/\/(?:upload|thumb)\.wikimedia\.org\/wikipedia\/commons\//.test(String(u||''));
+  const contextPhotos=(contextData.photos||[]).filter(p=>p&&p.author&&p.license&&validSource(p.source)&&validLicense(p.licenseUrl)&&validImage(p.url))
+   .map(p=>({...p,file:p.file||p.topic||p.id}));
+  const photos=[...contextPhotos,...catalogPhotos];
   const controls=el('div',undefined,'credits-controls');
   const search=el('input');search.type='search';search.placeholder='Filtrar por autor, tema o alcaldía';
   search.setAttribute('aria-label','Buscar los derechos y créditos fotográficos');
-  const total=el('p','Catálogo de '+photos.length+' imágenes con autor y licencia individual.');
+  const total=el('p','Biblioteca: '+catalogPhotos.length+' imágenes históricas + '+contextPhotos.length+' contextuales ('+photos.length+' en total), con autor y licencia individual.');
   controls.append(search,total);holder.before(controls);
   const more=el('button','Ver 50 créditos más','credits-more');
   more.type='button';holder.after(more);
@@ -36,7 +44,7 @@
     }
     holder.append(fragment);offset=Math.min(filtered.length,offset+limit);
     more.hidden=offset>=filtered.length;
-    total.textContent='Mostrando '+offset+' de '+filtered.length+' resultados · Biblioteca completa: '+photos.length+' imágenes.';
+    total.textContent='Mostrando '+offset+' de '+filtered.length+' resultados · Biblioteca: '+catalogPhotos.length+' históricas + '+contextPhotos.length+' contextuales ('+photos.length+' en total).';
   };
   function searchAgain(){
    const q=fold(search.value.trim());filtered=q?photos.filter(p=>fold([p.topic,p.file,p.author,p.category,...(p.keywords||[])].join(' ')).includes(q)):photos;
