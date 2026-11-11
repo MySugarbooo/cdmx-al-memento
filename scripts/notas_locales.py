@@ -621,7 +621,7 @@ STRICT_PHOTO_TOPICS = (
      r"\b(?:techno|musica|dj|vinilos?|discos?|escenario|concierto|musico|productor musical)\b"),
     # Envenenamiento de perros exige imagen canina, no fauna genérica.
     (r"\benvenenamientos?\b.*\b(?:perros?|mascotas?)\b",
-     r"\b(?:perritos?|perros?|mascotas?|caninos?|animales?|veterinaria)\b"),
+     r"\b(?:perritos?|perros?|mascotas?|caninos?|veterinaria)\b"),
     (r"\b(?:perritos?|perros?|mascotas?|envenenamientos? de perros?)\b",
      r"\b(?:perritos?|perros?|mascotas?|caninos?|animales?|veterinaria)\b"),
     (r"\b(?:matan|balazos|asesinan|homicidio|condenad[oa]s?|condenan|prision|delitos? contra)\b",
