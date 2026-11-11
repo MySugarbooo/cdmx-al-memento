@@ -594,7 +594,7 @@ STRICT_PHOTO_TOPICS = (
     (r"\bmontachoques\b",
      r"\b(?:choques?|automoviles?|autos?|vehiculos?|trafico|transito|seguridad vial)\b"),
     # La captación de lluvia no es una imagen de pronóstico, frío o viento.
-    (r"\b(?:clima|pronostico|rachas de viento|mananas frias|frente frio)\b",
+    (r"\b(?:temperaturas?|clima|pronostico|rachas de viento|mananas frias|frente frio)\b",
      r"\b(?:clima|pronostico|meteorologia|temperatura|viento|frio|nubes?|cielo|tormenta|neblina)\b"),
     # Los choques y derrapes de motos, camiones o vehículos requieren contexto
     # de tránsito; compartir alcaldía no vuelve pertinente una iglesia.
@@ -623,7 +623,7 @@ STRICT_PHOTO_TOPICS = (
     (r"\benvenenamientos?\b.*\b(?:perros?|mascotas?)\b",
      r"\b(?:perritos?|perros?|mascotas?|caninos?|veterinaria)\b"),
     (r"\b(?:perritos?|perros?|mascotas?|envenenamientos? de perros?)\b",
-     r"\b(?:perritos?|perros?|mascotas?|caninos?|animales?|veterinaria)\b"),
+     r"\b(?:perritos?|perros?|mascotas?|caninos?|veterinaria)\b"),
     (r"\b(?:matan|balazos|asesinan|homicidio|condenad[oa]s?|condenan|prision|delitos? contra)\b",
      r"\b(?:fiscalia|justicia|tribunal|juzgado|penitenciario|prision|ministerio publico|investigacion penal)\b"),
     (r"\b(?:sin agua|falta de agua|suspension de agua|corte de agua)\b",
@@ -642,6 +642,46 @@ STRICT_PHOTO_TOPICS = (
      r"\b(?:licencia|conducir|vehiculos?|automoviles?|autos?|transito|tramite)\b"),
     (r"\bcalidad del aire\b",
      r"\b(?:contaminacion|smog|atmosfera|emisiones|contaminantes|calidad del aire|medicion ambiental)\b"),
+
+    # Un socavón exige contexto de pavimento o infraestructura dañada, no edificios turísticos.
+    (r"\b(?:socavon(?:es)?|hundimiento(?:s)?|bache(?:s)?|colapso de (?:la )?(?:calle|pavimento|asfalto))\b",
+     r"\b(?:socavon(?:es)?|hundimiento(?:s)?|bache(?:s)?|pavimento|asfalto|drenaje|alcantarilla|excavacion|obra vial)\b"),
+    # Una caseta vandalizada requiere un acceso o puesto de vigilancia.
+    (r"\bcaseta(?:s)? de (?:un )?(?:inmueble|vigilancia|acceso)\b",
+     r"\b(?:caseta(?:s)?|vigilancia|guardia|control de acceso|porteria|entrada vigilada|seguridad privada)\b"),
+    # Las líneas del Cablebús no se ilustran con estaciones de otra línea.
+    (r"\b(?:cablebus|teleferico)\b",
+     r"\b(?:cablebus|teleferico|cabinas?)\b"),
+    # Un concierto necesita contexto musical o de su sede, no un monumento ajeno.
+    (r"\b(?:karol g|setlist|conciertos?)\b",
+     r"\b(?:karol g|setlist|conciertos?|escenario|musica|cantantes?|estadio|auditorio|festival|guitarra|banda)\b"),
+    # Los verificentros requieren contexto de revisión vehicular.
+    (r"\b(?:verificentros?|verificacion vehicular)\b",
+     r"\b(?:verificentros?|verificacion vehicular|centro de verificacion|emisiones|vehiculos?|autos?|automoviles?)\b"),
+    # Un foro metropolitano necesita contexto cívico o de planeación urbana.
+    (r"\b(?:foro de pozmvm|pozmvm|foro urbano|cancelan foro)\b",
+     r"\b(?:foro|planeacion urbana|urbanismo|metropolitano|pozmvm|politica|partido|congreso|asamblea)\b"),
+    # Los fraudes por internet requieren contexto digital, no una ceremonia policial.
+    (r"\b(?:fraudes? en compras por internet|fraude cibernetico|policia cibernetica)\b",
+     r"\b(?:ciberseguridad|internet|computadora|tecnologia|fraude|phishing|seguridad digital|redes|dispositivo)\b"),
+    # Las iniciativas de reciclaje y lectura necesitan papel o contexto educativo.
+    (r"\b(?:recicla para leer|reciclaje de papel|papel reciclado)\b",
+     r"\b(?:papel|reciclaje|recicla|libros|lectura|biblioteca|escuela|educacion)\b"),
+    # La detección de fugas de agua requiere infraestructura hidráulica.
+    (r"\b(?:fugas? de agua|deteccion de fugas|detectar fugas de agua)\b",
+     r"\b(?:agua|fuga|tuberias?|drenaje|sistema hidraulico|acueducto|cisterna|sensor|red hidraulica)\b"),
+    # Las notas de sarampión y otras enfermedades requieren contexto sanitario.
+    (r"\b(?:sarampion|dengue|influenza|covid|vacunacion|contagios?)\b",
+     r"\b(?:sarampion|dengue|influenza|covid|vacunacion|vacunas?|centro de salud|hospital|clinica|medicos?|personal de salud|enfermeria|laboratorio|epidemiologia|virus)\b"),
+    # Los ataques a automóviles requieren contexto vial o de vehículos.
+    (r"\b(?:lanzan piedras contra autos?|ataques? contra autos?|piedras contra vehiculos?)\b",
+     r"\b(?:autos?|vehiculos?|carretera|periferico|trafico|transito|vialidad|cruce)\b"),
+    # Las amenazas con arma en inmuebles no se ilustran con bomberos o graduaciones.
+    (r"\b(?:amenazas? con arma de fuego|amenaza con arma|irrumpen en unidad habitacional)\b",
+     r"\b(?:arma|repartidor|motocicleta|unidad habitacional|caseta|guardia|vigilancia|escena del crimen|investigacion penal|operativo policial)\b"),
+    # Los bloqueos anunciados por repartidores requieren protesta, reparto o vialidad.
+    (r"\b(?:repartidores? anuncian? bloqueos?|repartidores? bloquean? zona|bloqueos? de repartidores?)\b",
+     r"\b(?:bloqueo|protesta|manifestacion|repartidor|motocicleta|trafico|transito|vialidad|calle)\b"),
 )
 
 def _photo_score(article, photo):
@@ -803,6 +843,11 @@ def _photo_score(article, photo):
         wanted=re.search(r"\blinea ([0-9]{1,2}|a|b)\b",headline)
         shown=re.search(r"\b(?:linea|line) ([0-9]{1,2}|a|b)\b",topic)
         if wanted and shown and wanted.group(1)!=shown.group(1):
+            return -10000
+    if re.search(r"\b(?:cablebus|teleferico)\b", headline):
+        wanted_lines = set(re.findall(r"\blineas? ([0-9]{1,2})\b", headline))
+        shown_lines = set(re.findall(r"\blinea ([0-9]{1,2})\b", topic))
+        if wanted_lines and shown_lines and not wanted_lines.intersection(shown_lines):
             return -10000
     borough=_photo_fold(article.get("borough"))
     score=65 if photo_category==category else (12 if photo_category=="CDMX" else 0)
