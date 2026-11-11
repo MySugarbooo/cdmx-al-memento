@@ -56,6 +56,28 @@ class LocalNewsTests(unittest.TestCase):
         article["title"] = "Choque entre dos vehículos en Azcapotzalco"
         self.assertIn("no permite determinar", summarize(article)["lead"])
 
+    def test_metrobús_only_headline_is_not_summarized_as_metro(self):
+        article = {
+            "title": "Estado de las estaciones del Metrobús en esta última hora del 11 de noviembre",
+            "url": "https://news.google.com/rss/articles/example-metrobus-only",
+            "source": "Infobae", "date": "2026-11-11",
+            "category": "Movilidad", "borough": "",
+        }
+        lead = summarize(article)["lead"]
+        self.assertIn("servicio del Metrobús de Ciudad de México", lead)
+        self.assertNotIn("Metro de Ciudad de México", lead)
+
+    def test_combined_transit_headline_names_each_service(self):
+        article = {
+            "title": "¿Hay atrasos en Metro CDMX, Metrobús y Tren Suburbano? Estado del servicio hoy",
+            "url": "https://news.google.com/rss/articles/example-multiple-transit",
+            "source": "Eje Central", "date": "2026-11-11",
+            "category": "Movilidad", "borough": "",
+        }
+        lead = summarize(article)["lead"]
+        self.assertIn("Metro, Metrobús y Tren Suburbano", lead)
+        self.assertNotIn("solo", lead.casefold())
+
     def test_reader_is_internal_and_signed(self):
         html=(ROOT/"noticias/index.html").read_text(encoding="utf-8")
         js=(ROOT/"assets/noticias-locales.js").read_text(encoding="utf-8")
