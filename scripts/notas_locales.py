@@ -376,6 +376,8 @@ SUBJECT_RULES = (
     (r"\b(?:grupos? criminales?|organizaciones? criminales?|crimen organizado)\b", "Seguridad"),
     # Las muertes violentas y condenas judiciales no son temas genéricos de CDMX.
     (r"\b(?:matan|balazos|asesinan|homicidio|condenad[oa]s?|condenan|prision)\b", "Seguridad"),
+    # Las explosiones de gas e incendios se tratan como emergencias, no como baches o drenaje.
+    (r"\b(?:explosion(?:es)? de gas|tanques? de gas|fugas? de gas|acumulacion de gas|estalla\s+(?:un\s+)?tanque(?:\s+de\s+gas)?|incendios?)\b", "Seguridad"),
     # El RSS puede etiquetar temas recreativos o tecnológicos como Seguridad.
     (r"\b(?:muevete en bici|paseo dominical|bicicletas?|ciclistas?|ciclismo|ciclovias?|ecobici|cicloton)\b", "Movilidad"),
     (r"\b(?:robot|robots|robotica|robotico|roboticos)\b", "CDMX"),
@@ -473,6 +475,9 @@ def _photo_category(article):
 # Resguardos editoriales: una coincidencia geográfica o de categoría no basta.
 # Si la fototeca no tiene contexto del tema, se prefiere publicar sin imagen.
 STRICT_PHOTO_TOPICS = (
+    # Una explosión de gas o incendio requiere contexto de emergencia, no una foto de drenaje.
+    (r"\b(?:explosion(?:es)? de gas|tanques? de gas|fugas? de gas|acumulacion de gas|estalla\s+(?:un\s+)?tanque(?:\s+de\s+gas)?|incendios?)\b",
+     r"\b(?:gas|tanques?|cilindros?|fugas?|bomberos|incendios?|extintores?|locales? comerciales?|mercados?|cocinas?|alimentos?)\b"),
     # Un riff anunciado por una banda requiere una imagen musical, no un monumento.
     (r"\briff\b",
      r"\b(?:musica|conciertos?|guitarras?|bandas?|escenarios?|rock|cantantes?|festivales?|auditorios?|estadios?)\b"),
