@@ -36,6 +36,11 @@ MX = ZoneInfo("America/Mexico_City")
 SITE = "https://cdmx-al-memento.pages.dev"
 MAIL = "sanchezaxochitl@gmail.com"
 RETENTION_DAYS = 365
+ARCHIVE_VERSION_FIELDS = (
+    "title", "description", "url", "source", "date", "published_at",
+    "category", "borough", "location", "local_url", "brief", "photo",
+    "editorial_verified", "sensitive_media",
+)
 
 BOROUGHS = (
     "La Magdalena Contreras", "Álvaro Obregón", "Azcapotzalco",
@@ -290,6 +295,21 @@ def category_by_headline(title, feed_category):
     if (feed_category in {"CDMX", "Gobierno", "Cultura"}
             and re.search(r"\b(?:balead\w*|balear\w*|balean|baleo)\b", normalized)):
         return "Seguridad"
+    # Las movilizaciones de repartidores y conductores son Movilidad,
+    # salvo cuando el titular describe una amenaza o agresión concreta.
+    if re.search(r"\b(?:repartidores?|conductores? de aplicacion)\b", normalized):
+        security_signal = re.search(
+            r"\b(?:arma|armado|amenaz\w*|vandaliz\w*|robo|asalto|detienen|homicidio|balacera|agresion)\b",
+            normalized,
+        )
+        movement_signal = re.search(
+            r"\b(?:movilizacion(?:es)?|manifestacion(?:es)?|protest\w*|bloque(?:o|os|a|an|aron|ando|ado|ada|ados|adas|ar)|toman|calles? cerraran|afectacion vial)\b",
+            normalized,
+        )
+        if security_signal:
+            return "Seguridad"
+        if movement_signal:
+            return "Movilidad"
     # Manifestaciones, plantones y concentraciones anunciadas no son delitos.
     if (re.search(r"\bmovilizaciones\b", normalized)
             and re.search(r"\b(?:hoy|plantones|concentraciones|bloqueos|marchas)\b", normalized)
@@ -382,6 +402,21 @@ def standardize(article):
         "location": location,
     }
     result["local_url"] = local_link(result)
+    versions = article.get("alternate_versions")
+    if isinstance(versions, list):
+        preserved = []
+        for version in versions:
+            if not isinstance(version, dict) or version.get("url") != url:
+                continue
+            version_title = clean(version.get("title"))[:320]
+            version_date = str(version.get("date") or "")
+            if not version_title or not DAY_RE.fullmatch(version_date):
+                continue
+            preserved.append({
+                key: version[key] for key in ARCHIVE_VERSION_FIELDS if key in version
+            })
+        if preserved:
+            result["alternate_versions"] = preserved
     if curated:
         source_brief = article.get("brief")
         required = ("lead", "context", "pending", "method")
@@ -408,6 +443,67 @@ def standardize(article):
 
 def article_key(article):
     return fold(article.get("title", ""))[:250] + "|" + str(article.get("date", ""))
+
+
+def archive_record_key(article):
+    """Una sola ficha por URL y mes; los cambios de titular quedan preservados."""
+    month = str(article.get("date") or "")[:7]
+    url = str(article.get("url") or "").strip()
+    if MONTH_RE.fullmatch(month) and url:
+        return month, "url", url
+    return month, "title", article_key(article)
+
+
+def archive_version_snapshot(article):
+    return {
+        key: article[key] for key in ARCHIVE_VERSION_FIELDS if key in article
+    }
+
+
+def merge_archive_records(first, second):
+    """Consolida versiones del mismo enlace sin perder titulares ni metadatos."""
+    primary, other = (
+        (second, first) if sort_key(second) >= sort_key(first) else (first, second)
+    )
+    merged = dict(primary)
+    for field in ("photo", "borough", "location", "published_at", "brief", "description"):
+        if not merged.get(field) and other.get(field):
+            merged[field] = other[field]
+
+    versions = []
+    for record in (first, second):
+        if isinstance(record.get("alternate_versions"), list):
+            versions.extend(
+                version for version in record["alternate_versions"]
+                if isinstance(version, dict)
+            )
+        versions.append(archive_version_snapshot(record))
+
+    def signature(version):
+        brief = version.get("brief") if isinstance(version.get("brief"), dict) else {}
+        photo = version.get("photo") if isinstance(version.get("photo"), dict) else {}
+        return (
+            version.get("title"), version.get("date"), version.get("published_at"),
+            version.get("source"), version.get("category"), version.get("description"),
+            brief.get("lead"), photo.get("id"),
+        )
+
+    current_signature = signature(merged)
+    seen = set()
+    alternate_versions = []
+    for version in versions:
+        version_signature = signature(version)
+        if not version_signature[0] or version_signature == current_signature or version_signature in seen:
+            continue
+        seen.add(version_signature)
+        alternate_versions.append({
+            key: version[key] for key in ARCHIVE_VERSION_FIELDS if key in version
+        })
+    if alternate_versions:
+        merged["alternate_versions"] = alternate_versions
+    else:
+        merged.pop("alternate_versions", None)
+    return merged
 
 
 def gather():
@@ -513,20 +609,30 @@ def consolidate_archive(new_items, cutoff, updated):
         for raw in month.get("articles", []):
             item = standardize(raw)
             if item and still_valid(item, cutoff):
-                existing[article_key(item)] = item
+                key = archive_record_key(item)
+                if key in existing:
+                    existing[key] = merge_archive_records(existing[key], item)
+                else:
+                    existing[key] = item
     # Migrar el índice de la portada ANTES de sobrescribirlo.
     prior = load_json(DEST, {"articles": []})
     for raw in prior.get("articles", []):
         item = standardize(raw)
         if item and still_valid(item, cutoff):
-            existing.setdefault(article_key(item), item)
+            key = archive_record_key(item)
+            if key in existing:
+                existing[key] = merge_archive_records(existing[key], item)
+            else:
+                existing[key] = item
     for item in new_items:
         if still_valid(item, cutoff):
-            key = article_key(item)
+            key = archive_record_key(item)
             old = existing.get(key)
-            # Conservar el timestamp real cuando una versión antigua solo tenía fecha.
-            if not old or (item.get("published_at") and not old.get("published_at")):
+            if not old:
                 existing[key] = item
+            else:
+                # Conservar la versión más reciente y guardar las anteriores en el JSON.
+                existing[key] = merge_archive_records(old, item)
 
     # Reparar también fotografías antiguas incongruentes después de corregir
     # la clasificación RSS. Conservar fotografías del hecho verificadas.
