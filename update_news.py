@@ -269,6 +269,11 @@ def category_by_headline(title, feed_category):
     # El estado del Metrobús pertenece a Movilidad, no a la categoría general.
     if re.search(r"\bmetrobus\b", normalized):
         return "Movilidad"
+    # Los recortes presupuestales de apoyos públicos a población LGBTTTIQ+ son decisiones de Gobierno.
+    if (feed_category in {"CDMX", "Gobierno"}
+            and re.search(r"\b(?:lgbtttiq|lgbtq?|diversidad sexual)\b", normalized)
+            and re.search(r"\b(?:recorta|recorte|reduce|reduccion|disminuye|apoyo|presupuesto|beneficiarios|programa social|accion social)\b", normalized)):
+        return "Gobierno"
     # Un comunicado del EZLN sobre el gobierno no es una incidencia del Metro.
     if (re.search(r"\bezln\b", normalized)
             and re.search(r"\b(?:buscadoras?|gobierno|movilizacion)\b", normalized)):

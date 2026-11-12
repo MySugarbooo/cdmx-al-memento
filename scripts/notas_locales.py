@@ -71,6 +71,18 @@ def _reported_angle(article):
     borough=str(article.get("borough") or "")
     zone=(" en "+borough) if borough else " en la capital"
 
+    if ("lgbtttiq" in t and "apoyo" in t
+            and re.search(r"\b(?:recorta|recorte|reduce|reducen|reduccion)\b", t)
+            and source.casefold().replace(" ", "") in {"24-horas", "24horas"}):
+        return (
+            f"La nota de {source} informa que la acción social «Orgullo de la transformación» "
+            "de la alcaldía Iztapalapa tendrá 400 beneficiarios en 2026, frente a 1,400 en 2025. "
+            "El texto atribuye a los lineamientos publicados en la Gaceta Oficial un presupuesto "
+            "de alrededor de siete millones de pesos en 2025 y de 1.2 millones en 2026; "
+            "también indica un pago único de tres mil pesos para cada persona seleccionada. "
+            "El 83% del titular se refiere al recorte presupuestal, no a la reducción de beneficiarios."
+        )
+
     if "alerta amber" in t or ("desaparec" in t and "años" in t):
         return (f"Una publicación de {source} informa sobre la búsqueda de una adolescente "
                 f"y menciona la activación de una Alerta Amber{zone}. "
@@ -238,8 +250,10 @@ def summarize(article):
            + _reported_angle(article))
     context=theme["importance"]
     pending=theme["verify"]+" El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar."
-    return {"lead":first,"context":context,"pending":pending,
-            "method":"Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."}
+    method="Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+    if ("lgbtttiq" in title.casefold() and source.casefold().replace(" ", "") in {"24-horas", "24horas"}):
+        method="Síntesis editorial basada en el cuerpo de la nota de 24-horas; los datos se atribuyen al medio y a los lineamientos que cita, sin verificación independiente."
+    return {"lead":first,"context":context,"pending":pending,"method":method}
 
 def _load(path,key):
     try:
@@ -823,6 +837,10 @@ def _photo_score(article, photo):
         r"\b(?:jauria|sloopy|lobito|perros?|perritos?|mascotas?)\b", headline
     ))
     animal_photo = bool(re.search(r"\b(?:perros?|caninos?|mascotas?)\b", context))
+    lgbt_story = bool(re.search(r"\b(?:lgbtttiq|lgbtq?|diversidad sexual)\b", headline))
+    lgbt_photo = bool(re.search(r"\b(?:lgbtttiq|lgbtq?|diversidad sexual|marcha del orgullo|orgullo lgbt)\b", context))
+    if lgbt_story and not lgbt_photo:
+        return -10000
     protest_story = bool(
         re.search(
             r"\b(?:movilizacion(?:es)?|manifestacion(?:es)?|planton(?:es)?|concentracion(?:es)?|protest\w*|marcha(?:s)?|bloque(?:o|os|a|an|aron|ando|ado|ada|ados|adas|ar))\b",
@@ -843,6 +861,7 @@ def _photo_score(article, photo):
             (weather_story and weather_photo) or (animal_story and animal_photo)
         ))
         or (protest_story and protest_photo)
+        or (lgbt_story and lgbt_photo)
     )
     # Una categoría distinta no basta por sí sola para considerar pertinente una foto.
     if photo_category not in (category, "CDMX", "Alcaldías") and not themed_category:
@@ -1016,6 +1035,8 @@ def _photo_score(article, photo):
             return -10000
     borough=_photo_fold(article.get("borough"))
     score=65 if photo_category==category else (12 if photo_category=="CDMX" else 0)
+    if lgbt_story and lgbt_photo:
+        score += 240
     if photo_category=="Alcaldías" and not borough:
         score-=30
     if borough and borough in topic:

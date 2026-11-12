@@ -304,5 +304,54 @@ class NewsPhotoPolicyTests(unittest.TestCase):
         self.assertEqual(article["photo"]["kind"], "representativa")
 
 
+    def test_iztapalapa_lgbtttiq_support_cut_uses_government_and_pride_context(self):
+        title = "Iztapalapa recorta 83% el apoyo a población LGBTTTIQ+"
+        article = dict(
+            ARTICLE,
+            title=title,
+            source="24-horas",
+            category=update_news.category_by_headline(title, "CDMX"),
+            borough="Iztapalapa",
+            location="Iztapalapa (mencionada en el titular)",
+        )
+        self.assertEqual(article["category"], "Gobierno")
+
+        brief = photos.summarize(article)
+        self.assertIn("400 beneficiarios en 2026, frente a 1,400 en 2025", brief["lead"])
+        self.assertIn("siete millones de pesos en 2025 y de 1.2 millones en 2026", brief["lead"])
+        self.assertIn("83% del titular se refiere al recorte presupuestal", brief["lead"])
+        self.assertIn("cuerpo de la nota de 24-horas", brief["method"])
+
+        metro = dict(
+            context_photo("metro_iztapalapa"),
+            topic="Metro Iztapalapa 02",
+            category="Alcaldías",
+            keywords=["Iztapalapa Ciudad de México"],
+        )
+        pride = next(
+            (photo for photo in photos._pool()
+             if photo["id"] == "reciente_19fe4dac412af46a"),
+            None,
+        )
+        self.assertIsNotNone(pride)
+        self.assertEqual(pride["author"], "TSolange")
+        self.assertEqual(pride["license"], "CC BY-SA 4.0")
+        self.assertLess(photos._photo_score(article, metro), 0)
+        self.assertGreaterEqual(photos._photo_score(article, pride), 0)
+
+        with patch.object(photos, "_pool", return_value=[metro, pride]), patch.object(
+            photos,
+            "VERIFIED_EVENTS",
+            Path("/tmp/never-loaded-lgbtttiq-photo-registry.json"),
+        ):
+            stats = photos.assign_photos([article])
+
+        self.assertEqual(article["photo"]["id"], "reciente_19fe4dac412af46a")
+        self.assertEqual(article["photo"]["kind"], "representativa")
+        self.assertEqual(article["photo"]["author"], "TSolange")
+        self.assertEqual(article["photo"]["license"], "CC BY-SA 4.0")
+        self.assertEqual(stats["assigned"], 1)
+
+
 if __name__ == "__main__":
     unittest.main()
