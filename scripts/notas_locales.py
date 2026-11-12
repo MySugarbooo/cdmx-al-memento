@@ -667,7 +667,7 @@ STRICT_PHOTO_TOPICS = (
      r"\b(?:fuga de agua|tuberias?|reparacion|fontaneria|agua potable|red hidraulica)\b"),
     # "Asesinados" y "asesinadas" no coincidían con el patrón "asesinan".
     (r"\b(?:asesinad\w*|asesina(?:n)?|homicidios?|balacera|ataques? armados?)\b",
-     r"\b(?:fiscalia|investigacion penal|justicia|ministerio publico|peritos?|escena del crimen|operativo policial|repartidores?|conductores? de aplicacion|motociclistas?)\b"),
+     r"\b(?:policias?|patrullas?|fiscalia|investigacion penal|justicia|ministerio publico|peritos?|escena del crimen|operativo policial|repartidores?|conductores? de aplicacion|motociclistas?)\b"),
     # Fotos representativas deben corresponder al asunto, no solo a la ciudad.
     (r"\b(?:panteones?|cementerios?|camposantos?)\b",
      r"\b(?:panteones?|cementerios?|camposantos?|tumbas?|sepulturas?|ofrendas? funerarias?)\b"),
@@ -687,7 +687,7 @@ STRICT_PHOTO_TOPICS = (
      r"\b(?:manifestacion(?:es)?|protestas?|marchas?|bloqueos?|concentraciones?|movilizaciones?)\b"),
     # Una agresión letal no es una celebración ni una imagen genérica de rescate.
     (r"\b(?:ataques? armados?|balacera|asesina(?:n)?|asesinato)\b",
-     r"\b(?:fiscalia|investigacion penal|justicia|ministerio publico|peritos?|escena del crimen|operativo policial|repartidores?|conductores? de aplicacion|motociclistas?)\b"),
+     r"\b(?:policias?|patrullas?|fiscalia|investigacion penal|justicia|ministerio publico|peritos?|escena del crimen|operativo policial|repartidores?|conductores? de aplicacion|motociclistas?)\b"),
     # Un tiroteo no se ilustra con una graduación o ceremonia policial.
     (r"\b(?:balead\w*|balear\w*|balean|baleo)\b",
      r"\b(?:fiscalia|investigacion penal|justicia|ministerio publico|peritos?|escena del crimen|operativo policial)\b"),
