@@ -605,6 +605,9 @@ class NewsPhotoPolicyTests(unittest.TestCase):
         self.assertEqual(stored["author"], "Palacio Postal")
         self.assertEqual(stored["license"], "CC BY-SA 4.0")
         self.assertTrue(stored["source"].startswith("https://commons.wikimedia.org/wiki/File:"))
+        pooled = next(item for item in photos._pool() if item["id"] == "contexto_repartidores_motocicleta_cdmx")
+        self.assertEqual(pooled["author"], "Palacio Postal")
+        self.assertEqual(pooled["license"], "CC BY-SA 4.0")
 
 
 if __name__ == "__main__":
