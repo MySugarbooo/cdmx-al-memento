@@ -289,8 +289,8 @@ def category_by_headline(title, feed_category, source=""):
     """Corrige etiquetas RSS evidentes sin inventar ubicaciones o hechos."""
     normalized = fold(title)
     normalized_source = fold(source)
-    if (re.search(r"\\bautopista\\s+57\\b", normalized)
-            and re.search(r"\\b(?:detenida|cerrada|bloqueada|filas?|trafico|accidentes?)\\b", normalized)):
+    if (re.search(r"\bautopista\s+57\b", normalized)
+            and re.search(r"\b(?:detenida|cerrada|bloqueada|filas?|trafico|accidentes?)\b", normalized)):
         return "Movilidad"
     # Las explosiones y fugas de gas son emergencias de Seguridad, no CDMX genérico.
     if re.search(
