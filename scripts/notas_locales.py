@@ -666,6 +666,10 @@ STRICT_PHOTO_TOPICS = (
      r"\b(?:embajada|vacantes?|empleo|trabajo|oficinas?|alemania)\b"),
     (r"\bbeca de transporte\b",
      r"\b(?:becas?|universitarios?|estudiantes?|transporte|metro|autobuses?)\b"),
+    # Las notas sobre tuberías y pavimentación requieren contexto de drenaje u obra vial.
+    # Una calle genérica o una fotografía de carnavales no es una ilustración pertinente.
+    (r"\b(?:tuberias?|pavimentar|pavimentacion|pavimento|asfalto)\b",
+     r"\b(?:tuberias?|drenaje|pavimentacion|pavimento|asfalto|alcantarillas?|red hidraulica|infraestructura hidraulica|obra vial|desazolve|supervision de obras)\b"),
     # La rotura de una tubería no se representa con iglesias del mismo barrio.
     (r"\bfuga de agua\b",
      r"\b(?:fuga de agua|tuberias?|reparacion|fontaneria|agua potable|red hidraulica)\b"),
@@ -1055,6 +1059,14 @@ def _photo_score(article, photo):
         r"\b(?:movilizacion(?:es)?|manifestacion(?:es)?|planton(?:es)?|concentracion(?:es)?|protest\w*|manifestantes?|marcha(?:s)?|bloque(?:o|os|a|an|aron|ando|ado|ada|ados|adas|ar)|cacerolazo|repartidores?|trabajadores?|motociclistas?)\b",
         context,
     ))
+    infrastructure_story = bool(re.search(
+        r"\b(?:tuberias?|pavimentar|pavimentacion|pavimento|asfalto)\b",
+        headline,
+    ))
+    infrastructure_photo = bool(re.search(
+        r"\b(?:tuberias?|drenaje|pavimentacion|pavimento|asfalto|alcantarillas?|red hidraulica|infraestructura hidraulica|obra vial|desazolve|supervision de obras)\b",
+        context,
+    ))
     themed_category = (
         (photo_category == "Cultura" and music_story and music_photo)
         or (photo_category == "Medio Ambiente" and (
@@ -1062,6 +1074,7 @@ def _photo_score(article, photo):
         ))
         or (protest_story and protest_photo)
         or (lgbt_story and lgbt_photo)
+        or (infrastructure_story and infrastructure_photo)
     )
     # Una categoría distinta no basta por sí sola para considerar pertinente una foto.
     if photo_category not in (category, "CDMX", "Alcaldías") and not themed_category:
@@ -1265,6 +1278,8 @@ def _photo_score(article, photo):
             score+=80
     if category=="Metro" and metro_photo_line in metro_wanted_lines:
         score+=220
+    if infrastructure_story and infrastructure_photo:
+        score+=180
     return score
 
 

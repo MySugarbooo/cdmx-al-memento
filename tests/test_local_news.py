@@ -174,5 +174,30 @@ class LocalNewsTests(unittest.TestCase):
         title = "Agrupación de repartidores de aplicación documenta al menos 20 ataques armados en CDMX"
         self.assertEqual(category_by_headline(title, "CDMX", "La Jornada"), "Seguridad")
 
+    def test_pipes_before_paving_proposal_uses_drainage_or_public_works_photo(self):
+        article = {
+            "title": "Diputada Miriam Saldaña propone revisar las tuberías antes de pavimentar en la CDMX",
+            "url": "https://news.google.com/rss/articles/example-pipes-before-paving",
+            "source": "Partido del Trabajo",
+            "date": "2026-11-12",
+            "category": "CDMX",
+            "borough": "",
+        }
+        stats = assign_photos([article])
+        self.assertEqual(stats["assigned"], 1)
+        photo = article["photo"]
+        context = " ".join([photo.get("topic", ""), *photo.get("keywords", [])]).casefold()
+        self.assertRegex(
+            context,
+            r"\b(?:tuberias?|drenaje|pavimentacion|pavimento|asfalto|alcantarillas?|red hidraulica|infraestructura hidraulica|obra vial|desazolve|supervision de obras)\b",
+        )
+        self.assertNotRegex(context, r"\bcarnavales?\b")
+        self.assertEqual(photo["kind"], "representativa")
+        self.assertEqual(photo["category"], "Servicios")
+        self.assertTrue(photo["author"])
+        self.assertTrue(photo["license"])
+        self.assertTrue(photo["licenseUrl"])
+        self.assertTrue(photo["source"].startswith("https://commons.wikimedia.org/wiki/File:"))
+
 if __name__=="__main__":
     unittest.main()
