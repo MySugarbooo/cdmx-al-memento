@@ -799,5 +799,29 @@ class PhotoRelevanceTests(unittest.TestCase):
         self.assertEqual(stats["assigned"], 1)
 
 
+    def test_tame_impala_announcement_rejects_carnival_photo_without_music_context(self):
+        article = {
+            "title": "¡Tame Impala regresa a México en 2027! Dos noches en CDMX",
+            "category": "CDMX", "borough": "",
+        }
+        carnival = {
+            "id": "carnaval_cdmx",
+            "category": "CDMX",
+            "topic": "Declaratoria de Carnavales como Patrimonio Cultural Inmaterial de la Ciudad de México 13",
+            "keywords": ["carnavales", "cultura"],
+        }
+        music_stage = {
+            "id": "escenario_musical",
+            "category": "Cultura",
+            "topic": "Concierto de rock en escenario de CDMX",
+            "keywords": ["música en vivo", "banda", "rock"],
+        }
+        self.assertLess(_photo_score(article, carnival), 0)
+        self.assertGreaterEqual(_photo_score(article, music_stage), 0)
+        with patch.object(photos, "_pool", return_value=[carnival]):
+            assign_photos([article])
+        self.assertNotIn("photo", article)
+
+
 if __name__ == "__main__":
     unittest.main()
