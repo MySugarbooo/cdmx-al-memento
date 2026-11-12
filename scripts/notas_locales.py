@@ -939,6 +939,11 @@ def _photo_score(article, photo):
     topic=_photo_fold(photo.get("topic"))
     keywords=_photo_fold(" ".join(str(x) for x in photo.get("keywords",[])))
     context=topic+" "+keywords
+    if photo.get("id") == "contexto_carretera_guerrero" and not (
+        re.search(r"\bcarretera\b", headline)
+        and re.search(r"\bguerrero\b", headline)
+    ):
+        return -10000
     article_borough=_photo_fold(article.get("borough"))
     article_borough_key = next(
         (borough for borough, aliases in PHOTO_BOROUGH_ALIASES.items()
@@ -1172,9 +1177,21 @@ def _photo_score(article, photo):
     # para la pertinencia visual se prioriza el hecho principal antes de los dos puntos.
     gas_emergency = bool(re.search(STRICT_PHOTO_TOPICS[0][0], headline_for_photos))
     strict_headline = _photo_fold(raw_headline.split(":", 1)[0]) if gas_emergency else headline_for_photos
+    # Una noticia sobre carretera en Guerrero puede usar una foto contextual de esa misma región,
+    # aunque el titular también mencione protestas en CDMX. No es una foto del proyecto anunciado.
+    guerrero_road_story = bool(
+        re.search(r"\bcarretera\b", headline_for_photos)
+        and re.search(r"\bguerrero\b", headline_for_photos)
+    )
+    guerrero_road_photo = bool(
+        re.search(r"\bcarretera\b", context)
+        and re.search(r"\bguerrero\b", context)
+    )
     # El título y el descriptor deben compartir el asunto real de la nota.
     for headline_pattern, photo_pattern in STRICT_PHOTO_TOPICS:
         if re.search(headline_pattern, strict_headline) and not re.search(photo_pattern, context):
+            if "protest" in headline_pattern and guerrero_road_story and guerrero_road_photo:
+                continue
             return -10000
     # Una amenaza sin protesta requiere contexto de seguridad, no un simulacro.
     threat_story = bool(re.search(r"\b(?:amenaz\w*|vecino armado)\b", headline_for_photos))
@@ -1186,7 +1203,7 @@ def _photo_score(article, photo):
         return -10000
     # Una protesta sin componente ciclista no se ilustra con estaciones de EcoBici.
     # Sí conservar imágenes de rodadas cuando el titular las menciona expresamente.
-    if (re.search(r"\b(?:movilizaciones?|manifestaciones?|plantones?|concentraciones?)\b", headline)
+    if (re.search(r"\b(?:movilizaciones?|manifestaciones?|plantones?|concentraciones?|protest\w*|marchas?)\b", headline)
             and not re.search(r"\b(?:rodadas?|ciclistas?|bicicletas?|ecobici)\b", headline)
             and re.search(r"\b(?:ecobici\w*|bicicletas?|ciclistas?|rodadas?)\b", topic)
             and not re.search(r"\b(?:protestas?|manifestaciones?|marchas?|bloqueos?|plantones?)\b", topic)):
