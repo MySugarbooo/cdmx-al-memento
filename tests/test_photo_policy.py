@@ -165,13 +165,15 @@ class NewsPhotoPolicyTests(unittest.TestCase):
             ARTICLE, title=animal_title,
             url="https://news.google.com/rss/articles/animal-event-verified",
         )
-        registry.write_text(json.dumps({"photos": [
-            approval(article_url=animal_article["url"], article_title=animal_title)
-        ]}), encoding="utf-8")
-        with patch.object(photos, "_pool", return_value=[context_photo("conejo_bosque")]), patch.object(
-            photos, "VERIFIED_EVENTS", registry
-        ):
-            photos.assign_photos([animal_article])
+        with TemporaryDirectory() as animal_tmp:
+            animal_registry = Path(animal_tmp) / "hechos.json"
+            animal_registry.write_text(json.dumps({"photos": [
+                approval(article_url=animal_article["url"], article_title=animal_title)
+            ]}), encoding="utf-8")
+            with patch.object(photos, "_pool", return_value=[context_photo("conejo_bosque")]), patch.object(
+                photos, "VERIFIED_EVENTS", animal_registry
+            ):
+                photos.assign_photos([animal_article])
         self.assertEqual(animal_article["photo"]["kind"], "hecho")
         self.assertTrue(animal_article["photo"]["verified"])
 
