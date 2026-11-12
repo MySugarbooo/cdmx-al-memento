@@ -136,8 +136,8 @@ def _reported_angle(article):
     # comunicado municipal Com. 1217/2026, sin atribuir el hecho a la capital.
     if (article.get("date") == "2026-11-12"
             and "paseo tollocan" in t
-            and re.search(r"\\bpipa\\b", t)
-            and re.search(r"\\b(?:volcadur|vuelc)\\w*\\b", t)):
+            and re.search(r"\bpipa\b", t)
+            and re.search(r"\b(?:volcadur|vuelc)\w*\b", t)):
         return (
             f"De acuerdo con {source}, se reporta la volcadura de una pipa en Paseo Tollocan "
             "con dirección a la Ciudad de México. SéUno Noticias ubica el hecho en los carriles "
@@ -321,8 +321,8 @@ def summarize(article):
     method="Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
     if (article.get("date") == "2026-11-12"
             and "paseo tollocan" in title.casefold()
-            and re.search(r"\\bpipa\\b", title.casefold())
-            and re.search(r"\\b(?:volcadur|vuelc)\\w*\\b", title.casefold())):
+            and re.search(r"\bpipa\b", title.casefold())
+            and re.search(r"\b(?:volcadur|vuelc)\w*\b", title.casefold())):
         return {
             "lead": first,
             "context": (
