@@ -88,6 +88,27 @@ class LocalNewsTests(unittest.TestCase):
         security_title = "Detienen a un hombre tras operativo del Gobierno de la Ciudad de México"
         self.assertEqual(category_by_headline(security_title, "CDMX"), "Seguridad")
 
+    def test_ssc_buen_fin_operativo_is_security_and_uses_official_facts(self):
+        title = ("2999: La SSC implementará un operativo de seguridad, vigilancia y vialidad "
+                 "por el “Buen Fin 2026”, con la participación más de 16 mil policías en la ciudad de México")
+        source = "Secretaría de Seguridad Ciudadana de la CDMX"
+        self.assertEqual(category_by_headline(title, "Metro", source), "Seguridad")
+        article = {
+            "title": title,
+            "url": "https://news.google.com/rss/articles/example-ssc-buen-fin",
+            "source": source,
+            "date": "2026-11-11",
+            "category": "Seguridad",
+            "borough": "",
+        }
+        brief = summarize(article)
+        self.assertIn("16,300 policías", brief["lead"])
+        self.assertIn("16 alcaldías", brief["lead"])
+        self.assertIn("13 al 17 de noviembre de 2026", brief["lead"])
+        self.assertIn("comunicado oficial de la SSC", brief["method"])
+        self.assertNotIn("clasifica como Metro", brief["lead"])
+        self.assertIn("seguridad", brief["context"].casefold())
+
     def test_reader_is_internal_and_signed(self):
         html=(ROOT/"noticias/index.html").read_text(encoding="utf-8")
         js=(ROOT/"assets/noticias-locales.js").read_text(encoding="utf-8")
