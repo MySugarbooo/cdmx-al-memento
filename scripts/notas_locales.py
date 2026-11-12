@@ -118,7 +118,7 @@ def _reported_angle(article):
             and re.search(r"\bpipa\b", t)
             and re.search(r"m[eé]xico[- ]pachuca", t)):
         return (
-            f"Las coberturas de El Sol de México, La Jornada, UnoTV y DigitalMex ubican la volcadura "
+            f"Las coberturas de El Sol de México, La Jornada, UnoTV y DigitalMex ubican la volcadura de una pipa de gas "
             "en la autopista México-Pachuca, a la altura de San Pedro Xalostoc/Santa Clara, "
             "Ecatepec, Estado de México. La afectación fue en dirección a la Ciudad de México; "
             "el hecho ocurrió fuera de la capital. No añadimos causas ni un saldo distinto al "
