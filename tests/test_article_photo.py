@@ -57,6 +57,25 @@ class ArticlePhotoTests(unittest.TestCase):
         page = render(item, "15c774326c62e64d619e")
         self.assertIn("Sin fotografía verificada del hecho", page)
         self.assertNotIn('src="/assets/fotos/archivo_seguridad_003.jpg"', page)
+    def test_animal_cruelty_story_hides_generic_animal_photo(self):
+        item = {
+            "title": "Detienen a acusado de maltrato animal en Tlalpan",
+            "category": "Seguridad",
+            "local_url": "/noticias/?id=50c470b90270a39d9138&mes=2026-11",
+            "photo": {
+                "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Animales_Bosque_de_Tlalpan_07.JPG/960px-Animales_Bosque_de_Tlalpan_07.JPG",
+                "kind": "representativa",
+                "author": "Inakiherrasti",
+                "license": "CC BY-SA 4.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "https://commons.wikimedia.org/wiki/File:Animales_Bosque_de_Tlalpan_07.JPG",
+            },
+        }
+        self.assertEqual(render_photo(item), "")
+        page = render(item, "50c470b90270a39d9138")
+        self.assertIn("Sin fotografía verificada del hecho", page)
+        self.assertNotIn("Animales_Bosque_de_Tlalpan_07", page)
+
 
     def test_sensitive_story_allows_only_verified_event_photo(self):
         item = {
