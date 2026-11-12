@@ -43,6 +43,24 @@ class LocalNewsTests(unittest.TestCase):
         self.assertIn("titular",brief["method"])
         self.assertNotIn("entrevistamos",brief["lead"])
 
+    def test_tv_azteca_liveblog_does_not_misattribute_google_news_headline(self):
+        article = {
+            "title": "Explosión de gas en local de Azcapotzalco: Baches, socavones y otras afectaciones en CDMX hoy",
+            "url": "https://news.google.com/rss/articles/example-tvazteca-liveblog",
+            "source": "TV Azteca",
+            "date": "2026-11-11",
+            "category": "Seguridad",
+            "borough": "Azcapotzalco",
+        }
+        brief = summarize(article)
+        self.assertIn("Google News muestra el encabezado", brief["lead"])
+        self.assertIn("Accidentes, afectaciones y percances en CDMX | EN VIVO", brief["lead"])
+        self.assertIn("actualización del 11 de noviembre de 2026 a las 20:17", brief["lead"])
+        self.assertIn("explosión por acumulación de gas", brief["lead"])
+        self.assertNotIn("el titular publicado es", brief["lead"].casefold())
+        self.assertIn("otros percances viales", brief["context"])
+        self.assertIn("no constituye verificación independiente", brief["method"])
+
     def test_fatal_microbus_headline_is_not_described_as_unknown_outcome(self):
         article = {
             "title": "Microbús Atropella y Mata a un Hombre en Situación de Calle en Azcapotzalco",
