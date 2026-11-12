@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-12 21:22 UTC",
+  "updated": "2026-11-12 21:26 UTC",
   "boroughs": [
     {
       "name": "La Magdalena Contreras",
@@ -550,6 +550,21 @@
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "commons_109733597",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/MX_NS_LA_MAGDALENA_CONTRERAS_07.jpg/960px-MX_NS_LA_MAGDALENA_CONTRERAS_07.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "category": "Alcaldías",
+            "borough": "",
+            "topic": "MX NS LA MAGDALENA CONTRERAS 07",
+            "keywords": [
+              "Magdalena Contreras Ciudad de México"
+            ],
+            "author": "Secretaría de Cultura CDMX",
+            "license": "CC BY 2.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+            "source": "https://commons.wikimedia.org/wiki/File:MX_NS_LA_MAGDALENA_CONTRERAS_07.jpg"
           }
         },
         {
@@ -5647,12 +5662,6 @@
           "borough": "Cuajimalpa de Morelos",
           "location": "Cuajimalpa de Morelos (mencionada en el titular)",
           "local_url": "/noticias/?id=b7eb6c7d3a18f4ec96fe&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con La Jornada, el titular publicado es: «Refugio Franciscano busca frenar diligencia judicial en predio de Cuajimalpa». La información publicada por La Jornada aborda un asunto que este portal clasifica como Gobierno. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Las decisiones administrativas pueden influir en servicios, trámites y derechos; conviene conocer sus condiciones y a quiénes afectan.",
-            "pending": "Es indispensable consultar los acuerdos, comunicados o documentos oficiales antes de dar una medida por vigente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
           "alternate_versions": [
             {
               "title": "Refugio Franciscano busca frenar diligencia judicial en predio de Cuajimalpa",
@@ -5720,7 +5729,13 @@
                 "source": "https://commons.wikimedia.org/wiki/File:Animales_Bosque_de_Tlalpan_03.JPG"
               }
             }
-          ]
+          ],
+          "brief": {
+            "lead": "De acuerdo con La Jornada, el titular publicado es: «Refugio Franciscano busca frenar diligencia judicial en predio de Cuajimalpa». La información publicada por La Jornada aborda un asunto que este portal clasifica como Gobierno. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Las decisiones administrativas pueden influir en servicios, trámites y derechos; conviene conocer sus condiciones y a quiénes afectan.",
+            "pending": "Es indispensable consultar los acuerdos, comunicados o documentos oficiales antes de dar una medida por vigente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          }
         },
         {
           "title": "Clima en Cuajimalpa de Morelos este miércoles 11 de noviembre: Temperaturas templadas y cielo nublado",
@@ -10306,6 +10321,18 @@
             "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           },
+          "photo": {
+            "id": "archivo_seguridad_015",
+            "kind": "representativa",
+            "url": "/assets/fotos/archivo_seguridad_015.jpg",
+            "category": "Seguridad",
+            "borough": "",
+            "topic": "Claudia Sheinbaum entrega patrullas Iztapalapa 01",
+            "author": "Gobierno de la Ciudad de México",
+            "license": "CC BY 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Claudia_Sheinbaum_entrega_patrullas_Iztapalapa_01.jpg"
+          },
           "alternate_versions": [
             {
               "title": "Video: Sujetos roban figura de la Virgen de Guadalupe en Iztapalapa, CDMX",
@@ -10366,20 +10393,38 @@
                 "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
                 "source": "https://commons.wikimedia.org/wiki/File:MX_MM_MUSEO_CERRO_DE_LA_ESTRELLA_%2849522225751%29.jpg"
               }
+            },
+            {
+              "title": "Video: Sujetos roban figura de la Virgen de Guadalupe en Iztapalapa, CDMX",
+              "description": "De acuerdo con Quinta Fuerza, el titular publicado es: «Video: Sujetos roban figura de la Virgen de Guadalupe en Iztapalapa, CDMX». La información publicada por Quinta Fuerza aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+              "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQYzByLUg2emRPQzE1R25taUNNZDJvQzZlUHNMVWpac1RKTnJWNE52UjE2NUFiOVJmLS15ZlBKVVhtSEVYbTF2ZEpFZElUQmU0cTd0TlpDSmxkSVZJM1dhTnYyNXNhRUwzWTN5cTltaXlzdDBlRFVzVFY5SW1nTFk4all5Wi0xcHpyc19jclpqQUdEblRp?oc=5",
+              "source": "Quinta Fuerza",
+              "date": "2026-11-10",
+              "published_at": "2026-11-10T14:23:03Z",
+              "category": "Seguridad",
+              "borough": "Iztapalapa",
+              "location": "Iztapalapa (mencionada en el titular)",
+              "local_url": "/noticias/?id=b5283e972f145575be47&mes=2026-11",
+              "brief": {
+                "lead": "De acuerdo con Quinta Fuerza, el titular publicado es: «Video: Sujetos roban figura de la Virgen de Guadalupe en Iztapalapa, CDMX». La información publicada por Quinta Fuerza aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+                "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+                "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+              },
+              "photo": {
+                "id": "archivo_seguridad_015",
+                "kind": "representativa",
+                "url": "/assets/fotos/archivo_seguridad_015.jpg",
+                "category": "Seguridad",
+                "borough": "",
+                "topic": "Claudia Sheinbaum entrega patrullas Iztapalapa 01",
+                "author": "Gobierno de la Ciudad de México",
+                "license": "CC BY 4.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+                "source": "https://commons.wikimedia.org/wiki/File:Claudia_Sheinbaum_entrega_patrullas_Iztapalapa_01.jpg"
+              }
             }
-          ],
-          "photo": {
-            "id": "archivo_seguridad_015",
-            "kind": "representativa",
-            "url": "/assets/fotos/archivo_seguridad_015.jpg",
-            "category": "Seguridad",
-            "borough": "",
-            "topic": "Claudia Sheinbaum entrega patrullas Iztapalapa 01",
-            "author": "Gobierno de la Ciudad de México",
-            "license": "CC BY 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Claudia_Sheinbaum_entrega_patrullas_Iztapalapa_01.jpg"
-          }
+          ]
         },
         {
           "title": "El PAN sí existe en Iztapalapa",
@@ -12621,12 +12666,6 @@
           "borough": "Tláhuac",
           "location": "Tláhuac (mencionada en el titular)",
           "local_url": "/noticias/?id=e423f367cb96b3dccbda&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con Agencia de Noticias NVM, el titular publicado es: «Capturan a tres tras cateos en Tláhuac | Agencia NVM». La información publicada por Agencia de Noticias NVM aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
-            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
           "alternate_versions": [
             {
               "title": "Capturan a tres tras cateos en Tláhuac | Agencia NVM",
@@ -12646,7 +12685,13 @@
                 "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
               }
             }
-          ]
+          ],
+          "brief": {
+            "lead": "De acuerdo con Agencia de Noticias NVM, el titular publicado es: «Capturan a tres tras cateos en Tláhuac | Agencia NVM». La información publicada por Agencia de Noticias NVM aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          }
         },
         {
           "title": "Clima y pronóstico en Tláhuac para este jueves 12 de noviembre: Lluvias ligeras",
@@ -12677,27 +12722,6 @@
           "borough": "Tláhuac",
           "location": "Tláhuac (mencionada en el titular)",
           "local_url": "/noticias/?id=38640ee4044a9a4c0767&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con Diario CDMX, el titular publicado es: «Más de 3 millones de visitantes disfrutaron del Festival Internacional de Día de Muertos Tláhuac 2026». La información publicada por Diario CDMX aborda un asunto que este portal clasifica como Cultura. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "La actividad cultural abre oportunidades de encuentro, aprendizaje y disfrute para habitantes y visitantes.",
-            "pending": "Los accesos, boletos, sedes, cupos y horarios deben consultarse con la institución organizadora. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "reciente_d3bf2851210c8f52",
-            "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Desfile_de_Catrinas_in_Mexico_City_2026_%2853%29.jpg/1280px-Desfile_de_Catrinas_in_Mexico_City_2026_%2853%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "category": "CDMX",
-            "borough": "",
-            "topic": "Desfile de Catrinas in Mexico City 2026 (53)",
-            "keywords": [
-              "CDMX"
-            ],
-            "author": "Gedankenstuecke",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Desfile_de_Catrinas_in_Mexico_City_2026_(53).jpg"
-          },
           "alternate_versions": [
             {
               "title": "Más de 3 millones de visitantes disfrutaron del Festival Internacional de Día de Muertos Tláhuac 2026",
@@ -12825,7 +12849,28 @@
                 "source": "https://commons.wikimedia.org/wiki/File:Desfile_de_Catrinas_in_Mexico_City_2026_(53).jpg"
               }
             }
-          ]
+          ],
+          "brief": {
+            "lead": "De acuerdo con Diario CDMX, el titular publicado es: «Más de 3 millones de visitantes disfrutaron del Festival Internacional de Día de Muertos Tláhuac 2026». La información publicada por Diario CDMX aborda un asunto que este portal clasifica como Cultura. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "La actividad cultural abre oportunidades de encuentro, aprendizaje y disfrute para habitantes y visitantes.",
+            "pending": "Los accesos, boletos, sedes, cupos y horarios deben consultarse con la institución organizadora. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "reciente_d3bf2851210c8f52",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Desfile_de_Catrinas_in_Mexico_City_2026_%2853%29.jpg/1280px-Desfile_de_Catrinas_in_Mexico_City_2026_%2853%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "category": "CDMX",
+            "borough": "",
+            "topic": "Desfile de Catrinas in Mexico City 2026 (53)",
+            "keywords": [
+              "CDMX"
+            ],
+            "author": "Gedankenstuecke",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Desfile_de_Catrinas_in_Mexico_City_2026_(53).jpg"
+          }
         },
         {
           "title": "Clima en Tláhuac hoy: Miércoles 11 de noviembre con nubes y ambiente templado",
@@ -14326,8 +14371,27 @@
     },
     {
       "name": "Tlalpan",
-      "count": 211,
+      "count": 213,
       "articles": [
+        {
+          "title": "Vecinos rescatan a perrita de presunto abuso sexual por un hombre en Tlalpan, CDMX",
+          "description": "De acuerdo con Imagen Televisión, el titular publicado es: «Vecinos rescatan a perrita de presunto abuso sexual por un hombre en Tlalpan, CDMX». La información publicada por Imagen Televisión aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNUEQ2cV9wblUya0JiMGd0ZWotSk4xakZoa3ZzUHJkYlgwcVpJbzFQZkI0R29TVURoTF9WM2VSN2xqTng4RlhCV3dsaEpPeDg1ZWsyc0NNcnh4R29HSHF3Sm5FcnJiUFZCYkhiZklGMTlSb1VoSGFEVVNDLTU0ZEp2UjUyamNjMU1TTlk1ZHBGZnVHMkFCck1mVDhRTmZSbG03eS1mNXlmOFcxRFNVQU5tVW9XYmVLc2NURUdKYlJnVmFzb2xkUzZuZ3loN0xkZl94QVJMb3BzS3U?oc=5",
+          "source": "Imagen Televisión",
+          "date": "2026-11-12",
+          "published_at": "2026-11-12T21:07:53Z",
+          "category": "CDMX",
+          "borough": "Tlalpan",
+          "location": "Tlalpan (mencionada en el titular)",
+          "local_url": "/noticias/?id=8968609f9ea33ca00007&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con Imagen Televisión, el titular publicado es: «Vecinos rescatan a perrita de presunto abuso sexual por un hombre en Tlalpan, CDMX». La información publicada por Imagen Televisión aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "sensitive_media": true
+        },
         {
           "title": "Detienen a hombre acusado de maltratar perros en CDMX tras recibir golpiza de vecinos en Tlalpan",
           "description": "De acuerdo con Expansión Política, el titular publicado es: «Detienen a hombre acusado de maltratar perros en CDMX tras recibir golpiza de vecinos en Tlalpan». Una nota de Expansión Política comunica un caso relacionado con una detención o una presunta conducta delictiva en Tlalpan. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
@@ -14362,6 +14426,94 @@
           }
         },
         {
+          "title": "Detienen a presunto abusador sexual de animales en situación de calle en CDMX: activistas piden que las investigaciones lleguen a fondo",
+          "description": "Infobae informó que la SSC detuvo a un hombre tras un reporte de agresión en la colonia Pedregal de San Nicolás Cuarta Sección, alcaldía Tlalpan. La nota recoge señalamientos de vecinos y activistas por presunta violencia contra animales; la responsabilidad no está establecida y corresponde a las autoridades determinarla.",
+          "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxPSXVkQ1ZPWkZMSDVzVml6NXNfTGFpVnFCaVFWc0dBMGEwaWFVSjJ0SHlUc1VTemtjeXUzYkJiQWd2eEw3a2ZIMEFWay1hdGVCaFhPU3pkYzNJb3BMemNlZkhUSVlHWUJyRUJRNkZ2ZGRESVBsZVNCREdNSG5VVUZ5RjBZZXlqMjQwSEs0ZjBZdmFDQml2YXctNDE1NkJlcm1DWG9GY1FVZWszaXVRVVRxeS1hYWFSanBEVkZ3SDRDWUljY1F1NU93RjZoTlZaU2VJdUVacDItc0FyNF9halpOTFgyRm1HNnlrNlB4NEtybmttWGZ0RnZUVkstZkM3ZEYxVlliakNOX1bSAaMCQVVfeXFMTWViNFhLekl3bHBQbmxGYmlQTFpVcGJCOXdDMy1wdl8wNlJnTjFXTXJtRWhwR0NWb2k1UDRmWUhxa1VGMm5HcjNmZjlKZUw3YUtPZFJ1Vmswd3Uwdk0tMkxKbGxNZ0t1b3VqX2N0VGdlMU1RNlZYQXhrRTJPaE5sTUVpTFBsLXAwZ2pUVkl5YmxZS3VwbDhGeTE3OUFrWDRtc3I0aGptSWJhbk14d0ZFZjJTVHVxY3Z4TWZnUXJHMzFEN3Q3VWxCeHBjUFNmVmkxaFdoaWlGWXdmSFk4bFNzdlpjQ1AzZW92T3FncGVDUVhEVkFaeVloUEV0NndRalNqWXNZMWRNWlEtcUNFTDRQRWxEbjlFSjlwaDZsZm1kQnBJTTBF?oc=5",
+          "source": "Infobae",
+          "date": "2026-11-12",
+          "published_at": "2026-11-12T19:57:00Z",
+          "category": "Seguridad",
+          "borough": "Tlalpan",
+          "location": "Tlalpan (confirmada en la nota original)",
+          "local_url": "/noticias/?id=086a68086514ac4b9e44&mes=2026-11",
+          "source_url": "https://www.infobae.com/mexico/2026/11/12/detienen-a-presunto-abusador-sexual-de-animales-en-situacion-de-calle-en-cdmx-activistas-piden-que-las-investigaciones-lleguen-a-fondo/",
+          "brief": {
+            "lead": "Infobae informó que la SSC detuvo a un hombre tras un reporte de agresión en la colonia Pedregal de San Nicolás Cuarta Sección, alcaldía Tlalpan. La nota recoge señalamientos de vecinos y activistas por presunta violencia contra animales; la responsabilidad no está establecida y corresponde a las autoridades determinarla.",
+            "context": "El caso se ubica en Tlalpan. La detención informada por la SSC debe distinguirse de los señalamientos de vecinos y activistas, que siguen sujetos a investigación.",
+            "pending": "La situación jurídica del detenido y el estado de las denuncias ante PAOT y FGJCDMX deben confirmarse con esas autoridades.",
+            "method": "Síntesis editorial basada en Infobae, 12 de noviembre de 2026: https://www.infobae.com/mexico/2026/11/12/detienen-a-presunto-abusador-sexual-de-animales-en-situacion-de-calle-en-cdmx-activistas-piden-que-las-investigaciones-lleguen-a-fondo/. Se distingue la detención informada por la SSC de los señalamientos de terceros; no se presentan como hechos probados."
+          },
+          "sensitive_media": true,
+          "alternate_versions": [
+            {
+              "title": "Detienen a presunto abusador sexual de animales en situación de calle en CDMX: activistas piden que las investigaciones lleguen a fondo",
+              "description": "De acuerdo con Infobae, el titular publicado es: «Detienen a presunto abusador sexual de animales en situación de calle en CDMX: activistas piden que las investigaciones lleguen a fondo». Una nota de Infobae comunica un caso relacionado con una detención o una presunta conducta delictiva en la capital. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
+              "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxPSXVkQ1ZPWkZMSDVzVml6NXNfTGFpVnFCaVFWc0dBMGEwaWFVSjJ0SHlUc1VTemtjeXUzYkJiQWd2eEw3a2ZIMEFWay1hdGVCaFhPU3pkYzNJb3BMemNlZkhUSVlHWUJyRUJRNkZ2ZGRESVBsZVNCREdNSG5VVUZ5RjBZZXlqMjQwSEs0ZjBZdmFDQml2YXctNDE1NkJlcm1DWG9GY1FVZWszaXVRVVRxeS1hYWFSanBEVkZ3SDRDWUljY1F1NU93RjZoTlZaU2VJdUVacDItc0FyNF9halpOTFgyRm1HNnlrNlB4NEtybmttWGZ0RnZUVkstZkM3ZEYxVlliakNOX1bSAaMCQVVfeXFMTWViNFhLekl3bHBQbmxGYmlQTFpVcGJCOXdDMy1wdl8wNlJnTjFXTXJtRWhwR0NWb2k1UDRmWUhxa1VGMm5HcjNmZjlKZUw3YUtPZFJ1Vmswd3Uwdk0tMkxKbGxNZ0t1b3VqX2N0VGdlMU1RNlZYQXhrRTJPaE5sTUVpTFBsLXAwZ2pUVkl5YmxZS3VwbDhGeTE3OUFrWDRtc3I0aGptSWJhbk14d0ZFZjJTVHVxY3Z4TWZnUXJHMzFEN3Q3VWxCeHBjUFNmVmkxaFdoaWlGWXdmSFk4bFNzdlpjQ1AzZW92T3FncGVDUVhEVkFaeVloUEV0NndRalNqWXNZMWRNWlEtcUNFTDRQRWxEbjlFSjlwaDZsZm1kQnBJTTBF?oc=5",
+              "source": "Infobae",
+              "date": "2026-11-12",
+              "published_at": "2026-11-12T19:57:00Z",
+              "category": "Metro",
+              "borough": "",
+              "location": "Ciudad de México (sin alcaldía identificada)",
+              "local_url": "/noticias/?id=086a68086514ac4b9e44&mes=2026-11",
+              "brief": {
+                "lead": "De acuerdo con Infobae, el titular publicado es: «Detienen a presunto abusador sexual de animales en situación de calle en CDMX: activistas piden que las investigaciones lleguen a fondo». Una nota de Infobae comunica un caso relacionado con una detención o una presunta conducta delictiva en la capital. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
+                "context": "Los cambios en este sistema pueden afectar los horarios, las conexiones y la planeación de los viajes cotidianos.",
+                "pending": "El estado operativo, las estaciones y las alternativas de traslado deben comprobarse en los avisos actuales del Metro. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+              },
+              "photo": {
+                "id": "commons_35624633",
+                "kind": "representativa",
+                "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Animales_Bosque_de_Tlalpan_08.JPG/960px-Animales_Bosque_de_Tlalpan_08.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+                "category": "Alcaldías",
+                "borough": "",
+                "topic": "Animales Bosque de Tlalpan 08",
+                "keywords": [
+                  "Tlalpan Ciudad de México"
+                ],
+                "author": "Inakiherrasti",
+                "license": "CC BY-SA 4.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "https://commons.wikimedia.org/wiki/File:Animales_Bosque_de_Tlalpan_08.JPG"
+              }
+            },
+            {
+              "title": "Detienen a presunto abusador sexual de animales en situación de calle en CDMX: activistas piden que las investigaciones lleguen a fondo",
+              "description": "De acuerdo con Infobae, el titular publicado es: «Detienen a presunto abusador sexual de animales en situación de calle en CDMX: activistas piden que las investigaciones lleguen a fondo». Una nota de Infobae comunica un caso relacionado con una detención o una presunta conducta delictiva en la capital. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
+              "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxPSXVkQ1ZPWkZMSDVzVml6NXNfTGFpVnFCaVFWc0dBMGEwaWFVSjJ0SHlUc1VTemtjeXUzYkJiQWd2eEw3a2ZIMEFWay1hdGVCaFhPU3pkYzNJb3BMemNlZkhUSVlHWUJyRUJRNkZ2ZGRESVBsZVNCREdNSG5VVUZ5RjBZZXlqMjQwSEs0ZjBZdmFDQml2YXctNDE1NkJlcm1DWG9GY1FVZWszaXVRVVRxeS1hYWFSanBEVkZ3SDRDWUljY1F1NU93RjZoTlZaU2VJdUVacDItc0FyNF9halpOTFgyRm1HNnlrNlB4NEtybmttWGZ0RnZUVkstZkM3ZEYxVlliakNOX1bSAaMCQVVfeXFMTWViNFhLekl3bHBQbmxGYmlQTFpVcGJCOXdDMy1wdl8wNlJnTjFXTXJtRWhwR0NWb2k1UDRmWUhxa1VGMm5HcjNmZjlKZUw3YUtPZFJ1Vmswd3Uwdk0tMkxKbGxNZ0t1b3VqX2N0VGdlMU1RNlZYQXhrRTJPaE5sTUVpTFBsLXAwZ2pUVkl5YmxZS3VwbDhGeTE3OUFrWDRtc3I0aGptSWJhbk14d0ZFZjJTVHVxY3Z4TWZnUXJHMzFEN3Q3VWxCeHBjUFNmVmkxaFdoaWlGWXdmSFk4bFNzdlpjQ1AzZW92T3FncGVDUVhEVkFaeVloUEV0NndRalNqWXNZMWRNWlEtcUNFTDRQRWxEbjlFSjlwaDZsZm1kQnBJTTBF?oc=5",
+              "source": "Infobae",
+              "date": "2026-11-12",
+              "published_at": "2026-11-12T19:57:00Z",
+              "category": "Seguridad",
+              "borough": "",
+              "location": "Ciudad de México (sin alcaldía identificada)",
+              "local_url": "/noticias/?id=086a68086514ac4b9e44&mes=2026-11",
+              "brief": {
+                "lead": "De acuerdo con Infobae, el titular publicado es: «Detienen a presunto abusador sexual de animales en situación de calle en CDMX: activistas piden que las investigaciones lleguen a fondo». Una nota de Infobae comunica un caso relacionado con una detención o una presunta conducta delictiva en la capital. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
+                "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+                "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+              },
+              "photo": {
+                "id": "commons_35624628",
+                "kind": "representativa",
+                "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Animales_Bosque_de_Tlalpan_01.JPG/960px-Animales_Bosque_de_Tlalpan_01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+                "category": "Alcaldías",
+                "borough": "",
+                "topic": "Animales Bosque de Tlalpan 01",
+                "keywords": [
+                  "Tlalpan Ciudad de México"
+                ],
+                "author": "Inakiherrasti",
+                "license": "CC BY-SA 4.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "https://commons.wikimedia.org/wiki/File:Animales_Bosque_de_Tlalpan_01.JPG"
+              }
+            }
+          ]
+        },
+        {
           "title": "Detienen a adulto mayor por maltrato animal en Tlalpan",
           "description": "De acuerdo con Reforma, el titular publicado es: «Detienen a adulto mayor por maltrato animal en Tlalpan». Una nota de Reforma comunica un caso relacionado con una detención o una presunta conducta delictiva en Tlalpan. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
           "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPQk9RWmNZNHJjSm9KbU1NMmJKTWF4YWJYY3FObTNuOTlkVlJrY0JrdGJGeUdTd2JSUVE1eWtSQ2FqSHdPR1djeTlveVo3UW1RMlY3MzBQNFU1Rld1VTFLNVpRS1pRNjVnTTBWU21lX2FPTjdqQXdvT1dwZjZCMHg4a2JqV2lKbmxtZV9kMkd6MDc3UQ?oc=5",
@@ -14382,20 +14534,21 @@
         },
         {
           "title": "Detienen a otro presunto maltratador de animales en Tlalpan",
-          "description": "De acuerdo con El Sol de México, el titular publicado es: «Detienen a otro presunto maltratador de animales en Tlalpan». Una nota de El Sol de México comunica un caso relacionado con una detención o una presunta conducta delictiva en Tlalpan. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
+          "description": "La Prensa informó que efectivos de la SSC intervinieron para rescatar a un hombre de ser linchado y lo pusieron a disposición del Ministerio Público. El titular relaciona la detención con presuntos señalamientos de maltrato animal en Tlalpan; no se trata de una sentencia.",
           "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQazczY2xhczU2emVhMzZobG9lNGNYWm0zcHJWR19GLUJTT2s4UnRVd0lFemJ4OV9WLWdtcTNKcms1SV9DZ0VZZjlCdUhLSGdFYjN3elBRX3dGcktMRmpzckdUbnRGdXFkUGlqUURPeTVKN1p2SDU0X1JtazhwMWFNMVRtNUE5QkNUZHBKSkRDdVJYX2xTNlFDdXN0clRsMjBzMHlONGVLZmoxeVk?oc=5",
-          "source": "El Sol de México",
+          "source": "La Prensa",
           "date": "2026-11-12",
           "published_at": "2026-11-12T17:21:11Z",
           "category": "Seguridad",
           "borough": "Tlalpan",
           "location": "Tlalpan (mencionada en el titular)",
           "local_url": "/noticias/?id=00c19362c5f0468f82b1&mes=2026-11",
+          "source_url": "https://oem.com.mx/la-prensa/policiaca/detienen-a-otro-presunto-maltratador-de-animales-en-tlalpan-33095643",
           "brief": {
-            "lead": "De acuerdo con El Sol de México, el titular publicado es: «Detienen a otro presunto maltratador de animales en Tlalpan». Una nota de El Sol de México comunica un caso relacionado con una detención o una presunta conducta delictiva en Tlalpan. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
-            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
-            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+            "lead": "La Prensa informó que efectivos de la SSC intervinieron para rescatar a un hombre de ser linchado y lo pusieron a disposición del Ministerio Público. El titular relaciona la detención con presuntos señalamientos de maltrato animal en Tlalpan; no se trata de una sentencia.",
+            "context": "El caso se ubica en Tlalpan y debe informarse como una detención por señalamientos, no como una responsabilidad probada.",
+            "pending": "La situación jurídica del detenido y el avance de la investigación deben confirmarse con la SSC y la FGJCDMX.",
+            "method": "Síntesis editorial basada en la publicación de La Prensa del 12 de noviembre de 2026, firmada por Rodrigo Alarcon: https://oem.com.mx/la-prensa/policiaca/detienen-a-otro-presunto-maltratador-de-animales-en-tlalpan-33095643. El extracto visible no reproduce el reportaje íntegro y no constituye una verificación independiente."
           },
           "sensitive_media": true,
           "alternate_versions": [
@@ -15006,27 +15159,6 @@
           "borough": "Tlalpan",
           "location": "Tlalpan (mencionada en el titular)",
           "local_url": "/noticias/?id=20ecd7390155f9a98ef2&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con El Heraldo de México, el titular publicado es: «Pedro Haces Lago pide licencia para competir por la alcaldía de Tlalpan en 2027». La información publicada por El Heraldo de México aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "commons_35624630",
-            "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Animales_Bosque_de_Tlalpan_06.JPG/960px-Animales_Bosque_de_Tlalpan_06.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "category": "Alcaldías",
-            "borough": "",
-            "topic": "Animales Bosque de Tlalpan 06",
-            "keywords": [
-              "Tlalpan Ciudad de México"
-            ],
-            "author": "Inakiherrasti",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Animales_Bosque_de_Tlalpan_06.JPG"
-          },
           "alternate_versions": [
             {
               "title": "Pedro Haces Lago pide licencia para competir por la alcaldía de Tlalpan en 2027",
@@ -15061,7 +15193,28 @@
                 "source": "https://commons.wikimedia.org/wiki/File:Animales_Bosque_de_Tlalpan_06.JPG"
               }
             }
-          ]
+          ],
+          "brief": {
+            "lead": "De acuerdo con El Heraldo de México, el titular publicado es: «Pedro Haces Lago pide licencia para competir por la alcaldía de Tlalpan en 2027». La información publicada por El Heraldo de México aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "commons_35624630",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Animales_Bosque_de_Tlalpan_06.JPG/960px-Animales_Bosque_de_Tlalpan_06.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "category": "Alcaldías",
+            "borough": "",
+            "topic": "Animales Bosque de Tlalpan 06",
+            "keywords": [
+              "Tlalpan Ciudad de México"
+            ],
+            "author": "Inakiherrasti",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Animales_Bosque_de_Tlalpan_06.JPG"
+          }
         },
         {
           "title": "Haces Lago pidió licencia para competir por Tlalpan y exigió \"piso parejo\" en la 4T",
@@ -15452,72 +15605,6 @@
             "license": "CC BY-SA 3.0",
             "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
             "source": "https://commons.wikimedia.org/wiki/File:Kiosko_plaza_de_la_constitucion%2C_tlapan.JPG"
-          }
-        },
-        {
-          "title": "Trabajadores del INE anuncian paro y cierre de módulos; prevén bloqueo en Viaducto Tlalpan",
-          "description": "De acuerdo con SDPnoticias.com, el titular publicado es: «Trabajadores del INE anuncian paro y cierre de módulos; prevén bloqueo en Viaducto Tlalpan». La información publicada por SDPnoticias.com aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPd1FGTXJCcUVyMnNaOFNYb0p3bTZKMjRCVnI4d19RaFZvdFNZWVZoaUNacGt6MkZoSUo4dlE0Q0d5Y01JQTJYZC12elAtaUdzNmxNX1Z6bkNzNmU5aFJOYVZINWFFOWNHa2FpRWtHLXJ5aHBDOWRoRzRIYUt5RkI1MnZUSVBjQ2hjb2o5eUFLTTkySXlFVW1SenFzM3pBZUhhaXlwMWhSY05sMlBjMzhkdF9oLTlRdHBqVXVHQlZ0Y29GTkU?oc=5",
-          "source": "SDPnoticias.com",
-          "date": "2026-11-09",
-          "published_at": "2026-11-09T15:45:23Z",
-          "category": "CDMX",
-          "borough": "Tlalpan",
-          "location": "Tlalpan (mencionada en el titular)",
-          "local_url": "/noticias/?id=a3fa040478ba4946bbb9&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con SDPnoticias.com, el titular publicado es: «Trabajadores del INE anuncian paro y cierre de módulos; prevén bloqueo en Viaducto Tlalpan». La información publicada por SDPnoticias.com aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "commons_54378318",
-            "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Ciudad_Universitaria_%28Marcha_por_la_paz%29_-_panoramio.jpg/960px-Ciudad_Universitaria_%28Marcha_por_la_paz%29_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "category": "Cultura",
-            "borough": "",
-            "topic": "Ciudad Universitaria (Marcha por la paz) - panoramio",
-            "keywords": [
-              "Ciudad Universitaria UNAM Ciudad de México"
-            ],
-            "author": "Malomalverde",
-            "license": "CC BY-SA 3.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Ciudad_Universitaria_(Marcha_por_la_paz)_-_panoramio.jpg"
-          }
-        },
-        {
-          "title": "Pedro Haces Lago presenta segundo informe legislativo ante 10 mil personas: \"Tlalpan merece más\"",
-          "description": "De acuerdo con MILENIO, el titular publicado es: «Pedro Haces Lago presenta segundo informe legislativo ante 10 mil personas: \"Tlalpan merece más\"». La información publicada por MILENIO aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPLTdpc0FnQlBVUHBCZHNqTlNDVmdWVm16Vnl0Sjh4U0szd1NFTFhEdXhqTkFYRXhMYnljRXpYaFo1MHNtR0U5WGQ0ZzlTV3hqdDNKN2dfd21ISGhNX2Z5MnZyQmRXRVRtY3pxNTFqUXhwcnU5VUduRnNBZGMwQjlBUnVzX2FqRWNkZkpIVDBkYVNFck1ISXVUV1p30gGaAUFVX3lxTFB0S0hmVnBsY0h1X0VTM1A4UldJblVNY3QycXFuQWduSHd2TmRnV1ZBUGpIMXo5SW04cGs1Nm44X1RkbVBfSVp1UTNkeGc2NzFfeHlISG1RUk5tRTQ1ZDd3NmZ0YlZYS1pSOE1jaEdQZXBjaFRaenVmNXIxYkFBeTZsYU1TdV9TYmNqTEJETV9PVmFQUDNOZ2RzYVE?oc=5",
-          "source": "MILENIO",
-          "date": "2026-11-08",
-          "published_at": "2026-11-08T23:31:00Z",
-          "category": "CDMX",
-          "borough": "Tlalpan",
-          "location": "Tlalpan (mencionada en el titular)",
-          "local_url": "/noticias/?id=f6fd0d1ad1d5132a4a8e&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con MILENIO, el titular publicado es: «Pedro Haces Lago presenta segundo informe legislativo ante 10 mil personas: \"Tlalpan merece más\"». La información publicada por MILENIO aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "commons_35624631",
-            "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Animales_Bosque_de_Tlalpan_05.JPG/960px-Animales_Bosque_de_Tlalpan_05.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "category": "Alcaldías",
-            "borough": "",
-            "topic": "Animales Bosque de Tlalpan 05",
-            "keywords": [
-              "Tlalpan Ciudad de México"
-            ],
-            "author": "Inakiherrasti",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Animales_Bosque_de_Tlalpan_05.JPG"
           }
         }
       ]
