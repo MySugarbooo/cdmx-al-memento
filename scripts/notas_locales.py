@@ -589,6 +589,9 @@ STRICT_PHOTO_TOPICS = (
     # La vigilancia y el alumbrado no se ilustran con monumentos sin relación.
     (r"\b(?:vigilancia|alumbrado|luminarias?|vigilad[oa]s?)\b",
      r"\b(?:patrullas?|alumbrado|luminarias?|iluminacion|mujeres|apoyos? a mujeres)\b"),
+    # Un festival de cine requiere una imagen cinematográfica, no un museo genérico.
+    (r"\b(?:cine de barrio|festival(?: de)? cine)\b",
+     r"\b(?:bosquecinema|cine|cinema|cineclub|cineteca|proyecciones?|peliculas?|filmoteca)\b"),
     # El deporte adaptado requiere una imagen de la disciplina, no un monumento genérico.
     (r"\b(?:deporte adaptado|discapacidad motriz|baloncesto en silla de ruedas)\b",
      r"\b(?:deporte adaptado|deportistas?|baloncesto|silla de ruedas|paralimpic\w*|discapacidad motriz|atletas?|gimnasio|cancha|competencia deportiva)\b"),
@@ -1181,6 +1184,13 @@ def _photo_score(article, photo):
             return -10000
     borough=_photo_fold(article.get("borough"))
     score=65 if photo_category==category else (12 if photo_category=="CDMX" else 0)
+    cinema_story=bool(re.search(r"\b(?:cine de barrio|festival(?: de)? cine)\b",headline))
+    cinema_photo=bool(re.search(
+        r"\b(?:bosquecinema|cine|cinema|cineclub|cineteca|proyecciones?|peliculas?|filmoteca)\b",
+        context,
+    ))
+    if cinema_story and cinema_photo:
+        score += 120
     if police_operation_story and police_context:
         score += 180
     if lgbt_story and lgbt_photo:
