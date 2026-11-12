@@ -289,6 +289,16 @@ def category_by_headline(title, feed_category, source=""):
     """Corrige etiquetas RSS evidentes sin inventar ubicaciones o hechos."""
     normalized = fold(title)
     normalized_source = fold(source)
+    # Delitos y detenciones no deben heredar una categoría de Metro o CDMX
+    # por el feed RSS: robos, secuestros y maltrato animal son Seguridad.
+    if re.search(
+        r"\b(?:abusador(?:es)? sexual(?:es)?|maltratador(?:es)?(?: de animales?)?|"
+        r"maltrato animal|crueldad animal|robo|robos|roban|robado|robada|robaron|robar|"
+        r"asalto|asaltan|secuestro|secuestrad[oa]s?|"
+        r"privacion(?: ilegal)? de (?:la )?libertad)\b",
+        normalized,
+    ):
+        return "Seguridad"
     if (re.search(r"\bautopista\s+57\b", normalized)
             and re.search(r"\b(?:detenida|cerrada|bloqueada|filas?|trafico|accidentes?)\b", normalized)):
         return "Movilidad"
