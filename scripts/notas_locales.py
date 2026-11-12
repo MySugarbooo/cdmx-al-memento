@@ -27,7 +27,8 @@ VERIFIED_EVENTS=ROOT/"assets/fotos/hechos-verificados.json"
 
 SENSITIVE_MEDIA_TITLE = re.compile(
     r"\b(?:violaci[oó]n|abuso sexual|agresi[oó]n sexual|acoso sexual|violencia sexual|"
-    r"maltrato animal|crueldad animal|tortura animal|violencia contra animales?|"
+    r"maltrato animal|maltratador(?:es)? de animales?|abusador(?:es)? sexual(?:es)? de animales?|"
+    r"crueldad animal|tortura animal|violencia contra animales?|"
     r"agresi[oó]n contra animales?|"
     r"(?:matar|matan|mat[oó]|mataron|asesinar|asesinan|asesin[oó]|"
     r"envenenar|envenenan|envenen[oó]|golpear|golpean|golpe[oó])\s+(?:a\s+(?:(?:los|las|un|una|unos|unas)\s+)?)?"
