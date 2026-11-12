@@ -1117,5 +1117,158 @@ class PhotoRelevanceTests(unittest.TestCase):
             assign_photos([article])
         self.assertEqual(article["photo"]["id"], "seguridad")
 
+    def test_infobae_ballet_is_culture_in_iztacalco_and_rejects_metro_and_landmark_photos(self):
+        title = "Función gratis del ballet «La Zapatilla de Cristal» llega a CDMX: fecha y sede"
+        metro = {
+            "id": "metro_pantitlan",
+            "category": "Metro",
+            "topic": "Estación Pantitlán de la Línea 1 del Metro de Ciudad de México",
+            "keywords": ["Metro CDMX", "Pantitlán"],
+            "url": "/assets/fotos/metro-pantitlan.jpg",
+            "source": "https://commons.wikimedia.org/wiki/File:Metro_CDMX_IMG_0231_(25900065922).jpg",
+            "author": "Gobierno CDMX",
+            "license": "CC0 1.0",
+            "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        }
+        bellas = {
+            "id": "bellas_artes",
+            "category": "Cultura",
+            "topic": "Palacio de Bellas Artes, Ciudad de México",
+            "keywords": ["Cultura", "Palacio de Bellas Artes"],
+            "url": "/assets/fotos/bellas-artes.jpg",
+            "source": "https://commons.wikimedia.org/wiki/File:Palacio_de_Bellas_Artes_-_CDMX.jpg",
+            "author": "JUAN CARLOS GONZALEZ",
+            "license": "CC0",
+            "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        }
+        article = news.standardize({
+            "title": title,
+            "url": "https://news.google.com/rss/articles/ballet-zapatilla-regression",
+            "source": "Infobae",
+            "date": "2026-11-12",
+            "category": "Metro",
+            "photo": metro,
+        })
+        self.assertEqual(article["category"], "Cultura")
+        self.assertEqual(article["borough"], "Iztacalco")
+        self.assertIn("Utopía Mixiuhca", article["location"])
+        self.assertEqual(
+            article["source_url"],
+            "https://www.infobae.com/mexico/2026/11/12/funcion-gratis-del-ballet-la-zapatilla-de-cristal-llega-a-cdmx-fecha-y-sede/",
+        )
+        self.assertIn("28 de noviembre", article["brief"]["lead"])
+        self.assertIn("13:00", article["brief"]["lead"])
+        self.assertEqual(_photo_category(article), "Cultura")
+        self.assertLess(_photo_score(article, metro), 0)
+        self.assertLess(_photo_score(article, bellas), 0)
+        with patch.object(photos, "_pool", return_value=[metro, bellas]), patch.object(
+            photos, "_load", return_value=[]
+        ):
+            assign_photos([article])
+        self.assertNotIn("photo", article)
+
+    def test_pulque_barbacoa_fair_uses_licensed_representative_food_photo(self):
+        title = "Feria del Pulque y la Barbacoa en La Magdalena Contreras. Fechas y qué encontrarás"
+        article = news.standardize({
+            "title": title,
+            "url": "https://news.google.com/rss/articles/pulque-barbacoa-fair-regression",
+            "source": "El Universal",
+            "date": "2026-11-12",
+            "category": "CDMX",
+        })
+        self.assertEqual(article["category"], "Cultura")
+        self.assertEqual(article["borough"], "La Magdalena Contreras")
+        self.assertIn("José Moreno Salido", article["location"])
+        self.assertIn("13 al 15 de noviembre", article["brief"]["lead"])
+        self.assertIn("8:00 a 19:00", article["brief"]["lead"])
+        self.assertIn("POSTA México", article["brief"]["method"])
+        photo = next(
+            item for item in photos._pool()
+            if item["id"] == "contexto_barbacoa_xochimilco_2026"
+        )
+        self.assertEqual(photo["author"], "ProtoplasmaKid")
+        self.assertEqual(photo["license"], "CC BY-SA 4.0")
+        self.assertIn("no corresponde a la Feria", photo["topic"])
+        self.assertGreaterEqual(_photo_score(article, photo), 0)
+        with patch.object(photos, "_pool", return_value=[photo]), patch.object(
+            photos, "_load", return_value=[]
+        ):
+            assign_photos([article])
+        self.assertEqual(article["photo"]["id"], "contexto_barbacoa_xochimilco_2026")
+
+    def test_cirque_du_soleil_is_culture_and_rejects_generic_city_photo(self):
+        title = "Cirque Du Soleil ya ofrece funciones en CDMX con su espectáculo ECHO"
+        generic_city = {
+            "id": "generic_city",
+            "category": "CDMX",
+            "topic": "D.F. - panoramio (7), Ciudad de México",
+            "keywords": ["Ciudad de México"],
+            "url": "/assets/fotos/generic-city.jpg",
+            "source": "https://commons.wikimedia.org/wiki/File:DF_panoramio.jpg",
+            "author": "Fotógrafo acreditado",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        }
+        article = news.standardize({
+            "title": title,
+            "url": "https://news.google.com/rss/articles/cirque-echo-regression",
+            "source": "88.9 Noticias",
+            "date": "2026-11-12",
+            "category": "CDMX",
+            "photo": generic_city,
+        })
+        self.assertEqual(article["category"], "Cultura")
+        self.assertEqual(_photo_category(article), "Cultura")
+        self.assertLess(_photo_score(article, generic_city), 0)
+        with patch.object(photos, "_pool", return_value=[generic_city]), patch.object(
+            photos, "_load", return_value=[]
+        ):
+            assign_photos([article])
+        self.assertNotIn("photo", article)
+
+    def test_rain_alert_uses_rain_operation_not_rainwater_harvesting_photo(self):
+        title = (
+            "Activan alerta por diluvio en CDMX: Estas son las alcaldías que se verán "
+            "afectadas por las fuertes lluvias | LISTA"
+        )
+        harvest = {
+            "id": "cosecha_lluvia",
+            "category": "Medio Ambiente",
+            "topic": "Cosecha de Lluvia 02",
+            "keywords": ["Lluvia Ciudad de México"],
+            "url": "/assets/fotos/cosecha-lluvia.jpg",
+            "source": "https://commons.wikimedia.org/wiki/File:Cosecha_de_Lluvia_02.jpg",
+            "author": "Gobierno de la Ciudad de México",
+            "license": "CC BY 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        }
+        operation = {
+            "id": "operativo_lluvias",
+            "category": "Medio Ambiente",
+            "topic": "Operativo Lluvias CDMX, atención a afectaciones por precipitación",
+            "keywords": ["Lluvia Ciudad de México", "operativo de lluvias"],
+            "url": "/assets/fotos/operativo-lluvias.jpg",
+            "source": "https://commons.wikimedia.org/wiki/File:Operativo_Lluvias_-i---i-_(36298031503).jpg",
+            "author": "Gobierno CDMX",
+            "license": "CC0 1.0",
+            "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        }
+        article = news.standardize({
+            "title": title,
+            "url": "https://news.google.com/rss/articles/rain-alert-photo-regression",
+            "source": "El Heraldo de México",
+            "date": "2026-11-12",
+            "category": "CDMX",
+            "photo": harvest,
+        })
+        self.assertEqual(article["category"], "Medio Ambiente")
+        self.assertLess(_photo_score(article, harvest), 0)
+        self.assertGreaterEqual(_photo_score(article, operation), 0)
+        with patch.object(photos, "_pool", return_value=[harvest, operation]), patch.object(
+            photos, "_load", return_value=[]
+        ):
+            assign_photos([article])
+        self.assertEqual(article["photo"]["id"], "operativo_lluvias")
+
 if __name__ == "__main__":
     unittest.main()
