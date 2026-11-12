@@ -14,12 +14,19 @@ SOURCE = ROOT / "news.json"
 OUT = ROOT / "articulos"
 SITEMAP = ROOT / "sitemap-articulos.xml"
 SENSITIVE_MEDIA_TITLE = re.compile(
-    r"\b(?:violaci[oó]n|abuso sexual|agresi[oó]n sexual|acoso sexual|violencia sexual)\b",
+    r"\b(?:violaci[oó]n|abuso sexual|agresi[oó]n sexual|acoso sexual|violencia sexual|"
+    r"maltrato animal|crueldad animal|tortura animal|violencia contra animales?|"
+    r"agresi[oó]n contra animales?|"
+    r"(?:matar|matan|mat[oó]|mataron|asesinar|asesinan|asesin[oó]|"
+    r"envenenar|envenenan|envenen[oó]|golpear|golpean|golpe[oó])\s+(?:a\s+(?:(?:los|las|un|una|unos|unas)\s+)?)?"
+    r"(?:perros?|perritos?|gatos?|mascotas?|animales?)|"
+    r"(?:perros?|perritos?|gatos?|mascotas?|animales?)\s+(?:maltratad[oa]s?|envenenad[oa]s?)|"
+    r"envenenamiento de (?:perros?|perritos?|gatos?|mascotas?|animales?))\b",
     re.IGNORECASE,
 )
 
 def is_sensitive_media(item):
-    """Evita ilustraciones genéricas en noticias sobre violencia sexual."""
+    """Evita ilustraciones genéricas en noticias sobre violencia sexual o crueldad animal."""
     return (item.get("sensitive_media") is True or
             bool(SENSITIVE_MEDIA_TITLE.search(str(item.get("title") or ""))))
 

@@ -564,7 +564,7 @@ class PhotoRelevanceTests(unittest.TestCase):
         self.assertGreaterEqual(_photo_score(article, cinema), 0)
 
 
-    def test_local_animal_story_rejects_photos_from_other_boroughs(self):
+    def test_animal_poisoning_is_sensitive_even_when_local_context_matches(self):
         article = {
             "title": "Más de 30 perritos envenenados en Xochimilco; qué se sabe del caso",
             "category": "CDMX",
@@ -588,6 +588,11 @@ class PhotoRelevanceTests(unittest.TestCase):
         self.assertLess(_photo_score(article, tlalpan_animals), 0)
         self.assertLess(_photo_score(article, condesa_dogs), 0)
         self.assertGreaterEqual(_photo_score(article, xochimilco_dogs), 0)
+        self.assertTrue(photos.is_sensitive_media(article))
+        with patch.object(photos, "_pool", return_value=[xochimilco_dogs]):
+            assign_photos([article])
+        self.assertTrue(article["sensitive_media"])
+        self.assertNotIn("photo", article)
 
         city_wide_rescue = {
             "title": "Rescatan perritos en parque de la capital",
@@ -797,6 +802,30 @@ class PhotoRelevanceTests(unittest.TestCase):
         self.assertEqual(article["photo"]["author"], "InclusiveGameLab")
         self.assertEqual(article["photo"]["license"], "CC BY-SA 4.0")
         self.assertEqual(stats["assigned"], 1)
+
+
+    def test_tame_impala_announcement_rejects_carnival_photo_without_music_context(self):
+        article = {
+            "title": "¡Tame Impala regresa a México en 2027! Dos noches en CDMX",
+            "category": "CDMX", "borough": "",
+        }
+        carnival = {
+            "id": "carnaval_cdmx",
+            "category": "CDMX",
+            "topic": "Declaratoria de Carnavales como Patrimonio Cultural Inmaterial de la Ciudad de México 13",
+            "keywords": ["carnavales", "cultura"],
+        }
+        music_stage = {
+            "id": "escenario_musical",
+            "category": "Cultura",
+            "topic": "Concierto de rock en escenario de CDMX",
+            "keywords": ["música en vivo", "banda", "rock"],
+        }
+        self.assertLess(_photo_score(article, carnival), 0)
+        self.assertGreaterEqual(_photo_score(article, music_stage), 0)
+        with patch.object(photos, "_pool", return_value=[carnival]):
+            assign_photos([article])
+        self.assertNotIn("photo", article)
 
 
 if __name__ == "__main__":

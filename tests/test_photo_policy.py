@@ -98,6 +98,8 @@ class NewsPhotoPolicyTests(unittest.TestCase):
     def test_archive_cleanup_removes_sensitive_context_photos_and_keeps_verified_event_photo(self):
         title = "Caso Vadhir Derbez: Fiscalía CDMX tendría ADN relacionado con denuncia por violación"
         contextual = dict(ARTICLE, title=title, photo=context_photo("patrullas"))
+        animal_title = "Detienen a acusado de maltrato animal en Tlalpan"
+        animal_contextual = dict(ARTICLE, title=animal_title, photo=context_photo("conejo_bosque"))
         verified_photo = {
             "id": "hecho_aprobado",
             "kind": "hecho",
@@ -105,10 +107,14 @@ class NewsPhotoPolicyTests(unittest.TestCase):
             "evidence_url": "https://ejemplo.org/evidencia",
         }
         documented = dict(ARTICLE, title=title, photo=verified_photo)
-        removed = update_news.clear_sensitive_context_photos([contextual, documented])
-        self.assertEqual(removed, 1)
+        removed = update_news.clear_sensitive_context_photos(
+            [contextual, animal_contextual, documented]
+        )
+        self.assertEqual(removed, 2)
         self.assertTrue(contextual["sensitive_media"])
         self.assertNotIn("photo", contextual)
+        self.assertTrue(animal_contextual["sensitive_media"])
+        self.assertNotIn("photo", animal_contextual)
         self.assertIs(documented["photo"], verified_photo)
 
     def test_sensitive_media_headlines_never_receive_context_photos(self):
@@ -118,6 +124,11 @@ class NewsPhotoPolicyTests(unittest.TestCase):
             "Investigan agresión sexual en la capital",
             "Denuncia por acoso sexual en un centro de trabajo",
             "Alerta por violencia sexual contra menores",
+            "Detienen a hombre señalado de matar perros en la alcaldía Tlalpan",
+            "Detienen a acusado de maltrato animal en Tlalpan",
+            "Investigan crueldad animal tras envenenamiento de mascotas",
+            "Envenenan a los perros de Xochimilco",
+            "Más de 30 perritos envenenados en Xochimilco",
         )
         with TemporaryDirectory() as tmp:
             registry = Path(tmp) / "hechos.json"
@@ -130,6 +141,9 @@ class NewsPhotoPolicyTests(unittest.TestCase):
                         photos.assign_photos([article])
                         self.assertTrue(article.get("sensitive_media"))
                         self.assertNotIn("photo", article)
+        self.assertFalse(photos.is_sensitive_media(dict(
+            ARTICLE, title="Rescatan perros en un refugio de Tlalpan"
+        )))
 
     def test_sensitive_media_allows_only_an_exact_approved_event_photo(self):
         title = "Caso Vadhir Derbez: Fiscalía CDMX tendría ADN relacionado con denuncia por violación"
@@ -145,6 +159,21 @@ class NewsPhotoPolicyTests(unittest.TestCase):
                 photos.assign_photos([article])
         self.assertEqual(article["photo"]["kind"], "hecho")
         self.assertTrue(article["photo"]["verified"])
+
+        animal_title = "Detienen a acusado de maltrato animal en Tlalpan"
+        animal_article = dict(
+            ARTICLE, title=animal_title,
+            url="https://news.google.com/rss/articles/animal-event-verified",
+        )
+        registry.write_text(json.dumps({"photos": [
+            approval(article_url=animal_article["url"], article_title=animal_title)
+        ]}), encoding="utf-8")
+        with patch.object(photos, "_pool", return_value=[context_photo("conejo_bosque")]), patch.object(
+            photos, "VERIFIED_EVENTS", registry
+        ):
+            photos.assign_photos([animal_article])
+        self.assertEqual(animal_article["photo"]["kind"], "hecho")
+        self.assertTrue(animal_article["photo"]["verified"])
 
     def test_context_photo_matches_exact_metro_line_not_another_line(self):
         article = dict(ARTICLE, title="Usuarios del Metro caminan por la Línea 12", category="Metro")

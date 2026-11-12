@@ -26,13 +26,20 @@ TOPIC_PHOTOS=ROOT/"assets/fotos/contexto-tematico.json"
 VERIFIED_EVENTS=ROOT/"assets/fotos/hechos-verificados.json"
 
 SENSITIVE_MEDIA_TITLE = re.compile(
-    r"\b(?:violaci[oó]n|abuso sexual|agresi[oó]n sexual|acoso sexual|violencia sexual)\b",
+    r"\b(?:violaci[oó]n|abuso sexual|agresi[oó]n sexual|acoso sexual|violencia sexual|"
+    r"maltrato animal|crueldad animal|tortura animal|violencia contra animales?|"
+    r"agresi[oó]n contra animales?|"
+    r"(?:matar|matan|mat[oó]|mataron|asesinar|asesinan|asesin[oó]|"
+    r"envenenar|envenenan|envenen[oó]|golpear|golpean|golpe[oó])\s+(?:a\s+(?:(?:los|las|un|una|unos|unas)\s+)?)?"
+    r"(?:perros?|perritos?|gatos?|mascotas?|animales?)|"
+    r"(?:perros?|perritos?|gatos?|mascotas?|animales?)\s+(?:maltratad[oa]s?|envenenad[oa]s?)|"
+    r"envenenamiento de (?:perros?|perritos?|gatos?|mascotas?|animales?))\b",
     re.IGNORECASE,
 )
 
 
 def is_sensitive_media(article):
-    """Impide asignar fotos de contexto a titulares sobre violencia sexual."""
+    """Impide fotos de contexto en titulares sobre violencia sexual o crueldad animal."""
     return (article.get("sensitive_media") is True or
             bool(SENSITIVE_MEDIA_TITLE.search(str(article.get("title") or ""))))
 
@@ -933,9 +940,10 @@ STRICT_PHOTO_TOPICS = (
     # Las líneas del Cablebús no se ilustran con estaciones de otra línea.
     (r"\b(?:cablebus|teleferico)\b",
      r"\b(?:cablebus|teleferico|cabinas?)\b"),
-    # Un concierto necesita contexto musical o de su sede, no un monumento ajeno.
-    (r"\b(?:karol g|setlist|conciertos?)\b",
-     r"\b(?:karol g|setlist|conciertos?|escenario|musica|cantantes?|estadio|auditorio|festival|guitarra|banda)\b"),
+    # Los anuncios de conciertos, giras o varias fechas necesitan contexto musical,
+    # no fotografías de carnavales, monumentos u otros actos culturales.
+    (r"\b(?:karol g|tame impala|setlist|conciertos?|regresa a mexico|regresan a mexico|dos noches en cdmx|giras?|tours?|shows?|presentaciones? en cdmx|fechas? en cdmx)\b",
+     r"\b(?:karol g|tame impala|setlist|conciertos?|escenario|musica|cantantes?|estadio|auditorio|guitarra|banda|rock|musica en vivo|gira|tour)\b"),
     # Los verificentros requieren contexto de revisión vehicular.
     (r"\b(?:verificentros?|verificacion vehicular)\b",
      r"\b(?:verificentros?|verificacion vehicular|centro de verificacion|emisiones|vehiculos?|autos?|automoviles?)\b"),
@@ -1164,7 +1172,9 @@ def _photo_score(article, photo):
         return -10000
     # Admitir categorías temáticas solo cuando el descriptor coincide con la noticia.
     music_story = bool(re.search(
-        r"\b(?:riff|musica|orquestas?|coros?|coral|conciertos?|bandas?|cantantes?|aniversario musical)\b",
+        r"\b(?:riff|musica|orquestas?|coros?|coral|conciertos?|bandas?|cantantes?|aniversario musical|"
+        r"tame impala|karol g|regresa a mexico|regresan a mexico|dos noches en cdmx|"
+        r"giras?|tours?|shows?|presentaciones? en cdmx|fechas? en cdmx)\b",
         headline,
     ))
     music_photo = bool(re.search(
