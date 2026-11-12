@@ -109,6 +109,61 @@ class PhotoRelevanceTests(unittest.TestCase):
         self.assertEqual(article["photo"]["author"], "Torsten Bolten, AFpix.de")
         self.assertEqual(article["photo"]["license"], "CC BY-SA 3.0")
 
+    def test_ecatepec_archive_alternates_are_normalized_without_losing_source_metadata(self):
+        title = (
+            "Vuelca pipa de gas en la México-Pachuca; hay al menos 2 lesionados "
+            "y caos vial con dirección a la CDMX"
+        )
+        url = "https://news.google.com/rss/articles/ecatepec-archive-version-regression"
+        stale_photo = {
+            "id": "commons_firefighters_cdmx",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/example.jpg",
+            "topic": "Equipo de trabajo de los Bomberos CDMX",
+            "author": "Gobierno CDMX",
+            "license": "CC0",
+            "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+            "source": "https://commons.wikimedia.org/wiki/File:Bomberos_CDMX.jpg",
+        }
+        stale_brief = {
+            "lead": "La pipa volcó en la capital.",
+            "context": "Contexto anterior.",
+            "pending": "Pendiente anterior.",
+            "method": "Método anterior.",
+        }
+        article = news.standardize({
+            "title": title,
+            "url": url,
+            "source": "El Sol de México",
+            "date": "2026-11-12",
+            "category": "Movilidad",
+            "alternate_versions": [{
+                "title": title,
+                "url": url,
+                "source": "El Sol de México",
+                "date": "2026-11-11",
+                "published_at": "2026-11-11T19:23:33Z",
+                "category": "Movilidad",
+                "borough": "",
+                "location": "Ciudad de México (sin alcaldía identificada)",
+                "local_url": "/noticias/?id=ecatepec-archive&mes=2026-11",
+                "brief": stale_brief,
+                "photo": stale_photo,
+            }],
+        })
+
+        self.assertEqual(article["location"], "Ecatepec, Estado de México (fuera de CDMX)")
+        self.assertEqual(news.sanitize_outside_cdmx_versions(article), 1)
+        version = article["alternate_versions"][0]
+        self.assertEqual(version["location"], article["location"])
+        self.assertEqual(version["source"], "El Sol de México")
+        self.assertEqual(version["url"], url)
+        self.assertEqual(version["date"], "2026-11-11")
+        self.assertIn("Ecatepec, Estado de México", version["brief"]["lead"])
+        self.assertIn("al menos dos personas lesionadas", version["brief"]["lead"])
+        self.assertNotIn("en la capital", version["brief"]["lead"])
+        self.assertNotIn("photo", version)
+
     def test_gas_tanker_rollovers_are_mobility_and_reject_cdmx_photos_outside_cdmx(self):
         titles = [
             "Vuelca pipa de gas en la México-Pachuca; hay al menos 2 lesionados y caos vial con dirección a la CDMX",
