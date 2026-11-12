@@ -98,6 +98,8 @@ class NewsPhotoPolicyTests(unittest.TestCase):
     def test_archive_cleanup_removes_sensitive_context_photos_and_keeps_verified_event_photo(self):
         title = "Caso Vadhir Derbez: Fiscalía CDMX tendría ADN relacionado con denuncia por violación"
         contextual = dict(ARTICLE, title=title, photo=context_photo("patrullas"))
+        animal_title = "Detienen a acusado de maltrato animal en Tlalpan"
+        animal_contextual = dict(ARTICLE, title=animal_title, photo=context_photo("conejo_bosque"))
         verified_photo = {
             "id": "hecho_aprobado",
             "kind": "hecho",
@@ -105,10 +107,14 @@ class NewsPhotoPolicyTests(unittest.TestCase):
             "evidence_url": "https://ejemplo.org/evidencia",
         }
         documented = dict(ARTICLE, title=title, photo=verified_photo)
-        removed = update_news.clear_sensitive_context_photos([contextual, documented])
-        self.assertEqual(removed, 1)
+        removed = update_news.clear_sensitive_context_photos(
+            [contextual, animal_contextual, documented]
+        )
+        self.assertEqual(removed, 2)
         self.assertTrue(contextual["sensitive_media"])
         self.assertNotIn("photo", contextual)
+        self.assertTrue(animal_contextual["sensitive_media"])
+        self.assertNotIn("photo", animal_contextual)
         self.assertIs(documented["photo"], verified_photo)
 
     def test_sensitive_media_headlines_never_receive_context_photos(self):
@@ -118,6 +124,9 @@ class NewsPhotoPolicyTests(unittest.TestCase):
             "Investigan agresión sexual en la capital",
             "Denuncia por acoso sexual en un centro de trabajo",
             "Alerta por violencia sexual contra menores",
+            "Detienen a hombre señalado de matar perros en la alcaldía Tlalpan",
+            "Detienen a acusado de maltrato animal en Tlalpan",
+            "Investigan crueldad animal tras envenenamiento de mascotas",
         )
         with TemporaryDirectory() as tmp:
             registry = Path(tmp) / "hechos.json"
@@ -130,6 +139,9 @@ class NewsPhotoPolicyTests(unittest.TestCase):
                         photos.assign_photos([article])
                         self.assertTrue(article.get("sensitive_media"))
                         self.assertNotIn("photo", article)
+        self.assertFalse(photos.is_sensitive_media(dict(
+            ARTICLE, title="Rescatan perros en un refugio de Tlalpan"
+        )))
 
     def test_sensitive_media_allows_only_an_exact_approved_event_photo(self):
         title = "Caso Vadhir Derbez: Fiscalía CDMX tendría ADN relacionado con denuncia por violación"
