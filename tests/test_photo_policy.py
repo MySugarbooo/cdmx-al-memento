@@ -167,6 +167,7 @@ class NewsPhotoPolicyTests(unittest.TestCase):
         )
 
         self.assertEqual(photos._photo_category(article), "Seguridad")
+        self.assertEqual(update_news.category_by_headline(article["title"], "CDMX"), "Seguridad")
         self.assertLess(photos._photo_score(article, drainage), 0)
         self.assertGreaterEqual(photos._photo_score(article, firefighters), 0)
 

@@ -252,6 +252,12 @@ def category_by_headline(title, feed_category, source=""):
     """Corrige etiquetas RSS evidentes sin inventar ubicaciones o hechos."""
     normalized = fold(title)
     normalized_source = fold(source)
+    # Las explosiones y fugas de gas son emergencias de Seguridad, no CDMX genérico.
+    if re.search(
+        r"\b(?:explosion(?:es)? de gas|fugas? de gas|incendios?|estalla\s+(?:un\s+)?tanque(?:\s+de\s+gas)?)\b",
+        normalized,
+    ):
+        return "Seguridad"
     # La agenda de NFL y fútbol americano en CDMX es deportiva, no del Metro.
     if re.search(r"\b(?:nfl|futbol americano|san francisco 49ers|minnesota vikings)\b", normalized):
         if re.search(r"\b(?:cierres? viales?|calles? cerradas?|trafico|congestionamiento|desvios?|rutas? alternas?|alternativas? viales?)\b", normalized):
