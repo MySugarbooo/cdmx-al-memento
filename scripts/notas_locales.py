@@ -59,6 +59,32 @@ SAN_JUAN_DEL_RIO_AUTOPISTA57_SOURCE_URL = "https://oem.com.mx/elsoldesanjuandelr
 LA_PRENSA_TLALPAN_ANIMAL_SOURCE_URL = "https://oem.com.mx/la-prensa/policiaca/detienen-a-otro-presunto-maltratador-de-animales-en-tlalpan-33095643"
 INFOBAE_TLALPAN_ANIMAL_SOURCE_URL = "https://www.infobae.com/mexico/2026/11/12/detienen-a-presunto-abusador-sexual-de-animales-en-situacion-de-calle-en-cdmx-activistas-piden-que-las-investigaciones-lleguen-a-fondo/"
 EL_GRAFICO_VC_TRAILER_SOURCE_URL = "https://www.elgrafico.mx/la-roja/2026/11/12/el-morenito-muere-tras-ser-arrastrado-varios-metros-por-un-trailer-en-venustiano-carranza/?outputType=amp"
+INFOBAE_BALLET_ZAPATILLA_SOURCE_URL = "https://www.infobae.com/mexico/2026/11/12/funcion-gratis-del-ballet-la-zapatilla-de-cristal-llega-a-cdmx-fecha-y-sede/"
+INFOBAE_PULQUE_BARBACOA_SOURCE_URL = "https://www.infobae.com/mexico/2026/11/06/la-feria-del-pulque-y-la-barbacoa-2026-llegara-a-la-magdalena-contreras-en-cdmx-fechas-horarios-y-como-llegar/"
+POSTA_PULQUE_BARBACOA_SOURCE_URL = "https://www.posta.com.mx/cdmx/feria-del-pulque-y-la-barbacoa-2026-fechas-y-entrada-gratis/vl2276243"
+
+
+def is_infobae_ballet_zapatilla(article):
+    """Identifica la agenda de ballet de Infobae del 28 de noviembre en Iztacalco."""
+    title = _photo_fold(article.get("title"))
+    source = _photo_fold(article.get("source"))
+    return (
+        str(article.get("date") or "") == "2026-11-12"
+        and source == "infobae"
+        and "ballet" in title
+        and "zapatilla de cristal" in title
+    )
+
+
+def is_pulque_barbacoa_fair(article):
+    """Identifica la Feria del Pulque y la Barbacoa anunciada para el 13-15 de noviembre."""
+    title = _photo_fold(article.get("title"))
+    return (
+        str(article.get("date") or "") == "2026-11-12"
+        and "feria" in title
+        and "pulque" in title
+        and "barbacoa" in title
+    )
 
 
 def is_imagen_tlalpan_dog_rescue(article):
@@ -455,6 +481,57 @@ def summarize(article):
                 "Síntesis basada en el titular de N+ y en la ficha oficial del Servicio de Transportes "
                 "Eléctricos sobre la ruta de Línea 1: https://www.ste.cdmx.gob.mx/cablebus. "
                 "No equivale a lectura íntegra de la nota ni confirma el estado actual del servicio."
+            ),
+        }
+    if is_infobae_ballet_zapatilla(article):
+        return {
+            "lead": (
+                "Infobae informó que la función gratuita de «La Zapatilla de Cristal», a cargo "
+                "de Ballet House Classical Art, está programada para el 28 de noviembre de 2026 "
+                "a las 13:00 horas en Utopía Mixiuhca, Viaducto Río de la Piedad 6, colonia "
+                "Granjas México, alcaldía Iztacalco. Según la nota, el acceso será libre y no "
+                "requiere registro ni boleto."
+            ),
+            "context": (
+                "La sede es Utopía Mixiuhca, en Iztacalco. La actividad corresponde a la agenda "
+                "cultural de la ciudad; no es una noticia del Sistema de Transporte Colectivo Metro."
+            ),
+            "pending": (
+                "La fecha, el horario y las condiciones de acceso pueden cambiar. Conviene "
+                "confirmarlos con la sede o la organización antes de asistir; la gratuidad y "
+                "la ausencia de registro se atribuyen a la publicación de Infobae."
+            ),
+            "method": (
+                "Síntesis basada en la nota de Infobae del 12 de noviembre de 2026: "
+                + INFOBAE_BALLET_ZAPATILLA_SOURCE_URL
+                + ". La fecha, hora, sede y condiciones de acceso se atribuyen a ese medio; "
+                "no se presenta como confirmación independiente del organizador."
+            ),
+        }
+    if is_pulque_barbacoa_fair(article):
+        return {
+            "lead": (
+                "La 22.ª Feria Regional del Pulque y la Barbacoa se realizará del 13 al 15 de "
+                "noviembre de 2026, de 8:00 a 19:00 horas, en la explanada de la Alcaldía "
+                "La Magdalena Contreras, José Moreno Salido s/n, colonia Barranca Seca. "
+                "El acceso al recinto será gratuito; los alimentos, bebidas y artesanías "
+                "se pagan por consumo."
+            ),
+            "context": (
+                "El encuentro reúne barbacoa, pulque natural y curado, antojitos, artesanías "
+                "y música en vivo. Es una actividad gastronómica y cultural de La Magdalena Contreras."
+            ),
+            "pending": (
+                "La cartelera musical y la oferta de cada puesto pueden cambiar. Se recomienda "
+                "confirmar horarios y actividades con la alcaldía antes de acudir; la entrada "
+                "gratuita no significa que los alimentos o bebidas sean gratuitos."
+            ),
+            "method": (
+                "Síntesis de datos coincidentes en Infobae, 6 de noviembre de 2026: "
+                + INFOBAE_PULQUE_BARBACOA_SOURCE_URL
+                + " y POSTA México, 6 de noviembre de 2026: "
+                + POSTA_PULQUE_BARBACOA_SOURCE_URL
+                + ". La imagen, cuando se muestra, es ilustrativa y no corresponde a la feria."
             ),
         }
     if is_huixtla_migrant_caravan(article):
@@ -978,6 +1055,9 @@ def _photo_category(article):
     if (re.search(r"\b(?:vigilancia|alumbrado|luminarias?|vigilad[oa]s?)\b", headline)
             and re.search(r"\b(?:tabe|miguel hidalgo)\b", headline)):
         return "Seguridad"
+    # Agenda de ballet, circo y ferias gastronómicas: Cultura, aunque el RSS diga Metro o CDMX.
+    if re.search(r"\b(?:ballet|danza clasica|cirque du soleil|feria (?:regional )?del pulque|pulque y la barbacoa)\b", headline):
+        return "Cultura"
     # Los festivales de cine pertenecen a Cultura.
     if re.search(r"\b(?:cine de barrio|festival(?: de)? cine)\b", headline):
         return "Cultura"
@@ -1025,6 +1105,17 @@ def _photo_category(article):
 # Resguardos editoriales: una coincidencia geográfica o de categoría no basta.
 # Si la fototeca no tiene contexto del tema, se prefiere publicar sin imagen.
 STRICT_PHOTO_TOPICS = (
+    # Ballet y circo requieren una imagen de artes escénicas de ese tipo; un Metro o monumento no basta.
+    (r"\b(?:ballet|zapatilla de cristal|danza clasica)\b",
+     r"\b(?:ballet|bailarinas?|bailarines?|danza clasica|coreografia de ballet|escenario de ballet)\b"),
+    (r"\b(?:cirque du soleil|espectaculo echo)\b",
+     r"\b(?:cirque du soleil|circo|acrobatas?|acrobacias?|malabaristas?|espectaculo circense|carpa de circo)\b"),
+    # Una feria gastronómica requiere comida o bebida; una danza o fachada de alcaldía no la representa.
+    (r"\b(?:feria (?:regional )?del pulque|feria del pulque y la barbacoa|pulque y la barbacoa)\b",
+     r"\b(?:pulque|barbacoa|tacos de barbacoa|consome|feria gastronomica|puestos de comida)\b"),
+    # Una alerta meteorológica no se ilustra con un sistema de captación de agua de lluvia.
+    (r"\b(?:alerta por diluvio|alerta por lluvias?|lluvias? fuertes?)\b",
+     r"\b(?:operativo (?:de )?lluvias?|tormentas?|inundaciones?|calles? anegadas?|lluvia en calles?)\b"),
     # Mantener primero la regla de gas: el titular puede incluir un segundo asunto tras dos puntos.
     (r"\b(?:pipas? de gas|gas lp|explosion(?:es)? de gas|tanques? de gas|fugas? de gas|acumulacion de gas|estalla\s+(?:un\s+)?tanque(?:\s+de\s+gas)?|incendios?)\b",
      r"\b(?:gas|tanques?|cilindros?|fugas?|bomberos|incendios?|extintores?|locales? comerciales?|mercados?|cocinas?|alimentos?)\b"),
@@ -1389,7 +1480,15 @@ def _photo_score(article, photo):
             borough for borough, aliases in PHOTO_BOROUGH_ALIASES.items()
             if any(re.search(r"\b"+re.escape(alias)+r"\b",context) for alias in aliases)
         }
-        if photo_boroughs and article_borough_key not in photo_boroughs:
+        food_event_story = bool(re.search(
+            r"\b(?:feria (?:regional )?del pulque|feria del pulque y la barbacoa|pulque y la barbacoa)\b",
+            headline,
+        ))
+        food_photo = bool(re.search(
+            r"\b(?:barbacoa|tacos de barbacoa|pulque|consome)\b", context
+        ))
+        if (photo_boroughs and article_borough_key not in photo_boroughs
+                and not (food_event_story and food_photo)):
             return -10000
     # Los boletos y documentos históricos solo ilustran noticias sobre esos objetos.
     ticket_photo = bool(re.search(
