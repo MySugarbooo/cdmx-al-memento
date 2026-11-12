@@ -551,6 +551,22 @@ class PhotoRelevanceTests(unittest.TestCase):
         self.assertGreaterEqual(_photo_score(city_wide_rescue, tlalpan_animals), 0)
 
 
+    def test_lajornada_housing_summary_clarifies_scope_and_source_figures(self):
+        article = news.standardize({
+            "title": "CDMX: 95% de la población no puede comprar vivienda",
+            "url": "https://news.google.com/rss/articles/housing-summary-regression",
+            "source": "La Jornada",
+            "date": "2026-11-12",
+            "category": "Gobierno",
+        })
+        brief = article["brief"]
+        self.assertIn("oferta de vivienda de alto costo en la zona central", brief["lead"])
+        self.assertIn("$59,829", brief["lead"])
+        self.assertIn("$32,495", brief["lead"])
+        self.assertIn("no a toda vivienda disponible en CDMX", brief["pending"])
+        self.assertIn("reportaje completo de La Jornada", brief["method"])
+        self.assertNotIn("sin acceso al cuerpo", brief["lead"])
+
     def test_education_and_housing_articles_reject_generic_landmark_photos(self):
         pool = _pool()
         landmark = next(p for p in pool if "torre latinoamericana" in p["topic"].casefold())
