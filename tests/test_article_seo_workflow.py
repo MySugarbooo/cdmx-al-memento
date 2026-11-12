@@ -3,12 +3,20 @@ import unittest
 from pathlib import Path
 
 WORKFLOW = Path(__file__).resolve().parents[1] / ".github/workflows/article-seo.yml"
+HEADERS = Path(__file__).resolve().parents[1] / "_headers"
 
 
 class ArticleSeoWorkflowTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.workflow = WORKFLOW.read_text(encoding="utf-8")
+        cls.headers = HEADERS.read_text(encoding="utf-8")
+
+    def test_article_pages_revalidate_after_editorial_updates(self):
+        self.assertIn(
+            "/articulos/*\n  Cache-Control: no-cache, must-revalidate",
+            self.headers,
+        )
 
     def test_refresh_follows_successful_news_run_on_main(self):
         self.assertIn('  workflow_run:\n', self.workflow)
