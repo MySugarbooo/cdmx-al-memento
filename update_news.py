@@ -248,9 +248,10 @@ def published_datetime(value):
         return None
 
 
-def category_by_headline(title, feed_category):
+def category_by_headline(title, feed_category, source=""):
     """Corrige etiquetas RSS evidentes sin inventar ubicaciones o hechos."""
     normalized = fold(title)
+    normalized_source = fold(source)
     # La agenda de NFL y fútbol americano en CDMX es deportiva, no del Metro.
     if re.search(r"\b(?:nfl|futbol americano|san francisco 49ers|minnesota vikings)\b", normalized):
         if re.search(r"\b(?:cierres? viales?|calles? cerradas?|trafico|congestionamiento|desvios?|rutas? alternas?|alternativas? viales?)\b", normalized):
@@ -269,6 +270,13 @@ def category_by_headline(title, feed_category):
     # El estado del Metrobús pertenece a Movilidad, no a la categoría general.
     if re.search(r"\bmetrobus\b", normalized):
         return "Movilidad"
+    # Los comunicados de la SSC sobre operativos y despliegues policiales
+    # son Seguridad aunque el RSS los haya recogido en el feed del Metro.
+    if (
+        re.search(r"\b(?:ssc|secretaria de seguridad ciudadana)\b", normalized + " " + normalized_source)
+        and re.search(r"\b(?:operativo|vigilancia|despliegue|policias?)\b", normalized)
+    ):
+        return "Seguridad"
     # Los recortes presupuestales de apoyos públicos a población LGBTTTIQ+ son decisiones de Gobierno.
     if (feed_category in {"CDMX", "Gobierno"}
             and re.search(r"\b(?:lgbtttiq|lgbtq?|diversidad sexual)\b", normalized)
@@ -400,7 +408,7 @@ def standardize(article):
         return None
     borough, location = identify_location(title)
     category = article.get("category") if article.get("category") in GENERAL_FEEDS else "CDMX"
-    category = category_by_headline(title, category)
+    category = category_by_headline(title, category, source)
     result = {
         "title": title,
         "description": "",
