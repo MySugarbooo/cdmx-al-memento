@@ -22,7 +22,7 @@ from pathlib import Path
 from zoneinfo import ZoneInfo
 
 from scripts.analisis_editorial import build_editorial
-from scripts.notas_locales import local_link, summarize, assign_photos, _photo_score, is_sensitive_media, is_coyotepec_highway_crash, is_san_juan_del_rio_autopista57_closure, SENSITIVE_MEDIA_TITLE, SAN_JUAN_DEL_RIO_AUTOPISTA57_SOURCE_URL, is_infobae_tlalpan_animal_abuse, is_la_prensa_tlalpan_animal_case, INFOBAE_TLALPAN_ANIMAL_SOURCE_URL, LA_PRENSA_TLALPAN_ANIMAL_SOURCE_URL, is_imagen_tlalpan_dog_rescue
+from scripts.notas_locales import local_link, summarize, assign_photos, _photo_score, is_sensitive_media, is_coyotepec_highway_crash, is_san_juan_del_rio_autopista57_closure, SENSITIVE_MEDIA_TITLE, SAN_JUAN_DEL_RIO_AUTOPISTA57_SOURCE_URL, is_infobae_tlalpan_animal_abuse, is_la_prensa_tlalpan_animal_case, INFOBAE_TLALPAN_ANIMAL_SOURCE_URL, LA_PRENSA_TLALPAN_ANIMAL_SOURCE_URL, is_imagen_tlalpan_dog_rescue, is_huixtla_migrant_caravan, is_vc_fatal_trailer_incident, EL_GRAFICO_VC_TRAILER_SOURCE_URL
 
 ROOT = Path(__file__).resolve().parent
 DEST = ROOT / "news.json"
@@ -442,6 +442,21 @@ def category_by_headline(title, feed_category, source=""):
         return "Movilidad"
     if re.search(r"\b(?:fallece motociclista|muere motociclista|motociclistas? fallecidos?)\b", normalized):
         return "Movilidad"
+    # Secuestros y privaciones de la libertad son Seguridad aunque el RSS diga CDMX.
+    if re.search(r"\b(?:secuestro|secuestrador(?:es)?|secuestrad[oa]s?|privacion de la libertad)\b", normalized):
+        return "Seguridad"
+    # Los delitos contra empresas, comercios y negocios pertenecen a Seguridad.
+    if re.search(r"\bdelitos?\s+(?:contra|a)\s+(?:empresas?|comercios?|negocios?)\b", normalized):
+        return "Seguridad"
+    # Una muerte por atropellamiento o arrastre de un tráiler es un siniestro vial.
+    if (re.search(r"\b(?:muere|murio|fallece|fallecio)\b", normalized)
+            and re.search(r"\b(?:arrastrad\w*|atropellad\w*|arrollad\w*)\b", normalized)
+            and re.search(r"\b(?:trailer|tractocamion|camion)\b", normalized)):
+        return "Movilidad"
+    # Los trenes interurbanos y sus obras son información de Movilidad.
+    if (re.search(r"\b(?:tren|ferrocarril)\b", normalized)
+            and re.search(r"\b(?:pachuca|guadalajara)\b", normalized)):
+        return "Movilidad"
     # Una detención de personas es seguridad, aunque el RSS venga de Gobierno.
     # Exigir "a" y una referencia humana evita confundirla con obras detenidas.
     if (feed_category in {"Gobierno", "CDMX"}
@@ -507,6 +522,26 @@ def standardize(article):
     if is_san_juan_del_rio_autopista57_closure({"title": title, "source": source, "date": date}):
         borough = ""
         location = "San Juan del Río, Querétaro (fuera de CDMX)"
+    if is_huixtla_migrant_caravan({"title": title, "source": source, "date": date}):
+        borough = ""
+        location = "Huixtla, Chiapas (fuera de CDMX)"
+    if is_vc_fatal_trailer_incident({"title": title, "source": source, "date": date}):
+        borough = "Venustiano Carranza"
+        location = "Venustiano Carranza, Ciudad de México"
+    normalized_title = "".join(
+        ch for ch in unicodedata.normalize("NFKD", title)
+        if not unicodedata.combining(ch)
+    ).casefold()
+    if "tren" in normalized_title and "pachuca" in normalized_title:
+        borough = ""
+        location = "Ruta CDMX–Pachuca (estación o tramo exacto no indicado)"
+    elif "tren" in normalized_title and "guadalajara" in normalized_title:
+        borough = ""
+        location = "Proyecto ferroviario CDMX–Guadalajara (tramo de obra no indicado)"
+    if ("busqueda metropolitana" in normalized_title
+            and "morelos" in normalized_title and "edomex" in normalized_title):
+        borough = ""
+        location = "Ámbito metropolitano: Morelos, CDMX y Estado de México (sede no indicada)"
     if is_infobae_tlalpan_animal_abuse({"title": title, "source": source, "date": date}):
         borough = "Tlalpan"
         location = "Tlalpan (confirmada en la nota original)"
@@ -534,6 +569,8 @@ def standardize(article):
         result["source_url"] = LA_PRENSA_TLALPAN_ANIMAL_SOURCE_URL
     elif is_infobae_tlalpan_animal_abuse(result):
         result["source_url"] = INFOBAE_TLALPAN_ANIMAL_SOURCE_URL
+    elif is_vc_fatal_trailer_incident(result):
+        result["source_url"] = EL_GRAFICO_VC_TRAILER_SOURCE_URL
     versions = article.get("alternate_versions")
     if isinstance(versions, list):
         preserved = []

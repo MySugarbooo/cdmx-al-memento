@@ -27,7 +27,9 @@ VERIFIED_EVENTS=ROOT/"assets/fotos/hechos-verificados.json"
 
 SENSITIVE_MEDIA_TITLE = re.compile(
     r"\b(?:violaci[oó]n|abuso sexual|agresi[oó]n sexual|acoso sexual|violencia sexual|"
-    r"maltrato animal|maltratador(?:es)? de animales?|abusador(?:es)? sexual(?:es)? de animales?|"
+    r"maltrato animal|maltratador(?:es)? de animales?|"
+    r"maltrat\w*\s+(?:(?:a|de)\s+)?(?:perros?|perritos?|gatos?|mascotas?|animales?)|"
+    r"abusador(?:es)? sexual(?:es)? de animales?|"
     r"crueldad animal|tortura animal|violencia contra animales?|"
     r"agresi[oó]n contra animales?|"
     r"(?:matar|matan|mat[oó]|mataron|asesinar|asesinan|asesin[oó]|"
@@ -56,6 +58,7 @@ def is_coyotepec_highway_crash(article):
 SAN_JUAN_DEL_RIO_AUTOPISTA57_SOURCE_URL = "https://oem.com.mx/elsoldesanjuandelrio/policiaca/toma-precauciones-si-viajas-a-la-cdmx-autopista-57-esta-detenida-33095499"
 LA_PRENSA_TLALPAN_ANIMAL_SOURCE_URL = "https://oem.com.mx/la-prensa/policiaca/detienen-a-otro-presunto-maltratador-de-animales-en-tlalpan-33095643"
 INFOBAE_TLALPAN_ANIMAL_SOURCE_URL = "https://www.infobae.com/mexico/2026/11/12/detienen-a-presunto-abusador-sexual-de-animales-en-situacion-de-calle-en-cdmx-activistas-piden-que-las-investigaciones-lleguen-a-fondo/"
+EL_GRAFICO_VC_TRAILER_SOURCE_URL = "https://www.elgrafico.mx/la-roja/2026/11/12/el-morenito-muere-tras-ser-arrastrado-varios-metros-por-un-trailer-en-venustiano-carranza/?outputType=amp"
 
 
 def is_imagen_tlalpan_dog_rescue(article):
@@ -111,6 +114,37 @@ def is_san_juan_del_rio_autopista57_closure(article):
     )
 
 
+def is_huixtla_migrant_caravan(article):
+    """Identifica el titular de El Financiero sobre la caravana llegada a Huixtla."""
+    title = unicodedata.normalize("NFKD", str(article.get("title") or ""))
+    title = "".join(ch for ch in title if not unicodedata.combining(ch)).casefold()
+    source = unicodedata.normalize("NFKD", str(article.get("source") or ""))
+    source = "".join(ch for ch in source if not unicodedata.combining(ch)).casefold().strip()
+    return (
+        str(article.get("date") or "") == "2026-11-12"
+        and source == "el financiero"
+        and "caravana migrante" in title
+        and "huixtla" in title
+        and "chiapas" in title
+        and "rumbo a cdmx" in title
+    )
+
+
+def is_vc_fatal_trailer_incident(article):
+    """Identifica el siniestro fatal de El Gráfico en Venustiano Carranza."""
+    title = unicodedata.normalize("NFKD", str(article.get("title") or ""))
+    title = "".join(ch for ch in title if not unicodedata.combining(ch)).casefold()
+    source = unicodedata.normalize("NFKD", str(article.get("source") or ""))
+    source = "".join(ch for ch in source if not unicodedata.combining(ch)).casefold().strip()
+    return (
+        str(article.get("date") or "") == "2026-11-12"
+        and source == "el grafico"
+        and "morenito" in title
+        and "trailer" in title
+        and "arrastrado" in title
+    )
+
+
 def is_sensitive_media(article):
     """Impide fotos de contexto en noticias sensibles o accidentes graves sin imagen verificada."""
     return (
@@ -118,6 +152,7 @@ def is_sensitive_media(article):
         or bool(SENSITIVE_MEDIA_TITLE.search(str(article.get("title") or "")))
         or is_coyotepec_highway_crash(article)
         or is_san_juan_del_rio_autopista57_closure(article)
+        or is_vc_fatal_trailer_incident(article)
     )
 
 
@@ -396,6 +431,53 @@ def summarize(article):
     source=str(article.get("source") or "un medio periodístico").strip()
     category=str(article.get("category") or "CDMX")
     theme=TAGS.get(category,TAGS["CDMX"])
+    if is_huixtla_migrant_caravan(article):
+        return {
+            "lead": (
+                "El Financiero reportó que la caravana migrante «Dios con nosotros» llegó a Huixtla, "
+                "Chiapas, y que más de 500 personas avanzaban por ese estado rumbo a CDMX. "
+                "La referencia a la capital es el destino del recorrido, no el lugar donde ocurrió la llegada."
+            ),
+            "context": (
+                "La ubicación indicada por el titular es Huixtla, Chiapas, fuera de CDMX. "
+                "La nota se conserva por la relación del recorrido con la capital, pero no se presenta "
+                "como un hecho ocurrido en una alcaldía."
+            ),
+            "pending": (
+                "El tamaño del contingente y su itinerario pueden cambiar. El índice RSS no reproduce "
+                "el reportaje íntegro; cualquier actualización de la ruta debe corroborarse con autoridades "
+                "migratorias y coberturas posteriores."
+            ),
+            "method": (
+                "Síntesis editorial basada en el titular y los metadatos de El Financiero del 12 de noviembre "
+                "de 2026. No equivale a lectura íntegra del reportaje ni a verificación independiente del "
+                "número de personas."
+            ),
+        }
+    if is_vc_fatal_trailer_incident(article):
+        return {
+            "lead": (
+                "El Gráfico informó que un hombre conocido como «El Morenito» murió después de ser "
+                "atropellado y arrastrado por un tráiler en el cruce de avenida del Taller y Lorenzo Boturini, "
+                "colonia Lorenzo Boturini, alcaldía Venustiano Carranza. El medio atribuyó al operador un "
+                "presunto cruce de semáforo en rojo; esa versión se atribuye al reportaje y no se presenta "
+                "como determinación oficial."
+            ),
+            "context": (
+                "El hecho ocurrió en Venustiano Carranza y corresponde a un siniestro vial fatal. "
+                "Se omite la descripción gráfica del accidente y no se atribuye responsabilidad penal."
+            ),
+            "pending": (
+                "La mecánica del accidente y cualquier responsabilidad deben confirmarse con la FGJCDMX "
+                "y los informes de tránsito. La versión sobre el semáforo en rojo es la que atribuye "
+                "El Gráfico al reporte, no una resolución judicial."
+            ),
+            "method": (
+                "Síntesis editorial basada en la publicación de Tania Aguilar en El Gráfico, "
+                "12 de noviembre de 2026: " + EL_GRAFICO_VC_TRAILER_SOURCE_URL
+                + ". No constituye verificación independiente."
+            ),
+        }
     # Encabezar con el dato específico y comprobable del RSS, no con una
     # explicación genérica que pueda corresponder a otra noticia.
     first=(f"De acuerdo con {source}, el titular publicado es: «{title}». "
@@ -900,6 +982,14 @@ def _photo_category(article):
         return "Seguridad"
     if re.search(r"\b(?:detienen|arrestan|capturan|aprehenden)\s+a\s+(?:\d+|un|una|dos|tres|cuatro|cinco|seis|personas|hombres|mujeres)\b", headline):
         return "Seguridad"
+    if re.search(r"\b(?:secuestro|secuestrador(?:es)?|secuestrad[oa]s?|privacion de la libertad)\b", headline):
+        return "Seguridad"
+    if re.search(r"\bdelitos?\s+(?:contra|a)\s+(?:empresas?|comercios?|negocios?)\b", headline):
+        return "Seguridad"
+    if (re.search(r"\b(?:muere|murio|fallece|fallecio)\b", headline)
+            and re.search(r"\b(?:arrastrad\w*|atropellad\w*|arrollad\w*)\b", headline)
+            and re.search(r"\b(?:trailer|tractocamion|camion)\b", headline)):
+        return "Movilidad"
     for pattern,category in SUBJECT_RULES:
         if re.search(pattern,headline):
             return category
@@ -959,7 +1049,7 @@ STRICT_PHOTO_TOPICS = (
      r"\b(?:foro urbano|urbanismo|onu habitat|conferencias?|planeacion urbana|ciudades|vivienda|arquitectura)\b"),
     (r"\bnascar\b",
      r"\b(?:nascar|automovilismo|autodromo|carreras? de autos?|vehiculos? de carreras?|circuito de carreras?)\b"),
-    (r"\bezln\b.*\bbuscadoras?\b",
+    (r"\bezln\b.*\bbuscador(?:es|a|as)?\b",
      r"\b(?:ezln|zapatistas?|colectivos? de busqueda|madres? buscadoras?|personas desaparecidas|manifestaciones?|protestas?)\b"),
     # El mismo municipio no convierte un jardín o monumento en imagen de búsqueda.
     (r"\b(?:caminata\b.*\b(?:recuperar a su hija|buscando a su hija)|madres? buscadoras?)\b",
@@ -1165,7 +1255,16 @@ STRICT_PHOTO_TOPICS = (
     # Los bloqueos anunciados por repartidores requieren protesta, reparto o vialidad.
     (r"\b(?:repartidores? anuncian? bloqueos?|repartidores? bloquean? zona|bloqueos? de repartidores?)\b",
      r"\b(?:bloqueo|protesta|manifestacion|repartidor|motocicleta|trafico|transito|vialidad|calle)\b"),
-     # NFL y fútbol americano requieren contexto deportivo, no Metro ni un monumento.
+     # Los trenes interurbanos requieren una fotografía ferroviaria, no un monumento de CDMX.
+    (r"\b(?:primer tren|tren de pasajeros|ruta cdmx[- ]pachuca|tren ciudad de mexico[- ]guadalajara|ruta ciudad de mexico[- ]pachuca)\b",
+     r"\b(?:tren de pasajeros|ferrocarril|locomotora|vagones?|vias? ferreas|tren interurbano|tren de larga distancia)\b"),
+    # Una caravana migrante no se ilustra con deportes u otros asuntos sin relación.
+    (r"\b(?:caravana migrante|caravana de migrantes?|migrantes? avanzan)\b",
+     r"\b(?:caravana migrante|caravana de migrantes?|migrantes?|personas migrantes|refugiados?|migracion|estacion migratoria|albergue migrante)\b"),
+    # La búsqueda metropolitana requiere contexto de búsqueda de personas, no una graduación policial.
+    (r"\b(?:busqueda metropolitana|busqueda metropolitana triple frontera|fiscalias? de morelos.*cdmx.*edomex)\b",
+     r"\b(?:busqueda de personas|personas desaparecidas|colectivos? de busqueda|familias? buscadoras?|rastreo|busqueda de campo)\b"),
+    # NFL y fútbol americano requieren contexto deportivo, no Metro ni un monumento.
      (r"\b(?:nfl|futbol americano|san francisco 49ers|minnesota vikings)\b",
       r"\b(?:american football|futbol americano|field goal|emparrillado|balon de futbol americano|partido de futbol americano)\b"),
     # Una pipa de gas volcada requiere contexto de combustible o respuesta de bomberos.
@@ -1316,7 +1415,7 @@ def _photo_score(article, photo):
     # En robos, asaltos y extorsiones, la coincidencia de alcaldía no basta:
     # exigir una imagen con contexto de seguridad antes de puntuar el lugar.
     crime_story = bool(re.search(
-        r"\b(?:robo|robos|roban|robado|robada|robaron|robar|decomis\w*|incaut\w*|asegur\w*|asalto|asaltan|ataques? armados?|extorsion|extorsionan|ejecutan|ejecutad\w*|ejecucion|asesina(?:n)?|asesinad\w*|asesinato|homicidio|matan|balazos|balacera)\b",
+        r"\b(?:robo|robos|roban|robado|robada|robaron|robar|decomis\w*|incaut\w*|asegur\w*|asalto|asaltan|ataques? armados?|extorsion|extorsionan|ejecutan|ejecutad\w*|ejecucion|asesina(?:n)?|asesinad\w*|asesinato|homicidio|matan|balazos|balacera|secuestro|secuestrador(?:es)?|secuestrad[oa]s?|privacion de la libertad|delitos?\s+(?:contra|a)\s+(?:empresas?|comercios?|negocios?))\b",
         headline,
     ))
     crime_context = bool(re.search(

@@ -828,5 +828,129 @@ class PhotoRelevanceTests(unittest.TestCase):
         self.assertNotIn("photo", article)
 
 
+    def test_intercity_train_articles_reject_city_landmarks_and_light_rail_photos(self):
+        titles = (
+            "Llega a México el primer tren de la ruta CDMX-Pachuca; tendrá capacidad para 893 pasajeros",
+            "Llega a México el primer tren de pasajeros que conectará la CDMX con Pachuca",
+            "Obras de construcción del Tren Ciudad de México-Guadalajara inician en diciembre: SICT",
+            "Llega la primera unidad del tren que dará servicio en la ruta Ciudad de México-Pachuca",
+        )
+        landmark = {
+            "id": "angel_cdmx",
+            "category": "CDMX",
+            "topic": "Ángel de la Ciudad de México",
+            "keywords": ["Ciudad de México", "monumento"],
+        }
+        light_rail = {
+            "id": "tren_ligero_cdmx",
+            "category": "Movilidad",
+            "topic": "Tren Ligero de la Ciudad de México",
+            "keywords": ["tren ligero", "movilidad"],
+        }
+        for index, title in enumerate(titles):
+            with self.subTest(title=title):
+                article = news.standardize({
+                    "title": title,
+                    "url": f"https://news.google.com/rss/articles/intercity-train-photo-{index}",
+                    "source": "N+",
+                    "date": "2026-11-12",
+                    "category": "CDMX",
+                    "photo": landmark,
+                })
+                self.assertEqual(article["category"], "Movilidad")
+                self.assertLess(_photo_score(article, landmark), 0)
+                self.assertLess(_photo_score(article, light_rail), 0)
+                with patch.object(photos, "_pool", return_value=[landmark, light_rail]), patch.object(
+                    photos, "_load", return_value=[]
+                ):
+                    assign_photos([article])
+                self.assertNotIn("photo", article)
+
+    def test_kidnapping_and_business_crime_reject_landmarks_traffic_and_graduations(self):
+        titles = (
+            "Caen tres secuestradores en la alcaldía Venustiano Carranza",
+            "Policías de la CDMX rescataron a un hombre secuestrado en La Merced al detener a tres sujetos",
+            "Caen 35.6% los delitos contra empresas y comercios en CDMX, presume Pablo Vázquez",
+        )
+        photos_to_reject = (
+            {
+                "id": "zocalo",
+                "category": "CDMX",
+                "topic": "Zócalo de la Ciudad de México",
+                "keywords": ["Centro Histórico"],
+            },
+            {
+                "id": "policia_transito",
+                "category": "Seguridad",
+                "topic": "Policía de tránsito Ciudad de México marcando alto a auto",
+                "keywords": ["policía de tránsito", "automovilistas"],
+            },
+            {
+                "id": "graduacion_policia",
+                "category": "Seguridad",
+                "topic": "Graduación de la Policía de la Ciudad de México",
+                "keywords": ["policía", "graduación"],
+            },
+        )
+        for index, title in enumerate(titles):
+            with self.subTest(title=title):
+                article = news.standardize({
+                    "title": title,
+                    "url": f"https://news.google.com/rss/articles/kidnapping-crime-photo-{index}",
+                    "source": "N+",
+                    "date": "2026-11-12",
+                    "category": "CDMX",
+                })
+                self.assertEqual(article["category"], "Seguridad")
+                for photo in photos_to_reject:
+                    self.assertLess(_photo_score(article, photo), 0)
+                with patch.object(photos, "_pool", return_value=list(photos_to_reject)), patch.object(
+                    photos, "_load", return_value=[]
+                ):
+                    assign_photos([article])
+                self.assertNotIn("photo", article)
+
+    def test_metropolitan_search_and_ezln_collective_reject_unrelated_photos(self):
+        graduation = {
+            "id": "police_graduation",
+            "category": "Seguridad",
+            "topic": "Graduación de la Policía de la Ciudad de México",
+            "keywords": ["policía", "graduación"],
+        }
+        monument = {
+            "id": "monumento_revolucion",
+            "category": "CDMX",
+            "topic": "Monumento a la Revolución CDMX 2",
+            "keywords": ["Monumento a la Revolución"],
+        }
+        cases = (
+            (
+                "Fiscalías de Morelos, CDMX y Edomex se unen en la primera Búsqueda Metropolitana Triple Frontera",
+                "Gobierno",
+                graduation,
+            ),
+            (
+                "EZLN pide perdón a colectivo buscador, tras rechazar reunión en la Glorieta de las y los desaparecidos en CDMX",
+                "CDMX",
+                monument,
+            ),
+        )
+        for index, (title, category, wrong_photo) in enumerate(cases):
+            with self.subTest(title=title):
+                article = news.standardize({
+                    "title": title,
+                    "url": f"https://news.google.com/rss/articles/metropolitan-search-photo-{index}",
+                    "source": "Medio de prueba",
+                    "date": "2026-11-12",
+                    "category": category,
+                })
+                self.assertLess(_photo_score(article, wrong_photo), 0)
+                with patch.object(photos, "_pool", return_value=[wrong_photo]), patch.object(
+                    photos, "_load", return_value=[]
+                ):
+                    assign_photos([article])
+                self.assertNotIn("photo", article)
+
+
 if __name__ == "__main__":
     unittest.main()
