@@ -52,6 +52,9 @@ def is_coyotepec_highway_crash(article):
     )
 
 
+SAN_JUAN_DEL_RIO_AUTOPISTA57_SOURCE_URL = "https://oem.com.mx/elsoldesanjuandelrio/policiaca/toma-precauciones-si-viajas-a-la-cdmx-autopista-57-esta-detenida-33095499"
+
+
 def is_san_juan_del_rio_autopista57_closure(article):
     """Identifica el aviso de la autopista 57 ubicado en San Juan del Río."""
     title = unicodedata.normalize("NFKD", str(article.get("title") or ""))
@@ -60,7 +63,7 @@ def is_san_juan_del_rio_autopista57_closure(article):
     source = "".join(ch for ch in source if not unicodedata.combining(ch)).casefold().strip()
     return (
         str(article.get("date") or "") == "2026-11-12"
-        and source == "el sol de mexico"
+        and source in {"el sol de mexico", "el sol de san juan del rio"}
         and "autopista 57" in title
         and "esta detenida" in title
     )
@@ -389,10 +392,10 @@ def summarize(article):
     if is_san_juan_del_rio_autopista57_closure(article):
         return {
             "lead": (
-                "El listado local de Diario de Querétaro presenta este mismo titular y lo acompaña "
-                "con un extracto que ubica las filas kilométricas por cierres derivados de accidentes "
-                "en territorio de San Juan del Río, Querétaro. El extracto no precisa el número de "
-                "accidentes, el tramo exacto ni su duración, por lo que no añadimos esas cifras."
+                "La publicación de El Sol de San Juan del Río, firmada por Mario Luna / Diario de Querétaro, "
+                "informa que cierres producidos por accidentes mantienen filas kilométricas de vehículos "
+                "en la autopista 57, en territorio de San Juan del Río, Querétaro. El extracto no precisa "
+                "el número de accidentes, el tramo exacto ni su duración, por lo que no añadimos esas cifras."
             ),
             "context": (
                 "La afectación descrita está en San Juan del Río, Querétaro, fuera de la Ciudad de México. "
@@ -403,10 +406,10 @@ def summarize(article):
                 "con CAPUFE y Guardia Nacional antes de viajar."
             ),
             "method": (
-                "Síntesis editorial basada en el titular atribuido a El Sol de México y en el extracto "
-                "del mismo titular en la sección Local de Diario de Querétaro, que sitúa las filas en "
-                "San Juan del Río. El extracto no reproduce la nota completa y no constituye una "
-                "verificación independiente."
+                "Síntesis editorial basada en la publicación de El Sol de San Juan del Río del 12 de "
+                "noviembre de 2026, firmada por Mario Luna / Diario de Querétaro: "
+                "https://oem.com.mx/elsoldesanjuandelrio/policiaca/toma-precauciones-si-viajas-a-la-cdmx-autopista-57-esta-detenida-33095499. El extracto visible no reproduce el reportaje íntegro y no constituye "
+                "una verificación independiente."
             ),
         }
     if (article.get("date") == "2026-11-12"
