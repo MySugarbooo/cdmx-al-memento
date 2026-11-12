@@ -15,6 +15,47 @@ class PhotoRelevanceTests(unittest.TestCase):
         self.assertEqual(category_by_headline(
             "Policía utiliza robot para investigar un robo", "Seguridad"), "Seguridad")
 
+    def test_robar_infinitive_classifies_store_robbery_and_rejects_city_landmark(self):
+        title = ("2996: En la alcaldía Venustiano Carranza, efectivos de la SSC "
+                 "detuvieron a dos posibles responsables de robar dinero en efectivo "
+                 "de una tienda de conveniencia")
+        source = "Secretaría de Seguridad Ciudadana de la CDMX"
+        self.assertEqual(category_by_headline(title, "CDMX", source), "Seguridad")
+        article = news.standardize({
+            "title": title,
+            "url": "https://news.google.com/rss/articles/robbery-ssc-regression",
+            "source": source,
+            "date": "2026-11-12",
+            "category": "CDMX",
+            "photo": {
+                "id": "commons_36264294",
+                "category": "CDMX",
+                "topic": "Monumento a Colón Paseo de la Reforma Ciudad de México 2",
+                "keywords": ["Paseo de la Reforma Ciudad de México"],
+                "author": "ProtoplasmaKid",
+                "license": "CC BY-SA 4.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "https://commons.wikimedia.org/wiki/File:Monumento_a_Col%C3%B3n_Paseo_de_la_Reforma_Ciudad_de_M%C3%A9xico_2.jpg",
+                "url": "/assets/fotos/monumento-colon.jpg",
+            },
+        })
+        self.assertEqual(article["category"], "Seguridad")
+        landmark = {
+            "category": "CDMX",
+            "topic": "Monumento a Colón Paseo de la Reforma Ciudad de México 2",
+            "keywords": ["Paseo de la Reforma Ciudad de México"],
+        }
+        patrol = {
+            "category": "Seguridad",
+            "topic": "Patrulla de Ciudad de México",
+            "keywords": ["policía CDMX"],
+        }
+        self.assertLess(_photo_score(article, landmark), 0)
+        self.assertGreaterEqual(_photo_score(article, patrol), 0)
+        assign_photos([article])
+        self.assertEqual(article["photo"]["category"], "Seguridad")
+        self.assertGreaterEqual(_photo_score(article, article["photo"]), 0)
+
     def test_execution_headline_uses_security_and_rejects_ciclovia_photo(self):
         title = "VIDEO | Ejecutan a un hombre en la colonia Libertad, alcaldía Azcapotzalco"
         self.assertEqual(category_by_headline(title, "CDMX"), "Seguridad")
