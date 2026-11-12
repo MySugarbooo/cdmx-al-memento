@@ -392,5 +392,25 @@ class PhotoRelevanceTests(unittest.TestCase):
         self.assertGreaterEqual(_photo_score(article, patrol), 0)
 
 
+    def test_cine_de_barrio_rejects_unrelated_museum_photo(self):
+        title = "Festival Cine de Barrio llega a la CDMX con películas, karaoke y rodada con entrada gratuita"
+        category = category_by_headline(title, "CDMX")
+        self.assertEqual(category, "Cultura")
+        article = {"title": title, "category": category, "borough": ""}
+        self.assertEqual(_photo_category(article), "Cultura")
+        museum = {
+            "category": "CDMX",
+            "topic": "Entrada al Museo Nacional de Antropología de México",
+            "keywords": ["Museo Nacional de Antropología Ciudad de México"],
+        }
+        cinema = {
+            "category": "Alcaldías",
+            "topic": "Bosquecinema, Bosque de Tlalpan, Ciudad de México",
+            "keywords": ["Tlalpan Ciudad de México"],
+        }
+        self.assertLess(_photo_score(article, museum), 0)
+        self.assertGreaterEqual(_photo_score(article, cinema), 0)
+
+
 if __name__ == "__main__":
     unittest.main()
