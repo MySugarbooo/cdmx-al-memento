@@ -3,10 +3,24 @@ on:
   workflow_dispatch:
   schedule:
     - cron: '41 */6 * * *'
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/check-public-seo.yml'
+      - 'scripts/check_public_seo.py'
+      - 'comunidad/index.html'
+      - 'assets/comments.js'
+      - 'assets/comments-config.js'
+      - 'functions/api/engagement.js'
+  workflow_run:
+    workflows: ["Generate crawlable article pages"]
+    types: [completed]
+    branches: [main]
 permissions:
   contents: read
 jobs:
   public-check:
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -20,7 +34,7 @@ jobs:
         run: |
           set -uo pipefail
           failed=0
-          for path in /robots.txt /sitemap.xml /sitemap-articulos.xml /articulos/cea4c461a4f0251f4cb5/; do
+          for path in /robots.txt /sitemap.xml /sitemap-articulos.xml /comunidad/ /assets/comments.js /assets/comments-config.js /articulos/cea4c461a4f0251f4cb5/ /articulos/b37ba45fa2fa424b73bd/; do
             url="https://cdmx-al-memento.pages.dev${path}"
             echo "::group::${url}"
             response=$(curl --location --silent --show-error --max-time 25 --retry 2 --retry-delay 3 --output /dev/null --write-out '%{http_code} %{content_type} %{url_effective}' "${url}") || response="000 connection-error ${url}"
