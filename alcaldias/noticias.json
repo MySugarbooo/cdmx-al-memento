@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-12 22:39 UTC",
+  "updated": "2026-11-12 22:49 UTC",
   "boroughs": [
     {
       "name": "La Magdalena Contreras",
@@ -2550,19 +2550,19 @@
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           },
           "photo": {
-            "id": "commons_48010489",
+            "id": "seguridad",
             "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Polic%C3%ADa_controlando_el_sem%C3%A1foro%2C_Ciudad_de_M%C3%A9xico.jpg/960px-Polic%C3%ADa_controlando_el_sem%C3%A1foro%2C_Ciudad_de_M%C3%A9xico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "url": "/assets/fotos/seguridad.jpg",
             "category": "Seguridad",
             "borough": "",
-            "topic": "Policía controlando el semáforo, Ciudad de México",
+            "topic": "Patrulla de Ciudad de México",
             "keywords": [
-              "Policía Ciudad de México"
+              "Seguridad"
             ],
-            "author": "ProtoplasmaKid",
+            "author": "RainerRowe",
             "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Polic%C3%ADa_controlando_el_sem%C3%A1foro,_Ciudad_de_M%C3%A9xico.jpg"
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.es",
+            "source": "https://commons.wikimedia.org/wiki/File:Patrulla_cdmx.jpg"
           }
         },
         {
@@ -2686,19 +2686,19 @@
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           },
           "photo": {
-            "id": "commons_48010489",
+            "id": "archivo_seguridad_005",
             "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Polic%C3%ADa_controlando_el_sem%C3%A1foro%2C_Ciudad_de_M%C3%A9xico.jpg/960px-Polic%C3%ADa_controlando_el_sem%C3%A1foro%2C_Ciudad_de_M%C3%A9xico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "url": "/assets/fotos/archivo_seguridad_005.jpg",
             "category": "Seguridad",
             "borough": "",
-            "topic": "Policía controlando el semáforo, Ciudad de México",
+            "topic": "Jeep policia cdmx",
             "keywords": [
-              "Policía Ciudad de México"
+              "Seguridad"
             ],
-            "author": "ProtoplasmaKid",
+            "author": "Gobierno de la Ciudad de México",
             "license": "CC BY-SA 4.0",
             "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Polic%C3%ADa_controlando_el_sem%C3%A1foro,_Ciudad_de_M%C3%A9xico.jpg"
+            "source": "https://commons.wikimedia.org/wiki/File:Jeep_policia_cdmx.jpg"
           }
         },
         {
@@ -2890,21 +2890,6 @@
             "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           },
-          "photo": {
-            "id": "commons_48010489",
-            "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Polic%C3%ADa_controlando_el_sem%C3%A1foro%2C_Ciudad_de_M%C3%A9xico.jpg/960px-Polic%C3%ADa_controlando_el_sem%C3%A1foro%2C_Ciudad_de_M%C3%A9xico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "category": "Seguridad",
-            "borough": "",
-            "topic": "Policía controlando el semáforo, Ciudad de México",
-            "keywords": [
-              "Policía Ciudad de México"
-            ],
-            "author": "ProtoplasmaKid",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Polic%C3%ADa_controlando_el_sem%C3%A1foro,_Ciudad_de_M%C3%A9xico.jpg"
-          },
           "alternate_versions": [
             {
               "title": "Asesinan a Balazos a un Hombre en Azcapotzalco, CDMX; Fiscalía Investiga el Crimen",
@@ -2939,7 +2924,22 @@
                 "source": "https://commons.wikimedia.org/wiki/File:Polic%C3%ADa_controlando_el_sem%C3%A1foro,_Ciudad_de_M%C3%A9xico.jpg"
               }
             }
-          ]
+          ],
+          "photo": {
+            "id": "archivo_seguridad_002",
+            "kind": "representativa",
+            "url": "/assets/fotos/archivo_seguridad_002.jpg",
+            "category": "Seguridad",
+            "borough": "",
+            "topic": "Patrulla vecinal",
+            "keywords": [
+              "Seguridad"
+            ],
+            "author": "Daniel Yonka",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Patrulla_vecinal.jpg"
+          }
         },
         {
           "title": "Ataque a Balazos en Azcapotzalco: Así Fue el Asesinato de un Hombre en la Colonia Libertad",
@@ -4108,8 +4108,41 @@
     },
     {
       "name": "Coyoacán",
-      "count": 179,
+      "count": 180,
       "articles": [
+        {
+          "title": "Muere profesor dentro de las instalaciones del CCH Sur de la UNAM en alcaldía Coyoacán",
+          "description": "De acuerdo con Infobae, el titular publicado es: «Muere profesor dentro de las instalaciones del CCH Sur de la UNAM en alcaldía Coyoacán». La información publicada por Infobae aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNZTdRVXhxa3VuNmFJRWwtZTdqbzVMOFNFdjJESzloQlN2YS1UUXE2V1BEZzNrSnJVNG9xSFBLUkl6VUNRX2pXdjBxS0FzcFo1bmYwTUhGREdpa191ZVhUcWhiOEROcHU5bmRfa01vTnhCLWZrV21ydUxtUlEyaGUxQ1lFbVlvWERBSWNxVGFQT3owSmc0N2hPa1EzRTZ4SVNXVU5kQ0N6eEY2X1hjd1dYdEtvU29jcFRrNjl6VDRmM2JQMkJoTkNjNNIB4wFBVV95cUxPQVF0WC05N2V0Z0xhUnhyLTJwVEhjOWIwVnZteWhEazZNTWxYamJnbDNncEpUSVU3QV9yWDRKN0ZGNUt1MmFfUG1JUmNUbWhwdXZRWUkzc0hpOGpIeDRtZTZwU1ZBTy1nM2VrWldKRVlQT0Z2Mkx5eFZLSFg0MVl3U0RQdUpSMHpMb2hYd1dWblhuVGZ5dHFUQ19GMEtqaG9wTGpxRm82NzBHcVE4M1J5WVdFc2RfbFBCX2lfWHJROVlCU0I5MnkxLWhNZnhiLUN5UGt1dk9DMnNRakZhMy1HbEJwRQ?oc=5",
+          "source": "Infobae",
+          "date": "2026-11-12",
+          "published_at": "2026-11-12T22:41:00Z",
+          "category": "CDMX",
+          "borough": "Coyoacán",
+          "location": "Coyoacán (mencionada en el titular)",
+          "local_url": "/noticias/?id=f040fa23fb251d904dcb&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con Infobae, el titular publicado es: «Muere profesor dentro de las instalaciones del CCH Sur de la UNAM en alcaldía Coyoacán». La información publicada por Infobae aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "commons_106559902",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/4._Coyoac%C3%A1n_banca_Ciudad_de_M%C3%A9xico.jpg/960px-4._Coyoac%C3%A1n_banca_Ciudad_de_M%C3%A9xico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "category": "CDMX",
+            "borough": "",
+            "topic": "4. Coyoacán banca Ciudad de México",
+            "keywords": [
+              "CDMX"
+            ],
+            "author": "Machristen",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:4._Coyoac%C3%A1n_banca_Ciudad_de_M%C3%A9xico.jpg"
+          }
+        },
         {
           "title": "¿Qué está pasando en Coyoacán? Por esta razón los vecinos protestan contra Skyline",
           "description": "De acuerdo con Milenio, el titular publicado es: «¿Qué está pasando en Coyoacán? Por esta razón los vecinos protestan contra Skyline». La información publicada por Milenio aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -4644,6 +4677,24 @@
           "borough": "Coyoacán",
           "location": "Coyoacán (mencionada en el titular)",
           "local_url": "/noticias/?id=3f07a0120517774821b6&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con El Sol de México, el titular publicado es: «Tomás Pliego llama a no obstaculizar la participación ciudadana tras cancelación de foro en Coyoacán». La información publicada por El Sol de México aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_coyoacan",
+            "kind": "representativa",
+            "url": "/assets/alcaldias/coyoacan.jpg",
+            "category": "CDMX",
+            "borough": "Coyoacán",
+            "topic": "Jardín Centenario de Coyoacán",
+            "author": "AlejandroLinaresGarcia",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:JardinCentenarioCoyoacan.JPG"
+          },
           "alternate_versions": [
             {
               "title": "Tomás Pliego llama a no obstaculizar la participación ciudadana tras cancelación de foro en Coyoacán",
@@ -4705,25 +4756,7 @@
                 "source": "https://commons.wikimedia.org/wiki/File:JardinCentenarioCoyoacan.JPG"
               }
             }
-          ],
-          "brief": {
-            "lead": "De acuerdo con El Sol de México, el titular publicado es: «Tomás Pliego llama a no obstaculizar la participación ciudadana tras cancelación de foro en Coyoacán». La información publicada por El Sol de México aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "alcaldia_coyoacan",
-            "kind": "representativa",
-            "url": "/assets/alcaldias/coyoacan.jpg",
-            "category": "CDMX",
-            "borough": "Coyoacán",
-            "topic": "Jardín Centenario de Coyoacán",
-            "author": "AlejandroLinaresGarcia",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:JardinCentenarioCoyoacan.JPG"
-          }
+          ]
         },
         {
           "title": "“No a Skyline”; vecinos de Coyoacán protestan y se amparan contra megaproyecto inmobiliario",
@@ -5168,27 +5201,6 @@
           "borough": "Coyoacán",
           "location": "Coyoacán (mencionada en el titular)",
           "local_url": "/noticias/?id=7f5503d5ceb99568cb94&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con CDMX Magacín, el titular publicado es: «Respalda PAN a diputado Rubio y su defensa de familias en Coyoacán». La información publicada por CDMX Magacín aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "commons_106559901",
-            "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/1._Coyoac%C3%A1n_Ciudad_de_M%C3%A9xico.jpg/960px-1._Coyoac%C3%A1n_Ciudad_de_M%C3%A9xico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "category": "CDMX",
-            "borough": "",
-            "topic": "1. Coyoacán Ciudad de México",
-            "keywords": [
-              "CDMX"
-            ],
-            "author": "Machristen",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:1._Coyoac%C3%A1n_Ciudad_de_M%C3%A9xico.jpg"
-          },
           "alternate_versions": [
             {
               "title": "Respalda PAN a diputado Rubio y reconoce su defensa de familias de Coyoacán",
@@ -5253,7 +5265,28 @@
                 "source": "https://commons.wikimedia.org/wiki/File:1._Coyoac%C3%A1n_Ciudad_de_M%C3%A9xico.jpg"
               }
             }
-          ]
+          ],
+          "brief": {
+            "lead": "De acuerdo con CDMX Magacín, el titular publicado es: «Respalda PAN a diputado Rubio y su defensa de familias en Coyoacán». La información publicada por CDMX Magacín aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "commons_106559901",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/1._Coyoac%C3%A1n_Ciudad_de_M%C3%A9xico.jpg/960px-1._Coyoac%C3%A1n_Ciudad_de_M%C3%A9xico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "category": "CDMX",
+            "borough": "",
+            "topic": "1. Coyoacán Ciudad de México",
+            "keywords": [
+              "CDMX"
+            ],
+            "author": "Machristen",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:1._Coyoac%C3%A1n_Ciudad_de_M%C3%A9xico.jpg"
+          }
         },
         {
           "title": "PAN buscará refrendar Cuauhtémoc y Coyoacán en elecciones 2027",
@@ -5519,24 +5552,6 @@
             "license": "CC BY-SA 4.0",
             "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
             "source": "https://commons.wikimedia.org/wiki/File:Casa_Centro_Hist%C3%B3rico_de_la_Ciudad_de_M%C3%A9xico_03.jpg"
-          }
-        },
-        {
-          "title": "Clima en Coyoacán hoy domingo 8 de noviembre: ambiente templado con nubes dispersas",
-          "description": "De acuerdo con El Heraldo de México, el titular publicado es: «Clima en Coyoacán hoy domingo 8 de noviembre: ambiente templado con nubes dispersas». El pronóstico recogido por El Heraldo de México se refiere a condiciones meteorológicas en Coyoacán. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
-          "url": "https://news.google.com/rss/articles/CBMingJBVV95cUxNcUxlb1pFWWxGTXVrRzR6c0dxSHM3SENFSGN0djlISWJEM3lFZjktU3BSTGVlTl9UQ0g2bWJXYWVHa21ZVnRzRFc5dTJNd1V0WWVFcWM3NE1rMXVhcEpsdGFQclQ4cGhzTnFpbnN5WHNVRTNiT3BGa1hyd2NCZi1pYjFEMW9lbEpiaHpxWnRQS1ZYQVpjRzAycVZVOVFYMlFsbVZTN1ZLUDFVRGNkaXBKOVozczNtcDloQ2dlRTc2NkdFejA1blVEbGFJVF82bVNRU254cy1JdndhcXE1dlNNRzZkUmYxOEkxVEE5QjdzajV2VFpnSG12VHU1UHkwQnJGSk9oMzNHSjFpRnJFeXEtaXBjYnZsUTNRWkE2Z1Rn?oc=5",
-          "source": "El Heraldo de México",
-          "date": "2026-11-07",
-          "published_at": "2026-11-08T05:00:31Z",
-          "category": "CDMX",
-          "borough": "Coyoacán",
-          "location": "Coyoacán (mencionada en el titular)",
-          "local_url": "/noticias/?id=72032d54c50755a865d3&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con El Heraldo de México, el titular publicado es: «Clima en Coyoacán hoy domingo 8 de noviembre: ambiente templado con nubes dispersas». El pronóstico recogido por El Heraldo de México se refiere a condiciones meteorológicas en Coyoacán. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           }
         }
       ]
@@ -7190,19 +7205,19 @@
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           },
           "photo": {
-            "id": "commons_48010489",
+            "id": "archivo_seguridad_003",
             "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Polic%C3%ADa_controlando_el_sem%C3%A1foro%2C_Ciudad_de_M%C3%A9xico.jpg/960px-Polic%C3%ADa_controlando_el_sem%C3%A1foro%2C_Ciudad_de_M%C3%A9xico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "url": "/assets/fotos/archivo_seguridad_003.jpg",
             "category": "Seguridad",
             "borough": "",
-            "topic": "Policía controlando el semáforo, Ciudad de México",
+            "topic": "Adquisición patrullas para la Policía 02",
             "keywords": [
-              "Policía Ciudad de México"
+              "Seguridad"
             ],
-            "author": "ProtoplasmaKid",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Polic%C3%ADa_controlando_el_sem%C3%A1foro,_Ciudad_de_M%C3%A9xico.jpg"
+            "author": "Gobierno de la Ciudad de México",
+            "license": "CC BY 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Adquisici%C3%B3n_patrullas_para_la_Polic%C3%ADa_02.jpg"
           }
         },
         {
@@ -8310,21 +8325,6 @@
             "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           },
-          "photo": {
-            "id": "commons_16240278",
-            "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Cacerolazo_contra_la_violencia_-_Ciudad_de_M%C3%A9xico_-_3.jpg/960px-Cacerolazo_contra_la_violencia_-_Ciudad_de_M%C3%A9xico_-_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "category": "CDMX",
-            "borough": "",
-            "topic": "Cacerolazo contra la violencia - Ciudad de México - 3",
-            "keywords": [
-              "Ángel de la Independencia Ciudad de México"
-            ],
-            "author": "ProtoplasmaKid",
-            "license": "CC BY-SA 3.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Cacerolazo_contra_la_violencia_-_Ciudad_de_M%C3%A9xico_-_3.jpg"
-          },
           "alternate_versions": [
             {
               "title": "Motociclistas de Mottu México marcharán de Iztacalco al Zócalo; se suman seis concentraciones en la CDMX",
@@ -8364,8 +8364,62 @@
                 "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
                 "source": "https://commons.wikimedia.org/wiki/File:Ayuda_tras_el_Terremoto_de_Puebla_de_2017_-_Ciudad_de_M%C3%A9xico_-_3.jpg"
               }
+            },
+            {
+              "title": "Motociclistas de Mottu México marcharán de Iztacalco al Zócalo; se suman seis concentraciones en la CDMX",
+              "description": "De acuerdo con Noticias en la Mira, el titular publicado es: «Motociclistas de Mottu México marcharán de Iztacalco al Zócalo; se suman seis concentraciones en la CDMX». Según la información destacada por Noticias en la Mira, manifestaciones o bloqueos forman parte de la jornada de movilidad capitalina. La ficha no demuestra por sí sola que todas las vías mencionadas sigan cerradas al momento de leerla.",
+              "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQVkNhQ2ZiRUItYjdUWnZxZ2cwUUJtTDNjRGJRY0pVb3MzWWlMZ1dWclRseGhXdjRRa0ZUeDN3cFFsRGdtcWhUd3IzeWpleFAwU2ZRT3NVSVFxMEd0TERjb2xHTzhHTnlqa3QzYWdZSm1lajc2RlExRTBNaXp6YmM1dDAzcXNlZXpJQlNiNzRJTndBRlpRVnBsbnM2bFRvNjRRM2J3My1YSXd0OEhKcUtLZ25GY1UzV1QzS1V4NVFERXBISnNUYVZ5TjZJNWt0SndUMjZGTg?oc=5",
+              "source": "Noticias en la Mira",
+              "date": "2026-11-12",
+              "published_at": "2026-11-12T16:37:27Z",
+              "category": "Movilidad",
+              "borough": "Iztacalco",
+              "location": "Iztacalco (mencionada en el titular)",
+              "local_url": "/noticias/?id=8a173796712fd80dfa46&mes=2026-11",
+              "brief": {
+                "lead": "De acuerdo con Noticias en la Mira, el titular publicado es: «Motociclistas de Mottu México marcharán de Iztacalco al Zócalo; se suman seis concentraciones en la CDMX». Según la información destacada por Noticias en la Mira, manifestaciones o bloqueos forman parte de la jornada de movilidad capitalina. La ficha no demuestra por sí sola que todas las vías mencionadas sigan cerradas al momento de leerla.",
+                "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
+                "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+              },
+              "photo": {
+                "id": "commons_16240278",
+                "kind": "representativa",
+                "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Cacerolazo_contra_la_violencia_-_Ciudad_de_M%C3%A9xico_-_3.jpg/960px-Cacerolazo_contra_la_violencia_-_Ciudad_de_M%C3%A9xico_-_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+                "category": "CDMX",
+                "borough": "",
+                "topic": "Cacerolazo contra la violencia - Ciudad de México - 3",
+                "keywords": [
+                  "Ángel de la Independencia Ciudad de México"
+                ],
+                "author": "ProtoplasmaKid",
+                "license": "CC BY-SA 3.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+                "source": "https://commons.wikimedia.org/wiki/File:Cacerolazo_contra_la_violencia_-_Ciudad_de_M%C3%A9xico_-_3.jpg"
+              }
             }
-          ]
+          ],
+          "photo": {
+            "id": "contexto_motocicleta_zocalo_brigada_2017",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Ayuda_tras_el_Terremoto_de_Puebla_de_2017_-_Ciudad_de_M%C3%A9xico_-_3.jpg/960px-Ayuda_tras_el_Terremoto_de_Puebla_de_2017_-_Ciudad_de_M%C3%A9xico_-_3.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+            "category": "Movilidad",
+            "borough": "",
+            "topic": "Motocicleta de apoyo de una brigada voluntaria en el Zócalo de la Ciudad de México (2017; imagen representativa, no corresponde a la marcha de 2026)",
+            "keywords": [
+              "motocicleta",
+              "motociclistas",
+              "moto",
+              "movilidad",
+              "marcha de motociclistas",
+              "Zócalo",
+              "Ciudad de México"
+            ],
+            "author": "ProtoplasmaKid",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "source": "https://commons.wikimedia.org/wiki/File:Ayuda_tras_el_Terremoto_de_Puebla_de_2017_-_Ciudad_de_M%C3%A9xico_-_3.jpg"
+          }
         },
         {
           "title": "Automovilista arrolla a 3 mujeres en Iztacalco tras volcar su vehículo; es detenido",
@@ -11535,27 +11589,6 @@
           "borough": "Miguel Hidalgo",
           "location": "Miguel Hidalgo (mencionada en el titular)",
           "local_url": "/noticias/?id=be2c12350b6ac3347692&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con El Universal, el titular publicado es: «Choque en Paseo de la Reforma deja 11 lesionados en Miguel Hidalgo». De acuerdo con El Universal, se informa de un hecho vial relacionado con personas o vehículos involucrados en Miguel Hidalgo. El propio titular menciona personas lesionadas, sin datos médicos adicionales verificados. Se requiere consultar la nota original para conocer el punto exacto, las circunstancias y los reportes oficiales, sin atribuir responsabilidades sin pruebas.",
-            "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
-            "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "commons_99396538",
-            "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/MX_MM_PASEO_DE_LA_REFORMA.jpg/960px-MX_MM_PASEO_DE_LA_REFORMA.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "category": "Movilidad",
-            "borough": "",
-            "topic": "MX MM PASEO DE LA REFORMA",
-            "keywords": [
-              "Metrobús Paseo de la Reforma CDMX"
-            ],
-            "author": "Secretaría de Cultura CDMX",
-            "license": "CC BY 2.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-            "source": "https://commons.wikimedia.org/wiki/File:MX_MM_PASEO_DE_LA_REFORMA.jpg"
-          },
           "alternate_versions": [
             {
               "title": "Choque en Paseo de la Reforma deja 11 lesionados en Miguel Hidalgo",
@@ -11590,7 +11623,28 @@
                 "source": "https://commons.wikimedia.org/wiki/File:MX_MM_PASEO_DE_LA_REFORMA.jpg"
               }
             }
-          ]
+          ],
+          "brief": {
+            "lead": "De acuerdo con El Universal, el titular publicado es: «Choque en Paseo de la Reforma deja 11 lesionados en Miguel Hidalgo». De acuerdo con El Universal, se informa de un hecho vial relacionado con personas o vehículos involucrados en Miguel Hidalgo. El propio titular menciona personas lesionadas, sin datos médicos adicionales verificados. Se requiere consultar la nota original para conocer el punto exacto, las circunstancias y los reportes oficiales, sin atribuir responsabilidades sin pruebas.",
+            "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
+            "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "commons_99396538",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/MX_MM_PASEO_DE_LA_REFORMA.jpg/960px-MX_MM_PASEO_DE_LA_REFORMA.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "category": "Movilidad",
+            "borough": "",
+            "topic": "MX MM PASEO DE LA REFORMA",
+            "keywords": [
+              "Metrobús Paseo de la Reforma CDMX"
+            ],
+            "author": "Secretaría de Cultura CDMX",
+            "license": "CC BY 2.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+            "source": "https://commons.wikimedia.org/wiki/File:MX_MM_PASEO_DE_LA_REFORMA.jpg"
+          }
         },
         {
           "title": "Mauricio Tabe advierte que clave para recuperar seguridad en Miguel Hidalgo es “gobernar para todos”",
@@ -12962,6 +13016,18 @@
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_tlahuac",
+            "kind": "representativa",
+            "url": "/assets/alcaldias/tlahuac.jpg",
+            "category": "CDMX",
+            "borough": "Tláhuac",
+            "topic": "Plaza central de San Pedro Tláhuac",
+            "author": "Yavidaxiu",
+            "license": "CC BY 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Tl%C3%A1huac-Plaza_central.JPG"
           }
         },
         {
@@ -13852,21 +13918,6 @@
             "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
             "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "commons_48010489",
-            "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Polic%C3%ADa_controlando_el_sem%C3%A1foro%2C_Ciudad_de_M%C3%A9xico.jpg/960px-Polic%C3%ADa_controlando_el_sem%C3%A1foro%2C_Ciudad_de_M%C3%A9xico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "category": "Seguridad",
-            "borough": "",
-            "topic": "Policía controlando el semáforo, Ciudad de México",
-            "keywords": [
-              "Policía Ciudad de México"
-            ],
-            "author": "ProtoplasmaKid",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Polic%C3%ADa_controlando_el_sem%C3%A1foro,_Ciudad_de_M%C3%A9xico.jpg"
           }
         },
         {
@@ -14649,7 +14700,6 @@
             "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           },
-          "sensitive_media": true,
           "alternate_versions": [
             {
               "title": "Detienen a hombre señalado de matar perros en la alcaldía Tlalpan; fue golpeado por vecinos de la zona",
@@ -14684,7 +14734,8 @@
                 "source": "https://commons.wikimedia.org/wiki/File:Animales_Bosque_de_Tlalpan_09.JPG"
               }
             }
-          ]
+          ],
+          "sensitive_media": true
         },
         {
           "title": "Detienen a acusado de maltrato animal en Tlalpan",
@@ -15762,19 +15813,16 @@
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           },
           "photo": {
-            "id": "archivo_seguridad_005",
+            "id": "archivo_seguridad_016",
             "kind": "representativa",
-            "url": "/assets/fotos/archivo_seguridad_005.jpg",
+            "url": "/assets/fotos/archivo_seguridad_016.jpg",
             "category": "Seguridad",
             "borough": "",
-            "topic": "Jeep policia cdmx",
-            "keywords": [
-              "Seguridad"
-            ],
+            "topic": "Entrega de Patrullas en Alcaldías 01",
             "author": "Gobierno de la Ciudad de México",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Jeep_policia_cdmx.jpg"
+            "license": "CC BY 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Entrega_de_Patrullas_en_Alcald%C3%ADas_01.jpg"
           },
           "alternate_versions": [
             {
@@ -15808,6 +15856,39 @@
                 "license": "CC BY-SA 4.0",
                 "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
                 "source": "https://commons.wikimedia.org/wiki/File:Z%C3%B3calo_de_la_Ciudad_de_M%C3%A9xico,_M%C3%A9xico.jpg"
+              }
+            },
+            {
+              "title": "Caen tres secuestradores en la alcaldía Venustiano Carranza",
+              "description": "De acuerdo con La Silla Rota, el titular publicado es: «Caen tres secuestradores en la alcaldía Venustiano Carranza». La información publicada por La Silla Rota aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+              "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPQmh2cVNqa2dTNjVwazVBN0NsUXlYeWhyVEZWOTk5UW1CSzktUFkydjh2VHhDQ0ZIUXJrOGtZaE9ZNWpkUzVYRGoyenYwWWJmNmE1LUVoZ09jT3FOamNVc2ZtZDNOdnJkRmh2LUIycDNVY0JPMWpwcU05S1BEeE5SY2VJWkdvRFR2dDZablVIcVdrOE15dkltM1pEa25RVDZLSTR1bnpQYUNzdjN0bkdyR0dUSDFJX0E?oc=5",
+              "source": "La Silla Rota",
+              "date": "2026-11-12",
+              "published_at": "2026-11-12T17:00:45Z",
+              "category": "Seguridad",
+              "borough": "Venustiano Carranza",
+              "location": "Venustiano Carranza (mencionada en el titular)",
+              "local_url": "/noticias/?id=44e68468714cac2aa5f8&mes=2026-11",
+              "brief": {
+                "lead": "De acuerdo con La Silla Rota, el titular publicado es: «Caen tres secuestradores en la alcaldía Venustiano Carranza». La información publicada por La Silla Rota aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+                "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+                "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+              },
+              "photo": {
+                "id": "archivo_seguridad_005",
+                "kind": "representativa",
+                "url": "/assets/fotos/archivo_seguridad_005.jpg",
+                "category": "Seguridad",
+                "borough": "",
+                "topic": "Jeep policia cdmx",
+                "keywords": [
+                  "Seguridad"
+                ],
+                "author": "Gobierno de la Ciudad de México",
+                "license": "CC BY-SA 4.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "https://commons.wikimedia.org/wiki/File:Jeep_policia_cdmx.jpg"
               }
             }
           ]
@@ -15910,6 +15991,36 @@
                 "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
                 "source": "https://commons.wikimedia.org/wiki/File:Graduaci%C3%B3n_de_la_Polic%C3%ADa_de_la_Ciudad_de_M%C3%A9xico_-i---i-_(36371773944).jpg"
               }
+            },
+            {
+              "title": "Rescatan a secuestrado en Venustiano Carranza",
+              "description": "De acuerdo con Reforma, el titular publicado es: «Rescatan a secuestrado en Venustiano Carranza». La información publicada por Reforma aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+              "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPaGVOY1NHeEVnaDQzVWtaLV9ESm01M01UaXFxY2FTRk9ISjQwaG5ndE1Bd2J3MzJvanp3Znc5R3JOLUQ0Nl9MOGV2UUZhZjg3TUNDSGF0bXVEdkduU3A1M0czNi1CVTdaa1ZQNnNid2E5Q1o1LU1WX2NrSVRKdnRlejduSHF2dw?oc=5",
+              "source": "Reforma",
+              "date": "2026-11-12",
+              "published_at": "2026-11-12T16:32:35Z",
+              "category": "Seguridad",
+              "borough": "Venustiano Carranza",
+              "location": "Venustiano Carranza (mencionada en el titular)",
+              "local_url": "/noticias/?id=888de421729e63d8892d&mes=2026-11",
+              "brief": {
+                "lead": "De acuerdo con Reforma, el titular publicado es: «Rescatan a secuestrado en Venustiano Carranza». La información publicada por Reforma aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+                "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+                "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+              },
+              "photo": {
+                "id": "archivo_seguridad_016",
+                "kind": "representativa",
+                "url": "/assets/fotos/archivo_seguridad_016.jpg",
+                "category": "Seguridad",
+                "borough": "",
+                "topic": "Entrega de Patrullas en Alcaldías 01",
+                "author": "Gobierno de la Ciudad de México",
+                "license": "CC BY 4.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+                "source": "https://commons.wikimedia.org/wiki/File:Entrega_de_Patrullas_en_Alcald%C3%ADas_01.jpg"
+              }
             }
           ]
         },
@@ -15925,12 +16036,6 @@
           "location": "Venustiano Carranza, Ciudad de México",
           "local_url": "/noticias/?id=0ef061c975ac4b64eed0&mes=2026-11",
           "source_url": "https://www.elgrafico.mx/la-roja/2026/11/12/el-morenito-muere-tras-ser-arrastrado-varios-metros-por-un-trailer-en-venustiano-carranza/?outputType=amp",
-          "brief": {
-            "lead": "El Gráfico informó que un hombre conocido como «El Morenito» murió después de ser atropellado y arrastrado por un tráiler en el cruce de avenida del Taller y Lorenzo Boturini, colonia Lorenzo Boturini, alcaldía Venustiano Carranza. El medio atribuyó al operador un presunto cruce de semáforo en rojo; esa versión se atribuye al reportaje y no se presenta como determinación oficial.",
-            "context": "El hecho ocurrió en Venustiano Carranza y corresponde a un siniestro vial fatal. Se omite la descripción gráfica del accidente y no se atribuye responsabilidad penal.",
-            "pending": "La mecánica del accidente y cualquier responsabilidad deben confirmarse con la FGJCDMX y los informes de tránsito. La versión sobre el semáforo en rojo es la que atribuye El Gráfico al reporte, no una resolución judicial.",
-            "method": "Síntesis editorial basada en la publicación de Tania Aguilar en El Gráfico, 12 de noviembre de 2026: https://www.elgrafico.mx/la-roja/2026/11/12/el-morenito-muere-tras-ser-arrastrado-varios-metros-por-un-trailer-en-venustiano-carranza/?outputType=amp. No constituye verificación independiente."
-          },
           "alternate_versions": [
             {
               "title": "\"El Morenito\" muere tras ser arrastrado varios metros por un tráiler, en Venustiano Carranza",
@@ -15967,6 +16072,12 @@
               }
             }
           ],
+          "brief": {
+            "lead": "El Gráfico informó que un hombre conocido como «El Morenito» murió después de ser atropellado y arrastrado por un tráiler en el cruce de avenida del Taller y Lorenzo Boturini, colonia Lorenzo Boturini, alcaldía Venustiano Carranza. El medio atribuyó al operador un presunto cruce de semáforo en rojo; esa versión se atribuye al reportaje y no se presenta como determinación oficial.",
+            "context": "El hecho ocurrió en Venustiano Carranza y corresponde a un siniestro vial fatal. Se omite la descripción gráfica del accidente y no se atribuye responsabilidad penal.",
+            "pending": "La mecánica del accidente y cualquier responsabilidad deben confirmarse con la FGJCDMX y los informes de tránsito. La versión sobre el semáforo en rojo es la que atribuye El Gráfico al reporte, no una resolución judicial.",
+            "method": "Síntesis editorial basada en la publicación de Tania Aguilar en El Gráfico, 12 de noviembre de 2026: https://www.elgrafico.mx/la-roja/2026/11/12/el-morenito-muere-tras-ser-arrastrado-varios-metros-por-un-trailer-en-venustiano-carranza/?outputType=amp. No constituye verificación independiente."
+          },
           "sensitive_media": true
         },
         {
