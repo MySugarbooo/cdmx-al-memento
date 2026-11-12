@@ -783,10 +783,10 @@ STRICT_PHOTO_TOPICS = (
     (r"\b(?:sloopy|lobito)\b",
      r"\b(?:perros?|caninos?|mascotas?|veterinaria)\b"),
     # Envenenamiento de perros exige imagen canina, no fauna genérica.
-    (r"\benvenenamientos?\b.*\b(?:perros?|mascotas?)\b",
+    (r"\b(?:envenenamientos?\b.*\b(?:perros?|mascotas?)|(?:perritos?|perros?|mascotas?)\s+envenenad[oa]s?)\b",
      r"\b(?:perritos?|perros?|mascotas?|caninos?|veterinaria)\b"),
-    (r"\b(?:perritos?|perros?|mascotas?|envenenamientos? de perros?)\b",
-     r"\b(?:perritos?|perros?|mascotas?|caninos?|veterinaria)\b"),
+    (r"\b(?:perritos?|perros?|mascotas?)\b",
+     r"\b(?:perritos?|perros?|mascotas?|caninos?|animales?|veterinaria)\b"),
     (r"\b(?:ejecutan|ejecutad\w*|ejecucion|matan|balazos|asesinan|homicidio|condenad[oa]s?|condenan|prision|delitos? contra)\b",
      r"\b(?:fiscalia|justicia|tribunal|juzgado|penitenciario|prision|ministerio publico|investigacion penal|policias?|patrullas?|operativo policial)\b"),
     (r"\b(?:sin agua|falta de agua|suspension de agua|corte de agua)\b",
@@ -895,12 +895,17 @@ def _photo_score(article, photo):
     keywords=_photo_fold(" ".join(str(x) for x in photo.get("keywords",[])))
     context=topic+" "+keywords
     article_borough=_photo_fold(article.get("borough"))
-    if article_borough:
+    article_borough_key = next(
+        (borough for borough, aliases in PHOTO_BOROUGH_ALIASES.items()
+         if article_borough == borough or article_borough in aliases),
+        "",
+    )
+    if article_borough_key:
         photo_boroughs = {
             borough for borough, aliases in PHOTO_BOROUGH_ALIASES.items()
             if any(re.search(r"\b"+re.escape(alias)+r"\b",context) for alias in aliases)
         }
-        if photo_boroughs and article_borough not in photo_boroughs:
+        if photo_boroughs and article_borough_key not in photo_boroughs:
             return -10000
     # Los boletos y documentos históricos solo ilustran noticias sobre esos objetos.
     ticket_photo = bool(re.search(
