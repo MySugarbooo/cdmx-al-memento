@@ -786,6 +786,24 @@ STRICT_PHOTO_TOPICS = (
     # La licencia permanente requiere contexto del trámite de conducción, no oficinas genéricas.
     (r"\b(?:licencia permanente|licencia de conducir|modulos? de licencias?)\b",
      r"\b(?:licencia(?:s)? de conducir|licencia permanente|modulos? de licencias?|tramite vehicular|semovi|control vehicular|examen de manejo)\b"),
+    # Los clubes de pádel requieren una cancha o equipo deportivo, no una iglesia del barrio.
+    (r"\b(?:padel|clubes? de padel)\b",
+     r"\b(?:padel|raquetas?|canchas? de padel|tenis|clubes? deportivos?)\b"),
+    # Un refugio animal requiere contexto de animales, no interiores de oficinas.
+    (r"\b(?:refugio franciscano|refugio de animales|albergue de animales)\b",
+     r"\b(?:perros?|perritos?|animales?|mascotas?|refugio animal)\b"),
+    # Los operativos en Plaza Meave requieren contexto policial o de mercancía asegurada.
+    (r"\bplaza meave\b",
+     r"\b(?:plaza meave|policias?|patrullas?|operativo|pirateria|mercancia apocrifa|semar)\b"),
+    # Una petición de no manifestarse se ilustra con una marcha, no con carnavales.
+    (r"\b(?:no manifestarse|manifestarse|marchar a cdmx)\b",
+     r"\b(?:marchas?|protestas?|manifestantes?|cacerolazo|planton(?:es)?|bloqueos?|movilizaciones?)\b"),
+    # Una jornada de búsqueda requiere colectivos o personas desaparecidas, no jardines genéricos.
+    (r"\b(?:colectivos? en jornada de busqueda|jornada de busqueda|colectivos? de busqueda)\b",
+     r"\b(?:colectivos? de busqueda|personas desaparecidas|madres? buscadoras?|familias? buscadoras?|busqueda de campo|rastreo|fiscalia)\b"),
+    # Una nota sobre una orquesta necesita contexto musical, incluido un coro representativo.
+    (r"\b(?:orquesta|aniversario musical)\b",
+     r"\b(?:orquestas?|musica|conciertos?|guitarras?|bandas?|coros?|coral|escenarios?|cantantes?|festivales?|auditorios?|estadios?)\b"),
 )
 
 def _photo_score(article, photo):
@@ -799,6 +817,16 @@ def _photo_score(article, photo):
     topic=_photo_fold(photo.get("topic"))
     keywords=_photo_fold(" ".join(str(x) for x in photo.get("keywords",[])))
     context=topic+" "+keywords
+    # Los boletos y documentos históricos solo ilustran noticias sobre esos objetos.
+    ticket_photo = bool(re.search(
+        r"\b(?:boletos?|tickets?|entradas?|recibos?|credenciales?|pasaportes?)\b", context
+    ))
+    ticket_story = bool(re.search(
+        r"\b(?:boletos?|tickets?|entradas?|recibos?|credenciales?|pasaportes?|cine|peliculas?|taquilla|pases? de acceso)\b",
+        headline,
+    ))
+    if ticket_photo and not ticket_story:
+        return -10000
     lgbt_story = bool(re.search(r"\b(?:lgbtttiq|lgbtq?|diversidad sexual)\b", headline))
     lgbt_photo = bool(re.search(r"\b(?:lgbtttiq|lgbtq?|diversidad sexual|marcha del orgullo|orgullo lgbt)\b", context))
     # Una foto de marcha del orgullo solo se admite para una nota del mismo tema;
@@ -813,6 +841,17 @@ def _photo_score(article, photo):
         return -10000
     category=_photo_category(article)
     photo_category=str(photo.get("category") or "CDMX")
+    # Una foto de bomberos o rescate solo corresponde a una emergencia mencionada en el titular.
+    emergency_photo = bool(re.search(
+        r"\b(?:bomberos?|incendios?|explosiones?|pipas? de gas|gas lp|tanques? de gas|proteccion civil|rescate)\b",
+        context,
+    ))
+    emergency_story = bool(re.search(
+        r"\b(?:bomberos?|incendios?|explosiones?|pipas? de gas|gas lp|tanques? de gas|proteccion civil|rescate|emergencias?|siniestros?)\b",
+        headline,
+    ))
+    if emergency_photo and not emergency_story:
+        return -10000
     source=_photo_fold(article.get("source"))
     police_operation_story = bool(
         re.search(r"\b(?:ssc|secretaria de seguridad ciudadana)\b", headline + " " + source)
@@ -826,11 +865,11 @@ def _photo_score(article, photo):
     # En robos, asaltos y extorsiones, la coincidencia de alcaldía no basta:
     # exigir una imagen con contexto de seguridad antes de puntuar el lugar.
     crime_story = bool(re.search(
-        r"\b(?:robo|robos|roban|robado|robada|robaron|asalto|asaltan|extorsion|extorsionan|ejecutan|ejecutad\w*|ejecucion|asesinan|asesinad\w*|asesinato|homicidio|matan|balazos|balacera)\b",
+        r"\b(?:robo|robos|roban|robado|robada|robaron|decomis\w*|incaut\w*|asegur\w*|asalto|asaltan|extorsion|extorsionan|ejecutan|ejecutad\w*|ejecucion|asesinan|asesinad\w*|asesinato|homicidio|matan|balazos|balacera)\b",
         headline,
     ))
     crime_context = bool(re.search(
-        r"\b(?:policias?|patrullas?|seguridad|fiscalia|detencion|operativo policial|"
+        r"\b(?:policias?|patrullas?|fiscalia|detencion|operativo policial|"
         r"ministerio publico|investigacion penal|escena del crimen)\b",
         context,
     ))
@@ -855,9 +894,12 @@ def _photo_score(article, photo):
     ):
         return -10000
     # Admitir categorías temáticas solo cuando el descriptor coincide con la noticia.
-    music_story = bool(re.search(r"\briff\b", headline))
+    music_story = bool(re.search(
+        r"\b(?:riff|orquesta|conciertos?|bandas?|cantantes?|aniversario musical)\b",
+        headline,
+    ))
     music_photo = bool(re.search(
-        r"\b(?:musica|conciertos?|guitarras?|bandas?|escenarios?|rock|cantantes?|festivales?|auditorios?|estadios?)\b",
+        r"\b(?:musica|conciertos?|guitarras?|bandas?|coros?|coral|escenarios?|rock|cantantes?|festivales?|auditorios?|estadios?)\b",
         context,
     ))
     weather_story = bool(re.search(r"\brachas?\b", headline))
@@ -866,14 +908,15 @@ def _photo_score(article, photo):
         context,
     ))
     animal_story = bool(re.search(
-        r"\b(?:jauria|sloopy|lobito|perros?|perritos?|mascotas?)\b", headline
+        r"\b(?:jauria|sloopy|lobito|perros?|perritos?|mascotas?|refugio franciscano|refugio de animales|albergue de animales)\b",
+        headline,
     ))
-    animal_photo = bool(re.search(r"\b(?:perros?|caninos?|mascotas?)\b", context))
+    animal_photo = bool(re.search(r"\b(?:perros?|caninos?|mascotas?|animales?)\b", context))
     if lgbt_story and not lgbt_photo:
         return -10000
     protest_story = bool(
         re.search(
-            r"\b(?:movilizacion(?:es)?|manifestacion(?:es)?|planton(?:es)?|concentracion(?:es)?|protest\w*|marcha(?:s)?|bloque(?:o|os|a|an|aron|ando|ado|ada|ados|adas|ar))\b",
+            r"\b(?:movilizacion(?:es)?|manifestacion(?:es)?|manifestar\w*|planton(?:es)?|concentracion(?:es)?|protest\w*|marcha(?:s)?|bloque(?:o|os|a|an|aron|ando|ado|ada|ados|adas|ar))\b",
             headline_for_photos,
         )
         or re.search(
