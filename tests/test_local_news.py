@@ -90,6 +90,67 @@ class LocalNewsTests(unittest.TestCase):
         self.assertIn("Fuente: El Sol de San Juan del Río", rendered)
         self.assertNotIn("Fuente: El Sol de México", rendered)
 
+    def test_sensitive_animal_abuse_titles_never_receive_context_photos(self):
+        titles = (
+            "Detienen a presunto abusador sexual de animales en situación de calle en CDMX",
+            "Detienen a otro presunto maltratador de animales en Tlalpan",
+            "Detienen a acusado de maltrato animal en Tlalpan",
+        )
+        for index, title in enumerate(titles):
+            with self.subTest(title=title):
+                article = {
+                    "title": title,
+                    "url": f"https://news.google.com/rss/articles/animal-sensitive-{index}",
+                    "source": "Medio de prueba",
+                    "date": "2026-11-12",
+                    "category": "CDMX",
+                    "borough": "",
+                    "photo": {
+                        "id": f"animal-context-{index}",
+                        "kind": "representativa",
+                        "url": "/assets/fotos/archivo_seguridad_005.jpg",
+                        "category": "Seguridad",
+                        "topic": "Animales Bosque de Tlalpan",
+                        "author": "Autor de prueba",
+                        "license": "CC BY-SA 4.0",
+                        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+                        "source": "https://commons.wikimedia.org/wiki/File:Animales_Bosque_de_Tlalpan.jpg",
+                    },
+                }
+                result = standardize(article)
+                self.assertIsNotNone(result)
+                self.assertTrue(is_sensitive_media(result))
+                assign_photos([result])
+                self.assertNotIn("photo", result)
+                self.assertTrue(result["sensitive_media"])
+                rendered = render(result, article_id(result))
+                self.assertIn("Sin fotografía verificada del hecho", rendered)
+                self.assertNotIn('<figure class="article-photo">', rendered)
+
+    def test_crime_headlines_override_inherited_metro_and_cdmx_categories(self):
+        cases = (
+            (
+                "Detienen a presunto abusador sexual de animales en situación de calle en CDMX",
+                "Metro",
+            ),
+            ("Detienen a otro presunto maltratador de animales en Tlalpan", "CDMX"),
+            ("Detienen a acusado de maltrato animal en Tlalpan", "CDMX"),
+            (
+                "Pasajeros denuncian robos durante viajes solicitados por aplicación en CDMX",
+                "Metro",
+            ),
+            (
+                "Policías de la CDMX rescataron a un hombre secuestrado en Venustiano Carranza",
+                "Metro",
+            ),
+        )
+        for title, feed_category in cases:
+            with self.subTest(title=title):
+                self.assertEqual(
+                    category_by_headline(title, feed_category, "Infobae"),
+                    "Seguridad",
+                )
+
     def test_distinct_real_photos_for_sixty_news(self):
         groups=["CDMX","Metro","Seguridad","Movilidad","Cultura","Gobierno"]
         items=[self.make(i,groups[i%len(groups)]) for i in range(60)]
