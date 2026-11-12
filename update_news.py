@@ -22,7 +22,7 @@ from pathlib import Path
 from zoneinfo import ZoneInfo
 
 from scripts.analisis_editorial import build_editorial
-from scripts.notas_locales import local_link, summarize, assign_photos, _photo_score, is_sensitive_media, is_coyotepec_highway_crash, is_san_juan_del_rio_autopista57_closure, SENSITIVE_MEDIA_TITLE, SAN_JUAN_DEL_RIO_AUTOPISTA57_SOURCE_URL, is_infobae_tlalpan_animal_abuse, is_la_prensa_tlalpan_animal_case, INFOBAE_TLALPAN_ANIMAL_SOURCE_URL, LA_PRENSA_TLALPAN_ANIMAL_SOURCE_URL
+from scripts.notas_locales import local_link, summarize, assign_photos, _photo_score, is_sensitive_media, is_coyotepec_highway_crash, is_san_juan_del_rio_autopista57_closure, SENSITIVE_MEDIA_TITLE, SAN_JUAN_DEL_RIO_AUTOPISTA57_SOURCE_URL, is_infobae_tlalpan_animal_abuse, is_la_prensa_tlalpan_animal_case, INFOBAE_TLALPAN_ANIMAL_SOURCE_URL, LA_PRENSA_TLALPAN_ANIMAL_SOURCE_URL, is_imagen_tlalpan_dog_rescue
 
 ROOT = Path(__file__).resolve().parent
 DEST = ROOT / "news.json"
@@ -292,7 +292,8 @@ def category_by_headline(title, feed_category, source=""):
     # Delitos y detenciones no deben heredar una categoría de Metro o CDMX
     # por el feed RSS: robos, secuestros y maltrato animal son Seguridad.
     if re.search(
-        r"\b(?:abusador(?:es)? sexual(?:es)?|maltratador(?:es)?(?: de animales?)?|"
+        r"\b(?:abuso sexual|violencia sexual|agresion sexual|acoso sexual|"
+        r"abusador(?:es)? sexual(?:es)?|maltratador(?:es)?(?: de animales?)?|"
         r"maltrato animal|crueldad animal|robo|robos|roban|robado|robada|robaron|robar|"
         r"asalto|asaltan|secuestro|secuestrad[oa]s?|"
         r"privacion(?: ilegal)? de (?:la )?libertad)\b",
