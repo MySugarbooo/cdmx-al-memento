@@ -1069,7 +1069,7 @@ class PhotoRelevanceTests(unittest.TestCase):
             photos, "_load", return_value=[]
         ):
             assign_photos([article])
-        self.assertEqual(article["photo"]["id"], "patrulla_representativa")
+        self.assertEqual(article["photo"]["id"], "seguridad")
 
 if __name__ == "__main__":
     unittest.main()
