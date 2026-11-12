@@ -111,12 +111,10 @@ def fold(value):
 def outside_cdmx_location(title):
     """Identifica solo hechos con lugar externo inequívoco en el titular."""
     words = " " + fold(title) + " "
-    # El punto y coma separa la protesta en Xalapa de la referencia posterior
-    # a agresiones contra compañeros en Puebla y CDMX.
-    if re.search(
-        r"\b(?:protest\w*|march\w*|manifest\w*|moviliz\w*)\s+en\s+xalapa\s*;",
-        words,
-    ):
+    # fold() elimina la puntuación: el verbo "exigen" identifica la segunda
+    # cláusula y distingue la protesta en Xalapa de las referencias a Puebla/CDMX.
+    if (re.search(r"\bprotest\w*\s+en\s+xalapa\s+exigen\b", words)
+            and re.search(r"\b(?:puebla|cdmx|ciudad de mexico)\b", words)):
         return "Xalapa, Veracruz"
     # Un titular turístico sobre fincas de Veracruz puede mencionar CDMX solo
     # como referencia de distancia; eso no convierte el lugar en noticia local.
