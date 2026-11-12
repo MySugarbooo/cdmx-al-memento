@@ -1060,11 +1060,11 @@ def _photo_score(article, photo):
         context,
     ))
     infrastructure_story = bool(re.search(
-        r"\\b(?:tuberias?|pavimentar|pavimentacion|pavimento|asfalto)\\b",
+        r"\b(?:tuberias?|pavimentar|pavimentacion|pavimento|asfalto)\b",
         headline,
     ))
     infrastructure_photo = bool(re.search(
-        r"\\b(?:tuberias?|drenaje|pavimentacion|pavimento|asfalto|alcantarillas?|red hidraulica|infraestructura hidraulica|obra vial|desazolve|supervision de obras)\\b",
+        r"\b(?:tuberias?|drenaje|pavimentacion|pavimento|asfalto|alcantarillas?|red hidraulica|infraestructura hidraulica|obra vial|desazolve|supervision de obras)\b",
         context,
     ))
     themed_category = (
