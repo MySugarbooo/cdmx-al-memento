@@ -434,6 +434,10 @@ def category_by_headline(title, feed_category, source=""):
         return "Movilidad"
     if re.search(r"\b(?:muevete en bici|paseo dominical|bicicletas?|ciclistas?|ciclismo|ciclovias?|ecobici|cicloton)\b", normalized):
         return "Movilidad"
+    # Las marchas de motociclistas son movilidad aunque el RSS provenga del feed del Metro.
+    if (re.search(r"\b(?:motociclistas?|motocicletas?|motos?)\b", normalized)
+            and re.search(r"\b(?:march\w*|movilizacion(?:es)?|concentraciones?|rodada|bloqueos?)\b", normalized)):
+        return "Movilidad"
     # Los cierres y rutas alternas son movilidad, no operativos policiales.
     # Evitar imágenes de patrullas cuando un feed de Seguridad incluye tráfico.
     if (re.search(r"\b(?:calles cerradas|cierres? vial(?:es)?|alternativas? vial(?:es)?|rutas? alternas?|desvios? vial(?:es)?)\b", normalized)
