@@ -256,6 +256,45 @@ class NewsPhotoPolicyTests(unittest.TestCase):
                 self.assertEqual(article["photo"]["kind"], "representativa")
                 self.assertFalse(article["photo"].get("verified", False))
 
+    def test_ssc_buen_fin_operativo_rejects_cybersecurity_photo_and_uses_patrol_context(self):
+        title = ("2999: La SSC implementará un operativo de seguridad, vigilancia y vialidad "
+                 "por el “Buen Fin 2026”, con la participación más de 16 mil policías en la ciudad de México")
+        article = dict(
+            ARTICLE,
+            title=title,
+            category="Metro",
+            source="Secretaría de Seguridad Ciudadana de la CDMX",
+        )
+        laptop = dict(
+            context_photo("laptop"),
+            category="Seguridad",
+            topic="Laptop asegurada con cadena y candado; fotografía representativa de seguridad informática",
+            keywords=["ciberseguridad", "seguridad digital", "laptop"],
+        )
+        patrol = dict(
+            context_photo("patrol"),
+            category="Seguridad",
+            topic="Adquisición patrullas para la Policía 03",
+            keywords=["patrullas", "policía", "seguridad pública"],
+        )
+
+        self.assertEqual(photos._photo_category(article), "Seguridad")
+        self.assertLess(photos._photo_score(article, laptop), 0)
+        self.assertGreaterEqual(photos._photo_score(article, patrol), 0)
+
+        with patch.object(photos, "_pool", return_value=[laptop, patrol]):
+            with patch.object(
+                photos,
+                "VERIFIED_EVENTS",
+                Path("/tmp/never-loaded-ssc-buen-fin-photo-registry.json"),
+            ):
+                stats = photos.assign_photos([article])
+
+        self.assertEqual(article["photo"]["id"], "patrol")
+        self.assertEqual(article["photo"]["kind"], "representativa")
+        self.assertEqual(article["photo"]["author"], "Autor de contexto")
+        self.assertEqual(stats["assigned"], 1)
+
     def test_cable_theft_is_security_and_requires_security_context_photo(self):
         title = "Detienen a hombre por robo de cable de alumbrado público en Iztapalapa"
         article = dict(ARTICLE, title=title, category="CDMX", borough="Iztapalapa")
