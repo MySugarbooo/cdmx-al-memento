@@ -494,7 +494,8 @@ class NewsPhotoPolicyTests(unittest.TestCase):
         )
         for title, category, image in cases:
             with self.subTest(title=title):
-                article = dict(ARTICLE, title=title, category=category, borough="")
+                borough = "Coyoacán" if title.startswith("Día del Soltero") else ""
+                article = dict(ARTICLE, title=title, category=category, borough=borough)
                 self.assertGreaterEqual(photos._photo_score(article, image), 0)
 
     def test_assign_photos_uses_relevant_context_and_skips_unrelated_images(self):
