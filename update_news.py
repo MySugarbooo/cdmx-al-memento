@@ -175,7 +175,11 @@ def outside_cdmx_scope(title):
     return bool(outside_cdmx_location(title))
 
 
-def identify_location(title):
+def identify_location(title, date=None):
+    words = " " + fold(title) + " "
+    if (date in {"2026-11-11", "2026-11-12"}
+            and " pipa " in words and " mexico pachuca " in words):
+        return "", "Ecatepec, Estado de México (fuera de CDMX)"
     external = outside_cdmx_location(title)
     if external:
         return "", external + " (fuera de CDMX)"
@@ -471,7 +475,7 @@ def standardize(article):
         datetime.fromisoformat(date)
     except ValueError:
         return None
-    borough, location = identify_location(title)
+    borough, location = identify_location(title, date)
     category = article.get("category") if article.get("category") in GENERAL_FEEDS else "CDMX"
     category = category_by_headline(title, category, source)
     result = {
