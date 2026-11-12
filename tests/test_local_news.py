@@ -151,6 +151,79 @@ class LocalNewsTests(unittest.TestCase):
                     "Seguridad",
                 )
 
+    def test_infobae_animal_case_uses_confirmed_tlalpan_location_and_source(self):
+        article = {
+            "title": "Detienen a presunto abusador sexual de animales en situación de calle en CDMX: activistas piden que las investigaciones lleguen a fondo",
+            "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxPSXVkQ1ZPWkZMSDVzVml6NXNfTGFpVnFCaVFWc0dBMGEwaWFVSjJ0SHlUc1VTemtjeXUzYkJiQWd2eEw3a2ZIMEFWay1hdGVCaFhPU3pkYzNJb3BMemNlZkhUSVlHWUJyRUJRNkZ2ZGRESVBsZVNCREdNSG5VVUZ5RjBZZXlqMjQwSEs0ZjBZdmFDQml2YXctNDE1NkJlcm1DWG9GY1FVZWszaXVRVVRxeS1hYWFSanBEVkZ3SDRDWUljY1F1NU93RjZoTlZaU2VJdUVacDItc0FyNF9halpOTFgyRm1HNnlrNlB4NEtybmttWGZ0RnZUVkstZkM3ZEYxVlliakNOX1bSAaMCQVVfeXFMTWViNFhLekl3bHBQbmxGYmlQTFpVcGJCOXdDMy1wdl8wNlJnTjFXTXJtRWhwR0NWb2k1UDRmWUhxa1VGMm5HcjNmZjlKZUw3YUtPZFJ1Vmswd3Uwdk0tMkxKbGxNZ0t1b3VqX2N0VGdlMU1RNlZYQXhrRTJPaE5sTUVpTFBsLXAwZ2pUVkl5YmxZS3VwbDhGeTE3OUFrWDRtc3I0aGptSWJhbk14d0ZFZjJTVHVxY3Z4TWZnUXJHMzFEN3Q3VWxCeHBjUFNmVmkxaFdoaWlGWXdmSFk4bFNzdlpjQ1AzZW92T3FncGVDUVhEVkFaeVloUEV0NndRalNqWXNZMWRNWlEtcUNFTDRQRWxEbjlFSjlwaDZsZm1kQnBJTTBF?oc=5",
+            "source": "Infobae",
+            "date": "2026-11-12",
+            "published_at": "2026-11-12T19:57:00Z",
+            "category": "Metro",
+            "borough": "",
+            "photo": {
+                "id": "animal-context-infobae",
+                "kind": "representativa",
+                "url": "/assets/fotos/archivo_seguridad_005.jpg",
+                "category": "Alcaldías",
+                "topic": "Animales Bosque de Tlalpan",
+                "author": "Autor de prueba",
+                "license": "CC BY-SA 4.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "https://commons.wikimedia.org/wiki/File:Animales_Bosque_de_Tlalpan.jpg",
+            },
+        }
+        result = standardize(article)
+        self.assertIsNotNone(result)
+        self.assertEqual(result["category"], "Seguridad")
+        self.assertEqual(result["borough"], "Tlalpan")
+        self.assertIn("Tlalpan", result["location"])
+        self.assertEqual(result["source_url"], "https://www.infobae.com/mexico/2026/11/12/detienen-a-presunto-abusador-sexual-de-animales-en-situacion-de-calle-en-cdmx-activistas-piden-que-las-investigaciones-lleguen-a-fondo/")
+        self.assertEqual(result["local_url"], "/noticias/?id=086a68086514ac4b9e44&mes=2026-11")
+        self.assertIn("Pedregal de San Nicolás", result["brief"]["lead"])
+        self.assertTrue(is_sensitive_media(result))
+        assign_photos([result])
+        self.assertNotIn("photo", result)
+        rendered = render(result, article_id(result))
+        self.assertIn('href="https://www.infobae.com/mexico/2026/11/12/detienen-a-presunto-abusador-sexual-de-animales-en-situacion-de-calle-en-cdmx-activistas-piden-que-las-investigaciones-lleguen-a-fondo/"', rendered)
+        self.assertIn("Fuente: Infobae", rendered)
+        self.assertIn("Sin fotografía verificada del hecho", rendered)
+
+    def test_la_prensa_animal_case_corrects_source_and_preserves_article_key(self):
+        article = {
+            "title": "Detienen a otro presunto maltratador de animales en Tlalpan",
+            "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQazczY2xhczU2emVhMzZobG9lNGNYWm0zcHJWR19GLUJTT2s4UnRVd0lFemJ4OV9WLWdtcTNKcms1SV9DZ0VZZjlCdUhLSGdFYjN3elBRX3dGcktMRmpzckdUbnRGdXFkUGlqUURPeTVKN1p2SDU0X1JtazhwMWFNMVRtNUE5QkNUZHBKSkRDdVJYX2xTNlFDdXN0clRsMjBzMHlONGVLZmoxeVk?oc=5",
+            "source": "El Sol de México",
+            "date": "2026-11-12",
+            "published_at": "2026-11-12T17:21:11Z",
+            "category": "CDMX",
+            "borough": "Tlalpan",
+            "photo": {
+                "id": "animal-context-la-prensa",
+                "kind": "representativa",
+                "url": "/assets/fotos/archivo_seguridad_005.jpg",
+                "category": "Alcaldías",
+                "topic": "Animales Bosque de Tlalpan",
+                "author": "Autor de prueba",
+                "license": "CC BY-SA 4.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "https://commons.wikimedia.org/wiki/File:Animales_Bosque_de_Tlalpan.jpg",
+            },
+        }
+        result = standardize(article)
+        self.assertIsNotNone(result)
+        self.assertEqual(result["category"], "Seguridad")
+        self.assertEqual(result["source"], "La Prensa")
+        self.assertEqual(result["source_url"], "https://oem.com.mx/la-prensa/policiaca/detienen-a-otro-presunto-maltratador-de-animales-en-tlalpan-33095643")
+        self.assertEqual(result["local_url"], "/noticias/?id=00c19362c5f0468f82b1&mes=2026-11")
+        self.assertIn("Ministerio Público", result["brief"]["lead"])
+        self.assertTrue(is_sensitive_media(result))
+        assign_photos([result])
+        self.assertNotIn("photo", result)
+        rendered = render(result, article_id(result))
+        self.assertIn('href="https://oem.com.mx/la-prensa/policiaca/detienen-a-otro-presunto-maltratador-de-animales-en-tlalpan-33095643"', rendered)
+        self.assertIn("Fuente: La Prensa", rendered)
+        self.assertIn("Sin fotografía verificada del hecho", rendered)
+
     def test_distinct_real_photos_for_sixty_news(self):
         groups=["CDMX","Metro","Seguridad","Movilidad","Cultura","Gobierno"]
         items=[self.make(i,groups[i%len(groups)]) for i in range(60)]

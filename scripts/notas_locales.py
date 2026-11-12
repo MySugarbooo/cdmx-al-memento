@@ -54,6 +54,34 @@ def is_coyotepec_highway_crash(article):
 
 
 SAN_JUAN_DEL_RIO_AUTOPISTA57_SOURCE_URL = "https://oem.com.mx/elsoldesanjuandelrio/policiaca/toma-precauciones-si-viajas-a-la-cdmx-autopista-57-esta-detenida-33095499"
+LA_PRENSA_TLALPAN_ANIMAL_SOURCE_URL = "https://oem.com.mx/la-prensa/policiaca/detienen-a-otro-presunto-maltratador-de-animales-en-tlalpan-33095643"
+INFOBAE_TLALPAN_ANIMAL_SOURCE_URL = "https://www.infobae.com/mexico/2026/11/12/detienen-a-presunto-abusador-sexual-de-animales-en-situacion-de-calle-en-cdmx-activistas-piden-que-las-investigaciones-lleguen-a-fondo/"
+
+
+def is_infobae_tlalpan_animal_abuse(article):
+    """Identifica la nota de Infobae cuyo cuerpo ubica el caso en Tlalpan."""
+    title = unicodedata.normalize("NFKD", str(article.get("title") or ""))
+    title = "".join(ch for ch in title if not unicodedata.combining(ch)).casefold()
+    source = unicodedata.normalize("NFKD", str(article.get("source") or ""))
+    source = "".join(ch for ch in source if not unicodedata.combining(ch)).casefold().strip()
+    return (
+        str(article.get("date") or "") == "2026-11-12"
+        and source == "infobae"
+        and title.startswith("detienen a presunto abusador sexual de animales en situacion de calle en cdmx")
+    )
+
+
+def is_la_prensa_tlalpan_animal_case(article):
+    """Identifica el artículo de La Prensa atribuido por error a otro medio OEM."""
+    title = unicodedata.normalize("NFKD", str(article.get("title") or ""))
+    title = "".join(ch for ch in title if not unicodedata.combining(ch)).casefold().strip()
+    source = unicodedata.normalize("NFKD", str(article.get("source") or ""))
+    source = "".join(ch for ch in source if not unicodedata.combining(ch)).casefold().strip()
+    return (
+        str(article.get("date") or "") == "2026-11-12"
+        and source in {"el sol de mexico", "la prensa"}
+        and title == "detienen a otro presunto maltratador de animales en tlalpan"
+    )
 
 
 def is_san_juan_del_rio_autopista57_closure(article):
@@ -388,6 +416,50 @@ def summarize(article):
                 "accidente-mexico-queretaro-hoy-12-noviembre-2026-choque-autobuses-pasajeros-"
                 "cierre-cdmx/. El saldo y las condiciones viales son datos atribuidos al medio, "
                 "no una verificación independiente de CDMX AL MEMENTO."
+            ),
+        }
+    if is_infobae_tlalpan_animal_abuse(article):
+        return {
+            "lead": (
+                "Infobae informó que la SSC detuvo a un hombre tras un reporte de agresión en la "
+                "colonia Pedregal de San Nicolás Cuarta Sección, alcaldía Tlalpan. La nota recoge "
+                "señalamientos de vecinos y activistas por presunta violencia contra animales; "
+                "la responsabilidad no está establecida y corresponde a las autoridades determinarla."
+            ),
+            "context": (
+                "El caso se ubica en Tlalpan. La detención informada por la SSC debe distinguirse "
+                "de los señalamientos de vecinos y activistas, que siguen sujetos a investigación."
+            ),
+            "pending": (
+                "La situación jurídica del detenido y el estado de las denuncias ante PAOT y FGJCDMX "
+                "deben confirmarse con esas autoridades."
+            ),
+            "method": (
+                "Síntesis editorial basada en Infobae, 12 de noviembre de 2026: "
+                "https://www.infobae.com/mexico/2026/11/12/detienen-a-presunto-abusador-sexual-de-animales-en-situacion-de-calle-en-cdmx-activistas-piden-que-las-investigaciones-lleguen-a-fondo/. Se distingue la detención informada por la SSC de los señalamientos "
+                "de terceros; no se presentan como hechos probados."
+            ),
+        }
+    if is_la_prensa_tlalpan_animal_case(article):
+        return {
+            "lead": (
+                "La Prensa informó que efectivos de la SSC intervinieron para rescatar a un hombre "
+                "de ser linchado y lo pusieron a disposición del Ministerio Público. El titular "
+                "relaciona la detención con presuntos señalamientos de maltrato animal en Tlalpan; "
+                "no se trata de una sentencia."
+            ),
+            "context": (
+                "El caso se ubica en Tlalpan y debe informarse como una detención por señalamientos, "
+                "no como una responsabilidad probada."
+            ),
+            "pending": (
+                "La situación jurídica del detenido y el avance de la investigación deben confirmarse "
+                "con la SSC y la FGJCDMX."
+            ),
+            "method": (
+                "Síntesis editorial basada en la publicación de La Prensa del 12 de noviembre de 2026, "
+                "firmada por Rodrigo Alarcon: https://oem.com.mx/la-prensa/policiaca/detienen-a-otro-presunto-maltratador-de-animales-en-tlalpan-33095643. El extracto visible no reproduce "
+                "el reportaje íntegro y no constituye una verificación independiente."
             ),
         }
     if is_san_juan_del_rio_autopista57_closure(article):

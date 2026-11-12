@@ -13,6 +13,14 @@ BASE = "https://cdmx-al-memento.pages.dev"
 SOURCE = ROOT / "news.json"
 OUT = ROOT / "articulos"
 SITEMAP = ROOT / "sitemap-articulos.xml"
+VERIFIED_SOURCE_LINKS = {
+    ("El Sol de San Juan del Río", "/noticias/?id=b37ba45fa2fa424b73bd&mes=2026-11"):
+        "https://oem.com.mx/elsoldesanjuandelrio/policiaca/toma-precauciones-si-viajas-a-la-cdmx-autopista-57-esta-detenida-33095499",
+    ("La Prensa", "/noticias/?id=00c19362c5f0468f82b1&mes=2026-11"):
+        "https://oem.com.mx/la-prensa/policiaca/detienen-a-otro-presunto-maltratador-de-animales-en-tlalpan-33095643",
+    ("Infobae", "/noticias/?id=086a68086514ac4b9e44&mes=2026-11"):
+        "https://www.infobae.com/mexico/2026/11/12/detienen-a-presunto-abusador-sexual-de-animales-en-situacion-de-calle-en-cdmx-activistas-piden-que-las-investigaciones-lleguen-a-fondo/",
+}
 SENSITIVE_MEDIA_TITLE = re.compile(
     r"\b(?:violaci[oó]n|abuso sexual|agresi[oó]n sexual|acoso sexual|violencia sexual|"
     r"maltrato animal|maltratador(?:es)? de animales?|abusador(?:es)? sexual(?:es)? de animales?|"
@@ -95,15 +103,11 @@ def render(item, ident):
     origin = urlparse(original)
     allowed_hosts = ("news.google.com", "commons.wikimedia.org")
     curated_hosts = ("comova.mx", "mayacomunicacion.com.mx", "www.elgrafico.mx")
-    verified_oem_source = (
-        original == "https://oem.com.mx/elsoldesanjuandelrio/policiaca/toma-precauciones-si-viajas-a-la-cdmx-autopista-57-esta-detenida-33095499"
-        and item.get("source") == "El Sol de San Juan del Río"
-        and item.get("local_url") == "/noticias/?id=b37ba45fa2fa424b73bd&mes=2026-11"
-    )
+    verified_source = VERIFIED_SOURCE_LINKS.get((item.get("source"), item.get("local_url")))
     authorized = (origin.hostname in allowed_hosts or
                   (item.get("editorial_verified") is True and
                    origin.hostname in curated_hosts and origin.path != "/") or
-                  verified_oem_source)
+                  (verified_source is not None and original == verified_source))
     if origin.scheme == "https" and not origin.username and not origin.password and authorized:
         source_link = '<p class="source-top"><span>Fuente: ' + source + '</span> <a class="source-action" href="' + esc(original) + '" target="_blank" rel="nofollow noopener noreferrer">Ver fuente original ↗</a></p>'
     structured = json.dumps({"@context":"https://schema.org","@type":"NewsArticle","headline":item["title"],"datePublished":item.get("published_at") or item.get("date"),"author":{"@type":"Organization","name":"CDMX AL MEMENTO"},"publisher":{"@type":"Organization","name":"CDMX AL MEMENTO"},"mainEntityOfPage":url},ensure_ascii=False).replace("<","\\u003c")

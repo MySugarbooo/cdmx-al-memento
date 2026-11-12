@@ -22,7 +22,7 @@ from pathlib import Path
 from zoneinfo import ZoneInfo
 
 from scripts.analisis_editorial import build_editorial
-from scripts.notas_locales import local_link, summarize, assign_photos, _photo_score, is_sensitive_media, is_coyotepec_highway_crash, is_san_juan_del_rio_autopista57_closure, SENSITIVE_MEDIA_TITLE, SAN_JUAN_DEL_RIO_AUTOPISTA57_SOURCE_URL
+from scripts.notas_locales import local_link, summarize, assign_photos, _photo_score, is_sensitive_media, is_coyotepec_highway_crash, is_san_juan_del_rio_autopista57_closure, SENSITIVE_MEDIA_TITLE, SAN_JUAN_DEL_RIO_AUTOPISTA57_SOURCE_URL, is_infobae_tlalpan_animal_abuse, is_la_prensa_tlalpan_animal_case, INFOBAE_TLALPAN_ANIMAL_SOURCE_URL, LA_PRENSA_TLALPAN_ANIMAL_SOURCE_URL
 
 ROOT = Path(__file__).resolve().parent
 DEST = ROOT / "news.json"
@@ -506,6 +506,9 @@ def standardize(article):
     if is_san_juan_del_rio_autopista57_closure({"title": title, "source": source, "date": date}):
         borough = ""
         location = "San Juan del Río, Querétaro (fuera de CDMX)"
+    if is_infobae_tlalpan_animal_abuse({"title": title, "source": source, "date": date}):
+        borough = "Tlalpan"
+        location = "Tlalpan (confirmada en la nota original)"
     category = article.get("category") if article.get("category") in GENERAL_FEEDS else "CDMX"
     category = category_by_headline(title, category, source)
     result = {
@@ -525,6 +528,11 @@ def standardize(article):
         # se conserva la URL RSS para no cambiar el identificador local.
         result["source"] = "El Sol de San Juan del Río"
         result["source_url"] = SAN_JUAN_DEL_RIO_AUTOPISTA57_SOURCE_URL
+    elif is_la_prensa_tlalpan_animal_case(result):
+        result["source"] = "La Prensa"
+        result["source_url"] = LA_PRENSA_TLALPAN_ANIMAL_SOURCE_URL
+    elif is_infobae_tlalpan_animal_abuse(result):
+        result["source_url"] = INFOBAE_TLALPAN_ANIMAL_SOURCE_URL
     versions = article.get("alternate_versions")
     if isinstance(versions, list):
         preserved = []
