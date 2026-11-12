@@ -1045,15 +1045,15 @@ class PhotoRelevanceTests(unittest.TestCase):
             "keywords": ["policía", "semáforo", "tránsito"],
         }
         patrol = {
-            "id": "patrulla_representativa",
+            "id": "seguridad",
             "category": "Seguridad",
             "topic": "Patrulla de Ciudad de México",
-            "keywords": ["patrulla", "policía", "seguridad"],
-            "url": "https://example.invalid/patrulla.jpg",
-            "source": "https://example.invalid/patrulla",
-            "author": "Autor de prueba",
+            "keywords": ["Seguridad"],
+            "url": "/assets/fotos/seguridad.jpg",
+            "source": "https://commons.wikimedia.org/wiki/File:Patrulla_cdmx.jpg",
+            "author": "RainerRowe",
             "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.es",
         }
         article = news.standardize({
             "title": title,
