@@ -303,7 +303,7 @@ def summarize(article):
     method="Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
     if (
         source.casefold() == "la jornada"
-        and fold(title) == fold("CDMX: 95% de la población no puede comprar vivienda")
+        and _photo_fold(title) == _photo_fold("CDMX: 95% de la población no puede comprar vivienda")
     ):
         return {
             "lead": (
