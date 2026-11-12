@@ -1255,7 +1255,16 @@ STRICT_PHOTO_TOPICS = (
     # Los bloqueos anunciados por repartidores requieren protesta, reparto o vialidad.
     (r"\b(?:repartidores? anuncian? bloqueos?|repartidores? bloquean? zona|bloqueos? de repartidores?)\b",
      r"\b(?:bloqueo|protesta|manifestacion|repartidor|motocicleta|trafico|transito|vialidad|calle)\b"),
-     # Los trenes interurbanos requieren una fotografía ferroviaria, no un monumento de CDMX.
+     # Las instalaciones de toboganes requieren una imagen de juegos o arte interactivo.
+    (r"\b(?:toboganes? gigantes|obra de arte interactiva.*toboganes?)\b",
+     r"\b(?:toboganes?|resbaladillas?|instalacion interactiva|arte publico interactivo|parque de diversiones|juegos infantiles)\b"),
+    # Un torneo de sumo requiere contexto de lucha japonesa, no un monumento de la ciudad.
+    (r"\b(?:sumo|torneo de sumo|lucha japonesa|luchadores? de sumo)\b",
+     r"\b(?:sumo|lucha japonesa|rikishi|torneo de sumo|luchadores? de sumo)\b"),
+    # Consejos sobre cajeros automáticos requieren un cajero, tarjeta o contexto bancario.
+    (r"\b(?:cajeros? automaticos?|alteraciones en cajeros?|fraudes? .*cajeros? automaticos?)\b",
+     r"\b(?:cajero automatico|atm|terminal bancaria|tarjeta bancaria|retiro de efectivo|lector de tarjeta|dinero en efectivo|banco)\b"),
+    # Los trenes interurbanos requieren una fotografía ferroviaria, no un monumento de CDMX.
     (r"\b(?:primer tren|tren de pasajeros|ruta cdmx[- ]pachuca|tren ciudad de mexico[- ]guadalajara|ruta ciudad de mexico[- ]pachuca)\b",
      r"\b(?:tren de pasajeros|ferrocarril|locomotora|vagones?|vias? ferreas|tren interurbano|tren de larga distancia)\b"),
     # Una caravana migrante no se ilustra con deportes u otros asuntos sin relación.
@@ -1286,7 +1295,7 @@ STRICT_PHOTO_TOPICS = (
     (r"\b(?:refugio franciscano|refugio de animales|albergue de animales)\b",
      r"\b(?:perros?|perritos?|animales?|mascotas?|refugio animal)\b"),
     # Una marcha de motociclistas requiere una motocicleta; una protesta genérica no basta.
-    (r"\b(?:motociclistas? march\w*|marcha de motociclistas?|movilizacion de motociclistas?)\b",
+    (r"\b(?:mottu|motociclistas?.{0,50}march\w*|marcha de motociclistas?|movilizacion de motociclistas?)\b",
      r"\b(?:motocicletas?|motociclistas?|motos?|motorcycle)\b"),
     # Los decomisos de consolas/videojuegos en Plaza Meave requieren contexto de mercancía, no patrullas.
     (r"(?=.*\bplaza meave\b)(?=.*\b(?:videojuegos?|consolas?|pirateria|mercancia apocrifa|decomis\w*|aseguran|incaut\w*)\b)",
@@ -1437,7 +1446,10 @@ def _photo_score(article, photo):
     if (crime_story or police_operation_story) and re.search(r"\bgraduacion\b", topic):
         return -10000
     # La policía de tránsito y sus automovilistas no ilustran un robo a comercio.
-    if crime_story and re.search(r"\b(?:policia de transito|policia de trafico|transito|automovilistas?)\b", context):
+    if crime_story and re.search(
+        r"\b(?:policia de transito|policia de trafico|transito|automovilistas?|semaforo|controlando el semaforo|policia controlando el semaforo)\b",
+        context,
+    ):
         return -10000
     # Los delitos cibernéticos requieren contexto de seguridad informática,
     # no una fotografía genérica de Protección Civil o de una patrulla.
