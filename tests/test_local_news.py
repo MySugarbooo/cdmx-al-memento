@@ -1,8 +1,8 @@
 """Garantiza noticias leíbles aquí, fotografías únicas y atribución responsable."""
 import unittest
 from pathlib import Path
-from scripts.notas_locales import assign_photos, local_link, summarize
-from update_news import category_by_headline
+from scripts.notas_locales import assign_photos, local_link, summarize, is_sensitive_media
+from update_news import category_by_headline, standardize
 
 ROOT=Path(__file__).resolve().parents[1]
 
@@ -12,6 +12,40 @@ class LocalNewsTests(unittest.TestCase):
                 "url":"https://news.google.com/rss/articles/sample"+str(i),
                 "source":"Periódico de prueba","date":"2026-10-13",
                 "category":category,"borough":""}
+
+    def test_coyotepec_highway_crash_is_external_and_has_no_unrelated_photo(self):
+        article = {
+            "title": "Fuerte Accidente de 3 Autobuses y Tractocamión en la México-Querétaro: Cierran Hacia CDMX",
+            "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPaHl6T3o0cHRKSWoxRDh3ZXNDNmtjNE5PWWtxWjFaX2hVczAzazVJMFlodzR1elFyeGtoQVhMUEo0a29FbkRSTFF3dDhCZFBQa3U0SkNiMmR2SEthZTEzaWxTMFktVTlBZ1BiUUpNdDBMNEctVm1LcElyWjlKQjdrZFEzc1JHdXU1LUZFdmdzRkZqbDAwZ1IxbFg2bGVieUN6UVdpd1JRODhuRHBMUTJfR3FKSzk4eEZyQUNWY1lkNWpJZWNHZXN6VEREUXNpT3ExNjQyaGk2aG5oaWZGMnJNQWNqQ2U?oc=5",
+            "source": "N+",
+            "date": "2026-11-12",
+            "published_at": "2026-11-12T15:41:49Z",
+            "category": "Movilidad",
+            "borough": "",
+            "photo": {
+                "id": "commons_155112880",
+                "kind": "representativa",
+                "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Estaci%C3%B3n_Moctezuma_de_la_L%C3%ADnea_12_del_Troleb%C3%BAs_de_la_Ciudad_de_M%C3%A9xico.jpg/960px-Estaci%C3%B3n_Moctezuma_de_la_L%C3%ADnea_12_del_Troleb%C3%BAs_de_la_Ciudad_de_M%C3%A9xico.jpg",
+                "category": "Movilidad",
+                "topic": "Estación Moctezuma de la Línea 12 del Trolebús de la Ciudad de México",
+                "author": "ProtoplasmaKid",
+                "license": "CC BY-SA 4.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "https://commons.wikimedia.org/wiki/File:Estaci%C3%B3n_Moctezuma_de_la_L%C3%ADnea_12_del_Troleb%C3%BAs_de_la_Ciudad_de_M%C3%A9xico.jpg"
+            }
+        }
+        result = standardize(article)
+        self.assertIsNotNone(result)
+        self.assertEqual(result["location"], "Coyotepec, Estado de México (fuera de CDMX)")
+        self.assertEqual(result["borough"], "")
+        self.assertTrue(is_sensitive_media(result))
+        self.assertIn("Coyotepec", result["brief"]["lead"])
+        self.assertIn("27 personas lesionadas", result["brief"]["lead"])
+        self.assertNotIn("en la capital", result["brief"]["lead"].casefold())
+        self.assertIn("fuera de la capital", result["brief"]["context"])
+        assign_photos([result])
+        self.assertNotIn("photo", result)
+        self.assertTrue(result["sensitive_media"])
 
     def test_distinct_real_photos_for_sixty_news(self):
         groups=["CDMX","Metro","Seguridad","Movilidad","Cultura","Gobierno"]
