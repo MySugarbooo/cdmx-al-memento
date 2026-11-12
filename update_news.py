@@ -177,6 +177,9 @@ def outside_cdmx_scope(title):
 
 def identify_location(title, date=None):
     words = " " + fold(title) + " "
+    # La Línea 1 del Cablebús opera entre Indios Verdes y Cuautepec, en Gustavo A. Madero.
+    if " cablebus " in words and " linea 1 " in words:
+        return "Gustavo A. Madero", "Gustavo A. Madero, Ciudad de México (Línea 1 del Cablebús)"
     # La volcadura del 12 de noviembre ocurrió en Santa María Totoltepec,
     # Toluca; la afectación vial fue hacia CDMX, no dentro de una alcaldía capitalina.
     if (date == "2026-11-12"
@@ -335,6 +338,9 @@ def category_by_headline(title, feed_category, source=""):
     # Los festivales de cine pertenecen a Cultura.
     if re.search(r"\b(?:cine de barrio|festival(?: de)? cine)\b", normalized):
         return "Cultura"
+    # Los avisos operativos del Cablebús pertenecen a Movilidad, no a CDMX genérico.
+    if re.search(r"\bcablebus\b", normalized):
+        return "Movilidad"
     # El estado del Metrobús pertenece a Movilidad, no a la categoría general.
     if re.search(r"\bmetrobus\b", normalized):
         return "Movilidad"
