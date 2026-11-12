@@ -89,14 +89,20 @@ def render(item, ident):
     location = str(item.get("location") or "")
     location_label = esc(location if location.endswith("(fuera de CDMX)") else "CDMX")
     url = BASE + "/articulos/" + ident + "/"
-    original = item.get("url") or ""
+    original = item.get("source_url") or item.get("url") or ""
     source_link = ""
     origin = urlparse(original)
     allowed_hosts = ("news.google.com", "commons.wikimedia.org")
     curated_hosts = ("comova.mx", "mayacomunicacion.com.mx", "www.elgrafico.mx")
+    verified_oem_source = (
+        original == "https://oem.com.mx/elsoldesanjuandelrio/policiaca/toma-precauciones-si-viajas-a-la-cdmx-autopista-57-esta-detenida-33095499"
+        and item.get("source") == "El Sol de San Juan del Río"
+        and item.get("local_url") == "/noticias/?id=b37ba45fa2fa424b73bd&mes=2026-11"
+    )
     authorized = (origin.hostname in allowed_hosts or
                   (item.get("editorial_verified") is True and
-                   origin.hostname in curated_hosts and origin.path != "/"))
+                   origin.hostname in curated_hosts and origin.path != "/") or
+                  verified_oem_source)
     if origin.scheme == "https" and not origin.username and not origin.password and authorized:
         source_link = '<p class="source-top"><span>Fuente: ' + source + '</span> <a class="source-action" href="' + esc(original) + '" target="_blank" rel="nofollow noopener noreferrer">Ver fuente original ↗</a></p>'
     structured = json.dumps({"@context":"https://schema.org","@type":"NewsArticle","headline":item["title"],"datePublished":item.get("published_at") or item.get("date"),"author":{"@type":"Organization","name":"CDMX AL MEMENTO"},"publisher":{"@type":"Organization","name":"CDMX AL MEMENTO"},"mainEntityOfPage":url},ensure_ascii=False).replace("<","\\u003c")
