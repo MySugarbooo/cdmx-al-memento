@@ -151,6 +151,31 @@ class LocalNewsTests(unittest.TestCase):
                     "Seguridad",
                 )
 
+    def test_imagen_tlalpan_dog_rescue_is_security_and_not_a_detention(self):
+        article = {
+            "title": "Vecinos rescatan a perrita de presunto abuso sexual por un hombre en Tlalpan, CDMX",
+            "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNUEQ2cV9wblUya0JiMGd0ZWotSk4xakZoa3ZzUHJkYlgwcVpJbzFQZkI0R29TVURoTF9WM2VSN2xqTng4RlhCV3dsaEpPeDg1ZWsyc0NNcnh4R29HSHF3Sm5FcnJiUFZCYkhiZklGMTlSb1VoSGFEVVNDLTU0ZEp2UjUyamNjMU1TTlk1ZHBGZnVHMkFCck1mVDhRTmZSbG03eS1mNXlmOFcxRFNVQU5tVW9XYmVLc2NURUdKYlJnVmFzb2xkUzZuZ3loN0xkZl94QVJMb3BzS3U?oc=5",
+            "source": "Imagen Televisión",
+            "date": "2026-11-12",
+            "published_at": "2026-11-12T21:07:53Z",
+            "category": "CDMX",
+            "borough": "Tlalpan",
+        }
+        result = standardize(article)
+        self.assertIsNotNone(result)
+        self.assertEqual(result["category"], "Seguridad")
+        self.assertEqual(result["borough"], "Tlalpan")
+        self.assertIn("Tlalpan", result["location"])
+        self.assertIn("vecinos rescataron a una perrita", result["brief"]["lead"])
+        self.assertIn("no informa de una detención", result["brief"]["lead"])
+        self.assertNotIn("detuvo a un hombre", result["brief"]["lead"])
+        self.assertTrue(is_sensitive_media(result))
+        assign_photos([result])
+        self.assertNotIn("photo", result)
+        rendered = render(result, article_id(result))
+        self.assertIn("Sin fotografía verificada del hecho", rendered)
+        self.assertNotIn('<figure class="article-photo">', rendered)
+
     def test_infobae_animal_case_uses_confirmed_tlalpan_location_and_source(self):
         article = {
             "title": "Detienen a presunto abusador sexual de animales en situación de calle en CDMX: activistas piden que las investigaciones lleguen a fondo",
