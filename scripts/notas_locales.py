@@ -52,12 +52,27 @@ def is_coyotepec_highway_crash(article):
     )
 
 
+def is_san_juan_del_rio_autopista57_closure(article):
+    """Identifica el aviso de la autopista 57 ubicado en San Juan del Río."""
+    title = unicodedata.normalize("NFKD", str(article.get("title") or ""))
+    title = "".join(ch for ch in title if not unicodedata.combining(ch)).casefold()
+    source = unicodedata.normalize("NFKD", str(article.get("source") or ""))
+    source = "".join(ch for ch in source if not unicodedata.combining(ch)).casefold().strip()
+    return (
+        str(article.get("date") or "") == "2026-11-12"
+        and source == "el sol de mexico"
+        and "autopista 57" in title
+        and "esta detenida" in title
+    )
+
+
 def is_sensitive_media(article):
     """Impide fotos de contexto en noticias sensibles o accidentes graves sin imagen verificada."""
     return (
         article.get("sensitive_media") is True
         or bool(SENSITIVE_MEDIA_TITLE.search(str(article.get("title") or "")))
         or is_coyotepec_highway_crash(article)
+        or is_san_juan_del_rio_autopista57_closure(article)
     )
 
 
@@ -369,6 +384,29 @@ def summarize(article):
                 "accidente-mexico-queretaro-hoy-12-noviembre-2026-choque-autobuses-pasajeros-"
                 "cierre-cdmx/. El saldo y las condiciones viales son datos atribuidos al medio, "
                 "no una verificación independiente de CDMX AL MEMENTO."
+            ),
+        }
+    if is_san_juan_del_rio_autopista57_closure(article):
+        return {
+            "lead": (
+                "El listado local de Diario de Querétaro presenta este mismo titular y lo acompaña "
+                "con un extracto que ubica las filas kilométricas por cierres derivados de accidentes "
+                "en territorio de San Juan del Río, Querétaro. El extracto no precisa el número de "
+                "accidentes, el tramo exacto ni su duración, por lo que no añadimos esas cifras."
+            ),
+            "context": (
+                "La afectación descrita está en San Juan del Río, Querétaro, fuera de la Ciudad de México. "
+                "El aviso es relevante para quienes viajan hacia CDMX por la autopista 57."
+            ),
+            "pending": (
+                "El punto exacto, la duración de los cierres y la situación actual deben confirmarse "
+                "con CAPUFE y Guardia Nacional antes de viajar."
+            ),
+            "method": (
+                "Síntesis editorial basada en el titular atribuido a El Sol de México y en el extracto "
+                "del mismo titular en la sección Local de Diario de Querétaro, que sitúa las filas en "
+                "San Juan del Río. El extracto no reproduce la nota completa y no constituye una "
+                "verificación independiente."
             ),
         }
     if (article.get("date") == "2026-11-12"
