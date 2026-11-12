@@ -22,7 +22,7 @@ from pathlib import Path
 from zoneinfo import ZoneInfo
 
 from scripts.analisis_editorial import build_editorial
-from scripts.notas_locales import local_link, summarize, assign_photos, _photo_score, is_sensitive_media, is_coyotepec_highway_crash, is_san_juan_del_rio_autopista57_closure, SENSITIVE_MEDIA_TITLE
+from scripts.notas_locales import local_link, summarize, assign_photos, _photo_score, is_sensitive_media, is_coyotepec_highway_crash, is_san_juan_del_rio_autopista57_closure, SENSITIVE_MEDIA_TITLE, SAN_JUAN_DEL_RIO_AUTOPISTA57_SOURCE_URL
 
 ROOT = Path(__file__).resolve().parent
 DEST = ROOT / "news.json"
@@ -59,7 +59,7 @@ def clear_sensitive_context_photos(items):
 
 ARCHIVE_VERSION_FIELDS = (
     "title", "description", "url", "source", "date", "published_at",
-    "category", "borough", "location", "local_url", "brief", "photo",
+    "category", "borough", "location", "local_url", "source_url", "brief", "photo",
     "editorial_verified", "sensitive_media",
 )
 
@@ -510,6 +510,11 @@ def standardize(article):
         "location": location,
     }
     result["local_url"] = local_link(result)
+    if is_san_juan_del_rio_autopista57_closure(result):
+        # La publicación original identifica al medio regional y a su firma;
+        # se conserva la URL RSS para no cambiar el identificador local.
+        result["source"] = "El Sol de San Juan del Río"
+        result["source_url"] = SAN_JUAN_DEL_RIO_AUTOPISTA57_SOURCE_URL
     versions = article.get("alternate_versions")
     if isinstance(versions, list):
         preserved = []
@@ -574,7 +579,7 @@ def merge_archive_records(first, second):
         (second, first) if sort_key(second) >= sort_key(first) else (first, second)
     )
     merged = dict(primary)
-    for field in ("photo", "borough", "location", "published_at", "brief", "description"):
+    for field in ("photo", "borough", "location", "published_at", "brief", "description", "source_url"):
         if not merged.get(field) and other.get(field):
             merged[field] = other[field]
 
