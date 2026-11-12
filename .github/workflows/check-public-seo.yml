@@ -27,6 +27,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
+      - name: Test public data and article validation
+        run: python -m unittest discover -s tests -p 'test_public_seo.py' -v
       - name: Validate public HTML links and XML sitemaps
         run: python scripts/check_public_seo.py
       - name: Check public sitemaps and article HTTP responses
@@ -34,7 +36,7 @@ jobs:
         run: |
           set -uo pipefail
           failed=0
-          for path in /robots.txt /sitemap.xml /sitemap-articulos.xml /comunidad/ /assets/comments.js /assets/comments-config.js /articulos/cea4c461a4f0251f4cb5/ /articulos/b37ba45fa2fa424b73bd/; do
+          for path in /robots.txt /news.json /archivo/meses.json /sitemap.xml /sitemap-articulos.xml /creditos-fotograficos.html /comunidad/ /assets/comments.js /assets/comments-config.js /articulos/cea4c461a4f0251f4cb5/ /articulos/b37ba45fa2fa424b73bd/; do
             url="https://cdmx-al-memento.pages.dev${path}"
             echo "::group::${url}"
             response=$(curl --location --silent --show-error --max-time 25 --retry 2 --retry-delay 3 --output /dev/null --write-out '%{http_code} %{content_type} %{url_effective}' "${url}") || response="000 connection-error ${url}"
