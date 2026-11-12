@@ -193,6 +193,7 @@ class LocalNewsTests(unittest.TestCase):
         )
         self.assertNotRegex(context, r"\bcarnavales?\b")
         self.assertEqual(photo["kind"], "representativa")
+        self.assertEqual(photo["category"], "Servicios")
         self.assertTrue(photo["author"])
         self.assertTrue(photo["license"])
         self.assertTrue(photo["licenseUrl"])
