@@ -25,6 +25,18 @@ NEWS_PHOTOS=ROOT/"assets/fotos/indice-noticias-1100.json"
 TOPIC_PHOTOS=ROOT/"assets/fotos/contexto-tematico.json"
 VERIFIED_EVENTS=ROOT/"assets/fotos/hechos-verificados.json"
 
+SENSITIVE_MEDIA_TITLE = re.compile(
+    r"\\b(?:violaci[oó]n|abuso sexual|agresi[oó]n sexual|acoso sexual|violencia sexual)\\b",
+    re.IGNORECASE,
+)
+
+
+def is_sensitive_media(article):
+    """Impide asignar fotos de contexto a titulares sobre violencia sexual."""
+    return (article.get("sensitive_media") is True or
+            bool(SENSITIVE_MEDIA_TITLE.search(str(article.get("title") or ""))))
+
+
 TAGS={
  "Metro":{
    "focus":"el servicio de transporte del Metro y las personas que utilizan su red",
@@ -1332,9 +1344,10 @@ def assign_photos(items):
             a["photo"]=exact
             exact_count+=1
             continue
-        # Los siniestros cotejados no deben ilustrarse con otra emergencia histórica.
-        # Sin foto del hecho autenticada, el sitio utiliza su ilustración neutral.
-        if a.get("editorial_verified") is True and a.get("sensitive_media") is True:
+        # Los titulares sensibles nunca reciben fotografías de contexto.
+        # Solo una fotografía documental aprobada arriba puede acompañarlos.
+        if is_sensitive_media(a):
+            a["sensitive_media"] = True
             a.pop("photo", None)
             continue
         # La imagen antigua no tiene preferencia sobre otra que represente mejor el tema.
