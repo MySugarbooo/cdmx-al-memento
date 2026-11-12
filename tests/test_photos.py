@@ -1,4 +1,5 @@
 """Validar renovación de fotos, licencias y precisión de atribuciones."""
+import json
 import unittest
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -102,6 +103,17 @@ class RecentPhotoTests(unittest.TestCase):
         self.assertIn("python scripts/actualizar_fotos.py", workflow)
         self.assertIn("assets/fotos/recientes.json", workflow)
         self.assertIn("fotografías de contexto", (base / "index.html").read_text(encoding="utf-8"))
+
+
+    def test_credits_page_count_matches_photo_catalog(self):
+        base = Path(__file__).resolve().parent.parent
+        catalog = json.loads(
+            (base / "assets/fotos/indice-noticias-1100.json").read_text(encoding="utf-8")
+        )
+        html = (base / "creditos-fotograficos.html").read_text(encoding="utf-8")
+        count = f"{len(catalog['photos']):,}"
+        self.assertIn(f"Fototeca editorial: {count} imágenes y sus atribuciones", html)
+        self.assertIn(f"La biblioteca reúne {count} imágenes", html)
 
 
 if __name__ == "__main__":
