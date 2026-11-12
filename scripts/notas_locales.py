@@ -799,7 +799,9 @@ STRICT_PHOTO_TOPICS = (
     (r"\b(?:no manifestarse|manifestarse|marchar a cdmx)\b",
      r"\b(?:marchas?|protestas?|manifestantes?|cacerolazo|planton(?:es)?|bloqueos?|movilizaciones?)\b"),
     # Una jornada de búsqueda requiere colectivos o personas desaparecidas, no jardines genéricos.
-    (r"\b(?:colectivos? en jornada de busqueda|jornada de busqueda|colectivos? de busqueda)\b",
+    (r"\bcolectivos? de busqueda\b",
+     r"\b(?:colectivos? de busqueda|personas desaparecidas|madres? buscadoras?|familias? buscadoras?|busqueda de campo|rastreo|fiscalia|protestas?|manifestaciones?|marchas?|manifestantes?|bloqueos?)\b"),
+    (r"\b(?:colectivos? en jornada de busqueda|jornada de busqueda)\b",
      r"\b(?:colectivos? de busqueda|personas desaparecidas|madres? buscadoras?|familias? buscadoras?|busqueda de campo|rastreo|fiscalia)\b"),
     # Una nota sobre una orquesta necesita contexto musical, incluido un coro representativo.
     (r"\b(?:orquesta|aniversario musical)\b",
@@ -846,10 +848,13 @@ def _photo_score(article, photo):
         r"\b(?:bomberos?|incendios?|explosiones?|pipas? de gas|gas lp|tanques? de gas|proteccion civil|rescate)\b",
         context,
     ))
-    emergency_story = bool(re.search(
-        r"\b(?:bomberos?|incendios?|explosiones?|pipas? de gas|gas lp|tanques? de gas|proteccion civil|rescate|emergencias?|siniestros?)\b",
-        headline,
-    ))
+    emergency_story = bool(
+        re.search(STRICT_PHOTO_TOPICS[0][0], headline)
+        or re.search(
+            r"\b(?:bomberos?|incendios?|explosiones?|pipas? de gas|gas lp|tanques? de gas|proteccion civil|rescate|emergencias?|siniestros?)\b",
+            headline,
+        )
+    )
     if emergency_photo and not emergency_story:
         return -10000
     source=_photo_fold(article.get("source"))
