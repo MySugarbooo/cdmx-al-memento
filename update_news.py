@@ -22,7 +22,7 @@ from pathlib import Path
 from zoneinfo import ZoneInfo
 
 from scripts.analisis_editorial import build_editorial
-from scripts.notas_locales import local_link, summarize, assign_photos, _photo_score, is_sensitive_media, is_coyotepec_highway_crash, SENSITIVE_MEDIA_TITLE
+from scripts.notas_locales import local_link, summarize, assign_photos, _photo_score, is_sensitive_media, is_coyotepec_highway_crash, is_san_juan_del_rio_autopista57_closure, SENSITIVE_MEDIA_TITLE
 
 ROOT = Path(__file__).resolve().parent
 DEST = ROOT / "news.json"
@@ -289,6 +289,9 @@ def category_by_headline(title, feed_category, source=""):
     """Corrige etiquetas RSS evidentes sin inventar ubicaciones o hechos."""
     normalized = fold(title)
     normalized_source = fold(source)
+    if (re.search(r"\\bautopista\\s+57\\b", normalized)
+            and re.search(r"\\b(?:detenida|cerrada|bloqueada|filas?|trafico|accidentes?)\\b", normalized)):
+        return "Movilidad"
     # Las explosiones y fugas de gas son emergencias de Seguridad, no CDMX genérico.
     if re.search(
         r"\b(?:explosion(?:es)? de (?:un )?tanque de gas|explosion(?:es)? de gas|fugas? de gas|incendios?|estalla\s+(?:un\s+)?tanque(?:\s+de\s+gas)?)\b",
@@ -490,6 +493,9 @@ def standardize(article):
     if is_coyotepec_highway_crash({"title": title, "source": source, "date": date}):
         borough = ""
         location = "Coyotepec, Estado de México (fuera de CDMX)"
+    if is_san_juan_del_rio_autopista57_closure({"title": title, "source": source, "date": date}):
+        borough = ""
+        location = "San Juan del Río, Querétaro (fuera de CDMX)"
     category = article.get("category") if article.get("category") in GENERAL_FEEDS else "CDMX"
     category = category_by_headline(title, category, source)
     result = {
