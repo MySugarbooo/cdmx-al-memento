@@ -901,13 +901,16 @@ def _photo_score(article, photo):
         return -10000
     # Admitir categorías temáticas solo cuando el descriptor coincide con la noticia.
     music_story = bool(re.search(
-        r"\b(?:riff|orquesta|conciertos?|bandas?|cantantes?|aniversario musical)\b",
+        r"\b(?:riff|musica|orquestas?|coros?|coral|conciertos?|bandas?|cantantes?|aniversario musical)\b",
         headline,
     ))
     music_photo = bool(re.search(
-        r"\b(?:musica|conciertos?|guitarras?|bandas?|coros?|coral|escenarios?|rock|cantantes?|festivales?|auditorios?|estadios?)\b",
+        r"\b(?:musica|orquestas?|conciertos?|guitarras?|bandas?|coros?|coral|rock|cantantes?)\b",
         context,
     ))
+    # Un coro o una fotografía musical no representa asuntos ajenos a la música.
+    if music_photo and not music_story:
+        return -10000
     weather_story = bool(re.search(r"\brachas?\b", headline))
     weather_photo = bool(re.search(
         r"\b(?:viento|rachas?|meteorologia|clima|nubes?|cielo nublado|tormenta|temperatura|frio)\b",
