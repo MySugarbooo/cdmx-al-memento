@@ -58,6 +58,19 @@ LA_PRENSA_TLALPAN_ANIMAL_SOURCE_URL = "https://oem.com.mx/la-prensa/policiaca/de
 INFOBAE_TLALPAN_ANIMAL_SOURCE_URL = "https://www.infobae.com/mexico/2026/11/12/detienen-a-presunto-abusador-sexual-de-animales-en-situacion-de-calle-en-cdmx-activistas-piden-que-las-investigaciones-lleguen-a-fondo/"
 
 
+def is_imagen_tlalpan_dog_rescue(article):
+    """Identifica el titular de Imagen TV sobre el rescate de una perrita en Tlalpan."""
+    title = unicodedata.normalize("NFKD", str(article.get("title") or ""))
+    title = "".join(ch for ch in title if not unicodedata.combining(ch)).casefold()
+    source = unicodedata.normalize("NFKD", str(article.get("source") or ""))
+    source = "".join(ch for ch in source if not unicodedata.combining(ch)).casefold().strip()
+    return (
+        str(article.get("date") or "") == "2026-11-12"
+        and source == "imagen television"
+        and title.startswith("vecinos rescatan a perrita de presunto abuso sexual por un hombre en tlalpan")
+    )
+
+
 def is_infobae_tlalpan_animal_abuse(article):
     """Identifica la nota de Infobae cuyo cuerpo ubica el caso en Tlalpan."""
     title = unicodedata.normalize("NFKD", str(article.get("title") or ""))
@@ -416,6 +429,28 @@ def summarize(article):
                 "accidente-mexico-queretaro-hoy-12-noviembre-2026-choque-autobuses-pasajeros-"
                 "cierre-cdmx/. El saldo y las condiciones viales son datos atribuidos al medio, "
                 "no una verificación independiente de CDMX AL MEMENTO."
+            ),
+        }
+    if is_imagen_tlalpan_dog_rescue(article):
+        return {
+            "lead": (
+                "Imagen Televisión reportó que vecinos rescataron a una perrita en Tlalpan tras "
+                "señalamientos de presunto abuso sexual por parte de un hombre. El titular no informa "
+                "de una detención ni de una resolución judicial; no añadimos esos datos."
+            ),
+            "context": (
+                "El caso se ubica en Tlalpan y se refiere a un presunto delito contra un animal; "
+                "la información debe evitar detalles gráficos y respetar la presunción de inocencia."
+            ),
+            "pending": (
+                "No se dispone aquí del reportaje íntegro ni de confirmación oficial sobre el estado "
+                "de la perrita, la investigación o una posible detención; esos datos deben corroborarse "
+                "con la SSC, FGJCDMX y PAOT."
+            ),
+            "method": (
+                "Síntesis editorial basada en el titular y los metadatos de Imagen Televisión del "
+                "12 de noviembre de 2026; no equivale a lectura del reportaje íntegro ni a verificación "
+                "independiente."
             ),
         }
     if is_infobae_tlalpan_animal_abuse(article):
