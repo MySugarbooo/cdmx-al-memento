@@ -270,7 +270,36 @@ def summarize(article):
     context=theme["importance"]
     pending=theme["verify"]+" El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar."
     method="Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-    if ("buen fin 2026" in title.casefold() and "ssc" in title.casefold()
+    if (
+        source.casefold() == "tv azteca"
+        and "explosión de gas en local de azcapotzalco" in title.casefold()
+        and "baches, socavones" in title.casefold()
+    ):
+        # El encabezado de Google News describe un bloque de una página en vivo;
+        # no es el título real de la página de TV Azteca ni una nota exclusiva.
+        first = (
+            f"Google News muestra el encabezado: «{title}». "
+            "La página original de TV Azteca se titula "
+            "«Accidentes, afectaciones y percances en CDMX | EN VIVO» y reúne varios incidentes. "
+            "En su actualización del 11 de noviembre de 2026 a las 20:17, el medio reportó "
+            "una explosión por acumulación de gas en un local de Azcapotzalco y señaló que "
+            "los servicios de emergencia estaban en el lugar. La misma página reúne otros "
+            "accidentes y afectaciones viales; no es una nota dedicada exclusivamente a la explosión."
+        )
+        context = (
+            "Es importante distinguir la emergencia por gas de los otros percances viales "
+            "incluidos en la misma cobertura, para no mezclar incidentes ni sus datos."
+        )
+        pending = (
+            "El saldo de personas lesionadas, la causa exacta, los daños y la situación posterior "
+            "deben comprobarse en las actualizaciones de TV Azteca y los avisos de las autoridades; "
+            "el primer reporte no confirma por sí solo el desenlace."
+        )
+        method = (
+            "Síntesis editorial propia basada en el encabezado de Google News y la página en vivo "
+            "de TV Azteca, consultada el 11 de noviembre de 2026; no constituye verificación independiente."
+        )
+    elif ("buen fin 2026" in title.casefold() and "ssc" in title.casefold()
             and "seguridad ciudadana" in source.casefold()):
         method="Síntesis editorial basada en el comunicado oficial de la SSC publicado el 11 de noviembre de 2026; cifras y calendario atribuidos a la dependencia, sin verificación independiente."
         pending="El horario, los puntos de vigilancia y cualquier ajuste del operativo deben confirmarse en los avisos de la SSC durante el Buen Fin. El comunicado describe un despliegue previsto; no es un balance de incidentes."
