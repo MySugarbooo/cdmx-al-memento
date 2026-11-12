@@ -952,5 +952,124 @@ class PhotoRelevanceTests(unittest.TestCase):
                 self.assertNotIn("photo", article)
 
 
+    def test_toboggan_sumo_and_atm_advice_reject_unrelated_photos(self):
+        cases = (
+            (
+                "Toboganes gigantes llegan a la CDMX: dónde y cuándo abre la obra de arte interactiva que podrás disfrutar de manera gratuita",
+                {
+                    "id": "carnival_declaration",
+                    "category": "CDMX",
+                    "topic": "Declaratoria de carnavales como patrimonio cultural inmaterial de la Ciudad de México",
+                    "keywords": ["carnaval", "patrimonio cultural"],
+                },
+            ),
+            (
+                "El sumo regresa a CDMX tras 45 años: cuándo será el torneo y dónde comprar boletos",
+                {
+                    "id": "monumento_colon",
+                    "category": "CDMX",
+                    "topic": "Panorámica Monumento a Colón - Paseo de la Reforma - Ciudad de México",
+                    "keywords": ["monumento", "Reforma"],
+                },
+            ),
+            (
+                "Seis recomendaciones clave emitidas por la Policía Bancaria de la Ciudad de México para proteger tu dinero y evitar fraudes o alteraciones en cajeros automáticos durante las compras del Buen Fin 2026",
+                {
+                    "id": "police_graduation",
+                    "category": "Seguridad",
+                    "topic": "Graduación de la Policía de la Ciudad de México",
+                    "keywords": ["policía", "graduación"],
+                },
+            ),
+        )
+        for index, (title, wrong_photo) in enumerate(cases):
+            with self.subTest(title=title):
+                article = news.standardize({
+                    "title": title,
+                    "url": f"https://news.google.com/rss/articles/culture-atm-photo-{index}",
+                    "source": "Medio de prueba",
+                    "date": "2026-11-12",
+                    "category": "CDMX",
+                    "photo": wrong_photo,
+                })
+                self.assertLess(_photo_score(article, wrong_photo), 0)
+                with patch.object(photos, "_pool", return_value=[wrong_photo]), patch.object(
+                    photos, "_load", return_value=[]
+                ):
+                    assign_photos([article])
+                self.assertNotIn("photo", article)
+
+    def test_mottu_march_rejects_cacerolazo_and_uses_motorcycle_context(self):
+        title = "Motociclistas de Mottu México marcharán de Iztacalco al Zócalo; se suman seis concentraciones en la CDMX"
+        cacerolazo = {
+            "id": "cacerolazo_violencia_3",
+            "category": "CDMX",
+            "topic": "Cacerolazo contra la violencia - Ciudad de México - 3",
+            "keywords": ["cacerolazo", "protesta"],
+        }
+        motorcycle = {
+            "id": "contexto_motocicleta_zocalo_brigada_2017",
+            "kind": "representativa",
+            "category": "Movilidad",
+            "topic": "Motocicleta de apoyo de una brigada voluntaria en el Zócalo de la Ciudad de México (2017; imagen representativa, no corresponde a la marcha de 2026)",
+            "keywords": ["motocicleta", "motociclistas", "moto", "movilidad", "marcha de motociclistas", "Zócalo", "Ciudad de México"],
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Ayuda_tras_el_Terremoto_de_Puebla_de_2017_-_Ciudad_de_M%C3%A9xico_-_3.jpg/960px-Ayuda_tras_el_Terremoto_de_Puebla_de_2017_-_Ciudad_de_M%C3%A9xico_-_3.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+            "source": "https://commons.wikimedia.org/wiki/File:Ayuda_tras_el_Terremoto_de_Puebla_de_2017_-_Ciudad_de_M%C3%A9xico_-_3.jpg",
+            "author": "ProtoplasmaKid",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        }
+        article = news.standardize({
+            "title": title,
+            "url": "https://news.google.com/rss/articles/mottu-photo-regression",
+            "source": "Medio de prueba",
+            "date": "2026-11-12",
+            "category": "Movilidad",
+            "photo": cacerolazo,
+        })
+        self.assertLess(_photo_score(article, cacerolazo), 0)
+        self.assertGreater(_photo_score(article, motorcycle), 0)
+        with patch.object(photos, "_pool", return_value=[cacerolazo, motorcycle]), patch.object(
+            photos, "_load", return_value=[]
+        ):
+            assign_photos([article])
+        self.assertEqual(article["photo"]["id"], "contexto_motocicleta_zocalo_brigada_2017")
+        self.assertIn("no corresponde a la marcha de 2026", article["photo"]["topic"])
+
+    def test_kidnapping_story_rejects_traffic_light_police_photo_and_uses_patrol_context(self):
+        title = "Policías de la CDMX rescataron a un hombre secuestrado en La Merced al detener a tres sujetos con armas y droga"
+        traffic = {
+            "id": "policia_semaforo",
+            "category": "Seguridad",
+            "topic": "Policía controlando el semáforo, Ciudad de México",
+            "keywords": ["policía", "semáforo", "tránsito"],
+        }
+        patrol = {
+            "id": "seguridad",
+            "category": "Seguridad",
+            "topic": "Patrulla de Ciudad de México",
+            "keywords": ["Seguridad"],
+            "url": "/assets/fotos/seguridad.jpg",
+            "source": "https://commons.wikimedia.org/wiki/File:Patrulla_cdmx.jpg",
+            "author": "RainerRowe",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.es",
+        }
+        article = news.standardize({
+            "title": title,
+            "url": "https://news.google.com/rss/articles/kidnapping-traffic-photo-regression",
+            "source": "Medio de prueba",
+            "date": "2026-11-12",
+            "category": "Seguridad",
+            "photo": traffic,
+        })
+        self.assertLess(_photo_score(article, traffic), 0)
+        self.assertGreater(_photo_score(article, patrol), 0)
+        with patch.object(photos, "_pool", return_value=[traffic, patrol]), patch.object(
+            photos, "_load", return_value=[]
+        ):
+            assign_photos([article])
+        self.assertEqual(article["photo"]["id"], "patrulla_representativa")
+
 if __name__ == "__main__":
     unittest.main()
