@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-12 22:49 UTC",
+  "updated": "2026-11-12 23:01 UTC",
   "boroughs": [
     {
       "name": "La Magdalena Contreras",
@@ -1160,14 +1160,14 @@
           "source": "Buzos de la noticia",
           "date": "2026-11-10",
           "published_at": "2026-11-11T00:07:28Z",
-          "category": "CDMX",
+          "category": "Movilidad",
           "borough": "Álvaro Obregón",
           "location": "Álvaro Obregón (mencionada en el titular)",
           "local_url": "/noticias/?id=fe9d9ed7e5a0990bbd19&mes=2026-11",
           "brief": {
             "lead": "De acuerdo con Buzos de la noticia, el titular publicado es: «Opacidad del gobierno provoca inconformidad de vecinos con el Cablebús en Álvaro Obregón». En su información, Buzos de la noticia aborda una decisión, declaración o debate relacionado con las instituciones de la ciudad. Conviene distinguir la intención anunciada de las resoluciones que hayan sido aprobadas y publicado oficialmente.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
+            "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           },
           "photo": {
@@ -1218,24 +1218,57 @@
                 "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
                 "source": "https://commons.wikimedia.org/wiki/File:Cabina_del_cableb%C3%BAs_l%C3%ADnea_3.jpg"
               }
+            },
+            {
+              "title": "Opacidad del gobierno provoca inconformidad de vecinos con el Cablebús en Álvaro Obregón",
+              "description": "De acuerdo con Buzos de la noticia, el titular publicado es: «Opacidad del gobierno provoca inconformidad de vecinos con el Cablebús en Álvaro Obregón». En su información, Buzos de la noticia aborda una decisión, declaración o debate relacionado con las instituciones de la ciudad. Conviene distinguir la intención anunciada de las resoluciones que hayan sido aprobadas y publicado oficialmente.",
+              "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPeWlucGR5OGM0cHNuM3J5T0FEN2xZQTFYTFluVTRlcDBQN1lQMjJnYlMwMjgyVWh4cGxPVWJyLWhaVlBfRV9sUElLbFJ3V1cxTnBiX1JvT2N2ZDZlaVlXU2ExeEFHa21tUF9PUFJubDNRbHJJNy0wYlI4Zkx1T1lRbVg5VW1Gd3pLTEExR0JNdzRZMzF6dEFTTXJGbWdjV0FDTG9zOG14MG9VUDFqU1pCN1N3bU1Va0tn?oc=5",
+              "source": "Buzos de la noticia",
+              "date": "2026-11-10",
+              "published_at": "2026-11-11T00:07:28Z",
+              "category": "Movilidad",
+              "borough": "Álvaro Obregón",
+              "location": "Álvaro Obregón (mencionada en el titular)",
+              "local_url": "/noticias/?id=fe9d9ed7e5a0990bbd19&mes=2026-11",
+              "brief": {
+                "lead": "De acuerdo con Buzos de la noticia, el titular publicado es: «Opacidad del gobierno provoca inconformidad de vecinos con el Cablebús en Álvaro Obregón». En su información, Buzos de la noticia aborda una decisión, declaración o debate relacionado con las instituciones de la ciudad. Conviene distinguir la intención anunciada de las resoluciones que hayan sido aprobadas y publicado oficialmente.",
+                "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
+                "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+              },
+              "photo": {
+                "id": "commons_155364623",
+                "kind": "representativa",
+                "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Cabina_del_cableb%C3%BAs_l%C3%ADnea_3.jpg/960px-Cabina_del_cableb%C3%BAs_l%C3%ADnea_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+                "category": "Movilidad",
+                "borough": "",
+                "topic": "Cabina del cablebús línea 3",
+                "keywords": [
+                  "Cablebús Ciudad de México"
+                ],
+                "author": "Brome 2021",
+                "license": "CC BY-SA 4.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "https://commons.wikimedia.org/wiki/File:Cabina_del_cableb%C3%BAs_l%C3%ADnea_3.jpg"
+              }
             }
           ]
         },
         {
           "title": "Por opacidad, vecinos se oponen al cablebús en Álvaro Obregón",
-          "description": "De acuerdo con Fábrica de Periodismo, el titular publicado es: «Por opacidad, vecinos se oponen al cablebús en Álvaro Obregón». La información publicada por Fábrica de Periodismo aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "description": "De acuerdo con Fábrica de Periodismo, el titular publicado es: «Por opacidad, vecinos se oponen al cablebús en Álvaro Obregón». La información publicada por Fábrica de Periodismo aborda un asunto que este portal clasifica como Movilidad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
           "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBMMWlvV19MeGV0aE9xMXZvLWRtMXFJTDZmVlFxOHF2ZFQyUlJXYkl3a3gxRjV0MUduZ2ZqS3Itd1B3cnRZYXIyeDRKRXhxLUZyQ1owd19mdVl1OEZmbW4tZmlaeDFtMTZLenZiU1Ezc2w2UnNQVlptQ01DOW8tQQ?oc=5",
           "source": "Fábrica de Periodismo",
           "date": "2026-11-10",
           "published_at": "2026-11-11T00:05:59Z",
-          "category": "CDMX",
+          "category": "Movilidad",
           "borough": "Álvaro Obregón",
           "location": "Álvaro Obregón (mencionada en el titular)",
           "local_url": "/noticias/?id=027f846a5004c3997669&mes=2026-11",
           "brief": {
-            "lead": "De acuerdo con Fábrica de Periodismo, el titular publicado es: «Por opacidad, vecinos se oponen al cablebús en Álvaro Obregón». La información publicada por Fábrica de Periodismo aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "lead": "De acuerdo con Fábrica de Periodismo, el titular publicado es: «Por opacidad, vecinos se oponen al cablebús en Álvaro Obregón». La información publicada por Fábrica de Periodismo aborda un asunto que este portal clasifica como Movilidad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
+            "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           },
           "photo": {
@@ -1302,6 +1335,39 @@
                 "lead": "De acuerdo con Fábrica de Periodismo, el titular publicado es: «Por opacidad, vecinos se oponen al cablebús en Álvaro Obregón». La información publicada por Fábrica de Periodismo aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
                 "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
                 "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+              },
+              "photo": {
+                "id": "commons_154793215",
+                "kind": "representativa",
+                "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Estaci%C3%B3n_Los_Pinos_-_L%C3%ADnea_3_del_Cableb%C3%BAs_01.jpg/960px-Estaci%C3%B3n_Los_Pinos_-_L%C3%ADnea_3_del_Cableb%C3%BAs_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+                "category": "Movilidad",
+                "borough": "",
+                "topic": "Estación Los Pinos - Línea 3 del Cablebús 01",
+                "keywords": [
+                  "Cablebús Ciudad de México"
+                ],
+                "author": "Own work",
+                "license": "CC BY-SA 4.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "https://commons.wikimedia.org/wiki/File:Estaci%C3%B3n_Los_Pinos_-_L%C3%ADnea_3_del_Cableb%C3%BAs_01.jpg"
+              }
+            },
+            {
+              "title": "Por opacidad, vecinos se oponen al cablebús en Álvaro Obregón",
+              "description": "De acuerdo con Fábrica de Periodismo, el titular publicado es: «Por opacidad, vecinos se oponen al cablebús en Álvaro Obregón». La información publicada por Fábrica de Periodismo aborda un asunto que este portal clasifica como Movilidad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+              "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBMMWlvV19MeGV0aE9xMXZvLWRtMXFJTDZmVlFxOHF2ZFQyUlJXYkl3a3gxRjV0MUduZ2ZqS3Itd1B3cnRZYXIyeDRKRXhxLUZyQ1owd19mdVl1OEZmbW4tZmlaeDFtMTZLenZiU1Ezc2w2UnNQVlptQ01DOW8tQQ?oc=5",
+              "source": "Fábrica de Periodismo",
+              "date": "2026-11-10",
+              "published_at": "2026-11-11T00:05:59Z",
+              "category": "Movilidad",
+              "borough": "Álvaro Obregón",
+              "location": "Álvaro Obregón (mencionada en el titular)",
+              "local_url": "/noticias/?id=027f846a5004c3997669&mes=2026-11",
+              "brief": {
+                "lead": "De acuerdo con Fábrica de Periodismo, el titular publicado es: «Por opacidad, vecinos se oponen al cablebús en Álvaro Obregón». La información publicada por Fábrica de Periodismo aborda un asunto que este portal clasifica como Movilidad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+                "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
+                "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
                 "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
               },
               "photo": {
@@ -2890,6 +2956,21 @@
             "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           },
+          "photo": {
+            "id": "archivo_seguridad_002",
+            "kind": "representativa",
+            "url": "/assets/fotos/archivo_seguridad_002.jpg",
+            "category": "Seguridad",
+            "borough": "",
+            "topic": "Patrulla vecinal",
+            "keywords": [
+              "Seguridad"
+            ],
+            "author": "Daniel Yonka",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Patrulla_vecinal.jpg"
+          },
           "alternate_versions": [
             {
               "title": "Asesinan a Balazos a un Hombre en Azcapotzalco, CDMX; Fiscalía Investiga el Crimen",
@@ -2923,23 +3004,41 @@
                 "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
                 "source": "https://commons.wikimedia.org/wiki/File:Polic%C3%ADa_controlando_el_sem%C3%A1foro,_Ciudad_de_M%C3%A9xico.jpg"
               }
+            },
+            {
+              "title": "Asesinan a Balazos a un Hombre en Azcapotzalco, CDMX; Fiscalía Investiga el Crimen",
+              "description": "De acuerdo con N+, el titular publicado es: «Asesinan a Balazos a un Hombre en Azcapotzalco, CDMX; Fiscalía Investiga el Crimen». La información publicada por N+ aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+              "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQNy1BeVVIcnJ0NjdjTnlFZ2ktRFZHR1VCdm4tdzVXbHVWUFZfM1lBc1loNlhiSmZUczVqcExOSjREb1NGbWJhZXBnX1RmVy13VmpKbEZoRExYWEZhb09GeUN0cG9wV3VkQ0FpYzJPUDA0Y3dHeENsSmxOZWEySk1Ndk1vb3JKY0JZbms0YW9nYjJuYVJTZnk1dDAyNVhjQlgtVzdqcmlJa1ZPaDREbkYwQkVybU9uVHhtVzRjNDhJSGY3dG5VV1BHUENuUng?oc=5",
+              "source": "N+",
+              "date": "2026-11-11",
+              "published_at": "2026-11-11T13:07:01Z",
+              "category": "Seguridad",
+              "borough": "Azcapotzalco",
+              "location": "Azcapotzalco (mencionada en el titular)",
+              "local_url": "/noticias/?id=4b846ab141251d131d36&mes=2026-11",
+              "brief": {
+                "lead": "De acuerdo con N+, el titular publicado es: «Asesinan a Balazos a un Hombre en Azcapotzalco, CDMX; Fiscalía Investiga el Crimen». La información publicada por N+ aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+                "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+                "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+              },
+              "photo": {
+                "id": "archivo_seguridad_002",
+                "kind": "representativa",
+                "url": "/assets/fotos/archivo_seguridad_002.jpg",
+                "category": "Seguridad",
+                "borough": "",
+                "topic": "Patrulla vecinal",
+                "keywords": [
+                  "Seguridad"
+                ],
+                "author": "Daniel Yonka",
+                "license": "CC BY-SA 4.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "https://commons.wikimedia.org/wiki/File:Patrulla_vecinal.jpg"
+              }
             }
-          ],
-          "photo": {
-            "id": "archivo_seguridad_002",
-            "kind": "representativa",
-            "url": "/assets/fotos/archivo_seguridad_002.jpg",
-            "category": "Seguridad",
-            "borough": "",
-            "topic": "Patrulla vecinal",
-            "keywords": [
-              "Seguridad"
-            ],
-            "author": "Daniel Yonka",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Patrulla_vecinal.jpg"
-          }
+          ]
         },
         {
           "title": "Ataque a Balazos en Azcapotzalco: Así Fue el Asesinato de un Hombre en la Colonia Libertad",
@@ -4677,24 +4776,6 @@
           "borough": "Coyoacán",
           "location": "Coyoacán (mencionada en el titular)",
           "local_url": "/noticias/?id=3f07a0120517774821b6&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con El Sol de México, el titular publicado es: «Tomás Pliego llama a no obstaculizar la participación ciudadana tras cancelación de foro en Coyoacán». La información publicada por El Sol de México aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "alcaldia_coyoacan",
-            "kind": "representativa",
-            "url": "/assets/alcaldias/coyoacan.jpg",
-            "category": "CDMX",
-            "borough": "Coyoacán",
-            "topic": "Jardín Centenario de Coyoacán",
-            "author": "AlejandroLinaresGarcia",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:JardinCentenarioCoyoacan.JPG"
-          },
           "alternate_versions": [
             {
               "title": "Tomás Pliego llama a no obstaculizar la participación ciudadana tras cancelación de foro en Coyoacán",
@@ -4756,7 +4837,25 @@
                 "source": "https://commons.wikimedia.org/wiki/File:JardinCentenarioCoyoacan.JPG"
               }
             }
-          ]
+          ],
+          "brief": {
+            "lead": "De acuerdo con El Sol de México, el titular publicado es: «Tomás Pliego llama a no obstaculizar la participación ciudadana tras cancelación de foro en Coyoacán». La información publicada por El Sol de México aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_coyoacan",
+            "kind": "representativa",
+            "url": "/assets/alcaldias/coyoacan.jpg",
+            "category": "CDMX",
+            "borough": "Coyoacán",
+            "topic": "Jardín Centenario de Coyoacán",
+            "author": "AlejandroLinaresGarcia",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:JardinCentenarioCoyoacan.JPG"
+          }
         },
         {
           "title": "“No a Skyline”; vecinos de Coyoacán protestan y se amparan contra megaproyecto inmobiliario",
@@ -7491,8 +7590,76 @@
     },
     {
       "name": "Gustavo A. Madero",
-      "count": 55,
+      "count": 57,
       "articles": [
+        {
+          "title": "Activan Alerta Amarilla por Lluvia Fuerte en CDMX; Línea 1 del Cablebús Suspende Servicio",
+          "description": "El titular de N+ informa que, durante la alerta por lluvia fuerte en CDMX, la Línea 1 del Cablebús suspendió el servicio. El índice RSS no precisa la hora ni las estaciones afectadas.",
+          "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQTlFFSHlwamxZZW95Sm83UnNYQmdyaEtoelJnenVVVHV0QjVRa3lNdlNLU1dKSWRzTWcwR3NhNXA5ZFJZNzY4V0JVRlliVlNLekNxQ05veWdMR1lxUmZ3T0R2dkgwMk51MWRDYS05Rm1obklOTGlfV0tqVHFPRlVSU0JLY3VOSzQ1Q0s2RUI2bjhUVnRnQmMwTEtoN3ZFMnVZRk1rUnJYTDhNdU43c1htcWxfaXhwVkVKTlhSWFRjalJSV2d0RG9COG0ya0N5TGtnVUVLd3ZhdWNtcDR6YWJhZG9za2l5Sk1pZTd1dENvMk1mUQ?oc=5",
+          "source": "N+",
+          "date": "2026-11-12",
+          "published_at": "2026-11-12T22:41:04Z",
+          "category": "Movilidad",
+          "borough": "Gustavo A. Madero",
+          "location": "Gustavo A. Madero, Ciudad de México (Línea 1 del Cablebús)",
+          "local_url": "/noticias/?id=c543e45fdfe470aacc15&mes=2026-11",
+          "brief": {
+            "lead": "El titular de N+ informa que, durante la alerta por lluvia fuerte en CDMX, la Línea 1 del Cablebús suspendió el servicio. El índice RSS no precisa la hora ni las estaciones afectadas.",
+            "context": "La Línea 1 conecta Indios Verdes y Cuautepec, en la alcaldía Gustavo A. Madero. La afectación corresponde a la movilidad del norte de la capital.",
+            "pending": "El titular y el índice RSS no indican la hora exacta de suspensión, las estaciones afectadas ni cuándo se reanudó el servicio. El estado operativo debe verificarse en los avisos del Servicio de Transportes Eléctricos antes de viajar.",
+            "method": "Síntesis basada en el titular de N+ y en la ficha oficial del Servicio de Transportes Eléctricos sobre la ruta de Línea 1: https://www.ste.cdmx.gob.mx/cablebus. No equivale a lectura íntegra de la nota ni confirma el estado actual del servicio."
+          },
+          "photo": {
+            "id": "commons_178857482",
+            "kind": "representativa",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Afluencia_Indios_Verdes_Cableb%C3%BAs_%282024%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+            "category": "Movilidad",
+            "borough": "",
+            "topic": "Afluencia Indios Verdes Cablebús (2024)",
+            "keywords": [
+              "Cablebús Ciudad de México"
+            ],
+            "author": "Sistema de Transporte Público Cablebús / Gobierno de la Ciudad de México",
+            "license": "CC BY 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Afluencia_Indios_Verdes_Cableb%C3%BAs_(2024).png"
+          },
+          "alternate_versions": [
+            {
+              "title": "Activan Alerta Amarilla por Lluvia Fuerte en CDMX; Línea 1 del Cablebús Suspende Servicio",
+              "description": "El titular de N+ informa que, durante la alerta por lluvia fuerte en CDMX, la Línea 1 del Cablebús suspendió el servicio. El índice RSS no precisa la hora ni las estaciones afectadas.",
+              "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQTlFFSHlwamxZZW95Sm83UnNYQmdyaEtoelJnenVVVHV0QjVRa3lNdlNLU1dKSWRzTWcwR3NhNXA5ZFJZNzY4V0JVRlliVlNLekNxQ05veWdMR1lxUmZ3T0R2dkgwMk51MWRDYS05Rm1obklOTGlfV0tqVHFPRlVSU0JLY3VOSzQ1Q0s2RUI2bjhUVnRnQmMwTEtoN3ZFMnVZRk1rUnJYTDhNdU43c1htcWxfaXhwVkVKTlhSWFRjalJSV2d0RG9COG0ya0N5TGtnVUVLd3ZhdWNtcDR6YWJhZG9za2l5Sk1pZTd1dENvMk1mUQ?oc=5",
+              "source": "N+",
+              "date": "2026-11-12",
+              "published_at": "2026-11-12T22:41:04Z",
+              "category": "Movilidad",
+              "borough": "Gustavo A. Madero",
+              "location": "Gustavo A. Madero, Ciudad de México (Línea 1 del Cablebús)",
+              "local_url": "/noticias/?id=c543e45fdfe470aacc15&mes=2026-11",
+              "brief": {
+                "lead": "El titular de N+ informa que, durante la alerta por lluvia fuerte en CDMX, la Línea 1 del Cablebús suspendió el servicio. El índice RSS no precisa la hora ni las estaciones afectadas.",
+                "context": "La Línea 1 conecta Indios Verdes y Cuautepec, en la alcaldía Gustavo A. Madero. La afectación corresponde a la movilidad del norte de la capital.",
+                "pending": "El titular y el índice RSS no indican la hora exacta de suspensión, las estaciones afectadas ni cuándo se reanudó el servicio. El estado operativo debe verificarse en los avisos del Servicio de Transportes Eléctricos antes de viajar.",
+                "method": "Síntesis basada en el titular de N+ y en la ficha oficial del Servicio de Transportes Eléctricos sobre la ruta de Línea 1: https://www.ste.cdmx.gob.mx/cablebus. No equivale a lectura íntegra de la nota ni confirma el estado actual del servicio."
+              },
+              "photo": {
+                "id": "commons_108310960",
+                "kind": "representativa",
+                "url": "https://upload.wikimedia.org/wikipedia/commons/6/62/Estaci%C3%B3n_Cableb%C3%BAs_Santa_Marta_2.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+                "category": "Movilidad",
+                "borough": "",
+                "topic": "Estación Cablebús Santa Marta 2",
+                "keywords": [
+                  "Cablebús Ciudad de México"
+                ],
+                "author": "Secretaría de Obras de la Ciudad de México / Gobierno de la Ciudad de México",
+                "license": "CC BY 4.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+                "source": "https://commons.wikimedia.org/wiki/File:Estaci%C3%B3n_Cableb%C3%BAs_Santa_Marta_2.png"
+              }
+            }
+          ]
+        },
         {
           "title": "Fiscalía CDMX aprehende a un hombre por robo a casa habitación cometido por personas que se hicieron pasar por trabajadores de limpia en Gustavo A. Madero",
           "description": "De acuerdo con Fiscalía General de Justicia de la CDMX, el titular publicado es: «Fiscalía CDMX aprehende a un hombre por robo a casa habitación cometido por personas que se hicieron pasar por trabajadores de limpia en Gustavo A. Madero». La información publicada por Fiscalía General de Justicia de la CDMX aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -8223,24 +8390,6 @@
             "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
             "source": "https://commons.wikimedia.org/wiki/File:Capilla_Cerrito_del_Tepeyac_%28Basilica_Nuestra_Se%C3%B1ora_de_Guadalupe%29_Gustavo_A_Madero%2C_Ciudad_de_M%C3%A9xico_02.jpg"
           }
-        },
-        {
-          "title": "Clima y pronóstico en Gustavo A. Madero este viernes 30 de octubre de 2026: jornada templada con nubes dispersas",
-          "description": "De acuerdo con El Heraldo de México, el titular publicado es: «Clima y pronóstico en Gustavo A. Madero este viernes 30 de octubre de 2026: jornada templada con nubes dispersas». El pronóstico recogido por El Heraldo de México se refiere a condiciones meteorológicas en Gustavo A. Madero. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
-          "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxNcEJTeDVnRnFBeUlzY1lfbkRqcm9OU2JaNm5oLUhWVG1zQkQ0UTRLUW5YTWlaUERSc0k2UUxZTGEyVmNFdzhTc2hldkdYOHJsNzRpVXpUQndCZzRoV0ZUYnhkRzNURGVIUUtacmp2bXcyaTdEVkhsT3RidjRoRzI2Slh4MS1VTGRTWENfN2NOQ2tIWE5WbmV5N1ExVHJDNDZzenNYRVNJUXdWN1N5NFY3bms0LWhBcHVheWpremE2MUxuV3VacFlFeUJ3X3ZvWjRxbnMyMXNzWXAtdGM1czFGR21DTmNDcUFOVEN3dXdERFllZFZrRnhuSXpCbkREbjZS?oc=5",
-          "source": "El Heraldo de México",
-          "date": "2026-10-29",
-          "published_at": "2026-10-30T05:00:00Z",
-          "category": "CDMX",
-          "borough": "Gustavo A. Madero",
-          "location": "Gustavo A. Madero (mencionada en el titular)",
-          "local_url": "/noticias/?id=690865421b211b8557d3&mes=2026-10",
-          "brief": {
-            "lead": "De acuerdo con El Heraldo de México, el titular publicado es: «Clima y pronóstico en Gustavo A. Madero este viernes 30 de octubre de 2026: jornada templada con nubes dispersas». El pronóstico recogido por El Heraldo de México se refiere a condiciones meteorológicas en Gustavo A. Madero. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
         }
       ]
     },
@@ -8325,6 +8474,27 @@
             "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           },
+          "photo": {
+            "id": "contexto_motocicleta_zocalo_brigada_2017",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Ayuda_tras_el_Terremoto_de_Puebla_de_2017_-_Ciudad_de_M%C3%A9xico_-_3.jpg/960px-Ayuda_tras_el_Terremoto_de_Puebla_de_2017_-_Ciudad_de_M%C3%A9xico_-_3.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+            "category": "Movilidad",
+            "borough": "",
+            "topic": "Motocicleta de apoyo de una brigada voluntaria en el Zócalo de la Ciudad de México (2017; imagen representativa, no corresponde a la marcha de 2026)",
+            "keywords": [
+              "motocicleta",
+              "motociclistas",
+              "moto",
+              "movilidad",
+              "marcha de motociclistas",
+              "Zócalo",
+              "Ciudad de México"
+            ],
+            "author": "ProtoplasmaKid",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "source": "https://commons.wikimedia.org/wiki/File:Ayuda_tras_el_Terremoto_de_Puebla_de_2017_-_Ciudad_de_M%C3%A9xico_-_3.jpg"
+          },
           "alternate_versions": [
             {
               "title": "Motociclistas de Mottu México marcharán de Iztacalco al Zócalo; se suman seis concentraciones en la CDMX",
@@ -8398,28 +8568,7 @@
                 "source": "https://commons.wikimedia.org/wiki/File:Cacerolazo_contra_la_violencia_-_Ciudad_de_M%C3%A9xico_-_3.jpg"
               }
             }
-          ],
-          "photo": {
-            "id": "contexto_motocicleta_zocalo_brigada_2017",
-            "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Ayuda_tras_el_Terremoto_de_Puebla_de_2017_-_Ciudad_de_M%C3%A9xico_-_3.jpg/960px-Ayuda_tras_el_Terremoto_de_Puebla_de_2017_-_Ciudad_de_M%C3%A9xico_-_3.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
-            "category": "Movilidad",
-            "borough": "",
-            "topic": "Motocicleta de apoyo de una brigada voluntaria en el Zócalo de la Ciudad de México (2017; imagen representativa, no corresponde a la marcha de 2026)",
-            "keywords": [
-              "motocicleta",
-              "motociclistas",
-              "moto",
-              "movilidad",
-              "marcha de motociclistas",
-              "Zócalo",
-              "Ciudad de México"
-            ],
-            "author": "ProtoplasmaKid",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-            "source": "https://commons.wikimedia.org/wiki/File:Ayuda_tras_el_Terremoto_de_Puebla_de_2017_-_Ciudad_de_M%C3%A9xico_-_3.jpg"
-          }
+          ]
         },
         {
           "title": "Automovilista arrolla a 3 mujeres en Iztacalco tras volcar su vehículo; es detenido",
@@ -12228,19 +12377,19 @@
         },
         {
           "title": "Por un conflicto agrario, la línea 6 del Cablebús no llegará hasta Villa Milpa Alta",
-          "description": "De acuerdo con Capital CDMX, el titular publicado es: «Por un conflicto agrario, la línea 6 del Cablebús no llegará hasta Villa Milpa Alta». La información publicada por Capital CDMX aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "description": "De acuerdo con Capital CDMX, el titular publicado es: «Por un conflicto agrario, la línea 6 del Cablebús no llegará hasta Villa Milpa Alta». La información publicada por Capital CDMX aborda un asunto que este portal clasifica como Movilidad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
           "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQS3ptcjhrTV9tUkhMTGltb1hnOUF1U3lxWThqU3ppSFFWT1liWjVxaldTREpqTWg4cEFUMVU2UWZJSHNCdXhxLWtuSnlKYTBqbG4yWnBoYndVZDVRUmxJcDRqeUpOXy0zc1FESFA1eUExaE1Ga3IyQWlkVnE2UDViUUUySWNmZXdRNkg5NmpobVV0cWhhelozRXE2ZXNXSXl6UnNDYWdkTDhRZmZG?oc=5",
           "source": "Capital CDMX",
           "date": "2026-11-06",
           "published_at": "2026-11-06T21:31:05Z",
-          "category": "CDMX",
+          "category": "Movilidad",
           "borough": "Milpa Alta",
           "location": "Milpa Alta (mencionada en el titular)",
           "local_url": "/noticias/?id=0411ce337d4b5dc19550&mes=2026-11",
           "brief": {
-            "lead": "De acuerdo con Capital CDMX, el titular publicado es: «Por un conflicto agrario, la línea 6 del Cablebús no llegará hasta Villa Milpa Alta». La información publicada por Capital CDMX aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "lead": "De acuerdo con Capital CDMX, el titular publicado es: «Por un conflicto agrario, la línea 6 del Cablebús no llegará hasta Villa Milpa Alta». La información publicada por Capital CDMX aborda un asunto que este portal clasifica como Movilidad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
+            "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           },
           "photo": {
@@ -13028,7 +13177,39 @@
             "license": "CC BY 3.0",
             "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
             "source": "https://commons.wikimedia.org/wiki/File:Tl%C3%A1huac-Plaza_central.JPG"
-          }
+          },
+          "alternate_versions": [
+            {
+              "title": "Óscar “N” es investigado por el feminicidio de Karla y su hija Osiris, ocurrido en Tláhuac, con ataques con arma blanca.",
+              "description": "De acuerdo con El Congresista, el titular publicado es: «Óscar “N” es investigado por el feminicidio de Karla y su hija Osiris, ocurrido en Tláhuac, con ataques con arma blanca.». La información publicada por El Congresista aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+              "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOUHZjTm9ObkZXTGRGUERtbkR1bklmVjBCNzZjVmJpV0owbUNnaUpxM3BxemhFaXFwaFJnVWhYQ3lia3daWlQ0Xzg2MDB6eDVOd1RJUHZZYjBGV0o0cXNhTVVXQTd6R185RkI0c282NldGQThmSkZyUENsSS1XNTFqcnhiRmRVWnFXNlRn?oc=5",
+              "source": "El Congresista",
+              "date": "2026-11-11",
+              "published_at": "2026-11-12T02:19:00Z",
+              "category": "CDMX",
+              "borough": "Tláhuac",
+              "location": "Tláhuac (mencionada en el titular)",
+              "local_url": "/noticias/?id=eb2a5a36dc446637544b&mes=2026-11",
+              "brief": {
+                "lead": "De acuerdo con El Congresista, el titular publicado es: «Óscar “N” es investigado por el feminicidio de Karla y su hija Osiris, ocurrido en Tláhuac, con ataques con arma blanca.». La información publicada por El Congresista aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+                "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+                "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+              },
+              "photo": {
+                "id": "alcaldia_tlahuac",
+                "kind": "representativa",
+                "url": "/assets/alcaldias/tlahuac.jpg",
+                "category": "CDMX",
+                "borough": "Tláhuac",
+                "topic": "Plaza central de San Pedro Tláhuac",
+                "author": "Yavidaxiu",
+                "license": "CC BY 3.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+                "source": "https://commons.wikimedia.org/wiki/File:Tl%C3%A1huac-Plaza_central.JPG"
+              }
+            }
+          ]
         },
         {
           "title": "Clima en Tláhuac hoy: Miércoles 11 de noviembre con nubes y ambiente templado",
@@ -13918,6 +14099,21 @@
             "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
             "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "archivo_seguridad_005",
+            "kind": "representativa",
+            "url": "/assets/fotos/archivo_seguridad_005.jpg",
+            "category": "Seguridad",
+            "borough": "",
+            "topic": "Jeep policia cdmx",
+            "keywords": [
+              "Seguridad"
+            ],
+            "author": "Gobierno de la Ciudad de México",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Jeep_policia_cdmx.jpg"
           }
         },
         {
@@ -15890,6 +16086,36 @@
                 "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
                 "source": "https://commons.wikimedia.org/wiki/File:Jeep_policia_cdmx.jpg"
               }
+            },
+            {
+              "title": "Caen tres secuestradores en la alcaldía Venustiano Carranza",
+              "description": "De acuerdo con La Silla Rota, el titular publicado es: «Caen tres secuestradores en la alcaldía Venustiano Carranza». La información publicada por La Silla Rota aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+              "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPQmh2cVNqa2dTNjVwazVBN0NsUXlYeWhyVEZWOTk5UW1CSzktUFkydjh2VHhDQ0ZIUXJrOGtZaE9ZNWpkUzVYRGoyenYwWWJmNmE1LUVoZ09jT3FOamNVc2ZtZDNOdnJkRmh2LUIycDNVY0JPMWpwcU05S1BEeE5SY2VJWkdvRFR2dDZablVIcVdrOE15dkltM1pEa25RVDZLSTR1bnpQYUNzdjN0bkdyR0dUSDFJX0E?oc=5",
+              "source": "La Silla Rota",
+              "date": "2026-11-12",
+              "published_at": "2026-11-12T17:00:45Z",
+              "category": "Seguridad",
+              "borough": "Venustiano Carranza",
+              "location": "Venustiano Carranza (mencionada en el titular)",
+              "local_url": "/noticias/?id=44e68468714cac2aa5f8&mes=2026-11",
+              "brief": {
+                "lead": "De acuerdo con La Silla Rota, el titular publicado es: «Caen tres secuestradores en la alcaldía Venustiano Carranza». La información publicada por La Silla Rota aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+                "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+                "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+              },
+              "photo": {
+                "id": "archivo_seguridad_016",
+                "kind": "representativa",
+                "url": "/assets/fotos/archivo_seguridad_016.jpg",
+                "category": "Seguridad",
+                "borough": "",
+                "topic": "Entrega de Patrullas en Alcaldías 01",
+                "author": "Gobierno de la Ciudad de México",
+                "license": "CC BY 4.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+                "source": "https://commons.wikimedia.org/wiki/File:Entrega_de_Patrullas_en_Alcald%C3%ADas_01.jpg"
+              }
             }
           ]
         },
@@ -15940,24 +16166,6 @@
           "borough": "Venustiano Carranza",
           "location": "Venustiano Carranza (mencionada en el titular)",
           "local_url": "/noticias/?id=888de421729e63d8892d&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con Reforma, el titular publicado es: «Rescatan a secuestrado en Venustiano Carranza». La información publicada por Reforma aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
-            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "archivo_seguridad_016",
-            "kind": "representativa",
-            "url": "/assets/fotos/archivo_seguridad_016.jpg",
-            "category": "Seguridad",
-            "borough": "",
-            "topic": "Entrega de Patrullas en Alcaldías 01",
-            "author": "Gobierno de la Ciudad de México",
-            "license": "CC BY 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Entrega_de_Patrullas_en_Alcald%C3%ADas_01.jpg"
-          },
           "alternate_versions": [
             {
               "title": "Rescatan a secuestrado en Venustiano Carranza",
@@ -16022,7 +16230,25 @@
                 "source": "https://commons.wikimedia.org/wiki/File:Entrega_de_Patrullas_en_Alcald%C3%ADas_01.jpg"
               }
             }
-          ]
+          ],
+          "brief": {
+            "lead": "De acuerdo con Reforma, el titular publicado es: «Rescatan a secuestrado en Venustiano Carranza». La información publicada por Reforma aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "archivo_seguridad_016",
+            "kind": "representativa",
+            "url": "/assets/fotos/archivo_seguridad_016.jpg",
+            "category": "Seguridad",
+            "borough": "",
+            "topic": "Entrega de Patrullas en Alcaldías 01",
+            "author": "Gobierno de la Ciudad de México",
+            "license": "CC BY 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Entrega_de_Patrullas_en_Alcald%C3%ADas_01.jpg"
+          }
         },
         {
           "title": "\"El Morenito\" muere tras ser arrastrado varios metros por un tráiler, en Venustiano Carranza",
@@ -16036,6 +16262,12 @@
           "location": "Venustiano Carranza, Ciudad de México",
           "local_url": "/noticias/?id=0ef061c975ac4b64eed0&mes=2026-11",
           "source_url": "https://www.elgrafico.mx/la-roja/2026/11/12/el-morenito-muere-tras-ser-arrastrado-varios-metros-por-un-trailer-en-venustiano-carranza/?outputType=amp",
+          "brief": {
+            "lead": "El Gráfico informó que un hombre conocido como «El Morenito» murió después de ser atropellado y arrastrado por un tráiler en el cruce de avenida del Taller y Lorenzo Boturini, colonia Lorenzo Boturini, alcaldía Venustiano Carranza. El medio atribuyó al operador un presunto cruce de semáforo en rojo; esa versión se atribuye al reportaje y no se presenta como determinación oficial.",
+            "context": "El hecho ocurrió en Venustiano Carranza y corresponde a un siniestro vial fatal. Se omite la descripción gráfica del accidente y no se atribuye responsabilidad penal.",
+            "pending": "La mecánica del accidente y cualquier responsabilidad deben confirmarse con la FGJCDMX y los informes de tránsito. La versión sobre el semáforo en rojo es la que atribuye El Gráfico al reporte, no una resolución judicial.",
+            "method": "Síntesis editorial basada en la publicación de Tania Aguilar en El Gráfico, 12 de noviembre de 2026: https://www.elgrafico.mx/la-roja/2026/11/12/el-morenito-muere-tras-ser-arrastrado-varios-metros-por-un-trailer-en-venustiano-carranza/?outputType=amp. No constituye verificación independiente."
+          },
           "alternate_versions": [
             {
               "title": "\"El Morenito\" muere tras ser arrastrado varios metros por un tráiler, en Venustiano Carranza",
@@ -16072,12 +16304,6 @@
               }
             }
           ],
-          "brief": {
-            "lead": "El Gráfico informó que un hombre conocido como «El Morenito» murió después de ser atropellado y arrastrado por un tráiler en el cruce de avenida del Taller y Lorenzo Boturini, colonia Lorenzo Boturini, alcaldía Venustiano Carranza. El medio atribuyó al operador un presunto cruce de semáforo en rojo; esa versión se atribuye al reportaje y no se presenta como determinación oficial.",
-            "context": "El hecho ocurrió en Venustiano Carranza y corresponde a un siniestro vial fatal. Se omite la descripción gráfica del accidente y no se atribuye responsabilidad penal.",
-            "pending": "La mecánica del accidente y cualquier responsabilidad deben confirmarse con la FGJCDMX y los informes de tránsito. La versión sobre el semáforo en rojo es la que atribuye El Gráfico al reporte, no una resolución judicial.",
-            "method": "Síntesis editorial basada en la publicación de Tania Aguilar en El Gráfico, 12 de noviembre de 2026: https://www.elgrafico.mx/la-roja/2026/11/12/el-morenito-muere-tras-ser-arrastrado-varios-metros-por-un-trailer-en-venustiano-carranza/?outputType=amp. No constituye verificación independiente."
-          },
           "sensitive_media": true
         },
         {
@@ -16943,27 +17169,6 @@
           "borough": "Xochimilco",
           "location": "Xochimilco (mencionada en el titular)",
           "local_url": "/noticias/?id=74f1d0a4ba0095a5ea60&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con Sopitas.com, el titular publicado es: «Orgullo mexa: Lucio Usobiaga gana premio \"Nobel Gastronómico\" por preservar las chinampas de Xochimilco». La información publicada por Sopitas.com aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "commons_66033709",
-            "kind": "representativa",
-            "url": "https://upload.wikimedia.org/wikipedia/commons/2/26/Canales_de_Xochimilco%2C_Ciudad_de_M%C3%A9xico_%2832226551093%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-            "category": "CDMX",
-            "borough": "",
-            "topic": "Canales de Xochimilco, Ciudad de México (32226551093)",
-            "keywords": [
-              "CDMX"
-            ],
-            "author": "Comisión Mexicana de Filmaciones from México D. F., México",
-            "license": "CC BY-SA 2.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Canales_de_Xochimilco,_Ciudad_de_M%C3%A9xico_(32226551093).jpg"
-          },
           "alternate_versions": [
             {
               "title": "Orgullo mexa: Lucio Usobiaga gana premio \"Nobel Gastronómico\" por preservar las chinampas de Xochimilco",
@@ -16998,7 +17203,28 @@
                 "source": "https://commons.wikimedia.org/wiki/File:Canales_de_Xochimilco,_Ciudad_de_M%C3%A9xico_(32226551093).jpg"
               }
             }
-          ]
+          ],
+          "brief": {
+            "lead": "De acuerdo con Sopitas.com, el titular publicado es: «Orgullo mexa: Lucio Usobiaga gana premio \"Nobel Gastronómico\" por preservar las chinampas de Xochimilco». La información publicada por Sopitas.com aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "commons_66033709",
+            "kind": "representativa",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/2/26/Canales_de_Xochimilco%2C_Ciudad_de_M%C3%A9xico_%2832226551093%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+            "category": "CDMX",
+            "borough": "",
+            "topic": "Canales de Xochimilco, Ciudad de México (32226551093)",
+            "keywords": [
+              "CDMX"
+            ],
+            "author": "Comisión Mexicana de Filmaciones from México D. F., México",
+            "license": "CC BY-SA 2.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Canales_de_Xochimilco,_Ciudad_de_M%C3%A9xico_(32226551093).jpg"
+          }
         },
         {
           "title": "Denuncian Más de una Treintena de Casos de Envenenamiento de Perros en Xochimilco.",
