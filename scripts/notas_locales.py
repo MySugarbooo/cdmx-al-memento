@@ -64,7 +64,7 @@ def local_link(article):
     return "/noticias/?id="+token+"&mes="+date
 
 def _reported_angle(article):
-    """Ideas específicas y atribuibles únicamente a lo expresado en el título."""
+    """Ideas específicas atribuidas al titular o a un comunicado oficial cotejado."""
     title=str(article.get("title") or "")
     t=title.casefold()
     source=str(article.get("source") or "el medio de origen")
@@ -264,8 +264,9 @@ def summarize(article):
     pending=theme["verify"]+" El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar."
     method="Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
     if ("buen fin 2026" in title.casefold() and "ssc" in title.casefold()
-            and "secretaria de seguridad ciudadana" in source.casefold()):
+            and "seguridad ciudadana" in source.casefold()):
         method="Síntesis editorial basada en el comunicado oficial de la SSC publicado el 11 de noviembre de 2026; cifras y calendario atribuidos a la dependencia, sin verificación independiente."
+        pending="El horario, los puntos de vigilancia y cualquier ajuste del operativo deben confirmarse en los avisos de la SSC durante el Buen Fin. El comunicado describe un despliegue previsto; no es un balance de incidentes."
     elif ("lgbtttiq" in title.casefold() and source.casefold().replace(" ", "") in {"24-horas", "24horas"}):
         method="Síntesis editorial basada en el cuerpo de la nota de 24-horas; los datos se atribuyen al medio y a los lineamientos que cita, sin verificación independiente."
     return {"lead":first,"context":context,"pending":pending,"method":method}
