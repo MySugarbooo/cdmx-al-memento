@@ -925,6 +925,57 @@ def homepage_articles(items, reviewed, now, limit=60):
     return sorted(front, key=sort_key, reverse=True)
 
 
+def build_homepage_feed(candidates):
+    """Conserva titulares sin foto; la portada filtra los no sensibles sin imagen."""
+    visible = []
+    used_photos = set()
+    for article in candidates:
+        photo = article.get("photo")
+        if not isinstance(photo, dict):
+            article.pop("photo", None)
+            visible.append(article)
+            continue
+        photo_url = str(photo.get("url") or "")
+        documented = (
+            photo.get("kind") == "hecho"
+            and photo.get("verified") is True
+            and bool(photo.get("evidence_url"))
+        )
+        contextual = photo.get("kind") == "representativa"
+        sensitive = article.get("sensitive_media") is True
+        # Los sucesos sensibles permanecen en el feed, pero nunca con una
+        # ilustración genérica; solo se conserva una foto documental aprobada.
+        if sensitive and not documented:
+            article.pop("photo", None)
+            visible.append(article)
+            continue
+        if contextual and _photo_score(article, photo) < 0:
+            article.pop("photo", None)
+            visible.append(article)
+            continue
+        trusted_url = (
+            photo_url.startswith("/assets/fotos/")
+            or photo_url.startswith("https://thumb.wikimedia.org/wikipedia/commons/")
+            or photo_url.startswith("https://upload.wikimedia.org/wikipedia/commons/")
+        )
+        complete_credit = all(
+            photo.get(key) for key in ("author", "license", "licenseUrl", "source")
+        )
+        valid_photo = (
+            trusted_url
+            and photo_url not in used_photos
+            and complete_credit
+            and (documented or contextual)
+        )
+        if not valid_photo:
+            article.pop("photo", None)
+            visible.append(article)
+            continue
+        visible.append(article)
+        used_photos.add(photo_url)
+    return dedupe_homepage_events(visible)
+
+
 def update():
     now = datetime.now(timezone.utc)
     cutoff = now - timedelta(days=RETENTION_DAYS)
@@ -959,38 +1010,17 @@ def update():
     picture_stats = assign_photos(items[:60])
     print("Fotografías verificadas para portada:", picture_stats)
     consolidate_archive(items, cutoff, updated)
-    # Cobertura editorial importante de las últimas 48 h, junto al resto de titulares.
-    # Cada noticia visible requiere imagen reutilizable, autor y licencia.
-    # Las imágenes de contexto se rotulan como representativas, nunca como prueba.
-    # Los sucesos sensibles solo admiten fotografías verificadas del hecho.
+    # El feed conserva titulares aunque no tengan fotografía.
+    # La portada JS muestra imágenes acreditadas y también noticias sensibles sin foto.
     candidates = homepage_articles(items, reviewed, now)
-    visible = []
-    used_photos = set()
-    for article in candidates:
-        photo = article.get("photo") or {}
-        photo_url = str(photo.get("url") or "")
-        trusted_url = (photo_url.startswith("/assets/fotos/")
-                       or photo_url.startswith("https://thumb.wikimedia.org/wikipedia/commons/")
-                       or photo_url.startswith("https://upload.wikimedia.org/wikipedia/commons/"))
-        documented = (photo.get("kind") == "hecho" and photo.get("verified") is True
-                      and bool(photo.get("evidence_url")))
-        contextual = photo.get("kind") == "representativa"
-        # El archivo puede conservar una foto anterior: validar de nuevo
-        # la pertinencia antes de mostrarla en portada.
-        if contextual and _photo_score(article, photo) < 0:
-            continue
-        if (not trusted_url or photo_url in used_photos or
-                not all(photo.get(key) for key in
-                        ("author", "license", "licenseUrl", "source")) or
-                not (documented or contextual) or
-                (article.get("sensitive_media") and not documented)):
-            continue
-        visible.append(article)
-        used_photos.add(photo_url)
-    visible = dedupe_homepage_events(visible)
+    visible = build_homepage_feed(candidates)
     write_json(DEST, {"updated": updated, "articles": visible})
-    print("Portada con imágenes acreditadas y sin repetir:", len(visible),
-          "de", len(candidates), "candidatas.")
+    with_photo = sum(bool(article.get("photo")) for article in visible)
+    print(
+        "Feed de portada:", len(visible), "titulares;",
+        with_photo, "con fotografía acreditada;",
+        len(visible) - with_photo, "sin fotografía."
+    )
 
 
 def report_shell(title, body):
