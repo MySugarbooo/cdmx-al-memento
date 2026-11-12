@@ -687,6 +687,46 @@ def write_json(path, data):
     path.write_text(content, encoding="utf-8")
 
 
+def sanitize_outside_cdmx_versions(article):
+    """Corrige las versiones históricas sin conservar ubicación o fotos engañosas."""
+    location = str(article.get("location") or "")
+    if "(fuera de CDMX)" not in location:
+        return 0
+    versions = article.get("alternate_versions")
+    if not isinstance(versions, list):
+        return 0
+
+    repaired = 0
+    for version in versions:
+        if not isinstance(version, dict):
+            continue
+        before = json.dumps(version, ensure_ascii=False, sort_keys=True)
+        version["location"] = location
+        version["borough"] = article.get("borough", "")
+        version["category"] = article.get("category", "CDMX")
+        version_article = {**article, **version}
+        version_article["location"] = location
+        version_article["borough"] = article.get("borough", "")
+        version_article["category"] = article.get("category", "CDMX")
+        brief = summarize(version_article)
+        version["brief"] = brief
+        version["description"] = brief["lead"]
+
+        photo = version.get("photo")
+        documented = (
+            isinstance(photo, dict)
+            and photo.get("kind") == "hecho"
+            and photo.get("verified") is True
+            and bool(photo.get("evidence_url"))
+        )
+        if isinstance(photo, dict) and not documented:
+            version.pop("photo", None)
+        after = json.dumps(version, ensure_ascii=False, sort_keys=True)
+        if before != after:
+            repaired += 1
+    return repaired
+
+
 def consolidate_archive(new_items, cutoff, updated):
     """Deduplica el histórico y elimina incluso archivos mensuales ya vencidos."""
     ARCHIVE_DIR.mkdir(exist_ok=True)
@@ -723,6 +763,12 @@ def consolidate_archive(new_items, cutoff, updated):
             else:
                 # Conservar la versión más reciente y guardar las anteriores en el JSON.
                 existing[key] = merge_archive_records(old, item)
+
+    normalized_versions = sum(
+        sanitize_outside_cdmx_versions(item) for item in existing.values()
+    )
+    if normalized_versions:
+        print("Versiones alternativas fuera de CDMX normalizadas:", normalized_versions)
 
     # Retirar también las fotos de contexto que ya estaban guardadas en la
     # hemeroteca para titulares sensibles. No basta con proteger el feed nuevo.
