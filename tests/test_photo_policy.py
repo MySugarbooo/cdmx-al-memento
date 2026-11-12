@@ -75,6 +75,22 @@ class NewsPhotoPolicyTests(unittest.TestCase):
             with self.subTest(changes=changes):
                 self.assertIsNone(photos.verified_event_photo(ARTICLE, [approval(**changes)]))
 
+    def test_archive_cleanup_removes_sensitive_context_photos_and_keeps_verified_event_photo(self):
+        title = "Caso Vadhir Derbez: Fiscalía CDMX tendría ADN relacionado con denuncia por violación"
+        contextual = dict(ARTICLE, title=title, photo=context_photo("patrullas"))
+        verified_photo = {
+            "id": "hecho_aprobado",
+            "kind": "hecho",
+            "verified": True,
+            "evidence_url": "https://ejemplo.org/evidencia",
+        }
+        documented = dict(ARTICLE, title=title, photo=verified_photo)
+        removed = update_news.clear_sensitive_context_photos([contextual, documented])
+        self.assertEqual(removed, 1)
+        self.assertTrue(contextual["sensitive_media"])
+        self.assertNotIn("photo", contextual)
+        self.assertIs(documented["photo"], verified_photo)
+
     def test_sensitive_media_headlines_never_receive_context_photos(self):
         titles = (
             "Caso Vadhir Derbez: Fiscalía CDMX tendría ADN relacionado con denuncia por violación",
