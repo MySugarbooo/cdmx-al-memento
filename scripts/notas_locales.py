@@ -944,9 +944,12 @@ STRICT_PHOTO_TOPICS = (
     # Una marcha de motociclistas requiere una motocicleta; una protesta genérica no basta.
     (r"\b(?:motociclistas? march\w*|marcha de motociclistas?|movilizacion de motociclistas?)\b",
      r"\b(?:motocicletas?|motociclistas?|motos?|motorcycle)\b"),
-    # Los operativos en Plaza Meave requieren contexto de la plaza o de la mercancía; no ceremonias de patrullas.
-    (r"\bplaza meave\b",
-     r"\b(?:plaza meave|videojuegos?|consolas?|mercancia apocrifa|pirateria|decomiso|incautacion|aseguramiento|operativo|semar|impi)\b"),
+    # Los decomisos de consolas/videojuegos en Plaza Meave requieren contexto de mercancía, no patrullas.
+    (r"(?=.*\bplaza meave\b)(?=.*\b(?:videojuegos?|consolas?|pirateria|mercancia apocrifa|decomis\w*|aseguran|incaut\w*)\b)",
+     r"\b(?:videojuegos?|consolas?|mercancia apocrifa|pirateria|decomiso|incautacion|aseguramiento|semar|impi)\b"),
+    # Un operativo genérico en Plaza Meave puede usar contexto policial o del sitio.
+    (r"^(?!.*\b(?:videojuegos?|consolas?|pirateria|mercancia apocrifa|decomis\w*|aseguran|incaut\w*)\b).*\bplaza meave\b",
+     r"\b(?:plaza meave|policias?|patrullas?|operativo|pirateria|mercancia apocrifa|semar)\b"),
     # Una petición de no manifestarse se ilustra con una marcha, no con carnavales.
     (r"\b(?:no manifestarse|manifestarse|marchar a cdmx)\b",
      r"\b(?:marchas?|protestas?|manifestantes?|cacerolazo|planton(?:es)?|bloqueos?|movilizaciones?)\b"),
@@ -1076,7 +1079,15 @@ def _photo_score(article, photo):
         r"ministerio publico|investigacion penal|escena del crimen)\b",
         context,
     ))
-    if category == "Seguridad" and crime_story and not crime_context:
+    meave_goods_story = bool(
+        re.search(r"\bplaza meave\b", headline)
+        and re.search(r"\b(?:videojuegos?|consolas?|mercancia apocrifa|pirateria|decomis\w*|aseguran|incaut\w*)\b", headline)
+    )
+    meave_goods_photo = bool(re.search(
+        r"\b(?:videojuegos?|consolas?|mercancia apocrifa|pirateria)\b", context
+    ))
+    if (category == "Seguridad" and crime_story and not crime_context
+            and not (meave_goods_story and meave_goods_photo)):
         return -10000
     # Una graduación policial no representa un robo ni un operativo de vigilancia.
     if (crime_story or police_operation_story) and re.search(r"\bgraduacion\b", topic):
