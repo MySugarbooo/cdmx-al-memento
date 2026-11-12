@@ -1,6 +1,6 @@
 {
   "month": "2026-10",
-  "updated": "2026-11-12 15:18 UTC",
+  "updated": "2026-11-12 15:53 UTC",
   "articles": [
     {
       "title": "Expropiará el gobierno de la CDMX capitalino tres predios para vivienda pública",
@@ -107141,14 +107141,19 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_seguridad_003",
-        "url": "/assets/fotos/archivo_seguridad_003.jpg",
+        "id": "seguridad",
+        "kind": "representativa",
+        "url": "/assets/fotos/seguridad.jpg",
         "category": "Seguridad",
         "borough": "",
-        "topic": "Adquisición patrullas para la Policía 02",
-        "author": "Gobierno de la Ciudad de México",
-        "license": "CC BY 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Adquisici%C3%B3n_patrullas_para_la_Polic%C3%ADa_02.jpg"
+        "topic": "Patrulla de Ciudad de México",
+        "keywords": [
+          "Seguridad"
+        ],
+        "author": "RainerRowe",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.es",
+        "source": "https://commons.wikimedia.org/wiki/File:Patrulla_cdmx.jpg"
       }
     },
     {
@@ -107269,16 +107274,6 @@
         "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
         "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "alcaldia_cuauhtemoc",
-        "url": "/assets/alcaldias/cuauhtemoc.jpg",
-        "category": "CDMX",
-        "borough": "Cuauhtémoc",
-        "topic": "Palacio de Bellas Artes en la alcaldía Cuauhtémoc",
-        "author": "Timothy Neesam",
-        "license": "CC BY-SA 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Palacio_de_Bellas_Artes%2C_Mexico_City%2C_MX.jpg"
       }
     },
     {
@@ -108146,14 +108141,19 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "alcaldia_tlahuac",
-        "url": "/assets/alcaldias/tlahuac.jpg",
+        "id": "commons_16240277",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Cacerolazo_contra_la_violencia_-_Ciudad_de_M%C3%A9xico_-_1.jpg/960px-Cacerolazo_contra_la_violencia_-_Ciudad_de_M%C3%A9xico_-_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
         "category": "CDMX",
-        "borough": "Tláhuac",
-        "topic": "Plaza central de San Pedro Tláhuac",
-        "author": "Yavidaxiu",
-        "license": "CC BY 3.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Tl%C3%A1huac-Plaza_central.JPG"
+        "borough": "",
+        "topic": "Cacerolazo contra la violencia - Ciudad de México - 1",
+        "keywords": [
+          "Ángel de la Independencia Ciudad de México"
+        ],
+        "author": "ProtoplasmaKid",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Cacerolazo_contra_la_violencia_-_Ciudad_de_M%C3%A9xico_-_1.jpg"
       }
     },
     {
@@ -108370,19 +108370,16 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "commons_114051289",
+        "id": "alcaldia_tlahuac",
         "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Coro_de_la_Catedral_metropolitana_de_la_Ciudad_de_M%C3%A9xico_07.jpg/960px-Coro_de_la_Catedral_metropolitana_de_la_Ciudad_de_M%C3%A9xico_07.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "url": "/assets/alcaldias/tlahuac.jpg",
         "category": "CDMX",
-        "borough": "",
-        "topic": "Coro de la Catedral metropolitana de la Ciudad de México 07",
-        "keywords": [
-          "Catedral Metropolitana Ciudad de México"
-        ],
-        "author": "Luis Alvaz",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Coro_de_la_Catedral_metropolitana_de_la_Ciudad_de_M%C3%A9xico_07.jpg"
+        "borough": "Tláhuac",
+        "topic": "Plaza central de San Pedro Tláhuac",
+        "author": "Yavidaxiu",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Tl%C3%A1huac-Plaza_central.JPG"
       }
     },
     {
@@ -108815,19 +108812,19 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "commons_148265109",
+        "id": "commons_164311378",
         "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Angel_de_la_Independencia%2C_Ciudad_de_M%C3%A9xico_%2815433500746%29.jpg/960px-Angel_de_la_Independencia%2C_Ciudad_de_M%C3%A9xico_%2815433500746%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Casa_Centro_Hist%C3%B3rico_de_la_Ciudad_de_M%C3%A9xico_01.jpg/960px-Casa_Centro_Hist%C3%B3rico_de_la_Ciudad_de_M%C3%A9xico_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
         "category": "CDMX",
         "borough": "",
-        "topic": "Angel de la Independencia, Ciudad de México (15433500746)",
+        "topic": "Casa Centro Histórico de la Ciudad de México 01",
         "keywords": [
-          "Ángel de la Independencia Ciudad de México"
+          "Centro Histórico Ciudad de México"
         ],
-        "author": "iivangm",
-        "license": "CC BY 2.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Angel_de_la_Independencia,_Ciudad_de_M%C3%A9xico_(15433500746).jpg"
+        "author": "Correogsk",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Casa_Centro_Hist%C3%B3rico_de_la_Ciudad_de_M%C3%A9xico_01.jpg"
       }
     },
     {
@@ -108937,19 +108934,19 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "commons_82750990",
+        "id": "commons_16240276",
         "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/Palacio_de_Iturbide%2C_Centro_Hist%C3%B3rico%2C_Ciudad_de_M%C3%A9xico_-_Placa.jpg/960px-Palacio_de_Iturbide%2C_Centro_Hist%C3%B3rico%2C_Ciudad_de_M%C3%A9xico_-_Placa.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Cacerolazo_contra_la_violencia_-_Ciudad_de_M%C3%A9xico_-_2.jpg/960px-Cacerolazo_contra_la_violencia_-_Ciudad_de_M%C3%A9xico_-_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
         "category": "CDMX",
         "borough": "",
-        "topic": "Palacio de Iturbide, Centro Histórico, Ciudad de México - Placa",
+        "topic": "Cacerolazo contra la violencia - Ciudad de México - 2",
         "keywords": [
-          "Centro Histórico Ciudad de México"
+          "Ángel de la Independencia Ciudad de México"
         ],
-        "author": "Juan Carlos Fonseca Mata",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Palacio_de_Iturbide,_Centro_Hist%C3%B3rico,_Ciudad_de_M%C3%A9xico_-_Placa.jpg"
+        "author": "ProtoplasmaKid",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Cacerolazo_contra_la_violencia_-_Ciudad_de_M%C3%A9xico_-_2.jpg"
       }
     },
     {
@@ -109176,14 +109173,19 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "alcaldia_cuajimalpa",
-        "url": "/assets/alcaldias/cuajimalpa.jpg",
+        "id": "commons_16240278",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Cacerolazo_contra_la_violencia_-_Ciudad_de_M%C3%A9xico_-_3.jpg/960px-Cacerolazo_contra_la_violencia_-_Ciudad_de_M%C3%A9xico_-_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
         "category": "CDMX",
-        "borough": "Cuajimalpa de Morelos",
-        "topic": "Centro del antiguo pueblo de Cuajimalpa",
-        "author": "AlejandroLinaresGarcia",
+        "borough": "",
+        "topic": "Cacerolazo contra la violencia - Ciudad de México - 3",
+        "keywords": [
+          "Ángel de la Independencia Ciudad de México"
+        ],
+        "author": "ProtoplasmaKid",
         "license": "CC BY-SA 3.0",
-        "source": "https://commons.wikimedia.org/wiki/File:CuajimalpaCentro01.JPG"
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Cacerolazo_contra_la_violencia_-_Ciudad_de_M%C3%A9xico_-_3.jpg"
       }
     },
     {
@@ -109204,14 +109206,19 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_cdmx_003",
-        "url": "/assets/fotos/archivo_cdmx_003.jpg",
-        "category": "CDMX",
+        "id": "commons_54378318",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Ciudad_Universitaria_%28Marcha_por_la_paz%29_-_panoramio.jpg/960px-Ciudad_Universitaria_%28Marcha_por_la_paz%29_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "category": "Cultura",
         "borough": "",
-        "topic": "D.F. - panoramio (7)",
-        "author": "eurimaco",
+        "topic": "Ciudad Universitaria (Marcha por la paz) - panoramio",
+        "keywords": [
+          "Ciudad Universitaria UNAM Ciudad de México"
+        ],
+        "author": "Malomalverde",
         "license": "CC BY-SA 3.0",
-        "source": "https://commons.wikimedia.org/wiki/File:D.F._-_panoramio_%287%29.jpg"
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Ciudad_Universitaria_(Marcha_por_la_paz)_-_panoramio.jpg"
       }
     },
     {
@@ -109230,21 +109237,6 @@
         "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
         "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "commons_145192528",
-        "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/DECLARATORIA_DE_CARNAVALES_COMO_PATRIMONIO_CULTURAL_INMATERIAL_DE_LA_CIUDAD_DE_M%C3%89XICO_26.jpg/960px-DECLARATORIA_DE_CARNAVALES_COMO_PATRIMONIO_CULTURAL_INMATERIAL_DE_LA_CIUDAD_DE_M%C3%89XICO_26.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "category": "CDMX",
-        "borough": "",
-        "topic": "DECLARATORIA DE CARNAVALES COMO PATRIMONIO CULTURAL INMATERIAL DE LA CIUDAD DE MÉXICO 26",
-        "keywords": [
-          "Calles Ciudad de México"
-        ],
-        "author": "Secretaría de Cultura CDMX",
-        "license": "CC BY 2.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-        "source": "https://commons.wikimedia.org/wiki/File:DECLARATORIA_DE_CARNAVALES_COMO_PATRIMONIO_CULTURAL_INMATERIAL_DE_LA_CIUDAD_DE_M%C3%89XICO_26.jpg"
       }
     },
     {
@@ -109696,19 +109688,19 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "commons_48005112",
+        "id": "archivo_seguridad_002",
         "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Polic%C3%ADa_de_tr%C3%A1nsito_Ciudad_de_M%C3%A9xico_con_automovilistas.jpg/960px-Polic%C3%ADa_de_tr%C3%A1nsito_Ciudad_de_M%C3%A9xico_con_automovilistas.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "url": "/assets/fotos/archivo_seguridad_002.jpg",
         "category": "Seguridad",
         "borough": "",
-        "topic": "Policía de tránsito Ciudad de México con automovilistas",
+        "topic": "Patrulla vecinal",
         "keywords": [
-          "Policía Ciudad de México"
+          "Seguridad"
         ],
-        "author": "ProtoplasmaKid",
+        "author": "Daniel Yonka",
         "license": "CC BY-SA 4.0",
         "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Polic%C3%ADa_de_tr%C3%A1nsito_Ciudad_de_M%C3%A9xico_con_automovilistas.jpg"
+        "source": "https://commons.wikimedia.org/wiki/File:Patrulla_vecinal.jpg"
       }
     },
     {
@@ -110029,19 +110021,19 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "commons_75261217",
+        "id": "archivo_seguridad_005",
         "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/Protecci%C3%B3n_civil_CDMX_-i---i-_%2836810690580%29.jpg/960px-Protecci%C3%B3n_civil_CDMX_-i---i-_%2836810690580%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "url": "/assets/fotos/archivo_seguridad_005.jpg",
         "category": "Seguridad",
         "borough": "",
-        "topic": "Protección civil CDMX -i---i- (36810690580)",
+        "topic": "Jeep policia cdmx",
         "keywords": [
-          "Protección Civil CDMX"
+          "Seguridad"
         ],
-        "author": "Gobierno CDMX",
-        "license": "CC0",
-        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
-        "source": "https://commons.wikimedia.org/wiki/File:Protecci%C3%B3n_civil_CDMX_-i---i-_(36810690580).jpg"
+        "author": "Gobierno de la Ciudad de México",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Jeep_policia_cdmx.jpg"
       }
     },
     {
@@ -110268,16 +110260,6 @@
         "context": "Los cambios en este sistema pueden afectar los horarios, las conexiones y la planeación de los viajes cotidianos.",
         "pending": "El estado operativo, las estaciones y las alternativas de traslado deben comprobarse en los avisos actuales del Metro. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "archivo_metro_005",
-        "url": "/assets/fotos/archivo_metro_005.jpg",
-        "category": "Metro",
-        "borough": "",
-        "topic": "Estación Sevilla de la Línea 1 del Metro de la Ciudad de México - 01 - Andén",
-        "author": "ProtoplasmaKid",
-        "license": "CC BY-SA 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Estaci%C3%B3n_Sevilla_de_la_L%C3%ADnea_1_del_Metro_de_la_Ciudad_de_M%C3%A9xico_-_01_-_And%C3%A9n.jpg"
       }
     },
     {
@@ -110758,14 +110740,24 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_movilidad_007",
-        "url": "/assets/fotos/archivo_movilidad_007.jpg",
+        "id": "contexto_trafico_eje_central",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Eje_Central_CDMX.jpg/1280px-Eje_Central_CDMX.jpg",
         "category": "Movilidad",
         "borough": "",
-        "topic": "Metrobús - Cidade do México, DF-05",
-        "author": "EMBARQ BRASIL",
-        "license": "CC BY 2.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Metrob%C3%BAs_-_Cidade_do_M%C3%A9xico%2C_DF-05.jpg"
+        "topic": "Tráfico vehicular en Eje Central, Ciudad de México (fotografía de 2018)",
+        "keywords": [
+          "tráfico",
+          "vehículos",
+          "automóviles",
+          "movilidad",
+          "hoy no circula",
+          "vialidad"
+        ],
+        "author": "Sergio Estrada Flores",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:Eje_Central_CDMX.jpg"
       }
     },
     {
@@ -112422,16 +112414,6 @@
         "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
         "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "archivo_cdmx_014",
-        "url": "/assets/fotos/archivo_cdmx_014.jpg",
-        "category": "CDMX",
-        "borough": "",
-        "topic": "Cathedral (155478679)",
-        "author": "Francisco Donaldo Cabrera Cruz",
-        "license": "CC BY-SA 3.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Cathedral_%28155478679%29.jpeg"
       }
     },
     {
@@ -112496,16 +112478,6 @@
         "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
         "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "alcaldia_magdalena-contreras",
-        "url": "/assets/alcaldias/magdalena-contreras.jpg",
-        "category": "CDMX",
-        "borough": "La Magdalena Contreras",
-        "topic": "Río y bosque de Los Dinamos, La Magdalena Contreras",
-        "author": "Ananda xd",
-        "license": "CC BY-SA 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Rio_de_los_Dinamos_en_CDMX.jpg"
       }
     },
     {
@@ -112854,16 +112826,6 @@
         "context": "Las decisiones administrativas pueden influir en servicios, trámites y derechos; conviene conocer sus condiciones y a quiénes afectan.",
         "pending": "Es indispensable consultar los acuerdos, comunicados o documentos oficiales antes de dar una medida por vigente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "archivo_gobierno_001",
-        "url": "/assets/fotos/archivo_gobierno_001.jpg",
-        "category": "Gobierno",
-        "borough": "",
-        "topic": "Palacio de Bellas Artes",
-        "author": "Carolina López",
-        "license": "CC BY 2.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Palacio_de_Bellas_Artes.jpg"
       }
     },
     {
@@ -112946,16 +112908,6 @@
         "context": "Los cambios en este sistema pueden afectar los horarios, las conexiones y la planeación de los viajes cotidianos.",
         "pending": "El estado operativo, las estaciones y las alternativas de traslado deben comprobarse en los avisos actuales del Metro. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "archivo_metro_002",
-        "url": "/assets/fotos/archivo_metro_002.jpg",
-        "category": "Metro",
-        "borough": "",
-        "topic": "Estación Juárez del Metro de la Ciudad de México 09",
-        "author": "ProtoplasmaKid",
-        "license": "CC BY-SA 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Estaci%C3%B3n_Ju%C3%A1rez_del_Metro_de_la_Ciudad_de_M%C3%A9xico_09.jpg"
       }
     },
     {
@@ -113066,16 +113018,6 @@
         "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
         "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "alcaldia_coyoacan",
-        "url": "/assets/alcaldias/coyoacan.jpg",
-        "category": "CDMX",
-        "borough": "Coyoacán",
-        "topic": "Jardín Centenario de Coyoacán",
-        "author": "AlejandroLinaresGarcia",
-        "license": "CC BY-SA 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:JardinCentenarioCoyoacan.JPG"
       }
     },
     {
@@ -113513,19 +113455,19 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_seguridad_008",
+        "id": "archivo_seguridad_003",
         "kind": "representativa",
-        "url": "/assets/fotos/archivo_seguridad_008.jpg",
+        "url": "/assets/fotos/archivo_seguridad_003.jpg",
         "category": "Seguridad",
         "borough": "",
-        "topic": "Claudia Sheinbaum entrega patrullas Iztapalapa 03",
+        "topic": "Adquisición patrullas para la Policía 02",
         "keywords": [
           "Seguridad"
         ],
         "author": "Gobierno de la Ciudad de México",
         "license": "CC BY 4.0",
         "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Claudia_Sheinbaum_entrega_patrullas_Iztapalapa_03.jpg"
+        "source": "https://commons.wikimedia.org/wiki/File:Adquisici%C3%B3n_patrullas_para_la_Polic%C3%ADa_02.jpg"
       }
     },
     {
@@ -114411,16 +114353,6 @@
         "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
         "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "archivo_cdmx_014",
-        "url": "/assets/fotos/archivo_cdmx_014.jpg",
-        "category": "CDMX",
-        "borough": "",
-        "topic": "Cathedral (155478679)",
-        "author": "Francisco Donaldo Cabrera Cruz",
-        "license": "CC BY-SA 3.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Cathedral_%28155478679%29.jpeg"
       }
     },
     {
@@ -114457,21 +114389,6 @@
         "context": "Los cambios en este sistema pueden afectar los horarios, las conexiones y la planeación de los viajes cotidianos.",
         "pending": "El estado operativo, las estaciones y las alternativas de traslado deben comprobarse en los avisos actuales del Metro. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "reciente_2ddd98d3699be715",
-        "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Edificios%2C_Paseo_de_la_Reforma_-_CDMX78428.jpg/1280px-Edificios%2C_Paseo_de_la_Reforma_-_CDMX78428.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "category": "Movilidad",
-        "borough": "",
-        "topic": "Edificios, Paseo de la Reforma - CDMX78428",
-        "keywords": [
-          "Movilidad"
-        ],
-        "author": "Juan Carlos Fonseca Mata",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Edificios,_Paseo_de_la_Reforma_-_CDMX78428.jpg"
       }
     },
     {
@@ -114742,21 +114659,6 @@
         "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
         "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "movilidad",
-        "kind": "representativa",
-        "url": "/assets/fotos/movilidad.jpg",
-        "category": "Movilidad",
-        "borough": "",
-        "topic": "Metrobús en Paseo de la Reforma",
-        "keywords": [
-          "Movilidad"
-        ],
-        "author": "Juan Carlos Fonseca Mata",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.es",
-        "source": "https://commons.wikimedia.org/wiki/File:Paseo_de_la_Reforma%2C_CDMX_191022.jpg"
       }
     },
     {
@@ -115019,19 +114921,19 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "commons_104317517",
+        "id": "commons_52906806",
         "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Metrobus_en_la_estaci%C3%B3n_Revoluci%C3%B3n_-_1.jpg/960px-Metrobus_en_la_estaci%C3%B3n_Revoluci%C3%B3n_-_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Ecobici_Estaci%C3%B3n_10_-_panoramio.jpg/960px-Ecobici_Estaci%C3%B3n_10_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
         "category": "Movilidad",
         "borough": "",
-        "topic": "Metrobus en la estación Revolución - 1",
+        "topic": "Ecobici Estación 10 - panoramio",
         "keywords": [
-          "Metrobús Ciudad de México"
+          "ECOBICI Ciudad de México"
         ],
-        "author": "ProtoplasmaKid",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Metrobus_en_la_estaci%C3%B3n_Revoluci%C3%B3n_-_1.jpg"
+        "author": "Hari Seldon",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Ecobici_Estaci%C3%B3n_10_-_panoramio.jpg"
       }
     },
     {
@@ -115568,14 +115470,19 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_cdmx_013",
-        "url": "/assets/fotos/archivo_cdmx_013.jpg",
+        "id": "commons_88843613",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Casa_Gonz%C3%A1lez_de_Cos%C3%ADo%2C_Coyoac%C3%A1n%2C_Ciudad_de_M%C3%A9xico.jpg/960px-Casa_Gonz%C3%A1lez_de_Cos%C3%ADo%2C_Coyoac%C3%A1n%2C_Ciudad_de_M%C3%A9xico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
         "category": "CDMX",
         "borough": "",
-        "topic": "D.F. - panoramio (9)",
-        "author": "eurimaco",
-        "license": "CC BY-SA 3.0",
-        "source": "https://commons.wikimedia.org/wiki/File:D.F._-_panoramio_%289%29.jpg"
+        "topic": "Casa González de Cosío, Coyoacán, Ciudad de México",
+        "keywords": [
+          "CDMX"
+        ],
+        "author": "ProtoplasmaKid",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Casa_Gonz%C3%A1lez_de_Cos%C3%ADo,_Coyoac%C3%A1n,_Ciudad_de_M%C3%A9xico.jpg"
       }
     },
     {
