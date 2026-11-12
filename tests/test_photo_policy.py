@@ -91,6 +91,7 @@ class NewsPhotoPolicyTests(unittest.TestCase):
                 self.assertEqual(borough, "")
                 self.assertEqual(location, "Ecatepec, Estado de México (fuera de CDMX)")
                 self.assertIn("Ecatepec, Estado de México", brief["lead"])
+                self.assertIn("una pipa de gas", brief["lead"])
                 self.assertIn("fuera de la capital", brief["lead"])
                 self.assertIn("La Jornada", brief["method"])
 
