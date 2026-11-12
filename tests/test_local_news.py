@@ -143,6 +143,7 @@ class LocalNewsTests(unittest.TestCase):
         cases = (
             ("Tabe en Miguel Hidalgo: cinco años de cambio", "Seguridad", "Gobierno"),
             ("Hemos cambiado y mejorado el rostro de Coyoacán: Giovani Gutierrez", "CDMX", "Gobierno"),
+            ("Contraloría de la Cdmx detecta observaciones por 839 mdp en fiscalización", "CDMX", "Gobierno"),
             ("¿Qué pasó en Plaza Meave hoy? Autoridades de CDMX realizan operativo", "CDMX", "Seguridad"),
             ("Decomisan 3 toneladas de autopartes en Alcaldía Cuauhtémoc", "CDMX", "Seguridad"),
         )
