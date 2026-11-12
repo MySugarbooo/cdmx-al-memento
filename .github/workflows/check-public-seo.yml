@@ -8,6 +8,7 @@ on:
     paths:
       - '.github/workflows/check-public-seo.yml'
       - 'scripts/check_public_seo.py'
+      - 'tests/test_public_seo.py'
       - 'comunidad/index.html'
       - 'assets/comments.js'
       - 'assets/comments-config.js'
