@@ -182,7 +182,7 @@ def identify_location(title, date=None):
     if (date == "2026-11-12"
             and " paseo tollocan " in words
             and " pipa " in words
-            and re.search(r"\\b(?:volcadur|vuelc)\\w*\\b", words)):
+            and re.search(r"\b(?:volcadur|vuelc)\w*\b", words)):
         return "", "Santa María Totoltepec, Toluca, Estado de México (fuera de CDMX)"
     if (date in {"2026-11-11", "2026-11-12"}
             and " pipa " in words and " mexico pachuca " in words):
