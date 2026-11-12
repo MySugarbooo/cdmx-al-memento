@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-12 16:02 UTC",
+  "updated": "2026-11-12 17:00 UTC",
   "boroughs": [
     {
       "name": "La Magdalena Contreras",
@@ -2081,6 +2081,39 @@
                 "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
                 "source": "https://commons.wikimedia.org/wiki/File:Equipo_de_trabajo_de_los_Bomberos_CDMX_IMG_3027_(44661909031).jpg"
               }
+            },
+            {
+              "title": "Explosión de gas en local de Azcapotzalco: Baches, socavones y otras afectaciones en CDMX hoy",
+              "description": "Google News muestra el encabezado: «Explosión de gas en local de Azcapotzalco: Baches, socavones y otras afectaciones en CDMX hoy». La página original de TV Azteca se titula «Accidentes, afectaciones y percances en CDMX | EN VIVO» y reúne varios incidentes. En su actualización del 11 de noviembre de 2026 a las 20:17, el medio reportó una explosión por acumulación de gas en un local de Azcapotzalco y señaló que los servicios de emergencia estaban en el lugar. La misma página reúne otros accidentes y afectaciones viales; no es una nota dedicada exclusivamente a la explosión.",
+              "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPTXhTUEtEU29GVWF5WGNZajdaZURKTDNnOVNWV2dpM3EzVU9NNmY1MFMzNXk1dzJsakJZY2ZGQktDRHRfelFWaUNWazdZelYyQWh5V3pnSUd4YlJ2M3RnODZkWnRLSDFOS2N6VHZrajdRUzlqVFZldXh6ZkQ3Rk9MR0dmem5FbW9RVVNJXzZRNW1Gckd4ZDk5NEd4dEJfVm5KMTBsb3lZMTlDcngyUThEdXZacnQ0TkozZVBKWVVWMGVQdTJmQjJQR2xDRjBta3hmbjVPUGtaSWNBZw?oc=5",
+              "source": "TV Azteca",
+              "date": "2026-11-11",
+              "published_at": "2026-11-12T02:17:55Z",
+              "category": "Seguridad",
+              "borough": "Azcapotzalco",
+              "location": "Azcapotzalco (mencionada en el titular)",
+              "local_url": "/noticias/?id=b8362919917abfb6353a&mes=2026-11",
+              "brief": {
+                "lead": "Google News muestra el encabezado: «Explosión de gas en local de Azcapotzalco: Baches, socavones y otras afectaciones en CDMX hoy». La página original de TV Azteca se titula «Accidentes, afectaciones y percances en CDMX | EN VIVO» y reúne varios incidentes. En su actualización del 11 de noviembre de 2026 a las 20:17, el medio reportó una explosión por acumulación de gas en un local de Azcapotzalco y señaló que los servicios de emergencia estaban en el lugar. La misma página reúne otros accidentes y afectaciones viales; no es una nota dedicada exclusivamente a la explosión.",
+                "context": "Es importante distinguir la emergencia por gas de los otros percances viales incluidos en la misma cobertura, para no mezclar incidentes ni sus datos.",
+                "pending": "El saldo de personas lesionadas, la causa exacta, los daños y la situación posterior deben comprobarse en las actualizaciones de TV Azteca y los avisos de las autoridades; el primer reporte no confirma por sí solo el desenlace.",
+                "method": "Síntesis editorial propia basada en el encabezado de Google News y la página en vivo de TV Azteca, consultada el 11 de noviembre de 2026; no constituye verificación independiente."
+              },
+              "photo": {
+                "id": "commons_75139343",
+                "kind": "representativa",
+                "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Equipo_de_trabajo_de_los_Bomberos_CDMX_IMG_3027_%2844661909031%29.jpg/960px-Equipo_de_trabajo_de_los_Bomberos_CDMX_IMG_3027_%2844661909031%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+                "category": "Seguridad",
+                "borough": "",
+                "topic": "Equipo de trabajo de los Bomberos CDMX IMG 3027 (44661909031)",
+                "keywords": [
+                  "Bomberos Ciudad de México"
+                ],
+                "author": "Gobierno CDMX",
+                "license": "CC0",
+                "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+                "source": "https://commons.wikimedia.org/wiki/File:Equipo_de_trabajo_de_los_Bomberos_CDMX_IMG_3027_(44661909031).jpg"
+              }
             }
           ]
         },
@@ -3208,21 +3241,56 @@
       "articles": [
         {
           "title": "Realizan Cateo en Casa de Sujeto que Amenazó a un Repartidor en la alcaldía Benito Juárez, CDMX",
-          "description": "De acuerdo con N+, el titular publicado es: «Realizan Cateo en Casa de Sujeto que Amenazó a un Repartidor en la alcaldía Benito Juárez, CDMX». La información publicada por N+ aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "description": "De acuerdo con N+, el titular publicado es: «Realizan Cateo en Casa de Sujeto que Amenazó a un Repartidor en la alcaldía Benito Juárez, CDMX». La información publicada por N+ aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
           "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNcHZRdkk0c1ZRelo0dEJkZ0JseWU5aUIyU1BQRXp2WjBSUl80YlZpTlR3WS1PWXFYSVRIRmpwZzFZQXoxbk9fMnZESUZTeWxUczVQN1k1WjRaNGpMLWVjVVZla1hiQjNjM0xURzk2VlRkQTVOQ2pqdVNhSnNSMXlxNnhObzVOLTU5ZFcwZ0prN3NrbGlHVk1TbWtlZkVQTE50S2hMemE3c2c0NFNiVXl2Zko3bVQxRkFlSF85ZlRibE4tSkE5Wno4cGpWUTJoNFFsVndsbWpJQnFyY0hvM00wWkZKQjNBZTY3SFRMaG43cEZkdw?oc=5",
           "source": "N+",
           "date": "2026-11-12",
           "published_at": "2026-11-12T12:41:44Z",
-          "category": "CDMX",
+          "category": "Seguridad",
           "borough": "Benito Juárez",
           "location": "Benito Juárez (mencionada en el titular)",
           "local_url": "/noticias/?id=27d55d2914473c3dcdb7&mes=2026-11",
           "brief": {
-            "lead": "De acuerdo con N+, el titular publicado es: «Realizan Cateo en Casa de Sujeto que Amenazó a un Repartidor en la alcaldía Benito Juárez, CDMX». La información publicada por N+ aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "lead": "De acuerdo con N+, el titular publicado es: «Realizan Cateo en Casa de Sujeto que Amenazó a un Repartidor en la alcaldía Benito Juárez, CDMX». La información publicada por N+ aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
+          },
+          "photo": {
+            "id": "commons_153940184",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Entrega_de_Patrullas_en_Benito_Ju%C3%A1rez_03.jpg/960px-Entrega_de_Patrullas_en_Benito_Ju%C3%A1rez_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "category": "Alcaldías",
+            "borough": "",
+            "topic": "Entrega de Patrullas en Benito Juárez 03",
+            "keywords": [
+              "Benito Juárez alcaldía Ciudad de México"
+            ],
+            "author": "Gobierno de la Ciudad de México",
+            "license": "CC BY 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Entrega_de_Patrullas_en_Benito_Ju%C3%A1rez_03.jpg"
+          },
+          "alternate_versions": [
+            {
+              "title": "Realizan Cateo en Casa de Sujeto que Amenazó a un Repartidor en la alcaldía Benito Juárez, CDMX",
+              "description": "De acuerdo con N+, el titular publicado es: «Realizan Cateo en Casa de Sujeto que Amenazó a un Repartidor en la alcaldía Benito Juárez, CDMX». La información publicada por N+ aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+              "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNcHZRdkk0c1ZRelo0dEJkZ0JseWU5aUIyU1BQRXp2WjBSUl80YlZpTlR3WS1PWXFYSVRIRmpwZzFZQXoxbk9fMnZESUZTeWxUczVQN1k1WjRaNGpMLWVjVVZla1hiQjNjM0xURzk2VlRkQTVOQ2pqdVNhSnNSMXlxNnhObzVOLTU5ZFcwZ0prN3NrbGlHVk1TbWtlZkVQTE50S2hMemE3c2c0NFNiVXl2Zko3bVQxRkFlSF85ZlRibE4tSkE5Wno4cGpWUTJoNFFsVndsbWpJQnFyY0hvM00wWkZKQjNBZTY3SFRMaG43cEZkdw?oc=5",
+              "source": "N+",
+              "date": "2026-11-12",
+              "published_at": "2026-11-12T12:41:44Z",
+              "category": "CDMX",
+              "borough": "Benito Juárez",
+              "location": "Benito Juárez (mencionada en el titular)",
+              "local_url": "/noticias/?id=27d55d2914473c3dcdb7&mes=2026-11",
+              "brief": {
+                "lead": "De acuerdo con N+, el titular publicado es: «Realizan Cateo en Casa de Sujeto que Amenazó a un Repartidor en la alcaldía Benito Juárez, CDMX». La información publicada por N+ aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+                "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+                "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+              }
+            }
+          ]
         },
         {
           "title": "¿Quién es Jorge Romero? Del poder en Benito Juárez a la presidencia nacional del PAN",
@@ -6342,14 +6410,14 @@
           "source": "El Universal",
           "date": "2026-11-10",
           "published_at": "2026-11-10T20:46:16Z",
-          "category": "Seguridad",
+          "category": "CDMX",
           "borough": "Cuauhtémoc",
           "location": "Cuauhtémoc (mencionada en el titular)",
           "local_url": "/noticias/?id=e77c26645a686ca13c49&mes=2026-11",
           "brief": {
             "lead": "De acuerdo con El Universal, el titular publicado es: «Detienen a presunto asaltante tras persecución en la colonia Cuauhtémoc». Una nota de El Universal comunica un caso relacionado con una detención o una presunta conducta delictiva en Cuauhtémoc. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
-            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
-            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           },
           "photo": {
@@ -7885,8 +7953,47 @@
     },
     {
       "name": "Iztacalco",
-      "count": 119,
+      "count": 120,
       "articles": [
+        {
+          "title": "Motociclistas de Mottu México marcharán de Iztacalco al Zócalo; se suman seis concentraciones en la CDMX",
+          "description": "De acuerdo con Noticias en la Mira, el titular publicado es: «Motociclistas de Mottu México marcharán de Iztacalco al Zócalo; se suman seis concentraciones en la CDMX». Según la información destacada por Noticias en la Mira, manifestaciones o bloqueos forman parte de la jornada de movilidad capitalina. La ficha no demuestra por sí sola que todas las vías mencionadas sigan cerradas al momento de leerla.",
+          "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQVkNhQ2ZiRUItYjdUWnZxZ2cwUUJtTDNjRGJRY0pVb3MzWWlMZ1dWclRseGhXdjRRa0ZUeDN3cFFsRGdtcWhUd3IzeWpleFAwU2ZRT3NVSVFxMEd0TERjb2xHTzhHTnlqa3QzYWdZSm1lajc2RlExRTBNaXp6YmM1dDAzcXNlZXpJQlNiNzRJTndBRlpRVnBsbnM2bFRvNjRRM2J3My1YSXd0OEhKcUtLZ25GY1UzV1QzS1V4NVFERXBISnNUYVZ5TjZJNWt0SndUMjZGTg?oc=5",
+          "source": "Noticias en la Mira",
+          "date": "2026-11-12",
+          "published_at": "2026-11-12T16:37:27Z",
+          "category": "Movilidad",
+          "borough": "Iztacalco",
+          "location": "Iztacalco (mencionada en el titular)",
+          "local_url": "/noticias/?id=8a173796712fd80dfa46&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con Noticias en la Mira, el titular publicado es: «Motociclistas de Mottu México marcharán de Iztacalco al Zócalo; se suman seis concentraciones en la CDMX». Según la información destacada por Noticias en la Mira, manifestaciones o bloqueos forman parte de la jornada de movilidad capitalina. La ficha no demuestra por sí sola que todas las vías mencionadas sigan cerradas al momento de leerla.",
+            "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
+            "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "contexto_motocicleta_zocalo_brigada_2017",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Ayuda_tras_el_Terremoto_de_Puebla_de_2017_-_Ciudad_de_M%C3%A9xico_-_3.jpg/960px-Ayuda_tras_el_Terremoto_de_Puebla_de_2017_-_Ciudad_de_M%C3%A9xico_-_3.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+            "category": "Movilidad",
+            "borough": "",
+            "topic": "Motocicleta de apoyo de una brigada voluntaria en el Zócalo de la Ciudad de México (2017; imagen representativa, no corresponde a la marcha de 2026)",
+            "keywords": [
+              "motocicleta",
+              "motociclistas",
+              "moto",
+              "movilidad",
+              "marcha de motociclistas",
+              "Zócalo",
+              "Ciudad de México"
+            ],
+            "author": "ProtoplasmaKid",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "source": "https://commons.wikimedia.org/wiki/File:Ayuda_tras_el_Terremoto_de_Puebla_de_2017_-_Ciudad_de_M%C3%A9xico_-_3.jpg"
+          }
+        },
         {
           "title": "Automovilista arrolla a 3 mujeres en Iztacalco tras volcar su vehículo; es detenido",
           "description": "De acuerdo con Telediario, el titular publicado es: «Automovilista arrolla a 3 mujeres en Iztacalco tras volcar su vehículo; es detenido». De acuerdo con Telediario, se informa de un hecho vial relacionado con vehículos en Iztacalco. El encabezado no permite determinar por sí solo si hubo personas lesionadas o fallecidas. Se requiere consultar la nota original para conocer el punto exacto, las circunstancias y los reportes oficiales, sin atribuir responsabilidades sin pruebas.",
@@ -8927,24 +9034,6 @@
             "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           }
-        },
-        {
-          "title": "Detiene SSC a dos implicados en un homicidio en Iztacalco",
-          "description": "De acuerdo con MVS Noticias, el titular publicado es: «Detiene SSC a dos implicados en un homicidio en Iztacalco». Una nota de MVS Noticias comunica un caso relacionado con una detención o una presunta conducta delictiva en Iztacalco. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
-          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPUUdBdXdkR2hnSGxOZVJKUUZpNkoyOUhZQVJGNGF1VzdmVS14QUZ2UHhNSmZobDVmNVdiZFh5Z3ozOEdJSlgyaklPRUxoQW9XQkRlWjVQSndpc2ZsdGtudjIzZWZoTTQwMHhNMG96NTNIVWpsQ0NCdDJVQnJydkZ6NnZkTDhfSHpVMXV6TGtUNXh5WlBsV1NxdzFWQnkwQ2V3eTRRenV6MUk4QS1rNGFRZk95alpxZWlJalVTNFFzWQ?oc=5",
-          "source": "MVS Noticias",
-          "date": "2026-11-05",
-          "published_at": "2026-11-05T21:23:17Z",
-          "category": "Seguridad",
-          "borough": "Iztacalco",
-          "location": "Iztacalco (mencionada en el titular)",
-          "local_url": "/noticias/?id=38832918f5000ab91687&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con MVS Noticias, el titular publicado es: «Detiene SSC a dos implicados en un homicidio en Iztacalco». Una nota de MVS Noticias comunica un caso relacionado con una detención o una presunta conducta delictiva en Iztacalco. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
-            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
-            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
         }
       ]
     },
@@ -9596,24 +9685,6 @@
           "borough": "Iztapalapa",
           "location": "Iztapalapa (mencionada en el titular)",
           "local_url": "/noticias/?id=7536d38ee2db99d187ad&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con N+, el titular publicado es: «Desde el Aire: Obras de Drenaje Afectan Circulación en Iztapalapa, CDMX». La información publicada por N+ aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "alcaldia_iztapalapa",
-            "kind": "representativa",
-            "url": "/assets/alcaldias/iztapalapa.jpg",
-            "category": "CDMX",
-            "borough": "Iztapalapa",
-            "topic": "Vista de Iztapalapa desde el Cerro de la Estrella",
-            "author": "Secretaría de Cultura Ciudad de México from México",
-            "license": "CC BY 2.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-            "source": "https://commons.wikimedia.org/wiki/File:MX_MM_MUSEO_CERRO_DE_LA_ESTRELLA_%2849522225751%29.jpg"
-          },
           "alternate_versions": [
             {
               "title": "Desde el Aire: Obras de Drenaje Afectan Circulación en Iztapalapa, CDMX",
@@ -9645,7 +9716,25 @@
                 "source": "https://commons.wikimedia.org/wiki/File:MX_MM_MUSEO_CERRO_DE_LA_ESTRELLA_%2849522225751%29.jpg"
               }
             }
-          ]
+          ],
+          "brief": {
+            "lead": "De acuerdo con N+, el titular publicado es: «Desde el Aire: Obras de Drenaje Afectan Circulación en Iztapalapa, CDMX». La información publicada por N+ aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_iztapalapa",
+            "kind": "representativa",
+            "url": "/assets/alcaldias/iztapalapa.jpg",
+            "category": "CDMX",
+            "borough": "Iztapalapa",
+            "topic": "Vista de Iztapalapa desde el Cerro de la Estrella",
+            "author": "Secretaría de Cultura Ciudad de México from México",
+            "license": "CC BY 2.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+            "source": "https://commons.wikimedia.org/wiki/File:MX_MM_MUSEO_CERRO_DE_LA_ESTRELLA_%2849522225751%29.jpg"
+          }
         },
         {
           "title": "¡Golpe a Los Tanzanios en Iztapalapa! SSC detiene a cuatro personas y decomisa drogas y armas",
@@ -10562,6 +10651,39 @@
                 "license": "CC0",
                 "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
                 "source": "https://commons.wikimedia.org/wiki/File:Audiorama_de_Chapultepec_1.jpg"
+              }
+            },
+            {
+              "title": "Mauricio Tabe presenta balance de cinco años en Miguel Hidalgo",
+              "description": "De acuerdo con Sociedad Noticias, el titular publicado es: «Mauricio Tabe presenta balance de cinco años en Miguel Hidalgo». La información publicada por Sociedad Noticias aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+              "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQOXpOdmw5RG1wVTItQV93YWRpdWw2YlpvQ1A5TGRZemJyeG5vTHJwbFVSSVdnQUE2OXRHT3ZqY0swaVl4ekkzQ29GemZXZnVuWGRrTFBDYUNXTE10R3UxVVVPcnI0blJ2b05lcEZXSTZFSjhLeE1HRHNyblZ1YmVPeGV5SWJwSzNlZVlMYXJtdldrOEl2YjNYQkF0VzkzQjhlOVc4dk5uMA?oc=5",
+              "source": "Sociedad Noticias",
+              "date": "2026-11-11",
+              "published_at": "2026-11-12T01:37:57Z",
+              "category": "CDMX",
+              "borough": "Miguel Hidalgo",
+              "location": "Miguel Hidalgo (mencionada en el titular)",
+              "local_url": "/noticias/?id=030e2f8d0a085380f2dc&mes=2026-11",
+              "brief": {
+                "lead": "De acuerdo con Sociedad Noticias, el titular publicado es: «Mauricio Tabe presenta balance de cinco años en Miguel Hidalgo». La información publicada por Sociedad Noticias aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+                "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+                "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+              },
+              "photo": {
+                "id": "commons_84343831",
+                "kind": "representativa",
+                "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Ciudad_de_M%C3%A9xico_-_Alameda_Central_0366.JPG/960px-Ciudad_de_M%C3%A9xico_-_Alameda_Central_0366.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+                "category": "CDMX",
+                "borough": "",
+                "topic": "Ciudad de México - Alameda Central 0366",
+                "keywords": [
+                  "Alameda Central Ciudad de México"
+                ],
+                "author": "Phyrexian",
+                "license": "CC BY-SA 4.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "https://commons.wikimedia.org/wiki/File:Ciudad_de_M%C3%A9xico_-_Alameda_Central_0366.JPG"
               }
             }
           ]
@@ -13494,8 +13616,41 @@
     },
     {
       "name": "Tlalpan",
-      "count": 207,
+      "count": 208,
       "articles": [
+        {
+          "title": "Detienen a hombre señalado de matar perros en la alcaldía Tlalpan; fue golpeado por vecinos de la zona",
+          "description": "De acuerdo con MILENIO, el titular publicado es: «Detienen a hombre señalado de matar perros en la alcaldía Tlalpan; fue golpeado por vecinos de la zona». Una nota de MILENIO comunica un caso relacionado con una detención o una presunta conducta delictiva en Tlalpan. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
+          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPcU5OYXN2NndPM204SDY1VUk4N0xtUFNxSFNaLS01NlgxWF9tQlp5cUowNlkzY19LVzE2ZGxvSWRKZUxVWVpqWEh1anZabzNzRFFfTXZzQTRHTEQxZUpNeDdQU0txamxBdy1VeTdfaHQtQjBoX2tpb3NIMnF2MkFjMElHZTNWamVFaFHSAYoBQVVfeXFMTjB5YTE0a0xMdlRNSVNodU9pZlNKM1R1Z2ttSUNMTWlxT3g0cVRuMWk5cVo2bzdhb0FKSWVDTkdOcEt6QnF6OHptVWxXQlJ3dzdOcTktc1p3Q1RsNElVWF9wQUdmc2JaWUFXa2Z3NFNjTFhKb1hqSmd5NzNPWjJxenFJTnRsMHRTWmtn?oc=5",
+          "source": "MILENIO",
+          "date": "2026-11-12",
+          "published_at": "2026-11-12T16:41:00Z",
+          "category": "Seguridad",
+          "borough": "Tlalpan",
+          "location": "Tlalpan (mencionada en el titular)",
+          "local_url": "/noticias/?id=d86ea833e1644a96304f&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con MILENIO, el titular publicado es: «Detienen a hombre señalado de matar perros en la alcaldía Tlalpan; fue golpeado por vecinos de la zona». Una nota de MILENIO comunica un caso relacionado con una detención o una presunta conducta delictiva en Tlalpan. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
+            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "commons_35624634",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Animales_Bosque_de_Tlalpan_09.JPG/960px-Animales_Bosque_de_Tlalpan_09.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "category": "Alcaldías",
+            "borough": "",
+            "topic": "Animales Bosque de Tlalpan 09",
+            "keywords": [
+              "Tlalpan Ciudad de México"
+            ],
+            "author": "Inakiherrasti",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Animales_Bosque_de_Tlalpan_09.JPG"
+          }
+        },
         {
           "title": "Detienen a acusado de maltrato animal en Tlalpan",
           "description": "De acuerdo con El Universal, el titular publicado es: «Detienen a acusado de maltrato animal en Tlalpan». Una nota de El Universal comunica un caso relacionado con una detención o una presunta conducta delictiva en Tlalpan. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
@@ -13780,24 +13935,6 @@
           "borough": "Tlalpan",
           "location": "Tlalpan (mencionada en el titular)",
           "local_url": "/noticias/?id=507398b9863c3b743432&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con El Sol de México, el titular publicado es: «Pedro Haces pide licencia como diputado y busca coordinar Morena en Tlalpan rumbo a 2027 - La Prensa». La información publicada por El Sol de México aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "alcaldia_tlalpan",
-            "kind": "representativa",
-            "url": "/assets/alcaldias/tlalpan.jpg",
-            "category": "CDMX",
-            "borough": "Tlalpan",
-            "topic": "Quiosco de la plaza principal de Tlalpan",
-            "author": "farid estrada",
-            "license": "CC BY-SA 3.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Kiosko_plaza_de_la_constitucion%2C_tlapan.JPG"
-          },
           "alternate_versions": [
             {
               "title": "Pedro Haces pide licencia como diputado y busca coordinar Morena en Tlalpan rumbo a 2027 - La Prensa",
@@ -13859,7 +13996,25 @@
                 "source": "https://commons.wikimedia.org/wiki/File:Kiosko_plaza_de_la_constitucion%2C_tlapan.JPG"
               }
             }
-          ]
+          ],
+          "brief": {
+            "lead": "De acuerdo con El Sol de México, el titular publicado es: «Pedro Haces pide licencia como diputado y busca coordinar Morena en Tlalpan rumbo a 2027 - La Prensa». La información publicada por El Sol de México aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_tlalpan",
+            "kind": "representativa",
+            "url": "/assets/alcaldias/tlalpan.jpg",
+            "category": "CDMX",
+            "borough": "Tlalpan",
+            "topic": "Quiosco de la plaza principal de Tlalpan",
+            "author": "farid estrada",
+            "license": "CC BY-SA 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Kiosko_plaza_de_la_constitucion%2C_tlapan.JPG"
+          }
         },
         {
           "title": "Pedro Haces Lago formaliza salida del Congreso para buscar la alcaldía Tlalpan",
@@ -14587,43 +14742,64 @@
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           }
-        },
-        {
-          "title": "Clara Brugada anuncia Utopía en Tlalpan y nuevas obras de movilidad y seguridad",
-          "description": "De acuerdo con Almomento.mx, el titular publicado es: «Clara Brugada anuncia Utopía en Tlalpan y nuevas obras de movilidad y seguridad». La información publicada por Almomento.mx aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPei1CM0NHNFBQTTZmV1hZalZRcG92Yno0WGtqeTZDYTY2bVNYckk1cHZmUk54TW9RMkRpd1BwODlyWkd4UWdlc09qSDZrMkhoUEN1TXFrcWdwSlQ5MXFBRHJuZlhrTXcySm15akxxMFQxNEw2cEk2T1RuS0hkQ2FreVVjMl9YUGE2YTFYU1NkMWpoNC1BYUFkZDBZT3VwX3dMLU84?oc=5",
-          "source": "Almomento.mx",
-          "date": "2026-11-08",
-          "published_at": "2026-11-08T16:55:05Z",
-          "category": "CDMX",
-          "borough": "Tlalpan",
-          "location": "Tlalpan (mencionada en el titular)",
-          "local_url": "/noticias/?id=6633ead8e370e29b782d&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con Almomento.mx, el titular publicado es: «Clara Brugada anuncia Utopía en Tlalpan y nuevas obras de movilidad y seguridad». La información publicada por Almomento.mx aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "alcaldia_tlalpan",
-            "kind": "representativa",
-            "url": "/assets/alcaldias/tlalpan.jpg",
-            "category": "CDMX",
-            "borough": "Tlalpan",
-            "topic": "Quiosco de la plaza principal de Tlalpan",
-            "author": "farid estrada",
-            "license": "CC BY-SA 3.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Kiosko_plaza_de_la_constitucion%2C_tlapan.JPG"
-          }
         }
       ]
     },
     {
       "name": "Venustiano Carranza",
-      "count": 37,
+      "count": 39,
       "articles": [
+        {
+          "title": "Detienen a tres hombres por presunto secuestro en Venustiano Carranza",
+          "description": "De acuerdo con El Universal, el titular publicado es: «Detienen a tres hombres por presunto secuestro en Venustiano Carranza». Una nota de El Universal comunica un caso relacionado con una detención o una presunta conducta delictiva en Venustiano Carranza. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
+          "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOMmxLZUtNWDE5UnFiNUJIbFJ0cU5TUjVQSVJIRnppR0lQZHBqbTd1cWlHMmhFNVFPZG96MTNyLTBqd2hrbkd5X1dSa2hHU1F1dVUwMkdxYXdpX3pPY1FmcC0zWDFiRnhQNldtSWcwNXg2WVJyTHRJV3VOcFBQblBUMlItZlk3dGpSbVkzUjBLd1VOOXpuUW9GemlQRmNRWVprb0Rkcm5UN1V5RHBYcmh1d3Jac1hsWkxUUmk2Y0s2RG9nenl1ZElKeC1qNFdsR0h5OHl0UnN1SS1fUdIB7gFBVV95cUxPV2xGTnhfQ3hVcUY0ZmlZRzZOMWFFUUtYQUpQNGQ5VjR5OHExRDR1QzFuNFBXWG5fajBkelRsQjlRWEVKQTE1bFpZMm1mVTAtVDMwUWJ6RndOZVVoMUN3SWxZVk1Hd2lEdENPUkotMnBMaWpOVUQ0cEVVRnIwS3JHaFF1V2pmZVU3ZDcxSjZ3SS15M1FPRWlTNURvVGZhNzYtSFl1UDZ0aWlUc0JBOUFtZzlObWlrTVVUNEtXTlFjX29LekowSUEzNkloRFFtZUQ0U2tGUG95dEMyVllISmFoUWRnSmh4di1fblotNTZn?oc=5",
+          "source": "El Universal",
+          "date": "2026-11-12",
+          "published_at": "2026-11-12T16:52:18Z",
+          "category": "Seguridad",
+          "borough": "Venustiano Carranza",
+          "location": "Venustiano Carranza (mencionada en el titular)",
+          "local_url": "/noticias/?id=892cad89c713faed0439&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con El Universal, el titular publicado es: «Detienen a tres hombres por presunto secuestro en Venustiano Carranza». Una nota de El Universal comunica un caso relacionado con una detención o una presunta conducta delictiva en Venustiano Carranza. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
+            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          }
+        },
+        {
+          "title": "Rescatan a secuestrado en Venustiano Carranza",
+          "description": "De acuerdo con Reforma, el titular publicado es: «Rescatan a secuestrado en Venustiano Carranza». La información publicada por Reforma aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPaGVOY1NHeEVnaDQzVWtaLV9ESm01M01UaXFxY2FTRk9ISjQwaG5ndE1Bd2J3MzJvanp3Znc5R3JOLUQ0Nl9MOGV2UUZhZjg3TUNDSGF0bXVEdkduU3A1M0czNi1CVTdaa1ZQNnNid2E5Q1o1LU1WX2NrSVRKdnRlejduSHF2dw?oc=5",
+          "source": "Reforma",
+          "date": "2026-11-12",
+          "published_at": "2026-11-12T16:32:35Z",
+          "category": "Seguridad",
+          "borough": "Venustiano Carranza",
+          "location": "Venustiano Carranza (mencionada en el titular)",
+          "local_url": "/noticias/?id=888de421729e63d8892d&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con Reforma, el titular publicado es: «Rescatan a secuestrado en Venustiano Carranza». La información publicada por Reforma aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "commons_75245856",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Graduaci%C3%B3n_de_la_Polic%C3%ADa_de_la_Ciudad_de_M%C3%A9xico_-i---i-_%2836371773944%29.jpg/960px-Graduaci%C3%B3n_de_la_Polic%C3%ADa_de_la_Ciudad_de_M%C3%A9xico_-i---i-_%2836371773944%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "category": "Seguridad",
+            "borough": "",
+            "topic": "Graduación de la Policía de la Ciudad de México -i---i- (36371773944)",
+            "keywords": [
+              "Policía Ciudad de México"
+            ],
+            "author": "Gobierno CDMX",
+            "license": "CC0",
+            "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+            "source": "https://commons.wikimedia.org/wiki/File:Graduaci%C3%B3n_de_la_Polic%C3%ADa_de_la_Ciudad_de_M%C3%A9xico_-i---i-_(36371773944).jpg"
+          }
+        },
         {
           "title": "\"El Morenito\" muere tras ser arrastrado varios metros por un tráiler, en Venustiano Carranza",
           "description": "De acuerdo con El Grafico, el titular publicado es: «\"El Morenito\" muere tras ser arrastrado varios metros por un tráiler, en Venustiano Carranza». La información publicada por El Grafico aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -15356,72 +15532,6 @@
             "license": "CC BY-SA 4.0",
             "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
             "source": "https://commons.wikimedia.org/wiki/File:Desfile_de_Catrinas_in_Mexico_City_2026_(52).jpg"
-          }
-        },
-        {
-          "title": "Dejan gatos muertos en puerta de albergue en alcaldía Venustiano Carranza, CDMX",
-          "description": "De acuerdo con Imagen Radio, el titular publicado es: «Dejan gatos muertos en puerta de albergue en alcaldía Venustiano Carranza, CDMX». La información publicada por Imagen Radio aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOamFaMERLUHVHd1NsUXFJTjRuVTZDcTRKeldCY0xXaDBCUFJJbngwTWtSMG5abG1KelhhNWlmM1pqLV9wZmMwODN1YmtuWWpSS0oxc0xVeV9kWFZFOThqUG9wbFl5Njg2SGgyZ19ZaXpvQkE2NGxwS0F2cG9TZURJd3hjZ3ctNWJacWhsc2RrLWVTMFBBOTc5amNMa3JIVkNwUk80UnZzS0Fza0tPWVHSAbMBQVVfeXFMTWFlQ2N3WkdUX1F4VXFKZER0ZFRlcmNBbmtaS2RlbVhzZVNEdFFLTFE2cTBEUmFTS1paMnQ2QS1FNE5xem9tbjIwamlFSm9EMFd4NE1IVjdVRlJoSWVNNC1sSEwxRlFraGhXVURlTUkxZHZ3RkNEWFpkdmE1LWItWWJTdU5ES043YUVsV3F2SThham9YeVhMbDJEYUFjcFczTi1mTjFNX2M4eVJFc0RmcS1LbG8?oc=5",
-          "source": "Imagen Radio",
-          "date": "2026-10-30",
-          "published_at": "2026-10-31T04:09:00Z",
-          "category": "CDMX",
-          "borough": "Venustiano Carranza",
-          "location": "Venustiano Carranza (mencionada en el titular)",
-          "local_url": "/noticias/?id=46d9370e4bbdbe32c93c&mes=2026-10",
-          "brief": {
-            "lead": "De acuerdo con Imagen Radio, el titular publicado es: «Dejan gatos muertos en puerta de albergue en alcaldía Venustiano Carranza, CDMX». La información publicada por Imagen Radio aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "commons_43608290",
-            "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Parque_Ecol%C3%B3gico_de_la_Ciudad_de_M%C3%A9xico_2.JPG/960px-Parque_Ecol%C3%B3gico_de_la_Ciudad_de_M%C3%A9xico_2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "category": "Medio Ambiente",
-            "borough": "",
-            "topic": "Parque Ecológico de la Ciudad de México 2",
-            "keywords": [
-              "Parques Ciudad de México"
-            ],
-            "author": "Jafpe93",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Parque_Ecol%C3%B3gico_de_la_Ciudad_de_M%C3%A9xico_2.JPG"
-          }
-        },
-        {
-          "title": "Detienen a hombre por agredir y robar a mujer en Venustiano Carranza",
-          "description": "De acuerdo con Telediario, el titular publicado es: «Detienen a hombre por agredir y robar a mujer en Venustiano Carranza». Una nota de Telediario comunica un caso relacionado con una detención o una presunta conducta delictiva en Venustiano Carranza. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
-          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOVFVlcVRtRVk1eF8wSXNjOHZtbXVITm5jZmdTeF9Kek56Um5SV1dVNnRjSGQwWmNxYjdPSV9qanRHWHE4U2s4bG91N2VjR2R3ek8xNm5ZLW92bENyM3BfLWJocXdvUGxWLVRwamYyTmN5cTdsZFdnRURFR2Z3RzUtTUhPYzZaOFNZNGVRUFhzUkhpRVJBRFlnZjZZbl9SSU5MU2FZalNMZ9IBpwFBVV95cUxQblRPX1hhdFhnMldXelNZaEQyR1JqT1RGWUY0OUc5c1ZvTFBScVkyUUR5Um9WT2NraklDYjA0RDJNQVBIWkVIMl9nWVVaQ181aEFNMTJLVF9tam5HSURwT3ljbHpaS1k0ZHRueWFuZnpFekM4SUNTeG5YVUotQ0pvNVlFdF9Hd1ZsNUtpY3ZXNkFMdHM1VXUzQ3NSR1l1WG11aHF5OTA4MA?oc=5",
-          "source": "Telediario",
-          "date": "2026-10-30",
-          "published_at": "2026-10-30T14:05:03Z",
-          "category": "Seguridad",
-          "borough": "Venustiano Carranza",
-          "location": "Venustiano Carranza (mencionada en el titular)",
-          "local_url": "/noticias/?id=bbf4f1a34f9c8f049d5e&mes=2026-10",
-          "brief": {
-            "lead": "De acuerdo con Telediario, el titular publicado es: «Detienen a hombre por agredir y robar a mujer en Venustiano Carranza». Una nota de Telediario comunica un caso relacionado con una detención o una presunta conducta delictiva en Venustiano Carranza. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
-            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
-            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "archivo_seguridad_005",
-            "kind": "representativa",
-            "url": "/assets/fotos/archivo_seguridad_005.jpg",
-            "category": "Seguridad",
-            "borough": "",
-            "topic": "Jeep policia cdmx",
-            "keywords": [
-              "Seguridad"
-            ],
-            "author": "Gobierno de la Ciudad de México",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Jeep_policia_cdmx.jpg"
           }
         }
       ]
@@ -16305,27 +16415,6 @@
           "borough": "Xochimilco",
           "location": "Xochimilco (mencionada en el titular)",
           "local_url": "/noticias/?id=3208751eaf12a4c87d28&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con 24-horas, el titular publicado es: «Xochimilco creará padrón de habitantes de asentamientos irregulares». La información publicada por 24-horas aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "commons_66033709",
-            "kind": "representativa",
-            "url": "https://upload.wikimedia.org/wikipedia/commons/2/26/Canales_de_Xochimilco%2C_Ciudad_de_M%C3%A9xico_%2832226551093%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-            "category": "CDMX",
-            "borough": "",
-            "topic": "Canales de Xochimilco, Ciudad de México (32226551093)",
-            "keywords": [
-              "CDMX"
-            ],
-            "author": "Comisión Mexicana de Filmaciones from México D. F., México",
-            "license": "CC BY-SA 2.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Canales_de_Xochimilco,_Ciudad_de_M%C3%A9xico_(32226551093).jpg"
-          },
           "alternate_versions": [
             {
               "title": "Xochimilco creará padrón de habitantes de asentamientos irregulares",
@@ -16360,7 +16449,28 @@
                 "source": "https://commons.wikimedia.org/wiki/File:Canales_de_Xochimilco,_Ciudad_de_M%C3%A9xico_(32226551093).jpg"
               }
             }
-          ]
+          ],
+          "brief": {
+            "lead": "De acuerdo con 24-horas, el titular publicado es: «Xochimilco creará padrón de habitantes de asentamientos irregulares». La información publicada por 24-horas aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "commons_66033709",
+            "kind": "representativa",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/2/26/Canales_de_Xochimilco%2C_Ciudad_de_M%C3%A9xico_%2832226551093%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+            "category": "CDMX",
+            "borough": "",
+            "topic": "Canales de Xochimilco, Ciudad de México (32226551093)",
+            "keywords": [
+              "CDMX"
+            ],
+            "author": "Comisión Mexicana de Filmaciones from México D. F., México",
+            "license": "CC BY-SA 2.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Canales_de_Xochimilco,_Ciudad_de_M%C3%A9xico_(32226551093).jpg"
+          }
         },
         {
           "title": "Tratamiento contemporáneo del sistema ancestral de chinampas de Xochimilco gana el Basque Culinary World Prize",
