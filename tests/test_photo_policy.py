@@ -570,5 +570,45 @@ class NewsPhotoPolicyTests(unittest.TestCase):
         self.assertEqual(stats["assigned"], 1)
 
 
+    def test_plural_armed_attacks_against_delivery_riders_reject_unrelated_city_photo(self):
+        title = "Agrupación de repartidores de aplicación documenta al menos 20 ataques armados en CDMX"
+        category = update_news.category_by_headline(title, "CDMX", "La Jornada")
+        self.assertEqual(category, "Seguridad")
+        article = dict(ARTICLE, title=title, category=category)
+        water_register = dict(
+            context_photo("chapultepec_water_register"),
+            topic="Registro de agua. Primera Sección del Bosque de Chapultepec - 4",
+            category="CDMX",
+            keywords=["Medio Ambiente"],
+        )
+        delivery_riders = dict(
+            context_photo("delivery_riders"),
+            topic="Repartidores de aplicación en motocicleta en Ciudad de México",
+            category="CDMX",
+            keywords=["repartidores", "motociclistas"],
+        )
+        patrol = dict(
+            context_photo("security_patrol"),
+            topic="Patrulla de la Policía de la Ciudad de México",
+            category="Seguridad",
+            keywords=["policía", "patrulla"],
+        )
+
+        self.assertEqual(photos._photo_category(article), "Seguridad")
+        self.assertLess(photos._photo_score(article, water_register), 0)
+        self.assertGreaterEqual(photos._photo_score(article, delivery_riders), 0)
+        self.assertGreaterEqual(photos._photo_score(article, patrol), 0)
+
+        with patch.object(photos, "_pool", return_value=[water_register, delivery_riders]), patch.object(
+            photos,
+            "VERIFIED_EVENTS",
+            Path("/tmp/never-loaded-delivery-attack-photo-registry.json"),
+        ):
+            stats = photos.assign_photos([article])
+
+        self.assertEqual(article["photo"]["id"], "delivery_riders")
+        self.assertEqual(article["photo"]["kind"], "representativa")
+        self.assertEqual(stats["assigned"], 1)
+
 if __name__ == "__main__":
     unittest.main()

@@ -170,5 +170,9 @@ class LocalNewsTests(unittest.TestCase):
                 self.assertEqual(category_by_headline(title, feed_category), expected)
 
 
+    def test_plural_armed_attacks_against_delivery_riders_are_security(self):
+        title = "Agrupación de repartidores de aplicación documenta al menos 20 ataques armados en CDMX"
+        self.assertEqual(category_by_headline(title, "CDMX", "La Jornada"), "Seguridad")
+
 if __name__=="__main__":
     unittest.main()

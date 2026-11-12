@@ -333,7 +333,7 @@ def category_by_headline(title, feed_category, source=""):
     # Las visitas de Día de Muertos no son delitos por mencionar "saldo blanco".
     if (re.search(r"\bdia de muertos\b", normalized)
             and re.search(r"\b(?:visitantes?|saldo blanco|conmemoracion)\b", normalized)
-            and not re.search(r"\b(?:homicidio|ataque armado|balacera)\b", normalized)):
+            and not re.search(r"\b(?:homicidio|ataques? armados?|balacera)\b", normalized)):
         return "Cultura"
     # Los grupos criminales son materia de seguridad, aunque el RSS use CDMX.
     if (feed_category in {"CDMX", "Gobierno"}
@@ -346,7 +346,7 @@ def category_by_headline(title, feed_category, source=""):
         return "Seguridad"
     # Una agresión violenta no es Cultura por mencionar el Día de Muertos.
     if (feed_category in {"CDMX", "Gobierno", "Cultura"}
-            and re.search(r"\b(?:ejecutan|ejecutad\w*|ejecucion|ataque armado|balacera|asesina(?:n)? a|asesinad\w*|asesinato)\b", normalized)):
+            and re.search(r"\b(?:ejecutan|ejecutad\w*|ejecucion|ataques? armados?|balacera|asesina(?:n)? a|asesinad\w*|asesinato)\b", normalized)):
         return "Seguridad"
     # Las agresiones por disparos se clasifican como Seguridad aunque el RSS diga CDMX.
     if (feed_category in {"CDMX", "Gobierno", "Cultura"}
@@ -356,7 +356,7 @@ def category_by_headline(title, feed_category, source=""):
     # salvo cuando el titular describe una amenaza o agresión concreta.
     if re.search(r"\b(?:repartidores?|conductores? de aplicacion)\b", normalized):
         security_signal = re.search(
-            r"\b(?:arma|armado|amenaz\w*|vandaliz\w*|robo|asalto|detienen|homicidio|balacera|agresion)\b",
+            r"\b(?:arma|armado|ataques? armados?|amenaz\w*|vandaliz\w*|robo|asalto|detienen|homicidio|balacera|agresion)\b",
             normalized,
         )
         movement_signal = re.search(
@@ -370,12 +370,12 @@ def category_by_headline(title, feed_category, source=""):
     # Manifestaciones, plantones y concentraciones anunciadas no son delitos.
     if (re.search(r"\bmovilizaciones\b", normalized)
             and re.search(r"\b(?:hoy|plantones|concentraciones|bloqueos|marchas)\b", normalized)
-            and not re.search(r"\b(?:ataque armado|balacera|detienen|homicidio)\b", normalized)):
+            and not re.search(r"\b(?:ataques? armados?|balacera|detienen|homicidio)\b", normalized)):
         return "Movilidad"
     # Una Catrina monumental y su récord pertenecen a la agenda cultural.
     if (re.search(r"\bcatrina\b", normalized)
             and re.search(r"\b(?:monumental|record guinness|zocalo)\b", normalized)
-            and not re.search(r"\b(?:ataque armado|balacera|detienen)\b", normalized)):
+            and not re.search(r"\b(?:ataques? armados?|balacera|detienen)\b", normalized)):
         return "Cultura"
     # Manifestaciones y plantones con calles u horarios afectados son movilidad.
     if (re.search(r"\b(?:manifestaciones|plantones|marchas)\b", normalized)
@@ -383,7 +383,7 @@ def category_by_headline(title, feed_category, source=""):
         return "Movilidad"
     # Las marchas y concentraciones anunciadas son información vial, no un delito.
     if (re.search(r"\bmarchas?\b.*\b(?:hoy|noviembre|bloqueos?|concentraciones?)\b", normalized)
-            and not re.search(r"\b(?:detienen|policias?|operativo policial|balacera|ataque armado)\b", normalized)):
+            and not re.search(r"\b(?:detienen|policias?|operativo policial|balacera|ataques? armados?)\b", normalized)):
         return "Movilidad"
     # Etiquetas editoriales inequívocas aunque el feed general use "CDMX".
     if (feed_category in {"CDMX", "Gobierno"}

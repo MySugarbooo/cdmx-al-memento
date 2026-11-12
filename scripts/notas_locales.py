@@ -578,7 +578,7 @@ def _photo_category(article):
             return "Movilidad"
         return "CDMX"
     # Los ataques y homicidios prevalecen sobre menciones a festividades.
-    if re.search(r"\b(?:ataque armado|balacera|asesina(?:n)?|asesinad\w*|asesinato)\b", headline):
+    if re.search(r"\b(?:ataques? armados?|balacera|asesina(?:n)?|asesinad\w*|asesinato)\b", headline):
         return "Seguridad"
     # Las víctimas de disparos son un tema de seguridad, aunque el RSS diga CDMX.
     if re.search(r"\b(?:balead\w*|balear\w*|balean|baleo)\b", headline):
@@ -666,8 +666,8 @@ STRICT_PHOTO_TOPICS = (
     (r"\bfuga de agua\b",
      r"\b(?:fuga de agua|tuberias?|reparacion|fontaneria|agua potable|red hidraulica)\b"),
     # "Asesinados" y "asesinadas" no coincidían con el patrón "asesinan".
-    (r"\b(?:asesinad\w*|asesina(?:n)?|homicidios?|balacera|ataque armado)\b",
-     r"\b(?:fiscalia|investigacion penal|justicia|ministerio publico|peritos?|escena del crimen|operativo policial)\b"),
+    (r"\b(?:asesinad\w*|asesina(?:n)?|homicidios?|balacera|ataques? armados?)\b",
+     r"\b(?:fiscalia|investigacion penal|justicia|ministerio publico|peritos?|escena del crimen|operativo policial|repartidores?|conductores? de aplicacion|motociclistas?)\b"),
     # Fotos representativas deben corresponder al asunto, no solo a la ciudad.
     (r"\b(?:panteones?|cementerios?|camposantos?)\b",
      r"\b(?:panteones?|cementerios?|camposantos?|tumbas?|sepulturas?|ofrendas? funerarias?)\b"),
@@ -686,8 +686,8 @@ STRICT_PHOTO_TOPICS = (
     (r"\bmarchas?\b.*\b(?:hoy|noviembre|bloqueos?|concentraciones?)\b",
      r"\b(?:manifestacion(?:es)?|protestas?|marchas?|bloqueos?|concentraciones?|movilizaciones?)\b"),
     # Una agresión letal no es una celebración ni una imagen genérica de rescate.
-    (r"\b(?:ataque armado|balacera|asesina(?:n)?|asesinato)\b",
-     r"\b(?:fiscalia|investigacion penal|justicia|ministerio publico|peritos?|escena del crimen|operativo policial)\b"),
+    (r"\b(?:ataques? armados?|balacera|asesina(?:n)?|asesinato)\b",
+     r"\b(?:fiscalia|investigacion penal|justicia|ministerio publico|peritos?|escena del crimen|operativo policial|repartidores?|conductores? de aplicacion|motociclistas?)\b"),
     # Un tiroteo no se ilustra con una graduación o ceremonia policial.
     (r"\b(?:balead\w*|balear\w*|balean|baleo)\b",
      r"\b(?:fiscalia|investigacion penal|justicia|ministerio publico|peritos?|escena del crimen|operativo policial)\b"),
@@ -963,11 +963,11 @@ def _photo_score(article, photo):
     # En robos, asaltos y extorsiones, la coincidencia de alcaldía no basta:
     # exigir una imagen con contexto de seguridad antes de puntuar el lugar.
     crime_story = bool(re.search(
-        r"\b(?:robo|robos|roban|robado|robada|robaron|decomis\w*|incaut\w*|asegur\w*|asalto|asaltan|extorsion|extorsionan|ejecutan|ejecutad\w*|ejecucion|asesinan|asesinad\w*|asesinato|homicidio|matan|balazos|balacera)\b",
+        r"\b(?:robo|robos|roban|robado|robada|robaron|decomis\w*|incaut\w*|asegur\w*|asalto|asaltan|ataques? armados?|extorsion|extorsionan|ejecutan|ejecutad\w*|ejecucion|asesinan|asesinad\w*|asesinato|homicidio|matan|balazos|balacera)\b",
         headline,
     ))
     crime_context = bool(re.search(
-        r"\b(?:policias?|patrullas?|fiscalia|detencion|operativo policial|"
+        r"\b(?:policias?|patrullas?|repartidores?|conductores? de aplicacion|motociclistas?|fiscalia|detencion|operativo policial|"
         r"ministerio publico|investigacion penal|escena del crimen)\b",
         context,
     ))
@@ -1127,7 +1127,7 @@ def _photo_score(article, photo):
             and re.search(r"\b(?:adquisicion|compra|presentacion|entrega)\b.*\bpatrullas?\b", topic)):
         return -10000
     # Una ceremonia policial o un desfile no representa un asesinato o ataque.
-    if (re.search(r"\b(?:asesina(?:n)?|asesinato|ataque armado|balacera|matan|homicidio|balead\w*|balear\w*|balean)\b", headline)
+    if (re.search(r"\b(?:asesina(?:n)?|asesinato|ataques? armados?|balacera|matan|homicidio|balead\w*|balear\w*|balean)\b", headline)
             and re.search(r"\b(?:graduacion|ceremonia|adquisicion|entrega de patrullas|proteccion civil|desfile|catrinas?)\b", topic)):
         return -10000
     # Una avenida turística de otra zona no ilustra un choque local.
