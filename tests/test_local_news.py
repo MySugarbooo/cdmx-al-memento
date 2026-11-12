@@ -107,6 +107,8 @@ class LocalNewsTests(unittest.TestCase):
         self.assertIn("13 al 17 de noviembre de 2026", brief["lead"])
         self.assertIn("comunicado oficial de la SSC", brief["method"])
         self.assertNotIn("clasifica como Metro", brief["lead"])
+        self.assertIn("ajuste del operativo", brief["pending"])
+        self.assertNotIn("El índice RSS", brief["pending"])
         self.assertIn("seguridad", brief["context"].casefold())
 
     def test_reader_is_internal_and_signed(self):
