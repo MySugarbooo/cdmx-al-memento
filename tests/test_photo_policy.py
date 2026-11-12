@@ -75,6 +75,25 @@ class NewsPhotoPolicyTests(unittest.TestCase):
             with self.subTest(changes=changes):
                 self.assertIsNone(photos.verified_event_photo(ARTICLE, [approval(**changes)]))
 
+    def test_mexico_pachuca_pipa_reports_are_located_in_ecatepec(self):
+        titles = (
+            "Vuelca pipa de gas en la México-Pachuca; hay al menos 2 lesionados y caos vial con dirección a la CDMX",
+            "Vuelca pipa de gas en la México-Pachuca y afecta tránsito a CDMX",
+            "Vuelca pipa de gas LP en la México-Pachuca y colapsa el tráfico con dirección a CDMX",
+            "Pipa de gas se vuelca en la autopista México-Pachuca; cierran carriles hacia Cdmx por emergencia",
+        )
+        for title in titles:
+            with self.subTest(title=title):
+                article = dict(ARTICLE, title=title, source="El Sol de México",
+                               date="2026-11-11", category="Movilidad")
+                borough, location = update_news.identify_location(title, article["date"])
+                brief = photos.summarize(article)
+                self.assertEqual(borough, "")
+                self.assertEqual(location, "Ecatepec, Estado de México (fuera de CDMX)")
+                self.assertIn("Ecatepec, Estado de México", brief["lead"])
+                self.assertIn("fuera de la capital", brief["lead"])
+                self.assertIn("La Jornada", brief["method"])
+
     def test_archive_cleanup_removes_sensitive_context_photos_and_keeps_verified_event_photo(self):
         title = "Caso Vadhir Derbez: Fiscalía CDMX tendría ADN relacionado con denuncia por violación"
         contextual = dict(ARTICLE, title=title, photo=context_photo("patrullas"))

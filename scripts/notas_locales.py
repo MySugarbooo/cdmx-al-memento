@@ -112,6 +112,19 @@ def _reported_angle(article):
                 f"y menciona la activación de una Alerta Amber{zone}. "
                 "Por respeto a su privacidad, esta síntesis no reproduce datos personales "
                 "adicionales ni especula sobre las circunstancias de la desaparición.")
+    # La volcadura del 11 de noviembre ocurrió en Ecatepec, Estado de México;
+    # la afectación fue hacia CDMX. Corroborado por El Sol, La Jornada, UnoTV y DigitalMex.
+    if (article.get("date") in {"2026-11-11", "2026-11-12"}
+            and re.search(r"\bpipa\b", t)
+            and re.search(r"m[eé]xico[- ]pachuca", t)):
+        return (
+            f"Las coberturas de El Sol de México, La Jornada, UnoTV y DigitalMex ubican la volcadura "
+            "en la autopista México-Pachuca, a la altura de San Pedro Xalostoc/Santa Clara, "
+            "Ecatepec, Estado de México. La afectación fue en dirección a la Ciudad de México; "
+            "el hecho ocurrió fuera de la capital. No añadimos causas ni un saldo distinto al "
+            "que cada publicación atribuye a sus propias fuentes."
+        )
+
     # Accidentes de motos, choques y siniestros: informar incluso si el hecho es
     # grave, sin inventar fallecimientos, lesiones, imágenes o circunstancias.
     if re.search(r"\b(?:accident\w*|choqu\w*|colisi[oó]n\w*|volcadur\w*|vuelc\w*|"
@@ -282,6 +295,12 @@ def summarize(article):
     context=theme["importance"]
     pending=theme["verify"]+" El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar."
     method="Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+    if (article.get("date") in {"2026-11-11", "2026-11-12"}
+            and re.search(r"\bpipa\b", title.casefold())
+            and re.search(r"m[eé]xico[- ]pachuca", title.casefold())):
+        method = ("Síntesis editorial propia. La ubicación se contrastó con coberturas de "
+                  "El Sol de México, La Jornada, UnoTV y DigitalMex del 11 de noviembre de 2026; "
+                  "no equivale a lectura íntegra de la fuente original.")
     if (
         source.casefold() == "tv azteca"
         and "explosión de gas en local de azcapotzalco" in title.casefold()
