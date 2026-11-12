@@ -115,7 +115,7 @@ def _reported_angle(article):
     # La volcadura del 11 de noviembre ocurrió en Ecatepec, Estado de México;
     # la afectación fue hacia CDMX. Corroborado por El Sol, La Jornada, UnoTV y DigitalMex.
     if (article.get("date") in {"2026-11-11", "2026-11-12"}
-            and re.search(r"\\bpipa\\b", t)
+            and re.search(r"\bpipa\b", t)
             and re.search(r"m[eé]xico[- ]pachuca", t)):
         return (
             f"Las coberturas de El Sol de México, La Jornada, UnoTV y DigitalMex ubican la volcadura "
@@ -296,7 +296,7 @@ def summarize(article):
     pending=theme["verify"]+" El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar."
     method="Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
     if (article.get("date") in {"2026-11-11", "2026-11-12"}
-            and re.search(r"\\bpipa\\b", title.casefold())
+            and re.search(r"\bpipa\b", title.casefold())
             and re.search(r"m[eé]xico[- ]pachuca", title.casefold())):
         method = ("Síntesis editorial propia. La ubicación se contrastó con coberturas de "
                   "El Sol de México, La Jornada, UnoTV y DigitalMex del 11 de noviembre de 2026; "
