@@ -2,6 +2,7 @@
 import unittest
 from pathlib import Path
 from scripts.notas_locales import assign_photos, local_link, summarize, is_sensitive_media
+from scripts.build_article_seo import article_id, render
 from update_news import category_by_headline, standardize
 
 ROOT=Path(__file__).resolve().parents[1]
@@ -50,7 +51,7 @@ class LocalNewsTests(unittest.TestCase):
     def test_san_juan_del_rio_autopista57_is_mobility_and_has_no_police_photo(self):
         article = {
             "title": "Toma precauciones si viajas a la CDMX, autopista 57 está detenida",
-            "url": "https://news.google.com/rss/articles/example-autopista57-sjr",
+            "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPUW96UDJITEFHWWhYTThWclZlQmh1cGcyUW5lTngtRzNTcmJ5M0pjaUZRN1RHbDZOZmRVblQ4NjNfN09PWXpHSHFOX3RRcTBvOE5PZEtxU2NfVXFqWDBqb0d2anpFa2dIb1lUdm9tazFOSGJyWElIRFRnbkQzamdXdUc3YW5uMjd3dkNxVFRRNDVYTDBfV291VDJZbzU5TTk4UnF3aVhwRGR0TkRPSmhNdC1QeHhoRTFmdnlpdHQ3clk?oc=5",
             "source": "El Sol de México",
             "date": "2026-11-12",
             "published_at": "2026-11-12T17:19:57Z",
@@ -73,13 +74,21 @@ class LocalNewsTests(unittest.TestCase):
         self.assertEqual(result["category"], "Movilidad")
         self.assertEqual(result["location"], "San Juan del Río, Querétaro (fuera de CDMX)")
         self.assertEqual(result["borough"], "")
-        self.assertIn("San Juan del Río", result["brief"]["lead"])
+        self.assertEqual(result["source"], "El Sol de San Juan del Río")
+        self.assertEqual(result["source_url"], "https://oem.com.mx/elsoldesanjuandelrio/policiaca/toma-precauciones-si-viajas-a-la-cdmx-autopista-57-esta-detenida-33095499")
+        self.assertEqual(result["local_url"], "/noticias/?id=b37ba45fa2fa424b73bd&mes=2026-11")
+        self.assertIn("Mario Luna / Diario de Querétaro", result["brief"]["lead"])
+        self.assertIn("El Sol de San Juan del Río", result["brief"]["method"])
         self.assertIn("fuera de la Ciudad de México", result["brief"]["context"])
         self.assertNotIn("kilómetros", result["brief"]["lead"].casefold())
         self.assertTrue(is_sensitive_media(result))
         assign_photos([result])
         self.assertNotIn("photo", result)
         self.assertTrue(result["sensitive_media"])
+        rendered = render(result, article_id(result))
+        self.assertIn('href="https://oem.com.mx/elsoldesanjuandelrio/policiaca/toma-precauciones-si-viajas-a-la-cdmx-autopista-57-esta-detenida-33095499"', rendered)
+        self.assertIn("Fuente: El Sol de San Juan del Río", rendered)
+        self.assertNotIn("Fuente: El Sol de México", rendered)
 
     def test_distinct_real_photos_for_sixty_news(self):
         groups=["CDMX","Metro","Seguridad","Movilidad","Cultura","Gobierno"]
