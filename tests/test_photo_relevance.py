@@ -1,5 +1,6 @@
 """Previene asignar fotos de patrullas a noticias de ciclismo o tecnología."""
 import unittest
+from unittest.mock import patch
 
 from scripts.notas_locales import _pool, _photo_category, _photo_score, assign_photos
 import update_news as news
@@ -595,6 +596,57 @@ class PhotoRelevanceTests(unittest.TestCase):
             self.assertTrue(photo["license"])
             self.assertTrue(photo["licenseUrl"])
             self.assertTrue(photo["source"].startswith("https://commons.wikimedia.org/wiki/File:"))
+
+
+    def test_guerrero_highway_after_protests_rejects_ecobici_and_uses_regional_road_photo(self):
+        article = news.standardize({
+            "title": "Pacta Gobierno carretera en Guerrero tras protestas en CDMX",
+            "url": "https://news.google.com/rss/articles/guerrero-highway-photo-regression",
+            "source": "Reforma",
+            "date": "2026-11-12",
+            "category": "Gobierno",
+        })
+        ecobici = {
+            "id": "commons_20495838",
+            "kind": "representativa",
+            "category": "Movilidad",
+            "topic": "EcoBici Ciudad de México",
+            "keywords": ["ECOBICI Ciudad de México"],
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/EcoBici_Ciudad_de_M%C3%A9xico.jpg/960px-EcoBici_Ciudad_de_M%C3%A9xico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "source": "https://commons.wikimedia.org/wiki/File:EcoBici_Ciudad_de_M%C3%A9xico.jpg",
+            "author": "Denis Bocquet",
+            "license": "CC BY 2.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        }
+        highway = {
+            "id": "contexto_carretera_guerrero",
+            "kind": "representativa",
+            "category": "Movilidad",
+            "topic": "Carretera Federal 95 en el Cañón del Zopilote, Guerrero (imagen representativa; no corresponde a la obra anunciada)",
+            "keywords": ["carretera", "autopista", "Guerrero", "infraestructura vial"],
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Zopilote_Canyon%2C_Guerrero_and_Mx_Highway_95.jpg/960px-Zopilote_Canyon%2C_Guerrero_and_Mx_Highway_95.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+            "source": "https://commons.wikimedia.org/wiki/File:Zopilote_Canyon,_Guerrero_and_Mx_Highway_95.jpg",
+            "author": "Sealight",
+            "license": "CC BY-SA 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        }
+
+        self.assertLess(_photo_score(article, ecobici), 0)
+        self.assertGreaterEqual(_photo_score(article, highway), 0)
+        with patch("scripts.notas_locales._pool", return_value=[ecobici, highway]):
+            assign_photos([article])
+        self.assertEqual(article["photo"]["id"], "contexto_carretera_guerrero")
+        self.assertEqual(article["photo"]["kind"], "representativa")
+        self.assertIn("no corresponde a la obra anunciada", article["photo"]["topic"])
+
+        unrelated = news.standardize({
+            "title": "Contraloría CDMX avanza en transparencia y rendición de cuentas",
+            "url": "https://news.google.com/rss/articles/unrelated-government-photo-regression",
+            "source": "Talla Politica",
+            "date": "2026-11-12",
+            "category": "Gobierno",
+        })
+        self.assertLess(_photo_score(unrelated, highway), 0)
 
 
 if __name__ == "__main__":

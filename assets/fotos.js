@@ -208,7 +208,7 @@
  }
  window.CDMX_FOTOS={images,groups,src,source,pick,addCatalog,addRecentCatalog,candidatesForArticle,prepare,forArticle,alternatives};
 })();
-/* Fototeca editorial de 1,100 imágenes: no bloquea noticias si Wikimedia no responde. */
+/* Fototeca editorial de 1,102 imágenes: no bloquea noticias si Wikimedia no responde. */
 (()=>{
  const api=window.CDMX_FOTOS;
  if(!api)return;
@@ -269,7 +269,7 @@
   }
   return {assigned:selections.size,distinct:new Set(selections.values()).size,available:allKeys.length};
  }
- fetch('/assets/fotos/indice-noticias-1100.json?v=20261029-1',{cache:'force-cache'})
+ fetch('/assets/fotos/indice-noticias-1100.json?v=20261112-guerrero-highway1',{cache:'force-cache'})
  .then(r=>{if(!r.ok)throw Error('HTTP '+r.status);return r.json()})
  .then(data=>{
    const items=Array.isArray(data.photos)?data.photos:[];
