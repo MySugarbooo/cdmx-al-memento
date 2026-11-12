@@ -22,7 +22,7 @@ from pathlib import Path
 from zoneinfo import ZoneInfo
 
 from scripts.analisis_editorial import build_editorial
-from scripts.notas_locales import local_link, summarize, assign_photos, _photo_score, is_sensitive_media, is_coyotepec_highway_crash, is_san_juan_del_rio_autopista57_closure, SENSITIVE_MEDIA_TITLE, SAN_JUAN_DEL_RIO_AUTOPISTA57_SOURCE_URL, is_infobae_tlalpan_animal_abuse, is_la_prensa_tlalpan_animal_case, INFOBAE_TLALPAN_ANIMAL_SOURCE_URL, LA_PRENSA_TLALPAN_ANIMAL_SOURCE_URL, is_imagen_tlalpan_dog_rescue, is_huixtla_migrant_caravan, is_vc_fatal_trailer_incident, EL_GRAFICO_VC_TRAILER_SOURCE_URL
+from scripts.notas_locales import local_link, summarize, assign_photos, _photo_score, is_sensitive_media, is_coyotepec_highway_crash, is_san_juan_del_rio_autopista57_closure, SENSITIVE_MEDIA_TITLE, SAN_JUAN_DEL_RIO_AUTOPISTA57_SOURCE_URL, is_infobae_tlalpan_animal_abuse, is_la_prensa_tlalpan_animal_case, INFOBAE_TLALPAN_ANIMAL_SOURCE_URL, LA_PRENSA_TLALPAN_ANIMAL_SOURCE_URL, is_imagen_tlalpan_dog_rescue, is_huixtla_migrant_caravan, is_vc_fatal_trailer_incident, EL_GRAFICO_VC_TRAILER_SOURCE_URL, is_infobae_ballet_zapatilla, INFOBAE_BALLET_ZAPATILLA_SOURCE_URL, is_pulque_barbacoa_fair
 
 ROOT = Path(__file__).resolve().parent
 DEST = ROOT / "news.json"
@@ -177,6 +177,18 @@ def outside_cdmx_scope(title):
 
 def identify_location(title, date=None):
     words = " " + fold(title) + " "
+    # Infobae confirma la sede de La Zapatilla de Cristal en Utopía Mixiuhca, Iztacalco.
+    if " zapatilla de cristal " in words and " ballet " in words:
+        return "Iztacalco", (
+            "Utopía Mixiuhca, Viaducto Río de la Piedad 6, colonia Granjas México, "
+            "Iztacalco, Ciudad de México"
+        )
+    # Infobae y POSTA coinciden en la sede de la Feria del Pulque y la Barbacoa.
+    if " feria " in words and " pulque " in words and " barbacoa " in words:
+        return "La Magdalena Contreras", (
+            "Explanada de la Alcaldía La Magdalena Contreras, José Moreno Salido s/n, "
+            "colonia Barranca Seca, Ciudad de México"
+        )
     # La Línea 1 del Cablebús opera entre Indios Verdes y Cuautepec, en Gustavo A. Madero.
     if " cablebus " in words and " linea 1 " in words:
         return "Gustavo A. Madero", "Gustavo A. Madero, Ciudad de México (Línea 1 del Cablebús)"
@@ -500,6 +512,12 @@ def category_by_headline(title, feed_category, source=""):
     if (feed_category in {"CDMX", "Gobierno"}
             and re.search(r"\bgobierno de la ciudad de mexico\b", normalized)):
         return "Gobierno"
+    # La agenda de artes escénicas y gastronomía no debe heredar etiquetas de Metro o CDMX.
+    if re.search(r"\b(?:ballet|danza clasica|cirque du soleil|feria (?:regional )?del pulque|pulque y la barbacoa)\b", normalized):
+        return "Cultura"
+    # Los avisos de lluvia intensa pertenecen a Medio Ambiente, salvo las afectaciones de transporte ya clasificadas arriba.
+    if re.search(r"\b(?:alerta por diluvio|alerta por lluvias?|lluvias? fuertes?)\b", normalized):
+        return "Medio Ambiente"
     return feed_category
 
 
@@ -522,6 +540,18 @@ def standardize(article):
     except ValueError:
         return None
     borough, location = identify_location(title, date)
+    if is_infobae_ballet_zapatilla({"title": title, "source": source, "date": date}):
+        borough = "Iztacalco"
+        location = (
+            "Utopía Mixiuhca, Viaducto Río de la Piedad 6, colonia Granjas México, "
+            "Iztacalco, Ciudad de México"
+        )
+    elif is_pulque_barbacoa_fair({"title": title, "date": date}):
+        borough = "La Magdalena Contreras"
+        location = (
+            "Explanada de la Alcaldía La Magdalena Contreras, José Moreno Salido s/n, "
+            "colonia Barranca Seca, Ciudad de México"
+        )
     if is_coyotepec_highway_crash({"title": title, "source": source, "date": date}):
         borough = ""
         location = "Coyotepec, Estado de México (fuera de CDMX)"
@@ -565,7 +595,9 @@ def standardize(article):
         "location": location,
     }
     result["local_url"] = local_link(result)
-    if is_san_juan_del_rio_autopista57_closure(result):
+    if is_infobae_ballet_zapatilla(result):
+        result["source_url"] = INFOBAE_BALLET_ZAPATILLA_SOURCE_URL
+    elif is_san_juan_del_rio_autopista57_closure(result):
         # La publicación original identifica al medio regional y a su firma;
         # se conserva la URL RSS para no cambiar el identificador local.
         result["source"] = "El Sol de San Juan del Río"
