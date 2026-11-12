@@ -209,6 +209,51 @@ class PhotoRelevanceTests(unittest.TestCase):
         assign_photos([article])
         self.assertNotIn("photo", article)
 
+    def test_paseo_tollocan_rollover_is_located_in_edomex_and_has_no_cdmx_photo(self):
+        title = (
+            "Caos vial en Paseo Tollocan rumbo a CDMX por volcadura de pipa con gas LP"
+        )
+        cdmx_firefighters = {
+            "id": "commons_75139345",
+            "kind": "representativa",
+            "category": "Seguridad",
+            "topic": "Equipo de trabajo de los Bomberos CDMX IMG 3039",
+            "keywords": ["Bomberos Ciudad de México"],
+            "author": "Gobierno CDMX",
+            "license": "CC0",
+            "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+            "source": "https://commons.wikimedia.org/wiki/File:Equipo_de_trabajo_de_los_Bomberos_CDMX_IMG_3039_(29724113197).jpg",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Equipo_de_trabajo_de_los_Bomberos_CDMX_IMG_3039_(29724113197).jpg/960px-Equipo_de_trabajo_de_los_Bomberos_CDMX_IMG_3039_(29724113197).jpg",
+        }
+        article = news.standardize({
+            "title": title,
+            "url": "https://news.google.com/rss/articles/paseo-tollocan-rollover-regression",
+            "source": "Diario Evolución",
+            "date": "2026-11-12",
+            "category": "Movilidad",
+            "photo": cdmx_firefighters,
+        })
+
+        self.assertEqual(article["category"], "Movilidad")
+        self.assertEqual(article["borough"], "")
+        self.assertEqual(
+            article["location"],
+            "Santa María Totoltepec, Toluca, Estado de México (fuera de CDMX)",
+        )
+        self.assertTrue(news.headline_has_cdmx_signal(title))
+        self.assertTrue(news.local_for_homepage(article))
+        self.assertIn("Santa María Totoltepec", article["brief"]["lead"])
+        self.assertIn("Toluca, Estado de México", article["brief"]["lead"])
+        self.assertIn("carriles laterales", article["brief"]["lead"])
+        self.assertNotIn("en la capital", article["brief"]["lead"].casefold())
+        self.assertIn("SéUno Noticias", article["brief"]["method"])
+
+        # Una fotografía identificada como Bomberos CDMX no debe ilustrar
+        # un incidente situado en Toluca, aunque el trayecto afectado vaya a CDMX.
+        with patch.object(photos, "_pool", return_value=[cdmx_firefighters]):
+            assign_photos([article])
+        self.assertNotIn("photo", article)
+
     def test_chinampas_single_day_and_license_photos_need_matching_topics(self):
         chinampas = {
             "title": "Arca Tierra y Lucio Usobiaga reciben reconocimiento por proteger las chinampas de Xochimilco",

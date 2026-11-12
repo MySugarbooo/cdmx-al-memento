@@ -131,6 +131,24 @@ def _reported_angle(article):
             "que cada publicación atribuye a sus propias fuentes."
         )
 
+    # La volcadura del 12 de noviembre fue en Toluca, Estado de México;
+    # la vía afectada se dirige a CDMX. Contraste con SéUno Noticias y el
+    # comunicado municipal Com. 1217/2026, sin atribuir el hecho a la capital.
+    if (article.get("date") == "2026-11-12"
+            and "paseo tollocan" in t
+            and re.search(r"\bpipa\b", t)
+            and re.search(r"\b(?:volcadur|vuelc)\w*\b", t)):
+        return (
+            f"De acuerdo con {source}, se reporta la volcadura de una pipa en Paseo Tollocan "
+            "con dirección a la Ciudad de México. SéUno Noticias ubica el hecho en los carriles "
+            "laterales, antes del puente de Pilares, a la altura de Santa María Totoltepec, "
+            "Toluca, Estado de México. La cobertura informa que Bomberos de Toluca y Metepec "
+            "atendían la emergencia y que los carriles laterales hacia CDMX permanecían cerrados. "
+            "Al citar el comunicado municipal Com. 1217/2026, no reportó personas lesionadas "
+            "al momento de su publicación. El incidente ocurrió fuera de CDMX, aunque afectó "
+            "el acceso hacia la capital."
+        )
+
     # Accidentes de motos, choques y siniestros: informar incluso si el hecho es
     # grave, sin inventar fallecimientos, lesiones, imágenes o circunstancias.
     if re.search(r"\b(?:accident\w*|choqu\w*|colisi[oó]n\w*|volcadur\w*|vuelc\w*|"
@@ -301,6 +319,31 @@ def summarize(article):
     context=theme["importance"]
     pending=theme["verify"]+" El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar."
     method="Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+    if (article.get("date") == "2026-11-12"
+            and "paseo tollocan" in title.casefold()
+            and re.search(r"\bpipa\b", title.casefold())
+            and re.search(r"\b(?:volcadur|vuelc)\w*\b", title.casefold())):
+        return {
+            "lead": first,
+            "context": (
+                "La volcadura ocurrió en Toluca, Estado de México; el cierre de los carriles "
+                "laterales afectaba a quienes se dirigían hacia la Ciudad de México. No fue "
+                "un incidente ocurrido dentro de una alcaldía capitalina."
+            ),
+            "pending": (
+                "La cobertura de SéUno Noticias, publicada a las 08:46 del 12 de noviembre, "
+                "indicó que no había personas lesionadas reportadas en el comunicado citado. "
+                "La reapertura de los carriles y el estado posterior del contenedor requieren "
+                "una actualización de las autoridades de Toluca."
+            ),
+            "method": (
+                "Síntesis editorial basada en el titular de Diario Evolución y el contraste "
+                "con SéUno Noticias del 12 de noviembre de 2026 (08:46), que cita el comunicado "
+                "municipal Com. 1217/2026: "
+                "https://seunonoticias.mx/2026/11/12/que-paso-en-paseo-tollocan-pipa-vuelca-antes-de-pilares/. "
+                "No constituye una verificación independiente del comunicado."
+            ),
+        }
     if (
         source.casefold() == "la jornada"
         and _photo_fold(title) == _photo_fold("CDMX: 95% de la población no puede comprar vivienda")
