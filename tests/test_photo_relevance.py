@@ -449,6 +449,13 @@ class PhotoRelevanceTests(unittest.TestCase):
         self.assertLess(_photo_score(article, condesa_dogs), 0)
         self.assertGreaterEqual(_photo_score(article, xochimilco_dogs), 0)
 
+        city_wide_rescue = {
+            "title": "Rescatan perritos en parque de la capital",
+            "category": "Seguridad",
+            "borough": "CDMX",
+        }
+        self.assertGreaterEqual(_photo_score(city_wide_rescue, tlalpan_animals), 0)
+
 
 if __name__ == "__main__":
     unittest.main()
