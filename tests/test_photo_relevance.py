@@ -352,6 +352,52 @@ class PhotoRelevanceTests(unittest.TestCase):
         self.assertLess(_photo_score(bike, generic_bus), 0)
         self.assertGreaterEqual(_photo_score(bike, real_bicycle), 0)
 
+    def test_cablebus_line_one_alert_uses_correct_route_category_summary_and_photo(self):
+        title = "Activan Alerta Amarilla por Lluvia Fuerte en CDMX; Línea 1 del Cablebús Suspende Servicio"
+        article = news.standardize({
+            "title": title,
+            "url": "https://news.google.com/rss/articles/cablebus-line1-photo-regression",
+            "source": "N+",
+            "date": "2026-11-12",
+            "category": "CDMX",
+        })
+
+        self.assertEqual(article["category"], "Movilidad")
+        self.assertEqual(article["borough"], "Gustavo A. Madero")
+        self.assertEqual(
+            article["location"],
+            "Gustavo A. Madero, Ciudad de México (Línea 1 del Cablebús)",
+        )
+        self.assertIn("suspendió el servicio", article["brief"]["lead"])
+        self.assertIn("Gustavo A. Madero", article["brief"]["context"])
+        self.assertIn("no indican la hora exacta", article["brief"]["pending"])
+
+        santa_marta_line_2 = {
+            "id": "commons_108310960",
+            "category": "Movilidad",
+            "topic": "Estación Cablebús Santa Marta 2",
+            "keywords": ["Cablebús Ciudad de México"],
+        }
+        line_3_cabin = {
+            "id": "cablebus_line_3",
+            "category": "Movilidad",
+            "topic": "Cabina del Cablebús Línea 3",
+            "keywords": ["Cablebús Ciudad de México"],
+        }
+        line_1_station = {
+            "id": "cablebus_line_1",
+            "category": "Movilidad",
+            "topic": "Estación Cablebús Indios Verdes Línea 1",
+            "keywords": ["Cablebús Ciudad de México"],
+        }
+
+        self.assertLess(_photo_score(article, santa_marta_line_2), 0)
+        self.assertLess(_photo_score(article, line_3_cabin), 0)
+        self.assertGreaterEqual(_photo_score(article, line_1_station), 0)
+        with patch.object(photos, "_pool", return_value=[santa_marta_line_2]):
+            assign_photos([article])
+        self.assertNotIn("photo", article)
+
     def test_recent_news_rejects_unrelated_context_photos(self):
         cases = [
             ("Socavón calles GAM: Afectaciones en la CDMX este martes",

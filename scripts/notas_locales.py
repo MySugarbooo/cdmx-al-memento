@@ -431,6 +431,32 @@ def summarize(article):
     source=str(article.get("source") or "un medio periodístico").strip()
     category=str(article.get("category") or "CDMX")
     theme=TAGS.get(category,TAGS["CDMX"])
+    folded_title=_photo_fold(title)
+    if (re.search(r"\bcablebus\b", folded_title)
+            and re.search(r"\blinea 1\b", folded_title)
+            and re.search(r"\bsuspend\w*\b", folded_title)
+            and re.search(r"\blluvia\b", folded_title)):
+        return {
+            "lead": (
+                f"El titular de {source} informa que, durante la alerta por lluvia fuerte en CDMX, "
+                "la Línea 1 del Cablebús suspendió el servicio. El índice RSS no precisa la hora "
+                "ni las estaciones afectadas."
+            ),
+            "context": (
+                "La Línea 1 conecta Indios Verdes y Cuautepec, en la alcaldía Gustavo A. Madero. "
+                "La afectación corresponde a la movilidad del norte de la capital."
+            ),
+            "pending": (
+                "El titular y el índice RSS no indican la hora exacta de suspensión, las estaciones "
+                "afectadas ni cuándo se reanudó el servicio. El estado operativo debe verificarse en "
+                "los avisos del Servicio de Transportes Eléctricos antes de viajar."
+            ),
+            "method": (
+                "Síntesis basada en el titular de N+ y en la ficha oficial del Servicio de Transportes "
+                "Eléctricos sobre la ruta de Línea 1: https://www.ste.cdmx.gob.mx/cablebus. "
+                "No equivale a lectura íntegra de la nota ni confirma el estado actual del servicio."
+            ),
+        }
     if is_huixtla_migrant_caravan(article):
         return {
             "lead": (
@@ -1325,6 +1351,28 @@ def _photo_score(article, photo):
     topic=_photo_fold(photo.get("topic"))
     keywords=_photo_fold(" ".join(str(x) for x in photo.get("keywords",[])))
     context=topic+" "+keywords
+    # No cruzar fotografías de una línea del Cablebús con otra.
+    cablebus_story_line = (
+        re.search(r"\blinea\s+([123])\b", headline)
+        if re.search(r"\bcablebus\b", headline) else None
+    )
+    if cablebus_story_line and re.search(r"\bcablebus\b", context):
+        photo_line = re.search(r"\blinea\s+([123])\b", context)
+        if photo_line and photo_line.group(1) != cablebus_story_line.group(1):
+            return -10000
+        cablebus_station_lines = {
+            "1": ("indios verdes", "ticoman", "la pastora", "campos revolucion", "tlalpexco", "cuautepec"),
+            "2": ("constitucion de 1917", "quetzalcoatl", "las torres buenavista", "xalpa",
+                  "lomas de la estancia", "san miguel teotongo", "santa marta"),
+            "3": ("los pinos", "panteon dolores", "parcur", "colegio de arquitectos",
+                  "cineteca nacional bodega de arte", "vasco de quiroga"),
+        }
+        for line, stations in cablebus_station_lines.items():
+            if line != cablebus_story_line.group(1) and any(
+                re.search(r"\b" + re.escape(station) + r"\b", context)
+                for station in stations
+            ):
+                return -10000
     if photo.get("id") == "contexto_carretera_guerrero" and not (
         re.search(r"\bcarretera\b", headline)
         and re.search(r"\bguerrero\b", headline)
