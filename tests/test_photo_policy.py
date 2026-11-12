@@ -271,11 +271,9 @@ class NewsPhotoPolicyTests(unittest.TestCase):
             topic="Laptop asegurada con cadena y candado; fotografía representativa de seguridad informática",
             keywords=["ciberseguridad", "seguridad digital", "laptop"],
         )
-        patrol = dict(
-            context_photo("patrol"),
-            category="Seguridad",
-            topic="Adquisición patrullas para la Policía 03",
-            keywords=["patrullas", "policía", "seguridad pública"],
+        patrol = next(
+            photo for photo in photos._pool()
+            if photo["id"] == "archivo_seguridad_001"
         )
 
         self.assertEqual(photos._photo_category(article), "Seguridad")
@@ -290,9 +288,11 @@ class NewsPhotoPolicyTests(unittest.TestCase):
             ):
                 stats = photos.assign_photos([article])
 
-        self.assertEqual(article["photo"]["id"], "patrol")
+        self.assertEqual(article["photo"]["id"], "archivo_seguridad_001")
         self.assertEqual(article["photo"]["kind"], "representativa")
-        self.assertEqual(article["photo"]["author"], "Autor de contexto")
+        self.assertEqual(article["photo"]["author"], "Gobierno de la Ciudad de México")
+        self.assertEqual(article["photo"]["license"], "CC BY 4.0")
+        self.assertTrue(article["photo"]["source"].startswith("https://commons.wikimedia.org/wiki/File:"))
         self.assertEqual(stats["assigned"], 1)
 
     def test_cable_theft_is_security_and_requires_security_context_photo(self):
