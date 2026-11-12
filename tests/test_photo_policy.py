@@ -75,6 +75,41 @@ class NewsPhotoPolicyTests(unittest.TestCase):
             with self.subTest(changes=changes):
                 self.assertIsNone(photos.verified_event_photo(ARTICLE, [approval(**changes)]))
 
+    def test_sensitive_media_headlines_never_receive_context_photos(self):
+        titles = (
+            "Caso Vadhir Derbez: Fiscalía CDMX tendría ADN relacionado con denuncia por violación",
+            "Denuncian abuso sexual en una institución",
+            "Investigan agresión sexual en la capital",
+            "Denuncia por acoso sexual en un centro de trabajo",
+            "Alerta por violencia sexual contra menores",
+        )
+        with TemporaryDirectory() as tmp:
+            registry = Path(tmp) / "hechos.json"
+            with patch.object(photos, "_pool", return_value=[context_photo("patrullas")]), patch.object(
+                photos, "VERIFIED_EVENTS", registry
+            ):
+                for title in titles:
+                    with self.subTest(title=title):
+                        article = dict(ARTICLE, title=title, photo=context_photo("foto_anterior"))
+                        photos.assign_photos([article])
+                        self.assertTrue(article.get("sensitive_media"))
+                        self.assertNotIn("photo", article)
+
+    def test_sensitive_media_allows_only_an_exact_approved_event_photo(self):
+        title = "Caso Vadhir Derbez: Fiscalía CDMX tendría ADN relacionado con denuncia por violación"
+        article = dict(ARTICLE, title=title)
+        with TemporaryDirectory() as tmp:
+            registry = Path(tmp) / "hechos.json"
+            registry.write_text(json.dumps({"photos": [
+                approval(article_url=article["url"], article_title=title)
+            ]}), encoding="utf-8")
+            with patch.object(photos, "_pool", return_value=[context_photo("patrullas")]), patch.object(
+                photos, "VERIFIED_EVENTS", registry
+            ):
+                photos.assign_photos([article])
+        self.assertEqual(article["photo"]["kind"], "hecho")
+        self.assertTrue(article["photo"]["verified"])
+
     def test_context_photo_matches_exact_metro_line_not_another_line(self):
         article = dict(ARTICLE, title="Usuarios del Metro caminan por la Línea 12", category="Metro")
         line_two = dict(context_photo("linea_2"), topic="Metro Línea 2 CDMX", category="Metro")
