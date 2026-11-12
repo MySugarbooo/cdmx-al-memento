@@ -42,6 +42,10 @@
 /archivo/index.html
   Cache-Control: no-cache, must-revalidate
 
+# Las fichas generadas pueden recibir correcciones editoriales; revalidar siempre el HTML.
+/articulos/*
+  Cache-Control: no-cache, must-revalidate
+
 /noticias/
   Cache-Control: no-cache, must-revalidate
 
