@@ -47,6 +47,40 @@ class LocalNewsTests(unittest.TestCase):
         self.assertNotIn("photo", result)
         self.assertTrue(result["sensitive_media"])
 
+    def test_san_juan_del_rio_autopista57_is_mobility_and_has_no_police_photo(self):
+        article = {
+            "title": "Toma precauciones si viajas a la CDMX, autopista 57 está detenida",
+            "url": "https://news.google.com/rss/articles/example-autopista57-sjr",
+            "source": "El Sol de México",
+            "date": "2026-11-12",
+            "published_at": "2026-11-12T17:19:57Z",
+            "category": "CDMX",
+            "borough": "",
+            "photo": {
+                "id": "archivo_seguridad_005",
+                "kind": "representativa",
+                "url": "/assets/fotos/archivo_seguridad_005.jpg",
+                "category": "Seguridad",
+                "topic": "Jeep policia cdmx",
+                "author": "Gobierno de la Ciudad de México",
+                "license": "CC BY-SA 4.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+                "source": "https://commons.wikimedia.org/wiki/File:Jeep_policia_cdmx.jpg",
+            },
+        }
+        result = standardize(article)
+        self.assertIsNotNone(result)
+        self.assertEqual(result["category"], "Movilidad")
+        self.assertEqual(result["location"], "San Juan del Río, Querétaro (fuera de CDMX)")
+        self.assertEqual(result["borough"], "")
+        self.assertIn("San Juan del Río", result["brief"]["lead"])
+        self.assertIn("fuera de la Ciudad de México", result["brief"]["context"])
+        self.assertNotIn("kilómetros", result["brief"]["lead"].casefold())
+        self.assertTrue(is_sensitive_media(result))
+        assign_photos([result])
+        self.assertNotIn("photo", result)
+        self.assertTrue(result["sensitive_media"])
+
     def test_distinct_real_photos_for_sixty_news(self):
         groups=["CDMX","Metro","Seguridad","Movilidad","Cultura","Gobierno"]
         items=[self.make(i,groups[i%len(groups)]) for i in range(60)]
