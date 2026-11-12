@@ -15,7 +15,7 @@ class ArticlePhotoTests(unittest.TestCase):
         self.assertNotIn("Monumento_a_Col", page)
         self.assertIn("Sin fotografía del aeropuerto", page)
 
-    def test_external_archive_article_is_not_labeled_as_cdmx(self):
+    def test_article_preserves_exact_confirmed_location(self):
         item = {
             "title": "Asamblea comunitaria determina relevo de autoridades auxiliares en Álvaro Obregón",
             "source": "Meganoticias.mx", "date": "2026-11-01",
@@ -24,10 +24,17 @@ class ArticlePhotoTests(unittest.TestCase):
             "category": "CDMX",
         }
         page = render(item, "69e99bd8aec5a3438db7")
-        self.assertIn("Álvaro Obregón, Juchitán, Oaxaca (fuera de CDMX) · 2026-11-01", page)
+        self.assertIn("<p>Álvaro Obregón, Juchitán, Oaxaca (fuera de CDMX) · 2026-11-01", page)
         self.assertNotIn("<p>CDMX · 2026-11-01", page)
+
         item["location"] = "Coyoacán (mencionada en el titular)"
-        self.assertIn("<p>CDMX · 2026-11-01", render(item, "69e99bd8aec5a3438db7"))
+        page = render(item, "69e99bd8aec5a3438db7")
+        self.assertIn("<p>Coyoacán (mencionada en el titular) · 2026-11-01", page)
+        self.assertNotIn("<p>CDMX · 2026-11-01", page)
+
+        item["location"] = "Gustavo A. Madero, Ciudad de México (Línea 1 del Cablebús)"
+        page = render(item, "69e99bd8aec5a3438db7")
+        self.assertIn("<p>Gustavo A. Madero, Ciudad de México (Línea 1 del Cablebús) · 2026-11-01", page)
 
     def test_local_photo_keeps_credits(self):
         html = render_photo({"category": "Seguridad", "photo": {
