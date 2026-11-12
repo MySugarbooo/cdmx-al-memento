@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-12 18:44 UTC",
+  "updated": "2026-11-12 19:00 UTC",
   "boroughs": [
     {
       "name": "La Magdalena Contreras",
@@ -3105,6 +3105,18 @@
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_azcapotzalco",
+            "kind": "representativa",
+            "url": "/assets/alcaldias/azcapotzalco.jpg",
+            "category": "CDMX",
+            "borough": "Azcapotzalco",
+            "topic": "Parroquia de Santa Catarina, Azcapotzalco",
+            "author": "Ivan alcantara",
+            "license": "CC BY-SA 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:PARROQUIA_DE_SANTA_CATARINA_%28AZCAPOTZALCO%29.jpg"
           }
         },
         {
@@ -4862,6 +4874,27 @@
           "borough": "Coyoacán",
           "location": "Coyoacán (mencionada en el titular)",
           "local_url": "/noticias/?id=4a1948389795410a0a15&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con www.24-horas.mx, el titular publicado es: «Acusan al diputado Ricardo Rubio del PAN de agredir a vecinos durante foro en Coyoacán». La información publicada por www.24-horas.mx aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "commons_106559901",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/1._Coyoac%C3%A1n_Ciudad_de_M%C3%A9xico.jpg/960px-1._Coyoac%C3%A1n_Ciudad_de_M%C3%A9xico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "category": "CDMX",
+            "borough": "",
+            "topic": "1. Coyoacán Ciudad de México",
+            "keywords": [
+              "CDMX"
+            ],
+            "author": "Machristen",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:1._Coyoac%C3%A1n_Ciudad_de_M%C3%A9xico.jpg"
+          },
           "alternate_versions": [
             {
               "title": "Acusan al diputado Ricardo Rubio del PAN de agredir a vecinos durante foro en Coyoacán",
@@ -4896,28 +4929,7 @@
                 "source": "https://commons.wikimedia.org/wiki/File:1._Coyoac%C3%A1n_Ciudad_de_M%C3%A9xico.jpg"
               }
             }
-          ],
-          "brief": {
-            "lead": "De acuerdo con www.24-horas.mx, el titular publicado es: «Acusan al diputado Ricardo Rubio del PAN de agredir a vecinos durante foro en Coyoacán». La información publicada por www.24-horas.mx aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "commons_106559901",
-            "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/1._Coyoac%C3%A1n_Ciudad_de_M%C3%A9xico.jpg/960px-1._Coyoac%C3%A1n_Ciudad_de_M%C3%A9xico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "category": "CDMX",
-            "borough": "",
-            "topic": "1. Coyoacán Ciudad de México",
-            "keywords": [
-              "CDMX"
-            ],
-            "author": "Machristen",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:1._Coyoac%C3%A1n_Ciudad_de_M%C3%A9xico.jpg"
-          }
+          ]
         },
         {
           "title": "PAN y Morena se enfrentan en CDMX por violencia en foro del Programa de Ordenamiento de la ZMVM en Coyoacán",
@@ -9378,24 +9390,6 @@
           "borough": "Iztapalapa",
           "location": "Iztapalapa (mencionada en el titular)",
           "local_url": "/noticias/?id=e3188caba9d1404bbc0e&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con N+, el titular publicado es: «Árbol Cae sobre Negocio de Santa María Aztahuacan, Iztapalapa». La información publicada por N+ aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "alcaldia_iztapalapa",
-            "kind": "representativa",
-            "url": "/assets/alcaldias/iztapalapa.jpg",
-            "category": "CDMX",
-            "borough": "Iztapalapa",
-            "topic": "Vista de Iztapalapa desde el Cerro de la Estrella",
-            "author": "Secretaría de Cultura Ciudad de México from México",
-            "license": "CC BY 2.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-            "source": "https://commons.wikimedia.org/wiki/File:MX_MM_MUSEO_CERRO_DE_LA_ESTRELLA_%2849522225751%29.jpg"
-          },
           "alternate_versions": [
             {
               "title": "Árbol Cae sobre Negocio de Santa María Aztahuacan, Iztapalapa",
@@ -9427,7 +9421,25 @@
                 "source": "https://commons.wikimedia.org/wiki/File:MX_MM_MUSEO_CERRO_DE_LA_ESTRELLA_%2849522225751%29.jpg"
               }
             }
-          ]
+          ],
+          "brief": {
+            "lead": "De acuerdo con N+, el titular publicado es: «Árbol Cae sobre Negocio de Santa María Aztahuacan, Iztapalapa». La información publicada por N+ aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_iztapalapa",
+            "kind": "representativa",
+            "url": "/assets/alcaldias/iztapalapa.jpg",
+            "category": "CDMX",
+            "borough": "Iztapalapa",
+            "topic": "Vista de Iztapalapa desde el Cerro de la Estrella",
+            "author": "Secretaría de Cultura Ciudad de México from México",
+            "license": "CC BY 2.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+            "source": "https://commons.wikimedia.org/wiki/File:MX_MM_MUSEO_CERRO_DE_LA_ESTRELLA_%2849522225751%29.jpg"
+          }
         },
         {
           "title": "Iztapalapa recorta 83% el apoyo a población LGBTTTIQ+",
@@ -9911,6 +9923,24 @@
           "borough": "Iztapalapa",
           "location": "Iztapalapa (mencionada en el titular)",
           "local_url": "/noticias/?id=7536d38ee2db99d187ad&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con N+, el titular publicado es: «Desde el Aire: Obras de Drenaje Afectan Circulación en Iztapalapa, CDMX». La información publicada por N+ aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_iztapalapa",
+            "kind": "representativa",
+            "url": "/assets/alcaldias/iztapalapa.jpg",
+            "category": "CDMX",
+            "borough": "Iztapalapa",
+            "topic": "Vista de Iztapalapa desde el Cerro de la Estrella",
+            "author": "Secretaría de Cultura Ciudad de México from México",
+            "license": "CC BY 2.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+            "source": "https://commons.wikimedia.org/wiki/File:MX_MM_MUSEO_CERRO_DE_LA_ESTRELLA_%2849522225751%29.jpg"
+          },
           "alternate_versions": [
             {
               "title": "Desde el Aire: Obras de Drenaje Afectan Circulación en Iztapalapa, CDMX",
@@ -9942,25 +9972,7 @@
                 "source": "https://commons.wikimedia.org/wiki/File:MX_MM_MUSEO_CERRO_DE_LA_ESTRELLA_%2849522225751%29.jpg"
               }
             }
-          ],
-          "brief": {
-            "lead": "De acuerdo con N+, el titular publicado es: «Desde el Aire: Obras de Drenaje Afectan Circulación en Iztapalapa, CDMX». La información publicada por N+ aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "alcaldia_iztapalapa",
-            "kind": "representativa",
-            "url": "/assets/alcaldias/iztapalapa.jpg",
-            "category": "CDMX",
-            "borough": "Iztapalapa",
-            "topic": "Vista de Iztapalapa desde el Cerro de la Estrella",
-            "author": "Secretaría de Cultura Ciudad de México from México",
-            "license": "CC BY 2.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-            "source": "https://commons.wikimedia.org/wiki/File:MX_MM_MUSEO_CERRO_DE_LA_ESTRELLA_%2849522225751%29.jpg"
-          }
+          ]
         },
         {
           "title": "¡Golpe a Los Tanzanios en Iztapalapa! SSC detiene a cuatro personas y decomisa drogas y armas",
@@ -13238,7 +13250,42 @@
             "license": "CC BY-SA 4.0",
             "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
             "source": "https://commons.wikimedia.org/wiki/File:Jeep_policia_cdmx.jpg"
-          }
+          },
+          "alternate_versions": [
+            {
+              "title": "Video: Así fue el asalto a un banco en Tláhuac, CDMX; hay un detenido",
+              "description": "De acuerdo con Howl.Link, el titular publicado es: «Video: Así fue el asalto a un banco en Tláhuac, CDMX; hay un detenido». Una nota de Howl.Link comunica un caso relacionado con una detención o una presunta conducta delictiva en Tláhuac. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
+              "url": "https://news.google.com/rss/articles/CBMiO0FVX3lxTFBRcDRJVjBoRkVFdENsdGFCZFhGUWpKQk5sNkktUTUwT2JJYUc2bjRkLWFUX3pVRjJyek1J?oc=5",
+              "source": "Howl.Link",
+              "date": "2026-11-09",
+              "published_at": "2026-11-10T01:33:46Z",
+              "category": "CDMX",
+              "borough": "Tláhuac",
+              "location": "Tláhuac (mencionada en el titular)",
+              "local_url": "/noticias/?id=9e2d25f062210c8bf677&mes=2026-11",
+              "brief": {
+                "lead": "De acuerdo con Howl.Link, el titular publicado es: «Video: Así fue el asalto a un banco en Tláhuac, CDMX; hay un detenido». Una nota de Howl.Link comunica un caso relacionado con una detención o una presunta conducta delictiva en Tláhuac. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
+                "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+                "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+              },
+              "photo": {
+                "id": "archivo_seguridad_005",
+                "kind": "representativa",
+                "url": "/assets/fotos/archivo_seguridad_005.jpg",
+                "category": "Seguridad",
+                "borough": "",
+                "topic": "Jeep policia cdmx",
+                "keywords": [
+                  "Seguridad"
+                ],
+                "author": "Gobierno de la Ciudad de México",
+                "license": "CC BY-SA 4.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "https://commons.wikimedia.org/wiki/File:Jeep_policia_cdmx.jpg"
+              }
+            }
+          ]
         },
         {
           "title": "Asalta banco con una réplica de arma en Tláhuac",
@@ -14204,27 +14251,6 @@
           "borough": "Tlalpan",
           "location": "Tlalpan (mencionada en el titular)",
           "local_url": "/noticias/?id=a5f7cdb8f6c2b72f79c4&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con El Heraldo de México, el titular publicado es: «¿Por qué está bloqueada Calzada de Tlalpan hoy 11 de noviembre?». La información publicada por El Heraldo de México aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "commons_16240276",
-            "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Cacerolazo_contra_la_violencia_-_Ciudad_de_M%C3%A9xico_-_2.jpg/960px-Cacerolazo_contra_la_violencia_-_Ciudad_de_M%C3%A9xico_-_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "category": "CDMX",
-            "borough": "",
-            "topic": "Cacerolazo contra la violencia - Ciudad de México - 2",
-            "keywords": [
-              "Ángel de la Independencia Ciudad de México"
-            ],
-            "author": "ProtoplasmaKid",
-            "license": "CC BY-SA 3.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Cacerolazo_contra_la_violencia_-_Ciudad_de_M%C3%A9xico_-_2.jpg"
-          },
           "alternate_versions": [
             {
               "title": "¿Por qué está bloqueada Calzada de Tlalpan hoy 11 de noviembre?",
@@ -14259,7 +14285,28 @@
                 "source": "https://commons.wikimedia.org/wiki/File:Cacerolazo_contra_la_violencia_-_Ciudad_de_M%C3%A9xico_-_2.jpg"
               }
             }
-          ]
+          ],
+          "brief": {
+            "lead": "De acuerdo con El Heraldo de México, el titular publicado es: «¿Por qué está bloqueada Calzada de Tlalpan hoy 11 de noviembre?». La información publicada por El Heraldo de México aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "commons_16240276",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Cacerolazo_contra_la_violencia_-_Ciudad_de_M%C3%A9xico_-_2.jpg/960px-Cacerolazo_contra_la_violencia_-_Ciudad_de_M%C3%A9xico_-_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "category": "CDMX",
+            "borough": "",
+            "topic": "Cacerolazo contra la violencia - Ciudad de México - 2",
+            "keywords": [
+              "Ángel de la Independencia Ciudad de México"
+            ],
+            "author": "ProtoplasmaKid",
+            "license": "CC BY-SA 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Cacerolazo_contra_la_violencia_-_Ciudad_de_M%C3%A9xico_-_2.jpg"
+          }
         },
         {
           "title": "Bloqueos en CDMX hoy 11 de noviembre: ¿cerrarán Reforma y Calzada de Tlalpan?",
@@ -15170,7 +15217,7 @@
     },
     {
       "name": "Venustiano Carranza",
-      "count": 41,
+      "count": 42,
       "articles": [
         {
           "title": "Detienen a tres hombres por retener a un ciudadano en Venustiano Carranza; les aseguran armas y cartuchos",
@@ -15234,6 +15281,24 @@
           "borough": "Venustiano Carranza",
           "location": "Venustiano Carranza (mencionada en el titular)",
           "local_url": "/noticias/?id=892cad89c713faed0439&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con El Universal, el titular publicado es: «Detienen a tres hombres por presunto secuestro en Venustiano Carranza». Una nota de El Universal comunica un caso relacionado con una detención o una presunta conducta delictiva en Venustiano Carranza. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
+            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          }
+        },
+        {
+          "title": "Detienen a tres hombres por presunto secuestro en Venustiano Carranza",
+          "description": "De acuerdo con El Universal, el titular publicado es: «Detienen a tres hombres por presunto secuestro en Venustiano Carranza». Una nota de El Universal comunica un caso relacionado con una detención o una presunta conducta delictiva en Venustiano Carranza. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
+          "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPV2xGTnhfQ3hVcUY0ZmlZRzZOMWFFUUtYQUpQNGQ5VjR5OHExRDR1QzFuNFBXWG5fajBkelRsQjlRWEVKQTE1bFpZMm1mVTAtVDMwUWJ6RndOZVVoMUN3SWxZVk1Hd2lEdENPUkotMnBMaWpOVUQ0cEVVRnIwS3JHaFF1V2pmZVU3ZDcxSjZ3SS15M1FPRWlTNURvVGZhNzYtSFl1UDZ0aWlUc0JBOUFtZzlObWlrTVVUNEtXTlFjX29LekowSUEzNkloRFFtZUQ0U2tGUG95dEMyVllISmFoUWRnSmh4di1fblotNTZn0gHuAUFVX3lxTE9XbEZOeF9DeFVxRjRmaVlHNk4xYUVRS1hBSlA0ZDlWNHk4cTFENHVDMW40UFdYbl9qMGR6VGxCOVFYRUpBMTVsWlkybWZVMC1UMzBRYnpGd05lVWgxQ3dJbFlWTUd3aUR0Q09SSi0ycExpak5VRDRwRVVGcjBLckdoUXVXamZlVTdkNzFKNndJLXkzUU9FaVM1RG9UZmE3Ni1IWXVQNnRpaVRzQkE5QW1nOU5taWtNVVQ0S1dOUWNfb0t6SjBJQTM2SWhEUW1lRDRTa0ZQb3l0QzJWWUhKYWhRZGdKaHh2LV9uWi01Nmc?oc=5",
+          "source": "El Universal",
+          "date": "2026-11-12",
+          "published_at": "2026-11-12T16:52:18Z",
+          "category": "Seguridad",
+          "borough": "Venustiano Carranza",
+          "location": "Venustiano Carranza (mencionada en el titular)",
+          "local_url": "/noticias/?id=867437585a82298cc0d0&mes=2026-11",
           "brief": {
             "lead": "De acuerdo con El Universal, el titular publicado es: «Detienen a tres hombres por presunto secuestro en Venustiano Carranza». Una nota de El Universal comunica un caso relacionado con una detención o una presunta conducta delictiva en Venustiano Carranza. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
             "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
@@ -15902,39 +15967,6 @@
             "license": "CC BY-SA 2.0",
             "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
             "source": "https://commons.wikimedia.org/wiki/File:Palacio_Nacional_Ciudad_de_M%C3%A9xico_City_DF.jpg"
-          }
-        },
-        {
-          "title": "Detienen a hombre por agredir y robar a mujer en Venustiano Carranza",
-          "description": "De acuerdo con Telediario, el titular publicado es: «Detienen a hombre por agredir y robar a mujer en Venustiano Carranza». Una nota de Telediario comunica un caso relacionado con una detención o una presunta conducta delictiva en Venustiano Carranza. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
-          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOVFVlcVRtRVk1eF8wSXNjOHZtbXVITm5jZmdTeF9Kek56Um5SV1dVNnRjSGQwWmNxYjdPSV9qanRHWHE4U2s4bG91N2VjR2R3ek8xNm5ZLW92bENyM3BfLWJocXdvUGxWLVRwamYyTmN5cTdsZFdnRURFR2Z3RzUtTUhPYzZaOFNZNGVRUFhzUkhpRVJBRFlnZjZZbl9SSU5MU2FZalNMZ9IBpwFBVV95cUxQblRPX1hhdFhnMldXelNZaEQyR1JqT1RGWUY0OUc5c1ZvTFBScVkyUUR5Um9WT2NraklDYjA0RDJNQVBIWkVIMl9nWVVaQ181aEFNMTJLVF9tam5HSURwT3ljbHpaS1k0ZHRueWFuZnpFekM4SUNTeG5YVUotQ0pvNVlFdF9Hd1ZsNUtpY3ZXNkFMdHM1VXUzQ3NSR1l1WG11aHF5OTA4MA?oc=5",
-          "source": "Telediario",
-          "date": "2026-11-01",
-          "published_at": "2026-11-01T14:11:04Z",
-          "category": "Seguridad",
-          "borough": "Venustiano Carranza",
-          "location": "Venustiano Carranza (mencionada en el titular)",
-          "local_url": "/noticias/?id=bbf4f1a34f9c8f049d5e&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con Telediario, el titular publicado es: «Detienen a hombre por agredir y robar a mujer en Venustiano Carranza». Una nota de Telediario comunica un caso relacionado con una detención o una presunta conducta delictiva en Venustiano Carranza. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
-            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
-            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "seguridad",
-            "kind": "representativa",
-            "url": "/assets/fotos/seguridad.jpg",
-            "category": "Seguridad",
-            "borough": "",
-            "topic": "Patrulla de Ciudad de México",
-            "keywords": [
-              "Seguridad"
-            ],
-            "author": "RainerRowe",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.es",
-            "source": "https://commons.wikimedia.org/wiki/File:Patrulla_cdmx.jpg"
           }
         }
       ]
