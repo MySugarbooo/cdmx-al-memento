@@ -39,6 +39,39 @@ class ArticlePhotoTests(unittest.TestCase):
         self.assertIn("Autor de prueba", html)
         self.assertIn("CC BY 4.0", html)
 
+    def test_sensitive_story_hides_generic_representative_photo(self):
+        item = {
+            "title": "Caso Vadhir Derbez: Fiscalía CDMX tendría ADN relacionado con denuncia por violación",
+            "category": "CDMX",
+            "local_url": "/noticias/?id=15c774326c62e64d619e&mes=2026-11",
+            "photo": {
+                "url": "/assets/fotos/archivo_seguridad_003.jpg",
+                "kind": "representativa",
+                "author": "Gobierno de la Ciudad de México",
+                "license": "CC BY 4.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+                "source": "https://commons.wikimedia.org/wiki/File:Adquisici%C3%B3n_patrullas_para_la_Polic%C3%ADa_02.jpg",
+            },
+        }
+        self.assertEqual(render_photo(item), "")
+        page = render(item, "15c774326c62e64d619e")
+        self.assertIn("Sin fotografía verificada del hecho", page)
+        self.assertNotIn('src="/assets/fotos/archivo_seguridad_003.jpg"', page)
+
+    def test_sensitive_story_allows_only_verified_event_photo(self):
+        item = {
+            "title": "Denuncia por violación: Fiscalía CDMX investiga",
+            "photo": {
+                "url": "/assets/fotos/archivo_seguridad_003.jpg",
+                "kind": "hecho",
+                "verified": True,
+                "evidence_url": "https://example.org/evidence",
+                "author": "Autor verificado",
+                "license": "CC BY 4.0",
+            },
+        }
+        self.assertIn('src="/assets/fotos/archivo_seguridad_003.jpg"', render_photo(item))
+
     def test_borough_photo(self):
         self.assertIn('src="/assets/alcaldias/azcapotzalco.jpg"',
                       render_photo({"photo": {"url": "/assets/alcaldias/azcapotzalco.jpg"}}))

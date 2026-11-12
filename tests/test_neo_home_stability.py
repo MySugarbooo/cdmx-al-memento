@@ -57,6 +57,17 @@ class StableHomepageTests(unittest.TestCase):
         self.assertIn("Respaldo reciente (hoy o ayer)", script)
         self.assertNotIn("Titulares de respaldo (pueden no estar actualizados)", script)
 
+    def test_sensitive_headlines_do_not_reuse_context_photos(self):
+        script = read("assets/neo-home.js")
+        self.assertIn("const sensitiveMediaTitle=title=>/", script)
+        self.assertIn("violaci[oó]n|abuso sexual|agresi[oó]n sexual|acoso sexual|violencia sexual", script)
+        self.assertIn("sensitiveMediaTitle(a?.title)", script)
+        self.assertIn("if((a?.sensitive_media||sensitiveMediaTitle(a?.title))&&!documented)return null;", script)
+        self.assertIn("const sensitive=a?.sensitive_media===true||sensitiveMediaTitle(a?.title);", script)
+        self.assertIn("if((!p&&!sensitive)||(p&&usedPhotos.has(p.url)))return false;", script)
+        self.assertIn("Sin fotografía verificada del hecho", script)
+        self.assertIn("const candidates=state.stories.map((item,index)=>({item,index})).filter(({item})=>photoInfo(item));", script)
+
     def test_ads_archive_and_caching_unchanged(self):
         home = read("index.html")
         self.assertIn("ca-pub-6521969406386261",home)

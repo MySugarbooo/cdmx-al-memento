@@ -16,12 +16,14 @@ const escapeDate=d=>{const date=new Date(d);return Number.isFinite(date.getTime(
 const articleLink=a=>typeof a.local_url==='string'&&/^\/noticias\/\?/.test(a.local_url)?a.local_url:'/noticias/';
 const safePhotoUrl=u=>/^\/assets\/fotos\/[a-zA-Z0-9_-]+\.jpe?g$/.test(String(u||''))||/^https:\/\/(?:upload|thumb)\.wikimedia\.org\/wikipedia\/commons\//.test(String(u||''));
 // Las fotografías representativas son distintas de las pruebas del acontecimiento.
+// En noticias sobre violencia sexual solo se admite una imagen verificada del hecho.
+const sensitiveMediaTitle=title=>/\b(?:violaci[oó]n|abuso sexual|agresi[oó]n sexual|acoso sexual|violencia sexual)\b/i.test(String(title||''));
 const photoInfo=a=>{
  const p=a?.photo;
  if(!p||!safePhotoUrl(p.url)||!p.author||!p.license||!p.licenseUrl||!p.source)return null;
  const documented=p.kind==='hecho'&&p.verified===true&&Boolean(p.evidence_url);
  if(!documented&&p.kind!=='representativa')return null;
- if(a?.sensitive_media&&!documented)return null;
+ if((a?.sensitive_media||sensitiveMediaTitle(a?.title))&&!documented)return null;
  return p;
 };
 const sizedPhotoUrl=(url,width)=>{
@@ -118,9 +120,22 @@ function editorialDaypart(){
 editorialDaypart();
 setInterval(editorialDaypart,60000);
 function renderHero(){
- const a=state.stories[state.current];if(!a)return;
+ const candidates=state.stories.map((item,index)=>({item,index})).filter(({item})=>photoInfo(item));
+ if(!candidates.length){
+  const img=shell.querySelector('#neo-hero-img');img.removeAttribute('src');img.style.display='none';
+  const title=shell.querySelector('#neo-hero-title');title.textContent='Noticias recientes sin fotografía verificada';title.href='/archivo/';
+  shell.querySelector('#neo-hero-description').textContent='Las noticias sensibles se conservan en el listado; no se muestran imágenes de contexto.';
+  shell.querySelector('#neo-hero-category').textContent='Revisión editorial';
+  shell.querySelector('#neo-hero-date').textContent='';shell.querySelector('#neo-hero-source').textContent='';
+  shell.querySelector('#neo-hero-credit').textContent='Sin fotografía verificada del hecho';
+  shell.querySelector('#neo-hero-like').replaceChildren();shell.querySelector('#neo-hero-next').hidden=true;
+  return;
+ }
+ const selected=candidates.find(({index})=>index>=state.current)||candidates[0];
+ state.current=selected.index;
+ const a=selected.item;
  const img=shell.querySelector('#neo-hero-img');img.fetchPriority='high';img.style.display='';
- shell.querySelector('#neo-hero-next').hidden=state.stories.length<2;
+ shell.querySelector('#neo-hero-next').hidden=candidates.length<2;
  const heroPhoto=photoInfo(a);
  img.alt=heroPhoto?.kind==='hecho'&&heroPhoto.verified===true?'Fotografía verificada del acontecimiento: '+(heroPhoto.topic||a.title):'Imagen representativa sobre '+(a.category||'CDMX')+'. No constituye evidencia del acontecimiento';
  loadPhoto(img,photoUrl(a),720,()=>{
@@ -146,19 +161,25 @@ function renderNews(){
  const out=shell.querySelector('#neo-news-grid');out.replaceChildren();
  for(const a of matched.slice(0,state.visible)){
   const card=el('article','neo-news-card');
-  const thumb=el('a','neo-thumb');thumb.href=articleLink(a);
-  const img=el('img');img.loading='lazy';img.decoding='async';const p=photoInfo(a);
-  img.alt=p?.kind==='hecho'&&p.verified===true?'Fotografía verificada del acontecimiento: '+(p.topic||a.title):'Imagen representativa del tema '+(a.category||'CDMX')+'. No documenta el acontecimiento';
-  loadPhoto(img,photoUrl(a),480,()=>card.remove());
-  const category=el('span','neo-category',a.category||'CDMX');thumb.append(img,category);
+  const p=photoInfo(a);
+  let visual;
+  if(p){
+   const thumb=el('a','neo-thumb');thumb.href=articleLink(a);
+   const img=el('img');img.loading='lazy';img.decoding='async';
+   img.alt=p.kind==='hecho'&&p.verified===true?'Fotografía verificada del acontecimiento: '+(p.topic||a.title):'Imagen representativa del tema '+(a.category||'CDMX')+'. No documenta el acontecimiento';
+   loadPhoto(img,p.url,480,()=>card.remove());
+   thumb.append(img,el('span','neo-category',a.category||'CDMX'));
+   visual=thumb;
+  }else visual=el('span','neo-category',a.category||'CDMX');
   const h=el('h3');const link=el('a','',a.title);link.href=articleLink(a);h.append(link);
   const meta=el('div','neo-card-meta',escapeDate(a.published_at||a.date)+' · '+(a.borough||a.source||'CDMX'));
   const c=photoCredit(a),credit=el('small','neo-credit');
   const shortCredit=c.short;
-  credit.title=c.text;
-  if(/^https:\/\/commons\.wikimedia\.org\/wiki\/File:/.test(c.source)){const l=el('a','',shortCredit+' ↗');l.href=c.source;l.rel='noopener noreferrer';l.target='_blank';credit.append(l)}
+  credit.title=p?c.text:'No se utiliza una fotografía de contexto para este tema sensible.';
+  if(!p)credit.textContent='Sin fotografía verificada del hecho';
+  else if(/^https:\/\/commons\.wikimedia\.org\/wiki\/File:/.test(c.source)){const l=el('a','',shortCredit+' ↗');l.href=c.source;l.rel='noopener noreferrer';l.target='_blank';credit.append(l)}
   else credit.textContent=shortCredit;
-  card.append(thumb,h,meta,credit);
+  card.append(visual,h,meta,credit);
   out.append(card);
  }
  if(!matched.length)out.append(el('p','neo-feed-note',all.length?'No hay noticias que coincidan. Prueba con otra búsqueda.':'No hay noticias de hoy o ayer con fotografías acreditadas. Consulta la hemeroteca.'));const more=shell.querySelector('#neo-news-more');if(more)more.hidden=matched.length<=state.visible;
@@ -242,10 +263,11 @@ function eligibleStories(feed){
  return items.filter(a=>{
   if(!a||typeof a.title!=='string'||!isHomepageRecent(a))return false;
   const p=photoInfo(a);
-  if(!p||usedPhotos.has(p.url))return false;
+  const sensitive=a?.sensitive_media===true||sensitiveMediaTitle(a?.title);
+  if((!p&&!sensitive)||(p&&usedPhotos.has(p.url)))return false;
   if(!(/^https:\/\/news\.google\.com\//.test(a.url||'')||a.editorial_verified===true))return false;
   if(!/^\/noticias\/\?/.test(a.local_url||''))return false;
-  usedPhotos.add(p.url);
+  if(p)usedPhotos.add(p.url);
   return true;
  });
 }
