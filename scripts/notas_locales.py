@@ -927,11 +927,23 @@ def _photo_score(article, photo):
         return -10000
     lgbt_story = bool(re.search(r"\b(?:lgbtttiq|lgbtq?|diversidad sexual)\b", headline))
     lgbt_photo = bool(re.search(r"\b(?:lgbtttiq|lgbtq?|diversidad sexual|marcha del orgullo|orgullo lgbt)\b", context))
+    # Solo las notas de renta/mercado inmobiliario requieren contexto residencial.
+    housing_story = bool(re.search(
+        r"\b(?:rentas?|alquiler|mercado inmobiliario|inmobiliari[oa]s?|precios? de vivienda|compra de vivienda|venta de vivienda)\b",
+        headline,
+    ))
+    housing_photo = bool(re.search(
+        r"\b(?:unidades habitacionales|viviendas?|departamentos?|edificios residenciales|conjuntos habitacionales|condominios?|casa centro historico|casa en la avenida|casa gonzalez de cosio)\b",
+        context,
+    ))
+    housing_units_photo = bool(re.search(r"\bunidades habitacionales\b", context))
     # Una foto de marcha del orgullo solo se admite para una nota del mismo tema;
     # las demás imágenes sensibles siguen bloqueadas como contexto genérico.
     if not topic:
         return -10000
-    if SENSITIVE_CONTEXT.search(topic) and not (lgbt_story and lgbt_photo):
+    if (SENSITIVE_CONTEXT.search(topic)
+            and not (lgbt_story and lgbt_photo)
+            and not (housing_story and housing_units_photo)):
         return -10000
     # El catálogo local no debe ilustrar noticias situadas fuera de la capital.
     # No presentar un templo o calle de CDMX como una finca de Veracruz.
@@ -1079,15 +1091,7 @@ def _photo_score(article, photo):
     ))
     if education_story and not education_photo:
         return -10000
-    # Las notas de renta y vivienda requieren edificios residenciales o unidades habitacionales.
-    housing_story = bool(re.search(
-        r"\b(?:rentas?|alquiler|mercado inmobiliario|inmobiliari[oa]s?|precios? de vivienda|compra de vivienda|venta de vivienda)\b",
-        headline,
-    ))
-    housing_photo = bool(re.search(
-        r"\b(?:unidades habitacionales|viviendas?|departamentos?|edificios residenciales|conjuntos habitacionales|condominios?|casa centro historico|casa en la avenida|casa gonzalez de cosio)\b",
-        context,
-    ))
+    # Las notas de renta y mercado inmobiliario no se ilustran con monumentos.
     if housing_story and not housing_photo:
         return -10000
     themed_category = (
