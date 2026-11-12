@@ -90,7 +90,10 @@ class PublicSeoTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "aviso"):
             validate_article_html(
                 article,
-                "<h1>Detienen a presunto maltratador de animales</h1>".encode("utf-8"),
+                (
+                    "<h1>Detienen a presunto maltratador de animales</h1>"
+                    "<p>Tlalpan · 2026-11-12 · Fuente: Medio</p>"
+                ).encode("utf-8"),
             )
 
     def test_sitemap_requires_unique_same_domain_urls(self):
