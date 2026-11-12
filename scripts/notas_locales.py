@@ -631,6 +631,10 @@ STRICT_PHOTO_TOPICS = (
     # La cobertura de la Anti-Unión requiere contexto de investigación, no ceremonia policial.
     (r"\banti[ -]?union\b",
      r"\b(?:fiscalia|investigacion penal|detencion|ministerio publico|justicia|operativo policial|patrulla)\b"),
+    # Las intervenciones de la FGR en oficinas del INE requieren contexto institucional o de investigación,
+    # no fotografías de graduaciones policiales. Una patrulla puede usarse solo como imagen representativa.
+    (r"\b(?:fgr|fiscalia general de la republica|instituto nacional electoral|oficinas? de administracion del ine)\b",
+     r"\b(?:fgr|fiscalia|ministerio publico|investigacion penal|operativo policial|patrullas?|instituto nacional electoral|oficinas? del ine|edificio del ine)\b"),
     # Una ofrenda monumental no es la cafetería de un museo.
     (r"\bofrenda monumental\b",
      r"\b(?:ofrendas?|altares?|dia de muertos|catrinas?|decoracion funeraria)\b"),

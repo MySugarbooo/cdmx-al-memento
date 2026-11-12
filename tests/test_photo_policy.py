@@ -610,5 +610,36 @@ class NewsPhotoPolicyTests(unittest.TestCase):
         self.assertEqual(article["photo"]["kind"], "representativa")
         self.assertEqual(stats["assigned"], 1)
 
+
+    def test_fgr_ine_intervention_rejects_police_graduation_and_selects_patrol_context(self):
+        title = "FGR interviene en oficinas de Administración del INE en Ciudad de México"
+        article = dict(ARTICLE, title=title, category="Seguridad")
+        graduation = dict(
+            context_photo("commons_75245995"),
+            topic="Graduación de la Policía de la Ciudad de México",
+            category="Seguridad",
+            keywords=["Policía Ciudad de México"],
+        )
+        patrol = dict(
+            context_photo("commons_102129730"),
+            topic="Patrulla cdmx",
+            category="Seguridad",
+            keywords=["Seguridad", "Patrulla CDMX"],
+        )
+
+        self.assertLess(photos._photo_score(article, graduation), 0)
+        self.assertGreaterEqual(photos._photo_score(article, patrol), 0)
+
+        with patch.object(photos, "_pool", return_value=[graduation, patrol]), patch.object(
+            photos,
+            "VERIFIED_EVENTS",
+            Path("/tmp/never-loaded-fgr-ine-photo-registry.json"),
+        ):
+            stats = photos.assign_photos([article])
+
+        self.assertEqual(article["photo"]["id"], "commons_102129730")
+        self.assertEqual(article["photo"]["kind"], "representativa")
+        self.assertEqual(stats["assigned"], 1)
+
 if __name__ == "__main__":
     unittest.main()
