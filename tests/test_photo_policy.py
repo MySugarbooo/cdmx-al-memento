@@ -145,6 +145,47 @@ class NewsPhotoPolicyTests(unittest.TestCase):
             ARTICLE, title="Rescatan perros en un refugio de Tlalpan"
         )))
 
+    def test_homepage_feed_keeps_no_photo_stories_and_verified_event_images(self):
+        sensitive = dict(
+            ARTICLE,
+            title="Detienen a acusado de maltrato animal en Tlalpan",
+            url="https://news.google.com/rss/articles/animal-sensitive",
+            local_url="/noticias/?id=animal-sensitive&mes=2026-11",
+            sensitive_media=True,
+            photo=context_photo("conejo_bosque"),
+        )
+        music = dict(
+            ARTICLE,
+            title="¡Tame Impala regresa a México en 2027! Dos noches en CDMX",
+            url="https://news.google.com/rss/articles/tame-impala",
+            local_url="/noticias/?id=tame-impala&mes=2026-11",
+            photo=dict(
+                context_photo("carnaval_cdmx"),
+                topic="Declaratoria de Carnavales como Patrimonio Cultural Inmaterial de la Ciudad de México 13",
+                keywords=["carnavales", "cultura"],
+            ),
+        )
+        verified = dict(
+            ARTICLE,
+            title="Acontecimiento con fotografía documental verificada",
+            url="https://news.google.com/rss/articles/verified-event",
+            local_url="/noticias/?id=verified-event&mes=2026-11",
+            photo=dict(
+                context_photo("verified_event"),
+                kind="hecho",
+                verified=True,
+                evidence_url="https://ejemplo.org/evidencia",
+            ),
+        )
+        with patch.object(update_news, "dedupe_homepage_events", side_effect=lambda items: items):
+            feed = update_news.build_homepage_feed([sensitive, music, verified])
+
+        self.assertEqual(len(feed), 3)
+        self.assertNotIn("photo", sensitive)
+        self.assertNotIn("photo", music)
+        self.assertEqual(verified["photo"]["kind"], "hecho")
+        self.assertTrue(verified["photo"]["verified"])
+
     def test_sensitive_media_allows_only_an_exact_approved_event_photo(self):
         title = "Caso Vadhir Derbez: Fiscalía CDMX tendría ADN relacionado con denuncia por violación"
         article = dict(ARTICLE, title=title)
