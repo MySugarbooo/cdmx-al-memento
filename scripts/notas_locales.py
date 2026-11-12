@@ -26,7 +26,7 @@ TOPIC_PHOTOS=ROOT/"assets/fotos/contexto-tematico.json"
 VERIFIED_EVENTS=ROOT/"assets/fotos/hechos-verificados.json"
 
 SENSITIVE_MEDIA_TITLE = re.compile(
-    r"\\b(?:violaci[oó]n|abuso sexual|agresi[oó]n sexual|acoso sexual|violencia sexual)\\b",
+    r"\b(?:violaci[oó]n|abuso sexual|agresi[oó]n sexual|acoso sexual|violencia sexual)\b",
     re.IGNORECASE,
 )
 
