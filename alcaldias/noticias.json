@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-12 07:05 UTC",
+  "updated": "2026-11-12 07:36 UTC",
   "boroughs": [
     {
       "name": "La Magdalena Contreras",
@@ -4313,16 +4313,19 @@
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           },
           "photo": {
-            "id": "alcaldia_coyoacan",
+            "id": "archivo_seguridad_002",
             "kind": "representativa",
-            "url": "/assets/alcaldias/coyoacan.jpg",
-            "category": "CDMX",
-            "borough": "Coyoacán",
-            "topic": "Jardín Centenario de Coyoacán",
-            "author": "AlejandroLinaresGarcia",
+            "url": "/assets/fotos/archivo_seguridad_002.jpg",
+            "category": "Seguridad",
+            "borough": "",
+            "topic": "Patrulla vecinal",
+            "keywords": [
+              "Seguridad"
+            ],
+            "author": "Daniel Yonka",
             "license": "CC BY-SA 4.0",
             "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:JardinCentenarioCoyoacan.JPG"
+            "source": "https://commons.wikimedia.org/wiki/File:Patrulla_vecinal.jpg"
           }
         },
         {
@@ -9540,7 +9543,7 @@
     },
     {
       "name": "Miguel Hidalgo",
-      "count": 83,
+      "count": 84,
       "articles": [
         {
           "title": "Mauricio Tabe presenta su quinto informe: presume avances en seguridad y cambios en Miguel Hidalgo",
@@ -10039,6 +10042,24 @@
           ]
         },
         {
+          "title": "Mauricio Tabe advierte que clave para recuperar seguridad en Miguel Hidalgo es “gobernar para todos”",
+          "description": "De acuerdo con Howl.Link, el titular publicado es: «Mauricio Tabe advierte que clave para recuperar seguridad en Miguel Hidalgo es “gobernar para todos”». La información publicada por Howl.Link aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMiO0FVX3lxTE14QVFoa0lWZnREeE41MzE0WVUwOEZNVldqVXBCQmFrVm1URmZOa2gydEkzY3pNdk03ODhZ?oc=5",
+          "source": "Howl.Link",
+          "date": "2026-11-09",
+          "published_at": "2026-11-09T16:40:01Z",
+          "category": "CDMX",
+          "borough": "Miguel Hidalgo",
+          "location": "Miguel Hidalgo (mencionada en el titular)",
+          "local_url": "/noticias/?id=d9c8d9b44acf1356321a&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con Howl.Link, el titular publicado es: «Mauricio Tabe advierte que clave para recuperar seguridad en Miguel Hidalgo es “gobernar para todos”». La información publicada por Howl.Link aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          }
+        },
+        {
           "title": "Denuncian choque de patrulla contra tres autos en Miguel Hidalgo",
           "description": "De acuerdo con Telediario, el titular publicado es: «Denuncian choque de patrulla contra tres autos en Miguel Hidalgo». De acuerdo con Telediario, se informa de un hecho vial relacionado con vehículos en Miguel Hidalgo. El encabezado no permite determinar por sí solo si hubo personas lesionadas o fallecidas. Se requiere consultar la nota original para conocer el punto exacto, las circunstancias y los reportes oficiales, sin atribuir responsabilidades sin pruebas.",
           "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQeU5TcXRNVFZpYks2VGFXMFpQRk9RcnJxdUhka3NrcVphT29zMjJTMFdhOE5zV2g4RzVxdHdZVzQ4bG11X0pJQ2VJQWhhb0xQdk1KQTFyNzF5U09FVWlKNkx5bFdpSXo1eE9NQllidUlvRFZZLXJPTW1DSFF6dVU1M2tLdVlzTVBNUnMzNVp3YTBkaWhhVmdmNHptUXdmODlGV3VOYkRn0gGmAUFVX3lxTFBMaGxUVWlNUUVuMkhNOXRwVGZ4UFFmaXFZZ2FRcVRPN2lYbG05Q2RCektIbmNjX1RZZzRTRXROQ3BMNHJBeUh4Y2ozemN1SWw5X0NmdHR3cjFTaXFWRTE2ZjhRd0FEYTh6N2xkRmNWWnRmcTE0TFpDVXVsOFd4SHY4QmVpSVZueC1MSXI5MjVpSTMxZlc5WWx1VGdkWndaQWdmclhtX2c?oc=5",
@@ -10479,36 +10500,6 @@
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
-        },
-        {
-          "title": "Intención de voto en la elección de alcalde en Miguel Hidalgo, CDMX – Noviembre 2026",
-          "description": "De acuerdo con RUBRUM, el titular publicado es: «Intención de voto en la elección de alcalde en Miguel Hidalgo, CDMX – Noviembre 2026». La información publicada por RUBRUM aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxON2hXUUpXY25ISWVnWUlLV0haclJtMU1vUWk2Q0VyQkIyVGJIQ2VkRzRUVmpPMDljcXFaaDNRT0pYX09zVjMtbTNCS0ZLdlBjUHZkVHlsTG5FMExLZzRlYnpVdzRuX29CQ2ZnRTZnd0RYcTlDVmFMWm5jREN1ZEttcXc2ZjNlcWVOd2xjaDhqa1R1MHFRQkxTLW44WklfUUhWUHdLag?oc=5",
-          "source": "RUBRUM",
-          "date": "2026-11-03",
-          "published_at": "2026-11-04T01:09:33Z",
-          "category": "CDMX",
-          "borough": "Miguel Hidalgo",
-          "location": "Miguel Hidalgo (mencionada en el titular)",
-          "local_url": "/noticias/?id=f27da7fd15db822ea4a9&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con RUBRUM, el titular publicado es: «Intención de voto en la elección de alcalde en Miguel Hidalgo, CDMX – Noviembre 2026». La información publicada por RUBRUM aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "alcaldia_miguel-hidalgo",
-            "kind": "representativa",
-            "url": "/assets/alcaldias/miguel-hidalgo.jpg",
-            "category": "CDMX",
-            "borough": "Miguel Hidalgo",
-            "topic": "Bosque de Chapultepec, alcaldía Miguel Hidalgo",
-            "author": "ProtoplasmaKid",
-            "license": "CC0",
-            "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-            "source": "https://commons.wikimedia.org/wiki/File:Audiorama_de_Chapultepec_1.jpg"
           }
         }
       ]
@@ -11990,27 +11981,6 @@
           "borough": "Tláhuac",
           "location": "Tláhuac (mencionada en el titular)",
           "local_url": "/noticias/?id=3f26024b7e774aea969d&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con TV Azteca, el titular publicado es: «Asalto en banco en Tláhuac, CDMX: Detienen al presunto responsable». Una nota de TV Azteca comunica un caso relacionado con una detención o una presunta conducta delictiva en Tláhuac. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "archivo_seguridad_002",
-            "kind": "representativa",
-            "url": "/assets/fotos/archivo_seguridad_002.jpg",
-            "category": "Seguridad",
-            "borough": "",
-            "topic": "Patrulla vecinal",
-            "keywords": [
-              "Seguridad"
-            ],
-            "author": "Daniel Yonka",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Patrulla_vecinal.jpg"
-          },
           "alternate_versions": [
             {
               "title": "Asalto en banco en Tláhuac, CDMX: Detienen al presunto responsable",
@@ -12078,7 +12048,28 @@
                 "source": "https://commons.wikimedia.org/wiki/File:Patrulla_vecinal.jpg"
               }
             }
-          ]
+          ],
+          "brief": {
+            "lead": "De acuerdo con TV Azteca, el titular publicado es: «Asalto en banco en Tláhuac, CDMX: Detienen al presunto responsable». Una nota de TV Azteca comunica un caso relacionado con una detención o una presunta conducta delictiva en Tláhuac. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "archivo_seguridad_002",
+            "kind": "representativa",
+            "url": "/assets/fotos/archivo_seguridad_002.jpg",
+            "category": "Seguridad",
+            "borough": "",
+            "topic": "Patrulla vecinal",
+            "keywords": [
+              "Seguridad"
+            ],
+            "author": "Daniel Yonka",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Patrulla_vecinal.jpg"
+          }
         },
         {
           "title": "Asalto en banco en Tláhuac, CDMX: Detienen al presunto responsable",
@@ -12091,6 +12082,27 @@
           "borough": "Tláhuac",
           "location": "Tláhuac (mencionada en el titular)",
           "local_url": "/noticias/?id=afe85c05a24d1f3822cc&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con TV Azteca, el titular publicado es: «Asalto en banco en Tláhuac, CDMX: Detienen al presunto responsable». Una nota de TV Azteca comunica un caso relacionado con una detención o una presunta conducta delictiva en Tláhuac. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "seguridad",
+            "kind": "representativa",
+            "url": "/assets/fotos/seguridad.jpg",
+            "category": "Seguridad",
+            "borough": "",
+            "topic": "Patrulla de Ciudad de México",
+            "keywords": [
+              "Seguridad"
+            ],
+            "author": "RainerRowe",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.es",
+            "source": "https://commons.wikimedia.org/wiki/File:Patrulla_cdmx.jpg"
+          },
           "alternate_versions": [
             {
               "title": "Asalto en banco en Tláhuac, CDMX: Detienen al presunto responsable",
@@ -12125,28 +12137,7 @@
                 "source": "https://commons.wikimedia.org/wiki/File:Patrulla_cdmx.jpg"
               }
             }
-          ],
-          "brief": {
-            "lead": "De acuerdo con TV Azteca, el titular publicado es: «Asalto en banco en Tláhuac, CDMX: Detienen al presunto responsable». Una nota de TV Azteca comunica un caso relacionado con una detención o una presunta conducta delictiva en Tláhuac. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "seguridad",
-            "kind": "representativa",
-            "url": "/assets/fotos/seguridad.jpg",
-            "category": "Seguridad",
-            "borough": "",
-            "topic": "Patrulla de Ciudad de México",
-            "keywords": [
-              "Seguridad"
-            ],
-            "author": "RainerRowe",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.es",
-            "source": "https://commons.wikimedia.org/wiki/File:Patrulla_cdmx.jpg"
-          }
+          ]
         },
         {
           "title": "ASÍ FUE EL ASALTO A UN BANCO EN TLÁHUAC, CDMX; HAY UN DETENIDO",
@@ -13777,30 +13768,27 @@
           "source": "Secretaría de Seguridad Ciudadana de la CDMX",
           "date": "2026-11-11",
           "published_at": "2026-11-11T22:47:06Z",
-          "category": "CDMX",
+          "category": "Seguridad",
           "borough": "Venustiano Carranza",
           "location": "Venustiano Carranza (mencionada en el titular)",
           "local_url": "/noticias/?id=27a870997041d9c0abf5&mes=2026-11",
           "brief": {
             "lead": "De acuerdo con Secretaría de Seguridad Ciudadana de la CDMX, el titular publicado es: «2996: En la alcaldía Venustiano Carranza, efectivos de la SSC detuvieron a dos posibles responsables de robar dinero en efectivo de una tienda de conveniencia». Una nota de Secretaría de Seguridad Ciudadana de la CDMX comunica un caso relacionado con una detención o una presunta conducta delictiva en Venustiano Carranza. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           },
           "photo": {
-            "id": "commons_36264294",
+            "id": "archivo_seguridad_016",
             "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Monumento_a_Col%C3%B3n_Paseo_de_la_Reforma_Ciudad_de_M%C3%A9xico_2.jpg/960px-Monumento_a_Col%C3%B3n_Paseo_de_la_Reforma_Ciudad_de_M%C3%A9xico_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "category": "CDMX",
+            "url": "/assets/fotos/archivo_seguridad_016.jpg",
+            "category": "Seguridad",
             "borough": "",
-            "topic": "Monumento a Colón Paseo de la Reforma Ciudad de México 2",
-            "keywords": [
-              "Paseo de la Reforma Ciudad de México"
-            ],
-            "author": "ProtoplasmaKid",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Monumento_a_Col%C3%B3n_Paseo_de_la_Reforma_Ciudad_de_M%C3%A9xico_2.jpg"
+            "topic": "Entrega de Patrullas en Alcaldías 01",
+            "author": "Gobierno de la Ciudad de México",
+            "license": "CC BY 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Entrega_de_Patrullas_en_Alcald%C3%ADas_01.jpg"
           },
           "alternate_versions": [
             {
@@ -13861,6 +13849,39 @@
                 "license": "CC BY-SA 3.0",
                 "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
                 "source": "https://commons.wikimedia.org/wiki/File:Parque_Hundido.jpeg"
+              }
+            },
+            {
+              "title": "2996: En la alcaldía Venustiano Carranza, efectivos de la SSC detuvieron a dos posibles responsables de robar dinero en efectivo de una tienda de conveniencia",
+              "description": "De acuerdo con Secretaría de Seguridad Ciudadana de la CDMX, el titular publicado es: «2996: En la alcaldía Venustiano Carranza, efectivos de la SSC detuvieron a dos posibles responsables de robar dinero en efectivo de una tienda de conveniencia». Una nota de Secretaría de Seguridad Ciudadana de la CDMX comunica un caso relacionado con una detención o una presunta conducta delictiva en Venustiano Carranza. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
+              "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9PcXE4dEVWZmR6TkZUX2x6WjZkNS1KNndXbVB0NmNNSFlkR2RmVmlXV0gtY1RMUXdlNExJalFQMjV4VUV6MlJaWDRDMTRjclB3RFVQaXFsd2JYTnlPM0VlMENpS3FJazgxX3JuV19GM3BMUQ?oc=5",
+              "source": "Secretaría de Seguridad Ciudadana de la CDMX",
+              "date": "2026-11-11",
+              "published_at": "2026-11-11T22:47:06Z",
+              "category": "Seguridad",
+              "borough": "Venustiano Carranza",
+              "location": "Venustiano Carranza (mencionada en el titular)",
+              "local_url": "/noticias/?id=27a870997041d9c0abf5&mes=2026-11",
+              "brief": {
+                "lead": "De acuerdo con Secretaría de Seguridad Ciudadana de la CDMX, el titular publicado es: «2996: En la alcaldía Venustiano Carranza, efectivos de la SSC detuvieron a dos posibles responsables de robar dinero en efectivo de una tienda de conveniencia». Una nota de Secretaría de Seguridad Ciudadana de la CDMX comunica un caso relacionado con una detención o una presunta conducta delictiva en Venustiano Carranza. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
+                "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+                "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+              },
+              "photo": {
+                "id": "commons_36264294",
+                "kind": "representativa",
+                "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Monumento_a_Col%C3%B3n_Paseo_de_la_Reforma_Ciudad_de_M%C3%A9xico_2.jpg/960px-Monumento_a_Col%C3%B3n_Paseo_de_la_Reforma_Ciudad_de_M%C3%A9xico_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+                "category": "CDMX",
+                "borough": "",
+                "topic": "Monumento a Colón Paseo de la Reforma Ciudad de México 2",
+                "keywords": [
+                  "Paseo de la Reforma Ciudad de México"
+                ],
+                "author": "ProtoplasmaKid",
+                "license": "CC BY-SA 4.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "https://commons.wikimedia.org/wiki/File:Monumento_a_Col%C3%B3n_Paseo_de_la_Reforma_Ciudad_de_M%C3%A9xico_2.jpg"
               }
             }
           ]
@@ -14251,19 +14272,19 @@
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           },
           "photo": {
-            "id": "commons_153668358",
+            "id": "seguridad",
             "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Ciudad_de_M%C3%A9xico_-_Colonia_Centro_6990.JPG/960px-Ciudad_de_M%C3%A9xico_-_Colonia_Centro_6990.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "category": "CDMX",
+            "url": "/assets/fotos/seguridad.jpg",
+            "category": "Seguridad",
             "borough": "",
-            "topic": "Ciudad de México - Colonia Centro 6990",
+            "topic": "Patrulla de Ciudad de México",
             "keywords": [
-              "Centro Histórico Ciudad de México"
+              "Seguridad"
             ],
-            "author": "Phyrexian",
+            "author": "RainerRowe",
             "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Ciudad_de_M%C3%A9xico_-_Colonia_Centro_6990.JPG"
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.es",
+            "source": "https://commons.wikimedia.org/wiki/File:Patrulla_cdmx.jpg"
           }
         },
         {
@@ -14388,14 +14409,19 @@
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           },
           "photo": {
-            "id": "alcaldia_venustiano-carranza",
-            "url": "/assets/alcaldias/venustiano-carranza.jpg",
-            "category": "CDMX",
-            "borough": "Venustiano Carranza",
-            "topic": "Palacio de Lecumberri, hoy Archivo General de la Nación",
-            "author": "Raymundo Perera",
-            "license": "CC BY-SA 3.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Palacio_de_Lecumberri.jpg"
+            "id": "archivo_seguridad_005",
+            "kind": "representativa",
+            "url": "/assets/fotos/archivo_seguridad_005.jpg",
+            "category": "Seguridad",
+            "borough": "",
+            "topic": "Jeep policia cdmx",
+            "keywords": [
+              "Seguridad"
+            ],
+            "author": "Gobierno de la Ciudad de México",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Jeep_policia_cdmx.jpg"
           }
         },
         {
