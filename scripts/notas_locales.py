@@ -881,6 +881,12 @@ def _photo_score(article, photo):
         r"\b(?:delitos? ciberneticos|ciberdelitos|fraudes? ciberneticos?|fraudes? digitales?|delitos? digitales?|ciberataques?|phishing|policia cibernetica)\b",
         headline,
     ))
+    cybersecurity_photo = bool(re.search(
+        r"\b(?:ciberseguridad|seguridad digital|seguridad informatica|phishing)\b",
+        context,
+    ))
+    if cybersecurity_photo and not digital_story:
+        return -10000
     digital_context = bool(re.search(
         r"\b(?:ciberseguridad|seguridad digital|seguridad informatica|internet|computadoras?|laptops?|ordenadores?|tecnologia|phishing|fraudes?|redes|dispositivos?)\b",
         context,

@@ -434,6 +434,11 @@ class NewsPhotoPolicyTests(unittest.TestCase):
                 photo("cyber_laptop", "Laptop asegurada con cadena y candado; fotografía representativa de seguridad informática", "Seguridad"),
             ),
             (
+                "Buen Fin 2026 en CDMX: así será el operativo de seguridad y cómo pedir escolta bancaria gratuita",
+                "Seguridad",
+                photo("cyber_laptop", "Laptop asegurada con cadena y candado; fotografía representativa de seguridad informática", "Seguridad", ("ciberseguridad", "seguridad digital")),
+            ),
+            (
                 tabe_title, update_news.category_by_headline(tabe_title, "Seguridad"),
                 photo("firefighters", "Equipo de trabajo de los Bomberos CDMX", "Seguridad"),
             ),
@@ -475,6 +480,10 @@ class NewsPhotoPolicyTests(unittest.TestCase):
             (
                 "Decomisan 3 toneladas de autopartes en Alcaldía Cuauhtémoc", "Seguridad",
                 photo("police_patrol", "Patrulla de la Policía de la Ciudad de México", "Seguridad", ("policía", "patrulla")),
+            ),
+            (
+                "Alerta por fraude cibernético en compras por internet en CDMX", "Seguridad",
+                photo("cyber_laptop", "Laptop asegurada con cadena y candado; fotografía representativa de seguridad informática", "Seguridad", ("ciberseguridad", "seguridad digital")),
             ),
             (
                 "Tabe en Miguel Hidalgo: cinco años de cambio", "Gobierno",
