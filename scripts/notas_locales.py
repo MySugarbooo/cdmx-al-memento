@@ -968,7 +968,10 @@ def _photo_score(article, photo):
         r"\b(?:bomberos?|incendios?|explosion(?:es)?|pipas? de gas|gas lp|tanques? de gas|proteccion civil|rescate|emergencias?|siniestros?)\b",
         headline,
     ))
-    if emergency_photo and not emergency_story:
+    # «Rescate de unidades habitacionales» describe rehabilitación de vivienda,
+    # no una escena de emergencia; admitirlo solo para notas del mercado inmobiliario.
+    if (emergency_photo and not emergency_story
+            and not (housing_story and housing_units_photo)):
         return -10000
     source=_photo_fold(article.get("source"))
     police_operation_story = bool(

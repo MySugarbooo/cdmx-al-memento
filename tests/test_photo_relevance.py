@@ -526,6 +526,12 @@ class PhotoRelevanceTests(unittest.TestCase):
         self.assertGreaterEqual(_photo_score(education_article, school), 0)
         self.assertLess(_photo_score(housing_article, landmark), 0)
         self.assertGreaterEqual(_photo_score(housing_article, housing), 0)
+        emergency = {
+            "category": "Seguridad",
+            "topic": "Equipo de trabajo de los Bomberos CDMX IMG 2922",
+            "keywords": ["Bomberos Ciudad de México"],
+        }
+        self.assertLess(_photo_score(housing_article, emergency), 0)
 
         assign_photos([education_article, housing_article])
         self.assertRegex(education_article["photo"]["topic"].casefold(), r"escuela")
