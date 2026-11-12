@@ -301,6 +301,33 @@ def summarize(article):
     context=theme["importance"]
     pending=theme["verify"]+" El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar."
     method="Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+    if (
+        source.casefold() == "la jornada"
+        and fold(title) == fold("CDMX: 95% de la población no puede comprar vivienda")
+    ):
+        return {
+            "lead": (
+                "El reportaje de La Jornada precisa que el 95% de la población no puede adquirir "
+                "la oferta de vivienda de alto costo en la zona central de CDMX; no se refiere a "
+                "toda la oferta habitacional de la ciudad. Cita el Indicador Banorte de Precios "
+                "de la Vivienda (Inbaprevi): $59,829 por m² en CDMX frente a $32,495 a nivel "
+                "nacional, y recoge análisis sobre especulación del suelo y desplazamiento residencial."
+            ),
+            "context": (
+                "El encarecimiento del suelo y de la vivienda condiciona el acceso a la compra "
+                "y la permanencia de residentes en colonias centrales."
+            ),
+            "pending": (
+                "Las cifras son las citadas por La Jornada a partir del Inbaprevi y del análisis "
+                "de Monopolio; deben leerse con el indicador y el periodo que menciona el reportaje. "
+                "El 95% alude a la oferta cara de la zona central, no a toda vivienda disponible en CDMX."
+            ),
+            "method": (
+                "Síntesis editorial propia basada en el reportaje completo de La Jornada, publicado "
+                "el 12 de noviembre de 2026; no constituye una verificación independiente de los "
+                "indicadores ni de las declaraciones."
+            ),
+        }
     if (article.get("date") in {"2026-11-11", "2026-11-12"}
             and re.search(r"\bpipa\b", title.casefold())
             and re.search(r"m[eé]xico[- ]pachuca", title.casefold())):
