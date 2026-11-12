@@ -22,7 +22,7 @@ from pathlib import Path
 from zoneinfo import ZoneInfo
 
 from scripts.analisis_editorial import build_editorial
-from scripts.notas_locales import local_link, summarize, assign_photos, _photo_score, is_sensitive_media, SENSITIVE_MEDIA_TITLE
+from scripts.notas_locales import local_link, summarize, assign_photos, _photo_score, is_sensitive_media, is_coyotepec_highway_crash, SENSITIVE_MEDIA_TITLE
 
 ROOT = Path(__file__).resolve().parent
 DEST = ROOT / "news.json"
@@ -487,6 +487,9 @@ def standardize(article):
     except ValueError:
         return None
     borough, location = identify_location(title, date)
+    if is_coyotepec_highway_crash({"title": title, "source": source, "date": date}):
+        borough = ""
+        location = "Coyotepec, Estado de México (fuera de CDMX)"
     category = article.get("category") if article.get("category") in GENERAL_FEEDS else "CDMX"
     category = category_by_headline(title, category, source)
     result = {
