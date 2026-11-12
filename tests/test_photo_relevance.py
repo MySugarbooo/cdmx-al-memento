@@ -109,7 +109,7 @@ class PhotoRelevanceTests(unittest.TestCase):
         self.assertEqual(article["photo"]["author"], "Torsten Bolten, AFpix.de")
         self.assertEqual(article["photo"]["license"], "CC BY-SA 3.0")
 
-    def test_gas_tanker_rollovers_are_mobility_and_use_firefighter_context(self):
+    def test_gas_tanker_rollovers_are_mobility_and_reject_cdmx_photos_outside_cdmx(self):
         titles = [
             "Vuelca pipa de gas en la México-Pachuca; hay al menos 2 lesionados y caos vial con dirección a la CDMX",
             "Vuelca pipa de gas LP en la México-Pachuca y colapsa el tráfico con dirección a CDMX",
@@ -127,6 +127,7 @@ class PhotoRelevanceTests(unittest.TestCase):
             "category": "CDMX",
         })
         self.assertEqual(article["category"], "Movilidad")
+        self.assertEqual(article["location"], "Ecatepec, Estado de México (fuera de CDMX)")
         self.assertIn("una pipa de gas", article["brief"]["lead"])
         self.assertIn("al menos dos personas lesionadas", article["brief"]["lead"])
         self.assertEqual(_photo_category(article), "Seguridad")
@@ -147,13 +148,9 @@ class PhotoRelevanceTests(unittest.TestCase):
         }
         self.assertLess(_photo_score(article, police_graduation), 0)
         self.assertLess(_photo_score(article, metrobus), 0)
-        self.assertGreaterEqual(_photo_score(article, firefighters), 0)
+        self.assertLess(_photo_score(article, firefighters), 0)
         assign_photos([article])
-        self.assertIn("photo", article)
-        photo_context = (article["photo"]["topic"] + " " +
-                         " ".join(article["photo"].get("keywords", []))).casefold()
-        self.assertRegex(photo_context, r"bomberos|pipas?|gas|tanques?|cilindros?|fugas?|explosiones?")
-        self.assertEqual(article["photo"]["kind"], "representativa")
+        self.assertNotIn("photo", article)
 
     def test_chinampas_single_day_and_license_photos_need_matching_topics(self):
         chinampas = {
