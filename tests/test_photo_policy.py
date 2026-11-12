@@ -569,6 +569,46 @@ class NewsPhotoPolicyTests(unittest.TestCase):
         self.assertEqual(article["photo"]["kind"], "representativa")
         self.assertEqual(stats["assigned"], 1)
 
+    def test_delivery_rider_blockade_uses_credited_motorcycle_courier_photo(self):
+        title = "Repartidores de aplicaciones bloquean calles de CDMX contra nuevas placas y licencias"
+        article = dict(ARTICLE, title=title, category="Movilidad")
+        generic_protest = dict(
+            context_photo("generic_cacerolazo"),
+            topic="Cacerolazo contra la violencia - Ciudad de México - 2",
+            category="CDMX",
+            keywords=["cacerolazo", "protesta", "manifestación"],
+        )
+        courier = dict(
+            context_photo("contexto_repartidores_motocicleta_cdmx"),
+            topic="Carteros en motocicleta del Servicio Postal Mexicano, Ciudad de México (2013)",
+            category="Movilidad",
+            keywords=["repartidores de aplicaciones", "motocicletas", "mensajeros", "delivery"],
+            author="Palacio Postal",
+            license="CC BY-SA 4.0",
+            licenseUrl="https://creativecommons.org/licenses/by-sa/4.0",
+            source="https://commons.wikimedia.org/wiki/File:Carteros_en_motocicleta_del_Servicio_Postal_Mexicano,_2013.jpg",
+        )
+        self.assertLess(photos._photo_score(article, generic_protest), 0)
+        self.assertGreaterEqual(photos._photo_score(article, courier), 0)
+        with patch.object(photos, "_pool", return_value=[generic_protest, courier]), patch.object(
+            photos, "VERIFIED_EVENTS", Path("/tmp/never-loaded-delivery-photo-registry.json")
+        ):
+            stats = photos.assign_photos([article])
+        self.assertEqual(article["photo"]["id"], "contexto_repartidores_motocicleta_cdmx")
+        self.assertEqual(article["photo"]["kind"], "representativa")
+        self.assertEqual(article["photo"]["author"], "Palacio Postal")
+        self.assertEqual(article["photo"]["license"], "CC BY-SA 4.0")
+        self.assertEqual(stats["assigned"], 1)
+
+        catalog = json.loads((photos.ROOT / "assets/fotos/contexto-tematico.json").read_text(encoding="utf-8"))
+        stored = next(item for item in catalog["photos"] if item["id"] == "contexto_repartidores_motocicleta_cdmx")
+        self.assertEqual(stored["author"], "Palacio Postal")
+        self.assertEqual(stored["license"], "CC BY-SA 4.0")
+        self.assertTrue(stored["source"].startswith("https://commons.wikimedia.org/wiki/File:"))
+        pooled = next(item for item in photos._pool() if item["id"] == "contexto_repartidores_motocicleta_cdmx")
+        self.assertEqual(pooled["author"], "Palacio Postal")
+        self.assertEqual(pooled["license"], "CC BY-SA 4.0")
+
 
 if __name__ == "__main__":
     unittest.main()

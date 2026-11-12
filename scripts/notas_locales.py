@@ -911,6 +911,17 @@ def _photo_score(article, photo):
     # Un coro o una fotografía musical no representa asuntos ajenos a la música.
     if music_photo and not music_story:
         return -10000
+    # Un bloqueo de repartidores requiere una imagen de mensajería o reparto en motocicleta.
+    rider_story = bool(re.search(
+        r"\b(?:repartidores?|conductores? de aplicacion)\b",
+        headline_for_photos,
+    ))
+    rider_photo = bool(re.search(
+        r"\b(?:repartidores?|conductores? de aplicacion|carteros?|mensajeros?|motocicletas?|motociclistas?|motos?|servicio postal mexicano|delivery|reparto)\b",
+        context,
+    ))
+    if rider_story and not rider_photo:
+        return -10000
     weather_story = bool(re.search(r"\brachas?\b", headline))
     weather_photo = bool(re.search(
         r"\b(?:viento|rachas?|meteorologia|clima|nubes?|cielo nublado|tormenta|temperatura|frio)\b",
