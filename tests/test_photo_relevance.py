@@ -582,7 +582,7 @@ class PhotoRelevanceTests(unittest.TestCase):
 
         # La asequibilidad y la compra de vivienda también exigen contexto residencial.
         palace = next(p for p in pool if "palacio nacional" in p["topic"].casefold())
-        historic_house = next(p for p in pool if "casa centro historico" in p["topic"].casefold())
+        historic_house = next(p for p in pool if "casa centro historico" in news.fold(p["topic"]))
         purchase_article = news.standardize({
             "title": "CDMX: 95% de la población no puede comprar vivienda",
             "url": "https://news.google.com/rss/articles/housing-affordability-photo-regression",
