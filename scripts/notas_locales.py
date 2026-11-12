@@ -783,14 +783,20 @@ def _photo_score(article, photo):
     topic=_photo_fold(photo.get("topic"))
     keywords=_photo_fold(" ".join(str(x) for x in photo.get("keywords",[])))
     context=topic+" "+keywords
+    lgbt_story = bool(re.search(r"\b(?:lgbtttiq|lgbtq?|diversidad sexual)\b", headline))
+    lgbt_photo = bool(re.search(r"\b(?:lgbtttiq|lgbtq?|diversidad sexual|marcha del orgullo|orgullo lgbt)\b", context))
+    # Una foto de marcha del orgullo solo se admite para una nota del mismo tema;
+    # las demás imágenes sensibles siguen bloqueadas como contexto genérico.
+    if not topic:
+        return -10000
+    if SENSITIVE_CONTEXT.search(topic) and not (lgbt_story and lgbt_photo):
+        return -10000
     # El catálogo local no debe ilustrar noticias situadas fuera de la capital.
     # No presentar un templo o calle de CDMX como una finca de Veracruz.
     if "(fuera de CDMX)" in str(article.get("location") or ""):
         return -10000
     category=_photo_category(article)
     photo_category=str(photo.get("category") or "CDMX")
-    if not topic or SENSITIVE_CONTEXT.search(topic):
-        return -10000
     # En robos, asaltos y extorsiones, la coincidencia de alcaldía no basta:
     # exigir una imagen con contexto de seguridad antes de puntuar el lugar.
     crime_story = bool(re.search(
@@ -837,8 +843,6 @@ def _photo_score(article, photo):
         r"\b(?:jauria|sloopy|lobito|perros?|perritos?|mascotas?)\b", headline
     ))
     animal_photo = bool(re.search(r"\b(?:perros?|caninos?|mascotas?)\b", context))
-    lgbt_story = bool(re.search(r"\b(?:lgbtttiq|lgbtq?|diversidad sexual)\b", headline))
-    lgbt_photo = bool(re.search(r"\b(?:lgbtttiq|lgbtq?|diversidad sexual|marcha del orgullo|orgullo lgbt)\b", context))
     if lgbt_story and not lgbt_photo:
         return -10000
     protest_story = bool(

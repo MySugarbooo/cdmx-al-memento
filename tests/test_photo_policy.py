@@ -338,6 +338,8 @@ class NewsPhotoPolicyTests(unittest.TestCase):
         self.assertEqual(pride["license"], "CC BY-SA 4.0")
         self.assertLess(photos._photo_score(article, metro), 0)
         self.assertGreaterEqual(photos._photo_score(article, pride), 0)
+        unrelated = dict(ARTICLE, title="Retrasos en el Metro de Iztapalapa", category="Metro", borough="Iztapalapa")
+        self.assertLess(photos._photo_score(unrelated, pride), 0)
 
         with patch.object(photos, "_pool", return_value=[metro, pride]), patch.object(
             photos,
