@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-12 06:35 UTC",
+  "updated": "2026-11-12 06:42 UTC",
   "articles": [
     {
       "title": "Diputada Miriam Saldaña propone revisar las tuberías antes de pavimentar en la CDMX",
@@ -32,6 +32,39 @@
         "license": "CC BY 2.0",
         "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
         "source": "https://commons.wikimedia.org/wiki/File:DECLARATORIA_DE_CARNAVALES_COMO_PATRIMONIO_CULTURAL_INMATERIAL_DE_LA_CIUDAD_DE_M%C3%89XICO_19.jpg"
+      }
+    },
+    {
+      "title": "Buen Fin 2026 en CDMX: desplegarán más de 16 mil policías para vigilar zonas comerciales",
+      "description": "De acuerdo con El Sol de México, el titular publicado es: «Buen Fin 2026 en CDMX: desplegarán más de 16 mil policías para vigilar zonas comerciales». La información publicada por El Sol de México aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNdnh6QUF1VFlqQVpCLVlWYnJTcXpqWFF2azAwajg2WEZScVBBNjNXWW04Tkd4UExMd1hzc0I3VG1ldUVpN2tvdXlUaC1xSjRrRGQwb3JyVUhvWFcxdlpTaHhfNU90MDN1QUI2M09vMnEycFdyVTZtYmZSOV95eWZheHNPX2ViWkxHM2xQYjZacmlHTkFFR1Y1U1B3dXNsWGpEOEk1cm9RaHQxQnJnc0dUcDhUYnN5d1NKR1RJWVlPdm5qZzhpbWlsQTE5dXNVUy10?oc=5",
+      "source": "El Sol de México",
+      "date": "2026-11-12",
+      "published_at": "2026-11-12T06:21:45Z",
+      "category": "Seguridad",
+      "borough": "",
+      "location": "Ciudad de México (sin alcaldía identificada)",
+      "local_url": "/noticias/?id=e1694ad381aaaae7c750&mes=2026-11",
+      "brief": {
+        "lead": "De acuerdo con El Sol de México, el titular publicado es: «Buen Fin 2026 en CDMX: desplegarán más de 16 mil policías para vigilar zonas comerciales». La información publicada por El Sol de México aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+        "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+        "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "commons_75245984",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Graduaci%C3%B3n_de_la_Polic%C3%ADa_de_la_Ciudad_de_M%C3%A9xico_-i---i-_%2836371637974%29.jpg/960px-Graduaci%C3%B3n_de_la_Polic%C3%ADa_de_la_Ciudad_de_M%C3%A9xico_-i---i-_%2836371637974%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "category": "Seguridad",
+        "borough": "",
+        "topic": "Graduación de la Policía de la Ciudad de México -i---i- (36371637974)",
+        "keywords": [
+          "Policía Ciudad de México"
+        ],
+        "author": "Gobierno CDMX",
+        "license": "CC0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "source": "https://commons.wikimedia.org/wiki/File:Graduaci%C3%B3n_de_la_Polic%C3%ADa_de_la_Ciudad_de_M%C3%A9xico_-i---i-_(36371637974).jpg"
       }
     },
     {
@@ -283,19 +316,19 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "commons_157006042",
+        "id": "seguridad",
         "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Nuevas_patrullas_para_Cuajimalpa_06.jpg/960px-Nuevas_patrullas_para_Cuajimalpa_06.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "url": "/assets/fotos/seguridad.jpg",
         "category": "Seguridad",
         "borough": "",
-        "topic": "Nuevas patrullas para Cuajimalpa 06",
+        "topic": "Patrulla de Ciudad de México",
         "keywords": [
-          "Secretaría de Seguridad Ciudadana CDMX patrulla"
+          "Seguridad"
         ],
-        "author": "Gobierno de la Ciudad de México",
-        "license": "CC BY 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Nuevas_patrullas_para_Cuajimalpa_06.jpg"
+        "author": "RainerRowe",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.es",
+        "source": "https://commons.wikimedia.org/wiki/File:Patrulla_cdmx.jpg"
       }
     },
     {
@@ -953,41 +986,8 @@
       }
     },
     {
-      "title": "Buen Fin 2026 en CDMX: desplegarán más de 16 mil policías para vigilar zonas comerciales",
-      "description": "De acuerdo con El Sol de México, el titular publicado es: «Buen Fin 2026 en CDMX: desplegarán más de 16 mil policías para vigilar zonas comerciales». La información publicada por El Sol de México aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNdnh6QUF1VFlqQVpCLVlWYnJTcXpqWFF2azAwajg2WEZScVBBNjNXWW04Tkd4UExMd1hzc0I3VG1ldUVpN2tvdXlUaC1xSjRrRGQwb3JyVUhvWFcxdlpTaHhfNU90MDN1QUI2M09vMnEycFdyVTZtYmZSOV95eWZheHNPX2ViWkxHM2xQYjZacmlHTkFFR1Y1U1B3dXNsWGpEOEk1cm9RaHQxQnJnc0dUcDhUYnN5d1NKR1RJWVlPdm5qZzhpbWlsQTE5dXNVUy10?oc=5",
-      "source": "El Sol de México",
-      "date": "2026-11-11",
-      "published_at": "2026-11-12T00:42:40Z",
-      "category": "Seguridad",
-      "borough": "",
-      "location": "Ciudad de México (sin alcaldía identificada)",
-      "local_url": "/noticias/?id=e1694ad381aaaae7c750&mes=2026-11",
-      "brief": {
-        "lead": "De acuerdo con El Sol de México, el titular publicado es: «Buen Fin 2026 en CDMX: desplegarán más de 16 mil policías para vigilar zonas comerciales». La información publicada por El Sol de México aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-        "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
-        "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "commons_75245984",
-        "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Graduaci%C3%B3n_de_la_Polic%C3%ADa_de_la_Ciudad_de_M%C3%A9xico_-i---i-_%2836371637974%29.jpg/960px-Graduaci%C3%B3n_de_la_Polic%C3%ADa_de_la_Ciudad_de_M%C3%A9xico_-i---i-_%2836371637974%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "category": "Seguridad",
-        "borough": "",
-        "topic": "Graduación de la Policía de la Ciudad de México -i---i- (36371637974)",
-        "keywords": [
-          "Policía Ciudad de México"
-        ],
-        "author": "Gobierno CDMX",
-        "license": "CC0",
-        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
-        "source": "https://commons.wikimedia.org/wiki/File:Graduaci%C3%B3n_de_la_Polic%C3%ADa_de_la_Ciudad_de_M%C3%A9xico_-i---i-_(36371637974).jpg"
-      }
-    },
-    {
-      "title": "Hemos cambiado y mejorado el rostrao de Coyoacán: Giovani Gutierrez",
-      "description": "De acuerdo con CDMX Magacín, el titular publicado es: «Hemos cambiado y mejorado el rostrao de Coyoacán: Giovani Gutierrez». La información publicada por CDMX Magacín aborda un asunto que este portal clasifica como Gobierno. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "title": "Hemos cambiado y mejorado el rostro de Coyoacán: Giovani Gutiérrez",
+      "description": "De acuerdo con CDMX Magacín, el titular publicado es: «Hemos cambiado y mejorado el rostro de Coyoacán: Giovani Gutiérrez». La información publicada por CDMX Magacín aborda un asunto que este portal clasifica como Gobierno. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
       "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxONFFaWGlob2Y3M1NJVXdjdGROZXhWYkFDOFJHTjg2a2lTeEQ5cDNVTHdiRW5Kc1ZxYkNDNURZYVFFVmxxZmFnS2s5VmNpdEZ5UHcwRExnWm5lbGMzd1o1ZHdpaDZFVHprTzFNZFBqMVhXck42OHhPdmVkNFJfeEdYNDJEUU51QXJVcHp5S3Vn?oc=5",
       "source": "CDMX Magacín",
       "date": "2026-11-11",
@@ -997,7 +997,7 @@
       "location": "Coyoacán (mencionada en el titular)",
       "local_url": "/noticias/?id=f903282ce282ac7aaf21&mes=2026-11",
       "brief": {
-        "lead": "De acuerdo con CDMX Magacín, el titular publicado es: «Hemos cambiado y mejorado el rostrao de Coyoacán: Giovani Gutierrez». La información publicada por CDMX Magacín aborda un asunto que este portal clasifica como Gobierno. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+        "lead": "De acuerdo con CDMX Magacín, el titular publicado es: «Hemos cambiado y mejorado el rostro de Coyoacán: Giovani Gutiérrez». La información publicada por CDMX Magacín aborda un asunto que este portal clasifica como Gobierno. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
         "context": "Las decisiones administrativas pueden influir en servicios, trámites y derechos; conviene conocer sus condiciones y a quiénes afectan.",
         "pending": "Es indispensable consultar los acuerdos, comunicados o documentos oficiales antes de dar una medida por vigente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
