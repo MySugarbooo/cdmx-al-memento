@@ -64,12 +64,24 @@ def local_link(article):
     return "/noticias/?id="+token+"&mes="+date
 
 def _reported_angle(article):
-    """Ideas específicas y atribuibles únicamente a lo expresado en el título."""
+    """Ideas específicas atribuidas al titular o a un comunicado oficial cotejado."""
     title=str(article.get("title") or "")
     t=title.casefold()
     source=str(article.get("source") or "el medio de origen")
     borough=str(article.get("borough") or "")
     zone=(" en "+borough) if borough else " en la capital"
+
+    # La ficha de la SSC se cotejó con su comunicado oficial del 11 de noviembre.
+    # Atribuir cifras y calendario a la dependencia; no presentarlo como balance de incidentes.
+    if ("buen fin 2026" in t and "ssc" in t and "operativo" in t and "polic" in t):
+        return (
+            f"El comunicado oficial de {source} anuncia un operativo preventivo con 16,300 policías "
+            "en las 16 alcaldías, del 13 al 17 de noviembre de 2026. El despliegue comenzará "
+            "a las 05:00 del viernes 13 y continuará hasta el martes 17, al término de las "
+            "actividades comerciales de cada jornada. La vigilancia se concentrará en zonas "
+            "comerciales, bancos, nodos de transporte y corredores de alta afluencia; es un "
+            "despliegue anunciado, no un balance de incidentes."
+        )
 
     if ("lgbtttiq" in t and "apoyo" in t
             and re.search(r"\b(?:recorta|recorte|reduce|reducen|reduccion)\b", t)
@@ -251,7 +263,11 @@ def summarize(article):
     context=theme["importance"]
     pending=theme["verify"]+" El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar."
     method="Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-    if ("lgbtttiq" in title.casefold() and source.casefold().replace(" ", "") in {"24-horas", "24horas"}):
+    if ("buen fin 2026" in title.casefold() and "ssc" in title.casefold()
+            and "seguridad ciudadana" in source.casefold()):
+        method="Síntesis editorial basada en el comunicado oficial de la SSC publicado el 11 de noviembre de 2026; cifras y calendario atribuidos a la dependencia, sin verificación independiente."
+        pending="El horario, los puntos de vigilancia y cualquier ajuste del operativo deben confirmarse en los avisos de la SSC durante el Buen Fin. El comunicado describe un despliegue previsto; no es un balance de incidentes."
+    elif ("lgbtttiq" in title.casefold() and source.casefold().replace(" ", "") in {"24-horas", "24horas"}):
         method="Síntesis editorial basada en el cuerpo de la nota de 24-horas; los datos se atribuyen al medio y a los lineamientos que cita, sin verificación independiente."
     return {"lead":first,"context":context,"pending":pending,"method":method}
 
@@ -797,6 +813,16 @@ def _photo_score(article, photo):
         return -10000
     category=_photo_category(article)
     photo_category=str(photo.get("category") or "CDMX")
+    source=_photo_fold(article.get("source"))
+    police_operation_story = bool(
+        re.search(r"\b(?:ssc|secretaria de seguridad ciudadana)\b", headline + " " + source)
+        and re.search(r"\b(?:operativo|vigilancia|despliegue|policias?)\b", headline)
+    )
+    police_context = bool(re.search(
+        r"\b(?:policias?|patrullas?|vigilancia policial|policia de transito)\b", context
+    ))
+    if police_operation_story and not police_context:
+        return -10000
     # En robos, asaltos y extorsiones, la coincidencia de alcaldía no basta:
     # exigir una imagen con contexto de seguridad antes de puntuar el lugar.
     crime_story = bool(re.search(
@@ -1039,6 +1065,8 @@ def _photo_score(article, photo):
             return -10000
     borough=_photo_fold(article.get("borough"))
     score=65 if photo_category==category else (12 if photo_category=="CDMX" else 0)
+    if police_operation_story and police_context:
+        score += 180
     if lgbt_story and lgbt_photo:
         score += 240
     if photo_category=="Alcaldías" and not borough:
