@@ -542,6 +542,33 @@ class NewsPhotoPolicyTests(unittest.TestCase):
                 photos.assign_photos([autoparts])
             self.assertEqual(autoparts["photo"]["id"], "police_patrol")
 
+    def test_contraloria_article_uses_government_photo_not_cathedral_choir(self):
+        title = "Contraloría de la Cdmx detecta observaciones por 839 mdp en fiscalización"
+        category = update_news.category_by_headline(title, "CDMX")
+        self.assertEqual(category, "Gobierno")
+        article = dict(ARTICLE, title=title, category=category)
+        choir = dict(
+            context_photo("cathedral_choir"),
+            topic="Coro de la Catedral metropolitana de la Ciudad de México 11",
+            category="CDMX",
+            keywords=["Catedral Metropolitana Ciudad de México"],
+        )
+        government = dict(
+            context_photo("government_building"),
+            topic="Fachada del Palacio Nacional, sede del Gobierno de México",
+            category="Gobierno",
+            keywords=["Gobierno", "Palacio Nacional"],
+        )
+        self.assertLess(photos._photo_score(article, choir), 0)
+        self.assertGreaterEqual(photos._photo_score(article, government), 0)
+        with patch.object(photos, "_pool", return_value=[choir, government]), patch.object(
+            photos, "VERIFIED_EVENTS", Path("/tmp/never-loaded-contraloria-photo-registry.json")
+        ):
+            stats = photos.assign_photos([article])
+        self.assertEqual(article["photo"]["id"], "government_building")
+        self.assertEqual(article["photo"]["kind"], "representativa")
+        self.assertEqual(stats["assigned"], 1)
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -284,6 +284,9 @@ def category_by_headline(title, feed_category, source=""):
     if (re.search(r"\bgiovani gutierrez\b", normalized)
             and re.search(r"\b(?:cambiado|mejorado|rostro)\b", normalized)):
         return "Gobierno"
+    # Los informes de la Contraloría sobre fiscalización son materia de Gobierno.
+    if re.search(r"\bcontraloria\b", normalized):
+        return "Gobierno"
     # Los operativos de autoridades en Plaza Meave son asuntos de Seguridad.
     if (re.search(r"\bplaza meave\b", normalized)
             and re.search(r"\b(?:operativo|decomis\w*|incaut\w*|aseguran|mercancia apocrifa|pirateria)\b", normalized)):
