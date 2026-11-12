@@ -1,6 +1,6 @@
 {
   "month": "2026-10",
-  "updated": "2026-11-12 21:30 UTC",
+  "updated": "2026-11-12 22:39 UTC",
   "articles": [
     {
       "title": "Expropiará el gobierno de la CDMX capitalino tres predios para vivienda pública",
@@ -3239,21 +3239,6 @@
         "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
         "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "commons_75043363",
-        "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/002944-005_CONSTRUCCI%C3%93N_DEL_MONUMENTO_A_LA_REVOLUCI%C3%93N_1934_%2825025212048%29.jpg/960px-002944-005_CONSTRUCCI%C3%93N_DEL_MONUMENTO_A_LA_REVOLUCI%C3%93N_1934_%2825025212048%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "category": "CDMX",
-        "borough": "",
-        "topic": "002944-005 CONSTRUCCIÓN DEL MONUMENTO A LA REVOLUCIÓN 1934 (25025212048)",
-        "keywords": [
-          "Monumento a la Revolución CDMX"
-        ],
-        "author": "Gobierno CDMX",
-        "license": "CC0",
-        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
-        "source": "https://commons.wikimedia.org/wiki/File:002944-005_CONSTRUCCI%C3%93N_DEL_MONUMENTO_A_LA_REVOLUCI%C3%93N_1934_(25025212048).jpg"
       }
     },
     {
@@ -18797,16 +18782,6 @@
         "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
         "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "archivo_cdmx_006",
-        "url": "/assets/fotos/archivo_cdmx_006.jpg",
-        "category": "CDMX",
-        "borough": "",
-        "topic": "Catedral Ii (172219027)",
-        "author": "Waender Alonso Bello",
-        "license": "CC BY 3.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Catedral_Ii_%28172219027%29.jpeg"
       }
     },
     {
@@ -48110,25 +48085,7 @@
         "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
-      "photo": {
-        "id": "contexto_perros_parque_espana",
-        "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Perros_en_el_Parque_Espa%C3%B1a%2C_Ciudad_de_M%C3%A9xico.jpg/1280px-Perros_en_el_Parque_Espa%C3%B1a%2C_Ciudad_de_M%C3%A9xico.jpg",
-        "category": "Medio Ambiente",
-        "borough": "",
-        "topic": "Perros descansando en el Parque España, Ciudad de México (fotografía de 2016)",
-        "keywords": [
-          "perros",
-          "perro",
-          "mascotas",
-          "parque España",
-          "Condesa"
-        ],
-        "author": "Raul21940",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-        "source": "https://commons.wikimedia.org/wiki/File:Perros_en_el_Parque_Espa%C3%B1a,_Ciudad_de_M%C3%A9xico.jpg"
-      }
+      "sensitive_media": true
     },
     {
       "title": "Arranca paro de transportistas en México: exigen seguridad en carreteras",
@@ -87387,19 +87344,19 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "commons_159148499",
+        "id": "archivo_seguridad_009",
         "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Palacio_Nacional_de_M%C3%A9xico_-_Exteriores_-_3.jpg/960px-Palacio_Nacional_de_M%C3%A9xico_-_Exteriores_-_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "category": "Gobierno",
+        "url": "/assets/fotos/archivo_seguridad_009.jpg",
+        "category": "Seguridad",
         "borough": "",
-        "topic": "Palacio Nacional de México - Exteriores - 3",
+        "topic": "Entrega Claudia Sheinbaum 113 nuevas patrullas en Gustavo A Madero 02",
         "keywords": [
-          "Palacio Nacional Ciudad de México"
+          "Seguridad"
         ],
-        "author": "ProtoplasmaKid",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Palacio_Nacional_de_M%C3%A9xico_-_Exteriores_-_3.jpg"
+        "author": "Gobierno de la Ciudad de México",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Entrega_Claudia_Sheinbaum_113_nuevas_patrullas_en_Gustavo_A_Madero_02.jpg"
       }
     },
     {
@@ -126884,19 +126841,19 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "commons_48005112",
+        "id": "commons_157006038",
         "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Polic%C3%ADa_de_tr%C3%A1nsito_Ciudad_de_M%C3%A9xico_con_automovilistas.jpg/960px-Polic%C3%ADa_de_tr%C3%A1nsito_Ciudad_de_M%C3%A9xico_con_automovilistas.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Nuevas_patrullas_para_Cuajimalpa_01.jpg/960px-Nuevas_patrullas_para_Cuajimalpa_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
         "category": "Seguridad",
         "borough": "",
-        "topic": "Policía de tránsito Ciudad de México con automovilistas",
+        "topic": "Nuevas patrullas para Cuajimalpa 01",
         "keywords": [
-          "Policía Ciudad de México"
+          "Secretaría de Seguridad Ciudadana CDMX patrulla"
         ],
-        "author": "ProtoplasmaKid",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Polic%C3%ADa_de_tr%C3%A1nsito_Ciudad_de_M%C3%A9xico_con_automovilistas.jpg"
+        "author": "Gobierno de la Ciudad de México",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Nuevas_patrullas_para_Cuajimalpa_01.jpg"
       }
     },
     {
