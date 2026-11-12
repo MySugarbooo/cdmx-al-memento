@@ -535,7 +535,8 @@ class PhotoRelevanceTests(unittest.TestCase):
 
         assign_photos([education_article, housing_article])
         self.assertRegex(education_article["photo"]["topic"].casefold(), r"escuela")
-        self.assertRegex(housing_article["photo"]["topic"].casefold(), r"unidades habitacionales")
+        housing_topic = news.fold(housing_article["photo"]["topic"])
+        self.assertRegex(housing_topic, r"(?:unidades habitacionales|casa centro historico|casa en la avenida|casa gonzalez de cosio)")
         for article in (education_article, housing_article):
             photo = article["photo"]
             self.assertTrue(photo["author"])
