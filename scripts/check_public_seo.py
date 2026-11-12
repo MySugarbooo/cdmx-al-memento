@@ -158,19 +158,19 @@ def parse_sitemap(data, label):
 
 
 def validate_article_html(item, data):
-    html = data.decode("utf-8")
+    page_html = data.decode("utf-8")
     for field in ("title", "location", "date", "source"):
         value = str(item.get(field) or "")
-        if value and html.escape(value, quote=True) not in html:
+        if value and html.escape(value, quote=True) not in page_html:
             raise ValueError(f"el artículo público no contiene el campo {field}")
     photo = item.get("photo")
     if isinstance(photo, dict):
         for field in ("author", "license"):
             value = str(photo.get(field) or "")
-            if value and html.escape(value, quote=True) not in html:
+            if value and html.escape(value, quote=True) not in page_html:
                 raise ValueError(f"el artículo público no contiene el crédito {field}")
     elif item.get("sensitive_media") is True:
-        if "Sin fotografía verificada del hecho" not in html:
+        if "Sin fotografía verificada del hecho" not in page_html:
             raise ValueError("la noticia sensible no muestra el aviso de fotografía")
     return True
 
