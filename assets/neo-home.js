@@ -16,12 +16,14 @@ const escapeDate=d=>{const date=new Date(d);return Number.isFinite(date.getTime(
 const articleLink=a=>typeof a.local_url==='string'&&/^\/noticias\/\?/.test(a.local_url)?a.local_url:'/noticias/';
 const safePhotoUrl=u=>/^\/assets\/fotos\/[a-zA-Z0-9_-]+\.jpe?g$/.test(String(u||''))||/^https:\/\/(?:upload|thumb)\.wikimedia\.org\/wikipedia\/commons\//.test(String(u||''));
 // Las fotografías representativas son distintas de las pruebas del acontecimiento.
+// En noticias sobre violencia sexual solo se admite una imagen verificada del hecho.
+const sensitiveMediaTitle=title=>/\\b(?:violaci[oó]n|abuso sexual|agresi[oó]n sexual|acoso sexual|violencia sexual)\\b/i.test(String(title||''));
 const photoInfo=a=>{
  const p=a?.photo;
  if(!p||!safePhotoUrl(p.url)||!p.author||!p.license||!p.licenseUrl||!p.source)return null;
  const documented=p.kind==='hecho'&&p.verified===true&&Boolean(p.evidence_url);
  if(!documented&&p.kind!=='representativa')return null;
- if(a?.sensitive_media&&!documented)return null;
+ if((a?.sensitive_media||sensitiveMediaTitle(a?.title))&&!documented)return null;
  return p;
 };
 const sizedPhotoUrl=(url,width)=>{
