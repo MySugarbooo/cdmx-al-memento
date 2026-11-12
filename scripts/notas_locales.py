@@ -941,9 +941,12 @@ STRICT_PHOTO_TOPICS = (
     # Un refugio animal requiere contexto de animales, no interiores de oficinas.
     (r"\b(?:refugio franciscano|refugio de animales|albergue de animales)\b",
      r"\b(?:perros?|perritos?|animales?|mascotas?|refugio animal)\b"),
-    # Los operativos en Plaza Meave requieren contexto policial o de mercancía asegurada.
+    # Una marcha de motociclistas requiere una motocicleta; una protesta genérica no basta.
+    (r"\b(?:motociclistas? march\w*|marcha de motociclistas?|movilizacion de motociclistas?)\b",
+     r"\b(?:motocicletas?|motociclistas?|motos?|motorcycle)\b"),
+    # Los operativos en Plaza Meave requieren contexto de la plaza o de la mercancía; no ceremonias de patrullas.
     (r"\bplaza meave\b",
-     r"\b(?:plaza meave|policias?|patrullas?|operativo|pirateria|mercancia apocrifa|semar)\b"),
+     r"\b(?:plaza meave|videojuegos?|consolas?|mercancia apocrifa|pirateria|decomiso|incautacion|aseguramiento|operativo|semar|impi)\b"),
     # Una petición de no manifestarse se ilustra con una marcha, no con carnavales.
     (r"\b(?:no manifestarse|manifestarse|marchar a cdmx)\b",
      r"\b(?:marchas?|protestas?|manifestantes?|cacerolazo|planton(?:es)?|bloqueos?|movilizaciones?)\b"),

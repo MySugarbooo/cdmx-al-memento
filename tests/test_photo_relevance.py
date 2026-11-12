@@ -4,6 +4,7 @@ from unittest.mock import patch
 
 from scripts.notas_locales import _pool, _photo_category, _photo_score, assign_photos
 import update_news as news
+import scripts.notas_locales as photos
 from update_news import category_by_headline
 
 
@@ -682,6 +683,75 @@ class PhotoRelevanceTests(unittest.TestCase):
             "category": "Gobierno",
         })
         self.assertLess(_photo_score(unrelated, highway), 0)
+
+
+    def test_motorcycle_march_is_mobility_and_uses_motorcycle_context(self):
+        title = "Motociclistas marcharán hoy en CDMX; habrá otras 6 concentraciones"
+        self.assertEqual(category_by_headline(title, "Metro"), "Movilidad")
+        article = {"title": title, "category": "Movilidad", "borough": ""}
+        cacerolazo = {
+            "id": "generic_cacerolazo",
+            "kind": "representativa",
+            "category": "CDMX",
+            "topic": "Cacerolazo contra la violencia - Ciudad de México",
+            "keywords": ["cacerolazo", "protesta"],
+        }
+        motorcycle = {
+            "id": "contexto_motocicleta_zocalo_brigada_2017",
+            "kind": "representativa",
+            "category": "Movilidad",
+            "topic": "Motocicleta de apoyo de una brigada voluntaria en el Zócalo de la Ciudad de México (2017; imagen representativa)",
+            "keywords": ["motocicleta", "motociclistas", "moto", "movilidad"],
+            "author": "ProtoplasmaKid",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "source": "https://commons.wikimedia.org/wiki/File:Ayuda_tras_el_Terremoto_de_Puebla_de_2017_-_Ciudad_de_M%C3%A9xico_-_3.jpg",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Ayuda_tras_el_Terremoto_de_Puebla_de_2017_-_Ciudad_de_M%C3%A9xico_-_3.jpg/960px-Ayuda_tras_el_Terremoto_de_Puebla_de_2017_-_Ciudad_de_M%C3%A9xico_-_3.jpg",
+        }
+        self.assertLess(_photo_score(article, cacerolazo), 0)
+        self.assertGreaterEqual(_photo_score(article, motorcycle), 0)
+        with patch.object(photos, "_pool", return_value=[cacerolazo, motorcycle]), patch.object(
+            photos, "_load", return_value=[]
+        ):
+            stats = assign_photos([article])
+        self.assertEqual(article["photo"]["id"], motorcycle["id"])
+        self.assertEqual(article["photo"]["author"], "ProtoplasmaKid")
+        self.assertEqual(article["photo"]["license"], "CC BY-SA 4.0")
+        self.assertEqual(stats["assigned"], 1)
+
+    def test_plaza_meave_story_rejects_patrol_handover_photo_and_uses_consoles(self):
+        title = "CDMX: aseguran más de medio millón de pesos en consolas y videojuegos piratas al interior de la Plaza Meave"
+        self.assertEqual(category_by_headline(title, "CDMX"), "Seguridad")
+        article = {"title": title, "category": "Seguridad", "borough": ""}
+        patrol_handover = {
+            "id": "archivo_seguridad_011",
+            "kind": "representativa",
+            "category": "Seguridad",
+            "topic": "Claudia Sheinbaum entrega patrullas Iztapalapa 02",
+            "keywords": ["Seguridad"],
+        }
+        consoles = {
+            "id": "contexto_consolas_videojuegos_2026",
+            "kind": "representativa",
+            "category": "Seguridad",
+            "topic": "Tres consolas actuales y videojuegos en estantería (imagen representativa; no corresponde a la mercancía asegurada)",
+            "keywords": ["consolas", "videojuegos", "Nintendo Switch", "Xbox", "PlayStation"],
+            "author": "InclusiveGameLab",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:InclusiveGameLab_Current_Console_Generation_CC-BY-SA.jpg",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/InclusiveGameLab_Current_Console_Generation_CC-BY-SA.jpg/960px-InclusiveGameLab_Current_Console_Generation_CC-BY-SA.jpg",
+        }
+        self.assertLess(_photo_score(article, patrol_handover), 0)
+        self.assertGreaterEqual(_photo_score(article, consoles), 0)
+        with patch.object(photos, "_pool", return_value=[patrol_handover, consoles]), patch.object(
+            photos, "_load", return_value=[]
+        ):
+            stats = assign_photos([article])
+        self.assertEqual(article["photo"]["id"], consoles["id"])
+        self.assertEqual(article["photo"]["author"], "InclusiveGameLab")
+        self.assertEqual(article["photo"]["license"], "CC BY-SA 4.0")
+        self.assertEqual(stats["assigned"], 1)
 
 
 if __name__ == "__main__":
