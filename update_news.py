@@ -177,6 +177,13 @@ def outside_cdmx_scope(title):
 
 def identify_location(title, date=None):
     words = " " + fold(title) + " "
+    # La volcadura del 12 de noviembre ocurrió en Santa María Totoltepec,
+    # Toluca; la afectación vial fue hacia CDMX, no dentro de una alcaldía capitalina.
+    if (date == "2026-11-12"
+            and " paseo tollocan " in words
+            and " pipa " in words
+            and re.search(r"\\b(?:volcadur|vuelc)\\w*\\b", words)):
+        return "", "Santa María Totoltepec, Toluca, Estado de México (fuera de CDMX)"
     if (date in {"2026-11-11", "2026-11-12"}
             and " pipa " in words and " mexico pachuca " in words):
         return "", "Ecatepec, Estado de México (fuera de CDMX)"
