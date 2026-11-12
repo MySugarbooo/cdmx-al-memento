@@ -432,10 +432,10 @@ def summarize(article):
     category=str(article.get("category") or "CDMX")
     theme=TAGS.get(category,TAGS["CDMX"])
     folded_title=_photo_fold(title)
-    if (re.search(r"\\bcablebus\\b", folded_title)
-            and re.search(r"\\blinea 1\\b", folded_title)
-            and re.search(r"\\bsuspend\\w*\\b", folded_title)
-            and re.search(r"\\blluvia\\b", folded_title)):
+    if (re.search(r"\bcablebus\b", folded_title)
+            and re.search(r"\blinea 1\b", folded_title)
+            and re.search(r"\bsuspend\w*\b", folded_title)
+            and re.search(r"\blluvia\b", folded_title)):
         return {
             "lead": (
                 f"El titular de {source} informa que, durante la alerta por lluvia fuerte en CDMX, "
@@ -1353,11 +1353,11 @@ def _photo_score(article, photo):
     context=topic+" "+keywords
     # No cruzar fotografías de una línea del Cablebús con otra.
     cablebus_story_line = (
-        re.search(r"\\blinea\\s+([123])\\b", headline)
-        if re.search(r"\\bcablebus\\b", headline) else None
+        re.search(r"\blinea\s+([123])\b", headline)
+        if re.search(r"\bcablebus\b", headline) else None
     )
-    if cablebus_story_line and re.search(r"\\bcablebus\\b", context):
-        photo_line = re.search(r"\\blinea\\s+([123])\\b", context)
+    if cablebus_story_line and re.search(r"\bcablebus\b", context):
+        photo_line = re.search(r"\blinea\s+([123])\b", context)
         if photo_line and photo_line.group(1) != cablebus_story_line.group(1):
             return -10000
         cablebus_station_lines = {
@@ -1369,7 +1369,7 @@ def _photo_score(article, photo):
         }
         for line, stations in cablebus_station_lines.items():
             if line != cablebus_story_line.group(1) and any(
-                re.search(r"\\b" + re.escape(station) + r"\\b", context)
+                re.search(r"\b" + re.escape(station) + r"\b", context)
                 for station in stations
             ):
                 return -10000
