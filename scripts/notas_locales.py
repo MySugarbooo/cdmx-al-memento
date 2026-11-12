@@ -533,6 +533,17 @@ def _photo_category(article):
     # "Poner en marcha" un programa no describe una marcha o protesta vial.
     headline=re.sub(r"\b(?:pone|ponen|puso|poner|puesta|entra|entro|entrara)\s+en\s+marcha\b",
                     "activa", headline)
+    # Los planes de electrificación del transporte público son materia de Movilidad.
+    if (re.search(r"\b(?:transporte(?: publico)?|movilidad)\b", headline)
+            and re.search(r"\b(?:electrico|electrica|electrificacion)\b", headline)):
+        return "Movilidad"
+    # Los informes de vigilancia y alumbrado de una alcaldía corresponden a Seguridad.
+    if (re.search(r"\b(?:vigilancia|alumbrado|luminarias?|vigilad[oa]s?)\b", headline)
+            and re.search(r"\b(?:tabe|miguel hidalgo)\b", headline)):
+        return "Seguridad"
+    # Los festivales de cine pertenecen a Cultura.
+    if re.search(r"\b(?:cine de barrio|festival(?: de)? cine)\b", headline):
+        return "Cultura"
     # Un aviso del Hoy No Circula no es una nota cultural aunque mencione Día de Muertos.
     if re.search(r"\bhoy no circula\b", headline):
         return "Movilidad"
@@ -572,6 +583,15 @@ STRICT_PHOTO_TOPICS = (
     # Mantener primero la regla de gas: el titular puede incluir un segundo asunto tras dos puntos.
     (r"\b(?:pipas? de gas|gas lp|explosion(?:es)? de gas|tanques? de gas|fugas? de gas|acumulacion de gas|estalla\s+(?:un\s+)?tanque(?:\s+de\s+gas)?|incendios?)\b",
      r"\b(?:gas|tanques?|cilindros?|fugas?|bomberos|incendios?|extintores?|locales? comerciales?|mercados?|cocinas?|alimentos?)\b"),
+    # La electrificación del transporte exige una imagen de un sistema o vehículo de transporte.
+    (r"\b(?:transporte(?: publico)?|movilidad)\b.*\b(?:electrico|electrica|electrificacion)\b",
+     r"\b(?:trolebus|metrobus|autobus(?:es)?|tren ligero|metro|cablebus|electromovilidad|vehiculos? electricos?)\b"),
+    # La vigilancia y el alumbrado no se ilustran con monumentos sin relación.
+    (r"\b(?:vigilancia|alumbrado|luminarias?|vigilad[oa]s?)\b",
+     r"\b(?:patrullas?|alumbrado|luminarias?|iluminacion|mujeres|apoyos? a mujeres)\b"),
+    # Un festival de cine requiere una imagen cinematográfica, no un museo genérico.
+    (r"\b(?:cine de barrio|festival(?: de)? cine)\b",
+     r"\b(?:bosquecinema|cine|cinema|cineclub|cineteca|proyecciones?|peliculas?|filmoteca)\b"),
     # El deporte adaptado requiere una imagen de la disciplina, no un monumento genérico.
     (r"\b(?:deporte adaptado|discapacidad motriz|baloncesto en silla de ruedas)\b",
      r"\b(?:deporte adaptado|deportistas?|baloncesto|silla de ruedas|paralimpic\w*|discapacidad motriz|atletas?|gimnasio|cancha|competencia deportiva)\b"),
@@ -919,6 +939,9 @@ def _photo_score(article, photo):
     ))
     if category == "Seguridad" and crime_story and not crime_context:
         return -10000
+    # Una graduación policial no representa un robo ni un operativo de vigilancia.
+    if (crime_story or police_operation_story) and re.search(r"\bgraduacion\b", topic):
+        return -10000
     # Los delitos cibernéticos requieren contexto de seguridad informática,
     # no una fotografía genérica de Protección Civil o de una patrulla.
     digital_story = bool(re.search(
@@ -1161,6 +1184,13 @@ def _photo_score(article, photo):
             return -10000
     borough=_photo_fold(article.get("borough"))
     score=65 if photo_category==category else (12 if photo_category=="CDMX" else 0)
+    cinema_story=bool(re.search(r"\b(?:cine de barrio|festival(?: de)? cine)\b",headline))
+    cinema_photo=bool(re.search(
+        r"\b(?:bosquecinema|cine|cinema|cineclub|cineteca|proyecciones?|peliculas?|filmoteca)\b",
+        context,
+    ))
+    if cinema_story and cinema_photo:
+        score += 120
     if police_operation_story and police_context:
         score += 180
     if lgbt_story and lgbt_photo:

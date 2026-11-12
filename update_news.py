@@ -278,6 +278,17 @@ def category_by_headline(title, feed_category, source=""):
         ):
             return "Movilidad"
         return "CDMX"
+    # Los planes de electrificación del transporte público son materia de Movilidad.
+    if (re.search(r"\b(?:transporte(?: publico)?|movilidad)\b", normalized)
+            and re.search(r"\b(?:electrico|electrica|electrificacion)\b", normalized)):
+        return "Movilidad"
+    # La vigilancia y el alumbrado reportados por una alcaldía son asuntos de Seguridad.
+    if (re.search(r"\b(?:vigilancia|alumbrado|luminarias?|vigilad[oa]s?)\b", normalized)
+            and re.search(r"\b(?:tabe|miguel hidalgo)\b", normalized)):
+        return "Seguridad"
+    # Los festivales de cine pertenecen a Cultura.
+    if re.search(r"\b(?:cine de barrio|festival(?: de)? cine)\b", normalized):
+        return "Cultura"
     # El estado del Metrobús pertenece a Movilidad, no a la categoría general.
     if re.search(r"\bmetrobus\b", normalized):
         return "Movilidad"

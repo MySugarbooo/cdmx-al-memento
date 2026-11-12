@@ -335,5 +335,82 @@ class PhotoRelevanceTests(unittest.TestCase):
                 self.assertEqual(photo.get("kind"), "representativa")
 
 
+    def test_electric_transport_plan_rejects_palacio_nacional_photo(self):
+        title = "Prevén transporte 100% eléctrico en 20 años en CDMX"
+        category = category_by_headline(title, "Gobierno")
+        self.assertEqual(category, "Movilidad")
+        article = {"title": title, "category": category, "borough": ""}
+        self.assertEqual(_photo_category(article), "Movilidad")
+        palace = {
+            "category": "Gobierno",
+            "topic": "Palacio Nacional Ciudad de México City",
+            "keywords": ["Gobierno"],
+        }
+        trolleybus = {
+            "category": "Movilidad",
+            "topic": "Trolebús de la Ciudad de México",
+            "keywords": ["Trolebús Ciudad de México"],
+        }
+        self.assertLess(_photo_score(article, palace), 0)
+        self.assertGreaterEqual(_photo_score(article, trolleybus), 0)
+
+    def test_tabe_surveillance_story_rejects_unrelated_reforma_monument(self):
+        title = "Tabe reporta más vigilancia y alumbrado en Miguel Hidalgo; destaca apoyos a mujeres"
+        category = category_by_headline(title, "CDMX")
+        self.assertEqual(category, "Seguridad")
+        article = {"title": title, "category": category, "borough": "Miguel Hidalgo"}
+        self.assertEqual(_photo_category(article), "Seguridad")
+        monument = {
+            "category": "CDMX",
+            "topic": "Monumento a Colón Paseo de la Reforma Ciudad de México 4",
+            "keywords": ["CDMX"],
+        }
+        patrol = {
+            "category": "Seguridad",
+            "topic": "Patrulla de Ciudad de México",
+            "keywords": ["Seguridad"],
+        }
+        self.assertLess(_photo_score(article, monument), 0)
+        self.assertGreaterEqual(_photo_score(article, patrol), 0)
+
+    def test_robbery_story_rejects_police_graduation_photo(self):
+        title = "Roban Casa de Empeño en el Centro de Azcapotzalco, CDMX"
+        category = category_by_headline(title, "CDMX")
+        self.assertEqual(category, "Seguridad")
+        article = {"title": title, "category": category, "borough": "Azcapotzalco"}
+        graduation = {
+            "category": "Seguridad",
+            "topic": "Graduación de la Policía de la Ciudad de México",
+            "keywords": ["Policía Ciudad de México"],
+        }
+        patrol = {
+            "category": "Seguridad",
+            "topic": "Patrulla de Ciudad de México",
+            "keywords": ["Policía Ciudad de México"],
+        }
+        self.assertLess(_photo_score(article, graduation), 0)
+        self.assertGreaterEqual(_photo_score(article, patrol), 0)
+
+
+    def test_cine_de_barrio_rejects_unrelated_museum_photo(self):
+        title = "Festival Cine de Barrio llega a la CDMX con películas, karaoke y rodada con entrada gratuita"
+        category = category_by_headline(title, "CDMX")
+        self.assertEqual(category, "Cultura")
+        article = {"title": title, "category": category, "borough": ""}
+        self.assertEqual(_photo_category(article), "Cultura")
+        museum = {
+            "category": "CDMX",
+            "topic": "Entrada al Museo Nacional de Antropología de México",
+            "keywords": ["Museo Nacional de Antropología Ciudad de México"],
+        }
+        cinema = {
+            "category": "Alcaldías",
+            "topic": "Bosquecinema, Bosque de Tlalpan, Ciudad de México",
+            "keywords": ["Tlalpan Ciudad de México"],
+        }
+        self.assertLess(_photo_score(article, museum), 0)
+        self.assertGreaterEqual(_photo_score(article, cinema), 0)
+
+
 if __name__ == "__main__":
     unittest.main()
