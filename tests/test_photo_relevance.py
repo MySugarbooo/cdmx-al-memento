@@ -128,7 +128,7 @@ class PhotoRelevanceTests(unittest.TestCase):
         })
         self.assertEqual(article["category"], "Movilidad")
         self.assertIn("una pipa de gas", article["brief"]["lead"])
-        self.assertIn("personas lesionadas", article["brief"]["lead"])
+        self.assertIn("al menos dos personas lesionadas", article["brief"]["lead"])
         self.assertEqual(_photo_category(article), "Seguridad")
         police_graduation = {
             "category": "Seguridad",
