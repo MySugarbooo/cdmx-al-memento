@@ -22,7 +22,7 @@ from pathlib import Path
 from zoneinfo import ZoneInfo
 
 from scripts.analisis_editorial import build_editorial
-from scripts.notas_locales import local_link, summarize, assign_photos, _photo_score, is_sensitive_media
+from scripts.notas_locales import local_link, summarize, assign_photos, _photo_score, is_sensitive_media, SENSITIVE_MEDIA_TITLE
 
 ROOT = Path(__file__).resolve().parent
 DEST = ROOT / "news.json"
@@ -931,9 +931,12 @@ def build_homepage_feed(candidates):
     used_photos = set()
     for article in candidates:
         photo = article.get("photo")
+        title_sensitive = bool(
+            SENSITIVE_MEDIA_TITLE.search(str(article.get("title") or ""))
+        )
         if not isinstance(photo, dict):
             article.pop("photo", None)
-            if article.get("sensitive_media") is True:
+            if title_sensitive:
                 visible.append(article)
             continue
         photo_url = str(photo.get("url") or "")
@@ -943,16 +946,16 @@ def build_homepage_feed(candidates):
             and bool(photo.get("evidence_url"))
         )
         contextual = photo.get("kind") == "representativa"
-        sensitive = article.get("sensitive_media") is True
-        # Los sucesos sensibles permanecen en el feed, pero nunca con una
-        # ilustración genérica; solo se conserva una foto documental aprobada.
-        if sensitive and not documented:
+        # Solo los titulares sensibles identificados por tema permanecen en
+        # portada sin foto; el flag editorial también se usa para otros casos
+        # que deben quedarse exclusivamente en la hemeroteca.
+        if title_sensitive and not documented:
             article.pop("photo", None)
             visible.append(article)
             continue
         if contextual and _photo_score(article, photo) < 0:
             article.pop("photo", None)
-            if sensitive:
+            if title_sensitive:
                 visible.append(article)
             continue
         trusted_url = (
@@ -971,7 +974,7 @@ def build_homepage_feed(candidates):
         )
         if not valid_photo:
             article.pop("photo", None)
-            if sensitive:
+            if title_sensitive:
                 visible.append(article)
             continue
         visible.append(article)

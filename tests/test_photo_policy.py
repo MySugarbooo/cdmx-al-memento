@@ -166,6 +166,13 @@ class NewsPhotoPolicyTests(unittest.TestCase):
                 keywords=["carnavales", "cultura"],
             ),
         )
+        curated = dict(
+            ARTICLE,
+            title="Servicios de emergencia atienden percance de motociclista en Calzada Acoxpa",
+            url="https://news.google.com/rss/articles/curated-incident",
+            local_url="/noticias/?id=curated-incident&mes=2026-11",
+            sensitive_media=True,
+        )
         verified = dict(
             ARTICLE,
             title="Acontecimiento con fotografía documental verificada",
@@ -179,13 +186,14 @@ class NewsPhotoPolicyTests(unittest.TestCase):
             ),
         )
         with patch.object(update_news, "dedupe_homepage_events", side_effect=lambda items: items):
-            feed = update_news.build_homepage_feed([sensitive, music, verified])
+            feed = update_news.build_homepage_feed([sensitive, music, curated, verified])
 
         self.assertEqual(len(feed), 2)
         self.assertIn(sensitive, feed)
         self.assertNotIn("photo", sensitive)
         self.assertNotIn(music, feed)
         self.assertNotIn("photo", music)
+        self.assertNotIn(curated, feed)
         self.assertIn(verified, feed)
         self.assertEqual(verified["photo"]["kind"], "hecho")
         self.assertTrue(verified["photo"]["verified"])
