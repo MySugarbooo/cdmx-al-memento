@@ -14,6 +14,91 @@ class LocalNewsTests(unittest.TestCase):
                 "source":"Periódico de prueba","date":"2026-10-13",
                 "category":category,"borough":""}
 
+    def test_huixtla_migrant_caravan_is_external_and_rejects_wheelchair_basketball_photo(self):
+        article = {
+            "title": "Caravana migrante ‘Dios con nosotros’ llega a Huixtla: Más de 500 personas avanzan por Chiapas rumbo a CDMX",
+            "url": "https://news.google.com/rss/articles/migrant-huixtla-regression",
+            "source": "El Financiero",
+            "date": "2026-11-12",
+            "published_at": "2026-11-12T21:20:44Z",
+            "category": "CDMX",
+            "borough": "",
+            "photo": {
+                "id": "contexto_baloncesto_silla_ruedas",
+                "kind": "representativa",
+                "url": "https://upload.wikimedia.org/wikipedia/commons/e/e0/2010_World_Wheelchair_Basketball_Championship_Mexico_and_UK.jpg",
+                "category": "CDMX",
+                "topic": "Partido de baloncesto en silla de ruedas entre México y Gran Bretaña; Campeonato Mundial 2010, Birmingham, Reino Unido",
+                "keywords": ["deporte adaptado", "baloncesto en silla de ruedas", "México"],
+                "author": "2010 World Wheelchair Basketball Championship",
+                "license": "CC BY 2.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+                "source": "https://commons.wikimedia.org/wiki/File:2010_World_Wheelchair_Basketball_Championship_Mexico_and_UK.jpg",
+            },
+        }
+        result = standardize(article)
+        self.assertIsNotNone(result)
+        self.assertEqual(result["location"], "Huixtla, Chiapas (fuera de CDMX)")
+        self.assertEqual(result["borough"], "")
+        self.assertEqual(result["category"], "CDMX")
+        self.assertIn("Huixtla, Chiapas", result["brief"]["lead"])
+        self.assertIn("destino del recorrido", result["brief"]["lead"])
+        self.assertIn("fuera de CDMX", result["brief"]["context"])
+        assign_photos([result])
+        self.assertNotIn("photo", result)
+        rendered = render(result, article_id(result))
+        self.assertNotIn('<figure class="article-photo">', rendered)
+
+    def test_el_morenito_fatal_trailer_crash_is_mobility_and_has_no_context_photo(self):
+        article = {
+            "title": "\"El Morenito\" muere tras ser arrastrado varios metros por un tráiler, en Venustiano Carranza",
+            "url": "https://news.google.com/rss/articles/el-morenito-trailer-regression",
+            "source": "El Gráfico",
+            "date": "2026-11-12",
+            "published_at": "2026-11-12T15:24:00Z",
+            "category": "CDMX",
+            "borough": "Venustiano Carranza",
+            "photo": {
+                "id": "commons_old_cdmx_streets",
+                "kind": "representativa",
+                "url": "/assets/fotos/archivo_cdmx_001.jpg",
+                "category": "CDMX",
+                "topic": "Ciudad de México, calles y plazas 1986 07",
+                "author": "Autor de prueba",
+                "license": "CC BY-SA 4.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "https://commons.wikimedia.org/wiki/File:Ciudad_de_Mexico_calles_y_plazas.jpg",
+            },
+        }
+        result = standardize(article)
+        self.assertIsNotNone(result)
+        self.assertEqual(result["category"], "Movilidad")
+        self.assertEqual(result["borough"], "Venustiano Carranza")
+        self.assertTrue(is_sensitive_media(result))
+        self.assertIn("avenida del Taller", result["brief"]["lead"])
+        self.assertIn("Lorenzo Boturini", result["brief"]["lead"])
+        self.assertEqual(
+            result["source_url"],
+            "https://www.elgrafico.mx/la-roja/2026/11/12/el-morenito-muere-tras-ser-arrastrado-varios-metros-por-un-trailer-en-venustiano-carranza/?outputType=amp",
+        )
+        assign_photos([result])
+        self.assertNotIn("photo", result)
+        rendered = render(result, article_id(result))
+        self.assertIn("Sin fotografía verificada del hecho", rendered)
+        self.assertNotIn('<figure class="article-photo">', rendered)
+
+    def test_security_mobility_and_intercity_train_categories_are_specific(self):
+        cases = (
+            ("Caen tres secuestradores en la alcaldía Venustiano Carranza", "CDMX", "Seguridad"),
+            ("Policías de la CDMX rescataron a un hombre secuestrado en La Merced", "Metro", "Seguridad"),
+            ("Caen 35.6% los delitos contra empresas y comercios en CDMX, presume Pablo Vázquez", "CDMX", "Seguridad"),
+            ("\"El Morenito\" muere tras ser arrastrado varios metros por un tráiler, en Venustiano Carranza", "CDMX", "Movilidad"),
+            ("Llega a México el primer tren de la ruta CDMX-Pachuca; tendrá capacidad para 893 pasajeros", "CDMX", "Movilidad"),
+        )
+        for title, feed_category, expected in cases:
+            with self.subTest(title=title):
+                self.assertEqual(category_by_headline(title, feed_category), expected)
+
     def test_coyotepec_highway_crash_is_external_and_has_no_unrelated_photo(self):
         article = {
             "title": "Fuerte Accidente de 3 Autobuses y Tractocamión en la México-Querétaro: Cierran Hacia CDMX",
@@ -95,6 +180,7 @@ class LocalNewsTests(unittest.TestCase):
             "Detienen a presunto abusador sexual de animales en situación de calle en CDMX",
             "Detienen a otro presunto maltratador de animales en Tlalpan",
             "Detienen a acusado de maltrato animal en Tlalpan",
+            "Detienen a hombre acusado de maltratar perros en CDMX tras recibir golpiza de vecinos en Tlalpan",
         )
         for index, title in enumerate(titles):
             with self.subTest(title=title):
