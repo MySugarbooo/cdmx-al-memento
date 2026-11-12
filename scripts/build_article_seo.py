@@ -96,7 +96,7 @@ def render(item, ident):
     date = esc(item.get("date") or "")
     # No presentar como CDMX una nota archivada cuya ubicación externa está confirmada.
     location = str(item.get("location") or "")
-    location_label = esc(location if location.endswith("(fuera de CDMX)") else "CDMX")
+    location_label = esc(location or "CDMX")
     url = BASE + "/articulos/" + ident + "/"
     original = item.get("source_url") or item.get("url") or ""
     source_link = ""
