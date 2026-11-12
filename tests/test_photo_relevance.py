@@ -503,7 +503,7 @@ class PhotoRelevanceTests(unittest.TestCase):
         landmark = next(p for p in pool if "torre latinoamericana" in p["topic"].casefold())
         school = next(p for p in pool if "escuela primaria" in p["topic"].casefold()
                       or "mejora de escuelas" in p["topic"].casefold())
-        housing = next(p for p in pool if "unidades habitacionales" in p["topic"].casefold())
+        housing = next(p for p in pool if "casa centro historico" in p["topic"].casefold())
 
         education_article = news.standardize({
             "title": "PT va en CDMX por el fortalecimiento de la educación integral de niños y niñas desde la cuna",
@@ -529,7 +529,7 @@ class PhotoRelevanceTests(unittest.TestCase):
 
         assign_photos([education_article, housing_article])
         self.assertRegex(education_article["photo"]["topic"].casefold(), r"escuela")
-        self.assertRegex(housing_article["photo"]["topic"].casefold(), r"unidades habitacionales")
+        self.assertRegex(housing_article["photo"]["topic"].casefold(), r"casa centro historico")
         for article in (education_article, housing_article):
             photo = article["photo"]
             self.assertTrue(photo["author"])
