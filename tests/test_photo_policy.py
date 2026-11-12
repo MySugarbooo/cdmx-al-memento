@@ -620,6 +620,12 @@ class NewsPhotoPolicyTests(unittest.TestCase):
             category="Seguridad",
             keywords=["Policía Ciudad de México"],
         )
+        patrol_acquisition = dict(
+            context_photo("commons_157006042"),
+            topic="Nuevas patrullas para Cuajimalpa 06",
+            category="Seguridad",
+            keywords=["Secretaría de Seguridad Ciudadana CDMX patrulla"],
+        )
         patrol = dict(
             context_photo("commons_102129730"),
             topic="Patrulla cdmx",
@@ -628,9 +634,10 @@ class NewsPhotoPolicyTests(unittest.TestCase):
         )
 
         self.assertLess(photos._photo_score(article, graduation), 0)
+        self.assertLess(photos._photo_score(article, patrol_acquisition), 0)
         self.assertGreaterEqual(photos._photo_score(article, patrol), 0)
 
-        with patch.object(photos, "_pool", return_value=[graduation, patrol]), patch.object(
+        with patch.object(photos, "_pool", return_value=[graduation, patrol_acquisition, patrol]), patch.object(
             photos,
             "VERIFIED_EVENTS",
             Path("/tmp/never-loaded-fgr-ine-photo-registry.json"),

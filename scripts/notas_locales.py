@@ -962,6 +962,16 @@ def _photo_score(article, photo):
     police_context = bool(re.search(
         r"\b(?:policias?|patrullas?|vigilancia policial|policia de transito)\b", context
     ))
+    # Para una intervención de la FGR en oficinas del INE, una foto de entrega
+    # de patrullas de otra alcaldía no aporta contexto suficiente.
+    fgr_ine_story = bool(re.search(
+        r"\b(?:fgr|fiscalia general de la republica|instituto nacional electoral|oficinas? de administracion del ine)\b",
+        headline,
+    ))
+    if fgr_ine_story and re.search(
+        r"\b(?:adquisicion|compra|presentacion|entrega|nuevas? patrullas?)\b", topic
+    ):
+        return -10000
     if police_operation_story and not police_context:
         return -10000
     # En robos, asaltos y extorsiones, la coincidencia de alcaldía no basta:
