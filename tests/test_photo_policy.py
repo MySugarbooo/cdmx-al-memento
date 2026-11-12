@@ -181,9 +181,12 @@ class NewsPhotoPolicyTests(unittest.TestCase):
         with patch.object(update_news, "dedupe_homepage_events", side_effect=lambda items: items):
             feed = update_news.build_homepage_feed([sensitive, music, verified])
 
-        self.assertEqual(len(feed), 3)
+        self.assertEqual(len(feed), 2)
+        self.assertIn(sensitive, feed)
         self.assertNotIn("photo", sensitive)
+        self.assertNotIn(music, feed)
         self.assertNotIn("photo", music)
+        self.assertIn(verified, feed)
         self.assertEqual(verified["photo"]["kind"], "hecho")
         self.assertTrue(verified["photo"]["verified"])
 
