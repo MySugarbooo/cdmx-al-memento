@@ -1081,11 +1081,11 @@ def _photo_score(article, photo):
         return -10000
     # Las notas de renta y vivienda requieren edificios residenciales o unidades habitacionales.
     housing_story = bool(re.search(
-        r"\b(?:viviendas?|rentas?|alquiler|mercado inmobiliario|inmobiliari[oa]s?|departamentos?)\b",
+        r"\b(?:rentas?|alquiler|mercado inmobiliario|inmobiliari[oa]s?|precios? de vivienda|compra de vivienda|venta de vivienda)\b",
         headline,
     ))
     housing_photo = bool(re.search(
-        r"\b(?:unidades habitacionales|viviendas?|departamentos?|edificios residenciales|conjuntos habitacionales|condominios?)\b",
+        r"\b(?:unidades habitacionales|viviendas?|departamentos?|edificios residenciales|conjuntos habitacionales|condominios?|casa centro historico|casa en la avenida|casa gonzalez de cosio)\b",
         context,
     ))
     if housing_story and not housing_photo:
