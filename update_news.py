@@ -933,7 +933,8 @@ def build_homepage_feed(candidates):
         photo = article.get("photo")
         if not isinstance(photo, dict):
             article.pop("photo", None)
-            visible.append(article)
+            if article.get("sensitive_media") is True:
+                visible.append(article)
             continue
         photo_url = str(photo.get("url") or "")
         documented = (
@@ -951,7 +952,8 @@ def build_homepage_feed(candidates):
             continue
         if contextual and _photo_score(article, photo) < 0:
             article.pop("photo", None)
-            visible.append(article)
+            if sensitive:
+                visible.append(article)
             continue
         trusted_url = (
             photo_url.startswith("/assets/fotos/")
@@ -969,7 +971,8 @@ def build_homepage_feed(candidates):
         )
         if not valid_photo:
             article.pop("photo", None)
-            visible.append(article)
+            if sensitive:
+                visible.append(article)
             continue
         visible.append(article)
         used_photos.add(photo_url)
