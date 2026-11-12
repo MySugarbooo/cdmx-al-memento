@@ -341,7 +341,7 @@ def category_by_headline(title, feed_category, source=""):
         return "Seguridad"
     # Robos de infraestructura y bienes no deben quedarse como CDMX genérico.
     if (feed_category in {"CDMX", "Gobierno", "Cultura"}
-            and re.search(r"\b(?:robo|robos|roban|robado|robada|robaron)\b", normalized)
+            and re.search(r"\b(?:robo|robos|roban|robado|robada|robaron|robar)\b", normalized)
             and re.search(r"\b(?:cable|alumbrado|vehiculo|vehiculos|auto|autopartes|celular|casa|vivienda|negocio|comercio|mercancia|tienda|dinero|joyas|equipo|carga|medidor|tuberia|materiales)\b", normalized)):
         return "Seguridad"
     # Una agresión violenta no es Cultura por mencionar el Día de Muertos.
