@@ -189,9 +189,9 @@ class LocalNewsTests(unittest.TestCase):
         context = " ".join([photo.get("topic", ""), *photo.get("keywords", [])]).casefold()
         self.assertRegex(
             context,
-            r"\\b(?:tuberias?|drenaje|pavimentacion|pavimento|asfalto|alcantarillas?|red hidraulica|infraestructura hidraulica|obra vial|desazolve|supervision de obras)\\b",
+            r"\b(?:tuberias?|drenaje|pavimentacion|pavimento|asfalto|alcantarillas?|red hidraulica|infraestructura hidraulica|obra vial|desazolve|supervision de obras)\b",
         )
-        self.assertNotRegex(context, r"\\bcarnavales?\\b")
+        self.assertNotRegex(context, r"\bcarnavales?\b")
         self.assertEqual(photo["kind"], "representativa")
         self.assertTrue(photo["author"])
         self.assertTrue(photo["license"])
