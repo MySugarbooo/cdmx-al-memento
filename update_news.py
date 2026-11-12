@@ -22,7 +22,7 @@ from pathlib import Path
 from zoneinfo import ZoneInfo
 
 from scripts.analisis_editorial import build_editorial
-from scripts.notas_locales import local_link, summarize, assign_photos, _photo_score
+from scripts.notas_locales import local_link, summarize, assign_photos, _photo_score, is_sensitive_media
 
 ROOT = Path(__file__).resolve().parent
 DEST = ROOT / "news.json"
@@ -36,6 +36,27 @@ MX = ZoneInfo("America/Mexico_City")
 SITE = "https://cdmx-al-memento.pages.dev"
 MAIL = "sanchezaxochitl@gmail.com"
 RETENTION_DAYS = 365
+
+def clear_sensitive_context_photos(items):
+    """Retira del archivo fotos representativas de titulares sensibles."""
+    removed = 0
+    for item in items:
+        if not isinstance(item, dict) or not is_sensitive_media(item):
+            continue
+        item["sensitive_media"] = True
+        photo = item.get("photo")
+        documented = (
+            isinstance(photo, dict)
+            and photo.get("kind") == "hecho"
+            and photo.get("verified") is True
+            and bool(photo.get("evidence_url"))
+        )
+        if photo and not documented:
+            item.pop("photo", None)
+            removed += 1
+    return removed
+
+
 ARCHIVE_VERSION_FIELDS = (
     "title", "description", "url", "source", "date", "published_at",
     "category", "borough", "location", "local_url", "brief", "photo",
@@ -699,6 +720,12 @@ def consolidate_archive(new_items, cutoff, updated):
                 # Conservar la versión más reciente y guardar las anteriores en el JSON.
                 existing[key] = merge_archive_records(old, item)
 
+    # Retirar también las fotos de contexto que ya estaban guardadas en la
+    # hemeroteca para titulares sensibles. No basta con proteger el feed nuevo.
+    sensitive_photos_removed = clear_sensitive_context_photos(existing.values())
+    if sensitive_photos_removed:
+        print("Fotografías de contexto retiradas de noticias sensibles:", sensitive_photos_removed)
+
     # Reparar también fotografías antiguas incongruentes después de corregir
     # la clasificación RSS. Conservar fotografías del hecho verificadas.
     mismatched = [
@@ -707,8 +734,8 @@ def consolidate_archive(new_items, cutoff, updated):
         and item["photo"].get("kind") != "hecho"
         and _photo_score(item, item["photo"]) < 0
     ]
-    missing = [item for item in existing.values() if not item.get("photo")
-               and not (item.get("editorial_verified") is True and item.get("sensitive_media") is True)]
+    missing = [item for item in existing.values()
+               if not item.get("photo") and not is_sensitive_media(item)]
     # Priorizar imágenes engañosas y limitar la reparación a 300 por ejecución.
     # Como máximo 24 son reemplazos; el resto conserva el tratamiento previo.
     # Atender primero las noticias recientes; el orden de archivos en disco
