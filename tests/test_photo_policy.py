@@ -394,5 +394,143 @@ class NewsPhotoPolicyTests(unittest.TestCase):
         self.assertEqual(stats["assigned"], 1)
 
 
+    def test_current_feed_incongruent_photos_are_rejected(self):
+        def photo(id_, topic, category="CDMX", keywords=()):
+            return dict(context_photo(id_), topic=topic, category=category, keywords=list(keywords))
+
+        plaza_title = "¿Qué pasó en Plaza Meave hoy? Autoridades de CDMX realizan operativo"
+        autoparts_title = "Decomisan 3 toneladas de autopartes en Alcaldía Cuauhtémoc"
+        tabe_title = "Tabe en Miguel Hidalgo: cinco años de cambio"
+        coyoacan_title = "Hemos cambiado y mejorado el rostro de Coyoacán: Giovani Gutierrez"
+        cases = (
+            (
+                "De Polanco a Coyoacán: tres clubes de pádel en CDMX", "CDMX",
+                photo("church_padel", "Iglesia de San Juan Bautista en Coyoacán, Ciudad de México", keywords=("Coyoacán",)),
+            ),
+            (
+                "Refugio Franciscano busca frenar diligencia judicial en predio de Cuajimalpa", "Gobierno",
+                photo("treasury_room", "Sala de Tesorería del Palacio Nacional, Ciudad de México", "Gobierno"),
+            ),
+            (
+                "Armenta pide a Antorcha Campesina no manifestarse en CDMX", "CDMX",
+                photo("carnival", "Declaratoria de Carnavales como Patrimonio Cultural de la Ciudad de México"),
+            ),
+            (
+                "Trabajan Morelos, CDMX y Estado de México con colectivos en jornada de búsqueda", "CDMX",
+                photo("garden", "Jardín Escénico del Bosque de Chapultepec, Ciudad de México"),
+            ),
+            (
+                plaza_title, update_news.category_by_headline(plaza_title, "CDMX"),
+                photo("zocalo", "Plaza de la Constitución, Zócalo de la Ciudad de México"),
+            ),
+            (
+                autoparts_title, update_news.category_by_headline(autoparts_title, "CDMX"),
+                photo("cuauhtemoc_bust", "Busto de Cuauhtémoc en la Ciudad de México"),
+            ),
+            (
+                "CDMX Decomisa 3 Toneladas de Autopartes en Operativos Contra el Robo de Autos; Hay 3 Detenidos",
+                "Seguridad",
+                photo("cyber_laptop", "Laptop asegurada con cadena y candado; fotografía representativa de seguridad informática", "Seguridad"),
+            ),
+            (
+                tabe_title, update_news.category_by_headline(tabe_title, "Seguridad"),
+                photo("firefighters", "Equipo de trabajo de los Bomberos CDMX", "Seguridad"),
+            ),
+            (
+                coyoacan_title, update_news.category_by_headline(coyoacan_title, "CDMX"),
+                photo("historic_ticket", "Boleto de cine Esperanza Coyoacán, Ciudad de México"),
+            ),
+        )
+        for title, category, image in cases:
+            with self.subTest(title=title):
+                article = dict(ARTICLE, title=title, category=category, borough="")
+                self.assertLess(photos._photo_score(article, image), 0)
+
+    def test_relevant_representative_photos_remain_eligible(self):
+        def photo(id_, topic, category="CDMX", keywords=()):
+            return dict(context_photo(id_), topic=topic, category=category, keywords=list(keywords))
+
+        cases = (
+            (
+                "De Polanco a Coyoacán: tres clubes de pádel en CDMX", "CDMX",
+                photo("padel_court", "Club de pádel, cancha deportiva y raquetas en CDMX", keywords=("pádel", "deporte")),
+            ),
+            (
+                "Refugio Franciscano busca frenar diligencia judicial en predio de Cuajimalpa", "Gobierno",
+                photo("dogs_context", "Perros descansando en el Parque España, Ciudad de México", "Medio Ambiente", ("perros", "mascotas")),
+            ),
+            (
+                "Armenta pide a Antorcha Campesina no manifestarse en CDMX", "CDMX",
+                photo("peace_march", "Ciudad Universitaria, marcha por la paz", "Cultura", ("marcha", "protesta")),
+            ),
+            (
+                "Trabajan Morelos, CDMX y Estado de México con colectivos en jornada de búsqueda", "CDMX",
+                photo("search_collective", "Colectivos de búsqueda de personas desaparecidas en campo", keywords=("personas desaparecidas",)),
+            ),
+            (
+                "¿Qué pasó en Plaza Meave hoy? Autoridades de CDMX realizan operativo", "Seguridad",
+                photo("police_jeep", "Jeep de la policía de la Ciudad de México", "Seguridad", ("policía", "patrulla")),
+            ),
+            (
+                "Decomisan 3 toneladas de autopartes en Alcaldía Cuauhtémoc", "Seguridad",
+                photo("police_patrol", "Patrulla de la Policía de la Ciudad de México", "Seguridad", ("policía", "patrulla")),
+            ),
+            (
+                "Tabe en Miguel Hidalgo: cinco años de cambio", "Gobierno",
+                photo("government_building", "Palacio Nacional, sede del Gobierno de México", "Gobierno", ("gobierno",)),
+            ),
+            (
+                "Hemos cambiado y mejorado el rostro de Coyoacán: Giovani Gutierrez", "Gobierno",
+                photo("coyoacan_church", "Iglesia de San Juan Bautista en Coyoacán, Ciudad de México", keywords=("Coyoacán",)),
+            ),
+            (
+                "¡Así celebrará La Orquesta Mondragón su 50 aniversario en CDMX!", "CDMX",
+                photo("cathedral_choir", "Coro de la Catedral Metropolitana de la Ciudad de México", keywords=("coro", "música")),
+            ),
+            (
+                "Día del Soltero hoy: actividades en CDMX, escapadas y origen del 11/11", "Cultura",
+                photo("coyoacan_market", "Mercado de Coyoacán, Ciudad de México", "Alcaldías", ("mercado", "Coyoacán")),
+            ),
+        )
+        for title, category, image in cases:
+            with self.subTest(title=title):
+                article = dict(ARTICLE, title=title, category=category, borough="")
+                self.assertGreaterEqual(photos._photo_score(article, image), 0)
+
+    def test_assign_photos_uses_relevant_context_and_skips_unrelated_images(self):
+        def photo(id_, topic, category="CDMX", keywords=()):
+            return dict(context_photo(id_), topic=topic, category=category, keywords=list(keywords))
+
+        with patch.object(photos, "VERIFIED_EVENTS", Path("/tmp/never-loaded-photo-registry.json")):
+            shelter = dict(
+                ARTICLE,
+                title="Refugio Franciscano busca frenar diligencia judicial en predio de Cuajimalpa",
+                category="Gobierno",
+            )
+            treasury = photo("treasury_room", "Sala de Tesorería del Palacio Nacional", "Gobierno")
+            dogs = photo("dogs_context", "Perros descansando en el Parque España", "Medio Ambiente", ("perros", "mascotas"))
+            with patch.object(photos, "_pool", return_value=[treasury, dogs]):
+                photos.assign_photos([shelter])
+            self.assertEqual(shelter["photo"]["id"], "dogs_context")
+
+            padel = dict(ARTICLE, title="De Polanco a Coyoacán: tres clubes de pádel en CDMX", category="CDMX")
+            church = photo("church_padel", "Iglesia de San Juan Bautista en Coyoacán")
+            with patch.object(photos, "_pool", return_value=[church]):
+                stats = photos.assign_photos([padel])
+            self.assertNotIn("photo", padel)
+            self.assertEqual(stats["assigned"], 0)
+
+            autoparts = dict(
+                ARTICLE,
+                title="CDMX Decomisa 3 Toneladas de Autopartes en Operativos Contra el Robo de Autos; Hay 3 Detenidos",
+                category="Seguridad",
+            )
+            laptop = photo("cyber_laptop", "Laptop asegurada con cadena y candado; seguridad informática", "Seguridad")
+            police = photo("police_patrol", "Patrulla de la Policía de la Ciudad de México", "Seguridad", ("policía", "patrulla"))
+            with patch.object(photos, "_pool", return_value=[laptop, police]):
+                photos.assign_photos([autoparts])
+            self.assertEqual(autoparts["photo"]["id"], "police_patrol")
+
+
 if __name__ == "__main__":
     unittest.main()
