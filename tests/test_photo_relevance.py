@@ -1,7 +1,7 @@
 """Previene asignar fotos de patrullas a noticias de ciclismo o tecnología."""
 import unittest
 
-from scripts.notas_locales import _photo_category, _photo_score, assign_photos
+from scripts.notas_locales import _pool, _photo_category, _photo_score, assign_photos
 import update_news as news
 from update_news import category_by_headline
 
@@ -496,6 +496,46 @@ class PhotoRelevanceTests(unittest.TestCase):
             "borough": "CDMX",
         }
         self.assertGreaterEqual(_photo_score(city_wide_rescue, tlalpan_animals), 0)
+
+
+    def test_education_and_housing_articles_reject_generic_landmark_photos(self):
+        pool = _pool()
+        landmark = next(p for p in pool if "torre latinoamericana" in p["topic"].casefold())
+        school = next(p for p in pool if "escuela primaria" in p["topic"].casefold()
+                      or "mejora de escuelas" in p["topic"].casefold())
+        housing = next(p for p in pool if "unidades habitacionales" in p["topic"].casefold())
+
+        education_article = news.standardize({
+            "title": "PT va en CDMX por el fortalecimiento de la educación integral de niños y niñas desde la cuna",
+            "url": "https://news.google.com/rss/articles/education-photo-regression",
+            "source": "Partido del Trabajo",
+            "date": "2026-11-12",
+            "category": "CDMX",
+            "photo": landmark,
+        })
+        housing_article = news.standardize({
+            "title": "Renta de vivienda en CDMX y Valle de México se encarece más del doble que la compra",
+            "url": "https://news.google.com/rss/articles/housing-photo-regression",
+            "source": "La Jornada",
+            "date": "2026-11-12",
+            "category": "CDMX",
+            "photo": landmark,
+        })
+
+        self.assertLess(_photo_score(education_article, landmark), 0)
+        self.assertGreaterEqual(_photo_score(education_article, school), 0)
+        self.assertLess(_photo_score(housing_article, landmark), 0)
+        self.assertGreaterEqual(_photo_score(housing_article, housing), 0)
+
+        assign_photos([education_article, housing_article])
+        self.assertRegex(education_article["photo"]["topic"].casefold(), r"escuela")
+        self.assertRegex(housing_article["photo"]["topic"].casefold(), r"unidades habitacionales")
+        for article in (education_article, housing_article):
+            photo = article["photo"]
+            self.assertTrue(photo["author"])
+            self.assertTrue(photo["license"])
+            self.assertTrue(photo["licenseUrl"])
+            self.assertTrue(photo["source"].startswith("https://commons.wikimedia.org/wiki/File:"))
 
 
 if __name__ == "__main__":

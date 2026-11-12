@@ -1067,6 +1067,29 @@ def _photo_score(article, photo):
         r"\b(?:tuberias?|drenaje|pavimentacion|pavimento|asfalto|alcantarillas?|red hidraulica|infraestructura hidraulica|obra vial|desazolve|supervision de obras)\b",
         context,
     ))
+    # Las noticias de educación necesitan una escuela o espacio de aprendizaje,
+    # no un monumento o una vista genérica de la ciudad.
+    education_story = bool(re.search(
+        r"\b(?:educacion|educativo|educativa|escuelas?|preescolar|guarderias?)\b",
+        headline,
+    ))
+    education_photo = bool(re.search(
+        r"\b(?:escuelas?|primaria|preescolar|kinder|guarderias?|jardin de ninos|aulas?|alumn[oa]s?|estudiantes?)\b",
+        context,
+    ))
+    if education_story and not education_photo:
+        return -10000
+    # Las notas de renta y vivienda requieren edificios residenciales o unidades habitacionales.
+    housing_story = bool(re.search(
+        r"\b(?:viviendas?|rentas?|alquiler|mercado inmobiliario|inmobiliari[oa]s?|departamentos?)\b",
+        headline,
+    ))
+    housing_photo = bool(re.search(
+        r"\b(?:unidades habitacionales|viviendas?|departamentos?|edificios residenciales|conjuntos habitacionales|condominios?)\b",
+        context,
+    ))
+    if housing_story and not housing_photo:
+        return -10000
     themed_category = (
         (photo_category == "Cultura" and music_story and music_photo)
         or (photo_category == "Medio Ambiente" and (
@@ -1075,6 +1098,8 @@ def _photo_score(article, photo):
         or (protest_story and protest_photo)
         or (lgbt_story and lgbt_photo)
         or (infrastructure_story and infrastructure_photo)
+        or (education_story and education_photo)
+        or (housing_story and housing_photo)
     )
     # Una categoría distinta no basta por sí sola para considerar pertinente una foto.
     if photo_category not in (category, "CDMX", "Alcaldías") and not themed_category:
@@ -1280,6 +1305,10 @@ def _photo_score(article, photo):
         score+=220
     if infrastructure_story and infrastructure_photo:
         score+=180
+    if education_story and education_photo:
+        score+=220
+    if housing_story and housing_photo:
+        score+=220
     return score
 
 
