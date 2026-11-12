@@ -1105,6 +1105,9 @@ def _photo_category(article):
 # Resguardos editoriales: una coincidencia geográfica o de categoría no basta.
 # Si la fototeca no tiene contexto del tema, se prefiere publicar sin imagen.
 STRICT_PHOTO_TOPICS = (
+    # Mantener primero la regla de gas: el titular puede incluir un segundo asunto tras dos puntos.
+    (r"\b(?:pipas? de gas|gas lp|explosion(?:es)? de gas|tanques? de gas|fugas? de gas|acumulacion de gas|estalla\s+(?:un\s+)?tanque(?:\s+de\s+gas)?|incendios?)\b",
+     r"\b(?:gas|tanques?|cilindros?|fugas?|bomberos|incendios?|extintores?|locales? comerciales?|mercados?|cocinas?|alimentos?)\b"),
     # Ballet y circo requieren una imagen de artes escénicas de ese tipo; un Metro o monumento no basta.
     (r"\b(?:ballet|zapatilla de cristal|danza clasica)\b",
      r"\b(?:ballet|bailarinas?|bailarines?|danza clasica|coreografia de ballet|escenario de ballet)\b"),
@@ -1114,11 +1117,8 @@ STRICT_PHOTO_TOPICS = (
     (r"\b(?:feria (?:regional )?del pulque|feria del pulque y la barbacoa|pulque y la barbacoa)\b",
      r"\b(?:pulque|barbacoa|tacos de barbacoa|consome|feria gastronomica|puestos de comida)\b"),
     # Una alerta meteorológica no se ilustra con un sistema de captación de agua de lluvia.
-    (r"\b(?:alerta por diluvio|alerta por lluvias?|lluvias? fuertes?)\b",
+    (r"\b(?:alerta por diluvio|alerta por lluvias?)\b",
      r"\b(?:operativo (?:de )?lluvias?|tormentas?|inundaciones?|calles? anegadas?|lluvia en calles?)\b"),
-    # Mantener primero la regla de gas: el titular puede incluir un segundo asunto tras dos puntos.
-    (r"\b(?:pipas? de gas|gas lp|explosion(?:es)? de gas|tanques? de gas|fugas? de gas|acumulacion de gas|estalla\s+(?:un\s+)?tanque(?:\s+de\s+gas)?|incendios?)\b",
-     r"\b(?:gas|tanques?|cilindros?|fugas?|bomberos|incendios?|extintores?|locales? comerciales?|mercados?|cocinas?|alimentos?)\b"),
     # La electrificación del transporte exige una imagen de un sistema o vehículo de transporte.
     (r"\b(?:transporte(?: publico)?|movilidad)\b.*\b(?:electrico|electrica|electrificacion)\b",
      r"\b(?:trolebus|metrobus|autobus(?:es)?|tren ligero|metro|cablebus|electromovilidad|vehiculos? electricos?)\b"),
