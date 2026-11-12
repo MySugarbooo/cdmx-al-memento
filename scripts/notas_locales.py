@@ -527,6 +527,27 @@ def _photo_fold(text):
     text="".join(char for char in text if not unicodedata.combining(char))
     return " ".join(re.findall(r"[a-z0-9]+",text))
 
+# Ubicaciones inequívocas dentro de las alcaldías. Si una foto declara otra
+# demarcación, no debe ilustrar una noticia localizada en una distinta.
+PHOTO_BOROUGH_ALIASES = {
+    "la magdalena contreras": ("la magdalena contreras", "magdalena contreras"),
+    "alvaro obregon": ("alvaro obregon",),
+    "azcapotzalco": ("azcapotzalco",),
+    "benito juarez": ("benito juarez",),
+    "coyoacan": ("coyoacan",),
+    "cuajimalpa de morelos": ("cuajimalpa de morelos", "cuajimalpa"),
+    "cuauhtemoc": ("cuauhtemoc", "condesa", "parque espana", "roma norte", "roma sur"),
+    "gustavo a madero": ("gustavo a madero", "gustavo amadero"),
+    "iztacalco": ("iztacalco",),
+    "iztapalapa": ("iztapalapa",),
+    "miguel hidalgo": ("miguel hidalgo", "chapultepec", "bosque de chapultepec"),
+    "milpa alta": ("milpa alta",),
+    "tlahuac": ("tlahuac",),
+    "tlalpan": ("tlalpan", "bosque de tlalpan"),
+    "venustiano carranza": ("venustiano carranza",),
+    "xochimilco": ("xochimilco", "canales de xochimilco", "chinampas"),
+}
+
 
 def _photo_category(article):
     headline=_photo_fold(article.get("title"))
@@ -765,7 +786,7 @@ STRICT_PHOTO_TOPICS = (
     (r"\benvenenamientos?\b.*\b(?:perros?|mascotas?)\b",
      r"\b(?:perritos?|perros?|mascotas?|caninos?|veterinaria)\b"),
     (r"\b(?:perritos?|perros?|mascotas?|envenenamientos? de perros?)\b",
-     r"\b(?:perritos?|perros?|mascotas?|caninos?|animales?|veterinaria)\b"),
+     r"\b(?:perritos?|perros?|mascotas?|caninos?|veterinaria)\b"),
     (r"\b(?:ejecutan|ejecutad\w*|ejecucion|matan|balazos|asesinan|homicidio|condenad[oa]s?|condenan|prision|delitos? contra)\b",
      r"\b(?:fiscalia|justicia|tribunal|juzgado|penitenciario|prision|ministerio publico|investigacion penal|policias?|patrullas?|operativo policial)\b"),
     (r"\b(?:sin agua|falta de agua|suspension de agua|corte de agua)\b",
@@ -873,6 +894,14 @@ def _photo_score(article, photo):
     topic=_photo_fold(photo.get("topic"))
     keywords=_photo_fold(" ".join(str(x) for x in photo.get("keywords",[])))
     context=topic+" "+keywords
+    article_borough=_photo_fold(article.get("borough"))
+    if article_borough:
+        photo_boroughs = {
+            borough for borough, aliases in PHOTO_BOROUGH_ALIASES.items()
+            if any(re.search(r"\b"+re.escape(alias)+r"\b",context) for alias in aliases)
+        }
+        if photo_boroughs and article_borough not in photo_boroughs:
+            return -10000
     # Los boletos y documentos históricos solo ilustran noticias sobre esos objetos.
     ticket_photo = bool(re.search(
         r"\b(?:boletos?|tickets?|entradas?|recibos?|credenciales?|pasaportes?)\b", context
@@ -941,6 +970,9 @@ def _photo_score(article, photo):
         return -10000
     # Una graduación policial no representa un robo ni un operativo de vigilancia.
     if (crime_story or police_operation_story) and re.search(r"\bgraduacion\b", topic):
+        return -10000
+    # La policía de tránsito y sus automovilistas no ilustran un robo a comercio.
+    if crime_story and re.search(r"\b(?:policia de transito|policia de trafico|transito|automovilistas?)\b", context):
         return -10000
     # Los delitos cibernéticos requieren contexto de seguridad informática,
     # no una fotografía genérica de Protección Civil o de una patrulla.

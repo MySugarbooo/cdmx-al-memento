@@ -365,12 +365,18 @@ class PhotoRelevanceTests(unittest.TestCase):
             "topic": "Monumento a Colón Paseo de la Reforma Ciudad de México 4",
             "keywords": ["CDMX"],
         }
+        cuajimalpa_patrol = {
+            "category": "Seguridad",
+            "topic": "Nuevas patrullas para Cuajimalpa 01",
+            "keywords": ["Cuajimalpa Ciudad de México"],
+        }
         patrol = {
             "category": "Seguridad",
             "topic": "Patrulla de Ciudad de México",
             "keywords": ["Seguridad"],
         }
         self.assertLess(_photo_score(article, monument), 0)
+        self.assertLess(_photo_score(article, cuajimalpa_patrol), 0)
         self.assertGreaterEqual(_photo_score(article, patrol), 0)
 
     def test_robbery_story_rejects_police_graduation_photo(self):
@@ -383,12 +389,18 @@ class PhotoRelevanceTests(unittest.TestCase):
             "topic": "Graduación de la Policía de la Ciudad de México",
             "keywords": ["Policía Ciudad de México"],
         }
+        traffic_police = {
+            "category": "Seguridad",
+            "topic": "Policía de tránsito Ciudad de México con automovilistas",
+            "keywords": ["Policía de tránsito"],
+        }
         patrol = {
             "category": "Seguridad",
             "topic": "Patrulla de Ciudad de México",
             "keywords": ["Policía Ciudad de México"],
         }
         self.assertLess(_photo_score(article, graduation), 0)
+        self.assertLess(_photo_score(article, traffic_police), 0)
         self.assertGreaterEqual(_photo_score(article, patrol), 0)
 
 
@@ -410,6 +422,32 @@ class PhotoRelevanceTests(unittest.TestCase):
         }
         self.assertLess(_photo_score(article, museum), 0)
         self.assertGreaterEqual(_photo_score(article, cinema), 0)
+
+
+    def test_local_animal_story_rejects_photos_from_other_boroughs(self):
+        article = {
+            "title": "Más de 30 perritos envenenados en Xochimilco; qué se sabe del caso",
+            "category": "CDMX",
+            "borough": "Xochimilco",
+        }
+        tlalpan_animals = {
+            "category": "Alcaldías",
+            "topic": "Animales Bosque de Tlalpan 08",
+            "keywords": ["Tlalpan Ciudad de México"],
+        }
+        condesa_dogs = {
+            "category": "Medio Ambiente",
+            "topic": "Perros descansando en el Parque España, Ciudad de México",
+            "keywords": ["perros", "Condesa"],
+        }
+        xochimilco_dogs = {
+            "category": "Medio Ambiente",
+            "topic": "Perros en Xochimilco, Ciudad de México",
+            "keywords": ["perros", "Xochimilco"],
+        }
+        self.assertLess(_photo_score(article, tlalpan_animals), 0)
+        self.assertLess(_photo_score(article, condesa_dogs), 0)
+        self.assertGreaterEqual(_photo_score(article, xochimilco_dogs), 0)
 
 
 if __name__ == "__main__":
