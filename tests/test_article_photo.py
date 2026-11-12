@@ -57,6 +57,7 @@ class ArticlePhotoTests(unittest.TestCase):
         page = render(item, "15c774326c62e64d619e")
         self.assertIn("Sin fotografía verificada del hecho", page)
         self.assertNotIn('src="/assets/fotos/archivo_seguridad_003.jpg"', page)
+
     def test_animal_cruelty_story_hides_generic_animal_photo(self):
         item = {
             "title": "Detienen a acusado de maltrato animal en Tlalpan",
