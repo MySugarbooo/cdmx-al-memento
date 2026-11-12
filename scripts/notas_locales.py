@@ -969,9 +969,9 @@ def _photo_score(article, photo):
         return -10000
     lgbt_story = bool(re.search(r"\b(?:lgbtttiq|lgbtq?|diversidad sexual)\b", headline))
     lgbt_photo = bool(re.search(r"\b(?:lgbtttiq|lgbtq?|diversidad sexual|marcha del orgullo|orgullo lgbt)\b", context))
-    # Solo las notas de renta/mercado inmobiliario requieren contexto residencial.
+    # Las notas de renta, compra o acceso a vivienda requieren contexto residencial.
     housing_story = bool(re.search(
-        r"\b(?:rentas?|alquiler|mercado inmobiliario|inmobiliari[oa]s?|precios? de vivienda|compra de vivienda|venta de vivienda)\b",
+        r"\b(?:rentas?|alquiler|mercado inmobiliario|inmobiliari[oa]s?|precios? de vivienda|compra de vivienda|comprar vivienda|venta de vivienda|crisis habitacional|vivienda social|vivienda asequible)\b",
         headline,
     ))
     housing_photo = bool(re.search(

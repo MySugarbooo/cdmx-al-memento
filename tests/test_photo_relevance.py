@@ -579,6 +579,25 @@ class PhotoRelevanceTests(unittest.TestCase):
         self.assertGreaterEqual(_photo_score(education_article, school), 0)
         self.assertLess(_photo_score(housing_article, landmark), 0)
         self.assertGreaterEqual(_photo_score(housing_article, housing), 0)
+
+        # La asequibilidad y la compra de vivienda también exigen contexto residencial.
+        palace = next(p for p in pool if "palacio nacional" in p["topic"].casefold())
+        historic_house = next(p for p in pool if "casa centro historico" in p["topic"].casefold())
+        purchase_article = news.standardize({
+            "title": "CDMX: 95% de la población no puede comprar vivienda",
+            "url": "https://news.google.com/rss/articles/housing-affordability-photo-regression",
+            "source": "La Jornada",
+            "date": "2026-11-12",
+            "category": "Gobierno",
+            "photo": palace,
+        })
+        self.assertLess(_photo_score(purchase_article, palace), 0)
+        self.assertGreaterEqual(_photo_score(purchase_article, historic_house), 0)
+        assign_photos([purchase_article])
+        purchase_topic = news.fold(purchase_article["photo"]["topic"])
+        self.assertRegex(purchase_topic, r"(?:unidades habitacionales|casa centro historico|casa en la avenida|casa gonzalez de cosio)")
+        self.assertEqual(purchase_article["photo"]["kind"], "representativa")
+
         emergency = {
             "category": "Seguridad",
             "topic": "Equipo de trabajo de los Bomberos CDMX IMG 2922",
