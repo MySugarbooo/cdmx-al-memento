@@ -38,10 +38,27 @@ SENSITIVE_MEDIA_TITLE = re.compile(
 )
 
 
+def is_coyotepec_highway_crash(article):
+    """Identifica el choque de N+ en Coyotepec, fuera de CDMX."""
+    title = unicodedata.normalize("NFKD", str(article.get("title") or ""))
+    title = "".join(ch for ch in title if not unicodedata.combining(ch)).casefold()
+    source = str(article.get("source") or "").strip().casefold()
+    return (
+        str(article.get("date") or "") == "2026-11-12"
+        and (source == "n+" or source.startswith("n+ "))
+        and "mexico-queretaro" in title
+        and "3 autobuses" in title
+        and "tractocamion" in title
+    )
+
+
 def is_sensitive_media(article):
-    """Impide fotos de contexto en titulares sobre violencia sexual o crueldad animal."""
-    return (article.get("sensitive_media") is True or
-            bool(SENSITIVE_MEDIA_TITLE.search(str(article.get("title") or ""))))
+    """Impide fotos de contexto en noticias sensibles o accidentes graves sin imagen verificada."""
+    return (
+        article.get("sensitive_media") is True
+        or bool(SENSITIVE_MEDIA_TITLE.search(str(article.get("title") or "")))
+        or is_coyotepec_highway_crash(article)
+    )
 
 
 TAGS={
@@ -326,6 +343,34 @@ def summarize(article):
     context=theme["importance"]
     pending=theme["verify"]+" El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar."
     method="Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+    if is_coyotepec_highway_crash(article):
+        return {
+            "lead": (
+                "N+ informó que tres autobuses de turismo y un tractocamión chocaron el 12 de "
+                "noviembre de 2026 en el kilómetro 49+100 de la autopista México-Querétaro, "
+                "a la altura de Coyotepec, Estado de México. La nota reportó al menos 27 "
+                "personas lesionadas y el cierre total de la vía hacia CDMX; CAPUFE realizaba "
+                "maniobras para retirar las unidades y limpiar la carretera."
+            ),
+            "context": (
+                "El siniestro ocurrió en Coyotepec, Estado de México, fuera de la capital. "
+                "Es relevante para quienes viajan hacia CDMX porque el cierre afectó el sentido "
+                "de ingreso a la ciudad."
+            ),
+            "pending": (
+                "El saldo de personas lesionadas y la reapertura pueden cambiar. Antes de salir, "
+                "consulta los avisos vigentes de CAPUFE y Guardia Nacional; N+ señaló como "
+                "alternativas la carretera libre San Miguel Jagüeyes y el Circuito Exterior "
+                "Mexiquense."
+            ),
+            "method": (
+                "Síntesis editorial basada en la nota de N+ publicada el 12 de noviembre de "
+                "2026: https://www.nmas.com.mx/estado-de-mexico/seguridad/accidentes/"
+                "accidente-mexico-queretaro-hoy-12-noviembre-2026-choque-autobuses-pasajeros-"
+                "cierre-cdmx/. El saldo y las condiciones viales son datos atribuidos al medio, "
+                "no una verificación independiente de CDMX AL MEMENTO."
+            ),
+        }
     if (article.get("date") == "2026-11-12"
             and "paseo tollocan" in title.casefold()
             and re.search(r"\bpipa\b", title.casefold())
