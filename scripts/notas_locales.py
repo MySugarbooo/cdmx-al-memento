@@ -117,8 +117,14 @@ def _reported_angle(article):
     if (article.get("date") in {"2026-11-11", "2026-11-12"}
             and re.search(r"\bpipa\b", t)
             and re.search(r"m[eé]xico[- ]pachuca", t)):
+        injury = (
+            f" El titular de {source} menciona al menos dos personas lesionadas."
+            if re.search(r"\bal menos\s+2\s+lesionad", t)
+            else ""
+        )
         return (
-            f"Las coberturas de El Sol de México, La Jornada, UnoTV y DigitalMex ubican la volcadura de una pipa de gas "
+            injury
+            + f"Las coberturas de El Sol de México, La Jornada, UnoTV y DigitalMex ubican la volcadura de una pipa de gas "
             "en la autopista México-Pachuca, a la altura de San Pedro Xalostoc/Santa Clara, "
             "Ecatepec, Estado de México. La afectación fue en dirección a la Ciudad de México; "
             "el hecho ocurrió fuera de la capital. No añadimos causas ni un saldo distinto al "
