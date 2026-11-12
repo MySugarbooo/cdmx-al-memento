@@ -516,7 +516,7 @@ def category_by_headline(title, feed_category, source=""):
     if re.search(r"\b(?:ballet|danza clasica|cirque du soleil|feria (?:regional )?del pulque|pulque y la barbacoa)\b", normalized):
         return "Cultura"
     # Los avisos de lluvia intensa pertenecen a Medio Ambiente, salvo las afectaciones de transporte ya clasificadas arriba.
-    if re.search(r"\b(?:alerta por diluvio|alerta por lluvias?|lluvias? fuertes?)\b", normalized):
+    if re.search(r"\b(?:alerta por diluvio|alerta por lluvias?)\b", normalized):
         return "Medio Ambiente"
     return feed_category
 
