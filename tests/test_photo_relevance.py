@@ -564,7 +564,7 @@ class PhotoRelevanceTests(unittest.TestCase):
         self.assertGreaterEqual(_photo_score(article, cinema), 0)
 
 
-    def test_local_animal_story_rejects_photos_from_other_boroughs(self):
+    def test_animal_poisoning_is_sensitive_even_when_local_context_matches(self):
         article = {
             "title": "Más de 30 perritos envenenados en Xochimilco; qué se sabe del caso",
             "category": "CDMX",
@@ -588,6 +588,11 @@ class PhotoRelevanceTests(unittest.TestCase):
         self.assertLess(_photo_score(article, tlalpan_animals), 0)
         self.assertLess(_photo_score(article, condesa_dogs), 0)
         self.assertGreaterEqual(_photo_score(article, xochimilco_dogs), 0)
+        self.assertTrue(photos.is_sensitive_media(article))
+        with patch.object(photos, "_pool", return_value=[xochimilco_dogs]):
+            assign_photos([article])
+        self.assertTrue(article["sensitive_media"])
+        self.assertNotIn("photo", article)
 
         city_wide_rescue = {
             "title": "Rescatan perritos en parque de la capital",
