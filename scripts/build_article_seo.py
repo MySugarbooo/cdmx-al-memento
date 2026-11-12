@@ -14,7 +14,7 @@ SOURCE = ROOT / "news.json"
 OUT = ROOT / "articulos"
 SITEMAP = ROOT / "sitemap-articulos.xml"
 SENSITIVE_MEDIA_TITLE = re.compile(
-    r"\\b(?:violaci[oó]n|abuso sexual|agresi[oó]n sexual|acoso sexual|violencia sexual)\\b",
+    r"\b(?:violaci[oó]n|abuso sexual|agresi[oó]n sexual|acoso sexual|violencia sexual)\b",
     re.IGNORECASE,
 )
 
