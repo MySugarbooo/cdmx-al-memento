@@ -139,5 +139,17 @@ class LocalNewsTests(unittest.TestCase):
         self.assertIn('"local_url"',updater)
         self.assertIn("summarize(result)",updater)
 
+    def test_recent_operativo_and_government_headlines_are_classified_correctly(self):
+        cases = (
+            ("Tabe en Miguel Hidalgo: cinco años de cambio", "Seguridad", "Gobierno"),
+            ("Hemos cambiado y mejorado el rostro de Coyoacán: Giovani Gutierrez", "CDMX", "Gobierno"),
+            ("¿Qué pasó en Plaza Meave hoy? Autoridades de CDMX realizan operativo", "CDMX", "Seguridad"),
+            ("Decomisan 3 toneladas de autopartes en Alcaldía Cuauhtémoc", "CDMX", "Seguridad"),
+        )
+        for title, feed_category, expected in cases:
+            with self.subTest(title=title):
+                self.assertEqual(category_by_headline(title, feed_category), expected)
+
+
 if __name__=="__main__":
     unittest.main()

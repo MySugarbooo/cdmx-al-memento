@@ -270,6 +270,22 @@ def category_by_headline(title, feed_category, source=""):
     # El estado del Metrobús pertenece a Movilidad, no a la categoría general.
     if re.search(r"\bmetrobus\b", normalized):
         return "Movilidad"
+    # El balance de cinco años de Mauricio Tabe describe gestión de una alcaldía, no un incidente de Seguridad.
+    if (re.search(r"\btabe\b", normalized)
+            and re.search(r"\b(?:cinco anos de cambio|cinco anos de gobierno|quinto balance)\b", normalized)):
+        return "Gobierno"
+    # Las declaraciones del alcalde de Coyoacán sobre cambios en la demarcación son materia de Gobierno.
+    if (re.search(r"\bgiovani gutierrez\b", normalized)
+            and re.search(r"\b(?:cambiado|mejorado|rostro)\b", normalized)):
+        return "Gobierno"
+    # Los operativos de autoridades en Plaza Meave son asuntos de Seguridad.
+    if (re.search(r"\bplaza meave\b", normalized)
+            and re.search(r"\b(?:operativo|decomis\w*|incaut\w*|aseguran|mercancia apocrifa|pirateria)\b", normalized)):
+        return "Seguridad"
+    # Los decomisos de autopartes vinculados al robo de vehículos son Seguridad.
+    if (re.search(r"\b(?:decomis\w*|incaut\w*|asegur\w*)\b", normalized)
+            and re.search(r"\b(?:autopartes|piezas de autos|robo de autos|vehiculos robados)\b", normalized)):
+        return "Seguridad"
     # Los comunicados de la SSC sobre operativos y despliegues policiales
     # son Seguridad aunque el RSS los haya recogido en el feed del Metro.
     if (
