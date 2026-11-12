@@ -963,7 +963,7 @@ def _photo_score(article, photo):
     # En robos, asaltos y extorsiones, la coincidencia de alcaldía no basta:
     # exigir una imagen con contexto de seguridad antes de puntuar el lugar.
     crime_story = bool(re.search(
-        r"\b(?:robo|robos|roban|robado|robada|robaron|decomis\w*|incaut\w*|asegur\w*|asalto|asaltan|ataques? armados?|extorsion|extorsionan|ejecutan|ejecutad\w*|ejecucion|asesinan|asesinad\w*|asesinato|homicidio|matan|balazos|balacera)\b",
+        r"\b(?:robo|robos|roban|robado|robada|robaron|decomis\w*|incaut\w*|asegur\w*|asalto|asaltan|ataques? armados?|extorsion|extorsionan|ejecutan|ejecutad\w*|ejecucion|asesina(?:n)?|asesinad\w*|asesinato|homicidio|matan|balazos|balacera)\b",
         headline,
     ))
     crime_context = bool(re.search(
