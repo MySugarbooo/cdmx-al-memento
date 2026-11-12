@@ -13,6 +13,19 @@ BASE = "https://cdmx-al-memento.pages.dev"
 SOURCE = ROOT / "news.json"
 OUT = ROOT / "articulos"
 SITEMAP = ROOT / "sitemap-articulos.xml"
+SENSITIVE_MEDIA_TITLE = re.compile(
+    r"\\b(?:violaci[oó]n|abuso sexual|agresi[oó]n sexual|acoso sexual|violencia sexual)\\b",
+    re.IGNORECASE,
+)
+
+def is_sensitive_media(item):
+    """Evita ilustraciones genéricas en noticias sobre violencia sexual."""
+    return (item.get("sensitive_media") is True or
+            bool(SENSITIVE_MEDIA_TITLE.search(str(item.get("title") or ""))))
+
+def has_verified_event_photo(photo):
+    return (isinstance(photo, dict) and photo.get("kind") == "hecho" and
+            photo.get("verified") is True and bool(photo.get("evidence_url")))
 
 def esc(value):
     return html.escape(str(value or ""), quote=True)
@@ -24,6 +37,8 @@ def article_id(item):
 def render_photo(item):
     photo = item.get("photo")
     if not isinstance(photo, dict):
+        return ""
+    if is_sensitive_media(item) and not has_verified_event_photo(photo):
         return ""
     image_url = str(photo.get("url") or "")
     # HTTPS remoto o ruta local absoluta sin segmentos de recorrido ni URL de protocolo.
@@ -54,8 +69,8 @@ def render_photo(item):
 def render(item, ident):
     title = esc(item["title"])
     photo_html = render_photo(item)
-    if item.get("sensitive_media") is True and not photo_html:
-        photo_html = '<p class="photo-notice">Sin fotografía autenticada del hecho; no se utilizan imágenes de accidentes ajenos.</p>'
+    if is_sensitive_media(item) and not photo_html:
+        photo_html = '<p class="photo-notice">Sin fotografía verificada del hecho; no se utilizan imágenes de otros sucesos.</p>'
     brief = item.get("brief") or {}
     lead = esc(brief.get("lead") or item.get("description") or "")
     context = esc(brief.get("context") or "Consulta las fuentes y los avisos oficiales.")
