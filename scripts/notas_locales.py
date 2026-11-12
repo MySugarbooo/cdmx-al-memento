@@ -121,6 +121,13 @@ def _reported_angle(article):
                 f"{vehicle}{zone}. {outcome} "
                 "Se requiere consultar la nota original para conocer el punto exacto, las "
                 "circunstancias y los reportes oficiales, sin atribuir responsabilidades sin pruebas.")
+    if ("imss" in t and re.search(r"\bprotest\w*\s+en\s+xalapa\s*;", t)):
+        return (
+            f"La nota de {source} sitúa la protesta de trabajadores del IMSS en Xalapa, Veracruz. "
+            "El titular menciona agresiones contra compañeros en Puebla y CDMX, pero no confirma "
+            "que la movilización haya ocurrido en esas ciudades. Consulta la publicación original "
+            "para conocer los detalles de las demandas."
+        )
     if "imss" in t and ("marcha" in t or "bloque" in t or "moviliza" in t):
         return (f"La cobertura de {source} se centra en movilizaciones de trabajadores "
                 "del IMSS y en su posible o reportada repercusión sobre calles de Ciudad de México. "
@@ -841,6 +848,14 @@ def _photo_score(article, photo):
         return -10000
     category=_photo_category(article)
     photo_category=str(photo.get("category") or "CDMX")
+    # Un festival de fotografía no se ilustra con obras de remodelación urbana.
+    photography_event_story = bool(re.search(r"\bfotogenia\b", headline))
+    construction_photo = bool(re.search(
+        r"\b(?:remodelacion|construccion|demolicion|obra publica|obras publicas|maquinaria pesada|bacheo|pavimentacion)\b",
+        context,
+    ))
+    if photography_event_story and construction_photo:
+        return -10000
     # Una foto de bomberos o rescate solo corresponde a una emergencia mencionada en el titular.
     emergency_photo = bool(re.search(
         r"\b(?:bomberos?|incendios?|explosion(?:es)?|pipas? de gas|gas lp|tanques? de gas|proteccion civil|rescate)\b",

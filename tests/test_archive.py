@@ -568,6 +568,57 @@ class BoroughAndArchiveTests(unittest.TestCase):
         self.assertEqual(news.category_by_headline(
             "Desfile de policías por operativo de seguridad", "Seguridad"), "Seguridad")
 
+    def test_xalapa_imss_protest_is_not_mislocated_as_cdmx(self):
+        title = ("Trabajadores del IMSS protestan en Xalapa; exigen frenar agresiones "
+                 "contra compañeros en Puebla y CDMX")
+        date = datetime.now(timezone.utc).date().isoformat()
+        article = fake(title, date)
+        article["source"] = "El Sol de México"
+        fixed = news.standardize(article)
+        self.assertIsNotNone(fixed)  # Se conserva en la hemeroteca.
+        self.assertTrue(news.outside_cdmx_scope(title))
+        self.assertEqual(news.identify_location(title),
+                         ("", "Xalapa, Veracruz (fuera de CDMX)"))
+        self.assertFalse(news.headline_has_cdmx_signal(title))
+        self.assertEqual(fixed["location"], "Xalapa, Veracruz (fuera de CDMX)")
+        self.assertEqual(news.homepage_articles([fixed], [], datetime.now(timezone.utc)), [])
+        self.assertIn("Xalapa, Veracruz", fixed["description"])
+        self.assertNotIn("clasifica como CDMX", fixed["description"])
+        # Si el titular afirma protestas en ambas ciudades, no aplicar esta excepción.
+        self.assertFalse(news.outside_cdmx_scope(
+            "Trabajadores del IMSS protestan en Xalapa y CDMX"))
+
+    def test_gas_tank_explosion_is_security(self):
+        title = ("Explosión de tanque de gas destruye dos locales en el mercado "
+                 "Ferrería de Azcapotzalco")
+        date = datetime.now(timezone.utc).date().isoformat()
+        article = fake(title, date)
+        article["source"] = "Milenio"
+        fixed = news.standardize(article)
+        self.assertEqual(news.category_by_headline(title, "CDMX", "Milenio"), "Seguridad")
+        self.assertEqual(fixed["category"], "Seguridad")
+        self.assertEqual(fixed["borough"], "Azcapotzalco")
+
+    def test_fotogenia_rejects_unrelated_zocalo_remodeling_photo(self):
+        title = "Fotogenia 8 en CDMX: fechas, sedes gratis y 199 obras"
+        date = datetime.now(timezone.utc).date().isoformat()
+        article = fake(title, date)
+        article["source"] = "CineMedios"
+        fixed = news.standardize(article)
+        self.assertEqual(fixed["category"], "Cultura")
+        construction = {
+            "category": "CDMX",
+            "topic": "Obras remodelación Zócalo Ciudad de México 2017 - 2",
+            "keywords": ["CDMX"],
+        }
+        museum = {
+            "category": "Cultura",
+            "topic": "Museo de Arte Moderno",
+            "keywords": ["Cultura", "museo"],
+        }
+        self.assertLess(news._photo_score(fixed, construction), 0)
+        self.assertGreaterEqual(news._photo_score(fixed, museum), 0)
+
     def test_unambiguous_outside_region_is_not_promoted_or_mislocated(self):
         title = "Muere conductor tras chocar contra autobús en Carretera a Laredo en Escobedo"
         self.assertTrue(news.outside_cdmx_scope(title))

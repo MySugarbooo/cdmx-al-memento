@@ -111,6 +111,13 @@ def fold(value):
 def outside_cdmx_location(title):
     """Identifica solo hechos con lugar externo inequívoco en el titular."""
     words = " " + fold(title) + " "
+    # El punto y coma separa la protesta en Xalapa de la referencia posterior
+    # a agresiones contra compañeros en Puebla y CDMX.
+    if re.search(
+        r"\b(?:protest\w*|march\w*|manifest\w*|moviliz\w*)\s+en\s+xalapa\s*;",
+        words,
+    ):
+        return "Xalapa, Veracruz"
     # Un titular turístico sobre fincas de Veracruz puede mencionar CDMX solo
     # como referencia de distancia; eso no convierte el lugar en noticia local.
     if (re.search(r"\bfincas? de cafe de veracruz\b", words)
@@ -254,7 +261,7 @@ def category_by_headline(title, feed_category, source=""):
     normalized_source = fold(source)
     # Las explosiones y fugas de gas son emergencias de Seguridad, no CDMX genérico.
     if re.search(
-        r"\b(?:explosion(?:es)? de gas|fugas? de gas|incendios?|estalla\s+(?:un\s+)?tanque(?:\s+de\s+gas)?)\b",
+        r"\b(?:explosion(?:es)? de (?:un )?tanque de gas|explosion(?:es)? de gas|fugas? de gas|incendios?|estalla\s+(?:un\s+)?tanque(?:\s+de\s+gas)?)\b",
         normalized,
     ):
         return "Seguridad"
@@ -276,6 +283,9 @@ def category_by_headline(title, feed_category, source=""):
     # El estado del Metrobús pertenece a Movilidad, no a la categoría general.
     if re.search(r"\bmetrobus\b", normalized):
         return "Movilidad"
+    # Fotogenia es un festival cultural; no debe quedarse en CDMX genérico.
+    if re.search(r"\bfotogenia\b", normalized):
+        return "Cultura"
     # El balance de cinco años de Mauricio Tabe describe gestión de una alcaldía, no un incidente de Seguridad.
     if (re.search(r"\btabe\b", normalized)
             and re.search(r"\b(?:cinco anos de cambio|cinco anos de gobierno|quinto balance)\b", normalized)):
