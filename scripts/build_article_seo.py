@@ -18,9 +18,10 @@ SENSITIVE_MEDIA_TITLE = re.compile(
     r"maltrato animal|crueldad animal|tortura animal|violencia contra animales?|"
     r"agresi[oó]n contra animales?|"
     r"(?:matar|matan|mat[oó]|mataron|asesinar|asesinan|asesin[oó]|"
-    r"envenenar|envenenan|envenen[oó]|golpear|golpean|golpe[oó])\s+(?:a\s+)?"
+    r"envenenar|envenenan|envenen[oó]|golpear|golpean|golpe[oó])\s+(?:a\s+(?:(?:los|las|un|una|unos|unas)\s+)?)?"
     r"(?:perros?|perritos?|gatos?|mascotas?|animales?)|"
-    r"(?:perros?|perritos?|gatos?|mascotas?|animales?)\s+maltratad[oa]s?)\b",
+    r"(?:perros?|perritos?|gatos?|mascotas?|animales?)\s+(?:maltratad[oa]s?|envenenad[oa]s?)|"
+    r"envenenamiento de (?:perros?|perritos?|gatos?|mascotas?|animales?))\b",
     re.IGNORECASE,
 )
 
