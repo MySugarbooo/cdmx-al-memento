@@ -2246,40 +2246,81 @@ def _photo_score(article, photo):
 
 
 def assign_photos(items):
-    """Acontecimiento aprobado primero; si no, tema y lugar más próximos."""
-    pool=_pool()
-    reserved=set()
-    verified_catalog=_load(VERIFIED_EVENTS,"photos")
-    exact_count=0
+    """Conserva fotos acreditadas pertinentes y solo las sustituye por una mejor."""
+    pool = _pool()
+    reserved = set()
+    verified_catalog = _load(VERIFIED_EVENTS, "photos")
+    exact_count = 0
+
+    def has_complete_credit(photo):
+        return (
+            isinstance(photo, dict)
+            and photo.get("kind") in {"representativa", "hecho"}
+            and all(str(photo.get(key) or "").strip() for key in (
+                "url", "source", "author", "license", "licenseUrl"
+            ))
+            and str(photo.get("url") or "").startswith(("https://", "http://"))
+            and str(photo.get("source") or "").startswith(("https://", "http://"))
+            and str(photo.get("licenseUrl") or "").startswith(("https://", "http://"))
+        )
+
     # Un orden estable evita cambios arbitrarios entre actualizaciones del feed.
-    for a in items:
-        exact=verified_event_photo(a,verified_catalog)
+    for article in items:
+        exact = verified_event_photo(article, verified_catalog)
         if exact:
-            a["photo"]=exact
-            exact_count+=1
+            article["photo"] = exact
+            if exact.get("id"):
+                reserved.add(exact["id"])
+            exact_count += 1
             continue
+
         # Los titulares sensibles nunca reciben fotografías de contexto.
-        # Solo una fotografía documental aprobada arriba puede acompañarlos.
-        if is_sensitive_media(a):
-            a["sensitive_media"] = True
-            a.pop("photo", None)
+        if is_sensitive_media(article):
+            article["sensitive_media"] = True
+            article.pop("photo", None)
             continue
-        # La imagen antigua no tiene preferencia sobre otra que represente mejor el tema.
-        a.pop("photo",None)
-        available=[p for p in pool if p.get("id") not in reserved]
-        candidates=available or pool
-        if not candidates:
+
+        existing = article.get("photo")
+        existing_score = (
+            _photo_score(article, existing) if has_complete_credit(existing) else -10000
+        )
+
+        available = [photo for photo in pool if photo.get("id") not in reserved]
+        candidates = available or pool
+        best = None
+        best_score = -10000
+        if candidates:
+            best = max(candidates, key=lambda photo: (
+                _photo_score(article, photo),
+                # Desempate estable, sin elegir siempre el primer elemento de la categoría.
+                hashlib.sha256(
+                    (str(article.get("url")) + "|" + str(photo.get("id"))).encode()
+                ).hexdigest(),
+            ))
+            best_score = _photo_score(article, best)
+
+        # Si no hay reemplazo pertinente, conserva la foto anterior solo si
+        # sigue siendo pertinente y tiene autor, licencia y fuente completos.
+        if existing_score >= 0 and (best is None or best_score <= existing_score):
+            if existing.get("id"):
+                reserved.add(existing["id"])
+            article["photo"] = existing
             continue
-        # La puntuación de pertinencia tiene prioridad absoluta sobre la variedad.
-        best=max(candidates,key=lambda p:(
-            _photo_score(a,p),
-            # Desempate estable, sin elegir siempre el primer elemento de la categoría.
-            hashlib.sha256((str(a.get("url"))+"|"+str(p.get("id"))).encode()).hexdigest(),
-        ))
-        if _photo_score(a,best)<0:
-            continue
-        a["photo"]=best
-        reserved.add(best["id"])
-    return {"available":len(pool),"assigned":sum(bool(a.get("photo")) for a in items),
-            "unique":len({a["photo"]["id"] for a in items if a.get("photo")}),
-            "del_hecho_verificadas":exact_count}
+
+        if best is not None and best_score >= 0:
+            article["photo"] = best
+            if best.get("id"):
+                reserved.add(best["id"])
+        else:
+            article.pop("photo", None)
+
+    return {
+        "available": len(pool),
+        "assigned": sum(bool(article.get("photo")) for article in items),
+        "unique": len({
+            article["photo"]["id"] for article in items
+            if isinstance(article.get("photo"), dict) and article["photo"].get("id")
+        }),
+        "del_hecho_verificadas": exact_count,
+    }
+
