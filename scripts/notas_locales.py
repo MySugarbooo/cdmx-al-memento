@@ -1433,7 +1433,7 @@ STRICT_PHOTO_TOPICS = (
     (r"\b(?:congreso capitalino|congreso de la cdmx|congreso de la ciudad de mexico)\b",
      r"\b(?:congreso de la ciudad de mexico|palacio legislativo|donceles|recinto legislativo|sala de sesiones)\b"),
     (r"\bplan general de desarrollo\b",
-     r"\b(?:plan general de desarrollo|planeacion urbana|urbanismo|recinto legislativo|congreso de la ciudad de mexico|mapa urbano|documento de planeacion)\b"),
+     r"\b(?:plan general de desarrollo|planeacion urbana|urbanismo|recinto legislativo|congreso de la ciudad de mexico|palacio legislativo|donceles|sala de sesiones|mapa urbano|documento de planeacion)\b"),
     # Las iniciativas de justicia ambiental necesitan paisaje o biodiversidad, no un palacio.
     (r"\b(?:justicia ambiental|proteger la biodiversidad|biodiversidad)\b",
      r"\b(?:parque ecologico|bosque|viveros|jardin escenico|biodiversidad|flora|fauna|areas verdes|ecosistema)\b"),
