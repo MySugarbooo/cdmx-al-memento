@@ -2334,6 +2334,8 @@ class EditorialPhotoMismatchRegressionTests(unittest.TestCase):
             "contexto_semovi_oficinas_roma_2022",
             "contexto_tienda_abarrotes_coyoacan_2018",
             "contexto_jardinera_arquitectura_hostil_benito_juarez_2023",
+            "contexto_aicm_aviones_pista_2026",
+            "contexto_consolas_videojuegos_2026",
         }
         for relative in (
             "assets/fotos/contexto-tematico.json",
@@ -2352,6 +2354,66 @@ class EditorialPhotoMismatchRegressionTests(unittest.TestCase):
                     self.assertTrue(item.get("licenseUrl", "").startswith("https://creativecommons.org/"))
                 if "count" in data:
                     self.assertEqual(data["count"], len(data["photos"]))
+
+
+class CurrentFeedEditorialPhotoRegressionTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        cls.pool = {photo["id"]: photo for photo in _pool()}
+
+    def assert_photo_replaced(self, title, category, current_id, candidate_id):
+        current = deepcopy(self.pool[current_id])
+        candidate = deepcopy(self.pool[candidate_id])
+        article = {
+            "title": title,
+            "category": category,
+            "source": "El Sol de México",
+            "url": "https://news.google.com/rss/articles/editorial-photo-current-feed-regression",
+            "date": "2026-11-13",
+            "photo": current,
+        }
+        self.assertTrue(news.photo_needs_refresh(article))
+        self.assertLess(_photo_score(article, current), 0)
+        self.assertGreaterEqual(_photo_score(article, candidate), 0)
+        with patch.object(photos, "_pool", return_value=[current, candidate]), patch.object(
+            photos, "_load", return_value=[]
+        ):
+            assign_photos([article])
+        self.assertEqual(article["photo"]["id"], candidate_id)
+        self.assertTrue(article["photo"]["author"])
+        self.assertTrue(article["photo"]["license"])
+
+    def test_airport_flight_story_replaces_metro_terminal_station_with_aicm_aircraft(self):
+        self.assert_photo_replaced(
+            "Aeropuerto de CDMX informa sobre afectaciones de vuelos desde y hacia EEUU",
+            "Movilidad", "reciente_c4e1387f207f104c", "contexto_aicm_aviones_pista_2026")
+
+    def test_pokemon_go_story_replaces_market_with_representative_video_game_photo(self):
+        self.assert_photo_replaced(
+            "Pokémon Go genera 420,000 dólares en CDMX y muestra que México es un mercado clave para el juego",
+            "Cultura", "commons_75214598", "contexto_consolas_videojuegos_2026")
+
+    def test_garbage_story_replaces_treasury_hall_with_concert_photo(self):
+        self.assert_photo_replaced(
+            "Garbage llega al Zócalo de CDMX: Shirley Manson agradece al público mexicano",
+            "Cultura", "commons_98002541", "contexto_concierto_palacio_deportes_2009")
+
+    def test_market_funding_story_replaces_covid_sanitation_photo_with_market_context(self):
+        self.assert_photo_replaced(
+            "Mercados de CDMX recibirán un millón de pesos para mejorar sus instalaciones",
+            "Gobierno", "commons_89299418", "commons_152145024")
+
+    def test_console_photo_caption_is_explicitly_representative_not_pokemon_go(self):
+        expected = "Consolas y videojuegos actuales (fotografía de 2026); imagen representativa del sector de videojuegos, no corresponde a Pokémon Go ni a la mercancía asegurada en Plaza Meave."
+        for relative in (
+            "assets/fotos/contexto-tematico.json",
+            "assets/fotos/indice-noticias-1100.json",
+            "assets/fotos/catalogo-editorial-1100.json",
+        ):
+            with self.subTest(path=relative):
+                data = json.loads((REPO_ROOT / relative).read_text(encoding="utf-8"))
+                photo = next(item for item in data["photos"] if item.get("id") == "contexto_consolas_videojuegos_2026")
+                self.assertEqual(photo["topic"], expected)
 
 
 if __name__ == "__main__":
