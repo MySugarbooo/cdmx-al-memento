@@ -66,7 +66,7 @@ class StableHomepageTests(unittest.TestCase):
         self.assertIn("const sensitive=a?.sensitive_media===true||sensitiveMediaTitle(a?.title);", script)
         self.assertIn("if((!p&&!sensitive)||(p&&usedPhotos.has(p.url)))return false;", script)
         self.assertIn("Sin fotografía verificada del hecho", script)
-        self.assertIn("const candidates=state.stories.map((item,index)=>({item,index})=>({item,index})).filter(({item})=>photoInfo(item)&&!isWeatherForecastOnly(item)&&!isStaleTimeSensitiveHeadline(item));", script)
+        self.assertIn("const candidates=state.stories.map((item,index)=>({item,index})).filter(({item})=>photoInfo(item)&&!isWeatherForecastOnly(item)&&!isStaleTimeSensitiveHeadline(item));", script)
 
     def test_ads_archive_and_caching_unchanged(self):
         home = read("index.html")
@@ -111,7 +111,7 @@ class StableHomepageTests(unittest.TestCase):
     def test_expired_today_and_live_headlines_do_not_become_the_lead(self):
         script = read("assets/neo-home.js")
         self.assertIn("function isStaleTimeSensitiveHeadline(article,now=new Date())", script)
-        self.assertIn(r"\\b(?:hoy|en vivo)\\b", script)
+        self.assertIn(r"\b(?:hoy|en vivo)\b", script)
         self.assertIn("return day!==homepageDateFormatter.format(now);", script)
         hero = script[script.index("function renderHero()"):script.index("function renderNews()")]
         self.assertIn("!isStaleTimeSensitiveHeadline(item)", hero)
