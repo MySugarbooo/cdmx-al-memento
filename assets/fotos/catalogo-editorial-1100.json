@@ -1,7 +1,7 @@
 {
   "version": 3,
   "created": "2026-11-13",
-  "count": 1107,
+  "count": 1108,
   "source": "Wikimedia Commons (metadatos consultados mediante su API)",
   "notice": "Imagen de carácter ilustrativo y referencial; no constituye evidencia gráfica de los hechos descritos.",
   "licenseNotice": "Las licencias CC BY y CC BY-SA exigen atribución; CC BY-SA puede exigir compartir adaptaciones bajo la misma licencia. Los derechos personales y de obras representadas se evalúan por separado. No se afirma que la imagen documente el acontecimiento.",
@@ -17950,6 +17950,27 @@
       "adaptation": "Miniatura oficial de Wikimedia Commons; sin modificación.",
       "captured_at": "2015-09-22",
       "uploaded_at": "2015-09-24"
+    },
+    {
+      "id": "contexto_farmacia_santa_maria_ribera_2022",
+      "kind": "representativa",
+      "category": "CDMX",
+      "topic": "Farmacia de barrio en Santa María de la Ribera, Cuauhtémoc, CDMX (29 dic 2022); imagen representativa, no es de Farmacias del Ahorro ni Benavides.",
+      "file": "Farmacia en Santa María de la Ribera.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Farmacia_en_Santa_Mar%C3%ADa_de_la_Ribera.jpg/960px-Farmacia_en_Santa_Mar%C3%ADa_de_la_Ribera.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Farmacia_en_Santa_Mar%C3%ADa_de_la_Ribera.jpg",
+      "author": "ProtoplasmaKid",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "keywords": [
+        "farmacia",
+        "farmacia de barrio",
+        "Santa María de la Ribera",
+        "Cuauhtémoc",
+        "Ciudad de México"
+      ],
+      "context": "Imagen de carácter ilustrativo y referencial; no constituye evidencia gráfica de los hechos descritos.",
+      "adaptation": "Miniatura oficial de Wikimedia Commons; sin modificación."
     }
   ]
 }

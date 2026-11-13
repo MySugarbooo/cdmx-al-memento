@@ -1705,6 +1705,9 @@ STRICT_PHOTO_TOPICS = (
     # Una nota de límites metropolitanos necesita mapa o contexto territorial.
     (r"\b(?:edomex.*cdmx.*valle de mexico|valle de mexico.*diferencias|territorios comprenden)\b",
      r"\b(?:mapa|cartografia|zona metropolitana|valle de mexico|territorio|edomex|estado de mexico)\b"),
+    # La compra o expansión de cadenas farmacéuticas requiere una farmacia, no una foto cultural.
+    (r"\b(?:farmacias? del ahorro|benavides|cadena de farmacias?)\b",
+     r"\b(?:farmacias?|boticas?|medicamentos?|droguerias?)\b"),
     # Una nota sobre una orquesta necesita contexto musical, incluido un coro representativo.
     (r"\b(?:orquesta|aniversario musical)\b",
      r"\b(?:orquestas?|musica|conciertos?|guitarras?|bandas?|coros?|coral|escenarios?|cantantes?|festivales?|auditorios?|estadios?)\b"),
