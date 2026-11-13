@@ -66,7 +66,7 @@ class StableHomepageTests(unittest.TestCase):
         self.assertIn("const sensitive=a?.sensitive_media===true||sensitiveMediaTitle(a?.title);", script)
         self.assertIn("if((!p&&!sensitive)||(p&&usedPhotos.has(p.url)))return false;", script)
         self.assertIn("Sin fotografía verificada del hecho", script)
-        self.assertIn("const candidates=state.stories.map((item,index)=>({item,index})).filter(({item})=>photoInfo(item));", script)
+        self.assertIn("const candidates=state.stories.map((item,index)=>({item,index})).filter(({item})=>photoInfo(item)&&!isWeatherForecastOnly(item));", script)
 
     def test_ads_archive_and_caching_unchanged(self):
         home = read("index.html")
