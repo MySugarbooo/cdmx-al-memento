@@ -75,7 +75,7 @@ class StableHomepageTests(unittest.TestCase):
         self.assertIn('src="/app.js?v=',home)
         self.assertIn('href="/archivo/"',home)
         self.assertIn('src="/assets/neo-home.js?v=',home)
-        self.assertIn('src="/assets/neo-home.js?v=20261112-no-weather-hero1"', home)
+        self.assertIn('src="/assets/neo-home.js?v=20261112-no-weather-hero2"', home)
         self.assertRegex(home, r'href="/assets/neo-home\.css\?v=[a-zA-Z0-9_-]+"')
         headers=read("_headers")
         self.assertIn("Cache-Control: no-cache, must-revalidate",headers)
@@ -90,6 +90,8 @@ class StableHomepageTests(unittest.TestCase):
         self.assertIn("return forecastOnly&&!concreteImpact;", script)
         self.assertIn(r"habr[aá]\s+(?:lluvias|tormenta|chubascos|granizo)", script)
         self.assertIn(r"activan\s+alerta\s+por\s+(?:lluvias|diluvio|tormenta)", script)
+        self.assertIn(r"se esperan?\s+(?:lluvias|tormentas|chubascos|granizo|temperaturas?|frente frío)", script)
+        self.assertIn(r"lluvias?\s+(?:fuertes|intensas|moderadas|ligeras|torrenciales)\s+en\s+(?:la\s+)?(?:cdmx|ciudad\s+de\s+m[eé]xico)", script)
         # Los avisos de clima permanecen en las últimas noticias; solo se excluyen del destacado.
         news = script[script.index("function renderNews()"):script.index("function mirrorVisits()")]
         self.assertIn("const all=state.stories;", news)
