@@ -22,6 +22,8 @@ VERIFIED_SOURCE_LINKS = {
         "https://www.infobae.com/mexico/2026/11/12/detienen-a-presunto-abusador-sexual-de-animales-en-situacion-de-calle-en-cdmx-activistas-piden-que-las-investigaciones-lleguen-a-fondo/",
     ("sdpnoticias", "/noticias/?id=842f4c3306f51b3ab9fc&mes=2026-11"):
         "https://www.sdpnoticias.com/estados/cdmx/mauricio-tabe-presenta-su-quinto-informe-de-gobierno-en-miguel-hidalgo/",
+    ("Capital CDMX", "/noticias/?id=74914aa9a2dc0fd99b2f&mes=2026-11"):
+        "https://capital-cdmx.org/presupuesto-cuidados-2027-cdmx-cuanto-dinero-llegara-anexo-31-desglose/",
 }
 SENSITIVE_MEDIA_TITLE = re.compile(
     r"\b(?:violaci[oó]n|abuso sexual|agresi[oó]n sexual|acoso sexual|violencia sexual|"
