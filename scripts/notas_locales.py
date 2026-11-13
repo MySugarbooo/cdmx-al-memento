@@ -1381,7 +1381,7 @@ STRICT_PHOTO_TOPICS = (
     # La vigilancia requiere contexto policial; el alumbrado requiere luminarias.
     (r"\b(?:vigilancia|vigilad[oa]s?)\b",
      r"\b(?:patrullas?|policias?|camaras? de vigilancia|vigilancia policial|mujeres|apoyos? a mujeres)\b"),
-    (r"\b(?:alumbrado|luminarias?|iluminacion|iluminadas?)\b",
+    (r"(?=.*\b(?:nuevas? luminarias?|80 mil luminarias|luminarias?|alumbrado|iluminacion|iluminadas?)\b)(?!.*\b(?:vigilancia|vigilad[oa]s?|patrullas?|policias?|robo|roban|robaron|cable|cables|sustraccion|asalto|homicidio|asesinad\w*)\b)",
      r"\b(?:alumbrado|luminarias?|iluminacion|faroles?|postes? de luz)\b"),
     # Un festival de cine requiere una imagen cinematográfica, no un museo genérico.
     (r"\b(?:cine de barrio|festival(?: de)? cine)\b",
