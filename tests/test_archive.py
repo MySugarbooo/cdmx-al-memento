@@ -19,6 +19,40 @@ def fake(title, date, published_at=None):
 
 
 class BoroughAndArchiveTests(unittest.TestCase):
+    def test_active_feed_deduplicates_source_url_and_preserves_alternate_titles(self):
+        url = "https://news.google.com/rss/articles/metro-live-feed-duplicate?oc=5"
+        first = {
+            "title": "Metro CDMX: Avance de trenes HOY viernes 13 de noviembre 2026 en vivo",
+            "url": url,
+            "source": "TV Azteca",
+            "date": "2026-11-13",
+            "published_at": "2026-11-13T15:00:00+00:00",
+            "category": "Metro",
+            "borough": "",
+            "location": "Ciudad de México (sin alcaldía identificada)",
+            "local_url": "/noticias/?id=0123456789abcdefabcd&mes=2026-11",
+            "description": "Avance de trenes del Metro CDMX.",
+            "brief": {"lead": "Avance de trenes del Metro CDMX."},
+        }
+        alternate = {
+            **first,
+            "title": "Afluencia del Metro CDMX hoy viernes 13 de noviembre 2026",
+            "published_at": "2026-11-13T14:59:00+00:00",
+            "description": "Afluencia del Metro CDMX.",
+            "brief": {"lead": "Afluencia del Metro CDMX."},
+        }
+
+        result = news.dedupe_feed_by_source_url([first, alternate])
+
+        self.assertEqual(len(result), 1)
+        self.assertEqual(result[0]["url"], url)
+        self.assertEqual(result[0]["title"], first["title"])
+        alternate_titles = [
+            version.get("title")
+            for version in result[0].get("alternate_versions", [])
+        ]
+        self.assertIn(alternate["title"], alternate_titles)
+
     def test_predial_news_rejects_monument_and_uses_treasury_context(self):
         article = {
             "title": "La recaudación de predial por habitante en CDMX es 25 veces mayor que en Oaxaca",
