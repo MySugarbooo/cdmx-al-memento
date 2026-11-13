@@ -145,6 +145,7 @@ on:
       - 'tests/test_photo_relevance.py'
       - 'tests/test_neo_home_stability.py'
       - 'tests/test_fototeca_editorial.py'
+      - 'tests/test_portal.py'
 permissions:
   contents: write
 concurrency:
