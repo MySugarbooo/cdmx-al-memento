@@ -1,4 +1,5 @@
 """Garantiza noticias leíbles aquí, fotografías únicas y atribución responsable."""
+import json
 import unittest
 from pathlib import Path
 from scripts.notas_locales import assign_photos, local_link, summarize, is_sensitive_media
@@ -563,8 +564,11 @@ class LocalNewsTests(unittest.TestCase):
         self.assertEqual(photo["author"], "Secretaría de Cultura Ciudad de México")
         self.assertEqual(photo["license"], "CC BY 2.0")
         self.assertIn("fotografía de 2019", photo["topic"])
-        self.assertEqual(photo["uploaded_at"], "2020-01-13")
-        self.assertEqual(photo["captured_at"], "2019-02-10")
+        catalog = json.loads((ROOT / "assets/fotos/catalogo-editorial-1100.json").read_text(encoding="utf-8"))
+        catalog_photo = next(p for p in catalog["photos"] if p["id"] == "contexto_teatro_angela_peralta")
+        self.assertEqual(catalog_photo["uploaded_at"], "2020-01-13")
+        self.assertEqual(catalog_photo["captured_at"], "2019-02-10")
+        self.assertEqual(catalog_photo["context"], "Imagen de carácter ilustrativo y referencial; no constituye evidencia gráfica de los hechos descritos.")
 
         rendered = render(article, article_id(article))
         self.assertIn('href="https://www.sdpnoticias.com/estados/cdmx/mauricio-tabe-presenta-su-quinto-informe-de-gobierno-en-miguel-hidalgo/"', rendered)
