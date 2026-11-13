@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-13 20:52 UTC",
+  "updated": "2026-11-13 22:41 UTC",
   "boroughs": [
     {
       "name": "La Magdalena Contreras",
@@ -5024,12 +5024,6 @@
           "borough": "Coyoacán",
           "location": "Coyoacán (mencionada en el titular)",
           "local_url": "/noticias/?id=e8fda2b9419fcf1d70e8&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con Infobae, el titular publicado es: «Madres de familia denuncian falta de infraestructura en primarias de Coyoacán: exigen domos y mantenimiento». La información publicada por Infobae aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
           "alternate_versions": [
             {
               "title": "Madres de familia denuncian falta de infraestructura en primarias de Coyoacán: exigen domos y mantenimiento",
@@ -5064,7 +5058,13 @@
                 "source": "https://commons.wikimedia.org/wiki/File:Estaci%C3%B3n_Coyoac%C3%A1n_de_la_L%C3%ADnea_3_del_Metro_de_la_Ciudad_de_M%C3%A9xico_01.jpg"
               }
             }
-          ]
+          ],
+          "brief": {
+            "lead": "De acuerdo con Infobae, el titular publicado es: «Madres de familia denuncian falta de infraestructura en primarias de Coyoacán: exigen domos y mantenimiento». La información publicada por Infobae aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          }
         },
         {
           "title": "Hannah De Lamadrid se reúne con jóvenes universitarios en Coyoacán",
@@ -6539,8 +6539,41 @@
     },
     {
       "name": "Cuajimalpa de Morelos",
-      "count": 42,
+      "count": 43,
       "articles": [
+        {
+          "title": "Destaca Cuajimalpa primer lugar en eficiencia policial: presenta alcalde avances en seguridad y obra pública",
+          "description": "De acuerdo con El Sol de México, el titular publicado es: «Destaca Cuajimalpa primer lugar en eficiencia policial: presenta alcalde avances en seguridad y obra pública». La información publicada por El Sol de México aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxNXzRpWnJJYjJJTlEtc2hYTGhkNHJhcV9Ua2tSOG9BUlU2WnZwMG1adURnaHd0bllMUFJPY0lTeUhRcjFLU1QzYWpUaWxXaTdpdWcxblNyQ1pabXpUZGEzMUdiSnF6RFlQT0VRQi1IcmtmVzNSWEs0cW1nck5zNlBVTElNY0FYLWJ4cm1aM3FJNHh6LTRzM1gwTUpmQ0RVWC1pSjRFTGdYOENCRzZ2TXlxUHg2dGFYR3VXU0xGTkhXY0p3RlMyMEZCMFRjUkVyUVNMNzVNSk45MlNadU1rbHVRVjRyLUR1V3RtcU5MYzEwaE1ZUW9vY0JCVQ?oc=5",
+          "source": "El Sol de México",
+          "date": "2026-11-13",
+          "published_at": "2026-11-13T22:04:37Z",
+          "category": "Seguridad",
+          "borough": "Cuajimalpa de Morelos",
+          "location": "Cuajimalpa de Morelos (mencionada en el titular)",
+          "local_url": "/noticias/?id=2b954366eaef5008f7ca&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con El Sol de México, el titular publicado es: «Destaca Cuajimalpa primer lugar en eficiencia policial: presenta alcalde avances en seguridad y obra pública». La información publicada por El Sol de México aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "archivo_seguridad_002",
+            "kind": "representativa",
+            "url": "/assets/fotos/archivo_seguridad_002.jpg",
+            "category": "Seguridad",
+            "borough": "",
+            "topic": "Patrulla vecinal",
+            "keywords": [
+              "Seguridad"
+            ],
+            "author": "Daniel Yonka",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Patrulla_vecinal.jpg"
+          }
+        },
         {
           "title": "Segundo Informe de Cuajimalpa: Alcaldía destaca avances en seguridad y servicios públicos",
           "description": "De acuerdo con El Financiero, el titular publicado es: «Segundo Informe de Cuajimalpa: Alcaldía destaca avances en seguridad y servicios públicos». La información publicada por El Financiero aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -7297,39 +7330,6 @@
             "license": "CC BY-SA 3.0",
             "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
             "source": "https://commons.wikimedia.org/wiki/File:CuajimalpaCentro01.JPG"
-          }
-        },
-        {
-          "title": "Cuajimalpa lidera baja en percepción de inseguridad en la CDMX con caída de 9.7 puntos: Inegi",
-          "description": "De acuerdo con El Sol de México, el titular publicado es: «Cuajimalpa lidera baja en percepción de inseguridad en la CDMX con caída de 9.7 puntos: Inegi». La información publicada por El Sol de México aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQVDhTVTNVMWRTUkVNQUU4aWV2bUxBTFFJOFRwYTJkSnY3VFoydmFuNW9heUpDS3RCVWVwdDJ5UGR3VGM5MW9BdjEtd2o5b01yYkRQSmFySjJaVlpsOHVtQ3FJQl84SE9zRzNGX01iaXVvS3VPaTFvREVuVkNIUlQybVBUQWRROXdCM1Zhb1p5dEswdTJTcGZlRjN3OEhIem5JN0FUbHdaREY3clBrUWhoRWlBaFNqWW10Tk9JQTJBZHJXNjIzOUR1VFFvSzhyQnY0U1RxN3VlZ0l1UHJnZGFSUEwzTGZGa09Pc2c?oc=5",
-          "source": "El Sol de México",
-          "date": "2026-10-24",
-          "published_at": "2026-10-24T06:03:29Z",
-          "category": "CDMX",
-          "borough": "Cuajimalpa de Morelos",
-          "location": "Cuajimalpa de Morelos (mencionada en el titular)",
-          "local_url": "/noticias/?id=a8116c32f8f911258c6f&mes=2026-10",
-          "brief": {
-            "lead": "De acuerdo con El Sol de México, el titular publicado es: «Cuajimalpa lidera baja en percepción de inseguridad en la CDMX con caída de 9.7 puntos: Inegi». La información publicada por El Sol de México aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "commons_145192423",
-            "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/DECLARATORIA_DE_CARNAVALES_COMO_PATRIMONIO_CULTURAL_INMATERIAL_DE_LA_CIUDAD_DE_M%C3%89XICO_11.jpg/960px-DECLARATORIA_DE_CARNAVALES_COMO_PATRIMONIO_CULTURAL_INMATERIAL_DE_LA_CIUDAD_DE_M%C3%89XICO_11.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "category": "CDMX",
-            "borough": "",
-            "topic": "DECLARATORIA DE CARNAVALES COMO PATRIMONIO CULTURAL INMATERIAL DE LA CIUDAD DE MÉXICO 11",
-            "keywords": [
-              "Calles Ciudad de México"
-            ],
-            "author": "Secretaría de Cultura CDMX",
-            "license": "CC BY 2.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-            "source": "https://commons.wikimedia.org/wiki/File:DECLARATORIA_DE_CARNAVALES_COMO_PATRIMONIO_CULTURAL_INMATERIAL_DE_LA_CIUDAD_DE_M%C3%89XICO_11.jpg"
           }
         }
       ]
@@ -9335,8 +9335,38 @@
     },
     {
       "name": "Iztacalco",
-      "count": 126,
+      "count": 127,
       "articles": [
+        {
+          "title": "Impulsa alcaldía Iztacalco el comercio local con la Feria de Mujeres Emprendedoras",
+          "description": "De acuerdo con El Sol de México, el titular publicado es: «Impulsa alcaldía Iztacalco el comercio local con la Feria de Mujeres Emprendedoras». La información publicada por El Sol de México aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPUW0wMnhGOXBReHYyMmZFTUhsQTdISU0zLVphT0hMYktMRjdyRThOZHppZUNhbVBSUG1JNGJaazU2WE03U0RIZ0M4eDQ2T2V2dVFfNWdxaTllNUR4cWk2MUtzT0NnV3JXekZ5ZXlZalR6RDlWMG5mblo5RFRVX010SEx0VEtKUlBkSWVtRVJIc2VpdW11aEdTVEZtMHg4NldMRE1wc1ptbzZ3T1gtTU5HNWt4M1pzNHR3T3FCQy1aRk9salFmU3NiNm9JeDFGdHc?oc=5",
+          "source": "El Sol de México",
+          "date": "2026-11-13",
+          "published_at": "2026-11-13T21:53:25Z",
+          "category": "CDMX",
+          "borough": "Iztacalco",
+          "location": "Iztacalco (mencionada en el titular)",
+          "local_url": "/noticias/?id=524dc3a3f9b57d7d122e&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con El Sol de México, el titular publicado es: «Impulsa alcaldía Iztacalco el comercio local con la Feria de Mujeres Emprendedoras». La información publicada por El Sol de México aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_iztacalco",
+            "kind": "representativa",
+            "url": "/assets/alcaldias/iztacalco.jpg",
+            "category": "CDMX",
+            "borough": "Iztacalco",
+            "topic": "Iglesia de San Matías en el antiguo pueblo de Iztacalco",
+            "author": "AlejandroLinaresGarcia",
+            "license": "CC BY-SA 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:SanMatiasChurchIztacalco02.jpg"
+          }
+        },
         {
           "title": "\"Para rentar en Iztacalco me pedían 41 mil pesos de inicio\"; crisis de vivienda en CDMX asfixia a jóvenes",
           "description": "De acuerdo con La Silla Rota, el titular publicado es: «\"Para rentar en Iztacalco me pedían 41 mil pesos de inicio\"; crisis de vivienda en CDMX asfixia a jóvenes». La información publicada por La Silla Rota aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -10721,31 +10751,43 @@
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           }
-        },
-        {
-          "title": "Clima en Iztacalco: sábado 7 de noviembre con cielo claro y ambiente templado",
-          "description": "De acuerdo con El Heraldo de México, el titular publicado es: «Clima en Iztacalco: sábado 7 de noviembre con cielo claro y ambiente templado». El pronóstico recogido por El Heraldo de México se refiere a condiciones meteorológicas en Iztacalco. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
-          "url": "https://news.google.com/rss/articles/CBMingJBVV95cUxOZGRSUjU3QVdKcGJnSEVkSmdGNFMya2JHX2xMc2RiLWczM0ZNZnZJVkhka2oxVERFcURfbzdmb2pKN0ZKMDA0ZUpfNy1lOElaNTZsOUlrQ3ZqdXJ1TExod2ZDb1M5YXBLLWM1alBnd3E4bkNHcUtvTHlxT1Y5dFRLaGRsVGU5UUU5T20xQVJtQXZWVGd1Qy10OG5FUXJBVkVZMGRqNTg4WWtZQmlHMkRaUDRHWlFnNnp1eEhrdzFKTDZhRy1wcXJFZ2hMV29KT3N1eFlTX1VBdTBGY2R2eUs2d3NDN3gtWXVfUG5hS3JoMWFjMjBmNmNlQWs5dFRRUVV2R2NGT1M1djJqVElBOEdIVV9fUTJMQllkVVRzV0JB?oc=5",
-          "source": "El Heraldo de México",
-          "date": "2026-11-06",
-          "published_at": "2026-11-07T05:00:59Z",
-          "category": "CDMX",
-          "borough": "Iztacalco",
-          "location": "Iztacalco (mencionada en el titular)",
-          "local_url": "/noticias/?id=72d7218fdfc0d02d17d5&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con El Heraldo de México, el titular publicado es: «Clima en Iztacalco: sábado 7 de noviembre con cielo claro y ambiente templado». El pronóstico recogido por El Heraldo de México se refiere a condiciones meteorológicas en Iztacalco. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
         }
       ]
     },
     {
       "name": "Iztapalapa",
-      "count": 236,
+      "count": 237,
       "articles": [
+        {
+          "title": "Feria del Empleo en Iztapalapa ofrece mil vacantes con empresas como Bimbo, Sears y Chedraui; fecha y horario",
+          "description": "De acuerdo con El Sol de México, el titular publicado es: «Feria del Empleo en Iztapalapa ofrece mil vacantes con empresas como Bimbo, Sears y Chedraui; fecha y horario». La información publicada por El Sol de México aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPb25ad1lGZGU3bC01aTY5eFc4ZWpQR2dsdDFFRVpkeGVfR0xxeXY1bTlJSHRmeTQ3TFNOYVN5N1llOWh5enRCT2hBelZnaVI4azE3V3ljamV3MDJ0TnlhNlRLX093SlZMcDRZOU5JTHBwcnc0QVJRQXhXdXNrNTRYZFRobGZNb2EyNE1ESjdfWFVTOXpmWTZGeS1WOHRNbmZSZ3pQM0RLaXlmeEFuM0U3VldGV0ZUTEVWYTgycjRLdTM5aDVBSzNlODFZRHAzcjMyaEVROGFPOWZtWk1YSUxpSDhlNGJDZUdPMFBz?oc=5",
+          "source": "El Sol de México",
+          "date": "2026-11-13",
+          "published_at": "2026-11-13T22:07:30Z",
+          "category": "CDMX",
+          "borough": "Iztapalapa",
+          "location": "Iztapalapa (mencionada en el titular)",
+          "local_url": "/noticias/?id=8782dfc11a9012876f92&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con El Sol de México, el titular publicado es: «Feria del Empleo en Iztapalapa ofrece mil vacantes con empresas como Bimbo, Sears y Chedraui; fecha y horario». La información publicada por El Sol de México aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_iztapalapa",
+            "kind": "representativa",
+            "url": "/assets/alcaldias/iztapalapa.jpg",
+            "category": "CDMX",
+            "borough": "Iztapalapa",
+            "topic": "Vista de Iztapalapa desde el Cerro de la Estrella",
+            "author": "Secretaría de Cultura Ciudad de México from México",
+            "license": "CC BY 2.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+            "source": "https://commons.wikimedia.org/wiki/File:MX_MM_MUSEO_CERRO_DE_LA_ESTRELLA_%2849522225751%29.jpg"
+          }
+        },
         {
           "title": "¿Sin planes para el puente? Iztapalapa te espera con sabores del mundo, música y más",
           "description": "De acuerdo con El Sol de México, el titular publicado es: «¿Sin planes para el puente? Iztapalapa te espera con sabores del mundo, música y más». La información publicada por El Sol de México aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -12091,44 +12133,6 @@
             "license": "CC BY-SA 4.0",
             "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.es",
             "source": "https://commons.wikimedia.org/wiki/File:Patrulla_cdmx.jpg"
-          }
-        },
-        {
-          "title": "La Guagua Social llevará salsa cubana y música en vivo a Iztapalapa el 28 de noviembre",
-          "description": "De acuerdo con Capital CDMX, el titular publicado es: «La Guagua Social llevará salsa cubana y música en vivo a Iztapalapa el 28 de noviembre». La información publicada por Capital CDMX aborda un asunto que este portal clasifica como Cultura. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNcjk5VzVVWFNfbU5UX0JDeHpTblBzbzB0OXhET1NSSjNleHBvcWhKVnd0RzJXeUYtVHQ0OGxIbVlvcFhoSWJNM3l1aVdkQmhMNVlHcUhKLW1FSFJJcU9qWHJJeGM4NE5YaDFzbThrVmZYaGhLdlBvT0hGalV2b3hmYVBmSnBFVWtRNWx1Xw?oc=5",
-          "source": "Capital CDMX",
-          "date": "2026-11-08",
-          "published_at": "2026-11-08T19:55:11Z",
-          "category": "Cultura",
-          "borough": "Iztapalapa",
-          "location": "Iztapalapa (mencionada en el titular)",
-          "local_url": "/noticias/?id=68080cff2daafc580d36&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con Capital CDMX, el titular publicado es: «La Guagua Social llevará salsa cubana y música en vivo a Iztapalapa el 28 de noviembre». La información publicada por Capital CDMX aborda un asunto que este portal clasifica como Cultura. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "La actividad cultural abre oportunidades de encuentro, aprendizaje y disfrute para habitantes y visitantes.",
-            "pending": "Los accesos, boletos, sedes, cupos y horarios deben consultarse con la institución organizadora. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "contexto_concierto_palacio_deportes_2009",
-            "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/PalaciodelosDeportes_Concierto.jpg/960px-PalaciodelosDeportes_Concierto.jpg",
-            "category": "Cultura",
-            "borough": "",
-            "topic": "Concierto de Kings of Leon en el Palacio de los Deportes, CDMX (octubre de 2009); foto de archivo representativa, no documenta eventos de la noticia.",
-            "keywords": [
-              "concierto",
-              "música en vivo",
-              "Palacio de los Deportes",
-              "Ciudad de México",
-              "escenario",
-              "público"
-            ],
-            "author": "ProtoplasmaKid",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-            "source": "https://commons.wikimedia.org/wiki/File:PalaciodelosDeportes_Concierto.jpg"
           }
         }
       ]
@@ -15905,8 +15909,27 @@
     },
     {
       "name": "Tlalpan",
-      "count": 225,
+      "count": 226,
       "articles": [
+        {
+          "title": "Rescatan a perrita por presunto maltrato animal en Tlalpan",
+          "description": "De acuerdo con Ahora Tabasco Noticias, el titular publicado es: «Rescatan a perrita por presunto maltrato animal en Tlalpan». La información publicada por Ahora Tabasco Noticias aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQWnROOWFRQXVfLVczeGoyNURMSFpjT2RNRk84RmEzTlVMSWQxY2ktRTVLOE10TGhndXB6Z0tvZ3YxeVRFblNYLTVkOGJueFFXSmlTeTh5MWJUUVV3V09ITEJ1SWRSUnFDTjZjd2VWeHFXZzMyVlhfWUw2SzZRbk9pRmJhNnQ0UlFYbHJiXw?oc=5",
+          "source": "Ahora Tabasco Noticias",
+          "date": "2026-11-13",
+          "published_at": "2026-11-13T21:52:41Z",
+          "category": "Seguridad",
+          "borough": "Tlalpan",
+          "location": "Tlalpan (mencionada en el titular)",
+          "local_url": "/noticias/?id=78f11f66e53b432559c4&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con Ahora Tabasco Noticias, el titular publicado es: «Rescatan a perrita por presunto maltrato animal en Tlalpan». La información publicada por Ahora Tabasco Noticias aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "sensitive_media": true
+        },
         {
           "title": "Cae adulto mayor por presunto maltrato animal en Tlalpan",
           "description": "De acuerdo con Enfoque Noticias, el titular publicado es: «Cae adulto mayor por presunto maltrato animal en Tlalpan». La información publicada por Enfoque Noticias aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -16846,31 +16869,51 @@
             "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
             "source": "https://commons.wikimedia.org/wiki/File:Eje_Central_CDMX.jpg"
           }
-        },
-        {
-          "title": "Clima y pronóstico en Tlalpan: Miércoles 11 de noviembre con ambiente templado y nubes",
-          "description": "De acuerdo con El Heraldo de México, el titular publicado es: «Clima y pronóstico en Tlalpan: Miércoles 11 de noviembre con ambiente templado y nubes». El pronóstico recogido por El Heraldo de México se refiere a condiciones meteorológicas en Tlalpan. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
-          "url": "https://news.google.com/rss/articles/CBMingJBVV95cUxOZHkyNGFSTnNKVE1aY0RpWG14Q01xYmgtMXhBZmFNTjJnWHYybldCeUtaTDBaT01ELWJIamR3TmU0SW9uc0VQSnBNTHVydTVwd2x4eWhVYk9BaFdXOVBxdldaUlRMYmZiWURCbzdyZVlQUngtckJiRjc3VmRzZVlRcDVJSmVQUWtBaGFvVUROaFpjaEZvYzZEMDl1aE5xelFlZE45ZmVqSDk3b2dTTFd3OGZONW56TmUyXzBDa1ZJS0FCdEhQUUFqYW9hZHNoNjhuSFJibjNoclRiX1ZWeEh3UkNkZEVWbTQtd2Z2VVE3RDEzd0ctbWJuSnl4QUplOTBxbVVybFhPTEI1QXRPNmZNTmVWcWdMZ1Bid19PLTN3?oc=5",
-          "source": "El Heraldo de México",
-          "date": "2026-11-10",
-          "published_at": "2026-11-11T05:00:21Z",
-          "category": "CDMX",
-          "borough": "Tlalpan",
-          "location": "Tlalpan (mencionada en el titular)",
-          "local_url": "/noticias/?id=a869d3c51e19b237b6be&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con El Heraldo de México, el titular publicado es: «Clima y pronóstico en Tlalpan: Miércoles 11 de noviembre con ambiente templado y nubes». El pronóstico recogido por El Heraldo de México se refiere a condiciones meteorológicas en Tlalpan. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
         }
       ]
     },
     {
       "name": "Venustiano Carranza",
-      "count": 45,
+      "count": 46,
       "articles": [
+        {
+          "title": "Mueren dos motociclistas tras chocar contra una camioneta en Venustiano Carranza",
+          "description": "De acuerdo con El Sol de México, el titular publicado es: «Mueren dos motociclistas tras chocar contra una camioneta en Venustiano Carranza». La información publicada por El Sol de México aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNYlEtZER2b0lMSXRrLTNzYTdweEk1ZTRSdm5xX2dtWFFIU04tUWRya0VtNWd0UUJiVndhM2V3UzJlYjJ3Z192Yks0b0ZNSnBvbXJiZmlUeGw5V2FKczRETC11VWtQSk5Oc1FHdFVDUTZFMExlZUhFQVdlN1ZtSElsMjNKVEtQZGt2S2Rvd2J2WUFtMkdmZUNUZENQbVpQWWxockk2MmRNTFZJMmF2elYzc05NNHpSN3RKYXdPMkhGblVYV2t1NEs4?oc=5",
+          "source": "El Sol de México",
+          "date": "2026-11-13",
+          "published_at": "2026-11-13T20:05:22Z",
+          "category": "CDMX",
+          "borough": "Venustiano Carranza",
+          "location": "Venustiano Carranza (mencionada en el titular)",
+          "local_url": "/noticias/?id=48ad03698ec605252a33&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con El Sol de México, el titular publicado es: «Mueren dos motociclistas tras chocar contra una camioneta en Venustiano Carranza». La información publicada por El Sol de México aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "contexto_motocicleta_zocalo_brigada_2017",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Ayuda_tras_el_Terremoto_de_Puebla_de_2017_-_Ciudad_de_M%C3%A9xico_-_3.jpg/960px-Ayuda_tras_el_Terremoto_de_Puebla_de_2017_-_Ciudad_de_M%C3%A9xico_-_3.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+            "category": "CDMX",
+            "borough": "",
+            "topic": "Motocicleta de apoyo de una brigada voluntaria en el Zócalo de la Ciudad de México tras el sismo de 2017 (imagen representativa; no corresponde a una ",
+            "keywords": [
+              "motocicleta",
+              "moto",
+              "Zócalo",
+              "brigada voluntaria",
+              "sismo 2017",
+              "Ciudad de México"
+            ],
+            "author": "ProtoplasmaKid",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "source": "https://commons.wikimedia.org/wiki/File:Ayuda_tras_el_Terremoto_de_Puebla_de_2017_-_Ciudad_de_M%C3%A9xico_-_3.jpg"
+          }
+        },
         {
           "title": "Mueren dos motociclistas tras choque en Venustiano Carranza",
           "description": "De acuerdo con Reforma, el titular publicado es: «Mueren dos motociclistas tras choque en Venustiano Carranza». De acuerdo con Reforma, se informa de un hecho vial relacionado con una motocicleta en Venustiano Carranza. El encabezado no permite determinar por sí solo si hubo personas lesionadas o fallecidas. Se requiere consultar la nota original para conocer el punto exacto, las circunstancias y los reportes oficiales, sin atribuir responsabilidades sin pruebas.",
@@ -18001,44 +18044,6 @@
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
-        },
-        {
-          "title": "Hombre muere arrollado por tráiler en Eje 3 Eduardo Molina, en Venustiano Carranza",
-          "description": "De acuerdo con El Heraldo de México, el titular publicado es: «Hombre muere arrollado por tráiler en Eje 3 Eduardo Molina, en Venustiano Carranza». De acuerdo con El Heraldo de México, se informa de un hecho vial relacionado con vehículos en Venustiano Carranza. El propio titular señala un fallecimiento, sin que esta ficha agregue cifras ni identidades. Se requiere consultar la nota original para conocer el punto exacto, las circunstancias y los reportes oficiales, sin atribuir responsabilidades sin pruebas.",
-          "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPZHJKMzhnNUJGRXo4NDFBYlU1M3doUng2am1OSERnV1NMT1dkQjlRcmkyLWJ5Rk04OFdiMXF6M2c5eTJOa2J4OUtEQ1Q2VnRLQ3BBN0FpZmtCMXJrcjJuU1hNcXgteHFQcVlKUVNySVN1emxxT2sxQmY2eWFPRkdZTk5qTEhlWTRIVXdQY2tEREhWbnJyVlJCY1lMbzJIblRhUTF5VC01MkkyVjBBQk95RWNpd01BSWZFbTBDUXpFdU0xQ1hBMnhQYnN2SnNQTU5rRGREMmR6b0I?oc=5",
-          "source": "El Heraldo de México",
-          "date": "2026-11-04",
-          "published_at": "2026-11-05T03:17:00Z",
-          "category": "Movilidad",
-          "borough": "Venustiano Carranza",
-          "location": "Venustiano Carranza (mencionada en el titular)",
-          "local_url": "/noticias/?id=f288368fdc96ad16330f&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con El Heraldo de México, el titular publicado es: «Hombre muere arrollado por tráiler en Eje 3 Eduardo Molina, en Venustiano Carranza». De acuerdo con El Heraldo de México, se informa de un hecho vial relacionado con vehículos en Venustiano Carranza. El propio titular señala un fallecimiento, sin que esta ficha agregue cifras ni identidades. Se requiere consultar la nota original para conocer el punto exacto, las circunstancias y los reportes oficiales, sin atribuir responsabilidades sin pruebas.",
-            "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
-            "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "contexto_trafico_eje_central",
-            "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Eje_Central_CDMX.jpg/1280px-Eje_Central_CDMX.jpg",
-            "category": "Movilidad",
-            "borough": "",
-            "topic": "Tráfico vehicular en Eje Central, Ciudad de México (fotografía de 2018)",
-            "keywords": [
-              "tráfico",
-              "vehículos",
-              "automóviles",
-              "movilidad",
-              "hoy no circula",
-              "vialidad"
-            ],
-            "author": "Sergio Estrada Flores",
-            "license": "CC BY 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
-            "source": "https://commons.wikimedia.org/wiki/File:Eje_Central_CDMX.jpg"
           }
         }
       ]
