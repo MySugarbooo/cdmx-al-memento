@@ -1242,7 +1242,7 @@ class BoroughAndArchiveTests(unittest.TestCase):
         lead = news.summarize(rainwater)["lead"].lower()
         self.assertIn("captación", lead)
         self.assertNotIn("pronóstico", lead)
-        self.assertIn("no de una previsión del tiempo", lead)
+        self.assertIn("no es un aviso meteorológico", lead)
         self.assertLess(news._photo_score(rainwater, {
             "category": "Medio Ambiente", "topic": "Plantas con gotas de lluvia, Ciudad de México",
         }), 0)
