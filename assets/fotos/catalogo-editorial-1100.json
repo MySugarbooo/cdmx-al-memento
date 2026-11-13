@@ -1,7 +1,7 @@
 {
   "version": 3,
   "created": "2026-11-13",
-  "count": 1112,
+  "count": 1114,
   "source": "Wikimedia Commons (metadatos consultados mediante su API)",
   "notice": "Imagen de carácter ilustrativo y referencial; no constituye evidencia gráfica de los hechos descritos.",
   "licenseNotice": "Las licencias CC BY y CC BY-SA exigen atribución; CC BY-SA puede exigir compartir adaptaciones bajo la misma licencia. Los derechos personales y de obras representadas se evalúan por separado. No se afirma que la imagen documente el acontecimiento.",
@@ -11804,7 +11804,7 @@
     {
       "id": "commons_103707611",
       "category": "Alcaldías",
-      "topic": "MX MM COYOACÁN - Mercado",
+      "topic": "Mercado de Coyoacán, Ciudad de México; imagen representativa de un mercado público, no documenta las mejoras anunciadas.",
       "file": "MX MM COYOACÁN - Mercado.jpg",
       "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/MX_MM_COYOAC%C3%81N_-_Mercado.jpg/960px-MX_MM_COYOAC%C3%81N_-_Mercado.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "source": "https://commons.wikimedia.org/wiki/File:MX_MM_COYOAC%C3%81N_-_Mercado.jpg",
@@ -11814,7 +11814,7 @@
       "keywords": [
         "Coyoacán Ciudad de México"
       ],
-      "context": "Imagen de carácter ilustrativo y referencial; no constituye evidencia gráfica de los hechos descritos.",
+      "context": "Imagen representativa de un mercado público; no documenta las mejoras anunciadas.",
       "adaptation": "Sin modificación por el periódico."
     },
     {
@@ -18073,6 +18073,53 @@
       "uploaded_at": "2023-02-01",
       "context": "Imagen de carácter ilustrativo y referencial; no constituye evidencia gráfica de los hechos descritos.",
       "adaptation": "Miniatura oficial de Wikimedia Commons; sin modificación."
+    },
+    {
+      "id": "contexto_consolas_videojuegos_2026",
+      "kind": "representativa",
+      "category": "Seguridad",
+      "topic": "Consolas y videojuegos actuales (fotografía de 2026); imagen representativa del sector de videojuegos, no corresponde a Pokémon Go ni a la mercancía asegurada en Plaza Meave.",
+      "keywords": [
+        "consolas",
+        "videojuegos",
+        "Nintendo Switch",
+        "Xbox",
+        "PlayStation"
+      ],
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/InclusiveGameLab_Current_Console_Generation_CC-BY-SA.jpg/960px-InclusiveGameLab_Current_Console_Generation_CC-BY-SA.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+      "source": "https://commons.wikimedia.org/wiki/File:InclusiveGameLab_Current_Console_Generation_CC-BY-SA.jpg",
+      "author": "InclusiveGameLab",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "file": "InclusiveGameLab_Current_Console_Generation_CC-BY-SA.jpg",
+      "context": "Imagen representativa de consolas y videojuegos; no corresponde a Pokémon Go ni a la mercancía asegurada en Plaza Meave.",
+      "adaptation": "Miniatura oficial de Wikimedia Commons; sin modificación.",
+      "captured_at": "2026"
+    },
+    {
+      "id": "contexto_aicm_aviones_pista_2026",
+      "kind": "representativa",
+      "category": "Movilidad",
+      "topic": "Aviones en la pista del AICM (fotografía del 28 de septiembre de 2026); imagen representativa, no documenta las afectaciones de vuelos mencionadas.",
+      "keywords": [
+        "Aeropuerto Internacional de la Ciudad de México",
+        "Aeropuerto Internacional Benito Juárez",
+        "AICM",
+        "aviones",
+        "pista de aterrizaje",
+        "vuelos",
+        "aeropuerto"
+      ],
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Aviones_en_la_pista_del_AICM.jpg/960px-Aviones_en_la_pista_del_AICM.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+      "source": "https://commons.wikimedia.org/wiki/File:Aviones_en_la_pista_del_AICM.jpg",
+      "author": "Oficial K",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "file": "Aviones_en_la_pista_del_AICM.jpg",
+      "context": "Imagen representativa del AICM; no documenta las afectaciones de vuelos descritas en la noticia.",
+      "adaptation": "Miniatura oficial de Wikimedia Commons; sin modificación.",
+      "captured_at": "2026-09-28",
+      "uploaded_at": "2026-10-16"
     }
   ]
 }
