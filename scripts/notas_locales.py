@@ -1934,9 +1934,14 @@ def _photo_score(article, photo):
         r"\b(?:musica|orquestas?|conciertos?|guitarras?|bandas?|coros?|coral|rock|cantantes?)\b",
         context,
     ))
-    # La nota de María León requiere contexto musical; una danza ajena no representa su concierto.
-    if is_infobae_maria_leon_concert(article) and not music_photo:
-        return -10000
+    # María León requiere contexto de concierto/escenario; un coro catedralicio no es una imagen adecuada.
+    if is_infobae_maria_leon_concert(article):
+        maria_concert_photo = bool(re.search(
+            r"\b(?:conciertos?|escenario|publico|palacio de los deportes|teatro metropolitan)\b",
+            context,
+        ))
+        if not maria_concert_photo:
+            return -10000
     # Un coro o una fotografía musical no representa asuntos ajenos a la música.
     if music_photo and not music_story:
         return -10000
@@ -2269,8 +2274,12 @@ def assign_photos(items):
             and str(photo.get("licenseUrl") or "").startswith(("https://", "http://"))
         )
 
-    # Un orden estable evita cambios arbitrarios entre actualizaciones del feed.
-    for article in items:
+    # Asigna primero la foto de concierto reservada para María León; conserva el orden del feed.
+    assignment_order = sorted(
+        items,
+        key=lambda article: 0 if is_infobae_maria_leon_concert(article) else 1,
+    )
+    for article in assignment_order:
         exact = verified_event_photo(article, verified_catalog)
         if exact:
             article["photo"] = exact
