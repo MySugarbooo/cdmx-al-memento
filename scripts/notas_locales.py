@@ -42,20 +42,28 @@ SENSITIVE_MEDIA_TITLE = re.compile(
 
 
 def is_coyotepec_highway_crash(article):
-    """Identifica el choque de N+ en Coyotepec, fuera de CDMX."""
+    """Identifica las coberturas del choque múltiple del 12/11/2026 en Coyotepec."""
     title = unicodedata.normalize("NFKD", str(article.get("title") or ""))
     title = "".join(ch for ch in title if not unicodedata.combining(ch)).casefold()
     source = str(article.get("source") or "").strip().casefold()
-    return (
-        str(article.get("date") or "") == "2026-11-12"
-        and (source == "n+" or source.startswith("n+ "))
-        and "mexico-queretaro" in title
+    if str(article.get("date") or "") != "2026-11-12" or "mexico-queretaro" not in title:
+        return False
+    nplus = (
+        (source == "n+" or source.startswith("n+ "))
         and "3 autobuses" in title
         and "tractocamion" in title
     )
+    infobae = (
+        source == "infobae"
+        and "alumnos viajaban de paseo" in title
+        and "impactados por trailer" in title
+        and "choque" in title
+    )
+    return nplus or infobae
 
 
 SAN_JUAN_DEL_RIO_AUTOPISTA57_SOURCE_URL = "https://oem.com.mx/elsoldesanjuandelrio/policiaca/toma-precauciones-si-viajas-a-la-cdmx-autopista-57-esta-detenida-33095499"
+INFOBAE_COYOTEPEC_HIGHWAY_CRASH_SOURCE_URL = "https://www.infobae.com/mexico/2026/11/13/alumnos-viajaban-de-paseo-a-la-cdmx-y-fueron-impactados-por-trailer-difunden-video-del-choque-en-la-mexico-queretaro/"
 LA_PRENSA_TLALPAN_ANIMAL_SOURCE_URL = "https://oem.com.mx/la-prensa/policiaca/detienen-a-otro-presunto-maltratador-de-animales-en-tlalpan-33095643"
 INFOBAE_TLALPAN_ANIMAL_SOURCE_URL = "https://www.infobae.com/mexico/2026/11/12/detienen-a-presunto-abusador-sexual-de-animales-en-situacion-de-calle-en-cdmx-activistas-piden-que-las-investigaciones-lleguen-a-fondo/"
 EL_GRAFICO_VC_TRAILER_SOURCE_URL = "https://www.elgrafico.mx/la-roja/2026/11/12/el-morenito-muere-tras-ser-arrastrado-varios-metros-por-un-trailer-en-venustiano-carranza/?outputType=amp"
@@ -365,7 +373,14 @@ def _reported_angle(article):
                 "La operación puede cambiar durante el día y los informes de usuarios "
                 "no son equivalentes a un comunicado oficial.")
     # Aprovechar agua de lluvia no equivale a un pronóstico meteorológico.
-    if "captación de agua de lluvia" in t or "cosecha de lluvia" in t:
+    if (
+        "captación de agua de lluvia" in t
+        or "captacion de agua de lluvia" in t
+        or "captar agua de lluvia" in t
+        or "captación pluvial" in t
+        or "captacion pluvial" in t
+        or "cosecha de lluvia" in t
+    ):
         return (f"El titular de {source} aborda la captación y aprovechamiento de agua pluvial{zone}. "
                 "Se trata de una práctica o iniciativa relacionada con el uso del agua, "
                 "no de una previsión del tiempo. Para conocer su alcance y resultados "
@@ -631,6 +646,32 @@ def summarize(article):
     context=theme["importance"]
     pending=theme["verify"]+" El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar."
     method="Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+    if is_coyotepec_highway_crash(article) and _photo_fold(source) == "infobae":
+        return {
+            "lead": (
+                "Infobae reportó que el choque múltiple ocurrió el 12 de noviembre en Coyotepec, "
+                "Estado de México, cuando un tractocamión impactó a tres autobuses que transportaban "
+                "estudiantes rumbo al Bosque de Chapultepec. La nota reportó al menos 27 personas "
+                "lesionadas y señaló que CAPUFE confirmó la reapertura de la autopista hacia CDMX "
+                "tras casi cuatro horas de cierre."
+            ),
+            "context": (
+                "El hecho ocurrió en Coyotepec, Estado de México, fuera de la capital. La referencia "
+                "a CDMX corresponde al destino del viaje y al sentido de la autopista, no al lugar "
+                "del choque."
+            ),
+            "pending": (
+                "Infobae reportó que aún persistía carga vehicular después de la reapertura. El estado "
+                "actual debe comprobarse con CAPUFE antes de viajar; la nota no establece una causa "
+                "definitiva del accidente."
+            ),
+            "method": (
+                "Síntesis editorial basada en la nota de Infobae consultada el 13 de noviembre de "
+                "2026: " + INFOBAE_COYOTEPEC_HIGHWAY_CRASH_SOURCE_URL
+                + ". El saldo y la reapertura se atribuyen al medio; no se presentan como una "
+                "verificación independiente de CDMX AL MEMENTO."
+            ),
+        }
     if is_coyotepec_highway_crash(article):
         return {
             "lead": (
@@ -1258,7 +1299,7 @@ STRICT_PHOTO_TOPICS = (
     (r"\b(?:balead\w*|balear\w*|balean|baleo)\b",
      r"\b(?:fiscalia|investigacion penal|justicia|ministerio publico|peritos?|escena del crimen|operativo policial)\b"),
     # La captación de agua pluvial requiere sistemas de recolección, no gotas en plantas.
-    (r"\b(?:captacion de agua de lluvia|cosecha de lluvia|recoleccion de agua pluvial)\b",
+    (r"\b(?:captar agua de lluvia|captacion de agua de lluvia|cosecha de lluvia|recoleccion de agua pluvial)\b",
      r"\b(?:captacion|cosecha de lluvia|recoleccion|sistema pluvial|cisternas?|tinacos?|canaletas?|almacenamiento de agua|depositos? de agua|filtros? de agua)\b"),
     # Una detención en un reclusorio no se ilustra con una estación del Metro.
     (r"\breclusorio\b",
@@ -1766,7 +1807,7 @@ def _photo_score(article, photo):
         context,
     ))
     eco_story = bool(re.search(
-        r"\b(?:casa ecologica|ecotecnias?|calentadores? solares?|captadores? de agua|sistemas? de captacion)\b",
+        r"\b(?:casa ecologica|ecotecnias?|calentadores? solares?|captadores? de agua|captar agua de lluvia|sistemas? para captar agua|sistemas? de captacion)\b",
         headline,
     ))
     eco_photo = bool(re.search(

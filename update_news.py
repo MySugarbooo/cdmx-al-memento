@@ -22,7 +22,7 @@ from pathlib import Path
 from zoneinfo import ZoneInfo
 
 from scripts.analisis_editorial import build_editorial
-from scripts.notas_locales import local_link, summarize, assign_photos, _photo_score, is_sensitive_media, is_coyotepec_highway_crash, is_san_juan_del_rio_autopista57_closure, SENSITIVE_MEDIA_TITLE, SAN_JUAN_DEL_RIO_AUTOPISTA57_SOURCE_URL, is_infobae_tlalpan_animal_abuse, is_la_prensa_tlalpan_animal_case, INFOBAE_TLALPAN_ANIMAL_SOURCE_URL, LA_PRENSA_TLALPAN_ANIMAL_SOURCE_URL, is_imagen_tlalpan_dog_rescue, is_huixtla_migrant_caravan, is_vc_fatal_trailer_incident, EL_GRAFICO_VC_TRAILER_SOURCE_URL, is_infobae_ballet_zapatilla, INFOBAE_BALLET_ZAPATILLA_SOURCE_URL, is_pulque_barbacoa_fair, is_mauricio_tabe_fifth_report, SDPNOTICIAS_MAURICIO_TABE_REPORT_SOURCE_URL
+from scripts.notas_locales import local_link, summarize, assign_photos, _photo_score, is_sensitive_media, is_coyotepec_highway_crash, INFOBAE_COYOTEPEC_HIGHWAY_CRASH_SOURCE_URL, is_san_juan_del_rio_autopista57_closure, SENSITIVE_MEDIA_TITLE, SAN_JUAN_DEL_RIO_AUTOPISTA57_SOURCE_URL, is_infobae_tlalpan_animal_abuse, is_la_prensa_tlalpan_animal_case, INFOBAE_TLALPAN_ANIMAL_SOURCE_URL, LA_PRENSA_TLALPAN_ANIMAL_SOURCE_URL, is_imagen_tlalpan_dog_rescue, is_huixtla_migrant_caravan, is_vc_fatal_trailer_incident, EL_GRAFICO_VC_TRAILER_SOURCE_URL, is_infobae_ballet_zapatilla, INFOBAE_BALLET_ZAPATILLA_SOURCE_URL, is_pulque_barbacoa_fair, is_mauricio_tabe_fifth_report, SDPNOTICIAS_MAURICIO_TABE_REPORT_SOURCE_URL
 
 ROOT = Path(__file__).resolve().parent
 DEST = ROOT / "news.json"
@@ -521,6 +521,14 @@ def category_by_headline(title, feed_category, source=""):
     # La agenda de artes escénicas y gastronomía no debe heredar etiquetas de Metro o CDMX.
     if re.search(r"\b(?:ballet|danza clasica|cirque du soleil|feria (?:regional )?del pulque|pulque y la barbacoa)\b", normalized):
         return "Cultura"
+    # La captación pluvial y los programas de ecotecnias son iniciativas ambientales,
+    # no pronósticos meteorológicos por mencionar agua de lluvia.
+    if re.search(
+        r"\b(?:captar agua de lluvia|captacion de agua de lluvia|captacion pluvial|"
+        r"cosecha de lluvia|casa ecologica|ecotecnias?)\b",
+        normalized,
+    ):
+        return "Medio Ambiente"
     # Los avisos de lluvia intensa pertenecen a Medio Ambiente, salvo las afectaciones de transporte ya clasificadas arriba.
     if re.search(r"\b(?:alerta por diluvio|alerta por lluvias?)\b", normalized):
         return "Medio Ambiente"
@@ -603,6 +611,8 @@ def standardize(article):
     result["local_url"] = local_link(result)
     if is_infobae_ballet_zapatilla(result):
         result["source_url"] = INFOBAE_BALLET_ZAPATILLA_SOURCE_URL
+    elif is_coyotepec_highway_crash(result) and source.casefold() == "infobae":
+        result["source_url"] = INFOBAE_COYOTEPEC_HIGHWAY_CRASH_SOURCE_URL
     elif is_san_juan_del_rio_autopista57_closure(result):
         # La publicación original identifica al medio regional y a su firma;
         # se conserva la URL RSS para no cambiar el identificador local.

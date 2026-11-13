@@ -1526,5 +1526,35 @@ class PhotoRelevanceTests(unittest.TestCase):
         self.assertGreaterEqual(_photo_score(article, congress), 0)
 
 
+
+    def test_rainwater_harvesting_uses_cosecha_photo_not_borough_flower(self):
+        article = news.standardize({
+            "title": "CDMX instalará miles de sistemas para captar agua de lluvia en Álvaro Obregón",
+            "url": "https://news.google.com/rss/articles/rainwater-photo-regression",
+            "source": "Enfoque Noticias",
+            "date": "2026-11-12",
+            "category": "CDMX",
+        })
+        self.assertEqual(article["category"], "Medio Ambiente")
+        harvest = representative_photo(
+            "cosecha_lluvia_05",
+            "Medio Ambiente",
+            "Cosecha de Lluvia 05",
+            ["captación de agua de lluvia", "sistemas de captación pluvial"],
+        )
+        flower = representative_photo(
+            "alvaro_obregon_flower",
+            "Alcaldías",
+            "Flor del camellón de Álvaro Obregón, Ciudad de México",
+            ["Álvaro Obregón", "flores", "camellón"],
+        )
+        self.assertLess(_photo_score(article, flower), 0)
+        self.assertGreaterEqual(_photo_score(article, harvest), 0)
+        with patch.object(photos, "_pool", return_value=[flower, harvest]), patch.object(
+            photos, "_load", return_value=[]
+        ):
+            assign_photos([article])
+        self.assertEqual(article["photo"]["id"], "cosecha_lluvia_05")
+
 if __name__ == "__main__":
     unittest.main()

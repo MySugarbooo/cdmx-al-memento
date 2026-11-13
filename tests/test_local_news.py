@@ -577,5 +577,61 @@ class LocalNewsTests(unittest.TestCase):
         self.assertIn("Imagen representativa; no corresponde necesariamente al hecho.", rendered)
 
 
+
+    def test_infobae_coyotepec_school_bus_crash_is_external_and_photo_free(self):
+        article = {
+            "title": "Alumnos viajaban de paseo a la CDMX y fueron impactados por tráiler: difunden video del choque en la México-Querétaro",
+            "url": "https://news.google.com/rss/articles/infobae-coyotepec-regression",
+            "source": "Infobae",
+            "date": "2026-11-12",
+            "published_at": "2026-11-13T01:23:00Z",
+            "category": "Movilidad",
+            "borough": "",
+            "photo": {
+                "id": "reforma_context_photo",
+                "kind": "representativa",
+                "url": "/assets/fotos/regression-test.jpg",
+                "category": "Movilidad",
+                "topic": "Paseo de la Reforma",
+                "keywords": ["Metrobús Paseo de la Reforma CDMX"],
+                "author": "Autor de prueba",
+                "license": "CC BY 2.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+                "source": "https://commons.wikimedia.org/wiki/File:MX_MM_PASEO_DE_LA_REFORMA.jpg",
+            },
+        }
+        result = standardize(article)
+        self.assertIsNotNone(result)
+        self.assertEqual(result["location"], "Coyotepec, Estado de México (fuera de CDMX)")
+        self.assertEqual(result["borough"], "")
+        self.assertEqual(result["category"], "Movilidad")
+        self.assertIn("27 personas lesionadas", result["brief"]["lead"])
+        self.assertIn("reapertura", result["brief"]["lead"].casefold())
+        self.assertIn("fuera de la capital", result["brief"]["context"])
+        self.assertEqual(
+            result["source_url"],
+            "https://www.infobae.com/mexico/2026/11/13/alumnos-viajaban-de-paseo-a-la-cdmx-y-fueron-impactados-por-trailer-difunden-video-del-choque-en-la-mexico-queretaro/",
+        )
+        self.assertTrue(is_sensitive_media(result))
+        assign_photos([result])
+        self.assertNotIn("photo", result)
+        rendered = render(result, article_id(result))
+        self.assertNotIn('<figure class="article-photo">', rendered)
+
+    def test_rainwater_harvesting_story_is_not_misclassified_as_weather(self):
+        result = standardize({
+            "title": "CDMX instalará miles de sistemas para captar agua de lluvia en Álvaro Obregón",
+            "url": "https://news.google.com/rss/articles/rainwater-harvesting-regression",
+            "source": "Enfoque Noticias",
+            "date": "2026-11-12",
+            "published_at": "2026-11-13T01:25:17Z",
+            "category": "CDMX",
+        })
+        self.assertIsNotNone(result)
+        self.assertEqual(result["category"], "Medio Ambiente")
+        self.assertIn("captación y aprovechamiento", result["brief"]["lead"].casefold())
+        self.assertNotIn("pronóstico", result["brief"]["lead"].casefold())
+        self.assertNotIn("previsión del tiempo", result["brief"]["lead"].casefold())
+
 if __name__=="__main__":
     unittest.main()
