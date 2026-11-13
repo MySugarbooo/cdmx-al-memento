@@ -854,6 +854,16 @@ def sanitize_outside_cdmx_versions(article):
     return repaired
 
 
+def photo_needs_refresh(item):
+    """Detecta imágenes contextuales obsoletas, incluso si su puntaje no es negativo."""
+    photo = item.get("photo") if isinstance(item, dict) else None
+    if not isinstance(photo, dict) or photo.get("kind") == "hecho":
+        return False
+    if is_mauricio_tabe_fifth_report(item):
+        return photo.get("id") != "contexto_teatro_angela_peralta"
+    return _photo_score(item, photo) < 0
+
+
 def consolidate_archive(new_items, cutoff, updated):
     """Deduplica el histórico y elimina incluso archivos mensuales ya vencidos."""
     ARCHIVE_DIR.mkdir(exist_ok=True)
@@ -907,9 +917,7 @@ def consolidate_archive(new_items, cutoff, updated):
     # la clasificación RSS. Conservar fotografías del hecho verificadas.
     mismatched = [
         item for item in existing.values()
-        if isinstance(item.get("photo"), dict)
-        and item["photo"].get("kind") != "hecho"
-        and _photo_score(item, item["photo"]) < 0
+        if photo_needs_refresh(item)
     ]
     missing = [item for item in existing.values()
                if not item.get("photo") and not is_sensitive_media(item)]
