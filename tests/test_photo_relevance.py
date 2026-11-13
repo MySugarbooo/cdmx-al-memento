@@ -2213,5 +2213,37 @@ class PerifericoPhotoRegressionTests(unittest.TestCase):
                 self.assertEqual(photo.get("source"), "https://commons.wikimedia.org/wiki/File:Farmacia_en_Santa_Mar%C3%ADa_de_la_Ribera.jpg")
 
 
+class CrimePhotoCategoryRegressionTests(unittest.TestCase):
+    def test_crime_headlines_in_cdmx_category_reject_borough_only_photos(self):
+        cases = (
+            (
+                "Cae sujeto que asaltaba mujeres en taxi y moto en Magdalena Contreras",
+                "MX NS LA MAGDALENA CONTRERAS 03",
+            ),
+            (
+                "Cae sujeto señalado por asaltos violentos contra mujeres en Magdalena Contreras",
+                "MX NS LA MAGDALENA CONTRERAS 09",
+            ),
+            (
+                "Detienen a Taxista Acusado de Intentar Asaltar a una Mujer en la Magdalena Contreras, CDMX",
+                "MX NS LA MAGDALENA CONTRERAS 05",
+            ),
+        )
+        for title, photo_topic in cases:
+            with self.subTest(title=title):
+                article = {
+                    "title": title,
+                    "category": "CDMX",
+                    "borough": "La Magdalena Contreras",
+                }
+                borough_photo = representative_photo(
+                    "borough_only_crime_context",
+                    "Alcaldías",
+                    photo_topic,
+                    ["Magdalena Contreras Ciudad de México"],
+                )
+                self.assertLess(_photo_score(article, borough_photo), 0)
+
+
 if __name__ == "__main__":
     unittest.main()
