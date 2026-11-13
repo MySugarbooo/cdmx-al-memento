@@ -2012,5 +2012,76 @@ class PhotoRelevanceTests(unittest.TestCase):
         self.assertEqual(article["photo"]["author"], "Sergio Estrada Flores")
         self.assertEqual(article["photo"]["license"], "CC BY 4.0")
 
+
+    def test_november_13_incongruent_feed_photos_are_rejected(self):
+        cases = [
+            ("Accidente en Canal del Norte: Camioneta Choca y Termina Destrozada",
+             "Movilidad", "Avenida Francisco I. Madero, Centro Histórico, Ciudad de México - Torre Latinoamericana"),
+            ("Accidente en Circuito Interior Hoy: Caos Vial por Choque de Tráiler en CDMX",
+             "Movilidad", "Interior de metrobús"),
+            ("Caravana con 500 migrantes acampa en Huixtla, Chiapas: esperan a más para avanzar a CDMX",
+             "CDMX", "Metrobús en Monumento a la Revolución - TurismoCDMX"),
+            ("Mckenna Grace de Los juegos del hambre recuerda a su familia mexicana y canta Pimpón en CDMX",
+             "CDMX", "Declaratoria de carnavales como patrimonio cultural inmaterial de la Ciudad de México"),
+            ("Joseph Zada y Mckenna Grace desatan la emoción en CDMX durante la alfombra roja de Los Juegos del Hambre",
+             "CDMX", "Zócalo de la Ciudad de México durante el 8M, 2019"),
+            ("Proponen en Congreso CDMX sancionar a empresas que no entreguen medicamentos a tiempo",
+             "CDMX", "Palacio Nacional, sede del Gobierno de México"),
+            ("Análisis del PGD CDMX: advierten riesgo de expropiación con banco de suelo",
+             "Gobierno", "Sala de Tesorería en Palacio Nacional"),
+            ("¿Cuánto cuesta rentar en CDMX? Precios por alcaldía y cuánto necesitas ganar",
+             "CDMX", "Teatro Ángela Peralta, Polanco"),
+            ("¿Cuánto gana un tamalero en CDMX? Así son los ingresos de un vendedor",
+             "CDMX", "Monumento a la Revolución, Ciudad de México"),
+            ("¿Cuánto gana un repartidor en CDMX? Estos son sus ingresos diarios",
+             "CDMX", "Gran Hotel Ciudad de México formerly El Centro Mercantil"),
+            ("Chelerías en CDMX: cuánto cuesta abrir un negocio y qué permisos necesita",
+             "CDMX", "Ángel de la Independencia, Ciudad de México"),
+            ("CEO de DiDi Latinoamérica se pone al volante en CDMX",
+             "CDMX", "Torre Latinoamericana, Centro Histórico de Ciudad de México"),
+            ("¡Jet está de vuelta! Su riff más famoso sonará en CDMX en 2027",
+             "CDMX", "Plaza de la Constitución (Zócalo) tras un día lluvioso"),
+            ("Hasta 35 km/h de rachas en alcaldías de la CDMX este miércoles 11 de noviembre",
+             "CDMX", "Zócalo de la Ciudad de México, México"),
+        ]
+        for index, (title, category, topic) in enumerate(cases):
+            photo_category = "Gobierno" if "Palacio Nacional" in topic or "Tesorería" in topic else category
+            photo = representative_photo(
+                f"bad_portada_photo_{index}", photo_category, topic, ["Ciudad de México"]
+            )
+            with self.subTest(title=title):
+                self.assertLess(
+                    _photo_score({"title": title, "category": category, "borough": ""}, photo),
+                    0,
+                )
+
+    def test_november_13_relevant_representative_photos_remain_eligible(self):
+        housing = representative_photo(
+            "house_context", "CDMX", "Casa Centro Histórico de la Ciudad de México",
+            ["vivienda", "casa"],
+        )
+        courier = next(
+            photo for photo in photos._pool()
+            if photo["id"] == "contexto_repartidores_motocicleta_cdmx"
+        )
+        traffic = representative_photo(
+            "traffic_context", "Movilidad", "Tránsito vehicular en Eje Central, Ciudad de México",
+            ["tráfico vehicular"],
+        )
+        concert = representative_photo(
+            "concert_context", "Cultura", "Banda de rock en concierto con guitarras en escenario",
+            ["rock", "concierto"],
+        )
+        weather = representative_photo(
+            "weather_context", "Medio Ambiente", "Viento y nubes sobre Ciudad de México",
+            ["viento", "rachas"],
+        )
+        self.assertGreaterEqual(_photo_score({"title": "¿Cuánto cuesta rentar en CDMX?", "category": "CDMX"}, housing), 0)
+        self.assertGreaterEqual(_photo_score({"title": "¿Cuánto gana un repartidor en CDMX?", "category": "CDMX"}, courier), 0)
+        self.assertGreaterEqual(_photo_score({"title": "Accidente en Canal del Norte: Camioneta choca", "category": "Movilidad"}, traffic), 0)
+        self.assertGreaterEqual(_photo_score({"title": "¡Jet está de vuelta! Su riff más famoso sonará en CDMX en 2027", "category": "CDMX"}, concert), 0)
+        self.assertGreaterEqual(_photo_score({"title": "Hasta 35 km/h de rachas en alcaldías de la CDMX", "category": "CDMX"}, weather), 0)
+
+
 if __name__ == "__main__":
     unittest.main()

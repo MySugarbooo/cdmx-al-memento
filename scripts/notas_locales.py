@@ -195,12 +195,12 @@ def is_san_juan_del_rio_autopista57_closure(article):
 
 
 def is_huixtla_migrant_caravan(article):
-    """Identifica el titular de El Financiero sobre la caravana llegada a Huixtla."""
+    """Identifica las dos versiones publicadas sobre la caravana ubicada en Huixtla."""
     title = unicodedata.normalize("NFKD", str(article.get("title") or ""))
     title = "".join(ch for ch in title if not unicodedata.combining(ch)).casefold()
     source = unicodedata.normalize("NFKD", str(article.get("source") or ""))
     source = "".join(ch for ch in source if not unicodedata.combining(ch)).casefold().strip()
-    return (
+    original_el_financiero = (
         str(article.get("date") or "") == "2026-11-12"
         and source == "el financiero"
         and "caravana migrante" in title
@@ -208,6 +208,14 @@ def is_huixtla_migrant_caravan(article):
         and "chiapas" in title
         and "rumbo a cdmx" in title
     )
+    updated_infobae = (
+        str(article.get("date") or "") == "2026-11-13"
+        and source == "infobae"
+        and "caravana con 500 migrantes acampa en huixtla" in title
+        and "chiapas" in title
+        and "avanzar a cdmx" in title
+    )
+    return original_el_financiero or updated_infobae
 
 
 def is_vc_fatal_trailer_incident(article):
@@ -1682,11 +1690,11 @@ def _photo_score(article, photo):
     # Una noticia sobre repartidores exige una imagen de repartidores o mensajeros;
     # una protesta distinta no es contexto suficiente.
     delivery_story = bool(re.search(
-        r"\b(?:repartidores?|conductores? de aplicacion|mensajeros?|carteros?|servicio postal mexicano|reparto de paqueteria|delivery riders?)\b",
+        r"\b(?:repartidor(?:es|a|as)?|conductores? de aplicacion|mensajeros?|carteros?|servicio postal mexicano|reparto de paqueteria|delivery riders?)\b",
         headline,
     ))
     delivery_photo = bool(re.search(
-        r"\b(?:repartidores?|conductores? de aplicacion|mensajeros?|carteros?|servicio postal mexicano|reparto de paqueteria|delivery riders?)\b",
+        r"\b(?:repartidor(?:es|a|as)?|conductores? de aplicacion|mensajeros?|carteros?|servicio postal mexicano|reparto de paqueteria|delivery riders?)\b",
         context,
     ))
     motorcycle_story = bool(re.search(
@@ -1817,7 +1825,7 @@ def _photo_score(article, photo):
     lgbt_photo = bool(re.search(r"\b(?:lgbtttiq|lgbtq?|diversidad sexual|marcha del orgullo|orgullo lgbt)\b", context))
     # Las notas de renta, compra o acceso a vivienda requieren contexto residencial.
     housing_story = bool(re.search(
-        r"\b(?:rentas?|alquiler|mercado inmobiliario|inmobiliari[oa]s?|precios? de vivienda|compra de vivienda|comprar vivienda|venta de vivienda|crisis habitacional|vivienda social|vivienda asequible)\b",
+        r"\b(?:rentas?|rentar|rentan|alquiler|mercado inmobiliario|inmobiliari[oa]s?|precios? de vivienda|compra de vivienda|comprar vivienda|venta de vivienda|crisis habitacional|vivienda social|vivienda asequible)\b",
         headline,
     ))
     housing_photo = bool(re.search(
@@ -1954,11 +1962,29 @@ def _photo_score(article, photo):
     # Un coro o una fotografía musical no representa asuntos ajenos a la música.
     if music_photo and not music_story:
         return -10000
-    weather_story = bool(re.search(r"\brachas?\b", headline))
+    if music_story and not music_photo:
+        return -10000
+    # No confundir captación/cosecha de lluvia con una alerta meteorológica.
+    water_harvesting_story = bool(re.search(
+        r"\b(?:captacion de agua(?: de lluvia)?|cosecha de lluvia|captar agua de lluvia|sistemas? de captacion(?: pluvial| de agua)?|sistemas? para captar agua)\b",
+        headline,
+    ))
+    # Cuando el titular trata de una suspensión de transporte por lluvia,
+    # una foto de la línea afectada es más pertinente que una foto meteorológica.
+    transit_service_weather_story = bool(
+        re.search(r"\b(?:metro|metrobus|cablebus|trolebus)\b", headline)
+        and re.search(r"\b(?:suspende|suspendio|sin servicio|interrump\w*|reanuda|servicio)\b", headline)
+    )
+    weather_story = bool(re.search(
+        r"\b(?:rachas?|lluvias?|llover|precipitacion|viento|tormenta|temperatura|frio|calor)\b",
+        headline,
+    )) and not water_harvesting_story and not transit_service_weather_story
     weather_photo = bool(re.search(
-        r"\b(?:viento|rachas?|meteorologia|clima|nubes?|cielo nublado|tormenta|temperatura|frio)\b",
+        r"\b(?:viento|rachas?|meteorologia|clima|nubes?|cielo nublado|tormenta|temperatura|frio|operativo.{0,40}lluvias?|lluvias?.{0,40}operativo)\b",
         context,
     ))
+    if weather_story and not weather_photo:
+        return -10000
     animal_story = bool(re.search(
         r"\b(?:jauria|sloopy|lobito|perros?|perritos?|mascotas?|refugio franciscano|refugio de animales|albergue de animales|cacomixtles?)\b",
         headline,
@@ -1972,7 +1998,7 @@ def _photo_score(article, photo):
         return -10000
 
     road_incident_story = bool(re.search(
-        r"\b(?:accidente|choque|colision|volcadura|siniestro vial)\b",
+        r"\b(?:accident\w*|choqu\w*|colision\w*|volcadur\w*|siniestro vial|atropell\w*|derrap\w*)\b",
         headline,
     ))
     motorsport_photo = bool(re.search(
@@ -1980,14 +2006,18 @@ def _photo_score(article, photo):
         context,
     ))
     road_traffic_photo = bool(re.search(
-        r"\b(?:trafico vehicular|trafico|vialidad|congestion vehicular|circulacion vehicular)\b",
+        r"\b(?:trafico(?: vehicular)?|transito vehicular|vialidad|congestion vehicular|circulacion vehicular|camion(?:es)?|camionetas?|microbus(?:es)?|autobus(?:es)?|vehiculos? de carga)\b",
         context,
     ))
-    # Un autódromo no es contexto para un choque de tránsito en una avenida.
+    motorcycle_photo = bool(re.search(r"\b(?:motocicletas?|motociclistas?|motos?)\b", context))
+    # Los accidentes de automovilismo no deben pasar por el filtro de tránsito urbano.
     motorsport_story = bool(re.search(
         r"\b(?:formula 1|f1|gran premio|gp de mexico|autodromo|automovilismo|bottas|verstappen|hamilton|antonelli|checo|alonso|nascar)\b",
         headline,
     ))
+    if road_incident_story and not motorsport_story and not (road_traffic_photo or motorcycle_photo):
+        return -10000
+    # Un autódromo no es contexto para un choque de tránsito en una avenida.
     if road_incident_story and motorsport_photo and not motorsport_story:
         return -10000
     if lgbt_story and not lgbt_photo:
@@ -2057,6 +2087,86 @@ def _photo_score(article, photo):
     ))
     if tax_story and not tax_photo:
         return -10000
+    # Una chelería o bar requiere una imagen de bares, cantinas o cerveza.
+    bar_business_story = bool(re.search(
+        r"\b(?:chelerias?|cervecerias?|cantinas?|bares?|bar de barrio)\b",
+        headline,
+    ))
+    bar_business_photo = bool(re.search(
+        r"\b(?:chelerias?|cervecerias?|cantinas?|bares?|cerveza|restaurantes?)\b",
+        context,
+    ))
+    if bar_business_story and not bar_business_photo:
+        return -10000
+    # La nota sobre tamaleros o comida callejera no se ilustra con monumentos.
+    street_food_story = bool(re.search(
+        r"\b(?:tamaler[oa]s?|tamales?|antojitos|comida callejera|puestos? de comida|vendedores? ambulantes)\b",
+        headline,
+    ))
+    street_food_photo = bool(re.search(
+        r"\b(?:tamales?|tamaler[oa]s?|antojitos|comida callejera|puestos? de comida|vendedores? ambulantes|mercado de alimentos)\b",
+        context,
+    ))
+    if street_food_story and not street_food_photo:
+        return -10000
+    # Las notas sobre DiDi/Uber requieren contexto de transporte por aplicación.
+    ride_hailing_story = bool(re.search(
+        r"\b(?:didi|uber|plataformas? de transporte|conductores? de aplicacion)\b",
+        headline,
+    ))
+    ride_hailing_photo = bool(re.search(
+        r"\b(?:didi|uber|taxi|vehiculos? de plataforma|conductores? de aplicacion|autos? de plataforma)\b",
+        context,
+    ))
+    if ride_hailing_story and not ride_hailing_photo:
+        return -10000
+    # Una iniciativa del Congreso no se ilustra con Palacio Nacional.
+    legislative_story = bool(
+        re.search(r"\b(?:congreso|asamblea legislativa|legislativ[oa]|camara de diputados|senado)\b", headline)
+        and re.search(r"\b(?:proponen?|propuesta|iniciativa|sancionar|reforma|ley|proyecto)\b", headline)
+    )
+    legislative_photo = bool(re.search(
+        r"\b(?:congreso|asamblea legislativa|palacio legislativo|camara de diputados|recinto legislativo|sesion del congreso|diputad[oa]s?)\b",
+        context,
+    ))
+    if legislative_story and not legislative_photo:
+        return -10000
+    # El Plan General de Desarrollo exige cartografía o contexto de planeación urbana.
+    planning_story = (
+        _photo_fold(article.get("category")) != "seguridad"
+        and bool(re.search(
+            r"\b(?:plan general de desarrollo|pgd|uso de suelo|ordenamiento territorial|expropiacion|desarrollo urbano|planeacion urbana|banco de suelo)\b",
+            headline,
+        ))
+    )
+    planning_photo = bool(re.search(
+        r"\b(?:plan general de desarrollo|pgd|uso de suelo|ordenamiento territorial|expropiacion|desarrollo urbano|planeacion urbana|mapa urbano|banco de suelo)\b",
+        context,
+    )) or legislative_photo
+    if planning_story and not planning_photo:
+        return -10000
+    # Las caravanas y noticias de migración requieren personas migrantes o albergues.
+    migration_story = bool(re.search(
+        r"\b(?:caravana.{0,50}migrantes?|migrantes?|refugiados?)\b",
+        headline,
+    ))
+    migration_photo = bool(re.search(
+        r"\b(?:caravana migrante|migrantes?|refugiados?|albergues? migratorios?|estaciones? migratorias?)\b",
+        context,
+    ))
+    if migration_story and not migration_photo:
+        return -10000
+    # Actores, estrenos y alfombras rojas requieren contexto de cine o espectáculo.
+    entertainment_person_story = bool(re.search(
+        r"\b(?:alfombra roja|premiere|estreno|reparto|actores?|actrices?|canta|interpreta)\b",
+        headline,
+    ))
+    entertainment_photo = bool(re.search(
+        r"\b(?:alfombra roja|premiere|estreno|reparto|actores?|actrices?|cine|cineteca|conciertos?|musica en vivo|escenario|filmoteca)\b",
+        context,
+    ))
+    if entertainment_person_story and not entertainment_photo:
+        return -10000
     themed_category = (
         (photo_category == "Cultura" and music_story and music_photo)
         or (photo_category == "Medio Ambiente" and (
@@ -2070,6 +2180,16 @@ def _photo_score(article, photo):
         or (tax_story and tax_photo)
         or (environmental_story and environmental_photo)
         or (eco_story and eco_photo)
+        or (delivery_story and delivery_photo)
+        or (bar_business_story and bar_business_photo)
+        or (street_food_story and street_food_photo)
+        or (ride_hailing_story and ride_hailing_photo)
+        or (legislative_story and legislative_photo)
+        or (planning_story and planning_photo)
+        or (migration_story and migration_photo)
+        or (entertainment_person_story and entertainment_photo)
+        or (motorcycle_story and motorcycle_photo)
+        or (road_incident_story and road_traffic_photo)
     )
     # Una categoría distinta no basta por sí sola para considerar pertinente una foto.
     if photo_category not in (category, "CDMX", "Alcaldías") and not themed_category:
@@ -2301,6 +2421,28 @@ def _photo_score(article, photo):
         score+=180
     if tax_story and tax_photo:
         score+=180
+    if delivery_story and delivery_photo:
+        score+=120
+    if bar_business_story and bar_business_photo:
+        score+=100
+    if street_food_story and street_food_photo:
+        score+=100
+    if ride_hailing_story and ride_hailing_photo:
+        score+=120
+    if legislative_story and legislative_photo:
+        score+=120
+    if planning_story and planning_photo:
+        score+=120
+    if music_story and music_photo:
+        score+=120
+    if weather_story and weather_photo:
+        score+=80
+    if motorcycle_story and motorcycle_photo:
+        score+=120
+    if migration_story and migration_photo:
+        score+=120
+    if entertainment_person_story and entertainment_photo:
+        score+=120
     return score
 
 
