@@ -2291,18 +2291,26 @@ def assign_photos(items):
             _photo_score(article, existing) if has_complete_credit(existing) else -10000
         )
         available = [photo for photo in pool if photo.get("id") not in reserved]
-        candidates = available or pool
-        best = None
-        best_score = -10000
-        if candidates:
-            best = max(candidates, key=lambda photo: (
+
+        def best_candidate(candidates):
+            if not candidates:
+                return None, -10000
+            candidate = max(candidates, key=lambda photo: (
                 _photo_score(article, photo),
                 # Desempate estable, sin elegir siempre el primer elemento de la categoría.
                 hashlib.sha256(
                     (str(article.get("url")) + "|" + str(photo.get("id"))).encode()
                 ).hexdigest(),
             ))
-            best_score = _photo_score(article, best)
+            return candidate, _photo_score(article, candidate)
+
+        best, best_score = best_candidate(available)
+        # Si las fotos aún no usadas no sirven para este tema, permite reutilizar
+        # la mejor foto pertinente ya reservada en vez de dejar la noticia sin imagen.
+        if best_score < 0 and len(available) < len(pool):
+            fallback, fallback_score = best_candidate(pool)
+            if fallback_score > best_score:
+                best, best_score = fallback, fallback_score
 
         # Si no hay reemplazo pertinente, conserva la foto anterior solo si
         # sigue siendo pertinente y tiene autor, licencia y fuente completos.
