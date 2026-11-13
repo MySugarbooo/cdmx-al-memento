@@ -2172,7 +2172,7 @@ class PerifericoPhotoRegressionTests(unittest.TestCase):
         pharmacy = representative_photo(
             "contexto_farmacia_santa_maria_ribera_2022",
             "CDMX",
-            "Farmacia de barrio en Santa María de la Ribera, alcaldía Cuauhtémoc, Ciudad de México (29 de diciembre de 2022); imagen representativa, no corresponde a Farmacias del Ahorro ni Benavides.",
+            "Farmacia de barrio en Santa María de la Ribera, Cuauhtémoc, CDMX (29 dic 2022); imagen representativa, no es de Farmacias del Ahorro ni Benavides.",
             ["farmacia", "farmacia de barrio", "Santa María de la Ribera", "Cuauhtémoc", "Ciudad de México"],
         )
         pharmacy.update({
@@ -2192,10 +2192,10 @@ class PerifericoPhotoRegressionTests(unittest.TestCase):
         self.assertEqual(article["photo"]["id"], pharmacy["id"])
         self.assertEqual(article["photo"]["author"], "ProtoplasmaKid")
         self.assertEqual(article["photo"]["license"], "CC BY-SA 4.0")
-        self.assertIn("no corresponde a Farmacias del Ahorro ni Benavides", article["photo"]["topic"])
+        self.assertIn("no es de Farmacias del Ahorro ni Benavides", article["photo"]["topic"])
 
     def test_pharmacy_context_photo_has_complete_attribution_in_all_catalogs(self):
-        expected_topic = "Farmacia de barrio en Santa María de la Ribera, alcaldía Cuauhtémoc, Ciudad de México (29 de diciembre de 2022); imagen representativa, no corresponde a Farmacias del Ahorro ni Benavides."
+        expected_topic = "Farmacia de barrio en Santa María de la Ribera, Cuauhtémoc, CDMX (29 dic 2022); imagen representativa, no es de Farmacias del Ahorro ni Benavides."
         relative_paths = (
             "assets/fotos/contexto-tematico.json",
             "assets/fotos/indice-noticias-1100.json",
