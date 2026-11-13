@@ -1256,7 +1256,7 @@ def _photo_category(article):
     headline=re.sub(r"\b(?:pone|ponen|puso|poner|puesta|entra|entro|entrara)\s+en\s+marcha\b",
                     "activa", headline)
     # Los conciertos y las notas sobre cantantes pertenecen a Cultura.
-    if re.search(r"\b(?:conciertos?|cantantes?|cantautores?|gira musical|canciones? ineditas|musica en vivo|teatro metropolitan)\b", headline):
+    if re.search(r"\b(?:cantantes?|cantautores?|gira musical|canciones? ineditas|musica en vivo|teatro metropolitan)\b", headline):
         return "Cultura"
     # Los planes de electrificación del transporte público son materia de Movilidad.
     if (re.search(r"\b(?:transporte(?: publico)?|movilidad)\b", headline)
@@ -1319,9 +1319,6 @@ STRICT_PHOTO_TOPICS = (
     # Mantener primero la regla de gas: el titular puede incluir un segundo asunto tras dos puntos.
     (r"\b(?:pipas? de gas|gas lp|explosion(?:es)? de gas|tanques? de gas|fugas? de gas|acumulacion de gas|estalla\s+(?:un\s+)?tanque(?:\s+de\s+gas)?|incendios?)\b",
      r"\b(?:gas|tanques?|cilindros?|fugas?|bomberos|incendios?|extintores?|locales? comerciales?|mercados?|cocinas?|alimentos?)\b"),
-    # Un concierto requiere una imagen musical; una danza folklórica ajena no basta.
-    (r"\b(?:conciertos?|cantantes?|cantautores?|gira musical|canciones? ineditas|musica en vivo)\b",
-     r"\b(?:conciertos?|cantantes?|cantautores?|musica en vivo|musicos?|guitarras?|bandas?|orquestas?|palacio de los deportes|auditorio nacional|teatro metropolitan)\b"),
     # Ballet y circo requieren una imagen de artes escénicas de ese tipo; un Metro o monumento no basta.
     (r"\b(?:ballet|zapatilla de cristal|danza clasica)\b",
      r"\b(?:ballet|bailarinas?|bailarines?|danza clasica|coreografia de ballet|escenario de ballet)\b"),
@@ -1928,6 +1925,7 @@ def _photo_score(article, photo):
     # Admitir categorías temáticas solo cuando el descriptor coincide con la noticia.
     music_story = bool(re.search(
         r"\b(?:riff|musica|orquestas?|coros?|coral|conciertos?|bandas?|cantantes?|aniversario musical|"
+        r"canciones? ineditas|teatro metropolitan|maria leon|era de villana|"
         r"tame impala|karol g|regresa a mexico|regresan a mexico|dos noches en cdmx|"
         r"giras?|tours?|shows?|presentaciones? en cdmx|fechas? en cdmx)\b",
         headline,
