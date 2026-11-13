@@ -4,7 +4,7 @@
  const grid=document.getElementById('neo-photo-grid');
  const status=document.getElementById('neo-photo-status');
  if(!grid||!status)return;
- const DATA='/assets/fotos/indice-noticias-1100.json?v=20261113-concert-context1';
+ const DATA='/assets/fotos/indice-noticias-1100.json?v=20261113-cacomixtle-context2';
  const NOTICE='Imagen de carácter ilustrativo y referencial; no constituye evidencia gráfica de los hechos descritos.';
  const safeImage=u=>/^\/assets\/fotos\/[a-z0-9_]+\.jpg$/i.test(String(u||''))||/^https:\/\/(?:upload|thumb)\.wikimedia\.org\/wikipedia\/commons\//.test(String(u||''));
  const safeCommons=u=>/^https:\/\/commons\.wikimedia\.org\/wiki\/File:/.test(String(u||''));
