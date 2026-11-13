@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-13 15:12 UTC",
+  "updated": "2026-11-13 16:04 UTC",
   "boroughs": [
     {
       "name": "La Magdalena Contreras",
@@ -49,27 +49,6 @@
           "borough": "La Magdalena Contreras",
           "location": "La Magdalena Contreras (mencionada en el titular)",
           "local_url": "/noticias/?id=fb0abb4bb5657f6a6bac&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con N+, el titular publicado es: «Madres Denuncian Presunta Violencia contra Alumnos en CAM 54 de Magdalena Contreras, CDMX». La información publicada por N+ aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "commons_109733595",
-            "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/MX_NS_LA_MAGDALENA_CONTRERAS_04.jpg/960px-MX_NS_LA_MAGDALENA_CONTRERAS_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "category": "Alcaldías",
-            "borough": "",
-            "topic": "MX NS LA MAGDALENA CONTRERAS 04",
-            "keywords": [
-              "Magdalena Contreras Ciudad de México"
-            ],
-            "author": "Secretaría de Cultura CDMX",
-            "license": "CC BY 2.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-            "source": "https://commons.wikimedia.org/wiki/File:MX_NS_LA_MAGDALENA_CONTRERAS_04.jpg"
-          },
           "alternate_versions": [
             {
               "title": "Madres Denuncian Presunta Violencia contra Alumnos en CAM 54 de Magdalena Contreras, CDMX",
@@ -104,7 +83,28 @@
                 "source": "https://commons.wikimedia.org/wiki/File:MX_NS_LA_MAGDALENA_CONTRERAS_07.jpg"
               }
             }
-          ]
+          ],
+          "brief": {
+            "lead": "De acuerdo con N+, el titular publicado es: «Madres Denuncian Presunta Violencia contra Alumnos en CAM 54 de Magdalena Contreras, CDMX». La información publicada por N+ aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "commons_109733595",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/MX_NS_LA_MAGDALENA_CONTRERAS_04.jpg/960px-MX_NS_LA_MAGDALENA_CONTRERAS_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "category": "Alcaldías",
+            "borough": "",
+            "topic": "MX NS LA MAGDALENA CONTRERAS 04",
+            "keywords": [
+              "Magdalena Contreras Ciudad de México"
+            ],
+            "author": "Secretaría de Cultura CDMX",
+            "license": "CC BY 2.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+            "source": "https://commons.wikimedia.org/wiki/File:MX_NS_LA_MAGDALENA_CONTRERAS_04.jpg"
+          }
         },
         {
           "title": "Feria del Pulque y la Barbacoa en La Magdalena Contreras. Fechas y qué encontrarás",
@@ -1173,8 +1173,41 @@
     },
     {
       "name": "Álvaro Obregón",
-      "count": 71,
+      "count": 72,
       "articles": [
+        {
+          "title": "Casa Ecológica busca reducir gastos familiares y consumo de gas en Álvaro Obregón",
+          "description": "De acuerdo con Maya Comunicación, el titular publicado es: «Casa Ecológica busca reducir gastos familiares y consumo de gas en Álvaro Obregón». La información publicada por Maya Comunicación aborda un asunto que este portal clasifica como Medio Ambiente. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQSGhHRnVORmxialRzVmduSGVzSU9xdUI5dXdTOC15eVZ2S3o3eTJicnZKWlhoRmpSckgyWV92OG16WFh3SHF2VVJrMlpVdlZuOE44ZXpWTThpb0xuRzRQT3ZJN1Y0TDBQM0Vkcm52X1dkR2RLYmFFeGtrMzZiaUZNUmlLSzQtb01jQkNZa2V2blJSRlUzekYyVFFjWDF3ME1JdTV2eGhXUmM1WDZmc0tJNFZJakk?oc=5",
+          "source": "Maya Comunicación",
+          "date": "2026-11-13",
+          "published_at": "2026-11-13T15:35:51Z",
+          "category": "Medio Ambiente",
+          "borough": "Álvaro Obregón",
+          "location": "Álvaro Obregón (mencionada en el titular)",
+          "local_url": "/noticias/?id=757c0c093278e2397a37&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con Maya Comunicación, el titular publicado es: «Casa Ecológica busca reducir gastos familiares y consumo de gas en Álvaro Obregón». La información publicada por Maya Comunicación aborda un asunto que este portal clasifica como Medio Ambiente. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "commons_152180165",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Cosecha_de_Lluvia_05.jpg/960px-Cosecha_de_Lluvia_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "category": "Medio Ambiente",
+            "borough": "",
+            "topic": "Cosecha de Lluvia 05",
+            "keywords": [
+              "Lluvia Ciudad de México"
+            ],
+            "author": "Gobierno de la Ciudad de México",
+            "license": "CC BY 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Cosecha_de_Lluvia_05.jpg"
+          }
+        },
         {
           "title": "CDMX instalará miles de sistemas para captar agua de lluvia en Álvaro Obregón",
           "description": "De acuerdo con Enfoque Noticias, el titular publicado es: «CDMX instalará miles de sistemas para captar agua de lluvia en Álvaro Obregón». El titular de Enfoque Noticias aborda la captación y aprovechamiento de agua pluvial en Álvaro Obregón. Se trata de una práctica o iniciativa relacionada con el uso del agua; no es un aviso meteorológico. Para conocer su alcance y resultados es necesario consultar el reportaje original.",
@@ -1528,21 +1561,6 @@
             "context": "La presentación se realizó en Santa Rosa Xochiac, alcaldía Álvaro Obregón. La iniciativa busca reducir el consumo de agua y gas y apoyar la producción de alimentos en los hogares.",
             "pending": "La inversión, las viviendas y las instalaciones descritas son cifras y metas atribuidas al Gobierno de la Ciudad de México y a la cobertura periodística; no deben presentarse como equipos ya instalados en cada hogar. Los avances por colonia requieren confirmación de la Secretaría del Medio Ambiente.",
             "method": "Síntesis basada en Radio Fórmula, 12 de noviembre de 2026: https://www.radioformula.com.mx/cdmx/calentadores-solares-y-captacion-de-lluvia-el-plan-de-cdmx-para-ahorrar-en-casa-20261112-0088.html. Se contrastaron ubicación y objetivos con La Jornada, 12 de noviembre de 2026: https://www.jornada.com.mx/noticia/2026/11/12/capital/lanza-cdmx-programa-de-ecotecnias-para-10-mil-viviendas-en-alvaro-obregon. Las cifras se atribuyen a las fuentes y no constituyen una auditoría independiente."
-          },
-          "photo": {
-            "id": "commons_152180159",
-            "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Cosecha_de_Lluvia_02.jpg/960px-Cosecha_de_Lluvia_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "category": "Medio Ambiente",
-            "borough": "",
-            "topic": "Cosecha de Lluvia 02",
-            "keywords": [
-              "Lluvia Ciudad de México"
-            ],
-            "author": "Gobierno de la Ciudad de México",
-            "license": "CC BY 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Cosecha_de_Lluvia_02.jpg"
           }
         },
         {
@@ -2650,39 +2668,6 @@
             "license": "CC BY-SA 4.0",
             "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
             "source": "https://commons.wikimedia.org/wiki/File:Hospital_%C3%81lvaro_Obreg%C3%B3n,_Ciudad_de_M%C3%A9xico.jpg"
-          }
-        },
-        {
-          "title": "López Casarín recupera área ambiental afectada en Álvaro Obregón",
-          "description": "De acuerdo con Polemón, el titular publicado es: «López Casarín recupera área ambiental afectada en Álvaro Obregón». La información publicada por Polemón aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQc2NhZHBaUmFWMXlaUDQ1d25sTUoxb29hNWlfNkhRQlZrelR2cjl1UnhXbGc5X0NCZzJycmMwcHV2QWtrNDhodXpmMmx5OTIxWC1VMHN5UktleDNCeHI2TkhBdVJoY0NtQ2luMDJmcXB5U0FIV2xuN0tnT1lyR0JYbW5rYS04QXUwMFQyYw?oc=5",
-          "source": "Polemón",
-          "date": "2026-11-04",
-          "published_at": "2026-11-05T05:28:18Z",
-          "category": "CDMX",
-          "borough": "Álvaro Obregón",
-          "location": "Álvaro Obregón (mencionada en el titular)",
-          "local_url": "/noticias/?id=d2518455e4c85a2ad048&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con Polemón, el titular publicado es: «López Casarín recupera área ambiental afectada en Álvaro Obregón». La información publicada por Polemón aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "commons_51897267",
-            "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Flores_en_Avenida_%C3%81lvaro_Obreg%C3%B3n%2C_Ciudad_de_M%C3%A9xico.jpg/960px-Flores_en_Avenida_%C3%81lvaro_Obreg%C3%B3n%2C_Ciudad_de_M%C3%A9xico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "category": "Alcaldías",
-            "borough": "",
-            "topic": "Flores en Avenida Álvaro Obregón, Ciudad de México",
-            "keywords": [
-              "Álvaro Obregón Ciudad de México"
-            ],
-            "author": "Raul21940",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Flores_en_Avenida_%C3%81lvaro_Obreg%C3%B3n,_Ciudad_de_M%C3%A9xico.jpg"
           }
         }
       ]
@@ -4452,6 +4437,27 @@
             "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
             "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "contexto_repartidores_motocicleta_cdmx",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Carteros_en_motocicleta_del_Servicio_Postal_Mexicano%2C_2013.jpg/960px-Carteros_en_motocicleta_del_Servicio_Postal_Mexicano%2C_2013.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+            "category": "Movilidad",
+            "borough": "",
+            "topic": "Carteros en motocicleta del Servicio Postal Mexicano, Ciudad de México (2013); imagen representativa de reparto en motocicleta, no del bloqueo actual",
+            "keywords": [
+              "repartidores de aplicaciones",
+              "repartidores",
+              "motocicletas",
+              "motociclistas",
+              "mensajeros",
+              "delivery",
+              "Servicio Postal Mexicano"
+            ],
+            "author": "Palacio Postal",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Carteros_en_motocicleta_del_Servicio_Postal_Mexicano,_2013.jpg"
           }
         },
         {
@@ -8526,21 +8532,6 @@
             "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
             "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "commons_178857482",
-            "kind": "representativa",
-            "url": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Afluencia_Indios_Verdes_Cableb%C3%BAs_%282024%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-            "category": "Movilidad",
-            "borough": "",
-            "topic": "Afluencia Indios Verdes Cablebús (2024)",
-            "keywords": [
-              "Cablebús Ciudad de México"
-            ],
-            "author": "Sistema de Transporte Público Cablebús / Gobierno de la Ciudad de México",
-            "license": "CC BY 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Afluencia_Indios_Verdes_Cableb%C3%BAs_(2024).png"
           }
         },
         {
@@ -9356,16 +9347,19 @@
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           },
           "photo": {
-            "id": "alcaldia_iztacalco",
+            "id": "commons_164311379",
             "kind": "representativa",
-            "url": "/assets/alcaldias/iztacalco.jpg",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Casa_Centro_Hist%C3%B3rico_de_la_Ciudad_de_M%C3%A9xico_02.jpg/960px-Casa_Centro_Hist%C3%B3rico_de_la_Ciudad_de_M%C3%A9xico_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
             "category": "CDMX",
-            "borough": "Iztacalco",
-            "topic": "Iglesia de San Matías en el antiguo pueblo de Iztacalco",
-            "author": "AlejandroLinaresGarcia",
-            "license": "CC BY-SA 3.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-            "source": "https://commons.wikimedia.org/wiki/File:SanMatiasChurchIztacalco02.jpg"
+            "borough": "",
+            "topic": "Casa Centro Histórico de la Ciudad de México 02",
+            "keywords": [
+              "Centro Histórico Ciudad de México"
+            ],
+            "author": "Correogsk",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Casa_Centro_Hist%C3%B3rico_de_la_Ciudad_de_M%C3%A9xico_02.jpg"
           }
         },
         {
@@ -9460,16 +9454,24 @@
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           },
           "photo": {
-            "id": "alcaldia_iztacalco",
+            "id": "contexto_trafico_eje_central",
             "kind": "representativa",
-            "url": "/assets/alcaldias/iztacalco.jpg",
-            "category": "CDMX",
-            "borough": "Iztacalco",
-            "topic": "Iglesia de San Matías en el antiguo pueblo de Iztacalco",
-            "author": "AlejandroLinaresGarcia",
-            "license": "CC BY-SA 3.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-            "source": "https://commons.wikimedia.org/wiki/File:SanMatiasChurchIztacalco02.jpg"
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Eje_Central_CDMX.jpg/1280px-Eje_Central_CDMX.jpg",
+            "category": "Movilidad",
+            "borough": "",
+            "topic": "Tráfico vehicular en Eje Central, Ciudad de México (fotografía de 2018)",
+            "keywords": [
+              "tráfico",
+              "vehículos",
+              "automóviles",
+              "movilidad",
+              "hoy no circula",
+              "vialidad"
+            ],
+            "author": "Sergio Estrada Flores",
+            "license": "CC BY 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+            "source": "https://commons.wikimedia.org/wiki/File:Eje_Central_CDMX.jpg"
           }
         },
         {
@@ -9522,16 +9524,19 @@
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           },
           "photo": {
-            "id": "alcaldia_iztacalco",
+            "id": "commons_75043059",
             "kind": "representativa",
-            "url": "/assets/alcaldias/iztacalco.jpg",
-            "category": "CDMX",
-            "borough": "Iztacalco",
-            "topic": "Iglesia de San Matías en el antiguo pueblo de Iztacalco",
-            "author": "AlejandroLinaresGarcia",
-            "license": "CC BY-SA 3.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-            "source": "https://commons.wikimedia.org/wiki/File:SanMatiasChurchIztacalco02.jpg"
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/003041-004_CAMIONES_DE_LIMPIA_FEBRERO_17_1930_%2832497046872%29.jpg/960px-003041-004_CAMIONES_DE_LIMPIA_FEBRERO_17_1930_%2832497046872%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "category": "Servicios",
+            "borough": "",
+            "topic": "003041-004 CAMIONES DE LIMPIA FEBRERO 17 1930 (32497046872)",
+            "keywords": [
+              "Recolección de basura CDMX"
+            ],
+            "author": "Unknown",
+            "license": "CC0",
+            "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+            "source": "https://commons.wikimedia.org/wiki/File:003041-004_CAMIONES_DE_LIMPIA_FEBRERO_17_1930_(32497046872).jpg"
           }
         },
         {
@@ -10783,16 +10788,19 @@
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           },
           "photo": {
-            "id": "alcaldia_iztapalapa",
+            "id": "commons_114051284",
             "kind": "representativa",
-            "url": "/assets/alcaldias/iztapalapa.jpg",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Coro_de_la_Catedral_metropolitana_de_la_Ciudad_de_M%C3%A9xico_04.jpg/960px-Coro_de_la_Catedral_metropolitana_de_la_Ciudad_de_M%C3%A9xico_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
             "category": "CDMX",
-            "borough": "Iztapalapa",
-            "topic": "Vista de Iztapalapa desde el Cerro de la Estrella",
-            "author": "Secretaría de Cultura Ciudad de México from México",
-            "license": "CC BY 2.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-            "source": "https://commons.wikimedia.org/wiki/File:MX_MM_MUSEO_CERRO_DE_LA_ESTRELLA_%2849522225751%29.jpg"
+            "borough": "",
+            "topic": "Coro de la Catedral metropolitana de la Ciudad de México 04",
+            "keywords": [
+              "Catedral Metropolitana Ciudad de México"
+            ],
+            "author": "Luis Alvaz",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Coro_de_la_Catedral_metropolitana_de_la_Ciudad_de_M%C3%A9xico_04.jpg"
           }
         },
         {
@@ -15980,24 +15988,59 @@
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           },
           "photo": {
-            "id": "commons_169149220",
+            "id": "commons_16240277",
             "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Candelaria_de_los_Patos_e_inmediaciones_con_dron_08.jpg/960px-Candelaria_de_los_Patos_e_inmediaciones_con_dron_08.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "category": "Movilidad",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Cacerolazo_contra_la_violencia_-_Ciudad_de_M%C3%A9xico_-_1.jpg/960px-Cacerolazo_contra_la_violencia_-_Ciudad_de_M%C3%A9xico_-_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "category": "CDMX",
             "borough": "",
-            "topic": "Fotografía aérea de Avenida H. Congreso de la Unión, Candelaria de los Patos y Centro Histórico; tránsito vehicular (2 de julio de 2025)",
+            "topic": "Cacerolazo contra la violencia - Ciudad de México - 1",
             "keywords": [
-              "Avenida Congreso de la Unión",
-              "Candelaria de los Patos",
-              "Centro Histórico",
-              "tránsito vehicular",
-              "Ciudad de México"
+              "Ángel de la Independencia Ciudad de México"
             ],
             "author": "ProtoplasmaKid",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Candelaria_de_los_Patos_e_inmediaciones_con_dron_08.jpg"
-          }
+            "license": "CC BY-SA 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Cacerolazo_contra_la_violencia_-_Ciudad_de_M%C3%A9xico_-_1.jpg"
+          },
+          "alternate_versions": [
+            {
+              "title": "Caos vial en la CdMx HOY 13 de noviembre por 7 bloqueos, 4 marchas y 1 rodada en Calzada Tlalpan, Avenida Hida",
+              "description": "De acuerdo con MILENIO, el titular publicado es: «Caos vial en la CdMx HOY 13 de noviembre por 7 bloqueos, 4 marchas y 1 rodada en Calzada Tlalpan, Avenida Hida». Según la información destacada por MILENIO, manifestaciones o bloqueos forman parte de la jornada de movilidad capitalina. La ficha no demuestra por sí sola que todas las vías mencionadas sigan cerradas al momento de leerla.",
+              "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxONDRJeHd2dmU1ZmxXamo1X2FMZWVWc2QxWklrVjR4REx4ekc3S1ZRYnA0SF95UkNlcTFZajJ5MzNuVHBFc2JYcDMwTjZlVnhwMWZjWURicXdWMzZEYVJWR2piQW4tRVFfenR3YTNOalBvaWUzWXFubEpfdG9oSXgtVnpPbVlfX2xkMlNtTnFHalJzVnlBUjZfMTV2VHZ2ODDSAZ8BQVVfeXFMTjQ0SXh3dnZlNWZsV2pqNV9hTGVlVnNkMVpJa1Y0eERMeHpHN0tWUWJwNEhfeVJDZXExWWoyeTMzblRwRXNiWHAzME42ZVZ4cDFmY1lEYnF3VjM2RGFSVkdqYkFuLUVRX3p0d2EzTmpQb2llM1lxbmxKX3RvaEl4LVZ6T21ZX19sZDJTbU5xR2pSc1Z5QVI2XzE1dlR2djgw?oc=5",
+              "source": "MILENIO",
+              "date": "2026-11-13",
+              "published_at": "2026-11-13T12:42:00Z",
+              "category": "Movilidad",
+              "borough": "Tlalpan",
+              "location": "Tlalpan (mencionada en el titular)",
+              "local_url": "/noticias/?id=a43090f9a5184c48b47e&mes=2026-11",
+              "brief": {
+                "lead": "De acuerdo con MILENIO, el titular publicado es: «Caos vial en la CdMx HOY 13 de noviembre por 7 bloqueos, 4 marchas y 1 rodada en Calzada Tlalpan, Avenida Hida». Según la información destacada por MILENIO, manifestaciones o bloqueos forman parte de la jornada de movilidad capitalina. La ficha no demuestra por sí sola que todas las vías mencionadas sigan cerradas al momento de leerla.",
+                "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
+                "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+              },
+              "photo": {
+                "id": "commons_169149220",
+                "kind": "representativa",
+                "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Candelaria_de_los_Patos_e_inmediaciones_con_dron_08.jpg/960px-Candelaria_de_los_Patos_e_inmediaciones_con_dron_08.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+                "category": "Movilidad",
+                "borough": "",
+                "topic": "Fotografía aérea de Avenida H. Congreso de la Unión, Candelaria de los Patos y Centro Histórico; tránsito vehicular (2 de julio de 2025)",
+                "keywords": [
+                  "Avenida Congreso de la Unión",
+                  "Candelaria de los Patos",
+                  "Centro Histórico",
+                  "tránsito vehicular",
+                  "Ciudad de México"
+                ],
+                "author": "ProtoplasmaKid",
+                "license": "CC BY-SA 4.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "https://commons.wikimedia.org/wiki/File:Candelaria_de_los_Patos_e_inmediaciones_con_dron_08.jpg"
+              }
+            }
+          ]
         },
         {
           "title": "Detienen a presunto maltratador de perros en la alcaldía Tlalpan, CDMX",
@@ -16986,19 +17029,24 @@
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           },
           "photo": {
-            "id": "commons_82750992",
+            "id": "contexto_trafico_eje_central",
             "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Avenida_Francisco_I._Madero%2C_Centro_Hist%C3%B3rico%2C_Ciudad_de_M%C3%A9xico_-_Torre_Latinoamericana.jpg/960px-Avenida_Francisco_I._Madero%2C_Centro_Hist%C3%B3rico%2C_Ciudad_de_M%C3%A9xico_-_Torre_Latinoamericana.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "category": "CDMX",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Eje_Central_CDMX.jpg/1280px-Eje_Central_CDMX.jpg",
+            "category": "Movilidad",
             "borough": "",
-            "topic": "Avenida Francisco I. Madero, Centro Histórico, Ciudad de México - Torre Latinoamericana",
+            "topic": "Tráfico vehicular en Eje Central, Ciudad de México (fotografía de 2018)",
             "keywords": [
-              "Torre Latinoamericana Ciudad de México"
+              "tráfico",
+              "vehículos",
+              "automóviles",
+              "movilidad",
+              "hoy no circula",
+              "vialidad"
             ],
-            "author": "Juan Carlos Fonseca Mata",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Avenida_Francisco_I._Madero,_Centro_Hist%C3%B3rico,_Ciudad_de_M%C3%A9xico_-_Torre_Latinoamericana.jpg"
+            "author": "Sergio Estrada Flores",
+            "license": "CC BY 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+            "source": "https://commons.wikimedia.org/wiki/File:Eje_Central_CDMX.jpg"
           },
           "alternate_versions": [
             {
@@ -18185,16 +18233,23 @@
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           },
           "photo": {
-            "id": "alcaldia_xochimilco",
+            "id": "commons_169149220",
             "kind": "representativa",
-            "url": "/assets/alcaldias/xochimilco.jpg",
-            "category": "CDMX",
-            "borough": "Xochimilco",
-            "topic": "Trajineras y canales de Xochimilco",
-            "author": "Xbauerx",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Candelaria_de_los_Patos_e_inmediaciones_con_dron_08.jpg/960px-Candelaria_de_los_Patos_e_inmediaciones_con_dron_08.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "category": "Movilidad",
+            "borough": "",
+            "topic": "Fotografía aérea de Avenida H. Congreso de la Unión, Candelaria de los Patos y Centro Histórico; tránsito vehicular (2 de julio de 2025)",
+            "keywords": [
+              "Avenida Congreso de la Unión",
+              "Candelaria de los Patos",
+              "Centro Histórico",
+              "tránsito vehicular",
+              "Ciudad de México"
+            ],
+            "author": "ProtoplasmaKid",
             "license": "CC BY-SA 4.0",
             "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Trajineras_de_Xochimilco.jpg"
+            "source": "https://commons.wikimedia.org/wiki/File:Candelaria_de_los_Patos_e_inmediaciones_con_dron_08.jpg"
           }
         },
         {
@@ -18215,19 +18270,19 @@
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           },
           "photo": {
-            "id": "commons_80618455",
+            "id": "commons_75043059",
             "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Coloridas_trajineras_en_Xochimilco%2C_Ciudad_de_M%C3%A9xico.jpg/960px-Coloridas_trajineras_en_Xochimilco%2C_Ciudad_de_M%C3%A9xico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "category": "CDMX",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/003041-004_CAMIONES_DE_LIMPIA_FEBRERO_17_1930_%2832497046872%29.jpg/960px-003041-004_CAMIONES_DE_LIMPIA_FEBRERO_17_1930_%2832497046872%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "category": "Servicios",
             "borough": "",
-            "topic": "Coloridas trajineras en Xochimilco, Ciudad de México",
+            "topic": "003041-004 CAMIONES DE LIMPIA FEBRERO 17 1930 (32497046872)",
             "keywords": [
-              "CDMX"
+              "Recolección de basura CDMX"
             ],
-            "author": "Juan Carlos Fonseca Mata",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Coloridas_trajineras_en_Xochimilco,_Ciudad_de_M%C3%A9xico.jpg"
+            "author": "Unknown",
+            "license": "CC0",
+            "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+            "source": "https://commons.wikimedia.org/wiki/File:003041-004_CAMIONES_DE_LIMPIA_FEBRERO_17_1930_(32497046872).jpg"
           }
         },
         {
@@ -18248,19 +18303,24 @@
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           },
           "photo": {
-            "id": "commons_80618455",
+            "id": "contexto_trafico_eje_central",
             "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Coloridas_trajineras_en_Xochimilco%2C_Ciudad_de_M%C3%A9xico.jpg/960px-Coloridas_trajineras_en_Xochimilco%2C_Ciudad_de_M%C3%A9xico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "category": "CDMX",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Eje_Central_CDMX.jpg/1280px-Eje_Central_CDMX.jpg",
+            "category": "Movilidad",
             "borough": "",
-            "topic": "Coloridas trajineras en Xochimilco, Ciudad de México",
+            "topic": "Tráfico vehicular en Eje Central, Ciudad de México (fotografía de 2018)",
             "keywords": [
-              "CDMX"
+              "tráfico",
+              "vehículos",
+              "automóviles",
+              "movilidad",
+              "hoy no circula",
+              "vialidad"
             ],
-            "author": "Juan Carlos Fonseca Mata",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Coloridas_trajineras_en_Xochimilco,_Ciudad_de_M%C3%A9xico.jpg"
+            "author": "Sergio Estrada Flores",
+            "license": "CC BY 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+            "source": "https://commons.wikimedia.org/wiki/File:Eje_Central_CDMX.jpg"
           }
         },
         {
