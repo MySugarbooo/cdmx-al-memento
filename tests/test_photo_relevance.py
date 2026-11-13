@@ -1725,6 +1725,40 @@ class PhotoRelevanceTests(unittest.TestCase):
         self.assertEqual(stats["assigned"], 1)
 
 
+    def test_assign_photos_preserves_credited_local_photo_when_pool_has_no_match(self):
+        title = ("María León presentó su nueva “Era de Villana” en el Teatro Metropólitan "
+                 "de la CDMX: entre invitados, nostalgia y canciones inéditas")
+        article = news.standardize({
+            "title": title,
+            "url": "https://news.google.com/rss/articles/maria-leon-local-photo-regression",
+            "source": "Infobae",
+            "date": "2026-11-13",
+            "published_at": "2026-11-13T07:53:32Z",
+            "category": "CDMX",
+        })
+        existing = representative_photo(
+            "local_concert_context", "Cultura",
+            "Concierto en el Teatro Metropólitan de Ciudad de México; imagen representativa, no corresponde a María León.",
+            ["concierto", "música en vivo", "Teatro Metropólitan", "Ciudad de México"],
+        )
+        existing["source"] = "https://commons.wikimedia.org/wiki/File:Local_concert_context.jpg"
+        unrelated = representative_photo(
+            "unrelated_dance_photo", "Cultura",
+            "Danza del Fuego performance outside Museo Nacional de Antropología, Chapultepec, CDMX",
+            ["Danza del Fuego", "Museo Nacional de Antropología", "danza"],
+        )
+        unrelated["source"] = "https://commons.wikimedia.org/wiki/File:Danza_del_Fuego.jpg"
+        article["photo"] = existing
+        self.assertGreaterEqual(_photo_score(article, existing), 0)
+        self.assertLess(_photo_score(article, unrelated), 0)
+        with patch.object(photos, "_pool", return_value=[unrelated]), patch.object(
+            photos, "_load", return_value=[]
+        ):
+            stats = assign_photos([article])
+        self.assertEqual(article["photo"]["id"], existing["id"])
+        self.assertEqual(stats["assigned"], 1)
+
+
     def test_current_feed_preserves_credited_photos_and_replaces_maria_leon_mismatch(self):
         data = news.load_json(news.DEST, {"articles": []})
         articles = deepcopy(data.get("articles", []))
