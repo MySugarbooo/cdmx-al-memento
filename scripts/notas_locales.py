@@ -68,6 +68,7 @@ LA_PRENSA_TLALPAN_ANIMAL_SOURCE_URL = "https://oem.com.mx/la-prensa/policiaca/de
 INFOBAE_TLALPAN_ANIMAL_SOURCE_URL = "https://www.infobae.com/mexico/2026/11/12/detienen-a-presunto-abusador-sexual-de-animales-en-situacion-de-calle-en-cdmx-activistas-piden-que-las-investigaciones-lleguen-a-fondo/"
 EL_GRAFICO_VC_TRAILER_SOURCE_URL = "https://www.elgrafico.mx/la-roja/2026/11/12/el-morenito-muere-tras-ser-arrastrado-varios-metros-por-un-trailer-en-venustiano-carranza/?outputType=amp"
 INFOBAE_BALLET_ZAPATILLA_SOURCE_URL = "https://www.infobae.com/mexico/2026/11/12/funcion-gratis-del-ballet-la-zapatilla-de-cristal-llega-a-cdmx-fecha-y-sede/"
+INFOBAE_MARIA_LEON_CONCERT_SOURCE_URL = "https://www.infobae.com/mexico/2026/11/13/maria-leon-presento-su-nueva-era-de-villana-en-el-teatro-metropolitan-de-la-cdmx-entre-invitados-nostalgia-y-canciones-ineditas/"
 INFOBAE_PULQUE_BARBACOA_SOURCE_URL = "https://www.infobae.com/mexico/2026/11/06/la-feria-del-pulque-y-la-barbacoa-2026-llegara-a-la-magdalena-contreras-en-cdmx-fechas-horarios-y-como-llegar/"
 POSTA_PULQUE_BARBACOA_SOURCE_URL = "https://www.posta.com.mx/cdmx/feria-del-pulque-y-la-barbacoa-2026-fechas-y-entrada-gratis/vl2276243"
 SDPNOTICIAS_MAURICIO_TABE_REPORT_SOURCE_URL = "https://www.sdpnoticias.com/estados/cdmx/mauricio-tabe-presenta-su-quinto-informe-de-gobierno-en-miguel-hidalgo/"
@@ -113,6 +114,19 @@ def is_infobae_ballet_zapatilla(article):
         and source == "infobae"
         and "ballet" in title
         and "zapatilla de cristal" in title
+    )
+
+
+def is_infobae_maria_leon_concert(article):
+    """Identifica la cobertura de Infobae sobre el concierto de María León del 12/11/2026."""
+    title = _photo_fold(article.get("title"))
+    source = _photo_fold(article.get("source"))
+    return (
+        str(article.get("date") or "") == "2026-11-13"
+        and source == "infobae"
+        and "maria leon" in title
+        and "era de villana" in title
+        and "teatro metropolitan" in title
     )
 
 
@@ -521,6 +535,29 @@ def summarize(article):
     category=str(article.get("category") or "CDMX")
     theme=TAGS.get(category,TAGS["CDMX"])
     folded_title=_photo_fold(title)
+    if is_infobae_maria_leon_concert(article):
+        return {
+            "lead": (
+                "Infobae informó que María León presentó «Era de Villana» en el Teatro Metropólitan "
+                "de Ciudad de México la noche del 12 de noviembre de 2026. El reportaje sitúa el inicio "
+                "a las 21:30 y el cierre a las 23:25; describe canciones de su etapa en Playa Limbo, "
+                "su carrera solista y temas inéditos de su próximo álbum."
+            ),
+            "context": (
+                "La nota menciona como invitados a Mar Lara, Julia Medina, Cristina León y Edwin Luna. "
+                "También describe músicos, bailarines e interpretación en lengua de señas durante la presentación."
+            ),
+            "pending": (
+                "La presentación ya ocurrió. El reportaje no confirma fechas futuras, disponibilidad de boletos "
+                "ni nuevas sedes; esos datos requieren información posterior del organizador."
+            ),
+            "method": (
+                "Síntesis basada en Infobae, 13 de noviembre de 2026: "
+                + INFOBAE_MARIA_LEON_CONCERT_SOURCE_URL
+                + ". Los horarios, invitados y repertorio se atribuyen al reportaje y no constituyen "
+                "verificación independiente."
+            ),
+        }
     if is_capital_cdmx_care_budget(article):
         return {
             "lead": (
@@ -1218,6 +1255,9 @@ def _photo_category(article):
     # "Poner en marcha" un programa no describe una marcha o protesta vial.
     headline=re.sub(r"\b(?:pone|ponen|puso|poner|puesta|entra|entro|entrara)\s+en\s+marcha\b",
                     "activa", headline)
+    # Los conciertos y las notas sobre cantantes pertenecen a Cultura.
+    if re.search(r"\b(?:conciertos?|cantantes?|cantautores?|gira musical|canciones? ineditas|musica en vivo|teatro metropolitan)\b", headline):
+        return "Cultura"
     # Los planes de electrificación del transporte público son materia de Movilidad.
     if (re.search(r"\b(?:transporte(?: publico)?|movilidad)\b", headline)
             and re.search(r"\b(?:electrico|electrica|electrificacion)\b", headline)):
@@ -1279,6 +1319,9 @@ STRICT_PHOTO_TOPICS = (
     # Mantener primero la regla de gas: el titular puede incluir un segundo asunto tras dos puntos.
     (r"\b(?:pipas? de gas|gas lp|explosion(?:es)? de gas|tanques? de gas|fugas? de gas|acumulacion de gas|estalla\s+(?:un\s+)?tanque(?:\s+de\s+gas)?|incendios?)\b",
      r"\b(?:gas|tanques?|cilindros?|fugas?|bomberos|incendios?|extintores?|locales? comerciales?|mercados?|cocinas?|alimentos?)\b"),
+    # Un concierto requiere una imagen musical; una danza folklórica ajena no basta.
+    (r"\b(?:conciertos?|cantantes?|cantautores?|gira musical|canciones? ineditas|musica en vivo)\b",
+     r"\b(?:conciertos?|cantantes?|cantautores?|musica en vivo|musicos?|guitarras?|bandas?|orquestas?|palacio de los deportes|auditorio nacional|teatro metropolitan)\b"),
     # Ballet y circo requieren una imagen de artes escénicas de ese tipo; un Metro o monumento no basta.
     (r"\b(?:ballet|zapatilla de cristal|danza clasica)\b",
      r"\b(?:ballet|bailarinas?|bailarines?|danza clasica|coreografia de ballet|escenario de ballet)\b"),
