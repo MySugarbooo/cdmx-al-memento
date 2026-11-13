@@ -66,7 +66,7 @@ class StableHomepageTests(unittest.TestCase):
         self.assertIn("const sensitive=a?.sensitive_media===true||sensitiveMediaTitle(a?.title);", script)
         self.assertIn("if((!p&&!sensitive)||(p&&usedPhotos.has(p.url)))return false;", script)
         self.assertIn("Sin fotografía verificada del hecho", script)
-        self.assertIn("const candidates=state.stories.map((item,index)=>({item,index})).filter(({item})=>photoInfo(item)&&!isWeatherForecastOnly(item));", script)
+        self.assertIn("const candidates=state.stories.map((item,index)=>({item,index})).filter(({item})=>photoInfo(item)&&!isWeatherForecastOnly(item)&&!isStaleTimeSensitiveHeadline(item));", script)
 
     def test_ads_archive_and_caching_unchanged(self):
         home = read("index.html")
@@ -75,7 +75,7 @@ class StableHomepageTests(unittest.TestCase):
         self.assertIn('src="/app.js?v=',home)
         self.assertIn('href="/archivo/"',home)
         self.assertIn('src="/assets/neo-home.js?v=',home)
-        self.assertIn('src="/assets/neo-home.js?v=20261112-no-weather-hero3"', home)
+        self.assertIn('src="/assets/neo-home.js?v=20261113-expired-today-hero1"', home)
         self.assertRegex(home, r'href="/assets/neo-home\.css\?v=[a-zA-Z0-9_-]+"')
         headers=read("_headers")
         self.assertIn("Cache-Control: no-cache, must-revalidate",headers)
@@ -107,6 +107,16 @@ class StableHomepageTests(unittest.TestCase):
         self.assertIn("const all=state.stories;", news)
         self.assertNotIn("isWeatherForecastOnly", news)
         self.assertIn("suspenden|suspende", script)
+
+    def test_expired_today_and_live_headlines_do_not_become_the_lead(self):
+        script = read("assets/neo-home.js")
+        self.assertIn("function isStaleTimeSensitiveHeadline(article,now=new Date())", script)
+        self.assertIn(r"\b(?:hoy|en vivo)\b", script)
+        self.assertIn("return day!==homepageDateFormatter.format(now);", script)
+        hero = script[script.index("function renderHero()"):script.index("function renderNews()")]
+        self.assertIn("!isStaleTimeSensitiveHeadline(item)", hero)
+        apply = script[script.index("function applyStories(items,source)"):script.index("function start()")]
+        self.assertIn("!isStaleTimeSensitiveHeadline(item)", apply)
 
 if __name__ == '__main__':
     unittest.main()
