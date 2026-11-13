@@ -161,7 +161,7 @@
       "id": "contexto_consolas_videojuegos_2026",
       "kind": "representativa",
       "category": "Seguridad",
-      "topic": "Tres consolas actuales y videojuegos en estantería (fotografía de 2026; imagen representativa, no corresponde a la mercancía asegurada en Plaza Meave)",
+      "topic": "Consolas y videojuegos actuales (fotografía de 2026); imagen representativa del sector de videojuegos, no corresponde a Pokémon Go ni a la mercancía asegurada en Plaza Meave.",
       "keywords": [
         "consolas",
         "videojuegos",
@@ -173,7 +173,8 @@
       "source": "https://commons.wikimedia.org/wiki/File:InclusiveGameLab_Current_Console_Generation_CC-BY-SA.jpg",
       "author": "InclusiveGameLab",
       "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "context": "Imagen representativa de consolas y videojuegos; no corresponde a Pokémon Go ni a la mercancía asegurada en Plaza Meave."
     },
     {
       "id": "contexto_concierto_palacio_deportes_2009",
@@ -399,6 +400,27 @@
       "uploaded_at": "2023-02-01",
       "context": "Imagen de carácter ilustrativo y referencial; no constituye evidencia gráfica de los hechos descritos.",
       "adaptation": "Miniatura oficial de Wikimedia Commons; sin modificación."
+    },
+    {
+      "id": "contexto_aicm_aviones_pista_2026",
+      "kind": "representativa",
+      "category": "Movilidad",
+      "topic": "Aviones en la pista del AICM (fotografía del 28 de septiembre de 2026); imagen representativa, no documenta las afectaciones de vuelos mencionadas.",
+      "keywords": [
+        "Aeropuerto Internacional de la Ciudad de México",
+        "Aeropuerto Internacional Benito Juárez",
+        "AICM",
+        "aviones",
+        "pista de aterrizaje",
+        "vuelos",
+        "aeropuerto"
+      ],
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Aviones_en_la_pista_del_AICM.jpg/960px-Aviones_en_la_pista_del_AICM.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+      "source": "https://commons.wikimedia.org/wiki/File:Aviones_en_la_pista_del_AICM.jpg",
+      "author": "Oficial K",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "context": "Imagen representativa del AICM; no documenta las afectaciones de vuelos descritas en la noticia."
     }
   ]
 }
