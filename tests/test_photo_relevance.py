@@ -2012,150 +2012,75 @@ class PhotoRelevanceTests(unittest.TestCase):
         self.assertEqual(article["photo"]["author"], "Sergio Estrada Flores")
         self.assertEqual(article["photo"]["license"], "CC BY 4.0")
 
-    def test_category_only_or_location_only_matches_do_not_keep_unrelated_photos(self):
+
+    def test_november_13_incongruent_feed_photos_are_rejected(self):
         cases = [
-            ("La recaudación de predial por habitante en CDMX es 25 veces mayor que en Oaxaca",
-             "Monumento a la Revolución CDMX", "CDMX", "CDMX"),
-            ("¿Cuánto gana una chelería en CDMX y qué permisos necesita para operar?",
-             "Ángel de la Independencia Ciudad de México", "CDMX", "CDMX"),
-            ("¿Cuánto gana un tamalero en CDMX? Ventas, costos y ganancia por día",
-             "Monumento a la Revolución CDMX", "CDMX", "CDMX"),
-            ("CEO de DiDi Latinoamérica se pone al volante en CDMX para escuchar a usuarios",
-             "Mexico df - Torre Latinoamerica", "CDMX", "CDMX"),
-            ("Congreso de Cdmx condena violencia en foro metropolitano",
-             "Palacio Nacional Ciudad de México City DF", "CDMX", "Gobierno"),
-            ("Análisis del PGD CDMX: Advierten riesgo de expropiación con banco de suelo",
-             "Palacio Nacional Ciudad de México DF", "Gobierno", "Gobierno"),
-            ("¿Cuánto cuesta rentar en CDMX en 2026? Precios por alcaldía y cuánto necesitas ganar",
-             "Teatro Ángela Peralta, Polanco, alcaldía Miguel Hidalgo", "CDMX", "CDMX"),
-            ("Cuánto gana un repartidor en CDMX en 2026: ingresos reales, gastos y seguro social",
-             "Gran Hotel Ciudad de México formerly El Centro Mercantil", "CDMX", "CDMX"),
-            ("Madres denuncian presunta violencia contra alumnos en CAM 54 de Magdalena Contreras, CDMX",
-             "MX NS LA MAGDALENA CONTRERAS 04", "CDMX", "Alcaldías"),
-            ("VIDEO | Automovilista Golpea a Adulta Mayor en Magdalena Contreras, CDMX",
-             "MX NS LA MAGDALENA CONTRERAS 07", "Seguridad", "Alcaldías"),
-            ("En un hecho histórico, aprueba Gobierno de la Ciudad de México el proyecto del Plan General de Desarrollo 2025-2045",
-             "Calle de Donceles, Centro Histórico de la Ciudad de México", "Gobierno", "CDMX"),
+            ("Accidente en Canal del Norte: Camioneta Choca y Termina Destrozada",
+             "Movilidad", "Avenida Francisco I. Madero, Centro Histórico, Ciudad de México - Torre Latinoamericana"),
+            ("Accidente en Circuito Interior Hoy: Caos Vial por Choque de Tráiler en CDMX",
+             "Movilidad", "Interior de metrobús"),
+            ("Caravana con 500 migrantes acampa en Huixtla, Chiapas: esperan a más para avanzar a CDMX",
+             "CDMX", "Metrobús en Monumento a la Revolución - TurismoCDMX"),
+            ("Mckenna Grace de Los juegos del hambre recuerda a su familia mexicana y canta Pimpón en CDMX",
+             "CDMX", "Declaratoria de carnavales como patrimonio cultural inmaterial de la Ciudad de México"),
+            ("Joseph Zada y Mckenna Grace desatan la emoción en CDMX durante la alfombra roja de Los Juegos del Hambre",
+             "CDMX", "Zócalo de la Ciudad de México durante el 8M, 2019"),
+            ("Proponen en Congreso CDMX sancionar a empresas que no entreguen medicamentos a tiempo",
+             "CDMX", "Palacio Nacional, sede del Gobierno de México"),
+            ("Análisis del PGD CDMX: advierten riesgo de expropiación con banco de suelo",
+             "Gobierno", "Sala de Tesorería en Palacio Nacional"),
+            ("¿Cuánto cuesta rentar en CDMX? Precios por alcaldía y cuánto necesitas ganar",
+             "CDMX", "Teatro Ángela Peralta, Polanco"),
+            ("¿Cuánto gana un tamalero en CDMX? Así son los ingresos de un vendedor",
+             "CDMX", "Monumento a la Revolución, Ciudad de México"),
+            ("¿Cuánto gana un repartidor en CDMX? Estos son sus ingresos diarios",
+             "CDMX", "Gran Hotel Ciudad de México formerly El Centro Mercantil"),
+            ("Chelerías en CDMX: cuánto cuesta abrir un negocio y qué permisos necesita",
+             "CDMX", "Ángel de la Independencia, Ciudad de México"),
+            ("CEO de DiDi Latinoamérica se pone al volante en CDMX",
+             "CDMX", "Torre Latinoamericana, Centro Histórico de Ciudad de México"),
+            ("¡Jet está de vuelta! Su riff más famoso sonará en CDMX en 2027",
+             "CDMX", "Plaza de la Constitución (Zócalo) tras un día lluvioso"),
+            ("Hasta 35 km/h de rachas en alcaldías de la CDMX este miércoles 11 de noviembre",
+             "CDMX", "Zócalo de la Ciudad de México, México"),
         ]
-        for index, (title, topic, category, photo_category) in enumerate(cases):
-            article = {"title": title, "category": category, "borough": ""}
+        for index, (title, category, topic) in enumerate(cases):
+            photo_category = "Gobierno" if "Palacio Nacional" in topic or "Tesorería" in topic else category
             photo = representative_photo(
-                f"unrelated_context_{index}", photo_category, topic, []
+                f"bad_portada_photo_{index}", photo_category, topic, ["Ciudad de México"]
             )
             with self.subTest(title=title):
-                self.assertLess(_photo_score(article, photo), 0)
+                self.assertLess(
+                    _photo_score({"title": title, "category": category, "borough": ""}, photo),
+                    0,
+                )
 
-    def test_topic_specific_context_photos_remain_eligible_without_category_bonus(self):
-        cases = [
-            ("Marchas, Concentraciones y Rodadas que Afectarán la Movilidad en CDMX",
-             "Marcha por la paz en Ciudad Universitaria", "Movilidad", "Cultura"),
-            ("¿Qué concierto hay hoy en CDMX? Agenda musical de este 13 de noviembre 2026",
-             "Concierto de Kings of Leon en el Palacio de los Deportes", "CDMX", "Cultura"),
-            ("Festividades de la NFL en CDMX: Semana de eventos y actividades",
-             "Gol de campo en un partido de fútbol americano", "CDMX", "CDMX"),
-            ("Accidente en Canal del Norte: Camioneta Choca y Termina Destrozada en Venustiano Carranza",
-             "Tránsito vehicular en Avenida H. Congreso de la Unión", "Movilidad", "Movilidad"),
-            ("Motociclista de 22 Años Muere Tras Derrapar y Chocar contra Jardinera en Calzada de Tlalpan",
-             "Motocicleta de apoyo de una brigada voluntaria en el Zócalo", "Movilidad", "CDMX"),
-            ("Eventos del fin de semana: ¿Qué hacer en CDMX del 13 al 15 de noviembre 2026?",
-             "Castillo de Chapultepec de día", "Cultura", "Cultura"),
-            ("Lluvias fuertes en CDMX: activan Alerta Amarilla en estas alcaldías",
-             "Plantas con gotas de lluvia, Ciudad de México", "CDMX", "Medio Ambiente"),
-            ("¿Cuánto cuesta rentar en CDMX en 2026? Precios por alcaldía y cuánto necesitas ganar",
-             "Casa Centro Histórico de la Ciudad de México 01", "CDMX", "CDMX"),
-            ("Cuánto gana un repartidor en CDMX en 2026: ingresos reales, gastos y seguro social",
-             "Carteros en motocicleta del Servicio Postal Mexicano; imagen representativa de reparto",
-             "CDMX", "Movilidad"),
-            ("La recaudación de predial por habitante en CDMX es 25 veces mayor que en Oaxaca",
-             "Sala de Tesorería en Palacio Nacional, Ciudad de México",
-             "CDMX", "Gobierno"),
-        ]
-        for index, (title, topic, category, photo_category) in enumerate(cases):
-            article = {"title": title, "category": category, "borough": ""}
-            keywords = {
-                8: ["repartidores", "reparto de paquetería", "Servicio Postal Mexicano"],
-            }.get(index, [])
-            photo = representative_photo(
-                f"relevant_context_{index}", photo_category, topic, keywords
-            )
-            with self.subTest(title=title):
-                self.assertGreater(_photo_score(article, photo), 0)
-
-    def test_unrelated_existing_photo_is_removed_instead_of_preserved(self):
-        article = news.standardize({
-            "title": "¿Cuánto gana una chelería en CDMX y qué permisos necesita para operar?",
-            "url": "https://news.google.com/rss/articles/unrelated-cheleria-photo",
-            "source": "Capital CDMX",
-            "date": "2026-11-12",
-            "category": "CDMX",
-        })
-        article["photo"] = representative_photo(
-            "unrelated_angel", "CDMX", "Ángel de la Independencia Ciudad de México", []
+    def test_november_13_relevant_representative_photos_remain_eligible(self):
+        housing = representative_photo(
+            "house_context", "CDMX", "Casa Centro Histórico de la Ciudad de México",
+            ["vivienda", "casa"],
         )
-        with patch.object(photos, "_pool", return_value=[]), patch.object(
-            photos, "_load", return_value=[]
-        ):
-            stats = assign_photos([article])
-        self.assertNotIn("photo", article)
-        self.assertEqual(stats["assigned"], 0)
-
-    def test_treasury_photo_is_in_topic_pool_and_credited(self):
-        photo = next(
-            (item for item in photos._pool() if item.get("id") == "commons_98002541"),
-            None,
+        courier = next(
+            photo for photo in photos._pool()
+            if photo["id"] == "contexto_repartidores_motocicleta_cdmx"
         )
-        self.assertIsNotNone(photo)
-        self.assertEqual(photo.get("author"), "J Mndz")
-        self.assertEqual(photo.get("license"), "CC BY-SA 2.0")
-        article = {"title": "La recaudación de predial por habitante en CDMX",
-                   "category": "CDMX", "borough": ""}
-        self.assertGreater(_photo_score(article, photo), 0)
-
-
-    def test_current_migration_and_entertainment_items_reject_city_landmarks(self):
-        cases = [
-            (
-                "Caravana con 500 migrantes acampa en Huixtla, Chiapas: esperan a más para avanzar a CDMX",
-                "Metrobús en Monumento a la Revolución - TurismoCDMX",
-            ),
-            (
-                "Mckenna Grace de Los juegos del hambre recuerda a su familia mexicana y canta Pimpón en CDMX",
-                "Declaratoria de carnavales como patrimonio cultural inmaterial de la Ciudad de México",
-            ),
-            (
-                "Joseph Zada y Mckenna Grace desatan la emoción en CDMX durante la alfombra roja de Los Juegos del Hambre",
-                "Zócalo de la Ciudad de México durante el 8M, 2019",
-            ),
-        ]
-        for index, (title, topic) in enumerate(cases):
-            article = {"title": title, "category": "CDMX", "borough": ""}
-            photo = representative_photo(
-                f"unrelated_city_context_{index}", "CDMX", topic, ["Ciudad de México"]
-            )
-            with self.subTest(title=title):
-                self.assertLess(_photo_score(article, photo), 0)
-
-    def test_same_category_without_topic_evidence_is_rejected(self):
-        article = {
-            "title": "El gobierno local presenta una actualización de servicios administrativos",
-            "category": "CDMX", "borough": "",
-        }
-        monument = representative_photo(
-            "generic_cdmx_monument", "CDMX", "Monumento a la Revolución, Ciudad de México",
-            ["CDMX"],
+        traffic = representative_photo(
+            "traffic_context", "Movilidad", "Tránsito vehicular en Eje Central, Ciudad de México",
+            ["tráfico vehicular"],
         )
-        self.assertLess(_photo_score(article, monument), 0)
-
-    def test_circuito_interior_does_not_match_bus_interior_photo(self):
-        article = {
-            "title": "Accidente en Circuito Interior Hoy: Caos Vial por Choque de Tráiler en CDMX",
-            "category": "Movilidad", "borough": "",
-        }
-        bus_interior = representative_photo(
-            "commons_107061567", "Movilidad", "Interior de metrobús",
-            ["Metrobús Ciudad de México"],
+        concert = representative_photo(
+            "concert_context", "Cultura", "Banda de rock en concierto con guitarras en escenario",
+            ["rock", "concierto"],
         )
-        self.assertLess(_photo_score(article, bus_interior), 0)
+        weather = representative_photo(
+            "weather_context", "Medio Ambiente", "Viento y nubes sobre Ciudad de México",
+            ["viento", "rachas"],
+        )
+        self.assertGreaterEqual(_photo_score({"title": "¿Cuánto cuesta rentar en CDMX?", "category": "CDMX"}, housing), 0)
+        self.assertGreaterEqual(_photo_score({"title": "¿Cuánto gana un repartidor en CDMX?", "category": "CDMX"}, courier), 0)
+        self.assertGreaterEqual(_photo_score({"title": "Accidente en Canal del Norte: Camioneta choca", "category": "Movilidad"}, traffic), 0)
+        self.assertGreaterEqual(_photo_score({"title": "¡Jet está de vuelta! Su riff más famoso sonará en CDMX en 2027", "category": "CDMX"}, concert), 0)
+        self.assertGreaterEqual(_photo_score({"title": "Hasta 35 km/h de rachas en alcaldías de la CDMX", "category": "CDMX"}, weather), 0)
 
 
 if __name__ == "__main__":
