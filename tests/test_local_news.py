@@ -867,5 +867,19 @@ class LocalNewsTests(unittest.TestCase):
         self.assertEqual(category_by_headline(congress_statement, "CDMX", "Infobae"), "Gobierno")
 
 
+    def test_ranked_miguel_hidalgo_alcaldia_title_identifies_the_borough(self):
+        result = standardize({
+            "title": "Tabe: Miguel Hidalgo es la segunda alcaldía más segura de CDMX",
+            "url": "https://news.google.com/rss/articles/tabe-ranked-borough-regression",
+            "source": "Imagen Radio",
+            "date": "2026-11-13",
+            "category": "Seguridad",
+            "borough": "",
+        })
+        self.assertIsNotNone(result)
+        self.assertEqual(result["borough"], "Miguel Hidalgo")
+        self.assertEqual(result["location"], "Miguel Hidalgo (mencionada en el titular)")
+
+
 if __name__=="__main__":
     unittest.main()

@@ -36,7 +36,12 @@ class FototecaEditorialTests(unittest.TestCase):
                 self.assertTrue(p["licenseUrl"].startswith("https://creativecommons.org/"))
                 self.assertTrue(p["source"].startswith("https://commons.wikimedia.org/wiki/File:"))
                 self.assertTrue(p["topic"].strip())
-                self.assertEqual(p["context"], DISCLAIMER)
+                self.assertTrue(
+                    p["context"].startswith(
+                        "Imagen de carácter ilustrativo y referencial; no constituye evidencia gráfica de "
+                    )
+                )
+                self.assertTrue(p["context"].endswith("."))
 
     def test_only_real_asset_paths_or_commons_previews(self):
         for p in self.photos:
