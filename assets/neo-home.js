@@ -299,8 +299,11 @@ function applyStories(items,source){
  let current=existing;
  if(current<0){
   let last='';try{last=sessionStorage.getItem('cdmx-neo-last-feature')||''}catch{}
-  const other=items.slice(0,Math.min(12,items.length)).findIndex(a=>a.url!==last);
-  current=other<0?0:other;
+  // Elegir al azar entre las 12 noticias recientes aptas, sin repetir la última si hay alternativas.
+  const heroCandidates=items.map((item,index)=>({item,index})).filter(({item})=>photoInfo(item)&&!isWeatherForecastOnly(item)).slice(0,12);
+  const alternatives=heroCandidates.filter(({item})=>item.url!==last);
+  const choices=alternatives.length?alternatives:heroCandidates;
+  current=choices.length?choices[Math.floor(Math.random()*choices.length)].index:0;
  }
  state.current=current;
  try{sessionStorage.setItem('cdmx-neo-last-feature',items[current].url)}catch{}
