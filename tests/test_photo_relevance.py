@@ -23,6 +23,35 @@ def representative_photo(photo_id, category, topic, keywords):
 
 
 class PhotoRelevanceTests(unittest.TestCase):
+    def test_tlalpan_crash_rejects_photo_from_candelaria_de_los_patos_and_centro_historico(self):
+        article = news.standardize({
+            "title": "Motociclista de 22 Años Muere Tras Derrapar y Chocar contra Jardinera en Calzada de Tlalpan",
+            "url": "https://news.google.com/rss/articles/tlalpan-crash-photo-regression",
+            "source": "N+",
+            "date": "2026-11-12",
+            "category": "Movilidad",
+            "borough": "Tlalpan",
+            "location": "Tlalpan (mencionada en el titular)",
+        })
+        wrong_area_photo = representative_photo(
+            "candelaria-centro-traffic",
+            "Movilidad",
+            "Fotografía aérea de Avenida H. Congreso de la Unión, Candelaria de los Patos y Centro Histórico; tránsito vehicular (2 de julio de 2025)",
+            [
+                "Avenida Congreso de la Unión",
+                "Candelaria de los Patos",
+                "Centro Histórico",
+                "tránsito vehicular",
+                "Ciudad de México",
+            ],
+        )
+
+        self.assertEqual(article["borough"], "Tlalpan")
+        self.assertLess(_photo_score(article, wrong_area_photo), 0)
+        with patch.object(photos, "_pool", return_value=[wrong_area_photo]):
+            assign_photos([article])
+        self.assertNotIn("photo", article)
+
     def test_rss_category_uses_obvious_headline_subject(self):
         self.assertEqual(category_by_headline(
             "Muévete en Bici este 1 de noviembre", "Seguridad"), "Movilidad")
