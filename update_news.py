@@ -1268,6 +1268,7 @@ def update():
     candidates = homepage_articles(items, reviewed, now)
     visible = build_homepage_feed(candidates)
     write_json(DEST, {"updated": updated, "articles": visible})
+    # Mantiene sincronizado el respaldo HTML para cuando falle la descarga del feed.
     fallback_count = refresh_homepage_fallback(ROOT / "index.html", visible, now)
     print("Respaldo estático de portada:", fallback_count, "noticias recientes.")
     with_photo = sum(bool(article.get("photo")) for article in visible)
