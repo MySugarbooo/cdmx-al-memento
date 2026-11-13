@@ -1225,9 +1225,9 @@ class PhotoRelevanceTests(unittest.TestCase):
             photo for photo in pool
             if photo.get("id") == "contexto_motocicleta_zocalo_brigada_2017"
         )
-        traffic = next(
+        march_photo = next(
             photo for photo in pool
-            if photo.get("id") == "contexto_trafico_eje_central"
+            if photo.get("id") == "commons_54378318"
         )
         disclaimer_only = representative_photo(
             "negative_disclaimer_only",
@@ -1239,16 +1239,16 @@ class PhotoRelevanceTests(unittest.TestCase):
         self.assertLess(_photo_score(article, courier), 0)
         self.assertLess(_photo_score(article, motorcycle), 0)
         self.assertLess(_photo_score(article, disclaimer_only), 0)
-        self.assertGreaterEqual(_photo_score(article, traffic), 0)
+        self.assertGreaterEqual(_photo_score(article, march_photo), 0)
 
         with patch.object(
-            photos, "_pool", return_value=[courier, motorcycle, disclaimer_only, traffic]
+            photos, "_pool", return_value=[courier, motorcycle, disclaimer_only, march_photo]
         ), patch.object(photos, "_load", return_value=[]):
             stats = assign_photos([article])
 
-        self.assertEqual(article["photo"]["id"], "contexto_trafico_eje_central")
-        self.assertEqual(article["photo"]["author"], traffic["author"])
-        self.assertEqual(article["photo"]["license"], traffic["license"])
+        self.assertEqual(article["photo"]["id"], "commons_54378318")
+        self.assertEqual(article["photo"]["author"], "Malomalverde")
+        self.assertEqual(article["photo"]["license"], "CC BY-SA 3.0")
         self.assertEqual(stats["assigned"], 1)
 
     def test_kidnapping_story_rejects_traffic_light_police_photo_and_uses_patrol_context(self):
