@@ -2089,7 +2089,7 @@ def _photo_score(article, photo):
         headline,
     ))
     education_photo = bool(re.search(
-        r"\b(?:escuelas?|primarias?|secundarias?|preparatorias?|planteles?|colegios?|"
+        r"\b(?:escuelas?|primarias?|secundarias?|preparatorias?|planteles?|"
         r"infraestructura escolar|preescolar|kinder|guarderias?|jardin de ninos|"
         r"aulas?|alumn[oa]s?|estudiantes?)\b",
         context,
