@@ -1964,9 +1964,23 @@ def _photo_score(article, photo):
         return -10000
     if music_story and not music_photo:
         return -10000
-    weather_story = bool(re.search(r"\b(?:rachas?|lluvias?|llover|precipitacion|viento|tormenta|temperatura|frio|calor)\b", headline))
+    # No confundir captación/cosecha de lluvia con una alerta meteorológica.
+    water_harvesting_story = bool(re.search(
+        r"\b(?:captacion de agua(?: de lluvia)?|cosecha de lluvia|captar agua de lluvia|sistemas? de captacion(?: pluvial| de agua)?|sistemas? para captar agua)\b",
+        headline,
+    ))
+    # Cuando el titular trata de una suspensión de transporte por lluvia,
+    # una foto de la línea afectada es más pertinente que una foto meteorológica.
+    transit_service_weather_story = bool(
+        re.search(r"\b(?:metro|metrobus|cablebus|trolebus)\b", headline)
+        and re.search(r"\b(?:suspende|suspendio|sin servicio|interrump\w*|reanuda|servicio)\b", headline)
+    )
+    weather_story = bool(re.search(
+        r"\b(?:rachas?|lluvias?|llover|precipitacion|viento|tormenta|temperatura|frio|calor)\b",
+        headline,
+    )) and not water_harvesting_story and not transit_service_weather_story
     weather_photo = bool(re.search(
-        r"\b(?:viento|rachas?|meteorologia|clima|nubes?|cielo nublado|tormenta|temperatura|frio)\b",
+        r"\b(?:viento|rachas?|meteorologia|clima|nubes?|cielo nublado|tormenta|temperatura|frio|operativo.{0,40}lluvias?|lluvias?.{0,40}operativo)\b",
         context,
     ))
     if weather_story and not weather_photo:
@@ -1992,17 +2006,18 @@ def _photo_score(article, photo):
         context,
     ))
     road_traffic_photo = bool(re.search(
-        r"\b(?:trafico(?: vehicular)?|transito vehicular|vialidad|congestion vehicular|circulacion vehicular)\b",
+        r"\b(?:trafico(?: vehicular)?|transito vehicular|vialidad|congestion vehicular|circulacion vehicular|camiones?|camionetas?|microbuses?|autobuses?|vehiculos? de carga)\b",
         context,
     ))
     motorcycle_photo = bool(re.search(r"\b(?:motocicletas?|motociclistas?|motos?)\b", context))
-    if road_incident_story and not (road_traffic_photo or motorcycle_photo):
-        return -10000
-    # Un autódromo no es contexto para un choque de tránsito en una avenida.
+    # Los accidentes de automovilismo no deben pasar por el filtro de tránsito urbano.
     motorsport_story = bool(re.search(
         r"\b(?:formula 1|f1|gran premio|gp de mexico|autodromo|automovilismo|bottas|verstappen|hamilton|antonelli|checo|alonso|nascar)\b",
         headline,
     ))
+    if road_incident_story and not motorsport_story and not (road_traffic_photo or motorcycle_photo):
+        return -10000
+    # Un autódromo no es contexto para un choque de tránsito en una avenida.
     if road_incident_story and motorsport_photo and not motorsport_story:
         return -10000
     if lgbt_story and not lgbt_photo:
@@ -2107,8 +2122,8 @@ def _photo_score(article, photo):
         return -10000
     # Una iniciativa del Congreso no se ilustra con Palacio Nacional.
     legislative_story = bool(
-        re.search(r"\b(?:congreso|asamblea legislativa|diputad[oa]s?|senadores?|legislativ[oa])\b", headline)
-        and re.search(r"\b(?:proponen?|propuesta|iniciativa|sancionar|reforma|ley)\b", headline)
+        re.search(r"\b(?:congreso|asamblea legislativa|legislativ[oa]|camara de diputados|senado)\b", headline)
+        and re.search(r"\b(?:proponen?|propuesta|iniciativa|sancionar|reforma|ley|proyecto)\b", headline)
     )
     legislative_photo = bool(re.search(
         r"\b(?:congreso|asamblea legislativa|palacio legislativo|camara de diputados|recinto legislativo|sesion del congreso|diputad[oa]s?)\b",
@@ -2117,14 +2132,17 @@ def _photo_score(article, photo):
     if legislative_story and not legislative_photo:
         return -10000
     # El Plan General de Desarrollo exige cartografía o contexto de planeación urbana.
-    planning_story = bool(re.search(
-        r"\b(?:plan general de desarrollo|pgd|uso de suelo|ordenamiento territorial|expropiacion|desarrollo urbano|planeacion urbana|banco de suelo)\b",
-        headline,
-    ))
+    planning_story = (
+        _photo_fold(article.get("category")) != "seguridad"
+        and bool(re.search(
+            r"\b(?:plan general de desarrollo|pgd|uso de suelo|ordenamiento territorial|expropiacion|desarrollo urbano|planeacion urbana|banco de suelo)\b",
+            headline,
+        ))
+    )
     planning_photo = bool(re.search(
         r"\b(?:plan general de desarrollo|pgd|uso de suelo|ordenamiento territorial|expropiacion|desarrollo urbano|planeacion urbana|mapa urbano|banco de suelo)\b",
         context,
-    ))
+    )) or legislative_photo
     if planning_story and not planning_photo:
         return -10000
     # Las caravanas y noticias de migración requieren personas migrantes o albergues.
