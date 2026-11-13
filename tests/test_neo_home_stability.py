@@ -193,6 +193,7 @@ class StableHomepageTests(unittest.TestCase):
         workflow = read(".github/workflows/news.yml")
         self.assertIn("pull_request:", workflow)
         self.assertIn("if: github.event_name != 'pull_request'", workflow)
+        self.assertGreaterEqual(workflow.count("if: github.event_name != 'pull_request'"), 5)
         stage_lines = [line for line in workflow.splitlines() if "git add -A --" in line]
         self.assertEqual(len(stage_lines), 2)
         self.assertTrue(all("index.html" in line for line in stage_lines))
