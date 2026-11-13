@@ -1,6 +1,6 @@
 {
   "month": "2026-11",
-  "updated": "2026-11-13 10:37 UTC",
+  "updated": "2026-11-13 10:47 UTC",
   "articles": [
     {
       "title": "¿Qué concierto hay hoy en CDMX? Agenda musical de este 13 de noviembre 2026",
@@ -71,6 +71,39 @@
         "license": "CC BY-SA 4.0",
         "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
         "source": "https://commons.wikimedia.org/wiki/File:Monumento_a_la_Revoluci%C3%B3n_CDMX.jpg"
+      }
+    },
+    {
+      "title": "Análisis del PGD CDMX: Advierten riesgo de expropiación con banco de suelo",
+      "description": "De acuerdo con Excélsior, el titular publicado es: «Análisis del PGD CDMX: Advierten riesgo de expropiación con banco de suelo». La información publicada por Excélsior aborda un asunto que este portal clasifica como Gobierno. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQbHFWbUxROEZ1c21OQ1BxZkRMblJiSFY0c21pdFVsV1l3ZzMwbVBadXYyUG9JZ2hKRTZrZ2QzWE9vVXRQZWZLb2FCV1ZMUUlGRG5RTTZZT2ItemxhaThSZVQ4bElfZ1ZlOUhfSU9ScmVGdlEzd1RVeDgxaElkUjdDVVFTOEN2bXNvMGRDLUxOT1I0bEFHeFAtS0ZubVRKMHFXNnl4WUNzMkw1OUo2WEHSAbMBQVVfeXFMTlY5eWhVMWdWam9QdV9mYkRmUnNkUnJjMFIwazE1VUFvbWk2TU9kSng3d05UT0ozbWRlRkdjSnNia194Uk8zUXQ2QkdDUzlZUWdKbVBBV2ZOOTlibmloLVFnb0xyQXNlZmlST1N4R0hPSWl6bGNwU1IybkR6VERfV29LVFJaX0RRRjlNVGktWEVLdy0ySnkyb0Vod2VZeTA0V2Fva1JoVE1KaV9zMnNYQ0FNWFE?oc=5",
+      "source": "Excélsior",
+      "date": "2026-11-13",
+      "published_at": "2026-11-13T09:23:40Z",
+      "category": "Gobierno",
+      "borough": "",
+      "location": "Ciudad de México (sin alcaldía identificada)",
+      "local_url": "/noticias/?id=fc8c8e4f30bf6b324eec&mes=2026-11",
+      "brief": {
+        "lead": "De acuerdo con Excélsior, el titular publicado es: «Análisis del PGD CDMX: Advierten riesgo de expropiación con banco de suelo». La información publicada por Excélsior aborda un asunto que este portal clasifica como Gobierno. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+        "context": "Las decisiones administrativas pueden influir en servicios, trámites y derechos; conviene conocer sus condiciones y a quiénes afectan.",
+        "pending": "Es indispensable consultar los acuerdos, comunicados o documentos oficiales antes de dar una medida por vigente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "archivo_gobierno_003",
+        "kind": "representativa",
+        "url": "/assets/fotos/archivo_gobierno_003.jpg",
+        "category": "Gobierno",
+        "borough": "",
+        "topic": "Palacio Nacional Ciudad de México DF",
+        "keywords": [
+          "Gobierno"
+        ],
+        "author": "Crater_sp",
+        "license": "CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Palacio_Nacional_Ciudad_de_M%C3%A9xico_DF.jpg"
       }
     },
     {
@@ -176,19 +209,24 @@
         "method": "Síntesis basada en Infobae, 13 de noviembre de 2026: https://www.infobae.com/mexico/2026/11/13/maria-leon-presento-su-nueva-era-de-villana-en-el-teatro-metropolitan-de-la-cdmx-entre-invitados-nostalgia-y-canciones-ineditas/. Los horarios, invitados y repertorio se atribuyen al reportaje y no constituyen verificación independiente."
       },
       "photo": {
-        "id": "commons_114051281",
+        "id": "contexto_concierto_palacio_deportes_2009",
         "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Coro_de_la_Catedral_metropolitana_de_la_Ciudad_de_M%C3%A9xico_01.jpg/960px-Coro_de_la_Catedral_metropolitana_de_la_Ciudad_de_M%C3%A9xico_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "category": "CDMX",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/PalaciodelosDeportes_Concierto.jpg/960px-PalaciodelosDeportes_Concierto.jpg",
+        "category": "Cultura",
         "borough": "",
-        "topic": "Coro de la Catedral metropolitana de la Ciudad de México 01",
+        "topic": "Concierto de Kings of Leon en el Palacio de los Deportes, Ciudad de México (octubre de 2009); imagen representativa, no corresponde a María León.",
         "keywords": [
-          "Catedral Metropolitana Ciudad de México"
+          "concierto",
+          "música en vivo",
+          "Palacio de los Deportes",
+          "Ciudad de México",
+          "escenario",
+          "público"
         ],
-        "author": "Luis Alvaz",
+        "author": "ProtoplasmaKid",
         "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Coro_de_la_Catedral_metropolitana_de_la_Ciudad_de_M%C3%A9xico_01.jpg"
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:PalaciodelosDeportes_Concierto.jpg"
       },
       "alternate_versions": [
         {
@@ -223,6 +261,40 @@
             "license": "CC BY-SA 4.0",
             "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
             "source": "https://commons.wikimedia.org/wiki/File:Danza_del_Fuego_performance_outside_Museo_Nacional_de_Antropolog%C3%ADa,_Chapultepec,_CDMX_04.jpg"
+          }
+        },
+        {
+          "title": "María León presentó su nueva “Era de Villana” en el Teatro Metropólitan de la CDMX, entre invitados, nostalgia y canciones inéditas",
+          "description": "Infobae informó que María León presentó «Era de Villana» en el Teatro Metropólitan de Ciudad de México la noche del 12 de noviembre de 2026. El reportaje sitúa el inicio a las 21:30 y el cierre a las 23:25; describe canciones de su etapa en Playa Limbo, su carrera solista y temas inéditos de su próximo álbum.",
+          "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxOREd5dE5VNHZQMkFKcHlWaGlyaE5sNGcxcVc4dXBtUGJKWXpqR1c5aEF5enl3QmljN25scUY5VjJpMS1zMVJTOWFTbVFCdW9XQndsT3lZbEJzdUdsUExERkd4bk1PbW9rVlQ3ZnhEV2tweGRQRmdpVlNmU2VFMGk5cUFSTnFza18tX2xIbkNwX0oyLWdqSGcxRVRTd3N2NnJmajR3Q1Z3UHAxbUV6aGlVMTRNOXRsaDdmSnR2blA1NEl5ajByUEN3ZFpidHVfcWpZdkp5RG82cjhqZ2Rra1h3VTBLRXFuY2RRRGZNVXl6SlBHazltSVpKZmNKaS1TZUXSAZoCQVVfeXFMUGZUbWVTS0pGVlh1cGY4ZXQ0ckxFa0dtSEQ4M2ZEMnZXcVU5STFRNDZzOTBDNHJXNnpTZVRrS3NLWkJZWVdRYTJmc0pSVGN1N08yakhSaGNjTXVWaHN4bFgwUjNyT05JNktFYVIzejdKQ1VUTEtyNFNFYXpmaUpSWmNIUjNNUHZLa1phOGkzbG5TVUNzZ2Fldzg0SlU0SzM3N3Y4bERWMnJZYnd4Sk51M3pGQ3hEMnJmSFgwRHNOejZjNkVUUzcwS01KaFpYUnlUWE1rVkhhWGpxdFhBYXVmc1dxb1k3bkxlclFlb1VHSU94bnc3bXBhODR4TTdiWVRuanhpZVhvejV0WGM4aEVkMklkbkV2ei1VVVln?oc=5",
+          "source": "Infobae",
+          "date": "2026-11-13",
+          "published_at": "2026-11-13T07:53:00Z",
+          "category": "Cultura",
+          "borough": "",
+          "location": "Teatro Metropólitan, Ciudad de México",
+          "local_url": "/noticias/?id=8e02d29b62c66ba3eff6&mes=2026-11",
+          "source_url": "https://www.infobae.com/mexico/2026/11/13/maria-leon-presento-su-nueva-era-de-villana-en-el-teatro-metropolitan-de-la-cdmx-entre-invitados-nostalgia-y-canciones-ineditas/",
+          "brief": {
+            "lead": "Infobae informó que María León presentó «Era de Villana» en el Teatro Metropólitan de Ciudad de México la noche del 12 de noviembre de 2026. El reportaje sitúa el inicio a las 21:30 y el cierre a las 23:25; describe canciones de su etapa en Playa Limbo, su carrera solista y temas inéditos de su próximo álbum.",
+            "context": "La nota menciona como invitados a Mar Lara, Julia Medina, Cristina León y Edwin Luna. También describe músicos, bailarines e interpretación en lengua de señas durante la presentación.",
+            "pending": "La presentación ya ocurrió. El reportaje no confirma fechas futuras, disponibilidad de boletos ni nuevas sedes; esos datos requieren información posterior del organizador.",
+            "method": "Síntesis basada en Infobae, 13 de noviembre de 2026: https://www.infobae.com/mexico/2026/11/13/maria-leon-presento-su-nueva-era-de-villana-en-el-teatro-metropolitan-de-la-cdmx-entre-invitados-nostalgia-y-canciones-ineditas/. Los horarios, invitados y repertorio se atribuyen al reportaje y no constituyen verificación independiente."
+          },
+          "photo": {
+            "id": "commons_114051281",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Coro_de_la_Catedral_metropolitana_de_la_Ciudad_de_M%C3%A9xico_01.jpg/960px-Coro_de_la_Catedral_metropolitana_de_la_Ciudad_de_M%C3%A9xico_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "category": "CDMX",
+            "borough": "",
+            "topic": "Coro de la Catedral metropolitana de la Ciudad de México 01",
+            "keywords": [
+              "Catedral Metropolitana Ciudad de México"
+            ],
+            "author": "Luis Alvaz",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Coro_de_la_Catedral_metropolitana_de_la_Ciudad_de_M%C3%A9xico_01.jpg"
           }
         }
       ]
@@ -1516,42 +1588,7 @@
         "license": "CC BY-SA 4.0",
         "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
         "source": "https://commons.wikimedia.org/wiki/File:Calle_de_Donceles,_Centro_Hist%C3%B3rico_de_la_Ciudad_de_M%C3%A9xico.jpg"
-      },
-      "alternate_versions": [
-        {
-          "title": "PRI exige retirar Plan General de Desarrollo de la Cdmx ante falta de consulta ciudadana",
-          "description": "De acuerdo con Sociedad Noticias, el titular publicado es: «PRI exige retirar Plan General de Desarrollo de la Cdmx ante falta de consulta ciudadana». La información publicada por Sociedad Noticias aborda un asunto que este portal clasifica como Gobierno. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQZEJZWU1NckNGcnY1OGV2QXZZdUVSOWllSndMeDNXa3RmeWpZeFdGcGh1dm1DcjVqaS1zcFhVY2RhdWxnQ2NqSWtHNjRFREFzU29pT3VwanltY1VhTmFybzNHMGVESEFjZElYZEVPM1gxMFQyN0pGazVQYnp3eDVFUDc5czdGc3pfQkdUWU1BclEzZHhNTTRlSEtHQjZZTGMxYjZJSGh6NXZHNzdnYUFfNjhtOEg2UWNQSDFLRUFYZENtYWtGZHZwXzdR?oc=5",
-          "source": "Sociedad Noticias",
-          "date": "2026-11-12",
-          "published_at": "2026-11-13T01:30:00Z",
-          "category": "Gobierno",
-          "borough": "",
-          "location": "Ciudad de México (sin alcaldía identificada)",
-          "local_url": "/noticias/?id=830f82f6e899056ea014&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con Sociedad Noticias, el titular publicado es: «PRI exige retirar Plan General de Desarrollo de la Cdmx ante falta de consulta ciudadana». La información publicada por Sociedad Noticias aborda un asunto que este portal clasifica como Gobierno. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Las decisiones administrativas pueden influir en servicios, trámites y derechos; conviene conocer sus condiciones y a quiénes afectan.",
-            "pending": "Es indispensable consultar los acuerdos, comunicados o documentos oficiales antes de dar una medida por vigente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "commons_87559942",
-            "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Calle_de_Donceles%2C_Centro_Hist%C3%B3rico_de_la_Ciudad_de_M%C3%A9xico.jpg/960px-Calle_de_Donceles%2C_Centro_Hist%C3%B3rico_de_la_Ciudad_de_M%C3%A9xico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "category": "CDMX",
-            "borough": "",
-            "topic": "Calle de Donceles, Centro Histórico de la Ciudad de México",
-            "keywords": [
-              "Centro Histórico Ciudad de México"
-            ],
-            "author": "Juan Carlos Fonseca Mata",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Calle_de_Donceles,_Centro_Hist%C3%B3rico_de_la_Ciudad_de_M%C3%A9xico.jpg"
-          }
-        }
-      ]
+      }
     },
     {
       "title": "GWM La Villa arranca el Buen Fin 2026 con Noche de Casino en Gustavo A. Madero",
@@ -1937,7 +1974,47 @@
         "context": "La actividad cultural abre oportunidades de encuentro, aprendizaje y disfrute para habitantes y visitantes.",
         "pending": "Los accesos, boletos, sedes, cupos y horarios deben consultarse con la institución organizadora. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      }
+      },
+      "photo": {
+        "id": "contexto_concierto_palacio_deportes_2009",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/PalaciodelosDeportes_Concierto.jpg/960px-PalaciodelosDeportes_Concierto.jpg",
+        "category": "Cultura",
+        "borough": "",
+        "topic": "Concierto de Kings of Leon en el Palacio de los Deportes, Ciudad de México (octubre de 2009); imagen representativa, no corresponde a María León.",
+        "keywords": [
+          "concierto",
+          "música en vivo",
+          "Palacio de los Deportes",
+          "Ciudad de México",
+          "escenario",
+          "público"
+        ],
+        "author": "ProtoplasmaKid",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:PalaciodelosDeportes_Concierto.jpg"
+      },
+      "alternate_versions": [
+        {
+          "title": "Elefante, María León y Lifehouse encabezan la cartelera de conciertos en Ciudad de México",
+          "description": "De acuerdo con laparadoja.com.mx, el titular publicado es: «Elefante, María León y Lifehouse encabezan la cartelera de conciertos en Ciudad de México». El medio laparadoja.com.mx presenta conciertos o actividades musicales anunciadas en Ciudad de México. La programación, disponibilidad y costos pueden cambiar; comprueba los datos del organizador.",
+          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOWmdJcS05NWNJcDJzMVgyOUZKZjZ4c2V4LWVkak4xVE9JZ1gwY3d6ZlhheUozLXdGVXdsX3h4NGx6NjN3VDFBYzFOWDdxU1JFYUg1Qm9BNFg5MHJWdktqcU5FUGVPM3NTNXNHQWJmb1dFLUpKdlJfVElVTEY1T3YtTjBBWEI2QUlpY1pIVFF6eVRtTWxvaHhKdjFpa05fNHVNTkhLUnE3Q2FPajVSdkw4eXI3c0MxWjBrdEFnYmtqSQ?oc=5",
+          "source": "laparadoja.com.mx",
+          "date": "2026-11-12",
+          "published_at": "2026-11-13T00:46:31Z",
+          "category": "Cultura",
+          "borough": "",
+          "location": "Ciudad de México (sin alcaldía identificada)",
+          "local_url": "/noticias/?id=2016745dcbc9f4a268b3&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con laparadoja.com.mx, el titular publicado es: «Elefante, María León y Lifehouse encabezan la cartelera de conciertos en Ciudad de México». El medio laparadoja.com.mx presenta conciertos o actividades musicales anunciadas en Ciudad de México. La programación, disponibilidad y costos pueden cambiar; comprueba los datos del organizador.",
+            "context": "La actividad cultural abre oportunidades de encuentro, aprendizaje y disfrute para habitantes y visitantes.",
+            "pending": "Los accesos, boletos, sedes, cupos y horarios deben consultarse con la institución organizadora. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          }
+        }
+      ]
     },
     {
       "title": "Iniciarán, antes de concluir el año, las obras del Tren Ciudad de México-Guadalajara",
@@ -1993,6 +2070,26 @@
         "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
         "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "contexto_concierto_palacio_deportes_2009",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/PalaciodelosDeportes_Concierto.jpg/960px-PalaciodelosDeportes_Concierto.jpg",
+        "category": "Cultura",
+        "borough": "",
+        "topic": "Concierto de Kings of Leon en el Palacio de los Deportes, Ciudad de México (octubre de 2009); imagen representativa, no corresponde a María León.",
+        "keywords": [
+          "concierto",
+          "música en vivo",
+          "Palacio de los Deportes",
+          "Ciudad de México",
+          "escenario",
+          "público"
+        ],
+        "author": "ProtoplasmaKid",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:PalaciodelosDeportes_Concierto.jpg"
       }
     },
     {
@@ -2811,7 +2908,42 @@
         "context": "Las decisiones administrativas pueden influir en servicios, trámites y derechos; conviene conocer sus condiciones y a quiénes afectan.",
         "pending": "Es indispensable consultar los acuerdos, comunicados o documentos oficiales antes de dar una medida por vigente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      }
+      },
+      "photo": {
+        "id": "commons_87559942",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Calle_de_Donceles%2C_Centro_Hist%C3%B3rico_de_la_Ciudad_de_M%C3%A9xico.jpg/960px-Calle_de_Donceles%2C_Centro_Hist%C3%B3rico_de_la_Ciudad_de_M%C3%A9xico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "category": "CDMX",
+        "borough": "",
+        "topic": "Calle de Donceles, Centro Histórico de la Ciudad de México",
+        "keywords": [
+          "Centro Histórico Ciudad de México"
+        ],
+        "author": "Juan Carlos Fonseca Mata",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Calle_de_Donceles,_Centro_Hist%C3%B3rico_de_la_Ciudad_de_M%C3%A9xico.jpg"
+      },
+      "alternate_versions": [
+        {
+          "title": "PRI en Congreso de CDMX pide al gobierno local retirar Plan General de Desarrollo",
+          "description": "De acuerdo con El Universal, el titular publicado es: «PRI en Congreso de CDMX pide al gobierno local retirar Plan General de Desarrollo». En su información, El Universal aborda una decisión, declaración o debate relacionado con las instituciones de la ciudad. Conviene distinguir la intención anunciada de las resoluciones que hayan sido aprobadas y publicado oficialmente.",
+          "url": "https://news.google.com/rss/articles/CBMikgJBVV95cUxPMDF4ODE0QTFfSVplOVhha0c1eXdkUWJEZ1ZiaE1OS0ltR2VzdHY3TGMyaGVsRjU2b2dtRkVFVGFLNTNCX1c2dk51TTZwNjRsNFpCdG05ZWZfUWxhLVM3VWRBTUVUR29Bb0xfMzRuUWFNVjlJR1NfQmJhQ0ZXZWFLQ3NWMTdycDh1QlpqUGpidGt0cjR4alZ2NGtqLWlJWlhWQnhTOG1HcHM3T2p5X2lrbWdveUhQMDY0ODBiUHNqU01lenFkYzllekFZOU1YdEdGTGZ1U0plR3hodDdHNjhPbmhxVTNDazJFb1h5OTV4cm5lUGwyM3cyZXBlaVNrencyX1d6R1ZmWk9JanJaOGs0SS1n0gGmAkFVX3lxTFB5dFNxZHdMaWFHMTBKU05pZm1uZUlHemZDRWYwaktqcjZ0ZDFKdm5UTF8xYUNUR2JkQWVaVDRiQlgwRUdjOVFBdk9BMGliUU9PTmtmQm1vci1YR2ZFRF9EZkR4emhjemxBMGEyd05nNkN1U2lINUxRa0wyclhwRmFvN1VKckZaSDhGV18xTnJENnRDUms5ZU5yOWdJVjJMUlVQc3plRlJjSzFzeWxBSGFtbjFTSnBqVDNvYmI1WHNiVjdwdEVkZUwwbWhqLUExOGtaaW5uSS1jZlV3VXhVakpid1dsWWdtWU9malROUnhaSm1hUk9qTERVdHJkc2ZwSDAyZ1ZtVGlpVjVaX3BOdWV4X3Y0TWdJSHk5SF9NcHBmd25fYS1JQQ?oc=5",
+          "source": "El Universal",
+          "date": "2026-11-12",
+          "published_at": "2026-11-12T23:20:10Z",
+          "category": "Gobierno",
+          "borough": "",
+          "location": "Ciudad de México (sin alcaldía identificada)",
+          "local_url": "/noticias/?id=276acdf7340ace1b331c&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con El Universal, el titular publicado es: «PRI en Congreso de CDMX pide al gobierno local retirar Plan General de Desarrollo». En su información, El Universal aborda una decisión, declaración o debate relacionado con las instituciones de la ciudad. Conviene distinguir la intención anunciada de las resoluciones que hayan sido aprobadas y publicado oficialmente.",
+            "context": "Las decisiones administrativas pueden influir en servicios, trámites y derechos; conviene conocer sus condiciones y a quiénes afectan.",
+            "pending": "Es indispensable consultar los acuerdos, comunicados o documentos oficiales antes de dar una medida por vigente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          }
+        }
+      ]
     },
     {
       "title": "Choque entre dos trajineras deja a un hombre herido y moviliza a policías en Xochimilco",
@@ -3647,27 +3779,6 @@
       "borough": "Álvaro Obregón",
       "location": "Álvaro Obregón (mencionada en el titular)",
       "local_url": "/noticias/?id=3364b478350242ae22ee&mes=2026-11",
-      "brief": {
-        "lead": "De acuerdo con Reporte Indigo, el titular publicado es: «Clara Brugada lanza Casa Ecológica CDMX con calentadores solares gratis en Álvaro Obregón». El titular de Reporte Indigo aborda la captación y aprovechamiento de agua pluvial en Álvaro Obregón. Se trata de una práctica o iniciativa relacionada con el uso del agua; no es un aviso meteorológico. Para conocer su alcance y resultados es necesario consultar el reportaje original.",
-        "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-        "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "commons_152180160",
-        "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Cosecha_de_Lluvia_03.jpg/960px-Cosecha_de_Lluvia_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "category": "Medio Ambiente",
-        "borough": "",
-        "topic": "Cosecha de Lluvia 03",
-        "keywords": [
-          "Lluvia Ciudad de México"
-        ],
-        "author": "Gobierno de la Ciudad de México",
-        "license": "CC BY 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Cosecha_de_Lluvia_03.jpg"
-      },
       "alternate_versions": [
         {
           "title": "Clara Brugada lanza Casa Ecológica CDMX con calentadores solares gratis en Álvaro Obregón",
@@ -3834,7 +3945,28 @@
             "source": "https://commons.wikimedia.org/wiki/File:Cosecha_de_Lluvia_01.jpg"
           }
         }
-      ]
+      ],
+      "brief": {
+        "lead": "De acuerdo con Reporte Indigo, el titular publicado es: «Clara Brugada lanza Casa Ecológica CDMX con calentadores solares gratis en Álvaro Obregón». El titular de Reporte Indigo aborda la captación y aprovechamiento de agua pluvial en Álvaro Obregón. Se trata de una práctica o iniciativa relacionada con el uso del agua; no es un aviso meteorológico. Para conocer su alcance y resultados es necesario consultar el reportaje original.",
+        "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+        "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "commons_152180160",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Cosecha_de_Lluvia_03.jpg/960px-Cosecha_de_Lluvia_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "category": "Medio Ambiente",
+        "borough": "",
+        "topic": "Cosecha de Lluvia 03",
+        "keywords": [
+          "Lluvia Ciudad de México"
+        ],
+        "author": "Gobierno de la Ciudad de México",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Cosecha_de_Lluvia_03.jpg"
+      }
     },
     {
       "title": "Lanza CDMX programa Casa Ecológica; beneficiará a 10 mil viviendas en Álvaro Obregón",
@@ -3847,27 +3979,6 @@
       "borough": "Álvaro Obregón",
       "location": "Álvaro Obregón (mencionada en el titular)",
       "local_url": "/noticias/?id=708084be5fe9cfd43eee&mes=2026-11",
-      "brief": {
-        "lead": "De acuerdo con La Jornada, el titular publicado es: «Lanza CDMX programa Casa Ecológica; beneficiará a 10 mil viviendas en Álvaro Obregón». La información publicada por La Jornada aborda un asunto que este portal clasifica como Medio Ambiente. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-        "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-        "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "commons_152180158",
-        "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Cosecha_de_Lluvia_01.jpg/960px-Cosecha_de_Lluvia_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "category": "Medio Ambiente",
-        "borough": "",
-        "topic": "Cosecha de Lluvia 01",
-        "keywords": [
-          "Lluvia Ciudad de México"
-        ],
-        "author": "Gobierno de la Ciudad de México",
-        "license": "CC BY 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Cosecha_de_Lluvia_01.jpg"
-      },
       "alternate_versions": [
         {
           "title": "Lanza CDMX programa de ecotecnias para 10 mil viviendas en Álvaro Obregón",
@@ -3968,7 +4079,28 @@
             "source": "https://commons.wikimedia.org/wiki/File:Cosecha_de_Lluvia_03.jpg"
           }
         }
-      ]
+      ],
+      "brief": {
+        "lead": "De acuerdo con La Jornada, el titular publicado es: «Lanza CDMX programa Casa Ecológica; beneficiará a 10 mil viviendas en Álvaro Obregón». La información publicada por La Jornada aborda un asunto que este portal clasifica como Medio Ambiente. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+        "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+        "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "commons_152180158",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Cosecha_de_Lluvia_01.jpg/960px-Cosecha_de_Lluvia_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "category": "Medio Ambiente",
+        "borough": "",
+        "topic": "Cosecha de Lluvia 01",
+        "keywords": [
+          "Lluvia Ciudad de México"
+        ],
+        "author": "Gobierno de la Ciudad de México",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Cosecha_de_Lluvia_01.jpg"
+      }
     },
     {
       "title": "CDMX lanza programa 'Casa Ecológica' para instalar captadores de agua y energía solar en hogares",
@@ -4253,6 +4385,26 @@
         "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
         "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "contexto_concierto_palacio_deportes_2009",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/PalaciodelosDeportes_Concierto.jpg/960px-PalaciodelosDeportes_Concierto.jpg",
+        "category": "Cultura",
+        "borough": "",
+        "topic": "Concierto de Kings of Leon en el Palacio de los Deportes, Ciudad de México (octubre de 2009); imagen representativa, no corresponde a María León.",
+        "keywords": [
+          "concierto",
+          "música en vivo",
+          "Palacio de los Deportes",
+          "Ciudad de México",
+          "escenario",
+          "público"
+        ],
+        "author": "ProtoplasmaKid",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:PalaciodelosDeportes_Concierto.jpg"
       }
     },
     {
@@ -5022,6 +5174,26 @@
         "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
         "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "contexto_concierto_palacio_deportes_2009",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/PalaciodelosDeportes_Concierto.jpg/960px-PalaciodelosDeportes_Concierto.jpg",
+        "category": "Cultura",
+        "borough": "",
+        "topic": "Concierto de Kings of Leon en el Palacio de los Deportes, Ciudad de México (octubre de 2009); imagen representativa, no corresponde a María León.",
+        "keywords": [
+          "concierto",
+          "música en vivo",
+          "Palacio de los Deportes",
+          "Ciudad de México",
+          "escenario",
+          "público"
+        ],
+        "author": "ProtoplasmaKid",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:PalaciodelosDeportes_Concierto.jpg"
       }
     },
     {
@@ -7524,6 +7696,26 @@
         "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
         "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "contexto_concierto_palacio_deportes_2009",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/PalaciodelosDeportes_Concierto.jpg/960px-PalaciodelosDeportes_Concierto.jpg",
+        "category": "Cultura",
+        "borough": "",
+        "topic": "Concierto de Kings of Leon en el Palacio de los Deportes, Ciudad de México (octubre de 2009); imagen representativa, no corresponde a María León.",
+        "keywords": [
+          "concierto",
+          "música en vivo",
+          "Palacio de los Deportes",
+          "Ciudad de México",
+          "escenario",
+          "público"
+        ],
+        "author": "ProtoplasmaKid",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:PalaciodelosDeportes_Concierto.jpg"
       }
     },
     {
@@ -7542,6 +7734,26 @@
         "context": "Las decisiones administrativas pueden influir en servicios, trámites y derechos; conviene conocer sus condiciones y a quiénes afectan.",
         "pending": "Es indispensable consultar los acuerdos, comunicados o documentos oficiales antes de dar una medida por vigente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "contexto_concierto_palacio_deportes_2009",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/PalaciodelosDeportes_Concierto.jpg/960px-PalaciodelosDeportes_Concierto.jpg",
+        "category": "Cultura",
+        "borough": "",
+        "topic": "Concierto de Kings of Leon en el Palacio de los Deportes, Ciudad de México (octubre de 2009); imagen representativa, no corresponde a María León.",
+        "keywords": [
+          "concierto",
+          "música en vivo",
+          "Palacio de los Deportes",
+          "Ciudad de México",
+          "escenario",
+          "público"
+        ],
+        "author": "ProtoplasmaKid",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:PalaciodelosDeportes_Concierto.jpg"
       }
     },
     {
@@ -7750,6 +7962,26 @@
         "context": "La actividad cultural abre oportunidades de encuentro, aprendizaje y disfrute para habitantes y visitantes.",
         "pending": "Los accesos, boletos, sedes, cupos y horarios deben consultarse con la institución organizadora. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "contexto_concierto_palacio_deportes_2009",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/PalaciodelosDeportes_Concierto.jpg/960px-PalaciodelosDeportes_Concierto.jpg",
+        "category": "Cultura",
+        "borough": "",
+        "topic": "Concierto de Kings of Leon en el Palacio de los Deportes, Ciudad de México (octubre de 2009); imagen representativa, no corresponde a María León.",
+        "keywords": [
+          "concierto",
+          "música en vivo",
+          "Palacio de los Deportes",
+          "Ciudad de México",
+          "escenario",
+          "público"
+        ],
+        "author": "ProtoplasmaKid",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:PalaciodelosDeportes_Concierto.jpg"
       }
     },
     {
@@ -8632,6 +8864,26 @@
         "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
         "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "contexto_concierto_palacio_deportes_2009",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/PalaciodelosDeportes_Concierto.jpg/960px-PalaciodelosDeportes_Concierto.jpg",
+        "category": "Cultura",
+        "borough": "",
+        "topic": "Concierto de Kings of Leon en el Palacio de los Deportes, Ciudad de México (octubre de 2009); imagen representativa, no corresponde a María León.",
+        "keywords": [
+          "concierto",
+          "música en vivo",
+          "Palacio de los Deportes",
+          "Ciudad de México",
+          "escenario",
+          "público"
+        ],
+        "author": "ProtoplasmaKid",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:PalaciodelosDeportes_Concierto.jpg"
       }
     },
     {
@@ -8650,6 +8902,26 @@
         "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
         "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "contexto_concierto_palacio_deportes_2009",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/PalaciodelosDeportes_Concierto.jpg/960px-PalaciodelosDeportes_Concierto.jpg",
+        "category": "Cultura",
+        "borough": "",
+        "topic": "Concierto de Kings of Leon en el Palacio de los Deportes, Ciudad de México (octubre de 2009); imagen representativa, no corresponde a María León.",
+        "keywords": [
+          "concierto",
+          "música en vivo",
+          "Palacio de los Deportes",
+          "Ciudad de México",
+          "escenario",
+          "público"
+        ],
+        "author": "ProtoplasmaKid",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:PalaciodelosDeportes_Concierto.jpg"
       }
     },
     {
@@ -9093,6 +9365,26 @@
         "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
         "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "contexto_concierto_palacio_deportes_2009",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/PalaciodelosDeportes_Concierto.jpg/960px-PalaciodelosDeportes_Concierto.jpg",
+        "category": "Cultura",
+        "borough": "",
+        "topic": "Concierto de Kings of Leon en el Palacio de los Deportes, Ciudad de México (octubre de 2009); imagen representativa, no corresponde a María León.",
+        "keywords": [
+          "concierto",
+          "música en vivo",
+          "Palacio de los Deportes",
+          "Ciudad de México",
+          "escenario",
+          "público"
+        ],
+        "author": "ProtoplasmaKid",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:PalaciodelosDeportes_Concierto.jpg"
       }
     },
     {
@@ -9147,6 +9439,26 @@
         "context": "La actividad cultural abre oportunidades de encuentro, aprendizaje y disfrute para habitantes y visitantes.",
         "pending": "Los accesos, boletos, sedes, cupos y horarios deben consultarse con la institución organizadora. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "contexto_concierto_palacio_deportes_2009",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/PalaciodelosDeportes_Concierto.jpg/960px-PalaciodelosDeportes_Concierto.jpg",
+        "category": "Cultura",
+        "borough": "",
+        "topic": "Concierto de Kings of Leon en el Palacio de los Deportes, Ciudad de México (octubre de 2009); imagen representativa, no corresponde a María León.",
+        "keywords": [
+          "concierto",
+          "música en vivo",
+          "Palacio de los Deportes",
+          "Ciudad de México",
+          "escenario",
+          "público"
+        ],
+        "author": "ProtoplasmaKid",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:PalaciodelosDeportes_Concierto.jpg"
       }
     },
     {
@@ -10078,6 +10390,26 @@
         "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
         "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "contexto_concierto_palacio_deportes_2009",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/PalaciodelosDeportes_Concierto.jpg/960px-PalaciodelosDeportes_Concierto.jpg",
+        "category": "Cultura",
+        "borough": "",
+        "topic": "Concierto de Kings of Leon en el Palacio de los Deportes, Ciudad de México (octubre de 2009); imagen representativa, no corresponde a María León.",
+        "keywords": [
+          "concierto",
+          "música en vivo",
+          "Palacio de los Deportes",
+          "Ciudad de México",
+          "escenario",
+          "público"
+        ],
+        "author": "ProtoplasmaKid",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:PalaciodelosDeportes_Concierto.jpg"
       }
     },
     {
@@ -11156,6 +11488,26 @@
         "context": "Las decisiones administrativas pueden influir en servicios, trámites y derechos; conviene conocer sus condiciones y a quiénes afectan.",
         "pending": "Es indispensable consultar los acuerdos, comunicados o documentos oficiales antes de dar una medida por vigente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "contexto_concierto_palacio_deportes_2009",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/PalaciodelosDeportes_Concierto.jpg/960px-PalaciodelosDeportes_Concierto.jpg",
+        "category": "Cultura",
+        "borough": "",
+        "topic": "Concierto de Kings of Leon en el Palacio de los Deportes, Ciudad de México (octubre de 2009); imagen representativa, no corresponde a María León.",
+        "keywords": [
+          "concierto",
+          "música en vivo",
+          "Palacio de los Deportes",
+          "Ciudad de México",
+          "escenario",
+          "público"
+        ],
+        "author": "ProtoplasmaKid",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:PalaciodelosDeportes_Concierto.jpg"
       }
     },
     {
@@ -15656,6 +16008,26 @@
         "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
         "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "contexto_concierto_palacio_deportes_2009",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/PalaciodelosDeportes_Concierto.jpg/960px-PalaciodelosDeportes_Concierto.jpg",
+        "category": "Cultura",
+        "borough": "",
+        "topic": "Concierto de Kings of Leon en el Palacio de los Deportes, Ciudad de México (octubre de 2009); imagen representativa, no corresponde a María León.",
+        "keywords": [
+          "concierto",
+          "música en vivo",
+          "Palacio de los Deportes",
+          "Ciudad de México",
+          "escenario",
+          "público"
+        ],
+        "author": "ProtoplasmaKid",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:PalaciodelosDeportes_Concierto.jpg"
       }
     },
     {
@@ -16307,6 +16679,26 @@
         "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
         "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "contexto_concierto_palacio_deportes_2009",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/PalaciodelosDeportes_Concierto.jpg/960px-PalaciodelosDeportes_Concierto.jpg",
+        "category": "Cultura",
+        "borough": "",
+        "topic": "Concierto de Kings of Leon en el Palacio de los Deportes, Ciudad de México (octubre de 2009); imagen representativa, no corresponde a María León.",
+        "keywords": [
+          "concierto",
+          "música en vivo",
+          "Palacio de los Deportes",
+          "Ciudad de México",
+          "escenario",
+          "público"
+        ],
+        "author": "ProtoplasmaKid",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:PalaciodelosDeportes_Concierto.jpg"
       }
     },
     {
@@ -16325,6 +16717,26 @@
         "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
         "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "contexto_concierto_palacio_deportes_2009",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/PalaciodelosDeportes_Concierto.jpg/960px-PalaciodelosDeportes_Concierto.jpg",
+        "category": "Cultura",
+        "borough": "",
+        "topic": "Concierto de Kings of Leon en el Palacio de los Deportes, Ciudad de México (octubre de 2009); imagen representativa, no corresponde a María León.",
+        "keywords": [
+          "concierto",
+          "música en vivo",
+          "Palacio de los Deportes",
+          "Ciudad de México",
+          "escenario",
+          "público"
+        ],
+        "author": "ProtoplasmaKid",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:PalaciodelosDeportes_Concierto.jpg"
       }
     },
     {
@@ -17613,6 +18025,26 @@
         "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
         "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "contexto_concierto_palacio_deportes_2009",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/PalaciodelosDeportes_Concierto.jpg/960px-PalaciodelosDeportes_Concierto.jpg",
+        "category": "Cultura",
+        "borough": "",
+        "topic": "Concierto de Kings of Leon en el Palacio de los Deportes, Ciudad de México (octubre de 2009); imagen representativa, no corresponde a María León.",
+        "keywords": [
+          "concierto",
+          "música en vivo",
+          "Palacio de los Deportes",
+          "Ciudad de México",
+          "escenario",
+          "público"
+        ],
+        "author": "ProtoplasmaKid",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:PalaciodelosDeportes_Concierto.jpg"
       }
     },
     {
@@ -18839,6 +19271,21 @@
         "context": "Las decisiones administrativas pueden influir en servicios, trámites y derechos; conviene conocer sus condiciones y a quiénes afectan.",
         "pending": "Es indispensable consultar los acuerdos, comunicados o documentos oficiales antes de dar una medida por vigente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "commons_87559942",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Calle_de_Donceles%2C_Centro_Hist%C3%B3rico_de_la_Ciudad_de_M%C3%A9xico.jpg/960px-Calle_de_Donceles%2C_Centro_Hist%C3%B3rico_de_la_Ciudad_de_M%C3%A9xico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "category": "CDMX",
+        "borough": "",
+        "topic": "Calle de Donceles, Centro Histórico de la Ciudad de México",
+        "keywords": [
+          "Centro Histórico Ciudad de México"
+        ],
+        "author": "Juan Carlos Fonseca Mata",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Calle_de_Donceles,_Centro_Hist%C3%B3rico_de_la_Ciudad_de_M%C3%A9xico.jpg"
       }
     },
     {
@@ -18943,6 +19390,26 @@
         "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
         "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "contexto_concierto_palacio_deportes_2009",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/PalaciodelosDeportes_Concierto.jpg/960px-PalaciodelosDeportes_Concierto.jpg",
+        "category": "Cultura",
+        "borough": "",
+        "topic": "Concierto de Kings of Leon en el Palacio de los Deportes, Ciudad de México (octubre de 2009); imagen representativa, no corresponde a María León.",
+        "keywords": [
+          "concierto",
+          "música en vivo",
+          "Palacio de los Deportes",
+          "Ciudad de México",
+          "escenario",
+          "público"
+        ],
+        "author": "ProtoplasmaKid",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:PalaciodelosDeportes_Concierto.jpg"
       }
     },
     {
@@ -19029,6 +19496,21 @@
         "context": "Las decisiones administrativas pueden influir en servicios, trámites y derechos; conviene conocer sus condiciones y a quiénes afectan.",
         "pending": "Es indispensable consultar los acuerdos, comunicados o documentos oficiales antes de dar una medida por vigente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "commons_87559942",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Calle_de_Donceles%2C_Centro_Hist%C3%B3rico_de_la_Ciudad_de_M%C3%A9xico.jpg/960px-Calle_de_Donceles%2C_Centro_Hist%C3%B3rico_de_la_Ciudad_de_M%C3%A9xico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "category": "CDMX",
+        "borough": "",
+        "topic": "Calle de Donceles, Centro Histórico de la Ciudad de México",
+        "keywords": [
+          "Centro Histórico Ciudad de México"
+        ],
+        "author": "Juan Carlos Fonseca Mata",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Calle_de_Donceles,_Centro_Hist%C3%B3rico_de_la_Ciudad_de_M%C3%A9xico.jpg"
       }
     },
     {
@@ -19379,6 +19861,26 @@
         "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
         "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "contexto_concierto_palacio_deportes_2009",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/PalaciodelosDeportes_Concierto.jpg/960px-PalaciodelosDeportes_Concierto.jpg",
+        "category": "Cultura",
+        "borough": "",
+        "topic": "Concierto de Kings of Leon en el Palacio de los Deportes, Ciudad de México (octubre de 2009); imagen representativa, no corresponde a María León.",
+        "keywords": [
+          "concierto",
+          "música en vivo",
+          "Palacio de los Deportes",
+          "Ciudad de México",
+          "escenario",
+          "público"
+        ],
+        "author": "ProtoplasmaKid",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:PalaciodelosDeportes_Concierto.jpg"
       }
     },
     {
@@ -19602,6 +20104,26 @@
         "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
         "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "contexto_concierto_palacio_deportes_2009",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/PalaciodelosDeportes_Concierto.jpg/960px-PalaciodelosDeportes_Concierto.jpg",
+        "category": "Cultura",
+        "borough": "",
+        "topic": "Concierto de Kings of Leon en el Palacio de los Deportes, Ciudad de México (octubre de 2009); imagen representativa, no corresponde a María León.",
+        "keywords": [
+          "concierto",
+          "música en vivo",
+          "Palacio de los Deportes",
+          "Ciudad de México",
+          "escenario",
+          "público"
+        ],
+        "author": "ProtoplasmaKid",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:PalaciodelosDeportes_Concierto.jpg"
       }
     },
     {
@@ -19863,6 +20385,21 @@
         "context": "Las decisiones administrativas pueden influir en servicios, trámites y derechos; conviene conocer sus condiciones y a quiénes afectan.",
         "pending": "Es indispensable consultar los acuerdos, comunicados o documentos oficiales antes de dar una medida por vigente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "commons_87559942",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Calle_de_Donceles%2C_Centro_Hist%C3%B3rico_de_la_Ciudad_de_M%C3%A9xico.jpg/960px-Calle_de_Donceles%2C_Centro_Hist%C3%B3rico_de_la_Ciudad_de_M%C3%A9xico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "category": "CDMX",
+        "borough": "",
+        "topic": "Calle de Donceles, Centro Histórico de la Ciudad de México",
+        "keywords": [
+          "Centro Histórico Ciudad de México"
+        ],
+        "author": "Juan Carlos Fonseca Mata",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Calle_de_Donceles,_Centro_Hist%C3%B3rico_de_la_Ciudad_de_M%C3%A9xico.jpg"
       }
     },
     {
@@ -20181,6 +20718,21 @@
         "context": "Las decisiones administrativas pueden influir en servicios, trámites y derechos; conviene conocer sus condiciones y a quiénes afectan.",
         "pending": "Es indispensable consultar los acuerdos, comunicados o documentos oficiales antes de dar una medida por vigente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "commons_87559942",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Calle_de_Donceles%2C_Centro_Hist%C3%B3rico_de_la_Ciudad_de_M%C3%A9xico.jpg/960px-Calle_de_Donceles%2C_Centro_Hist%C3%B3rico_de_la_Ciudad_de_M%C3%A9xico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "category": "CDMX",
+        "borough": "",
+        "topic": "Calle de Donceles, Centro Histórico de la Ciudad de México",
+        "keywords": [
+          "Centro Histórico Ciudad de México"
+        ],
+        "author": "Juan Carlos Fonseca Mata",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Calle_de_Donceles,_Centro_Hist%C3%B3rico_de_la_Ciudad_de_M%C3%A9xico.jpg"
       }
     },
     {
@@ -20232,6 +20784,21 @@
         "context": "Las decisiones administrativas pueden influir en servicios, trámites y derechos; conviene conocer sus condiciones y a quiénes afectan.",
         "pending": "Es indispensable consultar los acuerdos, comunicados o documentos oficiales antes de dar una medida por vigente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "commons_87559942",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Calle_de_Donceles%2C_Centro_Hist%C3%B3rico_de_la_Ciudad_de_M%C3%A9xico.jpg/960px-Calle_de_Donceles%2C_Centro_Hist%C3%B3rico_de_la_Ciudad_de_M%C3%A9xico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "category": "CDMX",
+        "borough": "",
+        "topic": "Calle de Donceles, Centro Histórico de la Ciudad de México",
+        "keywords": [
+          "Centro Histórico Ciudad de México"
+        ],
+        "author": "Juan Carlos Fonseca Mata",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Calle_de_Donceles,_Centro_Hist%C3%B3rico_de_la_Ciudad_de_M%C3%A9xico.jpg"
       }
     },
     {
@@ -22204,6 +22771,26 @@
         "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
         "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "contexto_concierto_palacio_deportes_2009",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/PalaciodelosDeportes_Concierto.jpg/960px-PalaciodelosDeportes_Concierto.jpg",
+        "category": "Cultura",
+        "borough": "",
+        "topic": "Concierto de Kings of Leon en el Palacio de los Deportes, Ciudad de México (octubre de 2009); imagen representativa, no corresponde a María León.",
+        "keywords": [
+          "concierto",
+          "música en vivo",
+          "Palacio de los Deportes",
+          "Ciudad de México",
+          "escenario",
+          "público"
+        ],
+        "author": "ProtoplasmaKid",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:PalaciodelosDeportes_Concierto.jpg"
       }
     },
     {
@@ -22842,6 +23429,26 @@
         "context": "La actividad cultural abre oportunidades de encuentro, aprendizaje y disfrute para habitantes y visitantes.",
         "pending": "Los accesos, boletos, sedes, cupos y horarios deben consultarse con la institución organizadora. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "contexto_concierto_palacio_deportes_2009",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/PalaciodelosDeportes_Concierto.jpg/960px-PalaciodelosDeportes_Concierto.jpg",
+        "category": "Cultura",
+        "borough": "",
+        "topic": "Concierto de Kings of Leon en el Palacio de los Deportes, Ciudad de México (octubre de 2009); imagen representativa, no corresponde a María León.",
+        "keywords": [
+          "concierto",
+          "música en vivo",
+          "Palacio de los Deportes",
+          "Ciudad de México",
+          "escenario",
+          "público"
+        ],
+        "author": "ProtoplasmaKid",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:PalaciodelosDeportes_Concierto.jpg"
       }
     },
     {
@@ -26528,6 +27135,26 @@
         "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
         "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "contexto_concierto_palacio_deportes_2009",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/PalaciodelosDeportes_Concierto.jpg/960px-PalaciodelosDeportes_Concierto.jpg",
+        "category": "Cultura",
+        "borough": "",
+        "topic": "Concierto de Kings of Leon en el Palacio de los Deportes, Ciudad de México (octubre de 2009); imagen representativa, no corresponde a María León.",
+        "keywords": [
+          "concierto",
+          "música en vivo",
+          "Palacio de los Deportes",
+          "Ciudad de México",
+          "escenario",
+          "público"
+        ],
+        "author": "ProtoplasmaKid",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:PalaciodelosDeportes_Concierto.jpg"
       }
     },
     {
@@ -27237,6 +27864,26 @@
         "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
         "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "contexto_concierto_palacio_deportes_2009",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/PalaciodelosDeportes_Concierto.jpg/960px-PalaciodelosDeportes_Concierto.jpg",
+        "category": "Cultura",
+        "borough": "",
+        "topic": "Concierto de Kings of Leon en el Palacio de los Deportes, Ciudad de México (octubre de 2009); imagen representativa, no corresponde a María León.",
+        "keywords": [
+          "concierto",
+          "música en vivo",
+          "Palacio de los Deportes",
+          "Ciudad de México",
+          "escenario",
+          "público"
+        ],
+        "author": "ProtoplasmaKid",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:PalaciodelosDeportes_Concierto.jpg"
       }
     },
     {
@@ -27422,6 +28069,26 @@
         "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
         "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "contexto_concierto_palacio_deportes_2009",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/PalaciodelosDeportes_Concierto.jpg/960px-PalaciodelosDeportes_Concierto.jpg",
+        "category": "Cultura",
+        "borough": "",
+        "topic": "Concierto de Kings of Leon en el Palacio de los Deportes, Ciudad de México (octubre de 2009); imagen representativa, no corresponde a María León.",
+        "keywords": [
+          "concierto",
+          "música en vivo",
+          "Palacio de los Deportes",
+          "Ciudad de México",
+          "escenario",
+          "público"
+        ],
+        "author": "ProtoplasmaKid",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:PalaciodelosDeportes_Concierto.jpg"
       }
     },
     {
@@ -27652,6 +28319,26 @@
         "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
         "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "contexto_concierto_palacio_deportes_2009",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/PalaciodelosDeportes_Concierto.jpg/960px-PalaciodelosDeportes_Concierto.jpg",
+        "category": "Cultura",
+        "borough": "",
+        "topic": "Concierto de Kings of Leon en el Palacio de los Deportes, Ciudad de México (octubre de 2009); imagen representativa, no corresponde a María León.",
+        "keywords": [
+          "concierto",
+          "música en vivo",
+          "Palacio de los Deportes",
+          "Ciudad de México",
+          "escenario",
+          "público"
+        ],
+        "author": "ProtoplasmaKid",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:PalaciodelosDeportes_Concierto.jpg"
       }
     },
     {
@@ -28513,6 +29200,26 @@
         "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
         "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "contexto_concierto_palacio_deportes_2009",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/PalaciodelosDeportes_Concierto.jpg/960px-PalaciodelosDeportes_Concierto.jpg",
+        "category": "Cultura",
+        "borough": "",
+        "topic": "Concierto de Kings of Leon en el Palacio de los Deportes, Ciudad de México (octubre de 2009); imagen representativa, no corresponde a María León.",
+        "keywords": [
+          "concierto",
+          "música en vivo",
+          "Palacio de los Deportes",
+          "Ciudad de México",
+          "escenario",
+          "público"
+        ],
+        "author": "ProtoplasmaKid",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:PalaciodelosDeportes_Concierto.jpg"
       }
     },
     {
@@ -29675,6 +30382,26 @@
         "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
         "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "contexto_concierto_palacio_deportes_2009",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/PalaciodelosDeportes_Concierto.jpg/960px-PalaciodelosDeportes_Concierto.jpg",
+        "category": "Cultura",
+        "borough": "",
+        "topic": "Concierto de Kings of Leon en el Palacio de los Deportes, Ciudad de México (octubre de 2009); imagen representativa, no corresponde a María León.",
+        "keywords": [
+          "concierto",
+          "música en vivo",
+          "Palacio de los Deportes",
+          "Ciudad de México",
+          "escenario",
+          "público"
+        ],
+        "author": "ProtoplasmaKid",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:PalaciodelosDeportes_Concierto.jpg"
       }
     },
     {
@@ -30640,6 +31367,26 @@
         "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
         "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "contexto_concierto_palacio_deportes_2009",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/PalaciodelosDeportes_Concierto.jpg/960px-PalaciodelosDeportes_Concierto.jpg",
+        "category": "Cultura",
+        "borough": "",
+        "topic": "Concierto de Kings of Leon en el Palacio de los Deportes, Ciudad de México (octubre de 2009); imagen representativa, no corresponde a María León.",
+        "keywords": [
+          "concierto",
+          "música en vivo",
+          "Palacio de los Deportes",
+          "Ciudad de México",
+          "escenario",
+          "público"
+        ],
+        "author": "ProtoplasmaKid",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:PalaciodelosDeportes_Concierto.jpg"
       }
     },
     {
@@ -30968,6 +31715,26 @@
         "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
         "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "contexto_concierto_palacio_deportes_2009",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/PalaciodelosDeportes_Concierto.jpg/960px-PalaciodelosDeportes_Concierto.jpg",
+        "category": "Cultura",
+        "borough": "",
+        "topic": "Concierto de Kings of Leon en el Palacio de los Deportes, Ciudad de México (octubre de 2009); imagen representativa, no corresponde a María León.",
+        "keywords": [
+          "concierto",
+          "música en vivo",
+          "Palacio de los Deportes",
+          "Ciudad de México",
+          "escenario",
+          "público"
+        ],
+        "author": "ProtoplasmaKid",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:PalaciodelosDeportes_Concierto.jpg"
       }
     },
     {
@@ -31239,6 +32006,26 @@
         "context": "La actividad cultural abre oportunidades de encuentro, aprendizaje y disfrute para habitantes y visitantes.",
         "pending": "Los accesos, boletos, sedes, cupos y horarios deben consultarse con la institución organizadora. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "contexto_concierto_palacio_deportes_2009",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/PalaciodelosDeportes_Concierto.jpg/960px-PalaciodelosDeportes_Concierto.jpg",
+        "category": "Cultura",
+        "borough": "",
+        "topic": "Concierto de Kings of Leon en el Palacio de los Deportes, Ciudad de México (octubre de 2009); imagen representativa, no corresponde a María León.",
+        "keywords": [
+          "concierto",
+          "música en vivo",
+          "Palacio de los Deportes",
+          "Ciudad de México",
+          "escenario",
+          "público"
+        ],
+        "author": "ProtoplasmaKid",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:PalaciodelosDeportes_Concierto.jpg"
       }
     },
     {
@@ -31630,6 +32417,26 @@
         "context": "La actividad cultural abre oportunidades de encuentro, aprendizaje y disfrute para habitantes y visitantes.",
         "pending": "Los accesos, boletos, sedes, cupos y horarios deben consultarse con la institución organizadora. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "contexto_concierto_palacio_deportes_2009",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/PalaciodelosDeportes_Concierto.jpg/960px-PalaciodelosDeportes_Concierto.jpg",
+        "category": "Cultura",
+        "borough": "",
+        "topic": "Concierto de Kings of Leon en el Palacio de los Deportes, Ciudad de México (octubre de 2009); imagen representativa, no corresponde a María León.",
+        "keywords": [
+          "concierto",
+          "música en vivo",
+          "Palacio de los Deportes",
+          "Ciudad de México",
+          "escenario",
+          "público"
+        ],
+        "author": "ProtoplasmaKid",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:PalaciodelosDeportes_Concierto.jpg"
       }
     },
     {
@@ -34526,6 +35333,26 @@
         "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
         "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "contexto_concierto_palacio_deportes_2009",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/PalaciodelosDeportes_Concierto.jpg/960px-PalaciodelosDeportes_Concierto.jpg",
+        "category": "Cultura",
+        "borough": "",
+        "topic": "Concierto de Kings of Leon en el Palacio de los Deportes, Ciudad de México (octubre de 2009); imagen representativa, no corresponde a María León.",
+        "keywords": [
+          "concierto",
+          "música en vivo",
+          "Palacio de los Deportes",
+          "Ciudad de México",
+          "escenario",
+          "público"
+        ],
+        "author": "ProtoplasmaKid",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:PalaciodelosDeportes_Concierto.jpg"
       }
     },
     {
@@ -34795,6 +35622,26 @@
         "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
         "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "contexto_concierto_palacio_deportes_2009",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/PalaciodelosDeportes_Concierto.jpg/960px-PalaciodelosDeportes_Concierto.jpg",
+        "category": "Cultura",
+        "borough": "",
+        "topic": "Concierto de Kings of Leon en el Palacio de los Deportes, Ciudad de México (octubre de 2009); imagen representativa, no corresponde a María León.",
+        "keywords": [
+          "concierto",
+          "música en vivo",
+          "Palacio de los Deportes",
+          "Ciudad de México",
+          "escenario",
+          "público"
+        ],
+        "author": "ProtoplasmaKid",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:PalaciodelosDeportes_Concierto.jpg"
       }
     },
     {
@@ -36882,6 +37729,21 @@
         "context": "Las decisiones administrativas pueden influir en servicios, trámites y derechos; conviene conocer sus condiciones y a quiénes afectan.",
         "pending": "Es indispensable consultar los acuerdos, comunicados o documentos oficiales antes de dar una medida por vigente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "commons_87559942",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Calle_de_Donceles%2C_Centro_Hist%C3%B3rico_de_la_Ciudad_de_M%C3%A9xico.jpg/960px-Calle_de_Donceles%2C_Centro_Hist%C3%B3rico_de_la_Ciudad_de_M%C3%A9xico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "category": "CDMX",
+        "borough": "",
+        "topic": "Calle de Donceles, Centro Histórico de la Ciudad de México",
+        "keywords": [
+          "Centro Histórico Ciudad de México"
+        ],
+        "author": "Juan Carlos Fonseca Mata",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Calle_de_Donceles,_Centro_Hist%C3%B3rico_de_la_Ciudad_de_M%C3%A9xico.jpg"
       }
     },
     {
@@ -40494,6 +41356,26 @@
         "context": "La actividad cultural abre oportunidades de encuentro, aprendizaje y disfrute para habitantes y visitantes.",
         "pending": "Los accesos, boletos, sedes, cupos y horarios deben consultarse con la institución organizadora. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "contexto_concierto_palacio_deportes_2009",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/PalaciodelosDeportes_Concierto.jpg/960px-PalaciodelosDeportes_Concierto.jpg",
+        "category": "Cultura",
+        "borough": "",
+        "topic": "Concierto de Kings of Leon en el Palacio de los Deportes, Ciudad de México (octubre de 2009); imagen representativa, no corresponde a María León.",
+        "keywords": [
+          "concierto",
+          "música en vivo",
+          "Palacio de los Deportes",
+          "Ciudad de México",
+          "escenario",
+          "público"
+        ],
+        "author": "ProtoplasmaKid",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:PalaciodelosDeportes_Concierto.jpg"
       }
     },
     {
@@ -48480,6 +49362,26 @@
         "context": "La actividad cultural abre oportunidades de encuentro, aprendizaje y disfrute para habitantes y visitantes.",
         "pending": "Los accesos, boletos, sedes, cupos y horarios deben consultarse con la institución organizadora. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "contexto_concierto_palacio_deportes_2009",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/PalaciodelosDeportes_Concierto.jpg/960px-PalaciodelosDeportes_Concierto.jpg",
+        "category": "Cultura",
+        "borough": "",
+        "topic": "Concierto de Kings of Leon en el Palacio de los Deportes, Ciudad de México (octubre de 2009); imagen representativa, no corresponde a María León.",
+        "keywords": [
+          "concierto",
+          "música en vivo",
+          "Palacio de los Deportes",
+          "Ciudad de México",
+          "escenario",
+          "público"
+        ],
+        "author": "ProtoplasmaKid",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:PalaciodelosDeportes_Concierto.jpg"
       }
     },
     {
@@ -48498,6 +49400,26 @@
         "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
         "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "contexto_concierto_palacio_deportes_2009",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/PalaciodelosDeportes_Concierto.jpg/960px-PalaciodelosDeportes_Concierto.jpg",
+        "category": "Cultura",
+        "borough": "",
+        "topic": "Concierto de Kings of Leon en el Palacio de los Deportes, Ciudad de México (octubre de 2009); imagen representativa, no corresponde a María León.",
+        "keywords": [
+          "concierto",
+          "música en vivo",
+          "Palacio de los Deportes",
+          "Ciudad de México",
+          "escenario",
+          "público"
+        ],
+        "author": "ProtoplasmaKid",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:PalaciodelosDeportes_Concierto.jpg"
       }
     },
     {
@@ -48633,6 +49555,26 @@
         "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
         "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "contexto_concierto_palacio_deportes_2009",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/PalaciodelosDeportes_Concierto.jpg/960px-PalaciodelosDeportes_Concierto.jpg",
+        "category": "Cultura",
+        "borough": "",
+        "topic": "Concierto de Kings of Leon en el Palacio de los Deportes, Ciudad de México (octubre de 2009); imagen representativa, no corresponde a María León.",
+        "keywords": [
+          "concierto",
+          "música en vivo",
+          "Palacio de los Deportes",
+          "Ciudad de México",
+          "escenario",
+          "público"
+        ],
+        "author": "ProtoplasmaKid",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:PalaciodelosDeportes_Concierto.jpg"
       }
     },
     {
@@ -49184,6 +50126,26 @@
         "context": "La actividad cultural abre oportunidades de encuentro, aprendizaje y disfrute para habitantes y visitantes.",
         "pending": "Los accesos, boletos, sedes, cupos y horarios deben consultarse con la institución organizadora. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "contexto_concierto_palacio_deportes_2009",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/PalaciodelosDeportes_Concierto.jpg/960px-PalaciodelosDeportes_Concierto.jpg",
+        "category": "Cultura",
+        "borough": "",
+        "topic": "Concierto de Kings of Leon en el Palacio de los Deportes, Ciudad de México (octubre de 2009); imagen representativa, no corresponde a María León.",
+        "keywords": [
+          "concierto",
+          "música en vivo",
+          "Palacio de los Deportes",
+          "Ciudad de México",
+          "escenario",
+          "público"
+        ],
+        "author": "ProtoplasmaKid",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:PalaciodelosDeportes_Concierto.jpg"
       }
     },
     {
@@ -49339,6 +50301,21 @@
         "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
         "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "commons_54378318",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Ciudad_Universitaria_%28Marcha_por_la_paz%29_-_panoramio.jpg/960px-Ciudad_Universitaria_%28Marcha_por_la_paz%29_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "category": "Cultura",
+        "borough": "",
+        "topic": "Ciudad Universitaria (Marcha por la paz) - panoramio",
+        "keywords": [
+          "Ciudad Universitaria UNAM Ciudad de México"
+        ],
+        "author": "Malomalverde",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Ciudad_Universitaria_(Marcha_por_la_paz)_-_panoramio.jpg"
       }
     },
     {
@@ -49539,6 +50516,26 @@
         "context": "La actividad cultural abre oportunidades de encuentro, aprendizaje y disfrute para habitantes y visitantes.",
         "pending": "Los accesos, boletos, sedes, cupos y horarios deben consultarse con la institución organizadora. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "contexto_concierto_palacio_deportes_2009",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/PalaciodelosDeportes_Concierto.jpg/960px-PalaciodelosDeportes_Concierto.jpg",
+        "category": "Cultura",
+        "borough": "",
+        "topic": "Concierto de Kings of Leon en el Palacio de los Deportes, Ciudad de México (octubre de 2009); imagen representativa, no corresponde a María León.",
+        "keywords": [
+          "concierto",
+          "música en vivo",
+          "Palacio de los Deportes",
+          "Ciudad de México",
+          "escenario",
+          "público"
+        ],
+        "author": "ProtoplasmaKid",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:PalaciodelosDeportes_Concierto.jpg"
       }
     },
     {
@@ -49646,6 +50643,26 @@
         "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
         "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "contexto_concierto_palacio_deportes_2009",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/PalaciodelosDeportes_Concierto.jpg/960px-PalaciodelosDeportes_Concierto.jpg",
+        "category": "Cultura",
+        "borough": "",
+        "topic": "Concierto de Kings of Leon en el Palacio de los Deportes, Ciudad de México (octubre de 2009); imagen representativa, no corresponde a María León.",
+        "keywords": [
+          "concierto",
+          "música en vivo",
+          "Palacio de los Deportes",
+          "Ciudad de México",
+          "escenario",
+          "público"
+        ],
+        "author": "ProtoplasmaKid",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:PalaciodelosDeportes_Concierto.jpg"
       }
     },
     {
@@ -49727,6 +50744,26 @@
         "context": "La actividad cultural abre oportunidades de encuentro, aprendizaje y disfrute para habitantes y visitantes.",
         "pending": "Los accesos, boletos, sedes, cupos y horarios deben consultarse con la institución organizadora. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "contexto_concierto_palacio_deportes_2009",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/PalaciodelosDeportes_Concierto.jpg/960px-PalaciodelosDeportes_Concierto.jpg",
+        "category": "Cultura",
+        "borough": "",
+        "topic": "Concierto de Kings of Leon en el Palacio de los Deportes, Ciudad de México (octubre de 2009); imagen representativa, no corresponde a María León.",
+        "keywords": [
+          "concierto",
+          "música en vivo",
+          "Palacio de los Deportes",
+          "Ciudad de México",
+          "escenario",
+          "público"
+        ],
+        "author": "ProtoplasmaKid",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:PalaciodelosDeportes_Concierto.jpg"
       }
     },
     {
@@ -50893,6 +51930,26 @@
         "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
         "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "contexto_concierto_palacio_deportes_2009",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/PalaciodelosDeportes_Concierto.jpg/960px-PalaciodelosDeportes_Concierto.jpg",
+        "category": "Cultura",
+        "borough": "",
+        "topic": "Concierto de Kings of Leon en el Palacio de los Deportes, Ciudad de México (octubre de 2009); imagen representativa, no corresponde a María León.",
+        "keywords": [
+          "concierto",
+          "música en vivo",
+          "Palacio de los Deportes",
+          "Ciudad de México",
+          "escenario",
+          "público"
+        ],
+        "author": "ProtoplasmaKid",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:PalaciodelosDeportes_Concierto.jpg"
       }
     },
     {
@@ -52249,6 +53306,26 @@
         "context": "La actividad cultural abre oportunidades de encuentro, aprendizaje y disfrute para habitantes y visitantes.",
         "pending": "Los accesos, boletos, sedes, cupos y horarios deben consultarse con la institución organizadora. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "contexto_concierto_palacio_deportes_2009",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/PalaciodelosDeportes_Concierto.jpg/960px-PalaciodelosDeportes_Concierto.jpg",
+        "category": "Cultura",
+        "borough": "",
+        "topic": "Concierto de Kings of Leon en el Palacio de los Deportes, Ciudad de México (octubre de 2009); imagen representativa, no corresponde a María León.",
+        "keywords": [
+          "concierto",
+          "música en vivo",
+          "Palacio de los Deportes",
+          "Ciudad de México",
+          "escenario",
+          "público"
+        ],
+        "author": "ProtoplasmaKid",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:PalaciodelosDeportes_Concierto.jpg"
       }
     },
     {
@@ -52389,6 +53466,26 @@
         "context": "La actividad cultural abre oportunidades de encuentro, aprendizaje y disfrute para habitantes y visitantes.",
         "pending": "Los accesos, boletos, sedes, cupos y horarios deben consultarse con la institución organizadora. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "contexto_concierto_palacio_deportes_2009",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/PalaciodelosDeportes_Concierto.jpg/960px-PalaciodelosDeportes_Concierto.jpg",
+        "category": "Cultura",
+        "borough": "",
+        "topic": "Concierto de Kings of Leon en el Palacio de los Deportes, Ciudad de México (octubre de 2009); imagen representativa, no corresponde a María León.",
+        "keywords": [
+          "concierto",
+          "música en vivo",
+          "Palacio de los Deportes",
+          "Ciudad de México",
+          "escenario",
+          "público"
+        ],
+        "author": "ProtoplasmaKid",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:PalaciodelosDeportes_Concierto.jpg"
       }
     },
     {
@@ -52752,6 +53849,21 @@
         "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
         "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "commons_54378318",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Ciudad_Universitaria_%28Marcha_por_la_paz%29_-_panoramio.jpg/960px-Ciudad_Universitaria_%28Marcha_por_la_paz%29_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "category": "Cultura",
+        "borough": "",
+        "topic": "Ciudad Universitaria (Marcha por la paz) - panoramio",
+        "keywords": [
+          "Ciudad Universitaria UNAM Ciudad de México"
+        ],
+        "author": "Malomalverde",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Ciudad_Universitaria_(Marcha_por_la_paz)_-_panoramio.jpg"
       }
     },
     {
@@ -52836,6 +53948,21 @@
         "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
         "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "commons_54378318",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Ciudad_Universitaria_%28Marcha_por_la_paz%29_-_panoramio.jpg/960px-Ciudad_Universitaria_%28Marcha_por_la_paz%29_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "category": "Cultura",
+        "borough": "",
+        "topic": "Ciudad Universitaria (Marcha por la paz) - panoramio",
+        "keywords": [
+          "Ciudad Universitaria UNAM Ciudad de México"
+        ],
+        "author": "Malomalverde",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Ciudad_Universitaria_(Marcha_por_la_paz)_-_panoramio.jpg"
       }
     },
     {
@@ -52892,6 +54019,21 @@
         "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
         "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "commons_54378318",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Ciudad_Universitaria_%28Marcha_por_la_paz%29_-_panoramio.jpg/960px-Ciudad_Universitaria_%28Marcha_por_la_paz%29_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "category": "Cultura",
+        "borough": "",
+        "topic": "Ciudad Universitaria (Marcha por la paz) - panoramio",
+        "keywords": [
+          "Ciudad Universitaria UNAM Ciudad de México"
+        ],
+        "author": "Malomalverde",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Ciudad_Universitaria_(Marcha_por_la_paz)_-_panoramio.jpg"
       }
     },
     {
@@ -53209,6 +54351,21 @@
         "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
         "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "commons_54378318",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Ciudad_Universitaria_%28Marcha_por_la_paz%29_-_panoramio.jpg/960px-Ciudad_Universitaria_%28Marcha_por_la_paz%29_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "category": "Cultura",
+        "borough": "",
+        "topic": "Ciudad Universitaria (Marcha por la paz) - panoramio",
+        "keywords": [
+          "Ciudad Universitaria UNAM Ciudad de México"
+        ],
+        "author": "Malomalverde",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Ciudad_Universitaria_(Marcha_por_la_paz)_-_panoramio.jpg"
       }
     },
     {
