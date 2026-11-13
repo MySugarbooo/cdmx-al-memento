@@ -1934,6 +1934,9 @@ def _photo_score(article, photo):
         r"\b(?:musica|orquestas?|conciertos?|guitarras?|bandas?|coros?|coral|rock|cantantes?)\b",
         context,
     ))
+    # La nota de María León requiere contexto musical; una danza ajena no representa su concierto.
+    if is_infobae_maria_leon_concert(article) and not music_photo:
+        return -10000
     # Un coro o una fotografía musical no representa asuntos ajenos a la música.
     if music_photo and not music_story:
         return -10000
