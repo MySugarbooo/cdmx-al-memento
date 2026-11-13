@@ -2046,7 +2046,7 @@ def _photo_score(article, photo):
         return -10000
     # Un foro del Congreso necesita contexto legislativo, no una sede del Ejecutivo.
     legislative_story = bool(re.search(
-        r"\b(?:congreso(?: de cdmx| local)?|asamblea legislativa|foro metropolitano|diputad[oa]s?|legisladores?)\b",
+        r"\b(?:congreso(?: de cdmx| local)?|asamblea legislativa|diputad[oa]s?|legisladores?)\b",
         headline,
     ))
     legislative_photo = bool(re.search(
@@ -2064,7 +2064,17 @@ def _photo_score(article, photo):
         r"\b(?:plan general de desarrollo|planeacion urbana|ordenamiento territorial|desarrollo urbano|uso de suelo|banco de suelo|cartografia|mapa urbano|palacio legislativo|congreso de la ciudad de mexico|congreso local|asamblea legislativa|recinto legislativo|camara de diputados)\b",
         context,
     ))
-    if planning_story and not planning_photo:
+    land_use_enforcement_story = bool(re.search(
+        r"\b(?:detienen|detenido|obras irregulares|cambio ilegal de uso de suelo)\b",
+        headline,
+    ))
+    land_use_enforcement_photo = bool(re.search(
+        r"\b(?:operativo de fiscalia|fiscalia en|investigacion penal|inspeccion de obra|uso de suelo)\b",
+        context,
+    ))
+    if land_use_enforcement_story and not land_use_enforcement_photo:
+        return -10000
+    if planning_story and not planning_photo and not land_use_enforcement_story:
         return -10000
     # Las guías de actividades pueden usar una atracción identificable, no cualquier vista de la ciudad.
     city_guide_story = bool(re.search(
@@ -2072,10 +2082,20 @@ def _photo_score(article, photo):
         headline,
     ))
     city_attraction_photo = bool(re.search(
-        r"\b(?:castillo de chapultepec|museos?|parques?|bosques?|zocalo|teatros?|monumentos?)\b",
+        r"\b(?:castillo de chapultepec|museos?|parques?|bosques?|zocalo|teatros?|monumentos?|ofrendas?|cempasuchil|catrinas?|altares?|panteones?|cementerios?|dia de muertos)\b",
         context,
     ))
     if city_guide_story and not city_attraction_photo:
+        return -10000
+    urban_forum_story = bool(re.search(
+        r"\b(?:pozmvm|foro de planeacion|foro metropolitano|ordenamiento metropolitano)\b",
+        headline,
+    ))
+    urban_forum_photo = bool(re.search(
+        r"\b(?:asamblea de planeacion urbana|foro metropolitano|planeacion urbana|ordenamiento metropolitano)\b",
+        context,
+    ))
+    if urban_forum_story and not urban_forum_photo:
         return -10000
     football_story = bool(re.search(r"\b(?:nfl|futbol americano|football americano)\b", headline))
     football_photo = bool(re.search(
@@ -2137,6 +2157,8 @@ def _photo_score(article, photo):
         or (motorcycle_story and motorcycle_photo)
         or (traffic_incident_story and traffic_photo)
         or (city_guide_story and city_attraction_photo)
+        or (urban_forum_story and urban_forum_photo)
+        or (land_use_enforcement_story and land_use_enforcement_photo)
     )
     # Una categoría distinta no basta por sí sola para considerar pertinente una foto.
     if photo_category not in (category, "CDMX", "Alcaldías") and not themed_category:
@@ -2321,7 +2343,7 @@ def _photo_score(article, photo):
         if wanted_lines and shown_lines and not wanted_lines.intersection(shown_lines):
             return -10000
     borough=_photo_fold(article.get("borough"))
-    score=65 if photo_category==category and category!="CDMX" else (12 if photo_category=="CDMX" and category!="CDMX" else 0)
+    score=65 if photo_category==category else (12 if photo_category=="CDMX" else 0)
     cinema_story=bool(re.search(r"\b(?:cine de barrio|festival(?: de)? cine)\b",headline))
     cinema_photo=bool(re.search(
         r"\b(?:bosquecinema|cine|cinema|cineclub|cineteca|proyecciones?|peliculas?|filmoteca)\b",
@@ -2331,6 +2353,12 @@ def _photo_score(article, photo):
         score += 120
     if animal_story and animal_photo:
         score += 180
+    if weather_story and weather_photo:
+        score += 80
+    if urban_forum_story and urban_forum_photo:
+        score += 120
+    if land_use_enforcement_story and land_use_enforcement_photo:
+        score += 160
     if delivery_story and delivery_photo:
         score += 120
     if tax_story and tax_photo:
