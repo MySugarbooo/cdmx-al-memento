@@ -120,7 +120,7 @@ function editorialDaypart(){
 editorialDaypart();
 setInterval(editorialDaypart,60000);
 function renderHero(){
- const candidates=state.stories.map((item,index)=>({item,index})).filter(({item})=>photoInfo(item)&&!isWeatherForecastOnly(item));
+ const candidates=state.stories.map((item,index)=>({item,index})).filter(({item})=>photoInfo(item)&&!isWeatherForecastOnly(item)&&!isStaleTimeSensitiveHeadline(item));
  if(!candidates.length){
   const img=shell.querySelector('#neo-hero-img');img.removeAttribute('src');img.style.display='none';
   const title=shell.querySelector('#neo-hero-title');title.textContent='Noticias recientes sin fotografía verificada';title.href='/archivo/';
@@ -257,6 +257,13 @@ function isHomepageRecent(article,now=new Date()){
  const yesterday=homepageDateFormatter.format(new Date(now.getTime()-86400000));
  return day===today||day===yesterday;
 }
+function isStaleTimeSensitiveHeadline(article,now=new Date()){
+ const title=String(article?.title||'');
+ if(!/\\b(?:hoy|en vivo)\\b/i.test(title))return false;
+ const day=homepageDay(article?.published_at||article?.date);
+ if(!day)return true;
+ return day!==homepageDateFormatter.format(now);
+}
 function eligibleStories(feed){
  const items=Array.isArray(feed)?feed:(Array.isArray(feed?.articles)?feed.articles:[]);
  const usedPhotos=new Set();
@@ -300,7 +307,7 @@ function applyStories(items,source){
  if(current<0){
   let last='';try{last=sessionStorage.getItem('cdmx-neo-last-feature')||''}catch{}
   // Elegir al azar entre las 12 noticias recientes aptas, sin repetir la última si hay alternativas.
-  const heroCandidates=items.map((item,index)=>({item,index})).filter(({item})=>photoInfo(item)&&!isWeatherForecastOnly(item)).slice(0,12);
+  const heroCandidates=items.map((item,index)=>({item,index})).filter(({item})=>photoInfo(item)&&!isWeatherForecastOnly(item)&&!isStaleTimeSensitiveHeadline(item)).slice(0,12);
   const alternatives=heroCandidates.filter(({item})=>item.url!==last);
   const choices=alternatives.length?alternatives:heroCandidates;
   current=choices.length?choices[Math.floor(Math.random()*choices.length)].index:0;
