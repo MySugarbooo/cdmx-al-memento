@@ -487,24 +487,72 @@ class PhotoRelevanceTests(unittest.TestCase):
                 self.assertLess(_photo_score(article, photo), 0)
 
         article = {
-            "title": "Repartidores protestan por vecino armado y vandalizan caseta en CDMX",
-            "category": "Seguridad", "borough": "",
+            "title": "Repartidores anuncian dos bloqueos estratégicos en CDMX; estas son sus demandas",
+            "category": "Movilidad", "borough": "",
         }
-        protest_photo = {
-            "topic": "Cacerolazo contra la violencia - Ciudad de México - 1",
-            "category": "CDMX", "keywords": ["protesta", "manifestantes"],
+        unrelated_protest = {
+            "id": "unrelated-cacerolazo",
+            "topic": "Cacerolazo contra la violencia - Ciudad de México - 3",
+            "category": "CDMX", "keywords": ["Ángel de la Independencia Ciudad de México"],
         }
-        self.assertGreaterEqual(_photo_score(article, protest_photo), 0)
-        assign_photos([article])
-        self.assertRegex(
-            article["photo"]["topic"].casefold(),
-            r"cacerolazo|marcha por la paz|manifestaci[oó]n",
-        )
-        self.assertEqual(article["photo"]["kind"], "representativa")
-        self.assertTrue(article["photo"].get("author"))
-        self.assertTrue(article["photo"].get("license"))
-        self.assertTrue(article["photo"].get("licenseUrl"))
-        self.assertTrue(article["photo"].get("source"))
+        self.assertLess(_photo_score(article, unrelated_protest), 0)
+        self.assertTrue(news.photo_needs_refresh({**article, "photo": unrelated_protest}))
+        with patch.object(photos, "_pool", return_value=[unrelated_protest]):
+            assign_photos([article])
+        self.assertNotIn("photo", article)
+
+        relevant_delivery = {
+            "topic": "Repartidores de aplicación en movilización",
+            "category": "Movilidad", "keywords": ["conductores de aplicación"],
+        }
+        self.assertGreaterEqual(_photo_score(article, relevant_delivery), 0)
+
+    def test_tianguis_and_care_budget_require_topic_matched_photos(self):
+        cases = [
+            (
+                {
+                    "title": "Cuántos tianguis hay en CDMX: alcaldías y días",
+                    "category": "CDMX", "borough": "",
+                },
+                {
+                    "id": "unrelated-8m",
+                    "topic": "Zócalo de la Ciudad de México durante el 8M, 2019",
+                    "category": "CDMX", "keywords": ["Zócalo Ciudad de México"],
+                },
+            ),
+            (
+                {
+                    "title": "Presupuesto de cuidados 2027: ¿cuánto llegará a la CDMX y cómo se puede comprobar?",
+                    "category": "Gobierno", "borough": "",
+                },
+                {
+                    "id": "unrelated-palacio",
+                    "topic": "Fachada del Palacio Nacional, Ciudad de México 01",
+                    "category": "Gobierno", "keywords": ["Palacio Nacional Ciudad de México"],
+                },
+            ),
+        ]
+        for article, photo in cases:
+            with self.subTest(title=article["title"], topic=photo["topic"]):
+                self.assertLess(_photo_score(article, photo), 0)
+                self.assertTrue(news.photo_needs_refresh({**article, "photo": photo}))
+                with patch.object(photos, "_pool", return_value=[photo]):
+                    assign_photos([article])
+                self.assertNotIn("photo", article)
+
+        relevant_tianguis = {
+            "topic": "Tianguis de la Ciudad de México con puestos de frutas y verduras",
+            "category": "CDMX", "keywords": ["comercio ambulante"],
+        }
+        tianguis_article = cases[0][0]
+        self.assertGreaterEqual(_photo_score(tianguis_article, relevant_tianguis), 0)
+
+        relevant_care = {
+            "topic": "Centro de atención y cuidado infantil en Ciudad de México",
+            "category": "Gobierno", "keywords": ["servicios de cuidado"],
+        }
+        care_article = cases[1][0]
+        self.assertGreaterEqual(_photo_score(care_article, relevant_care), 0)
 
     def test_building_block_is_not_mistaken_for_a_road_blockade(self):
         article = {
