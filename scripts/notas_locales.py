@@ -1127,7 +1127,7 @@ def _pool():
     recent=_load(RECENT_PHOTOS,"photos")
     borough=_load(BOROUGH_PHOTOS,"photos")
     photos=[]
-    # La fototeca ampliada incluye 1,100 fotos con descriptores y créditos.
+    # La fototeca ampliada incluye 1,112 fotos con descriptores y créditos.
     # Buscar por tema es más preciso que asignar la primera imagen de una categoría.
     for item in (_load(TOPIC_PHOTOS,"photos")+_load(NEWS_PHOTOS,"photos")):
         if not isinstance(item,dict):
@@ -1378,9 +1378,11 @@ STRICT_PHOTO_TOPICS = (
     # La electrificación del transporte exige una imagen de un sistema o vehículo de transporte.
     (r"\b(?:transporte(?: publico)?|movilidad)\b.*\b(?:electrico|electrica|electrificacion)\b",
      r"\b(?:trolebus|metrobus|autobus(?:es)?|tren ligero|metro|cablebus|electromovilidad|vehiculos? electricos?)\b"),
-    # La vigilancia y el alumbrado no se ilustran con monumentos sin relación.
-    (r"\b(?:vigilancia|alumbrado|luminarias?|vigilad[oa]s?)\b",
-     r"\b(?:patrullas?|alumbrado|luminarias?|iluminacion|mujeres|apoyos? a mujeres)\b"),
+    # La vigilancia requiere contexto policial; el alumbrado requiere luminarias.
+    (r"\b(?:vigilancia|vigilad[oa]s?)\b",
+     r"\b(?:patrullas?|policias?|camaras? de vigilancia|vigilancia policial|mujeres|apoyos? a mujeres)\b"),
+    (r"\b(?:alumbrado|luminarias?|iluminacion|iluminadas?)\b",
+     r"\b(?:alumbrado|luminarias?|iluminacion|faroles?|postes? de luz)\b"),
     # Un festival de cine requiere una imagen cinematográfica, no un museo genérico.
     (r"\b(?:cine de barrio|festival(?: de)? cine)\b",
      r"\b(?:bosquecinema|cine|cinema|cineclub|cineteca|proyecciones?|peliculas?|filmoteca)\b"),
@@ -1658,9 +1660,21 @@ STRICT_PHOTO_TOPICS = (
     # El Día del Soltero necesita contexto de comercio, compras u ofertas.
     (r"\b(?:dia del soltero|single(?:s)? day)\b",
      r"\b(?:mercados?|compras?|tiendas?|ofertas?|descuentos?|comercio|centros? comerciales?|escaparates?|ventas?)\b"),
-    # La licencia permanente requiere contexto del trámite de conducción, no oficinas genéricas.
-    (r"\b(?:licencia permanente|licencia de conducir|modulos? de licencias?)\b",
-     r"\b(?:licencia(?:s)? de conducir|licencia permanente|modulos? de licencias?|tramite vehicular|semovi|control vehicular|examen de manejo)\b"),
+    # Los trámites de licencias y control vehicular requieren contexto de SEMOVI o conducción.
+    (r"\b(?:licencia permanente|licencia de conducir|modulos? de licencias?|tramites? de licencias?)\b",
+     r"\b(?:licencia(?:s)? de conducir|licencia permanente|modulos? de licencias?|tramite vehicular|semovi|control vehicular|examen de manejo|secretaria de movilidad|oficinas? de la secretaria de movilidad)\b"),
+    # Un ranking de seguridad de una alcaldía no se ilustra con un teatro o monumento.
+    (r"\b(?:alcaldia mas segura|segunda alcaldia mas segura|mas segura de cdmx|ranking de seguridad)\b",
+     r"\b(?:patrullas?|policias?|camaras? de vigilancia|vigilancia policial|seguridad ciudadana)\b"),
+    # La seguridad estructural requiere edificios, inmuebles o reconstrucción.
+    (r"\b(?:seguridad de las construcciones|seguridad estructural|edificios anteriores a 1985|reformas? de construcciones?)\b",
+     r"\b(?:edificios?|construcciones?|inmuebles?|estructuras?|reconstruccion|rehabilitacion|inspecciones? estructurales?)\b"),
+    # Las noticias sobre cadenas de tiendas requieren contexto de comercio minorista.
+    (r"\b(?:tiendas? neto|neto.{0,50}tiendas?|tiendas?.{0,50}neto|cadena de tiendas|sucursales? de neto)\b",
+     r"\b(?:tiendas?|abarrotes|supermercados?|comercio minorista|conveniencia|mercados?|establecimientos? mercantiles?)\b"),
+    # La arquitectura hostil requiere bancas o jardineras diseñadas para impedir el uso.
+    (r"\b(?:arquitectura hostil|bancas? que impiden recostarse|jardineras? con puas)\b",
+     r"\b(?:arquitectura hostil|jardineras? hostiles?|jardineras? con puas|bancas? anti.?descanso|comercio ambulante)\b"),
     # Los clubes de pádel requieren una cancha o equipo deportivo, no una iglesia del barrio.
     (r"\b(?:padel|clubes? de padel)\b",
      r"\b(?:padel|raquetas?|canchas? de padel|tenis|clubes? deportivos?)\b"),
