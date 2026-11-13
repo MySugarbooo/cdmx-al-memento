@@ -80,5 +80,20 @@ class StableHomepageTests(unittest.TestCase):
         self.assertIn("Cache-Control: no-cache, must-revalidate",headers)
         self.assertIn("/index.html",headers)
 
+
+    def test_weather_forecasts_do_not_take_the_lead_story(self):
+        script = read("assets/neo-home.js")
+        self.assertIn("function isWeatherForecastOnly(article)", script)
+        hero = script[script.index("function renderHero()"):script.index("function renderNews()")]
+        self.assertIn("!isWeatherForecastOnly(item)", hero)
+        self.assertIn("return forecastOnly&&!concreteImpact;", script)
+        self.assertIn(r"habr[aá]\s+(?:lluvias|tormenta|chubascos|granizo)", script)
+        self.assertIn(r"activan\s+alerta\s+por\s+(?:lluvias|diluvio|tormenta)", script)
+        # Los avisos de clima permanecen en las últimas noticias; solo se excluyen del destacado.
+        news = script[script.index("function renderNews()"):script.index("function mirrorVisits()")]
+        self.assertIn("const all=state.stories;", news)
+        self.assertNotIn("isWeatherForecastOnly", news)
+        self.assertIn("suspenden|suspende", script)
+
 if __name__ == '__main__':
     unittest.main()
