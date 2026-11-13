@@ -316,7 +316,7 @@ def category_by_headline(title, feed_category, source=""):
     ):
         return "Seguridad"
     # Los conciertos y las noticias sobre cantantes pertenecen a Cultura.
-    if re.search(r"\b(?:conciertos?|cantantes?|cantautores?|gira musical|canciones? ineditas|musica en vivo|teatro metropolitan)\b", normalized):
+    if re.search(r"\b(?:cantantes?|cantautores?|gira musical|canciones? ineditas|musica en vivo|teatro metropolitan)\b", normalized):
         return "Cultura"
     # Las jornadas de adopción son información de la ciudad, no del Metro.
     if re.search(r"\b(?:caravana de adopcion|adopcion de mascotas|perritos? rescatados buscan hogar)\b", normalized):
