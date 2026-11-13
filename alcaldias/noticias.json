@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-13 00:10 UTC",
+  "updated": "2026-11-13 00:28 UTC",
   "boroughs": [
     {
       "name": "La Magdalena Contreras",
@@ -149,7 +149,46 @@
             "license": "CC BY-SA 4.0",
             "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.es",
             "source": "https://commons.wikimedia.org/wiki/File:Plato_de_consom%C3%A9_y_tacos_de_barbacoa.jpg"
-          }
+          },
+          "alternate_versions": [
+            {
+              "title": "¡Feria del Pulque y la Barbacoa! Estas son las actividades en CdMx este fin de semana del 13 al 15 de noviembre",
+              "description": "La 22.ª Feria Regional del Pulque y la Barbacoa se realizará del 13 al 15 de noviembre de 2026, de 8:00 a 19:00 horas, en la explanada de la Alcaldía La Magdalena Contreras, José Moreno Salido s/n, colonia Barranca Seca. El acceso al recinto será gratuito; los alimentos, bebidas y artesanías se pagan por consumo.",
+              "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNVTdiRndlbm9kUzd3N1JkaUJ1eVB4LXdHM3ZkRndnb1NhNElkOTg1Y1RZMHJaOGRucnd5WW9zNVBXWTd6ZXN4a3FobEJqOXhYdXVSQy14YzhaN0wxYkNqdUVjbzVFRWlIZS00R3BqQVl2NnNMekxEOVVOcG5iSjVZVXpWWWJIY1ctdm1OQ2RPU1ZVRDF4WVNRdFd30gGaAUFVX3lxTE1VN2JGd2Vub2RTN3c3UmRpQnV5UHgtd0czdmRGd2dvU2E0SWQ5ODVjVFkwclo4ZG5yd3lZb3M1UFdZN3plc3hrcWhsQmo5eFh1dVJDLXhjOFo3TDFiQ2p1RWNvNUVFaUhlLTRHcGpBWXY2c0x6TEQ5VU5wbmJKNVlVelZZYkhjVy12bU5DZE9TVlVEMXhZU1F0V3c?oc=5",
+              "source": "Telediario",
+              "date": "2026-11-12",
+              "published_at": "2026-11-12T22:09:00Z",
+              "category": "Cultura",
+              "borough": "La Magdalena Contreras",
+              "location": "Explanada de la Alcaldía La Magdalena Contreras, José Moreno Salido s/n, colonia Barranca Seca, Ciudad de México",
+              "local_url": "/noticias/?id=8b3f070e853ef5b87ad0&mes=2026-11",
+              "brief": {
+                "lead": "La 22.ª Feria Regional del Pulque y la Barbacoa se realizará del 13 al 15 de noviembre de 2026, de 8:00 a 19:00 horas, en la explanada de la Alcaldía La Magdalena Contreras, José Moreno Salido s/n, colonia Barranca Seca. El acceso al recinto será gratuito; los alimentos, bebidas y artesanías se pagan por consumo.",
+                "context": "El encuentro reúne barbacoa, pulque natural y curado, antojitos, artesanías y música en vivo. Es una actividad gastronómica y cultural de La Magdalena Contreras.",
+                "pending": "La cartelera musical y la oferta de cada puesto pueden cambiar. Se recomienda confirmar horarios y actividades con la alcaldía antes de acudir; la entrada gratuita no significa que los alimentos o bebidas sean gratuitos.",
+                "method": "Síntesis de datos coincidentes en Infobae, 6 de noviembre de 2026: https://www.infobae.com/mexico/2026/11/06/la-feria-del-pulque-y-la-barbacoa-2026-llegara-a-la-magdalena-contreras-en-cdmx-fechas-horarios-y-como-llegar/ y POSTA México, 6 de noviembre de 2026: https://www.posta.com.mx/cdmx/feria-del-pulque-y-la-barbacoa-2026-fechas-y-entrada-gratis/vl2276243. La imagen, cuando se muestra, es ilustrativa y no corresponde a la feria."
+              },
+              "photo": {
+                "id": "contexto_barbacoa_xochimilco_2026",
+                "kind": "representativa",
+                "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Plato_de_consom%C3%A9_y_tacos_de_barbacoa.jpg/960px-Plato_de_consom%C3%A9_y_tacos_de_barbacoa.jpg",
+                "category": "Cultura",
+                "borough": "",
+                "topic": "Plato de consomé y tacos de barbacoa servido en Xochimilco, Ciudad de México (imagen representativa; no corresponde a la Feria del Pulque y la Barbaco",
+                "keywords": [
+                  "barbacoa",
+                  "tacos de barbacoa",
+                  "consomé",
+                  "gastronomía mexicana",
+                  "feria del pulque y la barbacoa"
+                ],
+                "author": "ProtoplasmaKid",
+                "license": "CC BY-SA 4.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.es",
+                "source": "https://commons.wikimedia.org/wiki/File:Plato_de_consom%C3%A9_y_tacos_de_barbacoa.jpg"
+              }
+            }
+          ]
         },
         {
           "title": "Capturan a cuatro perros de jauría que atacó a dos personas en Magdalena Contreras",
@@ -988,6 +1027,25 @@
             "context": "La actividad cultural abre oportunidades de encuentro, aprendizaje y disfrute para habitantes y visitantes.",
             "pending": "Los accesos, boletos, sedes, cupos y horarios deben consultarse con la institución organizadora. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "contexto_barbacoa_xochimilco_2026",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Plato_de_consom%C3%A9_y_tacos_de_barbacoa.jpg/960px-Plato_de_consom%C3%A9_y_tacos_de_barbacoa.jpg",
+            "category": "Cultura",
+            "borough": "",
+            "topic": "Plato de consomé y tacos de barbacoa servido en Xochimilco, Ciudad de México (imagen representativa; no corresponde a la Feria del Pulque y la Barbaco",
+            "keywords": [
+              "barbacoa",
+              "tacos de barbacoa",
+              "consomé",
+              "gastronomía mexicana",
+              "feria del pulque y la barbacoa"
+            ],
+            "author": "ProtoplasmaKid",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.es",
+            "source": "https://commons.wikimedia.org/wiki/File:Plato_de_consom%C3%A9_y_tacos_de_barbacoa.jpg"
           }
         },
         {
@@ -1115,19 +1173,19 @@
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           },
           "photo": {
-            "id": "commons_152180165",
+            "id": "commons_152180159",
             "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Cosecha_de_Lluvia_05.jpg/960px-Cosecha_de_Lluvia_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Cosecha_de_Lluvia_02.jpg/960px-Cosecha_de_Lluvia_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
             "category": "Medio Ambiente",
             "borough": "",
-            "topic": "Cosecha de Lluvia 05",
+            "topic": "Cosecha de Lluvia 02",
             "keywords": [
               "Lluvia Ciudad de México"
             ],
             "author": "Gobierno de la Ciudad de México",
             "license": "CC BY 4.0",
             "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Cosecha_de_Lluvia_05.jpg"
+            "source": "https://commons.wikimedia.org/wiki/File:Cosecha_de_Lluvia_02.jpg"
           },
           "alternate_versions": [
             {
@@ -1194,6 +1252,39 @@
                 "license": "CC BY-SA 4.0",
                 "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
                 "source": "https://commons.wikimedia.org/wiki/File:Flor_y_%C3%A1rboles_Avenida_%C3%81lvaro_Obreg%C3%B3n,_Ciudad_de_M%C3%A9xico.jpg"
+              }
+            },
+            {
+              "title": "Clara Brugada lanza Casa Ecológica CDMX con calentadores solares gratis en Álvaro Obregón",
+              "description": "De acuerdo con Reporte Indigo, el titular publicado es: «Clara Brugada lanza Casa Ecológica CDMX con calentadores solares gratis en Álvaro Obregón». La información publicada por Reporte Indigo aborda un asunto que este portal clasifica como Gobierno. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+              "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPQ3BfU0x6VlFoRy1WVWlzSC1Qb0p1SlFOTUxSZ0FFR1NUWWwyZWJ2Wjk2NVA1bzFZcTFfSUt4OTBkNEo0MzFHMzVnb2hxUjJEbDlJX0k4ZV9CTDBQYkxhU0h1cHNpcDVJUU9jWDE1VWpJTkFzTEFOdEU2ZTl0c0JhZWxSdU9hZE5FSExBYTZ1ZVhVdkFoQ2J4dlMxdDZaTjd1SHFUejd5djcxS3hYVnFGdEU0MmFtaEpMcl9QbEtlcmRpZzV4TmpXSXUtdTZvU1R1R2w0a3pQbUY5Vms?oc=5",
+              "source": "Reporte Indigo",
+              "date": "2026-11-12",
+              "published_at": "2026-11-12T22:18:02Z",
+              "category": "Gobierno",
+              "borough": "Álvaro Obregón",
+              "location": "Álvaro Obregón (mencionada en el titular)",
+              "local_url": "/noticias/?id=3364b478350242ae22ee&mes=2026-11",
+              "brief": {
+                "lead": "De acuerdo con Reporte Indigo, el titular publicado es: «Clara Brugada lanza Casa Ecológica CDMX con calentadores solares gratis en Álvaro Obregón». La información publicada por Reporte Indigo aborda un asunto que este portal clasifica como Gobierno. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+                "context": "Las decisiones administrativas pueden influir en servicios, trámites y derechos; conviene conocer sus condiciones y a quiénes afectan.",
+                "pending": "Es indispensable consultar los acuerdos, comunicados o documentos oficiales antes de dar una medida por vigente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+              },
+              "photo": {
+                "id": "commons_152180165",
+                "kind": "representativa",
+                "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Cosecha_de_Lluvia_05.jpg/960px-Cosecha_de_Lluvia_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+                "category": "Medio Ambiente",
+                "borough": "",
+                "topic": "Cosecha de Lluvia 05",
+                "keywords": [
+                  "Lluvia Ciudad de México"
+                ],
+                "author": "Gobierno de la Ciudad de México",
+                "license": "CC BY 4.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+                "source": "https://commons.wikimedia.org/wiki/File:Cosecha_de_Lluvia_05.jpg"
               }
             }
           ]
@@ -1986,19 +2077,19 @@
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           },
           "photo": {
-            "id": "commons_24433219",
+            "id": "commons_51894951",
             "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/M%C3%B3dulo_de_EcoBici_Avenida_%C3%81lvaro_Obreg%C3%B3n%2C_Colonia_Roma%2C_Ciudad_de_M%C3%A9xico..jpg/960px-M%C3%B3dulo_de_EcoBici_Avenida_%C3%81lvaro_Obreg%C3%B3n%2C_Colonia_Roma%2C_Ciudad_de_M%C3%A9xico..jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Bicicletas_en_camell%C3%B3n_en_Avenida_%C3%81lvaro_Obreg%C3%B3n%2C_Ciudad_de_M%C3%A9xico.jpg/960px-Bicicletas_en_camell%C3%B3n_en_Avenida_%C3%81lvaro_Obreg%C3%B3n%2C_Ciudad_de_M%C3%A9xico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
             "category": "Alcaldías",
             "borough": "",
-            "topic": "Módulo de EcoBici Avenida Álvaro Obregón, Colonia Roma, Ciudad de México.",
+            "topic": "Bicicletas en camellón en Avenida Álvaro Obregón, Ciudad de México",
             "keywords": [
               "Álvaro Obregón Ciudad de México"
             ],
-            "author": "ProtoplasmaKid",
-            "license": "CC BY-SA 3.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-            "source": "https://commons.wikimedia.org/wiki/File:M%C3%B3dulo_de_EcoBici_Avenida_%C3%81lvaro_Obreg%C3%B3n,_Colonia_Roma,_Ciudad_de_M%C3%A9xico..jpg"
+            "author": "Raul21940",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Bicicletas_en_camell%C3%B3n_en_Avenida_%C3%81lvaro_Obreg%C3%B3n,_Ciudad_de_M%C3%A9xico.jpg"
           }
         },
         {
@@ -2174,19 +2265,19 @@
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           },
           "photo": {
-            "id": "commons_24433218",
+            "id": "commons_43614300",
             "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Avenida_%C3%81lvaro_Obreg%C3%B3n%2C_Colonia_Roma%2C_Ciudad_de_M%C3%A9xico..jpg/960px-Avenida_%C3%81lvaro_Obreg%C3%B3n%2C_Colonia_Roma%2C_Ciudad_de_M%C3%A9xico..jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Fuente_de_cantera_gris%2C_Regina_Escandon%2C_23.sep.15._San_%C3%81ngel%2C_Del._%C3%81lvaro_Obreg%C3%B3n_01000_Ciudad_de_M%C3%A9xico.JPG/960px-Fuente_de_cantera_gris%2C_Regina_Escandon%2C_23.sep.15._San_%C3%81ngel%2C_Del._%C3%81lvaro_Obreg%C3%B3n_01000_Ciudad_de_M%C3%A9xico.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
             "category": "Alcaldías",
             "borough": "",
-            "topic": "Avenida Álvaro Obregón, Colonia Roma, Ciudad de México.",
+            "topic": "Fuente de cantera gris, Regina Escandon, 23.sep.15. San Ángel, Del. Álvaro Obregón 01000 Ciudad de México",
             "keywords": [
               "Álvaro Obregón Ciudad de México"
             ],
-            "author": "ProtoplasmaKid",
-            "license": "CC BY-SA 3.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Avenida_%C3%81lvaro_Obreg%C3%B3n,_Colonia_Roma,_Ciudad_de_M%C3%A9xico..jpg"
+            "author": "Reginaesc",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Fuente_de_cantera_gris,_Regina_Escandon,_23.sep.15._San_%C3%81ngel,_Del._%C3%81lvaro_Obreg%C3%B3n_01000_Ciudad_de_M%C3%A9xico.JPG"
           }
         },
         {
@@ -5344,24 +5435,6 @@
           "borough": "Coyoacán",
           "location": "Coyoacán (mencionada en el titular)",
           "local_url": "/noticias/?id=f5aef6a5096a3917292c&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con CDMX Magacín, el titular publicado es: «Oposición defiende a Rubio y vecinos en Coyoacán». La información publicada por CDMX Magacín aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "alcaldia_coyoacan",
-            "kind": "representativa",
-            "url": "/assets/alcaldias/coyoacan.jpg",
-            "category": "CDMX",
-            "borough": "Coyoacán",
-            "topic": "Jardín Centenario de Coyoacán",
-            "author": "AlejandroLinaresGarcia",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:JardinCentenarioCoyoacan.JPG"
-          },
           "alternate_versions": [
             {
               "title": "Oposición defiende a Rubio y vecinos en Coyoacán",
@@ -5393,7 +5466,25 @@
                 "source": "https://commons.wikimedia.org/wiki/File:JardinCentenarioCoyoacan.JPG"
               }
             }
-          ]
+          ],
+          "brief": {
+            "lead": "De acuerdo con CDMX Magacín, el titular publicado es: «Oposición defiende a Rubio y vecinos en Coyoacán». La información publicada por CDMX Magacín aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_coyoacan",
+            "kind": "representativa",
+            "url": "/assets/alcaldias/coyoacan.jpg",
+            "category": "CDMX",
+            "borough": "Coyoacán",
+            "topic": "Jardín Centenario de Coyoacán",
+            "author": "AlejandroLinaresGarcia",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:JardinCentenarioCoyoacan.JPG"
+          }
         },
         {
           "title": "Burlan seguridad privada para robar en Coyoacán",
@@ -7964,27 +8055,6 @@
           "borough": "Gustavo A. Madero",
           "location": "Gustavo A. Madero, Ciudad de México (Línea 1 del Cablebús)",
           "local_url": "/noticias/?id=c543e45fdfe470aacc15&mes=2026-11",
-          "brief": {
-            "lead": "El titular de N+ informa que, durante la alerta por lluvia fuerte en CDMX, la Línea 1 del Cablebús suspendió el servicio. El índice RSS no precisa la hora ni las estaciones afectadas.",
-            "context": "La Línea 1 conecta Indios Verdes y Cuautepec, en la alcaldía Gustavo A. Madero. La afectación corresponde a la movilidad del norte de la capital.",
-            "pending": "El titular y el índice RSS no indican la hora exacta de suspensión, las estaciones afectadas ni cuándo se reanudó el servicio. El estado operativo debe verificarse en los avisos del Servicio de Transportes Eléctricos antes de viajar.",
-            "method": "Síntesis basada en el titular de N+ y en la ficha oficial del Servicio de Transportes Eléctricos sobre la ruta de Línea 1: https://www.ste.cdmx.gob.mx/cablebus. No equivale a lectura íntegra de la nota ni confirma el estado actual del servicio."
-          },
-          "photo": {
-            "id": "commons_178857482",
-            "kind": "representativa",
-            "url": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Afluencia_Indios_Verdes_Cableb%C3%BAs_%282024%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-            "category": "Movilidad",
-            "borough": "",
-            "topic": "Afluencia Indios Verdes Cablebús (2024)",
-            "keywords": [
-              "Cablebús Ciudad de México"
-            ],
-            "author": "Sistema de Transporte Público Cablebús / Gobierno de la Ciudad de México",
-            "license": "CC BY 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Afluencia_Indios_Verdes_Cableb%C3%BAs_(2024).png"
-          },
           "alternate_versions": [
             {
               "title": "Activan Alerta Amarilla por Lluvia Fuerte en CDMX; Línea 1 del Cablebús Suspende Servicio",
@@ -8025,7 +8095,7 @@
               "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQTlFFSHlwamxZZW95Sm83UnNYQmdyaEtoelJnenVVVHV0QjVRa3lNdlNLU1dKSWRzTWcwR3NhNXA5ZFJZNzY4V0JVRlliVlNLekNxQ05veWdMR1lxUmZ3T0R2dkgwMk51MWRDYS05Rm1obklOTGlfV0tqVHFPRlVSU0JLY3VOSzQ1Q0s2RUI2bjhUVnRnQmMwTEtoN3ZFMnVZRk1rUnJYTDhNdU43c1htcWxfaXhwVkVKTlhSWFRjalJSV2d0RG9COG0ya0N5TGtnVUVLd3ZhdWNtcDR6YWJhZG9za2l5Sk1pZTd1dENvMk1mUQ?oc=5",
               "source": "N+",
               "date": "2026-11-12",
-              "published_at": "2026-11-12T22:41:04Z",
+              "published_at": "2026-11-12T22:38:15Z",
               "category": "Movilidad",
               "borough": "Gustavo A. Madero",
               "location": "Gustavo A. Madero, Ciudad de México (Línea 1 del Cablebús)",
@@ -8035,24 +8105,30 @@
                 "context": "La Línea 1 conecta Indios Verdes y Cuautepec, en la alcaldía Gustavo A. Madero. La afectación corresponde a la movilidad del norte de la capital.",
                 "pending": "El titular y el índice RSS no indican la hora exacta de suspensión, las estaciones afectadas ni cuándo se reanudó el servicio. El estado operativo debe verificarse en los avisos del Servicio de Transportes Eléctricos antes de viajar.",
                 "method": "Síntesis basada en el titular de N+ y en la ficha oficial del Servicio de Transportes Eléctricos sobre la ruta de Línea 1: https://www.ste.cdmx.gob.mx/cablebus. No equivale a lectura íntegra de la nota ni confirma el estado actual del servicio."
-              },
-              "photo": {
-                "id": "commons_178857482",
-                "kind": "representativa",
-                "url": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Afluencia_Indios_Verdes_Cableb%C3%BAs_%282024%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-                "category": "Movilidad",
-                "borough": "",
-                "topic": "Afluencia Indios Verdes Cablebús (2024)",
-                "keywords": [
-                  "Cablebús Ciudad de México"
-                ],
-                "author": "Sistema de Transporte Público Cablebús / Gobierno de la Ciudad de México",
-                "license": "CC BY 4.0",
-                "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-                "source": "https://commons.wikimedia.org/wiki/File:Afluencia_Indios_Verdes_Cableb%C3%BAs_(2024).png"
               }
             }
-          ]
+          ],
+          "brief": {
+            "lead": "El titular de N+ informa que, durante la alerta por lluvia fuerte en CDMX, la Línea 1 del Cablebús suspendió el servicio. El índice RSS no precisa la hora ni las estaciones afectadas.",
+            "context": "La Línea 1 conecta Indios Verdes y Cuautepec, en la alcaldía Gustavo A. Madero. La afectación corresponde a la movilidad del norte de la capital.",
+            "pending": "El titular y el índice RSS no indican la hora exacta de suspensión, las estaciones afectadas ni cuándo se reanudó el servicio. El estado operativo debe verificarse en los avisos del Servicio de Transportes Eléctricos antes de viajar.",
+            "method": "Síntesis basada en el titular de N+ y en la ficha oficial del Servicio de Transportes Eléctricos sobre la ruta de Línea 1: https://www.ste.cdmx.gob.mx/cablebus. No equivale a lectura íntegra de la nota ni confirma el estado actual del servicio."
+          },
+          "photo": {
+            "id": "commons_178857482",
+            "kind": "representativa",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Afluencia_Indios_Verdes_Cableb%C3%BAs_%282024%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+            "category": "Movilidad",
+            "borough": "",
+            "topic": "Afluencia Indios Verdes Cablebús (2024)",
+            "keywords": [
+              "Cablebús Ciudad de México"
+            ],
+            "author": "Sistema de Transporte Público Cablebús / Gobierno de la Ciudad de México",
+            "license": "CC BY 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Afluencia_Indios_Verdes_Cableb%C3%BAs_(2024).png"
+          }
         },
         {
           "title": "Fiscalía CDMX aprehende a un hombre por robo a casa habitación cometido por personas que se hicieron pasar por trabajadores de limpia en Gustavo A. Madero",
@@ -8237,27 +8313,6 @@
           "borough": "Gustavo A. Madero",
           "location": "Gustavo A. Madero (mencionada en el titular)",
           "local_url": "/noticias/?id=601df611fa56794e671c&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con La Jornada, el titular publicado es: «Incendio consumió cuartos de madera en campamento migrante de la colonia Vallejo, alcaldía Gustavo A. Madero». La información publicada por La Jornada aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
-            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "commons_75139327",
-            "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Equipo_de_trabajo_de_los_Bomberos_CDMX_IMG_2999_%2843752819995%29.jpg/960px-Equipo_de_trabajo_de_los_Bomberos_CDMX_IMG_2999_%2843752819995%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "category": "Seguridad",
-            "borough": "",
-            "topic": "Equipo de trabajo de los Bomberos CDMX IMG 2999 (43752819995)",
-            "keywords": [
-              "Bomberos Ciudad de México"
-            ],
-            "author": "Gobierno CDMX",
-            "license": "CC0",
-            "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
-            "source": "https://commons.wikimedia.org/wiki/File:Equipo_de_trabajo_de_los_Bomberos_CDMX_IMG_2999_(43752819995).jpg"
-          },
           "alternate_versions": [
             {
               "title": "Incendio consumió cuartos de madera en campamento migrante de la colonia Vallejo, alcaldía Gustavo A. Madero",
@@ -8325,7 +8380,28 @@
                 "source": "https://commons.wikimedia.org/wiki/File:Equipo_de_trabajo_de_los_Bomberos_CDMX_IMG_2999_(43752819995).jpg"
               }
             }
-          ]
+          ],
+          "brief": {
+            "lead": "De acuerdo con La Jornada, el titular publicado es: «Incendio consumió cuartos de madera en campamento migrante de la colonia Vallejo, alcaldía Gustavo A. Madero». La información publicada por La Jornada aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "commons_75139327",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Equipo_de_trabajo_de_los_Bomberos_CDMX_IMG_2999_%2843752819995%29.jpg/960px-Equipo_de_trabajo_de_los_Bomberos_CDMX_IMG_2999_%2843752819995%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "category": "Seguridad",
+            "borough": "",
+            "topic": "Equipo de trabajo de los Bomberos CDMX IMG 2999 (43752819995)",
+            "keywords": [
+              "Bomberos Ciudad de México"
+            ],
+            "author": "Gobierno CDMX",
+            "license": "CC0",
+            "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+            "source": "https://commons.wikimedia.org/wiki/File:Equipo_de_trabajo_de_los_Bomberos_CDMX_IMG_2999_(43752819995).jpg"
+          }
         },
         {
           "title": "Janecarlo Lozano presenta su segundo informe de gobierno en Gustavo A. Madero",
@@ -11555,6 +11631,36 @@
                 "license": "CC BY-SA 2.0",
                 "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
                 "source": "https://commons.wikimedia.org/wiki/File:Palacio_Nacional_Ciudad_de_M%C3%A9xico_DF.jpg"
+              }
+            },
+            {
+              "title": "Mauricio Tabe presenta su Quinto Informe de Gobierno en Miguel Hidalgo",
+              "description": "De acuerdo con sdpnoticias, el titular publicado es: «Mauricio Tabe presenta su Quinto Informe de Gobierno en Miguel Hidalgo». En su información, sdpnoticias aborda una decisión, declaración o debate relacionado con las instituciones de la ciudad. Conviene distinguir la intención anunciada de las resoluciones que hayan sido aprobadas y publicado oficialmente.",
+              "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNdXhhemVjeGhBRjlvT25FUGl5TlpXSGZlTmFHNk9Ga21zUjA5YTQ0TTBNamUxWWg4czY1NUM3MDg2RFhVUDUwVmNRTy1zQUtEbmd3TnJwYkR3aUpRdjd0czlRek9mY3ZjbGh6bmpVdHFieGZZcHFFUk5zekZZQnNNYVVEQ0ZTMGJQdkt3a1EzQURLS01Sb1FYV1A0NC1iVnFMcmVCeVV5SG1kdDRTNGpRZUp3?oc=5",
+              "source": "sdpnoticias",
+              "date": "2026-11-12",
+              "published_at": "2026-11-12T18:35:37Z",
+              "category": "Gobierno",
+              "borough": "Miguel Hidalgo",
+              "location": "Miguel Hidalgo (mencionada en el titular)",
+              "local_url": "/noticias/?id=842f4c3306f51b3ab9fc&mes=2026-11",
+              "brief": {
+                "lead": "De acuerdo con sdpnoticias, el titular publicado es: «Mauricio Tabe presenta su Quinto Informe de Gobierno en Miguel Hidalgo». En su información, sdpnoticias aborda una decisión, declaración o debate relacionado con las instituciones de la ciudad. Conviene distinguir la intención anunciada de las resoluciones que hayan sido aprobadas y publicado oficialmente.",
+                "context": "Las decisiones administrativas pueden influir en servicios, trámites y derechos; conviene conocer sus condiciones y a quiénes afectan.",
+                "pending": "Es indispensable consultar los acuerdos, comunicados o documentos oficiales antes de dar una medida por vigente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+              },
+              "photo": {
+                "id": "alcaldia_miguel-hidalgo",
+                "kind": "representativa",
+                "url": "/assets/alcaldias/miguel-hidalgo.jpg",
+                "category": "CDMX",
+                "borough": "Miguel Hidalgo",
+                "topic": "Bosque de Chapultepec, alcaldía Miguel Hidalgo",
+                "author": "ProtoplasmaKid",
+                "license": "CC0",
+                "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+                "source": "https://commons.wikimedia.org/wiki/File:Audiorama_de_Chapultepec_1.jpg"
               }
             }
           ]
@@ -15128,8 +15234,27 @@
     },
     {
       "name": "Tlalpan",
-      "count": 215,
+      "count": 216,
       "articles": [
+        {
+          "title": "Rescatan a perrita tras denuncias por presunto abuso y maltrato animal en Tlalpan",
+          "description": "De acuerdo con 24-horas, el titular publicado es: «Rescatan a perrita tras denuncias por presunto abuso y maltrato animal en Tlalpan». La información publicada por 24-horas aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOZjZRVUNpTUVONkpFdEJBRjNQYlpQZkxITUxPTDJpVGJjdnNWeFAxV0FBdlg2bDhQaDlsU2xzX1U2QzBWaXQ4SVhOUWFVWmxCdW5VenJzbndUNTdwQlg2azJPMXRVTGVIcHI1Ty1ONlBwXzJQcHJVeENWUjItLTlrY2lIYXBaSWpXMjZ1SVl6bVJfUnBBVjVYa25KOF9ROEtSc1pwcTduTTBHSmY4ZUpz?oc=5",
+          "source": "24-horas",
+          "date": "2026-11-12",
+          "published_at": "2026-11-13T00:20:17Z",
+          "category": "Seguridad",
+          "borough": "Tlalpan",
+          "location": "Tlalpan (mencionada en el titular)",
+          "local_url": "/noticias/?id=ca68d317c6e108a30b85&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con 24-horas, el titular publicado es: «Rescatan a perrita tras denuncias por presunto abuso y maltrato animal en Tlalpan». La información publicada por 24-horas aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "sensitive_media": true
+        },
         {
           "title": "Motociclista de 22 Años Muere Tras Derrapar y Chocar contra Jardinera en Calzada de Tlalpan",
           "description": "De acuerdo con N+, el titular publicado es: «Motociclista de 22 Años Muere Tras Derrapar y Chocar contra Jardinera en Calzada de Tlalpan». De acuerdo con N+, se informa de un hecho vial relacionado con una motocicleta en Tlalpan. El propio titular señala un fallecimiento, sin que esta ficha agregue cifras ni identidades. Se requiere consultar la nota original para conocer el punto exacto, las circunstancias y los reportes oficiales, sin atribuir responsabilidades sin pruebas.",
@@ -16266,68 +16391,6 @@
             "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
             "source": "https://commons.wikimedia.org/wiki/File:Animales_Bosque_de_Tlalpan_05.JPG"
           }
-        },
-        {
-          "title": "Gaby Osorio transforma bibliotecas de Tlalpan en centros de innovación, cultura y convivencia",
-          "description": "De acuerdo con Reporte Indigo, el titular publicado es: «Gaby Osorio transforma bibliotecas de Tlalpan en centros de innovación, cultura y convivencia». La información publicada por Reporte Indigo aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOSU5kRHdDd1RHaXQtbGk0S1gtVWQ3Y1lHLWtMbUxxejVSMWVFcmxnRnVlSzF2NGhJcGdIMTZPVzZJYXZEZVM1Sk5ndGs3aFFpcGRGX1FmQ0tRd29SdlNPQkQtWEtkLTRYNjhiLWpXRllTOWxYY2RVM3ItQjhlbzBwd2RncmVwX0hlQjk3bGJ2ckJmME4ySHpmZWtFWmg2YmxWM1lqQWpjM0NXQ1BZOHdCbExtOHlaa1k1UUxtYURZLUpIc0ZtY0thcXNEOTN5VFU4cWt5YjFrUmdocHk1QTUw?oc=5",
-          "source": "Reporte Indigo",
-          "date": "2026-11-09",
-          "published_at": "2026-11-09T18:57:21Z",
-          "category": "CDMX",
-          "borough": "Tlalpan",
-          "location": "Tlalpan (mencionada en el titular)",
-          "local_url": "/noticias/?id=5127b6ebf4025a0a2994&mes=2026-11",
-          "alternate_versions": [
-            {
-              "title": "Gaby Osorio transforma bibliotecas de Tlalpan en centros de innovación, cultura y convivencia",
-              "description": "De acuerdo con Reporte Indigo, el titular publicado es: «Gaby Osorio transforma bibliotecas de Tlalpan en centros de innovación, cultura y convivencia». La información publicada por Reporte Indigo aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-              "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOSU5kRHdDd1RHaXQtbGk0S1gtVWQ3Y1lHLWtMbUxxejVSMWVFcmxnRnVlSzF2NGhJcGdIMTZPVzZJYXZEZVM1Sk5ndGs3aFFpcGRGX1FmQ0tRd29SdlNPQkQtWEtkLTRYNjhiLWpXRllTOWxYY2RVM3ItQjhlbzBwd2RncmVwX0hlQjk3bGJ2ckJmME4ySHpmZWtFWmg2YmxWM1lqQWpjM0NXQ1BZOHdCbExtOHlaa1k1UUxtYURZLUpIc0ZtY0thcXNEOTN5VFU4cWt5YjFrUmdocHk1QTUw?oc=5",
-              "source": "Reporte Indigo",
-              "date": "2026-11-09",
-              "published_at": "2026-11-09T18:57:21Z",
-              "category": "CDMX",
-              "borough": "Tlalpan",
-              "location": "Tlalpan (mencionada en el titular)",
-              "local_url": "/noticias/?id=5127b6ebf4025a0a2994&mes=2026-11",
-              "brief": {
-                "lead": "De acuerdo con Reporte Indigo, el titular publicado es: «Gaby Osorio transforma bibliotecas de Tlalpan en centros de innovación, cultura y convivencia». La información publicada por Reporte Indigo aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-                "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-                "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-              },
-              "photo": {
-                "id": "alcaldia_tlalpan",
-                "kind": "representativa",
-                "url": "/assets/alcaldias/tlalpan.jpg",
-                "category": "CDMX",
-                "borough": "Tlalpan",
-                "topic": "Quiosco de la plaza principal de Tlalpan",
-                "author": "farid estrada",
-                "license": "CC BY-SA 3.0",
-                "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-                "source": "https://commons.wikimedia.org/wiki/File:Kiosko_plaza_de_la_constitucion%2C_tlapan.JPG"
-              }
-            }
-          ],
-          "brief": {
-            "lead": "De acuerdo con Reporte Indigo, el titular publicado es: «Gaby Osorio transforma bibliotecas de Tlalpan en centros de innovación, cultura y convivencia». La información publicada por Reporte Indigo aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "alcaldia_tlalpan",
-            "kind": "representativa",
-            "url": "/assets/alcaldias/tlalpan.jpg",
-            "category": "CDMX",
-            "borough": "Tlalpan",
-            "topic": "Quiosco de la plaza principal de Tlalpan",
-            "author": "farid estrada",
-            "license": "CC BY-SA 3.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Kiosko_plaza_de_la_constitucion%2C_tlapan.JPG"
-          }
         }
       ]
     },
@@ -16692,12 +16755,6 @@
           "location": "Venustiano Carranza, Ciudad de México",
           "local_url": "/noticias/?id=0ef061c975ac4b64eed0&mes=2026-11",
           "source_url": "https://www.elgrafico.mx/la-roja/2026/11/12/el-morenito-muere-tras-ser-arrastrado-varios-metros-por-un-trailer-en-venustiano-carranza/?outputType=amp",
-          "brief": {
-            "lead": "El Gráfico informó que un hombre conocido como «El Morenito» murió después de ser atropellado y arrastrado por un tráiler en el cruce de avenida del Taller y Lorenzo Boturini, colonia Lorenzo Boturini, alcaldía Venustiano Carranza. El medio atribuyó al operador un presunto cruce de semáforo en rojo; esa versión se atribuye al reportaje y no se presenta como determinación oficial.",
-            "context": "El hecho ocurrió en Venustiano Carranza y corresponde a un siniestro vial fatal. Se omite la descripción gráfica del accidente y no se atribuye responsabilidad penal.",
-            "pending": "La mecánica del accidente y cualquier responsabilidad deben confirmarse con la FGJCDMX y los informes de tránsito. La versión sobre el semáforo en rojo es la que atribuye El Gráfico al reporte, no una resolución judicial.",
-            "method": "Síntesis editorial basada en la publicación de Tania Aguilar en El Gráfico, 12 de noviembre de 2026: https://www.elgrafico.mx/la-roja/2026/11/12/el-morenito-muere-tras-ser-arrastrado-varios-metros-por-un-trailer-en-venustiano-carranza/?outputType=amp. No constituye verificación independiente."
-          },
           "alternate_versions": [
             {
               "title": "\"El Morenito\" muere tras ser arrastrado varios metros por un tráiler, en Venustiano Carranza",
@@ -16734,6 +16791,12 @@
               }
             }
           ],
+          "brief": {
+            "lead": "El Gráfico informó que un hombre conocido como «El Morenito» murió después de ser atropellado y arrastrado por un tráiler en el cruce de avenida del Taller y Lorenzo Boturini, colonia Lorenzo Boturini, alcaldía Venustiano Carranza. El medio atribuyó al operador un presunto cruce de semáforo en rojo; esa versión se atribuye al reportaje y no se presenta como determinación oficial.",
+            "context": "El hecho ocurrió en Venustiano Carranza y corresponde a un siniestro vial fatal. Se omite la descripción gráfica del accidente y no se atribuye responsabilidad penal.",
+            "pending": "La mecánica del accidente y cualquier responsabilidad deben confirmarse con la FGJCDMX y los informes de tránsito. La versión sobre el semáforo en rojo es la que atribuye El Gráfico al reporte, no una resolución judicial.",
+            "method": "Síntesis editorial basada en la publicación de Tania Aguilar en El Gráfico, 12 de noviembre de 2026: https://www.elgrafico.mx/la-roja/2026/11/12/el-morenito-muere-tras-ser-arrastrado-varios-metros-por-un-trailer-en-venustiano-carranza/?outputType=amp. No constituye verificación independiente."
+          },
           "sensitive_media": true
         },
         {
@@ -17304,7 +17367,7 @@
     },
     {
       "name": "Xochimilco",
-      "count": 185,
+      "count": 186,
       "articles": [
         {
           "title": "Choque entre dos trajineras deja a un hombre herido y moviliza a policías en Xochimilco",
@@ -17367,6 +17430,24 @@
             "license": "CC BY-SA 4.0",
             "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
             "source": "https://commons.wikimedia.org/wiki/File:Coloridas_trajineras_en_Xochimilco,_Ciudad_de_M%C3%A9xico.jpg"
+          }
+        },
+        {
+          "title": "Envenenan más de 30 perros ahora en Xochimilco; vecinos denuncian uso de cebos tóxicos",
+          "description": "De acuerdo con ADN 40, el titular publicado es: «Envenenan más de 30 perros ahora en Xochimilco; vecinos denuncian uso de cebos tóxicos». La información publicada por ADN 40 aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOV3RHZ1ExMG1iZGRmOWJVeXQwbTgzRTNGd3VIazBuMFhtVUxrQjhpZWcwSGF2a1g2WFl4elBfSjUyMDd0NjZDUV9fQzFaSS1iMXZlVElfTGNCNkNCT3lVSkZpWU40N21MSTZ0ZkdpMk1UOHBOcm9JT0ZTUmw1ekxCLVE5MGROUjM5dGh2b2JqYk0wU3cxeV9udXZJOUpmeWllU3N0OTVTaG92NklzaFNNZzVGRXlGQ2V3b0JYNXFPRWFxYms?oc=5",
+          "source": "ADN 40",
+          "date": "2026-11-12",
+          "published_at": "2026-11-12T20:55:17Z",
+          "category": "CDMX",
+          "borough": "Xochimilco",
+          "location": "Xochimilco (mencionada en el titular)",
+          "local_url": "/noticias/?id=e65fc65b55ca497ffced&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con ADN 40, el titular publicado es: «Envenenan más de 30 perros ahora en Xochimilco; vecinos denuncian uso de cebos tóxicos». La información publicada por ADN 40 aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           }
         },
         {
@@ -18417,36 +18498,6 @@
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
-        },
-        {
-          "title": "“El paro nace del hartazgo, no de los Tesla”: estudiantes de la UAM Xochimilco",
-          "description": "De acuerdo con Somoselmedio, el titular publicado es: «“El paro nace del hartazgo, no de los Tesla”: estudiantes de la UAM Xochimilco». La información publicada por Somoselmedio aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9ZWERsRjBRM2ZOSEM3by10a3RKWW42cnhDZjlSYkl5OG54bmcxR1cxRTh0NmZaWEEyOHI0ZFVVX2UzbTlsamwybDB6ZkNSdUtKX3NONWhfMjYxQk4tYTVZUmQ5akxXQXVLT3p0bUl0MV9fSGpnU3c?oc=5",
-          "source": "Somoselmedio",
-          "date": "2026-11-07",
-          "published_at": "2026-11-08T03:09:54Z",
-          "category": "CDMX",
-          "borough": "Xochimilco",
-          "location": "Xochimilco (mencionada en el titular)",
-          "local_url": "/noticias/?id=b92afbda29cd60e6f503&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con Somoselmedio, el titular publicado es: «“El paro nace del hartazgo, no de los Tesla”: estudiantes de la UAM Xochimilco». La información publicada por Somoselmedio aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "alcaldia_xochimilco",
-            "kind": "representativa",
-            "url": "/assets/alcaldias/xochimilco.jpg",
-            "category": "CDMX",
-            "borough": "Xochimilco",
-            "topic": "Trajineras y canales de Xochimilco",
-            "author": "Xbauerx",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Trajineras_de_Xochimilco.jpg"
           }
         }
       ]
