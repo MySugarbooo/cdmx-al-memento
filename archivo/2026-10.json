@@ -1,6 +1,6 @@
 {
   "month": "2026-10",
-  "updated": "2026-11-13 19:37 UTC",
+  "updated": "2026-11-13 20:22 UTC",
   "articles": [
     {
       "title": "Expropiará el gobierno de la CDMX capitalino tres predios para vivienda pública",
@@ -9666,19 +9666,23 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "commons_139480768",
+        "id": "commons_169149220",
         "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Tren_ligero_y_metro_en_la_estaci%C3%B3n_Tasque%C3%B1a_10.jpg/960px-Tren_ligero_y_metro_en_la_estaci%C3%B3n_Tasque%C3%B1a_10.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Candelaria_de_los_Patos_e_inmediaciones_con_dron_08.jpg/960px-Candelaria_de_los_Patos_e_inmediaciones_con_dron_08.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
         "category": "Movilidad",
         "borough": "",
-        "topic": "Tren ligero y metro en la estación Tasqueña 10",
+        "topic": "Fotografía aérea de Avenida H. Congreso de la Unión, Candelaria de los Patos y Centro Histórico; tránsito vehicular (2 de julio de 2025)",
         "keywords": [
-          "Tren ligero Ciudad de México"
+          "Avenida Congreso de la Unión",
+          "Candelaria de los Patos",
+          "Centro Histórico",
+          "tránsito vehicular",
+          "Ciudad de México"
         ],
-        "author": "Luis Alvaz",
+        "author": "ProtoplasmaKid",
         "license": "CC BY-SA 4.0",
         "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Tren_ligero_y_metro_en_la_estaci%C3%B3n_Tasque%C3%B1a_10.jpg"
+        "source": "https://commons.wikimedia.org/wiki/File:Candelaria_de_los_Patos_e_inmediaciones_con_dron_08.jpg"
       }
     },
     {
@@ -9919,16 +9923,24 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "alcaldia_coyoacan",
+        "id": "contexto_trafico_eje_central",
         "kind": "representativa",
-        "url": "/assets/alcaldias/coyoacan.jpg",
-        "category": "CDMX",
-        "borough": "Coyoacán",
-        "topic": "Jardín Centenario de Coyoacán",
-        "author": "AlejandroLinaresGarcia",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:JardinCentenarioCoyoacan.JPG"
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Eje_Central_CDMX.jpg/1280px-Eje_Central_CDMX.jpg",
+        "category": "Movilidad",
+        "borough": "",
+        "topic": "Tráfico vehicular en Eje Central, Ciudad de México (fotografía de 2018)",
+        "keywords": [
+          "tráfico",
+          "vehículos",
+          "automóviles",
+          "movilidad",
+          "hoy no circula",
+          "vialidad"
+        ],
+        "author": "Sergio Estrada Flores",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:Eje_Central_CDMX.jpg"
       }
     },
     {
@@ -10899,16 +10911,19 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "alcaldia_coyoacan",
+        "id": "commons_75043059",
         "kind": "representativa",
-        "url": "/assets/alcaldias/coyoacan.jpg",
-        "category": "CDMX",
-        "borough": "Coyoacán",
-        "topic": "Jardín Centenario de Coyoacán",
-        "author": "AlejandroLinaresGarcia",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:JardinCentenarioCoyoacan.JPG"
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/003041-004_CAMIONES_DE_LIMPIA_FEBRERO_17_1930_%2832497046872%29.jpg/960px-003041-004_CAMIONES_DE_LIMPIA_FEBRERO_17_1930_%2832497046872%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "category": "Servicios",
+        "borough": "",
+        "topic": "003041-004 CAMIONES DE LIMPIA FEBRERO 17 1930 (32497046872)",
+        "keywords": [
+          "Recolección de basura CDMX"
+        ],
+        "author": "Unknown",
+        "license": "CC0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "source": "https://commons.wikimedia.org/wiki/File:003041-004_CAMIONES_DE_LIMPIA_FEBRERO_17_1930_(32497046872).jpg"
       }
     },
     {
@@ -11084,21 +11099,6 @@
         "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
         "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "commons_103707611",
-        "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/MX_MM_COYOAC%C3%81N_-_Mercado.jpg/960px-MX_MM_COYOAC%C3%81N_-_Mercado.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "category": "Alcaldías",
-        "borough": "",
-        "topic": "MX MM COYOACÁN - Mercado",
-        "keywords": [
-          "Coyoacán Ciudad de México"
-        ],
-        "author": "Secretaría de Cultura Ciudad de México",
-        "license": "CC BY 2.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-        "source": "https://commons.wikimedia.org/wiki/File:MX_MM_COYOAC%C3%81N_-_Mercado.jpg"
       }
     },
     {
@@ -11543,16 +11543,24 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "alcaldia_coyoacan",
+        "id": "contexto_trafico_eje_central",
         "kind": "representativa",
-        "url": "/assets/alcaldias/coyoacan.jpg",
-        "category": "CDMX",
-        "borough": "Coyoacán",
-        "topic": "Jardín Centenario de Coyoacán",
-        "author": "AlejandroLinaresGarcia",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:JardinCentenarioCoyoacan.JPG"
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Eje_Central_CDMX.jpg/1280px-Eje_Central_CDMX.jpg",
+        "category": "Movilidad",
+        "borough": "",
+        "topic": "Tráfico vehicular en Eje Central, Ciudad de México (fotografía de 2018)",
+        "keywords": [
+          "tráfico",
+          "vehículos",
+          "automóviles",
+          "movilidad",
+          "hoy no circula",
+          "vialidad"
+        ],
+        "author": "Sergio Estrada Flores",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:Eje_Central_CDMX.jpg"
       }
     },
     {
@@ -11791,19 +11799,24 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "commons_175548202",
+        "id": "contexto_periferico_sur_2015",
         "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Avance_Metrob%C3%BAs_L7_03_01.jpg/960px-Avance_Metrob%C3%BAs_L7_03_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Periferico_sur.JPG/960px-Periferico_sur.JPG?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail&_=20150924185737",
         "category": "Movilidad",
         "borough": "",
-        "topic": "Avance Metrobús L7 03 01",
+        "topic": "Periférico Sur desde Glorieta de Vaqueritos, Tlalpan, CDMX (2015); imagen representativa, no documenta el ataque ni el tramo exacto.",
         "keywords": [
-          "Metrobús Paseo de la Reforma CDMX"
+          "Periférico Sur",
+          "tránsito vehicular",
+          "automovilistas",
+          "vialidad",
+          "Ciudad de México",
+          "Tlalpan"
         ],
-        "author": "Gobierno de la Ciudad de México",
-        "license": "CC BY 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Avance_Metrob%C3%BAs_L7_03_01.jpg"
+        "author": "Victorcinco523",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:Periferico_sur.JPG"
       }
     },
     {
@@ -12404,19 +12417,23 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "commons_89298036",
+        "id": "commons_169149220",
         "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Ciudad_de_M%C3%A9xico_en_cuarentena_1.jpg/960px-Ciudad_de_M%C3%A9xico_en_cuarentena_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "category": "CDMX",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Candelaria_de_los_Patos_e_inmediaciones_con_dron_08.jpg/960px-Candelaria_de_los_Patos_e_inmediaciones_con_dron_08.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "category": "Movilidad",
         "borough": "",
-        "topic": "Ciudad de México en cuarentena 1",
+        "topic": "Fotografía aérea de Avenida H. Congreso de la Unión, Candelaria de los Patos y Centro Histórico; tránsito vehicular (2 de julio de 2025)",
         "keywords": [
-          "Alameda Central Ciudad de México"
+          "Avenida Congreso de la Unión",
+          "Candelaria de los Patos",
+          "Centro Histórico",
+          "tránsito vehicular",
+          "Ciudad de México"
         ],
-        "author": "EneasMx",
+        "author": "ProtoplasmaKid",
         "license": "CC BY-SA 4.0",
         "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Ciudad_de_M%C3%A9xico_en_cuarentena_1.jpg"
+        "source": "https://commons.wikimedia.org/wiki/File:Candelaria_de_los_Patos_e_inmediaciones_con_dron_08.jpg"
       }
     },
     {
@@ -12470,19 +12487,24 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_seguridad_005",
+        "id": "contexto_periferico_sur_2015",
         "kind": "representativa",
-        "url": "/assets/fotos/archivo_seguridad_005.jpg",
-        "category": "Seguridad",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Periferico_sur.JPG/960px-Periferico_sur.JPG?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail&_=20150924185737",
+        "category": "Movilidad",
         "borough": "",
-        "topic": "Jeep policia cdmx",
+        "topic": "Periférico Sur desde Glorieta de Vaqueritos, Tlalpan, CDMX (2015); imagen representativa, no documenta el ataque ni el tramo exacto.",
         "keywords": [
-          "Seguridad"
+          "Periférico Sur",
+          "tránsito vehicular",
+          "automovilistas",
+          "vialidad",
+          "Ciudad de México",
+          "Tlalpan"
         ],
-        "author": "Gobierno de la Ciudad de México",
+        "author": "Victorcinco523",
         "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Jeep_policia_cdmx.jpg"
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:Periferico_sur.JPG"
       }
     },
     {
@@ -12741,19 +12763,19 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "commons_152180165",
+        "id": "commons_75241709",
         "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Cosecha_de_Lluvia_05.jpg/960px-Cosecha_de_Lluvia_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Operativo_Lluvias_-i---i-_%2836936694382%29.jpg/960px-Operativo_Lluvias_-i---i-_%2836936694382%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
         "category": "Medio Ambiente",
         "borough": "",
-        "topic": "Cosecha de Lluvia 05",
+        "topic": "Operativo Lluvias -i---i- (36936694382)",
         "keywords": [
           "Lluvia Ciudad de México"
         ],
-        "author": "Gobierno de la Ciudad de México",
-        "license": "CC BY 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Cosecha_de_Lluvia_05.jpg"
+        "author": "Gobierno CDMX",
+        "license": "CC0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "source": "https://commons.wikimedia.org/wiki/File:Operativo_Lluvias_-i---i-_(36936694382).jpg"
       }
     },
     {
@@ -13048,19 +13070,24 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "commons_154801533",
+        "id": "contexto_trafico_eje_central",
         "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/PARCUR_Colegio_de_Arquitectos_-_L%C3%ADnea_3_del_Cableb%C3%BAs_-_1.jpg/960px-PARCUR_Colegio_de_Arquitectos_-_L%C3%ADnea_3_del_Cableb%C3%BAs_-_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Eje_Central_CDMX.jpg/1280px-Eje_Central_CDMX.jpg",
         "category": "Movilidad",
         "borough": "",
-        "topic": "PARCUR Colegio de Arquitectos - Línea 3 del Cablebús - 1",
+        "topic": "Tráfico vehicular en Eje Central, Ciudad de México (fotografía de 2018)",
         "keywords": [
-          "Cablebús Ciudad de México"
+          "tráfico",
+          "vehículos",
+          "automóviles",
+          "movilidad",
+          "hoy no circula",
+          "vialidad"
         ],
-        "author": "Own work",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:PARCUR_Colegio_de_Arquitectos_-_L%C3%ADnea_3_del_Cableb%C3%BAs_-_1.jpg"
+        "author": "Sergio Estrada Flores",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:Eje_Central_CDMX.jpg"
       }
     },
     {
@@ -13231,19 +13258,24 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "commons_175548202",
+        "id": "contexto_periferico_sur_2015",
         "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Avance_Metrob%C3%BAs_L7_03_01.jpg/960px-Avance_Metrob%C3%BAs_L7_03_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Periferico_sur.JPG/960px-Periferico_sur.JPG?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail&_=20150924185737",
         "category": "Movilidad",
         "borough": "",
-        "topic": "Avance Metrobús L7 03 01",
+        "topic": "Periférico Sur desde Glorieta de Vaqueritos, Tlalpan, CDMX (2015); imagen representativa, no documenta el ataque ni el tramo exacto.",
         "keywords": [
-          "Metrobús Paseo de la Reforma CDMX"
+          "Periférico Sur",
+          "tránsito vehicular",
+          "automovilistas",
+          "vialidad",
+          "Ciudad de México",
+          "Tlalpan"
         ],
-        "author": "Gobierno de la Ciudad de México",
-        "license": "CC BY 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Avance_Metrob%C3%BAs_L7_03_01.jpg"
+        "author": "Victorcinco523",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:Periferico_sur.JPG"
       }
     },
     {
@@ -14042,19 +14074,19 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "commons_152180162",
+        "id": "commons_75241728",
         "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Cosecha_de_Lluvia_04.jpg/960px-Cosecha_de_Lluvia_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Operativo_Lluvias_-i---i-_%2836710775630%29.jpg/960px-Operativo_Lluvias_-i---i-_%2836710775630%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
         "category": "Medio Ambiente",
         "borough": "",
-        "topic": "Cosecha de Lluvia 04",
+        "topic": "Operativo Lluvias -i---i- (36710775630)",
         "keywords": [
           "Lluvia Ciudad de México"
         ],
-        "author": "Gobierno de la Ciudad de México",
-        "license": "CC BY 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Cosecha_de_Lluvia_04.jpg"
+        "author": "Gobierno CDMX",
+        "license": "CC0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "source": "https://commons.wikimedia.org/wiki/File:Operativo_Lluvias_-i---i-_(36710775630).jpg"
       }
     },
     {
@@ -14617,16 +14649,19 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_cdmx_013",
+        "id": "commons_164311379",
         "kind": "representativa",
-        "url": "/assets/fotos/archivo_cdmx_013.jpg",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Casa_Centro_Hist%C3%B3rico_de_la_Ciudad_de_M%C3%A9xico_02.jpg/960px-Casa_Centro_Hist%C3%B3rico_de_la_Ciudad_de_M%C3%A9xico_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
         "category": "CDMX",
         "borough": "",
-        "topic": "D.F. - panoramio (9)",
-        "author": "eurimaco",
-        "license": "CC BY-SA 3.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-        "source": "https://commons.wikimedia.org/wiki/File:D.F._-_panoramio_%289%29.jpg"
+        "topic": "Casa Centro Histórico de la Ciudad de México 02",
+        "keywords": [
+          "Centro Histórico Ciudad de México"
+        ],
+        "author": "Correogsk",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Casa_Centro_Hist%C3%B3rico_de_la_Ciudad_de_M%C3%A9xico_02.jpg"
       }
     },
     {
@@ -15637,19 +15672,19 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "commons_152180163",
+        "id": "commons_75263574",
         "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Cosecha_de_Lluvia_06.jpg/960px-Cosecha_de_Lluvia_06.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Operativo_de_Lluvias_CDMX_-i---i-_%2836298054813%29.jpg/960px-Operativo_de_Lluvias_CDMX_-i---i-_%2836298054813%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
         "category": "Medio Ambiente",
         "borough": "",
-        "topic": "Cosecha de Lluvia 06",
+        "topic": "Operativo de Lluvias CDMX -i---i- (36298054813)",
         "keywords": [
           "Lluvia Ciudad de México"
         ],
-        "author": "Gobierno de la Ciudad de México",
-        "license": "CC BY 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Cosecha_de_Lluvia_06.jpg"
+        "author": "Gobierno CDMX",
+        "license": "CC0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "source": "https://commons.wikimedia.org/wiki/File:Operativo_de_Lluvias_CDMX_-i---i-_(36298054813).jpg"
       }
     },
     {
@@ -16053,19 +16088,24 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "commons_20409538",
+        "id": "contexto_trafico_eje_central",
         "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/EcoBiciCdMexico.jpg/960px-EcoBiciCdMexico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Eje_Central_CDMX.jpg/1280px-Eje_Central_CDMX.jpg",
         "category": "Movilidad",
         "borough": "",
-        "topic": "EcoBiciCdMexico",
+        "topic": "Tráfico vehicular en Eje Central, Ciudad de México (fotografía de 2018)",
         "keywords": [
-          "ECOBICI Ciudad de México"
+          "tráfico",
+          "vehículos",
+          "automóviles",
+          "movilidad",
+          "hoy no circula",
+          "vialidad"
         ],
-        "author": "Luisus Rasilvi",
-        "license": "CC BY-SA 2.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-        "source": "https://commons.wikimedia.org/wiki/File:EcoBiciCdMexico.jpg"
+        "author": "Sergio Estrada Flores",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:Eje_Central_CDMX.jpg"
       }
     },
     {
@@ -17589,16 +17629,6 @@
         "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
         "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "alcaldia_tlalpan",
-        "url": "/assets/alcaldias/tlalpan.jpg",
-        "category": "CDMX",
-        "borough": "Tlalpan",
-        "topic": "Quiosco de la plaza principal de Tlalpan",
-        "author": "farid estrada",
-        "license": "CC BY-SA 3.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Kiosko_plaza_de_la_constitucion%2C_tlapan.JPG"
       }
     },
     {
@@ -19066,14 +19096,24 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_cultura_001",
-        "url": "/assets/fotos/archivo_cultura_001.jpg",
+        "id": "contexto_concierto_palacio_deportes_2009",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/PalaciodelosDeportes_Concierto.jpg/960px-PalaciodelosDeportes_Concierto.jpg",
         "category": "Cultura",
         "borough": "",
-        "topic": "PALACIO DE BELLAS ARTES, CIUDAD DE MEXICO.",
-        "author": "Acuentacuentos",
-        "license": "CC BY-SA 3.0",
-        "source": "https://commons.wikimedia.org/wiki/File:PALACIO_DE_BELLAS_ARTES%2C_CIUDAD_DE_MEXICO..jpg"
+        "topic": "Concierto de Kings of Leon en el Palacio de los Deportes, CDMX (octubre de 2009); foto de archivo representativa, no documenta eventos de la noticia.",
+        "keywords": [
+          "concierto",
+          "música en vivo",
+          "Palacio de los Deportes",
+          "Ciudad de México",
+          "escenario",
+          "público"
+        ],
+        "author": "ProtoplasmaKid",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:PalaciodelosDeportes_Concierto.jpg"
       }
     },
     {
@@ -20544,14 +20584,19 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_cdmx_019",
-        "url": "/assets/fotos/archivo_cdmx_019.jpg",
-        "category": "CDMX",
+        "id": "commons_75263703",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Operativo_de_Lluvias_CDMX_-i---i-_%2836710783420%29.jpg/960px-Operativo_de_Lluvias_CDMX_-i---i-_%2836710783420%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "category": "Medio Ambiente",
         "borough": "",
-        "topic": "El Paraguas (126505121)",
-        "author": "Octavio Alonso Maya Castro",
-        "license": "CC BY-SA 3.0",
-        "source": "https://commons.wikimedia.org/wiki/File:El_Paraguas_%28126505121%29.jpeg"
+        "topic": "Operativo de Lluvias CDMX -i---i- (36710783420)",
+        "keywords": [
+          "Lluvia Ciudad de México"
+        ],
+        "author": "Gobierno CDMX",
+        "license": "CC0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "source": "https://commons.wikimedia.org/wiki/File:Operativo_de_Lluvias_CDMX_-i---i-_(36710783420).jpg"
       }
     },
     {
@@ -20881,19 +20926,19 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "commons_51906804",
+        "id": "commons_75263671",
         "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Plantas_con_gotas_de_lluvia%2C_Ciudad_de_M%C3%A9xico.jpg/960px-Plantas_con_gotas_de_lluvia%2C_Ciudad_de_M%C3%A9xico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Operativo_de_Lluvias_CDMX_-i---i-_%2836294439343%29.jpg/960px-Operativo_de_Lluvias_CDMX_-i---i-_%2836294439343%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
         "category": "Medio Ambiente",
         "borough": "",
-        "topic": "Plantas con gotas de lluvia, Ciudad de México",
+        "topic": "Operativo de Lluvias CDMX -i---i- (36294439343)",
         "keywords": [
           "Lluvia Ciudad de México"
         ],
-        "author": "LEG95",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Plantas_con_gotas_de_lluvia,_Ciudad_de_M%C3%A9xico.jpg"
+        "author": "Gobierno CDMX",
+        "license": "CC0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "source": "https://commons.wikimedia.org/wiki/File:Operativo_de_Lluvias_CDMX_-i---i-_(36294439343).jpg"
       }
     },
     {
@@ -21059,19 +21104,19 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "commons_152180158",
+        "id": "commons_75241743",
         "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Cosecha_de_Lluvia_01.jpg/960px-Cosecha_de_Lluvia_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Operativo_Lluvias_-i---i-_%2836936698522%29.jpg/960px-Operativo_Lluvias_-i---i-_%2836936698522%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
         "category": "Medio Ambiente",
         "borough": "",
-        "topic": "Cosecha de Lluvia 01",
+        "topic": "Operativo Lluvias -i---i- (36936698522)",
         "keywords": [
           "Lluvia Ciudad de México"
         ],
-        "author": "Gobierno de la Ciudad de México",
-        "license": "CC BY 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Cosecha_de_Lluvia_01.jpg"
+        "author": "Gobierno CDMX",
+        "license": "CC0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "source": "https://commons.wikimedia.org/wiki/File:Operativo_Lluvias_-i---i-_(36936698522).jpg"
       }
     },
     {
@@ -21324,19 +21369,19 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "commons_152180163",
+        "id": "commons_75263694",
         "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Cosecha_de_Lluvia_06.jpg/960px-Cosecha_de_Lluvia_06.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Operativo_de_Lluvias_CDMX_-i---i-_%2836298094223%29.jpg/960px-Operativo_de_Lluvias_CDMX_-i---i-_%2836298094223%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
         "category": "Medio Ambiente",
         "borough": "",
-        "topic": "Cosecha de Lluvia 06",
+        "topic": "Operativo de Lluvias CDMX -i---i- (36298094223)",
         "keywords": [
           "Lluvia Ciudad de México"
         ],
-        "author": "Gobierno de la Ciudad de México",
-        "license": "CC BY 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Cosecha_de_Lluvia_06.jpg"
+        "author": "Gobierno CDMX",
+        "license": "CC0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "source": "https://commons.wikimedia.org/wiki/File:Operativo_de_Lluvias_CDMX_-i---i-_(36298094223).jpg"
       }
     },
     {
@@ -21357,16 +21402,24 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "alcaldia_coyoacan",
+        "id": "contexto_trafico_eje_central",
         "kind": "representativa",
-        "url": "/assets/alcaldias/coyoacan.jpg",
-        "category": "CDMX",
-        "borough": "Coyoacán",
-        "topic": "Jardín Centenario de Coyoacán",
-        "author": "AlejandroLinaresGarcia",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:JardinCentenarioCoyoacan.JPG"
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Eje_Central_CDMX.jpg/1280px-Eje_Central_CDMX.jpg",
+        "category": "Movilidad",
+        "borough": "",
+        "topic": "Tráfico vehicular en Eje Central, Ciudad de México (fotografía de 2018)",
+        "keywords": [
+          "tráfico",
+          "vehículos",
+          "automóviles",
+          "movilidad",
+          "hoy no circula",
+          "vialidad"
+        ],
+        "author": "Sergio Estrada Flores",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:Eje_Central_CDMX.jpg"
       }
     },
     {
@@ -21593,19 +21646,19 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "commons_152180162",
+        "id": "commons_75263711",
         "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Cosecha_de_Lluvia_04.jpg/960px-Cosecha_de_Lluvia_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Operativo_de_Lluvias_CDMX_-i---i-_%2836271851424%29.jpg/960px-Operativo_de_Lluvias_CDMX_-i---i-_%2836271851424%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
         "category": "Medio Ambiente",
         "borough": "",
-        "topic": "Cosecha de Lluvia 04",
+        "topic": "Operativo de Lluvias CDMX -i---i- (36271851424)",
         "keywords": [
           "Lluvia Ciudad de México"
         ],
-        "author": "Gobierno de la Ciudad de México",
-        "license": "CC BY 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Cosecha_de_Lluvia_04.jpg"
+        "author": "Gobierno CDMX",
+        "license": "CC0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "source": "https://commons.wikimedia.org/wiki/File:Operativo_de_Lluvias_CDMX_-i---i-_(36271851424).jpg"
       }
     },
     {
@@ -22150,19 +22203,19 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "commons_152180162",
+        "id": "commons_75241776",
         "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Cosecha_de_Lluvia_04.jpg/960px-Cosecha_de_Lluvia_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Operativo_Lluvias_-i---i-_%2836298031503%29.jpg/960px-Operativo_Lluvias_-i---i-_%2836298031503%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
         "category": "Medio Ambiente",
         "borough": "",
-        "topic": "Cosecha de Lluvia 04",
+        "topic": "Operativo Lluvias -i---i- (36298031503)",
         "keywords": [
           "Lluvia Ciudad de México"
         ],
-        "author": "Gobierno de la Ciudad de México",
-        "license": "CC BY 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Cosecha_de_Lluvia_04.jpg"
+        "author": "Gobierno CDMX",
+        "license": "CC0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "source": "https://commons.wikimedia.org/wiki/File:Operativo_Lluvias_-i---i-_(36298031503).jpg"
       }
     },
     {
