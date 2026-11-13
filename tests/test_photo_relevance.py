@@ -1,5 +1,7 @@
 """Previene asignar fotos de patrullas a noticias de ciclismo o tecnología."""
 from copy import deepcopy
+import json
+from pathlib import Path
 import unittest
 from unittest.mock import patch
 
@@ -7,6 +9,8 @@ from scripts.notas_locales import _pool, _photo_category, _photo_score, assign_p
 import update_news as news
 import scripts.notas_locales as photos
 from update_news import category_by_headline
+
+REPO_ROOT = Path(__file__).resolve().parents[1]
 
 def representative_photo(photo_id, category, topic, keywords):
     return {
@@ -31,6 +35,25 @@ class PhotoRelevanceTests(unittest.TestCase):
             "Un robot en el centro de la Ciudad de México", "Seguridad"), "CDMX")
         self.assertEqual(category_by_headline(
             "Policía utiliza robot para investigar un robo", "Seguridad"), "Seguridad")
+
+    def test_shared_concert_photo_caption_is_generic_in_all_catalogs(self):
+        expected = "Concierto de Kings of Leon en el Palacio de los Deportes, CDMX (octubre de 2009); foto de archivo representativa, no documenta eventos de la noticia."
+        relative_paths = (
+            "assets/fotos/contexto-tematico.json",
+            "assets/fotos/indice-noticias-1100.json",
+            "assets/fotos/catalogo-editorial-1100.json",
+        )
+        for relative in relative_paths:
+            with self.subTest(path=relative):
+                data = json.loads((REPO_ROOT / relative).read_text(encoding="utf-8"))
+                photo = next(
+                    (item for item in data.get("photos", [])
+                     if item.get("id") == "contexto_concierto_palacio_deportes_2009"),
+                    None,
+                )
+                self.assertIsNotNone(photo, relative)
+                self.assertEqual(photo.get("topic"), expected)
+                self.assertNotIn("María León", photo.get("topic", ""))
 
     def test_robar_infinitive_classifies_store_robbery_and_rejects_city_landmark(self):
         title = ("2996: En la alcaldía Venustiano Carranza, efectivos de la SSC "
@@ -1720,7 +1743,7 @@ class PhotoRelevanceTests(unittest.TestCase):
         choir["source"] = "https://commons.wikimedia.org/wiki/File:Coro_Catedral_Metropolitana.jpg"
         concert = representative_photo(
             "contexto_concierto_palacio_deportes_2009", "Cultura",
-            "Concierto de Kings of Leon en el Palacio de los Deportes, Ciudad de México (octubre de 2009); imagen representativa, no corresponde a María León.",
+            "Concierto de Kings of Leon en el Palacio de los Deportes, CDMX (octubre de 2009); foto de archivo representativa, no documenta eventos de la noticia.",
             ["concierto", "música en vivo", "Palacio de los Deportes", "Ciudad de México"],
         )
         concert["url"] = "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/PalaciodelosDeportes_Concierto.jpg/960px-PalaciodelosDeportes_Concierto.jpg"
@@ -1759,7 +1782,7 @@ class PhotoRelevanceTests(unittest.TestCase):
         })
         concert = representative_photo(
             "contexto_concierto_palacio_deportes_2009", "Cultura",
-            "Concierto de Kings of Leon en el Palacio de los Deportes, Ciudad de México (octubre de 2009); imagen representativa, no corresponde a María León.",
+            "Concierto de Kings of Leon en el Palacio de los Deportes, CDMX (octubre de 2009); foto de archivo representativa, no documenta eventos de la noticia.",
             ["concierto", "música en vivo", "Palacio de los Deportes", "Ciudad de México"],
         )
         concert["url"] = "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/PalaciodelosDeportes_Concierto.jpg/960px-PalaciodelosDeportes_Concierto.jpg"
@@ -1790,7 +1813,7 @@ class PhotoRelevanceTests(unittest.TestCase):
         })
         existing = representative_photo(
             "contexto_concierto_palacio_deportes_2009", "Cultura",
-            "Concierto de Kings of Leon en el Palacio de los Deportes, Ciudad de México (octubre de 2009); imagen representativa, no corresponde a María León.",
+            "Concierto de Kings of Leon en el Palacio de los Deportes, CDMX (octubre de 2009); foto de archivo representativa, no documenta eventos de la noticia.",
             ["concierto", "música en vivo", "Palacio de los Deportes", "Ciudad de México"],
         )
         existing["url"] = "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/PalaciodelosDeportes_Concierto.jpg/960px-PalaciodelosDeportes_Concierto.jpg"
