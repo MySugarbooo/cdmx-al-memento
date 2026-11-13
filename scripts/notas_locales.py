@@ -2246,7 +2246,7 @@ def _photo_score(article, photo):
 
 
 def assign_photos(items):
-    """Conserva fotos acreditadas pertinentes y solo las sustituye por una mejor."""
+    """Conserva fotos representativas acreditadas del feed salvo que exista una opción mejor."""
     pool = _pool()
     reserved = set()
     verified_catalog = _load(VERIFIED_EVENTS, "photos")
