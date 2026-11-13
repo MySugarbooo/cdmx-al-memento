@@ -1124,7 +1124,7 @@ def homepage_articles(items, reviewed, now, limit=60):
 
 
 def build_homepage_feed(candidates):
-    """Conserva titulares sin foto; la portada filtra los no sensibles sin imagen."""
+    """Conserva titulares válidos y una sola ficha por fuente y enlace local."""
     visible = []
     used_photos = set()
     for article in candidates:
@@ -1177,7 +1177,29 @@ def build_homepage_feed(candidates):
             continue
         visible.append(article)
         used_photos.add(photo_url)
-    return dedupe_homepage_events(visible)
+
+    # Un mismo RSS puede entregar varios titulares para el mismo enlace.
+    # El archivo mensual ya conserva esas variantes; en portada debe existir
+    # una sola ficha y un solo identificador local por noticia. candidates
+    # llega ordenado por fecha descendente, así que se conserva la versión
+    # elegible más reciente sin borrar las variantes históricas.
+    unique_visible = []
+    seen_source_urls = set()
+    seen_local_urls = set()
+    for article in visible:
+        source_url = str(article.get("url") or "").strip()
+        local_url = str(article.get("local_url") or "").strip()
+        if source_url and source_url in seen_source_urls:
+            continue
+        if local_url and local_url in seen_local_urls:
+            continue
+        if source_url:
+            seen_source_urls.add(source_url)
+        if local_url:
+            seen_local_urls.add(local_url)
+        unique_visible.append(article)
+
+    return dedupe_homepage_events(unique_visible)
 
 
 def homepage_fallback_payload(articles, now=None, limit=12):
