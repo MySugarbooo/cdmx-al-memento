@@ -1512,5 +1512,19 @@ class PhotoRelevanceTests(unittest.TestCase):
 
 
 
+    def test_congress_building_is_acceptable_for_plan_general_story(self):
+        article = {
+            "title": "Recibe Congreso capitalino proyecto del Plan General de Desarrollo CDMX 2027-2047",
+            "category": "Gobierno",
+            "url": "https://news.google.com/rss/articles/congress-building-photo-regression",
+        }
+        congress = representative_photo(
+            "palacio_legislativo", "Gobierno",
+            "Palacio Legislativo de Donceles, Congreso de la Ciudad de México",
+            ["Congreso de la Ciudad de México", "Donceles"],
+        )
+        self.assertGreaterEqual(_photo_score(article, congress), 0)
+
+
 if __name__ == "__main__":
     unittest.main()
