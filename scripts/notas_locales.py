@@ -2019,6 +2019,18 @@ def _photo_score(article, photo):
     # Las notas de renta y mercado inmobiliario no se ilustran con monumentos.
     if housing_story and not housing_photo:
         return -10000
+    # La recaudación y el predial requieren contexto de tesorería o finanzas públicas;
+    # un monumento de la ciudad no ilustra una comparación fiscal.
+    tax_story = bool(re.search(
+        r"\\b(?:predial|recaudacion|impuestos?|ingresos tributarios|finanzas publicas)\\b",
+        headline,
+    ))
+    tax_photo = bool(re.search(
+        r"\\b(?:predial|recaudacion|impuestos?|tesoreria|finanzas publicas|ingresos tributarios)\\b",
+        context,
+    ))
+    if tax_story and not tax_photo:
+        return -10000
     themed_category = (
         (photo_category == "Cultura" and music_story and music_photo)
         or (photo_category == "Medio Ambiente" and (
@@ -2029,6 +2041,7 @@ def _photo_score(article, photo):
         or (infrastructure_story and infrastructure_photo)
         or (education_story and education_photo)
         or (housing_story and housing_photo)
+        or (tax_story and tax_photo)
         or (environmental_story and environmental_photo)
         or (eco_story and eco_photo)
     )
@@ -2255,6 +2268,8 @@ def _photo_score(article, photo):
     if environmental_story and environmental_photo:
         score+=180
     if eco_story and eco_photo:
+        score+=180
+    if tax_story and tax_photo:
         score+=180
     return score
 
