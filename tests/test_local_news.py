@@ -881,5 +881,19 @@ class LocalNewsTests(unittest.TestCase):
         self.assertEqual(result["location"], "Miguel Hidalgo (mencionada en el titular)")
 
 
+    def test_editorial_categories_for_current_entertainment_transport_and_civic_headlines(self):
+        cases = (
+            ("Aeropuerto de CDMX informa sobre afectaciones de vuelos desde y hacia EEUU", "Metro", "Movilidad"),
+            ("Pokémon Go genera 420,000 dólares en CDMX y muestra que México es un mercado clave para el juego", "CDMX", "Cultura"),
+            ("Garbage llega al Zócalo de CDMX: Shirley Manson agradece al público mexicano", "Gobierno", "Cultura"),
+            ("Mercados de CDMX recibirán un millón de pesos para mejorar sus instalaciones", "Seguridad", "Gobierno"),
+            ("Prepárate para 4 Marchas que Colapsarán Tráfico en CDMX: A Esta Hora Inician y Puntos de Partida", "Seguridad", "Movilidad"),
+            ("Buen Fin 2026: C5 vigilará plazas y centros comerciales de CDMX con mil 296 cámaras", "CDMX", "Seguridad"),
+        )
+        for title, feed_category, expected in cases:
+            with self.subTest(title=title):
+                self.assertEqual(category_by_headline(title, feed_category, "El Sol de México"), expected)
+
+
 if __name__=="__main__":
     unittest.main()
