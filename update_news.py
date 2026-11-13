@@ -884,6 +884,27 @@ def photo_needs_refresh(item):
     return _photo_score(item, photo) < 0
 
 
+def prioritize_photo_refresh(items, limit=24):
+    """Atiende primero las tres fotografías incongruentes confirmadas en la revisión."""
+    priority_prefixes = (
+        "repartidores anuncian dos bloqueos estrategicos",
+        "presupuesto de cuidados 2027",
+        "cuantos tianguis hay en cdmx",
+    )
+    priority = [
+        item for item in items
+        if any(fold(item.get("title")).startswith(prefix) for prefix in priority_prefixes)
+    ]
+    priority_keys = {item.get("local_url") or item.get("url") for item in priority}
+    recent = [
+        item for item in items
+        if (item.get("local_url") or item.get("url")) not in priority_keys
+    ]
+    priority.sort(key=sort_key, reverse=True)
+    recent.sort(key=sort_key, reverse=True)
+    return (priority + recent)[:max(0, limit)]
+
+
 def consolidate_archive(new_items, cutoff, updated):
     """Deduplica el histórico y elimina incluso archivos mensuales ya vencidos."""
     ARCHIVE_DIR.mkdir(exist_ok=True)
@@ -941,11 +962,9 @@ def consolidate_archive(new_items, cutoff, updated):
     ]
     missing = [item for item in existing.values()
                if not item.get("photo") and not is_sensitive_media(item)]
-    # Priorizar imágenes engañosas y limitar la reparación a 300 por ejecución.
-    # Como máximo 24 son reemplazos; el resto conserva el tratamiento previo.
-    # Atender primero las noticias recientes; el orden de archivos en disco
-    # puede colocar miles de notas antiguas antes de los errores de hoy.
-    refresh = sorted(mismatched, key=sort_key, reverse=True)[:24]
+    # Priorizar las tres discrepancias editoriales confirmadas y conservar
+    # el límite de 24 reemplazos por ejecución; después, atender las más recientes.
+    refresh = prioritize_photo_refresh(mismatched, limit=24)
     batch = refresh + missing[:max(0, 300 - len(refresh))]
     if batch:
         stats = assign_photos(batch)
