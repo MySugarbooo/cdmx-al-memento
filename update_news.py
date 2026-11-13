@@ -1074,6 +1074,33 @@ def dedupe_homepage_events(items):
     return result
 
 
+def merge_recent_previous_feed(items, previous_articles, now, limit=60):
+    """Conserva noticias recientes del último feed publicado ante una caída parcial del RSS."""
+    cutoff = now - timedelta(days=3)
+    combined = {
+        article_key(item): item
+        for item in items
+        if isinstance(item, dict)
+    }
+    previous = previous_articles if isinstance(previous_articles, list) else []
+    for raw in previous:
+        item = standardize(raw)
+        if not item or not local_for_homepage(item):
+            continue
+        published = sort_key(item)
+        if not cutoff <= published <= now + timedelta(minutes=15):
+            continue
+        combined.setdefault(article_key(item), item)
+    merged = sorted(combined.values(), key=sort_key, reverse=True)[:max(0, int(limit))]
+    recovered = max(0, len(merged) - len(items))
+    if recovered:
+        print(
+            "Portada: se conservaron", recovered,
+            "titulares recientes del último feed publicado ante RSS insuficiente."
+        )
+    return merged
+
+
 def homepage_articles(items, reviewed, now, limit=60):
     """Mostrar temporalmente accidentes relevantes cotejados, sin fijarlos para siempre."""
     front = [item for item in items if local_for_homepage(item)][:limit]
@@ -1199,6 +1226,11 @@ def refresh_homepage_fallback(index_path, articles, now=None):
 def update():
     now = datetime.now(timezone.utc)
     cutoff = now - timedelta(days=RETENTION_DAYS)
+    previous_data = load_json(DEST, {"articles": []})
+    previous_articles = (
+        previous_data.get("articles", [])
+        if isinstance(previous_data, dict) else []
+    )
     updated = now.strftime("%Y-%m-%d %H:%M UTC")
     items = gather()
     # Integrar reportes editoriales cotejados con fuentes y resúmenes originales.
@@ -1227,6 +1259,7 @@ def update():
         print("Utilizando solo noticias todavía recientes que ya estaban guardadas.")
     # Unas pocas noticias editoriales no deben ocultar una caída del RSS.
     items = fill_recent_from_archive(items, now)
+    items = merge_recent_previous_feed(items, previous_articles, now)
     picture_stats = assign_photos(items[:60])
     print("Fotografías verificadas para portada:", picture_stats)
     consolidate_archive(items, cutoff, updated)
