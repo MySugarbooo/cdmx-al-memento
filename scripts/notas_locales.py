@@ -62,6 +62,8 @@ EL_GRAFICO_VC_TRAILER_SOURCE_URL = "https://www.elgrafico.mx/la-roja/2026/11/12/
 INFOBAE_BALLET_ZAPATILLA_SOURCE_URL = "https://www.infobae.com/mexico/2026/11/12/funcion-gratis-del-ballet-la-zapatilla-de-cristal-llega-a-cdmx-fecha-y-sede/"
 INFOBAE_PULQUE_BARBACOA_SOURCE_URL = "https://www.infobae.com/mexico/2026/11/06/la-feria-del-pulque-y-la-barbacoa-2026-llegara-a-la-magdalena-contreras-en-cdmx-fechas-horarios-y-como-llegar/"
 POSTA_PULQUE_BARBACOA_SOURCE_URL = "https://www.posta.com.mx/cdmx/feria-del-pulque-y-la-barbacoa-2026-fechas-y-entrada-gratis/vl2276243"
+SDPNOTICIAS_MAURICIO_TABE_REPORT_SOURCE_URL = "https://www.sdpnoticias.com/estados/cdmx/mauricio-tabe-presenta-su-quinto-informe-de-gobierno-en-miguel-hidalgo/"
+LA_PRENSA_MAURICIO_TABE_REPORT_SOURCE_URL = "https://oem.com.mx/la-prensa/metropoli/mauricio-tabe-presenta-su-quinto-informe-presume-avances-en-seguridad-y-cambios-en-miguel-hidalgo-33088214"
 
 
 def is_infobae_ballet_zapatilla(article):
@@ -452,12 +454,53 @@ def _reported_angle(article):
             "El encabezado contiene la referencia específica; sin acceso al cuerpo "
             "de la nota no corresponde agregar circunstancias que podrían ser falsas.")
 
+def is_mauricio_tabe_fifth_report(article):
+    """Identifica el informe de gobierno de Mauricio Tabe publicado el 12/11/2026."""
+    title = _photo_fold(article.get("title"))
+    source = _photo_fold(article.get("source"))
+    return (
+        str(article.get("date") or "") == "2026-11-12"
+        and source == "sdpnoticias"
+        and "mauricio tabe" in title
+        and "quinto informe" in title
+        and "miguel hidalgo" in title
+    )
+
+
 def summarize(article):
     title=str(article.get("title") or "").strip()
     source=str(article.get("source") or "un medio periodístico").strip()
     category=str(article.get("category") or "CDMX")
     theme=TAGS.get(category,TAGS["CDMX"])
     folded_title=_photo_fold(title)
+    if is_mauricio_tabe_fifth_report(article):
+        return {
+            "lead": (
+                "Durante su Quinto Informe de Gobierno en Miguel Hidalgo, Mauricio Tabe dijo "
+                "que la estrategia Blindar MH duplicó el presupuesto de seguridad y triplicó "
+                "la presencia de policías y patrullas. También reportó 1,770 cámaras y la "
+                "reiluminación de 150 calles en un año. Son cifras y resultados expuestos por "
+                "el alcalde, no una verificación independiente."
+            ),
+            "context": (
+                "El balance presentado incluyó seguridad, iluminación, recuperación de parques "
+                "y espacios públicos y programas sociales para mujeres. La cobertura de La Prensa "
+                "también recoge la clausura de una obra en Sócrates 211 por un nivel excedente."
+            ),
+            "pending": (
+                "Las cifras de seguridad, cámaras y calles intervenidas se atribuyen a Mauricio "
+                "Tabe y no se verifican de forma independiente en estas notas. Para confirmarlas "
+                "se requieren los indicadores oficiales, el presupuesto aprobado y los expedientes "
+                "públicos de las obras."
+            ),
+            "method": (
+                "Síntesis basada en la nota de SDP Noticias del 12 de noviembre de 2026: "
+                + SDPNOTICIAS_MAURICIO_TABE_REPORT_SOURCE_URL
+                + " y contraste de cobertura con La Prensa: "
+                + LA_PRENSA_MAURICIO_TABE_REPORT_SOURCE_URL
+                + ". Las cifras se atribuyen al alcalde; no constituyen una auditoría independiente."
+            ),
+        }
     if (re.search(r"\bcablebus\b", folded_title)
             and re.search(r"\blinea 1\b", folded_title)
             and re.search(r"\bsuspend\w*\b", folded_title)
