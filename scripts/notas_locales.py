@@ -1902,7 +1902,7 @@ def _photo_score(article, photo):
     meave_goods_photo = bool(re.search(
         r"\b(?:videojuegos?|consolas?|mercancia apocrifa|pirateria)\b", context
     ))
-    if (category == "Seguridad" and crime_story and not crime_context
+    if (crime_story and not crime_context
             and not (meave_goods_story and meave_goods_photo)):
         return -10000
     # Una graduación policial no representa un robo ni un operativo de vigilancia.
