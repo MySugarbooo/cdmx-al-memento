@@ -725,6 +725,32 @@ def summarize(article):
             ),
         }
     if is_huixtla_migrant_caravan(article):
+        if source.casefold() == "infobae":
+            return {
+                "lead": (
+                    "Infobae informó que la caravana migrante «Dios con nosotros», integrada por cerca "
+                    "de 500 personas según estimaciones citadas por el medio, permaneció en Huixtla, "
+                    "Chiapas, y esperaba a otros integrantes antes de continuar hacia Escuintla y la "
+                    "Ciudad de México. La capital es un destino previsto, no el lugar donde ocurrió la llegada."
+                ),
+                "context": (
+                    "La ubicación del hecho es Huixtla, Chiapas, fuera de CDMX. Infobae señala que el grupo "
+                    "descansó en el barrio Guadalupe y que la ruta prevista continuaría por la carretera "
+                    "costera hacia Escuintla."
+                ),
+                "pending": (
+                    "Las estimaciones variaron durante el recorrido: Infobae citó cerca de 500 personas "
+                    "en Huixtla y señaló que, al sumarse otros contingentes, el total podría acercarse "
+                    "a 1,500. El número y la ruta requieren actualización con autoridades y coberturas "
+                    "posteriores; no se presentan como un conteo oficial."
+                ),
+                "method": (
+                    "Síntesis editorial basada en la publicación de Infobae del 13 de noviembre de 2026, "
+                    "que atribuye las estimaciones a diarios locales y cita coberturas de Diario de Chiapas "
+                    "y Diario del Sur. No equivale a verificación independiente del número de personas "
+                    "ni de su itinerario."
+                ),
+            }
         return {
             "lead": (
                 "El Financiero reportó que la caravana migrante «Dios con nosotros» llegó a Huixtla, "
