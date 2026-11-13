@@ -1207,6 +1207,50 @@ class PhotoRelevanceTests(unittest.TestCase):
         self.assertEqual(article["photo"]["license"], "CC BY-SA 4.0")
         self.assertEqual(stats["assigned"], 1)
 
+    def test_generic_march_does_not_use_delivery_photo_disclaimer_as_protest_context(self):
+        title = "Viernes 13 de quincena, marchas y bloqueos en CdMx: consulta las alcaldías afectadas"
+        article = news.standardize({
+            "title": title,
+            "url": "https://news.google.com/rss/articles/generic-march-photo-regression",
+            "source": "Sin Embargo",
+            "date": "2026-11-13",
+            "category": "Movilidad",
+        })
+        pool = _pool()
+        courier = next(
+            photo for photo in pool
+            if photo.get("id") == "contexto_repartidores_motocicleta_cdmx"
+        )
+        motorcycle = next(
+            photo for photo in pool
+            if photo.get("id") == "contexto_motocicleta_zocalo_brigada_2017"
+        )
+        traffic = next(
+            photo for photo in pool
+            if photo.get("id") == "contexto_trafico_eje_central"
+        )
+        disclaimer_only = representative_photo(
+            "negative_disclaimer_only",
+            "Cultura",
+            "Retrato urbano de archivo; imagen representativa, no corresponde a una marcha",
+            ["retrato", "archivo"],
+        )
+
+        self.assertLess(_photo_score(article, courier), 0)
+        self.assertLess(_photo_score(article, motorcycle), 0)
+        self.assertLess(_photo_score(article, disclaimer_only), 0)
+        self.assertGreaterEqual(_photo_score(article, traffic), 0)
+
+        with patch.object(
+            photos, "_pool", return_value=[courier, motorcycle, disclaimer_only, traffic]
+        ), patch.object(photos, "_load", return_value=[]):
+            stats = assign_photos([article])
+
+        self.assertEqual(article["photo"]["id"], "contexto_trafico_eje_central")
+        self.assertEqual(article["photo"]["author"], traffic["author"])
+        self.assertEqual(article["photo"]["license"], traffic["license"])
+        self.assertEqual(stats["assigned"], 1)
+
     def test_kidnapping_story_rejects_traffic_light_police_photo_and_uses_patrol_context(self):
         title = "Policías de la CDMX rescataron a un hombre secuestrado en La Merced al detener a tres sujetos con armas y droga"
         traffic = {
