@@ -2043,17 +2043,28 @@ class PhotoRelevanceTests(unittest.TestCase):
              "CDMX", "Plaza de la Constitución (Zócalo) tras un día lluvioso"),
             ("Hasta 35 km/h de rachas en alcaldías de la CDMX este miércoles 11 de noviembre",
              "CDMX", "Zócalo de la Ciudad de México, México"),
+            ("Madres de familia denuncian falta de infraestructura en primarias de Coyoacán: exigen domos y mantenimiento",
+             "Metro", "Estación Coyoacán de la Línea 3 del Metro de la Ciudad de México 01"),
+            ("Mckenna Grace de Los juegos del hambre recuerda a su familia mexicana y canta Pimpón en CDMX",
+             "CDMX", "Cineteca Nacional Bodega de Arte - Línea 3 del Cablebús - 1"),
+            ("Joseph Zada y Mckenna Grace desatan la emoción en CDMX durante la alfombra de Los Juegos del Hambre",
+             "CDMX", "Zócalo de la Ciudad de México durante el 8M, 2019"),
+            ("Proponen en el Congreso CDMX sancionar a empresas que no entreguen medicamentos a tiempo",
+             "CDMX", "Fotografía aérea de Avenida H. Congreso de la Unión, Candelaria de los Patos y Centro Histórico; tránsito vehicular"),
+            ("Congreso de Cdmx condena violencia en foro metropolitano",
+             "CDMX", "Palacio Nacional Ciudad de México City DF"),
+            ("Accidente en Circuito Interior Hoy: Caos Vial por Choque de Tráiler en CDMX",
+             "Movilidad", "003041-004 CAMIONES DE LIMPIA FEBRERO 17 1930 (32497046872)"),
         ]
         for index, (title, category, topic) in enumerate(cases):
             photo_category = "Gobierno" if "Palacio Nacional" in topic or "Tesorería" in topic else category
             photo = representative_photo(
                 f"bad_portada_photo_{index}", photo_category, topic, ["Ciudad de México"]
             )
+            article = {"title": title, "category": category, "borough": ""}
             with self.subTest(title=title):
-                self.assertLess(
-                    _photo_score({"title": title, "category": category, "borough": ""}, photo),
-                    0,
-                )
+                self.assertLess(_photo_score(article, photo), 0)
+                self.assertTrue(news.photo_needs_refresh({**article, "photo": photo}))
 
     def test_november_13_relevant_representative_photos_remain_eligible(self):
         housing = representative_photo(
