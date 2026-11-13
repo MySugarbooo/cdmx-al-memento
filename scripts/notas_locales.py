@@ -1674,17 +1674,30 @@ def _photo_score(article, photo):
         "activa", headline,
     )
     topic=_photo_fold(photo.get("topic"))
+    # Las advertencias negativas no describen el tema de la imagen:
+    # "no del bloqueo actual" no convierte una foto de reparto en foto de protesta.
+    topic=re.sub(r"\bno\b[^;.)]*", "", topic)
     keywords=_photo_fold(" ".join(str(x) for x in photo.get("keywords",[])))
     context=topic+" "+keywords
     # Una noticia sobre repartidores exige una imagen de repartidores o mensajeros;
     # una protesta distinta no es contexto suficiente.
     delivery_story = bool(re.search(
-        r"\b(?:repartidores?|conductores? de aplicacion)\b", headline
+        r"\b(?:repartidores?|conductores? de aplicacion|mensajeros?|carteros?|servicio postal mexicano|reparto de paqueteria|delivery riders?)\b",
+        headline,
     ))
     delivery_photo = bool(re.search(
-        r"\b(?:repartidores?|conductores? de aplicacion|mensajeros?|reparto de paqueteria|delivery riders?)\b",
+        r"\b(?:repartidores?|conductores? de aplicacion|mensajeros?|carteros?|servicio postal mexicano|reparto de paqueteria|delivery riders?)\b",
         context,
     ))
+    motorcycle_story = bool(re.search(
+        r"\b(?:motocicletas?|motociclistas?|motos?)\b", headline
+    ))
+    if (photo.get("id") == "contexto_repartidores_motocicleta_cdmx"
+            and not delivery_story):
+        return -10000
+    if (photo.get("id") == "contexto_motocicleta_zocalo_brigada_2017"
+            and not motorcycle_story):
+        return -10000
     delivery_security_story = bool(re.search(
         r"\b(?:ataques? armados?|arma|armado|amenaz\w*|vandaliz\w*|robo|asalto|agresion|homicidio|balacera)\b",
         headline,
