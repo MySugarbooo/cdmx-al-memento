@@ -1771,7 +1771,7 @@ class PhotoRelevanceTests(unittest.TestCase):
         )
         self.assertIsNotNone(maria.get("photo"))
         self.assertGreaterEqual(_photo_score(maria, maria["photo"]), 0)
-        self.assertNotIn("danza del fuego", photos._photo_fold(maria["photo"].get("topic", "")))
+        self.assertRegex(photos._photo_fold(maria["photo"].get("topic", "")), r"\b(concierto|palacio de los deportes|auditorio|teatro metropolitan)\b")
         self.assertGreater(stats["unique"], 0)
 
 if __name__ == "__main__":
