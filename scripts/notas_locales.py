@@ -1984,7 +1984,11 @@ def _photo_score(article, photo):
         context,
     ))
     # Un autódromo no es contexto para un choque de tránsito en una avenida.
-    if road_incident_story and motorsport_photo:
+    motorsport_story = bool(re.search(
+        r"\b(?:formula 1|f1|gran premio|gp de mexico|autodromo|automovilismo|bottas|verstappen|hamilton|antonelli|checo|alonso|nascar)\b",
+        headline,
+    ))
+    if road_incident_story and motorsport_photo and not motorsport_story:
         return -10000
     if lgbt_story and not lgbt_photo:
         return -10000
@@ -2094,6 +2098,8 @@ def _photo_score(article, photo):
     # para la pertinencia visual se prioriza el hecho principal antes de los dos puntos.
     gas_emergency = bool(re.search(STRICT_PHOTO_TOPICS[0][0], headline_for_photos))
     strict_headline = _photo_fold(raw_headline.split(":", 1)[0]) if gas_emergency else headline_for_photos
+    # «Bosques al asfalto» es una metáfora sobre fauna urbana, no pavimentación.
+    strict_headline = re.sub(r"\bbosques al asfalto\b", "bosques", strict_headline)
     # Una noticia sobre carretera en Guerrero puede usar una foto contextual de esa misma región,
     # aunque el titular también mencione protestas en CDMX. No es una foto del proyecto anunciado.
     guerrero_road_story = bool(
