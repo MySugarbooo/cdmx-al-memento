@@ -1179,7 +1179,7 @@ SUBJECT_RULES = (
      r"marcha|bloqueo|trafico|carretera|movilidad|vialidad|"
      r"gran premio|formula 1|autodromo|circuito|automovili)\w*\b", "Movilidad"),
     (r"\b(?:policia|patrulla|fiscalia|robo|homicidio|detenid|"
-     r"asalto|extorsion|delito|investigacion)\w*\b", "Seguridad"),
+     r"asalto|extorsion|delito|investigacion|golpe|agred)\w*\b", "Seguridad"),
     (r"\b(?:alcalde|gobierno|congreso|presupuesto|secretaria)\w*\b", "Gobierno"),
 )
 STOP_WORDS = {
@@ -2061,7 +2061,7 @@ def _photo_score(article, photo):
         headline,
     ))
     planning_photo = bool(re.search(
-        r"\b(?:plan general de desarrollo|planeacion urbana|ordenamiento territorial|desarrollo urbano|uso de suelo|banco de suelo|cartografia|mapa urbano)\b",
+        r"\b(?:plan general de desarrollo|planeacion urbana|ordenamiento territorial|desarrollo urbano|uso de suelo|banco de suelo|cartografia|mapa urbano|palacio legislativo|congreso de la ciudad de mexico|congreso local|asamblea legislativa|recinto legislativo|camara de diputados)\b",
         context,
     ))
     if planning_story and not planning_photo:
@@ -2321,7 +2321,7 @@ def _photo_score(article, photo):
         if wanted_lines and shown_lines and not wanted_lines.intersection(shown_lines):
             return -10000
     borough=_photo_fold(article.get("borough"))
-    score=0
+    score=65 if photo_category==category and category!="CDMX" else (12 if photo_category=="CDMX" and category!="CDMX" else 0)
     cinema_story=bool(re.search(r"\b(?:cine de barrio|festival(?: de)? cine)\b",headline))
     cinema_photo=bool(re.search(
         r"\b(?:bosquecinema|cine|cinema|cineclub|cineteca|proyecciones?|peliculas?|filmoteca)\b",
@@ -2329,6 +2329,8 @@ def _photo_score(article, photo):
     ))
     if cinema_story and cinema_photo:
         score += 120
+    if animal_story and animal_photo:
+        score += 180
     if delivery_story and delivery_photo:
         score += 120
     if tax_story and tax_photo:
