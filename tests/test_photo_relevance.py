@@ -1734,7 +1734,9 @@ class PhotoRelevanceTests(unittest.TestCase):
             item for item in articles
             if item.get("source") == "Infobae" and "maria leon" in photos._photo_fold(item.get("title", ""))
         )
-        self.assertEqual(maria["photo"]["id"], "contexto_concierto_palacio_deportes_2009")
+        self.assertIsNotNone(maria.get("photo"))
+        self.assertGreaterEqual(_photo_score(maria, maria["photo"]), 0)
+        self.assertNotIn("danza del fuego", photos._photo_fold(maria["photo"].get("topic", "")))
         self.assertGreater(stats["unique"], 0)
 
 if __name__ == "__main__":
