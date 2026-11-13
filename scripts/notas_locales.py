@@ -2253,13 +2253,18 @@ def assign_photos(items):
     exact_count = 0
 
     def has_complete_credit(photo):
+        if not isinstance(photo, dict) or photo.get("kind") != "representativa":
+            return False
+        photo_url = str(photo.get("url") or "").strip()
         return (
-            isinstance(photo, dict)
-            and photo.get("kind") == "representativa"
+            bool(photo_url)
+            and (
+                photo_url.startswith(("https://", "http://"))
+                or photo_url.startswith("/assets/fotos/")
+            )
             and all(str(photo.get(key) or "").strip() for key in (
-                "url", "source", "author", "license", "licenseUrl"
+                "source", "author", "license", "licenseUrl"
             ))
-            and str(photo.get("url") or "").startswith(("https://", "http://"))
             and str(photo.get("source") or "").startswith(("https://", "http://"))
             and str(photo.get("licenseUrl") or "").startswith(("https://", "http://"))
         )
