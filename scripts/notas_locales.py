@@ -1596,6 +1596,19 @@ def _photo_score(article, photo):
     topic=_photo_fold(photo.get("topic"))
     keywords=_photo_fold(" ".join(str(x) for x in photo.get("keywords",[])))
     context=topic+" "+keywords
+    # Las noticias sobre Profeco y atención al consumidor requieren una imagen
+    # del mismo servicio; una protesta ajena no es contexto editorial suficiente.
+    profeco_story = bool(re.search(
+        r"\b(?:profeco|proteccion al consumidor|modulos? de atencion|modulos? de quejas)\b",
+        headline,
+    ))
+    profeco_photo = bool(re.search(
+        r"\b(?:profeco|proteccion al consumidor|atencion al consumidor|"
+        r"modulos? de (?:atencion|quejas)|quejas? de consumo|consumidores?)\b",
+        context,
+    ))
+    if profeco_story and not profeco_photo:
+        return -10000
     # No cruzar fotografías de una línea del Cablebús con otra.
     cablebus_story_line = (
         re.search(r"\blinea\s+([123])\b", headline)

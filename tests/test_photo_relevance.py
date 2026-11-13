@@ -1497,7 +1497,7 @@ class PhotoRelevanceTests(unittest.TestCase):
             photos.ROOT / "assets/fotos/catalogo-editorial-1100.json", "photos"
         )}
         context = {p["id"]: p for p in photos._load(photos.TOPIC_PHOTOS, "photos")}
-        for photo_id in ("commons_51892797", "commons_51894949", "commons_24433238"):
+        for photo_id in ("commons_51892797", "commons_51894949", "commons_24433238", "commons_175612248"):
             for catalog in (index, editorial):
                 item = catalog[photo_id]
                 self.assertIn("Cuauhtémoc", " ".join(item["keywords"]))
@@ -1555,6 +1555,54 @@ class PhotoRelevanceTests(unittest.TestCase):
         ):
             assign_photos([article])
         self.assertEqual(article["photo"]["id"], "cosecha_lluvia_05")
+
+
+    def test_profeco_service_story_rejects_unrelated_cacerolazo_photo(self):
+        article = news.standardize({
+            "title": "Ubicación de módulos de Profeco en CDMX para quejas en El Buen Fin",
+            "url": "https://news.google.com/rss/articles/profeco-photo-regression",
+            "source": "El Sol de México",
+            "date": "2026-11-12",
+            "category": "CDMX",
+        })
+        cacerolazo = representative_photo(
+            "cacerolazo_contra_violencia",
+            "CDMX",
+            "Cacerolazo contra la violencia - Ciudad de México - 2",
+            ["Ángel de la Independencia Ciudad de México"],
+        )
+        consumer_service = representative_photo(
+            "profeco_modules",
+            "CDMX",
+            "Módulos de atención de Profeco para quejas de consumidores",
+            ["Profeco", "atención al consumidor", "El Buen Fin"],
+        )
+        self.assertLess(_photo_score(article, cacerolazo), 0)
+        self.assertGreaterEqual(_photo_score(article, consumer_service), 0)
+        with patch.object(photos, "_pool", return_value=[cacerolazo]), patch.object(
+            photos, "_load", return_value=[]
+        ):
+            assign_photos([article])
+        self.assertNotIn("photo", article)
+
+    def test_trolleybus_photo_in_cuauhtemoc_is_rejected_for_vc_pickup_crash(self):
+        article = news.standardize({
+            "title": "Accidente en Canal del Norte: Camioneta Choca y Termina Destrozada en Venustiano Carranza",
+            "url": "https://news.google.com/rss/articles/canal-del-norte-photo-regression",
+            "source": "N+",
+            "date": "2026-11-12",
+            "category": "Movilidad",
+        })
+        index = {p["id"]: p for p in photos._load(photos.NEWS_PHOTOS, "photos")}
+        trolleybus = index["commons_175612248"]
+        self.assertEqual(article["borough"], "Venustiano Carranza")
+        self.assertIn("Cuauhtémoc", " ".join(trolleybus["keywords"]))
+        self.assertLess(_photo_score(article, trolleybus), 0)
+        with patch.object(photos, "_pool", return_value=[trolleybus]), patch.object(
+            photos, "_load", return_value=[]
+        ):
+            assign_photos([article])
+        self.assertNotIn("photo", article)
 
 if __name__ == "__main__":
     unittest.main()
