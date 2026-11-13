@@ -1673,13 +1673,21 @@ class PhotoRelevanceTests(unittest.TestCase):
             ["Danza del Fuego", "Museo Nacional de Antropología", "danza"],
         )
         dance["source"] = "https://commons.wikimedia.org/wiki/File:Danza_del_Fuego.jpg"
+        choir = representative_photo(
+            "unrelated_cathedral_choir", "Cultura",
+            "Coro de la Catedral metropolitana de la Ciudad de México 01",
+            ["coro", "Catedral metropolitana", "música", "Ciudad de México"],
+        )
+        choir["source"] = "https://commons.wikimedia.org/wiki/File:Coro_Catedral_Metropolitana.jpg"
         concert = representative_photo(
             "contexto_concierto_palacio_deportes_2009", "Cultura",
             "Concierto de Kings of Leon en el Palacio de los Deportes, Ciudad de México (octubre de 2009); imagen representativa, no corresponde a María León.",
             ["concierto", "música en vivo", "Palacio de los Deportes", "Ciudad de México"],
         )
+        concert["url"] = "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/PalaciodelosDeportes_Concierto.jpg/960px-PalaciodelosDeportes_Concierto.jpg"
         concert["source"] = "https://commons.wikimedia.org/wiki/File:PalaciodelosDeportes_Concierto.jpg"
         self.assertLess(_photo_score(article, dance), 0)
+        self.assertLess(_photo_score(article, choir), 0)
         self.assertGreaterEqual(_photo_score(article, concert), 0)
         self.assertTrue(news.photo_needs_refresh({**article, "photo": dance}))
         article["photo"] = dance
@@ -1689,6 +1697,46 @@ class PhotoRelevanceTests(unittest.TestCase):
             assign_photos([article])
         self.assertEqual(article["photo"]["id"], "contexto_concierto_palacio_deportes_2009")
 
+
+
+    def test_assign_photos_reuses_relevant_reserved_concert_photo_when_other_pool_items_do_not_match(self):
+        title = ("María León presentó su nueva “Era de Villana” en el Teatro Metropólitan "
+                 "de la CDMX: entre invitados, nostalgia y canciones inéditas")
+        first = news.standardize({
+            "title": title,
+            "url": "https://news.google.com/rss/articles/maria-leon-first-photo",
+            "source": "Infobae",
+            "date": "2026-11-13",
+            "published_at": "2026-11-13T07:53:32Z",
+            "category": "CDMX",
+        })
+        second = news.standardize({
+            "title": title,
+            "url": "https://news.google.com/rss/articles/maria-leon-second-photo",
+            "source": "Infobae",
+            "date": "2026-11-13",
+            "published_at": "2026-11-13T07:53:32Z",
+            "category": "CDMX",
+        })
+        concert = representative_photo(
+            "contexto_concierto_palacio_deportes_2009", "Cultura",
+            "Concierto de Kings of Leon en el Palacio de los Deportes, Ciudad de México (octubre de 2009); imagen representativa, no corresponde a María León.",
+            ["concierto", "música en vivo", "Palacio de los Deportes", "Ciudad de México"],
+        )
+        concert["url"] = "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/PalaciodelosDeportes_Concierto.jpg/960px-PalaciodelosDeportes_Concierto.jpg"
+        concert["source"] = "https://commons.wikimedia.org/wiki/File:PalaciodelosDeportes_Concierto.jpg"
+        choir = representative_photo(
+            "unrelated_cathedral_choir", "Cultura",
+            "Coro de la Catedral metropolitana de la Ciudad de México 01",
+            ["coro", "Catedral metropolitana", "música", "Ciudad de México"],
+        )
+        choir["source"] = "https://commons.wikimedia.org/wiki/File:Coro_Catedral_Metropolitana.jpg"
+        with patch.object(photos, "_pool", return_value=[concert, choir]), patch.object(
+            photos, "_load", return_value=[]
+        ):
+            assign_photos([first, second])
+        self.assertEqual(first["photo"]["id"], concert["id"])
+        self.assertEqual(second["photo"]["id"], concert["id"])
 
     def test_assign_photos_preserves_credited_relevant_photo_when_pool_has_no_match(self):
         title = ("María León presentó su nueva “Era de Villana” en el Teatro Metropólitan "
@@ -1771,7 +1819,7 @@ class PhotoRelevanceTests(unittest.TestCase):
         )
         self.assertIsNotNone(maria.get("photo"))
         self.assertGreaterEqual(_photo_score(maria, maria["photo"]), 0)
-        self.assertNotIn("danza del fuego", photos._photo_fold(maria["photo"].get("topic", "")))
+        self.assertRegex(photos._photo_fold(maria["photo"].get("topic", "")), r"\b(concierto|palacio de los deportes|auditorio|teatro metropolitan)\b")
         self.assertGreater(stats["unique"], 0)
 
 if __name__ == "__main__":
