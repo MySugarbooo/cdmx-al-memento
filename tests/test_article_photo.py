@@ -36,6 +36,34 @@ class ArticlePhotoTests(unittest.TestCase):
         page = render(item, "69e99bd8aec5a3438db7")
         self.assertIn("<p>Gustavo A. Madero, Ciudad de México (Línea 1 del Cablebús) · 2026-11-01", page)
 
+    def test_verified_infobae_source_url_is_clickable(self):
+        source_url = (
+            "https://www.infobae.com/mexico/2026/11/13/"
+            "maria-leon-presento-su-nueva-era-de-villana-en-el-teatro-metropolitan-"
+            "de-la-cdmx-entre-invitados-nostalgia-y-canciones-ineditas/"
+        )
+        item = {
+            "title": "María León presentó su nueva “Era de Villana” en el Teatro Metropólitan de la CDMX",
+            "source": "Infobae",
+            "source_url": source_url,
+            "url": "https://news.google.com/rss/articles/example?oc=5",
+            "date": "2026-11-13",
+            "published_at": "2026-11-13T07:53:32Z",
+            "local_url": "/noticias/?id=8e02d29b62c66ba3eff6&mes=2026-11",
+            "brief": {
+                "lead": "Infobae informó que María León presentó su espectáculo en Ciudad de México.",
+                "context": "La presentación tuvo lugar en el Teatro Metropólitan.",
+                "pending": "No se anuncian fechas futuras en la fuente consultada.",
+                "method": "Síntesis editorial basada en la publicación de Infobae.",
+            },
+        }
+        page = render(item, "8e02d29b62c66ba3eff6")
+        self.assertIn('href="' + source_url + '"', page)
+        self.assertIn("Ver fuente original", page)
+        self.assertIn('rel="nofollow noopener noreferrer"', page)
+        self.assertNotIn('href="' + item["url"] + '"', page)
+
+
     def test_local_photo_keeps_credits(self):
         html = render_photo({"category": "Seguridad", "photo": {
             "url": "/assets/fotos/seguridad.jpg", "kind": "representativa",

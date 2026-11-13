@@ -1807,19 +1807,33 @@ class PhotoRelevanceTests(unittest.TestCase):
         self.assertEqual(stats["assigned"], 1)
 
 
-    def test_current_feed_preserves_credited_photos_and_replaces_maria_leon_mismatch(self):
+    def test_current_feed_coverage_and_archive_maria_leon_photo(self):
         data = news.load_json(news.DEST, {"articles": []})
         articles = deepcopy(data.get("articles", []))
         self.assertGreaterEqual(len(articles), 25)
         stats = assign_photos(articles)
         self.assertGreaterEqual(stats["assigned"], 25)
+
+        archive = news.load_json(news.ARCHIVE_DIR / "2026-11.json", {"articles": []})
+        archived_articles = archive.get("articles", [])
         maria = next(
-            item for item in articles
-            if item.get("source") == "Infobae" and "maria leon" in photos._photo_fold(item.get("title", ""))
+            (
+                item for item in archived_articles
+                if item.get("source") == "Infobae"
+                and "maria leon" in photos._photo_fold(item.get("title", ""))
+            ),
+            None,
         )
-        self.assertIsNotNone(maria.get("photo"))
+        self.assertIsNotNone(maria)
+        self.assertEqual(
+            maria.get("photo", {}).get("id"),
+            "contexto_concierto_palacio_deportes_2009",
+        )
         self.assertGreaterEqual(_photo_score(maria, maria["photo"]), 0)
-        self.assertRegex(photos._photo_fold(maria["photo"].get("topic", "")), r"\b(concierto|palacio de los deportes|auditorio|teatro metropolitan)\b")
+        maria_photo_topic = photos._photo_fold(maria["photo"].get("topic", ""))
+        self.assertIn("palacio de los deportes", maria_photo_topic)
+        self.assertNotIn("coro de la catedral", maria_photo_topic)
+        self.assertNotIn("danza del fuego", maria_photo_topic)
         self.assertGreater(stats["unique"], 0)
 
 if __name__ == "__main__":
