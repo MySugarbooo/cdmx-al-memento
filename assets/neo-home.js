@@ -274,7 +274,7 @@ function eligibleStories(feed){
 function isWeatherForecastOnly(article){
  const title=String(article?.title||'').trim();
  if(!title)return false;
- const forecastOnly=/\b(?:pron[oó]stico|pronostican|se prev[eé]n?|habr[aá]\s+(?:lluvias|tormenta|chubascos|granizo)|activan\s+alerta\s+por\s+(?:lluvias|diluvio|tormenta)|alerta\s+por\s+(?:lluvias|diluvio)|alerta\s+(?:amarilla|naranja|roja)\s+por\s+lluvias|qu[eé]\s+alcald[ií]as.*(?:alerta|lluvias)|c[oó]mo\s+cuidarse\s+de\s+las\s+lluvias|clima\s+de\s+hoy)\b/i.test(title);
+ const forecastOnly=/\b(?:pron[oó]stico|pronostican|se prev[eé]n?|se esperan?\s+(?:lluvias|tormentas|chubascos|granizo|temperaturas?|frente frío)|habr[aá]\s+(?:lluvias|tormenta|chubascos|granizo)|lluvias?\s+(?:fuertes|intensas|moderadas|ligeras|torrenciales)\s+en\s+(?:la\s+)?(?:cdmx|ciudad\s+de\s+m[eé]xico)|activan\s+alerta\s+por\s+(?:lluvias|diluvio|tormenta)|alerta\s+por\s+(?:lluvias|diluvio)|alerta\s+(?:amarilla|naranja|roja)\s+por\s+lluvias|qu[eé]\s+alcald[ií]as.*(?:alerta|lluvias)|c[oó]mo\s+cuidarse\s+de\s+las\s+lluvias|clima\s+de\s+hoy)\b/i.test(title);
  const concreteImpact=/\b(?:suspenden|suspende|cerrada|cierre|cierra|inundaci[oó]n|deslave|desbordamiento|ca[ií]da de [a-záéíóúñ]+|lesionad[oa]s?|muert[oa]s?|evacuan|desalojan|accidente|choque|volcadura|rescate|daños|sin servicio|interrumpen|interrupci[oó]n)\b/i.test(title);
  return forecastOnly&&!concreteImpact;
 }
