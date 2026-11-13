@@ -20,6 +20,8 @@ VERIFIED_SOURCE_LINKS = {
         "https://oem.com.mx/la-prensa/policiaca/detienen-a-otro-presunto-maltratador-de-animales-en-tlalpan-33095643",
     ("Infobae", "/noticias/?id=086a68086514ac4b9e44&mes=2026-11"):
         "https://www.infobae.com/mexico/2026/11/12/detienen-a-presunto-abusador-sexual-de-animales-en-situacion-de-calle-en-cdmx-activistas-piden-que-las-investigaciones-lleguen-a-fondo/",
+    ("sdpnoticias", "/noticias/?id=842f4c3306f51b3ab9fc&mes=2026-11"):
+        "https://www.sdpnoticias.com/estados/cdmx/mauricio-tabe-presenta-su-quinto-informe-de-gobierno-en-miguel-hidalgo/",
 }
 SENSITIVE_MEDIA_TITLE = re.compile(
     r"\b(?:violaci[oó]n|abuso sexual|agresi[oó]n sexual|acoso sexual|violencia sexual|"
