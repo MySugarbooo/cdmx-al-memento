@@ -82,6 +82,16 @@ class StableHomepageTests(unittest.TestCase):
         self.assertIn("/index.html",headers)
 
 
+    def test_hero_rotation_randomizes_recent_eligible_stories(self):
+        script = read("assets/neo-home.js")
+        apply = script[script.index("function applyStories(items,source)"):script.index("function start()")]
+        self.assertIn("const heroCandidates=items.map", apply)
+        self.assertIn("photoInfo(item)&&!isWeatherForecastOnly(item)", apply)
+        self.assertIn("const alternatives=heroCandidates.filter(({item})=>item.url!==last);", apply)
+        self.assertIn("const choices=alternatives.length?alternatives:heroCandidates;", apply)
+        self.assertIn("choices[Math.floor(Math.random()*choices.length)].index", apply)
+        self.assertIn("cdmx-neo-last-feature", apply)
+
     def test_weather_forecasts_do_not_take_the_lead_story(self):
         script = read("assets/neo-home.js")
         self.assertIn("function isWeatherForecastOnly(article)", script)
