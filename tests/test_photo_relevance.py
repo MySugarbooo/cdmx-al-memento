@@ -2152,5 +2152,66 @@ class PerifericoPhotoRegressionTests(unittest.TestCase):
                     "Imagen de carácter ilustrativo y referencial; no constituye evidencia gráfica de los hechos descritos.")
 
 
+
+    def test_farmacias_del_ahorro_acquisition_rejects_unrelated_carnival_photo(self):
+        title = "Farmacias del Ahorro compra Benavides y fortalece su presencia en CDMX y Edomex"
+        article = news.standardize({
+            "title": title,
+            "url": "https://news.google.com/rss/articles/farmacias-benavides-photo-regression",
+            "source": "El Sol de México",
+            "date": "2026-11-13",
+            "published_at": "2026-11-13T18:38:11Z",
+            "category": "CDMX",
+        })
+        carnival = representative_photo(
+            "unrelated_carnival_photo",
+            "CDMX",
+            "DECLARATORIA DE CARNAVALES COMO PATRIMONIO CULTURAL INMATERIAL DE LA CIUDAD DE MÉXICO 13",
+            ["Calles Ciudad de México"],
+        )
+        pharmacy = representative_photo(
+            "contexto_farmacia_santa_maria_ribera_2022",
+            "CDMX",
+            "Farmacia de barrio en Santa María de la Ribera, alcaldía Cuauhtémoc, Ciudad de México (29 de diciembre de 2022); imagen representativa, no corresponde a Farmacias del Ahorro ni Benavides.",
+            ["farmacia", "farmacia de barrio", "Santa María de la Ribera", "Cuauhtémoc", "Ciudad de México"],
+        )
+        pharmacy.update({
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Farmacia_en_Santa_Mar%C3%ADa_de_la_Ribera.jpg/960px-Farmacia_en_Santa_Mar%C3%ADa_de_la_Ribera.jpg",
+            "source": "https://commons.wikimedia.org/wiki/File:Farmacia_en_Santa_Mar%C3%ADa_de_la_Ribera.jpg",
+            "author": "ProtoplasmaKid",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        })
+        self.assertLess(_photo_score(article, carnival), 0)
+        self.assertGreaterEqual(_photo_score(article, pharmacy), 0)
+        article["photo"] = carnival
+        with patch.object(photos, "_pool", return_value=[carnival, pharmacy]), patch.object(
+            photos, "_load", return_value=[]
+        ):
+            assign_photos([article])
+        self.assertEqual(article["photo"]["id"], pharmacy["id"])
+        self.assertEqual(article["photo"]["author"], "ProtoplasmaKid")
+        self.assertEqual(article["photo"]["license"], "CC BY-SA 4.0")
+        self.assertIn("no corresponde a Farmacias del Ahorro ni Benavides", article["photo"]["topic"])
+
+    def test_pharmacy_context_photo_has_complete_attribution_in_all_catalogs(self):
+        expected_topic = "Farmacia de barrio en Santa María de la Ribera, alcaldía Cuauhtémoc, Ciudad de México (29 de diciembre de 2022); imagen representativa, no corresponde a Farmacias del Ahorro ni Benavides."
+        relative_paths = (
+            "assets/fotos/contexto-tematico.json",
+            "assets/fotos/indice-noticias-1100.json",
+            "assets/fotos/catalogo-editorial-1100.json",
+        )
+        for relative in relative_paths:
+            with self.subTest(path=relative):
+                data = json.loads((REPO_ROOT / relative).read_text(encoding="utf-8"))
+                photo = next((item for item in data.get("photos", [])
+                              if item.get("id") == "contexto_farmacia_santa_maria_ribera_2022"), None)
+                self.assertIsNotNone(photo, relative)
+                self.assertEqual(photo.get("topic"), expected_topic)
+                self.assertEqual(photo.get("author"), "ProtoplasmaKid")
+                self.assertEqual(photo.get("license"), "CC BY-SA 4.0")
+                self.assertEqual(photo.get("source"), "https://commons.wikimedia.org/wiki/File:Farmacia_en_Santa_Mar%C3%ADa_de_la_Ribera.jpg")
+
+
 if __name__ == "__main__":
     unittest.main()
