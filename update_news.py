@@ -336,7 +336,7 @@ def category_by_headline(title, feed_category, source=""):
             and re.search(r"\b(?:camaras?|vigilar|vigilara|vigilancia)\b", normalized)):
         return "Seguridad"
     if (re.search(r"\bmarchas?\b", normalized)
-            and re.search(r"\b(?:colapsar|trafico|puntos de partida|cierres?|bloqueos?)\b", normalized)):
+            and re.search(r"\b(?:colaps\w*|trafico|puntos de partida|cierres?|bloqueos?)\b", normalized)):
         return "Movilidad"
     # Conciertos, intérpretes, estrenos y alfombras de cine pertenecen a Cultura.
     if re.search(
