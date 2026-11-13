@@ -2,7 +2,7 @@
 import json
 import unittest
 from pathlib import Path
-from scripts.notas_locales import assign_photos, local_link, summarize, is_sensitive_media
+from scripts.notas_locales import assign_photos, local_link, summarize, is_sensitive_media, RADIO_FORMULA_CASA_ECOLOGICA_SOURCE_URL
 from scripts.build_article_seo import article_id, render
 from update_news import category_by_headline, standardize, photo_needs_refresh
 
@@ -428,6 +428,33 @@ class LocalNewsTests(unittest.TestCase):
         # Una regla general de Gobierno no debe ocultar una detención específica.
         security_title = "Detienen a un hombre tras operativo del Gobierno de la Ciudad de México"
         self.assertEqual(category_by_headline(security_title, "CDMX"), "Seguridad")
+
+    def test_radio_formula_casa_ecologica_is_environmental_and_uses_direct_source(self):
+        article = {
+            "title": "Calentadores solares y captación de lluvia: el plan de CDMX para ahorrar en casa",
+            "url": "https://news.google.com/rss/articles/radio-formula-casa-ecologica",
+            "source": "Radio Fórmula",
+            "date": "2026-11-12",
+            "published_at": "2026-11-12T22:38:28Z",
+            "category": "Gobierno",
+            "borough": "",
+        }
+        self.assertEqual(
+            category_by_headline(article["title"], "Gobierno", "Radio Fórmula"),
+            "Medio Ambiente",
+        )
+        result = standardize(article)
+        self.assertIsNotNone(result)
+        self.assertEqual(result["category"], "Medio Ambiente")
+        self.assertEqual(result["borough"], "Álvaro Obregón")
+        self.assertIn("Santa Rosa Xochiac", result["location"])
+        self.assertEqual(result["source_url"], RADIO_FORMULA_CASA_ECOLOGICA_SOURCE_URL)
+        self.assertIn("19 mil viviendas", result["brief"]["lead"])
+        self.assertIn("356 millones de pesos", result["brief"]["lead"])
+        self.assertIn("10 mil hogares", result["brief"]["lead"])
+        self.assertNotIn("pronóstico", result["brief"]["lead"].casefold())
+        self.assertIn("La Jornada", result["brief"]["method"])
+        self.assertIn("radioformula.com.mx", result["brief"]["method"])
 
     def test_ssc_buen_fin_operativo_is_security_and_uses_official_facts(self):
         title = ("2999: La SSC implementará un operativo de seguridad, vigilancia y vialidad "
