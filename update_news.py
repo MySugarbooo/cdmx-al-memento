@@ -321,6 +321,23 @@ def category_by_headline(title, feed_category, source=""):
         normalized,
     ):
         return "Seguridad"
+    # Categorías editoriales que el RSS ha heredado de forma incorrecta.
+    if re.search(r"\b(?:garbage|shirley manson)\b", normalized):
+        return "Cultura"
+    if re.search(r"\bpokemon go\b", normalized):
+        return "Cultura"
+    if (re.search(r"\b(?:aeropuerto|aicm)\b", normalized)
+            and re.search(r"\b(?:vuelos?|afectaciones?|salidas?|llegadas?)\b", normalized)):
+        return "Movilidad"
+    if (re.search(r"\bmercados?\b", normalized)
+            and re.search(r"\b(?:recibiran|un millon de pesos|mejorar sus instalaciones|inversion)\b", normalized)):
+        return "Gobierno"
+    if (re.search(r"\bc5\b", normalized)
+            and re.search(r"\b(?:camaras?|vigilar|vigilara|vigilancia)\b", normalized)):
+        return "Seguridad"
+    if (re.search(r"\bmarchas?\b", normalized)
+            and re.search(r"\b(?:colaps\w*|trafico|puntos de partida|cierres?|bloqueos?)\b", normalized)):
+        return "Movilidad"
     # Conciertos, intérpretes, estrenos y alfombras de cine pertenecen a Cultura.
     if re.search(
         r"\b(?:cantantes?|cantautores?|canta|cantar|gira musical|canciones? ineditas|musica en vivo|"
