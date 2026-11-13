@@ -1732,7 +1732,7 @@ class PhotoRelevanceTests(unittest.TestCase):
         self.assertGreaterEqual(stats["assigned"], 25)
         maria = next(
             item for item in articles
-            if item.get("source") == "Infobae" and "maria leon" in item.get("title", "").lower()
+            if item.get("source") == "Infobae" and "maria leon" in photos._photo_fold(item.get("title", ""))
         )
         self.assertEqual(maria["photo"]["id"], "contexto_concierto_palacio_deportes_2009")
         self.assertGreater(stats["unique"], 0)
