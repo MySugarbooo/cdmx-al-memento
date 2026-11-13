@@ -6,7 +6,7 @@ import unittest
 from datetime import datetime, timezone
 from pathlib import Path
 
-from update_news import refresh_homepage_fallback
+from update_news import refresh_homepage_fallback, merge_recent_previous_feed
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -188,6 +188,42 @@ class StableHomepageTests(unittest.TestCase):
         self.assertIn("photo", payload[0])
         self.assertNotIn("Noticia antigua", html)
         self.assertNotIn("Marchas en CDMX hoy 12 de noviembre", html)
+
+    def test_partial_rss_keeps_recent_previous_feed_and_drops_stale_entries(self):
+        now = datetime(2026, 11, 13, 10, 30, tzinfo=timezone.utc)
+        current = {
+            "title": "Nueva noticia de CDMX",
+            "url": "https://news.google.com/rss/articles/current",
+            "source": "Medio de prueba",
+            "date": "2026-11-13",
+            "published_at": "2026-11-13T10:00:00Z",
+            "category": "CDMX",
+        }
+        recent_previous = {
+            "title": "Noticia previa reciente de CDMX",
+            "url": "https://news.google.com/rss/articles/previous",
+            "source": "Medio de prueba",
+            "date": "2026-11-13",
+            "published_at": "2026-11-13T08:00:00Z",
+            "category": "CDMX",
+        }
+        stale_previous = {
+            "title": "Noticia antigua de CDMX",
+            "url": "https://news.google.com/rss/articles/stale",
+            "source": "Medio de prueba",
+            "date": "2026-11-09",
+            "published_at": "2026-11-09T08:00:00Z",
+            "category": "CDMX",
+        }
+
+        merged = merge_recent_previous_feed(
+            [current], [recent_previous, stale_previous], now
+        )
+        titles = {item["title"] for item in merged}
+        self.assertIn("Nueva noticia de CDMX", titles)
+        self.assertIn("Noticia previa reciente de CDMX", titles)
+        self.assertNotIn("Noticia antigua de CDMX", titles)
+
 
     def test_news_workflow_stages_the_generated_homepage_fallback_and_tests_prs(self):
         workflow = read(".github/workflows/news.yml")
