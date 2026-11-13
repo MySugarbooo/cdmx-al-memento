@@ -127,6 +127,7 @@ on:
       - 'assets/clima-ticker.js'
   pull_request:
     # Ejecuta regresiones de portada, fotografías y feed sin publicar desde PR.
+    # Incluye regresión para conservar fotos representativas acreditadas del feed.
     branches: [main]
     paths:
       - '.github/workflows/news.yml'
