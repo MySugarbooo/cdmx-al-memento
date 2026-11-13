@@ -1960,10 +1960,32 @@ def _photo_score(article, photo):
         context,
     ))
     animal_story = bool(re.search(
-        r"\b(?:jauria|sloopy|lobito|perros?|perritos?|mascotas?|refugio franciscano|refugio de animales|albergue de animales)\b",
+        r"\b(?:jauria|sloopy|lobito|perros?|perritos?|mascotas?|refugio franciscano|refugio de animales|albergue de animales|cacomixtles?)\b",
         headline,
     ))
-    animal_photo = bool(re.search(r"\b(?:perros?|caninos?|mascotas?|animales?)\b", context))
+    animal_photo = bool(re.search(
+        r"\b(?:perros?|caninos?|mascotas?|animales?|cacomixtles?|bassariscus|fauna urbana)\b",
+        context,
+    ))
+    # Una noticia de fauna no debe ilustrarse con drenaje, pavimento u otra infraestructura.
+    if animal_story and not animal_photo:
+        return -10000
+
+    road_incident_story = bool(re.search(
+        r"\b(?:accidente|choque|colision|volcadura|siniestro vial)\b",
+        headline,
+    ))
+    motorsport_photo = bool(re.search(
+        r"\b(?:autodromo|formula 1|f1|gran premio|automovilismo|pista de carreras)\b",
+        context,
+    ))
+    road_traffic_photo = bool(re.search(
+        r"\b(?:trafico vehicular|trafico|vialidad|congestion vehicular|circulacion vehicular)\b",
+        context,
+    ))
+    # Un autódromo no es contexto para un choque de tránsito en una avenida.
+    if road_incident_story and motorsport_photo:
+        return -10000
     if lgbt_story and not lgbt_photo:
         return -10000
     protest_story = bool(
@@ -2229,6 +2251,8 @@ def _photo_score(article, photo):
             return -10000
     borough=_photo_fold(article.get("borough"))
     score=65 if photo_category==category else (12 if photo_category=="CDMX" else 0)
+    if road_incident_story and road_traffic_photo:
+        score += 220
     cinema_story=bool(re.search(r"\b(?:cine de barrio|festival(?: de)? cine)\b",headline))
     cinema_photo=bool(re.search(
         r"\b(?:bosquecinema|cine|cinema|cineclub|cineteca|proyecciones?|peliculas?|filmoteca)\b",
