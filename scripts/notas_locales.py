@@ -1315,7 +1315,7 @@ def _photo_category(article):
             and re.search(r"\b(?:camaras?|vigilar|vigilara|vigilancia)\b", headline)):
         return "Seguridad"
     if (re.search(r"\bmarchas?\b", headline)
-            and re.search(r"\b(?:colapsar|trafico|puntos de partida|cierres?|bloqueos?)\b", headline)):
+            and re.search(r"\b(?:colaps\w*|trafico|puntos de partida|cierres?|bloqueos?)\b", headline)):
         return "Movilidad"
     # Los planes de electrificación del transporte público son materia de Movilidad.
     if (re.search(r"\b(?:transporte(?: publico)?|movilidad)\b", headline)
@@ -2291,7 +2291,7 @@ def _photo_score(article, photo):
     themed_category = (
         (photo_category == "Seguridad" and game_story and game_photo)
         or (photo_category == "Servicios" and market_funding_story and market_funding_photo)
-        (photo_category == "Cultura" and music_story and music_photo)
+        or (photo_category == "Cultura" and music_story and music_photo)
         or (photo_category == "Medio Ambiente" and (
             (weather_story and weather_photo) or (animal_story and animal_photo)
         ))
