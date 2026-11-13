@@ -316,7 +316,7 @@ def category_by_headline(title, feed_category, source=""):
         r"\b(?:abuso sexual|violencia sexual|agresion sexual|acoso sexual|"
         r"abusador(?:es)? sexual(?:es)?|maltratador(?:es)?(?: de animales?)?|"
         r"maltrato animal|crueldad animal|robo|robos|roban|robado|robada|robaron|robar|"
-        r"asalto|asaltan|secuestro|secuestrad[oa]s?|"
+        r"asalt\w*|secuestro|secuestrad[oa]s?|"
         r"privacion(?: ilegal)? de (?:la )?libertad)\b",
         normalized,
     ):
@@ -548,7 +548,7 @@ def category_by_headline(title, feed_category, source=""):
             and not re.search(r"\b(?:balacera|homicidio|asalto|delito|detenidos?|detienen|persecucion policial)\b", normalized)):
         return "Movilidad"
     # Distinguir siniestros viales de delitos, aunque provengan de otro feed RSS.
-    if re.search(r"\b(?:accidentes?|choques?|colisiones?|volcaduras?|vuelc\w*|atropell\w*|arroll\w*|derrap\w*|percances? viales?|siniestros? viales?)\b", normalized):
+    if re.search(r"\b(?:accidentes?|choques?|chocar|chocan|chocaron|choco|colisiones?|volcaduras?|vuelc\w*|atropell\w*|arroll\w*|derrap\w*|percances? viales?|siniestros? viales?)\b", normalized):
         if re.search(r"\b(?:homicidio|balacera|asalto|atentado|delito|persecucion policial)\b", normalized):
             return "Seguridad"
         return "Movilidad"

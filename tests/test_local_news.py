@@ -230,6 +230,10 @@ class LocalNewsTests(unittest.TestCase):
                 "Policías de la CDMX rescataron a un hombre secuestrado en Venustiano Carranza",
                 "Metro",
             ),
+            (
+                "Cae sujeto señalado por asaltos violentos contra mujeres en Magdalena Contreras",
+                "CDMX",
+            ),
         )
         for title, feed_category in cases:
             with self.subTest(title=title):
@@ -237,6 +241,10 @@ class LocalNewsTests(unittest.TestCase):
                     category_by_headline(title, feed_category, "Infobae"),
                     "Seguridad",
                 )
+
+    def test_motorcycle_collision_using_chocar_is_mobility(self):
+        title = "Mueren dos motociclistas tras chocar contra una camioneta en Venustiano Carranza"
+        self.assertEqual(category_by_headline(title, "CDMX"), "Movilidad")
 
     def test_imagen_tlalpan_dog_rescue_is_security_and_not_a_detention(self):
         article = {
