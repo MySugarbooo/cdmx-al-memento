@@ -1942,5 +1942,75 @@ class PhotoRelevanceTests(unittest.TestCase):
         self.assertNotIn("danza del fuego", maria_photo_topic)
         self.assertGreater(stats["unique"], 0)
 
+
+    def test_cacomixtle_story_replaces_drainage_photo_with_species_context(self):
+        article = news.standardize({
+            "title": "De los bosques al asfalto: los avistamientos de cacomixtles en la Ciudad de México",
+            "url": "https://news.google.com/rss/articles/cacomixtle-photo-regression",
+            "source": "Sopitas.com",
+            "date": "2026-11-13",
+            "category": "CDMX",
+        })
+        article["category"] = "CDMX"
+        drainage = representative_photo(
+            "contexto_drenaje_humedal",
+            "Servicios",
+            "Salida del drenaje hacia el canal del Humedal",
+            ["Drenaje Ciudad de México"],
+        )
+        cacomixtle = next(
+            photo for photo in _pool()
+            if photo["id"] == "contexto_cacomixtle_babisuri"
+        )
+        self.assertLess(_photo_score(article, drainage), 0)
+        self.assertGreaterEqual(_photo_score(article, cacomixtle), 0)
+        with patch.object(photos, "_pool", return_value=[drainage, cacomixtle]):
+            assign_photos([article])
+        self.assertEqual(article["photo"]["id"], "contexto_cacomixtle_babisuri")
+        self.assertEqual(article["photo"]["author"], "Jaen Mena")
+        self.assertEqual(article["photo"]["license"], "CC BY-SA 4.0")
+
+        for relative in (
+            "assets/fotos/contexto-tematico.json",
+            "assets/fotos/indice-noticias-1100.json",
+            "assets/fotos/catalogo-editorial-1100.json",
+        ):
+            data = json.loads((REPO_ROOT / relative).read_text(encoding="utf-8"))
+            registered = next(
+                item for item in data["photos"]
+                if item["id"] == "contexto_cacomixtle_babisuri"
+            )
+            self.assertEqual(registered["author"], "Jaen Mena")
+            self.assertEqual(registered["license"], "CC BY-SA 4.0")
+            self.assertTrue(registered["source"].startswith("https://commons.wikimedia.org/wiki/File:"))
+            self.assertTrue(registered["licenseUrl"].startswith("https://creativecommons.org/"))
+
+    def test_circuito_interior_crash_rejects_autodromo_and_uses_traffic_context(self):
+        article = news.standardize({
+            "title": "Accidente en Circuito Interior Hoy: Caos Vial en Esta Zona por Choque de Tráiler en CDMX",
+            "url": "https://news.google.com/rss/articles/circuito-interior-photo-regression",
+            "source": "N+",
+            "date": "2026-11-13",
+            "category": "Movilidad",
+        })
+        article["category"] = "Movilidad"
+        pool = _pool()
+        autodromo = next(
+            photo for photo in pool
+            if photo["id"] == "contexto_autodromo_hermanos_rodriguez"
+        )
+        traffic = next(
+            photo for photo in pool
+            if photo["id"] == "contexto_trafico_eje_central"
+        )
+        article["photo"] = autodromo
+        self.assertLess(_photo_score(article, autodromo), 0)
+        self.assertGreaterEqual(_photo_score(article, traffic), 0)
+        with patch.object(photos, "_pool", return_value=[autodromo, traffic]):
+            assign_photos([article])
+        self.assertEqual(article["photo"]["id"], "contexto_trafico_eje_central")
+        self.assertEqual(article["photo"]["author"], "Sergio Estrada Flores")
+        self.assertEqual(article["photo"]["license"], "CC BY 4.0")
+
 if __name__ == "__main__":
     unittest.main()
