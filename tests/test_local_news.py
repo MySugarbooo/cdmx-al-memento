@@ -476,7 +476,7 @@ class LocalNewsTests(unittest.TestCase):
         self.assertIn("no permite determinar cuánto corresponde a la Ciudad de México", lead)
         self.assertNotIn("detención", lead.casefold())
         self.assertNotIn("conducta delictiva", lead.casefold())
-        self.assertIn("Anexo 31", result["brief"]["context"])
+        self.assertIn("múltiples programas", result["brief"]["context"])
         self.assertIn(CAPITAL_CDMX_CARE_BUDGET_SOURCE_URL, result["brief"]["method"])
         article_html = render(result, article_id(result))
         self.assertIn(CAPITAL_CDMX_CARE_BUDGET_SOURCE_URL, article_html)
