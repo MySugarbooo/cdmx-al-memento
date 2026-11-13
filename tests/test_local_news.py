@@ -549,6 +549,8 @@ class LocalNewsTests(unittest.TestCase):
         self.assertEqual(photo["author"], "Secretaría de Cultura Ciudad de México")
         self.assertEqual(photo["license"], "CC BY 2.0")
         self.assertIn("fotografía de 2019", photo["topic"])
+        self.assertEqual(photo["uploaded_at"], "2020-01-13")
+        self.assertEqual(photo["captured_at"], "2019-02-10")
 
         rendered = render(article, article_id(article))
         self.assertIn('href="https://www.sdpnoticias.com/estados/cdmx/mauricio-tabe-presenta-su-quinto-informe-de-gobierno-en-miguel-hidalgo/"', rendered)
