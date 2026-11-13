@@ -259,7 +259,7 @@ function isHomepageRecent(article,now=new Date()){
 }
 function isStaleTimeSensitiveHeadline(article,now=new Date()){
  const title=String(article?.title||'');
- if(!/\\b(?:hoy|en vivo)\\b/i.test(title))return false;
+ if(!/\b(?:hoy|en vivo)\b/i.test(title))return false;
  const day=homepageDay(article?.published_at||article?.date);
  if(!day)return true;
  return day!==homepageDateFormatter.format(now);
