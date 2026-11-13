@@ -1145,6 +1145,45 @@ class PhotoRelevanceTests(unittest.TestCase):
         self.assertEqual(article["photo"]["id"], "contexto_motocicleta_zocalo_brigada_2017")
         self.assertIn("no corresponde a la marcha de 2026", article["photo"]["topic"])
 
+    def test_delivery_rider_blockade_uses_credited_postal_motorcycle_context(self):
+        title = "Repartidores de aplicaciones bloquean calles de CDMX contra nuevas placas y licencias"
+        article = news.standardize({
+            "title": title,
+            "url": "https://news.google.com/rss/articles/delivery-rider-context-regression",
+            "source": "Diario de Yucatán",
+            "date": "2026-11-11",
+            "category": "Movilidad",
+        })
+        courier = next(
+            (photo for photo in _pool()
+             if photo.get("id") == "contexto_repartidores_motocicleta_cdmx"),
+            None,
+        )
+        self.assertIsNotNone(courier)
+        self.assertEqual(courier["kind"], "representativa")
+        self.assertEqual(courier["author"], "Palacio Postal")
+        self.assertEqual(courier["license"], "CC BY-SA 4.0")
+        self.assertIn("no del bloqueo actual", courier["topic"])
+
+        unrelated_protest = {
+            "id": "generic_cacerolazo",
+            "kind": "representativa",
+            "category": "CDMX",
+            "topic": "Cacerolazo contra la violencia en Ciudad de México",
+            "keywords": ["cacerolazo", "protesta", "manifestación"],
+        }
+        self.assertLess(_photo_score(article, unrelated_protest), 0)
+        self.assertGreaterEqual(_photo_score(article, courier), 0)
+        with patch.object(photos, "_pool", return_value=[unrelated_protest, courier]), patch.object(
+            photos, "_load", return_value=[]
+        ):
+            stats = assign_photos([article])
+        self.assertEqual(article["photo"]["id"], "contexto_repartidores_motocicleta_cdmx")
+        self.assertEqual(article["photo"]["kind"], "representativa")
+        self.assertEqual(article["photo"]["author"], "Palacio Postal")
+        self.assertEqual(article["photo"]["license"], "CC BY-SA 4.0")
+        self.assertEqual(stats["assigned"], 1)
+
     def test_kidnapping_story_rejects_traffic_light_police_photo_and_uses_patrol_context(self):
         title = "Policías de la CDMX rescataron a un hombre secuestrado en La Merced al detener a tres sujetos con armas y droga"
         traffic = {
