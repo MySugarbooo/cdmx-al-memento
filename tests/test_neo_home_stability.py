@@ -80,7 +80,7 @@ class StableHomepageTests(unittest.TestCase):
         self.assertIn('src="/app.js?v=',home)
         self.assertIn('href="/archivo/"',home)
         self.assertIn('src="/assets/neo-home.js?v=',home)
-        self.assertIn('src="/assets/neo-home.js?v=20261113-expired-today-hero1"', home)
+        self.assertIn('src="/assets/neo-home.js?v=20261113-accredited-hero-copy1"', home)
         self.assertRegex(home, r'href="/assets/neo-home\.css\?v=[a-zA-Z0-9_-]+"')
         headers=read("_headers")
         self.assertIn("Cache-Control: no-cache, must-revalidate",headers)
@@ -196,6 +196,16 @@ class StableHomepageTests(unittest.TestCase):
         stage_lines = [line for line in workflow.splitlines() if "git add -A --" in line]
         self.assertEqual(len(stage_lines), 2)
         self.assertTrue(all("index.html" in line for line in stage_lines))
+
+
+    def test_homepage_copy_explains_representative_photos_without_claiming_documentary_evidence(self):
+        home = read("index.html")
+        script = read("assets/neo-home.js")
+        self.assertIn("imágenes representativas se identifican como tales", home)
+        self.assertIn("Preparando una noticia destacada con fotografía acreditada", home)
+        self.assertIn("Noticias recientes sin imagen acreditada disponible", script)
+        self.assertIn("fotografías representativas acreditadas", script)
+        self.assertIn("Sin imagen contextual acreditada disponible", script)
 
 if __name__ == '__main__':
     unittest.main()
