@@ -1,7 +1,12 @@
 """Evita el regreso intermitente a la portada antigua en iPhone y con redes lentas."""
+import json
 import re
+import tempfile
 import unittest
+from datetime import datetime, timezone
 from pathlib import Path
+
+from update_news import refresh_homepage_fallback
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -117,6 +122,80 @@ class StableHomepageTests(unittest.TestCase):
         self.assertIn("!isStaleTimeSensitiveHeadline(item)", hero)
         apply = script[script.index("function applyStories(items,source)"):script.index("function start()")]
         self.assertIn("!isStaleTimeSensitiveHeadline(item)", apply)
+
+
+    def test_embedded_fallback_is_refreshed_with_recent_news_and_excludes_expired_live_headlines(self):
+        now = datetime(2026, 11, 13, 9, 50, tzinfo=timezone.utc)
+        photo = {
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/example.jpg/960px-example.jpg",
+            "source": "https://commons.wikimedia.org/wiki/File:example.jpg",
+            "author": "Autor de prueba",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "topic": "Concierto representativo en CDMX",
+        }
+        current = {
+            "title": "Concierto de prueba en CDMX",
+            "url": "https://news.google.com/rss/articles/current",
+            "local_url": "/noticias/?id=current&mes=2026-11",
+            "source": "Medio de prueba",
+            "date": "2026-11-13",
+            "published_at": "2026-11-13T08:00:00Z",
+            "category": "Cultura",
+            "brief": {"lead": "Resumen actual"},
+            "photo": photo,
+        }
+        expired_live = {
+            "title": "Marchas en CDMX hoy 12 de noviembre EN VIVO",
+            "url": "https://news.google.com/rss/articles/expired-live",
+            "local_url": "/noticias/?id=expired&mes=2026-11",
+            "source": "Medio de prueba",
+            "date": "2026-11-12",
+            "published_at": "2026-11-13T03:00:00Z",
+            "category": "Movilidad",
+            "brief": {"lead": "Resumen vencido"},
+            "photo": photo,
+        }
+        old = {
+            "title": "Noticia antigua",
+            "url": "https://news.google.com/rss/articles/old",
+            "local_url": "/noticias/?id=old&mes=2026-10",
+            "source": "Medio de prueba",
+            "date": "2026-10-26",
+            "published_at": "2026-10-26T11:10:08Z",
+            "category": "CDMX",
+            "brief": {"lead": "Resumen antiguo"},
+            "photo": photo,
+        }
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "index.html"
+            path.write_text(
+                '<html><script id="embedded-news-fallback" type="application/json">[{"title":"viejo"}]</script></html>',
+                encoding="utf-8",
+            )
+            count = refresh_homepage_fallback(path, [current, expired_live, old], now)
+            html = path.read_text(encoding="utf-8")
+        match = re.search(
+            r'<script id="embedded-news-fallback" type="application/json">(.*?)</script>',
+            html,
+            re.S,
+        )
+        self.assertIsNotNone(match)
+        payload = json.loads(match.group(1))
+        self.assertEqual(count, 1)
+        self.assertEqual([item["title"] for item in payload], ["Concierto de prueba en CDMX"])
+        self.assertIn("photo", payload[0])
+        self.assertNotIn("Noticia antigua", html)
+        self.assertNotIn("Marchas en CDMX hoy 12 de noviembre", html)
+
+    def test_news_workflow_stages_the_generated_homepage_fallback_and_tests_prs(self):
+        workflow = read(".github/workflows/news.yml")
+        self.assertIn("pull_request:", workflow)
+        self.assertIn("if: github.event_name != 'pull_request'", workflow)
+        stage_lines = [line for line in workflow.splitlines() if "git add -A --" in line]
+        self.assertEqual(len(stage_lines), 2)
+        self.assertTrue(all("index.html" in line for line in stage_lines))
 
 if __name__ == '__main__':
     unittest.main()
