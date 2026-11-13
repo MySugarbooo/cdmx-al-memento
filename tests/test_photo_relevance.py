@@ -1706,6 +1706,7 @@ class PhotoRelevanceTests(unittest.TestCase):
             "Concierto de Kings of Leon en el Palacio de los Deportes, Ciudad de México (octubre de 2009); imagen representativa, no corresponde a María León.",
             ["concierto", "música en vivo", "Palacio de los Deportes", "Ciudad de México"],
         )
+        existing["url"] = "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/PalaciodelosDeportes_Concierto.jpg/960px-PalaciodelosDeportes_Concierto.jpg"
         existing["source"] = "https://commons.wikimedia.org/wiki/File:PalaciodelosDeportes_Concierto.jpg"
         unrelated = representative_photo(
             "unrelated_dance_photo", "Cultura",
