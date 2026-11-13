@@ -2245,5 +2245,114 @@ class CrimePhotoCategoryRegressionTests(unittest.TestCase):
                 self.assertLess(_photo_score(article, borough_photo), 0)
 
 
+
+class EditorialPhotoMismatchRegressionTests(unittest.TestCase):
+    def assert_photo_replaced(self, title, category, current, candidate, borough=""):
+        article = {
+            "title": title,
+            "category": category,
+            "borough": borough,
+            "url": "https://news.google.com/rss/articles/editorial-photo-regression",
+            "photo": current,
+        }
+        self.assertTrue(news.photo_needs_refresh(article))
+        self.assertLess(_photo_score(article, current), 0)
+        self.assertGreaterEqual(_photo_score(article, candidate), 0)
+        with patch.object(photos, "_pool", return_value=[current, candidate]), patch.object(
+            photos, "_load", return_value=[]
+        ):
+            assign_photos([article])
+        self.assertEqual(article["photo"]["id"], candidate["id"])
+        self.assertEqual(article["photo"]["author"], "Autor de prueba")
+        self.assertEqual(article["photo"]["license"], "CC BY-SA 4.0")
+
+    def test_public_lighting_story_replaces_police_patrol_with_luminarias(self):
+        current = representative_photo("patrulla-luminarias", "Seguridad",
+            "Nuevas patrullas para Cuajimalpa 05", ["patrullas", "policía", "seguridad"])
+        candidate = representative_photo("luminarias-alvaro-obregon", "Seguridad",
+            "Luminarias de Avenida Álvaro Obregón, colonia Roma, CDMX (2013); imagen representativa, no documenta las obras de SOBSE.",
+            ["luminarias", "alumbrado público", "iluminación urbana", "farolas"])
+        self.assert_photo_replaced(
+            "Con más de 80 mil nuevas luminarias, la SOBSE fortalece la seguridad en caminos de la Ciudad de México",
+            "Seguridad", current, candidate)
+
+    def test_semovi_license_suspension_replaces_palacio_nacional_with_semovi_offices(self):
+        current = representative_photo("palacio-semovi", "Gobierno",
+            "Palacio Nacional de México - Exteriores - 3", ["Palacio Nacional", "Gobierno"])
+        candidate = representative_photo("oficinas-semovi-roma", "Gobierno",
+            "Fachada de oficinas de SEMOVI en colonia Roma, CDMX (2022); imagen representativa, no documenta la suspensión de trámites.",
+            ["SEMOVI", "Secretaría de Movilidad", "licencias", "trámites", "control vehicular", "oficinas"])
+        self.assert_photo_replaced(
+            "Semovi suspenderá trámites de licencias y control vehicular en CDMX",
+            "Gobierno", current, candidate)
+
+    def test_safety_ranking_replaces_theatre_with_police_patrol(self):
+        current = representative_photo("teatro-miguel-hidalgo", "CDMX",
+            "Teatro Ángela Peralta, Polanco, alcaldía Miguel Hidalgo",
+            ["Teatro Ángela Peralta", "Polanco", "Miguel Hidalgo"])
+        candidate = representative_photo("patrulla-cdmx-ranking", "Seguridad",
+            "Patrulla de Ciudad de México; imagen representativa, no documenta el ranking de seguridad de Miguel Hidalgo.",
+            ["patrullas", "policía", "seguridad ciudadana", "Ciudad de México"])
+        self.assert_photo_replaced(
+            "Tabe: Miguel Hidalgo es la segunda alcaldía más segura de CDMX",
+            "Seguridad", current, candidate, "Miguel Hidalgo")
+
+    def test_building_safety_story_replaces_patrol_with_building_reconstruction(self):
+        current = representative_photo("patrulla-construcciones", "Seguridad",
+            "Nuevas patrullas para Cuajimalpa 02", ["patrullas", "seguridad"])
+        candidate = representative_photo("reconstruccion-edificios-bj", "Seguridad",
+            "Reconstrucción de edificios en Benito Juárez tras el sismo de 2017; imagen de archivo representativa.",
+            ["edificios", "reconstrucción", "seguridad estructural", "inmuebles"])
+        self.assert_photo_replaced(
+            "CDMX prepara reformas para reforzar la seguridad de las construcciones; edificios anteriores a 1985, prioridad",
+            "Seguridad", current, candidate)
+
+    def test_neto_store_count_replaces_city_panorama_with_grocery_store(self):
+        current = representative_photo("panorama-neto", "CDMX",
+            "Panorámicas CDMX IMG 4417 Alameda Central", ["Alameda Central", "panorámica", "CDMX"])
+        candidate = representative_photo("tienda-coyoacan-neto", "CDMX",
+            "Tienda de abarrotes en el mercado de Coyoacán, CDMX (2018); imagen representativa, no es una sucursal de Tiendas Neto.",
+            ["tienda de abarrotes", "comercio minorista", "tiendas", "Coyoacán"])
+        self.assert_photo_replaced(
+            "Neto rebasa las 2 mil tiendas; CDMX y Edomex concentran tres de cada diez",
+            "CDMX", current, candidate)
+
+    def test_hostile_architecture_story_replaces_monument_with_hostile_planter(self):
+        current = representative_photo("monumento-arquitectura-hostil", "CDMX",
+            "Estando firmes (Monumento a la Revolución, CDMX, México)",
+            ["Monumento a la Revolución", "CDMX"])
+        candidate = representative_photo("jardinera-hostil-benito-juarez", "CDMX",
+            "Jardinera de arquitectura hostil en Eje 6 y Patriotismo, Benito Juárez, CDMX (2023); imagen representativa.",
+            ["arquitectura hostil", "jardineras con púas", "comercio ambulante", "Benito Juárez"])
+        self.assert_photo_replaced(
+            "Bancas que impiden recostarse y jardineras con púas: arquitectura hostil en CDMX",
+            "CDMX", current, candidate)
+
+    def test_new_context_photos_have_complete_credits_in_all_catalogs(self):
+        expected = {
+            "contexto_luminarias_alvaro_obregon_2013",
+            "contexto_semovi_oficinas_roma_2022",
+            "contexto_tienda_abarrotes_coyoacan_2018",
+            "contexto_jardinera_arquitectura_hostil_benito_juarez_2023",
+        }
+        for relative in (
+            "assets/fotos/contexto-tematico.json",
+            "assets/fotos/indice-noticias-1100.json",
+            "assets/fotos/catalogo-editorial-1100.json",
+        ):
+            with self.subTest(path=relative):
+                data = json.loads((REPO_ROOT / relative).read_text(encoding="utf-8"))
+                photos_by_id = {item.get("id"): item for item in data.get("photos", [])}
+                for photo_id in expected:
+                    self.assertIn(photo_id, photos_by_id)
+                    item = photos_by_id[photo_id]
+                    self.assertTrue(item.get("author"))
+                    self.assertEqual(item.get("license"), "CC BY-SA 4.0")
+                    self.assertTrue(item.get("source", "").startswith("https://commons.wikimedia.org/wiki/File:"))
+                    self.assertTrue(item.get("licenseUrl", "").startswith("https://creativecommons.org/"))
+                if "count" in data:
+                    self.assertEqual(data["count"], len(data["photos"]))
+
+
 if __name__ == "__main__":
     unittest.main()
