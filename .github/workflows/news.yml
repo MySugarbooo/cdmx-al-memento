@@ -205,12 +205,16 @@ jobs:
           node --check assets/explora-list.js
           node --check mapa/mapa.js
       - name: Recopilar titulares y actualizar archivo anual
+        if: github.event_name != 'pull_request'
         run: python update_news.py
       - name: Recuperar noticias históricas pendientes del 16 al 24 de octubre
+        if: github.event_name != 'pull_request'
         run: python scripts/recuperar_octubre_2026.py
       - name: Generar titulares recientes de animales
+        if: github.event_name != 'pull_request'
         run: python scripts/animales_feed.py
       - name: Buscar fotografías recientes y revisar licencias en Wikimedia Commons
+        if: github.event_name != 'pull_request'
         run: python scripts/actualizar_fotos.py
       - name: Publicar cambios y eliminar noticias vencidas
         if: github.event_name != 'pull_request'
