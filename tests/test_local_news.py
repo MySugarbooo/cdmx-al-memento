@@ -4,7 +4,7 @@ import unittest
 from pathlib import Path
 from scripts.notas_locales import assign_photos, local_link, summarize, is_sensitive_media, RADIO_FORMULA_CASA_ECOLOGICA_SOURCE_URL
 from scripts.build_article_seo import article_id, render
-from update_news import category_by_headline, standardize, photo_needs_refresh, CAPITAL_CDMX_CARE_BUDGET_SOURCE_URL
+from update_news import category_by_headline, standardize, photo_needs_refresh, CAPITAL_CDMX_CARE_BUDGET_SOURCE_URL, prioritize_photo_refresh
 
 ROOT=Path(__file__).resolve().parents[1]
 
@@ -480,6 +480,43 @@ class LocalNewsTests(unittest.TestCase):
         self.assertIn(CAPITAL_CDMX_CARE_BUDGET_SOURCE_URL, result["brief"]["method"])
         article_html = render(result, article_id(result))
         self.assertIn(CAPITAL_CDMX_CARE_BUDGET_SOURCE_URL, article_html)
+
+    def test_priority_photo_refresh_selects_confirmed_mismatches_before_newer_items(self):
+        items = [
+            {
+                "title": "Noticia reciente de la Ciudad de México",
+                "date": "2026-11-13",
+                "published_at": "2026-11-13T06:00:00Z",
+                "local_url": "/noticias/?id=aaaaaaaaaaaaaaaaaaaa&mes=2026-11",
+            },
+            {
+                "title": "Cuántos tianguis hay en CDMX: alcaldías y días",
+                "date": "2026-11-12",
+                "published_at": "2026-11-13T04:20:22Z",
+                "local_url": "/noticias/?id=0c33b04b7334d4181e86&mes=2026-11",
+            },
+            {
+                "title": "Presupuesto de cuidados 2027: ¿cuánto llegará a la CDMX y cómo se puede comprobar?",
+                "date": "2026-11-12",
+                "published_at": "2026-11-13T04:30:03Z",
+                "local_url": "/noticias/?id=74914aa9a2dc0fd99b2f&mes=2026-11",
+            },
+            {
+                "title": "Repartidores anuncian dos bloqueos estratégicos en CDMX; estas son sus demandas",
+                "date": "2026-11-12",
+                "published_at": "2026-11-13T04:38:01Z",
+                "local_url": "/noticias/?id=f1be52ec354f62a26ecf&mes=2026-11",
+            },
+        ]
+        selected = prioritize_photo_refresh(items, limit=3)
+        self.assertEqual(
+            [item["title"] for item in selected],
+            [
+                "Repartidores anuncian dos bloqueos estratégicos en CDMX; estas son sus demandas",
+                "Presupuesto de cuidados 2027: ¿cuánto llegará a la CDMX y cómo se puede comprobar?",
+                "Cuántos tianguis hay en CDMX: alcaldías y días",
+            ],
+        )
 
     def test_ssc_buen_fin_operativo_is_security_and_uses_official_facts(self):
         title = ("2999: La SSC implementará un operativo de seguridad, vigilancia y vialidad "
