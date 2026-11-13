@@ -1301,8 +1301,22 @@ def _photo_category(article):
     headline=re.sub(r"\b(?:pone|ponen|puso|poner|puesta|entra|entro|entrara)\s+en\s+marcha\b",
                     "activa", headline)
     # Los conciertos y las notas sobre cantantes pertenecen a Cultura.
-    if re.search(r"\b(?:cantantes?|cantautores?|gira musical|canciones? ineditas|musica en vivo|teatro metropolitan)\b", headline):
+    if re.search(r"\b(?:cantantes?|cantautores?|gira musical|canciones? ineditas|musica en vivo|teatro metropolitan|garbage|shirley manson)\b", headline):
         return "Cultura"
+    if re.search(r"\bpokemon go\b", headline):
+        return "Cultura"
+    if (re.search(r"\b(?:aeropuerto|aicm)\b", headline)
+            and re.search(r"\b(?:vuelos?|afectaciones?|salidas?|llegadas?)\b", headline)):
+        return "Movilidad"
+    if (re.search(r"\bmercados?\b", headline)
+            and re.search(r"\b(?:recibiran|un millon de pesos|mejorar sus instalaciones|inversion)\b", headline)):
+        return "Servicios"
+    if (re.search(r"\bc5\b", headline)
+            and re.search(r"\b(?:camaras?|vigilar|vigilara|vigilancia)\b", headline)):
+        return "Seguridad"
+    if (re.search(r"\bmarchas?\b", headline)
+            and re.search(r"\b(?:colapsar|trafico|puntos de partida|cierres?|bloqueos?)\b", headline)):
+        return "Movilidad"
     # Los planes de electrificación del transporte público son materia de Movilidad.
     if (re.search(r"\b(?:transporte(?: publico)?|movilidad)\b", headline)
             and re.search(r"\b(?:electrico|electrica|electrificacion)\b", headline)):
@@ -1725,6 +1739,16 @@ STRICT_PHOTO_TOPICS = (
     # Una nota sobre una orquesta necesita contexto musical, incluido un coro representativo.
     (r"\b(?:orquesta|aniversario musical)\b",
      r"\b(?:orquestas?|musica|conciertos?|guitarras?|bandas?|coros?|coral|escenarios?|cantantes?|festivales?|auditorios?|estadios?)\b"),
+    # La banda Garbage requiere una foto de concierto o música en vivo.
+    (r"\b(?:garbage|shirley manson)\b",
+     r"\b(?:conciertos?|musica en vivo|bandas?|escenarios?|rock|cantantes?|festivales?|auditorios?|estadios?)\b"),
+    # Pokémon Go requiere contexto de videojuegos, no una fotografía de mercado.
+    (r"\bpokemon go\b",
+     r"\b(?:pokemon|videojuegos?|consolas?|juegos? moviles?|realidad aumentada|jugadores? con celular)\b"),
+    # Las afectaciones de vuelos requieren aviones o instalaciones aeroportuarias.
+    (r"\b(?:aeropuerto|aicm)\b.*\b(?:vuelos?|afectaciones?|salidas?|llegadas?)\b",
+     r"\b(?:aeropuertos?|aviones?|aeronaves?|aviacion|terminal aeroportuaria|pista de aterrizaje|aicm|terminal 1|terminal 2)\b"),
+
 )
 
 def _photo_score(article, photo):
@@ -2006,7 +2030,7 @@ def _photo_score(article, photo):
         r"\b(?:riff|musica|orquestas?|coros?|coral|conciertos?|bandas?|cantantes?|canta|cantar|aniversario musical|"
         r"canciones? ineditas|teatro metropolitan|maria leon|era de villana|"
         r"tame impala|karol g|regresa a mexico|regresan a mexico|dos noches en cdmx|"
-        r"giras?|tours?|shows?|presentaciones? en cdmx|fechas? en cdmx)\b",
+        r"giras?|tours?|shows?|presentaciones? en cdmx|fechas? en cdmx|garbage|shirley manson)\b",
         headline,
     ))
     music_photo = bool(re.search(
@@ -2014,6 +2038,25 @@ def _photo_score(article, photo):
         r"escenario|festival|teatro metropolitan|auditorio nacional|palacio de los deportes)\b",
         context,
     ))
+    game_story = bool(re.search(
+        r"\b(?:pokemon go|videojuegos?|juegos? moviles?|realidad aumentada)\b",
+        headline,
+    ))
+    game_photo = bool(re.search(
+        r"\b(?:pokemon|videojuegos?|consolas?|juegos? moviles?|realidad aumentada|jugadores? con celular)\b",
+        context,
+    ))
+    if game_story and not game_photo:
+        return -10000
+    market_funding_story = bool(re.search(
+        r"\bmercados? de cdmx recibiran un millon de pesos\b", headline
+    ))
+    market_funding_photo = bool(
+        re.search(r"\b(?:mercados?|mercado publico|mercado de abasto)\b", context)
+        and not re.search(r"\b(?:covid|sanidad|epidemia)\b", context)
+    )
+    if market_funding_story and not market_funding_photo:
+        return -10000
     if music_story and not music_photo:
         return -10000
     # La nota de María León requiere contexto de concierto, no solo música o un coro.
@@ -2246,6 +2289,8 @@ def _photo_score(article, photo):
     if entertainment_person_story and not entertainment_photo:
         return -10000
     themed_category = (
+        (photo_category == "Seguridad" and game_story and game_photo)
+        or (photo_category == "Servicios" and market_funding_story and market_funding_photo)
         (photo_category == "Cultura" and music_story and music_photo)
         or (photo_category == "Medio Ambiente" and (
             (weather_story and weather_photo) or (animal_story and animal_photo)
