@@ -1652,5 +1652,40 @@ class PhotoRelevanceTests(unittest.TestCase):
             assign_photos([article])
         self.assertNotIn("photo", article)
 
+
+    def test_maria_leon_concert_rejects_unrelated_dance_photo_and_uses_concert_context(self):
+        title = ("María León presentó su nueva “Era de Villana” en el Teatro Metropólitan "
+                 "de la CDMX: entre invitados, nostalgia y canciones inéditas")
+        article = news.standardize({
+            "title": title,
+            "url": "https://news.google.com/rss/articles/maria-leon-photo-regression",
+            "source": "Infobae",
+            "date": "2026-11-13",
+            "published_at": "2026-11-13T07:53:32Z",
+            "category": "CDMX",
+        })
+        self.assertEqual(category_by_headline(title, "CDMX", "Infobae"), "Cultura")
+        self.assertEqual(article["category"], "Cultura")
+        dance = representative_photo(
+            "unrelated_dance_photo", "Cultura",
+            "Danza del Fuego performance outside Museo Nacional de Antropología, Chapultepec, CDMX",
+            ["Danza del Fuego", "Museo Nacional de Antropología", "danza"],
+        )
+        dance["source"] = "https://commons.wikimedia.org/wiki/File:Danza_del_Fuego.jpg"
+        concert = representative_photo(
+            "contexto_concierto_palacio_deportes_2009", "Cultura",
+            "Concierto de Kings of Leon en el Palacio de los Deportes, Ciudad de México (octubre de 2009); imagen representativa, no corresponde a María León.",
+            ["concierto", "música en vivo", "Palacio de los Deportes", "Ciudad de México"],
+        )
+        concert["source"] = "https://commons.wikimedia.org/wiki/File:PalaciodelosDeportes_Concierto.jpg"
+        self.assertLess(_photo_score(article, dance), 0)
+        self.assertGreaterEqual(_photo_score(article, concert), 0)
+        self.assertTrue(news.photo_needs_refresh({**article, "photo": dance}))
+        with patch.object(photos, "_pool", return_value=[dance, concert]), patch.object(
+            photos, "_load", return_value=[]
+        ):
+            assign_photos([article])
+        self.assertEqual(article["photo"]["id"], "contexto_concierto_palacio_deportes_2009")
+
 if __name__ == "__main__":
     unittest.main()
