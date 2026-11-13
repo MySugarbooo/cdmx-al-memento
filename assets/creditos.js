@@ -1,5 +1,5 @@
 'use strict';
-/* Consulta escalonada de atribuciones: 1,112 fichas sin crear 1,100 nodos iniciales. */
+/* Consulta escalonada de atribuciones: 1,114 fichas sin crear 1,100 nodos iniciales. */
 (()=>{
  const holder=document.getElementById('extra-photo-credits');
  if(!holder)return;
@@ -9,7 +9,7 @@
  const validSource=u=>/^https:\/\/commons\.wikimedia\.org\/wiki\/File:/.test(String(u||''));
  const validLicense=u=>/^https:\/\/creativecommons\.org\//.test(String(u||''));
  const notice='Imagen de carácter ilustrativo y referencial; no constituye evidencia gráfica de los hechos descritos.';
- fetch('/assets/fotos/catalogo-editorial-1100.json?v=20261113-editorial-photo-context1',{cache:'force-cache'})
+ fetch('/assets/fotos/catalogo-editorial-1100.json?v=20261113-editorial-photo-context2',{cache:'force-cache'})
  .then(r=>{if(!r.ok)throw Error('HTTP '+r.status);return r.json()})
  .then(data=>{
   const photos=(data.photos||[]).filter(p=>p&&p.author&&p.license&&validSource(p.source)&&validLicense(p.licenseUrl));
