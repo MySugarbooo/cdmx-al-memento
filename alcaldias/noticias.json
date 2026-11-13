@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-13 08:01 UTC",
+  "updated": "2026-11-13 08:20 UTC",
   "boroughs": [
     {
       "name": "La Magdalena Contreras",
@@ -1149,27 +1149,6 @@
           "borough": "Álvaro Obregón",
           "location": "Álvaro Obregón (mencionada en el titular)",
           "local_url": "/noticias/?id=58ddee32893c310b7a51&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con Enfoque Noticias, el titular publicado es: «CDMX instalará miles de sistemas para captar agua de lluvia en Álvaro Obregón». El titular de Enfoque Noticias aborda la captación y aprovechamiento de agua pluvial en Álvaro Obregón. Se trata de una práctica o iniciativa relacionada con el uso del agua; no es un aviso meteorológico. Para conocer su alcance y resultados es necesario consultar el reportaje original.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "commons_152180162",
-            "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Cosecha_de_Lluvia_04.jpg/960px-Cosecha_de_Lluvia_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "category": "Medio Ambiente",
-            "borough": "",
-            "topic": "Cosecha de Lluvia 04",
-            "keywords": [
-              "Lluvia Ciudad de México"
-            ],
-            "author": "Gobierno de la Ciudad de México",
-            "license": "CC BY 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Cosecha_de_Lluvia_04.jpg"
-          },
           "alternate_versions": [
             {
               "title": "CDMX instalará miles de sistemas para captar agua de lluvia en Álvaro Obregón",
@@ -1237,7 +1216,28 @@
                 "source": "https://commons.wikimedia.org/wiki/File:Cosecha_de_Lluvia_04.jpg"
               }
             }
-          ]
+          ],
+          "brief": {
+            "lead": "De acuerdo con Enfoque Noticias, el titular publicado es: «CDMX instalará miles de sistemas para captar agua de lluvia en Álvaro Obregón». El titular de Enfoque Noticias aborda la captación y aprovechamiento de agua pluvial en Álvaro Obregón. Se trata de una práctica o iniciativa relacionada con el uso del agua; no es un aviso meteorológico. Para conocer su alcance y resultados es necesario consultar el reportaje original.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "commons_152180162",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Cosecha_de_Lluvia_04.jpg/960px-Cosecha_de_Lluvia_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "category": "Medio Ambiente",
+            "borough": "",
+            "topic": "Cosecha de Lluvia 04",
+            "keywords": [
+              "Lluvia Ciudad de México"
+            ],
+            "author": "Gobierno de la Ciudad de México",
+            "license": "CC BY 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Cosecha_de_Lluvia_04.jpg"
+          }
         },
         {
           "title": "CDMX lanza el programa \"Casa Ecológica\" en Álvaro Obregón con ecotecnias y gallinas ponedoras",
@@ -3363,6 +3363,27 @@
           "borough": "Azcapotzalco",
           "location": "Azcapotzalco (mencionada en el titular)",
           "local_url": "/noticias/?id=378f11254ab9246f0c09&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con El Universal, el titular publicado es: «Asesinan a balazos a adulto mayor en Azcapotzalco». La información publicada por El Universal aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "seguridad",
+            "kind": "representativa",
+            "url": "/assets/fotos/seguridad.jpg",
+            "category": "Seguridad",
+            "borough": "",
+            "topic": "Patrulla de Ciudad de México",
+            "keywords": [
+              "Seguridad"
+            ],
+            "author": "RainerRowe",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.es",
+            "source": "https://commons.wikimedia.org/wiki/File:Patrulla_cdmx.jpg"
+          },
           "alternate_versions": [
             {
               "title": "Asesinan a balazos a adulto mayor en Azcapotzalco",
@@ -3397,28 +3418,7 @@
                 "source": "https://commons.wikimedia.org/wiki/File:Patrulla_cdmx.jpg"
               }
             }
-          ],
-          "brief": {
-            "lead": "De acuerdo con El Universal, el titular publicado es: «Asesinan a balazos a adulto mayor en Azcapotzalco». La información publicada por El Universal aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
-            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "seguridad",
-            "kind": "representativa",
-            "url": "/assets/fotos/seguridad.jpg",
-            "category": "Seguridad",
-            "borough": "",
-            "topic": "Patrulla de Ciudad de México",
-            "keywords": [
-              "Seguridad"
-            ],
-            "author": "RainerRowe",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.es",
-            "source": "https://commons.wikimedia.org/wiki/File:Patrulla_cdmx.jpg"
-          }
+          ]
         },
         {
           "title": "Matan a 'El Cañas', presunto narcomenudista, en el barrio de San Sebastián en Azcapotzalco",
@@ -4810,8 +4810,41 @@
     },
     {
       "name": "Coyoacán",
-      "count": 180,
+      "count": 182,
       "articles": [
+        {
+          "title": "Hannah De Lamadrid se reúne con jóvenes universitarios en Coyoacán",
+          "description": "De acuerdo con El Heraldo de México, el titular publicado es: «Hannah De Lamadrid se reúne con jóvenes universitarios en Coyoacán». La información publicada por El Heraldo de México aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPS2VRTVVXNFh0eVNwc3UwM1FQUzZpWkt6MTNCX3B3RUVlZ1FOckZEeTA2VjJLMlpsWjdDd1QtdTBkM1kwem0xeXRCdzlfLVBsUVJhd2V6ZDhYMVRwTHRaWTF1UGNZVTlPUW9UTXRrbU1TOW5GS19ueHFvdzRRN2pIZG5CYUJQT2lfSUZUTS1zSW1fakRham5uNHRhMWRTMW9CZ2Exc0VlWm8zenpGX3ljdDdPSU9EWVUwZ1ozZENJVkJaOF8wVTU3aDln?oc=5",
+          "source": "El Heraldo de México",
+          "date": "2026-11-12",
+          "published_at": "2026-11-13T01:18:49Z",
+          "category": "CDMX",
+          "borough": "Coyoacán",
+          "location": "Coyoacán (mencionada en el titular)",
+          "local_url": "/noticias/?id=a2e024698ee8b0a5e4dd&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con El Heraldo de México, el titular publicado es: «Hannah De Lamadrid se reúne con jóvenes universitarios en Coyoacán». La información publicada por El Heraldo de México aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "commons_88843613",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Casa_Gonz%C3%A1lez_de_Cos%C3%ADo%2C_Coyoac%C3%A1n%2C_Ciudad_de_M%C3%A9xico.jpg/960px-Casa_Gonz%C3%A1lez_de_Cos%C3%ADo%2C_Coyoac%C3%A1n%2C_Ciudad_de_M%C3%A9xico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "category": "CDMX",
+            "borough": "",
+            "topic": "Casa González de Cosío, Coyoacán, Ciudad de México",
+            "keywords": [
+              "CDMX"
+            ],
+            "author": "ProtoplasmaKid",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Casa_Gonz%C3%A1lez_de_Cos%C3%ADo,_Coyoac%C3%A1n,_Ciudad_de_M%C3%A9xico.jpg"
+          }
+        },
         {
           "title": "Muere profesor dentro de las instalaciones del CCH Sur de la UNAM en alcaldía Coyoacán",
           "description": "De acuerdo con Infobae, el titular publicado es: «Muere profesor dentro de las instalaciones del CCH Sur de la UNAM en alcaldía Coyoacán». La información publicada por Infobae aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -5063,27 +5096,6 @@
           "borough": "Coyoacán",
           "location": "Coyoacán (mencionada en el titular)",
           "local_url": "/noticias/?id=110302b6dd82f9f602a3&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con El Soberano, el titular publicado es: «¡Cómplices de la agresión! El PAN CDMX avala la violencia en Coyoacán mientras el Pueblo exige justicia». La información publicada por El Soberano aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "commons_80020584",
-            "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Iglesia_de_San_Juan_Bautista_en_Coyoac%C3%A1n_Ciudad_de_M%C3%A9xico.jpg/960px-Iglesia_de_San_Juan_Bautista_en_Coyoac%C3%A1n_Ciudad_de_M%C3%A9xico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "category": "CDMX",
-            "borough": "",
-            "topic": "Iglesia de San Juan Bautista en Coyoacán Ciudad de México",
-            "keywords": [
-              "CDMX"
-            ],
-            "author": "Juan Carlos Fonseca Mata",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Iglesia_de_San_Juan_Bautista_en_Coyoac%C3%A1n_Ciudad_de_M%C3%A9xico.jpg"
-          },
           "alternate_versions": [
             {
               "title": "¡Cómplices de la agresión! El PAN CDMX avala la violencia en Coyoacán mientras el Pueblo exige justicia",
@@ -5118,7 +5130,28 @@
                 "source": "https://commons.wikimedia.org/wiki/File:Iglesia_de_San_Juan_Bautista_en_Coyoac%C3%A1n_Ciudad_de_M%C3%A9xico.jpg"
               }
             }
-          ]
+          ],
+          "brief": {
+            "lead": "De acuerdo con El Soberano, el titular publicado es: «¡Cómplices de la agresión! El PAN CDMX avala la violencia en Coyoacán mientras el Pueblo exige justicia». La información publicada por El Soberano aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "commons_80020584",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Iglesia_de_San_Juan_Bautista_en_Coyoac%C3%A1n_Ciudad_de_M%C3%A9xico.jpg/960px-Iglesia_de_San_Juan_Bautista_en_Coyoac%C3%A1n_Ciudad_de_M%C3%A9xico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "category": "CDMX",
+            "borough": "",
+            "topic": "Iglesia de San Juan Bautista en Coyoacán Ciudad de México",
+            "keywords": [
+              "CDMX"
+            ],
+            "author": "Juan Carlos Fonseca Mata",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Iglesia_de_San_Juan_Bautista_en_Coyoac%C3%A1n_Ciudad_de_M%C3%A9xico.jpg"
+          }
         },
         {
           "title": "\"¡No queremos más torres!\": vecinos de Coyoacán se rebelan contra megaproyecto inmobiliario",
@@ -5564,6 +5597,24 @@
             "license": "CC BY-SA 4.0",
             "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
             "source": "https://commons.wikimedia.org/wiki/File:JardinCentenarioCoyoacan.JPG"
+          }
+        },
+        {
+          "title": "Skyline Coyoacán: vecinos protestan por temor a falta de agua y riesgos para sus viviendas",
+          "description": "De acuerdo con sdpnoticias, el titular publicado es: «Skyline Coyoacán: vecinos protestan por temor a falta de agua y riesgos para sus viviendas». La información publicada por sdpnoticias aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQWUZYLTJEQXpheU5laFc3aDJHVVV4TjVGSEE2VVUtN1FwNEpDUW1qZHlIQThtYVcwTTVjX2g4V0tOTkVtQ2JDQXVJSUxzX25NWUpUa0VNbVktcF9TdHkzeWpZSGJNd01kYXRwNzhmdUFYQVBQM2JxamFUbjdBeGFQZGhOM3dKVXZQNzJ3QXpXYkY4TXFiU0Vnck1GaDQta2F6dDVDWWNESVNuRXZtTlJzOEJSbzFFSkVsWGhzcDluSXhLTVpHVlRwVjVoUQ?oc=5",
+          "source": "sdpnoticias",
+          "date": "2026-11-11",
+          "published_at": "2026-11-11T19:41:36Z",
+          "category": "CDMX",
+          "borough": "Coyoacán",
+          "location": "Coyoacán (mencionada en el titular)",
+          "local_url": "/noticias/?id=3f78d06f2dad731c1a54&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con sdpnoticias, el titular publicado es: «Skyline Coyoacán: vecinos protestan por temor a falta de agua y riesgos para sus viviendas». La información publicada por sdpnoticias aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           }
         },
         {
@@ -6294,72 +6345,6 @@
             "license": "CC BY-SA 4.0",
             "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
             "source": "https://commons.wikimedia.org/wiki/File:Casa_Gonz%C3%A1lez_de_Cos%C3%ADo,_Coyoac%C3%A1n,_Ciudad_de_M%C3%A9xico.jpg"
-          }
-        },
-        {
-          "title": "Reportan a Persona Inconsciente Dentro de Hotel en Coyoacán, CDMX",
-          "description": "De acuerdo con N+, el titular publicado es: «Reportan a Persona Inconsciente Dentro de Hotel en Coyoacán, CDMX». La información publicada por N+ aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxORi1MdVRQcUNHV0VLdEtmODF2X2hhRXdzSmM4QjJhcHJQeGZ4ZV82RTlmcXN4eWpUYTFIWmV0ZWtZLXVXQXNmLVlIUXdhb1VQbW5RUXJ0X2htc2VXNkNxSllrdVUyWERIbDVESkE3T2ZCeXdNVzRlR3cxZjFNSmJTSUVpaUVQOTNKNzRGNmNuZWxEYWtwTWxpS190MTYzX3dCSEt4ajlINzg0UWEycDZDYXZJTDY1dHY3NUNCbHN4SjN5NWJkWFl4VlF3?oc=5",
-          "source": "N+",
-          "date": "2026-11-08",
-          "published_at": "2026-11-08T18:07:26Z",
-          "category": "CDMX",
-          "borough": "Coyoacán",
-          "location": "Coyoacán (mencionada en el titular)",
-          "local_url": "/noticias/?id=fba83cf48901dbeb5c8e&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con N+, el titular publicado es: «Reportan a Persona Inconsciente Dentro de Hotel en Coyoacán, CDMX». La información publicada por N+ aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "commons_106559902",
-            "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/4._Coyoac%C3%A1n_banca_Ciudad_de_M%C3%A9xico.jpg/960px-4._Coyoac%C3%A1n_banca_Ciudad_de_M%C3%A9xico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "category": "CDMX",
-            "borough": "",
-            "topic": "4. Coyoacán banca Ciudad de México",
-            "keywords": [
-              "CDMX"
-            ],
-            "author": "Machristen",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:4._Coyoac%C3%A1n_banca_Ciudad_de_M%C3%A9xico.jpg"
-          }
-        },
-        {
-          "title": "Hannah De Lamadrid y Morena CDMX, unidos por rentas justas en Coyoacán",
-          "description": "De acuerdo con Quadratín México, el titular publicado es: «Hannah De Lamadrid y Morena CDMX, unidos por rentas justas en Coyoacán». El reportaje citado por Quadratín México aborda los precios de vivienda o los cambios residenciales en Coyoacán. Las cifras y su metodología deben examinarse antes de concluir cuántas familias han sido desplazadas o qué tan representativos son determinados anuncios de renta.",
-          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPcE1pTlVWTDJWTmZNU194VVB1MFNuNngwSFd5OVdJZUJ1dHkyVkd1ZktaejJhLW13c1lnWEFfekFMZFVocEhxdE9aQlNUME9nbllmdFk0amFaUVI0RTF1cEpNcWZPM2dzWmlVWlFuZ0MwUkxJY0Q1T1pxWmpyX3BXRGpOQTczVVdMNnhfa2lGMWJKYnBPTlVWaXEycUplVi1qUHRPWQ?oc=5",
-          "source": "Quadratín México",
-          "date": "2026-11-08",
-          "published_at": "2026-11-08T17:15:00Z",
-          "category": "CDMX",
-          "borough": "Coyoacán",
-          "location": "Coyoacán (mencionada en el titular)",
-          "local_url": "/noticias/?id=51a1c67c8c0d4775577c&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con Quadratín México, el titular publicado es: «Hannah De Lamadrid y Morena CDMX, unidos por rentas justas en Coyoacán». El reportaje citado por Quadratín México aborda los precios de vivienda o los cambios residenciales en Coyoacán. Las cifras y su metodología deben examinarse antes de concluir cuántas familias han sido desplazadas o qué tan representativos son determinados anuncios de renta.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "commons_164311377",
-            "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Casa_Centro_Hist%C3%B3rico_de_la_Ciudad_de_M%C3%A9xico_03.jpg/960px-Casa_Centro_Hist%C3%B3rico_de_la_Ciudad_de_M%C3%A9xico_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "category": "CDMX",
-            "borough": "",
-            "topic": "Casa Centro Histórico de la Ciudad de México 03",
-            "keywords": [
-              "Centro Histórico Ciudad de México"
-            ],
-            "author": "Correogsk",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Casa_Centro_Hist%C3%B3rico_de_la_Ciudad_de_M%C3%A9xico_03.jpg"
           }
         }
       ]
@@ -12444,6 +12429,27 @@
           "borough": "Miguel Hidalgo",
           "location": "Miguel Hidalgo (mencionada en el titular)",
           "local_url": "/noticias/?id=aee8a33b50247d91fc4f&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con El Heraldo de México, el titular publicado es: «Tabe reporta más vigilancia y alumbrado en Miguel Hidalgo; destaca apoyos a mujeres». La información publicada por El Heraldo de México aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "archivo_seguridad_002",
+            "kind": "representativa",
+            "url": "/assets/fotos/archivo_seguridad_002.jpg",
+            "category": "Seguridad",
+            "borough": "",
+            "topic": "Patrulla vecinal",
+            "keywords": [
+              "Seguridad"
+            ],
+            "author": "Daniel Yonka",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Patrulla_vecinal.jpg"
+          },
           "alternate_versions": [
             {
               "title": "Tabe reporta más vigilancia y alumbrado en Miguel Hidalgo; destaca apoyos a mujeres",
@@ -12574,28 +12580,7 @@
                 "source": "https://commons.wikimedia.org/wiki/File:Patrulla_vecinal.jpg"
               }
             }
-          ],
-          "brief": {
-            "lead": "De acuerdo con El Heraldo de México, el titular publicado es: «Tabe reporta más vigilancia y alumbrado en Miguel Hidalgo; destaca apoyos a mujeres». La información publicada por El Heraldo de México aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
-            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "archivo_seguridad_002",
-            "kind": "representativa",
-            "url": "/assets/fotos/archivo_seguridad_002.jpg",
-            "category": "Seguridad",
-            "borough": "",
-            "topic": "Patrulla vecinal",
-            "keywords": [
-              "Seguridad"
-            ],
-            "author": "Daniel Yonka",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Patrulla_vecinal.jpg"
-          }
+          ]
         },
         {
           "title": "Mauricio Tabe presenta balance de cinco años en Miguel Hidalgo",
@@ -14171,6 +14156,27 @@
           "borough": "Tláhuac",
           "location": "Tláhuac (mencionada en el titular)",
           "local_url": "/noticias/?id=38640ee4044a9a4c0767&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con Diario CDMX, el titular publicado es: «Más de 3 millones de visitantes disfrutaron del Festival Internacional de Día de Muertos Tláhuac 2026». La información publicada por Diario CDMX aborda un asunto que este portal clasifica como Cultura. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "La actividad cultural abre oportunidades de encuentro, aprendizaje y disfrute para habitantes y visitantes.",
+            "pending": "Los accesos, boletos, sedes, cupos y horarios deben consultarse con la institución organizadora. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "reciente_d3bf2851210c8f52",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Desfile_de_Catrinas_in_Mexico_City_2026_%2853%29.jpg/1280px-Desfile_de_Catrinas_in_Mexico_City_2026_%2853%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "category": "CDMX",
+            "borough": "",
+            "topic": "Desfile de Catrinas in Mexico City 2026 (53)",
+            "keywords": [
+              "CDMX"
+            ],
+            "author": "Gedankenstuecke",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Desfile_de_Catrinas_in_Mexico_City_2026_(53).jpg"
+          },
           "alternate_versions": [
             {
               "title": "Más de 3 millones de visitantes disfrutaron del Festival Internacional de Día de Muertos Tláhuac 2026",
@@ -14298,28 +14304,7 @@
                 "source": "https://commons.wikimedia.org/wiki/File:Desfile_de_Catrinas_in_Mexico_City_2026_(53).jpg"
               }
             }
-          ],
-          "brief": {
-            "lead": "De acuerdo con Diario CDMX, el titular publicado es: «Más de 3 millones de visitantes disfrutaron del Festival Internacional de Día de Muertos Tláhuac 2026». La información publicada por Diario CDMX aborda un asunto que este portal clasifica como Cultura. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "La actividad cultural abre oportunidades de encuentro, aprendizaje y disfrute para habitantes y visitantes.",
-            "pending": "Los accesos, boletos, sedes, cupos y horarios deben consultarse con la institución organizadora. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "reciente_d3bf2851210c8f52",
-            "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Desfile_de_Catrinas_in_Mexico_City_2026_%2853%29.jpg/1280px-Desfile_de_Catrinas_in_Mexico_City_2026_%2853%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "category": "CDMX",
-            "borough": "",
-            "topic": "Desfile de Catrinas in Mexico City 2026 (53)",
-            "keywords": [
-              "CDMX"
-            ],
-            "author": "Gedankenstuecke",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Desfile_de_Catrinas_in_Mexico_City_2026_(53).jpg"
-          }
+          ]
         },
         {
           "title": "Óscar “N” es investigado por el feminicidio de Karla y su hija Osiris, ocurrido en Tláhuac, con ataques con arma blanca.",
@@ -15995,7 +15980,6 @@
             "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           },
-          "sensitive_media": true,
           "alternate_versions": [
             {
               "title": "Detienen a hombre acusado de maltratar perros en CDMX tras recibir golpiza de vecinos en Tlalpan",
@@ -16030,7 +16014,8 @@
                 "source": "https://commons.wikimedia.org/wiki/File:Animales_Bosque_de_Tlalpan_08.JPG"
               }
             }
-          ]
+          ],
+          "sensitive_media": true
         },
         {
           "title": "Detienen a presunto abusador sexual de animales en situación de calle en CDMX: activistas piden que las investigaciones lleguen a fondo",
