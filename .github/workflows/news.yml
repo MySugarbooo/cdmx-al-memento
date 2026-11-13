@@ -7,6 +7,10 @@ on:
     branches: [main]
     paths:
       - '.github/workflows/news.yml'
+      - '.github/workflows/article-seo.yml'
+      - 'scripts/build_article_seo.py'
+      - 'tests/test_article_photo.py'
+      - 'tests/test_article_seo_workflow.py'
       - 'update_news.py'
       - 'index.html'
       - 'tests/test_neo_home_stability.py'
