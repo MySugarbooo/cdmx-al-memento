@@ -1679,7 +1679,13 @@ class PhotoRelevanceTests(unittest.TestCase):
             ["concierto", "música en vivo", "Palacio de los Deportes", "Ciudad de México"],
         )
         concert["source"] = "https://commons.wikimedia.org/wiki/File:PalaciodelosDeportes_Concierto.jpg"
+        choir = representative_photo(
+            "unrelated_cathedral_choir", "Cultura",
+            "Coro de la Catedral metropolitana de la Ciudad de México 01",
+            ["coro", "Catedral metropolitana", "música", "Ciudad de México"],
+        )
         self.assertLess(_photo_score(article, dance), 0)
+        self.assertLess(_photo_score(article, choir), 0)
         self.assertGreaterEqual(_photo_score(article, concert), 0)
         self.assertTrue(news.photo_needs_refresh({**article, "photo": dance}))
         article["photo"] = dance
@@ -1770,8 +1776,13 @@ class PhotoRelevanceTests(unittest.TestCase):
             if item.get("source") == "Infobae" and "maria leon" in photos._photo_fold(item.get("title", ""))
         )
         self.assertIsNotNone(maria.get("photo"))
+        self.assertEqual(maria["photo"].get("id"), "contexto_concierto_palacio_deportes_2009")
+        self.assertEqual(maria["photo"].get("kind"), "representativa")
         self.assertGreaterEqual(_photo_score(maria, maria["photo"]), 0)
-        self.assertNotIn("danza del fuego", photos._photo_fold(maria["photo"].get("topic", "")))
+        maria_photo_topic = photos._photo_fold(maria["photo"].get("topic", ""))
+        self.assertIn("palacio de los deportes", maria_photo_topic)
+        self.assertNotIn("coro de la catedral", maria_photo_topic)
+        self.assertNotIn("danza del fuego", maria_photo_topic)
         self.assertGreater(stats["unique"], 0)
 
 if __name__ == "__main__":
