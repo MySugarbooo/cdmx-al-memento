@@ -1029,7 +1029,7 @@ PHOTO_BOROUGH_ALIASES = {
     "benito juarez": ("benito juarez",),
     "coyoacan": ("coyoacan",),
     "cuajimalpa de morelos": ("cuajimalpa de morelos", "cuajimalpa"),
-    "cuauhtemoc": ("cuauhtemoc", "condesa", "parque espana", "roma norte", "roma sur"),
+    "cuauhtemoc": ("cuauhtemoc", "condesa", "parque espana", "colonia roma", "roma norte", "roma sur"),
     "gustavo a madero": ("gustavo a madero", "gustavo amadero"),
     "iztacalco": ("iztacalco",),
     "iztapalapa": ("iztapalapa",),
@@ -1426,6 +1426,29 @@ STRICT_PHOTO_TOPICS = (
     # Una jornada de búsqueda requiere colectivos o personas desaparecidas, no jardines genéricos.
     (r"\b(?:colectivos? en jornada de busqueda|jornada de busqueda|colectivos? de busqueda)\b(?!.*\b(?:bloque\w*|protest\w*|manifest\w*|march\w*|planton\w*|movilizacion\w*)\b)",
      r"\b(?:colectivos? de busqueda|personas desaparecidas|madres? buscadoras?|familias? buscadoras?|busqueda de campo|rastreo|fiscalia)\b"),
+    # Un informe de gobierno de una alcaldía necesita contexto de esa demarcación.
+    (r"\btabe.*\binforme de gobierno\b",
+     r"\b(?:miguel hidalgo|chapultepec|bosque de chapultepec|alcaldia miguel hidalgo)\b"),
+    # Las notas del Congreso local requieren el recinto legislativo, no una avenida homónima.
+    (r"\b(?:congreso capitalino|congreso de la cdmx|congreso de la ciudad de mexico)\b",
+     r"\b(?:congreso de la ciudad de mexico|palacio legislativo|donceles|recinto legislativo|sala de sesiones)\b"),
+    (r"\bplan general de desarrollo\b",
+     r"\b(?:plan general de desarrollo|planeacion urbana|urbanismo|recinto legislativo|congreso de la ciudad de mexico|palacio legislativo|donceles|sala de sesiones|mapa urbano|documento de planeacion)\b"),
+    # Las iniciativas de justicia ambiental necesitan paisaje o biodiversidad, no un palacio.
+    (r"\b(?:justicia ambiental|proteger la biodiversidad|biodiversidad)\b",
+     r"\b(?:parque ecologico|bosque|viveros|jardin escenico|biodiversidad|flora|fauna|areas verdes|ecosistema)\b"),
+    # Los programas de casa ecológica requieren una ecotecnia visible o captación de lluvia/solar.
+    (r"\b(?:casa ecologica|ecotecnias?|calentadores? solares?|captadores? de agua|sistemas? de captacion)\b",
+     r"\b(?:cosecha de lluvia|captacion de agua|calentadores? solares?|paneles? solares?|energia solar|ecotecnias?|casa ecologica|sistemas? de captacion|cisternas?)\b"),
+    # Una guía de Pueblos Mágicos no se ilustra con una calle del Centro de CDMX.
+    (r"\b(?:pueblos? magicos?|escapada de tres dias|escapadas? a pueblos)\b",
+     r"\b(?:pueblos? magicos?|tepotzotlan|tepoztlan|valle de bravo|malinalco|taxco|huasca|real del monte|atlixco|tlayacapan|cholula)\b"),
+    # Un fallecimiento dentro del CCH Sur no se ilustra con una banca de Coyoacán.
+    (r"\bcch sur\b",
+     r"\b(?:cch sur|colegio de ciencias y humanidades sur|cch)\b"),
+    # Una nota de límites metropolitanos necesita mapa o contexto territorial.
+    (r"\b(?:edomex.*cdmx.*valle de mexico|valle de mexico.*diferencias|territorios comprenden)\b",
+     r"\b(?:mapa|cartografia|zona metropolitana|valle de mexico|territorio|edomex|estado de mexico)\b"),
     # Una nota sobre una orquesta necesita contexto musical, incluido un coro representativo.
     (r"\b(?:orquesta|aniversario musical)\b",
      r"\b(?:orquestas?|musica|conciertos?|guitarras?|bandas?|coros?|coral|escenarios?|cantantes?|festivales?|auditorios?|estadios?)\b"),
@@ -1476,10 +1499,21 @@ def _photo_score(article, photo):
         "",
     )
     if article_borough_key:
-        photo_boroughs = {
-            borough for borough, aliases in PHOTO_BOROUGH_ALIASES.items()
-            if any(re.search(r"\b"+re.escape(alias)+r"\b",context) for alias in aliases)
-        }
+        photo_boroughs = set()
+        for borough, aliases in PHOTO_BOROUGH_ALIASES.items():
+            # "Avenida Álvaro Obregón" está en Roma Norte (Cuauhtémoc);
+            # el nombre de la avenida no demuestra que la foto sea de la alcaldía.
+            if borough == "alvaro obregon" and re.search(r"\bavenida alvaro obregon\b", context):
+                actual_area = re.search(
+                    r"\b(?:alcaldia|delegacion) alvaro obregon\b|"
+                    r"\b(?:san angel|las aguilas|lomas de santa fe|contadero|"
+                    r"olivar del conde|jalalpa|axotla|tizapan|santa fe)\b",
+                    context,
+                )
+                if not actual_area:
+                    continue
+            if any(re.search(r"\b"+re.escape(alias)+r"\b",context) for alias in aliases):
+                photo_boroughs.add(borough)
         food_event_story = bool(re.search(
             r"\b(?:feria (?:regional )?del pulque|feria del pulque y la barbacoa|pulque y la barbacoa)\b",
             headline,
@@ -1680,6 +1714,22 @@ def _photo_score(article, photo):
         r"\b(?:escuelas?|primaria|preescolar|kinder|guarderias?|jardin de ninos|aulas?|alumn[oa]s?|estudiantes?)\b",
         context,
     ))
+    environmental_story = bool(re.search(
+        r"\b(?:justicia ambiental|proteger la biodiversidad|biodiversidad)\b",
+        headline,
+    ))
+    environmental_photo = bool(re.search(
+        r"\b(?:parque ecologico|bosque|viveros|jardin escenico|biodiversidad|flora|fauna|areas verdes|ecosistema)\b",
+        context,
+    ))
+    eco_story = bool(re.search(
+        r"\b(?:casa ecologica|ecotecnias?|calentadores? solares?|captadores? de agua|sistemas? de captacion)\b",
+        headline,
+    ))
+    eco_photo = bool(re.search(
+        r"\b(?:cosecha de lluvia|captacion de agua|calentadores? solares?|paneles? solares?|energia solar|ecotecnias?|casa ecologica|sistemas? de captacion|cisternas?)\b",
+        context,
+    ))
     if education_story and not education_photo:
         return -10000
     # Las notas de renta y mercado inmobiliario no se ilustran con monumentos.
@@ -1695,6 +1745,8 @@ def _photo_score(article, photo):
         or (infrastructure_story and infrastructure_photo)
         or (education_story and education_photo)
         or (housing_story and housing_photo)
+        or (environmental_story and environmental_photo)
+        or (eco_story and eco_photo)
     )
     # Una categoría distinta no basta por sí sola para considerar pertinente una foto.
     if photo_category not in (category, "CDMX", "Alcaldías") and not themed_category:
@@ -1916,6 +1968,10 @@ def _photo_score(article, photo):
         score+=220
     if housing_story and housing_photo:
         score+=220
+    if environmental_story and environmental_photo:
+        score+=180
+    if eco_story and eco_photo:
+        score+=180
     return score
 
 

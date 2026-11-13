@@ -7,6 +7,20 @@ import update_news as news
 import scripts.notas_locales as photos
 from update_news import category_by_headline
 
+def representative_photo(photo_id, category, topic, keywords):
+    return {
+        "id": photo_id,
+        "kind": "representativa",
+        "category": category,
+        "topic": topic,
+        "keywords": keywords,
+        "url": "/assets/fotos/regression-test.jpg",
+        "source": "https://commons.wikimedia.org/wiki/File:Regression_test.jpg",
+        "author": "Autor de prueba",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    }
+
 
 class PhotoRelevanceTests(unittest.TestCase):
     def test_rss_category_uses_obvious_headline_subject(self):
@@ -1269,6 +1283,248 @@ class PhotoRelevanceTests(unittest.TestCase):
         ):
             assign_photos([article])
         self.assertEqual(article["photo"]["id"], "operativo_lluvias")
+
+
+    def test_adoption_caravan_is_not_metro_and_government_topics_are_classified(self):
+        adoption = "Caravana de adopción en Reforma: perritos rescatados buscan hogar en CDMX"
+        tabe = "Mauricio Tabe presenta su Quinto Informe de Gobierno en Miguel Hidalgo"
+        congress = "Recibe Congreso capitalino proyecto del Plan General de Desarrollo CDMX 2027-2047"
+        self.assertEqual(category_by_headline(adoption, "Metro"), "CDMX")
+        self.assertEqual(category_by_headline(tabe, "CDMX"), "Gobierno")
+        self.assertEqual(category_by_headline(congress, "CDMX"), "Gobierno")
+
+    def test_congress_news_rejects_national_palace_and_congress_avenue_photos(self):
+        article = {
+            "title": "Recibe Congreso capitalino proyecto del Plan General de Desarrollo CDMX 2027-2047",
+            "category": "Gobierno",
+            "url": "https://news.google.com/rss/articles/congress-photo-regression",
+        }
+        avenue = representative_photo(
+            "congreso_union_avenue", "Movilidad",
+            "Fotografía aérea de Avenida H. Congreso de la Unión, Candelaria de los Patos y Centro Histórico; tránsito vehicular",
+            ["Avenida Congreso de la Unión", "Candelaria de los Patos", "tránsito vehicular"],
+        )
+        treasury = representative_photo(
+            "national_palace_treasury", "Gobierno",
+            "Sala de Tesorería en Palacio Nacional - VII", ["Palacio Nacional Ciudad de México"],
+        )
+        self.assertLess(_photo_score(article, avenue), 0)
+        self.assertLess(_photo_score(article, treasury), 0)
+        with patch.object(photos, "_pool", return_value=[avenue, treasury]), patch.object(
+            photos, "_load", return_value=[]
+        ):
+            assign_photos([article])
+        self.assertNotIn("photo", article)
+
+    def test_local_mayor_report_uses_miguel_hidalgo_context_not_national_palace(self):
+        article = {
+            "title": "Mauricio Tabe presenta su Quinto Informe de Gobierno en Miguel Hidalgo",
+            "category": "Gobierno",
+            "borough": "Miguel Hidalgo",
+            "url": "https://news.google.com/rss/articles/tabe-report-photo-regression",
+        }
+        palace = representative_photo(
+            "palacio_nacional", "Gobierno", "Palacio Nacional Ciudad de México DF", ["Gobierno"]
+        )
+        chapultepec = representative_photo(
+            "bosque_chapultepec", "CDMX", "Bosque de Chapultepec, Ciudad de México", ["Chapultepec"]
+        )
+        self.assertLess(_photo_score(article, palace), 0)
+        self.assertGreaterEqual(_photo_score(article, chapultepec), 0)
+        with patch.object(photos, "_pool", return_value=[palace, chapultepec]), patch.object(
+            photos, "_load", return_value=[]
+        ):
+            assign_photos([article])
+        self.assertEqual(article["photo"]["id"], "bosque_chapultepec")
+
+    def test_avenida_alvaro_obregon_in_roma_is_not_the_alcaldia(self):
+        article = {
+            "title": "Actividades vecinales en la alcaldía Álvaro Obregón",
+            "category": "CDMX",
+            "borough": "Álvaro Obregón",
+            "url": "https://news.google.com/rss/articles/alvaro-obregon-photo-regression",
+        }
+        roma = representative_photo(
+            "avenida_alvaro_obregon_roma", "Alcaldías",
+            "Casa en la Avenida Álvaro Obregón, Colonia Roma Norte, Cuauhtémoc, Ciudad de México",
+            ["Avenida Álvaro Obregón", "Colonia Roma Norte", "Cuauhtémoc"],
+        )
+        san_angel = representative_photo(
+            "san_angel_alvaro_obregon", "Alcaldías",
+            "Fuente de cantera gris, San Ángel, Del. Álvaro Obregón, Ciudad de México",
+            ["Álvaro Obregón Ciudad de México"],
+        )
+        self.assertLess(_photo_score(article, roma), 0)
+        self.assertGreaterEqual(_photo_score(article, san_angel), 0)
+        with patch.object(photos, "_pool", return_value=[roma, san_angel]), patch.object(
+            photos, "_load", return_value=[]
+        ):
+            assign_photos([article])
+        self.assertEqual(article["photo"]["id"], "san_angel_alvaro_obregon")
+
+    def test_environmental_justice_uses_ecological_park_not_national_palace(self):
+        article = {
+            "title": "Gobierno de la Ciudad de México fortalece la justicia ambiental con acciones para proteger la biodiversidad y mejorar la calidad de vida en la capital",
+            "category": "Gobierno",
+            "url": "https://news.google.com/rss/articles/environmental-justice-photo-regression",
+        }
+        palace = representative_photo(
+            "palacio_nacional", "Gobierno", "Palacio Nacional Ciudad de México DF", ["Gobierno"]
+        )
+        park = representative_photo(
+            "parque_ecologico", "Medio Ambiente",
+            "Parque Ecológico de la Ciudad de México 10", ["Parques Ciudad de México"]
+        )
+        self.assertLess(_photo_score(article, palace), 0)
+        self.assertGreaterEqual(_photo_score(article, park), 0)
+        with patch.object(photos, "_pool", return_value=[palace, park]), patch.object(
+            photos, "_load", return_value=[]
+        ):
+            assign_photos([article])
+        self.assertEqual(article["photo"]["id"], "parque_ecologico")
+
+    def test_casa_ecologica_requires_solar_or_rainwater_context(self):
+        article = {
+            "title": "CDMX lanza programa Casa Ecológica para instalar captadores de agua y energía solar en hogares",
+            "category": "Gobierno",
+            "url": "https://news.google.com/rss/articles/casa-ecologica-photo-regression",
+        }
+        palace = representative_photo(
+            "palacio_tesoreria", "Gobierno",
+            "Sala de Tesorería en Palacio Nacional - IV", ["Palacio Nacional Ciudad de México"]
+        )
+        rainwater = representative_photo(
+            "cosecha_lluvia", "Medio Ambiente", "Cosecha de Lluvia 06", ["Lluvia Ciudad de México"]
+        )
+        self.assertLess(_photo_score(article, palace), 0)
+        self.assertGreaterEqual(_photo_score(article, rainwater), 0)
+        with patch.object(photos, "_pool", return_value=[palace, rainwater]), patch.object(
+            photos, "_load", return_value=[]
+        ):
+            assign_photos([article])
+        self.assertEqual(article["photo"]["id"], "cosecha_lluvia")
+
+    def test_plan_general_development_rejects_palacio_nacional_street_photo(self):
+        article = {
+            "title": "Exige PRI retirar el Plan General de Desarrollo de la CDMX",
+            "category": "Gobierno",
+            "url": "https://news.google.com/rss/articles/plan-general-photo-regression",
+        }
+        palace_street = representative_photo(
+            "madero_palace", "Gobierno",
+            "Calle Francisco I. Madero de la Ciudad de México, con el Palacio Nacional al fondo",
+            ["Gobierno"],
+        )
+        self.assertLess(_photo_score(article, palace_street), 0)
+        with patch.object(photos, "_pool", return_value=[palace_street]), patch.object(
+            photos, "_load", return_value=[]
+        ):
+            assign_photos([article])
+        self.assertNotIn("photo", article)
+
+    def test_pueblos_magicos_guide_rejects_centro_historico_cdmx_photo(self):
+        article = {
+            "title": "Puente del 16 de noviembre: 8 Pueblos Mágicos a menos de 3 horas de CDMX para una escapada de tres días",
+            "category": "CDMX",
+            "url": "https://news.google.com/rss/articles/pueblos-magicos-photo-regression",
+        }
+        centro = representative_photo(
+            "centro_cdmx", "CDMX", "Ciudad de México - Colonia Centro 6984",
+            ["Centro Histórico Ciudad de México"],
+        )
+        self.assertLess(_photo_score(article, centro), 0)
+        with patch.object(photos, "_pool", return_value=[centro]), patch.object(
+            photos, "_load", return_value=[]
+        ):
+            assign_photos([article])
+        self.assertNotIn("photo", article)
+
+    def test_cch_sur_story_rejects_generic_coyoacan_bench_photo(self):
+        article = {
+            "title": "Muere profesor dentro de las instalaciones del CCH Sur de la UNAM en alcaldía Coyoacán",
+            "category": "CDMX",
+            "borough": "Coyoacán",
+            "url": "https://news.google.com/rss/articles/cch-sur-photo-regression",
+        }
+        bench = representative_photo(
+            "coyoacan_bench", "CDMX", "4. Coyoacán banca Ciudad de México", ["CDMX"]
+        )
+        self.assertLess(_photo_score(article, bench), 0)
+        with patch.object(photos, "_pool", return_value=[bench]), patch.object(
+            photos, "_load", return_value=[]
+        ):
+            assign_photos([article])
+        self.assertNotIn("photo", article)
+
+    def test_valle_de_mexico_territory_story_rejects_national_palace_photo(self):
+        article = {
+            "title": "VIDEO | Edomex, CDMX y Valle de México: ¿cuáles son sus diferencias y qué territorios comprenden?",
+            "category": "Gobierno",
+            "url": "https://news.google.com/rss/articles/valle-metropolitano-photo-regression",
+        }
+        palace = representative_photo(
+            "palacio_nacional", "Gobierno",
+            "Fachada del Palacio Nacional, Ciudad de México 01", ["Palacio Nacional Ciudad de México"]
+        )
+        self.assertLess(_photo_score(article, palace), 0)
+        with patch.object(photos, "_pool", return_value=[palace]), patch.object(
+            photos, "_load", return_value=[]
+        ):
+            assign_photos([article])
+        self.assertNotIn("photo", article)
+
+    def test_march_agenda_rejects_earthquake_volunteer_motorcycle_photo(self):
+        article = {
+            "title": "Marchas en CDMX hoy 12 de noviembre: rutas, horarios y calles afectadas EN VIVO",
+            "category": "Movilidad",
+            "url": "https://news.google.com/rss/articles/march-agenda-photo-regression",
+        }
+        motorcycle = representative_photo(
+            "brigade_motorcycle", "CDMX",
+            "Motocicleta de apoyo de una brigada voluntaria en el Zócalo de la Ciudad de México tras el sismo de 2017",
+            ["motocicleta", "moto", "Zócalo", "brigada voluntaria", "sismo 2017", "Ciudad de México"],
+        )
+        self.assertLess(_photo_score(article, motorcycle), 0)
+        with patch.object(photos, "_pool", return_value=[motorcycle]), patch.object(
+            photos, "_load", return_value=[]
+        ):
+            assign_photos([article])
+        self.assertNotIn("photo", article)
+
+    def test_photo_catalog_metadata_matches_the_actual_location_and_subject(self):
+        index = {p["id"]: p for p in photos._load(photos.NEWS_PHOTOS, "photos")}
+        editorial = {p["id"]: p for p in photos._load(
+            photos.ROOT / "assets/fotos/catalogo-editorial-1100.json", "photos"
+        )}
+        context = {p["id"]: p for p in photos._load(photos.TOPIC_PHOTOS, "photos")}
+        for photo_id in ("commons_51892797", "commons_51894949", "commons_24433238"):
+            for catalog in (index, editorial):
+                item = catalog[photo_id]
+                self.assertIn("Cuauhtémoc", " ".join(item["keywords"]))
+                self.assertIn("Colonia Roma", " ".join(item["keywords"]))
+        avenue = index["commons_169149220"]
+        self.assertEqual(avenue["category"], "Movilidad")
+        self.assertIn("Avenida H. Congreso de la Unión", avenue["topic"])
+        self.assertNotIn("Congreso de la Ciudad de México edificio", avenue["keywords"])
+        motorcycle = context["contexto_motocicleta_zocalo_brigada_2017"]
+        self.assertNotIn("marcha de motociclistas", motorcycle["keywords"])
+        self.assertNotIn("motociclistas", motorcycle["keywords"])
+
+
+
+    def test_congress_building_is_acceptable_for_plan_general_story(self):
+        article = {
+            "title": "Recibe Congreso capitalino proyecto del Plan General de Desarrollo CDMX 2027-2047",
+            "category": "Gobierno",
+            "url": "https://news.google.com/rss/articles/congress-building-photo-regression",
+        }
+        congress = representative_photo(
+            "palacio_legislativo", "Gobierno",
+            "Palacio Legislativo de Donceles, Congreso de la Ciudad de México",
+            ["Congreso de la Ciudad de México", "Donceles"],
+        )
+        self.assertGreaterEqual(_photo_score(article, congress), 0)
+
 
 if __name__ == "__main__":
     unittest.main()
