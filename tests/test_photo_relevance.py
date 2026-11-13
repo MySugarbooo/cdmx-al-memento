@@ -1,4 +1,5 @@
 """Previene asignar fotos de patrullas a noticias de ciclismo o tecnología."""
+from copy import deepcopy
 import unittest
 from unittest.mock import patch
 
@@ -1721,6 +1722,20 @@ class PhotoRelevanceTests(unittest.TestCase):
             stats = assign_photos([article])
         self.assertEqual(article["photo"]["id"], existing["id"])
         self.assertEqual(stats["assigned"], 1)
+
+
+    def test_current_feed_preserves_credited_photos_and_replaces_maria_leon_mismatch(self):
+        data = news.load_json(news.DEST, {"articles": []})
+        articles = deepcopy(data.get("articles", []))
+        self.assertGreaterEqual(len(articles), 25)
+        stats = assign_photos(articles)
+        self.assertGreaterEqual(stats["assigned"], 25)
+        maria = next(
+            item for item in articles
+            if item.get("source") == "Infobae" and "maria leon" in item.get("title", "").lower()
+        )
+        self.assertEqual(maria["photo"]["id"], "contexto_concierto_palacio_deportes_2009")
+        self.assertGreater(stats["unique"], 0)
 
 if __name__ == "__main__":
     unittest.main()
