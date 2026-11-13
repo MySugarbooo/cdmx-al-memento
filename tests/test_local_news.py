@@ -744,5 +744,41 @@ class LocalNewsTests(unittest.TestCase):
         self.assertIn("fechas futuras", result["brief"]["pending"])
         self.assertIn(INFOBAE_MARIA_LEON_CONCERT_SOURCE_URL, result["brief"]["method"])
 
+
+    def test_infobae_huixtla_caravan_variant_keeps_cdmx_context_but_corrects_location(self):
+        article = {
+            "title": "Caravana con 500 migrantes acampa en Huixtla, Chiapas: esperan a más para avanzar a CDMX",
+            "url": "https://news.google.com/rss/articles/infobae-huixtla-20261113",
+            "source": "Infobae",
+            "date": "2026-11-13",
+            "published_at": "2026-11-13T15:01:00Z",
+            "category": "CDMX",
+            "borough": "",
+            "photo": {
+                "id": "commons_55212868",
+                "kind": "representativa",
+                "category": "CDMX",
+                "topic": "Metrobús en Monumento a la Revolución - TurismoCDMX",
+                "keywords": ["Monumento a la Revolución CDMX"],
+                "url": "/assets/fotos/metrobus-monumento.jpg",
+                "source": "https://commons.wikimedia.org/wiki/File:Metrobus_Monumento.jpg",
+                "author": "Autor de prueba",
+                "license": "CC BY-SA 4.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+            },
+        }
+        result = standardize(article)
+        self.assertIsNotNone(result)
+        self.assertEqual(result["location"], "Huixtla, Chiapas (fuera de CDMX)")
+        self.assertEqual(result["borough"], "")
+        self.assertEqual(result["category"], "CDMX")
+        self.assertIn("Huixtla, Chiapas", result["brief"]["lead"])
+        self.assertIn("fuera de CDMX", result["brief"]["context"])
+        assign_photos([result])
+        self.assertNotIn("photo", result)
+        rendered = render(result, article_id(result))
+        self.assertNotIn('<figure class="article-photo">', rendered)
+
+
 if __name__=="__main__":
     unittest.main()
