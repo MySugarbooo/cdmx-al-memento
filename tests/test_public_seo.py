@@ -2,7 +2,9 @@
 import unittest
 
 from scripts.check_public_seo import (
+    DEPLOY_ATTEMPTS,
     archive_records,
+    homepage_script_source,
     article_id,
     parse_sitemap,
     validate_article_html,
@@ -95,6 +97,12 @@ class PublicSeoTests(unittest.TestCase):
                     "<p>Tlalpan · 2026-11-12 · Fuente: Medio</p>"
                 ).encode("utf-8"),
             )
+
+    def test_deployment_wait_and_homepage_script_match_main(self):
+        self.assertEqual(DEPLOY_ATTEMPTS, 36)
+        source, content = homepage_script_source()
+        self.assertRegex(source, r"^/assets/neo-home\.js\?v=[a-zA-Z0-9_-]+$")
+        self.assertIn(b"function isWeatherForecastOnly(article)", content)
 
     def test_sitemap_requires_unique_same_domain_urls(self):
         xml = (

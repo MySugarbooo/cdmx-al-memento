@@ -14,7 +14,7 @@ import xml.etree.ElementTree as ET
 
 ROOT = Path(__file__).resolve().parents[1]
 BASE = "https://cdmx-al-memento.pages.dev"
-DEPLOY_ATTEMPTS = 18
+DEPLOY_ATTEMPTS = 36
 DEPLOY_RETRY_SECONDS = 10
 
 
@@ -295,6 +295,51 @@ def check_public_data():
     print(f"OK hemeroteca: {archive_total} registros en {len(months)} meses")
 
 
+def homepage_script_source():
+    """Return the versioned homepage script URL and the exact local asset bytes."""
+    index_path = ROOT / "index.html"
+    if not index_path.is_file():
+        raise ValueError("Falta index.html para validar el script de portada")
+    page = index_path.read_text(encoding="utf-8")
+    matches = re.findall(
+        r'<script\b[^>]*\bsrc=["\']([^"\']*/assets/neo-home\.js(?:\?[^"\']*)?)["\']',
+        page,
+        flags=re.IGNORECASE,
+    )
+    if len(matches) != 1:
+        raise ValueError("index.html: se esperaba una referencia única a neo-home.js")
+    src = matches[0]
+    parsed = urlparse(src)
+    if parsed.scheme or parsed.netloc or not parsed.path.startswith("/assets/"):
+        raise ValueError("index.html: la referencia de neo-home.js debe ser local")
+    if not parsed.query:
+        raise ValueError("index.html: neo-home.js debe tener versión en la URL")
+    local_path = ROOT / parsed.path.lstrip("/")
+    if not local_path.is_file():
+        raise ValueError("Falta el asset local de portada: " + parsed.path)
+    return src, local_path.read_bytes()
+
+
+def check_homepage_script():
+    """Wait until the public HTML and its versioned homepage script match main."""
+    src, local_asset = homepage_script_source()
+    expected_digest = hashlib.sha256(local_asset).hexdigest()
+
+    def validate_homepage(data):
+        page = data.decode("utf-8")
+        if src not in page:
+            raise ValueError("la portada pública todavía no referencia " + src)
+
+    def validate_script(data):
+        actual_digest = hashlib.sha256(data).hexdigest()
+        if actual_digest != expected_digest:
+            raise ValueError("el script público de portada no coincide con main")
+
+    fetch_until("/", validate_homepage)
+    fetch_until(src, validate_script)
+    print("OK portada: HTML y neo-home.js coinciden con main")
+
+
 def check_community():
     html = fetch("/comunidad/").decode("utf-8")
     required = {
@@ -342,6 +387,7 @@ def main():
             raise ValueError(f"{path}: no static article links found")
         print(f"OK {path}: {len(parser.hrefs)} article links")
     check_public_data()
+    check_homepage_script()
     check_community()
     check_engagement()
     print("Public SEO content checks passed")
