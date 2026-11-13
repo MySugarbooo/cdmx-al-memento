@@ -1645,7 +1645,19 @@ def _photo_score(article, photo):
         r"\b(?:repartidores?|conductores? de aplicacion|mensajeros?|reparto de paqueteria|delivery riders?)\b",
         context,
     ))
-    if delivery_story and not delivery_photo:
+    delivery_security_story = bool(re.search(
+        r"\b(?:ataques? armados?|arma|armado|amenaz\w*|vandaliz\w*|robo|asalto|agresion|homicidio|balacera)\b",
+        headline,
+    ))
+    delivery_security_photo = bool(re.search(
+        r"\b(?:policias?|patrullas?|seguridad|fiscalia|investigacion penal|operativo policial)\b",
+        context,
+    ))
+    # En ataques o amenazas a repartidores puede usarse contexto policial;
+    # en bloqueos o protestas se exige una imagen de repartidores.
+    if delivery_story and not delivery_photo and not (
+        delivery_security_story and delivery_security_photo
+    ):
         return -10000
     # Los tianguis no se ilustran con monumentos ni con mercados públicos distintos.
     tianguis_story = bool(re.search(r"\btianguis\b", headline))
