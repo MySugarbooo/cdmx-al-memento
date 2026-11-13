@@ -3,7 +3,7 @@ import unittest
 from pathlib import Path
 from scripts.notas_locales import assign_photos, local_link, summarize, is_sensitive_media
 from scripts.build_article_seo import article_id, render
-from update_news import category_by_headline, standardize
+from update_news import category_by_headline, standardize, photo_needs_refresh
 
 ROOT=Path(__file__).resolve().parents[1]
 
@@ -543,8 +543,22 @@ class LocalNewsTests(unittest.TestCase):
         self.assertIn("no se verifican de forma independiente", article["brief"]["pending"])
         self.assertIn("La Prensa", article["brief"]["method"])
 
+        article["photo"] = {
+            "id": "commons_93188323",
+            "kind": "representativa",
+            "category": "CDMX",
+            "topic": "Registro de agua. Primera Sección del Bosque de Chapultepec - 4",
+            "keywords": ["Medio Ambiente"],
+            "author": "ProtoplasmaKid",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Registro_de_agua._Primera_Secci%C3%B3n_del_Bosque_de_Chapultepec_-_4.jpg",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/Registro_de_agua._Primera_Secci%C3%B3n_del_Bosque_de_Chapultepec_-_4.jpg/960px-Registro_de_agua._Primera_Secci%C3%B3n_del_Bosque_de_Chapultepec_-_4.jpg",
+        }
+        self.assertTrue(photo_needs_refresh(article))
         assign_photos([article])
         photo = article["photo"]
+        self.assertFalse(photo_needs_refresh(article))
         self.assertEqual(photo["id"], "contexto_teatro_angela_peralta")
         self.assertEqual(photo["author"], "Secretaría de Cultura Ciudad de México")
         self.assertEqual(photo["license"], "CC BY 2.0")
