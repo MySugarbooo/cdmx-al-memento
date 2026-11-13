@@ -382,8 +382,8 @@ def _reported_angle(article):
         or "cosecha de lluvia" in t
     ):
         return (f"El titular de {source} aborda la captación y aprovechamiento de agua pluvial{zone}. "
-                "Se trata de una práctica o iniciativa relacionada con el uso del agua, "
-                "no de una previsión del tiempo. Para conocer su alcance y resultados "
+                "Se trata de una práctica o iniciativa relacionada con el uso del agua; "
+                "no es un aviso meteorológico. Para conocer su alcance y resultados "
                 "es necesario consultar el reportaje original.")
     if "lluvia" in t or "chubasco" in t or "clima" in t or "nublado" in t:
         conditions=("lluvias ligeras" if "ligera" in t else
