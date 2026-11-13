@@ -22,7 +22,7 @@ from pathlib import Path
 from zoneinfo import ZoneInfo
 
 from scripts.analisis_editorial import build_editorial
-from scripts.notas_locales import local_link, summarize, assign_photos, _photo_score, is_sensitive_media, is_coyotepec_highway_crash, INFOBAE_COYOTEPEC_HIGHWAY_CRASH_SOURCE_URL, is_san_juan_del_rio_autopista57_closure, SENSITIVE_MEDIA_TITLE, SAN_JUAN_DEL_RIO_AUTOPISTA57_SOURCE_URL, is_infobae_tlalpan_animal_abuse, is_la_prensa_tlalpan_animal_case, INFOBAE_TLALPAN_ANIMAL_SOURCE_URL, LA_PRENSA_TLALPAN_ANIMAL_SOURCE_URL, is_imagen_tlalpan_dog_rescue, is_huixtla_migrant_caravan, is_vc_fatal_trailer_incident, EL_GRAFICO_VC_TRAILER_SOURCE_URL, is_infobae_ballet_zapatilla, INFOBAE_BALLET_ZAPATILLA_SOURCE_URL, is_pulque_barbacoa_fair, is_mauricio_tabe_fifth_report, SDPNOTICIAS_MAURICIO_TABE_REPORT_SOURCE_URL, is_radio_formula_casa_ecologica, RADIO_FORMULA_CASA_ECOLOGICA_SOURCE_URL, is_capital_cdmx_care_budget, CAPITAL_CDMX_CARE_BUDGET_SOURCE_URL
+from scripts.notas_locales import local_link, summarize, assign_photos, _photo_score, is_sensitive_media, is_coyotepec_highway_crash, INFOBAE_COYOTEPEC_HIGHWAY_CRASH_SOURCE_URL, is_san_juan_del_rio_autopista57_closure, SENSITIVE_MEDIA_TITLE, SAN_JUAN_DEL_RIO_AUTOPISTA57_SOURCE_URL, is_infobae_tlalpan_animal_abuse, is_la_prensa_tlalpan_animal_case, INFOBAE_TLALPAN_ANIMAL_SOURCE_URL, LA_PRENSA_TLALPAN_ANIMAL_SOURCE_URL, is_imagen_tlalpan_dog_rescue, is_huixtla_migrant_caravan, is_vc_fatal_trailer_incident, EL_GRAFICO_VC_TRAILER_SOURCE_URL, is_infobae_ballet_zapatilla, INFOBAE_BALLET_ZAPATILLA_SOURCE_URL, is_infobae_maria_leon_concert, INFOBAE_MARIA_LEON_CONCERT_SOURCE_URL, is_pulque_barbacoa_fair, is_mauricio_tabe_fifth_report, SDPNOTICIAS_MAURICIO_TABE_REPORT_SOURCE_URL, is_radio_formula_casa_ecologica, RADIO_FORMULA_CASA_ECOLOGICA_SOURCE_URL, is_capital_cdmx_care_budget, CAPITAL_CDMX_CARE_BUDGET_SOURCE_URL
 
 ROOT = Path(__file__).resolve().parent
 DEST = ROOT / "news.json"
@@ -315,6 +315,9 @@ def category_by_headline(title, feed_category, source=""):
         normalized,
     ):
         return "Seguridad"
+    # Los conciertos y las noticias sobre cantantes pertenecen a Cultura.
+    if re.search(r"\b(?:conciertos?|cantantes?|cantautores?|gira musical|canciones? ineditas|musica en vivo|teatro metropolitan)\b", normalized):
+        return "Cultura"
     # Las jornadas de adopción son información de la ciudad, no del Metro.
     if re.search(r"\b(?:caravana de adopcion|adopcion de mascotas|perritos? rescatados buscan hogar)\b", normalized):
         return "CDMX"
@@ -563,6 +566,9 @@ def standardize(article):
             "Utopía Mixiuhca, Viaducto Río de la Piedad 6, colonia Granjas México, "
             "Iztacalco, Ciudad de México"
         )
+    elif is_infobae_maria_leon_concert({"title": title, "source": source, "date": date}):
+        borough = ""
+        location = "Teatro Metropólitan, Ciudad de México"
     elif is_pulque_barbacoa_fair({"title": title, "date": date}):
         borough = "La Magdalena Contreras"
         location = (
@@ -615,7 +621,9 @@ def standardize(article):
         "location": location,
     }
     result["local_url"] = local_link(result)
-    if is_infobae_ballet_zapatilla(result):
+    if is_infobae_maria_leon_concert(result):
+        result["source_url"] = INFOBAE_MARIA_LEON_CONCERT_SOURCE_URL
+    elif is_infobae_ballet_zapatilla(result):
         result["source_url"] = INFOBAE_BALLET_ZAPATILLA_SOURCE_URL
     elif is_coyotepec_highway_crash(result) and source.casefold() == "infobae":
         result["source_url"] = INFOBAE_COYOTEPEC_HIGHWAY_CRASH_SOURCE_URL
@@ -1145,6 +1153,49 @@ def build_homepage_feed(candidates):
     return dedupe_homepage_events(visible)
 
 
+def homepage_fallback_payload(articles, now=None, limit=12):
+    """Prepara el respaldo incrustado de portada con noticias de hoy o ayer."""
+    now = now or datetime.now(timezone.utc)
+    today = now.astimezone(MX).date()
+    yesterday = today - timedelta(days=1)
+    candidates = []
+    for article in articles:
+        if not isinstance(article, dict):
+            continue
+        published = sort_key(article)
+        day = published.astimezone(MX).date()
+        if day not in (today, yesterday):
+            continue
+        title = str(article.get("title") or "")
+        if re.search(r"\b(?:hoy|en vivo)\b", title, re.I) and day != today:
+            continue
+        candidates.append(article)
+    candidates.sort(key=sort_key, reverse=True)
+    return [dict(article) for article in candidates[:max(0, int(limit))]]
+
+
+def refresh_homepage_fallback(index_path, articles, now=None):
+    """Actualiza el JSON de respaldo de portada sin tocar el diseño HTML."""
+    path = Path(index_path)
+    if not path.is_file():
+        raise RuntimeError(f"No existe el HTML de portada: {path}")
+    html_content = path.read_text(encoding="utf-8")
+    pattern = re.compile(
+        r'(<script id="embedded-news-fallback" type="application/json">)(.*?)(</script>)',
+        re.S,
+    )
+    match = pattern.search(html_content)
+    if not match:
+        raise RuntimeError("No se encontró embedded-news-fallback en index.html")
+    payload = homepage_fallback_payload(articles, now)
+    encoded = json.dumps(payload, ensure_ascii=False, separators=(",", ":"))
+    encoded = encoded.replace("&", "\\u0026").replace("<", "\\u003c").replace(">", "\\u003e")
+    updated = html_content[:match.start(2)] + encoded + html_content[match.end(2):]
+    if updated != html_content:
+        path.write_text(updated, encoding="utf-8")
+    return len(payload)
+
+
 def update():
     now = datetime.now(timezone.utc)
     cutoff = now - timedelta(days=RETENTION_DAYS)
@@ -1184,6 +1235,8 @@ def update():
     candidates = homepage_articles(items, reviewed, now)
     visible = build_homepage_feed(candidates)
     write_json(DEST, {"updated": updated, "articles": visible})
+    fallback_count = refresh_homepage_fallback(ROOT / "index.html", visible, now)
+    print("Respaldo estático de portada:", fallback_count, "noticias recientes.")
     with_photo = sum(bool(article.get("photo")) for article in visible)
     print(
         "Feed de portada:", len(visible), "titulares;",
