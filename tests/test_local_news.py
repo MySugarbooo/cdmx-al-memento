@@ -745,7 +745,7 @@ class LocalNewsTests(unittest.TestCase):
         self.assertIn(INFOBAE_MARIA_LEON_CONCERT_SOURCE_URL, result["brief"]["method"])
 
 
-    def test_infobae_huixtla_caravan_variant_keeps_cdmx_context_but_corrects_location(self):
+    def test_infobae_huixtla_caravan_variant_corrects_location_and_removes_metrobus_photo(self):
         article = {
             "title": "Caravana con 500 migrantes acampa en Huixtla, Chiapas: esperan a más para avanzar a CDMX",
             "url": "https://news.google.com/rss/articles/infobae-huixtla-20261113",
