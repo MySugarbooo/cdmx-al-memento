@@ -43,13 +43,13 @@ class BoroughAndArchiveTests(unittest.TestCase):
         treasury = {
             "id": "tesoreria_palacio_nacional",
             "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/8/85/Sala_de_Tesorer%C3%ADa_en_Palacio_Nacional_-_I.jpg",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Sala_de_Tesorer%C3%ADa_en_Palacio_Nacional_-_I.jpg/960px-Sala_de_Tesorer%C3%ADa_en_Palacio_Nacional_-_I.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
             "category": "Gobierno",
             "topic": "Sala de Tesorería en Palacio Nacional - I",
             "keywords": ["Palacio Nacional Ciudad de México"],
             "author": "J Mndz",
             "license": "CC BY-SA 2.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
             "source": "https://commons.wikimedia.org/wiki/File:Sala_de_Tesorer%C3%ADa_en_Palacio_Nacional_-_I.jpg",
         }
 
