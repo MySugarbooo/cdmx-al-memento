@@ -369,7 +369,7 @@ def _reported_angle(article):
 
     # Accidentes de motos, choques y siniestros: informar incluso si el hecho es
     # grave, sin inventar fallecimientos, lesiones, imágenes o circunstancias.
-    if re.search(r"\b(?:accident\w*|choqu\w*|colisi[oó]n\w*|volcadur\w*|vuelc\w*|"
+    if re.search(r"\b(?:accident\w*|choqu\w*|chocar|chocan|chocaron|choco|colisi[oó]n\w*|volcadur\w*|vuelc\w*|"
                  r"atropell\w*|arroll\w*|derrap\w*|siniestro vial)\b", t):
         vehicle=("una motocicleta" if re.search(r"\b(?:moto|motocicleta|motociclista)\w*\b", t)
                  else "un microbús" if re.search(r"\bmicrob[uú]s\b", t)
@@ -377,8 +377,10 @@ def _reported_angle(article):
                  else "una pipa de gas" if re.search(r"\b(?:pipas? de gas|gas lp)\b", t)
                  else "vehículos" if re.search(r"\b(?:automovil|auto|camion|trailer|tráiler|vehiculo)\w*\b", t)
                  else "personas o vehículos involucrados")
-        if re.search(r"\b(?:fallec\w*|muert\w*|murio|murieron|sin vida|pierde la vida|"
-                     r"perdio la vida|fatal|mortal|muere|murio|murió|mata|matan|mat[oó])\b", t):
+        if re.search(r"\b(?:mueren|murieron|fallecen|fallecieron|perdieron la vida|muertos|muertas|fallecidos|fallecidas)\b", t):
+            outcome="El propio titular señala más de un fallecimiento, sin que esta ficha agregue cifras ni identidades."
+        elif re.search(r"\b(?:fallec\w*|muert\w*|murio|sin vida|pierde la vida|"
+                        r"perdio la vida|fatal|mortal|muere|murio|murió|mata|matan|mat[oó])\b", t):
             outcome="El propio titular señala un fallecimiento, sin que esta ficha agregue cifras ni identidades."
         elif re.search(r"\b(?:herid\w*|lesionad\w*|hospitalizad\w*)\b", t):
             outcome="El propio titular menciona personas lesionadas, sin datos médicos adicionales verificados."

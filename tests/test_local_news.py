@@ -406,6 +406,26 @@ class LocalNewsTests(unittest.TestCase):
         article["title"] = "Choque entre dos vehículos en Azcapotzalco"
         self.assertIn("no permite determinar", summarize(article)["lead"])
 
+    def test_plural_motorcycle_collision_headlines_report_multiple_fatalities(self):
+        titles = (
+            "Mueren dos motociclistas tras chocar contra una camioneta en Venustiano Carranza",
+            "Mueren dos motociclistas tras choque en Venustiano Carranza",
+        )
+        for title in titles:
+            with self.subTest(title=title):
+                article = {
+                    "title": title,
+                    "url": "https://news.google.com/rss/articles/example-plural-fatal-motorcycle",
+                    "source": "El Sol de México",
+                    "date": "2026-11-13",
+                    "category": "Movilidad",
+                    "borough": "Venustiano Carranza",
+                }
+                lead = summarize(article)["lead"]
+                self.assertIn("un hecho vial relacionado con una motocicleta", lead)
+                self.assertIn("más de un fallecimiento", lead)
+                self.assertNotIn("no permite determinar", lead)
+
     def test_metrobús_only_headline_is_not_summarized_as_metro(self):
         article = {
             "title": "Estado de las estaciones del Metrobús en esta última hora del 11 de noviembre",
