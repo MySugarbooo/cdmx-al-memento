@@ -138,6 +138,7 @@ on:
       - 'assets/fotos.js'
       - 'assets/creditos.js'
       - 'assets/neo-gallery.js'
+      - 'assets/neo-home.js'
       - 'fotografias/index.html'
       - 'creditos-fotograficos.html'
       - 'tests/test_local_news.py'
