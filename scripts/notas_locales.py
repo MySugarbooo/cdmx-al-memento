@@ -72,6 +72,22 @@ INFOBAE_PULQUE_BARBACOA_SOURCE_URL = "https://www.infobae.com/mexico/2026/11/06/
 POSTA_PULQUE_BARBACOA_SOURCE_URL = "https://www.posta.com.mx/cdmx/feria-del-pulque-y-la-barbacoa-2026-fechas-y-entrada-gratis/vl2276243"
 SDPNOTICIAS_MAURICIO_TABE_REPORT_SOURCE_URL = "https://www.sdpnoticias.com/estados/cdmx/mauricio-tabe-presenta-su-quinto-informe-de-gobierno-en-miguel-hidalgo/"
 LA_PRENSA_MAURICIO_TABE_REPORT_SOURCE_URL = "https://oem.com.mx/la-prensa/metropoli/mauricio-tabe-presenta-su-quinto-informe-presume-avances-en-seguridad-y-cambios-en-miguel-hidalgo-33088214"
+RADIO_FORMULA_CASA_ECOLOGICA_SOURCE_URL = "https://www.radioformula.com.mx/cdmx/calentadores-solares-y-captacion-de-lluvia-el-plan-de-cdmx-para-ahorrar-en-casa-20261112-0088.html"
+LA_JORNADA_CASA_ECOLOGICA_SOURCE_URL = "https://www.jornada.com.mx/noticia/2026/11/12/capital/lanza-cdmx-programa-de-ecotecnias-para-10-mil-viviendas-en-alvaro-obregon"
+
+
+def is_radio_formula_casa_ecologica(article):
+    """Identifica la nota de Radio Fórmula del programa Casa Ecológica del 12/11/2026."""
+    title = unicodedata.normalize("NFKD", str(article.get("title") or ""))
+    title = "".join(ch for ch in title if not unicodedata.combining(ch)).casefold()
+    source = unicodedata.normalize("NFKD", str(article.get("source") or ""))
+    source = "".join(ch for ch in source if not unicodedata.combining(ch)).casefold().strip()
+    return (
+        str(article.get("date") or "") == "2026-11-12"
+        and source == "radio formula"
+        and "calentadores solares" in title
+        and "captacion de lluvia" in title
+    )
 
 
 def is_infobae_ballet_zapatilla(article):
@@ -379,6 +395,9 @@ def _reported_angle(article):
         or "captar agua de lluvia" in t
         or "captación pluvial" in t
         or "captacion pluvial" in t
+        or "captación de lluvia" in t
+        or "captacion de lluvia" in t
+        or "calentadores solares" in t
         or "cosecha de lluvia" in t
     ):
         return (f"El titular de {source} aborda la captación y aprovechamiento de agua pluvial{zone}. "
@@ -488,6 +507,34 @@ def summarize(article):
     category=str(article.get("category") or "CDMX")
     theme=TAGS.get(category,TAGS["CDMX"])
     folded_title=_photo_fold(title)
+    if is_radio_formula_casa_ecologica(article):
+        return {
+            "lead": (
+                "Radio Fórmula informó que el programa Casa Ecológica contempla instalar "
+                "sistemas de captación pluvial, calentadores solares y huertos en 19 mil "
+                "viviendas de la capital. Para 2025 y 2026 reportó una inversión de 356 "
+                "millones de pesos; en Álvaro Obregón, la meta anunciada es beneficiar "
+                "a 10 mil hogares."
+            ),
+            "context": (
+                "La presentación se realizó en Santa Rosa Xochiac, alcaldía Álvaro Obregón. "
+                "La iniciativa busca reducir el consumo de agua y gas y apoyar la producción "
+                "de alimentos en los hogares."
+            ),
+            "pending": (
+                "La inversión, las viviendas y las instalaciones descritas son cifras y metas "
+                "atribuidas al Gobierno de la Ciudad de México y a la cobertura periodística; "
+                "no deben presentarse como equipos ya instalados en cada hogar. Los avances "
+                "por colonia requieren confirmación de la Secretaría del Medio Ambiente."
+            ),
+            "method": (
+                "Síntesis basada en Radio Fórmula, 12 de noviembre de 2026: "
+                + RADIO_FORMULA_CASA_ECOLOGICA_SOURCE_URL
+                + ". Se contrastaron ubicación y objetivos con La Jornada, 12 de noviembre "
+                "de 2026: " + LA_JORNADA_CASA_ECOLOGICA_SOURCE_URL
+                + ". Las cifras se atribuyen a las fuentes y no constituyen una auditoría independiente."
+            ),
+        }
     if is_mauricio_tabe_fifth_report(article):
         return {
             "lead": (
