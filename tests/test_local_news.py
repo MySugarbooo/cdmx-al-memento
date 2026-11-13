@@ -3,7 +3,7 @@ import unittest
 from pathlib import Path
 from scripts.notas_locales import assign_photos, local_link, summarize, is_sensitive_media
 from scripts.build_article_seo import article_id, render
-from update_news import category_by_headline, standardize
+from update_news import category_by_headline, standardize, photo_needs_refresh
 
 ROOT=Path(__file__).resolve().parents[1]
 
@@ -520,6 +520,58 @@ class LocalNewsTests(unittest.TestCase):
         self.assertTrue(photo["license"])
         self.assertTrue(photo["licenseUrl"])
         self.assertTrue(photo["source"].startswith("https://commons.wikimedia.org/wiki/File:"))
+
+    def test_mauricio_tabe_report_has_attributed_summary_and_licensed_venue_photo(self):
+        article = standardize({
+            "title": "Mauricio Tabe presenta su Quinto Informe de Gobierno en Miguel Hidalgo",
+            "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNdXhhemVjeGhBRjlvT25FUGl5TlpXSGZlTmFHNk9Ga21zUjA5YTQ0TTBNamUxWWg4czY1NUM3MDg2RFhVUDUwVmNRTy1zQUtEbmd3TnJwYkR3aUpRdjd0czlRek9mY3ZjbGh6bmpVdHFieGZZcHFFUk5zekZZQnNNYVVEQ0ZTMGJQdkt3a1EzQURLS01Sb1FYV1A0NC1iVnFMcmVCeVV5SG1kdDRTNGpRZUp3?oc=5",
+            "source": "sdpnoticias",
+            "date": "2026-11-12",
+            "published_at": "2026-11-12T18:35:37Z",
+            "category": "Gobierno",
+        })
+        self.assertIsNotNone(article)
+        self.assertEqual(article["borough"], "Miguel Hidalgo")
+        self.assertEqual(
+            article["local_url"],
+            "/noticias/?id=842f4c3306f51b3ab9fc&mes=2026-11",
+        )
+        self.assertEqual(article["source_url"], "https://www.sdpnoticias.com/estados/cdmx/mauricio-tabe-presenta-su-quinto-informe-de-gobierno-en-miguel-hidalgo/")
+        self.assertIn("Blindar MH", article["brief"]["lead"])
+        self.assertIn("1,770 cámaras", article["brief"]["lead"])
+        self.assertIn("150 calles", article["brief"]["lead"])
+        self.assertIn("no se verifican de forma independiente", article["brief"]["pending"])
+        self.assertIn("La Prensa", article["brief"]["method"])
+
+        article["photo"] = {
+            "id": "commons_93188323",
+            "kind": "representativa",
+            "category": "CDMX",
+            "topic": "Registro de agua. Primera Sección del Bosque de Chapultepec - 4",
+            "keywords": ["Medio Ambiente"],
+            "author": "ProtoplasmaKid",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Registro_de_agua._Primera_Secci%C3%B3n_del_Bosque_de_Chapultepec_-_4.jpg",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/Registro_de_agua._Primera_Secci%C3%B3n_del_Bosque_de_Chapultepec_-_4.jpg/960px-Registro_de_agua._Primera_Secci%C3%B3n_del_Bosque_de_Chapultepec_-_4.jpg",
+        }
+        self.assertTrue(photo_needs_refresh(article))
+        assign_photos([article])
+        photo = article["photo"]
+        self.assertFalse(photo_needs_refresh(article))
+        self.assertEqual(photo["id"], "contexto_teatro_angela_peralta")
+        self.assertEqual(photo["author"], "Secretaría de Cultura Ciudad de México")
+        self.assertEqual(photo["license"], "CC BY 2.0")
+        self.assertIn("fotografía de 2019", photo["topic"])
+        self.assertEqual(photo["uploaded_at"], "2020-01-13")
+        self.assertEqual(photo["captured_at"], "2019-02-10")
+
+        rendered = render(article, article_id(article))
+        self.assertIn('href="https://www.sdpnoticias.com/estados/cdmx/mauricio-tabe-presenta-su-quinto-informe-de-gobierno-en-miguel-hidalgo/"', rendered)
+        self.assertIn("Secretaría de Cultura Ciudad de México", rendered)
+        self.assertIn("CC BY 2.0", rendered)
+        self.assertIn("Imagen representativa; no corresponde necesariamente al hecho.", rendered)
+
 
 if __name__=="__main__":
     unittest.main()

@@ -22,7 +22,7 @@ from pathlib import Path
 from zoneinfo import ZoneInfo
 
 from scripts.analisis_editorial import build_editorial
-from scripts.notas_locales import local_link, summarize, assign_photos, _photo_score, is_sensitive_media, is_coyotepec_highway_crash, is_san_juan_del_rio_autopista57_closure, SENSITIVE_MEDIA_TITLE, SAN_JUAN_DEL_RIO_AUTOPISTA57_SOURCE_URL, is_infobae_tlalpan_animal_abuse, is_la_prensa_tlalpan_animal_case, INFOBAE_TLALPAN_ANIMAL_SOURCE_URL, LA_PRENSA_TLALPAN_ANIMAL_SOURCE_URL, is_imagen_tlalpan_dog_rescue, is_huixtla_migrant_caravan, is_vc_fatal_trailer_incident, EL_GRAFICO_VC_TRAILER_SOURCE_URL, is_infobae_ballet_zapatilla, INFOBAE_BALLET_ZAPATILLA_SOURCE_URL, is_pulque_barbacoa_fair
+from scripts.notas_locales import local_link, summarize, assign_photos, _photo_score, is_sensitive_media, is_coyotepec_highway_crash, is_san_juan_del_rio_autopista57_closure, SENSITIVE_MEDIA_TITLE, SAN_JUAN_DEL_RIO_AUTOPISTA57_SOURCE_URL, is_infobae_tlalpan_animal_abuse, is_la_prensa_tlalpan_animal_case, INFOBAE_TLALPAN_ANIMAL_SOURCE_URL, LA_PRENSA_TLALPAN_ANIMAL_SOURCE_URL, is_imagen_tlalpan_dog_rescue, is_huixtla_migrant_caravan, is_vc_fatal_trailer_incident, EL_GRAFICO_VC_TRAILER_SOURCE_URL, is_infobae_ballet_zapatilla, INFOBAE_BALLET_ZAPATILLA_SOURCE_URL, is_pulque_barbacoa_fair, is_mauricio_tabe_fifth_report, SDPNOTICIAS_MAURICIO_TABE_REPORT_SOURCE_URL
 
 ROOT = Path(__file__).resolve().parent
 DEST = ROOT / "news.json"
@@ -615,6 +615,8 @@ def standardize(article):
         result["source_url"] = INFOBAE_TLALPAN_ANIMAL_SOURCE_URL
     elif is_vc_fatal_trailer_incident(result):
         result["source_url"] = EL_GRAFICO_VC_TRAILER_SOURCE_URL
+    elif is_mauricio_tabe_fifth_report(result):
+        result["source_url"] = SDPNOTICIAS_MAURICIO_TABE_REPORT_SOURCE_URL
     versions = article.get("alternate_versions")
     if isinstance(versions, list):
         preserved = []
@@ -852,6 +854,16 @@ def sanitize_outside_cdmx_versions(article):
     return repaired
 
 
+def photo_needs_refresh(item):
+    """Detecta imágenes contextuales obsoletas, incluso si su puntaje no es negativo."""
+    photo = item.get("photo") if isinstance(item, dict) else None
+    if not isinstance(photo, dict) or photo.get("kind") == "hecho":
+        return False
+    if is_mauricio_tabe_fifth_report(item):
+        return photo.get("id") != "contexto_teatro_angela_peralta"
+    return _photo_score(item, photo) < 0
+
+
 def consolidate_archive(new_items, cutoff, updated):
     """Deduplica el histórico y elimina incluso archivos mensuales ya vencidos."""
     ARCHIVE_DIR.mkdir(exist_ok=True)
@@ -905,9 +917,7 @@ def consolidate_archive(new_items, cutoff, updated):
     # la clasificación RSS. Conservar fotografías del hecho verificadas.
     mismatched = [
         item for item in existing.values()
-        if isinstance(item.get("photo"), dict)
-        and item["photo"].get("kind") != "hecho"
-        and _photo_score(item, item["photo"]) < 0
+        if photo_needs_refresh(item)
     ]
     missing = [item for item in existing.values()
                if not item.get("photo") and not is_sensitive_media(item)]
