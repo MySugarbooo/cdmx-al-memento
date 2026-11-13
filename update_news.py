@@ -304,12 +304,6 @@ def category_by_headline(title, feed_category, source=""):
     """Corrige etiquetas RSS evidentes sin inventar ubicaciones o hechos."""
     normalized = fold(title)
     normalized_source = fold(source)
-    # Las jornadas de adopción son información de la ciudad, no del Metro.
-    if re.search(r"\b(?:caravana de adopcion|adopcion de mascotas|perritos? rescatados buscan hogar)\b", normalized):
-        return "CDMX"
-    # Los asuntos del Congreso y del Plan General de Desarrollo son Gobierno.
-    if re.search(r"\b(?:congreso capitalino|congreso de la cdmx|congreso de la ciudad de mexico|plan general de desarrollo)\b", normalized):
-        return "Gobierno"
     # Delitos y detenciones no deben heredar una categoría de Metro o CDMX
     # por el feed RSS: robos, secuestros y maltrato animal son Seguridad.
     if re.search(
@@ -321,6 +315,12 @@ def category_by_headline(title, feed_category, source=""):
         normalized,
     ):
         return "Seguridad"
+    # Las jornadas de adopción son información de la ciudad, no del Metro.
+    if re.search(r"\b(?:caravana de adopcion|adopcion de mascotas|perritos? rescatados buscan hogar)\b", normalized):
+        return "CDMX"
+    # Los asuntos del Congreso y del Plan General de Desarrollo son Gobierno.
+    if re.search(r"\b(?:congreso capitalino|congreso de la cdmx|congreso de la ciudad de mexico|plan general de desarrollo)\b", normalized):
+        return "Gobierno"
     if (re.search(r"\bautopista\s+57\b", normalized)
             and re.search(r"\b(?:detenida|cerrada|bloqueada|filas?|trafico|accidentes?)\b", normalized)):
         return "Movilidad"
