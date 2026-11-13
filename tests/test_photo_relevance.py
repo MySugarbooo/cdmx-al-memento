@@ -1681,11 +1681,46 @@ class PhotoRelevanceTests(unittest.TestCase):
         self.assertLess(_photo_score(article, dance), 0)
         self.assertGreaterEqual(_photo_score(article, concert), 0)
         self.assertTrue(news.photo_needs_refresh({**article, "photo": dance}))
+        article["photo"] = dance
         with patch.object(photos, "_pool", return_value=[dance, concert]), patch.object(
             photos, "_load", return_value=[]
         ):
             assign_photos([article])
         self.assertEqual(article["photo"]["id"], "contexto_concierto_palacio_deportes_2009")
+
+
+    def test_assign_photos_preserves_credited_relevant_photo_when_pool_has_no_match(self):
+        title = ("María León presentó su nueva “Era de Villana” en el Teatro Metropólitan "
+                 "de la CDMX: entre invitados, nostalgia y canciones inéditas")
+        article = news.standardize({
+            "title": title,
+            "url": "https://news.google.com/rss/articles/maria-leon-preserve-photo-regression",
+            "source": "Infobae",
+            "date": "2026-11-13",
+            "published_at": "2026-11-13T07:53:32Z",
+            "category": "CDMX",
+        })
+        existing = representative_photo(
+            "contexto_concierto_palacio_deportes_2009", "Cultura",
+            "Concierto de Kings of Leon en el Palacio de los Deportes, Ciudad de México (octubre de 2009); imagen representativa, no corresponde a María León.",
+            ["concierto", "música en vivo", "Palacio de los Deportes", "Ciudad de México"],
+        )
+        existing["source"] = "https://commons.wikimedia.org/wiki/File:PalaciodelosDeportes_Concierto.jpg"
+        unrelated = representative_photo(
+            "unrelated_dance_photo", "Cultura",
+            "Danza del Fuego performance outside Museo Nacional de Antropología, Chapultepec, CDMX",
+            ["Danza del Fuego", "Museo Nacional de Antropología", "danza"],
+        )
+        unrelated["source"] = "https://commons.wikimedia.org/wiki/File:Danza_del_Fuego.jpg"
+        article["photo"] = existing
+        self.assertGreaterEqual(_photo_score(article, existing), 0)
+        self.assertLess(_photo_score(article, unrelated), 0)
+        with patch.object(photos, "_pool", return_value=[unrelated]), patch.object(
+            photos, "_load", return_value=[]
+        ):
+            stats = assign_photos([article])
+        self.assertEqual(article["photo"]["id"], existing["id"])
+        self.assertEqual(stats["assigned"], 1)
 
 if __name__ == "__main__":
     unittest.main()
