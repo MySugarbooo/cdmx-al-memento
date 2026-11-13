@@ -62,6 +62,12 @@ class FototecaEditorialTests(unittest.TestCase):
                     filename = re.sub(r"medell[ií]n", "", filename, flags=re.I)
                 self.assertIsNone(bad.search(filename))
 
+    def test_public_credit_page_count_matches_both_catalogs(self):
+        credits_page = (ROOT / "creditos-fotograficos.html").read_text(encoding="utf-8")
+        count = f"{len(self.photos):,}"
+        self.assertIn(f"Fototeca editorial: {count} imágenes", credits_page)
+        self.assertIn(f"La biblioteca reúne {count} imágenes", credits_page)
+
     def test_frontend_uses_catalog_and_formal_notice(self):
         gallery = (ROOT / "assets/neo-gallery.js").read_text(encoding="utf-8")
         credits = (ROOT / "assets/creditos.js").read_text(encoding="utf-8")
