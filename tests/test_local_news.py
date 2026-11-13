@@ -4,7 +4,7 @@ import unittest
 from pathlib import Path
 from scripts.notas_locales import assign_photos, local_link, summarize, is_sensitive_media, RADIO_FORMULA_CASA_ECOLOGICA_SOURCE_URL, INFOBAE_MARIA_LEON_CONCERT_SOURCE_URL
 from scripts.build_article_seo import article_id, render
-from update_news import category_by_headline, standardize, photo_needs_refresh, CAPITAL_CDMX_CARE_BUDGET_SOURCE_URL, prioritize_photo_refresh
+from update_news import category_by_headline, standardize, photo_needs_refresh, CAPITAL_CDMX_CARE_BUDGET_SOURCE_URL, prioritize_photo_refresh, build_homepage_feed
 
 ROOT=Path(__file__).resolve().parents[1]
 
@@ -778,6 +778,68 @@ class LocalNewsTests(unittest.TestCase):
         self.assertNotIn("photo", result)
         rendered = render(result, article_id(result))
         self.assertNotIn('<figure class="article-photo">', rendered)
+
+
+    def test_homepage_feed_deduplicates_original_and_local_urls_without_losing_other_articles(self):
+        def make_photo(name):
+            return {
+                "id": "metro-" + name,
+                "kind": "representativa",
+                "url": "https://upload.wikimedia.org/wikipedia/commons/" + name + ".jpg",
+                "category": "Metro",
+                "topic": "Estación Hidalgo (Línea 3) del Metro de la Ciudad de México",
+                "author": "Autor de prueba",
+                "license": "CC BY 4.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+                "source": "https://commons.wikimedia.org/wiki/File:" + name + ".jpg",
+            }
+
+        shared_url = "https://news.google.com/rss/articles/metro-duplicate-regression"
+        shared_local_url = "/noticias/?id=0123456789abcdefabcd&mes=2026-11"
+        newest = {
+            "title": "Metro CDMX: Avance de trenes HOY viernes 13 de noviembre 2026 en vivo",
+            "url": shared_url,
+            "local_url": shared_local_url,
+            "source": "TV Azteca",
+            "date": "2026-11-13",
+            "published_at": "2026-11-13T14:36:29Z",
+            "category": "Metro",
+            "location": "Ciudad de México (sin alcaldía identificada)",
+            "photo": make_photo("metro-newest"),
+        }
+        older = {
+            "title": "Afluencia del Metro CDMX hoy viernes 13 de noviembre 2026",
+            "url": shared_url,
+            "local_url": shared_local_url,
+            "source": "TV Azteca",
+            "date": "2026-11-13",
+            "published_at": "2026-11-13T13:05:42Z",
+            "category": "Metro",
+            "location": "Ciudad de México (sin alcaldía identificada)",
+            "photo": make_photo("metro-older"),
+        }
+        distinct = {
+            "title": "Servicio del Metro CDMX en Línea 3",
+            "url": "https://news.google.com/rss/articles/metro-distinct-regression",
+            "local_url": "/noticias/?id=1123456789abcdefabcd&mes=2026-11",
+            "source": "N+",
+            "date": "2026-11-13",
+            "published_at": "2026-11-13T12:00:00Z",
+            "category": "Metro",
+            "location": "Ciudad de México (sin alcaldía identificada)",
+            "photo": make_photo("metro-distinct"),
+        }
+
+        result = build_homepage_feed([newest, older, distinct])
+
+        self.assertEqual([item["title"] for item in result], [
+            newest["title"],
+            distinct["title"],
+        ])
+        self.assertEqual(len({item["url"] for item in result}), 2)
+        self.assertEqual(len({item["local_url"] for item in result}), 2)
+
+
 
 
 if __name__=="__main__":
