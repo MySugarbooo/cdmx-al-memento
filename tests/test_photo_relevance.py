@@ -2094,5 +2094,63 @@ class PhotoRelevanceTests(unittest.TestCase):
         self.assertGreaterEqual(_photo_score({"title": "Hasta 35 km/h de rachas en alcaldías de la CDMX", "category": "CDMX"}, weather), 0)
 
 
+class PerifericoPhotoRegressionTests(unittest.TestCase):
+    def test_rocazos_story_rejects_zocalo_and_uses_periferico_photo(self):
+        article = news.standardize({
+            "title": "Llueven «rocazos» en CDMX",
+            "url": "https://news.google.com/rss/articles/rocazos-photo-regression",
+            "source": "José Cárdenas",
+            "date": "2026-11-13",
+            "category": "CDMX",
+        })
+        zocalo = representative_photo(
+            "commons_46666275", "CDMX",
+            "Zócalo desde la Torre Latinoamericana, Ciudad de México",
+            ["Torre Latinoamericana Ciudad de México"],
+        )
+        periferico = representative_photo(
+            "contexto_periferico_sur_2015", "Movilidad",
+            "Periférico Sur desde Glorieta de Vaqueritos, Tlalpan, CDMX (2015); imagen representativa, no documenta el ataque ni el tramo exacto.",
+            ["Periférico Sur", "tránsito vehicular", "automovilistas", "vialidad", "Ciudad de México", "Tlalpan"],
+        )
+        periferico.update({
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Periferico_sur.JPG/960px-Periferico_sur.JPG?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail&_=20150924185737",
+            "source": "https://commons.wikimedia.org/wiki/File:Periferico_sur.JPG",
+            "author": "Victorcinco523",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        })
+        self.assertLess(photos._photo_score(article, zocalo), 0)
+        self.assertGreaterEqual(photos._photo_score(article, periferico), 0)
+        with patch.object(photos, "_pool", return_value=[zocalo, periferico]), patch.object(
+            photos, "_load", return_value=[]
+        ):
+            stats = photos.assign_photos([article])
+        self.assertEqual(article["photo"]["id"], "contexto_periferico_sur_2015")
+        self.assertEqual(article["photo"]["kind"], "representativa")
+        self.assertEqual(article["photo"]["author"], "Victorcinco523")
+        self.assertEqual(article["photo"]["license"], "CC BY-SA 4.0")
+        self.assertEqual(stats["assigned"], 1)
+
+    def test_periferico_photo_is_present_in_all_editorial_catalogs(self):
+        expected_source = "https://commons.wikimedia.org/wiki/File:Periferico_sur.JPG"
+        for relative in (
+            "assets/fotos/contexto-tematico.json",
+            "assets/fotos/indice-noticias-1100.json",
+            "assets/fotos/catalogo-editorial-1100.json",
+        ):
+            with self.subTest(path=relative):
+                data = json.loads((REPO_ROOT / relative).read_text(encoding="utf-8"))
+                photo = next(
+                    item for item in data["photos"]
+                    if item.get("id") == "contexto_periferico_sur_2015"
+                )
+                self.assertEqual(photo["source"], expected_source)
+                self.assertEqual(photo["author"], "Victorcinco523")
+                self.assertEqual(photo["license"], "CC BY-SA 4.0")
+                self.assertEqual(photo["context"],
+                    "Imagen de carácter ilustrativo y referencial; no constituye evidencia gráfica de los hechos descritos.")
+
+
 if __name__ == "__main__":
     unittest.main()

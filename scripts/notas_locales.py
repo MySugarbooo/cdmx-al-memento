@@ -130,6 +130,17 @@ def is_infobae_maria_leon_concert(article):
     )
 
 
+def is_jose_cardenas_rocazos(article):
+    """Identifica la nota de José Cárdenas sobre ataques a automovilistas en Periférico."""
+    title = _photo_fold(article.get("title"))
+    source = _photo_fold(article.get("source"))
+    return (
+        str(article.get("date") or "") == "2026-11-13"
+        and source == "jose cardenas"
+        and "rocazos" in title
+    )
+
+
 def is_pulque_barbacoa_fair(article):
     """Identifica la Feria del Pulque y la Barbacoa anunciada para el 13-15 de noviembre."""
     title = _photo_fold(article.get("title"))
@@ -1713,6 +1724,10 @@ def _photo_score(article, photo):
     topic=re.sub(r"\bno\b[^;.)]*", "", topic)
     keywords=_photo_fold(" ".join(str(x) for x in photo.get("keywords",[])))
     context=topic+" "+keywords
+    # El artículo describe ataques a automovilistas en Periférico: una vista del Zócalo
+    # no aporta contexto vial. La foto se rotula como representativa, no del ataque.
+    if is_jose_cardenas_rocazos(article):
+        return 5000 if photo.get("id") == "contexto_periferico_sur_2015" else -10000
     # Una noticia sobre repartidores exige una imagen de repartidores o mensajeros;
     # una protesta distinta no es contexto suficiente.
     delivery_story = bool(re.search(
