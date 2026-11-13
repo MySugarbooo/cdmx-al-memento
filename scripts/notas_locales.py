@@ -74,6 +74,7 @@ SDPNOTICIAS_MAURICIO_TABE_REPORT_SOURCE_URL = "https://www.sdpnoticias.com/estad
 LA_PRENSA_MAURICIO_TABE_REPORT_SOURCE_URL = "https://oem.com.mx/la-prensa/metropoli/mauricio-tabe-presenta-su-quinto-informe-presume-avances-en-seguridad-y-cambios-en-miguel-hidalgo-33088214"
 RADIO_FORMULA_CASA_ECOLOGICA_SOURCE_URL = "https://www.radioformula.com.mx/cdmx/calentadores-solares-y-captacion-de-lluvia-el-plan-de-cdmx-para-ahorrar-en-casa-20261112-0088.html"
 LA_JORNADA_CASA_ECOLOGICA_SOURCE_URL = "https://www.jornada.com.mx/noticia/2026/11/12/capital/lanza-cdmx-programa-de-ecotecnias-para-10-mil-viviendas-en-alvaro-obregon"
+CAPITAL_CDMX_CARE_BUDGET_SOURCE_URL = "https://capital-cdmx.org/presupuesto-cuidados-2027-cdmx-cuanto-dinero-llegara-anexo-31-desglose/"
 
 
 def is_radio_formula_casa_ecologica(article):
@@ -87,6 +88,19 @@ def is_radio_formula_casa_ecologica(article):
         and source == "radio formula"
         and "calentadores solares" in title
         and "captacion de lluvia" in title
+    )
+
+
+def is_capital_cdmx_care_budget(article):
+    """Identifica el análisis del Anexo 31 publicado por Capital CDMX el 12/11/2026."""
+    title = unicodedata.normalize("NFKD", str(article.get("title") or ""))
+    title = "".join(ch for ch in title if not unicodedata.combining(ch)).casefold()
+    source = unicodedata.normalize("NFKD", str(article.get("source") or ""))
+    source = "".join(ch for ch in source if not unicodedata.combining(ch)).casefold().strip()
+    return (
+        str(article.get("date") or "") == "2026-11-12"
+        and source == "capital cdmx"
+        and "presupuesto de cuidados 2027" in title
     )
 
 
@@ -507,6 +521,32 @@ def summarize(article):
     category=str(article.get("category") or "CDMX")
     theme=TAGS.get(category,TAGS["CDMX"])
     folded_title=_photo_fold(title)
+    if is_capital_cdmx_care_budget(article):
+        return {
+            "lead": (
+                "Capital CDMX informó que el Anexo 31, «Consolidación de una Sociedad de Cuidados», "
+                "reúne 475,959.7 millones de pesos para 2027. El monto es nacional: la información "
+                "publicada no permite determinar cuánto corresponde a la Ciudad de México ni cuántas "
+                "familias capitalinas recibirán servicios."
+            ),
+            "context": (
+                "El anexo agrupa recursos de múltiples programas y dependencias; no es una transferencia "
+                "directa a la capital. Capital CDMX señala que el monto aumenta alrededor de 1.6% en "
+                "términos nominales, pero disminuye 1.6% en términos reales frente a 2026."
+            ),
+            "pending": (
+                "La nota no ofrece un desglose que permita asignar una cantidad a CDMX o a una alcaldía. "
+                "Para comprobar el efecto local hacen falta datos por programa y territorio, padrones, "
+                "ubicaciones de servicios, convenios y reportes de ejecución; no debe repartirse el total "
+                "nacional por población ni presentarse como dinero ya recibido por las familias."
+            ),
+            "method": (
+                "Síntesis basada en la publicación original de Capital CDMX del 12 de noviembre de 2026: "
+                + CAPITAL_CDMX_CARE_BUDGET_SOURCE_URL
+                + ". El monto y la variación presupuestaria se atribuyen al medio; no constituyen una "
+                "auditoría independiente ni un desglose del gasto destinado a la capital."
+            ),
+        }
     if is_radio_formula_casa_ecologica(article):
         return {
             "lead": (
@@ -1596,6 +1636,36 @@ def _photo_score(article, photo):
     topic=_photo_fold(photo.get("topic"))
     keywords=_photo_fold(" ".join(str(x) for x in photo.get("keywords",[])))
     context=topic+" "+keywords
+    # Una noticia sobre repartidores exige una imagen de repartidores o mensajeros;
+    # una protesta distinta no es contexto suficiente.
+    delivery_story = bool(re.search(
+        r"\b(?:repartidores?|conductores? de aplicacion)\b", headline
+    ))
+    delivery_photo = bool(re.search(
+        r"\b(?:repartidores?|conductores? de aplicacion|mensajeros?|reparto de paqueteria|delivery riders?)\b",
+        context,
+    ))
+    if delivery_story and not delivery_photo:
+        return -10000
+    # Los tianguis no se ilustran con monumentos ni con mercados públicos distintos.
+    tianguis_story = bool(re.search(r"\btianguis\b", headline))
+    tianguis_photo = bool(re.search(
+        r"\b(?:tianguis|mercados? sobre ruedas|comercio ambulante|puestos callejeros|vendedores ambulantes)\b",
+        context,
+    ))
+    if tianguis_story and not tianguis_photo:
+        return -10000
+    # Un presupuesto del sistema de cuidados requiere contexto de servicios de cuidado.
+    care_budget_story = bool(re.search(
+        r"\b(?:presupuesto de cuidados|sistema (?:nacional|publico) de cuidados|servicios de cuidado|personas cuidadoras|cuidado infantil)\b",
+        headline,
+    ))
+    care_photo = bool(re.search(
+        r"\b(?:cuidados?|personas cuidadoras|guarderias?|estancias infantiles|centros de cuidado|cuidado infantil|servicios de cuidado|atencion a personas mayores)\b",
+        context,
+    ))
+    if care_budget_story and not care_photo:
+        return -10000
     # Las noticias sobre Profeco y atención al consumidor requieren una imagen
     # del mismo servicio; una protesta ajena no es contexto editorial suficiente.
     profeco_story = bool(re.search(

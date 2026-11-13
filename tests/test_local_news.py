@@ -4,7 +4,7 @@ import unittest
 from pathlib import Path
 from scripts.notas_locales import assign_photos, local_link, summarize, is_sensitive_media, RADIO_FORMULA_CASA_ECOLOGICA_SOURCE_URL
 from scripts.build_article_seo import article_id, render
-from update_news import category_by_headline, standardize, photo_needs_refresh
+from update_news import category_by_headline, standardize, photo_needs_refresh, CAPITAL_CDMX_CARE_BUDGET_SOURCE_URL
 
 ROOT=Path(__file__).resolve().parents[1]
 
@@ -455,6 +455,31 @@ class LocalNewsTests(unittest.TestCase):
         self.assertNotIn("pronóstico", result["brief"]["lead"].casefold())
         self.assertIn("La Jornada", result["brief"]["method"])
         self.assertIn("radioformula.com.mx", result["brief"]["method"])
+
+    def test_capital_cdmx_care_budget_summary_and_direct_source_are_accurate(self):
+        article = {
+            "title": "Presupuesto de cuidados 2027: ¿cuánto llegará a la CDMX y cómo se puede comprobar?",
+            "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOTDJNRVpCdi1nMjVIQVJTb21HLVBXS3dLN19neF9vcVI5RE9ua3ktTW5HUURqaVlKRTRIeHZjVFlCbkFqQng2WnZ1VHFvNDhmQ0lqcDFpa255aExqVDUwLW95MHBYd2hVR0RFdHFsRUpoVUZFRkY1blZLVWdzeU56RW9PcUtBUnVKQnRUNUZMamxGdVpPNXRFbndrYlY?oc=5",
+            "source": "Capital CDMX",
+            "date": "2026-11-12",
+            "published_at": "2026-11-13T04:30:03Z",
+            "category": "CDMX",
+            "borough": "",
+        }
+        self.assertEqual(category_by_headline(article["title"], "CDMX", "Capital CDMX"), "Gobierno")
+        result = standardize(article)
+        self.assertIsNotNone(result)
+        self.assertEqual(result["category"], "Gobierno")
+        self.assertEqual(result["source_url"], CAPITAL_CDMX_CARE_BUDGET_SOURCE_URL)
+        lead = result["brief"]["lead"]
+        self.assertIn("475,959.7 millones de pesos", lead)
+        self.assertIn("no permite determinar cuánto corresponde a la Ciudad de México", lead)
+        self.assertNotIn("detención", lead.casefold())
+        self.assertNotIn("conducta delictiva", lead.casefold())
+        self.assertIn("Anexo 31", result["brief"]["context"])
+        self.assertIn(CAPITAL_CDMX_CARE_BUDGET_SOURCE_URL, result["brief"]["method"])
+        article_html = render(result, article_id(result))
+        self.assertIn(CAPITAL_CDMX_CARE_BUDGET_SOURCE_URL, article_html)
 
     def test_ssc_buen_fin_operativo_is_security_and_uses_official_facts(self):
         title = ("2999: La SSC implementará un operativo de seguridad, vigilancia y vialidad "
