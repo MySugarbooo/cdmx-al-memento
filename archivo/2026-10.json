@@ -1,6 +1,6 @@
 {
   "month": "2026-10",
-  "updated": "2026-11-13 22:49 UTC",
+  "updated": "2026-11-13 23:16 UTC",
   "articles": [
     {
       "title": "Expropiará el gobierno de la CDMX capitalino tres predios para vivienda pública",
@@ -15830,14 +15830,14 @@
       "source": "Reporte Indigo",
       "date": "2026-10-30",
       "published_at": "2026-10-30T12:56:19Z",
-      "category": "CDMX",
+      "category": "Movilidad",
       "borough": "",
       "location": "Ubicación no indicada por el titular",
       "local_url": "/noticias/?id=e8888721bea3c3c156c3&mes=2026-10",
       "brief": {
         "lead": "De acuerdo con Reporte Indigo, el titular publicado es: «¿Qué pasó en Reforma HOY? Marchas y cierres este 30 de octubre 2026». Según la información destacada por Reporte Indigo, manifestaciones o bloqueos forman parte de la jornada de movilidad capitalina. La ficha no demuestra por sí sola que todas las vías mencionadas sigan cerradas al momento de leerla.",
-        "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-        "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
+        "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       }
     },
@@ -42420,14 +42420,19 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "alcaldia_miguel-hidalgo",
-        "url": "/assets/alcaldias/miguel-hidalgo.jpg",
-        "category": "CDMX",
-        "borough": "Miguel Hidalgo",
-        "topic": "Bosque de Chapultepec, alcaldía Miguel Hidalgo",
-        "author": "ProtoplasmaKid",
+        "id": "commons_75245995",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Graduaci%C3%B3n_de_la_Polic%C3%ADa_de_la_Ciudad_de_M%C3%A9xico_-i---i-_%2836371673094%29.jpg/960px-Graduaci%C3%B3n_de_la_Polic%C3%ADa_de_la_Ciudad_de_M%C3%A9xico_-i---i-_%2836371673094%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "category": "Seguridad",
+        "borough": "",
+        "topic": "Graduación de la Policía de la Ciudad de México -i---i- (36371673094)",
+        "keywords": [
+          "Policía Ciudad de México"
+        ],
+        "author": "Gobierno CDMX",
         "license": "CC0",
-        "source": "https://commons.wikimedia.org/wiki/File:Audiorama_de_Chapultepec_1.jpg"
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "source": "https://commons.wikimedia.org/wiki/File:Graduaci%C3%B3n_de_la_Polic%C3%ADa_de_la_Ciudad_de_M%C3%A9xico_-i---i-_(36371673094).jpg"
       }
     },
     {
@@ -42497,16 +42502,6 @@
         "context": "Las decisiones administrativas pueden influir en servicios, trámites y derechos; conviene conocer sus condiciones y a quiénes afectan.",
         "pending": "Es indispensable consultar los acuerdos, comunicados o documentos oficiales antes de dar una medida por vigente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "archivo_cdmx_019",
-        "url": "/assets/fotos/archivo_cdmx_019.jpg",
-        "category": "CDMX",
-        "borough": "",
-        "topic": "El Paraguas (126505121)",
-        "author": "Octavio Alonso Maya Castro",
-        "license": "CC BY-SA 3.0",
-        "source": "https://commons.wikimedia.org/wiki/File:El_Paraguas_%28126505121%29.jpeg"
       }
     },
     {
@@ -42794,16 +42789,6 @@
         "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
         "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "alcaldia_cuajimalpa",
-        "url": "/assets/alcaldias/cuajimalpa.jpg",
-        "category": "CDMX",
-        "borough": "Cuajimalpa de Morelos",
-        "topic": "Centro del antiguo pueblo de Cuajimalpa",
-        "author": "AlejandroLinaresGarcia",
-        "license": "CC BY-SA 3.0",
-        "source": "https://commons.wikimedia.org/wiki/File:CuajimalpaCentro01.JPG"
       }
     },
     {
@@ -42822,16 +42807,6 @@
         "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
         "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "archivo_cdmx_013",
-        "url": "/assets/fotos/archivo_cdmx_013.jpg",
-        "category": "CDMX",
-        "borough": "",
-        "topic": "D.F. - panoramio (9)",
-        "author": "eurimaco",
-        "license": "CC BY-SA 3.0",
-        "source": "https://commons.wikimedia.org/wiki/File:D.F._-_panoramio_%289%29.jpg"
       }
     },
     {
@@ -43448,21 +43423,6 @@
         "context": "Las decisiones administrativas pueden influir en servicios, trámites y derechos; conviene conocer sus condiciones y a quiénes afectan.",
         "pending": "Es indispensable consultar los acuerdos, comunicados o documentos oficiales antes de dar una medida por vigente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "commons_98002543",
-        "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Sala_de_Tesorer%C3%ADa_en_Palacio_Nacional_-_II.jpg/960px-Sala_de_Tesorer%C3%ADa_en_Palacio_Nacional_-_II.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "category": "Gobierno",
-        "borough": "",
-        "topic": "Sala de Tesorería en Palacio Nacional - II",
-        "keywords": [
-          "Palacio Nacional Ciudad de México"
-        ],
-        "author": "J Mndz",
-        "license": "CC BY-SA 2.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Sala_de_Tesorer%C3%ADa_en_Palacio_Nacional_-_II.jpg"
       }
     },
     {
@@ -43573,21 +43533,6 @@
         "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
         "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "commons_98002545",
-        "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Sala_de_Tesorer%C3%ADa_en_Palacio_Nacional_-_IV.jpg/960px-Sala_de_Tesorer%C3%ADa_en_Palacio_Nacional_-_IV.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "category": "Gobierno",
-        "borough": "",
-        "topic": "Sala de Tesorería en Palacio Nacional - IV",
-        "keywords": [
-          "Palacio Nacional Ciudad de México"
-        ],
-        "author": "J Mndz",
-        "license": "CC BY-SA 2.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Sala_de_Tesorer%C3%ADa_en_Palacio_Nacional_-_IV.jpg"
       }
     },
     {
@@ -44058,16 +44003,6 @@
         "context": "Las decisiones administrativas pueden influir en servicios, trámites y derechos; conviene conocer sus condiciones y a quiénes afectan.",
         "pending": "Es indispensable consultar los acuerdos, comunicados o documentos oficiales antes de dar una medida por vigente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "archivo_gobierno_007",
-        "url": "/assets/fotos/archivo_gobierno_007.jpg",
-        "category": "Gobierno",
-        "borough": "",
-        "topic": "Calle Calle Francisco I. Madero de la Ciudad de México, con el Palacio Nacional al fondo",
-        "author": "Luisalvaz",
-        "license": "CC BY-SA 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Calle_Calle_Francisco_I._Madero_de_la_Ciudad_de_M%C3%A9xico%2C_con_el_Palacio_Nacional_al_fondo.JPG"
       }
     },
     {
@@ -44733,21 +44668,6 @@
         "context": "Los cambios en este sistema pueden afectar los horarios, las conexiones y la planeación de los viajes cotidianos.",
         "pending": "El estado operativo, las estaciones y las alternativas de traslado deben comprobarse en los avisos actuales del Metro. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "archivo_gobierno_004",
-        "kind": "representativa",
-        "url": "/assets/fotos/archivo_gobierno_004.jpg",
-        "category": "Gobierno",
-        "borough": "",
-        "topic": "Palacio Nacional Ciudad de México City DF",
-        "keywords": [
-          "Gobierno"
-        ],
-        "author": "stevecadman",
-        "license": "CC BY-SA 2.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Palacio_Nacional_Ciudad_de_M%C3%A9xico_City_DF.jpg"
       }
     },
     {
@@ -45394,14 +45314,19 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "alcaldia_magdalena-contreras",
-        "url": "/assets/alcaldias/magdalena-contreras.jpg",
+        "id": "commons_114051293",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Coro_de_la_Catedral_metropolitana_de_la_Ciudad_de_M%C3%A9xico_08.jpg/960px-Coro_de_la_Catedral_metropolitana_de_la_Ciudad_de_M%C3%A9xico_08.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
         "category": "CDMX",
-        "borough": "La Magdalena Contreras",
-        "topic": "Río y bosque de Los Dinamos, La Magdalena Contreras",
-        "author": "Ananda xd",
+        "borough": "",
+        "topic": "Coro de la Catedral metropolitana de la Ciudad de México 08",
+        "keywords": [
+          "Catedral Metropolitana Ciudad de México"
+        ],
+        "author": "Luis Alvaz",
         "license": "CC BY-SA 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Rio_de_los_Dinamos_en_CDMX.jpg"
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Coro_de_la_Catedral_metropolitana_de_la_Ciudad_de_M%C3%A9xico_08.jpg"
       }
     },
     {
@@ -46057,16 +45982,6 @@
         "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
         "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "archivo_cdmx_006",
-        "url": "/assets/fotos/archivo_cdmx_006.jpg",
-        "category": "CDMX",
-        "borough": "",
-        "topic": "Catedral Ii (172219027)",
-        "author": "Waender Alonso Bello",
-        "license": "CC BY 3.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Catedral_Ii_%28172219027%29.jpeg"
       }
     },
     {
@@ -46132,19 +46047,19 @@
     },
     {
       "title": "CDMX y Edomex enlazan miles de cámaras del C5 para blindar sus zonas limítrofes territoriales",
-      "description": "De acuerdo con El Sol de México, el titular publicado es: «CDMX y Edomex enlazan miles de cámaras del C5 para blindar sus zonas limítrofes territoriales». La información publicada por El Sol de México aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "description": "De acuerdo con El Sol de México, el titular publicado es: «CDMX y Edomex enlazan miles de cámaras del C5 para blindar sus zonas limítrofes territoriales». La información publicada por El Sol de México aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
       "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOenJielBLc0JmaTF2OG8wMDRscGJLNGgzXzhXc0cyUHY2ODN4aWZ5MVkxcnRJTy1RY09qQXFCWUhkSDJDeE1qMURBZHV1YlI3d1FMMHJRdjhpcFpXUWNDS3dvaVR4RzBRVTVFQ19TajVXVy1XY19lbDh2cGZQMzBqc3liSmFOX20xZFo0RXhTLXJPSnpseHZoMmJyMGJYZ2J4VW9KTVNsZ05hdUplOEhKUF9BTlVxSl92Y291a1ROYXRZQUpqTXhua29FR0dCX09EcmdQY2huaHQ?oc=5",
       "source": "El Sol de México",
       "date": "2026-10-26",
       "published_at": "2026-10-26T18:56:15Z",
-      "category": "CDMX",
+      "category": "Seguridad",
       "borough": "",
       "location": "Ciudad de México (sin alcaldía identificada)",
       "local_url": "/noticias/?id=ad2295d75dd24e95aa66&mes=2026-10",
       "brief": {
-        "lead": "De acuerdo con El Sol de México, el titular publicado es: «CDMX y Edomex enlazan miles de cámaras del C5 para blindar sus zonas limítrofes territoriales». La información publicada por El Sol de México aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-        "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-        "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "lead": "De acuerdo con El Sol de México, el titular publicado es: «CDMX y Edomex enlazan miles de cámaras del C5 para blindar sus zonas limítrofes territoriales». La información publicada por El Sol de México aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+        "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+        "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
@@ -48776,21 +48691,6 @@
         "context": "Los cambios en este sistema pueden afectar los horarios, las conexiones y la planeación de los viajes cotidianos.",
         "pending": "El estado operativo, las estaciones y las alternativas de traslado deben comprobarse en los avisos actuales del Metro. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "commons_159788320",
-        "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Estaci%C3%B3n_Ju%C3%A1rez_del_Metro_de_la_Ciudad_de_M%C3%A9xico_04.jpg/960px-Estaci%C3%B3n_Ju%C3%A1rez_del_Metro_de_la_Ciudad_de_M%C3%A9xico_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "category": "Metro",
-        "borough": "",
-        "topic": "Estación Juárez del Metro de la Ciudad de México 04",
-        "keywords": [
-          "Metro Ciudad de México Línea 3"
-        ],
-        "author": "ProtoplasmaKid",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Estaci%C3%B3n_Ju%C3%A1rez_del_Metro_de_la_Ciudad_de_M%C3%A9xico_04.jpg"
       }
     },
     {
@@ -49059,14 +48959,19 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_cdmx_013",
-        "url": "/assets/fotos/archivo_cdmx_013.jpg",
-        "category": "CDMX",
+        "id": "commons_75263671",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Operativo_de_Lluvias_CDMX_-i---i-_%2836294439343%29.jpg/960px-Operativo_de_Lluvias_CDMX_-i---i-_%2836294439343%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "category": "Medio Ambiente",
         "borough": "",
-        "topic": "D.F. - panoramio (9)",
-        "author": "eurimaco",
-        "license": "CC BY-SA 3.0",
-        "source": "https://commons.wikimedia.org/wiki/File:D.F._-_panoramio_%289%29.jpg"
+        "topic": "Operativo de Lluvias CDMX -i---i- (36294439343)",
+        "keywords": [
+          "Lluvia Ciudad de México"
+        ],
+        "author": "Gobierno CDMX",
+        "license": "CC0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "source": "https://commons.wikimedia.org/wiki/File:Operativo_de_Lluvias_CDMX_-i---i-_(36294439343).jpg"
       }
     },
     {
@@ -49504,14 +49409,19 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_cdmx_019",
-        "url": "/assets/fotos/archivo_cdmx_019.jpg",
-        "category": "CDMX",
+        "id": "commons_75263471",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Operativo_de_Lluvias_CDMX_-i---i-_%2836298048533%29.jpg/960px-Operativo_de_Lluvias_CDMX_-i---i-_%2836298048533%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "category": "Medio Ambiente",
         "borough": "",
-        "topic": "El Paraguas (126505121)",
-        "author": "Octavio Alonso Maya Castro",
-        "license": "CC BY-SA 3.0",
-        "source": "https://commons.wikimedia.org/wiki/File:El_Paraguas_%28126505121%29.jpeg"
+        "topic": "Operativo de Lluvias CDMX -i---i- (36298048533)",
+        "keywords": [
+          "Lluvia Ciudad de México"
+        ],
+        "author": "Gobierno CDMX",
+        "license": "CC0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "source": "https://commons.wikimedia.org/wiki/File:Operativo_de_Lluvias_CDMX_-i---i-_(36298048533).jpg"
       }
     },
     {
@@ -50010,14 +49920,19 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_cdmx_006",
-        "url": "/assets/fotos/archivo_cdmx_006.jpg",
-        "category": "CDMX",
+        "id": "commons_75263513",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Operativo_de_Lluvias_CDMX_-i---i-_%2836294397303%29.jpg/960px-Operativo_de_Lluvias_CDMX_-i---i-_%2836294397303%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "category": "Medio Ambiente",
         "borough": "",
-        "topic": "Catedral Ii (172219027)",
-        "author": "Waender Alonso Bello",
-        "license": "CC BY 3.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Catedral_Ii_%28172219027%29.jpeg"
+        "topic": "Operativo de Lluvias CDMX -i---i- (36294397303)",
+        "keywords": [
+          "Lluvia Ciudad de México"
+        ],
+        "author": "Gobierno CDMX",
+        "license": "CC0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "source": "https://commons.wikimedia.org/wiki/File:Operativo_de_Lluvias_CDMX_-i---i-_(36294397303).jpg"
       }
     },
     {
@@ -50190,16 +50105,6 @@
         "context": "Las decisiones administrativas pueden influir en servicios, trámites y derechos; conviene conocer sus condiciones y a quiénes afectan.",
         "pending": "Es indispensable consultar los acuerdos, comunicados o documentos oficiales antes de dar una medida por vigente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "archivo_cdmx_013",
-        "url": "/assets/fotos/archivo_cdmx_013.jpg",
-        "category": "CDMX",
-        "borough": "",
-        "topic": "D.F. - panoramio (9)",
-        "author": "eurimaco",
-        "license": "CC BY-SA 3.0",
-        "source": "https://commons.wikimedia.org/wiki/File:D.F._-_panoramio_%289%29.jpg"
       }
     },
     {
@@ -50464,14 +50369,19 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_cdmx_003",
-        "url": "/assets/fotos/archivo_cdmx_003.jpg",
-        "category": "CDMX",
+        "id": "commons_75263694",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Operativo_de_Lluvias_CDMX_-i---i-_%2836298094223%29.jpg/960px-Operativo_de_Lluvias_CDMX_-i---i-_%2836298094223%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "category": "Medio Ambiente",
         "borough": "",
-        "topic": "D.F. - panoramio (7)",
-        "author": "eurimaco",
-        "license": "CC BY-SA 3.0",
-        "source": "https://commons.wikimedia.org/wiki/File:D.F._-_panoramio_%287%29.jpg"
+        "topic": "Operativo de Lluvias CDMX -i---i- (36298094223)",
+        "keywords": [
+          "Lluvia Ciudad de México"
+        ],
+        "author": "Gobierno CDMX",
+        "license": "CC0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "source": "https://commons.wikimedia.org/wiki/File:Operativo_de_Lluvias_CDMX_-i---i-_(36298094223).jpg"
       }
     },
     {
@@ -50581,19 +50491,19 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "commons_51906804",
+        "id": "commons_75241728",
         "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Plantas_con_gotas_de_lluvia%2C_Ciudad_de_M%C3%A9xico.jpg/960px-Plantas_con_gotas_de_lluvia%2C_Ciudad_de_M%C3%A9xico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Operativo_Lluvias_-i---i-_%2836710775630%29.jpg/960px-Operativo_Lluvias_-i---i-_%2836710775630%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
         "category": "Medio Ambiente",
         "borough": "",
-        "topic": "Plantas con gotas de lluvia, Ciudad de México",
+        "topic": "Operativo Lluvias -i---i- (36710775630)",
         "keywords": [
           "Lluvia Ciudad de México"
         ],
-        "author": "LEG95",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Plantas_con_gotas_de_lluvia,_Ciudad_de_M%C3%A9xico.jpg"
+        "author": "Gobierno CDMX",
+        "license": "CC0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "source": "https://commons.wikimedia.org/wiki/File:Operativo_Lluvias_-i---i-_(36710775630).jpg"
       }
     },
     {
@@ -52156,14 +52066,19 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "alcaldia_benito-juarez",
-        "url": "/assets/alcaldias/benito-juarez.jpg",
-        "category": "CDMX",
-        "borough": "Benito Juárez",
-        "topic": "Parque Hundido, alcaldía Benito Juárez",
-        "author": "User:etnoboris",
-        "license": "CC BY-SA 3.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Parque_Hundido.jpeg"
+        "id": "commons_75241776",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Operativo_Lluvias_-i---i-_%2836298031503%29.jpg/960px-Operativo_Lluvias_-i---i-_%2836298031503%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "category": "Medio Ambiente",
+        "borough": "",
+        "topic": "Operativo Lluvias -i---i- (36298031503)",
+        "keywords": [
+          "Lluvia Ciudad de México"
+        ],
+        "author": "Gobierno CDMX",
+        "license": "CC0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "source": "https://commons.wikimedia.org/wiki/File:Operativo_Lluvias_-i---i-_(36298031503).jpg"
       }
     },
     {
@@ -88379,14 +88294,14 @@
       "source": "ABC Noticias",
       "date": "2026-10-17",
       "published_at": "2026-10-18T05:56:11Z",
-      "category": "Gobierno",
+      "category": "Cultura",
       "borough": "",
       "location": "Ciudad de México (sin alcaldía identificada)",
       "local_url": "/noticias/?id=b9c481c043df02a9c07e&mes=2026-10",
       "brief": {
         "lead": "De acuerdo con ABC Noticias, el titular publicado es: «Garbage en el Zócalo CDMX: Fecha, horario y detalles del concierto». El medio ABC Noticias presenta conciertos o actividades musicales anunciadas en Ciudad de México. La programación, disponibilidad y costos pueden cambiar; comprueba los datos del organizador.",
-        "context": "Las decisiones administrativas pueden influir en servicios, trámites y derechos; conviene conocer sus condiciones y a quiénes afectan.",
-        "pending": "Es indispensable consultar los acuerdos, comunicados o documentos oficiales antes de dar una medida por vigente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "context": "La actividad cultural abre oportunidades de encuentro, aprendizaje y disfrute para habitantes y visitantes.",
+        "pending": "Los accesos, boletos, sedes, cupos y horarios deben consultarse con la institución organizadora. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       }
     },
@@ -93754,14 +93669,14 @@
       "source": "N+",
       "date": "2026-10-16",
       "published_at": "2026-10-16T07:00:00Z",
-      "category": "Seguridad",
+      "category": "Movilidad",
       "borough": "",
       "location": "Ciudad de México (sin alcaldía identificada)",
       "local_url": "/noticias/?id=bb43a5e450e970a82d79&mes=2026-10",
       "brief": {
         "lead": "De acuerdo con N+, el titular publicado es: «Ruta de Marcha de Estudiantes Contra Represión en Manifestaciones: Cierres en CDMX». Según la información destacada por N+, manifestaciones o bloqueos forman parte de la jornada de movilidad capitalina. La ficha no demuestra por sí sola que todas las vías mencionadas sigan cerradas al momento de leerla.",
-        "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
-        "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
+        "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       }
     },
@@ -94264,14 +94179,14 @@
       "source": "Infobae",
       "date": "2026-10-16",
       "published_at": "2026-10-16T07:00:00Z",
-      "category": "Gobierno",
+      "category": "Cultura",
       "borough": "",
       "location": "Ciudad de México (sin alcaldía identificada)",
       "local_url": "/noticias/?id=bef40b222983a3e05dc6&mes=2026-10",
       "brief": {
         "lead": "De acuerdo con Infobae, el titular publicado es: «Clara Brugada invita al concierto gratuito de Garbage en el Zócalo de la CDMX». El medio Infobae presenta conciertos o actividades musicales anunciadas en Ciudad de México. La programación, disponibilidad y costos pueden cambiar; comprueba los datos del organizador.",
-        "context": "Las decisiones administrativas pueden influir en servicios, trámites y derechos; conviene conocer sus condiciones y a quiénes afectan.",
-        "pending": "Es indispensable consultar los acuerdos, comunicados o documentos oficiales antes de dar una medida por vigente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "context": "La actividad cultural abre oportunidades de encuentro, aprendizaje y disfrute para habitantes y visitantes.",
+        "pending": "Los accesos, boletos, sedes, cupos y horarios deben consultarse con la institución organizadora. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       }
     },
@@ -94414,14 +94329,14 @@
       "source": "MILENIO",
       "date": "2026-10-16",
       "published_at": "2026-10-16T07:00:00Z",
-      "category": "Gobierno",
+      "category": "Cultura",
       "borough": "",
       "location": "Ciudad de México (sin alcaldía identificada)",
       "local_url": "/noticias/?id=9c7db94b71997d638053&mes=2026-10",
       "brief": {
         "lead": "De acuerdo con MILENIO, el titular publicado es: «Garbage dará concierto GRATIS en Zócalo de la CdMx: ¿Cuándo y a qué HORA se presentarán?». El medio MILENIO presenta conciertos o actividades musicales anunciadas en Ciudad de México. La programación, disponibilidad y costos pueden cambiar; comprueba los datos del organizador.",
-        "context": "Las decisiones administrativas pueden influir en servicios, trámites y derechos; conviene conocer sus condiciones y a quiénes afectan.",
-        "pending": "Es indispensable consultar los acuerdos, comunicados o documentos oficiales antes de dar una medida por vigente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "context": "La actividad cultural abre oportunidades de encuentro, aprendizaje y disfrute para habitantes y visitantes.",
+        "pending": "Los accesos, boletos, sedes, cupos y horarios deben consultarse con la institución organizadora. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       }
     },
@@ -94432,14 +94347,14 @@
       "source": "Infobae",
       "date": "2026-10-16",
       "published_at": "2026-10-16T07:00:00Z",
-      "category": "Gobierno",
+      "category": "Movilidad",
       "borough": "",
       "location": "Ubicación no indicada por el titular",
       "local_url": "/noticias/?id=3d9824213b32d52be573&mes=2026-10",
       "brief": {
         "lead": "De acuerdo con Infobae, el titular publicado es: «Gobierno de México anuncia la apertura de más vuelos hacia EEUU desde el AICM y AIFA». En su información, Infobae aborda una decisión, declaración o debate relacionado con las instituciones de la ciudad. Conviene distinguir la intención anunciada de las resoluciones que hayan sido aprobadas y publicado oficialmente.",
-        "context": "Las decisiones administrativas pueden influir en servicios, trámites y derechos; conviene conocer sus condiciones y a quiénes afectan.",
-        "pending": "Es indispensable consultar los acuerdos, comunicados o documentos oficiales antes de dar una medida por vigente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
+        "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       }
     },
@@ -96731,19 +96646,19 @@
     },
     {
       "title": "Garbage se presentará en el Zócalo de la CDMX",
-      "description": "De acuerdo con Indie Rocks! Magazine, el titular publicado es: «Garbage se presentará en el Zócalo de la CDMX». La información publicada por Indie Rocks! Magazine aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "description": "De acuerdo con Indie Rocks! Magazine, el titular publicado es: «Garbage se presentará en el Zócalo de la CDMX». La información publicada por Indie Rocks! Magazine aborda un asunto que este portal clasifica como Cultura. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
       "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQQ0FRYml0M1Q4eWhyelRTZ2VhQnlZSDVJRi1CQUtQbWd5dmZ4ZU1HbGV4V1NUOUtTY0NLZ2p5Z2E4YWtfTUROVTBLa2ZfNUxCekxxdGZ4dURNWGplMXlJM1ZCdnpYVXgtb1Jkb3VVbzduOExqdjZPMHFWNXpKdXJuV3Jubm1ZQQ?oc=5",
       "source": "Indie Rocks! Magazine",
       "date": "2026-10-15",
       "published_at": "2026-10-15T19:03:00Z",
-      "category": "CDMX",
+      "category": "Cultura",
       "borough": "",
       "location": "Ciudad de México (sin alcaldía identificada)",
       "local_url": "/noticias/?id=2b9fcdd59a95f848e962&mes=2026-10",
       "brief": {
-        "lead": "De acuerdo con Indie Rocks! Magazine, el titular publicado es: «Garbage se presentará en el Zócalo de la CDMX». La información publicada por Indie Rocks! Magazine aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-        "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-        "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "lead": "De acuerdo con Indie Rocks! Magazine, el titular publicado es: «Garbage se presentará en el Zócalo de la CDMX». La información publicada por Indie Rocks! Magazine aborda un asunto que este portal clasifica como Cultura. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+        "context": "La actividad cultural abre oportunidades de encuentro, aprendizaje y disfrute para habitantes y visitantes.",
+        "pending": "Los accesos, boletos, sedes, cupos y horarios deben consultarse con la institución organizadora. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
@@ -128206,19 +128121,19 @@
     },
     {
       "title": "Aeropuerto Internacional de la Ciudad de México: estatus de vuelos demorados o cancelados hoy 12 de octubre",
-      "description": "De acuerdo con El Heraldo de México, el titular publicado es: «Aeropuerto Internacional de la Ciudad de México: estatus de vuelos demorados o cancelados hoy 12 de octubre». La información publicada por El Heraldo de México aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "description": "De acuerdo con El Heraldo de México, el titular publicado es: «Aeropuerto Internacional de la Ciudad de México: estatus de vuelos demorados o cancelados hoy 12 de octubre». La información publicada por El Heraldo de México aborda un asunto que este portal clasifica como Movilidad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
       "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQeENiTnM4RURCRVJxU2ZxY0tDakpsMHJwdENkNjJ4ejFBWGVydDk5VjFkRlAtOUEtOWdfU0F0MFpBQUZ5bDNJck5vdC1ELVdKMVhaUGJIbnRMVnJJMnY2dGhWM1Jha0pnNXlrbTAyMkNMSWVFNlR4LXVCR2hIODNIOWRlRnFhZ2cwd1F0MXJnNzhuQWhKZllxQWdqTUI0UmxUTUNNU2hEUEVUOFh6bkN3WW9VZWNaUFdJSlZQX19JUmFUbm5weHNQMThsYzY4bzl5aHdjZFMxZmVXTURoSm5NMzdxRVdUbUdheXl2aEQxR0xRVnJrcnlvTmM0WQ?oc=5",
       "source": "El Heraldo de México",
       "date": "2026-10-12",
       "published_at": "2026-10-12T12:00:00Z",
-      "category": "CDMX",
+      "category": "Movilidad",
       "borough": "",
       "location": "Ciudad de México (sin alcaldía identificada)",
       "local_url": "/noticias/?id=5451546a093e3cc401ca&mes=2026-10",
       "brief": {
-        "lead": "De acuerdo con El Heraldo de México, el titular publicado es: «Aeropuerto Internacional de la Ciudad de México: estatus de vuelos demorados o cancelados hoy 12 de octubre». La información publicada por El Heraldo de México aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-        "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-        "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "lead": "De acuerdo con El Heraldo de México, el titular publicado es: «Aeropuerto Internacional de la Ciudad de México: estatus de vuelos demorados o cancelados hoy 12 de octubre». La información publicada por El Heraldo de México aborda un asunto que este portal clasifica como Movilidad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+        "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
+        "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       }
     },
