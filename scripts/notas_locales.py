@@ -2006,7 +2006,7 @@ def _photo_score(article, photo):
         context,
     ))
     road_traffic_photo = bool(re.search(
-        r"\b(?:trafico(?: vehicular)?|transito vehicular|vialidad|congestion vehicular|circulacion vehicular|camiones?|camionetas?|microbuses?|autobuses?|vehiculos? de carga)\b",
+        r"\b(?:trafico(?: vehicular)?|transito vehicular|vialidad|congestion vehicular|circulacion vehicular|camion(?:es)?|camionetas?|microbus(?:es)?|autobus(?:es)?|vehiculos? de carga)\b",
         context,
     ))
     motorcycle_photo = bool(re.search(r"\b(?:motocicletas?|motociclistas?|motos?)\b", context))
