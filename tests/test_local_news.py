@@ -459,7 +459,7 @@ class LocalNewsTests(unittest.TestCase):
     def test_capital_cdmx_care_budget_summary_and_direct_source_are_accurate(self):
         article = {
             "title": "Presupuesto de cuidados 2027: ¿cuánto llegará a la CDMX y cómo se puede comprobar?",
-            "url": "https://news.google.com/rss/articles/capital-cdmx-care-budget",
+            "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOTDJNRVpCdi1nMjVIQVJTb21HLVBXS3dLN19neF9vcVI5RE9ua3ktTW5HUURqaVlKRTRIeHZjVFlCbkFqQng2WnZ1VHFvNDhmQ0lqcDFpa255aExqVDUwLW95MHBYd2hVR0RFdHFsRUpoVUZFRkY1blZLVWdzeU56RW9PcUtBUnVKQnRUNUZMamxGdVpPNXRFbndrYlY?oc=5",
             "source": "Capital CDMX",
             "date": "2026-11-12",
             "published_at": "2026-11-13T04:30:03Z",
