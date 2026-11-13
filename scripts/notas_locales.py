@@ -1029,7 +1029,7 @@ PHOTO_BOROUGH_ALIASES = {
     "benito juarez": ("benito juarez",),
     "coyoacan": ("coyoacan",),
     "cuajimalpa de morelos": ("cuajimalpa de morelos", "cuajimalpa"),
-    "cuauhtemoc": ("cuauhtemoc", "condesa", "parque espana", "colonia roma", "roma norte", "roma sur"),
+    "cuauhtemoc": ("cuauhtemoc", "condesa", "parque espana", "colonia roma", "roma norte", "roma sur", "centro historico"),
     "gustavo a madero": ("gustavo a madero", "gustavo amadero"),
     "iztacalco": ("iztacalco",),
     "iztapalapa": ("iztapalapa",),
@@ -1037,7 +1037,7 @@ PHOTO_BOROUGH_ALIASES = {
     "milpa alta": ("milpa alta",),
     "tlahuac": ("tlahuac",),
     "tlalpan": ("tlalpan", "bosque de tlalpan"),
-    "venustiano carranza": ("venustiano carranza",),
+    "venustiano carranza": ("venustiano carranza", "candelaria de los patos"),
     "xochimilco": ("xochimilco", "canales de xochimilco", "chinampas"),
 }
 
