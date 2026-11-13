@@ -63,7 +63,8 @@ class PortalTests(unittest.TestCase):
         news = home.split('id="neo-news-grid"', 1)[1].split('id="neo-news-more"', 1)[0]
         self.assertNotIn('class="neo-news-card"', news)
         lead = home.split('id="nota-principal"', 1)[1].split('id="topic-stage"', 1)[0]
-        self.assertIn('No hay noticias con fotografía documental verificada', lead)
+        self.assertIn('Preparando una noticia destacada con fotografía acreditada', lead)
+        self.assertIn('las imágenes representativas se identifican como tales', lead)
         self.assertNotIn('Falta mantenimiento en caminos seguros de Iztapalapa', lead)
         self.assertIn('href="/archivo/"', lead)
 

@@ -125,6 +125,29 @@ on:
       - 'kisumi-studio/**'
       - 'functions/api/clima.js'
       - 'assets/clima-ticker.js'
+  pull_request:
+    # Ejecuta regresiones de portada, fotografías y feed sin publicar desde PR.
+    # Incluye regresión para conservar fotos representativas acreditadas del feed.
+    branches: [main]
+    paths:
+      - '.github/workflows/news.yml'
+      - 'update_news.py'
+      - 'index.html'
+      - 'scripts/notas_locales.py'
+      - 'assets/fotos/contexto-tematico.json'
+      - 'assets/fotos/indice-noticias-1100.json'
+      - 'assets/fotos/catalogo-editorial-1100.json'
+      - 'assets/fotos.js'
+      - 'assets/creditos.js'
+      - 'assets/neo-gallery.js'
+      - 'assets/neo-home.js'
+      - 'fotografias/index.html'
+      - 'creditos-fotograficos.html'
+      - 'tests/test_local_news.py'
+      - 'tests/test_photo_relevance.py'
+      - 'tests/test_neo_home_stability.py'
+      - 'tests/test_fototeca_editorial.py'
+      - 'tests/test_portal.py'
 permissions:
   contents: write
 concurrency:
@@ -184,18 +207,23 @@ jobs:
           node --check assets/explora-list.js
           node --check mapa/mapa.js
       - name: Recopilar titulares y actualizar archivo anual
+        if: github.event_name != 'pull_request'
         run: python update_news.py
       - name: Recuperar noticias históricas pendientes del 16 al 24 de octubre
+        if: github.event_name != 'pull_request'
         run: python scripts/recuperar_octubre_2026.py
       - name: Generar titulares recientes de animales
+        if: github.event_name != 'pull_request'
         run: python scripts/animales_feed.py
       - name: Buscar fotografías recientes y revisar licencias en Wikimedia Commons
+        if: github.event_name != 'pull_request'
         run: python scripts/actualizar_fotos.py
       - name: Publicar cambios y eliminar noticias vencidas
+        if: github.event_name != 'pull_request'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A -- animales/actualidad.html news.json reports.json reportes/ archivo/ alcaldias/noticias.json sitemap.xml assets/fotos/recientes.json descubre/
+          git add -A -- animales/actualidad.html index.html news.json reports.json reportes/ archivo/ alcaldias/noticias.json sitemap.xml assets/fotos/recientes.json descubre/
           if git diff --cached --quiet; then
             echo "Noticias y guías sin cambios."
             exit 0
@@ -216,7 +244,7 @@ jobs:
             python update_news.py
             python scripts/animales_feed.py
             python scripts/actualizar_fotos.py
-            git add -A -- news.json reports.json reportes/ archivo/ alcaldias/noticias.json sitemap.xml assets/fotos/recientes.json descubre/
+            git add -A -- index.html news.json reports.json reportes/ archivo/ alcaldias/noticias.json sitemap.xml assets/fotos/recientes.json descubre/
             if git diff --cached --quiet; then
               echo "El repositorio ya tiene las últimas noticias."
               exit 0

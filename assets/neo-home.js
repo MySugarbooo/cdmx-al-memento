@@ -123,11 +123,11 @@ function renderHero(){
  const candidates=state.stories.map((item,index)=>({item,index})).filter(({item})=>photoInfo(item)&&!isWeatherForecastOnly(item)&&!isStaleTimeSensitiveHeadline(item));
  if(!candidates.length){
   const img=shell.querySelector('#neo-hero-img');img.removeAttribute('src');img.style.display='none';
-  const title=shell.querySelector('#neo-hero-title');title.textContent='Noticias recientes sin fotografía verificada';title.href='/archivo/';
-  shell.querySelector('#neo-hero-description').textContent='Las noticias sensibles se conservan en el listado; no se muestran imágenes de contexto.';
+  const title=shell.querySelector('#neo-hero-title');title.textContent='Noticias recientes sin imagen acreditada disponible';title.href='/archivo/';
+  shell.querySelector('#neo-hero-description').textContent='Las noticias sensibles se conservan en el listado sin imágenes de contexto; las demás pueden usar fotografías representativas acreditadas.';
   shell.querySelector('#neo-hero-category').textContent='Revisión editorial';
   shell.querySelector('#neo-hero-date').textContent='';shell.querySelector('#neo-hero-source').textContent='';
-  shell.querySelector('#neo-hero-credit').textContent='Sin fotografía verificada del hecho';
+  shell.querySelector('#neo-hero-credit').textContent='Sin imagen contextual acreditada disponible';
   shell.querySelector('#neo-hero-like').replaceChildren();shell.querySelector('#neo-hero-next').hidden=true;
   return;
  }

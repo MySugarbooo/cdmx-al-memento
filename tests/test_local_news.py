@@ -2,7 +2,7 @@
 import json
 import unittest
 from pathlib import Path
-from scripts.notas_locales import assign_photos, local_link, summarize, is_sensitive_media, RADIO_FORMULA_CASA_ECOLOGICA_SOURCE_URL
+from scripts.notas_locales import assign_photos, local_link, summarize, is_sensitive_media, RADIO_FORMULA_CASA_ECOLOGICA_SOURCE_URL, INFOBAE_MARIA_LEON_CONCERT_SOURCE_URL
 from scripts.build_article_seo import article_id, render
 from update_news import category_by_headline, standardize, photo_needs_refresh, CAPITAL_CDMX_CARE_BUDGET_SOURCE_URL, prioritize_photo_refresh
 
@@ -721,6 +721,28 @@ class LocalNewsTests(unittest.TestCase):
         self.assertIn("captación y aprovechamiento", result["brief"]["lead"].casefold())
         self.assertNotIn("pronóstico", result["brief"]["lead"].casefold())
         self.assertNotIn("previsión del tiempo", result["brief"]["lead"].casefold())
+
+
+    def test_infobae_maria_leon_concert_has_direct_source_and_specific_summary(self):
+        result = standardize({
+            "title": "María León presentó su nueva “Era de Villana” en el Teatro Metropólitan de la CDMX: entre invitados, nostalgia y canciones inéditas",
+            "url": "https://news.google.com/rss/articles/maria-leon-concert-regression",
+            "source": "Infobae",
+            "date": "2026-11-13",
+            "published_at": "2026-11-13T07:53:32Z",
+            "category": "CDMX",
+        })
+        self.assertIsNotNone(result)
+        self.assertEqual(result["category"], "Cultura")
+        self.assertEqual(result["location"], "Teatro Metropólitan, Ciudad de México")
+        self.assertEqual(result["source_url"], INFOBAE_MARIA_LEON_CONCERT_SOURCE_URL)
+        self.assertIn("21:30", result["brief"]["lead"])
+        self.assertIn("23:25", result["brief"]["lead"])
+        self.assertIn("Playa Limbo", result["brief"]["lead"])
+        self.assertIn("Mar Lara", result["brief"]["context"])
+        self.assertIn("lengua de señas", result["brief"]["context"])
+        self.assertIn("fechas futuras", result["brief"]["pending"])
+        self.assertIn(INFOBAE_MARIA_LEON_CONCERT_SOURCE_URL, result["brief"]["method"])
 
 if __name__=="__main__":
     unittest.main()

@@ -1,4 +1,5 @@
 """Previene asignar fotos de patrullas a noticias de ciclismo o tecnología."""
+from copy import deepcopy
 import unittest
 from unittest.mock import patch
 
@@ -1651,6 +1652,127 @@ class PhotoRelevanceTests(unittest.TestCase):
         ):
             assign_photos([article])
         self.assertNotIn("photo", article)
+
+
+    def test_maria_leon_concert_rejects_unrelated_dance_photo_and_uses_concert_context(self):
+        title = ("María León presentó su nueva “Era de Villana” en el Teatro Metropólitan "
+                 "de la CDMX: entre invitados, nostalgia y canciones inéditas")
+        article = news.standardize({
+            "title": title,
+            "url": "https://news.google.com/rss/articles/maria-leon-photo-regression",
+            "source": "Infobae",
+            "date": "2026-11-13",
+            "published_at": "2026-11-13T07:53:32Z",
+            "category": "CDMX",
+        })
+        self.assertEqual(category_by_headline(title, "CDMX", "Infobae"), "Cultura")
+        self.assertEqual(article["category"], "Cultura")
+        dance = representative_photo(
+            "unrelated_dance_photo", "Cultura",
+            "Danza del Fuego performance outside Museo Nacional de Antropología, Chapultepec, CDMX",
+            ["Danza del Fuego", "Museo Nacional de Antropología", "danza"],
+        )
+        dance["source"] = "https://commons.wikimedia.org/wiki/File:Danza_del_Fuego.jpg"
+        concert = representative_photo(
+            "contexto_concierto_palacio_deportes_2009", "Cultura",
+            "Concierto de Kings of Leon en el Palacio de los Deportes, Ciudad de México (octubre de 2009); imagen representativa, no corresponde a María León.",
+            ["concierto", "música en vivo", "Palacio de los Deportes", "Ciudad de México"],
+        )
+        concert["source"] = "https://commons.wikimedia.org/wiki/File:PalaciodelosDeportes_Concierto.jpg"
+        self.assertLess(_photo_score(article, dance), 0)
+        self.assertGreaterEqual(_photo_score(article, concert), 0)
+        self.assertTrue(news.photo_needs_refresh({**article, "photo": dance}))
+        article["photo"] = dance
+        with patch.object(photos, "_pool", return_value=[dance, concert]), patch.object(
+            photos, "_load", return_value=[]
+        ):
+            assign_photos([article])
+        self.assertEqual(article["photo"]["id"], "contexto_concierto_palacio_deportes_2009")
+
+
+    def test_assign_photos_preserves_credited_relevant_photo_when_pool_has_no_match(self):
+        title = ("María León presentó su nueva “Era de Villana” en el Teatro Metropólitan "
+                 "de la CDMX: entre invitados, nostalgia y canciones inéditas")
+        article = news.standardize({
+            "title": title,
+            "url": "https://news.google.com/rss/articles/maria-leon-preserve-photo-regression",
+            "source": "Infobae",
+            "date": "2026-11-13",
+            "published_at": "2026-11-13T07:53:32Z",
+            "category": "CDMX",
+        })
+        existing = representative_photo(
+            "contexto_concierto_palacio_deportes_2009", "Cultura",
+            "Concierto de Kings of Leon en el Palacio de los Deportes, Ciudad de México (octubre de 2009); imagen representativa, no corresponde a María León.",
+            ["concierto", "música en vivo", "Palacio de los Deportes", "Ciudad de México"],
+        )
+        existing["url"] = "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/PalaciodelosDeportes_Concierto.jpg/960px-PalaciodelosDeportes_Concierto.jpg"
+        existing["source"] = "https://commons.wikimedia.org/wiki/File:PalaciodelosDeportes_Concierto.jpg"
+        unrelated = representative_photo(
+            "unrelated_dance_photo", "Cultura",
+            "Danza del Fuego performance outside Museo Nacional de Antropología, Chapultepec, CDMX",
+            ["Danza del Fuego", "Museo Nacional de Antropología", "danza"],
+        )
+        unrelated["source"] = "https://commons.wikimedia.org/wiki/File:Danza_del_Fuego.jpg"
+        article["photo"] = existing
+        self.assertGreaterEqual(_photo_score(article, existing), 0)
+        self.assertLess(_photo_score(article, unrelated), 0)
+        with patch.object(photos, "_pool", return_value=[unrelated]), patch.object(
+            photos, "_load", return_value=[]
+        ):
+            stats = assign_photos([article])
+        self.assertEqual(article["photo"]["id"], existing["id"])
+        self.assertEqual(stats["assigned"], 1)
+
+
+    def test_assign_photos_preserves_credited_local_photo_when_pool_has_no_match(self):
+        title = ("María León presentó su nueva “Era de Villana” en el Teatro Metropólitan "
+                 "de la CDMX: entre invitados, nostalgia y canciones inéditas")
+        article = news.standardize({
+            "title": title,
+            "url": "https://news.google.com/rss/articles/maria-leon-local-photo-regression",
+            "source": "Infobae",
+            "date": "2026-11-13",
+            "published_at": "2026-11-13T07:53:32Z",
+            "category": "CDMX",
+        })
+        existing = representative_photo(
+            "local_concert_context", "Cultura",
+            "Concierto en el Teatro Metropólitan de Ciudad de México; imagen representativa, no corresponde a María León.",
+            ["concierto", "música en vivo", "Teatro Metropólitan", "Ciudad de México"],
+        )
+        existing["source"] = "https://commons.wikimedia.org/wiki/File:Local_concert_context.jpg"
+        unrelated = representative_photo(
+            "unrelated_dance_photo", "Cultura",
+            "Danza del Fuego performance outside Museo Nacional de Antropología, Chapultepec, CDMX",
+            ["Danza del Fuego", "Museo Nacional de Antropología", "danza"],
+        )
+        unrelated["source"] = "https://commons.wikimedia.org/wiki/File:Danza_del_Fuego.jpg"
+        article["photo"] = existing
+        self.assertGreaterEqual(_photo_score(article, existing), 0)
+        self.assertLess(_photo_score(article, unrelated), 0)
+        with patch.object(photos, "_pool", return_value=[unrelated]), patch.object(
+            photos, "_load", return_value=[]
+        ):
+            stats = assign_photos([article])
+        self.assertEqual(article["photo"]["id"], existing["id"])
+        self.assertEqual(stats["assigned"], 1)
+
+
+    def test_current_feed_preserves_credited_photos_and_replaces_maria_leon_mismatch(self):
+        data = news.load_json(news.DEST, {"articles": []})
+        articles = deepcopy(data.get("articles", []))
+        self.assertGreaterEqual(len(articles), 25)
+        stats = assign_photos(articles)
+        self.assertGreaterEqual(stats["assigned"], 25)
+        maria = next(
+            item for item in articles
+            if item.get("source") == "Infobae" and "maria leon" in photos._photo_fold(item.get("title", ""))
+        )
+        self.assertIsNotNone(maria.get("photo"))
+        self.assertGreaterEqual(_photo_score(maria, maria["photo"]), 0)
+        self.assertNotIn("danza del fuego", photos._photo_fold(maria["photo"].get("topic", "")))
+        self.assertGreater(stats["unique"], 0)
 
 if __name__ == "__main__":
     unittest.main()

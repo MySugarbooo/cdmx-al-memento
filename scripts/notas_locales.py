@@ -68,6 +68,7 @@ LA_PRENSA_TLALPAN_ANIMAL_SOURCE_URL = "https://oem.com.mx/la-prensa/policiaca/de
 INFOBAE_TLALPAN_ANIMAL_SOURCE_URL = "https://www.infobae.com/mexico/2026/11/12/detienen-a-presunto-abusador-sexual-de-animales-en-situacion-de-calle-en-cdmx-activistas-piden-que-las-investigaciones-lleguen-a-fondo/"
 EL_GRAFICO_VC_TRAILER_SOURCE_URL = "https://www.elgrafico.mx/la-roja/2026/11/12/el-morenito-muere-tras-ser-arrastrado-varios-metros-por-un-trailer-en-venustiano-carranza/?outputType=amp"
 INFOBAE_BALLET_ZAPATILLA_SOURCE_URL = "https://www.infobae.com/mexico/2026/11/12/funcion-gratis-del-ballet-la-zapatilla-de-cristal-llega-a-cdmx-fecha-y-sede/"
+INFOBAE_MARIA_LEON_CONCERT_SOURCE_URL = "https://www.infobae.com/mexico/2026/11/13/maria-leon-presento-su-nueva-era-de-villana-en-el-teatro-metropolitan-de-la-cdmx-entre-invitados-nostalgia-y-canciones-ineditas/"
 INFOBAE_PULQUE_BARBACOA_SOURCE_URL = "https://www.infobae.com/mexico/2026/11/06/la-feria-del-pulque-y-la-barbacoa-2026-llegara-a-la-magdalena-contreras-en-cdmx-fechas-horarios-y-como-llegar/"
 POSTA_PULQUE_BARBACOA_SOURCE_URL = "https://www.posta.com.mx/cdmx/feria-del-pulque-y-la-barbacoa-2026-fechas-y-entrada-gratis/vl2276243"
 SDPNOTICIAS_MAURICIO_TABE_REPORT_SOURCE_URL = "https://www.sdpnoticias.com/estados/cdmx/mauricio-tabe-presenta-su-quinto-informe-de-gobierno-en-miguel-hidalgo/"
@@ -113,6 +114,19 @@ def is_infobae_ballet_zapatilla(article):
         and source == "infobae"
         and "ballet" in title
         and "zapatilla de cristal" in title
+    )
+
+
+def is_infobae_maria_leon_concert(article):
+    """Identifica la cobertura de Infobae sobre el concierto de María León del 12/11/2026."""
+    title = _photo_fold(article.get("title"))
+    source = _photo_fold(article.get("source"))
+    return (
+        str(article.get("date") or "") == "2026-11-13"
+        and source == "infobae"
+        and "maria leon" in title
+        and "era de villana" in title
+        and "teatro metropolitan" in title
     )
 
 
@@ -521,6 +535,29 @@ def summarize(article):
     category=str(article.get("category") or "CDMX")
     theme=TAGS.get(category,TAGS["CDMX"])
     folded_title=_photo_fold(title)
+    if is_infobae_maria_leon_concert(article):
+        return {
+            "lead": (
+                "Infobae informó que María León presentó «Era de Villana» en el Teatro Metropólitan "
+                "de Ciudad de México la noche del 12 de noviembre de 2026. El reportaje sitúa el inicio "
+                "a las 21:30 y el cierre a las 23:25; describe canciones de su etapa en Playa Limbo, "
+                "su carrera solista y temas inéditos de su próximo álbum."
+            ),
+            "context": (
+                "La nota menciona como invitados a Mar Lara, Julia Medina, Cristina León y Edwin Luna. "
+                "También describe músicos, bailarines e interpretación en lengua de señas durante la presentación."
+            ),
+            "pending": (
+                "La presentación ya ocurrió. El reportaje no confirma fechas futuras, disponibilidad de boletos "
+                "ni nuevas sedes; esos datos requieren información posterior del organizador."
+            ),
+            "method": (
+                "Síntesis basada en Infobae, 13 de noviembre de 2026: "
+                + INFOBAE_MARIA_LEON_CONCERT_SOURCE_URL
+                + ". Los horarios, invitados y repertorio se atribuyen al reportaje y no constituyen "
+                "verificación independiente."
+            ),
+        }
     if is_capital_cdmx_care_budget(article):
         return {
             "lead": (
@@ -1218,6 +1255,9 @@ def _photo_category(article):
     # "Poner en marcha" un programa no describe una marcha o protesta vial.
     headline=re.sub(r"\b(?:pone|ponen|puso|poner|puesta|entra|entro|entrara)\s+en\s+marcha\b",
                     "activa", headline)
+    # Los conciertos y las notas sobre cantantes pertenecen a Cultura.
+    if re.search(r"\b(?:cantantes?|cantautores?|gira musical|canciones? ineditas|musica en vivo|teatro metropolitan)\b", headline):
+        return "Cultura"
     # Los planes de electrificación del transporte público son materia de Movilidad.
     if (re.search(r"\b(?:transporte(?: publico)?|movilidad)\b", headline)
             and re.search(r"\b(?:electrico|electrica|electrificacion)\b", headline)):
@@ -1885,6 +1925,7 @@ def _photo_score(article, photo):
     # Admitir categorías temáticas solo cuando el descriptor coincide con la noticia.
     music_story = bool(re.search(
         r"\b(?:riff|musica|orquestas?|coros?|coral|conciertos?|bandas?|cantantes?|aniversario musical|"
+        r"canciones? ineditas|teatro metropolitan|maria leon|era de villana|"
         r"tame impala|karol g|regresa a mexico|regresan a mexico|dos noches en cdmx|"
         r"giras?|tours?|shows?|presentaciones? en cdmx|fechas? en cdmx)\b",
         headline,
@@ -1893,6 +1934,9 @@ def _photo_score(article, photo):
         r"\b(?:musica|orquestas?|conciertos?|guitarras?|bandas?|coros?|coral|rock|cantantes?)\b",
         context,
     ))
+    # La nota de María León requiere contexto musical; una danza ajena no representa su concierto.
+    if is_infobae_maria_leon_concert(article) and not music_photo:
+        return -10000
     # Un coro o una fotografía musical no representa asuntos ajenos a la música.
     if music_photo and not music_story:
         return -10000
@@ -2202,40 +2246,85 @@ def _photo_score(article, photo):
 
 
 def assign_photos(items):
-    """Acontecimiento aprobado primero; si no, tema y lugar más próximos."""
-    pool=_pool()
-    reserved=set()
-    verified_catalog=_load(VERIFIED_EVENTS,"photos")
-    exact_count=0
+    """Conserva fotos representativas acreditadas del feed salvo que exista una opción mejor."""
+    pool = _pool()
+    reserved = set()
+    verified_catalog = _load(VERIFIED_EVENTS, "photos")
+    exact_count = 0
+
+    def has_complete_credit(photo):
+        if not isinstance(photo, dict) or photo.get("kind") != "representativa":
+            return False
+        photo_url = str(photo.get("url") or "").strip()
+        return (
+            bool(photo_url)
+            and (
+                photo_url.startswith(("https://", "http://"))
+                or photo_url.startswith("/assets/fotos/")
+            )
+            and all(str(photo.get(key) or "").strip() for key in (
+                "source", "author", "license", "licenseUrl"
+            ))
+            and str(photo.get("source") or "").startswith(("https://", "http://"))
+            and str(photo.get("licenseUrl") or "").startswith(("https://", "http://"))
+        )
+
     # Un orden estable evita cambios arbitrarios entre actualizaciones del feed.
-    for a in items:
-        exact=verified_event_photo(a,verified_catalog)
+    for article in items:
+        exact = verified_event_photo(article, verified_catalog)
         if exact:
-            a["photo"]=exact
-            exact_count+=1
+            article["photo"] = exact
+            if exact.get("id"):
+                reserved.add(exact["id"])
+            exact_count += 1
             continue
+
         # Los titulares sensibles nunca reciben fotografías de contexto.
-        # Solo una fotografía documental aprobada arriba puede acompañarlos.
-        if is_sensitive_media(a):
-            a["sensitive_media"] = True
-            a.pop("photo", None)
+        if is_sensitive_media(article):
+            article["sensitive_media"] = True
+            article.pop("photo", None)
             continue
-        # La imagen antigua no tiene preferencia sobre otra que represente mejor el tema.
-        a.pop("photo",None)
-        available=[p for p in pool if p.get("id") not in reserved]
-        candidates=available or pool
-        if not candidates:
+
+        existing = article.get("photo")
+        existing_score = (
+            _photo_score(article, existing) if has_complete_credit(existing) else -10000
+        )
+        available = [photo for photo in pool if photo.get("id") not in reserved]
+        candidates = available or pool
+        best = None
+        best_score = -10000
+        if candidates:
+            best = max(candidates, key=lambda photo: (
+                _photo_score(article, photo),
+                # Desempate estable, sin elegir siempre el primer elemento de la categoría.
+                hashlib.sha256(
+                    (str(article.get("url")) + "|" + str(photo.get("id"))).encode()
+                ).hexdigest(),
+            ))
+            best_score = _photo_score(article, best)
+
+        # Si no hay reemplazo pertinente, conserva la foto anterior solo si
+        # sigue siendo pertinente y tiene autor, licencia y fuente completos.
+        if existing_score >= 0 and (best is None or best_score <= existing_score):
+            if existing.get("id"):
+                reserved.add(existing["id"])
+            article["photo"] = existing
             continue
-        # La puntuación de pertinencia tiene prioridad absoluta sobre la variedad.
-        best=max(candidates,key=lambda p:(
-            _photo_score(a,p),
-            # Desempate estable, sin elegir siempre el primer elemento de la categoría.
-            hashlib.sha256((str(a.get("url"))+"|"+str(p.get("id"))).encode()).hexdigest(),
-        ))
-        if _photo_score(a,best)<0:
-            continue
-        a["photo"]=best
-        reserved.add(best["id"])
-    return {"available":len(pool),"assigned":sum(bool(a.get("photo")) for a in items),
-            "unique":len({a["photo"]["id"] for a in items if a.get("photo")}),
-            "del_hecho_verificadas":exact_count}
+
+        if best is not None and best_score >= 0:
+            article["photo"] = best
+            if best.get("id"):
+                reserved.add(best["id"])
+        else:
+            article.pop("photo", None)
+
+    return {
+        "available": len(pool),
+        "assigned": sum(bool(article.get("photo")) for article in items),
+        "unique": len({
+            article["photo"]["id"] for article in items
+            if isinstance(article.get("photo"), dict) and article["photo"].get("id")
+        }),
+        "del_hecho_verificadas": exact_count,
+    }
+
