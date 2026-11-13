@@ -2022,11 +2022,11 @@ def _photo_score(article, photo):
     # La recaudación y el predial requieren contexto de tesorería o finanzas públicas;
     # un monumento de la ciudad no ilustra una comparación fiscal.
     tax_story = bool(re.search(
-        r"\\b(?:predial|recaudacion|impuestos?|ingresos tributarios|finanzas publicas)\\b",
+        r"\b(?:predial|recaudacion|impuestos?|ingresos tributarios|finanzas publicas)\b",
         headline,
     ))
     tax_photo = bool(re.search(
-        r"\\b(?:predial|recaudacion|impuestos?|tesoreria|finanzas publicas|ingresos tributarios)\\b",
+        r"\b(?:predial|recaudacion|impuestos?|tesoreria|finanzas publicas|ingresos tributarios)\b",
         context,
     ))
     if tax_story and not tax_photo:
