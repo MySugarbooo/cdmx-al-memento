@@ -216,11 +216,17 @@ def identify_location(title, date=None):
             # Exigir contexto geográfico para las alcaldías homónimas.
             if borough in ("Cuauhtémoc", "Benito Juárez", "Miguel Hidalgo",
                            "Álvaro Obregón", "Venustiano Carranza", "Gustavo A. Madero"):
-                if not re.search(
+                contextual_location = re.search(
                     r"\b(?:alcaldia|demarcacion|colonia|zona|delegacion|"
                     r"en la alcaldia|en la colonia|en|hacia|desde)\s+(?:de\s+)?"+re.escape(name)+r"\b",
                     words,
-                ):
+                )
+                ranked_alcaldia = re.search(
+                    r"\b" + re.escape(name) + r"\s+es\s+la\s+"
+                    r"(?:primera|segunda|tercera|cuarta|quinta|sexta|septima|octava|novena|decima|\d+\.?)\s+alcaldia\b",
+                    words,
+                )
+                if not (contextual_location or ranked_alcaldia):
                     continue
             found.append(borough)
             break
