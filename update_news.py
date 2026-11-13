@@ -22,7 +22,7 @@ from pathlib import Path
 from zoneinfo import ZoneInfo
 
 from scripts.analisis_editorial import build_editorial
-from scripts.notas_locales import local_link, summarize, assign_photos, _photo_score, is_sensitive_media, is_coyotepec_highway_crash, INFOBAE_COYOTEPEC_HIGHWAY_CRASH_SOURCE_URL, is_san_juan_del_rio_autopista57_closure, SENSITIVE_MEDIA_TITLE, SAN_JUAN_DEL_RIO_AUTOPISTA57_SOURCE_URL, is_infobae_tlalpan_animal_abuse, is_la_prensa_tlalpan_animal_case, INFOBAE_TLALPAN_ANIMAL_SOURCE_URL, LA_PRENSA_TLALPAN_ANIMAL_SOURCE_URL, is_imagen_tlalpan_dog_rescue, is_huixtla_migrant_caravan, is_vc_fatal_trailer_incident, EL_GRAFICO_VC_TRAILER_SOURCE_URL, is_infobae_ballet_zapatilla, INFOBAE_BALLET_ZAPATILLA_SOURCE_URL, is_pulque_barbacoa_fair, is_mauricio_tabe_fifth_report, SDPNOTICIAS_MAURICIO_TABE_REPORT_SOURCE_URL
+from scripts.notas_locales import local_link, summarize, assign_photos, _photo_score, is_sensitive_media, is_coyotepec_highway_crash, INFOBAE_COYOTEPEC_HIGHWAY_CRASH_SOURCE_URL, is_san_juan_del_rio_autopista57_closure, SENSITIVE_MEDIA_TITLE, SAN_JUAN_DEL_RIO_AUTOPISTA57_SOURCE_URL, is_infobae_tlalpan_animal_abuse, is_la_prensa_tlalpan_animal_case, INFOBAE_TLALPAN_ANIMAL_SOURCE_URL, LA_PRENSA_TLALPAN_ANIMAL_SOURCE_URL, is_imagen_tlalpan_dog_rescue, is_huixtla_migrant_caravan, is_vc_fatal_trailer_incident, EL_GRAFICO_VC_TRAILER_SOURCE_URL, is_infobae_ballet_zapatilla, INFOBAE_BALLET_ZAPATILLA_SOURCE_URL, is_pulque_barbacoa_fair, is_mauricio_tabe_fifth_report, SDPNOTICIAS_MAURICIO_TABE_REPORT_SOURCE_URL, is_radio_formula_casa_ecologica, RADIO_FORMULA_CASA_ECOLOGICA_SOURCE_URL
 
 ROOT = Path(__file__).resolve().parent
 DEST = ROOT / "news.json"
@@ -524,8 +524,8 @@ def category_by_headline(title, feed_category, source=""):
     # La captación pluvial y los programas de ecotecnias son iniciativas ambientales,
     # no pronósticos meteorológicos por mencionar agua de lluvia.
     if re.search(
-        r"\b(?:captar agua de lluvia|captacion de agua de lluvia|captacion pluvial|"
-        r"cosecha de lluvia|casa ecologica|ecotecnias?)\b",
+        r"\b(?:captar agua de lluvia|captacion de agua de lluvia|captacion de lluvia|"
+        r"calentadores solares|captacion pluvial|cosecha de lluvia|casa ecologica|ecotecnias?)\b",
         normalized,
     ):
         return "Medio Ambiente"
@@ -595,6 +595,9 @@ def standardize(article):
     if is_infobae_tlalpan_animal_abuse({"title": title, "source": source, "date": date}):
         borough = "Tlalpan"
         location = "Tlalpan (confirmada en la nota original)"
+    if is_radio_formula_casa_ecologica({"title": title, "source": source, "date": date}):
+        borough = "Álvaro Obregón"
+        location = "Santa Rosa Xochiac, alcaldía Álvaro Obregón, Ciudad de México"
     category = article.get("category") if article.get("category") in GENERAL_FEEDS else "CDMX"
     category = category_by_headline(title, category, source)
     result = {
@@ -627,6 +630,8 @@ def standardize(article):
         result["source_url"] = EL_GRAFICO_VC_TRAILER_SOURCE_URL
     elif is_mauricio_tabe_fifth_report(result):
         result["source_url"] = SDPNOTICIAS_MAURICIO_TABE_REPORT_SOURCE_URL
+    elif is_radio_formula_casa_ecologica(result):
+        result["source_url"] = RADIO_FORMULA_CASA_ECOLOGICA_SOURCE_URL
     versions = article.get("alternate_versions")
     if isinstance(versions, list):
         preserved = []
