@@ -315,14 +315,29 @@ def category_by_headline(title, feed_category, source=""):
         normalized,
     ):
         return "Seguridad"
-    # Los conciertos y las noticias sobre cantantes pertenecen a Cultura.
-    if re.search(r"\b(?:cantantes?|cantautores?|gira musical|canciones? ineditas|musica en vivo|teatro metropolitan)\b", normalized):
+    # Conciertos, intérpretes, estrenos y alfombras de cine pertenecen a Cultura.
+    if re.search(
+        r"\b(?:cantantes?|cantautores?|canta|cantar|gira musical|canciones? ineditas|musica en vivo|"
+        r"teatro metropolitan|alfombra|premiere|estreno|reparto|actores?|actrices?)\b",
+        normalized,
+    ):
         return "Cultura"
+    # Las noticias sobre infraestructura escolar no deben heredar la categoría Metro del RSS.
+    if re.search(
+        r"\b(?:educacion|educativo|educativa|infraestructura escolar|infraestructura en primarias?|"
+        r"primarias?|secundarias?|preparatorias?|planteles? escolares?|domos? escolares?|madres? de familia)\b",
+        normalized,
+    ):
+        return "CDMX"
     # Las jornadas de adopción son información de la ciudad, no del Metro.
     if re.search(r"\b(?:caravana de adopcion|adopcion de mascotas|perritos? rescatados buscan hogar)\b", normalized):
         return "CDMX"
     # Los asuntos del Congreso y del Plan General de Desarrollo son Gobierno.
-    if re.search(r"\b(?:congreso capitalino|congreso de la cdmx|congreso de la ciudad de mexico|plan general de desarrollo)\b", normalized):
+    if re.search(
+        r"\b(?:congreso capitalino|congreso(?: de la| de)? cdmx|congreso de la ciudad de mexico|"
+        r"asamblea legislativa|plan general de desarrollo)\b",
+        normalized,
+    ):
         return "Gobierno"
     # El Anexo 31 y el presupuesto federal de cuidados son materia de Gobierno.
     if re.search(r"\bpresupuesto de cuidados 2027\b", normalized):
@@ -675,6 +690,10 @@ def standardize(article):
             result["location"] = clean(article["location"])[:180]
     else:
         result["brief"] = summarize(result)  # Recalcular fichas RSS al ajustar reglas.
+    # La ficha histórica de Infobae sobre Huixtla tuvo un resumen heredado de
+    # El Financiero; al normalizarla, rehacer la atribución con la fuente enlazada.
+    if is_huixtla_migrant_caravan(result) and source.casefold() == "infobae":
+        result["brief"] = summarize(result)
     if (isinstance(article.get("photo"), dict) and
             not (curated and result.get("sensitive_media") is True)):
         result["photo"] = article["photo"]

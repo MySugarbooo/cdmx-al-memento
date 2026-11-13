@@ -754,6 +754,13 @@ class LocalNewsTests(unittest.TestCase):
             "published_at": "2026-11-13T15:01:00Z",
             "category": "CDMX",
             "borough": "",
+            "editorial_verified": True,
+            "brief": {
+                "lead": "El Financiero reportó que la caravana llegó a Huixtla.",
+                "context": "La nota se conserva por su relación con CDMX.",
+                "pending": "El número de personas requiere corroboración.",
+                "method": "Síntesis editorial anterior pendiente de corregir.",
+            },
             "photo": {
                 "id": "commons_55212868",
                 "kind": "representativa",
@@ -773,6 +780,10 @@ class LocalNewsTests(unittest.TestCase):
         self.assertEqual(result["borough"], "")
         self.assertEqual(result["category"], "CDMX")
         self.assertIn("Huixtla, Chiapas", result["brief"]["lead"])
+        self.assertIn("Infobae informó", result["brief"]["lead"])
+        self.assertNotIn("El Financiero", result["brief"]["lead"])
+        self.assertIn("cerca de 500 personas", result["brief"]["lead"])
+        self.assertIn("1,500", result["brief"]["pending"])
         self.assertIn("fuera de CDMX", result["brief"]["context"])
         assign_photos([result])
         self.assertNotIn("photo", result)
@@ -840,6 +851,20 @@ class LocalNewsTests(unittest.TestCase):
         self.assertEqual(len({item["local_url"] for item in result}), 2)
 
 
+
+
+    def test_school_entertainment_and_congress_headlines_override_misleading_rss_categories(self):
+        school = "Madres de familia denuncian falta de infraestructura en primarias de Coyoacán: exigen domos y mantenimiento"
+        music = "Mckenna Grace de Los juegos del hambre recuerda a su familia mexicana y canta Pimpón en CDMX"
+        red_carpet = "Joseph Zada y Mckenna Grace desatan la emoción en CDMX durante la alfombra de Los Juegos del Hambre"
+        congress_proposal = "Proponen en el Congreso CDMX sancionar a empresas que no entreguen medicamentos a tiempo"
+        congress_statement = "Congreso de Cdmx condena violencia en foro metropolitano"
+
+        self.assertEqual(category_by_headline(school, "Metro", "Infobae"), "CDMX")
+        self.assertEqual(category_by_headline(music, "CDMX", "Infobae"), "Cultura")
+        self.assertEqual(category_by_headline(red_carpet, "CDMX", "Infobae"), "Cultura")
+        self.assertEqual(category_by_headline(congress_proposal, "CDMX", "Infobae"), "Gobierno")
+        self.assertEqual(category_by_headline(congress_statement, "CDMX", "Infobae"), "Gobierno")
 
 
 if __name__=="__main__":

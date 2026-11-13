@@ -725,6 +725,32 @@ def summarize(article):
             ),
         }
     if is_huixtla_migrant_caravan(article):
+        if source.casefold() == "infobae":
+            return {
+                "lead": (
+                    "Infobae informó que la caravana migrante «Dios con nosotros», integrada por cerca "
+                    "de 500 personas según estimaciones citadas por el medio, permaneció en Huixtla, "
+                    "Chiapas, y esperaba a otros integrantes antes de continuar hacia Escuintla y la "
+                    "Ciudad de México. La capital es un destino previsto, no el lugar donde ocurrió la llegada."
+                ),
+                "context": (
+                    "La ubicación del hecho es Huixtla, Chiapas, fuera de CDMX. Infobae señala que el grupo "
+                    "descansó en el barrio Guadalupe y que la ruta prevista continuaría por la carretera "
+                    "costera hacia Escuintla."
+                ),
+                "pending": (
+                    "Las estimaciones variaron durante el recorrido: Infobae citó cerca de 500 personas "
+                    "en Huixtla y señaló que, al sumarse otros contingentes, el total podría acercarse "
+                    "a 1,500. El número y la ruta requieren actualización con autoridades y coberturas "
+                    "posteriores; no se presentan como un conteo oficial."
+                ),
+                "method": (
+                    "Síntesis editorial basada en la publicación de Infobae del 13 de noviembre de 2026, "
+                    "que atribuye las estimaciones a diarios locales y cita coberturas de Diario de Chiapas "
+                    "y Diario del Sur. No equivale a verificación independiente del número de personas "
+                    "ni de su itinerario."
+                ),
+            }
         return {
             "lead": (
                 "El Financiero reportó que la caravana migrante «Dios con nosotros» llegó a Huixtla, "
@@ -1945,16 +1971,19 @@ def _photo_score(article, photo):
         return -10000
     # Admitir categorías temáticas solo cuando el descriptor coincide con la noticia.
     music_story = bool(re.search(
-        r"\b(?:riff|musica|orquestas?|coros?|coral|conciertos?|bandas?|cantantes?|aniversario musical|"
+        r"\b(?:riff|musica|orquestas?|coros?|coral|conciertos?|bandas?|cantantes?|canta|cantar|aniversario musical|"
         r"canciones? ineditas|teatro metropolitan|maria leon|era de villana|"
         r"tame impala|karol g|regresa a mexico|regresan a mexico|dos noches en cdmx|"
         r"giras?|tours?|shows?|presentaciones? en cdmx|fechas? en cdmx)\b",
         headline,
     ))
     music_photo = bool(re.search(
-        r"\b(?:musica|orquestas?|conciertos?|guitarras?|bandas?|coros?|coral|rock|cantantes?)\b",
+        r"\b(?:musica|orquestas?|conciertos?|guitarras?|bandas?|coros?|coral|rock|cantantes?|"
+        r"escenario|festival|teatro metropolitan|auditorio nacional|palacio de los deportes)\b",
         context,
     ))
+    if music_story and not music_photo:
+        return -10000
     # La nota de María León requiere contexto de concierto, no solo música o un coro.
     concert_photo = bool(re.search(r"\b(?:conciertos?|musica en vivo|bandas?|cantantes?|guitarras?|palacio de los deportes|auditorio nacional|teatro metropolitan|escenario|festival)\b", context))
     if is_infobae_maria_leon_concert(article) and not concert_photo:
@@ -2009,6 +2038,13 @@ def _photo_score(article, photo):
         r"\b(?:trafico(?: vehicular)?|transito vehicular|vialidad|congestion vehicular|circulacion vehicular|camion(?:es)?|camionetas?|microbus(?:es)?|autobus(?:es)?|vehiculos? de carga)\b",
         context,
     ))
+    trailer_story = bool(re.search(r"\b(?:trailers?|tractocamiones?)\b", headline))
+    waste_truck_photo = bool(re.search(
+        r"\b(?:camiones? de limpia|recoleccion de basura|servicio de limpia)\b",
+        context,
+    ))
+    if trailer_story and waste_truck_photo:
+        return -10000
     motorcycle_photo = bool(re.search(r"\b(?:motocicletas?|motociclistas?|motos?)\b", context))
     # Los accidentes de automovilismo no deben pasar por el filtro de tránsito urbano.
     motorsport_story = bool(re.search(
@@ -2047,13 +2083,19 @@ def _photo_score(article, photo):
     # Las noticias de educación necesitan una escuela o espacio de aprendizaje,
     # no un monumento o una vista genérica de la ciudad.
     education_story = bool(re.search(
-        r"\b(?:educacion|educativo|educativa|escuelas?|preescolar|guarderias?)\b",
+        r"\b(?:educacion|educativo|educativa|escuelas?|primarias?|secundarias?|preparatorias?|"
+        r"planteles?|colegios?|infraestructura escolar|infraestructura en primarias?|"
+        r"madres de familia|domos? escolares?|preescolar|guarderias?)\b",
         headline,
     ))
     education_photo = bool(re.search(
-        r"\b(?:escuelas?|primaria|preescolar|kinder|guarderias?|jardin de ninos|aulas?|alumn[oa]s?|estudiantes?)\b",
+        r"\b(?:escuelas?|primarias?|secundarias?|preparatorias?|planteles?|"
+        r"infraestructura escolar|preescolar|kinder|guarderias?|jardin de ninos|"
+        r"aulas?|alumn[oa]s?|estudiantes?)\b",
         context,
     ))
+    if education_story and not education_photo:
+        return -10000
     environmental_story = bool(re.search(
         r"\b(?:justicia ambiental|proteger la biodiversidad|biodiversidad)\b",
         headline,
@@ -2121,12 +2163,16 @@ def _photo_score(article, photo):
     if ride_hailing_story and not ride_hailing_photo:
         return -10000
     # Una iniciativa del Congreso no se ilustra con Palacio Nacional.
-    legislative_story = bool(
-        re.search(r"\b(?:congreso|asamblea legislativa|legislativ[oa]|camara de diputados|senado)\b", headline)
-        and re.search(r"\b(?:proponen?|propuesta|iniciativa|sancionar|reforma|ley|proyecto)\b", headline)
-    )
+    legislative_story = bool(re.search(
+        r"\b(?:congreso|asamblea legislativa|legislativ[oa]|camara de diputados|senado)\b",
+        headline,
+    ))
+    # La coincidencia debe identificar un recinto o una sesión legislativa,
+    # no una avenida cuyo nombre contiene la palabra «Congreso».
     legislative_photo = bool(re.search(
-        r"\b(?:congreso|asamblea legislativa|palacio legislativo|camara de diputados|recinto legislativo|sesion del congreso|diputad[oa]s?)\b",
+        r"\b(?:congreso de (?:la ciudad de mexico|la cdmx|cdmx)|congreso cdmx|"
+        r"asamblea legislativa|palacio legislativo|camara de diputados|"
+        r"recinto legislativo|salon de plenos|sesion del congreso)\b",
         context,
     ))
     if legislative_story and not legislative_photo:
@@ -2158,7 +2204,7 @@ def _photo_score(article, photo):
         return -10000
     # Actores, estrenos y alfombras rojas requieren contexto de cine o espectáculo.
     entertainment_person_story = bool(re.search(
-        r"\b(?:alfombra roja|premiere|estreno|reparto|actores?|actrices?|canta|interpreta)\b",
+        r"\b(?:alfombra|premiere|estreno|reparto|actores?|actrices?|canta|interpreta)\b",
         headline,
     ))
     entertainment_photo = bool(re.search(
