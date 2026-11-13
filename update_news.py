@@ -751,6 +751,27 @@ def merge_archive_records(first, second):
     return merged
 
 
+def dedupe_feed_by_source_url(items):
+    """Unifica el feed activo por enlace y conserva los titulares alternativos en la ficha."""
+    result = []
+    positions = {}
+    for article in items:
+        if not isinstance(article, dict):
+            result.append(article)
+            continue
+        url = str(article.get("url") or "").strip()
+        if not url:
+            result.append(article)
+            continue
+        position = positions.get(url)
+        if position is None:
+            positions[url] = len(result)
+            result.append(article)
+            continue
+        result[position] = merge_archive_records(result[position], article)
+    return sorted(result, key=sort_key, reverse=True)
+
+
 def gather():
     now = datetime.now(timezone.utc)
     cutoff = now - timedelta(days=3)
@@ -1260,6 +1281,9 @@ def update():
     # Unas pocas noticias editoriales no deben ocultar una caída del RSS.
     items = fill_recent_from_archive(items, now)
     items = merge_recent_previous_feed(items, previous_articles, now)
+    # Un mismo artículo puede llegar por varios RSS con títulos distintos.
+    # La hemeroteca conserva esas versiones; el feed activo publica una sola URL.
+    items = dedupe_feed_by_source_url(items)
     picture_stats = assign_photos(items[:60])
     print("Fotografías verificadas para portada:", picture_stats)
     consolidate_archive(items, cutoff, updated)
