@@ -304,6 +304,12 @@ def category_by_headline(title, feed_category, source=""):
     """Corrige etiquetas RSS evidentes sin inventar ubicaciones o hechos."""
     normalized = fold(title)
     normalized_source = fold(source)
+    # Las jornadas de adopción son información de la ciudad, no del Metro.
+    if re.search(r"\b(?:caravana de adopcion|adopcion de mascotas|perritos? rescatados buscan hogar)\b", normalized):
+        return "CDMX"
+    # Los asuntos del Congreso y del Plan General de Desarrollo son Gobierno.
+    if re.search(r"\b(?:congreso capitalino|congreso de la cdmx|congreso de la ciudad de mexico|plan general de desarrollo)\b", normalized):
+        return "Gobierno"
     # Delitos y detenciones no deben heredar una categoría de Metro o CDMX
     # por el feed RSS: robos, secuestros y maltrato animal son Seguridad.
     if re.search(
@@ -361,7 +367,7 @@ def category_by_headline(title, feed_category, source=""):
         return "Cultura"
     # El balance de cinco años de Mauricio Tabe describe gestión de una alcaldía, no un incidente de Seguridad.
     if (re.search(r"\btabe\b", normalized)
-            and re.search(r"\b(?:cinco anos de cambio|cinco anos de gobierno|quinto balance)\b", normalized)):
+            and re.search(r"\b(?:cinco anos de cambio|cinco anos de gobierno|quinto balance|quinto informe de gobierno)\b", normalized)):
         return "Gobierno"
     # Las declaraciones del alcalde de Coyoacán sobre cambios en la demarcación son materia de Gobierno.
     if (re.search(r"\bgiovani gutierrez\b", normalized)
