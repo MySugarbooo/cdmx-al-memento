@@ -2255,7 +2255,7 @@ def assign_photos(items):
     def has_complete_credit(photo):
         return (
             isinstance(photo, dict)
-            and photo.get("kind") in {"representativa", "hecho"}
+            and photo.get("kind") == "representativa"
             and all(str(photo.get(key) or "").strip() for key in (
                 "url", "source", "author", "license", "licenseUrl"
             ))
@@ -2284,12 +2284,6 @@ def assign_photos(items):
         existing_score = (
             _photo_score(article, existing) if has_complete_credit(existing) else -10000
         )
-        if existing_score >= 0 and existing.get("kind") == "hecho" and existing.get("verified") is True:
-            if existing.get("id"):
-                reserved.add(existing["id"])
-            article["photo"] = existing
-            continue
-
         available = [photo for photo in pool if photo.get("id") not in reserved]
         candidates = available or pool
         best = None
