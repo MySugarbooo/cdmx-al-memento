@@ -19,6 +19,47 @@ def fake(title, date, published_at=None):
 
 
 class BoroughAndArchiveTests(unittest.TestCase):
+    def test_predial_news_rejects_monument_and_uses_treasury_context(self):
+        article = {
+            "title": "La recaudación de predial por habitante en CDMX es 25 veces mayor que en Oaxaca",
+            "url": "https://news.google.com/rss/articles/predial-tax-photo-test",
+            "source": "La Jornada",
+            "date": "2026-11-13",
+            "category": "CDMX",
+            "borough": "",
+        }
+        monument = {
+            "id": "monumento_revolucion",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/1/13/Monumento_a_la_Revoluci%C3%B3n_CDMX.jpg",
+            "category": "CDMX",
+            "topic": "Monumento a la Revolución CDMX",
+            "keywords": ["Ciudad de México"],
+            "author": "CésarRood",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "source": "https://commons.wikimedia.org/wiki/File:Monumento_a_la_Revoluci%C3%B3n_CDMX.jpg",
+        }
+        treasury = {
+            "id": "tesoreria_palacio_nacional",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Sala_de_Tesorer%C3%ADa_en_Palacio_Nacional_-_I.jpg/960px-Sala_de_Tesorer%C3%ADa_en_Palacio_Nacional_-_I.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "category": "Gobierno",
+            "topic": "Sala de Tesorería en Palacio Nacional - I",
+            "keywords": ["Palacio Nacional Ciudad de México"],
+            "author": "J Mndz",
+            "license": "CC BY-SA 2.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Sala_de_Tesorer%C3%ADa_en_Palacio_Nacional_-_I.jpg",
+        }
+
+        self.assertLess(news._photo_score(article, monument), 0)
+        self.assertGreaterEqual(news._photo_score(article, treasury), 0)
+        with patch("scripts.notas_locales._pool", return_value=[monument, treasury]):
+            stats = news.assign_photos([article])
+        self.assertEqual(stats["assigned"], 1)
+        self.assertEqual(article["photo"]["id"], "tesoreria_palacio_nacional")
+
     def test_first_boroughs_and_exact_mentions(self):
         self.assertEqual(news.BOROUGHS[:2], ("La Magdalena Contreras", "Álvaro Obregón"))
         self.assertEqual(news.identify_location("Noticias en Magdalena Contreras")[0], "La Magdalena Contreras")
