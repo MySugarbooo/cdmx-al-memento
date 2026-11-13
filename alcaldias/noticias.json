@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-13 10:47 UTC",
+  "updated": "2026-11-13 11:08 UTC",
   "boroughs": [
     {
       "name": "La Magdalena Contreras",
@@ -1488,27 +1488,6 @@
           "location": "Santa Rosa Xochiac, alcaldía Álvaro Obregón, Ciudad de México",
           "local_url": "/noticias/?id=6f806928cb8a9d3d538c&mes=2026-11",
           "source_url": "https://www.radioformula.com.mx/cdmx/calentadores-solares-y-captacion-de-lluvia-el-plan-de-cdmx-para-ahorrar-en-casa-20261112-0088.html",
-          "brief": {
-            "lead": "Radio Fórmula informó que el programa Casa Ecológica contempla instalar sistemas de captación pluvial, calentadores solares y huertos en 19 mil viviendas de la capital. Para 2025 y 2026 reportó una inversión de 356 millones de pesos; en Álvaro Obregón, la meta anunciada es beneficiar a 10 mil hogares.",
-            "context": "La presentación se realizó en Santa Rosa Xochiac, alcaldía Álvaro Obregón. La iniciativa busca reducir el consumo de agua y gas y apoyar la producción de alimentos en los hogares.",
-            "pending": "La inversión, las viviendas y las instalaciones descritas son cifras y metas atribuidas al Gobierno de la Ciudad de México y a la cobertura periodística; no deben presentarse como equipos ya instalados en cada hogar. Los avances por colonia requieren confirmación de la Secretaría del Medio Ambiente.",
-            "method": "Síntesis basada en Radio Fórmula, 12 de noviembre de 2026: https://www.radioformula.com.mx/cdmx/calentadores-solares-y-captacion-de-lluvia-el-plan-de-cdmx-para-ahorrar-en-casa-20261112-0088.html. Se contrastaron ubicación y objetivos con La Jornada, 12 de noviembre de 2026: https://www.jornada.com.mx/noticia/2026/11/12/capital/lanza-cdmx-programa-de-ecotecnias-para-10-mil-viviendas-en-alvaro-obregon. Las cifras se atribuyen a las fuentes y no constituyen una auditoría independiente."
-          },
-          "photo": {
-            "id": "commons_152180159",
-            "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Cosecha_de_Lluvia_02.jpg/960px-Cosecha_de_Lluvia_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "category": "Medio Ambiente",
-            "borough": "",
-            "topic": "Cosecha de Lluvia 02",
-            "keywords": [
-              "Lluvia Ciudad de México"
-            ],
-            "author": "Gobierno de la Ciudad de México",
-            "license": "CC BY 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Cosecha_de_Lluvia_02.jpg"
-          },
           "alternate_versions": [
             {
               "title": "Calentadores solares y captación de lluvia: el plan de CDMX para ahorrar en casa",
@@ -1543,7 +1522,28 @@
                 "source": "https://commons.wikimedia.org/wiki/File:Cosecha_de_Lluvia_06.jpg"
               }
             }
-          ]
+          ],
+          "brief": {
+            "lead": "Radio Fórmula informó que el programa Casa Ecológica contempla instalar sistemas de captación pluvial, calentadores solares y huertos en 19 mil viviendas de la capital. Para 2025 y 2026 reportó una inversión de 356 millones de pesos; en Álvaro Obregón, la meta anunciada es beneficiar a 10 mil hogares.",
+            "context": "La presentación se realizó en Santa Rosa Xochiac, alcaldía Álvaro Obregón. La iniciativa busca reducir el consumo de agua y gas y apoyar la producción de alimentos en los hogares.",
+            "pending": "La inversión, las viviendas y las instalaciones descritas son cifras y metas atribuidas al Gobierno de la Ciudad de México y a la cobertura periodística; no deben presentarse como equipos ya instalados en cada hogar. Los avances por colonia requieren confirmación de la Secretaría del Medio Ambiente.",
+            "method": "Síntesis basada en Radio Fórmula, 12 de noviembre de 2026: https://www.radioformula.com.mx/cdmx/calentadores-solares-y-captacion-de-lluvia-el-plan-de-cdmx-para-ahorrar-en-casa-20261112-0088.html. Se contrastaron ubicación y objetivos con La Jornada, 12 de noviembre de 2026: https://www.jornada.com.mx/noticia/2026/11/12/capital/lanza-cdmx-programa-de-ecotecnias-para-10-mil-viviendas-en-alvaro-obregon. Las cifras se atribuyen a las fuentes y no constituyen una auditoría independiente."
+          },
+          "photo": {
+            "id": "commons_152180159",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Cosecha_de_Lluvia_02.jpg/960px-Cosecha_de_Lluvia_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "category": "Medio Ambiente",
+            "borough": "",
+            "topic": "Cosecha de Lluvia 02",
+            "keywords": [
+              "Lluvia Ciudad de México"
+            ],
+            "author": "Gobierno de la Ciudad de México",
+            "license": "CC BY 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Cosecha_de_Lluvia_02.jpg"
+          }
         },
         {
           "title": "Clara Brugada lanza Casa Ecológica CDMX con calentadores solares gratis en Álvaro Obregón",
@@ -17928,6 +17928,26 @@
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "contexto_concierto_palacio_deportes_2009",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/PalaciodelosDeportes_Concierto.jpg/960px-PalaciodelosDeportes_Concierto.jpg",
+            "category": "Cultura",
+            "borough": "",
+            "topic": "Concierto de Kings of Leon en el Palacio de los Deportes, Ciudad de México (octubre de 2009); imagen representativa, no corresponde a María León.",
+            "keywords": [
+              "concierto",
+              "música en vivo",
+              "Palacio de los Deportes",
+              "Ciudad de México",
+              "escenario",
+              "público"
+            ],
+            "author": "ProtoplasmaKid",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "source": "https://commons.wikimedia.org/wiki/File:PalaciodelosDeportes_Concierto.jpg"
           }
         },
         {
