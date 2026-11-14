@@ -649,7 +649,7 @@ def summarize(article):
         "tlalpan" in folded_title
         and "exlider" in folded_title
         and re.search(r"\b(?:crimen|homicidio)\b", folded_title)
-        and source_folded in {"quadratin mexico", "n+"}
+        and source_folded in {"quadratin mexico", "n"}
     ):
         return {
             "lead": (

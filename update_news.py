@@ -725,7 +725,7 @@ def standardize(article):
     borough, location = identify_location(title, date)
     normalized_editorial_title = fold(title)
     if (
-        fold(source) in {"quadratin mexico", "n+"}
+        fold(source) in {"quadratin mexico", "n"}
         and "tlalpan" in normalized_editorial_title
         and "exlider" in normalized_editorial_title
         and re.search(r"\b(?:crimen|homicidio)\b", normalized_editorial_title)
@@ -818,7 +818,7 @@ def standardize(article):
     ):
         result["source_url"] = QUADRATIN_TLALPAN_EXLEADER_HOMICIDE_SOURCE_URL
     elif (
-        fold(result.get("source")) == "n+"
+        fold(result.get("source")) == "n"
         and "vinculan a segundo implicado" in normalized_result_title
         and "exlider" in normalized_result_title
         and "tlalpan" in normalized_result_title
@@ -1246,7 +1246,7 @@ def consolidate_archive(new_items, cutoff, updated):
     ]
     missing = [item for item in existing.values()
                if not item.get("photo") and not is_sensitive_media(item)]
-    # Priorizar las tres discrepancias editoriales confirmadas y conservar
+    # Priorizar las discrepancias editoriales confirmadas y conservar
     # el límite de 24 reemplazos por ejecución; después, atender las más recientes.
     refresh = prioritize_photo_refresh(mismatched, limit=24)
     batch = refresh + missing[:max(0, 300 - len(refresh))]
@@ -1406,7 +1406,7 @@ def editorial_event_key(article):
     if (
         article.get("date") == "2026-11-14"
         and article.get("borough") == "Tlalpan"
-        and source in {"quadratin mexico", "n+"}
+        and source in {"quadratin mexico", "n"}
         and "tlalpan" in title
         and "exlider" in title
         and re.search(r"\b(?:crimen|homicidio)\b", title)
