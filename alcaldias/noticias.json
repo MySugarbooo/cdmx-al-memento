@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-13 23:46 UTC",
+  "updated": "2026-11-14 01:41 UTC",
   "boroughs": [
     {
       "name": "La Magdalena Contreras",
@@ -284,12 +284,6 @@
           "borough": "La Magdalena Contreras",
           "location": "Explanada de la Alcaldía La Magdalena Contreras, José Moreno Salido s/n, colonia Barranca Seca, Ciudad de México",
           "local_url": "/noticias/?id=663a30317b0f009ad37d&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con Chilango, el titular publicado es: «Eventos para pasar el puente en CDMX: Garbage, Feria del Pulque y la Barbacoa, El Cascanueces y más». La información publicada por Chilango aborda un asunto que este portal clasifica como Cultura. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "La actividad cultural abre oportunidades de encuentro, aprendizaje y disfrute para habitantes y visitantes.",
-            "pending": "Los accesos, boletos, sedes, cupos y horarios deben consultarse con la institución organizadora. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
           "alternate_versions": [
             {
               "title": "Eventos para pasar el puente en CDMX: Garbage, Feria del Pulque y la Barbacoa, El Cascanueces y más",
@@ -328,7 +322,13 @@
                 "source": "https://commons.wikimedia.org/wiki/File:Plato_de_consom%C3%A9_y_tacos_de_barbacoa.jpg"
               }
             }
-          ]
+          ],
+          "brief": {
+            "lead": "De acuerdo con Chilango, el titular publicado es: «Eventos para pasar el puente en CDMX: Garbage, Feria del Pulque y la Barbacoa, El Cascanueces y más». La información publicada por Chilango aborda un asunto que este portal clasifica como Cultura. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "La actividad cultural abre oportunidades de encuentro, aprendizaje y disfrute para habitantes y visitantes.",
+            "pending": "Los accesos, boletos, sedes, cupos y horarios deben consultarse con la institución organizadora. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          }
         },
         {
           "title": "Detienen a Taxista Acusado de Intentar Asaltar a una Mujer en la Magdalena Contreras, CDMX",
@@ -341,27 +341,6 @@
           "borough": "La Magdalena Contreras",
           "location": "La Magdalena Contreras (mencionada en el titular)",
           "local_url": "/noticias/?id=b37e367ff43c32e97267&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con N+, el titular publicado es: «Detienen a Taxista Acusado de Intentar Asaltar a una Mujer en la Magdalena Contreras, CDMX». Una nota de N+ comunica un caso relacionado con una detención o una presunta conducta delictiva en La Magdalena Contreras. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
-            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
-            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "archivo_seguridad_002",
-            "kind": "representativa",
-            "url": "/assets/fotos/archivo_seguridad_002.jpg",
-            "category": "Seguridad",
-            "borough": "",
-            "topic": "Patrulla vecinal",
-            "keywords": [
-              "Seguridad"
-            ],
-            "author": "Daniel Yonka",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Patrulla_vecinal.jpg"
-          },
           "alternate_versions": [
             {
               "title": "Detienen a Taxista Acusado de Intentar Asaltar a una Mujer en la Magdalena Contreras, CDMX",
@@ -414,7 +393,28 @@
                 "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
               }
             }
-          ]
+          ],
+          "brief": {
+            "lead": "De acuerdo con N+, el titular publicado es: «Detienen a Taxista Acusado de Intentar Asaltar a una Mujer en la Magdalena Contreras, CDMX». Una nota de N+ comunica un caso relacionado con una detención o una presunta conducta delictiva en La Magdalena Contreras. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
+            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "archivo_seguridad_002",
+            "kind": "representativa",
+            "url": "/assets/fotos/archivo_seguridad_002.jpg",
+            "category": "Seguridad",
+            "borough": "",
+            "topic": "Patrulla vecinal",
+            "keywords": [
+              "Seguridad"
+            ],
+            "author": "Daniel Yonka",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Patrulla_vecinal.jpg"
+          }
         },
         {
           "title": "VIDEO | Automovilista Golpea a Adulta Mayor en Magdalena Contreras, CDMX",
@@ -5064,7 +5064,7 @@
           "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOOGFMNDBJc1pBUUdEYlJuMVFwOVZSdHh5aDJkd3ljYUhqQnZONTNVV2t0VnE4WlRobDcyeDlCSWZ0NkNqdUxjZDhSUlpqWmpaVFlMWm5wZ01hMU55d2Mxb0I1R3hnYXBYUXRzaDZOVG90a19VOUcweTZVTzVhbHRTOVh5UERPRGFid215NzR4ZzVsQXcwc2t2cTRKdU0wSmhIT0oyTy11REtBQWJKM0tPRWxUMzkxaVJHOUFkRWV6a251SzN1U2V2c0xUWmRmdUZn?oc=5",
           "source": "El Sol de México",
           "date": "2026-11-13",
-          "published_at": "2026-11-13T23:03:45Z",
+          "published_at": "2026-11-14T00:15:05Z",
           "category": "CDMX",
           "borough": "Coyoacán",
           "location": "Coyoacán (mencionada en el titular)",
@@ -5089,7 +5089,42 @@
             "license": "CC BY-SA 4.0",
             "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
             "source": "https://commons.wikimedia.org/wiki/File:1._Coyoac%C3%A1n_Ciudad_de_M%C3%A9xico.jpg"
-          }
+          },
+          "alternate_versions": [
+            {
+              "title": "Jóvenes universitarios de Coyoacán suman su respaldo a Hannah De Lamadrid rumbo al 2027",
+              "description": "De acuerdo con El Sol de México, el titular publicado es: «Jóvenes universitarios de Coyoacán suman su respaldo a Hannah De Lamadrid rumbo al 2027». La información publicada por El Sol de México aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+              "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOOGFMNDBJc1pBUUdEYlJuMVFwOVZSdHh5aDJkd3ljYUhqQnZONTNVV2t0VnE4WlRobDcyeDlCSWZ0NkNqdUxjZDhSUlpqWmpaVFlMWm5wZ01hMU55d2Mxb0I1R3hnYXBYUXRzaDZOVG90a19VOUcweTZVTzVhbHRTOVh5UERPRGFid215NzR4ZzVsQXcwc2t2cTRKdU0wSmhIT0oyTy11REtBQWJKM0tPRWxUMzkxaVJHOUFkRWV6a251SzN1U2V2c0xUWmRmdUZn?oc=5",
+              "source": "El Sol de México",
+              "date": "2026-11-13",
+              "published_at": "2026-11-13T23:03:45Z",
+              "category": "CDMX",
+              "borough": "Coyoacán",
+              "location": "Coyoacán (mencionada en el titular)",
+              "local_url": "/noticias/?id=37e82c0c5bd2170668f0&mes=2026-11",
+              "brief": {
+                "lead": "De acuerdo con El Sol de México, el titular publicado es: «Jóvenes universitarios de Coyoacán suman su respaldo a Hannah De Lamadrid rumbo al 2027». La información publicada por El Sol de México aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+                "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+                "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+              },
+              "photo": {
+                "id": "commons_106559901",
+                "kind": "representativa",
+                "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/1._Coyoac%C3%A1n_Ciudad_de_M%C3%A9xico.jpg/960px-1._Coyoac%C3%A1n_Ciudad_de_M%C3%A9xico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+                "category": "CDMX",
+                "borough": "",
+                "topic": "1. Coyoacán Ciudad de México",
+                "keywords": [
+                  "CDMX"
+                ],
+                "author": "Machristen",
+                "license": "CC BY-SA 4.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "https://commons.wikimedia.org/wiki/File:1._Coyoac%C3%A1n_Ciudad_de_M%C3%A9xico.jpg"
+              }
+            }
+          ]
         },
         {
           "title": "Jóvenes universitarios de Coyoacán suman su respaldo a Hannah De Lamadrid rumbo al 2027",
@@ -6599,20 +6634,55 @@
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           },
           "photo": {
-            "id": "archivo_seguridad_002",
+            "id": "archivo_seguridad_003",
             "kind": "representativa",
-            "url": "/assets/fotos/archivo_seguridad_002.jpg",
+            "url": "/assets/fotos/archivo_seguridad_003.jpg",
             "category": "Seguridad",
             "borough": "",
-            "topic": "Patrulla vecinal",
+            "topic": "Adquisición patrullas para la Policía 02",
             "keywords": [
               "Seguridad"
             ],
-            "author": "Daniel Yonka",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Patrulla_vecinal.jpg"
-          }
+            "author": "Gobierno de la Ciudad de México",
+            "license": "CC BY 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Adquisici%C3%B3n_patrullas_para_la_Polic%C3%ADa_02.jpg"
+          },
+          "alternate_versions": [
+            {
+              "title": "Destaca Cuajimalpa primer lugar en eficiencia policial: presenta alcalde avances en seguridad y obra pública",
+              "description": "De acuerdo con El Sol de México, el titular publicado es: «Destaca Cuajimalpa primer lugar en eficiencia policial: presenta alcalde avances en seguridad y obra pública». La información publicada por El Sol de México aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+              "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxNXzRpWnJJYjJJTlEtc2hYTGhkNHJhcV9Ua2tSOG9BUlU2WnZwMG1adURnaHd0bllMUFJPY0lTeUhRcjFLU1QzYWpUaWxXaTdpdWcxblNyQ1pabXpUZGEzMUdiSnF6RFlQT0VRQi1IcmtmVzNSWEs0cW1nck5zNlBVTElNY0FYLWJ4cm1aM3FJNHh6LTRzM1gwTUpmQ0RVWC1pSjRFTGdYOENCRzZ2TXlxUHg2dGFYR3VXU0xGTkhXY0p3RlMyMEZCMFRjUkVyUVNMNzVNSk45MlNadU1rbHVRVjRyLUR1V3RtcU5MYzEwaE1ZUW9vY0JCVQ?oc=5",
+              "source": "El Sol de México",
+              "date": "2026-11-13",
+              "published_at": "2026-11-13T22:04:37Z",
+              "category": "Seguridad",
+              "borough": "Cuajimalpa de Morelos",
+              "location": "Cuajimalpa de Morelos (mencionada en el titular)",
+              "local_url": "/noticias/?id=2b954366eaef5008f7ca&mes=2026-11",
+              "brief": {
+                "lead": "De acuerdo con El Sol de México, el titular publicado es: «Destaca Cuajimalpa primer lugar en eficiencia policial: presenta alcalde avances en seguridad y obra pública». La información publicada por El Sol de México aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+                "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+                "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+              },
+              "photo": {
+                "id": "archivo_seguridad_002",
+                "kind": "representativa",
+                "url": "/assets/fotos/archivo_seguridad_002.jpg",
+                "category": "Seguridad",
+                "borough": "",
+                "topic": "Patrulla vecinal",
+                "keywords": [
+                  "Seguridad"
+                ],
+                "author": "Daniel Yonka",
+                "license": "CC BY-SA 4.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "https://commons.wikimedia.org/wiki/File:Patrulla_vecinal.jpg"
+              }
+            }
+          ]
         },
         {
           "title": "Segundo Informe de Cuajimalpa: Alcaldía destaca avances en seguridad y servicios públicos",
@@ -9405,8 +9475,41 @@
     },
     {
       "name": "Iztacalco",
-      "count": 127,
+      "count": 128,
       "articles": [
+        {
+          "title": "Mercado Bramadero en Iztacalco será el primero conectado al C5; Brugada asegura que todos los mercados tendrán cámaras",
+          "description": "De acuerdo con El Universal, el titular publicado es: «Mercado Bramadero en Iztacalco será el primero conectado al C5; Brugada asegura que todos los mercados tendrán cámaras». La información publicada por El Universal aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxNLVoybTBWZXB4ZDdqN1NtblJ6MG9hX3RwcHhZU2RESkFhTEZBREhMd0FYZmlORUp4b0tsTGhPOWllSTQ2bU9xeXNVZ0ppeEFDaWJvblY2bnk1M201MFlfNjdYX3ZkZnVUcEdiakVwTktNendqX3lyaU90cEtUZTFYYmRVUUZQbmNKWDJLWHZXX2ZNQm5aR0ZqUGluaTAxVzJpTWY0blRZdHdwamk2XzlSdkxROS1lOHF6WjJiVXVjLWh6UGVVS29ZZUlseVRONW1GWnFybkZHSVpDeVpIMVVaS3ZQRmg3eFZFZ1Nfa2pKTW_SAYQCQVVfeXFMTmprbU1KSG02S2tqSGNGM201a1Y1LS0tWHYzOHpMODlOLS1QaDRNMU1udFhwT2NIRXN1MkEyTmZJTWRoMUhxb3M3U2U3Sl9tb005M2VwNHZXR2VyeXVzQjhLUVVxTEpXTXVoWG54blNWUWFsbm5FM2NtZ29ySG1aYk1ld25VT3ppRzFSRmhPMFdMUHhtMUlqUVpSQVdFb0dUa0x6SW4temtXWUszN1VsUWRVdEFqVTRQN3c3RTg3QnA4bHhwWmgwZW93enJDTUxweDdhUDRCakRtSFBNajdEMHJCY3dqUFEzbkZsRzJ0TldneGlKQlY5RDVnWkhDZ1VIaXkyOXg?oc=5",
+          "source": "El Universal",
+          "date": "2026-11-13",
+          "published_at": "2026-11-14T01:03:33Z",
+          "category": "Seguridad",
+          "borough": "Iztacalco",
+          "location": "Iztacalco (mencionada en el titular)",
+          "local_url": "/noticias/?id=663d293f303fabb15d97&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con El Universal, el titular publicado es: «Mercado Bramadero en Iztacalco será el primero conectado al C5; Brugada asegura que todos los mercados tendrán cámaras». La información publicada por El Universal aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "archivo_seguridad_002",
+            "kind": "representativa",
+            "url": "/assets/fotos/archivo_seguridad_002.jpg",
+            "category": "Seguridad",
+            "borough": "",
+            "topic": "Patrulla vecinal",
+            "keywords": [
+              "Seguridad"
+            ],
+            "author": "Daniel Yonka",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Patrulla_vecinal.jpg"
+          }
+        },
         {
           "title": "Impulsa alcaldía Iztacalco el comercio local con la Feria de Mujeres Emprendedoras",
           "description": "De acuerdo con El Sol de México, el titular publicado es: «Impulsa alcaldía Iztacalco el comercio local con la Feria de Mujeres Emprendedoras». La información publicada por El Sol de México aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -10803,31 +10906,76 @@
             "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
             "source": "https://commons.wikimedia.org/wiki/File:SanMatiasChurchIztacalco02.jpg"
           }
-        },
-        {
-          "title": "Pronóstico del clima en Iztacalco para este domingo 8 de noviembre: nubes dispersas y ambiente templado",
-          "description": "De acuerdo con El Heraldo de México, el titular publicado es: «Pronóstico del clima en Iztacalco para este domingo 8 de noviembre: nubes dispersas y ambiente templado». El pronóstico recogido por El Heraldo de México se refiere a condiciones meteorológicas en Iztacalco. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
-          "url": "https://news.google.com/rss/articles/CBMikAJBVV95cUxPTnlZRXpRNmxqak5vTnB5LTIyMnJmbVY3RDBRZVhoRkVuTy03V3ZnVHYyYlBsZDVabUpiVy0wMVVYZndMM1BzZWpKMklGdXhoWmxrOTQtZlZpaEpqdTdweVNvMGZkYlpLaHRuS1BIUU9yTDUxMy1ldW10NF9nb0d5Rk0xSFRYdHF3cjVIdjJUaDltX0JIM053OFFkT290YnBpZVhzSkFxVFJoZzlGeTZqcVdwZ2tuY3dPMHh3cFU0b1pNdHNqQXU1aFlfbHRELXRiMnVydkFZUUFOaTR1YUJXYW1IcWFIc1RZZ204a0E3TklkUGlmQ29nb3VaM3FGTjg5VHJGRE85bFRlakp4VGpINA?oc=5",
-          "source": "El Heraldo de México",
-          "date": "2026-11-07",
-          "published_at": "2026-11-08T05:00:57Z",
-          "category": "CDMX",
-          "borough": "Iztacalco",
-          "location": "Iztacalco (mencionada en el titular)",
-          "local_url": "/noticias/?id=ada99efe074b4f08699a&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con El Heraldo de México, el titular publicado es: «Pronóstico del clima en Iztacalco para este domingo 8 de noviembre: nubes dispersas y ambiente templado». El pronóstico recogido por El Heraldo de México se refiere a condiciones meteorológicas en Iztacalco. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
         }
       ]
     },
     {
       "name": "Iztapalapa",
-      "count": 237,
+      "count": 239,
       "articles": [
+        {
+          "title": "Dónde comer chicharrones preparados y quesadillas de sesos baratos en Iztapalapa, CDMX",
+          "description": "De acuerdo con TV Azteca, el titular publicado es: «Dónde comer chicharrones preparados y quesadillas de sesos baratos en Iztapalapa, CDMX». La información publicada por TV Azteca aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNSG5QM0ZSMFNCUGNkNWdCcTVCTlVNcVlMV1VIVkRCR1YxMGR5YTh6dk1VaGpTejNWRTB6X3lqVkx6dXBiNVl1clduMFNvOXZTYkNNbExienNCR3pKb2VLQlU0NDN2VWp4N2w2ZlRacW1VUlVCbnZUUW1XeTdQY1hMcjFLTVJjVC1acl9UMGxRamVpYWdjUm90cFNNTkNMUmJCdXhVQVVGSlZjbVJjZXItWS1rN2c3bUhPRm9fSEhUQ1NvZlVZdHI4R3hLdzcxSGYwTXBMVlprWQ?oc=5",
+          "source": "TV Azteca",
+          "date": "2026-11-13",
+          "published_at": "2026-11-14T00:08:54Z",
+          "category": "CDMX",
+          "borough": "Iztapalapa",
+          "location": "Iztapalapa (mencionada en el titular)",
+          "local_url": "/noticias/?id=fc31b8ba5e071ccd905c&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con TV Azteca, el titular publicado es: «Dónde comer chicharrones preparados y quesadillas de sesos baratos en Iztapalapa, CDMX». La información publicada por TV Azteca aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_iztapalapa",
+            "kind": "representativa",
+            "url": "/assets/alcaldias/iztapalapa.jpg",
+            "category": "CDMX",
+            "borough": "Iztapalapa",
+            "topic": "Vista de Iztapalapa desde el Cerro de la Estrella",
+            "author": "Secretaría de Cultura Ciudad de México from México",
+            "license": "CC BY 2.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+            "source": "https://commons.wikimedia.org/wiki/File:MX_MM_MUSEO_CERRO_DE_LA_ESTRELLA_%2849522225751%29.jpg"
+          }
+        },
+        {
+          "title": "Vinculan a proceso a Ismael “N” por extorsionar a comerciante en Iztapalapa",
+          "description": "De acuerdo con Sociedad Noticias, el titular publicado es: «Vinculan a proceso a Ismael “N” por extorsionar a comerciante en Iztapalapa». La información publicada por Sociedad Noticias aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPQjFLOXE1WF9iUHVHU2JsQ1JhbndLeFN4enB4YnJsZVlFcmRmcXJubVpCYlFGNDRoWEdJb05WSmo4RldIMnhHRTljcUVHQnN0WDlzWnVxMHpPMjAtbmotYjNQMlBNWTRkNmxzS2Q2MHJQWWNBWDl4bEZKY0piTWd3c28wUWdqLUpTeG4weG1BcWt5dXZsRjZoczE1OVZVNHV1QUxwWFRJUHZhbWlyTldNSExEdTdvdw?oc=5",
+          "source": "Sociedad Noticias",
+          "date": "2026-11-13",
+          "published_at": "2026-11-13T23:30:00Z",
+          "category": "CDMX",
+          "borough": "Iztapalapa",
+          "location": "Iztapalapa (mencionada en el titular)",
+          "local_url": "/noticias/?id=e2986519419026dd861e&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con Sociedad Noticias, el titular publicado es: «Vinculan a proceso a Ismael “N” por extorsionar a comerciante en Iztapalapa». La información publicada por Sociedad Noticias aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "archivo_seguridad_008",
+            "kind": "representativa",
+            "url": "/assets/fotos/archivo_seguridad_008.jpg",
+            "category": "Seguridad",
+            "borough": "",
+            "topic": "Claudia Sheinbaum entrega patrullas Iztapalapa 03",
+            "keywords": [
+              "Seguridad"
+            ],
+            "author": "Gobierno de la Ciudad de México",
+            "license": "CC BY 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Claudia_Sheinbaum_entrega_patrullas_Iztapalapa_03.jpg"
+          }
+        },
         {
           "title": "Feria del Empleo en Iztapalapa ofrece mil vacantes con empresas como Bimbo, Sears y Chedraui; fecha y horario",
           "description": "De acuerdo con El Sol de México, el titular publicado es: «Feria del Empleo en Iztapalapa ofrece mil vacantes con empresas como Bimbo, Sears y Chedraui; fecha y horario». La información publicada por El Sol de México aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -10846,17 +10994,52 @@
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           },
           "photo": {
-            "id": "alcaldia_iztapalapa",
+            "id": "commons_20284563",
             "kind": "representativa",
-            "url": "/assets/alcaldias/iztapalapa.jpg",
-            "category": "CDMX",
-            "borough": "Iztapalapa",
-            "topic": "Vista de Iztapalapa desde el Cerro de la Estrella",
-            "author": "Secretaría de Cultura Ciudad de México from México",
-            "license": "CC BY 2.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-            "source": "https://commons.wikimedia.org/wiki/File:MX_MM_MUSEO_CERRO_DE_LA_ESTRELLA_%2849522225751%29.jpg"
-          }
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Metro_Iztapalapa_02.jpg/960px-Metro_Iztapalapa_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "category": "Alcaldías",
+            "borough": "",
+            "topic": "Metro Iztapalapa 02",
+            "keywords": [
+              "Iztapalapa Ciudad de México"
+            ],
+            "author": "GAED",
+            "license": "CC BY-SA 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Metro_Iztapalapa_02.jpg"
+          },
+          "alternate_versions": [
+            {
+              "title": "Feria del Empleo en Iztapalapa ofrece mil vacantes con empresas como Bimbo, Sears y Chedraui; fecha y horario",
+              "description": "De acuerdo con El Sol de México, el titular publicado es: «Feria del Empleo en Iztapalapa ofrece mil vacantes con empresas como Bimbo, Sears y Chedraui; fecha y horario». La información publicada por El Sol de México aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+              "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPb25ad1lGZGU3bC01aTY5eFc4ZWpQR2dsdDFFRVpkeGVfR0xxeXY1bTlJSHRmeTQ3TFNOYVN5N1llOWh5enRCT2hBelZnaVI4azE3V3ljamV3MDJ0TnlhNlRLX093SlZMcDRZOU5JTHBwcnc0QVJRQXhXdXNrNTRYZFRobGZNb2EyNE1ESjdfWFVTOXpmWTZGeS1WOHRNbmZSZ3pQM0RLaXlmeEFuM0U3VldGV0ZUTEVWYTgycjRLdTM5aDVBSzNlODFZRHAzcjMyaEVROGFPOWZtWk1YSUxpSDhlNGJDZUdPMFBz?oc=5",
+              "source": "El Sol de México",
+              "date": "2026-11-13",
+              "published_at": "2026-11-13T22:07:30Z",
+              "category": "CDMX",
+              "borough": "Iztapalapa",
+              "location": "Iztapalapa (mencionada en el titular)",
+              "local_url": "/noticias/?id=8782dfc11a9012876f92&mes=2026-11",
+              "brief": {
+                "lead": "De acuerdo con El Sol de México, el titular publicado es: «Feria del Empleo en Iztapalapa ofrece mil vacantes con empresas como Bimbo, Sears y Chedraui; fecha y horario». La información publicada por El Sol de México aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+                "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+                "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+              },
+              "photo": {
+                "id": "alcaldia_iztapalapa",
+                "kind": "representativa",
+                "url": "/assets/alcaldias/iztapalapa.jpg",
+                "category": "CDMX",
+                "borough": "Iztapalapa",
+                "topic": "Vista de Iztapalapa desde el Cerro de la Estrella",
+                "author": "Secretaría de Cultura Ciudad de México from México",
+                "license": "CC BY 2.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+                "source": "https://commons.wikimedia.org/wiki/File:MX_MM_MUSEO_CERRO_DE_LA_ESTRELLA_%2849522225751%29.jpg"
+              }
+            }
+          ]
         },
         {
           "title": "¿Sin planes para el puente? Iztapalapa te espera con sabores del mundo, música y más",
@@ -12140,69 +12323,6 @@
             "license": "CC BY 2.0",
             "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
             "source": "https://commons.wikimedia.org/wiki/File:MX_MM_MUSEO_CERRO_DE_LA_ESTRELLA_%2849522225751%29.jpg"
-          }
-        },
-        {
-          "title": "Los Ángeles Azules: de Iztapalapa para el mundo, la cumbia que unió generaciones",
-          "description": "De acuerdo con CineMedios, el titular publicado es: «Los Ángeles Azules: de Iztapalapa para el mundo, la cumbia que unió generaciones». La información publicada por CineMedios aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1YOXNYclpfRFQwdFpDNXMtR3hYNVdzSHJqOXV0RXAtemdhemlNTWpOdWFvNDZlTEZTV2ZjTzJkYktoOXZXM25HQ2liYi02Z0RNTTVLa3hZU25EOUM3Qzlya0VBcjU0cWFQcnV2cmcxTE12RUcyQzlUcGIzQzQ?oc=5",
-          "source": "CineMedios",
-          "date": "2026-11-08",
-          "published_at": "2026-11-09T02:53:08Z",
-          "category": "CDMX",
-          "borough": "Iztapalapa",
-          "location": "Iztapalapa (mencionada en el titular)",
-          "local_url": "/noticias/?id=a7ed3cfa3b7f2c63b471&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con CineMedios, el titular publicado es: «Los Ángeles Azules: de Iztapalapa para el mundo, la cumbia que unió generaciones». La información publicada por CineMedios aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "alcaldia_iztapalapa",
-            "kind": "representativa",
-            "url": "/assets/alcaldias/iztapalapa.jpg",
-            "category": "CDMX",
-            "borough": "Iztapalapa",
-            "topic": "Vista de Iztapalapa desde el Cerro de la Estrella",
-            "author": "Secretaría de Cultura Ciudad de México from México",
-            "license": "CC BY 2.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-            "source": "https://commons.wikimedia.org/wiki/File:MX_MM_MUSEO_CERRO_DE_LA_ESTRELLA_%2849522225751%29.jpg"
-          }
-        },
-        {
-          "title": "¡Ni la Virgen se salva! Sujetos roban figura de la Virgen de Guadalupe en Iztapalapa; tenía 35 años ahí | VIDEO",
-          "description": "De acuerdo con Telediario, el titular publicado es: «¡Ni la Virgen se salva! Sujetos roban figura de la Virgen de Guadalupe en Iztapalapa; tenía 35 años ahí | VIDEO». La información publicada por Telediario aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOSGNyRFBhNVdMSlZLZnY2eFpkckdONjduRUNnSmZyUEt0ZEdFYUsxUWVCRUhRUWZDNm5WdlVFaVZoTHNjX3UtZHBGekJyRU5mYkRPZjhySnhIbG1hT3Y2VlVRZlo1OHE5dGtiZGhwNHFKOVhnSGFxSmotMXZaTURpTHd2aF9hUnNOM0dkZUtyeDV2a0lhVHdjNXZEUk92Z9IBngFBVV95cUxOSGNyRFBhNVdMSlZLZnY2eFpkckdONjduRUNnSmZyUEt0ZEdFYUsxUWVCRUhRUWZDNm5WdlVFaVZoTHNjX3UtZHBGekJyRU5mYkRPZjhySnhIbG1hT3Y2VlVRZlo1OHE5dGtiZGhwNHFKOVhnSGFxSmotMXZaTURpTHd2aF9hUnNOM0dkZUtyeDV2a0lhVHdjNXZEUk92Zw?oc=5",
-          "source": "Telediario",
-          "date": "2026-11-08",
-          "published_at": "2026-11-08T20:54:00Z",
-          "category": "Seguridad",
-          "borough": "Iztapalapa",
-          "location": "Iztapalapa (mencionada en el titular)",
-          "local_url": "/noticias/?id=899d994c4efbf8700a65&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con Telediario, el titular publicado es: «¡Ni la Virgen se salva! Sujetos roban figura de la Virgen de Guadalupe en Iztapalapa; tenía 35 años ahí | VIDEO». La información publicada por Telediario aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
-            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "seguridad",
-            "kind": "representativa",
-            "url": "/assets/fotos/seguridad.jpg",
-            "category": "Seguridad",
-            "borough": "",
-            "topic": "Patrulla de Ciudad de México",
-            "keywords": [
-              "Seguridad"
-            ],
-            "author": "RainerRowe",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.es",
-            "source": "https://commons.wikimedia.org/wiki/File:Patrulla_cdmx.jpg"
           }
         }
       ]
@@ -16012,8 +16132,41 @@
     },
     {
       "name": "Tlalpan",
-      "count": 227,
+      "count": 228,
       "articles": [
+        {
+          "title": "Video | Denuncian Robo en Estacionamiento de Calzada de Tlalpan, CDMX",
+          "description": "De acuerdo con N+, el titular publicado es: «Video | Denuncian Robo en Estacionamiento de Calzada de Tlalpan, CDMX». La información publicada por N+ aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOem91TFdkNEZOcW9OaHRFUjJSTU9HeW00U0YwVHQzQk9SMVVyeEl6azd3QU9kTUJ5SThHaDA1X25VdWFmQ0FXdGNWaklqNUY0Y00wTFlXN3huRnM1QnZCSS1lWTM3V0E4eUIxNTF6WWstNzRmdmJlUnpXa3JSUWtRMGZKTkNiX0NXUUxRel9tR2U1eWZoektnNjFseGtCSmZlV0RiaTY4LURRSEtKaGJpbEhtS0xySi1CZ2lHNXBfdUl1TTR4?oc=5",
+          "source": "N+",
+          "date": "2026-11-13",
+          "published_at": "2026-11-14T01:18:17Z",
+          "category": "Seguridad",
+          "borough": "Tlalpan",
+          "location": "Tlalpan (mencionada en el titular)",
+          "local_url": "/noticias/?id=f18b3e808c03875343f0&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con N+, el titular publicado es: «Video | Denuncian Robo en Estacionamiento de Calzada de Tlalpan, CDMX». La información publicada por N+ aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "archivo_seguridad_004",
+            "kind": "representativa",
+            "url": "/assets/fotos/archivo_seguridad_004.jpg",
+            "category": "Seguridad",
+            "borough": "",
+            "topic": "Adquisición patrullas para la Policía 01",
+            "keywords": [
+              "Seguridad"
+            ],
+            "author": "Gobierno de la Ciudad de México",
+            "license": "CC BY 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Adquisici%C3%B3n_patrullas_para_la_Polic%C3%ADa_01.jpg"
+          }
+        },
         {
           "title": "Rescatan a perrita por presunto maltrato animal en Tlalpan - Ahora Noticias",
           "description": "De acuerdo con Howl.Link, el titular publicado es: «Rescatan a perrita por presunto maltrato animal en Tlalpan - Ahora Noticias». La información publicada por Howl.Link aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -16885,74 +17038,6 @@
             "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
             "source": "https://commons.wikimedia.org/wiki/File:Ciudad_Universitaria_(Marcha_por_la_paz)_-_panoramio.jpg"
           }
-        },
-        {
-          "title": "¿Por qué está bloqueada Calzada de Tlalpan hoy 11 de noviembre?",
-          "description": "De acuerdo con El Heraldo de México, el titular publicado es: «¿Por qué está bloqueada Calzada de Tlalpan hoy 11 de noviembre?». La información publicada por El Heraldo de México aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPNFYtMFZPbThpeTF4ODJncXBWNXcwd1FjdFFIQzg5UExodDkxMzNKanJIcEpZQjl6MjdCZUN4UUZNWXEyM1J2Q19GMERwcXlXOF9CZDM5N0xqMHlPWC1sR01lV0hCanJkY2FtcmdpYl9CU2NYV3JmZ2x3ZVhNYlZVUzlwX1F4SnRQWG0tZGJMMkt0Z0xiQ3h3dFdwZl9WdnFRNzVaVWp6T2c0X1FpQl81U0hTcWg5NkN5ZzY2dmN2STM2YkU?oc=5",
-          "source": "El Heraldo de México",
-          "date": "2026-11-11",
-          "published_at": "2026-11-11T15:51:41Z",
-          "category": "CDMX",
-          "borough": "Tlalpan",
-          "location": "Tlalpan (mencionada en el titular)",
-          "local_url": "/noticias/?id=a5f7cdb8f6c2b72f79c4&mes=2026-11",
-          "alternate_versions": [
-            {
-              "title": "¿Por qué está bloqueada Calzada de Tlalpan hoy 11 de noviembre?",
-              "description": "De acuerdo con El Heraldo de México, el titular publicado es: «¿Por qué está bloqueada Calzada de Tlalpan hoy 11 de noviembre?». La información publicada por El Heraldo de México aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-              "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPNFYtMFZPbThpeTF4ODJncXBWNXcwd1FjdFFIQzg5UExodDkxMzNKanJIcEpZQjl6MjdCZUN4UUZNWXEyM1J2Q19GMERwcXlXOF9CZDM5N0xqMHlPWC1sR01lV0hCanJkY2FtcmdpYl9CU2NYV3JmZ2x3ZVhNYlZVUzlwX1F4SnRQWG0tZGJMMkt0Z0xiQ3h3dFdwZl9WdnFRNzVaVWp6T2c0X1FpQl81U0hTcWg5NkN5ZzY2dmN2STM2YkU?oc=5",
-              "source": "El Heraldo de México",
-              "date": "2026-11-11",
-              "published_at": "2026-11-11T15:51:41Z",
-              "category": "CDMX",
-              "borough": "Tlalpan",
-              "location": "Tlalpan (mencionada en el titular)",
-              "local_url": "/noticias/?id=a5f7cdb8f6c2b72f79c4&mes=2026-11",
-              "brief": {
-                "lead": "De acuerdo con El Heraldo de México, el titular publicado es: «¿Por qué está bloqueada Calzada de Tlalpan hoy 11 de noviembre?». La información publicada por El Heraldo de México aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-                "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-                "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-              },
-              "photo": {
-                "id": "commons_16240276",
-                "kind": "representativa",
-                "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Cacerolazo_contra_la_violencia_-_Ciudad_de_M%C3%A9xico_-_2.jpg/960px-Cacerolazo_contra_la_violencia_-_Ciudad_de_M%C3%A9xico_-_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-                "category": "CDMX",
-                "borough": "",
-                "topic": "Cacerolazo contra la violencia - Ciudad de México - 2",
-                "keywords": [
-                  "Ángel de la Independencia Ciudad de México"
-                ],
-                "author": "ProtoplasmaKid",
-                "license": "CC BY-SA 3.0",
-                "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-                "source": "https://commons.wikimedia.org/wiki/File:Cacerolazo_contra_la_violencia_-_Ciudad_de_M%C3%A9xico_-_2.jpg"
-              }
-            }
-          ],
-          "brief": {
-            "lead": "De acuerdo con El Heraldo de México, el titular publicado es: «¿Por qué está bloqueada Calzada de Tlalpan hoy 11 de noviembre?». La información publicada por El Heraldo de México aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "commons_16240276",
-            "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Cacerolazo_contra_la_violencia_-_Ciudad_de_M%C3%A9xico_-_2.jpg/960px-Cacerolazo_contra_la_violencia_-_Ciudad_de_M%C3%A9xico_-_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "category": "CDMX",
-            "borough": "",
-            "topic": "Cacerolazo contra la violencia - Ciudad de México - 2",
-            "keywords": [
-              "Ángel de la Independencia Ciudad de México"
-            ],
-            "author": "ProtoplasmaKid",
-            "license": "CC BY-SA 3.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Cacerolazo_contra_la_violencia_-_Ciudad_de_M%C3%A9xico_-_2.jpg"
-          }
         }
       ]
     },
@@ -16962,17 +17047,18 @@
       "articles": [
         {
           "title": "Mueren dos motociclistas tras chocar contra una camioneta en Venustiano Carranza",
-          "description": "De acuerdo con El Sol de México, el titular publicado es: «Mueren dos motociclistas tras chocar contra una camioneta en Venustiano Carranza». De acuerdo con El Sol de México, se informa de un hecho vial relacionado con una motocicleta en Venustiano Carranza. El propio titular señala más de un fallecimiento, sin que esta ficha agregue cifras ni identidades. Se requiere consultar la nota original para conocer el punto exacto, las circunstancias y los reportes oficiales, sin atribuir responsabilidades sin pruebas.",
+          "description": "De acuerdo con La Prensa, el titular publicado es: «Mueren dos motociclistas tras chocar contra una camioneta en Venustiano Carranza». De acuerdo con La Prensa, se informa de un hecho vial relacionado con una motocicleta en Venustiano Carranza. El propio titular señala más de un fallecimiento, sin que esta ficha agregue cifras ni identidades. Se requiere consultar la nota original para conocer el punto exacto, las circunstancias y los reportes oficiales, sin atribuir responsabilidades sin pruebas.",
           "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNYlEtZER2b0lMSXRrLTNzYTdweEk1ZTRSdm5xX2dtWFFIU04tUWRya0VtNWd0UUJiVndhM2V3UzJlYjJ3Z192Yks0b0ZNSnBvbXJiZmlUeGw5V2FKczRETC11VWtQSk5Oc1FHdFVDUTZFMExlZUhFQVdlN1ZtSElsMjNKVEtQZGt2S2Rvd2J2WUFtMkdmZUNUZENQbVpQWWxockk2MmRNTFZJMmF2elYzc05NNHpSN3RKYXdPMkhGblVYV2t1NEs4?oc=5",
-          "source": "El Sol de México",
+          "source": "La Prensa",
           "date": "2026-11-13",
           "published_at": "2026-11-13T20:05:22Z",
           "category": "Movilidad",
           "borough": "Venustiano Carranza",
           "location": "Venustiano Carranza (mencionada en el titular)",
           "local_url": "/noticias/?id=48ad03698ec605252a33&mes=2026-11",
+          "source_url": "https://oem.com.mx/la-prensa/policiaca/mueren-dos-motociclistas-tras-chocar-contra-una-camioneta-en-venustiano-carranza-33118910",
           "brief": {
-            "lead": "De acuerdo con El Sol de México, el titular publicado es: «Mueren dos motociclistas tras chocar contra una camioneta en Venustiano Carranza». De acuerdo con El Sol de México, se informa de un hecho vial relacionado con una motocicleta en Venustiano Carranza. El propio titular señala más de un fallecimiento, sin que esta ficha agregue cifras ni identidades. Se requiere consultar la nota original para conocer el punto exacto, las circunstancias y los reportes oficiales, sin atribuir responsabilidades sin pruebas.",
+            "lead": "De acuerdo con La Prensa, el titular publicado es: «Mueren dos motociclistas tras chocar contra una camioneta en Venustiano Carranza». De acuerdo con La Prensa, se informa de un hecho vial relacionado con una motocicleta en Venustiano Carranza. El propio titular señala más de un fallecimiento, sin que esta ficha agregue cifras ni identidades. Se requiere consultar la nota original para conocer el punto exacto, las circunstancias y los reportes oficiales, sin atribuir responsabilidades sin pruebas.",
             "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
             "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
