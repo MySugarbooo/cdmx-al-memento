@@ -2974,5 +2974,51 @@ class CurrentEditorialPhotoRegressionTests(unittest.TestCase):
 
 
 
+    def test_delivery_neighbor_threat_story_rejects_graduation_and_traffic_police_photos(self):
+        title = "De amenazas con pistola a destrozos: ¿qué pasó entre repartidores y vecinos en CDMX?"
+        article = self.make_article(title, category="Seguridad", source="El Economista")
+        graduation = self.photo("commons_75245989")
+        traffic_control = self.photo("commons_48010489")
+        patrol = self.photo("archivo_seguridad_002")
+        self.assertIsNotNone(graduation)
+        self.assertIsNotNone(traffic_control)
+        self.assertIsNotNone(patrol)
+        self.assertIn("Graduación", graduation["topic"])
+        self.assertIn("semáforo", traffic_control["topic"])
+        self.assertIn("Patrulla vecinal", patrol["topic"])
+
+        self.assertLess(_photo_score(article, graduation), 0)
+        self.assertLess(_photo_score(article, traffic_control), 0)
+        self.assertGreaterEqual(_photo_score(article, patrol), 0)
+        with patch.object(photos, "_pool", return_value=[graduation, traffic_control, patrol]):
+            assign_photos([article])
+        self.assertEqual(article["photo"]["id"], "archivo_seguridad_002")
+        self.assertTrue(article["photo"]["author"])
+        self.assertTrue(article["photo"]["license"])
+        self.assertTrue(article["photo"]["licenseUrl"])
+
+
+    def test_vuelca_automovil_rejects_madero_landmark_and_uses_traffic_context(self):
+        title = "Vuelca Automóvil y Deja una Persona Herida en la Colonia Vicente Guerrero, Iztapalapa"
+        article = self.make_article(title, category="Movilidad", source="N+")
+        madero = self.photo("commons_82750992")
+        traffic = self.photo("contexto_trafico_eje_central")
+        self.assertEqual(article["borough"], "Iztapalapa")
+        self.assertIsNotNone(madero)
+        self.assertIsNotNone(traffic)
+        self.assertIn("Avenida Francisco I. Madero", madero["topic"])
+        self.assertIn("Tráfico vehicular", traffic["topic"])
+
+        self.assertLess(_photo_score(article, madero), 0)
+        self.assertGreaterEqual(_photo_score(article, traffic), 0)
+        with patch.object(photos, "_pool", return_value=[madero, traffic]):
+            assign_photos([article])
+        self.assertEqual(article["photo"]["id"], "contexto_trafico_eje_central")
+        self.assertTrue(article["photo"]["author"])
+        self.assertTrue(article["photo"]["license"])
+        self.assertTrue(article["photo"]["licenseUrl"])
+
+
+
 if __name__ == "__main__":
     unittest.main()
