@@ -111,6 +111,11 @@ class PublicSeoTests(unittest.TestCase):
         self.assertIn("routeIndex?.routes?.[id]", script)
         self.assertIn("'/archivo/'+archiveMonth+'.json'", script)
 
+    def test_moved_story_prefers_its_verified_direct_source_url(self):
+        script = (Path(__file__).resolve().parent.parent / "assets" / "noticias-locales.js").read_text(encoding="utf-8")
+        self.assertIn("article.source_url||article.url", script)
+        self.assertIn("www.hoytamaulipas.net", script)
+
     def test_sitemap_requires_unique_same_domain_urls(self):
         xml = (
             '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
