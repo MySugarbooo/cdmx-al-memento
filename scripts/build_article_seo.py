@@ -20,6 +20,8 @@ VERIFIED_SOURCE_LINKS = {
         "https://oem.com.mx/la-prensa/policiaca/detienen-a-otro-presunto-maltratador-de-animales-en-tlalpan-33095643",
     ("La Prensa", "/noticias/?id=48ad03698ec605252a33&mes=2026-11"):
         "https://oem.com.mx/la-prensa/policiaca/mueren-dos-motociclistas-tras-chocar-contra-una-camioneta-en-venustiano-carranza-33118910",
+    ("Sociedad Noticias", "/noticias/?id=edc8b9a3e45a18bf29ed&mes=2026-11"):
+        "https://sociedad-noticias.com/2026/11/14/mueren-dos-motociclistas-tras-accidente-vial-en-venustiano-carranza/",
     ("Ahora Noticias", "/noticias/?id=b06fd20ab5be9a500323&mes=2026-11"):
         "https://ahoranoticias.com.mx/nacional/rescatan-a-perrita-por-presunto-maltrato-animal-en-tlalpan/",
     ("Infobae", "/noticias/?id=086a68086514ac4b9e44&mes=2026-11"):
