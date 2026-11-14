@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-14 04:18 UTC",
+  "updated": "2026-11-14 04:37 UTC",
   "boroughs": [
     {
       "name": "La Magdalena Contreras",
@@ -79,27 +79,6 @@
           "borough": "La Magdalena Contreras",
           "location": "La Magdalena Contreras (mencionada en el titular)",
           "local_url": "/noticias/?id=b7a1cd85217deda4cafd&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con Quadratín México, el titular publicado es: «Cae sujeto que asaltaba mujeres en taxi y moto en Magdalena Contreras». Una nota de Quadratín México comunica un caso relacionado con una detención o una presunta conducta delictiva en La Magdalena Contreras. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
-            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
-            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "archivo_seguridad_005",
-            "kind": "representativa",
-            "url": "/assets/fotos/archivo_seguridad_005.jpg",
-            "category": "Seguridad",
-            "borough": "",
-            "topic": "Jeep policia cdmx",
-            "keywords": [
-              "Seguridad"
-            ],
-            "author": "Gobierno de la Ciudad de México",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Jeep_policia_cdmx.jpg"
-          },
           "alternate_versions": [
             {
               "title": "Cae sujeto que asaltaba mujeres en taxi y moto en Magdalena Contreras",
@@ -152,7 +131,28 @@
                 "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
               }
             }
-          ]
+          ],
+          "brief": {
+            "lead": "De acuerdo con Quadratín México, el titular publicado es: «Cae sujeto que asaltaba mujeres en taxi y moto en Magdalena Contreras». Una nota de Quadratín México comunica un caso relacionado con una detención o una presunta conducta delictiva en La Magdalena Contreras. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
+            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "archivo_seguridad_005",
+            "kind": "representativa",
+            "url": "/assets/fotos/archivo_seguridad_005.jpg",
+            "category": "Seguridad",
+            "borough": "",
+            "topic": "Jeep policia cdmx",
+            "keywords": [
+              "Seguridad"
+            ],
+            "author": "Gobierno de la Ciudad de México",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Jeep_policia_cdmx.jpg"
+          }
         },
         {
           "title": "Cae sujeto señalado por asaltos violentos contra mujeres en Magdalena Contreras",
@@ -6637,27 +6637,6 @@
           "borough": "Cuajimalpa de Morelos",
           "location": "Cuajimalpa de Morelos (mencionada en el titular)",
           "local_url": "/noticias/?id=2b954366eaef5008f7ca&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con El Sol de México, el titular publicado es: «Destaca Cuajimalpa primer lugar en eficiencia policial: presenta alcalde avances en seguridad y obra pública». La información publicada por El Sol de México aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
-            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "archivo_seguridad_003",
-            "kind": "representativa",
-            "url": "/assets/fotos/archivo_seguridad_003.jpg",
-            "category": "Seguridad",
-            "borough": "",
-            "topic": "Adquisición patrullas para la Policía 02",
-            "keywords": [
-              "Seguridad"
-            ],
-            "author": "Gobierno de la Ciudad de México",
-            "license": "CC BY 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Adquisici%C3%B3n_patrullas_para_la_Polic%C3%ADa_02.jpg"
-          },
           "alternate_versions": [
             {
               "title": "Destaca Cuajimalpa primer lugar en eficiencia policial: presenta alcalde avances en seguridad y obra pública",
@@ -6692,7 +6671,28 @@
                 "source": "https://commons.wikimedia.org/wiki/File:Patrulla_vecinal.jpg"
               }
             }
-          ]
+          ],
+          "brief": {
+            "lead": "De acuerdo con El Sol de México, el titular publicado es: «Destaca Cuajimalpa primer lugar en eficiencia policial: presenta alcalde avances en seguridad y obra pública». La información publicada por El Sol de México aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "archivo_seguridad_003",
+            "kind": "representativa",
+            "url": "/assets/fotos/archivo_seguridad_003.jpg",
+            "category": "Seguridad",
+            "borough": "",
+            "topic": "Adquisición patrullas para la Policía 02",
+            "keywords": [
+              "Seguridad"
+            ],
+            "author": "Gobierno de la Ciudad de México",
+            "license": "CC BY 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Adquisici%C3%B3n_patrullas_para_la_Polic%C3%ADa_02.jpg"
+          }
         },
         {
           "title": "Destaca Cuajimalpa primer lugar en eficiencia policial: presenta alcalde avances en seguridad y obra pública",
