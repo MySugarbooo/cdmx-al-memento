@@ -1309,7 +1309,10 @@ def editorial_event_key(article):
     if article.get("date") == "2026-11-14" and (
         (
             source == "tv azteca"
-            and "marchas y concentraciones" in title
+            and (
+                "marchas y concentraciones" in title
+                or "marchas cdmx en vivo" in title
+            )
             and "sabado 14 de noviembre" in title
         )
         or (
