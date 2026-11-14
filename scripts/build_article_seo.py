@@ -18,6 +18,8 @@ VERIFIED_SOURCE_LINKS = {
         "https://oem.com.mx/elsoldesanjuandelrio/policiaca/toma-precauciones-si-viajas-a-la-cdmx-autopista-57-esta-detenida-33095499",
     ("La Prensa", "/noticias/?id=00c19362c5f0468f82b1&mes=2026-11"):
         "https://oem.com.mx/la-prensa/policiaca/detienen-a-otro-presunto-maltratador-de-animales-en-tlalpan-33095643",
+    ("La Prensa", "/noticias/?id=48ad03698ec605252a33&mes=2026-11"):
+        "https://oem.com.mx/la-prensa/policiaca/mueren-dos-motociclistas-tras-chocar-contra-una-camioneta-en-venustiano-carranza-33118910",
     ("Infobae", "/noticias/?id=086a68086514ac4b9e44&mes=2026-11"):
         "https://www.infobae.com/mexico/2026/11/12/detienen-a-presunto-abusador-sexual-de-animales-en-situacion-de-calle-en-cdmx-activistas-piden-que-las-investigaciones-lleguen-a-fondo/",
     ("Infobae", "/noticias/?id=8e02d29b62c66ba3eff6&mes=2026-11"):
