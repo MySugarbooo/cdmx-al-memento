@@ -22,7 +22,7 @@ from pathlib import Path
 from zoneinfo import ZoneInfo
 
 from scripts.analisis_editorial import build_editorial
-from scripts.notas_locales import local_link, summarize, assign_photos, _photo_score, is_sensitive_media, is_coyotepec_highway_crash, INFOBAE_COYOTEPEC_HIGHWAY_CRASH_SOURCE_URL, is_san_juan_del_rio_autopista57_closure, SENSITIVE_MEDIA_TITLE, SAN_JUAN_DEL_RIO_AUTOPISTA57_SOURCE_URL, is_infobae_tlalpan_animal_abuse, is_la_prensa_tlalpan_animal_case, INFOBAE_TLALPAN_ANIMAL_SOURCE_URL, LA_PRENSA_TLALPAN_ANIMAL_SOURCE_URL, is_imagen_tlalpan_dog_rescue, is_huixtla_migrant_caravan, is_vc_fatal_trailer_incident, EL_GRAFICO_VC_TRAILER_SOURCE_URL, is_infobae_ballet_zapatilla, INFOBAE_BALLET_ZAPATILLA_SOURCE_URL, is_infobae_maria_leon_concert, INFOBAE_MARIA_LEON_CONCERT_SOURCE_URL, is_pulque_barbacoa_fair, is_mauricio_tabe_fifth_report, SDPNOTICIAS_MAURICIO_TABE_REPORT_SOURCE_URL, is_radio_formula_casa_ecologica, RADIO_FORMULA_CASA_ECOLOGICA_SOURCE_URL, is_capital_cdmx_care_budget, CAPITAL_CDMX_CARE_BUDGET_SOURCE_URL, is_la_jornada_aicm_flight_suspension, AICM_FLIGHT_SUSPENSION_SOURCE_URL
+from scripts.notas_locales import local_link, summarize, assign_photos, _photo_score, is_sensitive_media, is_coyotepec_highway_crash, INFOBAE_COYOTEPEC_HIGHWAY_CRASH_SOURCE_URL, is_san_juan_del_rio_autopista57_closure, SENSITIVE_MEDIA_TITLE, SAN_JUAN_DEL_RIO_AUTOPISTA57_SOURCE_URL, is_infobae_tlalpan_animal_abuse, is_la_prensa_tlalpan_animal_case, INFOBAE_TLALPAN_ANIMAL_SOURCE_URL, LA_PRENSA_TLALPAN_ANIMAL_SOURCE_URL, is_imagen_tlalpan_dog_rescue, is_huixtla_migrant_caravan, is_vc_fatal_trailer_incident, EL_GRAFICO_VC_TRAILER_SOURCE_URL, is_infobae_ballet_zapatilla, INFOBAE_BALLET_ZAPATILLA_SOURCE_URL, is_infobae_maria_leon_concert, INFOBAE_MARIA_LEON_CONCERT_SOURCE_URL, is_pulque_barbacoa_fair, is_mauricio_tabe_fifth_report, SDPNOTICIAS_MAURICIO_TABE_REPORT_SOURCE_URL, is_radio_formula_casa_ecologica, RADIO_FORMULA_CASA_ECOLOGICA_SOURCE_URL, is_capital_cdmx_care_budget, CAPITAL_CDMX_CARE_BUDGET_SOURCE_URL, is_la_jornada_aicm_flight_suspension, AICM_FLIGHT_SUSPENSION_SOURCE_URL, is_elsol_women_defensive_driving_workshop, EL_SOL_MUJERES_DEFENSIVE_DRIVING_SOURCE_URL
 
 ROOT = Path(__file__).resolve().parent
 DEST = ROOT / "news.json"
@@ -370,6 +370,9 @@ def category_by_headline(title, feed_category, source=""):
         return "Cultura"
     if re.search(r"\b(?:pokemon go|k/da|wild rift|league of legends|riot games)\b", normalized):
         return "Cultura"
+    # Los cursos de manejo defensivo y preventivo son capacitación de movilidad y seguridad vial.
+    if re.search(r"\b(?:manejo defensivo|manejo preventivo|conduccion segura)\b", normalized):
+        return "Movilidad"
     if re.search(r"\b(?:feria (?:del )?empleo|feria de empleo|vacantes?|reclutamiento|bolsa de trabajo)\b", normalized):
         return "Servicios"
     if re.search(r"\b(?:feria de mujeres emprendedoras|mujeres emprendedoras|emprendimiento femenino)\b", normalized):
@@ -701,6 +704,12 @@ def standardize(article):
     except ValueError:
         return None
     borough, location = identify_location(title, date)
+    if is_elsol_women_defensive_driving_workshop({"title": title, "source": source, "date": date}):
+        borough = "Gustavo A. Madero"
+        location = (
+            "Gustavo A. Madero, Ciudad de México "
+            "(alcaldía indicada por El Sol de México; sede exacta no indicada)"
+        )
     if is_infobae_ballet_zapatilla({"title": title, "source": source, "date": date}):
         borough = "Iztacalco"
         location = (
@@ -811,6 +820,8 @@ def standardize(article):
         result["source_url"] = RADIO_FORMULA_CASA_ECOLOGICA_SOURCE_URL
     elif is_la_jornada_aicm_flight_suspension(result):
         result["source_url"] = AICM_FLIGHT_SUSPENSION_SOURCE_URL
+    elif is_elsol_women_defensive_driving_workshop(result):
+        result["source_url"] = EL_SOL_MUJERES_DEFENSIVE_DRIVING_SOURCE_URL
     if is_hoy_tamaulipas_paty_chio_assembly(result):
         result["source_url"] = HOY_TAMAULIPAS_PATTY_CHIO_SOURCE_URL
     versions = article.get("alternate_versions")
