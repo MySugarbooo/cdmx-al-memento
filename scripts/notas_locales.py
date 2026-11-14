@@ -1522,7 +1522,7 @@ def _photo_category(article):
     # aunque el titular mencione la celebración de Día de Muertos.
     if re.search(r"\boperativos? de seguridad\b", headline):
         return "Seguridad"
-    if re.search(r"\b(?:detienen|arrestan|capturan|aprehenden)\s+a\s+(?:\d+|un|una|dos|tres|cuatro|cinco|seis|personas|hombres|mujeres)\b", headline):
+    if re.search(r"\b(?:caen\s+(?:\d+|un|una|dos|tres|cuatro|cinco|seis)|(?:detienen|arrestan|capturan|aprehenden)\s+a\s+(?:\d+|un|una|dos|tres|cuatro|cinco|seis|personas|hombres|mujeres))\b", headline):
         return "Seguridad"
     if re.search(r"\b(?:secuestro|secuestrador(?:es)?|secuestrad[oa]s?|privacion de la libertad)\b", headline):
         return "Seguridad"
@@ -1740,8 +1740,8 @@ STRICT_PHOTO_TOPICS = (
      r"\b(?:policias?|patrullas?|vigilancia|seguridad|operativo|agentes?)\b"),
     # Para detenciones de personas, una plaza de la misma alcaldía no basta.
     # En un operativo del Gran Premio también es pertinente el autódromo.
-    (r"^(?!.*\b(?:gp de mexico|gran premio|formula 1|autodromo)\b).*\b(?:detienen|arrestan|capturan|aprehenden)\s+a\s+(?:\d+|un|una|dos|tres|cuatro|cinco|seis|personas|hombres|mujeres)\b",
-     r"\b(?:fiscalia|justicia|tribunal|detencion|investigacion penal|operativo policial|ministerio publico)\b"),
+    (r"^(?!.*\b(?:gp de mexico|gran premio|formula 1|autodromo)\b).*\b(?:caen\s+(?:\d+|un|una|dos|tres|cuatro|cinco|seis)|(?:detienen|arrestan|capturan|aprehenden)\s+a\s+(?:\d+|un|una|dos|tres|cuatro|cinco|seis|personas|hombres|mujeres))\b",
+     r"^(?!.*\b(?:graduacion|ceremonia|entrega|adquisicion|nuevas? patrullas?)\b)(?=.*\b(?:fiscalia|justicia|tribunal|detencion|investigacion penal|operativo policial|ministerio publico|patrullas?)\b)"),
     (r"\bempleo de mujeres\b",
      r"\b(?:empleo|trabajo|mujeres|oficinas?|economia|trabajadoras?)\b"),
     (r"\bmorena\b.*\b(?:militantes|reunio|asamblea)\b",

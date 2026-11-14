@@ -586,7 +586,7 @@ def category_by_headline(title, feed_category, source=""):
     # Una detención de personas es seguridad, aunque el RSS venga de Gobierno.
     # Exigir "a" y una referencia humana evita confundirla con obras detenidas.
     if (feed_category in {"Gobierno", "CDMX"}
-            and re.search(r"\b(?:detienen|arrestan|capturan|aprehenden)\s+a\s+(?:\d+|un|una|dos|tres|cuatro|cinco|seis|siete|ocho|nueve|diez|varios|varias|hombre|mujer|sujeto|individuo|persona|joven|menor|personas|hombres|mujeres)\b", normalized)):
+            and re.search(r"\b(?:caen\s+(?:\d+|un|una|dos|tres|cuatro|cinco|seis|siete|ocho|nueve|diez|varios|varias|hombres|mujeres|personas)|(?:detienen|arrestan|capturan|aprehenden)\s+a\s+(?:\d+|un|una|dos|tres|cuatro|cinco|seis|siete|ocho|nueve|diez|varios|varias|hombre|mujer|sujeto|individuo|persona|joven|menor|personas|hombres|mujeres))\b", normalized)):
         return "Seguridad"
     # Una ley de movilidad es un asunto vial aunque el RSS la clasifique como Seguridad.
     if re.search(r"\bley de movilidad\b", normalized):

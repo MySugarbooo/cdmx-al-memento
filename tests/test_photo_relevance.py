@@ -36,6 +36,29 @@ class PhotoRelevanceTests(unittest.TestCase):
         self.assertEqual(category_by_headline(
             "Policía utiliza robot para investigar un robo", "Seguridad"), "Seguridad")
 
+    def test_caen_drug_arrest_rejects_police_graduation_and_accepts_patrol_context(self):
+        title = "Caen tres hombres con 15 kilos de mariguana y más de 650 dosis de cocaína en Venustiano Carranza"
+        article = {"title": title, "category": "CDMX", "borough": "Venustiano Carranza"}
+        self.assertEqual(category_by_headline(title, "CDMX"), "Seguridad")
+        self.assertEqual(_photo_category(article), "Seguridad")
+        graduation = representative_photo(
+            "commons_75245851", "Seguridad",
+            "Graduación de la Policía de la Ciudad de México -i---i- (37066129081)",
+            ["Policía Ciudad de México"],
+        )
+        patrol = representative_photo(
+            "patrulla_cdmx", "Seguridad", "Patrulla de Ciudad de México", ["Seguridad"]
+        )
+        self.assertLess(_photo_score(article, graduation), 0)
+        self.assertGreaterEqual(_photo_score(article, patrol), 0)
+        article["photo"] = deepcopy(graduation)
+        with patch.object(photos, "_pool", return_value=[graduation, patrol]), patch.object(
+            photos, "_load", return_value=[]
+        ):
+            assign_photos([article])
+        self.assertEqual(article["photo"]["id"], "patrulla_cdmx")
+        self.assertEqual(article["photo"]["kind"], "representativa")
+
     def test_womens_defensive_driving_workshop_has_verified_mobility_location_and_summary(self):
         title = "Ofrecen taller gratuito de manejo defensivo y preventivo para mujeres en CDMX"
         article = news.standardize({
