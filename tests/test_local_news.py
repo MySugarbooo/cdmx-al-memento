@@ -1370,7 +1370,7 @@ class LocalNewsTests(unittest.TestCase):
             "url":"https://news.google.com/rss/articles/animal-rights-march","source":"El Sol de México",
             "date":"2026-11-14","published_at":"2026-11-14T18:00:00Z","category":"CDMX"})
         self.assertIsNotNone(article)
-        self.assertEqual(article["category"],"Medio Ambiente")
+        self.assertEqual(article["category"],"CDMX")
         self.assertEqual(article["source_url"],"https://oem.com.mx/elsoldemexico/metropoli/marchan-en-cdmx-contra-el-especismo-y-la-discriminacion-animal-33134742")
         self.assertIn("sujetos de derechos",article["brief"]["lead"].lower())
         self.assertNotIn("jornada de movilidad",article["brief"]["lead"].lower())
@@ -1386,8 +1386,8 @@ class LocalNewsTests(unittest.TestCase):
         self.assertEqual(article["location"],"Tláhuac, Ciudad de México (sede exacta no indicada)")
 
     def test_editorial_category_rules_for_weather_and_air_quality(self):
-        self.assertEqual(category_by_headline("Activan Alerta Amarilla por frío en CDMX para este domingo 15 de noviembre","CDMX"),"Medio Ambiente")
-        self.assertEqual(category_by_headline("¿En dónde se respira el peor oxígeno en CDMX y zona conurbada?","CDMX"),"Medio Ambiente")
+        self.assertEqual(category_by_headline("Activan Alerta Amarilla por frío en CDMX para este domingo 15 de noviembre","CDMX"),"CDMX")
+        self.assertEqual(category_by_headline("¿En dónde se respira el peor oxígeno en CDMX y zona conurbada?","CDMX"),"CDMX")
 
 if __name__=="__main__":
     unittest.main()

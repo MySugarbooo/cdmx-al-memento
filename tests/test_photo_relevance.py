@@ -3178,7 +3178,7 @@ class EditorialContextPhotoRegressionTests(unittest.TestCase):
 
     def test_animal_rights_march_replaces_rainwater_photo_with_animal_archive_photo(self):
         self.assert_replaced("Marchan en CDMX contra el especismo y la discriminación animal",
-                             "Medio Ambiente", "commons_152180159", "contexto_perros_parque_espana")
+                             "CDMX", "commons_152180159", "contexto_perros_parque_espana")
 
     def test_tlalpan_homicide_replaces_bosque_animals_with_police_context(self):
         self.assert_replaced("Cae presunto cómplice de crimen del exlíder sindical en Tlalpan",
@@ -3186,11 +3186,11 @@ class EditorialContextPhotoRegressionTests(unittest.TestCase):
 
     def test_cold_alert_replaces_rain_operation_with_winter_archive_photo(self):
         self.assert_replaced("Activan Alerta Amarilla por frío en CDMX para este domingo 15 de noviembre",
-                             "Medio Ambiente", "commons_75241743", "contexto_invierno_zocalo_2011")
+                             "CDMX", "commons_75241743", "contexto_invierno_zocalo_2011")
 
     def test_air_quality_story_replaces_pharmacy_with_smog_archive_photo(self):
         self.assert_replaced("¿En dónde se respira el peor oxígeno en CDMX y zona conurbada? Aquí el reporte",
-                             "Medio Ambiente", "contexto_farmacia_santa_maria_ribera_2022", "contexto_smog_cdmx_2010")
+                             "CDMX", "contexto_farmacia_santa_maria_ribera_2022", "contexto_smog_cdmx_2010")
 
     def test_atole_fair_replaces_dancers_with_atole_archive_photo(self):
         self.assert_replaced("Feria del Atole 2026 en Tláhuac: fechas, sabores y actividades",
@@ -3207,10 +3207,10 @@ class EditorialContextPhotoRegressionTests(unittest.TestCase):
 
     def test_editorial_categories_match_the_subject_of_each_photo(self):
         cases=(
-            ("Marchan en CDMX contra el especismo y la discriminación animal","CDMX","Medio Ambiente"),
+            ("Marchan en CDMX contra el especismo y la discriminación animal","CDMX","CDMX"),
             ("Cae presunto cómplice de crimen del exlíder sindical en Tlalpan","CDMX","Seguridad"),
-            ("Activan Alerta Amarilla por frío en CDMX para este domingo 15 de noviembre","CDMX","Medio Ambiente"),
-            ("¿En dónde se respira el peor oxígeno en CDMX y zona conurbada?","CDMX","Medio Ambiente"),
+            ("Activan Alerta Amarilla por frío en CDMX para este domingo 15 de noviembre","CDMX","CDMX"),
+            ("¿En dónde se respira el peor oxígeno en CDMX y zona conurbada?","CDMX","CDMX"),
             ("Feria del Atole 2026 en Tláhuac: fechas, sabores y actividades","CDMX","Cultura"),
         )
         for title,feed_category,expected in cases:

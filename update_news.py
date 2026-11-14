@@ -372,14 +372,14 @@ def category_by_headline(title, feed_category, source=""):
         normalized,
     ):
         return "Seguridad"
-    # Los temas de derechos animales, calidad del aire y alertas por frío son Medio Ambiente.
+    # La taxonomía pública no tiene categoría ambiental independiente; estos avisos permanecen en CDMX.
     if re.search(
         r"\b(?:especismo|discriminacion animal|derechos de los animales|bienestar animal|"
         r"calidad del aire|peor oxigeno|oxigeno en cdmx|contaminacion atmosferica|smog|"
         r"alerta amarilla.{0,40}frio)\b",
         normalized,
     ):
-        return "Medio Ambiente"
+        return "CDMX"
     if re.search(r"\bferia del atole\b", normalized):
         return "Cultura"
     # Categorías editoriales que el RSS ha heredado de forma incorrecta.
@@ -1164,7 +1164,7 @@ def photo_needs_refresh(item):
 
 
 def prioritize_photo_refresh(items, limit=24):
-    """Atiende primero las tres fotografías incongruentes confirmadas en la revisión."""
+    """Atiende primero las fotografías incongruentes confirmadas en la revisión."""
     priority_prefixes = (
         "repartidores anuncian dos bloqueos estrategicos",
         "presupuesto de cuidados 2027",
