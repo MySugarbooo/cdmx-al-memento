@@ -339,10 +339,11 @@
       "keywords": [
         "SEMOVI",
         "Secretaría de Movilidad",
-        "licencias",
         "licencia de conducir",
-        "trámites",
+        "licencia permanente",
+        "trámite vehicular",
         "control vehicular",
+        "examen de manejo",
         "oficinas",
         "colonia Roma"
       ],
@@ -498,6 +499,57 @@
       "uploaded_at": "2025-05-30",
       "context": "Imagen de carácter ilustrativo y referencial; no constituye evidencia gráfica de la feria de mujeres emprendedoras de Iztacalco.",
       "adaptation": "Retrato de una empresaria; se utiliza como referencia del emprendimiento femenino, no como fotografía de la feria de Iztacalco."
+    },
+    {
+      "id": "contexto_publicidad_edificios_condesa_2013",
+      "kind": "representativa",
+      "category": "Gobierno",
+      "topic": "Anuncios publicitarios en fachadas de edificios, colonia Condesa Hipódromo, CDMX (2013); imagen representativa, no documenta a las empresas ni sus permisos.",
+      "file": "Advertising on the side of buildings, col. Condesa Hipódromo, Condesa, Mexico City.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Advertising_on_the_side_of_buildings%2C_col._Condesa_Hip%C3%B3dromo%2C_Condesa%2C_Mexico_City.jpg/960px-Advertising_on_the_side_of_buildings%2C_col._Condesa_Hip%C3%B3dromo%2C_Condesa%2C_Mexico_City.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+      "source": "https://commons.wikimedia.org/wiki/File:Advertising_on_the_side_of_buildings,_col._Condesa_Hip%C3%B3dromo,_Condesa,_Mexico_City.jpg",
+      "author": "Keizers",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "keywords": [
+        "publicidad exterior",
+        "anuncios publicitarios",
+        "anuncios en edificios",
+        "publicidad en fachadas",
+        "espectaculares",
+        "anuncios en fachadas",
+        "Condesa",
+        "Ciudad de México"
+      ],
+      "captured_at": "2013-08-18",
+      "uploaded_at": "2013-10-03",
+      "context": "Imagen de carácter ilustrativo y referencial; no documenta las empresas identificadas ni el estado de sus licencias.",
+      "adaptation": "Fotografía de anuncios en fachadas de edificios en la colonia Condesa Hipódromo, tomada en 2013; no muestra a las empresas mencionadas en la noticia."
+    },
+    {
+      "id": "contexto_pokemon_go_bench_2016",
+      "kind": "representativa",
+      "category": "Cultura",
+      "topic": "Persona jugando Pokémon GO en un banco de parque, Alemania (2016); imagen representativa del juego, no corresponde a actividad en CDMX.",
+      "file": "Playing Pokémon Go on a bench.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Playing_Pok%C3%A9mon_Go_on_a_bench.jpg/960px-Playing_Pok%C3%A9mon_Go_on_a_bench.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+      "source": "https://commons.wikimedia.org/wiki/File:Playing_Pok%C3%A9mon_Go_on_a_bench.jpg",
+      "author": "Monika P",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "keywords": [
+        "Pokémon GO",
+        "Pokémon Go",
+        "juego móvil",
+        "juegos móviles",
+        "realidad aumentada",
+        "smartphone",
+        "jugadores con celular"
+      ],
+      "captured_at": "2016-08-04",
+      "uploaded_at": "2023-04-27",
+      "context": "Imagen de carácter ilustrativo y referencial; no muestra la actividad ni los ingresos de Pokémon GO en Ciudad de México.",
+      "adaptation": "Fotografía de archivo de una persona jugando Pokémon GO en Alemania; no documenta la actividad en CDMX."
     }
   ]
 }

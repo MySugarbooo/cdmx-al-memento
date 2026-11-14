@@ -2394,10 +2394,10 @@ class CurrentFeedEditorialPhotoRegressionTests(unittest.TestCase):
         self.assert_photo_replaced(
             title, "Movilidad", "commons_80021377", "contexto_aicm_aviones_pista_2026")
 
-    def test_pokemon_go_story_replaces_market_with_representative_video_game_photo(self):
+    def test_pokemon_go_story_replaces_market_with_specific_gameplay_photo(self):
         self.assert_photo_replaced(
             "Pokémon Go genera 420,000 dólares en CDMX y muestra que México es un mercado clave para el juego",
-            "Cultura", "commons_75214598", "contexto_consolas_videojuegos_2026")
+            "Cultura", "commons_75214598", "contexto_pokemon_go_bench_2016")
 
     def test_garbage_story_replaces_treasury_hall_with_concert_photo(self):
         self.assert_photo_replaced(
@@ -2560,5 +2560,48 @@ class CurrentEditorialPhotoRegressionTests(unittest.TestCase):
                     self.assertTrue(photo.get("context", "").startswith(
                         "Imagen de carácter ilustrativo y referencial;"
                     ))
+
+    def test_advertising_license_story_rejects_semovi_photo_and_uses_building_ads(self):
+        title = "Hay 17 empresas de publicidad sin licencia en CDMX: Metrópolis"
+        article = self.make_article(title, category="Gobierno", source="El Universal")
+        semovi = self.photo("contexto_semovi_oficinas_roma_2022")
+        advertising = self.photo("contexto_publicidad_edificios_condesa_2013")
+        self.assertIsNotNone(semovi)
+        self.assertIsNotNone(advertising)
+        self.assertLess(_photo_score(article, semovi), 0)
+        self.assertGreaterEqual(_photo_score(article, advertising), 0)
+        assign_photos([article])
+        self.assertEqual(article["photo"]["id"], "contexto_publicidad_edificios_condesa_2013")
+        self.assertEqual(article["photo"]["author"], "Keizers")
+        self.assertEqual(article["photo"]["license"], "CC BY-SA 3.0")
+
+    def test_pokemon_go_story_rejects_console_photo_and_uses_gameplay_photo(self):
+        title = "Pokémon Go genera 420,000 dólares en CDMX y muestra que México es un mercado clave para el juego"
+        article = self.make_article(title, category="Cultura", source="Expansión")
+        consoles = self.photo("contexto_consolas_videojuegos_2026")
+        gameplay = self.photo("contexto_pokemon_go_bench_2016")
+        self.assertIsNotNone(consoles)
+        self.assertIsNotNone(gameplay)
+        self.assertLess(_photo_score(article, consoles), 0)
+        self.assertGreaterEqual(_photo_score(article, gameplay), 0)
+        assign_photos([article])
+        self.assertEqual(article["photo"]["id"], "contexto_pokemon_go_bench_2016")
+        self.assertEqual(article["photo"]["author"], "Monika P")
+        self.assertEqual(article["photo"]["license"], "CC0 1.0")
+
+    def test_contextual_photo_credits_are_merged_into_public_credit_catalog(self):
+        data = json.loads((REPO_ROOT / "assets/fotos/contexto-tematico.json").read_text(encoding="utf-8"))
+        photos = {item["id"]: item for item in data["photos"]}
+        for photo_id in ("contexto_publicidad_edificios_condesa_2013", "contexto_pokemon_go_bench_2016"):
+            photo = photos.get(photo_id)
+            self.assertIsNotNone(photo)
+            self.assertTrue(photo["author"])
+            self.assertTrue(photo["license"])
+            self.assertTrue(photo["licenseUrl"].startswith("https://creativecommons.org/"))
+            self.assertTrue(photo["source"].startswith("https://commons.wikimedia.org/wiki/File:"))
+        loader = (REPO_ROOT / "assets/creditos.js").read_text(encoding="utf-8")
+        self.assertIn("/assets/fotos/contexto-tematico.json", loader)
+        self.assertIn("new Map", loader)
+
 if __name__ == "__main__":
     unittest.main()

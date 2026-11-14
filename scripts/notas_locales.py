@@ -1738,6 +1738,9 @@ STRICT_PHOTO_TOPICS = (
     # Los trámites de licencias y control vehicular requieren contexto de SEMOVI o conducción.
     (r"\b(?:licencia permanente|licencia de conducir|modulos? de licencias?|tramites? de licencias?)\b",
      r"\b(?:licencia(?:s)? de conducir|licencia permanente|modulos? de licencias?|tramite vehicular|semovi|control vehicular|examen de manejo|secretaria de movilidad|oficinas? de la secretaria de movilidad)\b"),
+    # La publicidad exterior requiere anuncios en fachadas; una oficina de SEMOVI no es contexto.
+    (r"\b(?:empresas? de publicidad|publicidad exterior|anuncios? publicitarios?|anuncios? en edificios?|espectaculares?)\b",
+     r"\b(?:publicidad exterior|anuncios? publicitarios?|anuncios? en edificios?|publicidad en fachadas|espectaculares?|advertising on the side of buildings)\b"),
     # Un ranking de seguridad de una alcaldía no se ilustra con un teatro o monumento.
     (r"\b(?:alcaldia mas segura|segunda alcaldia mas segura|mas segura de cdmx|ranking de seguridad)\b",
      r"\b(?:patrullas?|policias?|camaras? de vigilancia|vigilancia policial|seguridad ciudadana)\b"),
@@ -1803,9 +1806,9 @@ STRICT_PHOTO_TOPICS = (
     # La banda Garbage requiere una foto de concierto o música en vivo.
     (r"\b(?:garbage|shirley manson)\b",
      r"\b(?:conciertos?|musica en vivo|bandas?|escenarios?|rock|cantantes?|festivales?|auditorios?|estadios?)\b"),
-    # Pokémon Go requiere contexto de videojuegos, no una fotografía de mercado.
+    # Pokémon Go es un juego móvil; una consola genérica no basta como contexto.
     (r"\bpokemon go\b",
-     r"\b(?:pokemon|videojuegos?|consolas?|juegos? moviles?|realidad aumentada|jugadores? con celular)\b"),
+     r"\b(?:pokemon go|juegos? moviles?|smartphone|realidad aumentada|jugadores? con celular)\b"),
     # Las afectaciones de vuelos requieren aviones o instalaciones aeroportuarias.
     (r"\b(?:aeropuerto|aicm)\b.*\b(?:vuelos?|afectaciones?|salidas?|llegadas?)\b",
      r"\b(?:aeropuertos?|aviones?|aeronaves?|aviacion|terminal aeroportuaria|pista de aterrizaje|aicm|terminal 1|terminal 2)\b"),
