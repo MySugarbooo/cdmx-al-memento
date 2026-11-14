@@ -492,6 +492,11 @@ def _reported_angle(article):
         return (f"La información que publica {source} analiza diferencias en la asistencia "
                 "a eventos culturales por género. Para saber qué significa esta tendencia "
                 "hacen falta los periodos, encuestas y metodología de la fuente.")
+    if re.search(r"\b(?:obras? de teatro|cartelera teatral|funciones? de teatro)\b", t):
+        period = " en noviembre" if "noviembre" in t else ""
+        return (f"La nota de {source} reúne recomendaciones de obras de teatro para ver "
+                f"en Ciudad de México{period}. La ficha no detalla títulos, sedes, horarios "
+                "ni disponibilidad; conviene consultar la cartelera original antes de asistir.")
     if "concierto" in t:
         return (f"El medio {source} presenta conciertos o actividades musicales anunciadas "
                 "en Ciudad de México. La programación, disponibilidad y costos pueden "
@@ -1347,6 +1352,9 @@ def _photo_category(article):
     # "Poner en marcha" un programa no describe una marcha o protesta vial.
     headline=re.sub(r"\b(?:pone|ponen|puso|poner|puesta|entra|entro|entrara)\s+en\s+marcha\b",
                     "activa", headline)
+    # Las recomendaciones de obras teatrales pertenecen a Cultura.
+    if re.search(r"\b(?:obras? de teatro|cartelera teatral|funciones? de teatro)\b", headline):
+        return "Cultura"
     # Los conciertos y las notas sobre cantantes pertenecen a Cultura.
     if re.search(r"\b(?:cantantes?|cantautores?|gira musical|canciones? ineditas|musica en vivo|teatro metropolitan|garbage|shirley manson)\b", headline):
         return "Cultura"
@@ -1853,6 +1861,16 @@ def _photo_score(article, photo):
     topic=re.sub(r"\bno\b[^;.)]*", "", topic)
     keywords=_photo_fold(" ".join(str(x) for x in photo.get("keywords",[])))
     context=topic+" "+keywords
+    theater_story = bool(re.search(
+        r"\b(?:obras? de teatro|cartelera teatral|funciones? de teatro)\b", headline
+    ))
+    theater_photo = bool(re.search(
+        r"\b(?:teatros?|obras? teatrales?|cartelera teatral|escenario teatral|actores?|actrices?|dramaturgia)\b",
+        context,
+    ))
+    # Una cartelera teatral no se ilustra con una maceta o un monumento cultural genérico.
+    if theater_story and not theater_photo:
+        return -10000
     # Una nota sobre el modelo de seguridad de Saltillo no debe ilustrarse
     # con patrullas de otra alcaldía de CDMX. Sin foto contextual de Saltillo,
     # es preferible no mostrar imagen antes que sugerir un operativo distinto.
@@ -2740,6 +2758,8 @@ def _photo_score(article, photo):
         score+=120
     if music_story and music_photo:
         score+=120
+    if theater_story and theater_photo:
+        score+=160
     if weather_story and weather_photo:
         score+=80
     if motorcycle_story and motorcycle_photo:
