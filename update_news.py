@@ -1112,6 +1112,7 @@ def consolidate_archive(new_items, cutoff, updated):
     by_month = defaultdict(list)
     by_borough = defaultdict(list)
     route_aliases = {}
+    comment_month_aliases = {}
     for item in existing.values():
         archive_month = str(item.get("date") or "")[:7]
         by_month[archive_month].append(item)
@@ -1121,10 +1122,13 @@ def consolidate_archive(new_items, cutoff, updated):
         )
         if route and route.group(2) != archive_month:
             route_aliases[route.group(1)] = archive_month
+            comment_month_aliases[route.group(1)] = route.group(2)
         if item["borough"]:
             by_borough[item["borough"]].append(item)
     write_json(ARCHIVE_DIR / "rutas.json", {
-        "updated": updated, "routes": route_aliases
+        "updated": updated,
+        "routes": route_aliases,
+        "comment_months": comment_month_aliases,
     })
     for filename in ARCHIVE_DIR.glob("????-??.json"):
         if filename.stem not in by_month:

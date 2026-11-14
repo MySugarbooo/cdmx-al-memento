@@ -936,6 +936,7 @@ class BoroughAndArchiveTests(unittest.TestCase):
                 route_id = saved["articles"][0]["local_url"].split("id=", 1)[1].split("&", 1)[0]
                 routes = json.loads((archive / "rutas.json").read_text(encoding="utf-8"))
                 self.assertEqual(routes["routes"][route_id], "2025-12")
+                self.assertEqual(routes["comment_months"][route_id], "2026-11")
                 self.assertEqual(months[0]["month"], "2025-12")
 
     def test_older_than_365_days_expires_even_within_month(self):

@@ -35,7 +35,20 @@ try{
  auth=mod.getAuth(app);db=fs.getFirestore(app);
  await mod.getRedirectResult(auth);
 }catch(e){status.textContent='No se pudo conectar el servicio de comentarios. Inténtalo más tarde.';login.hidden=true;return;}
-const collection=isCommunity?fs.collection(db,'community','main','comments'):fs.collection(db,'articles',month+'_'+id,'comments');
+let commentsMonth=month;
+if(!isCommunity){
+ try{
+  const routeResponse=await fetch('/archivo/rutas.json',{cache:'no-store'});
+  if(routeResponse.ok){
+   const routeIndex=await routeResponse.json();
+   const originalMonth=routeIndex?.comment_months?.[id];
+   if(/^20\d\d-(0[1-9]|1[0-2])$/.test(originalMonth||''))commentsMonth=originalMonth;
+  }
+ }catch(error){
+  console.warn('No se pudo resolver el mes original de los comentarios:',error);
+ }
+}
+const collection=isCommunity?fs.collection(db,'community','main','comments'):fs.collection(db,'articles',commentsMonth+'_'+id,'comments');
 // Foro compatible con las reglas actuales: preguntas y respuestas usan el campo text.
 // Formato: [FORO:PREGUNTA] título\\ncontenido o [FORO:RESPUESTA:ID] contenido.
 const questionPrefix='[FORO:PREGUNTA] ',replyPrefix='[FORO:RESPUESTA:';
