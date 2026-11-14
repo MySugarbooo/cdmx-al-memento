@@ -1829,7 +1829,7 @@ STRICT_PHOTO_TOPICS = (
      r"\b(?:extorsion|carceles?|reclusorios?|centros? penitenciarios?|penitenciarias?|prisiones?|cobro de piso|investigacion penal|fiscalia|ministerio publico)\b"),
     # Un aseguramiento de autopartes exige piezas o instalaciones de autopartes; una entrega de patrullas no basta.
     (r"\b(?:autopartes?|refacciones?|deshuesaderos?)\b",
-     r"\b(?:autopartes?|refacciones?|deshuesaderos?|piezas? de (?:autos?|vehiculos?)|almacen de autopartes|decomiso de autopartes|cateo de autopartes|vehiculos? asegurados|bodega de autopartes|taller de autopartes|desmantelamiento de vehiculos|piezas? de motor)\b"),
+     r"\b(?:autopartes?|refacciones?|deshuesaderos?|piezas? de (?:autos?|vehiculos?)|almacen de autopartes|decomiso de autopartes|cateo de autopartes|vehiculos? asegurados|bodega de autopartes|taller de autopartes|desmantelamiento de vehiculos|piezas? de motor|patrullas?)\b"),
     # Una vinculación a proceso requiere contexto judicial o de investigación, no transporte ni compra de patrullas.
     (r"\b(?:vinculan a proceso|vinculado a proceso|vinculacion a proceso|procesan|proceso penal|audiencia inicial|prision preventiva)\b",
      r"\b(?:juzgad[oa]s?|tribunales?|fiscalia|ministerio publico|audiencias?|reclusorios?|centros? penitenciarios?|prisiones?|carceles?|investigacion penal|carpeta de investigacion|peritos?|escena del crimen|sala de juicio|jueces?|imputacion|procesos? judiciales?)\b"),
@@ -2448,6 +2448,17 @@ def _photo_score(article, photo):
             and re.search(r"\b(?:retrasos?|demoras?|caos|avances?|operan|servicio)\b", headline)
             and not re.search(r"\b(?:obras?|construccion|remodelacion)\b", headline)
             and re.search(r"\b(?:obras?|construccion|remodelacion)\b", topic)):
+        return -10000
+    # Una entrega o adquisición de patrullas no ilustra un decomiso de autopartes.
+    autoparts_story = bool(re.search(
+        r"\b(?:autopartes?|refacciones?|deshuesaderos?|piezas? de (?:autos?|vehiculos?))\b",
+        headline,
+    ))
+    patrol_procurement_photo = bool(re.search(
+        r"\b(?:adquisicion|compra|presentacion|entrega|graduacion|ceremonia)\b.{0,60}\b(?:patrullas?|policias?)\b",
+        topic,
+    ))
+    if autoparts_story and patrol_procurement_photo:
         return -10000
     # En titulares en vivo, el texto tras dos puntos puede resumir otros asuntos;
     # para la pertinencia visual se prioriza el hecho principal antes de los dos puntos.
