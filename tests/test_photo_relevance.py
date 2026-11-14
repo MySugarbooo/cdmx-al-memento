@@ -2307,6 +2307,35 @@ class EditorialPhotoMismatchRegressionTests(unittest.TestCase):
             "CDMX prepara reformas para reforzar la seguridad de las construcciones; edificios anteriores a 1985, prioridad",
             "Seguridad", current, candidate)
 
+    def test_saltillo_security_model_rejects_cdmx_patrol_photo(self):
+        article = news.standardize({
+            "title": "Destacan en CDMX modelo de seguridad aplicado en Saltillo",
+            "url": "https://news.google.com/rss/articles/saltillo-security-photo-regression",
+            "source": "El Horizonte",
+            "date": "2026-11-14",
+            "category": "Seguridad",
+            "location": "Ciudad de México (sin alcaldía identificada)",
+        })
+        cdmx_patrol = representative_photo(
+            "commons_157006042",
+            "Seguridad",
+            "Nuevas patrullas para Cuajimalpa 06",
+            ["Secretaría de Seguridad Ciudadana CDMX patrulla"],
+        )
+        saltillo_patrol = representative_photo(
+            "saltillo-police-context",
+            "Seguridad",
+            "Policía Municipal de Saltillo, Coahuila",
+            ["seguridad", "patrullas", "Saltillo"],
+        )
+
+        self.assertLess(_photo_score(article, cdmx_patrol), 0)
+        self.assertGreaterEqual(_photo_score(article, saltillo_patrol), 0)
+        article["photo"] = cdmx_patrol
+        with patch.object(photos, "_pool", return_value=[cdmx_patrol]):
+            assign_photos([article])
+        self.assertNotIn("photo", article)
+
     def test_neto_store_count_replaces_city_panorama_with_grocery_store(self):
         current = representative_photo("panorama-neto", "CDMX",
             "Panorámicas CDMX IMG 4417 Alameda Central", ["Alameda Central", "panorámica", "CDMX"])
