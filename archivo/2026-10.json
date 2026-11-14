@@ -1,6 +1,6 @@
 {
   "month": "2026-10",
-  "updated": "2026-11-14 11:06 UTC",
+  "updated": "2026-11-14 11:31 UTC",
   "articles": [
     {
       "title": "Expropiará el gobierno de la CDMX capitalino tres predios para vivienda pública",
@@ -47021,16 +47021,6 @@
         "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
         "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "archivo_cdmx_013",
-        "url": "/assets/fotos/archivo_cdmx_013.jpg",
-        "category": "CDMX",
-        "borough": "",
-        "topic": "D.F. - panoramio (9)",
-        "author": "eurimaco",
-        "license": "CC BY-SA 3.0",
-        "source": "https://commons.wikimedia.org/wiki/File:D.F._-_panoramio_%289%29.jpg"
       }
     },
     {
@@ -53075,19 +53065,19 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_seguridad_003",
+        "id": "archivo_seguridad_002",
         "kind": "representativa",
-        "url": "/assets/fotos/archivo_seguridad_003.jpg",
+        "url": "/assets/fotos/archivo_seguridad_002.jpg",
         "category": "Seguridad",
         "borough": "",
-        "topic": "Adquisición patrullas para la Policía 02",
+        "topic": "Patrulla vecinal",
         "keywords": [
           "Seguridad"
         ],
-        "author": "Gobierno de la Ciudad de México",
-        "license": "CC BY 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Adquisici%C3%B3n_patrullas_para_la_Polic%C3%ADa_02.jpg"
+        "author": "Daniel Yonka",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Patrulla_vecinal.jpg"
       }
     },
     {
@@ -61641,19 +61631,19 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_seguridad_001",
+        "id": "seguridad",
         "kind": "representativa",
-        "url": "/assets/fotos/archivo_seguridad_001.jpg",
+        "url": "/assets/fotos/seguridad.jpg",
         "category": "Seguridad",
         "borough": "",
-        "topic": "Adquisición patrullas para la Policía 03",
+        "topic": "Patrulla de Ciudad de México",
         "keywords": [
           "Seguridad"
         ],
-        "author": "Gobierno de la Ciudad de México",
-        "license": "CC BY 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Adquisici%C3%B3n_patrullas_para_la_Polic%C3%ADa_03.jpg"
+        "author": "RainerRowe",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.es",
+        "source": "https://commons.wikimedia.org/wiki/File:Patrulla_cdmx.jpg"
       }
     },
     {
@@ -63312,19 +63302,23 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "commons_35376676",
+        "id": "contexto_barbacoa_xochimilco_2026",
         "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/%C2%A1Viva_M%C3%A9xico_en_Xochimilco%21_05.jpg/960px-%C2%A1Viva_M%C3%A9xico_en_Xochimilco%21_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "category": "Alcaldías",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Plato_de_consom%C3%A9_y_tacos_de_barbacoa.jpg/960px-Plato_de_consom%C3%A9_y_tacos_de_barbacoa.jpg",
+        "category": "Cultura",
         "borough": "",
-        "topic": "¡Viva México en Xochimilco! 05",
+        "topic": "Plato de consomé y tacos de barbacoa servido en Xochimilco, Ciudad de México (imagen representativa; no corresponde a la Feria del Pulque y la Barbaco",
         "keywords": [
-          "Xochimilco Ciudad de México"
+          "barbacoa",
+          "tacos de barbacoa",
+          "consomé",
+          "gastronomía mexicana",
+          "feria del pulque y la barbacoa"
         ],
-        "author": "Cristina Zapata Pérez",
+        "author": "ProtoplasmaKid",
         "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:%C2%A1Viva_M%C3%A9xico_en_Xochimilco!_05.jpg"
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.es",
+        "source": "https://commons.wikimedia.org/wiki/File:Plato_de_consom%C3%A9_y_tacos_de_barbacoa.jpg"
       }
     },
     {
@@ -64109,21 +64103,6 @@
         "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
         "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "archivo_seguridad_001",
-        "kind": "representativa",
-        "url": "/assets/fotos/archivo_seguridad_001.jpg",
-        "category": "Seguridad",
-        "borough": "",
-        "topic": "Adquisición patrullas para la Policía 03",
-        "keywords": [
-          "Seguridad"
-        ],
-        "author": "Gobierno de la Ciudad de México",
-        "license": "CC BY 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Adquisici%C3%B3n_patrullas_para_la_Polic%C3%ADa_03.jpg"
       }
     },
     {
@@ -67007,19 +66986,23 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "commons_157049684",
+        "id": "contexto_barbacoa_xochimilco_2026",
         "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Sheinbaum_reconstrucci%C3%B3n_de_edificios_en_Benito_Ju%C3%A1rez_16.jpg/960px-Sheinbaum_reconstrucci%C3%B3n_de_edificios_en_Benito_Ju%C3%A1rez_16.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "category": "Alcaldías",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Plato_de_consom%C3%A9_y_tacos_de_barbacoa.jpg/960px-Plato_de_consom%C3%A9_y_tacos_de_barbacoa.jpg",
+        "category": "Cultura",
         "borough": "",
-        "topic": "Sheinbaum reconstrucción de edificios en Benito Juárez 16",
+        "topic": "Plato de consomé y tacos de barbacoa servido en Xochimilco, Ciudad de México (imagen representativa; no corresponde a la Feria del Pulque y la Barbaco",
         "keywords": [
-          "Benito Juárez alcaldía Ciudad de México"
+          "barbacoa",
+          "tacos de barbacoa",
+          "consomé",
+          "gastronomía mexicana",
+          "feria del pulque y la barbacoa"
         ],
-        "author": "Gobierno de la Ciudad de México",
-        "license": "CC BY 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Sheinbaum_reconstrucci%C3%B3n_de_edificios_en_Benito_Ju%C3%A1rez_16.jpg"
+        "author": "ProtoplasmaKid",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.es",
+        "source": "https://commons.wikimedia.org/wiki/File:Plato_de_consom%C3%A9_y_tacos_de_barbacoa.jpg"
       }
     },
     {
@@ -70960,21 +70943,6 @@
         "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
         "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "commons_46687561",
-        "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Vistas_de_la_Ciudad_de_M%C3%A9xico_desde_la_Torre_Latinoamericana_02.JPG/960px-Vistas_de_la_Ciudad_de_M%C3%A9xico_desde_la_Torre_Latinoamericana_02.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "category": "CDMX",
-        "borough": "",
-        "topic": "Vistas de la Ciudad de México desde la Torre Latinoamericana 02",
-        "keywords": [
-          "Torre Latinoamericana Ciudad de México"
-        ],
-        "author": "Luisalvaz",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Vistas_de_la_Ciudad_de_M%C3%A9xico_desde_la_Torre_Latinoamericana_02.JPG"
       }
     },
     {
@@ -72875,18 +72843,6 @@
         "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
         "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "alcaldia_tlahuac",
-        "kind": "representativa",
-        "url": "/assets/alcaldias/tlahuac.jpg",
-        "category": "CDMX",
-        "borough": "Tláhuac",
-        "topic": "Plaza central de San Pedro Tláhuac",
-        "author": "Yavidaxiu",
-        "license": "CC BY 3.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Tl%C3%A1huac-Plaza_central.JPG"
       }
     },
     {
@@ -73551,21 +73507,6 @@
         "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
         "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "commons_153703415",
-        "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Ciudad_de_M%C3%A9xico_-_Colonia_Centro_6984.jpg/960px-Ciudad_de_M%C3%A9xico_-_Colonia_Centro_6984.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "category": "CDMX",
-        "borough": "",
-        "topic": "Ciudad de México - Colonia Centro 6984",
-        "keywords": [
-          "Centro Histórico Ciudad de México"
-        ],
-        "author": "Phyrexian",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Ciudad_de_M%C3%A9xico_-_Colonia_Centro_6984.jpg"
       }
     },
     {
@@ -79868,21 +79809,6 @@
         "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
         "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "commons_80020584",
-        "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Iglesia_de_San_Juan_Bautista_en_Coyoac%C3%A1n_Ciudad_de_M%C3%A9xico.jpg/960px-Iglesia_de_San_Juan_Bautista_en_Coyoac%C3%A1n_Ciudad_de_M%C3%A9xico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "category": "CDMX",
-        "borough": "",
-        "topic": "Iglesia de San Juan Bautista en Coyoacán Ciudad de México",
-        "keywords": [
-          "CDMX"
-        ],
-        "author": "Juan Carlos Fonseca Mata",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Iglesia_de_San_Juan_Bautista_en_Coyoac%C3%A1n_Ciudad_de_M%C3%A9xico.jpg"
       }
     },
     {
@@ -85488,18 +85414,6 @@
         "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
         "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "alcaldia_tlahuac",
-        "kind": "representativa",
-        "url": "/assets/alcaldias/tlahuac.jpg",
-        "category": "CDMX",
-        "borough": "Tláhuac",
-        "topic": "Plaza central de San Pedro Tláhuac",
-        "author": "Yavidaxiu",
-        "license": "CC BY 3.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Tl%C3%A1huac-Plaza_central.JPG"
       }
     },
     {
@@ -88805,19 +88719,23 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "commons_75144669",
+        "id": "contexto_barbacoa_xochimilco_2026",
         "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Museo_de_Arte_Moderno_DSC0188_%2835518673316%29.jpg/960px-Museo_de_Arte_Moderno_DSC0188_%2835518673316%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Plato_de_consom%C3%A9_y_tacos_de_barbacoa.jpg/960px-Plato_de_consom%C3%A9_y_tacos_de_barbacoa.jpg",
         "category": "Cultura",
         "borough": "",
-        "topic": "Museo de Arte Moderno DSC0188 (35518673316)",
+        "topic": "Plato de consomé y tacos de barbacoa servido en Xochimilco, Ciudad de México (imagen representativa; no corresponde a la Feria del Pulque y la Barbaco",
         "keywords": [
-          "Museo de Arte Moderno Ciudad de México"
+          "barbacoa",
+          "tacos de barbacoa",
+          "consomé",
+          "gastronomía mexicana",
+          "feria del pulque y la barbacoa"
         ],
-        "author": "Gobierno CDMX",
-        "license": "CC0",
-        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
-        "source": "https://commons.wikimedia.org/wiki/File:Museo_de_Arte_Moderno_DSC0188_(35518673316).jpg"
+        "author": "ProtoplasmaKid",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.es",
+        "source": "https://commons.wikimedia.org/wiki/File:Plato_de_consom%C3%A9_y_tacos_de_barbacoa.jpg"
       }
     },
     {
@@ -96269,16 +96187,6 @@
         "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
         "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "archivo_cdmx_003",
-        "url": "/assets/fotos/archivo_cdmx_003.jpg",
-        "category": "CDMX",
-        "borough": "",
-        "topic": "D.F. - panoramio (7)",
-        "author": "eurimaco",
-        "license": "CC BY-SA 3.0",
-        "source": "https://commons.wikimedia.org/wiki/File:D.F._-_panoramio_%287%29.jpg"
       }
     },
     {
@@ -97807,16 +97715,6 @@
         "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
         "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "archivo_cdmx_019",
-        "url": "/assets/fotos/archivo_cdmx_019.jpg",
-        "category": "CDMX",
-        "borough": "",
-        "topic": "El Paraguas (126505121)",
-        "author": "Octavio Alonso Maya Castro",
-        "license": "CC BY-SA 3.0",
-        "source": "https://commons.wikimedia.org/wiki/File:El_Paraguas_%28126505121%29.jpeg"
       }
     },
     {
@@ -101408,21 +101306,6 @@
         "context": "La actividad cultural abre oportunidades de encuentro, aprendizaje y disfrute para habitantes y visitantes.",
         "pending": "Los accesos, boletos, sedes, cupos y horarios deben consultarse con la institución organizadora. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "commons_114051297",
-        "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Coro_de_la_Catedral_metropolitana_de_la_Ciudad_de_M%C3%A9xico_09.jpg/960px-Coro_de_la_Catedral_metropolitana_de_la_Ciudad_de_M%C3%A9xico_09.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "category": "CDMX",
-        "borough": "",
-        "topic": "Coro de la Catedral metropolitana de la Ciudad de México 09",
-        "keywords": [
-          "Catedral Metropolitana Ciudad de México"
-        ],
-        "author": "Luis Alvaz",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Coro_de_la_Catedral_metropolitana_de_la_Ciudad_de_M%C3%A9xico_09.jpg"
       }
     },
     {
@@ -102141,21 +102024,6 @@
         "context": "Los cambios en este sistema pueden afectar los horarios, las conexiones y la planeación de los viajes cotidianos.",
         "pending": "El estado operativo, las estaciones y las alternativas de traslado deben comprobarse en los avisos actuales del Metro. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "archivo_seguridad_005",
-        "kind": "representativa",
-        "url": "/assets/fotos/archivo_seguridad_005.jpg",
-        "category": "Seguridad",
-        "borough": "",
-        "topic": "Jeep policia cdmx",
-        "keywords": [
-          "Seguridad"
-        ],
-        "author": "Gobierno de la Ciudad de México",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Jeep_policia_cdmx.jpg"
       }
     },
     {
@@ -108046,14 +107914,23 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_cultura_001",
-        "url": "/assets/fotos/archivo_cultura_001.jpg",
+        "id": "contexto_barbacoa_xochimilco_2026",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Plato_de_consom%C3%A9_y_tacos_de_barbacoa.jpg/960px-Plato_de_consom%C3%A9_y_tacos_de_barbacoa.jpg",
         "category": "Cultura",
         "borough": "",
-        "topic": "PALACIO DE BELLAS ARTES, CIUDAD DE MEXICO.",
-        "author": "Acuentacuentos",
-        "license": "CC BY-SA 3.0",
-        "source": "https://commons.wikimedia.org/wiki/File:PALACIO_DE_BELLAS_ARTES%2C_CIUDAD_DE_MEXICO..jpg"
+        "topic": "Plato de consomé y tacos de barbacoa servido en Xochimilco, Ciudad de México (imagen representativa; no corresponde a la Feria del Pulque y la Barbaco",
+        "keywords": [
+          "barbacoa",
+          "tacos de barbacoa",
+          "consomé",
+          "gastronomía mexicana",
+          "feria del pulque y la barbacoa"
+        ],
+        "author": "ProtoplasmaKid",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.es",
+        "source": "https://commons.wikimedia.org/wiki/File:Plato_de_consom%C3%A9_y_tacos_de_barbacoa.jpg"
       }
     },
     {
@@ -109434,16 +109311,6 @@
         "context": "Los cambios en este sistema pueden afectar los horarios, las conexiones y la planeación de los viajes cotidianos.",
         "pending": "El estado operativo, las estaciones y las alternativas de traslado deben comprobarse en los avisos actuales del Metro. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "archivo_metro_008",
-        "url": "/assets/fotos/archivo_metro_008.jpg",
-        "category": "Metro",
-        "borough": "",
-        "topic": "Estación Pino Suárez de la Línea 1 del Metro de la Ciudad de México 04",
-        "author": "ProtoplasmaKid",
-        "license": "CC BY-SA 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Estaci%C3%B3n_Pino_Su%C3%A1rez_de_la_L%C3%ADnea_1_del_Metro_de_la_Ciudad_de_M%C3%A9xico_04.jpg"
       }
     },
     {
@@ -112405,16 +112272,6 @@
         "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
         "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "alcaldia_iztapalapa",
-        "url": "/assets/alcaldias/iztapalapa.jpg",
-        "category": "CDMX",
-        "borough": "Iztapalapa",
-        "topic": "Vista de Iztapalapa desde el Cerro de la Estrella",
-        "author": "Secretaría de Cultura Ciudad de México from México",
-        "license": "CC BY 2.0",
-        "source": "https://commons.wikimedia.org/wiki/File:MX_MM_MUSEO_CERRO_DE_LA_ESTRELLA_%2849522225751%29.jpg"
       }
     },
     {
@@ -131662,19 +131519,19 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "archivo_seguridad_010",
+        "id": "commons_157006039",
         "kind": "representativa",
-        "url": "/assets/fotos/archivo_seguridad_010.jpg",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Nuevas_patrullas_para_Cuajimalpa_03.jpg/960px-Nuevas_patrullas_para_Cuajimalpa_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
         "category": "Seguridad",
         "borough": "",
-        "topic": "Entrega Claudia Sheinbaum 113 nuevas patrullas en Gustavo A Madero 04",
+        "topic": "Nuevas patrullas para Cuajimalpa 03",
         "keywords": [
-          "Seguridad"
+          "Secretaría de Seguridad Ciudadana CDMX patrulla"
         ],
         "author": "Gobierno de la Ciudad de México",
         "license": "CC BY 4.0",
         "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Entrega_Claudia_Sheinbaum_113_nuevas_patrullas_en_Gustavo_A_Madero_04.jpg"
+        "source": "https://commons.wikimedia.org/wiki/File:Nuevas_patrullas_para_Cuajimalpa_03.jpg"
       }
     },
     {
@@ -136980,19 +136837,23 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "commons_75144641",
+        "id": "contexto_barbacoa_xochimilco_2026",
         "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Museo_de_Arte_Moderno_DSC0166_%2835557668335%29.jpg/960px-Museo_de_Arte_Moderno_DSC0166_%2835557668335%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Plato_de_consom%C3%A9_y_tacos_de_barbacoa.jpg/960px-Plato_de_consom%C3%A9_y_tacos_de_barbacoa.jpg",
         "category": "Cultura",
         "borough": "",
-        "topic": "Museo de Arte Moderno DSC0166 (35557668335)",
+        "topic": "Plato de consomé y tacos de barbacoa servido en Xochimilco, Ciudad de México (imagen representativa; no corresponde a la Feria del Pulque y la Barbaco",
         "keywords": [
-          "Museo de Arte Moderno Ciudad de México"
+          "barbacoa",
+          "tacos de barbacoa",
+          "consomé",
+          "gastronomía mexicana",
+          "feria del pulque y la barbacoa"
         ],
-        "author": "Gobierno CDMX",
-        "license": "CC0",
-        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
-        "source": "https://commons.wikimedia.org/wiki/File:Museo_de_Arte_Moderno_DSC0166_(35557668335).jpg"
+        "author": "ProtoplasmaKid",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.es",
+        "source": "https://commons.wikimedia.org/wiki/File:Plato_de_consom%C3%A9_y_tacos_de_barbacoa.jpg"
       }
     },
     {
