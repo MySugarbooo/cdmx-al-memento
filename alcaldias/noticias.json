@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-14 01:51 UTC",
+  "updated": "2026-11-14 02:55 UTC",
   "boroughs": [
     {
       "name": "La Magdalena Contreras",
@@ -4868,32 +4868,42 @@
         },
         {
           "title": "Acaba el año con trabajo: INEGI abrió vacantes en alcaldía Benito Juárez, CDMX, con salario de 22 mil 867 pesos",
-          "description": "De acuerdo con ADN 40, el titular publicado es: «Acaba el año con trabajo: INEGI abrió vacantes en alcaldía Benito Juárez, CDMX, con salario de 22 mil 867 pesos». La información publicada por ADN 40 aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "description": "De acuerdo con ADN 40, el titular publicado es: «Acaba el año con trabajo: INEGI abrió vacantes en alcaldía Benito Juárez, CDMX, con salario de 22 mil 867 pesos». La información publicada por ADN 40 aborda un asunto que este portal clasifica como Servicios. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
           "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNRHFGdi05c0hyeEhvQ0lRaWNKRE1TMlZIQk5zRnhKTTZITzZZWDRrZjRHaXNtRlc2MC1rRlhiT3haVUtIVmpMajI3NlhBbHFpMGdmckZlTVRLaTRfVzVPckFlaVJsWnFpenF2Z05mYVRvMnhsZndiYkhrMTR1VjFSZUJTQ19NTjhmbFFHQmhwZnB3WjQ1cGJnb2dmUjdVM25jYmxzRFdYaEgtVjJubVVhZzE4bTgzYzItR1BtZjYxZDJ1eWxTOFBJTm9fZUdHQnVUS0ZkY2RxQThsbl9hbVNvOFhB?oc=5",
           "source": "ADN 40",
           "date": "2026-11-05",
           "published_at": "2026-11-05T19:08:45Z",
-          "category": "CDMX",
+          "category": "Servicios",
           "borough": "Benito Juárez",
           "location": "Benito Juárez (mencionada en el titular)",
           "local_url": "/noticias/?id=9990e9a4609225ed2d9a&mes=2026-11",
           "brief": {
-            "lead": "De acuerdo con ADN 40, el titular publicado es: «Acaba el año con trabajo: INEGI abrió vacantes en alcaldía Benito Juárez, CDMX, con salario de 22 mil 867 pesos». La información publicada por ADN 40 aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "lead": "De acuerdo con ADN 40, el titular publicado es: «Acaba el año con trabajo: INEGI abrió vacantes en alcaldía Benito Juárez, CDMX, con salario de 22 mil 867 pesos». La información publicada por ADN 40 aborda un asunto que este portal clasifica como Servicios. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           },
           "photo": {
-            "id": "alcaldia_benito-juarez",
+            "id": "contexto_feria_empleo_cdmx_2018",
             "kind": "representativa",
-            "url": "/assets/alcaldias/benito-juarez.jpg",
-            "category": "CDMX",
-            "borough": "Benito Juárez",
-            "topic": "Parque Hundido, alcaldía Benito Juárez",
-            "author": "User:etnoboris",
-            "license": "CC BY-SA 3.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Parque_Hundido.jpeg"
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/37a_Feria_del_Empleo_IMG_8796_%2843942141674%29.jpg/960px-37a_Feria_del_Empleo_IMG_8796_%2843942141674%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "category": "Servicios",
+            "borough": "",
+            "topic": "37a Feria del Empleo (2018), Ciudad de México; foto de archivo representativa, no documenta la feria de Iztapalapa de 2026.",
+            "keywords": [
+              "feria del empleo",
+              "feria de empleo",
+              "empleo",
+              "vacantes",
+              "reclutamiento",
+              "trabajo",
+              "Ciudad de México",
+              "Gobierno CDMX"
+            ],
+            "author": "Gobierno CDMX",
+            "license": "CC0 1.0",
+            "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "source": "https://commons.wikimedia.org/wiki/File:37a_Feria_del_Empleo_IMG_8796_(43942141674).jpg"
           }
         },
         {
@@ -6634,19 +6644,19 @@
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           },
           "photo": {
-            "id": "archivo_seguridad_003",
+            "id": "archivo_seguridad_002",
             "kind": "representativa",
-            "url": "/assets/fotos/archivo_seguridad_003.jpg",
+            "url": "/assets/fotos/archivo_seguridad_002.jpg",
             "category": "Seguridad",
             "borough": "",
-            "topic": "Adquisición patrullas para la Policía 02",
+            "topic": "Patrulla vecinal",
             "keywords": [
               "Seguridad"
             ],
-            "author": "Gobierno de la Ciudad de México",
-            "license": "CC BY 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Adquisici%C3%B3n_patrullas_para_la_Polic%C3%ADa_02.jpg"
+            "author": "Daniel Yonka",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Patrulla_vecinal.jpg"
           },
           "alternate_versions": [
             {
@@ -6667,19 +6677,19 @@
                 "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
               },
               "photo": {
-                "id": "archivo_seguridad_002",
+                "id": "archivo_seguridad_003",
                 "kind": "representativa",
-                "url": "/assets/fotos/archivo_seguridad_002.jpg",
+                "url": "/assets/fotos/archivo_seguridad_003.jpg",
                 "category": "Seguridad",
                 "borough": "",
-                "topic": "Patrulla vecinal",
+                "topic": "Adquisición patrullas para la Policía 02",
                 "keywords": [
                   "Seguridad"
                 ],
-                "author": "Daniel Yonka",
-                "license": "CC BY-SA 4.0",
-                "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-                "source": "https://commons.wikimedia.org/wiki/File:Patrulla_vecinal.jpg"
+                "author": "Gobierno de la Ciudad de México",
+                "license": "CC BY 4.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+                "source": "https://commons.wikimedia.org/wiki/File:Adquisici%C3%B3n_patrullas_para_la_Polic%C3%ADa_02.jpg"
               }
             }
           ]
@@ -9475,7 +9485,7 @@
     },
     {
       "name": "Iztacalco",
-      "count": 129,
+      "count": 130,
       "articles": [
         {
           "title": "Entrega Brugada recursos al Mercado Bramadero de Iztacalco",
@@ -9525,52 +9535,91 @@
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           },
           "photo": {
-            "id": "archivo_seguridad_002",
+            "id": "commons_75214598",
             "kind": "representativa",
-            "url": "/assets/fotos/archivo_seguridad_002.jpg",
-            "category": "Seguridad",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Entrega_del_Mercado_P%C3%BAblico_Cerro_del_Jud%C3%ADo_-i---i-_%2826324408589%29.jpg/960px-Entrega_del_Mercado_P%C3%BAblico_Cerro_del_Jud%C3%ADo_-i---i-_%2826324408589%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "category": "Servicios",
             "borough": "",
-            "topic": "Patrulla vecinal",
+            "topic": "Entrega del Mercado Público Cerro del Judío -i---i- (26324408589)",
             "keywords": [
-              "Seguridad"
+              "Mercados públicos Ciudad de México"
             ],
-            "author": "Daniel Yonka",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Patrulla_vecinal.jpg"
+            "author": "Gobierno CDMX",
+            "license": "CC0",
+            "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+            "source": "https://commons.wikimedia.org/wiki/File:Entrega_del_Mercado_P%C3%BAblico_Cerro_del_Jud%C3%ADo_-i---i-_(26324408589).jpg"
+          }
+        },
+        {
+          "title": "Mercado Bramadero en Iztacalco será el primero conectado al C5; Brugada asegura que todos los mercados tendrán cámaras",
+          "description": "De acuerdo con El Universal, el titular publicado es: «Mercado Bramadero en Iztacalco será el primero conectado al C5; Brugada asegura que todos los mercados tendrán cámaras». La información publicada por El Universal aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxOamttTUpIbTZLa2pIY0YzbTVrVjUtLS1YdjM4ekw4OU4tLVBoNE0xTW50WHBPY0hFc3UyQTJOZklNZGgxSHFvczdTZTdKX21vTTkzZXA0dldHZXJ5dXNCOEtRVXFMSldNdWhYbnhuU1ZRYWxubkUzY21nb3JIbVpiTWV3blVPemlHMVJGaE8wV0xQeG0xSWpRWlJBV0VvR1RrTHpJbi16a1dZSzM3VWxRZFV0QWpVNFA3dzdFODdCcDhseHBaaDBlb3d6ckNNTHB4N2FQNEJqRG1IUE1qN0QwckJjd2pQUTNuRmxHMnROV2d4aUpCVjlENWdaSENnVUhpeTI5eNIBhAJBVV95cUxOamttTUpIbTZLa2pIY0YzbTVrVjUtLS1YdjM4ekw4OU4tLVBoNE0xTW50WHBPY0hFc3UyQTJOZklNZGgxSHFvczdTZTdKX21vTTkzZXA0dldHZXJ5dXNCOEtRVXFMSldNdWhYbnhuU1ZRYWxubkUzY21nb3JIbVpiTWV3blVPemlHMVJGaE8wV0xQeG0xSWpRWlJBV0VvR1RrTHpJbi16a1dZSzM3VWxRZFV0QWpVNFA3dzdFODdCcDhseHBaaDBlb3d6ckNNTHB4N2FQNEJqRG1IUE1qN0QwckJjd2pQUTNuRmxHMnROV2d4aUpCVjlENWdaSENnVUhpeTI5eA?oc=5",
+          "source": "El Universal",
+          "date": "2026-11-13",
+          "published_at": "2026-11-14T01:03:33Z",
+          "category": "Seguridad",
+          "borough": "Iztacalco",
+          "location": "Iztacalco (mencionada en el titular)",
+          "local_url": "/noticias/?id=09713db9e359703e732b&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con El Universal, el titular publicado es: «Mercado Bramadero en Iztacalco será el primero conectado al C5; Brugada asegura que todos los mercados tendrán cámaras». La información publicada por El Universal aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "commons_75214598",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Entrega_del_Mercado_P%C3%BAblico_Cerro_del_Jud%C3%ADo_-i---i-_%2826324408589%29.jpg/960px-Entrega_del_Mercado_P%C3%BAblico_Cerro_del_Jud%C3%ADo_-i---i-_%2826324408589%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "category": "Servicios",
+            "borough": "",
+            "topic": "Entrega del Mercado Público Cerro del Judío -i---i- (26324408589)",
+            "keywords": [
+              "Mercados públicos Ciudad de México"
+            ],
+            "author": "Gobierno CDMX",
+            "license": "CC0",
+            "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+            "source": "https://commons.wikimedia.org/wiki/File:Entrega_del_Mercado_P%C3%BAblico_Cerro_del_Jud%C3%ADo_-i---i-_(26324408589).jpg"
           }
         },
         {
           "title": "Impulsa alcaldía Iztacalco el comercio local con la Feria de Mujeres Emprendedoras",
-          "description": "De acuerdo con El Sol de México, el titular publicado es: «Impulsa alcaldía Iztacalco el comercio local con la Feria de Mujeres Emprendedoras». La información publicada por El Sol de México aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "description": "De acuerdo con El Sol de México, el titular publicado es: «Impulsa alcaldía Iztacalco el comercio local con la Feria de Mujeres Emprendedoras». La información publicada por El Sol de México aborda un asunto que este portal clasifica como Servicios. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
           "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPUW0wMnhGOXBReHYyMmZFTUhsQTdISU0zLVphT0hMYktMRjdyRThOZHppZUNhbVBSUG1JNGJaazU2WE03U0RIZ0M4eDQ2T2V2dVFfNWdxaTllNUR4cWk2MUtzT0NnV3JXekZ5ZXlZalR6RDlWMG5mblo5RFRVX010SEx0VEtKUlBkSWVtRVJIc2VpdW11aEdTVEZtMHg4NldMRE1wc1ptbzZ3T1gtTU5HNWt4M1pzNHR3T3FCQy1aRk9salFmU3NiNm9JeDFGdHc?oc=5",
           "source": "El Sol de México",
           "date": "2026-11-13",
           "published_at": "2026-11-13T21:53:25Z",
-          "category": "CDMX",
+          "category": "Servicios",
           "borough": "Iztacalco",
           "location": "Iztacalco (mencionada en el titular)",
           "local_url": "/noticias/?id=524dc3a3f9b57d7d122e&mes=2026-11",
           "brief": {
-            "lead": "De acuerdo con El Sol de México, el titular publicado es: «Impulsa alcaldía Iztacalco el comercio local con la Feria de Mujeres Emprendedoras». La información publicada por El Sol de México aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "lead": "De acuerdo con El Sol de México, el titular publicado es: «Impulsa alcaldía Iztacalco el comercio local con la Feria de Mujeres Emprendedoras». La información publicada por El Sol de México aborda un asunto que este portal clasifica como Servicios. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           },
           "photo": {
-            "id": "commons_75043274",
+            "id": "contexto_emprendimiento_femenino_2025",
             "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/014783-016_POSADA_EN_PICOS_DE_IZTACALCO_DICIEMBRE_18_1974_%2838896553181%29.jpg/960px-014783-016_POSADA_EN_PICOS_DE_IZTACALCO_DICIEMBRE_18_1974_%2838896553181%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "category": "Alcaldías",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Mujeres_emprendedoras_que_buscan_el_cambio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+            "category": "Servicios",
             "borough": "",
-            "topic": "014783-016 POSADA EN PICOS DE IZTACALCO DICIEMBRE 18 1974 (38896553181)",
+            "topic": "Retrato de una empresaria (29-05-2025); imagen representativa del emprendimiento femenino, no documenta la feria de Iztacalco.",
             "keywords": [
-              "Iztacalco Ciudad de México"
+              "mujeres emprendedoras",
+              "emprendimiento femenino",
+              "empresaria",
+              "emprendedora",
+              "negocios",
+              "comercio local",
+              "microempresa"
             ],
-            "author": "Gobierno CDMX",
-            "license": "CC0",
-            "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
-            "source": "https://commons.wikimedia.org/wiki/File:014783-016_POSADA_EN_PICOS_DE_IZTACALCO_DICIEMBRE_18_1974_(38896553181).jpg"
+            "author": "Luisargom",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "source": "https://commons.wikimedia.org/wiki/File:Mujeres_emprendedoras_que_buscan_el_cambio.jpg"
           },
           "alternate_versions": [
             {
@@ -9601,6 +9650,39 @@
                 "license": "CC BY-SA 3.0",
                 "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
                 "source": "https://commons.wikimedia.org/wiki/File:SanMatiasChurchIztacalco02.jpg"
+              }
+            },
+            {
+              "title": "Impulsa alcaldía Iztacalco el comercio local con la Feria de Mujeres Emprendedoras",
+              "description": "De acuerdo con El Sol de México, el titular publicado es: «Impulsa alcaldía Iztacalco el comercio local con la Feria de Mujeres Emprendedoras». La información publicada por El Sol de México aborda un asunto que este portal clasifica como Servicios. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+              "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPUW0wMnhGOXBReHYyMmZFTUhsQTdISU0zLVphT0hMYktMRjdyRThOZHppZUNhbVBSUG1JNGJaazU2WE03U0RIZ0M4eDQ2T2V2dVFfNWdxaTllNUR4cWk2MUtzT0NnV3JXekZ5ZXlZalR6RDlWMG5mblo5RFRVX010SEx0VEtKUlBkSWVtRVJIc2VpdW11aEdTVEZtMHg4NldMRE1wc1ptbzZ3T1gtTU5HNWt4M1pzNHR3T3FCQy1aRk9salFmU3NiNm9JeDFGdHc?oc=5",
+              "source": "El Sol de México",
+              "date": "2026-11-13",
+              "published_at": "2026-11-13T21:53:25Z",
+              "category": "Servicios",
+              "borough": "Iztacalco",
+              "location": "Iztacalco (mencionada en el titular)",
+              "local_url": "/noticias/?id=524dc3a3f9b57d7d122e&mes=2026-11",
+              "brief": {
+                "lead": "De acuerdo con El Sol de México, el titular publicado es: «Impulsa alcaldía Iztacalco el comercio local con la Feria de Mujeres Emprendedoras». La información publicada por El Sol de México aborda un asunto que este portal clasifica como Servicios. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+                "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+                "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+              },
+              "photo": {
+                "id": "commons_75043274",
+                "kind": "representativa",
+                "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/014783-016_POSADA_EN_PICOS_DE_IZTACALCO_DICIEMBRE_18_1974_%2838896553181%29.jpg/960px-014783-016_POSADA_EN_PICOS_DE_IZTACALCO_DICIEMBRE_18_1974_%2838896553181%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+                "category": "Alcaldías",
+                "borough": "",
+                "topic": "014783-016 POSADA EN PICOS DE IZTACALCO DICIEMBRE 18 1974 (38896553181)",
+                "keywords": [
+                  "Iztacalco Ciudad de México"
+                ],
+                "author": "Gobierno CDMX",
+                "license": "CC0",
+                "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+                "source": "https://commons.wikimedia.org/wiki/File:014783-016_POSADA_EN_PICOS_DE_IZTACALCO_DICIEMBRE_18_1974_(38896553181).jpg"
               }
             }
           ]
@@ -10046,12 +10128,12 @@
         },
         {
           "title": "Feria del Empleo en Iztacalco reúne a 15 empresas con más de 700 vacantes - La Prensa",
-          "description": "De acuerdo con El Sol de México, el titular publicado es: «Feria del Empleo en Iztacalco reúne a 15 empresas con más de 700 vacantes - La Prensa». La información publicada por El Sol de México aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "description": "De acuerdo con El Sol de México, el titular publicado es: «Feria del Empleo en Iztacalco reúne a 15 empresas con más de 700 vacantes - La Prensa». La información publicada por El Sol de México aborda un asunto que este portal clasifica como Servicios. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
           "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOQi00cUZRQXo0OC1FamROb093OGV5NXZpd0YyQ3JaRnVxWG9kU2JYbGk3U3NGS1ZjQnNQSjJBZmN1X1VUc1pQWURCZmczOWpGX1ROX2VhbDhHc1VTV1NQOXJGOEZMbFEzZ1JVY0dsUzRNUVh5Vjl0T212OUt3WW5tdFZ0alI1UFJBNnBYeUgzeUliTXpVZnk5VWVSWUEzbUJuWkRaTXZkbWRRN25mVWpxUlRBVGFtZm9kSElKQmdB?oc=5",
           "source": "El Sol de México",
           "date": "2026-11-12",
           "published_at": "2026-11-12T06:21:45Z",
-          "category": "CDMX",
+          "category": "Servicios",
           "borough": "Iztacalco",
           "location": "Iztacalco (mencionada en el titular)",
           "local_url": "/noticias/?id=a409e36176cedf9ded82&mes=2026-11",
@@ -10166,22 +10248,32 @@
             }
           ],
           "brief": {
-            "lead": "De acuerdo con El Sol de México, el titular publicado es: «Feria del Empleo en Iztacalco reúne a 15 empresas con más de 700 vacantes - La Prensa». La información publicada por El Sol de México aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "lead": "De acuerdo con El Sol de México, el titular publicado es: «Feria del Empleo en Iztacalco reúne a 15 empresas con más de 700 vacantes - La Prensa». La información publicada por El Sol de México aborda un asunto que este portal clasifica como Servicios. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           },
           "photo": {
-            "id": "alcaldia_iztacalco",
+            "id": "contexto_feria_empleo_cdmx_2018",
             "kind": "representativa",
-            "url": "/assets/alcaldias/iztacalco.jpg",
-            "category": "CDMX",
-            "borough": "Iztacalco",
-            "topic": "Iglesia de San Matías en el antiguo pueblo de Iztacalco",
-            "author": "AlejandroLinaresGarcia",
-            "license": "CC BY-SA 3.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-            "source": "https://commons.wikimedia.org/wiki/File:SanMatiasChurchIztacalco02.jpg"
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/37a_Feria_del_Empleo_IMG_8796_%2843942141674%29.jpg/960px-37a_Feria_del_Empleo_IMG_8796_%2843942141674%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "category": "Servicios",
+            "borough": "",
+            "topic": "37a Feria del Empleo (2018), Ciudad de México; foto de archivo representativa, no documenta la feria de Iztapalapa de 2026.",
+            "keywords": [
+              "feria del empleo",
+              "feria de empleo",
+              "empleo",
+              "vacantes",
+              "reclutamiento",
+              "trabajo",
+              "Ciudad de México",
+              "Gobierno CDMX"
+            ],
+            "author": "Gobierno CDMX",
+            "license": "CC0 1.0",
+            "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "source": "https://commons.wikimedia.org/wiki/File:37a_Feria_del_Empleo_IMG_8796_(43942141674).jpg"
           }
         },
         {
@@ -10204,12 +10296,12 @@
         },
         {
           "title": "Iztacalco ofrece 715 vacantes en feria del empleo realizada en UPIICSA",
-          "description": "De acuerdo con La Crónica de Hoy, el titular publicado es: «Iztacalco ofrece 715 vacantes en feria del empleo realizada en UPIICSA». La información publicada por La Crónica de Hoy aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "description": "De acuerdo con La Crónica de Hoy, el titular publicado es: «Iztacalco ofrece 715 vacantes en feria del empleo realizada en UPIICSA». La información publicada por La Crónica de Hoy aborda un asunto que este portal clasifica como Servicios. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
           "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQV1lWc2VOc1VwOEFzZ0VCQ09QNUY1cHJxQ1BXZ1NHTERZMUxhc1pkMG1IVUxXZDZoUjhwaDJ1cXBiZjlnN21jemx5bFdlU3BvNzgxUWVxUElJNG1qdnhPd3lvdlFON0l2T2s3REtjTnlrTlZHRWVDTlVuTXB5YmxCc0pkdzZUSUR1UzgxQzA4ZGNhbzBMcnBOUVJzR1pwQXl0cnZqdTFUMnhiMDdSeVBnajJsRFE5ajNrTUNn?oc=5",
           "source": "La Crónica de Hoy",
           "date": "2026-11-11",
           "published_at": "2026-11-11T22:48:12Z",
-          "category": "CDMX",
+          "category": "Servicios",
           "borough": "Iztacalco",
           "location": "Iztacalco (mencionada en el titular)",
           "local_url": "/noticias/?id=e2e29056fa2432b3fec6&mes=2026-11",
@@ -10279,25 +10371,32 @@
             }
           ],
           "brief": {
-            "lead": "De acuerdo con La Crónica de Hoy, el titular publicado es: «Iztacalco ofrece 715 vacantes en feria del empleo realizada en UPIICSA». La información publicada por La Crónica de Hoy aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "lead": "De acuerdo con La Crónica de Hoy, el titular publicado es: «Iztacalco ofrece 715 vacantes en feria del empleo realizada en UPIICSA». La información publicada por La Crónica de Hoy aborda un asunto que este portal clasifica como Servicios. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           },
           "photo": {
-            "id": "commons_168447903",
+            "id": "contexto_feria_empleo_cdmx_2018",
             "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Capilla_posa_Virgen_de_Guadalupe_en_la_fiesta_del_Jubileo_en_Iztacalco%2C_Ciudad_de_M%C3%A9xico.jpg/960px-Capilla_posa_Virgen_de_Guadalupe_en_la_fiesta_del_Jubileo_en_Iztacalco%2C_Ciudad_de_M%C3%A9xico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "category": "Alcaldías",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/37a_Feria_del_Empleo_IMG_8796_%2843942141674%29.jpg/960px-37a_Feria_del_Empleo_IMG_8796_%2843942141674%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "category": "Servicios",
             "borough": "",
-            "topic": "Capilla posa Virgen de Guadalupe en la fiesta del Jubileo en Iztacalco, Ciudad de México",
+            "topic": "37a Feria del Empleo (2018), Ciudad de México; foto de archivo representativa, no documenta la feria de Iztapalapa de 2026.",
             "keywords": [
-              "Iztacalco Ciudad de México"
+              "feria del empleo",
+              "feria de empleo",
+              "empleo",
+              "vacantes",
+              "reclutamiento",
+              "trabajo",
+              "Ciudad de México",
+              "Gobierno CDMX"
             ],
-            "author": "Pillolino77",
-            "license": "CC0",
-            "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
-            "source": "https://commons.wikimedia.org/wiki/File:Capilla_posa_Virgen_de_Guadalupe_en_la_fiesta_del_Jubileo_en_Iztacalco,_Ciudad_de_M%C3%A9xico.jpg"
+            "author": "Gobierno CDMX",
+            "license": "CC0 1.0",
+            "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "source": "https://commons.wikimedia.org/wiki/File:37a_Feria_del_Empleo_IMG_8796_(43942141674).jpg"
           }
         },
         {
@@ -10879,68 +10978,6 @@
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           }
-        },
-        {
-          "title": "Bomberos rescatan a un águila atrapada en azotea de vivienda en Iztacalco",
-          "description": "De acuerdo con Excélsior, el titular publicado es: «Bomberos rescatan a un águila atrapada en azotea de vivienda en Iztacalco». La información publicada por Excélsior aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOazNUWnczajlrUEs1Z3BzWXVtaTY1UERPX0E3cTNwS3poakx3aG1wQVFxaXhDQ0pwczRDNG9wS3dDTVJNaHpjZ3lsWXdSSEswSkk4MDhZT0cxRU9IZTRlOE12MkFTNW1EeENtTEU1dzhhNmRkdkRhS2lIUUU0Zmlpd2pWSUxPWUltQ04yc19BNTBtWGxaQzROazdUSGtnRGFJNFdxY1dqbmNfbmVrZXfSAa4BQVVfeXFMTmszVFp3M2o5a1BLNWdwc1l1bWk2NVBET19BN3EzcEt6aGpMd2htcEFRcWl4Q0NKcHM0QzRvcEt3Q01STWh6Y2d5bFl3UkhLMEpJODA4WU9HMUVPSGU0ZThNdjJBUzVtRHhDbUxFNXc4YTZkZHZEYUtpSFFFNGZpaXdqVklMT1lJbUNOMnNfQTUwbVhsWkM0Tms3VEhrZ0RhSTRXcWNXam5jX25la2V3?oc=5",
-          "source": "Excélsior",
-          "date": "2026-11-08",
-          "published_at": "2026-11-08T23:12:02Z",
-          "category": "CDMX",
-          "borough": "Iztacalco",
-          "location": "Iztacalco (mencionada en el titular)",
-          "local_url": "/noticias/?id=2cc797d3475a7c1ac762&mes=2026-11",
-          "alternate_versions": [
-            {
-              "title": "Bomberos rescatan a un águila atrapada en azotea de vivienda en Iztacalco",
-              "description": "De acuerdo con Excélsior, el titular publicado es: «Bomberos rescatan a un águila atrapada en azotea de vivienda en Iztacalco». La información publicada por Excélsior aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-              "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOazNUWnczajlrUEs1Z3BzWXVtaTY1UERPX0E3cTNwS3poakx3aG1wQVFxaXhDQ0pwczRDNG9wS3dDTVJNaHpjZ3lsWXdSSEswSkk4MDhZT0cxRU9IZTRlOE12MkFTNW1EeENtTEU1dzhhNmRkdkRhS2lIUUU0Zmlpd2pWSUxPWUltQ04yc19BNTBtWGxaQzROazdUSGtnRGFJNFdxY1dqbmNfbmVrZXfSAa4BQVVfeXFMTmszVFp3M2o5a1BLNWdwc1l1bWk2NVBET19BN3EzcEt6aGpMd2htcEFRcWl4Q0NKcHM0QzRvcEt3Q01STWh6Y2d5bFl3UkhLMEpJODA4WU9HMUVPSGU0ZThNdjJBUzVtRHhDbUxFNXc4YTZkZHZEYUtpSFFFNGZpaXdqVklMT1lJbUNOMnNfQTUwbVhsWkM0Tms3VEhrZ0RhSTRXcWNXam5jX25la2V3?oc=5",
-              "source": "Excélsior",
-              "date": "2026-11-08",
-              "published_at": "2026-11-08T23:12:02Z",
-              "category": "CDMX",
-              "borough": "Iztacalco",
-              "location": "Iztacalco (mencionada en el titular)",
-              "local_url": "/noticias/?id=2cc797d3475a7c1ac762&mes=2026-11",
-              "brief": {
-                "lead": "De acuerdo con Excélsior, el titular publicado es: «Bomberos rescatan a un águila atrapada en azotea de vivienda en Iztacalco». La información publicada por Excélsior aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-                "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-                "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-              },
-              "photo": {
-                "id": "alcaldia_iztacalco",
-                "kind": "representativa",
-                "url": "/assets/alcaldias/iztacalco.jpg",
-                "category": "CDMX",
-                "borough": "Iztacalco",
-                "topic": "Iglesia de San Matías en el antiguo pueblo de Iztacalco",
-                "author": "AlejandroLinaresGarcia",
-                "license": "CC BY-SA 3.0",
-                "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-                "source": "https://commons.wikimedia.org/wiki/File:SanMatiasChurchIztacalco02.jpg"
-              }
-            }
-          ],
-          "brief": {
-            "lead": "De acuerdo con Excélsior, el titular publicado es: «Bomberos rescatan a un águila atrapada en azotea de vivienda en Iztacalco». La información publicada por Excélsior aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "alcaldia_iztacalco",
-            "kind": "representativa",
-            "url": "/assets/alcaldias/iztacalco.jpg",
-            "category": "CDMX",
-            "borough": "Iztacalco",
-            "topic": "Iglesia de San Matías en el antiguo pueblo de Iztacalco",
-            "author": "AlejandroLinaresGarcia",
-            "license": "CC BY-SA 3.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-            "source": "https://commons.wikimedia.org/wiki/File:SanMatiasChurchIztacalco02.jpg"
-          }
         }
       ]
     },
@@ -10980,19 +11017,19 @@
         },
         {
           "title": "Vinculan a proceso a Ismael “N” por extorsionar a comerciante en Iztapalapa",
-          "description": "De acuerdo con Sociedad Noticias, el titular publicado es: «Vinculan a proceso a Ismael “N” por extorsionar a comerciante en Iztapalapa». La información publicada por Sociedad Noticias aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "description": "De acuerdo con Sociedad Noticias, el titular publicado es: «Vinculan a proceso a Ismael “N” por extorsionar a comerciante en Iztapalapa». La información publicada por Sociedad Noticias aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
           "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPQjFLOXE1WF9iUHVHU2JsQ1JhbndLeFN4enB4YnJsZVlFcmRmcXJubVpCYlFGNDRoWEdJb05WSmo4RldIMnhHRTljcUVHQnN0WDlzWnVxMHpPMjAtbmotYjNQMlBNWTRkNmxzS2Q2MHJQWWNBWDl4bEZKY0piTWd3c28wUWdqLUpTeG4weG1BcWt5dXZsRjZoczE1OVZVNHV1QUxwWFRJUHZhbWlyTldNSExEdTdvdw?oc=5",
           "source": "Sociedad Noticias",
           "date": "2026-11-13",
           "published_at": "2026-11-13T23:30:00Z",
-          "category": "CDMX",
+          "category": "Seguridad",
           "borough": "Iztapalapa",
           "location": "Iztapalapa (mencionada en el titular)",
           "local_url": "/noticias/?id=e2986519419026dd861e&mes=2026-11",
           "brief": {
-            "lead": "De acuerdo con Sociedad Noticias, el titular publicado es: «Vinculan a proceso a Ismael “N” por extorsionar a comerciante en Iztapalapa». La información publicada por Sociedad Noticias aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "lead": "De acuerdo con Sociedad Noticias, el titular publicado es: «Vinculan a proceso a Ismael “N” por extorsionar a comerciante en Iztapalapa». La información publicada por Sociedad Noticias aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           },
           "photo": {
@@ -11013,35 +11050,42 @@
         },
         {
           "title": "Feria del Empleo en Iztapalapa ofrece mil vacantes con empresas como Bimbo, Sears y Chedraui; fecha y horario",
-          "description": "De acuerdo con El Sol de México, el titular publicado es: «Feria del Empleo en Iztapalapa ofrece mil vacantes con empresas como Bimbo, Sears y Chedraui; fecha y horario». La información publicada por El Sol de México aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "description": "De acuerdo con El Sol de México, el titular publicado es: «Feria del Empleo en Iztapalapa ofrece mil vacantes con empresas como Bimbo, Sears y Chedraui; fecha y horario». La información publicada por El Sol de México aborda un asunto que este portal clasifica como Servicios. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
           "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPb25ad1lGZGU3bC01aTY5eFc4ZWpQR2dsdDFFRVpkeGVfR0xxeXY1bTlJSHRmeTQ3TFNOYVN5N1llOWh5enRCT2hBelZnaVI4azE3V3ljamV3MDJ0TnlhNlRLX093SlZMcDRZOU5JTHBwcnc0QVJRQXhXdXNrNTRYZFRobGZNb2EyNE1ESjdfWFVTOXpmWTZGeS1WOHRNbmZSZ3pQM0RLaXlmeEFuM0U3VldGV0ZUTEVWYTgycjRLdTM5aDVBSzNlODFZRHAzcjMyaEVROGFPOWZtWk1YSUxpSDhlNGJDZUdPMFBz?oc=5",
           "source": "El Sol de México",
           "date": "2026-11-13",
           "published_at": "2026-11-13T22:07:30Z",
-          "category": "CDMX",
+          "category": "Servicios",
           "borough": "Iztapalapa",
           "location": "Iztapalapa (mencionada en el titular)",
           "local_url": "/noticias/?id=8782dfc11a9012876f92&mes=2026-11",
           "brief": {
-            "lead": "De acuerdo con El Sol de México, el titular publicado es: «Feria del Empleo en Iztapalapa ofrece mil vacantes con empresas como Bimbo, Sears y Chedraui; fecha y horario». La información publicada por El Sol de México aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "lead": "De acuerdo con El Sol de México, el titular publicado es: «Feria del Empleo en Iztapalapa ofrece mil vacantes con empresas como Bimbo, Sears y Chedraui; fecha y horario». La información publicada por El Sol de México aborda un asunto que este portal clasifica como Servicios. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           },
           "photo": {
-            "id": "commons_20284563",
+            "id": "contexto_feria_empleo_cdmx_2018",
             "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Metro_Iztapalapa_02.jpg/960px-Metro_Iztapalapa_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "category": "Alcaldías",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/37a_Feria_del_Empleo_IMG_8796_%2843942141674%29.jpg/960px-37a_Feria_del_Empleo_IMG_8796_%2843942141674%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "category": "Servicios",
             "borough": "",
-            "topic": "Metro Iztapalapa 02",
+            "topic": "37a Feria del Empleo (2018), Ciudad de México; foto de archivo representativa, no documenta la feria de Iztapalapa de 2026.",
             "keywords": [
-              "Iztapalapa Ciudad de México"
+              "feria del empleo",
+              "feria de empleo",
+              "empleo",
+              "vacantes",
+              "reclutamiento",
+              "trabajo",
+              "Ciudad de México",
+              "Gobierno CDMX"
             ],
-            "author": "GAED",
-            "license": "CC BY-SA 3.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Metro_Iztapalapa_02.jpg"
+            "author": "Gobierno CDMX",
+            "license": "CC0 1.0",
+            "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "source": "https://commons.wikimedia.org/wiki/File:37a_Feria_del_Empleo_IMG_8796_(43942141674).jpg"
           },
           "alternate_versions": [
             {
@@ -11072,6 +11116,39 @@
                 "license": "CC BY 2.0",
                 "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
                 "source": "https://commons.wikimedia.org/wiki/File:MX_MM_MUSEO_CERRO_DE_LA_ESTRELLA_%2849522225751%29.jpg"
+              }
+            },
+            {
+              "title": "Feria del Empleo en Iztapalapa ofrece mil vacantes con empresas como Bimbo, Sears y Chedraui; fecha y horario",
+              "description": "De acuerdo con El Sol de México, el titular publicado es: «Feria del Empleo en Iztapalapa ofrece mil vacantes con empresas como Bimbo, Sears y Chedraui; fecha y horario». La información publicada por El Sol de México aborda un asunto que este portal clasifica como Servicios. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+              "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPb25ad1lGZGU3bC01aTY5eFc4ZWpQR2dsdDFFRVpkeGVfR0xxeXY1bTlJSHRmeTQ3TFNOYVN5N1llOWh5enRCT2hBelZnaVI4azE3V3ljamV3MDJ0TnlhNlRLX093SlZMcDRZOU5JTHBwcnc0QVJRQXhXdXNrNTRYZFRobGZNb2EyNE1ESjdfWFVTOXpmWTZGeS1WOHRNbmZSZ3pQM0RLaXlmeEFuM0U3VldGV0ZUTEVWYTgycjRLdTM5aDVBSzNlODFZRHAzcjMyaEVROGFPOWZtWk1YSUxpSDhlNGJDZUdPMFBz?oc=5",
+              "source": "El Sol de México",
+              "date": "2026-11-13",
+              "published_at": "2026-11-13T22:07:30Z",
+              "category": "Servicios",
+              "borough": "Iztapalapa",
+              "location": "Iztapalapa (mencionada en el titular)",
+              "local_url": "/noticias/?id=8782dfc11a9012876f92&mes=2026-11",
+              "brief": {
+                "lead": "De acuerdo con El Sol de México, el titular publicado es: «Feria del Empleo en Iztapalapa ofrece mil vacantes con empresas como Bimbo, Sears y Chedraui; fecha y horario». La información publicada por El Sol de México aborda un asunto que este portal clasifica como Servicios. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+                "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+                "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+              },
+              "photo": {
+                "id": "commons_20284563",
+                "kind": "representativa",
+                "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Metro_Iztapalapa_02.jpg/960px-Metro_Iztapalapa_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+                "category": "Alcaldías",
+                "borough": "",
+                "topic": "Metro Iztapalapa 02",
+                "keywords": [
+                  "Iztapalapa Ciudad de México"
+                ],
+                "author": "GAED",
+                "license": "CC BY-SA 3.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+                "source": "https://commons.wikimedia.org/wiki/File:Metro_Iztapalapa_02.jpg"
               }
             }
           ]
@@ -17087,7 +17164,7 @@
           "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNYlEtZER2b0lMSXRrLTNzYTdweEk1ZTRSdm5xX2dtWFFIU04tUWRya0VtNWd0UUJiVndhM2V3UzJlYjJ3Z192Yks0b0ZNSnBvbXJiZmlUeGw5V2FKczRETC11VWtQSk5Oc1FHdFVDUTZFMExlZUhFQVdlN1ZtSElsMjNKVEtQZGt2S2Rvd2J2WUFtMkdmZUNUZENQbVpQWWxockk2MmRNTFZJMmF2elYzc05NNHpSN3RKYXdPMkhGblVYV2t1NEs4?oc=5",
           "source": "La Prensa",
           "date": "2026-11-13",
-          "published_at": "2026-11-13T20:05:22Z",
+          "published_at": "2026-11-14T02:02:35Z",
           "category": "Movilidad",
           "borough": "Venustiano Carranza",
           "location": "Venustiano Carranza (mencionada en el titular)",
@@ -17118,7 +17195,47 @@
             "license": "CC BY-SA 4.0",
             "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
             "source": "https://commons.wikimedia.org/wiki/File:Ayuda_tras_el_Terremoto_de_Puebla_de_2017_-_Ciudad_de_M%C3%A9xico_-_3.jpg"
-          }
+          },
+          "alternate_versions": [
+            {
+              "title": "Mueren dos motociclistas tras chocar contra una camioneta en Venustiano Carranza",
+              "description": "De acuerdo con La Prensa, el titular publicado es: «Mueren dos motociclistas tras chocar contra una camioneta en Venustiano Carranza». De acuerdo con La Prensa, se informa de un hecho vial relacionado con una motocicleta en Venustiano Carranza. El propio titular señala más de un fallecimiento, sin que esta ficha agregue cifras ni identidades. Se requiere consultar la nota original para conocer el punto exacto, las circunstancias y los reportes oficiales, sin atribuir responsabilidades sin pruebas.",
+              "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNYlEtZER2b0lMSXRrLTNzYTdweEk1ZTRSdm5xX2dtWFFIU04tUWRya0VtNWd0UUJiVndhM2V3UzJlYjJ3Z192Yks0b0ZNSnBvbXJiZmlUeGw5V2FKczRETC11VWtQSk5Oc1FHdFVDUTZFMExlZUhFQVdlN1ZtSElsMjNKVEtQZGt2S2Rvd2J2WUFtMkdmZUNUZENQbVpQWWxockk2MmRNTFZJMmF2elYzc05NNHpSN3RKYXdPMkhGblVYV2t1NEs4?oc=5",
+              "source": "La Prensa",
+              "date": "2026-11-13",
+              "published_at": "2026-11-13T20:05:22Z",
+              "category": "Movilidad",
+              "borough": "Venustiano Carranza",
+              "location": "Venustiano Carranza (mencionada en el titular)",
+              "local_url": "/noticias/?id=48ad03698ec605252a33&mes=2026-11",
+              "brief": {
+                "lead": "De acuerdo con La Prensa, el titular publicado es: «Mueren dos motociclistas tras chocar contra una camioneta en Venustiano Carranza». De acuerdo con La Prensa, se informa de un hecho vial relacionado con una motocicleta en Venustiano Carranza. El propio titular señala más de un fallecimiento, sin que esta ficha agregue cifras ni identidades. Se requiere consultar la nota original para conocer el punto exacto, las circunstancias y los reportes oficiales, sin atribuir responsabilidades sin pruebas.",
+                "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
+                "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+              },
+              "photo": {
+                "id": "contexto_motocicleta_zocalo_brigada_2017",
+                "kind": "representativa",
+                "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Ayuda_tras_el_Terremoto_de_Puebla_de_2017_-_Ciudad_de_M%C3%A9xico_-_3.jpg/960px-Ayuda_tras_el_Terremoto_de_Puebla_de_2017_-_Ciudad_de_M%C3%A9xico_-_3.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+                "category": "CDMX",
+                "borough": "",
+                "topic": "Motocicleta de apoyo de una brigada voluntaria en el Zócalo de la Ciudad de México tras el sismo de 2017 (imagen representativa; no corresponde a una ",
+                "keywords": [
+                  "motocicleta",
+                  "moto",
+                  "Zócalo",
+                  "brigada voluntaria",
+                  "sismo 2017",
+                  "Ciudad de México"
+                ],
+                "author": "ProtoplasmaKid",
+                "license": "CC BY-SA 4.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+                "source": "https://commons.wikimedia.org/wiki/File:Ayuda_tras_el_Terremoto_de_Puebla_de_2017_-_Ciudad_de_M%C3%A9xico_-_3.jpg"
+              }
+            }
+          ]
         },
         {
           "title": "Mueren dos motociclistas tras choque en Venustiano Carranza",
