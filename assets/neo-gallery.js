@@ -1,10 +1,10 @@
 'use strict';
-/* Fototeca editorial: catálogo de 1,114 imágenes con filtros, búsqueda y carga por lotes. */
+/* Fototeca editorial: catálogo de 1,117 imágenes con filtros, búsqueda y carga por lotes. */
 (() => {
  const grid=document.getElementById('neo-photo-grid');
  const status=document.getElementById('neo-photo-status');
  if(!grid||!status)return;
- const DATA='/assets/fotos/indice-noticias-1100.json?v=20261113-editorial-photo-context2';
+ const DATA='/assets/fotos/indice-noticias-1100.json?v=20261113-editorial-photo-context3';
  const NOTICE='Imagen de carácter ilustrativo y referencial; no constituye evidencia gráfica de los hechos descritos.';
  const safeImage=u=>/^\/assets\/fotos\/[a-z0-9_]+\.jpg$/i.test(String(u||''))||/^https:\/\/(?:upload|thumb)\.wikimedia\.org\/wikipedia\/commons\//.test(String(u||''));
  const safeCommons=u=>/^https:\/\/commons\.wikimedia\.org\/wiki\/File:/.test(String(u||''));

@@ -1,7 +1,7 @@
 {
   "version": 3,
   "created": "2026-11-13",
-  "count": 1114,
+  "count": 1117,
   "source": "Wikimedia Commons (metadatos consultados mediante su API)",
   "notice": "Imagen de carácter ilustrativo y referencial; no constituye evidencia gráfica de los hechos descritos.",
   "licenseNotice": "Las licencias CC BY y CC BY-SA exigen atribución; CC BY-SA puede exigir compartir adaptaciones bajo la misma licencia. Los derechos personales y de obras representadas se evalúan por separado. No se afirma que la imagen documente el acontecimiento.",
@@ -18119,6 +18119,83 @@
       "adaptation": "Miniatura oficial de Wikimedia Commons; sin modificación.",
       "captured_at": "2026-09-28",
       "uploaded_at": "2026-10-16"
+    },
+    {
+      "id": "contexto_juego_movil_smartphone_2016",
+      "kind": "representativa",
+      "category": "Cultura",
+      "topic": "Persona jugando un videojuego en smartphone (2016); imagen representativa de juegos móviles, no documenta K/DA Wild Rift en Centro Santa Fe.",
+      "file": "Playing with smartphone.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Playing_with_smartphone.jpg/960px-Playing_with_smartphone.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source": "https://commons.wikimedia.org/wiki/File:Playing_with_smartphone.jpg",
+      "author": "Santeri Viinamäki",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "keywords": [
+        "videojuegos",
+        "juegos móviles",
+        "smartphone",
+        "juego en celular",
+        "K/DA",
+        "Wild Rift",
+        "Riot Games",
+        "gaming"
+      ],
+      "captured_at": "2016-11-21",
+      "uploaded_at": "2016-11-21",
+      "context": "Imagen de carácter ilustrativo y referencial; no constituye evidencia gráfica del evento de K/DA Wild Rift en Centro Santa Fe.",
+      "adaptation": "Fotografía de archivo de una persona jugando en un teléfono; no muestra a K/DA, Riot Games ni la activación de Centro Santa Fe."
+    },
+    {
+      "id": "contexto_feria_empleo_cdmx_2018",
+      "kind": "representativa",
+      "category": "Servicios",
+      "topic": "37a Feria del Empleo (2018), Ciudad de México; foto de archivo representativa, no documenta la feria de Iztapalapa de 2026.",
+      "file": "37a Feria del Empleo IMG 8796 (43942141674).jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/37a_Feria_del_Empleo_IMG_8796_%2843942141674%29.jpg/960px-37a_Feria_del_Empleo_IMG_8796_%2843942141674%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source": "https://commons.wikimedia.org/wiki/File:37a_Feria_del_Empleo_IMG_8796_(43942141674).jpg",
+      "author": "Gobierno CDMX",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "keywords": [
+        "feria del empleo",
+        "feria de empleo",
+        "empleo",
+        "vacantes",
+        "reclutamiento",
+        "trabajo",
+        "Ciudad de México",
+        "Gobierno CDMX"
+      ],
+      "captured_at": "2018-08-16",
+      "uploaded_at": "2018-12-20",
+      "context": "Imagen de carácter ilustrativo y referencial; no constituye evidencia gráfica de la feria de empleo de Iztapalapa de noviembre de 2026.",
+      "adaptation": "Fotografía de archivo de la 37a Feria del Empleo de Ciudad de México (2018); no corresponde a la feria de Iztapalapa de noviembre de 2026."
+    },
+    {
+      "id": "contexto_emprendimiento_femenino_2025",
+      "kind": "representativa",
+      "category": "Servicios",
+      "topic": "Retrato de una empresaria (29-05-2025); imagen representativa del emprendimiento femenino, no documenta la feria de Iztacalco.",
+      "file": "Mujeres emprendedoras que buscan el cambio.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Mujeres_emprendedoras_que_buscan_el_cambio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "source": "https://commons.wikimedia.org/wiki/File:Mujeres_emprendedoras_que_buscan_el_cambio.jpg",
+      "author": "Luisargom",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "keywords": [
+        "mujeres emprendedoras",
+        "emprendimiento femenino",
+        "empresaria",
+        "emprendedora",
+        "negocios",
+        "comercio local",
+        "microempresa"
+      ],
+      "captured_at": "2025-05-29",
+      "uploaded_at": "2025-05-30",
+      "context": "Imagen de carácter ilustrativo y referencial; no constituye evidencia gráfica de la feria de mujeres emprendedoras de Iztacalco.",
+      "adaptation": "Retrato de una empresaria; se utiliza como referencia del emprendimiento femenino, no como fotografía de la feria de Iztacalco."
     }
   ]
 }

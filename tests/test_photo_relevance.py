@@ -2416,5 +2416,112 @@ class CurrentFeedEditorialPhotoRegressionTests(unittest.TestCase):
                 self.assertEqual(photo["topic"], expected)
 
 
+
+class CurrentEditorialPhotoRegressionTests(unittest.TestCase):
+    def make_article(self, title, category="CDMX", source="Medio de prueba"):
+        return news.standardize({
+            "title": title,
+            "url": "https://news.google.com/rss/articles/editorial-context-regression",
+            "source": source,
+            "date": "2026-11-13",
+            "category": category,
+        })
+
+    def photo(self, photo_id):
+        return next((item for item in _pool() if item.get("id") == photo_id), None)
+
+    def test_wild_rift_is_culture_and_uses_mobile_gaming_context(self):
+        title = "K/DA Wild Rift en CDMX: Riot Games confirma una pop-up especial en Centro Santa Fe"
+        article = self.make_article(title, source="TierraGamer")
+        self.assertEqual(article["category"], "Cultura")
+        self.assertEqual(_photo_category(article), "Cultura")
+        unrelated = self.photo("commons_83241758")
+        relevant = self.photo("contexto_juego_movil_smartphone_2016")
+        self.assertIsNotNone(unrelated)
+        self.assertIsNotNone(relevant)
+        self.assertLess(_photo_score(article, unrelated), 0)
+        self.assertGreaterEqual(_photo_score(article, relevant), 0)
+        assign_photos([article])
+        self.assertEqual(article["photo"]["id"], "contexto_juego_movil_smartphone_2016")
+
+    def test_employment_fair_is_services_and_uses_archival_job_fair_photo(self):
+        title = ("Feria del Empleo en Iztapalapa ofrece mil vacantes con empresas "
+                 "como Bimbo, Sears y Chedraui; fecha y horario")
+        article = self.make_article(title, source="El Sol de México")
+        self.assertEqual(article["category"], "Servicios")
+        unrelated = self.photo("commons_20284563")
+        relevant = self.photo("contexto_feria_empleo_cdmx_2018")
+        self.assertIsNotNone(unrelated)
+        self.assertIsNotNone(relevant)
+        self.assertLess(_photo_score(article, unrelated), 0)
+        self.assertGreaterEqual(_photo_score(article, relevant), 0)
+        assign_photos([article])
+        self.assertEqual(article["photo"]["id"], "contexto_feria_empleo_cdmx_2018")
+
+    def test_women_entrepreneurs_fair_rejects_old_posada_photo(self):
+        title = "Impulsa alcaldía Iztacalco el comercio local con la Feria de Mujeres Emprendedoras"
+        article = self.make_article(title)
+        self.assertEqual(article["category"], "Servicios")
+        unrelated = self.photo("commons_75043274")
+        relevant = self.photo("contexto_emprendimiento_femenino_2025")
+        self.assertIsNotNone(unrelated)
+        self.assertIsNotNone(relevant)
+        self.assertLess(_photo_score(article, unrelated), 0)
+        self.assertGreaterEqual(_photo_score(article, relevant), 0)
+        assign_photos([article])
+        self.assertEqual(article["photo"]["id"], "contexto_emprendimiento_femenino_2025")
+
+    def test_market_c5_stories_reject_patrol_photos_and_require_market_context(self):
+        cases = (
+            ("Mercado Bramadero en Iztacalco será el primero conectado al C5; "
+             "Brugada asegura que todos los mercados tendrán cámaras", "archivo_seguridad_002"),
+            ("Mercados de CDMX tendrán vigilancia conectada al C5, anuncia Brugada",
+             "commons_157006038"),
+        )
+        for title, wrong_id in cases:
+            with self.subTest(title=title):
+                article = self.make_article(title)
+                self.assertEqual(article["category"], "Seguridad")
+                wrong = self.photo(wrong_id)
+                self.assertIsNotNone(wrong)
+                self.assertLess(_photo_score(article, wrong), 0)
+                assign_photos([article])
+                self.assertRegex(article["photo"]["topic"].casefold(), r"mercad|tianguis")
+
+    def test_extortion_is_security_even_when_rss_says_cdmx(self):
+        title = "Vinculan a proceso a Ismael N por extorsionar a comerciante en Iztapalapa"
+        self.assertEqual(category_by_headline(title, "CDMX"), "Seguridad")
+        article = self.make_article(title)
+        self.assertEqual(article["category"], "Seguridad")
+
+    def test_new_context_photos_have_licensed_credits_in_all_public_catalogs(self):
+        expected = {
+            "contexto_juego_movil_smartphone_2016",
+            "contexto_feria_empleo_cdmx_2018",
+            "contexto_emprendimiento_femenino_2025",
+        }
+        for relative in (
+            "assets/fotos/contexto-tematico.json",
+            "assets/fotos/indice-noticias-1100.json",
+            "assets/fotos/catalogo-editorial-1100.json",
+        ):
+            data = json.loads((REPO_ROOT / relative).read_text(encoding="utf-8"))
+            photos_by_id = {item.get("id"): item for item in data.get("photos", [])}
+            for photo_id in expected:
+                with self.subTest(path=relative, photo=photo_id):
+                    photo = photos_by_id.get(photo_id)
+                    self.assertIsNotNone(photo)
+                    self.assertEqual(photo.get("kind"), "representativa")
+                    self.assertTrue(photo.get("author"))
+                    self.assertTrue(photo.get("license"))
+                    self.assertTrue(photo.get("source", "").startswith(
+                        "https://commons.wikimedia.org/wiki/File:"
+                    ))
+                    self.assertTrue(photo.get("licenseUrl", "").startswith(
+                        "https://creativecommons.org/"
+                    ))
+                    self.assertTrue(photo.get("context", "").startswith(
+                        "Imagen de carácter ilustrativo y referencial;"
+                    ))
 if __name__ == "__main__":
     unittest.main()

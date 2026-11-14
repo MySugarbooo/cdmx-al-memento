@@ -38,7 +38,7 @@ class FototecaEditorialTests(unittest.TestCase):
                 self.assertTrue(p["topic"].strip())
                 self.assertTrue(
                     p["context"].startswith(
-                        "Imagen de carácter ilustrativo y referencial; no constituye evidencia gráfica de "
+                        "Imagen de carácter ilustrativo y referencial; no constituye evidencia gráfica"
                     )
                 )
                 self.assertTrue(p["context"].endswith("."))

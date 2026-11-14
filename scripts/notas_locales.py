@@ -1129,7 +1129,7 @@ def _pool():
     recent=_load(RECENT_PHOTOS,"photos")
     borough=_load(BOROUGH_PHOTOS,"photos")
     photos=[]
-    # La fototeca ampliada incluye 1,112 fotos con descriptores y créditos.
+    # La fototeca ampliada incluye 1,117 fotos con descriptores y créditos.
     # Buscar por tema es más preciso que asignar la primera imagen de una categoría.
     for item in (_load(TOPIC_PHOTOS,"photos")+_load(NEWS_PHOTOS,"photos")):
         if not isinstance(item,dict):
@@ -1305,8 +1305,12 @@ def _photo_category(article):
     # Los conciertos y las notas sobre cantantes pertenecen a Cultura.
     if re.search(r"\b(?:cantantes?|cantautores?|gira musical|canciones? ineditas|musica en vivo|teatro metropolitan|garbage|shirley manson)\b", headline):
         return "Cultura"
-    if re.search(r"\bpokemon go\b", headline):
+    if re.search(r"\b(?:pokemon go|k/da|wild rift|league of legends|riot games)\b", headline):
         return "Cultura"
+    if re.search(r"\b(?:feria (?:del )?empleo|feria de empleo|vacantes?|reclutamiento|bolsa de trabajo)\b", headline):
+        return "Servicios"
+    if re.search(r"\b(?:feria de mujeres emprendedoras|mujeres emprendedoras|emprendimiento femenino)\b", headline):
+        return "Servicios"
     if (re.search(r"\b(?:aeropuerto|aicm)\b", headline)
             and re.search(r"\b(?:vuelos?|afectaciones?|salidas?|llegadas?)\b", headline)):
         return "Movilidad"
@@ -1395,7 +1399,11 @@ STRICT_PHOTO_TOPICS = (
     (r"\b(?:transporte(?: publico)?|movilidad)\b.*\b(?:electrico|electrica|electrificacion)\b",
      r"\b(?:trolebus|metrobus|autobus(?:es)?|tren ligero|metro|cablebus|electromovilidad|vehiculos? electricos?)\b"),
     # La vigilancia requiere contexto policial; el alumbrado requiere luminarias.
-    (r"\b(?:vigilancia|vigilad[oa]s?)\b",
+    # Las notas sobre cámaras en mercados requieren una imagen de un mercado, no una patrulla.
+    (r"^(?=.*\bmercados?\b)(?=.*\b(?:c5|camaras?|vigilancia|conectad[oa]s?)\b)",
+     r"\b(?:mercados?|mercado publico|mercado de abasto|tianguis|puestos)\b"),
+    # La vigilancia general requiere contexto policial; los mercados tienen una regla propia.
+    (r"^(?!.*\bmercados?\b).*\b(?:vigilancia|vigilad[oa]s?)\b",
      r"\b(?:patrullas?|policias?|camaras? de vigilancia|vigilancia policial|mujeres|apoyos? a mujeres)\b"),
     (r"^(?=.*\b(?:nuevas? luminarias?|80 mil luminarias|luminarias?|alumbrado|iluminacion|iluminadas?)\b)(?!.*\b(?:vigilancia|vigilad[oa]s?|patrullas?|policias?|robo|roban|robaron|cable|cables|sustraccion|asalto|homicidio|asesinad\w*)\b)",
      r"\b(?:alumbrado|luminarias?|iluminacion|faroles?|postes? de luz)\b"),
@@ -1453,6 +1461,12 @@ STRICT_PHOTO_TOPICS = (
     # Titulares de empleo y becas no se ilustran con monumentos o avenidas.
     (r"\b(?:embajada\b.*\bvacantes?|vacantes?\b.*\bembajada)\b",
      r"\b(?:embajada|vacantes?|empleo|trabajo|oficinas?|alemania)\b"),
+    # Una feria del empleo requiere una fotografía de una feria laboral, no una estación del Metro.
+    (r"^(?!.*\bembajada\b).*\b(?:feria (?:del )?empleo|feria de empleo|vacantes?|reclutamiento|bolsa de trabajo)\b",
+     r"\b(?:feria (?:del )?empleo|empleo|vacantes?|reclutamiento|bolsa de trabajo|job fair)\b"),
+    # Una feria de mujeres emprendedoras requiere contexto de emprendimiento o negocios.
+    (r"\b(?:feria de mujeres emprendedoras|mujeres emprendedoras|emprendimiento femenino)\b",
+     r"\b(?:empresarias?|emprendedoras?|emprendimiento|negocios?|comercio local)\b"),
     (r"\bbeca de transporte\b",
      r"\b(?:becas?|universitarios?|estudiantes?|transporte|metro|autobuses?)\b"),
     # Las notas sobre tuberías y pavimentación requieren contexto de drenaje u obra vial.
@@ -1976,9 +1990,17 @@ def _photo_score(article, photo):
     # En robos, asaltos y extorsiones, la coincidencia de alcaldía no basta:
     # exigir una imagen con contexto de seguridad antes de puntuar el lugar.
     crime_story = bool(re.search(
-        r"\b(?:robo|robos|roban|robado|robada|robaron|robar|decomis\w*|incaut\w*|asegur\w*|asalt\w*|ataques? armados?|extorsion|extorsionan|ejecutan|ejecutad\w*|ejecucion|asesina(?:n)?|asesinad\w*|asesinato|homicidio|matan|balazos|balacera|secuestro|secuestrador(?:es)?|secuestrad[oa]s?|privacion de la libertad|delitos?\s+(?:contra|a)\s+(?:empresas?|comercios?|negocios?))\b",
+        r"\b(?:robo|robos|roban|robado|robada|robaron|robar|decomis\w*|incaut\w*|asalt\w*|ataques? armados?|extorsion|extorsionan|ejecutan|ejecutad\w*|ejecucion|asesina(?:n)?|asesinad\w*|asesinato|homicidio|matan|balazos|balacera|secuestro|secuestrador(?:es)?|secuestrad[oa]s?|privacion de la libertad|delitos?\s+(?:contra|a)\s+(?:empresas?|comercios?|negocios?))\b",
         headline,
     ))
+    # "Asegura que" es una declaración, no un aseguramiento policial.
+    # Solo tratar "asegurar" como incautación cuando el titular identifica bienes u objetos.
+    seizure_story = bool(re.search(
+        r"\b(?:aseguran|aseguraron|aseguramiento|asegurad[oa]s?)\s+(?:\d+\s+)?"
+        r"(?:armas?|drogas?|estupefacientes|mercancia|vehiculos?|objetos?|bienes?|sustancias?|paquetes?)\b",
+        headline,
+    ))
+    crime_story = crime_story or seizure_story
     crime_context = bool(re.search(
         r"\b(?:policias?|patrullas?|repartidores?|conductores? de aplicacion|motociclistas?|fiscalia|detencion|operativo policial|"
         r"ministerio publico|investigacion penal|escena del crimen)\b",
@@ -2041,11 +2063,11 @@ def _photo_score(article, photo):
         context,
     ))
     game_story = bool(re.search(
-        r"\b(?:pokemon go|videojuegos?|juegos? moviles?|realidad aumentada)\b",
+        r"\b(?:pokemon go|videojuegos?|juegos? moviles?|realidad aumentada|k/da|wild rift|riot games|league of legends)\b",
         headline,
     ))
     game_photo = bool(re.search(
-        r"\b(?:pokemon|videojuegos?|consolas?|juegos? moviles?|realidad aumentada|jugadores? con celular)\b",
+        r"\b(?:pokemon|videojuegos?|consolas?|juegos? moviles?|realidad aumentada|jugadores? con celular|smartphones?|juego en (?:un )?smartphone|gaming)\b",
         context,
     ))
     if game_story and not game_photo:
@@ -2057,7 +2079,17 @@ def _photo_score(article, photo):
         re.search(r"\b(?:mercados?|mercado publico|mercado de abasto)\b", context)
         and not re.search(r"\b(?:covid|sanidad|epidemia)\b", context)
     )
+    market_c5_story = bool(
+        re.search(r"\bmercados?\b", headline)
+        and re.search(r"\b(?:c5|camaras?|vigilancia|conectad[oa]s?)\b", headline)
+    )
+    market_c5_photo = bool(re.search(
+        r"\b(?:mercados?|mercado publico|mercado de abasto|tianguis|puestos)\b",
+        context,
+    ))
     if market_funding_story and not market_funding_photo:
+        return -10000
+    if market_c5_story and not market_c5_photo:
         return -10000
     if music_story and not music_photo:
         return -10000
@@ -2293,6 +2325,7 @@ def _photo_score(article, photo):
     themed_category = (
         (photo_category == "Seguridad" and game_story and game_photo)
         or (photo_category == "Servicios" and market_funding_story and market_funding_photo)
+        or (photo_category == "Servicios" and market_c5_story and market_c5_photo)
         or (photo_category == "Cultura" and music_story and music_photo)
         or (photo_category == "Medio Ambiente" and (
             (weather_story and weather_photo) or (animal_story and animal_photo)

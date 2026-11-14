@@ -269,7 +269,7 @@
   }
   return {assigned:selections.size,distinct:new Set(selections.values()).size,available:allKeys.length};
  }
- fetch('/assets/fotos/indice-noticias-1100.json?v=20261113-pharmacy-context1',{cache:'force-cache'})
+ fetch('/assets/fotos/indice-noticias-1100.json?v=20261113-editorial-photo-context3',{cache:'force-cache'})
  .then(r=>{if(!r.ok)throw Error('HTTP '+r.status);return r.json()})
  .then(data=>{
    const items=Array.isArray(data.photos)?data.photos:[];
