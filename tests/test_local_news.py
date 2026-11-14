@@ -491,7 +491,7 @@ class LocalNewsTests(unittest.TestCase):
         self.assertIsNotNone(different)
         self.assertEqual(len(dedupe_homepage_events([tv_azteca, different])), 2)
 
-    def test_same_november_16_metro_holiday_schedule_is_grouped_but_both_sources_remain_in_archive(self):
+    def test_same_november_16_metro_holiday_schedule_is_grouped_but_all_sources_remain_in_archive(self):
         claro = standardize({
             "title": "Metro de la CDMX cambiará horario el lunes 16 de noviembre: ¿cómo queda y por qué razón?",
             "url": "https://news.google.com/rss/articles/metro-holiday-claro-sports",
