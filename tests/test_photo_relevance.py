@@ -2416,8 +2416,6 @@ class CurrentFeedEditorialPhotoRegressionTests(unittest.TestCase):
                 self.assertEqual(photo["topic"], expected)
 
 
-if __name__ == "__main__":
-    unittest.main()
 
 class CurrentEditorialPhotoRegressionTests(unittest.TestCase):
     def make_article(self, title, category="CDMX", source="Medio de prueba"):
@@ -2525,4 +2523,5 @@ class CurrentEditorialPhotoRegressionTests(unittest.TestCase):
                     self.assertTrue(photo.get("context", "").startswith(
                         "Imagen de carácter ilustrativo y referencial;"
                     ))
-
+if __name__ == "__main__":
+    unittest.main()
