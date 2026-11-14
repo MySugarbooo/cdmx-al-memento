@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-14 10:50 UTC",
+  "updated": "2026-11-14 11:06 UTC",
   "boroughs": [
     {
       "name": "La Magdalena Contreras",
@@ -6826,6 +6826,27 @@
           "borough": "Cuajimalpa de Morelos",
           "location": "Cuajimalpa de Morelos (mencionada en el titular)",
           "local_url": "/noticias/?id=492727feeb61b4e4fc77&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con El Sol de México, el titular publicado es: «Destaca Cuajimalpa primer lugar en eficiencia policial: presenta alcalde avances en seguridad y obra pública». La información publicada por El Sol de México aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "archivo_seguridad_001",
+            "kind": "representativa",
+            "url": "/assets/fotos/archivo_seguridad_001.jpg",
+            "category": "Seguridad",
+            "borough": "",
+            "topic": "Adquisición patrullas para la Policía 03",
+            "keywords": [
+              "Seguridad"
+            ],
+            "author": "Gobierno de la Ciudad de México",
+            "license": "CC BY 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Adquisici%C3%B3n_patrullas_para_la_Polic%C3%ADa_03.jpg"
+          },
           "alternate_versions": [
             {
               "title": "Destaca Cuajimalpa primer lugar en eficiencia policial: presenta alcalde avances en seguridad y obra pública",
@@ -6860,28 +6881,7 @@
                 "source": "https://commons.wikimedia.org/wiki/File:Patrulla_vecinal.jpg"
               }
             }
-          ],
-          "brief": {
-            "lead": "De acuerdo con El Sol de México, el titular publicado es: «Destaca Cuajimalpa primer lugar en eficiencia policial: presenta alcalde avances en seguridad y obra pública». La información publicada por El Sol de México aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
-            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "archivo_seguridad_001",
-            "kind": "representativa",
-            "url": "/assets/fotos/archivo_seguridad_001.jpg",
-            "category": "Seguridad",
-            "borough": "",
-            "topic": "Adquisición patrullas para la Policía 03",
-            "keywords": [
-              "Seguridad"
-            ],
-            "author": "Gobierno de la Ciudad de México",
-            "license": "CC BY 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Adquisici%C3%B3n_patrullas_para_la_Polic%C3%ADa_03.jpg"
-          }
+          ]
         },
         {
           "title": "Segundo Informe de Cuajimalpa: Alcaldía destaca avances en seguridad y servicios públicos",
@@ -7721,19 +7721,19 @@
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           },
           "photo": {
-            "id": "archivo_seguridad_003",
+            "id": "archivo_seguridad_002",
             "kind": "representativa",
-            "url": "/assets/fotos/archivo_seguridad_003.jpg",
+            "url": "/assets/fotos/archivo_seguridad_002.jpg",
             "category": "Seguridad",
             "borough": "",
-            "topic": "Adquisición patrullas para la Policía 02",
+            "topic": "Patrulla vecinal",
             "keywords": [
               "Seguridad"
             ],
-            "author": "Gobierno de la Ciudad de México",
-            "license": "CC BY 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Adquisici%C3%B3n_patrullas_para_la_Polic%C3%ADa_02.jpg"
+            "author": "Daniel Yonka",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Patrulla_vecinal.jpg"
           }
         },
         {
@@ -11533,24 +11533,6 @@
           "borough": "Iztapalapa",
           "location": "Iztapalapa (mencionada en el titular)",
           "local_url": "/noticias/?id=a58ad6ee8ccbb058a470&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con Quadratín México, el titular publicado es: «Procesan a presunto extorsionador en la alcaldía Iztapalapa». La información publicada por Quadratín México aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
-            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "alcaldia_iztapalapa",
-            "kind": "representativa",
-            "url": "/assets/alcaldias/iztapalapa.jpg",
-            "category": "CDMX",
-            "borough": "Iztapalapa",
-            "topic": "Vista de Iztapalapa desde el Cerro de la Estrella",
-            "author": "Secretaría de Cultura Ciudad de México from México",
-            "license": "CC BY 2.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-            "source": "https://commons.wikimedia.org/wiki/File:MX_MM_MUSEO_CERRO_DE_LA_ESTRELLA_%2849522225751%29.jpg"
-          },
           "alternate_versions": [
             {
               "title": "Procesan a presunto extorsionador en la alcaldía Iztapalapa",
@@ -11582,7 +11564,13 @@
                 "source": "https://commons.wikimedia.org/wiki/File:Claudia_Sheinbaum_entrega_patrullas_Iztapalapa_01.jpg"
               }
             }
-          ]
+          ],
+          "brief": {
+            "lead": "De acuerdo con Quadratín México, el titular publicado es: «Procesan a presunto extorsionador en la alcaldía Iztapalapa». La información publicada por Quadratín México aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          }
         },
         {
           "title": "Vinculan a Proceso al 'Choppersito', Presunto Generador de Violencia en Iztapalapa",
@@ -11600,21 +11588,6 @@
             "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
             "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "commons_20284563",
-            "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Metro_Iztapalapa_02.jpg/960px-Metro_Iztapalapa_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "category": "Alcaldías",
-            "borough": "",
-            "topic": "Metro Iztapalapa 02",
-            "keywords": [
-              "Iztapalapa Ciudad de México"
-            ],
-            "author": "GAED",
-            "license": "CC BY-SA 3.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Metro_Iztapalapa_02.jpg"
           },
           "alternate_versions": [
             {
@@ -11648,6 +11621,39 @@
                 "license": "CC BY 4.0",
                 "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
                 "source": "https://commons.wikimedia.org/wiki/File:Claudia_Sheinbaum_entrega_patrullas_Iztapalapa_03.jpg"
+              }
+            },
+            {
+              "title": "Vinculan a Proceso al 'Choppersito', Presunto Generador de Violencia en Iztapalapa",
+              "description": "De acuerdo con N+, el titular publicado es: «Vinculan a Proceso al 'Choppersito', Presunto Generador de Violencia en Iztapalapa». La información publicada por N+ aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+              "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPUkJpQlpSSHZiUnRzaDhyNndxRjBDMlY5NEIzWmZETGRQWTRZTzhHcFlzanFwMThuV1hySC12aS1yZ3Roa0JTcUhoV21NeFBPTDRQN21qOHFiX1R2LWkzeGZRelZfSF9WcEFWaFF6bkxXV3QzU2NvZjlCUnpvejJIVmV0NjF1bG9PODBBbVJGRHdSQmJOQ201V20xcXFCbmtzU2s2LTRPYUtsdHh3ZzZiSUdjeTFJanhIaW1hRlV6VnZJS3o3Q3NxTzgxcw?oc=5",
+              "source": "N+",
+              "date": "2026-11-13",
+              "published_at": "2026-11-14T05:55:00Z",
+              "category": "Seguridad",
+              "borough": "Iztapalapa",
+              "location": "Iztapalapa (mencionada en el titular)",
+              "local_url": "/noticias/?id=0f498ad4661b07e779c6&mes=2026-11",
+              "brief": {
+                "lead": "De acuerdo con N+, el titular publicado es: «Vinculan a Proceso al 'Choppersito', Presunto Generador de Violencia en Iztapalapa». La información publicada por N+ aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+                "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+                "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+              },
+              "photo": {
+                "id": "commons_20284563",
+                "kind": "representativa",
+                "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Metro_Iztapalapa_02.jpg/960px-Metro_Iztapalapa_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+                "category": "Alcaldías",
+                "borough": "",
+                "topic": "Metro Iztapalapa 02",
+                "keywords": [
+                  "Iztapalapa Ciudad de México"
+                ],
+                "author": "GAED",
+                "license": "CC BY-SA 3.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+                "source": "https://commons.wikimedia.org/wiki/File:Metro_Iztapalapa_02.jpg"
               }
             }
           ]
@@ -11737,21 +11743,6 @@
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           },
-          "photo": {
-            "id": "commons_46687561",
-            "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Vistas_de_la_Ciudad_de_M%C3%A9xico_desde_la_Torre_Latinoamericana_02.JPG/960px-Vistas_de_la_Ciudad_de_M%C3%A9xico_desde_la_Torre_Latinoamericana_02.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "category": "CDMX",
-            "borough": "",
-            "topic": "Vistas de la Ciudad de México desde la Torre Latinoamericana 02",
-            "keywords": [
-              "Torre Latinoamericana Ciudad de México"
-            ],
-            "author": "Luisalvaz",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Vistas_de_la_Ciudad_de_M%C3%A9xico_desde_la_Torre_Latinoamericana_02.JPG"
-          },
           "alternate_versions": [
             {
               "title": "Dónde comer chicharrones preparados y quesadillas de sesos baratos en Iztapalapa, CDMX",
@@ -11782,6 +11773,39 @@
                 "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
                 "source": "https://commons.wikimedia.org/wiki/File:MX_MM_MUSEO_CERRO_DE_LA_ESTRELLA_%2849522225751%29.jpg"
               }
+            },
+            {
+              "title": "Dónde comer chicharrones preparados y quesadillas de sesos baratos en Iztapalapa, CDMX",
+              "description": "De acuerdo con TV Azteca, el titular publicado es: «Dónde comer chicharrones preparados y quesadillas de sesos baratos en Iztapalapa, CDMX». La información publicada por TV Azteca aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+              "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNSG5QM0ZSMFNCUGNkNWdCcTVCTlVNcVlMV1VIVkRCR1YxMGR5YTh6dk1VaGpTejNWRTB6X3lqVkx6dXBiNVl1clduMFNvOXZTYkNNbExienNCR3pKb2VLQlU0NDN2VWp4N2w2ZlRacW1VUlVCbnZUUW1XeTdQY1hMcjFLTVJjVC1acl9UMGxRamVpYWdjUm90cFNNTkNMUmJCdXhVQVVGSlZjbVJjZXItWS1rN2c3bUhPRm9fSEhUQ1NvZlVZdHI4R3hLdzcxSGYwTXBMVlprWQ?oc=5",
+              "source": "TV Azteca",
+              "date": "2026-11-13",
+              "published_at": "2026-11-14T00:08:54Z",
+              "category": "CDMX",
+              "borough": "Iztapalapa",
+              "location": "Iztapalapa (mencionada en el titular)",
+              "local_url": "/noticias/?id=fc31b8ba5e071ccd905c&mes=2026-11",
+              "brief": {
+                "lead": "De acuerdo con TV Azteca, el titular publicado es: «Dónde comer chicharrones preparados y quesadillas de sesos baratos en Iztapalapa, CDMX». La información publicada por TV Azteca aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+                "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+                "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+              },
+              "photo": {
+                "id": "commons_46687561",
+                "kind": "representativa",
+                "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Vistas_de_la_Ciudad_de_M%C3%A9xico_desde_la_Torre_Latinoamericana_02.JPG/960px-Vistas_de_la_Ciudad_de_M%C3%A9xico_desde_la_Torre_Latinoamericana_02.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+                "category": "CDMX",
+                "borough": "",
+                "topic": "Vistas de la Ciudad de México desde la Torre Latinoamericana 02",
+                "keywords": [
+                  "Torre Latinoamericana Ciudad de México"
+                ],
+                "author": "Luisalvaz",
+                "license": "CC BY-SA 4.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "https://commons.wikimedia.org/wiki/File:Vistas_de_la_Ciudad_de_M%C3%A9xico_desde_la_Torre_Latinoamericana_02.JPG"
+              }
             }
           ]
         },
@@ -11801,21 +11825,6 @@
             "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
             "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "archivo_seguridad_001",
-            "kind": "representativa",
-            "url": "/assets/fotos/archivo_seguridad_001.jpg",
-            "category": "Seguridad",
-            "borough": "",
-            "topic": "Adquisición patrullas para la Policía 03",
-            "keywords": [
-              "Seguridad"
-            ],
-            "author": "Gobierno de la Ciudad de México",
-            "license": "CC BY 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Adquisici%C3%B3n_patrullas_para_la_Polic%C3%ADa_03.jpg"
           },
           "alternate_versions": [
             {
@@ -11882,6 +11891,39 @@
                 "license": "CC BY 4.0",
                 "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
                 "source": "https://commons.wikimedia.org/wiki/File:Claudia_Sheinbaum_entrega_patrullas_Iztapalapa_02.jpg"
+              }
+            },
+            {
+              "title": "Vinculan a proceso a Ismael “N” por extorsionar a comerciante en Iztapalapa",
+              "description": "De acuerdo con Sociedad Noticias, el titular publicado es: «Vinculan a proceso a Ismael “N” por extorsionar a comerciante en Iztapalapa». La información publicada por Sociedad Noticias aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+              "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPQjFLOXE1WF9iUHVHU2JsQ1JhbndLeFN4enB4YnJsZVlFcmRmcXJubVpCYlFGNDRoWEdJb05WSmo4RldIMnhHRTljcUVHQnN0WDlzWnVxMHpPMjAtbmotYjNQMlBNWTRkNmxzS2Q2MHJQWWNBWDl4bEZKY0piTWd3c28wUWdqLUpTeG4weG1BcWt5dXZsRjZoczE1OVZVNHV1QUxwWFRJUHZhbWlyTldNSExEdTdvdw?oc=5",
+              "source": "Sociedad Noticias",
+              "date": "2026-11-13",
+              "published_at": "2026-11-13T23:30:00Z",
+              "category": "Seguridad",
+              "borough": "Iztapalapa",
+              "location": "Iztapalapa (mencionada en el titular)",
+              "local_url": "/noticias/?id=e2986519419026dd861e&mes=2026-11",
+              "brief": {
+                "lead": "De acuerdo con Sociedad Noticias, el titular publicado es: «Vinculan a proceso a Ismael “N” por extorsionar a comerciante en Iztapalapa». La información publicada por Sociedad Noticias aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+                "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+                "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+              },
+              "photo": {
+                "id": "archivo_seguridad_001",
+                "kind": "representativa",
+                "url": "/assets/fotos/archivo_seguridad_001.jpg",
+                "category": "Seguridad",
+                "borough": "",
+                "topic": "Adquisición patrullas para la Policía 03",
+                "keywords": [
+                  "Seguridad"
+                ],
+                "author": "Gobierno de la Ciudad de México",
+                "license": "CC BY 4.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+                "source": "https://commons.wikimedia.org/wiki/File:Adquisici%C3%B3n_patrullas_para_la_Polic%C3%ADa_03.jpg"
               }
             }
           ]
@@ -12295,19 +12337,19 @@
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           },
           "photo": {
-            "id": "archivo_seguridad_011",
+            "id": "seguridad",
             "kind": "representativa",
-            "url": "/assets/fotos/archivo_seguridad_011.jpg",
+            "url": "/assets/fotos/seguridad.jpg",
             "category": "Seguridad",
             "borough": "",
-            "topic": "Claudia Sheinbaum entrega patrullas Iztapalapa 02",
+            "topic": "Patrulla de Ciudad de México",
             "keywords": [
               "Seguridad"
             ],
-            "author": "Gobierno de la Ciudad de México",
-            "license": "CC BY 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Claudia_Sheinbaum_entrega_patrullas_Iztapalapa_02.jpg"
+            "author": "RainerRowe",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.es",
+            "source": "https://commons.wikimedia.org/wiki/File:Patrulla_cdmx.jpg"
           }
         },
         {
@@ -19651,21 +19693,6 @@
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "commons_66033709",
-            "kind": "representativa",
-            "url": "https://upload.wikimedia.org/wikipedia/commons/2/26/Canales_de_Xochimilco%2C_Ciudad_de_M%C3%A9xico_%2832226551093%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-            "category": "CDMX",
-            "borough": "",
-            "topic": "Canales de Xochimilco, Ciudad de México (32226551093)",
-            "keywords": [
-              "CDMX"
-            ],
-            "author": "Comisión Mexicana de Filmaciones from México D. F., México",
-            "license": "CC BY-SA 2.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Canales_de_Xochimilco,_Ciudad_de_M%C3%A9xico_(32226551093).jpg"
           }
         },
         {
