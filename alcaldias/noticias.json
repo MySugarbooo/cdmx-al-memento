@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-14 08:43 UTC",
+  "updated": "2026-11-14 10:12 UTC",
   "boroughs": [
     {
       "name": "La Magdalena Contreras",
@@ -18128,33 +18128,6 @@
           "borough": "Venustiano Carranza",
           "location": "Venustiano Carranza (mencionada en el titular)",
           "local_url": "/noticias/?id=48ad03698ec605252a33&mes=2026-11",
-          "source_url": "https://oem.com.mx/la-prensa/policiaca/mueren-dos-motociclistas-tras-chocar-contra-una-camioneta-en-venustiano-carranza-33118910",
-          "brief": {
-            "lead": "De acuerdo con La Prensa, el titular publicado es: «Mueren dos motociclistas tras chocar contra una camioneta en Venustiano Carranza». De acuerdo con La Prensa, se informa de un hecho vial relacionado con una motocicleta en Venustiano Carranza. El propio titular señala más de un fallecimiento, sin que esta ficha agregue cifras ni identidades. Se requiere consultar la nota original para conocer el punto exacto, las circunstancias y los reportes oficiales, sin atribuir responsabilidades sin pruebas.",
-            "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
-            "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "contexto_motocicleta_zocalo_brigada_2017",
-            "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Ayuda_tras_el_Terremoto_de_Puebla_de_2017_-_Ciudad_de_M%C3%A9xico_-_3.jpg/960px-Ayuda_tras_el_Terremoto_de_Puebla_de_2017_-_Ciudad_de_M%C3%A9xico_-_3.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
-            "category": "CDMX",
-            "borough": "",
-            "topic": "Motocicleta de apoyo de una brigada voluntaria en el Zócalo de la Ciudad de México tras el sismo de 2017 (imagen representativa; no corresponde a una ",
-            "keywords": [
-              "motocicleta",
-              "moto",
-              "Zócalo",
-              "brigada voluntaria",
-              "sismo 2017",
-              "Ciudad de México"
-            ],
-            "author": "ProtoplasmaKid",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-            "source": "https://commons.wikimedia.org/wiki/File:Ayuda_tras_el_Terremoto_de_Puebla_de_2017_-_Ciudad_de_M%C3%A9xico_-_3.jpg"
-          },
           "alternate_versions": [
             {
               "title": "Mueren dos motociclistas tras chocar contra una camioneta en Venustiano Carranza",
@@ -18232,7 +18205,33 @@
                 "source": "https://commons.wikimedia.org/wiki/File:Ayuda_tras_el_Terremoto_de_Puebla_de_2017_-_Ciudad_de_M%C3%A9xico_-_3.jpg"
               }
             }
-          ]
+          ],
+          "brief": {
+            "lead": "De acuerdo con La Prensa, el titular publicado es: «Mueren dos motociclistas tras chocar contra una camioneta en Venustiano Carranza». De acuerdo con La Prensa, se informa de un hecho vial relacionado con una motocicleta en Venustiano Carranza. El propio titular señala más de un fallecimiento, sin que esta ficha agregue cifras ni identidades. Se requiere consultar la nota original para conocer el punto exacto, las circunstancias y los reportes oficiales, sin atribuir responsabilidades sin pruebas.",
+            "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
+            "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "contexto_motocicleta_zocalo_brigada_2017",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Ayuda_tras_el_Terremoto_de_Puebla_de_2017_-_Ciudad_de_M%C3%A9xico_-_3.jpg/960px-Ayuda_tras_el_Terremoto_de_Puebla_de_2017_-_Ciudad_de_M%C3%A9xico_-_3.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+            "category": "CDMX",
+            "borough": "",
+            "topic": "Motocicleta de apoyo de una brigada voluntaria en el Zócalo de la Ciudad de México tras el sismo de 2017 (imagen representativa; no corresponde a una ",
+            "keywords": [
+              "motocicleta",
+              "moto",
+              "Zócalo",
+              "brigada voluntaria",
+              "sismo 2017",
+              "Ciudad de México"
+            ],
+            "author": "ProtoplasmaKid",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "source": "https://commons.wikimedia.org/wiki/File:Ayuda_tras_el_Terremoto_de_Puebla_de_2017_-_Ciudad_de_M%C3%A9xico_-_3.jpg"
+          }
         },
         {
           "title": "Secretaría de Seguridad Ciudadana detiene a tres hombres por presunta privación de la libertad en Venustiano Carranza",
