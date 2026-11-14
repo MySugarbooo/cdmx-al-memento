@@ -30,6 +30,8 @@ VERIFIED_SOURCE_LINKS = {
         "https://www.sdpnoticias.com/estados/cdmx/mauricio-tabe-presenta-su-quinto-informe-de-gobierno-en-miguel-hidalgo/",
     ("Capital CDMX", "/noticias/?id=74914aa9a2dc0fd99b2f&mes=2026-11"):
         "https://capital-cdmx.org/presupuesto-cuidados-2027-cdmx-cuanto-dinero-llegara-anexo-31-desglose/",
+    ("Hoy Tamaulipas", "/noticias/?id=5a9a1f1ebbab943a2f55&mes=2026-11"):
+        "https://www.hoytamaulipas.net/notas/607182/El-Mante-presente-en-la-Asamblea-Nacional-de-Seguridad-Publica-Municipal-2025.html",
 }
 SENSITIVE_MEDIA_TITLE = re.compile(
     r"\b(?:violaci[oó]n|abuso sexual|agresi[oó]n sexual|acoso sexual|violencia sexual|"

@@ -32,7 +32,7 @@
   try{
    const u=new URL(url);
    return u.protocol==='https:'&&!u.username&&!u.password&&(
-    u.hostname==='news.google.com'||u.hostname==='commons.wikimedia.org'||
+    u.hostname==='news.google.com'||u.hostname==='commons.wikimedia.org'||u.hostname==='www.hoytamaulipas.net'||
     (verified===true&&['comova.mx','mayacomunicacion.com.mx','www.elgrafico.mx'].includes(u.hostname)&&u.pathname!=='/')
    );
   }catch{return false;}
@@ -119,9 +119,9 @@
   section.append(data);
   section.append(elem('p','local-verification-method',article.brief?.method||
    'Síntesis preparada a partir del título y metadatos disponibles.'));
-  if(safeExternal(article.url,article.editorial_verified===true)){
+  if(safeExternal(article.source_url||article.url,article.editorial_verified===true)){
    const source=elem('a','local-verification-source','Consultar la fuente original');
-   source.href=article.url;source.target='_blank';source.rel='noopener noreferrer nofollow';
+   source.href=article.source_url||article.url;source.target='_blank';source.rel='noopener noreferrer nofollow';
    section.append(source);
   }
   body.append(section);
@@ -135,9 +135,9 @@
    topSource.replaceChildren();
    topSource.hidden=false;
    topSource.append(document.createTextNode('Información de '+(article.source||'medio identificado')+' · '));
-   if(safeExternal(article.url,article.editorial_verified===true)){
+   if(safeExternal(article.source_url||article.url,article.editorial_verified===true)){
     const link=elem('a','source-action','Ver fuente original ↗');
-    link.href=article.url;link.target='_blank';link.rel='noopener noreferrer nofollow';
+    link.href=article.source_url||article.url;link.target='_blank';link.rel='noopener noreferrer nofollow';
     topSource.append(link);
    }else topSource.append(document.createTextNode('Enlace original no disponible'));
   }
@@ -176,11 +176,11 @@
   quick.append(points);body.append(quick);
   const original=elem('section','local-story-sources');
   original.append(elem('h2','','Fuente original'));
-  if(safeExternal(article.url,article.editorial_verified===true)){
+  if(safeExternal(article.source_url||article.url,article.editorial_verified===true)){
    const link=elem('a','local-source-link','Leer publicación de '+(article.source||'medio de origen')+' ↗');
-   link.href=article.url;link.target='_blank';link.rel='noopener noreferrer nofollow';original.append(link);
+   link.href=article.source_url||article.url;link.target='_blank';link.rel='noopener noreferrer nofollow';original.append(link);
   }else original.append(elem('p','','Enlace directo no disponible; consulta el medio identificado en la ficha de verificación.'));
-  original.append(elem('p','','El enlace puede pasar por Google Noticias antes de abrir el medio.'));body.append(original);
+  original.append(elem('p','','Se enlaza la publicación original cuando existe una URL directa; en otros casos puede abrirse mediante Google Noticias.'));body.append(original);
   body.append(elem('p','local-story-byline','Redacción y resumen: Amau Kisumi · CDMX AL MEMENTO · Fuente informativa: '+(article.source||'No identificada')));
   addVerification(article,updated);
   const editorial=elem('section','local-story-editorial');
@@ -239,10 +239,27 @@
   if(!requested){renderList(recent);return;}
   let found=recent.find(x=>x.local_url===('/noticias/?id='+id+'&mes='+month));
   if(found){renderArticle(found,recent,current.updated);return;}
-  const archive=await readJSON(monthURL);
-  const all=Array.isArray(archive.articles)?archive.articles.filter(validArticle):[];
-  found=all.find(x=>x.local_url===('/noticias/?id='+id+'&mes='+month));
-  if(found){renderArticle(found,all,archive.updated);return;}
+  const expectedLocalUrl='/noticias/?id='+id+'&mes='+month;
+  let archive=null,all=[];
+  try{
+   archive=await readJSON(monthURL);
+   all=Array.isArray(archive.articles)?archive.articles.filter(validArticle):[];
+   found=all.find(x=>x.local_url===expectedLocalUrl);
+   if(found){renderArticle(found,all,archive.updated);return;}
+  }catch{}
+  // Si una corrección editorial mueve la fecha original a otro mes, conservar
+  // la URL histórica y la colección de comentarios asociada a su mes original.
+  let routeIndex=null;
+  try{routeIndex=await readJSON('/archivo/rutas.json')}catch{}
+  const archiveMonth=routeIndex?.routes?.[id];
+  if(/^\d{4}-\d{2}$/.test(archiveMonth||'')&&archiveMonth!==month){
+   try{
+    const moved=await readJSON('/archivo/'+archiveMonth+'.json');
+    const movedItems=Array.isArray(moved.articles)?moved.articles.filter(validArticle):[];
+    found=movedItems.find(x=>x.local_url===expectedLocalUrl);
+    if(found){renderArticle(found,movedItems,moved.updated);return;}
+   }catch{}
+  }
   title.textContent='No encontramos esta noticia en el archivo';
   intro.textContent='Es posible que haya vencido el periodo de conservación del periódico. Explora los titulares que siguen disponibles.';
   renderList(recent);

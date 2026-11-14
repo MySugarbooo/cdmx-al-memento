@@ -889,7 +889,7 @@ class BoroughAndArchiveTests(unittest.TestCase):
 
         self.assertEqual(fixed["date"], "2025-12-10")
         self.assertEqual(fixed["published_at"], "2025-12-11T01:31:04Z")
-        self.assertTrue(fixed["local_url"].endswith("&mes=2025-12"))
+        self.assertTrue(fixed["local_url"].endswith("&mes=2026-11"))
         self.assertEqual(
             fixed["source_url"],
             news.HOY_TAMAULIPAS_PATTY_CHIO_SOURCE_URL,
@@ -931,7 +931,11 @@ class BoroughAndArchiveTests(unittest.TestCase):
                 )
                 self.assertEqual(len(saved["articles"]), 1)
                 self.assertEqual(saved["articles"][0]["date"], "2025-12-10")
+                self.assertTrue(saved["articles"][0]["local_url"].endswith("&mes=2026-11"))
                 self.assertFalse((archive / "2026-11.json").exists())
+                route_id = saved["articles"][0]["local_url"].split("id=", 1)[1].split("&", 1)[0]
+                routes = json.loads((archive / "rutas.json").read_text(encoding="utf-8"))
+                self.assertEqual(routes["routes"][route_id], "2025-12")
                 self.assertEqual(months[0]["month"], "2025-12")
 
     def test_older_than_365_days_expires_even_within_month(self):

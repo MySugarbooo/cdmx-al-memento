@@ -64,6 +64,26 @@ class ArticlePhotoTests(unittest.TestCase):
         self.assertNotIn('href="' + item["url"] + '"', page)
 
 
+    def test_hoy_tamaulipas_original_source_url_is_clickable(self):
+        source_url = (
+            "https://www.hoytamaulipas.net/notas/607182/"
+            "El-Mante-presente-en-la-Asamblea-Nacional-de-Seguridad-Publica-Municipal-2025.html"
+        )
+        item = {
+            "title": "Participa Patty Chio en Primera Asamblea de Seguridad Publica Municipal en CDMX",
+            "source": "Hoy Tamaulipas",
+            "source_url": source_url,
+            "url": "https://news.google.com/rss/articles/example?oc=5",
+            "date": "2025-12-10",
+            "published_at": "2025-12-11T01:31:04Z",
+            "local_url": "/noticias/?id=5a9a1f1ebbab943a2f55&mes=2026-11",
+            "brief": {"lead": "La alcaldesa de El Mante participó en la asamblea de seguridad municipal."},
+        }
+        page = render(item, "5a9a1f1ebbab943a2f55")
+        self.assertIn('href="' + source_url + '"', page)
+        self.assertIn("Ver fuente original", page)
+        self.assertNotIn('href="' + item["url"] + '"', page)
+
     def test_local_photo_keeps_credits(self):
         html = render_photo({"category": "Seguridad", "photo": {
             "url": "/assets/fotos/seguridad.jpg", "kind": "representativa",

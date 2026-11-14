@@ -1,5 +1,6 @@
 """Regression tests for the public SEO/deployment checker."""
 import unittest
+from pathlib import Path
 
 from scripts.check_public_seo import (
     DEPLOY_ATTEMPTS,
@@ -103,6 +104,17 @@ class PublicSeoTests(unittest.TestCase):
         source, content = homepage_script_source()
         self.assertRegex(source, r"^/assets/neo-home\.js\?v=[a-zA-Z0-9_-]+$")
         self.assertIn(b"function isWeatherForecastOnly(article)", content)
+
+    def test_moved_article_routes_use_archive_route_index(self):
+        script = (Path(__file__).resolve().parent.parent / "assets" / "noticias-locales.js").read_text(encoding="utf-8")
+        self.assertIn("readJSON('/archivo/rutas.json')", script)
+        self.assertIn("routeIndex?.routes?.[id]", script)
+        self.assertIn("'/archivo/'+archiveMonth+'.json'", script)
+
+    def test_moved_story_prefers_its_verified_direct_source_url(self):
+        script = (Path(__file__).resolve().parent.parent / "assets" / "noticias-locales.js").read_text(encoding="utf-8")
+        self.assertIn("article.source_url||article.url", script)
+        self.assertIn("www.hoytamaulipas.net", script)
 
     def test_sitemap_requires_unique_same_domain_urls(self):
         xml = (
