@@ -51,7 +51,7 @@ class PhotoRelevanceTests(unittest.TestCase):
         self.assertIn("Gustavo A. Madero", article["location"])
         self.assertIn("27 de noviembre de 2026", article["brief"]["lead"])
         self.assertIn("hasta un día antes", article["brief"]["lead"])
-        self.assertIn("no se consultó el cuerpo íntegro", article["brief"]["method"])
+        self.assertIn("No se consultó el cuerpo íntegro", article["brief"]["method"])
         self.assertEqual(
             article["source_url"],
             "https://oem.com.mx/elsoldemexico/metropoli/ofrecen-taller-gratuito-de-manejo-defensivo-y-preventivo-para-mujeres-en-cdmx-33130686",
