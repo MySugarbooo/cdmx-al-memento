@@ -45,6 +45,17 @@ AHORA_NOTICIAS_TLALPAN_PERRITA_SOURCE_URL = "https://ahoranoticias.com.mx/nacion
 MAIL = "sanchezaxochitl@gmail.com"
 RETENTION_DAYS = 365
 
+PHOTO_LICENSE_URLS = {
+    "CC BY-SA 4.0": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "CC BY-SA 3.0": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "CC BY 4.0": "https://creativecommons.org/licenses/by/4.0/",
+    "CC BY 3.0": "https://creativecommons.org/licenses/by/3.0/",
+    "CC BY 2.0": "https://creativecommons.org/licenses/by/2.0/",
+    "CC BY-SA 2.0": "https://creativecommons.org/licenses/by-sa/2.0/",
+    "CC BY-SA 2.5": "https://creativecommons.org/licenses/by-sa/2.5/",
+    "CC0": "https://creativecommons.org/publicdomain/zero/1.0/",
+}
+
 def clear_sensitive_context_photos(items):
     """Retira del archivo fotos representativas de titulares sensibles."""
     removed = 0
@@ -129,6 +140,22 @@ ALIASES = {
 def clean(value):
     value = re.sub(r"<[^>]*>", "", html.unescape(str(value or "")))
     return SPACES.sub(" ", value).strip()
+
+def normalize_photo_license(photo):
+    """Restaura enlaces CC conocidos en fotos históricas de Wikimedia; no adivina licencias."""
+    if not isinstance(photo, dict):
+        return photo
+    normalized = dict(photo)
+    if str(normalized.get("licenseUrl") or "").strip():
+        return normalized
+    source = str(normalized.get("source") or "")
+    if not source.startswith("https://commons.wikimedia.org/wiki/File:"):
+        return normalized
+    license_name = str(normalized.get("license") or "").strip()
+    license_url = PHOTO_LICENSE_URLS.get(license_name)
+    if license_url:
+        normalized["licenseUrl"] = license_url
+    return normalized
 
 
 def fold(value):
@@ -796,9 +823,12 @@ def standardize(article):
             version_date = str(version.get("date") or "")
             if not version_title or not DAY_RE.fullmatch(version_date):
                 continue
-            preserved.append({
+            preserved_version = {
                 key: version[key] for key in ARCHIVE_VERSION_FIELDS if key in version
-            })
+            }
+            if isinstance(preserved_version.get("photo"), dict):
+                preserved_version["photo"] = normalize_photo_license(preserved_version["photo"])
+            preserved.append(preserved_version)
         if preserved:
             result["alternate_versions"] = preserved
     if curated:
@@ -846,7 +876,7 @@ def standardize(article):
         result["brief"] = summarize(result)
     if (isinstance(article.get("photo"), dict) and
             not (curated and result.get("sensitive_media") is True)):
-        result["photo"] = article["photo"]
+        result["photo"] = normalize_photo_license(article["photo"])
     # Fotografías de accidentes de archivo pueden ser solo contexto; no
     # conservarlas tras la revisión editorial si no documentan ese hecho.
     result["description"] = result["brief"]["lead"]
