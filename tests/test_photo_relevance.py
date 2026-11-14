@@ -2394,10 +2394,10 @@ class CurrentFeedEditorialPhotoRegressionTests(unittest.TestCase):
         self.assert_photo_replaced(
             title, "Movilidad", "commons_80021377", "contexto_aicm_aviones_pista_2026")
 
-    def test_pokemon_go_story_replaces_market_with_representative_video_game_photo(self):
+    def test_pokemon_go_story_replaces_market_with_specific_gameplay_photo(self):
         self.assert_photo_replaced(
             "Pokémon Go genera 420,000 dólares en CDMX y muestra que México es un mercado clave para el juego",
-            "Cultura", "commons_75214598", "contexto_consolas_videojuegos_2026")
+            "Cultura", "commons_75214598", "contexto_pokemon_go_bench_2016")
 
     def test_garbage_story_replaces_treasury_hall_with_concert_photo(self):
         self.assert_photo_replaced(
