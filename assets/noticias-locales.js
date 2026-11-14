@@ -121,7 +121,7 @@
    'Síntesis preparada a partir del título y metadatos disponibles.'));
   if(safeExternal(article.source_url||article.url,article.editorial_verified===true)){
    const source=elem('a','local-verification-source','Consultar la fuente original');
-   source.href=article.url;source.target='_blank';source.rel='noopener noreferrer nofollow';
+   source.href=article.source_url||article.url;source.target='_blank';source.rel='noopener noreferrer nofollow';
    section.append(source);
   }
   body.append(section);
