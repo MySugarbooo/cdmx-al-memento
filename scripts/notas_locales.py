@@ -1930,6 +1930,19 @@ def _photo_score(article, photo):
             context,
         ))
         return 5000 if metro_schedule_photo else -10000
+    # Un taller de manejo defensivo necesita contexto vial o de conducción;
+    # un monumento de CDMX no ilustra una capacitación para automovilistas.
+    driving_training_story = bool(re.search(
+        r"\b(?:manejo defensivo|manejo preventivo|taller de manejo|curso de manejo|conduccion segura)\b",
+        headline,
+    ))
+    if driving_training_story:
+        driving_training_photo = bool(re.search(
+            r"\b(?:trafico vehicular|transito vehicular|vialidad|carretera|autopista|"
+            r"automovilistas|vehiculos|automoviles|seguridad vial)\b",
+            context,
+        ))
+        return 5000 if driving_training_photo else -10000
     if vehicle_crash_story and not vehicle_road_photo:
         return -10000
     if (photo.get("id") == "contexto_repartidores_motocicleta_cdmx"
