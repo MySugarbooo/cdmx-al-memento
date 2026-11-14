@@ -35,6 +35,7 @@ REPORTS = ROOT / "reports.json"
 MX = ZoneInfo("America/Mexico_City")
 SITE = "https://cdmx-al-memento.pages.dev"
 LA_PRENSA_VC_MOTORCYCLE_CRASH_SOURCE_URL = "https://oem.com.mx/la-prensa/policiaca/mueren-dos-motociclistas-tras-chocar-contra-una-camioneta-en-venustiano-carranza-33118910"
+SOCIEDAD_NOTICIAS_VC_MOTORCYCLE_CRASH_SOURCE_URL = "https://sociedad-noticias.com/2026/11/14/mueren-dos-motociclistas-tras-accidente-vial-en-venustiano-carranza/"
 HOY_TAMAULIPAS_PATTY_CHIO_SOURCE_URL = "https://www.hoytamaulipas.net/notas/607182/El-Mante-presente-en-la-Asamblea-Nacional-de-Seguridad-Publica-Municipal-2025.html"
 HOY_TAMAULIPAS_PATTY_CHIO_PUBLISHED_AT = "2025-12-10T19:31:04-06:00"
 HOY_TAMAULIPAS_PATTY_CHIO_ROUTE_MONTH = "2026-11"
@@ -603,13 +604,14 @@ def category_by_headline(title, feed_category, source=""):
 
 
 def is_vc_two_motorcyclists_crash(article):
-    """Reconoce la cobertura del choque mortal de dos motociclistas del 13-11-2026."""
+    """Reconoce las coberturas del mismo accidente ocurrido el 13-11-2026."""
     title = fold(article.get("title", ""))
+    date = str(article.get("date") or "")
     return (
-        str(article.get("date") or "") == "2026-11-13"
+        date in {"2026-11-13", "2026-11-14"}
         and bool(re.search(r"\bmueren dos motociclistas\b", title))
         and bool(re.search(r"\bvenustiano carranza\b", title))
-        and bool(re.search(r"\b(?:choque|chocar)\b", title))
+        and bool(re.search(r"\b(?:choque|chocar|accidente vial)\b", title))
     )
 
 
@@ -721,10 +723,15 @@ def standardize(article):
         # Mantener el mes de la ruta original para no romper enlaces ni comentarios existentes.
         result["local_url"] = local_link({**result, "date": HOY_TAMAULIPAS_PATTY_CHIO_ROUTE_MONTH + "-13"})
     if is_vc_two_motorcyclists_crash(result) and fold(source) == "el sol de mexico":
-        # Google News rotula la entrada como El Sol de México, pero el enlace abre
-        # la nota original de La Prensa; conservar el ID RSS y corregir atribución.
+        # Google News rotula la entrada como El Sol de México, pero la publicación
+        # original está en La Prensa. La fuente solo confirma el día 13, no una hora.
         result["source"] = "La Prensa"
+        result["date"] = "2026-11-13"
+        result["published_at"] = None
         result["source_url"] = LA_PRENSA_VC_MOTORCYCLE_CRASH_SOURCE_URL
+    elif is_vc_two_motorcyclists_crash(result) and fold(source) == "sociedad noticias":
+        # La segunda cobertura describe el mismo hecho y conserva su fecha de publicación.
+        result["source_url"] = SOCIEDAD_NOTICIAS_VC_MOTORCYCLE_CRASH_SOURCE_URL
     elif is_tlalpan_perrita_rescue(result) and source.casefold() == "howl.link":
         # El RSS muestra Howl.Link, pero el destino y la firma identifican a Ahora Noticias.
         result["source"] = "Ahora Noticias"
@@ -1210,7 +1217,8 @@ def editorial_event_key(article):
     """
     title = fold(article.get("title", ""))
     if is_vc_two_motorcyclists_crash(article):
-        return ("venustiano-carranza-two-motorcyclists", article.get("date"))
+        # La Prensa fecha el hecho el 13; Sociedad Noticias publicó su cobertura el 14.
+        return ("venustiano-carranza-two-motorcyclists", "2026-11-13")
     if is_tlalpan_perrita_rescue(article):
         return ("tlalpan-perrita-rescue-2026-11-13", article.get("date"))
     if (re.search(r"\bcoyoacan\b", title)
