@@ -2586,10 +2586,14 @@ def _photo_score(article, photo):
             return -10000
     # Una amenaza sin protesta requiere contexto de seguridad, no un simulacro.
     threat_story = bool(re.search(r"\b(?:amenaz\w*|vecino armado)\b", headline_for_photos))
-    threat_photo = bool(re.search(
-        r"\b(?:policias?|patrullas?|seguridad|fiscalia|investigacion penal|operativo policial)\b",
-        context,
-    ))
+    # Una ceremonia de graduación policial no es contexto operativo para una amenaza.
+    threat_photo = bool(
+        re.search(
+            r"\b(?:policias?|patrullas?|seguridad|fiscalia|investigacion penal|operativo policial)\b",
+            context,
+        )
+        and not re.search(r"\bgraduacion\b", topic)
+    )
     if threat_story and not protest_story and not threat_photo:
         return -10000
     # Una protesta sin componente ciclista no se ilustra con estaciones de EcoBici.
