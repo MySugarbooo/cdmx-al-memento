@@ -671,7 +671,7 @@ def standardize(article):
         "location": location,
     }
     result["local_url"] = local_link(result)
-    if is_vc_two_motorcyclists_crash(result) and source.casefold() == "el sol de mexico":
+    if is_vc_two_motorcyclists_crash(result) and fold(source) == "el sol de mexico":
         # Google News rotula la entrada como El Sol de México, pero el enlace abre
         # la nota original de La Prensa; conservar el ID RSS y corregir atribución.
         result["source"] = "La Prensa"
