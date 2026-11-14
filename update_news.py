@@ -391,9 +391,9 @@ def category_by_headline(title, feed_category, source=""):
     if (re.search(r"\bmarchas?\b", normalized)
             and re.search(r"\b(?:colaps\w*|trafico|puntos de partida|cierres?|bloqueos?)\b", normalized)):
         return "Movilidad"
-    # Conciertos, intérpretes, estrenos y alfombras de cine pertenecen a Cultura.
+    # Conciertos, teatro, intérpretes, estrenos y alfombras de cine pertenecen a Cultura.
     if re.search(
-        r"\b(?:cantantes?|cantautores?|canta|cantar|gira musical|canciones? ineditas|musica en vivo|"
+        r"\b(?:obras? de teatro|cartelera teatral|funciones? de teatro|cantantes?|cantautores?|canta|cantar|gira musical|canciones? ineditas|musica en vivo|"
         r"teatro metropolitan|alfombra|premiere|estreno|reparto|actores?|actrices?)\b",
         normalized,
     ):
