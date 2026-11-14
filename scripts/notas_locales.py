@@ -1918,6 +1918,22 @@ def _photo_score(article, photo):
         r"automovilistas)\b",
         context,
     ))
+    # Las notas sobre horarios u operación del Metro requieren contexto del propio
+    # sistema; una fotografía de un operativo de lluvias no es una ilustración válida.
+    metro_service_story = bool(
+        re.search(r"\b(?:metro|sistema de transporte colectivo|stc)\b", headline)
+        and re.search(
+            r"\b(?:horarios?|servicio|operacion|afluencia|avance de trenes|"
+            r"estaciones?|cierre|suspension|lineas?)\b",
+            headline,
+        )
+    )
+    metro_service_photo = bool(re.search(
+        r"\b(?:metro|sistema de transporte colectivo|stc|trenes?|estaciones?)\b",
+        context,
+    ))
+    if metro_service_story and not metro_service_photo:
+        return -10000
     if vehicle_crash_story and not vehicle_road_photo:
         return -10000
     if (photo.get("id") == "contexto_repartidores_motocicleta_cdmx"
