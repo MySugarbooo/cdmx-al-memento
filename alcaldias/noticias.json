@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-14 05:31 UTC",
+  "updated": "2026-11-14 07:22 UTC",
   "boroughs": [
     {
       "name": "La Magdalena Contreras",
@@ -2793,8 +2793,41 @@
     },
     {
       "name": "Azcapotzalco",
-      "count": 158,
+      "count": 159,
       "articles": [
+        {
+          "title": "Asesinan a Un Hombre y Un Niño de 10 Años en Alcaldía Azcapotzalco, en la CDMX",
+          "description": "De acuerdo con N+, el titular publicado es: «Asesinan a Un Hombre y Un Niño de 10 Años en Alcaldía Azcapotzalco, en la CDMX». La información publicada por N+ aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPNHNFbmNKaEdxNUp5UzNjZFl3LUpxcHB2SjVJTDFtYUN4NHd1YnUxNFMzWHJEZGdrTmNIU2tRQWZnd3g3UVVkXzhodkZEa0hQbTQ3VGQyY0tWSFVNaEhOb1k5OXlZYXhlZkJGd0hYclNsWFNILVdBQ3BQUEVGM0VlN042am1pR0FCZGlfMU9jTGJ3VFFIWm13d1dEMmUxeXRFc09KY0lIU0dfcGdhaVg1NEVPdFpyeWdlQTdLeEJ1N0hiYzhBbkM3TVNKWk9kNTFUSnRPcFdqVQ?oc=5",
+          "source": "N+",
+          "date": "2026-11-13",
+          "published_at": "2026-11-14T05:34:00Z",
+          "category": "Seguridad",
+          "borough": "Azcapotzalco",
+          "location": "Azcapotzalco (mencionada en el titular)",
+          "local_url": "/noticias/?id=0a3abec9941a9ad3518e&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con N+, el titular publicado es: «Asesinan a Un Hombre y Un Niño de 10 Años en Alcaldía Azcapotzalco, en la CDMX». La información publicada por N+ aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "seguridad",
+            "kind": "representativa",
+            "url": "/assets/fotos/seguridad.jpg",
+            "category": "Seguridad",
+            "borough": "",
+            "topic": "Patrulla de Ciudad de México",
+            "keywords": [
+              "Seguridad"
+            ],
+            "author": "RainerRowe",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.es",
+            "source": "https://commons.wikimedia.org/wiki/File:Patrulla_cdmx.jpg"
+          }
+        },
         {
           "title": "Asesinan a Balazos a un Hombre y a un Menor de 10 años en Azcapotzalco",
           "description": "De acuerdo con N+, el titular publicado es: «Asesinan a Balazos a un Hombre y a un Menor de 10 años en Azcapotzalco». La información publicada por N+ aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -2846,19 +2879,19 @@
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           },
           "photo": {
-            "id": "archivo_seguridad_005",
+            "id": "seguridad",
             "kind": "representativa",
-            "url": "/assets/fotos/archivo_seguridad_005.jpg",
+            "url": "/assets/fotos/seguridad.jpg",
             "category": "Seguridad",
             "borough": "",
-            "topic": "Jeep policia cdmx",
+            "topic": "Patrulla de Ciudad de México",
             "keywords": [
               "Seguridad"
             ],
-            "author": "Gobierno de la Ciudad de México",
+            "author": "RainerRowe",
             "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Jeep_policia_cdmx.jpg"
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.es",
+            "source": "https://commons.wikimedia.org/wiki/File:Patrulla_cdmx.jpg"
           },
           "alternate_versions": [
             {
@@ -2879,19 +2912,19 @@
                 "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
               },
               "photo": {
-                "id": "seguridad",
+                "id": "archivo_seguridad_005",
                 "kind": "representativa",
-                "url": "/assets/fotos/seguridad.jpg",
+                "url": "/assets/fotos/archivo_seguridad_005.jpg",
                 "category": "Seguridad",
                 "borough": "",
-                "topic": "Patrulla de Ciudad de México",
+                "topic": "Jeep policia cdmx",
                 "keywords": [
                   "Seguridad"
                 ],
-                "author": "RainerRowe",
+                "author": "Gobierno de la Ciudad de México",
                 "license": "CC BY-SA 4.0",
-                "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.es",
-                "source": "https://commons.wikimedia.org/wiki/File:Patrulla_cdmx.jpg"
+                "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "https://commons.wikimedia.org/wiki/File:Jeep_policia_cdmx.jpg"
               }
             }
           ]
@@ -4279,24 +4312,6 @@
             "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
             "source": "https://commons.wikimedia.org/wiki/File:PalaciodelosDeportes_Concierto.jpg"
           }
-        },
-        {
-          "title": "Clima en Azcapotzalco hoy miércoles 11 de noviembre: Temperaturas templadas y cielo nublado",
-          "description": "De acuerdo con El Heraldo de México, el titular publicado es: «Clima en Azcapotzalco hoy miércoles 11 de noviembre: Temperaturas templadas y cielo nublado». El pronóstico recogido por El Heraldo de México se refiere a condiciones meteorológicas en Azcapotzalco. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
-          "url": "https://news.google.com/rss/articles/CBMinwJBVV95cUxNaFVESmJlRzhnSWhMS3RRa2JXRzZMX0JRRV9OVjlfMHYtS0R2dHN3UTczX1ZnbDI2WFVLd3JPQVFPZ0QtT3V2cklpajJPUEotVVBzNkZEeDBBZkNEVVZkMXVoOVNsZ01pUEpoZ3RxQ1ZJTFRZLTh0eUdCLS1LalotZWNqRFh4LWItRjY3YkZJVkkzMldyMkdvMGtkVDBNMC04bmRNY2RsV0xvYXUtMXlFMkpBUlJTZU1GUWlDODJ5Z1R3c2hzRklSQTNTX184emsydGE2V3ZNNVJPRDl2MERfZnNWZXdLTUdncThkbXF0eDIzVnYxWF92NGRvSlVUOEQyTEJzT3RSVkxnQjllcW8zSFMtTmxGZ2ZQaktvYkNRVQ?oc=5",
-          "source": "El Heraldo de México",
-          "date": "2026-11-10",
-          "published_at": "2026-11-11T05:00:39Z",
-          "category": "CDMX",
-          "borough": "Azcapotzalco",
-          "location": "Azcapotzalco (mencionada en el titular)",
-          "local_url": "/noticias/?id=751c916caab51335e1d0&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con El Heraldo de México, el titular publicado es: «Clima en Azcapotzalco hoy miércoles 11 de noviembre: Temperaturas templadas y cielo nublado». El pronóstico recogido por El Heraldo de México se refiere a condiciones meteorológicas en Azcapotzalco. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
         }
       ]
     },
@@ -5069,7 +5084,7 @@
     },
     {
       "name": "Coyoacán",
-      "count": 185,
+      "count": 186,
       "articles": [
         {
           "title": "Jóvenes universitarios de Coyoacán suman su respaldo a Hannah De Lamadrid rumbo al 2027",
@@ -5077,7 +5092,7 @@
           "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOOGFMNDBJc1pBUUdEYlJuMVFwOVZSdHh5aDJkd3ljYUhqQnZONTNVV2t0VnE4WlRobDcyeDlCSWZ0NkNqdUxjZDhSUlpqWmpaVFlMWm5wZ01hMU55d2Mxb0I1R3hnYXBYUXRzaDZOVG90a19VOUcweTZVTzVhbHRTOVh5UERPRGFid215NzR4ZzVsQXcwc2t2cTRKdU0wSmhIT0oyTy11REtBQWJKM0tPRWxUMzkxaVJHOUFkRWV6a251SzN1U2V2c0xUWmRmdUZn?oc=5",
           "source": "El Sol de México",
           "date": "2026-11-13",
-          "published_at": "2026-11-14T05:03:45Z",
+          "published_at": "2026-11-14T05:13:05Z",
           "category": "CDMX",
           "borough": "Coyoacán",
           "location": "Coyoacán (mencionada en el titular)",
@@ -5169,8 +5184,74 @@
                 "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
                 "source": "https://commons.wikimedia.org/wiki/File:1._Coyoac%C3%A1n_Ciudad_de_M%C3%A9xico.jpg"
               }
+            },
+            {
+              "title": "Jóvenes universitarios de Coyoacán suman su respaldo a Hannah De Lamadrid rumbo al 2027",
+              "description": "De acuerdo con El Sol de México, el titular publicado es: «Jóvenes universitarios de Coyoacán suman su respaldo a Hannah De Lamadrid rumbo al 2027». La información publicada por El Sol de México aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+              "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOOGFMNDBJc1pBUUdEYlJuMVFwOVZSdHh5aDJkd3ljYUhqQnZONTNVV2t0VnE4WlRobDcyeDlCSWZ0NkNqdUxjZDhSUlpqWmpaVFlMWm5wZ01hMU55d2Mxb0I1R3hnYXBYUXRzaDZOVG90a19VOUcweTZVTzVhbHRTOVh5UERPRGFid215NzR4ZzVsQXcwc2t2cTRKdU0wSmhIT0oyTy11REtBQWJKM0tPRWxUMzkxaVJHOUFkRWV6a251SzN1U2V2c0xUWmRmdUZn?oc=5",
+              "source": "El Sol de México",
+              "date": "2026-11-13",
+              "published_at": "2026-11-14T05:03:45Z",
+              "category": "CDMX",
+              "borough": "Coyoacán",
+              "location": "Coyoacán (mencionada en el titular)",
+              "local_url": "/noticias/?id=37e82c0c5bd2170668f0&mes=2026-11",
+              "brief": {
+                "lead": "De acuerdo con El Sol de México, el titular publicado es: «Jóvenes universitarios de Coyoacán suman su respaldo a Hannah De Lamadrid rumbo al 2027». La información publicada por El Sol de México aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+                "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+                "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+              },
+              "photo": {
+                "id": "commons_106559901",
+                "kind": "representativa",
+                "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/1._Coyoac%C3%A1n_Ciudad_de_M%C3%A9xico.jpg/960px-1._Coyoac%C3%A1n_Ciudad_de_M%C3%A9xico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+                "category": "CDMX",
+                "borough": "",
+                "topic": "1. Coyoacán Ciudad de México",
+                "keywords": [
+                  "CDMX"
+                ],
+                "author": "Machristen",
+                "license": "CC BY-SA 4.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "https://commons.wikimedia.org/wiki/File:1._Coyoac%C3%A1n_Ciudad_de_M%C3%A9xico.jpg"
+              }
             }
           ]
+        },
+        {
+          "title": "Iglesia en Coyoacán ofrece experiencia inmersiva en su interior",
+          "description": "De acuerdo con El Universal, el titular publicado es: «Iglesia en Coyoacán ofrece experiencia inmersiva en su interior». La información publicada por El Universal aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOU3RpWHpuSDdoaE9lZzREbnFJUkdPUnRzTUxHSXZleDVUZUloaUNXR2RxUHo1QVJiSHZrWnpMX2FxYW43aTFaYl9wSDFfbE9YbVpnaHRyNUZWbHFkX0hGTEIwUEpGNHdSd1RNbVVIVi1PYkVsNUpBR2x3eW83ZUUxOVNJazcyT1cwQlZzdmdvTGNqbkREVmJWNUkwZTVwXzM2TWtaMm1YSdIBuwFBVV95cUxNbjZ2VW9ONW11bm9tZ0g1aURsQ0g5QjNPUzlwTWFDLTdpU1BoQ1BGQVBiNjJoOHB2cDRnOXZJUXRKWUduTFN6MkgyY0NKOGNLVmRrUG4ya0U2LTFWa2wwZE42SVI0QjdLX1hoQzZyXzNfSUdsRFljSVdoNTB0RjZ3anphcUlVcXd1UjRBTWNNVnM1dHdsNkZkTjVScDJvd0hISnQtcDBJUXcxcXdLTFA1QkwxN2pIRGlodDNV?oc=5",
+          "source": "El Universal",
+          "date": "2026-11-13",
+          "published_at": "2026-11-13T22:48:00Z",
+          "category": "CDMX",
+          "borough": "Coyoacán",
+          "location": "Coyoacán (mencionada en el titular)",
+          "local_url": "/noticias/?id=e7aa0f3b6a91f2e7c38d&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con El Universal, el titular publicado es: «Iglesia en Coyoacán ofrece experiencia inmersiva en su interior». La información publicada por El Universal aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "commons_80020584",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Iglesia_de_San_Juan_Bautista_en_Coyoac%C3%A1n_Ciudad_de_M%C3%A9xico.jpg/960px-Iglesia_de_San_Juan_Bautista_en_Coyoac%C3%A1n_Ciudad_de_M%C3%A9xico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "category": "CDMX",
+            "borough": "",
+            "topic": "Iglesia de San Juan Bautista en Coyoacán Ciudad de México",
+            "keywords": [
+              "CDMX"
+            ],
+            "author": "Juan Carlos Fonseca Mata",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Iglesia_de_San_Juan_Bautista_en_Coyoac%C3%A1n_Ciudad_de_M%C3%A9xico.jpg"
+          }
         },
         {
           "title": "Jóvenes universitarios de Coyoacán suman su respaldo a Hannah De Lamadrid rumbo al 2027",
@@ -6621,39 +6702,6 @@
             "license": "CC BY-SA 4.0",
             "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
             "source": "https://commons.wikimedia.org/wiki/File:Iglesia_de_San_Juan_Bautista_en_Coyoac%C3%A1n_Ciudad_de_M%C3%A9xico.jpg"
-          }
-        },
-        {
-          "title": "Invita Coyoacán a campaña contra el cáncer",
-          "description": "De acuerdo con CDMX Magacín, el titular publicado es: «Invita Coyoacán a campaña contra el cáncer». La información publicada por CDMX Magacín aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9BbFNMZENjNVhuUVYxcnNEOEx5WFVsdmNCTTJaOHFTRTJiU3I0dDZlcmNXSmkwX0hnNHlpSS1zU29IWkZWZ1pNNUk5OEx0d095czFXc1h5dVB1dUE1a1FGazNlb3liMjJMMDItQUdn?oc=5",
-          "source": "CDMX Magacín",
-          "date": "2026-11-08",
-          "published_at": "2026-11-09T00:02:11Z",
-          "category": "CDMX",
-          "borough": "Coyoacán",
-          "location": "Coyoacán (mencionada en el titular)",
-          "local_url": "/noticias/?id=098a0fdb0c59d7bd79af&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con CDMX Magacín, el titular publicado es: «Invita Coyoacán a campaña contra el cáncer». La información publicada por CDMX Magacín aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "commons_106559901",
-            "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/1._Coyoac%C3%A1n_Ciudad_de_M%C3%A9xico.jpg/960px-1._Coyoac%C3%A1n_Ciudad_de_M%C3%A9xico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "category": "CDMX",
-            "borough": "",
-            "topic": "1. Coyoacán Ciudad de México",
-            "keywords": [
-              "CDMX"
-            ],
-            "author": "Machristen",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:1._Coyoac%C3%A1n_Ciudad_de_M%C3%A9xico.jpg"
           }
         }
       ]
@@ -9597,7 +9645,7 @@
           "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPUW0wMnhGOXBReHYyMmZFTUhsQTdISU0zLVphT0hMYktMRjdyRThOZHppZUNhbVBSUG1JNGJaazU2WE03U0RIZ0M4eDQ2T2V2dVFfNWdxaTllNUR4cWk2MUtzT0NnV3JXekZ5ZXlZalR6RDlWMG5mblo5RFRVX010SEx0VEtKUlBkSWVtRVJIc2VpdW11aEdTVEZtMHg4NldMRE1wc1ptbzZ3T1gtTU5HNWt4M1pzNHR3T3FCQy1aRk9salFmU3NiNm9JeDFGdHc?oc=5",
           "source": "El Sol de México",
           "date": "2026-11-13",
-          "published_at": "2026-11-14T03:45:00Z",
+          "published_at": "2026-11-14T03:48:04Z",
           "category": "Servicios",
           "borough": "Iztacalco",
           "location": "Iztacalco (mencionada en el titular)",
@@ -9700,6 +9748,45 @@
               "source": "El Sol de México",
               "date": "2026-11-13",
               "published_at": "2026-11-13T21:53:25Z",
+              "category": "Servicios",
+              "borough": "Iztacalco",
+              "location": "Iztacalco (mencionada en el titular)",
+              "local_url": "/noticias/?id=524dc3a3f9b57d7d122e&mes=2026-11",
+              "brief": {
+                "lead": "De acuerdo con El Sol de México, el titular publicado es: «Impulsa alcaldía Iztacalco el comercio local con la Feria de Mujeres Emprendedoras». La información publicada por El Sol de México aborda un asunto que este portal clasifica como Servicios. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+                "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+                "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+              },
+              "photo": {
+                "id": "contexto_emprendimiento_femenino_2025",
+                "kind": "representativa",
+                "url": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Mujeres_emprendedoras_que_buscan_el_cambio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+                "category": "Servicios",
+                "borough": "",
+                "topic": "Retrato de una empresaria (29-05-2025); imagen representativa del emprendimiento femenino, no documenta la feria de Iztacalco.",
+                "keywords": [
+                  "mujeres emprendedoras",
+                  "emprendimiento femenino",
+                  "empresaria",
+                  "emprendedora",
+                  "negocios",
+                  "comercio local",
+                  "microempresa"
+                ],
+                "author": "Luisargom",
+                "license": "CC BY-SA 4.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+                "source": "https://commons.wikimedia.org/wiki/File:Mujeres_emprendedoras_que_buscan_el_cambio.jpg"
+              }
+            },
+            {
+              "title": "Impulsa alcaldía Iztacalco el comercio local con la Feria de Mujeres Emprendedoras",
+              "description": "De acuerdo con El Sol de México, el titular publicado es: «Impulsa alcaldía Iztacalco el comercio local con la Feria de Mujeres Emprendedoras». La información publicada por El Sol de México aborda un asunto que este portal clasifica como Servicios. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+              "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPUW0wMnhGOXBReHYyMmZFTUhsQTdISU0zLVphT0hMYktMRjdyRThOZHppZUNhbVBSUG1JNGJaazU2WE03U0RIZ0M4eDQ2T2V2dVFfNWdxaTllNUR4cWk2MUtzT0NnV3JXekZ5ZXlZalR6RDlWMG5mblo5RFRVX010SEx0VEtKUlBkSWVtRVJIc2VpdW11aEdTVEZtMHg4NldMRE1wc1ptbzZ3T1gtTU5HNWt4M1pzNHR3T3FCQy1aRk9salFmU3NiNm9JeDFGdHc?oc=5",
+              "source": "El Sol de México",
+              "date": "2026-11-13",
+              "published_at": "2026-11-14T03:45:00Z",
               "category": "Servicios",
               "borough": "Iztacalco",
               "location": "Iztacalco (mencionada en el titular)",
@@ -11108,48 +11195,15 @@
     },
     {
       "name": "Iztapalapa",
-      "count": 240,
+      "count": 241,
       "articles": [
-        {
-          "title": "Asesinan a hombre en calles de Iztapalapa",
-          "description": "De acuerdo con El Universal, el titular publicado es: «Asesinan a hombre en calles de Iztapalapa». La información publicada por El Universal aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxORTZhaExkRm9Md1lUNjZmSlk2ZXZJMkkzU1JlMlRvZXlaNXJXTVhLWndlN0pzY2RaSG9hWnp1eVFOaHpIRG50a3NwV3ZQVzdlRkt5ZmhJUkN2dU13Uk01OXczV2xSMllJcmo2WDhrZExNd0t6RVV2eWlFRTY4dnBnbmVfMWNmV3FWbV9lcnhuT3ZudmdpZU50Wm5ySlE1SmFBQXY2aDdlbkJwQUJLR2ttRFo2UXFtUmZJeW5rTXVB0gHSAUFVX3lxTE8wUWxDTEszTFYwYWJOOVBjV3A3VTFwM3lQQTZrd2MtV1FxYmZiYnl2QW1xNjJtdng5UXhYTklCcVpkNVRMcmJQcFRnQ2pPQWZyb1JvLTlBVHFjTnlYYWlWMU1mLWNiYWJxeGhuN1pjRHFyNUxINEhHbWJPeWI2NU53eF9VMTctTGZtN20xOXpjTUowUEVLbHdfZHJkVzl5Sm1CbzZjbG8tdmVITU9wWm05NEgwNHowZHhRUEJtU1R4dG5VQzY0eHFnek9CRlFPdjE4UQ?oc=5",
-          "source": "El Universal",
-          "date": "2026-11-13",
-          "published_at": "2026-11-14T04:46:20Z",
-          "category": "Seguridad",
-          "borough": "Iztapalapa",
-          "location": "Iztapalapa (mencionada en el titular)",
-          "local_url": "/noticias/?id=805e20a33345af7202d7&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con El Universal, el titular publicado es: «Asesinan a hombre en calles de Iztapalapa». La información publicada por El Universal aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
-            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "seguridad",
-            "kind": "representativa",
-            "url": "/assets/fotos/seguridad.jpg",
-            "category": "Seguridad",
-            "borough": "",
-            "topic": "Patrulla de Ciudad de México",
-            "keywords": [
-              "Seguridad"
-            ],
-            "author": "RainerRowe",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.es",
-            "source": "https://commons.wikimedia.org/wiki/File:Patrulla_cdmx.jpg"
-          }
-        },
         {
           "title": "Feria del Empleo en Iztapalapa ofrece mil vacantes con empresas como Bimbo, Sears y Chedraui; fecha y horario",
           "description": "De acuerdo con El Sol de México, el titular publicado es: «Feria del Empleo en Iztapalapa ofrece mil vacantes con empresas como Bimbo, Sears y Chedraui; fecha y horario». La información publicada por El Sol de México aborda un asunto que este portal clasifica como Servicios. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
           "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPb25ad1lGZGU3bC01aTY5eFc4ZWpQR2dsdDFFRVpkeGVfR0xxeXY1bTlJSHRmeTQ3TFNOYVN5N1llOWh5enRCT2hBelZnaVI4azE3V3ljamV3MDJ0TnlhNlRLX093SlZMcDRZOU5JTHBwcnc0QVJRQXhXdXNrNTRYZFRobGZNb2EyNE1ESjdfWFVTOXpmWTZGeS1WOHRNbmZSZ3pQM0RLaXlmeEFuM0U3VldGV0ZUTEVWYTgycjRLdTM5aDVBSzNlODFZRHAzcjMyaEVROGFPOWZtWk1YSUxpSDhlNGJDZUdPMFBz?oc=5",
           "source": "El Sol de México",
-          "date": "2026-11-13",
-          "published_at": "2026-11-14T04:07:30Z",
+          "date": "2026-11-14",
+          "published_at": "2026-11-14T06:25:30Z",
           "category": "Servicios",
           "borough": "Iztapalapa",
           "location": "Iztapalapa (mencionada en el titular)",
@@ -11284,6 +11338,144 @@
                 "license": "CC0 1.0",
                 "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
                 "source": "https://commons.wikimedia.org/wiki/File:37a_Feria_del_Empleo_IMG_8796_(43942141674).jpg"
+              }
+            },
+            {
+              "title": "Feria del Empleo en Iztapalapa ofrece mil vacantes con empresas como Bimbo, Sears y Chedraui; fecha y horario",
+              "description": "De acuerdo con El Sol de México, el titular publicado es: «Feria del Empleo en Iztapalapa ofrece mil vacantes con empresas como Bimbo, Sears y Chedraui; fecha y horario». La información publicada por El Sol de México aborda un asunto que este portal clasifica como Servicios. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+              "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPb25ad1lGZGU3bC01aTY5eFc4ZWpQR2dsdDFFRVpkeGVfR0xxeXY1bTlJSHRmeTQ3TFNOYVN5N1llOWh5enRCT2hBelZnaVI4azE3V3ljamV3MDJ0TnlhNlRLX093SlZMcDRZOU5JTHBwcnc0QVJRQXhXdXNrNTRYZFRobGZNb2EyNE1ESjdfWFVTOXpmWTZGeS1WOHRNbmZSZ3pQM0RLaXlmeEFuM0U3VldGV0ZUTEVWYTgycjRLdTM5aDVBSzNlODFZRHAzcjMyaEVROGFPOWZtWk1YSUxpSDhlNGJDZUdPMFBz?oc=5",
+              "source": "El Sol de México",
+              "date": "2026-11-13",
+              "published_at": "2026-11-14T04:07:30Z",
+              "category": "Servicios",
+              "borough": "Iztapalapa",
+              "location": "Iztapalapa (mencionada en el titular)",
+              "local_url": "/noticias/?id=8782dfc11a9012876f92&mes=2026-11",
+              "brief": {
+                "lead": "De acuerdo con El Sol de México, el titular publicado es: «Feria del Empleo en Iztapalapa ofrece mil vacantes con empresas como Bimbo, Sears y Chedraui; fecha y horario». La información publicada por El Sol de México aborda un asunto que este portal clasifica como Servicios. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+                "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+                "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+              },
+              "photo": {
+                "id": "contexto_feria_empleo_cdmx_2018",
+                "kind": "representativa",
+                "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/37a_Feria_del_Empleo_IMG_8796_%2843942141674%29.jpg/960px-37a_Feria_del_Empleo_IMG_8796_%2843942141674%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+                "category": "Servicios",
+                "borough": "",
+                "topic": "37a Feria del Empleo (2018), Ciudad de México; foto de archivo representativa, no documenta la feria de Iztapalapa de 2026.",
+                "keywords": [
+                  "feria del empleo",
+                  "feria de empleo",
+                  "empleo",
+                  "vacantes",
+                  "reclutamiento",
+                  "trabajo",
+                  "Ciudad de México",
+                  "Gobierno CDMX"
+                ],
+                "author": "Gobierno CDMX",
+                "license": "CC0 1.0",
+                "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+                "source": "https://commons.wikimedia.org/wiki/File:37a_Feria_del_Empleo_IMG_8796_(43942141674).jpg"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Procesan a presunto extorsionador en la alcaldía Iztapalapa",
+          "description": "De acuerdo con Quadratín México, el titular publicado es: «Procesan a presunto extorsionador en la alcaldía Iztapalapa». La información publicada por Quadratín México aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNenJhYjhUQlVYVy1jdUZIOS1iX04zUGdKUzNVTGRiQkJuUDF2SXNsZUFwR2Jxbkc0UlgwU3hoaGNaN3BPQkZqc2NBeW1wZTBRRXhRTVZsejJJLTNfbEY0dGh6ZTBjQzVFeTE3blhqdkY0MllFZ0NFZE04UllVLVZyUGlZaW1iWHZDUVZ5Tlo3NVpuNzdTVHNN?oc=5",
+          "source": "Quadratín México",
+          "date": "2026-11-14",
+          "published_at": "2026-11-14T06:03:38Z",
+          "category": "Seguridad",
+          "borough": "Iztapalapa",
+          "location": "Iztapalapa (mencionada en el titular)",
+          "local_url": "/noticias/?id=a58ad6ee8ccbb058a470&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con Quadratín México, el titular publicado es: «Procesan a presunto extorsionador en la alcaldía Iztapalapa». La información publicada por Quadratín México aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "archivo_seguridad_015",
+            "kind": "representativa",
+            "url": "/assets/fotos/archivo_seguridad_015.jpg",
+            "category": "Seguridad",
+            "borough": "",
+            "topic": "Claudia Sheinbaum entrega patrullas Iztapalapa 01",
+            "author": "Gobierno de la Ciudad de México",
+            "license": "CC BY 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Claudia_Sheinbaum_entrega_patrullas_Iztapalapa_01.jpg"
+          }
+        },
+        {
+          "title": "Asesinan a hombre en calles de Iztapalapa",
+          "description": "De acuerdo con El Universal, el titular publicado es: «Asesinan a hombre en calles de Iztapalapa». La información publicada por El Universal aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxORTZhaExkRm9Md1lUNjZmSlk2ZXZJMkkzU1JlMlRvZXlaNXJXTVhLWndlN0pzY2RaSG9hWnp1eVFOaHpIRG50a3NwV3ZQVzdlRkt5ZmhJUkN2dU13Uk01OXczV2xSMllJcmo2WDhrZExNd0t6RVV2eWlFRTY4dnBnbmVfMWNmV3FWbV9lcnhuT3ZudmdpZU50Wm5ySlE1SmFBQXY2aDdlbkJwQUJLR2ttRFo2UXFtUmZJeW5rTXVB0gHSAUFVX3lxTE8wUWxDTEszTFYwYWJOOVBjV3A3VTFwM3lQQTZrd2MtV1FxYmZiYnl2QW1xNjJtdng5UXhYTklCcVpkNVRMcmJQcFRnQ2pPQWZyb1JvLTlBVHFjTnlYYWlWMU1mLWNiYWJxeGhuN1pjRHFyNUxINEhHbWJPeWI2NU53eF9VMTctTGZtN20xOXpjTUowUEVLbHdfZHJkVzl5Sm1CbzZjbG8tdmVITU9wWm05NEgwNHowZHhRUEJtU1R4dG5VQzY0eHFnek9CRlFPdjE4UQ?oc=5",
+          "source": "El Universal",
+          "date": "2026-11-13",
+          "published_at": "2026-11-14T04:46:20Z",
+          "category": "Seguridad",
+          "borough": "Iztapalapa",
+          "location": "Iztapalapa (mencionada en el titular)",
+          "local_url": "/noticias/?id=805e20a33345af7202d7&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con El Universal, el titular publicado es: «Asesinan a hombre en calles de Iztapalapa». La información publicada por El Universal aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "archivo_seguridad_005",
+            "kind": "representativa",
+            "url": "/assets/fotos/archivo_seguridad_005.jpg",
+            "category": "Seguridad",
+            "borough": "",
+            "topic": "Jeep policia cdmx",
+            "keywords": [
+              "Seguridad"
+            ],
+            "author": "Gobierno de la Ciudad de México",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Jeep_policia_cdmx.jpg"
+          },
+          "alternate_versions": [
+            {
+              "title": "Asesinan a hombre en calles de Iztapalapa",
+              "description": "De acuerdo con El Universal, el titular publicado es: «Asesinan a hombre en calles de Iztapalapa». La información publicada por El Universal aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+              "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxORTZhaExkRm9Md1lUNjZmSlk2ZXZJMkkzU1JlMlRvZXlaNXJXTVhLWndlN0pzY2RaSG9hWnp1eVFOaHpIRG50a3NwV3ZQVzdlRkt5ZmhJUkN2dU13Uk01OXczV2xSMllJcmo2WDhrZExNd0t6RVV2eWlFRTY4dnBnbmVfMWNmV3FWbV9lcnhuT3ZudmdpZU50Wm5ySlE1SmFBQXY2aDdlbkJwQUJLR2ttRFo2UXFtUmZJeW5rTXVB0gHSAUFVX3lxTE8wUWxDTEszTFYwYWJOOVBjV3A3VTFwM3lQQTZrd2MtV1FxYmZiYnl2QW1xNjJtdng5UXhYTklCcVpkNVRMcmJQcFRnQ2pPQWZyb1JvLTlBVHFjTnlYYWlWMU1mLWNiYWJxeGhuN1pjRHFyNUxINEhHbWJPeWI2NU53eF9VMTctTGZtN20xOXpjTUowUEVLbHdfZHJkVzl5Sm1CbzZjbG8tdmVITU9wWm05NEgwNHowZHhRUEJtU1R4dG5VQzY0eHFnek9CRlFPdjE4UQ?oc=5",
+              "source": "El Universal",
+              "date": "2026-11-13",
+              "published_at": "2026-11-14T04:46:20Z",
+              "category": "Seguridad",
+              "borough": "Iztapalapa",
+              "location": "Iztapalapa (mencionada en el titular)",
+              "local_url": "/noticias/?id=805e20a33345af7202d7&mes=2026-11",
+              "brief": {
+                "lead": "De acuerdo con El Universal, el titular publicado es: «Asesinan a hombre en calles de Iztapalapa». La información publicada por El Universal aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+                "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+                "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+              },
+              "photo": {
+                "id": "seguridad",
+                "kind": "representativa",
+                "url": "/assets/fotos/seguridad.jpg",
+                "category": "Seguridad",
+                "borough": "",
+                "topic": "Patrulla de Ciudad de México",
+                "keywords": [
+                  "Seguridad"
+                ],
+                "author": "RainerRowe",
+                "license": "CC BY-SA 4.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.es",
+                "source": "https://commons.wikimedia.org/wiki/File:Patrulla_cdmx.jpg"
               }
             }
           ]
@@ -12573,36 +12765,6 @@
             "license": "CC BY 4.0",
             "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
             "source": "https://commons.wikimedia.org/wiki/File:Claudia_Sheinbaum_entrega_patrullas_Iztapalapa_03.jpg"
-          }
-        },
-        {
-          "title": "Tras paro estudiantil, UAM se compromete a rehabilitar la Unidad Iztapalapa",
-          "description": "De acuerdo con Infobae, el titular publicado es: «Tras paro estudiantil, UAM se compromete a rehabilitar la Unidad Iztapalapa». La información publicada por Infobae aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPLWdBRjFpdGZSVUJuXzM4WWtOR0o2bkpxUXhVQTJuTVlUWFY0OE53dEFVS1NnU00yRnV6c2dqYjI2cHVIUUxYRnB2eEx3X1NTUTQ5QXBvVzQwaWJMOVE5amNla3N6YUVCTjRnX1RZbHNrdUNrdDlzUE1yWUVoejJhbzBPOEYyM2hGVlVtVXEwakdkaDRSNjQ4VWo2TnJ1Tm05TjlfNkhCOWQxbUhQQjBwY1BhNUNBb28y0gHTAUFVX3lxTE5KWDVIWGNXMXFzTzV6TjA0T3NrZm5IeEtlaURkREIxSVdVOWFJR01FZTh4dS01WkZuQTkteUNIZW5sRFFJZnVGMVVlZVc0cFctOUhacDZMN3RxZ3MwU04ydWtBWXF6RXdSY0twYWFpN2xFTmozdWptdnRtaHgtYklYdTlKdVBxOFZhOEYwbkhxQmZQRzNLLThzYU5naXpUR0V6ZmxDbFFqSHFDM2tFc1dpNjNrbUNBQmF2MkRwcXRHM0c2UGlucUE5ZS1obHBfWGQzV1k?oc=5",
-          "source": "Infobae",
-          "date": "2026-11-09",
-          "published_at": "2026-11-09T14:50:57Z",
-          "category": "CDMX",
-          "borough": "Iztapalapa",
-          "location": "Iztapalapa (mencionada en el titular)",
-          "local_url": "/noticias/?id=75294d7dfa374616a960&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con Infobae, el titular publicado es: «Tras paro estudiantil, UAM se compromete a rehabilitar la Unidad Iztapalapa». La información publicada por Infobae aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "alcaldia_iztapalapa",
-            "kind": "representativa",
-            "url": "/assets/alcaldias/iztapalapa.jpg",
-            "category": "CDMX",
-            "borough": "Iztapalapa",
-            "topic": "Vista de Iztapalapa desde el Cerro de la Estrella",
-            "author": "Secretaría de Cultura Ciudad de México from México",
-            "license": "CC BY 2.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-            "source": "https://commons.wikimedia.org/wiki/File:MX_MM_MUSEO_CERRO_DE_LA_ESTRELLA_%2849522225751%29.jpg"
           }
         }
       ]
@@ -17324,8 +17486,220 @@
     },
     {
       "name": "Venustiano Carranza",
-      "count": 47,
+      "count": 50,
       "articles": [
+        {
+          "title": "AICM reporta 10 mil 293 pasajeros y 73 vuelos afectados tras suspensión aérea en EU",
+          "description": "De acuerdo con La Jornada, el titular publicado es: «AICM reporta 10 mil 293 pasajeros y 73 vuelos afectados tras suspensión aérea en EU». La información publicada por La Jornada aborda un asunto que este portal clasifica como Movilidad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNSXhLejVBaE9GLUJSRXVucGkxTWFHenlfblpoRDlwRF9pWnUzVEt6T2sxUVpnZV9GZ0U5TjJ4VkRERFItSmtoV3VkYU45MzdKZ1BwdDZZNEx3TTdpN0NnU3d1c3dlc2tJcGVGRnNwYV9RWG83eUVzQW5yeE5iVmdmZVVPOVpIR3V3aE1ybGlBb082cFlYYmRJUEM4YkZIRVdyLVMzOEdJNWRMX3BMVjZBSmtUSjZIMjFKTlNxb0t6RThaTEF5TTNpR2VVNGRwRDBEVFRJNUZzV0hkZkFqTVRVaGJBUzJONlVkLXdfTHNB?oc=5",
+          "source": "La Jornada",
+          "date": "2026-11-13",
+          "published_at": "2026-11-14T05:03:24Z",
+          "category": "Movilidad",
+          "borough": "Venustiano Carranza",
+          "location": "Aeropuerto Internacional de la Ciudad de México (AICM), Venustiano Carranza",
+          "local_url": "/noticias/?id=9d50db4739705df961a7&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con La Jornada, el titular publicado es: «AICM reporta 10 mil 293 pasajeros y 73 vuelos afectados tras suspensión aérea en EU». La información publicada por La Jornada aborda un asunto que este portal clasifica como Movilidad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
+            "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "alternate_versions": [
+            {
+              "title": "AICM reporta afectaciones de vuelos hacia y desde Estados Unidos por restricción a operaciones aéreas",
+              "description": "De acuerdo con La Jornada, el titular publicado es: «AICM reporta afectaciones de vuelos hacia y desde Estados Unidos por restricción a operaciones aéreas». La información publicada por La Jornada aborda un asunto que este portal clasifica como Movilidad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+              "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNSXhLejVBaE9GLUJSRXVucGkxTWFHenlfblpoRDlwRF9pWnUzVEt6T2sxUVpnZV9GZ0U5TjJ4VkRERFItSmtoV3VkYU45MzdKZ1BwdDZZNEx3TTdpN0NnU3d1c3dlc2tJcGVGRnNwYV9RWG83eUVzQW5yeE5iVmdmZVVPOVpIR3V3aE1ybGlBb082cFlYYmRJUEM4YkZIRVdyLVMzOEdJNWRMX3BMVjZBSmtUSjZIMjFKTlNxb0t6RThaTEF5TTNpR2VVNGRwRDBEVFRJNUZzV0hkZkFqTVRVaGJBUzJONlVkLXdfTHNB?oc=5",
+              "source": "La Jornada",
+              "date": "2026-11-13",
+              "published_at": "2026-11-13T22:17:00Z",
+              "category": "Movilidad",
+              "borough": "",
+              "location": "Ubicación no indicada por el titular",
+              "local_url": "/noticias/?id=9d50db4739705df961a7&mes=2026-11",
+              "brief": {
+                "lead": "De acuerdo con La Jornada, el titular publicado es: «AICM reporta afectaciones de vuelos hacia y desde Estados Unidos por restricción a operaciones aéreas». La información publicada por La Jornada aborda un asunto que este portal clasifica como Movilidad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+                "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
+                "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+              }
+            },
+            {
+              "title": "AICM reporta afectaciones de vuelos hacia y desde Estados Unidos por restricción a operaciones aéreas",
+              "description": "De acuerdo con La Jornada, el titular publicado es: «AICM reporta afectaciones de vuelos hacia y desde Estados Unidos por restricción a operaciones aéreas». La información publicada por La Jornada aborda un asunto que este portal clasifica como Movilidad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+              "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNSXhLejVBaE9GLUJSRXVucGkxTWFHenlfblpoRDlwRF9pWnUzVEt6T2sxUVpnZV9GZ0U5TjJ4VkRERFItSmtoV3VkYU45MzdKZ1BwdDZZNEx3TTdpN0NnU3d1c3dlc2tJcGVGRnNwYV9RWG83eUVzQW5yeE5iVmdmZVVPOVpIR3V3aE1ybGlBb082cFlYYmRJUEM4YkZIRVdyLVMzOEdJNWRMX3BMVjZBSmtUSjZIMjFKTlNxb0t6RThaTEF5TTNpR2VVNGRwRDBEVFRJNUZzV0hkZkFqTVRVaGJBUzJONlVkLXdfTHNB?oc=5",
+              "source": "La Jornada",
+              "date": "2026-11-13",
+              "published_at": "2026-11-13T22:17:00Z",
+              "category": "Movilidad",
+              "borough": "",
+              "location": "Ubicación no indicada por el titular",
+              "local_url": "/noticias/?id=9d50db4739705df961a7&mes=2026-11",
+              "brief": {
+                "lead": "De acuerdo con La Jornada, el titular publicado es: «AICM reporta afectaciones de vuelos hacia y desde Estados Unidos por restricción a operaciones aéreas». La información publicada por La Jornada aborda un asunto que este portal clasifica como Movilidad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+                "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
+                "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+              },
+              "photo": {
+                "id": "contexto_aicm_aviones_pista_2026",
+                "kind": "representativa",
+                "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Aviones_en_la_pista_del_AICM.jpg/960px-Aviones_en_la_pista_del_AICM.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+                "category": "Movilidad",
+                "borough": "",
+                "topic": "Aviones en la pista del AICM (fotografía del 28 de septiembre de 2026); imagen representativa, no documenta las afectaciones de vuelos mencionadas.",
+                "keywords": [
+                  "Aeropuerto Internacional de la Ciudad de México",
+                  "Aeropuerto Internacional Benito Juárez",
+                  "AICM",
+                  "aviones",
+                  "pista de aterrizaje",
+                  "vuelos",
+                  "aeropuerto"
+                ],
+                "author": "Oficial K",
+                "license": "CC BY-SA 4.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+                "source": "https://commons.wikimedia.org/wiki/File:Aviones_en_la_pista_del_AICM.jpg"
+              }
+            },
+            {
+              "title": "AICM confirma afectaciones en 40 vuelos y a 6 mil 197 pasajeros por suspensión de vuelos hacia Estados Unidos",
+              "description": "De acuerdo con La Jornada, el titular publicado es: «AICM confirma afectaciones en 40 vuelos y a 6 mil 197 pasajeros por suspensión de vuelos hacia Estados Unidos». La información publicada por La Jornada aborda un asunto que este portal clasifica como Movilidad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+              "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNSXhLejVBaE9GLUJSRXVucGkxTWFHenlfblpoRDlwRF9pWnUzVEt6T2sxUVpnZV9GZ0U5TjJ4VkRERFItSmtoV3VkYU45MzdKZ1BwdDZZNEx3TTdpN0NnU3d1c3dlc2tJcGVGRnNwYV9RWG83eUVzQW5yeE5iVmdmZVVPOVpIR3V3aE1ybGlBb082cFlYYmRJUEM4YkZIRVdyLVMzOEdJNWRMX3BMVjZBSmtUSjZIMjFKTlNxb0t6RThaTEF5TTNpR2VVNGRwRDBEVFRJNUZzV0hkZkFqTVRVaGJBUzJONlVkLXdfTHNB?oc=5",
+              "source": "La Jornada",
+              "date": "2026-11-13",
+              "published_at": "2026-11-13T22:17:00Z",
+              "category": "Movilidad",
+              "borough": "",
+              "location": "Ubicación no indicada por el titular",
+              "local_url": "/noticias/?id=9d50db4739705df961a7&mes=2026-11",
+              "brief": {
+                "lead": "De acuerdo con La Jornada, el titular publicado es: «AICM confirma afectaciones en 40 vuelos y a 6 mil 197 pasajeros por suspensión de vuelos hacia Estados Unidos». La información publicada por La Jornada aborda un asunto que este portal clasifica como Movilidad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+                "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
+                "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+              },
+              "photo": {
+                "id": "contexto_aicm_aviones_pista_2026",
+                "kind": "representativa",
+                "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Aviones_en_la_pista_del_AICM.jpg/960px-Aviones_en_la_pista_del_AICM.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+                "category": "Movilidad",
+                "borough": "",
+                "topic": "Aviones en la pista del AICM (fotografía del 28 de septiembre de 2026); imagen representativa, no documenta las afectaciones de vuelos mencionadas.",
+                "keywords": [
+                  "Aeropuerto Internacional de la Ciudad de México",
+                  "Aeropuerto Internacional Benito Juárez",
+                  "AICM",
+                  "aviones",
+                  "pista de aterrizaje",
+                  "vuelos",
+                  "aeropuerto"
+                ],
+                "author": "Oficial K",
+                "license": "CC BY-SA 4.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+                "source": "https://commons.wikimedia.org/wiki/File:Aviones_en_la_pista_del_AICM.jpg"
+              }
+            },
+            {
+              "title": "AICM prevé reanudación gradual de vuelos a EU tras afectaciones a más de 6 mil pasajeros",
+              "description": "De acuerdo con La Jornada, el titular publicado es: «AICM prevé reanudación gradual de vuelos a EU tras afectaciones a más de 6 mil pasajeros». La información publicada por La Jornada aborda un asunto que este portal clasifica como Movilidad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+              "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNSXhLejVBaE9GLUJSRXVucGkxTWFHenlfblpoRDlwRF9pWnUzVEt6T2sxUVpnZV9GZ0U5TjJ4VkRERFItSmtoV3VkYU45MzdKZ1BwdDZZNEx3TTdpN0NnU3d1c3dlc2tJcGVGRnNwYV9RWG83eUVzQW5yeE5iVmdmZVVPOVpIR3V3aE1ybGlBb082cFlYYmRJUEM4YkZIRVdyLVMzOEdJNWRMX3BMVjZBSmtUSjZIMjFKTlNxb0t6RThaTEF5TTNpR2VVNGRwRDBEVFRJNUZzV0hkZkFqTVRVaGJBUzJONlVkLXdfTHNB?oc=5",
+              "source": "La Jornada",
+              "date": "2026-11-13",
+              "published_at": "2026-11-13T22:17:00Z",
+              "category": "Movilidad",
+              "borough": "",
+              "location": "Ubicación no indicada por el titular",
+              "local_url": "/noticias/?id=9d50db4739705df961a7&mes=2026-11",
+              "brief": {
+                "lead": "De acuerdo con La Jornada, el titular publicado es: «AICM prevé reanudación gradual de vuelos a EU tras afectaciones a más de 6 mil pasajeros». La información publicada por La Jornada aborda un asunto que este portal clasifica como Movilidad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+                "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
+                "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+              },
+              "photo": {
+                "id": "contexto_aicm_aviones_pista_2026",
+                "kind": "representativa",
+                "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Aviones_en_la_pista_del_AICM.jpg/960px-Aviones_en_la_pista_del_AICM.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+                "category": "Movilidad",
+                "borough": "",
+                "topic": "Aviones en la pista del AICM (fotografía del 28 de septiembre de 2026); imagen representativa, no documenta las afectaciones de vuelos mencionadas.",
+                "keywords": [
+                  "Aeropuerto Internacional de la Ciudad de México",
+                  "Aeropuerto Internacional Benito Juárez",
+                  "AICM",
+                  "aviones",
+                  "pista de aterrizaje",
+                  "vuelos",
+                  "aeropuerto"
+                ],
+                "author": "Oficial K",
+                "license": "CC BY-SA 4.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+                "source": "https://commons.wikimedia.org/wiki/File:Aviones_en_la_pista_del_AICM.jpg"
+              }
+            },
+            {
+              "title": "AICM prevé reanudación gradual de vuelos a EU tras afectaciones a más de 6 mil pasajeros",
+              "description": "De acuerdo con La Jornada, el titular publicado es: «AICM prevé reanudación gradual de vuelos a EU tras afectaciones a más de 6 mil pasajeros». La información publicada por La Jornada aborda un asunto que este portal clasifica como Movilidad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+              "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNSXhLejVBaE9GLUJSRXVucGkxTWFHenlfblpoRDlwRF9pWnUzVEt6T2sxUVpnZV9GZ0U5TjJ4VkRERFItSmtoV3VkYU45MzdKZ1BwdDZZNEx3TTdpN0NnU3d1c3dlc2tJcGVGRnNwYV9RWG83eUVzQW5yeE5iVmdmZVVPOVpIR3V3aE1ybGlBb082cFlYYmRJUEM4YkZIRVdyLVMzOEdJNWRMX3BMVjZBSmtUSjZIMjFKTlNxb0t6RThaTEF5TTNpR2VVNGRwRDBEVFRJNUZzV0hkZkFqTVRVaGJBUzJONlVkLXdfTHNB?oc=5",
+              "source": "La Jornada",
+              "date": "2026-11-13",
+              "published_at": "2026-11-14T03:27:10Z",
+              "category": "Movilidad",
+              "borough": "",
+              "location": "Ubicación no indicada por el titular",
+              "local_url": "/noticias/?id=9d50db4739705df961a7&mes=2026-11",
+              "brief": {
+                "lead": "De acuerdo con La Jornada, el titular publicado es: «AICM prevé reanudación gradual de vuelos a EU tras afectaciones a más de 6 mil pasajeros». La información publicada por La Jornada aborda un asunto que este portal clasifica como Movilidad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+                "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
+                "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+              },
+              "photo": {
+                "id": "contexto_aicm_aviones_pista_2026",
+                "kind": "representativa",
+                "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Aviones_en_la_pista_del_AICM.jpg/960px-Aviones_en_la_pista_del_AICM.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+                "category": "Movilidad",
+                "borough": "",
+                "topic": "Aviones en la pista del AICM (fotografía del 28 de septiembre de 2026); imagen representativa, no documenta las afectaciones de vuelos mencionadas.",
+                "keywords": [
+                  "Aeropuerto Internacional de la Ciudad de México",
+                  "Aeropuerto Internacional Benito Juárez",
+                  "AICM",
+                  "aviones",
+                  "pista de aterrizaje",
+                  "vuelos",
+                  "aeropuerto"
+                ],
+                "author": "Oficial K",
+                "license": "CC BY-SA 4.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+                "source": "https://commons.wikimedia.org/wiki/File:Aviones_en_la_pista_del_AICM.jpg"
+              }
+            },
+            {
+              "title": "AICM reporta 10 mil 293 pasajeros y 73 vuelos afectados tras suspensión aérea en EU",
+              "description": "De acuerdo con La Jornada, el titular publicado es: «AICM reporta 10 mil 293 pasajeros y 73 vuelos afectados tras suspensión aérea en EU». La información publicada por La Jornada aborda un asunto que este portal clasifica como Movilidad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+              "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNSXhLejVBaE9GLUJSRXVucGkxTWFHenlfblpoRDlwRF9pWnUzVEt6T2sxUVpnZV9GZ0U5TjJ4VkRERFItSmtoV3VkYU45MzdKZ1BwdDZZNEx3TTdpN0NnU3d1c3dlc2tJcGVGRnNwYV9RWG83eUVzQW5yeE5iVmdmZVVPOVpIR3V3aE1ybGlBb082cFlYYmRJUEM4YkZIRVdyLVMzOEdJNWRMX3BMVjZBSmtUSjZIMjFKTlNxb0t6RThaTEF5TTNpR2VVNGRwRDBEVFRJNUZzV0hkZkFqTVRVaGJBUzJONlVkLXdfTHNB?oc=5",
+              "source": "La Jornada",
+              "date": "2026-11-13",
+              "published_at": "2026-11-13T22:17:00Z",
+              "category": "Movilidad",
+              "borough": "Venustiano Carranza",
+              "location": "Aeropuerto Internacional de la Ciudad de México (AICM), Venustiano Carranza",
+              "local_url": "/noticias/?id=9d50db4739705df961a7&mes=2026-11",
+              "brief": {
+                "lead": "De acuerdo con La Jornada, el titular publicado es: «AICM reporta 10 mil 293 pasajeros y 73 vuelos afectados tras suspensión aérea en EU». La información publicada por La Jornada aborda un asunto que este portal clasifica como Movilidad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+                "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
+                "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+              }
+            }
+          ]
+        },
         {
           "title": "Mueren dos motociclistas tras chocar contra una camioneta en Venustiano Carranza",
           "description": "De acuerdo con La Prensa, el titular publicado es: «Mueren dos motociclistas tras chocar contra una camioneta en Venustiano Carranza». De acuerdo con La Prensa, se informa de un hecho vial relacionado con una motocicleta en Venustiano Carranza. El propio titular señala más de un fallecimiento, sin que esta ficha agregue cifras ni identidades. Se requiere consultar la nota original para conocer el punto exacto, las circunstancias y los reportes oficiales, sin atribuir responsabilidades sin pruebas.",
@@ -18517,24 +18891,6 @@
             "license": "CC BY-SA 4.0",
             "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
             "source": "https://commons.wikimedia.org/wiki/File:PalaciodelosDeportes_Concierto.jpg"
-          }
-        },
-        {
-          "title": "Clima en Venustiano Carranza: pronóstico de lluvia ligera para este jueves 5 de noviembre",
-          "description": "De acuerdo con El Heraldo de México, el titular publicado es: «Clima en Venustiano Carranza: pronóstico de lluvia ligera para este jueves 5 de noviembre». El pronóstico recogido por El Heraldo de México se refiere a lluvias ligeras en Venustiano Carranza. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
-          "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxORFZNQTd4SHdvb2hybGo1bDFuZHJBQ0ZkRVVSRmZvYjNNWHBfSTY4WGxrNDhQSmdiemVYaXFIWHd4Z25HWGZDZ1FWNHRCampBZ1laMzJyWnVZd0Z5Y3BxS052OGpSRkMwUUdONWJOUEw0UGRMYVJLOE1tM3Y1aTJrcWZIQkdPeTBGbmZjTnJRMHM0Y2phRzlEdHJIOVZ5Wk9vX04tSkltc0twR1JQWjA3dWd3QU5ZUlF4aXNjQm9HWVZLS0NyX042U3NuUF9LS0dVX3VRemthY1M0Q0ZGS2k2aG9B?oc=5",
-          "source": "El Heraldo de México",
-          "date": "2026-11-04",
-          "published_at": "2026-11-05T05:00:00Z",
-          "category": "CDMX",
-          "borough": "Venustiano Carranza",
-          "location": "Venustiano Carranza (mencionada en el titular)",
-          "local_url": "/noticias/?id=96fe621dcb71fb50672f&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con El Heraldo de México, el titular publicado es: «Clima en Venustiano Carranza: pronóstico de lluvia ligera para este jueves 5 de noviembre». El pronóstico recogido por El Heraldo de México se refiere a lluvias ligeras en Venustiano Carranza. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           }
         }
       ]
