@@ -2166,7 +2166,8 @@ def _photo_score(article, photo):
         and re.search(r"\b(?:suspende|suspendio|sin servicio|interrump\w*|reanuda|servicio)\b", headline)
     )
     weather_story = bool(re.search(
-        r"\b(?:rachas?|lluvias?|llover|precipitacion|viento|tormenta|temperatura|frio|calor)\b",
+        r"\b(?:prevision(?:es)?|pronosticos?|meteorolog\w*|estado del tiempo|clima|"
+        r"rachas?|lluvias?|llover|precipitacion|viento|tormenta|temperatura|frio|calor)\b",
         headline,
     )) and not water_harvesting_story and not transit_service_weather_story
     weather_photo = bool(re.search(
