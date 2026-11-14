@@ -1853,6 +1853,19 @@ def _photo_score(article, photo):
     topic=re.sub(r"\bno\b[^;.)]*", "", topic)
     keywords=_photo_fold(" ".join(str(x) for x in photo.get("keywords",[])))
     context=topic+" "+keywords
+    # Una nota sobre el modelo de seguridad de Saltillo no debe ilustrarse
+    # con patrullas de otra alcaldía de CDMX. Sin foto contextual de Saltillo,
+    # es preferible no mostrar imagen antes que sugerir un operativo distinto.
+    saltillo_model_story = bool(
+        re.search(r"\\bmodelo de seguridad\\b", headline)
+        and re.search(r"\\bsaltillo\\b", headline)
+    )
+    saltillo_security_photo = bool(
+        re.search(r"\\b(?:saltillo|coahuila)\\b", context)
+        and re.search(r"\\b(?:seguridad|policias?|patrullas?|operativos?)\\b", context)
+    )
+    if saltillo_model_story and not saltillo_security_photo:
+        return -10000
     # El artículo describe ataques a automovilistas en Periférico: una vista del Zócalo
     # no aporta contexto vial. La foto se rotula como representativa, no del ataque.
     if is_jose_cardenas_rocazos(article):
