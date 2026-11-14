@@ -58,6 +58,73 @@ class PhotoRelevanceTests(unittest.TestCase):
         )
         self.assertEqual(article["description"], article["brief"]["lead"])
 
+    def test_electric_mobility_plates_article_has_verified_category_summary_and_source(self):
+        title = "Placas de motos eléctricas, bicis y scooters en CDMX: ¿cuáles son las reglas y de cuánto es la multa?"
+        article = news.standardize({
+            "title": title,
+            "url": "https://news.google.com/rss/articles/electric-mobility-plates",
+            "source": "24-horas",
+            "date": "2026-11-14",
+            "published_at": "2026-11-14T16:45:06Z",
+            "category": "CDMX",
+        })
+        self.assertEqual(article["category"], "Movilidad")
+        self.assertEqual(
+            article["source_url"],
+            "https://24-horas.mx/cdmx/registro-emplacamiento-vemepe-vep-cdmx-costos-requisitos/",
+        )
+        self.assertIn("20 de noviembre de 2026", article["brief"]["lead"])
+        self.assertIn("Solo los VEMEPE requieren placa", article["brief"]["lead"])
+        self.assertIn("DME", article["brief"]["lead"])
+        self.assertIn("$355", article["brief"]["context"])
+        self.assertIn("30 UMA", article["brief"]["context"])
+        self.assertIn("40 a 60 UMA", article["brief"]["context"])
+        self.assertIn("180 UMA", article["brief"]["context"])
+        self.assertIn("VEP o VEMEPE", article["brief"]["pending"])
+        self.assertIn("https://semovi.cdmx.gob.mx/tramites-y-servicios/vep-vemepe", article["brief"]["method"])
+        self.assertEqual(article["description"], article["brief"]["lead"])
+
+    def test_electric_mobility_story_selects_the_cdmx_e_scooter_photo(self):
+        pool = photos._pool()
+        old = next(p for p in pool if p.get("id") == "contexto_motocicleta_zocalo_brigada_2017")
+        new = next(p for p in pool if p.get("id") == "contexto_grin_escooter_cdmx_2019")
+        article = news.standardize({
+            "title": "Placas de motos eléctricas, bicis y scooters en CDMX: ¿cuáles son las reglas y de cuánto es la multa?",
+            "url": "https://news.google.com/rss/articles/electric-mobility-plates",
+            "source": "24-horas",
+            "date": "2026-11-14",
+            "published_at": "2026-11-14T16:45:06Z",
+            "category": "CDMX",
+        })
+        article["photo"] = old
+        with patch.object(photos, "_pool", return_value=[old, new]):
+            photos.assign_photos([article])
+        self.assertEqual(article["photo"]["id"], "contexto_grin_escooter_cdmx_2019")
+        self.assertLessEqual(len(article["photo"]["topic"]), 140)
+
+    def test_grin_escooter_catalog_credit_and_topic_are_complete(self):
+        photo = next(
+            p for p in photos._pool()
+            if p.get("id") == "contexto_grin_escooter_cdmx_2019"
+        )
+        self.assertEqual(photo["category"], "Movilidad")
+        self.assertEqual(photo["author"], "Sonia Medina")
+        self.assertEqual(photo["license"], "CC BY 3.0")
+        self.assertEqual(photo["licenseUrl"], "https://creativecommons.org/licenses/by/3.0/")
+        self.assertEqual(photo["source"], "https://commons.wikimedia.org/wiki/File:Grin_e-scooter_rider_in_Mexico_City.jpg")
+        self.assertIn("scooter eléctrico", photo["topic"])
+        self.assertLessEqual(len(photo["topic"]), 140)
+
+    def test_periferico_photo_topic_fits_feed_limit(self):
+        photo = next(p for p in photos._pool() if p.get("id") == "contexto_periferico_sur_2015")
+        self.assertLessEqual(len(photo["topic"]), 140)
+        self.assertIn("no del taller", photo["topic"])
+
+    def test_old_moto_photo_topic_is_neutral(self):
+        photo = next(p for p in photos._pool() if p.get("id") == "contexto_motocicleta_zocalo_brigada_2017")
+        self.assertNotIn("marcha", photo["topic"].lower())
+        self.assertLessEqual(len(photo["topic"]), 140)
+
     def test_shared_concert_photo_caption_is_generic_in_all_catalogs(self):
         expected = "Concierto de Kings of Leon en el Palacio de los Deportes, CDMX (octubre de 2009); foto de archivo representativa, no documenta eventos de la noticia."
         relative_paths = (
