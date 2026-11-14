@@ -1289,6 +1289,56 @@ def editorial_event_key(article):
     No fusiona la hemeroteca: distintas fuentes conservan sus registros.
     """
     title = fold(article.get("title", ""))
+    source = fold(article.get("source", ""))
+    # Coberturas del mismo aseguramiento del 14/11/2026 en Venustiano Carranza:
+    # tres hombres, 15 kg de marihuana y 655 (o más de 650) dosis de cocaína.
+    # Se conserva cada fuente en la hemeroteca; portada muestra la más reciente.
+    if (
+        article.get("date") == "2026-11-14"
+        and article.get("borough") == "Venustiano Carranza"
+        and re.search(r"\\bcaen tres (?:hombres|sujetos)\\b", title)
+        and re.search(r"\\b15 kilos?\\b", title)
+        and re.search(r"\\b(?:marihuana|mariguana)\\b", title)
+        and re.search(r"\\b(?:650|655)\\b", title)
+        and re.search(r"\\bcocaina\\b", title)
+    ):
+        return ("venustiano-carranza-three-men-drug-seizure", "2026-11-14")
+
+    # TV Azteca y Sociedad Noticias describen las mismas tres actividades:
+    # 09:00 San Pablo Xalpa, 12:00 Ángel de la Independencia y 16:00 Parque México.
+    if article.get("date") == "2026-11-14" and (
+        (
+            source == "tv azteca"
+            and "marchas y concentraciones" in title
+            and "sabado 14 de noviembre" in title
+        )
+        or (
+            source == "sociedad noticias"
+            and "tres protestas y actividades" in title
+            and "sabado 14 de noviembre" in title
+        )
+    ):
+        return ("cdmx-three-protests-2026-11-14", "2026-11-14")
+
+    # Dos titulares cubren el mismo horario festivo del Metro del 16/11/2026.
+    # Se conserva la cobertura más reciente y completa en portada; ambas quedan en archivo.
+    if (
+        article.get("date") == "2026-11-14"
+        and article.get("category") == "Metro"
+        and (
+            (
+                source == "claro sports"
+                and "cambiara horario el lunes 16 de noviembre" in title
+            )
+            or (
+                source in {"yahoo", "el economista"}
+                and "horario especial este lunes" in title
+                and "revolucion mexicana" in title
+            )
+        )
+    ):
+        return ("metro-holiday-hours-2026-11-16", "2026-11-16")
+
     if is_vc_two_motorcyclists_crash(article):
         # La Prensa fecha el hecho el 13; Sociedad Noticias publicó su cobertura el 14.
         return ("venustiano-carranza-two-motorcyclists", "2026-11-13")
