@@ -1823,13 +1823,13 @@ STRICT_PHOTO_TOPICS = (
      r"\b(?:antros?|discotecas?|clubes? nocturnos?|bares?|vida nocturna|fiestas?|mansiones?|salones? de fiestas?|pistas? de baile|dj)\b"),
     # Las denuncias por fraude requieren contexto financiero o de investigación, no una graduación policial.
     (r"\b(?:denuncias? por fraude|tasa de denuncias por fraude|fraude|estafas?)\b",
-     r"\b(?:fraude|estafas?|delitos? financieros?|investigacion penal|fiscalia|ministerio publico|tarjetas?|bancos?|finanzas?|denuncias? por fraude|documentos?)\b"),
+     r"\b(?:fraude|estafas?|fraude cibernetico|delitos? financieros?|delitos? ciberneticos?|ciberseguridad|phishing|compras? por internet|investigacion penal|fiscalia|ministerio publico|tarjetas?|bancos?|finanzas?|denuncias? por fraude|documentos?)\b"),
     # La extorsión atribuida a cárceles requiere contexto penitenciario o de investigación.
     (r"\b(?:extorsiones? en .*carceles?|extorsiones? .*centros? penitenciarios?|carceles? .*extorsiones?)\b",
      r"\b(?:extorsion|carceles?|reclusorios?|centros? penitenciarios?|penitenciarias?|prisiones?|cobro de piso|investigacion penal|fiscalia|ministerio publico)\b"),
     # Un aseguramiento de autopartes necesita piezas, vehículos o el operativo de decomiso.
     (r"\b(?:autopartes?|refacciones?|deshuesaderos?)\b",
-     r"\b(?:autopartes?|refacciones?|deshuesaderos?|piezas? de (?:autos?|vehiculos?)|almacen de autopartes|decomiso de autopartes|cateo de autopartes|vehiculos? asegurados)\b"),
+     r"\b(?:autopartes?|refacciones?|deshuesaderos?|piezas? de (?:autos?|vehiculos?)|almacen de autopartes|decomiso de autopartes|cateo de autopartes|vehiculos? asegurados|patrullas?|operativo policial)\b"),
 
 )
 
