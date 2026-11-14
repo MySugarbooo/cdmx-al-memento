@@ -1296,11 +1296,11 @@ def editorial_event_key(article):
     if (
         article.get("date") == "2026-11-14"
         and article.get("borough") == "Venustiano Carranza"
-        and re.search(r"\bcaen tres (?:hombres|sujetos)\\b", title)
-        and re.search(r"\b15 kilos?\\b", title)
-        and re.search(r"\b(?:marihuana|mariguana)\\b", title)
-        and re.search(r"\b(?:650|655)\\b", title)
-        and re.search(r"\bcocaina\\b", title)
+        and re.search(r"\bcaen tres (?:hombres|sujetos)\b", title)
+        and re.search(r"\b15 kilos?\b", title)
+        and re.search(r"\b(?:marihuana|mariguana)\b", title)
+        and re.search(r"\b(?:650|655)\b", title)
+        and re.search(r"\bcocaina\b", title)
     ):
         return ("venustiano-carranza-three-men-drug-seizure", "2026-11-14")
 
