@@ -406,6 +406,115 @@ class LocalNewsTests(unittest.TestCase):
         self.assertNotIn("Fuente: El Sol de México", page)
         self.assertNotIn('href="' + article["url"] + '"', page)
 
+    def test_same_vc_drug_seizure_is_grouped_in_homepage_but_both_sources_remain_in_archive(self):
+        el_universal = standardize({
+            "title": "Caen tres sujetos con 15 kilos de marihuana y 655 dosis de cocaína en Venustiano Carranza",
+            "url": "https://news.google.com/rss/articles/vc-drug-el-universal",
+            "source": "El Universal",
+            "date": "2026-11-14",
+            "published_at": "2026-11-14T20:45:33Z",
+            "category": "Seguridad",
+        })
+        milenio = standardize({
+            "title": "Caen tres hombres con 15 kilos de mariguana y más de 650 dosis de cocaína en Venustiano Carranza",
+            "url": "https://news.google.com/rss/articles/vc-drug-milenio",
+            "source": "MILENIO",
+            "date": "2026-11-14",
+            "published_at": "2026-11-14T19:59:00Z",
+            "category": "Seguridad",
+        })
+        self.assertIsNotNone(el_universal)
+        self.assertIsNotNone(milenio)
+        self.assertEqual(el_universal["borough"], "Venustiano Carranza")
+        self.assertNotEqual(archive_record_key(el_universal), archive_record_key(milenio))
+        visible = dedupe_homepage_events([el_universal, milenio])
+        self.assertEqual(len(visible), 1)
+        self.assertEqual(visible[0]["source"], "El Universal")
+        self.assertEqual(visible[0]["local_url"], el_universal["local_url"])
+
+        different = standardize({
+            "title": "Caen tres sujetos con 15 kilos de marihuana y 3 mil dosis de cocaína en Venustiano Carranza",
+            "url": "https://news.google.com/rss/articles/vc-different-drug-seizure",
+            "source": "N+",
+            "date": "2026-11-14",
+            "published_at": "2026-11-14T18:00:00Z",
+            "category": "Seguridad",
+        })
+        self.assertIsNotNone(different)
+        self.assertEqual(len(dedupe_homepage_events([el_universal, different])), 2)
+
+    def test_same_november_14_protest_agenda_is_grouped_but_both_sources_remain_in_archive(self):
+        tv_azteca = standardize({
+            "title": "¿Vas a salir hoy? Marchas y concentraciones en la CDMX este sábado 14 de noviembre: horarios y puntos afectados",
+            "url": "https://news.google.com/rss/articles/protests-tv-azteca",
+            "source": "TV Azteca",
+            "date": "2026-11-14",
+            "published_at": "2026-11-14T21:07:43Z",
+            "category": "Movilidad",
+        })
+        sociedad = standardize({
+            "title": "Movilizaciones en la Cdmx | Tres protestas y actividades este sábado 14 de noviembre",
+            "url": "https://news.google.com/rss/articles/protests-sociedad-noticias",
+            "source": "Sociedad Noticias",
+            "date": "2026-11-14",
+            "published_at": "2026-11-14T15:01:09Z",
+            "category": "CDMX",
+        })
+        self.assertIsNotNone(tv_azteca)
+        self.assertIsNotNone(sociedad)
+        self.assertNotEqual(archive_record_key(tv_azteca), archive_record_key(sociedad))
+        visible = dedupe_homepage_events([tv_azteca, sociedad])
+        self.assertEqual(len(visible), 1)
+        self.assertEqual(visible[0]["source"], "TV Azteca")
+        self.assertEqual(visible[0]["local_url"], tv_azteca["local_url"])
+
+        different = standardize({
+            "title": "Marcha de trabajadores en Tlalpan este sábado 14 de noviembre",
+            "url": "https://news.google.com/rss/articles/protests-distinct-event",
+            "source": "TV Azteca",
+            "date": "2026-11-14",
+            "published_at": "2026-11-14T14:00:00Z",
+            "category": "Movilidad",
+        })
+        self.assertIsNotNone(different)
+        self.assertEqual(len(dedupe_homepage_events([tv_azteca, different])), 2)
+
+    def test_same_november_16_metro_holiday_schedule_is_grouped_but_both_sources_remain_in_archive(self):
+        claro = standardize({
+            "title": "Metro de la CDMX cambiará horario el lunes 16 de noviembre: ¿cómo queda y por qué razón?",
+            "url": "https://news.google.com/rss/articles/metro-holiday-claro-sports",
+            "source": "Claro Sports",
+            "date": "2026-11-14",
+            "published_at": "2026-11-14T19:32:50Z",
+            "category": "Metro",
+        })
+        yahoo = standardize({
+            "title": "¡Toma previsiones! Metro CDMX tendrá horario especial este lunes por aniversario de la Revolución Mexicana",
+            "url": "https://news.google.com/rss/articles/metro-holiday-yahoo",
+            "source": "Yahoo",
+            "date": "2026-11-14",
+            "published_at": "2026-11-14T17:04:09Z",
+            "category": "Metro",
+        })
+        self.assertIsNotNone(claro)
+        self.assertIsNotNone(yahoo)
+        self.assertNotEqual(archive_record_key(claro), archive_record_key(yahoo))
+        visible = dedupe_homepage_events([claro, yahoo])
+        self.assertEqual(len(visible), 1)
+        self.assertEqual(visible[0]["source"], "Claro Sports")
+        self.assertEqual(visible[0]["local_url"], claro["local_url"])
+
+        different = standardize({
+            "title": "Metro reporta retrasos en la Línea 3 este sábado 14 de noviembre",
+            "url": "https://news.google.com/rss/articles/metro-distinct-incident",
+            "source": "Claro Sports",
+            "date": "2026-11-14",
+            "published_at": "2026-11-14T18:00:00Z",
+            "category": "Metro",
+        })
+        self.assertIsNotNone(different)
+        self.assertEqual(len(dedupe_homepage_events([claro, different])), 2)
+
     def test_same_vc_motorcycle_crash_is_grouped_in_feed_but_both_sources_remain_in_archive(self):
         la_prensa = standardize({
             "title": "Mueren dos motociclistas tras chocar contra una camioneta en Venustiano Carranza",
