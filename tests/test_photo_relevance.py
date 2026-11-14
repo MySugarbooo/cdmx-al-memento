@@ -2743,5 +2743,39 @@ class CurrentEditorialPhotoRegressionTests(unittest.TestCase):
                     assign_photos([article])
                 self.assertNotIn("photo", article)
 
+    def test_market_c5_surveillance_story_rejects_covid_sanitation_photo(self):
+        article = news.standardize({
+            "title": (
+                "Mercado Bramadero en Iztacalco será el primero conectado al C5; "
+                "Brugada asegura que todos los mercados tendrán cámaras"
+            ),
+            "url": "https://news.google.com/rss/articles/market-c5-photo-regression",
+            "source": "El Universal",
+            "date": "2026-11-14",
+            "category": "Seguridad",
+        })
+        self.assertIsNotNone(article)
+
+        covid_sanitation = representative_photo(
+            "market-covid-hygiene",
+            "Servicios",
+            "Medidas de sanidad en los mercados de la Ciudad de México durante la epidemia de COVID-19. 1",
+            ["Mercados públicos Ciudad de México"],
+        )
+        article["photo"] = covid_sanitation
+        self.assertLess(_photo_score(article, covid_sanitation), 0)
+        with patch.object(photos, "_pool", return_value=[covid_sanitation]):
+            assign_photos([article])
+        self.assertNotIn("photo", article)
+
+        surveillance = representative_photo(
+            "market-security-cameras",
+            "Seguridad",
+            "Cámaras de videovigilancia instaladas en un mercado público de Iztacalco",
+            ["C5", "cámaras de seguridad", "vigilancia de mercados"],
+        )
+        self.assertGreaterEqual(_photo_score(article, surveillance), 0)
+
+
 if __name__ == "__main__":
     unittest.main()
