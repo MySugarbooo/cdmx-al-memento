@@ -879,6 +879,61 @@ class BoroughAndArchiveTests(unittest.TestCase):
         self.assertIsNone(legacy["published_at"])
         self.assertEqual(legacy["location"], "Xochimilco (mencionada en el titular)")
 
+    def test_hoy_tamaulipas_paty_chio_uses_original_publication_date_and_source(self):
+        item = fake(
+            "Participa Patty Chio en Primera Asamblea de Seguridad Publica Municipal en CDMX",
+            "2026-11-13", "2026-11-14T02:58:21Z",
+        )
+        item["source"] = "Hoy Tamaulipas"
+        fixed = news.standardize(item)
+
+        self.assertEqual(fixed["date"], "2025-12-10")
+        self.assertEqual(fixed["published_at"], "2025-12-11T01:31:04Z")
+        self.assertTrue(fixed["local_url"].endswith("&mes=2025-12"))
+        self.assertEqual(
+            fixed["source_url"],
+            news.HOY_TAMAULIPAS_PATTY_CHIO_SOURCE_URL,
+        )
+        self.assertIn("10 de diciembre de 2025", fixed["brief"]["lead"])
+        self.assertFalse(news.local_for_homepage(fixed))
+
+    def test_hoy_tamaulipas_paty_chio_moves_to_original_month_archive(self):
+        item = fake(
+            "Participa Patty Chio en Primera Asamblea de Seguridad Publica Municipal en CDMX",
+            "2026-11-13", "2026-11-14T02:58:21Z",
+        )
+        item["source"] = "Hoy Tamaulipas"
+        item["photo"] = {
+            "id": "archivo_seguridad_002", "kind": "representativa",
+            "url": "/assets/fotos/archivo_seguridad_002.jpg",
+            "category": "Seguridad", "topic": "Patrulla vecinal",
+            "author": "Daniel Yonka", "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Patrulla_vecinal.jpg",
+        }
+        fixed = news.standardize(item)
+
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            archive = root / "archivo"
+            archive.mkdir()
+            with patch.multiple(
+                news, ARCHIVE_DIR=archive, BOROUGH_DIR=root / "alcaldias",
+                DEST=root / "news.json",
+            ):
+                months = news.consolidate_archive(
+                    [fixed],
+                    datetime(2025, 11, 13, tzinfo=timezone.utc),
+                    "Prueba",
+                )
+                saved = json.loads(
+                    (archive / "2025-12.json").read_text(encoding="utf-8")
+                )
+                self.assertEqual(len(saved["articles"]), 1)
+                self.assertEqual(saved["articles"][0]["date"], "2025-12-10")
+                self.assertFalse((archive / "2026-11.json").exists())
+                self.assertEqual(months[0]["month"], "2025-12")
+
     def test_older_than_365_days_expires_even_within_month(self):
         now=datetime.now(timezone.utc)
         cutoff=now-timedelta(days=365)

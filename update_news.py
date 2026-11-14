@@ -35,6 +35,8 @@ REPORTS = ROOT / "reports.json"
 MX = ZoneInfo("America/Mexico_City")
 SITE = "https://cdmx-al-memento.pages.dev"
 LA_PRENSA_VC_MOTORCYCLE_CRASH_SOURCE_URL = "https://oem.com.mx/la-prensa/policiaca/mueren-dos-motociclistas-tras-chocar-contra-una-camioneta-en-venustiano-carranza-33118910"
+HOY_TAMAULIPAS_PATTY_CHIO_SOURCE_URL = "https://www.hoytamaulipas.net/notas/607182/El-Mante-presente-en-la-Asamblea-Nacional-de-Seguridad-Publica-Municipal-2025.html"
+HOY_TAMAULIPAS_PATTY_CHIO_PUBLISHED_AT = "2025-12-10T19:31:04-06:00"
 AHORA_NOTICIAS_TLALPAN_PERRITA_SOURCE_URL = "https://ahoranoticias.com.mx/nacional/rescatan-a-perrita-por-presunto-maltrato-animal-en-tlalpan/"
 MAIL = "sanchezaxochitl@gmail.com"
 RETENTION_DAYS = 365
@@ -267,6 +269,8 @@ def headline_has_cdmx_signal(title):
 
 def local_for_homepage(article):
     title = article.get("title", "")
+    if is_hoy_tamaulipas_paty_chio_assembly(article):
+        return False
     return (not outside_cdmx_scope(title)
             and (article.get("editorial_verified") is True
                  or headline_has_cdmx_signal(title)))
@@ -596,6 +600,16 @@ def is_vc_two_motorcyclists_crash(article):
     )
 
 
+def is_hoy_tamaulipas_paty_chio_assembly(article):
+    """Reconoce la asamblea de El Mante publicada originalmente el 10-12-2025."""
+    return (
+        fold(article.get("source", "")) == "hoy tamaulipas"
+        and fold(article.get("title", "")) == fold(
+            "Participa Patty Chio en Primera Asamblea de Seguridad Publica Municipal en CDMX"
+        )
+    )
+
+
 def is_tlalpan_perrita_rescue(article):
     """Reconoce la nota sindicada del rescate de una perrita en Tlalpan (13-11-2026)."""
     title = fold(article.get("title", ""))
@@ -616,6 +630,11 @@ def standardize(article):
     date = str(article.get("date", ""))
     published = published_datetime(article.get("published_at"))
     if published:
+        date = published.astimezone(MX).date().isoformat()
+    if is_hoy_tamaulipas_paty_chio_assembly({"title": title, "source": source}):
+        # El RSS volvió a publicar una nota de 2025 como si fuera nueva.
+        # La fuente original identifica el 10 de diciembre de 2025 como fecha real.
+        published = datetime.fromisoformat(HOY_TAMAULIPAS_PATTY_CHIO_PUBLISHED_AT).astimezone(timezone.utc)
         date = published.astimezone(MX).date().isoformat()
     if not title or not valid_link(url, curated) or not DAY_RE.fullmatch(date):
         return None
@@ -719,6 +738,8 @@ def standardize(article):
         result["source_url"] = CAPITAL_CDMX_CARE_BUDGET_SOURCE_URL
     elif is_radio_formula_casa_ecologica(result):
         result["source_url"] = RADIO_FORMULA_CASA_ECOLOGICA_SOURCE_URL
+    if is_hoy_tamaulipas_paty_chio_assembly(result):
+        result["source_url"] = HOY_TAMAULIPAS_PATTY_CHIO_SOURCE_URL
     versions = article.get("alternate_versions")
     if isinstance(versions, list):
         preserved = []
@@ -749,6 +770,30 @@ def standardize(article):
             result["location"] = clean(article["location"])[:180]
     else:
         result["brief"] = summarize(result)  # Recalcular fichas RSS al ajustar reglas.
+    if is_hoy_tamaulipas_paty_chio_assembly(result):
+        result["brief"] = {
+            "lead": (
+                "La alcaldesa de El Mante, Tamaulipas, Patty Chío, participó el 10 de diciembre "
+                "de 2025 en la Primera Asamblea Plenaria Ordinaria 2025 de la Conferencia Nacional "
+                "de Seguridad Pública Municipal, celebrada en Ciudad de México. Hoy Tamaulipas "
+                "reportó que el encuentro reunió a autoridades municipales y federales para "
+                "compartir resultados y fortalecer la coordinación en seguridad pública."
+            ),
+            "context": (
+                "La sede fue Ciudad de México, pero la participación descrita corresponde a la "
+                "representación municipal de El Mante, Tamaulipas; no se trata de un operativo "
+                "ni de un incidente de seguridad en una alcaldía capitalina."
+            ),
+            "pending": (
+                "La nota no identifica una alcaldía sede ni describe medidas operativas específicas "
+                "para habitantes de CDMX. No se infieren acuerdos o acciones posteriores."
+            ),
+            "method": (
+                "Síntesis editorial propia elaborada tras consultar directamente la publicación "
+                "original de Hoy Tamaulipas, fechada el 10 de diciembre de 2025; no equivale a "
+                "verificación independiente."
+            ),
+        }
     # La ficha histórica de Infobae sobre Huixtla tuvo un resumen heredado de
     # El Financiero; al normalizarla, rehacer la atribución con la fuente enlazada.
     if is_huixtla_migrant_caravan(result) and source.casefold() == "infobae":
