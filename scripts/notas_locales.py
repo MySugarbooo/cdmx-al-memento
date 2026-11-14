@@ -599,12 +599,49 @@ def is_24horas_electric_mobility_plates_guide(article):
     )
 
 
+def is_codigoqro_ignacio_detention(article):
+    """Identifica la nota de CódigoQro sobre la detención en Querétaro publicada el 14/11/2026."""
+    title = _photo_fold(article.get("title"))
+    source = _photo_fold(article.get("source"))
+    return (
+        source == "codigoqro"
+        and str(article.get("date") or "") == "2026-11-14"
+        and "detienen en queretaro a ignacio n profugo por abuso sexual en cdmx" in title
+    )
+
+
 def summarize(article):
     title=str(article.get("title") or "").strip()
     source=str(article.get("source") or "un medio periodístico").strip()
     category=str(article.get("category") or "CDMX")
     theme=TAGS.get(category,TAGS["CDMX"])
     folded_title=_photo_fold(title)
+    if is_codigoqro_ignacio_detention(article):
+        return {
+            "lead": (
+                "CódigoQro publicó la detención de Ignacio “N” en Querétaro, a petición de autoridades "
+                "de la Ciudad de México. La cobertura de El Queretano precisa que la investigación "
+                "se refiere a hechos ocurridos el 1 de noviembre de 2016 en la alcaldía Cuauhtémoc; "
+                "la detención se realizó en la capital queretana y la persona fue entregada a autoridades "
+                "capitalinas para continuar el procedimiento."
+            ),
+            "context": (
+                "La noticia tiene dos ubicaciones distintas: los hechos investigados se sitúan en "
+                "Cuauhtémoc, Ciudad de México, mientras que la detención ocurrió en Querétaro, "
+                "mediante colaboración entre las policías de investigación."
+            ),
+            "pending": (
+                "La cobertura consultada no permite afirmar culpabilidad ni anticipar el resultado "
+                "judicial. Se conserva la identificación como Ignacio “N” y no se agregan datos "
+                "personales de la víctima."
+            ),
+            "method": (
+                "Síntesis del titular atribuido a CódigoQro, contrastada para precisar la ubicación "
+                "con El Queretano, publicado el 14 de noviembre de 2026: "
+                "https://elqueretano.info/subterraneo/detienen-en-queretaro-a-hombre-acusado-de-abuso-sexual-en-cdmx/. "
+                "Los datos se atribuyen a esa cobertura; no se consultó el expediente judicial."
+            ),
+        }
     if is_24horas_electric_mobility_plates_guide(article):
         return {
             "lead": (
