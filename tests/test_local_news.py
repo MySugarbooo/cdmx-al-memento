@@ -350,14 +350,16 @@ class LocalNewsTests(unittest.TestCase):
             "title": "Mueren dos motociclistas tras chocar contra una camioneta en Venustiano Carranza",
             "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNYlEtZER2b0lMSXRrLTNzYTdweEk1ZTRSdm5xX2dtWFFIU04tUWRya0VtNWd0UUJiVndhM2V3UzJlYjJ3Z192Yks0b0ZNSnBvbXJiZmlUeGw5V2FKczRETC11VWtQSk5Oc1FHdFVDUTZFMExlZUhFQVdlN1ZtSElsMjNKVEtQZGt2S2Rvd2J2WUFtMkdmZUNUZENQbVpQWWxockk2MmRNTFZJMmF2elYzc05NNHpSN3RKYXdPMkhGblVYV2t1NEs4?oc=5",
             "source": "El Sol de México",
-            "date": "2026-11-13",
-            "published_at": "2026-11-13T23:36:46Z",
+            "date": "2026-11-14",
+            "published_at": "2026-11-14T07:32:35Z",
             "category": "Movilidad",
         }
         result = standardize(article)
         self.assertIsNotNone(result)
         self.assertEqual(result["source"], "La Prensa")
         self.assertEqual(result["source_url"], "https://oem.com.mx/la-prensa/policiaca/mueren-dos-motociclistas-tras-chocar-contra-una-camioneta-en-venustiano-carranza-33118910")
+        self.assertEqual(result["date"], "2026-11-13")
+        self.assertIsNone(result["published_at"])
         self.assertEqual(result["local_url"], "/noticias/?id=48ad03698ec605252a33&mes=2026-11")
         self.assertEqual(result["url"], article["url"])
         self.assertIn("La Prensa", result["brief"]["lead"])
@@ -392,6 +394,42 @@ class LocalNewsTests(unittest.TestCase):
         self.assertEqual(visible[0]["source"], "La Prensa")
         self.assertEqual(visible[0]["local_url"], la_prensa["local_url"])
 
+
+    def test_sociedad_noticias_vc_motorcycle_crash_uses_direct_source_and_groups_same_event(self):
+        la_prensa = standardize({
+            "title": "Mueren dos motociclistas tras chocar contra una camioneta en Venustiano Carranza",
+            "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNYlEtZER2b0lMSXRrLTNzYTdweEk1ZTRSdm5xX2dtWFFIU04tUWRya0VtNWd0UUJiVndhM2V3UzJlYjJ3Z192Yks0b0ZNSnBvbXJiZmlUeGw5V2FKczRETC11VWtQSk5Oc1FHdFVDUTZFMExlZUhFQVdlN1ZtSElsMjNKVEtQZGt2S2Rvd2J2WUFtMkdmZUNUZENQbVpQWWxockk2MmRNTFZJMmF2elYzc05NNHpSN3RKYXdPMkhGblVYV2t1NEs4?oc=5",
+            "source": "El Sol de México",
+            "date": "2026-11-14",
+            "published_at": "2026-11-14T07:32:35Z",
+            "category": "Movilidad",
+        })
+        sociedad = standardize({
+            "title": "Mueren dos motociclistas tras accidente vial en Venustiano Carranza",
+            "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOZVBoNlhsbWF2c3pfT1BvcFM2N05mT1FnSDZYWGZ2dEV5OC1PWGlWazFiWjZ0STMzUmtMZnFWaVR0QjhVN0dOcnlwQkRIX3BldU1lMmZxd0l5NG5fUFVycHhTeWV2UUlyMW9Wc3RhZU91bzJYNnhIai1Ic0U2RGtyYVNLRFFSalcyN2lwSVBiTEVzN3lGNm1oVXlRSUlyREhNUXhOZF8xMFhnVEJZX1E?oc=5",
+            "source": "Sociedad Noticias",
+            "date": "2026-11-14",
+            "published_at": "2026-11-14T07:30:00Z",
+            "category": "Movilidad",
+        })
+        self.assertIsNotNone(la_prensa)
+        self.assertIsNotNone(sociedad)
+        self.assertEqual(sociedad["source"], "Sociedad Noticias")
+        self.assertEqual(
+            sociedad["source_url"],
+            "https://sociedad-noticias.com/2026/11/14/mueren-dos-motociclistas-tras-accidente-vial-en-venustiano-carranza/",
+        )
+        self.assertNotEqual(archive_record_key(la_prensa), archive_record_key(sociedad))
+        page = render(sociedad, article_id(sociedad))
+        self.assertIn("Fuente: Sociedad Noticias", page)
+        self.assertIn(
+            'href="https://sociedad-noticias.com/2026/11/14/mueren-dos-motociclistas-tras-accidente-vial-en-venustiano-carranza/"',
+            page,
+        )
+        visible = dedupe_homepage_events([sociedad, la_prensa])
+        self.assertEqual(len(visible), 1)
+        self.assertEqual(visible[0]["source"], "Sociedad Noticias")
+        self.assertEqual(visible[0]["local_url"], sociedad["local_url"])
 
     def test_ahora_noticias_tlalpan_perrita_rescue_corrects_source_and_preserves_article_key(self):
         article = {
