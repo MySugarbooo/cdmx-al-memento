@@ -1883,6 +1883,25 @@ def _photo_score(article, photo):
     motorcycle_story = bool(re.search(
         r"\b(?:motocicletas?|motociclistas?|motos?)\b", headline
     ))
+    vehicle_crash_story = bool(
+        re.search(
+            r"\b(?:vuelca|volcadura|derrap\w*|choque|colision|accidente vial|"
+            r"accidente de transito|siniestro vial|atropellamiento)\b",
+            headline,
+        )
+        and re.search(
+            r"\b(?:automovil|auto|vehiculo|camioneta|motocicleta|motociclistas?|moto)\b",
+            headline,
+        )
+    )
+    vehicle_road_photo = bool(re.search(
+        r"\b(?:trafico vehicular|transito vehicular|vialidad|carretera|autopista|"
+        r"avenida|calzada|carriles?|accidente vial|choque|volcadura|derrape|"
+        r"automovilistas)\b",
+        context,
+    ))
+    if vehicle_crash_story and not vehicle_road_photo:
+        return -10000
     if (photo.get("id") == "contexto_repartidores_motocicleta_cdmx"
             and not delivery_story):
         return -10000
@@ -1903,6 +1922,33 @@ def _photo_score(article, photo):
         delivery_security_story and delivery_security_photo
     ):
         return -10000
+    # Una marcha por derechos animales no debe ilustrarse con una protesta de otra causa.
+    animal_rights_march_story = bool(
+        re.search(r"\b(?:marcha|manifestacion|protesta)\b", headline)
+        and re.search(r"\b(?:derechos de los animales|bienestar animal|proteccion animal)\b", headline)
+    )
+    animal_rights_march_photo = bool(
+        re.search(r"\b(?:marcha|manifestacion|protesta)\b", context)
+        and re.search(r"\b(?:derechos de los animales|bienestar animal|proteccion animal|animales?)\b", context)
+    )
+    if animal_rights_march_story and not animal_rights_march_photo:
+        return -10000
+
+    # Una nota sobre cámaras de seguridad en mercados exige contexto de videovigilancia;
+    # una foto de higiene por COVID no representa la instalación de cámaras del C5.
+    market_surveillance_story = bool(
+        re.search(r"\b(?:c5|camaras?|videovigilancia|circuito cerrado|monitoreo)\b", headline)
+        and re.search(r"\bmercados?\b", headline)
+    )
+    market_surveillance_photo = bool(re.search(
+        r"\b(?:camaras? de (?:seguridad|vigilancia|videovigilancia)|videovigilancia|"
+        r"circuito cerrado|centro de monitoreo|c5|vigilancia (?:en|de) mercados?|"
+        r"camaras? (?:de seguridad )?en mercados?)\b",
+        context,
+    ))
+    if market_surveillance_story and not market_surveillance_photo:
+        return -10000
+
     # Los tianguis no se ilustran con monumentos ni con mercados públicos distintos.
     tianguis_story = bool(re.search(r"\btianguis\b", headline))
     tianguis_photo = bool(re.search(
@@ -2462,13 +2508,13 @@ def _photo_score(article, photo):
             and not re.search(r"\b(?:obras?|construccion|remodelacion)\b", headline)
             and re.search(r"\b(?:obras?|construccion|remodelacion)\b", topic)):
         return -10000
-    # Una entrega o adquisición de patrullas no ilustra un decomiso de autopartes.
+    # Una entrega, adquisición o presentación de patrullas no ilustra un decomiso de autopartes.
     autoparts_story = bool(re.search(
         r"\b(?:autopartes?|refacciones?|deshuesaderos?|piezas? de (?:autos?|vehiculos?))\b",
         headline,
     ))
     patrol_procurement_photo = bool(re.search(
-        r"\b(?:adquisicion|compra|presentacion|entrega|graduacion|ceremonia)\b.{0,60}\b(?:patrullas?|policias?)\b",
+        r"\b(?:adquisicion|compra|presentacion|entrega|graduacion|ceremonia|nuevas?)\b.{0,60}\b(?:patrullas?|policias?)\b",
         topic,
     ))
     if autoparts_story and patrol_procurement_photo:
