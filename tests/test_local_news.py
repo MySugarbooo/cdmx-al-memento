@@ -1009,6 +1009,24 @@ class LocalNewsTests(unittest.TestCase):
         self.assertEqual(result["location"], "Miguel Hidalgo (mencionada en el titular)")
 
 
+    def test_aicm_flight_disruption_uses_confirmed_venustiano_carranza_location(self):
+        article = {
+            "title": "AICM reporta 10 mil 293 pasajeros y 73 vuelos afectados tras suspensión aérea en EU",
+            "url": "https://news.google.com/rss/articles/aicm-location-regression?oc=5",
+            "source": "La Jornada",
+            "date": "2026-11-13",
+            "category": "CDMX",
+            "borough": "",
+        }
+        result = standardize(article)
+        self.assertIsNotNone(result)
+        self.assertEqual(result["category"], "Movilidad")
+        self.assertEqual(result["borough"], "Venustiano Carranza")
+        self.assertEqual(
+            result["location"],
+            "Aeropuerto Internacional de la Ciudad de México (AICM), Venustiano Carranza",
+        )
+
     def test_editorial_categories_for_current_entertainment_transport_and_civic_headlines(self):
         cases = (
             ("Aeropuerto de CDMX informa sobre afectaciones de vuelos desde y hacia EEUU", "Metro", "Movilidad"),
