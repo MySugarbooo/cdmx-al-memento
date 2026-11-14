@@ -1890,7 +1890,7 @@ def _photo_score(article, photo):
             headline,
         )
         and re.search(
-            r"\b(?:automovil|auto|vehiculo|camioneta|motocicleta|motociclista|moto)\b",
+            r"\b(?:automovil|auto|vehiculo|camioneta|motocicleta|motociclistas?|moto)\b",
             headline,
         )
     )
@@ -2508,17 +2508,16 @@ def _photo_score(article, photo):
             and not re.search(r"\b(?:obras?|construccion|remodelacion)\b", headline)
             and re.search(r"\b(?:obras?|construccion|remodelacion)\b", topic)):
         return -10000
-    # Una patrulla genérica no representa un decomiso de autopartes, aunque ambas notas sean de seguridad.
+    # Una entrega, adquisición o presentación de patrullas no ilustra un decomiso de autopartes.
     autoparts_story = bool(re.search(
         r"\b(?:autopartes?|refacciones?|deshuesaderos?|piezas? de (?:autos?|vehiculos?))\b",
         headline,
     ))
-    patrol_photo = bool(re.search(r"\b(?:patrullas?|policias?)\b", context))
-    photo_shows_parts = bool(re.search(
-        r"\b(?:autopartes?|refacciones?|deshuesaderos?|piezas? de (?:autos?|vehiculos?))\b",
-        context,
+    patrol_procurement_photo = bool(re.search(
+        r"\b(?:adquisicion|compra|presentacion|entrega|graduacion|ceremonia|nuevas?)\b.{0,60}\b(?:patrullas?|policias?)\b",
+        topic,
     ))
-    if autoparts_story and patrol_photo and not photo_shows_parts:
+    if autoparts_story and patrol_procurement_photo:
         return -10000
     # En titulares en vivo, el texto tras dos puntos puede resumir otros asuntos;
     # para la pertinencia visual se prioriza el hecho principal antes de los dos puntos.
