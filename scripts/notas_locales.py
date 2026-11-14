@@ -1857,12 +1857,12 @@ def _photo_score(article, photo):
     # con patrullas de otra alcaldía de CDMX. Sin foto contextual de Saltillo,
     # es preferible no mostrar imagen antes que sugerir un operativo distinto.
     saltillo_model_story = bool(
-        re.search(r"\bmodelo de seguridad\\b", headline)
-        and re.search(r"\bsaltillo\\b", headline)
+        re.search(r"\bmodelo de seguridad\b", headline)
+        and re.search(r"\bsaltillo\b", headline)
     )
     saltillo_security_photo = bool(
-        re.search(r"\b(?:saltillo|coahuila)\\b", context)
-        and re.search(r"\b(?:seguridad|policias?|patrullas?|operativos?)\\b", context)
+        re.search(r"\b(?:saltillo|coahuila)\b", context)
+        and re.search(r"\b(?:seguridad|policias?|patrullas?|operativos?)\b", context)
     )
     if saltillo_model_story and not saltillo_security_photo:
         return -10000
