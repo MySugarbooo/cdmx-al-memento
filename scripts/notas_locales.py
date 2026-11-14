@@ -77,6 +77,7 @@ RADIO_FORMULA_CASA_ECOLOGICA_SOURCE_URL = "https://www.radioformula.com.mx/cdmx/
 LA_JORNADA_CASA_ECOLOGICA_SOURCE_URL = "https://www.jornada.com.mx/noticia/2026/11/12/capital/lanza-cdmx-programa-de-ecotecnias-para-10-mil-viviendas-en-alvaro-obregon"
 CAPITAL_CDMX_CARE_BUDGET_SOURCE_URL = "https://capital-cdmx.org/presupuesto-cuidados-2027-cdmx-cuanto-dinero-llegara-anexo-31-desglose/"
 EL_SOL_MUJERES_DEFENSIVE_DRIVING_SOURCE_URL = "https://oem.com.mx/elsoldemexico/metropoli/ofrecen-taller-gratuito-de-manejo-defensivo-y-preventivo-para-mujeres-en-cdmx-33130686"
+24_HORAS_ELECTRIC_MOBILITY_SOURCE_URL = "https://24-horas.mx/cdmx/registro-emplacamiento-vemepe-vep-cdmx-costos-requisitos/"
 
 
 def is_radio_formula_casa_ecologica(article):
@@ -587,12 +588,46 @@ def is_elsol_women_defensive_driving_workshop(article):
     )
 
 
+def is_24horas_electric_mobility_plates_guide(article):
+    """Identifica la guía de 24 Horas sobre VEP/VEMEPE publicada el 14/11/2026."""
+    title = _photo_fold(article.get("title"))
+    source = _photo_fold(article.get("source"))
+    return (
+        source == "24 horas"
+        and str(article.get("date") or "") == "2026-11-14"
+        and "placas de motos electricas bicis y scooters en cdmx" in title
+    )
+
+
 def summarize(article):
     title=str(article.get("title") or "").strip()
     source=str(article.get("source") or "un medio periodístico").strip()
     category=str(article.get("category") or "CDMX")
     theme=TAGS.get(category,TAGS["CDMX"])
     folded_title=_photo_fold(title)
+    if is_24horas_electric_mobility_plates_guide(article):
+        return {
+            "lead": (
+                "24 Horas informa que el periodo de gracia para regularizar vehículos eléctricos personales "
+                "en CDMX vence el 20 de noviembre de 2026. Solo los VEMEPE requieren placa metálica; "
+                "los VEP reciben un Distintivo de Movilidad Eléctrica (DME) gratuito."
+            ),
+            "context": (
+                "La nota indica que el emplacamiento de VEMEPE cuesta $355 y detalla sanciones de 30 UMA "
+                "por falta de casco o luces o circular en zonas prohibidas, de 40 a 60 UMA por invadir "
+                "carril confinado y de 180 UMA por conducir con licencia cancelada. El trámite inicia "
+                "en el portal de SEMOVI y concluye con cita presencial."
+            ),
+            "pending": (
+                "No todas las bicicletas o scooters necesitan placa: la clasificación depende de la "
+                "velocidad, la potencia y el acelerador independiente. Verifica si tu modelo es VEP o "
+                "VEMEPE y revisa los requisitos vigentes en la guía oficial de SEMOVI antes de circular."
+            ),
+            "method": (
+                "Síntesis del artículo de 24 Horas publicado el 14 de noviembre de 2026, contrastada "
+                "con la clasificación oficial de SEMOVI: " + "https://semovi.cdmx.gob.mx/tramites-y-servicios/vep-vemepe" + "."
+            ),
+        }
     if is_elsol_women_defensive_driving_workshop(article):
         return {
             "lead": (
