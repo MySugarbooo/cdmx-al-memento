@@ -2666,5 +2666,53 @@ class CurrentEditorialPhotoRegressionTests(unittest.TestCase):
                     assign_photos([article])
                 self.assertNotIn("photo", article)
 
+    def test_current_feed_rejects_remaining_unrelated_nightlife_food_parts_and_process_photos(self):
+        cases = (
+            (
+                "Antro Home Alone: fiesta en mansión de Polanco CDMX",
+                "CDMX",
+                "Capilla posa Virgen de Guadalupe en la fiesta del Jubileo en Iztacalco, Ciudad de México",
+            ),
+            (
+                "Aseguran tres toneladas de autopartes presuntamente robadas en CDMX",
+                "Seguridad",
+                "Entrega Claudia Sheinbaum 113 nuevas patrullas en Gustavo A Madero 04",
+            ),
+            (
+                "Vinculan a Proceso al 'Choppersito', Presunto Generador de Violencia en Iztapalapa",
+                "Seguridad",
+                "Metro Iztapalapa 02",
+            ),
+            (
+                "Vinculan a proceso a Ismael N por extorsionar a comerciante en Iztapalapa",
+                "Seguridad",
+                "Adquisición patrullas para la Policía 03",
+            ),
+            (
+                "Dónde comer chicharrones preparados y quesadillas de sesos baratos en Iztapalapa, CDMX",
+                "CDMX",
+                "Vistas de la Ciudad de México desde la Torre Latinoamericana 02",
+            ),
+        )
+        for index, (title, category, topic) in enumerate(cases):
+            with self.subTest(title=title):
+                article = news.standardize({
+                    "title": title,
+                    "url": f"https://news.google.com/rss/articles/current-photo-guard-{index}",
+                    "source": "Medio de prueba",
+                    "date": "2026-11-13",
+                    "category": category,
+                    "borough": "",
+                })
+                self.assertIsNotNone(article)
+                wrong_photo = representative_photo(
+                    f"current_wrong_context_{index}", category, topic, []
+                )
+                article["photo"] = wrong_photo
+                self.assertLess(_photo_score(article, wrong_photo), 0)
+                with patch.object(photos, "_pool", return_value=[wrong_photo]):
+                    assign_photos([article])
+                self.assertNotIn("photo", article)
+
 if __name__ == "__main__":
     unittest.main()
