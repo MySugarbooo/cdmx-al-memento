@@ -239,10 +239,27 @@
   if(!requested){renderList(recent);return;}
   let found=recent.find(x=>x.local_url===('/noticias/?id='+id+'&mes='+month));
   if(found){renderArticle(found,recent,current.updated);return;}
-  const archive=await readJSON(monthURL);
-  const all=Array.isArray(archive.articles)?archive.articles.filter(validArticle):[];
-  found=all.find(x=>x.local_url===('/noticias/?id='+id+'&mes='+month));
-  if(found){renderArticle(found,all,archive.updated);return;}
+  const expectedLocalUrl='/noticias/?id='+id+'&mes='+month;
+  let archive=null,all=[];
+  try{
+   archive=await readJSON(monthURL);
+   all=Array.isArray(archive.articles)?archive.articles.filter(validArticle):[];
+   found=all.find(x=>x.local_url===expectedLocalUrl);
+   if(found){renderArticle(found,all,archive.updated);return;}
+  }catch{}
+  // Si una corrección editorial mueve la fecha original a otro mes, conservar
+  // la URL histórica y la colección de comentarios asociada a su mes original.
+  let routeIndex=null;
+  try{routeIndex=await readJSON('/archivo/rutas.json')}catch{}
+  const archiveMonth=routeIndex?.routes?.[id];
+  if(/^\\d{4}-\\d{2}$/.test(archiveMonth||'')&&archiveMonth!==month){
+   try{
+    const moved=await readJSON('/archivo/'+archiveMonth+'.json');
+    const movedItems=Array.isArray(moved.articles)?moved.articles.filter(validArticle):[];
+    found=movedItems.find(x=>x.local_url===expectedLocalUrl);
+    if(found){renderArticle(found,movedItems,moved.updated);return;}
+   }catch{}
+  }
   title.textContent='No encontramos esta noticia en el archivo';
   intro.textContent='Es posible que haya vencido el periodo de conservación del periódico. Explora los titulares que siguen disponibles.';
   renderList(recent);
