@@ -15,6 +15,35 @@ class LocalNewsTests(unittest.TestCase):
                 "source":"Periódico de prueba","date":"2026-10-13",
                 "category":category,"borough":""}
 
+    def test_codigoqro_ignacio_detention_separates_crime_and_arrest_locations(self):
+        article = {
+            "title": 'Detienen en Querétaro a Ignacio "N", prófugo por abuso sexual en CDMX',
+            "url": "https://news.google.com/rss/articles/codigoqro-ignacio-detention-20261114",
+            "source": "CódigoQro",
+            "date": "2026-11-14",
+            "published_at": "2026-11-14T18:53:00Z",
+            "category": "Seguridad",
+            "borough": "",
+        }
+        result = standardize(article)
+        self.assertIsNotNone(result)
+        self.assertEqual(result["borough"], "Cuauhtémoc")
+        self.assertEqual(
+            result["location"],
+            "Cuauhtémoc, Ciudad de México (hechos investigados en 2016); "
+            "detención en Querétaro, Querétaro",
+        )
+        self.assertIn("1 de noviembre de 2016", result["brief"]["lead"])
+        self.assertIn("capital queretana", result["brief"]["lead"])
+        self.assertIn("El Queretano", result["brief"]["method"])
+        self.assertIn("https://elqueretano.info/subterraneo/detienen-en-queretaro-a-hombre-acusado-de-abuso-sexual-en-cdmx/", result["brief"]["method"])
+        self.assertIn("no permite afirmar culpabilidad", result["brief"]["pending"])
+        self.assertTrue(is_sensitive_media(result))
+        assign_photos([result])
+        self.assertNotIn("photo", result)
+        rendered = render(result, article_id(result))
+        self.assertIn("Sin fotografía verificada del hecho", rendered)
+
     def test_huixtla_migrant_caravan_is_external_and_rejects_wheelchair_basketball_photo(self):
         article = {
             "title": "Caravana migrante ‘Dios con nosotros’ llega a Huixtla: Más de 500 personas avanzan por Chiapas rumbo a CDMX",
