@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-14 18:55 UTC",
+  "updated": "2026-11-14 19:18 UTC",
   "boroughs": [
     {
       "name": "La Magdalena Contreras",
@@ -2805,27 +2805,6 @@
           "location": "Azcapotzalco (mencionada en el titular)",
           "local_url": "/noticias/?id=0a3abec9941a9ad3518e&mes=2026-11",
           "source_url": "https://www.nmas.com.mx/ciudad-de-mexico/seguridad/asesinatos/asesinan-a-un-hombre-y-un-nino-de-10-anos-en-alcaldia-azcapotzalco-en-la-cdmx/",
-          "brief": {
-            "lead": "De acuerdo con N+, el titular publicado es: «Asesinan a Un Hombre y Un Niño de 10 Años en Alcaldía Azcapotzalco, en la CDMX». La información publicada por N+ aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
-            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "archivo_seguridad_002",
-            "kind": "representativa",
-            "url": "/assets/fotos/archivo_seguridad_002.jpg",
-            "category": "Seguridad",
-            "borough": "",
-            "topic": "Patrulla vecinal",
-            "keywords": [
-              "Seguridad"
-            ],
-            "author": "Daniel Yonka",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Patrulla_vecinal.jpg"
-          },
           "alternate_versions": [
             {
               "title": "Asesinan a Un Hombre y Un Niño de 10 Años en Alcaldía Azcapotzalco, en la CDMX",
@@ -2928,7 +2907,28 @@
                 "source": "https://commons.wikimedia.org/wiki/File:Patrulla_vecinal.jpg"
               }
             }
-          ]
+          ],
+          "brief": {
+            "lead": "De acuerdo con N+, el titular publicado es: «Asesinan a Un Hombre y Un Niño de 10 Años en Alcaldía Azcapotzalco, en la CDMX». La información publicada por N+ aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "archivo_seguridad_002",
+            "kind": "representativa",
+            "url": "/assets/fotos/archivo_seguridad_002.jpg",
+            "category": "Seguridad",
+            "borough": "",
+            "topic": "Patrulla vecinal",
+            "keywords": [
+              "Seguridad"
+            ],
+            "author": "Daniel Yonka",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Patrulla_vecinal.jpg"
+          }
         },
         {
           "title": "Asesinan a Balazos a un Hombre y a un Menor de 10 años en Azcapotzalco",
@@ -8789,8 +8789,82 @@
     },
     {
       "name": "Gustavo A. Madero",
-      "count": 61,
+      "count": 62,
       "articles": [
+        {
+          "title": "Ofrecen taller gratuito de manejo defensivo y preventivo para mujeres en CDMX",
+          "description": "El Sol de México informó que el taller gratuito de manejo defensivo y preventivo para mujeres se realizará el 27 de noviembre de 2026 en la alcaldía Gustavo A. Madero. La publicación señala que las personas interesadas podrán inscribirse hasta un día antes.",
+          "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOZm12MDRsNXNoM1JHTDZBSmZ5Q3J0S2VoMmFmc1VvQlhGSHNqQ2FkV3E4SUhaVWJxbEx1eE5IY0dBelhvakFEYkgtVlU2eHoxMlBORDlOQnQ2RHdzS1JVZmhlUDZjeTJJWkl6UXdpSmdzS0lzQWMyaWQ1N2poUktKaEREX0lrSU5ZTzJKS3FOaHpveFRpOG1DQ3BIX3kzUk5ESDNYbXNJUFctXzItek54czBZTDBRM3NJdGxJbnc0VkkzUkFYWWVZSQ?oc=5",
+          "source": "El Sol de México",
+          "date": "2026-11-14",
+          "published_at": "2026-11-14T17:33:57Z",
+          "category": "Movilidad",
+          "borough": "Gustavo A. Madero",
+          "location": "Gustavo A. Madero, Ciudad de México (alcaldía indicada por El Sol de México; sede exacta no indicada)",
+          "local_url": "/noticias/?id=6538cbdab54691ebcf27&mes=2026-11",
+          "source_url": "https://oem.com.mx/elsoldemexico/metropoli/ofrecen-taller-gratuito-de-manejo-defensivo-y-preventivo-para-mujeres-en-cdmx-33130686",
+          "brief": {
+            "lead": "El Sol de México informó que el taller gratuito de manejo defensivo y preventivo para mujeres se realizará el 27 de noviembre de 2026 en la alcaldía Gustavo A. Madero. La publicación señala que las personas interesadas podrán inscribirse hasta un día antes.",
+            "context": "La actividad está dirigida a mujeres y ofrece capacitación relacionada con la conducción y la prevención vial. El medio presenta el curso como gratuito.",
+            "pending": "El fragmento indexado no identifica el recinto exacto, horario, cupo, requisitos ni el mecanismo de inscripción. Confirma esos datos en la publicación original o con la organización antes de acudir.",
+            "method": "Síntesis basada en el titular y el fragmento indexado de El Sol de México, publicado el 14 de noviembre de 2026: https://oem.com.mx/elsoldemexico/metropoli/ofrecen-taller-gratuito-de-manejo-defensivo-y-preventivo-para-mujeres-en-cdmx-33130686. No se consultó el cuerpo íntegro del artículo; los datos se atribuyen al medio y no constituyen verificación independiente."
+          },
+          "photo": {
+            "id": "contexto_periferico_sur_2015",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Periferico_sur.JPG/960px-Periferico_sur.JPG?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail&_=20150924185737",
+            "category": "Movilidad",
+            "borough": "",
+            "topic": "Lateral del Periférico Sur desde la Glorieta de Vaqueritos, Tlalpan, Ciudad de México (22 de septiembre de 2015); fotografía de archivo representativa",
+            "keywords": [
+              "Periférico Sur",
+              "tránsito vehicular",
+              "automovilistas",
+              "vialidad",
+              "Ciudad de México",
+              "Tlalpan"
+            ],
+            "author": "Victorcinco523",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "source": "https://commons.wikimedia.org/wiki/File:Periferico_sur.JPG"
+          },
+          "alternate_versions": [
+            {
+              "title": "Ofrecen taller gratuito de manejo defensivo y preventivo para mujeres en CDMX",
+              "description": "De acuerdo con El Sol de México, el titular publicado es: «Ofrecen taller gratuito de manejo defensivo y preventivo para mujeres en CDMX». La información publicada por El Sol de México aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+              "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOZm12MDRsNXNoM1JHTDZBSmZ5Q3J0S2VoMmFmc1VvQlhGSHNqQ2FkV3E4SUhaVWJxbEx1eE5IY0dBelhvakFEYkgtVlU2eHoxMlBORDlOQnQ2RHdzS1JVZmhlUDZjeTJJWkl6UXdpSmdzS0lzQWMyaWQ1N2poUktKaEREX0lrSU5ZTzJKS3FOaHpveFRpOG1DQ3BIX3kzUk5ESDNYbXNJUFctXzItek54czBZTDBRM3NJdGxJbnc0VkkzUkFYWWVZSQ?oc=5",
+              "source": "El Sol de México",
+              "date": "2026-11-14",
+              "published_at": "2026-11-14T17:33:57Z",
+              "category": "CDMX",
+              "borough": "",
+              "location": "Ciudad de México (sin alcaldía identificada)",
+              "local_url": "/noticias/?id=6538cbdab54691ebcf27&mes=2026-11",
+              "brief": {
+                "lead": "De acuerdo con El Sol de México, el titular publicado es: «Ofrecen taller gratuito de manejo defensivo y preventivo para mujeres en CDMX». La información publicada por El Sol de México aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+                "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+                "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+              },
+              "photo": {
+                "id": "commons_33473121",
+                "kind": "representativa",
+                "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Panor%C3%A1mica_Monumento_a_Col%C3%B3n_-_Paseo_de_la_Reforma_-_Ciudad_de_M%C3%A9xico.jpg/960px-Panor%C3%A1mica_Monumento_a_Col%C3%B3n_-_Paseo_de_la_Reforma_-_Ciudad_de_M%C3%A9xico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+                "category": "CDMX",
+                "borough": "",
+                "topic": "Panorámica Monumento a Colón - Paseo de la Reforma - Ciudad de México",
+                "keywords": [
+                  "CDMX"
+                ],
+                "author": "ProtoplasmaKid",
+                "license": "CC BY-SA 3.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+                "source": "https://commons.wikimedia.org/wiki/File:Panor%C3%A1mica_Monumento_a_Col%C3%B3n_-_Paseo_de_la_Reforma_-_Ciudad_de_M%C3%A9xico.jpg"
+              }
+            }
+          ]
+        },
         {
           "title": "Contingencia ambiental hoy CDMX 13 de noviembre: sin Fase activa y calidad del aire mala en Gustavo A. Madero",
           "description": "De acuerdo con Maya Comunicación, el titular publicado es: «Contingencia ambiental hoy CDMX 13 de noviembre: sin Fase activa y calidad del aire mala en Gustavo A. Madero». La información publicada por Maya Comunicación aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -9581,24 +9655,6 @@
             "license": "CC BY 4.0",
             "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
             "source": "https://commons.wikimedia.org/wiki/File:Eje_Central_CDMX.jpg"
-          }
-        },
-        {
-          "title": "Fuga de agua afecta ocho viviendas en Gustavo A. Madero; reparan tubería dañada",
-          "description": "De acuerdo con ContraRéplica, el titular publicado es: «Fuga de agua afecta ocho viviendas en Gustavo A. Madero; reparan tubería dañada». La información publicada por ContraRéplica aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNT0RsTEk0SkV2UUZacklNajZQTUktMHE4UGJNMUZSMWk4UFNOdG1oZHJZa1FvUjk0dlJHZzhManFSUWY4VEphRU5hM2hLYTFqOUR5dEJmRDN1VTFqSi12S3gzQTdLQmhUZGI5MHB6TmxodlhRYXFpdHdKWXdMWnlVSGRFVThYNzl2M0lhMms0UkxYdWh6Zl9Wd3d3aUpvbVdHN050SW1qdTNQU2FrdHR1WDl4TmRBeG5TZ05UNnVPTEJ6bDMt?oc=5",
-          "source": "ContraRéplica",
-          "date": "2026-11-02",
-          "published_at": "2026-11-02T16:06:39Z",
-          "category": "CDMX",
-          "borough": "Gustavo A. Madero",
-          "location": "Gustavo A. Madero (mencionada en el titular)",
-          "local_url": "/noticias/?id=b3234c871b4a571a4ad0&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con ContraRéplica, el titular publicado es: «Fuga de agua afecta ocho viviendas en Gustavo A. Madero; reparan tubería dañada». La información publicada por ContraRéplica aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           }
         }
       ]
