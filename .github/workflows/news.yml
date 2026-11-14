@@ -80,6 +80,7 @@ on:
       - 'assets/fotos/catalogo-editorial-1100.json'
       - 'assets/fotos/recientes.json'
       - 'creditos-fotograficos.html'
+      - 'assets/creditos.js'
       - 'tests/test_archive.py'
       - 'tests/test_profiles.py'
       - 'tests/test_transitions.py'
@@ -207,6 +208,7 @@ jobs:
           node --check --input-type=module < assets/moderacion-avanzada.js
           node --check firebase/asignar-moderador.mjs
           node --check assets/comments-config.js
+          node --check assets/creditos.js
           node --check assets/agenda.js
           node --check assets/negocios.js
           node --check assets/herramientas.js
