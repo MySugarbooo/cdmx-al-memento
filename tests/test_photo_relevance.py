@@ -2244,7 +2244,7 @@ class PerifericoPhotoRegressionTests(unittest.TestCase):
         )
         periferico = representative_photo(
             "contexto_periferico_sur_2015", "Movilidad",
-            "Lateral del Periférico Sur desde la Glorieta de Vaqueritos, Tlalpan, Ciudad de México (22 de septiembre de 2015); fotografía de archivo representativa de una vialidad, no documenta el taller ni a sus participantes.",
+            "Periférico Sur desde Glorieta de Vaqueritos, Tlalpan (22/09/2015); foto de archivo representativa, no del taller.",
             ["Periférico Sur", "tránsito vehicular", "automovilistas", "vialidad", "Ciudad de México", "Tlalpan"],
         )
         periferico.update({
@@ -2284,7 +2284,7 @@ class PerifericoPhotoRegressionTests(unittest.TestCase):
                 self.assertEqual(photo["license"], "CC BY-SA 4.0")
                 self.assertEqual(photo["context"],
                     "Imagen de carácter ilustrativo y referencial; no constituye evidencia gráfica de los hechos descritos.")
-                self.assertEqual(photo["topic"], "Lateral del Periférico Sur desde la Glorieta de Vaqueritos, Tlalpan, Ciudad de México (22 de septiembre de 2015); fotografía de archivo representativa de una vialidad, no documenta el taller ni a sus participantes.")
+                self.assertEqual(photo["topic"], "Periférico Sur desde Glorieta de Vaqueritos, Tlalpan (22/09/2015); foto de archivo representativa, no del taller.")
                 self.assertEqual(photo.get("captured_at"), "2015-09-22")
 
     def test_existing_representative_photo_refreshes_metadata_from_catalog(self):
@@ -2296,7 +2296,7 @@ class PerifericoPhotoRegressionTests(unittest.TestCase):
         old["legacy_note"] = "conservar dato adicional"
         current = representative_photo(
             "contexto_periferico_sur_2015", "Movilidad",
-            "Lateral del Periférico Sur desde la Glorieta de Vaqueritos, Tlalpan, Ciudad de México (22 de septiembre de 2015); fotografía de archivo representativa de una vialidad, no documenta el taller ni a sus participantes.",
+            "Periférico Sur desde Glorieta de Vaqueritos, Tlalpan (22/09/2015); foto de archivo representativa, no del taller.",
             ["Periférico Sur", "vialidad", "Tlalpan"],
         )
         article = {
