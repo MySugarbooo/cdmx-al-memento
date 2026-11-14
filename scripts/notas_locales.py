@@ -1918,6 +1918,18 @@ def _photo_score(article, photo):
         r"automovilistas)\b",
         context,
     ))
+    # Un aviso de horario del Metro necesita una imagen de la red ferroviaria;
+    # no debe heredar una foto de lluvia por coincidencia de CDMX.
+    metro_schedule_story = bool(
+        re.search(r"\bmetro\b", headline)
+        and re.search(r"\bhorarios?\b", headline)
+    )
+    if metro_schedule_story:
+        metro_schedule_photo = bool(re.search(
+            r"\b(?:metro|sistema de transporte colectivo|stc|trenes?|estacion(?:es)?)\b",
+            context,
+        ))
+        return 5000 if metro_schedule_photo else -10000
     if vehicle_crash_story and not vehicle_road_photo:
         return -10000
     if (photo.get("id") == "contexto_repartidores_motocicleta_cdmx"

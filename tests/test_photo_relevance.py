@@ -2899,5 +2899,31 @@ class CurrentEditorialPhotoRegressionTests(unittest.TestCase):
         self.assertGreaterEqual(_photo_score(article, surveillance), 0)
 
 
+    def test_metro_schedule_rejects_rain_operation_photo_and_uses_metro_context(self):
+        title = (
+            "¡Toma previsiones! Metro CDMX tendrá horario especial este lunes "
+            "por aniversario de la Revolución Mexicana"
+        )
+        article = self.make_article(title, category="Metro", source="El Economista")
+        unrelated = self.photo("commons_75263694")
+        relevant = self.photo("archivo_metro_007")
+        self.assertIsNotNone(unrelated)
+        self.assertIsNotNone(relevant)
+        self.assertIn("Operativo de Lluvias", unrelated["topic"])
+        self.assertIn("Metro", relevant["topic"])
+
+        self.assertLess(_photo_score(article, unrelated), 0)
+        self.assertGreaterEqual(_photo_score(article, relevant), 0)
+        with patch.object(photos, "_pool", return_value=[unrelated, relevant]):
+            assign_photos([article])
+        self.assertEqual(article["photo"]["id"], "archivo_metro_007")
+        self.assertTrue(article["photo"]["author"])
+        self.assertTrue(article["photo"]["license"])
+        self.assertTrue(article["photo"]["licenseUrl"])
+        self.assertTrue(article["photo"]["source"].startswith(
+            "https://commons.wikimedia.org/wiki/File:"
+        ))
+
+
 if __name__ == "__main__":
     unittest.main()
