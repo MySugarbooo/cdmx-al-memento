@@ -2388,6 +2388,12 @@ class CurrentFeedEditorialPhotoRegressionTests(unittest.TestCase):
             "Aeropuerto de CDMX informa sobre afectaciones de vuelos desde y hacia EEUU",
             "Movilidad", "reciente_c4e1387f207f104c", "contexto_aicm_aviones_pista_2026")
 
+    def test_airspace_closure_story_rejects_unrelated_city_sculpture_and_uses_aircraft_photo(self):
+        title = "El cierre aéreo de EE.UU. afectó a más de 6,000 pasajeros en la Ciudad de México"
+        self.assertEqual(category_by_headline(title, "CDMX"), "Movilidad")
+        self.assert_photo_replaced(
+            title, "Movilidad", "commons_80021377", "contexto_aicm_aviones_pista_2026")
+
     def test_pokemon_go_story_replaces_market_with_representative_video_game_photo(self):
         self.assert_photo_replaced(
             "Pokémon Go genera 420,000 dólares en CDMX y muestra que México es un mercado clave para el juego",

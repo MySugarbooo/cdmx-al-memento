@@ -347,6 +347,11 @@ def category_by_headline(title, feed_category, source=""):
     if (re.search(r"\b(?:aeropuerto|aicm)\b", normalized)
             and re.search(r"\b(?:vuelos?|afectaciones?|salidas?|llegadas?)\b", normalized)):
         return "Movilidad"
+    if re.search(
+        r"\b(?:cierre|suspension|restriccion)\b.{0,40}\b(?:aereo|espacio aereo|vuelos?|pasajeros?)\b",
+        normalized,
+    ):
+        return "Movilidad"
     if (re.search(r"\bmercados?\b", normalized)
             and re.search(r"\b(?:recibiran|un millon de pesos|mejorar sus instalaciones|inversion)\b", normalized)):
         return "Gobierno"

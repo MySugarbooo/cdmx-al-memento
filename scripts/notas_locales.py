@@ -1809,6 +1809,9 @@ STRICT_PHOTO_TOPICS = (
     # Las afectaciones de vuelos requieren aviones o instalaciones aeroportuarias.
     (r"\b(?:aeropuerto|aicm)\b.*\b(?:vuelos?|afectaciones?|salidas?|llegadas?)\b",
      r"\b(?:aeropuertos?|aviones?|aeronaves?|aviacion|terminal aeroportuaria|pista de aterrizaje|aicm|terminal 1|terminal 2)\b"),
+    # Un cierre o suspensión del espacio aéreo requiere contexto aeroportuario o de aeronaves.
+    (r"\b(?:cierre|suspension|restriccion)\b.{0,40}\b(?:aereo|espacio aereo|vuelos?|pasajeros?)\b",
+     r"\b(?:aeropuertos?|aviones?|aeronaves?|aviacion|terminal aeroportuaria|pista de aterrizaje|aicm|terminal 1|terminal 2)\b"),
 
 )
 
