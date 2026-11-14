@@ -111,7 +111,17 @@ class RecentPhotoTests(unittest.TestCase):
             (base / "assets/fotos/indice-noticias-1100.json").read_text(encoding="utf-8")
         )
         html = (base / "creditos-fotograficos.html").read_text(encoding="utf-8")
-        count = f"{len(catalog['photos']):,}"
+        context = json.loads(
+            (base / "assets/fotos/contexto-tematico.json").read_text(encoding="utf-8")
+        )
+        base_sources = {photo["source"] for photo in catalog["photos"]}
+        extras = [
+            photo for photo in context["photos"]
+            if photo.get("source") not in base_sources
+            and photo.get("author") and photo.get("license")
+            and photo.get("licenseUrl", "").startswith("https://creativecommons.org/")
+        ]
+        count = f"{len(catalog['photos']) + len(extras):,}"
         self.assertIn(f"Fototeca editorial: {count} imágenes y sus atribuciones", html)
         self.assertIn(f"La biblioteca reúne {count} imágenes", html)
 
