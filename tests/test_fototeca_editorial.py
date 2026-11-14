@@ -69,7 +69,15 @@ class FototecaEditorialTests(unittest.TestCase):
 
     def test_public_credit_page_count_matches_both_catalogs(self):
         credits_page = (ROOT / "creditos-fotograficos.html").read_text(encoding="utf-8")
-        count = f"{len(self.photos):,}"
+        context = json.loads((ROOT / "assets/fotos/contexto-tematico.json").read_text(encoding="utf-8"))
+        base_sources = {photo["source"] for photo in self.photos}
+        extras = [
+            photo for photo in context["photos"]
+            if photo.get("source") not in base_sources
+            and photo.get("author") and photo.get("license")
+            and photo.get("licenseUrl", "").startswith("https://creativecommons.org/")
+        ]
+        count = f"{len(self.photos) + len(extras):,}"
         self.assertIn(f"Fototeca editorial: {count} imágenes", credits_page)
         self.assertIn(f"La biblioteca reúne {count} imágenes", credits_page)
 
@@ -78,6 +86,7 @@ class FototecaEditorialTests(unittest.TestCase):
         credits = (ROOT / "assets/creditos.js").read_text(encoding="utf-8")
         self.assertIn("/assets/fotos/indice-noticias-1100.json", gallery)
         self.assertIn("/assets/fotos/catalogo-editorial-1100.json", credits)
+        self.assertIn("/assets/fotos/contexto-tematico.json", credits)
         news_script = (ROOT / "assets/fotos.js").read_text(encoding="utf-8")
         self.assertIn("/assets/fotos/indice-noticias-1100.json", news_script)
         fast_index = json.loads((ROOT / "assets/fotos/indice-noticias-1100.json").read_text(encoding="utf-8"))
