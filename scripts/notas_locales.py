@@ -1903,6 +1903,21 @@ def _photo_score(article, photo):
         delivery_security_story and delivery_security_photo
     ):
         return -10000
+    # Una nota sobre cámaras de seguridad en mercados exige contexto de videovigilancia;
+    # una foto de higiene por COVID no representa la instalación de cámaras del C5.
+    market_surveillance_story = bool(
+        re.search(r"\\b(?:c5|camaras?|videovigilancia|circuito cerrado|monitoreo)\\b", headline)
+        and re.search(r"\\bmercados?\\b", headline)
+    )
+    market_surveillance_photo = bool(re.search(
+        r"\\b(?:camaras? de (?:seguridad|vigilancia|videovigilancia)|videovigilancia|"
+        r"circuito cerrado|centro de monitoreo|c5|vigilancia (?:en|de) mercados?|"
+        r"camaras? (?:de seguridad )?en mercados?)\\b",
+        context,
+    ))
+    if market_surveillance_story and not market_surveillance_photo:
+        return -10000
+
     # Los tianguis no se ilustran con monumentos ni con mercados públicos distintos.
     tianguis_story = bool(re.search(r"\btianguis\b", headline))
     tianguis_photo = bool(re.search(
