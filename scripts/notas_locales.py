@@ -1990,9 +1990,17 @@ def _photo_score(article, photo):
     # En robos, asaltos y extorsiones, la coincidencia de alcaldía no basta:
     # exigir una imagen con contexto de seguridad antes de puntuar el lugar.
     crime_story = bool(re.search(
-        r"\b(?:robo|robos|roban|robado|robada|robaron|robar|decomis\w*|incaut\w*|asegur\w*|asalt\w*|ataques? armados?|extorsion|extorsionan|ejecutan|ejecutad\w*|ejecucion|asesina(?:n)?|asesinad\w*|asesinato|homicidio|matan|balazos|balacera|secuestro|secuestrador(?:es)?|secuestrad[oa]s?|privacion de la libertad|delitos?\s+(?:contra|a)\s+(?:empresas?|comercios?|negocios?))\b",
+        r"\b(?:robo|robos|roban|robado|robada|robaron|robar|decomis\w*|incaut\w*|asalt\w*|ataques? armados?|extorsion|extorsionan|ejecutan|ejecutad\w*|ejecucion|asesina(?:n)?|asesinad\w*|asesinato|homicidio|matan|balazos|balacera|secuestro|secuestrador(?:es)?|secuestrad[oa]s?|privacion de la libertad|delitos?\s+(?:contra|a)\s+(?:empresas?|comercios?|negocios?))\b",
         headline,
     ))
+    # "Asegura que" es una declaración, no un aseguramiento policial.
+    # Solo tratar "asegurar" como incautación cuando el titular identifica bienes u objetos.
+    seizure_story = bool(re.search(
+        r"\b(?:aseguran|aseguraron|aseguramiento|asegurad[oa]s?)\s+(?:\d+\s+)?"
+        r"(?:armas?|drogas?|estupefacientes|mercancia|vehiculos?|objetos?|bienes?|sustancias?|paquetes?)\b",
+        headline,
+    ))
+    crime_story = crime_story or seizure_story
     crime_context = bool(re.search(
         r"\b(?:policias?|patrullas?|repartidores?|conductores? de aplicacion|motociclistas?|fiscalia|detencion|operativo policial|"
         r"ministerio publico|investigacion penal|escena del crimen)\b",
