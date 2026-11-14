@@ -2409,6 +2409,12 @@ class CurrentFeedEditorialPhotoRegressionTests(unittest.TestCase):
             "Mercados de CDMX recibirán un millón de pesos para mejorar sus instalaciones",
             "Gobierno", "commons_89299418", "commons_152145024")
 
+    def test_bramadero_resource_delivery_rejects_cicloton_and_uses_market_investment_photo(self):
+        title = "Entrega Brugada recursos al Mercado Bramadero de Iztacalco"
+        self.assertEqual(category_by_headline(title, "CDMX"), "Gobierno")
+        self.assert_photo_replaced(
+            title, "Gobierno", "commons_41703830", "commons_152145024")
+
     def test_console_photo_caption_is_explicitly_representative_not_pokemon_go(self):
         expected = "Consolas y videojuegos actuales (fotografía de 2026); imagen representativa del sector de videojuegos, no corresponde a Pokémon Go ni a la mercancía asegurada en Plaza Meave."
         for relative in (
