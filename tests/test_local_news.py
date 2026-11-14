@@ -15,6 +15,14 @@ class LocalNewsTests(unittest.TestCase):
                 "source":"Periódico de prueba","date":"2026-10-13",
                 "category":category,"borough":""}
 
+    def test_news_schedule_runs_are_queued_separately_from_pull_requests(self):
+        workflow = (ROOT / ".github" / "workflows" / "news.yml").read_text(encoding="utf-8")
+        self.assertIn(
+            "group: noticias-cdmx-al-memento-${{ github.event_name == 'pull_request' && github.head_ref || 'main' }}",
+            workflow,
+        )
+        self.assertIn("  queue: max\n  cancel-in-progress: false", workflow)
+
     def test_codigoqro_ignacio_detention_separates_crime_and_arrest_locations(self):
         article = {
             "title": 'Detienen en Querétaro a Ignacio "N", prófugo por abuso sexual en CDMX',
