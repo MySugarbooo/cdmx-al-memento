@@ -1334,6 +1334,10 @@ def editorial_event_key(article):
                 and "cambiara horario el lunes 16 de noviembre" in title
             )
             or (
+                source == "record"
+                and "metro cdmx abrira mas tarde el lunes 16 de noviembre" in title
+            )
+            or (
                 source in {"yahoo", "el economista"}
                 and "horario especial este lunes" in title
                 and "revolucion mexicana" in title
