@@ -2537,12 +2537,12 @@ class CurrentEditorialPhotoRegressionTests(unittest.TestCase):
             "Una previsión meteorológica no debe conservar una foto de bicicleta o monumento sin contexto del clima.",
         )
 
-    def test_market_c5_stories_reject_patrol_photos_and_require_market_context(self):
+    def test_market_c5_stories_reject_non_surveillance_market_photos(self):
         cases = (
             ("Mercado Bramadero en Iztacalco será el primero conectado al C5; "
-             "Brugada asegura que todos los mercados tendrán cámaras", "archivo_seguridad_002"),
+             "Brugada asegura que todos los mercados tendrán cámaras", "commons_89299418"),
             ("Mercados de CDMX tendrán vigilancia conectada al C5, anuncia Brugada",
-             "commons_157006038"),
+             "commons_152145024"),
         )
         for title, wrong_id in cases:
             with self.subTest(title=title):
@@ -2551,8 +2551,85 @@ class CurrentEditorialPhotoRegressionTests(unittest.TestCase):
                 wrong = self.photo(wrong_id)
                 self.assertIsNotNone(wrong)
                 self.assertLess(_photo_score(article, wrong), 0)
-                assign_photos([article])
-                self.assertRegex(article["photo"]["topic"].casefold(), r"mercad|tianguis")
+                with patch.object(photos, "_pool", return_value=[wrong]):
+                    assign_photos([article])
+                self.assertNotIn("photo", article)
+
+                surveillance = representative_photo(
+                    "market-security-cameras",
+                    "Seguridad",
+                    "Cámaras de videovigilancia conectadas al C5 en un mercado público",
+                    ["mercados públicos", "C5", "cámaras de seguridad"],
+                )
+                self.assertGreaterEqual(_photo_score(article, surveillance), 0)
+
+    def test_animal_rights_march_rejects_unrelated_peace_march_photo(self):
+        article = self.make_article(
+            "Marcha por los derechos de los animales y otras manifestaciones este sábado de Buen Fin en CDMX"
+        )
+        peace_march = self.photo("commons_54378318")
+        self.assertIsNotNone(peace_march)
+        self.assertLess(_photo_score(article, peace_march), 0)
+        with patch.object(photos, "_pool", return_value=[peace_march]):
+            assign_photos([article])
+        self.assertNotIn("photo", article)
+
+        animal_march = representative_photo(
+            "animal-rights-march",
+            article["category"],
+            "Marcha por los derechos de los animales en Ciudad de México",
+            ["manifestación por los animales", "protección animal"],
+        )
+        self.assertGreaterEqual(_photo_score(article, animal_march), 0)
+
+    def test_vehicle_crashes_reject_metro_and_quake_support_motorcycle_photos(self):
+        cases = (
+            (
+                "Vuelca Automóvil y Deja una Persona Herida en la Colonia Vicente Guerrero, Iztapalapa",
+                "commons_20284563",
+            ),
+            (
+                "Mueren dos motociclistas tras accidente vial en Venustiano Carranza",
+                "contexto_motocicleta_zocalo_brigada_2017",
+            ),
+        )
+        for title, wrong_id in cases:
+            with self.subTest(title=title):
+                article = self.make_article(title, category="Movilidad")
+                wrong = self.photo(wrong_id)
+                self.assertIsNotNone(wrong)
+                self.assertLess(_photo_score(article, wrong), 0)
+                with patch.object(photos, "_pool", return_value=[wrong]):
+                    assign_photos([article])
+                self.assertNotIn("photo", article)
+
+                road_context = representative_photo(
+                    "traffic-context",
+                    article["category"],
+                    "Tráfico vehicular y vialidad en la alcaldía mencionada en Ciudad de México",
+                    ["tránsito vehicular", "automóviles", "accidente vial", "vialidad"],
+                )
+                self.assertGreaterEqual(_photo_score(article, road_context), 0)
+
+    def test_autoparts_seizure_rejects_new_patrols_photo(self):
+        article = self.make_article(
+            "Aseguran tres toneladas de autopartes presuntamente robadas en CDMX",
+            category="Seguridad",
+        )
+        patrols = self.photo("commons_157006043")
+        self.assertIsNotNone(patrols)
+        self.assertLess(_photo_score(article, patrols), 0)
+        with patch.object(photos, "_pool", return_value=[patrols]):
+            assign_photos([article])
+        self.assertNotIn("photo", article)
+
+        recovered_parts = representative_photo(
+            "recovered-auto-parts",
+            "Seguridad",
+            "Autopartes y refacciones recuperadas en un almacén",
+            ["autopartes", "refacciones", "decomiso"],
+        )
+        self.assertGreaterEqual(_photo_score(article, recovered_parts), 0)
 
     def test_extortion_is_security_even_when_rss_says_cdmx(self):
         title = "Vinculan a proceso a Ismael N por extorsionar a comerciante en Iztapalapa"
