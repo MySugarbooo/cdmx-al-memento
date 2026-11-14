@@ -110,6 +110,9 @@ class PublicSeoTests(unittest.TestCase):
         self.assertIn("readJSON('/archivo/rutas.json')", script)
         self.assertIn("routeIndex?.routes?.[id]", script)
         self.assertIn("'/archivo/'+archiveMonth+'.json'", script)
+        self.assertIn("function articleRouteId(x)", script)
+        self.assertIn("archiveMonth===month&&archive?archive:await readJSON", script)
+        self.assertIn("movedItems.find(x=>articleRouteId(x)===id)", script)
 
     def test_moved_story_prefers_its_verified_direct_source_url(self):
         script = (Path(__file__).resolve().parent.parent / "assets" / "noticias-locales.js").read_text(encoding="utf-8")
