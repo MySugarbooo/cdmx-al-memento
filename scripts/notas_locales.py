@@ -2120,9 +2120,13 @@ def _photo_score(article, photo):
     ))
     if game_story and not game_photo:
         return -10000
-    market_funding_story = bool(re.search(
-        r"\bmercados? de cdmx recibiran un millon de pesos\b", headline
-    ))
+    market_funding_story = bool(
+        re.search(r"\bmercados? de cdmx recibiran un millon de pesos\b", headline)
+        or (
+            re.search(r"\bmercado bramadero\b", headline)
+            and re.search(r"\b(?:recursos|inversion|presupuesto|mejoras?)\b", headline)
+        )
+    )
     market_funding_photo = bool(
         re.search(r"\b(?:mercados?|mercado publico|mercado de abasto)\b", context)
         and not re.search(r"\b(?:covid|sanidad|epidemia)\b", context)

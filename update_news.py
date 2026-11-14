@@ -353,7 +353,7 @@ def category_by_headline(title, feed_category, source=""):
     ):
         return "Movilidad"
     if (re.search(r"\bmercados?\b", normalized)
-            and re.search(r"\b(?:recibiran|un millon de pesos|mejorar sus instalaciones|inversion)\b", normalized)):
+            and re.search(r"\b(?:recibiran|un millon de pesos|mejorar sus instalaciones|inversion|recursos)\b", normalized)):
         return "Gobierno"
     if (re.search(r"\bc5\b", normalized)
             and re.search(r"\b(?:camaras?|vigilar|vigilara|vigilancia)\b", normalized)):
