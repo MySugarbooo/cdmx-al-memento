@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-14 01:41 UTC",
+  "updated": "2026-11-14 01:51 UTC",
   "boroughs": [
     {
       "name": "La Magdalena Contreras",
@@ -79,27 +79,6 @@
           "borough": "La Magdalena Contreras",
           "location": "La Magdalena Contreras (mencionada en el titular)",
           "local_url": "/noticias/?id=b7a1cd85217deda4cafd&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con Quadratín México, el titular publicado es: «Cae sujeto que asaltaba mujeres en taxi y moto en Magdalena Contreras». Una nota de Quadratín México comunica un caso relacionado con una detención o una presunta conducta delictiva en La Magdalena Contreras. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
-            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
-            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "archivo_seguridad_005",
-            "kind": "representativa",
-            "url": "/assets/fotos/archivo_seguridad_005.jpg",
-            "category": "Seguridad",
-            "borough": "",
-            "topic": "Jeep policia cdmx",
-            "keywords": [
-              "Seguridad"
-            ],
-            "author": "Gobierno de la Ciudad de México",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Jeep_policia_cdmx.jpg"
-          },
           "alternate_versions": [
             {
               "title": "Cae sujeto que asaltaba mujeres en taxi y moto en Magdalena Contreras",
@@ -152,7 +131,28 @@
                 "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
               }
             }
-          ]
+          ],
+          "brief": {
+            "lead": "De acuerdo con Quadratín México, el titular publicado es: «Cae sujeto que asaltaba mujeres en taxi y moto en Magdalena Contreras». Una nota de Quadratín México comunica un caso relacionado con una detención o una presunta conducta delictiva en La Magdalena Contreras. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
+            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "archivo_seguridad_005",
+            "kind": "representativa",
+            "url": "/assets/fotos/archivo_seguridad_005.jpg",
+            "category": "Seguridad",
+            "borough": "",
+            "topic": "Jeep policia cdmx",
+            "keywords": [
+              "Seguridad"
+            ],
+            "author": "Gobierno de la Ciudad de México",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Jeep_policia_cdmx.jpg"
+          }
         },
         {
           "title": "Cae sujeto señalado por asaltos violentos contra mujeres en Magdalena Contreras",
@@ -165,27 +165,6 @@
           "borough": "La Magdalena Contreras",
           "location": "La Magdalena Contreras (mencionada en el titular)",
           "local_url": "/noticias/?id=cd4fb274e33408b1ff3a&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con Capital CDMX, el titular publicado es: «Cae sujeto señalado por asaltos violentos contra mujeres en Magdalena Contreras». Una nota de Capital CDMX comunica un caso relacionado con una detención o una presunta conducta delictiva en La Magdalena Contreras. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
-            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
-            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "archivo_seguridad_004",
-            "kind": "representativa",
-            "url": "/assets/fotos/archivo_seguridad_004.jpg",
-            "category": "Seguridad",
-            "borough": "",
-            "topic": "Adquisición patrullas para la Policía 01",
-            "keywords": [
-              "Seguridad"
-            ],
-            "author": "Gobierno de la Ciudad de México",
-            "license": "CC BY 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Adquisici%C3%B3n_patrullas_para_la_Polic%C3%ADa_01.jpg"
-          },
           "alternate_versions": [
             {
               "title": "Cae sujeto señalado por asaltos violentos contra mujeres en Magdalena Contreras",
@@ -253,7 +232,28 @@
                 "source": "https://commons.wikimedia.org/wiki/File:Patrulla_cdmx.jpg"
               }
             }
-          ]
+          ],
+          "brief": {
+            "lead": "De acuerdo con Capital CDMX, el titular publicado es: «Cae sujeto señalado por asaltos violentos contra mujeres en Magdalena Contreras». Una nota de Capital CDMX comunica un caso relacionado con una detención o una presunta conducta delictiva en La Magdalena Contreras. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
+            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "archivo_seguridad_004",
+            "kind": "representativa",
+            "url": "/assets/fotos/archivo_seguridad_004.jpg",
+            "category": "Seguridad",
+            "borough": "",
+            "topic": "Adquisición patrullas para la Policía 01",
+            "keywords": [
+              "Seguridad"
+            ],
+            "author": "Gobierno de la Ciudad de México",
+            "license": "CC BY 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Adquisici%C3%B3n_patrullas_para_la_Polic%C3%ADa_01.jpg"
+          }
         },
         {
           "title": "Eventos para pasar el puente en CDMX: Garbage, Feria del Pulque y la Barbacoa, El Cascanueces y más",
@@ -9475,8 +9475,38 @@
     },
     {
       "name": "Iztacalco",
-      "count": 128,
+      "count": 129,
       "articles": [
+        {
+          "title": "Entrega Brugada recursos al Mercado Bramadero de Iztacalco",
+          "description": "De acuerdo con La Hoguera Mx, el titular publicado es: «Entrega Brugada recursos al Mercado Bramadero de Iztacalco». La información publicada por La Hoguera Mx aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxONDdHQ1YwRGlfWkUxMzBoX2U4REs0eEp6NWNqZzV1UXhTQ0lZclZrTG9hUkhBR2FKdkFRTGFxeGVqRzNGcUFseFRKRlA0NXNBeGRNSVNIVm1jS0hNZFlGMUhYQi1iVEJ5ODYxcVZpaGRaREpWaXdjemhWbzJuZXhKYm13bnVDeWs?oc=5",
+          "source": "La Hoguera Mx",
+          "date": "2026-11-13",
+          "published_at": "2026-11-14T01:41:30Z",
+          "category": "CDMX",
+          "borough": "Iztacalco",
+          "location": "Iztacalco (mencionada en el titular)",
+          "local_url": "/noticias/?id=26bc2d11c69532b0c0f4&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con La Hoguera Mx, el titular publicado es: «Entrega Brugada recursos al Mercado Bramadero de Iztacalco». La información publicada por La Hoguera Mx aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_iztacalco",
+            "kind": "representativa",
+            "url": "/assets/alcaldias/iztacalco.jpg",
+            "category": "CDMX",
+            "borough": "Iztacalco",
+            "topic": "Iglesia de San Matías en el antiguo pueblo de Iztacalco",
+            "author": "AlejandroLinaresGarcia",
+            "license": "CC BY-SA 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:SanMatiasChurchIztacalco02.jpg"
+          }
+        },
         {
           "title": "Mercado Bramadero en Iztacalco será el primero conectado al C5; Brugada asegura que todos los mercados tendrán cámaras",
           "description": "De acuerdo con El Universal, el titular publicado es: «Mercado Bramadero en Iztacalco será el primero conectado al C5; Brugada asegura que todos los mercados tendrán cámaras». La información publicada por El Universal aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -9528,17 +9558,52 @@
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           },
           "photo": {
-            "id": "alcaldia_iztacalco",
+            "id": "commons_75043274",
             "kind": "representativa",
-            "url": "/assets/alcaldias/iztacalco.jpg",
-            "category": "CDMX",
-            "borough": "Iztacalco",
-            "topic": "Iglesia de San Matías en el antiguo pueblo de Iztacalco",
-            "author": "AlejandroLinaresGarcia",
-            "license": "CC BY-SA 3.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-            "source": "https://commons.wikimedia.org/wiki/File:SanMatiasChurchIztacalco02.jpg"
-          }
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/014783-016_POSADA_EN_PICOS_DE_IZTACALCO_DICIEMBRE_18_1974_%2838896553181%29.jpg/960px-014783-016_POSADA_EN_PICOS_DE_IZTACALCO_DICIEMBRE_18_1974_%2838896553181%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "category": "Alcaldías",
+            "borough": "",
+            "topic": "014783-016 POSADA EN PICOS DE IZTACALCO DICIEMBRE 18 1974 (38896553181)",
+            "keywords": [
+              "Iztacalco Ciudad de México"
+            ],
+            "author": "Gobierno CDMX",
+            "license": "CC0",
+            "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+            "source": "https://commons.wikimedia.org/wiki/File:014783-016_POSADA_EN_PICOS_DE_IZTACALCO_DICIEMBRE_18_1974_(38896553181).jpg"
+          },
+          "alternate_versions": [
+            {
+              "title": "Impulsa alcaldía Iztacalco el comercio local con la Feria de Mujeres Emprendedoras",
+              "description": "De acuerdo con El Sol de México, el titular publicado es: «Impulsa alcaldía Iztacalco el comercio local con la Feria de Mujeres Emprendedoras». La información publicada por El Sol de México aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+              "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPUW0wMnhGOXBReHYyMmZFTUhsQTdISU0zLVphT0hMYktMRjdyRThOZHppZUNhbVBSUG1JNGJaazU2WE03U0RIZ0M4eDQ2T2V2dVFfNWdxaTllNUR4cWk2MUtzT0NnV3JXekZ5ZXlZalR6RDlWMG5mblo5RFRVX010SEx0VEtKUlBkSWVtRVJIc2VpdW11aEdTVEZtMHg4NldMRE1wc1ptbzZ3T1gtTU5HNWt4M1pzNHR3T3FCQy1aRk9salFmU3NiNm9JeDFGdHc?oc=5",
+              "source": "El Sol de México",
+              "date": "2026-11-13",
+              "published_at": "2026-11-13T21:53:25Z",
+              "category": "CDMX",
+              "borough": "Iztacalco",
+              "location": "Iztacalco (mencionada en el titular)",
+              "local_url": "/noticias/?id=524dc3a3f9b57d7d122e&mes=2026-11",
+              "brief": {
+                "lead": "De acuerdo con El Sol de México, el titular publicado es: «Impulsa alcaldía Iztacalco el comercio local con la Feria de Mujeres Emprendedoras». La información publicada por El Sol de México aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+                "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+                "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+              },
+              "photo": {
+                "id": "alcaldia_iztacalco",
+                "kind": "representativa",
+                "url": "/assets/alcaldias/iztacalco.jpg",
+                "category": "CDMX",
+                "borough": "Iztacalco",
+                "topic": "Iglesia de San Matías en el antiguo pueblo de Iztacalco",
+                "author": "AlejandroLinaresGarcia",
+                "license": "CC BY-SA 3.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+                "source": "https://commons.wikimedia.org/wiki/File:SanMatiasChurchIztacalco02.jpg"
+              }
+            }
+          ]
         },
         {
           "title": "\"Para rentar en Iztacalco me pedían 41 mil pesos de inicio\"; crisis de vivienda en CDMX asfixia a jóvenes",
@@ -10860,36 +10925,6 @@
           ],
           "brief": {
             "lead": "De acuerdo con Excélsior, el titular publicado es: «Bomberos rescatan a un águila atrapada en azotea de vivienda en Iztacalco». La información publicada por Excélsior aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "alcaldia_iztacalco",
-            "kind": "representativa",
-            "url": "/assets/alcaldias/iztacalco.jpg",
-            "category": "CDMX",
-            "borough": "Iztacalco",
-            "topic": "Iglesia de San Matías en el antiguo pueblo de Iztacalco",
-            "author": "AlejandroLinaresGarcia",
-            "license": "CC BY-SA 3.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-            "source": "https://commons.wikimedia.org/wiki/File:SanMatiasChurchIztacalco02.jpg"
-          }
-        },
-        {
-          "title": "Mujer es detenida en Iztacalco tras apuñalar a su novio durante una discusión",
-          "description": "De acuerdo con PostaMx, el titular publicado es: «Mujer es detenida en Iztacalco tras apuñalar a su novio durante una discusión». La información publicada por PostaMx aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNRS1iRS1uc2lKLUIzTGNwTm03TlZpWVgxQm1lQjBGZzY0dUJFemJwY1UtVm9JcjQwTVVvWWdIc3RIZUZDWGpIWEZBRlBFMWY1dkxhUFNQNlVFZXVSVDhla0pianZYelFaYU9lRjk5dXczdXZ4aVJvSmtxMXI2ZkRDU1FOQUhpQmo1WERfamJ4SVQ4MUd4bDhMRGYyM2pmaE1CVEU3OHZGWER2N1p2MXZrZ0x3dU1KQUJ10gG-AUFVX3lxTE44dnptdm5KaW9Sa0dBRHhEWF85N0ExTHFvMEhqNnpaUDlscE9TUDRCMFQ5X1ppbW53TGRQSkk5U2E3NndzenhfZUY5RDVROWF4ZlhSU2k5UF8ycjM3anRrTk1rSFVSb3dsNkpybGQ0N1VxNW1XYXNBQnljbW9OS2ZLUWhpLVpqYnFiZFVsaWpnaHpBalliNk9pOVR2TThwcGE2XzFYdVBMV2t4UlZOUFpZTG9sTEh6LWI3WHA5c0E?oc=5",
-          "source": "PostaMx",
-          "date": "2026-11-08",
-          "published_at": "2026-11-08T19:36:00Z",
-          "category": "CDMX",
-          "borough": "Iztacalco",
-          "location": "Iztacalco (mencionada en el titular)",
-          "local_url": "/noticias/?id=f6f1860cdb4f1ec264f6&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con PostaMx, el titular publicado es: «Mujer es detenida en Iztacalco tras apuñalar a su novio durante una discusión». La información publicada por PostaMx aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
@@ -16168,18 +16203,19 @@
           }
         },
         {
-          "title": "Rescatan a perrita por presunto maltrato animal en Tlalpan - Ahora Noticias",
-          "description": "De acuerdo con Howl.Link, el titular publicado es: «Rescatan a perrita por presunto maltrato animal en Tlalpan - Ahora Noticias». La información publicada por Howl.Link aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "title": "Rescatan a perrita por presunto maltrato animal en Tlalpan",
+          "description": "De acuerdo con Ahora Noticias, el titular publicado es: «Rescatan a perrita por presunto maltrato animal en Tlalpan». La información publicada por Ahora Noticias aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
           "url": "https://news.google.com/rss/articles/CBMiO0FVX3lxTE83LU0ycVNDdWx4c21jdE9Yd09VU3J4bnFOb3NibWFNOTZ3VVluN2FZbE5EaUVmMVVZZFZR?oc=5",
-          "source": "Howl.Link",
+          "source": "Ahora Noticias",
           "date": "2026-11-13",
           "published_at": "2026-11-13T22:51:52Z",
           "category": "Seguridad",
           "borough": "Tlalpan",
           "location": "Tlalpan (mencionada en el titular)",
           "local_url": "/noticias/?id=b06fd20ab5be9a500323&mes=2026-11",
+          "source_url": "https://ahoranoticias.com.mx/nacional/rescatan-a-perrita-por-presunto-maltrato-animal-en-tlalpan/",
           "brief": {
-            "lead": "De acuerdo con Howl.Link, el titular publicado es: «Rescatan a perrita por presunto maltrato animal en Tlalpan - Ahora Noticias». La información publicada por Howl.Link aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "lead": "De acuerdo con Ahora Noticias, el titular publicado es: «Rescatan a perrita por presunto maltrato animal en Tlalpan». La información publicada por Ahora Noticias aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
             "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
             "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
