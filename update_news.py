@@ -1323,7 +1323,7 @@ def editorial_event_key(article):
     ):
         return ("cdmx-three-protests-2026-11-14", "2026-11-14")
 
-    # Dos titulares cubren el mismo horario festivo del Metro del 16/11/2026.
+    # Varias coberturas describen el mismo horario festivo del Metro del 16/11/2026.
     # Se conserva la cobertura más reciente y completa en portada; ambas quedan en archivo.
     if (
         article.get("date") == "2026-11-14"
