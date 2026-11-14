@@ -34,6 +34,7 @@ REPORT_DIR = ROOT / "reportes"
 REPORTS = ROOT / "reports.json"
 MX = ZoneInfo("America/Mexico_City")
 SITE = "https://cdmx-al-memento.pages.dev"
+LA_PRENSA_VC_MOTORCYCLE_CRASH_SOURCE_URL = "https://oem.com.mx/la-prensa/policiaca/mueren-dos-motociclistas-tras-chocar-contra-una-camioneta-en-venustiano-carranza-33118910"
 MAIL = "sanchezaxochitl@gmail.com"
 RETENTION_DAYS = 365
 
@@ -579,6 +580,17 @@ def category_by_headline(title, feed_category, source=""):
     return feed_category
 
 
+def is_vc_two_motorcyclists_crash(article):
+    """Reconoce la cobertura del choque mortal de dos motociclistas del 13-11-2026."""
+    title = fold(article.get("title", ""))
+    return (
+        str(article.get("date") or "") == "2026-11-13"
+        and bool(re.search(r"\bmueren dos motociclistas\b", title))
+        and bool(re.search(r"\bvenustiano carranza\b", title))
+        and bool(re.search(r"\b(?:choque|chocar)\b", title))
+    )
+
+
 def standardize(article):
     """Relee noticias antiguas sin inventar la hora que no venía en el RSS."""
     if not isinstance(article, dict):
@@ -659,7 +671,12 @@ def standardize(article):
         "location": location,
     }
     result["local_url"] = local_link(result)
-    if is_infobae_maria_leon_concert(result):
+    if is_vc_two_motorcyclists_crash(result) and source.casefold() == "el sol de mexico":
+        # Google News rotula la entrada como El Sol de México, pero el enlace abre
+        # la nota original de La Prensa; conservar el ID RSS y corregir atribución.
+        result["source"] = "La Prensa"
+        result["source_url"] = LA_PRENSA_VC_MOTORCYCLE_CRASH_SOURCE_URL
+    elif is_infobae_maria_leon_concert(result):
         result["source_url"] = INFOBAE_MARIA_LEON_CONCERT_SOURCE_URL
     elif is_infobae_ballet_zapatilla(result):
         result["source_url"] = INFOBAE_BALLET_ZAPATILLA_SOURCE_URL
@@ -1095,6 +1112,8 @@ def editorial_event_key(article):
     No fusiona la hemeroteca: distintas fuentes conservan sus registros.
     """
     title = fold(article.get("title", ""))
+    if is_vc_two_motorcyclists_crash(article):
+        return ("venustiano-carranza-two-motorcyclists", article.get("date"))
     if (re.search(r"\bcoyoacan\b", title)
             and re.search(r"\bsaldo blanco\b", title)
             and re.search(r"\bdia de muertos\b", title)):
