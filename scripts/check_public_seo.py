@@ -69,6 +69,35 @@ def load_local_json(relative):
     return json.loads(path.read_text(encoding="utf-8"))
 
 
+def public_photo_count():
+    """Cuenta el mismo catálogo deduplicado que publica assets/creditos.js."""
+    catalog = load_local_json("assets/fotos/catalogo-editorial-1100.json")
+    context = load_local_json("assets/fotos/contexto-tematico.json")
+
+    def credited(photo):
+        return (
+            isinstance(photo, dict)
+            and bool(photo.get("author"))
+            and bool(photo.get("license"))
+            and str(photo.get("source") or "").startswith(
+                "https://commons.wikimedia.org/wiki/File:"
+            )
+            and str(photo.get("licenseUrl") or "").startswith(
+                "https://creativecommons.org/"
+            )
+        )
+
+    base = [photo for photo in catalog.get("photos", []) if credited(photo)]
+    expected_base = int(catalog.get("count") or len(catalog.get("photos") or []))
+    if len(base) < 901 or len(base) != expected_base:
+        raise ValueError("El catálogo base de créditos está incompleto")
+    by_source = {photo["source"]: photo for photo in base}
+    for photo in context.get("photos", []):
+        if credited(photo):
+            by_source.setdefault(photo["source"], photo)
+    return len(by_source)
+
+
 def canonical_digest(value):
     encoded = json.dumps(
         value, ensure_ascii=False, sort_keys=True, separators=(",", ":")
@@ -276,8 +305,9 @@ def check_public_data():
         )
         print(f"OK {path}: título, ubicación y créditos coinciden con news.json")
 
-    photo_index = load_local_json("assets/fotos/indice-noticias-1100.json")
-    photo_count = int(photo_index.get("count") or len(photo_index.get("photos") or []))
+    # La página de créditos combina el catálogo editorial y las fotos contextuales.
+    # No usar el índice de noticias: su total puede ser distinto del catálogo público.
+    photo_count = public_photo_count()
 
     def validate_credits(data):
         html = data.decode("utf-8")
