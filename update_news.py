@@ -210,6 +210,13 @@ def identify_location(title, date=None):
     external = outside_cdmx_location(title)
     if external:
         return "", external + " (fuera de CDMX)"
+    # El directorio oficial del AICM ubica el aeropuerto en Peñón de los Baños,
+    # alcaldía Venustiano Carranza: https://www.aicm.com.mx/contact
+    if (re.search(r"\baicm\b", words)
+            and re.search(r"\b(?:vuelos?|pasajeros?|aeropuerto|terminal|aeronaves?)\b", words)):
+        return "Venustiano Carranza", (
+            "Aeropuerto Internacional de la Ciudad de México (AICM), Venustiano Carranza"
+        )
     words = " " + fold(title) + " "
     found = []
     for borough, aliases in ALIASES.items():
