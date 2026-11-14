@@ -2483,6 +2483,31 @@ class CurrentEditorialPhotoRegressionTests(unittest.TestCase):
         assign_photos([article])
         self.assertEqual(article["photo"]["id"], "contexto_emprendimiento_femenino_2025")
 
+    def test_weather_forecast_rejects_unrelated_angel_bicycle_photo(self):
+        title = "Previsión meteorológica del estado del tiempo en Ciudad de México para este sábado 14 de noviembre"
+        article = self.make_article(title, category="CDMX", source="Infobae")
+        unrelated = {
+            "id": "commons_109767271",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/%C3%81ngel_de_la_independencia_en_bici.jpg/960px-%C3%81ngel_de_la_independencia_en_bici.jpg",
+            "category": "CDMX",
+            "borough": "",
+            "topic": "Ángel de la independencia en bici",
+            "keywords": ["Ángel de la Independencia Ciudad de México"],
+            "author": "Didaskalia edu",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "source": "https://commons.wikimedia.org/wiki/File:%C3%81ngel_de_la_independencia_en_bici.jpg",
+        }
+        article["photo"] = deepcopy(unrelated)
+        self.assertLess(_photo_score(article, unrelated), 0)
+        assign_photos([article])
+        assigned = article.get("photo")
+        self.assertTrue(
+            assigned is None or _photo_score(article, assigned) >= 0,
+            "Una previsión meteorológica no debe conservar una foto de bicicleta o monumento sin contexto del clima.",
+        )
+
     def test_market_c5_stories_reject_patrol_photos_and_require_market_context(self):
         cases = (
             ("Mercado Bramadero en Iztacalco será el primero conectado al C5; "
