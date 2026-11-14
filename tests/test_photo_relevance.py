@@ -2603,5 +2603,68 @@ class CurrentEditorialPhotoRegressionTests(unittest.TestCase):
         self.assertIn("/assets/fotos/contexto-tematico.json", loader)
         self.assertIn("new Map", loader)
 
+    def test_current_feed_rejects_unrelated_hydraulic_nightlife_and_security_photos(self):
+        cases = (
+            (
+                "Proyectan 643 obras hidráulicas y aumenta 77% la inversión en la Cdmx",
+                "CDMX",
+                "Obras remodelación Zócalo Ciudad de México 2017",
+            ),
+            (
+                "Antro Home Alone: fiesta en mansión de Polanco CDMX",
+                "Cultura",
+                "Teatro Ángela Peralta, Polanco, alcaldía Miguel Hidalgo, Ciudad de México",
+            ),
+            (
+                "CDMX encabeza la tasa de denuncias por fraude en México: 2.6 veces el promedio nacional",
+                "Seguridad",
+                "Graduación de la Policía de la Ciudad de México",
+            ),
+            (
+                "Extorsiones en Puebla se originan en cárceles del Edomex, CDMX y Jalisco",
+                "Seguridad",
+                "Graduación de la Policía de la Ciudad de México",
+            ),
+            (
+                "Aseguran tres toneladas de autopartes presuntamente robadas en CDMX",
+                "Seguridad",
+                "Graduación de la Policía de la Ciudad de México",
+            ),
+            (
+                "Procesan a presunto extorsionador en la alcaldía Iztapalapa",
+                "Seguridad",
+                "Claudia Sheinbaum entrega patrullas Iztapalapa 01",
+            ),
+            (
+                "Vinculan a Proceso al 'Choppersito', Presunto Generador de Violencia en Iztapalapa",
+                "Seguridad",
+                "Claudia Sheinbaum entrega patrullas Iztapalapa 03",
+            ),
+            (
+                "Vinculan a proceso a Ismael N por extorsionar a comerciante en Iztapalapa",
+                "Seguridad",
+                "Claudia Sheinbaum entrega patrullas Iztapalapa 02",
+            ),
+        )
+        for index, (title, category, topic) in enumerate(cases):
+            with self.subTest(title=title):
+                article = news.standardize({
+                    "title": title,
+                    "url": f"https://news.google.com/rss/articles/photo-guard-{index}",
+                    "source": "Medio de prueba",
+                    "date": "2026-11-13",
+                    "category": category,
+                    "borough": "",
+                })
+                self.assertIsNotNone(article)
+                wrong_photo = representative_photo(
+                    f"wrong_context_{index}", category, topic, []
+                )
+                article["photo"] = wrong_photo
+                self.assertLess(_photo_score(article, wrong_photo), 0)
+                with patch.object(photos, "_pool", return_value=[wrong_photo]):
+                    assign_photos([article])
+                self.assertNotIn("photo", article)
+
 if __name__ == "__main__":
     unittest.main()
