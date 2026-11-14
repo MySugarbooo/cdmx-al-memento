@@ -6,19 +6,25 @@
       "id": "contexto_perros_parque_espana",
       "kind": "representativa",
       "category": "Medio Ambiente",
-      "topic": "Perros descansando en el Parque España, Ciudad de México (fotografía de 2016)",
+      "topic": "Perros en Parque España, CDMX (27/09/2016); imagen de archivo representativa sobre bienestar animal, no documenta la marcha contra el especismo.",
       "keywords": [
         "perros",
         "perro",
         "mascotas",
         "parque España",
-        "Condesa"
+        "Condesa",
+        "bienestar animal",
+        "derechos de los animales",
+        "especismo",
+        "discriminación animal"
       ],
       "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Perros_en_el_Parque_Espa%C3%B1a%2C_Ciudad_de_M%C3%A9xico.jpg/1280px-Perros_en_el_Parque_Espa%C3%B1a%2C_Ciudad_de_M%C3%A9xico.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Perros_en_el_Parque_Espa%C3%B1a,_Ciudad_de_M%C3%A9xico.jpg",
       "author": "Raul21940",
       "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "captured_at": "2016-09-27",
+      "uploaded_at": "2016-09-30"
     },
     {
       "id": "contexto_autodromo_hermanos_rodriguez",
@@ -580,6 +586,75 @@
       "uploaded_at": "2020-04-13",
       "context": "Imagen de carácter ilustrativo y referencial; no constituye evidencia gráfica de los hechos descritos.",
       "adaptation": "Miniatura oficial de Wikimedia Commons; sin modificación."
+    },
+    {
+      "id": "contexto_smog_cdmx_2010",
+      "kind": "representativa",
+      "category": "Medio Ambiente",
+      "topic": "Esmog fotoquímico sobre Ciudad de México (22/12/2010); archivo representativo, no corresponde al reporte actual de calidad del aire.",
+      "keywords": [
+        "esmog",
+        "smog",
+        "calidad del aire",
+        "contaminación atmosférica",
+        "oxígeno",
+        "partículas suspendidas",
+        "Ciudad de México",
+        "CDMX"
+      ],
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/SmogOverMexicoCity.jpg/960px-SmogOverMexicoCity.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+      "source": "https://commons.wikimedia.org/wiki/File:SmogOverMexicoCity.jpg",
+      "author": "Fidel Gonzalez",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "captured_at": "2010-12-22",
+      "uploaded_at": "2011-01-05"
+    },
+    {
+      "id": "contexto_atole_2007",
+      "kind": "representativa",
+      "category": "Cultura",
+      "topic": "Atole tradicional mexicano, variante de Nuevo México (24/11/2007); archivo representativo, no documenta la Feria del Atole de Tláhuac.",
+      "keywords": [
+        "atole",
+        "bebida tradicional mexicana",
+        "bebida caliente",
+        "maíz",
+        "maiz",
+        "feria del atole",
+        "gastronomía"
+      ],
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Atole.jpg/960px-Atole.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+      "source": "https://commons.wikimedia.org/wiki/File:Atole.jpg",
+      "author": "ottmarliebert.com",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "captured_at": "2007-11-24",
+      "uploaded_at": "2008-06-16"
+    },
+    {
+      "id": "contexto_invierno_zocalo_2011",
+      "kind": "representativa",
+      "category": "Medio Ambiente",
+      "topic": "Pista de patinaje invernal en el Zócalo de CDMX (06/12/2011); archivo de temporada fría, no documenta la alerta de 2026.",
+      "keywords": [
+        "invierno",
+        "frío",
+        "frio",
+        "temporada fría",
+        "clima frío",
+        "pista de patinaje invernal",
+        "Zócalo",
+        "Ciudad de México",
+        "CDMX"
+      ],
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Zocalo_de_la_Ciudad_de_M%C3%A9xico%2C.JPG/960px-Zocalo_de_la_Ciudad_de_M%C3%A9xico%2C.JPG",
+      "source": "https://commons.wikimedia.org/wiki/File:Zocalo_de_la_Ciudad_de_M%C3%A9xico,.JPG",
+      "author": "Xicoamax",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "captured_at": "2011-12-06",
+      "uploaded_at": "2012-09-26"
     }
   ]
 }

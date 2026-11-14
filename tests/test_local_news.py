@@ -1334,5 +1334,60 @@ class LocalNewsTests(unittest.TestCase):
                 self.assertEqual(category_by_headline(title, feed_category, "El Sol de México"), expected)
 
 
+
+    def test_tlalpan_exleader_homicide_links_both_sources_and_dedupes_only_homepage(self):
+        quadratin=standardize({"title":"Cae presunto cómplice de crimen del exlíder sindical en Tlalpan",
+            "url":"https://news.google.com/rss/articles/tlalpan-quadratin-homicide","source":"Quadratín México",
+            "date":"2026-11-14","published_at":"2026-11-14T18:43:00Z","category":"CDMX"})
+        nplus=standardize({"title":"Vinculan a Segundo Implicado por Homicidio de Exlíder del ISSSTE en Tlalpan",
+            "url":"https://news.google.com/rss/articles/tlalpan-nplus-homicide","source":"N+",
+            "date":"2026-11-14","published_at":"2026-11-14T17:16:17Z","category":"CDMX"})
+        self.assertIsNotNone(quadratin); self.assertIsNotNone(nplus)
+        self.assertEqual(quadratin["category"],"Seguridad"); self.assertEqual(nplus["category"],"Seguridad")
+        self.assertEqual(quadratin["borough"],"Tlalpan"); self.assertEqual(nplus["borough"],"Tlalpan")
+        self.assertEqual(quadratin["location"],"Colonia Isidro Fabela, Tlalpan, Ciudad de México")
+        self.assertEqual(nplus["location"],"Colonia Isidro Fabela, Tlalpan, Ciudad de México")
+        self.assertEqual(quadratin["source_url"],"https://mexico.quadratin.com.mx/cae-presunto-complice-de-crimen-del-exlider-sindical-en-tlalpan/")
+        self.assertEqual(nplus["source_url"],"https://www.nmas.com.mx/seguridad/vinculan-a-segundo-implicado-por-homicidio-de-exlider-del-issste-en-tlalpan/")
+        self.assertIn("vinculación a proceso",quadratin["brief"]["lead"].lower())
+        self.assertIn("presunción de inocencia",quadratin["brief"]["pending"].lower())
+        self.assertIn("FGJCDMX",quadratin["brief"]["method"])
+        self.assertNotEqual(archive_record_key(quadratin),archive_record_key(nplus))
+        self.assertIn(quadratin["source_url"],render(quadratin,article_id(quadratin)))
+        self.assertIn(nplus["source_url"],render(nplus,article_id(nplus)))
+        visible=dedupe_homepage_events([quadratin,nplus])
+        self.assertEqual(len(visible),1)
+        self.assertEqual(visible[0]["source"],"Quadratín México")
+        self.assertEqual(visible[0]["local_url"],quadratin["local_url"])
+        other=standardize({"title":"Detienen a un hombre por homicidio en Tlalpan",
+            "url":"https://news.google.com/rss/articles/tlalpan-distinct-homicide","source":"N+",
+            "date":"2026-11-14","published_at":"2026-11-14T16:00:00Z","category":"Seguridad"})
+        self.assertIsNotNone(other)
+        self.assertEqual(len(dedupe_homepage_events([quadratin,other])),2)
+
+    def test_animal_rights_march_has_direct_source_and_specific_summary(self):
+        article=standardize({"title":"Marchan en CDMX contra el especismo y la discriminación animal",
+            "url":"https://news.google.com/rss/articles/animal-rights-march","source":"El Sol de México",
+            "date":"2026-11-14","published_at":"2026-11-14T18:00:00Z","category":"CDMX"})
+        self.assertIsNotNone(article)
+        self.assertEqual(article["category"],"Medio Ambiente")
+        self.assertEqual(article["source_url"],"https://oem.com.mx/elsoldemexico/metropoli/marchan-en-cdmx-contra-el-especismo-y-la-discriminacion-animal-33134742")
+        self.assertIn("sujetos de derechos",article["brief"]["lead"].lower())
+        self.assertNotIn("jornada de movilidad",article["brief"]["lead"].lower())
+        self.assertIn("no documenta la marcha",article["brief"]["context"].lower())
+
+    def test_atole_fair_location_and_category_are_explicit(self):
+        article=standardize({"title":"Feria del Atole 2026 en Tláhuac: fechas, sabores y actividades",
+            "url":"https://news.google.com/rss/articles/atole-fair","source":"La Silla Rota",
+            "date":"2026-11-14","published_at":"2026-11-14T18:00:00Z","category":"CDMX"})
+        self.assertIsNotNone(article)
+        self.assertEqual(article["category"],"Cultura")
+        self.assertEqual(article["borough"],"Tláhuac")
+        self.assertEqual(article["location"],"Tláhuac, Ciudad de México (sede exacta no indicada)")
+
+    def test_editorial_category_rules_for_weather_and_air_quality(self):
+        self.assertEqual(category_by_headline("Activan Alerta Amarilla por frío en CDMX para este domingo 15 de noviembre","CDMX"),"Medio Ambiente")
+        self.assertEqual(category_by_headline("¿En dónde se respira el peor oxígeno en CDMX y zona conurbada?","CDMX"),"Medio Ambiente")
+
 if __name__=="__main__":
     unittest.main()

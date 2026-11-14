@@ -78,6 +78,9 @@ LA_JORNADA_CASA_ECOLOGICA_SOURCE_URL = "https://www.jornada.com.mx/noticia/2026/
 CAPITAL_CDMX_CARE_BUDGET_SOURCE_URL = "https://capital-cdmx.org/presupuesto-cuidados-2027-cdmx-cuanto-dinero-llegara-anexo-31-desglose/"
 EL_SOL_MUJERES_DEFENSIVE_DRIVING_SOURCE_URL = "https://oem.com.mx/elsoldemexico/metropoli/ofrecen-taller-gratuito-de-manejo-defensivo-y-preventivo-para-mujeres-en-cdmx-33130686"
 HORAS_24_ELECTRIC_MOBILITY_SOURCE_URL = "https://24-horas.mx/cdmx/registro-emplacamiento-vemepe-vep-cdmx-costos-requisitos/"
+QUADRATIN_TLALPAN_EXLEADER_HOMICIDE_SOURCE_URL = "https://mexico.quadratin.com.mx/cae-presunto-complice-de-crimen-del-exlider-sindical-en-tlalpan/"
+NPLUS_TLALPAN_EXLEADER_HOMICIDE_SOURCE_URL = "https://www.nmas.com.mx/seguridad/vinculan-a-segundo-implicado-por-homicidio-de-exlider-del-issste-en-tlalpan/"
+EL_SOL_ESPECISMO_MARCH_SOURCE_URL = "https://oem.com.mx/elsoldemexico/metropoli/marchan-en-cdmx-contra-el-especismo-y-la-discriminacion-animal-33134742"
 
 
 def is_radio_formula_casa_ecologica(article):
@@ -616,6 +619,63 @@ def summarize(article):
     category=str(article.get("category") or "CDMX")
     theme=TAGS.get(category,TAGS["CDMX"])
     folded_title=_photo_fold(title)
+
+    source_folded = _photo_fold(article.get("source") or "")
+    if (
+        "especismo" in folded_title
+        and re.search(r"\b(?:discriminacion animal|derechos de los animales|bienestar animal)\b", folded_title)
+    ):
+        return {
+            "lead": (
+                "El Sol de México informó que la movilización en Ciudad de México exige que las autoridades "
+                "reconozcan a los animales como sujetos de derechos y que las leyes de protección animal "
+                "superen el enfoque centrado en regular sus condiciones de explotación."
+            ),
+            "context": (
+                "La nota recoge las demandas de activistas y organizadoras sobre el especismo y la justicia "
+                "animal. La fotografía de perros en Parque España es de archivo y solo ilustra el tema; "
+                "no documenta la marcha."
+            ),
+            "pending": (
+                "La publicación describe demandas y posturas; no demuestra que las propuestas se hayan "
+                "convertido en cambios legales ni verifica por sí sola el recorrido o la asistencia."
+            ),
+            "method": (
+                "Síntesis del artículo de El Sol de México, publicado el 14 de noviembre de 2026: "
+                f"{EL_SOL_ESPECISMO_MARCH_SOURCE_URL}. No se añaden horarios ni rutas que la nota no confirma."
+            ),
+        }
+    if (
+        "tlalpan" in folded_title
+        and "exlider" in folded_title
+        and re.search(r"\b(?:crimen|homicidio)\b", folded_title)
+        and source_folded in {"quadratin mexico", "n+"}
+    ):
+        return {
+            "lead": (
+                "La Fiscalía General de Justicia de la Ciudad de México obtuvo la vinculación a proceso "
+                "de Ángel “N” por su probable participación en el homicidio calificado de Luis Miguel "
+                "Victoria Ranfla, exdirigente del SNTISSSTE, ocurrido el 11 de marzo de 2026 en la colonia "
+                "Isidro Fabela, alcaldía Tlalpan. Con esta resolución suman dos personas vinculadas por el caso."
+            ),
+            "context": (
+                "El comunicado de la Fiscalía señala que la investigación incluyó videograbaciones, "
+                "entrevistas e información telefónica. La orden contra Ángel “N” se ejecutó el 4 de noviembre "
+                "en el Reclusorio Preventivo Varonil Oriente, donde ya estaba recluido por otra causa. "
+                "La patrulla de la ficha es una imagen de archivo y no documenta el homicidio."
+            ),
+            "pending": (
+                "La vinculación a proceso no equivale a una sentencia. Ángel “N” y Sergio “N” conservan "
+                "la presunción de inocencia mientras no exista una resolución judicial definitiva."
+            ),
+            "method": (
+                "Síntesis de Quadratín México y N+, contrastada con el comunicado primario de la Fiscalía "
+                "CDMX del 14 de noviembre de 2026: "
+                "https://www.fgjcdmx.gob.mx/comunicacion/nota/CS2026-396. "
+                "Los señalamientos se atribuyen a la investigación ministerial."
+            ),
+        }
+
     if is_codigoqro_ignacio_detention(article):
         return {
             "lead": (
@@ -1456,6 +1516,19 @@ PHOTO_BOROUGH_ALIASES = {
 
 def _photo_category(article):
     headline=_photo_fold(article.get("title"))
+    if re.search(r"\bferia del atole\b", headline):
+        return "Cultura"
+    if re.search(r"\b(?:especismo|discriminacion animal|derechos de los animales|bienestar animal)\b", headline):
+        return "Medio Ambiente"
+    if re.search(r"\b(?:peor oxigeno|oxigeno en cdmx|calidad del aire|contaminacion atmosferica|smog)\b", headline):
+        return "Medio Ambiente"
+    if re.search(r"\balerta amarilla\b", headline) and re.search(r"\bfrio\b", headline):
+        return "Medio Ambiente"
+    if (
+        re.search(r"\bcae presunto complice\b", headline)
+        and re.search(r"\b(?:crimen|homicidio)\b", headline)
+    ):
+        return "Seguridad"
     # "Poner en marcha" un programa no describe una marcha o protesta vial.
     headline=re.sub(r"\b(?:pone|ponen|puso|poner|puesta|entra|entro|entrara)\s+en\s+marcha\b",
                     "activa", headline)
@@ -2081,16 +2154,68 @@ def _photo_score(article, photo):
         delivery_security_story and delivery_security_photo
     ):
         return -10000
-    # Una marcha por derechos animales no debe ilustrarse con una protesta de otra causa.
+    # Una marcha antiespecista no debe usar fotos de lluvia u otros temas.
+    # Se admite una imagen de archivo de animales solo si está marcada expresamente como representativa.
     animal_rights_march_story = bool(
         re.search(r"\b(?:marcha|manifestacion|protesta)\b", headline)
-        and re.search(r"\b(?:derechos de los animales|bienestar animal|proteccion animal)\b", headline)
+        and re.search(
+            r"\b(?:especismo|discriminacion animal|derechos de los animales|bienestar animal|proteccion animal)\b",
+            headline,
+        )
     )
     animal_rights_march_photo = bool(
         re.search(r"\b(?:marcha|manifestacion|protesta)\b", context)
         and re.search(r"\b(?:derechos de los animales|bienestar animal|proteccion animal|animales?)\b", context)
     )
-    if animal_rights_march_story and not animal_rights_march_photo:
+    animal_rights_representative_photo = bool(
+        photo.get("kind") == "representativa"
+        and re.search(r"\b(?:bienestar animal|derechos de los animales|proteccion animal|animales?|perros?|mascotas?)\b", context)
+    )
+    if animal_rights_march_story and not (
+        animal_rights_march_photo or animal_rights_representative_photo
+    ):
+        return -10000
+
+    # El crimen del exlíder sindical en Tlalpan requiere contexto policial o judicial.
+    tlalpan_exleader_homicide_story = bool(
+        re.search(r"\b(?:cae presunto complice|vinculan a segundo implicado)\b", headline)
+        and re.search(r"\b(?:crimen|homicidio)\b", headline)
+        and re.search(r"\btlalpan\b", headline)
+        and re.search(r"\bexlider\b", headline)
+    )
+    tlalpan_exleader_homicide_photo = bool(
+        re.search(r"\b(?:policia|policias|patrulla|patrullas|fiscalia|ministerio publico|investigacion penal|proceso judicial)\b", context)
+    )
+    if tlalpan_exleader_homicide_story and not tlalpan_exleader_homicide_photo:
+        return -10000
+
+    # Una alerta por frío no debe ilustrarse con operativos de lluvia.
+    cold_alert_story = bool(
+        re.search(r"\balerta amarilla\b", headline)
+        and re.search(r"\bfrio\b", headline)
+    )
+    cold_weather_photo = bool(
+        re.search(r"\b(?:frio|invierno|helada|bajas temperaturas|pista de patinaje invernal)\b", context)
+    )
+    if cold_alert_story and not cold_weather_photo:
+        return -10000
+
+    # Un reporte sobre el peor oxígeno requiere esmog o contaminación atmosférica, no una farmacia.
+    air_quality_story = bool(
+        re.search(r"\b(?:peor oxigeno|oxigeno en cdmx|calidad del aire|contaminacion atmosferica|smog)\b", headline)
+    )
+    air_quality_photo = bool(
+        re.search(r"\b(?:esmog|smog|calidad del aire|contaminacion atmosferica|polucion|particulas suspendidas)\b", context)
+    )
+    if air_quality_story and not air_quality_photo:
+        return -10000
+
+    # Una feria del atole requiere una bebida de atole, no una danza de otro evento.
+    atole_fair_story = bool(re.search(r"\bferia del atole\b", headline))
+    atole_fair_photo = bool(
+        re.search(r"\b(?:atole|bebida tradicional|bebida de maiz|maiz azul)\b", context)
+    )
+    if atole_fair_story and not atole_fair_photo:
         return -10000
 
     # Una nota sobre cámaras de seguridad en mercados exige contexto de videovigilancia;

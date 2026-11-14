@@ -22,7 +22,7 @@ from pathlib import Path
 from zoneinfo import ZoneInfo
 
 from scripts.analisis_editorial import build_editorial
-from scripts.notas_locales import local_link, summarize, assign_photos, _photo_score, is_sensitive_media, is_coyotepec_highway_crash, INFOBAE_COYOTEPEC_HIGHWAY_CRASH_SOURCE_URL, is_san_juan_del_rio_autopista57_closure, SENSITIVE_MEDIA_TITLE, SAN_JUAN_DEL_RIO_AUTOPISTA57_SOURCE_URL, is_infobae_tlalpan_animal_abuse, is_la_prensa_tlalpan_animal_case, INFOBAE_TLALPAN_ANIMAL_SOURCE_URL, LA_PRENSA_TLALPAN_ANIMAL_SOURCE_URL, is_imagen_tlalpan_dog_rescue, is_huixtla_migrant_caravan, is_vc_fatal_trailer_incident, EL_GRAFICO_VC_TRAILER_SOURCE_URL, is_infobae_ballet_zapatilla, INFOBAE_BALLET_ZAPATILLA_SOURCE_URL, is_infobae_maria_leon_concert, INFOBAE_MARIA_LEON_CONCERT_SOURCE_URL, is_pulque_barbacoa_fair, is_mauricio_tabe_fifth_report, SDPNOTICIAS_MAURICIO_TABE_REPORT_SOURCE_URL, is_radio_formula_casa_ecologica, RADIO_FORMULA_CASA_ECOLOGICA_SOURCE_URL, is_capital_cdmx_care_budget, CAPITAL_CDMX_CARE_BUDGET_SOURCE_URL, is_la_jornada_aicm_flight_suspension, AICM_FLIGHT_SUSPENSION_SOURCE_URL, is_elsol_women_defensive_driving_workshop, EL_SOL_MUJERES_DEFENSIVE_DRIVING_SOURCE_URL, is_24horas_electric_mobility_plates_guide, HORAS_24_ELECTRIC_MOBILITY_SOURCE_URL, is_codigoqro_ignacio_detention
+from scripts.notas_locales import local_link, summarize, assign_photos, _photo_score, is_sensitive_media, is_coyotepec_highway_crash, INFOBAE_COYOTEPEC_HIGHWAY_CRASH_SOURCE_URL, is_san_juan_del_rio_autopista57_closure, SENSITIVE_MEDIA_TITLE, SAN_JUAN_DEL_RIO_AUTOPISTA57_SOURCE_URL, is_infobae_tlalpan_animal_abuse, is_la_prensa_tlalpan_animal_case, INFOBAE_TLALPAN_ANIMAL_SOURCE_URL, LA_PRENSA_TLALPAN_ANIMAL_SOURCE_URL, is_imagen_tlalpan_dog_rescue, is_huixtla_migrant_caravan, is_vc_fatal_trailer_incident, EL_GRAFICO_VC_TRAILER_SOURCE_URL, is_infobae_ballet_zapatilla, INFOBAE_BALLET_ZAPATILLA_SOURCE_URL, is_infobae_maria_leon_concert, INFOBAE_MARIA_LEON_CONCERT_SOURCE_URL, is_pulque_barbacoa_fair, is_mauricio_tabe_fifth_report, SDPNOTICIAS_MAURICIO_TABE_REPORT_SOURCE_URL, is_radio_formula_casa_ecologica, RADIO_FORMULA_CASA_ECOLOGICA_SOURCE_URL, is_capital_cdmx_care_budget, CAPITAL_CDMX_CARE_BUDGET_SOURCE_URL, is_la_jornada_aicm_flight_suspension, AICM_FLIGHT_SUSPENSION_SOURCE_URL, is_elsol_women_defensive_driving_workshop, EL_SOL_MUJERES_DEFENSIVE_DRIVING_SOURCE_URL, is_24horas_electric_mobility_plates_guide, HORAS_24_ELECTRIC_MOBILITY_SOURCE_URL, is_codigoqro_ignacio_detention, QUADRATIN_TLALPAN_EXLEADER_HOMICIDE_SOURCE_URL, NPLUS_TLALPAN_EXLEADER_HOMICIDE_SOURCE_URL, EL_SOL_ESPECISMO_MARCH_SOURCE_URL
 
 ROOT = Path(__file__).resolve().parent
 DEST = ROOT / "news.json"
@@ -365,6 +365,23 @@ def category_by_headline(title, feed_category, source=""):
         normalized,
     ):
         return "Seguridad"
+
+    # Los procesos por homicidio y complicidad criminal pertenecen a Seguridad.
+    if re.search(
+        r"\b(?:cae presunto complice|complice de crimen|crimen del exlider sindical|vinculan a segundo implicado)\b",
+        normalized,
+    ):
+        return "Seguridad"
+    # Los temas de derechos animales, calidad del aire y alertas por frío son Medio Ambiente.
+    if re.search(
+        r"\b(?:especismo|discriminacion animal|derechos de los animales|bienestar animal|"
+        r"calidad del aire|peor oxigeno|oxigeno en cdmx|contaminacion atmosferica|smog|"
+        r"alerta amarilla.{0,40}frio)\b",
+        normalized,
+    ):
+        return "Medio Ambiente"
+    if re.search(r"\bferia del atole\b", normalized):
+        return "Cultura"
     # Categorías editoriales que el RSS ha heredado de forma incorrecta.
     if re.search(r"\b(?:garbage|shirley manson)\b", normalized):
         return "Cultura"
@@ -706,6 +723,18 @@ def standardize(article):
     except ValueError:
         return None
     borough, location = identify_location(title, date)
+    normalized_editorial_title = fold(title)
+    if (
+        fold(source) in {"quadratin mexico", "n+"}
+        and "tlalpan" in normalized_editorial_title
+        and "exlider" in normalized_editorial_title
+        and re.search(r"\b(?:crimen|homicidio)\b", normalized_editorial_title)
+    ):
+        borough = "Tlalpan"
+        location = "Colonia Isidro Fabela, Tlalpan, Ciudad de México"
+    elif fold(source) == "la silla rota" and "feria del atole" in normalized_editorial_title:
+        borough = "Tláhuac"
+        location = "Tláhuac, Ciudad de México (sede exacta no indicada)"
     if is_codigoqro_ignacio_detention({"title": title, "source": source, "date": date}):
         # Los hechos investigados ocurrieron en Cuauhtémoc; la detención fue en Querétaro.
         borough = "Cuauhtémoc"
@@ -780,6 +809,27 @@ def standardize(article):
         "location": location,
     }
     result["local_url"] = local_link(result)
+    normalized_result_title = fold(result.get("title"))
+    if (
+        fold(result.get("source")) == "quadratin mexico"
+        and "cae presunto complice" in normalized_result_title
+        and "exlider" in normalized_result_title
+        and "tlalpan" in normalized_result_title
+    ):
+        result["source_url"] = QUADRATIN_TLALPAN_EXLEADER_HOMICIDE_SOURCE_URL
+    elif (
+        fold(result.get("source")) == "n+"
+        and "vinculan a segundo implicado" in normalized_result_title
+        and "exlider" in normalized_result_title
+        and "tlalpan" in normalized_result_title
+    ):
+        result["source_url"] = NPLUS_TLALPAN_EXLEADER_HOMICIDE_SOURCE_URL
+    elif (
+        fold(result.get("source")) == "el sol de mexico"
+        and "especismo" in normalized_result_title
+        and "discriminacion animal" in normalized_result_title
+    ):
+        result["source_url"] = EL_SOL_ESPECISMO_MARCH_SOURCE_URL
     if is_hoy_tamaulipas_paty_chio_assembly(result):
         # Mantener el mes de la ruta original para no romper enlaces ni comentarios existentes.
         result["local_url"] = local_link({**result, "date": HOY_TAMAULIPAS_PATTY_CHIO_ROUTE_MONTH + "-13"})
@@ -1119,6 +1169,11 @@ def prioritize_photo_refresh(items, limit=24):
         "repartidores anuncian dos bloqueos estrategicos",
         "presupuesto de cuidados 2027",
         "cuantos tianguis hay en cdmx",
+        "cae presunto complice de crimen del exlider sindical",
+        "marchan en cdmx contra el especismo",
+        "activan alerta amarilla por frio en cdmx",
+        "en donde se respira el peor oxigeno",
+        "feria del atole 2026 en tlahuac",
     )
     priority = [
         item for item in items
@@ -1345,6 +1400,22 @@ def editorial_event_key(article):
         )
     ):
         return ("metro-holiday-hours-2026-11-16", "2026-11-16")
+
+    # Quadratín y N+ cubren la misma segunda vinculación a proceso por el homicidio
+    # de Luis Miguel Victoria Ranfla en Tlalpan; ambas fuentes siguen en hemeroteca.
+    if (
+        article.get("date") == "2026-11-14"
+        and article.get("borough") == "Tlalpan"
+        and source in {"quadratin mexico", "n+"}
+        and "tlalpan" in title
+        and "exlider" in title
+        and re.search(r"\b(?:crimen|homicidio)\b", title)
+        and (
+            (source == "quadratin mexico" and "cae presunto complice" in title)
+            or (source == "n+" and "vinculan a segundo implicado" in title)
+        )
+    ):
+        return ("tlalpan-exleader-issste-homicide-second-process", "2026-11-14")
 
     if is_vc_two_motorcyclists_crash(article):
         # La Prensa fecha el hecho el 13; Sociedad Noticias publicó su cobertura el 14.

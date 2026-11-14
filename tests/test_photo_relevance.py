@@ -3154,5 +3154,68 @@ class CurrentEditorialPhotoRegressionTests(unittest.TestCase):
 
 
 
+
+class EditorialContextPhotoRegressionTests(unittest.TestCase):
+    def setUp(self):
+        self.pool = photos._pool()
+        self.by_id = {photo.get("id"): photo for photo in self.pool if photo.get("id")}
+
+    def assert_replaced(self, title, category, wrong_id, expected_id, borough=""):
+        wrong = deepcopy(self.by_id[wrong_id])
+        right = deepcopy(self.by_id[expected_id])
+        article = {"title": title, "category": category, "borough": borough,
+                   "date": "2026-11-14",
+                   "url": "https://news.google.com/rss/articles/editorial-photo-regression",
+                   "photo": wrong}
+        self.assertLess(photos._photo_score(article, wrong), 0)
+        self.assertGreaterEqual(photos._photo_score(article, right), 0)
+        with patch.object(photos, "_pool", return_value=[wrong, right]), patch.object(photos, "_load", return_value=[]):
+            assign_photos([article])
+        self.assertEqual(article["photo"]["id"], expected_id)
+        self.assertEqual(article["photo"]["kind"], "representativa")
+        for key in ("source", "author", "license", "licenseUrl"):
+            self.assertTrue(article["photo"].get(key), key)
+
+    def test_animal_rights_march_replaces_rainwater_photo_with_animal_archive_photo(self):
+        self.assert_replaced("Marchan en CDMX contra el especismo y la discriminación animal",
+                             "Medio Ambiente", "commons_152180159", "contexto_perros_parque_espana")
+
+    def test_tlalpan_homicide_replaces_bosque_animals_with_police_context(self):
+        self.assert_replaced("Cae presunto cómplice de crimen del exlíder sindical en Tlalpan",
+                             "Seguridad", "commons_35624627", "archivo_seguridad_005", "Tlalpan")
+
+    def test_cold_alert_replaces_rain_operation_with_winter_archive_photo(self):
+        self.assert_replaced("Activan Alerta Amarilla por frío en CDMX para este domingo 15 de noviembre",
+                             "Medio Ambiente", "commons_75241743", "contexto_invierno_zocalo_2011")
+
+    def test_air_quality_story_replaces_pharmacy_with_smog_archive_photo(self):
+        self.assert_replaced("¿En dónde se respira el peor oxígeno en CDMX y zona conurbada? Aquí el reporte",
+                             "Medio Ambiente", "contexto_farmacia_santa_maria_ribera_2022", "contexto_smog_cdmx_2010")
+
+    def test_atole_fair_replaces_dancers_with_atole_archive_photo(self):
+        self.assert_replaced("Feria del Atole 2026 en Tláhuac: fechas, sabores y actividades",
+                             "Cultura", "commons_82750985", "contexto_atole_2007", "Tláhuac")
+
+    def test_new_context_photos_have_complete_credits_and_explicit_archive_captions(self):
+        for photo_id in ("contexto_smog_cdmx_2010","contexto_atole_2007",
+                         "contexto_invierno_zocalo_2011","contexto_perros_parque_espana"):
+            photo=self.by_id[photo_id]
+            self.assertEqual(photo.get("kind"),"representativa")
+            self.assertIn("archivo",photo.get("topic","").lower())
+            for key in ("url","source","author","license","licenseUrl"):
+                self.assertTrue(photo.get(key),f"{photo_id}: {key}")
+
+    def test_editorial_categories_match_the_subject_of_each_photo(self):
+        cases=(
+            ("Marchan en CDMX contra el especismo y la discriminación animal","CDMX","Medio Ambiente"),
+            ("Cae presunto cómplice de crimen del exlíder sindical en Tlalpan","CDMX","Seguridad"),
+            ("Activan Alerta Amarilla por frío en CDMX para este domingo 15 de noviembre","CDMX","Medio Ambiente"),
+            ("¿En dónde se respira el peor oxígeno en CDMX y zona conurbada?","CDMX","Medio Ambiente"),
+            ("Feria del Atole 2026 en Tláhuac: fechas, sabores y actividades","CDMX","Cultura"),
+        )
+        for title,feed_category,expected in cases:
+            with self.subTest(title=title):
+                self.assertEqual(category_by_headline(title,feed_category),expected)
+
 if __name__ == "__main__":
     unittest.main()
