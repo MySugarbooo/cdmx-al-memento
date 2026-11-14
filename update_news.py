@@ -597,7 +597,7 @@ def is_tlalpan_perrita_rescue(article):
     title = fold(article.get("title", ""))
     return (
         str(article.get("date") or "") == "2026-11-13"
-        and bool(re.search(r"\\brescatan a perrita por presunto maltrato animal en tlalpan\\b", title))
+        and bool(re.search(r"\brescatan a perrita por presunto maltrato animal en tlalpan\b", title))
     )
 
 
