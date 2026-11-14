@@ -11,7 +11,7 @@
  const notice='Imagen de carácter ilustrativo y referencial; no constituye evidencia gráfica de los hechos descritos.';
  Promise.all([
   fetch('/assets/fotos/catalogo-editorial-1100.json?v=20261113-editorial-photo-context3',{cache:'force-cache'}).then(r=>{if(!r.ok)throw Error('HTTP '+r.status);return r.json()}),
-  fetch('/assets/fotos/contexto-tematico.json?v=20261114-editorial-context-credits1',{cache:'force-cache'}).then(r=>r.ok?r.json():{photos:[]}).catch(()=>({photos:[]})),
+  fetch('/assets/fotos/contexto-tematico.json?v=20261114-electric-mobility-credits2',{cache:'force-cache'}).then(r=>r.ok?r.json():{photos:[]}).catch(()=>({photos:[]})),
  ])
  .then(([data,context])=>{
   const basePhotos=(data.photos||[]).filter(p=>p&&p.author&&p.license&&validSource(p.source)&&validLicense(p.licenseUrl));
