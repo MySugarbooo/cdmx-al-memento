@@ -2950,5 +2950,29 @@ class CurrentEditorialPhotoRegressionTests(unittest.TestCase):
         ))
 
 
+    def test_delivery_neighbor_threat_story_rejects_police_graduation_photo(self):
+        title = "De amenazas con pistola a destrozos: ¿qué pasó entre repartidores y vecinos en CDMX?"
+        article = self.make_article(title, category="Seguridad", source="El Economista")
+        graduation = self.photo("commons_75245989")
+        patrol = self.photo("archivo_seguridad_002")
+        self.assertIsNotNone(graduation)
+        self.assertIsNotNone(patrol)
+        self.assertIn("Graduación", graduation["topic"])
+        self.assertIn("Patrulla vecinal", patrol["topic"])
+
+        self.assertLess(_photo_score(article, graduation), 0)
+        self.assertGreaterEqual(_photo_score(article, patrol), 0)
+        with patch.object(photos, "_pool", return_value=[graduation, patrol]):
+            assign_photos([article])
+        self.assertEqual(article["photo"]["id"], "archivo_seguridad_002")
+        self.assertTrue(article["photo"]["author"])
+        self.assertTrue(article["photo"]["license"])
+        self.assertTrue(article["photo"]["licenseUrl"])
+        self.assertTrue(article["photo"]["source"].startswith(
+            "https://commons.wikimedia.org/wiki/File:"
+        ))
+
+
+
 if __name__ == "__main__":
     unittest.main()
