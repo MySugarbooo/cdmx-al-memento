@@ -84,6 +84,31 @@ class ArticlePhotoTests(unittest.TestCase):
         self.assertIn("Ver fuente original", page)
         self.assertNotIn('href="' + item["url"] + '"', page)
 
+    def test_elsol_women_defensive_driving_source_url_is_clickable(self):
+        source_url = (
+            "https://oem.com.mx/elsoldemexico/metropoli/"
+            "ofrecen-taller-gratuito-de-manejo-defensivo-y-preventivo-para-mujeres-en-cdmx-33130686"
+        )
+        item = {
+            "title": "Ofrecen taller gratuito de manejo defensivo y preventivo para mujeres en CDMX",
+            "source": "El Sol de México",
+            "source_url": source_url,
+            "url": "https://news.google.com/rss/articles/example?oc=5",
+            "local_url": "/noticias/?id=6538cbdab54691ebcf27&mes=2026-11",
+            "date": "2026-11-14",
+            "category": "Movilidad",
+            "location": "Gustavo A. Madero, Ciudad de México",
+            "brief": {
+                "lead": "El taller se realizará el 27 de noviembre en Gustavo A. Madero.",
+                "context": "Capacitación vial para mujeres.",
+                "pending": "El recinto y horario requieren confirmación.",
+                "method": "Síntesis basada en el fragmento indexado de El Sol de México.",
+            },
+        }
+        page = render(item, "6538cbdab54691ebcf27")
+        self.assertIn('href="' + source_url + '"', page)
+        self.assertIn("Ver fuente original", page)
+
     def test_local_photo_keeps_credits(self):
         html = render_photo({"category": "Seguridad", "photo": {
             "url": "/assets/fotos/seguridad.jpg", "kind": "representativa",
