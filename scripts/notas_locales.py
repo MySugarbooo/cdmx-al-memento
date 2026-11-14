@@ -1971,6 +1971,15 @@ def _photo_score(article, photo):
     motorcycle_story = bool(re.search(
         r"\b(?:motocicletas?|motociclistas?|motos?)\b", headline
     ))
+    # Las multas y el registro VEP/VEMEPE requieren contexto de micromovilidad
+    # eléctrica; una motocicleta de apoyo tras un sismo no es una imagen pertinente.
+    electric_mobility_story = is_24horas_electric_mobility_plates_guide(article)
+    electric_mobility_photo = bool(re.search(
+        r"\b(?:scooters?|monopatines?|bicicletas? electricas?|vehiculos? electricos? personales?)\b",
+        context,
+    ))
+    if electric_mobility_story and not electric_mobility_photo:
+        return -10000
     vehicle_crash_story = bool(
         re.search(
             r"\b(?:vuelca|volcadura|derrap\w*|choque|colision|accidente vial|"
