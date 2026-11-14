@@ -42,6 +42,8 @@ VERIFIED_SOURCE_LINKS = {
         "https://www.hoytamaulipas.net/notas/607182/El-Mante-presente-en-la-Asamblea-Nacional-de-Seguridad-Publica-Municipal-2025.html",
     ("El Sol de México", "/noticias/?id=6538cbdab54691ebcf27&mes=2026-11"):
         "https://oem.com.mx/elsoldemexico/metropoli/ofrecen-taller-gratuito-de-manejo-defensivo-y-preventivo-para-mujeres-en-cdmx-33130686",
+    ("24-horas", "/noticias/?id=f321caba525de71a5543&mes=2026-11"):
+        "https://24-horas.mx/cdmx/registro-emplacamiento-vemepe-vep-cdmx-costos-requisitos/",
 }
 SENSITIVE_MEDIA_TITLE = re.compile(
     r"\b(?:violaci[oó]n|abuso sexual|agresi[oó]n sexual|acoso sexual|violencia sexual|"
