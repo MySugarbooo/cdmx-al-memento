@@ -1622,8 +1622,8 @@ STRICT_PHOTO_TOPICS = (
      r"\b(?:clima|pronostico|meteorologia|temperatura|viento|frio|nubes?|cielo|tormenta|neblina)\b"),
     # Los choques y derrapes de motos, camiones o vehículos requieren contexto
     # de tránsito; compartir alcaldía no vuelve pertinente una iglesia.
-    (r"\b(?:accident\w*|choc\w*|choqu\w*|colisi\w*|volcadur\w*|derrap\w*)\b.*\b(?:motociclist\w*|motociclet\w*|moto\w*|camion\w*|vehicul\w*|automovil\w*)\b|"
-     r"\b(?:motociclist\w*|motociclet\w*|moto\w*|camion\w*|vehicul\w*|automovil\w*)\b.*\b(?:accident\w*|choc\w*|choqu\w*|colisi\w*|volcadur\w*|derrap\w*)\b",
+    (r"\b(?:accident\w*|choc\w*|choqu\w*|colisi\w*|volcadur\w*|vuelc\w*|derrap\w*)\b.*\b(?:motociclist\w*|motociclet\w*|moto\w*|camion\w*|vehicul\w*|automovil\w*)\b|"
+     r"\b(?:motociclist\w*|motociclet\w*|moto\w*|camion\w*|vehicul\w*|automovil\w*)\b.*\b(?:accident\w*|choc\w*|choqu\w*|colisi\w*|volcadur\w*|vuelc\w*|derrap\w*)\b",
      r"\b(?:motociclet\w*|motociclist\w*|motos?|camion\w*|vehicul\w*|automovil\w*|vehicular|trafico|transito|vialidad|carretera|avenida|cruce peatonal)\b"),
     # Atropellamientos y muertes viales no se ilustran con iglesias o plazas.
     (r"\b(?:atropell\w*|arroll\w*)\b",
@@ -2315,7 +2315,7 @@ def _photo_score(article, photo):
         return -10000
 
     road_incident_story = bool(re.search(
-        r"\b(?:accident\w*|choqu\w*|colision\w*|volcadur\w*|siniestro vial|atropell\w*|derrap\w*)\b",
+        r"\b(?:accident\w*|choqu\w*|colision\w*|volcadur\w*|vuelc\w*|siniestro vial|atropell\w*|derrap\w*)\b",
         headline,
     ))
     motorsport_photo = bool(re.search(
@@ -2586,13 +2586,13 @@ def _photo_score(article, photo):
             return -10000
     # Una amenaza sin protesta requiere contexto de seguridad, no un simulacro.
     threat_story = bool(re.search(r"\b(?:amenaz\w*|vecino armado)\b", headline_for_photos))
-    # Una ceremonia de graduación policial no es contexto operativo para una amenaza.
+    # Las amenazas requieren contexto operativo; no una graduación ni control de tránsito.
     threat_photo = bool(
         re.search(
-            r"\b(?:policias?|patrullas?|seguridad|fiscalia|investigacion penal|operativo policial)\b",
+            r"\b(?:patrullas?|operativo policial|investigacion penal|fiscalia|escena del crimen|detencion)\b",
             context,
         )
-        and not re.search(r"\bgraduacion\b", topic)
+        and not re.search(r"\b(?:graduacion|ceremonia|desfile|semaforo|transito|trafico)\b", context)
     )
     if threat_story and not protest_story and not threat_photo:
         return -10000
@@ -2604,12 +2604,12 @@ def _photo_score(article, photo):
             and not re.search(r"\b(?:protestas?|manifestaciones?|marchas?|bloqueos?|plantones?)\b", topic)):
         return -10000
     # Un choque vial no ocurrió en un autódromo solo por compartir alcaldía.
-    if (re.search(r"\b(?:accident\w*|choqu\w*|choc\w*|colisi\w*|volcadur\w*|derrap\w*)\b", headline)
+    if (re.search(r"\b(?:accident\w*|choqu\w*|choc\w*|colisi\w*|volcadur\w*|vuelc\w*|derrap\w*)\b", headline)
             and not re.search(r"\b(?:autodromo|formula 1|f1|gran premio|carrera|circuito|bottas|verstappen|hamilton|alonso|checo|antonelli)\b", headline)
             and re.search(r"\b(?:autodromo|formula 1|gran premio|pista de carreras)\b", topic)):
         return -10000
     # Choques de autos o motocicletas no se ilustran con trolebuses ni trenes.
-    if (re.search(r"\b(?:accident\w*|choqu\w*|choc\w*|colisi\w*|volcadur\w*|derrap\w*)\b", headline)
+    if (re.search(r"\b(?:accident\w*|choqu\w*|choc\w*|colisi\w*|volcadur\w*|vuelc\w*|derrap\w*)\b", headline)
             and re.search(r"\b(?:autos?|automovil\w*|vehicul\w*|motociclet\w*|motociclist\w*|motos?)\b", headline)
             and not re.search(r"\b(?:trolebus|metrobus|tren ligero|metro)\b", headline)
             and re.search(r"\b(?:trolebus|metrobus|tren ligero|estacion del metro)\b", topic)):
@@ -2617,7 +2617,7 @@ def _photo_score(article, photo):
     # En choques de motos y autos, una carretera histórica o calle turística
     # no basta: se exige tráfico, vehículos o el lugar exacto de la alcaldía.
     borough=_photo_fold(article.get("borough"))
-    if (re.search(r"\b(?:accident\w*|choqu\w*|choc\w*|colisi\w*|volcadur\w*|derrap\w*)\b", headline)
+    if (re.search(r"\b(?:accident\w*|choqu\w*|choc\w*|colisi\w*|volcadur\w*|vuelc\w*|derrap\w*)\b", headline)
             and re.search(r"\b(?:autos?|automovil\w*|motociclet\w*|motociclist\w*|motos?)\b", headline)
             and not (borough and borough in topic)
             and not re.search(r"\b(?:motociclet\w*|motociclist\w*|motos?|autos?|automovil\w*|vehicular|trafico|transito|vialidad|choque)\b", topic)):
@@ -2640,7 +2640,7 @@ def _photo_score(article, photo):
         return -10000
     # Una avenida turística de otra zona no ilustra un choque local.
     borough=_photo_fold(article.get("borough"))
-    if (borough and re.search(r"\b(?:accident\w*|choqu\w*|choc\w*|colisi\w*|volcadur\w*|derrap\w*)\b", headline)
+    if (borough and re.search(r"\b(?:accident\w*|choqu\w*|choc\w*|colisi\w*|volcadur\w*|vuelc\w*|derrap\w*)\b", headline)
             and re.search(r"\b(?:autos?|automovil\w*|motociclet\w*|motociclist\w*|motos?)\b", headline)
             and re.search(r"\b(?:avenida|calle|paseo|centro historico|torre latinoamericana)\b", topic)
             and borough not in topic
