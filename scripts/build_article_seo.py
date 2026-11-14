@@ -22,6 +22,10 @@ VERIFIED_SOURCE_LINKS = {
         "https://oem.com.mx/la-prensa/policiaca/mueren-dos-motociclistas-tras-chocar-contra-una-camioneta-en-venustiano-carranza-33118910",
     ("Sociedad Noticias", "/noticias/?id=edc8b9a3e45a18bf29ed&mes=2026-11"):
         "https://sociedad-noticias.com/2026/11/14/mueren-dos-motociclistas-tras-accidente-vial-en-venustiano-carranza/",
+    ("N+", "/noticias/?id=0a3abec9941a9ad3518e&mes=2026-11"):
+        "https://www.nmas.com.mx/ciudad-de-mexico/seguridad/asesinatos/asesinan-a-un-hombre-y-un-nino-de-10-anos-en-alcaldia-azcapotzalco-en-la-cdmx/",
+    ("N+", "/noticias/?id=773453000efee780c489&mes=2026-11"):
+        "https://www.nmas.com.mx/ciudad-de-mexico/seguridad/asesinan-a-balazos-a-un-hombre-y-a-un-menor-de-10-anos-en-azcapotzalco/",
     ("Ahora Noticias", "/noticias/?id=b06fd20ab5be9a500323&mes=2026-11"):
         "https://ahoranoticias.com.mx/nacional/rescatan-a-perrita-por-presunto-maltrato-animal-en-tlalpan/",
     ("Infobae", "/noticias/?id=086a68086514ac4b9e44&mes=2026-11"):
