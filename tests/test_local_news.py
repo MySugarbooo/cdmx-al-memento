@@ -445,7 +445,7 @@ class LocalNewsTests(unittest.TestCase):
 
     def test_same_november_14_protest_agenda_is_grouped_but_both_sources_remain_in_archive(self):
         tv_azteca = standardize({
-            "title": "¿Vas a salir hoy? Marchas y concentraciones en la CDMX este sábado 14 de noviembre: horarios y puntos afectados",
+            "title": "Marchas CDMX EN VIVO sábado 14 de noviembre: rutas y cierres",
             "url": "https://news.google.com/rss/articles/protests-tv-azteca",
             "source": "TV Azteca",
             "date": "2026-11-14",
@@ -468,6 +468,18 @@ class LocalNewsTests(unittest.TestCase):
         self.assertEqual(visible[0]["source"], "TV Azteca")
         self.assertEqual(visible[0]["local_url"], tv_azteca["local_url"])
 
+        # TV Azteca puede cambiar el titular RSS sin cambiar la URL ni la agenda cubierta.
+        legacy_title = standardize({
+            "title": "¿Vas a salir hoy? Marchas y concentraciones en la CDMX este sábado 14 de noviembre: horarios y puntos afectados",
+            "url": "https://news.google.com/rss/articles/protests-tv-azteca-legacy-title",
+            "source": "TV Azteca",
+            "date": "2026-11-14",
+            "published_at": "2026-11-14T20:00:00Z",
+            "category": "Movilidad",
+        })
+        self.assertIsNotNone(legacy_title)
+        self.assertEqual(len(dedupe_homepage_events([legacy_title, sociedad])), 1)
+
         different = standardize({
             "title": "Marcha de trabajadores en Tlalpan este sábado 14 de noviembre",
             "url": "https://news.google.com/rss/articles/protests-distinct-event",
@@ -479,13 +491,21 @@ class LocalNewsTests(unittest.TestCase):
         self.assertIsNotNone(different)
         self.assertEqual(len(dedupe_homepage_events([tv_azteca, different])), 2)
 
-    def test_same_november_16_metro_holiday_schedule_is_grouped_but_both_sources_remain_in_archive(self):
+    def test_same_november_16_metro_holiday_schedule_is_grouped_but_all_sources_remain_in_archive(self):
         claro = standardize({
             "title": "Metro de la CDMX cambiará horario el lunes 16 de noviembre: ¿cómo queda y por qué razón?",
             "url": "https://news.google.com/rss/articles/metro-holiday-claro-sports",
             "source": "Claro Sports",
             "date": "2026-11-14",
             "published_at": "2026-11-14T19:32:50Z",
+            "category": "Metro",
+        })
+        record = standardize({
+            "title": "Metro CDMX abrirá más tarde el lunes 16 de noviembre: conoce los horarios",
+            "url": "https://news.google.com/rss/articles/metro-holiday-record",
+            "source": "Récord",
+            "date": "2026-11-14",
+            "published_at": "2026-11-14T21:39:00Z",
             "category": "Metro",
         })
         yahoo = standardize({
@@ -497,12 +517,15 @@ class LocalNewsTests(unittest.TestCase):
             "category": "Metro",
         })
         self.assertIsNotNone(claro)
+        self.assertIsNotNone(record)
         self.assertIsNotNone(yahoo)
+        self.assertNotEqual(archive_record_key(claro), archive_record_key(record))
         self.assertNotEqual(archive_record_key(claro), archive_record_key(yahoo))
-        visible = dedupe_homepage_events([claro, yahoo])
+        self.assertNotEqual(archive_record_key(record), archive_record_key(yahoo))
+        visible = dedupe_homepage_events([record, claro, yahoo])
         self.assertEqual(len(visible), 1)
-        self.assertEqual(visible[0]["source"], "Claro Sports")
-        self.assertEqual(visible[0]["local_url"], claro["local_url"])
+        self.assertEqual(visible[0]["source"], "Récord")
+        self.assertEqual(visible[0]["local_url"], record["local_url"])
 
         different = standardize({
             "title": "Metro reporta retrasos en la Línea 3 este sábado 14 de noviembre",

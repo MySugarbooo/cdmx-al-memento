@@ -1309,7 +1309,10 @@ def editorial_event_key(article):
     if article.get("date") == "2026-11-14" and (
         (
             source == "tv azteca"
-            and "marchas y concentraciones" in title
+            and (
+                "marchas y concentraciones" in title
+                or "marchas cdmx en vivo" in title
+            )
             and "sabado 14 de noviembre" in title
         )
         or (
@@ -1320,7 +1323,7 @@ def editorial_event_key(article):
     ):
         return ("cdmx-three-protests-2026-11-14", "2026-11-14")
 
-    # Dos titulares cubren el mismo horario festivo del Metro del 16/11/2026.
+    # Varias coberturas describen el mismo horario festivo del Metro del 16/11/2026.
     # Se conserva la cobertura más reciente y completa en portada; ambas quedan en archivo.
     if (
         article.get("date") == "2026-11-14"
@@ -1329,6 +1332,10 @@ def editorial_event_key(article):
             (
                 source == "claro sports"
                 and "cambiara horario el lunes 16 de noviembre" in title
+            )
+            or (
+                source == "record"
+                and "metro cdmx abrira mas tarde el lunes 16 de noviembre" in title
             )
             or (
                 source in {"yahoo", "el economista"}
