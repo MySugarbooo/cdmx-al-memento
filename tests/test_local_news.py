@@ -4,7 +4,7 @@ import unittest
 from pathlib import Path
 from scripts.notas_locales import assign_photos, local_link, summarize, is_sensitive_media, RADIO_FORMULA_CASA_ECOLOGICA_SOURCE_URL, INFOBAE_MARIA_LEON_CONCERT_SOURCE_URL
 from scripts.build_article_seo import article_id, render
-from update_news import category_by_headline, standardize, photo_needs_refresh, CAPITAL_CDMX_CARE_BUDGET_SOURCE_URL, prioritize_photo_refresh, build_homepage_feed
+from update_news import category_by_headline, standardize, photo_needs_refresh, CAPITAL_CDMX_CARE_BUDGET_SOURCE_URL, prioritize_photo_refresh, build_homepage_feed, archive_record_key, dedupe_homepage_events
 
 ROOT=Path(__file__).resolve().parents[1]
 
@@ -343,6 +343,54 @@ class LocalNewsTests(unittest.TestCase):
         self.assertIn('href="https://oem.com.mx/la-prensa/policiaca/detienen-a-otro-presunto-maltratador-de-animales-en-tlalpan-33095643"', rendered)
         self.assertIn("Fuente: La Prensa", rendered)
         self.assertIn("Sin fotografía verificada del hecho", rendered)
+
+
+    def test_la_prensa_vc_motorcycle_crash_corrects_source_and_preserves_article_key(self):
+        article = {
+            "title": "Mueren dos motociclistas tras chocar contra una camioneta en Venustiano Carranza",
+            "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNYlEtZER2b0lMSXRrLTNzYTdweEk1ZTRSdm5xX2dtWFFIU04tUWRya0VtNWd0UUJiVndhM2V3UzJlYjJ3Z192Yks0b0ZNSnBvbXJiZmlUeGw5V2FKczRETC11VWtQSk5Oc1FHdFVDUTZFMExlZUhFQVdlN1ZtSElsMjNKVEtQZGt2S2Rvd2J2WUFtMkdmZUNUZENQbVpQWWxockk2MmRNTFZJMmF2elYzc05NNHpSN3RKYXdPMkhGblVYV2t1NEs4?oc=5",
+            "source": "El Sol de México",
+            "date": "2026-11-13",
+            "published_at": "2026-11-13T23:36:46Z",
+            "category": "Movilidad",
+        }
+        result = standardize(article)
+        self.assertIsNotNone(result)
+        self.assertEqual(result["source"], "La Prensa")
+        self.assertEqual(result["source_url"], "https://oem.com.mx/la-prensa/policiaca/mueren-dos-motociclistas-tras-chocar-contra-una-camioneta-en-venustiano-carranza-33118910")
+        self.assertEqual(result["local_url"], "/noticias/?id=48ad03698ec605252a33&mes=2026-11")
+        self.assertEqual(result["url"], article["url"])
+        self.assertIn("La Prensa", result["brief"]["lead"])
+        page = render(result, article_id(result))
+        self.assertIn('href="https://oem.com.mx/la-prensa/policiaca/mueren-dos-motociclistas-tras-chocar-contra-una-camioneta-en-venustiano-carranza-33118910"', page)
+        self.assertIn("Fuente: La Prensa", page)
+        self.assertNotIn("Fuente: El Sol de México", page)
+        self.assertNotIn('href="' + article["url"] + '"', page)
+
+    def test_same_vc_motorcycle_crash_is_grouped_in_feed_but_both_sources_remain_in_archive(self):
+        la_prensa = standardize({
+            "title": "Mueren dos motociclistas tras chocar contra una camioneta en Venustiano Carranza",
+            "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNYlEtZER2b0lMSXRrLTNzYTdweEk1ZTRSdm5xX2dtWFFIU04tUWRya0VtNWd0UUJiVndhM2V3UzJlYjJ3Z192Yks0b0ZNSnBvbXJiZmlUeGw5V2FKczRETC11VWtQSk5Oc1FHdFVDUTZFMExlZUhFQVdlN1ZtSElsMjNKVEtQZGt2S2Rvd2J2WUFtMkdmZUNUZENQbVpQWWxockk2MmRNTFZJMmF2elYzc05NNHpSN3RKYXdPMkhGblVYV2t1NEs4?oc=5",
+            "source": "El Sol de México",
+            "date": "2026-11-13",
+            "published_at": "2026-11-13T23:36:46Z",
+            "category": "Movilidad",
+        })
+        reforma = standardize({
+            "title": "Mueren dos motociclistas tras choque en Venustiano Carranza",
+            "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPQzFHR0VkdE44UVRiczk3U1d1RkI1WHZtODNqVm5jVno2c2dOLUotQjlEOE1MZFlQcFR0Z1pmT0tZc3FERlBmMGZINmx0SFNXejRpOGVwbi1TUGJIZFdhM0hHZk9ieGR0eTVBczJDQk1yOFRUdXEzUjhmbUtzRHhyM0c2T0xoN1NXVVltbUp1NGFhTHh5Z0Vsbw?oc=5",
+            "source": "Reforma",
+            "date": "2026-11-13",
+            "published_at": "2026-11-13T19:57:37Z",
+            "category": "Movilidad",
+        })
+        self.assertIsNotNone(la_prensa)
+        self.assertIsNotNone(reforma)
+        self.assertNotEqual(archive_record_key(la_prensa), archive_record_key(reforma))
+        visible = dedupe_homepage_events([la_prensa, reforma])
+        self.assertEqual(len(visible), 1)
+        self.assertEqual(visible[0]["source"], "La Prensa")
+        self.assertEqual(visible[0]["local_url"], la_prensa["local_url"])
 
     def test_distinct_real_photos_for_sixty_news(self):
         groups=["CDMX","Metro","Seguridad","Movilidad","Cultura","Gobierno"]
