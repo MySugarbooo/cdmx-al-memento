@@ -24,6 +24,10 @@
   return x&&typeof x.title==='string'&&typeof x.local_url==='string'&&
    /^\/noticias\/\?id=[a-f0-9]{20}&mes=\d{4}-\d{2}$/.test(x.local_url);
  }
+ function articleRouteId(x){
+  const match=typeof x?.local_url==='string'&&x.local_url.match(/^\/noticias\/\?id=([a-f0-9]{20})&mes=\d{4}-\d{2}$/);
+  return match?match[1]:'';
+ }
  function publication(x){
   const d=new Date(x.published_at||'');
   return Number.isFinite(d.getTime())?dateFormat.format(d):x.date||'Fecha sin confirmar';
@@ -252,11 +256,11 @@
   let routeIndex=null;
   try{routeIndex=await readJSON('/archivo/rutas.json')}catch{}
   const archiveMonth=routeIndex?.routes?.[id];
-  if(/^\d{4}-\d{2}$/.test(archiveMonth||'')&&archiveMonth!==month){
+  if(/^\d{4}-\d{2}$/.test(archiveMonth||'')){
    try{
-    const moved=await readJSON('/archivo/'+archiveMonth+'.json');
+    const moved=archiveMonth===month&&archive?archive:await readJSON('/archivo/'+archiveMonth+'.json');
     const movedItems=Array.isArray(moved.articles)?moved.articles.filter(validArticle):[];
-    found=movedItems.find(x=>x.local_url===expectedLocalUrl);
+    found=movedItems.find(x=>x.local_url===expectedLocalUrl)||movedItems.find(x=>articleRouteId(x)===id);
     if(found){renderArticle(found,movedItems,moved.updated);return;}
    }catch{}
   }
