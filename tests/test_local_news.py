@@ -2,7 +2,7 @@
 import json
 import unittest
 from pathlib import Path
-from scripts.notas_locales import assign_photos, local_link, summarize, is_sensitive_media, RADIO_FORMULA_CASA_ECOLOGICA_SOURCE_URL, INFOBAE_MARIA_LEON_CONCERT_SOURCE_URL
+from scripts.notas_locales import assign_photos, local_link, summarize, is_sensitive_media, RADIO_FORMULA_CASA_ECOLOGICA_SOURCE_URL, INFOBAE_MARIA_LEON_CONCERT_SOURCE_URL, AICM_FLIGHT_SUSPENSION_SOURCE_URL
 from scripts.build_article_seo import article_id, render
 from update_news import category_by_headline, standardize, photo_needs_refresh, CAPITAL_CDMX_CARE_BUDGET_SOURCE_URL, prioritize_photo_refresh, build_homepage_feed, archive_record_key, dedupe_homepage_events
 
@@ -556,6 +556,39 @@ class LocalNewsTests(unittest.TestCase):
         # Una regla general de Gobierno no debe ocultar una detención específica.
         security_title = "Detienen a un hombre tras operativo del Gobierno de la Ciudad de México"
         self.assertEqual(category_by_headline(security_title, "CDMX"), "Seguridad")
+
+    def test_la_jornada_aicm_report_has_direct_source_and_attributed_flight_counts(self):
+        article = {
+            "title": "AICM reporta 10 mil 293 pasajeros y 73 vuelos afectados tras suspensión aérea en EU",
+            "url": "https://news.google.com/rss/articles/aicm-flight-suspension",
+            "source": "La Jornada",
+            "date": "2026-11-13",
+            "published_at": "2026-11-13T22:17:00Z",
+            "category": "CDMX",
+            "borough": "",
+        }
+        result = standardize(article)
+        self.assertIsNotNone(result)
+        self.assertEqual(result["category"], "Movilidad")
+        self.assertEqual(result["borough"], "Venustiano Carranza")
+        self.assertIn("Aeropuerto Internacional de la Ciudad de México", result["location"])
+        self.assertEqual(result["source_url"], AICM_FLIGHT_SUSPENSION_SOURCE_URL)
+        lead = result["brief"]["lead"]
+        self.assertIn("10,293 pasajeros", lead)
+        self.assertIn("73 vuelos", lead)
+        self.assertIn("29 demorados", lead)
+        self.assertIn("44 cancelados", lead)
+        self.assertIn("La Jornada", result["brief"]["method"])
+        self.assertIn(AICM_FLIGHT_SUSPENSION_SOURCE_URL, result["brief"]["method"])
+
+        item = {
+            **result,
+            "local_url": "/noticias/?id=9d50db4739705df961a7&mes=2026-11",
+        }
+        html = render(item, "9d50db4739705df961a7")
+        self.assertIn('href="' + AICM_FLIGHT_SUSPENSION_SOURCE_URL + '"', html)
+        self.assertIn("10,293 pasajeros", html)
+        self.assertNotIn('href="https://news.google.com/', html)
 
     def test_radio_formula_casa_ecologica_is_environmental_and_uses_direct_source(self):
         article = {

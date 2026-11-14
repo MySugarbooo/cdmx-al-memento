@@ -550,12 +550,57 @@ def is_mauricio_tabe_fifth_report(article):
     )
 
 
+AICM_FLIGHT_SUSPENSION_SOURCE_URL = (
+    "https://www.jornada.com.mx/noticia/2026/11/13/politica/"
+    "aicm-reporta-afectaciones-de-vuelos-hacia-y-desde-estados-unidos-tras-restriccion-a-operaciones-aereas"
+)
+
+
+def is_la_jornada_aicm_flight_suspension(article):
+    """Identifica el reporte del AICM sobre los vuelos afectados el 13/11/2026."""
+    title = _photo_fold(article.get("title"))
+    source = _photo_fold(article.get("source"))
+    return (
+        source == "la jornada"
+        and str(article.get("date") or "") == "2026-11-13"
+        and "aicm" in title
+        and "10 mil 293 pasajeros" in title
+        and "73 vuelos" in title
+        and "suspension" in title
+    )
+
+
 def summarize(article):
     title=str(article.get("title") or "").strip()
     source=str(article.get("source") or "un medio periodístico").strip()
     category=str(article.get("category") or "CDMX")
     theme=TAGS.get(category,TAGS["CDMX"])
     folded_title=_photo_fold(title)
+    if is_la_jornada_aicm_flight_suspension(article):
+        return {
+            "lead": (
+                "La Jornada informó que la suspensión temporal de vuelos hacia y desde Estados Unidos "
+                "afectó a 10,293 pasajeros y 73 vuelos del AICM: 29 demorados y 44 cancelados. "
+                "Según la nota, después de reabrirse el espacio aéreo estadounidense, las operaciones "
+                "se normalizarían de manera paulatina."
+            ),
+            "context": (
+                "La afectación alcanzó a personas con vuelos entre el AICM y Estados Unidos. "
+                "El medio reportó que el aeropuerto recomendó consultar directamente con las aerolíneas "
+                "el estado de cada itinerario."
+            ),
+            "pending": (
+                "Las cifras corresponden al reporte publicado el 13 de noviembre de 2026. "
+                "La disponibilidad, los horarios y la regularización posterior deben confirmarse "
+                "con el AICM, la AFAC y cada aerolínea."
+            ),
+            "method": (
+                "Síntesis basada en la nota original de La Jornada del 13 de noviembre de 2026: "
+                + AICM_FLIGHT_SUSPENSION_SOURCE_URL
+                + ". Las cifras se atribuyen al reporte del AICM reproducido por el medio; "
+                "no constituyen una verificación independiente."
+            ),
+        }
     if is_infobae_maria_leon_concert(article):
         return {
             "lead": (
