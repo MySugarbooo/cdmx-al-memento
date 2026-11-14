@@ -1,6 +1,6 @@
 {
   "month": "2026-11",
-  "updated": "2026-11-14 07:22 UTC",
+  "updated": "2026-11-14 07:32 UTC",
   "articles": [
     {
       "title": "Feria del Empleo en Iztapalapa ofrece mil vacantes con empresas como Bimbo, Sears y Chedraui; fecha y horario",
@@ -419,7 +419,7 @@
     },
     {
       "title": "AICM reporta 10 mil 293 pasajeros y 73 vuelos afectados tras suspensión aérea en EU",
-      "description": "De acuerdo con La Jornada, el titular publicado es: «AICM reporta 10 mil 293 pasajeros y 73 vuelos afectados tras suspensión aérea en EU». La información publicada por La Jornada aborda un asunto que este portal clasifica como Movilidad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "description": "La Jornada informó que la suspensión temporal de vuelos hacia y desde Estados Unidos afectó a 10,293 pasajeros y 73 vuelos del AICM: 29 demorados y 44 cancelados. Según la nota, después de reabrirse el espacio aéreo estadounidense, las operaciones se normalizarían de manera paulatina.",
       "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNSXhLejVBaE9GLUJSRXVucGkxTWFHenlfblpoRDlwRF9pWnUzVEt6T2sxUVpnZV9GZ0U5TjJ4VkRERFItSmtoV3VkYU45MzdKZ1BwdDZZNEx3TTdpN0NnU3d1c3dlc2tJcGVGRnNwYV9RWG83eUVzQW5yeE5iVmdmZVVPOVpIR3V3aE1ybGlBb082cFlYYmRJUEM4YkZIRVdyLVMzOEdJNWRMX3BMVjZBSmtUSjZIMjFKTlNxb0t6RThaTEF5TTNpR2VVNGRwRDBEVFRJNUZzV0hkZkFqTVRVaGJBUzJONlVkLXdfTHNB?oc=5",
       "source": "La Jornada",
       "date": "2026-11-13",
@@ -428,12 +428,7 @@
       "borough": "Venustiano Carranza",
       "location": "Aeropuerto Internacional de la Ciudad de México (AICM), Venustiano Carranza",
       "local_url": "/noticias/?id=9d50db4739705df961a7&mes=2026-11",
-      "brief": {
-        "lead": "De acuerdo con La Jornada, el titular publicado es: «AICM reporta 10 mil 293 pasajeros y 73 vuelos afectados tras suspensión aérea en EU». La información publicada por La Jornada aborda un asunto que este portal clasifica como Movilidad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-        "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
-        "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
+      "source_url": "https://www.jornada.com.mx/noticia/2026/11/13/politica/aicm-reporta-afectaciones-de-vuelos-hacia-y-desde-estados-unidos-tras-restriccion-a-operaciones-aereas",
       "alternate_versions": [
         {
           "title": "AICM reporta afectaciones de vuelos hacia y desde Estados Unidos por restricción a operaciones aéreas",
@@ -626,8 +621,33 @@
             "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           }
+        },
+        {
+          "title": "AICM reporta 10 mil 293 pasajeros y 73 vuelos afectados tras suspensión aérea en EU",
+          "description": "La Jornada informó que la suspensión temporal de vuelos hacia y desde Estados Unidos afectó a 10,293 pasajeros y 73 vuelos del AICM: 29 demorados y 44 cancelados. Según la nota, después de reabrirse el espacio aéreo estadounidense, las operaciones se normalizarían de manera paulatina.",
+          "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNSXhLejVBaE9GLUJSRXVucGkxTWFHenlfblpoRDlwRF9pWnUzVEt6T2sxUVpnZV9GZ0U5TjJ4VkRERFItSmtoV3VkYU45MzdKZ1BwdDZZNEx3TTdpN0NnU3d1c3dlc2tJcGVGRnNwYV9RWG83eUVzQW5yeE5iVmdmZVVPOVpIR3V3aE1ybGlBb082cFlYYmRJUEM4YkZIRVdyLVMzOEdJNWRMX3BMVjZBSmtUSjZIMjFKTlNxb0t6RThaTEF5TTNpR2VVNGRwRDBEVFRJNUZzV0hkZkFqTVRVaGJBUzJONlVkLXdfTHNB?oc=5",
+          "source": "La Jornada",
+          "date": "2026-11-13",
+          "published_at": "2026-11-13T22:17:00Z",
+          "category": "Movilidad",
+          "borough": "Venustiano Carranza",
+          "location": "Aeropuerto Internacional de la Ciudad de México (AICM), Venustiano Carranza",
+          "local_url": "/noticias/?id=9d50db4739705df961a7&mes=2026-11",
+          "source_url": "https://www.jornada.com.mx/noticia/2026/11/13/politica/aicm-reporta-afectaciones-de-vuelos-hacia-y-desde-estados-unidos-tras-restriccion-a-operaciones-aereas",
+          "brief": {
+            "lead": "La Jornada informó que la suspensión temporal de vuelos hacia y desde Estados Unidos afectó a 10,293 pasajeros y 73 vuelos del AICM: 29 demorados y 44 cancelados. Según la nota, después de reabrirse el espacio aéreo estadounidense, las operaciones se normalizarían de manera paulatina.",
+            "context": "La afectación alcanzó a personas con vuelos entre el AICM y Estados Unidos. El medio reportó que el aeropuerto recomendó consultar directamente con las aerolíneas el estado de cada itinerario.",
+            "pending": "Las cifras corresponden al reporte publicado el 13 de noviembre de 2026. La disponibilidad, los horarios y la regularización posterior deben confirmarse con el AICM, la AFAC y cada aerolínea.",
+            "method": "Síntesis basada en la nota original de La Jornada del 13 de noviembre de 2026: https://www.jornada.com.mx/noticia/2026/11/13/politica/aicm-reporta-afectaciones-de-vuelos-hacia-y-desde-estados-unidos-tras-restriccion-a-operaciones-aereas. Las cifras se atribuyen al reporte del AICM reproducido por el medio; no constituyen una verificación independiente."
+          }
         }
-      ]
+      ],
+      "brief": {
+        "lead": "La Jornada informó que la suspensión temporal de vuelos hacia y desde Estados Unidos afectó a 10,293 pasajeros y 73 vuelos del AICM: 29 demorados y 44 cancelados. Según la nota, después de reabrirse el espacio aéreo estadounidense, las operaciones se normalizarían de manera paulatina.",
+        "context": "La afectación alcanzó a personas con vuelos entre el AICM y Estados Unidos. El medio reportó que el aeropuerto recomendó consultar directamente con las aerolíneas el estado de cada itinerario.",
+        "pending": "Las cifras corresponden al reporte publicado el 13 de noviembre de 2026. La disponibilidad, los horarios y la regularización posterior deben confirmarse con el AICM, la AFAC y cada aerolínea.",
+        "method": "Síntesis basada en la nota original de La Jornada del 13 de noviembre de 2026: https://www.jornada.com.mx/noticia/2026/11/13/politica/aicm-reporta-afectaciones-de-vuelos-hacia-y-desde-estados-unidos-tras-restriccion-a-operaciones-aereas. Las cifras se atribuyen al reporte del AICM reproducido por el medio; no constituyen una verificación independiente."
+      }
     },
     {
       "title": "Clima en Xochimilco: sábado 14 de noviembre con ambiente fresco y cielo despejado",
@@ -3759,27 +3779,6 @@
       "borough": "",
       "location": "Ciudad de México (sin alcaldía identificada)",
       "local_url": "/noticias/?id=0b2ea10884e5b9b514b3&mes=2026-11",
-      "brief": {
-        "lead": "De acuerdo con N+, el titular publicado es: «¿Tendrá Horario Normal el Metro CDMX el Lunes 16 de Noviembre 2026? Así Será Servicio». La información publicada por N+ aborda un asunto que este portal clasifica como Metro. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-        "context": "Los cambios en este sistema pueden afectar los horarios, las conexiones y la planeación de los viajes cotidianos.",
-        "pending": "El estado operativo, las estaciones y las alternativas de traslado deben comprobarse en los avisos actuales del Metro. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "commons_179002503",
-        "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/Estaci%C3%B3n_Observatorio_de_la_L%C3%ADnea_1_del_Metro_de_la_Ciudad_de_M%C3%A9xico_12.jpg/960px-Estaci%C3%B3n_Observatorio_de_la_L%C3%ADnea_1_del_Metro_de_la_Ciudad_de_M%C3%A9xico_12.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "category": "Metro",
-        "borough": "",
-        "topic": "Estación Observatorio de la Línea 1 del Metro de la Ciudad de México 12",
-        "keywords": [
-          "Metro Ciudad de México Línea 1 estación"
-        ],
-        "author": "ProtoplasmaKid",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Estaci%C3%B3n_Observatorio_de_la_L%C3%ADnea_1_del_Metro_de_la_Ciudad_de_M%C3%A9xico_12.jpg"
-      },
       "alternate_versions": [
         {
           "title": "¿Tendrá Horario Normal el Metro CDMX el Lunes 16 de Noviembre 2026? Así Será Servicio",
@@ -3847,7 +3846,28 @@
             "source": "https://commons.wikimedia.org/wiki/File:Estaci%C3%B3n_Observatorio_de_la_L%C3%ADnea_1_del_Metro_de_la_Ciudad_de_M%C3%A9xico_12.jpg"
           }
         }
-      ]
+      ],
+      "brief": {
+        "lead": "De acuerdo con N+, el titular publicado es: «¿Tendrá Horario Normal el Metro CDMX el Lunes 16 de Noviembre 2026? Así Será Servicio». La información publicada por N+ aborda un asunto que este portal clasifica como Metro. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+        "context": "Los cambios en este sistema pueden afectar los horarios, las conexiones y la planeación de los viajes cotidianos.",
+        "pending": "El estado operativo, las estaciones y las alternativas de traslado deben comprobarse en los avisos actuales del Metro. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "commons_179002503",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/Estaci%C3%B3n_Observatorio_de_la_L%C3%ADnea_1_del_Metro_de_la_Ciudad_de_M%C3%A9xico_12.jpg/960px-Estaci%C3%B3n_Observatorio_de_la_L%C3%ADnea_1_del_Metro_de_la_Ciudad_de_M%C3%A9xico_12.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "category": "Metro",
+        "borough": "",
+        "topic": "Estación Observatorio de la Línea 1 del Metro de la Ciudad de México 12",
+        "keywords": [
+          "Metro Ciudad de México Línea 1 estación"
+        ],
+        "author": "ProtoplasmaKid",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Estaci%C3%B3n_Observatorio_de_la_L%C3%ADnea_1_del_Metro_de_la_Ciudad_de_M%C3%A9xico_12.jpg"
+      }
     },
     {
       "title": "Desfile de la Revolución Mexicana 2026 en CDMX: fecha, horario, ruta y clima",
