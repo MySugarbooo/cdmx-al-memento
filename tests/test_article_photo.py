@@ -144,7 +144,7 @@ class ArticlePhotoTests(unittest.TestCase):
         self.assertIn("Ver fuente original", page)
         self.assertIn("Sonia Medina", page)
         self.assertIn("CC BY 3.0", page)
-        self.assertIn(photo_url, page)
+        self.assertIn(photo_url.replace("&", "&amp;"), page)
 
     def test_local_photo_keeps_credits(self):
         html = render_photo({"category": "Seguridad", "photo": {
