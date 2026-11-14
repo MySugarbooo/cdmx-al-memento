@@ -445,7 +445,7 @@ class LocalNewsTests(unittest.TestCase):
 
     def test_same_november_14_protest_agenda_is_grouped_but_both_sources_remain_in_archive(self):
         tv_azteca = standardize({
-            "title": "¿Vas a salir hoy? Marchas y concentraciones en la CDMX este sábado 14 de noviembre: horarios y puntos afectados",
+            "title": "Marchas CDMX EN VIVO sábado 14 de noviembre: rutas y cierres",
             "url": "https://news.google.com/rss/articles/protests-tv-azteca",
             "source": "TV Azteca",
             "date": "2026-11-14",
@@ -467,6 +467,18 @@ class LocalNewsTests(unittest.TestCase):
         self.assertEqual(len(visible), 1)
         self.assertEqual(visible[0]["source"], "TV Azteca")
         self.assertEqual(visible[0]["local_url"], tv_azteca["local_url"])
+
+        # TV Azteca puede cambiar el titular RSS sin cambiar la URL ni la agenda cubierta.
+        legacy_title = standardize({
+            "title": "¿Vas a salir hoy? Marchas y concentraciones en la CDMX este sábado 14 de noviembre: horarios y puntos afectados",
+            "url": "https://news.google.com/rss/articles/protests-tv-azteca-legacy-title",
+            "source": "TV Azteca",
+            "date": "2026-11-14",
+            "published_at": "2026-11-14T20:00:00Z",
+            "category": "Movilidad",
+        })
+        self.assertIsNotNone(legacy_title)
+        self.assertEqual(len(dedupe_homepage_events([legacy_title, sociedad])), 1)
 
         different = standardize({
             "title": "Marcha de trabajadores en Tlalpan este sábado 14 de noviembre",
