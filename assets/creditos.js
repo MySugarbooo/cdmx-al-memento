@@ -1,5 +1,5 @@
 'use strict';
-/* Consulta escalonada de atribuciones: 1,117 fichas sin crear 1,100 nodos iniciales. */
+/* Catálogo editorial y fotografías temáticas, sin duplicar fuentes ni crear miles de nodos iniciales. */
 (()=>{
  const holder=document.getElementById('extra-photo-credits');
  if(!holder)return;
@@ -9,11 +9,18 @@
  const validSource=u=>/^https:\/\/commons\.wikimedia\.org\/wiki\/File:/.test(String(u||''));
  const validLicense=u=>/^https:\/\/creativecommons\.org\//.test(String(u||''));
  const notice='Imagen de carácter ilustrativo y referencial; no constituye evidencia gráfica de los hechos descritos.';
- fetch('/assets/fotos/catalogo-editorial-1100.json?v=20261113-editorial-photo-context3',{cache:'force-cache'})
- .then(r=>{if(!r.ok)throw Error('HTTP '+r.status);return r.json()})
- .then(data=>{
-  const photos=(data.photos||[]).filter(p=>p&&p.author&&p.license&&validSource(p.source)&&validLicense(p.licenseUrl));
-  if(photos.length<901||photos.length!==data.count)throw Error('Catálogo incompleto');
+ Promise.all([
+  fetch('/assets/fotos/catalogo-editorial-1100.json?v=20261113-editorial-photo-context3',{cache:'force-cache'}).then(r=>{if(!r.ok)throw Error('HTTP '+r.status);return r.json()}),
+  fetch('/assets/fotos/contexto-tematico.json?v=20261114-editorial-context-credits1',{cache:'force-cache'}).then(r=>r.ok?r.json():{photos:[]}).catch(()=>({photos:[]})),
+ ])
+ .then(([data,context])=>{
+  const basePhotos=(data.photos||[]).filter(p=>p&&p.author&&p.license&&validSource(p.source)&&validLicense(p.licenseUrl));
+  if(basePhotos.length<901||basePhotos.length!==data.count)throw Error('Catálogo incompleto');
+  const bySource=new Map(basePhotos.map(p=>[p.source,p]));
+  for(const p of context.photos||[]){
+   if(p&&p.author&&p.license&&validSource(p.source)&&validLicense(p.licenseUrl)&&!bySource.has(p.source))bySource.set(p.source,p);
+  }
+  const photos=[...bySource.values()];
   const controls=el('div',undefined,'credits-controls');
   const search=el('input');search.type='search';search.placeholder='Filtrar por autor, tema o alcaldía';
   search.setAttribute('aria-label','Buscar los derechos y créditos fotográficos');
