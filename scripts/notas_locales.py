@@ -1883,6 +1883,25 @@ def _photo_score(article, photo):
     motorcycle_story = bool(re.search(
         r"\b(?:motocicletas?|motociclistas?|motos?)\b", headline
     ))
+    vehicle_crash_story = bool(
+        re.search(
+            r"\b(?:vuelca|volcadura|derrap\w*|choque|colision|accidente vial|"
+            r"accidente de transito|siniestro vial|atropellamiento)\b",
+            headline,
+        )
+        and re.search(
+            r"\b(?:automovil|auto|vehiculo|camioneta|motocicleta|motociclista|moto)\b",
+            headline,
+        )
+    )
+    vehicle_road_photo = bool(re.search(
+        r"\b(?:trafico vehicular|transito vehicular|vialidad|carretera|autopista|"
+        r"avenida|calzada|carriles?|accidente vial|choque|volcadura|derrape|"
+        r"automovilistas)\b",
+        context,
+    ))
+    if vehicle_crash_story and not vehicle_road_photo:
+        return -10000
     if (photo.get("id") == "contexto_repartidores_motocicleta_cdmx"
             and not delivery_story):
         return -10000
@@ -1903,6 +1922,18 @@ def _photo_score(article, photo):
         delivery_security_story and delivery_security_photo
     ):
         return -10000
+    # Una marcha por derechos animales no debe ilustrarse con una protesta de otra causa.
+    animal_rights_march_story = bool(
+        re.search(r"\b(?:marcha|manifestacion|protesta)\b", headline)
+        and re.search(r"\b(?:derechos de los animales|bienestar animal|proteccion animal)\b", headline)
+    )
+    animal_rights_march_photo = bool(
+        re.search(r"\b(?:marcha|manifestacion|protesta)\b", context)
+        and re.search(r"\b(?:derechos de los animales|bienestar animal|proteccion animal|animales?)\b", context)
+    )
+    if animal_rights_march_story and not animal_rights_march_photo:
+        return -10000
+
     # Una nota sobre cámaras de seguridad en mercados exige contexto de videovigilancia;
     # una foto de higiene por COVID no representa la instalación de cámaras del C5.
     market_surveillance_story = bool(
@@ -2477,16 +2508,17 @@ def _photo_score(article, photo):
             and not re.search(r"\b(?:obras?|construccion|remodelacion)\b", headline)
             and re.search(r"\b(?:obras?|construccion|remodelacion)\b", topic)):
         return -10000
-    # Una entrega o adquisición de patrullas no ilustra un decomiso de autopartes.
+    # Una patrulla genérica no representa un decomiso de autopartes, aunque ambas notas sean de seguridad.
     autoparts_story = bool(re.search(
         r"\b(?:autopartes?|refacciones?|deshuesaderos?|piezas? de (?:autos?|vehiculos?))\b",
         headline,
     ))
-    patrol_procurement_photo = bool(re.search(
-        r"\b(?:adquisicion|compra|presentacion|entrega|graduacion|ceremonia)\b.{0,60}\b(?:patrullas?|policias?)\b",
-        topic,
+    patrol_photo = bool(re.search(r"\b(?:patrullas?|policias?)\b", context))
+    photo_shows_parts = bool(re.search(
+        r"\b(?:autopartes?|refacciones?|deshuesaderos?|piezas? de (?:autos?|vehiculos?))\b",
+        context,
     ))
-    if autoparts_story and patrol_procurement_photo:
+    if autoparts_story and patrol_photo and not photo_shows_parts:
         return -10000
     # En titulares en vivo, el texto tras dos puntos puede resumir otros asuntos;
     # para la pertinencia visual se prioriza el hecho principal antes de los dos puntos.
