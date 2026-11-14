@@ -109,6 +109,43 @@ class ArticlePhotoTests(unittest.TestCase):
         self.assertIn('href="' + source_url + '"', page)
         self.assertIn("Ver fuente original", page)
 
+    def test_24_horas_electric_mobility_source_link_and_photo_credit_are_rendered(self):
+        source_url = "https://24-horas.mx/cdmx/registro-emplacamiento-vemepe-vep-cdmx-costos-requisitos/"
+        photo_url = "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Grin_e-scooter_rider_in_Mexico_City.jpg/1280px-Grin_e-scooter_rider_in_Mexico_City.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org"
+        item = {
+            "title": "Placas de motos eléctricas, bicis y scooters en CDMX: ¿cuáles son las reglas y de cuánto es la multa?",
+            "source": "24-horas",
+            "source_url": source_url,
+            "url": "https://news.google.com/rss/articles/example?oc=5",
+            "local_url": "/noticias/?id=f321caba525de71a5543&mes=2026-11",
+            "date": "2026-11-14",
+            "category": "Movilidad",
+            "location": "Ciudad de México (sin alcaldía identificada)",
+            "brief": {
+                "lead": "El periodo de gracia vence el 20 de noviembre de 2026.",
+                "context": "Solo VEMEPE requieren placa; VEP reciben DME gratuito.",
+                "pending": "Verifica la clasificación en SEMOVI.",
+                "method": "Síntesis de 24 Horas contrastada con SEMOVI.",
+            },
+            "photo": {
+                "id": "contexto_grin_escooter_cdmx_2019",
+                "kind": "representativa",
+                "url": photo_url,
+                "category": "Movilidad",
+                "topic": "Persona en scooter eléctrico Grin por carril ciclista de CDMX (23/10/2019); foto de archivo, no del trámite de 2026.",
+                "author": "Sonia Medina",
+                "license": "CC BY 3.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+                "source": "https://commons.wikimedia.org/wiki/File:Grin_e-scooter_rider_in_Mexico_City.jpg",
+            },
+        }
+        page = render(item, "f321caba525de71a5543")
+        self.assertIn('href="' + source_url + '"', page)
+        self.assertIn("Ver fuente original", page)
+        self.assertIn("Sonia Medina", page)
+        self.assertIn("CC BY 3.0", page)
+        self.assertIn(photo_url, page)
+
     def test_local_photo_keeps_credits(self):
         html = render_photo({"category": "Seguridad", "photo": {
             "url": "/assets/fotos/seguridad.jpg", "kind": "representativa",
