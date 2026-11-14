@@ -77,7 +77,7 @@ RADIO_FORMULA_CASA_ECOLOGICA_SOURCE_URL = "https://www.radioformula.com.mx/cdmx/
 LA_JORNADA_CASA_ECOLOGICA_SOURCE_URL = "https://www.jornada.com.mx/noticia/2026/11/12/capital/lanza-cdmx-programa-de-ecotecnias-para-10-mil-viviendas-en-alvaro-obregon"
 CAPITAL_CDMX_CARE_BUDGET_SOURCE_URL = "https://capital-cdmx.org/presupuesto-cuidados-2027-cdmx-cuanto-dinero-llegara-anexo-31-desglose/"
 EL_SOL_MUJERES_DEFENSIVE_DRIVING_SOURCE_URL = "https://oem.com.mx/elsoldemexico/metropoli/ofrecen-taller-gratuito-de-manejo-defensivo-y-preventivo-para-mujeres-en-cdmx-33130686"
-24_HORAS_ELECTRIC_MOBILITY_SOURCE_URL = "https://24-horas.mx/cdmx/registro-emplacamiento-vemepe-vep-cdmx-costos-requisitos/"
+HORAS_24_ELECTRIC_MOBILITY_SOURCE_URL = "https://24-horas.mx/cdmx/registro-emplacamiento-vemepe-vep-cdmx-costos-requisitos/"
 
 
 def is_radio_formula_casa_ecologica(article):
