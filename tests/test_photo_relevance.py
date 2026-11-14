@@ -676,6 +676,51 @@ class PhotoRelevanceTests(unittest.TestCase):
         self.assertGreaterEqual(_photo_score(article, patrol), 0)
 
 
+    def test_theatre_recommendations_reject_plant_photo_and_use_theatre_context(self):
+        title = "Obras de teatro que tienes que ver en noviembre en CDMX"
+        article = news.standardize({
+            "title": title,
+            "url": "https://news.google.com/rss/articles/theatre-photo-regression",
+            "source": "Chilango",
+            "date": "2026-11-14",
+            "category": "CDMX",
+        })
+        self.assertEqual(article["category"], "Cultura")
+        self.assertEqual(_photo_category(article), "Cultura")
+
+        plant = next(
+            photo for photo in _pool()
+            if photo.get("id") == "commons_57104818"
+        )
+        theatre = next(
+            photo for photo in _pool()
+            if "teatro angela peralta" in news.fold(photo.get("topic", ""))
+        )
+        self.assertLess(_photo_score(article, plant), 0)
+        self.assertGreaterEqual(_photo_score(article, theatre), 0)
+
+        with patch.object(photos, "_pool", return_value=[plant, theatre]), patch.object(
+            photos, "_load", return_value=[]
+        ):
+            assign_photos([article])
+        self.assertEqual(article["photo"]["id"], "contexto_teatro_angela_peralta")
+        self.assertEqual(article["photo"]["kind"], "representativa")
+
+    def test_theatre_recommendation_summary_is_specific_and_cautious(self):
+        article = news.standardize({
+            "title": "Obras de teatro que tienes que ver en noviembre en CDMX",
+            "url": "https://news.google.com/rss/articles/theatre-summary-regression",
+            "source": "Chilango",
+            "date": "2026-11-14",
+            "category": "CDMX",
+        })
+        lead = article["brief"]["lead"].casefold()
+        self.assertIn("recomendaciones de obras de teatro", lead)
+        self.assertIn("cartelera original", lead)
+        self.assertNotIn("sin acceso al cuerpo", lead)
+        self.assertEqual(article["description"], article["brief"]["lead"])
+
+
     def test_cine_de_barrio_rejects_unrelated_museum_photo(self):
         title = "Festival Cine de Barrio llega a la CDMX con películas, karaoke y rodada con entrada gratuita"
         category = category_by_headline(title, "CDMX")
