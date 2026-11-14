@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-14 08:15 UTC",
+  "updated": "2026-11-14 08:43 UTC",
   "boroughs": [
     {
       "name": "La Magdalena Contreras",
@@ -2801,7 +2801,7 @@
           "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPNHNFbmNKaEdxNUp5UzNjZFl3LUpxcHB2SjVJTDFtYUN4NHd1YnUxNFMzWHJEZGdrTmNIU2tRQWZnd3g3UVVkXzhodkZEa0hQbTQ3VGQyY0tWSFVNaEhOb1k5OXlZYXhlZkJGd0hYclNsWFNILVdBQ3BQUEVGM0VlN042am1pR0FCZGlfMU9jTGJ3VFFIWm13d1dEMmUxeXRFc09KY0lIU0dfcGdhaVg1NEVPdFpyeWdlQTdLeEJ1N0hiYzhBbkM3TVNKWk9kNTFUSnRPcFdqVQ?oc=5",
           "source": "N+",
           "date": "2026-11-13",
-          "published_at": "2026-11-14T05:34:00Z",
+          "published_at": "2026-11-14T05:34:04Z",
           "category": "Seguridad",
           "borough": "Azcapotzalco",
           "location": "Azcapotzalco (mencionada en el titular)",
@@ -2826,7 +2826,42 @@
             "license": "CC BY-SA 4.0",
             "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.es",
             "source": "https://commons.wikimedia.org/wiki/File:Patrulla_cdmx.jpg"
-          }
+          },
+          "alternate_versions": [
+            {
+              "title": "Asesinan a Un Hombre y Un Niño de 10 Años en Alcaldía Azcapotzalco, en la CDMX",
+              "description": "De acuerdo con N+, el titular publicado es: «Asesinan a Un Hombre y Un Niño de 10 Años en Alcaldía Azcapotzalco, en la CDMX». La información publicada por N+ aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+              "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPNHNFbmNKaEdxNUp5UzNjZFl3LUpxcHB2SjVJTDFtYUN4NHd1YnUxNFMzWHJEZGdrTmNIU2tRQWZnd3g3UVVkXzhodkZEa0hQbTQ3VGQyY0tWSFVNaEhOb1k5OXlZYXhlZkJGd0hYclNsWFNILVdBQ3BQUEVGM0VlN042am1pR0FCZGlfMU9jTGJ3VFFIWm13d1dEMmUxeXRFc09KY0lIU0dfcGdhaVg1NEVPdFpyeWdlQTdLeEJ1N0hiYzhBbkM3TVNKWk9kNTFUSnRPcFdqVQ?oc=5",
+              "source": "N+",
+              "date": "2026-11-13",
+              "published_at": "2026-11-14T05:34:00Z",
+              "category": "Seguridad",
+              "borough": "Azcapotzalco",
+              "location": "Azcapotzalco (mencionada en el titular)",
+              "local_url": "/noticias/?id=0a3abec9941a9ad3518e&mes=2026-11",
+              "brief": {
+                "lead": "De acuerdo con N+, el titular publicado es: «Asesinan a Un Hombre y Un Niño de 10 Años en Alcaldía Azcapotzalco, en la CDMX». La información publicada por N+ aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+                "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+                "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+              },
+              "photo": {
+                "id": "seguridad",
+                "kind": "representativa",
+                "url": "/assets/fotos/seguridad.jpg",
+                "category": "Seguridad",
+                "borough": "",
+                "topic": "Patrulla de Ciudad de México",
+                "keywords": [
+                  "Seguridad"
+                ],
+                "author": "RainerRowe",
+                "license": "CC BY-SA 4.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.es",
+                "source": "https://commons.wikimedia.org/wiki/File:Patrulla_cdmx.jpg"
+              }
+            }
+          ]
         },
         {
           "title": "Asesinan a Balazos a un Hombre y a un Menor de 10 años en Azcapotzalco",
@@ -11298,7 +11333,7 @@
     },
     {
       "name": "Iztapalapa",
-      "count": 241,
+      "count": 242,
       "articles": [
         {
           "title": "Feria del Empleo en Iztapalapa ofrece mil vacantes con empresas como Bimbo, Sears y Chedraui; fecha y horario",
@@ -11516,6 +11551,39 @@
           }
         },
         {
+          "title": "Vinculan a Proceso al 'Choppersito', Presunto Generador de Violencia en Iztapalapa",
+          "description": "De acuerdo con N+, el titular publicado es: «Vinculan a Proceso al 'Choppersito', Presunto Generador de Violencia en Iztapalapa». La información publicada por N+ aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPUkJpQlpSSHZiUnRzaDhyNndxRjBDMlY5NEIzWmZETGRQWTRZTzhHcFlzanFwMThuV1hySC12aS1yZ3Roa0JTcUhoV21NeFBPTDRQN21qOHFiX1R2LWkzeGZRelZfSF9WcEFWaFF6bkxXV3QzU2NvZjlCUnpvejJIVmV0NjF1bG9PODBBbVJGRHdSQmJOQ201V20xcXFCbmtzU2s2LTRPYUtsdHh3ZzZiSUdjeTFJanhIaW1hRlV6VnZJS3o3Q3NxTzgxcw?oc=5",
+          "source": "N+",
+          "date": "2026-11-13",
+          "published_at": "2026-11-14T05:55:00Z",
+          "category": "Seguridad",
+          "borough": "Iztapalapa",
+          "location": "Iztapalapa (mencionada en el titular)",
+          "local_url": "/noticias/?id=0f498ad4661b07e779c6&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con N+, el titular publicado es: «Vinculan a Proceso al 'Choppersito', Presunto Generador de Violencia en Iztapalapa». La información publicada por N+ aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "archivo_seguridad_008",
+            "kind": "representativa",
+            "url": "/assets/fotos/archivo_seguridad_008.jpg",
+            "category": "Seguridad",
+            "borough": "",
+            "topic": "Claudia Sheinbaum entrega patrullas Iztapalapa 03",
+            "keywords": [
+              "Seguridad"
+            ],
+            "author": "Gobierno de la Ciudad de México",
+            "license": "CC BY 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Claudia_Sheinbaum_entrega_patrullas_Iztapalapa_03.jpg"
+          }
+        },
+        {
           "title": "Asesinan a hombre en calles de Iztapalapa",
           "description": "De acuerdo con El Universal, el titular publicado es: «Asesinan a hombre en calles de Iztapalapa». La información publicada por El Universal aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
           "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxORTZhaExkRm9Md1lUNjZmSlk2ZXZJMkkzU1JlMlRvZXlaNXJXTVhLWndlN0pzY2RaSG9hWnp1eVFOaHpIRG50a3NwV3ZQVzdlRkt5ZmhJUkN2dU13Uk01OXczV2xSMllJcmo2WDhrZExNd0t6RVV2eWlFRTY4dnBnbmVfMWNmV3FWbV9lcnhuT3ZudmdpZU50Wm5ySlE1SmFBQXY2aDdlbkJwQUJLR2ttRFo2UXFtUmZJeW5rTXVB0gHSAUFVX3lxTE8wUWxDTEszTFYwYWJOOVBjV3A3VTFwM3lQQTZrd2MtV1FxYmZiYnl2QW1xNjJtdng5UXhYTklCcVpkNVRMcmJQcFRnQ2pPQWZyb1JvLTlBVHFjTnlYYWlWMU1mLWNiYWJxeGhuN1pjRHFyNUxINEhHbWJPeWI2NU53eF9VMTctTGZtN20xOXpjTUowUEVLbHdfZHJkVzl5Sm1CbzZjbG8tdmVITU9wWm05NEgwNHowZHhRUEJtU1R4dG5VQzY0eHFnek9CRlFPdjE4UQ?oc=5",
@@ -11631,20 +11699,55 @@
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           },
           "photo": {
-            "id": "archivo_seguridad_008",
+            "id": "archivo_seguridad_011",
             "kind": "representativa",
-            "url": "/assets/fotos/archivo_seguridad_008.jpg",
+            "url": "/assets/fotos/archivo_seguridad_011.jpg",
             "category": "Seguridad",
             "borough": "",
-            "topic": "Claudia Sheinbaum entrega patrullas Iztapalapa 03",
+            "topic": "Claudia Sheinbaum entrega patrullas Iztapalapa 02",
             "keywords": [
               "Seguridad"
             ],
             "author": "Gobierno de la Ciudad de México",
             "license": "CC BY 4.0",
             "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Claudia_Sheinbaum_entrega_patrullas_Iztapalapa_03.jpg"
-          }
+            "source": "https://commons.wikimedia.org/wiki/File:Claudia_Sheinbaum_entrega_patrullas_Iztapalapa_02.jpg"
+          },
+          "alternate_versions": [
+            {
+              "title": "Vinculan a proceso a Ismael “N” por extorsionar a comerciante en Iztapalapa",
+              "description": "De acuerdo con Sociedad Noticias, el titular publicado es: «Vinculan a proceso a Ismael “N” por extorsionar a comerciante en Iztapalapa». La información publicada por Sociedad Noticias aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+              "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPQjFLOXE1WF9iUHVHU2JsQ1JhbndLeFN4enB4YnJsZVlFcmRmcXJubVpCYlFGNDRoWEdJb05WSmo4RldIMnhHRTljcUVHQnN0WDlzWnVxMHpPMjAtbmotYjNQMlBNWTRkNmxzS2Q2MHJQWWNBWDl4bEZKY0piTWd3c28wUWdqLUpTeG4weG1BcWt5dXZsRjZoczE1OVZVNHV1QUxwWFRJUHZhbWlyTldNSExEdTdvdw?oc=5",
+              "source": "Sociedad Noticias",
+              "date": "2026-11-13",
+              "published_at": "2026-11-13T23:30:00Z",
+              "category": "Seguridad",
+              "borough": "Iztapalapa",
+              "location": "Iztapalapa (mencionada en el titular)",
+              "local_url": "/noticias/?id=e2986519419026dd861e&mes=2026-11",
+              "brief": {
+                "lead": "De acuerdo con Sociedad Noticias, el titular publicado es: «Vinculan a proceso a Ismael “N” por extorsionar a comerciante en Iztapalapa». La información publicada por Sociedad Noticias aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+                "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+                "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+              },
+              "photo": {
+                "id": "archivo_seguridad_008",
+                "kind": "representativa",
+                "url": "/assets/fotos/archivo_seguridad_008.jpg",
+                "category": "Seguridad",
+                "borough": "",
+                "topic": "Claudia Sheinbaum entrega patrullas Iztapalapa 03",
+                "keywords": [
+                  "Seguridad"
+                ],
+                "author": "Gobierno de la Ciudad de México",
+                "license": "CC BY 4.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+                "source": "https://commons.wikimedia.org/wiki/File:Claudia_Sheinbaum_entrega_patrullas_Iztapalapa_03.jpg"
+              }
+            }
+          ]
         },
         {
           "title": "¿Sin planes para el puente? Iztapalapa te espera con sabores del mundo, música y más",
@@ -12835,39 +12938,6 @@
             "license": "CC BY-SA 3.0",
             "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
             "source": "https://commons.wikimedia.org/wiki/File:Metro_Iztapalapa_02.jpg"
-          }
-        },
-        {
-          "title": "Llegaron al altar, pero no a rezar; sujetos roban Virgen de Guadalupe en Iztapalapa | VIDEO",
-          "description": "De acuerdo con Excélsior, el titular publicado es: «Llegaron al altar, pero no a rezar; sujetos roban Virgen de Guadalupe en Iztapalapa | VIDEO». La información publicada por Excélsior aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQOVI0dUJTekdvYzJnc3RVR2xWeWR4aF82RXhKbmloa3FlSmU3eDFzbVIwQ0lsSXNxRmFQVkVCcGd0SUF3ZFM4aDlFeHpJTmsyLXhjdkxJdWl0Yk1iY3dzWVlOOUVaQlRuOG5uQ0RnUnpvSF8wd2tHb0VndUJxQ1ZuS2ktb3NuVXUtYTYyblQ4bi1pdDhZbVFsUjJJV1pGYXhYZVZ5V3ZCTU1NMlc3dmRaYkp3c05rM25n0gG-AUFVX3lxTFBWWERTZ1kwVENTX2FOTkR0TEZrLUdBMTJodGR6UmtWcHlMaGJvMDF2bUd0TEYtOTRlTGJEbGdSU2FvRk9Scm5ITDRpR3hFOFhWNnQyWThfOHl0di1vZlFxenFMc2xJTVRSdC0zUjdxWGUyVXBZdVIzS2lDamVOaDM1VEJFWF96RGY3ODZfc1pLbF9fMlBDRXhpSmZDMVBVSXA5ZnZ5b1M2N2kyUjJyOHR6RDM2N0QyenE4Q0RGd0E?oc=5",
-          "source": "Excélsior",
-          "date": "2026-11-09",
-          "published_at": "2026-11-09T20:13:25Z",
-          "category": "Seguridad",
-          "borough": "Iztapalapa",
-          "location": "Iztapalapa (mencionada en el titular)",
-          "local_url": "/noticias/?id=79123043593841b70c2d&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con Excélsior, el titular publicado es: «Llegaron al altar, pero no a rezar; sujetos roban Virgen de Guadalupe en Iztapalapa | VIDEO». La información publicada por Excélsior aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
-            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "archivo_seguridad_008",
-            "kind": "representativa",
-            "url": "/assets/fotos/archivo_seguridad_008.jpg",
-            "category": "Seguridad",
-            "borough": "",
-            "topic": "Claudia Sheinbaum entrega patrullas Iztapalapa 03",
-            "keywords": [
-              "Seguridad"
-            ],
-            "author": "Gobierno de la Ciudad de México",
-            "license": "CC BY 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Claudia_Sheinbaum_entrega_patrullas_Iztapalapa_03.jpg"
           }
         }
       ]
@@ -17592,122 +17662,6 @@
       "count": 51,
       "articles": [
         {
-          "title": "Mueren dos motociclistas tras chocar contra una camioneta en Venustiano Carranza",
-          "description": "De acuerdo con El Sol de México, el titular publicado es: «Mueren dos motociclistas tras chocar contra una camioneta en Venustiano Carranza». De acuerdo con El Sol de México, se informa de un hecho vial relacionado con una motocicleta en Venustiano Carranza. El propio titular señala más de un fallecimiento, sin que esta ficha agregue cifras ni identidades. Se requiere consultar la nota original para conocer el punto exacto, las circunstancias y los reportes oficiales, sin atribuir responsabilidades sin pruebas.",
-          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNYlEtZER2b0lMSXRrLTNzYTdweEk1ZTRSdm5xX2dtWFFIU04tUWRya0VtNWd0UUJiVndhM2V3UzJlYjJ3Z192Yks0b0ZNSnBvbXJiZmlUeGw5V2FKczRETC11VWtQSk5Oc1FHdFVDUTZFMExlZUhFQVdlN1ZtSElsMjNKVEtQZGt2S2Rvd2J2WUFtMkdmZUNUZENQbVpQWWxockk2MmRNTFZJMmF2elYzc05NNHpSN3RKYXdPMkhGblVYV2t1NEs4?oc=5",
-          "source": "El Sol de México",
-          "date": "2026-11-14",
-          "published_at": "2026-11-14T07:32:35Z",
-          "category": "Movilidad",
-          "borough": "Venustiano Carranza",
-          "location": "Venustiano Carranza (mencionada en el titular)",
-          "local_url": "/noticias/?id=48ad03698ec605252a33&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con El Sol de México, el titular publicado es: «Mueren dos motociclistas tras chocar contra una camioneta en Venustiano Carranza». De acuerdo con El Sol de México, se informa de un hecho vial relacionado con una motocicleta en Venustiano Carranza. El propio titular señala más de un fallecimiento, sin que esta ficha agregue cifras ni identidades. Se requiere consultar la nota original para conocer el punto exacto, las circunstancias y los reportes oficiales, sin atribuir responsabilidades sin pruebas.",
-            "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
-            "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "contexto_motocicleta_zocalo_brigada_2017",
-            "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Ayuda_tras_el_Terremoto_de_Puebla_de_2017_-_Ciudad_de_M%C3%A9xico_-_3.jpg/960px-Ayuda_tras_el_Terremoto_de_Puebla_de_2017_-_Ciudad_de_M%C3%A9xico_-_3.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
-            "category": "CDMX",
-            "borough": "",
-            "topic": "Motocicleta de apoyo de una brigada voluntaria en el Zócalo de la Ciudad de México tras el sismo de 2017 (imagen representativa; no corresponde a una ",
-            "keywords": [
-              "motocicleta",
-              "moto",
-              "Zócalo",
-              "brigada voluntaria",
-              "sismo 2017",
-              "Ciudad de México"
-            ],
-            "author": "ProtoplasmaKid",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-            "source": "https://commons.wikimedia.org/wiki/File:Ayuda_tras_el_Terremoto_de_Puebla_de_2017_-_Ciudad_de_M%C3%A9xico_-_3.jpg"
-          },
-          "alternate_versions": [
-            {
-              "title": "Mueren dos motociclistas tras chocar contra una camioneta en Venustiano Carranza",
-              "description": "De acuerdo con La Prensa, el titular publicado es: «Mueren dos motociclistas tras chocar contra una camioneta en Venustiano Carranza». De acuerdo con La Prensa, se informa de un hecho vial relacionado con una motocicleta en Venustiano Carranza. El propio titular señala más de un fallecimiento, sin que esta ficha agregue cifras ni identidades. Se requiere consultar la nota original para conocer el punto exacto, las circunstancias y los reportes oficiales, sin atribuir responsabilidades sin pruebas.",
-              "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNYlEtZER2b0lMSXRrLTNzYTdweEk1ZTRSdm5xX2dtWFFIU04tUWRya0VtNWd0UUJiVndhM2V3UzJlYjJ3Z192Yks0b0ZNSnBvbXJiZmlUeGw5V2FKczRETC11VWtQSk5Oc1FHdFVDUTZFMExlZUhFQVdlN1ZtSElsMjNKVEtQZGt2S2Rvd2J2WUFtMkdmZUNUZENQbVpQWWxockk2MmRNTFZJMmF2elYzc05NNHpSN3RKYXdPMkhGblVYV2t1NEs4?oc=5",
-              "source": "La Prensa",
-              "date": "2026-11-13",
-              "published_at": "2026-11-13T20:05:22Z",
-              "category": "Movilidad",
-              "borough": "Venustiano Carranza",
-              "location": "Venustiano Carranza (mencionada en el titular)",
-              "local_url": "/noticias/?id=48ad03698ec605252a33&mes=2026-11",
-              "brief": {
-                "lead": "De acuerdo con La Prensa, el titular publicado es: «Mueren dos motociclistas tras chocar contra una camioneta en Venustiano Carranza». De acuerdo con La Prensa, se informa de un hecho vial relacionado con una motocicleta en Venustiano Carranza. El propio titular señala más de un fallecimiento, sin que esta ficha agregue cifras ni identidades. Se requiere consultar la nota original para conocer el punto exacto, las circunstancias y los reportes oficiales, sin atribuir responsabilidades sin pruebas.",
-                "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
-                "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-              },
-              "photo": {
-                "id": "contexto_motocicleta_zocalo_brigada_2017",
-                "kind": "representativa",
-                "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Ayuda_tras_el_Terremoto_de_Puebla_de_2017_-_Ciudad_de_M%C3%A9xico_-_3.jpg/960px-Ayuda_tras_el_Terremoto_de_Puebla_de_2017_-_Ciudad_de_M%C3%A9xico_-_3.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
-                "category": "CDMX",
-                "borough": "",
-                "topic": "Motocicleta de apoyo de una brigada voluntaria en el Zócalo de la Ciudad de México tras el sismo de 2017 (imagen representativa; no corresponde a una ",
-                "keywords": [
-                  "motocicleta",
-                  "moto",
-                  "Zócalo",
-                  "brigada voluntaria",
-                  "sismo 2017",
-                  "Ciudad de México"
-                ],
-                "author": "ProtoplasmaKid",
-                "license": "CC BY-SA 4.0",
-                "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-                "source": "https://commons.wikimedia.org/wiki/File:Ayuda_tras_el_Terremoto_de_Puebla_de_2017_-_Ciudad_de_M%C3%A9xico_-_3.jpg"
-              }
-            },
-            {
-              "title": "Mueren dos motociclistas tras chocar contra una camioneta en Venustiano Carranza",
-              "description": "De acuerdo con La Prensa, el titular publicado es: «Mueren dos motociclistas tras chocar contra una camioneta en Venustiano Carranza». De acuerdo con La Prensa, se informa de un hecho vial relacionado con una motocicleta en Venustiano Carranza. El propio titular señala más de un fallecimiento, sin que esta ficha agregue cifras ni identidades. Se requiere consultar la nota original para conocer el punto exacto, las circunstancias y los reportes oficiales, sin atribuir responsabilidades sin pruebas.",
-              "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNYlEtZER2b0lMSXRrLTNzYTdweEk1ZTRSdm5xX2dtWFFIU04tUWRya0VtNWd0UUJiVndhM2V3UzJlYjJ3Z192Yks0b0ZNSnBvbXJiZmlUeGw5V2FKczRETC11VWtQSk5Oc1FHdFVDUTZFMExlZUhFQVdlN1ZtSElsMjNKVEtQZGt2S2Rvd2J2WUFtMkdmZUNUZENQbVpQWWxockk2MmRNTFZJMmF2elYzc05NNHpSN3RKYXdPMkhGblVYV2t1NEs4?oc=5",
-              "source": "La Prensa",
-              "date": "2026-11-13",
-              "published_at": "2026-11-14T02:02:35Z",
-              "category": "Movilidad",
-              "borough": "Venustiano Carranza",
-              "location": "Venustiano Carranza (mencionada en el titular)",
-              "local_url": "/noticias/?id=48ad03698ec605252a33&mes=2026-11",
-              "brief": {
-                "lead": "De acuerdo con La Prensa, el titular publicado es: «Mueren dos motociclistas tras chocar contra una camioneta en Venustiano Carranza». De acuerdo con La Prensa, se informa de un hecho vial relacionado con una motocicleta en Venustiano Carranza. El propio titular señala más de un fallecimiento, sin que esta ficha agregue cifras ni identidades. Se requiere consultar la nota original para conocer el punto exacto, las circunstancias y los reportes oficiales, sin atribuir responsabilidades sin pruebas.",
-                "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
-                "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-              },
-              "photo": {
-                "id": "contexto_motocicleta_zocalo_brigada_2017",
-                "kind": "representativa",
-                "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Ayuda_tras_el_Terremoto_de_Puebla_de_2017_-_Ciudad_de_M%C3%A9xico_-_3.jpg/960px-Ayuda_tras_el_Terremoto_de_Puebla_de_2017_-_Ciudad_de_M%C3%A9xico_-_3.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
-                "category": "CDMX",
-                "borough": "",
-                "topic": "Motocicleta de apoyo de una brigada voluntaria en el Zócalo de la Ciudad de México tras el sismo de 2017 (imagen representativa; no corresponde a una ",
-                "keywords": [
-                  "motocicleta",
-                  "moto",
-                  "Zócalo",
-                  "brigada voluntaria",
-                  "sismo 2017",
-                  "Ciudad de México"
-                ],
-                "author": "ProtoplasmaKid",
-                "license": "CC BY-SA 4.0",
-                "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-                "source": "https://commons.wikimedia.org/wiki/File:Ayuda_tras_el_Terremoto_de_Puebla_de_2017_-_Ciudad_de_M%C3%A9xico_-_3.jpg"
-              }
-            }
-          ]
-        },
-        {
           "title": "Mueren dos motociclistas tras accidente vial en Venustiano Carranza",
           "description": "De acuerdo con Sociedad Noticias, el titular publicado es: «Mueren dos motociclistas tras accidente vial en Venustiano Carranza». De acuerdo con Sociedad Noticias, se informa de un hecho vial relacionado con una motocicleta en Venustiano Carranza. El propio titular señala más de un fallecimiento, sin que esta ficha agregue cifras ni identidades. Se requiere consultar la nota original para conocer el punto exacto, las circunstancias y los reportes oficiales, sin atribuir responsabilidades sin pruebas.",
           "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOZVBoNlhsbWF2c3pfT1BvcFM2N05mT1FnSDZYWGZ2dEV5OC1PWGlWazFiWjZ0STMzUmtMZnFWaVR0QjhVN0dOcnlwQkRIX3BldU1lMmZxd0l5NG5fUFVycHhTeWV2UUlyMW9Wc3RhZU91bzJYNnhIai1Ic0U2RGtyYVNLRFFSalcyN2lwSVBiTEVzN3lGNm1oVXlRSUlyREhNUXhOZF8xMFhnVEJZX1E?oc=5",
@@ -17718,6 +17672,7 @@
           "borough": "Venustiano Carranza",
           "location": "Venustiano Carranza (mencionada en el titular)",
           "local_url": "/noticias/?id=edc8b9a3e45a18bf29ed&mes=2026-11",
+          "source_url": "https://sociedad-noticias.com/2026/11/14/mueren-dos-motociclistas-tras-accidente-vial-en-venustiano-carranza/",
           "brief": {
             "lead": "De acuerdo con Sociedad Noticias, el titular publicado es: «Mueren dos motociclistas tras accidente vial en Venustiano Carranza». De acuerdo con Sociedad Noticias, se informa de un hecho vial relacionado con una motocicleta en Venustiano Carranza. El propio titular señala más de un fallecimiento, sin que esta ficha agregue cifras ni identidades. Se requiere consultar la nota original para conocer el punto exacto, las circunstancias y los reportes oficiales, sin atribuir responsabilidades sin pruebas.",
             "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
@@ -18161,6 +18116,123 @@
             "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
             "source": "https://commons.wikimedia.org/wiki/File:Eje_Central_CDMX.jpg"
           }
+        },
+        {
+          "title": "Mueren dos motociclistas tras chocar contra una camioneta en Venustiano Carranza",
+          "description": "De acuerdo con La Prensa, el titular publicado es: «Mueren dos motociclistas tras chocar contra una camioneta en Venustiano Carranza». De acuerdo con La Prensa, se informa de un hecho vial relacionado con una motocicleta en Venustiano Carranza. El propio titular señala más de un fallecimiento, sin que esta ficha agregue cifras ni identidades. Se requiere consultar la nota original para conocer el punto exacto, las circunstancias y los reportes oficiales, sin atribuir responsabilidades sin pruebas.",
+          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNYlEtZER2b0lMSXRrLTNzYTdweEk1ZTRSdm5xX2dtWFFIU04tUWRya0VtNWd0UUJiVndhM2V3UzJlYjJ3Z192Yks0b0ZNSnBvbXJiZmlUeGw5V2FKczRETC11VWtQSk5Oc1FHdFVDUTZFMExlZUhFQVdlN1ZtSElsMjNKVEtQZGt2S2Rvd2J2WUFtMkdmZUNUZENQbVpQWWxockk2MmRNTFZJMmF2elYzc05NNHpSN3RKYXdPMkhGblVYV2t1NEs4?oc=5",
+          "source": "La Prensa",
+          "date": "2026-11-13",
+          "published_at": null,
+          "category": "Movilidad",
+          "borough": "Venustiano Carranza",
+          "location": "Venustiano Carranza (mencionada en el titular)",
+          "local_url": "/noticias/?id=48ad03698ec605252a33&mes=2026-11",
+          "source_url": "https://oem.com.mx/la-prensa/policiaca/mueren-dos-motociclistas-tras-chocar-contra-una-camioneta-en-venustiano-carranza-33118910",
+          "brief": {
+            "lead": "De acuerdo con La Prensa, el titular publicado es: «Mueren dos motociclistas tras chocar contra una camioneta en Venustiano Carranza». De acuerdo con La Prensa, se informa de un hecho vial relacionado con una motocicleta en Venustiano Carranza. El propio titular señala más de un fallecimiento, sin que esta ficha agregue cifras ni identidades. Se requiere consultar la nota original para conocer el punto exacto, las circunstancias y los reportes oficiales, sin atribuir responsabilidades sin pruebas.",
+            "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
+            "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "contexto_motocicleta_zocalo_brigada_2017",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Ayuda_tras_el_Terremoto_de_Puebla_de_2017_-_Ciudad_de_M%C3%A9xico_-_3.jpg/960px-Ayuda_tras_el_Terremoto_de_Puebla_de_2017_-_Ciudad_de_M%C3%A9xico_-_3.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+            "category": "CDMX",
+            "borough": "",
+            "topic": "Motocicleta de apoyo de una brigada voluntaria en el Zócalo de la Ciudad de México tras el sismo de 2017 (imagen representativa; no corresponde a una ",
+            "keywords": [
+              "motocicleta",
+              "moto",
+              "Zócalo",
+              "brigada voluntaria",
+              "sismo 2017",
+              "Ciudad de México"
+            ],
+            "author": "ProtoplasmaKid",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "source": "https://commons.wikimedia.org/wiki/File:Ayuda_tras_el_Terremoto_de_Puebla_de_2017_-_Ciudad_de_M%C3%A9xico_-_3.jpg"
+          },
+          "alternate_versions": [
+            {
+              "title": "Mueren dos motociclistas tras chocar contra una camioneta en Venustiano Carranza",
+              "description": "De acuerdo con La Prensa, el titular publicado es: «Mueren dos motociclistas tras chocar contra una camioneta en Venustiano Carranza». De acuerdo con La Prensa, se informa de un hecho vial relacionado con una motocicleta en Venustiano Carranza. El propio titular señala más de un fallecimiento, sin que esta ficha agregue cifras ni identidades. Se requiere consultar la nota original para conocer el punto exacto, las circunstancias y los reportes oficiales, sin atribuir responsabilidades sin pruebas.",
+              "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNYlEtZER2b0lMSXRrLTNzYTdweEk1ZTRSdm5xX2dtWFFIU04tUWRya0VtNWd0UUJiVndhM2V3UzJlYjJ3Z192Yks0b0ZNSnBvbXJiZmlUeGw5V2FKczRETC11VWtQSk5Oc1FHdFVDUTZFMExlZUhFQVdlN1ZtSElsMjNKVEtQZGt2S2Rvd2J2WUFtMkdmZUNUZENQbVpQWWxockk2MmRNTFZJMmF2elYzc05NNHpSN3RKYXdPMkhGblVYV2t1NEs4?oc=5",
+              "source": "La Prensa",
+              "date": "2026-11-13",
+              "published_at": "2026-11-13T20:05:22Z",
+              "category": "Movilidad",
+              "borough": "Venustiano Carranza",
+              "location": "Venustiano Carranza (mencionada en el titular)",
+              "local_url": "/noticias/?id=48ad03698ec605252a33&mes=2026-11",
+              "brief": {
+                "lead": "De acuerdo con La Prensa, el titular publicado es: «Mueren dos motociclistas tras chocar contra una camioneta en Venustiano Carranza». De acuerdo con La Prensa, se informa de un hecho vial relacionado con una motocicleta en Venustiano Carranza. El propio titular señala más de un fallecimiento, sin que esta ficha agregue cifras ni identidades. Se requiere consultar la nota original para conocer el punto exacto, las circunstancias y los reportes oficiales, sin atribuir responsabilidades sin pruebas.",
+                "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
+                "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+              },
+              "photo": {
+                "id": "contexto_motocicleta_zocalo_brigada_2017",
+                "kind": "representativa",
+                "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Ayuda_tras_el_Terremoto_de_Puebla_de_2017_-_Ciudad_de_M%C3%A9xico_-_3.jpg/960px-Ayuda_tras_el_Terremoto_de_Puebla_de_2017_-_Ciudad_de_M%C3%A9xico_-_3.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+                "category": "CDMX",
+                "borough": "",
+                "topic": "Motocicleta de apoyo de una brigada voluntaria en el Zócalo de la Ciudad de México tras el sismo de 2017 (imagen representativa; no corresponde a una ",
+                "keywords": [
+                  "motocicleta",
+                  "moto",
+                  "Zócalo",
+                  "brigada voluntaria",
+                  "sismo 2017",
+                  "Ciudad de México"
+                ],
+                "author": "ProtoplasmaKid",
+                "license": "CC BY-SA 4.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+                "source": "https://commons.wikimedia.org/wiki/File:Ayuda_tras_el_Terremoto_de_Puebla_de_2017_-_Ciudad_de_M%C3%A9xico_-_3.jpg"
+              }
+            },
+            {
+              "title": "Mueren dos motociclistas tras chocar contra una camioneta en Venustiano Carranza",
+              "description": "De acuerdo con La Prensa, el titular publicado es: «Mueren dos motociclistas tras chocar contra una camioneta en Venustiano Carranza». De acuerdo con La Prensa, se informa de un hecho vial relacionado con una motocicleta en Venustiano Carranza. El propio titular señala más de un fallecimiento, sin que esta ficha agregue cifras ni identidades. Se requiere consultar la nota original para conocer el punto exacto, las circunstancias y los reportes oficiales, sin atribuir responsabilidades sin pruebas.",
+              "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNYlEtZER2b0lMSXRrLTNzYTdweEk1ZTRSdm5xX2dtWFFIU04tUWRya0VtNWd0UUJiVndhM2V3UzJlYjJ3Z192Yks0b0ZNSnBvbXJiZmlUeGw5V2FKczRETC11VWtQSk5Oc1FHdFVDUTZFMExlZUhFQVdlN1ZtSElsMjNKVEtQZGt2S2Rvd2J2WUFtMkdmZUNUZENQbVpQWWxockk2MmRNTFZJMmF2elYzc05NNHpSN3RKYXdPMkhGblVYV2t1NEs4?oc=5",
+              "source": "La Prensa",
+              "date": "2026-11-13",
+              "published_at": "2026-11-14T02:02:35Z",
+              "category": "Movilidad",
+              "borough": "Venustiano Carranza",
+              "location": "Venustiano Carranza (mencionada en el titular)",
+              "local_url": "/noticias/?id=48ad03698ec605252a33&mes=2026-11",
+              "brief": {
+                "lead": "De acuerdo con La Prensa, el titular publicado es: «Mueren dos motociclistas tras chocar contra una camioneta en Venustiano Carranza». De acuerdo con La Prensa, se informa de un hecho vial relacionado con una motocicleta en Venustiano Carranza. El propio titular señala más de un fallecimiento, sin que esta ficha agregue cifras ni identidades. Se requiere consultar la nota original para conocer el punto exacto, las circunstancias y los reportes oficiales, sin atribuir responsabilidades sin pruebas.",
+                "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
+                "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+              },
+              "photo": {
+                "id": "contexto_motocicleta_zocalo_brigada_2017",
+                "kind": "representativa",
+                "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Ayuda_tras_el_Terremoto_de_Puebla_de_2017_-_Ciudad_de_M%C3%A9xico_-_3.jpg/960px-Ayuda_tras_el_Terremoto_de_Puebla_de_2017_-_Ciudad_de_M%C3%A9xico_-_3.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+                "category": "CDMX",
+                "borough": "",
+                "topic": "Motocicleta de apoyo de una brigada voluntaria en el Zócalo de la Ciudad de México tras el sismo de 2017 (imagen representativa; no corresponde a una ",
+                "keywords": [
+                  "motocicleta",
+                  "moto",
+                  "Zócalo",
+                  "brigada voluntaria",
+                  "sismo 2017",
+                  "Ciudad de México"
+                ],
+                "author": "ProtoplasmaKid",
+                "license": "CC BY-SA 4.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+                "source": "https://commons.wikimedia.org/wiki/File:Ayuda_tras_el_Terremoto_de_Puebla_de_2017_-_Ciudad_de_M%C3%A9xico_-_3.jpg"
+              }
+            }
+          ]
         },
         {
           "title": "Secretaría de Seguridad Ciudadana detiene a tres hombres por presunta privación de la libertad en Venustiano Carranza",
