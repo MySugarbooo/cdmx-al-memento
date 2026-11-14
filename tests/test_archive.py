@@ -1559,5 +1559,83 @@ class CybercrimePhotoTests(unittest.TestCase):
                       article["photo"]["source"])
 
 
+class PhotoLicenseNormalizationTests(unittest.TestCase):
+    LICENSE_URLS = {
+        "CC BY-SA 4.0": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "CC BY-SA 3.0": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "CC BY 4.0": "https://creativecommons.org/licenses/by/4.0/",
+        "CC BY 3.0": "https://creativecommons.org/licenses/by/3.0/",
+        "CC BY 2.0": "https://creativecommons.org/licenses/by/2.0/",
+        "CC BY-SA 2.0": "https://creativecommons.org/licenses/by-sa/2.0/",
+        "CC BY-SA 2.5": "https://creativecommons.org/licenses/by-sa/2.5/",
+        "CC0": "https://creativecommons.org/publicdomain/zero/1.0/",
+    }
+
+    def test_standardize_restores_known_commons_license_links_on_photos_and_versions(self):
+        for index, (license_name, license_url) in enumerate(self.LICENSE_URLS.items()):
+            with self.subTest(license=license_name):
+                article = fake(f"Noticia de prueba {index}", "2026-11-14")
+                photo = {
+                    "id": f"legacy-{index}",
+                    "kind": "representativa",
+                    "url": "/assets/fotos/legacy.jpg",
+                    "author": "Autor de prueba",
+                    "license": license_name,
+                    "source": "https://commons.wikimedia.org/wiki/File:legacy.jpg",
+                }
+                alternate_photo = dict(photo, id=f"legacy-version-{index}")
+                article["photo"] = photo
+                article["alternate_versions"] = [{
+                    "title": article["title"],
+                    "date": "2026-11-13",
+                    "url": article["url"],
+                    "photo": alternate_photo,
+                }]
+
+                normalized = news.standardize(article)
+
+                self.assertEqual(normalized["photo"]["licenseUrl"], license_url)
+                self.assertEqual(
+                    normalized["alternate_versions"][0]["photo"]["licenseUrl"],
+                    license_url,
+                )
+                self.assertNotIn("licenseUrl", photo)
+                self.assertNotIn("licenseUrl", alternate_photo)
+
+    def test_unknown_or_non_commons_license_is_not_guessed(self):
+        article = fake("Noticia con licencia no reconocida", "2026-11-14")
+        article["photo"] = {
+            "id": "unknown-license",
+            "kind": "representativa",
+            "url": "/assets/fotos/unknown.jpg",
+            "author": "Autor de prueba",
+            "license": "Licencia no identificada",
+            "source": "https://example.org/photo",
+        }
+
+        normalized = news.standardize(article)
+
+        self.assertNotIn("licenseUrl", normalized["photo"])
+
+    def test_existing_license_url_is_preserved(self):
+        article = fake("Noticia con licencia ya enlazada", "2026-11-14")
+        article["photo"] = {
+            "id": "existing-license",
+            "kind": "representativa",
+            "url": "/assets/fotos/existing.jpg",
+            "author": "Autor de prueba",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://example.org/licencia-confirmada",
+            "source": "https://commons.wikimedia.org/wiki/File:existing.jpg",
+        }
+
+        normalized = news.standardize(article)
+
+        self.assertEqual(
+            normalized["photo"]["licenseUrl"],
+            "https://example.org/licencia-confirmada",
+        )
+
+
 if __name__ == "__main__":
     unittest.main()
