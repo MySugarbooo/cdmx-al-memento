@@ -500,6 +500,14 @@ class LocalNewsTests(unittest.TestCase):
             "published_at": "2026-11-14T19:32:50Z",
             "category": "Metro",
         })
+        record = standardize({
+            "title": "Metro CDMX abrirá más tarde el lunes 16 de noviembre: conoce los horarios",
+            "url": "https://news.google.com/rss/articles/metro-holiday-record",
+            "source": "Récord",
+            "date": "2026-11-14",
+            "published_at": "2026-11-14T21:39:00Z",
+            "category": "Metro",
+        })
         yahoo = standardize({
             "title": "¡Toma previsiones! Metro CDMX tendrá horario especial este lunes por aniversario de la Revolución Mexicana",
             "url": "https://news.google.com/rss/articles/metro-holiday-yahoo",
@@ -509,12 +517,15 @@ class LocalNewsTests(unittest.TestCase):
             "category": "Metro",
         })
         self.assertIsNotNone(claro)
+        self.assertIsNotNone(record)
         self.assertIsNotNone(yahoo)
+        self.assertNotEqual(archive_record_key(claro), archive_record_key(record))
         self.assertNotEqual(archive_record_key(claro), archive_record_key(yahoo))
-        visible = dedupe_homepage_events([claro, yahoo])
+        self.assertNotEqual(archive_record_key(record), archive_record_key(yahoo))
+        visible = dedupe_homepage_events([record, claro, yahoo])
         self.assertEqual(len(visible), 1)
-        self.assertEqual(visible[0]["source"], "Claro Sports")
-        self.assertEqual(visible[0]["local_url"], claro["local_url"])
+        self.assertEqual(visible[0]["source"], "Récord")
+        self.assertEqual(visible[0]["local_url"], record["local_url"])
 
         different = standardize({
             "title": "Metro reporta retrasos en la Línea 3 este sábado 14 de noviembre",
