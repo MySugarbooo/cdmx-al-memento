@@ -36,6 +36,28 @@ class PhotoRelevanceTests(unittest.TestCase):
         self.assertEqual(category_by_headline(
             "Policía utiliza robot para investigar un robo", "Seguridad"), "Seguridad")
 
+    def test_womens_defensive_driving_workshop_has_verified_mobility_location_and_summary(self):
+        title = "Ofrecen taller gratuito de manejo defensivo y preventivo para mujeres en CDMX"
+        article = news.standardize({
+            "title": title,
+            "url": "https://news.google.com/rss/articles/women-defensive-driving-workshop",
+            "source": "El Sol de México",
+            "date": "2026-11-14",
+            "published_at": "2026-11-14T17:33:57Z",
+            "category": "CDMX",
+        })
+        self.assertEqual(article["category"], "Movilidad")
+        self.assertEqual(article["borough"], "Gustavo A. Madero")
+        self.assertIn("Gustavo A. Madero", article["location"])
+        self.assertIn("27 de noviembre de 2026", article["brief"]["lead"])
+        self.assertIn("hasta un día antes", article["brief"]["lead"])
+        self.assertIn("no se consultó el cuerpo íntegro", article["brief"]["method"])
+        self.assertEqual(
+            article["source_url"],
+            "https://oem.com.mx/elsoldemexico/metropoli/ofrecen-taller-gratuito-de-manejo-defensivo-y-preventivo-para-mujeres-en-cdmx-33130686",
+        )
+        self.assertEqual(article["description"], article["brief"]["lead"])
+
     def test_shared_concert_photo_caption_is_generic_in_all_catalogs(self):
         expected = "Concierto de Kings of Leon en el Palacio de los Deportes, CDMX (octubre de 2009); foto de archivo representativa, no documenta eventos de la noticia."
         relative_paths = (
@@ -2155,7 +2177,7 @@ class PerifericoPhotoRegressionTests(unittest.TestCase):
         )
         periferico = representative_photo(
             "contexto_periferico_sur_2015", "Movilidad",
-            "Periférico Sur desde Glorieta de Vaqueritos, Tlalpan, CDMX (2015); imagen representativa, no documenta el ataque ni el tramo exacto.",
+            "Lateral del Periférico Sur desde la Glorieta de Vaqueritos, Tlalpan, Ciudad de México (22 de septiembre de 2015); fotografía de archivo representativa de una vialidad, no documenta el taller ni a sus participantes.",
             ["Periférico Sur", "tránsito vehicular", "automovilistas", "vialidad", "Ciudad de México", "Tlalpan"],
         )
         periferico.update({
@@ -2195,8 +2217,30 @@ class PerifericoPhotoRegressionTests(unittest.TestCase):
                 self.assertEqual(photo["license"], "CC BY-SA 4.0")
                 self.assertEqual(photo["context"],
                     "Imagen de carácter ilustrativo y referencial; no constituye evidencia gráfica de los hechos descritos.")
+                self.assertEqual(photo["topic"], "Lateral del Periférico Sur desde la Glorieta de Vaqueritos, Tlalpan, Ciudad de México (22 de septiembre de 2015); fotografía de archivo representativa de una vialidad, no documenta el taller ni a sus participantes.")
+                self.assertEqual(photo.get("captured_at"), "2015-09-22")
 
-
+    def test_existing_representative_photo_refreshes_metadata_from_catalog(self):
+        old = representative_photo(
+            "contexto_periferico_sur_2015", "Movilidad",
+            "Texto editorial anterior sobre un ataque.",
+            ["Periférico Sur", "vialidad"],
+        )
+        old["legacy_note"] = "conservar dato adicional"
+        current = representative_photo(
+            "contexto_periferico_sur_2015", "Movilidad",
+            "Lateral del Periférico Sur desde la Glorieta de Vaqueritos, Tlalpan, Ciudad de México (22 de septiembre de 2015); fotografía de archivo representativa de una vialidad, no documenta el taller ni a sus participantes.",
+            ["Periférico Sur", "vialidad", "Tlalpan"],
+        )
+        article = {
+            "title": "Taller de manejo defensivo para mujeres en CDMX",
+            "category": "Movilidad",
+            "photo": old,
+        }
+        with patch.object(photos, "_pool", return_value=[current]):
+            photos.assign_photos([article])
+        self.assertEqual(article["photo"]["topic"], current["topic"])
+        self.assertEqual(article["photo"]["legacy_note"], "conservar dato adicional")
 
     def test_farmacias_del_ahorro_acquisition_rejects_unrelated_carnival_photo(self):
         title = "Farmacias del Ahorro compra Benavides y fortalece su presencia en CDMX y Edomex"
