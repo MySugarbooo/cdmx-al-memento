@@ -159,7 +159,9 @@ on:
 permissions:
   contents: write
 concurrency:
-  group: noticias-cdmx-al-memento
+  # Aísla las pruebas de PR y conserva en cola los eventos de main, incluido el cron.
+  group: noticias-cdmx-al-memento-${{ github.event_name == 'pull_request' && github.head_ref || 'main' }}
+  queue: max
   cancel-in-progress: false
 jobs:
   actualizar-noticias:
