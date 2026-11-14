@@ -76,6 +76,7 @@ LA_PRENSA_MAURICIO_TABE_REPORT_SOURCE_URL = "https://oem.com.mx/la-prensa/metrop
 RADIO_FORMULA_CASA_ECOLOGICA_SOURCE_URL = "https://www.radioformula.com.mx/cdmx/calentadores-solares-y-captacion-de-lluvia-el-plan-de-cdmx-para-ahorrar-en-casa-20261112-0088.html"
 LA_JORNADA_CASA_ECOLOGICA_SOURCE_URL = "https://www.jornada.com.mx/noticia/2026/11/12/capital/lanza-cdmx-programa-de-ecotecnias-para-10-mil-viviendas-en-alvaro-obregon"
 CAPITAL_CDMX_CARE_BUDGET_SOURCE_URL = "https://capital-cdmx.org/presupuesto-cuidados-2027-cdmx-cuanto-dinero-llegara-anexo-31-desglose/"
+EL_SOL_MUJERES_DEFENSIVE_DRIVING_SOURCE_URL = "https://oem.com.mx/elsoldemexico/metropoli/ofrecen-taller-gratuito-de-manejo-defensivo-y-preventivo-para-mujeres-en-cdmx-33130686"
 
 
 def is_radio_formula_casa_ecologica(article):
@@ -575,12 +576,46 @@ def is_la_jornada_aicm_flight_suspension(article):
     )
 
 
+def is_elsol_women_defensive_driving_workshop(article):
+    """Identifica el taller vial gratuito para mujeres anunciado el 14/11/2026."""
+    title = _photo_fold(article.get("title"))
+    source = _photo_fold(article.get("source"))
+    return (
+        source == "el sol de mexico"
+        and str(article.get("date") or "") == "2026-11-14"
+        and "taller gratuito de manejo defensivo y preventivo para mujeres en cdmx" in title
+    )
+
+
 def summarize(article):
     title=str(article.get("title") or "").strip()
     source=str(article.get("source") or "un medio periodístico").strip()
     category=str(article.get("category") or "CDMX")
     theme=TAGS.get(category,TAGS["CDMX"])
     folded_title=_photo_fold(title)
+    if is_elsol_women_defensive_driving_workshop(article):
+        return {
+            "lead": (
+                "El Sol de México informó que el taller gratuito de manejo defensivo y preventivo "
+                "para mujeres se realizará el 27 de noviembre de 2026 en la alcaldía Gustavo A. Madero. "
+                "La publicación señala que las personas interesadas podrán inscribirse hasta un día antes."
+            ),
+            "context": (
+                "La actividad está dirigida a mujeres y ofrece capacitación relacionada con la conducción "
+                "y la prevención vial. El medio presenta el curso como gratuito."
+            ),
+            "pending": (
+                "El fragmento indexado no identifica el recinto exacto, horario, cupo, requisitos ni el "
+                "mecanismo de inscripción. Confirma esos datos en la publicación original o con la "
+                "organización antes de acudir."
+            ),
+            "method": (
+                "Síntesis basada en el titular y el fragmento indexado de El Sol de México, publicado "
+                "el 14 de noviembre de 2026: " + EL_SOL_MUJERES_DEFENSIVE_DRIVING_SOURCE_URL
+                + ". No se consultó el cuerpo íntegro del artículo; los datos se atribuyen al medio "
+                "y no constituyen verificación independiente."
+            ),
+        }
     if is_la_jornada_aicm_flight_suspension(article):
         return {
             "lead": (
@@ -2841,6 +2876,18 @@ def assign_photos(items):
             continue
 
         existing = article.get("photo")
+        # El catálogo es la fuente de verdad de la atribución y el contexto.
+        # Si una ficha existente conserva el mismo ID, actualizar sus metadatos
+        # evita que una corrección editorial quede obsoleta en news.json/hemeroteca.
+        if (isinstance(existing, dict) and existing.get("kind") == "representativa"
+                and existing.get("id")):
+            catalog_match = next(
+                (photo for photo in pool if photo.get("id") == existing.get("id")),
+                None,
+            )
+            if catalog_match:
+                existing = {**existing, **catalog_match}
+                article["photo"] = existing
         existing_score = (
             _photo_score(article, existing) if has_complete_credit(existing) else -10000
         )
