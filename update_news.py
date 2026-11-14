@@ -35,6 +35,7 @@ REPORTS = ROOT / "reports.json"
 MX = ZoneInfo("America/Mexico_City")
 SITE = "https://cdmx-al-memento.pages.dev"
 LA_PRENSA_VC_MOTORCYCLE_CRASH_SOURCE_URL = "https://oem.com.mx/la-prensa/policiaca/mueren-dos-motociclistas-tras-chocar-contra-una-camioneta-en-venustiano-carranza-33118910"
+AHORA_NOTICIAS_TLALPAN_PERRITA_SOURCE_URL = "https://ahoranoticias.com.mx/nacional/rescatan-a-perrita-por-presunto-maltrato-animal-en-tlalpan/"
 MAIL = "sanchezaxochitl@gmail.com"
 RETENTION_DAYS = 365
 
@@ -591,6 +592,15 @@ def is_vc_two_motorcyclists_crash(article):
     )
 
 
+def is_tlalpan_perrita_rescue(article):
+    """Reconoce la nota sindicada del rescate de una perrita en Tlalpan (13-11-2026)."""
+    title = fold(article.get("title", ""))
+    return (
+        str(article.get("date") or "") == "2026-11-13"
+        and bool(re.search(r"\brescatan a perrita por presunto maltrato animal en tlalpan\b", title))
+    )
+
+
 def standardize(article):
     """Relee noticias antiguas sin inventar la hora que no venía en el RSS."""
     if not isinstance(article, dict):
@@ -676,6 +686,11 @@ def standardize(article):
         # la nota original de La Prensa; conservar el ID RSS y corregir atribución.
         result["source"] = "La Prensa"
         result["source_url"] = LA_PRENSA_VC_MOTORCYCLE_CRASH_SOURCE_URL
+    elif is_tlalpan_perrita_rescue(result) and source.casefold() == "howl.link":
+        # El RSS muestra Howl.Link, pero el destino y la firma identifican a Ahora Noticias.
+        result["source"] = "Ahora Noticias"
+        result["title"] = normalize_title(result["title"], "Ahora Noticias")
+        result["source_url"] = AHORA_NOTICIAS_TLALPAN_PERRITA_SOURCE_URL
     elif is_infobae_maria_leon_concert(result):
         result["source_url"] = INFOBAE_MARIA_LEON_CONCERT_SOURCE_URL
     elif is_infobae_ballet_zapatilla(result):
@@ -1114,6 +1129,8 @@ def editorial_event_key(article):
     title = fold(article.get("title", ""))
     if is_vc_two_motorcyclists_crash(article):
         return ("venustiano-carranza-two-motorcyclists", article.get("date"))
+    if is_tlalpan_perrita_rescue(article):
+        return ("tlalpan-perrita-rescue-2026-11-13", article.get("date"))
     if (re.search(r"\bcoyoacan\b", title)
             and re.search(r"\bsaldo blanco\b", title)
             and re.search(r"\bdia de muertos\b", title)):

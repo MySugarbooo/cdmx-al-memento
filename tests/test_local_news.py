@@ -392,6 +392,58 @@ class LocalNewsTests(unittest.TestCase):
         self.assertEqual(visible[0]["source"], "La Prensa")
         self.assertEqual(visible[0]["local_url"], la_prensa["local_url"])
 
+
+    def test_ahora_noticias_tlalpan_perrita_rescue_corrects_source_and_preserves_article_key(self):
+        article = {
+            "title": "Rescatan a perrita por presunto maltrato animal en Tlalpan - Ahora Noticias",
+            "url": "https://news.google.com/rss/articles/CBMiO0FVX3lxTE83LU0ycVNDdWx4c21jdE9Yd09VU3J4bnFOb3NibWFNOTZ3VVluN2FZbE5EaUVmMVVZZFZR?oc=5",
+            "source": "Howl.Link",
+            "date": "2026-11-13",
+            "published_at": "2026-11-13T22:51:52Z",
+            "category": "Seguridad",
+        }
+        result = standardize(article)
+        self.assertIsNotNone(result)
+        self.assertEqual(result["source"], "Ahora Noticias")
+        self.assertEqual(result["title"], "Rescatan a perrita por presunto maltrato animal en Tlalpan")
+        self.assertEqual(result["source_url"], "https://ahoranoticias.com.mx/nacional/rescatan-a-perrita-por-presunto-maltrato-animal-en-tlalpan/")
+        self.assertEqual(result["local_url"], "/noticias/?id=b06fd20ab5be9a500323&mes=2026-11")
+        self.assertEqual(result["url"], article["url"])
+        self.assertTrue(is_sensitive_media(result))
+        self.assertIn("Ahora Noticias", result["brief"]["lead"])
+        assign_photos([result])
+        self.assertNotIn("photo", result)
+        page = render(result, article_id(result))
+        self.assertIn('href="https://ahoranoticias.com.mx/nacional/rescatan-a-perrita-por-presunto-maltrato-animal-en-tlalpan/"', page)
+        self.assertIn("Fuente: Ahora Noticias", page)
+        self.assertNotIn("Fuente: Howl.Link", page)
+        self.assertIn("Sin fotografía verificada del hecho", page)
+
+    def test_same_tlalpan_perrita_rescue_is_grouped_in_feed_but_both_sources_remain_in_archive(self):
+        ahora_noticias = standardize({
+            "title": "Rescatan a perrita por presunto maltrato animal en Tlalpan - Ahora Noticias",
+            "url": "https://news.google.com/rss/articles/CBMiO0FVX3lxTE83LU0ycVNDdWx4c21jdE9Yd09VU3J4bnFOb3NibWFNOTZ3VVluN2FZbE5EaUVmMVVZZFZR?oc=5",
+            "source": "Howl.Link",
+            "date": "2026-11-13",
+            "published_at": "2026-11-13T22:51:52Z",
+            "category": "Seguridad",
+        })
+        ahora_tabasco = standardize({
+            "title": "Rescatan a perrita por presunto maltrato animal en Tlalpan",
+            "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQWnROOWFRQXVfLVczeGoyNURMSFpjT2RNRk84RmEzTlVMSWQxY2ktRTVLOE10TGhndXB6Z0tvZ3YxeVRFblNYLTVkOGJueFFXSmlTeTh5MWJUUVV3V09ITEJ1SWRSUnFDTjZjd2VWeHFXZzMyVlhfWUw2SzZRbk9pRmJhNnQ0UlFYbHJiXw?oc=5",
+            "source": "Ahora Tabasco Noticias",
+            "date": "2026-11-13",
+            "published_at": "2026-11-13T21:52:41Z",
+            "category": "Seguridad",
+        })
+        self.assertIsNotNone(ahora_noticias)
+        self.assertIsNotNone(ahora_tabasco)
+        self.assertNotEqual(archive_record_key(ahora_noticias), archive_record_key(ahora_tabasco))
+        visible = dedupe_homepage_events([ahora_noticias, ahora_tabasco])
+        self.assertEqual(len(visible), 1)
+        self.assertEqual(visible[0]["source"], "Ahora Noticias")
+        self.assertEqual(visible[0]["local_url"], ahora_noticias["local_url"])
+
     def test_distinct_real_photos_for_sixty_news(self):
         groups=["CDMX","Metro","Seguridad","Movilidad","Cultura","Gobierno"]
         items=[self.make(i,groups[i%len(groups)]) for i in range(60)]
