@@ -1,95 +1,363 @@
 {
   "month": "2026-11",
-  "updated": "2026-11-14 03:20 UTC",
+  "updated": "2026-11-14 04:18 UTC",
   "articles": [
     {
-      "title": "Participa Patty Chio en Primera Asamblea de Seguridad Publica Municipal en CDMX",
-      "description": "De acuerdo con Hoy Tamaulipas, el titular publicado es: «Participa Patty Chio en Primera Asamblea de Seguridad Publica Municipal en CDMX». La información publicada por Hoy Tamaulipas aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOajRfaHhHbDJvRE1pNFhqd3RNYlFmRElvXzFjemthMXlydXROUGdVNXUtLThpeS1odXpqZVNZVHdhLTN5WGtVYTI2V29kNk1xd2pTRmxBNmh3SF9VV2tPb0R2bWdnOTZFOTB6Z2pSZnBLWF84TGtOZHcxdlJadmtrQV9zSVNRS0p2TC02aHAtNW8zbTUtTVpfZXJleURUcGZiQU9BbGFFTUpkc1M3aU9TVEMtRTRoYTQwOUNZdndEa2FRLXUyV2c?oc=5",
-      "source": "Hoy Tamaulipas",
+      "title": "Feria del Empleo en Iztapalapa ofrece mil vacantes con empresas como Bimbo, Sears y Chedraui; fecha y horario",
+      "description": "De acuerdo con El Sol de México, el titular publicado es: «Feria del Empleo en Iztapalapa ofrece mil vacantes con empresas como Bimbo, Sears y Chedraui; fecha y horario». La información publicada por El Sol de México aborda un asunto que este portal clasifica como Servicios. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPb25ad1lGZGU3bC01aTY5eFc4ZWpQR2dsdDFFRVpkeGVfR0xxeXY1bTlJSHRmeTQ3TFNOYVN5N1llOWh5enRCT2hBelZnaVI4azE3V3ljamV3MDJ0TnlhNlRLX093SlZMcDRZOU5JTHBwcnc0QVJRQXhXdXNrNTRYZFRobGZNb2EyNE1ESjdfWFVTOXpmWTZGeS1WOHRNbmZSZ3pQM0RLaXlmeEFuM0U3VldGV0ZUTEVWYTgycjRLdTM5aDVBSzNlODFZRHAzcjMyaEVROGFPOWZtWk1YSUxpSDhlNGJDZUdPMFBz?oc=5",
+      "source": "El Sol de México",
       "date": "2026-11-13",
-      "published_at": "2026-11-14T02:58:21Z",
-      "category": "Seguridad",
-      "borough": "",
-      "location": "Ciudad de México (sin alcaldía identificada)",
-      "local_url": "/noticias/?id=5a9a1f1ebbab943a2f55&mes=2026-11",
+      "published_at": "2026-11-14T04:07:30Z",
+      "category": "Servicios",
+      "borough": "Iztapalapa",
+      "location": "Iztapalapa (mencionada en el titular)",
+      "local_url": "/noticias/?id=8782dfc11a9012876f92&mes=2026-11",
       "brief": {
-        "lead": "De acuerdo con Hoy Tamaulipas, el titular publicado es: «Participa Patty Chio en Primera Asamblea de Seguridad Publica Municipal en CDMX». La información publicada por Hoy Tamaulipas aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-        "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
-        "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "archivo_seguridad_002",
-        "kind": "representativa",
-        "url": "/assets/fotos/archivo_seguridad_002.jpg",
-        "category": "Seguridad",
-        "borough": "",
-        "topic": "Patrulla vecinal",
-        "keywords": [
-          "Seguridad"
-        ],
-        "author": "Daniel Yonka",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Patrulla_vecinal.jpg"
-      }
-    },
-    {
-      "title": "La millonada para la CDMX que dejarán los conciertos de Karol G en el Estadio GNP Seguros",
-      "description": "De acuerdo con Infobae, el titular publicado es: «La millonada para la CDMX que dejarán los conciertos de Karol G en el Estadio GNP Seguros». El medio Infobae presenta conciertos o actividades musicales anunciadas en Ciudad de México. La programación, disponibilidad y costos pueden cambiar; comprueba los datos del organizador.",
-      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOeHZEcDZmc2pCOHo0MFMtUUxzamFrVnpuYXBvVXR3TU1NSHEtSlZJQ2pTcF9GUWZlYjFJZUZaN21xMTRMcmkwZm1Hb0hBaUhJUkNBc1VzazJkMUVSZEdseURwVk0zTWNpZVIzaldFSFVsWW9EaExXQXBFczdhN1dsR29CTmplek5yWDVuaUxVYTViY085aThxRWlaa2RNR1Q1QXd5Z3k3aHZ5Vk9FOXVLaTh5T0J3T0Y1QlprTUdNczdmeTJfc2lDSzVSLUzSAecBQVVfeXFMTmQwbGtnYURoUU5TMUZNb1cxc1Y2OGNqUFZSdEtwVUJ4dy00X3dFQ0xKN2V0VkhpajBVb05pUjFaT25xcWdKUF9hc2o4ak9RZjd5U21RWXU5X3VCQTB1SVg2Qjc3b1hpa0FNWnV4dUFEV0Y3VWxrUUNVdnNla3A2WnN2RjZOWTJoTkxzQ1liaTZVM012VVJ3eTYxWjhDX3kxbDBRX0JRVzlHOUpKMldHakUwY3hJQmlVTEhVWTdUZDNrR3lVS0tianlZUEVRR2JxNGRjVi00dVlPdjlRMlNidjJvZ3VnOHpz?oc=5",
-      "source": "Infobae",
-      "date": "2026-11-13",
-      "published_at": "2026-11-14T02:45:00Z",
-      "category": "CDMX",
-      "borough": "",
-      "location": "Ciudad de México (sin alcaldía identificada)",
-      "local_url": "/noticias/?id=87c41fdcc1b52db296c9&mes=2026-11",
-      "brief": {
-        "lead": "De acuerdo con Infobae, el titular publicado es: «La millonada para la CDMX que dejarán los conciertos de Karol G en el Estadio GNP Seguros». El medio Infobae presenta conciertos o actividades musicales anunciadas en Ciudad de México. La programación, disponibilidad y costos pueden cambiar; comprueba los datos del organizador.",
+        "lead": "De acuerdo con El Sol de México, el titular publicado es: «Feria del Empleo en Iztapalapa ofrece mil vacantes con empresas como Bimbo, Sears y Chedraui; fecha y horario». La información publicada por El Sol de México aborda un asunto que este portal clasifica como Servicios. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
         "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
         "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "contexto_concierto_palacio_deportes_2009",
+        "id": "contexto_feria_empleo_cdmx_2018",
         "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/PalaciodelosDeportes_Concierto.jpg/960px-PalaciodelosDeportes_Concierto.jpg",
-        "category": "Cultura",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/37a_Feria_del_Empleo_IMG_8796_%2843942141674%29.jpg/960px-37a_Feria_del_Empleo_IMG_8796_%2843942141674%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "category": "Servicios",
         "borough": "",
-        "topic": "Concierto de Kings of Leon en el Palacio de los Deportes, CDMX (octubre de 2009); foto de archivo representativa, no documenta eventos de la noticia.",
+        "topic": "37a Feria del Empleo (2018), Ciudad de México; foto de archivo representativa, no documenta la feria de Iztapalapa de 2026.",
         "keywords": [
-          "concierto",
-          "música en vivo",
-          "Palacio de los Deportes",
+          "feria del empleo",
+          "feria de empleo",
+          "empleo",
+          "vacantes",
+          "reclutamiento",
+          "trabajo",
           "Ciudad de México",
-          "escenario",
-          "público"
+          "Gobierno CDMX"
         ],
-        "author": "ProtoplasmaKid",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-        "source": "https://commons.wikimedia.org/wiki/File:PalaciodelosDeportes_Concierto.jpg"
+        "author": "Gobierno CDMX",
+        "license": "CC0 1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:37a_Feria_del_Empleo_IMG_8796_(43942141674).jpg"
+      },
+      "alternate_versions": [
+        {
+          "title": "Feria del Empleo en Iztapalapa ofrece mil vacantes con empresas como Bimbo, Sears y Chedraui; fecha y horario",
+          "description": "De acuerdo con El Sol de México, el titular publicado es: «Feria del Empleo en Iztapalapa ofrece mil vacantes con empresas como Bimbo, Sears y Chedraui; fecha y horario». La información publicada por El Sol de México aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPb25ad1lGZGU3bC01aTY5eFc4ZWpQR2dsdDFFRVpkeGVfR0xxeXY1bTlJSHRmeTQ3TFNOYVN5N1llOWh5enRCT2hBelZnaVI4azE3V3ljamV3MDJ0TnlhNlRLX093SlZMcDRZOU5JTHBwcnc0QVJRQXhXdXNrNTRYZFRobGZNb2EyNE1ESjdfWFVTOXpmWTZGeS1WOHRNbmZSZ3pQM0RLaXlmeEFuM0U3VldGV0ZUTEVWYTgycjRLdTM5aDVBSzNlODFZRHAzcjMyaEVROGFPOWZtWk1YSUxpSDhlNGJDZUdPMFBz?oc=5",
+          "source": "El Sol de México",
+          "date": "2026-11-13",
+          "published_at": "2026-11-13T22:07:30Z",
+          "category": "CDMX",
+          "borough": "Iztapalapa",
+          "location": "Iztapalapa (mencionada en el titular)",
+          "local_url": "/noticias/?id=8782dfc11a9012876f92&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con El Sol de México, el titular publicado es: «Feria del Empleo en Iztapalapa ofrece mil vacantes con empresas como Bimbo, Sears y Chedraui; fecha y horario». La información publicada por El Sol de México aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_iztapalapa",
+            "kind": "representativa",
+            "url": "/assets/alcaldias/iztapalapa.jpg",
+            "category": "CDMX",
+            "borough": "Iztapalapa",
+            "topic": "Vista de Iztapalapa desde el Cerro de la Estrella",
+            "author": "Secretaría de Cultura Ciudad de México from México",
+            "license": "CC BY 2.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+            "source": "https://commons.wikimedia.org/wiki/File:MX_MM_MUSEO_CERRO_DE_LA_ESTRELLA_%2849522225751%29.jpg"
+          }
+        },
+        {
+          "title": "Feria del Empleo en Iztapalapa ofrece mil vacantes con empresas como Bimbo, Sears y Chedraui; fecha y horario",
+          "description": "De acuerdo con El Sol de México, el titular publicado es: «Feria del Empleo en Iztapalapa ofrece mil vacantes con empresas como Bimbo, Sears y Chedraui; fecha y horario». La información publicada por El Sol de México aborda un asunto que este portal clasifica como Servicios. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPb25ad1lGZGU3bC01aTY5eFc4ZWpQR2dsdDFFRVpkeGVfR0xxeXY1bTlJSHRmeTQ3TFNOYVN5N1llOWh5enRCT2hBelZnaVI4azE3V3ljamV3MDJ0TnlhNlRLX093SlZMcDRZOU5JTHBwcnc0QVJRQXhXdXNrNTRYZFRobGZNb2EyNE1ESjdfWFVTOXpmWTZGeS1WOHRNbmZSZ3pQM0RLaXlmeEFuM0U3VldGV0ZUTEVWYTgycjRLdTM5aDVBSzNlODFZRHAzcjMyaEVROGFPOWZtWk1YSUxpSDhlNGJDZUdPMFBz?oc=5",
+          "source": "El Sol de México",
+          "date": "2026-11-13",
+          "published_at": "2026-11-13T22:07:30Z",
+          "category": "Servicios",
+          "borough": "Iztapalapa",
+          "location": "Iztapalapa (mencionada en el titular)",
+          "local_url": "/noticias/?id=8782dfc11a9012876f92&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con El Sol de México, el titular publicado es: «Feria del Empleo en Iztapalapa ofrece mil vacantes con empresas como Bimbo, Sears y Chedraui; fecha y horario». La información publicada por El Sol de México aborda un asunto que este portal clasifica como Servicios. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "commons_20284563",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Metro_Iztapalapa_02.jpg/960px-Metro_Iztapalapa_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "category": "Alcaldías",
+            "borough": "",
+            "topic": "Metro Iztapalapa 02",
+            "keywords": [
+              "Iztapalapa Ciudad de México"
+            ],
+            "author": "GAED",
+            "license": "CC BY-SA 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Metro_Iztapalapa_02.jpg"
+          }
+        },
+        {
+          "title": "Feria del Empleo en Iztapalapa ofrece mil vacantes con empresas como Bimbo, Sears y Chedraui; fecha y horario",
+          "description": "De acuerdo con El Sol de México, el titular publicado es: «Feria del Empleo en Iztapalapa ofrece mil vacantes con empresas como Bimbo, Sears y Chedraui; fecha y horario». La información publicada por El Sol de México aborda un asunto que este portal clasifica como Servicios. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPb25ad1lGZGU3bC01aTY5eFc4ZWpQR2dsdDFFRVpkeGVfR0xxeXY1bTlJSHRmeTQ3TFNOYVN5N1llOWh5enRCT2hBelZnaVI4azE3V3ljamV3MDJ0TnlhNlRLX093SlZMcDRZOU5JTHBwcnc0QVJRQXhXdXNrNTRYZFRobGZNb2EyNE1ESjdfWFVTOXpmWTZGeS1WOHRNbmZSZ3pQM0RLaXlmeEFuM0U3VldGV0ZUTEVWYTgycjRLdTM5aDVBSzNlODFZRHAzcjMyaEVROGFPOWZtWk1YSUxpSDhlNGJDZUdPMFBz?oc=5",
+          "source": "El Sol de México",
+          "date": "2026-11-13",
+          "published_at": "2026-11-13T22:07:30Z",
+          "category": "Servicios",
+          "borough": "Iztapalapa",
+          "location": "Iztapalapa (mencionada en el titular)",
+          "local_url": "/noticias/?id=8782dfc11a9012876f92&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con El Sol de México, el titular publicado es: «Feria del Empleo en Iztapalapa ofrece mil vacantes con empresas como Bimbo, Sears y Chedraui; fecha y horario». La información publicada por El Sol de México aborda un asunto que este portal clasifica como Servicios. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "contexto_feria_empleo_cdmx_2018",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/37a_Feria_del_Empleo_IMG_8796_%2843942141674%29.jpg/960px-37a_Feria_del_Empleo_IMG_8796_%2843942141674%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "category": "Servicios",
+            "borough": "",
+            "topic": "37a Feria del Empleo (2018), Ciudad de México; foto de archivo representativa, no documenta la feria de Iztapalapa de 2026.",
+            "keywords": [
+              "feria del empleo",
+              "feria de empleo",
+              "empleo",
+              "vacantes",
+              "reclutamiento",
+              "trabajo",
+              "Ciudad de México",
+              "Gobierno CDMX"
+            ],
+            "author": "Gobierno CDMX",
+            "license": "CC0 1.0",
+            "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "source": "https://commons.wikimedia.org/wiki/File:37a_Feria_del_Empleo_IMG_8796_(43942141674).jpg"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Desaparece Blanca Vania Almeida; fue vista por última vez en Cuchilla Agrícola Oriental, alcaldía Iztacalco",
+      "description": "De acuerdo con La Crónica de Hoy, el titular publicado es: «Desaparece Blanca Vania Almeida; fue vista por última vez en Cuchilla Agrícola Oriental, alcaldía Iztacalco». La información publicada por La Crónica de Hoy aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOTU42RDdJNlRVWmJzWnlJbDZ3azN6M0tZTjBBWXpUQlJVMjRxdGNhQUEzRDBuMEFMZksyVFc2aXNpcGZaRHp6MlRIYzJMaC00emtvRUNpcG5DMk5VcHJTVDE0VWtxSUVTamZGZUc1bkRPTWJxUkw0ak1wekhwOXQ2ZEtvYUFQRlVNcmdMb3JxVDRMRUZvVnpwSG5YQWhoX1paMDQwdlIwRGIwX2JDT3FRN1EyTjg2T2pIbTJESXZUUE10VmU2aEE4bVVNUS01MDF3ZXBmQUJLd1p5eHBWdWY2VnVRUFh2eHdOaFE?oc=5",
+      "source": "La Crónica de Hoy",
+      "date": "2026-11-13",
+      "published_at": "2026-11-14T03:53:00Z",
+      "category": "CDMX",
+      "borough": "Iztacalco",
+      "location": "Iztacalco (mencionada en el titular)",
+      "local_url": "/noticias/?id=e5db1c566e538f2b6056&mes=2026-11",
+      "brief": {
+        "lead": "De acuerdo con La Crónica de Hoy, el titular publicado es: «Desaparece Blanca Vania Almeida; fue vista por última vez en Cuchilla Agrícola Oriental, alcaldía Iztacalco». La información publicada por La Crónica de Hoy aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+        "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+        "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "alcaldia_iztacalco",
+        "kind": "representativa",
+        "url": "/assets/alcaldias/iztacalco.jpg",
+        "category": "CDMX",
+        "borough": "Iztacalco",
+        "topic": "Iglesia de San Matías en el antiguo pueblo de Iztacalco",
+        "author": "AlejandroLinaresGarcia",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:SanMatiasChurchIztacalco02.jpg"
       }
     },
     {
-      "title": "Defiende METRÓPOLIS consulta ciudadana del Plan General de Desarrollo de CDMX",
-      "description": "De acuerdo con El Sol de México, el titular publicado es: «Defiende METRÓPOLIS consulta ciudadana del Plan General de Desarrollo de CDMX». La información publicada por El Sol de México aborda un asunto que este portal clasifica como Gobierno. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNZmstVU1HbHZzTF9zeVpUWkhnSnNHRWlYTGNqVjRWUnBOYUpvTng5Zzc0U3k4ZGx2NmdmbWMzb0hObVJLUk4xOEtYZ3JhYWlFWTJMdWV2WUtmQVUyc1FIdFM4bTdEV2IzN3hnbldXZzg3Y01QdVFTQW1UY2M0Q2xnQ2wwRkVseGNUWHlpdW5EblJUWWd2NVRVS05NN3lDNkRVRHpTVGJQRGVNRUZmbXVEZExFMEs5YmJaNUZmMXJvamc0dUE?oc=5",
-      "source": "El Sol de México",
+      "title": "‘Inseguridad, el Pan de Cada Día’:Repartidores Protestan en CDMX",
+      "description": "De acuerdo con N+, el titular publicado es: «‘Inseguridad, el Pan de Cada Día’:Repartidores Protestan en CDMX». La información publicada por N+ aborda un asunto que este portal clasifica como Movilidad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOM25pY3dIbWtpTV93MnpNT3N1a3pDeGNwRnEzNTNLZ1Bfbnk0MnJQOGhNZjVMek9uZV9jZjVObmo1U0hGYUhYRnFOYnpyVU9yendVRU1vQzNXdjJXa2o1QWl1U09KR0NobDlWZXlHYlRxT3V5T0R5TVR3SS1xMlZqbkxCdHFJVlRybElvUVZBZWxZdUZPZmtHT0tPNkNncy04azkyS0pYLWFpdDh4Q1kwdm1n?oc=5",
+      "source": "N+",
       "date": "2026-11-13",
-      "published_at": "2026-11-14T02:44:36Z",
-      "category": "Gobierno",
+      "published_at": "2026-11-14T03:52:54Z",
+      "category": "Movilidad",
       "borough": "",
       "location": "Ciudad de México (sin alcaldía identificada)",
-      "local_url": "/noticias/?id=5542c79bc589298bb025&mes=2026-11",
+      "local_url": "/noticias/?id=3fb6616e55d8947b49d1&mes=2026-11",
       "brief": {
-        "lead": "De acuerdo con El Sol de México, el titular publicado es: «Defiende METRÓPOLIS consulta ciudadana del Plan General de Desarrollo de CDMX». La información publicada por El Sol de México aborda un asunto que este portal clasifica como Gobierno. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-        "context": "Las decisiones administrativas pueden influir en servicios, trámites y derechos; conviene conocer sus condiciones y a quiénes afectan.",
-        "pending": "Es indispensable consultar los acuerdos, comunicados o documentos oficiales antes de dar una medida por vigente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "lead": "De acuerdo con N+, el titular publicado es: «‘Inseguridad, el Pan de Cada Día’:Repartidores Protestan en CDMX». La información publicada por N+ aborda un asunto que este portal clasifica como Movilidad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+        "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
+        "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "contexto_repartidores_motocicleta_cdmx",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Carteros_en_motocicleta_del_Servicio_Postal_Mexicano%2C_2013.jpg/960px-Carteros_en_motocicleta_del_Servicio_Postal_Mexicano%2C_2013.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+        "category": "Movilidad",
+        "borough": "",
+        "topic": "Carteros en motocicleta del Servicio Postal Mexicano, Ciudad de México (2013); imagen representativa de reparto en motocicleta, no del bloqueo actual",
+        "keywords": [
+          "repartidores de aplicaciones",
+          "repartidores",
+          "motocicletas",
+          "motociclistas",
+          "mensajeros",
+          "delivery",
+          "Servicio Postal Mexicano"
+        ],
+        "author": "Palacio Postal",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Carteros_en_motocicleta_del_Servicio_Postal_Mexicano,_2013.jpg"
       }
+    },
+    {
+      "title": "Impulsa alcaldía Iztacalco el comercio local con la Feria de Mujeres Emprendedoras",
+      "description": "De acuerdo con El Sol de México, el titular publicado es: «Impulsa alcaldía Iztacalco el comercio local con la Feria de Mujeres Emprendedoras». La información publicada por El Sol de México aborda un asunto que este portal clasifica como Servicios. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPUW0wMnhGOXBReHYyMmZFTUhsQTdISU0zLVphT0hMYktMRjdyRThOZHppZUNhbVBSUG1JNGJaazU2WE03U0RIZ0M4eDQ2T2V2dVFfNWdxaTllNUR4cWk2MUtzT0NnV3JXekZ5ZXlZalR6RDlWMG5mblo5RFRVX010SEx0VEtKUlBkSWVtRVJIc2VpdW11aEdTVEZtMHg4NldMRE1wc1ptbzZ3T1gtTU5HNWt4M1pzNHR3T3FCQy1aRk9salFmU3NiNm9JeDFGdHc?oc=5",
+      "source": "El Sol de México",
+      "date": "2026-11-13",
+      "published_at": "2026-11-14T03:45:00Z",
+      "category": "Servicios",
+      "borough": "Iztacalco",
+      "location": "Iztacalco (mencionada en el titular)",
+      "local_url": "/noticias/?id=524dc3a3f9b57d7d122e&mes=2026-11",
+      "brief": {
+        "lead": "De acuerdo con El Sol de México, el titular publicado es: «Impulsa alcaldía Iztacalco el comercio local con la Feria de Mujeres Emprendedoras». La información publicada por El Sol de México aborda un asunto que este portal clasifica como Servicios. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+        "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+        "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "contexto_emprendimiento_femenino_2025",
+        "kind": "representativa",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Mujeres_emprendedoras_que_buscan_el_cambio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "category": "Servicios",
+        "borough": "",
+        "topic": "Retrato de una empresaria (29-05-2025); imagen representativa del emprendimiento femenino, no documenta la feria de Iztacalco.",
+        "keywords": [
+          "mujeres emprendedoras",
+          "emprendimiento femenino",
+          "empresaria",
+          "emprendedora",
+          "negocios",
+          "comercio local",
+          "microempresa"
+        ],
+        "author": "Luisargom",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:Mujeres_emprendedoras_que_buscan_el_cambio.jpg"
+      },
+      "alternate_versions": [
+        {
+          "title": "Impulsa alcaldía Iztacalco el comercio local con la Feria de Mujeres Emprendedoras",
+          "description": "De acuerdo con El Sol de México, el titular publicado es: «Impulsa alcaldía Iztacalco el comercio local con la Feria de Mujeres Emprendedoras». La información publicada por El Sol de México aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPUW0wMnhGOXBReHYyMmZFTUhsQTdISU0zLVphT0hMYktMRjdyRThOZHppZUNhbVBSUG1JNGJaazU2WE03U0RIZ0M4eDQ2T2V2dVFfNWdxaTllNUR4cWk2MUtzT0NnV3JXekZ5ZXlZalR6RDlWMG5mblo5RFRVX010SEx0VEtKUlBkSWVtRVJIc2VpdW11aEdTVEZtMHg4NldMRE1wc1ptbzZ3T1gtTU5HNWt4M1pzNHR3T3FCQy1aRk9salFmU3NiNm9JeDFGdHc?oc=5",
+          "source": "El Sol de México",
+          "date": "2026-11-13",
+          "published_at": "2026-11-13T21:53:25Z",
+          "category": "CDMX",
+          "borough": "Iztacalco",
+          "location": "Iztacalco (mencionada en el titular)",
+          "local_url": "/noticias/?id=524dc3a3f9b57d7d122e&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con El Sol de México, el titular publicado es: «Impulsa alcaldía Iztacalco el comercio local con la Feria de Mujeres Emprendedoras». La información publicada por El Sol de México aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_iztacalco",
+            "kind": "representativa",
+            "url": "/assets/alcaldias/iztacalco.jpg",
+            "category": "CDMX",
+            "borough": "Iztacalco",
+            "topic": "Iglesia de San Matías en el antiguo pueblo de Iztacalco",
+            "author": "AlejandroLinaresGarcia",
+            "license": "CC BY-SA 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:SanMatiasChurchIztacalco02.jpg"
+          }
+        },
+        {
+          "title": "Impulsa alcaldía Iztacalco el comercio local con la Feria de Mujeres Emprendedoras",
+          "description": "De acuerdo con El Sol de México, el titular publicado es: «Impulsa alcaldía Iztacalco el comercio local con la Feria de Mujeres Emprendedoras». La información publicada por El Sol de México aborda un asunto que este portal clasifica como Servicios. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPUW0wMnhGOXBReHYyMmZFTUhsQTdISU0zLVphT0hMYktMRjdyRThOZHppZUNhbVBSUG1JNGJaazU2WE03U0RIZ0M4eDQ2T2V2dVFfNWdxaTllNUR4cWk2MUtzT0NnV3JXekZ5ZXlZalR6RDlWMG5mblo5RFRVX010SEx0VEtKUlBkSWVtRVJIc2VpdW11aEdTVEZtMHg4NldMRE1wc1ptbzZ3T1gtTU5HNWt4M1pzNHR3T3FCQy1aRk9salFmU3NiNm9JeDFGdHc?oc=5",
+          "source": "El Sol de México",
+          "date": "2026-11-13",
+          "published_at": "2026-11-13T21:53:25Z",
+          "category": "Servicios",
+          "borough": "Iztacalco",
+          "location": "Iztacalco (mencionada en el titular)",
+          "local_url": "/noticias/?id=524dc3a3f9b57d7d122e&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con El Sol de México, el titular publicado es: «Impulsa alcaldía Iztacalco el comercio local con la Feria de Mujeres Emprendedoras». La información publicada por El Sol de México aborda un asunto que este portal clasifica como Servicios. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "commons_75043274",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/014783-016_POSADA_EN_PICOS_DE_IZTACALCO_DICIEMBRE_18_1974_%2838896553181%29.jpg/960px-014783-016_POSADA_EN_PICOS_DE_IZTACALCO_DICIEMBRE_18_1974_%2838896553181%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "category": "Alcaldías",
+            "borough": "",
+            "topic": "014783-016 POSADA EN PICOS DE IZTACALCO DICIEMBRE 18 1974 (38896553181)",
+            "keywords": [
+              "Iztacalco Ciudad de México"
+            ],
+            "author": "Gobierno CDMX",
+            "license": "CC0",
+            "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+            "source": "https://commons.wikimedia.org/wiki/File:014783-016_POSADA_EN_PICOS_DE_IZTACALCO_DICIEMBRE_18_1974_(38896553181).jpg"
+          }
+        },
+        {
+          "title": "Impulsa alcaldía Iztacalco el comercio local con la Feria de Mujeres Emprendedoras",
+          "description": "De acuerdo con El Sol de México, el titular publicado es: «Impulsa alcaldía Iztacalco el comercio local con la Feria de Mujeres Emprendedoras». La información publicada por El Sol de México aborda un asunto que este portal clasifica como Servicios. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPUW0wMnhGOXBReHYyMmZFTUhsQTdISU0zLVphT0hMYktMRjdyRThOZHppZUNhbVBSUG1JNGJaazU2WE03U0RIZ0M4eDQ2T2V2dVFfNWdxaTllNUR4cWk2MUtzT0NnV3JXekZ5ZXlZalR6RDlWMG5mblo5RFRVX010SEx0VEtKUlBkSWVtRVJIc2VpdW11aEdTVEZtMHg4NldMRE1wc1ptbzZ3T1gtTU5HNWt4M1pzNHR3T3FCQy1aRk9salFmU3NiNm9JeDFGdHc?oc=5",
+          "source": "El Sol de México",
+          "date": "2026-11-13",
+          "published_at": "2026-11-13T21:53:25Z",
+          "category": "Servicios",
+          "borough": "Iztacalco",
+          "location": "Iztacalco (mencionada en el titular)",
+          "local_url": "/noticias/?id=524dc3a3f9b57d7d122e&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con El Sol de México, el titular publicado es: «Impulsa alcaldía Iztacalco el comercio local con la Feria de Mujeres Emprendedoras». La información publicada por El Sol de México aborda un asunto que este portal clasifica como Servicios. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "contexto_emprendimiento_femenino_2025",
+            "kind": "representativa",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Mujeres_emprendedoras_que_buscan_el_cambio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+            "category": "Servicios",
+            "borough": "",
+            "topic": "Retrato de una empresaria (29-05-2025); imagen representativa del emprendimiento femenino, no documenta la feria de Iztacalco.",
+            "keywords": [
+              "mujeres emprendedoras",
+              "emprendimiento femenino",
+              "empresaria",
+              "emprendedora",
+              "negocios",
+              "comercio local",
+              "microempresa"
+            ],
+            "author": "Luisargom",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "source": "https://commons.wikimedia.org/wiki/File:Mujeres_emprendedoras_que_buscan_el_cambio.jpg"
+          }
+        }
+      ]
     },
     {
       "title": "EN VIVO: ¡Toma precauciones! Estas son las 4 marchas que pondrán de cabeza a la CDMX HOY 13 de noviembre",
@@ -97,7 +365,7 @@
       "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNV2xaV1UybDZadmJub1h5LVZyWkNHQXBYTmRuNG9semZUcVMxRWJqWDNqVExmcXBwMmFFVWRyOVZPdzY0Wkd3LUM1aVhtX1dOekVFLTNJWFQyLXFPeHhBa09OazhobVF1M1YzZXNqX1FWLWRiOTg2dUZHaHRfMTkwTzZvZzNrU3BxaTRIOEtuZGpXWGxPc1RnRnBMd2xNWTM1RlVld1Y4WGRVREtjVDFDYmZ5NGRyQTdCcDNCQmlxMjl0RHlsLUJjUU9JemxiVEFmbS1ab29RS0doZVE?oc=5",
       "source": "TV Azteca",
       "date": "2026-11-13",
-      "published_at": "2026-11-14T02:30:43Z",
+      "published_at": "2026-11-14T03:43:04Z",
       "category": "Movilidad",
       "borough": "",
       "location": "Ciudad de México (sin alcaldía identificada)",
@@ -354,6 +622,575 @@
             "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
             "source": "https://commons.wikimedia.org/wiki/File:Ciudad_Universitaria_(Marcha_por_la_paz)_-_panoramio.jpg"
           }
+        },
+        {
+          "title": "EN VIVO: ¡Toma precauciones! Estas son las 4 marchas que pondrán de cabeza a la CDMX HOY 13 de noviembre",
+          "description": "De acuerdo con TV Azteca, el titular publicado es: «EN VIVO: ¡Toma precauciones! Estas son las 4 marchas que pondrán de cabeza a la CDMX HOY 13 de noviembre». Según la información destacada por TV Azteca, manifestaciones o bloqueos forman parte de la jornada de movilidad capitalina. La ficha no demuestra por sí sola que todas las vías mencionadas sigan cerradas al momento de leerla.",
+          "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNV2xaV1UybDZadmJub1h5LVZyWkNHQXBYTmRuNG9semZUcVMxRWJqWDNqVExmcXBwMmFFVWRyOVZPdzY0Wkd3LUM1aVhtX1dOekVFLTNJWFQyLXFPeHhBa09OazhobVF1M1YzZXNqX1FWLWRiOTg2dUZHaHRfMTkwTzZvZzNrU3BxaTRIOEtuZGpXWGxPc1RnRnBMd2xNWTM1RlVld1Y4WGRVREtjVDFDYmZ5NGRyQTdCcDNCQmlxMjl0RHlsLUJjUU9JemxiVEFmbS1ab29RS0doZVE?oc=5",
+          "source": "TV Azteca",
+          "date": "2026-11-13",
+          "published_at": "2026-11-14T02:30:43Z",
+          "category": "Movilidad",
+          "borough": "",
+          "location": "Ciudad de México (sin alcaldía identificada)",
+          "local_url": "/noticias/?id=fffb5990b408d20a3782&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con TV Azteca, el titular publicado es: «EN VIVO: ¡Toma precauciones! Estas son las 4 marchas que pondrán de cabeza a la CDMX HOY 13 de noviembre». Según la información destacada por TV Azteca, manifestaciones o bloqueos forman parte de la jornada de movilidad capitalina. La ficha no demuestra por sí sola que todas las vías mencionadas sigan cerradas al momento de leerla.",
+            "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
+            "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "commons_54378318",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Ciudad_Universitaria_%28Marcha_por_la_paz%29_-_panoramio.jpg/960px-Ciudad_Universitaria_%28Marcha_por_la_paz%29_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "category": "Cultura",
+            "borough": "",
+            "topic": "Ciudad Universitaria (Marcha por la paz) - panoramio",
+            "keywords": [
+              "Ciudad Universitaria UNAM Ciudad de México"
+            ],
+            "author": "Malomalverde",
+            "license": "CC BY-SA 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Ciudad_Universitaria_(Marcha_por_la_paz)_-_panoramio.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Proyectan 643 obras hidráulicas y aumenta 77% la inversión en la Cdmx",
+      "description": "De acuerdo con Sociedad Noticias, el titular publicado es: «Proyectan 643 obras hidráulicas y aumenta 77% la inversión en la Cdmx». La información publicada por Sociedad Noticias aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxORXFYa0dmc09laU5rQ3daejMxR3J1dncta21aNnNmMklGT0o1Tzl0TVdMcjZxeERONlZaM1ROc2R3OFphNmJqUTRrazBVUDk2Sk5OTERETllfWVNkVnFOTTFCeVo0Y2gwQUhrUEpELXZsc0dneEJXbUxXZWRQRUlrTC0ybVVsNUc5WUVIX3lBNWFrZ21tZGtWanBaMzFQWGR6ZzQ3R3FQTllMX2hxYTd3?oc=5",
+      "source": "Sociedad Noticias",
+      "date": "2026-11-13",
+      "published_at": "2026-11-14T03:35:02Z",
+      "category": "CDMX",
+      "borough": "",
+      "location": "Ciudad de México (sin alcaldía identificada)",
+      "local_url": "/noticias/?id=da91f4b7d9f3ddfff5c0&mes=2026-11",
+      "brief": {
+        "lead": "De acuerdo con Sociedad Noticias, el titular publicado es: «Proyectan 643 obras hidráulicas y aumenta 77% la inversión en la Cdmx». La información publicada por Sociedad Noticias aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+        "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+        "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "commons_59935338",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Obras_remodelaci%C3%B3n_Z%C3%B3calo_Ciudad_de_M%C3%A9xico_2017.jpg/960px-Obras_remodelaci%C3%B3n_Z%C3%B3calo_Ciudad_de_M%C3%A9xico_2017.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "category": "CDMX",
+        "borough": "",
+        "topic": "Obras remodelación Zócalo Ciudad de México 2017",
+        "keywords": [
+          "CDMX"
+        ],
+        "author": "Salvador alc",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Obras_remodelaci%C3%B3n_Z%C3%B3calo_Ciudad_de_M%C3%A9xico_2017.jpg"
+      }
+    },
+    {
+      "title": "Garbage llega al Zócalo de CDMX: Shirley Manson agradece al público mexicano",
+      "description": "De acuerdo con El Sol de México, el titular publicado es: «Garbage llega al Zócalo de CDMX: Shirley Manson agradece al público mexicano». La información publicada por El Sol de México aborda un asunto que este portal clasifica como Cultura. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPekxNVUVBWXRhVjZvcXl5Q2tKZERhZ2NoQl9uMG1ERVdnYldMcWZkLVdvNTBXMi00a0pqZUV3SldUSHJMLU1oMk5PZndfY1VuQVVmTlFJdk80N2poaWFqeXJ5ZUFsTHV3SHB1T0xxdV9OOVJsVkFmY29qSFlrMVBsRUhwTzUzR2NQNTA4Z1ZzS2NYek1NNnlfV2xCdUxENGxGYi1jaDBBMVlhcUVNbExyeDVVbE5HcUtJdC1HN3d4alY?oc=5",
+      "source": "El Sol de México",
+      "date": "2026-11-13",
+      "published_at": "2026-11-14T03:28:35Z",
+      "category": "Cultura",
+      "borough": "",
+      "location": "Ciudad de México (sin alcaldía identificada)",
+      "local_url": "/noticias/?id=92bcb673143b54de98d8&mes=2026-11",
+      "brief": {
+        "lead": "De acuerdo con El Sol de México, el titular publicado es: «Garbage llega al Zócalo de CDMX: Shirley Manson agradece al público mexicano». La información publicada por El Sol de México aborda un asunto que este portal clasifica como Cultura. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+        "context": "La actividad cultural abre oportunidades de encuentro, aprendizaje y disfrute para habitantes y visitantes.",
+        "pending": "Los accesos, boletos, sedes, cupos y horarios deben consultarse con la institución organizadora. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "contexto_concierto_palacio_deportes_2009",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/PalaciodelosDeportes_Concierto.jpg/960px-PalaciodelosDeportes_Concierto.jpg",
+        "category": "Cultura",
+        "borough": "",
+        "topic": "Concierto de Kings of Leon en el Palacio de los Deportes, CDMX (octubre de 2009); foto de archivo representativa, no documenta eventos de la noticia.",
+        "keywords": [
+          "concierto",
+          "música en vivo",
+          "Palacio de los Deportes",
+          "Ciudad de México",
+          "escenario",
+          "público"
+        ],
+        "author": "ProtoplasmaKid",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:PalaciodelosDeportes_Concierto.jpg"
+      },
+      "alternate_versions": [
+        {
+          "title": "Garbage llega al Zócalo de CDMX: Shirley Manson agradece al público mexicano",
+          "description": "De acuerdo con El Sol de México, el titular publicado es: «Garbage llega al Zócalo de CDMX: Shirley Manson agradece al público mexicano». La información publicada por El Sol de México aborda un asunto que este portal clasifica como Cultura. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPekxNVUVBWXRhVjZvcXl5Q2tKZERhZ2NoQl9uMG1ERVdnYldMcWZkLVdvNTBXMi00a0pqZUV3SldUSHJMLU1oMk5PZndfY1VuQVVmTlFJdk80N2poaWFqeXJ5ZUFsTHV3SHB1T0xxdV9OOVJsVkFmY29qSFlrMVBsRUhwTzUzR2NQNTA4Z1ZzS2NYek1NNnlfV2xCdUxENGxGYi1jaDBBMVlhcUVNbExyeDVVbE5HcUtJdC1HN3d4alY?oc=5",
+          "source": "El Sol de México",
+          "date": "2026-11-13",
+          "published_at": "2026-11-13T21:45:00Z",
+          "category": "Cultura",
+          "borough": "",
+          "location": "Ciudad de México (sin alcaldía identificada)",
+          "local_url": "/noticias/?id=92bcb673143b54de98d8&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con El Sol de México, el titular publicado es: «Garbage llega al Zócalo de CDMX: Shirley Manson agradece al público mexicano». La información publicada por El Sol de México aborda un asunto que este portal clasifica como Cultura. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "La actividad cultural abre oportunidades de encuentro, aprendizaje y disfrute para habitantes y visitantes.",
+            "pending": "Los accesos, boletos, sedes, cupos y horarios deben consultarse con la institución organizadora. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "commons_98002541",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Sala_de_Tesorer%C3%ADa_en_Palacio_Nacional_-_I.jpg/960px-Sala_de_Tesorer%C3%ADa_en_Palacio_Nacional_-_I.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "category": "Gobierno",
+            "borough": "",
+            "topic": "Sala de Tesorería en Palacio Nacional - I",
+            "keywords": [
+              "Palacio Nacional Ciudad de México"
+            ],
+            "author": "J Mndz",
+            "license": "CC BY-SA 2.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Sala_de_Tesorer%C3%ADa_en_Palacio_Nacional_-_I.jpg"
+          }
+        },
+        {
+          "title": "Garbage llega al Zócalo de CDMX: Shirley Manson agradece al público mexicano",
+          "description": "De acuerdo con El Sol de México, el titular publicado es: «Garbage llega al Zócalo de CDMX: Shirley Manson agradece al público mexicano». La información publicada por El Sol de México aborda un asunto que este portal clasifica como Cultura. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPekxNVUVBWXRhVjZvcXl5Q2tKZERhZ2NoQl9uMG1ERVdnYldMcWZkLVdvNTBXMi00a0pqZUV3SldUSHJMLU1oMk5PZndfY1VuQVVmTlFJdk80N2poaWFqeXJ5ZUFsTHV3SHB1T0xxdV9OOVJsVkFmY29qSFlrMVBsRUhwTzUzR2NQNTA4Z1ZzS2NYek1NNnlfV2xCdUxENGxGYi1jaDBBMVlhcUVNbExyeDVVbE5HcUtJdC1HN3d4alY?oc=5",
+          "source": "El Sol de México",
+          "date": "2026-11-13",
+          "published_at": "2026-11-13T21:45:00Z",
+          "category": "Cultura",
+          "borough": "",
+          "location": "Ciudad de México (sin alcaldía identificada)",
+          "local_url": "/noticias/?id=92bcb673143b54de98d8&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con El Sol de México, el titular publicado es: «Garbage llega al Zócalo de CDMX: Shirley Manson agradece al público mexicano». La información publicada por El Sol de México aborda un asunto que este portal clasifica como Cultura. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "La actividad cultural abre oportunidades de encuentro, aprendizaje y disfrute para habitantes y visitantes.",
+            "pending": "Los accesos, boletos, sedes, cupos y horarios deben consultarse con la institución organizadora. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "contexto_concierto_palacio_deportes_2009",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/PalaciodelosDeportes_Concierto.jpg/960px-PalaciodelosDeportes_Concierto.jpg",
+            "category": "Cultura",
+            "borough": "",
+            "topic": "Concierto de Kings of Leon en el Palacio de los Deportes, CDMX (octubre de 2009); foto de archivo representativa, no documenta eventos de la noticia.",
+            "keywords": [
+              "concierto",
+              "música en vivo",
+              "Palacio de los Deportes",
+              "Ciudad de México",
+              "escenario",
+              "público"
+            ],
+            "author": "ProtoplasmaKid",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "source": "https://commons.wikimedia.org/wiki/File:PalaciodelosDeportes_Concierto.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Mercados de CDMX recibirán un millón de pesos para mejorar sus instalaciones",
+      "description": "De acuerdo con El Sol de México, el titular publicado es: «Mercados de CDMX recibirán un millón de pesos para mejorar sus instalaciones». La información publicada por El Sol de México aborda un asunto que este portal clasifica como Gobierno. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNRkdzZXZTODA2NjVfbkNtVVRzal9qcHBKREVBTzhtOFZhUlZmRlVTdW5ocHVIM29KenBpVHUtYnEtaXBfaEdVQkpsSWE3Z1NDLTlmRm1sSTNqSU13QmwwWThHSlZMa3dXbl95bUZHTTNURGdKYUZDTHA2X0NkeXE1OWJhbldJbGFBRFcwaWhGUFZCbXh3aEQwZVFVMXhxd2xYTUotWHNUb2R2T2NCd0M4TUVQZXprRTRCZ3ZMUDZ0eVpKQQ?oc=5",
+      "source": "El Sol de México",
+      "date": "2026-11-13",
+      "published_at": "2026-11-14T03:28:35Z",
+      "category": "Gobierno",
+      "borough": "",
+      "location": "Ciudad de México (sin alcaldía identificada)",
+      "local_url": "/noticias/?id=01408e5242f80204bdea&mes=2026-11",
+      "brief": {
+        "lead": "De acuerdo con El Sol de México, el titular publicado es: «Mercados de CDMX recibirán un millón de pesos para mejorar sus instalaciones». La información publicada por El Sol de México aborda un asunto que este portal clasifica como Gobierno. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+        "context": "Las decisiones administrativas pueden influir en servicios, trámites y derechos; conviene conocer sus condiciones y a quiénes afectan.",
+        "pending": "Es indispensable consultar los acuerdos, comunicados o documentos oficiales antes de dar una medida por vigente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "commons_152145024",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Inversion_mercados_p%C3%BAblicos.jpg/960px-Inversion_mercados_p%C3%BAblicos.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "category": "Servicios",
+        "borough": "",
+        "topic": "Inversion mercados públicos",
+        "keywords": [
+          "Mercados públicos Ciudad de México"
+        ],
+        "author": "Gobierno de la Ciudad de México",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Inversion_mercados_p%C3%BAblicos.jpg"
+      },
+      "alternate_versions": [
+        {
+          "title": "Mercados de CDMX recibirán un millón de pesos para mejorar sus instalaciones",
+          "description": "De acuerdo con El Sol de México, el titular publicado es: «Mercados de CDMX recibirán un millón de pesos para mejorar sus instalaciones». La información publicada por El Sol de México aborda un asunto que este portal clasifica como Gobierno. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNRkdzZXZTODA2NjVfbkNtVVRzal9qcHBKREVBTzhtOFZhUlZmRlVTdW5ocHVIM29KenBpVHUtYnEtaXBfaEdVQkpsSWE3Z1NDLTlmRm1sSTNqSU13QmwwWThHSlZMa3dXbl95bUZHTTNURGdKYUZDTHA2X0NkeXE1OWJhbldJbGFBRFcwaWhGUFZCbXh3aEQwZVFVMXhxd2xYTUotWHNUb2R2T2NCd0M4TUVQZXprRTRCZ3ZMUDZ0eVpKQQ?oc=5",
+          "source": "El Sol de México",
+          "date": "2026-11-13",
+          "published_at": "2026-11-13T21:40:15Z",
+          "category": "Gobierno",
+          "borough": "",
+          "location": "Ciudad de México (sin alcaldía identificada)",
+          "local_url": "/noticias/?id=01408e5242f80204bdea&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con El Sol de México, el titular publicado es: «Mercados de CDMX recibirán un millón de pesos para mejorar sus instalaciones». La información publicada por El Sol de México aborda un asunto que este portal clasifica como Gobierno. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Las decisiones administrativas pueden influir en servicios, trámites y derechos; conviene conocer sus condiciones y a quiénes afectan.",
+            "pending": "Es indispensable consultar los acuerdos, comunicados o documentos oficiales antes de dar una medida por vigente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "commons_89299418",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Medidas_de_sanidad_en_los_mercados_de_la_Ciudad_de_M%C3%A9xico_durante_la_epidemia_de_COVID-19._1.jpg/960px-Medidas_de_sanidad_en_los_mercados_de_la_Ciudad_de_M%C3%A9xico_durante_la_epidemia_de_COVID-19._1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "category": "Servicios",
+            "borough": "",
+            "topic": "Medidas de sanidad en los mercados de la Ciudad de México durante la epidemia de COVID-19. 1",
+            "keywords": [
+              "Mercados públicos Ciudad de México"
+            ],
+            "author": "EneasMx",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Medidas_de_sanidad_en_los_mercados_de_la_Ciudad_de_M%C3%A9xico_durante_la_epidemia_de_COVID-19._1.jpg"
+          }
+        },
+        {
+          "title": "Mercados de CDMX recibirán un millón de pesos para mejorar sus instalaciones",
+          "description": "De acuerdo con El Sol de México, el titular publicado es: «Mercados de CDMX recibirán un millón de pesos para mejorar sus instalaciones». La información publicada por El Sol de México aborda un asunto que este portal clasifica como Gobierno. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNRkdzZXZTODA2NjVfbkNtVVRzal9qcHBKREVBTzhtOFZhUlZmRlVTdW5ocHVIM29KenBpVHUtYnEtaXBfaEdVQkpsSWE3Z1NDLTlmRm1sSTNqSU13QmwwWThHSlZMa3dXbl95bUZHTTNURGdKYUZDTHA2X0NkeXE1OWJhbldJbGFBRFcwaWhGUFZCbXh3aEQwZVFVMXhxd2xYTUotWHNUb2R2T2NCd0M4TUVQZXprRTRCZ3ZMUDZ0eVpKQQ?oc=5",
+          "source": "El Sol de México",
+          "date": "2026-11-13",
+          "published_at": "2026-11-13T21:40:15Z",
+          "category": "Gobierno",
+          "borough": "",
+          "location": "Ciudad de México (sin alcaldía identificada)",
+          "local_url": "/noticias/?id=01408e5242f80204bdea&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con El Sol de México, el titular publicado es: «Mercados de CDMX recibirán un millón de pesos para mejorar sus instalaciones». La información publicada por El Sol de México aborda un asunto que este portal clasifica como Gobierno. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Las decisiones administrativas pueden influir en servicios, trámites y derechos; conviene conocer sus condiciones y a quiénes afectan.",
+            "pending": "Es indispensable consultar los acuerdos, comunicados o documentos oficiales antes de dar una medida por vigente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "commons_75214598",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Entrega_del_Mercado_P%C3%BAblico_Cerro_del_Jud%C3%ADo_-i---i-_%2826324408589%29.jpg/960px-Entrega_del_Mercado_P%C3%BAblico_Cerro_del_Jud%C3%ADo_-i---i-_%2826324408589%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "category": "Servicios",
+            "borough": "",
+            "topic": "Entrega del Mercado Público Cerro del Judío -i---i- (26324408589)",
+            "keywords": [
+              "Mercados públicos Ciudad de México"
+            ],
+            "author": "Gobierno CDMX",
+            "license": "CC0",
+            "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+            "source": "https://commons.wikimedia.org/wiki/File:Entrega_del_Mercado_P%C3%BAblico_Cerro_del_Jud%C3%ADo_-i---i-_(26324408589).jpg"
+          }
+        },
+        {
+          "title": "Mercados de CDMX recibirán un millón de pesos para mejorar sus instalaciones",
+          "description": "De acuerdo con El Sol de México, el titular publicado es: «Mercados de CDMX recibirán un millón de pesos para mejorar sus instalaciones». La información publicada por El Sol de México aborda un asunto que este portal clasifica como Gobierno. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNRkdzZXZTODA2NjVfbkNtVVRzal9qcHBKREVBTzhtOFZhUlZmRlVTdW5ocHVIM29KenBpVHUtYnEtaXBfaEdVQkpsSWE3Z1NDLTlmRm1sSTNqSU13QmwwWThHSlZMa3dXbl95bUZHTTNURGdKYUZDTHA2X0NkeXE1OWJhbldJbGFBRFcwaWhGUFZCbXh3aEQwZVFVMXhxd2xYTUotWHNUb2R2T2NCd0M4TUVQZXprRTRCZ3ZMUDZ0eVpKQQ?oc=5",
+          "source": "El Sol de México",
+          "date": "2026-11-13",
+          "published_at": "2026-11-13T21:40:15Z",
+          "category": "Gobierno",
+          "borough": "",
+          "location": "Ciudad de México (sin alcaldía identificada)",
+          "local_url": "/noticias/?id=01408e5242f80204bdea&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con El Sol de México, el titular publicado es: «Mercados de CDMX recibirán un millón de pesos para mejorar sus instalaciones». La información publicada por El Sol de México aborda un asunto que este portal clasifica como Gobierno. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Las decisiones administrativas pueden influir en servicios, trámites y derechos; conviene conocer sus condiciones y a quiénes afectan.",
+            "pending": "Es indispensable consultar los acuerdos, comunicados o documentos oficiales antes de dar una medida por vigente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "contexto_tienda_abarrotes_coyoacan_2018",
+            "kind": "representativa",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/d/de/Tienda_de_abarrotes_en_el_mercado_de_Coyoac%C3%A1n.jpg",
+            "category": "CDMX",
+            "borough": "",
+            "topic": "Tienda de abarrotes en el mercado de Coyoacán, CDMX (2018); imagen representativa, no es una sucursal de Tiendas Neto.",
+            "keywords": [
+              "tienda de abarrotes",
+              "comercio minorista",
+              "tiendas",
+              "Coyoacán",
+              "mercado de Coyoacán",
+              "Ciudad de México"
+            ],
+            "author": "Valeria Delgado",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "source": "https://commons.wikimedia.org/wiki/File:Tienda_de_abarrotes_en_el_mercado_de_Coyoac%C3%A1n.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Hay 17 empresas de publicidad sin licencia en CDMX: Metrópolis",
+      "description": "De acuerdo con El Universal, el titular publicado es: «Hay 17 empresas de publicidad sin licencia en CDMX: Metrópolis». La información publicada por El Universal aborda un asunto que este portal clasifica como Gobierno. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQM0RyejBPNnV4NHpaZElWRVg2WUVxRGd0b0ZPWVNlS3oxQjNhaTMtWllxbnhFLVRLcTFmMDJVMkdFQjFBNGw1aWdPMzRtbXI3MkNLNjM1amJnNUJoNUFZOWs5cW5BdlJ2UXZyMHRwbXpzTzNIbGNudkRTR05tUERNU0VyVFpCQ2hqUllScllsdmZwSjg3NEc5eDlwVXJEZlJNSkVBUUZWeEg0X3J1YUthSThqWUNnXzRfV0xrRFV3c3FhR3oya29IQTVsV2JUcURlcDFhclJuRGU4aTdHTzJndG5KdzZoRGxHR3k1VHlnMzNHMWxKRzRBc3RIMNIBjwJBVV95cUxQSnk4TXVyLTJSNUd4Z0djTHp6QlZlT2RrVFo0NlVDMXphekRnTzZfTU5oVXlRbEF6ZE1qbWg1aXA2RE40Y0o4bnhIbWFKRU9uSmV2a3F0VzNHTmYtczc3Vkt1QkJTbHV4NnItcGU4WDlOU3VBeTNNUEYwU0dBUDJiQnhCWVhYNTFjWnVaWlBCRXBoYUZMNlNjVFNUQjdYdld4NVczeEw4QU9mTGJSQXVPZ1ZyNjdsbFdVdGZwSVFqcDRLd2t6Z2VBcm00Z3dqZzEtNGV1VnIwOUU2bFo0ZXFtSS13dHZRQjNyNGVYc09MdXVfclNIVlNHVmdsYS15OXJzUjNWWXlPVDZXclBxYkxZ?oc=5",
+      "source": "El Universal",
+      "date": "2026-11-13",
+      "published_at": "2026-11-14T03:27:33Z",
+      "category": "Gobierno",
+      "borough": "",
+      "location": "Ciudad de México (sin alcaldía identificada)",
+      "local_url": "/noticias/?id=0c90003647d1bfefa916&mes=2026-11",
+      "brief": {
+        "lead": "De acuerdo con El Universal, el titular publicado es: «Hay 17 empresas de publicidad sin licencia en CDMX: Metrópolis». La información publicada por El Universal aborda un asunto que este portal clasifica como Gobierno. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+        "context": "Las decisiones administrativas pueden influir en servicios, trámites y derechos; conviene conocer sus condiciones y a quiénes afectan.",
+        "pending": "Es indispensable consultar los acuerdos, comunicados o documentos oficiales antes de dar una medida por vigente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "contexto_semovi_oficinas_roma_2022",
+        "kind": "representativa",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Oficinas_de_la_Secretar%C3%ADa_de_Movilidad_de_la_Ciudad_de_M%C3%A9xico.jpg/1280px-Oficinas_de_la_Secretar%C3%ADa_de_Movilidad_de_la_Ciudad_de_M%C3%A9xico.jpg",
+        "category": "Gobierno",
+        "borough": "",
+        "topic": "Fachada de oficinas de SEMOVI en colonia Roma, CDMX (2022); imagen representativa, no documenta la suspensión de trámites.",
+        "keywords": [
+          "SEMOVI",
+          "Secretaría de Movilidad",
+          "licencias",
+          "licencia de conducir",
+          "trámites",
+          "control vehicular",
+          "oficinas",
+          "colonia Roma"
+        ],
+        "author": "ProtoplasmaKid",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:Oficinas_de_la_Secretar%C3%ADa_de_Movilidad_de_la_Ciudad_de_M%C3%A9xico.jpg"
+      }
+    },
+    {
+      "title": "AICM prevé reanudación gradual de vuelos a EU tras afectaciones a más de 6 mil pasajeros",
+      "description": "De acuerdo con La Jornada, el titular publicado es: «AICM prevé reanudación gradual de vuelos a EU tras afectaciones a más de 6 mil pasajeros». La información publicada por La Jornada aborda un asunto que este portal clasifica como Movilidad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNSXhLejVBaE9GLUJSRXVucGkxTWFHenlfblpoRDlwRF9pWnUzVEt6T2sxUVpnZV9GZ0U5TjJ4VkRERFItSmtoV3VkYU45MzdKZ1BwdDZZNEx3TTdpN0NnU3d1c3dlc2tJcGVGRnNwYV9RWG83eUVzQW5yeE5iVmdmZVVPOVpIR3V3aE1ybGlBb082cFlYYmRJUEM4YkZIRVdyLVMzOEdJNWRMX3BMVjZBSmtUSjZIMjFKTlNxb0t6RThaTEF5TTNpR2VVNGRwRDBEVFRJNUZzV0hkZkFqTVRVaGJBUzJONlVkLXdfTHNB?oc=5",
+      "source": "La Jornada",
+      "date": "2026-11-13",
+      "published_at": "2026-11-14T03:27:10Z",
+      "category": "Movilidad",
+      "borough": "",
+      "location": "Ubicación no indicada por el titular",
+      "local_url": "/noticias/?id=9d50db4739705df961a7&mes=2026-11",
+      "brief": {
+        "lead": "De acuerdo con La Jornada, el titular publicado es: «AICM prevé reanudación gradual de vuelos a EU tras afectaciones a más de 6 mil pasajeros». La información publicada por La Jornada aborda un asunto que este portal clasifica como Movilidad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+        "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
+        "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "contexto_aicm_aviones_pista_2026",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Aviones_en_la_pista_del_AICM.jpg/960px-Aviones_en_la_pista_del_AICM.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+        "category": "Movilidad",
+        "borough": "",
+        "topic": "Aviones en la pista del AICM (fotografía del 28 de septiembre de 2026); imagen representativa, no documenta las afectaciones de vuelos mencionadas.",
+        "keywords": [
+          "Aeropuerto Internacional de la Ciudad de México",
+          "Aeropuerto Internacional Benito Juárez",
+          "AICM",
+          "aviones",
+          "pista de aterrizaje",
+          "vuelos",
+          "aeropuerto"
+        ],
+        "author": "Oficial K",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:Aviones_en_la_pista_del_AICM.jpg"
+      },
+      "alternate_versions": [
+        {
+          "title": "AICM reporta afectaciones de vuelos hacia y desde Estados Unidos por restricción a operaciones aéreas",
+          "description": "De acuerdo con La Jornada, el titular publicado es: «AICM reporta afectaciones de vuelos hacia y desde Estados Unidos por restricción a operaciones aéreas». La información publicada por La Jornada aborda un asunto que este portal clasifica como Movilidad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNSXhLejVBaE9GLUJSRXVucGkxTWFHenlfblpoRDlwRF9pWnUzVEt6T2sxUVpnZV9GZ0U5TjJ4VkRERFItSmtoV3VkYU45MzdKZ1BwdDZZNEx3TTdpN0NnU3d1c3dlc2tJcGVGRnNwYV9RWG83eUVzQW5yeE5iVmdmZVVPOVpIR3V3aE1ybGlBb082cFlYYmRJUEM4YkZIRVdyLVMzOEdJNWRMX3BMVjZBSmtUSjZIMjFKTlNxb0t6RThaTEF5TTNpR2VVNGRwRDBEVFRJNUZzV0hkZkFqTVRVaGJBUzJONlVkLXdfTHNB?oc=5",
+          "source": "La Jornada",
+          "date": "2026-11-13",
+          "published_at": "2026-11-13T22:17:00Z",
+          "category": "Movilidad",
+          "borough": "",
+          "location": "Ubicación no indicada por el titular",
+          "local_url": "/noticias/?id=9d50db4739705df961a7&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con La Jornada, el titular publicado es: «AICM reporta afectaciones de vuelos hacia y desde Estados Unidos por restricción a operaciones aéreas». La información publicada por La Jornada aborda un asunto que este portal clasifica como Movilidad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
+            "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          }
+        },
+        {
+          "title": "AICM reporta afectaciones de vuelos hacia y desde Estados Unidos por restricción a operaciones aéreas",
+          "description": "De acuerdo con La Jornada, el titular publicado es: «AICM reporta afectaciones de vuelos hacia y desde Estados Unidos por restricción a operaciones aéreas». La información publicada por La Jornada aborda un asunto que este portal clasifica como Movilidad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNSXhLejVBaE9GLUJSRXVucGkxTWFHenlfblpoRDlwRF9pWnUzVEt6T2sxUVpnZV9GZ0U5TjJ4VkRERFItSmtoV3VkYU45MzdKZ1BwdDZZNEx3TTdpN0NnU3d1c3dlc2tJcGVGRnNwYV9RWG83eUVzQW5yeE5iVmdmZVVPOVpIR3V3aE1ybGlBb082cFlYYmRJUEM4YkZIRVdyLVMzOEdJNWRMX3BMVjZBSmtUSjZIMjFKTlNxb0t6RThaTEF5TTNpR2VVNGRwRDBEVFRJNUZzV0hkZkFqTVRVaGJBUzJONlVkLXdfTHNB?oc=5",
+          "source": "La Jornada",
+          "date": "2026-11-13",
+          "published_at": "2026-11-13T22:17:00Z",
+          "category": "Movilidad",
+          "borough": "",
+          "location": "Ubicación no indicada por el titular",
+          "local_url": "/noticias/?id=9d50db4739705df961a7&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con La Jornada, el titular publicado es: «AICM reporta afectaciones de vuelos hacia y desde Estados Unidos por restricción a operaciones aéreas». La información publicada por La Jornada aborda un asunto que este portal clasifica como Movilidad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
+            "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "contexto_aicm_aviones_pista_2026",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Aviones_en_la_pista_del_AICM.jpg/960px-Aviones_en_la_pista_del_AICM.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+            "category": "Movilidad",
+            "borough": "",
+            "topic": "Aviones en la pista del AICM (fotografía del 28 de septiembre de 2026); imagen representativa, no documenta las afectaciones de vuelos mencionadas.",
+            "keywords": [
+              "Aeropuerto Internacional de la Ciudad de México",
+              "Aeropuerto Internacional Benito Juárez",
+              "AICM",
+              "aviones",
+              "pista de aterrizaje",
+              "vuelos",
+              "aeropuerto"
+            ],
+            "author": "Oficial K",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "source": "https://commons.wikimedia.org/wiki/File:Aviones_en_la_pista_del_AICM.jpg"
+          }
+        },
+        {
+          "title": "AICM confirma afectaciones en 40 vuelos y a 6 mil 197 pasajeros por suspensión de vuelos hacia Estados Unidos",
+          "description": "De acuerdo con La Jornada, el titular publicado es: «AICM confirma afectaciones en 40 vuelos y a 6 mil 197 pasajeros por suspensión de vuelos hacia Estados Unidos». La información publicada por La Jornada aborda un asunto que este portal clasifica como Movilidad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNSXhLejVBaE9GLUJSRXVucGkxTWFHenlfblpoRDlwRF9pWnUzVEt6T2sxUVpnZV9GZ0U5TjJ4VkRERFItSmtoV3VkYU45MzdKZ1BwdDZZNEx3TTdpN0NnU3d1c3dlc2tJcGVGRnNwYV9RWG83eUVzQW5yeE5iVmdmZVVPOVpIR3V3aE1ybGlBb082cFlYYmRJUEM4YkZIRVdyLVMzOEdJNWRMX3BMVjZBSmtUSjZIMjFKTlNxb0t6RThaTEF5TTNpR2VVNGRwRDBEVFRJNUZzV0hkZkFqTVRVaGJBUzJONlVkLXdfTHNB?oc=5",
+          "source": "La Jornada",
+          "date": "2026-11-13",
+          "published_at": "2026-11-13T22:17:00Z",
+          "category": "Movilidad",
+          "borough": "",
+          "location": "Ubicación no indicada por el titular",
+          "local_url": "/noticias/?id=9d50db4739705df961a7&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con La Jornada, el titular publicado es: «AICM confirma afectaciones en 40 vuelos y a 6 mil 197 pasajeros por suspensión de vuelos hacia Estados Unidos». La información publicada por La Jornada aborda un asunto que este portal clasifica como Movilidad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
+            "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "contexto_aicm_aviones_pista_2026",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Aviones_en_la_pista_del_AICM.jpg/960px-Aviones_en_la_pista_del_AICM.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+            "category": "Movilidad",
+            "borough": "",
+            "topic": "Aviones en la pista del AICM (fotografía del 28 de septiembre de 2026); imagen representativa, no documenta las afectaciones de vuelos mencionadas.",
+            "keywords": [
+              "Aeropuerto Internacional de la Ciudad de México",
+              "Aeropuerto Internacional Benito Juárez",
+              "AICM",
+              "aviones",
+              "pista de aterrizaje",
+              "vuelos",
+              "aeropuerto"
+            ],
+            "author": "Oficial K",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "source": "https://commons.wikimedia.org/wiki/File:Aviones_en_la_pista_del_AICM.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "title": "La millonada para la CDMX que dejarán los conciertos de Karol G en el Estadio GNP Seguros",
+      "description": "De acuerdo con Infobae, el titular publicado es: «La millonada para la CDMX que dejarán los conciertos de Karol G en el Estadio GNP Seguros». El medio Infobae presenta conciertos o actividades musicales anunciadas en Ciudad de México. La programación, disponibilidad y costos pueden cambiar; comprueba los datos del organizador.",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOeHZEcDZmc2pCOHo0MFMtUUxzamFrVnpuYXBvVXR3TU1NSHEtSlZJQ2pTcF9GUWZlYjFJZUZaN21xMTRMcmkwZm1Hb0hBaUhJUkNBc1VzazJkMUVSZEdseURwVk0zTWNpZVIzaldFSFVsWW9EaExXQXBFczdhN1dsR29CTmplek5yWDVuaUxVYTViY085aThxRWlaa2RNR1Q1QXd5Z3k3aHZ5Vk9FOXVLaTh5T0J3T0Y1QlprTUdNczdmeTJfc2lDSzVSLUzSAecBQVVfeXFMTmQwbGtnYURoUU5TMUZNb1cxc1Y2OGNqUFZSdEtwVUJ4dy00X3dFQ0xKN2V0VkhpajBVb05pUjFaT25xcWdKUF9hc2o4ak9RZjd5U21RWXU5X3VCQTB1SVg2Qjc3b1hpa0FNWnV4dUFEV0Y3VWxrUUNVdnNla3A2WnN2RjZOWTJoTkxzQ1liaTZVM012VVJ3eTYxWjhDX3kxbDBRX0JRVzlHOUpKMldHakUwY3hJQmlVTEhVWTdUZDNrR3lVS0tianlZUEVRR2JxNGRjVi00dVlPdjlRMlNidjJvZ3VnOHpz?oc=5",
+      "source": "Infobae",
+      "date": "2026-11-13",
+      "published_at": "2026-11-14T02:45:00Z",
+      "category": "CDMX",
+      "borough": "",
+      "location": "Ciudad de México (sin alcaldía identificada)",
+      "local_url": "/noticias/?id=87c41fdcc1b52db296c9&mes=2026-11",
+      "brief": {
+        "lead": "De acuerdo con Infobae, el titular publicado es: «La millonada para la CDMX que dejarán los conciertos de Karol G en el Estadio GNP Seguros». El medio Infobae presenta conciertos o actividades musicales anunciadas en Ciudad de México. La programación, disponibilidad y costos pueden cambiar; comprueba los datos del organizador.",
+        "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+        "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "contexto_concierto_palacio_deportes_2009",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/PalaciodelosDeportes_Concierto.jpg/960px-PalaciodelosDeportes_Concierto.jpg",
+        "category": "Cultura",
+        "borough": "",
+        "topic": "Concierto de Kings of Leon en el Palacio de los Deportes, CDMX (octubre de 2009); foto de archivo representativa, no documenta eventos de la noticia.",
+        "keywords": [
+          "concierto",
+          "música en vivo",
+          "Palacio de los Deportes",
+          "Ciudad de México",
+          "escenario",
+          "público"
+        ],
+        "author": "ProtoplasmaKid",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:PalaciodelosDeportes_Concierto.jpg"
+      }
+    },
+    {
+      "title": "Defiende METRÓPOLIS consulta ciudadana del Plan General de Desarrollo de CDMX",
+      "description": "De acuerdo con El Sol de México, el titular publicado es: «Defiende METRÓPOLIS consulta ciudadana del Plan General de Desarrollo de CDMX». La información publicada por El Sol de México aborda un asunto que este portal clasifica como Gobierno. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNZmstVU1HbHZzTF9zeVpUWkhnSnNHRWlYTGNqVjRWUnBOYUpvTng5Zzc0U3k4ZGx2NmdmbWMzb0hObVJLUk4xOEtYZ3JhYWlFWTJMdWV2WUtmQVUyc1FIdFM4bTdEV2IzN3hnbldXZzg3Y01QdVFTQW1UY2M0Q2xnQ2wwRkVseGNUWHlpdW5EblJUWWd2NVRVS05NN3lDNkRVRHpTVGJQRGVNRUZmbXVEZExFMEs5YmJaNUZmMXJvamc0dUE?oc=5",
+      "source": "El Sol de México",
+      "date": "2026-11-13",
+      "published_at": "2026-11-14T02:44:54Z",
+      "category": "Gobierno",
+      "borough": "",
+      "location": "Ciudad de México (sin alcaldía identificada)",
+      "local_url": "/noticias/?id=5542c79bc589298bb025&mes=2026-11",
+      "brief": {
+        "lead": "De acuerdo con El Sol de México, el titular publicado es: «Defiende METRÓPOLIS consulta ciudadana del Plan General de Desarrollo de CDMX». La información publicada por El Sol de México aborda un asunto que este portal clasifica como Gobierno. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+        "context": "Las decisiones administrativas pueden influir en servicios, trámites y derechos; conviene conocer sus condiciones y a quiénes afectan.",
+        "pending": "Es indispensable consultar los acuerdos, comunicados o documentos oficiales antes de dar una medida por vigente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "alternate_versions": [
+        {
+          "title": "Defiende METRÓPOLIS consulta ciudadana del Plan General de Desarrollo de CDMX",
+          "description": "De acuerdo con El Sol de México, el titular publicado es: «Defiende METRÓPOLIS consulta ciudadana del Plan General de Desarrollo de CDMX». La información publicada por El Sol de México aborda un asunto que este portal clasifica como Gobierno. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNZmstVU1HbHZzTF9zeVpUWkhnSnNHRWlYTGNqVjRWUnBOYUpvTng5Zzc0U3k4ZGx2NmdmbWMzb0hObVJLUk4xOEtYZ3JhYWlFWTJMdWV2WUtmQVUyc1FIdFM4bTdEV2IzN3hnbldXZzg3Y01QdVFTQW1UY2M0Q2xnQ2wwRkVseGNUWHlpdW5EblJUWWd2NVRVS05NN3lDNkRVRHpTVGJQRGVNRUZmbXVEZExFMEs5YmJaNUZmMXJvamc0dUE?oc=5",
+          "source": "El Sol de México",
+          "date": "2026-11-13",
+          "published_at": "2026-11-14T02:44:36Z",
+          "category": "Gobierno",
+          "borough": "",
+          "location": "Ciudad de México (sin alcaldía identificada)",
+          "local_url": "/noticias/?id=5542c79bc589298bb025&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con El Sol de México, el titular publicado es: «Defiende METRÓPOLIS consulta ciudadana del Plan General de Desarrollo de CDMX». La información publicada por El Sol de México aborda un asunto que este portal clasifica como Gobierno. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Las decisiones administrativas pueden influir en servicios, trámites y derechos; conviene conocer sus condiciones y a quiénes afectan.",
+            "pending": "Es indispensable consultar los acuerdos, comunicados o documentos oficiales antes de dar una medida por vigente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          }
         }
       ]
     },
@@ -486,32 +1323,6 @@
       "borough": "",
       "location": "Ciudad de México (sin alcaldía identificada)",
       "local_url": "/noticias/?id=fbc6726484f783c4aff3&mes=2026-11",
-      "brief": {
-        "lead": "De acuerdo con N+, el titular publicado es: «¿Habrá Telonero en Concierto de Garbage en el Zócalo CDMX? Artista Invitada Para Este Sábado». El medio N+ presenta conciertos o actividades musicales anunciadas en Ciudad de México. La programación, disponibilidad y costos pueden cambiar; comprueba los datos del organizador.",
-        "context": "La actividad cultural abre oportunidades de encuentro, aprendizaje y disfrute para habitantes y visitantes.",
-        "pending": "Los accesos, boletos, sedes, cupos y horarios deben consultarse con la institución organizadora. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "contexto_concierto_palacio_deportes_2009",
-        "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/PalaciodelosDeportes_Concierto.jpg/960px-PalaciodelosDeportes_Concierto.jpg",
-        "category": "Cultura",
-        "borough": "",
-        "topic": "Concierto de Kings of Leon en el Palacio de los Deportes, CDMX (octubre de 2009); foto de archivo representativa, no documenta eventos de la noticia.",
-        "keywords": [
-          "concierto",
-          "música en vivo",
-          "Palacio de los Deportes",
-          "Ciudad de México",
-          "escenario",
-          "público"
-        ],
-        "author": "ProtoplasmaKid",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-        "source": "https://commons.wikimedia.org/wiki/File:PalaciodelosDeportes_Concierto.jpg"
-      },
       "alternate_versions": [
         {
           "title": "¿Habrá Telonero en Concierto de Garbage en el Zócalo CDMX? Artista Invitada Para Este Sábado",
@@ -551,7 +1362,33 @@
             "source": "https://commons.wikimedia.org/wiki/File:PalaciodelosDeportes_Concierto.jpg"
           }
         }
-      ]
+      ],
+      "brief": {
+        "lead": "De acuerdo con N+, el titular publicado es: «¿Habrá Telonero en Concierto de Garbage en el Zócalo CDMX? Artista Invitada Para Este Sábado». El medio N+ presenta conciertos o actividades musicales anunciadas en Ciudad de México. La programación, disponibilidad y costos pueden cambiar; comprueba los datos del organizador.",
+        "context": "La actividad cultural abre oportunidades de encuentro, aprendizaje y disfrute para habitantes y visitantes.",
+        "pending": "Los accesos, boletos, sedes, cupos y horarios deben consultarse con la institución organizadora. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "contexto_concierto_palacio_deportes_2009",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/PalaciodelosDeportes_Concierto.jpg/960px-PalaciodelosDeportes_Concierto.jpg",
+        "category": "Cultura",
+        "borough": "",
+        "topic": "Concierto de Kings of Leon en el Palacio de los Deportes, CDMX (octubre de 2009); foto de archivo representativa, no documenta eventos de la noticia.",
+        "keywords": [
+          "concierto",
+          "música en vivo",
+          "Palacio de los Deportes",
+          "Ciudad de México",
+          "escenario",
+          "público"
+        ],
+        "author": "ProtoplasmaKid",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:PalaciodelosDeportes_Concierto.jpg"
+      }
     },
     {
       "title": "Entrega Brugada recursos al Mercado Bramadero de Iztacalco",
@@ -601,20 +1438,55 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "commons_152145024",
+        "id": "commons_89299420",
         "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Inversion_mercados_p%C3%BAblicos.jpg/960px-Inversion_mercados_p%C3%BAblicos.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Medidas_de_sanidad_en_los_mercados_de_la_Ciudad_de_M%C3%A9xico_durante_la_epidemia_de_COVID-19._2.jpg/960px-Medidas_de_sanidad_en_los_mercados_de_la_Ciudad_de_M%C3%A9xico_durante_la_epidemia_de_COVID-19._2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
         "category": "Servicios",
         "borough": "",
-        "topic": "Inversion mercados públicos",
+        "topic": "Medidas de sanidad en los mercados de la Ciudad de México durante la epidemia de COVID-19. 2",
         "keywords": [
           "Mercados públicos Ciudad de México"
         ],
-        "author": "Gobierno de la Ciudad de México",
-        "license": "CC BY 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Inversion_mercados_p%C3%BAblicos.jpg"
-      }
+        "author": "EneasMx",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Medidas_de_sanidad_en_los_mercados_de_la_Ciudad_de_M%C3%A9xico_durante_la_epidemia_de_COVID-19._2.jpg"
+      },
+      "alternate_versions": [
+        {
+          "title": "Instalarán en los mercados públicos cámaras conectadas al C5-CDMX",
+          "description": "De acuerdo con 88.9 Noticias | Noticias en Vivo | Información Que Sirve, el titular publicado es: «Instalarán en los mercados públicos cámaras conectadas al C5-CDMX». La información publicada por 88.9 Noticias | Noticias en Vivo | Información Que Sirve aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQeTA1X2tfLVVwZHVXSDFObVAya1pWTEJUQVA5LTRscDR3TnZQUkJKUERuc01qMWNTQXlYNnFKbm9tdU04eGxBX3FHQlZud29qR0JsQ1NQYVp0d2ZzaGx6MEkwOUFMRkR0QTVXNzVPb0VCMV9jZWxDbVlsLWx2YkFlUGd3TnhaaXZMVmswY25SRmhGUFloRVdJQk9TUFRFOUE?oc=5",
+          "source": "88.9 Noticias | Noticias en Vivo | Información Que Sirve",
+          "date": "2026-11-13",
+          "published_at": "2026-11-14T01:37:14Z",
+          "category": "Seguridad",
+          "borough": "",
+          "location": "Ciudad de México (sin alcaldía identificada)",
+          "local_url": "/noticias/?id=967213c471c6f86f1d52&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con 88.9 Noticias | Noticias en Vivo | Información Que Sirve, el titular publicado es: «Instalarán en los mercados públicos cámaras conectadas al C5-CDMX». La información publicada por 88.9 Noticias | Noticias en Vivo | Información Que Sirve aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "commons_152145024",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Inversion_mercados_p%C3%BAblicos.jpg/960px-Inversion_mercados_p%C3%BAblicos.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "category": "Servicios",
+            "borough": "",
+            "topic": "Inversion mercados públicos",
+            "keywords": [
+              "Mercados públicos Ciudad de México"
+            ],
+            "author": "Gobierno de la Ciudad de México",
+            "license": "CC BY 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Inversion_mercados_p%C3%BAblicos.jpg"
+          }
+        }
+      ]
     },
     {
       "title": "Aeropuerto de CDMX informa sobre afectaciones de vuelos desde y hacia EEUU",
@@ -2309,209 +3181,6 @@
       }
     },
     {
-      "title": "AICM confirma afectaciones en 40 vuelos y a 6 mil 197 pasajeros por suspensión de vuelos hacia Estados Unidos",
-      "description": "De acuerdo con La Jornada, el titular publicado es: «AICM confirma afectaciones en 40 vuelos y a 6 mil 197 pasajeros por suspensión de vuelos hacia Estados Unidos». La información publicada por La Jornada aborda un asunto que este portal clasifica como Movilidad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-      "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNSXhLejVBaE9GLUJSRXVucGkxTWFHenlfblpoRDlwRF9pWnUzVEt6T2sxUVpnZV9GZ0U5TjJ4VkRERFItSmtoV3VkYU45MzdKZ1BwdDZZNEx3TTdpN0NnU3d1c3dlc2tJcGVGRnNwYV9RWG83eUVzQW5yeE5iVmdmZVVPOVpIR3V3aE1ybGlBb082cFlYYmRJUEM4YkZIRVdyLVMzOEdJNWRMX3BMVjZBSmtUSjZIMjFKTlNxb0t6RThaTEF5TTNpR2VVNGRwRDBEVFRJNUZzV0hkZkFqTVRVaGJBUzJONlVkLXdfTHNB?oc=5",
-      "source": "La Jornada",
-      "date": "2026-11-13",
-      "published_at": "2026-11-13T22:17:00Z",
-      "category": "Movilidad",
-      "borough": "",
-      "location": "Ubicación no indicada por el titular",
-      "local_url": "/noticias/?id=9d50db4739705df961a7&mes=2026-11",
-      "brief": {
-        "lead": "De acuerdo con La Jornada, el titular publicado es: «AICM confirma afectaciones en 40 vuelos y a 6 mil 197 pasajeros por suspensión de vuelos hacia Estados Unidos». La información publicada por La Jornada aborda un asunto que este portal clasifica como Movilidad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-        "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
-        "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "contexto_aicm_aviones_pista_2026",
-        "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Aviones_en_la_pista_del_AICM.jpg/960px-Aviones_en_la_pista_del_AICM.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
-        "category": "Movilidad",
-        "borough": "",
-        "topic": "Aviones en la pista del AICM (fotografía del 28 de septiembre de 2026); imagen representativa, no documenta las afectaciones de vuelos mencionadas.",
-        "keywords": [
-          "Aeropuerto Internacional de la Ciudad de México",
-          "Aeropuerto Internacional Benito Juárez",
-          "AICM",
-          "aviones",
-          "pista de aterrizaje",
-          "vuelos",
-          "aeropuerto"
-        ],
-        "author": "Oficial K",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-        "source": "https://commons.wikimedia.org/wiki/File:Aviones_en_la_pista_del_AICM.jpg"
-      },
-      "alternate_versions": [
-        {
-          "title": "AICM reporta afectaciones de vuelos hacia y desde Estados Unidos por restricción a operaciones aéreas",
-          "description": "De acuerdo con La Jornada, el titular publicado es: «AICM reporta afectaciones de vuelos hacia y desde Estados Unidos por restricción a operaciones aéreas». La información publicada por La Jornada aborda un asunto que este portal clasifica como Movilidad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNSXhLejVBaE9GLUJSRXVucGkxTWFHenlfblpoRDlwRF9pWnUzVEt6T2sxUVpnZV9GZ0U5TjJ4VkRERFItSmtoV3VkYU45MzdKZ1BwdDZZNEx3TTdpN0NnU3d1c3dlc2tJcGVGRnNwYV9RWG83eUVzQW5yeE5iVmdmZVVPOVpIR3V3aE1ybGlBb082cFlYYmRJUEM4YkZIRVdyLVMzOEdJNWRMX3BMVjZBSmtUSjZIMjFKTlNxb0t6RThaTEF5TTNpR2VVNGRwRDBEVFRJNUZzV0hkZkFqTVRVaGJBUzJONlVkLXdfTHNB?oc=5",
-          "source": "La Jornada",
-          "date": "2026-11-13",
-          "published_at": "2026-11-13T22:17:00Z",
-          "category": "Movilidad",
-          "borough": "",
-          "location": "Ubicación no indicada por el titular",
-          "local_url": "/noticias/?id=9d50db4739705df961a7&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con La Jornada, el titular publicado es: «AICM reporta afectaciones de vuelos hacia y desde Estados Unidos por restricción a operaciones aéreas». La información publicada por La Jornada aborda un asunto que este portal clasifica como Movilidad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
-            "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
-        },
-        {
-          "title": "AICM reporta afectaciones de vuelos hacia y desde Estados Unidos por restricción a operaciones aéreas",
-          "description": "De acuerdo con La Jornada, el titular publicado es: «AICM reporta afectaciones de vuelos hacia y desde Estados Unidos por restricción a operaciones aéreas». La información publicada por La Jornada aborda un asunto que este portal clasifica como Movilidad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNSXhLejVBaE9GLUJSRXVucGkxTWFHenlfblpoRDlwRF9pWnUzVEt6T2sxUVpnZV9GZ0U5TjJ4VkRERFItSmtoV3VkYU45MzdKZ1BwdDZZNEx3TTdpN0NnU3d1c3dlc2tJcGVGRnNwYV9RWG83eUVzQW5yeE5iVmdmZVVPOVpIR3V3aE1ybGlBb082cFlYYmRJUEM4YkZIRVdyLVMzOEdJNWRMX3BMVjZBSmtUSjZIMjFKTlNxb0t6RThaTEF5TTNpR2VVNGRwRDBEVFRJNUZzV0hkZkFqTVRVaGJBUzJONlVkLXdfTHNB?oc=5",
-          "source": "La Jornada",
-          "date": "2026-11-13",
-          "published_at": "2026-11-13T22:17:00Z",
-          "category": "Movilidad",
-          "borough": "",
-          "location": "Ubicación no indicada por el titular",
-          "local_url": "/noticias/?id=9d50db4739705df961a7&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con La Jornada, el titular publicado es: «AICM reporta afectaciones de vuelos hacia y desde Estados Unidos por restricción a operaciones aéreas». La información publicada por La Jornada aborda un asunto que este portal clasifica como Movilidad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
-            "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "contexto_aicm_aviones_pista_2026",
-            "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Aviones_en_la_pista_del_AICM.jpg/960px-Aviones_en_la_pista_del_AICM.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
-            "category": "Movilidad",
-            "borough": "",
-            "topic": "Aviones en la pista del AICM (fotografía del 28 de septiembre de 2026); imagen representativa, no documenta las afectaciones de vuelos mencionadas.",
-            "keywords": [
-              "Aeropuerto Internacional de la Ciudad de México",
-              "Aeropuerto Internacional Benito Juárez",
-              "AICM",
-              "aviones",
-              "pista de aterrizaje",
-              "vuelos",
-              "aeropuerto"
-            ],
-            "author": "Oficial K",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-            "source": "https://commons.wikimedia.org/wiki/File:Aviones_en_la_pista_del_AICM.jpg"
-          }
-        }
-      ]
-    },
-    {
-      "title": "Feria del Empleo en Iztapalapa ofrece mil vacantes con empresas como Bimbo, Sears y Chedraui; fecha y horario",
-      "description": "De acuerdo con El Sol de México, el titular publicado es: «Feria del Empleo en Iztapalapa ofrece mil vacantes con empresas como Bimbo, Sears y Chedraui; fecha y horario». La información publicada por El Sol de México aborda un asunto que este portal clasifica como Servicios. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-      "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPb25ad1lGZGU3bC01aTY5eFc4ZWpQR2dsdDFFRVpkeGVfR0xxeXY1bTlJSHRmeTQ3TFNOYVN5N1llOWh5enRCT2hBelZnaVI4azE3V3ljamV3MDJ0TnlhNlRLX093SlZMcDRZOU5JTHBwcnc0QVJRQXhXdXNrNTRYZFRobGZNb2EyNE1ESjdfWFVTOXpmWTZGeS1WOHRNbmZSZ3pQM0RLaXlmeEFuM0U3VldGV0ZUTEVWYTgycjRLdTM5aDVBSzNlODFZRHAzcjMyaEVROGFPOWZtWk1YSUxpSDhlNGJDZUdPMFBz?oc=5",
-      "source": "El Sol de México",
-      "date": "2026-11-13",
-      "published_at": "2026-11-13T22:07:30Z",
-      "category": "Servicios",
-      "borough": "Iztapalapa",
-      "location": "Iztapalapa (mencionada en el titular)",
-      "local_url": "/noticias/?id=8782dfc11a9012876f92&mes=2026-11",
-      "brief": {
-        "lead": "De acuerdo con El Sol de México, el titular publicado es: «Feria del Empleo en Iztapalapa ofrece mil vacantes con empresas como Bimbo, Sears y Chedraui; fecha y horario». La información publicada por El Sol de México aborda un asunto que este portal clasifica como Servicios. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-        "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-        "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "contexto_feria_empleo_cdmx_2018",
-        "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/37a_Feria_del_Empleo_IMG_8796_%2843942141674%29.jpg/960px-37a_Feria_del_Empleo_IMG_8796_%2843942141674%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "category": "Servicios",
-        "borough": "",
-        "topic": "37a Feria del Empleo (2018), Ciudad de México; foto de archivo representativa, no documenta la feria de Iztapalapa de 2026.",
-        "keywords": [
-          "feria del empleo",
-          "feria de empleo",
-          "empleo",
-          "vacantes",
-          "reclutamiento",
-          "trabajo",
-          "Ciudad de México",
-          "Gobierno CDMX"
-        ],
-        "author": "Gobierno CDMX",
-        "license": "CC0 1.0",
-        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
-        "source": "https://commons.wikimedia.org/wiki/File:37a_Feria_del_Empleo_IMG_8796_(43942141674).jpg"
-      },
-      "alternate_versions": [
-        {
-          "title": "Feria del Empleo en Iztapalapa ofrece mil vacantes con empresas como Bimbo, Sears y Chedraui; fecha y horario",
-          "description": "De acuerdo con El Sol de México, el titular publicado es: «Feria del Empleo en Iztapalapa ofrece mil vacantes con empresas como Bimbo, Sears y Chedraui; fecha y horario». La información publicada por El Sol de México aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPb25ad1lGZGU3bC01aTY5eFc4ZWpQR2dsdDFFRVpkeGVfR0xxeXY1bTlJSHRmeTQ3TFNOYVN5N1llOWh5enRCT2hBelZnaVI4azE3V3ljamV3MDJ0TnlhNlRLX093SlZMcDRZOU5JTHBwcnc0QVJRQXhXdXNrNTRYZFRobGZNb2EyNE1ESjdfWFVTOXpmWTZGeS1WOHRNbmZSZ3pQM0RLaXlmeEFuM0U3VldGV0ZUTEVWYTgycjRLdTM5aDVBSzNlODFZRHAzcjMyaEVROGFPOWZtWk1YSUxpSDhlNGJDZUdPMFBz?oc=5",
-          "source": "El Sol de México",
-          "date": "2026-11-13",
-          "published_at": "2026-11-13T22:07:30Z",
-          "category": "CDMX",
-          "borough": "Iztapalapa",
-          "location": "Iztapalapa (mencionada en el titular)",
-          "local_url": "/noticias/?id=8782dfc11a9012876f92&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con El Sol de México, el titular publicado es: «Feria del Empleo en Iztapalapa ofrece mil vacantes con empresas como Bimbo, Sears y Chedraui; fecha y horario». La información publicada por El Sol de México aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "alcaldia_iztapalapa",
-            "kind": "representativa",
-            "url": "/assets/alcaldias/iztapalapa.jpg",
-            "category": "CDMX",
-            "borough": "Iztapalapa",
-            "topic": "Vista de Iztapalapa desde el Cerro de la Estrella",
-            "author": "Secretaría de Cultura Ciudad de México from México",
-            "license": "CC BY 2.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-            "source": "https://commons.wikimedia.org/wiki/File:MX_MM_MUSEO_CERRO_DE_LA_ESTRELLA_%2849522225751%29.jpg"
-          }
-        },
-        {
-          "title": "Feria del Empleo en Iztapalapa ofrece mil vacantes con empresas como Bimbo, Sears y Chedraui; fecha y horario",
-          "description": "De acuerdo con El Sol de México, el titular publicado es: «Feria del Empleo en Iztapalapa ofrece mil vacantes con empresas como Bimbo, Sears y Chedraui; fecha y horario». La información publicada por El Sol de México aborda un asunto que este portal clasifica como Servicios. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPb25ad1lGZGU3bC01aTY5eFc4ZWpQR2dsdDFFRVpkeGVfR0xxeXY1bTlJSHRmeTQ3TFNOYVN5N1llOWh5enRCT2hBelZnaVI4azE3V3ljamV3MDJ0TnlhNlRLX093SlZMcDRZOU5JTHBwcnc0QVJRQXhXdXNrNTRYZFRobGZNb2EyNE1ESjdfWFVTOXpmWTZGeS1WOHRNbmZSZ3pQM0RLaXlmeEFuM0U3VldGV0ZUTEVWYTgycjRLdTM5aDVBSzNlODFZRHAzcjMyaEVROGFPOWZtWk1YSUxpSDhlNGJDZUdPMFBz?oc=5",
-          "source": "El Sol de México",
-          "date": "2026-11-13",
-          "published_at": "2026-11-13T22:07:30Z",
-          "category": "Servicios",
-          "borough": "Iztapalapa",
-          "location": "Iztapalapa (mencionada en el titular)",
-          "local_url": "/noticias/?id=8782dfc11a9012876f92&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con El Sol de México, el titular publicado es: «Feria del Empleo en Iztapalapa ofrece mil vacantes con empresas como Bimbo, Sears y Chedraui; fecha y horario». La información publicada por El Sol de México aborda un asunto que este portal clasifica como Servicios. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "commons_20284563",
-            "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Metro_Iztapalapa_02.jpg/960px-Metro_Iztapalapa_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "category": "Alcaldías",
-            "borough": "",
-            "topic": "Metro Iztapalapa 02",
-            "keywords": [
-              "Iztapalapa Ciudad de México"
-            ],
-            "author": "GAED",
-            "license": "CC BY-SA 3.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Metro_Iztapalapa_02.jpg"
-          }
-        }
-      ]
-    },
-    {
       "title": "Cae taxista que asaltaba pasajeras en Magdalena Contreras",
       "description": "De acuerdo con Reforma, el titular publicado es: «Cae taxista que asaltaba pasajeras en Magdalena Contreras». Una nota de Reforma comunica un caso relacionado con una detención o una presunta conducta delictiva en La Magdalena Contreras. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
       "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNd3YwZVM1eHNTM2NFbjBjMHVqWC1abnRKYXV2Sl9DeE1OU0cyWHRZSGRWcWNTX1ZQMVRma2J3VVdraEtOSElYelF6MWw3Smk2WTdXQ0IzRjFVMzl4RHFQckZEdG9VMWs2RzMwRmJXQU01ejBGOGNEeDJ4YUhac3gya1RWM1BGMkVwc2gyX3VaWE14LWliYmc?oc=5",
@@ -2608,6 +3277,39 @@
           }
         }
       ]
+    },
+    {
+      "title": "Destaca Cuajimalpa primer lugar en eficiencia policial: presenta alcalde avances en seguridad y obra pública",
+      "description": "De acuerdo con El Sol de México, el titular publicado es: «Destaca Cuajimalpa primer lugar en eficiencia policial: presenta alcalde avances en seguridad y obra pública». La información publicada por El Sol de México aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxNbl9RajQxdjR4cGJYMGJQUmphOUdDT0V0eHBBaVE5Nk1lV0tXODEwa0RKYlo1VjdfR21KcHhNMlNtNmdRZTZ1bjFGUUQ1MVBZdlBIMm1abmRlT2JfT05sNU9wMFBCVDJFbzdOeURWSXFDR1ZDVU1NMEl1RHVFOUNxZkxZTE9yMWoyWWZNVWJCdXlnQ09RTzhlcVlEVkhXaVplRE1HUHpTZjdvZThsN1FubHRZMkVuZk9QQXY4RjZhM1AwdTdrZ1htelhrV0RBTE95U1F4UmI3UlBILTZmOFVVY0Q5LVQ0RUtLNkFz?oc=5",
+      "source": "El Sol de México",
+      "date": "2026-11-13",
+      "published_at": "2026-11-13T22:03:11Z",
+      "category": "Seguridad",
+      "borough": "Cuajimalpa de Morelos",
+      "location": "Cuajimalpa de Morelos (mencionada en el titular)",
+      "local_url": "/noticias/?id=492727feeb61b4e4fc77&mes=2026-11",
+      "brief": {
+        "lead": "De acuerdo con El Sol de México, el titular publicado es: «Destaca Cuajimalpa primer lugar en eficiencia policial: presenta alcalde avances en seguridad y obra pública». La información publicada por El Sol de México aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+        "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+        "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "archivo_seguridad_002",
+        "kind": "representativa",
+        "url": "/assets/fotos/archivo_seguridad_002.jpg",
+        "category": "Seguridad",
+        "borough": "",
+        "topic": "Patrulla vecinal",
+        "keywords": [
+          "Seguridad"
+        ],
+        "author": "Daniel Yonka",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Patrulla_vecinal.jpg"
+      }
     },
     {
       "title": "Pokémon Go genera 420,000 dólares en CDMX y muestra que México es un mercado clave para el juego",
@@ -2828,110 +3530,6 @@
       }
     },
     {
-      "title": "Impulsa alcaldía Iztacalco el comercio local con la Feria de Mujeres Emprendedoras",
-      "description": "De acuerdo con El Sol de México, el titular publicado es: «Impulsa alcaldía Iztacalco el comercio local con la Feria de Mujeres Emprendedoras». La información publicada por El Sol de México aborda un asunto que este portal clasifica como Servicios. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPUW0wMnhGOXBReHYyMmZFTUhsQTdISU0zLVphT0hMYktMRjdyRThOZHppZUNhbVBSUG1JNGJaazU2WE03U0RIZ0M4eDQ2T2V2dVFfNWdxaTllNUR4cWk2MUtzT0NnV3JXekZ5ZXlZalR6RDlWMG5mblo5RFRVX010SEx0VEtKUlBkSWVtRVJIc2VpdW11aEdTVEZtMHg4NldMRE1wc1ptbzZ3T1gtTU5HNWt4M1pzNHR3T3FCQy1aRk9salFmU3NiNm9JeDFGdHc?oc=5",
-      "source": "El Sol de México",
-      "date": "2026-11-13",
-      "published_at": "2026-11-13T21:53:25Z",
-      "category": "Servicios",
-      "borough": "Iztacalco",
-      "location": "Iztacalco (mencionada en el titular)",
-      "local_url": "/noticias/?id=524dc3a3f9b57d7d122e&mes=2026-11",
-      "brief": {
-        "lead": "De acuerdo con El Sol de México, el titular publicado es: «Impulsa alcaldía Iztacalco el comercio local con la Feria de Mujeres Emprendedoras». La información publicada por El Sol de México aborda un asunto que este portal clasifica como Servicios. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-        "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-        "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "contexto_emprendimiento_femenino_2025",
-        "kind": "representativa",
-        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Mujeres_emprendedoras_que_buscan_el_cambio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "category": "Servicios",
-        "borough": "",
-        "topic": "Retrato de una empresaria (29-05-2025); imagen representativa del emprendimiento femenino, no documenta la feria de Iztacalco.",
-        "keywords": [
-          "mujeres emprendedoras",
-          "emprendimiento femenino",
-          "empresaria",
-          "emprendedora",
-          "negocios",
-          "comercio local",
-          "microempresa"
-        ],
-        "author": "Luisargom",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-        "source": "https://commons.wikimedia.org/wiki/File:Mujeres_emprendedoras_que_buscan_el_cambio.jpg"
-      },
-      "alternate_versions": [
-        {
-          "title": "Impulsa alcaldía Iztacalco el comercio local con la Feria de Mujeres Emprendedoras",
-          "description": "De acuerdo con El Sol de México, el titular publicado es: «Impulsa alcaldía Iztacalco el comercio local con la Feria de Mujeres Emprendedoras». La información publicada por El Sol de México aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPUW0wMnhGOXBReHYyMmZFTUhsQTdISU0zLVphT0hMYktMRjdyRThOZHppZUNhbVBSUG1JNGJaazU2WE03U0RIZ0M4eDQ2T2V2dVFfNWdxaTllNUR4cWk2MUtzT0NnV3JXekZ5ZXlZalR6RDlWMG5mblo5RFRVX010SEx0VEtKUlBkSWVtRVJIc2VpdW11aEdTVEZtMHg4NldMRE1wc1ptbzZ3T1gtTU5HNWt4M1pzNHR3T3FCQy1aRk9salFmU3NiNm9JeDFGdHc?oc=5",
-          "source": "El Sol de México",
-          "date": "2026-11-13",
-          "published_at": "2026-11-13T21:53:25Z",
-          "category": "CDMX",
-          "borough": "Iztacalco",
-          "location": "Iztacalco (mencionada en el titular)",
-          "local_url": "/noticias/?id=524dc3a3f9b57d7d122e&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con El Sol de México, el titular publicado es: «Impulsa alcaldía Iztacalco el comercio local con la Feria de Mujeres Emprendedoras». La información publicada por El Sol de México aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "alcaldia_iztacalco",
-            "kind": "representativa",
-            "url": "/assets/alcaldias/iztacalco.jpg",
-            "category": "CDMX",
-            "borough": "Iztacalco",
-            "topic": "Iglesia de San Matías en el antiguo pueblo de Iztacalco",
-            "author": "AlejandroLinaresGarcia",
-            "license": "CC BY-SA 3.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-            "source": "https://commons.wikimedia.org/wiki/File:SanMatiasChurchIztacalco02.jpg"
-          }
-        },
-        {
-          "title": "Impulsa alcaldía Iztacalco el comercio local con la Feria de Mujeres Emprendedoras",
-          "description": "De acuerdo con El Sol de México, el titular publicado es: «Impulsa alcaldía Iztacalco el comercio local con la Feria de Mujeres Emprendedoras». La información publicada por El Sol de México aborda un asunto que este portal clasifica como Servicios. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPUW0wMnhGOXBReHYyMmZFTUhsQTdISU0zLVphT0hMYktMRjdyRThOZHppZUNhbVBSUG1JNGJaazU2WE03U0RIZ0M4eDQ2T2V2dVFfNWdxaTllNUR4cWk2MUtzT0NnV3JXekZ5ZXlZalR6RDlWMG5mblo5RFRVX010SEx0VEtKUlBkSWVtRVJIc2VpdW11aEdTVEZtMHg4NldMRE1wc1ptbzZ3T1gtTU5HNWt4M1pzNHR3T3FCQy1aRk9salFmU3NiNm9JeDFGdHc?oc=5",
-          "source": "El Sol de México",
-          "date": "2026-11-13",
-          "published_at": "2026-11-13T21:53:25Z",
-          "category": "Servicios",
-          "borough": "Iztacalco",
-          "location": "Iztacalco (mencionada en el titular)",
-          "local_url": "/noticias/?id=524dc3a3f9b57d7d122e&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con El Sol de México, el titular publicado es: «Impulsa alcaldía Iztacalco el comercio local con la Feria de Mujeres Emprendedoras». La información publicada por El Sol de México aborda un asunto que este portal clasifica como Servicios. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "commons_75043274",
-            "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/014783-016_POSADA_EN_PICOS_DE_IZTACALCO_DICIEMBRE_18_1974_%2838896553181%29.jpg/960px-014783-016_POSADA_EN_PICOS_DE_IZTACALCO_DICIEMBRE_18_1974_%2838896553181%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "category": "Alcaldías",
-            "borough": "",
-            "topic": "014783-016 POSADA EN PICOS DE IZTACALCO DICIEMBRE 18 1974 (38896553181)",
-            "keywords": [
-              "Iztacalco Ciudad de México"
-            ],
-            "author": "Gobierno CDMX",
-            "license": "CC0",
-            "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
-            "source": "https://commons.wikimedia.org/wiki/File:014783-016_POSADA_EN_PICOS_DE_IZTACALCO_DICIEMBRE_18_1974_(38896553181).jpg"
-          }
-        }
-      ]
-    },
-    {
       "title": "Rescatan a perrita por presunto maltrato animal en Tlalpan",
       "description": "De acuerdo con Ahora Tabasco Noticias, el titular publicado es: «Rescatan a perrita por presunto maltrato animal en Tlalpan». La información publicada por Ahora Tabasco Noticias aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
       "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQWnROOWFRQXVfLVczeGoyNURMSFpjT2RNRk84RmEzTlVMSWQxY2ktRTVLOE10TGhndXB6Z0tvZ3YxeVRFblNYLTVkOGJueFFXSmlTeTh5MWJUUVV3V09ITEJ1SWRSUnFDTjZjd2VWeHFXZzMyVlhfWUw2SzZRbk9pRmJhNnQ0UlFYbHJiXw?oc=5",
@@ -2949,79 +3547,6 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "sensitive_media": true
-    },
-    {
-      "title": "Garbage llega al Zócalo de CDMX: Shirley Manson agradece al público mexicano",
-      "description": "De acuerdo con El Sol de México, el titular publicado es: «Garbage llega al Zócalo de CDMX: Shirley Manson agradece al público mexicano». La información publicada por El Sol de México aborda un asunto que este portal clasifica como Cultura. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPekxNVUVBWXRhVjZvcXl5Q2tKZERhZ2NoQl9uMG1ERVdnYldMcWZkLVdvNTBXMi00a0pqZUV3SldUSHJMLU1oMk5PZndfY1VuQVVmTlFJdk80N2poaWFqeXJ5ZUFsTHV3SHB1T0xxdV9OOVJsVkFmY29qSFlrMVBsRUhwTzUzR2NQNTA4Z1ZzS2NYek1NNnlfV2xCdUxENGxGYi1jaDBBMVlhcUVNbExyeDVVbE5HcUtJdC1HN3d4alY?oc=5",
-      "source": "El Sol de México",
-      "date": "2026-11-13",
-      "published_at": "2026-11-13T21:45:00Z",
-      "category": "Cultura",
-      "borough": "",
-      "location": "Ciudad de México (sin alcaldía identificada)",
-      "local_url": "/noticias/?id=92bcb673143b54de98d8&mes=2026-11",
-      "brief": {
-        "lead": "De acuerdo con El Sol de México, el titular publicado es: «Garbage llega al Zócalo de CDMX: Shirley Manson agradece al público mexicano». La información publicada por El Sol de México aborda un asunto que este portal clasifica como Cultura. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-        "context": "La actividad cultural abre oportunidades de encuentro, aprendizaje y disfrute para habitantes y visitantes.",
-        "pending": "Los accesos, boletos, sedes, cupos y horarios deben consultarse con la institución organizadora. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "contexto_concierto_palacio_deportes_2009",
-        "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/PalaciodelosDeportes_Concierto.jpg/960px-PalaciodelosDeportes_Concierto.jpg",
-        "category": "Cultura",
-        "borough": "",
-        "topic": "Concierto de Kings of Leon en el Palacio de los Deportes, CDMX (octubre de 2009); foto de archivo representativa, no documenta eventos de la noticia.",
-        "keywords": [
-          "concierto",
-          "música en vivo",
-          "Palacio de los Deportes",
-          "Ciudad de México",
-          "escenario",
-          "público"
-        ],
-        "author": "ProtoplasmaKid",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-        "source": "https://commons.wikimedia.org/wiki/File:PalaciodelosDeportes_Concierto.jpg"
-      },
-      "alternate_versions": [
-        {
-          "title": "Garbage llega al Zócalo de CDMX: Shirley Manson agradece al público mexicano",
-          "description": "De acuerdo con El Sol de México, el titular publicado es: «Garbage llega al Zócalo de CDMX: Shirley Manson agradece al público mexicano». La información publicada por El Sol de México aborda un asunto que este portal clasifica como Cultura. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPekxNVUVBWXRhVjZvcXl5Q2tKZERhZ2NoQl9uMG1ERVdnYldMcWZkLVdvNTBXMi00a0pqZUV3SldUSHJMLU1oMk5PZndfY1VuQVVmTlFJdk80N2poaWFqeXJ5ZUFsTHV3SHB1T0xxdV9OOVJsVkFmY29qSFlrMVBsRUhwTzUzR2NQNTA4Z1ZzS2NYek1NNnlfV2xCdUxENGxGYi1jaDBBMVlhcUVNbExyeDVVbE5HcUtJdC1HN3d4alY?oc=5",
-          "source": "El Sol de México",
-          "date": "2026-11-13",
-          "published_at": "2026-11-13T21:45:00Z",
-          "category": "Cultura",
-          "borough": "",
-          "location": "Ciudad de México (sin alcaldía identificada)",
-          "local_url": "/noticias/?id=92bcb673143b54de98d8&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con El Sol de México, el titular publicado es: «Garbage llega al Zócalo de CDMX: Shirley Manson agradece al público mexicano». La información publicada por El Sol de México aborda un asunto que este portal clasifica como Cultura. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "La actividad cultural abre oportunidades de encuentro, aprendizaje y disfrute para habitantes y visitantes.",
-            "pending": "Los accesos, boletos, sedes, cupos y horarios deben consultarse con la institución organizadora. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "commons_98002541",
-            "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Sala_de_Tesorer%C3%ADa_en_Palacio_Nacional_-_I.jpg/960px-Sala_de_Tesorer%C3%ADa_en_Palacio_Nacional_-_I.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "category": "Gobierno",
-            "borough": "",
-            "topic": "Sala de Tesorería en Palacio Nacional - I",
-            "keywords": [
-              "Palacio Nacional Ciudad de México"
-            ],
-            "author": "J Mndz",
-            "license": "CC BY-SA 2.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Sala_de_Tesorer%C3%ADa_en_Palacio_Nacional_-_I.jpg"
-          }
-        }
-      ]
     },
     {
       "title": "Karol G en el Estadio GNP Seguros: horarios, objetos prohibidos, canciones y todo sobre sus shows en CDMX",
@@ -3125,112 +3650,6 @@
             "license": "CC BY 4.0",
             "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
             "source": "https://commons.wikimedia.org/wiki/File:Inversion_mercados_p%C3%BAblicos.jpg"
-          }
-        }
-      ]
-    },
-    {
-      "title": "Mercados de CDMX recibirán un millón de pesos para mejorar sus instalaciones",
-      "description": "De acuerdo con El Sol de México, el titular publicado es: «Mercados de CDMX recibirán un millón de pesos para mejorar sus instalaciones». La información publicada por El Sol de México aborda un asunto que este portal clasifica como Gobierno. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNRkdzZXZTODA2NjVfbkNtVVRzal9qcHBKREVBTzhtOFZhUlZmRlVTdW5ocHVIM29KenBpVHUtYnEtaXBfaEdVQkpsSWE3Z1NDLTlmRm1sSTNqSU13QmwwWThHSlZMa3dXbl95bUZHTTNURGdKYUZDTHA2X0NkeXE1OWJhbldJbGFBRFcwaWhGUFZCbXh3aEQwZVFVMXhxd2xYTUotWHNUb2R2T2NCd0M4TUVQZXprRTRCZ3ZMUDZ0eVpKQQ?oc=5",
-      "source": "El Sol de México",
-      "date": "2026-11-13",
-      "published_at": "2026-11-13T21:40:15Z",
-      "category": "Gobierno",
-      "borough": "",
-      "location": "Ciudad de México (sin alcaldía identificada)",
-      "local_url": "/noticias/?id=01408e5242f80204bdea&mes=2026-11",
-      "brief": {
-        "lead": "De acuerdo con El Sol de México, el titular publicado es: «Mercados de CDMX recibirán un millón de pesos para mejorar sus instalaciones». La información publicada por El Sol de México aborda un asunto que este portal clasifica como Gobierno. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-        "context": "Las decisiones administrativas pueden influir en servicios, trámites y derechos; conviene conocer sus condiciones y a quiénes afectan.",
-        "pending": "Es indispensable consultar los acuerdos, comunicados o documentos oficiales antes de dar una medida por vigente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "contexto_tienda_abarrotes_coyoacan_2018",
-        "kind": "representativa",
-        "url": "https://upload.wikimedia.org/wikipedia/commons/d/de/Tienda_de_abarrotes_en_el_mercado_de_Coyoac%C3%A1n.jpg",
-        "category": "CDMX",
-        "borough": "",
-        "topic": "Tienda de abarrotes en el mercado de Coyoacán, CDMX (2018); imagen representativa, no es una sucursal de Tiendas Neto.",
-        "keywords": [
-          "tienda de abarrotes",
-          "comercio minorista",
-          "tiendas",
-          "Coyoacán",
-          "mercado de Coyoacán",
-          "Ciudad de México"
-        ],
-        "author": "Valeria Delgado",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-        "source": "https://commons.wikimedia.org/wiki/File:Tienda_de_abarrotes_en_el_mercado_de_Coyoac%C3%A1n.jpg"
-      },
-      "alternate_versions": [
-        {
-          "title": "Mercados de CDMX recibirán un millón de pesos para mejorar sus instalaciones",
-          "description": "De acuerdo con El Sol de México, el titular publicado es: «Mercados de CDMX recibirán un millón de pesos para mejorar sus instalaciones». La información publicada por El Sol de México aborda un asunto que este portal clasifica como Gobierno. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNRkdzZXZTODA2NjVfbkNtVVRzal9qcHBKREVBTzhtOFZhUlZmRlVTdW5ocHVIM29KenBpVHUtYnEtaXBfaEdVQkpsSWE3Z1NDLTlmRm1sSTNqSU13QmwwWThHSlZMa3dXbl95bUZHTTNURGdKYUZDTHA2X0NkeXE1OWJhbldJbGFBRFcwaWhGUFZCbXh3aEQwZVFVMXhxd2xYTUotWHNUb2R2T2NCd0M4TUVQZXprRTRCZ3ZMUDZ0eVpKQQ?oc=5",
-          "source": "El Sol de México",
-          "date": "2026-11-13",
-          "published_at": "2026-11-13T21:40:15Z",
-          "category": "Gobierno",
-          "borough": "",
-          "location": "Ciudad de México (sin alcaldía identificada)",
-          "local_url": "/noticias/?id=01408e5242f80204bdea&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con El Sol de México, el titular publicado es: «Mercados de CDMX recibirán un millón de pesos para mejorar sus instalaciones». La información publicada por El Sol de México aborda un asunto que este portal clasifica como Gobierno. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Las decisiones administrativas pueden influir en servicios, trámites y derechos; conviene conocer sus condiciones y a quiénes afectan.",
-            "pending": "Es indispensable consultar los acuerdos, comunicados o documentos oficiales antes de dar una medida por vigente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "commons_89299418",
-            "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Medidas_de_sanidad_en_los_mercados_de_la_Ciudad_de_M%C3%A9xico_durante_la_epidemia_de_COVID-19._1.jpg/960px-Medidas_de_sanidad_en_los_mercados_de_la_Ciudad_de_M%C3%A9xico_durante_la_epidemia_de_COVID-19._1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "category": "Servicios",
-            "borough": "",
-            "topic": "Medidas de sanidad en los mercados de la Ciudad de México durante la epidemia de COVID-19. 1",
-            "keywords": [
-              "Mercados públicos Ciudad de México"
-            ],
-            "author": "EneasMx",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Medidas_de_sanidad_en_los_mercados_de_la_Ciudad_de_M%C3%A9xico_durante_la_epidemia_de_COVID-19._1.jpg"
-          }
-        },
-        {
-          "title": "Mercados de CDMX recibirán un millón de pesos para mejorar sus instalaciones",
-          "description": "De acuerdo con El Sol de México, el titular publicado es: «Mercados de CDMX recibirán un millón de pesos para mejorar sus instalaciones». La información publicada por El Sol de México aborda un asunto que este portal clasifica como Gobierno. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNRkdzZXZTODA2NjVfbkNtVVRzal9qcHBKREVBTzhtOFZhUlZmRlVTdW5ocHVIM29KenBpVHUtYnEtaXBfaEdVQkpsSWE3Z1NDLTlmRm1sSTNqSU13QmwwWThHSlZMa3dXbl95bUZHTTNURGdKYUZDTHA2X0NkeXE1OWJhbldJbGFBRFcwaWhGUFZCbXh3aEQwZVFVMXhxd2xYTUotWHNUb2R2T2NCd0M4TUVQZXprRTRCZ3ZMUDZ0eVpKQQ?oc=5",
-          "source": "El Sol de México",
-          "date": "2026-11-13",
-          "published_at": "2026-11-13T21:40:15Z",
-          "category": "Gobierno",
-          "borough": "",
-          "location": "Ciudad de México (sin alcaldía identificada)",
-          "local_url": "/noticias/?id=01408e5242f80204bdea&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con El Sol de México, el titular publicado es: «Mercados de CDMX recibirán un millón de pesos para mejorar sus instalaciones». La información publicada por El Sol de México aborda un asunto que este portal clasifica como Gobierno. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Las decisiones administrativas pueden influir en servicios, trámites y derechos; conviene conocer sus condiciones y a quiénes afectan.",
-            "pending": "Es indispensable consultar los acuerdos, comunicados o documentos oficiales antes de dar una medida por vigente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "commons_75214598",
-            "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Entrega_del_Mercado_P%C3%BAblico_Cerro_del_Jud%C3%ADo_-i---i-_%2826324408589%29.jpg/960px-Entrega_del_Mercado_P%C3%BAblico_Cerro_del_Jud%C3%ADo_-i---i-_%2826324408589%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "category": "Servicios",
-            "borough": "",
-            "topic": "Entrega del Mercado Público Cerro del Judío -i---i- (26324408589)",
-            "keywords": [
-              "Mercados públicos Ciudad de México"
-            ],
-            "author": "Gobierno CDMX",
-            "license": "CC0",
-            "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
-            "source": "https://commons.wikimedia.org/wiki/File:Entrega_del_Mercado_P%C3%BAblico_Cerro_del_Jud%C3%ADo_-i---i-_(26324408589).jpg"
           }
         }
       ]
@@ -4082,33 +4501,6 @@
       "borough": "",
       "location": "Ciudad de México (sin alcaldía identificada)",
       "local_url": "/noticias/?id=d6dc89597a9a94b99c92&mes=2026-11",
-      "brief": {
-        "lead": "De acuerdo con 24-horas, el titular publicado es: «Manifestación de repartidores en CDMX: exigen mejores condiciones laborales y cambios en regulaciones». La información publicada por 24-horas aborda un asunto que este portal clasifica como Movilidad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-        "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
-        "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "contexto_repartidores_motocicleta_cdmx",
-        "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Carteros_en_motocicleta_del_Servicio_Postal_Mexicano%2C_2013.jpg/960px-Carteros_en_motocicleta_del_Servicio_Postal_Mexicano%2C_2013.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
-        "category": "Movilidad",
-        "borough": "",
-        "topic": "Carteros en motocicleta del Servicio Postal Mexicano, Ciudad de México (2013); imagen representativa de reparto en motocicleta, no del bloqueo actual",
-        "keywords": [
-          "repartidores de aplicaciones",
-          "repartidores",
-          "motocicletas",
-          "motociclistas",
-          "mensajeros",
-          "delivery",
-          "Servicio Postal Mexicano"
-        ],
-        "author": "Palacio Postal",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Carteros_en_motocicleta_del_Servicio_Postal_Mexicano,_2013.jpg"
-      },
       "alternate_versions": [
         {
           "title": "Manifestación de repartidores en CDMX en VIVO; qué exigen y en dónde se encuentran",
@@ -4149,7 +4541,34 @@
             "source": "https://commons.wikimedia.org/wiki/File:Carteros_en_motocicleta_del_Servicio_Postal_Mexicano,_2013.jpg"
           }
         }
-      ]
+      ],
+      "brief": {
+        "lead": "De acuerdo con 24-horas, el titular publicado es: «Manifestación de repartidores en CDMX: exigen mejores condiciones laborales y cambios en regulaciones». La información publicada por 24-horas aborda un asunto que este portal clasifica como Movilidad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+        "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
+        "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "contexto_repartidores_motocicleta_cdmx",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Carteros_en_motocicleta_del_Servicio_Postal_Mexicano%2C_2013.jpg/960px-Carteros_en_motocicleta_del_Servicio_Postal_Mexicano%2C_2013.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+        "category": "Movilidad",
+        "borough": "",
+        "topic": "Carteros en motocicleta del Servicio Postal Mexicano, Ciudad de México (2013); imagen representativa de reparto en motocicleta, no del bloqueo actual",
+        "keywords": [
+          "repartidores de aplicaciones",
+          "repartidores",
+          "motocicletas",
+          "motociclistas",
+          "mensajeros",
+          "delivery",
+          "Servicio Postal Mexicano"
+        ],
+        "author": "Palacio Postal",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Carteros_en_motocicleta_del_Servicio_Postal_Mexicano,_2013.jpg"
+      }
     },
     {
       "title": "Bancas que impiden recostarse y jardineras con púas: en CDMX quieren prohibir la arquitectura hostil",
