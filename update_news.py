@@ -37,6 +37,7 @@ SITE = "https://cdmx-al-memento.pages.dev"
 LA_PRENSA_VC_MOTORCYCLE_CRASH_SOURCE_URL = "https://oem.com.mx/la-prensa/policiaca/mueren-dos-motociclistas-tras-chocar-contra-una-camioneta-en-venustiano-carranza-33118910"
 HOY_TAMAULIPAS_PATTY_CHIO_SOURCE_URL = "https://www.hoytamaulipas.net/notas/607182/El-Mante-presente-en-la-Asamblea-Nacional-de-Seguridad-Publica-Municipal-2025.html"
 HOY_TAMAULIPAS_PATTY_CHIO_PUBLISHED_AT = "2025-12-10T19:31:04-06:00"
+HOY_TAMAULIPAS_PATTY_CHIO_ROUTE_MONTH = "2026-11"
 AHORA_NOTICIAS_TLALPAN_PERRITA_SOURCE_URL = "https://ahoranoticias.com.mx/nacional/rescatan-a-perrita-por-presunto-maltrato-animal-en-tlalpan/"
 MAIL = "sanchezaxochitl@gmail.com"
 RETENTION_DAYS = 365
@@ -704,6 +705,9 @@ def standardize(article):
         "location": location,
     }
     result["local_url"] = local_link(result)
+    if is_hoy_tamaulipas_paty_chio_assembly(result):
+        # Mantener el mes de la ruta original para no romper enlaces ni comentarios existentes.
+        result["local_url"] = local_link({**result, "date": HOY_TAMAULIPAS_PATTY_CHIO_ROUTE_MONTH + "-13"})
     if is_vc_two_motorcyclists_crash(result) and fold(source) == "el sol de mexico":
         # Google News rotula la entrada como El Sol de México, pero el enlace abre
         # la nota original de La Prensa; conservar el ID RSS y corregir atribución.
@@ -1107,10 +1111,21 @@ def consolidate_archive(new_items, cutoff, updated):
 
     by_month = defaultdict(list)
     by_borough = defaultdict(list)
+    route_aliases = {}
     for item in existing.values():
-        by_month[item["date"][:7]].append(item)
+        archive_month = str(item.get("date") or "")[:7]
+        by_month[archive_month].append(item)
+        route = re.fullmatch(
+            r"/noticias/\\?id=([a-f0-9]{20})&mes=(\\d{4}-\\d{2})",
+            str(item.get("local_url") or ""),
+        )
+        if route and route.group(2) != archive_month:
+            route_aliases[route.group(1)] = archive_month
         if item["borough"]:
             by_borough[item["borough"]].append(item)
+    write_json(ARCHIVE_DIR / "rutas.json", {
+        "updated": updated, "routes": route_aliases
+    })
     for filename in ARCHIVE_DIR.glob("????-??.json"):
         if filename.stem not in by_month:
             filename.unlink()
