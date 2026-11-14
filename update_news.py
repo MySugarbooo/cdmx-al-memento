@@ -318,7 +318,7 @@ def category_by_headline(title, feed_category, source=""):
         r"\b(?:abuso sexual|violencia sexual|agresion sexual|acoso sexual|"
         r"abusador(?:es)? sexual(?:es)?|maltratador(?:es)?(?: de animales?)?|"
         r"maltrato animal|crueldad animal|robo|robos|roban|robado|robada|robaron|robar|"
-        r"asalt\w*|secuestro|secuestrad[oa]s?|"
+        r"asalt\w*|extorsion\w*|secuestro|secuestrad[oa]s?|"
         r"privacion(?: ilegal)? de (?:la )?libertad)\b",
         normalized,
     ):
@@ -326,8 +326,12 @@ def category_by_headline(title, feed_category, source=""):
     # Categorías editoriales que el RSS ha heredado de forma incorrecta.
     if re.search(r"\b(?:garbage|shirley manson)\b", normalized):
         return "Cultura"
-    if re.search(r"\bpokemon go\b", normalized):
+    if re.search(r"\b(?:pokemon go|k/da|wild rift|league of legends|riot games)\b", normalized):
         return "Cultura"
+    if re.search(r"\b(?:feria (?:del )?empleo|feria de empleo|vacantes?|reclutamiento|bolsa de trabajo)\b", normalized):
+        return "Servicios"
+    if re.search(r"\b(?:feria de mujeres emprendedoras|mujeres emprendedoras|emprendimiento femenino)\b", normalized):
+        return "Servicios"
     if (re.search(r"\b(?:aeropuerto|aicm)\b", normalized)
             and re.search(r"\b(?:vuelos?|afectaciones?|salidas?|llegadas?)\b", normalized)):
         return "Movilidad"
