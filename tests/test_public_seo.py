@@ -114,6 +114,16 @@ class PublicSeoTests(unittest.TestCase):
         self.assertIn("archiveMonth===month&&archive?archive:await readJSON", script)
         self.assertIn("movedItems.find(x=>articleRouteId(x)===id)", script)
 
+    def test_moved_article_comment_aliases_share_the_original_collection(self):
+        root = Path(__file__).resolve().parent.parent
+        script = (root / "assets" / "comments.js").read_text(encoding="utf-8")
+        self.assertIn("fetch('/archivo/rutas.json',{cache:'no-store'})", script)
+        self.assertIn("routeIndex?.comment_months?.[id]", script)
+        self.assertIn("commentsMonth+'_'+id", script)
+        for relative in ("noticias/index.html", "comunidad/index.html"):
+            page = (root / relative).read_text(encoding="utf-8")
+            self.assertIn("/assets/comments.js?v=17-route-month-alias", page)
+
     def test_moved_story_prefers_its_verified_direct_source_url(self):
         script = (Path(__file__).resolve().parent.parent / "assets" / "noticias-locales.js").read_text(encoding="utf-8")
         self.assertIn("article.source_url||article.url", script)
