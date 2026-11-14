@@ -6,6 +6,7 @@ from scripts.check_public_seo import (
     DEPLOY_ATTEMPTS,
     archive_records,
     homepage_script_source,
+    public_photo_count,
     article_id,
     parse_sitemap,
     validate_article_html,
@@ -98,6 +99,13 @@ class PublicSeoTests(unittest.TestCase):
                     "<p>Tlalpan · 2026-11-12 · Fuente: Medio</p>"
                 ).encode("utf-8"),
             )
+
+    def test_public_photo_count_matches_the_merged_credit_catalog(self):
+        root = Path(__file__).resolve().parents[1]
+        count = public_photo_count()
+        page = (root / "creditos-fotograficos.html").read_text(encoding="utf-8")
+        self.assertIn(f"Fototeca editorial: {count:,} imágenes", page)
+        self.assertIn(f"La biblioteca reúne {count:,} imágenes", page)
 
     def test_deployment_wait_and_homepage_script_match_main(self):
         self.assertEqual(DEPLOY_ATTEMPTS, 36)

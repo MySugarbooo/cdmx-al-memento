@@ -1815,6 +1815,21 @@ STRICT_PHOTO_TOPICS = (
     # Un cierre o suspensión del espacio aéreo requiere contexto aeroportuario o de aeronaves.
     (r"\b(?:cierre|suspension|restriccion)\b.{0,40}\b(?:aereo|espacio aereo|vuelos?|pasajeros?)\b",
      r"\b(?:aeropuertos?|aviones?|aeronaves?|aviacion|terminal aeroportuaria|pista de aterrizaje|aicm|terminal 1|terminal 2)\b"),
+    # Las obras hidráulicas requieren agua o infraestructura hídrica, no remodelación urbana genérica.
+    (r"\b(?:obras? hidraulicas?|infraestructura hidraulica|inversion en obras hidraulicas?)\b",
+     r"\b(?:obras? hidraulicas?|infraestructura hidraulica|agua potable|drenaje|alcantarillado|red hidraulica|planta de tratamiento|bombeo|captacion de agua|saneamiento|sistema de agua|pozos?)\b"),
+    # Un antro o una fiesta en una mansión requiere vida nocturna, no un teatro.
+    (r"\b(?:antro|discoteca|club nocturno|fiesta en (?:una )?mansion|mansion de polanco|home alone)\b",
+     r"\b(?:antros?|discotecas?|clubes? nocturnos?|bares?|vida nocturna|fiestas?|mansiones?|salones? de fiestas?|pistas? de baile|dj)\b"),
+    # Las denuncias por fraude requieren contexto financiero o de investigación, no una graduación policial.
+    (r"\b(?:denuncias? por fraude|tasa de denuncias por fraude|fraude|estafas?)\b",
+     r"\b(?:fraude|estafas?|fraude cibernetico|delitos? financieros?|delitos? ciberneticos?|ciberseguridad|phishing|compras? por internet|investigacion penal|fiscalia|ministerio publico|tarjetas?|bancos?|finanzas?|denuncias? por fraude|documentos?)\b"),
+    # La extorsión atribuida a cárceles requiere contexto penitenciario o de investigación.
+    (r"\b(?:extorsiones? en .*carceles?|extorsiones? .*centros? penitenciarios?|carceles? .*extorsiones?)\b",
+     r"\b(?:extorsion|carceles?|reclusorios?|centros? penitenciarios?|penitenciarias?|prisiones?|cobro de piso|investigacion penal|fiscalia|ministerio publico)\b"),
+    # Un aseguramiento de autopartes necesita piezas, vehículos o el operativo de decomiso.
+    (r"\b(?:autopartes?|refacciones?|deshuesaderos?)\b",
+     r"\b(?:autopartes?|refacciones?|deshuesaderos?|piezas? de (?:autos?|vehiculos?)|almacen de autopartes|decomiso de autopartes|cateo de autopartes|vehiculos? asegurados|patrullas?|operativo policial)\b"),
 
 )
 
@@ -2485,7 +2500,7 @@ def _photo_score(article, photo):
             and not re.search(r"\b(?:motociclet\w*|motociclist\w*|motos?|autos?|automovil\w*|vehicular|trafico|transito|vialidad|choque)\b", topic)):
         return -10000
     # Una detención no se ilustra con entrega de patrullas o policía dirigiendo tráfico.
-    if re.search(r"\b(?:detienen|detenido\w*|arrestan|capturan|aprehenden)\b", headline):
+    if re.search(r"\b(?:detienen|detenido\w*|arrestan|capturan|aprehenden|procesan|vinculan a proceso)\b", headline):
         if re.search(r"\b(?:entrega (?:de )?(?:nuevas? )?patrullas|nuevas? patrullas|graduacion|ceremonia|controlando el semaforo|policia de transito)\b", topic):
             return -10000
     # Un corte de agua no se ilustra con elementos decorativos de un parque.

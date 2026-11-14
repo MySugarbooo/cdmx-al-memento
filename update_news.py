@@ -36,6 +36,8 @@ MX = ZoneInfo("America/Mexico_City")
 SITE = "https://cdmx-al-memento.pages.dev"
 LA_PRENSA_VC_MOTORCYCLE_CRASH_SOURCE_URL = "https://oem.com.mx/la-prensa/policiaca/mueren-dos-motociclistas-tras-chocar-contra-una-camioneta-en-venustiano-carranza-33118910"
 SOCIEDAD_NOTICIAS_VC_MOTORCYCLE_CRASH_SOURCE_URL = "https://sociedad-noticias.com/2026/11/14/mueren-dos-motociclistas-tras-accidente-vial-en-venustiano-carranza/"
+NPLUS_AZCAPOTZALCO_HOMICIDE_DETAIL_SOURCE_URL = "https://www.nmas.com.mx/ciudad-de-mexico/seguridad/asesinatos/asesinan-a-un-hombre-y-un-nino-de-10-anos-en-alcaldia-azcapotzalco-en-la-cdmx/"
+NPLUS_AZCAPOTZALCO_HOMICIDE_VIDEO_SOURCE_URL = "https://www.nmas.com.mx/ciudad-de-mexico/seguridad/asesinan-a-balazos-a-un-hombre-y-a-un-menor-de-10-anos-en-azcapotzalco/"
 HOY_TAMAULIPAS_PATTY_CHIO_SOURCE_URL = "https://www.hoytamaulipas.net/notas/607182/El-Mante-presente-en-la-Asamblea-Nacional-de-Seguridad-Publica-Municipal-2025.html"
 HOY_TAMAULIPAS_PATTY_CHIO_PUBLISHED_AT = "2025-12-10T19:31:04-06:00"
 HOY_TAMAULIPAS_PATTY_CHIO_ROUTE_MONTH = "2026-11"
@@ -634,6 +636,20 @@ def is_tlalpan_perrita_rescue(article):
     )
 
 
+def is_nplus_azcapotzalco_double_homicide(article):
+    """Reconoce dos publicaciones de N+ sobre el mismo doble homicidio (13-11-2026)."""
+    title = fold(article.get("title", ""))
+    known_titles = {
+        fold("Asesinan a Un Hombre y Un Niño de 10 Años en Alcaldía Azcapotzalco, en la CDMX"),
+        fold("Asesinan a Balazos a un Hombre y a un Menor de 10 años en Azcapotzalco"),
+    }
+    return (
+        fold(article.get("source", "")) == "n"
+        and str(article.get("date") or "") == "2026-11-13"
+        and title in known_titles
+    )
+
+
 def standardize(article):
     """Relee noticias antiguas sin inventar la hora que no venía en el RSS."""
     if not isinstance(article, dict):
@@ -732,6 +748,11 @@ def standardize(article):
     elif is_vc_two_motorcyclists_crash(result) and fold(source) == "sociedad noticias":
         # La segunda cobertura describe el mismo hecho y conserva su fecha de publicación.
         result["source_url"] = SOCIEDAD_NOTICIAS_VC_MOTORCYCLE_CRASH_SOURCE_URL
+    elif is_nplus_azcapotzalco_double_homicide(result):
+        if fold(title) == fold("Asesinan a Un Hombre y Un Niño de 10 Años en Alcaldía Azcapotzalco, en la CDMX"):
+            result["source_url"] = NPLUS_AZCAPOTZALCO_HOMICIDE_DETAIL_SOURCE_URL
+        else:
+            result["source_url"] = NPLUS_AZCAPOTZALCO_HOMICIDE_VIDEO_SOURCE_URL
     elif is_tlalpan_perrita_rescue(result) and source.casefold() == "howl.link":
         # El RSS muestra Howl.Link, pero el destino y la firma identifican a Ahora Noticias.
         result["source"] = "Ahora Noticias"
@@ -1219,6 +1240,10 @@ def editorial_event_key(article):
     if is_vc_two_motorcyclists_crash(article):
         # La Prensa fecha el hecho el 13; Sociedad Noticias publicó su cobertura el 14.
         return ("venustiano-carranza-two-motorcyclists", "2026-11-13")
+    if is_nplus_azcapotzalco_double_homicide(article):
+        # N+ publicó dos versiones del mismo ataque en Nueva El Rosario.
+        # Ambas páginas permanecen en la hemeroteca; la portada muestra una sola ficha.
+        return ("azcapotzalco-new-el-rosario-double-homicide", "2026-11-13")
     if is_tlalpan_perrita_rescue(article):
         return ("tlalpan-perrita-rescue-2026-11-13", article.get("date"))
     if (re.search(r"\bcoyoacan\b", title)

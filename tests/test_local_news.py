@@ -431,6 +431,59 @@ class LocalNewsTests(unittest.TestCase):
         self.assertEqual(visible[0]["source"], "Sociedad Noticias")
         self.assertEqual(visible[0]["local_url"], sociedad["local_url"])
 
+    def test_nplus_azcapotzalco_double_homicide_has_direct_sources_and_groups_only_same_event(self):
+        detailed = standardize({
+            "title": "Asesinan a Un Hombre y Un Niño de 10 Años en Alcaldía Azcapotzalco, en la CDMX",
+            "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPNHNFbmNKaEdxNUp5UzNjZFl3LUpxcHB2SjVJTDFtYUN4NHd1YnUxNFMzWHJEZGdrTmNIU2tRQWZnd3g3UVVkXzhodkZEa0hQbTQ3VGQyY0tWSFVNaEhOb1k5OXlZYXhlZkJGd0hYclNsWFNILVdBQ3BQUEVGM0VlN042am1pR0FCZGlfMU9jTGJ3VFFIWm13d1dEMmUxeXRFc09KY0lIU0dfcGdhaVg1NEVPdFpyeWdlQTdLeEJ1N0hiYzhBbkM3TVNKWk9kNTFUSnRPcFdqVQ?oc=5",
+            "source": "N+",
+            "date": "2026-11-13",
+            "published_at": "2026-11-14T05:34:04Z",
+            "category": "Seguridad",
+        })
+        video = standardize({
+            "title": "Asesinan a Balazos a un Hombre y a un Menor de 10 años en Azcapotzalco",
+            "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQai1pMndqWE85ZU9UQ0Jscm1lbWNBRHd4VUY3cEFVYXJZbGladFZKVklpNUctR1RKZ3JGUTNhLTdTNENyVnFiVFRjd2tJalNvSjFaaVNVVTdkMmhyOEhIc3dQdFFIS3NUZVA4WXdjcTZWb1hxUU5EUEpfUFllLVJYZGZqRzZJUDBoUVd4WGxYZFVqY2owVjZPYVI4MmxzaFlNWks5YjR5czlnRW0ySW1aQ3E0RTFadkR2MHZJaG5mQQ?oc=5",
+            "source": "N+",
+            "date": "2026-11-13",
+            "published_at": "2026-11-14T05:00:44Z",
+            "category": "Seguridad",
+        })
+        self.assertIsNotNone(detailed)
+        self.assertIsNotNone(video)
+        self.assertEqual(detailed["date"], "2026-11-13")
+        self.assertEqual(video["date"], "2026-11-13")
+        self.assertEqual(detailed["local_url"], "/noticias/?id=0a3abec9941a9ad3518e&mes=2026-11")
+        self.assertEqual(video["local_url"], "/noticias/?id=773453000efee780c489&mes=2026-11")
+        self.assertEqual(
+            detailed["source_url"],
+            "https://www.nmas.com.mx/ciudad-de-mexico/seguridad/asesinatos/asesinan-a-un-hombre-y-un-nino-de-10-anos-en-alcaldia-azcapotzalco-en-la-cdmx/",
+        )
+        self.assertEqual(
+            video["source_url"],
+            "https://www.nmas.com.mx/ciudad-de-mexico/seguridad/asesinan-a-balazos-a-un-hombre-y-a-un-menor-de-10-anos-en-azcapotzalco/",
+        )
+        self.assertNotEqual(archive_record_key(detailed), archive_record_key(video))
+        self.assertIn(detailed["source_url"], render(detailed, article_id(detailed)))
+        self.assertIn(video["source_url"], render(video, article_id(video)))
+
+        # Las dos publicaciones describen el ataque del 13 de noviembre en Nueva El Rosario.
+        visible = dedupe_homepage_events([detailed, video])
+        self.assertEqual(len(visible), 1)
+        self.assertEqual(visible[0]["local_url"], detailed["local_url"])
+        self.assertEqual(visible[0]["source_url"], detailed["source_url"])
+
+        # Otro homicidio en Azcapotzalco no debe fusionarse por compartir alcaldía y fecha.
+        other = standardize({
+            "title": "Asesinan a un hombre en calles de Azcapotzalco",
+            "url": "https://news.google.com/rss/articles/azcapotzalco-distinct-homicide",
+            "source": "N+",
+            "date": "2026-11-13",
+            "published_at": "2026-11-14T06:00:00Z",
+            "category": "Seguridad",
+        })
+        self.assertIsNotNone(other)
+        self.assertEqual(len(dedupe_homepage_events([detailed, other])), 2)
+
     def test_ahora_noticias_tlalpan_perrita_rescue_corrects_source_and_preserves_article_key(self):
         article = {
             "title": "Rescatan a perrita por presunto maltrato animal en Tlalpan - Ahora Noticias",
