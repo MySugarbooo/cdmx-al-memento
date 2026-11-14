@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-14 19:18 UTC",
+  "updated": "2026-11-14 20:18 UTC",
   "boroughs": [
     {
       "name": "La Magdalena Contreras",
@@ -3011,27 +3011,6 @@
           "borough": "Azcapotzalco",
           "location": "Azcapotzalco (mencionada en el titular)",
           "local_url": "/noticias/?id=6c16232063b659313ac4&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con El Universal, el titular publicado es: «Matan a balazos a un hombre y a un niño de 10 años en Azcapotzalco». La información publicada por El Universal aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
-            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "seguridad",
-            "kind": "representativa",
-            "url": "/assets/fotos/seguridad.jpg",
-            "category": "Seguridad",
-            "borough": "",
-            "topic": "Patrulla de Ciudad de México",
-            "keywords": [
-              "Seguridad"
-            ],
-            "author": "RainerRowe",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.es",
-            "source": "https://commons.wikimedia.org/wiki/File:Patrulla_cdmx.jpg"
-          },
           "alternate_versions": [
             {
               "title": "Matan a balazos a un hombre y a un niño de 10 años en Azcapotzalco",
@@ -3066,7 +3045,28 @@
                 "source": "https://commons.wikimedia.org/wiki/File:Jeep_policia_cdmx.jpg"
               }
             }
-          ]
+          ],
+          "brief": {
+            "lead": "De acuerdo con El Universal, el titular publicado es: «Matan a balazos a un hombre y a un niño de 10 años en Azcapotzalco». La información publicada por El Universal aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "seguridad",
+            "kind": "representativa",
+            "url": "/assets/fotos/seguridad.jpg",
+            "category": "Seguridad",
+            "borough": "",
+            "topic": "Patrulla de Ciudad de México",
+            "keywords": [
+              "Seguridad"
+            ],
+            "author": "RainerRowe",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.es",
+            "source": "https://commons.wikimedia.org/wiki/File:Patrulla_cdmx.jpg"
+          }
         },
         {
           "title": "Rentas en Azcapotzalco: alternativa accesible en CDMX",
@@ -5117,8 +5117,44 @@
     },
     {
       "name": "Coyoacán",
-      "count": 187,
+      "count": 189,
       "articles": [
+        {
+          "title": "Evacúan a 40 personas por fuga de gas en Coyoacán: perforaron tubería mientras realizaban trabajos de pavimentación",
+          "description": "De acuerdo con Infobae, el titular publicado es: «Evacúan a 40 personas por fuga de gas en Coyoacán: perforaron tubería mientras realizaban trabajos de pavimentación». La información publicada por Infobae aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxOVVlzaC1Ga3o1Nzk2c2JLQnpPeFJGMFl2YmNFQnJZU2stSF9uS0pMVjRhcmY2SXRud3VaTWNhZVVwX04tUUc4TTdlUF80TUVCUWRIcEZWWVpSTXlMNGIxUEs5M0ZWWVdjQlMxNDM2d2Ztb1dFZUZkWGVhbE5yTzVvX2l6SjB1d0VXdW5aX3hQNExjZWhTdUVEeHlKQzU0SUxHT2NOblNZRkRSdzk3TVp5a3BpckhjeGMwRENUcUdoT19IQWl5T1RwZkhvMXcyMjZWYTlWTXBSbkRLQUtFMnNQRTRwbENtX3VBOGZXMXJB0gGIAkFVX3lxTFBFRHFocktzNUJjUUFISUw5NTdxVXFZNWF0aHpmVXEzMkZ3YnBSVFJoUjRBRUZldXpoUGR0ZUs3b0FpaEY1M1BHeXU1azF5elJDTjRpVGZDb0ctdXhwQnpwU1VTenRmMnNQUmdmbEZCOEZ5ak9PT0hMWGpydHZuUkEtRTR4V3cyLXRqYXdjRW5kbkY0UDNHRlBYVzVTNEZNd2J6SG9zbXFpQmNBbzNZamI1bzNoNHZfNHRHTU4zZm9DN1FXTUxqdm1MRGI5bDIxZG9qYnhuTF94N1hQSm1zTVBBOGxJRlNvOTBNdTkyRHYzeDRGRVhTV2lSZVhHQW1MSy1EUElqWGJIOA?oc=5",
+          "source": "Infobae",
+          "date": "2026-11-14",
+          "published_at": "2026-11-14T19:44:00Z",
+          "category": "Seguridad",
+          "borough": "Coyoacán",
+          "location": "Coyoacán (mencionada en el titular)",
+          "local_url": "/noticias/?id=950fc64402e476c1a580&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con Infobae, el titular publicado es: «Evacúan a 40 personas por fuga de gas en Coyoacán: perforaron tubería mientras realizaban trabajos de pavimentación». La información publicada por Infobae aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          }
+        },
+        {
+          "title": "Fuga de Gas Natural Provoca Evacuación de 40 Personas en Coyoacán, CDMX",
+          "description": "De acuerdo con N+, el titular publicado es: «Fuga de Gas Natural Provoca Evacuación de 40 Personas en Coyoacán, CDMX». La información publicada por N+ aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOQTJqSDhYZmw3cDhua1BUeVZIbkFvN1lEUW13VjRTVktNRWpnbThQQXBoUXZJVkVJeHZ2Y0o1UGdsbjYxSDlmbHMxT2xoaWQtWllNSlVmQTQ0U2VRY2lzNFhqX3VfWjByZ2oyc0RwSkU4cVFDQUc0dW8xcUtoT0NmSEljLWtwX0dNYWh6eHZKS01DT3ZRMlc1UnhSQ0VPUGYtM04wek52UGtJeF9aUmlBZUxLeWlGRVlyRTZiX1ozY1d6ZUljQmhKX0E5R2hkU3d1RXpmd1VMVkNuX2FCbUJFUw?oc=5",
+          "source": "N+",
+          "date": "2026-11-14",
+          "published_at": "2026-11-14T19:21:19Z",
+          "category": "Seguridad",
+          "borough": "Coyoacán",
+          "location": "Coyoacán (mencionada en el titular)",
+          "local_url": "/noticias/?id=e6116852194d74771047&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con N+, el titular publicado es: «Fuga de Gas Natural Provoca Evacuación de 40 Personas en Coyoacán, CDMX». La información publicada por N+ aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          }
+        },
         {
           "title": "Desalojan a 40 Personas por Fuga de Gas Natural en Los Reyes, Coyoacán",
           "description": "De acuerdo con N+, el titular publicado es: «Desalojan a 40 Personas por Fuga de Gas Natural en Los Reyes, Coyoacán». La información publicada por N+ aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -6536,172 +6572,6 @@
           ],
           "brief": {
             "lead": "De acuerdo con www.24-horas.mx, el titular publicado es: «Acusan al diputado Ricardo Rubio del PAN de agredir a vecinos durante foro en Coyoacán». La información publicada por www.24-horas.mx aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "commons_106559901",
-            "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/1._Coyoac%C3%A1n_Ciudad_de_M%C3%A9xico.jpg/960px-1._Coyoac%C3%A1n_Ciudad_de_M%C3%A9xico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "category": "CDMX",
-            "borough": "",
-            "topic": "1. Coyoacán Ciudad de México",
-            "keywords": [
-              "CDMX"
-            ],
-            "author": "Machristen",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:1._Coyoac%C3%A1n_Ciudad_de_M%C3%A9xico.jpg"
-          }
-        },
-        {
-          "title": "PAN y Morena se enfrentan en CDMX por violencia en foro del Programa de Ordenamiento de la ZMVM en Coyoacán",
-          "description": "De acuerdo con Reporte Indigo, el titular publicado es: «PAN y Morena se enfrentan en CDMX por violencia en foro del Programa de Ordenamiento de la ZMVM en Coyoacán». La información publicada por Reporte Indigo aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxOdUJUQ0h0VWFaeXAySzdOM3V3T2NYcmx2SXN4Rkd3TXMtV3RTeElkSlFsamxWcHBsLWhKeVhQT1NibGRKZElrY04wcHJwZ3NPbGh6VHZLWWNCNEhmU21na0pObmJpdHNLN0swTFpvUm1xUjJreVl4WFl5TEI1VXNJWXFVQmJwS2tXQTFoTnpURkhzSGNTR3ZhZjlOOGFQYkVvTXdFVXQ5MUxzdHFpRkhMb1ZTTzZYTUJ6UFM0RW9lbGc2amRLX2lzOW1tLWc4SThZZFY5LTJNWU8xeWdISmFKS0NSUUNwakhsOV9Sd05QZVpmTDg?oc=5",
-          "source": "Reporte Indigo",
-          "date": "2026-11-10",
-          "published_at": "2026-11-10T22:34:44Z",
-          "category": "CDMX",
-          "borough": "Coyoacán",
-          "location": "Coyoacán (mencionada en el titular)",
-          "local_url": "/noticias/?id=59db0fe82d4ae6a8b563&mes=2026-11",
-          "alternate_versions": [
-            {
-              "title": "PAN y Morena se enfrentan en CDMX por violencia en foro del Programa de Ordenamiento de la ZMVM en Coyoacán",
-              "description": "De acuerdo con Reporte Indigo, el titular publicado es: «PAN y Morena se enfrentan en CDMX por violencia en foro del Programa de Ordenamiento de la ZMVM en Coyoacán». La información publicada por Reporte Indigo aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-              "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxOdUJUQ0h0VWFaeXAySzdOM3V3T2NYcmx2SXN4Rkd3TXMtV3RTeElkSlFsamxWcHBsLWhKeVhQT1NibGRKZElrY04wcHJwZ3NPbGh6VHZLWWNCNEhmU21na0pObmJpdHNLN0swTFpvUm1xUjJreVl4WFl5TEI1VXNJWXFVQmJwS2tXQTFoTnpURkhzSGNTR3ZhZjlOOGFQYkVvTXdFVXQ5MUxzdHFpRkhMb1ZTTzZYTUJ6UFM0RW9lbGc2amRLX2lzOW1tLWc4SThZZFY5LTJNWU8xeWdISmFKS0NSUUNwakhsOV9Sd05QZVpmTDg?oc=5",
-              "source": "Reporte Indigo",
-              "date": "2026-11-10",
-              "published_at": "2026-11-10T22:34:44Z",
-              "category": "CDMX",
-              "borough": "Coyoacán",
-              "location": "Coyoacán (mencionada en el titular)",
-              "local_url": "/noticias/?id=59db0fe82d4ae6a8b563&mes=2026-11",
-              "brief": {
-                "lead": "De acuerdo con Reporte Indigo, el titular publicado es: «PAN y Morena se enfrentan en CDMX por violencia en foro del Programa de Ordenamiento de la ZMVM en Coyoacán». La información publicada por Reporte Indigo aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-                "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-                "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-              },
-              "photo": {
-                "id": "commons_80020584",
-                "kind": "representativa",
-                "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Iglesia_de_San_Juan_Bautista_en_Coyoac%C3%A1n_Ciudad_de_M%C3%A9xico.jpg/960px-Iglesia_de_San_Juan_Bautista_en_Coyoac%C3%A1n_Ciudad_de_M%C3%A9xico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-                "category": "CDMX",
-                "borough": "",
-                "topic": "Iglesia de San Juan Bautista en Coyoacán Ciudad de México",
-                "keywords": [
-                  "CDMX"
-                ],
-                "author": "Juan Carlos Fonseca Mata",
-                "license": "CC BY-SA 4.0",
-                "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-                "source": "https://commons.wikimedia.org/wiki/File:Iglesia_de_San_Juan_Bautista_en_Coyoac%C3%A1n_Ciudad_de_M%C3%A9xico.jpg"
-              }
-            }
-          ],
-          "brief": {
-            "lead": "De acuerdo con Reporte Indigo, el titular publicado es: «PAN y Morena se enfrentan en CDMX por violencia en foro del Programa de Ordenamiento de la ZMVM en Coyoacán». La información publicada por Reporte Indigo aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "commons_80020584",
-            "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Iglesia_de_San_Juan_Bautista_en_Coyoac%C3%A1n_Ciudad_de_M%C3%A9xico.jpg/960px-Iglesia_de_San_Juan_Bautista_en_Coyoac%C3%A1n_Ciudad_de_M%C3%A9xico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "category": "CDMX",
-            "borough": "",
-            "topic": "Iglesia de San Juan Bautista en Coyoacán Ciudad de México",
-            "keywords": [
-              "CDMX"
-            ],
-            "author": "Juan Carlos Fonseca Mata",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Iglesia_de_San_Juan_Bautista_en_Coyoac%C3%A1n_Ciudad_de_M%C3%A9xico.jpg"
-          }
-        },
-        {
-          "title": "Respalda PAN a diputado Rubio y su defensa de familias en Coyoacán",
-          "description": "De acuerdo con CDMX Magacín, el titular publicado es: «Respalda PAN a diputado Rubio y su defensa de familias en Coyoacán». La información publicada por CDMX Magacín aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPNklURkFuM2d3alRlZVJMcnNjSnJIbGNBRm9rU0VoTUdDR1J3dmMxaVM3VWM3dm5TWVdqRFdXNmtmQ2MtcEJqSUdXODZZYlVFVkhLRlJmVUJaR0RNbkx6RnoxS1lzeFRIaF9SMTZpRmR1dXphNFQxWTk4aHJ4a01CdWpVVW9NR3M5d2NhVjFkVnY4bzV0RmFVcVFB?oc=5",
-          "source": "CDMX Magacín",
-          "date": "2026-11-10",
-          "published_at": "2026-11-10T22:31:46Z",
-          "category": "CDMX",
-          "borough": "Coyoacán",
-          "location": "Coyoacán (mencionada en el titular)",
-          "local_url": "/noticias/?id=7f5503d5ceb99568cb94&mes=2026-11",
-          "alternate_versions": [
-            {
-              "title": "Respalda PAN a diputado Rubio y reconoce su defensa de familias de Coyoacán",
-              "description": "De acuerdo con CDMX Magacín, el titular publicado es: «Respalda PAN a diputado Rubio y reconoce su defensa de familias de Coyoacán». La información publicada por CDMX Magacín aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-              "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPNklURkFuM2d3alRlZVJMcnNjSnJIbGNBRm9rU0VoTUdDR1J3dmMxaVM3VWM3dm5TWVdqRFdXNmtmQ2MtcEJqSUdXODZZYlVFVkhLRlJmVUJaR0RNbkx6RnoxS1lzeFRIaF9SMTZpRmR1dXphNFQxWTk4aHJ4a01CdWpVVW9NR3M5d2NhVjFkVnY4bzV0RmFVcVFB?oc=5",
-              "source": "CDMX Magacín",
-              "date": "2026-11-10",
-              "published_at": "2026-11-10T22:31:46Z",
-              "category": "CDMX",
-              "borough": "Coyoacán",
-              "location": "Coyoacán (mencionada en el titular)",
-              "local_url": "/noticias/?id=7f5503d5ceb99568cb94&mes=2026-11",
-              "brief": {
-                "lead": "De acuerdo con CDMX Magacín, el titular publicado es: «Respalda PAN a diputado Rubio y reconoce su defensa de familias de Coyoacán». La información publicada por CDMX Magacín aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-                "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-                "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-              },
-              "photo": {
-                "id": "alcaldia_coyoacan",
-                "kind": "representativa",
-                "url": "/assets/alcaldias/coyoacan.jpg",
-                "category": "CDMX",
-                "borough": "Coyoacán",
-                "topic": "Jardín Centenario de Coyoacán",
-                "author": "AlejandroLinaresGarcia",
-                "license": "CC BY-SA 4.0",
-                "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-                "source": "https://commons.wikimedia.org/wiki/File:JardinCentenarioCoyoacan.JPG"
-              }
-            },
-            {
-              "title": "Respalda PAN a diputado Rubio y su defensa de familias en Coyoacán",
-              "description": "De acuerdo con CDMX Magacín, el titular publicado es: «Respalda PAN a diputado Rubio y su defensa de familias en Coyoacán». La información publicada por CDMX Magacín aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-              "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPNklURkFuM2d3alRlZVJMcnNjSnJIbGNBRm9rU0VoTUdDR1J3dmMxaVM3VWM3dm5TWVdqRFdXNmtmQ2MtcEJqSUdXODZZYlVFVkhLRlJmVUJaR0RNbkx6RnoxS1lzeFRIaF9SMTZpRmR1dXphNFQxWTk4aHJ4a01CdWpVVW9NR3M5d2NhVjFkVnY4bzV0RmFVcVFB?oc=5",
-              "source": "CDMX Magacín",
-              "date": "2026-11-10",
-              "published_at": "2026-11-10T22:31:46Z",
-              "category": "CDMX",
-              "borough": "Coyoacán",
-              "location": "Coyoacán (mencionada en el titular)",
-              "local_url": "/noticias/?id=7f5503d5ceb99568cb94&mes=2026-11",
-              "brief": {
-                "lead": "De acuerdo con CDMX Magacín, el titular publicado es: «Respalda PAN a diputado Rubio y su defensa de familias en Coyoacán». La información publicada por CDMX Magacín aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-                "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-                "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-              },
-              "photo": {
-                "id": "commons_106559901",
-                "kind": "representativa",
-                "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/1._Coyoac%C3%A1n_Ciudad_de_M%C3%A9xico.jpg/960px-1._Coyoac%C3%A1n_Ciudad_de_M%C3%A9xico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-                "category": "CDMX",
-                "borough": "",
-                "topic": "1. Coyoacán Ciudad de México",
-                "keywords": [
-                  "CDMX"
-                ],
-                "author": "Machristen",
-                "license": "CC BY-SA 4.0",
-                "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-                "source": "https://commons.wikimedia.org/wiki/File:1._Coyoac%C3%A1n_Ciudad_de_M%C3%A9xico.jpg"
-              }
-            }
-          ],
-          "brief": {
-            "lead": "De acuerdo con CDMX Magacín, el titular publicado es: «Respalda PAN a diputado Rubio y su defensa de familias en Coyoacán». La información publicada por CDMX Magacín aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
@@ -8815,7 +8685,7 @@
             "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Periferico_sur.JPG/960px-Periferico_sur.JPG?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail&_=20150924185737",
             "category": "Movilidad",
             "borough": "",
-            "topic": "Lateral del Periférico Sur desde la Glorieta de Vaqueritos, Tlalpan, Ciudad de México (22 de septiembre de 2015); fotografía de archivo representativa",
+            "topic": "Periférico Sur desde Glorieta de Vaqueritos, Tlalpan (22/09/2015); foto de archivo representativa, no del taller.",
             "keywords": [
               "Periférico Sur",
               "tránsito vehicular",
@@ -11809,27 +11679,6 @@
           "borough": "Iztapalapa",
           "location": "Iztapalapa (mencionada en el titular)",
           "local_url": "/noticias/?id=805e20a33345af7202d7&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con El Universal, el titular publicado es: «Asesinan a hombre en calles de Iztapalapa». La información publicada por El Universal aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
-            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "seguridad",
-            "kind": "representativa",
-            "url": "/assets/fotos/seguridad.jpg",
-            "category": "Seguridad",
-            "borough": "",
-            "topic": "Patrulla de Ciudad de México",
-            "keywords": [
-              "Seguridad"
-            ],
-            "author": "RainerRowe",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.es",
-            "source": "https://commons.wikimedia.org/wiki/File:Patrulla_cdmx.jpg"
-          },
           "alternate_versions": [
             {
               "title": "Asesinan a hombre en calles de Iztapalapa",
@@ -11864,7 +11713,28 @@
                 "source": "https://commons.wikimedia.org/wiki/File:Jeep_policia_cdmx.jpg"
               }
             }
-          ]
+          ],
+          "brief": {
+            "lead": "De acuerdo con El Universal, el titular publicado es: «Asesinan a hombre en calles de Iztapalapa». La información publicada por El Universal aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "seguridad",
+            "kind": "representativa",
+            "url": "/assets/fotos/seguridad.jpg",
+            "category": "Seguridad",
+            "borough": "",
+            "topic": "Patrulla de Ciudad de México",
+            "keywords": [
+              "Seguridad"
+            ],
+            "author": "RainerRowe",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.es",
+            "source": "https://commons.wikimedia.org/wiki/File:Patrulla_cdmx.jpg"
+          }
         },
         {
           "title": "Dónde comer chicharrones preparados y quesadillas de sesos baratos en Iztapalapa, CDMX",
@@ -15196,8 +15066,38 @@
     },
     {
       "name": "Tláhuac",
-      "count": 162,
+      "count": 163,
       "articles": [
+        {
+          "title": "Feria del Atole 2026 en Tláhuac: fechas, sabores y actividades",
+          "description": "De acuerdo con La Silla Rota, el titular publicado es: «Feria del Atole 2026 en Tláhuac: fechas, sabores y actividades». La información publicada por La Silla Rota aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPX0YtWWxjM2xHNXZmdm9ZeFIwblNld2VRcWZSVnIzUEw5ZzhEeG9Ca3V1LWZUOHBuZVNPQ3pqZHF4c2JSMG9Bcmt1TExtVkQwcEdIX0llYkNDM2N5LWxKUU8yS1BTa01UVWJXZDZRMmZJNGQ0Zkpvcl9sblRMYkd1SXFpNjZ0NnREcUVTUy1MSDVkc25vd0hZUDNGRTh2MnQyeFJUZXRNNmx2SjA3bmxBdWlGdXV5dnZGUjU1M0praURSMnhuSVRZLQ?oc=5",
+          "source": "La Silla Rota",
+          "date": "2026-11-14",
+          "published_at": "2026-11-14T19:19:07Z",
+          "category": "CDMX",
+          "borough": "Tláhuac",
+          "location": "Tláhuac (mencionada en el titular)",
+          "local_url": "/noticias/?id=8943654970f0592d780a&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con La Silla Rota, el titular publicado es: «Feria del Atole 2026 en Tláhuac: fechas, sabores y actividades». La información publicada por La Silla Rota aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_tlahuac",
+            "kind": "representativa",
+            "url": "/assets/alcaldias/tlahuac.jpg",
+            "category": "CDMX",
+            "borough": "Tláhuac",
+            "topic": "Plaza central de San Pedro Tláhuac",
+            "author": "Yavidaxiu",
+            "license": "CC BY 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Tl%C3%A1huac-Plaza_central.JPG"
+          }
+        },
         {
           "title": "Destina Tláhuac 9 mdp para los espectáculos",
           "description": "De acuerdo con Diario Basta!, el titular publicado es: «Destina Tláhuac 9 mdp para los espectáculos». La información publicada por Diario Basta! aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -15216,17 +15116,52 @@
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           },
           "photo": {
-            "id": "alcaldia_tlahuac",
+            "id": "commons_145192503",
             "kind": "representativa",
-            "url": "/assets/alcaldias/tlahuac.jpg",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/DECLARATORIA_DE_CARNAVALES_COMO_PATRIMONIO_CULTURAL_INMATERIAL_DE_LA_CIUDAD_DE_M%C3%89XICO_22.jpg/960px-DECLARATORIA_DE_CARNAVALES_COMO_PATRIMONIO_CULTURAL_INMATERIAL_DE_LA_CIUDAD_DE_M%C3%89XICO_22.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
             "category": "CDMX",
-            "borough": "Tláhuac",
-            "topic": "Plaza central de San Pedro Tláhuac",
-            "author": "Yavidaxiu",
-            "license": "CC BY 3.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Tl%C3%A1huac-Plaza_central.JPG"
-          }
+            "borough": "",
+            "topic": "DECLARATORIA DE CARNAVALES COMO PATRIMONIO CULTURAL INMATERIAL DE LA CIUDAD DE MÉXICO 22",
+            "keywords": [
+              "Calles Ciudad de México"
+            ],
+            "author": "Secretaría de Cultura CDMX",
+            "license": "CC BY 2.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+            "source": "https://commons.wikimedia.org/wiki/File:DECLARATORIA_DE_CARNAVALES_COMO_PATRIMONIO_CULTURAL_INMATERIAL_DE_LA_CIUDAD_DE_M%C3%89XICO_22.jpg"
+          },
+          "alternate_versions": [
+            {
+              "title": "Destina Tláhuac 9 mdp para los espectáculos",
+              "description": "De acuerdo con Diario Basta!, el titular publicado es: «Destina Tláhuac 9 mdp para los espectáculos». La información publicada por Diario Basta! aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+              "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNbDAxMXhXZ25TVEN0czN5cTNvTUZTdlVTczBfbWVsc1JMVk9ISDZ2WTRiZjlCZ1BMS0U1M0hCMkxjYXBDMlUtakpiazgxVEUyaXIyUEdkUHRpNndHSHF2d1JmWHdYV3ZVaWRFTmZhYXBodmItRWtidG8zYmxkSWdrTktrQ1Uydw?oc=5",
+              "source": "Diario Basta!",
+              "date": "2026-11-14",
+              "published_at": "2026-11-14T18:44:15Z",
+              "category": "CDMX",
+              "borough": "Tláhuac",
+              "location": "Tláhuac (mencionada en el titular)",
+              "local_url": "/noticias/?id=05b243ba404099c3476e&mes=2026-11",
+              "brief": {
+                "lead": "De acuerdo con Diario Basta!, el titular publicado es: «Destina Tláhuac 9 mdp para los espectáculos». La información publicada por Diario Basta! aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+                "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+                "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+              },
+              "photo": {
+                "id": "alcaldia_tlahuac",
+                "kind": "representativa",
+                "url": "/assets/alcaldias/tlahuac.jpg",
+                "category": "CDMX",
+                "borough": "Tláhuac",
+                "topic": "Plaza central de San Pedro Tláhuac",
+                "author": "Yavidaxiu",
+                "license": "CC BY 3.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+                "source": "https://commons.wikimedia.org/wiki/File:Tl%C3%A1huac-Plaza_central.JPG"
+              }
+            }
+          ]
         },
         {
           "title": "Clima en Tláhuac hoy sábado 14 de noviembre: cielo despejado y ambiente fresco",
@@ -16871,114 +16806,31 @@
             "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.es",
             "source": "https://commons.wikimedia.org/wiki/File:Patrulla_cdmx.jpg"
           }
-        },
-        {
-          "title": "Video: Así fue el asalto a un banco en Tláhuac, CDMX; hay un detenido",
-          "description": "De acuerdo con López-Dóriga Digital, el titular publicado es: «Video: Así fue el asalto a un banco en Tláhuac, CDMX; hay un detenido». Una nota de López-Dóriga Digital comunica un caso relacionado con una detención o una presunta conducta delictiva en Tláhuac. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
-          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOZFBVcV9QU05aa09seXFiTHVmNFdBSUNUdXVTVTZZLXJIYnRhYVpMTXZnM0pOSHJST1UydF83UmJxYVZmYzlFdTJyNXFrWFdUWEI1TXF6VXlJbG90Zk9nMUN1eDAxMTNHLTdGVVFXaS1tVUxJSHF1bzJxTDJWVk9IY2ZxODFod3FFT3JyRHRkcDhNTkludnVfeW9XY2xDYUJuYXc?oc=5",
-          "source": "López-Dóriga Digital",
-          "date": "2026-11-09",
-          "published_at": "2026-11-09T18:12:30Z",
-          "category": "Seguridad",
-          "borough": "Tláhuac",
-          "location": "Tláhuac (mencionada en el titular)",
-          "local_url": "/noticias/?id=36e6d498276218115af6&mes=2026-11",
-          "alternate_versions": [
-            {
-              "title": "Video: Así fue el asalto a un banco en Tláhuac, CDMX; hay un detenido",
-              "description": "De acuerdo con López-Dóriga Digital, el titular publicado es: «Video: Así fue el asalto a un banco en Tláhuac, CDMX; hay un detenido». Una nota de López-Dóriga Digital comunica un caso relacionado con una detención o una presunta conducta delictiva en Tláhuac. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
-              "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOZFBVcV9QU05aa09seXFiTHVmNFdBSUNUdXVTVTZZLXJIYnRhYVpMTXZnM0pOSHJST1UydF83UmJxYVZmYzlFdTJyNXFrWFdUWEI1TXF6VXlJbG90Zk9nMUN1eDAxMTNHLTdGVVFXaS1tVUxJSHF1bzJxTDJWVk9IY2ZxODFod3FFT3JyRHRkcDhNTkludnVfeW9XY2xDYUJuYXc?oc=5",
-              "source": "López-Dóriga Digital",
-              "date": "2026-11-09",
-              "published_at": "2026-11-09T18:12:30Z",
-              "category": "Seguridad",
-              "borough": "Tláhuac",
-              "location": "Tláhuac (mencionada en el titular)",
-              "local_url": "/noticias/?id=36e6d498276218115af6&mes=2026-11",
-              "brief": {
-                "lead": "De acuerdo con López-Dóriga Digital, el titular publicado es: «Video: Así fue el asalto a un banco en Tláhuac, CDMX; hay un detenido». Una nota de López-Dóriga Digital comunica un caso relacionado con una detención o una presunta conducta delictiva en Tláhuac. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
-                "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
-                "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-              },
-              "photo": {
-                "id": "archivo_seguridad_005",
-                "kind": "representativa",
-                "url": "/assets/fotos/archivo_seguridad_005.jpg",
-                "category": "Seguridad",
-                "borough": "",
-                "topic": "Jeep policia cdmx",
-                "keywords": [
-                  "Seguridad"
-                ],
-                "author": "Gobierno de la Ciudad de México",
-                "license": "CC BY-SA 4.0",
-                "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-                "source": "https://commons.wikimedia.org/wiki/File:Jeep_policia_cdmx.jpg"
-              }
-            },
-            {
-              "title": "Video: Así fue el asalto a un banco en Tláhuac, CDMX; hay un detenido",
-              "description": "De acuerdo con López-Dóriga Digital, el titular publicado es: «Video: Así fue el asalto a un banco en Tláhuac, CDMX; hay un detenido». Una nota de López-Dóriga Digital comunica un caso relacionado con una detención o una presunta conducta delictiva en Tláhuac. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
-              "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOZFBVcV9QU05aa09seXFiTHVmNFdBSUNUdXVTVTZZLXJIYnRhYVpMTXZnM0pOSHJST1UydF83UmJxYVZmYzlFdTJyNXFrWFdUWEI1TXF6VXlJbG90Zk9nMUN1eDAxMTNHLTdGVVFXaS1tVUxJSHF1bzJxTDJWVk9IY2ZxODFod3FFT3JyRHRkcDhNTkludnVfeW9XY2xDYUJuYXc?oc=5",
-              "source": "López-Dóriga Digital",
-              "date": "2026-11-09",
-              "published_at": "2026-11-09T18:12:30Z",
-              "category": "CDMX",
-              "borough": "Tláhuac",
-              "location": "Tláhuac (mencionada en el titular)",
-              "local_url": "/noticias/?id=36e6d498276218115af6&mes=2026-11",
-              "brief": {
-                "lead": "De acuerdo con López-Dóriga Digital, el titular publicado es: «Video: Así fue el asalto a un banco en Tláhuac, CDMX; hay un detenido». Una nota de López-Dóriga Digital comunica un caso relacionado con una detención o una presunta conducta delictiva en Tláhuac. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
-                "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-                "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-              },
-              "photo": {
-                "id": "archivo_seguridad_005",
-                "kind": "representativa",
-                "url": "/assets/fotos/archivo_seguridad_005.jpg",
-                "category": "Seguridad",
-                "borough": "",
-                "topic": "Jeep policia cdmx",
-                "keywords": [
-                  "Seguridad"
-                ],
-                "author": "Gobierno de la Ciudad de México",
-                "license": "CC BY-SA 4.0",
-                "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-                "source": "https://commons.wikimedia.org/wiki/File:Jeep_policia_cdmx.jpg"
-              }
-            }
-          ],
-          "brief": {
-            "lead": "De acuerdo con López-Dóriga Digital, el titular publicado es: «Video: Así fue el asalto a un banco en Tláhuac, CDMX; hay un detenido». Una nota de López-Dóriga Digital comunica un caso relacionado con una detención o una presunta conducta delictiva en Tláhuac. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
-            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
-            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "archivo_seguridad_005",
-            "kind": "representativa",
-            "url": "/assets/fotos/archivo_seguridad_005.jpg",
-            "category": "Seguridad",
-            "borough": "",
-            "topic": "Jeep policia cdmx",
-            "keywords": [
-              "Seguridad"
-            ],
-            "author": "Gobierno de la Ciudad de México",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Jeep_policia_cdmx.jpg"
-          }
         }
       ]
     },
     {
       "name": "Tlalpan",
-      "count": 230,
+      "count": 231,
       "articles": [
+        {
+          "title": "Vinculan a proceso a segundo implicado en el homicidio del exlíder sindical del ISSSTE en Tlalpan",
+          "description": "De acuerdo con El Sol de México, el titular publicado es: «Vinculan a proceso a segundo implicado en el homicidio del exlíder sindical del ISSSTE en Tlalpan». La información publicada por El Sol de México aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOVTBaWG9XdFFYZ3VLVmxud3JYSnN1UXZXc1RPdkFDdHk0ZG4zNW4xSGlFU2o0cGhBSzVZblR3SFdEZzJSOFhROTNoUEpBUGRfelhmS0NvZ0lIUlo0aDZ0M0ZhVi1vM3RKR2d1dDRiaEhyRHVhLTZjSzFyS1Q4X19FTWQwQm10YTBPeXZQRF9tUi1GTjIwakZWZVF2WDhsZmNvM2gwbDR2dkxvaHNSc2g5cGphSHZlcjFvQ2ota2UtOUI0NXBreXRWU0FsbVdDYTBLY1ZSQ3N4dl9IM3JoUWc?oc=5",
+          "source": "El Sol de México",
+          "date": "2026-11-14",
+          "published_at": "2026-11-14T20:03:07Z",
+          "category": "Seguridad",
+          "borough": "Tlalpan",
+          "location": "Tlalpan (mencionada en el titular)",
+          "local_url": "/noticias/?id=ac907eb53e8b99b07df1&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con El Sol de México, el titular publicado es: «Vinculan a proceso a segundo implicado en el homicidio del exlíder sindical del ISSSTE en Tlalpan». La información publicada por El Sol de México aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          }
+        },
         {
           "title": "Cae presunto cómplice de crimen del exlíder sindical en Tlalpan",
           "description": "De acuerdo con Quadratín México, el titular publicado es: «Cae presunto cómplice de crimen del exlíder sindical en Tlalpan». La información publicada por Quadratín México aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -17841,32 +17693,64 @@
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           },
           "sensitive_media": true
-        },
-        {
-          "title": "Detienen a acusado de maltrato animal en Tlalpan",
-          "description": "De acuerdo con El Universal, el titular publicado es: «Detienen a acusado de maltrato animal en Tlalpan». Una nota de El Universal comunica un caso relacionado con una detención o una presunta conducta delictiva en Tlalpan. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
-          "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxNQWd0QUhWdzI0a2tBckRsM2FOQ1hZeUpTcHJsM2drSmQ2QXk4ZmhBYXJTZ0hvU19FRHVhR1drQS1CZ0VpckY5WUNCdVgycHZ3enhuVV9sbE1BMGI4dXZwWnczMi1xN1lEdVRFODBRdzc1NUxwa21JaDhzWG12NUNrRl93eWtCR1BGRS1fV3FYRkNNYWVuVWw0ODNkbkR0bEVwelRFQmhxdzBCUS1Jak5QWDlPc3pHYkc2cTBTeFZwazU4anI5NTd4eU85QTJMU3oyX3JKOFljekVkOFZyVkJIVmdTb3RBME1fZ3lOdXpzb25NRUM2OXJR0gGLAkFVX3lxTE13TVg2TDd3RDhtcnhETW9PbzEtMmlTbUlUeVJDVFR3VjhHc0NjTFVDZmkwSlV2dUE5aDBsRnl4TTdFaU9TeGJycXR3X2dpQ2JSOHZMTnAxQkJ1YmRIS2VrcHd5aHBUNDJaX1RaVmhSMGJfMl9wLXVLSUJCQ0RMd2dqZE5OYTFNRG9sVkNUazdJakNVRTR4amlBVGstakhBS2J3SHlJbFVlcFo2cHZuNFZoUEJ3UTkzcVY5eXRzU3hFTk5ETzN5VWpYX3hWMkFpc0lweXFqendQWTFsX3JiNno0UXlBVmxUeXptdHlJR1lQUzdUT1Vmd3kxWG5yek5sTXBWRFQwaS03dnNSZw?oc=5",
-          "source": "El Universal",
-          "date": "2026-11-12",
-          "published_at": "2026-11-12T15:37:00Z",
-          "category": "Seguridad",
-          "borough": "Tlalpan",
-          "location": "Tlalpan (mencionada en el titular)",
-          "local_url": "/noticias/?id=429de5a6ab25587e32fc&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con El Universal, el titular publicado es: «Detienen a acusado de maltrato animal en Tlalpan». Una nota de El Universal comunica un caso relacionado con una detención o una presunta conducta delictiva en Tlalpan. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
-            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
-            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "sensitive_media": true
         }
       ]
     },
     {
       "name": "Venustiano Carranza",
-      "count": 52,
+      "count": 54,
       "articles": [
+        {
+          "title": "Caen tres hombres con 15 kilos de mariguana y más de 650 dosis de cocaína en Venustiano Carranza",
+          "description": "De acuerdo con MILENIO, el titular publicado es: «Caen tres hombres con 15 kilos de mariguana y más de 650 dosis de cocaína en Venustiano Carranza». La información publicada por MILENIO aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxON00zbjZ6YVM1TkktdkQyMUo5TExDN2dCY0ZRZksxNDFYUWdNNXVWS0E1dy0tM1dVQ0lNWnU4ZWVGSzd6VUNRVFNsaVpEeEE1SjhfSXZud0REZUFjM3BSSVAxQkJOQnNfdnhTYmdURzlXZVJpNlVvb0pjanFlejJIMTU5LXVwbm4wNDZOMdIBjAFBVV95cUxPWlloSHdJZXpRVjZaMUQxUzNoc01uWnI0MEFOYzd3OGQyN0tYT05abTNpS3l2YVRjZFFyS1VQRkVNNkdmb3VjQWl1YklKem5GRE1XNHMwN1QyTEF5WHJ5R1Q4anplMnEyeGIwcC00S1RhNXBMQ3ZLVTBJM2QxQlczMndaMUs1czBTbFotQQ?oc=5",
+          "source": "MILENIO",
+          "date": "2026-11-14",
+          "published_at": "2026-11-14T19:59:00Z",
+          "category": "Seguridad",
+          "borough": "Venustiano Carranza",
+          "location": "Venustiano Carranza (mencionada en el titular)",
+          "local_url": "/noticias/?id=082ae19ae35ca8a8b775&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con MILENIO, el titular publicado es: «Caen tres hombres con 15 kilos de mariguana y más de 650 dosis de cocaína en Venustiano Carranza». La información publicada por MILENIO aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "commons_75245851",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Graduaci%C3%B3n_de_la_Polic%C3%ADa_de_la_Ciudad_de_M%C3%A9xico_-i---i-_%2837066129081%29.jpg/960px-Graduaci%C3%B3n_de_la_Polic%C3%ADa_de_la_Ciudad_de_M%C3%A9xico_-i---i-_%2837066129081%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "category": "Seguridad",
+            "borough": "",
+            "topic": "Graduación de la Policía de la Ciudad de México -i---i- (37066129081)",
+            "keywords": [
+              "Policía Ciudad de México"
+            ],
+            "author": "Gobierno CDMX",
+            "license": "CC0",
+            "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+            "source": "https://commons.wikimedia.org/wiki/File:Graduaci%C3%B3n_de_la_Polic%C3%ADa_de_la_Ciudad_de_M%C3%A9xico_-i---i-_(37066129081).jpg"
+          }
+        },
+        {
+          "title": "Detienen a Tres por Presunto Narcomenudeo en Venustiano Carranza, CDMX",
+          "description": "De acuerdo con N+, el titular publicado es: «Detienen a Tres por Presunto Narcomenudeo en Venustiano Carranza, CDMX». Una nota de N+ comunica un caso relacionado con una detención o una presunta conducta delictiva en Venustiano Carranza. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
+          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNem9yeGliRG8yS0tVNXNGeWtENDdtb2pWcVJZckFLYUlfMkNVWGZ1NHZ0ZzZpQTRMRXhEWlIyWHFwWmdRM0hfLXF5WDh3QWVseHFaM3lvcmVNR2dyS3V2NWZwLTBmaFRiT2thSjJZeE84Q0pqbG1GQWJlRlJLSmhZQnhoSFdUSTJmYUtjLWpNemM4YTQ5azBhVUpMOFRHYjl5Ym5pN3FZR2ZVRGFZeS1kUF9ZbEI3Y0U3WllNcFFZQUc3WHNfLUZzNHNqNjNrOGl5?oc=5",
+          "source": "N+",
+          "date": "2026-11-14",
+          "published_at": "2026-11-14T19:23:37Z",
+          "category": "Seguridad",
+          "borough": "Venustiano Carranza",
+          "location": "Venustiano Carranza (mencionada en el titular)",
+          "local_url": "/noticias/?id=b88dcbb086a82af8c298&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con N+, el titular publicado es: «Detienen a Tres por Presunto Narcomenudeo en Venustiano Carranza, CDMX». Una nota de N+ comunica un caso relacionado con una detención o una presunta conducta delictiva en Venustiano Carranza. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
+            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          }
+        },
         {
           "title": "AICM informa que vuelos desde y hacia EU se regularizan tras falla aérea",
           "description": "De acuerdo con La Jornada, el titular publicado es: «AICM informa que vuelos desde y hacia EU se regularizan tras falla aérea». La información publicada por La Jornada aborda un asunto que este portal clasifica como Movilidad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -19317,42 +19201,6 @@
             "lead": "De acuerdo con La Razón de México, el titular publicado es: «Detienen a 4 en alcaldía Venustiano Carranza y decomisan 3 mil dosis de posible cocaína». Una nota de La Razón de México comunica un caso relacionado con una detención o una presunta conducta delictiva en Venustiano Carranza. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
             "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
             "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
-        },
-        {
-          "title": "Detienen a Cuatro Presuntos Integrantes de Célula Delictiva en Venustiano Carranza",
-          "description": "De acuerdo con N+, el titular publicado es: «Detienen a Cuatro Presuntos Integrantes de Célula Delictiva en Venustiano Carranza». Una nota de N+ comunica un caso relacionado con una detención o una presunta conducta delictiva en Venustiano Carranza. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
-          "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOQUlraTZNXzZmam8tNXgwcV9PUDNyWXk3UXhPbzg5SWJPbEJSa2dGcWZoOUs2NXgtNHZ3NkxjZGtFejVSRmt3bUlGblY3a1lvYXRReU5leFA5QzBTc0xvNzhJQTZNeklTdDQyb2c5SzEzcWE2ckRsLUM2N3FuWGRxdmxVR0ptbENxZ21XNGpWVl9qM2ozNGtPYXBwOVpaaF9ud3o5MGNfU3Z4ZXlURGVwTkFGTlQtWW9QeEJUQzhMdG92OGlFQkFmajZkQkZJS2FRVzN4M1Byc1ZaSks4T1dnNURR?oc=5",
-          "source": "N+",
-          "date": "2026-11-07",
-          "published_at": "2026-11-07T17:15:29Z",
-          "category": "Seguridad",
-          "borough": "Venustiano Carranza",
-          "location": "Venustiano Carranza (mencionada en el titular)",
-          "local_url": "/noticias/?id=9ecd420f3789d5c2db86&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con N+, el titular publicado es: «Detienen a Cuatro Presuntos Integrantes de Célula Delictiva en Venustiano Carranza». Una nota de N+ comunica un caso relacionado con una detención o una presunta conducta delictiva en Venustiano Carranza. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
-            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
-            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
-        },
-        {
-          "title": "Pronóstico del clima en Venustiano Carranza: Sábado 7 de noviembre con cielo claro",
-          "description": "De acuerdo con El Heraldo de México, el titular publicado es: «Pronóstico del clima en Venustiano Carranza: Sábado 7 de noviembre con cielo claro». El pronóstico recogido por El Heraldo de México se refiere a condiciones meteorológicas en Venustiano Carranza. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
-          "url": "https://news.google.com/rss/articles/CBMingJBVV95cUxNanJaUGtWdVZNRnlpSFdDcmUwU3RNMlBfZE9QNExNQ19jQnphYUVXZ0F2TDM0NTN3S0pyYnRINGJMN0o3bklpbkpVOHBfNklTWm5vQVpWa2o1UHZQNnA0YjZRcnBiamZUSGhKM1lFVzRISU9fRlB2UkhYYVkzVTdMREF0N0pJR0s3c3BjeHVYcm90N2tHZE9EQ1ZfZWpGdXp1SnZfckRoRFJocmJYc0JuZF8tZDUxeTk5dk9jUXNfMlYwRnhMX05ZTDNySDhiLWFVNDlUU0VCV2NSbm8tODlYaDFhNXRCWGJISzc2RHVSODIzdE5pOGNEZXUxbGFFMENDcTlySmJzSFNyQUhLblZwT25ZeXlLcm5JMVZrTFdR?oc=5",
-          "source": "El Heraldo de México",
-          "date": "2026-11-06",
-          "published_at": "2026-11-07T05:00:55Z",
-          "category": "CDMX",
-          "borough": "Venustiano Carranza",
-          "location": "Venustiano Carranza (mencionada en el titular)",
-          "local_url": "/noticias/?id=a3464c91fa5f82de7d85&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con El Heraldo de México, el titular publicado es: «Pronóstico del clima en Venustiano Carranza: Sábado 7 de noviembre con cielo claro». El pronóstico recogido por El Heraldo de México se refiere a condiciones meteorológicas en Venustiano Carranza. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           }
         }
