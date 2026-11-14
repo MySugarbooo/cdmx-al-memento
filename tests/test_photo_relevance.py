@@ -2925,5 +2925,30 @@ class CurrentEditorialPhotoRegressionTests(unittest.TestCase):
         ))
 
 
+    def test_defensive_driving_workshop_rejects_city_monument_and_uses_traffic_context(self):
+        title = "Ofrecen taller gratuito de manejo defensivo y preventivo para mujeres en CDMX"
+        article = self.make_article(title, source="El Sol de México")
+        unrelated = self.photo("commons_33473121")
+        relevant = self.photo("contexto_trafico_eje_central")
+        self.assertIsNotNone(unrelated)
+        self.assertIsNotNone(relevant)
+        self.assertIn("Monumento a Colón", unrelated["topic"])
+        self.assertIn("Tráfico vehicular", relevant["topic"])
+
+        article["photo"] = unrelated
+        self.assertLess(_photo_score(article, unrelated), 0)
+        self.assertGreaterEqual(_photo_score(article, relevant), 0)
+        with patch.object(photos, "_pool", return_value=[unrelated, relevant]):
+            assign_photos([article])
+        self.assertEqual(article["photo"]["id"], "contexto_trafico_eje_central")
+        self.assertEqual(article["photo"]["kind"], "representativa")
+        self.assertTrue(article["photo"]["author"])
+        self.assertTrue(article["photo"]["license"])
+        self.assertTrue(article["photo"]["licenseUrl"])
+        self.assertTrue(article["photo"]["source"].startswith(
+            "https://commons.wikimedia.org/wiki/File:"
+        ))
+
+
 if __name__ == "__main__":
     unittest.main()
