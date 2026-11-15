@@ -2741,7 +2741,7 @@ class CurrentFeedEditorialPhotoRegressionTests(unittest.TestCase):
         self.assertIn("La Razón de México", summary["lead"])
         self.assertIn("Paulina Villarreal", summary["context"])
         self.assertIn("Mariachi Fiesta de México", summary["context"])
-        self.assertIn(photos.LA_RAZON_GARBAGE_ZOCALO_SOURCE_URL, summary["method"])
+        self.assertIn("SEDEMA", summary["method"])
         self.assertIn("no realizó un conteo independiente", summary["pending"])
 
     def test_la_jornada_garbage_summary_uses_reported_attendance_and_saldo_blanco(self):
