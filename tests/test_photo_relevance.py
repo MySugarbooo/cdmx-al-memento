@@ -3798,6 +3798,49 @@ class CurrentFeedPhotoMismatchRegressionTests(unittest.TestCase):
             assign_photos([article])
         self.assertNotIn("photo", article)
 
+    def test_letape_cycling_story_rejects_concert_photo_and_uses_cicloton_photo(self):
+        title = (
+            "L'Etape Ciudad de México by Tour de France 2026: "
+            "Ruta, calles cerradas y alternativas viales en la CDMX"
+        )
+        article = news.standardize({
+            "title": title,
+            "url": "https://news.google.com/rss/articles/letape-cdmx-2026",
+            "source": "Reporte Indigo",
+            "date": "2026-11-14",
+            "category": "Movilidad",
+        })
+        self.assertEqual(article["category"], "Movilidad")
+
+        pool = photos._pool()
+        concert = next(
+            photo for photo in pool
+            if photo.get("id") == "contexto_concierto_palacio_deportes_2009"
+        )
+        cicloton = next(
+            photo for photo in pool
+            if photo.get("id") == "commons_41703830"
+        )
+        self.assertLess(_photo_score(article, concert), 0)
+        self.assertGreater(_photo_score(article, cicloton), 0)
+        self.assertEqual(cicloton["author"], "LEON23")
+        self.assertEqual(cicloton["license"], "CC BY 3.0")
+        self.assertEqual(
+            cicloton["source"],
+            "https://commons.wikimedia.org/wiki/File:CICLOTON_DF_IZTACALCO_(BY_LION)_-_panoramio.jpg",
+        )
+
+        article["photo"] = deepcopy(concert)
+        with patch.object(photos, "_pool", return_value=[concert, cicloton]), patch.object(
+            photos, "_load", return_value=[]
+        ):
+            photos.assign_photos([article])
+
+        self.assertEqual(article["photo"]["id"], "commons_41703830")
+        self.assertEqual(article["photo"]["kind"], "representativa")
+        self.assertEqual(article["photo"]["author"], "LEON23")
+        self.assertEqual(article["photo"]["license"], "CC BY 3.0")
+
     def test_sectei_digital_classrooms_are_government_not_security(self):
         title = (
             "Destaca SECTEI instalación de 464 aulas digitales y mayor seguridad "
