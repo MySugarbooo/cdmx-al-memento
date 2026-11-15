@@ -4,7 +4,7 @@ import unittest
 from pathlib import Path
 from scripts.notas_locales import assign_photos, local_link, summarize, is_sensitive_media, RADIO_FORMULA_CASA_ECOLOGICA_SOURCE_URL, INFOBAE_MARIA_LEON_CONCERT_SOURCE_URL, AICM_FLIGHT_SUSPENSION_SOURCE_URL
 from scripts.build_article_seo import article_id, render
-from update_news import category_by_headline, standardize, photo_needs_refresh, CAPITAL_CDMX_CARE_BUDGET_SOURCE_URL, prioritize_photo_refresh, build_homepage_feed, archive_record_key, dedupe_homepage_events
+from update_news import category_by_headline, standardize, photo_needs_refresh, CAPITAL_CDMX_CARE_BUDGET_SOURCE_URL, prioritize_photo_refresh, build_homepage_feed, archive_record_key, dedupe_homepage_events, AMBITO_VITE_BALU_SOURCE_URL
 
 ROOT=Path(__file__).resolve().parents[1]
 
@@ -442,6 +442,33 @@ class LocalNewsTests(unittest.TestCase):
         })
         self.assertIsNotNone(different)
         self.assertEqual(len(dedupe_homepage_events([el_universal, different])), 2)
+
+    def test_ambito_vite_balu_duplicate_is_grouped_and_infobae_is_preferred(self):
+        ambito = standardize({
+            "title": "Capturan a El Vite y El Balú en el Centro de la CDMX con 15 kilos de marihuana y más de 600 dosis de cocaína",
+            "url": "https://news.google.com/rss/articles/ambito-vite-balu-duplicate",
+            "source": "Ambito",
+            "date": "2026-11-14",
+            "published_at": "2026-11-14T23:35:00Z",
+            "category": "CDMX",
+        })
+        infobae = standardize({
+            "title": "Capturan al Vite y al Balú en el Centro de CDMX con 15 kilos de marihuana y más de 600 dosis de cocaína",
+            "url": "https://news.google.com/rss/articles/infobae-vite-balu-duplicate",
+            "source": "Infobae",
+            "date": "2026-11-14",
+            "published_at": "2026-11-14T22:24:00Z",
+            "category": "Seguridad",
+        })
+        self.assertIsNotNone(ambito)
+        self.assertIsNotNone(infobae)
+        self.assertEqual(ambito["source_url"], AMBITO_VITE_BALU_SOURCE_URL)
+        self.assertNotEqual(archive_record_key(ambito), archive_record_key(infobae))
+        visible = dedupe_homepage_events([ambito, infobae])
+        self.assertEqual(len(visible), 1)
+        self.assertEqual(visible[0]["source"], "Infobae")
+        self.assertEqual(visible[0]["local_url"], infobae["local_url"])
+        self.assertEqual(len([ambito, infobae]), 2)
 
     def test_same_november_14_protest_agenda_is_grouped_but_both_sources_remain_in_archive(self):
         tv_azteca = standardize({
