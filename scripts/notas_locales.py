@@ -78,6 +78,7 @@ LA_JORNADA_CASA_ECOLOGICA_SOURCE_URL = "https://www.jornada.com.mx/noticia/2026/
 CAPITAL_CDMX_CARE_BUDGET_SOURCE_URL = "https://capital-cdmx.org/presupuesto-cuidados-2027-cdmx-cuanto-dinero-llegara-anexo-31-desglose/"
 EL_SOL_MUJERES_DEFENSIVE_DRIVING_SOURCE_URL = "https://oem.com.mx/elsoldemexico/metropoli/ofrecen-taller-gratuito-de-manejo-defensivo-y-preventivo-para-mujeres-en-cdmx-33130686"
 HORAS_24_ELECTRIC_MOBILITY_SOURCE_URL = "https://24-horas.mx/cdmx/registro-emplacamiento-vemepe-vep-cdmx-costos-requisitos/"
+AMBITO_VITE_BALU_SOURCE_URL = "https://www.ambito.com/mexico/informacion-general/capturan-el-vite-y-el-balu-el-centro-la-cdmx-15-kilos-marihuana-y-mas-600-dosis-cocaina-n6345332"
 
 
 def is_radio_formula_casa_ecologica(article):
@@ -104,6 +105,19 @@ def is_capital_cdmx_care_budget(article):
         str(article.get("date") or "") == "2026-11-12"
         and source == "capital cdmx"
         and "presupuesto de cuidados 2027" in title
+    )
+
+
+def is_ambito_vite_balu_story(article):
+    """Identifica la cobertura de Ámbito sobre El Vite y El Balú del 14/11/2026."""
+    title = _photo_fold(article.get("title"))
+    source = _photo_fold(article.get("source"))
+    return (
+        str(article.get("date") or "") == "2026-11-14"
+        and source == "ambito"
+        and "capturan" in title
+        and "vite" in title
+        and "balu" in title
     )
 
 
@@ -640,6 +654,32 @@ def summarize(article):
                 "con El Queretano, publicado el 14 de noviembre de 2026: "
                 "https://elqueretano.info/subterraneo/detienen-en-queretaro-a-hombre-acusado-de-abuso-sexual-en-cdmx/. "
                 "Los datos se atribuyen a esa cobertura; no se consultó el expediente judicial."
+            ),
+        }
+    if is_ambito_vite_balu_story(article):
+        return {
+            "lead": (
+                "Ámbito informó que la SSC detuvo a dos presuntos distribuidores conocidos como "
+                "“El Vite” y “El Balú” en la colonia Centro. El medio reportó el aseguramiento de "
+                "15 kilos de marihuana y más de 600 dosis de cocaína; señaló que los detenidos "
+                "quedaron a disposición del Ministerio Público."
+            ),
+            "context": (
+                "La ubicación y las cifras no coinciden entre las coberturas consultadas: Ámbito "
+                "sitúa el operativo en Cuauhtémoc y reporta dos detenidos; Infobae y El Universal "
+                "lo ubican en Venustiano Carranza y reportan tres personas y 655 dosis. Se conservan "
+                "las versiones atribuidas a cada medio sin combinar sus datos."
+            ),
+            "pending": (
+                "No se localizó un comunicado de la SSC que permita resolver la discrepancia sobre "
+                "alcaldía, número de personas detenidas y cantidad exacta de dosis. La situación "
+                "jurídica corresponde al Ministerio Público y no se presume culpabilidad."
+            ),
+            "method": (
+                "Síntesis editorial basada en la publicación de Ámbito del 14 de noviembre de 2026: "
+                + AMBITO_VITE_BALU_SOURCE_URL
+                + ". Se contrastó con la cobertura de Infobae y el reporte de El Universal; las cifras "
+                "se atribuyen a cada medio y no constituyen verificación independiente."
             ),
         }
     if is_24horas_electric_mobility_plates_guide(article):
@@ -1435,7 +1475,7 @@ def _photo_fold(text):
 # Ubicaciones inequívocas dentro de las alcaldías. Si una foto declara otra
 # demarcación, no debe ilustrar una noticia localizada en una distinta.
 PHOTO_BOROUGH_ALIASES = {
-    "la magdalena contreras": ("la magdalena contreras", "magdalena contreras"),
+    "la magdalena contreras": ("la magdalena contreras", "magdalena contreras", "cerro del judio"),
     "alvaro obregon": ("alvaro obregon",),
     "azcapotzalco": ("azcapotzalco",),
     "benito juarez": ("benito juarez",),
@@ -1522,7 +1562,7 @@ def _photo_category(article):
     # aunque el titular mencione la celebración de Día de Muertos.
     if re.search(r"\boperativos? de seguridad\b", headline):
         return "Seguridad"
-    if re.search(r"\b(?:caen\s+(?:\d+|un|una|dos|tres|cuatro|cinco|seis)|(?:detienen|arrestan|capturan|aprehenden)\s+a\s+(?:\d+|un|una|dos|tres|cuatro|cinco|seis|personas|hombres|mujeres))\b", headline):
+    if re.search(r"\b(?:caen\s+(?:\d+|un|una|dos|tres|cuatro|cinco|seis)|(?:detienen|arrestan|capturan|aprehenden)\s+a\s+(?:\d+|un|una|dos|tres|cuatro|cinco|seis|personas|hombres|mujeres|[a-z0-9]+))\b", headline):
         return "Seguridad"
     if re.search(r"\b(?:secuestro|secuestrador(?:es)?|secuestrad[oa]s?|privacion de la libertad)\b", headline):
         return "Seguridad"
@@ -2046,6 +2086,18 @@ def _photo_score(article, photo):
             context,
         ))
         return 5000 if metro_schedule_photo else -10000
+    # Un horario general de transporte público requiere una unidad o infraestructura de transporte,
+    # no una vista turística de una alcaldía.
+    public_transport_story = bool(re.search(
+        r"\b(?:transporte publico|transporte colectivo|servicio de transporte)\b", headline
+    ))
+    public_transport_photo = bool(re.search(
+        r"\b(?:metro|metrobus|trolebus|cablebus|tren(?:es)?|autobus(?:es)?|microbus(?:es)?|"
+        r"transporte publico|transporte colectivo|taxi(?:s)?|paradas? de autobus|estacion(?:es)?)\b",
+        context,
+    ))
+    if public_transport_story and not public_transport_photo:
+        return -10000
     # Un taller de manejo defensivo necesita contexto vial o de conducción;
     # un monumento de CDMX no ilustra una capacitación para automovilistas.
     driving_training_story = bool(re.search(
@@ -2213,7 +2265,7 @@ def _photo_score(article, photo):
     lgbt_photo = bool(re.search(r"\b(?:lgbtttiq|lgbtq?|diversidad sexual|marcha del orgullo|orgullo lgbt)\b", context))
     # Las notas de renta, compra o acceso a vivienda requieren contexto residencial.
     housing_story = bool(re.search(
-        r"\b(?:rentas?|rentar|rentan|alquiler|mercado inmobiliario|inmobiliari[oa]s?|precios? de vivienda|compra de vivienda|comprar vivienda|venta de vivienda|crisis habitacional|vivienda social|vivienda asequible)\b",
+        r"\b(?:rentas?|rentar|rentan|alquiler|mercado inmobiliario|inmobiliari[oa]s?|precios? de vivienda|compra de vivienda|comprar vivienda|venta de vivienda|crisis habitacional|vivienda social|vivienda asequible|viviendas?|hogares?|predios?|desaloj\w*)\b",
         headline,
     ))
     housing_photo = bool(re.search(
@@ -2280,7 +2332,7 @@ def _photo_score(article, photo):
     # En robos, asaltos y extorsiones, la coincidencia de alcaldía no basta:
     # exigir una imagen con contexto de seguridad antes de puntuar el lugar.
     crime_story = bool(re.search(
-        r"\b(?:robo|robos|roban|robado|robada|robaron|robar|decomis\w*|incaut\w*|asalt\w*|ataques? armados?|extorsion|extorsionan|ejecutan|ejecutad\w*|ejecucion|asesina(?:n)?|asesinad\w*|asesinato|homicidio|crimen(?:es)?|complice|matan|balazos|balacera|secuestro|secuestrador(?:es)?|secuestrad[oa]s?|privacion de la libertad|delitos?\s+(?:contra|a)\s+(?:empresas?|comercios?|negocios?))\b",
+        r"\b(?:robo|robos|roban|robado|robada|robaron|robar|decomis\w*|incaut\w*|asalt\w*|deten\w*|captur\w*|arrest\w*|aprehend\w*|amenaz\w*|ataques? armados?|extorsion|extorsionan|ejecutan|ejecutad\w*|ejecucion|asesina(?:n)?|asesinad\w*|asesinato|homicidio|crimen(?:es)?|complice|matan|balazos|balacera|secuestro|secuestrador(?:es)?|secuestrad[oa]s?|privacion de la libertad|delitos?\s+(?:contra|a)\s+(?:empresas?|comercios?|negocios?))\b",
         headline,
     ))
     # "Asegura que" es una declaración, no un aseguramiento policial.
@@ -2307,7 +2359,10 @@ def _photo_score(article, photo):
             and not (meave_goods_story and meave_goods_photo)):
         return -10000
     # Una graduación policial no representa un robo ni un operativo de vigilancia.
-    if (crime_story or police_operation_story) and re.search(r"\b(?:graduacion|entrega|entregan|ceremonia|acto protocolario)\b", topic):
+    if (crime_story or police_operation_story) and re.search(
+        r"\b(?:graduacion|entrega|entregan|ceremonia|acto protocolario|adquisicion|compra|presentacion|"
+        r"nuevas? patrullas?|banderazo de salida)\b", topic
+    ):
         return -10000
     # La policía de tránsito y sus automovilistas no ilustran un robo a comercio.
     if crime_story and re.search(
@@ -2441,6 +2496,18 @@ def _photo_score(article, photo):
         context,
     ))
     if air_quality_story and not air_quality_photo:
+        return -10000
+
+    # La rehabilitación de canchas necesita una cancha o espacio deportivo; no una oficina pública.
+    sports_court_story = bool(
+        re.search(r"\b(?:canchas?|espacios? deportivos?|infraestructura deportiva|oferta deportiva)\b", headline)
+        and re.search(r"\b(?:rehabilit\w*|constru\w*|amplian|ampliar|recuper\w*|mejor\w*|interven\w*)\b", headline)
+    )
+    sports_court_photo = bool(re.search(
+        r"\b(?:canchas?|cancha de baloncesto|basketball court|campos? deportivos?|baloncesto|pistas? deportivas?)\b",
+        context,
+    ))
+    if sports_court_story and not sports_court_photo:
         return -10000
 
     animal_story = bool(re.search(
@@ -2593,7 +2660,7 @@ def _photo_score(article, photo):
         return -10000
     # Una iniciativa del Congreso no se ilustra con Palacio Nacional.
     legislative_story = bool(re.search(
-        r"\b(?:congreso|asamblea legislativa|legislativ[oa]|camara de diputados|senado)\b",
+        r"\b(?:congreso|asamblea legislativa|legislativ[oa]|legisladores?|diputados?|senadores?|camara de diputados|senado)\b",
         headline,
     ))
     # La coincidencia debe identificar un recinto o una sesión legislativa,
@@ -2653,6 +2720,8 @@ def _photo_score(article, photo):
         or (protest_story and protest_photo)
         or (lgbt_story and lgbt_photo)
         or (infrastructure_story and infrastructure_photo)
+        or (sports_court_story and sports_court_photo)
+        or (public_transport_story and public_transport_photo)
         or (education_story and education_photo)
         or (housing_story and housing_photo)
         or (tax_story and tax_photo)
