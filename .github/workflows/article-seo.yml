@@ -7,13 +7,6 @@ on:
     workflows: ["Actualizar noticias CDMX AL MEMENTO"]
     types: [completed]
     branches: [main]
-  push:
-    branches: [main]
-    paths:
-      - 'news.json'
-      - 'scripts/build_article_seo.py'
-      - '.github/workflows/article-seo.yml'
-      - 'tests/test_article_seo_workflow.py'
 permissions:
   contents: write
 concurrency:
