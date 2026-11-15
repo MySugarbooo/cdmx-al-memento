@@ -559,7 +559,7 @@ class BoroughAndArchiveTests(unittest.TestCase):
             ("Trámite de licencia de conducir permanente",
              "Palacio Nacional Ciudad de México", "Trámite de licencia de conducir"),
             ("Cuál es la calidad del aire en CDMX",
-             "Alameda Central desde el aire", "Contaminación del aire en CDMX"),
+             "Alameda Central desde el aire", "Escala IMECA de referencia para la calidad del aire en CDMX"),
         ]
         for title, unrelated, relevant in cases:
             article = {"title": title, "category": "CDMX"}
