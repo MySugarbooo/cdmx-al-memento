@@ -80,6 +80,7 @@ EL_SOL_MUJERES_DEFENSIVE_DRIVING_SOURCE_URL = "https://oem.com.mx/elsoldemexico/
 HORAS_24_ELECTRIC_MOBILITY_SOURCE_URL = "https://24-horas.mx/cdmx/registro-emplacamiento-vemepe-vep-cdmx-costos-requisitos/"
 INFOBAE_VITE_BALU_SOURCE_URL = "https://www.infobae.com/mexico/2026/11/14/capturan-al-vite-y-al-balu-en-el-centro-de-cdmx-con-15-kilos-de-marihuana-y-mas-de-600-dosis-de-cocaina/"
 EL_SOL_MEXICO_QUERETARO_TRAILER_SOURCE_URL = "https://oem.com.mx/elsoldetoluca/local/vuelca-trailer-en-la-mexico-queretaro-y-cierran-la-autopista-rumbo-a-cdmx-33138834"
+IMER_ANIMAL_RIGHTS_MARCH_SOURCE_URL = "https://noticias.imer.mx/blog/activistas-y-defensores-de-animales-marcharon-para-exigir-el-fin-de-la-explotacion-animal-y-promover-el-veganismo-en-cdmx/"
 
 
 def is_radio_formula_casa_ecologica(article):
@@ -205,6 +206,19 @@ def is_la_prensa_tlalpan_animal_case(article):
         str(article.get("date") or "") == "2026-11-12"
         and source in {"el sol de mexico", "la prensa"}
         and title == "detienen a otro presunto maltratador de animales en tlalpan"
+    )
+
+
+def is_imer_animal_rights_march(article):
+    """Identifica la cobertura de IMER sobre la marcha por derechos animales del 14/11/2026."""
+    title = _photo_fold(article.get("title"))
+    source = _photo_fold(article.get("source"))
+    return (
+        str(article.get("date") or "") == "2026-11-14"
+        and source == "imer noticias"
+        and "defensores de animales" in title
+        and "explotacion animal" in title
+        and "veganismo" in title
     )
 
 
@@ -644,6 +658,30 @@ def summarize(article):
     category=str(article.get("category") or "CDMX")
     theme=TAGS.get(category,TAGS["CDMX"])
     folded_title=_photo_fold(title)
+    if is_imer_animal_rights_march(article):
+        return {
+            "lead": (
+                "IMER Noticias reportó que activistas y organizaciones defensoras de los animales marcharon "
+                "por calles de la Ciudad de México para denunciar el maltrato, exigir el cierre de mataderos "
+                "porcinos y granjas de explotación animal, y promover el veganismo. La movilización llegó al "
+                "Palacio de Bellas Artes. La cobertura también recoge una petición de atención especializada "
+                "para Ely, una elefanta trasladada al Zoológico de San Juan de Aragón."
+            ),
+            "context": (
+                "El reportaje atribuye las exigencias y declaraciones a las personas activistas que participaron; "
+                "no describe una resolución de autoridades ni confirma cambios en las prácticas cuestionadas."
+            ),
+            "pending": (
+                "El texto consultado no precisa la ruta completa de la marcha ni confirma una respuesta oficial "
+                "a las demandas o el estado actual de Ely. Esos puntos requieren actualización con las autoridades "
+                "y responsables del zoológico."
+            ),
+            "method": (
+                "Síntesis del artículo original de IMER Noticias, firmado por Natalia Matamoros y publicado el "
+                "14 de noviembre de 2026: " + IMER_ANIMAL_RIGHTS_MARCH_SOURCE_URL
+                + " Se atribuyen las exigencias a las personas citadas; no constituye una verificación independiente."
+            ),
+        }
     if is_codigoqro_ignacio_detention(article):
         return {
             "lead": (
@@ -2188,7 +2226,7 @@ def _photo_score(article, photo):
     ):
         return -10000
     # Una marcha por derechos animales no debe ilustrarse con una protesta de otra causa.
-    animal_rights_march_story = bool(
+    animal_rights_march_story = is_imer_animal_rights_march(article) or bool(
         re.search(r"\b(?:march\w*|manifestacion\w*|protest\w*)\b", headline)
         and re.search(r"\b(?:derechos de los animales|derechos animales|bienestar animal|proteccion animal|especismo|discriminacion animal)\b", headline)
     )
