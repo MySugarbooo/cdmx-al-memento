@@ -2719,6 +2719,21 @@ def _photo_score(article, photo):
     ):
         return -10000
     # Admitir categorías temáticas solo cuando el descriptor coincide con la noticia.
+    # "Tour de France" en L'Étape describe una carrera ciclista, no una gira musical.
+    cycling_event_story = bool(
+        re.search(r"\\b(?:l etape|tour de france)\\b", headline)
+        and re.search(
+            r"\\b(?:ciclismo|ciclistas?|bicicletas?|carrera|rutas?|calles cerradas?|alternativas viales?)\\b",
+            headline,
+        )
+    )
+    if cycling_event_story:
+        cycling_event_photo = bool(re.search(
+            r"\\b(?:cicloton|paseo ciclista|ciclismo|ciclistas?|bicicletas?|muevete en bici)\\b",
+            context,
+        ))
+        return 5000 if cycling_event_photo else -10000
+
     music_story = bool(re.search(
         r"\b(?:riff|musica|orquestas?|coros?|coral|conciertos?|bandas?|cantantes?|canta|cantar|aniversario musical|"
         r"canciones? ineditas|teatro metropolitan|maria leon|era de villana|"
