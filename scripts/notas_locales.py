@@ -680,7 +680,7 @@ def summarize(article):
             ),
             "context": (
                 "Infobae publicó una cobertura sobre los mismos alias y el aseguramiento de 15 kilos "
-                "de marihuana, pero sitúa el operativo en Venustiano Carranza y reporta tres detenidos "
+                "de marihuana, pero sitúa el operativo en Venustiano Carranza y reporta tres personas "
                 "y 655 dosis. Ámbito reporta dos detenidos y más de 600 dosis en Cuauhtémoc. Se "
                 "conservan ambas versiones atribuidas a sus medios sin combinar cifras ni ubicaciones."
             ),
