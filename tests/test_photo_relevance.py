@@ -2715,6 +2715,15 @@ class CurrentFeedEditorialPhotoRegressionTests(unittest.TestCase):
             source="Sin Embargo",
             date="2026-11-14")
 
+    def test_infobae_garbage_zocalo_story_replaces_other_venue_photo_with_zocalo(self):
+        self.assert_photo_replaced(
+            "Garbage en el Zócalo de la CDMX: así puedes seguir el concierto EN VIVO de manera gratuita",
+            "Cultura",
+            "contexto_concierto_palacio_deportes_2009",
+            "zocalo",
+            source="Infobae",
+            date="2026-11-14")
+
     def test_la_razon_garbage_story_replaces_other_venue_photo_with_constitution_square(self):
         self.assert_photo_replaced(
             "Asisten más de 90 mil personas a concierto de Garbage en el Zócalo de la CDMX",
