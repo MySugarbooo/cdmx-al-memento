@@ -3155,6 +3155,9 @@ class CurrentEditorialPhotoRegressionTests(unittest.TestCase):
 
 
 class CurrentFeedPhotoMismatchRegressionTests(unittest.TestCase):
+    def photo(self, photo_id):
+        return next((item for item in photos._pool() if item.get("id") == photo_id), None)
+
     def make_article(self, title, category, borough="", photo=None):
         article = {
             "title": title,
@@ -3295,6 +3298,25 @@ class CurrentFeedPhotoMismatchRegressionTests(unittest.TestCase):
         ):
             assign_photos([article])
         self.assertEqual(article["photo"]["id"], "generic-cdmx-patrol")
+
+
+    def test_infobae_vite_balu_location_and_summary_are_source_attributed(self):
+        title = 'Capturan al “Vite” y al “Balú” en el Centro de CDMX con 15 kilos de marihuana y más de 600 dosis de cocaína'
+        article = news.standardize({
+            "title": title,
+            "url": "https://news.google.com/rss/articles/vite-balu-infobae-regression",
+            "source": "Infobae",
+            "date": "2026-11-14",
+            "category": "CDMX",
+        })
+        self.assertEqual(article["category"], "Seguridad")
+        self.assertEqual(article["borough"], "Venustiano Carranza")
+        self.assertIn("según Infobae", article["location"])
+        self.assertEqual(article["source_url"], photos.INFOBAE_VITE_BALU_SOURCE_URL)
+        self.assertIn("tres hombres", article["brief"]["lead"])
+        self.assertIn("655 dosis", article["brief"]["lead"])
+        self.assertIn("Ramón", article["brief"]["context"])
+        self.assertIn("Cuauhtémoc", article["brief"]["context"])
 
     def test_court_rehabilitation_uses_licensed_cdmx_court_photo(self):
         article = self.make_article(
