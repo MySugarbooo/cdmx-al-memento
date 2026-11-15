@@ -207,7 +207,15 @@ def validate_article_html(item, data):
         if value and html.escape(value, quote=True) not in page_html:
             raise ValueError(f"el artículo público no contiene el campo {field}")
     photo = item.get("photo")
+    has_photo = bool(
+        re.search(r'<figure\b[^>]*class=["\'][^"\']*article-photo', page_html, re.IGNORECASE)
+    )
     if isinstance(photo, dict):
+        if not has_photo:
+            raise ValueError("el artículo público no muestra la fotografía asignada")
+        image_url = str(photo.get("url") or "")
+        if image_url and html.escape(image_url, quote=True) not in page_html:
+            raise ValueError("la fotografía pública no coincide con la URL asignada en main")
         for field in ("author", "license"):
             value = str(photo.get(field) or "")
             if value and html.escape(value, quote=True) not in page_html:
@@ -215,7 +223,9 @@ def validate_article_html(item, data):
     elif item.get("sensitive_media") is True:
         if "Sin fotografía verificada del hecho" not in page_html:
             raise ValueError("la noticia sensible no muestra el aviso de fotografía")
-    elif re.search(r'class=["\'][^"\']*article-photo', page_html, re.IGNORECASE):
+        if has_photo:
+            raise ValueError("la noticia sensible muestra una fotografía no autorizada")
+    elif has_photo:
         raise ValueError("el artículo público conserva una fotografía que no existe en main")
     return True
 
