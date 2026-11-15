@@ -5,12 +5,16 @@ Run after the news feed has been updated. Does not change existing article URLs.
 import json
 import html
 import re
+import sys
 from pathlib import Path
-
-from update_news import dedupe_homepage_events
 from urllib.parse import urlparse
 
 ROOT = Path(__file__).resolve().parents[1]
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
+
+from update_news import dedupe_homepage_events
+
 BASE = "https://cdmx-al-memento.pages.dev"
 SOURCE = ROOT / "news.json"
 OUT = ROOT / "articulos"
