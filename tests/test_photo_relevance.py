@@ -2697,6 +2697,29 @@ class CurrentFeedEditorialPhotoRegressionTests(unittest.TestCase):
             source="La Jornada",
             date="2026-11-14")
 
+    def test_sociedad_noticias_garbage_story_replaces_other_venue_photo_with_zocalo(self):
+        self.assert_photo_replaced(
+            "Garbage reúne a más de 90 mil personas en el Zócalo de la Cdmx",
+            "Cultura",
+            "contexto_concierto_palacio_deportes_2009",
+            "zocalo",
+            source="Sociedad Noticias",
+            date="2026-11-15")
+
+    def test_sociedad_noticias_garbage_summary_uses_attributed_source_details(self):
+        article = {
+            "title": "Garbage reúne a más de 90 mil personas en el Zócalo de la Cdmx",
+            "source": "Sociedad Noticias",
+            "date": "2026-11-15",
+            "category": "Cultura",
+        }
+        summary = news.summarize(article)
+        self.assertIn("concierto gratuito", summary["lead"])
+        self.assertIn("más de 90 mil personas", summary["lead"])
+        self.assertIn("Sociedad Noticias", summary["method"])
+        self.assertIn("no realizó un conteo independiente", summary["pending"])
+        self.assertIn(photos.SOCIEDAD_NOTICIAS_GARBAGE_ZOCALO_SOURCE_URL, summary["method"])
+
     def test_la_jornada_garbage_summary_uses_reported_attendance_and_saldo_blanco(self):
         article = {
             "title": "Garbage reúne a más de 90 mil personas durante su concierto en el Zócalo de la CDMX",
