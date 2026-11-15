@@ -2050,6 +2050,15 @@ def _photo_score(article, photo):
         return 5000 if atole_photo else -10000
     if photo.get("id") == "contexto_atole_mexicano":
         return -10000
+    plastic_bag_policy_story = bool(re.search(
+        r"\\b(?:bolsas? plasticas?|bolsas? de plastico|plastic bags?)\\b", headline
+    ))
+    plastic_bag_photo = bool(re.search(
+        r"\\b(?:bolsas? plasticas?|bolsas? de plastico|bolsas? para compras?|plastic bags?)\\b",
+        context,
+    ))
+    if plastic_bag_policy_story:
+        return 5000 if plastic_bag_photo else -10000
     theater_story = bool(re.search(
         r"\b(?:obras? de teatro|cartelera teatral|funciones? de teatro)\b", headline
     ))
