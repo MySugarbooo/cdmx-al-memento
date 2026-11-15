@@ -2,7 +2,7 @@
 import unittest
 from pathlib import Path
 
-from scripts.build_article_seo import render, VERIFIED_SOURCE_URLS
+from scripts.build_article_seo import render, VERIFIED_SOURCE_URLS, recent_article_links
 
 from scripts.check_public_seo import (
     DEPLOY_ATTEMPTS,
@@ -232,6 +232,28 @@ class PublicSeoTests(unittest.TestCase):
         external = xml.replace("cdmx-al-memento.pages.dev", "example.org")
         with self.assertRaisesRegex(ValueError, "fuera del dominio"):
             parse_sitemap(external.encode("utf-8"), "test sitemap")
+
+
+    def test_recent_seo_links_group_same_event_but_keep_both_article_ids(self):
+        society = self.valid_article()
+        society.update({
+            "title": "Garbage reúne a más de 90 mil personas en el Zócalo de la Cdmx",
+            "source": "Sociedad Noticias",
+            "date": "2026-11-15",
+            "url": "https://news.google.com/rss/articles/sociedad-garbage-zocalo",
+            "local_url": "/noticias/?id=effab44940f001e64f19&mes=2026-11",
+        })
+        razon = self.valid_article()
+        razon.update({
+            "title": "Asisten más de 90 mil personas a concierto de Garbage en el Zócalo de la CDMX",
+            "source": "La Razón de México",
+            "date": "2026-11-15",
+            "url": "https://news.google.com/rss/articles/razon-garbage-zocalo",
+            "local_url": "/noticias/?id=e5a213749a521cf90ee8&mes=2026-11",
+        })
+        links = recent_article_links([society, razon], limit=12)
+        self.assertEqual(links, [(article_id(society), society["title"])])
+        self.assertNotEqual(article_id(society), article_id(razon))
 
 
 if __name__ == "__main__":

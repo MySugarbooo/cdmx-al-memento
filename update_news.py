@@ -1398,6 +1398,17 @@ def editorial_event_key(article):
     ):
         return ("metro-holiday-hours-2026-11-16", "2026-11-16")
 
+    # Sociedad Noticias y La Razón describen el mismo concierto de Garbage
+    # en el Zócalo del 14/11/2026. Se conserva cada artículo en hemeroteca;
+    # portada y enlaces recientes muestran una sola ficha del acontecimiento.
+    if (
+        article.get("date") == "2026-11-15"
+        and re.search(r"\bgarbage\b", title)
+        and re.search(r"\bzocalo\b", title)
+        and re.search(r"\b90 mil\b", title)
+    ):
+        return ("garbage-zocalo-concert-2026-11-14", "2026-11-14")
+
     if is_vc_two_motorcyclists_crash(article):
         # La Prensa fecha el hecho el 13; Sociedad Noticias publicó su cobertura el 14.
         return ("venustiano-carranza-two-motorcyclists", "2026-11-13")

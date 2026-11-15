@@ -6,6 +6,8 @@ import json
 import html
 import re
 from pathlib import Path
+
+from update_news import dedupe_homepage_events
 from urllib.parse import urlparse
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -160,6 +162,24 @@ def render(item, ident):
 <p><a href="{esc(item['local_url'])}">Ver noticia y comentarios en el periódico</a></p></article></main>
 <footer><div class="wrap"><a href="/">Portada</a> · <a href="/politica-editorial.html">Política editorial</a></div></footer></body></html>"""
 
+def recent_article_links(articles, limit=12):
+    """Build crawlable recent links without repeating a known event."""
+    limit = max(0, int(limit))
+    if not limit:
+        return []
+    links = []
+    seen_ids = set()
+    for item in dedupe_homepage_events(articles):
+        ident = article_id(item)
+        if not ident or not item.get("title") or ident in seen_ids:
+            continue
+        seen_ids.add(ident)
+        links.append((ident, item["title"]))
+        if len(links) >= limit:
+            break
+    return links
+
+
 def main():
     data = json.loads(SOURCE.read_text(encoding="utf-8"))
     articles = data.get("articles") or []
@@ -182,7 +202,7 @@ def main():
             articles.extend(archived)
     OUT.mkdir(exist_ok=True)
     urls = []
-    recent_links = []
+    recent_links = recent_article_links(articles, limit=12)
     seen_ids = set()
     for item in articles:
         ident = article_id(item)
@@ -195,8 +215,6 @@ def main():
         dest.mkdir(exist_ok=True)
         (dest / "index.html").write_text(render(item, ident), encoding="utf-8")
         urls.append(BASE + "/articulos/" + ident + "/")
-        if len(recent_links) < 12:
-            recent_links.append((ident, item["title"]))
     xml = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
     xml += "".join("  <url><loc>" + esc(u) + "</loc></url>\n" for u in sorted(set(urls)))
     SITEMAP.write_text(xml + "</urlset>\n", encoding="utf-8")

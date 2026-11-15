@@ -80,7 +80,7 @@ class StableHomepageTests(unittest.TestCase):
         self.assertIn('src="/app.js?v=',home)
         self.assertIn('href="/archivo/"',home)
         self.assertIn('src="/assets/neo-home.js?v=',home)
-        self.assertIn('src="/assets/neo-home.js?v=20261113-accredited-hero-copy1"', home)
+        self.assertIn('src="/assets/neo-home.js?v=20261115-event-dedupe1"', home)
         self.assertRegex(home, r'href="/assets/neo-home\.css\?v=[a-zA-Z0-9_-]+"')
         headers=read("_headers")
         self.assertIn("Cache-Control: no-cache, must-revalidate",headers)
@@ -243,6 +243,17 @@ class StableHomepageTests(unittest.TestCase):
         self.assertIn("Noticias recientes sin imagen acreditada disponible", script)
         self.assertIn("fotografías representativas acreditadas", script)
         self.assertIn("Sin imagen contextual acreditada disponible", script)
+
+    def test_live_homepage_deduplicates_the_same_garbage_zocalo_event(self):
+        script = read("assets/neo-home.js")
+        self.assertIn("function homepageEventKey(article)", script)
+        self.assertIn("garbage-zocalo-concert-2026-11-14", script)
+        eligible = script[script.index("function eligibleStories(feed)"):script.index("function isWeatherForecastOnly(article)")]
+        self.assertIn("const seenEvents=new Set()", eligible)
+        self.assertIn("const eventKey=homepageEventKey(a)", eligible)
+        self.assertIn("if(eventKey&&seenEvents.has(eventKey))return false;", eligible)
+        self.assertIn("if(eventKey)seenEvents.add(eventKey);", eligible)
+
 
 if __name__ == '__main__':
     unittest.main()
