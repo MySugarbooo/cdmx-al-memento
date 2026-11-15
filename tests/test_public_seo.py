@@ -92,6 +92,18 @@ class PublicSeoTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "fotografía"):
             validate_article_html(article, page.encode("utf-8"))
 
+    def test_article_html_rejects_a_different_assigned_photo_url(self):
+        article = self.valid_article()
+        page = (
+            "<h1>Aviso de movilidad en Cablebús Línea 1</h1>"
+            "<p>Gustavo A. Madero, Ciudad de México (Línea 1 del Cablebús) · "
+            "2026-11-12 · Fuente: N+</p>"
+            '<figure class="article-photo"><img src="https://upload.wikimedia.org/other.jpg">'
+            "<figcaption>Sistema de Transporte Público Cablebús · CC BY 4.0</figcaption></figure>"
+        )
+        with self.assertRaisesRegex(ValueError, "URL asignada"):
+            validate_article_html(article, page.encode("utf-8"))
+
     def test_article_html_allows_no_photo_when_main_has_none(self):
         article = self.valid_article()
         article["photo"] = None
@@ -107,7 +119,8 @@ class PublicSeoTests(unittest.TestCase):
         html = (
             "<p>Gustavo A. Madero, Ciudad de México (Línea 1 del Cablebús) · "
             "2026-11-12 · Fuente: N+</p><h1>Aviso de movilidad en Cablebús Línea 1</h1>"
-            "<figcaption>Sistema de Transporte Público Cablebús · CC BY 4.0</figcaption>"
+            '<figure class="article-photo"><img src="https://upload.wikimedia.org/example.jpg">'
+            "<figcaption>Sistema de Transporte Público Cablebús · CC BY 4.0</figcaption></figure>"
         )
         self.assertTrue(validate_article_html(article, html.encode("utf-8")))
         with self.assertRaisesRegex(ValueError, "location"):
@@ -139,6 +152,17 @@ class PublicSeoTests(unittest.TestCase):
                 (
                     "<h1>Detienen a presunto maltratador de animales</h1>"
                     "<p>Tlalpan · 2026-11-12 · Fuente: Medio</p>"
+                ).encode("utf-8"),
+            )
+
+        with self.assertRaisesRegex(ValueError, "no autorizada"):
+            validate_article_html(
+                article,
+                (
+                    "<h1>Detienen a presunto maltratador de animales</h1>"
+                    "<p>Tlalpan · 2026-11-12 · Fuente: Medio</p>"
+                    "<p>Sin fotografía verificada del hecho</p>"
+                    '<figure class="article-photo"><img src="/assets/fotos/incorrecta.jpg"></figure>'
                 ).encode("utf-8"),
             )
 
