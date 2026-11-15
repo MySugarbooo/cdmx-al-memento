@@ -44,6 +44,7 @@ HOY_TAMAULIPAS_PATTY_CHIO_ROUTE_MONTH = "2026-11"
 AHORA_NOTICIAS_TLALPAN_PERRITA_SOURCE_URL = "https://ahoranoticias.com.mx/nacional/rescatan-a-perrita-por-presunto-maltrato-animal-en-tlalpan/"
 EL_SOL_ANIMAL_ABUSE_COMPLAINTS_SOURCE_URL = "https://oem.com.mx/elsoldemexico/metropoli/en-cdmx-15-colonias-de-6-alcaldias-concentran-denuncias-por-maltrato-animal-33109336"
 LA_PRENSA_PREHOSPITAL_CARE_SOURCE_URL = "https://oem.com.mx/la-prensa/metropoli/cdmx-busca-modernizar-la-atencion-prehospitalaria-con-plataforma-digital-de-la-ops-oms-inicia-prueba-piloto-con-tres-am-33136134"
+INFOBAE_AIR_QUALITY_20261115_SOURCE_URL = "https://www.infobae.com/mexico/2026/11/15/esta-es-la-calidad-del-aire-en-cdmx-y-edomex-este-domingo-15-de-noviembre-reporte-completo-por-alcaldias-y-municipios/"
 MAIL = "sanchezaxochitl@gmail.com"
 RETENTION_DAYS = 365
 
@@ -1027,6 +1028,38 @@ def standardize(article):
             "method": (
                 "Síntesis editorial propia elaborada tras consultar la publicación original de Segundo a Segundo; "
                 "no equivale a verificación independiente del proceso normativo."
+            ),
+        }
+    # El RSS conserva un enlace de Google News; se enlaza la nota directa verificada de Infobae.
+    # El resumen se limita al corte horario descrito por la publicación del 15/11/2026.
+    if (
+        fold(result.get("source")) == "infobae"
+        and result.get("date") == "2026-11-15"
+        and "calidad del aire" in fold(result.get("title"))
+        and "edomex" in fold(result.get("title"))
+        and "15 de noviembre" in fold(result.get("title"))
+    ):
+        result["source_url"] = INFOBAE_AIR_QUALITY_20261115_SOURCE_URL
+        result["brief"] = {
+            "lead": (
+                "Infobae reportó que, en el corte de las 05:00 del 15 de noviembre, la calidad del aire "
+                "en la Zona Metropolitana del Valle de México era «Aceptable», con riesgo para la salud "
+                "«Moderado» y nivel de radiación UV 0. La nota reúne lecturas de 16 estaciones de CDMX "
+                "y 13 del Estado de México."
+            ),
+            "context": (
+                "La publicación atribuye los datos a la Dirección de Monitoreo Atmosférico y recoge "
+                "recomendaciones para actividades al aire libre, con atención a los grupos sensibles."
+            ),
+            "pending": (
+                "El dato corresponde al corte de las 05:00 y no debe interpretarse como una medición "
+                "vigente durante todo el día. Algunas estaciones aparecían sin datos o en mantenimiento; "
+                "para conocer las condiciones actuales debe consultarse el reporte horario oficial."
+            ),
+            "method": (
+                "Síntesis editorial basada en el cuerpo de la publicación de Infobae del 15 de noviembre "
+                "de 2026; los valores se atribuyen a la Dirección de Monitoreo Atmosférico citada por el medio. "
+                "No equivale a una medición propia ni a verificación independiente."
             ),
         }
     result["description"] = result["brief"]["lead"]
