@@ -136,6 +136,7 @@ on:
   pull_request:
     # Ejecuta regresiones de portada, fotografías y feed sin publicar desde PR.
     # Incluye regresión para conservar fotos representativas acreditadas del feed.
+    # La revisión pública también cubre todas las noticias y la muestra reciente de hemeroteca.
     branches: [main]
     paths:
       - '.github/workflows/news.yml'
@@ -153,6 +154,8 @@ on:
       - 'creditos-fotograficos.html'
       - 'tests/test_local_news.py'
       - 'tests/test_photo_relevance.py'
+      - 'scripts/check_public_seo.py'
+      - 'tests/test_public_seo.py'
       - 'tests/test_neo_home_stability.py'
       - 'tests/test_fototeca_editorial.py'
       - 'tests/test_portal.py'

@@ -4,6 +4,8 @@ from pathlib import Path
 
 from scripts.check_public_seo import (
     DEPLOY_ATTEMPTS,
+    ARCHIVE_ARTICLE_SAMPLE_SIZE,
+    article_targets,
     archive_records,
     homepage_script_source,
     public_photo_count,
@@ -60,12 +62,65 @@ class PublicSeoTests(unittest.TestCase):
         )
         self.assertIsNone(article_id({"local_url": "/noticias/?id=bad"}))
 
+    def test_article_targets_cover_all_feed_and_recent_archive_items(self):
+        feed = []
+        for index in range(5):
+            article = self.valid_article()
+            article["local_url"] = f"/noticias/?id={index:020x}&mes=2026-11"
+            feed.append(article)
+        archive = []
+        for index in range(100):
+            article = self.valid_article()
+            article["local_url"] = f"/noticias/?id={index + 100:020x}&mes=2026-11"
+            archive.append(article)
+        targets = article_targets(feed, archive)
+        target_ids = {article_id(item) for item in targets}
+        self.assertEqual(len(targets), 105)
+        self.assertIn(article_id(feed[4]), target_ids)
+        self.assertIn(article_id(archive[83]), target_ids)
+        self.assertEqual(ARCHIVE_ARTICLE_SAMPLE_SIZE, 100)
+
+    def test_article_html_rejects_photo_when_main_has_none(self):
+        article = self.valid_article()
+        article["photo"] = None
+        page = (
+            "<h1>Aviso de movilidad en Cablebús Línea 1</h1>"
+            "<p>Gustavo A. Madero, Ciudad de México (Línea 1 del Cablebús) · "
+            "2026-11-12 · Fuente: N+</p>"
+            '<figure class="article-photo"><img src="/assets/fotos/incorrecta.jpg"></figure>'
+        )
+        with self.assertRaisesRegex(ValueError, "fotografía"):
+            validate_article_html(article, page.encode("utf-8"))
+
+    def test_article_html_rejects_a_different_assigned_photo_url(self):
+        article = self.valid_article()
+        page = (
+            "<h1>Aviso de movilidad en Cablebús Línea 1</h1>"
+            "<p>Gustavo A. Madero, Ciudad de México (Línea 1 del Cablebús) · "
+            "2026-11-12 · Fuente: N+</p>"
+            '<figure class="article-photo"><img src="https://upload.wikimedia.org/other.jpg">'
+            "<figcaption>Sistema de Transporte Público Cablebús · CC BY 4.0</figcaption></figure>"
+        )
+        with self.assertRaisesRegex(ValueError, "URL asignada"):
+            validate_article_html(article, page.encode("utf-8"))
+
+    def test_article_html_allows_no_photo_when_main_has_none(self):
+        article = self.valid_article()
+        article["photo"] = None
+        page = (
+            "<h1>Aviso de movilidad en Cablebús Línea 1</h1>"
+            "<p>Gustavo A. Madero, Ciudad de México (Línea 1 del Cablebús) · "
+            "2026-11-12 · Fuente: N+</p>"
+        )
+        self.assertTrue(validate_article_html(article, page.encode("utf-8")))
+
     def test_article_html_requires_exact_location_and_photo_credits(self):
         article = self.valid_article()
         html = (
             "<p>Gustavo A. Madero, Ciudad de México (Línea 1 del Cablebús) · "
             "2026-11-12 · Fuente: N+</p><h1>Aviso de movilidad en Cablebús Línea 1</h1>"
-            "<figcaption>Sistema de Transporte Público Cablebús · CC BY 4.0</figcaption>"
+            '<figure class="article-photo"><img src="https://upload.wikimedia.org/example.jpg">'
+            "<figcaption>Sistema de Transporte Público Cablebús · CC BY 4.0</figcaption></figure>"
         )
         self.assertTrue(validate_article_html(article, html.encode("utf-8")))
         with self.assertRaisesRegex(ValueError, "location"):
@@ -74,29 +129,40 @@ class PublicSeoTests(unittest.TestCase):
             validate_article_html(article, html.replace("CC BY 4.0", "").encode("utf-8"))
 
     def test_sensitive_article_without_photo_requires_notice(self):
-        article = {
-            "title": "Detienen a presunto maltratador de animales",
-            "source": "Medio",
-            "date": "2026-11-12",
-            "location": "Tlalpan",
-            "sensitive_media": True,
+        article = self.valid_article()
+        article["title"] = "Detienen a presunto maltratador de animales"
+        article["location"] = "Tlalpan"
+        article["date"] = "2026-11-12"
+        article["source"] = "Medio"
+        article["sensitive_media"] = True
+        article["photo"] = {
+            "kind": "representativa",
+            "url": "/assets/fotos/archivo_seguridad_003.jpg",
+            "author": "Autor de archivo",
+            "license": "CC BY 4.0",
         }
-        self.assertTrue(
-            validate_article_html(
-                article,
-                (
-                    "<h1>Detienen a presunto maltratador de animales</h1>"
-                    "<p>Tlalpan · 2026-11-12 · Fuente: Medio</p>"
-                    "<p>Sin fotografía verificada del hecho</p>"
-                ).encode("utf-8"),
-            )
+        page = (
+            "<h1>Detienen a presunto maltratador de animales</h1>"
+            "<p>Tlalpan · 2026-11-12 · Fuente: Medio</p>"
+            "<p>Sin fotografía verificada del hecho</p>"
         )
+        self.assertTrue(validate_article_html(article, page.encode("utf-8")))
         with self.assertRaisesRegex(ValueError, "aviso"):
             validate_article_html(
                 article,
                 (
                     "<h1>Detienen a presunto maltratador de animales</h1>"
                     "<p>Tlalpan · 2026-11-12 · Fuente: Medio</p>"
+                ).encode("utf-8"),
+            )
+        with self.assertRaisesRegex(ValueError, "no autorizada"):
+            validate_article_html(
+                article,
+                (
+                    "<h1>Detienen a presunto maltratador de animales</h1>"
+                    "<p>Tlalpan · 2026-11-12 · Fuente: Medio</p>"
+                    "<p>Sin fotografía verificada del hecho</p>"
+                    '<figure class="article-photo"><img src="/assets/fotos/incorrecta.jpg"></figure>'
                 ).encode("utf-8"),
             )
 
