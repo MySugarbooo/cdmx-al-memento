@@ -142,6 +142,10 @@ on:
     branches: [main]
     paths:
       - '.github/workflows/news.yml'
+      - '.github/workflows/article-seo.yml'
+      - 'scripts/build_article_seo.py'
+      - 'tests/test_article_seo_workflow.py'
+      - 'tests/test_article_photo.py'
       - 'update_news.py'
       - 'index.html'
       - 'scripts/notas_locales.py'
