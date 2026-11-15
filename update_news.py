@@ -438,11 +438,11 @@ def category_by_headline(title, feed_category, source=""):
     if (re.search(r"\bc5\b", normalized)
             and re.search(r"\b(?:camaras?|vigilar|vigilara|vigilancia)\b", normalized)):
         return "Seguridad"
-    # La agenda de movilizaciones de la SSC con afectaciones viales pertenece a Movilidad.
+    # El RSS de El Universal acortó el titular de esta agenda de movilizaciones;
+    # la nota sindicada confirma posibles afectaciones viales en la ciudad.
     if (
-        re.search(r"\b(?:ssc|secretaria de seguridad ciudadana)\b", normalized)
-        and re.search(r"\bmovilizaciones?\b", normalized)
-        and re.search(r"\b(?:afectaciones viales|cierres? viales|trafico|bloqueos?)\b", normalized)
+        normalized_source == "el universal"
+        and re.search(r"\bssc preve diversas movilizaciones en cdmx este domingo\b", normalized)
     ):
         return "Movilidad"
     if (
