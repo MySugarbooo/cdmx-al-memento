@@ -35,6 +35,13 @@ class PhotoRelevanceTests(unittest.TestCase):
             "Un robot en el centro de la Ciudad de México", "Seguridad"), "CDMX")
         self.assertEqual(category_by_headline(
             "Policía utiliza robot para investigar un robo", "Seguridad"), "Seguridad")
+        self.assertEqual(category_by_headline(
+            "Carecen de agua en Álvaro Obregón", "CDMX"), "Servicios")
+        self.assertEqual(category_by_headline(
+            "Destaca SECTEI instalación de 464 aulas digitales y mayor seguridad en 404 escuelas de CDMX",
+            "Seguridad"), "Gobierno")
+        self.assertEqual(category_by_headline(
+            "CDMX prepara nuevas reglas para bolsas plásticas en 2027", "CDMX"), "Medio Ambiente")
 
     def test_caen_drug_arrest_rejects_police_graduation_and_accepts_patrol_context(self):
         title = "Caen tres hombres con 15 kilos de mariguana y más de 650 dosis de cocaína en Venustiano Carranza"
@@ -62,6 +69,7 @@ class PhotoRelevanceTests(unittest.TestCase):
     def test_plastic_bag_policy_rejects_park_photo_and_selects_shopping_bags(self):
         title = "CDMX prepara nuevas reglas para bolsas plásticas en 2027"
         article = {"title": title, "category": "CDMX", "borough": ""}
+        self.assertEqual(category_by_headline(title, "CDMX"), "Medio Ambiente")
         garden = representative_photo(
             "garden_context", "CDMX",
             "Jardín Escénico del Bosque de Chapultepec 02", ["Medio Ambiente"],
@@ -3663,6 +3671,65 @@ class CurrentFeedPhotoMismatchRegressionTests(unittest.TestCase):
             assign_photos([result])
         self.assertNotIn("photo", result)
 
+
+
+    def test_diario_basta_water_shortage_has_verified_source_summary_and_rejects_borough_photo(self):
+        title = "Carecen de agua en Álvaro Obregón"
+        article = news.standardize({
+            "title": title,
+            "url": "https://news.google.com/rss/articles/water-shortage-alvaro-obregon",
+            "source": "Diario Basta!",
+            "date": "2026-11-14",
+            "published_at": "2026-11-14T17:54:07Z",
+            "category": "CDMX",
+        })
+        self.assertIsNotNone(article)
+        self.assertEqual(article["category"], "Servicios")
+        self.assertEqual(article["borough"], "Álvaro Obregón")
+        self.assertIn("Tlacoyaque", article["location"])
+        self.assertIn("La Angostura", article["location"])
+        self.assertEqual(
+            article["source_url"],
+            photos.DIARIO_BASTA_ALVARO_OBREGON_WATER_SOURCE_URL,
+        )
+        self.assertIn("36 reportes", article["brief"]["lead"])
+        self.assertIn("20 en Barrio Tlacoyaque", article["brief"]["lead"])
+        self.assertIn("11 en Ampliación Tlacoyaque", article["brief"]["lead"])
+        self.assertIn("tandeo", article["brief"]["context"])
+        self.assertIn("no 36 cortes", article["brief"]["context"])
+        self.assertEqual(article["description"], article["brief"]["lead"])
+
+        camellon = next(
+            photo for photo in photos._pool()
+            if photo.get("id") == "commons_51892791"
+        )
+        self.assertLess(_photo_score(article, camellon), 0)
+        article["photo"] = deepcopy(camellon)
+        with patch.object(photos, "_pool", return_value=[camellon]), patch.object(
+            photos, "_load", return_value=[]
+        ):
+            assign_photos([article])
+        self.assertNotIn("photo", article)
+
+    def test_sectei_digital_classrooms_are_government_not_security(self):
+        title = (
+            "Destaca SECTEI instalación de 464 aulas digitales y mayor seguridad "
+            "en 404 escuelas de CDMX"
+        )
+        article = news.standardize({
+            "title": title,
+            "url": "https://news.google.com/rss/articles/sectei-digital-classrooms",
+            "source": "El Sol de México",
+            "date": "2026-11-14",
+            "category": "Seguridad",
+        })
+        self.assertIsNotNone(article)
+        self.assertEqual(article["category"], "Gobierno")
+        school_photo = next(
+            photo for photo in photos._pool()
+            if photo.get("id") == "commons_152636280"
+        )
+        self.assertGreaterEqual(_photo_score(article, school_photo), 0)
 
 if __name__ == "__main__":
     unittest.main()
