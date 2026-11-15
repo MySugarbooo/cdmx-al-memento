@@ -3841,6 +3841,35 @@ class CurrentFeedPhotoMismatchRegressionTests(unittest.TestCase):
         self.assertEqual(article["photo"]["author"], "LEON23")
         self.assertEqual(article["photo"]["license"], "CC BY 3.0")
 
+    def test_yahoo_garbage_zocalo_rejects_kings_of_leon_photo_and_uses_zocalo(self):
+        title = "Garbage conquista 90 mil personas en el Zócalo de la CDMX"
+        article = news.standardize({
+            "title": title,
+            "url": "https://news.google.com/rss/articles/yahoo-garbage-zocalo-regression",
+            "source": "Yahoo",
+            "date": "2026-11-14",
+            "category": "Cultura",
+        })
+        self.assertEqual(article["category"], "Cultura")
+
+        kings_of_leon = self.photo("contexto_concierto_palacio_deportes_2009")
+        zocalo = self.photo("zocalo")
+        self.assertIsNotNone(kings_of_leon)
+        self.assertIsNotNone(zocalo)
+        self.assertLess(_photo_score(article, kings_of_leon), 0)
+        self.assertGreater(_photo_score(article, zocalo), 0)
+
+        article["photo"] = deepcopy(kings_of_leon)
+        with patch.object(photos, "_pool", return_value=[kings_of_leon, zocalo]), patch.object(
+            photos, "_load", return_value=[]
+        ):
+            photos.assign_photos([article])
+
+        self.assertEqual(article["photo"]["id"], "zocalo")
+        self.assertEqual(article["photo"]["kind"], "representativa")
+        self.assertEqual(article["photo"]["author"], "A01701617")
+        self.assertEqual(article["photo"]["license"], "CC BY-SA 4.0")
+
     def test_sectei_digital_classrooms_are_government_not_security(self):
         title = (
             "Destaca SECTEI instalación de 464 aulas digitales y mayor seguridad "
