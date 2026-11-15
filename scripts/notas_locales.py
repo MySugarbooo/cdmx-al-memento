@@ -2083,11 +2083,11 @@ def _photo_score(article, photo):
         return -10000
     # Una marcha por derechos animales no debe ilustrarse con una protesta de otra causa.
     animal_rights_march_story = bool(
-        re.search(r"\b(?:marcha|manifestacion|protesta)\b", headline)
+        re.search(r"\b(?:march\w*|manifestacion\w*|protest\w*)\b", headline)
         and re.search(r"\b(?:derechos de los animales|derechos animales|bienestar animal|proteccion animal|especismo|discriminacion animal)\b", headline)
     )
     animal_rights_march_photo = bool(
-        re.search(r"\b(?:marcha|manifestacion|protesta)\b", context)
+        re.search(r"\b(?:march\w*|manifestacion\w*|protest\w*)\b", context)
         and re.search(r"\b(?:derechos de los animales|derechos animales|bienestar animal|proteccion animal|especismo|discriminacion animal|animales?)\b", context)
     )
     if animal_rights_march_story and not animal_rights_march_photo:
