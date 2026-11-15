@@ -2393,7 +2393,18 @@ def _photo_score(article, photo):
     topic=re.sub(r"\bno\b[^;.)]*", "", topic)
     keywords=_photo_fold(" ".join(str(x) for x in photo.get("keywords",[])))
     context=topic+" "+keywords
-    # La nota de La Crónica trata de nacimientos artesanales de Tlaquepaque;\n    # no debe heredar una fotografía genérica de Palacio Nacional.\n    tlaquepaque_nativity_story = (\n        str(article.get("date") or "") == "2026-11-15"\n        and _photo_fold(article.get("source")) == "la cronica de hoy"\n        and "35 familias artesanas" in headline\n        and "nacimientos" in headline\n    )\n    if tlaquepaque_nativity_story:\n        return 5000 if photo.get("id") == "contexto_nacimiento_tlaquepaque_2018" else -10000\n\n    if is_animal_abuse_statistics_report(article):
+    # La nota de La Crónica trata de nacimientos artesanales de Tlaquepaque;
+    # no debe heredar una fotografía genérica de Palacio Nacional.
+    tlaquepaque_nativity_story = (
+        str(article.get("date") or "") == "2026-11-15"
+        and _photo_fold(article.get("source")) == "la cronica de hoy"
+        and "35 familias artesanas" in headline
+        and "nacimientos" in headline
+    )
+    if tlaquepaque_nativity_story:
+        return 5000 if photo.get("id") == "contexto_nacimiento_tlaquepaque_2018" else -10000
+
+    if is_animal_abuse_statistics_report(article):
         return 5000 if photo.get("id") == "contexto_perros_parque_espana" else -10000
     if is_la_prensa_prehospital_care(article):
         return 5000 if photo.get("id") == "contexto_ambulancia_cruz_verde_cdmx" else -10000
