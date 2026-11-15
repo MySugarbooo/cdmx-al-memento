@@ -81,6 +81,7 @@ HORAS_24_ELECTRIC_MOBILITY_SOURCE_URL = "https://24-horas.mx/cdmx/registro-empla
 INFOBAE_VITE_BALU_SOURCE_URL = "https://www.infobae.com/mexico/2026/11/14/capturan-al-vite-y-al-balu-en-el-centro-de-cdmx-con-15-kilos-de-marihuana-y-mas-de-600-dosis-de-cocaina/"
 EL_SOL_MEXICO_QUERETARO_TRAILER_SOURCE_URL = "https://oem.com.mx/elsoldetoluca/local/vuelca-trailer-en-la-mexico-queretaro-y-cierran-la-autopista-rumbo-a-cdmx-33138834"
 IMER_ANIMAL_RIGHTS_MARCH_SOURCE_URL = "https://noticias.imer.mx/blog/activistas-y-defensores-de-animales-marcharon-para-exigir-el-fin-de-la-explotacion-animal-y-promover-el-veganismo-en-cdmx/"
+LA_JORNADA_GARBAGE_ZOCALO_SOURCE_URL = "https://www.jornada.com.mx/noticia/2026/11/14/espectaculos/garbage-reune-a-mas-de-90-mil-personas-en-concierto-en-la-ciudad-de-mexico"
 
 
 def is_radio_formula_casa_ecologica(article):
@@ -145,6 +146,18 @@ def is_infobae_maria_leon_concert(article):
         and "maria leon" in title
         and "era de villana" in title
         and "teatro metropolitan" in title
+    )
+
+
+def is_la_jornada_garbage_zocalo(article):
+    """Identifica la nota de La Jornada sobre Garbage en el Zócalo del 14/11/2026."""
+    title = _photo_fold(article.get("title"))
+    source = _photo_fold(article.get("source"))
+    return (
+        str(article.get("date") or "") == "2026-11-14"
+        and source == "la jornada"
+        and "garbage" in title
+        and "zocalo" in title
     )
 
 
@@ -672,6 +685,27 @@ def summarize(article):
     category=str(article.get("category") or "CDMX")
     theme=TAGS.get(category,TAGS["CDMX"])
     folded_title=_photo_fold(title)
+    if is_la_jornada_garbage_zocalo(article):
+        return {
+            "lead": (
+                "La Jornada reportó que el concierto gratuito de Garbage en el Zócalo reunió a más de "
+                "90 mil personas el sábado 14 de noviembre y concluyó con saldo blanco, según información "
+                "de SECGOB y SSC citada por el medio."
+            ),
+            "context": (
+                "El medio informó que la SSC desplegó 1,175 elementos y recursos de apoyo para la vigilancia "
+                "durante y después del concierto."
+            ),
+            "pending": (
+                "La asistencia y el saldo blanco se atribuyen a SECGOB y SSC a través de La Jornada; "
+                "CDMX AL MEMENTO no realizó un conteo independiente ni una verificación presencial del operativo."
+            ),
+            "method": (
+                "Síntesis editorial basada en la publicación de La Jornada del 14 de noviembre de 2026: "
+                + LA_JORNADA_GARBAGE_ZOCALO_SOURCE_URL
+                + ". Los datos de asistencia y seguridad se atribuyen a las autoridades citadas por el medio."
+            ),
+        }
     if is_diario_basta_alvaro_obregon_water_shortage(article):
         return {
             "lead": (
@@ -2147,6 +2181,9 @@ def _photo_score(article, photo):
     # Una cartelera teatral no se ilustra con una maceta o un monumento cultural genérico.
     if theater_story and not theater_photo:
         return -10000
+    # La cobertura de Garbage trata del concierto en el Zócalo: una foto de otro grupo y recinto no basta.
+    if is_la_jornada_garbage_zocalo(article):
+        return 5000 if photo.get("id") == "zocalo" else -10000
     # Una nota sobre el modelo de seguridad de Saltillo no debe ilustrarse
     # con patrullas de otra alcaldía de CDMX. Sin foto contextual de Saltillo,
     # es preferible no mostrar imagen antes que sugerir un operativo distinto.

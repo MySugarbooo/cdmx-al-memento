@@ -2647,15 +2647,16 @@ class CurrentFeedEditorialPhotoRegressionTests(unittest.TestCase):
     def setUpClass(cls):
         cls.pool = {photo["id"]: photo for photo in _pool()}
 
-    def assert_photo_replaced(self, title, category, current_id, candidate_id):
+    def assert_photo_replaced(self, title, category, current_id, candidate_id,
+                              source="El Sol de México", date="2026-11-13"):
         current = deepcopy(self.pool[current_id])
         candidate = deepcopy(self.pool[candidate_id])
         article = {
             "title": title,
             "category": category,
-            "source": "El Sol de México",
+            "source": source,
             "url": "https://news.google.com/rss/articles/editorial-photo-current-feed-regression",
-            "date": "2026-11-13",
+            "date": date,
             "photo": current,
         }
         self.assertTrue(news.photo_needs_refresh(article))
@@ -2668,6 +2669,8 @@ class CurrentFeedEditorialPhotoRegressionTests(unittest.TestCase):
         self.assertEqual(article["photo"]["id"], candidate_id)
         self.assertTrue(article["photo"]["author"])
         self.assertTrue(article["photo"]["license"])
+        self.assertTrue(article["photo"]["licenseUrl"])
+        self.assertTrue(article["photo"]["source"])
 
     def test_airport_flight_story_replaces_metro_terminal_station_with_aicm_aircraft(self):
         self.assert_photo_replaced(
@@ -2685,10 +2688,28 @@ class CurrentFeedEditorialPhotoRegressionTests(unittest.TestCase):
             "Pokémon Go genera 420,000 dólares en CDMX y muestra que México es un mercado clave para el juego",
             "Cultura", "commons_75214598", "contexto_pokemon_go_bench_2016")
 
-    def test_garbage_story_replaces_treasury_hall_with_concert_photo(self):
+    def test_garbage_zocalo_story_rejects_other_venue_concert_photo(self):
         self.assert_photo_replaced(
-            "Garbage llega al Zócalo de CDMX: Shirley Manson agradece al público mexicano",
-            "Cultura", "commons_98002541", "contexto_concierto_palacio_deportes_2009")
+            "Garbage reúne a más de 90 mil personas durante su concierto en el Zócalo de la CDMX",
+            "Cultura",
+            "contexto_concierto_palacio_deportes_2009",
+            "zocalo",
+            source="La Jornada",
+            date="2026-11-14")
+
+    def test_la_jornada_garbage_summary_uses_reported_attendance_and_saldo_blanco(self):
+        article = {
+            "title": "Garbage reúne a más de 90 mil personas durante su concierto en el Zócalo de la CDMX",
+            "source": "La Jornada",
+            "date": "2026-11-14",
+            "category": "Cultura",
+        }
+        summary = news.summarize(article)
+        self.assertIn("concierto gratuito", summary["lead"])
+        self.assertIn("más de 90 mil personas", summary["lead"])
+        self.assertIn("saldo blanco", summary["lead"])
+        self.assertIn(photos.LA_JORNADA_GARBAGE_ZOCALO_SOURCE_URL, summary["method"])
+        self.assertIn("no realizó un conteo independiente", summary["pending"])
 
     def test_market_funding_story_replaces_covid_sanitation_photo_with_market_context(self):
         self.assert_photo_replaced(
