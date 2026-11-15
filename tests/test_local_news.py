@@ -902,6 +902,30 @@ class LocalNewsTests(unittest.TestCase):
         article_html = render(result, article_id(result))
         self.assertIn(CAPITAL_CDMX_CARE_BUDGET_SOURCE_URL, article_html)
 
+    def test_sociedad_noticias_garbage_zocalo_uses_direct_source_and_attributed_summary(self):
+        source_url = (
+            "https://sociedad-noticias.com/2026/11/15/"
+            "garbage-reune-a-mas-de-90-mil-personas-en-el-zocalo-de-la-cdmx/"
+        )
+        article = {
+            "title": "Garbage reúne a más de 90 mil personas en el Zócalo de la Cdmx",
+            "url": "https://news.google.com/rss/articles/sociedad-garbage-zocalo-20261115?oc=5",
+            "source": "Sociedad Noticias",
+            "date": "2026-11-15",
+            "published_at": "2026-11-15T06:30:00Z",
+            "category": "Cultura",
+        }
+        result = standardize(article)
+        self.assertIsNotNone(result)
+        self.assertEqual(result["source_url"], source_url)
+        self.assertIn("concierto gratuito", result["brief"]["lead"])
+        self.assertIn("más de 90 mil personas", result["brief"]["lead"])
+        self.assertIn("no realizó un conteo independiente", result["brief"]["pending"])
+        self.assertIn(source_url, result["brief"]["method"])
+        rendered = render(result, article_id(result))
+        self.assertIn('href="' + source_url + '"', rendered)
+        self.assertNotIn('href="https://news.google.com/', rendered)
+
     def test_priority_photo_refresh_selects_confirmed_mismatches_before_newer_items(self):
         items = [
             {
