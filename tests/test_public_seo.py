@@ -130,6 +130,10 @@ class PublicSeoTests(unittest.TestCase):
 
     def test_sensitive_article_without_photo_requires_notice(self):
         article = self.valid_article()
+        article["title"] = "Detienen a presunto maltratador de animales"
+        article["location"] = "Tlalpan"
+        article["date"] = "2026-11-12"
+        article["source"] = "Medio"
         article["sensitive_media"] = True
         article["photo"] = {
             "kind": "representativa",
