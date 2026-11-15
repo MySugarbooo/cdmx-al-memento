@@ -1435,7 +1435,7 @@ def dedupe_homepage_events(items):
             current_priority = preferred_sources.get(fold(current.get("source")), 0)
             if incoming_priority > current_priority:
                 result[position] = article
-    return result
+    return sorted(result, key=sort_key, reverse=True)
 
 
 def merge_recent_previous_feed(items, previous_articles, now, limit=60):
