@@ -3155,6 +3155,9 @@ class CurrentEditorialPhotoRegressionTests(unittest.TestCase):
 
 
 class CurrentFeedPhotoMismatchRegressionTests(unittest.TestCase):
+    def photo(self, photo_id):
+        return next((item for item in photos._pool() if item.get("id") == photo_id), None)
+
     def make_article(self, title, category, borough="", photo=None):
         article = {
             "title": title,
@@ -3255,6 +3258,210 @@ class CurrentFeedPhotoMismatchRegressionTests(unittest.TestCase):
             assign_photos([article])
         self.assertEqual(article["photo"]["id"], "generic-cdmx-patrol")
 
+
+
+    def test_ambito_vite_balu_is_security_without_unverified_location_or_source_url(self):
+        title = 'Capturan a "El Vite" y "El Balú" en el Centro de la CDMX con 15 kilos de marihuana y más de 600 dosis de cocaína'
+        article = news.standardize({
+            "title": title,
+            "url": "https://news.google.com/rss/articles/vite-balu-ambito-regression",
+            "source": "Ambito",
+            "date": "2026-11-14",
+            "category": "CDMX",
+        })
+        self.assertEqual(article["category"], "Seguridad")
+        self.assertEqual(_photo_category(article), "Seguridad")
+        self.assertEqual(article["borough"], "")
+        self.assertEqual(article["location"], "Ciudad de México (sin alcaldía identificada)")
+        self.assertNotIn("source_url", article)
+        self.assertIn("sin acceso al cuerpo de la nota", article["brief"]["lead"].casefold())
+        self.assertIn("más de 600 dosis", article["brief"]["lead"])
+        self.assertNotIn("Cuauhtémoc", article["brief"]["lead"] + article["brief"]["context"])
+        self.assertNotIn("Venustiano Carranza", article["brief"]["lead"] + article["brief"]["context"])
+
+        plaque = representative_photo(
+            "palacio-iturbide-plaque",
+            "CDMX",
+            "Palacio de Iturbide, Centro Histórico, Ciudad de México - Placa",
+            ["Centro Histórico"],
+        )
+        patrol = representative_photo(
+            "generic-cdmx-patrol",
+            "Seguridad",
+            "Patrulla vecinal",
+            ["patrulla", "policía CDMX", "seguridad"],
+        )
+        article["photo"] = plaque
+        with patch.object(photos, "_pool", return_value=[plaque, patrol]), patch.object(
+            photos, "_load", return_value=[]
+        ):
+            assign_photos([article])
+        self.assertEqual(article["photo"]["id"], "generic-cdmx-patrol")
+
+
+    def test_infobae_vite_balu_location_and_summary_are_source_attributed(self):
+        title = 'Capturan al “Vite” y al “Balú” en el Centro de CDMX con 15 kilos de marihuana y más de 600 dosis de cocaína'
+        article = news.standardize({
+            "title": title,
+            "url": "https://news.google.com/rss/articles/vite-balu-infobae-regression",
+            "source": "Infobae",
+            "date": "2026-11-14",
+            "category": "CDMX",
+        })
+        self.assertEqual(article["category"], "Seguridad")
+        self.assertEqual(article["borough"], "Venustiano Carranza")
+        self.assertIn("según Infobae", article["location"])
+        self.assertEqual(article["source_url"], photos.INFOBAE_VITE_BALU_SOURCE_URL)
+        self.assertIn("tres hombres", article["brief"]["lead"])
+        self.assertIn("655 dosis", article["brief"]["lead"])
+        self.assertIn("Ramón", article["brief"]["context"])
+        self.assertNotIn("Ámbito", article["brief"]["context"])
+        self.assertNotIn("Ámbito", article["brief"]["method"])
+
+    def test_court_rehabilitation_uses_licensed_cdmx_court_photo(self):
+        article = self.make_article(
+            "Rehabilitan 315 canchas y amplían oferta deportiva en la CDMX",
+            "Gobierno",
+            "El Sol de México",
+        )
+        treasury = representative_photo(
+            "treasury-room",
+            "Gobierno",
+            "Sala de Tesorería en Palacio Nacional - I",
+            ["Palacio Nacional Ciudad de México"],
+        )
+        court = self.photo("commons_58302191")
+        self.assertIsNotNone(court)
+        self.assertEqual(court["author"], "Daniel Case")
+        self.assertEqual(court["license"], "CC BY-SA 3.0")
+        self.assertIn("no documenta las obras anunciadas", court["topic"])
+        self.assertLess(_photo_score(article, treasury), 0)
+        self.assertGreaterEqual(_photo_score(article, court), 0)
+        with patch.object(photos, "_pool", return_value=[treasury, court]), patch.object(
+            photos, "_load", return_value=[]
+        ):
+            assign_photos([article])
+        self.assertEqual(article["photo"]["id"], "commons_58302191")
+
+    def test_crime_articles_reject_patrol_procurement_photos(self):
+        titles = (
+            "VIDEO: Lo captan asaltando a un joven en CDMX; también estaría implicado en ataques contra mujeres",
+            "De amenazas con pistola a destrozos: qué pasó entre repartidores y vecinos en CDMX",
+        )
+        for title in titles:
+            with self.subTest(title=title):
+                article = self.make_article(title, "Seguridad")
+                new_patrols = representative_photo(
+                    "new-patrols",
+                    "Seguridad",
+                    "Nuevas patrullas para Cuajimalpa 06",
+                    ["patrullas", "Cuajimalpa"],
+                )
+                acquisition = representative_photo(
+                    "patrol-acquisition",
+                    "Seguridad",
+                    "Adquisición patrullas para la Policía 03",
+                    ["patrullas", "policía"],
+                )
+                generic_patrol = representative_photo(
+                    "generic-cdmx-patrol",
+                    "Seguridad",
+                    "Patrulla de Ciudad de México",
+                    ["patrulla", "policía CDMX", "seguridad"],
+                )
+                self.assertLess(_photo_score(article, new_patrols), 0)
+                self.assertLess(_photo_score(article, acquisition), 0)
+                self.assertGreaterEqual(_photo_score(article, generic_patrol), 0)
+                with patch.object(
+                    photos, "_pool", return_value=[new_patrols, acquisition, generic_patrol]
+                ), patch.object(photos, "_load", return_value=[]):
+                    assign_photos([article])
+                self.assertEqual(article["photo"]["id"], "generic-cdmx-patrol")
+
+    def test_market_bramadero_rejects_photo_of_cerro_del_judio_market(self):
+        article = self.make_article(
+            "Brugada entrega un millón de pesos al Mercado Bramadero en Iztacalco",
+            "Gobierno",
+            "Eje Central",
+        )
+        article["borough"] = "Iztacalco"
+        other_market = representative_photo(
+            "cerro-del-judio-market",
+            "Servicios",
+            "Mercado Público Cerro del Judío, La Magdalena Contreras (2017)",
+            ["mercado público", "Cerro del Judío", "La Magdalena Contreras"],
+        )
+        self.assertLess(_photo_score(article, other_market), 0)
+
+    def test_los_pozos_housing_story_rejects_alameda_photo(self):
+        article = self.make_article(
+            "Antorcha mantendrá la lucha para defender las viviendas de Los Pozos, en Tláhuac",
+            "CDMX",
+            "Cúspide México",
+        )
+        article["borough"] = "Tláhuac"
+        alameda = representative_photo(
+            "alameda-central",
+            "CDMX",
+            "Ciudad de México - Alameda Central 0366",
+            ["Alameda Central Ciudad de México"],
+        )
+        self.assertLess(_photo_score(article, alameda), 0)
+
+    def test_public_transport_schedule_rejects_unrelated_borough_landmark(self):
+        article = self.make_article(
+            "¿Cómo operará el transporte público en CDMX este lunes 16 de noviembre?",
+            "CDMX",
+            "El Informador",
+        )
+        coyoacan = representative_photo(
+            "coyoacan-landmark",
+            "CDMX",
+            "Coyoacán Ciudad de México",
+            ["Coyoacán"],
+        )
+        metro = representative_photo(
+            "metro-station",
+            "Metro",
+            "Estación Deportivo 18 de Marzo, Línea 3 del Metro de Ciudad de México",
+            ["Metro Ciudad de México", "transporte público"],
+        )
+        self.assertLess(_photo_score(article, coyoacan), 0)
+        self.assertGreaterEqual(_photo_score(article, metro), 0)
+        with patch.object(photos, "_pool", return_value=[coyoacan, metro]), patch.object(
+            photos, "_load", return_value=[]
+        ):
+            assign_photos([article])
+        self.assertEqual(article["photo"]["id"], "metro-station")
+
+    def test_legislators_story_rejects_palacio_nacional_photo(self):
+        article = self.make_article(
+            "Afirman legisladores que en la CDMX se garantiza el derecho al deporte",
+            "Gobierno",
+            "Congreso de la Ciudad de México",
+        )
+        national_palace = representative_photo(
+            "palacio-nacional",
+            "CDMX",
+            "Fachada del Palacio Nacional, Ciudad de México 01",
+            ["Palacio Nacional"],
+        )
+        legislative_building = representative_photo(
+            "palacio-legislativo",
+            "CDMX",
+            "Palacio Legislativo de San Lázaro, Ciudad de México",
+            ["Palacio Legislativo", "Congreso CDMX"],
+        )
+        self.assertLess(_photo_score(article, national_palace), 0)
+        self.assertGreaterEqual(_photo_score(article, legislative_building), 0)
+
+    def test_archive_march_photos_disclose_they_are_not_current_events(self):
+        march = self.photo("commons_54378318")
+        cacerolazo = self.photo("commons_16240277")
+        self.assertIsNotNone(march)
+        self.assertIsNotNone(cacerolazo)
+        self.assertIn("no corresponde a las movilizaciones del 14/11/2026", march["topic"])
+        self.assertIn("no corresponde a las movilizaciones del 14/11/2026", cacerolazo["topic"])
 
 if __name__ == "__main__":
     unittest.main()
