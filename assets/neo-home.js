@@ -264,9 +264,16 @@ function isStaleTimeSensitiveHeadline(article,now=new Date()){
  if(!day)return true;
  return day!==homepageDateFormatter.format(now);
 }
+function homepageEventKey(article){
+ const title=String(article?.title||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLocaleLowerCase('es-MX');
+ const day=homepageDay(article?.published_at||article?.date);
+ if(day==='2026-11-15'&&/\bgarbage\b/.test(title)&&/\bzocalo\b/.test(title)&&/\b90 mil\b/.test(title))return 'garbage-zocalo-concert-2026-11-14';
+ return '';
+}
 function eligibleStories(feed){
  const items=Array.isArray(feed)?feed:(Array.isArray(feed?.articles)?feed.articles:[]);
  const usedPhotos=new Set();
+ const seenEvents=new Set();
  return items.filter(a=>{
   if(!a||typeof a.title!=='string'||!isHomepageRecent(a))return false;
   const p=photoInfo(a);
@@ -274,7 +281,10 @@ function eligibleStories(feed){
   if((!p&&!sensitive)||(p&&usedPhotos.has(p.url)))return false;
   if(!(/^https:\/\/news\.google\.com\//.test(a.url||'')||a.editorial_verified===true))return false;
   if(!/^\/noticias\/\?/.test(a.local_url||''))return false;
+  const eventKey=homepageEventKey(a);
+  if(eventKey&&seenEvents.has(eventKey))return false;
   if(p)usedPhotos.add(p.url);
+  if(eventKey)seenEvents.add(eventKey);
   return true;
  });
 }
