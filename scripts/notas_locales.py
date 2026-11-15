@@ -82,6 +82,7 @@ INFOBAE_VITE_BALU_SOURCE_URL = "https://www.infobae.com/mexico/2026/11/14/captur
 EL_SOL_MEXICO_QUERETARO_TRAILER_SOURCE_URL = "https://oem.com.mx/elsoldetoluca/local/vuelca-trailer-en-la-mexico-queretaro-y-cierran-la-autopista-rumbo-a-cdmx-33138834"
 IMER_ANIMAL_RIGHTS_MARCH_SOURCE_URL = "https://noticias.imer.mx/blog/activistas-y-defensores-de-animales-marcharon-para-exigir-el-fin-de-la-explotacion-animal-y-promover-el-veganismo-en-cdmx/"
 LA_JORNADA_GARBAGE_ZOCALO_SOURCE_URL = "https://www.jornada.com.mx/noticia/2026/11/14/espectaculos/garbage-reune-a-mas-de-90-mil-personas-en-concierto-en-la-ciudad-de-mexico"
+SOCIEDAD_NOTICIAS_GARBAGE_ZOCALO_SOURCE_URL = "https://sociedad-noticias.com/2026/11/15/garbage-reune-a-mas-de-90-mil-personas-en-el-zocalo-de-la-cdmx/"
 
 
 def is_radio_formula_casa_ecologica(article):
@@ -156,6 +157,18 @@ def is_la_jornada_garbage_zocalo(article):
     return (
         str(article.get("date") or "") == "2026-11-14"
         and source == "la jornada"
+        and "garbage" in title
+        and "zocalo" in title
+    )
+
+
+def is_sociedad_noticias_garbage_zocalo(article):
+    """Identifica la cobertura de Sociedad Noticias sobre Garbage en el Zócalo del 15/11/2026."""
+    title = _photo_fold(article.get("title"))
+    source = _photo_fold(article.get("source"))
+    return (
+        str(article.get("date") or "") == "2026-11-15"
+        and source == "sociedad noticias"
         and "garbage" in title
         and "zocalo" in title
     )
@@ -685,6 +698,26 @@ def summarize(article):
     category=str(article.get("category") or "CDMX")
     theme=TAGS.get(category,TAGS["CDMX"])
     folded_title=_photo_fold(title)
+    if is_sociedad_noticias_garbage_zocalo(article):
+        return {
+            "lead": (
+                "Sociedad Noticias reportó que más de 90 mil personas acudieron al concierto gratuito de Garbage "
+                "en el Zócalo de la Ciudad de México la noche del sábado 14 de noviembre."
+            ),
+            "context": (
+                "La nota describe una presentación encabezada por Shirley Manson y menciona canciones como "
+                "«Stupid Girl», «Cherry Lips», «Push It» y «Only Happy When It Rains»."
+            ),
+            "pending": (
+                "La cifra de asistencia y los detalles del concierto se atribuyen a Sociedad Noticias; "
+                "CDMX AL MEMENTO no realizó un conteo independiente ni una verificación presencial."
+            ),
+            "method": (
+                "Síntesis editorial basada en la publicación de Sociedad Noticias del 15 de noviembre de 2026: "
+                + SOCIEDAD_NOTICIAS_GARBAGE_ZOCALO_SOURCE_URL
+                + ". Los datos del evento se atribuyen al medio."
+            ),
+        }
     if is_la_jornada_garbage_zocalo(article):
         return {
             "lead": (
@@ -2181,8 +2214,8 @@ def _photo_score(article, photo):
     # Una cartelera teatral no se ilustra con una maceta o un monumento cultural genérico.
     if theater_story and not theater_photo:
         return -10000
-    # La cobertura de Garbage trata del concierto en el Zócalo: una foto de otro grupo y recinto no basta.
-    if is_la_jornada_garbage_zocalo(article):
+    # Las coberturas de Garbage tratan del concierto en el Zócalo: una foto de otro grupo y recinto no basta.
+    if is_la_jornada_garbage_zocalo(article) or is_sociedad_noticias_garbage_zocalo(article):
         return 5000 if photo.get("id") == "zocalo" else -10000
     # Una nota sobre el modelo de seguridad de Saltillo no debe ilustrarse
     # con patrullas de otra alcaldía de CDMX. Sin foto contextual de Saltillo,
