@@ -2,7 +2,7 @@
 import json
 import unittest
 from pathlib import Path
-from scripts.notas_locales import assign_photos, local_link, summarize, is_sensitive_media, RADIO_FORMULA_CASA_ECOLOGICA_SOURCE_URL, INFOBAE_MARIA_LEON_CONCERT_SOURCE_URL, AICM_FLIGHT_SUSPENSION_SOURCE_URL, LA_RAZON_GARBAGE_ZOCALO_SOURCE_URL
+from scripts.notas_locales import assign_photos, local_link, summarize, is_sensitive_media, RADIO_FORMULA_CASA_ECOLOGICA_SOURCE_URL, INFOBAE_MARIA_LEON_CONCERT_SOURCE_URL, AICM_FLIGHT_SUSPENSION_SOURCE_URL, LA_RAZON_GARBAGE_ZOCALO_SOURCE_URL, INFOBAE_GARBAGE_ZOCALO_SOURCE_URL
 from scripts.build_article_seo import article_id, render
 from update_news import category_by_headline, standardize, photo_needs_refresh, CAPITAL_CDMX_CARE_BUDGET_SOURCE_URL, prioritize_photo_refresh, build_homepage_feed, archive_record_key, dedupe_homepage_events
 
@@ -943,6 +943,32 @@ class LocalNewsTests(unittest.TestCase):
         self.assertIn("no realizó un conteo independiente", result["brief"]["pending"])
         self.assertIn(source_url, result["brief"]["method"])
         # La ficha SEO verifica el enlace directo con el identificador público exacto.
+
+    def test_infobae_garbage_uses_direct_source_and_attributed_pre_event_summary(self):
+        article = {
+            "title": "Garbage en el Zócalo de la CDMX: así puedes seguir el concierto EN VIVO de manera gratuita",
+            "url": "https://news.google.com/rss/articles/infobae-garbage-zocalo-20261114?oc=5",
+            "source": "Infobae",
+            "date": "2026-11-14",
+            "published_at": "2026-11-15T00:40:00Z",
+            "category": "Cultura",
+        }
+        result = standardize(article)
+        self.assertIsNotNone(result)
+        self.assertEqual(result["source_url"], INFOBAE_GARBAGE_ZOCALO_SOURCE_URL)
+        self.assertEqual(result["borough"], "Cuauhtémoc")
+        self.assertEqual(
+            result["location"],
+            "Zócalo (Plaza de la Constitución), alcaldía Cuauhtémoc, Ciudad de México",
+        )
+        self.assertIn("antes del concierto", result["brief"]["lead"])
+        self.assertIn("Capital 21", result["brief"]["context"])
+        self.assertIn("Canal Catorce", result["brief"]["context"])
+        self.assertIn("Reactor 105.7 FM", result["brief"]["context"])
+        self.assertIn("previa al concierto", result["brief"]["pending"])
+        page = render(result, article_id(result))
+        self.assertIn(INFOBAE_GARBAGE_ZOCALO_SOURCE_URL, page)
+        self.assertNotIn(result["url"], page)
 
     def test_sin_embargo_garbage_summary_uses_headline_limits_and_cuauhtemoc_location(self):
         article = {
