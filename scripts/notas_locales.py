@@ -85,6 +85,7 @@ LA_JORNADA_GARBAGE_ZOCALO_SOURCE_URL = "https://www.jornada.com.mx/noticia/2026/
 SOCIEDAD_NOTICIAS_GARBAGE_ZOCALO_SOURCE_URL = "https://sociedad-noticias.com/2026/11/15/garbage-reune-a-mas-de-90-mil-personas-en-el-zocalo-de-la-cdmx/"
 LA_RAZON_GARBAGE_ZOCALO_SOURCE_URL = "https://www.razon.com.mx/ciudad/2026/11/15/asisten-mas-de-90-mil-personas-a-concierto-de-garbage-en-el-zocalo-de-la-cdmx/"
 INFOBAE_GARBAGE_ZOCALO_SOURCE_URL = "https://www.infobae.com/mexico/2026/11/15/garbage-en-el-zocalo-de-la-cdmx-asi-puedes-seguir-el-concierto-en-vivo-de-manera-gratuita/"
+YAHOO_GARBAGE_ZOCALO_SOURCE_URL = "https://es-us.noticias.yahoo.com/garbage-conquista-90-mil-personas-224733197.html"
 
 
 def is_radio_formula_casa_ecologica(article):
@@ -182,7 +183,7 @@ def is_yahoo_garbage_zocalo(article):
     source = _photo_fold(article.get("source"))
     return (
         str(article.get("date") or "") == "2026-11-14"
-        and source == "yahoo"
+        and source in {"yahoo", "el universal via yahoo noticias"}
         and "garbage" in title
         and "zocalo" in title
     )
@@ -789,6 +790,26 @@ def summarize(article):
                 "Síntesis limitada al titular y metadatos RSS de Google News atribuidos a SinEmbargo; no equivale a "
                 "lectura del artículo íntegro. La ubicación del Zócalo se contrastó con la ficha de SEDEMA: "
                 "https://www.proyectos.sedema.cdmx.gob.mx/datos/areas-verdes-detalle/4648."
+            ),
+        }
+    if is_yahoo_garbage_zocalo(article):
+        return {
+            "lead": (
+                "El Universal, en una nota distribuida por Yahoo Noticias, reportó que Garbage reunió a unas "
+                "90 mil personas en el Zócalo de la Ciudad de México el 14 de noviembre de 2026."
+            ),
+            "context": (
+                "La cobertura describe el inicio del concierto a las 20:00, la participación de Paulina Villarreal "
+                "de The Warning y el cierre de Garbage junto al Mariachi Fiesta de México."
+            ),
+            "pending": (
+                "La cifra de asistencia y los detalles del repertorio se atribuyen a El Universal; "
+                "CDMX AL MEMENTO no realizó un conteo independiente ni una verificación presencial."
+            ),
+            "method": (
+                "Síntesis editorial basada en la nota de El Universal publicada en Yahoo Noticias: "
+                + YAHOO_GARBAGE_ZOCALO_SOURCE_URL
+                + ". Los datos del evento se atribuyen al medio original."
             ),
         }
     if is_sociedad_noticias_garbage_zocalo(article):
