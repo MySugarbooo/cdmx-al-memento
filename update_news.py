@@ -383,6 +383,16 @@ def is_la_prensa_prehospital_care(article):
     )
 
 
+def is_segundo_a_segundo_green_areas_standard(article):
+    title = fold(article.get("title", ""))
+    return (
+        str(article.get("date") or "")[:10] == "2026-11-15"
+        and fold(article.get("source", "")) == "segundo a segundo"
+        and "sistemas integrales vivientes" in title
+        and "areas verdes" in title
+    )
+
+
 def category_by_headline(title, feed_category, source=""):
     """Corrige etiquetas RSS evidentes sin inventar ubicaciones o hechos."""
     normalized = fold(title)
@@ -393,6 +403,8 @@ def category_by_headline(title, feed_category, source=""):
     # Las aulas digitales y los informes de SECTEI son gestión pública educativa.
     if re.search(r"\b(?:sectei|aulas? digitales?)\b", normalized):
         return "Gobierno"
+    if re.search(r"\b(?:areas verdes|infraestructura verde|sistemas integrales vivientes|norma ambiental)\b", normalized):
+        return "Medio Ambiente"
     if re.search(r"\b(?:bolsas? plasticas?|residuos? plasticos?)\b", normalized):
         return "Medio Ambiente"
     if re.search(r"\b15 colonias de 6 alcaldias concentran denuncias por maltrato animal\b", normalized):
@@ -994,6 +1006,29 @@ def standardize(article):
         result["photo"] = normalize_photo_license(article["photo"])
     # Fotografías de accidentes de archivo pueden ser solo contexto; no
     # conservarlas tras la revisión editorial si no documentan ese hecho.
+    if is_segundo_a_segundo_green_areas_standard(result):
+        result["source_url"] = "https://segundoasegundo.com/gobierno-de-cdmx-promueve-sistemas-integrales-vivientes-en-areas-verdes/"
+        result["category"] = "Medio Ambiente"
+        result["brief"] = {
+            "lead": (
+                "Segundo a Segundo reportó el 15 de noviembre de 2026 que el Gobierno de CDMX impulsa "
+                "la propuesta de norma ambiental PROY-NACDMX-006-RNAT-2026 para que las áreas verdes "
+                "se planifiquen y mantengan como sistemas que integren distintas especies de flora y fauna. "
+                "La iniciativa contempla proyectos previos y planes de trabajo para conservar esos espacios."
+            ),
+            "context": (
+                "La propuesta prioriza especies nativas, disponibilidad de agua y mejora del suelo; "
+                "también contempla medidas para atender erosión e inestabilidad de laderas."
+            ),
+            "pending": (
+                "La publicación describe una propuesta normativa en consulta pública; no confirma su "
+                "aprobación final ni que las medidas ya se hayan aplicado en todos los parques de la ciudad."
+            ),
+            "method": (
+                "Síntesis editorial propia elaborada tras consultar la publicación original de Segundo a Segundo; "
+                "no equivale a verificación independiente del proceso normativo."
+            ),
+        }
     result["description"] = result["brief"]["lead"]
     return result
 
