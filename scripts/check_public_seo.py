@@ -12,6 +12,8 @@ import re
 import time
 import xml.etree.ElementTree as ET
 
+from build_article_seo import has_verified_event_photo, is_sensitive_media
+
 ROOT = Path(__file__).resolve().parents[1]
 BASE = "https://cdmx-al-memento.pages.dev"
 DEPLOY_ATTEMPTS = 36
@@ -207,10 +209,15 @@ def validate_article_html(item, data):
         if value and html.escape(value, quote=True) not in page_html:
             raise ValueError(f"el artículo público no contiene el campo {field}")
     photo = item.get("photo")
+    sensitive = is_sensitive_media(item)
     has_photo = bool(
         re.search(r'<figure\b[^>]*class=["\'][^"\']*article-photo', page_html, re.IGNORECASE)
     )
-    if isinstance(photo, dict):
+    photo_allowed = (
+        isinstance(photo, dict) and
+        (not sensitive or has_verified_event_photo(photo))
+    )
+    if photo_allowed:
         if not has_photo:
             raise ValueError("el artículo público no muestra la fotografía asignada")
         image_url = str(photo.get("url") or "")
@@ -220,7 +227,7 @@ def validate_article_html(item, data):
             value = str(photo.get(field) or "")
             if value and html.escape(value, quote=True) not in page_html:
                 raise ValueError(f"el artículo público no contiene el crédito {field}")
-    elif item.get("sensitive_media") is True:
+    elif sensitive:
         if "Sin fotografía verificada del hecho" not in page_html:
             raise ValueError("la noticia sensible no muestra el aviso de fotografía")
         if has_photo:
