@@ -1,4 +1,6 @@
 """Regression tests for the public SEO/deployment checker."""
+import subprocess
+import sys
 import unittest
 from pathlib import Path
 
@@ -254,6 +256,18 @@ class PublicSeoTests(unittest.TestCase):
         links = recent_article_links([society, razon], limit=12)
         self.assertEqual(links, [(article_id(society), society["title"])])
         self.assertNotEqual(article_id(society), article_id(razon))
+
+
+    def test_article_seo_module_imports_from_scripts_working_directory(self):
+        script_dir = Path(__file__).resolve().parent.parent / "scripts"
+        result = subprocess.run(
+            [sys.executable, "-c", "import build_article_seo"],
+            cwd=script_dir,
+            capture_output=True,
+            text=True,
+            check=False,
+        )
+        self.assertEqual(result.returncode, 0, result.stderr)
 
 
 if __name__ == "__main__":
