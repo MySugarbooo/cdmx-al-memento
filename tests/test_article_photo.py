@@ -146,6 +146,30 @@ class ArticlePhotoTests(unittest.TestCase):
         self.assertIn("CC BY 3.0", page)
         self.assertIn(photo_url.replace("&", "&amp;"), page)
 
+    def test_imer_animal_rights_original_source_url_is_clickable(self):
+        source_url = (
+            "https://noticias.imer.mx/blog/activistas-y-defensores-de-animales-"
+            "marcharon-para-exigir-el-fin-de-la-explotacion-animal-y-promover-el-veganismo-en-cdmx/"
+        )
+        item = {
+            "title": "Defensores de animales exigen el fin de la explotación animal y promueven el veganismo en CDMX",
+            "source": "IMER Noticias",
+            "source_url": source_url,
+            "url": "https://news.google.com/rss/articles/example?oc=5",
+            "date": "2026-11-14",
+            "local_url": "/noticias/?id=cad284585f539df643d2&mes=2026-11",
+            "brief": {
+                "lead": "Activistas y organizaciones defensoras de animales marcharon en CDMX.",
+                "method": "Síntesis del artículo original de IMER Noticias.",
+            },
+        }
+        page = render(item, "cad284585f539df643d2")
+        self.assertIn('href="' + source_url + '"', page)
+        self.assertIn("Ver fuente original", page)
+        self.assertIn('rel="nofollow noopener noreferrer"', page)
+        self.assertNotIn('href="' + item["url"] + '"', page)
+
+
     def test_local_photo_keeps_credits(self):
         html = render_photo({"category": "Seguridad", "photo": {
             "url": "/assets/fotos/seguridad.jpg", "kind": "representativa",
