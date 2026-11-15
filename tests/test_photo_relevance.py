@@ -2706,6 +2706,15 @@ class CurrentFeedEditorialPhotoRegressionTests(unittest.TestCase):
             source="Sociedad Noticias",
             date="2026-11-15")
 
+    def test_la_razon_garbage_story_replaces_other_venue_photo_with_constitution_square(self):
+        self.assert_photo_replaced(
+            "Asisten más de 90 mil personas a concierto de Garbage en el Zócalo de la CDMX",
+            "Cultura",
+            "contexto_concierto_palacio_deportes_2009",
+            "commons_20428729",
+            source="La Razón de México",
+            date="2026-11-15")
+
     def test_sociedad_noticias_garbage_summary_uses_attributed_source_details(self):
         article = {
             "title": "Garbage reúne a más de 90 mil personas en el Zócalo de la Cdmx",
@@ -2719,6 +2728,20 @@ class CurrentFeedEditorialPhotoRegressionTests(unittest.TestCase):
         self.assertIn("Sociedad Noticias", summary["method"])
         self.assertIn("no realizó un conteo independiente", summary["pending"])
         self.assertIn(photos.SOCIEDAD_NOTICIAS_GARBAGE_ZOCALO_SOURCE_URL, summary["method"])
+
+    def test_la_razon_garbage_summary_is_limited_to_the_rss_headline(self):
+        article = {
+            "title": "Asisten más de 90 mil personas a concierto de Garbage en el Zócalo de la CDMX",
+            "source": "La Razón de México",
+            "date": "2026-11-15",
+            "category": "Cultura",
+        }
+        summary = news.summarize(article)
+        self.assertIn("más de 90 mil asistentes", summary["lead"])
+        self.assertIn("La Razón de México", summary["lead"])
+        self.assertIn("no se recuperó el texto íntegro", summary["pending"].casefold())
+        self.assertIn("RSS de Google News", summary["method"])
+        self.assertNotIn("saldo blanco", summary["lead"])
 
     def test_la_jornada_garbage_summary_uses_reported_attendance_and_saldo_blanco(self):
         article = {

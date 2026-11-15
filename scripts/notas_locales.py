@@ -174,6 +174,18 @@ def is_sociedad_noticias_garbage_zocalo(article):
     )
 
 
+def is_la_razon_garbage_zocalo(article):
+    """Identifica la entrada RSS de La Razón sobre Garbage en el Zócalo del 15/11/2026."""
+    title = _photo_fold(article.get("title"))
+    source = _photo_fold(article.get("source"))
+    return (
+        str(article.get("date") or "") == "2026-11-15"
+        and source == "la razon de mexico"
+        and "garbage" in title
+        and "zocalo" in title
+    )
+
+
 def is_jose_cardenas_rocazos(article):
     """Identifica la nota de José Cárdenas sobre ataques a automovilistas en Periférico."""
     title = _photo_fold(article.get("title"))
@@ -716,6 +728,27 @@ def summarize(article):
                 "Síntesis editorial basada en la publicación de Sociedad Noticias del 15 de noviembre de 2026: "
                 + SOCIEDAD_NOTICIAS_GARBAGE_ZOCALO_SOURCE_URL
                 + ". Los datos del evento se atribuyen al medio."
+            ),
+        }
+    if is_la_razon_garbage_zocalo(article):
+        return {
+            "lead": (
+                "La Razón de México publicó un titular que atribuye más de 90 mil asistentes al concierto de Garbage "
+                "en el Zócalo de la Ciudad de México. La cifra se reproduce como afirmación del encabezado, no como "
+                "conteo verificado por CDMX AL MEMENTO."
+            ),
+            "context": (
+                "El registro RSS identifica a Garbage y al Zócalo como tema de la cobertura; no aporta detalles "
+                "suficientes para describir el desarrollo del concierto."
+            ),
+            "pending": (
+                "No se recuperó el texto íntegro ni una URL directa verificable de La Razón. La asistencia y cualquier "
+                "otro detalle requieren consulta de la publicación original; CDMX AL MEMENTO no hizo un conteo independiente."
+            ),
+            "method": (
+                "Síntesis limitada al titular y metadatos del RSS de Google News atribuido a La Razón de México; "
+                "no equivale a lectura del artículo íntegro. Se conserva el enlace RSS disponible porque no se verificó "
+                "una URL directa."
             ),
         }
     if is_la_jornada_garbage_zocalo(article):
@@ -2215,6 +2248,10 @@ def _photo_score(article, photo):
     if theater_story and not theater_photo:
         return -10000
     # Las coberturas de Garbage tratan del concierto en el Zócalo: una foto de otro grupo y recinto no basta.
+    # La nota de La Razón también trata del concierto en el Zócalo:
+    # usar una foto de archivo de la Plaza de la Constitución, no de otro grupo y recinto.
+    if is_la_razon_garbage_zocalo(article):
+        return 5000 if photo.get("id") == "commons_20428729" else -10000
     if is_la_jornada_garbage_zocalo(article) or is_sociedad_noticias_garbage_zocalo(article):
         return 5000 if photo.get("id") == "zocalo" else -10000
     # Una nota sobre el modelo de seguridad de Saltillo no debe ilustrarse
