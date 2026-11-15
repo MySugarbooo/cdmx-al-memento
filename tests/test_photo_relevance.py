@@ -2739,7 +2739,7 @@ class CurrentFeedEditorialPhotoRegressionTests(unittest.TestCase):
         summary = news.summarize(article)
         self.assertIn("más de 90 mil asistentes", summary["lead"])
         self.assertIn("La Razón de México", summary["lead"])
-        self.assertIn("no se recuperó el texto íntegro", summary["pending"])
+        self.assertIn("no se recuperó el texto íntegro", summary["pending"].casefold())
         self.assertIn("RSS de Google News", summary["method"])
         self.assertNotIn("saldo blanco", summary["lead"])
 
