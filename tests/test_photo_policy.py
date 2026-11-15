@@ -449,7 +449,7 @@ class NewsPhotoPolicyTests(unittest.TestCase):
         )
         patrol = next(
             photo for photo in photos._pool()
-            if photo["id"] == "archivo_seguridad_001"
+            if photo["id"] == "archivo_seguridad_005"
         )
 
         self.assertEqual(photos._photo_category(article), "Seguridad")
@@ -464,10 +464,10 @@ class NewsPhotoPolicyTests(unittest.TestCase):
             ):
                 stats = photos.assign_photos([article])
 
-        self.assertEqual(article["photo"]["id"], "archivo_seguridad_001")
+        self.assertEqual(article["photo"]["id"], "archivo_seguridad_005")
         self.assertEqual(article["photo"]["kind"], "representativa")
         self.assertEqual(article["photo"]["author"], "Gobierno de la Ciudad de México")
-        self.assertEqual(article["photo"]["license"], "CC BY 4.0")
+        self.assertEqual(article["photo"]["license"], "CC BY-SA 4.0")
         self.assertTrue(article["photo"]["source"].startswith("https://commons.wikimedia.org/wiki/File:"))
         self.assertEqual(stats["assigned"], 1)
 
