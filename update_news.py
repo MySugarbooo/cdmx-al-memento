@@ -438,8 +438,17 @@ def category_by_headline(title, feed_category, source=""):
     if (re.search(r"\bc5\b", normalized)
             and re.search(r"\b(?:camaras?|vigilar|vigilara|vigilancia)\b", normalized)):
         return "Seguridad"
-    if (re.search(r"\bmarchas?\b", normalized)
-            and re.search(r"\b(?:colaps\w*|trafico|puntos de partida|cierres?|bloqueos?)\b", normalized)):
+    # La agenda de movilizaciones de la SSC con afectaciones viales pertenece a Movilidad.
+    if (
+        re.search(r"\b(?:ssc|secretaria de seguridad ciudadana)\b", normalized)
+        and re.search(r"\bmovilizaciones?\b", normalized)
+        and re.search(r"\b(?:afectaciones viales|cierres? viales|trafico|bloqueos?)\b", normalized)
+    ):
+        return "Movilidad"
+    if (
+        re.search(r"\bmarchas?\b", normalized)
+        and re.search(r"\b(?:colaps\w*|trafico|puntos de partida|cierres?|bloqueos?)\b", normalized)
+    ):
         return "Movilidad"
     # Conciertos, teatro, intérpretes, estrenos y alfombras de cine pertenecen a Cultura.
     if re.search(
