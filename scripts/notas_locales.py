@@ -2044,6 +2044,12 @@ def _photo_score(article, photo):
     topic=re.sub(r"\bno\b[^;.)]*", "", topic)
     keywords=_photo_fold(" ".join(str(x) for x in photo.get("keywords",[])))
     context=topic+" "+keywords
+    atole_story = bool(re.search(r"\\b(?:feria del atole|atole)\\b", headline))
+    atole_photo = bool(re.search(r"\\b(?:atole|atol)\\b", context))
+    if atole_story:
+        return 5000 if atole_photo else -10000
+    if photo.get("id") == "contexto_atole_mexicano":
+        return -10000
     theater_story = bool(re.search(
         r"\b(?:obras? de teatro|cartelera teatral|funciones? de teatro)\b", headline
     ))
