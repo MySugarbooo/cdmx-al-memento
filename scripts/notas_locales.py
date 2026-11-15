@@ -2728,11 +2728,14 @@ def _photo_score(article, photo):
         )
     )
     if cycling_event_story:
-        cycling_event_photo = bool(re.search(
-            r"\\b(?:cicloton|paseo ciclista|ciclismo|ciclistas?|bicicletas?|muevete en bici)\\b",
+        event_ride_photo = bool(re.search(
+            r"\\b(?:cicloton|paseo ciclista|carrera ciclista|muevete en bici)\\b",
             context,
         ))
-        return 5000 if cycling_event_photo else -10000
+        bicycle_photo = bool(re.search(r"\\b(?:ciclismo|ciclistas?|bicicletas?)\\b", context))
+        if event_ride_photo:
+            return 5000
+        return 2500 if bicycle_photo else -10000
 
     music_story = bool(re.search(
         r"\b(?:riff|musica|orquestas?|coros?|coral|conciertos?|bandas?|cantantes?|canta|cantar|aniversario musical|"
