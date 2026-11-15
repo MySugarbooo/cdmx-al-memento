@@ -3531,5 +3531,24 @@ class CurrentFeedPhotoMismatchRegressionTests(unittest.TestCase):
         self.assertEqual(article["photo"]["license"], "CC BY-SA 4.0")
 
 
+    def test_tlahuac_atole_fair_uses_atole_photo_not_zocalo_dancers(self):
+        pool = photos._pool()
+        atole = next(photo for photo in pool if photo.get("id") == "contexto_atole_mexicano")
+        zocalo = next(photo for photo in pool if photo.get("id") == "commons_82750985")
+        article = {
+            "title": "Feria del Atole 2026 en Tláhuac: fechas, sabores y actividades",
+            "category": "CDMX",
+            "borough": "Tláhuac",
+            "url": "https://news.google.com/rss/articles/atole-fair-photo-regression",
+            "photo": deepcopy(zocalo),
+        }
+        self.assertGreaterEqual(_photo_score(article, atole), 5000)
+        self.assertLess(_photo_score(article, zocalo), 0)
+        assign_photos([article])
+        self.assertEqual(article["photo"]["id"], "contexto_atole_mexicano")
+        self.assertEqual(article["photo"]["author"], "ottmarliebert.com")
+        self.assertEqual(article["photo"]["license"], "CC BY-SA 2.0")
+
+
 if __name__ == "__main__":
     unittest.main()
