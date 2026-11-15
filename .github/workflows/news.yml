@@ -136,7 +136,7 @@ on:
       - 'functions/api/clima.js'
       - 'assets/clima-ticker.js'
   pull_request:
-    # Ejecuta regresiones de portada, fotografías y feed sin publicar desde PR.
+    # Ejecuta regresiones de portada, fotografías, feed y dependencias SEO desde PR.
     # Incluye regresión para conservar fotos representativas acreditadas del feed.
     # La revisión pública también cubre todas las noticias y la muestra reciente de hemeroteca.
     branches: [main]
