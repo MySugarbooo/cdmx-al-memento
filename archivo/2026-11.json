@@ -1,6 +1,6 @@
 {
   "month": "2026-11",
-  "updated": "2026-11-15 10:45 UTC",
+  "updated": "2026-11-15 10:52 UTC",
   "articles": [
     {
       "title": "Hoy no circula 15 de noviembre del 2026: ¿Qué autos descansan este domingo en CdMx y Edomex?",
@@ -2890,25 +2890,60 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "contexto_concierto_palacio_deportes_2009",
+        "id": "commons_41703830",
         "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/PalaciodelosDeportes_Concierto.jpg/960px-PalaciodelosDeportes_Concierto.jpg",
-        "category": "Cultura",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/CICLOTON_DF_IZTACALCO_%28BY_LION%29_-_panoramio.jpg/960px-CICLOTON_DF_IZTACALCO_%28BY_LION%29_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "category": "Alcaldías",
         "borough": "",
-        "topic": "Concierto de Kings of Leon en el Palacio de los Deportes, CDMX (octubre de 2009); foto de archivo representativa, no documenta eventos de la noticia.",
+        "topic": "CICLOTON DF IZTACALCO (BY LION) - panoramio",
         "keywords": [
-          "concierto",
-          "música en vivo",
-          "Palacio de los Deportes",
-          "Ciudad de México",
-          "escenario",
-          "público"
+          "Iztacalco Ciudad de México"
         ],
-        "author": "ProtoplasmaKid",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-        "source": "https://commons.wikimedia.org/wiki/File:PalaciodelosDeportes_Concierto.jpg"
-      }
+        "author": "LEON23",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:CICLOTON_DF_IZTACALCO_(BY_LION)_-_panoramio.jpg"
+      },
+      "alternate_versions": [
+        {
+          "title": "L'Etape Ciudad de México by Tour de France 2026: Ruta, calles cerradas y alternativas viales en la CDMX",
+          "description": "De acuerdo con Reporte Indigo, el titular publicado es: «L'Etape Ciudad de México by Tour de France 2026: Ruta, calles cerradas y alternativas viales en la CDMX». La información publicada por Reporte Indigo aborda un asunto que este portal clasifica como Movilidad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQellYbzY1RkszYVpBQjkxcVIzWUNIZ1VnWEgzNC01aVBOdzBuWnFsWS1CRU5BcklTeWdGRjl0VktuRlFzR01qcE0tR2R3cnNIY3dycGl0ek1HaWJaT3J3d3N2SUZJT2VuTG82TF92am1NT0ZNUDJOT0l4WVlmcS16RmhFc1VMek9MVTFIQWV4ODlSelhwTWIwU3ZTaUZzbl9xaHd5X2d0SVZHZzFuTGx0WXJxenFjX2FEUWw3X3VJMUdlTTB2ZDRXUk5hZ3doUFM2UnF3UVhiUFE0LWlyc3JMSmR6QmhsTUU2RkE?oc=5",
+          "source": "Reporte Indigo",
+          "date": "2026-11-14",
+          "published_at": "2026-11-14T23:01:00Z",
+          "category": "Movilidad",
+          "borough": "",
+          "location": "Ciudad de México (sin alcaldía identificada)",
+          "local_url": "/noticias/?id=b7445609231a018ddf0b&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con Reporte Indigo, el titular publicado es: «L'Etape Ciudad de México by Tour de France 2026: Ruta, calles cerradas y alternativas viales en la CDMX». La información publicada por Reporte Indigo aborda un asunto que este portal clasifica como Movilidad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
+            "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "contexto_concierto_palacio_deportes_2009",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/PalaciodelosDeportes_Concierto.jpg/960px-PalaciodelosDeportes_Concierto.jpg",
+            "category": "Cultura",
+            "borough": "",
+            "topic": "Concierto de Kings of Leon en el Palacio de los Deportes, CDMX (octubre de 2009); foto de archivo representativa, no documenta eventos de la noticia.",
+            "keywords": [
+              "concierto",
+              "música en vivo",
+              "Palacio de los Deportes",
+              "Ciudad de México",
+              "escenario",
+              "público"
+            ],
+            "author": "ProtoplasmaKid",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "source": "https://commons.wikimedia.org/wiki/File:PalaciodelosDeportes_Concierto.jpg"
+          }
+        }
+      ]
     },
     {
       "title": "Karol G conquista CDMX con mariachi, vestuario mexicano y una sorpresa junto a Thalía",
