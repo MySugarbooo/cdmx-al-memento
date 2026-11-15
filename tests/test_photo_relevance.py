@@ -3957,7 +3957,7 @@ class CurrentFeedPhotoMismatchRegressionTests(unittest.TestCase):
         self.assertEqual(_photo_score(article, nativity), 5000)
         self.assertEqual(nativity["author"], "Encogua")
         self.assertEqual(nativity["license"], "CC BY-SA 4.0")
-        self.assertIn("no corresponde a la Feria del Nacimiento de CDMX de 2026", nativity["topic"])
+        self.assertIn("no de la Feria del Nacimiento de CDMX 2026", nativity["topic"])
         article["photo"] = deepcopy(palace)
         with patch.object(photos, "_pool", return_value=[palace, nativity]), patch.object(
             photos, "_load", return_value=[]
