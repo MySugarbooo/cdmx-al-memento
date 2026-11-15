@@ -187,6 +187,18 @@ def is_la_razon_garbage_zocalo(article):
     )
 
 
+def is_sin_embargo_garbage_zocalo(article):
+    """Identifica la cobertura de SinEmbargo sobre Garbage en el Zócalo del 14/11/2026."""
+    title = _photo_fold(article.get("title"))
+    source = _photo_fold(article.get("source"))
+    return (
+        str(article.get("date") or "") == "2026-11-14"
+        and source == "sin embargo"
+        and "garbage" in title
+        and "zocalo" in title
+    )
+
+
 def is_jose_cardenas_rocazos(article):
     """Identifica la nota de José Cárdenas sobre ataques a automovilistas en Periférico."""
     title = _photo_fold(article.get("title"))
@@ -711,6 +723,27 @@ def summarize(article):
     category=str(article.get("category") or "CDMX")
     theme=TAGS.get(category,TAGS["CDMX"])
     folded_title=_photo_fold(title)
+    if is_sin_embargo_garbage_zocalo(article):
+        return {
+            "lead": (
+                "SinEmbargo tituló su cobertura sobre el concierto de Garbage en el Zócalo y mencionó cierres viales "
+                "en el Centro Histórico. El encabezado no precisa por sí solo qué calles estaban cerradas ni la "
+                "duración de las afectaciones."
+            ),
+            "context": (
+                "El Zócalo corresponde a la Plaza de la Constitución, en la alcaldía Cuauhtémoc. Esta referencia "
+                "identifica el lugar del concierto, pero no confirma la vigencia de los cierres viales."
+            ),
+            "pending": (
+                "No se recuperó el cuerpo íntegro de la nota ni se verificó de forma independiente el estado de las "
+                "vialidades. Consulta los avisos actuales de SEMOVI y SSC antes de modificar un recorrido."
+            ),
+            "method": (
+                "Síntesis limitada al titular y metadatos RSS de Google News atribuidos a SinEmbargo; no equivale a "
+                "lectura del artículo íntegro. La ubicación del Zócalo se contrastó con la ficha de SEDEMA: "
+                "https://www.proyectos.sedema.cdmx.gob.mx/datos/areas-verdes-detalle/4648."
+            ),
+        }
     if is_sociedad_noticias_garbage_zocalo(article):
         return {
             "lead": (
@@ -2252,6 +2285,8 @@ def _photo_score(article, photo):
     # Las coberturas de Garbage tratan del concierto en el Zócalo: una foto de otro grupo y recinto no basta.
     # La nota de La Razón también trata del concierto en el Zócalo:
     # usar una foto de archivo de la Plaza de la Constitución, no de otro grupo y recinto.
+    if is_sin_embargo_garbage_zocalo(article):
+        return 5000 if photo.get("id") == "zocalo" else -10000
     if is_la_razon_garbage_zocalo(article):
         return 5000 if photo.get("id") == "commons_20428729" else -10000
     if is_la_jornada_garbage_zocalo(article) or is_sociedad_noticias_garbage_zocalo(article):
