@@ -66,6 +66,7 @@ VERIFIED_SOURCE_LINKS = {
 
 VERIFIED_SOURCE_URLS = frozenset({
     "https://www.infobae.com/mexico/2026/11/15/garbage-en-el-zocalo-de-la-cdmx-asi-puedes-seguir-el-concierto-en-vivo-de-manera-gratuita/",
+    "https://www.infobae.com/mexico/2026/11/15/esta-es-la-calidad-del-aire-en-cdmx-y-edomex-este-domingo-15-de-noviembre-reporte-completo-por-alcaldias-y-municipios/",
 })
 SENSITIVE_MEDIA_TITLE = re.compile(
     r"\b(?:violaci[oó]n|abuso sexual|agresi[oó]n sexual|acoso sexual|violencia sexual|"
