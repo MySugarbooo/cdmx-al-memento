@@ -1980,6 +1980,10 @@ STRICT_PHOTO_TOPICS = (
     # Una alerta meteorológica no se ilustra con un sistema de captación de agua de lluvia.
     (r"\b(?:alerta por diluvio|alerta por lluvias?)\b",
      r"\b(?:operativo (?:de )?lluvias?|tormentas?|inundaciones?|calles? anegadas?|lluvia en calles?)\b"),
+    # Los reportes de calidad del aire requieren una imagen del índice o del monitoreo atmosférico.
+    # No se deben ilustrar con bolsas de compras ni otras fotografías ambientales genéricas.
+    (r"\b(?:calidad del aire|indice de calidad del aire|imeca|contaminacion atmosferica|contaminacion del aire)\b",
+     r"\b(?:imeca|indice metropolitano para la calidad del aire|monitoreo atmosferico|estaciones? de monitoreo)\b"),
     # La electrificación del transporte exige una imagen de un sistema o vehículo de transporte.
     (r"\b(?:transporte(?: publico)?|movilidad)\b.*\b(?:electrico|electrica|electrificacion)\b",
      r"\b(?:trolebus|metrobus|autobus(?:es)?|tren ligero|metro|cablebus|electromovilidad|vehiculos? electricos?)\b"),
