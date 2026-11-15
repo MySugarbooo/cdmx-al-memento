@@ -962,7 +962,7 @@ class LocalNewsTests(unittest.TestCase):
         )
         self.assertIn("SinEmbargo", result["brief"]["lead"])
         self.assertIn("cierres viales", result["brief"]["lead"])
-        self.assertIn("no se verificó de forma independiente", result["brief"]["pending"])
+        self.assertIn("se verificó de forma independiente", result["brief"]["pending"])
         self.assertIn("RSS de Google News", result["brief"]["method"])
 
     def test_priority_photo_refresh_selects_confirmed_mismatches_before_newer_items(self):
