@@ -2742,7 +2742,8 @@ class CurrentFeedEditorialPhotoRegressionTests(unittest.TestCase):
         self.assertIn("Paulina Villarreal", summary["context"])
         self.assertIn("Mariachi Fiesta de México", summary["context"])
         self.assertIn("SEDEMA", summary["method"])
-        self.assertIn("no realizó un conteo independiente", summary["pending"])
+        self.assertIn("no realizó un conteo independiente", summary["lead"])
+        self.assertIn("no se verificaron de forma independiente", summary["pending"])
 
     def test_la_jornada_garbage_summary_uses_reported_attendance_and_saldo_blanco(self):
         article = {
