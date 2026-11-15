@@ -2,6 +2,8 @@
 import unittest
 from pathlib import Path
 
+from scripts.build_article_seo import render, VERIFIED_SOURCE_URLS
+
 from scripts.check_public_seo import (
     DEPLOY_ATTEMPTS,
     ARCHIVE_ARTICLE_SAMPLE_SIZE,
@@ -34,6 +36,20 @@ class PublicSeoTests(unittest.TestCase):
                 "source": "https://commons.wikimedia.org/wiki/File:Example.jpg",
             },
         }
+
+    def test_article_source_link_only_uses_exact_verified_direct_urls(self):
+        article = self.valid_article()
+        article["source"] = "Infobae"
+        trusted = "https://www.infobae.com/mexico/2026/11/15/garbage-en-el-zocalo-de-la-cdmx-asi-puedes-seguir-el-concierto-en-vivo-de-manera-gratuita/"
+        self.assertIn(trusted, VERIFIED_SOURCE_URLS)
+        article["source_url"] = trusted
+        page = render(article, "0123456789abcdefabcd")
+        self.assertIn(trusted, page)
+
+        untrusted = "https://www.infobae.com/mexico/2026/11/15/otro-articulo-no-verificado/"
+        article["source_url"] = untrusted
+        page = render(article, "0123456789abcdefabcd")
+        self.assertNotIn(untrusted, page)
 
     def test_feed_requires_unique_links_and_complete_photo_credits(self):
         feed = {"updated": "2026-11-12 23:01 UTC", "articles": [self.valid_article()]}

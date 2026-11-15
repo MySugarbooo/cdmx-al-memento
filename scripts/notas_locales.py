@@ -84,6 +84,7 @@ IMER_ANIMAL_RIGHTS_MARCH_SOURCE_URL = "https://noticias.imer.mx/blog/activistas-
 LA_JORNADA_GARBAGE_ZOCALO_SOURCE_URL = "https://www.jornada.com.mx/noticia/2026/11/14/espectaculos/garbage-reune-a-mas-de-90-mil-personas-en-concierto-en-la-ciudad-de-mexico"
 SOCIEDAD_NOTICIAS_GARBAGE_ZOCALO_SOURCE_URL = "https://sociedad-noticias.com/2026/11/15/garbage-reune-a-mas-de-90-mil-personas-en-el-zocalo-de-la-cdmx/"
 LA_RAZON_GARBAGE_ZOCALO_SOURCE_URL = "https://www.razon.com.mx/ciudad/2026/11/15/asisten-mas-de-90-mil-personas-a-concierto-de-garbage-en-el-zocalo-de-la-cdmx/"
+INFOBAE_GARBAGE_ZOCALO_SOURCE_URL = "https://www.infobae.com/mexico/2026/11/15/garbage-en-el-zocalo-de-la-cdmx-asi-puedes-seguir-el-concierto-en-vivo-de-manera-gratuita/"
 
 
 def is_radio_formula_casa_ecologica(article):
@@ -184,6 +185,19 @@ def is_la_razon_garbage_zocalo(article):
         and source == "la razon de mexico"
         and "garbage" in title
         and "zocalo" in title
+    )
+
+
+def is_infobae_garbage_zocalo(article):
+    """Identifica la nota de Infobae sobre cómo seguir la transmisión del concierto de Garbage."""
+    title = _photo_fold(article.get("title"))
+    source = _photo_fold(article.get("source"))
+    return (
+        str(article.get("date") or "") == "2026-11-14"
+        and source == "infobae"
+        and "garbage" in title
+        and "zocalo" in title
+        and "en vivo" in title
     )
 
 
@@ -723,6 +737,27 @@ def summarize(article):
     category=str(article.get("category") or "CDMX")
     theme=TAGS.get(category,TAGS["CDMX"])
     folded_title=_photo_fold(title)
+    if is_infobae_garbage_zocalo(article):
+        return {
+            "lead": (
+                "Infobae informó antes del concierto del 14 de noviembre que la transmisión gratuita podría seguirse "
+                "por televisión abierta, radio y redes sociales. La nota se publicó antes del evento; no debe leerse "
+                "como una transmisión disponible en directo ahora."
+            ),
+            "context": (
+                "El medio indicó que Capital 21 transmitiría por el canal 21.1 y sus plataformas; también mencionó "
+                "Canal Catorce, TV Migrante y Reactor 105.7 FM. Paulina Villarreal, integrante de The Warning, "
+                "estaba anunciada como invitada."
+            ),
+            "pending": (
+                "La publicación es previa al concierto. No se verificó que las transmisiones sigan disponibles ni "
+                "que los accesos, horarios o cierres mencionados continúen vigentes."
+            ),
+            "method": (
+                "Síntesis editorial basada en la publicación de Infobae. Las opciones de transmisión se atribuyen "
+                "al medio y no se presentan como comprobadas en tiempo real."
+            ),
+        }
     if is_sin_embargo_garbage_zocalo(article):
         return {
             "lead": (
@@ -2285,6 +2320,8 @@ def _photo_score(article, photo):
     # Las coberturas de Garbage tratan del concierto en el Zócalo: una foto de otro grupo y recinto no basta.
     # La nota de La Razón también trata del concierto en el Zócalo:
     # usar una foto de archivo de la Plaza de la Constitución, no de otro grupo y recinto.
+    if is_infobae_garbage_zocalo(article):
+        return 5000 if photo.get("id") == "zocalo" else -10000
     if is_sin_embargo_garbage_zocalo(article):
         return 5000 if photo.get("id") == "zocalo" else -10000
     if is_la_razon_garbage_zocalo(article):
