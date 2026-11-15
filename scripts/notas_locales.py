@@ -79,6 +79,7 @@ CAPITAL_CDMX_CARE_BUDGET_SOURCE_URL = "https://capital-cdmx.org/presupuesto-cuid
 EL_SOL_MUJERES_DEFENSIVE_DRIVING_SOURCE_URL = "https://oem.com.mx/elsoldemexico/metropoli/ofrecen-taller-gratuito-de-manejo-defensivo-y-preventivo-para-mujeres-en-cdmx-33130686"
 HORAS_24_ELECTRIC_MOBILITY_SOURCE_URL = "https://24-horas.mx/cdmx/registro-emplacamiento-vemepe-vep-cdmx-costos-requisitos/"
 AMBITO_VITE_BALU_SOURCE_URL = "https://www.ambito.com/mexico/informacion-general/capturan-el-vite-y-el-balu-el-centro-la-cdmx-15-kilos-marihuana-y-mas-600-dosis-cocaina-n6345332"
+INFOBAE_VITE_BALU_SOURCE_URL = "https://www.infobae.com/mexico/2026/11/14/capturan-al-vite-y-al-balu-en-el-centro-de-cdmx-con-15-kilos-de-marihuana-y-mas-de-600-dosis-de-cocaina/"
 
 
 def is_radio_formula_casa_ecologica(article):
@@ -115,6 +116,19 @@ def is_ambito_vite_balu_story(article):
     return (
         str(article.get("date") or "") == "2026-11-14"
         and source == "ambito"
+        and "capturan" in title
+        and "vite" in title
+        and "balu" in title
+    )
+
+
+def is_infobae_vite_balu_story(article):
+    """Identifica la cobertura de Infobae sobre los alias Vite y Balú del 14/11/2026."""
+    title = _photo_fold(article.get("title"))
+    source = _photo_fold(article.get("source"))
+    return (
+        str(article.get("date") or "") == "2026-11-14"
+        and source == "infobae"
         and "capturan" in title
         and "vite" in title
         and "balu" in title
@@ -660,26 +674,51 @@ def summarize(article):
         return {
             "lead": (
                 "Ámbito informó que la SSC detuvo a dos presuntos distribuidores conocidos como "
-                "“El Vite” y “El Balú” en la colonia Centro. El medio reportó el aseguramiento de "
-                "15 kilos de marihuana y más de 600 dosis de cocaína; señaló que los detenidos "
-                "quedaron a disposición del Ministerio Público."
+                "“El Vite” y “El Balú” en la colonia Centro de Cuauhtémoc. El medio reportó el "
+                "aseguramiento de 15 kilos de marihuana y más de 600 dosis de cocaína; señaló que "
+                "los detenidos quedaron a disposición del Ministerio Público."
             ),
             "context": (
-                "La ubicación y las cifras no coinciden entre las coberturas consultadas: Ámbito "
-                "sitúa el operativo en Cuauhtémoc y reporta dos detenidos; Infobae y El Universal "
-                "lo ubican en Venustiano Carranza y reportan tres personas y 655 dosis. Se conservan "
-                "las versiones atribuidas a cada medio sin combinar sus datos."
+                "Infobae publicó una cobertura sobre los mismos alias y el aseguramiento de 15 kilos "
+                "de marihuana, pero sitúa el operativo en Venustiano Carranza y reporta tres detenidos "
+                "y 655 dosis. Ámbito reporta dos detenidos y más de 600 dosis en Cuauhtémoc. Se "
+                "conservan ambas versiones atribuidas a sus medios sin combinar cifras ni ubicaciones."
             ),
             "pending": (
-                "No se localizó un comunicado de la SSC que permita resolver la discrepancia sobre "
-                "alcaldía, número de personas detenidas y cantidad exacta de dosis. La situación "
-                "jurídica corresponde al Ministerio Público y no se presume culpabilidad."
+                "Infobae atribuye su versión a información de la SSC, pero no se consultó el parte "
+                "primario para conciliar la discrepancia con Ámbito. El Ministerio Público determinará "
+                "la situación jurídica; no se presume culpabilidad."
             ),
             "method": (
-                "Síntesis editorial basada en la publicación de Ámbito del 14 de noviembre de 2026: "
+                "Síntesis basada en la publicación de Ámbito del 14 de noviembre de 2026: "
                 + AMBITO_VITE_BALU_SOURCE_URL
-                + ". Se contrastó con la cobertura de Infobae y el reporte de El Universal; las cifras "
-                "se atribuyen a cada medio y no constituyen verificación independiente."
+                + ". Se contrastó con Infobae: " + INFOBAE_VITE_BALU_SOURCE_URL
+                + ". Las diferencias se atribuyen a cada medio y no constituyen verificación independiente."
+            ),
+        }
+    if is_infobae_vite_balu_story(article):
+        return {
+            "lead": (
+                "Infobae reporta que elementos de la SSC detuvieron a tres hombres en la colonia "
+                "Centro de la alcaldía Venustiano Carranza. La nota señala el aseguramiento de 15 "
+                "kilogramos de marihuana y 655 dosis de cocaína; los detenidos quedaron a disposición "
+                "del Ministerio Público."
+            ),
+            "context": (
+                "Infobae identifica a dos detenidos por los alias “Vite” y “Balú”, además de un tercer "
+                "hombre identificado como Ramón “N”. La cobertura de Ámbito sobre los mismos alias "
+                "reporta dos detenidos y ubica el operativo en Cuauhtémoc. Las versiones discrepan en "
+                "alcaldía, número de personas y cantidad exacta de dosis."
+            ),
+            "pending": (
+                "La situación jurídica de las personas detenidas corresponde al Ministerio Público. "
+                "La nota atribuye sus cifras a información de la SSC; no se presume culpabilidad."
+            ),
+            "method": (
+                "Síntesis editorial basada en la publicación de Infobae del 14 de noviembre de 2026: "
+                + INFOBAE_VITE_BALU_SOURCE_URL
+                + ". Se contrastó con la cobertura de Ámbito: " + AMBITO_VITE_BALU_SOURCE_URL
+                + ". Las versiones se mantienen separadas por sus discrepancias."
             ),
         }
     if is_24horas_electric_mobility_plates_guide(article):
@@ -2265,7 +2304,10 @@ def _photo_score(article, photo):
     lgbt_photo = bool(re.search(r"\b(?:lgbtttiq|lgbtq?|diversidad sexual|marcha del orgullo|orgullo lgbt)\b", context))
     # Las notas de renta, compra o acceso a vivienda requieren contexto residencial.
     housing_story = bool(re.search(
-        r"\b(?:rentas?|rentar|rentan|alquiler|mercado inmobiliario|inmobiliari[oa]s?|precios? de vivienda|compra de vivienda|comprar vivienda|venta de vivienda|crisis habitacional|vivienda social|vivienda asequible|viviendas?|hogares?|predios?|desaloj\w*)\b",
+        r"\b(?:rentas?|rentar|rentan|alquiler|mercado inmobiliario|inmobiliari[oa]s?|precios? de vivienda|compra de vivienda|comprar vivienda|venta de vivienda|crisis habitacional|vivienda social|vivienda asequible|viviendas?|desaloj\w*|predio los pozos|predio habitacional)\b",
+        headline,
+    )) and not bool(re.search(
+        r"\b(?:fuga de agua|corte de agua|tuberia|reparan tuberia|despoj\w*|robo|asalto|delito|complice|captur\w*|deten\w*|amenaz\w*)\b",
         headline,
     ))
     housing_photo = bool(re.search(
