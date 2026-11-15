@@ -2706,6 +2706,15 @@ class CurrentFeedEditorialPhotoRegressionTests(unittest.TestCase):
             source="Sociedad Noticias",
             date="2026-11-15")
 
+    def test_sin_embargo_garbage_story_replaces_other_venue_photo_with_zocalo(self):
+        self.assert_photo_replaced(
+            "Garbage prende el Zócalo de la CdMx; mantienen cierres viales en el Centro Histórico",
+            "Cultura",
+            "contexto_concierto_palacio_deportes_2009",
+            "zocalo",
+            source="Sin Embargo",
+            date="2026-11-14")
+
     def test_la_razon_garbage_story_replaces_other_venue_photo_with_constitution_square(self):
         self.assert_photo_replaced(
             "Asisten más de 90 mil personas a concierto de Garbage en el Zócalo de la CDMX",
