@@ -260,15 +260,14 @@ class StableHomepageTests(unittest.TestCase):
     def test_live_homepage_groups_same_day_zocalo_metro_closure_and_prefers_line_two_photo(self):
         script = read("assets/neo-home.js")
         event_key = script[script.index("function homepageEventKey(article)"):script.index("function eligibleStories(feed)")]
-        self.assertIn(r"\\bmetro\\b", event_key)
-        self.assertIn(r"\\bzocalo\\b", event_key)
-        self.assertIn(r"\\b(?:cierra|cierran|cerrada|cierre)\\b", event_key)
+        self.assertIn(r"\bmetro\b", event_key)
+        self.assertIn(r"\bzocalo\b", event_key)
+        self.assertIn(r"\b(?:cierra|cierran|cerrada|cierre)\b", event_key)
         self.assertIn("metro-zocalo-line2-closure-'+day", event_key)
         eligible = script[script.index("function eligibleStories(feed)"):script.index("function isWeatherForecastOnly(article)")]
         self.assertIn("eventKey?.startsWith('metro-zocalo-line2-closure-')", eligible)
-        self.assertIn(r"!/\\blinea 2\\b/.test(normalizeSensitiveText(p?.topic))", eligible)
+        self.assertIn(r"!/\blinea 2\b/.test(normalizeSensitiveText(p?.topic))", eligible)
         self.assertIn("if(eventKey&&seenEvents.has(eventKey))return false;", eligible)
-
 
 
 if __name__ == '__main__':
