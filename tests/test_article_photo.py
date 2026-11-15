@@ -110,6 +110,30 @@ class ArticlePhotoTests(unittest.TestCase):
         self.assertIn('rel="nofollow noopener noreferrer"', page)
         self.assertNotIn('href="' + rss_url + '"', page)
 
+    def test_sociedad_noticias_garbage_uses_verified_direct_source_instead_of_rss(self):
+        source_url = (
+            "https://sociedad-noticias.com/2026/11/15/"
+            "garbage-reune-a-mas-de-90-mil-personas-en-el-zocalo-de-la-cdmx/"
+        )
+        rss_url = "https://news.google.com/rss/articles/example?oc=5"
+        item = {
+            "title": "Garbage reúne a más de 90 mil personas en el Zócalo de la Cdmx",
+            "source": "Sociedad Noticias",
+            "url": rss_url,
+            "date": "2026-11-15",
+            "published_at": "2026-11-15T06:30:00Z",
+            "local_url": "/noticias/?id=effab44940f001e64f19&mes=2026-11",
+            "brief": {
+                "lead": "Sociedad Noticias reportó más de 90 mil personas en el concierto gratuito de Garbage.",
+                "method": "Síntesis editorial basada en Sociedad Noticias.",
+            },
+        }
+        page = render(item, "effab44940f001e64f19")
+        self.assertIn('href="' + source_url + '"', page)
+        self.assertIn("Ver fuente original", page)
+        self.assertIn('rel="nofollow noopener noreferrer"', page)
+        self.assertNotIn('href="' + rss_url + '"', page)
+
     def test_elsol_women_defensive_driving_source_url_is_clickable(self):
         source_url = (
             "https://oem.com.mx/elsoldemexico/metropoli/"
