@@ -34,6 +34,7 @@ REPORT_DIR = ROOT / "reportes"
 REPORTS = ROOT / "reports.json"
 MX = ZoneInfo("America/Mexico_City")
 SITE = "https://cdmx-al-memento.pages.dev"
+AMBITO_VITE_BALU_SOURCE_URL = "https://www.ambito.com/mexico/informacion-general/capturan-el-vite-y-el-balu-el-centro-la-cdmx-15-kilos-marihuana-y-mas-600-dosis-cocaina-n6345332"
 LA_PRENSA_VC_MOTORCYCLE_CRASH_SOURCE_URL = "https://oem.com.mx/la-prensa/policiaca/mueren-dos-motociclistas-tras-chocar-contra-una-camioneta-en-venustiano-carranza-33118910"
 SOCIEDAD_NOTICIAS_VC_MOTORCYCLE_CRASH_SOURCE_URL = "https://sociedad-noticias.com/2026/11/14/mueren-dos-motociclistas-tras-accidente-vial-en-venustiano-carranza/"
 NPLUS_AZCAPOTZALCO_HOMICIDE_DETAIL_SOURCE_URL = "https://www.nmas.com.mx/ciudad-de-mexico/seguridad/asesinatos/asesinan-a-un-hombre-y-un-nino-de-10-anos-en-alcaldia-azcapotzalco-en-la-cdmx/"
@@ -819,6 +820,16 @@ def standardize(article):
         result["source_url"] = AHORA_NOTICIAS_TLALPAN_PERRITA_SOURCE_URL
     elif is_infobae_vite_balu_story(result):
         result["source_url"] = INFOBAE_VITE_BALU_SOURCE_URL
+    elif (
+        fold(source) == "ambito"
+        and result["date"] == "2026-11-14"
+        and re.search(r"\bvite\b", fold(title))
+        and re.search(r"\bbalu\b", fold(title))
+        and re.search(r"\b15 kilos?\b", fold(title))
+        and re.search(r"\b(?:600|650|655)\b", fold(title))
+        and re.search(r"\bcocaina\b", fold(title))
+    ):
+        result["source_url"] = AMBITO_VITE_BALU_SOURCE_URL
     elif is_infobae_maria_leon_concert(result):
         result["source_url"] = INFOBAE_MARIA_LEON_CONCERT_SOURCE_URL
     elif is_infobae_ballet_zapatilla(result):
@@ -1306,6 +1317,25 @@ def editorial_event_key(article):
     """
     title = fold(article.get("title", ""))
     source = fold(article.get("source", ""))
+    # Ámbito repite alias y cantidades del mismo operativo, pero difiere en alcaldía
+    # y número de detenidos. Se agrupa con la cobertura de SSC; el registro de Ámbito
+    # permanece en la hemeroteca y la portada prioriza fuentes que coinciden con SSC.
+    vite_balu_aliases = (
+        article.get("date") == "2026-11-14"
+        and re.search(r"\bvite\b", title)
+        and re.search(r"\bbalu\b", title)
+    )
+    if vite_balu_aliases and source == "la cronica de hoy":
+        return ("venustiano-carranza-three-men-drug-seizure", "2026-11-14")
+    if (
+        vite_balu_aliases
+        and source in {"ambito", "infobae"}
+        and re.search(r"\b15 kilos?\b", title)
+        and re.search(r"\b(?:600|650|655)\b", title)
+        and re.search(r"\bcocaina\b", title)
+    ):
+        return ("venustiano-carranza-three-men-drug-seizure", "2026-11-14")
+
     # Coberturas del mismo aseguramiento del 14/11/2026 en Venustiano Carranza:
     # tres hombres, 15 kg de marihuana y 655 (o más de 650) dosis de cocaína.
     # Se conserva cada fuente en la hemeroteca; portada muestra la más reciente.
@@ -1381,14 +1411,30 @@ def editorial_event_key(article):
 def dedupe_homepage_events(items):
     """Evita reiterar un mismo suceso en portada, sin borrar fuentes."""
     result = []
-    seen_events = set()
+    event_positions = {}
+    preferred_sources = {
+        "la cronica de hoy": 4,
+        "el universal": 3,
+        "milenio": 3,
+        "infobae": 2,
+        "ambito": 1,
+    }
     for article in items:
         event = editorial_event_key(article)
-        if event is not None:
-            if event in seen_events:
-                continue
-            seen_events.add(event)
-        result.append(article)
+        if event is None:
+            result.append(article)
+            continue
+        position = event_positions.get(event)
+        if position is None:
+            event_positions[event] = len(result)
+            result.append(article)
+            continue
+        if event[0] == "venustiano-carranza-three-men-drug-seizure":
+            current = result[position]
+            incoming_priority = preferred_sources.get(fold(article.get("source")), 0)
+            current_priority = preferred_sources.get(fold(current.get("source")), 0)
+            if incoming_priority > current_priority:
+                result[position] = article
     return result
 
 
