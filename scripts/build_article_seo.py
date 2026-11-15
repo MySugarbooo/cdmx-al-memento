@@ -38,6 +38,8 @@ VERIFIED_SOURCE_LINKS = {
         "https://capital-cdmx.org/presupuesto-cuidados-2027-cdmx-cuanto-dinero-llegara-anexo-31-desglose/",
     ("La Jornada", "/noticias/?id=9d50db4739705df961a7&mes=2026-11"):
         "https://www.jornada.com.mx/noticia/2026/11/13/politica/aicm-reporta-afectaciones-de-vuelos-hacia-y-desde-estados-unidos-tras-restriccion-a-operaciones-aereas",
+    ("La Jornada", "/noticias/?id=3297b71001da632dcb3e&mes=2026-11"):
+        "https://www.jornada.com.mx/noticia/2026/11/14/espectaculos/garbage-reune-a-mas-de-90-mil-personas-en-concierto-en-la-ciudad-de-mexico",
     ("Hoy Tamaulipas", "/noticias/?id=5a9a1f1ebbab943a2f55&mes=2026-11"):
         "https://www.hoytamaulipas.net/notas/607182/El-Mante-presente-en-la-Asamblea-Nacional-de-Seguridad-Publica-Municipal-2025.html",
     ("El Sol de México", "/noticias/?id=6538cbdab54691ebcf27&mes=2026-11"):
@@ -124,12 +126,12 @@ def render(item, ident):
     location = str(item.get("location") or "")
     location_label = esc(location or "CDMX")
     url = BASE + "/articulos/" + ident + "/"
-    original = item.get("source_url") or item.get("url") or ""
+    verified_source = VERIFIED_SOURCE_LINKS.get((item.get("source"), item.get("local_url")))
+    original = item.get("source_url") or verified_source or item.get("url") or ""
     source_link = ""
     origin = urlparse(original)
     allowed_hosts = ("news.google.com", "commons.wikimedia.org")
     curated_hosts = ("comova.mx", "mayacomunicacion.com.mx", "www.elgrafico.mx")
-    verified_source = VERIFIED_SOURCE_LINKS.get((item.get("source"), item.get("local_url")))
     authorized = (origin.hostname in allowed_hosts or
                   (item.get("editorial_verified") is True and
                    origin.hostname in curated_hosts and origin.path != "/") or
