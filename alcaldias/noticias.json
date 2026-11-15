@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-15 00:35 UTC",
+  "updated": "2026-11-15 02:08 UTC",
   "boroughs": [
     {
       "name": "La Magdalena Contreras",
@@ -41,19 +41,19 @@
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           },
           "photo": {
-            "id": "archivo_seguridad_003",
+            "id": "seguridad",
             "kind": "representativa",
-            "url": "/assets/fotos/archivo_seguridad_003.jpg",
+            "url": "/assets/fotos/seguridad.jpg",
             "category": "Seguridad",
             "borough": "",
-            "topic": "Adquisición patrullas para la Policía 02",
+            "topic": "Patrulla de Ciudad de México",
             "keywords": [
               "Seguridad"
             ],
-            "author": "Gobierno de la Ciudad de México",
-            "license": "CC BY 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Adquisici%C3%B3n_patrullas_para_la_Polic%C3%ADa_02.jpg"
+            "author": "RainerRowe",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.es",
+            "source": "https://commons.wikimedia.org/wiki/File:Patrulla_cdmx.jpg"
           }
         },
         {
@@ -261,19 +261,19 @@
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           },
           "photo": {
-            "id": "archivo_seguridad_004",
+            "id": "seguridad",
             "kind": "representativa",
-            "url": "/assets/fotos/archivo_seguridad_004.jpg",
+            "url": "/assets/fotos/seguridad.jpg",
             "category": "Seguridad",
             "borough": "",
-            "topic": "Adquisición patrullas para la Policía 01",
+            "topic": "Patrulla de Ciudad de México",
             "keywords": [
               "Seguridad"
             ],
-            "author": "Gobierno de la Ciudad de México",
-            "license": "CC BY 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Adquisici%C3%B3n_patrullas_para_la_Polic%C3%ADa_01.jpg"
+            "author": "RainerRowe",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.es",
+            "source": "https://commons.wikimedia.org/wiki/File:Patrulla_cdmx.jpg"
           }
         },
         {
@@ -1934,21 +1934,6 @@
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "commons_152180158",
-            "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Cosecha_de_Lluvia_01.jpg/960px-Cosecha_de_Lluvia_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "category": "Medio Ambiente",
-            "borough": "",
-            "topic": "Cosecha de Lluvia 01",
-            "keywords": [
-              "Lluvia Ciudad de México"
-            ],
-            "author": "Gobierno de la Ciudad de México",
-            "license": "CC BY 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Cosecha_de_Lluvia_01.jpg"
           }
         },
         {
@@ -4353,8 +4338,38 @@
     },
     {
       "name": "Benito Juárez",
-      "count": 82,
+      "count": 83,
       "articles": [
+        {
+          "title": "Luis Mendoza entrega uniformes para atletas representantes de la Alcaldía Benito Juárez",
+          "description": "De acuerdo con CDMX Magacín, el titular publicado es: «Luis Mendoza entrega uniformes para atletas representantes de la Alcaldía Benito Juárez». La información publicada por CDMX Magacín aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNd2EwZVptaWU5TXpaaDJlWjcwdWNPbUVydkR0d3FuZlRzS3JReGdIR3BtSFhPclhrY3d3SndPZTU0LVp0VWlKX3VUUWd5cnFlczJ3b3ZVRTFNU3g5WVFIUzk0YU5OMXJvR2tmSnFYdE0tWXJ2Ym9GdWZSbUFsTFlYSWQ4WUpWV1plcU5HM3hOdHRmSzV3OXNfMnZVTlZJS0xEalVhVHRrR1lfdw?oc=5",
+          "source": "CDMX Magacín",
+          "date": "2026-11-14",
+          "published_at": "2026-11-15T01:00:51Z",
+          "category": "CDMX",
+          "borough": "Benito Juárez",
+          "location": "Benito Juárez (mencionada en el titular)",
+          "local_url": "/noticias/?id=74d3102e701916e02c3d&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con CDMX Magacín, el titular publicado es: «Luis Mendoza entrega uniformes para atletas representantes de la Alcaldía Benito Juárez». La información publicada por CDMX Magacín aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_benito-juarez",
+            "kind": "representativa",
+            "url": "/assets/alcaldias/benito-juarez.jpg",
+            "category": "CDMX",
+            "borough": "Benito Juárez",
+            "topic": "Parque Hundido, alcaldía Benito Juárez",
+            "author": "User:etnoboris",
+            "license": "CC BY-SA 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Parque_Hundido.jpeg"
+          }
+        },
         {
           "title": "Clima en Benito Juárez: sábado 14 de noviembre con ambiente fresco y cielo despejado",
           "description": "De acuerdo con El Heraldo de México, el titular publicado es: «Clima en Benito Juárez: sábado 14 de noviembre con ambiente fresco y cielo despejado». El pronóstico recogido por El Heraldo de México se refiere a condiciones meteorológicas en Benito Juárez. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
@@ -5095,24 +5110,6 @@
             "lead": "De acuerdo con Alcaldía Benito Juárez, el titular publicado es: «Panteón de Xoco recibe a más de 80 mil visitantes durante las celebraciones de Día de Muertos en Benito Juárez». La información publicada por Alcaldía Benito Juárez aborda un asunto que este portal clasifica como Cultura. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
             "context": "La actividad cultural abre oportunidades de encuentro, aprendizaje y disfrute para habitantes y visitantes.",
             "pending": "Los accesos, boletos, sedes, cupos y horarios deben consultarse con la institución organizadora. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
-        },
-        {
-          "title": "Clima en Benito Juárez: Lunes 2 de noviembre con cielo despejado y temperaturas agradables",
-          "description": "De acuerdo con El Heraldo de México, el titular publicado es: «Clima en Benito Juárez: Lunes 2 de noviembre con cielo despejado y temperaturas agradables». El pronóstico recogido por El Heraldo de México se refiere a condiciones meteorológicas en Benito Juárez. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
-          "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOZVRPbjhfcnBjN1BfZXZrdnRYZGlqQXo5cFpQbG43TS14TmdWMTFYQ3pQSk4zY1l3eWJoSnVVUU5vWVlmTGtjdEtkWXVMMTZXdFpTUjEtaTJuZzJoV0JKRTJFYTVwdm1GTHVBQTRPR0had04zdnNhUXd0b2xITW9EUWFyYVc3RDFGd0ttcThaWUx3REwxbG5qbXNRQ1RqYnRweXBsR0ZNeXk0WXJRTjgyUU4tOFI3WjhoNk1USzQ0LWYzbktzamNJdExLM0sxQVJoblNMdE5ZYjFGOUl4Z05HZA?oc=5",
-          "source": "El Heraldo de México",
-          "date": "2026-11-01",
-          "published_at": "2026-11-02T05:00:00Z",
-          "category": "CDMX",
-          "borough": "Benito Juárez",
-          "location": "Benito Juárez (mencionada en el titular)",
-          "local_url": "/noticias/?id=456ec28975b71a8579fb&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con El Heraldo de México, el titular publicado es: «Clima en Benito Juárez: Lunes 2 de noviembre con cielo despejado y temperaturas agradables». El pronóstico recogido por El Heraldo de México se refiere a condiciones meteorológicas en Benito Juárez. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           }
         }
@@ -9482,20 +9479,55 @@
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           },
           "photo": {
-            "id": "commons_75214598",
+            "id": "commons_152145024",
             "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Entrega_del_Mercado_P%C3%BAblico_Cerro_del_Jud%C3%ADo_-i---i-_%2826324408589%29.jpg/960px-Entrega_del_Mercado_P%C3%BAblico_Cerro_del_Jud%C3%ADo_-i---i-_%2826324408589%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Inversion_mercados_p%C3%BAblicos.jpg/960px-Inversion_mercados_p%C3%BAblicos.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
             "category": "Servicios",
             "borough": "",
-            "topic": "Entrega del Mercado Público Cerro del Judío -i---i- (26324408589)",
+            "topic": "Inversion mercados públicos",
             "keywords": [
               "Mercados públicos Ciudad de México"
             ],
-            "author": "Gobierno CDMX",
-            "license": "CC0",
-            "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
-            "source": "https://commons.wikimedia.org/wiki/File:Entrega_del_Mercado_P%C3%BAblico_Cerro_del_Jud%C3%ADo_-i---i-_(26324408589).jpg"
-          }
+            "author": "Gobierno de la Ciudad de México",
+            "license": "CC BY 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Inversion_mercados_p%C3%BAblicos.jpg"
+          },
+          "alternate_versions": [
+            {
+              "title": "Brugada entrega un millón de pesos al Mercado Bramadero: ¿en qué se gastará el presupuesto?; estas son las obras que realizará en Iztacalco",
+              "description": "De acuerdo con Eje Central, el titular publicado es: «Brugada entrega un millón de pesos al Mercado Bramadero: ¿en qué se gastará el presupuesto?; estas son las obras que realizará en Iztacalco». La información publicada por Eje Central aborda un asunto que este portal clasifica como Gobierno. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+              "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxPcEY2RFR0X3ZNaEZHbzU0WkhseXRDM0JzbjBWWnlBT3JzbDcxaUQwMDBicU4wbHpHci0tbjQxWjBoTFlkd0RkeXBlTmU3Q3JFaFlLaUV6NUxUTWg1R1F3dDBnSGNHSTJDdzE3VC02VXRfeTg2WklUUVNrcGtQYjZIQ2xPNWpvOFI3VjcxZ1d0eHp0cEVQMk96U3Bocy16ZnhPSWxBWVFtbExEQ1MyWko3clZ2ZUduTU1zQURwVW95WjA0Yzh6MmFXSjFUVVZZSE9zQ0VTSXA4UmMtbDdpQmFoRHVCZkZGckVrZDlGR2UyYURIQ3hvMmNHWGMzeWdGM2pKYUxkVE93RmU?oc=5",
+              "source": "Eje Central",
+              "date": "2026-11-14",
+              "published_at": "2026-11-14T22:50:54Z",
+              "category": "Gobierno",
+              "borough": "Iztacalco",
+              "location": "Iztacalco (mencionada en el titular)",
+              "local_url": "/noticias/?id=c6f7e2ade12f09c74796&mes=2026-11",
+              "brief": {
+                "lead": "De acuerdo con Eje Central, el titular publicado es: «Brugada entrega un millón de pesos al Mercado Bramadero: ¿en qué se gastará el presupuesto?; estas son las obras que realizará en Iztacalco». La información publicada por Eje Central aborda un asunto que este portal clasifica como Gobierno. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+                "context": "Las decisiones administrativas pueden influir en servicios, trámites y derechos; conviene conocer sus condiciones y a quiénes afectan.",
+                "pending": "Es indispensable consultar los acuerdos, comunicados o documentos oficiales antes de dar una medida por vigente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+              },
+              "photo": {
+                "id": "commons_75214598",
+                "kind": "representativa",
+                "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Entrega_del_Mercado_P%C3%BAblico_Cerro_del_Jud%C3%ADo_-i---i-_%2826324408589%29.jpg/960px-Entrega_del_Mercado_P%C3%BAblico_Cerro_del_Jud%C3%ADo_-i---i-_%2826324408589%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+                "category": "Servicios",
+                "borough": "",
+                "topic": "Entrega del Mercado Público Cerro del Judío -i---i- (26324408589)",
+                "keywords": [
+                  "Mercados públicos Ciudad de México"
+                ],
+                "author": "Gobierno CDMX",
+                "license": "CC0",
+                "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+                "source": "https://commons.wikimedia.org/wiki/File:Entrega_del_Mercado_P%C3%BAblico_Cerro_del_Jud%C3%ADo_-i---i-_(26324408589).jpg"
+              }
+            }
+          ]
         },
         {
           "title": "Desaparece Blanca Vania Almeida; fue vista por última vez en Cuchilla Agrícola Oriental, alcaldía Iztacalco",
@@ -9792,19 +9824,19 @@
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           },
           "photo": {
-            "id": "commons_75214598",
+            "id": "commons_152145024",
             "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Entrega_del_Mercado_P%C3%BAblico_Cerro_del_Jud%C3%ADo_-i---i-_%2826324408589%29.jpg/960px-Entrega_del_Mercado_P%C3%BAblico_Cerro_del_Jud%C3%ADo_-i---i-_%2826324408589%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Inversion_mercados_p%C3%BAblicos.jpg/960px-Inversion_mercados_p%C3%BAblicos.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
             "category": "Servicios",
             "borough": "",
-            "topic": "Entrega del Mercado Público Cerro del Judío -i---i- (26324408589)",
+            "topic": "Inversion mercados públicos",
             "keywords": [
               "Mercados públicos Ciudad de México"
             ],
-            "author": "Gobierno CDMX",
-            "license": "CC0",
-            "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
-            "source": "https://commons.wikimedia.org/wiki/File:Entrega_del_Mercado_P%C3%BAblico_Cerro_del_Jud%C3%ADo_-i---i-_(26324408589).jpg"
+            "author": "Gobierno de la Ciudad de México",
+            "license": "CC BY 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Inversion_mercados_p%C3%BAblicos.jpg"
           }
         },
         {
@@ -10001,26 +10033,6 @@
             "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
             "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "contexto_trafico_eje_central",
-            "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Eje_Central_CDMX.jpg/1280px-Eje_Central_CDMX.jpg",
-            "category": "Movilidad",
-            "borough": "",
-            "topic": "Tráfico vehicular en Eje Central, Ciudad de México (fotografía de 2018)",
-            "keywords": [
-              "tráfico",
-              "vehículos",
-              "automóviles",
-              "movilidad",
-              "hoy no circula",
-              "vialidad"
-            ],
-            "author": "Sergio Estrada Flores",
-            "license": "CC BY 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
-            "source": "https://commons.wikimedia.org/wiki/File:Eje_Central_CDMX.jpg"
           }
         },
         {
@@ -10071,21 +10083,6 @@
             "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
             "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "commons_75043059",
-            "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/003041-004_CAMIONES_DE_LIMPIA_FEBRERO_17_1930_%2832497046872%29.jpg/960px-003041-004_CAMIONES_DE_LIMPIA_FEBRERO_17_1930_%2832497046872%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "category": "Servicios",
-            "borough": "",
-            "topic": "003041-004 CAMIONES DE LIMPIA FEBRERO 17 1930 (32497046872)",
-            "keywords": [
-              "Recolección de basura CDMX"
-            ],
-            "author": "Unknown",
-            "license": "CC0",
-            "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
-            "source": "https://commons.wikimedia.org/wiki/File:003041-004_CAMIONES_DE_LIMPIA_FEBRERO_17_1930_(32497046872).jpg"
           }
         },
         {
@@ -10257,26 +10254,6 @@
             "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
             "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "contexto_trafico_eje_central",
-            "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Eje_Central_CDMX.jpg/1280px-Eje_Central_CDMX.jpg",
-            "category": "Movilidad",
-            "borough": "",
-            "topic": "Tráfico vehicular en Eje Central, Ciudad de México (fotografía de 2018)",
-            "keywords": [
-              "tráfico",
-              "vehículos",
-              "automóviles",
-              "movilidad",
-              "hoy no circula",
-              "vialidad"
-            ],
-            "author": "Sergio Estrada Flores",
-            "license": "CC BY 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
-            "source": "https://commons.wikimedia.org/wiki/File:Eje_Central_CDMX.jpg"
           }
         },
         {
@@ -10295,26 +10272,6 @@
             "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
             "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "contexto_trafico_eje_central",
-            "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Eje_Central_CDMX.jpg/1280px-Eje_Central_CDMX.jpg",
-            "category": "Movilidad",
-            "borough": "",
-            "topic": "Tráfico vehicular en Eje Central, Ciudad de México (fotografía de 2018)",
-            "keywords": [
-              "tráfico",
-              "vehículos",
-              "automóviles",
-              "movilidad",
-              "hoy no circula",
-              "vialidad"
-            ],
-            "author": "Sergio Estrada Flores",
-            "license": "CC BY 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
-            "source": "https://commons.wikimedia.org/wiki/File:Eje_Central_CDMX.jpg"
           }
         },
         {
@@ -15043,24 +15000,6 @@
           "borough": "Tláhuac",
           "location": "Tláhuac (mencionada en el titular)",
           "local_url": "/noticias/?id=05b243ba404099c3476e&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con Diario Basta!, el titular publicado es: «Destina Tláhuac 9 mdp para los espectáculos». La información publicada por Diario Basta! aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "alcaldia_tlahuac",
-            "kind": "representativa",
-            "url": "/assets/alcaldias/tlahuac.jpg",
-            "category": "CDMX",
-            "borough": "Tláhuac",
-            "topic": "Plaza central de San Pedro Tláhuac",
-            "author": "Yavidaxiu",
-            "license": "CC BY 3.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Tl%C3%A1huac-Plaza_central.JPG"
-          },
           "alternate_versions": [
             {
               "title": "Destina Tláhuac 9 mdp para los espectáculos",
@@ -15125,7 +15064,25 @@
                 "source": "https://commons.wikimedia.org/wiki/File:DECLARATORIA_DE_CARNAVALES_COMO_PATRIMONIO_CULTURAL_INMATERIAL_DE_LA_CIUDAD_DE_M%C3%89XICO_22.jpg"
               }
             }
-          ]
+          ],
+          "brief": {
+            "lead": "De acuerdo con Diario Basta!, el titular publicado es: «Destina Tláhuac 9 mdp para los espectáculos». La información publicada por Diario Basta! aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_tlahuac",
+            "kind": "representativa",
+            "url": "/assets/alcaldias/tlahuac.jpg",
+            "category": "CDMX",
+            "borough": "Tláhuac",
+            "topic": "Plaza central de San Pedro Tláhuac",
+            "author": "Yavidaxiu",
+            "license": "CC BY 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Tl%C3%A1huac-Plaza_central.JPG"
+          }
         },
         {
           "title": "Feria del Atole 2026 en Tláhuac: fechas, sabores y actividades",
@@ -15145,19 +15102,16 @@
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           },
           "photo": {
-            "id": "commons_82750985",
+            "id": "alcaldia_tlahuac",
             "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Danzantes_en_El_Z%C3%B3calo%2C_Ciudad_de_M%C3%A9xico_-_Negro.jpg/960px-Danzantes_en_El_Z%C3%B3calo%2C_Ciudad_de_M%C3%A9xico_-_Negro.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "url": "/assets/alcaldias/tlahuac.jpg",
             "category": "CDMX",
-            "borough": "",
-            "topic": "Danzantes en El Zócalo, Ciudad de México - Negro",
-            "keywords": [
-              "Zócalo Ciudad de México"
-            ],
-            "author": "Juan Carlos Fonseca Mata",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Danzantes_en_El_Z%C3%B3calo,_Ciudad_de_M%C3%A9xico_-_Negro.jpg"
+            "borough": "Tláhuac",
+            "topic": "Plaza central de San Pedro Tláhuac",
+            "author": "Yavidaxiu",
+            "license": "CC BY 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Tl%C3%A1huac-Plaza_central.JPG"
           },
           "alternate_versions": [
             {
@@ -15178,16 +15132,19 @@
                 "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
               },
               "photo": {
-                "id": "alcaldia_tlahuac",
+                "id": "commons_82750985",
                 "kind": "representativa",
-                "url": "/assets/alcaldias/tlahuac.jpg",
+                "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Danzantes_en_El_Z%C3%B3calo%2C_Ciudad_de_M%C3%A9xico_-_Negro.jpg/960px-Danzantes_en_El_Z%C3%B3calo%2C_Ciudad_de_M%C3%A9xico_-_Negro.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
                 "category": "CDMX",
-                "borough": "Tláhuac",
-                "topic": "Plaza central de San Pedro Tláhuac",
-                "author": "Yavidaxiu",
-                "license": "CC BY 3.0",
-                "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
-                "source": "https://commons.wikimedia.org/wiki/File:Tl%C3%A1huac-Plaza_central.JPG"
+                "borough": "",
+                "topic": "Danzantes en El Zócalo, Ciudad de México - Negro",
+                "keywords": [
+                  "Zócalo Ciudad de México"
+                ],
+                "author": "Juan Carlos Fonseca Mata",
+                "license": "CC BY-SA 4.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "https://commons.wikimedia.org/wiki/File:Danzantes_en_El_Z%C3%B3calo,_Ciudad_de_M%C3%A9xico_-_Negro.jpg"
               }
             }
           ]
@@ -15210,19 +15167,19 @@
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           },
           "photo": {
-            "id": "commons_84343831",
+            "id": "commons_164311377",
             "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Ciudad_de_M%C3%A9xico_-_Alameda_Central_0366.JPG/960px-Ciudad_de_M%C3%A9xico_-_Alameda_Central_0366.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Casa_Centro_Hist%C3%B3rico_de_la_Ciudad_de_M%C3%A9xico_03.jpg/960px-Casa_Centro_Hist%C3%B3rico_de_la_Ciudad_de_M%C3%A9xico_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
             "category": "CDMX",
             "borough": "",
-            "topic": "Ciudad de México - Alameda Central 0366",
+            "topic": "Casa Centro Histórico de la Ciudad de México 03",
             "keywords": [
-              "Alameda Central Ciudad de México"
+              "Centro Histórico Ciudad de México"
             ],
-            "author": "Phyrexian",
+            "author": "Correogsk",
             "license": "CC BY-SA 4.0",
             "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Ciudad_de_M%C3%A9xico_-_Alameda_Central_0366.JPG"
+            "source": "https://commons.wikimedia.org/wiki/File:Casa_Centro_Hist%C3%B3rico_de_la_Ciudad_de_M%C3%A9xico_03.jpg"
           }
         },
         {
@@ -16787,8 +16744,38 @@
     },
     {
       "name": "Tlalpan",
-      "count": 232,
+      "count": 233,
       "articles": [
+        {
+          "title": "Con una bolsa de ropa y sin compañía: así encontraron a hombre con discapacidad abandonado en Tlalpan",
+          "description": "De acuerdo con Récord, el titular publicado es: «Con una bolsa de ropa y sin compañía: así encontraron a hombre con discapacidad abandonado en Tlalpan». La información publicada por Récord aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPeDRmc3JGRUdfZGNHTk50bzlBYTh6VnJMWENacHM1ZGQyMWg2TldyemN2ZmxSYzdZNF9CVkJZSmVxUV9JaUJpZ0JaZ3Q2YXRsd3V1SEZMVkVMQVhPekFFTHJUUlYtaGFCWDVaWHBpcW4zRDg0VnFrak92WEw0N0JkOTEyOEJDTzJwTXo4QlRDWVRPWnRDa1ZQdkt2THRyQV93blE?oc=5",
+          "source": "Récord",
+          "date": "2026-11-14",
+          "published_at": "2026-11-15T01:50:00Z",
+          "category": "CDMX",
+          "borough": "Tlalpan",
+          "location": "Tlalpan (mencionada en el titular)",
+          "local_url": "/noticias/?id=de60a218304851a0f4d5&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con Récord, el titular publicado es: «Con una bolsa de ropa y sin compañía: así encontraron a hombre con discapacidad abandonado en Tlalpan». La información publicada por Récord aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_tlalpan",
+            "kind": "representativa",
+            "url": "/assets/alcaldias/tlalpan.jpg",
+            "category": "CDMX",
+            "borough": "Tlalpan",
+            "topic": "Quiosco de la plaza principal de Tlalpan",
+            "author": "farid estrada",
+            "license": "CC BY-SA 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Kiosko_plaza_de_la_constitucion%2C_tlapan.JPG"
+          }
+        },
         {
           "title": "Marina coadyuva en la detención de siete personas y aseguran 360 dosis de presunta droga y 38 mil pesos, en Tlalpan, CDMX y Chietla, Puebla",
           "description": "De acuerdo con Reto Diario, el titular publicado es: «Marina coadyuva en la detención de siete personas y aseguran 360 dosis de presunta droga y 38 mil pesos, en Tlalpan, CDMX y Chietla, Puebla». La información publicada por Reto Diario aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -16806,18 +16793,38 @@
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           },
-          "photo": {
-            "id": "alcaldia_tlalpan",
-            "kind": "representativa",
-            "url": "/assets/alcaldias/tlalpan.jpg",
-            "category": "CDMX",
-            "borough": "Tlalpan",
-            "topic": "Quiosco de la plaza principal de Tlalpan",
-            "author": "farid estrada",
-            "license": "CC BY-SA 3.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Kiosko_plaza_de_la_constitucion%2C_tlapan.JPG"
-          }
+          "alternate_versions": [
+            {
+              "title": "Marina coadyuva en la detención de siete personas y aseguran 360 dosis de presunta droga y 38 mil pesos, en Tlalpan, CDMX y Chietla, Puebla",
+              "description": "De acuerdo con Reto Diario, el titular publicado es: «Marina coadyuva en la detención de siete personas y aseguran 360 dosis de presunta droga y 38 mil pesos, en Tlalpan, CDMX y Chietla, Puebla». La información publicada por Reto Diario aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+              "url": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxNb0NaNk1sa1haQkczOFh2WERJU3R5YmMtMnZRa2d6UTNVRXdSbjB2X1Zwd18teDE2T3ZtM1VLU2d2bnlnTHRDbW11Y1BzUERoY1E3REVwZ3FTZjQyaExaMDBwRXlLd0lGNi12Tm44UEtMVS1aRjFPVWp2ZFlpMDVDUHdzMm5za0pxSEFFM0xSMF9KQzVwNDFxY2g4OWc3NEZLTFNpakx5dEtvd2JJNlJwc29lZWtaRVo1SGJzX1cxVjNlNEN1SThuTmkyY2FyYmw4SWJETE9zQmV4Qjl0SXROc1c3d3ExYjhEMXd1QlhrNHl2NE9xM1Boa0NZajJpMzhnZ1p1SG92RnA3aTg?oc=5",
+              "source": "Reto Diario",
+              "date": "2026-11-14",
+              "published_at": "2026-11-14T21:55:19Z",
+              "category": "CDMX",
+              "borough": "Tlalpan",
+              "location": "Tlalpan (mencionada en el titular)",
+              "local_url": "/noticias/?id=20783220bb6b507c8242&mes=2026-11",
+              "brief": {
+                "lead": "De acuerdo con Reto Diario, el titular publicado es: «Marina coadyuva en la detención de siete personas y aseguran 360 dosis de presunta droga y 38 mil pesos, en Tlalpan, CDMX y Chietla, Puebla». La información publicada por Reto Diario aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+                "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+                "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+              },
+              "photo": {
+                "id": "alcaldia_tlalpan",
+                "kind": "representativa",
+                "url": "/assets/alcaldias/tlalpan.jpg",
+                "category": "CDMX",
+                "borough": "Tlalpan",
+                "topic": "Quiosco de la plaza principal de Tlalpan",
+                "author": "farid estrada",
+                "license": "CC BY-SA 3.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+                "source": "https://commons.wikimedia.org/wiki/File:Kiosko_plaza_de_la_constitucion%2C_tlapan.JPG"
+              }
+            }
+          ]
         },
         {
           "title": "Vinculan a proceso a segundo implicado en el homicidio del exlíder sindical del ISSSTE en Tlalpan",
@@ -17021,19 +17028,19 @@
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           },
           "photo": {
-            "id": "archivo_seguridad_004",
+            "id": "seguridad",
             "kind": "representativa",
-            "url": "/assets/fotos/archivo_seguridad_004.jpg",
+            "url": "/assets/fotos/seguridad.jpg",
             "category": "Seguridad",
             "borough": "",
-            "topic": "Adquisición patrullas para la Policía 01",
+            "topic": "Patrulla de Ciudad de México",
             "keywords": [
               "Seguridad"
             ],
-            "author": "Gobierno de la Ciudad de México",
-            "license": "CC BY 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Adquisici%C3%B3n_patrullas_para_la_Polic%C3%ADa_01.jpg"
+            "author": "RainerRowe",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.es",
+            "source": "https://commons.wikimedia.org/wiki/File:Patrulla_cdmx.jpg"
           }
         },
         {
@@ -17676,85 +17683,47 @@
             "method": "Síntesis editorial basada en la publicación de La Prensa del 12 de noviembre de 2026, firmada por Rodrigo Alarcon: https://oem.com.mx/la-prensa/policiaca/detienen-a-otro-presunto-maltratador-de-animales-en-tlalpan-33095643. El extracto visible no reproduce el reportaje íntegro y no constituye una verificación independiente."
           },
           "sensitive_media": true
-        },
-        {
-          "title": "Detienen a hombre señalado de matar perros en la alcaldía Tlalpan; fue golpeado por vecinos de la zona",
-          "description": "De acuerdo con MILENIO, el titular publicado es: «Detienen a hombre señalado de matar perros en la alcaldía Tlalpan; fue golpeado por vecinos de la zona». Una nota de MILENIO comunica un caso relacionado con una detención o una presunta conducta delictiva en Tlalpan. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
-          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPcU5OYXN2NndPM204SDY1VUk4N0xtUFNxSFNaLS01NlgxWF9tQlp5cUowNlkzY19LVzE2ZGxvSWRKZUxVWVpqWEh1anZabzNzRFFfTXZzQTRHTEQxZUpNeDdQU0txamxBdy1VeTdfaHQtQjBoX2tpb3NIMnF2MkFjMElHZTNWamVFaFHSAYoBQVVfeXFMTjB5YTE0a0xMdlRNSVNodU9pZlNKM1R1Z2ttSUNMTWlxT3g0cVRuMWk5cVo2bzdhb0FKSWVDTkdOcEt6QnF6OHptVWxXQlJ3dzdOcTktc1p3Q1RsNElVWF9wQUdmc2JaWUFXa2Z3NFNjTFhKb1hqSmd5NzNPWjJxenFJTnRsMHRTWmtn?oc=5",
-          "source": "MILENIO",
-          "date": "2026-11-12",
-          "published_at": "2026-11-12T16:41:00Z",
-          "category": "Seguridad",
-          "borough": "Tlalpan",
-          "location": "Tlalpan (mencionada en el titular)",
-          "local_url": "/noticias/?id=d86ea833e1644a96304f&mes=2026-11",
-          "alternate_versions": [
-            {
-              "title": "Detienen a hombre señalado de matar perros en la alcaldía Tlalpan; fue golpeado por vecinos de la zona",
-              "description": "De acuerdo con MILENIO, el titular publicado es: «Detienen a hombre señalado de matar perros en la alcaldía Tlalpan; fue golpeado por vecinos de la zona». Una nota de MILENIO comunica un caso relacionado con una detención o una presunta conducta delictiva en Tlalpan. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
-              "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPcU5OYXN2NndPM204SDY1VUk4N0xtUFNxSFNaLS01NlgxWF9tQlp5cUowNlkzY19LVzE2ZGxvSWRKZUxVWVpqWEh1anZabzNzRFFfTXZzQTRHTEQxZUpNeDdQU0txamxBdy1VeTdfaHQtQjBoX2tpb3NIMnF2MkFjMElHZTNWamVFaFHSAYoBQVVfeXFMTjB5YTE0a0xMdlRNSVNodU9pZlNKM1R1Z2ttSUNMTWlxT3g0cVRuMWk5cVo2bzdhb0FKSWVDTkdOcEt6QnF6OHptVWxXQlJ3dzdOcTktc1p3Q1RsNElVWF9wQUdmc2JaWUFXa2Z3NFNjTFhKb1hqSmd5NzNPWjJxenFJTnRsMHRTWmtn?oc=5",
-              "source": "MILENIO",
-              "date": "2026-11-12",
-              "published_at": "2026-11-12T16:41:00Z",
-              "category": "Seguridad",
-              "borough": "Tlalpan",
-              "location": "Tlalpan (mencionada en el titular)",
-              "local_url": "/noticias/?id=d86ea833e1644a96304f&mes=2026-11",
-              "brief": {
-                "lead": "De acuerdo con MILENIO, el titular publicado es: «Detienen a hombre señalado de matar perros en la alcaldía Tlalpan; fue golpeado por vecinos de la zona». Una nota de MILENIO comunica un caso relacionado con una detención o una presunta conducta delictiva en Tlalpan. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
-                "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
-                "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-              },
-              "photo": {
-                "id": "commons_35624634",
-                "kind": "representativa",
-                "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Animales_Bosque_de_Tlalpan_09.JPG/960px-Animales_Bosque_de_Tlalpan_09.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-                "category": "Alcaldías",
-                "borough": "",
-                "topic": "Animales Bosque de Tlalpan 09",
-                "keywords": [
-                  "Tlalpan Ciudad de México"
-                ],
-                "author": "Inakiherrasti",
-                "license": "CC BY-SA 4.0",
-                "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-                "source": "https://commons.wikimedia.org/wiki/File:Animales_Bosque_de_Tlalpan_09.JPG"
-              }
-            },
-            {
-              "title": "Detienen a hombre señalado de matar perros en la alcaldía Tlalpan; fue golpeado por vecinos de la zona",
-              "description": "De acuerdo con Milenio, el titular publicado es: «Detienen a hombre señalado de matar perros en la alcaldía Tlalpan; fue golpeado por vecinos de la zona». Una nota de Milenio comunica un caso relacionado con una detención o una presunta conducta delictiva en Tlalpan. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
-              "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPcU5OYXN2NndPM204SDY1VUk4N0xtUFNxSFNaLS01NlgxWF9tQlp5cUowNlkzY19LVzE2ZGxvSWRKZUxVWVpqWEh1anZabzNzRFFfTXZzQTRHTEQxZUpNeDdQU0txamxBdy1VeTdfaHQtQjBoX2tpb3NIMnF2MkFjMElHZTNWamVFaFHSAYoBQVVfeXFMTjB5YTE0a0xMdlRNSVNodU9pZlNKM1R1Z2ttSUNMTWlxT3g0cVRuMWk5cVo2bzdhb0FKSWVDTkdOcEt6QnF6OHptVWxXQlJ3dzdOcTktc1p3Q1RsNElVWF9wQUdmc2JaWUFXa2Z3NFNjTFhKb1hqSmd5NzNPWjJxenFJTnRsMHRTWmtn?oc=5",
-              "source": "Milenio",
-              "date": "2026-11-12",
-              "published_at": "2026-11-12T16:41:00Z",
-              "category": "Seguridad",
-              "borough": "Tlalpan",
-              "location": "Tlalpan (mencionada en el titular)",
-              "local_url": "/noticias/?id=d86ea833e1644a96304f&mes=2026-11",
-              "brief": {
-                "lead": "De acuerdo con Milenio, el titular publicado es: «Detienen a hombre señalado de matar perros en la alcaldía Tlalpan; fue golpeado por vecinos de la zona». Una nota de Milenio comunica un caso relacionado con una detención o una presunta conducta delictiva en Tlalpan. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
-                "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
-                "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-              }
-            }
-          ],
-          "brief": {
-            "lead": "De acuerdo con MILENIO, el titular publicado es: «Detienen a hombre señalado de matar perros en la alcaldía Tlalpan; fue golpeado por vecinos de la zona». Una nota de MILENIO comunica un caso relacionado con una detención o una presunta conducta delictiva en Tlalpan. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
-            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
-            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "sensitive_media": true
         }
       ]
     },
     {
       "name": "Venustiano Carranza",
-      "count": 56,
+      "count": 57,
       "articles": [
+        {
+          "title": "Capturan al “Vite” y al “Balú” en el Centro de CDMX con 15 kilos de marihuana y más de 600 dosis de cocaína",
+          "description": "Infobae reporta que elementos de la SSC detuvieron a tres hombres en la colonia Centro de la alcaldía Venustiano Carranza. La nota señala el aseguramiento de 15 kilogramos de marihuana y 655 dosis de cocaína; los detenidos quedaron a disposición del Ministerio Público.",
+          "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQTXZuVGNDT096bmRoQUQtcHp1MzlVS2VGdDh2SDF1anVuM3VxV1dFSFBqSUNPREZiX29mZVpkbWI4clpHUDhlN0F1Q3NFUmZKb29WU1RaXzdkWTRXMEtDNFplVzJnVVU4bnVsNDF1TGV2Q20zdWtRR3RwZktEX3FSRjFramdkQ3g1UE5WUGU0R0JDbTV5WXVmT2pOUGNCZ2FSRXl4cFBablNWZEY0SGxFVUd5b05xTU0waFY5REdmajJFMWJIbEdJVEYxam51clJvS2QyOUg1VTBEUk5nLWV30gH6AUFVX3lxTE4wVkpMNUZTNlQ4MENoT21UclZfcjVzMlRiOUU4QVJIcU9BQWtRamkyMzZhd3BNOEcxeGM2M1E1NlAtV2RvVHhpV3NXZTBfZFhPZnNYbHQwRUNtd1FiQjFNbmRGeXplLUNaOUE0bEQ5ZEQxVTB4V3RFOUI1MUVsRlloY19CTm05cHllYndTT2xhOVZIMXAzVlR6ZGF1M0hLZndqRWRCaEl5eFVQb2xwWDA0TDhqVHdBSVc4bW5oZURpVHpiTDdSdHVZWlRyZjJTTFhnQXNKNmE2blNZMlFyWk5IT0tfS2pELVE2VmRMbkE2ZldrSGtJd2NPVkE?oc=5",
+          "source": "Infobae",
+          "date": "2026-11-14",
+          "published_at": "2026-11-14T22:24:00Z",
+          "category": "Seguridad",
+          "borough": "Venustiano Carranza",
+          "location": "Colonia Centro, alcaldía Venustiano Carranza, Ciudad de México (según Infobae)",
+          "local_url": "/noticias/?id=dcd35e6ecf915452cea8&mes=2026-11",
+          "source_url": "https://www.infobae.com/mexico/2026/11/14/capturan-al-vite-y-al-balu-en-el-centro-de-cdmx-con-15-kilos-de-marihuana-y-mas-de-600-dosis-de-cocaina/",
+          "brief": {
+            "lead": "Infobae reporta que elementos de la SSC detuvieron a tres hombres en la colonia Centro de la alcaldía Venustiano Carranza. La nota señala el aseguramiento de 15 kilogramos de marihuana y 655 dosis de cocaína; los detenidos quedaron a disposición del Ministerio Público.",
+            "context": "Infobae identifica a dos detenidos por los alias “Vite” y “Balú”, además de un tercer hombre identificado como Ramón “N”. La nota atribuye a la SSC el operativo y el aseguramiento; esta síntesis no sustituye el parte oficial ni determina la situación jurídica.",
+            "pending": "La situación jurídica de las personas detenidas corresponde al Ministerio Público. La nota atribuye sus cifras a información de la SSC; no se presume culpabilidad.",
+            "method": "Síntesis editorial basada en la publicación de Infobae del 14 de noviembre de 2026: https://www.infobae.com/mexico/2026/11/14/capturan-al-vite-y-al-balu-en-el-centro-de-cdmx-con-15-kilos-de-marihuana-y-mas-de-600-dosis-de-cocaina/. No equivale a una verificación independiente ni sustituye el parte oficial."
+          },
+          "photo": {
+            "id": "archivo_seguridad_002",
+            "kind": "representativa",
+            "url": "/assets/fotos/archivo_seguridad_002.jpg",
+            "category": "Seguridad",
+            "borough": "",
+            "topic": "Patrulla vecinal",
+            "keywords": [
+              "Seguridad"
+            ],
+            "author": "Daniel Yonka",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Patrulla_vecinal.jpg"
+          }
+        },
         {
           "title": "Caen tres sujetos con 15 kilos de marihuana y 655 dosis de cocaína en Venustiano Carranza",
           "description": "De acuerdo con El Universal, el titular publicado es: «Caen tres sujetos con 15 kilos de marihuana y 655 dosis de cocaína en Venustiano Carranza». La información publicada por El Universal aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -18710,19 +18679,19 @@
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           },
           "photo": {
-            "id": "archivo_seguridad_001",
+            "id": "archivo_seguridad_005",
             "kind": "representativa",
-            "url": "/assets/fotos/archivo_seguridad_001.jpg",
+            "url": "/assets/fotos/archivo_seguridad_005.jpg",
             "category": "Seguridad",
             "borough": "",
-            "topic": "Adquisición patrullas para la Policía 03",
+            "topic": "Jeep policia cdmx",
             "keywords": [
               "Seguridad"
             ],
             "author": "Gobierno de la Ciudad de México",
-            "license": "CC BY 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Adquisici%C3%B3n_patrullas_para_la_Polic%C3%ADa_03.jpg"
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Jeep_policia_cdmx.jpg"
           }
         },
         {
@@ -19407,24 +19376,6 @@
             "lead": "De acuerdo con El Heraldo de México, el titular publicado es: «Clima en Venustiano Carranza: domingo 8 de noviembre con ambiente templado y nubes dispersas». El pronóstico recogido por El Heraldo de México se refiere a condiciones meteorológicas en Venustiano Carranza. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
-        },
-        {
-          "title": "Detienen a cuatro presuntos integrantes de ‘La Unión Tepito’ en la alcaldía Venustiano Carranza de CDMX",
-          "description": "De acuerdo con vanguardia.com.mx, el titular publicado es: «Detienen a cuatro presuntos integrantes de ‘La Unión Tepito’ en la alcaldía Venustiano Carranza de CDMX». Una nota de vanguardia.com.mx comunica un caso relacionado con una detención o una presunta conducta delictiva en Venustiano Carranza. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
-          "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQYjVkQXIxMmxEenEtRUtNLXMtLUZGbmpJd0VYdHQyOURKbkRXN1FvUkw5Ui1iaHhGNGh3akxlbFI5Njg5d1BRRzFvaGRHWm1DLTVHcEVlMy1YOGRrNGt6MVBqQkxOUmU4c0Uyd2xiR1lVakJWMjk3MG9Ud0xHeXJPYmNGeEpJbjIxS3FKdUduUldDMW9JRUZEUVhFQ0ltcUdjWVhsMjFfQVJvdnZ0elpVQ09XbHhNcVd2OVNZbW9MVk5vdEdseElXMDJpV0RXa1lqem4yZGJqNV9WdDJtZ2o3R2pVM1NISTdoaVE?oc=5",
-          "source": "vanguardia.com.mx",
-          "date": "2026-11-07",
-          "published_at": "2026-11-07T21:32:13Z",
-          "category": "Seguridad",
-          "borough": "Venustiano Carranza",
-          "location": "Venustiano Carranza (mencionada en el titular)",
-          "local_url": "/noticias/?id=2d58c4101a652fc81b3d&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con vanguardia.com.mx, el titular publicado es: «Detienen a cuatro presuntos integrantes de ‘La Unión Tepito’ en la alcaldía Venustiano Carranza de CDMX». Una nota de vanguardia.com.mx comunica un caso relacionado con una detención o una presunta conducta delictiva en Venustiano Carranza. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
-            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
-            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           }
         }
