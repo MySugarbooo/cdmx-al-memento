@@ -3582,5 +3582,49 @@ class CurrentFeedPhotoMismatchRegressionTests(unittest.TestCase):
         self.assertEqual(article["photo"]["license"], "CC BY-SA 2.0")
 
 
+    def test_imer_animal_rights_march_uses_original_summary_and_rejects_unrelated_photos(self):
+        title = "Defensores de animales exigen el fin de la explotación animal y promueven el veganismo en CDMX"
+        caterpillar = next(
+            photo for photo in photos._pool()
+            if photo.get("id") == "commons_35624629"
+        )
+        unrelated_march = next(
+            photo for photo in photos._pool()
+            if photo.get("id") == "commons_54378318"
+        )
+        result = news.standardize({
+            "title": title,
+            "url": "https://news.google.com/rss/articles/imer-animal-rights-march-20261114",
+            "source": "IMER Noticias",
+            "date": "2026-11-14",
+            "published_at": "2026-11-15T03:21:53Z",
+            "category": "CDMX",
+            "borough": "",
+            "photo": deepcopy(caterpillar),
+        })
+        self.assertIsNotNone(result)
+        self.assertEqual(result["category"], "Medio Ambiente")
+        self.assertEqual(
+            result["location"],
+            "Ciudad de México; la marcha concluyó en el Palacio de Bellas Artes, Cuauhtémoc "
+            "(ruta completa no indicada)",
+        )
+        self.assertEqual(
+            result["source_url"], photos.IMER_ANIMAL_RIGHTS_MARCH_SOURCE_URL
+        )
+        self.assertIn("mataderos porcinos", result["brief"]["lead"])
+        self.assertIn("Palacio de Bellas Artes", result["brief"]["lead"])
+        self.assertIn("Ely", result["brief"]["lead"])
+        self.assertIn("Natalia Matamoros", result["brief"]["method"])
+        self.assertIn(photos.IMER_ANIMAL_RIGHTS_MARCH_SOURCE_URL, result["brief"]["method"])
+        self.assertLess(_photo_score(result, caterpillar), 0)
+        self.assertLess(_photo_score(result, unrelated_march), 0)
+        with patch.object(
+            photos, "_pool", return_value=[caterpillar, unrelated_march]
+        ), patch.object(photos, "_load", return_value=[]):
+            assign_photos([result])
+        self.assertNotIn("photo", result)
+
+
 if __name__ == "__main__":
     unittest.main()
