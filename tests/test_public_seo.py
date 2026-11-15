@@ -129,23 +129,20 @@ class PublicSeoTests(unittest.TestCase):
             validate_article_html(article, html.replace("CC BY 4.0", "").encode("utf-8"))
 
     def test_sensitive_article_without_photo_requires_notice(self):
-        article = {
-            "title": "Detienen a presunto maltratador de animales",
-            "source": "Medio",
-            "date": "2026-11-12",
-            "location": "Tlalpan",
-            "sensitive_media": True,
+        article = self.valid_article()
+        article["sensitive_media"] = True
+        article["photo"] = {
+            "kind": "representativa",
+            "url": "/assets/fotos/archivo_seguridad_003.jpg",
+            "author": "Autor de archivo",
+            "license": "CC BY 4.0",
         }
-        self.assertTrue(
-            validate_article_html(
-                article,
-                (
-                    "<h1>Detienen a presunto maltratador de animales</h1>"
-                    "<p>Tlalpan · 2026-11-12 · Fuente: Medio</p>"
-                    "<p>Sin fotografía verificada del hecho</p>"
-                ).encode("utf-8"),
-            )
+        page = (
+            "<h1>Detienen a presunto maltratador de animales</h1>"
+            "<p>Tlalpan · 2026-11-12 · Fuente: Medio</p>"
+            "<p>Sin fotografía verificada del hecho</p>"
         )
+        self.assertTrue(validate_article_html(article, page.encode("utf-8")))
         with self.assertRaisesRegex(ValueError, "aviso"):
             validate_article_html(
                 article,
@@ -154,7 +151,6 @@ class PublicSeoTests(unittest.TestCase):
                     "<p>Tlalpan · 2026-11-12 · Fuente: Medio</p>"
                 ).encode("utf-8"),
             )
-
         with self.assertRaisesRegex(ValueError, "no autorizada"):
             validate_article_html(
                 article,
