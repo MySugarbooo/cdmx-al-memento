@@ -652,12 +652,50 @@ def is_elsol_mexico_queretaro_trailer_rollover(article):
     )
 
 
+DIARIO_BASTA_ALVARO_OBREGON_WATER_SOURCE_URL = "https://diariobasta.com/2026/11/14/carecen-de-agua-en-alvaro-obregon/"
+
+
+def is_diario_basta_alvaro_obregon_water_shortage(article):
+    """Identifica la nota de Diario Basta! sobre reportes de falta de agua en Álvaro Obregón."""
+    source = str(article.get("source") or "").casefold().replace("!", "").strip()
+    title = str(article.get("title") or "").strip().casefold()
+    return (
+        source == "diario basta"
+        and str(article.get("date") or "") == "2026-11-14"
+        and title == "carecen de agua en álvaro obregón"
+    )
+
+
 def summarize(article):
     title=str(article.get("title") or "").strip()
     source=str(article.get("source") or "un medio periodístico").strip()
     category=str(article.get("category") or "CDMX")
     theme=TAGS.get(category,TAGS["CDMX"])
     folded_title=_photo_fold(title)
+    if is_diario_basta_alvaro_obregon_water_shortage(article):
+        return {
+            "lead": (
+                "Diario Basta! reportó que, del 1 de enero al 9 de noviembre de 2026, cuatro colonias "
+                "de Álvaro Obregón acumularon 36 reportes ciudadanos por falta de agua: 20 en Barrio "
+                "Tlacoyaque, 11 en Ampliación Tlacoyaque y cinco en Tlacoyaque; La Angostura no registró "
+                "folios en ese periodo. El medio atribuye las cifras a Locatel."
+            ),
+            "context": (
+                "La nota señala que las cuatro colonias reciben agua mediante tandeo —suministro "
+                "intermitente por turnos— y que su ubicación en zonas altas reduce la presión. Los "
+                "36 registros son reportes ciudadanos, no 36 cortes verificados de forma independiente."
+            ),
+            "pending": (
+                "El artículo no ofrece un calendario vigente de tandeo ni la duración de cada interrupción. "
+                "Para horarios o avisos actuales, consulta a SACMEX y a la alcaldía Álvaro Obregón."
+            ),
+            "method": (
+                "Síntesis de la publicación original de Diario Basta!, del 14 de noviembre de 2026: "
+                + DIARIO_BASTA_ALVARO_OBREGON_WATER_SOURCE_URL
+                + " Las cifras se atribuyen a Locatel y a la Jefatura de Unidad Departamental de Agua Potable "
+                "de la alcaldía; no constituyen verificación independiente."
+            ),
+        }
     if is_imer_animal_rights_march(article):
         return {
             "lead": (
@@ -1489,7 +1527,8 @@ SUBJECT_RULES = (
     (r"\b(?:metrobus|cablebus|trolebus|ecobici|ciclovia)\b", "Movilidad"),
     (r"\b(?:metro|linea \d{1,2}|linea [ab]|tren ligero)\b", "Metro"),
     (r"\b(?:perro|perrito|mascota|gato|animal|fauna|veterinari)\w*\b", "Medio Ambiente"),
-    (r"\b(?:lluvia|tormenta|clima|inundacion|contaminacion|peor oxigeno|calidad del aire|frio|heladas?|temperaturas bajas|arbol|bosque)\w*\b", "Medio Ambiente"),
+    (r"\b(?:lluvia|tormenta|clima|inundacion|contaminacion|peor oxigeno|calidad del aire|frio|heladas?|temperaturas bajas|arbol|bosque|bolsas? plasticas?|residuos? plasticos?)\w*\b", "Medio Ambiente"),
+    (r"\b(?:carecen de agua|falta de agua|sin agua|tandeo|desabasto de agua|corte de agua|suspension de agua)\b", "Servicios"),
     (r"\b(?:hospital|clinica|drenaje|bache|basura|abasto|mercado|agua potable)\w*\b", "Servicios"),
     (r"\b(?:catrina|dia de muertos|cempasuchil|concierto|desfile|museo|"
      r"festival|exposicion|teatro|cultura)\w*\b", "Cultura"),
@@ -1498,6 +1537,7 @@ SUBJECT_RULES = (
      r"gran premio|formula 1|autodromo|circuito|automovili)\w*\b", "Movilidad"),
     (r"\b(?:policia|patrulla|fiscalia|robo|crimen|complice|homicidio|detenid|"
      r"asalto|asalt|extorsion|delito|investigacion)\w*\b", "Seguridad"),
+    (r"\b(?:sectei|aulas? digitales?)\b", "Gobierno"),
     (r"\b(?:alcalde|gobierno|congreso|presupuesto|secretaria)\w*\b", "Gobierno"),
 )
 STOP_WORDS = {
@@ -1531,8 +1571,8 @@ RELATED_WORDS = (
      ("trafico", "vehicular", "automoviles", "autos", "transito", "movilidad")),
     (r"\b(?:hospital|clinica|imss|issste)\w*\b",
      ("hospital", "salud", "clinica", "imss", "issste")),
-    (r"\b(?:desazolve|drenaje|agua potable)\w*\b",
-     ("agua", "desazolve", "drenaje")),
+    (r"\b(?:desazolve|drenaje|agua potable|carecen de agua|falta de agua|sin agua|tandeo|desabasto de agua|corte de agua|suspension de agua)\b",
+     ("agua", "agua potable", "tandeo", "abastecimiento", "red hidraulica", "pipas", "grifos", "desazolve", "drenaje")),
     (r"\b(?:pipas? de gas|gas lp|tanques? de gas|fugas? de gas|explosiones? de gas)\b",
      ("bomberos", "pipas", "gas", "tanques", "camiones cisterna")),
     (r"\b(?:chinampas?|arca tierra|lucio usobiaga)\b",
@@ -1874,8 +1914,8 @@ STRICT_PHOTO_TOPICS = (
      r"\b(?:perritos?|perros?|mascotas?|caninos?|animales?|veterinaria)\b"),
     (r"\b(?:ejecutan|ejecutad\w*|ejecucion|matan|balazos|asesinan|homicidio|condenad[oa]s?|condenan|prision|delitos? contra)\b",
      r"\b(?:fiscalia|justicia|tribunal|juzgado|penitenciario|prision|ministerio publico|investigacion penal|policias?|patrullas?|operativo policial)\b"),
-    (r"\b(?:sin agua|falta de agua|suspension de agua|corte de agua)\b",
-     r"\b(?:agua|tuberias?|acueducto|pozo|abastecimiento|red hidraulica|cisterna|pipas?|grifos?)\b"),
+    (r"\b(?:carecen de agua|sin agua|falta de agua|suspension de agua|corte de agua|desabasto de agua|tandeo)\b",
+     r"\b(?:agua potable|tuberias?|acueducto|pozo|abastecimiento|red hidraulica|cisterna|pipas?|grifos?|suministro de agua)\b"),
     (r"\b(?:fallece motociclista|muere motociclista|motociclistas? fallecidos?)\b",
      r"\b(?:motos?|motocicletas?|carretera|vialidad|trafico|transito|vehicular)\b"),
     (r"\b(?:bloquean? avenida|bloqueos? en avenida)\b",
