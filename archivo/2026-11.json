@@ -1,10 +1,10 @@
 {
   "month": "2026-11",
-  "updated": "2026-11-15 06:36 UTC",
+  "updated": "2026-11-15 07:10 UTC",
   "articles": [
     {
       "title": "Garbage reúne a más de 90 mil personas en el Zócalo de la Cdmx",
-      "description": "De acuerdo con Sociedad Noticias, el titular publicado es: «Garbage reúne a más de 90 mil personas en el Zócalo de la Cdmx». La información publicada por Sociedad Noticias aborda un asunto que este portal clasifica como Cultura. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "description": "Sociedad Noticias reportó que más de 90 mil personas acudieron al concierto gratuito de Garbage en el Zócalo de la Ciudad de México la noche del sábado 14 de noviembre.",
       "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPTHk1cjk0a1ZMbW9pSnZqaVdLODBkZGVUVzd3VVhVdEZwaXNOaC0wWld5MUlkZzVqZzFyNGUyVzI0cHNMVGxjRVVBTHYxNzRWTkNqVkRZaks5LW1RSW04Ykw0UDMtR1FVS3lGSFNLLUJ1bndDcDVETHd6RlY5dzc4WGUyOEN2Nm9JTlB6dlFEdjQweVlMYlp5Z1hjdEZnb2p3bVJvc0IxMA?oc=5",
       "source": "Sociedad Noticias",
       "date": "2026-11-15",
@@ -13,32 +13,69 @@
       "borough": "",
       "location": "Ciudad de México (sin alcaldía identificada)",
       "local_url": "/noticias/?id=effab44940f001e64f19&mes=2026-11",
+      "source_url": "https://sociedad-noticias.com/2026/11/15/garbage-reune-a-mas-de-90-mil-personas-en-el-zocalo-de-la-cdmx/",
       "brief": {
-        "lead": "De acuerdo con Sociedad Noticias, el titular publicado es: «Garbage reúne a más de 90 mil personas en el Zócalo de la Cdmx». La información publicada por Sociedad Noticias aborda un asunto que este portal clasifica como Cultura. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-        "context": "La actividad cultural abre oportunidades de encuentro, aprendizaje y disfrute para habitantes y visitantes.",
-        "pending": "Los accesos, boletos, sedes, cupos y horarios deben consultarse con la institución organizadora. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+        "lead": "Sociedad Noticias reportó que más de 90 mil personas acudieron al concierto gratuito de Garbage en el Zócalo de la Ciudad de México la noche del sábado 14 de noviembre.",
+        "context": "La nota describe una presentación encabezada por Shirley Manson y menciona canciones como «Stupid Girl», «Cherry Lips», «Push It» y «Only Happy When It Rains».",
+        "pending": "La cifra de asistencia y los detalles del concierto se atribuyen a Sociedad Noticias; CDMX AL MEMENTO no realizó un conteo independiente ni una verificación presencial.",
+        "method": "Síntesis editorial basada en la publicación de Sociedad Noticias del 15 de noviembre de 2026: https://sociedad-noticias.com/2026/11/15/garbage-reune-a-mas-de-90-mil-personas-en-el-zocalo-de-la-cdmx/. Los datos del evento se atribuyen al medio."
       },
       "photo": {
-        "id": "contexto_concierto_palacio_deportes_2009",
+        "id": "zocalo",
         "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/PalaciodelosDeportes_Concierto.jpg/960px-PalaciodelosDeportes_Concierto.jpg",
-        "category": "Cultura",
+        "url": "/assets/fotos/zocalo.jpg",
+        "category": "CDMX",
         "borough": "",
-        "topic": "Concierto de Kings of Leon en el Palacio de los Deportes, CDMX (octubre de 2009); foto de archivo representativa, no documenta eventos de la noticia.",
+        "topic": "Zócalo visto desde la Torre Latinoamericana",
         "keywords": [
-          "concierto",
-          "música en vivo",
-          "Palacio de los Deportes",
-          "Ciudad de México",
-          "escenario",
-          "público"
+          "CDMX"
         ],
-        "author": "ProtoplasmaKid",
+        "author": "A01701617",
         "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-        "source": "https://commons.wikimedia.org/wiki/File:PalaciodelosDeportes_Concierto.jpg"
-      }
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.es",
+        "source": "https://commons.wikimedia.org/wiki/File:Vista_del_z%C3%B3calo_de_Ciudad_de_M%C3%A9xico_desde_la_Torre_Latinoamericana.jpg"
+      },
+      "alternate_versions": [
+        {
+          "title": "Garbage reúne a más de 90 mil personas en el Zócalo de la Cdmx",
+          "description": "Sociedad Noticias reportó que más de 90 mil personas acudieron al concierto gratuito de Garbage en el Zócalo de la Ciudad de México la noche del sábado 14 de noviembre.",
+          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPTHk1cjk0a1ZMbW9pSnZqaVdLODBkZGVUVzd3VVhVdEZwaXNOaC0wWld5MUlkZzVqZzFyNGUyVzI0cHNMVGxjRVVBTHYxNzRWTkNqVkRZaks5LW1RSW04Ykw0UDMtR1FVS3lGSFNLLUJ1bndDcDVETHd6RlY5dzc4WGUyOEN2Nm9JTlB6dlFEdjQweVlMYlp5Z1hjdEZnb2p3bVJvc0IxMA?oc=5",
+          "source": "Sociedad Noticias",
+          "date": "2026-11-15",
+          "published_at": "2026-11-15T06:30:00Z",
+          "category": "Cultura",
+          "borough": "",
+          "location": "Ciudad de México (sin alcaldía identificada)",
+          "local_url": "/noticias/?id=effab44940f001e64f19&mes=2026-11",
+          "source_url": "https://sociedad-noticias.com/2026/11/15/garbage-reune-a-mas-de-90-mil-personas-en-el-zocalo-de-la-cdmx/",
+          "brief": {
+            "lead": "Sociedad Noticias reportó que más de 90 mil personas acudieron al concierto gratuito de Garbage en el Zócalo de la Ciudad de México la noche del sábado 14 de noviembre.",
+            "context": "La nota describe una presentación encabezada por Shirley Manson y menciona canciones como «Stupid Girl», «Cherry Lips», «Push It» y «Only Happy When It Rains».",
+            "pending": "La cifra de asistencia y los detalles del concierto se atribuyen a Sociedad Noticias; CDMX AL MEMENTO no realizó un conteo independiente ni una verificación presencial.",
+            "method": "Síntesis editorial basada en la publicación de Sociedad Noticias del 15 de noviembre de 2026: https://sociedad-noticias.com/2026/11/15/garbage-reune-a-mas-de-90-mil-personas-en-el-zocalo-de-la-cdmx/. Los datos del evento se atribuyen al medio."
+          },
+          "photo": {
+            "id": "contexto_concierto_palacio_deportes_2009",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/PalaciodelosDeportes_Concierto.jpg/960px-PalaciodelosDeportes_Concierto.jpg",
+            "category": "Cultura",
+            "borough": "",
+            "topic": "Concierto de Kings of Leon en el Palacio de los Deportes, CDMX (octubre de 2009); foto de archivo representativa, no documenta eventos de la noticia.",
+            "keywords": [
+              "concierto",
+              "música en vivo",
+              "Palacio de los Deportes",
+              "Ciudad de México",
+              "escenario",
+              "público"
+            ],
+            "author": "ProtoplasmaKid",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "source": "https://commons.wikimedia.org/wiki/File:PalaciodelosDeportes_Concierto.jpg"
+          }
+        }
+      ]
     },
     {
       "title": "Asisten más de 90 mil personas a concierto de Garbage en el Zócalo de la CDMX",
