@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-15 03:51 UTC",
+  "updated": "2026-11-15 04:02 UTC",
   "articles": [
     {
       "title": "Marchas CDMX EN VIVO sábado 14 de noviembre: rutas y cierres",
@@ -763,7 +763,7 @@
       "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQNExMMWluNEwwdXd4N0d1R3pNbnoteTBmU0s3X2RUNHI2Slo4UmxMX2NSd2xSVjkxMXBfcmhGUUY3Q3lINXVUMGRxUlY5aTdHZmRLbmVEdlhtZ0VZd00weEdlcHV5cTA3NktVN2E4M2RkOGp4WHc1eHN4a1pvUnVtWUxtaUN1eTR6QmxGNm0zeU9Gc29ZY2lKQUwyd1YzM2U2NDh2aXlldS1FWnNTNVV5T1k0Z29rSFF3Xzd3YV92YngzcmFkWmRjMTEweXpEWmxJaWhtWkhDbzM3UQ?oc=5",
       "source": "El Sol de México",
       "date": "2026-11-14",
-      "published_at": "2026-11-14T21:56:15Z",
+      "published_at": "2026-11-14T21:57:05Z",
       "category": "Seguridad",
       "borough": "",
       "location": "Ciudad de México (sin alcaldía identificada)",
@@ -1006,19 +1006,24 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "commons_82750985",
+        "id": "contexto_atole_mexicano",
         "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Danzantes_en_El_Z%C3%B3calo%2C_Ciudad_de_M%C3%A9xico_-_Negro.jpg/960px-Danzantes_en_El_Z%C3%B3calo%2C_Ciudad_de_M%C3%A9xico_-_Negro.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "category": "CDMX",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Atole.jpg/960px-Atole.jpg",
+        "category": "Cultura",
         "borough": "",
-        "topic": "Danzantes en El Zócalo, Ciudad de México - Negro",
+        "topic": "Atole, bebida caliente tradicional a base de maíz; versión de Nuevo México (fotografía de 2007)",
         "keywords": [
-          "Zócalo Ciudad de México"
+          "atole",
+          "feria del atole",
+          "bebida tradicional",
+          "bebida de maíz",
+          "gastronomía mexicana",
+          "maíz"
         ],
-        "author": "Juan Carlos Fonseca Mata",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Danzantes_en_El_Z%C3%B3calo,_Ciudad_de_M%C3%A9xico_-_Negro.jpg"
+        "author": "ottmarliebert.com",
+        "license": "CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:Atole.jpg"
       }
     },
     {
@@ -1104,6 +1109,39 @@
         "license": "CC BY-SA 4.0",
         "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
         "source": "https://commons.wikimedia.org/wiki/File:Jeep_policia_cdmx.jpg"
+      }
+    },
+    {
+      "title": "Movilizaciones hoy 14 de noviembre en CDMX: Calles afectadas, horarios y alternativas viales",
+      "description": "De acuerdo con La Crónica de Hoy, el titular publicado es: «Movilizaciones hoy 14 de noviembre en CDMX: Calles afectadas, horarios y alternativas viales». La información publicada por La Crónica de Hoy aborda un asunto que este portal clasifica como Movilidad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNN01qSFdUa3JjWWNQSXQ4czJ0dXpZWVY2RG14M1pGWjhaVnh4X3MwbHBLMGNpWmtJTE85d0VIM0xCcHMyRzBVMnlzRGxQaGFXQlZ0VmpiUlNqYWhZQW1BUlhWYkxPaTlGdkF2elhzckJwbVExaEVsbXhTNm9hY1I0SWZrbm5peVFydGpuUFdiTlZlOVBySFdta0trbEktYXMySUZDd0Y3QUNMX2VtRjBkNC1nZjB1Y2pNbkZnVzVTV1drODZMeEljTUR2ZkZzVUVPVmQ5eWVR?oc=5",
+      "source": "La Crónica de Hoy",
+      "date": "2026-11-14",
+      "published_at": "2026-11-14T17:30:40Z",
+      "category": "Movilidad",
+      "borough": "",
+      "location": "Ciudad de México (sin alcaldía identificada)",
+      "local_url": "/noticias/?id=728bd1b290be0fff0088&mes=2026-11",
+      "brief": {
+        "lead": "De acuerdo con La Crónica de Hoy, el titular publicado es: «Movilizaciones hoy 14 de noviembre en CDMX: Calles afectadas, horarios y alternativas viales». La información publicada por La Crónica de Hoy aborda un asunto que este portal clasifica como Movilidad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+        "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
+        "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "commons_16240277",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Cacerolazo_contra_la_violencia_-_Ciudad_de_M%C3%A9xico_-_1.jpg/960px-Cacerolazo_contra_la_violencia_-_Ciudad_de_M%C3%A9xico_-_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "category": "CDMX",
+        "borough": "",
+        "topic": "Cacerolazo contra la violencia en CDMX (archivo); foto representativa, no corresponde a las movilizaciones del 14/11/2026.",
+        "keywords": [
+          "Ángel de la Independencia Ciudad de México"
+        ],
+        "author": "ProtoplasmaKid",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Cacerolazo_contra_la_violencia_-_Ciudad_de_M%C3%A9xico_-_1.jpg"
       }
     }
   ]
