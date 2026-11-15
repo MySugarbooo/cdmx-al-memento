@@ -134,6 +134,26 @@ class ArticlePhotoTests(unittest.TestCase):
         self.assertIn('rel="nofollow noopener noreferrer"', page)
         self.assertNotIn('href="' + rss_url + '"', page)
 
+    def test_la_razon_garbage_uses_verified_direct_source_instead_of_rss(self):
+        source_url = (
+            "https://www.razon.com.mx/ciudad/2026/11/15/"
+            "asisten-mas-de-90-mil-personas-a-concierto-de-garbage-en-el-zocalo-de-la-cdmx/"
+        )
+        rss_url = "https://news.google.com/rss/articles/example?oc=5"
+        item = {
+            "title": "Asisten más de 90 mil personas a concierto de Garbage en el Zócalo de la CDMX",
+            "source": "La Razón de México",
+            "url": rss_url,
+            "date": "2026-11-15",
+            "published_at": "2026-11-15T06:19:54Z",
+            "local_url": "/noticias/?id=e5a213749a521cf90ee8&mes=2026-11",
+        }
+        page = render(item, "e5a213749a521cf90ee8")
+        self.assertIn('href="' + source_url + '"', page)
+        self.assertIn("Ver fuente original", page)
+        self.assertIn('rel="nofollow noopener noreferrer"', page)
+        self.assertNotIn('href="' + rss_url + '"', page)
+
     def test_elsol_women_defensive_driving_source_url_is_clickable(self):
         source_url = (
             "https://oem.com.mx/elsoldemexico/metropoli/"

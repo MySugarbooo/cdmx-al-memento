@@ -2729,7 +2729,7 @@ class CurrentFeedEditorialPhotoRegressionTests(unittest.TestCase):
         self.assertIn("no realizó un conteo independiente", summary["pending"])
         self.assertIn(photos.SOCIEDAD_NOTICIAS_GARBAGE_ZOCALO_SOURCE_URL, summary["method"])
 
-    def test_la_razon_garbage_summary_is_limited_to_the_rss_headline(self):
+    def test_la_razon_garbage_summary_uses_verified_article_details(self):
         article = {
             "title": "Asisten más de 90 mil personas a concierto de Garbage en el Zócalo de la CDMX",
             "source": "La Razón de México",
@@ -2737,11 +2737,13 @@ class CurrentFeedEditorialPhotoRegressionTests(unittest.TestCase):
             "category": "Cultura",
         }
         summary = news.summarize(article)
-        self.assertIn("más de 90 mil asistentes", summary["lead"])
+        self.assertIn("más de 90 mil personas", summary["lead"])
         self.assertIn("La Razón de México", summary["lead"])
-        self.assertIn("no se recuperó el texto íntegro", summary["pending"].casefold())
-        self.assertIn("RSS de Google News", summary["method"])
-        self.assertNotIn("saldo blanco", summary["lead"])
+        self.assertIn("Paulina Villarreal", summary["context"])
+        self.assertIn("Mariachi Fiesta de México", summary["context"])
+        self.assertIn("SEDEMA", summary["method"])
+        self.assertIn("no realizó un conteo independiente", summary["lead"])
+        self.assertIn("no se verificaron de forma independiente", summary["pending"])
 
     def test_la_jornada_garbage_summary_uses_reported_attendance_and_saldo_blanco(self):
         article = {

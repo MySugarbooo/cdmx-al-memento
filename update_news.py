@@ -22,7 +22,7 @@ from pathlib import Path
 from zoneinfo import ZoneInfo
 
 from scripts.analisis_editorial import build_editorial
-from scripts.notas_locales import local_link, summarize, assign_photos, _photo_score, is_sensitive_media, is_coyotepec_highway_crash, INFOBAE_COYOTEPEC_HIGHWAY_CRASH_SOURCE_URL, is_san_juan_del_rio_autopista57_closure, SENSITIVE_MEDIA_TITLE, SAN_JUAN_DEL_RIO_AUTOPISTA57_SOURCE_URL, is_infobae_tlalpan_animal_abuse, is_la_prensa_tlalpan_animal_case, INFOBAE_TLALPAN_ANIMAL_SOURCE_URL, LA_PRENSA_TLALPAN_ANIMAL_SOURCE_URL, is_imagen_tlalpan_dog_rescue, is_huixtla_migrant_caravan, is_vc_fatal_trailer_incident, EL_GRAFICO_VC_TRAILER_SOURCE_URL, is_infobae_ballet_zapatilla, INFOBAE_BALLET_ZAPATILLA_SOURCE_URL, is_infobae_maria_leon_concert, INFOBAE_MARIA_LEON_CONCERT_SOURCE_URL, is_pulque_barbacoa_fair, is_mauricio_tabe_fifth_report, SDPNOTICIAS_MAURICIO_TABE_REPORT_SOURCE_URL, is_radio_formula_casa_ecologica, RADIO_FORMULA_CASA_ECOLOGICA_SOURCE_URL, is_capital_cdmx_care_budget, CAPITAL_CDMX_CARE_BUDGET_SOURCE_URL, is_la_jornada_aicm_flight_suspension, AICM_FLIGHT_SUSPENSION_SOURCE_URL, is_elsol_women_defensive_driving_workshop, EL_SOL_MUJERES_DEFENSIVE_DRIVING_SOURCE_URL, is_24horas_electric_mobility_plates_guide, HORAS_24_ELECTRIC_MOBILITY_SOURCE_URL, is_codigoqro_ignacio_detention, is_infobae_vite_balu_story, INFOBAE_VITE_BALU_SOURCE_URL, is_elsol_mexico_queretaro_trailer_rollover, EL_SOL_MEXICO_QUERETARO_TRAILER_SOURCE_URL, is_imer_animal_rights_march, IMER_ANIMAL_RIGHTS_MARCH_SOURCE_URL, is_diario_basta_alvaro_obregon_water_shortage, DIARIO_BASTA_ALVARO_OBREGON_WATER_SOURCE_URL, is_sociedad_noticias_garbage_zocalo, SOCIEDAD_NOTICIAS_GARBAGE_ZOCALO_SOURCE_URL
+from scripts.notas_locales import local_link, summarize, assign_photos, _photo_score, is_sensitive_media, is_coyotepec_highway_crash, INFOBAE_COYOTEPEC_HIGHWAY_CRASH_SOURCE_URL, is_san_juan_del_rio_autopista57_closure, SENSITIVE_MEDIA_TITLE, SAN_JUAN_DEL_RIO_AUTOPISTA57_SOURCE_URL, is_infobae_tlalpan_animal_abuse, is_la_prensa_tlalpan_animal_case, INFOBAE_TLALPAN_ANIMAL_SOURCE_URL, LA_PRENSA_TLALPAN_ANIMAL_SOURCE_URL, is_imagen_tlalpan_dog_rescue, is_huixtla_migrant_caravan, is_vc_fatal_trailer_incident, EL_GRAFICO_VC_TRAILER_SOURCE_URL, is_infobae_ballet_zapatilla, INFOBAE_BALLET_ZAPATILLA_SOURCE_URL, is_infobae_maria_leon_concert, INFOBAE_MARIA_LEON_CONCERT_SOURCE_URL, is_pulque_barbacoa_fair, is_mauricio_tabe_fifth_report, SDPNOTICIAS_MAURICIO_TABE_REPORT_SOURCE_URL, is_radio_formula_casa_ecologica, RADIO_FORMULA_CASA_ECOLOGICA_SOURCE_URL, is_capital_cdmx_care_budget, CAPITAL_CDMX_CARE_BUDGET_SOURCE_URL, is_la_jornada_aicm_flight_suspension, AICM_FLIGHT_SUSPENSION_SOURCE_URL, is_elsol_women_defensive_driving_workshop, EL_SOL_MUJERES_DEFENSIVE_DRIVING_SOURCE_URL, is_24horas_electric_mobility_plates_guide, HORAS_24_ELECTRIC_MOBILITY_SOURCE_URL, is_codigoqro_ignacio_detention, is_infobae_vite_balu_story, INFOBAE_VITE_BALU_SOURCE_URL, is_elsol_mexico_queretaro_trailer_rollover, EL_SOL_MEXICO_QUERETARO_TRAILER_SOURCE_URL, is_imer_animal_rights_march, IMER_ANIMAL_RIGHTS_MARCH_SOURCE_URL, is_diario_basta_alvaro_obregon_water_shortage, DIARIO_BASTA_ALVARO_OBREGON_WATER_SOURCE_URL, is_sociedad_noticias_garbage_zocalo, SOCIEDAD_NOTICIAS_GARBAGE_ZOCALO_SOURCE_URL, is_la_razon_garbage_zocalo, LA_RAZON_GARBAGE_ZOCALO_SOURCE_URL
 
 ROOT = Path(__file__).resolve().parent
 DEST = ROOT / "news.json"
@@ -212,6 +212,12 @@ def outside_cdmx_scope(title):
 
 def identify_location(title, date=None):
     words = " " + fold(title) + " "
+    # El Zócalo (Plaza de la Constitución) está en Cuauhtémoc; SEDEMA registra allí la plaza.
+    if (" garbage " in words and " zocalo " in words
+            and (" cdmx " in words or " ciudad de mexico " in words)):
+        return "Cuauhtémoc", (
+            "Zócalo (Plaza de la Constitución), alcaldía Cuauhtémoc, Ciudad de México"
+        )
     # Infobae confirma la sede de La Zapatilla de Cristal en Utopía Mixiuhca, Iztacalco.
     if " zapatilla de cristal " in words and " ballet " in words:
         return "Iztacalco", (
@@ -819,6 +825,8 @@ def standardize(article):
         result["source_url"] = DIARIO_BASTA_ALVARO_OBREGON_WATER_SOURCE_URL
     elif is_sociedad_noticias_garbage_zocalo(result):
         result["source_url"] = SOCIEDAD_NOTICIAS_GARBAGE_ZOCALO_SOURCE_URL
+    elif is_la_razon_garbage_zocalo(result):
+        result["source_url"] = LA_RAZON_GARBAGE_ZOCALO_SOURCE_URL
     elif is_elsol_mexico_queretaro_trailer_rollover(result):
         result["source_url"] = EL_SOL_MEXICO_QUERETARO_TRAILER_SOURCE_URL
     elif is_vc_two_motorcyclists_crash(result) and fold(source) == "el sol de mexico":
