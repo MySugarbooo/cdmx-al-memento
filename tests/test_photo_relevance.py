@@ -3260,7 +3260,7 @@ class CurrentFeedPhotoMismatchRegressionTests(unittest.TestCase):
 
 
 
-    def test_ambito_vite_balu_is_security_and_reports_source_disagreement(self):
+    def test_ambito_vite_balu_is_security_without_unverified_location_or_source_url(self):
         title = 'Capturan a "El Vite" y "El Balú" en el Centro de la CDMX con 15 kilos de marihuana y más de 600 dosis de cocaína'
         article = news.standardize({
             "title": title,
@@ -3272,13 +3272,12 @@ class CurrentFeedPhotoMismatchRegressionTests(unittest.TestCase):
         self.assertEqual(article["category"], "Seguridad")
         self.assertEqual(_photo_category(article), "Seguridad")
         self.assertEqual(article["borough"], "")
-        self.assertIn("Cuauhtémoc", article["location"])
-        self.assertIn("Venustiano Carranza", article["location"])
-        self.assertEqual(article["source_url"], photos.AMBITO_VITE_BALU_SOURCE_URL)
-        self.assertIn("dos presuntos distribuidores", article["brief"]["lead"])
-        self.assertIn("15 kilos de marihuana", article["brief"]["lead"])
+        self.assertEqual(article["location"], "Ciudad de México (sin alcaldía identificada)")
+        self.assertNotIn("source_url", article)
+        self.assertIn("sin acceso al cuerpo de la nota", article["brief"]["lead"].casefold())
         self.assertIn("más de 600 dosis", article["brief"]["lead"])
-        self.assertIn("tres detenidos y 655 dosis", article["brief"]["context"])
+        self.assertNotIn("Cuauhtémoc", article["brief"]["lead"] + article["brief"]["context"])
+        self.assertNotIn("Venustiano Carranza", article["brief"]["lead"] + article["brief"]["context"])
 
         plaque = representative_photo(
             "palacio-iturbide-plaque",
@@ -3316,7 +3315,8 @@ class CurrentFeedPhotoMismatchRegressionTests(unittest.TestCase):
         self.assertIn("tres hombres", article["brief"]["lead"])
         self.assertIn("655 dosis", article["brief"]["lead"])
         self.assertIn("Ramón", article["brief"]["context"])
-        self.assertIn("Cuauhtémoc", article["brief"]["context"])
+        self.assertNotIn("Ámbito", article["brief"]["context"])
+        self.assertNotIn("Ámbito", article["brief"]["method"])
 
     def test_court_rehabilitation_uses_licensed_cdmx_court_photo(self):
         article = self.make_article(
