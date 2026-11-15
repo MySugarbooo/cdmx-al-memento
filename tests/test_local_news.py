@@ -1436,12 +1436,19 @@ class LocalNewsTests(unittest.TestCase):
             ("Garbage llega al Zócalo de CDMX: Shirley Manson agradece al público mexicano", "Gobierno", "Cultura"),
             ("Mercados de CDMX recibirán un millón de pesos para mejorar sus instalaciones", "Seguridad", "Gobierno"),
             ("Prepárate para 4 Marchas que Colapsarán Tráfico en CDMX: A Esta Hora Inician y Puntos de Partida", "Seguridad", "Movilidad"),
-            ("SSC prevé diversas movilizaciones en CDMX este domingo; advierten posibles afectaciones viales", "Cultura", "Movilidad"),
             ("Buen Fin 2026: C5 vigilará plazas y centros comerciales de CDMX con mil 296 cámaras", "CDMX", "Seguridad"),
         )
         for title, feed_category, expected in cases:
             with self.subTest(title=title):
                 self.assertEqual(category_by_headline(title, feed_category, "El Sol de México"), expected)
+
+
+    def test_el_universal_ssc_mobilization_agenda_is_mobility(self):
+        title = "SSC prevé diversas movilizaciones en CDMX este domingo"
+        self.assertEqual(
+            category_by_headline(title, "Cultura", "El Universal"),
+            "Movilidad",
+        )
 
 
     def test_homepage_groups_two_sources_reporting_the_same_garbage_zocalo_concert(self):
