@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-15 07:10 UTC",
+  "updated": "2026-11-15 07:33 UTC",
   "boroughs": [
     {
       "name": "La Magdalena Contreras",
@@ -1241,12 +1241,6 @@
           "location": "Tlacoyaque, Barrio Tlacoyaque, Ampliación Tlacoyaque y La Angostura, alcaldía Álvaro Obregón, Ciudad de México (según Diario Basta!)",
           "local_url": "/noticias/?id=5e245da46ff05c81c3ce&mes=2026-11",
           "source_url": "https://diariobasta.com/2026/11/14/carecen-de-agua-en-alvaro-obregon/",
-          "brief": {
-            "lead": "Diario Basta! reportó que, del 1 de enero al 9 de noviembre de 2026, cuatro colonias de Álvaro Obregón acumularon 36 reportes ciudadanos por falta de agua: 20 en Barrio Tlacoyaque, 11 en Ampliación Tlacoyaque y cinco en Tlacoyaque; La Angostura no registró folios en ese periodo. El medio atribuye las cifras a Locatel.",
-            "context": "La nota señala que las cuatro colonias reciben agua mediante tandeo —suministro intermitente por turnos— y que su ubicación en zonas altas reduce la presión. Los 36 registros son reportes ciudadanos, no 36 cortes verificados de forma independiente.",
-            "pending": "El artículo no ofrece un calendario vigente de tandeo ni la duración de cada interrupción. Para horarios o avisos actuales, consulta a SACMEX y a la alcaldía Álvaro Obregón.",
-            "method": "Síntesis de la publicación original de Diario Basta!, del 14 de noviembre de 2026: https://diariobasta.com/2026/11/14/carecen-de-agua-en-alvaro-obregon/ Las cifras se atribuyen a Locatel y a la Jefatura de Unidad Departamental de Agua Potable de la alcaldía; no constituyen verificación independiente."
-          },
           "alternate_versions": [
             {
               "title": "Carecen de agua en Álvaro Obregón",
@@ -1282,7 +1276,13 @@
                 "source": "https://commons.wikimedia.org/wiki/File:Camell%C3%B3n_y_estatua_en_%C3%81lvaro_Obreg%C3%B3n,_Ciudad_de_M%C3%A9xico.jpg"
               }
             }
-          ]
+          ],
+          "brief": {
+            "lead": "Diario Basta! reportó que, del 1 de enero al 9 de noviembre de 2026, cuatro colonias de Álvaro Obregón acumularon 36 reportes ciudadanos por falta de agua: 20 en Barrio Tlacoyaque, 11 en Ampliación Tlacoyaque y cinco en Tlacoyaque; La Angostura no registró folios en ese periodo. El medio atribuye las cifras a Locatel.",
+            "context": "La nota señala que las cuatro colonias reciben agua mediante tandeo —suministro intermitente por turnos— y que su ubicación en zonas altas reduce la presión. Los 36 registros son reportes ciudadanos, no 36 cortes verificados de forma independiente.",
+            "pending": "El artículo no ofrece un calendario vigente de tandeo ni la duración de cada interrupción. Para horarios o avisos actuales, consulta a SACMEX y a la alcaldía Álvaro Obregón.",
+            "method": "Síntesis de la publicación original de Diario Basta!, del 14 de noviembre de 2026: https://diariobasta.com/2026/11/14/carecen-de-agua-en-alvaro-obregon/ Las cifras se atribuyen a Locatel y a la Jefatura de Unidad Departamental de Agua Potable de la alcaldía; no constituyen verificación independiente."
+          }
         },
         {
           "title": "Casa Ecológica busca reducir gastos familiares y consumo de gas en Álvaro Obregón",
@@ -15066,6 +15066,32 @@
           "borough": "Tláhuac",
           "location": "Tláhuac (mencionada en el titular)",
           "local_url": "/noticias/?id=8943654970f0592d780a&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con La Silla Rota, el titular publicado es: «Feria del Atole 2026 en Tláhuac: fechas, sabores y actividades». La información publicada por La Silla Rota aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "contexto_atole_mexicano",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Atole.jpg/960px-Atole.jpg",
+            "category": "Cultura",
+            "borough": "",
+            "topic": "Atole, bebida caliente tradicional a base de maíz; versión de Nuevo México (fotografía de 2007)",
+            "keywords": [
+              "atole",
+              "feria del atole",
+              "bebida tradicional",
+              "bebida de maíz",
+              "gastronomía mexicana",
+              "maíz"
+            ],
+            "author": "ottmarliebert.com",
+            "license": "CC BY-SA 2.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+            "source": "https://commons.wikimedia.org/wiki/File:Atole.jpg"
+          },
           "alternate_versions": [
             {
               "title": "Feria del Atole 2026 en Tláhuac: fechas, sabores y actividades",
@@ -15130,33 +15156,7 @@
                 "source": "https://commons.wikimedia.org/wiki/File:Danzantes_en_El_Z%C3%B3calo,_Ciudad_de_M%C3%A9xico_-_Negro.jpg"
               }
             }
-          ],
-          "brief": {
-            "lead": "De acuerdo con La Silla Rota, el titular publicado es: «Feria del Atole 2026 en Tláhuac: fechas, sabores y actividades». La información publicada por La Silla Rota aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "contexto_atole_mexicano",
-            "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Atole.jpg/960px-Atole.jpg",
-            "category": "Cultura",
-            "borough": "",
-            "topic": "Atole, bebida caliente tradicional a base de maíz; versión de Nuevo México (fotografía de 2007)",
-            "keywords": [
-              "atole",
-              "feria del atole",
-              "bebida tradicional",
-              "bebida de maíz",
-              "gastronomía mexicana",
-              "maíz"
-            ],
-            "author": "ottmarliebert.com",
-            "license": "CC BY-SA 2.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
-            "source": "https://commons.wikimedia.org/wiki/File:Atole.jpg"
-          }
+          ]
         },
         {
           "title": "Antorcha mantendrá la lucha para defender las viviendas de Los Pozos, en Tláhuac",

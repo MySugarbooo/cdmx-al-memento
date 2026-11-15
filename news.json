@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-15 07:10 UTC",
+  "updated": "2026-11-15 07:33 UTC",
   "articles": [
     {
       "title": "Garbage reúne a más de 90 mil personas en el Zócalo de la Cdmx",
@@ -37,7 +37,7 @@
     },
     {
       "title": "Asisten más de 90 mil personas a concierto de Garbage en el Zócalo de la CDMX",
-      "description": "De acuerdo con La Razón de México, el titular publicado es: «Asisten más de 90 mil personas a concierto de Garbage en el Zócalo de la CDMX». El medio La Razón de México presenta conciertos o actividades musicales anunciadas en Ciudad de México. La programación, disponibilidad y costos pueden cambiar; comprueba los datos del organizador.",
+      "description": "La Razón de México publicó un titular que atribuye más de 90 mil asistentes al concierto de Garbage en el Zócalo de la Ciudad de México. La cifra se reproduce como afirmación del encabezado, no como conteo verificado por CDMX AL MEMENTO.",
       "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNdC1xOFNJRG5SNDZFbF9uR08ydFV1eGRZRmNrdUVCVnNacnFVTGVwNzJ5YloyTzdjVmVpMGhDbGl4NUlvazNucUkzNWU0c2JLLTdKZGxZd3NJTnVSWG5xX2JkOHZpcmF4Y2FWXzN4d09hNlhfcF9aZmFibWZHRWRUaXpfd0Jsam9YSE54a3pFNV9YdU9rY0ZZREZyWmdzZ2JpLUZVb3Z3UnVlb2E3c0M5eGJwdGY4ZHNjSXJfMXVn0gHYAUFVX3lxTE8xT0M4RWg3MW9VRWFuQ3JGS1RUc21pZ2RQX1c0V1ZFSk43LWxGMEZKY1hvYnNHTjVJX3VsUFNXV1NKc3Fla0dSNnBSbEpaMmtleTBZUGVHQjl0TmVsTDY1QXFKV0lENXBQcEZtd0NHcTVpNTctR1lWa0lDM2EtaVlJUkhrWDJGWmQ4Yldya2hucC03dVBRRllTMGVpZDdPUVdnbEI3Y01TdEhYMDVBVnc3OXcwcWF5UmJHZWNEV1Y1VVpvMU9Ca0hoVFpyQVhzeXpoVHVfakRXTA?oc=5",
       "source": "La Razón de México",
       "date": "2026-11-15",
@@ -47,30 +47,25 @@
       "location": "Ciudad de México (sin alcaldía identificada)",
       "local_url": "/noticias/?id=e5a213749a521cf90ee8&mes=2026-11",
       "brief": {
-        "lead": "De acuerdo con La Razón de México, el titular publicado es: «Asisten más de 90 mil personas a concierto de Garbage en el Zócalo de la CDMX». El medio La Razón de México presenta conciertos o actividades musicales anunciadas en Ciudad de México. La programación, disponibilidad y costos pueden cambiar; comprueba los datos del organizador.",
-        "context": "La actividad cultural abre oportunidades de encuentro, aprendizaje y disfrute para habitantes y visitantes.",
-        "pending": "Los accesos, boletos, sedes, cupos y horarios deben consultarse con la institución organizadora. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+        "lead": "La Razón de México publicó un titular que atribuye más de 90 mil asistentes al concierto de Garbage en el Zócalo de la Ciudad de México. La cifra se reproduce como afirmación del encabezado, no como conteo verificado por CDMX AL MEMENTO.",
+        "context": "El registro RSS identifica a Garbage y al Zócalo como tema de la cobertura; no aporta detalles suficientes para describir el desarrollo del concierto.",
+        "pending": "No se recuperó el texto íntegro ni una URL directa verificable de La Razón. La asistencia y cualquier otro detalle requieren consulta de la publicación original; CDMX AL MEMENTO no hizo un conteo independiente.",
+        "method": "Síntesis limitada al titular y metadatos del RSS de Google News atribuido a La Razón de México; no equivale a lectura del artículo íntegro. Se conserva el enlace RSS disponible porque no se verificó una URL directa."
       },
       "photo": {
-        "id": "contexto_concierto_palacio_deportes_2009",
+        "id": "commons_20428729",
         "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/PalaciodelosDeportes_Concierto.jpg/960px-PalaciodelosDeportes_Concierto.jpg",
-        "category": "Cultura",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Plaza_de_la_Constitucion_Ciudad_de_Mexico_City.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "category": "CDMX",
         "borough": "",
-        "topic": "Concierto de Kings of Leon en el Palacio de los Deportes, CDMX (octubre de 2009); foto de archivo representativa, no documenta eventos de la noticia.",
+        "topic": "Plaza de la Constitucion Ciudad de Mexico City",
         "keywords": [
-          "concierto",
-          "música en vivo",
-          "Palacio de los Deportes",
-          "Ciudad de México",
-          "escenario",
-          "público"
+          "CDMX"
         ],
-        "author": "ProtoplasmaKid",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-        "source": "https://commons.wikimedia.org/wiki/File:PalaciodelosDeportes_Concierto.jpg"
+        "author": "Flickr user schlaeger",
+        "license": "CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Plaza_de_la_Constitucion_Ciudad_de_Mexico_City.jpg"
       }
     },
     {
@@ -104,6 +99,44 @@
         "license": "CC BY-SA 3.0",
         "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
         "source": "https://commons.wikimedia.org/wiki/File:Ciudad_Universitaria_(Marcha_por_la_paz)_-_panoramio.jpg"
+      }
+    },
+    {
+      "title": "Garbage prende el Zócalo de la CdMx; mantienen cierres viales en el Centro Histórico",
+      "description": "De acuerdo con Sin Embargo, el titular publicado es: «Garbage prende el Zócalo de la CdMx; mantienen cierres viales en el Centro Histórico». La información publicada por Sin Embargo aborda un asunto que este portal clasifica como Cultura. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQRmhxdUotWTd3SHpqYko1dHBzcjF0LWZtbUl6T2Vhbk1aM2oycFBHSkUydm1lSXFreXZDbDFMQlhBbUFYcERaeV9qTTJ2VGRuSEo4Q2FxZFlUdjMwdEhnQlhQMkc0ZkIwakY0dGtCWU9WY2xQRkFNZ2g4Mk9EOWtkSlBIdnRTUVVRWTQ3ZTlDaS1qT0V5ME9oWnFiVG43S2JDMWotamRBNEMtbExwbDlLQjJ5YTdpelhsaHc?oc=5",
+      "source": "Sin Embargo",
+      "date": "2026-11-14",
+      "published_at": "2026-11-15T03:13:47Z",
+      "category": "Cultura",
+      "borough": "",
+      "location": "Ciudad de México (sin alcaldía identificada)",
+      "local_url": "/noticias/?id=5aaa81d8b053056f9fbf&mes=2026-11",
+      "brief": {
+        "lead": "De acuerdo con Sin Embargo, el titular publicado es: «Garbage prende el Zócalo de la CdMx; mantienen cierres viales en el Centro Histórico». La información publicada por Sin Embargo aborda un asunto que este portal clasifica como Cultura. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+        "context": "La actividad cultural abre oportunidades de encuentro, aprendizaje y disfrute para habitantes y visitantes.",
+        "pending": "Los accesos, boletos, sedes, cupos y horarios deben consultarse con la institución organizadora. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "contexto_concierto_palacio_deportes_2009",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/PalaciodelosDeportes_Concierto.jpg/960px-PalaciodelosDeportes_Concierto.jpg",
+        "category": "Cultura",
+        "borough": "",
+        "topic": "Concierto de Kings of Leon en el Palacio de los Deportes, CDMX (octubre de 2009); foto de archivo representativa, no documenta eventos de la noticia.",
+        "keywords": [
+          "concierto",
+          "música en vivo",
+          "Palacio de los Deportes",
+          "Ciudad de México",
+          "escenario",
+          "público"
+        ],
+        "author": "ProtoplasmaKid",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:PalaciodelosDeportes_Concierto.jpg"
       }
     },
     {
@@ -1065,6 +1098,44 @@
         "license": "CC BY 4.0",
         "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
         "source": "https://commons.wikimedia.org/wiki/File:Cosecha_de_Lluvia_02.jpg"
+      }
+    },
+    {
+      "title": "Feria del Atole 2026 en Tláhuac: fechas, sabores y actividades",
+      "description": "De acuerdo con La Silla Rota, el titular publicado es: «Feria del Atole 2026 en Tláhuac: fechas, sabores y actividades». La información publicada por La Silla Rota aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPX0YtWWxjM2xHNXZmdm9ZeFIwblNld2VRcWZSVnIzUEw5ZzhEeG9Ca3V1LWZUOHBuZVNPQ3pqZHF4c2JSMG9Bcmt1TExtVkQwcEdIX0llYkNDM2N5LWxKUU8yS1BTa01UVWJXZDZRMmZJNGQ0Zkpvcl9sblRMYkd1SXFpNjZ0NnREcUVTUy1MSDVkc25vd0hZUDNGRTh2MnQyeFJUZXRNNmx2SjA3bmxBdWlGdXV5dnZGUjU1M0praURSMnhuSVRZLQ?oc=5",
+      "source": "La Silla Rota",
+      "date": "2026-11-14",
+      "published_at": "2026-11-14T19:19:07Z",
+      "category": "CDMX",
+      "borough": "Tláhuac",
+      "location": "Tláhuac (mencionada en el titular)",
+      "local_url": "/noticias/?id=8943654970f0592d780a&mes=2026-11",
+      "brief": {
+        "lead": "De acuerdo con La Silla Rota, el titular publicado es: «Feria del Atole 2026 en Tláhuac: fechas, sabores y actividades». La información publicada por La Silla Rota aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+        "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+        "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "contexto_atole_mexicano",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Atole.jpg/960px-Atole.jpg",
+        "category": "Cultura",
+        "borough": "",
+        "topic": "Atole, bebida caliente tradicional a base de maíz; versión de Nuevo México (fotografía de 2007)",
+        "keywords": [
+          "atole",
+          "feria del atole",
+          "bebida tradicional",
+          "bebida de maíz",
+          "gastronomía mexicana",
+          "maíz"
+        ],
+        "author": "ottmarliebert.com",
+        "license": "CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:Atole.jpg"
       }
     }
   ]
