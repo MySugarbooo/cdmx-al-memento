@@ -3936,5 +3936,37 @@ class CurrentFeedPhotoMismatchRegressionTests(unittest.TestCase):
         self.assertEqual(article["photo"]["license"], "CC0 1.0")
         self.assertFalse(news.photo_needs_refresh(article))
 
+
+    def test_la_cronica_tlaquepaque_nativity_story_uses_licensed_representative_photo(self):
+        article = {
+            "title": "Apoyará Tlaquepaque a 35 familias artesanas para llevar sus nacimientos a feria en CDMX",
+            "source": "La Crónica de Hoy",
+            "date": "2026-11-15",
+            "category": "Gobierno",
+            "url": "https://news.google.com/rss/articles/tlaquepaque-nativity-photo-regression",
+        }
+        palace = representative_photo(
+            "palacio-nacional",
+            "Gobierno",
+            "Palacio Nacional de México - Exteriores - 1",
+            ["Palacio Nacional"],
+        )
+        nativity = self.photo("contexto_nacimiento_tlaquepaque_2018")
+        self.assertIsNotNone(nativity)
+        self.assertLess(_photo_score(article, palace), 0)
+        self.assertEqual(_photo_score(article, nativity), 5000)
+        self.assertEqual(nativity["author"], "Encogua")
+        self.assertEqual(nativity["license"], "CC BY-SA 4.0")
+        self.assertIn("no corresponde a la Feria del Nacimiento de CDMX de 2026", nativity["topic"])
+        article["photo"] = deepcopy(palace)
+        with patch.object(photos, "_pool", return_value=[palace, nativity]), patch.object(
+            photos, "_load", return_value=[]
+        ):
+            assign_photos([article])
+        self.assertEqual(article["photo"]["id"], "contexto_nacimiento_tlaquepaque_2018")
+        self.assertEqual(article["photo"]["kind"], "representativa")
+        self.assertEqual(article["photo"]["author"], "Encogua")
+        self.assertEqual(article["photo"]["license"], "CC BY-SA 4.0")
+
 if __name__ == "__main__":
     unittest.main()
