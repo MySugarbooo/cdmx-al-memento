@@ -748,11 +748,9 @@ def summarize(article):
                 "de forma independiente en el lugar. La nota no describe un método de conteo de asistentes."
             ),
             "method": (
-                "Síntesis editorial basada en la publicación de La Razón de México del 15 de noviembre de 2026: "
-                + LA_RAZON_GARBAGE_ZOCALO_SOURCE_URL
-                + ". La cifra y los detalles del concierto se atribuyen al medio. La Plaza de la Constitución se "
-                "identifica en la alcaldía Cuauhtémoc conforme a la ficha de SEDEMA: "
-                "https://www.proyectos.sedema.cdmx.gob.mx/datos/areas-verdes-detalle/4648."
+                "Síntesis editorial basada en la publicación de La Razón de México del 15 de noviembre de 2026. "
+                "La cifra y los detalles del concierto se atribuyen al medio; la ubicación se contrastó con la ficha "
+                "de SEDEMA para la Plaza de la Constitución, alcaldía Cuauhtémoc."
             ),
         }
     if is_la_jornada_garbage_zocalo(article):
