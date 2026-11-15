@@ -1514,5 +1514,33 @@ class LocalNewsTests(unittest.TestCase):
         self.assertIn("SISMEDI911", result["brief"]["lead"])
         self.assertIn("tres ambulancias", result["brief"]["lead"])
 
+
+    def test_non_graphic_animal_complaints_keep_credited_photo_in_homepage_feed(self):
+        article = standardize({
+            "title": "En CDMX, 15 colonias de 6 alcaldías concentran denuncias por maltrato animal",
+            "url": "https://news.google.com/rss/articles/animal-complaints-homepage-20261115",
+            "source": "El Sol de México",
+            "date": "2026-11-15",
+            "published_at": "2026-11-15T11:09:00Z",
+            "category": "Seguridad",
+        })
+        self.assertIsNotNone(article)
+        article["sensitive_media"] = True  # marca heredada de la regla anterior
+        article["photo"] = {
+            "id": "contexto_perros_parque_espana",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Perros_en_el_Parque_Espa%C3%B1a%2C_Ciudad_de_M%C3%A9xico.jpg/1280px-Perros_en_el_Parque_Espa%C3%B1a%2C_Ciudad_de_M%C3%A9xico.jpg",
+            "source": "https://commons.wikimedia.org/wiki/File:Perros_en_el_Parque_Espa%C3%B1a,_Ciudad_de_M%C3%A9xico.jpg",
+            "author": "Raul21940",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        }
+        visible = build_homepage_feed([article])
+        self.assertEqual(len(visible), 1)
+        self.assertEqual(visible[0]["category"], "Medio Ambiente")
+        self.assertEqual(visible[0]["photo"]["id"], "contexto_perros_parque_espana")
+        self.assertNotIn("sensitive_media", visible[0])
+
+
 if __name__=="__main__":
     unittest.main()
