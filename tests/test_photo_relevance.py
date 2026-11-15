@@ -3278,7 +3278,7 @@ class CurrentFeedPhotoMismatchRegressionTests(unittest.TestCase):
         self.assertIn("dos presuntos distribuidores", article["brief"]["lead"])
         self.assertIn("15 kilos de marihuana", article["brief"]["lead"])
         self.assertIn("más de 600 dosis", article["brief"]["lead"])
-        self.assertIn("tres personas y 655 dosis", article["brief"]["context"])
+        self.assertIn("tres detenidos y 655 dosis", article["brief"]["context"])
 
         plaque = representative_photo(
             "palacio-iturbide-plaque",
