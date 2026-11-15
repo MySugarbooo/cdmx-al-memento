@@ -1423,5 +1423,26 @@ class LocalNewsTests(unittest.TestCase):
                 self.assertEqual(category_by_headline(title, feed_category, "El Sol de México"), expected)
 
 
+    def test_homepage_groups_two_sources_reporting_the_same_garbage_zocalo_concert(self):
+        society = {
+            "title": "Garbage reúne a más de 90 mil personas en el Zócalo de la Cdmx",
+            "source": "Sociedad Noticias",
+            "date": "2026-11-15",
+            "url": "https://news.google.com/rss/articles/sociedad-garbage-zocalo",
+            "local_url": "/noticias/?id=effab44940f001e64f19&mes=2026-11",
+        }
+        razon = {
+            "title": "Asisten más de 90 mil personas a concierto de Garbage en el Zócalo de la CDMX",
+            "source": "La Razón de México",
+            "date": "2026-11-15",
+            "url": "https://news.google.com/rss/articles/razon-garbage-zocalo",
+            "local_url": "/noticias/?id=e5a213749a521cf90ee8&mes=2026-11",
+        }
+        visible = dedupe_homepage_events([society, razon])
+        self.assertEqual(len(visible), 1)
+        self.assertEqual(visible[0]["source"], "Sociedad Noticias")
+        self.assertNotEqual(society["local_url"], razon["local_url"])
+
+
 if __name__=="__main__":
     unittest.main()
