@@ -3,18 +3,6 @@ on:
   workflow_dispatch:
   schedule:
     - cron: '41 */6 * * *'
-  push:
-    branches: [main]
-    paths:
-      - '.github/workflows/check-public-seo.yml'
-      - 'scripts/check_public_seo.py'
-      - 'tests/test_public_seo.py'
-      - 'index.html'
-      - 'assets/neo-home.js'
-      - 'comunidad/index.html'
-      - 'assets/comments.js'
-      - 'assets/comments-config.js'
-      - 'functions/api/engagement.js'
   workflow_run:
     workflows: ["Generate crawlable article pages"]
     types: [completed]

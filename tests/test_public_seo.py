@@ -191,6 +191,19 @@ class PublicSeoTests(unittest.TestCase):
         self.assertIn(f"Fototeca editorial: {count:,} imágenes", page)
         self.assertIn(f"La biblioteca reúne {count:,} imágenes", page)
 
+    def test_public_check_waits_for_seo_generation_instead_of_racing_pushes(self):
+        workflow = (
+            Path(__file__).resolve().parents[1]
+            / ".github" / "workflows" / "check-public-seo.yml"
+        ).read_text(encoding="utf-8")
+        self.assertNotRegex(workflow, r"(?m)^  push:")
+        self.assertIn("workflow_run:", workflow)
+        self.assertIn('workflows: ["Generate crawlable article pages"]', workflow)
+        self.assertIn("types: [completed]", workflow)
+        self.assertIn("github.event.workflow_run.conclusion == 'success'", workflow)
+        self.assertIn("workflow_dispatch:", workflow)
+        self.assertIn("schedule:", workflow)
+
     def test_deployment_wait_and_homepage_script_match_main(self):
         self.assertEqual(DEPLOY_ATTEMPTS, 36)
         source, content = homepage_script_source()
