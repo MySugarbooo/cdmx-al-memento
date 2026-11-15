@@ -3975,5 +3975,46 @@ class CurrentFeedPhotoMismatchRegressionTests(unittest.TestCase):
         self.assertEqual(article["photo"]["license"], "CC0 1.0")
         self.assertFalse(news.photo_needs_refresh(article))
 
+    def test_green_areas_environmental_standard_uses_licensed_chapultepec_garden_photo(self):
+        title = "Gobierno de CDMX promueve sistemas integrales vivientes en áreas verdes"
+        article = news.standardize({
+            "title": title,
+            "url": "https://news.google.com/rss/articles/green-areas-standard-20261115",
+            "source": "Segundo a Segundo",
+            "date": "2026-11-15",
+            "published_at": "2026-11-15T13:00:00Z",
+            "category": "Gobierno",
+        })
+        self.assertEqual(article["category"], "Medio Ambiente")
+        self.assertEqual(
+            article["source_url"],
+            "https://segundoasegundo.com/gobierno-de-cdmx-promueve-sistemas-integrales-vivientes-en-areas-verdes/",
+        )
+        self.assertIn("PROY-NACDMX-006-RNAT-2026", article["brief"]["lead"])
+        self.assertIn("consulta pública", article["brief"]["pending"])
+        self.assertEqual(article["description"], article["brief"]["lead"])
+
+        palace = representative_photo(
+            "gobierno", "Gobierno", "Fachada del Palacio Nacional", ["Gobierno"]
+        )
+        garden = next(
+            photo for photo in photos._pool()
+            if photo.get("id") == "commons_157736184"
+        )
+        self.assertEqual(garden["author"], "ProtoplasmaKid")
+        self.assertEqual(garden["license"], "CC BY-SA 4.0")
+        self.assertEqual(
+            garden["source"],
+            "https://commons.wikimedia.org/wiki/File:Jardin_Esc%C3%A9nico_del_Bosque_de_Chapultepec_02.jpg",
+        )
+        article["photo"] = palace
+        with patch.object(photos, "_pool", return_value=[palace, garden]), patch.object(
+            photos, "_load", return_value=[]
+        ):
+            photos.assign_photos([article])
+        self.assertEqual(article["photo"]["id"], "commons_157736184")
+        self.assertEqual(article["photo"]["kind"], "representativa")
+
+
 if __name__ == "__main__":
     unittest.main()
