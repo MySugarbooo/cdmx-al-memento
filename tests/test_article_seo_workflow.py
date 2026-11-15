@@ -31,8 +31,8 @@ class ArticleSeoWorkflowTests(unittest.TestCase):
         self.assertIn("github.event.workflow_run.conclusion == 'success'", self.workflow)
 
     def test_editorial_source_changes_trigger_news_before_seo(self):
-        pull_request = self.news_workflow.split("  pull_request:\\n", 1)[1]
-        paths = pull_request.split("permissions:\\n", 1)[0]
+        pull_request = self.news_workflow.split("  pull_request:", 1)[1]
+        paths = pull_request.split("permissions:", 1)[0]
         self.assertIn("'.github/workflows/article-seo.yml'", paths)
         self.assertIn("'scripts/build_article_seo.py'", paths)
         self.assertIn("'tests/test_article_seo_workflow.py'", paths)
