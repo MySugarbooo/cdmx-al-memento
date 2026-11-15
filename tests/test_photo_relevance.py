@@ -3042,7 +3042,7 @@ class CurrentEditorialPhotoRegressionTests(unittest.TestCase):
     def test_contextual_photo_credits_are_merged_into_public_credit_catalog(self):
         data = json.loads((REPO_ROOT / "assets/fotos/contexto-tematico.json").read_text(encoding="utf-8"))
         photos = {item["id"]: item for item in data["photos"]}
-        for photo_id in ("contexto_publicidad_edificios_condesa_2013", "contexto_pokemon_go_bench_2016"):
+        for photo_id in ("contexto_publicidad_edificios_condesa_2013", "contexto_pokemon_go_bench_2016", "contexto_imeca_calidad_aire_cdmx"):
             photo = photos.get(photo_id)
             self.assertIsNotNone(photo)
             self.assertTrue(photo["author"])
@@ -3051,6 +3051,7 @@ class CurrentEditorialPhotoRegressionTests(unittest.TestCase):
             self.assertTrue(photo["source"].startswith("https://commons.wikimedia.org/wiki/File:"))
         loader = (REPO_ROOT / "assets/creditos.js").read_text(encoding="utf-8")
         self.assertIn("/assets/fotos/contexto-tematico.json", loader)
+        self.assertIn("contexto-tematico.json?v=20261115-imeca-air-quality1", loader)
         self.assertIn("new Map", loader)
 
     def test_current_feed_rejects_unrelated_hydraulic_nightlife_and_security_photos(self):
@@ -3364,6 +3365,44 @@ class CurrentFeedPhotoMismatchRegressionTests(unittest.TestCase):
             ["farmacia", "salud", "Santa María de la Ribera"],
         )
         self.assert_photo_removed(title, "Medio Ambiente", pharmacy)
+
+    def test_air_quality_report_rejects_plastic_bags_and_uses_imeca_reference(self):
+        title = "Esta es la calidad del aire en CDMX y Edomex este domingo 15 de noviembre: reporte completo por alcaldías y municipios"
+        article = news.standardize({
+            "title": title,
+            "url": "https://news.google.com/rss/articles/air-quality-report-2026-11-15",
+            "source": "Infobae",
+            "date": "2026-11-15",
+            "published_at": "2026-11-15T11:30:00Z",
+            "category": "Medio Ambiente",
+        })
+        self.assertIsNotNone(article)
+        self.assertEqual(article["category"], "Medio Ambiente")
+        bag = next(
+            photo for photo in photos._pool()
+            if photo.get("id") == "contexto_bolsas_plasticas_compras_2015"
+        )
+        imeca = next(
+            photo for photo in photos._pool()
+            if photo.get("id") == "contexto_imeca_calidad_aire_cdmx"
+        )
+        self.assertLess(_photo_score(article, bag), 0)
+        self.assertGreaterEqual(_photo_score(article, imeca), 0)
+        self.assertEqual(imeca["author"], "(WT-en) Fabz at English Wikivoyage")
+        self.assertEqual(imeca["license"], "CC BY-SA 1.0")
+        self.assertEqual(imeca["licenseUrl"], "https://creativecommons.org/licenses/by-sa/1.0/")
+        self.assertEqual(
+            imeca["source"],
+            "https://commons.wikimedia.org/wiki/File:MexicoCityImecaScale.JPG",
+        )
+        article["photo"] = deepcopy(bag)
+        with patch.object(photos, "_pool", return_value=[bag, imeca]), patch.object(
+            photos, "_load", return_value=[]
+        ):
+            photos.assign_photos([article])
+        self.assertEqual(article["photo"]["id"], imeca["id"])
+        self.assertIn("IMECA", article["photo"]["topic"])
+        self.assertLessEqual(len(article["photo"]["topic"]), 150)
 
     def test_animal_speciesism_march_rejects_rain_harvesting_photo(self):
         title = "Marchan en CDMX contra el especismo y la discriminación animal"
