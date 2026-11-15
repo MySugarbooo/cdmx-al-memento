@@ -1517,7 +1517,7 @@ PHOTO_BOROUGH_ALIASES = {
     "benito juarez": ("benito juarez",),
     "coyoacan": ("coyoacan",),
     "cuajimalpa de morelos": ("cuajimalpa de morelos", "cuajimalpa"),
-    "cuauhtemoc": ("cuauhtemoc", "condesa", "parque espana", "colonia roma", "roma norte", "roma sur"),
+    "cuauhtemoc": ("cuauhtemoc", "centro historico", "condesa", "parque espana", "colonia roma", "roma norte", "roma sur"),
     "gustavo a madero": ("gustavo a madero", "gustavo amadero"),
     "iztacalco": ("iztacalco",),
     "iztapalapa": ("iztapalapa",),

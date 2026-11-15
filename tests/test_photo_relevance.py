@@ -3408,6 +3408,26 @@ class CurrentFeedPhotoMismatchRegressionTests(unittest.TestCase):
         )
         self.assertLess(_photo_score(article, alameda), 0)
 
+    def test_los_pozos_housing_story_rejects_centro_historico_house_photo(self):
+        article = self.make_article(
+            "Antorcha mantendrá la lucha para defender las viviendas de Los Pozos, en Tláhuac",
+            "CDMX",
+            "Cúspide México",
+        )
+        article["borough"] = "Tláhuac"
+        centro_historico_house = representative_photo(
+            "commons_164311377",
+            "CDMX",
+            "Casa Centro Histórico de la Ciudad de México 03",
+            ["Centro Histórico Ciudad de México"],
+        )
+        self.assertLess(_photo_score(article, centro_historico_house), 0)
+        with patch.object(
+            photos, "_pool", return_value=[centro_historico_house]
+        ), patch.object(photos, "_load", return_value=[]):
+            assign_photos([article])
+        self.assertNotIn("photo", article)
+
     def test_public_transport_schedule_rejects_unrelated_borough_landmark(self):
         article = self.make_article(
             "¿Cómo operará el transporte público en CDMX este lunes 16 de noviembre?",
