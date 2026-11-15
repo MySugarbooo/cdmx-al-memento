@@ -40,6 +40,8 @@ VERIFIED_SOURCE_LINKS = {
         "https://www.jornada.com.mx/noticia/2026/11/13/politica/aicm-reporta-afectaciones-de-vuelos-hacia-y-desde-estados-unidos-tras-restriccion-a-operaciones-aereas",
     ("La Jornada", "/noticias/?id=3297b71001da632dcb3e&mes=2026-11"):
         "https://www.jornada.com.mx/noticia/2026/11/14/espectaculos/garbage-reune-a-mas-de-90-mil-personas-en-concierto-en-la-ciudad-de-mexico",
+    ("Sociedad Noticias", "/noticias/?id=effab44940f001e64f19&mes=2026-11"):
+        "https://sociedad-noticias.com/2026/11/15/garbage-reune-a-mas-de-90-mil-personas-en-el-zocalo-de-la-cdmx/",
     ("Hoy Tamaulipas", "/noticias/?id=5a9a1f1ebbab943a2f55&mes=2026-11"):
         "https://www.hoytamaulipas.net/notas/607182/El-Mante-presente-en-la-Asamblea-Nacional-de-Seguridad-Publica-Municipal-2025.html",
     ("El Sol de México", "/noticias/?id=6538cbdab54691ebcf27&mes=2026-11"):
