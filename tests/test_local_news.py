@@ -922,6 +922,26 @@ class LocalNewsTests(unittest.TestCase):
         article_html = render(result, article_id(result))
         self.assertIn(CAPITAL_CDMX_CARE_BUDGET_SOURCE_URL, article_html)
 
+    def test_yahoo_garbage_zocalo_uses_direct_source_and_original_attribution(self):
+        source_url = "https://es-us.noticias.yahoo.com/garbage-conquista-90-mil-personas-224733197.html"
+        result = standardize({
+            "title": "Garbage conquista 90 mil personas en el Zócalo de la CDMX",
+            "url": "https://news.google.com/rss/articles/yahoo-garbage-zocalo-20261114?oc=5",
+            "source": "Yahoo",
+            "date": "2026-11-14",
+            "published_at": "2026-11-14T22:47:33Z",
+            "category": "Cultura",
+        })
+        self.assertIsNotNone(result)
+        self.assertEqual(result["source"], "El Universal (vía Yahoo Noticias)")
+        self.assertEqual(result["source_url"], source_url)
+        self.assertIn("El Universal", result["brief"]["lead"])
+        self.assertIn("90 mil personas", result["brief"]["lead"])
+        self.assertIn("Paulina Villarreal", result["brief"]["context"])
+        self.assertIn("Mariachi Fiesta de México", result["brief"]["context"])
+        self.assertIn("no realizó un conteo independiente", result["brief"]["pending"])
+        self.assertIn(source_url, result["brief"]["method"])
+
     def test_sociedad_noticias_garbage_zocalo_uses_direct_source_and_attributed_summary(self):
         source_url = (
             "https://sociedad-noticias.com/2026/11/15/"
