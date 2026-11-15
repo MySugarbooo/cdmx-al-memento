@@ -360,7 +360,7 @@ def category_by_headline(title, feed_category, source=""):
         r"\b(?:abuso sexual|violencia sexual|agresion sexual|acoso sexual|"
         r"abusador(?:es)? sexual(?:es)?|maltratador(?:es)?(?: de animales?)?|"
         r"maltrato animal|crueldad animal|robo|robos|roban|robado|robada|robaron|robar|"
-        r"asalt\w*|extorsion\w*|secuestro|secuestrad[oa]s?|"
+        r"asalt\w*|crimen(?:es)?|complice|extorsion\w*|secuestro|secuestrad[oa]s?|"
         r"privacion(?: ilegal)? de (?:la )?libertad)\b",
         normalized,
     ):
@@ -631,8 +631,14 @@ def category_by_headline(title, feed_category, source=""):
         normalized,
     ):
         return "Medio Ambiente"
-    # Los avisos de lluvia intensa pertenecen a Medio Ambiente, salvo las afectaciones de transporte ya clasificadas arriba.
-    if re.search(r"\b(?:alerta por diluvio|alerta por lluvias?)\b", normalized):
+    # Los avisos meteorológicos, el frío y la calidad del aire pertenecen a Medio Ambiente.
+    if re.search(
+        r"\b(?:alerta por diluvio|alerta por lluvias?|alerta (?:amarilla|naranja) por frio|alerta por frio|frente frio|heladas?|"
+        r"peor oxigeno|calidad del aire|contaminacion (?:del aire|atmosferica)|contaminantes? atmosfericos?)\b",
+        normalized,
+    ):
+        return "Medio Ambiente"
+    if re.search(r"\b(?:especismo|discriminacion animal|derechos de los animales|bienestar animal|proteccion animal)\b", normalized):
         return "Medio Ambiente"
     return feed_category
 

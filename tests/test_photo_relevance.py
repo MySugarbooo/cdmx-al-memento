@@ -3154,5 +3154,107 @@ class CurrentEditorialPhotoRegressionTests(unittest.TestCase):
 
 
 
+class CurrentFeedPhotoMismatchRegressionTests(unittest.TestCase):
+    def make_article(self, title, category, borough="", photo=None):
+        article = {
+            "title": title,
+            "category": category,
+            "borough": borough,
+            "url": "https://news.google.com/rss/articles/current-feed-photo-mismatch-regression",
+        }
+        if photo is not None:
+            article["photo"] = photo
+        return article
+
+    def assert_photo_removed(self, title, category, current):
+        article = self.make_article(title, category, photo=current)
+        self.assertLess(_photo_score(article, current), 0)
+        with patch.object(photos, "_pool", return_value=[current]), patch.object(
+            photos, "_load", return_value=[]
+        ):
+            assign_photos([article])
+        self.assertNotIn("photo", article)
+
+    def test_cold_alert_rejects_rain_operation_photo_and_uses_environment_category(self):
+        title = "Activan Alerta Amarilla por frío en CDMX para este domingo 15 de noviembre; estas son las alcaldías afectadas"
+        self.assertEqual(category_by_headline(title, "CDMX"), "Medio Ambiente")
+        rain_operation = representative_photo(
+            "rain-operation-context",
+            "Medio Ambiente",
+            "Operativo Lluvias CDMX",
+            ["lluvia", "operativo de lluvias"],
+        )
+        self.assert_photo_removed(title, "Medio Ambiente", rain_operation)
+
+    def test_air_quality_report_rejects_unrelated_pharmacy_photo(self):
+        title = "¿En dónde se respira el peor oxígeno en CDMX y zona conurbada? Aquí el reporte"
+        self.assertEqual(category_by_headline(title, "CDMX"), "Medio Ambiente")
+        pharmacy = representative_photo(
+            "pharmacy-context",
+            "CDMX",
+            "Farmacia de barrio en Santa María de la Ribera, Cuauhtémoc, CDMX",
+            ["farmacia", "salud", "Santa María de la Ribera"],
+        )
+        self.assert_photo_removed(title, "Medio Ambiente", pharmacy)
+
+    def test_animal_speciesism_march_rejects_rain_harvesting_photo(self):
+        title = "Marchan en CDMX contra el especismo y la discriminación animal"
+        self.assertEqual(category_by_headline(title, "CDMX"), "Medio Ambiente")
+        rain_harvesting = representative_photo(
+            "rain-harvesting-context",
+            "Medio Ambiente",
+            "Cosecha de Lluvia 02",
+            ["captación de lluvia", "agua"],
+        )
+        self.assert_photo_removed(title, "Medio Ambiente", rain_harvesting)
+
+    def test_tlalpan_crime_replaces_borough_animal_photo_with_generic_patrol(self):
+        title = "Cae presunto cómplice de crimen del exlíder sindical en Tlalpan"
+        self.assertEqual(category_by_headline(title, "CDMX"), "Seguridad")
+        animal_photo = representative_photo(
+            "tlalpan-animals",
+            "Alcaldías",
+            "Animales Bosque de Tlalpan 02",
+            ["Tlalpan Ciudad de México"],
+        )
+        patrol = representative_photo(
+            "generic-cdmx-patrol",
+            "Seguridad",
+            "Patrulla de Ciudad de México",
+            ["policía CDMX", "patrulla", "seguridad"],
+        )
+        article = self.make_article(title, "Seguridad", "Tlalpan", animal_photo)
+        self.assertLess(_photo_score(article, animal_photo), 0)
+        self.assertGreaterEqual(_photo_score(article, patrol), 0)
+        with patch.object(photos, "_pool", return_value=[animal_photo, patrol]), patch.object(
+            photos, "_load", return_value=[]
+        ):
+            assign_photos([article])
+        self.assertEqual(article["photo"]["id"], "generic-cdmx-patrol")
+
+    def test_assault_video_replaces_patrol_handover_photo_with_generic_patrol(self):
+        title = "VIDEO: Lo captan asaltando a un joven en CDMX; también estaría implicado en ataques contra mujeres"
+        handover = representative_photo(
+            "patrol-handover",
+            "Seguridad",
+            "Claudia Sheinbaum entrega patrullas Iztapalapa 02",
+            ["patrullas", "seguridad"],
+        )
+        patrol = representative_photo(
+            "generic-cdmx-patrol",
+            "Seguridad",
+            "Patrulla de Ciudad de México",
+            ["policía CDMX", "patrulla", "seguridad"],
+        )
+        article = self.make_article(title, "Seguridad", photo=handover)
+        self.assertLess(_photo_score(article, handover), 0)
+        self.assertGreaterEqual(_photo_score(article, patrol), 0)
+        with patch.object(photos, "_pool", return_value=[handover, patrol]), patch.object(
+            photos, "_load", return_value=[]
+        ):
+            assign_photos([article])
+        self.assertEqual(article["photo"]["id"], "generic-cdmx-patrol")
+
+
 if __name__ == "__main__":
     unittest.main()

@@ -1375,15 +1375,15 @@ SUBJECT_RULES = (
     (r"\b(?:metrobus|cablebus|trolebus|ecobici|ciclovia)\b", "Movilidad"),
     (r"\b(?:metro|linea \d{1,2}|linea [ab]|tren ligero)\b", "Metro"),
     (r"\b(?:perro|perrito|mascota|gato|animal|fauna|veterinari)\w*\b", "Medio Ambiente"),
-    (r"\b(?:lluvia|tormenta|clima|inundacion|contaminacion|arbol|bosque)\w*\b", "Medio Ambiente"),
+    (r"\b(?:lluvia|tormenta|clima|inundacion|contaminacion|peor oxigeno|calidad del aire|frio|heladas?|temperaturas bajas|arbol|bosque)\w*\b", "Medio Ambiente"),
     (r"\b(?:hospital|clinica|drenaje|bache|basura|abasto|mercado|agua potable)\w*\b", "Servicios"),
     (r"\b(?:catrina|dia de muertos|cempasuchil|concierto|desfile|museo|"
      r"festival|exposicion|teatro|cultura)\w*\b", "Cultura"),
     (r"\b(?:hoy no circula|contingencia ambiental|holograma|verificacion vehicular|"
      r"marcha|bloqueo|trafico|carretera|movilidad|vialidad|"
      r"gran premio|formula 1|autodromo|circuito|automovili)\w*\b", "Movilidad"),
-    (r"\b(?:policia|patrulla|fiscalia|robo|homicidio|detenid|"
-     r"asalto|extorsion|delito|investigacion)\w*\b", "Seguridad"),
+    (r"\b(?:policia|patrulla|fiscalia|robo|crimen|complice|homicidio|detenid|"
+     r"asalto|asalt|extorsion|delito|investigacion)\w*\b", "Seguridad"),
     (r"\b(?:alcalde|gobierno|congreso|presupuesto|secretaria)\w*\b", "Gobierno"),
 )
 STOP_WORDS = {
@@ -2083,12 +2083,12 @@ def _photo_score(article, photo):
         return -10000
     # Una marcha por derechos animales no debe ilustrarse con una protesta de otra causa.
     animal_rights_march_story = bool(
-        re.search(r"\b(?:marcha|manifestacion|protesta)\b", headline)
-        and re.search(r"\b(?:derechos de los animales|bienestar animal|proteccion animal)\b", headline)
+        re.search(r"\b(?:march\w*|manifestacion\w*|protest\w*)\b", headline)
+        and re.search(r"\b(?:derechos de los animales|derechos animales|bienestar animal|proteccion animal|especismo|discriminacion animal)\b", headline)
     )
     animal_rights_march_photo = bool(
-        re.search(r"\b(?:marcha|manifestacion|protesta)\b", context)
-        and re.search(r"\b(?:derechos de los animales|bienestar animal|proteccion animal|animales?)\b", context)
+        re.search(r"\b(?:march\w*|manifestacion\w*|protest\w*)\b", context)
+        and re.search(r"\b(?:derechos de los animales|derechos animales|bienestar animal|proteccion animal|especismo|discriminacion animal|animales?)\b", context)
     )
     if animal_rights_march_story and not animal_rights_march_photo:
         return -10000
@@ -2280,7 +2280,7 @@ def _photo_score(article, photo):
     # En robos, asaltos y extorsiones, la coincidencia de alcaldía no basta:
     # exigir una imagen con contexto de seguridad antes de puntuar el lugar.
     crime_story = bool(re.search(
-        r"\b(?:robo|robos|roban|robado|robada|robaron|robar|decomis\w*|incaut\w*|asalt\w*|ataques? armados?|extorsion|extorsionan|ejecutan|ejecutad\w*|ejecucion|asesina(?:n)?|asesinad\w*|asesinato|homicidio|matan|balazos|balacera|secuestro|secuestrador(?:es)?|secuestrad[oa]s?|privacion de la libertad|delitos?\s+(?:contra|a)\s+(?:empresas?|comercios?|negocios?))\b",
+        r"\b(?:robo|robos|roban|robado|robada|robaron|robar|decomis\w*|incaut\w*|asalt\w*|ataques? armados?|extorsion|extorsionan|ejecutan|ejecutad\w*|ejecucion|asesina(?:n)?|asesinad\w*|asesinato|homicidio|crimen(?:es)?|complice|matan|balazos|balacera|secuestro|secuestrador(?:es)?|secuestrad[oa]s?|privacion de la libertad|delitos?\s+(?:contra|a)\s+(?:empresas?|comercios?|negocios?))\b",
         headline,
     ))
     # "Asegura que" es una declaración, no un aseguramiento policial.
@@ -2307,7 +2307,7 @@ def _photo_score(article, photo):
             and not (meave_goods_story and meave_goods_photo)):
         return -10000
     # Una graduación policial no representa un robo ni un operativo de vigilancia.
-    if (crime_story or police_operation_story) and re.search(r"\bgraduacion\b", topic):
+    if (crime_story or police_operation_story) and re.search(r"\b(?:graduacion|entrega|entregan|ceremonia|acto protocolario)\b", topic):
         return -10000
     # La policía de tránsito y sus automovilistas no ilustran un robo a comercio.
     if crime_story and re.search(
@@ -2418,6 +2418,31 @@ def _photo_score(article, photo):
     ))
     if weather_story and not weather_photo:
         return -10000
+
+    # Una alerta por frío no debe heredar una fotografía de un operativo de lluvias.
+    cold_alert_story = bool(re.search(
+        r"\b(?:alerta (?:amarilla|naranja) por frio|alerta por frio|frente frio|heladas?)\b",
+        headline,
+    ))
+    cold_alert_photo = bool(re.search(
+        r"\b(?:frio|frente frio|heladas?|temperatura|termometro|cobijas?|abrigos?|invierno|neblina)\b",
+        context,
+    ))
+    if cold_alert_story and not cold_alert_photo:
+        return -10000
+
+    # Un reporte de calidad del aire necesita contaminación o monitoreo atmosférico.
+    air_quality_story = bool(re.search(
+        r"\b(?:peor oxigeno|calidad del aire|contaminacion del aire|contaminacion atmosferica|contaminantes? atmosfericos?)\b",
+        headline,
+    ))
+    air_quality_photo = bool(re.search(
+        r"\b(?:calidad del aire|contaminacion|smog|emisiones|estacion(?:es)? de monitoreo|medicion ambiental|monitoreo atmosferico|contaminantes? atmosfericos?)\b",
+        context,
+    ))
+    if air_quality_story and not air_quality_photo:
+        return -10000
+
     animal_story = bool(re.search(
         r"\b(?:jauria|sloopy|lobito|perros?|perritos?|mascotas?|refugio franciscano|refugio de animales|albergue de animales|cacomixtles?)\b",
         headline,
