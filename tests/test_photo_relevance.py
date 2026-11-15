@@ -3899,6 +3899,7 @@ class CurrentFeedPhotoMismatchRegressionTests(unittest.TestCase):
             "category": "Seguridad",
         })
         self.assertIsNotNone(article)
+        article["sensitive_media"] = True  # marca automática heredada de la regla anterior
         self.assertFalse(photos.is_sensitive_media(article))
         self.assertEqual(_photo_category(article), "Medio Ambiente")
         dog_photo = self.photo("contexto_perros_parque_espana")

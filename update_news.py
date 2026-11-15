@@ -62,7 +62,12 @@ def clear_sensitive_context_photos(items):
     """Retira del archivo fotos representativas de titulares sensibles."""
     removed = 0
     for item in items:
-        if not isinstance(item, dict) or not is_sensitive_media(item):
+        if not isinstance(item, dict):
+            continue
+        if is_elsol_animal_abuse_complaints(item) and item.get("editorial_verified") is not True:
+            # Retirar la marca automática heredada: este titular es un reporte estadístico no gráfico.
+            item.pop("sensitive_media", None)
+        if not is_sensitive_media(item):
             continue
         item["sensitive_media"] = True
         photo = item.get("photo")

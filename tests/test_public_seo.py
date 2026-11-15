@@ -304,6 +304,7 @@ class PublicSeoTests(unittest.TestCase):
             "source": "El Sol de México",
             "date": "2026-11-15",
             "local_url": "/noticias/?id=25c1757a6412faa605b8&mes=2026-11",
+            "sensitive_media": True,
             "photo": {
                 "id": "contexto_perros_parque_espana",
                 "kind": "representativa",
@@ -317,6 +318,9 @@ class PublicSeoTests(unittest.TestCase):
         page = render(animal, "25c1757a6412faa605b8")
         self.assertIn('<figure class="article-photo">', page)
         self.assertNotIn("Sin fotografía verificada del hecho", page)
+        animal["editorial_verified"] = True
+        page = render(animal, "25c1757a6412faa605b8")
+        self.assertNotIn('<figure class="article-photo">', page)
 
 if __name__ == "__main__":
     unittest.main()

@@ -355,10 +355,10 @@ def is_vc_fatal_trailer_incident(article):
 
 def is_sensitive_media(article):
     """Impide fotos de contexto en violencia real; admite solo reportajes estadísticos no gráficos."""
+    if article.get("editorial_verified") is not True and is_animal_abuse_statistics_report(article):
+        return False
     if article.get("sensitive_media") is True:
         return True
-    if is_animal_abuse_statistics_report(article):
-        return False
     return (
         bool(SENSITIVE_MEDIA_TITLE.search(str(article.get("title") or "")))
         or is_coyotepec_highway_crash(article)

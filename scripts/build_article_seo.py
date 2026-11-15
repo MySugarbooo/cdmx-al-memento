@@ -91,10 +91,10 @@ def is_animal_abuse_statistics_report(item):
 
 def is_sensitive_media(item):
     """Evita ilustraciones genéricas en incidentes violentos, no en reportajes estadísticos no gráficos."""
+    if item.get("editorial_verified") is not True and is_animal_abuse_statistics_report(item):
+        return False
     if item.get("sensitive_media") is True:
         return True
-    if is_animal_abuse_statistics_report(item):
-        return False
     return bool(SENSITIVE_MEDIA_TITLE.search(str(item.get("title") or "")))
 
 def has_verified_event_photo(photo):

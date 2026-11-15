@@ -4,7 +4,7 @@ import unittest
 from pathlib import Path
 from scripts.notas_locales import assign_photos, local_link, summarize, is_sensitive_media, RADIO_FORMULA_CASA_ECOLOGICA_SOURCE_URL, INFOBAE_MARIA_LEON_CONCERT_SOURCE_URL, AICM_FLIGHT_SUSPENSION_SOURCE_URL, LA_RAZON_GARBAGE_ZOCALO_SOURCE_URL, INFOBAE_GARBAGE_ZOCALO_SOURCE_URL
 from scripts.build_article_seo import article_id, render
-from update_news import category_by_headline, standardize, photo_needs_refresh, CAPITAL_CDMX_CARE_BUDGET_SOURCE_URL, prioritize_photo_refresh, build_homepage_feed, archive_record_key, dedupe_homepage_events
+from update_news import clear_sensitive_context_photos, category_by_headline, standardize, photo_needs_refresh, CAPITAL_CDMX_CARE_BUDGET_SOURCE_URL, prioritize_photo_refresh, build_homepage_feed, archive_record_key, dedupe_homepage_events
 
 ROOT=Path(__file__).resolve().parents[1]
 
@@ -1481,6 +1481,19 @@ class LocalNewsTests(unittest.TestCase):
         self.assertIn("15 colonias", result["brief"]["lead"])
         self.assertIn("no equivale a verificación independiente", result["brief"]["method"])
         self.assertFalse(is_sensitive_media(result))
+
+    def test_animal_statistics_report_clears_legacy_sensitive_flag_without_removing_photo(self):
+        article = {
+            "title": "En CDMX, 15 colonias de 6 alcaldías concentran denuncias por maltrato animal",
+            "source": "El Sol de México",
+            "date": "2026-11-15",
+            "sensitive_media": True,
+            "photo": {"id": "contexto_perros_parque_espana", "kind": "representativa"},
+        }
+        removed = clear_sensitive_context_photos([article])
+        self.assertEqual(removed, 0)
+        self.assertNotIn("sensitive_media", article)
+        self.assertIn("photo", article)
 
     def test_prehospital_pilot_corrects_truncated_title_source_and_direct_link(self):
         article = {
