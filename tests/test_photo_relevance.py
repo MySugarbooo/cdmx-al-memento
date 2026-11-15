@@ -3890,5 +3890,50 @@ class CurrentFeedPhotoMismatchRegressionTests(unittest.TestCase):
         )
         self.assertGreaterEqual(_photo_score(article, school_photo), 0)
 
+    def test_animal_complaints_statistics_uses_non_graphic_representative_dog_photo(self):
+        article = news.standardize({
+            "title": "En CDMX, 15 colonias de 6 alcaldías concentran denuncias por maltrato animal",
+            "url": "https://news.google.com/rss/articles/animal-complaints-photo-20261115",
+            "source": "El Sol de México",
+            "date": "2026-11-15",
+            "category": "Seguridad",
+        })
+        self.assertIsNotNone(article)
+        self.assertFalse(photos.is_sensitive_media(article))
+        self.assertEqual(_photo_category(article), "Medio Ambiente")
+        dog_photo = self.photo("contexto_perros_parque_espana")
+        self.assertIsNotNone(dog_photo)
+        with patch.object(photos, "_pool", return_value=[dog_photo]):
+            assign_photos([article])
+        self.assertEqual(article["photo"]["id"], "contexto_perros_parque_espana")
+        self.assertEqual(article["photo"]["author"], "Raul21940")
+        self.assertEqual(article["photo"]["license"], "CC BY-SA 4.0")
+
+    def test_prehospital_platform_replaces_city_street_photo_with_credited_ambulance(self):
+        article = news.standardize({
+            "title": "CDMX busca modernizar la atención prehospitalaria con plataforma digital de la OPS/OMS; inicia prueba piloto con tres am - La Prensa",
+            "url": "https://news.google.com/rss/articles/prehospital-photo-20261115",
+            "source": "El Sol de México",
+            "date": "2026-11-15",
+            "published_at": "2026-11-15T11:12:50Z",
+            "category": "CDMX",
+            "photo": representative_photo(
+                "commons_83241759", "CDMX", "Calles del Centro Histórico de Ciudad de México", ["calles", "centro histórico"]
+            ),
+        })
+        self.assertIsNotNone(article)
+        self.assertEqual(article["source"], "La Prensa")
+        self.assertEqual(article["category"], "Servicios")
+        ambulance = self.photo("contexto_ambulancia_cruz_verde_cdmx")
+        self.assertIsNotNone(ambulance)
+        self.assertLess(_photo_score(article, article["photo"]), 0)
+        self.assertGreater(_photo_score(article, ambulance), 0)
+        with patch.object(photos, "_pool", return_value=[article["photo"], ambulance]):
+            assign_photos([article])
+        self.assertEqual(article["photo"]["id"], "contexto_ambulancia_cruz_verde_cdmx")
+        self.assertEqual(article["photo"]["author"], "Gobierno de la Ciudad de México")
+        self.assertEqual(article["photo"]["license"], "CC0 1.0")
+        self.assertFalse(news.photo_needs_refresh(article))
+
 if __name__ == "__main__":
     unittest.main()

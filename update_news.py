@@ -42,6 +42,8 @@ HOY_TAMAULIPAS_PATTY_CHIO_SOURCE_URL = "https://www.hoytamaulipas.net/notas/6071
 HOY_TAMAULIPAS_PATTY_CHIO_PUBLISHED_AT = "2025-12-10T19:31:04-06:00"
 HOY_TAMAULIPAS_PATTY_CHIO_ROUTE_MONTH = "2026-11"
 AHORA_NOTICIAS_TLALPAN_PERRITA_SOURCE_URL = "https://ahoranoticias.com.mx/nacional/rescatan-a-perrita-por-presunto-maltrato-animal-en-tlalpan/"
+EL_SOL_ANIMAL_ABUSE_COMPLAINTS_SOURCE_URL = "https://oem.com.mx/elsoldemexico/metropoli/en-cdmx-15-colonias-de-6-alcaldias-concentran-denuncias-por-maltrato-animal-33109336"
+LA_PRENSA_PREHOSPITAL_CARE_SOURCE_URL = "https://oem.com.mx/la-prensa/metropoli/cdmx-busca-modernizar-la-atencion-prehospitalaria-con-plataforma-digital-de-la-ops-oms-inicia-prueba-piloto-con-tres-am-33136134"
 MAIL = "sanchezaxochitl@gmail.com"
 RETENTION_DAYS = 365
 
@@ -356,6 +358,26 @@ def published_datetime(value):
         return None
 
 
+def is_elsol_animal_abuse_complaints(article):
+    title = fold(article.get("title"))
+    return (
+        str(article.get("date") or "")[:10] == "2026-11-15"
+        and fold(article.get("source")) == "el sol de mexico"
+        and "15 colonias de 6 alcaldias concentran denuncias por maltrato animal" in title
+    )
+
+
+def is_la_prensa_prehospital_care(article):
+    title = fold(article.get("title"))
+    return (
+        str(article.get("date") or "")[:10] == "2026-11-15"
+        and "atencion prehospitalaria" in title
+        and "ops oms" in title
+        and "prueba piloto" in title
+        and ("tres am" in title or "tres ambulancias" in title)
+    )
+
+
 def category_by_headline(title, feed_category, source=""):
     """Corrige etiquetas RSS evidentes sin inventar ubicaciones o hechos."""
     normalized = fold(title)
@@ -368,6 +390,10 @@ def category_by_headline(title, feed_category, source=""):
         return "Gobierno"
     if re.search(r"\b(?:bolsas? plasticas?|residuos? plasticos?)\b", normalized):
         return "Medio Ambiente"
+    if re.search(r"\b15 colonias de 6 alcaldias concentran denuncias por maltrato animal\b", normalized):
+        return "Medio Ambiente"
+    if re.search(r"\b(?:atencion prehospitalaria|sismedi911)\b", normalized):
+        return "Servicios"
     # Delitos y detenciones no deben heredar una categoría de Metro o CDMX
     # por el feed RSS: robos, secuestros y maltrato animal son Seguridad.
     if re.search(
@@ -719,6 +745,9 @@ def standardize(article):
         # La fuente original identifica el 10 de diciembre de 2025 como fecha real.
         published = datetime.fromisoformat(HOY_TAMAULIPAS_PATTY_CHIO_PUBLISHED_AT).astimezone(timezone.utc)
         date = published.astimezone(MX).date().isoformat()
+    if is_la_prensa_prehospital_care({"title": title, "date": date}):
+        title = "CDMX busca modernizar la atención prehospitalaria con plataforma digital de la OPS/OMS; inicia prueba piloto con tres ambulancias"
+        source = "La Prensa"
     if not title or not valid_link(url, curated) or not DAY_RE.fullmatch(date):
         return None
     try:
@@ -821,6 +850,10 @@ def standardize(article):
     if is_hoy_tamaulipas_paty_chio_assembly(result):
         # Mantener el mes de la ruta original para no romper enlaces ni comentarios existentes.
         result["local_url"] = local_link({**result, "date": HOY_TAMAULIPAS_PATTY_CHIO_ROUTE_MONTH + "-13"})
+    if is_la_prensa_prehospital_care(result):
+        result["source_url"] = LA_PRENSA_PREHOSPITAL_CARE_SOURCE_URL
+    elif is_elsol_animal_abuse_complaints(result):
+        result["source_url"] = EL_SOL_ANIMAL_ABUSE_COMPLAINTS_SOURCE_URL
     if is_diario_basta_alvaro_obregon_water_shortage(result):
         result["source_url"] = DIARIO_BASTA_ALVARO_OBREGON_WATER_SOURCE_URL
     elif is_yahoo_garbage_zocalo(result):

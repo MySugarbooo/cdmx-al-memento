@@ -354,10 +354,13 @@ def is_vc_fatal_trailer_incident(article):
 
 
 def is_sensitive_media(article):
-    """Impide fotos de contexto en noticias sensibles o accidentes graves sin imagen verificada."""
+    """Impide fotos de contexto en violencia real; admite solo reportajes estadísticos no gráficos."""
+    if article.get("sensitive_media") is True:
+        return True
+    if is_animal_abuse_statistics_report(article):
+        return False
     return (
-        article.get("sensitive_media") is True
-        or bool(SENSITIVE_MEDIA_TITLE.search(str(article.get("title") or "")))
+        bool(SENSITIVE_MEDIA_TITLE.search(str(article.get("title") or "")))
         or is_coyotepec_highway_crash(article)
         or is_san_juan_del_rio_autopista57_closure(article)
         or is_vc_fatal_trailer_incident(article)
@@ -750,6 +753,47 @@ def summarize(article):
     category=str(article.get("category") or "CDMX")
     theme=TAGS.get(category,TAGS["CDMX"])
     folded_title=_photo_fold(title)
+    if is_animal_abuse_statistics_report(article):
+        return {
+            "lead": (
+                "El Sol de México reporta que 15 colonias distribuidas en seis alcaldías concentran denuncias "
+                "por maltrato animal. La nota señala que los reportes incluyen abandono, negligencia, golpes "
+                "y muerte, pero que pocos casos llegan a judicializarse ante la Fiscalía General de Justicia "
+                "de la Ciudad de México."
+            ),
+            "context": (
+                "El dato describe denuncias, no sentencias ni responsabilidades individuales. El titular no "
+                "identifica por sí solo cuáles son las 15 colonias ni las seis alcaldías."
+            ),
+            "pending": (
+                "Falta confirmar el periodo de registro, los nombres de las colonias, el desglose por alcaldía "
+                "y el número de casos judicializados mediante datos de la FGJCDMX."
+            ),
+            "method": (
+                "Síntesis editorial propia basada en el titular y el extracto publicado por El Sol de México "
+                "el 15 de noviembre de 2026; no equivale a verificación independiente."
+            ),
+        }
+    if is_la_prensa_prehospital_care(article):
+        return {
+            "lead": (
+                "La Prensa informó que la Secretaría de Salud Pública de la Ciudad de México iniciará una "
+                "prueba piloto del sistema SISMEDI911, una plataforma para digitalizar el registro, seguimiento "
+                "y análisis de emergencias médicas en tiempo real. El piloto anunciado contempla tres ambulancias."
+            ),
+            "context": (
+                "El medio presenta el proyecto como una herramienta vinculada con la OPS/OMS. Se trata de una "
+                "prueba inicial y no de evidencia de que el sistema ya opere en toda la ciudad."
+            ),
+            "pending": (
+                "Falta confirmar cuándo comienza el piloto, en qué unidades y zonas operará y qué resultados "
+                "tendrá; no se agregan hospitales ni cobertura que el extracto no precisa."
+            ),
+            "method": (
+                "Síntesis editorial basada en el encabezado y el extracto de La Prensa, firmado por Genoveva "
+                "Ortiz y publicado el 15 de noviembre de 2026; no equivale a verificación independiente."
+            ),
+        }
     if is_infobae_garbage_zocalo(article):
         return {
             "lead": (
@@ -1789,6 +1833,26 @@ def _photo_fold(text):
     text="".join(char for char in text if not unicodedata.combining(char))
     return " ".join(re.findall(r"[a-z0-9]+",text))
 
+def is_animal_abuse_statistics_report(article):
+    title = _photo_fold(article.get("title"))
+    return (
+        str(article.get("date") or "")[:10] == "2026-11-15"
+        and _photo_fold(article.get("source")) == "el sol de mexico"
+        and "15 colonias de 6 alcaldias concentran denuncias por maltrato animal" in title
+    )
+
+
+def is_la_prensa_prehospital_care(article):
+    title = _photo_fold(article.get("title"))
+    return (
+        str(article.get("date") or "")[:10] == "2026-11-15"
+        and _photo_fold(article.get("source")) == "la prensa"
+        and "atencion prehospitalaria" in title
+        and "ops oms" in title
+        and "prueba piloto" in title
+        and "tres ambulancias" in title
+    )
+
 # Ubicaciones inequívocas dentro de las alcaldías. Si una foto declara otra
 # demarcación, no debe ilustrar una noticia localizada en una distinta.
 PHOTO_BOROUGH_ALIASES = {
@@ -1813,6 +1877,10 @@ PHOTO_BOROUGH_ALIASES = {
 
 def _photo_category(article):
     headline=_photo_fold(article.get("title"))
+    if is_animal_abuse_statistics_report(article):
+        return "Medio Ambiente"
+    if is_la_prensa_prehospital_care(article):
+        return "Servicios"
     # "Poner en marcha" un programa no describe una marcha o protesta vial.
     headline=re.sub(r"\b(?:pone|ponen|puso|poner|puesta|entra|entro|entrara)\s+en\s+marcha\b",
                     "activa", headline)
@@ -2325,6 +2393,10 @@ def _photo_score(article, photo):
     topic=re.sub(r"\bno\b[^;.)]*", "", topic)
     keywords=_photo_fold(" ".join(str(x) for x in photo.get("keywords",[])))
     context=topic+" "+keywords
+    if is_animal_abuse_statistics_report(article):
+        return 5000 if photo.get("id") == "contexto_perros_parque_espana" else -10000
+    if is_la_prensa_prehospital_care(article):
+        return 5000 if photo.get("id") == "contexto_ambulancia_cruz_verde_cdmx" else -10000
     atole_story = bool(re.search(r"\b(?:feria del atole|atole)\b", headline))
     atole_photo = bool(re.search(r"\b(?:atole|atol)\b", context))
     if atole_story:
