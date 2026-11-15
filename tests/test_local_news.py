@@ -944,6 +944,27 @@ class LocalNewsTests(unittest.TestCase):
         self.assertIn(source_url, result["brief"]["method"])
         # La ficha SEO verifica el enlace directo con el identificador público exacto.
 
+    def test_sin_embargo_garbage_summary_uses_headline_limits_and_cuauhtemoc_location(self):
+        article = {
+            "title": "Garbage prende el Zócalo de la CdMx; mantienen cierres viales en el Centro Histórico",
+            "url": "https://news.google.com/rss/articles/sin-embargo-garbage-zocalo-20261114?oc=5",
+            "source": "Sin Embargo",
+            "date": "2026-11-14",
+            "published_at": "2026-11-15T00:00:00Z",
+            "category": "Cultura",
+        }
+        result = standardize(article)
+        self.assertIsNotNone(result)
+        self.assertEqual(result["borough"], "Cuauhtémoc")
+        self.assertEqual(
+            result["location"],
+            "Zócalo (Plaza de la Constitución), alcaldía Cuauhtémoc, Ciudad de México",
+        )
+        self.assertIn("SinEmbargo", result["brief"]["lead"])
+        self.assertIn("cierres viales", result["brief"]["lead"])
+        self.assertIn("no se verificó de forma independiente", result["brief"]["pending"])
+        self.assertIn("RSS de Google News", result["brief"]["method"])
+
     def test_priority_photo_refresh_selects_confirmed_mismatches_before_newer_items(self):
         items = [
             {
