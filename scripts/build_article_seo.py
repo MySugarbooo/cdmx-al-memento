@@ -44,6 +44,8 @@ VERIFIED_SOURCE_LINKS = {
         "https://oem.com.mx/elsoldemexico/metropoli/ofrecen-taller-gratuito-de-manejo-defensivo-y-preventivo-para-mujeres-en-cdmx-33130686",
     ("24-horas", "/noticias/?id=f321caba525de71a5543&mes=2026-11"):
         "https://24-horas.mx/cdmx/registro-emplacamiento-vemepe-vep-cdmx-costos-requisitos/",
+    ("IMER Noticias", "/noticias/?id=cad284585f539df643d2&mes=2026-11"):
+        "https://noticias.imer.mx/blog/activistas-y-defensores-de-animales-marcharon-para-exigir-el-fin-de-la-explotacion-animal-y-promover-el-veganismo-en-cdmx/",
 }
 SENSITIVE_MEDIA_TITLE = re.compile(
     r"\b(?:violaci[oó]n|abuso sexual|agresi[oó]n sexual|acoso sexual|violencia sexual|"
