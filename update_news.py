@@ -1535,12 +1535,10 @@ def build_homepage_feed(candidates):
     used_photos = set()
     for article in candidates:
         photo = article.get("photo")
-        title_sensitive = bool(
-            SENSITIVE_MEDIA_TITLE.search(str(article.get("title") or ""))
-        )
+        sensitive = is_sensitive_media(article)
         if not isinstance(photo, dict):
             article.pop("photo", None)
-            if title_sensitive:
+            if sensitive:
                 visible.append(article)
             continue
         photo_url = str(photo.get("url") or "")
@@ -1550,16 +1548,15 @@ def build_homepage_feed(candidates):
             and bool(photo.get("evidence_url"))
         )
         contextual = photo.get("kind") == "representativa"
-        # Solo los titulares sensibles identificados por tema permanecen en
-        # portada sin foto; el flag editorial también se usa para otros casos
-        # que deben quedarse exclusivamente en la hemeroteca.
-        if title_sensitive and not documented:
+        # La misma política editorial se aplica al feed, a la portada y a las fichas:
+        # los reportajes estadísticos no gráficos conservan su foto contextual acreditada.
+        if sensitive and not documented:
             article.pop("photo", None)
             visible.append(article)
             continue
         if contextual and _photo_score(article, photo) < 0:
             article.pop("photo", None)
-            if title_sensitive:
+            if sensitive:
                 visible.append(article)
             continue
         trusted_url = (
@@ -1578,7 +1575,7 @@ def build_homepage_feed(candidates):
         )
         if not valid_photo:
             article.pop("photo", None)
-            if title_sensitive:
+            if sensitive:
                 visible.append(article)
             continue
         visible.append(article)
