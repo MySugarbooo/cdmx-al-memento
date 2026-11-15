@@ -83,6 +83,7 @@ EL_SOL_MEXICO_QUERETARO_TRAILER_SOURCE_URL = "https://oem.com.mx/elsoldetoluca/l
 IMER_ANIMAL_RIGHTS_MARCH_SOURCE_URL = "https://noticias.imer.mx/blog/activistas-y-defensores-de-animales-marcharon-para-exigir-el-fin-de-la-explotacion-animal-y-promover-el-veganismo-en-cdmx/"
 LA_JORNADA_GARBAGE_ZOCALO_SOURCE_URL = "https://www.jornada.com.mx/noticia/2026/11/14/espectaculos/garbage-reune-a-mas-de-90-mil-personas-en-concierto-en-la-ciudad-de-mexico"
 SOCIEDAD_NOTICIAS_GARBAGE_ZOCALO_SOURCE_URL = "https://sociedad-noticias.com/2026/11/15/garbage-reune-a-mas-de-90-mil-personas-en-el-zocalo-de-la-cdmx/"
+LA_RAZON_GARBAGE_ZOCALO_SOURCE_URL = "https://www.razon.com.mx/ciudad/2026/11/15/asisten-mas-de-90-mil-personas-a-concierto-de-garbage-en-el-zocalo-de-la-cdmx/"
 
 
 def is_radio_formula_casa_ecologica(article):
@@ -733,22 +734,25 @@ def summarize(article):
     if is_la_razon_garbage_zocalo(article):
         return {
             "lead": (
-                "La Razón de México publicó un titular que atribuye más de 90 mil asistentes al concierto de Garbage "
-                "en el Zócalo de la Ciudad de México. La cifra se reproduce como afirmación del encabezado, no como "
-                "conteo verificado por CDMX AL MEMENTO."
+                "La Razón de México reportó que más de 90 mil personas asistieron al concierto gratuito de Garbage "
+                "en el Zócalo de la Ciudad de México el sábado 14 de noviembre de 2026. La cifra se atribuye al medio; "
+                "CDMX AL MEMENTO no realizó un conteo independiente."
             ),
             "context": (
-                "El registro RSS identifica a Garbage y al Zócalo como tema de la cobertura; no aporta detalles "
-                "suficientes para describir el desarrollo del concierto."
+                "Según la nota, la presentación comenzó a las 20:00 con «There’s No Future in Optimism». "
+                "Paulina Villarreal, integrante de The Warning, acompañó a la banda en «I Think I’m Paranoid»; "
+                "el cierre incluyó «The World Is Not Enough» junto al Mariachi Fiesta de México."
             ),
             "pending": (
-                "No se recuperó el texto íntegro ni una URL directa verificable de La Razón. La asistencia y cualquier "
-                "otro detalle requieren consulta de la publicación original; CDMX AL MEMENTO no hizo un conteo independiente."
+                "La asistencia, el horario y los detalles del repertorio se atribuyen a La Razón; no se verificaron "
+                "de forma independiente en el lugar. La nota no describe un método de conteo de asistentes."
             ),
             "method": (
-                "Síntesis limitada al titular y metadatos del RSS de Google News atribuido a La Razón de México; "
-                "no equivale a lectura del artículo íntegro. Se conserva el enlace RSS disponible porque no se verificó "
-                "una URL directa."
+                "Síntesis editorial basada en la publicación de La Razón de México del 15 de noviembre de 2026: "
+                + LA_RAZON_GARBAGE_ZOCALO_SOURCE_URL
+                + ". La cifra y los detalles del concierto se atribuyen al medio. La Plaza de la Constitución se "
+                "identifica en la alcaldía Cuauhtémoc conforme a la ficha de SEDEMA: "
+                "https://www.proyectos.sedema.cdmx.gob.mx/datos/areas-verdes-detalle/4648."
             ),
         }
     if is_la_jornada_garbage_zocalo(article):
