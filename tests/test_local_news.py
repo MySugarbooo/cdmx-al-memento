@@ -1436,6 +1436,7 @@ class LocalNewsTests(unittest.TestCase):
             ("Garbage llega al Zócalo de CDMX: Shirley Manson agradece al público mexicano", "Gobierno", "Cultura"),
             ("Mercados de CDMX recibirán un millón de pesos para mejorar sus instalaciones", "Seguridad", "Gobierno"),
             ("Prepárate para 4 Marchas que Colapsarán Tráfico en CDMX: A Esta Hora Inician y Puntos de Partida", "Seguridad", "Movilidad"),
+            ("SSC prevé diversas movilizaciones en CDMX este domingo; advierten posibles afectaciones viales", "Cultura", "Movilidad"),
             ("Buen Fin 2026: C5 vigilará plazas y centros comerciales de CDMX con mil 296 cámaras", "CDMX", "Seguridad"),
         )
         for title, feed_category, expected in cases:
