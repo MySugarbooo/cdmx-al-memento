@@ -78,7 +78,6 @@ LA_JORNADA_CASA_ECOLOGICA_SOURCE_URL = "https://www.jornada.com.mx/noticia/2026/
 CAPITAL_CDMX_CARE_BUDGET_SOURCE_URL = "https://capital-cdmx.org/presupuesto-cuidados-2027-cdmx-cuanto-dinero-llegara-anexo-31-desglose/"
 EL_SOL_MUJERES_DEFENSIVE_DRIVING_SOURCE_URL = "https://oem.com.mx/elsoldemexico/metropoli/ofrecen-taller-gratuito-de-manejo-defensivo-y-preventivo-para-mujeres-en-cdmx-33130686"
 HORAS_24_ELECTRIC_MOBILITY_SOURCE_URL = "https://24-horas.mx/cdmx/registro-emplacamiento-vemepe-vep-cdmx-costos-requisitos/"
-AMBITO_VITE_BALU_SOURCE_URL = "https://www.ambito.com/mexico/informacion-general/capturan-el-vite-y-el-balu-el-centro-la-cdmx-15-kilos-marihuana-y-mas-600-dosis-cocaina-n6345332"
 INFOBAE_VITE_BALU_SOURCE_URL = "https://www.infobae.com/mexico/2026/11/14/capturan-al-vite-y-al-balu-en-el-centro-de-cdmx-con-15-kilos-de-marihuana-y-mas-de-600-dosis-de-cocaina/"
 
 
@@ -106,19 +105,6 @@ def is_capital_cdmx_care_budget(article):
         str(article.get("date") or "") == "2026-11-12"
         and source == "capital cdmx"
         and "presupuesto de cuidados 2027" in title
-    )
-
-
-def is_ambito_vite_balu_story(article):
-    """Identifica la cobertura de Ámbito sobre El Vite y El Balú del 14/11/2026."""
-    title = _photo_fold(article.get("title"))
-    source = _photo_fold(article.get("source"))
-    return (
-        str(article.get("date") or "") == "2026-11-14"
-        and source == "ambito"
-        and "capturan" in title
-        and "vite" in title
-        and "balu" in title
     )
 
 
@@ -670,32 +656,6 @@ def summarize(article):
                 "Los datos se atribuyen a esa cobertura; no se consultó el expediente judicial."
             ),
         }
-    if is_ambito_vite_balu_story(article):
-        return {
-            "lead": (
-                "Ámbito informó que la SSC detuvo a dos presuntos distribuidores conocidos como "
-                "“El Vite” y “El Balú” en la colonia Centro de Cuauhtémoc. El medio reportó el "
-                "aseguramiento de 15 kilos de marihuana y más de 600 dosis de cocaína; señaló que "
-                "los detenidos quedaron a disposición del Ministerio Público."
-            ),
-            "context": (
-                "Infobae publicó una cobertura sobre los mismos alias y el aseguramiento de 15 kilos "
-                "de marihuana, pero sitúa el operativo en Venustiano Carranza y reporta tres detenidos "
-                "y 655 dosis. Ámbito reporta dos detenidos y más de 600 dosis en Cuauhtémoc. Se "
-                "conservan ambas versiones atribuidas a sus medios sin combinar cifras ni ubicaciones."
-            ),
-            "pending": (
-                "Infobae atribuye su versión a información de la SSC, pero no se consultó el parte "
-                "primario para conciliar la discrepancia con Ámbito. El Ministerio Público determinará "
-                "la situación jurídica; no se presume culpabilidad."
-            ),
-            "method": (
-                "Síntesis basada en la publicación de Ámbito del 14 de noviembre de 2026: "
-                + AMBITO_VITE_BALU_SOURCE_URL
-                + ". Se contrastó con Infobae: " + INFOBAE_VITE_BALU_SOURCE_URL
-                + ". Las diferencias se atribuyen a cada medio y no constituyen verificación independiente."
-            ),
-        }
     if is_infobae_vite_balu_story(article):
         return {
             "lead": (
@@ -706,9 +666,8 @@ def summarize(article):
             ),
             "context": (
                 "Infobae identifica a dos detenidos por los alias “Vite” y “Balú”, además de un tercer "
-                "hombre identificado como Ramón “N”. La cobertura de Ámbito sobre los mismos alias "
-                "reporta dos detenidos y ubica el operativo en Cuauhtémoc. Las versiones discrepan en "
-                "alcaldía, número de personas y cantidad exacta de dosis."
+                "hombre identificado como Ramón “N”. La nota atribuye a la SSC el operativo y el "
+                "aseguramiento; esta síntesis no sustituye el parte oficial ni determina la situación jurídica."
             ),
             "pending": (
                 "La situación jurídica de las personas detenidas corresponde al Ministerio Público. "
@@ -717,8 +676,7 @@ def summarize(article):
             "method": (
                 "Síntesis editorial basada en la publicación de Infobae del 14 de noviembre de 2026: "
                 + INFOBAE_VITE_BALU_SOURCE_URL
-                + ". Se contrastó con la cobertura de Ámbito: " + AMBITO_VITE_BALU_SOURCE_URL
-                + ". Las versiones se mantienen separadas por sus discrepancias."
+                + ". No equivale a una verificación independiente ni sustituye el parte oficial."
             ),
         }
     if is_24horas_electric_mobility_plates_guide(article):
