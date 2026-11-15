@@ -79,6 +79,7 @@ CAPITAL_CDMX_CARE_BUDGET_SOURCE_URL = "https://capital-cdmx.org/presupuesto-cuid
 EL_SOL_MUJERES_DEFENSIVE_DRIVING_SOURCE_URL = "https://oem.com.mx/elsoldemexico/metropoli/ofrecen-taller-gratuito-de-manejo-defensivo-y-preventivo-para-mujeres-en-cdmx-33130686"
 HORAS_24_ELECTRIC_MOBILITY_SOURCE_URL = "https://24-horas.mx/cdmx/registro-emplacamiento-vemepe-vep-cdmx-costos-requisitos/"
 INFOBAE_VITE_BALU_SOURCE_URL = "https://www.infobae.com/mexico/2026/11/14/capturan-al-vite-y-al-balu-en-el-centro-de-cdmx-con-15-kilos-de-marihuana-y-mas-de-600-dosis-de-cocaina/"
+EL_SOL_MEXICO_QUERETARO_TRAILER_SOURCE_URL = "https://oem.com.mx/elsoldetoluca/local/vuelca-trailer-en-la-mexico-queretaro-y-cierran-la-autopista-rumbo-a-cdmx-33138834"
 
 
 def is_radio_formula_casa_ecologica(article):
@@ -624,6 +625,19 @@ def is_codigoqro_ignacio_detention(article):
     )
 
 
+def is_elsol_mexico_queretaro_trailer_rollover(article):
+    """Identifica la volcadura reportada en el km 55 el 14/11/2026."""
+    title = _photo_fold(article.get("title"))
+    source = _photo_fold(article.get("source"))
+    return (
+        source in {"el sol de mexico", "el sol de toluca"}
+        and str(article.get("date") or "") == "2026-11-14"
+        and "vuelca trailer" in title
+        and "mexico queretaro" in title
+        and "autopista" in title
+    )
+
+
 def summarize(article):
     title=str(article.get("title") or "").strip()
     source=str(article.get("source") or "un medio periodístico").strip()
@@ -654,6 +668,31 @@ def summarize(article):
                 "con El Queretano, publicado el 14 de noviembre de 2026: "
                 "https://elqueretano.info/subterraneo/detienen-en-queretaro-a-hombre-acusado-de-abuso-sexual-en-cdmx/. "
                 "Los datos se atribuyen a esa cobertura; no se consultó el expediente judicial."
+            ),
+        }
+    if is_elsol_mexico_queretaro_trailer_rollover(article):
+        return {
+            "lead": (
+                "El fragmento indexado de El Sol de México señala que un tráiler volcó en el kilómetro 55 "
+                "de la autopista México-Querétaro, con dirección a la Ciudad de México, y que el paso "
+                "vehicular quedó suspendido por completo."
+            ),
+            "context": (
+                "La referencia a Ciudad de México indica el sentido de circulación; el titular no sitúa "
+                "el accidente dentro de una alcaldía de la capital. El municipio exacto no se confirma "
+                "en el fragmento disponible."
+            ),
+            "pending": (
+                "El cuerpo del artículo no pudo recuperarse en esta revisión. No se confirmó el municipio "
+                "exacto, el saldo de personas lesionadas, la causa de la volcadura ni la hora de reapertura. "
+                "Consulta los avisos de CAPUFE antes de circular."
+            ),
+            "method": (
+                "Síntesis basada en el titular y el fragmento indexado del medio rotulado en RSS como "
+                "El Sol de México, con enlace a la edición El Sol de Toluca: "
+                + EL_SOL_MEXICO_QUERETARO_TRAILER_SOURCE_URL
+                + ". El cuerpo original devolvió HTTP 403 durante la consulta; no se añadieron datos "
+                "que no aparezcan en el fragmento."
             ),
         }
     if is_infobae_vite_balu_story(article):
@@ -2032,6 +2071,9 @@ def _photo_score(article, photo):
     # no aporta contexto vial. La foto se rotula como representativa, no del ataque.
     if is_jose_cardenas_rocazos(article):
         return 5000 if photo.get("id") == "contexto_periferico_sur_2015" else -10000
+    # La nota del km 55 exige una imagen de la misma autopista; Periférico Sur no es ese tramo.
+    if is_elsol_mexico_queretaro_trailer_rollover(article):
+        return 5000 if photo.get("id") == "contexto_autopista_mexico_queretaro_2008" else -10000
     # Una noticia sobre repartidores exige una imagen de repartidores o mensajeros;
     # una protesta distinta no es contexto suficiente.
     delivery_story = bool(re.search(

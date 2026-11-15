@@ -3463,5 +3463,53 @@ class CurrentFeedPhotoMismatchRegressionTests(unittest.TestCase):
         self.assertIn("no corresponde a las movilizaciones del 14/11/2026", march["topic"])
         self.assertIn("no corresponde a las movilizaciones del 14/11/2026", cacerolazo["topic"])
 
+    def test_elsol_mexico_queretaro_trailer_rollover_corrects_location_and_summary(self):
+        article = news.standardize({
+            "title": "Vuelca tráiler en la México-Querétaro y cierran la autopista rumbo a CDMX",
+            "url": "https://news.google.com/rss/articles/highway-55-editorial-regression",
+            "source": "El Sol de México",
+            "date": "2026-11-14",
+            "category": "Movilidad",
+        })
+        self.assertIsNotNone(article)
+        self.assertEqual(article["category"], "Movilidad")
+        self.assertEqual(article["borough"], "")
+        self.assertEqual(
+            article["location"],
+            "Autopista México-Querétaro, km 55, dirección a Ciudad de México (municipio no confirmado)",
+        )
+        self.assertEqual(
+            article["source_url"],
+            photos.EL_SOL_MEXICO_QUERETARO_TRAILER_SOURCE_URL,
+        )
+        self.assertIn("kilómetro 55", article["brief"]["lead"].casefold())
+        self.assertIn("municipio exacto", article["brief"]["pending"].casefold())
+        self.assertIn("http 403", article["brief"]["method"].casefold())
+        self.assertNotIn("en la capital", article["brief"]["lead"].casefold())
+
+    def test_mexico_queretaro_trailer_rollover_rejects_periferico_sur_photo(self):
+        article = news.standardize({
+            "title": "Vuelca tráiler en la México-Querétaro y cierran la autopista rumbo a CDMX",
+            "url": "https://news.google.com/rss/articles/highway-55-photo-regression",
+            "source": "El Sol de México",
+            "date": "2026-11-14",
+            "category": "Movilidad",
+        })
+        old_photo = self.photo("contexto_periferico_sur_2015")
+        highway_photo = self.photo("contexto_autopista_mexico_queretaro_2008")
+        self.assertIsNotNone(old_photo)
+        self.assertIsNotNone(highway_photo)
+        self.assertLess(photos._photo_score(article, old_photo), 0)
+        self.assertEqual(photos._photo_score(article, highway_photo), 5000)
+        article["photo"] = old_photo
+        with patch.object(photos, "_pool", return_value=[old_photo, highway_photo]), patch.object(
+            photos, "_load", return_value=[]
+        ):
+            photos.assign_photos([article])
+        self.assertEqual(article["photo"]["id"], "contexto_autopista_mexico_queretaro_2008")
+        self.assertEqual(article["photo"]["author"], "Sir hooky71")
+        self.assertEqual(article["photo"]["license"], "CC BY-SA 4.0")
+
+
 if __name__ == "__main__":
     unittest.main()
