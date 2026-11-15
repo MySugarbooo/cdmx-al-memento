@@ -12,7 +12,10 @@ import re
 import time
 import xml.etree.ElementTree as ET
 
-from build_article_seo import has_verified_event_photo, is_sensitive_media
+if __package__:
+    from .build_article_seo import has_verified_event_photo, is_sensitive_media
+else:  # Executed directly by the public deployment checker.
+    from build_article_seo import has_verified_event_photo, is_sensitive_media
 
 ROOT = Path(__file__).resolve().parents[1]
 BASE = "https://cdmx-al-memento.pages.dev"
