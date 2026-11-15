@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-15 08:05 UTC",
+  "updated": "2026-11-15 08:13 UTC",
   "boroughs": [
     {
       "name": "La Magdalena Contreras",
@@ -1241,12 +1241,6 @@
           "location": "Tlacoyaque, Barrio Tlacoyaque, Ampliación Tlacoyaque y La Angostura, alcaldía Álvaro Obregón, Ciudad de México (según Diario Basta!)",
           "local_url": "/noticias/?id=5e245da46ff05c81c3ce&mes=2026-11",
           "source_url": "https://diariobasta.com/2026/11/14/carecen-de-agua-en-alvaro-obregon/",
-          "brief": {
-            "lead": "Diario Basta! reportó que, del 1 de enero al 9 de noviembre de 2026, cuatro colonias de Álvaro Obregón acumularon 36 reportes ciudadanos por falta de agua: 20 en Barrio Tlacoyaque, 11 en Ampliación Tlacoyaque y cinco en Tlacoyaque; La Angostura no registró folios en ese periodo. El medio atribuye las cifras a Locatel.",
-            "context": "La nota señala que las cuatro colonias reciben agua mediante tandeo —suministro intermitente por turnos— y que su ubicación en zonas altas reduce la presión. Los 36 registros son reportes ciudadanos, no 36 cortes verificados de forma independiente.",
-            "pending": "El artículo no ofrece un calendario vigente de tandeo ni la duración de cada interrupción. Para horarios o avisos actuales, consulta a SACMEX y a la alcaldía Álvaro Obregón.",
-            "method": "Síntesis de la publicación original de Diario Basta!, del 14 de noviembre de 2026: https://diariobasta.com/2026/11/14/carecen-de-agua-en-alvaro-obregon/ Las cifras se atribuyen a Locatel y a la Jefatura de Unidad Departamental de Agua Potable de la alcaldía; no constituyen verificación independiente."
-          },
           "alternate_versions": [
             {
               "title": "Carecen de agua en Álvaro Obregón",
@@ -1282,7 +1276,13 @@
                 "source": "https://commons.wikimedia.org/wiki/File:Camell%C3%B3n_y_estatua_en_%C3%81lvaro_Obreg%C3%B3n,_Ciudad_de_M%C3%A9xico.jpg"
               }
             }
-          ]
+          ],
+          "brief": {
+            "lead": "Diario Basta! reportó que, del 1 de enero al 9 de noviembre de 2026, cuatro colonias de Álvaro Obregón acumularon 36 reportes ciudadanos por falta de agua: 20 en Barrio Tlacoyaque, 11 en Ampliación Tlacoyaque y cinco en Tlacoyaque; La Angostura no registró folios en ese periodo. El medio atribuye las cifras a Locatel.",
+            "context": "La nota señala que las cuatro colonias reciben agua mediante tandeo —suministro intermitente por turnos— y que su ubicación en zonas altas reduce la presión. Los 36 registros son reportes ciudadanos, no 36 cortes verificados de forma independiente.",
+            "pending": "El artículo no ofrece un calendario vigente de tandeo ni la duración de cada interrupción. Para horarios o avisos actuales, consulta a SACMEX y a la alcaldía Álvaro Obregón.",
+            "method": "Síntesis de la publicación original de Diario Basta!, del 14 de noviembre de 2026: https://diariobasta.com/2026/11/14/carecen-de-agua-en-alvaro-obregon/ Las cifras se atribuyen a Locatel y a la Jefatura de Unidad Departamental de Agua Potable de la alcaldía; no constituyen verificación independiente."
+          }
         },
         {
           "title": "Casa Ecológica busca reducir gastos familiares y consumo de gas en Álvaro Obregón",
@@ -7590,7 +7590,7 @@
         },
         {
           "title": "Garbage prende el Zócalo de la CdMx; mantienen cierres viales en el Centro Histórico",
-          "description": "De acuerdo con Sin Embargo, el titular publicado es: «Garbage prende el Zócalo de la CdMx; mantienen cierres viales en el Centro Histórico». La información publicada por Sin Embargo aborda un asunto que este portal clasifica como Cultura. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "description": "SinEmbargo tituló su cobertura sobre el concierto de Garbage en el Zócalo y mencionó cierres viales en el Centro Histórico. El encabezado no precisa por sí solo qué calles estaban cerradas ni la duración de las afectaciones.",
           "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQRmhxdUotWTd3SHpqYko1dHBzcjF0LWZtbUl6T2Vhbk1aM2oycFBHSkUydm1lSXFreXZDbDFMQlhBbUFYcERaeV9qTTJ2VGRuSEo4Q2FxZFlUdjMwdEhnQlhQMkc0ZkIwakY0dGtCWU9WY2xQRkFNZ2g4Mk9EOWtkSlBIdnRTUVVRWTQ3ZTlDaS1qT0V5ME9oWnFiVG43S2JDMWotamRBNEMtbExwbDlLQjJ5YTdpelhsaHc?oc=5",
           "source": "Sin Embargo",
           "date": "2026-11-14",
@@ -7600,31 +7600,66 @@
           "location": "Zócalo (Plaza de la Constitución), alcaldía Cuauhtémoc, Ciudad de México",
           "local_url": "/noticias/?id=5aaa81d8b053056f9fbf&mes=2026-11",
           "brief": {
-            "lead": "De acuerdo con Sin Embargo, el titular publicado es: «Garbage prende el Zócalo de la CdMx; mantienen cierres viales en el Centro Histórico». La información publicada por Sin Embargo aborda un asunto que este portal clasifica como Cultura. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "La actividad cultural abre oportunidades de encuentro, aprendizaje y disfrute para habitantes y visitantes.",
-            "pending": "Los accesos, boletos, sedes, cupos y horarios deben consultarse con la institución organizadora. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+            "lead": "SinEmbargo tituló su cobertura sobre el concierto de Garbage en el Zócalo y mencionó cierres viales en el Centro Histórico. El encabezado no precisa por sí solo qué calles estaban cerradas ni la duración de las afectaciones.",
+            "context": "El Zócalo corresponde a la Plaza de la Constitución, en la alcaldía Cuauhtémoc. Esta referencia identifica el lugar del concierto, pero no confirma la vigencia de los cierres viales.",
+            "pending": "No se recuperó el cuerpo íntegro de la nota ni se verificó de forma independiente el estado de las vialidades. Consulta los avisos actuales de SEMOVI y SSC antes de modificar un recorrido.",
+            "method": "Síntesis limitada al titular y metadatos RSS de Google News atribuidos a SinEmbargo; no equivale a lectura del artículo íntegro. La ubicación del Zócalo se contrastó con la ficha de SEDEMA: https://www.proyectos.sedema.cdmx.gob.mx/datos/areas-verdes-detalle/4648."
           },
           "photo": {
-            "id": "contexto_concierto_palacio_deportes_2009",
+            "id": "zocalo",
             "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/PalaciodelosDeportes_Concierto.jpg/960px-PalaciodelosDeportes_Concierto.jpg",
-            "category": "Cultura",
+            "url": "/assets/fotos/zocalo.jpg",
+            "category": "CDMX",
             "borough": "",
-            "topic": "Concierto de Kings of Leon en el Palacio de los Deportes, CDMX (octubre de 2009); foto de archivo representativa, no documenta eventos de la noticia.",
+            "topic": "Zócalo visto desde la Torre Latinoamericana",
             "keywords": [
-              "concierto",
-              "música en vivo",
-              "Palacio de los Deportes",
-              "Ciudad de México",
-              "escenario",
-              "público"
+              "CDMX"
             ],
-            "author": "ProtoplasmaKid",
+            "author": "A01701617",
             "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-            "source": "https://commons.wikimedia.org/wiki/File:PalaciodelosDeportes_Concierto.jpg"
-          }
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.es",
+            "source": "https://commons.wikimedia.org/wiki/File:Vista_del_z%C3%B3calo_de_Ciudad_de_M%C3%A9xico_desde_la_Torre_Latinoamericana.jpg"
+          },
+          "alternate_versions": [
+            {
+              "title": "Garbage prende el Zócalo de la CdMx; mantienen cierres viales en el Centro Histórico",
+              "description": "SinEmbargo tituló su cobertura sobre el concierto de Garbage en el Zócalo y mencionó cierres viales en el Centro Histórico. El encabezado no precisa por sí solo qué calles estaban cerradas ni la duración de las afectaciones.",
+              "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQRmhxdUotWTd3SHpqYko1dHBzcjF0LWZtbUl6T2Vhbk1aM2oycFBHSkUydm1lSXFreXZDbDFMQlhBbUFYcERaeV9qTTJ2VGRuSEo4Q2FxZFlUdjMwdEhnQlhQMkc0ZkIwakY0dGtCWU9WY2xQRkFNZ2g4Mk9EOWtkSlBIdnRTUVVRWTQ3ZTlDaS1qT0V5ME9oWnFiVG43S2JDMWotamRBNEMtbExwbDlLQjJ5YTdpelhsaHc?oc=5",
+              "source": "Sin Embargo",
+              "date": "2026-11-14",
+              "published_at": "2026-11-15T03:13:47Z",
+              "category": "Cultura",
+              "borough": "Cuauhtémoc",
+              "location": "Zócalo (Plaza de la Constitución), alcaldía Cuauhtémoc, Ciudad de México",
+              "local_url": "/noticias/?id=5aaa81d8b053056f9fbf&mes=2026-11",
+              "brief": {
+                "lead": "SinEmbargo tituló su cobertura sobre el concierto de Garbage en el Zócalo y mencionó cierres viales en el Centro Histórico. El encabezado no precisa por sí solo qué calles estaban cerradas ni la duración de las afectaciones.",
+                "context": "El Zócalo corresponde a la Plaza de la Constitución, en la alcaldía Cuauhtémoc. Esta referencia identifica el lugar del concierto, pero no confirma la vigencia de los cierres viales.",
+                "pending": "No se recuperó el cuerpo íntegro de la nota ni se verificó de forma independiente el estado de las vialidades. Consulta los avisos actuales de SEMOVI y SSC antes de modificar un recorrido.",
+                "method": "Síntesis limitada al titular y metadatos RSS de Google News atribuidos a SinEmbargo; no equivale a lectura del artículo íntegro. La ubicación del Zócalo se contrastó con la ficha de SEDEMA: https://www.proyectos.sedema.cdmx.gob.mx/datos/areas-verdes-detalle/4648."
+              },
+              "photo": {
+                "id": "contexto_concierto_palacio_deportes_2009",
+                "kind": "representativa",
+                "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/PalaciodelosDeportes_Concierto.jpg/960px-PalaciodelosDeportes_Concierto.jpg",
+                "category": "Cultura",
+                "borough": "",
+                "topic": "Concierto de Kings of Leon en el Palacio de los Deportes, CDMX (octubre de 2009); foto de archivo representativa, no documenta eventos de la noticia.",
+                "keywords": [
+                  "concierto",
+                  "música en vivo",
+                  "Palacio de los Deportes",
+                  "Ciudad de México",
+                  "escenario",
+                  "público"
+                ],
+                "author": "ProtoplasmaKid",
+                "license": "CC BY-SA 4.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+                "source": "https://commons.wikimedia.org/wiki/File:PalaciodelosDeportes_Concierto.jpg"
+              }
+            }
+          ]
         },
         {
           "title": "Garbage en el Zócalo: fans reviven los noventa con el concierto en CDMX",
@@ -7820,7 +7855,7 @@
         },
         {
           "title": "Garbage en el Zócalo de CdMx: Horario, dónde ver la transmisión en vivo y otros tips",
-          "description": "De acuerdo con Sin Embargo, el titular publicado es: «Garbage en el Zócalo de CdMx: Horario, dónde ver la transmisión en vivo y otros tips». La información publicada por Sin Embargo aborda un asunto que este portal clasifica como Cultura. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "description": "SinEmbargo tituló su cobertura sobre el concierto de Garbage en el Zócalo y mencionó cierres viales en el Centro Histórico. El encabezado no precisa por sí solo qué calles estaban cerradas ni la duración de las afectaciones.",
           "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNZUZaRm12bjUzLXR0ak5pVjJkQktSdDZnY3NLalczaHNmN3J3Njd0MmxIN2VybDVrblo3em9KOVc1bG92eExiWW5MZzVkcGJrZHJCVGpKNHZkdlhaYVlIN19DSUt0S3RWTVZWUjFsMmtOTzRudHVqZmVfamUtOXFILTBNWGVGQV9aV24zMHYyNGJMb3Z4T051bG1QaGphamVFOW9ja19FakQyR2pDZVJGdjI5UWhoQkVY?oc=5",
           "source": "Sin Embargo",
           "date": "2026-11-14",
@@ -7830,31 +7865,66 @@
           "location": "Zócalo (Plaza de la Constitución), alcaldía Cuauhtémoc, Ciudad de México",
           "local_url": "/noticias/?id=6f37550e88add2cb4b37&mes=2026-11",
           "brief": {
-            "lead": "De acuerdo con Sin Embargo, el titular publicado es: «Garbage en el Zócalo de CdMx: Horario, dónde ver la transmisión en vivo y otros tips». La información publicada por Sin Embargo aborda un asunto que este portal clasifica como Cultura. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "La actividad cultural abre oportunidades de encuentro, aprendizaje y disfrute para habitantes y visitantes.",
-            "pending": "Los accesos, boletos, sedes, cupos y horarios deben consultarse con la institución organizadora. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+            "lead": "SinEmbargo tituló su cobertura sobre el concierto de Garbage en el Zócalo y mencionó cierres viales en el Centro Histórico. El encabezado no precisa por sí solo qué calles estaban cerradas ni la duración de las afectaciones.",
+            "context": "El Zócalo corresponde a la Plaza de la Constitución, en la alcaldía Cuauhtémoc. Esta referencia identifica el lugar del concierto, pero no confirma la vigencia de los cierres viales.",
+            "pending": "No se recuperó el cuerpo íntegro de la nota ni se verificó de forma independiente el estado de las vialidades. Consulta los avisos actuales de SEMOVI y SSC antes de modificar un recorrido.",
+            "method": "Síntesis limitada al titular y metadatos RSS de Google News atribuidos a SinEmbargo; no equivale a lectura del artículo íntegro. La ubicación del Zócalo se contrastó con la ficha de SEDEMA: https://www.proyectos.sedema.cdmx.gob.mx/datos/areas-verdes-detalle/4648."
           },
           "photo": {
-            "id": "contexto_concierto_palacio_deportes_2009",
+            "id": "zocalo",
             "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/PalaciodelosDeportes_Concierto.jpg/960px-PalaciodelosDeportes_Concierto.jpg",
-            "category": "Cultura",
+            "url": "/assets/fotos/zocalo.jpg",
+            "category": "CDMX",
             "borough": "",
-            "topic": "Concierto de Kings of Leon en el Palacio de los Deportes, CDMX (octubre de 2009); foto de archivo representativa, no documenta eventos de la noticia.",
+            "topic": "Zócalo visto desde la Torre Latinoamericana",
             "keywords": [
-              "concierto",
-              "música en vivo",
-              "Palacio de los Deportes",
-              "Ciudad de México",
-              "escenario",
-              "público"
+              "CDMX"
             ],
-            "author": "ProtoplasmaKid",
+            "author": "A01701617",
             "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-            "source": "https://commons.wikimedia.org/wiki/File:PalaciodelosDeportes_Concierto.jpg"
-          }
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.es",
+            "source": "https://commons.wikimedia.org/wiki/File:Vista_del_z%C3%B3calo_de_Ciudad_de_M%C3%A9xico_desde_la_Torre_Latinoamericana.jpg"
+          },
+          "alternate_versions": [
+            {
+              "title": "Garbage en el Zócalo de CdMx: Horario, dónde ver la transmisión en vivo y otros tips",
+              "description": "SinEmbargo tituló su cobertura sobre el concierto de Garbage en el Zócalo y mencionó cierres viales en el Centro Histórico. El encabezado no precisa por sí solo qué calles estaban cerradas ni la duración de las afectaciones.",
+              "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNZUZaRm12bjUzLXR0ak5pVjJkQktSdDZnY3NLalczaHNmN3J3Njd0MmxIN2VybDVrblo3em9KOVc1bG92eExiWW5MZzVkcGJrZHJCVGpKNHZkdlhaYVlIN19DSUt0S3RWTVZWUjFsMmtOTzRudHVqZmVfamUtOXFILTBNWGVGQV9aV24zMHYyNGJMb3Z4T051bG1QaGphamVFOW9ja19FakQyR2pDZVJGdjI5UWhoQkVY?oc=5",
+              "source": "Sin Embargo",
+              "date": "2026-11-14",
+              "published_at": "2026-11-14T20:21:52Z",
+              "category": "Cultura",
+              "borough": "Cuauhtémoc",
+              "location": "Zócalo (Plaza de la Constitución), alcaldía Cuauhtémoc, Ciudad de México",
+              "local_url": "/noticias/?id=6f37550e88add2cb4b37&mes=2026-11",
+              "brief": {
+                "lead": "SinEmbargo tituló su cobertura sobre el concierto de Garbage en el Zócalo y mencionó cierres viales en el Centro Histórico. El encabezado no precisa por sí solo qué calles estaban cerradas ni la duración de las afectaciones.",
+                "context": "El Zócalo corresponde a la Plaza de la Constitución, en la alcaldía Cuauhtémoc. Esta referencia identifica el lugar del concierto, pero no confirma la vigencia de los cierres viales.",
+                "pending": "No se recuperó el cuerpo íntegro de la nota ni se verificó de forma independiente el estado de las vialidades. Consulta los avisos actuales de SEMOVI y SSC antes de modificar un recorrido.",
+                "method": "Síntesis limitada al titular y metadatos RSS de Google News atribuidos a SinEmbargo; no equivale a lectura del artículo íntegro. La ubicación del Zócalo se contrastó con la ficha de SEDEMA: https://www.proyectos.sedema.cdmx.gob.mx/datos/areas-verdes-detalle/4648."
+              },
+              "photo": {
+                "id": "contexto_concierto_palacio_deportes_2009",
+                "kind": "representativa",
+                "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/PalaciodelosDeportes_Concierto.jpg/960px-PalaciodelosDeportes_Concierto.jpg",
+                "category": "Cultura",
+                "borough": "",
+                "topic": "Concierto de Kings of Leon en el Palacio de los Deportes, CDMX (octubre de 2009); foto de archivo representativa, no documenta eventos de la noticia.",
+                "keywords": [
+                  "concierto",
+                  "música en vivo",
+                  "Palacio de los Deportes",
+                  "Ciudad de México",
+                  "escenario",
+                  "público"
+                ],
+                "author": "ProtoplasmaKid",
+                "license": "CC BY-SA 4.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+                "source": "https://commons.wikimedia.org/wiki/File:PalaciodelosDeportes_Concierto.jpg"
+              }
+            }
+          ]
         },
         {
           "title": "Garbage en el Zócalo de la CDMX: hora, entrada gratis y lo que debes saber del concierto de este sábado 14 de noviembre",
@@ -15024,32 +15094,6 @@
           "borough": "Tláhuac",
           "location": "Tláhuac (mencionada en el titular)",
           "local_url": "/noticias/?id=8943654970f0592d780a&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con La Silla Rota, el titular publicado es: «Feria del Atole 2026 en Tláhuac: fechas, sabores y actividades». La información publicada por La Silla Rota aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "contexto_atole_mexicano",
-            "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Atole.jpg/960px-Atole.jpg",
-            "category": "Cultura",
-            "borough": "",
-            "topic": "Atole, bebida caliente tradicional a base de maíz; versión de Nuevo México (fotografía de 2007)",
-            "keywords": [
-              "atole",
-              "feria del atole",
-              "bebida tradicional",
-              "bebida de maíz",
-              "gastronomía mexicana",
-              "maíz"
-            ],
-            "author": "ottmarliebert.com",
-            "license": "CC BY-SA 2.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
-            "source": "https://commons.wikimedia.org/wiki/File:Atole.jpg"
-          },
           "alternate_versions": [
             {
               "title": "Feria del Atole 2026 en Tláhuac: fechas, sabores y actividades",
@@ -15114,7 +15158,33 @@
                 "source": "https://commons.wikimedia.org/wiki/File:Danzantes_en_El_Z%C3%B3calo,_Ciudad_de_M%C3%A9xico_-_Negro.jpg"
               }
             }
-          ]
+          ],
+          "brief": {
+            "lead": "De acuerdo con La Silla Rota, el titular publicado es: «Feria del Atole 2026 en Tláhuac: fechas, sabores y actividades». La información publicada por La Silla Rota aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "contexto_atole_mexicano",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Atole.jpg/960px-Atole.jpg",
+            "category": "Cultura",
+            "borough": "",
+            "topic": "Atole, bebida caliente tradicional a base de maíz; versión de Nuevo México (fotografía de 2007)",
+            "keywords": [
+              "atole",
+              "feria del atole",
+              "bebida tradicional",
+              "bebida de maíz",
+              "gastronomía mexicana",
+              "maíz"
+            ],
+            "author": "ottmarliebert.com",
+            "license": "CC BY-SA 2.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+            "source": "https://commons.wikimedia.org/wiki/File:Atole.jpg"
+          }
         },
         {
           "title": "Antorcha mantendrá la lucha para defender las viviendas de Los Pozos, en Tláhuac",
