@@ -1535,10 +1535,17 @@ def build_homepage_feed(candidates):
     used_photos = set()
     for article in candidates:
         photo = article.get("photo")
+        title_sensitive = bool(
+            SENSITIVE_MEDIA_TITLE.search(str(article.get("title") or ""))
+        )
         sensitive = is_sensitive_media(article)
+        if not sensitive:
+            # Elimina la marca heredada cuando la política editorial reconoce
+            # una excepción no gráfica, como el reporte estadístico de denuncias.
+            article.pop("sensitive_media", None)
         if not isinstance(photo, dict):
             article.pop("photo", None)
-            if sensitive:
+            if title_sensitive:
                 visible.append(article)
             continue
         photo_url = str(photo.get("url") or "")
@@ -1548,15 +1555,16 @@ def build_homepage_feed(candidates):
             and bool(photo.get("evidence_url"))
         )
         contextual = photo.get("kind") == "representativa"
-        # La misma política editorial se aplica al feed, a la portada y a las fichas:
-        # los reportajes estadísticos no gráficos conservan su foto contextual acreditada.
+        # La política editorial decide si la foto es admisible; el titular
+        # decide si una noticia sin foto debe permanecer visible en portada.
         if sensitive and not documented:
             article.pop("photo", None)
-            visible.append(article)
+            if title_sensitive:
+                visible.append(article)
             continue
         if contextual and _photo_score(article, photo) < 0:
             article.pop("photo", None)
-            if sensitive:
+            if title_sensitive:
                 visible.append(article)
             continue
         trusted_url = (
@@ -1575,7 +1583,7 @@ def build_homepage_feed(candidates):
         )
         if not valid_photo:
             article.pop("photo", None)
-            if sensitive:
+            if title_sensitive:
                 visible.append(article)
             continue
         visible.append(article)
