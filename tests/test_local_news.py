@@ -2,7 +2,7 @@
 import json
 import unittest
 from pathlib import Path
-from scripts.notas_locales import assign_photos, local_link, summarize, is_sensitive_media, RADIO_FORMULA_CASA_ECOLOGICA_SOURCE_URL, INFOBAE_MARIA_LEON_CONCERT_SOURCE_URL, AICM_FLIGHT_SUSPENSION_SOURCE_URL
+from scripts.notas_locales import assign_photos, local_link, summarize, is_sensitive_media, RADIO_FORMULA_CASA_ECOLOGICA_SOURCE_URL, INFOBAE_MARIA_LEON_CONCERT_SOURCE_URL, AICM_FLIGHT_SUSPENSION_SOURCE_URL, LA_RAZON_GARBAGE_ZOCALO_SOURCE_URL
 from scripts.build_article_seo import article_id, render
 from update_news import category_by_headline, standardize, photo_needs_refresh, CAPITAL_CDMX_CARE_BUDGET_SOURCE_URL, prioritize_photo_refresh, build_homepage_feed, archive_record_key, dedupe_homepage_events
 
@@ -14,6 +14,26 @@ class LocalNewsTests(unittest.TestCase):
                 "url":"https://news.google.com/rss/articles/sample"+str(i),
                 "source":"Periódico de prueba","date":"2026-10-13",
                 "category":category,"borough":""}
+
+    def test_la_razon_garbage_uses_direct_source_and_cuauhtemoc_location(self):
+        result = standardize({
+            "title": "Asisten más de 90 mil personas a concierto de Garbage en el Zócalo de la CDMX",
+            "url": "https://news.google.com/rss/articles/la-razon-garbage?oc=5",
+            "source": "La Razón de México",
+            "date": "2026-11-15",
+            "published_at": "2026-11-15T06:19:54Z",
+            "category": "Cultura",
+        })
+        self.assertIsNotNone(result)
+        self.assertEqual(result["borough"], "Cuauhtémoc")
+        self.assertEqual(
+            result["location"],
+            "Zócalo (Plaza de la Constitución), alcaldía Cuauhtémoc, Ciudad de México",
+        )
+        self.assertEqual(result["source_url"], LA_RAZON_GARBAGE_ZOCALO_SOURCE_URL)
+        self.assertIn("más de 90 mil personas", result["brief"]["lead"])
+        self.assertIn("Paulina Villarreal", result["brief"]["context"])
+        self.assertIn("SEDEMA", result["brief"]["method"])
 
     def test_news_schedule_runs_are_queued_separately_from_pull_requests(self):
         workflow = (ROOT / ".github" / "workflows" / "news.yml").read_text(encoding="utf-8")
