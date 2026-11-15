@@ -712,7 +712,7 @@ def standardize(article):
     except ValueError:
         return None
     borough, location = identify_location(title, date)
-    elif is_infobae_vite_balu_story({"title": title, "source": source, "date": date}):
+    if is_infobae_vite_balu_story({"title": title, "source": source, "date": date}):
         borough = "Venustiano Carranza"
         location = "Colonia Centro, alcaldía Venustiano Carranza, Ciudad de México (según Infobae)"
     if is_codigoqro_ignacio_detention({"title": title, "source": source, "date": date}):
