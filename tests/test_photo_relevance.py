@@ -59,6 +59,38 @@ class PhotoRelevanceTests(unittest.TestCase):
         self.assertEqual(article["photo"]["id"], "patrulla_cdmx")
         self.assertEqual(article["photo"]["kind"], "representativa")
 
+    def test_plastic_bag_policy_rejects_park_photo_and_selects_shopping_bags(self):
+        title = "CDMX prepara nuevas reglas para bolsas plásticas en 2027"
+        article = {"title": title, "category": "CDMX", "borough": ""}
+        garden = representative_photo(
+            "garden_context", "CDMX",
+            "Jardín Escénico del Bosque de Chapultepec 02", ["Medio Ambiente"],
+        )
+        bag = next(
+            photo for photo in photos._pool()
+            if photo.get("id") == "contexto_bolsas_plasticas_compras_2015"
+        )
+
+        self.assertLess(_photo_score(article, garden), 0)
+        self.assertGreaterEqual(_photo_score(article, bag), 0)
+        self.assertEqual(bag["author"], "Peteruetz")
+        self.assertEqual(bag["license"], "CC BY-SA 4.0")
+        self.assertEqual(
+            bag["source"],
+            "https://commons.wikimedia.org/wiki/File:Shopping_plastic_bags.jpg",
+        )
+        self.assertEqual(
+            bag["licenseUrl"], "https://creativecommons.org/licenses/by-sa/4.0/"
+        )
+        self.assertLessEqual(len(bag["topic"]), 150)
+
+        article["photo"] = deepcopy(garden)
+        with patch.object(photos, "_pool", return_value=[garden, bag]), patch.object(
+            photos, "_load", return_value=[]
+        ):
+            assign_photos([article])
+        self.assertEqual(article["photo"]["id"], bag["id"])
+
     def test_womens_defensive_driving_workshop_has_verified_mobility_location_and_summary(self):
         title = "Ofrecen taller gratuito de manejo defensivo y preventivo para mujeres en CDMX"
         article = news.standardize({
