@@ -48,6 +48,15 @@ class PublicSeoTests(unittest.TestCase):
         page = render(article, "0123456789abcdefabcd")
         self.assertIn(trusted, page)
 
+        air_quality = "https://www.infobae.com/mexico/2026/11/15/esta-es-la-calidad-del-aire-en-cdmx-y-edomex-este-domingo-15-de-noviembre-reporte-completo-por-alcaldias-y-municipios/"
+        self.assertIn(air_quality, VERIFIED_SOURCE_URLS)
+        article["source_url"] = air_quality
+        air_page = render(article, "0123456789abcdefabcd")
+        self.assertIn(air_quality, air_page)
+        article["source_url"] = air_quality + "?unverified=1"
+        air_unverified_page = render(article, "0123456789abcdefabcd")
+        self.assertNotIn(air_quality + "?unverified=1", air_unverified_page)
+
         untrusted = "https://www.infobae.com/mexico/2026/11/15/otro-articulo-no-verificado/"
         article["source_url"] = untrusted
         page = render(article, "0123456789abcdefabcd")

@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "notice": "Fotografías de contexto reutilizables con licencia. No son fotos del hecho noticioso.",
   "photos": [
     {
@@ -667,6 +667,29 @@
       "author": "Gobierno de la Ciudad de México",
       "license": "CC0 1.0",
       "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    {
+      "id": "contexto_imeca_calidad_aire_cdmx",
+      "kind": "representativa",
+      "category": "Medio Ambiente",
+      "topic": "Escala IMECA de referencia para la calidad del aire en CDMX (archivo de 2007; no muestra el reporte del 15/11/2026).",
+      "file": "MexicoCityImecaScale.JPG",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/df/MexicoCityImecaScale.JPG",
+      "source": "https://commons.wikimedia.org/wiki/File:MexicoCityImecaScale.JPG",
+      "author": "(WT-en) Fabz at English Wikivoyage",
+      "license": "CC BY-SA 1.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/1.0/",
+      "keywords": [
+        "calidad del aire",
+        "IMECA",
+        "índice metropolitano para la calidad del aire",
+        "monitoreo atmosférico",
+        "Secretaría del Medio Ambiente CDMX"
+      ],
+      "captured_at": "2007-04-16",
+      "uploaded_at": "2007-04-17",
+      "context": "Imagen de una escala IMECA emitida por la Secretaría del Medio Ambiente de la Ciudad de México; no representa la medición del 15 de noviembre de 2026.",
+      "adaptation": "Archivo original de Wikimedia Commons; sin modificación."
     }
   ]
 }

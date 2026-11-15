@@ -4,7 +4,7 @@ import unittest
 from pathlib import Path
 from scripts.notas_locales import assign_photos, local_link, summarize, is_sensitive_media, RADIO_FORMULA_CASA_ECOLOGICA_SOURCE_URL, INFOBAE_MARIA_LEON_CONCERT_SOURCE_URL, AICM_FLIGHT_SUSPENSION_SOURCE_URL, LA_RAZON_GARBAGE_ZOCALO_SOURCE_URL, INFOBAE_GARBAGE_ZOCALO_SOURCE_URL
 from scripts.build_article_seo import article_id, render
-from update_news import clear_sensitive_context_photos, category_by_headline, standardize, photo_needs_refresh, CAPITAL_CDMX_CARE_BUDGET_SOURCE_URL, prioritize_photo_refresh, build_homepage_feed, archive_record_key, dedupe_homepage_events
+from update_news import clear_sensitive_context_photos, category_by_headline, standardize, photo_needs_refresh, CAPITAL_CDMX_CARE_BUDGET_SOURCE_URL, INFOBAE_AIR_QUALITY_20261115_SOURCE_URL, prioritize_photo_refresh, build_homepage_feed, archive_record_key, dedupe_homepage_events
 
 ROOT=Path(__file__).resolve().parents[1]
 
@@ -988,6 +988,31 @@ class LocalNewsTests(unittest.TestCase):
         self.assertIn("previa al concierto", result["brief"]["pending"])
         page = render(result, article_id(result))
         self.assertIn(INFOBAE_GARBAGE_ZOCALO_SOURCE_URL, page)
+        self.assertNotIn(result["url"], page)
+
+    def test_infobae_air_quality_uses_direct_source_and_time_scoped_summary(self):
+        article = {
+            "title": "Esta es la calidad del aire en CDMX y Edomex este domingo 15 de noviembre: reporte completo por alcaldías y municipios",
+            "url": "https://news.google.com/rss/articles/infobae-air-quality-20261115?oc=5",
+            "source": "Infobae",
+            "date": "2026-11-15",
+            "published_at": "2026-11-15T11:30:00Z",
+            "category": "Medio Ambiente",
+        }
+        result = standardize(article)
+        self.assertIsNotNone(result)
+        self.assertEqual(result["category"], "Medio Ambiente")
+        self.assertEqual(result["source_url"], INFOBAE_AIR_QUALITY_20261115_SOURCE_URL)
+        self.assertIn("05:00", result["brief"]["lead"])
+        self.assertIn("Aceptable", result["brief"]["lead"])
+        self.assertIn("Moderado", result["brief"]["lead"])
+        self.assertIn("UV 0", result["brief"]["lead"])
+        self.assertIn("16 estaciones", result["brief"]["lead"])
+        self.assertIn("13 del Estado de México", result["brief"]["lead"])
+        self.assertIn("no debe interpretarse como una medición vigente", result["brief"]["pending"])
+        self.assertEqual(result["description"], result["brief"]["lead"])
+        page = render(result, article_id(result))
+        self.assertIn(INFOBAE_AIR_QUALITY_20261115_SOURCE_URL, page)
         self.assertNotIn(result["url"], page)
 
     def test_sin_embargo_garbage_summary_uses_headline_limits_and_cuauhtemoc_location(self):

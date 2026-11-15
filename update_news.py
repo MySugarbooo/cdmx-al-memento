@@ -44,6 +44,7 @@ HOY_TAMAULIPAS_PATTY_CHIO_ROUTE_MONTH = "2026-11"
 AHORA_NOTICIAS_TLALPAN_PERRITA_SOURCE_URL = "https://ahoranoticias.com.mx/nacional/rescatan-a-perrita-por-presunto-maltrato-animal-en-tlalpan/"
 EL_SOL_ANIMAL_ABUSE_COMPLAINTS_SOURCE_URL = "https://oem.com.mx/elsoldemexico/metropoli/en-cdmx-15-colonias-de-6-alcaldias-concentran-denuncias-por-maltrato-animal-33109336"
 LA_PRENSA_PREHOSPITAL_CARE_SOURCE_URL = "https://oem.com.mx/la-prensa/metropoli/cdmx-busca-modernizar-la-atencion-prehospitalaria-con-plataforma-digital-de-la-ops-oms-inicia-prueba-piloto-con-tres-am-33136134"
+INFOBAE_AIR_QUALITY_20261115_SOURCE_URL = "https://www.infobae.com/mexico/2026/11/15/esta-es-la-calidad-del-aire-en-cdmx-y-edomex-este-domingo-15-de-noviembre-reporte-completo-por-alcaldias-y-municipios/"
 MAIL = "sanchezaxochitl@gmail.com"
 RETENTION_DAYS = 365
 
@@ -383,6 +384,16 @@ def is_la_prensa_prehospital_care(article):
     )
 
 
+def is_segundo_a_segundo_green_areas_standard(article):
+    title = fold(article.get("title", ""))
+    return (
+        str(article.get("date") or "")[:10] == "2026-11-15"
+        and fold(article.get("source", "")) == "segundo a segundo"
+        and "sistemas integrales vivientes" in title
+        and "areas verdes" in title
+    )
+
+
 def category_by_headline(title, feed_category, source=""):
     """Corrige etiquetas RSS evidentes sin inventar ubicaciones o hechos."""
     normalized = fold(title)
@@ -393,6 +404,8 @@ def category_by_headline(title, feed_category, source=""):
     # Las aulas digitales y los informes de SECTEI son gestión pública educativa.
     if re.search(r"\b(?:sectei|aulas? digitales?)\b", normalized):
         return "Gobierno"
+    if re.search(r"\b(?:areas verdes|infraestructura verde|sistemas integrales vivientes|norma ambiental)\b", normalized):
+        return "Medio Ambiente"
     if re.search(r"\b(?:bolsas? plasticas?|residuos? plasticos?)\b", normalized):
         return "Medio Ambiente"
     if re.search(r"\b15 colonias de 6 alcaldias concentran denuncias por maltrato animal\b", normalized):
@@ -994,6 +1007,61 @@ def standardize(article):
         result["photo"] = normalize_photo_license(article["photo"])
     # Fotografías de accidentes de archivo pueden ser solo contexto; no
     # conservarlas tras la revisión editorial si no documentan ese hecho.
+    if is_segundo_a_segundo_green_areas_standard(result):
+        result["source_url"] = "https://segundoasegundo.com/gobierno-de-cdmx-promueve-sistemas-integrales-vivientes-en-areas-verdes/"
+        result["category"] = "Medio Ambiente"
+        result["brief"] = {
+            "lead": (
+                "Segundo a Segundo reportó el 15 de noviembre de 2026 que el Gobierno de CDMX impulsa "
+                "la propuesta de norma ambiental PROY-NACDMX-006-RNAT-2026 para que las áreas verdes "
+                "se planifiquen y mantengan como sistemas que integren distintas especies de flora y fauna. "
+                "La iniciativa contempla proyectos previos y planes de trabajo para conservar esos espacios."
+            ),
+            "context": (
+                "La propuesta prioriza especies nativas, disponibilidad de agua y mejora del suelo; "
+                "también contempla medidas para atender erosión e inestabilidad de laderas."
+            ),
+            "pending": (
+                "La publicación describe una propuesta normativa en consulta pública; no confirma su "
+                "aprobación final ni que las medidas ya se hayan aplicado en todos los parques de la ciudad."
+            ),
+            "method": (
+                "Síntesis editorial propia elaborada tras consultar la publicación original de Segundo a Segundo; "
+                "no equivale a verificación independiente del proceso normativo."
+            ),
+        }
+    # El RSS conserva un enlace de Google News; se enlaza la nota directa verificada de Infobae.
+    # El resumen se limita al corte horario descrito por la publicación del 15/11/2026.
+    if (
+        fold(result.get("source")) == "infobae"
+        and result.get("date") == "2026-11-15"
+        and "calidad del aire" in fold(result.get("title"))
+        and "edomex" in fold(result.get("title"))
+        and "15 de noviembre" in fold(result.get("title"))
+    ):
+        result["source_url"] = INFOBAE_AIR_QUALITY_20261115_SOURCE_URL
+        result["brief"] = {
+            "lead": (
+                "Infobae reportó que, en el corte de las 05:00 del 15 de noviembre, la calidad del aire "
+                "en la Zona Metropolitana del Valle de México era «Aceptable», con riesgo para la salud "
+                "«Moderado» y nivel de radiación UV 0. La nota reúne lecturas de 16 estaciones de CDMX "
+                "y 13 del Estado de México."
+            ),
+            "context": (
+                "La publicación atribuye los datos a la Dirección de Monitoreo Atmosférico y recoge "
+                "recomendaciones para actividades al aire libre, con atención a los grupos sensibles."
+            ),
+            "pending": (
+                "El dato corresponde al corte de las 05:00 y no debe interpretarse como una medición "
+                "vigente durante todo el día. Algunas estaciones aparecían sin datos o en mantenimiento; "
+                "para conocer las condiciones actuales debe consultarse el reporte horario oficial."
+            ),
+            "method": (
+                "Síntesis editorial basada en el cuerpo de la publicación de Infobae del 15 de noviembre "
+                "de 2026; los valores se atribuyen a la Dirección de Monitoreo Atmosférico citada por el medio. "
+                "No equivale a una medición propia ni a verificación independiente."
+            ),
+        }
     result["description"] = result["brief"]["lead"]
     return result
 
