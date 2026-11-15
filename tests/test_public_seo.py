@@ -283,5 +283,44 @@ class PublicSeoTests(unittest.TestCase):
         self.assertEqual(result.returncode, 0, result.stderr)
 
 
+    def test_verified_oem_source_links_are_exact_and_sensitive_animal_report_can_render_photo(self):
+        cases = (
+            ("El Sol de México", "/noticias/?id=25c1757a6412faa605b8&mes=2026-11", "https://oem.com.mx/elsoldemexico/metropoli/en-cdmx-15-colonias-de-6-alcaldias-concentran-denuncias-por-maltrato-animal-33109336"),
+            ("La Prensa", "/noticias/?id=8d8d42da02716a380ef2&mes=2026-11", "https://oem.com.mx/la-prensa/metropoli/cdmx-busca-modernizar-la-atencion-prehospitalaria-con-plataforma-digital-de-la-ops-oms-inicia-prueba-piloto-con-tres-am-33136134"),
+        )
+        for source, local_url, direct in cases:
+            with self.subTest(source=source):
+                article = self.valid_article()
+                article.update({"source": source, "local_url": local_url, "source_url": direct})
+                page = render(article, "0123456789abcdefabcd")
+                self.assertIn(direct, page)
+                article["source_url"] = direct + "?unverified=1"
+                page = render(article, "0123456789abcdefabcd")
+                self.assertNotIn(direct + "?unverified=1", page)
+                self.assertNotIn('class="source-action"', page)
+        animal = self.valid_article()
+        animal.update({
+            "title": "En CDMX, 15 colonias de 6 alcaldías concentran denuncias por maltrato animal",
+            "source": "El Sol de México",
+            "date": "2026-11-15",
+            "local_url": "/noticias/?id=25c1757a6412faa605b8&mes=2026-11",
+            "sensitive_media": True,
+            "photo": {
+                "id": "contexto_perros_parque_espana",
+                "kind": "representativa",
+                "url": "https://upload.wikimedia.org/wikipedia/commons/example-dogs.jpg",
+                "author": "Raul21940",
+                "license": "CC BY-SA 4.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+                "source": "https://commons.wikimedia.org/wiki/File:Perros_en_el_Parque_Espa%C3%B1a,_Ciudad_de_M%C3%A9xico.jpg",
+            },
+        })
+        page = render(animal, "25c1757a6412faa605b8")
+        self.assertIn('<figure class="article-photo">', page)
+        self.assertNotIn("Sin fotografía verificada del hecho", page)
+        animal["editorial_verified"] = True
+        page = render(animal, "25c1757a6412faa605b8")
+        self.assertNotIn('<figure class="article-photo">', page)
+
 if __name__ == "__main__":
     unittest.main()

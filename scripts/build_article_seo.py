@@ -20,6 +20,10 @@ SOURCE = ROOT / "news.json"
 OUT = ROOT / "articulos"
 SITEMAP = ROOT / "sitemap-articulos.xml"
 VERIFIED_SOURCE_LINKS = {
+    ("El Sol de México", "/noticias/?id=25c1757a6412faa605b8&mes=2026-11"):
+        "https://oem.com.mx/elsoldemexico/metropoli/en-cdmx-15-colonias-de-6-alcaldias-concentran-denuncias-por-maltrato-animal-33109336",
+    ("La Prensa", "/noticias/?id=8d8d42da02716a380ef2&mes=2026-11"):
+        "https://oem.com.mx/la-prensa/metropoli/cdmx-busca-modernizar-la-atencion-prehospitalaria-con-plataforma-digital-de-la-ops-oms-inicia-prueba-piloto-con-tres-am-33136134",
     ("El Sol de San Juan del Río", "/noticias/?id=b37ba45fa2fa424b73bd&mes=2026-11"):
         "https://oem.com.mx/elsoldesanjuandelrio/policiaca/toma-precauciones-si-viajas-a-la-cdmx-autopista-57-esta-detenida-33095499",
     ("La Prensa", "/noticias/?id=00c19362c5f0468f82b1&mes=2026-11"):
@@ -76,10 +80,22 @@ SENSITIVE_MEDIA_TITLE = re.compile(
     re.IGNORECASE,
 )
 
+def is_animal_abuse_statistics_report(item):
+    title = str(item.get("title") or "").casefold()
+    return (
+        str(item.get("date") or "")[:10] == "2026-11-15"
+        and item.get("source") == "El Sol de México"
+        and bool(re.search(r"\b15 colonias de 6 alcald[ií]as concentran denuncias por maltrato animal\b", title))
+    )
+
+
 def is_sensitive_media(item):
-    """Evita ilustraciones genéricas en noticias sobre violencia sexual o crueldad animal."""
-    return (item.get("sensitive_media") is True or
-            bool(SENSITIVE_MEDIA_TITLE.search(str(item.get("title") or ""))))
+    """Evita ilustraciones genéricas en incidentes violentos, no en reportajes estadísticos no gráficos."""
+    if item.get("editorial_verified") is not True and is_animal_abuse_statistics_report(item):
+        return False
+    if item.get("sensitive_media") is True:
+        return True
+    return bool(SENSITIVE_MEDIA_TITLE.search(str(item.get("title") or "")))
 
 def has_verified_event_photo(photo):
     return (isinstance(photo, dict) and photo.get("kind") == "hecho" and

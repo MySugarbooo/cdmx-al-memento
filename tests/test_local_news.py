@@ -4,7 +4,7 @@ import unittest
 from pathlib import Path
 from scripts.notas_locales import assign_photos, local_link, summarize, is_sensitive_media, RADIO_FORMULA_CASA_ECOLOGICA_SOURCE_URL, INFOBAE_MARIA_LEON_CONCERT_SOURCE_URL, AICM_FLIGHT_SUSPENSION_SOURCE_URL, LA_RAZON_GARBAGE_ZOCALO_SOURCE_URL, INFOBAE_GARBAGE_ZOCALO_SOURCE_URL
 from scripts.build_article_seo import article_id, render
-from update_news import category_by_headline, standardize, photo_needs_refresh, CAPITAL_CDMX_CARE_BUDGET_SOURCE_URL, prioritize_photo_refresh, build_homepage_feed, archive_record_key, dedupe_homepage_events
+from update_news import clear_sensitive_context_photos, category_by_headline, standardize, photo_needs_refresh, CAPITAL_CDMX_CARE_BUDGET_SOURCE_URL, prioritize_photo_refresh, build_homepage_feed, archive_record_key, dedupe_homepage_events
 
 ROOT=Path(__file__).resolve().parents[1]
 
@@ -1463,6 +1463,56 @@ class LocalNewsTests(unittest.TestCase):
         self.assertEqual(visible[0]["source"], "Sociedad Noticias")
         self.assertNotEqual(society["local_url"], razon["local_url"])
 
+
+    def test_animal_complaints_report_uses_precise_category_source_and_summary(self):
+        article = {
+            "title": "En CDMX, 15 colonias de 6 alcaldías concentran denuncias por maltrato animal",
+            "url": "https://news.google.com/rss/articles/animal-complaints-cdmx-20261115",
+            "source": "El Sol de México",
+            "date": "2026-11-15",
+            "published_at": "2026-11-15T10:45:00Z",
+            "category": "Seguridad",
+        }
+        result = standardize(article)
+        self.assertIsNotNone(result)
+        self.assertEqual(result["category"], "Medio Ambiente")
+        self.assertEqual(result["source_url"], "https://oem.com.mx/elsoldemexico/metropoli/en-cdmx-15-colonias-de-6-alcaldias-concentran-denuncias-por-maltrato-animal-33109336")
+        self.assertEqual(result["local_url"], local_link(article))
+        self.assertIn("15 colonias", result["brief"]["lead"])
+        self.assertIn("no equivale a verificación independiente", result["brief"]["method"])
+        self.assertFalse(is_sensitive_media(result))
+
+    def test_animal_statistics_report_clears_legacy_sensitive_flag_without_removing_photo(self):
+        article = {
+            "title": "En CDMX, 15 colonias de 6 alcaldías concentran denuncias por maltrato animal",
+            "source": "El Sol de México",
+            "date": "2026-11-15",
+            "sensitive_media": True,
+            "photo": {"id": "contexto_perros_parque_espana", "kind": "representativa"},
+        }
+        removed = clear_sensitive_context_photos([article])
+        self.assertEqual(removed, 0)
+        self.assertNotIn("sensitive_media", article)
+        self.assertIn("photo", article)
+
+    def test_prehospital_pilot_corrects_truncated_title_source_and_direct_link(self):
+        article = {
+            "title": "CDMX busca modernizar la atención prehospitalaria con plataforma digital de la OPS/OMS; inicia prueba piloto con tres am - La Prensa",
+            "url": "https://news.google.com/rss/articles/prehospital-pilot-cdmx-20261115",
+            "source": "El Sol de México",
+            "date": "2026-11-15",
+            "published_at": "2026-11-15T11:12:50Z",
+            "category": "CDMX",
+        }
+        result = standardize(article)
+        self.assertIsNotNone(result)
+        self.assertEqual(result["title"], "CDMX busca modernizar la atención prehospitalaria con plataforma digital de la OPS/OMS; inicia prueba piloto con tres ambulancias")
+        self.assertEqual(result["source"], "La Prensa")
+        self.assertEqual(result["category"], "Servicios")
+        self.assertEqual(result["source_url"], "https://oem.com.mx/la-prensa/metropoli/cdmx-busca-modernizar-la-atencion-prehospitalaria-con-plataforma-digital-de-la-ops-oms-inicia-prueba-piloto-con-tres-am-33136134")
+        self.assertEqual(result["local_url"], local_link(article))
+        self.assertIn("SISMEDI911", result["brief"]["lead"])
+        self.assertIn("tres ambulancias", result["brief"]["lead"])
 
 if __name__=="__main__":
     unittest.main()
