@@ -32,8 +32,6 @@ VERIFIED_SOURCE_LINKS = {
         "https://www.infobae.com/mexico/2026/11/12/detienen-a-presunto-abusador-sexual-de-animales-en-situacion-de-calle-en-cdmx-activistas-piden-que-las-investigaciones-lleguen-a-fondo/",
     ("Infobae", "/noticias/?id=8e02d29b62c66ba3eff6&mes=2026-11"):
         "https://www.infobae.com/mexico/2026/11/13/maria-leon-presento-su-nueva-era-de-villana-en-el-teatro-metropolitan-de-la-cdmx-entre-invitados-nostalgia-y-canciones-ineditas/",
-    ("Infobae", "/noticias/?id=8ad158f40c5b719cb0b3&mes=2026-11"):
-        "https://www.infobae.com/mexico/2026/11/15/garbage-en-el-zocalo-de-la-cdmx-asi-puedes-seguir-el-concierto-en-vivo-de-manera-gratuita/",
     ("sdpnoticias", "/noticias/?id=842f4c3306f51b3ab9fc&mes=2026-11"):
         "https://www.sdpnoticias.com/estados/cdmx/mauricio-tabe-presenta-su-quinto-informe-de-gobierno-en-miguel-hidalgo/",
     ("Capital CDMX", "/noticias/?id=74914aa9a2dc0fd99b2f&mes=2026-11"):
@@ -55,6 +53,10 @@ VERIFIED_SOURCE_LINKS = {
     ("IMER Noticias", "/noticias/?id=cad284585f539df643d2&mes=2026-11"):
         "https://noticias.imer.mx/blog/activistas-y-defensores-de-animales-marcharon-para-exigir-el-fin-de-la-explotacion-animal-y-promover-el-veganismo-en-cdmx/",
 }
+
+VERIFIED_SOURCE_URLS = frozenset({
+    "https://www.infobae.com/mexico/2026/11/15/garbage-en-el-zocalo-de-la-cdmx-asi-puedes-seguir-el-concierto-en-vivo-de-manera-gratuita/",
+})
 SENSITIVE_MEDIA_TITLE = re.compile(
     r"\b(?:violaci[oó]n|abuso sexual|agresi[oó]n sexual|acoso sexual|violencia sexual|"
     r"maltrato animal|maltratador(?:es)? de animales?|abusador(?:es)? sexual(?:es)? de animales?|"
@@ -141,7 +143,8 @@ def render(item, ident):
     authorized = (origin.hostname in allowed_hosts or
                   (item.get("editorial_verified") is True and
                    origin.hostname in curated_hosts and origin.path != "/") or
-                  (verified_source is not None and original == verified_source))
+                  (verified_source is not None and original == verified_source) or
+                  original in VERIFIED_SOURCE_URLS)
     if origin.scheme == "https" and not origin.username and not origin.password and authorized:
         source_link = '<p class="source-top"><span>Fuente: ' + source + '</span> <a class="source-action" href="' + esc(original) + '" target="_blank" rel="nofollow noopener noreferrer">Ver fuente original ↗</a></p>'
     structured = json.dumps({"@context":"https://schema.org","@type":"NewsArticle","headline":item["title"],"datePublished":item.get("published_at") or item.get("date"),"author":{"@type":"Organization","name":"CDMX AL MEMENTO"},"publisher":{"@type":"Organization","name":"CDMX AL MEMENTO"},"mainEntityOfPage":url},ensure_ascii=False).replace("<","\\u003c")
