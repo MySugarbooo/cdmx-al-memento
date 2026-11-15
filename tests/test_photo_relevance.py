@@ -139,6 +139,44 @@ class PhotoRelevanceTests(unittest.TestCase):
         self.assertIn("https://semovi.cdmx.gob.mx/tramites-y-servicios/vep-vemepe", article["brief"]["method"])
         self.assertEqual(article["description"], article["brief"]["lead"])
 
+    def test_scooter_helmet_proposal_rejects_dancers_and_uses_licensed_scooter_photo(self):
+        title = "No Solo en CDMX: Proponen Uso Obligatorio de Casco en Scooters Eléctricos"
+        article = news.standardize({
+            "title": title,
+            "url": "https://news.google.com/rss/articles/scooter-helmet-proposal",
+            "source": "N+",
+            "date": "2026-11-14",
+            "category": "CDMX",
+        })
+        self.assertEqual(article["category"], "Movilidad")
+
+        dancers = representative_photo(
+            "commons_82750973",
+            "CDMX",
+            "Danzantes en El Zócalo, Ciudad de México - Verde",
+            ["CDMX"],
+        )
+        scooter = next(
+            photo for photo in photos._pool()
+            if photo.get("id") == "contexto_grin_escooter_cdmx_2019"
+        )
+        self.assertLess(_photo_score(article, dancers), 0)
+        self.assertGreaterEqual(_photo_score(article, scooter), 0)
+
+        article["photo"] = deepcopy(dancers)
+        with patch.object(photos, "_pool", return_value=[dancers, scooter]), patch.object(
+            photos, "_load", return_value=[]
+        ):
+            photos.assign_photos([article])
+
+        self.assertEqual(article["photo"]["id"], "contexto_grin_escooter_cdmx_2019")
+        self.assertEqual(article["photo"]["author"], "Sonia Medina")
+        self.assertEqual(article["photo"]["license"], "CC BY 3.0")
+        self.assertEqual(
+            article["photo"]["source"],
+            "https://commons.wikimedia.org/wiki/File:Grin_e-scooter_rider_in_Mexico_City.jpg",
+        )
+
     def test_electric_mobility_story_selects_the_cdmx_e_scooter_photo(self):
         pool = photos._pool()
         old = next(p for p in pool if p.get("id") == "contexto_motocicleta_zocalo_brigada_2017")

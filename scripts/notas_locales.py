@@ -2147,6 +2147,14 @@ def _photo_score(article, photo):
         r"\b(?:scooters?|monopatines?|bicicletas? electricas?|vehiculos? electricos? personales?)\b",
         context,
     ))
+    # Una propuesta de casco obligatorio para scooters requiere una imagen de micromovilidad,
+    # no una fotografía de danzantes o de un monumento por coincidir solo con CDMX.
+    scooter_helmet_story = bool(
+        re.search(r"\b(?:casco|cascos)\b", headline)
+        and re.search(r"\b(?:scooters?|monopatines?)\b", headline)
+    )
+    if scooter_helmet_story:
+        return 5000 if electric_mobility_photo else -10000
     if electric_mobility_story and not electric_mobility_photo:
         return -10000
     vehicle_crash_story = bool(

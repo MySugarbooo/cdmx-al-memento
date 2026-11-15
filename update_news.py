@@ -373,7 +373,7 @@ def category_by_headline(title, feed_category, source=""):
     # Los cursos de manejo defensivo y preventivo son capacitación de movilidad y seguridad vial.
     if re.search(r"\b(?:manejo defensivo|manejo preventivo|conduccion segura)\b", normalized):
         return "Movilidad"
-    if re.search(r"\b(?:motos electricas|bicis y scooters|vehiculos motorizados electricos personales|vemepe|vep)\b", normalized):
+    if re.search(r"\b(?:motos electricas|bicis y scooters|scooters? electricos?|monopatines? electricos?|vehiculos motorizados electricos personales|vemepe|vep)\b", normalized):
         return "Movilidad"
     if re.search(r"\b(?:feria (?:del )?empleo|feria de empleo|vacantes?|reclutamiento|bolsa de trabajo)\b", normalized):
         return "Servicios"
