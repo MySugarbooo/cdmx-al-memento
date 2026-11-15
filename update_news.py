@@ -712,13 +712,6 @@ def standardize(article):
     except ValueError:
         return None
     borough, location = identify_location(title, date)
-    if is_ambito_vite_balu_story({"title": title, "source": source, "date": date}):
-        # Ámbito e Infobae discrepan sobre la alcaldía; no asignar una sin parte primario.
-        borough = ""
-        location = (
-            "Ciudad de México (discrepancia entre fuentes: Ámbito indica Cuauhtémoc; "
-            "Infobae indica Venustiano Carranza)"
-        )
     elif is_infobae_vite_balu_story({"title": title, "source": source, "date": date}):
         borough = "Venustiano Carranza"
         location = "Colonia Centro, alcaldía Venustiano Carranza, Ciudad de México (según Infobae)"
