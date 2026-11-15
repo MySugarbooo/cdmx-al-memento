@@ -22,7 +22,7 @@ from pathlib import Path
 from zoneinfo import ZoneInfo
 
 from scripts.analisis_editorial import build_editorial
-from scripts.notas_locales import local_link, summarize, assign_photos, _photo_score, is_sensitive_media, is_coyotepec_highway_crash, INFOBAE_COYOTEPEC_HIGHWAY_CRASH_SOURCE_URL, is_san_juan_del_rio_autopista57_closure, SENSITIVE_MEDIA_TITLE, SAN_JUAN_DEL_RIO_AUTOPISTA57_SOURCE_URL, is_infobae_tlalpan_animal_abuse, is_la_prensa_tlalpan_animal_case, INFOBAE_TLALPAN_ANIMAL_SOURCE_URL, LA_PRENSA_TLALPAN_ANIMAL_SOURCE_URL, is_imagen_tlalpan_dog_rescue, is_huixtla_migrant_caravan, is_vc_fatal_trailer_incident, EL_GRAFICO_VC_TRAILER_SOURCE_URL, is_infobae_ballet_zapatilla, INFOBAE_BALLET_ZAPATILLA_SOURCE_URL, is_infobae_maria_leon_concert, INFOBAE_MARIA_LEON_CONCERT_SOURCE_URL, is_pulque_barbacoa_fair, is_mauricio_tabe_fifth_report, SDPNOTICIAS_MAURICIO_TABE_REPORT_SOURCE_URL, is_radio_formula_casa_ecologica, RADIO_FORMULA_CASA_ECOLOGICA_SOURCE_URL, is_capital_cdmx_care_budget, CAPITAL_CDMX_CARE_BUDGET_SOURCE_URL, is_la_jornada_aicm_flight_suspension, AICM_FLIGHT_SUSPENSION_SOURCE_URL, is_elsol_women_defensive_driving_workshop, EL_SOL_MUJERES_DEFENSIVE_DRIVING_SOURCE_URL, is_24horas_electric_mobility_plates_guide, HORAS_24_ELECTRIC_MOBILITY_SOURCE_URL, is_codigoqro_ignacio_detention, is_ambito_vite_balu_story, AMBITO_VITE_BALU_SOURCE_URL, is_infobae_vite_balu_story, INFOBAE_VITE_BALU_SOURCE_URL
+from scripts.notas_locales import local_link, summarize, assign_photos, _photo_score, is_sensitive_media, is_coyotepec_highway_crash, INFOBAE_COYOTEPEC_HIGHWAY_CRASH_SOURCE_URL, is_san_juan_del_rio_autopista57_closure, SENSITIVE_MEDIA_TITLE, SAN_JUAN_DEL_RIO_AUTOPISTA57_SOURCE_URL, is_infobae_tlalpan_animal_abuse, is_la_prensa_tlalpan_animal_case, INFOBAE_TLALPAN_ANIMAL_SOURCE_URL, LA_PRENSA_TLALPAN_ANIMAL_SOURCE_URL, is_imagen_tlalpan_dog_rescue, is_huixtla_migrant_caravan, is_vc_fatal_trailer_incident, EL_GRAFICO_VC_TRAILER_SOURCE_URL, is_infobae_ballet_zapatilla, INFOBAE_BALLET_ZAPATILLA_SOURCE_URL, is_infobae_maria_leon_concert, INFOBAE_MARIA_LEON_CONCERT_SOURCE_URL, is_pulque_barbacoa_fair, is_mauricio_tabe_fifth_report, SDPNOTICIAS_MAURICIO_TABE_REPORT_SOURCE_URL, is_radio_formula_casa_ecologica, RADIO_FORMULA_CASA_ECOLOGICA_SOURCE_URL, is_capital_cdmx_care_budget, CAPITAL_CDMX_CARE_BUDGET_SOURCE_URL, is_la_jornada_aicm_flight_suspension, AICM_FLIGHT_SUSPENSION_SOURCE_URL, is_elsol_women_defensive_driving_workshop, EL_SOL_MUJERES_DEFENSIVE_DRIVING_SOURCE_URL, is_24horas_electric_mobility_plates_guide, HORAS_24_ELECTRIC_MOBILITY_SOURCE_URL, is_codigoqro_ignacio_detention, is_infobae_vite_balu_story, INFOBAE_VITE_BALU_SOURCE_URL
 
 ROOT = Path(__file__).resolve().parent
 DEST = ROOT / "news.json"
@@ -819,8 +819,6 @@ def standardize(article):
         result["source"] = "Ahora Noticias"
         result["title"] = normalize_title(result["title"], "Ahora Noticias")
         result["source_url"] = AHORA_NOTICIAS_TLALPAN_PERRITA_SOURCE_URL
-    elif is_ambito_vite_balu_story(result):
-        result["source_url"] = AMBITO_VITE_BALU_SOURCE_URL
     elif is_infobae_vite_balu_story(result):
         result["source_url"] = INFOBAE_VITE_BALU_SOURCE_URL
     elif is_infobae_maria_leon_concert(result):
