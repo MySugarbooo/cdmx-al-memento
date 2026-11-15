@@ -1555,32 +1555,6 @@
       "borough": "",
       "location": "Ciudad de México (sin alcaldía identificada)",
       "local_url": "/noticias/?id=4d018cae85f9420cba5c&mes=2026-11",
-      "brief": {
-        "lead": "De acuerdo con El Independiente, el titular publicado es: «CDMX prepara nuevas reglas para bolsas plásticas en 2027». La información publicada por El Independiente aborda un asunto que este portal clasifica como Medio Ambiente. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-        "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-        "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "contexto_bolsas_plasticas_compras_2015",
-        "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Shopping_plastic_bags.jpg/960px-Shopping_plastic_bags.jpg",
-        "category": "Medio Ambiente",
-        "borough": "",
-        "topic": "Bolsas plásticas de compras en Richmond, Virginia, EE. UU. (2015); foto representativa, no corresponde a CDMX ni a la regulación anunciada.",
-        "keywords": [
-          "bolsas plásticas",
-          "bolsas de plástico",
-          "bolsas para compras",
-          "residuos plásticos",
-          "contaminación por plástico",
-          "regulación de bolsas"
-        ],
-        "author": "Peteruetz",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-        "source": "https://commons.wikimedia.org/wiki/File:Shopping_plastic_bags.jpg"
-      },
       "alternate_versions": [
         {
           "title": "CDMX prepara nuevas reglas para bolsas plásticas en 2027",
@@ -1615,7 +1589,33 @@
             "source": "https://commons.wikimedia.org/wiki/File:Jardin_Esc%C3%A9nico_del_Bosque_de_Chapultepec_02.jpg"
           }
         }
-      ]
+      ],
+      "brief": {
+        "lead": "De acuerdo con El Independiente, el titular publicado es: «CDMX prepara nuevas reglas para bolsas plásticas en 2027». La información publicada por El Independiente aborda un asunto que este portal clasifica como Medio Ambiente. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+        "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+        "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "contexto_bolsas_plasticas_compras_2015",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Shopping_plastic_bags.jpg/960px-Shopping_plastic_bags.jpg",
+        "category": "Medio Ambiente",
+        "borough": "",
+        "topic": "Bolsas plásticas de compras en Richmond, Virginia, EE. UU. (2015); foto representativa, no corresponde a CDMX ni a la regulación anunciada.",
+        "keywords": [
+          "bolsas plásticas",
+          "bolsas de plástico",
+          "bolsas para compras",
+          "residuos plásticos",
+          "contaminación por plástico",
+          "regulación de bolsas"
+        ],
+        "author": "Peteruetz",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:Shopping_plastic_bags.jpg"
+      }
     },
     {
       "title": "Colocan vallas en varios puntos del Centro Histórico de la CDMX, previo a la Marcha de la Generación Z",
