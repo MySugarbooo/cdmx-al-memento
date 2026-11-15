@@ -16,6 +16,7 @@ ROOT = Path(__file__).resolve().parents[1]
 BASE = "https://cdmx-al-memento.pages.dev"
 DEPLOY_ATTEMPTS = 36
 DEPLOY_RETRY_SECONDS = 10
+ARCHIVE_ARTICLE_SAMPLE_SIZE = 100
 
 
 class Links(HTMLParser):
@@ -122,6 +123,19 @@ def article_id(item):
     )
     return match.group(1) if match else None
 
+def article_targets(feed_articles, recent_archive_articles):
+    """Check every current article plus a deterministic recent archive sample."""
+    targets = {}
+    for item in feed_articles:
+        ident = article_id(item)
+        if ident:
+            targets[ident] = item
+    for item in recent_archive_articles[:ARCHIVE_ARTICLE_SAMPLE_SIZE]:
+        ident = article_id(item)
+        if ident:
+            targets.setdefault(ident, item)
+    return list(targets.values())
+
 
 def validate_feed(data):
     if not isinstance(data, dict) or not isinstance(data.get("articles"), list):
@@ -201,6 +215,8 @@ def validate_article_html(item, data):
     elif item.get("sensitive_media") is True:
         if "Sin fotografía verificada del hecho" not in page_html:
             raise ValueError("la noticia sensible no muestra el aviso de fotografía")
+    elif re.search(r'class=["\'][^"\']*article-photo', page_html, re.IGNORECASE):
+        raise ValueError("el artículo público conserva una fotografía que no existe en main")
     return True
 
 
@@ -232,13 +248,17 @@ def check_public_data():
         same_json_validator(local_manifest, "/archivo/meses.json"),
     )
     archive_total = 0
-    for month in months:
+    recent_archive_articles = []
+    for month_index, month in enumerate(months):
         name = str(month.get("month") or "")
         if not re.fullmatch(r"\d{4}-\d{2}", name):
             raise ValueError("archivo/meses.json: nombre de mes inválido")
         relative = f"archivo/{name}.json"
         local_archive = load_local_json(relative)
-        count = len(archive_records(local_archive))
+        records = archive_records(local_archive)
+        if month_index == 0:
+            recent_archive_articles = records[:ARCHIVE_ARTICLE_SAMPLE_SIZE]
+        count = len(records)
         expected_count = int(month.get("count") or 0)
         if count != expected_count:
             raise ValueError(
@@ -284,16 +304,7 @@ def check_public_data():
         f"OK /sitemap-articulos.xml: {len(local_article_sitemap)} URLs coinciden con main"
     )
 
-    targets = []
-    for item in articles[:3]:
-        if article_id(item):
-            targets.append(item)
-    cablebus = next(
-        (item for item in articles if "cablebús" in item["title"].casefold()),
-        None,
-    )
-    if cablebus and cablebus not in targets and article_id(cablebus):
-        targets.append(cablebus)
+    targets = article_targets(articles, recent_archive_articles)
     for item in targets:
         ident = article_id(item)
         path = f"/articulos/{ident}/"
@@ -303,7 +314,7 @@ def check_public_data():
             path,
             lambda data, article=item: validate_article_html(article, data),
         )
-        print(f"OK {path}: título, ubicación y créditos coinciden con news.json")
+        print(f"OK {path}: título, ubicación y créditos coinciden con feed/hemeroteca")
 
     # La página de créditos combina el catálogo editorial y las fotos contextuales.
     # No usar el índice de noticias: su total puede ser distinto del catálogo público.
