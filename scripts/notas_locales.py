@@ -1875,8 +1875,20 @@ PHOTO_BOROUGH_ALIASES = {
 }
 
 
+def is_segundo_a_segundo_green_areas_standard(article):
+    title = _photo_fold(article.get("title"))
+    return (
+        str(article.get("date") or "")[:10] == "2026-11-15"
+        and _photo_fold(article.get("source")) == "segundo a segundo"
+        and "sistemas integrales vivientes" in title
+        and "areas verdes" in title
+    )
+
+
 def _photo_category(article):
     headline=_photo_fold(article.get("title"))
+    if is_segundo_a_segundo_green_areas_standard(article):
+        return "Medio Ambiente"
     if is_animal_abuse_statistics_report(article):
         return "Medio Ambiente"
     if is_la_prensa_prehospital_care(article):
@@ -2397,6 +2409,8 @@ def _photo_score(article, photo):
     topic=re.sub(r"\bno\b[^;.)]*", "", topic)
     keywords=_photo_fold(" ".join(str(x) for x in photo.get("keywords",[])))
     context=topic+" "+keywords
+    if is_segundo_a_segundo_green_areas_standard(article):
+        return 5000 if photo.get("id") == "commons_157736184" else -10000
     if is_animal_abuse_statistics_report(article):
         return 5000 if photo.get("id") == "contexto_perros_parque_espana" else -10000
     if is_la_prensa_prehospital_care(article):
