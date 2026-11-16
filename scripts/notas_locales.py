@@ -87,6 +87,7 @@ LA_RAZON_GARBAGE_ZOCALO_SOURCE_URL = "https://www.razon.com.mx/ciudad/2026/11/15
 INFOBAE_GARBAGE_ZOCALO_SOURCE_URL = "https://www.infobae.com/mexico/2026/11/15/garbage-en-el-zocalo-de-la-cdmx-asi-puedes-seguir-el-concierto-en-vivo-de-manera-gratuita/"
 ESTO_49ERS_FANS_SOURCE_URL = "https://oem.com.mx/esto/futbol-americano/aficionados-de-san-francisco-49ers-en-cdmx-hablan-de-la-rivalidad-contra-dallas-cowboys-33151840"
 INFOBAE_KAROL_G_HEALTH_SOURCE_URL = "https://www.infobae.com/mexico/2026/11/16/que-le-paso-a-karol-g-filtran-la-supuesta-enfermedad-que-la-habria-obligado-a-posponer-su-concierto-en-la-cdmx/"
+INFOBAE_KAROL_G_REPROGRAMMED_CONCERT_SOURCE_URL = "https://www.infobae.com/mexico/2026/11/15/karol-g-en-cdmx-reprograma-su-concierto-de-hoy-domingo-15-de-noviembre-por-motivos-de-salud/"
 INFOBAE_AIR_QUALITY_20261115_SOURCE_URL = "https://www.infobae.com/mexico/2026/11/15/asi-esta-la-calidad-del-aire-de-la-cdmx-y-edomex-este-15-de-noviembre/"
 BILLBOARD_KAROL_G_CDMX_SOURCE_URL = "https://www.billboard.com/espanol/noticias/karol-g-posterga-concierto-en-mexico-nueva-fecha-1236382613/"
 ELCONGRESISTA_BUEN_FIN_CDMX_SOURCE_URL = "https://elcongresista.mx/politica/cdmx/gobierno-cdmx-operativo-el-buen-fin"
@@ -128,7 +129,7 @@ def is_generation_z_zocalo_march(article):
 
 
 def is_infobae_karol_g_health_story(article):
-    """Identifica la nota de Infobae sobre la reprogramación del concierto de Karol G."""
+    """Identifica las notas de Infobae sobre la reprogramación del concierto de Karol G."""
     title = _photo_fold(article.get("title"))
     source = _photo_fold(article.get("source"))
     return (
@@ -140,6 +141,7 @@ def is_infobae_karol_g_health_story(article):
             "supuesta enfermedad" in title
             or "posponer" in title
             or "reprograma" in title
+            or "cancela" in title
         )
     )
 
