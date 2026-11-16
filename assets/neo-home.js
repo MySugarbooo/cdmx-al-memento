@@ -271,6 +271,15 @@ function homepageEventKey(article){
  const title=String(article?.title||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLocaleLowerCase('es-MX');
  const day=homepageDay(article?.published_at||article?.date);
  if(day==='2026-11-15'&&/\bgarbage\b/.test(title)&&/\bzocalo\b/.test(title)&&/\b90 mil\b/.test(title))return 'garbage-zocalo-concert-2026-11-14';
+ // Siete medios cubrieron el mismo cierre de la estación Zócalo/Tenochtitlán
+ // de la Línea 2 el 15/11/2026. Agrupar por fecha conserva coberturas futuras
+ // como eventos distintos y evita repetir la misma incidencia en portada.
+ if(/\bmetro\b/.test(title)&&/\bzocalo\b/.test(title)&&/\b(?:cierra|cierran|cerrada|cierre)\b/.test(title))
+  return 'metro-zocalo-line2-closure-'+day;
+ // Varias fuentes cubrieron la misma marcha de Generación Z del 15/11/2026.
+ // Agrupar por fecha evita que una sola movilización ocupe varias tarjetas.
+ if(day==='2026-11-15'&&/\bgeneracion z\b/.test(title)&&/\b(?:march\w*|protest\w*)\b|\btoma las calles\b/.test(title))
+  return 'generation-z-cdmx-march-'+day;
  return '';
 }
 function eligibleStories(feed){
@@ -285,6 +294,9 @@ function eligibleStories(feed){
   if(!(/^https:\/\/news\.google\.com\//.test(a.url||'')||a.editorial_verified===true))return false;
   if(!/^\/noticias\/\?/.test(a.local_url||''))return false;
   const eventKey=homepageEventKey(a);
+  // Para el cierre de Zócalo, elegir una imagen representativa de la Línea 2;
+  // descartar fotos de estaciones de otras líneas antes de marcar el evento visto.
+  if(eventKey?.startsWith('metro-zocalo-line2-closure-')&&!/\blinea 2\b/.test(normalizeSensitiveText(p?.topic)))return false;
   if(eventKey&&seenEvents.has(eventKey))return false;
   if(p)usedPhotos.add(p.url);
   if(eventKey)seenEvents.add(eventKey);
