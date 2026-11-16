@@ -314,6 +314,34 @@ class PhotoRelevanceTests(unittest.TestCase):
         self.assertTrue(any(word in article["photo"]["topic"].casefold()
                             for word in ("policia", "patrulla")))
 
+    def test_zocalo_line2_closure_rejects_observatorio_line1_photo(self):
+        article = news.standardize({
+            "title": "Cierran estación Zócalo del Metro CDMX hasta nuevo aviso: ¿qué opciones tienes para llegar?",
+            "url": "https://news.google.com/rss/articles/reporte-indigo-zocalo-line2-20261115",
+            "source": "Reporte Indigo",
+            "date": "2026-11-15",
+            "published_at": "2026-11-15T21:21:02Z",
+            "category": "Metro",
+        })
+        self.assertIsNotNone(article)
+        observatorio = representative_photo(
+            "commons_179002583",
+            "Metro",
+            "Estación Observatorio de la Línea 1 del Metro de la Ciudad de México",
+            ["Metro Ciudad de México", "Línea 1"],
+        )
+        xola = next(photo for photo in photos._pool() if photo.get("id") == "commons_175204019")
+        self.assertLess(_photo_score(article, observatorio), 0)
+        self.assertGreaterEqual(_photo_score(article, xola), 0)
+        article["photo"] = deepcopy(observatorio)
+        with patch.object(photos, "_pool", return_value=[observatorio, xola]), patch.object(
+            photos, "_load", return_value=[]
+        ):
+            assign_photos([article])
+        self.assertEqual(article["photo"]["id"], "commons_175204019")
+        self.assertIn("Línea 2", article["photo"]["topic"])
+        self.assertEqual(article["photo"]["license"], "CC BY-SA 4.0")
+
     def test_nfl_event_is_not_metro_and_uses_licensed_football_photo(self):
         title = ("NFL en México: estas son todas las actividades que podrás disfrutar "
                  "en las calles de la CDMX previo al juego de San Francisco 49ers "
