@@ -4311,7 +4311,7 @@ class ContextPhotoRelevanceRegressionTests(unittest.TestCase):
         photo = self._assert_replacement(article, "commons_147737815", "contexto_tlahuac_plaza_denuncias")
         self.assertEqual(photo["author"], "Yavidaxiu")
         self.assertEqual(photo["license"], "CC BY 3.0")
-        self.assertIn("no representa ni documenta las denuncias de 2024", photo["topic"])
+        self.assertIn("no documenta denuncias de 2024", photo["topic"])
 
     def test_topilejo_maize_route_uses_local_photo_not_palacio_nacional(self):
         article = self._article("Gobierno de CDMX inaugura Ruta del Maíz en Topilejo: costo y horarios", "infopoder")
@@ -4334,7 +4334,7 @@ class ContextPhotoRelevanceRegressionTests(unittest.TestCase):
         photo = self._assert_replacement(article, "commons_98002547", "contexto_utopia_meyehualco_program")
         self.assertEqual(photo["author"], "Wotancito")
         self.assertEqual(photo["license"], "CC BY-SA 4.0")
-        self.assertIn("no documenta las incorporaciones de 2026", photo["topic"])
+        self.assertIn("no documenta incorporaciones de 2026", photo["topic"])
 
     def test_mago_de_oz_story_uses_arena_venue_not_paseo_de_la_reforma(self):
         article = self._article(
