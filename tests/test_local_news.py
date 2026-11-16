@@ -4,7 +4,7 @@ import unittest
 from pathlib import Path
 from scripts.notas_locales import assign_photos, local_link, summarize, is_sensitive_media, RADIO_FORMULA_CASA_ECOLOGICA_SOURCE_URL, INFOBAE_MARIA_LEON_CONCERT_SOURCE_URL, AICM_FLIGHT_SUSPENSION_SOURCE_URL, LA_RAZON_GARBAGE_ZOCALO_SOURCE_URL, INFOBAE_GARBAGE_ZOCALO_SOURCE_URL
 from scripts.build_article_seo import article_id, render
-from update_news import clear_sensitive_context_photos, category_by_headline, standardize, photo_needs_refresh, CAPITAL_CDMX_CARE_BUDGET_SOURCE_URL, prioritize_photo_refresh, build_homepage_feed, archive_record_key, dedupe_homepage_events
+from update_news import clear_sensitive_context_photos, category_by_headline, standardize, photo_needs_refresh, CAPITAL_CDMX_CARE_BUDGET_SOURCE_URL, prioritize_photo_refresh, build_homepage_feed, archive_record_key, dedupe_homepage_events, INFOBAE_AIR_QUALITY_20261115_SOURCE_URL, BILLBOARD_KAROL_G_CDMX_SOURCE_URL, ELCONGRESISTA_BUEN_FIN_CDMX_SOURCE_URL, TV_AZTECA_HOY_NO_CIRCULA_20261116_SOURCE_URL
 
 ROOT=Path(__file__).resolve().parents[1]
 
@@ -51,6 +51,108 @@ class LocalNewsTests(unittest.TestCase):
         self.assertEqual(result["description"], result["brief"]["lead"])
         page = render(result, article_id(result))
         self.assertIn(source_url, page)
+        self.assertNotIn(result["url"], page)
+
+    def test_infobae_air_quality_uses_time_scoped_summary_direct_source_and_imeca_photo(self):
+        result = standardize({
+            "title": "Así está la calidad del aire de la CDMX y Edomex este 15 de noviembre",
+            "url": "https://news.google.com/rss/articles/infobae-air-quality-20261115?oc=5",
+            "source": "Infobae",
+            "date": "2026-11-15",
+            "published_at": "2026-11-15T21:30:00Z",
+            "category": "Medio Ambiente",
+        })
+        self.assertIsNotNone(result)
+        self.assertEqual(result["source_url"], INFOBAE_AIR_QUALITY_20261115_SOURCE_URL)
+        self.assertIn("15:00", result["brief"]["lead"])
+        self.assertIn("Mala", result["brief"]["lead"])
+        self.assertIn("Alto", result["brief"]["lead"])
+        self.assertIn("16 estaciones", result["brief"]["lead"])
+        self.assertIn("13 del Edomex", result["brief"]["lead"])
+        self.assertIn("no una medición vigente", result["brief"]["pending"])
+        self.assertEqual(result["description"], result["brief"]["lead"])
+        assign_photos([result])
+        self.assertEqual(result["photo"]["id"], "contexto_imeca_calidad_aire_cdmx")
+        self.assertEqual(result["photo"]["author"], "(WT-en) Fabz at English Wikivoyage")
+        self.assertEqual(result["photo"]["license"], "CC BY-SA 1.0")
+        page = render(result, article_id(result))
+        self.assertIn(INFOBAE_AIR_QUALITY_20261115_SOURCE_URL, page)
+        self.assertNotIn(result["url"], page)
+
+    def test_billboard_karol_g_story_uses_direct_source_neutral_summary_and_same_venue_context_photo(self):
+        result = standardize({
+            "title": "Karol G posterga tercer concierto en Ciudad de México ‘por motivos de salud’: Aquí la nueva fecha",
+            "url": "https://news.google.com/rss/articles/karol-g-billboard-20261115?oc=5",
+            "source": "Billboard",
+            "date": "2026-11-15",
+            "published_at": "2026-11-16T02:48:17Z",
+            "category": "CDMX",
+        })
+        self.assertIsNotNone(result)
+        self.assertEqual(result["source_url"], BILLBOARD_KAROL_G_CDMX_SOURCE_URL)
+        self.assertEqual(result["category"], "Cultura")
+        self.assertIn("OCESA", result["brief"]["lead"])
+        self.assertIn("17 de noviembre", result["brief"]["lead"])
+        self.assertIn("no especificó un diagnóstico", result["brief"]["lead"])
+        self.assertIn("Ticketmaster", result["brief"]["context"])
+        assign_photos([result])
+        self.assertEqual(result["photo"]["id"], "contexto_concierto_foro_sol_2023")
+        self.assertEqual(result["photo"]["author"], "Nanahuatl")
+        self.assertEqual(result["photo"]["license"], "CC BY-SA 4.0")
+        page = render(result, article_id(result))
+        self.assertIn(BILLBOARD_KAROL_G_CDMX_SOURCE_URL, page)
+        self.assertNotIn(result["url"], page)
+
+    def test_elcongresista_buen_fin_story_flags_wrong_authority_and_uses_zocalo_context_photo(self):
+        result = standardize({
+            "title": "Gobierno de la CDMX asegura movilidad fluida durante El Buen Fin",
+            "url": "https://news.google.com/rss/articles/elcongresista-buen-fin-20261115?oc=5",
+            "source": "El Congresista",
+            "date": "2026-11-15",
+            "published_at": "2026-11-16T04:49:00Z",
+            "category": "Gobierno",
+        })
+        self.assertIsNotNone(result)
+        self.assertEqual(result["source_url"], ELCONGRESISTA_BUEN_FIN_CDMX_SOURCE_URL)
+        self.assertIn("Pepe Chedraui", result["brief"]["lead"])
+        self.assertIn("Clara Brugada", result["brief"]["lead"])
+        self.assertIn("Puebla", result["brief"]["lead"])
+        self.assertIn("https://gobierno.cdmx.gob.mx/", result["brief"]["method"])
+        self.assertIn("https://pueblacapital.gob.mx/noticias/capital-imparable/encabeza-pepe-chedraui-encendido-por-fiestas-patrias", result["brief"]["method"])
+        self.assertIn("No se confirma el despliegue", result["brief"]["pending"])
+        self.assertEqual(result["borough"], "Cuauhtémoc")
+        assign_photos([result])
+        self.assertEqual(result["photo"]["id"], "commons_149171771")
+        self.assertEqual(result["photo"]["author"], "ProtoplasmaKid")
+        self.assertEqual(result["photo"]["license"], "CC BY-SA 4.0")
+        page = render(result, article_id(result))
+        self.assertIn(ELCONGRESISTA_BUEN_FIN_CDMX_SOURCE_URL, page)
+        self.assertNotIn(result["url"], page)
+
+    def test_tvazteca_hoy_no_circula_story_uses_specific_summary_source_and_traffic_photo(self):
+        result = standardize({
+            "title": "¿Sales de paseo por el puente? Checa si tu automóvil puede circular en CDMX y Edomex",
+            "url": "https://news.google.com/rss/articles/tvazteca-hoy-no-circula-20261116?oc=5",
+            "source": "TV Azteca",
+            "date": "2026-11-15",
+            "published_at": "2026-11-16T01:45:24Z",
+            "category": "CDMX",
+        })
+        self.assertIsNotNone(result)
+        self.assertEqual(result["source_url"], TV_AZTECA_HOY_NO_CIRCULA_20261116_SOURCE_URL)
+        self.assertEqual(result["category"], "Movilidad")
+        self.assertIn("16 de noviembre de 2026", result["brief"]["lead"])
+        self.assertIn("engomado amarillo", result["brief"]["lead"])
+        self.assertIn("5 o 6", result["brief"]["lead"])
+        self.assertIn("holograma 1 o 2", result["brief"]["lead"])
+        self.assertIn("05:00 a 22:00", result["brief"]["lead"])
+        self.assertIn("18 municipios", result["brief"]["lead"])
+        assign_photos([result])
+        self.assertEqual(result["photo"]["id"], "contexto_trafico_eje_central")
+        self.assertEqual(result["photo"]["author"], "Sergio Estrada Flores")
+        self.assertEqual(result["photo"]["license"], "CC BY 4.0")
+        page = render(result, article_id(result))
+        self.assertIn(TV_AZTECA_HOY_NO_CIRCULA_20261116_SOURCE_URL, page)
         self.assertNotIn(result["url"], page)
 
     def make(self,i,category):
