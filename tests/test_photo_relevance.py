@@ -4133,5 +4133,35 @@ class DiarioYucatanGarbageZocaloPhotoRegressionTests(unittest.TestCase):
         self.assertEqual(article["photo"]["license"], "CC BY-SA 4.0")
         self.assertIn("Zócalo", article["photo"]["topic"])
 
+class ElPaisRevolucionDesfilePhotoRegressionTests(unittest.TestCase):
+    def test_el_pais_revolution_parade_uses_monument_not_catrinas(self):
+        article = news.standardize({
+            "title": "El desfile de la Revolución en Ciudad de México: horario, ruta y contingentes",
+            "url": "https://news.google.com/rss/articles/elpais-revolucion-desfile-20261116",
+            "source": "EL PAÍS",
+            "date": "2026-11-16",
+            "published_at": "2026-11-16T14:00:00Z",
+            "category": "CDMX",
+        })
+        self.assertIsNotNone(article)
+        self.assertTrue(photos.is_elpais_revolucion_desfile(article))
+        pool = {photo["id"]: photo for photo in photos._pool()}
+        catrinas = deepcopy(pool["reciente_a5a3bc52fa77c066"])
+        monument = deepcopy(pool["commons_107165242"])
+        article["photo"] = catrinas
+
+        self.assertLess(_photo_score(article, catrinas), 0)
+        self.assertEqual(_photo_score(article, monument), 5000)
+        with patch.object(photos, "_pool", return_value=[catrinas, monument]), patch.object(
+            photos, "_load", return_value=[]
+        ):
+            assign_photos([article])
+
+        self.assertEqual(article["photo"]["id"], "commons_107165242")
+        self.assertEqual(article["photo"]["author"], "CésarRood")
+        self.assertEqual(article["photo"]["license"], "CC BY-SA 4.0")
+        self.assertIn("Monumento a la Revolución", article["photo"]["topic"])
+
+
 if __name__ == "__main__":
     unittest.main()
