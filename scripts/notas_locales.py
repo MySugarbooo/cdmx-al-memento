@@ -1067,7 +1067,7 @@ def summarize(article):
                 "tareas de diagnóstico o tratamiento."
             ),
             "pending": (
-                "Es una propuesta legislativa, no un programa aprobado ni una capacitación ya implementada. "
+                "No es un programa aprobado ni una capacitación ya implementada; se trata de una propuesta legislativa. "
                 "El dato de uno de cada cuatro adolescentes se atribuye a la ENSANUT citada por Infobae."
             ),
             "method": (
