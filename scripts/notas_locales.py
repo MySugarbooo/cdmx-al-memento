@@ -157,6 +157,18 @@ def is_infobae_air_quality_report(article):
     )
 
 
+def is_reporte_indigo_contingency_story(article):
+    """Identifica el reporte de contingencia y calidad del aire de Reporte Indigo del 16/11/2026."""
+    title = _photo_fold(article.get("title"))
+    return (
+        str(article.get("date") or "") == "2026-11-16"
+        and _photo_fold(article.get("source")) == "reporte indigo"
+        and "contingencia ambiental" in title
+        and "calidad del aire" in title
+        and "no circulan" in title
+    )
+
+
 def is_billboard_karol_g_concert_story(article):
     """Identifica la cobertura de Billboard sobre la reprogramación del concierto de Karol G."""
     title = _photo_fold(article.get("title"))
@@ -2609,7 +2621,7 @@ def _photo_score(article, photo):
     topic=re.sub(r"\bno\b[^;.)]*", "", topic)
     keywords=_photo_fold(" ".join(str(x) for x in photo.get("keywords",[])))
     context=topic+" "+keywords
-    if is_infobae_air_quality_report(article):
+    if is_infobae_air_quality_report(article) or is_reporte_indigo_contingency_story(article):
         return 5000 if photo.get("id") == "contexto_imeca_calidad_aire_cdmx" else -10000
     if is_billboard_karol_g_concert_story(article):
         return 5000 if photo.get("id") == "contexto_concierto_foro_sol_2023" else -10000
