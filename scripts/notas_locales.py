@@ -451,6 +451,18 @@ def is_capital_cdmx_tlahuac_colony_crime_stats(article):
     )
 
 
+def is_milenio_ruta_maiz_transport_story(article):
+    """Identifica la guía de MILENIO sobre la Ruta del Maíz de Topilejo."""
+    title = _photo_fold(article.get("title"))
+    return (
+        str(article.get("date") or "") == "2026-11-16"
+        and _photo_fold(article.get("source")) == "milenio"
+        and "ruta del maiz" in title
+        and "paradas" in title
+        and "costo de viajar" in title
+    )
+
+
 def is_infopoder_ruta_maiz_topilejo(article):
     """Identifica la guía de la Ruta del Maíz en San Miguel Topilejo."""
     title = _photo_fold(article.get("title"))
@@ -3070,6 +3082,8 @@ def _photo_score(article, photo):
         return 5000 if photo.get("id") == "commons_118485288" else -10000
     if is_capital_cdmx_tlahuac_colony_crime_stats(article):
         return 5000 if photo.get("id") == "contexto_tlahuac_plaza_denuncias" else -10000
+    if is_milenio_ruta_maiz_transport_story(article):
+        return 5000 if photo.get("id") == "commons_112950009" else -10000
     if is_infopoder_ruta_maiz_topilejo(article):
         return 5000 if photo.get("id") == "commons_112950009" else -10000
     if is_el_sol_utopias_program_story(article):
