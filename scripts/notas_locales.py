@@ -969,21 +969,24 @@ def summarize(article):
     if is_capital_cdmx_cuajimalpa_crime_stats(article):
         return {
             "lead": (
-                "Capital CDMX señala que Santa Fe concentró 207 denuncias durante 2024 en su desglose "
-                "por colonia para la alcaldía Cuajimalpa de Morelos. La cifra se atribuye al medio."
+                "Capital CDMX reporta que Santa Fe Cuajimalpa registró 207 denuncias por delitos en la calle "
+                "entre enero y diciembre de 2024; Cuajimalpa, 129; y Jesús del Monte, 60. El medio atribuye "
+                "el desglose a carpetas de investigación de la FGJ CDMX sistematizadas por WebHerramientas."
             ),
             "context": (
-                "El dato corresponde a un corte histórico de 2024; no es una medición de riesgo actual "
-                "ni una tasa ajustada por población."
+                "En un corte distinto, de enero a septiembre de 2026, el medio señala 143 reportes por robo a "
+                "negocio y 3 homicidios dolosos para toda la alcaldía; la ENSU de septiembre de 2026 ubicó en "
+                "43.7% la percepción de inseguridad. Estas cifras no corresponden solo a Santa Fe."
             ),
             "pending": (
-                "El desglose completo y su metodología deben consultarse en la publicación original. "
-                "No se añaden otras cantidades ni comparaciones que no estén verificadas."
+                "El 93.4% de delitos no denunciados o sin carpeta que cita la nota es una estimación nacional "
+                "de 2025, no una tasa de Cuajimalpa. Las cifras por colonia corresponden a registros de 2024 "
+                "y no describen el riesgo individual ni la situación actual."
             ),
             "method": (
-                "Síntesis editorial basada en el titular y el extracto indexado de Capital CDMX, "
-                "16 de noviembre de 2026: " + CAPITAL_CDMX_CUAJIMALPA_CRIME_STATS_SOURCE_URL +
-                ". No equivale a una verificación independiente."
+                "Síntesis editorial basada en Capital CDMX, 16 de noviembre de 2026: " +
+                CAPITAL_CDMX_CUAJIMALPA_CRIME_STATS_SOURCE_URL +
+                ". Las cifras se atribuyen al medio y a las fuentes que cita; no equivalen a una verificación independiente."
             ),
         }
     if is_capital_cdmx_vc_crime_stats(article):
