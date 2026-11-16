@@ -4227,6 +4227,46 @@ class RevolucionMexicanaDesfilePhotoRegressionTests(unittest.TestCase):
         self.assertIn("Monumento a la Revolución", article["photo"]["topic"])
 
 
+class TvAztecaRevolucionDesfilePhotoRegressionTests(unittest.TestCase):
+    def test_tv_azteca_desfile_guide_uses_monument_verified_source_and_route_summary(self):
+        article = news.standardize({
+            "title": "Desfile del 20 de noviembre en CDMX: Ruta, horarios y alternativas viales por cortes a la circulación",
+            "url": "https://news.google.com/rss/articles/tvazteca-revolucion-desfile-20261116",
+            "source": "TV Azteca",
+            "date": "2026-11-16",
+            "published_at": "2026-11-16T17:18:15Z",
+            "category": "Movilidad",
+        })
+        self.assertIsNotNone(article)
+        self.assertTrue(photos.is_tvazteca_revolucion_desfile_2026(article))
+        self.assertEqual(article["source_url"], photos.TV_AZTECA_REVOLUCION_DESFILE_SOURCE_URL)
+        self.assertEqual(article["borough"], "Cuauhtémoc")
+        self.assertIn("10:00", article["brief"]["lead"])
+        self.assertIn("Zócalo", article["brief"]["lead"])
+        self.assertIn("5 de Mayo", article["brief"]["lead"])
+        self.assertIn("10 contingentes", article["brief"]["context"])
+        self.assertIn("2,900", article["brief"]["context"])
+        self.assertIn("evento futuro", article["brief"]["pending"])
+
+        pool = {photo["id"]: photo for photo in photos._pool()}
+        wrong = deepcopy(pool["reciente_d3bf2851210c8f52"])
+        monument = deepcopy(pool["contexto_monumento_revolucion_desfile_2026"])
+        article["photo"] = wrong
+
+        self.assertIn("Catrinas", wrong["topic"])
+        self.assertLess(_photo_score(article, wrong), 0)
+        self.assertEqual(_photo_score(article, monument), 5000)
+        with patch.object(photos, "_pool", return_value=[wrong, monument]), patch.object(
+            photos, "_load", return_value=[]
+        ):
+            assign_photos([article])
+
+        self.assertEqual(article["photo"]["id"], "contexto_monumento_revolucion_desfile_2026")
+        self.assertEqual(article["photo"]["author"], "CésarRood")
+        self.assertEqual(article["photo"]["license"], "CC BY-SA 4.0")
+        self.assertIn("no del desfile de 2026", article["photo"]["topic"])
+
+
 class SopitasEdisDiscriminationPhotoRegressionTests(unittest.TestCase):
     def test_edis_story_uses_neutral_cdmx_pedestrian_photo_not_unrelated_church(self):
         article = news.standardize({
