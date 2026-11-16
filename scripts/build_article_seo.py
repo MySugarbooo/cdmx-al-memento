@@ -78,6 +78,7 @@ VERIFIED_SOURCE_URLS = frozenset({
     "https://capital-cdmx.org/colonias-mas-denuncias-venustiano-carranza-capital-ayuda-2026/",
     "https://elpais.com/mexico/2026-11-16/el-desfile-de-la-revolucion-en-ciudad-de-mexico-horario-ruta-y-contingentes.html",
     "https://www.sopitas.com/noticias/discriminacion-cdmx-copred-edis-2026/",
+    "https://www.tvazteca.com/aztecanoticias/desfile-del-20-de-noviembre-en-cdmx-ruta-horarios-y-alternativas-viales-por-cortes-a-la-circulacion/?outputType=amp",
 })
 SENSITIVE_MEDIA_TITLE = re.compile(
     r"\b(?:violaci[oó]n|abuso sexual|agresi[oó]n sexual|acoso sexual|violencia sexual|"
