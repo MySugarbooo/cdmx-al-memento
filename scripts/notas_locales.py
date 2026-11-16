@@ -76,6 +76,8 @@ LA_PRENSA_MAURICIO_TABE_REPORT_SOURCE_URL = "https://oem.com.mx/la-prensa/metrop
 RADIO_FORMULA_CASA_ECOLOGICA_SOURCE_URL = "https://www.radioformula.com.mx/cdmx/calentadores-solares-y-captacion-de-lluvia-el-plan-de-cdmx-para-ahorrar-en-casa-20261112-0088.html"
 LA_JORNADA_CASA_ECOLOGICA_SOURCE_URL = "https://www.jornada.com.mx/noticia/2026/11/12/capital/lanza-cdmx-programa-de-ecotecnias-para-10-mil-viviendas-en-alvaro-obregon"
 CAPITAL_CDMX_CARE_BUDGET_SOURCE_URL = "https://capital-cdmx.org/presupuesto-cuidados-2027-cdmx-cuanto-dinero-llegara-anexo-31-desglose/"
+CAPITAL_CDMX_CUAJIMALPA_CRIME_STATS_SOURCE_URL = "https://capital-cdmx.org/colonias-mas-denuncias-cuajimalpa-de-morelos-capital-ayuda-2026/"
+CAPITAL_CDMX_VENUSTIANO_CRIME_STATS_SOURCE_URL = "https://capital-cdmx.org/colonias-mas-denuncias-venustiano-carranza-capital-ayuda-2026/"
 EL_SOL_MUJERES_DEFENSIVE_DRIVING_SOURCE_URL = "https://oem.com.mx/elsoldemexico/metropoli/ofrecen-taller-gratuito-de-manejo-defensivo-y-preventivo-para-mujeres-en-cdmx-33130686"
 HORAS_24_ELECTRIC_MOBILITY_SOURCE_URL = "https://24-horas.mx/cdmx/registro-emplacamiento-vemepe-vep-cdmx-costos-requisitos/"
 INFOBAE_VITE_BALU_SOURCE_URL = "https://www.infobae.com/mexico/2026/11/14/capturan-al-vite-y-al-balu-en-el-centro-de-cdmx-con-15-kilos-de-marihuana-y-mas-de-600-dosis-de-cocaina/"
@@ -139,6 +141,31 @@ def is_periodico_am_49ers_cdmx_story(article):
         and "49ers" in title
         and "estadio azteca" in title
         and "cdmx" in title
+    )
+
+
+def is_capital_cdmx_cuajimalpa_crime_stats(article):
+    """Identifica el desglose 2024 de denuncias por colonia en Cuajimalpa publicado por Capital CDMX."""
+    title = _photo_fold(article.get("title"))
+    return (
+        str(article.get("date") or "")[:10] == "2026-11-16"
+        and _photo_fold(article.get("source")) == "capital cdmx"
+        and "santa fe" in title
+        and "207 denuncias" in title
+        and "cuajimalpa" in title
+    )
+
+
+def is_capital_cdmx_vc_crime_stats(article):
+    """Identifica el desglose 2024 de denuncias en Jardín Balbuena y Zona Centro."""
+    title = _photo_fold(article.get("title"))
+    return (
+        str(article.get("date") or "")[:10] == "2026-11-16"
+        and _photo_fold(article.get("source")) == "capital cdmx"
+        and "jardin balbuena" in title
+        and "zona centro" in title
+        and "venustiano carranza" in title
+        and "2024" in title
     )
 
 
@@ -939,6 +966,52 @@ def summarize(article):
     category=str(article.get("category") or "CDMX")
     theme=TAGS.get(category,TAGS["CDMX"])
     folded_title=_photo_fold(title)
+    if is_capital_cdmx_cuajimalpa_crime_stats(article):
+        return {
+            "lead": (
+                "Capital CDMX reporta que Santa Fe Cuajimalpa registró 207 denuncias por delitos en la calle "
+                "entre enero y diciembre de 2024; Cuajimalpa, 129; y Jesús del Monte, 60. El medio atribuye "
+                "el desglose a carpetas de investigación de la FGJ CDMX sistematizadas por WebHerramientas."
+            ),
+            "context": (
+                "En un corte distinto, de enero a septiembre de 2026, el medio señala 143 reportes por robo a "
+                "negocio y 3 homicidios dolosos para toda la alcaldía; la ENSU de septiembre de 2026 ubicó en "
+                "43.7% la percepción de inseguridad. Estas cifras no corresponden solo a Santa Fe."
+            ),
+            "pending": (
+                "El 93.4% de delitos no denunciados o sin carpeta que cita la nota es una estimación nacional "
+                "de 2025, no una tasa de Cuajimalpa. Las cifras por colonia corresponden a registros de 2024 "
+                "y no describen el riesgo individual ni la situación actual."
+            ),
+            "method": (
+                "Síntesis editorial basada en Capital CDMX, 16 de noviembre de 2026: " +
+                CAPITAL_CDMX_CUAJIMALPA_CRIME_STATS_SOURCE_URL +
+                ". Las cifras se atribuyen al medio y a las fuentes que cita; no equivalen a una verificación independiente."
+            ),
+        }
+    if is_capital_cdmx_vc_crime_stats(article):
+        return {
+            "lead": (
+                "Capital CDMX reporta que Jardín Balbuena registró 385 denuncias por delitos en la calle "
+                "entre enero y diciembre de 2024; Zona Centro, 322; y Moctezuma Segunda Sección, 266. "
+                "El medio atribuye el desglose a carpetas de investigación de la FGJ CDMX sistematizadas "
+                "por WebHerramientas."
+            ),
+            "context": (
+                "La nota separa ese corte por colonia de los datos agregados de la alcaldía para enero-septiembre "
+                "de 2026: 492 reportes por robo de autopartes o a interior de vehículo y 36 homicidios dolosos. "
+                "La ENSU de septiembre de 2026 registró 49.8% de percepción de inseguridad en la demarcación."
+            ),
+            "pending": (
+                "Las cifras por colonia corresponden a 2024; no describen un ranking actualizado ni el riesgo "
+                "individual. Los datos del SESNSP y la percepción de la ENSU cubren periodos y metodologías distintos."
+            ),
+            "method": (
+                "Síntesis editorial basada en Capital CDMX, 16 de noviembre de 2026: " +
+                CAPITAL_CDMX_VENUSTIANO_CRIME_STATS_SOURCE_URL +
+                ". Las cifras se atribuyen al medio y a las fuentes que cita; no equivalen a una verificación independiente."
+            ),
+        }
     if is_diario_yucatan_garbage_zocalo(article):
         return {
             "lead": (
@@ -2865,6 +2938,10 @@ def _photo_score(article, photo):
         return 5000 if photo.get("id") == "contexto_casa_talavera_exposicion_valparaiso" else -10000
     if is_infobae_teacher_mental_health_story(article):
         return 5000 if photo.get("id") == "contexto_aula_educacion_salud_mental_cdmx" else -10000
+    if is_capital_cdmx_cuajimalpa_crime_stats(article):
+        return 5000 if photo.get("id") == "contexto_santa_fe_cuajimalpa_denuncias" else -10000
+    if is_capital_cdmx_vc_crime_stats(article):
+        return 5000 if photo.get("id") == "contexto_jardin_balbuena_denuncias" else -10000
     if is_sopitas_edis_discrimination_2026(article):
         return 5000 if photo.get("id") == "contexto_edis_poblacion_cdmx" else -10000
     if is_elcongresista_buen_fin_operation(article):
