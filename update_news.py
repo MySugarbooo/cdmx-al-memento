@@ -962,7 +962,7 @@ def standardize(article):
         result["source_url"] = ELPAIS_REVOLUCION_DESFILE_SOURCE_URL
     elif result.get("date") == "2026-11-16" and source_name == "el imparcial" and "desfile" in source_title and "revolucion" in source_title:
         result["source_url"] = ELIMPARCIAL_REVOLUCION_DESFILE_SOURCE_URL
-    elif result.get("date") == "2026-11-16" and source_name == "sopitas.com" and "edis 2026" in source_title and "discriminacion" in source_title:
+    elif result.get("date") == "2026-11-16" and source_name == "sopitas com" and "edis 2026" in source_title and "discriminacion" in source_title:
         result["source_url"] = SOPITAS_EDIS_2026_SOURCE_URL
     elif result.get("date") == "2026-11-16" and source_name == "periodico am" and "49ers" in source_title and "estadio azteca" in source_title:
         result["source_url"] = PERIODICO_AM_49ERS_SOURCE_URL
