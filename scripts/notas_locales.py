@@ -391,12 +391,24 @@ def is_diario_yucatan_garbage_zocalo(article):
 
 
 def is_revolucion_mexicana_desfile_2026(article):
-    """Identifica guías del desfile de la Revolución del 20/11/2026 en CDMX."""
+    """Identifica guías de EL PAÍS y El Imparcial sobre el desfile del 20/11/2026."""
     title = _photo_fold(article.get("title"))
     source = _photo_fold(article.get("source"))
     return (
         str(article.get("date") or "") == "2026-11-16"
         and source in {"el pais", "el imparcial"}
+        and "desfile" in title
+        and "revolucion" in title
+        and ("ciudad de mexico" in title or "cdmx" in title)
+    )
+
+
+def is_sin_embargo_revolucion_desfile_2026(article):
+    """Identifica la guía de SinEmbargo del desfile de la Revolución del 20/11/2026."""
+    title = _photo_fold(article.get("title"))
+    return (
+        str(article.get("date") or "") == "2026-11-16"
+        and _photo_fold(article.get("source")) == "sin embargo"
         and "desfile" in title
         and "revolucion" in title
         and ("ciudad de mexico" in title or "cdmx" in title)
@@ -2932,7 +2944,7 @@ def _photo_score(article, photo):
         return 5000 if photo.get("id") == "contexto_concierto_foro_sol_2023" else -10000
     # Las guías del desfile del 20 de noviembre recorren del Zócalo al Monumento;
     # usar el monumento conmemorativo, no fotografías del Desfile de Catrinas.
-    if is_revolucion_mexicana_desfile_2026(article):
+    if is_revolucion_mexicana_desfile_2026(article) or is_sin_embargo_revolucion_desfile_2026(article):
         return 5000 if photo.get("id") == "contexto_monumento_revolucion_desfile_2026" else -10000
     if is_somoselmedio_valparaiso_exhibition_story(article):
         return 5000 if photo.get("id") == "contexto_casa_talavera_exposicion_valparaiso" else -10000
