@@ -4102,5 +4102,36 @@ class ReporteIndigoAirQualityPhotoRegressionTests(unittest.TestCase):
         self.assertEqual(article["photo"]["license"], "CC BY-SA 1.0")
         self.assertIn("archivo de 2007", article["photo"]["topic"])
 
+
+class DiarioYucatanGarbageZocaloPhotoRegressionTests(unittest.TestCase):
+    def test_diario_yucatan_garbage_story_uses_zocalo_not_kings_of_leon_at_palacio(self):
+        article = news.standardize({
+            "title": "Garbage canta ante 90 mil fans en el en el Zócalo de la Ciudad de México",
+            "url": "https://news.google.com/rss/articles/diario-yucatan-garbage-zocalo-20261116",
+            "source": "Diario de Yucatán",
+            "date": "2026-11-16",
+            "published_at": "2026-11-16T06:15:00Z",
+            "category": "Cultura",
+            "borough": "Cuauhtémoc",
+        })
+        self.assertIsNotNone(article)
+        self.assertTrue(photos.is_diario_yucatan_garbage_zocalo(article))
+        pool = {photo["id"]: photo for photo in photos._pool()}
+        kings_of_leon = deepcopy(pool["contexto_concierto_palacio_deportes_2009"])
+        zocalo = deepcopy(pool["zocalo"])
+        article["photo"] = kings_of_leon
+
+        self.assertLess(_photo_score(article, kings_of_leon), 0)
+        self.assertEqual(_photo_score(article, zocalo), 5000)
+        with patch.object(photos, "_pool", return_value=[kings_of_leon, zocalo]), patch.object(
+            photos, "_load", return_value=[]
+        ):
+            assign_photos([article])
+
+        self.assertEqual(article["photo"]["id"], "zocalo")
+        self.assertEqual(article["photo"]["author"], "A01701617")
+        self.assertEqual(article["photo"]["license"], "CC BY-SA 4.0")
+        self.assertIn("Zócalo", article["photo"]["topic"])
+
 if __name__ == "__main__":
     unittest.main()
