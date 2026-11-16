@@ -2790,9 +2790,9 @@ def _photo_score(article, photo):
     # Las guías del desfile del 20 de noviembre recorren del Zócalo al Monumento;
     # usar el monumento conmemorativo, no fotografías del Desfile de Catrinas.
     if is_revolucion_mexicana_desfile_2026(article):
-        return 5000 if photo.get("id") == "commons_107165242" else -10000
+        return 5000 if photo.get("id") == "contexto_monumento_revolucion_desfile_2026" else -10000
     if is_sopitas_edis_discrimination_2026(article):
-        return 5000 if photo.get("id") == "commons_16185756" else -10000
+        return 5000 if photo.get("id") == "contexto_edis_poblacion_cdmx" else -10000
     if is_elcongresista_buen_fin_operation(article):
         return 5000 if photo.get("id") == "commons_149171771" else -10000
     if is_tvazteca_hoy_no_circula_bridge_story(article):
