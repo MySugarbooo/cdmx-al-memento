@@ -68,6 +68,7 @@ VERIFIED_SOURCE_URLS = frozenset({
     "https://www.infobae.com/mexico/2026/11/15/garbage-en-el-zocalo-de-la-cdmx-asi-puedes-seguir-el-concierto-en-vivo-de-manera-gratuita/",
     "https://oem.com.mx/esto/futbol-americano/aficionados-de-san-francisco-49ers-en-cdmx-hablan-de-la-rivalidad-contra-dallas-cowboys-33151840",
     "https://www.infobae.com/mexico/2026/11/16/que-le-paso-a-karol-g-filtran-la-supuesta-enfermedad-que-la-habria-obligado-a-posponer-su-concierto-en-la-cdmx/",
+    "https://www.infobae.com/mexico/2026/11/15/karol-g-en-cdmx-reprograma-su-concierto-de-hoy-domingo-15-de-noviembre-por-motivos-de-salud/",
     "https://www.infobae.com/mexico/2026/11/15/asi-esta-la-calidad-del-aire-de-la-cdmx-y-edomex-este-15-de-noviembre/",
     "https://www.billboard.com/espanol/noticias/karol-g-posterga-concierto-en-mexico-nueva-fecha-1236382613/",
     "https://elcongresista.mx/politica/cdmx/gobierno-cdmx-operativo-el-buen-fin",
