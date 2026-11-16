@@ -38,6 +38,15 @@ class ArticleSeoWorkflowTests(unittest.TestCase):
         self.assertIn("'tests/test_article_seo_workflow.py'", paths)
         self.assertIn("'tests/test_article_photo.py'", paths)
 
+    def test_seo_generated_commit_does_not_retrigger_news_pipeline(self):
+        self.assertIn(
+            "if: github.event_name != 'push' || github.event.head_commit.message != 'Update crawlable article pages'",
+            self.news_workflow,
+        )
+        self.assertIn("cron: '17 * * * *'", self.news_workflow)
+        self.assertIn('  workflow_dispatch:\\n', self.news_workflow)
+        self.assertIn("      - 'index.html'", self.news_workflow)
+
     def test_manual_and_periodic_fallbacks_remain(self):
         self.assertIn('  workflow_dispatch:\n', self.workflow)
         self.assertIn("cron: '23 */3 * * *'", self.workflow)
