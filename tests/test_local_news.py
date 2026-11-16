@@ -53,6 +53,46 @@ class LocalNewsTests(unittest.TestCase):
         self.assertIn(source_url, page)
         self.assertNotIn(result["url"], page)
 
+    def test_infobae_karol_g_rss_cancel_headline_uses_original_source_and_foro_sol_photo(self):
+        source_url = "https://www.infobae.com/mexico/2026/11/15/karol-g-en-cdmx-reprograma-su-concierto-de-hoy-domingo-15-de-noviembre-por-motivos-de-salud/"
+        rss_url = "https://news.google.com/rss/articles/karol-g-cancelled-20261115?oc=5"
+        result = standardize({
+            "title": "Karol G cancela concierto en CDMX hoy: qué le pasó, reembolso y boletos para la nueva fecha en el Estadio GNP",
+            "url": rss_url,
+            "source": "Infobae",
+            "date": "2026-11-15",
+            "published_at": "2026-11-16T00:39:04Z",
+            "category": "Cultura",
+            "photo": {
+                "id": "contexto_concierto_palacio_deportes_2009",
+                "kind": "representativa",
+                "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/PalaciodelosDeportes_Concierto.jpg/960px-PalaciodelosDeportes_Concierto.jpg",
+                "category": "Cultura",
+                "topic": "Concierto de Kings of Leon en el Palacio de los Deportes, CDMX (octubre de 2009); foto de archivo representativa, no documenta eventos de la noticia.",
+                "keywords": ["concierto", "música en vivo", "Palacio de los Deportes", "Ciudad de México", "escenario", "público"],
+                "author": "ProtoplasmaKid",
+                "license": "CC BY-SA 4.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+                "source": "https://commons.wikimedia.org/wiki/File:PalaciodelosDeportes_Concierto.jpg",
+            },
+        })
+        self.assertIsNotNone(result)
+        self.assertEqual(result["title"], "Karol G reprograma su concierto en CDMX por motivos de salud; será el 17 de noviembre")
+        self.assertEqual(result["source_url"], source_url)
+        self.assertEqual(result["category"], "Cultura")
+        self.assertIn("OCESA y ENSO", result["brief"]["lead"])
+        self.assertIn("no identifica un diagnóstico", result["brief"]["lead"])
+        self.assertIn("no divulga un diagnóstico", result["brief"]["pending"])
+        self.assertNotIn("influenza", result["brief"]["pending"].lower())
+        self.assertEqual(result["description"], result["brief"]["lead"])
+        assign_photos([result])
+        self.assertEqual(result["photo"]["id"], "contexto_concierto_foro_sol_2023")
+        self.assertEqual(result["photo"]["author"], "Nanahuatl")
+        self.assertEqual(result["photo"]["license"], "CC BY-SA 4.0")
+        page = render(result, article_id(result))
+        self.assertIn(source_url, page)
+        self.assertNotIn(rss_url, page)
+
     def test_infobae_air_quality_uses_time_scoped_summary_direct_source_and_imeca_photo(self):
         result = standardize({
             "title": "Así está la calidad del aire de la CDMX y Edomex este 15 de noviembre",
