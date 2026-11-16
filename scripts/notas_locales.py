@@ -87,6 +87,10 @@ LA_RAZON_GARBAGE_ZOCALO_SOURCE_URL = "https://www.razon.com.mx/ciudad/2026/11/15
 INFOBAE_GARBAGE_ZOCALO_SOURCE_URL = "https://www.infobae.com/mexico/2026/11/15/garbage-en-el-zocalo-de-la-cdmx-asi-puedes-seguir-el-concierto-en-vivo-de-manera-gratuita/"
 ESTO_49ERS_FANS_SOURCE_URL = "https://oem.com.mx/esto/futbol-americano/aficionados-de-san-francisco-49ers-en-cdmx-hablan-de-la-rivalidad-contra-dallas-cowboys-33151840"
 INFOBAE_KAROL_G_HEALTH_SOURCE_URL = "https://www.infobae.com/mexico/2026/11/16/que-le-paso-a-karol-g-filtran-la-supuesta-enfermedad-que-la-habria-obligado-a-posponer-su-concierto-en-la-cdmx/"
+INFOBAE_AIR_QUALITY_20261115_SOURCE_URL = "https://www.infobae.com/mexico/2026/11/15/asi-esta-la-calidad-del-aire-de-la-cdmx-y-edomex-este-15-de-noviembre/"
+BILLBOARD_KAROL_G_CDMX_SOURCE_URL = "https://www.billboard.com/espanol/noticias/karol-g-posterga-concierto-en-mexico-nueva-fecha-1236382613/"
+ELCONGRESISTA_BUEN_FIN_CDMX_SOURCE_URL = "https://elcongresista.mx/politica/cdmx/gobierno-cdmx-operativo-el-buen-fin"
+TV_AZTECA_HOY_NO_CIRCULA_20261116_SOURCE_URL = "https://www.tvazteca.com/aztecanoticias/vas-a-salir-por-el-puente-estos-autos-no-podran-circular-el-lunes-16-de-noviembre/"
 YAHOO_GARBAGE_ZOCALO_SOURCE_URL = "https://es-us.noticias.yahoo.com/garbage-conquista-90-mil-personas-224733197.html"
 
 
@@ -137,6 +141,53 @@ def is_infobae_karol_g_health_story(article):
             or "posponer" in title
             or "reprograma" in title
         )
+    )
+
+
+def is_infobae_air_quality_report(article):
+    """Identifica el corte horario de calidad del aire publicado por Infobae el 15/11/2026."""
+    title = _photo_fold(article.get("title"))
+    return (
+        str(article.get("date") or "") == "2026-11-15"
+        and _photo_fold(article.get("source")) == "infobae"
+        and "calidad del aire" in title
+        and "15 de noviembre" in title
+    )
+
+
+def is_billboard_karol_g_concert_story(article):
+    """Identifica la cobertura de Billboard sobre la reprogramación del concierto de Karol G."""
+    title = _photo_fold(article.get("title"))
+    return (
+        str(article.get("date") or "") == "2026-11-15"
+        and _photo_fold(article.get("source")) == "billboard"
+        and "karol g" in title
+        and "concierto" in title
+        and ("posterga" in title or "pospuesto" in title or "reprograma" in title)
+    )
+
+
+def is_elcongresista_buen_fin_operation(article):
+    """Identifica la nota de El Congresista que atribuye erróneamente el Gobierno de CDMX a Pepe Chedraui."""
+    title = _photo_fold(article.get("title"))
+    return (
+        str(article.get("date") or "") == "2026-11-15"
+        and _photo_fold(article.get("source")) == "el congresista"
+        and "buen fin" in title
+        and ("gobierno de la cdmx" in title or "movilidad fluida" in title)
+    )
+
+
+def is_tvazteca_hoy_no_circula_bridge_story(article):
+    """Identifica la guía de TV Azteca para el Hoy No Circula del lunes 16/11/2026."""
+    title = _photo_fold(article.get("title"))
+    return (
+        str(article.get("date") or "") == "2026-11-15"
+        and _photo_fold(article.get("source")) == "tv azteca"
+        and "puente" in title
+        and "automovil" in title
+        and "cdmx" in title
+        and "edomex" in title
     )
 
 
@@ -826,6 +877,94 @@ def summarize(article):
                 "Síntesis editorial basada en la publicación de ESTO del 15 de noviembre de 2026: "
                 + ESTO_49ERS_FANS_SOURCE_URL
                 + ". El balance histórico se atribuye al medio y no constituye una verificación independiente."
+            ),
+        }
+    if is_infobae_air_quality_report(article):
+        return {
+            "lead": (
+                "Infobae reportó que, al corte de las 15:00 del 15 de noviembre de 2026, la calidad del aire "
+                "en la CDMX y el Estado de México era «Mala», con riesgo «Alto» para la salud. El reporte "
+                "reunió lecturas de 16 estaciones de CDMX y 13 del Edomex."
+            ),
+            "context": (
+                "El artículo atribuye los datos a la Dirección de Monitoreo Atmosférico de la CDMX. También "
+                "reportó un índice UV de 3; las condiciones variaron por estación."
+            ),
+            "pending": (
+                "Es un corte del 15 de noviembre a las 15:00, no una medición vigente para el 16 de noviembre. "
+                "Para decisiones al aire libre, consulta el reporte actual de la autoridad; no se extrapolan "
+                "estos valores a otro día."
+            ),
+            "method": (
+                "Síntesis editorial basada en la publicación original de Infobae del 15 de noviembre de 2026: "
+                + INFOBAE_AIR_QUALITY_20261115_SOURCE_URL
+                + ". La hora del corte se conserva expresamente; no equivale a verificación en tiempo real."
+            ),
+        }
+    if is_billboard_karol_g_concert_story(article):
+        return {
+            "lead": (
+                "Billboard informó que OCESA pospuso para el martes 17 de noviembre el tercer concierto de "
+                "Karol G en el Estadio GNP Seguros, previsto para el domingo 15, por motivos de salud de la "
+                "artista. El comunicado no especificó un diagnóstico."
+            ),
+            "context": (
+                "Los boletos de la fecha original siguen siendo válidos para la nueva función; quienes "
+                "prefieran reembolso pueden solicitarlo a través de Ticketmaster, según Billboard."
+            ),
+            "pending": (
+                "No se informó públicamente cuál es el problema de salud. No se debe atribuir un diagnóstico "
+                "ni repetir versiones difundidas en redes como si estuvieran confirmadas."
+            ),
+            "method": (
+                "Síntesis editorial basada en la publicación original de Billboard del 15 de noviembre de 2026: "
+                + BILLBOARD_KAROL_G_CDMX_SOURCE_URL
+                + ". La reprogramación y las condiciones se atribuyen al medio y al aviso de OCESA."
+            ),
+        }
+    if is_elcongresista_buen_fin_operation(article):
+        return {
+            "lead": (
+                "El Congresista publicó que el Gobierno de CDMX activó un operativo en el Centro Histórico "
+                "durante El Buen Fin. Sin embargo, el cuerpo de la nota atribuye el liderazgo del Gobierno "
+                "capitalino a Pepe Chedraui; el portal oficial de CDMX identifica a Clara Brugada como Jefa "
+                "de Gobierno y el Ayuntamiento de Puebla identifica a Chedraui como presidente municipal "
+                "de Puebla. La atribución incorrecta impide dar por verificados los detalles del operativo."
+            ),
+            "context": (
+                "La publicación menciona vigilancia y ordenamiento del comercio informal, pero no enlaza un "
+                "comunicado oficial de la Secretaría de Gobierno o de la SSC que confirme esas acciones; además, declara que fue redactada con asistencia de IA a partir de fuentes citadas."
+            ),
+            "pending": (
+                "No se confirma el despliegue, su duración, las restricciones al comercio informal ni la cita "
+                "atribuida a Chedraui. No presentar el operativo como confirmado sin una fuente oficial de CDMX."
+            ),
+            "method": (
+                "Se consultó el artículo original de El Congresista y se contrastó el cargo con el portal del "
+                "Gobierno de CDMX (https://jefadegobierno.cdmx.gob.mx/) y el Ayuntamiento de Puebla (https://pueblacapital.gob.mx/noticias/capital-imparable/encabeza-pepe-chedraui-encendido-por-fiestas-patrias). "
+                "La comprobación detecta una atribución errónea; no verifica de manera independiente el operativo."
+            ),
+        }
+    if is_tvazteca_hoy_no_circula_bridge_story(article):
+        return {
+            "lead": (
+                "TV Azteca informó que el lunes 16 de noviembre de 2026 el Hoy No Circula se mantendría con "
+                "su calendario habitual pese al puente. Según la nota, no circulan los autos con engomado "
+                "amarillo, placas terminadas en 5 o 6 y holograma 1 o 2, de 05:00 a 22:00 en las 16 alcaldías "
+                "de CDMX y 18 municipios conurbados del Edomex."
+            ),
+            "context": (
+                "La publicación también señala que los hologramas 0 y 00 pueden circular y enumera excepciones "
+                "para servicios de emergencia, transporte escolar y vehículos para personas con discapacidad."
+            ),
+            "pending": (
+                "El dato se atribuye a TV Azteca y no sustituye un aviso extraordinario de CAMe o SEDEMA. "
+                "Verifica posibles contingencias o modificaciones oficiales antes de circular."
+            ),
+            "method": (
+                "Síntesis editorial basada en el artículo de TV Azteca publicado el 15 de noviembre de 2026: "
+                + TV_AZTECA_HOY_NO_CIRCULA_20261116_SOURCE_URL
+                + ". Se atribuyen horarios y criterios al medio; no se presenta como aviso oficial."
             ),
         }
     if is_animal_abuse_statistics_report(article):
@@ -2468,6 +2607,14 @@ def _photo_score(article, photo):
     topic=re.sub(r"\bno\b[^;.)]*", "", topic)
     keywords=_photo_fold(" ".join(str(x) for x in photo.get("keywords",[])))
     context=topic+" "+keywords
+    if is_infobae_air_quality_report(article):
+        return 5000 if photo.get("id") == "contexto_imeca_calidad_aire_cdmx" else -10000
+    if is_billboard_karol_g_concert_story(article):
+        return 5000 if photo.get("id") == "contexto_concierto_foro_sol_2023" else -10000
+    if is_elcongresista_buen_fin_operation(article):
+        return 5000 if photo.get("id") == "commons_149171771" else -10000
+    if is_tvazteca_hoy_no_circula_bridge_story(article):
+        return 5000 if photo.get("id") == "contexto_trafico_eje_central" else -10000
     if is_infobae_karol_g_health_story(article):
         return 5000 if photo.get("id") == "contexto_concierto_foro_sol_2023" else -10000
     if is_generation_z_zocalo_march(article):
