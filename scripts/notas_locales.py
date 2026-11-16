@@ -88,6 +88,17 @@ INFOBAE_GARBAGE_ZOCALO_SOURCE_URL = "https://www.infobae.com/mexico/2026/11/15/g
 YAHOO_GARBAGE_ZOCALO_SOURCE_URL = "https://es-us.noticias.yahoo.com/garbage-conquista-90-mil-personas-224733197.html"
 
 
+def is_metro_zocalo_line2_closure(article):
+    """Identifica los cierres de la estación Zócalo/Tenochtitlán del 15/11/2026."""
+    title = _photo_fold(article.get("title"))
+    return (
+        str(article.get("date") or "") == "2026-11-15"
+        and "metro" in title
+        and "zocalo" in title
+        and bool(re.search(r"\\b(?:cierra|cierran|cerrada|cierre)\\b", title))
+    )
+
+
 def is_radio_formula_casa_ecologica(article):
     """Identifica la nota de Radio Fórmula del programa Casa Ecológica del 12/11/2026."""
     title = unicodedata.normalize("NFKD", str(article.get("title") or ""))
@@ -2393,6 +2404,12 @@ def _photo_score(article, photo):
     topic=re.sub(r"\bno\b[^;.)]*", "", topic)
     keywords=_photo_fold(" ".join(str(x) for x in photo.get("keywords",[])))
     context=topic+" "+keywords
+    if is_metro_zocalo_line2_closure(article):
+        is_line_two_station = bool(
+            re.search(r"\\blinea 2\\b", context)
+            and re.search(r"\\bmetro\\b", context)
+        )
+        return 5000 if is_line_two_station else -10000
     if is_animal_abuse_statistics_report(article):
         return 5000 if photo.get("id") == "contexto_perros_parque_espana" else -10000
     if is_la_prensa_prehospital_care(article):
