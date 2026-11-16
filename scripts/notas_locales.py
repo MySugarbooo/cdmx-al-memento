@@ -86,6 +86,7 @@ SOCIEDAD_NOTICIAS_GARBAGE_ZOCALO_SOURCE_URL = "https://sociedad-noticias.com/202
 LA_RAZON_GARBAGE_ZOCALO_SOURCE_URL = "https://www.razon.com.mx/ciudad/2026/11/15/asisten-mas-de-90-mil-personas-a-concierto-de-garbage-en-el-zocalo-de-la-cdmx/"
 INFOBAE_GARBAGE_ZOCALO_SOURCE_URL = "https://www.infobae.com/mexico/2026/11/15/garbage-en-el-zocalo-de-la-cdmx-asi-puedes-seguir-el-concierto-en-vivo-de-manera-gratuita/"
 ESTO_49ERS_FANS_SOURCE_URL = "https://oem.com.mx/esto/futbol-americano/aficionados-de-san-francisco-49ers-en-cdmx-hablan-de-la-rivalidad-contra-dallas-cowboys-33151840"
+INFOBAE_KAROL_G_HEALTH_SOURCE_URL = "https://www.infobae.com/mexico/2026/11/16/que-le-paso-a-karol-g-filtran-la-supuesta-enfermedad-que-la-habria-obligado-a-posponer-su-concierto-en-la-cdmx/"
 YAHOO_GARBAGE_ZOCALO_SOURCE_URL = "https://es-us.noticias.yahoo.com/garbage-conquista-90-mil-personas-224733197.html"
 
 
@@ -118,6 +119,23 @@ def is_generation_z_zocalo_march(article):
             or "protesta" in title
             or "toma las calles" in title
             or "movilizacion" in title
+        )
+    )
+
+
+def is_infobae_karol_g_health_story(article):
+    """Identifica la nota de Infobae sobre la reprogramación del concierto de Karol G."""
+    title = _photo_fold(article.get("title"))
+    source = _photo_fold(article.get("source"))
+    return (
+        str(article.get("date") or "") == "2026-11-15"
+        and source == "infobae"
+        and "karol g" in title
+        and "concierto" in title
+        and (
+            "supuesta enfermedad" in title
+            or "posponer" in title
+            or "reprograma" in title
         )
     )
 
@@ -2450,6 +2468,8 @@ def _photo_score(article, photo):
     topic=re.sub(r"\bno\b[^;.)]*", "", topic)
     keywords=_photo_fold(" ".join(str(x) for x in photo.get("keywords",[])))
     context=topic+" "+keywords
+    if is_infobae_karol_g_health_story(article):
+        return 5000 if photo.get("id") == "contexto_concierto_foro_sol_2023" else -10000
     if is_generation_z_zocalo_march(article):
         return 5000 if photo.get("id") == "commons_149171771" else -10000
     if is_esto_49ers_fan_story(article):
