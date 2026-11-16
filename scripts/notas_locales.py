@@ -1036,7 +1036,8 @@ def summarize(article):
                 "Somoselmedio informó el 16 de noviembre que la muestra fotográfica "
                 "«Colección Valparaíso: Topotesia de un puerto», del artista visual y docente "
                 "chileno Rodolfo Muñoz Araya, se presentó del 29 de octubre al 6 de noviembre "
-                "en el Centro Cultural Casa Talavera, sede de la UACM."
+                "en el Centro Cultural Casa Talavera. La ficha institucional de UACM registra "
+                "la exposición del 19 de octubre al 6 de noviembre."
             ),
             "context": (
                 "La publicación describe fotografías intervenidas, instalaciones, textos, "
@@ -1044,13 +1045,15 @@ def summarize(article):
                 "un conversatorio con estudiantes el 5 y una visita guiada de clausura el 6."
             ),
             "pending": (
-                "La exposición concluyó el 6 de noviembre; no debe anunciarse como actividad vigente. "
-                "La ficha oficial de la UACM confirma la sede, las fechas y la entrada libre."
+                "La muestra concluyó el 6 de noviembre y no debe anunciarse como actividad vigente. "
+                "Las fuentes discrepan sobre el inicio: Somoselmedio indica el 29 de octubre y la "
+                "ficha institucional de UACM el 19 de octubre. No se unifica la fecha sin aclaración de la sede."
             ),
             "method": (
                 "Síntesis editorial propia basada en Somoselmedio, 16 de noviembre de 2026, y en la "
-                "ficha oficial de la UACM: https://uacm.edu.mx/sitios/valparaiso/index.html. "
-                "La fotografía asignada muestra el recinto, no la exposición."
+                "ficha institucional de UACM consultada el 16 de noviembre: "
+                "https://uacm.edu.mx/sitios/valparaiso/index.html. Somoselmedio indica 29 de octubre; "
+                "UACM registra 19 de octubre. La fotografía asignada muestra el recinto, no la exposición."
             ),
         }
     if is_infobae_teacher_mental_health_story(article):
