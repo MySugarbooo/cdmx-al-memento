@@ -4343,5 +4343,88 @@ class InfobaeTeacherMentalHealthPhotoRegressionTests(unittest.TestCase):
         self.assertIn("no documenta la iniciativa", article["photo"]["topic"].lower())
 
 
+class CapitalCdmxColonyCrimeStatsPhotoRegressionTests(unittest.TestCase):
+    def test_santa_fe_cuajimalpa_story_uses_local_photo_and_cites_original(self):
+        article = news.standardize({
+            "title": "Santa Fe concentró 207 denuncias en 2024: las cifras por colonia en Cuajimalpa",
+            "url": "https://news.google.com/rss/articles/capital-cdmx-santa-fe-crime-20261116",
+            "source": "Capital CDMX",
+            "date": "2026-11-16",
+            "published_at": "2026-11-16T18:04:40Z",
+            "category": "CDMX",
+        })
+        self.assertIsNotNone(article)
+        self.assertTrue(photos.is_capital_cdmx_cuajimalpa_crime_stats(article))
+        self.assertEqual(
+            article["source_url"],
+            "https://capital-cdmx.org/colonias-mas-denuncias-cuajimalpa-de-morelos-capital-ayuda-2026/",
+        )
+        self.assertEqual(article["category"], "Seguridad")
+        self.assertEqual(article["borough"], "Cuajimalpa de Morelos")
+        self.assertIn("207", article["brief"]["lead"])
+        self.assertIn("2024", article["brief"]["lead"])
+        self.assertIn("no es una medición de riesgo actual", article["brief"]["context"])
+
+        pool = {photo["id"]: photo for photo in photos._pool()}
+        unrelated = deepcopy(pool["commons_150181300"])
+        santa_fe = deepcopy(pool["contexto_santa_fe_cuajimalpa_denuncias"])
+        article["photo"] = unrelated
+
+        self.assertLess(_photo_score(article, unrelated), 0)
+        self.assertEqual(_photo_score(article, santa_fe), 5000)
+        with patch.object(photos, "_pool", return_value=[unrelated, santa_fe]), patch.object(
+            photos, "_load", return_value=[]
+        ):
+            assign_photos([article])
+
+        self.assertEqual(article["photo"]["id"], "contexto_santa_fe_cuajimalpa_denuncias")
+        self.assertEqual(article["photo"]["author"], "ProtoplasmaKid")
+        self.assertEqual(article["photo"]["license"], "CC BY-SA 4.0")
+        self.assertIn("Cuajimalpa", article["photo"]["topic"])
+        self.assertIn("no representa ni documenta", article["photo"]["context"].lower())
+
+    def test_jardin_balbuena_story_uses_geolocated_photo_and_verified_source_summary(self):
+        article = news.standardize({
+            "title": "Jardín Balbuena y Zona Centro: las colonias con más denuncias en Venustiano Carranza en 2024",
+            "url": "https://news.google.com/rss/articles/capital-cdmx-jardin-balbuena-crime-20261116",
+            "source": "Capital CDMX",
+            "date": "2026-11-16",
+            "published_at": "2026-11-16T18:04:40Z",
+            "category": "CDMX",
+        })
+        self.assertIsNotNone(article)
+        self.assertTrue(photos.is_capital_cdmx_vc_crime_stats(article))
+        self.assertEqual(
+            article["source_url"],
+            "https://capital-cdmx.org/colonias-mas-denuncias-venustiano-carranza-capital-ayuda-2026/",
+        )
+        self.assertEqual(article["category"], "Seguridad")
+        self.assertEqual(article["borough"], "Venustiano Carranza")
+        self.assertIn("385", article["brief"]["lead"])
+        self.assertIn("322", article["brief"]["lead"])
+        self.assertIn("266", article["brief"]["lead"])
+        self.assertIn("492", article["brief"]["context"])
+        self.assertIn("36", article["brief"]["context"])
+        self.assertIn("49.8%", article["brief"]["context"])
+
+        pool = {photo["id"]: photo for photo in photos._pool()}
+        unrelated = deepcopy(pool["commons_150181297"])
+        jardin = deepcopy(pool["contexto_jardin_balbuena_denuncias"])
+        article["photo"] = unrelated
+
+        self.assertLess(_photo_score(article, unrelated), 0)
+        self.assertEqual(_photo_score(article, jardin), 5000)
+        with patch.object(photos, "_pool", return_value=[unrelated, jardin]), patch.object(
+            photos, "_load", return_value=[]
+        ):
+            assign_photos([article])
+
+        self.assertEqual(article["photo"]["id"], "contexto_jardin_balbuena_denuncias")
+        self.assertEqual(article["photo"]["author"], "ProtoplasmaKid")
+        self.assertEqual(article["photo"]["license"], "CC BY-SA 4.0")
+        self.assertIn("Jardín Balbuena", article["photo"]["topic"])
+        self.assertIn("no representa ni documenta", article["photo"]["context"].lower())
+
+
 if __name__ == "__main__":
     unittest.main()
