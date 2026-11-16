@@ -395,7 +395,6 @@ class PhotoRelevanceTests(unittest.TestCase):
             "category": "CDMX",
         })
         self.assertIsNotNone(article)
-        self.assertEqual(_photo_score(article, zocalo), 5000)
         old_cacerolazo = representative_photo(
             "commons_16240277",
             "CDMX",
@@ -404,6 +403,7 @@ class PhotoRelevanceTests(unittest.TestCase):
             ["Ángel de la Independencia Ciudad de México"],
         )
         zocalo = next(photo for photo in photos._pool() if photo.get("id") == "commons_149171771")
+        self.assertEqual(_photo_score(article, zocalo), 5000)
         self.assertLess(_photo_score(article, old_cacerolazo), 0)
         self.assertGreaterEqual(_photo_score(article, zocalo), 0)
         article["photo"] = deepcopy(old_cacerolazo)
