@@ -359,7 +359,7 @@ def is_sopitas_edis_discrimination_2026(article):
     title = _photo_fold(article.get("title"))
     return (
         str(article.get("date") or "") == "2026-11-16"
-        and _photo_fold(article.get("source")) == "sopitas.com"
+        and _photo_fold(article.get("source")) == "sopitas com"
         and "edis 2026" in title
         and "discriminacion" in title
     )
