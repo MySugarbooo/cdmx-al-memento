@@ -27,6 +27,9 @@ class LocalNewsTests(unittest.TestCase):
         self.assertEqual(result["photo"]["id"], "contexto_futbol_americano_nfl")
         self.assertEqual(result["photo"]["author"], "Torsten Bolten, AFpix.de")
         self.assertEqual(result["photo"]["license"], "CC BY-SA 3.0")
+        article_html = render(result, article_id(result))
+        self.assertIn('href="https://oem.com.mx/esto/futbol-americano/aficionados-de-san-francisco-49ers-en-cdmx-hablan-de-la-rivalidad-contra-dallas-cowboys-33151840"', article_html)
+        self.assertIn("Ver fuente original", article_html)
 
     def make(self,i,category):
         return {"title":f"El Metro de CDMX reporta avance de la línea {i} de transporte",
