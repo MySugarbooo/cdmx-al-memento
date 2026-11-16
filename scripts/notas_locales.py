@@ -123,7 +123,7 @@ def is_infobae_teacher_mental_health_story(article):
     """Identifica la propuesta de capacitar a docentes en primeros auxilios psicológicos."""
     title = _photo_fold(article.get("title"))
     return (
-        str(article.get("date") or "") == "2026-11-16"
+        str(article.get("date") or "") in {"2026-11-15", "2026-11-16"}
         and _photo_fold(article.get("source")) == "infobae"
         and "depresion adolescente" in title
         and "primeros auxilios psicologicos" in title
