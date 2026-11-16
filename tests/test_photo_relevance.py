@@ -4362,8 +4362,12 @@ class CapitalCdmxColonyCrimeStatsPhotoRegressionTests(unittest.TestCase):
         self.assertEqual(article["category"], "Seguridad")
         self.assertEqual(article["borough"], "Cuajimalpa de Morelos")
         self.assertIn("207", article["brief"]["lead"])
-        self.assertIn("2024", article["brief"]["lead"])
-        self.assertIn("no es una medición de riesgo actual", article["brief"]["context"])
+        self.assertIn("129", article["brief"]["lead"])
+        self.assertIn("60", article["brief"]["lead"])
+        self.assertIn("143", article["brief"]["context"])
+        self.assertIn("3 homicidios dolosos", article["brief"]["context"])
+        self.assertIn("43.7%", article["brief"]["context"])
+        self.assertIn("93.4%", article["brief"]["pending"])
 
         pool = {photo["id"]: photo for photo in photos._pool()}
         unrelated = deepcopy(pool["commons_150181300"])
