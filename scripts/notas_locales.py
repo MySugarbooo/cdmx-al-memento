@@ -318,6 +318,17 @@ def is_la_razon_garbage_zocalo(article):
     )
 
 
+def is_diario_yucatan_garbage_zocalo(article):
+    """Identifica la cobertura de Diario de Yucatán sobre Garbage en el Zócalo del 16/11/2026."""
+    title = _photo_fold(article.get("title"))
+    return (
+        str(article.get("date") or "") == "2026-11-16"
+        and _photo_fold(article.get("source")) == "diario de yucatan"
+        and "garbage" in title
+        and "zocalo" in title
+    )
+
+
 def is_infobae_garbage_zocalo(article):
     """Identifica la nota de Infobae sobre cómo seguir la transmisión del concierto de Garbage."""
     title = _photo_fold(article.get("title"))
@@ -2675,7 +2686,8 @@ def _photo_score(article, photo):
         return 5000 if photo.get("id") == "commons_20428729" else -10000
     if (is_la_jornada_garbage_zocalo(article)
             or is_sociedad_noticias_garbage_zocalo(article)
-            or is_yahoo_garbage_zocalo(article)):
+            or is_yahoo_garbage_zocalo(article)
+            or is_diario_yucatan_garbage_zocalo(article)):
         return 5000 if photo.get("id") == "zocalo" else -10000
     # Una nota sobre el modelo de seguridad de Saltillo no debe ilustrarse
     # con patrullas de otra alcaldía de CDMX. Sin foto contextual de Saltillo,
