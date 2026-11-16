@@ -917,6 +917,27 @@ def summarize(article):
     category=str(article.get("category") or "CDMX")
     theme=TAGS.get(category,TAGS["CDMX"])
     folded_title=_photo_fold(title)
+    if is_diario_yucatan_garbage_zocalo(article):
+        return {
+            "lead": (
+                "Diario de Yucatán, con información de AP, reportó que Garbage reunió a más de 90,000 personas "
+                "en el Zócalo el sábado por la noche. La banda invitó a Paulina Villarreal, de The Warning, "
+                "para interpretar «I Think I'm Paranoid»."
+            ),
+            "context": (
+                "El concierto incluyó temas como «Push It» y «Cherry Lips», además de una versión de "
+                "«Lovesong», de The Cure. Shirley Manson habló de la conexión del grupo con el público mexicano."
+            ),
+            "pending": (
+                "La asistencia y los detalles del concierto se atribuyen a AP y al medio; no se presentan "
+                "como un conteo independiente de CDMX AL MEMENTO."
+            ),
+            "method": (
+                "Síntesis editorial propia basada en Diario de Yucatán, con información de AP, 16 de noviembre "
+                "de 2026: https://www.yucatan.com.mx/imagen/2026/11/16/garbage-canta-ante-90-mil-fans-en-el-en-el-zocalo-de-la-ciudad-de-mexico.html. "
+                "Se normalizó la repetición tipográfica «en el en el» del titular original sin cambiar su sentido."
+            ),
+        }
     if is_revolucion_mexicana_desfile_2026(article):
         if _photo_fold(source) == "el pais":
             return {
