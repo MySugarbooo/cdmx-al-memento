@@ -108,6 +108,18 @@ def is_esto_49ers_fan_story(article):
     )
 
 
+def is_periodico_am_49ers_cdmx_story(article):
+    """Identifica la nota de Periódico AM sobre el club de aficionados de 49ers en CDMX."""
+    title = _photo_fold(article.get("title"))
+    return (
+        str(article.get("date") or "") == "2026-11-16"
+        and _photo_fold(article.get("source")) == "periodico am"
+        and "49ers" in title
+        and "estadio azteca" in title
+        and "cdmx" in title
+    )
+
+
 def is_generation_z_zocalo_march(article):
     """Identifica coberturas de la movilización de Generación Z en CDMX del 15/11/2026.
 
@@ -329,14 +341,27 @@ def is_diario_yucatan_garbage_zocalo(article):
     )
 
 
-def is_elpais_revolucion_desfile(article):
-    """Identifica la guía de EL PAÍS sobre el desfile del 20/11/2026 en CDMX."""
+def is_revolucion_mexicana_desfile_2026(article):
+    """Identifica guías del desfile de la Revolución del 20/11/2026 en CDMX."""
+    title = _photo_fold(article.get("title"))
+    source = _photo_fold(article.get("source"))
+    return (
+        str(article.get("date") or "") == "2026-11-16"
+        and source in {"el pais", "el imparcial"}
+        and "desfile" in title
+        and "revolucion" in title
+        and ("ciudad de mexico" in title or "cdmx" in title)
+    )
+
+
+def is_sopitas_edis_discrimination_2026(article):
+    """Identifica la nota de Sopitas sobre la EDIS 2026 y discriminación en CDMX."""
     title = _photo_fold(article.get("title"))
     return (
         str(article.get("date") or "") == "2026-11-16"
-        and _photo_fold(article.get("source")) == "el pais"
-        and "desfile de la revolucion" in title
-        and "ciudad de mexico" in title
+        and _photo_fold(article.get("source")) == "sopitas.com"
+        and "edis 2026" in title
+        and "discriminacion" in title
     )
 
 
@@ -892,6 +917,100 @@ def summarize(article):
     category=str(article.get("category") or "CDMX")
     theme=TAGS.get(category,TAGS["CDMX"])
     folded_title=_photo_fold(title)
+    if is_revolucion_mexicana_desfile_2026(article):
+        if _photo_fold(source) == "el pais":
+            return {
+                "lead": (
+                    "EL PAÍS reporta que el desfile cívico-militar por el 116 aniversario de la Revolución "
+                    "Mexicana se realizará el viernes 20 de noviembre de 2026 a las 10:00 horas, desde el "
+                    "Zócalo hasta el Monumento a la Revolución. La nota cita 2,904 elementos, 486 caballos, "
+                    "16 vehículos antiguos y 14 aeronaves."
+                ),
+                "context": (
+                    "La publicación describe nueve contingentes con representaciones históricas de la "
+                    "Revolución de 1910. El evento todavía no se había realizado al publicarse la nota."
+                ),
+                "pending": (
+                    "La ruta y los cierres pueden actualizarse antes del evento; consultar avisos oficiales "
+                    "de SSC y autoridades de movilidad. Las cifras se atribuyen a EL PAÍS y a la información "
+                    "que cita de la Sedena."
+                ),
+                "method": (
+                    "Síntesis editorial propia basada en EL PAÍS México, 16 de noviembre de 2026: "
+                    "https://elpais.com/mexico/2026-11-16/el-desfile-de-la-revolucion-en-ciudad-de-mexico-horario-ruta-y-contingentes.html. "
+                    "No se presenta como cobertura de un desfile ya realizado."
+                ),
+            }
+        return {
+            "lead": (
+                "El Imparcial informa que el desfile cívico-militar por el 116 aniversario de la Revolución "
+                "Mexicana se realizará el viernes 20 de noviembre de 2026 a las 10:00 horas. El recorrido "
+                "partirá del Zócalo, pasará por 5 de Mayo, Eje Central, avenida Juárez y avenida de la "
+                "República, y concluirá en el Monumento a la Revolución."
+            ),
+            "context": (
+                "La publicación anticipa cortes de circulación en el primer cuadro y en los accesos a los "
+                "puntos de salida y llegada, y recomienda consultar Orientación Vial de la SSC."
+            ),
+            "pending": (
+                "El artículo presenta cifras distintas para vehículos: menciona 15 en un pie de foto y 69 "
+                "en su tabla, además de 16 vehículos antiguos. Se omiten esos conteos hasta corroborarlos "
+                "con un comunicado oficial. El evento es futuro respecto de la publicación del 16 de noviembre."
+            ),
+            "method": (
+                "Síntesis editorial propia basada en El Imparcial, 16 de noviembre de 2026: "
+                "https://www.elimparcial.com/mexico/2026/11/16/desfile-revolucion-mexicana-2026-cdmx-fecha-ruta-y-horarios-oficiales-del-20-de-noviembre/. "
+                "Se omiten cifras internas inconsistentes."
+            ),
+        }
+    if is_sopitas_edis_discrimination_2026(article):
+        return {
+            "lead": (
+                "Sopitas conversó con Flor de María García Sánchez, coordinadora de Políticas Públicas y "
+                "Legislativas del COPRED, sobre la EDIS 2026. El medio reporta que 46% de las personas "
+                "encuestadas dijo haber vivido discriminación en los últimos cuatro años por al menos un motivo."
+            ),
+            "context": (
+                "La encuesta incorpora módulos socioeconómicos, de prejuicios y estereotipos, y de experiencias "
+                "discriminatorias. Sopitas menciona entre los motivos más frecuentes las opiniones políticas "
+                "(22%), ser mujer (20%) y la forma de vestir o arreglo personal (20%)."
+            ),
+            "pending": (
+                "Los porcentajes se atribuyen a la publicación de Sopitas y no constituyen una verificación "
+                "independiente de los microdatos. No deben extrapolarse sin consultar la metodología y los "
+                "resultados oficiales del COPRED."
+            ),
+            "method": (
+                "Síntesis editorial propia basada en Sopitas.com, 16 de noviembre de 2026, y su entrevista "
+                "con una representante del COPRED: "
+                "https://www.sopitas.com/noticias/discriminacion-cdmx-copred-edis-2026/. "
+                "No se descargó ni reprodujo contenido protegido."
+            ),
+        }
+    if is_periodico_am_49ers_cdmx_story(article):
+        return {
+            "lead": (
+                "Periódico AM, con información de AP, cuenta que el club oficial de aficionados de los "
+                "San Francisco 49ers en México surgió después del partido de 2005 y se formalizó en julio "
+                "de 2014. Según su presidente, la primera foto reunió a 70 personas y la convocatoria de "
+                "esta temporada llegó a 850."
+            ),
+            "context": (
+                "La nota sitúa una reunión de bienvenida en la explanada del Estadio Azteca antes del "
+                "encuentro de los 49ers contra los Vikings. El tema es la afición y el partido, no un operativo "
+                "ni una afectación vial."
+            ),
+            "pending": (
+                "Las cifras de seguidores y asistentes son declaraciones atribuidas a Germán Robles y al "
+                "medio; no se verificaron de forma independiente. El partido aún era futuro al publicarse "
+                "la nota del 16 de noviembre."
+            ),
+            "method": (
+                "Síntesis editorial propia basada en Periódico AM, con información de AP, 16 de noviembre "
+                "de 2026: "
+                "https://www.am.com.mx/superdeportivo/2026/11/16/vas-al-estadio-azteca-a-ver-a-los-49ers-el-secreto-detras-de-la-marea-roja-que-invadira-la-cdmx-1867021.html."
+            ),
+        }
     if is_esto_49ers_fan_story(article):
         return {
             "lead": (
@@ -2647,10 +2766,12 @@ def _photo_score(article, photo):
         return 5000 if photo.get("id") == "contexto_imeca_calidad_aire_cdmx" else -10000
     if is_billboard_karol_g_concert_story(article):
         return 5000 if photo.get("id") == "contexto_concierto_foro_sol_2023" else -10000
-    # La guía del desfile del 20 de noviembre recorre del Zócalo al Monumento;
-    # usar el monumento conmemorativo, no el Desfile de Catrinas.
-    if is_elpais_revolucion_desfile(article):
+    # Las guías del desfile del 20 de noviembre recorren del Zócalo al Monumento;
+    # usar el monumento conmemorativo, no fotografías del Desfile de Catrinas.
+    if is_revolucion_mexicana_desfile_2026(article):
         return 5000 if photo.get("id") == "commons_107165242" else -10000
+    if is_sopitas_edis_discrimination_2026(article):
+        return 5000 if photo.get("id") == "commons_16185756" else -10000
     if is_elcongresista_buen_fin_operation(article):
         return 5000 if photo.get("id") == "commons_149171771" else -10000
     if is_tvazteca_hoy_no_circula_bridge_story(article):
@@ -2659,7 +2780,7 @@ def _photo_score(article, photo):
         return 5000 if photo.get("id") == "contexto_concierto_foro_sol_2023" else -10000
     if is_generation_z_zocalo_march(article):
         return 5000 if photo.get("id") == "commons_149171771" else -10000
-    if is_esto_49ers_fan_story(article):
+    if is_esto_49ers_fan_story(article) or is_periodico_am_49ers_cdmx_story(article):
         return 5000 if photo.get("id") == "contexto_futbol_americano_nfl" else -10000
     if is_animal_abuse_statistics_report(article):
         return 5000 if photo.get("id") == "contexto_perros_parque_espana" else -10000
