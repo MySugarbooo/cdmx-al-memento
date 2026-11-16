@@ -4156,7 +4156,7 @@ class RevolucionMexicanaDesfilePhotoRegressionTests(unittest.TestCase):
             },
         ]
         pool = {photo["id"]: photo for photo in photos._pool()}
-        monument = deepcopy(pool["commons_107165242"])
+        monument = deepcopy(pool["contexto_monumento_revolucion_desfile_2026"])
         for case in cases:
             with self.subTest(source=case["source"]):
                 article = news.standardize({
@@ -4181,7 +4181,7 @@ class RevolucionMexicanaDesfilePhotoRegressionTests(unittest.TestCase):
                 ):
                     assign_photos([article])
 
-                self.assertEqual(article["photo"]["id"], "commons_107165242")
+                self.assertEqual(article["photo"]["id"], "contexto_monumento_revolucion_desfile_2026")
                 self.assertEqual(article["photo"]["author"], "CésarRood")
                 self.assertEqual(article["photo"]["license"], "CC BY-SA 4.0")
                 self.assertIn("Monumento a la Revolución", article["photo"]["topic"])
@@ -4216,7 +4216,7 @@ class SopitasEdisDiscriminationPhotoRegressionTests(unittest.TestCase):
         self.assertIn("46%", article["brief"]["lead"])
         pool = {photo["id"]: photo for photo in photos._pool()}
         church = deepcopy(pool["commons_80020584"])
-        street = deepcopy(pool["commons_16185756"])
+        street = deepcopy(pool["contexto_edis_poblacion_cdmx"])
         article["photo"] = church
 
         self.assertLess(_photo_score(article, church), 0)
@@ -4226,7 +4226,7 @@ class SopitasEdisDiscriminationPhotoRegressionTests(unittest.TestCase):
         ):
             assign_photos([article])
 
-        self.assertEqual(article["photo"]["id"], "commons_16185756")
+        self.assertEqual(article["photo"]["id"], "contexto_edis_poblacion_cdmx")
         self.assertEqual(article["photo"]["author"], "ProtoplasmaKid")
         self.assertEqual(article["photo"]["license"], "CC BY-SA 4.0")
         self.assertIn("peatones caminando", article["photo"]["topic"].lower())
