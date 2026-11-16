@@ -4282,8 +4282,11 @@ class SomoselmedioValparaisoPhotoRegressionTests(unittest.TestCase):
         self.assertTrue(photos.is_somoselmedio_valparaiso_exhibition_story(article))
         self.assertEqual(article["source_url"], "https://www.somoselmedio.com/valparaiso-miradas-criticas-en-cdmx/")
         self.assertIn("29 de octubre", article["brief"]["lead"])
+        self.assertIn("19 de octubre", article["brief"]["lead"])
         self.assertIn("6 de noviembre", article["brief"]["lead"])
         self.assertIn("concluyó", article["brief"]["pending"])
+        self.assertIn("discrepan", article["brief"]["pending"])
+        self.assertIn("19 de octubre", article["brief"]["pending"])
         self.assertEqual(article["borough"], "Cuauhtémoc")
         pool = {photo["id"]: photo for photo in photos._pool()}
         unrelated = deepcopy(pool["commons_202033493"])
