@@ -88,6 +88,17 @@ INFOBAE_GARBAGE_ZOCALO_SOURCE_URL = "https://www.infobae.com/mexico/2026/11/15/g
 YAHOO_GARBAGE_ZOCALO_SOURCE_URL = "https://es-us.noticias.yahoo.com/garbage-conquista-90-mil-personas-224733197.html"
 
 
+def is_generation_z_zocalo_march(article):
+    """Identifica coberturas de la marcha Generación Z al Zócalo del 15/11/2026."""
+    title = _photo_fold(article.get("title"))
+    return (
+        str(article.get("date") or "") == "2026-11-15"
+        and "generacion z" in title
+        and "marcha" in title
+        and "zocalo" in title
+    )
+
+
 def is_radio_formula_casa_ecologica(article):
     """Identifica la nota de Radio Fórmula del programa Casa Ecológica del 12/11/2026."""
     title = unicodedata.normalize("NFKD", str(article.get("title") or ""))
@@ -2393,6 +2404,8 @@ def _photo_score(article, photo):
     topic=re.sub(r"\bno\b[^;.)]*", "", topic)
     keywords=_photo_fold(" ".join(str(x) for x in photo.get("keywords",[])))
     context=topic+" "+keywords
+    if is_generation_z_zocalo_march(article):
+        return 5000 if photo.get("id") == "commons_149171771" else -10000
     if is_animal_abuse_statistics_report(article):
         return 5000 if photo.get("id") == "contexto_perros_parque_espana" else -10000
     if is_la_prensa_prehospital_care(article):
