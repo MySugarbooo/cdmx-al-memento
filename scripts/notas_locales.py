@@ -933,7 +933,7 @@ def summarize(article):
             ),
             "context": (
                 "La publicación menciona vigilancia y ordenamiento del comercio informal, pero no enlaza un "
-                "comunicado oficial de la Secretaría de Gobierno o de la SSC que confirme esas acciones."
+                "comunicado oficial de la Secretaría de Gobierno o de la SSC que confirme esas acciones; además, declara que fue redactada con asistencia de IA a partir de fuentes citadas."
             ),
             "pending": (
                 "No se confirma el despliegue, su duración, las restricciones al comercio informal ni la cita "
@@ -941,7 +941,7 @@ def summarize(article):
             ),
             "method": (
                 "Se consultó el artículo original de El Congresista y se contrastó el cargo con el portal del "
-                "Gobierno de CDMX (https://gobierno.cdmx.gob.mx/) y el Ayuntamiento de Puebla (https://pueblacapital.gob.mx/noticias/capital-imparable/encabeza-pepe-chedraui-encendido-por-fiestas-patrias). "
+                "Gobierno de CDMX (https://jefadegobierno.cdmx.gob.mx/) y el Ayuntamiento de Puebla (https://pueblacapital.gob.mx/noticias/capital-imparable/encabeza-pepe-chedraui-encendido-por-fiestas-patrias). "
                 "La comprobación detecta una atribución errónea; no verifica de manera independiente el operativo."
             ),
         }
