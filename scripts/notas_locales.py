@@ -1067,7 +1067,7 @@ def summarize(article):
                 "Cárdenas, avenida Juárez, Paseo de la Reforma y avenida de la República."
             ),
             "context": (
-                "El medio atribuye a la información oficial diez contingentes con más de 2,900 elementos "
+                "El medio atribuye a la información oficial 10 contingentes con más de 2,900 elementos "
                 "del Ejército, la Fuerza Aérea y la Guardia Nacional. La SSC recomienda como alternativas "
                 "Eje 1 Norte y Circuito Interior al norte; Eje 1 Oriente, José María Izazaga y avenida "
                 "Chapultepec al sur; Ejes 3 y 2 Oriente al oriente; e Insurgentes y Circuito Interior al poniente."
