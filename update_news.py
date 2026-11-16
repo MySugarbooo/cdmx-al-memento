@@ -34,6 +34,11 @@ REPORT_DIR = ROOT / "reportes"
 REPORTS = ROOT / "reports.json"
 MX = ZoneInfo("America/Mexico_City")
 SITE = "https://cdmx-al-memento.pages.dev"
+ELPAIS_REVOLUCION_DESFILE_SOURCE_URL = "https://elpais.com/mexico/2026-11-16/el-desfile-de-la-revolucion-en-ciudad-de-mexico-horario-ruta-y-contingentes.html"
+ELIMPARCIAL_REVOLUCION_DESFILE_SOURCE_URL = "https://www.elimparcial.com/mexico/2026/11/16/desfile-revolucion-mexicana-2026-cdmx-fecha-ruta-y-horarios-oficiales-del-20-de-noviembre/"
+SOPITAS_EDIS_2026_SOURCE_URL = "https://www.sopitas.com/noticias/discriminacion-cdmx-copred-edis-2026/"
+PERIODICO_AM_49ERS_SOURCE_URL = "https://www.am.com.mx/superdeportivo/2026/11/16/vas-al-estadio-azteca-a-ver-a-los-49ers-el-secreto-detras-de-la-marea-roja-que-invadira-la-cdmx-1867021.html"
+DIARIO_YUCATAN_GARBAGE_ZOCALO_SOURCE_URL = "https://www.yucatan.com.mx/imagen/2026/11/16/garbage-canta-ante-90-mil-fans-en-el-en-el-zocalo-de-la-ciudad-de-mexico.html"
 LA_PRENSA_VC_MOTORCYCLE_CRASH_SOURCE_URL = "https://oem.com.mx/la-prensa/policiaca/mueren-dos-motociclistas-tras-chocar-contra-una-camioneta-en-venustiano-carranza-33118910"
 SOCIEDAD_NOTICIAS_VC_MOTORCYCLE_CRASH_SOURCE_URL = "https://sociedad-noticias.com/2026/11/14/mueren-dos-motociclistas-tras-accidente-vial-en-venustiano-carranza/"
 NPLUS_AZCAPOTZALCO_HOMICIDE_DETAIL_SOURCE_URL = "https://www.nmas.com.mx/ciudad-de-mexico/seguridad/asesinatos/asesinan-a-un-hombre-y-un-nino-de-10-anos-en-alcaldia-azcapotzalco-en-la-cdmx/"
@@ -951,6 +956,18 @@ def standardize(article):
         result["source_url"] = TV_AZTECA_HOY_NO_CIRCULA_20261116_SOURCE_URL
     if is_esto_49ers_fan_story(result):
         result["source_url"] = ESTO_49ERS_FANS_SOURCE_URL
+    source_name = fold(result.get("source"))
+    source_title = fold(result.get("title"))
+    if result.get("date") == "2026-11-16" and source_name == "el pais" and "desfile de la revolucion" in source_title:
+        result["source_url"] = ELPAIS_REVOLUCION_DESFILE_SOURCE_URL
+    elif result.get("date") == "2026-11-16" and source_name == "el imparcial" and "desfile" in source_title and "revolucion" in source_title:
+        result["source_url"] = ELIMPARCIAL_REVOLUCION_DESFILE_SOURCE_URL
+    elif result.get("date") == "2026-11-16" and source_name == "sopitas.com" and "edis 2026" in source_title and "discriminacion" in source_title:
+        result["source_url"] = SOPITAS_EDIS_2026_SOURCE_URL
+    elif result.get("date") == "2026-11-16" and source_name == "periodico am" and "49ers" in source_title and "estadio azteca" in source_title:
+        result["source_url"] = PERIODICO_AM_49ERS_SOURCE_URL
+    elif result.get("date") == "2026-11-16" and source_name == "diario de yucatan" and "garbage" in source_title and "zocalo" in source_title:
+        result["source_url"] = DIARIO_YUCATAN_GARBAGE_ZOCALO_SOURCE_URL
     if is_hoy_tamaulipas_paty_chio_assembly(result):
         result["source_url"] = HOY_TAMAULIPAS_PATTY_CHIO_SOURCE_URL
     versions = article.get("alternate_versions")
