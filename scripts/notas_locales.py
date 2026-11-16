@@ -89,13 +89,21 @@ YAHOO_GARBAGE_ZOCALO_SOURCE_URL = "https://es-us.noticias.yahoo.com/garbage-conq
 
 
 def is_generation_z_zocalo_march(article):
-    """Identifica coberturas de la marcha Generación Z al Zócalo del 15/11/2026."""
+    """Identifica coberturas de la movilización de Generación Z en CDMX del 15/11/2026.
+
+    Los titulares de distintos medios describen el mismo recorrido desde el Monumento
+    a la Revolución hasta el Zócalo con variantes como "marcha", "protesta" o
+    "toma las calles". La fotografía de archivo del Zócalo se usa solo como contexto.
+    """
     title = _photo_fold(article.get("title"))
     return (
         str(article.get("date") or "") == "2026-11-15"
         and "generacion z" in title
-        and "marcha" in title
-        and "zocalo" in title
+        and (
+            "marcha" in title
+            or "protesta" in title
+            or "toma las calles" in title
+        )
     )
 
 
