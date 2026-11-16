@@ -968,7 +968,7 @@ def standardize(article):
         result["source_url"] = PERIODICO_AM_49ERS_SOURCE_URL
     elif result.get("date") == "2026-11-16" and source_name == "diario de yucatan" and "garbage" in source_title and "zocalo" in source_title:
         result["source_url"] = DIARIO_YUCATAN_GARBAGE_ZOCALO_SOURCE_URL
-        result["title"] = re.sub(r"\\ben el en el\\b", "en el", result["title"], flags=re.IGNORECASE)
+        result["title"] = re.sub(r"\ben el en el\b", "en el", result["title"], flags=re.IGNORECASE)
     if is_hoy_tamaulipas_paty_chio_assembly(result):
         result["source_url"] = HOY_TAMAULIPAS_PATTY_CHIO_SOURCE_URL
     versions = article.get("alternate_versions")
