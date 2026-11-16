@@ -350,6 +350,8 @@ class PhotoRelevanceTests(unittest.TestCase):
             "Generación Z marcha en CDMX y llega al Zócalo, pese al blindaje",
             'Ciudadanos identificados como "Generación Z" protestan en calles de CDMX',
             "Generación Z y organizaciones marchan en la CDMX; exigen seguridad y participación ciudadana en el gobierno",
+            "Generación Z y organizaciones marchan en CDMX para exigir seguridad, justicia y vivienda",
+            "Marcha de la Generación Z avanza hacia el Zócalo; estas son las rutas alternas en CDMX",
             "Marcha Generación Z al Zócalo de la Cdmx",
         ]
         unrelated = representative_photo(
