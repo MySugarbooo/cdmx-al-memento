@@ -4116,6 +4116,10 @@ class DiarioYucatanGarbageZocaloPhotoRegressionTests(unittest.TestCase):
         })
         self.assertIsNotNone(article)
         self.assertTrue(photos.is_diario_yucatan_garbage_zocalo(article))
+        self.assertEqual(
+            article["source_url"],
+            "https://www.yucatan.com.mx/imagen/2026/11/16/garbage-canta-ante-90-mil-fans-en-el-en-el-zocalo-de-la-ciudad-de-mexico.html",
+        )
         pool = {photo["id"]: photo for photo in photos._pool()}
         kings_of_leon = deepcopy(pool["contexto_concierto_palacio_deportes_2009"])
         zocalo = deepcopy(pool["zocalo"])
@@ -4133,34 +4137,133 @@ class DiarioYucatanGarbageZocaloPhotoRegressionTests(unittest.TestCase):
         self.assertEqual(article["photo"]["license"], "CC BY-SA 4.0")
         self.assertIn("Zócalo", article["photo"]["topic"])
 
-class ElPaisRevolucionDesfilePhotoRegressionTests(unittest.TestCase):
-    def test_el_pais_revolution_parade_uses_monument_not_catrinas(self):
+class RevolucionMexicanaDesfilePhotoRegressionTests(unittest.TestCase):
+    def test_elpais_and_el_imparcial_desfile_guides_use_monument_not_catrinas(self):
+        cases = [
+            {
+                "source": "EL PAÍS",
+                "title": "El desfile de la Revolución en Ciudad de México: horario, ruta y contingentes",
+                "wrong_photo_id": "reciente_a5a3bc52fa77c066",
+                "source_url": "https://elpais.com/mexico/2026-11-16/el-desfile-de-la-revolucion-en-ciudad-de-mexico-horario-ruta-y-contingentes.html",
+            },
+            {
+                "source": "El Imparcial",
+                "title": "Desfile Revolución Mexicana 2026 CDMX: fecha, ruta y horarios oficiales del 20 de noviembre",
+                "wrong_photo_id": "reciente_d3bf2851210c8f52",
+                "source_url": "https://www.elimparcial.com/mexico/2026/11/16/desfile-revolucion-mexicana-2026-cdmx-fecha-ruta-y-horarios-oficiales-del-20-de-noviembre/",
+            },
+        ]
+        pool = {photo["id"]: photo for photo in photos._pool()}
+        monument = deepcopy(pool["commons_107165242"])
+        for case in cases:
+            with self.subTest(source=case["source"]):
+                article = news.standardize({
+                    "title": case["title"],
+                    "url": "https://news.google.com/rss/articles/revolucion-desfile-20261116",
+                    "source": case["source"],
+                    "date": "2026-11-16",
+                    "published_at": "2026-11-16T14:00:00Z",
+                    "category": "CDMX",
+                })
+                self.assertIsNotNone(article)
+                self.assertTrue(photos.is_revolucion_mexicana_desfile_2026(article))
+                self.assertEqual(article["source_url"], case["source_url"])
+                self.assertIn("20 de noviembre", article["brief"]["lead"].lower())
+                wrong = deepcopy(pool[case["wrong_photo_id"]])
+                article["photo"] = wrong
+
+                self.assertLess(_photo_score(article, wrong), 0)
+                self.assertEqual(_photo_score(article, monument), 5000)
+                with patch.object(photos, "_pool", return_value=[wrong, monument]), patch.object(
+                    photos, "_load", return_value=[]
+                ):
+                    assign_photos([article])
+
+                self.assertEqual(article["photo"]["id"], "commons_107165242")
+                self.assertEqual(article["photo"]["author"], "CésarRood")
+                self.assertEqual(article["photo"]["license"], "CC BY-SA 4.0")
+                self.assertIn("Monumento a la Revolución", article["photo"]["topic"])
+        self.assertIn("2,904", news.standardize({
+            "title": cases[0]["title"], "url": "https://news.google.com/rss/articles/revolucion-el-pais",
+            "source": "EL PAÍS", "date": "2026-11-16", "category": "CDMX",
+        })["brief"]["lead"])
+        imparcial_brief = news.standardize({
+            "title": cases[1]["title"], "url": "https://news.google.com/rss/articles/revolucion-imparcial",
+            "source": "El Imparcial", "date": "2026-11-16", "category": "CDMX",
+        })["brief"]
+        self.assertIn("15", imparcial_brief["pending"])
+        self.assertIn("69", imparcial_brief["pending"])
+
+
+class SopitasEdisDiscriminationPhotoRegressionTests(unittest.TestCase):
+    def test_edis_story_uses_neutral_cdmx_pedestrian_photo_not_unrelated_church(self):
         article = news.standardize({
-            "title": "El desfile de la Revolución en Ciudad de México: horario, ruta y contingentes",
-            "url": "https://news.google.com/rss/articles/elpais-revolucion-desfile-20261116",
-            "source": "EL PAÍS",
+            "title": "EDIS 2026: Por qué es importante contar con una encuesta sobre discriminación en CDMX",
+            "url": "https://news.google.com/rss/articles/sopitas-edis-20261116",
+            "source": "Sopitas.com",
             "date": "2026-11-16",
             "published_at": "2026-11-16T14:00:00Z",
             "category": "CDMX",
         })
         self.assertIsNotNone(article)
-        self.assertTrue(photos.is_elpais_revolucion_desfile(article))
+        self.assertTrue(photos.is_sopitas_edis_discrimination_2026(article))
+        self.assertEqual(
+            article["source_url"],
+            "https://www.sopitas.com/noticias/discriminacion-cdmx-copred-edis-2026/",
+        )
+        self.assertIn("46%", article["brief"]["lead"])
         pool = {photo["id"]: photo for photo in photos._pool()}
-        catrinas = deepcopy(pool["reciente_a5a3bc52fa77c066"])
-        monument = deepcopy(pool["commons_107165242"])
-        article["photo"] = catrinas
+        church = deepcopy(pool["commons_80020584"])
+        street = deepcopy(pool["commons_16185756"])
+        article["photo"] = church
 
-        self.assertLess(_photo_score(article, catrinas), 0)
-        self.assertEqual(_photo_score(article, monument), 5000)
-        with patch.object(photos, "_pool", return_value=[catrinas, monument]), patch.object(
+        self.assertLess(_photo_score(article, church), 0)
+        self.assertEqual(_photo_score(article, street), 5000)
+        with patch.object(photos, "_pool", return_value=[church, street]), patch.object(
             photos, "_load", return_value=[]
         ):
             assign_photos([article])
 
-        self.assertEqual(article["photo"]["id"], "commons_107165242")
-        self.assertEqual(article["photo"]["author"], "CésarRood")
+        self.assertEqual(article["photo"]["id"], "commons_16185756")
+        self.assertEqual(article["photo"]["author"], "ProtoplasmaKid")
         self.assertEqual(article["photo"]["license"], "CC BY-SA 4.0")
-        self.assertIn("Monumento a la Revolución", article["photo"]["topic"])
+        self.assertIn("peatones caminando", article["photo"]["topic"].lower())
+        self.assertIn("no corresponde a la edis 2026", article["photo"]["topic"].lower())
+
+
+class PeriodicoAm49ersPhotoRegressionTests(unittest.TestCase):
+    def test_periodico_am_49ers_story_uses_football_context_not_revolution_monument(self):
+        article = news.standardize({
+            "title": "¿Vas al Estadio Azteca a ver a los 49ers? El secreto detrás de la marea roja que invadirá la CDMX",
+            "url": "https://news.google.com/rss/articles/periodico-am-49ers-20261116",
+            "source": "Periódico AM",
+            "date": "2026-11-16",
+            "published_at": "2026-11-16T10:00:00Z",
+            "category": "CDMX",
+        })
+        self.assertIsNotNone(article)
+        self.assertTrue(photos.is_periodico_am_49ers_cdmx_story(article))
+        self.assertEqual(
+            article["source_url"],
+            "https://www.am.com.mx/superdeportivo/2026/11/16/vas-al-estadio-azteca-a-ver-a-los-49ers-el-secreto-detras-de-la-marea-roja-que-invadira-la-cdmx-1867021.html",
+        )
+        self.assertIn("850", article["brief"]["lead"])
+        pool = {photo["id"]: photo for photo in photos._pool()}
+        monument = deepcopy(pool["commons_73175061"])
+        football = deepcopy(pool["contexto_futbol_americano_nfl"])
+        article["photo"] = monument
+
+        self.assertLess(_photo_score(article, monument), 0)
+        self.assertEqual(_photo_score(article, football), 5000)
+        with patch.object(photos, "_pool", return_value=[monument, football]), patch.object(
+            photos, "_load", return_value=[]
+        ):
+            assign_photos([article])
+
+        self.assertEqual(article["photo"]["id"], "contexto_futbol_americano_nfl")
+        self.assertEqual(article["photo"]["author"], "Torsten Bolten, AFpix.de")
+        self.assertEqual(article["photo"]["license"], "CC BY-SA 3.0")
+        self.assertIn("no del juego de NFL en CDMX", article["photo"]["topic"])
 
 
 if __name__ == "__main__":
