@@ -4326,6 +4326,26 @@ class ContextPhotoRelevanceRegressionTests(unittest.TestCase):
         photo = self._assert_replacement(article, "gobierno", "commons_112950009", wrong)
         self.assertIn("San Miguel Topilejo", photo["topic"])
 
+    def test_milenio_ruta_maiz_uses_topilejo_photo_not_palacio_treasury(self):
+        article = self._article(
+            "Ruta del Maíz en CdMx: Paradas, horarios y costo de viajar en nueva red de transporte",
+            "MILENIO",
+        )
+        wrong = {
+            "id": "commons_98002540",
+            "kind": "representativa",
+            "category": "Gobierno",
+            "topic": "Sala de Tesorería en Palacio Nacional - III",
+            "keywords": ["Palacio Nacional Ciudad de México"],
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Sala_de_Tesorer%C3%ADa_en_Palacio_Nacional_-_III.jpg/960px-Sala_de_Tesorer%C3%ADa_en_Palacio_Nacional_-_III.jpg",
+            "source": "https://commons.wikimedia.org/wiki/File:Sala_de_Tesorer%C3%ADa_en_Palacio_Nacional_-_III.jpg",
+            "author": "J Mndz",
+            "license": "CC BY-SA 2.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        }
+        photo = self._assert_replacement(article, "commons_98002540", "commons_112950009", wrong)
+        self.assertIn("San Miguel Topilejo", photo["topic"])
+
     def test_utopias_program_uses_a_utopia_facility_not_palacio_treasury(self):
         article = self._article(
             "Deporte, salud y cuidados: CDMX integra a 2 mil 302 personas al programa Utopías",
