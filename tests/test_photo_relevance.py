@@ -4381,7 +4381,7 @@ class CapitalCdmxColonyCrimeStatsPhotoRegressionTests(unittest.TestCase):
         self.assertEqual(article["photo"]["author"], "ProtoplasmaKid")
         self.assertEqual(article["photo"]["license"], "CC BY-SA 4.0")
         self.assertIn("Cuajimalpa", article["photo"]["topic"])
-        self.assertIn("no representa ni documenta", article["photo"]["context"].lower())
+        self.assertIn("no documenta las denuncias", article["photo"]["topic"].lower())
 
     def test_jardin_balbuena_story_uses_geolocated_photo_and_verified_source_summary(self):
         article = news.standardize({
@@ -4423,7 +4423,7 @@ class CapitalCdmxColonyCrimeStatsPhotoRegressionTests(unittest.TestCase):
         self.assertEqual(article["photo"]["author"], "ProtoplasmaKid")
         self.assertEqual(article["photo"]["license"], "CC BY-SA 4.0")
         self.assertIn("Jardín Balbuena", article["photo"]["topic"])
-        self.assertIn("no representa ni documenta", article["photo"]["context"].lower())
+        self.assertIn("no documenta las denuncias", article["photo"]["topic"].lower())
 
 
 if __name__ == "__main__":
