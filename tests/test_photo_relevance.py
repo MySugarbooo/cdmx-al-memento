@@ -342,6 +342,46 @@ class PhotoRelevanceTests(unittest.TestCase):
         self.assertIn("Zócalo", article["photo"]["topic"])
         self.assertEqual(article["photo"]["license"], "CC BY-SA 4.0")
 
+    def test_generation_z_coverage_variants_reject_unrelated_archive_photos(self):
+        titles = [
+            "Generación Z toma las calles de CDMX y se suma a ola de protestas juveniles en el mundo",
+            "Marcha de la Generación Z concluye con saldo blanco en CDMX",
+            "Marcha de la Generación Z en CDMX concluye sin incidentes; reúne apenas a 120",
+            "Generación Z marcha en CDMX y llega al Zócalo, pese al blindaje",
+            'Ciudadanos identificados como "Generación Z" protestan en calles de CDMX',
+            "Generación Z y organizaciones marchan en la CDMX; exigen seguridad y participación ciudadana en el gobierno",
+            "Marcha Generación Z al Zócalo de la Cdmx",
+        ]
+        unrelated = representative_photo(
+            "contexto_periferico_sur_2015",
+            "CDMX",
+            "Periférico Sur desde Glorieta de Vaqueritos, Tlalpan (2015)",
+            ["Periférico Sur", "Tlalpan"],
+        )
+        zocalo = next(photo for photo in photos._pool() if photo.get("id") == "commons_149171771")
+        for index, title in enumerate(titles):
+            with self.subTest(title=title):
+                article = news.standardize({
+                    "title": title,
+                    "url": f"https://news.google.com/rss/articles/generacion-z-coverage-{index}",
+                    "source": "Medio de prueba",
+                    "date": "2026-11-15",
+                    "published_at": "2026-11-15T19:00:00Z",
+                    "category": "CDMX",
+                })
+                self.assertIsNotNone(article)
+                self.assertLess(_photo_score(article, unrelated), 0)
+                self.assertGreaterEqual(_photo_score(article, zocalo), 0)
+                article["photo"] = deepcopy(unrelated)
+                with patch.object(photos, "_pool", return_value=[unrelated, zocalo]), patch.object(
+                    photos, "_load", return_value=[]
+                ):
+                    assign_photos([article])
+                self.assertEqual(article["photo"]["id"], "commons_149171771")
+                self.assertIn("Zócalo", article["photo"]["topic"])
+                self.assertEqual(article["photo"]["author"], "ProtoplasmaKid")
+                self.assertEqual(article["photo"]["license"], "CC BY-SA 4.0")
+
     def test_nfl_event_is_not_metro_and_uses_licensed_football_photo(self):
         title = ("NFL en México: estas son todas las actividades que podrás disfrutar "
                  "en las calles de la CDMX previo al juego de San Francisco 49ers "
