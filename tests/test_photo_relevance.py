@@ -4072,5 +4072,35 @@ class CurrentFeedPhotoMismatchRegressionTests(unittest.TestCase):
         self.assertEqual(article["photo"]["license"], "CC0 1.0")
         self.assertFalse(news.photo_needs_refresh(article))
 
+
+class ReporteIndigoAirQualityPhotoRegressionTests(unittest.TestCase):
+    def test_contingency_report_replaces_richmond_plastic_bags_with_imeca_reference(self):
+        article = news.standardize({
+            "title": "¿Hay contingencia ambiental HOY, 16 de noviembre? Calidad del aire y autos que No Circulan en CDMX y Edomex",
+            "url": "https://news.google.com/rss/articles/reporte-indigo-air-quality-photo-20261116",
+            "source": "Reporte Indigo",
+            "date": "2026-11-16",
+            "published_at": "2026-11-16T11:17:00Z",
+            "category": "Medio Ambiente",
+        })
+        self.assertIsNotNone(article)
+        self.assertTrue(photos.is_reporte_indigo_contingency_story(article))
+        pool = {photo["id"]: photo for photo in photos._pool()}
+        plastic_bags = deepcopy(pool["contexto_bolsas_plasticas_compras_2015"])
+        imeca = deepcopy(pool["contexto_imeca_calidad_aire_cdmx"])
+        article["photo"] = plastic_bags
+
+        self.assertLess(_photo_score(article, plastic_bags), 0)
+        self.assertEqual(_photo_score(article, imeca), 5000)
+        with patch.object(photos, "_pool", return_value=[plastic_bags, imeca]), patch.object(
+            photos, "_load", return_value=[]
+        ):
+            assign_photos([article])
+
+        self.assertEqual(article["photo"]["id"], "contexto_imeca_calidad_aire_cdmx")
+        self.assertEqual(article["photo"]["author"], "(WT-en) Fabz at English Wikivoyage")
+        self.assertEqual(article["photo"]["license"], "CC BY-SA 1.0")
+        self.assertIn("archivo de 2007", article["photo"]["topic"])
+
 if __name__ == "__main__":
     unittest.main()
