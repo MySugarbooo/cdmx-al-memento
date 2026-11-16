@@ -95,7 +95,7 @@ def is_metro_zocalo_line2_closure(article):
         str(article.get("date") or "") == "2026-11-15"
         and "metro" in title
         and "zocalo" in title
-        and bool(re.search(r"\\b(?:cierra|cierran|cerrada|cierre)\\b", title))
+        and bool(re.search(r"\b(?:cierra|cierran|cerrada|cierre)\b", title))
     )
 
 
@@ -2406,8 +2406,8 @@ def _photo_score(article, photo):
     context=topic+" "+keywords
     if is_metro_zocalo_line2_closure(article):
         is_line_two_station = bool(
-            re.search(r"\\blinea 2\\b", context)
-            and re.search(r"\\bmetro\\b", context)
+            re.search(r"\blinea 2\b", context)
+            and re.search(r"\bmetro\b", context)
         )
         return 5000 if is_line_two_station else -10000
     if is_animal_abuse_statistics_report(article):
