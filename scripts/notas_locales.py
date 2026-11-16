@@ -102,6 +102,25 @@ def is_esto_49ers_fan_story(article):
     )
 
 
+def is_generation_z_zocalo_march(article):
+    """Identifica coberturas de la movilización de Generación Z en CDMX del 15/11/2026.
+
+    Los titulares de distintos medios describen el mismo recorrido desde el Monumento
+    a la Revolución hasta el Zócalo con variantes como "marcha", "protesta" o
+    "toma las calles". La fotografía de archivo del Zócalo se usa solo como contexto.
+    """
+    title = _photo_fold(article.get("title"))
+    return (
+        str(article.get("date") or "") == "2026-11-15"
+        and "generacion z" in title
+        and (
+            "marcha" in title
+            or "protesta" in title
+            or "toma las calles" in title
+        )
+    )
+
+
 def is_radio_formula_casa_ecologica(article):
     """Identifica la nota de Radio Fórmula del programa Casa Ecológica del 12/11/2026."""
     title = unicodedata.normalize("NFKD", str(article.get("title") or ""))
@@ -2430,6 +2449,8 @@ def _photo_score(article, photo):
     topic=re.sub(r"\bno\b[^;.)]*", "", topic)
     keywords=_photo_fold(" ".join(str(x) for x in photo.get("keywords",[])))
     context=topic+" "+keywords
+    if is_generation_z_zocalo_march(article):
+        return 5000 if photo.get("id") == "commons_149171771" else -10000
     if is_esto_49ers_fan_story(article):
         return 5000 if photo.get("id") == "contexto_futbol_americano_nfl" else -10000
     if is_animal_abuse_statistics_report(article):
