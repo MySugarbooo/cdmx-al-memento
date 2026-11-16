@@ -4312,9 +4312,9 @@ class InfobaeTeacherMentalHealthPhotoRegressionTests(unittest.TestCase):
             "title": "Depresión adolescente: proponen capacitar a maestros de la CDMX en primeros auxilios psicológicos",
             "url": "https://news.google.com/rss/articles/infobae-mental-health-20261116",
             "source": "Infobae",
-            "date": "2026-11-16",
-            "published_at": "2026-11-16T14:00:00Z",
-            "category": "Educación",
+            "date": "2026-11-15",
+            "published_at": "2026-11-16T01:14:00Z",
+            "category": "CDMX",
         })
         self.assertIsNotNone(article)
         self.assertTrue(photos.is_infobae_teacher_mental_health_story(article))
