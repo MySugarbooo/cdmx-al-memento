@@ -276,6 +276,10 @@ function homepageEventKey(article){
  // como eventos distintos y evita repetir la misma incidencia en portada.
  if(/\bmetro\b/.test(title)&&/\bzocalo\b/.test(title)&&/\b(?:cierra|cierran|cerrada|cierre)\b/.test(title))
   return 'metro-zocalo-line2-closure-'+day;
+ // Varias fuentes cubrieron la misma marcha de Generación Z del 15/11/2026.
+ // Agrupar por fecha evita que una sola movilización ocupe varias tarjetas.
+ if(day==='2026-11-15'&&/\bgeneracion z\b/.test(title)&&/\b(?:march\w*|protest\w*)\b|\btoma las calles\b/.test(title))
+  return 'generation-z-cdmx-march-'+day;
  return '';
 }
 function eligibleStories(feed){
