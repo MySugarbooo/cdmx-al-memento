@@ -14,8 +14,8 @@ class LocalNewsTests(unittest.TestCase):
             "title": "“Son nuestros chavos por siempre”: Afición de los 49ers en CDMX hablan de los Cowboys y los compara con Cruz Azul",
             "url": "https://news.google.com/rss/articles/esto-49ers-fans-20261115",
             "source": "El Sol de México",
-            "date": "2026-11-15",
-            "published_at": "2026-11-15T22:32:46Z",
+            # El RSS entrega la fecha de publicación UTC, no el campo date.
+            "published_at": "2026-11-16T02:32:46Z",
             "category": "CDMX",
         })
         self.assertIsNotNone(result)
