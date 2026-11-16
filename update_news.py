@@ -874,11 +874,11 @@ def standardize(article):
         result["borough"] = "Cuauhtémoc"
         result["location"] = "Centro Histórico, alcaldía Cuauhtémoc, Ciudad de México (según El Congresista; operativo no verificado)"
     result["local_url"] = local_link(result)
-    elif is_somoselmedio_valparaiso_exhibition_story(result):
+    if is_somoselmedio_valparaiso_exhibition_story(result):
         result["source_url"] = SOMOSELMEDIO_VALPARAISO_SOURCE_URL
         result["borough"] = "Cuauhtémoc"
         result["location"] = "Centro Cultural Casa Talavera, Centro Histórico, alcaldía Cuauhtémoc, Ciudad de México"
-    elif is_infobae_teacher_mental_health_story(result):
+    if is_infobae_teacher_mental_health_story(result):
         result["source_url"] = INFOBAE_DEPRESSION_TEACHERS_SOURCE_URL
     if is_hoy_tamaulipas_paty_chio_assembly(result):
         # Mantener el mes de la ruta original para no romper enlaces ni comentarios existentes.
