@@ -4120,6 +4120,8 @@ class DiarioYucatanGarbageZocaloPhotoRegressionTests(unittest.TestCase):
             article["source_url"],
             "https://www.yucatan.com.mx/imagen/2026/11/16/garbage-canta-ante-90-mil-fans-en-el-en-el-zocalo-de-la-ciudad-de-mexico.html",
         )
+        self.assertEqual(article["title"], "Garbage canta ante 90 mil fans en el Zócalo de la Ciudad de México")
+        self.assertIn("90,000", article["brief"]["lead"])
         pool = {photo["id"]: photo for photo in photos._pool()}
         kings_of_leon = deepcopy(pool["contexto_concierto_palacio_deportes_2009"])
         zocalo = deepcopy(pool["zocalo"])
