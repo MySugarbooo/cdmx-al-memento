@@ -117,6 +117,7 @@ def is_generation_z_zocalo_march(article):
             "marcha" in title
             or "protesta" in title
             or "toma las calles" in title
+            or "movilizacion" in title
         )
     )
 

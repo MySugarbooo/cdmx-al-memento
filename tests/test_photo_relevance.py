@@ -384,6 +384,38 @@ class PhotoRelevanceTests(unittest.TestCase):
                 self.assertEqual(article["photo"]["author"], "ProtoplasmaKid")
                 self.assertEqual(article["photo"]["license"], "CC BY-SA 4.0")
 
+    def test_generation_z_movilizacion_headline_replaces_old_cacerolazo_photo(self):
+        title = "Diversos contingentes se unen a la movilización de la Generación Z en CDMX"
+        article = news.standardize({
+            "title": title,
+            "url": "https://news.google.com/rss/articles/generation-z-movilizacion-20261115",
+            "source": "El Independiente",
+            "date": "2026-11-15",
+            "published_at": "2026-11-15T23:00:00Z",
+            "category": "CDMX",
+        })
+        self.assertIsNotNone(article)
+        old_cacerolazo = representative_photo(
+            "commons_16240277",
+            "CDMX",
+            "Cacerolazo contra la violencia en CDMX (archivo); foto representativa, "
+            "no corresponde a las movilizaciones del 14/11/2026.",
+            ["Ángel de la Independencia Ciudad de México"],
+        )
+        zocalo = next(photo for photo in photos._pool() if photo.get("id") == "commons_149171771")
+        self.assertEqual(_photo_score(article, zocalo), 5000)
+        self.assertLess(_photo_score(article, old_cacerolazo), 0)
+        self.assertGreaterEqual(_photo_score(article, zocalo), 0)
+        article["photo"] = deepcopy(old_cacerolazo)
+        with patch.object(photos, "_pool", return_value=[old_cacerolazo, zocalo]), patch.object(
+            photos, "_load", return_value=[]
+        ):
+            assign_photos([article])
+        self.assertEqual(article["photo"]["id"], "commons_149171771")
+        self.assertIn("Zócalo", article["photo"]["topic"])
+        self.assertEqual(article["photo"]["author"], "ProtoplasmaKid")
+        self.assertEqual(article["photo"]["license"], "CC BY-SA 4.0")
+
     def test_nfl_event_is_not_metro_and_uses_licensed_football_photo(self):
         title = ("NFL en México: estas son todas las actividades que podrás disfrutar "
                  "en las calles de la CDMX previo al juego de San Francisco 49ers "
