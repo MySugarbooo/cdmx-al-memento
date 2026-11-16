@@ -48,6 +48,12 @@ class PublicSeoTests(unittest.TestCase):
         page = render(article, "0123456789abcdefabcd")
         self.assertIn(trusted, page)
 
+        karol_g = "https://www.infobae.com/mexico/2026/11/16/que-le-paso-a-karol-g-filtran-la-supuesta-enfermedad-que-la-habria-obligado-a-posponer-su-concierto-en-la-cdmx/"
+        self.assertIn(karol_g, VERIFIED_SOURCE_URLS)
+        article["source_url"] = karol_g
+        karol_page = render(article, "0123456789abcdefabcd")
+        self.assertIn(karol_g, karol_page)
+
         untrusted = "https://www.infobae.com/mexico/2026/11/15/otro-articulo-no-verificado/"
         article["source_url"] = untrusted
         page = render(article, "0123456789abcdefabcd")
