@@ -95,6 +95,7 @@ BILLBOARD_KAROL_G_CDMX_SOURCE_URL = "https://www.billboard.com/espanol/noticias/
 ELCONGRESISTA_BUEN_FIN_CDMX_SOURCE_URL = "https://elcongresista.mx/politica/cdmx/gobierno-cdmx-operativo-el-buen-fin"
 TV_AZTECA_HOY_NO_CIRCULA_20261116_SOURCE_URL = "https://www.tvazteca.com/aztecanoticias/vas-a-salir-por-el-puente-estos-autos-no-podran-circular-el-lunes-16-de-noviembre/"
 YAHOO_GARBAGE_ZOCALO_SOURCE_URL = "https://es-us.noticias.yahoo.com/garbage-conquista-90-mil-personas-224733197.html"
+TV_AZTECA_REVOLUCION_DESFILE_SOURCE_URL = "https://www.tvazteca.com/aztecanoticias/desfile-del-20-de-noviembre-en-cdmx-ruta-horarios-y-alternativas-viales-por-cortes-a-la-circulacion/?outputType=amp"
 
 
 def is_esto_49ers_fan_story(article):
@@ -412,6 +413,18 @@ def is_sin_embargo_revolucion_desfile_2026(article):
         and "desfile" in title
         and "revolucion" in title
         and ("ciudad de mexico" in title or "cdmx" in title)
+    )
+
+
+def is_tvazteca_revolucion_desfile_2026(article):
+    """Identifica la guía de TV Azteca sobre el desfile cívico-militar del 20/11/2026."""
+    title = _photo_fold(article.get("title"))
+    return (
+        str(article.get("date") or "") == "2026-11-16"
+        and _photo_fold(article.get("source")) == "tv azteca"
+        and "desfile del 20 de noviembre" in title
+        and "cdmx" in title
+        and "ruta" in title
     )
 
 
@@ -1043,6 +1056,32 @@ def summarize(article):
                 "Síntesis editorial propia basada en Diario de Yucatán, con información de AP, 16 de noviembre "
                 "de 2026: https://www.yucatan.com.mx/imagen/2026/11/16/garbage-canta-ante-90-mil-fans-en-el-en-el-zocalo-de-la-ciudad-de-mexico.html. "
                 "Se normalizó la repetición tipográfica «en el en el» del titular original sin cambiar su sentido."
+            ),
+        }
+    if is_tvazteca_revolucion_desfile_2026(article):
+        return {
+            "lead": (
+                "TV Azteca informa que el desfile cívico-militar del 20 de noviembre de 2026 comenzará "
+                "a las 10:00 horas en el Zócalo y avanzará aproximadamente dos kilómetros hasta el "
+                "Monumento a la Revolución. La ruta publicada incluye 5 de Mayo, Eje Central Lázaro "
+                "Cárdenas, avenida Juárez, Paseo de la Reforma y avenida de la República."
+            ),
+            "context": (
+                "El medio atribuye a la información oficial diez contingentes con más de 2,900 elementos "
+                "del Ejército, la Fuerza Aérea y la Guardia Nacional. La SSC recomienda como alternativas "
+                "Eje 1 Norte y Circuito Interior al norte; Eje 1 Oriente, José María Izazaga y avenida "
+                "Chapultepec al sur; Ejes 3 y 2 Oriente al oriente; e Insurgentes y Circuito Interior al poniente."
+            ),
+            "pending": (
+                "La publicación del 16 de noviembre describe un evento futuro, no un desfile ya realizado. "
+                "Los cierres, horarios y alternativas pueden cambiar; consulta los avisos vigentes de la SSC "
+                "y del Centro de Orientación Vial antes de trasladarte el 20 de noviembre."
+            ),
+            "method": (
+                "Síntesis editorial propia basada en la publicación de TV Azteca, 16 de noviembre de 2026: "
+                + TV_AZTECA_REVOLUCION_DESFILE_SOURCE_URL
+                + ". La ruta y los datos se atribuyen al medio y a la información oficial que cita; "
+                "no constituyen una verificación independiente."
             ),
         }
     if is_revolucion_mexicana_desfile_2026(article):
@@ -2944,7 +2983,11 @@ def _photo_score(article, photo):
         return 5000 if photo.get("id") == "contexto_concierto_foro_sol_2023" else -10000
     # Las guías del desfile del 20 de noviembre recorren del Zócalo al Monumento;
     # usar el monumento conmemorativo, no fotografías del Desfile de Catrinas.
-    if is_revolucion_mexicana_desfile_2026(article) or is_sin_embargo_revolucion_desfile_2026(article):
+    if (
+        is_revolucion_mexicana_desfile_2026(article)
+        or is_sin_embargo_revolucion_desfile_2026(article)
+        or is_tvazteca_revolucion_desfile_2026(article)
+    ):
         return 5000 if photo.get("id") == "contexto_monumento_revolucion_desfile_2026" else -10000
     if is_somoselmedio_valparaiso_exhibition_story(article):
         return 5000 if photo.get("id") == "contexto_casa_talavera_exposicion_valparaiso" else -10000
