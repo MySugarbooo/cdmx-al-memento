@@ -395,7 +395,7 @@ class PhotoRelevanceTests(unittest.TestCase):
             "category": "CDMX",
         })
         self.assertIsNotNone(article)
-        self.assertTrue(news.is_generation_z_zocalo_march(article))
+        self.assertEqual(_photo_score(article, zocalo), 5000)
         old_cacerolazo = representative_photo(
             "commons_16240277",
             "CDMX",
