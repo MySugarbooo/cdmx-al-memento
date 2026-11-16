@@ -314,6 +314,34 @@ class PhotoRelevanceTests(unittest.TestCase):
         self.assertTrue(any(word in article["photo"]["topic"].casefold()
                             for word in ("policia", "patrulla")))
 
+    def test_generation_z_zocalo_march_rejects_queretaro_highway_photo(self):
+        article = news.standardize({
+            "title": "Marcha Generación Z al Zócalo de la Cdmx",
+            "url": "https://news.google.com/rss/articles/el-sur-generacion-z-zocalo-20261115",
+            "source": "El Sur Acapulco",
+            "date": "2026-11-15",
+            "published_at": "2026-11-15T15:38:49Z",
+            "category": "CDMX",
+        })
+        self.assertIsNotNone(article)
+        highway = representative_photo(
+            "contexto_autopista_mexico_queretaro_2008",
+            "CDMX",
+            "Autopista México-Querétaro en San Juan del Río, Querétaro (2008)",
+            ["Autopista México-Querétaro", "San Juan del Río", "Querétaro"],
+        )
+        zocalo = next(photo for photo in photos._pool() if photo.get("id") == "commons_149171771")
+        self.assertLess(_photo_score(article, highway), 0)
+        self.assertGreaterEqual(_photo_score(article, zocalo), 0)
+        article["photo"] = deepcopy(highway)
+        with patch.object(photos, "_pool", return_value=[highway, zocalo]), patch.object(
+            photos, "_load", return_value=[]
+        ):
+            assign_photos([article])
+        self.assertEqual(article["photo"]["id"], "commons_149171771")
+        self.assertIn("Zócalo", article["photo"]["topic"])
+        self.assertEqual(article["photo"]["license"], "CC BY-SA 4.0")
+
     def test_nfl_event_is_not_metro_and_uses_licensed_football_photo(self):
         title = ("NFL en México: estas son todas las actividades que podrás disfrutar "
                  "en las calles de la CDMX previo al juego de San Francisco 49ers "
