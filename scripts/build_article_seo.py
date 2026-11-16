@@ -73,6 +73,11 @@ VERIFIED_SOURCE_URLS = frozenset({
     "https://www.billboard.com/espanol/noticias/karol-g-posterga-concierto-en-mexico-nueva-fecha-1236382613/",
     "https://elcongresista.mx/politica/cdmx/gobierno-cdmx-operativo-el-buen-fin",
     "https://www.tvazteca.com/aztecanoticias/vas-a-salir-por-el-puente-estos-autos-no-podran-circular-el-lunes-16-de-noviembre/",
+    # URLs originales curadas para las fichas SEO del 16 de noviembre de 2026.
+    "https://capital-cdmx.org/colonias-mas-denuncias-cuajimalpa-de-morelos-capital-ayuda-2026/",
+    "https://capital-cdmx.org/colonias-mas-denuncias-venustiano-carranza-capital-ayuda-2026/",
+    "https://elpais.com/mexico/2026-11-16/el-desfile-de-la-revolucion-en-ciudad-de-mexico-horario-ruta-y-contingentes.html",
+    "https://www.sopitas.com/noticias/discriminacion-cdmx-copred-edis-2026/",
 })
 SENSITIVE_MEDIA_TITLE = re.compile(
     r"\b(?:violaci[oó]n|abuso sexual|agresi[oó]n sexual|acoso sexual|violencia sexual|"
