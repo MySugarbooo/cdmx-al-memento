@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-16 18:35 UTC",
+  "updated": "2026-11-16 19:14 UTC",
   "boroughs": [
     {
       "name": "La Magdalena Contreras",
@@ -6359,36 +6359,77 @@
       "articles": [
         {
           "title": "Santa Fe concentró 207 denuncias en 2024: las cifras por colonia en Cuajimalpa",
-          "description": "De acuerdo con Capital CDMX, el titular publicado es: «Santa Fe concentró 207 denuncias en 2024: las cifras por colonia en Cuajimalpa». La información publicada por Capital CDMX aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "description": "Capital CDMX reporta que Santa Fe Cuajimalpa registró 207 denuncias por delitos en la calle entre enero y diciembre de 2024; Cuajimalpa, 129; y Jesús del Monte, 60. El medio atribuye el desglose a carpetas de investigación de la FGJ CDMX sistematizadas por WebHerramientas.",
           "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQMHZGdm1aWWdfenJqcl9VR0lNSVV3cVE4S3hNd1FpY1NhWEd2Vk5qY21ZRTlUczZwYkplMDJsZDFmSFFLdHNOTkxhcXJiSXQ2XzBWYzl0ZnIxY2tZYjYzN2N0eWRFRWJnRUY2TVZ4andXcXNCM2Jhbmw0MGZhV09pM0FhNlVYNmZZUGl5OHgwZ0FnQzQ?oc=5",
           "source": "Capital CDMX",
           "date": "2026-11-16",
           "published_at": "2026-11-16T18:04:40Z",
-          "category": "CDMX",
+          "category": "Seguridad",
           "borough": "Cuajimalpa de Morelos",
-          "location": "Cuajimalpa de Morelos (mencionada en el titular)",
+          "location": "Santa Fe, alcaldía Cuajimalpa de Morelos, Ciudad de México (según Capital CDMX)",
           "local_url": "/noticias/?id=77051e1b3e253a30969d&mes=2026-11",
+          "source_url": "https://capital-cdmx.org/colonias-mas-denuncias-cuajimalpa-de-morelos-capital-ayuda-2026/",
           "brief": {
-            "lead": "De acuerdo con Capital CDMX, el titular publicado es: «Santa Fe concentró 207 denuncias en 2024: las cifras por colonia en Cuajimalpa». La información publicada por Capital CDMX aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+            "lead": "Capital CDMX reporta que Santa Fe Cuajimalpa registró 207 denuncias por delitos en la calle entre enero y diciembre de 2024; Cuajimalpa, 129; y Jesús del Monte, 60. El medio atribuye el desglose a carpetas de investigación de la FGJ CDMX sistematizadas por WebHerramientas.",
+            "context": "En un corte distinto, de enero a septiembre de 2026, el medio señala 143 reportes por robo a negocio y 3 homicidios dolosos para toda la alcaldía; la ENSU de septiembre de 2026 ubicó en 43.7% la percepción de inseguridad. Estas cifras no corresponden solo a Santa Fe.",
+            "pending": "El 93.4% de delitos no denunciados o sin carpeta que cita la nota es una estimación nacional de 2025, no una tasa de Cuajimalpa. Las cifras por colonia corresponden a registros de 2024 y no describen el riesgo individual ni la situación actual.",
+            "method": "Síntesis editorial basada en Capital CDMX, 16 de noviembre de 2026: https://capital-cdmx.org/colonias-mas-denuncias-cuajimalpa-de-morelos-capital-ayuda-2026/. Las cifras se atribuyen al medio y a las fuentes que cita; no equivalen a una verificación independiente."
           },
           "photo": {
-            "id": "commons_150181300",
+            "id": "contexto_santa_fe_cuajimalpa_denuncias",
             "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Monumento_a_la_Revoluci%C3%B3n_mayo_2024_CDMX.jpg/960px-Monumento_a_la_Revoluci%C3%B3n_mayo_2024_CDMX.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "category": "CDMX",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Centro_Santa_Fe_-_vista_a%C3%A9rea.jpg/960px-Centro_Santa_Fe_-_vista_a%C3%A9rea.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+            "category": "Alcaldías",
             "borough": "",
-            "topic": "Monumento a la Revolución mayo 2024 CDMX",
+            "topic": "Vista aérea de Centro Santa Fe, alcaldía Cuajimalpa, Ciudad de México (archivo 2024; imagen contextual, no documenta las denuncias de 2024).",
             "keywords": [
-              "Monumento a la Revolución CDMX"
+              "Santa Fe",
+              "Cuajimalpa",
+              "Centro Santa Fe",
+              "Ciudad de México",
+              "denuncias por colonia"
             ],
-            "author": "Correogsk",
-            "license": "CC BY 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Monumento_a_la_Revoluci%C3%B3n_mayo_2024_CDMX.jpg"
-          }
+            "author": "ProtoplasmaKid",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "source": "https://commons.wikimedia.org/wiki/File:Centro_Santa_Fe_-_vista_a%C3%A9rea.jpg"
+          },
+          "alternate_versions": [
+            {
+              "title": "Santa Fe concentró 207 denuncias en 2024: las cifras por colonia en Cuajimalpa",
+              "description": "Capital CDMX reporta que Santa Fe Cuajimalpa registró 207 denuncias por delitos en la calle entre enero y diciembre de 2024; Cuajimalpa, 129; y Jesús del Monte, 60. El medio atribuye el desglose a carpetas de investigación de la FGJ CDMX sistematizadas por WebHerramientas.",
+              "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQMHZGdm1aWWdfenJqcl9VR0lNSVV3cVE4S3hNd1FpY1NhWEd2Vk5qY21ZRTlUczZwYkplMDJsZDFmSFFLdHNOTkxhcXJiSXQ2XzBWYzl0ZnIxY2tZYjYzN2N0eWRFRWJnRUY2TVZ4andXcXNCM2Jhbmw0MGZhV09pM0FhNlVYNmZZUGl5OHgwZ0FnQzQ?oc=5",
+              "source": "Capital CDMX",
+              "date": "2026-11-16",
+              "published_at": "2026-11-16T18:04:40Z",
+              "category": "Seguridad",
+              "borough": "Cuajimalpa de Morelos",
+              "location": "Santa Fe, alcaldía Cuajimalpa de Morelos, Ciudad de México (según Capital CDMX)",
+              "local_url": "/noticias/?id=77051e1b3e253a30969d&mes=2026-11",
+              "source_url": "https://capital-cdmx.org/colonias-mas-denuncias-cuajimalpa-de-morelos-capital-ayuda-2026/",
+              "brief": {
+                "lead": "Capital CDMX reporta que Santa Fe Cuajimalpa registró 207 denuncias por delitos en la calle entre enero y diciembre de 2024; Cuajimalpa, 129; y Jesús del Monte, 60. El medio atribuye el desglose a carpetas de investigación de la FGJ CDMX sistematizadas por WebHerramientas.",
+                "context": "En un corte distinto, de enero a septiembre de 2026, el medio señala 143 reportes por robo a negocio y 3 homicidios dolosos para toda la alcaldía; la ENSU de septiembre de 2026 ubicó en 43.7% la percepción de inseguridad. Estas cifras no corresponden solo a Santa Fe.",
+                "pending": "El 93.4% de delitos no denunciados o sin carpeta que cita la nota es una estimación nacional de 2025, no una tasa de Cuajimalpa. Las cifras por colonia corresponden a registros de 2024 y no describen el riesgo individual ni la situación actual.",
+                "method": "Síntesis editorial basada en Capital CDMX, 16 de noviembre de 2026: https://capital-cdmx.org/colonias-mas-denuncias-cuajimalpa-de-morelos-capital-ayuda-2026/. Las cifras se atribuyen al medio y a las fuentes que cita; no equivalen a una verificación independiente."
+              },
+              "photo": {
+                "id": "commons_150181300",
+                "kind": "representativa",
+                "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Monumento_a_la_Revoluci%C3%B3n_mayo_2024_CDMX.jpg/960px-Monumento_a_la_Revoluci%C3%B3n_mayo_2024_CDMX.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+                "category": "CDMX",
+                "borough": "",
+                "topic": "Monumento a la Revolución mayo 2024 CDMX",
+                "keywords": [
+                  "Monumento a la Revolución CDMX"
+                ],
+                "author": "Correogsk",
+                "license": "CC BY 4.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+                "source": "https://commons.wikimedia.org/wiki/File:Monumento_a_la_Revoluci%C3%B3n_mayo_2024_CDMX.jpg"
+              }
+            }
+          ]
         },
         {
           "title": "Clima en Cuajimalpa de Morelos: Pronóstico para el domingo 15 de noviembre con ambiente templado",
@@ -7280,27 +7321,6 @@
           "location": "Zócalo (Plaza de la Constitución), alcaldía Cuauhtémoc, Ciudad de México",
           "local_url": "/noticias/?id=e67d975ec23abf8fa32a&mes=2026-11",
           "source_url": "https://www.yucatan.com.mx/imagen/2026/11/16/garbage-canta-ante-90-mil-fans-en-el-en-el-zocalo-de-la-ciudad-de-mexico.html",
-          "brief": {
-            "lead": "Diario de Yucatán, con información de AP, reportó que Garbage reunió a más de 90,000 personas en el Zócalo el sábado por la noche. La banda invitó a Paulina Villarreal, de The Warning, para interpretar «I Think I'm Paranoid».",
-            "context": "El concierto incluyó temas como «Push It» y «Cherry Lips», además de una versión de «Lovesong», de The Cure. Shirley Manson habló de la conexión del grupo con el público mexicano.",
-            "pending": "La asistencia y los detalles del concierto se atribuyen a AP y al medio; no se presentan como un conteo independiente de CDMX AL MEMENTO.",
-            "method": "Síntesis editorial propia basada en Diario de Yucatán, con información de AP, 16 de noviembre de 2026: https://www.yucatan.com.mx/imagen/2026/11/16/garbage-canta-ante-90-mil-fans-en-el-en-el-zocalo-de-la-ciudad-de-mexico.html. Se normalizó la repetición tipográfica «en el en el» del titular original sin cambiar su sentido."
-          },
-          "photo": {
-            "id": "zocalo",
-            "kind": "representativa",
-            "url": "/assets/fotos/zocalo.jpg",
-            "category": "CDMX",
-            "borough": "",
-            "topic": "Zócalo visto desde la Torre Latinoamericana",
-            "keywords": [
-              "CDMX"
-            ],
-            "author": "A01701617",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.es",
-            "source": "https://commons.wikimedia.org/wiki/File:Vista_del_z%C3%B3calo_de_Ciudad_de_M%C3%A9xico_desde_la_Torre_Latinoamericana.jpg"
-          },
           "alternate_versions": [
             {
               "title": "Garbage canta ante 90 mil fans en el en el Zócalo de la Ciudad de México",
@@ -7379,7 +7399,28 @@
                 "source": "https://commons.wikimedia.org/wiki/File:PalaciodelosDeportes_Concierto.jpg"
               }
             }
-          ]
+          ],
+          "brief": {
+            "lead": "Diario de Yucatán, con información de AP, reportó que Garbage reunió a más de 90,000 personas en el Zócalo el sábado por la noche. La banda invitó a Paulina Villarreal, de The Warning, para interpretar «I Think I'm Paranoid».",
+            "context": "El concierto incluyó temas como «Push It» y «Cherry Lips», además de una versión de «Lovesong», de The Cure. Shirley Manson habló de la conexión del grupo con el público mexicano.",
+            "pending": "La asistencia y los detalles del concierto se atribuyen a AP y al medio; no se presentan como un conteo independiente de CDMX AL MEMENTO.",
+            "method": "Síntesis editorial propia basada en Diario de Yucatán, con información de AP, 16 de noviembre de 2026: https://www.yucatan.com.mx/imagen/2026/11/16/garbage-canta-ante-90-mil-fans-en-el-en-el-zocalo-de-la-ciudad-de-mexico.html. Se normalizó la repetición tipográfica «en el en el» del titular original sin cambiar su sentido."
+          },
+          "photo": {
+            "id": "zocalo",
+            "kind": "representativa",
+            "url": "/assets/fotos/zocalo.jpg",
+            "category": "CDMX",
+            "borough": "",
+            "topic": "Zócalo visto desde la Torre Latinoamericana",
+            "keywords": [
+              "CDMX"
+            ],
+            "author": "A01701617",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.es",
+            "source": "https://commons.wikimedia.org/wiki/File:Vista_del_z%C3%B3calo_de_Ciudad_de_M%C3%A9xico_desde_la_Torre_Latinoamericana.jpg"
+          }
         },
         {
           "title": "Gobierno de la CDMX asegura movilidad fluida durante El Buen Fin",
@@ -7393,27 +7434,6 @@
           "location": "Centro Histórico, alcaldía Cuauhtémoc, Ciudad de México (según El Congresista; operativo no verificado)",
           "local_url": "/noticias/?id=003f1ea383989d7c33c8&mes=2026-11",
           "source_url": "https://elcongresista.mx/politica/cdmx/gobierno-cdmx-operativo-el-buen-fin",
-          "brief": {
-            "lead": "El Congresista publicó que el Gobierno de CDMX activó un operativo en el Centro Histórico durante El Buen Fin. Sin embargo, el cuerpo de la nota atribuye el liderazgo del Gobierno capitalino a Pepe Chedraui; el portal oficial de CDMX identifica a Clara Brugada como Jefa de Gobierno y el Ayuntamiento de Puebla identifica a Chedraui como presidente municipal de Puebla. La atribución incorrecta impide dar por verificados los detalles del operativo.",
-            "context": "La publicación menciona vigilancia y ordenamiento del comercio informal, pero no enlaza un comunicado oficial de la Secretaría de Gobierno o de la SSC que confirme esas acciones; además, declara que fue redactada con asistencia de IA a partir de fuentes citadas.",
-            "pending": "No se confirma el despliegue, su duración, las restricciones al comercio informal ni la cita atribuida a Chedraui. No presentar el operativo como confirmado sin una fuente oficial de CDMX.",
-            "method": "Se consultó el artículo original de El Congresista y se contrastó el cargo con el portal del Gobierno de CDMX (https://jefadegobierno.cdmx.gob.mx/) y el Ayuntamiento de Puebla (https://pueblacapital.gob.mx/noticias/capital-imparable/encabeza-pepe-chedraui-encendido-por-fiestas-patrias). La comprobación detecta una atribución errónea; no verifica de manera independiente el operativo."
-          },
-          "photo": {
-            "id": "commons_149171771",
-            "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Plaza_de_la_Constituci%C3%B3n_-_Z%C3%B3calo_de_la_Ciudad_de_M%C3%A9xico_-_1.jpg/960px-Plaza_de_la_Constituci%C3%B3n_-_Z%C3%B3calo_de_la_Ciudad_de_M%C3%A9xico_-_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "category": "CDMX",
-            "borough": "",
-            "topic": "Plaza de la Constitución - Zócalo de la Ciudad de México - 1",
-            "keywords": [
-              "CDMX"
-            ],
-            "author": "ProtoplasmaKid",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Plaza_de_la_Constituci%C3%B3n_-_Z%C3%B3calo_de_la_Ciudad_de_M%C3%A9xico_-_1.jpg"
-          },
           "alternate_versions": [
             {
               "title": "Gobierno de la CDMX asegura movilidad fluida durante El Buen Fin",
@@ -7449,7 +7469,28 @@
                 "source": "https://commons.wikimedia.org/wiki/File:Metrobus-Glorieta-Insurgentes.JPG"
               }
             }
-          ]
+          ],
+          "brief": {
+            "lead": "El Congresista publicó que el Gobierno de CDMX activó un operativo en el Centro Histórico durante El Buen Fin. Sin embargo, el cuerpo de la nota atribuye el liderazgo del Gobierno capitalino a Pepe Chedraui; el portal oficial de CDMX identifica a Clara Brugada como Jefa de Gobierno y el Ayuntamiento de Puebla identifica a Chedraui como presidente municipal de Puebla. La atribución incorrecta impide dar por verificados los detalles del operativo.",
+            "context": "La publicación menciona vigilancia y ordenamiento del comercio informal, pero no enlaza un comunicado oficial de la Secretaría de Gobierno o de la SSC que confirme esas acciones; además, declara que fue redactada con asistencia de IA a partir de fuentes citadas.",
+            "pending": "No se confirma el despliegue, su duración, las restricciones al comercio informal ni la cita atribuida a Chedraui. No presentar el operativo como confirmado sin una fuente oficial de CDMX.",
+            "method": "Se consultó el artículo original de El Congresista y se contrastó el cargo con el portal del Gobierno de CDMX (https://jefadegobierno.cdmx.gob.mx/) y el Ayuntamiento de Puebla (https://pueblacapital.gob.mx/noticias/capital-imparable/encabeza-pepe-chedraui-encendido-por-fiestas-patrias). La comprobación detecta una atribución errónea; no verifica de manera independiente el operativo."
+          },
+          "photo": {
+            "id": "commons_149171771",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Plaza_de_la_Constituci%C3%B3n_-_Z%C3%B3calo_de_la_Ciudad_de_M%C3%A9xico_-_1.jpg/960px-Plaza_de_la_Constituci%C3%B3n_-_Z%C3%B3calo_de_la_Ciudad_de_M%C3%A9xico_-_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "category": "CDMX",
+            "borough": "",
+            "topic": "Plaza de la Constitución - Zócalo de la Ciudad de México - 1",
+            "keywords": [
+              "CDMX"
+            ],
+            "author": "ProtoplasmaKid",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Plaza_de_la_Constituci%C3%B3n_-_Z%C3%B3calo_de_la_Ciudad_de_M%C3%A9xico_-_1.jpg"
+          }
         },
         {
           "title": "Garbage en el Zócalo de la CDMX: \"Lo más importante que hay que recordar, es que somos todos exactamente iguales\"",
@@ -12752,7 +12793,7 @@
     },
     {
       "name": "Miguel Hidalgo",
-      "count": 97,
+      "count": 98,
       "articles": [
         {
           "title": "Explosión por acumulación de gas deja una mujer muerta en alcaldía Miguel Hidalgo",
@@ -12760,7 +12801,7 @@
           "url": "https://news.google.com/rss/articles/CBMijwJBVV95cUxORk1ZTVhrMUhGMGUza0dyR2tsQ1Z6NEZZM2VEQnlIS09XdVl6bklFN2pVamdTWTZLM2dNVTRQZ0QzWnhfeVRGOTVDQ3RpZ2Nqd244ZUpjcHdaTC1Xb0lGc0RFZE5JVWNsaFhLaFpPWkhxcnc2eEdoOEQ3cDBEUlJKd2FZQ1J2cm5YYkF1Y21Ba2p4SUg4Sm1wQmRBS3hUdHJLVkg5Mld6dXpseGlrVFgwM1dmRlZaTWgxcldRSi03OWVEbV9NblI1TXp0MC1hNEh1NlFuU1cwLVFLWXJrY0ozcEJIZ1d3RGVGczRnWlc1THVTdXdFYkhDZVhJdkdPbmYtYW9OQUpESWpjRkE3cUQw0gGjAkFVX3lxTFBHSWxaU2ZPTzV6dFlvb1ZSUC00U2pnOWt1dUs0LXlqM0p6TnFlWERhTnN0T0hqT29aZzd1VWxpOHBHaFU0MG5pSEljOEZTTlRSV2ZuOFFSQkNSSWc2NURHUm9iZUlXajlObXJKWkVpeGg1Zi11Q3B2cXR1azE0WHROMTk1bWw1Y0dESnFJcWhPV1YyeXQ4VG1hSHF6NEpNVzZFWWJUSnFtVExZeW52YXVUR3RQQzQ2TE5vazZiNDBfc3VhWS0zR3hFaUdNT3dmc1gzcUpVbjAtQUpxM1I1MVB2dC1ZeDU4MWFnbVRzelRWVGlqODIzczAwNUtEY1lWa1RxWU9LeU42SFhJUW5jRVg0ZUp5ZnNLenpfY1Q3ekZqTURhSQ?oc=5",
           "source": "El Universal",
           "date": "2026-11-16",
-          "published_at": "2026-11-16T17:31:00Z",
+          "published_at": "2026-11-16T17:34:00Z",
           "category": "CDMX",
           "borough": "Miguel Hidalgo",
           "location": "Miguel Hidalgo (mencionada en el titular)",
@@ -12785,7 +12826,42 @@
             "license": "CC0",
             "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
             "source": "https://commons.wikimedia.org/wiki/File:Equipo_de_trabajo_de_los_Bomberos_CDMX_IMG_2968_(29724099087).jpg"
-          }
+          },
+          "alternate_versions": [
+            {
+              "title": "Explosión por acumulación de gas deja una mujer muerta en alcaldía Miguel Hidalgo",
+              "description": "De acuerdo con El Universal, el titular publicado es: «Explosión por acumulación de gas deja una mujer muerta en alcaldía Miguel Hidalgo». La información publicada por El Universal aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+              "url": "https://news.google.com/rss/articles/CBMijwJBVV95cUxORk1ZTVhrMUhGMGUza0dyR2tsQ1Z6NEZZM2VEQnlIS09XdVl6bklFN2pVamdTWTZLM2dNVTRQZ0QzWnhfeVRGOTVDQ3RpZ2Nqd244ZUpjcHdaTC1Xb0lGc0RFZE5JVWNsaFhLaFpPWkhxcnc2eEdoOEQ3cDBEUlJKd2FZQ1J2cm5YYkF1Y21Ba2p4SUg4Sm1wQmRBS3hUdHJLVkg5Mld6dXpseGlrVFgwM1dmRlZaTWgxcldRSi03OWVEbV9NblI1TXp0MC1hNEh1NlFuU1cwLVFLWXJrY0ozcEJIZ1d3RGVGczRnWlc1THVTdXdFYkhDZVhJdkdPbmYtYW9OQUpESWpjRkE3cUQw0gGjAkFVX3lxTFBHSWxaU2ZPTzV6dFlvb1ZSUC00U2pnOWt1dUs0LXlqM0p6TnFlWERhTnN0T0hqT29aZzd1VWxpOHBHaFU0MG5pSEljOEZTTlRSV2ZuOFFSQkNSSWc2NURHUm9iZUlXajlObXJKWkVpeGg1Zi11Q3B2cXR1azE0WHROMTk1bWw1Y0dESnFJcWhPV1YyeXQ4VG1hSHF6NEpNVzZFWWJUSnFtVExZeW52YXVUR3RQQzQ2TE5vazZiNDBfc3VhWS0zR3hFaUdNT3dmc1gzcUpVbjAtQUpxM1I1MVB2dC1ZeDU4MWFnbVRzelRWVGlqODIzczAwNUtEY1lWa1RxWU9LeU42SFhJUW5jRVg0ZUp5ZnNLenpfY1Q3ekZqTURhSQ?oc=5",
+              "source": "El Universal",
+              "date": "2026-11-16",
+              "published_at": "2026-11-16T17:31:00Z",
+              "category": "CDMX",
+              "borough": "Miguel Hidalgo",
+              "location": "Miguel Hidalgo (mencionada en el titular)",
+              "local_url": "/noticias/?id=b876b3a78eab03cc2e3e&mes=2026-11",
+              "brief": {
+                "lead": "De acuerdo con El Universal, el titular publicado es: «Explosión por acumulación de gas deja una mujer muerta en alcaldía Miguel Hidalgo». La información publicada por El Universal aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+                "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+                "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+              },
+              "photo": {
+                "id": "commons_75139316",
+                "kind": "representativa",
+                "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Equipo_de_trabajo_de_los_Bomberos_CDMX_IMG_2968_%2829724099087%29.jpg/960px-Equipo_de_trabajo_de_los_Bomberos_CDMX_IMG_2968_%2829724099087%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+                "category": "Seguridad",
+                "borough": "",
+                "topic": "Equipo de trabajo de los Bomberos CDMX IMG 2968 (29724099087)",
+                "keywords": [
+                  "Bomberos Ciudad de México"
+                ],
+                "author": "Gobierno CDMX",
+                "license": "CC0",
+                "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+                "source": "https://commons.wikimedia.org/wiki/File:Equipo_de_trabajo_de_los_Bomberos_CDMX_IMG_2968_(29724099087).jpg"
+              }
+            }
+          ]
         },
         {
           "title": "VIDEO | Así fue la explosión de gas en Miguel Hidalgo, CDMX que dejó una persona muerta",
@@ -12818,6 +12894,39 @@
             "license": "CC0",
             "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
             "source": "https://commons.wikimedia.org/wiki/File:Equipo_de_trabajo_de_los_Bomberos_CDMX_IMG_2975_(29724101647).jpg"
+          }
+        },
+        {
+          "title": "VIDEO | Así fue la explosión de gas en Miguel Hidalgo, CDMX que dejó una persona muerta",
+          "description": "De acuerdo con AS México, el titular publicado es: «VIDEO | Así fue la explosión de gas en Miguel Hidalgo, CDMX que dejó una persona muerta». La información publicada por AS México aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQOHJ3RG1PSkY1b1pab3J4b0UxenFqeVV1SzRfZTFBQmx3a0JVbDFnYUJvbWVSa1p1ZTZYcUJQMzJhaU1mMk9DNjlaaGR4T01RX210c3h0THdkdE1ldnNzU0dpaDdGSjkybExtSk94bU10WW1vR2pIUk5lV05WYUp1TG9zWnBZNlFwRGloTFc3ajFlX3haSWpIRzQxZkhFS1RQVEZVQVM1RFBYWVVBOFBCWXlEZzZEUmptdlBTTVdqY3JLNkV1REFiZER5R1VtVU9ENFpWcWR30gHWAUFVX3lxTFA4cndEbU9KRjVvWlpvcnhvRTF6cWp5VXVLNF9lMUFCbHdrQlVsMWdhQm9tZVJrWnVlNlhxQlAzMmFpTWYyT0M2OVpoZHhPTVFfbXRzeHRMd2R0TWV2c3NTR2loN0ZKOTJsTG1KT3htTXRZbW9HakhSTmVXTlZhSnVMb3NacFk2UXBEaWhMVzdqMWVfeFpJakhHNDFmSEVLVFBURlVBUzVEUFhZVUE4UEJZeURnNkRSam12UFNNV2pjcks2RXVEQWJkRHlHVW1VT0Q0WlZxZHc?oc=5",
+          "source": "AS México",
+          "date": "2026-11-16",
+          "published_at": "2026-11-16T16:41:53Z",
+          "category": "Seguridad",
+          "borough": "Miguel Hidalgo",
+          "location": "Miguel Hidalgo (mencionada en el titular)",
+          "local_url": "/noticias/?id=4d101e5218781101b3b7&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con AS México, el titular publicado es: «VIDEO | Así fue la explosión de gas en Miguel Hidalgo, CDMX que dejó una persona muerta». La información publicada por AS México aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "commons_75139349",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Equipo_de_trabajo_de_los_Bomberos_CDMX_IMG_3061_%2844661911131%29.jpg/960px-Equipo_de_trabajo_de_los_Bomberos_CDMX_IMG_3061_%2844661911131%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "category": "Seguridad",
+            "borough": "",
+            "topic": "Equipo de trabajo de los Bomberos CDMX IMG 3061 (44661911131)",
+            "keywords": [
+              "Bomberos Ciudad de México"
+            ],
+            "author": "Gobierno CDMX",
+            "license": "CC0",
+            "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+            "source": "https://commons.wikimedia.org/wiki/File:Equipo_de_trabajo_de_los_Bomberos_CDMX_IMG_3061_(44661911131).jpg"
           }
         },
         {
@@ -12923,9 +13032,9 @@
         },
         {
           "title": "Explosión por gas deja 4 lesionados en Miguel Hidalgo, CdMx",
-          "description": "De acuerdo con Milenio, el titular publicado es: «Explosión por gas deja 4 lesionados en Miguel Hidalgo, CdMx». La información publicada por Milenio aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "description": "De acuerdo con MILENIO, el titular publicado es: «Explosión por gas deja 4 lesionados en Miguel Hidalgo, CdMx». La información publicada por MILENIO aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
           "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPVlIyUTh4bFJPWXhEZWhTeUlsYjlsbUw5QmNabVZsdWtQNEFEZ2JEeHA0bFQ4OGxmdnZIZTYtc1FUa20wNmk4RzQyZ2xDN0VKX1ljSFZOemZwZ1pxRmcxSWlOV1N4Q1ZDZ1k3a0hyUTFON3QwZW1lYjE4STNfaHp3YWdYaTBuTWlwNnZFdHp2TUpDMno5Ym1R0gGXAUFVX3lxTE1pYlh3WHR6akxvVnpBRWhxNTBNSnVTVlRQUmw5ZkdTVWJsdElBWkI2c1dUV2lDTnQ1ODUycUNCa2tjRmlwdXZocGd3Vmk5VmZUdXFFNFJ4ZVdBZzd5NUJmd0RvcTc4bDFxck9aTWVVQ0dvcnFkOTUtSVNxUDdFSy1heHFfbUxqcGl4VGdIMHpuRzE3aTJ0UkU?oc=5",
-          "source": "Milenio",
+          "source": "MILENIO",
           "date": "2026-11-16",
           "published_at": "2026-11-16T15:38:19Z",
           "category": "CDMX",
@@ -12933,7 +13042,7 @@
           "location": "Miguel Hidalgo (mencionada en el titular)",
           "local_url": "/noticias/?id=194b5f90f3f6e65ea05a&mes=2026-11",
           "brief": {
-            "lead": "De acuerdo con Milenio, el titular publicado es: «Explosión por gas deja 4 lesionados en Miguel Hidalgo, CdMx». La información publicada por Milenio aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "lead": "De acuerdo con MILENIO, el titular publicado es: «Explosión por gas deja 4 lesionados en Miguel Hidalgo, CdMx». La información publicada por MILENIO aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
@@ -12958,7 +13067,48 @@
             "license": "CC BY 2.0",
             "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
             "source": "https://commons.wikimedia.org/wiki/File:MX_TV_TEATRO_ANGELA_PERALTA_(46329692434).jpg"
-          }
+          },
+          "alternate_versions": [
+            {
+              "title": "Explosión por gas deja 4 lesionados en Miguel Hidalgo, CdMx",
+              "description": "De acuerdo con Milenio, el titular publicado es: «Explosión por gas deja 4 lesionados en Miguel Hidalgo, CdMx». La información publicada por Milenio aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+              "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPVlIyUTh4bFJPWXhEZWhTeUlsYjlsbUw5QmNabVZsdWtQNEFEZ2JEeHA0bFQ4OGxmdnZIZTYtc1FUa20wNmk4RzQyZ2xDN0VKX1ljSFZOemZwZ1pxRmcxSWlOV1N4Q1ZDZ1k3a0hyUTFON3QwZW1lYjE4STNfaHp3YWdYaTBuTWlwNnZFdHp2TUpDMno5Ym1R0gGXAUFVX3lxTE1pYlh3WHR6akxvVnpBRWhxNTBNSnVTVlRQUmw5ZkdTVWJsdElBWkI2c1dUV2lDTnQ1ODUycUNCa2tjRmlwdXZocGd3Vmk5VmZUdXFFNFJ4ZVdBZzd5NUJmd0RvcTc4bDFxck9aTWVVQ0dvcnFkOTUtSVNxUDdFSy1heHFfbUxqcGl4VGdIMHpuRzE3aTJ0UkU?oc=5",
+              "source": "Milenio",
+              "date": "2026-11-16",
+              "published_at": "2026-11-16T15:38:19Z",
+              "category": "CDMX",
+              "borough": "Miguel Hidalgo",
+              "location": "Miguel Hidalgo (mencionada en el titular)",
+              "local_url": "/noticias/?id=194b5f90f3f6e65ea05a&mes=2026-11",
+              "brief": {
+                "lead": "De acuerdo con Milenio, el titular publicado es: «Explosión por gas deja 4 lesionados en Miguel Hidalgo, CdMx». La información publicada por Milenio aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+                "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+                "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+              },
+              "photo": {
+                "id": "contexto_teatro_angela_peralta",
+                "kind": "representativa",
+                "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/MX_TV_TEATRO_ANGELA_PERALTA_%2846329692434%29.jpg/1280px-MX_TV_TEATRO_ANGELA_PERALTA_%2846329692434%29.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+                "category": "CDMX",
+                "borough": "",
+                "topic": "Teatro Ángela Peralta, Polanco, alcaldía Miguel Hidalgo, Ciudad de México (fotografía de 2019; no corresponde al informe de 2026)",
+                "keywords": [
+                  "Teatro Ángela Peralta",
+                  "Polanco",
+                  "Miguel Hidalgo",
+                  "alcaldía Miguel Hidalgo",
+                  "Mauricio Tabe",
+                  "Quinto Informe de Gobierno",
+                  "informe de gobierno"
+                ],
+                "author": "Secretaría de Cultura Ciudad de México",
+                "license": "CC BY 2.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+                "source": "https://commons.wikimedia.org/wiki/File:MX_TV_TEATRO_ANGELA_PERALTA_(46329692434).jpg"
+              }
+            }
+          ]
         },
         {
           "title": "VIDEOS | Explosión por acumulación de gas en colonia Anáhuac Lago Norte, alcaldía Miguel Hidalgo deja cuatro lesionados",
@@ -12995,9 +13145,9 @@
         },
         {
           "title": "Una persona muere tras flamazo y derrumbe por acumulación de gas en Miguel Hidalgo; desalojan a familias",
-          "description": "De acuerdo con Milenio, el titular publicado es: «Una persona muere tras flamazo y derrumbe por acumulación de gas en Miguel Hidalgo; desalojan a familias». La información publicada por Milenio aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "description": "De acuerdo con MILENIO, el titular publicado es: «Una persona muere tras flamazo y derrumbe por acumulación de gas en Miguel Hidalgo; desalojan a familias». La información publicada por MILENIO aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
           "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOZm5FUFdmVENPREh5VV9aRTNPWDdWUVBHVWhhWkxIbjdZUm9NRWVqMkFBdHhXVHVZczluZXJESkw1UDcxb3Z2NnN4M2doTFhxcUdxTElrOFpPc25JaDNDWi0xbm1hYzJsdkpueUZwbVNzMnY4WmRLYWMzSUxNbDBXNmladTV1ZUs2NkEySDRwNkJ0dnR00gGUAUFVX3lxTE5VZlJ6SFg2MVN2REQ5eWNLUXBDT2cxS1E0R091Y1RtS3BtbWstbGJYWmdPOTdsUVdZTUxyRG11ek9xNEszcnJiUjY0cTZvQXhtNXhNeVdyWnBrbzg4aVVvWnFKeEhhMDZTbUluYjQ0bnpwMEJVMERoWF8xQ0E5TWZpWTB2bURHc05OcWI2QzF4T1ZpQkE?oc=5",
-          "source": "Milenio",
+          "source": "MILENIO",
           "date": "2026-11-16",
           "published_at": "2026-11-16T15:01:00Z",
           "category": "CDMX",
@@ -13005,11 +13155,31 @@
           "location": "Miguel Hidalgo (mencionada en el titular)",
           "local_url": "/noticias/?id=d39fdc39e7cfbe835013&mes=2026-11",
           "brief": {
-            "lead": "De acuerdo con Milenio, el titular publicado es: «Una persona muere tras flamazo y derrumbe por acumulación de gas en Miguel Hidalgo; desalojan a familias». La información publicada por Milenio aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "lead": "De acuerdo con MILENIO, el titular publicado es: «Una persona muere tras flamazo y derrumbe por acumulación de gas en Miguel Hidalgo; desalojan a familias». La información publicada por MILENIO aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
+          },
+          "alternate_versions": [
+            {
+              "title": "Una persona muere tras flamazo y derrumbe por acumulación de gas en Miguel Hidalgo; desalojan a familias",
+              "description": "De acuerdo con Milenio, el titular publicado es: «Una persona muere tras flamazo y derrumbe por acumulación de gas en Miguel Hidalgo; desalojan a familias». La información publicada por Milenio aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+              "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOZm5FUFdmVENPREh5VV9aRTNPWDdWUVBHVWhhWkxIbjdZUm9NRWVqMkFBdHhXVHVZczluZXJESkw1UDcxb3Z2NnN4M2doTFhxcUdxTElrOFpPc25JaDNDWi0xbm1hYzJsdkpueUZwbVNzMnY4WmRLYWMzSUxNbDBXNmladTV1ZUs2NkEySDRwNkJ0dnR00gGUAUFVX3lxTE5VZlJ6SFg2MVN2REQ5eWNLUXBDT2cxS1E0R091Y1RtS3BtbWstbGJYWmdPOTdsUVdZTUxyRG11ek9xNEszcnJiUjY0cTZvQXhtNXhNeVdyWnBrbzg4aVVvWnFKeEhhMDZTbUluYjQ0bnpwMEJVMERoWF8xQ0E5TWZpWTB2bURHc05OcWI2QzF4T1ZpQkE?oc=5",
+              "source": "Milenio",
+              "date": "2026-11-16",
+              "published_at": "2026-11-16T15:01:00Z",
+              "category": "CDMX",
+              "borough": "Miguel Hidalgo",
+              "location": "Miguel Hidalgo (mencionada en el titular)",
+              "local_url": "/noticias/?id=d39fdc39e7cfbe835013&mes=2026-11",
+              "brief": {
+                "lead": "De acuerdo con Milenio, el titular publicado es: «Una persona muere tras flamazo y derrumbe por acumulación de gas en Miguel Hidalgo; desalojan a familias». La información publicada por Milenio aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+                "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+                "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+              }
+            }
+          ]
         },
         {
           "title": "Clima en Miguel Hidalgo: Pronóstico templado con nubes para el domingo 15 de noviembre",
@@ -14169,24 +14339,6 @@
             "license": "CC BY 4.0",
             "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
             "source": "https://commons.wikimedia.org/wiki/File:Eje_Central_CDMX.jpg"
-          }
-        },
-        {
-          "title": "Clima en Miguel Hidalgo: domingo 8 de noviembre con ambiente templado y nubes dispersas",
-          "description": "De acuerdo con El Heraldo de México, el titular publicado es: «Clima en Miguel Hidalgo: domingo 8 de noviembre con ambiente templado y nubes dispersas». El pronóstico recogido por El Heraldo de México se refiere a condiciones meteorológicas en Miguel Hidalgo. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
-          "url": "https://news.google.com/rss/articles/CBMingJBVV95cUxOUjdINm9rc2p0eldZRTcxbTNQNWQ2TTh2VTdFeThtQ2tlaTJvcktXYzBPMUJjWG90SzltTDdfSlpOZi1lSHkzOUcwV2d6ZG4yMWx3Um1hb1FKNnVZNHZmNUFWRTNlRllzNkpoanlyeWFHNG4xZ0ZzQ2RYckl4blB2czlFek95ZzdZSHZWZkI1dlJyUGJuaDJiQU1fSWEwNHdFcWY2QWVBeTE2MFNEcXVKZUpXeXBXSE9aUl9YR25UZ1VaU1dNdGFjdXFIV3daWnBYLWRnV01tLVBMUF9oRERhT2lKVDQtaUtNQlE5a1ZPUWl5SzczLWN6V09pZjhTS0NXMjZ3Y2FmaUtlSzg5eXpOeUd3WHhRVFBGNktMSTh3?oc=5",
-          "source": "El Heraldo de México",
-          "date": "2026-11-07",
-          "published_at": "2026-11-08T05:00:49Z",
-          "category": "CDMX",
-          "borough": "Miguel Hidalgo",
-          "location": "Miguel Hidalgo (mencionada en el titular)",
-          "local_url": "/noticias/?id=7d6fc26e06a6d9ef45de&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con El Heraldo de México, el titular publicado es: «Clima en Miguel Hidalgo: domingo 8 de noviembre con ambiente templado y nubes dispersas». El pronóstico recogido por El Heraldo de México se refiere a condiciones meteorológicas en Miguel Hidalgo. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           }
         }
       ]
@@ -17264,36 +17416,78 @@
       "articles": [
         {
           "title": "Jardín Balbuena y Zona Centro: las colonias con más denuncias en Venustiano Carranza en 2024",
-          "description": "De acuerdo con Capital CDMX, el titular publicado es: «Jardín Balbuena y Zona Centro: las colonias con más denuncias en Venustiano Carranza en 2024». La información publicada por Capital CDMX aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "description": "Capital CDMX reporta que Jardín Balbuena registró 385 denuncias por delitos en la calle entre enero y diciembre de 2024; Zona Centro, 322; y Moctezuma Segunda Sección, 266. El medio atribuye el desglose a carpetas de investigación de la FGJ CDMX sistematizadas por WebHerramientas.",
           "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPRXNOajdYZm5YNzhRQU9YLVF4cjdaS3lmRVhzQ2ZMZUNKR05HYkp5ZWFMWmliMmp1dXNWWUlSTW5COTBtbVk0OGZLV3BwNGhBNEZiVzdGUUJUNmRYVm51UF9CVUUwQjhPM1BDNG5US0liVWRjb0FtYXozc0hETmo2N3J2aTNCQVFQRmhzMGdZMUg?oc=5",
           "source": "Capital CDMX",
           "date": "2026-11-16",
           "published_at": "2026-11-16T18:04:40Z",
-          "category": "CDMX",
+          "category": "Seguridad",
           "borough": "Venustiano Carranza",
-          "location": "Venustiano Carranza (mencionada en el titular)",
+          "location": "Jardín Balbuena y Zona Centro, alcaldía Venustiano Carranza, Ciudad de México (según Capital CDMX)",
           "local_url": "/noticias/?id=0047dc42f347aff69e27&mes=2026-11",
+          "source_url": "https://capital-cdmx.org/colonias-mas-denuncias-venustiano-carranza-capital-ayuda-2026/",
           "brief": {
-            "lead": "De acuerdo con Capital CDMX, el titular publicado es: «Jardín Balbuena y Zona Centro: las colonias con más denuncias en Venustiano Carranza en 2024». La información publicada por Capital CDMX aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+            "lead": "Capital CDMX reporta que Jardín Balbuena registró 385 denuncias por delitos en la calle entre enero y diciembre de 2024; Zona Centro, 322; y Moctezuma Segunda Sección, 266. El medio atribuye el desglose a carpetas de investigación de la FGJ CDMX sistematizadas por WebHerramientas.",
+            "context": "La nota separa ese corte por colonia de los datos agregados de la alcaldía para enero-septiembre de 2026: 492 reportes por robo de autopartes o a interior de vehículo y 36 homicidios dolosos. La ENSU de septiembre de 2026 registró 49.8% de percepción de inseguridad en la demarcación.",
+            "pending": "Las cifras por colonia corresponden a 2024; no describen un ranking actualizado ni el riesgo individual. Los datos del SESNSP y la percepción de la ENSU cubren periodos y metodologías distintos.",
+            "method": "Síntesis editorial basada en Capital CDMX, 16 de noviembre de 2026: https://capital-cdmx.org/colonias-mas-denuncias-venustiano-carranza-capital-ayuda-2026/. Las cifras se atribuyen al medio y a las fuentes que cita; no equivalen a una verificación independiente."
           },
           "photo": {
-            "id": "commons_150181297",
+            "id": "contexto_jardin_balbuena_denuncias",
             "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Monumento_a_la_Revoluci%C3%B3n_CDMX_mayo_2024.jpg/960px-Monumento_a_la_Revoluci%C3%B3n_CDMX_mayo_2024.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "category": "CDMX",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Vista_a%C3%A9rea_del_Vel%C3%B3dromo_Ol%C3%ADmpico_Agust%C3%ADn_Melgar_y_sus_alrededores_07.jpg/960px-Vista_a%C3%A9rea_del_Vel%C3%B3dromo_Ol%C3%ADmpico_Agust%C3%ADn_Melgar_y_sus_alrededores_07.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+            "category": "Alcaldías",
             "borough": "",
-            "topic": "Monumento a la Revolución CDMX mayo 2024",
+            "topic": "Vista aérea de la colonia Jardín Balbuena y alrededores, alcaldía Venustiano Carranza (archivo 2025; imagen contextual, no documenta las denuncias de ",
             "keywords": [
-              "Monumento a la Revolución CDMX"
+              "Jardín Balbuena",
+              "Venustiano Carranza",
+              "Velódromo Olímpico Agustín Melgar",
+              "Parque Galindo",
+              "Ciudad de México",
+              "denuncias por colonia"
             ],
-            "author": "Correogsk",
-            "license": "CC BY 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Monumento_a_la_Revoluci%C3%B3n_CDMX_mayo_2024.jpg"
-          }
+            "author": "ProtoplasmaKid",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "source": "https://commons.wikimedia.org/wiki/File:Vista_a%C3%A9rea_del_Vel%C3%B3dromo_Ol%C3%ADmpico_Agust%C3%ADn_Melgar_y_sus_alrededores_07.jpg"
+          },
+          "alternate_versions": [
+            {
+              "title": "Jardín Balbuena y Zona Centro: las colonias con más denuncias en Venustiano Carranza en 2024",
+              "description": "Capital CDMX reporta que Jardín Balbuena registró 385 denuncias por delitos en la calle entre enero y diciembre de 2024; Zona Centro, 322; y Moctezuma Segunda Sección, 266. El medio atribuye el desglose a carpetas de investigación de la FGJ CDMX sistematizadas por WebHerramientas.",
+              "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPRXNOajdYZm5YNzhRQU9YLVF4cjdaS3lmRVhzQ2ZMZUNKR05HYkp5ZWFMWmliMmp1dXNWWUlSTW5COTBtbVk0OGZLV3BwNGhBNEZiVzdGUUJUNmRYVm51UF9CVUUwQjhPM1BDNG5US0liVWRjb0FtYXozc0hETmo2N3J2aTNCQVFQRmhzMGdZMUg?oc=5",
+              "source": "Capital CDMX",
+              "date": "2026-11-16",
+              "published_at": "2026-11-16T18:04:40Z",
+              "category": "Seguridad",
+              "borough": "Venustiano Carranza",
+              "location": "Jardín Balbuena y Zona Centro, alcaldía Venustiano Carranza, Ciudad de México (según Capital CDMX)",
+              "local_url": "/noticias/?id=0047dc42f347aff69e27&mes=2026-11",
+              "source_url": "https://capital-cdmx.org/colonias-mas-denuncias-venustiano-carranza-capital-ayuda-2026/",
+              "brief": {
+                "lead": "Capital CDMX reporta que Jardín Balbuena registró 385 denuncias por delitos en la calle entre enero y diciembre de 2024; Zona Centro, 322; y Moctezuma Segunda Sección, 266. El medio atribuye el desglose a carpetas de investigación de la FGJ CDMX sistematizadas por WebHerramientas.",
+                "context": "La nota separa ese corte por colonia de los datos agregados de la alcaldía para enero-septiembre de 2026: 492 reportes por robo de autopartes o a interior de vehículo y 36 homicidios dolosos. La ENSU de septiembre de 2026 registró 49.8% de percepción de inseguridad en la demarcación.",
+                "pending": "Las cifras por colonia corresponden a 2024; no describen un ranking actualizado ni el riesgo individual. Los datos del SESNSP y la percepción de la ENSU cubren periodos y metodologías distintos.",
+                "method": "Síntesis editorial basada en Capital CDMX, 16 de noviembre de 2026: https://capital-cdmx.org/colonias-mas-denuncias-venustiano-carranza-capital-ayuda-2026/. Las cifras se atribuyen al medio y a las fuentes que cita; no equivalen a una verificación independiente."
+              },
+              "photo": {
+                "id": "commons_150181297",
+                "kind": "representativa",
+                "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Monumento_a_la_Revoluci%C3%B3n_CDMX_mayo_2024.jpg/960px-Monumento_a_la_Revoluci%C3%B3n_CDMX_mayo_2024.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+                "category": "CDMX",
+                "borough": "",
+                "topic": "Monumento a la Revolución CDMX mayo 2024",
+                "keywords": [
+                  "Monumento a la Revolución CDMX"
+                ],
+                "author": "Correogsk",
+                "license": "CC BY 4.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+                "source": "https://commons.wikimedia.org/wiki/File:Monumento_a_la_Revoluci%C3%B3n_CDMX_mayo_2024.jpg"
+              }
+            }
+          ]
         },
         {
           "title": "Procesan a entrenador por violacion de adolescente en Venustiano Carranza",
