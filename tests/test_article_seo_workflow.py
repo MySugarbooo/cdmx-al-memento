@@ -44,7 +44,7 @@ class ArticleSeoWorkflowTests(unittest.TestCase):
             self.news_workflow,
         )
         self.assertIn("cron: '17 * * * *'", self.news_workflow)
-        self.assertIn('  workflow_dispatch:\\n', self.news_workflow)
+        self.assertIn("workflow_dispatch:", self.news_workflow)
         self.assertIn("      - 'index.html'", self.news_workflow)
 
     def test_manual_and_periodic_fallbacks_remain(self):
