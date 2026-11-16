@@ -22,7 +22,7 @@ from pathlib import Path
 from zoneinfo import ZoneInfo
 
 from scripts.analisis_editorial import build_editorial
-from scripts.notas_locales import local_link, summarize, assign_photos, _photo_score, is_sensitive_media, is_esto_49ers_fan_story, ESTO_49ERS_FANS_SOURCE_URL, is_coyotepec_highway_crash, INFOBAE_COYOTEPEC_HIGHWAY_CRASH_SOURCE_URL, is_san_juan_del_rio_autopista57_closure, SENSITIVE_MEDIA_TITLE, SAN_JUAN_DEL_RIO_AUTOPISTA57_SOURCE_URL, is_infobae_tlalpan_animal_abuse, is_la_prensa_tlalpan_animal_case, INFOBAE_TLALPAN_ANIMAL_SOURCE_URL, LA_PRENSA_TLALPAN_ANIMAL_SOURCE_URL, is_imagen_tlalpan_dog_rescue, is_huixtla_migrant_caravan, is_vc_fatal_trailer_incident, EL_GRAFICO_VC_TRAILER_SOURCE_URL, is_infobae_ballet_zapatilla, INFOBAE_BALLET_ZAPATILLA_SOURCE_URL, is_infobae_maria_leon_concert, INFOBAE_MARIA_LEON_CONCERT_SOURCE_URL, is_pulque_barbacoa_fair, is_mauricio_tabe_fifth_report, SDPNOTICIAS_MAURICIO_TABE_REPORT_SOURCE_URL, is_radio_formula_casa_ecologica, RADIO_FORMULA_CASA_ECOLOGICA_SOURCE_URL, is_capital_cdmx_care_budget, CAPITAL_CDMX_CARE_BUDGET_SOURCE_URL, is_la_jornada_aicm_flight_suspension, AICM_FLIGHT_SUSPENSION_SOURCE_URL, is_elsol_women_defensive_driving_workshop, EL_SOL_MUJERES_DEFENSIVE_DRIVING_SOURCE_URL, is_24horas_electric_mobility_plates_guide, HORAS_24_ELECTRIC_MOBILITY_SOURCE_URL, is_codigoqro_ignacio_detention, is_infobae_vite_balu_story, INFOBAE_VITE_BALU_SOURCE_URL, is_elsol_mexico_queretaro_trailer_rollover, EL_SOL_MEXICO_QUERETARO_TRAILER_SOURCE_URL, is_imer_animal_rights_march, IMER_ANIMAL_RIGHTS_MARCH_SOURCE_URL, is_diario_basta_alvaro_obregon_water_shortage, DIARIO_BASTA_ALVARO_OBREGON_WATER_SOURCE_URL, is_sociedad_noticias_garbage_zocalo, SOCIEDAD_NOTICIAS_GARBAGE_ZOCALO_SOURCE_URL, is_yahoo_garbage_zocalo, YAHOO_GARBAGE_ZOCALO_SOURCE_URL, is_la_razon_garbage_zocalo, LA_RAZON_GARBAGE_ZOCALO_SOURCE_URL, is_infobae_garbage_zocalo, INFOBAE_GARBAGE_ZOCALO_SOURCE_URL
+from scripts.notas_locales import local_link, summarize, assign_photos, _photo_score, is_sensitive_media, is_esto_49ers_fan_story, ESTO_49ERS_FANS_SOURCE_URL, is_coyotepec_highway_crash, INFOBAE_COYOTEPEC_HIGHWAY_CRASH_SOURCE_URL, is_san_juan_del_rio_autopista57_closure, SENSITIVE_MEDIA_TITLE, SAN_JUAN_DEL_RIO_AUTOPISTA57_SOURCE_URL, is_infobae_tlalpan_animal_abuse, is_la_prensa_tlalpan_animal_case, INFOBAE_TLALPAN_ANIMAL_SOURCE_URL, LA_PRENSA_TLALPAN_ANIMAL_SOURCE_URL, is_imagen_tlalpan_dog_rescue, is_huixtla_migrant_caravan, is_vc_fatal_trailer_incident, EL_GRAFICO_VC_TRAILER_SOURCE_URL, is_infobae_ballet_zapatilla, INFOBAE_BALLET_ZAPATILLA_SOURCE_URL, is_infobae_maria_leon_concert, INFOBAE_MARIA_LEON_CONCERT_SOURCE_URL, is_pulque_barbacoa_fair, is_mauricio_tabe_fifth_report, SDPNOTICIAS_MAURICIO_TABE_REPORT_SOURCE_URL, is_radio_formula_casa_ecologica, RADIO_FORMULA_CASA_ECOLOGICA_SOURCE_URL, is_capital_cdmx_care_budget, CAPITAL_CDMX_CARE_BUDGET_SOURCE_URL, is_la_jornada_aicm_flight_suspension, AICM_FLIGHT_SUSPENSION_SOURCE_URL, is_elsol_women_defensive_driving_workshop, EL_SOL_MUJERES_DEFENSIVE_DRIVING_SOURCE_URL, is_24horas_electric_mobility_plates_guide, HORAS_24_ELECTRIC_MOBILITY_SOURCE_URL, is_codigoqro_ignacio_detention, is_infobae_vite_balu_story, INFOBAE_VITE_BALU_SOURCE_URL, is_elsol_mexico_queretaro_trailer_rollover, EL_SOL_MEXICO_QUERETARO_TRAILER_SOURCE_URL, is_imer_animal_rights_march, IMER_ANIMAL_RIGHTS_MARCH_SOURCE_URL, is_diario_basta_alvaro_obregon_water_shortage, DIARIO_BASTA_ALVARO_OBREGON_WATER_SOURCE_URL, is_sociedad_noticias_garbage_zocalo, SOCIEDAD_NOTICIAS_GARBAGE_ZOCALO_SOURCE_URL, is_yahoo_garbage_zocalo, YAHOO_GARBAGE_ZOCALO_SOURCE_URL, is_la_razon_garbage_zocalo, LA_RAZON_GARBAGE_ZOCALO_SOURCE_URL, is_infobae_garbage_zocalo, INFOBAE_GARBAGE_ZOCALO_SOURCE_URL, INFOBAE_KAROL_G_HEALTH_SOURCE_URL, is_infobae_karol_g_health_story
 
 ROOT = Path(__file__).resolve().parent
 DEST = ROOT / "news.json"
@@ -1000,6 +1000,33 @@ def standardize(article):
         result["photo"] = normalize_photo_license(article["photo"])
     # Fotografías de accidentes de archivo pueden ser solo contexto; no
     # conservarlas tras la revisión editorial si no documentan ese hecho.
+    if is_infobae_karol_g_health_story(result):
+        result["title"] = "Karol G reprograma su concierto en CDMX por motivos de salud; será el 17 de noviembre"
+        result["source_url"] = INFOBAE_KAROL_G_HEALTH_SOURCE_URL
+        result["category"] = "Cultura"
+        result["brief"] = {
+            "lead": (
+                "Infobae informó que OCESA y ENSO reprogramaron para el martes 17 de noviembre "
+                "la tercera presentación de Karol G en el Estadio GNP Seguros, prevista originalmente "
+                "para el domingo 15, por motivos de salud de la artista. El comunicado oficial no identifica "
+                "un diagnóstico."
+            ),
+            "context": (
+                "La decisión se anunció después de dos conciertos en Ciudad de México los días 13 y 14 "
+                "de noviembre. Según el comunicado citado por Infobae, los boletos de la fecha original "
+                "siguen siendo válidos para la nueva presentación."
+            ),
+            "pending": (
+                "La nota recoge una versión sobre influenza difundida en redes sociales, pero señala que "
+                "no está confirmada por OCESA, la organización, fuentes médicas ni el equipo de la cantante. "
+                "No debe presentarse como diagnóstico."
+            ),
+            "method": (
+                "Síntesis editorial basada en la publicación original de Infobae del 16 de noviembre de 2026, "
+                "que reproduce el aviso de OCESA y ENSO. No constituye información médica ni verificación "
+                "independiente del padecimiento."
+            ),
+        }
     result["description"] = result["brief"]["lead"]
     return result
 
