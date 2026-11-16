@@ -416,6 +416,40 @@ class PhotoRelevanceTests(unittest.TestCase):
         self.assertEqual(article["photo"]["author"], "ProtoplasmaKid")
         self.assertEqual(article["photo"]["license"], "CC BY-SA 4.0")
 
+    def test_infobae_karol_g_story_uses_licensed_foro_sol_context_photo(self):
+        article = news.standardize({
+            "title": "Qué le pasó a Karol G: filtran la supuesta enfermedad que la habría obligado a posponer su concierto en la CDMX",
+            "url": "https://news.google.com/rss/articles/karol-g-health-rumor-photo-test",
+            "source": "Infobae",
+            "date": "2026-11-15",
+            "published_at": "2026-11-16T03:26:00Z",
+            "category": "CDMX",
+        })
+        self.assertIsNotNone(article)
+        self.assertEqual(article["title"], "Karol G reprograma su concierto en CDMX por motivos de salud; será el 17 de noviembre")
+        old_photo = next(
+            photo for photo in photos._pool()
+            if photo.get("id") == "contexto_concierto_palacio_deportes_2009"
+        )
+        venue_photo = next(
+            photo for photo in photos._pool()
+            if photo.get("id") == "contexto_concierto_foro_sol_2023"
+        )
+        self.assertLess(_photo_score(article, old_photo), 0)
+        self.assertEqual(_photo_score(article, venue_photo), 5000)
+        self.assertEqual(venue_photo["author"], "Nanahuatl")
+        self.assertEqual(venue_photo["license"], "CC BY-SA 4.0")
+        self.assertIn("no corresponde a Karol G", venue_photo["topic"])
+        article["photo"] = deepcopy(old_photo)
+        with patch.object(photos, "_pool", return_value=[old_photo, venue_photo]), patch.object(
+            photos, "_load", return_value=[]
+        ):
+            assign_photos([article])
+        self.assertEqual(article["photo"]["id"], "contexto_concierto_foro_sol_2023")
+        self.assertEqual(article["photo"]["kind"], "representativa")
+        self.assertEqual(article["photo"]["author"], "Nanahuatl")
+        self.assertEqual(article["photo"]["license"], "CC BY-SA 4.0")
+
     def test_nfl_event_is_not_metro_and_uses_licensed_football_photo(self):
         title = ("NFL en México: estas son todas las actividades que podrás disfrutar "
                  "en las calles de la CDMX previo al juego de San Francisco 49ers "
@@ -3144,7 +3178,7 @@ class CurrentEditorialPhotoRegressionTests(unittest.TestCase):
     def test_contextual_photo_credits_are_merged_into_public_credit_catalog(self):
         data = json.loads((REPO_ROOT / "assets/fotos/contexto-tematico.json").read_text(encoding="utf-8"))
         photos = {item["id"]: item for item in data["photos"]}
-        for photo_id in ("contexto_publicidad_edificios_condesa_2013", "contexto_pokemon_go_bench_2016"):
+        for photo_id in ("contexto_publicidad_edificios_condesa_2013", "contexto_pokemon_go_bench_2016", "contexto_concierto_foro_sol_2023"):
             photo = photos.get(photo_id)
             self.assertIsNotNone(photo)
             self.assertTrue(photo["author"])

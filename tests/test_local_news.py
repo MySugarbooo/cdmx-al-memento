@@ -31,6 +31,28 @@ class LocalNewsTests(unittest.TestCase):
         self.assertIn('href="https://oem.com.mx/esto/futbol-americano/aficionados-de-san-francisco-49ers-en-cdmx-hablan-de-la-rivalidad-contra-dallas-cowboys-33151840"', article_html)
         self.assertIn("Ver fuente original", article_html)
 
+    def test_infobae_karol_g_health_rumor_is_neutralized_and_linked_directly(self):
+        source_url = "https://www.infobae.com/mexico/2026/11/16/que-le-paso-a-karol-g-filtran-la-supuesta-enfermedad-que-la-habria-obligado-a-posponer-su-concierto-en-la-cdmx/"
+        result = standardize({
+            "title": "Qué le pasó a Karol G: filtran la supuesta enfermedad que la habría obligado a posponer su concierto en la CDMX",
+            "url": "https://news.google.com/rss/articles/karol-g-health-rumor-20261115",
+            "source": "Infobae",
+            "date": "2026-11-15",
+            "published_at": "2026-11-16T03:26:00Z",
+            "category": "CDMX",
+        })
+        self.assertIsNotNone(result)
+        self.assertEqual(result["title"], "Karol G reprograma su concierto en CDMX por motivos de salud; será el 17 de noviembre")
+        self.assertEqual(result["source_url"], source_url)
+        self.assertEqual(result["category"], "Cultura")
+        self.assertIn("OCESA y ENSO", result["brief"]["lead"])
+        self.assertIn("no identifica un diagnóstico", result["brief"]["lead"])
+        self.assertIn("no está confirmada", result["brief"]["pending"])
+        self.assertEqual(result["description"], result["brief"]["lead"])
+        page = render(result, article_id(result))
+        self.assertIn(source_url, page)
+        self.assertNotIn(result["url"], page)
+
     def make(self,i,category):
         return {"title":f"El Metro de CDMX reporta avance de la línea {i} de transporte",
                 "url":"https://news.google.com/rss/articles/sample"+str(i),

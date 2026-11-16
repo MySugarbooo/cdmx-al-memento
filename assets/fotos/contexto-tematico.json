@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "notice": "Fotografías de contexto reutilizables con licencia. No son fotos del hecho noticioso.",
   "photos": [
     {
@@ -667,6 +667,30 @@
       "author": "Gobierno de la Ciudad de México",
       "license": "CC0 1.0",
       "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    {
+      "id": "contexto_concierto_foro_sol_2023",
+      "kind": "representativa",
+      "category": "Cultura",
+      "topic": "Concierto de Muse en Foro Sol (hoy Estadio GNP Seguros), Ciudad de México, 23/01/2023; imagen de archivo representativa, no corresponde a Karol G ni a la función reprogramada.",
+      "keywords": [
+        "concierto",
+        "música en vivo",
+        "Foro Sol",
+        "Estadio GNP Seguros",
+        "escenario",
+        "público",
+        "Ciudad de México"
+      ],
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Will_of_the_People_World_Tour%2C_Mexico_City-4.jpg/576px-Will_of_the_People_World_Tour%2C_Mexico_City-4.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Will_of_the_People_World_Tour,_Mexico_City-4.jpg",
+      "author": "Nanahuatl",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "context": "Fotografía de archivo de un concierto de Muse en Foro Sol, actualmente Estadio GNP Seguros; no documenta el concierto de Karol G.",
+      "adaptation": "Miniatura oficial de Wikimedia Commons; sin modificación.",
+      "captured_at": "2023-01-23",
+      "uploaded_at": "2023-02-01"
     }
   ]
 }
