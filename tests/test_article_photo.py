@@ -357,5 +357,48 @@ class ArticlePhotoTests(unittest.TestCase):
             script,
         )
 
+    def test_current_curated_source_urls_are_clickable_in_static_article_pages(self):
+        sources = (
+            "https://capital-cdmx.org/colonias-mas-denuncias-cuajimalpa-de-morelos-capital-ayuda-2026/",
+            "https://capital-cdmx.org/colonias-mas-denuncias-venustiano-carranza-capital-ayuda-2026/",
+            "https://elpais.com/mexico/2026-11-16/el-desfile-de-la-revolucion-en-ciudad-de-mexico-horario-ruta-y-contingentes.html",
+            "https://www.sopitas.com/noticias/discriminacion-cdmx-copred-edis-2026/",
+        )
+        for index, source_url in enumerate(sources, start=1):
+            with self.subTest(source_url=source_url):
+                rss_url = "https://news.google.com/rss/articles/example?oc=5"
+                item = {
+                    "title": "Noticia local con fuente original",
+                    "source": "Medio identificado",
+                    "source_url": source_url,
+                    "url": rss_url,
+                    "date": "2026-11-16",
+                    "local_url": f"/noticias/?id={index:020x}&mes=2026-11",
+                    "brief": {
+                        "lead": "Resumen atribuido al medio.",
+                        "method": "Síntesis editorial basada en la publicación original.",
+                    },
+                }
+                page = render(item, f"{index:020x}")
+                self.assertIn('href="' + source_url + '"', page)
+                self.assertIn("Ver fuente original", page)
+                self.assertNotIn('href="' + rss_url + '"', page)
+
+    def test_unlisted_lookalike_source_host_remains_rejected(self):
+        source_url = "https://capital-cdmx.org.evil.example/noticia"
+        item = {
+            "title": "Noticia local con fuente no autorizada",
+            "source": "Fuente no verificada",
+            "source_url": source_url,
+            "url": "https://news.google.com/rss/articles/example?oc=5",
+            "date": "2026-11-16",
+            "local_url": "/noticias/?id=00000000000000000099&mes=2026-11",
+            "brief": {"lead": "Resumen atribuido al titular."},
+        }
+        page = render(item, "00000000000000000099")
+        self.assertNotIn('href="' + source_url + '"', page)
+        self.assertNotIn("Ver fuente original", page)
+
+
 if __name__ == "__main__":
     unittest.main()
