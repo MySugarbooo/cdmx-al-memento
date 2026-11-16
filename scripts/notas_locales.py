@@ -108,6 +108,28 @@ def is_esto_49ers_fan_story(article):
     )
 
 
+def is_somoselmedio_valparaiso_exhibition_story(article):
+    """Identifica la nota de Somoselmedio sobre la muestra Valparaíso en Casa Talavera."""
+    title = _photo_fold(article.get("title"))
+    return (
+        str(article.get("date") or "") == "2026-11-16"
+        and _photo_fold(article.get("source")) == "somoselmedio"
+        and "exposicion valparaiso" in title
+        and "miradas criticas al territorio" in title
+    )
+
+
+def is_infobae_teacher_mental_health_story(article):
+    """Identifica la propuesta de capacitar a docentes en primeros auxilios psicológicos."""
+    title = _photo_fold(article.get("title"))
+    return (
+        str(article.get("date") or "") == "2026-11-16"
+        and _photo_fold(article.get("source")) == "infobae"
+        and "depresion adolescente" in title
+        and "primeros auxilios psicologicos" in title
+    )
+
+
 def is_periodico_am_49ers_cdmx_story(article):
     """Identifica la nota de Periódico AM sobre el club de aficionados de 49ers en CDMX."""
     title = _photo_fold(article.get("title"))
@@ -1006,6 +1028,54 @@ def summarize(article):
                 "con una representante del COPRED: "
                 "https://www.sopitas.com/noticias/discriminacion-cdmx-copred-edis-2026/. "
                 "No se descargó ni reprodujo contenido protegido."
+            ),
+        }
+    if is_somoselmedio_valparaiso_exhibition_story(article):
+        return {
+            "lead": (
+                "Somoselmedio informó el 16 de noviembre que la muestra fotográfica "
+                "«Colección Valparaíso: Topotesia de un puerto», del artista visual y docente "
+                "chileno Rodolfo Muñoz Araya, se presentó del 29 de octubre al 6 de noviembre "
+                "en el Centro Cultural Casa Talavera. La ficha institucional de UACM registra "
+                "la exposición del 19 de octubre al 6 de noviembre."
+            ),
+            "context": (
+                "La publicación describe fotografías intervenidas, instalaciones, textos, "
+                "esculturas y paisajes sonoros. También reporta una conferencia el 4 de noviembre, "
+                "un conversatorio con estudiantes el 5 y una visita guiada de clausura el 6."
+            ),
+            "pending": (
+                "La muestra concluyó el 6 de noviembre y no debe anunciarse como actividad vigente. "
+                "Las fuentes discrepan sobre el inicio: Somoselmedio indica el 29 de octubre y la "
+                "ficha institucional de UACM el 19 de octubre. No se unifica la fecha sin aclaración de la sede."
+            ),
+            "method": (
+                "Síntesis editorial propia basada en Somoselmedio, 16 de noviembre de 2026, y en la "
+                "ficha institucional de UACM consultada el 16 de noviembre: "
+                "https://uacm.edu.mx/sitios/valparaiso/index.html. Somoselmedio indica 29 de octubre; "
+                "UACM registra 19 de octubre. La fotografía asignada muestra el recinto, no la exposición."
+            ),
+        }
+    if is_infobae_teacher_mental_health_story(article):
+        return {
+            "lead": (
+                "Infobae informó el 16 de noviembre que la diputada Lizzette Salgado Viramontes "
+                "propuso capacitar a personal docente y directivo de educación básica y media superior "
+                "en primeros auxilios psicológicos."
+            ),
+            "context": (
+                "La iniciativa pide a la SECTEI considerar la capacitación en el presupuesto de 2027 "
+                "para reconocer señales de alerta y canalizar a estudiantes con especialistas. "
+                "La legisladora aclaró que no busca convertir a docentes en psicólogos ni asignarles "
+                "tareas de diagnóstico o tratamiento."
+            ),
+            "pending": (
+                "Se trata de una propuesta legislativa: no es un programa aprobado ni una capacitación ya implementada. "
+                "El dato de uno de cada cuatro adolescentes se atribuye a la ENSANUT citada por Infobae."
+            ),
+            "method": (
+                "Síntesis editorial propia basada en Infobae, 16 de noviembre de 2026. "
+                "La fotografía de aula es de archivo y no corresponde a la iniciativa."
             ),
         }
     if is_periodico_am_49ers_cdmx_story(article):
@@ -2791,6 +2861,10 @@ def _photo_score(article, photo):
     # usar el monumento conmemorativo, no fotografías del Desfile de Catrinas.
     if is_revolucion_mexicana_desfile_2026(article):
         return 5000 if photo.get("id") == "contexto_monumento_revolucion_desfile_2026" else -10000
+    if is_somoselmedio_valparaiso_exhibition_story(article):
+        return 5000 if photo.get("id") == "contexto_casa_talavera_exposicion_valparaiso" else -10000
+    if is_infobae_teacher_mental_health_story(article):
+        return 5000 if photo.get("id") == "contexto_aula_educacion_salud_mental_cdmx" else -10000
     if is_sopitas_edis_discrimination_2026(article):
         return 5000 if photo.get("id") == "contexto_edis_poblacion_cdmx" else -10000
     if is_elcongresista_buen_fin_operation(article):

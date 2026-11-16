@@ -319,5 +319,43 @@ class ArticlePhotoTests(unittest.TestCase):
                 self.assertEqual(render_photo({"photo": {"url": url}}), "")
 
 
+    def test_dynamic_article_source_allowlist_includes_curated_publishers(self):
+        script = (
+            Path(__file__).resolve().parents[1] / "assets" / "noticias-locales.js"
+        ).read_text(encoding="utf-8")
+        self.assertIn("TRUSTED_SOURCE_HOSTS.has(u.hostname)", script)
+        for host in (
+            "elpais.com",
+            "www.elimparcial.com",
+            "www.sopitas.com",
+            "www.am.com.mx",
+            "www.yucatan.com.mx",
+            "www.infobae.com",
+            "www.somoselmedio.com",
+            "elcongresista.mx",
+            "ahoranoticias.com.mx",
+            "oem.com.mx",
+            "sociedad-noticias.com",
+            "www.nmas.com.mx",
+            "24-horas.mx",
+            "capital-cdmx.org",
+            "diariobasta.com",
+            "es-us.noticias.yahoo.com",
+            "noticias.imer.mx",
+            "www.billboard.com",
+            "www.jornada.com.mx",
+            "www.posta.com.mx",
+            "www.radioformula.com.mx",
+            "www.razon.com.mx",
+            "www.sdpnoticias.com",
+            "www.tvazteca.com",
+        ):
+            with self.subTest(host=host):
+                self.assertIn("'" + host + "'", script)
+        self.assertIn(
+            "const VERIFIED_SOURCE_HOSTS = new Set(['comova.mx','mayacomunicacion.com.mx','www.elgrafico.mx']);",
+            script,
+        )
+
 if __name__ == "__main__":
     unittest.main()

@@ -32,12 +32,22 @@
   const d=new Date(x.published_at||'');
   return Number.isFinite(d.getTime())?dateFormat.format(d):x.date||'Fecha sin confirmar';
  }
+ const TRUSTED_SOURCE_HOSTS = new Set([
+  'news.google.com','commons.wikimedia.org','www.hoytamaulipas.net',
+  'elpais.com','www.elimparcial.com','www.sopitas.com','www.am.com.mx','www.yucatan.com.mx',
+  'www.infobae.com','www.somoselmedio.com','elcongresista.mx','ahoranoticias.com.mx',
+  'oem.com.mx','sociedad-noticias.com','www.nmas.com.mx','24-horas.mx','capital-cdmx.org',
+  'diariobasta.com','es-us.noticias.yahoo.com','noticias.imer.mx','www.billboard.com',
+  'www.jornada.com.mx','www.posta.com.mx','www.radioformula.com.mx','www.razon.com.mx',
+  'www.sdpnoticias.com','www.tvazteca.com'
+ ]);
+ const VERIFIED_SOURCE_HOSTS = new Set(['comova.mx','mayacomunicacion.com.mx','www.elgrafico.mx']);
  function safeExternal(url,verified=false){
   try{
    const u=new URL(url);
    return u.protocol==='https:'&&!u.username&&!u.password&&(
-    u.hostname==='news.google.com'||u.hostname==='commons.wikimedia.org'||u.hostname==='www.hoytamaulipas.net'||
-    (verified===true&&['comova.mx','mayacomunicacion.com.mx','www.elgrafico.mx'].includes(u.hostname)&&u.pathname!=='/')
+    TRUSTED_SOURCE_HOSTS.has(u.hostname)||
+    (verified===true&&VERIFIED_SOURCE_HOSTS.has(u.hostname)&&u.pathname!=='/')
    );
   }catch{return false;}
  }

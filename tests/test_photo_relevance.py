@@ -4268,5 +4268,80 @@ class PeriodicoAm49ersPhotoRegressionTests(unittest.TestCase):
         self.assertIn("no del juego de NFL en CDMX", article["photo"]["topic"])
 
 
+class SomoselmedioValparaisoPhotoRegressionTests(unittest.TestCase):
+    def test_valparaiso_story_uses_casa_talavera_venue_photo_and_direct_source(self):
+        article = news.standardize({
+            "title": "Exposición Valparaíso: miradas críticas al territorio en la CDMX",
+            "url": "https://news.google.com/rss/articles/valparaiso-20261116",
+            "source": "Somoselmedio",
+            "date": "2026-11-16",
+            "published_at": "2026-11-16T13:00:37Z",
+            "category": "Cultura",
+        })
+        self.assertIsNotNone(article)
+        self.assertTrue(photos.is_somoselmedio_valparaiso_exhibition_story(article))
+        self.assertEqual(article["source_url"], "https://www.somoselmedio.com/valparaiso-miradas-criticas-en-cdmx/")
+        self.assertIn("29 de octubre", article["brief"]["lead"])
+        self.assertIn("19 de octubre", article["brief"]["lead"])
+        self.assertIn("6 de noviembre", article["brief"]["lead"])
+        self.assertIn("concluyó", article["brief"]["pending"])
+        self.assertIn("discrepan", article["brief"]["pending"])
+        self.assertIn("19 de octubre", article["brief"]["pending"])
+        self.assertEqual(article["borough"], "Cuauhtémoc")
+        pool = {photo["id"]: photo for photo in photos._pool()}
+        unrelated = deepcopy(pool["commons_202033493"])
+        casa = deepcopy(pool["contexto_casa_talavera_exposicion_valparaiso"])
+        article["photo"] = unrelated
+
+        self.assertLess(_photo_score(article, unrelated), 0)
+        self.assertEqual(_photo_score(article, casa), 5000)
+        with patch.object(photos, "_pool", return_value=[unrelated, casa]), patch.object(
+            photos, "_load", return_value=[]
+        ):
+            assign_photos([article])
+
+        self.assertEqual(article["photo"]["id"], "contexto_casa_talavera_exposicion_valparaiso")
+        self.assertEqual(article["photo"]["author"], "Mexch")
+        self.assertEqual(article["photo"]["license"], "CC BY-SA 3.0")
+        self.assertIn("no muestra la exposición", article["photo"]["topic"].lower())
+
+
+class InfobaeTeacherMentalHealthPhotoRegressionTests(unittest.TestCase):
+    def test_depression_teacher_story_uses_cdmx_classroom_not_unrelated_monument(self):
+        article = news.standardize({
+            "title": "Depresión adolescente: proponen capacitar a maestros de la CDMX en primeros auxilios psicológicos",
+            "url": "https://news.google.com/rss/articles/infobae-mental-health-20261116",
+            "source": "Infobae",
+            "date": "2026-11-16",
+            "published_at": "2026-11-16T14:00:00Z",
+            "category": "Educación",
+        })
+        self.assertIsNotNone(article)
+        self.assertTrue(photos.is_infobae_teacher_mental_health_story(article))
+        self.assertEqual(
+            article["source_url"],
+            "https://www.infobae.com/mexico/2026/11/16/depresion-adolescente-proponen-capacitar-a-maestros-de-la-cdmx-en-primeros-auxilios-psicologicos/",
+        )
+        self.assertIn("Lizzette Salgado Viramontes", article["brief"]["lead"])
+        self.assertIn("2027", article["brief"]["context"])
+        self.assertIn("no es un programa aprobado", article["brief"]["pending"])
+        pool = {photo["id"]: photo for photo in photos._pool()}
+        monument = deepcopy(pool["commons_73175061"])
+        classroom = deepcopy(pool["contexto_aula_educacion_salud_mental_cdmx"])
+        article["photo"] = monument
+
+        self.assertLess(_photo_score(article, monument), 0)
+        self.assertEqual(_photo_score(article, classroom), 5000)
+        with patch.object(photos, "_pool", return_value=[monument, classroom]), patch.object(
+            photos, "_load", return_value=[]
+        ):
+            assign_photos([article])
+
+        self.assertEqual(article["photo"]["id"], "contexto_aula_educacion_salud_mental_cdmx")
+        self.assertEqual(article["photo"]["author"], "Lucía Villegas")
+        self.assertEqual(article["photo"]["license"], "CC0 1.0")
+        self.assertIn("no documenta la iniciativa", article["photo"]["topic"].lower())
+
+
 if __name__ == "__main__":
     unittest.main()
