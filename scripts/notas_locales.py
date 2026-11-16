@@ -428,6 +428,83 @@ def is_tvazteca_revolucion_desfile_2026(article):
     )
 
 
+def is_capital_cdmx_tlalpan_colony_crime_stats(article):
+    """Identifica el desglose de denuncias de Toriello Guerra y Santa Úrsula Xitla."""
+    title = _photo_fold(article.get("title"))
+    return (
+        str(article.get("date") or "") == "2026-11-16"
+        and _photo_fold(article.get("source")) == "capital cdmx"
+        and "toriello guerra" in title
+        and "santa ursula xitla" in title
+        and "denuncias por colonia" in title
+    )
+
+
+def is_capital_cdmx_tlahuac_colony_crime_stats(article):
+    """Identifica el desglose de denuncias por colonia en Tláhuac."""
+    title = _photo_fold(article.get("title"))
+    return (
+        str(article.get("date") or "") == "2026-11-16"
+        and _photo_fold(article.get("source")) == "capital cdmx"
+        and "tlahuac" in title
+        and "colonias con mas denuncias" in title
+    )
+
+
+def is_infopoder_ruta_maiz_topilejo(article):
+    """Identifica la guía de la Ruta del Maíz en San Miguel Topilejo."""
+    title = _photo_fold(article.get("title"))
+    return (
+        str(article.get("date") or "") == "2026-11-16"
+        and _photo_fold(article.get("source")) == "infopoder"
+        and "ruta del maiz" in title
+        and "topilejo" in title
+    )
+
+
+def is_el_sol_utopias_program_story(article):
+    """Identifica la nota sobre 2,302 incorporaciones al programa Utopías."""
+    title = _photo_fold(article.get("title"))
+    return (
+        str(article.get("date") or "") == "2026-11-16"
+        and _photo_fold(article.get("source")) == "el sol de mexico"
+        and "2 mil 302" in title
+        and "programa utopias" in title
+    )
+
+
+def is_el_sol_mago_de_oz_arena_story(article):
+    """Identifica la crónica del concierto de Mägo de Oz en la Arena CDMX."""
+    title = _photo_fold(article.get("title"))
+    return (
+        str(article.get("date") or "") == "2026-11-16"
+        and _photo_fold(article.get("source")) == "el sol de mexico"
+        and "mago de oz" in title
+        and "arena ciudad de mexico" in title
+    )
+
+
+def is_miguel_hidalgo_explosion_2026(article):
+    """Agrupa las notas del 16/11 sobre la explosión en Miguel Hidalgo."""
+    title = _photo_fold(article.get("title"))
+    return (
+        str(article.get("date") or "") == "2026-11-16"
+        and "explosion" in title
+        and "miguel hidalgo" in title
+    )
+
+
+def is_imagen_conductora_abuelita_story(article):
+    """Identifica la nota de Imagen TV sobre una conductora y una adulta mayor."""
+    title = _photo_fold(article.get("title"))
+    return (
+        str(article.get("date") or "") == "2026-11-16"
+        and _photo_fold(article.get("source")) == "imagen television"
+        and "conductora golpea" in title
+        and "abuelita" in title
+    )
+
+
 def is_sopitas_edis_discrimination_2026(article):
     """Identifica la nota de Sopitas sobre la EDIS 2026 y discriminación en CDMX."""
     title = _photo_fold(article.get("title"))
@@ -2989,6 +3066,20 @@ def _photo_score(article, photo):
         or is_tvazteca_revolucion_desfile_2026(article)
     ):
         return 5000 if photo.get("id") == "contexto_monumento_revolucion_desfile_2026" else -10000
+    if is_capital_cdmx_tlalpan_colony_crime_stats(article):
+        return 5000 if photo.get("id") == "commons_118485288" else -10000
+    if is_capital_cdmx_tlahuac_colony_crime_stats(article):
+        return 5000 if photo.get("id") == "contexto_tlahuac_plaza_denuncias" else -10000
+    if is_infopoder_ruta_maiz_topilejo(article):
+        return 5000 if photo.get("id") == "commons_112950009" else -10000
+    if is_el_sol_utopias_program_story(article):
+        return 5000 if photo.get("id") == "contexto_utopia_meyehualco_program" else -10000
+    if is_el_sol_mago_de_oz_arena_story(article):
+        return 5000 if photo.get("id") == "commons_86371354" else -10000
+    if is_miguel_hidalgo_explosion_2026(article):
+        return 5000 if photo.get("id") == "commons_75139349" else -10000
+    if is_imagen_conductora_abuelita_story(article):
+        return 5000 if photo.get("id") == "contexto_trafico_eje_central" else -10000
     if is_somoselmedio_valparaiso_exhibition_story(article):
         return 5000 if photo.get("id") == "contexto_casa_talavera_exposicion_valparaiso" else -10000
     if is_infobae_teacher_mental_health_story(article):

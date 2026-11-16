@@ -4267,6 +4267,100 @@ class TvAztecaRevolucionDesfilePhotoRegressionTests(unittest.TestCase):
         self.assertIn("no del desfile de 2026", article["photo"]["topic"])
 
 
+class ContextPhotoRelevanceRegressionTests(unittest.TestCase):
+    def _article(self, title, source):
+        article = news.standardize({
+            "title": title,
+            "url": "https://news.google.com/rss/articles/context-photo-audit-" + source.lower().replace(" ", "-"),
+            "source": source,
+            "date": "2026-11-16",
+            "published_at": "2026-11-16T18:00:00Z",
+            "category": "CDMX",
+        })
+        self.assertIsNotNone(article)
+        return article
+
+    def _assert_replacement(self, article, wrong_id, preferred_id, wrong_override=None):
+        pool = {photo["id"]: photo for photo in photos._pool()}
+        wrong = deepcopy(pool[wrong_id]) if wrong_id in pool else deepcopy(wrong_override)
+        preferred = deepcopy(pool[preferred_id])
+        self.assertIsNotNone(wrong)
+        article["photo"] = wrong
+        self.assertLess(_photo_score(article, wrong), 0)
+        self.assertEqual(_photo_score(article, preferred), 5000)
+        with patch.object(photos, "_pool", return_value=[wrong, preferred]), patch.object(
+            photos, "_load", return_value=[]
+        ):
+            assign_photos([article])
+        self.assertEqual(article["photo"]["id"], preferred_id)
+        self.assertTrue(article["photo"]["author"])
+        self.assertTrue(article["photo"]["license"])
+        self.assertTrue(article["photo"]["source"].startswith("https://commons.wikimedia.org/wiki/File:"))
+        return article["photo"]
+
+    def test_tlalpan_colony_crime_story_uses_santa_ursula_parish_not_animals(self):
+        article = self._article(
+            "Toriello Guerra y Santa Úrsula Xitla: las denuncias por colonia en Tlalpan en 2024",
+            "Capital CDMX",
+        )
+        photo = self._assert_replacement(article, "commons_35624630", "commons_118485288")
+        self.assertIn("Santa Úrsula y San José", photo["topic"])
+
+    def test_tlahuac_crime_story_uses_local_plaza_not_central_cathedral(self):
+        article = self._article("Tláhuac: las colonias con más denuncias en 2024", "Capital CDMX")
+        photo = self._assert_replacement(article, "commons_147737815", "contexto_tlahuac_plaza_denuncias")
+        self.assertEqual(photo["author"], "Yavidaxiu")
+        self.assertEqual(photo["license"], "CC BY 3.0")
+        self.assertIn("no documenta denuncias de 2024", photo["topic"])
+
+    def test_topilejo_maize_route_uses_local_photo_not_palacio_nacional(self):
+        article = self._article("Gobierno de CDMX inaugura Ruta del Maíz en Topilejo: costo y horarios", "infopoder")
+        wrong = {
+            "id": "gobierno", "kind": "representativa", "category": "Gobierno",
+            "topic": "Fachada del Palacio Nacional", "keywords": ["Gobierno"],
+            "url": "/assets/fotos/gobierno.jpg",
+            "source": "https://commons.wikimedia.org/wiki/File:Palacio_Nacional_Ciudad_de_M%C3%A9xico.jpg",
+            "author": "MichaelCamacho", "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+        }
+        photo = self._assert_replacement(article, "gobierno", "commons_112950009", wrong)
+        self.assertIn("San Miguel Topilejo", photo["topic"])
+
+    def test_utopias_program_uses_a_utopia_facility_not_palacio_treasury(self):
+        article = self._article(
+            "Deporte, salud y cuidados: CDMX integra a 2 mil 302 personas al programa Utopías",
+            "El Sol de México",
+        )
+        photo = self._assert_replacement(article, "commons_98002547", "contexto_utopia_meyehualco_program")
+        self.assertEqual(photo["author"], "Wotancito")
+        self.assertEqual(photo["license"], "CC BY-SA 4.0")
+        self.assertIn("no documenta incorporaciones de 2026", photo["topic"])
+
+    def test_mago_de_oz_story_uses_arena_venue_not_paseo_de_la_reforma(self):
+        article = self._article(
+            "Mägo de Oz enciende la Arena Ciudad de México con rock, nostalgia y Fiesta pagana",
+            "El Sol de México",
+        )
+        photo = self._assert_replacement(article, "commons_119675361", "commons_86371354")
+        self.assertIn("Arena Ciudad de México", photo["topic"])
+
+    def test_miguel_hidalgo_explosion_coverage_uses_bomberos_not_unrelated_landmarks(self):
+        article = self._article(
+            "Explosión en la alcaldía Miguel Hidalgo de la CDMX deja una persona muerta y varios lesionados",
+            "Vox Populi",
+        )
+        photo = self._assert_replacement(article, "contexto_teatro_angela_peralta", "commons_75139349")
+        self.assertIn("Bomberos CDMX", photo["topic"])
+
+    def test_conductora_story_uses_traffic_context_not_central_cathedral(self):
+        article = self._article(
+            "Conductora golpea a abuelita en CDMX por pedirle que no bloquee su entrada",
+            "Imagen Televisión",
+        )
+        photo = self._assert_replacement(article, "commons_11809159", "contexto_trafico_eje_central")
+        self.assertIn("Tráfico vehicular en Eje Central", photo["topic"])
+
+
 class SopitasEdisDiscriminationPhotoRegressionTests(unittest.TestCase):
     def test_edis_story_uses_neutral_cdmx_pedestrian_photo_not_unrelated_church(self):
         article = news.standardize({
