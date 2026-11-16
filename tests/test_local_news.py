@@ -9,6 +9,25 @@ from update_news import clear_sensitive_context_photos, category_by_headline, st
 ROOT=Path(__file__).resolve().parents[1]
 
 class LocalNewsTests(unittest.TestCase):
+    def test_esto_49ers_fans_story_corrects_source_summary_and_representative_photo(self):
+        result = standardize({
+            "title": "“Son nuestros chavos por siempre”: Afición de los 49ers en CDMX hablan de los Cowboys y los compara con Cruz Azul",
+            "url": "https://news.google.com/rss/articles/esto-49ers-fans-20261115",
+            "source": "El Sol de México",
+            "date": "2026-11-15",
+            "published_at": "2026-11-15T22:32:46Z",
+            "category": "CDMX",
+        })
+        self.assertIsNotNone(result)
+        self.assertEqual(result["source"], "ESTO")
+        self.assertEqual(result["source_url"], "https://oem.com.mx/esto/futbol-americano/aficionados-de-san-francisco-49ers-en-cdmx-hablan-de-la-rivalidad-contra-dallas-cowboys-33151840")
+        self.assertIn("21 triunfos y 19 derrotas", result["brief"]["lead"])
+        self.assertIn("ESTO", result["brief"]["method"])
+        assign_photos([result])
+        self.assertEqual(result["photo"]["id"], "contexto_futbol_americano_nfl")
+        self.assertEqual(result["photo"]["author"], "Torsten Bolten, AFpix.de")
+        self.assertEqual(result["photo"]["license"], "CC BY-SA 3.0")
+
     def make(self,i,category):
         return {"title":f"El Metro de CDMX reporta avance de la línea {i} de transporte",
                 "url":"https://news.google.com/rss/articles/sample"+str(i),

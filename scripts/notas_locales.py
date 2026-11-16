@@ -85,7 +85,21 @@ LA_JORNADA_GARBAGE_ZOCALO_SOURCE_URL = "https://www.jornada.com.mx/noticia/2026/
 SOCIEDAD_NOTICIAS_GARBAGE_ZOCALO_SOURCE_URL = "https://sociedad-noticias.com/2026/11/15/garbage-reune-a-mas-de-90-mil-personas-en-el-zocalo-de-la-cdmx/"
 LA_RAZON_GARBAGE_ZOCALO_SOURCE_URL = "https://www.razon.com.mx/ciudad/2026/11/15/asisten-mas-de-90-mil-personas-a-concierto-de-garbage-en-el-zocalo-de-la-cdmx/"
 INFOBAE_GARBAGE_ZOCALO_SOURCE_URL = "https://www.infobae.com/mexico/2026/11/15/garbage-en-el-zocalo-de-la-cdmx-asi-puedes-seguir-el-concierto-en-vivo-de-manera-gratuita/"
+ESTO_49ERS_FANS_SOURCE_URL = "https://oem.com.mx/esto/futbol-americano/aficionados-de-san-francisco-49ers-en-cdmx-hablan-de-la-rivalidad-contra-dallas-cowboys-33151840"
 YAHOO_GARBAGE_ZOCALO_SOURCE_URL = "https://es-us.noticias.yahoo.com/garbage-conquista-90-mil-personas-224733197.html"
+
+
+def is_esto_49ers_fan_story(article):
+    """Identifica la nota de ESTO sobre aficionados de los 49ers reunidos en CDMX."""
+    title = _photo_fold(article.get("title"))
+    source = _photo_fold(article.get("source"))
+    return (
+        str(article.get("date") or "") == "2026-11-15"
+        and source in {"el sol de mexico", "esto"}
+        and "son nuestros chavos" in title
+        and "49ers" in title
+        and "cowboys" in title
+    )
 
 
 def is_radio_formula_casa_ecologica(article):
@@ -753,6 +767,29 @@ def summarize(article):
     category=str(article.get("category") or "CDMX")
     theme=TAGS.get(category,TAGS["CDMX"])
     folded_title=_photo_fold(title)
+    if is_esto_49ers_fan_story(article):
+        return {
+            "lead": (
+                "ESTO informó que aficionados de los San Francisco 49ers reunidos en Ciudad de México "
+                "hablaron de su rivalidad con los Dallas Cowboys y afirmaron que son sus "
+                "«chavos por siempre». La publicación menciona un historial favorable para San Francisco "
+                "de 21 triunfos y 19 derrotas frente a Dallas."
+            ),
+            "context": (
+                "La nota aborda la afición y la rivalidad deportiva alrededor de los 49ers en CDMX; "
+                "no describe un operativo ni una afectación de servicios de la ciudad."
+            ),
+            "pending": (
+                "El extracto consultado no identifica una alcaldía ni precisa el lugar exacto donde "
+                "se reunieron los aficionados. No se infiere una sede distinta a la que indique la "
+                "publicación completa."
+            ),
+            "method": (
+                "Síntesis editorial basada en la publicación de ESTO del 15 de noviembre de 2026: "
+                + ESTO_49ERS_FANS_SOURCE_URL
+                + ". El balance histórico se atribuye al medio y no constituye una verificación independiente."
+            ),
+        }
     if is_animal_abuse_statistics_report(article):
         return {
             "lead": (
@@ -2393,6 +2430,8 @@ def _photo_score(article, photo):
     topic=re.sub(r"\bno\b[^;.)]*", "", topic)
     keywords=_photo_fold(" ".join(str(x) for x in photo.get("keywords",[])))
     context=topic+" "+keywords
+    if is_esto_49ers_fan_story(article):
+        return 5000 if photo.get("id") == "contexto_futbol_americano_nfl" else -10000
     if is_animal_abuse_statistics_report(article):
         return 5000 if photo.get("id") == "contexto_perros_parque_espana" else -10000
     if is_la_prensa_prehospital_care(article):
