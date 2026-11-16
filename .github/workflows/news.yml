@@ -177,7 +177,7 @@ jobs:
     # El SEO genera index.html; evita repetir el pipeline por ese commit automático.
     if: github.event_name != 'push' || github.event.head_commit.message != 'Update crawlable article pages'
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 25
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
