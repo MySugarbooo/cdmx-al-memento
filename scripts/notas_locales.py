@@ -329,6 +329,17 @@ def is_diario_yucatan_garbage_zocalo(article):
     )
 
 
+def is_elpais_revolucion_desfile(article):
+    """Identifica la guía de EL PAÍS sobre el desfile del 20/11/2026 en CDMX."""
+    title = _photo_fold(article.get("title"))
+    return (
+        str(article.get("date") or "") == "2026-11-16"
+        and _photo_fold(article.get("source")) == "el pais"
+        and "desfile de la revolucion" in title
+        and "ciudad de mexico" in title
+    )
+
+
 def is_infobae_garbage_zocalo(article):
     """Identifica la nota de Infobae sobre cómo seguir la transmisión del concierto de Garbage."""
     title = _photo_fold(article.get("title"))
@@ -2636,6 +2647,10 @@ def _photo_score(article, photo):
         return 5000 if photo.get("id") == "contexto_imeca_calidad_aire_cdmx" else -10000
     if is_billboard_karol_g_concert_story(article):
         return 5000 if photo.get("id") == "contexto_concierto_foro_sol_2023" else -10000
+    # La guía del desfile del 20 de noviembre recorre del Zócalo al Monumento;
+    # usar el monumento conmemorativo, no el Desfile de Catrinas.
+    if is_elpais_revolucion_desfile(article):
+        return 5000 if photo.get("id") == "commons_107165242" else -10000
     if is_elcongresista_buen_fin_operation(article):
         return 5000 if photo.get("id") == "commons_149171771" else -10000
     if is_tvazteca_hoy_no_circula_bridge_story(article):
