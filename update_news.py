@@ -741,13 +741,14 @@ def standardize(article):
     url = article.get("url")
     curated = article.get("editorial_verified") is True
     source = clean(article.get("source"))[:110]
-    if is_esto_49ers_fan_story({"title": title, "source": source, "date": str(article.get("date", ""))}):
-        # Google News agrupa la entrada bajo El Sol de México, pero la publicación original es de ESTO.
-        source = "ESTO"
     date = str(article.get("date", ""))
     published = published_datetime(article.get("published_at"))
     if published:
         date = published.astimezone(MX).date().isoformat()
+    # El RSS de Google News suele entregar published_at sin un campo date.
+    # Normalizar primero la fecha local permite identificar la edición original de ESTO.
+    if is_esto_49ers_fan_story({"title": title, "source": source, "date": date}):
+        source = "ESTO"
     if is_hoy_tamaulipas_paty_chio_assembly({"title": title, "source": source}):
         # El RSS volvió a publicar una nota de 2025 como si fuera nueva.
         # La fuente original identifica el 10 de diciembre de 2025 como fecha real.
