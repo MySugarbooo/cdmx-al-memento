@@ -1,6 +1,6 @@
 {
   "month": "2026-11",
-  "updated": "2026-11-17 04:33 UTC",
+  "updated": "2026-11-17 04:44 UTC",
   "articles": [
     {
       "title": "Clima en Ciudad de México: cuál será la temperatura máxima y mínima este 17 de noviembre",
@@ -401,6 +401,7 @@
         "pending": "La cuota de 98 pesos corresponde a registros de la Ciudad de México; si el acta se registró en otra entidad, el costo puede ser distinto. Verifica el trámite y el tarifario oficial antes de pagar o ingresar datos personales.",
         "method": "Síntesis editorial propia basada en Maya Comunicación, 16 de noviembre de 2026: https://mayacomunicacion.com.mx/acta-de-nacimiento-cdmx/. El costo se contrastó con el tarifario oficial de la Secretaría de Administración y Finanzas de CDMX (clave 54), consultado el 16 de noviembre: https://data.finanzas.cdmx.gob.mx/formato_lc/conceptos/registro_civil/grupo."
       },
+      "source_url": "https://mayacomunicacion.com.mx/acta-de-nacimiento-cdmx/",
       "photo": {
         "id": "contexto_registro_civil_cdmx_2022",
         "kind": "representativa",
@@ -423,7 +424,6 @@
         "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
         "source": "https://commons.wikimedia.org/wiki/File:Fachada_de_las_oficinas_de_la_Direcci%C3%B3n_General_del_Registro_Civil_de_la_Ciudad_de_M%C3%A9xico.jpg"
       },
-      "source_url": "https://mayacomunicacion.com.mx/acta-de-nacimiento-cdmx/",
       "alternate_versions": [
         {
           "title": "Acta de nacimiento CDMX 2026: cómo sacarla en línea y costo",
@@ -1124,6 +1124,7 @@
         "pending": "El Debate reportó servicio diario de 04:30 a 00:00 h y frecuencias estimadas de 10 a 15 minutos. La nota no ofrece seguimiento operativo en tiempo real; confirmar cambios de servicio con RTP.",
         "method": "Síntesis editorial propia basada en la publicación original de El Debate del 16 de noviembre de 2026; no equivale a verificación independiente de la operación en tiempo real."
       },
+      "source_url": "https://www.debate.com.mx/cdmx/inauguran-ruta-del-maiz-en-cdmx-conectara-topilejo-con-la-joya-por-4-pesos-20261116-0230.html",
       "photo": {
         "id": "commons_112950009",
         "kind": "representativa",
@@ -1139,7 +1140,6 @@
         "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
         "source": "https://commons.wikimedia.org/wiki/File:Ciudad_de_M%C3%A9xico_-_San_Miguel_Topilejo_0185.JPG"
       },
-      "source_url": "https://www.debate.com.mx/cdmx/inauguran-ruta-del-maiz-en-cdmx-conectara-topilejo-con-la-joya-por-4-pesos-20261116-0230.html",
       "alternate_versions": [
         {
           "title": "Inauguran Ruta del Maíz en CDMX: conectará Topilejo con La Joya por 4 pesos",
@@ -1410,12 +1410,6 @@
       "borough": "",
       "location": "Ciudad de México (sin alcaldía identificada)",
       "local_url": "/noticias/?id=535522cb7ca1844801ea&mes=2026-11",
-      "brief": {
-        "lead": "De acuerdo con TV Azteca, el titular publicado es: «Afectaciones en calles en CDMX HOY: Baches, encharcamientos, fugas y otros accidentes este lunes». De acuerdo con TV Azteca, se informa de un hecho vial relacionado con personas o vehículos involucrados en la capital. El encabezado no permite determinar por sí solo si hubo personas lesionadas o fallecidas. Se requiere consultar la nota original para conocer el punto exacto, las circunstancias y los reportes oficiales, sin atribuir responsabilidades sin pruebas.",
-        "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
-        "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
       "alternate_versions": [
         {
           "title": "Afectaciones en calles en CDMX HOY: Baches, encharcamientos, fugas y otros accidentes este lunes",
@@ -1453,7 +1447,13 @@
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           }
         }
-      ]
+      ],
+      "brief": {
+        "lead": "De acuerdo con TV Azteca, el titular publicado es: «Afectaciones en calles en CDMX HOY: Baches, encharcamientos, fugas y otros accidentes este lunes». De acuerdo con TV Azteca, se informa de un hecho vial relacionado con personas o vehículos involucrados en la capital. El encabezado no permite determinar por sí solo si hubo personas lesionadas o fallecidas. Se requiere consultar la nota original para conocer el punto exacto, las circunstancias y los reportes oficiales, sin atribuir responsabilidades sin pruebas.",
+        "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
+        "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      }
     },
     {
       "title": "Colonias más peligrosas de Iztapalapa: robos y zonas",
@@ -1601,14 +1601,14 @@
       "source": "Infobae",
       "date": "2026-11-16",
       "published_at": "2026-11-16T23:41:00Z",
-      "category": "CDMX",
+      "category": "Gobierno",
       "borough": "",
       "location": "Ciudad de México (sin alcaldía identificada)",
       "local_url": "/noticias/?id=0b36d1c038f1a9eaba95&mes=2026-11",
       "brief": {
         "lead": "De acuerdo con Infobae, el titular publicado es: «Proponen aumentar de 40 a 60 metros cuadrados el tamaño de la vivienda social en la CDMX». El medio Infobae informa sobre una iniciativa o medida relacionada con vivienda pública en la capital. Su alcance, condiciones y estado de aprobación requieren consultar la publicación completa y fuentes oficiales.",
-        "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-        "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "context": "Las decisiones administrativas pueden influir en servicios, trámites y derechos; conviene conocer sus condiciones y a quiénes afectan.",
+        "pending": "Es indispensable consultar los acuerdos, comunicados o documentos oficiales antes de dar una medida por vigente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
@@ -1634,14 +1634,14 @@
           "source": "Infobae",
           "date": "2026-11-16",
           "published_at": "2026-11-16T23:41:00Z",
-          "category": "Gobierno",
+          "category": "CDMX",
           "borough": "",
           "location": "Ciudad de México (sin alcaldía identificada)",
           "local_url": "/noticias/?id=0b36d1c038f1a9eaba95&mes=2026-11",
           "brief": {
             "lead": "De acuerdo con Infobae, el titular publicado es: «Proponen aumentar de 40 a 60 metros cuadrados el tamaño de la vivienda social en la CDMX». El medio Infobae informa sobre una iniciativa o medida relacionada con vivienda pública en la capital. Su alcance, condiciones y estado de aprobación requieren consultar la publicación completa y fuentes oficiales.",
-            "context": "Las decisiones administrativas pueden influir en servicios, trámites y derechos; conviene conocer sus condiciones y a quiénes afectan.",
-            "pending": "Es indispensable consultar los acuerdos, comunicados o documentos oficiales antes de dar una medida por vigente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           },
           "photo": {
@@ -2246,6 +2246,45 @@
         "license": "CC0",
         "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
         "source": "https://commons.wikimedia.org/wiki/File:Equipo_de_trabajo_de_los_Bomberos_CDMX_IMG_3061_(44661911131).jpg"
+      }
+    },
+    {
+      "title": "Exjugadores de los 49ers conviven con aficionados en CDMX",
+      "description": "De acuerdo con Yahoo, el titular publicado es: «Exjugadores de los 49ers conviven con aficionados en CDMX». La información publicada por Yahoo aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNd3BsNGppQVM0M01QcUlmWjlFR3pQOHMxYlIwZ3g4cU1Ec1VfV2NuM2tJSUkxTy1MQVBjVThIMXhqLWdxa0xzcUZSYlZOd0w0Vk1RTUx1YUJncWZzSzRwT2kzUU9ranJqMXRHX1pDUHRRSDRrd2NRbXJZMHFCLXZtbHliMW5mS1ZXcjJWejR1Q0lVS1REdHc?oc=5",
+      "source": "Yahoo",
+      "date": "2026-11-16",
+      "published_at": "2026-11-16T22:13:51Z",
+      "category": "CDMX",
+      "borough": "",
+      "location": "Ciudad de México (sin alcaldía identificada)",
+      "local_url": "/noticias/?id=cdf1087bb829654677cd&mes=2026-11",
+      "brief": {
+        "lead": "De acuerdo con Yahoo, el titular publicado es: «Exjugadores de los 49ers conviven con aficionados en CDMX». La información publicada por Yahoo aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+        "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+        "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "contexto_teatro_angela_peralta",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/MX_TV_TEATRO_ANGELA_PERALTA_%2846329692434%29.jpg/1280px-MX_TV_TEATRO_ANGELA_PERALTA_%2846329692434%29.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+        "category": "CDMX",
+        "borough": "",
+        "topic": "Teatro Ángela Peralta, Polanco, alcaldía Miguel Hidalgo, Ciudad de México (fotografía de 2019; no corresponde al informe de 2026)",
+        "keywords": [
+          "Teatro Ángela Peralta",
+          "Polanco",
+          "Miguel Hidalgo",
+          "alcaldía Miguel Hidalgo",
+          "Mauricio Tabe",
+          "Quinto Informe de Gobierno",
+          "informe de gobierno"
+        ],
+        "author": "Secretaría de Cultura Ciudad de México",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:MX_TV_TEATRO_ANGELA_PERALTA_(46329692434).jpg"
       }
     },
     {
@@ -2949,6 +2988,27 @@
       "borough": "",
       "location": "Ciudad de México (sin alcaldía identificada)",
       "local_url": "/noticias/?id=46415f82799c8e8e11b9&mes=2026-11",
+      "brief": {
+        "lead": "De acuerdo con MILENIO, el titular publicado es: «Ruta del Maíz en CdMx: Paradas, horarios y costo de viajar en nueva red de transporte». La información publicada por MILENIO aborda un asunto que este portal clasifica como Gobierno. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+        "context": "Las decisiones administrativas pueden influir en servicios, trámites y derechos; conviene conocer sus condiciones y a quiénes afectan.",
+        "pending": "Es indispensable consultar los acuerdos, comunicados o documentos oficiales antes de dar una medida por vigente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      },
+      "photo": {
+        "id": "commons_112950009",
+        "kind": "representativa",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Ciudad_de_M%C3%A9xico_-_San_Miguel_Topilejo_0185.JPG/960px-Ciudad_de_M%C3%A9xico_-_San_Miguel_Topilejo_0185.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "category": "Alcaldías",
+        "borough": "",
+        "topic": "Ciudad de México - San Miguel Topilejo 0185",
+        "keywords": [
+          "Tlalpan Ciudad de México"
+        ],
+        "author": "Phyrexian",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Ciudad_de_M%C3%A9xico_-_San_Miguel_Topilejo_0185.JPG"
+      },
       "alternate_versions": [
         {
           "title": "Ruta del Maíz en CdMx: Paradas, horarios y costo de viajar en nueva red de transporte",
@@ -3016,28 +3076,7 @@
             "source": "https://commons.wikimedia.org/wiki/File:Ciudad_de_M%C3%A9xico_-_San_Miguel_Topilejo_0185.JPG"
           }
         }
-      ],
-      "brief": {
-        "lead": "De acuerdo con MILENIO, el titular publicado es: «Ruta del Maíz en CdMx: Paradas, horarios y costo de viajar en nueva red de transporte». La información publicada por MILENIO aborda un asunto que este portal clasifica como Gobierno. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-        "context": "Las decisiones administrativas pueden influir en servicios, trámites y derechos; conviene conocer sus condiciones y a quiénes afectan.",
-        "pending": "Es indispensable consultar los acuerdos, comunicados o documentos oficiales antes de dar una medida por vigente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
-      "photo": {
-        "id": "commons_112950009",
-        "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Ciudad_de_M%C3%A9xico_-_San_Miguel_Topilejo_0185.JPG/960px-Ciudad_de_M%C3%A9xico_-_San_Miguel_Topilejo_0185.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "category": "Alcaldías",
-        "borough": "",
-        "topic": "Ciudad de México - San Miguel Topilejo 0185",
-        "keywords": [
-          "Tlalpan Ciudad de México"
-        ],
-        "author": "Phyrexian",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Ciudad_de_M%C3%A9xico_-_San_Miguel_Topilejo_0185.JPG"
-      }
+      ]
     },
     {
       "title": "Coyoacán: cateos en Carmen Serdán y CTM Culhuacán",
