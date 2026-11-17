@@ -79,13 +79,15 @@ class LocalNewsTests(unittest.TestCase):
         assign_photos([result])
         self.assertEqual(result["photo"]["id"], "contexto_thalia_vina_1997")
         self.assertEqual(result["photo"]["author"], "Festival Viña del mar")
-        self.assertEqual(result["photo"]["license"], "CC BY-SA 4.0")
+        self.assertEqual(result["photo"]["license"], "CC BY 3.0")
+        self.assertEqual(result["photo"]["licenseUrl"], "https://creativecommons.org/licenses/by/3.0/")
+        self.assertTrue(result["photo"]["url"].startswith("https://upload.wikimedia.org/wikipedia/commons/"))
         self.assertIn("no corresponde al concierto con Karol G en CDMX", result["photo"]["topic"])
 
         page = render(result, article_id(result))
         self.assertIn(source_url, page)
         self.assertIn("Festival Viña del mar", page)
-        self.assertIn("CC BY-SA 4.0", page)
+        self.assertIn("CC BY 3.0", page)
         self.assertNotIn(rss_url, page)
 
     def test_infobae_karol_g_health_rumor_is_neutralized_and_linked_directly(self):
