@@ -87,7 +87,7 @@ class FototecaEditorialTests(unittest.TestCase):
         self.assertIn("/assets/fotos/indice-noticias-1100.json", gallery)
         self.assertIn("/assets/fotos/catalogo-editorial-1100.json", credits)
         self.assertIn("/assets/fotos/contexto-tematico.json", credits)
-        version = "20261116-america-femenil-photo-1853"
+        version = "20261117-acta-futurama-0324"
         self.assertIn("contexto-tematico.json?v=" + version, credits)
         credits_page = (ROOT / "creditos-fotograficos.html").read_text(encoding="utf-8")
         self.assertIn("creditos.js?v=" + version, credits_page)

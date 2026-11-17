@@ -83,6 +83,24 @@ class PublicSeoTests(unittest.TestCase):
         america_unverified_page = render(article, "0123456789abcdefabcd")
         self.assertNotIn(america_femenil + "?unverified=1", america_unverified_page)
 
+        maya = "https://mayacomunicacion.com.mx/acta-de-nacimiento-cdmx/"
+        self.assertIn(maya, VERIFIED_SOURCE_URLS)
+        article["source"] = "Maya Comunicación"
+        article["local_url"] = "/noticias/?id=c14b74cd151a0ac26343&mes=2026-11"
+        article["source_url"] = maya
+        self.assertIn(maya, render(article, "c14b74cd151a0ac26343"))
+        article["source_url"] = maya + "?unverified=1"
+        self.assertNotIn(maya + "?unverified=1", render(article, "c14b74cd151a0ac26343"))
+
+        depeche = "https://www.infobae.com/mexico/2026/11/17/concierto-tributo-a-depeche-mode-en-la-cdmx-horario-fecha-y-sede-del-evento-gratuito/"
+        self.assertIn(depeche, VERIFIED_SOURCE_URLS)
+        article["source"] = "Infobae"
+        article["local_url"] = "/noticias/?id=5946c764181ff026c127&mes=2026-11"
+        article["source_url"] = depeche
+        self.assertIn(depeche, render(article, "5946c764181ff026c127"))
+        article["source_url"] = depeche + "?unverified=1"
+        self.assertNotIn(depeche + "?unverified=1", render(article, "5946c764181ff026c127"))
+
         untrusted = "https://www.infobae.com/mexico/2026/11/15/otro-articulo-no-verificado/"
         article["source_url"] = untrusted
         page = render(article, "0123456789abcdefabcd")

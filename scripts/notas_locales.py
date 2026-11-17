@@ -99,6 +99,10 @@ YAHOO_GARBAGE_ZOCALO_SOURCE_URL = "https://es-us.noticias.yahoo.com/garbage-conq
 TV_AZTECA_REVOLUCION_DESFILE_SOURCE_URL = "https://www.tvazteca.com/aztecanoticias/desfile-del-20-de-noviembre-en-cdmx-ruta-horarios-y-alternativas-viales-por-cortes-a-la-circulacion/?outputType=amp"
 
 
+MAYA_ACTA_NACIMIENTO_SOURCE_URL = "https://mayacomunicacion.com.mx/acta-de-nacimiento-cdmx/"
+INFOBAE_DEPECHE_MODE_FUTURAMA_SOURCE_URL = "https://www.infobae.com/mexico/2026/11/17/concierto-tributo-a-depeche-mode-en-la-cdmx-horario-fecha-y-sede-del-evento-gratuito/"
+
+
 def is_esto_49ers_fan_story(article):
     """Identifica la nota de ESTO sobre aficionados de los 49ers reunidos en CDMX."""
     title = _photo_fold(article.get("title"))
@@ -473,6 +477,28 @@ def is_debate_ruta_maiz_topilejo(article):
         and "ruta del maiz" in title
         and "topilejo" in title
         and "la joya" in title
+    )
+
+
+def is_maya_acta_nacimiento_story(article):
+    """Identifica la guía de Maya Comunicación sobre el acta de nacimiento de CDMX."""
+    title = _photo_fold(article.get("title"))
+    return (
+        str(article.get("date") or "")[:10] == "2026-11-16"
+        and _photo_fold(article.get("source")) == "maya comunicacion"
+        and "acta de nacimiento cdmx 2026" in title
+        and "como sacarla en linea" in title
+    )
+
+
+def is_infobae_depeche_mode_story(article):
+    """Identifica el tributo gratuito a Depeche Mode anunciado en Centro Cultural Futurama."""
+    title = _photo_fold(article.get("title"))
+    return (
+        str(article.get("date") or "")[:10] == "2026-11-16"
+        and _photo_fold(article.get("source")) == "infobae"
+        and "concierto tributo a depeche mode" in title
+        and "evento gratuito" in title
     )
 
 
@@ -1194,6 +1220,55 @@ def summarize(article):
     category=str(article.get("category") or "CDMX")
     theme=TAGS.get(category,TAGS["CDMX"])
     folded_title=_photo_fold(title)
+    if is_maya_acta_nacimiento_story(article):
+        return {
+            "lead": (
+                "Maya Comunicación informó el 16 de noviembre que la copia certificada de un acta de nacimiento "
+                "registrada en la Ciudad de México cuesta 98 pesos en 2026. La nota explica que puede tramitarse "
+                "en línea mediante Llave CDMX o la Plataforma Nacional del Registro Civil, y también imprimirse "
+                "en kioscos de Tesorería."
+            ),
+            "context": (
+                "La Secretaría de Administración y Finanzas de CDMX publica 98 pesos para copias certificadas "
+                "de actas y para la búsqueda de datos registrales. El portal oficial del Registro Civil permite "
+                "iniciar la solicitud de una copia certificada."
+            ),
+            "pending": (
+                "La cuota de 98 pesos corresponde a registros de la Ciudad de México; si el acta se registró "
+                "en otra entidad, el costo puede ser distinto. Verifica el trámite y el tarifario oficial antes "
+                "de pagar o ingresar datos personales."
+            ),
+            "method": (
+                "Síntesis editorial propia basada en Maya Comunicación, 16 de noviembre de 2026: "
+                + MAYA_ACTA_NACIMIENTO_SOURCE_URL
+                + ". El costo se contrastó con el tarifario oficial de la Secretaría de Administración y Finanzas "
+                "de CDMX (clave 54), consultado el 16 de noviembre: "
+                "https://data.finanzas.cdmx.gob.mx/formato_lc/conceptos/registro_civil/grupo."
+            ),
+        }
+    if is_infobae_depeche_mode_story(article):
+        return {
+            "lead": (
+                "Infobae informó el 17 de noviembre que el Centro Cultural Futurama, en Lindavista, Gustavo A. "
+                "Madero, recibirá el miércoles 25 de noviembre de 2026 a las 18:00 h un concierto gratuito de "
+                "Hysterika, banda tributo a Depeche Mode, dentro de la Noche de Museos."
+            ),
+            "context": (
+                "La entrada será libre, sin registro ni reservación, por orden de llegada y para todas las edades. "
+                "Infobae reporta un aforo máximo de 150 personas. El recinto se ubica en Otavalo 7, esquina con "
+                "avenida Instituto Politécnico Nacional; la estación Lindavista de la Línea 6 del Metro es la más cercana."
+            ),
+            "pending": (
+                "El concierto es un evento futuro respecto de la publicación del 17 de noviembre. El aforo es limitado "
+                "y la disponibilidad puede cambiar; confirma la cartelera y el acceso con el Centro Cultural Futurama "
+                "antes de trasladarte."
+            ),
+            "method": (
+                "Síntesis editorial propia basada en Infobae, 17 de noviembre de 2026: "
+                + INFOBAE_DEPECHE_MODE_FUTURAMA_SOURCE_URL
+                + ". La fotografía asignada muestra el recinto como contexto; no documenta el concierto ni a la banda."
+            ),
+        }
     if is_capital_cdmx_cuajimalpa_crime_stats(article):
         return {
             "lead": (
@@ -3180,6 +3255,10 @@ def _photo_score(article, photo):
     topic=re.sub(r"\bno\b[^;.)]*", "", topic)
     keywords=_photo_fold(" ".join(str(x) for x in photo.get("keywords",[])))
     context=topic+" "+keywords
+    if is_maya_acta_nacimiento_story(article):
+        return 5000 if photo.get("id") == "contexto_registro_civil_cdmx_2022" else -10000
+    if is_infobae_depeche_mode_story(article):
+        return 5000 if photo.get("id") == "contexto_centro_cultural_futurama_2026" else -10000
     if is_infobae_air_quality_report(article) or is_reporte_indigo_contingency_story(article):
         return 5000 if photo.get("id") == "contexto_imeca_calidad_aire_cdmx" else -10000
     if is_infobae_america_femenil_pumas_semifinal_story(article):
