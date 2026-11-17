@@ -56,6 +56,40 @@ class LocalNewsTests(unittest.TestCase):
         self.assertIn(source_url, page)
         self.assertNotIn(rss_url, page)
 
+    def test_infobae_laura_zapata_thalia_uses_direct_source_summary_and_relevant_archival_photo(self):
+        source_url = "https://www.infobae.com/mexico/2026/11/17/laura-zapata-defiende-a-thalia-tras-criticas-por-cantar-con-karol-g-en-cdmx/"
+        rss_url = "https://news.google.com/rss/articles/laura-zapata-thalia-20261117"
+        result = standardize({
+            "title": "Laura Zapata defiende a Thalía tras críticas por cantar con Karol G en CDMX",
+            "url": rss_url,
+            "source": "Infobae",
+            "date": "2026-11-17",
+            "published_at": "2026-11-17T13:01:00Z",
+            "category": "Cultura",
+        })
+        self.assertIsNotNone(result)
+        self.assertEqual(result["source_url"], source_url)
+        self.assertEqual(result["category"], "Cultura")
+        self.assertEqual(result["borough"], "Iztacalco")
+        self.assertIn("Estadio GNP Seguros", result["location"])
+        self.assertIn("tres canciones", result["brief"]["lead"])
+        self.assertIn("65,000", result["brief"]["context"])
+        self.assertIn("no documenta el concierto de CDMX", result["brief"]["method"])
+
+        assign_photos([result])
+        self.assertEqual(result["photo"]["id"], "contexto_thalia_vina_1997")
+        self.assertEqual(result["photo"]["author"], "Festival Viña del mar")
+        self.assertEqual(result["photo"]["license"], "CC BY 3.0")
+        self.assertEqual(result["photo"]["licenseUrl"], "https://creativecommons.org/licenses/by/3.0/")
+        self.assertTrue(result["photo"]["url"].startswith("https://upload.wikimedia.org/wikipedia/commons/"))
+        self.assertIn("no corresponde al concierto con Karol G en CDMX", result["photo"]["topic"])
+
+        page = render(result, article_id(result))
+        self.assertIn(source_url, page)
+        self.assertIn("Festival Viña del mar", page)
+        self.assertIn("CC BY 3.0", page)
+        self.assertNotIn(rss_url, page)
+
     def test_infobae_karol_g_health_rumor_is_neutralized_and_linked_directly(self):
         source_url = "https://www.infobae.com/mexico/2026/11/16/que-le-paso-a-karol-g-filtran-la-supuesta-enfermedad-que-la-habria-obligado-a-posponer-su-concierto-en-la-cdmx/"
         result = standardize({

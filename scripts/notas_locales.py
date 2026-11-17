@@ -103,6 +103,7 @@ MAYA_ACTA_NACIMIENTO_SOURCE_URL = "https://mayacomunicacion.com.mx/acta-de-nacim
 SIN_EMBARGO_HOMBRES_BIENESTAR_SOURCE_URL = "https://www.sinembargo.mx/4904729/pension-hombres-bienestar-cdmx-cuando-cierra-el-registro-de-nuevos-beneficiarios/"
 MAYA_SECURITY_MEETING_SOURCE_URL = "https://mayacomunicacion.com.mx/cdmx-se-suma-al-frente-interestatal-de-seguridad-del-centro-del-pais/"
 INFOBAE_DEPECHE_MODE_FUTURAMA_SOURCE_URL = "https://www.infobae.com/mexico/2026/11/17/concierto-tributo-a-depeche-mode-en-la-cdmx-horario-fecha-y-sede-del-evento-gratuito/"
+INFOBAE_LAURA_ZAPATA_THALIA_SOURCE_URL = "https://www.infobae.com/mexico/2026/11/17/laura-zapata-defiende-a-thalia-tras-criticas-por-cantar-con-karol-g-en-cdmx/"
 
 
 def is_esto_49ers_fan_story(article):
@@ -283,6 +284,19 @@ def is_infobae_karol_g_guest_prediction_story(article):
         and "tercera fecha" in title
         and "thalia" in title
         and "belinda" in title
+    )
+
+
+def is_infobae_laura_zapata_thalia_story(article):
+    """Identifica la nota de Infobae sobre la defensa de Laura Zapata a Thalía."""
+    title = _photo_fold(article.get("title"))
+    return (
+        str(article.get("date") or "") == "2026-11-17"
+        and _photo_fold(article.get("source")) == "infobae"
+        and "laura zapata" in title
+        and "thalia" in title
+        and "karol g" in title
+        and "defiende" in title
     )
 
 
@@ -1520,6 +1534,30 @@ def summarize(article):
                 + DEBATE_GALLINAS_PONEDORAS_SOURCE_URL
                 + ". Los detalles se atribuyen al medio. La fotografía muestra un gallinero artesanal de Xochimilco "
                 "de 2018; no documenta la entrega de aves del programa de 2026."
+            ),
+        }
+    if is_infobae_laura_zapata_thalia_story(article):
+        return {
+            "lead": (
+                "Infobae informó el 17 de noviembre de 2026 que Laura Zapata respaldó a su hermana Thalía "
+                "tras las críticas por su aparición como invitada de Karol G en el Estadio GNP Seguros de CDMX. "
+                "La nota señala que ambas interpretaron tres canciones durante la primera de las tres fechas "
+                "de la colombiana en la capital."
+            ),
+            "context": (
+                "El medio ubicó el concierto en la alcaldía Iztacalco y reportó una asistencia de 65,000 personas. "
+                "Thalía interpretó “Piel morena”, “Amor a la mexicana” y “¿A quién le importa?” junto a Karol G."
+            ),
+            "pending": (
+                "La nota atribuye las declaraciones a un encuentro de Laura Zapata con reporteros y señala que "
+                "la actriz no había visto las imágenes de la presentación. No se añaden valoraciones ni declaraciones "
+                "que el artículo no recoge."
+            ),
+            "method": (
+                "Síntesis editorial basada en la publicación original de Infobae del 17 de noviembre de 2026: "
+                + INFOBAE_LAURA_ZAPATA_THALIA_SOURCE_URL
+                + ". Los detalles del concierto y la asistencia se atribuyen al medio. La fotografía muestra a "
+                "Thalía en el Festival de Viña del Mar de 1997; es de archivo y no documenta el concierto de CDMX."
             ),
         }
     if is_infobae_karol_g_guest_prediction_story(article):
@@ -3651,6 +3689,8 @@ def _photo_score(article, photo):
         return 5000 if photo.get("id") == "commons_149171771" else -10000
     if is_tvazteca_hoy_no_circula_bridge_story(article):
         return 5000 if photo.get("id") == "contexto_trafico_eje_central" else -10000
+    if is_infobae_laura_zapata_thalia_story(article):
+        return 5000 if photo.get("id") == "contexto_thalia_vina_1997" else -10000
     if is_infobae_karol_g_guest_prediction_story(article):
         return 5000 if photo.get("id") == "contexto_concierto_foro_sol_2023" else -10000
     if is_infobae_karol_g_health_story(article):
