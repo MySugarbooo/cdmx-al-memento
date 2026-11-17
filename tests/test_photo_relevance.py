@@ -5058,3 +5058,60 @@ class November17AdditionalEditorialPhotoCorrectionsTests(unittest.TestCase):
                 topic = str(photo.get("topic") or "")
                 with self.subTest(catalog=catalog.name, photo_id=photo.get("id")):
                     self.assertLessEqual(len(topic), 150)
+
+class RafaelCastroBasketballPhotoRegressionTests(unittest.TestCase):
+    def test_as_mexico_rafael_castro_uses_direct_source_summary_and_relevant_photo(self):
+        article = news.standardize({
+            "title": "Rafael Castro asciende de Capitanes CDMX a los Atlanta Hawks de la NBA",
+            "url": "https://news.google.com/rss/articles/rafael-castro-capitanes-hawks-20261116",
+            "source": "AS México",
+            "date": "2026-11-16",
+            "published_at": "2026-11-17T05:53:20Z",
+            "category": "CDMX",
+        })
+        self.assertIsNotNone(article)
+        self.assertTrue(photos.is_rafael_castro_capitanes_hawks_story(article))
+        self.assertEqual(
+            article["source_url"],
+            photos.RAFAEL_CASTRO_CAPITANES_HAWKS_SOURCE_URL,
+        )
+        self.assertIn("pívot dominicano Rafael Castro", article["brief"]["lead"])
+        self.assertIn("Atlanta Hawks", article["brief"]["lead"])
+        self.assertIn("contrato de dos vías", article["brief"]["lead"])
+        self.assertIn("siete partidos", article["brief"]["context"])
+        self.assertIn("no confirma una fecha de debut", article["brief"]["pending"])
+        self.assertIn(
+            photos.RAFAEL_CASTRO_CAPITANES_HAWKS_SOURCE_URL,
+            article["brief"]["method"],
+        )
+
+        pool = {photo["id"]: deepcopy(photo) for photo in photos._pool()}
+        landmark = pool["commons_66033711"]
+        basketball = pool["contexto_baloncesto_cdmx_rafael_castro_2026"]
+        self.assertLess(_photo_score(article, landmark), 0)
+        self.assertEqual(_photo_score(article, basketball), 5000)
+
+        article["photo"] = landmark
+        with patch.object(
+            photos, "_pool", return_value=[landmark, basketball]
+        ), patch.object(photos, "_load", return_value=[]):
+            assign_photos([article])
+
+        self.assertEqual(
+            article["photo"]["id"],
+            "contexto_baloncesto_cdmx_rafael_castro_2026",
+        )
+        self.assertEqual(article["photo"]["author"], "Daniel Case")
+        self.assertEqual(article["photo"]["license"], "CC BY-SA 3.0")
+        self.assertEqual(
+            article["photo"]["licenseUrl"],
+            "https://creativecommons.org/licenses/by-sa/3.0/",
+        )
+        self.assertEqual(
+            article["photo"]["source"],
+            "https://commons.wikimedia.org/wiki/File:Basketball_court_and_Humanities_Tower,_Ciudad_Universitaria,_Mexico_City.jpg",
+        )
+        self.assertIn("foto representativa", article["photo"]["topic"])
+        self.assertIn("no muestra a Rafael Castro", article["photo"]["topic"])
+        self.assertLessEqual(len(article["photo"]["topic"]), 150)
+
