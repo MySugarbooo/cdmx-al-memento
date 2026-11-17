@@ -73,6 +73,16 @@ class PublicSeoTests(unittest.TestCase):
         debate_unverified_page = render(article, "0123456789abcdefabcd")
         self.assertNotIn(debate + "?unverified=1", debate_unverified_page)
 
+        america_femenil = "https://www.infobae.com/mexico/deportes/2026/11/16/america-femenil-se-saldria-de-la-cdmx-para-las-semifinales-ante-pumas-del-apertura-2026/"
+        self.assertIn(america_femenil, VERIFIED_SOURCE_URLS)
+        article["source"] = "Infobae"
+        article["source_url"] = america_femenil
+        america_page = render(article, "0123456789abcdefabcd")
+        self.assertIn(america_femenil, america_page)
+        article["source_url"] = america_femenil + "?unverified=1"
+        america_unverified_page = render(article, "0123456789abcdefabcd")
+        self.assertNotIn(america_femenil + "?unverified=1", america_unverified_page)
+
         untrusted = "https://www.infobae.com/mexico/2026/11/15/otro-articulo-no-verificado/"
         article["source_url"] = untrusted
         page = render(article, "0123456789abcdefabcd")
