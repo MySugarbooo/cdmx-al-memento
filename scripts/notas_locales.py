@@ -1568,7 +1568,7 @@ def summarize(article):
             "method": (
                 "Síntesis editorial basada en la publicación original de Vox Populi del 17 de noviembre "
                 "de 2026: " + VOXPOPULI_BELINDA_KAROL_G_SOURCE_URL
-                + ". La imagen muestra a Belinda en 2021; es de archivo y no documenta el concierto "
+                + ". La imagen muestra a Belinda en 2021; es una foto de archivo y no documenta el concierto "
                 "del 14 de noviembre de 2026."
             ),
         }
