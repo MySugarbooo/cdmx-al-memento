@@ -4747,3 +4747,38 @@ class CapitalCdmxColonyCrimeStatsPhotoRegressionTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class InfobaeAmericaFemenilPhotoRegressionTests(unittest.TestCase):
+    def test_america_femenil_semifinal_uses_stadium_photo_not_alameda_fountain(self):
+        article = news.standardize({
+            "title": "América Femenil se saldría de la CDMX para las semifinales ante Pumas del Apertura 2026",
+            "url": "https://news.google.com/rss/articles/america-femenil-pumas-semifinal-20261116",
+            "source": "Infobae",
+            "date": "2026-11-16",
+            "published_at": "2026-11-16T19:30:00Z",
+            "category": "CDMX",
+        })
+        self.assertIsNotNone(article)
+        self.assertTrue(photos.is_infobae_america_femenil_pumas_semifinal_story(article))
+
+        pool = {photo["id"]: photo for photo in photos._pool()}
+        unrelated = deepcopy(pool["commons_30224225"])
+        preferred_id = "contexto_estadio_ciudad_deportes_america_femenil_2025"
+        preferred = deepcopy(pool[preferred_id])
+        article["photo"] = unrelated
+
+        self.assertLess(_photo_score(article, unrelated), 0)
+        self.assertEqual(_photo_score(article, preferred), 5000)
+        with patch.object(photos, "_pool", return_value=[unrelated, preferred]), patch.object(
+            photos, "_load", return_value=[]
+        ):
+            assign_photos([article])
+
+        self.assertEqual(article["photo"]["id"], preferred_id)
+        self.assertEqual(article["photo"]["author"], "ProtoplasmaKid")
+        self.assertEqual(article["photo"]["license"], "CC BY-SA 4.0")
+        self.assertIn("Clausura 2025", article["photo"]["topic"])
+        self.assertIn("no muestra la semifinal 2026", article["photo"]["topic"].lower())
+        self.assertTrue(article["photo"]["source"].startswith("https://commons.wikimedia.org/wiki/File:"))
+        self.assertTrue(article["photo"]["licenseUrl"].startswith("https://creativecommons.org/"))
