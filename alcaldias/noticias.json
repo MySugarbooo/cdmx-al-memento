@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-17 13:06 UTC",
+  "updated": "2026-11-17 13:33 UTC",
   "boroughs": [
     {
       "name": "La Magdalena Contreras",
@@ -2859,6 +2859,27 @@
           "borough": "Azcapotzalco",
           "location": "Azcapotzalco (mencionada en el titular)",
           "local_url": "/noticias/?id=ef72350d2934c7bb4500&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con Capital CDMX, el titular publicado es: «Las colonias más peligrosas de Azcapotzalco: dónde se denuncian robos». La información publicada por Capital CDMX aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "archivo_seguridad_005",
+            "kind": "representativa",
+            "url": "/assets/fotos/archivo_seguridad_005.jpg",
+            "category": "Seguridad",
+            "borough": "",
+            "topic": "Jeep policia cdmx",
+            "keywords": [
+              "Seguridad"
+            ],
+            "author": "Gobierno de la Ciudad de México",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Jeep_policia_cdmx.jpg"
+          },
           "alternate_versions": [
             {
               "title": "Robos y delitos en colonias de Azcapotzalco",
@@ -2893,28 +2914,7 @@
                 "source": "https://commons.wikimedia.org/wiki/File:Jeep_policia_cdmx.jpg"
               }
             }
-          ],
-          "brief": {
-            "lead": "De acuerdo con Capital CDMX, el titular publicado es: «Las colonias más peligrosas de Azcapotzalco: dónde se denuncian robos». La información publicada por Capital CDMX aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
-            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "archivo_seguridad_005",
-            "kind": "representativa",
-            "url": "/assets/fotos/archivo_seguridad_005.jpg",
-            "category": "Seguridad",
-            "borough": "",
-            "topic": "Jeep policia cdmx",
-            "keywords": [
-              "Seguridad"
-            ],
-            "author": "Gobierno de la Ciudad de México",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Jeep_policia_cdmx.jpg"
-          }
+          ]
         },
         {
           "title": "Azcapotzalco: El Rosario registra 223 denuncias en 2024",
@@ -5112,36 +5112,78 @@
       "articles": [
         {
           "title": "Video: Momento Exacto en que Hombre Incendia Motocicletas en Coyoacán, CDMX",
-          "description": "De acuerdo con N+, el titular publicado es: «Video: Momento Exacto en que Hombre Incendia Motocicletas en Coyoacán, CDMX». La información publicada por N+ aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "description": "N+ informó el 17 de noviembre de 2026 que cámaras de videovigilancia captaron a un hombre prendiendo fuego a motocicletas estacionadas en la colonia Pedregal de Santo Domingo, alcaldía Coyoacán. El fuego alcanzó una segunda motocicleta y dañó una camioneta cercana.",
           "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPeHVHdlpJOC1paUlwdnVjaTMtV05tQnBTbkZEWFdNTTRFb1FIWVVzaHNkSHVKeFV4a2R1V2t4V2pBaHlvTGVYREgtWHF5VjR1cjlFNnE5Wk5fV29OM0NCbmNfNWFIN2NzMjh2dVVSSnJaeU51bTRvVVVHcHlpUGwxZjUxYk9XeWdmeU95NFRwLUFrSVZkMl8zMndVZFBoSTdtWlZMRWY4ZkdiczVqcDR2akxrLWFjZDhoWUtNLXM0SFZyOG8?oc=5",
           "source": "N+",
           "date": "2026-11-17",
           "published_at": "2026-11-17T12:58:52Z",
-          "category": "CDMX",
+          "category": "Seguridad",
           "borough": "Coyoacán",
-          "location": "Coyoacán (mencionada en el titular)",
+          "location": "Colonia Pedregal de Santo Domingo, calle Aztahuacan, alcaldía Coyoacán, Ciudad de México",
           "local_url": "/noticias/?id=e08a61cf2ae40f248193&mes=2026-11",
           "brief": {
-            "lead": "De acuerdo con N+, el titular publicado es: «Video: Momento Exacto en que Hombre Incendia Motocicletas en Coyoacán, CDMX». La información publicada por N+ aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+            "lead": "N+ informó el 17 de noviembre de 2026 que cámaras de videovigilancia captaron a un hombre prendiendo fuego a motocicletas estacionadas en la colonia Pedregal de Santo Domingo, alcaldía Coyoacán. El fuego alcanzó una segunda motocicleta y dañó una camioneta cercana.",
+            "context": "La nota ubica los hechos en la calle Aztahuacan. Señala que acudieron Bomberos, ERUM y policías capitalinos; el Heroico Cuerpo de Bomberos reportó dos motocicletas quemadas en su totalidad y daños al motor de un vehículo particular.",
+            "pending": "N+ informó que no hubo personas lesionadas. El líquido que el hombre roció se describe como presunta gasolina; la publicación no confirma su composición ni reporta detenciones.",
+            "method": "Síntesis editorial propia basada en N+, 17 de noviembre de 2026: https://www.nmas.com.mx/ciudad-de-mexico/seguridad/video-momento-exacto-en-que-hombre-incendia-motocicletas-en-coyoacan-cdmx/. La imagen asignada es una fotografía de archivo de una motocicleta de apoyo de una brigada voluntaria en el Zócalo (2017); no documenta el incendio de Coyoacán."
           },
+          "source_url": "https://www.nmas.com.mx/ciudad-de-mexico/seguridad/video-momento-exacto-en-que-hombre-incendia-motocicletas-en-coyoacan-cdmx/",
           "photo": {
-            "id": "commons_88843613",
+            "id": "contexto_motocicleta_zocalo_brigada_2017",
             "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Casa_Gonz%C3%A1lez_de_Cos%C3%ADo%2C_Coyoac%C3%A1n%2C_Ciudad_de_M%C3%A9xico.jpg/960px-Casa_Gonz%C3%A1lez_de_Cos%C3%ADo%2C_Coyoac%C3%A1n%2C_Ciudad_de_M%C3%A9xico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Ayuda_tras_el_Terremoto_de_Puebla_de_2017_-_Ciudad_de_M%C3%A9xico_-_3.jpg/960px-Ayuda_tras_el_Terremoto_de_Puebla_de_2017_-_Ciudad_de_M%C3%A9xico_-_3.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
             "category": "CDMX",
             "borough": "",
-            "topic": "Casa González de Cosío, Coyoacán, Ciudad de México",
+            "topic": "Motocicleta de apoyo de una brigada voluntaria en el Zócalo de CDMX tras el sismo de 2017; foto de archivo.",
             "keywords": [
-              "CDMX"
+              "motocicleta",
+              "moto",
+              "Zócalo",
+              "brigada voluntaria",
+              "sismo 2017",
+              "Ciudad de México"
             ],
             "author": "ProtoplasmaKid",
             "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Casa_Gonz%C3%A1lez_de_Cos%C3%ADo,_Coyoac%C3%A1n,_Ciudad_de_M%C3%A9xico.jpg"
-          }
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "source": "https://commons.wikimedia.org/wiki/File:Ayuda_tras_el_Terremoto_de_Puebla_de_2017_-_Ciudad_de_M%C3%A9xico_-_3.jpg"
+          },
+          "alternate_versions": [
+            {
+              "title": "Video: Momento Exacto en que Hombre Incendia Motocicletas en Coyoacán, CDMX",
+              "description": "N+ informó el 17 de noviembre de 2026 que cámaras de videovigilancia captaron a un hombre prendiendo fuego a motocicletas estacionadas en la colonia Pedregal de Santo Domingo, alcaldía Coyoacán. El fuego alcanzó una segunda motocicleta y dañó una camioneta cercana.",
+              "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPeHVHdlpJOC1paUlwdnVjaTMtV05tQnBTbkZEWFdNTTRFb1FIWVVzaHNkSHVKeFV4a2R1V2t4V2pBaHlvTGVYREgtWHF5VjR1cjlFNnE5Wk5fV29OM0NCbmNfNWFIN2NzMjh2dVVSSnJaeU51bTRvVVVHcHlpUGwxZjUxYk9XeWdmeU95NFRwLUFrSVZkMl8zMndVZFBoSTdtWlZMRWY4ZkdiczVqcDR2akxrLWFjZDhoWUtNLXM0SFZyOG8?oc=5",
+              "source": "N+",
+              "date": "2026-11-17",
+              "published_at": "2026-11-17T12:58:52Z",
+              "category": "Seguridad",
+              "borough": "Coyoacán",
+              "location": "Colonia Pedregal de Santo Domingo, calle Aztahuacan, alcaldía Coyoacán, Ciudad de México",
+              "local_url": "/noticias/?id=e08a61cf2ae40f248193&mes=2026-11",
+              "source_url": "https://www.nmas.com.mx/ciudad-de-mexico/seguridad/video-momento-exacto-en-que-hombre-incendia-motocicletas-en-coyoacan-cdmx/",
+              "brief": {
+                "lead": "N+ informó el 17 de noviembre de 2026 que cámaras de videovigilancia captaron a un hombre prendiendo fuego a motocicletas estacionadas en la colonia Pedregal de Santo Domingo, alcaldía Coyoacán. El fuego alcanzó una segunda motocicleta y dañó una camioneta cercana.",
+                "context": "La nota ubica los hechos en la calle Aztahuacan. Señala que acudieron Bomberos, ERUM y policías capitalinos; el Heroico Cuerpo de Bomberos reportó dos motocicletas quemadas en su totalidad y daños al motor de un vehículo particular.",
+                "pending": "N+ informó que no hubo personas lesionadas. El líquido que el hombre roció se describe como presunta gasolina; la publicación no confirma su composición ni reporta detenciones.",
+                "method": "Síntesis editorial propia basada en N+, 17 de noviembre de 2026: https://www.nmas.com.mx/ciudad-de-mexico/seguridad/video-momento-exacto-en-que-hombre-incendia-motocicletas-en-coyoacan-cdmx/. La imagen asignada es una fotografía de archivo de una motocicleta de apoyo de una brigada voluntaria en el Zócalo (2017); no documenta el incendio de Coyoacán."
+              },
+              "photo": {
+                "id": "commons_88843613",
+                "kind": "representativa",
+                "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Casa_Gonz%C3%A1lez_de_Cos%C3%ADo%2C_Coyoac%C3%A1n%2C_Ciudad_de_M%C3%A9xico.jpg/960px-Casa_Gonz%C3%A1lez_de_Cos%C3%ADo%2C_Coyoac%C3%A1n%2C_Ciudad_de_M%C3%A9xico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+                "category": "CDMX",
+                "borough": "",
+                "topic": "Casa González de Cosío, Coyoacán, Ciudad de México",
+                "keywords": [
+                  "CDMX"
+                ],
+                "author": "ProtoplasmaKid",
+                "license": "CC BY-SA 4.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "https://commons.wikimedia.org/wiki/File:Casa_Gonz%C3%A1lez_de_Cos%C3%ADo,_Coyoac%C3%A1n,_Ciudad_de_M%C3%A9xico.jpg"
+              }
+            }
+          ]
         },
         {
           "title": "Sujetos roban tienda departamental en Coyoacán; detienen a un sospechoso y le incautan un martillo",
@@ -5455,27 +5497,6 @@
           "borough": "Coyoacán",
           "location": "Coyoacán (mencionada en el titular)",
           "local_url": "/noticias/?id=66f8effe9fb01f17f8db&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con Milenio, el titular publicado es: «Reportan robo en Sanborns en Coyoacán, policías buscan a responsables». La información publicada por Milenio aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
-            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "archivo_seguridad_002",
-            "kind": "representativa",
-            "url": "/assets/fotos/archivo_seguridad_002.jpg",
-            "category": "Seguridad",
-            "borough": "",
-            "topic": "Patrulla vecinal",
-            "keywords": [
-              "Seguridad"
-            ],
-            "author": "Daniel Yonka",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Patrulla_vecinal.jpg"
-          },
           "alternate_versions": [
             {
               "title": "Reportan robo en Sanborns en Coyoacán, policías buscan a responsables",
@@ -5510,21 +5531,9 @@
                 "source": "https://commons.wikimedia.org/wiki/File:Patrulla_vecinal.jpg"
               }
             }
-          ]
-        },
-        {
-          "title": "Asaltan Tienda Departamental en Coyoacán, CDMX: Esto se Sabe",
-          "description": "De acuerdo con N+, el titular publicado es: «Asaltan Tienda Departamental en Coyoacán, CDMX: Esto se Sabe». Una nota de N+ comunica un caso relacionado con una detención o una presunta conducta delictiva en Coyoacán. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
-          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOZUVLWlZkWXhhQXZ0bE1rTlo4WUlnMEZkcUJ4dUxFN1FRN0c2cTEzMThVY3VKdExLSVpWUkRvMkxwN3VRYXB4RnNxMlVXUzZDcXNqSC1EN3hHdWF4NldUQUhUT3lEdmRINW9QMnN1b1Vzb1JsT1BNdngtZWJ0UEZxcWswd0ZiZ3NIeFBxc1RKRlhGYkJSaUhDVTZyU2Vka3VONno0OHhNTEVjYS0wU2t6NmlhdkR0Um5pMktpcF83MGRfa2o1YkVaZjg5OTBYdw?oc=5",
-          "source": "N+",
-          "date": "2026-11-16",
-          "published_at": "2026-11-16T22:06:24Z",
-          "category": "Seguridad",
-          "borough": "Coyoacán",
-          "location": "Coyoacán (mencionada en el titular)",
-          "local_url": "/noticias/?id=bd7395200c777164c6ad&mes=2026-11",
+          ],
           "brief": {
-            "lead": "De acuerdo con N+, el titular publicado es: «Asaltan Tienda Departamental en Coyoacán, CDMX: Esto se Sabe». Una nota de N+ comunica un caso relacionado con una detención o una presunta conducta delictiva en Coyoacán. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
+            "lead": "De acuerdo con Milenio, el titular publicado es: «Reportan robo en Sanborns en Coyoacán, policías buscan a responsables». La información publicada por Milenio aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
             "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
             "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
@@ -5543,7 +5552,19 @@
             "license": "CC BY-SA 4.0",
             "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
             "source": "https://commons.wikimedia.org/wiki/File:Patrulla_vecinal.jpg"
-          },
+          }
+        },
+        {
+          "title": "Asaltan Tienda Departamental en Coyoacán, CDMX: Esto se Sabe",
+          "description": "De acuerdo con N+, el titular publicado es: «Asaltan Tienda Departamental en Coyoacán, CDMX: Esto se Sabe». Una nota de N+ comunica un caso relacionado con una detención o una presunta conducta delictiva en Coyoacán. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
+          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOZUVLWlZkWXhhQXZ0bE1rTlo4WUlnMEZkcUJ4dUxFN1FRN0c2cTEzMThVY3VKdExLSVpWUkRvMkxwN3VRYXB4RnNxMlVXUzZDcXNqSC1EN3hHdWF4NldUQUhUT3lEdmRINW9QMnN1b1Vzb1JsT1BNdngtZWJ0UEZxcWswd0ZiZ3NIeFBxc1RKRlhGYkJSaUhDVTZyU2Vka3VONno0OHhNTEVjYS0wU2t6NmlhdkR0Um5pMktpcF83MGRfa2o1YkVaZjg5OTBYdw?oc=5",
+          "source": "N+",
+          "date": "2026-11-16",
+          "published_at": "2026-11-16T22:06:24Z",
+          "category": "Seguridad",
+          "borough": "Coyoacán",
+          "location": "Coyoacán (mencionada en el titular)",
+          "local_url": "/noticias/?id=bd7395200c777164c6ad&mes=2026-11",
           "alternate_versions": [
             {
               "title": "Asaltan Tienda Departamental en Coyoacán, CDMX, Hoy 16 de Noviembre del 2026: Esto se Sabe",
@@ -5578,7 +5599,28 @@
                 "source": "https://commons.wikimedia.org/wiki/File:Patrulla_vecinal.jpg"
               }
             }
-          ]
+          ],
+          "brief": {
+            "lead": "De acuerdo con N+, el titular publicado es: «Asaltan Tienda Departamental en Coyoacán, CDMX: Esto se Sabe». Una nota de N+ comunica un caso relacionado con una detención o una presunta conducta delictiva en Coyoacán. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
+            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "archivo_seguridad_002",
+            "kind": "representativa",
+            "url": "/assets/fotos/archivo_seguridad_002.jpg",
+            "category": "Seguridad",
+            "borough": "",
+            "topic": "Patrulla vecinal",
+            "keywords": [
+              "Seguridad"
+            ],
+            "author": "Daniel Yonka",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Patrulla_vecinal.jpg"
+          }
         },
         {
           "title": "Coyoacán: cateos en Carmen Serdán y CTM Culhuacán",
@@ -7303,6 +7345,7 @@
             "pending": "El artículo invita a tomarse fotografías y anuncia que el mural servirá para una dinámica vinculada a boletos del Corona Capital 2026. Las condiciones y vigencia deben confirmarse en los canales oficiales de Sopitas; no se afirma que la obra sea una colaboración oficial con la banda.",
             "method": "Síntesis editorial basada en la publicación original de Sopitas.com del 16 de noviembre de 2026: https://www.sopitas.com/musica/mural-gorillaz-mexico/. La ubicación y la autoría del diseño se atribuyen al medio. La fotografía asignada es un mural urbano de archivo en el Centro de CDMX, no el mural de Gorillaz; las imágenes del reportaje original están acreditadas a Fernando Zavala."
           },
+          "source_url": "https://www.sopitas.com/musica/mural-gorillaz-mexico/",
           "photo": {
             "id": "contexto_mural_urbano_cdmx_2014",
             "kind": "representativa",
@@ -7325,7 +7368,6 @@
             "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
             "source": "https://commons.wikimedia.org/wiki/File:Mural_en_el_centro_de_la_Ciudad_de_M%C3%A9xico.jpg"
           },
-          "source_url": "https://www.sopitas.com/musica/mural-gorillaz-mexico/",
           "alternate_versions": [
             {
               "title": "Gorillaz x Sopitas: ¡Lánzate al mural que hicimos en la Ciudad de México!",
@@ -12754,8 +12796,47 @@
     },
     {
       "name": "Miguel Hidalgo",
-      "count": 110,
+      "count": 111,
       "articles": [
+        {
+          "title": "Señalan fábrica de elevadores para autos como causante de la explosión en Miguel Hidalgo",
+          "description": "De acuerdo con Imagen Televisión, el titular publicado es: «Señalan fábrica de elevadores para autos como causante de la explosión en Miguel Hidalgo». La información publicada por Imagen Televisión aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOdzd4TjNGMnNLSm5wQ0hFckF6bmhBSVo2WEV6Q01vSzZvVmlLWDlTaF9SMVoyLUl2bWc5endZT1BrSlNWUmRtYjYxNGdxdGtJekZ4V1FzdlZtOGZyVHFDaXNackIweDNvSXFXWk45cDVNMUk5aEYtai1HUEEwUU9qSWxJMmlHOGM3SUVGSV9iS2RZWHFsUENGZ1NlNGhyaDNWeFN3Z2pWU05PVVVWWXJuMFA2SlVoLVRMeG4xRWtNNFlCVHBQWExVNmZRZWZvcE0zY2p4dVlOaw?oc=5",
+          "source": "Imagen Televisión",
+          "date": "2026-11-17",
+          "published_at": "2026-11-17T06:45:04Z",
+          "category": "CDMX",
+          "borough": "Miguel Hidalgo",
+          "location": "Miguel Hidalgo (mencionada en el titular)",
+          "local_url": "/noticias/?id=e4466d34ed3d043982e4&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con Imagen Televisión, el titular publicado es: «Señalan fábrica de elevadores para autos como causante de la explosión en Miguel Hidalgo». La información publicada por Imagen Televisión aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "contexto_teatro_angela_peralta",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/MX_TV_TEATRO_ANGELA_PERALTA_%2846329692434%29.jpg/1280px-MX_TV_TEATRO_ANGELA_PERALTA_%2846329692434%29.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+            "category": "CDMX",
+            "borough": "",
+            "topic": "Teatro Ángela Peralta, Polanco, alcaldía Miguel Hidalgo, Ciudad de México (fotografía de 2019; no corresponde al informe de 2026)",
+            "keywords": [
+              "Teatro Ángela Peralta",
+              "Polanco",
+              "Miguel Hidalgo",
+              "alcaldía Miguel Hidalgo",
+              "Mauricio Tabe",
+              "Quinto Informe de Gobierno",
+              "informe de gobierno"
+            ],
+            "author": "Secretaría de Cultura Ciudad de México",
+            "license": "CC BY 2.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+            "source": "https://commons.wikimedia.org/wiki/File:MX_TV_TEATRO_ANGELA_PERALTA_(46329692434).jpg"
+          }
+        },
         {
           "title": "Explosión destruye 4 casas en Miguel Hidalgo y deja una muerta",
           "description": "De acuerdo con MILENIO, el titular publicado es: «Explosión destruye 4 casas en Miguel Hidalgo y deja una muerta». La información publicada por MILENIO aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -13927,39 +14008,6 @@
             "license": "CC0",
             "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
             "source": "https://commons.wikimedia.org/wiki/File:Audiorama_de_Chapultepec_1.jpg"
-          }
-        },
-        {
-          "title": "Tabe: Miguel Hidalgo es la segunda alcaldía más segura de CDMX",
-          "description": "De acuerdo con Imagen Radio, el titular publicado es: «Tabe: Miguel Hidalgo es la segunda alcaldía más segura de CDMX». La información publicada por Imagen Radio aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNOG1UQ3g0TGw2cVNjX19FSTJzYm9JM2hOUWRYdXVnU1ZQVUpjX0RnZmVrRUIxMlNCbVdsRTRQQTRxSzM3dkpCeFJqQThLRndMdUhjV1FLRmw4bGUzT3ZwMUcwdVNING9IdVBHSjVnaW9JdmVXaktPSUU0UkVPbTZpWHlfQTNmWVAwcGVMekRZclpWXzhOenpvQjhUMNIBoAFBVV95cUxNRWhUdkdyVExQeWpBbHltQjhscXFXTlpMUkJ5SmdxbWlEcmxkUkdEX3NPWFE0SElDQ1JWWHZXa193eDBab0RXLUxpSW50YXhMNXQtWFZaOGJKZHgwMzZyWnJBUWUzdk9DcDBqQ2RoSlJOeUxaTGlTMERUNU9WZDB2dEFxakl2ZnVLdnJWamFEWlhEaVIzZW5yMG9UcFpYRWZM?oc=5",
-          "source": "Imagen Radio",
-          "date": "2026-11-13",
-          "published_at": "2026-11-13T17:31:48Z",
-          "category": "Seguridad",
-          "borough": "Miguel Hidalgo",
-          "location": "Miguel Hidalgo (mencionada en el titular)",
-          "local_url": "/noticias/?id=e541e6e4cdac92dae60f&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con Imagen Radio, el titular publicado es: «Tabe: Miguel Hidalgo es la segunda alcaldía más segura de CDMX». La información publicada por Imagen Radio aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
-            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "commons_48005112",
-            "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Polic%C3%ADa_de_tr%C3%A1nsito_Ciudad_de_M%C3%A9xico_con_automovilistas.jpg/960px-Polic%C3%ADa_de_tr%C3%A1nsito_Ciudad_de_M%C3%A9xico_con_automovilistas.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "category": "Seguridad",
-            "borough": "",
-            "topic": "Policía de tránsito Ciudad de México con automovilistas",
-            "keywords": [
-              "Policía Ciudad de México"
-            ],
-            "author": "ProtoplasmaKid",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Polic%C3%ADa_de_tr%C3%A1nsito_Ciudad_de_M%C3%A9xico_con_automovilistas.jpg"
           }
         }
       ]
