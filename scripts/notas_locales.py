@@ -461,6 +461,41 @@ def is_tvazteca_revolucion_desfile_2026(article):
     )
 
 
+def is_maya_revolucion_desfile_2026(article):
+    """Identifica la guía de Maya Comunicación sobre el desfile cívico-militar del 20/11/2026."""
+    title = _photo_fold(article.get("title"))
+    return (
+        str(article.get("date") or "") == "2026-11-16"
+        and _photo_fold(article.get("source")) == "maya comunicacion"
+        and "desfile del 20 de noviembre" in title
+        and "ruta" in title
+        and "cierres" in title
+    )
+
+
+def is_diario_mexico_benito_juarez_detention_story(article):
+    """Identifica la detención reportada por Diario de México en Benito Juárez el 16/11/2026."""
+    title = _photo_fold(article.get("title"))
+    return (
+        _photo_fold(article.get("source")) == "diario de mexico"
+        and "detienen a sujeto" in title
+        and "benito juarez" in title
+        and "privar de la libertad" in title
+    )
+
+
+def is_rafael_castro_capitanes_nba_story(article):
+    """Identifica el call-up de Rafael Castro de Capitanes CDMX a Atlanta Hawks."""
+    title = _photo_fold(article.get("title"))
+    source = _photo_fold(article.get("source"))
+    return (
+        source in {"as mexico", "diario as", "as"}
+        and "rafael castro" in title
+        and "capitanes" in title
+        and "atlanta hawks" in title
+    )
+
+
 def is_capital_cdmx_tlalpan_colony_crime_stats(article):
     """Identifica el desglose de denuncias de Toriello Guerra y Santa Úrsula Xitla."""
     title = _photo_fold(article.get("title"))
@@ -3449,12 +3484,17 @@ def _photo_score(article, photo):
         return 5000 if photo.get("id") == "contexto_estadio_ciudad_deportes_america_femenil_2025" else -10000
     if is_billboard_karol_g_concert_story(article):
         return 5000 if photo.get("id") == "contexto_concierto_foro_sol_2023" else -10000
+    if is_diario_mexico_benito_juarez_detention_story(article):
+        return 5000 if photo.get("id") == "seguridad" else -10000
+    if is_rafael_castro_capitanes_nba_story(article):
+        return 5000 if photo.get("id") == "commons_58302191" else -10000
     # Las guías del desfile del 20 de noviembre recorren del Zócalo al Monumento;
     # usar el monumento conmemorativo, no fotografías del Desfile de Catrinas.
     if (
         is_revolucion_mexicana_desfile_2026(article)
         or is_sin_embargo_revolucion_desfile_2026(article)
         or is_tvazteca_revolucion_desfile_2026(article)
+        or is_maya_revolucion_desfile_2026(article)
     ):
         return 5000 if photo.get("id") == "contexto_monumento_revolucion_desfile_2026" else -10000
     if is_capital_cdmx_tlalpan_colony_crime_stats(article):
