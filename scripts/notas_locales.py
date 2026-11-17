@@ -100,6 +100,7 @@ TV_AZTECA_REVOLUCION_DESFILE_SOURCE_URL = "https://www.tvazteca.com/aztecanotici
 
 
 MAYA_ACTA_NACIMIENTO_SOURCE_URL = "https://mayacomunicacion.com.mx/acta-de-nacimiento-cdmx/"
+SIN_EMBARGO_HOMBRES_BIENESTAR_SOURCE_URL = "https://www.sinembargo.mx/4904729/pension-hombres-bienestar-cdmx-cuando-cierra-el-registro-de-nuevos-beneficiarios/"
 MAYA_SECURITY_MEETING_SOURCE_URL = "https://mayacomunicacion.com.mx/cdmx-se-suma-al-frente-interestatal-de-seguridad-del-centro-del-pais/"
 INFOBAE_DEPECHE_MODE_FUTURAMA_SOURCE_URL = "https://www.infobae.com/mexico/2026/11/17/concierto-tributo-a-depeche-mode-en-la-cdmx-horario-fecha-y-sede-del-evento-gratuito/"
 
@@ -515,6 +516,17 @@ def is_maya_acta_nacimiento_story(article):
         and _photo_fold(article.get("source")) == "maya comunicacion"
         and "acta de nacimiento cdmx 2026" in title
         and "como sacarla en linea" in title
+    )
+
+
+def is_sin_embargo_hombres_bienestar_story(article):
+    """Identifica la nota de SinEmbargo sobre el registro de Pensión Hombres Bienestar."""
+    title = _photo_fold(article.get("title"))
+    return (
+        str(article.get("date") or "")[:10] == "2026-11-17"
+        and _photo_fold(article.get("source")) == "sin embargo"
+        and "pension hombres bienestar" in title
+        and "registro" in title
     )
 
 def is_maya_security_meeting_story(article):
@@ -3427,6 +3439,8 @@ def _photo_score(article, photo):
         return 5000 if photo.get("id") == "contexto_mural_urbano_cdmx_2014" else -10000
     if is_maya_acta_nacimiento_story(article):
         return 5000 if photo.get("id") == "contexto_registro_civil_cdmx_2022" else -10000
+    if is_sin_embargo_hombres_bienestar_story(article):
+        return 5000 if photo.get("id") == "contexto_pension_adultos_mayores_2019" else -10000
     if is_infobae_depeche_mode_story(article):
         return 5000 if photo.get("id") == "contexto_centro_cultural_futurama_2026" else -10000
     if is_infobae_air_quality_report(article) or is_reporte_indigo_contingency_story(article):
