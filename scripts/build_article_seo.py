@@ -82,6 +82,7 @@ VERIFIED_SOURCE_URLS = frozenset({
     "https://capital-cdmx.org/colonias-mas-denuncias-venustiano-carranza-capital-ayuda-2026/",
     "https://elpais.com/mexico/2026-11-16/el-desfile-de-la-revolucion-en-ciudad-de-mexico-horario-ruta-y-contingentes.html",
     "https://www.sopitas.com/noticias/discriminacion-cdmx-copred-edis-2026/",
+    "https://www.sopitas.com/musica/mural-gorillaz-mexico/",
     "https://www.tvazteca.com/aztecanoticias/desfile-del-20-de-noviembre-en-cdmx-ruta-horarios-y-alternativas-viales-por-cortes-a-la-circulacion/?outputType=amp",
     "https://www.diariodemorelos.com/noticias/reportan-trafico-intenso-en-mexico-acapulco-rumbo-cdmx-estos-son-puntos-afectados",
     "https://www.debate.com.mx/cdmx/inauguran-ruta-del-maiz-en-cdmx-conectara-topilejo-con-la-joya-por-4-pesos-20261116-0230.html",

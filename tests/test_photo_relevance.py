@@ -3245,6 +3245,7 @@ class CurrentEditorialPhotoRegressionTests(unittest.TestCase):
             "contexto_posada_iztacalco_1974",
             "contexto_registro_civil_cdmx_2022",
             "contexto_centro_cultural_futurama_2026",
+            "contexto_mural_urbano_cdmx_2014",
         ):
             photo = photos.get(photo_id)
             self.assertIsNotNone(photo)
@@ -3253,10 +3254,10 @@ class CurrentEditorialPhotoRegressionTests(unittest.TestCase):
             self.assertTrue(photo["licenseUrl"].startswith("https://creativecommons.org/"))
             self.assertTrue(photo["source"].startswith("https://commons.wikimedia.org/wiki/File:"))
         loader = (REPO_ROOT / "assets/creditos.js").read_text(encoding="utf-8")
-        self.assertIn("/assets/fotos/contexto-tematico.json?v=20261117-acta-futurama-0324", loader)
+        self.assertIn("/assets/fotos/contexto-tematico.json?v=20261117-gorillaz-mural-2158", loader)
         self.assertIn("new Map", loader)
         html = (REPO_ROOT / "creditos-fotograficos.html").read_text(encoding="utf-8")
-        self.assertIn("creditos.js?v=20261117-acta-futurama-0324", html)
+        self.assertIn("creditos.js?v=20261117-gorillaz-mural-2158", html)
         for photo_id in (
             "contexto_autopista_sol_mexico_acapulco",
             "contexto_gallinero_chinampa_xochimilco",
@@ -4822,3 +4823,65 @@ class InfobaeAmericaFemenilPhotoRegressionTests(unittest.TestCase):
         self.assertIn("no muestra la semifinal 2026", article["photo"]["topic"].lower())
         self.assertTrue(article["photo"]["source"].startswith("https://commons.wikimedia.org/wiki/File:"))
         self.assertTrue(article["photo"]["licenseUrl"].startswith("https://creativecommons.org/"))
+
+
+
+class November17EditorialPhotoCorrectionsTests(unittest.TestCase):
+    def test_elsol_49ers_altitude_story_uses_football_context_not_pharmacy(self):
+        article = news.standardize({
+            "title": "Misma fórmula que en 2022: Los 49ers preparan estrategia para soportar altura de la CDMX",
+            "url": "https://news.google.com/rss/articles/49ers-altitude-20261116",
+            "source": "El Sol de México",
+            "date": "2026-11-16",
+            "published_at": "2026-11-17T02:00:00Z",
+            "category": "CDMX",
+        })
+        self.assertIsNotNone(article)
+        self.assertTrue(photos.is_elsol_49ers_altitude_story(article))
+        pool = {photo["id"]: photo for photo in photos._pool()}
+        pharmacy = deepcopy(pool["contexto_farmacia_santa_maria_ribera_2022"])
+        football = deepcopy(pool["contexto_futbol_americano_nfl"])
+        self.assertLess(_photo_score(article, pharmacy), 0)
+        self.assertEqual(_photo_score(article, football), 5000)
+        article["photo"] = pharmacy
+        with patch.object(photos, "_pool", return_value=[pharmacy, football]), patch.object(
+            photos, "_load", return_value=[]
+        ):
+            assign_photos([article])
+        self.assertEqual(article["photo"]["id"], "contexto_futbol_americano_nfl")
+        self.assertEqual(article["photo"]["author"], "Torsten Bolten, AFpix.de")
+        self.assertEqual(article["photo"]["license"], "CC BY-SA 3.0")
+        self.assertIn("no del juego de NFL en CDMX", article["photo"]["topic"])
+
+    def test_sopitas_gorillaz_mural_story_has_direct_source_location_summary_and_context_photo(self):
+        article = news.standardize({
+            "title": "Gorillaz x Sopitas: ¡Lánzate al mural que hicimos en la Ciudad de México!",
+            "url": "https://news.google.com/rss/articles/gorillaz-mural-20261116",
+            "source": "Sopitas.com",
+            "date": "2026-11-16",
+            "published_at": "2026-11-17T00:30:00Z",
+            "category": "CDMX",
+        })
+        self.assertIsNotNone(article)
+        self.assertTrue(photos.is_sopitas_gorillaz_mural_story(article))
+        self.assertEqual(article["source_url"], photos.SOPITAS_GORILLAZ_MURAL_SOURCE_URL)
+        self.assertEqual(article["category"], "Cultura")
+        self.assertEqual(article["borough"], "Cuauhtémoc")
+        self.assertIn("Roma Norte", article["location"])
+        self.assertIn("Itzel Nájera", article["brief"]["lead"])
+        self.assertIn("Álvaro Obregón", article["brief"]["context"])
+        self.assertIn("Fernando Zavala", article["brief"]["method"])
+        pool = {photo["id"]: photo for photo in photos._pool()}
+        mariachis = deepcopy(pool["commons_80038563"])
+        mural = deepcopy(pool["contexto_mural_urbano_cdmx_2014"])
+        self.assertLess(_photo_score(article, mariachis), 0)
+        self.assertEqual(_photo_score(article, mural), 5000)
+        article["photo"] = mariachis
+        with patch.object(photos, "_pool", return_value=[mariachis, mural]), patch.object(
+            photos, "_load", return_value=[]
+        ):
+            assign_photos([article])
+        self.assertEqual(article["photo"]["id"], "contexto_mural_urbano_cdmx_2014")
+        self.assertEqual(article["photo"]["author"], "LuisRodrigo94")
+        self.assertEqual(article["photo"]["license"], "CC BY-SA 4.0")
+        self.assertIn("no muestra el mural de Gorillaz", article["photo"]["topic"])

@@ -150,6 +150,18 @@ def is_periodico_am_49ers_cdmx_story(article):
     )
 
 
+def is_elsol_49ers_altitude_story(article):
+    """Identifica la nota de El Sol de México sobre la preparación de los 49ers ante la altura."""
+    title = _photo_fold(article.get("title"))
+    return (
+        str(article.get("date") or "") == "2026-11-16"
+        and _photo_fold(article.get("source")) == "el sol de mexico"
+        and "49ers" in title
+        and "altura" in title
+        and "estrategia" in title
+    )
+
+
 def is_capital_cdmx_cuajimalpa_crime_stats(article):
     """Identifica el desglose 2024 de denuncias por colonia en Cuajimalpa publicado por Capital CDMX."""
     title = _photo_fold(article.get("title"))
@@ -576,6 +588,20 @@ def is_sopitas_edis_discrimination_2026(article):
         and _photo_fold(article.get("source")) == "sopitas com"
         and "edis 2026" in title
         and "discriminacion" in title
+    )
+
+
+SOPITAS_GORILLAZ_MURAL_SOURCE_URL = "https://www.sopitas.com/musica/mural-gorillaz-mexico/"
+
+
+def is_sopitas_gorillaz_mural_story(article):
+    """Identifica la invitación de Sopitas para visitar el mural de Gorillaz en CDMX."""
+    title = _photo_fold(article.get("title"))
+    return (
+        str(article.get("date") or "") == "2026-11-16"
+        and _photo_fold(article.get("source")) == "sopitas com"
+        and "gorillaz" in title
+        and "mural" in title
     )
 
 
@@ -1267,6 +1293,31 @@ def summarize(article):
                 "Síntesis editorial propia basada en Infobae, 17 de noviembre de 2026: "
                 + INFOBAE_DEPECHE_MODE_FUTURAMA_SOURCE_URL
                 + ". La fotografía asignada muestra el recinto como contexto; no documenta el concierto ni a la banda."
+            ),
+        }
+    if is_sopitas_gorillaz_mural_story(article):
+        return {
+            "lead": (
+                "Sopitas publicó el 16 de noviembre de 2026 una invitación para visitar un mural dedicado a "
+                "Gorillaz en la Ciudad de México. El medio atribuye el diseño a la artista gráfica mexicana "
+                "Itzel Nájera y explica que retoma referencias del corto animado The Mountain, The Moon Cave "
+                "and The Sad God y elementos del Día de Muertos, como papel picado, cempasúchil y un xoloitzcuintle."
+            ),
+            "context": (
+                "Sopitas ubica la obra en la esquina de avenida Álvaro Obregón y calle Orizaba, colonia Roma Norte. "
+                "La intervención acompaña el regreso de Gorillaz a México y la promoción de una dinámica para fans."
+            ),
+            "pending": (
+                "El artículo invita a tomarse fotografías y anuncia que el mural servirá para una dinámica vinculada "
+                "a boletos del Corona Capital 2026. Las condiciones y vigencia deben confirmarse en los canales "
+                "oficiales de Sopitas; no se afirma que la obra sea una colaboración oficial con la banda."
+            ),
+            "method": (
+                "Síntesis editorial basada en la publicación original de Sopitas.com del 16 de noviembre de 2026: "
+                + SOPITAS_GORILLAZ_MURAL_SOURCE_URL
+                + ". La ubicación y la autoría del diseño se atribuyen al medio. La fotografía asignada es un mural "
+                "urbano de archivo en el Centro de CDMX, no el mural de Gorillaz; las imágenes del reportaje original "
+                "están acreditadas a Fernando Zavala."
             ),
         }
     if is_capital_cdmx_cuajimalpa_crime_stats(article):
@@ -3255,6 +3306,10 @@ def _photo_score(article, photo):
     topic=re.sub(r"\bno\b[^;.)]*", "", topic)
     keywords=_photo_fold(" ".join(str(x) for x in photo.get("keywords",[])))
     context=topic+" "+keywords
+    if is_elsol_49ers_altitude_story(article):
+        return 5000 if photo.get("id") == "contexto_futbol_americano_nfl" else -10000
+    if is_sopitas_gorillaz_mural_story(article):
+        return 5000 if photo.get("id") == "contexto_mural_urbano_cdmx_2014" else -10000
     if is_maya_acta_nacimiento_story(article):
         return 5000 if photo.get("id") == "contexto_registro_civil_cdmx_2022" else -10000
     if is_infobae_depeche_mode_story(article):

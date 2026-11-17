@@ -101,6 +101,14 @@ class PublicSeoTests(unittest.TestCase):
         article["source_url"] = depeche + "?unverified=1"
         self.assertNotIn(depeche + "?unverified=1", render(article, "5946c764181ff026c127"))
 
+        sopitas_mural = "https://www.sopitas.com/musica/mural-gorillaz-mexico/"
+        self.assertIn(sopitas_mural, VERIFIED_SOURCE_URLS)
+        article["source"] = "Sopitas.com"
+        article["source_url"] = sopitas_mural
+        self.assertIn(sopitas_mural, render(article, "0123456789abcdefabcd"))
+        article["source_url"] = sopitas_mural + "?unverified=1"
+        self.assertNotIn(sopitas_mural + "?unverified=1", render(article, "0123456789abcdefabcd"))
+
         untrusted = "https://www.infobae.com/mexico/2026/11/15/otro-articulo-no-verificado/"
         article["source_url"] = untrusted
         page = render(article, "0123456789abcdefabcd")
