@@ -62,6 +62,10 @@ VERIFIED_SOURCE_LINKS = {
         "https://24-horas.mx/cdmx/registro-emplacamiento-vemepe-vep-cdmx-costos-requisitos/",
     ("IMER Noticias", "/noticias/?id=cad284585f539df643d2&mes=2026-11"):
         "https://noticias.imer.mx/blog/activistas-y-defensores-de-animales-marcharon-para-exigir-el-fin-de-la-explotacion-animal-y-promover-el-veganismo-en-cdmx/",
+    ("Maya Comunicación", "/noticias/?id=c14b74cd151a0ac26343&mes=2026-11"):
+        "https://mayacomunicacion.com.mx/acta-de-nacimiento-cdmx/",
+    ("Infobae", "/noticias/?id=5946c764181ff026c127&mes=2026-11"):
+        "https://www.infobae.com/mexico/2026/11/17/concierto-tributo-a-depeche-mode-en-la-cdmx-horario-fecha-y-sede-del-evento-gratuito/",
 }
 
 VERIFIED_SOURCE_URLS = frozenset({
@@ -82,6 +86,8 @@ VERIFIED_SOURCE_URLS = frozenset({
     "https://www.diariodemorelos.com/noticias/reportan-trafico-intenso-en-mexico-acapulco-rumbo-cdmx-estos-son-puntos-afectados",
     "https://www.debate.com.mx/cdmx/inauguran-ruta-del-maiz-en-cdmx-conectara-topilejo-con-la-joya-por-4-pesos-20261116-0230.html",
     "https://www.infobae.com/mexico/deportes/2026/11/16/america-femenil-se-saldria-de-la-cdmx-para-las-semifinales-ante-pumas-del-apertura-2026/",
+    "https://mayacomunicacion.com.mx/acta-de-nacimiento-cdmx/",
+    "https://www.infobae.com/mexico/2026/11/17/concierto-tributo-a-depeche-mode-en-la-cdmx-horario-fecha-y-sede-del-evento-gratuito/",
 })
 SENSITIVE_MEDIA_TITLE = re.compile(
     r"\b(?:violaci[oó]n|abuso sexual|agresi[oó]n sexual|acoso sexual|violencia sexual|"
