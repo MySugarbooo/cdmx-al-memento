@@ -104,6 +104,7 @@ SIN_EMBARGO_HOMBRES_BIENESTAR_SOURCE_URL = "https://www.sinembargo.mx/4904729/pe
 MAYA_SECURITY_MEETING_SOURCE_URL = "https://mayacomunicacion.com.mx/cdmx-se-suma-al-frente-interestatal-de-seguridad-del-centro-del-pais/"
 INFOBAE_DEPECHE_MODE_FUTURAMA_SOURCE_URL = "https://www.infobae.com/mexico/2026/11/17/concierto-tributo-a-depeche-mode-en-la-cdmx-horario-fecha-y-sede-del-evento-gratuito/"
 INFOBAE_LAURA_ZAPATA_THALIA_SOURCE_URL = "https://www.infobae.com/mexico/2026/11/17/laura-zapata-defiende-a-thalia-tras-criticas-por-cantar-con-karol-g-en-cdmx/"
+VOXPOPULI_BELINDA_KAROL_G_SOURCE_URL = "https://voxpopulinoticias.com.mx/2026/11/belinda-recuerda-su-infancia-tras-cantar-con-karol-g-en-cdmx/"
 
 
 def is_esto_49ers_fan_story(article):
@@ -297,6 +298,18 @@ def is_infobae_laura_zapata_thalia_story(article):
         and "thalia" in title
         and "karol g" in title
         and "defiende" in title
+    )
+
+
+def is_voxpopuli_belinda_karol_g_story(article):
+    """Identifica la nota de Vox Populi sobre el recuerdo de Belinda tras cantar con Karol G."""
+    title = _photo_fold(article.get("title"))
+    return (
+        str(article.get("date") or "") == "2026-11-17"
+        and _photo_fold(article.get("source")) == "vox populi"
+        and "belinda" in title
+        and "karol g" in title
+        and ("recuerda su infancia" in title or "trencita" in title)
     )
 
 
@@ -1534,6 +1547,29 @@ def summarize(article):
                 + DEBATE_GALLINAS_PONEDORAS_SOURCE_URL
                 + ". Los detalles se atribuyen al medio. La fotografía muestra un gallinero artesanal de Xochimilco "
                 "de 2018; no documenta la entrega de aves del programa de 2026."
+            ),
+        }
+    if is_voxpopuli_belinda_karol_g_story(article):
+        return {
+            "lead": (
+                "Vox Populi informó el 17 de noviembre de 2026 que Belinda volvió a usar la trencita "
+                "que llevaba de niña al cantar con Karol G el 14 de noviembre en el Estadio GNP Seguros "
+                "de Ciudad de México. La cantante dijo que el gesto le recordó sus inicios y agradeció "
+                "la invitación."
+            ),
+            "context": (
+                "El medio ubicó la aparición en la segunda noche del Tropitour en CDMX y señaló que "
+                "ambas interpretaron “Ángel”, “Bella Traición” y “Luz Sin Gravedad”."
+            ),
+            "pending": (
+                "El artículo atribuye el relato a publicaciones de Belinda en Instagram; no aporta una "
+                "cifra de asistencia ni confirma otros datos que no aparecen en el texto consultado."
+            ),
+            "method": (
+                "Síntesis editorial basada en la publicación original de Vox Populi del 17 de noviembre "
+                "de 2026: " + VOXPOPULI_BELINDA_KAROL_G_SOURCE_URL
+                + ". La imagen muestra a Belinda en 2021; es de archivo y no documenta el concierto "
+                "del 14 de noviembre de 2026."
             ),
         }
     if is_infobae_laura_zapata_thalia_story(article):
@@ -3689,6 +3725,8 @@ def _photo_score(article, photo):
         return 5000 if photo.get("id") == "commons_149171771" else -10000
     if is_tvazteca_hoy_no_circula_bridge_story(article):
         return 5000 if photo.get("id") == "contexto_trafico_eje_central" else -10000
+    if is_voxpopuli_belinda_karol_g_story(article):
+        return 5000 if photo.get("id") == "contexto_belinda_2021" else -10000
     if is_infobae_laura_zapata_thalia_story(article):
         return 5000 if photo.get("id") == "contexto_thalia_vina_1997" else -10000
     if is_infobae_karol_g_guest_prediction_story(article):
