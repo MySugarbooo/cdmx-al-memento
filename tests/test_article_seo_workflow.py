@@ -43,7 +43,7 @@ class ArticleSeoWorkflowTests(unittest.TestCase):
             "if: github.event_name != 'push' || github.event.head_commit.message != 'Update crawlable article pages'",
             self.news_workflow,
         )
-        self.assertIn("cron: '17 * * * *'", self.news_workflow)
+        self.assertIn("cron: '7,22,37,52 * * * *'", self.news_workflow)
         self.assertIn("workflow_dispatch:", self.news_workflow)
         self.assertIn("      - 'index.html'", self.news_workflow)
 
@@ -54,6 +54,14 @@ class ArticleSeoWorkflowTests(unittest.TestCase):
     def test_only_main_can_publish_generated_pages(self):
         self.assertIn('branches: [main]', self.workflow)
         self.assertIn("github.ref == 'refs/heads/main'", self.workflow)
+
+    def test_news_schedule_uses_fallback_triggers_and_dedup_guard(self):
+        self.assertIn("id: schedule_guard", self.news_workflow)
+        self.assertIn("run: python scripts/news_schedule_guard.py", self.news_workflow)
+        self.assertEqual(
+            8,
+            self.news_workflow.count("steps.schedule_guard.outputs.should_run == 'true'"),
+        )
 
 
 if __name__ == "__main__":
