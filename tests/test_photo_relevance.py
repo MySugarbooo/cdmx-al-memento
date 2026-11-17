@@ -4700,7 +4700,7 @@ class CapitalCdmxColonyCrimeStatsPhotoRegressionTests(unittest.TestCase):
         self.assertEqual(article["borough"], "")
         self.assertEqual(
             article["location"],
-            "Autopista México-Acapulco (tramo y puntos afectados no precisados en el RSS)",
+            "Autopista México-Acapulco, rumbo a Ciudad de México (seis puntos señalados por Diario de Morelos)",
         )
         self.assertTrue(news.local_for_homepage(article))
 
