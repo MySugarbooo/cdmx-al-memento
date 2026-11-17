@@ -1,7 +1,8 @@
 name: Actualizar noticias CDMX AL MEMENTO
 on:
   schedule:
-    - cron: '17 * * * *'
+    # Reintentos espaciados; el guard evita repetir una actualización reciente.
+    - cron: '7,22,37,52 * * * *'
   workflow_dispatch:
   push:
     branches: [main]
@@ -12,6 +13,8 @@ on:
       - 'tests/test_article_photo.py'
       - 'tests/test_public_seo.py'
       - 'tests/test_article_seo_workflow.py'
+      - 'scripts/news_schedule_guard.py'
+      - 'tests/test_news_schedule_guard.py'
       - 'update_news.py'
       - 'index.html'
       - 'tests/test_neo_home_stability.py'
@@ -183,11 +186,17 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Evitar actualizaciones programadas duplicadas
+        id: schedule_guard
+        run: python scripts/news_schedule_guard.py
       - name: Generar guías originales de las 16 alcaldías
+        if: steps.schedule_guard.outputs.should_run == 'true'
         run: python scripts/generar_guias.py
       - name: Verificar ubicación, fecha y retención antes de actualizar
+        if: steps.schedule_guard.outputs.should_run == 'true'
         run: python -m unittest discover -s tests -p 'test_*.py' -v
       - name: Verificar sintaxis de los scripts interactivos
+        if: steps.schedule_guard.outputs.should_run == 'true'
         run: |
           node --check app.js
           node --check assets/page-transitions.js
@@ -229,19 +238,19 @@ jobs:
           node --check assets/explora-list.js
           node --check mapa/mapa.js
       - name: Recopilar titulares y actualizar archivo anual
-        if: github.event_name != 'pull_request'
+        if: steps.schedule_guard.outputs.should_run == 'true' && github.event_name != 'pull_request'
         run: python update_news.py
       - name: Recuperar noticias históricas pendientes del 16 al 24 de octubre
-        if: github.event_name != 'pull_request'
+        if: steps.schedule_guard.outputs.should_run == 'true' && github.event_name != 'pull_request'
         run: python scripts/recuperar_octubre_2026.py
       - name: Generar titulares recientes de animales
-        if: github.event_name != 'pull_request'
+        if: steps.schedule_guard.outputs.should_run == 'true' && github.event_name != 'pull_request'
         run: python scripts/animales_feed.py
       - name: Buscar fotografías recientes y revisar licencias en Wikimedia Commons
-        if: github.event_name != 'pull_request'
+        if: steps.schedule_guard.outputs.should_run == 'true' && github.event_name != 'pull_request'
         run: python scripts/actualizar_fotos.py
       - name: Publicar cambios y eliminar noticias vencidas
-        if: github.event_name != 'pull_request'
+        if: steps.schedule_guard.outputs.should_run == 'true' && github.event_name != 'pull_request'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
