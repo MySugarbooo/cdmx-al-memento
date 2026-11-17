@@ -2937,7 +2937,7 @@ class CurrentFeedEditorialPhotoRegressionTests(unittest.TestCase):
             title, "Gobierno", "commons_41703830", "commons_152145024")
 
     def test_console_photo_caption_is_explicitly_representative_not_pokemon_go(self):
-        expected = "Consolas y videojuegos actuales (fotografía de 2026); imagen representativa del sector de videojuegos, no corresponde a Pokémon Go ni a la mercancía asegurada en Plaza Meave."
+        expected = "Consolas y videojuegos (foto 2026); imagen representativa del sector, no de Pokémon Go ni de la mercancía asegurada en Plaza Meave."
         for relative in (
             "assets/fotos/contexto-tematico.json",
             "assets/fotos/indice-noticias-1100.json",
@@ -4999,7 +4999,7 @@ class November17AdditionalEditorialPhotoCorrectionsTests(unittest.TestCase):
         self.assertEqual(article["photo"]["id"], "contexto_concierto_foro_sol_2023")
         self.assertEqual(article["photo"]["author"], "Nanahuatl")
         self.assertEqual(article["photo"]["license"], "CC BY-SA 4.0")
-        expected_topic = "Concierto de Muse en Foro Sol (hoy Estadio GNP), CDMX (23/01/2023); archivo, no de Karol G ni de su función reprogramada."
+        expected_topic = "Concierto de Muse en Foro Sol (hoy Estadio GNP), CDMX (23/01/2023); archivo, no corresponde a Karol G ni a su función reprogramada."
         self.assertEqual(article["photo"]["topic"], expected_topic)
         self.assertLessEqual(len(article["photo"]["topic"]), 150)
 
@@ -5046,8 +5046,13 @@ class November17AdditionalEditorialPhotoCorrectionsTests(unittest.TestCase):
         self.assertEqual(article["photo"]["topic"], expected_topic)
 
     def test_context_and_news_photo_topics_fit_feed_limit(self):
-        for catalog in (photos.TOPIC_PHOTOS, photos.NEWS_PHOTOS):
-            records = photos._load(catalog, "photos")
+        catalogs = (
+            photos.TOPIC_PHOTOS,
+            photos.NEWS_PHOTOS,
+            REPO_ROOT / "assets/fotos/catalogo-editorial-1100.json",
+        )
+        for catalog in catalogs:
+            records = json.loads(catalog.read_text(encoding="utf-8")).get("photos", [])
             self.assertTrue(records, str(catalog))
             for photo in records:
                 topic = str(photo.get("topic") or "")
