@@ -3198,7 +3198,7 @@ def _photo_score(article, photo):
     if is_reporte_indigo_49ers_foodie_passport_story(article):
         return 5000 if photo.get("id") == "contexto_tacos_cdmx_2013" else -10000
     if is_almomento_golden_ganga_concert_story(article):
-        return 5000 if photo.get("id") == "contexto_concierto_palacio_deportes_2009" else -10000
+        return 5000 if photo.get("id") == "contexto_teatro_metropolitan_2019" else -10000
     if is_reporte_indigo_cdmx_explosion_story(article):
         return 5000 if photo.get("id") == "contexto_proteccion_civil_explosion_cdmx" else -10000
     if is_diario_mexico_posadas_fines_story(article):
