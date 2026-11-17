@@ -4999,7 +4999,9 @@ class November17AdditionalEditorialPhotoCorrectionsTests(unittest.TestCase):
         self.assertEqual(article["photo"]["id"], "contexto_concierto_foro_sol_2023")
         self.assertEqual(article["photo"]["author"], "Nanahuatl")
         self.assertEqual(article["photo"]["license"], "CC BY-SA 4.0")
-        self.assertIn("no corresponde a Karol G", article["photo"]["topic"])
+        expected_topic = "Concierto de Muse en Foro Sol (hoy Estadio GNP), CDMX (23/01/2023); archivo, no de Karol G ni de su función reprogramada."
+        self.assertEqual(article["photo"]["topic"], expected_topic)
+        self.assertLessEqual(len(article["photo"]["topic"]), 150)
 
     def test_sin_embargo_hombres_bienestar_uses_related_archival_pension_photo_and_direct_source(self):
         title = "Pensión Hombres Bienestar CdMx: ¿Cuándo cierra el registro de nuevos beneficiarios?"
@@ -5043,3 +5045,11 @@ class November17AdditionalEditorialPhotoCorrectionsTests(unittest.TestCase):
         self.assertLessEqual(len(pension["topic"]), 150)
         self.assertEqual(article["photo"]["topic"], expected_topic)
 
+    def test_context_and_news_photo_topics_fit_feed_limit(self):
+        for catalog in (photos.TOPIC_PHOTOS, photos.NEWS_PHOTOS):
+            records = photos._load(catalog, "photos")
+            self.assertTrue(records, str(catalog))
+            for photo in records:
+                topic = str(photo.get("topic") or "")
+                with self.subTest(catalog=catalog.name, photo_id=photo.get("id")):
+                    self.assertLessEqual(len(topic), 150)
