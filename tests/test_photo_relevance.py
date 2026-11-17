@@ -4761,6 +4761,7 @@ class InfobaeAmericaFemenilPhotoRegressionTests(unittest.TestCase):
         })
         self.assertIsNotNone(article)
         self.assertTrue(photos.is_infobae_america_femenil_pumas_semifinal_story(article))
+        self.assertEqual(article["source_url"], "https://www.infobae.com/mexico/deportes/2026/11/16/america-femenil-se-saldria-de-la-cdmx-para-las-semifinales-ante-pumas-del-apertura-2026/")
 
         pool = {photo["id"]: photo for photo in photos._pool()}
         unrelated = deepcopy(pool["commons_30224225"])
