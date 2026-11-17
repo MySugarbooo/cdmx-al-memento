@@ -60,7 +60,7 @@ def main() -> int:
     if output_path:
         with Path(output_path).open("a", encoding="utf-8") as output:
             output.write(
-                f"should_run={'true' if run_pipeline else 'false'}\\n"
+                f"should_run={'true' if run_pipeline else 'false'}\n"
             )
 
     if run_pipeline:
