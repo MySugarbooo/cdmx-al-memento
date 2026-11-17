@@ -230,8 +230,14 @@ class StableHomepageTests(unittest.TestCase):
     def test_news_workflow_stages_the_generated_homepage_fallback_and_tests_prs(self):
         workflow = read(".github/workflows/news.yml")
         self.assertIn("pull_request:", workflow)
-        self.assertIn("if: github.event_name != 'pull_request'", workflow)
-        self.assertGreaterEqual(workflow.count("if: github.event_name != 'pull_request'"), 5)
+        self.assertIn(
+            "if: steps.schedule_guard.outputs.should_run == 'true' && github.event_name != 'pull_request'",
+            workflow,
+        )
+        self.assertGreaterEqual(
+            workflow.count("if: steps.schedule_guard.outputs.should_run == 'true' && github.event_name != 'pull_request'"),
+            5,
+        )
         stage_lines = [line for line in workflow.splitlines() if "git add -A --" in line]
         self.assertEqual(len(stage_lines), 2)
         self.assertTrue(all("index.html" in line for line in stage_lines))
