@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-17 01:55 UTC",
+  "updated": "2026-11-17 02:25 UTC",
   "boroughs": [
     {
       "name": "La Magdalena Contreras",
@@ -2743,7 +2743,7 @@
           "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOYnZiUWpWNVkwWG5sajM5UnZteFBiLTVGNVlaN3JzZlBWOU9tck9aU1k1bUN6TFFRZE9qQVpDYkhJZHdIVTRyZm5rcndUaG9tNzFoUjlzVVREZGMzS1FaXzBSamtCeF96MjBtQkxtWlNWRU1LeDRWZ01wMnFtM3hTUDlJT0Z0UlZOazU1eUFzcFhrU1hKZ0h1SlllMGRPT3pjdTRoZEpSRG9xWDZpQ1gyVFltZk1Md3JUcnpkM2hEZDhVLXJvS29r?oc=5",
           "source": "El Sol de México",
           "date": "2026-11-16",
-          "published_at": "2026-11-17T01:18:45Z",
+          "published_at": "2026-11-17T01:21:56Z",
           "category": "Seguridad",
           "borough": "Azcapotzalco",
           "location": "Azcapotzalco (mencionada en el titular)",
@@ -2768,7 +2768,42 @@
             "license": "CC BY-SA 4.0",
             "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
             "source": "https://commons.wikimedia.org/wiki/File:Jeep_policia_cdmx.jpg"
-          }
+          },
+          "alternate_versions": [
+            {
+              "title": "Balacera en Azcapotzalco deja dos hombres muertos y un herido en San Pedro Xalpa",
+              "description": "De acuerdo con El Sol de México, el titular publicado es: «Balacera en Azcapotzalco deja dos hombres muertos y un herido en San Pedro Xalpa». La información publicada por El Sol de México aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+              "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOYnZiUWpWNVkwWG5sajM5UnZteFBiLTVGNVlaN3JzZlBWOU9tck9aU1k1bUN6TFFRZE9qQVpDYkhJZHdIVTRyZm5rcndUaG9tNzFoUjlzVVREZGMzS1FaXzBSamtCeF96MjBtQkxtWlNWRU1LeDRWZ01wMnFtM3hTUDlJT0Z0UlZOazU1eUFzcFhrU1hKZ0h1SlllMGRPT3pjdTRoZEpSRG9xWDZpQ1gyVFltZk1Md3JUcnpkM2hEZDhVLXJvS29r?oc=5",
+              "source": "El Sol de México",
+              "date": "2026-11-16",
+              "published_at": "2026-11-17T01:18:45Z",
+              "category": "Seguridad",
+              "borough": "Azcapotzalco",
+              "location": "Azcapotzalco (mencionada en el titular)",
+              "local_url": "/noticias/?id=a7c9ec92a4f6162cbe4b&mes=2026-11",
+              "brief": {
+                "lead": "De acuerdo con El Sol de México, el titular publicado es: «Balacera en Azcapotzalco deja dos hombres muertos y un herido en San Pedro Xalpa». La información publicada por El Sol de México aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+                "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+                "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+              },
+              "photo": {
+                "id": "archivo_seguridad_005",
+                "kind": "representativa",
+                "url": "/assets/fotos/archivo_seguridad_005.jpg",
+                "category": "Seguridad",
+                "borough": "",
+                "topic": "Jeep policia cdmx",
+                "keywords": [
+                  "Seguridad"
+                ],
+                "author": "Gobierno de la Ciudad de México",
+                "license": "CC BY-SA 4.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "https://commons.wikimedia.org/wiki/File:Jeep_policia_cdmx.jpg"
+              }
+            }
+          ]
         },
         {
           "title": "Robos y delitos en colonias de Azcapotzalco",
@@ -2884,6 +2919,32 @@
           "borough": "Azcapotzalco",
           "location": "Azcapotzalco (mencionada en el titular)",
           "local_url": "/noticias/?id=f9149da7b581c21f5d69&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con Capital CDMX, el titular publicado es: «El Rosario registró 223 denuncias en 2024: el panorama de Azcapotzalco». La información publicada por Capital CDMX aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "contexto_metro_el_rosario_2025",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Metro_El_Rosario_%282025%29_8.jpg/960px-Metro_El_Rosario_%282025%29_8.jpg",
+            "category": "Movilidad",
+            "borough": "",
+            "topic": "Letrero de la estación El Rosario del Metro (archivo 2025); referencia de lugar, no de denuncias.",
+            "keywords": [
+              "El Rosario",
+              "Azcapotzalco",
+              "Metro",
+              "estación",
+              "Línea 6",
+              "CDMX"
+            ],
+            "author": "Tbhotch",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "source": "https://commons.wikimedia.org/wiki/File:Metro_El_Rosario_%282025%29_8.jpg"
+          },
           "alternate_versions": [
             {
               "title": "El Rosario registró 223 denuncias en 2024: el panorama de Azcapotzalco",
@@ -2915,33 +2976,7 @@
                 "source": "https://commons.wikimedia.org/wiki/File:PARROQUIA_DE_SANTA_CATARINA_%28AZCAPOTZALCO%29.jpg"
               }
             }
-          ],
-          "brief": {
-            "lead": "De acuerdo con Capital CDMX, el titular publicado es: «El Rosario registró 223 denuncias en 2024: el panorama de Azcapotzalco». La información publicada por Capital CDMX aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "contexto_metro_el_rosario_2025",
-            "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Metro_El_Rosario_%282025%29_8.jpg/960px-Metro_El_Rosario_%282025%29_8.jpg",
-            "category": "Movilidad",
-            "borough": "",
-            "topic": "Letrero de la estación El Rosario del Metro (archivo 2025); referencia de lugar, no de denuncias.",
-            "keywords": [
-              "El Rosario",
-              "Azcapotzalco",
-              "Metro",
-              "estación",
-              "Línea 6",
-              "CDMX"
-            ],
-            "author": "Tbhotch",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-            "source": "https://commons.wikimedia.org/wiki/File:Metro_El_Rosario_%282025%29_8.jpg"
-          }
+          ]
         },
         {
           "title": "Balacera en Azcapotzalco deja dos personas muertas y una herida",
@@ -2954,6 +2989,27 @@
           "borough": "Azcapotzalco",
           "location": "Azcapotzalco (mencionada en el titular)",
           "local_url": "/noticias/?id=aca1b808baa8463bab14&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con El Universal, el titular publicado es: «Balacera en Azcapotzalco deja dos personas muertas y una herida». La información publicada por El Universal aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "archivo_seguridad_005",
+            "kind": "representativa",
+            "url": "/assets/fotos/archivo_seguridad_005.jpg",
+            "category": "Seguridad",
+            "borough": "",
+            "topic": "Jeep policia cdmx",
+            "keywords": [
+              "Seguridad"
+            ],
+            "author": "Gobierno de la Ciudad de México",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Jeep_policia_cdmx.jpg"
+          },
           "alternate_versions": [
             {
               "title": "Balacera en Azcapotzalco deja dos personas muertas y una herida",
@@ -2973,43 +3029,22 @@
                 "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
               },
               "photo": {
-                "id": "archivo_seguridad_005",
+                "id": "seguridad",
                 "kind": "representativa",
-                "url": "/assets/fotos/archivo_seguridad_005.jpg",
+                "url": "/assets/fotos/seguridad.jpg",
                 "category": "Seguridad",
                 "borough": "",
-                "topic": "Jeep policia cdmx",
+                "topic": "Patrulla de Ciudad de México",
                 "keywords": [
                   "Seguridad"
                 ],
-                "author": "Gobierno de la Ciudad de México",
+                "author": "RainerRowe",
                 "license": "CC BY-SA 4.0",
-                "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-                "source": "https://commons.wikimedia.org/wiki/File:Jeep_policia_cdmx.jpg"
+                "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.es",
+                "source": "https://commons.wikimedia.org/wiki/File:Patrulla_cdmx.jpg"
               }
             }
-          ],
-          "brief": {
-            "lead": "De acuerdo con El Universal, el titular publicado es: «Balacera en Azcapotzalco deja dos personas muertas y una herida». La información publicada por El Universal aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
-            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "seguridad",
-            "kind": "representativa",
-            "url": "/assets/fotos/seguridad.jpg",
-            "category": "Seguridad",
-            "borough": "",
-            "topic": "Patrulla de Ciudad de México",
-            "keywords": [
-              "Seguridad"
-            ],
-            "author": "RainerRowe",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.es",
-            "source": "https://commons.wikimedia.org/wiki/File:Patrulla_cdmx.jpg"
-          }
+          ]
         },
         {
           "title": "Persecución y balacera en Azcapotzalco termina con dos hombres muertos",
@@ -11345,8 +11380,8 @@
           }
         },
         {
-          "title": "Iztapalapa: colonias con más denuncias en 2024 y 2026",
-          "description": "De acuerdo con Capital CDMX, el titular publicado es: «Iztapalapa: colonias con más denuncias en 2024 y 2026». La información publicada por Capital CDMX aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "title": "Iztapalapa: estas son las colonias con más delitos denunciados y cómo protegerte",
+          "description": "De acuerdo con Capital CDMX, el titular publicado es: «Iztapalapa: estas son las colonias con más delitos denunciados y cómo protegerte». La información publicada por Capital CDMX aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
           "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPVGhOamc5Mlp0SmMzU1VEVUpPb2FuWjVGZ0NVZHZoR1BWcTBGWGV0V3I4dkhjWFR0alp1NTA5T2k2eWdQZGpFbEh2NDJ6TjRia3J2QUZqX3paOFcxZ0lsSzRGWGhrZ094NGdabDBCczBHNUROTkFVejlvUGpaSXZWQTdlTGJ3cDlRaGN0SA?oc=5",
           "source": "Capital CDMX",
           "date": "2026-11-16",
@@ -11355,6 +11390,27 @@
           "borough": "Iztapalapa",
           "location": "Iztapalapa (mencionada en el titular)",
           "local_url": "/noticias/?id=338fcabb926a69b60cdd&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con Capital CDMX, el titular publicado es: «Iztapalapa: estas son las colonias con más delitos denunciados y cómo protegerte». La información publicada por Capital CDMX aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "archivo_seguridad_008",
+            "kind": "representativa",
+            "url": "/assets/fotos/archivo_seguridad_008.jpg",
+            "category": "Seguridad",
+            "borough": "",
+            "topic": "Claudia Sheinbaum entrega patrullas Iztapalapa 03",
+            "keywords": [
+              "Seguridad"
+            ],
+            "author": "Gobierno de la Ciudad de México",
+            "license": "CC BY 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Claudia_Sheinbaum_entrega_patrullas_Iztapalapa_03.jpg"
+          },
           "alternate_versions": [
             {
               "title": "Iztapalapa: colonias con más denuncias en 2024 y 2026",
@@ -11418,32 +11474,44 @@
                 "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
                 "source": "https://commons.wikimedia.org/wiki/File:Metro_Iztapalapa_02.jpg"
               }
+            },
+            {
+              "title": "Iztapalapa: colonias con más denuncias en 2024 y 2026",
+              "description": "De acuerdo con Capital CDMX, el titular publicado es: «Iztapalapa: colonias con más denuncias en 2024 y 2026». La información publicada por Capital CDMX aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+              "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPVGhOamc5Mlp0SmMzU1VEVUpPb2FuWjVGZ0NVZHZoR1BWcTBGWGV0V3I4dkhjWFR0alp1NTA5T2k2eWdQZGpFbEh2NDJ6TjRia3J2QUZqX3paOFcxZ0lsSzRGWGhrZ094NGdabDBCczBHNUROTkFVejlvUGpaSXZWQTdlTGJ3cDlRaGN0SA?oc=5",
+              "source": "Capital CDMX",
+              "date": "2026-11-16",
+              "published_at": "2026-11-16T17:44:36Z",
+              "category": "CDMX",
+              "borough": "Iztapalapa",
+              "location": "Iztapalapa (mencionada en el titular)",
+              "local_url": "/noticias/?id=338fcabb926a69b60cdd&mes=2026-11",
+              "brief": {
+                "lead": "De acuerdo con Capital CDMX, el titular publicado es: «Iztapalapa: colonias con más denuncias en 2024 y 2026». La información publicada por Capital CDMX aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+                "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+                "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+              },
+              "photo": {
+                "id": "contexto_patrullas_iztapalapa_denuncias",
+                "kind": "representativa",
+                "url": "/assets/fotos/archivo_seguridad_011.jpg",
+                "category": "Seguridad",
+                "borough": "",
+                "topic": "Patrullas en Iztapalapa, foto de archivo; no documenta las denuncias ni las cifras de 2024/2026.",
+                "keywords": [
+                  "Iztapalapa",
+                  "patrullas",
+                  "seguridad",
+                  "denuncias"
+                ],
+                "author": "Gobierno de la Ciudad de México",
+                "license": "CC BY 4.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+                "source": "https://commons.wikimedia.org/wiki/File:Claudia_Sheinbaum_entrega_patrullas_Iztapalapa_02.jpg"
+              }
             }
-          ],
-          "brief": {
-            "lead": "De acuerdo con Capital CDMX, el titular publicado es: «Iztapalapa: colonias con más denuncias en 2024 y 2026». La información publicada por Capital CDMX aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "contexto_patrullas_iztapalapa_denuncias",
-            "kind": "representativa",
-            "url": "/assets/fotos/archivo_seguridad_011.jpg",
-            "category": "Seguridad",
-            "borough": "",
-            "topic": "Patrullas en Iztapalapa, foto de archivo; no documenta las denuncias ni las cifras de 2024/2026.",
-            "keywords": [
-              "Iztapalapa",
-              "patrullas",
-              "seguridad",
-              "denuncias"
-            ],
-            "author": "Gobierno de la Ciudad de México",
-            "license": "CC BY 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Claudia_Sheinbaum_entrega_patrullas_Iztapalapa_02.jpg"
-          }
+          ]
         },
         {
           "title": "Bloqueo de Estudiantes de la UAM Iztapalapa Hoy: Zona Afectada",
@@ -13402,6 +13470,27 @@
           "borough": "Miguel Hidalgo",
           "location": "Miguel Hidalgo (mencionada en el titular)",
           "local_url": "/noticias/?id=dc0d8bd9112e665bbc08&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con El Financiero, el titular publicado es: «Explosión en vivienda de la alcaldía Miguel Hidalgo deja una persona muerta y 4 heridas». La información publicada por El Financiero aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "commons_75139349",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Equipo_de_trabajo_de_los_Bomberos_CDMX_IMG_3061_%2844661911131%29.jpg/960px-Equipo_de_trabajo_de_los_Bomberos_CDMX_IMG_3061_%2844661911131%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "category": "Seguridad",
+            "borough": "",
+            "topic": "Equipo de trabajo de los Bomberos CDMX IMG 3061 (44661911131)",
+            "keywords": [
+              "Bomberos Ciudad de México"
+            ],
+            "author": "Gobierno CDMX",
+            "license": "CC0",
+            "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+            "source": "https://commons.wikimedia.org/wiki/File:Equipo_de_trabajo_de_los_Bomberos_CDMX_IMG_3061_(44661911131).jpg"
+          },
           "alternate_versions": [
             {
               "title": "Explosión en vivienda de la alcaldía Miguel Hidalgo deja al menos 4 heridos",
@@ -13439,28 +13528,7 @@
                 "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
               }
             }
-          ],
-          "brief": {
-            "lead": "De acuerdo con El Financiero, el titular publicado es: «Explosión en vivienda de la alcaldía Miguel Hidalgo deja una persona muerta y 4 heridas». La información publicada por El Financiero aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "commons_75139349",
-            "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Equipo_de_trabajo_de_los_Bomberos_CDMX_IMG_3061_%2844661911131%29.jpg/960px-Equipo_de_trabajo_de_los_Bomberos_CDMX_IMG_3061_%2844661911131%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "category": "Seguridad",
-            "borough": "",
-            "topic": "Equipo de trabajo de los Bomberos CDMX IMG 3061 (44661911131)",
-            "keywords": [
-              "Bomberos Ciudad de México"
-            ],
-            "author": "Gobierno CDMX",
-            "license": "CC0",
-            "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
-            "source": "https://commons.wikimedia.org/wiki/File:Equipo_de_trabajo_de_los_Bomberos_CDMX_IMG_3061_(44661911131).jpg"
-          }
+          ]
         },
         {
           "title": "Explosión en la alcaldía Miguel Hidalgo de la CDMX deja una persona muerta y varios lesionados",
@@ -15012,32 +15080,6 @@
           "borough": "Tláhuac",
           "location": "Tláhuac (mencionada en el titular)",
           "local_url": "/noticias/?id=9e5ef0067c5f96dc29b0&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con Capital CDMX, el titular publicado es: «Tláhuac: las colonias con más denuncias en 2024». La información publicada por Capital CDMX aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "contexto_tlahuac_plaza_denuncias",
-            "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Tl%C3%A1huac-Plaza_central.JPG/960px-Tl%C3%A1huac-Plaza_central.JPG?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
-            "category": "Alcaldías",
-            "borough": "",
-            "topic": "Explanada y parroquia de San Pedro Tláhuac (archivo 2011; imagen de contexto, no documenta denuncias de 2024)",
-            "keywords": [
-              "Tláhuac",
-              "San Pedro Tláhuac",
-              "Explanada delegacional",
-              "Parroquia de San Pedro Apóstol",
-              "Ciudad de México",
-              "denuncias por colonia"
-            ],
-            "author": "Yavidaxiu",
-            "license": "CC BY 3.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
-            "source": "https://commons.wikimedia.org/wiki/File:Tl%C3%A1huac-Plaza_central.JPG"
-          },
           "alternate_versions": [
             {
               "title": "Tláhuac: las colonias con más denuncias en 2024",
@@ -15102,7 +15144,33 @@
                 "source": "https://commons.wikimedia.org/wiki/File:Tl%C3%A1huac-Plaza_central.JPG"
               }
             }
-          ]
+          ],
+          "brief": {
+            "lead": "De acuerdo con Capital CDMX, el titular publicado es: «Tláhuac: las colonias con más denuncias en 2024». La información publicada por Capital CDMX aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "contexto_tlahuac_plaza_denuncias",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Tl%C3%A1huac-Plaza_central.JPG/960px-Tl%C3%A1huac-Plaza_central.JPG?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+            "category": "Alcaldías",
+            "borough": "",
+            "topic": "Explanada y parroquia de San Pedro Tláhuac (archivo 2011; imagen de contexto, no documenta denuncias de 2024)",
+            "keywords": [
+              "Tláhuac",
+              "San Pedro Tláhuac",
+              "Explanada delegacional",
+              "Parroquia de San Pedro Apóstol",
+              "Ciudad de México",
+              "denuncias por colonia"
+            ],
+            "author": "Yavidaxiu",
+            "license": "CC BY 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+            "source": "https://commons.wikimedia.org/wiki/File:Tl%C3%A1huac-Plaza_central.JPG"
+          }
         },
         {
           "title": "Pagó 450 mil pesos por un terreno en Tláhuac; resultó ser reserva ecológica",
@@ -16455,8 +16523,78 @@
     },
     {
       "name": "Tlalpan",
-      "count": 247,
+      "count": 248,
       "articles": [
+        {
+          "title": "Inauguran Ruta del Maíz en CDMX: conectará Topilejo con La Joya por 4 pesos",
+          "description": "El Debate informó el 16 de noviembre de 2026 a las 18:21 h que la Ruta del Maíz de RTP conecta San Miguel Topilejo, en la alcaldía Tlalpan, con la estación La Joya de la Línea 1 del Metrobús. El servicio contempla 15 autobuses, tarifa de 4 pesos y frecuencias estimadas de 10 a 15 minutos; también fortalece las conexiones hacia Ciudad Universitaria, el Estadio Azteca y Xochimilco.",
+          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQeEpBQTgxVzZvT3Rqems5Y3VaYV9Gbm5RU0lHQlozWC11cGJlV0JFcllSQWNKVGloc2RweE53UC0xa2FoSkVZM1F4aWdadVAzVzFIZW5FSFpKRkY0ckJSVnU1dDFiTUt4MkZsYnRDSnRYWnhoMUVqcDNuM2lFUy1EVGtrd0xkRlUxSUJIVFBDTVlYb1hTMFg0TFh2THFBZ3Z0Q2YwcTVpYVFrb2J3dVdzSmxqc0JzSXJkanJVY1hzWVA5Zw?oc=5",
+          "source": "Debate",
+          "date": "2026-11-16",
+          "published_at": "2026-11-17T00:21:12Z",
+          "category": "Movilidad",
+          "borough": "Tlalpan",
+          "location": "San Miguel Topilejo–La Joya, alcaldía Tlalpan, Ciudad de México",
+          "local_url": "/noticias/?id=ac68221d3d4665503eac&mes=2026-11",
+          "brief": {
+            "lead": "El Debate informó el 16 de noviembre de 2026 a las 18:21 h que la Ruta del Maíz de RTP conecta San Miguel Topilejo, en la alcaldía Tlalpan, con la estación La Joya de la Línea 1 del Metrobús. El servicio contempla 15 autobuses, tarifa de 4 pesos y frecuencias estimadas de 10 a 15 minutos; también fortalece las conexiones hacia Ciudad Universitaria, el Estadio Azteca y Xochimilco.",
+            "context": "La conexión amplía las opciones de transporte para habitantes de Topilejo y facilita el enlace con la Línea 1 del Metrobús y otros destinos del sur de la ciudad.",
+            "pending": "El Debate reportó servicio diario de 04:30 a 00:00 h y frecuencias estimadas de 10 a 15 minutos. La nota no ofrece seguimiento operativo en tiempo real; confirmar cambios de servicio con RTP.",
+            "method": "Síntesis editorial propia basada en la publicación original de El Debate del 16 de noviembre de 2026; no equivale a verificación independiente de la operación en tiempo real."
+          },
+          "photo": {
+            "id": "commons_112950009",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Ciudad_de_M%C3%A9xico_-_San_Miguel_Topilejo_0185.JPG/960px-Ciudad_de_M%C3%A9xico_-_San_Miguel_Topilejo_0185.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "category": "Alcaldías",
+            "borough": "",
+            "topic": "Ciudad de México - San Miguel Topilejo 0185",
+            "keywords": [
+              "Tlalpan Ciudad de México"
+            ],
+            "author": "Phyrexian",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Ciudad_de_M%C3%A9xico_-_San_Miguel_Topilejo_0185.JPG"
+          },
+          "source_url": "https://www.debate.com.mx/cdmx/inauguran-ruta-del-maiz-en-cdmx-conectara-topilejo-con-la-joya-por-4-pesos-20261116-0230.html",
+          "alternate_versions": [
+            {
+              "title": "Inauguran Ruta del Maíz en CDMX: conectará Topilejo con La Joya por 4 pesos",
+              "description": "El Debate informó el 16 de noviembre de 2026 a las 18:21 h que la Ruta del Maíz de RTP conecta San Miguel Topilejo, en la alcaldía Tlalpan, con la estación La Joya de la Línea 1 del Metrobús. El servicio contempla 15 autobuses, tarifa de 4 pesos y frecuencias estimadas de 10 a 15 minutos; también fortalece las conexiones hacia Ciudad Universitaria, el Estadio Azteca y Xochimilco.",
+              "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQeEpBQTgxVzZvT3Rqems5Y3VaYV9Gbm5RU0lHQlozWC11cGJlV0JFcllSQWNKVGloc2RweE53UC0xa2FoSkVZM1F4aWdadVAzVzFIZW5FSFpKRkY0ckJSVnU1dDFiTUt4MkZsYnRDSnRYWnhoMUVqcDNuM2lFUy1EVGtrd0xkRlUxSUJIVFBDTVlYb1hTMFg0TFh2THFBZ3Z0Q2YwcTVpYVFrb2J3dVdzSmxqc0JzSXJkanJVY1hzWVA5Zw?oc=5",
+              "source": "Debate",
+              "date": "2026-11-16",
+              "published_at": "2026-11-17T00:21:12Z",
+              "category": "Movilidad",
+              "borough": "Tlalpan",
+              "location": "San Miguel Topilejo–La Joya, alcaldía Tlalpan, Ciudad de México",
+              "local_url": "/noticias/?id=ac68221d3d4665503eac&mes=2026-11",
+              "source_url": "https://www.debate.com.mx/cdmx/inauguran-ruta-del-maiz-en-cdmx-conectara-topilejo-con-la-joya-por-4-pesos-20261116-0230.html",
+              "brief": {
+                "lead": "El Debate informó el 16 de noviembre de 2026 a las 18:21 h que la Ruta del Maíz de RTP conecta San Miguel Topilejo, en la alcaldía Tlalpan, con la estación La Joya de la Línea 1 del Metrobús. El servicio contempla 15 autobuses, tarifa de 4 pesos y frecuencias estimadas de 10 a 15 minutos; también fortalece las conexiones hacia Ciudad Universitaria, el Estadio Azteca y Xochimilco.",
+                "context": "La conexión amplía las opciones de transporte para habitantes de Topilejo y facilita el enlace con la Línea 1 del Metrobús y otros destinos del sur de la ciudad.",
+                "pending": "El Debate reportó servicio diario de 04:30 a 00:00 h y frecuencias estimadas de 10 a 15 minutos. La nota no ofrece seguimiento operativo en tiempo real; confirmar cambios de servicio con RTP.",
+                "method": "Síntesis editorial propia basada en la publicación original de El Debate del 16 de noviembre de 2026; no equivale a verificación independiente de la operación en tiempo real."
+              },
+              "photo": {
+                "id": "gobierno",
+                "kind": "representativa",
+                "url": "/assets/fotos/gobierno.jpg",
+                "category": "Gobierno",
+                "borough": "",
+                "topic": "Fachada del Palacio Nacional",
+                "keywords": [
+                  "Gobierno"
+                ],
+                "author": "MichaelCamacho",
+                "license": "CC BY-SA 4.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.es",
+                "source": "https://commons.wikimedia.org/wiki/File:Palacio_Nacional_Ciudad_de_M%C3%A9xico.jpg"
+              }
+            }
+          ]
+        },
         {
           "title": "Colonias más peligrosas de Tlalpan: dónde hay robos",
           "description": "De acuerdo con Capital CDMX, el titular publicado es: «Colonias más peligrosas de Tlalpan: dónde hay robos». La información publicada por Capital CDMX aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -17492,44 +17630,6 @@
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           },
           "sensitive_media": true
-        },
-        {
-          "title": "Accidente en la México-Cuernavac: Vuelca Tráiler en Tlalpan Hoy 13 de Noviembre del 2026",
-          "description": "De acuerdo con N+, el titular publicado es: «Accidente en la México-Cuernavac: Vuelca Tráiler en Tlalpan Hoy 13 de Noviembre del 2026». De acuerdo con N+, se informa de un hecho vial relacionado con vehículos en Tlalpan. El encabezado no permite determinar por sí solo si hubo personas lesionadas o fallecidas. Se requiere consultar la nota original para conocer el punto exacto, las circunstancias y los reportes oficiales, sin atribuir responsabilidades sin pruebas.",
-          "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPTjZWbUs2cC1IeFlIY05MLU1rdE0wdHJ6ekxuS0NPU0UyYjk2Wmk0Vmhuby1PWmpaM2t0dUhuNzMxbDhJblNVSGhzUFFHaEc4VmFuVnpNSVRReHNiV085U0poTlRMaGU4OUJjSHFzQlN0SHVPRUhxTFpSVTZ1UWdoQXY2X0RadWRuSVZjWTJELXR2RzVrbWZnS05zdE1ZZmNuYkpFaDNWS0E4SUllQTBxbGtoOEY0aEl6MDRhVV9OTzlrVmV2c1BNdVJTVzdOLUhyakFNZjlfdw?oc=5",
-          "source": "N+",
-          "date": "2026-11-13",
-          "published_at": "2026-11-13T18:27:34Z",
-          "category": "Movilidad",
-          "borough": "Tlalpan",
-          "location": "Tlalpan (mencionada en el titular)",
-          "local_url": "/noticias/?id=82a17a226600a52ad6cc&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con N+, el titular publicado es: «Accidente en la México-Cuernavac: Vuelca Tráiler en Tlalpan Hoy 13 de Noviembre del 2026». De acuerdo con N+, se informa de un hecho vial relacionado con vehículos en Tlalpan. El encabezado no permite determinar por sí solo si hubo personas lesionadas o fallecidas. Se requiere consultar la nota original para conocer el punto exacto, las circunstancias y los reportes oficiales, sin atribuir responsabilidades sin pruebas.",
-            "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
-            "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "contexto_periferico_sur_2015",
-            "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Periferico_sur.JPG/960px-Periferico_sur.JPG?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail&_=20150924185737",
-            "category": "Movilidad",
-            "borough": "",
-            "topic": "Periférico Sur desde Glorieta de Vaqueritos, Tlalpan, CDMX (2015); imagen representativa, no documenta el ataque ni el tramo exacto.",
-            "keywords": [
-              "Periférico Sur",
-              "tránsito vehicular",
-              "automovilistas",
-              "vialidad",
-              "Ciudad de México",
-              "Tlalpan"
-            ],
-            "author": "Victorcinco523",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-            "source": "https://commons.wikimedia.org/wiki/File:Periferico_sur.JPG"
-          }
         }
       ]
     },
@@ -19183,6 +19283,31 @@
           "borough": "Xochimilco",
           "location": "Xochimilco (mencionada en el titular)",
           "local_url": "/noticias/?id=4861ff59816e68367ca0&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con Capital CDMX, el titular publicado es: «Xochimilco 2026: 67.1% percibe inseguridad». La información publicada por Capital CDMX aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "contexto_policia_xochimilco",
+            "kind": "representativa",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Mexican_Police_station.JPG/960px-Mexican_Police_station.JPG",
+            "category": "Seguridad",
+            "borough": "",
+            "topic": "Estación de policía frente al Tren Ligero de Xochimilco (archivo 2015); no documenta denuncias de 2026.",
+            "keywords": [
+              "policía",
+              "seguridad",
+              "Xochimilco",
+              "estación de policía",
+              "Tren Ligero"
+            ],
+            "author": "Celinebj",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "source": "https://commons.wikimedia.org/wiki/File:Mexican_Police_station.JPG"
+          },
           "alternate_versions": [
             {
               "title": "Xochimilco: San Mateo Xalpa y La Cebada en cifras de 2024",
@@ -19250,32 +19375,7 @@
                 "source": "https://commons.wikimedia.org/wiki/File:Mariachis_-_Xochimilco,_Ciudad_de_M%C3%A9xico_II.jpg"
               }
             }
-          ],
-          "brief": {
-            "lead": "De acuerdo con Capital CDMX, el titular publicado es: «Xochimilco 2026: 67.1% percibe inseguridad». La información publicada por Capital CDMX aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "contexto_policia_xochimilco",
-            "kind": "representativa",
-            "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Mexican_Police_station.JPG/960px-Mexican_Police_station.JPG",
-            "category": "Seguridad",
-            "borough": "",
-            "topic": "Estación de policía frente al Tren Ligero de Xochimilco (archivo 2015); no documenta denuncias de 2026.",
-            "keywords": [
-              "policía",
-              "seguridad",
-              "Xochimilco",
-              "estación de policía",
-              "Tren Ligero"
-            ],
-            "author": "Celinebj",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-            "source": "https://commons.wikimedia.org/wiki/File:Mexican_Police_station.JPG"
-          }
+          ]
         },
         {
           "title": "Xochimilco: San Mateo Xalpa y La Cebada en cifras de 2024",
