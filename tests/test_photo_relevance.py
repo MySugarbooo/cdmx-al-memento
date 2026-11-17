@@ -3214,7 +3214,7 @@ class CurrentEditorialPhotoRegressionTests(unittest.TestCase):
             self.assertTrue(photo["licenseUrl"].startswith("https://creativecommons.org/"))
             self.assertTrue(photo["source"].startswith("https://commons.wikimedia.org/wiki/File:"))
         loader = (REPO_ROOT / "assets/creditos.js").read_text(encoding="utf-8")
-        self.assertIn("/assets/fotos/contexto-tematico.json?v=20261116-photo-context-corrections-1852", loader)
+        self.assertIn("/assets/fotos/contexto-tematico.json?v=20261116-america-femenil-photo-1853", loader)
         self.assertIn("new Map", loader)
         html = (REPO_ROOT / "creditos-fotograficos.html").read_text(encoding="utf-8")
         self.assertIn("creditos.js?v=20261116-photo-context-corrections-1852", html)
