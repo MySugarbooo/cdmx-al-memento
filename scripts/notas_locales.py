@@ -163,6 +163,23 @@ def is_elsol_49ers_altitude_story(article):
         and "estrategia" in title
     )
 
+RAFAEL_CASTRO_CAPITANES_HAWKS_SOURCE_URL = (
+    "https://mexico.as.com/masdeporte/rafael-castro-asciende-de-capitanes-cdmx-"
+    "a-los-atlanta-hawks-de-la-nba-f202611-n/"
+)
+
+
+def is_rafael_castro_capitanes_hawks_story(article):
+    """Identifica la nota de AS México sobre el ascenso de Rafael Castro a Atlanta."""
+    title = _photo_fold(article.get("title"))
+    return (
+        str(article.get("date") or "")[:10] == "2026-11-16"
+        and _photo_fold(article.get("source")) == "as mexico"
+        and all(term in title for term in (
+            "rafael castro", "capitanes cdmx", "atlanta hawks", "nba"
+        ))
+    )
+
 
 def is_capital_cdmx_cuajimalpa_crime_stats(article):
     """Identifica el desglose 2024 de denuncias por colonia en Cuajimalpa publicado por Capital CDMX."""
@@ -1301,6 +1318,34 @@ def summarize(article):
     category=str(article.get("category") or "CDMX")
     theme=TAGS.get(category,TAGS["CDMX"])
     folded_title=_photo_fold(title)
+    if is_rafael_castro_capitanes_hawks_story(article):
+        return {
+            "lead": (
+                "AS México informó el 16 de noviembre de 2026 que el pívot dominicano "
+                "Rafael Castro recibió un call-up de los Atlanta Hawks y firmará un "
+                "contrato de dos vías que lo vincula con el equipo de la NBA y su filial "
+                "de la G League, College Park Skyhawks. Es el décimo call-up en la historia "
+                "de Capitanes CDMX y el primero de la temporada 2026-27."
+            ),
+            "context": (
+                "La publicación señala que Castro disputó siete partidos con Capitanes "
+                "durante la temporada 2026-27, con promedios de 12 puntos, ocho rebotes "
+                "y un bloqueo por encuentro. Antes jugó en George Washington University "
+                "y participó en la NBA Summer League con Milwaukee Bucks."
+            ),
+            "pending": (
+                "La nota no confirma una fecha de debut con Atlanta ni minutos de juego. "
+                "El contrato de dos vías permite alternar entre los Hawks y su filial; "
+                "no equivale a una garantía de participación en cada partido."
+            ),
+            "method": (
+                "Síntesis editorial propia basada en AS México, 16 de noviembre de 2026: "
+                + RAFAEL_CASTRO_CAPITANES_HAWKS_SOURCE_URL
+                + ". La fotografía asignada muestra una cancha de baloncesto en Ciudad "
+                "Universitaria, UNAM, tomada en 2015; es una imagen representativa y no "
+                "muestra a Rafael Castro ni a Capitanes CDMX."
+            ),
+        }
     if is_maya_acta_nacimiento_story(article):
         return {
             "lead": (
@@ -3435,6 +3480,8 @@ def _photo_score(article, photo):
     context=topic+" "+keywords
     if is_elsol_49ers_altitude_story(article):
         return 5000 if photo.get("id") == "contexto_futbol_americano_nfl" else -10000
+    if is_rafael_castro_capitanes_hawks_story(article):
+        return 5000 if photo.get("id") == "commons_58302191" else -10000
     if is_sopitas_gorillaz_mural_story(article):
         return 5000 if photo.get("id") == "contexto_mural_urbano_cdmx_2014" else -10000
     if is_maya_acta_nacimiento_story(article):
