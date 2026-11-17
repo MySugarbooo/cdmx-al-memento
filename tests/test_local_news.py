@@ -959,7 +959,7 @@ class LocalNewsTests(unittest.TestCase):
         for point in ("km 19", "km 24", "km 47", "km 53", "km 100", "caseta Tlalpan"):
             self.assertIn(point, result["brief"]["lead"])
         self.assertIn("15:53", result["brief"]["lead"])
-        self.assertIn("no reporta cierres totales", result["brief"]["pending"])
+        self.assertIn("ni reporta cierres totales", result["brief"]["pending"])
         self.assertEqual(result["description"], result["brief"]["lead"])
         page = render(result, article_id(result))
         self.assertIn(DIARIO_MORELOS_MEXICO_ACAPULCO_TRAFFIC_SOURCE_URL, page)
