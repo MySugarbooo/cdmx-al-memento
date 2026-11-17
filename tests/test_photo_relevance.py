@@ -3717,7 +3717,7 @@ class CurrentFeedPhotoMismatchRegressionTests(unittest.TestCase):
         self.assertIsNotNone(court)
         self.assertEqual(court["author"], "Daniel Case")
         self.assertEqual(court["license"], "CC BY-SA 3.0")
-        self.assertIn("no documenta las obras anunciadas", court["topic"])
+        self.assertIn("no documenta obras ni partidos concretos", court["topic"])
         self.assertLess(_photo_score(article, treasury), 0)
         self.assertGreaterEqual(_photo_score(article, court), 0)
         with patch.object(photos, "_pool", return_value=[treasury, court]), patch.object(
@@ -5087,7 +5087,7 @@ class RafaelCastroBasketballPhotoRegressionTests(unittest.TestCase):
 
         pool = {photo["id"]: deepcopy(photo) for photo in photos._pool()}
         landmark = pool["commons_66033711"]
-        basketball = pool["contexto_baloncesto_cdmx_rafael_castro_2026"]
+        basketball = pool["commons_58302191"]
         self.assertLess(_photo_score(article, landmark), 0)
         self.assertEqual(_photo_score(article, basketball), 5000)
 
@@ -5099,7 +5099,7 @@ class RafaelCastroBasketballPhotoRegressionTests(unittest.TestCase):
 
         self.assertEqual(
             article["photo"]["id"],
-            "contexto_baloncesto_cdmx_rafael_castro_2026",
+            "commons_58302191",
         )
         self.assertEqual(article["photo"]["author"], "Daniel Case")
         self.assertEqual(article["photo"]["license"], "CC BY-SA 3.0")
@@ -5111,7 +5111,8 @@ class RafaelCastroBasketballPhotoRegressionTests(unittest.TestCase):
             article["photo"]["source"],
             "https://commons.wikimedia.org/wiki/File:Basketball_court_and_Humanities_Tower,_Ciudad_Universitaria,_Mexico_City.jpg",
         )
-        self.assertIn("foto representativa", article["photo"]["topic"])
-        self.assertIn("no muestra a Rafael Castro", article["photo"]["topic"])
+        self.assertEqual(article["photo"]["kind"], "representativa")
+        self.assertIn("foto de contexto", article["photo"]["topic"])
+        self.assertIn("no documenta obras ni partidos concretos", article["photo"]["topic"])
         self.assertLessEqual(len(article["photo"]["topic"]), 150)
 
