@@ -5038,5 +5038,8 @@ class November17AdditionalEditorialPhotoCorrectionsTests(unittest.TestCase):
             assign_photos([article])
 
         self.assertEqual(article["photo"]["id"], "contexto_pension_adultos_mayores_2019")
-        self.assertIn("no corresponde al programa", article["photo"]["topic"].lower())
+        expected_topic = "Archivo de la Pensión para el Bienestar de Adultos Mayores en CDMX (02/04/2019); no documenta el programa Pensión Hombres Bienestar 2026."
+        self.assertEqual(pension["topic"], expected_topic)
+        self.assertLessEqual(len(pension["topic"]), 150)
+        self.assertEqual(article["photo"]["topic"], expected_topic)
 
