@@ -573,6 +573,24 @@ def is_infobae_depeche_mode_story(article):
     )
 
 
+NPLUS_COYOACAN_MOTORCYCLE_FIRE_SOURCE_URL = (
+    "https://www.nmas.com.mx/ciudad-de-mexico/seguridad/"
+    "video-momento-exacto-en-que-hombre-incendia-motocicletas-en-coyoacan-cdmx/"
+)
+
+
+def is_nplus_coyoacan_motorcycle_fire_story(article):
+    """Identifica el incendio de motocicletas reportado por N+ en Pedregal de Santo Domingo."""
+    title = _photo_fold(article.get("title"))
+    source = _photo_fold(article.get("source"))
+    return (
+        str(article.get("date") or "")[:10] == "2026-11-17"
+        and source in {"n", "n mas"}
+        and "incendia motocicletas" in title
+        and "coyoacan" in title
+    )
+
+
 def is_infobae_america_femenil_pumas_semifinal_story(article):
     """Identifica la nota de Infobae sobre la semifinal América Femenil-Pumas."""
     title = _photo_fold(article.get("title"))
@@ -1431,6 +1449,29 @@ def summarize(article):
                 "Síntesis editorial basada en la publicación original de Maya Comunicación del 16 de noviembre "
                 "de 2026: " + MAYA_SECURITY_MEETING_SOURCE_URL +
                 ". La sede y los participantes se atribuyen al medio; no se infieren acuerdos no publicados."
+            ),
+        }
+    if is_nplus_coyoacan_motorcycle_fire_story(article):
+        return {
+            "lead": (
+                "N+ informó el 17 de noviembre de 2026 que cámaras de videovigilancia captaron a un hombre "
+                "prendiendo fuego a motocicletas estacionadas en la colonia Pedregal de Santo Domingo, "
+                "alcaldía Coyoacán. El fuego alcanzó una segunda motocicleta y dañó una camioneta cercana."
+            ),
+            "context": (
+                "La nota ubica los hechos en la calle Aztahuacan. Señala que acudieron Bomberos, ERUM y policías "
+                "capitalinos; el Heroico Cuerpo de Bomberos reportó dos motocicletas quemadas en su totalidad "
+                "y daños al motor de un vehículo particular."
+            ),
+            "pending": (
+                "N+ informó que no hubo personas lesionadas. El líquido que el hombre roció se describe como "
+                "presunta gasolina; la publicación no confirma su composición ni reporta detenciones."
+            ),
+            "method": (
+                "Síntesis editorial propia basada en N+, 17 de noviembre de 2026: "
+                + NPLUS_COYOACAN_MOTORCYCLE_FIRE_SOURCE_URL
+                + ". La imagen asignada es una fotografía de archivo de una motocicleta de apoyo de una brigada "
+                "voluntaria en el Zócalo (2017); no documenta el incendio de Coyoacán."
             ),
         }
     if is_infobae_depeche_mode_story(article):
@@ -3520,6 +3561,12 @@ def _photo_score(article, photo):
         return 5000 if photo.get("id") == "contexto_futbol_americano_nfl" else -10000
     if is_rafael_castro_capitanes_hawks_story(article):
         return 5000 if photo.get("id") == "commons_58302191" else -10000
+    if is_nplus_coyoacan_motorcycle_fire_story(article):
+        return (
+            5000
+            if photo.get("id") == "contexto_motocicleta_zocalo_brigada_2017"
+            else -10000
+        )
     if is_sopitas_gorillaz_mural_story(article):
         return 5000 if photo.get("id") == "contexto_mural_urbano_cdmx_2014" else -10000
     if is_maya_acta_nacimiento_story(article):
