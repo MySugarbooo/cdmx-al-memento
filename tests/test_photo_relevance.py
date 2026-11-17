@@ -1740,7 +1740,7 @@ class PhotoRelevanceTests(unittest.TestCase):
         )
         self.assertEqual(photo["author"], "ProtoplasmaKid")
         self.assertEqual(photo["license"], "CC BY-SA 4.0")
-        self.assertIn("no corresponde a la Feria", photo["topic"])
+        self.assertIn("no de la feria de La Magdalena Contreras", photo["topic"])
         self.assertGreaterEqual(_photo_score(article, photo), 0)
         with patch.object(photos, "_pool", return_value=[photo]), patch.object(
             photos, "_load", return_value=[]
