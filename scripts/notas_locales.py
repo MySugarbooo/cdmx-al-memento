@@ -463,6 +463,18 @@ def is_milenio_ruta_maiz_transport_story(article):
     )
 
 
+def is_debate_ruta_maiz_topilejo(article):
+    """Identifica la nota de El Debate sobre la Ruta del Maíz en Topilejo."""
+    title = _photo_fold(article.get("title"))
+    source = _photo_fold(article.get("source"))
+    return (
+        source in {"debate", "el debate"}
+        and "ruta del maiz" in title
+        and "topilejo" in title
+        and "la joya" in title
+    )
+
+
 def is_infopoder_ruta_maiz_topilejo(article):
     """Identifica la guía de la Ruta del Maíz en San Miguel Topilejo."""
     title = _photo_fold(article.get("title"))
@@ -3174,6 +3186,8 @@ def _photo_score(article, photo):
     if is_milenio_ruta_maiz_transport_story(article):
         return 5000 if photo.get("id") == "commons_112950009" else -10000
     if is_infopoder_ruta_maiz_topilejo(article):
+        return 5000 if photo.get("id") == "commons_112950009" else -10000
+    if is_debate_ruta_maiz_topilejo(article):
         return 5000 if photo.get("id") == "commons_112950009" else -10000
     # Asignaciones verificadas para las noticias del 16/11/2026.
     # Las fotografías son de archivo y se identifican como representativas, nunca como prueba del hecho.

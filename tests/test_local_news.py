@@ -4,7 +4,7 @@ import unittest
 from pathlib import Path
 from scripts.notas_locales import assign_photos, local_link, summarize, is_sensitive_media, RADIO_FORMULA_CASA_ECOLOGICA_SOURCE_URL, INFOBAE_MARIA_LEON_CONCERT_SOURCE_URL, AICM_FLIGHT_SUSPENSION_SOURCE_URL, LA_RAZON_GARBAGE_ZOCALO_SOURCE_URL, INFOBAE_GARBAGE_ZOCALO_SOURCE_URL
 from scripts.build_article_seo import article_id, render
-from update_news import clear_sensitive_context_photos, category_by_headline, standardize, photo_needs_refresh, CAPITAL_CDMX_CARE_BUDGET_SOURCE_URL, prioritize_photo_refresh, build_homepage_feed, archive_record_key, dedupe_homepage_events, INFOBAE_AIR_QUALITY_20261115_SOURCE_URL, BILLBOARD_KAROL_G_CDMX_SOURCE_URL, ELCONGRESISTA_BUEN_FIN_CDMX_SOURCE_URL, TV_AZTECA_HOY_NO_CIRCULA_20261116_SOURCE_URL, DIARIO_MORELOS_MEXICO_ACAPULCO_TRAFFIC_SOURCE_URL
+from update_news import clear_sensitive_context_photos, category_by_headline, standardize, photo_needs_refresh, CAPITAL_CDMX_CARE_BUDGET_SOURCE_URL, prioritize_photo_refresh, build_homepage_feed, archive_record_key, dedupe_homepage_events, INFOBAE_AIR_QUALITY_20261115_SOURCE_URL, BILLBOARD_KAROL_G_CDMX_SOURCE_URL, ELCONGRESISTA_BUEN_FIN_CDMX_SOURCE_URL, TV_AZTECA_HOY_NO_CIRCULA_20261116_SOURCE_URL, DIARIO_MORELOS_MEXICO_ACAPULCO_TRAFFIC_SOURCE_URL, DEBATE_RUTA_MAIZ_SOURCE_URL
 
 ROOT=Path(__file__).resolve().parents[1]
 
@@ -965,6 +965,29 @@ class LocalNewsTests(unittest.TestCase):
         self.assertIn(DIARIO_MORELOS_MEXICO_ACAPULCO_TRAFFIC_SOURCE_URL, page)
         self.assertNotIn(result["url"], page)
 
+
+    def test_debate_ruta_maiz_uses_direct_source_tlalpan_and_mobility_summary(self):
+        article = {
+            "title": "Inauguran Ruta del Maíz en CDMX: conectará Topilejo con La Joya por 4 pesos",
+            "url": "https://news.google.com/rss/articles/debate-ruta-maiz-20261116",
+            "source": "Debate",
+            "date": "2026-11-16",
+            "category": "Gobierno",
+        }
+        result = standardize(article)
+        self.assertIsNotNone(result)
+        self.assertEqual(result["source_url"], DEBATE_RUTA_MAIZ_SOURCE_URL)
+        self.assertEqual(result["category"], "Movilidad")
+        self.assertEqual(result["borough"], "Tlalpan")
+        self.assertEqual(result["location"], "San Miguel Topilejo–La Joya, alcaldía Tlalpan, Ciudad de México")
+        self.assertIn("15 autobuses", result["brief"]["lead"])
+        self.assertIn("10 a 15 minutos", result["brief"]["lead"])
+        self.assertIn("Línea 1 del Metrobús", result["brief"]["lead"])
+        self.assertIn("04:30 a 00:00", result["brief"]["pending"])
+        self.assertEqual(result["description"], result["brief"]["lead"])
+        page = render(result, article_id(result))
+        self.assertIn(DEBATE_RUTA_MAIZ_SOURCE_URL, page)
+        self.assertNotIn(result["url"], page)
 
     def test_tv_azteca_liveblog_does_not_misattribute_google_news_headline(self):
         article = {

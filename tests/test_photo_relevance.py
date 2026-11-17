@@ -4368,6 +4368,22 @@ class ContextPhotoRelevanceRegressionTests(unittest.TestCase):
         photo = self._assert_replacement(article, "gobierno", "commons_112950009", wrong)
         self.assertIn("San Miguel Topilejo", photo["topic"])
 
+    def test_debate_ruta_maiz_uses_topilejo_photo_not_palacio_nacional(self):
+        article = self._article(
+            "Inauguran Ruta del Maíz en CDMX: conectará Topilejo con La Joya por 4 pesos",
+            "Debate",
+        )
+        wrong = {
+            "id": "gobierno", "kind": "representativa", "category": "Gobierno",
+            "topic": "Fachada del Palacio Nacional", "keywords": ["Gobierno"],
+            "url": "/assets/fotos/gobierno.jpg",
+            "source": "https://commons.wikimedia.org/wiki/File:Palacio_Nacional_Ciudad_de_M%C3%A9xico.jpg",
+            "author": "MichaelCamacho", "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.es",
+        }
+        photo = self._assert_replacement(article, "gobierno", "commons_112950009", wrong)
+        self.assertIn("San Miguel Topilejo", photo["topic"])
+
     def test_milenio_ruta_maiz_uses_topilejo_photo_not_palacio_treasury(self):
         article = self._article(
             "Ruta del Maíz en CdMx: Paradas, horarios y costo de viajar en nueva red de transporte",

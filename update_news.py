@@ -22,7 +22,7 @@ from pathlib import Path
 from zoneinfo import ZoneInfo
 
 from scripts.analisis_editorial import build_editorial
-from scripts.notas_locales import local_link, summarize, assign_photos, _photo_score, is_sensitive_media, is_esto_49ers_fan_story, ESTO_49ERS_FANS_SOURCE_URL, is_coyotepec_highway_crash, INFOBAE_COYOTEPEC_HIGHWAY_CRASH_SOURCE_URL, is_san_juan_del_rio_autopista57_closure, SENSITIVE_MEDIA_TITLE, SAN_JUAN_DEL_RIO_AUTOPISTA57_SOURCE_URL, is_infobae_tlalpan_animal_abuse, is_la_prensa_tlalpan_animal_case, INFOBAE_TLALPAN_ANIMAL_SOURCE_URL, LA_PRENSA_TLALPAN_ANIMAL_SOURCE_URL, is_imagen_tlalpan_dog_rescue, is_huixtla_migrant_caravan, is_vc_fatal_trailer_incident, EL_GRAFICO_VC_TRAILER_SOURCE_URL, is_infobae_ballet_zapatilla, INFOBAE_BALLET_ZAPATILLA_SOURCE_URL, is_infobae_maria_leon_concert, INFOBAE_MARIA_LEON_CONCERT_SOURCE_URL, is_pulque_barbacoa_fair, is_mauricio_tabe_fifth_report, SDPNOTICIAS_MAURICIO_TABE_REPORT_SOURCE_URL, is_radio_formula_casa_ecologica, RADIO_FORMULA_CASA_ECOLOGICA_SOURCE_URL, is_capital_cdmx_care_budget, CAPITAL_CDMX_CARE_BUDGET_SOURCE_URL, is_la_jornada_aicm_flight_suspension, AICM_FLIGHT_SUSPENSION_SOURCE_URL, is_elsol_women_defensive_driving_workshop, EL_SOL_MUJERES_DEFENSIVE_DRIVING_SOURCE_URL, is_24horas_electric_mobility_plates_guide, HORAS_24_ELECTRIC_MOBILITY_SOURCE_URL, is_codigoqro_ignacio_detention, is_infobae_vite_balu_story, INFOBAE_VITE_BALU_SOURCE_URL, is_elsol_mexico_queretaro_trailer_rollover, EL_SOL_MEXICO_QUERETARO_TRAILER_SOURCE_URL, is_imer_animal_rights_march, IMER_ANIMAL_RIGHTS_MARCH_SOURCE_URL, is_diario_basta_alvaro_obregon_water_shortage, DIARIO_BASTA_ALVARO_OBREGON_WATER_SOURCE_URL, is_sociedad_noticias_garbage_zocalo, SOCIEDAD_NOTICIAS_GARBAGE_ZOCALO_SOURCE_URL, is_yahoo_garbage_zocalo, YAHOO_GARBAGE_ZOCALO_SOURCE_URL, is_la_razon_garbage_zocalo, LA_RAZON_GARBAGE_ZOCALO_SOURCE_URL, is_infobae_garbage_zocalo, INFOBAE_GARBAGE_ZOCALO_SOURCE_URL, INFOBAE_KAROL_G_HEALTH_SOURCE_URL, INFOBAE_KAROL_G_REPROGRAMMED_CONCERT_SOURCE_URL, is_infobae_karol_g_health_story, INFOBAE_AIR_QUALITY_20261115_SOURCE_URL, is_infobae_air_quality_report, BILLBOARD_KAROL_G_CDMX_SOURCE_URL, is_billboard_karol_g_concert_story, ELCONGRESISTA_BUEN_FIN_CDMX_SOURCE_URL, is_elcongresista_buen_fin_operation, TV_AZTECA_HOY_NO_CIRCULA_20261116_SOURCE_URL, is_tvazteca_hoy_no_circula_bridge_story, is_somoselmedio_valparaiso_exhibition_story, is_infobae_teacher_mental_health_story, is_capital_cdmx_cuajimalpa_crime_stats, CAPITAL_CDMX_CUAJIMALPA_CRIME_STATS_SOURCE_URL, is_capital_cdmx_vc_crime_stats, CAPITAL_CDMX_VENUSTIANO_CRIME_STATS_SOURCE_URL, is_tvazteca_revolucion_desfile_2026, TV_AZTECA_REVOLUCION_DESFILE_SOURCE_URL
+from scripts.notas_locales import local_link, summarize, assign_photos, _photo_score, is_sensitive_media, is_esto_49ers_fan_story, ESTO_49ERS_FANS_SOURCE_URL, is_coyotepec_highway_crash, INFOBAE_COYOTEPEC_HIGHWAY_CRASH_SOURCE_URL, is_san_juan_del_rio_autopista57_closure, SENSITIVE_MEDIA_TITLE, SAN_JUAN_DEL_RIO_AUTOPISTA57_SOURCE_URL, is_infobae_tlalpan_animal_abuse, is_la_prensa_tlalpan_animal_case, INFOBAE_TLALPAN_ANIMAL_SOURCE_URL, LA_PRENSA_TLALPAN_ANIMAL_SOURCE_URL, is_imagen_tlalpan_dog_rescue, is_huixtla_migrant_caravan, is_vc_fatal_trailer_incident, EL_GRAFICO_VC_TRAILER_SOURCE_URL, is_infobae_ballet_zapatilla, INFOBAE_BALLET_ZAPATILLA_SOURCE_URL, is_infobae_maria_leon_concert, INFOBAE_MARIA_LEON_CONCERT_SOURCE_URL, is_pulque_barbacoa_fair, is_mauricio_tabe_fifth_report, SDPNOTICIAS_MAURICIO_TABE_REPORT_SOURCE_URL, is_radio_formula_casa_ecologica, RADIO_FORMULA_CASA_ECOLOGICA_SOURCE_URL, is_capital_cdmx_care_budget, CAPITAL_CDMX_CARE_BUDGET_SOURCE_URL, is_la_jornada_aicm_flight_suspension, AICM_FLIGHT_SUSPENSION_SOURCE_URL, is_elsol_women_defensive_driving_workshop, EL_SOL_MUJERES_DEFENSIVE_DRIVING_SOURCE_URL, is_24horas_electric_mobility_plates_guide, HORAS_24_ELECTRIC_MOBILITY_SOURCE_URL, is_codigoqro_ignacio_detention, is_infobae_vite_balu_story, INFOBAE_VITE_BALU_SOURCE_URL, is_elsol_mexico_queretaro_trailer_rollover, EL_SOL_MEXICO_QUERETARO_TRAILER_SOURCE_URL, is_imer_animal_rights_march, IMER_ANIMAL_RIGHTS_MARCH_SOURCE_URL, is_diario_basta_alvaro_obregon_water_shortage, DIARIO_BASTA_ALVARO_OBREGON_WATER_SOURCE_URL, is_sociedad_noticias_garbage_zocalo, SOCIEDAD_NOTICIAS_GARBAGE_ZOCALO_SOURCE_URL, is_yahoo_garbage_zocalo, YAHOO_GARBAGE_ZOCALO_SOURCE_URL, is_la_razon_garbage_zocalo, LA_RAZON_GARBAGE_ZOCALO_SOURCE_URL, is_infobae_garbage_zocalo, INFOBAE_GARBAGE_ZOCALO_SOURCE_URL, INFOBAE_KAROL_G_HEALTH_SOURCE_URL, INFOBAE_KAROL_G_REPROGRAMMED_CONCERT_SOURCE_URL, is_infobae_karol_g_health_story, INFOBAE_AIR_QUALITY_20261115_SOURCE_URL, is_infobae_air_quality_report, BILLBOARD_KAROL_G_CDMX_SOURCE_URL, is_billboard_karol_g_concert_story, ELCONGRESISTA_BUEN_FIN_CDMX_SOURCE_URL, is_elcongresista_buen_fin_operation, TV_AZTECA_HOY_NO_CIRCULA_20261116_SOURCE_URL, is_tvazteca_hoy_no_circula_bridge_story, is_somoselmedio_valparaiso_exhibition_story, is_infobae_teacher_mental_health_story, is_capital_cdmx_cuajimalpa_crime_stats, CAPITAL_CDMX_CUAJIMALPA_CRIME_STATS_SOURCE_URL, is_capital_cdmx_vc_crime_stats, CAPITAL_CDMX_VENUSTIANO_CRIME_STATS_SOURCE_URL, is_tvazteca_revolucion_desfile_2026, TV_AZTECA_REVOLUCION_DESFILE_SOURCE_URL, is_debate_ruta_maiz_topilejo
 
 ROOT = Path(__file__).resolve().parent
 DEST = ROOT / "news.json"
@@ -52,6 +52,7 @@ AHORA_NOTICIAS_TLALPAN_PERRITA_SOURCE_URL = "https://ahoranoticias.com.mx/nacion
 EL_SOL_ANIMAL_ABUSE_COMPLAINTS_SOURCE_URL = "https://oem.com.mx/elsoldemexico/metropoli/en-cdmx-15-colonias-de-6-alcaldias-concentran-denuncias-por-maltrato-animal-33109336"
 LA_PRENSA_PREHOSPITAL_CARE_SOURCE_URL = "https://oem.com.mx/la-prensa/metropoli/cdmx-busca-modernizar-la-atencion-prehospitalaria-con-plataforma-digital-de-la-ops-oms-inicia-prueba-piloto-con-tres-am-33136134"
 DIARIO_MORELOS_MEXICO_ACAPULCO_TRAFFIC_SOURCE_URL = "https://www.diariodemorelos.com/noticias/reportan-trafico-intenso-en-mexico-acapulco-rumbo-cdmx-estos-son-puntos-afectados"
+DEBATE_RUTA_MAIZ_SOURCE_URL = "https://www.debate.com.mx/cdmx/inauguran-ruta-del-maiz-en-cdmx-conectara-topilejo-con-la-joya-por-4-pesos-20261116-0230.html"
 MAIL = "sanchezaxochitl@gmail.com"
 RETENTION_DAYS = 365
 
@@ -407,6 +408,8 @@ def category_by_headline(title, feed_category, source=""):
     normalized = fold(title)
     normalized_source = fold(source)
     if is_diario_morelos_mexico_acapulco_traffic({"title": title, "source": source}):
+        return "Movilidad"
+    if is_debate_ruta_maiz_topilejo({"title": title, "source": source}):
         return "Movilidad"
     # El desabasto y el tandeo son servicios públicos; no deben quedar como CDMX genérico.
     if re.search(r"\b(?:carecen de agua|falta de agua|sin agua|tandeo|desabasto de agua|corte de agua|suspension de agua)\b", normalized):
@@ -1149,6 +1152,31 @@ def standardize(article):
             "method": (
                 "Síntesis editorial propia basada en la publicación original de Diario de Morelos del "
                 "16 de noviembre de 2026; no equivale a una verificación independiente del tránsito."
+            ),
+        }
+    if is_debate_ruta_maiz_topilejo(result):
+        result["source_url"] = DEBATE_RUTA_MAIZ_SOURCE_URL
+        result["category"] = "Movilidad"
+        result["borough"] = "Tlalpan"
+        result["location"] = "San Miguel Topilejo–La Joya, alcaldía Tlalpan, Ciudad de México"
+        result["brief"] = {
+            "lead": (
+                "El Debate informó el 16 de noviembre de 2026 a las 18:21 h que la Ruta del Maíz de RTP conecta "
+                "San Miguel Topilejo, en la alcaldía Tlalpan, con la estación La Joya de la Línea 1 del Metrobús. "
+                "El servicio contempla 15 autobuses, tarifa de 4 pesos y frecuencias estimadas de 10 a 15 minutos; "
+                "también fortalece las conexiones hacia Ciudad Universitaria, el Estadio Azteca y Xochimilco."
+            ),
+            "context": (
+                "La conexión amplía las opciones de transporte para habitantes de Topilejo y facilita el enlace "
+                "con la Línea 1 del Metrobús y otros destinos del sur de la ciudad."
+            ),
+            "pending": (
+                "El Debate reportó servicio diario de 04:30 a 00:00 h y frecuencias estimadas de 10 a 15 minutos. "
+                "La nota no ofrece seguimiento operativo en tiempo real; confirmar cambios de servicio con RTP."
+            ),
+            "method": (
+                "Síntesis editorial propia basada en la publicación original de El Debate del 16 de noviembre de 2026; "
+                "no equivale a verificación independiente de la operación en tiempo real."
             ),
         }
     result["description"] = result["brief"]["lead"]
