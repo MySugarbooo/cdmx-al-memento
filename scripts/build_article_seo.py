@@ -91,6 +91,7 @@ VERIFIED_SOURCE_URLS = frozenset({
     "https://mayacomunicacion.com.mx/acta-de-nacimiento-cdmx/",
     "https://mayacomunicacion.com.mx/cdmx-se-suma-al-frente-interestatal-de-seguridad-del-centro-del-pais/",
     "https://www.infobae.com/mexico/2026/11/17/concierto-tributo-a-depeche-mode-en-la-cdmx-horario-fecha-y-sede-del-evento-gratuito/",
+    "https://voxpopulinoticias.com.mx/2026/11/belinda-recuerda-su-infancia-tras-cantar-con-karol-g-en-cdmx/",
 })
 SENSITIVE_MEDIA_TITLE = re.compile(
     r"\b(?:violaci[oó]n|abuso sexual|agresi[oó]n sexual|acoso sexual|violencia sexual|"

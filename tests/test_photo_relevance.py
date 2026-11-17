@@ -3300,10 +3300,10 @@ class CurrentEditorialPhotoRegressionTests(unittest.TestCase):
             self.assertTrue(photo["licenseUrl"].startswith("https://creativecommons.org/"))
             self.assertTrue(photo["source"].startswith("https://commons.wikimedia.org/wiki/File:"))
         loader = (REPO_ROOT / "assets/creditos.js").read_text(encoding="utf-8")
-        self.assertIn("/assets/fotos/contexto-tematico.json?v=20261117-thalia-photo-0806", loader)
+        self.assertIn("/assets/fotos/contexto-tematico.json?v=20261117-belinda-photo-0856", loader)
         self.assertIn("new Map", loader)
         html = (REPO_ROOT / "creditos-fotograficos.html").read_text(encoding="utf-8")
-        self.assertIn("creditos.js?v=20261117-thalia-photo-0806", html)
+        self.assertIn("creditos.js?v=20261117-belinda-photo-0856", html)
         for photo_id in (
             "contexto_autopista_sol_mexico_acapulco",
             "contexto_gallinero_chinampa_xochimilco",
@@ -5200,4 +5200,24 @@ class RafaelCastroBasketballPhotoRegressionTests(unittest.TestCase):
         self.assertIn("foto de contexto", article["photo"]["topic"])
         self.assertIn("no documenta obras ni partidos concretos", article["photo"]["topic"])
         self.assertLessEqual(len(article["photo"]["topic"]), 150)
+
+    def test_belinda_story_rejects_thalia_archival_photo(self):
+        article = {
+            "title": "Belinda recuerda su infancia tras cantar con Karol G en CDMX",
+            "source": "Vox Populi",
+            "date": "2026-11-17",
+            "category": "Cultura",
+        }
+        pool = photos._pool()
+        belinda_photo = next(p for p in pool if p.get("id") == "contexto_belinda_2021")
+        thalia_photo = next(p for p in pool if p.get("id") == "contexto_thalia_vina_1997")
+
+        self.assertEqual(_photo_score(article, belinda_photo), 5000)
+        self.assertEqual(_photo_score(article, thalia_photo), -10000)
+        self.assertNotIn("Karol G", thalia_photo.get("keywords", []))
+        self.assertNotIn("concierto", [str(k).casefold() for k in thalia_photo.get("keywords", [])])
+        self.assertNotIn("Karol G", thalia_photo.get("topic", ""))
+        self.assertNotIn("concierto", thalia_photo.get("topic", "").casefold())
+        self.assertNotIn("Karol G", belinda_photo.get("topic", ""))
+        self.assertNotIn("concierto", belinda_photo.get("topic", "").casefold())
 

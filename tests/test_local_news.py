@@ -82,12 +82,52 @@ class LocalNewsTests(unittest.TestCase):
         self.assertEqual(result["photo"]["license"], "CC BY 3.0")
         self.assertEqual(result["photo"]["licenseUrl"], "https://creativecommons.org/licenses/by/3.0/")
         self.assertTrue(result["photo"]["url"].startswith("https://upload.wikimedia.org/wikipedia/commons/"))
-        self.assertIn("no corresponde al concierto con Karol G en CDMX", result["photo"]["topic"])
+        self.assertIn("retrato de archivo", result["photo"]["topic"])
 
         page = render(result, article_id(result))
         self.assertIn(source_url, page)
         self.assertIn("Festival Viña del mar", page)
         self.assertIn("CC BY 3.0", page)
+        self.assertNotIn(rss_url, page)
+
+    def test_voxpopuli_belinda_story_uses_direct_source_summary_and_belinda_archival_photo(self):
+        source_url = "https://voxpopulinoticias.com.mx/2026/11/belinda-recuerda-su-infancia-tras-cantar-con-karol-g-en-cdmx/"
+        rss_url = "https://news.google.com/rss/articles/belinda-karol-g-20261117?oc=5"
+        result = standardize({
+            "title": "Belinda recuerda su infancia tras cantar con Karol G en CDMX",
+            "url": rss_url,
+            "source": "Vox Populi",
+            "date": "2026-11-17",
+            "published_at": "2026-11-17T13:48:14Z",
+            "category": "Cultura",
+        })
+        self.assertIsNotNone(result)
+        self.assertEqual(result["source_url"], source_url)
+        self.assertEqual(result["category"], "Cultura")
+        self.assertEqual(result["borough"], "")
+        self.assertIn("Estadio GNP Seguros", result["location"])
+        self.assertIn("trencita", result["brief"]["lead"])
+        self.assertIn("segunda noche", result["brief"]["context"])
+        self.assertIn("Bella Traición", result["brief"]["context"])
+        self.assertIn("Luz Sin Gravedad", result["brief"]["context"])
+        self.assertIn("no aporta una cifra de asistencia", result["brief"]["pending"])
+        self.assertIn("foto de archivo", result["brief"]["method"])
+        self.assertEqual(result["description"], result["brief"]["lead"])
+
+        assign_photos([result])
+        self.assertEqual(result["photo"]["id"], "contexto_belinda_2021")
+        self.assertEqual(result["photo"]["author"], "Axioma Films")
+        self.assertEqual(result["photo"]["license"], "CC BY-SA 3.0")
+        self.assertEqual(result["photo"]["licenseUrl"], "https://creativecommons.org/licenses/by-sa/3.0/")
+        self.assertIn("retrato de archivo", result["photo"]["topic"])
+        self.assertNotIn("Karol G", result["photo"]["topic"])
+        self.assertNotIn("concierto", result["photo"]["topic"].casefold())
+
+        page = render(result, article_id(result))
+        self.assertIn(source_url, page)
+        self.assertIn("Ver fuente original", page)
+        self.assertIn("Axioma Films", page)
+        self.assertIn("CC BY-SA 3.0", page)
         self.assertNotIn(rss_url, page)
 
     def test_infobae_karol_g_health_rumor_is_neutralized_and_linked_directly(self):
