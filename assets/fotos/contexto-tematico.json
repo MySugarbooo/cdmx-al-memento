@@ -177,23 +177,28 @@
       "context": "Imagen de carácter ilustrativo y referencial; no constituye evidencia gráfica de Pokémon Go ni de la mercancía asegurada en Plaza Meave."
     },
     {
-      "id": "contexto_concierto_palacio_deportes_2009",
+      "id": "contexto_teatro_metropolitan_2019",
       "kind": "representativa",
       "category": "Cultura",
-      "topic": "Concierto de Kings of Leon en el Palacio de los Deportes, CDMX (octubre de 2009); foto de archivo representativa, no documenta eventos de la noticia.",
+      "topic": "Fachada del Teatro Metropólitan en la calle Independencia, Centro Histórico de Ciudad de México (archivo 2019); no muestra el concierto de Golden Ganga de 2027.",
       "keywords": [
-        "concierto",
+        "Teatro Metropólitan",
+        "Golden Ganga",
+        "conciertos",
         "música en vivo",
-        "Palacio de los Deportes",
-        "Ciudad de México",
-        "escenario",
-        "público"
+        "Centro Histórico",
+        "Cuauhtémoc",
+        "Independencia"
       ],
-      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/PalaciodelosDeportes_Concierto.jpg/960px-PalaciodelosDeportes_Concierto.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:PalaciodelosDeportes_Concierto.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Teatro_Metropolitan%2C_Calle_Independencia_-_monocromo.jpg/960px-Teatro_Metropolitan%2C_Calle_Independencia_-_monocromo.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Teatro_Metropolitan,_Calle_Independencia_-_monocromo.jpg",
       "author": "ProtoplasmaKid",
       "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "borough": "Cuauhtémoc",
+      "captured_at": "2019-01-19",
+      "uploaded_at": "2019-03-05",
+      "adaptation": "Fotografía del recinto tomada el 19 de enero de 2019; no corresponde a la presentación de Golden Ganga anunciada para el 21 de febrero de 2027."
     },
     {
       "id": "contexto_repartidores_motocicleta_cdmx",
@@ -907,6 +912,240 @@
       "captured_at": "2023-06-03",
       "context": "Fotografía de la alberca olímpica en Utopía Meyehualco, Iztapalapa; ilustra una instalación del programa, no documenta las incorporaciones de 2026 ni representa a todas las unidades.",
       "adaptation": "Miniatura oficial de Wikimedia Commons; sin modificación."
+    },
+    {
+      "id": "contexto_autopista_sol_mexico_acapulco",
+      "category": "Movilidad",
+      "topic": "Paisaje de la Autopista del Sol en Guerrero (archivo 2008); no muestra el tráfico ni los puntos afectados.",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Paisaje_de_la_Autopista_del_Sol_Mexico_-_Acapulco_-_panoramio.jpg/960px-Paisaje_de_la_Autopista_del_Sol_Mexico_-_Acapulco_-_panoramio.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Paisaje_de_la_Autopista_del_Sol_Mexico_-_Acapulco_-_panoramio.jpg",
+      "author": "jc_castaneda",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "keywords": [
+        "Autopista del Sol",
+        "México-Acapulco",
+        "carretera",
+        "Guerrero",
+        "Río Mezcala",
+        "tráfico"
+      ],
+      "borough": "Guerrero",
+      "adaptation": "Paisaje de la ruta México–Acapulco; no muestra los puntos de tráfico citados en la nota."
+    },
+    {
+      "id": "contexto_gallinero_chinampa_xochimilco",
+      "category": "Servicios",
+      "topic": "Gallinero artesanal en una chinampa de Xochimilco (archivo 2018); no corresponde al programa de 2026.",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Gallinero_hecho_a_mano_en_chinampa.jpg/960px-Gallinero_hecho_a_mano_en_chinampa.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Gallinero_hecho_a_mano_en_chinampa.jpg",
+      "author": "Diego M.P.",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "keywords": [
+        "gallinas",
+        "gallinero",
+        "aves de corral",
+        "ponedoras",
+        "huevo",
+        "Xochimilco",
+        "chinampa"
+      ],
+      "borough": "Xochimilco",
+      "adaptation": "Fotografía de archivo de 2018; no documenta la entrega de las 15 aves anunciadas en 2026."
+    },
+    {
+      "id": "contexto_boleta_electoral_mexico_2012",
+      "category": "Gobierno",
+      "topic": "Paquete electoral postal mexicano de 2012; no es el material recuperado en CDMX en 2026.",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Boleta_electoral_marcada%2C_de_las_elecciones_federales_de_M%C3%A9xico_de_2012.JPG/960px-Boleta_electoral_marcada%2C_de_las_elecciones_federales_de_M%C3%A9xico_de_2012.JPG",
+      "source": "https://commons.wikimedia.org/wiki/File:Boleta_electoral_marcada,_de_las_elecciones_federales_de_M%C3%A9xico_de_2012.JPG",
+      "author": "Lguweqaakljgh",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "keywords": [
+        "boleta electoral",
+        "material electoral",
+        "elecciones",
+        "paquete electoral",
+        "libros",
+        "reciclaje"
+      ],
+      "borough": "",
+      "adaptation": "Boleta postal de 2012; no es el material electoral que se transformará en libros en 2026."
+    },
+    {
+      "id": "contexto_peregrinos_basilica_cdmx",
+      "category": "Cultura",
+      "topic": "Peregrinos en Calzada de Tlalpan hacia la Basílica (archivo 2019); no corresponde al grupo de Córdoba.",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Peregrinos_caminando_hacia_la_Bas%C3%ADlica_de_Guadalupe.jpg/960px-Peregrinos_caminando_hacia_la_Bas%C3%ADlica_de_Guadalupe.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Peregrinos_caminando_hacia_la_Bas%C3%ADlica_de_Guadalupe.jpg",
+      "author": "ProtoplasmaKid",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "peregrinos",
+        "peregrinación",
+        "Basílica de Guadalupe",
+        "Calzada de Tlalpan",
+        "CDMX",
+        "religión"
+      ],
+      "borough": "",
+      "adaptation": "Fotografía de peregrinación en CDMX en 2019; no corresponde al grupo que pernoctó en Córdoba."
+    },
+    {
+      "id": "contexto_policia_xochimilco",
+      "category": "Seguridad",
+      "topic": "Estación de policía frente al Tren Ligero de Xochimilco (archivo 2015); no documenta denuncias de 2026.",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Mexican_Police_station.JPG/960px-Mexican_Police_station.JPG",
+      "source": "https://commons.wikimedia.org/wiki/File:Mexican_Police_station.JPG",
+      "author": "Celinebj",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "keywords": [
+        "policía",
+        "seguridad",
+        "Xochimilco",
+        "estación de policía",
+        "Tren Ligero"
+      ],
+      "borough": "Xochimilco",
+      "adaptation": "Estación de policía en Xochimilco; no representa una denuncia ni una investigación de 2026."
+    },
+    {
+      "id": "contexto_central_abasto_iztapalapa",
+      "category": "Servicios",
+      "topic": "Especias en la Central de Abasto de Iztapalapa (archivo 2015); representa el lugar, no las cifras de 2024.",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Central_de_Abasto_de_la_Ciudad_de_M%C3%A9xico_-_6.JPG/960px-Central_de_Abasto_de_la_Ciudad_de_M%C3%A9xico_-_6.JPG",
+      "source": "https://commons.wikimedia.org/wiki/File:Central_de_Abasto_de_la_Ciudad_de_M%C3%A9xico_-_6.JPG",
+      "author": "ProtoplasmaKid",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "keywords": [
+        "Central de Abasto",
+        "Iztapalapa",
+        "mercado",
+        "alimentos",
+        "especias",
+        "comercio"
+      ],
+      "borough": "Iztapalapa",
+      "adaptation": "Fotografía de especias en la Central de Abasto; ilustra el sitio, no los datos de 2024."
+    },
+    {
+      "id": "contexto_metro_el_rosario_2025",
+      "category": "Movilidad",
+      "topic": "Letrero de la estación El Rosario del Metro (archivo 2025); referencia de lugar, no de denuncias.",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Metro_El_Rosario_%282025%29_8.jpg/960px-Metro_El_Rosario_%282025%29_8.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Metro_El_Rosario_%282025%29_8.jpg",
+      "author": "Tbhotch",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "keywords": [
+        "El Rosario",
+        "Azcapotzalco",
+        "Metro",
+        "estación",
+        "Línea 6",
+        "CDMX"
+      ],
+      "borough": "Azcapotzalco",
+      "adaptation": "Fotografía de la estación El Rosario; ilustra la zona, no las denuncias registradas."
+    },
+    {
+      "id": "contexto_tacos_cdmx_2013",
+      "category": "Cultura",
+      "topic": "Tacos al pastor en el Centro Histórico de CDMX (archivo 2013); no representa locales del Foodie Passport.",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Street_tacos_in_Mexico_City_%288495923877%29.jpg/960px-Street_tacos_in_Mexico_City_%288495923877%29.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Street_tacos_in_Mexico_City_%288495923877%29.jpg",
+      "author": "LWYang",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "keywords": [
+        "tacos",
+        "gastronomía",
+        "comida callejera",
+        "Foodie Passport",
+        "CDMX",
+        "restaurantes"
+      ],
+      "borough": "Cuauhtémoc",
+      "adaptation": "Foto de tacos al pastor en CDMX; no identifica a los restaurantes del Foodie Passport."
+    },
+    {
+      "id": "contexto_hotel_corporativo_cdmx",
+      "category": "Servicios",
+      "topic": "Gran Hotel Ciudad de México (archivo); alojamiento urbano, no un viaje corporativo específico.",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Gran_Hotel_Ciudad_de_M%C3%A9xico_formerly_El_Centro_Mercantil.jpg/960px-Gran_Hotel_Ciudad_de_M%C3%A9xico_formerly_El_Centro_Mercantil.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Gran_Hotel_Ciudad_de_M%C3%A9xico_formerly_El_Centro_Mercantil.jpg",
+      "author": "Jeff Reuben",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "keywords": [
+        "viajes corporativos",
+        "hoteles",
+        "alojamiento",
+        "negocios",
+        "Centro Histórico"
+      ],
+      "borough": "Cuauhtémoc",
+      "adaptation": "Foto de archivo de un hotel del Centro Histórico; no representa a un viaje corporativo específico."
+    },
+    {
+      "id": "contexto_patrullas_iztapalapa_denuncias",
+      "category": "Seguridad",
+      "topic": "Patrullas en Iztapalapa, foto de archivo; no documenta las denuncias ni las cifras de 2024/2026.",
+      "url": "/assets/fotos/archivo_seguridad_011.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Claudia_Sheinbaum_entrega_patrullas_Iztapalapa_02.jpg",
+      "author": "Gobierno de la Ciudad de México",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "keywords": [
+        "Iztapalapa",
+        "patrullas",
+        "seguridad",
+        "denuncias"
+      ],
+      "borough": "Iztapalapa",
+      "adaptation": "Foto de archivo de patrullas entregadas en Iztapalapa; no documenta las denuncias de las colonias."
+    },
+    {
+      "id": "contexto_proteccion_civil_explosion_cdmx",
+      "category": "Seguridad",
+      "topic": "Protección Civil CDMX (foto de archivo); imagen institucional, no corresponde a la explosión descrita.",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Protecci%C3%B3n_civil_CDMX_-i---i-_%2837018504046%29.jpg/960px-Protecci%C3%B3n_civil_CDMX_-i---i-_%2837018504046%29.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Protecci%C3%B3n_civil_CDMX_-i---i-_(37018504046).jpg",
+      "author": "Gobierno CDMX",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "keywords": [
+        "Protección Civil CDMX",
+        "emergencias",
+        "explosión",
+        "respuesta institucional"
+      ],
+      "borough": "",
+      "adaptation": "Imagen institucional de Protección Civil; no corresponde al siniestro de la nota."
+    },
+    {
+      "id": "contexto_posada_iztacalco_1974",
+      "category": "Cultura",
+      "topic": "Posada en Picos de Iztacalco (archivo 1974); no documenta la posada de la noticia.",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/014783-015_POSADA_EN_PICOS_DE_IZTACALCO_DICIEMBRE_18_1974_%2827120254239%29.jpg/960px-014783-015_POSADA_EN_PICOS_DE_IZTACALCO_DICIEMBRE_18_1974_%2827120254239%29.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:014783-015_POSADA_EN_PICOS_DE_IZTACALCO_DICIEMBRE_18_1974_(27120254239).jpg",
+      "author": "Gobierno CDMX",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "keywords": [
+        "posada",
+        "Iztacalco",
+        "fiestas decembrinas",
+        "piñata",
+        "celebración"
+      ],
+      "borough": "Iztacalco",
+      "adaptation": "Foto de archivo de una posada en Iztacalco en 1974; no es la posada que motivó la noticia."
     }
   ]
 }

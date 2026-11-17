@@ -226,14 +226,13 @@ class PhotoRelevanceTests(unittest.TestCase):
         self.assertNotIn("marcha", photo["topic"].lower())
         self.assertLessEqual(len(photo["topic"]), 140)
 
-    def test_shared_concert_photo_caption_is_generic_in_all_catalogs(self):
+    def test_golden_ganga_uses_exact_venue_photo_and_shared_concert_archive_stays_generic(self):
         expected = "Concierto de Kings of Leon en el Palacio de los Deportes, CDMX (octubre de 2009); foto de archivo representativa, no documenta eventos de la noticia."
-        relative_paths = (
-            "assets/fotos/contexto-tematico.json",
+        shared_paths = (
             "assets/fotos/indice-noticias-1100.json",
             "assets/fotos/catalogo-editorial-1100.json",
         )
-        for relative in relative_paths:
+        for relative in shared_paths:
             with self.subTest(path=relative):
                 data = json.loads((REPO_ROOT / relative).read_text(encoding="utf-8"))
                 photo = next(
@@ -244,6 +243,19 @@ class PhotoRelevanceTests(unittest.TestCase):
                 self.assertIsNotNone(photo, relative)
                 self.assertEqual(photo.get("topic"), expected)
                 self.assertNotIn("María León", photo.get("topic", ""))
+
+        context = json.loads(
+            (REPO_ROOT / "assets/fotos/contexto-tematico.json").read_text(encoding="utf-8")
+        )
+        venue = next(
+            (item for item in context.get("photos", [])
+             if item.get("id") == "contexto_teatro_metropolitan_2019"),
+            None,
+        )
+        self.assertIsNotNone(venue)
+        self.assertIn("Teatro Metropólitan", venue.get("topic", ""))
+        self.assertIn("no muestra el concierto de Golden Ganga", venue.get("topic", ""))
+        self.assertIn("no corresponde a la presentación de Golden Ganga", venue.get("adaptation", ""))
 
     def test_robar_infinitive_classifies_store_robbery_and_rejects_city_landmark(self):
         title = ("2996: En la alcaldía Venustiano Carranza, efectivos de la SSC "
@@ -3178,7 +3190,23 @@ class CurrentEditorialPhotoRegressionTests(unittest.TestCase):
     def test_contextual_photo_credits_are_merged_into_public_credit_catalog(self):
         data = json.loads((REPO_ROOT / "assets/fotos/contexto-tematico.json").read_text(encoding="utf-8"))
         photos = {item["id"]: item for item in data["photos"]}
-        for photo_id in ("contexto_publicidad_edificios_condesa_2013", "contexto_pokemon_go_bench_2016", "contexto_concierto_foro_sol_2023"):
+        for photo_id in (
+            "contexto_publicidad_edificios_condesa_2013",
+            "contexto_pokemon_go_bench_2016",
+            "contexto_concierto_foro_sol_2023",
+            "contexto_autopista_sol_mexico_acapulco",
+            "contexto_gallinero_chinampa_xochimilco",
+            "contexto_boleta_electoral_mexico_2012",
+            "contexto_peregrinos_basilica_cdmx",
+            "contexto_policia_xochimilco",
+            "contexto_central_abasto_iztapalapa",
+            "contexto_metro_el_rosario_2025",
+            "contexto_tacos_cdmx_2013",
+            "contexto_hotel_corporativo_cdmx",
+            "contexto_patrullas_iztapalapa_denuncias",
+            "contexto_proteccion_civil_explosion_cdmx",
+            "contexto_posada_iztacalco_1974",
+        ):
             photo = photos.get(photo_id)
             self.assertIsNotNone(photo)
             self.assertTrue(photo["author"])
@@ -3186,8 +3214,22 @@ class CurrentEditorialPhotoRegressionTests(unittest.TestCase):
             self.assertTrue(photo["licenseUrl"].startswith("https://creativecommons.org/"))
             self.assertTrue(photo["source"].startswith("https://commons.wikimedia.org/wiki/File:"))
         loader = (REPO_ROOT / "assets/creditos.js").read_text(encoding="utf-8")
-        self.assertIn("/assets/fotos/contexto-tematico.json", loader)
+        self.assertIn("/assets/fotos/contexto-tematico.json?v=20261116-photo-context-corrections-1852", loader)
         self.assertIn("new Map", loader)
+        html = (REPO_ROOT / "creditos-fotograficos.html").read_text(encoding="utf-8")
+        self.assertIn("creditos.js?v=20261116-photo-context-corrections-1852", html)
+        for photo_id in (
+            "contexto_autopista_sol_mexico_acapulco",
+            "contexto_gallinero_chinampa_xochimilco",
+            "contexto_boleta_electoral_mexico_2012",
+            "contexto_peregrinos_basilica_cdmx",
+            "contexto_policia_xochimilco",
+            "contexto_central_abasto_iztapalapa",
+            "contexto_metro_el_rosario_2025",
+            "contexto_tacos_cdmx_2013",
+        ):
+            self.assertLessEqual(len(photos[photo_id]["topic"]), 150)
+            self.assertTrue(photos[photo_id].get("adaptation"))
 
     def test_current_feed_rejects_unrelated_hydraulic_nightlife_and_security_photos(self):
         cases = (
@@ -4528,6 +4570,36 @@ class InfobaeTeacherMentalHealthPhotoRegressionTests(unittest.TestCase):
 
 
 class CapitalCdmxColonyCrimeStatsPhotoRegressionTests(unittest.TestCase):
+    def _article(self, title, source):
+        article = news.standardize({
+            "title": title,
+            "url": "https://news.google.com/rss/articles/context-photo-audit-" + source.lower().replace(" ", "-"),
+            "source": source,
+            "date": "2026-11-16",
+            "published_at": "2026-11-16T18:00:00Z",
+            "category": "CDMX",
+        })
+        self.assertIsNotNone(article)
+        return article
+
+    def _assert_replacement(self, article, wrong_id, preferred_id, wrong_override=None):
+        pool = {photo["id"]: photo for photo in photos._pool()}
+        wrong = deepcopy(pool[wrong_id]) if wrong_id in pool else deepcopy(wrong_override)
+        preferred = deepcopy(pool[preferred_id])
+        self.assertIsNotNone(wrong)
+        article["photo"] = wrong
+        self.assertLess(_photo_score(article, wrong), 0)
+        self.assertEqual(_photo_score(article, preferred), 5000)
+        with patch.object(photos, "_pool", return_value=[wrong, preferred]), patch.object(
+            photos, "_load", return_value=[]
+        ):
+            assign_photos([article])
+        self.assertEqual(article["photo"]["id"], preferred_id)
+        self.assertTrue(article["photo"]["author"])
+        self.assertTrue(article["photo"]["license"])
+        self.assertTrue(article["photo"]["source"].startswith("https://commons.wikimedia.org/wiki/File:"))
+        return article["photo"]
+
     def test_santa_fe_cuajimalpa_story_uses_local_photo_and_cites_original(self):
         article = news.standardize({
             "title": "Santa Fe concentró 207 denuncias en 2024: las cifras por colonia en Cuajimalpa",
@@ -4612,6 +4684,49 @@ class CapitalCdmxColonyCrimeStatsPhotoRegressionTests(unittest.TestCase):
         self.assertEqual(article["photo"]["license"], "CC BY-SA 4.0")
         self.assertIn("Jardín Balbuena", article["photo"]["topic"])
         self.assertIn("no documenta las denuncias", article["photo"]["topic"].lower())
+
+
+    def test_mexico_acapulco_traffic_is_mobility_without_an_assumed_cdmx_location(self):
+        title = "Reportan tráfico intenso en la México-Acapulco rumbo a CDMX; estos son los puntos afectados"
+        self.assertEqual(category_by_headline(title, "CDMX", "Diario de Morelos"), "Movilidad")
+        article = news.standardize({
+            "title": title,
+            "source": "Diario de Morelos",
+            "date": "2026-11-16",
+            "url": "https://news.google.com/rss/articles/photo-context-regression?oc=5",
+        })
+        self.assertIsNotNone(article)
+        self.assertEqual(article["category"], "Movilidad")
+        self.assertEqual(article["borough"], "")
+        self.assertEqual(
+            article["location"],
+            "Autopista México-Acapulco (tramo y puntos afectados no precisados en el RSS)",
+        )
+        self.assertTrue(news.local_for_homepage(article))
+
+    def test_november_16_photo_assignments_reject_unrelated_context_images(self):
+        cases = (
+            ("Reportan tráfico intenso en la México-Acapulco rumbo a CDMX; estos son los puntos afectados", "Diario de Morelos", "contexto_trafico_eje_central", "contexto_autopista_sol_mexico_acapulco", "Autopista del Sol"),
+            ("Viajes corporativos aportan 3 mil 300 mdd a Cdmx y generan 50 mil empleos", "Sociedad Noticias", "commons_145192399", "contexto_hotel_corporativo_cdmx", "Gran Hotel"),
+            ("Peregrinos Pernoctan en Córdoba en su Camino a CDMX", "N+", "commons_149429197", "contexto_peregrinos_basilica_cdmx", "Peregrinos"),
+            ("Programa de gallinas ponedoras en CDMX: Requisitos para recibir 15 aves y producir huevo en casa", "TV Azteca", "archivo_gobierno_002", "contexto_gallinero_chinampa_xochimilco", "Gallinero"),
+            ("Transformarán material electoral de CDMX en libros de texto gratuito", "El Sol de México", "commons_80618455", "contexto_boleta_electoral_mexico_2012", "Paquete electoral"),
+            ("De las urnas a las aulas: boletas electorales de CDMX se convertirán en libros de texto", "El Sol de México", "commons_86319773", "contexto_boleta_electoral_mexico_2012", "Paquete electoral"),
+            ("Xochimilco 2026: 67.1% percibe inseguridad", "Capital CDMX", "commons_80038563", "contexto_policia_xochimilco", "Estación de policía"),
+            ("Iztapalapa: Central de Abasto y Chinampac en cifras de 2024", "Capital CDMX", "commons_20284563", "contexto_central_abasto_iztapalapa", "Central de Abasto"),
+            ("El Rosario registró 223 denuncias en 2024: el panorama de Azcapotzalco", "Capital CDMX", "commons_178858309", "contexto_metro_el_rosario_2025", "El Rosario"),
+            ("Iztapalapa: colonias con más denuncias en 2024 y 2026", "Capital CDMX", "commons_150181297", "contexto_patrullas_iztapalapa_denuncias", "Patrullas en Iztapalapa"),
+            ("La CDMX ya tiene sabor a 49ers: así es el Foodie Passport rumbo al juego del 22 de noviembre", "Reporte Indigo", "archivo_cdmx_003", "contexto_tacos_cdmx_2013", "Tacos al pastor"),
+            ("Golden Ganga anuncia conciertos en CDMX y Guadalajara para presentar su nueva etapa musical", "Almomento.mx", "contexto_concierto_foro_sol_2023", "contexto_teatro_metropolitan_2019", "Teatro Metropólitan"),
+            ("Explosión en CDMX deja una mujer muerta y vecinos alertan por acumulación de gas", "Reporte Indigo", "commons_86319773", "contexto_proteccion_civil_explosion_cdmx", "Protección Civil"),
+            ("Multas de hasta 4 mil 600 pesos por realizar posadas en la calle sin permiso en la CDMX", "Diario de México", "commons_112837663", "contexto_posada_iztacalco_1974", "Posada en Picos de Iztacalco"),
+        )
+        for title, source, wrong_id, preferred_id, expected_topic in cases:
+            with self.subTest(title=title):
+                article = self._article(title, source)
+                photo = self._assert_replacement(article, wrong_id, preferred_id)
+                self.assertIn(expected_topic.lower(), photo["topic"].lower())
+
 
 
 if __name__ == "__main__":

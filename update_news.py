@@ -390,10 +390,23 @@ def is_la_prensa_prehospital_care(article):
     )
 
 
+def is_diario_morelos_mexico_acapulco_traffic(article):
+    title = fold(article.get("title"))
+    source = fold(article.get("source"))
+    return (
+        source == "diario de morelos"
+        and "trafico intenso" in title
+        and "mexico acapulco" in title
+        and "rumbo a cdmx" in title
+    )
+
+
 def category_by_headline(title, feed_category, source=""):
     """Corrige etiquetas RSS evidentes sin inventar ubicaciones o hechos."""
     normalized = fold(title)
     normalized_source = fold(source)
+    if is_diario_morelos_mexico_acapulco_traffic({"title": title, "source": source}):
+        return "Movilidad"
     # El desabasto y el tandeo son servicios públicos; no deben quedar como CDMX genérico.
     if re.search(r"\b(?:carecen de agua|falta de agua|sin agua|tandeo|desabasto de agua|corte de agua|suspension de agua)\b", normalized):
         return "Servicios"
@@ -771,6 +784,9 @@ def standardize(article):
     except ValueError:
         return None
     borough, location = identify_location(title, date)
+    if is_diario_morelos_mexico_acapulco_traffic({"title": title, "source": source}):
+        borough = ""
+        location = "Autopista México-Acapulco (tramo y puntos afectados no precisados en el RSS)"
     if is_diario_basta_alvaro_obregon_water_shortage({"title": title, "source": source, "date": date}):
         borough = "Álvaro Obregón"
         location = (

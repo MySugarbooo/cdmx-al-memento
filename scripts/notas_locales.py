@@ -1074,6 +1074,95 @@ def is_diario_basta_alvaro_obregon_water_shortage(article):
     )
 
 
+def _is_current_2026_11_16_photo_story(article, source, *phrases):
+    title = _photo_fold(article.get("title"))
+    return (
+        str(article.get("date") or "")[:10] == "2026-11-16"
+        and _photo_fold(article.get("source")) == source
+        and all(phrase in title for phrase in phrases)
+    )
+
+
+def is_diario_morelos_mexico_acapulco_traffic_story(article):
+    return _is_current_2026_11_16_photo_story(
+        article, "diario de morelos", "trafico intenso", "mexico acapulco", "rumbo a cdmx"
+    )
+
+
+def is_sociedad_noticias_corporate_travel_story(article):
+    return _is_current_2026_11_16_photo_story(
+        article, "sociedad noticias", "viajes corporativos", "mdd"
+    )
+
+
+def is_nplus_cordoba_pilgrims_story(article):
+    return _is_current_2026_11_16_photo_story(
+        article, "n", "peregrinos pernoctan en cordoba", "camino a cdmx"
+    )
+
+
+def is_tvazteca_gallinas_program_story(article):
+    return _is_current_2026_11_16_photo_story(
+        article, "tv azteca", "gallinas ponedoras", "15 aves"
+    )
+
+
+def is_el_sol_electoral_material_books_story(article):
+    title = _photo_fold(article.get("title"))
+    return (
+        _is_current_2026_11_16_photo_story(article, "el sol de mexico", "libros")
+        and ("material electoral" in title or "boletas electorales" in title)
+    )
+
+
+def is_capital_cdmx_xochimilco_insecurity_story(article):
+    return _is_current_2026_11_16_photo_story(
+        article, "capital cdmx", "xochimilco", "percibe inseguridad"
+    )
+
+
+def is_capital_cdmx_iztapalapa_central_abasto_story(article):
+    return _is_current_2026_11_16_photo_story(
+        article, "capital cdmx", "central de abasto", "chinampac"
+    )
+
+
+def is_capital_cdmx_el_rosario_crime_stats(article):
+    return _is_current_2026_11_16_photo_story(
+        article, "capital cdmx", "el rosario", "223 denuncias"
+    )
+
+
+def is_capital_cdmx_iztapalapa_crime_stats(article):
+    return _is_current_2026_11_16_photo_story(
+        article, "capital cdmx", "iztapalapa", "colonias con mas denuncias"
+    )
+
+
+def is_reporte_indigo_49ers_foodie_passport_story(article):
+    return _is_current_2026_11_16_photo_story(
+        article, "reporte indigo", "49ers", "foodie passport"
+    )
+
+
+def is_almomento_golden_ganga_concert_story(article):
+    return _is_current_2026_11_16_photo_story(
+        article, "almomento mx", "golden ganga", "conciertos"
+    )
+
+
+def is_reporte_indigo_cdmx_explosion_story(article):
+    return _is_current_2026_11_16_photo_story(
+        article, "reporte indigo", "explosion en cdmx", "mujer muerta"
+    )
+
+
+def is_diario_mexico_posadas_fines_story(article):
+    return _is_current_2026_11_16_photo_story(
+        article, "diario de mexico", "posadas en la calle", "sin permiso"
+    )
+
+
 def summarize(article):
     title=str(article.get("title") or "").strip()
     source=str(article.get("source") or "un medio periodístico").strip()
@@ -3086,6 +3175,34 @@ def _photo_score(article, photo):
         return 5000 if photo.get("id") == "commons_112950009" else -10000
     if is_infopoder_ruta_maiz_topilejo(article):
         return 5000 if photo.get("id") == "commons_112950009" else -10000
+    # Asignaciones verificadas para las noticias del 16/11/2026.
+    # Las fotografías son de archivo y se identifican como representativas, nunca como prueba del hecho.
+    if is_diario_morelos_mexico_acapulco_traffic_story(article):
+        return 5000 if photo.get("id") == "contexto_autopista_sol_mexico_acapulco" else -10000
+    if is_sociedad_noticias_corporate_travel_story(article):
+        return 5000 if photo.get("id") == "contexto_hotel_corporativo_cdmx" else -10000
+    if is_nplus_cordoba_pilgrims_story(article):
+        return 5000 if photo.get("id") == "contexto_peregrinos_basilica_cdmx" else -10000
+    if is_tvazteca_gallinas_program_story(article):
+        return 5000 if photo.get("id") == "contexto_gallinero_chinampa_xochimilco" else -10000
+    if is_el_sol_electoral_material_books_story(article):
+        return 5000 if photo.get("id") == "contexto_boleta_electoral_mexico_2012" else -10000
+    if is_capital_cdmx_xochimilco_insecurity_story(article):
+        return 5000 if photo.get("id") == "contexto_policia_xochimilco" else -10000
+    if is_capital_cdmx_iztapalapa_central_abasto_story(article):
+        return 5000 if photo.get("id") == "contexto_central_abasto_iztapalapa" else -10000
+    if is_capital_cdmx_el_rosario_crime_stats(article):
+        return 5000 if photo.get("id") == "contexto_metro_el_rosario_2025" else -10000
+    if is_capital_cdmx_iztapalapa_crime_stats(article):
+        return 5000 if photo.get("id") == "contexto_patrullas_iztapalapa_denuncias" else -10000
+    if is_reporte_indigo_49ers_foodie_passport_story(article):
+        return 5000 if photo.get("id") == "contexto_tacos_cdmx_2013" else -10000
+    if is_almomento_golden_ganga_concert_story(article):
+        return 5000 if photo.get("id") == "contexto_teatro_metropolitan_2019" else -10000
+    if is_reporte_indigo_cdmx_explosion_story(article):
+        return 5000 if photo.get("id") == "contexto_proteccion_civil_explosion_cdmx" else -10000
+    if is_diario_mexico_posadas_fines_story(article):
+        return 5000 if photo.get("id") == "contexto_posada_iztacalco_1974" else -10000
     if is_el_sol_utopias_program_story(article):
         return 5000 if photo.get("id") == "contexto_utopia_meyehualco_program" else -10000
     if is_el_sol_mago_de_oz_arena_story(article):
