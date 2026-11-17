@@ -168,6 +168,11 @@ RAFAEL_CASTRO_CAPITANES_HAWKS_SOURCE_URL = (
     "a-los-atlanta-hawks-de-la-nba-f202611-n/"
 )
 
+REPORTE_INDIGO_AIR_QUALITY_20261117_SOURCE_URL = (
+    "https://www.reporteindigo.com/hay-contingencia-ambiental-hoy-17-de-noviembre-"
+    "calidad-del-aire-y-autos-que-no-circulan-en-cdmx-y-edomex-t202611160001.html"
+)
+
 
 def is_rafael_castro_capitanes_hawks_story(article):
     """Identifica la nota de AS México sobre el ascenso de Rafael Castro a Atlanta."""
@@ -256,10 +261,10 @@ def is_infobae_air_quality_report(article):
 
 
 def is_reporte_indigo_contingency_story(article):
-    """Identifica el reporte de contingencia y calidad del aire de Reporte Indigo del 16/11/2026."""
+    """Identifica las notas diarias de Reporte Indigo sobre contingencia y calidad del aire."""
     title = _photo_fold(article.get("title"))
     return (
-        str(article.get("date") or "") == "2026-11-16"
+        str(article.get("date") or "") in {"2026-11-16", "2026-11-17"}
         and _photo_fold(article.get("source")) == "reporte indigo"
         and "contingencia ambiental" in title
         and "calidad del aire" in title
@@ -1318,6 +1323,39 @@ def summarize(article):
     category=str(article.get("category") or "CDMX")
     theme=TAGS.get(category,TAGS["CDMX"])
     folded_title=_photo_fold(title)
+    if (
+        is_reporte_indigo_contingency_story(article)
+        and str(article.get("date") or "") == "2026-11-17"
+    ):
+        return {
+            "lead": (
+                "Reporte Indigo informó que, según el corte del Sistema de Monitoreo "
+                "Atmosférico de Sedema que cita para las 06:00 del martes 17 de noviembre, "
+                "no había contingencia ambiental vigente en la Zona Metropolitana del "
+                "Valle de México. El mismo reporte describió condiciones mayoritariamente "
+                "malas y riesgo alto para actividades al aire libre por PM2.5."
+            ),
+            "context": (
+                "La nota ubicó a Cuauhtémoc (estación HGM) en rango bueno y a Azcapotzalco "
+                "(estación CAM) en rango malo; la mayoría de las demás estaciones de CDMX "
+                "aparecía en rango aceptable. También indicó que el Hoy No Circula del "
+                "martes aplicaba a engomado rosa, placas terminación 7 y 8, y hologramas "
+                "1, 2 y foráneos."
+            ),
+            "pending": (
+                "Es un corte informativo de la mañana del 17 de noviembre, no una lectura "
+                "en vivo. Los niveles de contaminantes y las restricciones pueden cambiar "
+                "durante el día; verifica los avisos más recientes de Sedema y de las "
+                "autoridades de movilidad antes de salir."
+            ),
+            "method": (
+                "Síntesis editorial propia basada en la publicación original de Reporte "
+                "Indigo, 17 de noviembre de 2026: "
+                + REPORTE_INDIGO_AIR_QUALITY_20261117_SOURCE_URL
+                + ". La imagen asignada es una escala IMECA de archivo (2007), "
+                "representativa; no documenta las condiciones atmosféricas de esta jornada."
+            ),
+        }
     if is_rafael_castro_capitanes_hawks_story(article):
         return {
             "lead": (
