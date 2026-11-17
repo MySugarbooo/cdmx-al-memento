@@ -3481,7 +3481,7 @@ def _photo_score(article, photo):
     if is_elsol_49ers_altitude_story(article):
         return 5000 if photo.get("id") == "contexto_futbol_americano_nfl" else -10000
     if is_rafael_castro_capitanes_hawks_story(article):
-        return 5000 if photo.get("id") == "contexto_baloncesto_cdmx_rafael_castro_2026" else -10000
+        return 5000 if photo.get("id") == "commons_58302191" else -10000
     if is_sopitas_gorillaz_mural_story(article):
         return 5000 if photo.get("id") == "contexto_mural_urbano_cdmx_2014" else -10000
     if is_maya_acta_nacimiento_story(article):
