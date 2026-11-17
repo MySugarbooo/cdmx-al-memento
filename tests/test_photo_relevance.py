@@ -4927,6 +4927,42 @@ class November17AdditionalEditorialPhotoCorrectionsTests(unittest.TestCase):
         self.assertEqual(article["photo"]["license"], "CC BY-SA 4.0")
         self.assertIn("no corresponde al programa de 2026", article["photo"]["topic"])
 
+    def test_lasillarota_gallinas_story_replaces_palacio_nacional_with_gallinero(self):
+        article = news.standardize({
+            "title": "CDMX entregará 15 gallinas a familias para producir huevo en casa",
+            "url": "https://news.google.com/rss/articles/lasillarota-gallinas-20261116",
+            "source": "La Silla Rota",
+            "date": "2026-11-16",
+            "published_at": "2026-11-17T00:04:04Z",
+            "category": "Gobierno",
+        })
+        self.assertIsNotNone(article)
+        self.assertTrue(photos.is_lasillarota_gallinas_program_story(article))
+        pool = {photo["id"]: photo for photo in photos._pool()}
+        palace = {
+            "id": "commons_186333073",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Fachada_del_Palacio_Nacional%2C_Ciudad_de_M%C3%A9xico_01.jpg/960px-Fachada_del_Palacio_Nacional%2C_Ciudad_de_M%C3%A9xico_01.jpg",
+            "source": "https://commons.wikimedia.org/wiki/File:Fachada_del_Palacio_Nacional,_Ciudad_de_M%C3%A9xico_01.jpg",
+            "author": "Luisalvaz",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "topic": "Fachada del Palacio Nacional, Ciudad de México 01",
+            "keywords": ["Palacio Nacional Ciudad de México"],
+        }
+        gallinero = deepcopy(pool["contexto_gallinero_chinampa_xochimilco"])
+        self.assertLess(_photo_score(article, palace), 0)
+        self.assertEqual(_photo_score(article, gallinero), 5000)
+        article["photo"] = palace
+        with patch.object(photos, "_pool", return_value=[palace, gallinero]), patch.object(
+            photos, "_load", return_value=[]
+        ):
+            assign_photos([article])
+        self.assertEqual(article["photo"]["id"], "contexto_gallinero_chinampa_xochimilco")
+        self.assertEqual(article["photo"]["author"], "Diego M.P.")
+        self.assertEqual(article["photo"]["license"], "CC BY-SA 4.0")
+        self.assertIn("no corresponde al programa de 2026", article["photo"]["topic"])
+
     def test_infobae_karol_g_guest_preview_uses_estadio_gnp_context_not_teatro_metropolitan(self):
         article = news.standardize({
             "title": "Después de Thalía y Belinda: quién sería la invitada sorpresa de Karol G para su tercera fecha en CDMX",
