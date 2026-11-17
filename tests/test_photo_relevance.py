@@ -4558,6 +4558,36 @@ class InfobaeTeacherMentalHealthPhotoRegressionTests(unittest.TestCase):
 
 
 class CapitalCdmxColonyCrimeStatsPhotoRegressionTests(unittest.TestCase):
+    def _article(self, title, source):
+        article = news.standardize({
+            "title": title,
+            "url": "https://news.google.com/rss/articles/context-photo-audit-" + source.lower().replace(" ", "-"),
+            "source": source,
+            "date": "2026-11-16",
+            "published_at": "2026-11-16T18:00:00Z",
+            "category": "CDMX",
+        })
+        self.assertIsNotNone(article)
+        return article
+
+    def _assert_replacement(self, article, wrong_id, preferred_id, wrong_override=None):
+        pool = {photo["id"]: photo for photo in photos._pool()}
+        wrong = deepcopy(pool[wrong_id]) if wrong_id in pool else deepcopy(wrong_override)
+        preferred = deepcopy(pool[preferred_id])
+        self.assertIsNotNone(wrong)
+        article["photo"] = wrong
+        self.assertLess(_photo_score(article, wrong), 0)
+        self.assertEqual(_photo_score(article, preferred), 5000)
+        with patch.object(photos, "_pool", return_value=[wrong, preferred]), patch.object(
+            photos, "_load", return_value=[]
+        ):
+            assign_photos([article])
+        self.assertEqual(article["photo"]["id"], preferred_id)
+        self.assertTrue(article["photo"]["author"])
+        self.assertTrue(article["photo"]["license"])
+        self.assertTrue(article["photo"]["source"].startswith("https://commons.wikimedia.org/wiki/File:"))
+        return article["photo"]
+
     def test_santa_fe_cuajimalpa_story_uses_local_photo_and_cites_original(self):
         article = news.standardize({
             "title": "Santa Fe concentró 207 denuncias en 2024: las cifras por colonia en Cuajimalpa",
@@ -4675,7 +4705,7 @@ class CapitalCdmxColonyCrimeStatsPhotoRegressionTests(unittest.TestCase):
             ("El Rosario registró 223 denuncias en 2024: el panorama de Azcapotzalco", "Capital CDMX", "commons_178858309", "contexto_metro_el_rosario_2025", "El Rosario"),
             ("Iztapalapa: colonias con más denuncias en 2024 y 2026", "Capital CDMX", "commons_150181297", "contexto_patrullas_iztapalapa_denuncias", "Patrullas en Iztapalapa"),
             ("La CDMX ya tiene sabor a 49ers: así es el Foodie Passport rumbo al juego del 22 de noviembre", "Reporte Indigo", "archivo_cdmx_003", "contexto_tacos_cdmx_2013", "Tacos al pastor"),
-            ("Golden Ganga anuncia conciertos en CDMX y Guadalajara para presentar su nueva etapa musical", "Almomento.mx", "contexto_concierto_foro_sol_2023", "contexto_concierto_palacio_deportes_2009", "Kings of Leon"),
+            ("Golden Ganga anuncia conciertos en CDMX y Guadalajara para presentar su nueva etapa musical", "Almomento.mx", "contexto_concierto_foro_sol_2023", "contexto_teatro_metropolitan_2019", "Teatro Metropólitan"),
             ("Explosión en CDMX deja una mujer muerta y vecinos alertan por acumulación de gas", "Reporte Indigo", "commons_86319773", "contexto_proteccion_civil_explosion_cdmx", "Protección Civil"),
             ("Multas de hasta 4 mil 600 pesos por realizar posadas en la calle sin permiso en la CDMX", "Diario de México", "commons_112837663", "contexto_posada_iztacalco_1974", "Posada en Picos de Iztacalco"),
         )
