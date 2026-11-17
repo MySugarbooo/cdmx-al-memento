@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-17 04:44 UTC",
+  "updated": "2026-11-17 06:42 UTC",
   "boroughs": [
     {
       "name": "La Magdalena Contreras",
@@ -1281,6 +1281,7 @@
             "pending": "La convocatoria oficial todavía no se había publicado al momento de la nota. El espacio mínimo de 10 metros cuadrados aparece como referencia en el artículo, pero no debe tratarse como requisito definitivo hasta que la autoridad publique las reglas.",
             "method": "Síntesis editorial basada en El Debate, 16 de noviembre de 2026: https://www.debate.com.mx/cdmx/gallinas-ponedoras-en-cdmx-asi-sera-el-programa-de-apoyo-anunciado-por-clara-brugada-20261116-0225.html. Los detalles se atribuyen al medio. La fotografía muestra un gallinero artesanal de Xochimilco de 2018; no documenta la entrega de aves del programa de 2026."
           },
+          "source_url": "https://www.debate.com.mx/cdmx/gallinas-ponedoras-en-cdmx-asi-sera-el-programa-de-apoyo-anunciado-por-clara-brugada-20261116-0225.html",
           "photo": {
             "id": "contexto_gallinero_chinampa_xochimilco",
             "kind": "representativa",
@@ -1302,7 +1303,6 @@
             "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
             "source": "https://commons.wikimedia.org/wiki/File:Gallinero_hecho_a_mano_en_chinampa.jpg"
           },
-          "source_url": "https://www.debate.com.mx/cdmx/gallinas-ponedoras-en-cdmx-asi-sera-el-programa-de-apoyo-anunciado-por-clara-brugada-20261116-0225.html",
           "alternate_versions": [
             {
               "title": "Gallinas ponedoras en CDMX: así será el programa de apoyo anunciado por Clara Brugada",
@@ -2849,8 +2849,8 @@
           ]
         },
         {
-          "title": "Robos y delitos en colonias de Azcapotzalco",
-          "description": "De acuerdo con Capital CDMX, el titular publicado es: «Robos y delitos en colonias de Azcapotzalco». La información publicada por Capital CDMX aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "title": "Las colonias más peligrosas de Azcapotzalco: dónde se denuncian robos",
+          "description": "De acuerdo con Capital CDMX, el titular publicado es: «Las colonias más peligrosas de Azcapotzalco: dónde se denuncian robos». La información publicada por Capital CDMX aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
           "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFB5SlowWlNRcXBXbmpCNm5tbUMxTEp1MnlhMG9Zblc5ZlVHcHNyal9ZMUtDQktSNW5sY1pNd2VZajVNV2djSlRNdXdMdTYzaWw2dFRadDlIdFRoSWM3eVFKY1VsU1UzYVVjR1p2Rl9CMA?oc=5",
           "source": "Capital CDMX",
           "date": "2026-11-16",
@@ -2860,7 +2860,7 @@
           "location": "Azcapotzalco (mencionada en el titular)",
           "local_url": "/noticias/?id=ef72350d2934c7bb4500&mes=2026-11",
           "brief": {
-            "lead": "De acuerdo con Capital CDMX, el titular publicado es: «Robos y delitos en colonias de Azcapotzalco». La información publicada por Capital CDMX aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "lead": "De acuerdo con Capital CDMX, el titular publicado es: «Las colonias más peligrosas de Azcapotzalco: dónde se denuncian robos». La información publicada por Capital CDMX aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
             "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
             "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
@@ -2879,7 +2879,42 @@
             "license": "CC BY-SA 4.0",
             "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
             "source": "https://commons.wikimedia.org/wiki/File:Jeep_policia_cdmx.jpg"
-          }
+          },
+          "alternate_versions": [
+            {
+              "title": "Robos y delitos en colonias de Azcapotzalco",
+              "description": "De acuerdo con Capital CDMX, el titular publicado es: «Robos y delitos en colonias de Azcapotzalco». La información publicada por Capital CDMX aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+              "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFB5SlowWlNRcXBXbmpCNm5tbUMxTEp1MnlhMG9Zblc5ZlVHcHNyal9ZMUtDQktSNW5sY1pNd2VZajVNV2djSlRNdXdMdTYzaWw2dFRadDlIdFRoSWM3eVFKY1VsU1UzYVVjR1p2Rl9CMA?oc=5",
+              "source": "Capital CDMX",
+              "date": "2026-11-16",
+              "published_at": "2026-11-16T23:32:16Z",
+              "category": "Seguridad",
+              "borough": "Azcapotzalco",
+              "location": "Azcapotzalco (mencionada en el titular)",
+              "local_url": "/noticias/?id=ef72350d2934c7bb4500&mes=2026-11",
+              "brief": {
+                "lead": "De acuerdo con Capital CDMX, el titular publicado es: «Robos y delitos en colonias de Azcapotzalco». La información publicada por Capital CDMX aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+                "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+                "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+              },
+              "photo": {
+                "id": "archivo_seguridad_005",
+                "kind": "representativa",
+                "url": "/assets/fotos/archivo_seguridad_005.jpg",
+                "category": "Seguridad",
+                "borough": "",
+                "topic": "Jeep policia cdmx",
+                "keywords": [
+                  "Seguridad"
+                ],
+                "author": "Gobierno de la Ciudad de México",
+                "license": "CC BY-SA 4.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "https://commons.wikimedia.org/wiki/File:Jeep_policia_cdmx.jpg"
+              }
+            }
+          ]
         },
         {
           "title": "Azcapotzalco: El Rosario registra 223 denuncias en 2024",
@@ -5053,8 +5088,41 @@
     },
     {
       "name": "Coyoacán",
-      "count": 203,
+      "count": 204,
       "articles": [
+        {
+          "title": "Sujetos roban tienda departamental en Coyoacán; detienen a un sospechoso y le incautan un martillo",
+          "description": "De acuerdo con LatinUS, el titular publicado es: «Sujetos roban tienda departamental en Coyoacán; detienen a un sospechoso y le incautan un martillo». Una nota de LatinUS comunica un caso relacionado con una detención o una presunta conducta delictiva en Coyoacán. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
+          "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPcXlMcFY5alJSWi1jcEJ3TWpVckVNdmd1ZF9xaHNiTi13M25LS2NOcGtsUTkySzdwR0EtZ0tWMTE3SWFsbk5hcmpwdnVIRFNwVmkxQU56RWlvcW85VXFEOVotNVF5SDBzVVJqcG1vQnBwZGN4Q25wVXM5UVktcEFOY0k5TGIwRnYzaWM5Z182U0JDS2t5djFMNDBRUEhBaEtiQllpQ1FiRXdaRkRqQWU1UURXS0JMcV9UaEpEWlctQ3JqM0pHQXVORzdhb3pJODA3WWRvNEpkc2hwZ3FWS3Vj?oc=5",
+          "source": "LatinUS",
+          "date": "2026-11-16",
+          "published_at": "2026-11-17T04:46:16Z",
+          "category": "Seguridad",
+          "borough": "Coyoacán",
+          "location": "Coyoacán (mencionada en el titular)",
+          "local_url": "/noticias/?id=28e46d15848347f34881&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con LatinUS, el titular publicado es: «Sujetos roban tienda departamental en Coyoacán; detienen a un sospechoso y le incautan un martillo». Una nota de LatinUS comunica un caso relacionado con una detención o una presunta conducta delictiva en Coyoacán. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
+            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "archivo_seguridad_002",
+            "kind": "representativa",
+            "url": "/assets/fotos/archivo_seguridad_002.jpg",
+            "category": "Seguridad",
+            "borough": "",
+            "topic": "Patrulla vecinal",
+            "keywords": [
+              "Seguridad"
+            ],
+            "author": "Daniel Yonka",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Patrulla_vecinal.jpg"
+          }
+        },
         {
           "title": "En pleno Buen Fin, sujetos roban tienda Sanborns en Coyoacán: SSC ya detuvo a uno",
           "description": "De acuerdo con Infobae, el titular publicado es: «En pleno Buen Fin, sujetos roban tienda Sanborns en Coyoacán: SSC ya detuvo a uno». La información publicada por Infobae aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -5223,18 +5291,18 @@
           }
         },
         {
-          "title": "Robos y delitos en colonias de Coyoacán",
-          "description": "De acuerdo con Capital CDMX, el titular publicado es: «Robos y delitos en colonias de Coyoacán». La información publicada por Capital CDMX aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "title": "Colonias más peligrosas de Coyoacán: delitos y robos",
+          "description": "De acuerdo con Capital CDMX, el titular publicado es: «Colonias más peligrosas de Coyoacán: delitos y robos». La información publicada por Capital CDMX aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
           "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBvTjR1anR0TzRFNFN3MDFoQ0VGUzk5QWxILTg4c29lLWlpaVlrdlNrVmp2clA4OHVmWDM4Z2dFeUgxYk0xaWJiM2Zoa1JfdXhFVmtndmZrNWFEd084bHB1WEVFUzEzVkRMd3c?oc=5",
           "source": "Capital CDMX",
           "date": "2026-11-16",
-          "published_at": "2026-11-16T23:27:38Z",
+          "published_at": "2026-11-16T23:42:10Z",
           "category": "Seguridad",
           "borough": "Coyoacán",
           "location": "Coyoacán (mencionada en el titular)",
           "local_url": "/noticias/?id=b4be2f6692b73825893f&mes=2026-11",
           "brief": {
-            "lead": "De acuerdo con Capital CDMX, el titular publicado es: «Robos y delitos en colonias de Coyoacán». La información publicada por Capital CDMX aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "lead": "De acuerdo con Capital CDMX, el titular publicado es: «Colonias más peligrosas de Coyoacán: delitos y robos». La información publicada por Capital CDMX aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
             "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
             "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
@@ -5253,7 +5321,42 @@
             "license": "CC BY-SA 4.0",
             "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
             "source": "https://commons.wikimedia.org/wiki/File:Patrulla_vecinal.jpg"
-          }
+          },
+          "alternate_versions": [
+            {
+              "title": "Robos y delitos en colonias de Coyoacán",
+              "description": "De acuerdo con Capital CDMX, el titular publicado es: «Robos y delitos en colonias de Coyoacán». La información publicada por Capital CDMX aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+              "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBvTjR1anR0TzRFNFN3MDFoQ0VGUzk5QWxILTg4c29lLWlpaVlrdlNrVmp2clA4OHVmWDM4Z2dFeUgxYk0xaWJiM2Zoa1JfdXhFVmtndmZrNWFEd084bHB1WEVFUzEzVkRMd3c?oc=5",
+              "source": "Capital CDMX",
+              "date": "2026-11-16",
+              "published_at": "2026-11-16T23:27:38Z",
+              "category": "Seguridad",
+              "borough": "Coyoacán",
+              "location": "Coyoacán (mencionada en el titular)",
+              "local_url": "/noticias/?id=b4be2f6692b73825893f&mes=2026-11",
+              "brief": {
+                "lead": "De acuerdo con Capital CDMX, el titular publicado es: «Robos y delitos en colonias de Coyoacán». La información publicada por Capital CDMX aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+                "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+                "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+              },
+              "photo": {
+                "id": "archivo_seguridad_002",
+                "kind": "representativa",
+                "url": "/assets/fotos/archivo_seguridad_002.jpg",
+                "category": "Seguridad",
+                "borough": "",
+                "topic": "Patrulla vecinal",
+                "keywords": [
+                  "Seguridad"
+                ],
+                "author": "Daniel Yonka",
+                "license": "CC BY-SA 4.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "https://commons.wikimedia.org/wiki/File:Patrulla_vecinal.jpg"
+              }
+            }
+          ]
         },
         {
           "title": "Detienen a Hombre por Asalto en Tienda Departamental de Coyoacán, CDMX",
@@ -6159,107 +6262,6 @@
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
-        },
-        {
-          "title": "¿Qué está pasando en Coyoacán? Por esta razón los vecinos protestan contra Skyline",
-          "description": "De acuerdo con Milenio, el titular publicado es: «¿Qué está pasando en Coyoacán? Por esta razón los vecinos protestan contra Skyline». La información publicada por Milenio aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNNnZLTU93RGo5U2p6RE1CeEFZNzlVQVpFMDFjME44TklQaDVLejJyRFRRN0IyTGp4eGJOUjFjbFJGM1lJR283UmpoWm13ekRsMFJvaUhsSUVWejBYb2JrdzhRWGx2SlotcFZqMk9GRGQ5UU9WWHdrRDZhcVh2SWZGRS0zeWFZZmlGUjF2bzNXc0NnUjlZZ3MzTlFERXJPSlFvanNUbzBva9IBpwFBVV95cUxPanY2OWxhbXUxUDlZbm1GTk0xWjNzX25fa2lWaloteUVNLWhiT043UDRCbzRuQm4wRWZYUEJwSnMtVGJ5cVdFb0R5Y095Yl9rX3Q1bDBDU2lXMWFYSkNDLVVsUzlLRlFDM3ZaOXluanlfVmtkOTd2elhPVDNrNS03TTg5X1JvdjRVa1lWU1R6cHBCSVZ6OW1UOHpsRzNUaWRwbW9uNnBJSQ?oc=5",
-          "source": "Milenio",
-          "date": "2026-11-12",
-          "published_at": "2026-11-12T18:04:00Z",
-          "category": "CDMX",
-          "borough": "Coyoacán",
-          "location": "Coyoacán (mencionada en el titular)",
-          "local_url": "/noticias/?id=6d3473391cc1cba3f8e5&mes=2026-11",
-          "alternate_versions": [
-            {
-              "title": "¿Qué está pasando en Coyoacán? Por esta razón los vecinos protestan contra Skyline",
-              "description": "De acuerdo con Milenio, el titular publicado es: «¿Qué está pasando en Coyoacán? Por esta razón los vecinos protestan contra Skyline». La información publicada por Milenio aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-              "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNNnZLTU93RGo5U2p6RE1CeEFZNzlVQVpFMDFjME44TklQaDVLejJyRFRRN0IyTGp4eGJOUjFjbFJGM1lJR283UmpoWm13ekRsMFJvaUhsSUVWejBYb2JrdzhRWGx2SlotcFZqMk9GRGQ5UU9WWHdrRDZhcVh2SWZGRS0zeWFZZmlGUjF2bzNXc0NnUjlZZ3MzTlFERXJPSlFvanNUbzBva9IBpwFBVV95cUxPanY2OWxhbXUxUDlZbm1GTk0xWjNzX25fa2lWaloteUVNLWhiT043UDRCbzRuQm4wRWZYUEJwSnMtVGJ5cVdFb0R5Y095Yl9rX3Q1bDBDU2lXMWFYSkNDLVVsUzlLRlFDM3ZaOXluanlfVmtkOTd2elhPVDNrNS03TTg5X1JvdjRVa1lWU1R6cHBCSVZ6OW1UOHpsRzNUaWRwbW9uNnBJSQ?oc=5",
-              "source": "Milenio",
-              "date": "2026-11-12",
-              "published_at": "2026-11-12T18:04:00Z",
-              "category": "CDMX",
-              "borough": "Coyoacán",
-              "location": "Coyoacán (mencionada en el titular)",
-              "local_url": "/noticias/?id=6d3473391cc1cba3f8e5&mes=2026-11",
-              "brief": {
-                "lead": "De acuerdo con Milenio, el titular publicado es: «¿Qué está pasando en Coyoacán? Por esta razón los vecinos protestan contra Skyline». La información publicada por Milenio aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-                "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-                "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-              },
-              "photo": {
-                "id": "commons_16240276",
-                "kind": "representativa",
-                "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Cacerolazo_contra_la_violencia_-_Ciudad_de_M%C3%A9xico_-_2.jpg/960px-Cacerolazo_contra_la_violencia_-_Ciudad_de_M%C3%A9xico_-_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-                "category": "CDMX",
-                "borough": "",
-                "topic": "Cacerolazo contra la violencia - Ciudad de México - 2",
-                "keywords": [
-                  "Ángel de la Independencia Ciudad de México"
-                ],
-                "author": "ProtoplasmaKid",
-                "license": "CC BY-SA 3.0",
-                "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-                "source": "https://commons.wikimedia.org/wiki/File:Cacerolazo_contra_la_violencia_-_Ciudad_de_M%C3%A9xico_-_2.jpg"
-              }
-            },
-            {
-              "title": "¿Qué está pasando en Coyoacán? Por esta razón los vecinos protestan contra Skyline",
-              "description": "De acuerdo con MILENIO, el titular publicado es: «¿Qué está pasando en Coyoacán? Por esta razón los vecinos protestan contra Skyline». La información publicada por MILENIO aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-              "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNNnZLTU93RGo5U2p6RE1CeEFZNzlVQVpFMDFjME44TklQaDVLejJyRFRRN0IyTGp4eGJOUjFjbFJGM1lJR283UmpoWm13ekRsMFJvaUhsSUVWejBYb2JrdzhRWGx2SlotcFZqMk9GRGQ5UU9WWHdrRDZhcVh2SWZGRS0zeWFZZmlGUjF2bzNXc0NnUjlZZ3MzTlFERXJPSlFvanNUbzBva9IBpwFBVV95cUxPanY2OWxhbXUxUDlZbm1GTk0xWjNzX25fa2lWaloteUVNLWhiT043UDRCbzRuQm4wRWZYUEJwSnMtVGJ5cVdFb0R5Y095Yl9rX3Q1bDBDU2lXMWFYSkNDLVVsUzlLRlFDM3ZaOXluanlfVmtkOTd2elhPVDNrNS03TTg5X1JvdjRVa1lWU1R6cHBCSVZ6OW1UOHpsRzNUaWRwbW9uNnBJSQ?oc=5",
-              "source": "MILENIO",
-              "date": "2026-11-12",
-              "published_at": "2026-11-12T18:04:00Z",
-              "category": "CDMX",
-              "borough": "Coyoacán",
-              "location": "Coyoacán (mencionada en el titular)",
-              "local_url": "/noticias/?id=6d3473391cc1cba3f8e5&mes=2026-11",
-              "brief": {
-                "lead": "De acuerdo con MILENIO, el titular publicado es: «¿Qué está pasando en Coyoacán? Por esta razón los vecinos protestan contra Skyline». La información publicada por MILENIO aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-                "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-                "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-              },
-              "photo": {
-                "id": "commons_16240276",
-                "kind": "representativa",
-                "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Cacerolazo_contra_la_violencia_-_Ciudad_de_M%C3%A9xico_-_2.jpg/960px-Cacerolazo_contra_la_violencia_-_Ciudad_de_M%C3%A9xico_-_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-                "category": "CDMX",
-                "borough": "",
-                "topic": "Cacerolazo contra la violencia - Ciudad de México - 2",
-                "keywords": [
-                  "Ángel de la Independencia Ciudad de México"
-                ],
-                "author": "ProtoplasmaKid",
-                "license": "CC BY-SA 3.0",
-                "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-                "source": "https://commons.wikimedia.org/wiki/File:Cacerolazo_contra_la_violencia_-_Ciudad_de_M%C3%A9xico_-_2.jpg"
-              }
-            }
-          ],
-          "brief": {
-            "lead": "De acuerdo con Milenio, el titular publicado es: «¿Qué está pasando en Coyoacán? Por esta razón los vecinos protestan contra Skyline». La información publicada por Milenio aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "commons_16240276",
-            "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Cacerolazo_contra_la_violencia_-_Ciudad_de_M%C3%A9xico_-_2.jpg/960px-Cacerolazo_contra_la_violencia_-_Ciudad_de_M%C3%A9xico_-_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "category": "CDMX",
-            "borough": "",
-            "topic": "Cacerolazo contra la violencia - Ciudad de México - 2",
-            "keywords": [
-              "Ángel de la Independencia Ciudad de México"
-            ],
-            "author": "ProtoplasmaKid",
-            "license": "CC BY-SA 3.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Cacerolazo_contra_la_violencia_-_Ciudad_de_M%C3%A9xico_-_2.jpg"
           }
         }
       ]
@@ -12735,8 +12737,74 @@
     },
     {
       "name": "Miguel Hidalgo",
-      "count": 108,
+      "count": 110,
       "articles": [
+        {
+          "title": "Explosión destruye 4 casas en Miguel Hidalgo y deja una muerta",
+          "description": "De acuerdo con MILENIO, el titular publicado es: «Explosión destruye 4 casas en Miguel Hidalgo y deja una muerta». La información publicada por MILENIO aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNbFJjUTMxaXZvVGItem1VTUlNYmpDVlN5ZkRJOXo1S1NLMzlxSk84QkczMFJONTlFRGFjX1FtNGNHMFJsSHpRcm1Rc3J2cm53X212cFlCNzVubzh3blZKbkNRYnRGQjJmbERwTldNZTNHSldSN3hZcDNmN0ZhSV9ULUVHLVBDU3NXLURPbHZacTBJSHkyMDhzVHNENFZOTGRVZnlUSFRR0gGmAUFVX3lxTE1SWkt3cWpsaTc2X1ZCMk5aLUl5N3VoMVNicFRvQlQ1OUNZMmZqcnBsaDNpTmU0V2pOWkRqbWtxa3MyT2h3TzJ6cUFmY0VTbTJrNHh1YkJod2dQUWdHcmpqRm82TXppbUdrYVZVZjdUMXJidkJLVHpGVGN1VmVrZ0RJMHBuZE5hbjMyUFhPSWlRVGZ5S0Z4MnNLMXk3VUFLNmw0RnlpSFE?oc=5",
+          "source": "MILENIO",
+          "date": "2026-11-16",
+          "published_at": "2026-11-17T02:24:06Z",
+          "category": "CDMX",
+          "borough": "Miguel Hidalgo",
+          "location": "Miguel Hidalgo (mencionada en el titular)",
+          "local_url": "/noticias/?id=a280c64a3cfd5a760c29&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con MILENIO, el titular publicado es: «Explosión destruye 4 casas en Miguel Hidalgo y deja una muerta». La información publicada por MILENIO aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "commons_75139349",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Equipo_de_trabajo_de_los_Bomberos_CDMX_IMG_3061_%2844661911131%29.jpg/960px-Equipo_de_trabajo_de_los_Bomberos_CDMX_IMG_3061_%2844661911131%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "category": "Seguridad",
+            "borough": "",
+            "topic": "Equipo de trabajo de los Bomberos CDMX IMG 3061 (44661911131)",
+            "keywords": [
+              "Bomberos Ciudad de México"
+            ],
+            "author": "Gobierno CDMX",
+            "license": "CC0",
+            "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+            "source": "https://commons.wikimedia.org/wiki/File:Equipo_de_trabajo_de_los_Bomberos_CDMX_IMG_3061_(44661911131).jpg"
+          }
+        },
+        {
+          "title": "Atiende Gobierno de la CDMX explosión por acumulación de gas en Alcaldía Miguel Hidalgo",
+          "description": "De acuerdo con Hoja de Ruta Digital, el titular publicado es: «Atiende Gobierno de la CDMX explosión por acumulación de gas en Alcaldía Miguel Hidalgo». En su información, Hoja de Ruta Digital aborda una decisión, declaración o debate relacionado con las instituciones de la ciudad. Conviene distinguir la intención anunciada de las resoluciones que hayan sido aprobadas y publicado oficialmente.",
+          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQTWFBaUR1alVyMXNVZktjVXJZNV9hTzJkWXAwaWVlcWJ1N2R6MUhjcW9xVGVhaExXdVpGQ1dKTEN5SmRSa2lVemE0N3ducV94bDdiRkU5VFJ0eFVLUnBYNENVa3ByRENxSTRsSEFVRTJRTUV5QjZBYU9mei1oYXRvSkswYkFFWGN6QjVRZ0tfSmQtTWJ2YnRwNU1TZk9XaHl0Q0lwRUhmVTQwRUh5a2txcjBkM1liUUNM?oc=5",
+          "source": "Hoja de Ruta Digital",
+          "date": "2026-11-16",
+          "published_at": "2026-11-16T23:05:22Z",
+          "category": "Gobierno",
+          "borough": "Miguel Hidalgo",
+          "location": "Miguel Hidalgo (mencionada en el titular)",
+          "local_url": "/noticias/?id=4ccfa5f6bd40ba3bb0c7&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con Hoja de Ruta Digital, el titular publicado es: «Atiende Gobierno de la CDMX explosión por acumulación de gas en Alcaldía Miguel Hidalgo». En su información, Hoja de Ruta Digital aborda una decisión, declaración o debate relacionado con las instituciones de la ciudad. Conviene distinguir la intención anunciada de las resoluciones que hayan sido aprobadas y publicado oficialmente.",
+            "context": "Las decisiones administrativas pueden influir en servicios, trámites y derechos; conviene conocer sus condiciones y a quiénes afectan.",
+            "pending": "Es indispensable consultar los acuerdos, comunicados o documentos oficiales antes de dar una medida por vigente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "commons_75139349",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Equipo_de_trabajo_de_los_Bomberos_CDMX_IMG_3061_%2844661911131%29.jpg/960px-Equipo_de_trabajo_de_los_Bomberos_CDMX_IMG_3061_%2844661911131%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "category": "Seguridad",
+            "borough": "",
+            "topic": "Equipo de trabajo de los Bomberos CDMX IMG 3061 (44661911131)",
+            "keywords": [
+              "Bomberos Ciudad de México"
+            ],
+            "author": "Gobierno CDMX",
+            "license": "CC0",
+            "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+            "source": "https://commons.wikimedia.org/wiki/File:Equipo_de_trabajo_de_los_Bomberos_CDMX_IMG_3061_(44661911131).jpg"
+          }
+        },
         {
           "title": "Fiscalía capitalina inicia investigación por explosión en Miguel Hidalgo; peritajes apuntan a acumulación de gas LP",
           "description": "De acuerdo con El Universal, el titular publicado es: «Fiscalía capitalina inicia investigación por explosión en Miguel Hidalgo; peritajes apuntan a acumulación de gas LP». La información publicada por El Universal aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -13876,277 +13944,6 @@
             "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
             "source": "https://commons.wikimedia.org/wiki/File:Polic%C3%ADa_de_tr%C3%A1nsito_Ciudad_de_M%C3%A9xico_con_automovilistas.jpg"
           }
-        },
-        {
-          "title": "Mauricio Tabe presenta su Quinto Informe de Gobierno en Miguel Hidalgo",
-          "description": "Durante su Quinto Informe de Gobierno en Miguel Hidalgo, Mauricio Tabe dijo que la estrategia Blindar MH duplicó el presupuesto de seguridad y triplicó la presencia de policías y patrullas. También reportó 1,770 cámaras y la reiluminación de 150 calles en un año. Son cifras y resultados expuestos por el alcalde, no una verificación independiente.",
-          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNdXhhemVjeGhBRjlvT25FUGl5TlpXSGZlTmFHNk9Ga21zUjA5YTQ0TTBNamUxWWg4czY1NUM3MDg2RFhVUDUwVmNRTy1zQUtEbmd3TnJwYkR3aUpRdjd0czlRek9mY3ZjbGh6bmpVdHFieGZZcHFFUk5zekZZQnNNYVVEQ0ZTMGJQdkt3a1EzQURLS01Sb1FYV1A0NC1iVnFMcmVCeVV5SG1kdDRTNGpRZUp3?oc=5",
-          "source": "sdpnoticias",
-          "date": "2026-11-12",
-          "published_at": "2026-11-12T18:35:37Z",
-          "category": "Gobierno",
-          "borough": "Miguel Hidalgo",
-          "location": "Miguel Hidalgo (mencionada en el titular)",
-          "local_url": "/noticias/?id=842f4c3306f51b3ab9fc&mes=2026-11",
-          "source_url": "https://www.sdpnoticias.com/estados/cdmx/mauricio-tabe-presenta-su-quinto-informe-de-gobierno-en-miguel-hidalgo/",
-          "alternate_versions": [
-            {
-              "title": "Mauricio Tabe presenta su Quinto Informe de Gobierno en Miguel Hidalgo",
-              "description": "De acuerdo con sdpnoticias, el titular publicado es: «Mauricio Tabe presenta su Quinto Informe de Gobierno en Miguel Hidalgo». En su información, sdpnoticias aborda una decisión, declaración o debate relacionado con las instituciones de la ciudad. Conviene distinguir la intención anunciada de las resoluciones que hayan sido aprobadas y publicado oficialmente.",
-              "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNdXhhemVjeGhBRjlvT25FUGl5TlpXSGZlTmFHNk9Ga21zUjA5YTQ0TTBNamUxWWg4czY1NUM3MDg2RFhVUDUwVmNRTy1zQUtEbmd3TnJwYkR3aUpRdjd0czlRek9mY3ZjbGh6bmpVdHFieGZZcHFFUk5zekZZQnNNYVVEQ0ZTMGJQdkt3a1EzQURLS01Sb1FYV1A0NC1iVnFMcmVCeVV5SG1kdDRTNGpRZUp3?oc=5",
-              "source": "sdpnoticias",
-              "date": "2026-11-12",
-              "published_at": "2026-11-12T18:35:37Z",
-              "category": "CDMX",
-              "borough": "Miguel Hidalgo",
-              "location": "Miguel Hidalgo (mencionada en el titular)",
-              "local_url": "/noticias/?id=842f4c3306f51b3ab9fc&mes=2026-11",
-              "brief": {
-                "lead": "De acuerdo con sdpnoticias, el titular publicado es: «Mauricio Tabe presenta su Quinto Informe de Gobierno en Miguel Hidalgo». En su información, sdpnoticias aborda una decisión, declaración o debate relacionado con las instituciones de la ciudad. Conviene distinguir la intención anunciada de las resoluciones que hayan sido aprobadas y publicado oficialmente.",
-                "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-                "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-              },
-              "photo": {
-                "id": "alcaldia_miguel-hidalgo",
-                "kind": "representativa",
-                "url": "/assets/alcaldias/miguel-hidalgo.jpg",
-                "category": "CDMX",
-                "borough": "Miguel Hidalgo",
-                "topic": "Bosque de Chapultepec, alcaldía Miguel Hidalgo",
-                "author": "ProtoplasmaKid",
-                "license": "CC0",
-                "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-                "source": "https://commons.wikimedia.org/wiki/File:Audiorama_de_Chapultepec_1.jpg"
-              }
-            },
-            {
-              "title": "Mauricio Tabe presenta su Quinto Informe de Gobierno en Miguel Hidalgo",
-              "description": "De acuerdo con sdpnoticias, el titular publicado es: «Mauricio Tabe presenta su Quinto Informe de Gobierno en Miguel Hidalgo». En su información, sdpnoticias aborda una decisión, declaración o debate relacionado con las instituciones de la ciudad. Conviene distinguir la intención anunciada de las resoluciones que hayan sido aprobadas y publicado oficialmente.",
-              "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNdXhhemVjeGhBRjlvT25FUGl5TlpXSGZlTmFHNk9Ga21zUjA5YTQ0TTBNamUxWWg4czY1NUM3MDg2RFhVUDUwVmNRTy1zQUtEbmd3TnJwYkR3aUpRdjd0czlRek9mY3ZjbGh6bmpVdHFieGZZcHFFUk5zekZZQnNNYVVEQ0ZTMGJQdkt3a1EzQURLS01Sb1FYV1A0NC1iVnFMcmVCeVV5SG1kdDRTNGpRZUp3?oc=5",
-              "source": "sdpnoticias",
-              "date": "2026-11-12",
-              "published_at": "2026-11-12T18:35:37Z",
-              "category": "Gobierno",
-              "borough": "Miguel Hidalgo",
-              "location": "Miguel Hidalgo (mencionada en el titular)",
-              "local_url": "/noticias/?id=842f4c3306f51b3ab9fc&mes=2026-11",
-              "brief": {
-                "lead": "De acuerdo con sdpnoticias, el titular publicado es: «Mauricio Tabe presenta su Quinto Informe de Gobierno en Miguel Hidalgo». En su información, sdpnoticias aborda una decisión, declaración o debate relacionado con las instituciones de la ciudad. Conviene distinguir la intención anunciada de las resoluciones que hayan sido aprobadas y publicado oficialmente.",
-                "context": "Las decisiones administrativas pueden influir en servicios, trámites y derechos; conviene conocer sus condiciones y a quiénes afectan.",
-                "pending": "Es indispensable consultar los acuerdos, comunicados o documentos oficiales antes de dar una medida por vigente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-              },
-              "photo": {
-                "id": "archivo_gobierno_003",
-                "kind": "representativa",
-                "url": "/assets/fotos/archivo_gobierno_003.jpg",
-                "category": "Gobierno",
-                "borough": "",
-                "topic": "Palacio Nacional Ciudad de México DF",
-                "keywords": [
-                  "Gobierno"
-                ],
-                "author": "Crater_sp",
-                "license": "CC BY-SA 2.0",
-                "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-                "source": "https://commons.wikimedia.org/wiki/File:Palacio_Nacional_Ciudad_de_M%C3%A9xico_DF.jpg"
-              }
-            },
-            {
-              "title": "Mauricio Tabe presenta su Quinto Informe de Gobierno en Miguel Hidalgo",
-              "description": "De acuerdo con sdpnoticias, el titular publicado es: «Mauricio Tabe presenta su Quinto Informe de Gobierno en Miguel Hidalgo». En su información, sdpnoticias aborda una decisión, declaración o debate relacionado con las instituciones de la ciudad. Conviene distinguir la intención anunciada de las resoluciones que hayan sido aprobadas y publicado oficialmente.",
-              "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNdXhhemVjeGhBRjlvT25FUGl5TlpXSGZlTmFHNk9Ga21zUjA5YTQ0TTBNamUxWWg4czY1NUM3MDg2RFhVUDUwVmNRTy1zQUtEbmd3TnJwYkR3aUpRdjd0czlRek9mY3ZjbGh6bmpVdHFieGZZcHFFUk5zekZZQnNNYVVEQ0ZTMGJQdkt3a1EzQURLS01Sb1FYV1A0NC1iVnFMcmVCeVV5SG1kdDRTNGpRZUp3?oc=5",
-              "source": "sdpnoticias",
-              "date": "2026-11-12",
-              "published_at": "2026-11-12T18:35:37Z",
-              "category": "Gobierno",
-              "borough": "Miguel Hidalgo",
-              "location": "Miguel Hidalgo (mencionada en el titular)",
-              "local_url": "/noticias/?id=842f4c3306f51b3ab9fc&mes=2026-11",
-              "brief": {
-                "lead": "De acuerdo con sdpnoticias, el titular publicado es: «Mauricio Tabe presenta su Quinto Informe de Gobierno en Miguel Hidalgo». En su información, sdpnoticias aborda una decisión, declaración o debate relacionado con las instituciones de la ciudad. Conviene distinguir la intención anunciada de las resoluciones que hayan sido aprobadas y publicado oficialmente.",
-                "context": "Las decisiones administrativas pueden influir en servicios, trámites y derechos; conviene conocer sus condiciones y a quiénes afectan.",
-                "pending": "Es indispensable consultar los acuerdos, comunicados o documentos oficiales antes de dar una medida por vigente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-              },
-              "photo": {
-                "id": "alcaldia_miguel-hidalgo",
-                "kind": "representativa",
-                "url": "/assets/alcaldias/miguel-hidalgo.jpg",
-                "category": "CDMX",
-                "borough": "Miguel Hidalgo",
-                "topic": "Bosque de Chapultepec, alcaldía Miguel Hidalgo",
-                "author": "ProtoplasmaKid",
-                "license": "CC0",
-                "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-                "source": "https://commons.wikimedia.org/wiki/File:Audiorama_de_Chapultepec_1.jpg"
-              }
-            },
-            {
-              "title": "Mauricio Tabe presenta su Quinto Informe de Gobierno en Miguel Hidalgo",
-              "description": "Durante su Quinto Informe de Gobierno en Miguel Hidalgo, Mauricio Tabe dijo que la estrategia Blindar MH duplicó el presupuesto de seguridad y triplicó la presencia de policías y patrullas. También reportó 1,770 cámaras y la reiluminación de 150 calles en un año. Son cifras y resultados expuestos por el alcalde, no una verificación independiente.",
-              "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNdXhhemVjeGhBRjlvT25FUGl5TlpXSGZlTmFHNk9Ga21zUjA5YTQ0TTBNamUxWWg4czY1NUM3MDg2RFhVUDUwVmNRTy1zQUtEbmd3TnJwYkR3aUpRdjd0czlRek9mY3ZjbGh6bmpVdHFieGZZcHFFUk5zekZZQnNNYVVEQ0ZTMGJQdkt3a1EzQURLS01Sb1FYV1A0NC1iVnFMcmVCeVV5SG1kdDRTNGpRZUp3?oc=5",
-              "source": "sdpnoticias",
-              "date": "2026-11-12",
-              "published_at": "2026-11-12T18:35:37Z",
-              "category": "Gobierno",
-              "borough": "Miguel Hidalgo",
-              "location": "Miguel Hidalgo (mencionada en el titular)",
-              "local_url": "/noticias/?id=842f4c3306f51b3ab9fc&mes=2026-11",
-              "source_url": "https://www.sdpnoticias.com/estados/cdmx/mauricio-tabe-presenta-su-quinto-informe-de-gobierno-en-miguel-hidalgo/",
-              "brief": {
-                "lead": "Durante su Quinto Informe de Gobierno en Miguel Hidalgo, Mauricio Tabe dijo que la estrategia Blindar MH duplicó el presupuesto de seguridad y triplicó la presencia de policías y patrullas. También reportó 1,770 cámaras y la reiluminación de 150 calles en un año. Son cifras y resultados expuestos por el alcalde, no una verificación independiente.",
-                "context": "El balance presentado incluyó seguridad, iluminación, recuperación de parques y espacios públicos y programas sociales para mujeres. La cobertura de La Prensa también recoge la clausura de una obra en Sócrates 211 por un nivel excedente.",
-                "pending": "Las cifras de seguridad, cámaras y calles intervenidas se atribuyen a Mauricio Tabe y no se verifican de forma independiente en estas notas. Para confirmarlas se requieren los indicadores oficiales, el presupuesto aprobado y los expedientes públicos de las obras.",
-                "method": "Síntesis basada en la nota de SDP Noticias del 12 de noviembre de 2026: https://www.sdpnoticias.com/estados/cdmx/mauricio-tabe-presenta-su-quinto-informe-de-gobierno-en-miguel-hidalgo/ y contraste de cobertura con La Prensa: https://oem.com.mx/la-prensa/metropoli/mauricio-tabe-presenta-su-quinto-informe-presume-avances-en-seguridad-y-cambios-en-miguel-hidalgo-33088214. Las cifras se atribuyen al alcalde; no constituyen una auditoría independiente."
-              },
-              "photo": {
-                "id": "commons_93188323",
-                "kind": "representativa",
-                "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/Registro_de_agua._Primera_Secci%C3%B3n_del_Bosque_de_Chapultepec_-_4.jpg/960px-Registro_de_agua._Primera_Secci%C3%B3n_del_Bosque_de_Chapultepec_-_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-                "category": "CDMX",
-                "borough": "",
-                "topic": "Registro de agua. Primera Sección del Bosque de Chapultepec - 4",
-                "keywords": [
-                  "Medio Ambiente"
-                ],
-                "author": "ProtoplasmaKid",
-                "license": "CC BY-SA 4.0",
-                "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-                "source": "https://commons.wikimedia.org/wiki/File:Registro_de_agua._Primera_Secci%C3%B3n_del_Bosque_de_Chapultepec_-_4.jpg"
-              }
-            },
-            {
-              "title": "Mauricio Tabe presenta su Quinto Informe de Gobierno en Miguel Hidalgo",
-              "description": "Durante su Quinto Informe de Gobierno en Miguel Hidalgo, Mauricio Tabe dijo que la estrategia Blindar MH duplicó el presupuesto de seguridad y triplicó la presencia de policías y patrullas. También reportó 1,770 cámaras y la reiluminación de 150 calles en un año. Son cifras y resultados expuestos por el alcalde, no una verificación independiente.",
-              "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNdXhhemVjeGhBRjlvT25FUGl5TlpXSGZlTmFHNk9Ga21zUjA5YTQ0TTBNamUxWWg4czY1NUM3MDg2RFhVUDUwVmNRTy1zQUtEbmd3TnJwYkR3aUpRdjd0czlRek9mY3ZjbGh6bmpVdHFieGZZcHFFUk5zekZZQnNNYVVEQ0ZTMGJQdkt3a1EzQURLS01Sb1FYV1A0NC1iVnFMcmVCeVV5SG1kdDRTNGpRZUp3?oc=5",
-              "source": "sdpnoticias",
-              "date": "2026-11-12",
-              "published_at": "2026-11-12T18:35:37Z",
-              "category": "Gobierno",
-              "borough": "Miguel Hidalgo",
-              "location": "Miguel Hidalgo (mencionada en el titular)",
-              "local_url": "/noticias/?id=842f4c3306f51b3ab9fc&mes=2026-11",
-              "source_url": "https://www.sdpnoticias.com/estados/cdmx/mauricio-tabe-presenta-su-quinto-informe-de-gobierno-en-miguel-hidalgo/",
-              "brief": {
-                "lead": "Durante su Quinto Informe de Gobierno en Miguel Hidalgo, Mauricio Tabe dijo que la estrategia Blindar MH duplicó el presupuesto de seguridad y triplicó la presencia de policías y patrullas. También reportó 1,770 cámaras y la reiluminación de 150 calles en un año. Son cifras y resultados expuestos por el alcalde, no una verificación independiente.",
-                "context": "El balance presentado incluyó seguridad, iluminación, recuperación de parques y espacios públicos y programas sociales para mujeres. La cobertura de La Prensa también recoge la clausura de una obra en Sócrates 211 por un nivel excedente.",
-                "pending": "Las cifras de seguridad, cámaras y calles intervenidas se atribuyen a Mauricio Tabe y no se verifican de forma independiente en estas notas. Para confirmarlas se requieren los indicadores oficiales, el presupuesto aprobado y los expedientes públicos de las obras.",
-                "method": "Síntesis basada en la nota de SDP Noticias del 12 de noviembre de 2026: https://www.sdpnoticias.com/estados/cdmx/mauricio-tabe-presenta-su-quinto-informe-de-gobierno-en-miguel-hidalgo/ y contraste de cobertura con La Prensa: https://oem.com.mx/la-prensa/metropoli/mauricio-tabe-presenta-su-quinto-informe-presume-avances-en-seguridad-y-cambios-en-miguel-hidalgo-33088214. Las cifras se atribuyen al alcalde; no constituyen una auditoría independiente."
-              },
-              "photo": {
-                "id": "contexto_teatro_angela_peralta",
-                "kind": "representativa",
-                "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/MX_TV_TEATRO_ANGELA_PERALTA_%2846329692434%29.jpg/1280px-MX_TV_TEATRO_ANGELA_PERALTA_%2846329692434%29.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
-                "category": "CDMX",
-                "borough": "",
-                "topic": "Teatro Ángela Peralta, Polanco, alcaldía Miguel Hidalgo, Ciudad de México (fotografía de 2019; no corresponde al informe de 2026)",
-                "keywords": [
-                  "Teatro Ángela Peralta",
-                  "Polanco",
-                  "Miguel Hidalgo",
-                  "alcaldía Miguel Hidalgo",
-                  "Mauricio Tabe",
-                  "Quinto Informe de Gobierno",
-                  "informe de gobierno"
-                ],
-                "author": "Secretaría de Cultura Ciudad de México",
-                "license": "CC BY 2.0",
-                "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
-                "source": "https://commons.wikimedia.org/wiki/File:MX_TV_TEATRO_ANGELA_PERALTA_(46329692434).jpg"
-              }
-            }
-          ],
-          "brief": {
-            "lead": "Durante su Quinto Informe de Gobierno en Miguel Hidalgo, Mauricio Tabe dijo que la estrategia Blindar MH duplicó el presupuesto de seguridad y triplicó la presencia de policías y patrullas. También reportó 1,770 cámaras y la reiluminación de 150 calles en un año. Son cifras y resultados expuestos por el alcalde, no una verificación independiente.",
-            "context": "El balance presentado incluyó seguridad, iluminación, recuperación de parques y espacios públicos y programas sociales para mujeres. La cobertura de La Prensa también recoge la clausura de una obra en Sócrates 211 por un nivel excedente.",
-            "pending": "Las cifras de seguridad, cámaras y calles intervenidas se atribuyen a Mauricio Tabe y no se verifican de forma independiente en estas notas. Para confirmarlas se requieren los indicadores oficiales, el presupuesto aprobado y los expedientes públicos de las obras.",
-            "method": "Síntesis basada en la nota de SDP Noticias del 12 de noviembre de 2026: https://www.sdpnoticias.com/estados/cdmx/mauricio-tabe-presenta-su-quinto-informe-de-gobierno-en-miguel-hidalgo/ y contraste de cobertura con La Prensa: https://oem.com.mx/la-prensa/metropoli/mauricio-tabe-presenta-su-quinto-informe-presume-avances-en-seguridad-y-cambios-en-miguel-hidalgo-33088214. Las cifras se atribuyen al alcalde; no constituyen una auditoría independiente."
-          },
-          "photo": {
-            "id": "contexto_teatro_angela_peralta",
-            "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/MX_TV_TEATRO_ANGELA_PERALTA_%2846329692434%29.jpg/1280px-MX_TV_TEATRO_ANGELA_PERALTA_%2846329692434%29.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
-            "category": "CDMX",
-            "borough": "",
-            "topic": "Teatro Ángela Peralta, Polanco, alcaldía Miguel Hidalgo, Ciudad de México (fotografía de 2019; no corresponde al informe de 2026)",
-            "keywords": [
-              "Teatro Ángela Peralta",
-              "Polanco",
-              "Miguel Hidalgo",
-              "alcaldía Miguel Hidalgo",
-              "Mauricio Tabe",
-              "Quinto Informe de Gobierno",
-              "informe de gobierno"
-            ],
-            "author": "Secretaría de Cultura Ciudad de México",
-            "license": "CC BY 2.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
-            "source": "https://commons.wikimedia.org/wiki/File:MX_TV_TEATRO_ANGELA_PERALTA_(46329692434).jpg"
-          }
-        },
-        {
-          "title": "Mauricio Tabe presenta su quinto informe: presume avances en seguridad y cambios en Miguel Hidalgo",
-          "description": "De acuerdo con El Sol de México, el titular publicado es: «Mauricio Tabe presenta su quinto informe: presume avances en seguridad y cambios en Miguel Hidalgo». La información publicada por El Sol de México aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOZkxQQjM5RUVXcmhwQjgxSzh4dG1SdFBybzk2dFBORW1IUnZ1V2Jnd3pwSXlySV9rR1RyTVo5cXpnXzlZZjJSbkxRMTRVVURib3pFSGpSWjJHWWpEcm95c3ZiMkxsMFR5X1JWcjlkOE9NV1N2YmEwZUw0TlptYnlmakxhZWNXRU9BOG41R01GUDdkMV9wUjNGdzhwa1BzTEktUDEyMUsxTmF3ay1jWUpWVGgzc1h5eW9LLVZVbF9YRDdmdzRqTkpMd2tnc1dxUGY5VTNucXZqYXB4eWItVVE?oc=5",
-          "source": "El Sol de México",
-          "date": "2026-11-12",
-          "published_at": "2026-11-12T06:59:05Z",
-          "category": "Seguridad",
-          "borough": "Miguel Hidalgo",
-          "location": "Miguel Hidalgo (mencionada en el titular)",
-          "local_url": "/noticias/?id=74a0f51397a6d07ca328&mes=2026-11",
-          "alternate_versions": [
-            {
-              "title": "Mauricio Tabe presenta su quinto informe: presume avances en seguridad y cambios en Miguel Hidalgo",
-              "description": "De acuerdo con El Sol de México, el titular publicado es: «Mauricio Tabe presenta su quinto informe: presume avances en seguridad y cambios en Miguel Hidalgo». La información publicada por El Sol de México aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-              "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOZkxQQjM5RUVXcmhwQjgxSzh4dG1SdFBybzk2dFBORW1IUnZ1V2Jnd3pwSXlySV9rR1RyTVo5cXpnXzlZZjJSbkxRMTRVVURib3pFSGpSWjJHWWpEcm95c3ZiMkxsMFR5X1JWcjlkOE9NV1N2YmEwZUw0TlptYnlmakxhZWNXRU9BOG41R01GUDdkMV9wUjNGdzhwa1BzTEktUDEyMUsxTmF3ay1jWUpWVGgzc1h5eW9LLVZVbF9YRDdmdzRqTkpMd2tnc1dxUGY5VTNucXZqYXB4eWItVVE?oc=5",
-              "source": "El Sol de México",
-              "date": "2026-11-11",
-              "published_at": "2026-11-12T03:36:31Z",
-              "category": "Seguridad",
-              "borough": "Miguel Hidalgo",
-              "location": "Miguel Hidalgo (mencionada en el titular)",
-              "local_url": "/noticias/?id=74a0f51397a6d07ca328&mes=2026-11",
-              "brief": {
-                "lead": "De acuerdo con El Sol de México, el titular publicado es: «Mauricio Tabe presenta su quinto informe: presume avances en seguridad y cambios en Miguel Hidalgo». La información publicada por El Sol de México aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-                "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
-                "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-              },
-              "photo": {
-                "id": "alcaldia_miguel-hidalgo",
-                "kind": "representativa",
-                "url": "/assets/alcaldias/miguel-hidalgo.jpg",
-                "category": "CDMX",
-                "borough": "Miguel Hidalgo",
-                "topic": "Bosque de Chapultepec, alcaldía Miguel Hidalgo",
-                "author": "ProtoplasmaKid",
-                "license": "CC0",
-                "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-                "source": "https://commons.wikimedia.org/wiki/File:Audiorama_de_Chapultepec_1.jpg"
-              }
-            }
-          ],
-          "brief": {
-            "lead": "De acuerdo con El Sol de México, el titular publicado es: «Mauricio Tabe presenta su quinto informe: presume avances en seguridad y cambios en Miguel Hidalgo». La información publicada por El Sol de México aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
-            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "alcaldia_miguel-hidalgo",
-            "kind": "representativa",
-            "url": "/assets/alcaldias/miguel-hidalgo.jpg",
-            "category": "CDMX",
-            "borough": "Miguel Hidalgo",
-            "topic": "Bosque de Chapultepec, alcaldía Miguel Hidalgo",
-            "author": "ProtoplasmaKid",
-            "license": "CC0",
-            "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-            "source": "https://commons.wikimedia.org/wiki/File:Audiorama_de_Chapultepec_1.jpg"
-          }
         }
       ]
     },
@@ -14877,8 +14674,8 @@
       "count": 172,
       "articles": [
         {
-          "title": "Robos y delitos por colonia en Tláhuac",
-          "description": "De acuerdo con Capital CDMX, el titular publicado es: «Robos y delitos por colonia en Tláhuac». La información publicada por Capital CDMX aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "title": "Las colonias más peligrosas de Tláhuac: robos, asaltos y zonas críticas",
+          "description": "De acuerdo con Capital CDMX, el titular publicado es: «Las colonias más peligrosas de Tláhuac: robos, asaltos y zonas críticas». Una nota de Capital CDMX comunica un caso relacionado con una detención o una presunta conducta delictiva en Tláhuac. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
           "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE11Z1Nnc1BpNnVHN1RaUHRTRWl4R0hqNHdnbGE5Q2dTMEhHUnh1NHplOUJqdjctd25rMTBTRTFFMmFCT1c2YlotNnUwa3pZbll5dVI1T0xkbm9DQUJuQVBYalZpck1Iejly?oc=5",
           "source": "Capital CDMX",
           "date": "2026-11-16",
@@ -14888,7 +14685,7 @@
           "location": "Tláhuac (mencionada en el titular)",
           "local_url": "/noticias/?id=279ac4898c38949018c3&mes=2026-11",
           "brief": {
-            "lead": "De acuerdo con Capital CDMX, el titular publicado es: «Robos y delitos por colonia en Tláhuac». La información publicada por Capital CDMX aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "lead": "De acuerdo con Capital CDMX, el titular publicado es: «Las colonias más peligrosas de Tláhuac: robos, asaltos y zonas críticas». Una nota de Capital CDMX comunica un caso relacionado con una detención o una presunta conducta delictiva en Tláhuac. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
             "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
             "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
@@ -14907,7 +14704,42 @@
             "license": "CC BY-SA 4.0",
             "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
             "source": "https://commons.wikimedia.org/wiki/File:Patrulla_vecinal.jpg"
-          }
+          },
+          "alternate_versions": [
+            {
+              "title": "Robos y delitos por colonia en Tláhuac",
+              "description": "De acuerdo con Capital CDMX, el titular publicado es: «Robos y delitos por colonia en Tláhuac». La información publicada por Capital CDMX aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+              "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE11Z1Nnc1BpNnVHN1RaUHRTRWl4R0hqNHdnbGE5Q2dTMEhHUnh1NHplOUJqdjctd25rMTBTRTFFMmFCT1c2YlotNnUwa3pZbll5dVI1T0xkbm9DQUJuQVBYalZpck1Iejly?oc=5",
+              "source": "Capital CDMX",
+              "date": "2026-11-16",
+              "published_at": "2026-11-16T23:32:16Z",
+              "category": "Seguridad",
+              "borough": "Tláhuac",
+              "location": "Tláhuac (mencionada en el titular)",
+              "local_url": "/noticias/?id=279ac4898c38949018c3&mes=2026-11",
+              "brief": {
+                "lead": "De acuerdo con Capital CDMX, el titular publicado es: «Robos y delitos por colonia en Tláhuac». La información publicada por Capital CDMX aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+                "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+                "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+              },
+              "photo": {
+                "id": "archivo_seguridad_002",
+                "kind": "representativa",
+                "url": "/assets/fotos/archivo_seguridad_002.jpg",
+                "category": "Seguridad",
+                "borough": "",
+                "topic": "Patrulla vecinal",
+                "keywords": [
+                  "Seguridad"
+                ],
+                "author": "Daniel Yonka",
+                "license": "CC BY-SA 4.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "https://commons.wikimedia.org/wiki/File:Patrulla_vecinal.jpg"
+              }
+            }
+          ]
         },
         {
           "title": "Tláhuac 2026: 63.8% percibe inseguridad",
@@ -16506,8 +16338,8 @@
           ]
         },
         {
-          "title": "Colonias más peligrosas de Tlalpan: dónde hay robos",
-          "description": "De acuerdo con Capital CDMX, el titular publicado es: «Colonias más peligrosas de Tlalpan: dónde hay robos». La información publicada por Capital CDMX aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "title": "Las colonias más peligrosas de Tlalpan: dónde se reportan más robos",
+          "description": "De acuerdo con Capital CDMX, el titular publicado es: «Las colonias más peligrosas de Tlalpan: dónde se reportan más robos». La información publicada por Capital CDMX aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
           "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5nWFVOZF9FdThaV2lfX2JzTGFuUUp3M21lZjd5QXVyS1NyY1FwQ3R0SXFzaTJwZGt4RnZLQzJIUE1VQ1pOWjduRkN4Q2FFUnF6TWx3VXYxR1ZxV191dS1HTVJNVm80SFNN?oc=5",
           "source": "Capital CDMX",
           "date": "2026-11-16",
@@ -16517,7 +16349,7 @@
           "location": "Tlalpan (mencionada en el titular)",
           "local_url": "/noticias/?id=94606d91beaba7702486&mes=2026-11",
           "brief": {
-            "lead": "De acuerdo con Capital CDMX, el titular publicado es: «Colonias más peligrosas de Tlalpan: dónde hay robos». La información publicada por Capital CDMX aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "lead": "De acuerdo con Capital CDMX, el titular publicado es: «Las colonias más peligrosas de Tlalpan: dónde se reportan más robos». La información publicada por Capital CDMX aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
             "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
             "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
@@ -16536,7 +16368,42 @@
             "license": "CC BY-SA 4.0",
             "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.es",
             "source": "https://commons.wikimedia.org/wiki/File:Patrulla_cdmx.jpg"
-          }
+          },
+          "alternate_versions": [
+            {
+              "title": "Colonias más peligrosas de Tlalpan: dónde hay robos",
+              "description": "De acuerdo con Capital CDMX, el titular publicado es: «Colonias más peligrosas de Tlalpan: dónde hay robos». La información publicada por Capital CDMX aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+              "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5nWFVOZF9FdThaV2lfX2JzTGFuUUp3M21lZjd5QXVyS1NyY1FwQ3R0SXFzaTJwZGt4RnZLQzJIUE1VQ1pOWjduRkN4Q2FFUnF6TWx3VXYxR1ZxV191dS1HTVJNVm80SFNN?oc=5",
+              "source": "Capital CDMX",
+              "date": "2026-11-16",
+              "published_at": "2026-11-16T23:32:16Z",
+              "category": "Seguridad",
+              "borough": "Tlalpan",
+              "location": "Tlalpan (mencionada en el titular)",
+              "local_url": "/noticias/?id=94606d91beaba7702486&mes=2026-11",
+              "brief": {
+                "lead": "De acuerdo con Capital CDMX, el titular publicado es: «Colonias más peligrosas de Tlalpan: dónde hay robos». La información publicada por Capital CDMX aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+                "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+                "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+              },
+              "photo": {
+                "id": "seguridad",
+                "kind": "representativa",
+                "url": "/assets/fotos/seguridad.jpg",
+                "category": "Seguridad",
+                "borough": "",
+                "topic": "Patrulla de Ciudad de México",
+                "keywords": [
+                  "Seguridad"
+                ],
+                "author": "RainerRowe",
+                "license": "CC BY-SA 4.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.es",
+                "source": "https://commons.wikimedia.org/wiki/File:Patrulla_cdmx.jpg"
+              }
+            }
+          ]
         },
         {
           "title": "Activista denuncia agresiones por retirar propaganda política en puentes de Tlalpan en CDMX",
@@ -19228,31 +19095,6 @@
           "borough": "Xochimilco",
           "location": "Xochimilco (mencionada en el titular)",
           "local_url": "/noticias/?id=4861ff59816e68367ca0&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con Capital CDMX, el titular publicado es: «Xochimilco 2026: 67.1% percibe inseguridad». La información publicada por Capital CDMX aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
-            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "contexto_policia_xochimilco",
-            "kind": "representativa",
-            "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Mexican_Police_station.JPG/960px-Mexican_Police_station.JPG",
-            "category": "Seguridad",
-            "borough": "",
-            "topic": "Estación de policía frente al Tren Ligero de Xochimilco (archivo 2015); no documenta denuncias de 2026.",
-            "keywords": [
-              "policía",
-              "seguridad",
-              "Xochimilco",
-              "estación de policía",
-              "Tren Ligero"
-            ],
-            "author": "Celinebj",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-            "source": "https://commons.wikimedia.org/wiki/File:Mexican_Police_station.JPG"
-          },
           "alternate_versions": [
             {
               "title": "Xochimilco: San Mateo Xalpa y La Cebada en cifras de 2024",
@@ -19357,7 +19199,32 @@
                 "source": "https://commons.wikimedia.org/wiki/File:Mexican_Police_station.JPG"
               }
             }
-          ]
+          ],
+          "brief": {
+            "lead": "De acuerdo con Capital CDMX, el titular publicado es: «Xochimilco 2026: 67.1% percibe inseguridad». La información publicada por Capital CDMX aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "contexto_policia_xochimilco",
+            "kind": "representativa",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Mexican_Police_station.JPG/960px-Mexican_Police_station.JPG",
+            "category": "Seguridad",
+            "borough": "",
+            "topic": "Estación de policía frente al Tren Ligero de Xochimilco (archivo 2015); no documenta denuncias de 2026.",
+            "keywords": [
+              "policía",
+              "seguridad",
+              "Xochimilco",
+              "estación de policía",
+              "Tren Ligero"
+            ],
+            "author": "Celinebj",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "source": "https://commons.wikimedia.org/wiki/File:Mexican_Police_station.JPG"
+          }
         },
         {
           "title": "Xochimilco: San Mateo Xalpa y La Cebada en cifras de 2024",
