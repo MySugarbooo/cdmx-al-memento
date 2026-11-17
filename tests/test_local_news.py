@@ -31,6 +31,31 @@ class LocalNewsTests(unittest.TestCase):
         self.assertIn('href="https://oem.com.mx/esto/futbol-americano/aficionados-de-san-francisco-49ers-en-cdmx-hablan-de-la-rivalidad-contra-dallas-cowboys-33151840"', article_html)
         self.assertIn("Ver fuente original", article_html)
 
+    def test_maya_security_meeting_uses_tecámac_location_summary_and_direct_source(self):
+        source_url = "https://mayacomunicacion.com.mx/cdmx-se-suma-al-frente-interestatal-de-seguridad-del-centro-del-pais/"
+        rss_url = "https://news.google.com/rss/articles/maya-security-meeting-20261116?oc=5"
+        result = standardize({
+            "title": "CDMX se suma al frente interestatal de seguridad del centro del país",
+            "url": rss_url,
+            "source": "Maya Comunicación",
+            "date": "2026-11-16",
+            "published_at": "2026-11-17T02:00:00Z",
+            "category": "Seguridad",
+        })
+        self.assertIsNotNone(result)
+        self.assertEqual(result["source_url"], source_url)
+        self.assertEqual(result["category"], "Seguridad")
+        self.assertEqual(result["borough"], "")
+        self.assertIn("Tecámac, Estado de México", result["location"])
+        self.assertIn("Tecámac, Estado de México", result["brief"]["lead"])
+        self.assertIn("ocho entidades", result["brief"]["context"])
+        self.assertIn("Pablo Vázquez", result["brief"]["context"])
+        self.assertIn("acuerdos específicos", result["brief"]["pending"])
+        self.assertEqual(result["description"], result["brief"]["lead"])
+        page = render(result, article_id(result))
+        self.assertIn(source_url, page)
+        self.assertNotIn(rss_url, page)
+
     def test_infobae_karol_g_health_rumor_is_neutralized_and_linked_directly(self):
         source_url = "https://www.infobae.com/mexico/2026/11/16/que-le-paso-a-karol-g-filtran-la-supuesta-enfermedad-que-la-habria-obligado-a-posponer-su-concierto-en-la-cdmx/"
         result = standardize({
