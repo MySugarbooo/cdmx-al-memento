@@ -10,7 +10,9 @@ class NewsWorkflowTimeoutTests(unittest.TestCase):
         self.assertRegex(workflow, r"(?m)^\s*timeout-minutes:\s*25\s*$")
         self.assertIn("queue: max", workflow)
         self.assertIn("cancel-in-progress: false", workflow)
-        self.assertIn("cron: '17 * * * *'", workflow)
+        self.assertIn("cron: '7,22,37,52 * * * *'", workflow)
+        self.assertIn("id: schedule_guard", workflow)
+        self.assertIn("run: python scripts/news_schedule_guard.py", workflow)
 
 
 if __name__ == "__main__":
