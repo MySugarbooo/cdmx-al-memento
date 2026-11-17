@@ -69,6 +69,7 @@ INFOBAE_TLALPAN_ANIMAL_SOURCE_URL = "https://www.infobae.com/mexico/2026/11/12/d
 EL_GRAFICO_VC_TRAILER_SOURCE_URL = "https://www.elgrafico.mx/la-roja/2026/11/12/el-morenito-muere-tras-ser-arrastrado-varios-metros-por-un-trailer-en-venustiano-carranza/?outputType=amp"
 INFOBAE_BALLET_ZAPATILLA_SOURCE_URL = "https://www.infobae.com/mexico/2026/11/12/funcion-gratis-del-ballet-la-zapatilla-de-cristal-llega-a-cdmx-fecha-y-sede/"
 INFOBAE_MARIA_LEON_CONCERT_SOURCE_URL = "https://www.infobae.com/mexico/2026/11/13/maria-leon-presento-su-nueva-era-de-villana-en-el-teatro-metropolitan-de-la-cdmx-entre-invitados-nostalgia-y-canciones-ineditas/"
+INFOBAE_AMERICA_FEMENIL_PUMAS_SOURCE_URL = "https://www.infobae.com/mexico/deportes/2026/11/16/america-femenil-se-saldria-de-la-cdmx-para-las-semifinales-ante-pumas-del-apertura-2026/"
 INFOBAE_PULQUE_BARBACOA_SOURCE_URL = "https://www.infobae.com/mexico/2026/11/06/la-feria-del-pulque-y-la-barbacoa-2026-llegara-a-la-magdalena-contreras-en-cdmx-fechas-horarios-y-como-llegar/"
 POSTA_PULQUE_BARBACOA_SOURCE_URL = "https://www.posta.com.mx/cdmx/feria-del-pulque-y-la-barbacoa-2026-fechas-y-entrada-gratis/vl2276243"
 SDPNOTICIAS_MAURICIO_TABE_REPORT_SOURCE_URL = "https://www.sdpnoticias.com/estados/cdmx/mauricio-tabe-presenta-su-quinto-informe-de-gobierno-en-miguel-hidalgo/"
