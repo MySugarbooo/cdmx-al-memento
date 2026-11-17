@@ -177,23 +177,28 @@
       "context": "Imagen de carácter ilustrativo y referencial; no constituye evidencia gráfica de Pokémon Go ni de la mercancía asegurada en Plaza Meave."
     },
     {
-      "id": "contexto_concierto_palacio_deportes_2009",
+      "id": "contexto_teatro_metropolitan_2019",
       "kind": "representativa",
       "category": "Cultura",
-      "topic": "Concierto de Kings of Leon en el Palacio de los Deportes, CDMX (octubre de 2009); foto de archivo representativa, no documenta eventos de la noticia.",
+      "topic": "Fachada del Teatro Metropólitan en la calle Independencia, Centro Histórico de Ciudad de México (archivo 2019); no muestra el concierto de Golden Ganga de 2027.",
       "keywords": [
-        "concierto",
+        "Teatro Metropólitan",
+        "Golden Ganga",
+        "conciertos",
         "música en vivo",
-        "Palacio de los Deportes",
-        "Ciudad de México",
-        "escenario",
-        "público"
+        "Centro Histórico",
+        "Cuauhtémoc",
+        "Independencia"
       ],
-      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/PalaciodelosDeportes_Concierto.jpg/960px-PalaciodelosDeportes_Concierto.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:PalaciodelosDeportes_Concierto.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Teatro_Metropolitan%2C_Calle_Independencia_-_monocromo.jpg/960px-Teatro_Metropolitan%2C_Calle_Independencia_-_monocromo.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Teatro_Metropolitan,_Calle_Independencia_-_monocromo.jpg",
       "author": "ProtoplasmaKid",
       "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "borough": "Cuauhtémoc",
+      "captured_at": "2019-01-19",
+      "uploaded_at": "2019-03-05",
+      "adaptation": "Fotografía del recinto tomada el 19 de enero de 2019; no corresponde a la presentación de Golden Ganga anunciada para el 21 de febrero de 2027."
     },
     {
       "id": "contexto_repartidores_motocicleta_cdmx",
