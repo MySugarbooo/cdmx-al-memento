@@ -100,6 +100,7 @@ TV_AZTECA_REVOLUCION_DESFILE_SOURCE_URL = "https://www.tvazteca.com/aztecanotici
 
 
 MAYA_ACTA_NACIMIENTO_SOURCE_URL = "https://mayacomunicacion.com.mx/acta-de-nacimiento-cdmx/"
+MAYA_SECURITY_MEETING_SOURCE_URL = "https://mayacomunicacion.com.mx/cdmx-se-suma-al-frente-interestatal-de-seguridad-del-centro-del-pais/"
 INFOBAE_DEPECHE_MODE_FUTURAMA_SOURCE_URL = "https://www.infobae.com/mexico/2026/11/17/concierto-tributo-a-depeche-mode-en-la-cdmx-horario-fecha-y-sede-del-evento-gratuito/"
 
 
@@ -514,6 +515,16 @@ def is_maya_acta_nacimiento_story(article):
         and _photo_fold(article.get("source")) == "maya comunicacion"
         and "acta de nacimiento cdmx 2026" in title
         and "como sacarla en linea" in title
+    )
+
+def is_maya_security_meeting_story(article):
+    """Identifica la reunión interestatal de seguridad celebrada en Tecámac."""
+    title = _photo_fold(article.get("title"))
+    return (
+        str(article.get("date") or "")[:10] == "2026-11-16"
+        and _photo_fold(article.get("source")) == "maya comunicacion"
+        and "frente interestatal de seguridad" in title
+        and "centro del pais" in title
     )
 
 
@@ -1296,6 +1307,29 @@ def summarize(article):
                 + ". El costo se contrastó con el tarifario oficial de la Secretaría de Administración y Finanzas "
                 "de CDMX (clave 54), consultado el 16 de noviembre: "
                 "https://data.finanzas.cdmx.gob.mx/formato_lc/conceptos/registro_civil/grupo."
+            ),
+        }
+    if is_maya_security_meeting_story(article):
+        return {
+            "lead": (
+                "Maya Comunicación informó el 16 de noviembre de 2026 que Clara Brugada participó en la "
+                "Reunión Interestatal de Coordinación por la Paz y la Seguridad, celebrada en Tecámac, "
+                "Estado de México, junto con integrantes del gabinete de seguridad de CDMX."
+            ),
+            "context": (
+                "La cobertura señala que el encuentro reunió a representantes de ocho entidades del centro "
+                "del país: Ciudad de México, Estado de México, Guerrero, Morelos, Hidalgo, Puebla, Querétaro "
+                "y Tlaxcala. Por la capital también asistieron Pablo Vázquez, César Cravioto y Bertha Alcalde."
+            ),
+            "pending": (
+                "La publicación indica que los acuerdos específicos se comunicarán por las vías oficiales "
+                "de los gobiernos participantes. No detalla compromisos operativos ni medidas para una "
+                "alcaldía de CDMX; la sede fue Tecámac, Estado de México."
+            ),
+            "method": (
+                "Síntesis editorial basada en la publicación original de Maya Comunicación del 16 de noviembre "
+                "de 2026: " + MAYA_SECURITY_MEETING_SOURCE_URL +
+                ". La sede y los participantes se atribuyen al medio; no se infieren acuerdos no publicados."
             ),
         }
     if is_infobae_depeche_mode_story(article):
