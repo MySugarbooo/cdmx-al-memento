@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-17 10:43 UTC",
+  "updated": "2026-11-17 11:15 UTC",
   "boroughs": [
     {
       "name": "La Magdalena Contreras",
@@ -5187,6 +5187,27 @@
           "borough": "Coyoacán",
           "location": "Coyoacán (mencionada en el titular)",
           "local_url": "/noticias/?id=e1064e4e3c31a6de162f&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con TV Azteca, el titular publicado es: «¡En pleno Buen Fin! Asaltan con mazos tienda en Miguel Ángel de Quevedo, Coyoacán». Una nota de TV Azteca comunica un caso relacionado con una detención o una presunta conducta delictiva en Coyoacán. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
+            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "seguridad",
+            "kind": "representativa",
+            "url": "/assets/fotos/seguridad.jpg",
+            "category": "Seguridad",
+            "borough": "",
+            "topic": "Patrulla de Ciudad de México",
+            "keywords": [
+              "Seguridad"
+            ],
+            "author": "RainerRowe",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.es",
+            "source": "https://commons.wikimedia.org/wiki/File:Patrulla_cdmx.jpg"
+          },
           "alternate_versions": [
             {
               "title": "¡En pleno Buen Fin! Asaltan con mazos tienda en Miguel Ángel de Quevedo, Coyoacán",
@@ -5221,28 +5242,7 @@
                 "source": "https://commons.wikimedia.org/wiki/File:Patrulla_vecinal.jpg"
               }
             }
-          ],
-          "brief": {
-            "lead": "De acuerdo con TV Azteca, el titular publicado es: «¡En pleno Buen Fin! Asaltan con mazos tienda en Miguel Ángel de Quevedo, Coyoacán». Una nota de TV Azteca comunica un caso relacionado con una detención o una presunta conducta delictiva en Coyoacán. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
-            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
-            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "seguridad",
-            "kind": "representativa",
-            "url": "/assets/fotos/seguridad.jpg",
-            "category": "Seguridad",
-            "borough": "",
-            "topic": "Patrulla de Ciudad de México",
-            "keywords": [
-              "Seguridad"
-            ],
-            "author": "RainerRowe",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.es",
-            "source": "https://commons.wikimedia.org/wiki/File:Patrulla_cdmx.jpg"
-          }
+          ]
         },
         {
           "title": "¡En pleno Buen Fin! Asaltan con mazos tienda en Miguel Ángel de Quevedo, Coyoacán",
