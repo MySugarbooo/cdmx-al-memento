@@ -64,7 +64,6 @@ VERIFIED_SOURCE_LINKS = {
         "https://noticias.imer.mx/blog/activistas-y-defensores-de-animales-marcharon-para-exigir-el-fin-de-la-explotacion-animal-y-promover-el-veganismo-en-cdmx/",
     ("Maya Comunicación", "/noticias/?id=c14b74cd151a0ac26343&mes=2026-11"):
         "https://mayacomunicacion.com.mx/acta-de-nacimiento-cdmx/",
-    "https://mayacomunicacion.com.mx/cdmx-se-suma-al-frente-interestatal-de-seguridad-del-centro-del-pais/",
     ("Infobae", "/noticias/?id=5946c764181ff026c127&mes=2026-11"):
         "https://www.infobae.com/mexico/2026/11/17/concierto-tributo-a-depeche-mode-en-la-cdmx-horario-fecha-y-sede-del-evento-gratuito/",
 }
@@ -90,6 +89,7 @@ VERIFIED_SOURCE_URLS = frozenset({
     "https://www.debate.com.mx/cdmx/gallinas-ponedoras-en-cdmx-asi-sera-el-programa-de-apoyo-anunciado-por-clara-brugada-20261116-0225.html",
     "https://www.infobae.com/mexico/deportes/2026/11/16/america-femenil-se-saldria-de-la-cdmx-para-las-semifinales-ante-pumas-del-apertura-2026/",
     "https://mayacomunicacion.com.mx/acta-de-nacimiento-cdmx/",
+    "https://mayacomunicacion.com.mx/cdmx-se-suma-al-frente-interestatal-de-seguridad-del-centro-del-pais/",
     "https://www.infobae.com/mexico/2026/11/17/concierto-tributo-a-depeche-mode-en-la-cdmx-horario-fecha-y-sede-del-evento-gratuito/",
 })
 SENSITIVE_MEDIA_TITLE = re.compile(
