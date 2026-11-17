@@ -51,6 +51,7 @@ HOY_TAMAULIPAS_PATTY_CHIO_ROUTE_MONTH = "2026-11"
 AHORA_NOTICIAS_TLALPAN_PERRITA_SOURCE_URL = "https://ahoranoticias.com.mx/nacional/rescatan-a-perrita-por-presunto-maltrato-animal-en-tlalpan/"
 EL_SOL_ANIMAL_ABUSE_COMPLAINTS_SOURCE_URL = "https://oem.com.mx/elsoldemexico/metropoli/en-cdmx-15-colonias-de-6-alcaldias-concentran-denuncias-por-maltrato-animal-33109336"
 LA_PRENSA_PREHOSPITAL_CARE_SOURCE_URL = "https://oem.com.mx/la-prensa/metropoli/cdmx-busca-modernizar-la-atencion-prehospitalaria-con-plataforma-digital-de-la-ops-oms-inicia-prueba-piloto-con-tres-am-33136134"
+DIARIO_MORELOS_MEXICO_ACAPULCO_TRAFFIC_SOURCE_URL = "https://www.diariodemorelos.com/noticias/reportan-trafico-intenso-en-mexico-acapulco-rumbo-cdmx-estos-son-puntos-afectados"
 MAIL = "sanchezaxochitl@gmail.com"
 RETENTION_DAYS = 365
 
@@ -1123,6 +1124,31 @@ def standardize(article):
                      + INFOBAE_KAROL_G_REPROGRAMMED_CONCERT_SOURCE_URL
                      + ". La reprogramación se atribuye al aviso de OCESA y ENSO citado por el medio; no es "
                        "verificación médica independiente."
+            ),
+        }
+    if is_diario_morelos_mexico_acapulco_traffic(result):
+        result["source_url"] = DIARIO_MORELOS_MEXICO_ACAPULCO_TRAFFIC_SOURCE_URL
+        result["category"] = "Movilidad"
+        result["borough"] = ""
+        result["location"] = "Autopista México-Acapulco, rumbo a Ciudad de México (seis puntos señalados por Diario de Morelos)"
+        result["brief"] = {
+            "lead": (
+                "Diario de Morelos informó el 16 de noviembre de 2026 a las 15:53 h que había carga vehicular "
+                "rumbo a CDMX en seis puntos de la autopista México-Acapulco: km 19, Puente Chimalcóyotl; "
+                "km 24, incorporación al Viaducto Elevado Tlalpan; km 47, Arcos Morelos-Ciudad de México; "
+                "km 53, Tres Marías; km 100, Puente Las Brisas; y caseta Tlalpan."
+            ),
+            "context": (
+                "La publicación atribuye las complicaciones al flujo de automovilistas que regresaban a sus "
+                "destinos después del periodo vacacional."
+            ),
+            "pending": (
+                "La nota no estima cuánto durarán los congestionamientos ni reporta cierres totales. "
+                "Las condiciones pueden cambiar; este resumen no es un reporte de tránsito en tiempo real."
+            ),
+            "method": (
+                "Síntesis editorial propia basada en la publicación original de Diario de Morelos del "
+                "16 de noviembre de 2026; no equivale a una verificación independiente del tránsito."
             ),
         }
     result["description"] = result["brief"]["lead"]

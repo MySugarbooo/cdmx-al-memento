@@ -54,6 +54,15 @@ class PublicSeoTests(unittest.TestCase):
         karol_page = render(article, "0123456789abcdefabcd")
         self.assertIn(karol_g, karol_page)
 
+        diario_morelos = "https://www.diariodemorelos.com/noticias/reportan-trafico-intenso-en-mexico-acapulco-rumbo-cdmx-estos-son-puntos-afectados"
+        self.assertIn(diario_morelos, VERIFIED_SOURCE_URLS)
+        article["source_url"] = diario_morelos
+        diario_page = render(article, "0123456789abcdefabcd")
+        self.assertIn(diario_morelos, diario_page)
+        article["source_url"] = diario_morelos + "?unverified=1"
+        diario_unverified_page = render(article, "0123456789abcdefabcd")
+        self.assertNotIn(diario_morelos + "?unverified=1", diario_unverified_page)
+
         untrusted = "https://www.infobae.com/mexico/2026/11/15/otro-articulo-no-verificado/"
         article["source_url"] = untrusted
         page = render(article, "0123456789abcdefabcd")

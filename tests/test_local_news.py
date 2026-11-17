@@ -4,7 +4,7 @@ import unittest
 from pathlib import Path
 from scripts.notas_locales import assign_photos, local_link, summarize, is_sensitive_media, RADIO_FORMULA_CASA_ECOLOGICA_SOURCE_URL, INFOBAE_MARIA_LEON_CONCERT_SOURCE_URL, AICM_FLIGHT_SUSPENSION_SOURCE_URL, LA_RAZON_GARBAGE_ZOCALO_SOURCE_URL, INFOBAE_GARBAGE_ZOCALO_SOURCE_URL
 from scripts.build_article_seo import article_id, render
-from update_news import clear_sensitive_context_photos, category_by_headline, standardize, photo_needs_refresh, CAPITAL_CDMX_CARE_BUDGET_SOURCE_URL, prioritize_photo_refresh, build_homepage_feed, archive_record_key, dedupe_homepage_events, INFOBAE_AIR_QUALITY_20261115_SOURCE_URL, BILLBOARD_KAROL_G_CDMX_SOURCE_URL, ELCONGRESISTA_BUEN_FIN_CDMX_SOURCE_URL, TV_AZTECA_HOY_NO_CIRCULA_20261116_SOURCE_URL
+from update_news import clear_sensitive_context_photos, category_by_headline, standardize, photo_needs_refresh, CAPITAL_CDMX_CARE_BUDGET_SOURCE_URL, prioritize_photo_refresh, build_homepage_feed, archive_record_key, dedupe_homepage_events, INFOBAE_AIR_QUALITY_20261115_SOURCE_URL, BILLBOARD_KAROL_G_CDMX_SOURCE_URL, ELCONGRESISTA_BUEN_FIN_CDMX_SOURCE_URL, TV_AZTECA_HOY_NO_CIRCULA_20261116_SOURCE_URL, DIARIO_MORELOS_MEXICO_ACAPULCO_TRAFFIC_SOURCE_URL
 
 ROOT=Path(__file__).resolve().parents[1]
 
@@ -940,6 +940,31 @@ class LocalNewsTests(unittest.TestCase):
         self.assertIn("deben comprobarse",brief["pending"])
         self.assertIn("titular",brief["method"])
         self.assertNotIn("entrevistamos",brief["lead"])
+
+    def test_diario_morelos_mexico_acapulco_traffic_uses_direct_source_and_confirmed_points(self):
+        article = {
+            "title": "Reportan tráfico intenso en la México-Acapulco rumbo a CDMX; estos son los puntos afectados",
+            "url": "https://news.google.com/rss/articles/diario-morelos-mexico-acapulco-20261116",
+            "source": "Diario de Morelos",
+            "date": "2026-11-16",
+            "published_at": "2026-11-16T21:53:03Z",
+            "category": "CDMX",
+        }
+        result = standardize(article)
+        self.assertIsNotNone(result)
+        self.assertEqual(result["category"], "Movilidad")
+        self.assertEqual(result["borough"], "")
+        self.assertIn("Autopista México-Acapulco", result["location"])
+        self.assertEqual(result["source_url"], DIARIO_MORELOS_MEXICO_ACAPULCO_TRAFFIC_SOURCE_URL)
+        for point in ("km 19", "km 24", "km 47", "km 53", "km 100", "caseta Tlalpan"):
+            self.assertIn(point, result["brief"]["lead"])
+        self.assertIn("15:53", result["brief"]["lead"])
+        self.assertIn("ni reporta cierres totales", result["brief"]["pending"])
+        self.assertEqual(result["description"], result["brief"]["lead"])
+        page = render(result, article_id(result))
+        self.assertIn(DIARIO_MORELOS_MEXICO_ACAPULCO_TRAFFIC_SOURCE_URL, page)
+        self.assertNotIn(result["url"], page)
+
 
     def test_tv_azteca_liveblog_does_not_misattribute_google_news_headline(self):
         article = {
