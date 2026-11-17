@@ -26,6 +26,7 @@ on:
       - 'assets/noticias-locales.js'
       - 'tests/test_public_seo.py'
       - 'tests/test_photo_relevance.py'
+      - 'tests/test_editorial_photo_source_regressions.py'
       - 'scripts/build_article_seo.py'
       - 'tests/test_article_photo.py'
       - 'tests/test_archive.py'
