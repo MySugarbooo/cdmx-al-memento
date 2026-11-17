@@ -23,6 +23,11 @@ from zoneinfo import ZoneInfo
 
 from scripts.analisis_editorial import build_editorial
 from scripts.notas_locales import is_maya_security_meeting_story, MAYA_SECURITY_MEETING_SOURCE_URL
+from scripts.notas_locales import (
+    is_maya_revolucion_desfile_2026,
+    is_diario_mexico_benito_juarez_detention_story,
+    is_rafael_castro_capitanes_nba_story,
+)
 from scripts.notas_locales import is_sin_embargo_hombres_bienestar_story, SIN_EMBARGO_HOMBRES_BIENESTAR_SOURCE_URL
 from scripts.notas_locales import local_link, summarize, assign_photos, _photo_score, is_sensitive_media, is_esto_49ers_fan_story, ESTO_49ERS_FANS_SOURCE_URL, is_coyotepec_highway_crash, INFOBAE_COYOTEPEC_HIGHWAY_CRASH_SOURCE_URL, is_san_juan_del_rio_autopista57_closure, SENSITIVE_MEDIA_TITLE, SAN_JUAN_DEL_RIO_AUTOPISTA57_SOURCE_URL, is_infobae_tlalpan_animal_abuse, is_la_prensa_tlalpan_animal_case, INFOBAE_TLALPAN_ANIMAL_SOURCE_URL, LA_PRENSA_TLALPAN_ANIMAL_SOURCE_URL, is_imagen_tlalpan_dog_rescue, is_huixtla_migrant_caravan, is_vc_fatal_trailer_incident, EL_GRAFICO_VC_TRAILER_SOURCE_URL, is_infobae_ballet_zapatilla, INFOBAE_BALLET_ZAPATILLA_SOURCE_URL, is_infobae_america_femenil_pumas_semifinal_story, INFOBAE_AMERICA_FEMENIL_PUMAS_SOURCE_URL, is_infobae_maria_leon_concert, INFOBAE_MARIA_LEON_CONCERT_SOURCE_URL, is_pulque_barbacoa_fair, is_mauricio_tabe_fifth_report, SDPNOTICIAS_MAURICIO_TABE_REPORT_SOURCE_URL, is_radio_formula_casa_ecologica, RADIO_FORMULA_CASA_ECOLOGICA_SOURCE_URL, is_capital_cdmx_care_budget, CAPITAL_CDMX_CARE_BUDGET_SOURCE_URL, is_la_jornada_aicm_flight_suspension, AICM_FLIGHT_SUSPENSION_SOURCE_URL, is_elsol_women_defensive_driving_workshop, EL_SOL_MUJERES_DEFENSIVE_DRIVING_SOURCE_URL, is_24horas_electric_mobility_plates_guide, HORAS_24_ELECTRIC_MOBILITY_SOURCE_URL, is_codigoqro_ignacio_detention, is_infobae_vite_balu_story, INFOBAE_VITE_BALU_SOURCE_URL, is_elsol_mexico_queretaro_trailer_rollover, EL_SOL_MEXICO_QUERETARO_TRAILER_SOURCE_URL, is_imer_animal_rights_march, IMER_ANIMAL_RIGHTS_MARCH_SOURCE_URL, is_diario_basta_alvaro_obregon_water_shortage, DIARIO_BASTA_ALVARO_OBREGON_WATER_SOURCE_URL, is_sociedad_noticias_garbage_zocalo, SOCIEDAD_NOTICIAS_GARBAGE_ZOCALO_SOURCE_URL, is_yahoo_garbage_zocalo, YAHOO_GARBAGE_ZOCALO_SOURCE_URL, is_la_razon_garbage_zocalo, LA_RAZON_GARBAGE_ZOCALO_SOURCE_URL, is_infobae_garbage_zocalo, INFOBAE_GARBAGE_ZOCALO_SOURCE_URL, INFOBAE_KAROL_G_HEALTH_SOURCE_URL, INFOBAE_KAROL_G_REPROGRAMMED_CONCERT_SOURCE_URL, is_infobae_karol_g_health_story, INFOBAE_AIR_QUALITY_20261115_SOURCE_URL, is_infobae_air_quality_report, BILLBOARD_KAROL_G_CDMX_SOURCE_URL, is_billboard_karol_g_concert_story, ELCONGRESISTA_BUEN_FIN_CDMX_SOURCE_URL, is_elcongresista_buen_fin_operation, TV_AZTECA_HOY_NO_CIRCULA_20261116_SOURCE_URL, is_tvazteca_hoy_no_circula_bridge_story, is_somoselmedio_valparaiso_exhibition_story, is_infobae_teacher_mental_health_story, is_capital_cdmx_cuajimalpa_crime_stats, CAPITAL_CDMX_CUAJIMALPA_CRIME_STATS_SOURCE_URL, is_capital_cdmx_vc_crime_stats, CAPITAL_CDMX_VENUSTIANO_CRIME_STATS_SOURCE_URL, is_tvazteca_revolucion_desfile_2026, TV_AZTECA_REVOLUCION_DESFILE_SOURCE_URL, is_debate_ruta_maiz_topilejo, is_maya_acta_nacimiento_story, MAYA_ACTA_NACIMIENTO_SOURCE_URL, is_infobae_depeche_mode_story, INFOBAE_DEPECHE_MODE_FUTURAMA_SOURCE_URL, is_sopitas_gorillaz_mural_story, SOPITAS_GORILLAZ_MURAL_SOURCE_URL, is_debate_gallinas_program_story, DEBATE_GALLINAS_PONEDORAS_SOURCE_URL, is_infobae_karol_g_guest_prediction_story
 
@@ -55,6 +60,9 @@ EL_SOL_ANIMAL_ABUSE_COMPLAINTS_SOURCE_URL = "https://oem.com.mx/elsoldemexico/me
 LA_PRENSA_PREHOSPITAL_CARE_SOURCE_URL = "https://oem.com.mx/la-prensa/metropoli/cdmx-busca-modernizar-la-atencion-prehospitalaria-con-plataforma-digital-de-la-ops-oms-inicia-prueba-piloto-con-tres-am-33136134"
 DIARIO_MORELOS_MEXICO_ACAPULCO_TRAFFIC_SOURCE_URL = "https://www.diariodemorelos.com/noticias/reportan-trafico-intenso-en-mexico-acapulco-rumbo-cdmx-estos-son-puntos-afectados"
 DEBATE_RUTA_MAIZ_SOURCE_URL = "https://www.debate.com.mx/cdmx/inauguran-ruta-del-maiz-en-cdmx-conectara-topilejo-con-la-joya-por-4-pesos-20261116-0230.html"
+MAYA_REVOLUCION_DESFILE_SOURCE_URL = "https://mayacomunicacion.com.mx/desfile-del-20-de-noviembre-ruta-horario-y-cierres-en-la-cdmx/"
+DIARIO_MEXICO_BENITO_JUAREZ_DETENTION_SOURCE_URL = "https://www.diariodemexico.com/mi-ciudad/detienen-sujeto-en-alcaldia-benito-juarez-agredir-privar-libertad-joven-en-su-departamento"
+AS_MEXICO_RAFAEL_CASTRO_SOURCE_URL = "https://mexico.as.com/masdeporte/rafael-castro-asciende-de-capitanes-cdmx-a-los-atlanta-hawks-de-la-nba-f202611-n/"
 MAIL = "sanchezaxochitl@gmail.com"
 RETENTION_DAYS = 365
 
@@ -412,6 +420,10 @@ def category_by_headline(title, feed_category, source=""):
     if is_diario_morelos_mexico_acapulco_traffic({"title": title, "source": source}):
         return "Movilidad"
     if is_debate_ruta_maiz_topilejo({"title": title, "source": source}):
+        return "Movilidad"
+    # Las guías del desfile cívico-militar describen recorrido y cierres viales.
+    if (re.search(r"\\bdesfile del 20 de noviembre\\b", normalized)
+            and re.search(r"\\b(?:ruta|cierres?|horario|alternativas viales?)\\b", normalized)):
         return "Movilidad"
     # El desabasto y el tandeo son servicios públicos; no deben quedar como CDMX genérico.
     if re.search(r"\b(?:carecen de agua|falta de agua|sin agua|tandeo|desabasto de agua|corte de agua|suspension de agua)\b", normalized):
@@ -1197,6 +1209,39 @@ def standardize(article):
             "Tecámac, Estado de México (sede de la reunión interestatal; participaron autoridades de CDMX)"
         )
         result["brief"] = summarize(result)
+    if is_maya_revolucion_desfile_2026(result):
+        result["source_url"] = MAYA_REVOLUCION_DESFILE_SOURCE_URL
+        result["category"] = "Movilidad"
+        result["borough"] = "Cuauhtémoc"
+        result["location"] = (
+            "Recorrido anunciado del Zócalo al Monumento a la Revolución, "
+            "alcaldía Cuauhtémoc, Ciudad de México"
+        )
+        result["brief"] = {
+            "lead": (
+                "Maya Comunicación informó el 16 de noviembre de 2026 que el desfile cívico-militar "
+                "del 20 de noviembre comenzará a las 10:00 h en el Zócalo y concluirá en el "
+                "Monumento a la Revolución. El recorrido aproximado de 2 kilómetros incluye 5 de Mayo, "
+                "Eje Central, avenida Juárez, Paseo de la Reforma y avenida de la República."
+            ),
+            "context": (
+                "La ruta atraviesa el Centro Histórico y llega a Tabacalera. La publicación señala "
+                "que la SSC aplicará cortes a la circulación desde las primeras horas del viernes y "
+                "recomienda como alternativas Eje 1 Norte, Circuito Interior, Eje 1 Oriente, "
+                "José María Izazaga, Fray Servando, Chapultepec e Insurgentes."
+            ),
+            "pending": (
+                "Los perímetros y horarios exactos de los cierres pueden cambiar conforme avance el desfile. "
+                "La nota recomienda consultar los avisos oficiales de Orientación Vial antes de salir. "
+                "El evento está programado para el viernes 20 de noviembre de 2026; esto no es un reporte "
+                "de cierres activos en tiempo real."
+            ),
+            "method": (
+                "Síntesis editorial propia basada en la publicación original de Maya Comunicación del "
+                "16 de noviembre de 2026; no equivale a un reporte de tránsito en tiempo real ni a una "
+                "verificación independiente de los cierres."
+            ),
+        }
     if is_sin_embargo_hombres_bienestar_story(result):
         result["source_url"] = SIN_EMBARGO_HOMBRES_BIENESTAR_SOURCE_URL
     if is_infobae_depeche_mode_story(result):
@@ -1225,6 +1270,61 @@ def standardize(article):
         result["borough"] = ""
         result["location"] = "Estadio GNP Seguros, Ciudad de México"
         result["brief"] = summarize(result)
+    if is_diario_mexico_benito_juarez_detention_story(result):
+        result["source_url"] = DIARIO_MEXICO_BENITO_JUAREZ_DETENTION_SOURCE_URL
+        result["category"] = "Seguridad"
+        result["borough"] = "Benito Juárez"
+        result["location"] = (
+            "Departamento en la alcaldía Benito Juárez, Ciudad de México "
+            "(la publicación no precisa calle ni colonia)"
+        )
+        result["brief"] = {
+            "lead": (
+                "Diario de México reportó que agentes de la Secretaría de Seguridad Ciudadana y de "
+                "Blindar BJ rescataron a una joven que, según la publicación, estaba retenida y había "
+                "sido agredida dentro de un departamento en Benito Juárez. El presunto agresor fue "
+                "detenido y puesto a disposición de la FGJCDMX para definir su situación legal."
+            ),
+            "context": (
+                "La nota atribuye el rescate a la SSC y a Blindar BJ. La información se presenta como "
+                "un reporte del medio y no como una resolución judicial."
+            ),
+            "pending": (
+                "La publicación no precisa una calle o colonia y no informa una resolución judicial. "
+                "Se mantiene la presunción de inocencia y no se reproducen datos personales de la víctima."
+            ),
+            "method": (
+                "Síntesis editorial propia basada en la nota original de Diario de México, publicada "
+                "el 16 de noviembre de 2026; no equivale a una investigación independiente."
+            ),
+        }
+    if is_rafael_castro_capitanes_nba_story(result):
+        result["source_url"] = AS_MEXICO_RAFAEL_CASTRO_SOURCE_URL
+        result["category"] = "CDMX"
+        result["borough"] = ""
+        result["location"] = (
+            "Capitanes CDMX, Ciudad de México (equipo de origen del jugador)"
+        )
+        result["brief"] = {
+            "lead": (
+                "AS México informó que Rafael Castro, pívot dominicano que jugó con Capitanes CDMX, "
+                "recibió un call-up de Atlanta Hawks y firmará un contrato de dos vías. El acuerdo "
+                "lo vincula con el equipo de la NBA y su filial College Park Skyhawks de la G League."
+            ),
+            "context": (
+                "La publicación identifica a Castro como el décimo jugador de Capitanes CDMX que recibe "
+                "un call-up y el primero de la franquicia en la temporada 2026-27."
+            ),
+            "pending": (
+                "AS México señaló que Capitanes aún no había anunciado quién ocuparía el lugar de Castro "
+                "para el resto del torneo y la temporada regular de la G League. No se afirma que ya "
+                "haya debutado con Atlanta."
+            ),
+            "method": (
+                "Síntesis editorial propia basada en la publicación original de AS México, actualizada "
+                "el 16 de noviembre de 2026; no equivale a una confirmación independiente de su alta o debut."
+            ),
+        }
     result["description"] = result["brief"]["lead"]
     return result
 
