@@ -5105,7 +5105,7 @@ class RafaelCastroBasketballPhotoRegressionTests(unittest.TestCase):
         self.assertEqual(article["photo"]["license"], "CC BY-SA 3.0")
         self.assertEqual(
             article["photo"]["licenseUrl"],
-            "https://creativecommons.org/licenses/by-sa/3.0/",
+            "https://creativecommons.org/licenses/by-sa/3.0",
         )
         self.assertEqual(
             article["photo"]["source"],
