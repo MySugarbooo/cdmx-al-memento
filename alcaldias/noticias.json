@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-17 06:42 UTC",
+  "updated": "2026-11-17 10:31 UTC",
   "boroughs": [
     {
       "name": "La Magdalena Contreras",
@@ -49,27 +49,6 @@
           "borough": "La Magdalena Contreras",
           "location": "La Magdalena Contreras (mencionada en el titular)",
           "local_url": "/noticias/?id=525b0bf8a7d809c905d2&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con Capital CDMX, el titular publicado es: «Magdalena Contreras 2026: delitos e INEGI». La información publicada por Capital CDMX aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "commons_109733607",
-            "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/MX_NS_LA_MAGDALENA_CONTRERAS_09.jpg/960px-MX_NS_LA_MAGDALENA_CONTRERAS_09.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "category": "Alcaldías",
-            "borough": "",
-            "topic": "MX NS LA MAGDALENA CONTRERAS 09",
-            "keywords": [
-              "Magdalena Contreras Ciudad de México"
-            ],
-            "author": "Secretaría de Cultura CDMX",
-            "license": "CC BY 2.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-            "source": "https://commons.wikimedia.org/wiki/File:MX_NS_LA_MAGDALENA_CONTRERAS_09.jpg"
-          },
           "alternate_versions": [
             {
               "title": "Magdalena Contreras: San Jerónimo Lídice y delitos de 2024",
@@ -137,7 +116,28 @@
                 "source": "https://commons.wikimedia.org/wiki/File:MX_NS_LA_MAGDALENA_CONTRERAS_09.jpg"
               }
             }
-          ]
+          ],
+          "brief": {
+            "lead": "De acuerdo con Capital CDMX, el titular publicado es: «Magdalena Contreras 2026: delitos e INEGI». La información publicada por Capital CDMX aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "commons_109733607",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/MX_NS_LA_MAGDALENA_CONTRERAS_09.jpg/960px-MX_NS_LA_MAGDALENA_CONTRERAS_09.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "category": "Alcaldías",
+            "borough": "",
+            "topic": "MX NS LA MAGDALENA CONTRERAS 09",
+            "keywords": [
+              "Magdalena Contreras Ciudad de México"
+            ],
+            "author": "Secretaría de Cultura CDMX",
+            "license": "CC BY 2.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+            "source": "https://commons.wikimedia.org/wiki/File:MX_NS_LA_MAGDALENA_CONTRERAS_09.jpg"
+          }
         },
         {
           "title": "La Magdalena Contreras: colonias con más delitos denunciados y cómo protegerte",
@@ -2859,27 +2859,6 @@
           "borough": "Azcapotzalco",
           "location": "Azcapotzalco (mencionada en el titular)",
           "local_url": "/noticias/?id=ef72350d2934c7bb4500&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con Capital CDMX, el titular publicado es: «Las colonias más peligrosas de Azcapotzalco: dónde se denuncian robos». La información publicada por Capital CDMX aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
-            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "archivo_seguridad_005",
-            "kind": "representativa",
-            "url": "/assets/fotos/archivo_seguridad_005.jpg",
-            "category": "Seguridad",
-            "borough": "",
-            "topic": "Jeep policia cdmx",
-            "keywords": [
-              "Seguridad"
-            ],
-            "author": "Gobierno de la Ciudad de México",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Jeep_policia_cdmx.jpg"
-          },
           "alternate_versions": [
             {
               "title": "Robos y delitos en colonias de Azcapotzalco",
@@ -2914,7 +2893,28 @@
                 "source": "https://commons.wikimedia.org/wiki/File:Jeep_policia_cdmx.jpg"
               }
             }
-          ]
+          ],
+          "brief": {
+            "lead": "De acuerdo con Capital CDMX, el titular publicado es: «Las colonias más peligrosas de Azcapotzalco: dónde se denuncian robos». La información publicada por Capital CDMX aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "archivo_seguridad_005",
+            "kind": "representativa",
+            "url": "/assets/fotos/archivo_seguridad_005.jpg",
+            "category": "Seguridad",
+            "borough": "",
+            "topic": "Jeep policia cdmx",
+            "keywords": [
+              "Seguridad"
+            ],
+            "author": "Gobierno de la Ciudad de México",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Jeep_policia_cdmx.jpg"
+          }
         },
         {
           "title": "Azcapotzalco: El Rosario registra 223 denuncias en 2024",
@@ -2927,32 +2927,6 @@
           "borough": "Azcapotzalco",
           "location": "Azcapotzalco (mencionada en el titular)",
           "local_url": "/noticias/?id=ec20df14dfe88b67815e&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con Capital CDMX, el titular publicado es: «Azcapotzalco: El Rosario registra 223 denuncias en 2024». La información publicada por Capital CDMX aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "contexto_metro_el_rosario_2025",
-            "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Metro_El_Rosario_%282025%29_8.jpg/960px-Metro_El_Rosario_%282025%29_8.jpg",
-            "category": "Movilidad",
-            "borough": "",
-            "topic": "Letrero de la estación El Rosario del Metro (archivo 2025); referencia de lugar, no de denuncias.",
-            "keywords": [
-              "El Rosario",
-              "Azcapotzalco",
-              "Metro",
-              "estación",
-              "Línea 6",
-              "CDMX"
-            ],
-            "author": "Tbhotch",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-            "source": "https://commons.wikimedia.org/wiki/File:Metro_El_Rosario_%282025%29_8.jpg"
-          },
           "alternate_versions": [
             {
               "title": "Azcapotzalco: El Rosario registra 223 denuncias en 2024",
@@ -2984,7 +2958,33 @@
                 "source": "https://commons.wikimedia.org/wiki/File:PARROQUIA_DE_SANTA_CATARINA_%28AZCAPOTZALCO%29.jpg"
               }
             }
-          ]
+          ],
+          "brief": {
+            "lead": "De acuerdo con Capital CDMX, el titular publicado es: «Azcapotzalco: El Rosario registra 223 denuncias en 2024». La información publicada por Capital CDMX aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "contexto_metro_el_rosario_2025",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Metro_El_Rosario_%282025%29_8.jpg/960px-Metro_El_Rosario_%282025%29_8.jpg",
+            "category": "Movilidad",
+            "borough": "",
+            "topic": "Letrero de la estación El Rosario del Metro (archivo 2025); referencia de lugar, no de denuncias.",
+            "keywords": [
+              "El Rosario",
+              "Azcapotzalco",
+              "Metro",
+              "estación",
+              "Línea 6",
+              "CDMX"
+            ],
+            "author": "Tbhotch",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "source": "https://commons.wikimedia.org/wiki/File:Metro_El_Rosario_%282025%29_8.jpg"
+          }
         },
         {
           "title": "El Rosario registró 223 denuncias en 2024: el panorama de Azcapotzalco",
@@ -4296,8 +4296,46 @@
     },
     {
       "name": "Benito Juárez",
-      "count": 84,
+      "count": 85,
       "articles": [
+        {
+          "title": "Detienen a sujeto en la alcaldía Benito Juárez tras agredir y privar de la libertad a una joven en su departamento",
+          "description": "De acuerdo con Diario de México, el titular publicado es: «Detienen a sujeto en la alcaldía Benito Juárez tras agredir y privar de la libertad a una joven en su departamento». Una nota de Diario de México comunica un caso relacionado con una detención o una presunta conducta delictiva en Benito Juárez. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
+          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOcGZxOW95NUdJVHhhSVUxVWMtNXZRYUIzeHBEZmFGY3U0WnZvQWx0bENaTmRPcTFueVRSbXF5Y2lPYWlDejFKT1pZajgzeDd0S21iUGxXYUVuNjJzdjZ3d2N1TWJSYTJOMjUtS2syX3BScHNkNHktMjhValVuRExJbFZHRnM4eFpVdDBCdFhfUWtPeEpSSGpxX2k4a29HU3FReFJCTnlkcHdZRndRSzU5VFBWMTVRSXBnaFU0emJfX0t2UnVtNktSU1I4c9IB0AFBVV95cUxNRktua1BMUklURFI2Q0QzRGpSREJIN1BVRjFDYW0tYUhWazJIcHlxQXdWSTV5VWxuTHJCTXQzRHN3OERUMy0wNmFPdHpxWHhScjdsa0FhMGVpSGpFZzJHbXBoLWVpSU1PUlNIMG5zYUZEakh6Q3FHeXJkQ1hyNTRRY05CUE14THh6UnVEdC1tdTRDX0t2cEZMRnU1WkRueEd2dEk3Tk5KTEoyYXQ5OE52RW1qdnBPYmRlZWVralVXNmcyWWp6eWhCczM2SFNpU2hp?oc=5",
+          "source": "Diario de México",
+          "date": "2026-11-16",
+          "published_at": "2026-11-16T22:47:48Z",
+          "category": "Seguridad",
+          "borough": "Benito Juárez",
+          "location": "Benito Juárez (mencionada en el titular)",
+          "local_url": "/noticias/?id=ad3e3c16199cd7b5d5d8&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con Diario de México, el titular publicado es: «Detienen a sujeto en la alcaldía Benito Juárez tras agredir y privar de la libertad a una joven en su departamento». Una nota de Diario de México comunica un caso relacionado con una detención o una presunta conducta delictiva en Benito Juárez. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
+            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "contexto_reconstruccion_edificios_benito_juarez_2019",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Sheinbaum_reconstrucci%C3%B3n_de_edificios_en_Benito_Ju%C3%A1rez_08.jpg/960px-Sheinbaum_reconstrucci%C3%B3n_de_edificios_en_Benito_Ju%C3%A1rez_08.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "category": "Seguridad",
+            "borough": "",
+            "topic": "Reconstrucción de edificios en Benito Juárez tras el sismo de 2017; foto de archivo, no documenta reformas de 2026 ni edificios anteriores a 1985.",
+            "keywords": [
+              "edificios",
+              "reconstrucción",
+              "seguridad estructural",
+              "inmuebles",
+              "Benito Juárez",
+              "sismo 19S"
+            ],
+            "author": "Gobierno de la Ciudad de México",
+            "license": "CC BY 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Sheinbaum_reconstrucci%C3%B3n_de_edificios_en_Benito_Ju%C3%A1rez_08.jpg"
+          }
+        },
         {
           "title": "En Benito Juárez líder de comerciantes vende espacios a particulares",
           "description": "De acuerdo con Meganoticias.mx, el titular publicado es: «En Benito Juárez líder de comerciantes vende espacios a particulares». La información publicada por Meganoticias.mx aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -5065,30 +5103,12 @@
             "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
             "source": "https://commons.wikimedia.org/wiki/File:Parque_Hundido.jpeg"
           }
-        },
-        {
-          "title": "Clima en Benito Juárez: martes 3 de noviembre con cielo claro y temperaturas agradables",
-          "description": "De acuerdo con El Heraldo de México, el titular publicado es: «Clima en Benito Juárez: martes 3 de noviembre con cielo claro y temperaturas agradables». El pronóstico recogido por El Heraldo de México se refiere a condiciones meteorológicas en Benito Juárez. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
-          "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQN3NFSm5oQVAwelVOcmdwYzBnYVZocTdNUXhxWm1ickxjR09wdnBfdUg5Y2xiTldtS281dWViQVQ1aTFaUk5iUS03blczYTV3cWp2aDMxMUZxYUd1eEo1LUYtZktlT0M1SUJsWGh0VVJrMUx2S0FQemJ4V0FnVGNsb2RRd292MXZYTkp1TzhlNXh0TnBYcC10WS1jM1FOVXBhUkpVY05CeWZpYkxtbjlrWkVFb3dBeFJQRlNWYmxXTzl6T0tTTmY2N3pWNTh3STlMYklIWFpCT2xSTlc4?oc=5",
-          "source": "El Heraldo de México",
-          "date": "2026-11-02",
-          "published_at": "2026-11-03T05:00:00Z",
-          "category": "CDMX",
-          "borough": "Benito Juárez",
-          "location": "Benito Juárez (mencionada en el titular)",
-          "local_url": "/noticias/?id=7616da0fe1740b3227f0&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con El Heraldo de México, el titular publicado es: «Clima en Benito Juárez: martes 3 de noviembre con cielo claro y temperaturas agradables». El pronóstico recogido por El Heraldo de México se refiere a condiciones meteorológicas en Benito Juárez. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
         }
       ]
     },
     {
       "name": "Coyoacán",
-      "count": 204,
+      "count": 205,
       "articles": [
         {
           "title": "Sujetos roban tienda departamental en Coyoacán; detienen a un sospechoso y le incautan un martillo",
@@ -5389,6 +5409,39 @@
             "license": "CC BY-SA 4.0",
             "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.es",
             "source": "https://commons.wikimedia.org/wiki/File:Patrulla_cdmx.jpg"
+          }
+        },
+        {
+          "title": "Reportan robo en Sanborns en Coyoacán, policías buscan a responsables",
+          "description": "De acuerdo con MILENIO, el titular publicado es: «Reportan robo en Sanborns en Coyoacán, policías buscan a responsables». La información publicada por MILENIO aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE16bmlQMGdSRHQySDBCR3otdjk2T0dVaU81N2NMWjFCekdTaTBkS3pCZkpxRGpWT09na2ZJdDI2NF9acFZLUEtxX1QyTm84NjNGSF9ZRV9KbGx5a3VRNTUyaGV0NjdZb0RRa3k0SHY2MGNDb0FaTTFXOdIBeEFVX3lxTE5BdVAwOHd4dEoyX0xUSGpYWHhRZ1VKdW5JWlVISzg1bmVTQVhadndMenVhUk5Vclc3ZENrdktsZXVjTk9KYlRTdWlxYlpjNFltR3B6aV8tYURHX1dZMTNwZ1FFX3UzcXQtWEhqS004bHUxeEg1Tm5PTw?oc=5",
+          "source": "MILENIO",
+          "date": "2026-11-16",
+          "published_at": "2026-11-16T23:15:00Z",
+          "category": "Seguridad",
+          "borough": "Coyoacán",
+          "location": "Coyoacán (mencionada en el titular)",
+          "local_url": "/noticias/?id=66f8effe9fb01f17f8db&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con MILENIO, el titular publicado es: «Reportan robo en Sanborns en Coyoacán, policías buscan a responsables». La información publicada por MILENIO aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "archivo_seguridad_002",
+            "kind": "representativa",
+            "url": "/assets/fotos/archivo_seguridad_002.jpg",
+            "category": "Seguridad",
+            "borough": "",
+            "topic": "Patrulla vecinal",
+            "keywords": [
+              "Seguridad"
+            ],
+            "author": "Daniel Yonka",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Patrulla_vecinal.jpg"
           }
         },
         {
@@ -6192,77 +6245,6 @@
             "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
             "source": "https://commons.wikimedia.org/wiki/File:Casa_Gonz%C3%A1lez_de_Cos%C3%ADo,_Coyoac%C3%A1n,_Ciudad_de_M%C3%A9xico.jpg"
           }
-        },
-        {
-          "title": "Muere profesor dentro de las instalaciones del CCH Sur de la UNAM en alcaldía Coyoacán",
-          "description": "De acuerdo con Infobae, el titular publicado es: «Muere profesor dentro de las instalaciones del CCH Sur de la UNAM en alcaldía Coyoacán». La información publicada por Infobae aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNZTdRVXhxa3VuNmFJRWwtZTdqbzVMOFNFdjJESzloQlN2YS1UUXE2V1BEZzNrSnJVNG9xSFBLUkl6VUNRX2pXdjBxS0FzcFo1bmYwTUhGREdpa191ZVhUcWhiOEROcHU5bmRfa01vTnhCLWZrV21ydUxtUlEyaGUxQ1lFbVlvWERBSWNxVGFQT3owSmc0N2hPa1EzRTZ4SVNXVU5kQ0N6eEY2X1hjd1dYdEtvU29jcFRrNjl6VDRmM2JQMkJoTkNjNNIB4wFBVV95cUxPQVF0WC05N2V0Z0xhUnhyLTJwVEhjOWIwVnZteWhEazZNTWxYamJnbDNncEpUSVU3QV9yWDRKN0ZGNUt1MmFfUG1JUmNUbWhwdXZRWUkzc0hpOGpIeDRtZTZwU1ZBTy1nM2VrWldKRVlQT0Z2Mkx5eFZLSFg0MVl3U0RQdUpSMHpMb2hYd1dWblhuVGZ5dHFUQ19GMEtqaG9wTGpxRm82NzBHcVE4M1J5WVdFc2RfbFBCX2lfWHJROVlCU0I5MnkxLWhNZnhiLUN5UGt1dk9DMnNRakZhMy1HbEJwRQ?oc=5",
-          "source": "Infobae",
-          "date": "2026-11-12",
-          "published_at": "2026-11-12T22:46:00Z",
-          "category": "CDMX",
-          "borough": "Coyoacán",
-          "location": "Coyoacán (mencionada en el titular)",
-          "local_url": "/noticias/?id=f040fa23fb251d904dcb&mes=2026-11",
-          "alternate_versions": [
-            {
-              "title": "Muere profesor dentro de las instalaciones del CCH Sur de la UNAM en alcaldía Coyoacán",
-              "description": "De acuerdo con Infobae, el titular publicado es: «Muere profesor dentro de las instalaciones del CCH Sur de la UNAM en alcaldía Coyoacán». La información publicada por Infobae aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-              "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNZTdRVXhxa3VuNmFJRWwtZTdqbzVMOFNFdjJESzloQlN2YS1UUXE2V1BEZzNrSnJVNG9xSFBLUkl6VUNRX2pXdjBxS0FzcFo1bmYwTUhGREdpa191ZVhUcWhiOEROcHU5bmRfa01vTnhCLWZrV21ydUxtUlEyaGUxQ1lFbVlvWERBSWNxVGFQT3owSmc0N2hPa1EzRTZ4SVNXVU5kQ0N6eEY2X1hjd1dYdEtvU29jcFRrNjl6VDRmM2JQMkJoTkNjNNIB4wFBVV95cUxPQVF0WC05N2V0Z0xhUnhyLTJwVEhjOWIwVnZteWhEazZNTWxYamJnbDNncEpUSVU3QV9yWDRKN0ZGNUt1MmFfUG1JUmNUbWhwdXZRWUkzc0hpOGpIeDRtZTZwU1ZBTy1nM2VrWldKRVlQT0Z2Mkx5eFZLSFg0MVl3U0RQdUpSMHpMb2hYd1dWblhuVGZ5dHFUQ19GMEtqaG9wTGpxRm82NzBHcVE4M1J5WVdFc2RfbFBCX2lfWHJROVlCU0I5MnkxLWhNZnhiLUN5UGt1dk9DMnNRakZhMy1HbEJwRQ?oc=5",
-              "source": "Infobae",
-              "date": "2026-11-12",
-              "published_at": "2026-11-12T22:41:00Z",
-              "category": "CDMX",
-              "borough": "Coyoacán",
-              "location": "Coyoacán (mencionada en el titular)",
-              "local_url": "/noticias/?id=f040fa23fb251d904dcb&mes=2026-11",
-              "brief": {
-                "lead": "De acuerdo con Infobae, el titular publicado es: «Muere profesor dentro de las instalaciones del CCH Sur de la UNAM en alcaldía Coyoacán». La información publicada por Infobae aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-                "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-                "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-              },
-              "photo": {
-                "id": "commons_106559902",
-                "kind": "representativa",
-                "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/4._Coyoac%C3%A1n_banca_Ciudad_de_M%C3%A9xico.jpg/960px-4._Coyoac%C3%A1n_banca_Ciudad_de_M%C3%A9xico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-                "category": "CDMX",
-                "borough": "",
-                "topic": "4. Coyoacán banca Ciudad de México",
-                "keywords": [
-                  "CDMX"
-                ],
-                "author": "Machristen",
-                "license": "CC BY-SA 4.0",
-                "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-                "source": "https://commons.wikimedia.org/wiki/File:4._Coyoac%C3%A1n_banca_Ciudad_de_M%C3%A9xico.jpg"
-              }
-            },
-            {
-              "title": "Muere profesor dentro de las instalaciones del CCH Sur de la UNAM en alcaldía Coyoacán",
-              "description": "De acuerdo con Infobae, el titular publicado es: «Muere profesor dentro de las instalaciones del CCH Sur de la UNAM en alcaldía Coyoacán». La información publicada por Infobae aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-              "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNZTdRVXhxa3VuNmFJRWwtZTdqbzVMOFNFdjJESzloQlN2YS1UUXE2V1BEZzNrSnJVNG9xSFBLUkl6VUNRX2pXdjBxS0FzcFo1bmYwTUhGREdpa191ZVhUcWhiOEROcHU5bmRfa01vTnhCLWZrV21ydUxtUlEyaGUxQ1lFbVlvWERBSWNxVGFQT3owSmc0N2hPa1EzRTZ4SVNXVU5kQ0N6eEY2X1hjd1dYdEtvU29jcFRrNjl6VDRmM2JQMkJoTkNjNNIB4wFBVV95cUxPQVF0WC05N2V0Z0xhUnhyLTJwVEhjOWIwVnZteWhEazZNTWxYamJnbDNncEpUSVU3QV9yWDRKN0ZGNUt1MmFfUG1JUmNUbWhwdXZRWUkzc0hpOGpIeDRtZTZwU1ZBTy1nM2VrWldKRVlQT0Z2Mkx5eFZLSFg0MVl3U0RQdUpSMHpMb2hYd1dWblhuVGZ5dHFUQ19GMEtqaG9wTGpxRm82NzBHcVE4M1J5WVdFc2RfbFBCX2lfWHJROVlCU0I5MnkxLWhNZnhiLUN5UGt1dk9DMnNRakZhMy1HbEJwRQ?oc=5",
-              "source": "Infobae",
-              "date": "2026-11-12",
-              "published_at": "2026-11-12T22:41:00Z",
-              "category": "CDMX",
-              "borough": "Coyoacán",
-              "location": "Coyoacán (mencionada en el titular)",
-              "local_url": "/noticias/?id=f040fa23fb251d904dcb&mes=2026-11",
-              "brief": {
-                "lead": "De acuerdo con Infobae, el titular publicado es: «Muere profesor dentro de las instalaciones del CCH Sur de la UNAM en alcaldía Coyoacán». La información publicada por Infobae aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-                "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-                "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-              }
-            }
-          ],
-          "brief": {
-            "lead": "De acuerdo con Infobae, el titular publicado es: «Muere profesor dentro de las instalaciones del CCH Sur de la UNAM en alcaldía Coyoacán». La información publicada por Infobae aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
         }
       ]
     },
@@ -6281,27 +6263,6 @@
           "borough": "Cuajimalpa de Morelos",
           "location": "Cuajimalpa de Morelos (mencionada en el titular)",
           "local_url": "/noticias/?id=46db9326d5c5055df7cd&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con Capital CDMX, el titular publicado es: «Cuajimalpa 2026: delitos y encuesta INEGI». La información publicada por Capital CDMX aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "commons_157006037",
-            "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Nuevas_patrullas_para_Cuajimalpa_02.jpg/960px-Nuevas_patrullas_para_Cuajimalpa_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "category": "Seguridad",
-            "borough": "",
-            "topic": "Nuevas patrullas para Cuajimalpa 02",
-            "keywords": [
-              "Secretaría de Seguridad Ciudadana CDMX patrulla"
-            ],
-            "author": "Gobierno de la Ciudad de México",
-            "license": "CC BY 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Nuevas_patrullas_para_Cuajimalpa_02.jpg"
-          },
           "alternate_versions": [
             {
               "title": "Cuajimalpa: Santa Fe concentra 207 denuncias en 2024",
@@ -6374,7 +6335,28 @@
                 "source": "https://commons.wikimedia.org/wiki/File:Nuevas_patrullas_para_Cuajimalpa_02.jpg"
               }
             }
-          ]
+          ],
+          "brief": {
+            "lead": "De acuerdo con Capital CDMX, el titular publicado es: «Cuajimalpa 2026: delitos y encuesta INEGI». La información publicada por Capital CDMX aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "commons_157006037",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Nuevas_patrullas_para_Cuajimalpa_02.jpg/960px-Nuevas_patrullas_para_Cuajimalpa_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "category": "Seguridad",
+            "borough": "",
+            "topic": "Nuevas patrullas para Cuajimalpa 02",
+            "keywords": [
+              "Secretaría de Seguridad Ciudadana CDMX patrulla"
+            ],
+            "author": "Gobierno de la Ciudad de México",
+            "license": "CC BY 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Nuevas_patrullas_para_Cuajimalpa_02.jpg"
+          }
         },
         {
           "title": "Santa Fe concentró 207 denuncias en 2024: las cifras por colonia en Cuajimalpa",
@@ -17412,8 +17394,26 @@
     },
     {
       "name": "Venustiano Carranza",
-      "count": 62,
+      "count": 63,
       "articles": [
+        {
+          "title": "AICM reportó 70 vuelos afectados por coyuntura en Estados Unidos",
+          "description": "De acuerdo con El Economista, el titular publicado es: «AICM reportó 70 vuelos afectados por coyuntura en Estados Unidos». La información publicada por El Economista aborda un asunto que este portal clasifica como Movilidad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPTGU4SzRRWE96SFhzZ0t1ZklZX0xEQU1BR01Pa1RQZkdrZnRSR2pEdWdBVE1GdUptYXRJUWc2bkU3Z0d4aDMyOTROZWpJM0NfeXY5cEx2cDlldjRLam1wN2pFR2E0V1RpQ1BZRVBxYWsxYTJhSzAyMzI1YldqWi1XUTl5MUF3Szd4ZktWVHcxcWRvMmprSW1WQXdwYnMzbnQ3WXByM24xTXVxMUxqRXY3cDdZVVJQTTNhUmFR0gHAAUFVX3lxTFBsck9vcVdKVDFNSDIxS1E1RDdIaENYbzdNX3U3T2FaQ21uZEp6emtEdV9GUDQ3bUNmSXpzZUhheC1nbmx3Q0p0Q1R1WnBPUUNHSEdPMW5BMV9IdzV1dl9XUUJ2d1l2blpaU2Vva0xsTFF1djc4UFVkamFkU19BNTkwOGtkVG9VT2gzMUZrSnNQaC1od0d5ZW5KQno1SlhLY0xLWDd0MUNHTGpSMVNDeU9ueC1tTXdhaEVZTkd4OHdycw?oc=5",
+          "source": "El Economista",
+          "date": "2026-11-17",
+          "published_at": "2026-11-17T07:18:56Z",
+          "category": "Movilidad",
+          "borough": "Venustiano Carranza",
+          "location": "Aeropuerto Internacional de la Ciudad de México (AICM), Venustiano Carranza",
+          "local_url": "/noticias/?id=f4021610778484ec7c6a&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con El Economista, el titular publicado es: «AICM reportó 70 vuelos afectados por coyuntura en Estados Unidos». La información publicada por El Economista aborda un asunto que este portal clasifica como Movilidad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
+            "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          }
+        },
         {
           "title": "Otra explosión en CDMX; estalla horno de panadería en Venustiano Carranza y deja 7 lesionados",
           "description": "De acuerdo con Nación321, el titular publicado es: «Otra explosión en CDMX; estalla horno de panadería en Venustiano Carranza y deja 7 lesionados». La información publicada por Nación321 aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -18971,44 +18971,6 @@
             "method": "Síntesis editorial basada en la publicación de Tania Aguilar en El Gráfico, 12 de noviembre de 2026: https://www.elgrafico.mx/la-roja/2026/11/12/el-morenito-muere-tras-ser-arrastrado-varios-metros-por-un-trailer-en-venustiano-carranza/?outputType=amp. No constituye verificación independiente."
           },
           "sensitive_media": true
-        },
-        {
-          "title": "Tráiler arrolla y mata a limpiaparabrisas en Venustiano Carranza; conductor fue detenido",
-          "description": "De acuerdo con El Sol de México, el titular publicado es: «Tráiler arrolla y mata a limpiaparabrisas en Venustiano Carranza; conductor fue detenido». De acuerdo con El Sol de México, se informa de un hecho vial relacionado con vehículos en Venustiano Carranza. El propio titular señala un fallecimiento, sin que esta ficha agregue cifras ni identidades. Se requiere consultar la nota original para conocer el punto exacto, las circunstancias y los reportes oficiales, sin atribuir responsabilidades sin pruebas.",
-          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNUU9SWkRmenVPTWNhS3RianFJeEhXTkhDWDVXTGVIMnpHMy1xYkIwR2JhVWlzcEVzRGtUVkkyMnBfdmY4V0RDVVY5cngyRFQ4cmNqUFJkRXMzNlIySC1SRzZKYnFkVFBMZ0R3Um1sNXFfTHV4TzZxRXkyMnNxTk9JR1dKVEZhMmlWa180X2VyZ0hJWmlSa1ZpRTdhTE5qTlRyY2hyVmlvUXlkRGdHcDJZZUItcWdOak5aWDZuUGd2WHNKWkVRbkNyMlIzUk1lQlQ0?oc=5",
-          "source": "El Sol de México",
-          "date": "2026-11-11",
-          "published_at": "2026-11-12T04:34:05Z",
-          "category": "Movilidad",
-          "borough": "Venustiano Carranza",
-          "location": "Venustiano Carranza (mencionada en el titular)",
-          "local_url": "/noticias/?id=9524301916db44b12611&mes=2026-11",
-          "alternate_versions": [
-            {
-              "title": "Tráiler arrolla y mata a limpiaparabrisas en Venustiano Carranza; conductor fue detenido",
-              "description": "De acuerdo con El Sol de México, el titular publicado es: «Tráiler arrolla y mata a limpiaparabrisas en Venustiano Carranza; conductor fue detenido». De acuerdo con El Sol de México, se informa de un hecho vial relacionado con vehículos en Venustiano Carranza. El propio titular señala un fallecimiento, sin que esta ficha agregue cifras ni identidades. Se requiere consultar la nota original para conocer el punto exacto, las circunstancias y los reportes oficiales, sin atribuir responsabilidades sin pruebas.",
-              "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNUU9SWkRmenVPTWNhS3RianFJeEhXTkhDWDVXTGVIMnpHMy1xYkIwR2JhVWlzcEVzRGtUVkkyMnBfdmY4V0RDVVY5cngyRFQ4cmNqUFJkRXMzNlIySC1SRzZKYnFkVFBMZ0R3Um1sNXFfTHV4TzZxRXkyMnNxTk9JR1dKVEZhMmlWa180X2VyZ0hJWmlSa1ZpRTdhTE5qTlRyY2hyVmlvUXlkRGdHcDJZZUItcWdOak5aWDZuUGd2WHNKWkVRbkNyMlIzUk1lQlQ0?oc=5",
-              "source": "El Sol de México",
-              "date": "2026-11-11",
-              "published_at": "2026-11-12T04:18:34Z",
-              "category": "Movilidad",
-              "borough": "Venustiano Carranza",
-              "location": "Venustiano Carranza (mencionada en el titular)",
-              "local_url": "/noticias/?id=9524301916db44b12611&mes=2026-11",
-              "brief": {
-                "lead": "De acuerdo con El Sol de México, el titular publicado es: «Tráiler arrolla y mata a limpiaparabrisas en Venustiano Carranza; conductor fue detenido». De acuerdo con El Sol de México, se informa de un hecho vial relacionado con vehículos en Venustiano Carranza. El propio titular señala un fallecimiento, sin que esta ficha agregue cifras ni identidades. Se requiere consultar la nota original para conocer el punto exacto, las circunstancias y los reportes oficiales, sin atribuir responsabilidades sin pruebas.",
-                "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
-                "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-              }
-            }
-          ],
-          "brief": {
-            "lead": "De acuerdo con El Sol de México, el titular publicado es: «Tráiler arrolla y mata a limpiaparabrisas en Venustiano Carranza; conductor fue detenido». De acuerdo con El Sol de México, se informa de un hecho vial relacionado con vehículos en Venustiano Carranza. El propio titular señala un fallecimiento, sin que esta ficha agregue cifras ni identidades. Se requiere consultar la nota original para conocer el punto exacto, las circunstancias y los reportes oficiales, sin atribuir responsabilidades sin pruebas.",
-            "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
-            "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
         }
       ]
     },
