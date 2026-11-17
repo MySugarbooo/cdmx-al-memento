@@ -250,6 +250,21 @@ class ArticlePhotoTests(unittest.TestCase):
         self.assertIn("Autor de prueba", html)
         self.assertIn("CC BY 4.0", html)
 
+    def test_representative_photo_alt_uses_photo_topic_not_article_category(self):
+        html = render_photo({"category": "Gobierno", "photo": {
+            "url": "https://upload.wikimedia.org/example.jpg",
+            "kind": "representativa",
+            "topic": "Casa del Centro Histórico de la Ciudad de México (foto de archivo)",
+            "author": "Autor de prueba",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        }})
+        self.assertIn(
+            'alt="Casa del Centro Histórico de la Ciudad de México (foto de archivo)"',
+            html,
+        )
+        self.assertNotIn('alt="Imagen representativa de Gobierno"', html)
+
     def test_sensitive_story_hides_generic_representative_photo(self):
         item = {
             "title": "Caso Vadhir Derbez: Fiscalía CDMX tendría ADN relacionado con denuncia por violación",

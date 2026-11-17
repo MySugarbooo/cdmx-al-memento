@@ -159,8 +159,14 @@ def render_photo(item):
         credit += ' · <a href="' + esc(license_url) + '" rel="noopener noreferrer">Ver licencia</a>'
     if urlparse(source_url).scheme == "https":
         credit += ' · <a href="' + esc(source_url) + '" rel="noopener noreferrer">Origen de la imagen</a>'
+    photo_topic = str(photo.get("topic") or "").strip()
+    alt_text = photo_topic or (
+        "Imagen representativa de Ciudad de México"
+        if photo.get("kind") == "representativa"
+        else "Fotografía relacionada con la noticia"
+    )
     return ('<figure class="article-photo"><img src="' + esc(image_url) + '" alt="' +
-            esc("Imagen representativa de " + str(item.get("category") or "Ciudad de México") if photo.get("kind") == "representativa" else "Fotografía relacionada con la noticia") +
+            esc(alt_text) +
             '" loading="lazy" decoding="async" style="max-width:100%;height:auto">' +
             '<figcaption>' + esc(caption) + ' Crédito: ' + credit + '</figcaption></figure>')
 
