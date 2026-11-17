@@ -5201,3 +5201,19 @@ class RafaelCastroBasketballPhotoRegressionTests(unittest.TestCase):
         self.assertIn("no documenta obras ni partidos concretos", article["photo"]["topic"])
         self.assertLessEqual(len(article["photo"]["topic"]), 150)
 
+    def test_belinda_story_rejects_thalia_archival_photo(self):
+        article = {
+            "title": "Belinda recuerda su infancia tras cantar con Karol G en CDMX",
+            "source": "Vox Populi",
+            "date": "2026-11-17",
+            "category": "Cultura",
+        }
+        pool = photos._pool()
+        belinda_photo = next(p for p in pool if p.get("id") == "contexto_belinda_2021")
+        thalia_photo = next(p for p in pool if p.get("id") == "contexto_thalia_vina_1997")
+
+        self.assertEqual(_photo_score(article, belinda_photo), 5000)
+        self.assertEqual(_photo_score(article, thalia_photo), -10000)
+        self.assertNotIn("Karol G", thalia_photo.get("keywords", []))
+        self.assertNotIn("concierto", [str(k).casefold() for k in thalia_photo.get("keywords", [])])
+
