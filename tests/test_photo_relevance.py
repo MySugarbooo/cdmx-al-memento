@@ -3041,6 +3041,52 @@ class CurrentEditorialPhotoRegressionTests(unittest.TestCase):
         self.assertIn("18:00", brief["lead"])
         self.assertIn("150 personas", brief["context"])
 
+    def test_nplus_coyoacan_motorcycle_fire_uses_motorcycle_context_and_verified_summary(self):
+        article = news.standardize({
+            "title": "Video: Momento Exacto en que Hombre Incendia Motocicletas en Coyoacán, CDMX",
+            "url": "https://news.google.com/rss/articles/nplus-coyoacan-motorcycle-fire-20261117",
+            "source": "N+",
+            "date": "2026-11-17",
+            "published_at": "2026-11-17T12:58:00Z",
+            "category": "Seguridad",
+        })
+        self.assertIsNotNone(article)
+        self.assertTrue(photos.is_nplus_coyoacan_motorcycle_fire_story(article))
+        self.assertEqual(
+            article["source_url"],
+            photos.NPLUS_COYOACAN_MOTORCYCLE_FIRE_SOURCE_URL,
+        )
+        self.assertEqual(article["borough"], "Coyoacán")
+        self.assertIn("Pedregal de Santo Domingo", article["location"])
+        self.assertIn("calle Aztahuacan", article["brief"]["context"])
+        self.assertIn("no hubo personas lesionadas", article["brief"]["pending"])
+        self.assertIn("presunta gasolina", article["brief"]["pending"])
+
+        unrelated_house = {
+            "id": "unrelated_house",
+            "kind": "representativa",
+            "topic": "Casa González de Cosío en Coyoacán",
+        }
+        motorcycle = self.photo("contexto_motocicleta_zocalo_brigada_2017")
+        self.assertIsNotNone(motorcycle)
+        self.assertLess(_photo_score(article, unrelated_house), 0)
+        self.assertGreaterEqual(_photo_score(article, motorcycle), 0)
+
+        article["photo"] = deepcopy(unrelated_house)
+        assign_photos([article])
+        self.assertEqual(
+            article["photo"]["id"],
+            "contexto_motocicleta_zocalo_brigada_2017",
+        )
+        self.assertEqual(article["photo"]["author"], "ProtoplasmaKid")
+        self.assertEqual(article["photo"]["license"], "CC BY-SA 4.0")
+        self.assertEqual(
+            article["photo"]["source"],
+            "https://commons.wikimedia.org/wiki/File:Ayuda_tras_el_Terremoto_de_Puebla_de_2017_-_Ciudad_de_M%C3%A9xico_-_3.jpg",
+        )
+        self.assertIn("foto de archivo", article["photo"]["topic"])
+
+
     def test_weather_forecast_rejects_unrelated_angel_bicycle_photo(self):
         title = "Previsión meteorológica del estado del tiempo en Ciudad de México para este sábado 14 de noviembre"
         article = self.make_article(title, category="CDMX", source="Infobae")
