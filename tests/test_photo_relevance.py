@@ -4961,6 +4961,14 @@ class November17AdditionalEditorialPhotoCorrectionsTests(unittest.TestCase):
         self.assertEqual(article["photo"]["id"], "contexto_gallinero_chinampa_xochimilco")
         self.assertEqual(article["photo"]["author"], "Diego M.P.")
         self.assertEqual(article["photo"]["license"], "CC BY-SA 4.0")
+        self.assertEqual(
+            article["photo"]["source"],
+            "https://commons.wikimedia.org/wiki/File:Gallinero_hecho_a_mano_en_chinampa.jpg",
+        )
+        self.assertEqual(
+            article["photo"]["licenseUrl"],
+            "https://creativecommons.org/licenses/by-sa/4.0/",
+        )
         self.assertIn("no corresponde al programa de 2026", article["photo"]["topic"])
 
     def test_infobae_karol_g_guest_preview_uses_estadio_gnp_context_not_teatro_metropolitan(self):
