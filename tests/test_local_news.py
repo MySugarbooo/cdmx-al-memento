@@ -82,7 +82,9 @@ class LocalNewsTests(unittest.TestCase):
         self.assertEqual(result["photo"]["license"], "CC BY 3.0")
         self.assertEqual(result["photo"]["licenseUrl"], "https://creativecommons.org/licenses/by/3.0/")
         self.assertTrue(result["photo"]["url"].startswith("https://upload.wikimedia.org/wikipedia/commons/"))
-        self.assertIn("no corresponde al concierto con Karol G en CDMX", result["photo"]["topic"])
+        self.assertIn("retrato de archivo", result["photo"]["topic"])
+                self.assertNotIn("Karol G", result["photo"]["topic"])
+                self.assertNotIn("concierto", result["photo"]["topic"].casefold())
 
         page = render(result, article_id(result))
         self.assertIn(source_url, page)
