@@ -5000,3 +5000,43 @@ class November17AdditionalEditorialPhotoCorrectionsTests(unittest.TestCase):
         self.assertEqual(article["photo"]["author"], "Nanahuatl")
         self.assertEqual(article["photo"]["license"], "CC BY-SA 4.0")
         self.assertIn("no corresponde a Karol G", article["photo"]["topic"])
+
+    def test_sin_embargo_hombres_bienestar_uses_related_archival_pension_photo_and_direct_source(self):
+        title = "Pensión Hombres Bienestar CdMx: ¿Cuándo cierra el registro de nuevos beneficiarios?"
+        article = news.standardize({
+            "title": title,
+            "url": "https://news.google.com/rss/articles/sin-embargo-hombres-bienestar-20261117?oc=5",
+            "source": "Sin Embargo",
+            "date": "2026-11-17",
+            "published_at": "2026-11-17T09:00:13Z",
+            "category": "Gobierno",
+        })
+        self.assertIsNotNone(article)
+        self.assertEqual(
+            article["source_url"],
+            "https://www.sinembargo.mx/4904729/pension-hombres-bienestar-cdmx-cuando-cierra-el-registro-de-nuevos-beneficiarios/",
+        )
+        self.assertEqual(article["category"], "Gobierno")
+
+        pension = next(
+            photo for photo in photos._pool()
+            if photo.get("id") == "contexto_pension_adultos_mayores_2019"
+        )
+        registry = next(
+            photo for photo in photos._pool()
+            if photo.get("id") == "contexto_registro_civil_cdmx_2022"
+        )
+        self.assertEqual(pension["author"], "Gobierno de la Ciudad de México")
+        self.assertEqual(pension["license"], "CC BY 4.0")
+        self.assertLess(_photo_score(article, registry), 0)
+        self.assertEqual(_photo_score(article, pension), 5000)
+
+        article["photo"] = deepcopy(registry)
+        with patch.object(photos, "_pool", return_value=[registry, pension]), patch.object(
+            photos, "_load", return_value=[]
+        ):
+            assign_photos([article])
+
+        self.assertEqual(article["photo"]["id"], "contexto_pension_adultos_mayores_2019")
+        self.assertIn("no corresponde al programa", article["photo"]["topic"].lower())
+
