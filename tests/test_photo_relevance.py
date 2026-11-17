@@ -5,7 +5,7 @@ from pathlib import Path
 import unittest
 from unittest.mock import patch
 
-from scripts.notas_locales import _pool, _photo_category, _photo_score, assign_photos
+from scripts.notas_locales import _pool, _photo_category, _photo_score, assign_photos, summarize
 import update_news as news
 import scripts.notas_locales as photos
 from update_news import category_by_headline
@@ -2951,12 +2951,12 @@ class CurrentFeedEditorialPhotoRegressionTests(unittest.TestCase):
 
 
 class CurrentEditorialPhotoRegressionTests(unittest.TestCase):
-    def make_article(self, title, category="CDMX", source="Medio de prueba"):
+    def make_article(self, title, category="CDMX", source="Medio de prueba", date="2026-11-13"):
         return news.standardize({
             "title": title,
             "url": "https://news.google.com/rss/articles/editorial-context-regression",
             "source": source,
-            "date": "2026-11-13",
+            "date": date,
             "category": category,
         })
 
@@ -3003,6 +3003,43 @@ class CurrentEditorialPhotoRegressionTests(unittest.TestCase):
         self.assertGreaterEqual(_photo_score(article, relevant), 0)
         assign_photos([article])
         self.assertEqual(article["photo"]["id"], "contexto_emprendimiento_femenino_2025")
+
+    def test_maya_acta_nacimiento_rejects_treasury_photo_and_uses_registry_office(self):
+        article = self.make_article(
+            "Acta de nacimiento CDMX 2026: cómo sacarla en línea y costo",
+            category="Gobierno", source="Maya Comunicación", date="2026-11-16",
+        )
+        treasury = {"id": "commons_98002541", "topic": "Sala de Tesorería en Palacio Nacional"}
+        registry = self.photo("contexto_registro_civil_cdmx_2022")
+        self.assertIsNotNone(registry)
+        self.assertLess(_photo_score(article, treasury), 0)
+        self.assertGreaterEqual(_photo_score(article, registry), 0)
+        article["photo"] = deepcopy(treasury)
+        assign_photos([article])
+        self.assertEqual(article["photo"]["id"], "contexto_registro_civil_cdmx_2022")
+        brief = summarize(article)
+        self.assertIn("98 pesos", brief["lead"])
+        self.assertIn("Llave CDMX", brief["lead"])
+        self.assertIn("finanzas.cdmx.gob.mx", brief["method"])
+
+    def test_depeche_mode_tribute_uses_futurama_venue_not_muse_concert(self):
+        article = self.make_article(
+            "Concierto tributo a Depeche Mode en la CDMX: horario, fecha y sede del evento gratuito",
+            category="Cultura", source="Infobae", date="2026-11-16",
+        )
+        muse = self.photo("contexto_concierto_foro_sol_2023")
+        futurama = self.photo("contexto_centro_cultural_futurama_2026")
+        self.assertIsNotNone(muse)
+        self.assertIsNotNone(futurama)
+        self.assertLess(_photo_score(article, muse), 0)
+        self.assertGreaterEqual(_photo_score(article, futurama), 0)
+        article["photo"] = deepcopy(muse)
+        assign_photos([article])
+        self.assertEqual(article["photo"]["id"], "contexto_centro_cultural_futurama_2026")
+        brief = summarize(article)
+        self.assertIn("25 de noviembre", brief["lead"])
+        self.assertIn("18:00", brief["lead"])
+        self.assertIn("150 personas", brief["context"])
 
     def test_weather_forecast_rejects_unrelated_angel_bicycle_photo(self):
         title = "Previsión meteorológica del estado del tiempo en Ciudad de México para este sábado 14 de noviembre"
@@ -3206,6 +3243,8 @@ class CurrentEditorialPhotoRegressionTests(unittest.TestCase):
             "contexto_patrullas_iztapalapa_denuncias",
             "contexto_proteccion_civil_explosion_cdmx",
             "contexto_posada_iztacalco_1974",
+            "contexto_registro_civil_cdmx_2022",
+            "contexto_centro_cultural_futurama_2026",
         ):
             photo = photos.get(photo_id)
             self.assertIsNotNone(photo)
@@ -3214,10 +3253,10 @@ class CurrentEditorialPhotoRegressionTests(unittest.TestCase):
             self.assertTrue(photo["licenseUrl"].startswith("https://creativecommons.org/"))
             self.assertTrue(photo["source"].startswith("https://commons.wikimedia.org/wiki/File:"))
         loader = (REPO_ROOT / "assets/creditos.js").read_text(encoding="utf-8")
-        self.assertIn("/assets/fotos/contexto-tematico.json?v=20261116-america-femenil-photo-1853", loader)
+        self.assertIn("/assets/fotos/contexto-tematico.json?v=20261117-acta-futurama-0324", loader)
         self.assertIn("new Map", loader)
         html = (REPO_ROOT / "creditos-fotograficos.html").read_text(encoding="utf-8")
-        self.assertIn("creditos.js?v=20261116-america-femenil-photo-1853", html)
+        self.assertIn("creditos.js?v=20261117-acta-futurama-0324", html)
         for photo_id in (
             "contexto_autopista_sol_mexico_acapulco",
             "contexto_gallinero_chinampa_xochimilco",
