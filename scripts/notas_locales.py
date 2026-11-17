@@ -248,6 +248,20 @@ def is_reporte_indigo_contingency_story(article):
     )
 
 
+def is_infobae_karol_g_guest_prediction_story(article):
+    """Identifica la previa de Infobae sobre posibles invitadas de Karol G en su tercera fecha."""
+    title = _photo_fold(article.get("title"))
+    return (
+        str(article.get("date") or "") == "2026-11-16"
+        and _photo_fold(article.get("source")) == "infobae"
+        and "karol g" in title
+        and "invitada sorpresa" in title
+        and "tercera fecha" in title
+        and "thalia" in title
+        and "belinda" in title
+    )
+
+
 def is_billboard_karol_g_concert_story(article):
     """Identifica la cobertura de Billboard sobre la reprogramación del concierto de Karol G."""
     title = _photo_fold(article.get("title"))
@@ -592,6 +606,7 @@ def is_sopitas_edis_discrimination_2026(article):
 
 
 SOPITAS_GORILLAZ_MURAL_SOURCE_URL = "https://www.sopitas.com/musica/mural-gorillaz-mexico/"
+DEBATE_GALLINAS_PONEDORAS_SOURCE_URL = "https://www.debate.com.mx/cdmx/gallinas-ponedoras-en-cdmx-asi-sera-el-programa-de-apoyo-anunciado-por-clara-brugada-20261116-0225.html"
 
 
 def is_sopitas_gorillaz_mural_story(article):
@@ -1184,6 +1199,17 @@ def is_tvazteca_gallinas_program_story(article):
     )
 
 
+def is_debate_gallinas_program_story(article):
+    """Identifica la nota de Debate sobre el programa de gallinas anunciado por Clara Brugada."""
+    title = _photo_fold(article.get("title"))
+    return (
+        str(article.get("date") or "") == "2026-11-16"
+        and _photo_fold(article.get("source")) == "debate"
+        and "gallinas ponedoras" in title
+        and "clara brugada" in title
+    )
+
+
 def is_el_sol_electoral_material_books_story(article):
     title = _photo_fold(article.get("title"))
     return (
@@ -1293,6 +1319,55 @@ def summarize(article):
                 "Síntesis editorial propia basada en Infobae, 17 de noviembre de 2026: "
                 + INFOBAE_DEPECHE_MODE_FUTURAMA_SOURCE_URL
                 + ". La fotografía asignada muestra el recinto como contexto; no documenta el concierto ni a la banda."
+            ),
+        }
+    if is_debate_gallinas_program_story(article):
+        return {
+            "lead": (
+                "El Debate informó el 16 de noviembre de 2026 que el programa anunciado por el Gobierno de CDMX "
+                "contempla entregar 15 gallinas ponedoras por familia, alimento para el primer mes y asesoría técnica. "
+                "La presentación se realizó el 12 de noviembre en Santa Rosa Xochiac, alcaldía Álvaro Obregón, "
+                "como parte de la estrategia Casa Ecológica."
+            ),
+            "context": (
+                "El medio explica que el objetivo es impulsar el autoconsumo de huevo y apoyar la economía familiar. "
+                "También cita una estimación de al menos 15 huevos diarios por hogar y relaciona el esquema con "
+                "el programa Huevos en Casa aplicado previamente en Iztapalapa."
+            ),
+            "pending": (
+                "La convocatoria oficial todavía no se había publicado al momento de la nota. El espacio mínimo "
+                "de 10 metros cuadrados aparece como referencia en el artículo, pero no debe tratarse como requisito "
+                "definitivo hasta que la autoridad publique las reglas."
+            ),
+            "method": (
+                "Síntesis editorial basada en El Debate, 16 de noviembre de 2026: "
+                + DEBATE_GALLINAS_PONEDORAS_SOURCE_URL
+                + ". Los detalles se atribuyen al medio. La fotografía muestra un gallinero artesanal de Xochimilco "
+                "de 2018; no documenta la entrega de aves del programa de 2026."
+            ),
+        }
+    if is_infobae_karol_g_guest_prediction_story(article):
+        return {
+            "lead": (
+                "Infobae publicó una previa del concierto reprogramado de Karol G para el martes 17 de noviembre "
+                "en el Estadio GNP Seguros. La nota menciona a Paulina Rubio, Anahí, Danna Paola y Cazzu entre "
+                "las posibilidades comentadas por seguidores para aparecer como invitadas; ninguna estaba confirmada."
+            ),
+            "context": (
+                "Las dos primeras fechas tuvieron a Thalía el viernes 13 y a Belinda el sábado 14. Infobae señala "
+                "que Becky G participa como acto de apertura y canta MAMIII, pero no la presenta como la invitada "
+                "sorpresa que se esperaba para la tercera fecha."
+            ),
+            "pending": (
+                "La identidad de la posible invitada seguía siendo especulativa en la publicación. El concierto "
+                "previsto para el domingo 15 fue reprogramado al martes 17; la nota indica que los boletos conservan "
+                "validez para la nueva fecha y que puede solicitarse reembolso."
+            ),
+            "method": (
+                "Síntesis editorial basada en la publicación de Infobae del 17 de noviembre de 2026. La fotografía "
+                "asignada muestra un concierto de archivo en el Foro Sol, hoy Estadio GNP Seguros; no muestra a "
+                "Karol G ni la función reprogramada. Se conserva el enlace de origen del feed porque no se verificó "
+                "una URL canónica pública distinta."
             ),
         }
     if is_sopitas_gorillaz_mural_story(article):
@@ -3346,7 +3421,7 @@ def _photo_score(article, photo):
         return 5000 if photo.get("id") == "contexto_hotel_corporativo_cdmx" else -10000
     if is_nplus_cordoba_pilgrims_story(article):
         return 5000 if photo.get("id") == "contexto_peregrinos_basilica_cdmx" else -10000
-    if is_tvazteca_gallinas_program_story(article):
+    if is_tvazteca_gallinas_program_story(article) or is_debate_gallinas_program_story(article):
         return 5000 if photo.get("id") == "contexto_gallinero_chinampa_xochimilco" else -10000
     if is_el_sol_electoral_material_books_story(article):
         return 5000 if photo.get("id") == "contexto_boleta_electoral_mexico_2012" else -10000
@@ -3388,6 +3463,8 @@ def _photo_score(article, photo):
         return 5000 if photo.get("id") == "commons_149171771" else -10000
     if is_tvazteca_hoy_no_circula_bridge_story(article):
         return 5000 if photo.get("id") == "contexto_trafico_eje_central" else -10000
+    if is_infobae_karol_g_guest_prediction_story(article):
+        return 5000 if photo.get("id") == "contexto_concierto_foro_sol_2023" else -10000
     if is_infobae_karol_g_health_story(article):
         return 5000 if photo.get("id") == "contexto_concierto_foro_sol_2023" else -10000
     if is_generation_z_zocalo_march(article):
