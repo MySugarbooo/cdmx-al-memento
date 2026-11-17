@@ -82,7 +82,7 @@ class CurrentEditorialPhotoSourceRegressions(unittest.TestCase):
             news.DIARIO_MEXICO_BENITO_JUAREZ_DETENTION_SOURCE_URL,
         )
         self.assertEqual(article["borough"], "Benito Juárez")
-        self.assertIn("SSC", article["brief"]["lead"])
+        self.assertIn("Secretaría de Seguridad Ciudadana", article["brief"]["lead"])
         self.assertIn("Blindar BJ", article["brief"]["lead"])
         self.assertIn("FGJCDMX", article["brief"]["lead"])
         self.assertIn("presunción de inocencia", article["brief"]["pending"])
