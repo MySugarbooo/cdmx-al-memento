@@ -1210,6 +1210,12 @@ def is_tvazteca_gallinas_program_story(article):
     )
 
 
+def is_lasillarota_gallinas_program_story(article):
+    return _is_current_2026_11_16_photo_story(
+        article, "la silla rota", "15 gallinas", "huevo en casa"
+    )
+
+
 def is_debate_gallinas_program_story(article):
     """Identifica la nota de Debate sobre el programa de gallinas anunciado por Clara Brugada."""
     title = _photo_fold(article.get("title"))
@@ -3455,7 +3461,9 @@ def _photo_score(article, photo):
         return 5000 if photo.get("id") == "contexto_hotel_corporativo_cdmx" else -10000
     if is_nplus_cordoba_pilgrims_story(article):
         return 5000 if photo.get("id") == "contexto_peregrinos_basilica_cdmx" else -10000
-    if is_tvazteca_gallinas_program_story(article) or is_debate_gallinas_program_story(article):
+    if (is_tvazteca_gallinas_program_story(article)
+            or is_debate_gallinas_program_story(article)
+            or is_lasillarota_gallinas_program_story(article)):
         return 5000 if photo.get("id") == "contexto_gallinero_chinampa_xochimilco" else -10000
     if is_el_sol_electoral_material_books_story(article):
         return 5000 if photo.get("id") == "contexto_boleta_electoral_mexico_2012" else -10000
