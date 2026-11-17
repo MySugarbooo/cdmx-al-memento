@@ -422,8 +422,8 @@ def category_by_headline(title, feed_category, source=""):
     if is_debate_ruta_maiz_topilejo({"title": title, "source": source}):
         return "Movilidad"
     # Las guías del desfile cívico-militar describen recorrido y cierres viales.
-    if (re.search(r"\\bdesfile del 20 de noviembre\\b", normalized)
-            and re.search(r"\\b(?:ruta|cierres?|horario|alternativas viales?)\\b", normalized)):
+    if (re.search(r"\bdesfile del 20 de noviembre\b", normalized)
+            and re.search(r"\b(?:ruta|cierres?|horario|alternativas viales?)\b", normalized)):
         return "Movilidad"
     # El desabasto y el tandeo son servicios públicos; no deben quedar como CDMX genérico.
     if re.search(r"\b(?:carecen de agua|falta de agua|sin agua|tandeo|desabasto de agua|corte de agua|suspension de agua)\b", normalized):
