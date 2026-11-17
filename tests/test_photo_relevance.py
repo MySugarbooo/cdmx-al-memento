@@ -3217,7 +3217,7 @@ class CurrentEditorialPhotoRegressionTests(unittest.TestCase):
         self.assertIn("/assets/fotos/contexto-tematico.json?v=20261116-america-femenil-photo-1853", loader)
         self.assertIn("new Map", loader)
         html = (REPO_ROOT / "creditos-fotograficos.html").read_text(encoding="utf-8")
-        self.assertIn("creditos.js?v=20261116-photo-context-corrections-1852", html)
+        self.assertIn("creditos.js?v=20261116-america-femenil-photo-1853", html)
         for photo_id in (
             "contexto_autopista_sol_mexico_acapulco",
             "contexto_gallinero_chinampa_xochimilco",
