@@ -226,14 +226,13 @@ class PhotoRelevanceTests(unittest.TestCase):
         self.assertNotIn("marcha", photo["topic"].lower())
         self.assertLessEqual(len(photo["topic"]), 140)
 
-    def test_shared_concert_photo_caption_is_generic_in_all_catalogs(self):
+    def test_golden_ganga_uses_exact_venue_photo_and_shared_concert_archive_stays_generic(self):
         expected = "Concierto de Kings of Leon en el Palacio de los Deportes, CDMX (octubre de 2009); foto de archivo representativa, no documenta eventos de la noticia."
-        relative_paths = (
-            "assets/fotos/contexto-tematico.json",
+        shared_paths = (
             "assets/fotos/indice-noticias-1100.json",
             "assets/fotos/catalogo-editorial-1100.json",
         )
-        for relative in relative_paths:
+        for relative in shared_paths:
             with self.subTest(path=relative):
                 data = json.loads((REPO_ROOT / relative).read_text(encoding="utf-8"))
                 photo = next(
@@ -244,6 +243,19 @@ class PhotoRelevanceTests(unittest.TestCase):
                 self.assertIsNotNone(photo, relative)
                 self.assertEqual(photo.get("topic"), expected)
                 self.assertNotIn("María León", photo.get("topic", ""))
+
+        context = json.loads(
+            (REPO_ROOT / "assets/fotos/contexto-tematico.json").read_text(encoding="utf-8")
+        )
+        venue = next(
+            (item for item in context.get("photos", [])
+             if item.get("id") == "contexto_teatro_metropolitan_2019"),
+            None,
+        )
+        self.assertIsNotNone(venue)
+        self.assertIn("Teatro Metropólitan", venue.get("topic", ""))
+        self.assertIn("no muestra el concierto de Golden Ganga", venue.get("topic", ""))
+        self.assertIn("no corresponde a la presentación de Golden Ganga", venue.get("adaptation", ""))
 
     def test_robar_infinitive_classifies_store_robbery_and_rejects_city_landmark(self):
         title = ("2996: En la alcaldía Venustiano Carranza, efectivos de la SSC "
@@ -3202,10 +3214,10 @@ class CurrentEditorialPhotoRegressionTests(unittest.TestCase):
             self.assertTrue(photo["licenseUrl"].startswith("https://creativecommons.org/"))
             self.assertTrue(photo["source"].startswith("https://commons.wikimedia.org/wiki/File:"))
         loader = (REPO_ROOT / "assets/creditos.js").read_text(encoding="utf-8")
-        self.assertIn("/assets/fotos/contexto-tematico.json?v=20261116-photo-context-corrections-1825", loader)
+        self.assertIn("/assets/fotos/contexto-tematico.json?v=20261116-photo-context-corrections-1852", loader)
         self.assertIn("new Map", loader)
         html = (REPO_ROOT / "creditos-fotograficos.html").read_text(encoding="utf-8")
-        self.assertIn("creditos.js?v=20261116-photo-context-corrections-1825", html)
+        self.assertIn("creditos.js?v=20261116-photo-context-corrections-1852", html)
         for photo_id in (
             "contexto_autopista_sol_mexico_acapulco",
             "contexto_gallinero_chinampa_xochimilco",
