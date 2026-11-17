@@ -1740,7 +1740,7 @@ class PhotoRelevanceTests(unittest.TestCase):
         )
         self.assertEqual(photo["author"], "ProtoplasmaKid")
         self.assertEqual(photo["license"], "CC BY-SA 4.0")
-        self.assertIn("no corresponde a la Feria", photo["topic"])
+        self.assertIn("no de la feria de La Magdalena Contreras", photo["topic"])
         self.assertGreaterEqual(_photo_score(article, photo), 0)
         with patch.object(photos, "_pool", return_value=[photo]), patch.object(
             photos, "_load", return_value=[]
@@ -2937,7 +2937,7 @@ class CurrentFeedEditorialPhotoRegressionTests(unittest.TestCase):
             title, "Gobierno", "commons_41703830", "commons_152145024")
 
     def test_console_photo_caption_is_explicitly_representative_not_pokemon_go(self):
-        expected = "Consolas y videojuegos actuales (fotografía de 2026); imagen representativa del sector de videojuegos, no corresponde a Pokémon Go ni a la mercancía asegurada en Plaza Meave."
+        expected = "Consolas y videojuegos (foto 2026); imagen representativa del sector, no de Pokémon Go ni de la mercancía asegurada en Plaza Meave."
         for relative in (
             "assets/fotos/contexto-tematico.json",
             "assets/fotos/indice-noticias-1100.json",
@@ -4999,7 +4999,9 @@ class November17AdditionalEditorialPhotoCorrectionsTests(unittest.TestCase):
         self.assertEqual(article["photo"]["id"], "contexto_concierto_foro_sol_2023")
         self.assertEqual(article["photo"]["author"], "Nanahuatl")
         self.assertEqual(article["photo"]["license"], "CC BY-SA 4.0")
-        self.assertIn("no corresponde a Karol G", article["photo"]["topic"])
+        expected_topic = "Concierto de Muse en Foro Sol (hoy Estadio GNP), CDMX (23/01/2023); archivo, no corresponde a Karol G ni a su función reprogramada."
+        self.assertEqual(article["photo"]["topic"], expected_topic)
+        self.assertLessEqual(len(article["photo"]["topic"]), 150)
 
     def test_sin_embargo_hombres_bienestar_uses_related_archival_pension_photo_and_direct_source(self):
         title = "Pensión Hombres Bienestar CdMx: ¿Cuándo cierra el registro de nuevos beneficiarios?"
@@ -5038,5 +5040,21 @@ class November17AdditionalEditorialPhotoCorrectionsTests(unittest.TestCase):
             assign_photos([article])
 
         self.assertEqual(article["photo"]["id"], "contexto_pension_adultos_mayores_2019")
-        self.assertIn("no corresponde al programa", article["photo"]["topic"].lower())
+        expected_topic = "Archivo de la Pensión para el Bienestar de Adultos Mayores en CDMX (02/04/2019); no documenta el programa Pensión Hombres Bienestar 2026."
+        self.assertEqual(pension["topic"], expected_topic)
+        self.assertLessEqual(len(pension["topic"]), 150)
+        self.assertEqual(article["photo"]["topic"], expected_topic)
 
+    def test_context_and_news_photo_topics_fit_feed_limit(self):
+        catalogs = (
+            photos.TOPIC_PHOTOS,
+            photos.NEWS_PHOTOS,
+            REPO_ROOT / "assets/fotos/catalogo-editorial-1100.json",
+        )
+        for catalog in catalogs:
+            records = json.loads(catalog.read_text(encoding="utf-8")).get("photos", [])
+            self.assertTrue(records, str(catalog))
+            for photo in records:
+                topic = str(photo.get("topic") or "")
+                with self.subTest(catalog=catalog.name, photo_id=photo.get("id")):
+                    self.assertLessEqual(len(topic), 150)
