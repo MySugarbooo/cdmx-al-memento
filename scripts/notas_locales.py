@@ -475,6 +475,18 @@ def is_debate_ruta_maiz_topilejo(article):
     )
 
 
+def is_infobae_america_femenil_pumas_semifinal_story(article):
+    """Identifica la nota de Infobae sobre la semifinal América Femenil-Pumas."""
+    title = _photo_fold(article.get("title"))
+    return (
+        str(article.get("date") or "")[:10] == "2026-11-16"
+        and _photo_fold(article.get("source")) == "infobae"
+        and "america femenil" in title
+        and "semifinales" in title
+        and "pumas" in title
+    )
+
+
 def is_infopoder_ruta_maiz_topilejo(article):
     """Identifica la guía de la Ruta del Maíz en San Miguel Topilejo."""
     title = _photo_fold(article.get("title"))
@@ -3169,6 +3181,8 @@ def _photo_score(article, photo):
     context=topic+" "+keywords
     if is_infobae_air_quality_report(article) or is_reporte_indigo_contingency_story(article):
         return 5000 if photo.get("id") == "contexto_imeca_calidad_aire_cdmx" else -10000
+    if is_infobae_america_femenil_pumas_semifinal_story(article):
+        return 5000 if photo.get("id") == "contexto_estadio_ciudad_deportes_america_femenil_2025" else -10000
     if is_billboard_karol_g_concert_story(article):
         return 5000 if photo.get("id") == "contexto_concierto_foro_sol_2023" else -10000
     # Las guías del desfile del 20 de noviembre recorren del Zócalo al Monumento;
