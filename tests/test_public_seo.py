@@ -63,6 +63,16 @@ class PublicSeoTests(unittest.TestCase):
         diario_unverified_page = render(article, "0123456789abcdefabcd")
         self.assertNotIn(diario_morelos + "?unverified=1", diario_unverified_page)
 
+        debate = "https://www.debate.com.mx/cdmx/inauguran-ruta-del-maiz-en-cdmx-conectara-topilejo-con-la-joya-por-4-pesos-20261116-0230.html"
+        self.assertIn(debate, VERIFIED_SOURCE_URLS)
+        article["source"] = "Debate"
+        article["source_url"] = debate
+        debate_page = render(article, "0123456789abcdefabcd")
+        self.assertIn(debate, debate_page)
+        article["source_url"] = debate + "?unverified=1"
+        debate_unverified_page = render(article, "0123456789abcdefabcd")
+        self.assertNotIn(debate + "?unverified=1", debate_unverified_page)
+
         untrusted = "https://www.infobae.com/mexico/2026/11/15/otro-articulo-no-verificado/"
         article["source_url"] = untrusted
         page = render(article, "0123456789abcdefabcd")
