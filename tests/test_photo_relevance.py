@@ -4184,6 +4184,45 @@ class ReporteIndigoAirQualityPhotoRegressionTests(unittest.TestCase):
         self.assertEqual(article["photo"]["license"], "CC BY-SA 1.0")
         self.assertIn("archivo de 2007", article["photo"]["topic"])
 
+    def test_november_17_report_uses_imeca_photo_direct_source_and_verified_summary(self):
+        article = news.standardize({
+            "title": "¿Hay contingencia ambiental HOY, 17 de noviembre? Calidad del aire y autos que No Circulan en CDMX y Edomex",
+            "url": "https://news.google.com/rss/articles/reporte-indigo-air-quality-photo-20261117",
+            "source": "Reporte Indigo",
+            "date": "2026-11-17",
+            "published_at": "2026-11-17T11:17:00Z",
+            "category": "Medio Ambiente",
+        })
+        self.assertIsNotNone(article)
+        self.assertTrue(photos.is_reporte_indigo_contingency_story(article))
+        self.assertEqual(
+            article["source_url"],
+            "https://www.reporteindigo.com/hay-contingencia-ambiental-hoy-17-de-noviembre-calidad-del-aire-y-autos-que-no-circulan-en-cdmx-y-edomex-t202611160001.html",
+        )
+        self.assertEqual(
+            article["location"],
+            "Zona Metropolitana del Valle de México: Ciudad de México y Estado de México (según Reporte Indigo)",
+        )
+        self.assertIn("no había contingencia ambiental vigente", article["brief"]["lead"])
+        self.assertIn("PM2.5", article["brief"]["lead"])
+        self.assertIn("no una lectura en vivo", article["brief"]["pending"])
+
+        pool = {photo["id"]: deepcopy(photo) for photo in photos._pool()}
+        plastic_bags = pool["contexto_bolsas_plasticas_compras_2015"]
+        imeca = pool["contexto_imeca_calidad_aire_cdmx"]
+        article["photo"] = plastic_bags
+        self.assertLess(_photo_score(article, plastic_bags), 0)
+        self.assertEqual(_photo_score(article, imeca), 5000)
+        with patch.object(photos, "_pool", return_value=[plastic_bags, imeca]), patch.object(
+            photos, "_load", return_value=[]
+        ):
+            assign_photos([article])
+
+        self.assertEqual(article["photo"]["id"], "contexto_imeca_calidad_aire_cdmx")
+        self.assertEqual(article["photo"]["author"], "(WT-en) Fabz at English Wikivoyage")
+        self.assertEqual(article["photo"]["license"], "CC BY-SA 1.0")
+        self.assertIn("archivo de 2007", article["photo"]["topic"])
+
 
 class DiarioYucatanGarbageZocaloPhotoRegressionTests(unittest.TestCase):
     def test_diario_yucatan_garbage_story_uses_zocalo_not_kings_of_leon_at_palacio(self):
