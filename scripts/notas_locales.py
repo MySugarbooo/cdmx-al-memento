@@ -516,7 +516,7 @@ def is_capital_cdmx_magdalena_sports_parade(article):
     return (
         str(article.get("date") or "") == "2026-11-17"
         and _photo_fold(article.get("source")) == "capital cdmx"
-        and re.search(r"\\b1\\s*500 deportistas\\b", title) is not None
+        and re.search(r"\b1\s*500 deportistas\b", title) is not None
         and "desfile" in title
         and "revolucion mexicana" in title
         and "magdalena contreras" in title
