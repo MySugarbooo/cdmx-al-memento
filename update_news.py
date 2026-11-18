@@ -32,6 +32,8 @@ from scripts.notas_locales import is_voxpopuli_belinda_karol_g_story, VOXPOPULI_
 from scripts.notas_locales import is_aeromexico_montego_bay_route_story, AEROMEXICO_MONTEGO_BAY_ROUTE_SOURCE_URL
 from scripts.notas_locales import is_reportur_cdmx_yucatan_tourism_story, REPORTUR_CDMX_YUCATAN_TOURISM_SOURCE_URL
 
+from scripts.notas_locales import EDITORIAL_PHOTO_ASSIGNMENTS
+
 ROOT = Path(__file__).resolve().parent
 DEST = ROOT / "news.json"
 ARCHIVE_DIR = ROOT / "archivo"
@@ -1595,6 +1597,9 @@ def photo_needs_refresh(item):
     photo = item.get("photo") if isinstance(item, dict) else None
     if not isinstance(photo, dict) or photo.get("kind") == "hecho":
         return False
+    preferred_photo_id = EDITORIAL_PHOTO_ASSIGNMENTS.get(str(item.get("local_url") or ""))
+    if preferred_photo_id:
+        return photo.get("id") != preferred_photo_id
     if is_mauricio_tabe_fifth_report(item):
         return photo.get("id") != "contexto_teatro_angela_peralta"
     return _photo_score(item, photo) < 0
@@ -1626,7 +1631,8 @@ def prioritize_photo_refresh(items, limit=24):
     )
     priority = [
         item for item in items
-        if any(fold(item.get("title")).startswith(prefix) for prefix in priority_prefixes)
+        if str(item.get("local_url") or "") in EDITORIAL_PHOTO_ASSIGNMENTS
+        or any(fold(item.get("title")).startswith(prefix) for prefix in priority_prefixes)
     ]
     priority_keys = {item.get("local_url") or item.get("url") for item in priority}
     recent = [
