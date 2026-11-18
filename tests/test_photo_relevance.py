@@ -1698,7 +1698,7 @@ class PhotoRelevanceTests(unittest.TestCase):
         )
         self.assertIsNotNone(courier)
         self.assertEqual(courier["kind"], "representativa")
-        self.assertEqual(courier["author"], "Palacio Postal")
+        self.assertEqual(courier["author"], "Palacio de Correos de Mexico")
         self.assertEqual(courier["license"], "CC BY-SA 4.0")
         self.assertIn("no del bloqueo actual", courier["topic"])
 
