@@ -1546,6 +1546,9 @@ def photo_needs_refresh(item):
 def prioritize_photo_refresh(items, limit=24):
     """Atiende primero las discrepancias editoriales confirmadas del feed reciente."""
     priority_prefixes = (
+        "mas espacios para la primera infancia",
+        "gobierno de la ciudad de mexico plantea ampliar la educacion inicial",
+        "gobierno de cdmx construira 300 espacios de educacion inicial",
         "cdmx busca tener nuevo oso panda",
         "conquista all-star juarez subcampeonato nacional de roller derby",
         "exposicion de juan gabriel en el palacio postal",
