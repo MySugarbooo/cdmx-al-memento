@@ -49,7 +49,7 @@ class ArticleSeoWorkflowTests(unittest.TestCase):
 
     def test_generated_editorial_archive_overrides_are_committed(self):
         self.assertIn(
-            "git add articulos/ sitemap-articulos.xml robots.txt index.html archivo/index.html archivo/",
+            "git add articulos/ sitemap-articulos.xml robots.txt index.html archivo/index.html archivo/ news.json",
             self.workflow,
         )
 
