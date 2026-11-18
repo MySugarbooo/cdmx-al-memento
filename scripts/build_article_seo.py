@@ -568,7 +568,28 @@ EDITORIAL_ARCHIVE_OVERRIDES = {
         "category": "Movilidad"
     },
     "/noticias/?id=c90abc294def53836a1f&mes=2026-11": {
-        "category": "Movilidad"
+        "category": "Movilidad",
+        "source_url": "https://mayacomunicacion.com.mx/gobierno-de-cdmx-abre-dialogo-con-motociclistas-repartidores-ante-retos-de-movilidad/",
+        "editorial_verified": True,
+        "description": "Maya Comunicación informó que la SEMOVI inició el 17 de noviembre una mesa de diálogo con repartidores por aplicación para discutir regulación, seguridad vial y un registro que también incluiría a trabajadores independientes. El encuentro fue encabezado por el secretario Héctor Ulises García Nieto y reunió a representantes de cinco dependencias.",
+        "brief": {
+            "lead": "Maya Comunicación reportó que la SEMOVI inició el 17 de noviembre una mesa de diálogo con repartidores por aplicación. El encuentro, encabezado por el secretario Héctor Ulises García Nieto, reunió a representantes de cinco dependencias y abordó posibles medidas de regulación, seguridad vial y un registro que también incluiría a trabajadores independientes.",
+            "context": "La propuesta podría definir mecanismos de identificación y responsabilidades de quienes realizan entregas en motocicleta, así como medidas para proteger a peatones, automovilistas y repartidores. Las autoridades plantearon continuar el diálogo con una segunda mesa.",
+            "pending": "La publicación no precisa fecha para la siguiente reunión ni presenta un reglamento aprobado, requisitos finales o plazos de implementación. El registro descrito es una propuesta, no una obligación vigente confirmada en esta nota.",
+            "method": "Síntesis editorial basada en el artículo de Maya Comunicación, firmado por Juan Pablo Ojeda y publicado el 18 de noviembre de 2026; no equivale a verificación independiente."
+        }
+    },
+    "/noticias/?id=b1fc9652296cefb7aa00&mes=2026-11": {
+        "category": "Cultura",
+        "source_url": "https://zonafranca.mx/tendencias/karol-g-cierra-su-gira-en-la-cdmx-con-paulina-rubio-como-invitada-sorpresa/",
+        "editorial_verified": True,
+        "description": "Zona Franca informó que Karol G cerró el 17 de noviembre sus fechas en CDMX con Paulina Rubio como invitada en el Estadio GNP Seguros; la nota reportó alrededor de 65 mil asistentes y la interpretación de tres canciones juntas.",
+        "brief": {
+            "lead": "Zona Franca informó que Karol G cerró el 17 de noviembre su paso por CDMX en el Estadio GNP Seguros con Paulina Rubio como invitada sorpresa. El medio reportó alrededor de 65 mil asistentes y señaló que ambas interpretaron «El último adiós», «Yo no soy esa mujer» y «Ni una sola palabra».",
+            "context": "Fue la tercera y última fecha de la cantante en la capital. La nota señala que los conciertos previos tuvieron a Thalía y Belinda como invitadas y que la gira continuará en Costa Rica el 27 y 28 de noviembre.",
+            "pending": "La cifra de asistencia y los detalles del espectáculo se atribuyen a Zona Franca y Agencia México; esta ficha no presenta una verificación independiente. La fotografía de archivo muestra un concierto de Muse de 2023 y se mantiene solo como imagen representativa, no del show de Karol G.",
+            "method": "Síntesis editorial basada en el artículo de Zona Franca con información de Agencia México, publicado el 18 de noviembre de 2026; no equivale a verificación independiente."
+        }
     },
     "/noticias/?id=af7d04e8a05239194c6d&mes=2026-11": {
                 "category": "Cultura",
@@ -724,6 +745,7 @@ VERIFIED_SOURCE_URLS = frozenset({
     "https://amexi.com.mx/infografias/marchas-cdmx-18-noviembre/",
     "https://www.infobae.com/mexico/2026/11/18/el-cadaver-de-la-novia-tendra-funcion-gratis-en-cdmx-horario-y-sede-para-ver-la-pelicula-de-tim-burton/",
     "https://www.eleconomista.com.mx/amp/arteseideas/universidad-tres-culturas-inaugura-plantel-martin-carrera-fortalece-presencia-ciudad-mexico-20261118-844582.html",
+    "https://zonafranca.mx/tendencias/karol-g-cierra-su-gira-en-la-cdmx-con-paulina-rubio-como-invitada-sorpresa/",
 })
 SENSITIVE_MEDIA_TITLE = re.compile(
     r"\b(?:violaci[oó]n|abuso sexual|agresi[oó]n sexual|acoso sexual|violencia sexual|"
