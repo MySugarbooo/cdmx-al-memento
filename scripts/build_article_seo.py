@@ -24,7 +24,7 @@ EDITORIAL_PHOTO_OVERRIDES = {
         "id": "contexto_azcapotzalco_plaza_civica_2011",
         "kind": "representativa",
         "category": "Gobierno",
-        "topic": "Panorámica de la Plaza Cívica Fernando Montes de Oca y el edificio delegacional de Azcapotzalco (archivo 2011); imagen contextual, no evidencia de la solicitud presupuestal de 2027.",
+        "topic": "Panorámica de Plaza Cívica Fernando Montes de Oca y edificio delegacional de Azcapotzalco (archivo 2011); no evidencia del presupuesto 2027.",
         "keywords": [
             "Azcapotzalco",
             "presupuesto de alcaldía",
