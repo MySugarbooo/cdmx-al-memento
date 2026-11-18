@@ -3979,7 +3979,7 @@ def _photo_score(article, photo):
                 headline,
             )
             and re.search(
-                r"\b(?:registro|registrar|emplacar|placas|multas?|prorroga|aplaz\w*|amplia|plazo)\b",
+                r"\b(?:registr\w*|emplacar|placas|multas?|prorroga|aplaz\w*|amplia|plazo|fecha limite)\b",
                 headline,
             )
         )

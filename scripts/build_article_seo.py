@@ -63,33 +63,6 @@ EDITORIAL_PHOTO_OVERRIDES = {
         "kind": "representativa",
         "context": "Fotografía de archivo de patrullas de la Ciudad de México; ilustra el tema de seguridad pública, no el hecho reportado."
     },
-    "/noticias/?id=486d289d63499706dd71&mes=2026-11": {
-        "id": "contexto_semovi_oficinas_roma_2022",
-        "kind": "representativa",
-        "category": "Gobierno",
-        "topic": "Fachada de oficinas de SEMOVI en colonia Roma, CDMX (2022); imagen representativa de la dependencia, no documenta la prórroga ni el trámite de emplacamiento.",
-        "file": "Oficinas de la Secretaría de Movilidad de la Ciudad de México.jpg",
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Oficinas_de_la_Secretar%C3%ADa_de_Movilidad_de_la_Ciudad_de_M%C3%A9xico.jpg/1280px-Oficinas_de_la_Secretar%C3%ADa_de_Movilidad_de_la_Ciudad_de_M%C3%A9xico.jpg",
-        "source": "https://commons.wikimedia.org/wiki/File:Oficinas_de_la_Secretar%C3%ADa_de_Movilidad_de_la_Ciudad_de_M%C3%A9xico.jpg",
-        "author": "ProtoplasmaKid",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-        "keywords": [
-            "SEMOVI",
-            "Secretaría de Movilidad",
-            "licencia de conducir",
-            "licencia permanente",
-            "trámite vehicular",
-            "control vehicular",
-            "examen de manejo",
-            "oficinas",
-            "colonia Roma"
-        ],
-        "captured_at": "2022-02-28",
-        "uploaded_at": "2022-07-07",
-        "context": "Fotografía de archivo de las oficinas de la Secretaría de Movilidad; no muestra la decisión administrativa ni el trámite.",
-        "adaptation": "Miniatura oficial de Wikimedia Commons; sin modificación."
-    },
     "/noticias/?id=746166b9b292b1c7f60c&mes=2026-11": {
         "id": "contexto_santa_fe_cuajimalpa_denuncias",
         "kind": "representativa",
@@ -240,32 +213,57 @@ EDITORIAL_PHOTO_OVERRIDES = {
         "id": "contexto_grin_escooter_cdmx_2019",
         "kind": "representativa",
         "category": "Movilidad",
-        "topic": "Grin e-scooter en Avenida Paseo de la Reforma, Ciudad de México (archivo 2019); foto representativa del tipo de vehículo, no del trámite de 2026.",
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Grin_e-scooter_on_Avenida_Paseo_de_la_Reforma%2C_Mexico_City.jpg/960px-Grin_e-scooter_on_Avenida_Paseo_de_la_Reforma%2C_Mexico_City.jpg",
-        "source": "https://commons.wikimedia.org/wiki/File:Grin_e-scooter_on_Avenida_Paseo_de_la_Reforma,_Mexico_City.jpg",
+        "topic": "Persona en scooter eléctrico Grin por carril ciclista de CDMX (23/10/2019); foto de archivo, no del trámite de 2026.",
+        "file": "Grin e-scooter rider in Mexico City.jpg",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Grin_e-scooter_rider_in_Mexico_City.jpg/1280px-Grin_e-scooter_rider_in_Mexico_City.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+        "source": "https://commons.wikimedia.org/wiki/File:Grin_e-scooter_rider_in_Mexico_City.jpg",
         "author": "Sonia Medina",
         "license": "CC BY 3.0",
         "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
-        "keywords": ["scooter eléctrico", "vehículo eléctrico personal", "Paseo de la Reforma", "movilidad eléctrica"],
-        "borough": "Cuauhtémoc",
-        "context": "Fotografía de archivo de un scooter eléctrico Grin sobre Paseo de la Reforma, CDMX; imagen representativa del tipo de vehículo, no muestra el registro, emplacamiento ni a personas involucradas en la noticia de noviembre de 2026.",
-        "adaptation": "Fotografía original de Sonia Medina; sin modificación."
+        "keywords": ["scooter eléctrico", "scooter", "Grin", "micromovilidad", "carril ciclista", "Ciudad de México", "CDMX", "VEP", "VEMEPE", "motos eléctricas", "bicicletas eléctricas", "registro vehicular"],
+        "borough": "",
+        "captured_at": "2019-10-23",
+        "uploaded_at": "2020-04-13",
+        "context": "Imagen de carácter ilustrativo y referencial; no constituye evidencia gráfica de los hechos descritos.",
+        "adaptation": "Miniatura oficial de Wikimedia Commons; sin modificación."
+    },
+    "/noticias/?id=61a29006a0c0e622c2f4&mes=2026-11": {
+        "id": "contexto_grin_escooter_cdmx_2019",
+        "kind": "representativa",
+        "category": "Movilidad",
+        "topic": "Persona en scooter eléctrico Grin por carril ciclista de CDMX (23/10/2019); foto de archivo, no del trámite de 2026.",
+        "file": "Grin e-scooter rider in Mexico City.jpg",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Grin_e-scooter_rider_in_Mexico_City.jpg/1280px-Grin_e-scooter_rider_in_Mexico_City.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+        "source": "https://commons.wikimedia.org/wiki/File:Grin_e-scooter_rider_in_Mexico_City.jpg",
+        "author": "Sonia Medina",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+        "keywords": ["scooter eléctrico", "scooter", "Grin", "micromovilidad", "carril ciclista", "Ciudad de México", "CDMX", "VEP", "VEMEPE", "motos eléctricas", "bicicletas eléctricas", "registro vehicular"],
+        "borough": "",
+        "captured_at": "2019-10-23",
+        "uploaded_at": "2020-04-13",
+        "context": "Imagen de carácter ilustrativo y referencial; no constituye evidencia gráfica de los hechos descritos.",
+        "adaptation": "Miniatura oficial de Wikimedia Commons; sin modificación."
     },
     "/noticias/?id=486d289d63499706dd71&mes=2026-11": {
         "id": "contexto_grin_escooter_cdmx_2019",
         "kind": "representativa",
         "category": "Movilidad",
-        "topic": "Grin e-scooter en Avenida Paseo de la Reforma, Ciudad de México (archivo 2019); foto representativa del tipo de vehículo, no del trámite de 2026.",
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Grin_e-scooter_on_Avenida_Paseo_de_la_Reforma%2C_Mexico_City.jpg/960px-Grin_e-scooter_on_Avenida_Paseo_de_la_Reforma%2C_Mexico_City.jpg",
-        "source": "https://commons.wikimedia.org/wiki/File:Grin_e-scooter_on_Avenida_Paseo_de_la_Reforma,_Mexico_City.jpg",
+        "topic": "Persona en scooter eléctrico Grin por carril ciclista de CDMX (23/10/2019); foto de archivo, no del trámite de 2026.",
+        "file": "Grin e-scooter rider in Mexico City.jpg",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Grin_e-scooter_rider_in_Mexico_City.jpg/1280px-Grin_e-scooter_rider_in_Mexico_City.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+        "source": "https://commons.wikimedia.org/wiki/File:Grin_e-scooter_rider_in_Mexico_City.jpg",
         "author": "Sonia Medina",
         "license": "CC BY 3.0",
         "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
-        "keywords": ["scooter eléctrico", "vehículo eléctrico personal", "Paseo de la Reforma", "movilidad eléctrica"],
-        "borough": "Cuauhtémoc",
-        "context": "Fotografía de archivo de un scooter eléctrico Grin sobre Paseo de la Reforma, CDMX; imagen representativa del tipo de vehículo, no muestra el registro, emplacamiento ni a personas involucradas en la noticia de noviembre de 2026.",
-        "adaptation": "Fotografía original de Sonia Medina; sin modificación."
+        "keywords": ["scooter eléctrico", "scooter", "Grin", "micromovilidad", "carril ciclista", "Ciudad de México", "CDMX", "VEP", "VEMEPE", "motos eléctricas", "bicicletas eléctricas", "registro vehicular"],
+        "borough": "",
+        "captured_at": "2019-10-23",
+        "uploaded_at": "2020-04-13",
+        "context": "Imagen de carácter ilustrativo y referencial; no constituye evidencia gráfica de los hechos descritos.",
+        "adaptation": "Miniatura oficial de Wikimedia Commons; sin modificación."
     },
+
 }
 
 EDITORIAL_ARCHIVE_OVERRIDES = {
@@ -369,6 +367,9 @@ EDITORIAL_ARCHIVE_OVERRIDES = {
             "pending": "No se ha publicado una nueva fecha límite ni una fecha de aplicación de multas; la ampliación se anunció hasta nuevo aviso.",
             "method": "Síntesis editorial basada en el artículo de 88.9 Noticias publicado el 17 de noviembre de 2026; no equivale a verificación independiente."
         }
+    },
+    "/noticias/?id=61a29006a0c0e622c2f4&mes=2026-11": {
+        "category": "Movilidad"
     },
     "/noticias/?id=c90abc294def53836a1f&mes=2026-11": {
         "category": "Movilidad"

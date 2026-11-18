@@ -603,12 +603,12 @@ class EditorialArchiveSyncTests(unittest.TestCase):
         deduplicated_optional_urls = {remain_elpais_url}
         expected_photos = {
             "/noticias/?id=caebd6fdf4edab5ae26c&mes=2026-11": "contexto_patrullas_iztapalapa_denuncias",
-            "/noticias/?id=486d289d63499706dd71&mes=2026-11": "contexto_semovi_oficinas_roma_2022",
             "/noticias/?id=746166b9b292b1c7f60c&mes=2026-11": "contexto_santa_fe_cuajimalpa_denuncias",
             "/noticias/?id=451fbd723d5e452167e8&mes=2026-11": "contexto_embarazo_representativo_niaid",
             "/noticias/?id=3225e4d7915c70c83136&mes=2026-11": "contexto_museo_historia_natural_2013",
             "/noticias/?id=3ba1e63aebcbe83062ef&mes=2026-11": "contexto_gallinero_chinampa_xochimilco",
             "/noticias/?id=b146b3d1dafcb65af69e&mes=2026-11": "contexto_grin_escooter_cdmx_2019",
+            "/noticias/?id=61a29006a0c0e622c2f4&mes=2026-11": "contexto_grin_escooter_cdmx_2019",
             "/noticias/?id=486d289d63499706dd71&mes=2026-11": "contexto_grin_escooter_cdmx_2019",
             "/noticias/?id=b5e636680f6dd0f0df25&mes=2026-11": "contexto_cineteca_nacional_2015",
             "/noticias/?id=3dc6cf266cdcd563bb01&mes=2026-11": "contexto_cineteca_nacional_2015",
@@ -657,6 +657,13 @@ class EditorialArchiveSyncTests(unittest.TestCase):
         self.assertIn("13 mil usuarios", scooter["description"])
         self.assertIn("hasta nuevo aviso", scooter["description"])
 
+        maya_vehicle_url = "/noticias/?id=61a29006a0c0e622c2f4&mes=2026-11"
+        maya_vehicle = by_url.get(maya_vehicle_url) or archive_by_url.get(maya_vehicle_url)
+        self.assertIsNotNone(maya_vehicle, "La nota de registros de vehículos eléctricos debe conservarse.")
+        self.assertEqual(maya_vehicle["category"], "Movilidad")
+        self.assertEqual(maya_vehicle["source"], "Maya Comunicación")
+        self.assertFalse(maya_vehicle.get("source_url"), "No inventar una URL directa de Maya Comunicación.")
+
         gallinas_url = "/noticias/?id=3ba1e63aebcbe83062ef&mes=2026-11"
         gallinas = by_url.get(gallinas_url) or archive_by_url.get(gallinas_url)
         self.assertIsNotNone(gallinas, "La nota de Gallinas en Casa debe estar en portada o hemeroteca.")
@@ -680,6 +687,19 @@ class EditorialArchiveSyncTests(unittest.TestCase):
         )
         self.assertEqual(gallinero_photo["author"], "Diego M.P.")
         self.assertEqual(gallinero_photo["license"], "CC BY-SA 4.0")
+
+        grin_photo = next(photo for photo in catalog["photos"] if photo["id"] == "contexto_grin_escooter_cdmx_2019")
+        for local_url in (
+            "/noticias/?id=b146b3d1dafcb65af69e&mes=2026-11",
+            "/noticias/?id=486d289d63499706dd71&mes=2026-11",
+            "/noticias/?id=61a29006a0c0e622c2f4&mes=2026-11",
+        ):
+            item = by_url.get(local_url) or archive_by_url.get(local_url)
+            self.assertIsNotNone(item)
+            self.assertEqual(item["photo"]["url"], grin_photo["url"])
+            self.assertEqual(item["photo"]["source"], grin_photo["source"])
+            self.assertEqual(item["photo"]["author"], grin_photo["author"])
+            self.assertEqual(item["photo"]["license"], grin_photo["license"])
 
 
 
