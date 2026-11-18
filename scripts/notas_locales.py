@@ -523,6 +523,18 @@ def is_capital_cdmx_magdalena_sports_parade(article):
     )
 
 
+def is_la_prensa_financial_inclusion_photo_story(article):
+    """Identifica la nota financiera de La Prensa para asignar un skyline urbano contextual."""
+    title = _photo_fold(article.get("title"))
+    return (
+        str(article.get("date") or "") == "2026-11-17"
+        and _photo_fold(article.get("source")) == "la prensa"
+        and "cuatro alcaldias concentran" in title
+        and re.search(r"\\b77\\s*4 por ciento\\b", title) is not None
+        and "valor economico de cdmx" in title
+    )
+
+
 def is_capital_cdmx_tlalpan_colony_crime_stats(article):
     """Identifica el desglose de denuncias de Toriello Guerra y Santa Úrsula Xitla."""
     title = _photo_fold(article.get("title"))
@@ -3668,6 +3680,8 @@ def _photo_score(article, photo):
         return 5000 if photo.get("id") == "contexto_estadio_ciudad_deportes_america_femenil_2025" else -10000
     if is_billboard_karol_g_concert_story(article):
         return 5000 if photo.get("id") == "contexto_concierto_foro_sol_2023" else -10000
+    if is_la_prensa_financial_inclusion_photo_story(article):
+        return 5000 if photo.get("id") == "contexto_reforma_skyline_financial_cdmx_2016" else -10000
     if is_capital_cdmx_magdalena_sports_parade(article):
         return 5000 if photo.get("id") == "contexto_olimpiada_comunitaria_cdmx_2019" else -10000
     # Las guías del desfile del 20 de noviembre recorren del Zócalo al Monumento;
