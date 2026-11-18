@@ -406,7 +406,7 @@ def is_la_prensa_financial_inclusion_story(article):
     return (
         str(article.get("date") or "")[:10] == "2026-11-17"
         and "cuatro alcaldias concentran" in title
-        and "77.4 por ciento" in title
+        and re.search(r"\b77\s*4 por ciento\b", title) is not None
         and "valor economico de cdmx" in title
         and ("la prensa" in title or fold(article.get("source")) == "el sol de mexico")
     )
