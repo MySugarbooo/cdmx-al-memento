@@ -264,6 +264,202 @@ EDITORIAL_PHOTO_OVERRIDES = {
         "adaptation": "Miniatura oficial de Wikimedia Commons; sin modificación."
     },
 
+    "/noticias/?id=6bef1d7854caac2a590d&mes=2026-11": {
+                "id": "contexto_embarazo_representativo_niaid",
+                "kind": "representativa",
+                "category": "Salud",
+                "topic": "Mujer embarazada, fotografía de archivo de NIAID (24/08/2018); imagen representativa del embarazo, no muestra a beneficiarias ni el programa de CDMX.",
+                "file": "Pregnant woman (43338546905).jpg",
+                "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Pregnant_woman_%2843338546905%29.jpg/960px-Pregnant_woman_%2843338546905%29.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+                "source": "https://commons.wikimedia.org/wiki/File:Pregnant_woman_(43338546905).jpg",
+                "author": "NIAID",
+                "license": "CC BY 2.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+                "keywords": [
+                        "embarazo",
+                        "mujer embarazada",
+                        "salud materna",
+                        "programas sociales",
+                        "Mujeres Sanas e Infancias Protegidas"
+                ],
+                "captured_at": "2018-08-24",
+                "uploaded_at": "2019-10-10",
+                "context": "Fotografía de archivo de NIAID que representa el embarazo; no documenta el programa de apoyo de W Radio ni identifica a sus beneficiarias.",
+                "adaptation": "Miniatura oficial de Wikimedia Commons; sin modificación."
+        },
+    "/noticias/?id=d3599e8834dc58fe907a&mes=2026-11": {
+                "id": "contexto_aula_educacion_salud_mental_cdmx",
+                "kind": "representativa",
+                "category": "Educación",
+                "topic": "Aula de escuela del IEMS en CDMX (archivo 2013); imagen representativa de educación, no documenta la petición de capacitación ni muestra a docentes o estudiantes de la noticia.",
+                "keywords": [
+                        "aula",
+                        "salón de clase",
+                        "salon de clases",
+                        "escuela",
+                        "docentes",
+                        "maestros",
+                        "educación",
+                        "educacion media superior",
+                        "IEMS",
+                        "salud mental",
+                        "primeros auxilios psicológicos",
+                        "depresión adolescente",
+                        "adolescentes",
+                        "Ciudad de México",
+                        "CDMX"
+                ],
+                "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Sal%C3%B3n_de_clase.JPG/500px-Sal%C3%B3n_de_clase.JPG?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail&_=20130921232556",
+                "source": "https://commons.wikimedia.org/wiki/File:Sal%C3%B3n_de_clase.JPG",
+                "author": "Lucía Villegas",
+                "license": "CC0 1.0",
+                "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+                "captured_at": "2013-09-20",
+                "context": "Aula del Instituto de Educación Media Superior del Gobierno del Distrito Federal; fotografía de archivo usada como contexto educativo, no de la iniciativa ni de personas entrevistadas.",
+                "adaptation": "Miniatura oficial de Wikimedia Commons; sin modificación."
+        },
+    "/noticias/?id=870b68fcbfac9da3db2d&mes=2026-11": {
+                "id": "contexto_gallinero_chinampa_xochimilco",
+                "kind": "representativa",
+                "category": "Servicios",
+                "topic": "Gallinero artesanal en una chinampa de Xochimilco (archivo 2018); no corresponde al programa de 2026.",
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Gallinero_hecho_a_mano_en_chinampa.jpg/960px-Gallinero_hecho_a_mano_en_chinampa.jpg",
+                "source": "https://commons.wikimedia.org/wiki/File:Gallinero_hecho_a_mano_en_chinampa.jpg",
+                "author": "Diego M.P.",
+                "license": "CC BY-SA 4.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+                "keywords": [
+                        "gallinas",
+                        "gallinero",
+                        "aves de corral",
+                        "ponedoras",
+                        "huevo",
+                        "Xochimilco",
+                        "chinampa"
+                ],
+                "borough": "Xochimilco",
+                "adaptation": "Fotografía de archivo de 2018; no documenta la entrega de las 15 aves anunciadas en 2026.",
+                "context": "Fotografía de archivo de un gallinero artesanal en una chinampa de Xochimilco; representa crianza de aves de corral, no documenta la entrega de gallinas anunciada en 2026."
+        },
+    "/noticias/?id=fd539ea3ddd1eb1cf4e8&mes=2026-11": {
+                "id": "contexto_trafico_eje_central",
+                "kind": "representativa",
+                "category": "Movilidad",
+                "topic": "Tráfico vehicular en Eje Central, Ciudad de México (fotografía de archivo de 2018); imagen de contexto, no muestra las movilizaciones ni los puntos afectados del 18/11/2026.",
+                "keywords": [
+                        "tráfico",
+                        "vehículos",
+                        "automóviles",
+                        "movilidad",
+                        "hoy no circula",
+                        "vialidad"
+                ],
+                "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Eje_Central_CDMX.jpg/1280px-Eje_Central_CDMX.jpg",
+                "source": "https://commons.wikimedia.org/wiki/File:Eje_Central_CDMX.jpg",
+                "author": "Sergio Estrada Flores",
+                "license": "CC BY 4.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+                "context": "Fotografía de archivo del tránsito sobre Eje Central; representa circulación vehicular en CDMX, no muestra las movilizaciones ni los puntos de afectación del 18/11/2026.",
+                "adaptation": "Fotografía de archivo de Wikimedia Commons; miniatura sin modificación."
+        },
+    "/noticias/?id=af7d04e8a05239194c6d&mes=2026-11": {
+                "id": "contexto_casul_casa_universitaria_del_libro_2016",
+                "kind": "representativa",
+                "category": "Cultura",
+                "topic": "Fachada de la Casa Universitaria del Libro de la UNAM (CASUL), colonia Roma Norte, CDMX (26/09/2016); foto de archivo, no muestra la proyección de El cadáver de la novia.",
+                "file": "Fachada y entrada principal de la Casa Universitaria del Libro de la UNAM.jpg",
+                "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Fachada_y_entrada_principal_de_la_Casa_Universitaria_del_Libro_de_la_UNAM.jpg/960px-Fachada_y_entrada_principal_de_la_Casa_Universitaria_del_Libro_de_la_UNAM.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+                "source": "https://commons.wikimedia.org/wiki/File:Fachada_y_entrada_principal_de_la_Casa_Universitaria_del_Libro_de_la_UNAM.jpg",
+                "author": "Katia Flores Torres",
+                "license": "CC BY-SA 4.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+                "keywords": [
+                        "CASUL",
+                        "Casa Universitaria del Libro",
+                        "UNAM",
+                        "Orizaba 24",
+                        "Roma Norte",
+                        "cineclub",
+                        "Noche de Museos",
+                        "Ciudad de México"
+                ],
+                "borough": "Cuauhtémoc",
+                "captured_at": "2016-09-26",
+                "context": "Fotografía de archivo de la fachada de CASUL, sede anunciada para la proyección gratuita de El cadáver de la novia; no documenta la función.",
+                "adaptation": "Miniatura oficial de Wikimedia Commons; sin modificación."
+        },
+    "/noticias/?id=b1fc9652296cefb7aa00&mes=2026-11": {
+                "id": "contexto_concierto_foro_sol_2023",
+                "kind": "representativa",
+                "category": "Cultura",
+                "topic": "Concierto de Muse en Foro Sol (hoy Estadio GNP), CDMX (23/01/2023); foto de archivo representativa de música en vivo, no documenta Karol G, Corona Capital, Garbage ni el concierto sinfónico de Crepúsculo.",
+                "keywords": [
+                        "concierto",
+                        "música en vivo",
+                        "Foro Sol",
+                        "Estadio GNP Seguros",
+                        "escenario",
+                        "público",
+                        "Ciudad de México",
+                        "Corona Capital",
+                        "festival de música",
+                        "Estadio GNP"
+                ],
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Will_of_the_People_World_Tour%2C_Mexico_City-4.jpg/576px-Will_of_the_People_World_Tour%2C_Mexico_City-4.jpg",
+                "source": "https://commons.wikimedia.org/wiki/File:Will_of_the_People_World_Tour,_Mexico_City-4.jpg",
+                "author": "Nanahuatl",
+                "license": "CC BY-SA 4.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+                "context": "Fotografía de archivo de un concierto de Muse en Foro Sol, recinto hoy llamado Estadio GNP; representa música en vivo en CDMX, no documenta ninguno de los eventos actuales mencionados.",
+                "adaptation": "Miniatura oficial de Wikimedia Commons; sin modificación.",
+                "captured_at": "2023-01-23",
+                "uploaded_at": "2023-02-01"
+        },
+    "/noticias/?id=dfd02c3e41cfe8145490&mes=2026-11": {
+                "id": "contexto_uam_cuajimalpa_educacion_superior_2017",
+                "kind": "representativa",
+                "category": "Educación",
+                "topic": "Edificio de la UAM Cuajimalpa, Ciudad de México (16/03/2017); foto representativa de educación superior, no es el plantel Martín Carrera de Universidad Tres Culturas.",
+                "file": "Edificio de la UAM Cuajimalpa.jpg",
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Edificio_de_la_UAM_Cuajimalpa.jpg/960px-Edificio_de_la_UAM_Cuajimalpa.jpg",
+                "source": "https://commons.wikimedia.org/wiki/File:Edificio_de_la_UAM_Cuajimalpa.jpg",
+                "author": "ProtoplasmaKid",
+                "license": "CC BY-SA 4.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+                "keywords": [
+                        "universidad",
+                        "educación superior",
+                        "campus universitario",
+                        "Ciudad de México",
+                        "UAM",
+                        "Universidad Tres Culturas",
+                        "plantel Martín Carrera"
+                ],
+                "borough": "Cuajimalpa de Morelos",
+                "captured_at": "2017-03-16",
+                "context": "Fotografía del edificio de UAM Cuajimalpa usada solo como imagen de referencia de educación superior en CDMX; no muestra el plantel Martín Carrera de UTC.",
+                "adaptation": "Miniatura oficial de Wikimedia Commons; sin modificación."
+        },
+    "/noticias/?id=d5fefc837e33dbb12140&mes=2026-11": {
+                "id": "contexto_patrullas_iztapalapa_denuncias",
+                "category": "Seguridad",
+                "topic": "Patrullas de archivo en Iztapalapa, CDMX; imagen representativa de seguridad pública, no documenta el ataque armado reportado ni muestra a personas involucradas.",
+                "url": "/assets/fotos/archivo_seguridad_011.jpg",
+                "source": "https://commons.wikimedia.org/wiki/File:Claudia_Sheinbaum_entrega_patrullas_Iztapalapa_02.jpg",
+                "author": "Gobierno de la Ciudad de México",
+                "license": "CC BY 4.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+                "keywords": [
+                        "Iztapalapa",
+                        "patrullas",
+                        "seguridad",
+                        "denuncias"
+                ],
+                "borough": "Iztapalapa",
+                "adaptation": "Foto de archivo de Wikimedia Commons; sin modificación.",
+                "kind": "representativa",
+                "context": "Fotografía de archivo de patrullas de la Ciudad de México; ilustra el tema de seguridad pública, no el ataque del que informó Sociedad Noticias."
+        },
 }
 
 EDITORIAL_ARCHIVE_OVERRIDES = {
@@ -374,6 +570,47 @@ EDITORIAL_ARCHIVE_OVERRIDES = {
     "/noticias/?id=c90abc294def53836a1f&mes=2026-11": {
         "category": "Movilidad"
     },
+    "/noticias/?id=af7d04e8a05239194c6d&mes=2026-11": {
+                "category": "Cultura",
+                "location": "Casa Universitaria del Libro, Orizaba 24, Roma Norte, Cuauhtémoc, CDMX",
+                "source_url": "https://www.infobae.com/mexico/2026/11/18/el-cadaver-de-la-novia-tendra-funcion-gratis-en-cdmx-horario-y-sede-para-ver-la-pelicula-de-tim-burton/",
+                "description": "Infobae informó que el Cineclub CASUL proyectará gratis El cadáver de la novia el miércoles 25 de noviembre de 2026 a las 18:00 en la Casa Universitaria del Libro, Orizaba 24, Roma Norte. El cupo es de 40 personas y no requiere registro previo.",
+                "brief": {
+                        "lead": "Infobae reportó que el Cineclub CASUL proyectará gratis El cadáver de la novia el miércoles 25 de noviembre a las 18:00 en la Casa Universitaria del Libro, Orizaba 24, Roma Norte, Cuauhtémoc. El cupo es de 40 personas y no requiere registro previo.",
+                        "context": "La función forma parte de la programación por el 17 aniversario de la Noche de Museos y cuenta con respaldo de Filmoteca UNAM, Secretaría de Cultura CDMX y Gobierno de la Ciudad de México.",
+                        "pending": "El acceso es por orden de llegada y el recinto puede cerrar el ingreso al completar el cupo de 40. Confirmar con CASUL cualquier cambio de horario o disponibilidad antes de acudir.",
+                        "method": "Síntesis basada en el artículo de Infobae firmado por Kenya Saldaña y publicado el 18 de noviembre de 2026; no equivale a verificación independiente."
+                }
+        },
+    "/noticias/?id=fd539ea3ddd1eb1cf4e8&mes=2026-11": {
+                "category": "Movilidad",
+                "location": "Cuauhtémoc, Iztapalapa, Iztacalco y Miguel Hidalgo (según agenda de SSC-CDMX)",
+                "source_url": "https://amexi.com.mx/infografias/marchas-cdmx-18-noviembre/",
+                "description": "AMEXI informó que la SSC-CDMX previó una marcha y siete concentraciones para el miércoles 18 de noviembre en Cuauhtémoc, Iztapalapa, Iztacalco y Miguel Hidalgo, con posibles afectaciones viales.",
+                "brief": {
+                        "lead": "AMEXI reportó que la SSC-CDMX previó una marcha y siete concentraciones para el miércoles 18 de noviembre en cuatro alcaldías: Cuauhtémoc, Iztapalapa, Iztacalco y Miguel Hidalgo. Las convocatorias incluyen demandas laborales, búsqueda de personas desaparecidas, justicia y derechos de trabajadores.",
+                        "context": "La agenda ubicó, entre otros puntos, una movilización de MOTTU en Río Churubusco con destino al Zócalo a las 10:00, además de concentraciones en Chabacano, Torre Ejecutiva de Pemex, Reclusorio Oriente, La Ciudadela, Telmex y la Secretaría de Gobernación.",
+                        "pending": "El reporte es una previsión de agenda; no confirma que cada concentración se convierta en bloqueo ni que una vía permanezca cerrada. Verificar avisos de SSC-CDMX y autoridades de movilidad antes de cambiar la ruta.",
+                        "method": "Síntesis basada en la infografía de AMEXI firmada por Emmanuel Galván Guerra, publicada el 18 de noviembre de 2026; no equivale a verificación independiente."
+                }
+        },
+    "/noticias/?id=dfd02c3e41cfe8145490&mes=2026-11": {
+                "source_url": "https://www.eleconomista.com.mx/amp/arteseideas/universidad-tres-culturas-inaugura-plantel-martin-carrera-fortalece-presencia-ciudad-mexico-20261118-844582.html",
+                "location": "Martín Carrera, Ciudad de México (dirección no indicada en la nota)",
+                "description": "El Economista reportó la inauguración del plantel Martín Carrera de la Universidad Tres Culturas en CDMX. La nota destaca su conexión con Metro y Metrobús y la expansión de la institución en la región.",
+                "brief": {
+                        "lead": "El Economista informó que la Universidad Tres Culturas inauguró su plantel Martín Carrera en la Ciudad de México. La publicación destaca su conectividad con Metro y Metrobús y señala que la institución cuenta con más de 20 planteles en Estado de México, CDMX y Puebla.",
+                        "context": "La apertura suma una alternativa de educación superior en la zona norte de la capital; la cercanía con transporte público puede influir en los traslados de estudiantes.",
+                        "pending": "La publicación no detalla costos, carreras disponibles, turnos ni proceso de inscripción específico del plantel Martín Carrera. Confirmar esos datos directamente con UTC antes de tomar una decisión.",
+                        "method": "Síntesis basada en la nota de El Economista, publicada el 18 de noviembre de 2026; los datos institucionales se atribuyen a la información publicada y no equivalen a una evaluación independiente."
+                }
+        },
+    "/noticias/?id=b1fc9652296cefb7aa00&mes=2026-11": {
+                "category": "Cultura"
+        },
+    "/noticias/?id=0471025fde64a6b1dc68&mes=2026-11": {
+                "category": "Movilidad"
+        },
 }
 PHOTO_CREDIT_OVERRIDES = {
     "contexto_repartidores_motocicleta_cdmx": {
@@ -381,8 +618,8 @@ PHOTO_CREDIT_OVERRIDES = {
         "topic": "Carteros en motocicleta del Servicio Postal Mexicano, Ciudad de México (2013); imagen representativa de reparto en motocicleta, no del hecho actual"
     },
     "contexto_concierto_foro_sol_2023": {
-        "topic": "Concierto de Muse en Foro Sol (hoy Estadio GNP), CDMX (23/01/2023); fotografía de archivo representativa de música en vivo, no corresponde a Garbage en el Zócalo ni al concierto sinfónico de Crepúsculo.",
-        "context": "Fotografía de archivo de un concierto de Muse en Foro Sol; representa un espectáculo musical en CDMX, no documenta los eventos mencionados en las noticias.",
+        "topic": "Concierto de Muse en Foro Sol (hoy Estadio GNP), CDMX (23/01/2023); foto de archivo representativa de música en vivo, no documenta Karol G, Corona Capital, Garbage ni el concierto sinfónico de Crepúsculo.",
+        "context": "Fotografía de archivo de un concierto de Muse en Foro Sol, recinto hoy llamado Estadio GNP; representa música en vivo en CDMX, no documenta ninguno de los eventos actuales mencionados.",
         "adaptation": "Miniatura oficial de Wikimedia Commons; sin modificación."
     },
     "contexto_teatro_metropolitan_2019": {
@@ -483,6 +720,10 @@ VERIFIED_SOURCE_URLS = frozenset({
     "https://lopezdoriga.com/nacional/ya-debes-emplacar-tu-bici-electrica-o-scooter-cdmx-pospone-multas-y-anunciara-nueva-fecha/",
     # Fuente directa verificada de 88.9 Noticias sobre la prórroga de emplacamiento, 17/11/2026.
     "https://889noticias.mx/noticias/semovi-cdmx-otorga-prorroga-indefinida-para-emplacamiento-de-vehiculos-electricos/",
+    # Fuentes directas cotejadas para la agenda de movilizaciones, CASUL y la inauguración de UTC (18/11/2026).
+    "https://amexi.com.mx/infografias/marchas-cdmx-18-noviembre/",
+    "https://www.infobae.com/mexico/2026/11/18/el-cadaver-de-la-novia-tendra-funcion-gratis-en-cdmx-horario-y-sede-para-ver-la-pelicula-de-tim-burton/",
+    "https://www.eleconomista.com.mx/amp/arteseideas/universidad-tres-culturas-inaugura-plantel-martin-carrera-fortalece-presencia-ciudad-mexico-20261118-844582.html",
 })
 SENSITIVE_MEDIA_TITLE = re.compile(
     r"\b(?:violaci[oó]n|abuso sexual|agresi[oó]n sexual|acoso sexual|violencia sexual|"
