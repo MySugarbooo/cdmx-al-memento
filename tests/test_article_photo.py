@@ -1,4 +1,5 @@
 """Regresiones: fotografías locales en artículos HTML indexables."""
+import json
 import sys
 import unittest
 from pathlib import Path
@@ -427,11 +428,11 @@ class EditorialPhotoOverrideTests(unittest.TestCase):
             "photo": {
                 "id": "commons_88470074",
                 "kind": "representativa",
-                "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Carnaval_de_Azcapotzalco.jpg/960px-Carnaval_de_Azcapotzalco.jpg",
+                "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Carnaval_de_Azcapotzalco%2C_Ciudad_de_M%C3%A9xico_-_Marzo_2020_II.jpg/960px-Carnaval_de_Azcapotzalco%2C_Ciudad_de_M%C3%A9xico_-_Marzo_2020_II.jpg",
                 "author": "Juan Carlos Fonseca Mata",
                 "license": "CC BY-SA 4.0",
                 "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-                "source": "https://commons.wikimedia.org/wiki/File:Carnaval_de_Azcapotzalco.jpg",
+                "source": "https://commons.wikimedia.org/wiki/File:Carnaval_de_Azcapotzalco,_Ciudad_de_M%C3%A9xico_-_Marzo_2020_II.jpg",
             },
         }
         rendered = render_photo(item)
