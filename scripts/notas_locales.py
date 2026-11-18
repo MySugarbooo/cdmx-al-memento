@@ -3715,8 +3715,7 @@ def _photo_score(article, photo):
         return 5000 if photo.get("id") == "contexto_palacio_postal_2010" else -10000
     if "corona capital" in headline:
         return 5000 if photo.get("id") == "contexto_concierto_foro_sol_2023" else -10000
-    if (re.search(r"\b(?:bloqueos?|alternativas viales?)\b", headline)
-            and re.search(r"\b(?:cdmx|ciudad de mexico)\b", headline)):
+    if headline.startswith("atorado en los bloqueos"):
         return 5000 if photo.get("id") == "contexto_trafico_eje_central" else -10000
     # Asignaciones verificadas para las noticias del 16/11/2026.
     # Las fotografías son de archivo y se identifican como representativas, nunca como prueba del hecho.
@@ -3892,8 +3891,8 @@ def _photo_score(article, photo):
     )
     if scooter_helmet_story:
         return 5000 if electric_mobility_photo else -10000
-    if electric_mobility_story and not electric_mobility_photo:
-        return -10000
+    if electric_mobility_story:
+        return 5000 if photo.get("id") == "contexto_grin_escooter_cdmx_2019" else -10000
     vehicle_crash_story = bool(
         re.search(
             r"\b(?:vuelca|volcadura|derrap\w*|choque|colision|accidente vial|"
