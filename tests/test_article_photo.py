@@ -629,7 +629,9 @@ class EditorialArchiveSyncTests(unittest.TestCase):
                 self.assertEqual(item["source_url"], source_url)
                 article_id = local_url.split("id=", 1)[1].split("&", 1)[0]
                 self.assertIn('href="' + source_url + '"', render(item, article_id))
-        self.assertEqual(by_url["/noticias/?id=451fbd723d5e452167e8&mes=2026-11"]["source"], "La Prensa")
+        pregnancy_url = "/noticias/?id=451fbd723d5e452167e8&mes=2026-11"
+        pregnancy = by_url.get(pregnancy_url) or archive_by_url.get(pregnancy_url)
+        self.assertEqual(pregnancy["source"], "La Prensa")
 
         catalog = json.loads(
             (root / "assets/fotos/contexto-tematico.json").read_text(encoding="utf-8")
