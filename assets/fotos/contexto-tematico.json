@@ -1,5 +1,5 @@
 {
-  "version": 4,
+  "version": 5,
   "notice": "Fotografías de contexto reutilizables con licencia. No son fotos del hecho noticioso.",
   "photos": [
     {
@@ -56,7 +56,9 @@
       "source": "https://commons.wikimedia.org/wiki/File:Eje_Central_CDMX.jpg",
       "author": "Sergio Estrada Flores",
       "license": "CC BY 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "context": "Fotografía de archivo del tránsito sobre Eje Central; representa circulación vehicular en CDMX, no muestra las movilizaciones ni los puntos de afectación del 18/11/2026.",
+      "adaptation": "Fotografía de archivo de Wikimedia Commons; miniatura sin modificación."
     },
     {
       "id": "contexto_baloncesto_silla_ruedas",
@@ -678,7 +680,7 @@
       "id": "contexto_concierto_foro_sol_2023",
       "kind": "representativa",
       "category": "Cultura",
-      "topic": "Muse en Foro Sol, CDMX (23/01/2023); foto de archivo, no corresponde a Karol G ni a shows de Garbage o Crepúsculo.",
+      "topic": "Muse en Foro Sol (hoy Estadio GNP), CDMX (23/01/2023); foto de archivo, no corresponde a Karol G ni a otros eventos actuales.",
       "keywords": [
         "concierto",
         "música en vivo",
@@ -696,7 +698,7 @@
       "author": "Nanahuatl",
       "license": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "context": "Fotografía de archivo de un concierto de Muse en Foro Sol; representa un espectáculo musical en CDMX, no documenta los eventos mencionados en las noticias.",
+      "context": "Fotografía de archivo de un concierto de Muse en Foro Sol, recinto hoy llamado Estadio GNP; no documenta Karol G, Corona Capital, Garbage ni el concierto sinfónico de Crepúsculo.",
       "adaptation": "Miniatura oficial de Wikimedia Commons; sin modificación.",
       "captured_at": "2023-01-23",
       "uploaded_at": "2023-02-01"
@@ -1002,7 +1004,8 @@
         "chinampa"
       ],
       "borough": "Xochimilco",
-      "adaptation": "Fotografía de archivo de 2018; no documenta la entrega de las 15 aves anunciadas en 2026."
+      "adaptation": "Fotografía de archivo de 2018; no documenta la entrega de las 15 aves anunciadas en 2026.",
+      "context": "Fotografía de archivo de un gallinero artesanal en una chinampa de Xochimilco; representa crianza de aves de corral, no documenta la entrega de gallinas anunciada en 2026."
     },
     {
       "id": "contexto_boleta_electoral_mexico_2012",
@@ -1563,6 +1566,57 @@
       "captured_at": "2015-02-14",
       "uploaded_at": "2015-11-29",
       "context": "Fotografía de archivo de la Cineteca Nacional; Infobae sitúa la función especial de Remain en Cinépolis Miguel Ángel de Quevedo 227, no en la Cineteca.",
+      "adaptation": "Miniatura oficial de Wikimedia Commons; sin modificación."
+    },
+    {
+      "id": "contexto_casul_casa_universitaria_del_libro_2016",
+      "kind": "representativa",
+      "category": "Cultura",
+      "topic": "Fachada de CASUL, Casa Universitaria del Libro de la UNAM, Roma Norte, CDMX (26/09/2016); foto de archivo, no muestra la función.",
+      "file": "Fachada y entrada principal de la Casa Universitaria del Libro de la UNAM.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Fachada_y_entrada_principal_de_la_Casa_Universitaria_del_Libro_de_la_UNAM.jpg/960px-Fachada_y_entrada_principal_de_la_Casa_Universitaria_del_Libro_de_la_UNAM.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+      "source": "https://commons.wikimedia.org/wiki/File:Fachada_y_entrada_principal_de_la_Casa_Universitaria_del_Libro_de_la_UNAM.jpg",
+      "author": "Katia Flores Torres",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "keywords": [
+        "CASUL",
+        "Casa Universitaria del Libro",
+        "UNAM",
+        "Orizaba 24",
+        "Roma Norte",
+        "cineclub",
+        "Noche de Museos",
+        "Ciudad de México"
+      ],
+      "borough": "Cuauhtémoc",
+      "captured_at": "2016-09-26",
+      "context": "Fotografía de archivo de la fachada de CASUL, sede anunciada para la proyección gratuita de El cadáver de la novia; no documenta la función.",
+      "adaptation": "Miniatura oficial de Wikimedia Commons; sin modificación."
+    },
+    {
+      "id": "contexto_uam_cuajimalpa_educacion_superior_2017",
+      "kind": "representativa",
+      "category": "Educación",
+      "topic": "Edificio de la UAM Cuajimalpa, CDMX (16/03/2017); foto educativa de archivo, no es el plantel Martín Carrera de UTC.",
+      "file": "Edificio de la UAM Cuajimalpa.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Edificio_de_la_UAM_Cuajimalpa.jpg/960px-Edificio_de_la_UAM_Cuajimalpa.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Edificio_de_la_UAM_Cuajimalpa.jpg",
+      "author": "ProtoplasmaKid",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "keywords": [
+        "universidad",
+        "educación superior",
+        "campus universitario",
+        "Ciudad de México",
+        "UAM",
+        "Universidad Tres Culturas",
+        "plantel Martín Carrera"
+      ],
+      "borough": "Cuajimalpa de Morelos",
+      "captured_at": "2017-03-16",
+      "context": "Fotografía del edificio de UAM Cuajimalpa usada solo como imagen de referencia de educación superior en CDMX; no muestra el plantel Martín Carrera de UTC.",
       "adaptation": "Miniatura oficial de Wikimedia Commons; sin modificación."
     }
   ]
