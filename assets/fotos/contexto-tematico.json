@@ -1,5 +1,5 @@
 {
-  "version": 3,
+  "version": 4,
   "notice": "Fotografías de contexto reutilizables con licencia. No son fotos del hecho noticioso.",
   "photos": [
     {
@@ -180,12 +180,13 @@
       "id": "contexto_teatro_metropolitan_2019",
       "kind": "representativa",
       "category": "Cultura",
-      "topic": "Fachada del Teatro Metropólitan, Centro Histórico de CDMX (archivo 2019); no muestra el concierto de Golden Ganga de 2027.",
+      "topic": "Teatro Metropólitan, Centro Histórico de CDMX (archivo 2019); no muestra el concierto de Golden Ganga ni la cartelera del 18 de noviembre de 2026.",
       "keywords": [
         "Teatro Metropólitan",
         "Golden Ganga",
         "conciertos",
         "música en vivo",
+        "cartelera cultural",
         "Centro Histórico",
         "Cuauhtémoc",
         "Independencia"
@@ -198,7 +199,7 @@
       "borough": "Cuauhtémoc",
       "captured_at": "2019-01-19",
       "uploaded_at": "2019-03-05",
-      "adaptation": "Fotografía del recinto tomada el 19 de enero de 2019; no corresponde a la presentación de Golden Ganga anunciada para el 21 de febrero de 2027."
+      "adaptation": "Fotografía del recinto tomada el 19 de enero de 2019; no documenta el concierto de Golden Ganga ni los eventos anunciados para el 18 de noviembre de 2026."
     },
     {
       "id": "contexto_repartidores_motocicleta_cdmx",
@@ -1457,6 +1458,29 @@
       "uploaded_at": "2024-09-15",
       "context": "Imagen de carácter ilustrativo y referencial; no constituye evidencia gráfica de los nuevos centros anunciados en 2026. Muestra el antiguo CENDI de la Cámara de Diputados en El Parque, Venustiano Carranza, fotografiado el 25 de junio de 2019; el gobierno anunció entonces un proyecto para convertir el inmueble en PILARES.",
       "adaptation": "Archivo original de Wikimedia Commons; sin modificación."
+    },
+    {
+      "id": "contexto_azcapotzalco_plaza_civica_2011",
+      "kind": "representativa",
+      "category": "Gobierno",
+      "topic": "Panorámica de Plaza Cívica Fernando Montes de Oca y edificio delegacional de Azcapotzalco (archivo 2011); no evidencia del presupuesto 2027.",
+      "keywords": [
+        "Azcapotzalco",
+        "presupuesto de alcaldía",
+        "presupuesto 2027",
+        "edificio delegacional",
+        "Plaza Cívica Fernando Montes de Oca",
+        "gobierno local",
+        "alcaldía"
+      ],
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Azcapotzalco_-_Panor%C3%A1mica_Plaza_C%C3%ADvica_Fernando_Montes_de_Oca.JPG/960px-Azcapotzalco_-_Panor%C3%A1mica_Plaza_C%C3%ADvica_Fernando_Montes_de_Oca.JPG",
+      "source": "https://commons.wikimedia.org/wiki/File:Azcapotzalco_-_Panor%C3%A1mica_Plaza_C%C3%ADvica_Fernando_Montes_de_Oca.JPG",
+      "author": "ProtoplasmaKid",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "borough": "Azcapotzalco",
+      "context": "Fotografía de archivo de la Plaza Cívica Fernando Montes de Oca y el edificio delegacional de Azcapotzalco; no muestra una sesión presupuestal ni acredita las cifras solicitadas.",
+      "adaptation": "Miniatura oficial de Wikimedia Commons; sin modificación."
     }
   ]
 }

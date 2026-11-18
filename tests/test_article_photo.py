@@ -1,4 +1,5 @@
 """Regresiones: fotografías locales en artículos HTML indexables."""
+import json
 import sys
 import unittest
 from pathlib import Path
@@ -415,6 +416,60 @@ class ArticlePhotoTests(unittest.TestCase):
         self.assertNotIn('href="' + source_url + '"', page)
         self.assertNotIn("Ver fuente original", page)
 
+
+
+class EditorialPhotoOverrideTests(unittest.TestCase):
+    def test_azcapotzalco_budget_article_uses_civic_plaza_not_carnival(self):
+        item = {
+            "title": "Nancy Núñez pide casi 3 mil millones de pesos para Azcapotzalco en 2027",
+            "source": "La Prensa",
+            "date": "2026-11-17",
+            "local_url": "/noticias/?id=534d17e7c38cfd83b7a1&mes=2026-11",
+            "photo": {
+                "id": "commons_88470074",
+                "kind": "representativa",
+                "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Carnaval_de_Azcapotzalco%2C_Ciudad_de_M%C3%A9xico_-_Marzo_2020_II.jpg/960px-Carnaval_de_Azcapotzalco%2C_Ciudad_de_M%C3%A9xico_-_Marzo_2020_II.jpg",
+                "author": "Juan Carlos Fonseca Mata",
+                "license": "CC BY-SA 4.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "https://commons.wikimedia.org/wiki/File:Carnaval_de_Azcapotzalco,_Ciudad_de_M%C3%A9xico_-_Marzo_2020_II.jpg",
+            },
+        }
+        rendered = render_photo(item)
+        self.assertIn("Azcapotzalco_-_Panor", rendered)
+        self.assertIn("ProtoplasmaKid", rendered)
+        self.assertIn("CC BY-SA 4.0", rendered)
+        self.assertNotIn("Carnaval_de_Azcapotzalco", rendered)
+
+        local_script = (Path(__file__).resolve().parents[1] /
+                        "assets/noticias-locales.js").read_text(encoding="utf-8")
+        self.assertIn("534d17e7c38cfd83b7a1", local_script)
+        self.assertIn("Azcapotzalco_-_Panor", local_script)
+
+        local_index = (Path(__file__).resolve().parents[1] /
+                       "noticias/index.html").read_text(encoding="utf-8")
+        self.assertIn("noticias-locales.js?v=20261118-azcapotzalco-budget-photo-0332", local_index)
+
+    def test_context_catalog_has_correct_azcapotzalco_and_theatre_credits(self):
+        root = Path(__file__).resolve().parents[1]
+        catalog = json.loads(
+            (root / "assets/fotos/contexto-tematico.json").read_text(encoding="utf-8")
+        )
+        plaza = next(
+            p for p in catalog["photos"]
+            if p["id"] == "contexto_azcapotzalco_plaza_civica_2011"
+        )
+        self.assertEqual(plaza["author"], "ProtoplasmaKid")
+        self.assertEqual(plaza["license"], "CC BY-SA 4.0")
+        self.assertIn("edificio delegacional", plaza["topic"])
+        self.assertIn("no evidencia del presupuesto 2027", plaza["topic"])
+
+        theatre = next(
+            p for p in catalog["photos"]
+            if p["id"] == "contexto_teatro_metropolitan_2019"
+        )
+        self.assertIn("no muestra el concierto de Golden Ganga", theatre["topic"])
+        self.assertIn("cartelera del 18 de noviembre de 2026", theatre["topic"])
 
 if __name__ == "__main__":
     unittest.main()
