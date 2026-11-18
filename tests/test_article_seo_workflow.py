@@ -47,6 +47,12 @@ class ArticleSeoWorkflowTests(unittest.TestCase):
         self.assertIn("workflow_dispatch:", self.news_workflow)
         self.assertIn("      - 'index.html'", self.news_workflow)
 
+    def test_generated_editorial_archive_overrides_are_committed(self):
+        self.assertIn(
+            "git add articulos/ sitemap-articulos.xml robots.txt index.html archivo/index.html archivo/",
+            self.workflow,
+        )
+
     def test_manual_and_periodic_fallbacks_remain(self):
         self.assertIn('  workflow_dispatch:\n', self.workflow)
         self.assertIn("cron: '23 */3 * * *'", self.workflow)
