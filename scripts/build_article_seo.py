@@ -44,6 +44,26 @@ EDITORIAL_PHOTO_OVERRIDES = {
         "adaptation": "Miniatura oficial de Wikimedia Commons; sin modificación."
     }
 }
+
+EDITORIAL_ARCHIVE_OVERRIDES = {
+    "/noticias/?id=76ea8af5f775cd14991b&mes=2026-11": {
+        "category": "Movilidad",
+        "source_url": "https://sociedad-noticias.com/2026/11/18/motociclistas-repartidores-acuerdan-dialogo-con-autoridades-de-la-cdmx/",
+        "description": "Sociedad Noticias informó que la Secretaría de Movilidad instaló la primera mesa de diálogo con motociclistas repartidores por aplicación para analizar la regulación de la actividad, crear un registro de operadores y mejorar la seguridad vial. La reunión fue encabezada por el secretario Héctor Ulises García Nieto y contó con la participación de cinco dependencias.",
+        "brief": {
+            "lead": "Sociedad Noticias reportó que la Semovi encabezó la primera mesa de diálogo con repartidores por aplicación para analizar la regulación de la actividad, crear un registro de operadores y atender la seguridad vial. Participaron representantes de cinco dependencias; las autoridades convocaron a una próxima reunión.",
+            "context": "El diálogo puede definir cómo se registran y regulan quienes realizan entregas en motocicleta, incluidas las personas que trabajan por cuenta propia, y cómo se coordinan las medidas de movilidad, trabajo y seguridad vial.",
+            "pending": "La nota informa que habrá una próxima reunión, pero no publica todavía un reglamento aprobado ni los requisitos finales del registro. Las propuestas deben distinguirse de las disposiciones vigentes.",
+            "method": "Síntesis editorial basada en el artículo completo de Sociedad Noticias, firmado por Fausto Hernández; no equivale a verificación independiente."
+        }
+    }
+}
+PHOTO_CREDIT_OVERRIDES = {
+    "contexto_repartidores_motocicleta_cdmx": {
+        "author": "Palacio de Correos de Mexico",
+        "topic": "Carteros en motocicleta del Servicio Postal Mexicano, Ciudad de México (2013); imagen representativa de reparto en motocicleta, no del hecho actual"
+    }
+}
 VERIFIED_SOURCE_LINKS = {
     ("El Sol de México", "/noticias/?id=25c1757a6412faa605b8&mes=2026-11"):
         "https://oem.com.mx/elsoldemexico/metropoli/en-cdmx-15-colonias-de-6-alcaldias-concentran-denuncias-por-maltrato-animal-33109336",
@@ -119,6 +139,7 @@ VERIFIED_SOURCE_URLS = frozenset({
     "https://voxpopulinoticias.com.mx/2026/11/belinda-recuerda-su-infancia-tras-cantar-con-karol-g-en-cdmx/",
     "https://oem.com.mx/la-prensa/finanzas/cuatro-alcaldias-concentran-77-4-por-ciento-del-valor-economico-de-cdmx-33177847",
     "https://oem.com.mx/la-prensa/metropoli/nancy-nunez-pide-casi-3-mil-millones-de-pesos-para-azcapotzalco-en-2027-33182113",
+    "https://sociedad-noticias.com/2026/11/18/motociclistas-repartidores-acuerdan-dialogo-con-autoridades-de-la-cdmx/",
     "https://capital-cdmx.org/mas-de-1500-deportistas-participan-en-desfile-por-la-revolucion-mexicana-en-magdalena-contreras/",
     # Fuente directa de A21, consultada y cotejada para la ruta Aeroméxico–Montego Bay.
     "https://a21.com.mx/aerolineas/2026/11/18/conectara-aeromexico-ciudad-de-mexico-con-montego-bay-jamaica/",
@@ -264,9 +285,49 @@ def recent_article_links(articles, limit=12):
     return links
 
 
+def apply_editorial_record_overrides(records):
+    """Keep archive records aligned with verified SEO photo and editorial overrides."""
+    if not isinstance(records, list):
+        raise RuntimeError("Formato de archivo mensual inválido")
+    changed_records = 0
+    for item in records:
+        if not isinstance(item, dict):
+            continue
+        changed = False
+        local_url = str(item.get("local_url") or "")
+        photo_override = EDITORIAL_PHOTO_OVERRIDES.get(local_url)
+        if photo_override and item.get("photo") != photo_override:
+            item["photo"] = dict(photo_override)
+            changed = True
+        article_override = EDITORIAL_ARCHIVE_OVERRIDES.get(local_url)
+        if article_override:
+            for key, value in article_override.items():
+                if item.get(key) != value:
+                    item[key] = value
+                    changed = True
+        photo = item.get("photo")
+        if isinstance(photo, dict):
+            credit_override = PHOTO_CREDIT_OVERRIDES.get(photo.get("id"))
+            if credit_override:
+                for key, value in credit_override.items():
+                    if photo.get(key) != value:
+                        photo[key] = value
+                        changed = True
+        if changed:
+            changed_records += 1
+    return changed_records
+
+
 def main():
     data = json.loads(SOURCE.read_text(encoding="utf-8"))
     articles = data.get("articles") or []
+    feed_changed = apply_editorial_record_overrides(articles)
+    if feed_changed:
+        SOURCE.write_text(
+            json.dumps(data, ensure_ascii=False, indent=2) + "\n",
+            encoding="utf-8",
+        )
+        print(f"Applied editorial overrides to {feed_changed} current feed records")
     # Incluir hemeroteca: news.json solo contiene las noticias más recientes.
     manifest = ROOT / "archivo" / "meses.json"
     if manifest.is_file():
@@ -278,11 +339,30 @@ def main():
             archive_path = ROOT / "archivo" / (month_name + ".json")
             if not archive_path.is_file():
                 raise RuntimeError("Archivo mensual ausente: " + str(archive_path))
-            archived = json.loads(archive_path.read_text(encoding="utf-8"))
-            if isinstance(archived, dict):
-                archived = archived.get("articles", archived.get("news", []))
-            if not isinstance(archived, list):
+            archived_data = json.loads(archive_path.read_text(encoding="utf-8"))
+            if isinstance(archived_data, dict):
+                archive_key = next(
+                    (key for key in ("articles", "news", "items")
+                     if isinstance(archived_data.get(key), list)),
+                    None,
+                )
+                if archive_key is None:
+                    raise RuntimeError("Formato de archivo mensual inválido: " + month_name)
+                archived = archived_data[archive_key]
+            elif isinstance(archived_data, list):
+                archived = archived_data
+            else:
                 raise RuntimeError("Formato de archivo mensual inválido: " + month_name)
+            changed_records = apply_editorial_record_overrides(archived)
+            if changed_records:
+                archive_path.write_text(
+                    json.dumps(archived_data, ensure_ascii=False, indent=2) + "\n",
+                    encoding="utf-8",
+                )
+                print(
+                    f"Applied editorial archive overrides to {changed_records} "
+                    f"records in {archive_path.name}"
+                )
             articles.extend(archived)
     OUT.mkdir(exist_ok=True)
     urls = []

@@ -1698,9 +1698,9 @@ class PhotoRelevanceTests(unittest.TestCase):
         )
         self.assertIsNotNone(courier)
         self.assertEqual(courier["kind"], "representativa")
-        self.assertEqual(courier["author"], "Palacio Postal")
+        self.assertEqual(courier["author"], "Palacio de Correos de Mexico")
         self.assertEqual(courier["license"], "CC BY-SA 4.0")
-        self.assertIn("no del bloqueo actual", courier["topic"])
+        self.assertIn("no del hecho actual", courier["topic"])
 
         unrelated_protest = {
             "id": "generic_cacerolazo",
@@ -1717,7 +1717,7 @@ class PhotoRelevanceTests(unittest.TestCase):
             stats = assign_photos([article])
         self.assertEqual(article["photo"]["id"], "contexto_repartidores_motocicleta_cdmx")
         self.assertEqual(article["photo"]["kind"], "representativa")
-        self.assertEqual(article["photo"]["author"], "Palacio Postal")
+        self.assertEqual(article["photo"]["author"], "Palacio de Correos de Mexico")
         self.assertEqual(article["photo"]["license"], "CC BY-SA 4.0")
         self.assertEqual(stats["assigned"], 1)
 
