@@ -3658,6 +3658,14 @@ def _photo_score(article, photo):
     topic=re.sub(r"\bno\b[^;.)]*", "", topic)
     keywords=_photo_fold(" ".join(str(x) for x in photo.get("keywords",[])))
     context=topic+" "+keywords
+    # La primera infancia y la educación inicial requieren contexto de un CENDI;
+    # no usar registros hidráulicos ni aulas de educación media como sustitutos.
+    early_childhood_story = bool(re.search(
+        r"\\b(?:primera infancia|educacion inicial|centros? de desarrollo infantil|cendi|guarderias?|estancias? infantiles)\\b",
+        headline,
+    ))
+    if early_childhood_story:
+        return 5000 if photo.get("id") == "contexto_cendi_pilares_vc_2019" else -10000
     if is_elsol_49ers_altitude_story(article):
         return 5000 if photo.get("id") == "contexto_futbol_americano_nfl" else -10000
     if is_rafael_castro_capitanes_hawks_story(article):
