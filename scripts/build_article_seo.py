@@ -42,7 +42,175 @@ EDITORIAL_PHOTO_OVERRIDES = {
         "borough": "Azcapotzalco",
         "context": "Fotografía de archivo de la Plaza Cívica Fernando Montes de Oca y el edificio delegacional de Azcapotzalco; no muestra una sesión presupuestal ni acredita las cifras solicitadas.",
         "adaptation": "Miniatura oficial de Wikimedia Commons; sin modificación."
-    }
+    },
+    "/noticias/?id=caebd6fdf4edab5ae26c&mes=2026-11": {
+        "id": "contexto_patrullas_iztapalapa_denuncias",
+        "category": "Seguridad",
+        "topic": "Patrullas en Iztapalapa, foto de archivo; imagen representativa de seguridad pública, no documenta el secuestro reportado en Tlalpan ni identifica a personas involucradas.",
+        "url": "/assets/fotos/archivo_seguridad_011.jpg",
+        "source": "https://commons.wikimedia.org/wiki/File:Claudia_Sheinbaum_entrega_patrullas_Iztapalapa_02.jpg",
+        "author": "Gobierno de la Ciudad de México",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+        "keywords": [
+            "Iztapalapa",
+            "patrullas",
+            "seguridad",
+            "denuncias"
+        ],
+        "borough": "Iztapalapa",
+        "adaptation": "Foto de archivo de Wikimedia Commons; sin modificación.",
+        "kind": "representativa",
+        "context": "Fotografía de archivo de patrullas de la Ciudad de México; ilustra el tema de seguridad pública, no el hecho reportado."
+    },
+    "/noticias/?id=486d289d63499706dd71&mes=2026-11": {
+        "id": "contexto_semovi_oficinas_roma_2022",
+        "kind": "representativa",
+        "category": "Gobierno",
+        "topic": "Fachada de oficinas de SEMOVI en colonia Roma, CDMX (2022); imagen representativa de la dependencia, no documenta la prórroga ni el trámite de emplacamiento.",
+        "file": "Oficinas de la Secretaría de Movilidad de la Ciudad de México.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Oficinas_de_la_Secretar%C3%ADa_de_Movilidad_de_la_Ciudad_de_M%C3%A9xico.jpg/1280px-Oficinas_de_la_Secretar%C3%ADa_de_Movilidad_de_la_Ciudad_de_M%C3%A9xico.jpg",
+        "source": "https://commons.wikimedia.org/wiki/File:Oficinas_de_la_Secretar%C3%ADa_de_Movilidad_de_la_Ciudad_de_M%C3%A9xico.jpg",
+        "author": "ProtoplasmaKid",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "keywords": [
+            "SEMOVI",
+            "Secretaría de Movilidad",
+            "licencia de conducir",
+            "licencia permanente",
+            "trámite vehicular",
+            "control vehicular",
+            "examen de manejo",
+            "oficinas",
+            "colonia Roma"
+        ],
+        "captured_at": "2022-02-28",
+        "uploaded_at": "2022-07-07",
+        "context": "Fotografía de archivo de las oficinas de la Secretaría de Movilidad; no muestra la decisión administrativa ni el trámite.",
+        "adaptation": "Miniatura oficial de Wikimedia Commons; sin modificación."
+    },
+    "/noticias/?id=746166b9b292b1c7f60c&mes=2026-11": {
+        "id": "contexto_santa_fe_cuajimalpa_denuncias",
+        "kind": "representativa",
+        "category": "Alcaldías",
+        "topic": "Vista aérea de Centro Santa Fe, alcaldía Cuajimalpa, CDMX (archivo 2024); imagen de contexto de la zona, no muestra el bloqueo ni el tránsito del 17 de noviembre de 2026.",
+        "file": "Centro Santa Fe - vista aérea.jpg",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Centro_Santa_Fe_-_vista_a%C3%A9rea.jpg/960px-Centro_Santa_Fe_-_vista_a%C3%A9rea.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+        "source": "https://commons.wikimedia.org/wiki/File:Centro_Santa_Fe_-_vista_a%C3%A9rea.jpg",
+        "author": "ProtoplasmaKid",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "keywords": [
+            "Santa Fe",
+            "Cuajimalpa",
+            "Centro Santa Fe",
+            "Ciudad de México",
+            "denuncias por colonia"
+        ],
+        "captured_at": "2024-10-02",
+        "context": "Vista aérea del Centro Santa Fe para ubicar la zona mencionada por La Jornada; no documenta la manifestación ni las afectaciones viales del día.",
+        "adaptation": "Miniatura oficial de Wikimedia Commons; sin modificación.",
+        "borough": "Cuajimalpa de Morelos"
+    },
+    "/noticias/?id=451fbd723d5e452167e8&mes=2026-11": {
+        "id": "contexto_embarazo_representativo_niaid",
+        "kind": "representativa",
+        "category": "Salud",
+        "topic": "Mujer embarazada, fotografía de archivo de NIAID (24/08/2018); imagen representativa del embarazo, no muestra a beneficiarias ni el programa de CDMX.",
+        "file": "Pregnant woman (43338546905).jpg",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Pregnant_woman_%2843338546905%29.jpg/960px-Pregnant_woman_%2843338546905%29.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+        "source": "https://commons.wikimedia.org/wiki/File:Pregnant_woman_(43338546905).jpg",
+        "author": "NIAID",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "keywords": [
+            "embarazo",
+            "mujer embarazada",
+            "salud materna",
+            "programas sociales",
+            "Mujeres Sanas e Infancias Protegidas"
+        ],
+        "captured_at": "2018-08-24",
+        "uploaded_at": "2019-10-10",
+        "context": "Fotografía de archivo de NIAID que representa el embarazo; no documenta el programa Mujeres Sanas e Infancias Protegidas ni identifica a sus beneficiarias.",
+        "adaptation": "Miniatura oficial de Wikimedia Commons; sin modificación."
+    },
+    "/noticias/?id=3225e4d7915c70c83136&mes=2026-11": {
+        "id": "contexto_museo_historia_natural_2013",
+        "kind": "representativa",
+        "category": "Cultura",
+        "topic": "Museo de Historia Natural y Cultura Ambiental, Segunda Sección del Bosque de Chapultepec, CDMX (20/01/2013); fotografía del recinto, no documenta la Noche de Museos ni la actividad de Harry Potter.",
+        "file": "Museo de Historia Natural y Cultura Ambiental 04.jpg",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Museo_de_Historia_Natural_y_Cultura_Ambiental_04.jpg/960px-Museo_de_Historia_Natural_y_Cultura_Ambiental_04.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+        "source": "https://commons.wikimedia.org/wiki/File:Museo_de_Historia_Natural_y_Cultura_Ambiental_04.jpg",
+        "author": "ProtoplasmaKid",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "keywords": [
+            "Museo de Historia Natural",
+            "Noche de Museos",
+            "Chapultepec",
+            "Cultura",
+            "Ciudad de México",
+            "Harry Potter"
+        ],
+        "borough": "Miguel Hidalgo",
+        "captured_at": "2013-01-20",
+        "uploaded_at": "2013-01-21",
+        "context": "Fotografía del exterior del Museo de Historia Natural y Cultura Ambiental en Chapultepec; muestra el recinto, no la actividad temática ni a sus asistentes.",
+        "adaptation": "Miniatura oficial de Wikimedia Commons; sin modificación."
+    },
+    "/noticias/?id=b5e636680f6dd0f0df25&mes=2026-11": {
+        "id": "contexto_cineteca_nacional_2015",
+        "kind": "representativa",
+        "category": "Cultura",
+        "topic": "Cineteca Nacional, Ciudad de México (14/02/2015); imagen representativa de un recinto cinematográfico, no es la sede de la proyección de Remain ni documenta el evento.",
+        "file": "Cineteca Nacional, Ciudad de México.jpg",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Cineteca_Nacional%2C_Ciudad_de_M%C3%A9xico.jpg/960px-Cineteca_Nacional%2C_Ciudad_de_M%C3%A9xico.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+        "source": "https://commons.wikimedia.org/wiki/File:Cineteca_Nacional,_Ciudad_de_M%C3%A9xico.jpg",
+        "author": "B.jars",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "keywords": [
+            "cine",
+            "Cineteca Nacional",
+            "proyección cinematográfica",
+            "Ciudad de México",
+            "Remain",
+            "M. Night Shyamalan"
+        ],
+        "borough": "Benito Juárez",
+        "captured_at": "2015-02-14",
+        "uploaded_at": "2015-11-29",
+        "context": "Fotografía de archivo de la Cineteca Nacional; Infobae sitúa la función especial de Remain en Cinépolis Miguel Ángel de Quevedo 227, no en la Cineteca.",
+        "adaptation": "Miniatura oficial de Wikimedia Commons; sin modificación."
+    },
+    "/noticias/?id=3dc6cf266cdcd563bb01&mes=2026-11": {
+        "id": "contexto_cineteca_nacional_2015",
+        "kind": "representativa",
+        "category": "Cultura",
+        "topic": "Cineteca Nacional, Ciudad de México (14/02/2015); imagen representativa de un recinto cinematográfico, no es la sede de la proyección de Remain ni documenta el evento.",
+        "file": "Cineteca Nacional, Ciudad de México.jpg",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Cineteca_Nacional%2C_Ciudad_de_M%C3%A9xico.jpg/960px-Cineteca_Nacional%2C_Ciudad_de_M%C3%A9xico.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+        "source": "https://commons.wikimedia.org/wiki/File:Cineteca_Nacional,_Ciudad_de_M%C3%A9xico.jpg",
+        "author": "B.jars",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "keywords": [
+            "cine",
+            "Cineteca Nacional",
+            "proyección cinematográfica",
+            "Ciudad de México",
+            "Remain",
+            "M. Night Shyamalan"
+        ],
+        "borough": "Benito Juárez",
+        "captured_at": "2015-02-14",
+        "uploaded_at": "2015-11-29",
+        "context": "Fotografía de archivo de la Cineteca Nacional; Infobae sitúa la función especial de Remain en Cinépolis Miguel Ángel de Quevedo 227, no en la Cineteca.",
+        "adaptation": "Miniatura oficial de Wikimedia Commons; sin modificación."
+    },
 }
 
 EDITORIAL_ARCHIVE_OVERRIDES = {
@@ -56,13 +224,77 @@ EDITORIAL_ARCHIVE_OVERRIDES = {
             "pending": "La nota informa que habrá una próxima reunión, pero no publica todavía un reglamento aprobado ni los requisitos finales del registro. Las propuestas deben distinguirse de las disposiciones vigentes.",
             "method": "Síntesis editorial basada en el artículo completo de Sociedad Noticias, firmado por Fausto Hernández; no equivale a verificación independiente."
         }
-    }
+    },
+    "/noticias/?id=746166b9b292b1c7f60c&mes=2026-11": {
+        "category": "Movilidad",
+        "source_url": "https://www.jornada.com.mx/2026/11/18/capital/028n1cap",
+        "description": "La Jornada reportó nueve movilizaciones y bloqueos en la Ciudad de México; uno de ellos cerró por más de cinco horas los accesos a Santa Fe, en Cuajimalpa, desde las 7:00 horas del 17 de noviembre.",
+        "brief": {
+            "lead": "La Jornada informó que una jornada de nueve movilizaciones incluyó un bloqueo en los accesos a Santa Fe que comenzó alrededor de las 7:00 y se prolongó poco más de cinco horas. El diario reportó que unas 400 personas participaron y que dijeron ser familiares de internos del penal federal 4 de Tepic; también atribuyó a autoridades la versión de que habrían sido convocadas y pagadas por personas cercanas a Lenin Canchola.",
+            "context": "Los cierres afectaron avenidas como Vasco de Quiroga, Carlos Echanove, Juan Salvador Agraz, Mario Pani y Prolongación Reforma; la nota también reportó retrasos en el transporte público.",
+            "pending": "La presunta relación de los convocantes con Lenin Canchola y los pagos es una versión atribuida por La Jornada a autoridades; no debe presentarse como una determinación judicial ni como un hecho probado.",
+            "method": "Síntesis basada en la nota de La Jornada, firmada por Kevin Ruiz, Nayelli Ramírez, Jared Laureles, Carolina Gómez y Jessica Xantomila, publicada el 18 de noviembre de 2026; no equivale a verificación independiente."
+        }
+    },
+    "/noticias/?id=451fbd723d5e452167e8&mes=2026-11": {
+        "source": "La Prensa",
+        "source_url": "https://oem.com.mx/la-prensa/metropoli/apoyo-a-embarazadas-en-cdmx-registrate-por-whatsapp-y-recibe-hasta-4-mil-800-pesos-33185861",
+        "description": "La Prensa informó que el programa Mujeres Sanas e Infancias Protegidas mantiene abierta la incorporación de mujeres embarazadas residentes en la Ciudad de México. El apoyo anunciado para 2026 es de hasta 4,800 pesos, dividido en cuatro pagos de 1,200 pesos.",
+        "brief": {
+            "lead": "La Prensa reportó que el programa Mujeres Sanas e Infancias Protegidas mantiene abierto el registro para mujeres embarazadas en CDMX y contempla hasta 4,800 pesos durante 2026, entregados en cuatro ministraciones de 1,200 pesos.",
+            "context": "La nota señala que el programa prioriza a residentes de unidades territoriales con índices de desarrollo social bajo o muy bajo y solicita documentación que acredite residencia y embarazo.",
+            "pending": "Los lugares disponibles, fechas de pago y requisitos vigentes deben confirmarse en los canales oficiales de la Secretaría de Bienestar e Igualdad Social; la nota periodística no sustituye las reglas del programa.",
+            "method": "Síntesis basada en el artículo de La Prensa firmado por José Luis Pérez y publicado el 17 de noviembre de 2026; no equivale a verificación independiente."
+        }
+    },
+    "/noticias/?id=3225e4d7915c70c83136&mes=2026-11": {
+        "category": "Cultura",
+        "source_url": "https://www.infobae.com/mexico/2026/11/18/harry-potter-llega-al-museo-de-historia-natural-de-cdmx-para-la-ultima-noche-de-museos-de-2026/",
+        "description": "Infobae informó que el Museo de Historia Natural y Cultura Ambiental realizará el 25 de noviembre una Noche de Museos inspirada en Harry Potter, con talleres, juegos y actividades presenciales de 18:00 a 20:30 horas.",
+        "brief": {
+            "lead": "Infobae reportó que el Museo de Historia Natural y Cultura Ambiental cerrará su calendario de Noche de Museos el miércoles 25 de noviembre con actividades inspiradas en Harry Potter, entre ellas selección de casas, elaboración de pociones, búsqueda de criaturas y talleres.",
+            "context": "La jornada está programada de 18:00 a 20:30 en la Segunda Sección del Bosque de Chapultepec. La nota publica tarifas diferenciadas para la entrada y las visitas guiadas.",
+            "pending": "Horarios, tarifas y disponibilidad pueden cambiar; conviene confirmarlos con el museo antes de acudir. La fotografía de la ficha es del recinto y no documenta el evento temático.",
+            "method": "Síntesis basada en el artículo de Infobae firmado por Gisell Yazmin Pinzon Roldan, publicado el 18 de noviembre de 2026; no equivale a verificación independiente."
+        }
+    },
+    "/noticias/?id=b5e636680f6dd0f0df25&mes=2026-11": {
+        "category": "Cultura",
+        "source_url": "https://www.infobae.com/mexico/2026/11/18/m-night-shyamalan-anuncia-visita-a-cdmx-para-proyectar-remain-su-nueva-pelicula/",
+        "description": "Infobae informó que M. Night Shyamalan realizará el 23 de noviembre una función especial de Remain en un Cinépolis de Miguel Ángel de Quevedo 227; el acceso se definirá mediante una dinámica en redes sociales, no por venta de boletos.",
+        "brief": {
+            "lead": "Infobae reportó que M. Night Shyamalan llegará a CDMX el 23 de noviembre para presentar Remain en Cinépolis de Miguel Ángel de Quevedo 227. Los pases se asignarán mediante una dinámica en redes sociales y no estarán a la venta.",
+            "context": "La función especial se realizará antes del estreno comercial mexicano previsto para febrero de 2027 y la convocatoria está dirigida a personas residentes en la capital.",
+            "pending": "La hora, el aforo y la asignación final de pases deben confirmarse con Cinépolis y Warner Bros. Pictures México. La foto de la ficha muestra la Cineteca Nacional como referencia cultural, no la sede de la función.",
+            "method": "Síntesis basada en el artículo de Infobae firmado por Ignacio Izquierdo y publicado el 18 de noviembre de 2026; no equivale a verificación independiente."
+        }
+    },
+    "/noticias/?id=3dc6cf266cdcd563bb01&mes=2026-11": {
+        "category": "Cultura",
+        "source_url": "https://elpais.com/mexico/2026-11-18/m-night-shyamalan-elige-ciudad-de-mexico-para-su-primera-proyeccion-de-nunca-olvides-que-te-quiero.html",
+        "description": "EL PAÍS informó que M. Night Shyamalan eligió la Ciudad de México para una función especial de Remain el 23 de noviembre y abrió una dinámica en redes sociales para asignar pases; su nota no precisa la sala ni el horario.",
+        "brief": {
+            "lead": "EL PAÍS reportó que Shyamalan eligió CDMX para la primera proyección de Remain el 23 de noviembre y convocó a sus seguidores a participar en una dinámica en redes para obtener pases.",
+            "context": "La nota señala que el estreno comercial está previsto para febrero de 2027 y que la función especial se dirige a fans residentes en la capital.",
+            "pending": "EL PAÍS no precisó sala ni horario en su publicación; esos datos no deben inferirse de otras notas. La fotografía de la ficha muestra la Cineteca Nacional como referencia cultural, no la sede confirmada.",
+            "method": "Síntesis basada en el artículo de EL PAÍS firmado por Darinka Rodríguez y publicado el 18 de noviembre de 2026; no equivale a verificación independiente."
+        }
+    },
 }
 PHOTO_CREDIT_OVERRIDES = {
     "contexto_repartidores_motocicleta_cdmx": {
         "author": "Palacio de Correos de Mexico",
         "topic": "Carteros en motocicleta del Servicio Postal Mexicano, Ciudad de México (2013); imagen representativa de reparto en motocicleta, no del hecho actual"
-    }
+    },
+    "contexto_concierto_foro_sol_2023": {
+        "topic": "Concierto de Muse en Foro Sol (hoy Estadio GNP), CDMX (23/01/2023); fotografía de archivo representativa de música en vivo, no corresponde a Garbage en el Zócalo ni al concierto sinfónico de Crepúsculo.",
+        "context": "Fotografía de archivo de un concierto de Muse en Foro Sol; representa un espectáculo musical en CDMX, no documenta los eventos mencionados en las noticias.",
+        "adaptation": "Miniatura oficial de Wikimedia Commons; sin modificación."
+    },
+    "contexto_teatro_metropolitan_2019": {
+        "topic": "Teatro Metropólitan, Centro Histórico de CDMX (archivo 2019); fotografía del recinto como contexto cultural, no documenta la cartelera ni los conciertos del 18 de noviembre de 2026.",
+        "adaptation": "Fotografía del recinto tomada el 19 de enero de 2019; imagen de contexto cultural, no documenta los eventos anunciados."
+    },
 }
 VERIFIED_SOURCE_LINKS = {
     ("El Sol de México", "/noticias/?id=25c1757a6412faa605b8&mes=2026-11"):
@@ -145,6 +377,12 @@ VERIFIED_SOURCE_URLS = frozenset({
     "https://a21.com.mx/aerolineas/2026/11/18/conectara-aeromexico-ciudad-de-mexico-con-montego-bay-jamaica/",
     # Fuente directa de REPORTUR, consultada y cotejada para la carta de intención turística CDMX–Yucatán.
     "https://www.reportur.com/agencias/2026/11/18/cdmx-y-yucatan-mejoraran-su-imagen-y-diversificaran-mercados/",
+    # Fuentes directas verificadas para las correcciones editoriales del 18 de noviembre de 2026.
+    "https://www.jornada.com.mx/2026/11/18/capital/028n1cap",
+    "https://oem.com.mx/la-prensa/metropoli/apoyo-a-embarazadas-en-cdmx-registrate-por-whatsapp-y-recibe-hasta-4-mil-800-pesos-33185861",
+    "https://www.infobae.com/mexico/2026/11/18/harry-potter-llega-al-museo-de-historia-natural-de-cdmx-para-la-ultima-noche-de-museos-de-2026/",
+    "https://www.infobae.com/mexico/2026/11/18/m-night-shyamalan-anuncia-visita-a-cdmx-para-proyectar-remain-su-nueva-pelicula/",
+    "https://elpais.com/mexico/2026-11-18/m-night-shyamalan-elige-ciudad-de-mexico-para-su-primera-proyeccion-de-nunca-olvides-que-te-quiero.html",
 })
 SENSITIVE_MEDIA_TITLE = re.compile(
     r"\b(?:violaci[oó]n|abuso sexual|agresi[oó]n sexual|acoso sexual|violencia sexual|"
