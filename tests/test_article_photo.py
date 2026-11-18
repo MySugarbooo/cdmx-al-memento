@@ -538,6 +538,7 @@ class EditorialArchiveSyncTests(unittest.TestCase):
         )
         photo = next(item for item in context["photos"] if item["id"] == photo_id)
         self.assertEqual(photo["author"], "Palacio de Correos de Mexico")
+        self.assertIn("no del hecho actual", photo["topic"])
         self.assertEqual(photo["license"], "CC BY-SA 4.0")
         self.assertEqual(
             photo["source"],
@@ -551,6 +552,7 @@ class EditorialArchiveSyncTests(unittest.TestCase):
         self.assertEqual(article["category"], "Movilidad")
         self.assertEqual(article["source_url"], "https://sociedad-noticias.com/2026/11/18/motociclistas-repartidores-acuerdan-dialogo-con-autoridades-de-la-cdmx/")
         self.assertEqual(article["photo"]["author"], photo["author"])
+        self.assertIn("no del hecho actual", article["photo"]["topic"])
         self.assertIn("Semovi", article["brief"]["lead"])
 
 
