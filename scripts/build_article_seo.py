@@ -626,9 +626,6 @@ EDITORIAL_ARCHIVE_OVERRIDES = {
                         "method": "Síntesis basada en la nota de El Economista, publicada el 18 de noviembre de 2026; los datos institucionales se atribuyen a la información publicada y no equivalen a una evaluación independiente."
                 }
         },
-    "/noticias/?id=b1fc9652296cefb7aa00&mes=2026-11": {
-                "category": "Cultura"
-        },
     "/noticias/?id=0471025fde64a6b1dc68&mes=2026-11": {
                 "category": "Movilidad"
         },
