@@ -3751,6 +3751,13 @@ STRICT_PHOTO_TOPICS = (
 
 def _photo_score(article, photo):
     """Puntúa relación real con el título; nunca declara un hecho verificado."""
+    # El artículo de Corona Capital requiere una foto del mismo recinto; esta
+    # regla editorial evita que el algoritmo la descarte por diferencias de
+    # redacción en el titular o por la fecha de la imagen de archivo.
+    title_folded = str(article.get("title") or "").casefold()
+    if "corona capital 2026" in title_folded:
+        target_id = "contexto_concierto_foro_sol_2023"
+        return 5000 if photo.get("id") == target_id else -10000
     preferred_photo_id = EDITORIAL_PHOTO_ASSIGNMENTS.get(str(article.get("local_url") or ""))
     if preferred_photo_id:
         return 5000 if photo.get("id") == preferred_photo_id else -10000
