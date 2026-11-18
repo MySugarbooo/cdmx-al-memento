@@ -1199,6 +1199,7 @@ class PhotoRelevanceTests(unittest.TestCase):
         landmark = next(p for p in pool if "torre latinoamericana" in p["topic"].casefold())
         school = next(p for p in pool if "escuela primaria" in p["topic"].casefold()
                       or "mejora de escuelas" in p["topic"].casefold())
+        cendi = next(p for p in pool if p.get("id") == "contexto_cendi_pilares_vc_2019")
         housing = next(p for p in pool if "unidades habitacionales" in p["topic"].casefold())
 
         education_article = news.standardize({
@@ -1219,7 +1220,8 @@ class PhotoRelevanceTests(unittest.TestCase):
         })
 
         self.assertLess(_photo_score(education_article, landmark), 0)
-        self.assertGreaterEqual(_photo_score(education_article, school), 0)
+        self.assertLess(_photo_score(education_article, school), 0)
+        self.assertGreaterEqual(_photo_score(education_article, cendi), 0)
         self.assertLess(_photo_score(housing_article, landmark), 0)
         self.assertGreaterEqual(_photo_score(housing_article, housing), 0)
 
@@ -1249,7 +1251,7 @@ class PhotoRelevanceTests(unittest.TestCase):
         self.assertLess(_photo_score(housing_article, emergency), 0)
 
         assign_photos([education_article, housing_article])
-        self.assertRegex(education_article["photo"]["topic"].casefold(), r"escuela")
+        self.assertRegex(education_article["photo"]["topic"].casefold(), r"(?:cendi|centro de desarrollo infantil)")
         housing_topic = news.fold(housing_article["photo"]["topic"])
         self.assertRegex(housing_topic, r"(?:unidades habitacionales|casa centro historico|casa en la avenida|casa gonzalez de cosio)")
         for article in (education_article, housing_article):
@@ -3366,10 +3368,10 @@ class CurrentEditorialPhotoRegressionTests(unittest.TestCase):
             self.assertTrue(photo["licenseUrl"].startswith("https://creativecommons.org/"))
             self.assertTrue(photo["source"].startswith("https://commons.wikimedia.org/wiki/File:"))
         loader = (REPO_ROOT / "assets/creditos.js").read_text(encoding="utf-8")
-        self.assertIn("/assets/fotos/contexto-tematico.json?v=20261118-editorial-photo-audit-0228", loader)
+        self.assertIn("/assets/fotos/contexto-tematico.json?v=20261118-cendi-photo-2221", loader)
         self.assertIn("new Map", loader)
         html = (REPO_ROOT / "creditos-fotograficos.html").read_text(encoding="utf-8")
-        self.assertIn("creditos.js?v=20261118-editorial-photo-audit-0228", html)
+        self.assertIn("creditos.js?v=20261118-cendi-photo-2221", html)
         for photo_id in (
             "contexto_autopista_sol_mexico_acapulco",
             "contexto_gallinero_chinampa_xochimilco",
