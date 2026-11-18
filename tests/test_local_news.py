@@ -79,6 +79,35 @@ class LocalNewsTests(unittest.TestCase):
         self.assertNotIn("Fuente: El Sol de México", page)
         self.assertNotIn(rss_url, page)
 
+    def test_reportur_cdmx_yucatan_tourism_uses_verified_summary_direct_source_and_hotel_context_photo(self):
+        source_url = "https://www.reportur.com/agencias/2026/11/18/cdmx-y-yucatan-mejoraran-su-imagen-y-diversificaran-mercados/"
+        result = standardize({
+            "title": "CDMX y Yucatán mejorarán su imagen y diversificarán mercados",
+            "url": "https://news.google.com/rss/articles/reportur-cdmx-yucatan-tourism-20261118?oc=5",
+            "source": "REPORTUR.com",
+            "date": "2026-11-18",
+            "published_at": "2026-11-18T09:19:24Z",
+            "category": "CDMX",
+        })
+        self.assertIsNotNone(result)
+        self.assertEqual(result["source_url"], source_url)
+        self.assertIn("carta de intención", result["brief"]["lead"])
+        self.assertIn("Darío Flota", result["brief"]["lead"])
+        self.assertIn("Jennie Shrem", result["brief"]["lead"])
+        self.assertIn("principal mercado emisor", result["brief"]["context"])
+        self.assertIn("no informa un presupuesto asignado", result["brief"]["pending"])
+        self.assertIn("Guadalajara, Jalisco", result["location"])
+        self.assertEqual(result["description"], result["brief"]["lead"])
+        assign_photos([result])
+        self.assertEqual(result["photo"]["id"], "contexto_hotel_corporativo_cdmx")
+        self.assertEqual(result["photo"]["author"], "Jeff Reuben")
+        self.assertEqual(result["photo"]["license"], "CC BY-SA 4.0")
+        self.assertIn("no del acuerdo CDMX-Yucatán", result["photo"]["topic"])
+        page = render(result, article_id(result))
+        self.assertIn(source_url, page)
+        self.assertIn("Ver fuente original", page)
+        self.assertIn("Jeff Reuben", page)
+
     def test_capital_cdmx_magdalena_sports_parade_uses_original_source_and_confirmed_route(self):
         source_url = "https://capital-cdmx.org/mas-de-1500-deportistas-participan-en-desfile-por-la-revolucion-mexicana-en-magdalena-contreras/"
         result = standardize({

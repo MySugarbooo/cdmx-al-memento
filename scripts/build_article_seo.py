@@ -122,6 +122,8 @@ VERIFIED_SOURCE_URLS = frozenset({
     "https://capital-cdmx.org/mas-de-1500-deportistas-participan-en-desfile-por-la-revolucion-mexicana-en-magdalena-contreras/",
     # Fuente directa de A21, consultada y cotejada para la ruta Aeroméxico–Montego Bay.
     "https://a21.com.mx/aerolineas/2026/11/18/conectara-aeromexico-ciudad-de-mexico-con-montego-bay-jamaica/",
+    # Fuente directa de REPORTUR, consultada y cotejada para la carta de intención turística CDMX–Yucatán.
+    "https://www.reportur.com/agencias/2026/11/18/cdmx-y-yucatan-mejoraran-su-imagen-y-diversificaran-mercados/",
 })
 SENSITIVE_MEDIA_TITLE = re.compile(
     r"\b(?:violaci[oó]n|abuso sexual|agresi[oó]n sexual|acoso sexual|violencia sexual|"
