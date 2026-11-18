@@ -1717,7 +1717,7 @@ class PhotoRelevanceTests(unittest.TestCase):
             stats = assign_photos([article])
         self.assertEqual(article["photo"]["id"], "contexto_repartidores_motocicleta_cdmx")
         self.assertEqual(article["photo"]["kind"], "representativa")
-        self.assertEqual(article["photo"]["author"], "Palacio Postal")
+        self.assertEqual(article["photo"]["author"], "Palacio de Correos de Mexico")
         self.assertEqual(article["photo"]["license"], "CC BY-SA 4.0")
         self.assertEqual(stats["assigned"], 1)
 
