@@ -5,7 +5,7 @@ import unittest
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
-from build_article_seo import apply_editorial_archive_overrides, render, render_photo
+from build_article_seo import apply_editorial_record_overrides, render, render_photo
 
 
 class ArticlePhotoTests(unittest.TestCase):
@@ -488,7 +488,7 @@ class EditorialArchiveSyncTests(unittest.TestCase):
             "photo": {"id": "keep-this-photo", "author": "Autor original"},
         }
         records = [azcapotzalco, unrelated]
-        changed = apply_editorial_archive_overrides(records)
+        changed = apply_editorial_record_overrides(records)
         self.assertEqual(changed, 1)
         self.assertEqual(
             records[0]["photo"]["id"],
@@ -519,7 +519,7 @@ class EditorialArchiveSyncTests(unittest.TestCase):
             },
         }
         records = [record]
-        changed = apply_editorial_archive_overrides(records)
+        changed = apply_editorial_record_overrides(records)
         self.assertEqual(changed, 1)
         self.assertEqual(record["category"], "Movilidad")
         self.assertEqual(record["source_url"], source_url)
