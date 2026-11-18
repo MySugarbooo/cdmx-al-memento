@@ -354,7 +354,7 @@ class PhotoRelevanceTests(unittest.TestCase):
         self.assertIsNotNone(venue)
         self.assertIn("Teatro Metropólitan", venue.get("topic", ""))
         self.assertIn("no muestra el concierto de Golden Ganga", venue.get("topic", ""))
-        self.assertIn("no corresponde a la presentación de Golden Ganga", venue.get("adaptation", ""))
+        self.assertIn("no documenta el concierto de Golden Ganga", venue.get("adaptation", ""))
 
     def test_robar_infinitive_classifies_store_robbery_and_rejects_city_landmark(self):
         title = ("2996: En la alcaldía Venustiano Carranza, efectivos de la SSC "
