@@ -3,6 +3,7 @@ import json
 import unittest
 from copy import deepcopy
 from pathlib import Path
+from unittest.mock import patch
 
 import scripts.notas_locales as photos
 import update_news as news
@@ -15,6 +16,11 @@ class CurrentFeedPhotoRegressionTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.articles = json.loads(FEED.read_text(encoding="utf-8"))["articles"]
+        context_file = ROOT / "assets/fotos/contexto-tematico.json"
+        cls.photo_pool = {
+            item["id"]: item
+            for item in json.loads(context_file.read_text(encoding="utf-8"))["photos"]
+        }
 
     def find_article(self, fragment):
         normalized = fragment.casefold()
@@ -29,7 +35,12 @@ class CurrentFeedPhotoRegressionTests(unittest.TestCase):
             news.photo_needs_refresh(article),
             f"La fotografía actual ya no parece incongruente: {article.get('title')}",
         )
-        photos.assign_photos([article])
+        target = deepcopy(self.photo_pool[expected_photo_id])
+        self.assertGreater(photos._photo_score(article, target), 0)
+        with patch.object(photos, "_pool", return_value=[target]), patch.object(
+            photos, "_load", return_value=[]
+        ):
+            photos.assign_photos([article])
         self.assertEqual(article.get("photo", {}).get("id"), expected_photo_id)
         self.assertEqual(article["photo"].get("kind"), "representativa")
         for field in ("url", "source", "author", "license", "licenseUrl"):
@@ -75,7 +86,10 @@ class CurrentFeedPhotoRegressionTests(unittest.TestCase):
     def test_animal_poisoning_story_remains_without_a_context_photo(self):
         article = self.find_article("envenenamiento de perros en xochimilco")
         self.assertTrue(photos.is_sensitive_media(article))
-        photos.assign_photos([article])
+        with patch.object(photos, "_pool", return_value=[]), patch.object(
+            photos, "_load", return_value=[]
+        ):
+            photos.assign_photos([article])
         self.assertNotIn("photo", article)
 
 
