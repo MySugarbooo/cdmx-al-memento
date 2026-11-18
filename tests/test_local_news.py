@@ -53,6 +53,31 @@ class LocalNewsTests(unittest.TestCase):
         self.assertIn("Fuente: La Prensa", page)
         self.assertNotIn("Fuente: El Sol de México", page)
 
+    def test_la_prensa_nancy_nunez_budget_story_corrects_source_link_and_summary(self):
+        source_url = "https://oem.com.mx/la-prensa/metropoli/nancy-nunez-pide-casi-3-mil-millones-de-pesos-para-azcapotzalco-en-2027-33182113"
+        rss_url = "https://news.google.com/rss/articles/nancy-nunez-azcapotzalco-budget-20261117?oc=5"
+        result = standardize({
+            "title": "Nancy Núñez pide casi 3 mil millones de pesos para Azcapotzalco en 2027",
+            "url": rss_url,
+            "source": "El Sol de México",
+            "date": "2026-11-17",
+            "published_at": "2026-11-17T23:37:30Z",
+            "category": "CDMX",
+        })
+        self.assertIsNotNone(result)
+        self.assertEqual(result["source"], "La Prensa")
+        self.assertEqual(result["source_url"], source_url)
+        self.assertIn("2,957.88 millones", result["brief"]["lead"])
+        self.assertIn("24%", result["brief"]["lead"])
+        self.assertIn("2,648.84 millones", result["brief"]["context"])
+        self.assertIn("no una asignación aprobada", result["brief"]["pending"])
+        self.assertEqual(result["description"], result["brief"]["lead"])
+        page = render(result, article_id(result))
+        self.assertIn(source_url, page)
+        self.assertIn("Fuente: La Prensa", page)
+        self.assertNotIn("Fuente: El Sol de México", page)
+        self.assertNotIn(rss_url, page)
+
     def test_capital_cdmx_magdalena_sports_parade_uses_original_source_and_confirmed_route(self):
         source_url = "https://capital-cdmx.org/mas-de-1500-deportistas-participan-en-desfile-por-la-revolucion-mexicana-en-magdalena-contreras/"
         result = standardize({
