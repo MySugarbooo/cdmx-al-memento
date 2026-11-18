@@ -58,6 +58,7 @@ AHORA_NOTICIAS_TLALPAN_PERRITA_SOURCE_URL = "https://ahoranoticias.com.mx/nacion
 EL_SOL_ANIMAL_ABUSE_COMPLAINTS_SOURCE_URL = "https://oem.com.mx/elsoldemexico/metropoli/en-cdmx-15-colonias-de-6-alcaldias-concentran-denuncias-por-maltrato-animal-33109336"
 LA_PRENSA_PREHOSPITAL_CARE_SOURCE_URL = "https://oem.com.mx/la-prensa/metropoli/cdmx-busca-modernizar-la-atencion-prehospitalaria-con-plataforma-digital-de-la-ops-oms-inicia-prueba-piloto-con-tres-am-33136134"
 LA_PRENSA_FINANCIAL_INCLUSION_SOURCE_URL = "https://oem.com.mx/la-prensa/finanzas/cuatro-alcaldias-concentran-77-4-por-ciento-del-valor-economico-de-cdmx-33177847"
+LA_PRENSA_AZCAPOTZALCO_BUDGET_SOURCE_URL = "https://oem.com.mx/la-prensa/metropoli/nancy-nunez-pide-casi-3-mil-millones-de-pesos-para-azcapotzalco-en-2027-33182113"
 CAPITAL_CDMX_MAGDALENA_SPORTS_PARADE_SOURCE_URL = "https://capital-cdmx.org/mas-de-1500-deportistas-participan-en-desfile-por-la-revolucion-mexicana-en-magdalena-contreras/"
 DIARIO_MORELOS_MEXICO_ACAPULCO_TRAFFIC_SOURCE_URL = "https://www.diariodemorelos.com/noticias/reportan-trafico-intenso-en-mexico-acapulco-rumbo-cdmx-estos-son-puntos-afectados"
 DEBATE_RUTA_MAIZ_SOURCE_URL = "https://www.debate.com.mx/cdmx/inauguran-ruta-del-maiz-en-cdmx-conectara-topilejo-con-la-joya-por-4-pesos-20261116-0230.html"
@@ -411,6 +412,17 @@ def is_la_prensa_financial_inclusion_story(article):
         and ("la prensa" in title or fold(article.get("source")) == "el sol de mexico")
     )
 
+
+
+def is_la_prensa_nancy_nunez_budget_story(article):
+    """Identifica la nota de La Prensa sobre la solicitud presupuestal de Azcapotzalco para 2027."""
+    title = fold(article.get("title"))
+    return (
+        str(article.get("date") or "")[:10] == "2026-11-17"
+        and "nancy nunez" in title
+        and "azcapotzalco" in title
+        and "2027" in title
+    )
 
 def is_diario_morelos_mexico_acapulco_traffic(article):
     title = fold(article.get("title"))
@@ -805,6 +817,8 @@ def standardize(article):
         # Google News etiquetó esta publicación de OEM como El Sol de México,
         # pero el titular y la página original identifican a La Prensa.
         source = "La Prensa"
+    if is_la_prensa_nancy_nunez_budget_story({"title": title, "date": date}):
+        source = "La Prensa"
     if not title or not valid_link(url, curated) or not DAY_RE.fullmatch(date):
         return None
     try:
@@ -928,6 +942,9 @@ def standardize(article):
         result["borough"] = "Cuauhtémoc"
         result["location"] = "Centro Histórico, alcaldía Cuauhtémoc, Ciudad de México (según El Congresista; operativo no verificado)"
     result["local_url"] = local_link(result)
+    if is_la_prensa_nancy_nunez_budget_story(result):
+        result["source"] = "La Prensa"
+        result["source_url"] = LA_PRENSA_AZCAPOTZALCO_BUDGET_SOURCE_URL
     if is_reporte_indigo_contingency_story(result) and date == "2026-11-17":
         result["source_url"] = REPORTE_INDIGO_AIR_QUALITY_20261117_SOURCE_URL
         result["location"] = (
@@ -1103,6 +1120,30 @@ def standardize(article):
             result["location"] = clean(article["location"])[:180]
     else:
         result["brief"] = summarize(result)  # Recalcular fichas RSS al ajustar reglas.
+    if is_la_prensa_nancy_nunez_budget_story(result):
+        result["brief"] = {
+            "lead": (
+                "La Prensa informó que la alcaldesa Nancy Marlene Núñez Reséndiz solicitó "
+                "2,957.88 millones de pesos para Azcapotzalco en 2027. En la mesa de trabajo "
+                "del Congreso local también reportó una reducción del 24% en delitos de alto "
+                "impacto; legisladores plantearon pendientes sobre fugas de agua, bacheo y transparencia."
+            ),
+            "context": (
+                "La petición se presentó durante el análisis del paquete económico de la Ciudad "
+                "de México para 2027. El presupuesto modificado de la alcaldía para 2026 fue de "
+                "2,648.84 millones de pesos."
+            ),
+            "pending": (
+                "Los 2,957.88 millones son una solicitud, no una asignación aprobada. La cifra "
+                "de 2,635 fugas pendientes fue expuesta por una legisladora y no constituye "
+                "una auditoría independiente."
+            ),
+            "method": (
+                "Síntesis editorial basada en la publicación de La Prensa, firmada por Arturo "
+                "R. Pansza y fechada el 17 de noviembre de 2026. La nota atribuye las cifras "
+                "a la alcaldesa y a las intervenciones legislativas; no son verificación independiente."
+            ),
+        }
     if is_hoy_tamaulipas_paty_chio_assembly(result):
         result["brief"] = {
             "lead": (
