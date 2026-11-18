@@ -28,6 +28,9 @@
   const match=typeof x?.local_url==='string'&&x.local_url.match(/^\/noticias\/\?id=([a-f0-9]{20})&mes=\d{4}-\d{2}$/);
   return match?match[1]:'';
  }
+ const EDITORIAL_PHOTO_OVERRIDES = new Map([
+  ['534d17e7c38cfd83b7a1', {"id":"contexto_azcapotzalco_plaza_civica_2011","kind":"representativa","category":"Gobierno","topic":"Panorámica de la Plaza Cívica Fernando Montes de Oca y el edificio delegacional de Azcapotzalco (archivo 2011); imagen contextual, no evidencia de la solicitud presupuestal de 2027.","keywords":["Azcapotzalco","presupuesto de alcaldía","presupuesto 2027","edificio delegacional","Plaza Cívica Fernando Montes de Oca","gobierno local","alcaldía"],"url":"https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Azcapotzalco_-_Panor%C3%A1mica_Plaza_C%C3%ADvica_Fernando_Montes_de_Oca.JPG/960px-Azcapotzalco_-_Panor%C3%A1mica_Plaza_C%C3%ADvica_Fernando_Montes_de_Oca.JPG","source":"https://commons.wikimedia.org/wiki/File:Azcapotzalco_-_Panor%C3%A1mica_Plaza_C%C3%ADvica_Fernando_Montes_de_Oca.JPG","author":"ProtoplasmaKid","license":"CC BY-SA 4.0","licenseUrl":"https://creativecommons.org/licenses/by-sa/4.0/","borough":"Azcapotzalco","context":"Fotografía de archivo de la Plaza Cívica Fernando Montes de Oca y el edificio delegacional de Azcapotzalco; no muestra una sesión presupuestal ni acredita las cifras solicitadas.","adaptation":"Miniatura oficial de Wikimedia Commons; sin modificación."}]
+ ]);
  function publication(x){
   const d=new Date(x.published_at||'');
   return Number.isFinite(d.getTime())?dateFormat.format(d):x.date||'Fecha sin confirmar';
@@ -63,6 +66,8 @@
   return stored&&stored.kind!=='hecho'&&stored.author&&stored.license&&stored.source&&stored.url?{...stored,kind:'representativa'}:null;
  }
  function selectedPhoto(x){
+  const editorialOverride=EDITORIAL_PHOTO_OVERRIDES.get(articleRouteId(x));
+  if(editorialOverride)return editorialOverride;
   const exact=x?.photo;
   // El registro editorial aprobado tiene prioridad sobre la fototeca de contexto.
   if(exact?.kind==='hecho'&&exact.verified===true&&exact.author&&exact.license&&exact.source&&exact.licenseUrl&&exact.evidence_url)return exact;
