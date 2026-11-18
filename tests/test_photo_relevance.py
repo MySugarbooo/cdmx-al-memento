@@ -89,6 +89,36 @@ class PhotoRelevanceTests(unittest.TestCase):
         self.assertIn("archivo 2016", article["photo"]["topic"])
         self.assertIn("no evidencia del ranking", article["photo"]["topic"])
 
+    def test_reportur_tourism_story_rejects_ambulance_and_uses_hotel_archive_photo(self):
+        article = news.standardize({
+            "title": "CDMX y Yucatán mejorarán su imagen y diversificarán mercados",
+            "url": "https://news.google.com/rss/articles/reportur-cdmx-yucatan-tourism-photo-test?oc=5",
+            "source": "REPORTUR.com",
+            "date": "2026-11-18",
+            "published_at": "2026-11-18T09:19:24Z",
+            "category": "CDMX",
+        })
+        self.assertIsNotNone(article)
+        pool = photos._pool()
+        hotel = next(p for p in pool if p.get("id") == "contexto_hotel_corporativo_cdmx")
+        ambulance = next(p for p in pool if p.get("id") == "contexto_ambulancia_cruz_verde_cdmx")
+        self.assertEqual(_photo_score(article, hotel), 5000)
+        self.assertLess(_photo_score(article, ambulance), 0)
+        article["photo"] = deepcopy(ambulance)
+        with patch.object(photos, "_pool", return_value=[ambulance, hotel]), patch.object(
+            photos, "_load", return_value=[]
+        ):
+            photos.assign_photos([article])
+        self.assertEqual(article["photo"]["id"], "contexto_hotel_corporativo_cdmx")
+        self.assertEqual(article["photo"]["kind"], "representativa")
+        self.assertEqual(article["photo"]["author"], "Jeff Reuben")
+        self.assertEqual(article["photo"]["license"], "CC BY-SA 4.0")
+        self.assertEqual(
+            article["photo"]["source"],
+            "https://commons.wikimedia.org/wiki/File:Gran_Hotel_Ciudad_de_M%C3%A9xico_formerly_El_Centro_Mercantil.jpg",
+        )
+        self.assertIn("no del acuerdo CDMX-Yucatán", article["photo"]["topic"])
+
     def test_aeromexico_montego_bay_route_rejects_pedestrians_and_uses_aicm_aircraft(self):
         article = news.standardize({
             "title": "Conectará Aeroméxico Ciudad de México con Montego Bay, Jamaica",
