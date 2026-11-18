@@ -284,7 +284,7 @@ def recent_article_links(articles, limit=12):
     return links
 
 
-def apply_editorial_archive_overrides(records):
+def apply_editorial_record_overrides(records):
     """Keep archive records aligned with verified SEO photo and editorial overrides."""
     if not isinstance(records, list):
         raise RuntimeError("Formato de archivo mensual inválido")
@@ -320,6 +320,13 @@ def apply_editorial_archive_overrides(records):
 def main():
     data = json.loads(SOURCE.read_text(encoding="utf-8"))
     articles = data.get("articles") or []
+    feed_changed = apply_editorial_record_overrides(articles)
+    if feed_changed:
+        SOURCE.write_text(
+            json.dumps(data, ensure_ascii=False, indent=2) + "\n",
+            encoding="utf-8",
+        )
+        print(f"Applied editorial overrides to {feed_changed} current feed records")
     # Incluir hemeroteca: news.json solo contiene las noticias más recientes.
     manifest = ROOT / "archivo" / "meses.json"
     if manifest.is_file():
@@ -345,7 +352,7 @@ def main():
                 archived = archived_data
             else:
                 raise RuntimeError("Formato de archivo mensual inválido: " + month_name)
-            changed_records = apply_editorial_archive_overrides(archived)
+            changed_records = apply_editorial_record_overrides(archived)
             if changed_records:
                 archive_path.write_text(
                     json.dumps(archived_data, ensure_ascii=False, indent=2) + "\n",
