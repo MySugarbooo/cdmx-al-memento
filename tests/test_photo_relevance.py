@@ -119,7 +119,13 @@ class PhotoRelevanceTests(unittest.TestCase):
             "https://commons.wikimedia.org/wiki/File:Aviones_en_la_pista_del_AICM.jpg",
         )
         self.assertIn("no documenta una operación aérea específica", article["photo"]["topic"])
-        self.assertIn("no constituye evidencia gráfica", article["photo"]["context"])
+        self.assertEqual(article["photo"]["kind"], "representativa")
+        catalog = json.loads((REPO_ROOT / "assets/fotos/contexto-tematico.json").read_text(encoding="utf-8"))
+        catalog_photo = next(
+            photo for photo in catalog["photos"]
+            if photo.get("id") == "contexto_aicm_aviones_pista_2026"
+        )
+        self.assertIn("no constituye evidencia gráfica", catalog_photo["context"])
 
     def test_rss_category_uses_obvious_headline_subject(self):
         self.assertEqual(category_by_headline(
