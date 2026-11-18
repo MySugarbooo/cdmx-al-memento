@@ -651,7 +651,7 @@ class EditorialArchiveSyncTests(unittest.TestCase):
         gallinas = by_url.get(gallinas_url) or archive_by_url.get(gallinas_url)
         self.assertIsNotNone(gallinas, "La nota de Gallinas en Casa debe estar en portada o hemeroteca.")
         self.assertIn("Gallinas en Casa", gallinas["description"])
-        self.assertIn("fechas de registro", gallinas["brief"]["pending"])
+        self.assertIn("fechas de inscripción", gallinas["brief"]["pending"])
         self.assertNotIn("pension", gallinas["photo"]["topic"].lower())
         self.assertIn("no documenta el programa", gallinas["photo"]["topic"].lower())
 
