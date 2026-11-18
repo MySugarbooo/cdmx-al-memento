@@ -1322,6 +1322,24 @@ def is_sociedad_noticias_corporate_travel_story(article):
     )
 
 
+REPORTUR_CDMX_YUCATAN_TOURISM_SOURCE_URL = (
+    "https://www.reportur.com/agencias/2026/11/18/"
+    "cdmx-y-yucatan-mejoraran-su-imagen-y-diversificaran-mercados/"
+)
+
+
+def is_reportur_cdmx_yucatan_tourism_story(article):
+    """Identifica la carta de intención turística CDMX–Yucatán publicada por REPORTUR."""
+    title = _photo_fold(article.get("title"))
+    source = _photo_fold(article.get("source"))
+    return (
+        source in {"reportur com", "reportur"}
+        and str(article.get("date") or "")[:10] == "2026-11-18"
+        and "cdmx y yucatan mejoraran su imagen" in title
+        and "diversificaran mercados" in title
+    )
+
+
 def is_nplus_cordoba_pilgrims_story(article):
     return _is_current_2026_11_16_photo_story(
         article, "n", "peregrinos pernoctan en cordoba", "camino a cdmx"
@@ -1413,6 +1431,38 @@ def summarize(article):
     category=str(article.get("category") or "CDMX")
     theme=TAGS.get(category,TAGS["CDMX"])
     folded_title=_photo_fold(title)
+    if is_reportur_cdmx_yucatan_tourism_story(article):
+        return {
+            "lead": (
+                "REPORTUR informó el 18 de noviembre de 2026 que las secretarías de Turismo "
+                "de la Ciudad de México y Yucatán formalizaron una carta de intención para "
+                "coordinar la promoción y el posicionamiento de ambos destinos durante ITB "
+                "Américas, celebrada en Guadalajara, Jalisco. La firma estuvo a cargo de "
+                "Darío Flota, titular de la dependencia estatal, y Jennie Shrem, directora "
+                "general del Instituto de Promoción Turística de la Ciudad de México."
+            ),
+            "context": (
+                "La publicación describe acciones de promoción conjunta de atractivos, "
+                "intercambio de materiales e información cultural, difusión en redes "
+                "sociales y coordinación de recursos para actividades divulgativas. "
+                "También señala que la Ciudad de México es el principal mercado emisor "
+                "de turistas hacia Yucatán."
+            ),
+            "pending": (
+                "El artículo describe una carta de intención y líneas de colaboración; "
+                "no informa un presupuesto asignado, un calendario de campañas ni "
+                "resultados medibles. La cifra de inversión turística de Yucatán citada "
+                "al final corresponde al periodo hasta el 30 de septiembre de 2026 y "
+                "no a los recursos de este acuerdo."
+            ),
+            "method": (
+                "Síntesis editorial basada en REPORTUR, 18 de noviembre de 2026: "
+                + REPORTUR_CDMX_YUCATAN_TOURISM_SOURCE_URL
+                + ". La imagen asignada muestra el Gran Hotel Ciudad de México en una "
+                "fotografía de archivo; es representativa de hotelería urbana y no "
+                "documenta la firma del acuerdo ni a sus participantes."
+            ),
+        }
     if (
         is_reporte_indigo_contingency_story(article)
         and str(article.get("date") or "") == "2026-11-17"
@@ -3710,6 +3760,8 @@ def _photo_score(article, photo):
     ))
     if early_childhood_story:
         return 5000 if photo.get("id") == "contexto_cendi_pilares_vc_2019" else -10000
+    if is_reportur_cdmx_yucatan_tourism_story(article):
+        return 5000 if photo.get("id") == "contexto_hotel_corporativo_cdmx" else -10000
     if is_aeromexico_montego_bay_route_story(article):
         return 5000 if photo.get("id") == "contexto_aicm_aviones_pista_2026" else -10000
     if is_elsol_49ers_altitude_story(article):
