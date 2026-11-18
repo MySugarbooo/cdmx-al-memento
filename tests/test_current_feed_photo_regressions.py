@@ -125,6 +125,13 @@ class CurrentFeedPhotoRegressionTests(unittest.TestCase):
         self.assertIn("no constituye evidencia gráfica", photo["context"])
         self.assertEqual(photo["kind"], "representativa")
 
+    def test_aeromexico_montego_bay_route_uses_aicm_aircraft_archive_photo(self):
+        if not self.assert_reassigned(
+            "conectará aeroméxico ciudad de méxico con montego bay",
+            "contexto_aicm_aviones_pista_2026",
+        ):
+            self.skipTest("La noticia de la ruta a Montego Bay ya no está en el feed vigente.")
+
     def test_animal_poisoning_story_remains_without_a_context_photo(self):
         article = self.find_article("envenenamiento de perros en xochimilco")
         if article is None:

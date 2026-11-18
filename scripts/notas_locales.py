@@ -1208,6 +1208,24 @@ AICM_FLIGHT_SUSPENSION_SOURCE_URL = (
     "aicm-reporta-afectaciones-de-vuelos-hacia-y-desde-estados-unidos-tras-restriccion-a-operaciones-aereas"
 )
 
+AEROMEXICO_MONTEGO_BAY_ROUTE_SOURCE_URL = (
+    "https://a21.com.mx/aerolineas/2026/11/18/"
+    "conectara-aeromexico-ciudad-de-mexico-con-montego-bay-jamaica/"
+)
+
+
+def is_aeromexico_montego_bay_route_story(article):
+    """Identifica la ruta directa CDMX–Montego Bay publicada por A21 el 18/11/2026."""
+    title = _photo_fold(article.get("title"))
+    source = _photo_fold(article.get("source"))
+    return (
+        source in {"aviacion 21", "a21"}
+        and str(article.get("date") or "")[:10] == "2026-11-18"
+        and "aeromexico" in title
+        and "ciudad de mexico" in title
+        and "montego bay" in title
+    )
+
 
 def is_la_jornada_aicm_flight_suspension(article):
     """Identifica el reporte del AICM sobre los vuelos afectados el 13/11/2026."""
@@ -2350,6 +2368,32 @@ def summarize(article):
                 "el 14 de noviembre de 2026: " + EL_SOL_MUJERES_DEFENSIVE_DRIVING_SOURCE_URL
                 + ". No se consultó el cuerpo íntegro del artículo; los datos se atribuyen al medio "
                 "y no constituyen verificación independiente."
+            ),
+        }
+    if is_aeromexico_montego_bay_route_story(article):
+        return {
+            "lead": (
+                "Aviación 21 informó que Aeroméxico abrirá una ruta directa entre Ciudad de México y "
+                "Montego Bay, Jamaica, el 18 de marzo de 2027, con tres vuelos semanales: jueves, "
+                "sábado y domingo."
+            ),
+            "context": (
+                "La publicación señala que los vuelos se operarán con Boeing 737 MAX de 166 plazas "
+                "(16 en clase Premier y 150 en turista). El itinerario anunciado sale de Ciudad de México "
+                "a las 10:20 y llega a Montego Bay a las 14:00; el regreso parte a las 15:15 y llega a "
+                "México a las 18:20. A21 cita una demanda estimada de 35 mil pasajeros anuales y describe "
+                "la ruta como la primera conexión aérea directa entre México y Jamaica."
+            ),
+            "pending": (
+                "El inicio está anunciado para el 18 de marzo de 2027. Horarios, disponibilidad y tarifas "
+                "pueden cambiar y deben confirmarse con Aeroméxico. La estimación de 35 mil pasajeros es "
+                "una previsión citada por el medio, no un flujo ya observado."
+            ),
+            "method": (
+                "Síntesis editorial basada en la publicación original de Redacción A21, fechada el "
+                "18 de noviembre de 2026: " + AEROMEXICO_MONTEGO_BAY_ROUTE_SOURCE_URL
+                + ". Los datos operativos y de demanda se atribuyen a la aerolínea y al medio; "
+                "no constituyen verificación independiente."
             ),
         }
     if is_la_jornada_aicm_flight_suspension(article):
@@ -3666,6 +3710,8 @@ def _photo_score(article, photo):
     ))
     if early_childhood_story:
         return 5000 if photo.get("id") == "contexto_cendi_pilares_vc_2019" else -10000
+    if is_aeromexico_montego_bay_route_story(article):
+        return 5000 if photo.get("id") == "contexto_aicm_aviones_pista_2026" else -10000
     if is_elsol_49ers_altitude_story(article):
         return 5000 if photo.get("id") == "contexto_futbol_americano_nfl" else -10000
     if is_rafael_castro_capitanes_hawks_story(article):
