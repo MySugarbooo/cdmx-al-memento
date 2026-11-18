@@ -530,7 +530,7 @@ def is_la_prensa_financial_inclusion_photo_story(article):
         str(article.get("date") or "") == "2026-11-17"
         and _photo_fold(article.get("source")) == "la prensa"
         and "cuatro alcaldias concentran" in title
-        and re.search(r"\\b77\\s*4 por ciento\\b", title) is not None
+        and re.search(r"\b77\s*4 por ciento\b", title) is not None
         and "valor economico de cdmx" in title
     )
 
