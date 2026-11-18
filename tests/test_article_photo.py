@@ -560,5 +560,53 @@ class EditorialArchiveSyncTests(unittest.TestCase):
             self.assertIn("no del hecho actual", article["photo"]["topic"])
 
 
+    def test_feed_photo_overrides_use_topic_matched_licensed_images_and_verified_sources(self):
+        root = Path(__file__).resolve().parents[1]
+        feed = json.loads((root / "news.json").read_text(encoding="utf-8"))
+        records = feed["articles"]
+        apply_editorial_record_overrides(records)
+        by_url = {item["local_url"]: item for item in records}
+        expected_photos = {
+            "/noticias/?id=caebd6fdf4edab5ae26c&mes=2026-11": "contexto_patrullas_iztapalapa_denuncias",
+            "/noticias/?id=486d289d63499706dd71&mes=2026-11": "contexto_semovi_oficinas_roma_2022",
+            "/noticias/?id=746166b9b292b1c7f60c&mes=2026-11": "contexto_santa_fe_cuajimalpa_denuncias",
+            "/noticias/?id=451fbd723d5e452167e8&mes=2026-11": "contexto_embarazo_representativo_niaid",
+            "/noticias/?id=3225e4d7915c70c83136&mes=2026-11": "contexto_museo_historia_natural_2013",
+            "/noticias/?id=b5e636680f6dd0f0df25&mes=2026-11": "contexto_cineteca_nacional_2015",
+            "/noticias/?id=3dc6cf266cdcd563bb01&mes=2026-11": "contexto_cineteca_nacional_2015",
+        }
+        for local_url, photo_id in expected_photos.items():
+            with self.subTest(local_url=local_url):
+                item = by_url[local_url]
+                photo = item["photo"]
+                self.assertEqual(photo["id"], photo_id)
+                self.assertTrue(photo["source"].startswith("https://commons.wikimedia.org/wiki/File:"))
+                self.assertTrue(photo["licenseUrl"].startswith("https://creativecommons.org/"))
+                self.assertTrue(photo.get("topic"))
+                self.assertTrue(photo.get("context"))
+
+        expected_sources = {
+            "/noticias/?id=746166b9b292b1c7f60c&mes=2026-11": "https://www.jornada.com.mx/2026/11/18/capital/028n1cap",
+            "/noticias/?id=451fbd723d5e452167e8&mes=2026-11": "https://oem.com.mx/la-prensa/metropoli/apoyo-a-embarazadas-en-cdmx-registrate-por-whatsapp-y-recibe-hasta-4-mil-800-pesos-33185861",
+            "/noticias/?id=3225e4d7915c70c83136&mes=2026-11": "https://www.infobae.com/mexico/2026/11/18/harry-potter-llega-al-museo-de-historia-natural-de-cdmx-para-la-ultima-noche-de-museos-de-2026/",
+            "/noticias/?id=b5e636680f6dd0f0df25&mes=2026-11": "https://www.infobae.com/mexico/2026/11/18/m-night-shyamalan-anuncia-visita-a-cdmx-para-proyectar-remain-su-nueva-pelicula/",
+            "/noticias/?id=3dc6cf266cdcd563bb01&mes=2026-11": "https://elpais.com/mexico/2026-11-18/m-night-shyamalan-elige-ciudad-de-mexico-para-su-primera-proyeccion-de-nunca-olvides-que-te-quiero.html",
+        }
+        for local_url, source_url in expected_sources.items():
+            with self.subTest(source_url=source_url):
+                item = by_url[local_url]
+                self.assertEqual(item["source_url"], source_url)
+                article_id = local_url.split("id=", 1)[1].split("&", 1)[0]
+                self.assertIn('href="' + source_url + '"', render(item, article_id))
+        self.assertEqual(by_url["/noticias/?id=451fbd723d5e452167e8&mes=2026-11"]["source"], "La Prensa")
+
+        catalog = json.loads(
+            (root / "assets/fotos/contexto-tematico.json").read_text(encoding="utf-8")
+        )
+        catalog_ids = {photo["id"] for photo in catalog["photos"]}
+        self.assertTrue(set(expected_photos.values()).issubset(catalog_ids))
+
+
+
 if __name__ == "__main__":
     unittest.main()

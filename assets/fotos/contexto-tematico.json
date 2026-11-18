@@ -180,7 +180,7 @@
       "id": "contexto_teatro_metropolitan_2019",
       "kind": "representativa",
       "category": "Cultura",
-      "topic": "Teatro Metropólitan, Centro Histórico de CDMX (archivo 2019); no muestra el concierto de Golden Ganga ni la cartelera del 18 de noviembre de 2026.",
+      "topic": "Teatro Metropólitan, Centro Histórico de CDMX (archivo 2019); fotografía del recinto como contexto cultural, no documenta la cartelera ni los conciertos del 18 de noviembre de 2026.",
       "keywords": [
         "Teatro Metropólitan",
         "Golden Ganga",
@@ -199,7 +199,7 @@
       "borough": "Cuauhtémoc",
       "captured_at": "2019-01-19",
       "uploaded_at": "2019-03-05",
-      "adaptation": "Fotografía del recinto tomada el 19 de enero de 2019; no documenta el concierto de Golden Ganga ni los eventos anunciados para el 18 de noviembre de 2026."
+      "adaptation": "Fotografía del recinto tomada el 19 de enero de 2019; imagen de contexto cultural, no documenta los eventos anunciados."
     },
     {
       "id": "contexto_repartidores_motocicleta_cdmx",
@@ -335,7 +335,7 @@
       "id": "contexto_semovi_oficinas_roma_2022",
       "kind": "representativa",
       "category": "Gobierno",
-      "topic": "Fachada de oficinas de SEMOVI en colonia Roma, CDMX (2022); imagen representativa, no documenta la suspensión de trámites.",
+      "topic": "Fachada de oficinas de SEMOVI en colonia Roma, CDMX (2022); imagen representativa de la dependencia, no documenta la prórroga ni el trámite de emplacamiento.",
       "file": "Oficinas de la Secretaría de Movilidad de la Ciudad de México.jpg",
       "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Oficinas_de_la_Secretar%C3%ADa_de_Movilidad_de_la_Ciudad_de_M%C3%A9xico.jpg/1280px-Oficinas_de_la_Secretar%C3%ADa_de_Movilidad_de_la_Ciudad_de_M%C3%A9xico.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Oficinas_de_la_Secretar%C3%ADa_de_Movilidad_de_la_Ciudad_de_M%C3%A9xico.jpg",
@@ -355,7 +355,7 @@
       ],
       "captured_at": "2022-02-28",
       "uploaded_at": "2022-07-07",
-      "context": "Imagen de carácter ilustrativo y referencial; no constituye evidencia gráfica de los hechos descritos.",
+      "context": "Fotografía de archivo de las oficinas de la Secretaría de Movilidad; no muestra la decisión administrativa ni el trámite.",
       "adaptation": "Miniatura oficial de Wikimedia Commons; sin modificación."
     },
     {
@@ -678,7 +678,7 @@
       "id": "contexto_concierto_foro_sol_2023",
       "kind": "representativa",
       "category": "Cultura",
-      "topic": "Concierto de Muse en Foro Sol (hoy Estadio GNP), CDMX (23/01/2023); foto de archivo del recinto, no corresponde a Karol G ni al Corona Capital 2026.",
+      "topic": "Concierto de Muse en Foro Sol (hoy Estadio GNP), CDMX (23/01/2023); fotografía de archivo representativa de música en vivo, no corresponde a Garbage en el Zócalo ni al concierto sinfónico de Crepúsculo.",
       "keywords": [
         "concierto",
         "música en vivo",
@@ -696,7 +696,7 @@
       "author": "Nanahuatl",
       "license": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "context": "Fotografía de archivo de un concierto de Muse en Foro Sol, actualmente Estadio GNP Seguros; no documenta el concierto de Karol G.",
+      "context": "Fotografía de archivo de un concierto de Muse en Foro Sol; representa un espectáculo musical en CDMX, no documenta los eventos mencionados en las noticias.",
       "adaptation": "Miniatura oficial de Wikimedia Commons; sin modificación.",
       "captured_at": "2023-01-23",
       "uploaded_at": "2023-02-01"
@@ -874,7 +874,7 @@
       "id": "contexto_santa_fe_cuajimalpa_denuncias",
       "kind": "representativa",
       "category": "Alcaldías",
-      "topic": "Vista aérea de Centro Santa Fe, alcaldía Cuajimalpa, Ciudad de México (archivo 2024; imagen contextual, no documenta las denuncias de 2024).",
+      "topic": "Vista aérea de Centro Santa Fe, alcaldía Cuajimalpa, CDMX (archivo 2024); imagen de contexto de la zona, no muestra el bloqueo ni el tránsito del 17 de noviembre de 2026.",
       "file": "Centro Santa Fe - vista aérea.jpg",
       "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Centro_Santa_Fe_-_vista_a%C3%A9rea.jpg/960px-Centro_Santa_Fe_-_vista_a%C3%A9rea.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
       "source": "https://commons.wikimedia.org/wiki/File:Centro_Santa_Fe_-_vista_a%C3%A9rea.jpg",
@@ -889,8 +889,9 @@
         "denuncias por colonia"
       ],
       "captured_at": "2024-10-02",
-      "context": "Fotografía aérea del Centro Santa Fe en Cuajimalpa; imagen de contexto geográfico, no representa ni documenta las denuncias citadas.",
-      "adaptation": "Miniatura oficial de Wikimedia Commons; sin modificación."
+      "context": "Vista aérea del Centro Santa Fe para ubicar la zona mencionada por La Jornada; no documenta la manifestación ni las afectaciones viales del día.",
+      "adaptation": "Miniatura oficial de Wikimedia Commons; sin modificación.",
+      "borough": "Cuajimalpa de Morelos"
     },
     {
       "id": "contexto_jardin_balbuena_denuncias",
@@ -1151,7 +1152,7 @@
     {
       "id": "contexto_patrullas_iztapalapa_denuncias",
       "category": "Seguridad",
-      "topic": "Patrullas en Iztapalapa, foto de archivo; no documenta las denuncias ni las cifras de 2024/2026.",
+      "topic": "Patrullas en Iztapalapa, foto de archivo; imagen representativa de seguridad pública, no documenta el secuestro reportado en Tlalpan ni identifica a personas involucradas.",
       "url": "/assets/fotos/archivo_seguridad_011.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Claudia_Sheinbaum_entrega_patrullas_Iztapalapa_02.jpg",
       "author": "Gobierno de la Ciudad de México",
@@ -1164,7 +1165,9 @@
         "denuncias"
       ],
       "borough": "Iztapalapa",
-      "adaptation": "Foto de archivo de patrullas entregadas en Iztapalapa; no documenta las denuncias de las colonias."
+      "adaptation": "Foto de archivo de Wikimedia Commons; sin modificación.",
+      "kind": "representativa",
+      "context": "Fotografía de archivo de patrullas de la Ciudad de México; ilustra el tema de seguridad pública, no el hecho reportado."
     },
     {
       "id": "contexto_proteccion_civil_explosion_cdmx",
@@ -1487,6 +1490,79 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
       "borough": "Azcapotzalco",
       "context": "Fotografía de archivo de la Plaza Cívica Fernando Montes de Oca y el edificio delegacional de Azcapotzalco; no muestra una sesión presupuestal ni acredita las cifras solicitadas.",
+      "adaptation": "Miniatura oficial de Wikimedia Commons; sin modificación."
+    },
+    {
+      "id": "contexto_embarazo_representativo_niaid",
+      "kind": "representativa",
+      "category": "Salud",
+      "topic": "Mujer embarazada, fotografía de archivo de NIAID (24/08/2018); imagen representativa del embarazo, no muestra a beneficiarias ni el programa de CDMX.",
+      "file": "Pregnant woman (43338546905).jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Pregnant_woman_%2843338546905%29.jpg/960px-Pregnant_woman_%2843338546905%29.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+      "source": "https://commons.wikimedia.org/wiki/File:Pregnant_woman_(43338546905).jpg",
+      "author": "NIAID",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "keywords": [
+        "embarazo",
+        "mujer embarazada",
+        "salud materna",
+        "programas sociales",
+        "Mujeres Sanas e Infancias Protegidas"
+      ],
+      "captured_at": "2018-08-24",
+      "uploaded_at": "2019-10-10",
+      "context": "Fotografía de archivo de NIAID que representa el embarazo; no documenta el programa Mujeres Sanas e Infancias Protegidas ni identifica a sus beneficiarias.",
+      "adaptation": "Miniatura oficial de Wikimedia Commons; sin modificación."
+    },
+    {
+      "id": "contexto_museo_historia_natural_2013",
+      "kind": "representativa",
+      "category": "Cultura",
+      "topic": "Museo de Historia Natural y Cultura Ambiental, Segunda Sección del Bosque de Chapultepec, CDMX (20/01/2013); fotografía del recinto, no documenta la Noche de Museos ni la actividad de Harry Potter.",
+      "file": "Museo de Historia Natural y Cultura Ambiental 04.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Museo_de_Historia_Natural_y_Cultura_Ambiental_04.jpg/960px-Museo_de_Historia_Natural_y_Cultura_Ambiental_04.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+      "source": "https://commons.wikimedia.org/wiki/File:Museo_de_Historia_Natural_y_Cultura_Ambiental_04.jpg",
+      "author": "ProtoplasmaKid",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "keywords": [
+        "Museo de Historia Natural",
+        "Noche de Museos",
+        "Chapultepec",
+        "Cultura",
+        "Ciudad de México",
+        "Harry Potter"
+      ],
+      "borough": "Miguel Hidalgo",
+      "captured_at": "2013-01-20",
+      "uploaded_at": "2013-01-21",
+      "context": "Fotografía del exterior del Museo de Historia Natural y Cultura Ambiental en Chapultepec; muestra el recinto, no la actividad temática ni a sus asistentes.",
+      "adaptation": "Miniatura oficial de Wikimedia Commons; sin modificación."
+    },
+    {
+      "id": "contexto_cineteca_nacional_2015",
+      "kind": "representativa",
+      "category": "Cultura",
+      "topic": "Cineteca Nacional, Ciudad de México (14/02/2015); imagen representativa de un recinto cinematográfico, no es la sede de la proyección de Remain ni documenta el evento.",
+      "file": "Cineteca Nacional, Ciudad de México.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Cineteca_Nacional%2C_Ciudad_de_M%C3%A9xico.jpg/960px-Cineteca_Nacional%2C_Ciudad_de_M%C3%A9xico.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+      "source": "https://commons.wikimedia.org/wiki/File:Cineteca_Nacional,_Ciudad_de_M%C3%A9xico.jpg",
+      "author": "B.jars",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "keywords": [
+        "cine",
+        "Cineteca Nacional",
+        "proyección cinematográfica",
+        "Ciudad de México",
+        "Remain",
+        "M. Night Shyamalan"
+      ],
+      "borough": "Benito Juárez",
+      "captured_at": "2015-02-14",
+      "uploaded_at": "2015-11-29",
+      "context": "Fotografía de archivo de la Cineteca Nacional; Infobae sitúa la función especial de Remain en Cinépolis Miguel Ángel de Quevedo 227, no en la Cineteca.",
       "adaptation": "Miniatura oficial de Wikimedia Commons; sin modificación."
     }
   ]
