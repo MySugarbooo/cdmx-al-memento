@@ -370,6 +370,9 @@ EDITORIAL_ARCHIVE_OVERRIDES = {
             "method": "Síntesis editorial basada en el artículo de 88.9 Noticias publicado el 17 de noviembre de 2026; no equivale a verificación independiente."
         }
     },
+    "/noticias/?id=c90abc294def53836a1f&mes=2026-11": {
+        "category": "Movilidad"
+    },
 }
 PHOTO_CREDIT_OVERRIDES = {
     "contexto_repartidores_motocicleta_cdmx": {
