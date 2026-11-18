@@ -19,6 +19,31 @@ BASE = "https://cdmx-al-memento.pages.dev"
 SOURCE = ROOT / "news.json"
 OUT = ROOT / "articulos"
 SITEMAP = ROOT / "sitemap-articulos.xml"
+EDITORIAL_PHOTO_OVERRIDES = {
+    "/noticias/?id=534d17e7c38cfd83b7a1&mes=2026-11": {
+        "id": "contexto_azcapotzalco_plaza_civica_2011",
+        "kind": "representativa",
+        "category": "Gobierno",
+        "topic": "Panorámica de la Plaza Cívica Fernando Montes de Oca y el edificio delegacional de Azcapotzalco (archivo 2011); imagen contextual, no evidencia de la solicitud presupuestal de 2027.",
+        "keywords": [
+            "Azcapotzalco",
+            "presupuesto de alcaldía",
+            "presupuesto 2027",
+            "edificio delegacional",
+            "Plaza Cívica Fernando Montes de Oca",
+            "gobierno local",
+            "alcaldía"
+        ],
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Azcapotzalco_-_Panor%C3%A1mica_Plaza_C%C3%ADvica_Fernando_Montes_de_Oca.JPG/960px-Azcapotzalco_-_Panor%C3%A1mica_Plaza_C%C3%ADvica_Fernando_Montes_de_Oca.JPG",
+        "source": "https://commons.wikimedia.org/wiki/File:Azcapotzalco_-_Panor%C3%A1mica_Plaza_C%C3%ADvica_Fernando_Montes_de_Oca.JPG",
+        "author": "ProtoplasmaKid",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "borough": "Azcapotzalco",
+        "context": "Fotografía de archivo de la Plaza Cívica Fernando Montes de Oca y el edificio delegacional de Azcapotzalco; no muestra una sesión presupuestal ni acredita las cifras solicitadas.",
+        "adaptation": "Miniatura oficial de Wikimedia Commons; sin modificación."
+    }
+}
 VERIFIED_SOURCE_LINKS = {
     ("El Sol de México", "/noticias/?id=25c1757a6412faa605b8&mes=2026-11"):
         "https://oem.com.mx/elsoldemexico/metropoli/en-cdmx-15-colonias-de-6-alcaldias-concentran-denuncias-por-maltrato-animal-33109336",
@@ -140,7 +165,7 @@ def article_id(item):
     return match.group(1) if match else None
 
 def render_photo(item):
-    photo = item.get("photo")
+    photo = EDITORIAL_PHOTO_OVERRIDES.get(item.get("local_url")) or item.get("photo")
     if not isinstance(photo, dict):
         return ""
     if is_sensitive_media(item) and not has_verified_event_photo(photo):
