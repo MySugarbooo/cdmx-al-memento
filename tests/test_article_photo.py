@@ -566,6 +566,19 @@ class EditorialArchiveSyncTests(unittest.TestCase):
         records = feed["articles"]
         apply_editorial_record_overrides(records)
         by_url = {item["local_url"]: item for item in records}
+        remain_versions = {
+            "/noticias/?id=b5e636680f6dd0f0df25&mes=2026-11",
+            "/noticias/?id=3dc6cf266cdcd563bb01&mes=2026-11",
+        }
+        self.assertTrue(
+            remain_versions.intersection(by_url),
+            "El feed debe conservar al menos una versión del reportaje Remain.",
+        )
+        # El actualizador elimina duplicados entre medios; la versión de EL PAÍS
+        # puede quedar solo en la hemeroteca mientras Infobae permanece en news.json.
+        deduplicated_optional_urls = {
+            "/noticias/?id=3dc6cf266cdcd563bb01&mes=2026-11",
+        }
         expected_photos = {
             "/noticias/?id=caebd6fdf4edab5ae26c&mes=2026-11": "contexto_patrullas_iztapalapa_denuncias",
             "/noticias/?id=486d289d63499706dd71&mes=2026-11": "contexto_semovi_oficinas_roma_2022",
@@ -577,7 +590,10 @@ class EditorialArchiveSyncTests(unittest.TestCase):
         }
         for local_url, photo_id in expected_photos.items():
             with self.subTest(local_url=local_url):
-                item = by_url[local_url]
+                item = by_url.get(local_url)
+                if item is None and local_url in deduplicated_optional_urls:
+                    continue
+                self.assertIsNotNone(item, f"Falta el registro editorial esperado: {local_url}")
                 photo = item["photo"]
                 self.assertEqual(photo["id"], photo_id)
                 self.assertTrue(photo["source"].startswith("https://commons.wikimedia.org/wiki/File:"))
@@ -594,7 +610,10 @@ class EditorialArchiveSyncTests(unittest.TestCase):
         }
         for local_url, source_url in expected_sources.items():
             with self.subTest(source_url=source_url):
-                item = by_url[local_url]
+                item = by_url.get(local_url)
+                if item is None and local_url in deduplicated_optional_urls:
+                    continue
+                self.assertIsNotNone(item, f"Falta el registro editorial esperado: {local_url}")
                 self.assertEqual(item["source_url"], source_url)
                 article_id = local_url.split("id=", 1)[1].split("&", 1)[0]
                 self.assertIn('href="' + source_url + '"', render(item, article_id))
