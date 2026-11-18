@@ -25,6 +25,17 @@ NEWS_PHOTOS=ROOT/"assets/fotos/indice-noticias-1100.json"
 TOPIC_PHOTOS=ROOT/"assets/fotos/contexto-tematico.json"
 VERIFIED_EVENTS=ROOT/"assets/fotos/hechos-verificados.json"
 
+EDITORIAL_PHOTO_ASSIGNMENTS = {
+    # Imágenes contextuales acreditadas para sustituir asociaciones incongruentes del feed.
+    "/noticias/?id=93d6dc15e350c29ebde4&mes=2026-11": "contexto_cineteca_nacional_2015",
+    "/noticias/?id=42bd74d1c186627079c0&mes=2026-11": "contexto_autodromo_hermanos_rodriguez",
+    "/noticias/?id=d3599e8834dc58fe907a&mes=2026-11": "contexto_aula_educacion_salud_mental_cdmx",
+    "/noticias/?id=6bef1d7854caac2a590d&mes=2026-11": "contexto_embarazo_representativo_niaid",
+    "/noticias/?id=1dc6fd0a8753b47cf581&mes=2026-11": "contexto_policia_xochimilco",
+    "/noticias/?id=fd539ea3ddd1eb1cf4e8&mes=2026-11": "contexto_trafico_eje_central",
+    "/noticias/?id=dfd02c3e41cfe8145490&mes=2026-11": "contexto_uam_cuajimalpa_educacion_superior_2017",
+}
+
 SENSITIVE_MEDIA_TITLE = re.compile(
     r"\b(?:violaci[oó]n|abuso sexual|agresi[oó]n sexual|acoso sexual|violencia sexual|"
     r"maltrato animal|maltratador(?:es)? de animales?|"
@@ -3740,6 +3751,9 @@ STRICT_PHOTO_TOPICS = (
 
 def _photo_score(article, photo):
     """Puntúa relación real con el título; nunca declara un hecho verificado."""
+    preferred_photo_id = EDITORIAL_PHOTO_ASSIGNMENTS.get(str(article.get("local_url") or ""))
+    if preferred_photo_id:
+        return 5000 if photo.get("id") == preferred_photo_id else -10000
     raw_headline=str(article.get("title") or "")
     headline=_photo_fold(raw_headline)
     headline_for_photos=re.sub(
@@ -4999,8 +5013,12 @@ def assign_photos(items):
             and str(photo.get("licenseUrl") or "").startswith(("https://", "http://"))
         )
 
-    # Un orden estable evita cambios arbitrarios entre actualizaciones del feed.
-    for article in items:
+    # Las asignaciones editoriales se procesan primero para reservar sus fotos.
+    ordered_items = sorted(
+        items,
+        key=lambda item: str(item.get("local_url") or "") not in EDITORIAL_PHOTO_ASSIGNMENTS,
+    )
+    for article in ordered_items:
         exact = verified_event_photo(article, verified_catalog)
         if exact:
             article["photo"] = exact
@@ -5014,6 +5032,14 @@ def assign_photos(items):
             article["sensitive_media"] = True
             article.pop("photo", None)
             continue
+
+        preferred_photo_id = EDITORIAL_PHOTO_ASSIGNMENTS.get(str(article.get("local_url") or ""))
+        if preferred_photo_id:
+            preferred = next((photo for photo in pool if photo.get("id") == preferred_photo_id), None)
+            if preferred:
+                article["photo"] = {**preferred, "kind": "representativa"}
+                reserved.add(preferred_photo_id)
+                continue
 
         existing = article.get("photo")
         # El catálogo es la fuente de verdad de la atribución y el contexto.
