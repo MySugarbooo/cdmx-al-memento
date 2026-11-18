@@ -758,7 +758,34 @@ class EditorialArchiveSyncTests(unittest.TestCase):
         self.assertIn("plantel Martín Carrera", utc["brief"]["lead"])
         self.assertIn(utc["source_url"], render(utc, "dfd02c3e41cfe8145490"))
 
-        self.assertEqual(by_url["/noticias/?id=b1fc9652296cefb7aa00&mes=2026-11"]["category"], "Cultura")
+        karol = by_url["/noticias/?id=b1fc9652296cefb7aa00&mes=2026-11"]
+        self.assertEqual(karol["category"], "Cultura")
+        self.assertEqual(
+            karol["source_url"],
+            "https://zonafranca.mx/tendencias/karol-g-cierra-su-gira-en-la-cdmx-con-paulina-rubio-como-invitada-sorpresa/",
+        )
+        self.assertIn("65 mil asistentes", karol["brief"]["lead"])
+        self.assertIn("Paulina Rubio", karol["brief"]["lead"])
+        karol_page = render(karol, "b1fc9652296cefb7aa00")
+        self.assertIn('href="' + karol["source_url"] + '"', karol_page)
+        self.assertIn("Imagen representativa", karol_page)
+        self.assertIn("no del show de Karol G", karol["brief"]["pending"])
+        self.assertNotIn("news.google.com/rss", karol_page)
+
+        repartidores = by_url["/noticias/?id=c90abc294def53836a1f&mes=2026-11"]
+        self.assertEqual(repartidores["category"], "Movilidad")
+        self.assertTrue(repartidores["editorial_verified"])
+        self.assertEqual(
+            repartidores["source_url"],
+            "https://mayacomunicacion.com.mx/gobierno-de-cdmx-abre-dialogo-con-motociclistas-repartidores-ante-retos-de-movilidad/",
+        )
+        self.assertIn("Héctor Ulises García Nieto", repartidores["brief"]["lead"])
+        self.assertIn("trabajadores independientes", repartidores["brief"]["lead"])
+        self.assertIn("reglamento aprobado", repartidores["brief"]["pending"])
+        repartidores_page = render(repartidores, "c90abc294def53836a1f")
+        self.assertIn('href="' + repartidores["source_url"] + '"', repartidores_page)
+        self.assertNotIn("Una noticia sobre seguridad", repartidores_page)
+        self.assertNotIn("news.google.com/rss", repartidores_page)
         self.assertEqual(by_url["/noticias/?id=0471025fde64a6b1dc68&mes=2026-11"]["category"], "Movilidad")
         self.assertIn("no documenta el ataque armado", by_url["/noticias/?id=d5fefc837e33dbb12140&mes=2026-11"]["photo"]["topic"])
 
