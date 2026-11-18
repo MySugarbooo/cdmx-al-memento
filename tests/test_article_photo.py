@@ -545,10 +545,15 @@ class EditorialArchiveSyncTests(unittest.TestCase):
             "https://commons.wikimedia.org/wiki/File:Carteros_en_motocicleta_del_Servicio_Postal_Mexicano,_2013.jpg",
         )
         feed = json.loads((root / "news.json").read_text(encoding="utf-8"))
+        apply_editorial_record_overrides(feed["articles"])
         articles = [
             item for item in feed["articles"]
             if item.get("photo", {}).get("id") == photo_id
         ]
+        maya_url = "/noticias/?id=c90abc294def53836a1f&mes=2026-11"
+        maya = next((item for item in feed["articles"] if item.get("local_url") == maya_url), None)
+        self.assertIsNotNone(maya, "La nota de Maya Comunicación debe conservar su registro en portada o archivo.")
+        self.assertEqual(maya["category"], "Movilidad")
         self.assertTrue(articles, "El feed debe conservar al menos una noticia que use la foto representativa")
         for article in articles:
             # El feed puede asociar esta foto a noticias distintas de la nota de
