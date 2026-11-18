@@ -3661,7 +3661,7 @@ def _photo_score(article, photo):
     # La primera infancia y la educación inicial requieren contexto de un CENDI;
     # no usar registros hidráulicos ni aulas de educación media como sustitutos.
     early_childhood_story = bool(re.search(
-        r"\\b(?:primera infancia|educacion inicial|centros? de desarrollo infantil|cendi|guarderias?|estancias? infantiles)\\b",
+        r"\b(?:primera infancia|educacion inicial|centros? de desarrollo infantil|cendi|guarderias?|estancias? infantiles)\b",
         headline,
     ))
     if early_childhood_story:
