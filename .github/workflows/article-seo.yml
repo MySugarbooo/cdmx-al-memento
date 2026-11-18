@@ -33,7 +33,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add articulos/ sitemap-articulos.xml robots.txt index.html archivo/index.html archivo/
+          git add articulos/ sitemap-articulos.xml robots.txt index.html archivo/index.html archivo/ news.json
           if ! git diff --cached --quiet; then
             git commit -m "Update crawlable article pages"
             # Another workflow may update main while pages are generated.
