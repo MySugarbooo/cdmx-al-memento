@@ -60,7 +60,8 @@ EDITORIAL_ARCHIVE_OVERRIDES = {
 }
 PHOTO_CREDIT_OVERRIDES = {
     "contexto_repartidores_motocicleta_cdmx": {
-        "author": "Palacio de Correos de Mexico"
+        "author": "Palacio de Correos de Mexico",
+        "topic": "Carteros en motocicleta del Servicio Postal Mexicano, Ciudad de México (2013); imagen representativa de reparto en motocicleta, no del hecho actual"
     }
 }
 VERIFIED_SOURCE_LINKS = {
