@@ -93,6 +93,7 @@ VERIFIED_SOURCE_URLS = frozenset({
     "https://www.infobae.com/mexico/2026/11/17/concierto-tributo-a-depeche-mode-en-la-cdmx-horario-fecha-y-sede-del-evento-gratuito/",
     "https://voxpopulinoticias.com.mx/2026/11/belinda-recuerda-su-infancia-tras-cantar-con-karol-g-en-cdmx/",
     "https://oem.com.mx/la-prensa/finanzas/cuatro-alcaldias-concentran-77-4-por-ciento-del-valor-economico-de-cdmx-33177847",
+    "https://oem.com.mx/la-prensa/metropoli/nancy-nunez-pide-casi-3-mil-millones-de-pesos-para-azcapotzalco-en-2027-33182113",
     "https://capital-cdmx.org/mas-de-1500-deportistas-participan-en-desfile-por-la-revolucion-mexicana-en-magdalena-contreras/",
 })
 SENSITIVE_MEDIA_TITLE = re.compile(
