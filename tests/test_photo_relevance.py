@@ -89,6 +89,38 @@ class PhotoRelevanceTests(unittest.TestCase):
         self.assertIn("archivo 2016", article["photo"]["topic"])
         self.assertIn("no evidencia del ranking", article["photo"]["topic"])
 
+    def test_aeromexico_montego_bay_route_rejects_pedestrians_and_uses_aicm_aircraft(self):
+        article = news.standardize({
+            "title": "Conectará Aeroméxico Ciudad de México con Montego Bay, Jamaica",
+            "url": "https://news.google.com/rss/articles/aeromexico-montego-bay-photo-test",
+            "source": "Aviación 21",
+            "date": "2026-11-18",
+            "published_at": "2026-11-18T07:00:45Z",
+            "category": "CDMX",
+        })
+        self.assertIsNotNone(article)
+        pool = photos._pool()
+        airport = next(p for p in pool if p.get("id") == "contexto_aicm_aviones_pista_2026")
+        pedestrians = next(p for p in pool if p.get("id") == "contexto_edis_poblacion_cdmx")
+        self.assertEqual(_photo_score(article, airport), 5000)
+        self.assertLess(_photo_score(article, pedestrians), 0)
+
+        article["photo"] = deepcopy(pedestrians)
+        with patch.object(photos, "_pool", return_value=[pedestrians, airport]), patch.object(
+            photos, "_load", return_value=[]
+        ):
+            photos.assign_photos([article])
+
+        self.assertEqual(article["photo"]["id"], "contexto_aicm_aviones_pista_2026")
+        self.assertEqual(article["photo"]["author"], "Oficial K")
+        self.assertEqual(article["photo"]["license"], "CC BY-SA 4.0")
+        self.assertEqual(
+            article["photo"]["source"],
+            "https://commons.wikimedia.org/wiki/File:Aviones_en_la_pista_del_AICM.jpg",
+        )
+        self.assertIn("no documenta una operación aérea específica", article["photo"]["topic"])
+        self.assertIn("no constituye evidencia gráfica", article["photo"]["context"])
+
     def test_rss_category_uses_obvious_headline_subject(self):
         self.assertEqual(category_by_headline(
             "Muévete en Bici este 1 de noviembre", "Seguridad"), "Movilidad")
