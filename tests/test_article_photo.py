@@ -599,6 +599,7 @@ class EditorialArchiveSyncTests(unittest.TestCase):
             "/noticias/?id=3225e4d7915c70c83136&mes=2026-11": "contexto_museo_historia_natural_2013",
             "/noticias/?id=3ba1e63aebcbe83062ef&mes=2026-11": "contexto_gallinero_chinampa_xochimilco",
             "/noticias/?id=b146b3d1dafcb65af69e&mes=2026-11": "contexto_grin_escooter_cdmx_2019",
+            "/noticias/?id=486d289d63499706dd71&mes=2026-11": "contexto_grin_escooter_cdmx_2019",
             "/noticias/?id=b5e636680f6dd0f0df25&mes=2026-11": "contexto_cineteca_nacional_2015",
             "/noticias/?id=3dc6cf266cdcd563bb01&mes=2026-11": "contexto_cineteca_nacional_2015",
         }
@@ -621,6 +622,7 @@ class EditorialArchiveSyncTests(unittest.TestCase):
             "/noticias/?id=3225e4d7915c70c83136&mes=2026-11": "https://www.infobae.com/mexico/2026/11/18/harry-potter-llega-al-museo-de-historia-natural-de-cdmx-para-la-ultima-noche-de-museos-de-2026/",
             "/noticias/?id=3ba1e63aebcbe83062ef&mes=2026-11": "https://www.ejecentral.com.mx/nuestro-eje/gallinas-gratis-en-cdmx-asi-funcionara-el-programa-de-brugada-para-producir-huevo-en-casa",
             "/noticias/?id=b146b3d1dafcb65af69e&mes=2026-11": "https://lopezdoriga.com/nacional/ya-debes-emplacar-tu-bici-electrica-o-scooter-cdmx-pospone-multas-y-anunciara-nueva-fecha/",
+            "/noticias/?id=486d289d63499706dd71&mes=2026-11": "https://889noticias.mx/noticias/semovi-cdmx-otorga-prorroga-indefinida-para-emplacamiento-de-vehiculos-electricos/",
             "/noticias/?id=b5e636680f6dd0f0df25&mes=2026-11": "https://www.infobae.com/mexico/2026/11/18/m-night-shyamalan-anuncia-visita-a-cdmx-para-proyectar-remain-su-nueva-pelicula/",
             "/noticias/?id=3dc6cf266cdcd563bb01&mes=2026-11": "https://elpais.com/mexico/2026-11-18/m-night-shyamalan-elige-ciudad-de-mexico-para-su-primera-proyeccion-de-nunca-olvides-que-te-quiero.html",
         }
@@ -633,6 +635,11 @@ class EditorialArchiveSyncTests(unittest.TestCase):
                 self.assertEqual(item["source_url"], source_url)
                 article_id = local_url.split("id=", 1)[1].split("&", 1)[0]
                 self.assertIn('href="' + source_url + '"', render(item, article_id))
+        scooter_889_url = "/noticias/?id=486d289d63499706dd71&mes=2026-11"
+        scooter_889 = by_url.get(scooter_889_url) or archive_by_url.get(scooter_889_url)
+        self.assertIsNotNone(scooter_889, "La nota de 88.9 Noticias debe estar en portada o hemeroteca.")
+        self.assertEqual(scooter_889["category"], "Movilidad")
+        self.assertIn("hasta nuevo aviso", scooter_889["description"])
         scooter_url = "/noticias/?id=b146b3d1dafcb65af69e&mes=2026-11"
         scooter = by_url.get(scooter_url) or archive_by_url.get(scooter_url)
         self.assertIsNotNone(scooter, "La nota sobre scooters debe estar en portada o hemeroteca.")
