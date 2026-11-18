@@ -597,6 +597,7 @@ class EditorialArchiveSyncTests(unittest.TestCase):
             "/noticias/?id=746166b9b292b1c7f60c&mes=2026-11": "contexto_santa_fe_cuajimalpa_denuncias",
             "/noticias/?id=451fbd723d5e452167e8&mes=2026-11": "contexto_embarazo_representativo_niaid",
             "/noticias/?id=3225e4d7915c70c83136&mes=2026-11": "contexto_museo_historia_natural_2013",
+            "/noticias/?id=3ba1e63aebcbe83062ef&mes=2026-11": "contexto_gallinero_chinampa_xochimilco",
             "/noticias/?id=b5e636680f6dd0f0df25&mes=2026-11": "contexto_cineteca_nacional_2015",
             "/noticias/?id=3dc6cf266cdcd563bb01&mes=2026-11": "contexto_cineteca_nacional_2015",
         }
@@ -617,6 +618,7 @@ class EditorialArchiveSyncTests(unittest.TestCase):
             "/noticias/?id=746166b9b292b1c7f60c&mes=2026-11": "https://www.jornada.com.mx/2026/11/18/capital/028n1cap",
             "/noticias/?id=451fbd723d5e452167e8&mes=2026-11": "https://oem.com.mx/la-prensa/metropoli/apoyo-a-embarazadas-en-cdmx-registrate-por-whatsapp-y-recibe-hasta-4-mil-800-pesos-33185861",
             "/noticias/?id=3225e4d7915c70c83136&mes=2026-11": "https://www.infobae.com/mexico/2026/11/18/harry-potter-llega-al-museo-de-historia-natural-de-cdmx-para-la-ultima-noche-de-museos-de-2026/",
+            "/noticias/?id=3ba1e63aebcbe83062ef&mes=2026-11": "https://www.ejecentral.com.mx/nuestro-eje/gallinas-gratis-en-cdmx-asi-funcionara-el-programa-de-brugada-para-producir-huevo-en-casa",
             "/noticias/?id=b5e636680f6dd0f0df25&mes=2026-11": "https://www.infobae.com/mexico/2026/11/18/m-night-shyamalan-anuncia-visita-a-cdmx-para-proyectar-remain-su-nueva-pelicula/",
             "/noticias/?id=3dc6cf266cdcd563bb01&mes=2026-11": "https://elpais.com/mexico/2026-11-18/m-night-shyamalan-elige-ciudad-de-mexico-para-su-primera-proyeccion-de-nunca-olvides-que-te-quiero.html",
         }
@@ -629,6 +631,14 @@ class EditorialArchiveSyncTests(unittest.TestCase):
                 self.assertEqual(item["source_url"], source_url)
                 article_id = local_url.split("id=", 1)[1].split("&", 1)[0]
                 self.assertIn('href="' + source_url + '"', render(item, article_id))
+        gallinas_url = "/noticias/?id=3ba1e63aebcbe83062ef&mes=2026-11"
+        gallinas = by_url.get(gallinas_url) or archive_by_url.get(gallinas_url)
+        self.assertIsNotNone(gallinas, "La nota de Gallinas en Casa debe estar en portada o hemeroteca.")
+        self.assertIn("Gallinas en Casa", gallinas["description"])
+        self.assertIn("fechas de registro", gallinas["brief"]["pending"])
+        self.assertNotIn("pension", gallinas["photo"]["topic"].lower())
+        self.assertIn("no documenta el programa", gallinas["photo"]["topic"].lower())
+
         pregnancy_url = "/noticias/?id=451fbd723d5e452167e8&mes=2026-11"
         pregnancy = by_url.get(pregnancy_url) or archive_by_url.get(pregnancy_url)
         self.assertEqual(pregnancy["source"], "La Prensa")
@@ -638,6 +648,12 @@ class EditorialArchiveSyncTests(unittest.TestCase):
         )
         catalog_ids = {photo["id"] for photo in catalog["photos"]}
         self.assertTrue(set(expected_photos.values()).issubset(catalog_ids))
+        gallinero_photo = next(
+            photo for photo in catalog["photos"]
+            if photo["id"] == "contexto_gallinero_chinampa_xochimilco"
+        )
+        self.assertEqual(gallinero_photo["author"], "Diego M.P.")
+        self.assertEqual(gallinero_photo["license"], "CC BY-SA 4.0")
 
 
 
