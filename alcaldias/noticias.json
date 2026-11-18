@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-18 01:22 UTC",
+  "updated": "2026-11-18 03:03 UTC",
   "boroughs": [
     {
       "name": "La Magdalena Contreras",
@@ -22,7 +22,6 @@
             "pending": "La cifra de participantes y la relación de disciplinas se atribuyen a la información de la alcaldía citada por Capital CDMX; la publicación no aporta un registro independiente de asistencia.",
             "method": "Síntesis editorial basada en la publicación original de Capital CDMX del 17 de noviembre de 2026, consultada directamente. La fotografía de archivo que acompaña la ficha es representativa y no documenta el desfile de 2026."
           },
-          "source_url": "https://capital-cdmx.org/mas-de-1500-deportistas-participan-en-desfile-por-la-revolucion-mexicana-en-magdalena-contreras/",
           "photo": {
             "id": "contexto_olimpiada_comunitaria_cdmx_2019",
             "kind": "representativa",
@@ -45,6 +44,7 @@
             "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
             "source": "https://commons.wikimedia.org/wiki/File:Olimpiada_Comunitaria_Ciudad_de_M%C3%A9xico_2019_03.jpg"
           },
+          "source_url": "https://capital-cdmx.org/mas-de-1500-deportistas-participan-en-desfile-por-la-revolucion-mexicana-en-magdalena-contreras/",
           "alternate_versions": [
             {
               "title": "Más de 1,500 deportistas participan en desfile por la Revolución Mexicana en Magdalena Contreras",
@@ -1374,20 +1374,61 @@
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           },
           "photo": {
-            "id": "commons_180480072",
+            "id": "contexto_gallinero_chinampa_xochimilco",
             "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Afluencia_%C3%81lvaro_Obreg%C3%B3n_MB_L%C3%ADnea_1_%282024%29.png/960px-Afluencia_%C3%81lvaro_Obreg%C3%B3n_MB_L%C3%ADnea_1_%282024%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "category": "Alcaldías",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Gallinero_hecho_a_mano_en_chinampa.jpg/960px-Gallinero_hecho_a_mano_en_chinampa.jpg",
+            "category": "Servicios",
             "borough": "",
-            "topic": "Afluencia Álvaro Obregón MB Línea 1 (2024)",
+            "topic": "Gallinero artesanal en una chinampa de Xochimilco (archivo 2018); no corresponde al programa de 2026.",
             "keywords": [
-              "Álvaro Obregón Ciudad de México"
+              "gallinas",
+              "gallinero",
+              "aves de corral",
+              "ponedoras",
+              "huevo",
+              "Xochimilco",
+              "chinampa"
             ],
-            "author": "Metrobús / Gobierno de la Ciudad de México",
-            "license": "CC BY 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Afluencia_%C3%81lvaro_Obreg%C3%B3n_MB_L%C3%ADnea_1_(2024).png"
-          }
+            "author": "Diego M.P.",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "source": "https://commons.wikimedia.org/wiki/File:Gallinero_hecho_a_mano_en_chinampa.jpg"
+          },
+          "alternate_versions": [
+            {
+              "title": "Clara Brugada defiende entrega de gallinas ponedoras en Álvaro Obregón ante críticas del PAN",
+              "description": "De acuerdo con Proceso, el titular publicado es: «Clara Brugada defiende entrega de gallinas ponedoras en Álvaro Obregón ante críticas del PAN». La información publicada por Proceso aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+              "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPRnhQMm9SbHhUN3NPVkVtRU10NzNESm9oOVowSkFqaVJJVG96eVBHa3V5X2pyanFtSFlTODlmWUFCZ1pta3pGQTNrUDRaMWx2MHhpampxdkxLR2pXVmU0OHN5R3ljT0xjZ0hlUFZyOVlLcEVMM3BmOUNxUXQxb25iS2JEbDhmYzBwWURncWFEZEZOdmk5MVhOZVZWeGxzTlJoXzlHQUN2VmUzWXJZSzJRV19XY0FKRkltV1UxU3hvOHJmajA5ME5ERnQ1SlNuSVdpMEFwMEM5V1l4aEdEMFE0Q0Z0S2pLVkdtQjJTaA?oc=5",
+              "source": "Proceso",
+              "date": "2026-11-17",
+              "published_at": "2026-11-17T22:53:54Z",
+              "category": "CDMX",
+              "borough": "Álvaro Obregón",
+              "location": "Álvaro Obregón (mencionada en el titular)",
+              "local_url": "/noticias/?id=e5b6aff4cbe1feaba0ed&mes=2026-11",
+              "brief": {
+                "lead": "De acuerdo con Proceso, el titular publicado es: «Clara Brugada defiende entrega de gallinas ponedoras en Álvaro Obregón ante críticas del PAN». La información publicada por Proceso aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+                "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+                "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+              },
+              "photo": {
+                "id": "commons_180480072",
+                "kind": "representativa",
+                "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Afluencia_%C3%81lvaro_Obreg%C3%B3n_MB_L%C3%ADnea_1_%282024%29.png/960px-Afluencia_%C3%81lvaro_Obreg%C3%B3n_MB_L%C3%ADnea_1_%282024%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+                "category": "Alcaldías",
+                "borough": "",
+                "topic": "Afluencia Álvaro Obregón MB Línea 1 (2024)",
+                "keywords": [
+                  "Álvaro Obregón Ciudad de México"
+                ],
+                "author": "Metrobús / Gobierno de la Ciudad de México",
+                "license": "CC BY 4.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+                "source": "https://commons.wikimedia.org/wiki/File:Afluencia_%C3%81lvaro_Obreg%C3%B3n_MB_L%C3%ADnea_1_(2024).png"
+              }
+            }
+          ]
         },
         {
           "title": "Ampliación Línea 12 del Metro CDMX: obras en Álvaro Obregón afectarían a skatepark con certificación internacional",
@@ -1759,19 +1800,25 @@
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           },
           "photo": {
-            "id": "commons_152180165",
+            "id": "contexto_gallinero_chinampa_xochimilco",
             "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Cosecha_de_Lluvia_05.jpg/960px-Cosecha_de_Lluvia_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "category": "Medio Ambiente",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Gallinero_hecho_a_mano_en_chinampa.jpg/960px-Gallinero_hecho_a_mano_en_chinampa.jpg",
+            "category": "Servicios",
             "borough": "",
-            "topic": "Cosecha de Lluvia 05",
+            "topic": "Gallinero artesanal en una chinampa de Xochimilco (archivo 2018); no corresponde al programa de 2026.",
             "keywords": [
-              "Lluvia Ciudad de México"
+              "gallinas",
+              "gallinero",
+              "aves de corral",
+              "ponedoras",
+              "huevo",
+              "Xochimilco",
+              "chinampa"
             ],
-            "author": "Gobierno de la Ciudad de México",
-            "license": "CC BY 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Cosecha_de_Lluvia_05.jpg"
+            "author": "Diego M.P.",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "source": "https://commons.wikimedia.org/wiki/File:Gallinero_hecho_a_mano_en_chinampa.jpg"
           }
         },
         {
@@ -3947,8 +3994,56 @@
     },
     {
       "name": "Benito Juárez",
-      "count": 86,
+      "count": 88,
       "articles": [
+        {
+          "title": "Luis Mendoza pide 850 millones anuales para rehabilitar calles y drenaje en Benito Juárez",
+          "description": "De acuerdo con Capital CDMX, el titular publicado es: «Luis Mendoza pide 850 millones anuales para rehabilitar calles y drenaje en Benito Juárez». La información publicada por Capital CDMX aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOSUdOUFJXaUJnY3F5NTByV3o3czJkaXplUkpBS3AxRWpwMGNTX19naU55Y29xeVc4dUpqZGczUEVsb1hmQkl2aG1NSkdVZFdxWHNqczIyZ2lZWmRFZng4UkNyc3l1NjhDa2xQZDM2Y21FN2lPcXdvaDF2bEZSeVZlZzktbmFnRExvNkljd1dYRTFGSkx6eDRWTWNsRVpNRjNZb3d2TTlTVzhZRW5ZNmlNck02WFBMUQ?oc=5",
+          "source": "Capital CDMX",
+          "date": "2026-11-17",
+          "published_at": "2026-11-18T02:18:41Z",
+          "category": "CDMX",
+          "borough": "Benito Juárez",
+          "location": "Benito Juárez (mencionada en el titular)",
+          "local_url": "/noticias/?id=39c3b9e4a8462458389d&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con Capital CDMX, el titular publicado es: «Luis Mendoza pide 850 millones anuales para rehabilitar calles y drenaje en Benito Juárez». La información publicada por Capital CDMX aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_benito-juarez",
+            "kind": "representativa",
+            "url": "/assets/alcaldias/benito-juarez.jpg",
+            "category": "CDMX",
+            "borough": "Benito Juárez",
+            "topic": "Parque Hundido, alcaldía Benito Juárez",
+            "author": "User:etnoboris",
+            "license": "CC BY-SA 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Parque_Hundido.jpeg"
+          }
+        },
+        {
+          "title": "Se forma socavón en la alcaldía Benito Juárez; camión de carga queda atrapado",
+          "description": "De acuerdo con 24-horas, el titular publicado es: «Se forma socavón en la alcaldía Benito Juárez; camión de carga queda atrapado». La información publicada por 24-horas aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQN19iVHZ0Q3hEUXJxWThNSTFaWUhTMlczRUtBcXVhUlFSbU5LbE1VOXFzdWhySEZmN09IMC1YbVgzNVBXeWk2aHZvaFB6OEhDVk12eWRMUmczZWlUWC1nRWFNSTBwNk9tWHREeGdRbW16NWdaSjFDNHIzang1Q1k4ZUREbHc5ZkwzSk0zVHlTS3RjRW1zMHJuNG9pTWlUZmlIeFFDNw?oc=5",
+          "source": "24-horas",
+          "date": "2026-11-17",
+          "published_at": "2026-11-18T01:44:22Z",
+          "category": "CDMX",
+          "borough": "Benito Juárez",
+          "location": "Benito Juárez (mencionada en el titular)",
+          "local_url": "/noticias/?id=af94d4b1c514172d9912&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con 24-horas, el titular publicado es: «Se forma socavón en la alcaldía Benito Juárez; camión de carga queda atrapado». La información publicada por 24-horas aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          }
+        },
         {
           "title": "Enterate || Identifican a “Lord Pistolas” y revelan presuntos vínculos con la alcaldía Benito Juárez",
           "description": "De acuerdo con Grupo Marmor, el titular publicado es: «Enterate || Identifican a “Lord Pistolas” y revelan presuntos vínculos con la alcaldía Benito Juárez». La información publicada por Grupo Marmor aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -4718,49 +4813,142 @@
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           }
-        },
-        {
-          "title": "Panteón de Xoco recibe a más de 80 mil visitantes durante las celebraciones de Día de Muertos en Benito Juárez",
-          "description": "De acuerdo con Hoja de Ruta Digital, el titular publicado es: «Panteón de Xoco recibe a más de 80 mil visitantes durante las celebraciones de Día de Muertos en Benito Juárez». La información publicada por Hoja de Ruta Digital aborda un asunto que este portal clasifica como Cultura. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQZHlZRzE3Nmo0NVNGWG53TkRoYkxqOUpKSUllOEYzczl0SFRRaTdSb2dwZjdsX3I1Y3M4TDZtM3h5OWY1S000YVFmTmszNUdZdEJNMVVoQ3RSZEU1Ny1mQWN1TTFLOU13MWtBUS1oeFkxNEVabnhWRjdFSFpOeDFUODZuSGdaU1RHU1A2MGRoVnhlRENPVEEyeDRpSUR2VVczbDV1czM0SHEwdjJ5VWI4ZWNEM3JSV2pZZGJxZXQySnlELVdUU2pjNmd1R19wX3hEQk1SN3VfZw?oc=5",
-          "source": "Hoja de Ruta Digital",
-          "date": "2026-11-04",
-          "published_at": "2026-11-04T08:36:02Z",
-          "category": "Cultura",
-          "borough": "Benito Juárez",
-          "location": "Benito Juárez (mencionada en el titular)",
-          "local_url": "/noticias/?id=4690e3909e4a0693f623&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con Hoja de Ruta Digital, el titular publicado es: «Panteón de Xoco recibe a más de 80 mil visitantes durante las celebraciones de Día de Muertos en Benito Juárez». La información publicada por Hoja de Ruta Digital aborda un asunto que este portal clasifica como Cultura. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "La actividad cultural abre oportunidades de encuentro, aprendizaje y disfrute para habitantes y visitantes.",
-            "pending": "Los accesos, boletos, sedes, cupos y horarios deben consultarse con la institución organizadora. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
-        },
-        {
-          "title": "Clima en Benito Juárez: miércoles 4 de noviembre con 20°C y nubes, un día templado",
-          "description": "De acuerdo con El Heraldo de México, el titular publicado es: «Clima en Benito Juárez: miércoles 4 de noviembre con 20°C y nubes, un día templado». El pronóstico recogido por El Heraldo de México se refiere a condiciones meteorológicas en Benito Juárez. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
-          "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNd2VlcVRXOWVnRFY0ZTd6RlA5S1NQdkUtcGpkSHhTZm1OUHRiNUpjZ0c4RUVPMVhOaFliSXluSjNuVWRCOGpkTzFyY21tSGxRTWpXUmRNcEU0dG1EemZUUjRpVThPOFdQSTg1bno4ekFWeTJFSUY0dTVCcVB5V3IwdmJRQjlEWkpHOV83SXJYTFFqM01CdTFKb3loZmdpRk13RWM5Y3p4azVVZUFoNWszbVhUMFJuYWVRN19DbEhGd1Z5OUNzVURjLU56WVZ4VUlKV0xF?oc=5",
-          "source": "El Heraldo de México",
-          "date": "2026-11-03",
-          "published_at": "2026-11-04T05:00:00Z",
-          "category": "CDMX",
-          "borough": "Benito Juárez",
-          "location": "Benito Juárez (mencionada en el titular)",
-          "local_url": "/noticias/?id=e88c60f0dac566e48e10&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con El Heraldo de México, el titular publicado es: «Clima en Benito Juárez: miércoles 4 de noviembre con 20°C y nubes, un día templado». El pronóstico recogido por El Heraldo de México se refiere a condiciones meteorológicas en Benito Juárez. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
         }
       ]
     },
     {
       "name": "Coyoacán",
-      "count": 208,
+      "count": 212,
       "articles": [
+        {
+          "title": "Coyoacán solicita aumento presupuestal de 7.3% para 2027",
+          "description": "De acuerdo con Sociedad Noticias, el titular publicado es: «Coyoacán solicita aumento presupuestal de 7.3% para 2027». La información publicada por Sociedad Noticias aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOUExMQWZnQVVHTDVvc0FGdlJmRTRxN1B0UjZBck1xUld4N0pram84Q2JsRXMyTWtDbVA5Y2tZZjNnd0RvUVduT0tiaE9Yc1UxUHl2dkNIUUFyOXhqaDNRZjdTRXAwcXpVRHlxcHpIQXFuNHp5X2hBWFVDLUREMXNpMm9jOTJGRDlJTmFCNkV0VC15SFlUQ01HUFdHc2ZFdw?oc=5",
+          "source": "Sociedad Noticias",
+          "date": "2026-11-17",
+          "published_at": "2026-11-18T02:34:24Z",
+          "category": "CDMX",
+          "borough": "Coyoacán",
+          "location": "Coyoacán (mencionada en el titular)",
+          "local_url": "/noticias/?id=bd303a9b6685a146fd1a&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con Sociedad Noticias, el titular publicado es: «Coyoacán solicita aumento presupuestal de 7.3% para 2027». La información publicada por Sociedad Noticias aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_coyoacan",
+            "kind": "representativa",
+            "url": "/assets/alcaldias/coyoacan.jpg",
+            "category": "CDMX",
+            "borough": "Coyoacán",
+            "topic": "Jardín Centenario de Coyoacán",
+            "author": "AlejandroLinaresGarcia",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:JardinCentenarioCoyoacan.JPG"
+          }
+        },
+        {
+          "title": "Alcalde de Coyoacán pide 7% más de presupuesto para 2027",
+          "description": "De acuerdo con El Universal, el titular publicado es: «Alcalde de Coyoacán pide 7% más de presupuesto para 2027». La información publicada por El Universal aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOdmN6T1Q2MDNNYVYzRGVHeEUyMkxYVkhqQUsxLXhoMUtxbnFsQXdUSm9oQURQRTNON2dLT1lTQkRrMVBDM0hwcVR1WXJUc2oyMGN2RmljMkxVLUZYZGdzQTVIXzFrdE9xbmlwaWpZcGVRanN3V3AwUlZsMTAxMTl2M3dBcDluYVVTVTZtNVNjYUpsVWxVVWdwZnZpTTlhVFc4Y3k3bDJqT0FQMDFpaVFySERNeFlrUXVCMVBteW0tOEpheHBycnpjT0FnWWF2MFJPYVpnTjJraHJ2Z9IB7gFBVV95cUxQaUpzTTFpM1BHWDZRUTFaMDdZRzlCaVFMYmpvOGlRVTZVcTVHRWltSlBESjVVbUkwVmhHSmlQNnZ3dkJCRmV6dDFIeXhzYzBrUGFlYnZ6TnRxOXkyQTNJZ0FHdEtNSk5QT2Q3bk9tYWd3WElFTFo5cU9jMGZvOF9iY09vdEpRbGl2Rmdpd1VTWUhJdGY1V3Rlbm1UR2dTQ09IZXo1SGo2VXpWeE9sTkluMFEtcTM2UWJrMUtIX0s2QlR6bmdXZnF3cEVvdVlCY0NNVVJuaVRjOTlYX1pIcTRjTDU2NnNNVDEybzFIMjFR?oc=5",
+          "source": "El Universal",
+          "date": "2026-11-17",
+          "published_at": "2026-11-18T02:19:14Z",
+          "category": "CDMX",
+          "borough": "Coyoacán",
+          "location": "Coyoacán (mencionada en el titular)",
+          "local_url": "/noticias/?id=c05e5caa84e22399877e&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con El Universal, el titular publicado es: «Alcalde de Coyoacán pide 7% más de presupuesto para 2027». La información publicada por El Universal aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "commons_106559901",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/1._Coyoac%C3%A1n_Ciudad_de_M%C3%A9xico.jpg/960px-1._Coyoac%C3%A1n_Ciudad_de_M%C3%A9xico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "category": "CDMX",
+            "borough": "",
+            "topic": "1. Coyoacán Ciudad de México",
+            "keywords": [
+              "CDMX"
+            ],
+            "author": "Machristen",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:1._Coyoac%C3%A1n_Ciudad_de_M%C3%A9xico.jpg"
+          }
+        },
+        {
+          "title": "Coyoacán solicita presupuesto de 4 mil 35 millones de pesos para 2027; reporta avance del gasto de 82.5%",
+          "description": "De acuerdo con Capital CDMX, el titular publicado es: «Coyoacán solicita presupuesto de 4 mil 35 millones de pesos para 2027; reporta avance del gasto de 82.5%». La información publicada por Capital CDMX aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQZW1CX3FQMjlCZlI0c09LX3dIYWhtaW55QkxxcmRJZE5KX3l3ckJYQWlKeWp0dUJ2M0F6Zl9sY29tVjE2WWRGZjhiTG8yMEp2SHZKckMtOEtFTG5xd09VQzBTTGpwWWNjX3JuREJZano1Ym1zR0hUVWhybEIwMTk3N0FNYk5VbTJzWHpDTUNuVFFFbEplbVlIekVrVXJQazZ5SW44a3BwVDlQb1BBNWp6MExqOFpZcnFFX00zMmNUTUdZY0E0OFM0?oc=5",
+          "source": "Capital CDMX",
+          "date": "2026-11-17",
+          "published_at": "2026-11-18T02:08:41Z",
+          "category": "CDMX",
+          "borough": "Coyoacán",
+          "location": "Coyoacán (mencionada en el titular)",
+          "local_url": "/noticias/?id=b85ab3a26185d58bd52a&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con Capital CDMX, el titular publicado es: «Coyoacán solicita presupuesto de 4 mil 35 millones de pesos para 2027; reporta avance del gasto de 82.5%». La información publicada por Capital CDMX aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "commons_80020584",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Iglesia_de_San_Juan_Bautista_en_Coyoac%C3%A1n_Ciudad_de_M%C3%A9xico.jpg/960px-Iglesia_de_San_Juan_Bautista_en_Coyoac%C3%A1n_Ciudad_de_M%C3%A9xico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "category": "CDMX",
+            "borough": "",
+            "topic": "Iglesia de San Juan Bautista en Coyoacán Ciudad de México",
+            "keywords": [
+              "CDMX"
+            ],
+            "author": "Juan Carlos Fonseca Mata",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Iglesia_de_San_Juan_Bautista_en_Coyoac%C3%A1n_Ciudad_de_M%C3%A9xico.jpg"
+          }
+        },
+        {
+          "title": "Coyoacán sin subejercicios, con gasto eficiente y crecimiento en inversión: Giovani Gutiérrez",
+          "description": "De acuerdo con CDMX Magacín, el titular publicado es: «Coyoacán sin subejercicios, con gasto eficiente y crecimiento en inversión: Giovani Gutiérrez». La información publicada por CDMX Magacín aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPTnFMVlZhQWtraTk4VVlaWVRWNjVFb1pZZzQ3YlhLSVRPZkpPYkRhRHdUby13WDlPV0lweEwtcWZ0N1p4ZXF6V1FFbEUxRW1aOWM1ampnbE1LMlZqT09uYXN3M21oSjZaVnFXRHlnUlYtNmJic0dEQ1U1RkpWMThzVGtuWHFnNEx2a1hmb2NHUjRGYURuaUVhSk91RElIQWdDbUdLaC1aUUpsclgzOHg4?oc=5",
+          "source": "CDMX Magacín",
+          "date": "2026-11-17",
+          "published_at": "2026-11-18T01:43:33Z",
+          "category": "CDMX",
+          "borough": "Coyoacán",
+          "location": "Coyoacán (mencionada en el titular)",
+          "local_url": "/noticias/?id=53257365b002bb23108e&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con CDMX Magacín, el titular publicado es: «Coyoacán sin subejercicios, con gasto eficiente y crecimiento en inversión: Giovani Gutiérrez». La información publicada por CDMX Magacín aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "commons_106559902",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/4._Coyoac%C3%A1n_banca_Ciudad_de_M%C3%A9xico.jpg/960px-4._Coyoac%C3%A1n_banca_Ciudad_de_M%C3%A9xico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "category": "CDMX",
+            "borough": "",
+            "topic": "4. Coyoacán banca Ciudad de México",
+            "keywords": [
+              "CDMX"
+            ],
+            "author": "Machristen",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:4._Coyoac%C3%A1n_banca_Ciudad_de_M%C3%A9xico.jpg"
+          }
+        },
         {
           "title": "Video: Momento Exacto en que Hombre Incendia Motocicletas en Coyoacán, CDMX",
           "description": "N+ informó el 17 de noviembre de 2026 que cámaras de videovigilancia captaron a un hombre prendiendo fuego a motocicletas estacionadas en la colonia Pedregal de Santo Domingo, alcaldía Coyoacán. El fuego alcanzó una segunda motocicleta y dañó una camioneta cercana.",
@@ -4772,33 +4960,6 @@
           "borough": "Coyoacán",
           "location": "Colonia Pedregal de Santo Domingo, calle Aztahuacan, alcaldía Coyoacán, Ciudad de México",
           "local_url": "/noticias/?id=e08a61cf2ae40f248193&mes=2026-11",
-          "brief": {
-            "lead": "N+ informó el 17 de noviembre de 2026 que cámaras de videovigilancia captaron a un hombre prendiendo fuego a motocicletas estacionadas en la colonia Pedregal de Santo Domingo, alcaldía Coyoacán. El fuego alcanzó una segunda motocicleta y dañó una camioneta cercana.",
-            "context": "La nota ubica los hechos en la calle Aztahuacan. Señala que acudieron Bomberos, ERUM y policías capitalinos; el Heroico Cuerpo de Bomberos reportó dos motocicletas quemadas en su totalidad y daños al motor de un vehículo particular.",
-            "pending": "N+ informó que no hubo personas lesionadas. El líquido que el hombre roció se describe como presunta gasolina; la publicación no confirma su composición ni reporta detenciones.",
-            "method": "Síntesis editorial propia basada en N+, 17 de noviembre de 2026: https://www.nmas.com.mx/ciudad-de-mexico/seguridad/video-momento-exacto-en-que-hombre-incendia-motocicletas-en-coyoacan-cdmx/. La imagen asignada es una fotografía de archivo de una motocicleta de apoyo de una brigada voluntaria en el Zócalo (2017); no documenta el incendio de Coyoacán."
-          },
-          "photo": {
-            "id": "contexto_motocicleta_zocalo_brigada_2017",
-            "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Ayuda_tras_el_Terremoto_de_Puebla_de_2017_-_Ciudad_de_M%C3%A9xico_-_3.jpg/960px-Ayuda_tras_el_Terremoto_de_Puebla_de_2017_-_Ciudad_de_M%C3%A9xico_-_3.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
-            "category": "CDMX",
-            "borough": "",
-            "topic": "Motocicleta de apoyo de una brigada voluntaria en el Zócalo de CDMX tras el sismo de 2017; foto de archivo.",
-            "keywords": [
-              "motocicleta",
-              "moto",
-              "Zócalo",
-              "brigada voluntaria",
-              "sismo 2017",
-              "Ciudad de México"
-            ],
-            "author": "ProtoplasmaKid",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-            "source": "https://commons.wikimedia.org/wiki/File:Ayuda_tras_el_Terremoto_de_Puebla_de_2017_-_Ciudad_de_M%C3%A9xico_-_3.jpg"
-          },
-          "source_url": "https://www.nmas.com.mx/ciudad-de-mexico/seguridad/video-momento-exacto-en-que-hombre-incendia-motocicletas-en-coyoacan-cdmx/",
           "alternate_versions": [
             {
               "title": "Video: Momento Exacto en que Hombre Incendia Motocicletas en Coyoacán, CDMX",
@@ -4873,7 +5034,34 @@
                 "source": "https://commons.wikimedia.org/wiki/File:Ayuda_tras_el_Terremoto_de_Puebla_de_2017_-_Ciudad_de_M%C3%A9xico_-_3.jpg"
               }
             }
-          ]
+          ],
+          "brief": {
+            "lead": "N+ informó el 17 de noviembre de 2026 que cámaras de videovigilancia captaron a un hombre prendiendo fuego a motocicletas estacionadas en la colonia Pedregal de Santo Domingo, alcaldía Coyoacán. El fuego alcanzó una segunda motocicleta y dañó una camioneta cercana.",
+            "context": "La nota ubica los hechos en la calle Aztahuacan. Señala que acudieron Bomberos, ERUM y policías capitalinos; el Heroico Cuerpo de Bomberos reportó dos motocicletas quemadas en su totalidad y daños al motor de un vehículo particular.",
+            "pending": "N+ informó que no hubo personas lesionadas. El líquido que el hombre roció se describe como presunta gasolina; la publicación no confirma su composición ni reporta detenciones.",
+            "method": "Síntesis editorial propia basada en N+, 17 de noviembre de 2026: https://www.nmas.com.mx/ciudad-de-mexico/seguridad/video-momento-exacto-en-que-hombre-incendia-motocicletas-en-coyoacan-cdmx/. La imagen asignada es una fotografía de archivo de una motocicleta de apoyo de una brigada voluntaria en el Zócalo (2017); no documenta el incendio de Coyoacán."
+          },
+          "photo": {
+            "id": "contexto_motocicleta_zocalo_brigada_2017",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Ayuda_tras_el_Terremoto_de_Puebla_de_2017_-_Ciudad_de_M%C3%A9xico_-_3.jpg/960px-Ayuda_tras_el_Terremoto_de_Puebla_de_2017_-_Ciudad_de_M%C3%A9xico_-_3.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+            "category": "CDMX",
+            "borough": "",
+            "topic": "Motocicleta de apoyo de una brigada voluntaria en el Zócalo de CDMX tras el sismo de 2017; foto de archivo.",
+            "keywords": [
+              "motocicleta",
+              "moto",
+              "Zócalo",
+              "brigada voluntaria",
+              "sismo 2017",
+              "Ciudad de México"
+            ],
+            "author": "ProtoplasmaKid",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "source": "https://commons.wikimedia.org/wiki/File:Ayuda_tras_el_Terremoto_de_Puebla_de_2017_-_Ciudad_de_M%C3%A9xico_-_3.jpg"
+          },
+          "source_url": "https://www.nmas.com.mx/ciudad-de-mexico/seguridad/video-momento-exacto-en-que-hombre-incendia-motocicletas-en-coyoacan-cdmx/"
         },
         {
           "title": "Fiscalía continúa investigación por joven arrollada por pipa en Coyoacán",
@@ -5802,216 +5990,46 @@
             "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           }
-        },
-        {
-          "title": "Fuga de Gas Natural Provoca Evacuación de 40 Personas en Coyoacán, CDMX",
-          "description": "De acuerdo con N+, el titular publicado es: «Fuga de Gas Natural Provoca Evacuación de 40 Personas en Coyoacán, CDMX». La información publicada por N+ aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOQTJqSDhYZmw3cDhua1BUeVZIbkFvN1lEUW13VjRTVktNRWpnbThQQXBoUXZJVkVJeHZ2Y0o1UGdsbjYxSDlmbHMxT2xoaWQtWllNSlVmQTQ0U2VRY2lzNFhqX3VfWjByZ2oyc0RwSkU4cVFDQUc0dW8xcUtoT0NmSEljLWtwX0dNYWh6eHZKS01DT3ZRMlc1UnhSQ0VPUGYtM04wek52UGtJeF9aUmlBZUxLeWlGRVlyRTZiX1ozY1d6ZUljQmhKX0E5R2hkU3d1RXpmd1VMVkNuX2FCbUJFUw?oc=5",
-          "source": "N+",
-          "date": "2026-11-14",
-          "published_at": "2026-11-14T19:21:19Z",
-          "category": "Seguridad",
-          "borough": "Coyoacán",
-          "location": "Coyoacán (mencionada en el titular)",
-          "local_url": "/noticias/?id=e6116852194d74771047&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con N+, el titular publicado es: «Fuga de Gas Natural Provoca Evacuación de 40 Personas en Coyoacán, CDMX». La información publicada por N+ aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
-            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
-        },
-        {
-          "title": "Desalojan a 40 Personas por Fuga de Gas Natural en Los Reyes, Coyoacán",
-          "description": "De acuerdo con N+, el titular publicado es: «Desalojan a 40 Personas por Fuga de Gas Natural en Los Reyes, Coyoacán». La información publicada por N+ aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxORER2X2xyN0g1bm1WdE9BOGdKcXllYkl2V1JwdmJ4bHExejVYM19xODdQX2g1TXI5d3ZBMEhZQzZyNEZTcnJwcDJHbWN3ZXgzRWlzZDBCZERISjJqT1lzWmNSZnF2dTU2VTZjcnhfZjhrWHhFb3otbGVlSnYtVklMdXVVbC1DdHZpOFgwOXJqNkhIdXdkZFpMTnowRDVZZHdwSVVaei0waTJjcDItaWpxMjZpTHJ5dmlJdnA4ZElOODByM2JZdHdpb0lUQmJUME1IZ3pWdkxUQ0RUbkJY?oc=5",
-          "source": "N+",
-          "date": "2026-11-14",
-          "published_at": "2026-11-14T18:42:37Z",
-          "category": "Seguridad",
-          "borough": "Coyoacán",
-          "location": "Coyoacán (mencionada en el titular)",
-          "local_url": "/noticias/?id=048a555d82b8e5e64fad&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con N+, el titular publicado es: «Desalojan a 40 Personas por Fuga de Gas Natural en Los Reyes, Coyoacán». La información publicada por N+ aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
-            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
-        },
-        {
-          "title": "Jóvenes universitarios de Coyoacán suman su respaldo a Hannah De Lamadrid rumbo al 2027",
-          "description": "De acuerdo con El Sol de México, el titular publicado es: «Jóvenes universitarios de Coyoacán suman su respaldo a Hannah De Lamadrid rumbo al 2027». La información publicada por El Sol de México aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOOGFMNDBJc1pBUUdEYlJuMVFwOVZSdHh5aDJkd3ljYUhqQnZONTNVV2t0VnE4WlRobDcyeDlCSWZ0NkNqdUxjZDhSUlpqWmpaVFlMWm5wZ01hMU55d2Mxb0I1R3hnYXBYUXRzaDZOVG90a19VOUcweTZVTzVhbHRTOVh5UERPRGFid215NzR4ZzVsQXcwc2t2cTRKdU0wSmhIT0oyTy11REtBQWJKM0tPRWxUMzkxaVJHOUFkRWV6a251SzN1U2V2c0xUWmRmdUZn?oc=5",
-          "source": "El Sol de México",
-          "date": "2026-11-13",
-          "published_at": "2026-11-14T05:13:05Z",
-          "category": "CDMX",
-          "borough": "Coyoacán",
-          "location": "Coyoacán (mencionada en el titular)",
-          "local_url": "/noticias/?id=37e82c0c5bd2170668f0&mes=2026-11",
-          "alternate_versions": [
-            {
-              "title": "Jóvenes universitarios de Coyoacán suman su respaldo a Hannah De Lamadrid rumbo al 2027",
-              "description": "De acuerdo con El Sol de México, el titular publicado es: «Jóvenes universitarios de Coyoacán suman su respaldo a Hannah De Lamadrid rumbo al 2027». La información publicada por El Sol de México aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-              "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOOGFMNDBJc1pBUUdEYlJuMVFwOVZSdHh5aDJkd3ljYUhqQnZONTNVV2t0VnE4WlRobDcyeDlCSWZ0NkNqdUxjZDhSUlpqWmpaVFlMWm5wZ01hMU55d2Mxb0I1R3hnYXBYUXRzaDZOVG90a19VOUcweTZVTzVhbHRTOVh5UERPRGFid215NzR4ZzVsQXcwc2t2cTRKdU0wSmhIT0oyTy11REtBQWJKM0tPRWxUMzkxaVJHOUFkRWV6a251SzN1U2V2c0xUWmRmdUZn?oc=5",
-              "source": "El Sol de México",
-              "date": "2026-11-13",
-              "published_at": "2026-11-13T23:03:45Z",
-              "category": "CDMX",
-              "borough": "Coyoacán",
-              "location": "Coyoacán (mencionada en el titular)",
-              "local_url": "/noticias/?id=37e82c0c5bd2170668f0&mes=2026-11",
-              "brief": {
-                "lead": "De acuerdo con El Sol de México, el titular publicado es: «Jóvenes universitarios de Coyoacán suman su respaldo a Hannah De Lamadrid rumbo al 2027». La información publicada por El Sol de México aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-                "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-                "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-              },
-              "photo": {
-                "id": "commons_106559901",
-                "kind": "representativa",
-                "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/1._Coyoac%C3%A1n_Ciudad_de_M%C3%A9xico.jpg/960px-1._Coyoac%C3%A1n_Ciudad_de_M%C3%A9xico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-                "category": "CDMX",
-                "borough": "",
-                "topic": "1. Coyoacán Ciudad de México",
-                "keywords": [
-                  "CDMX"
-                ],
-                "author": "Machristen",
-                "license": "CC BY-SA 4.0",
-                "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-                "source": "https://commons.wikimedia.org/wiki/File:1._Coyoac%C3%A1n_Ciudad_de_M%C3%A9xico.jpg"
-              }
-            },
-            {
-              "title": "Jóvenes universitarios de Coyoacán suman su respaldo a Hannah De Lamadrid rumbo al 2027",
-              "description": "De acuerdo con El Sol de México, el titular publicado es: «Jóvenes universitarios de Coyoacán suman su respaldo a Hannah De Lamadrid rumbo al 2027». La información publicada por El Sol de México aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-              "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOOGFMNDBJc1pBUUdEYlJuMVFwOVZSdHh5aDJkd3ljYUhqQnZONTNVV2t0VnE4WlRobDcyeDlCSWZ0NkNqdUxjZDhSUlpqWmpaVFlMWm5wZ01hMU55d2Mxb0I1R3hnYXBYUXRzaDZOVG90a19VOUcweTZVTzVhbHRTOVh5UERPRGFid215NzR4ZzVsQXcwc2t2cTRKdU0wSmhIT0oyTy11REtBQWJKM0tPRWxUMzkxaVJHOUFkRWV6a251SzN1U2V2c0xUWmRmdUZn?oc=5",
-              "source": "El Sol de México",
-              "date": "2026-11-13",
-              "published_at": "2026-11-14T00:15:05Z",
-              "category": "CDMX",
-              "borough": "Coyoacán",
-              "location": "Coyoacán (mencionada en el titular)",
-              "local_url": "/noticias/?id=37e82c0c5bd2170668f0&mes=2026-11",
-              "brief": {
-                "lead": "De acuerdo con El Sol de México, el titular publicado es: «Jóvenes universitarios de Coyoacán suman su respaldo a Hannah De Lamadrid rumbo al 2027». La información publicada por El Sol de México aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-                "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-                "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-              },
-              "photo": {
-                "id": "commons_106559901",
-                "kind": "representativa",
-                "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/1._Coyoac%C3%A1n_Ciudad_de_M%C3%A9xico.jpg/960px-1._Coyoac%C3%A1n_Ciudad_de_M%C3%A9xico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-                "category": "CDMX",
-                "borough": "",
-                "topic": "1. Coyoacán Ciudad de México",
-                "keywords": [
-                  "CDMX"
-                ],
-                "author": "Machristen",
-                "license": "CC BY-SA 4.0",
-                "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-                "source": "https://commons.wikimedia.org/wiki/File:1._Coyoac%C3%A1n_Ciudad_de_M%C3%A9xico.jpg"
-              }
-            },
-            {
-              "title": "Jóvenes universitarios de Coyoacán suman su respaldo a Hannah De Lamadrid rumbo al 2027",
-              "description": "De acuerdo con El Sol de México, el titular publicado es: «Jóvenes universitarios de Coyoacán suman su respaldo a Hannah De Lamadrid rumbo al 2027». La información publicada por El Sol de México aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-              "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOOGFMNDBJc1pBUUdEYlJuMVFwOVZSdHh5aDJkd3ljYUhqQnZONTNVV2t0VnE4WlRobDcyeDlCSWZ0NkNqdUxjZDhSUlpqWmpaVFlMWm5wZ01hMU55d2Mxb0I1R3hnYXBYUXRzaDZOVG90a19VOUcweTZVTzVhbHRTOVh5UERPRGFid215NzR4ZzVsQXcwc2t2cTRKdU0wSmhIT0oyTy11REtBQWJKM0tPRWxUMzkxaVJHOUFkRWV6a251SzN1U2V2c0xUWmRmdUZn?oc=5",
-              "source": "El Sol de México",
-              "date": "2026-11-13",
-              "published_at": "2026-11-14T05:03:45Z",
-              "category": "CDMX",
-              "borough": "Coyoacán",
-              "location": "Coyoacán (mencionada en el titular)",
-              "local_url": "/noticias/?id=37e82c0c5bd2170668f0&mes=2026-11",
-              "brief": {
-                "lead": "De acuerdo con El Sol de México, el titular publicado es: «Jóvenes universitarios de Coyoacán suman su respaldo a Hannah De Lamadrid rumbo al 2027». La información publicada por El Sol de México aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-                "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-                "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-              },
-              "photo": {
-                "id": "commons_106559901",
-                "kind": "representativa",
-                "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/1._Coyoac%C3%A1n_Ciudad_de_M%C3%A9xico.jpg/960px-1._Coyoac%C3%A1n_Ciudad_de_M%C3%A9xico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-                "category": "CDMX",
-                "borough": "",
-                "topic": "1. Coyoacán Ciudad de México",
-                "keywords": [
-                  "CDMX"
-                ],
-                "author": "Machristen",
-                "license": "CC BY-SA 4.0",
-                "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-                "source": "https://commons.wikimedia.org/wiki/File:1._Coyoac%C3%A1n_Ciudad_de_M%C3%A9xico.jpg"
-              }
-            }
-          ],
-          "brief": {
-            "lead": "De acuerdo con El Sol de México, el titular publicado es: «Jóvenes universitarios de Coyoacán suman su respaldo a Hannah De Lamadrid rumbo al 2027». La información publicada por El Sol de México aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "commons_106559901",
-            "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/1._Coyoac%C3%A1n_Ciudad_de_M%C3%A9xico.jpg/960px-1._Coyoac%C3%A1n_Ciudad_de_M%C3%A9xico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "category": "CDMX",
-            "borough": "",
-            "topic": "1. Coyoacán Ciudad de México",
-            "keywords": [
-              "CDMX"
-            ],
-            "author": "Machristen",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:1._Coyoac%C3%A1n_Ciudad_de_M%C3%A9xico.jpg"
-          }
-        },
-        {
-          "title": "Iglesia en Coyoacán ofrece experiencia inmersiva en su interior",
-          "description": "De acuerdo con El Universal, el titular publicado es: «Iglesia en Coyoacán ofrece experiencia inmersiva en su interior». La información publicada por El Universal aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOU3RpWHpuSDdoaE9lZzREbnFJUkdPUnRzTUxHSXZleDVUZUloaUNXR2RxUHo1QVJiSHZrWnpMX2FxYW43aTFaYl9wSDFfbE9YbVpnaHRyNUZWbHFkX0hGTEIwUEpGNHdSd1RNbVVIVi1PYkVsNUpBR2x3eW83ZUUxOVNJazcyT1cwQlZzdmdvTGNqbkREVmJWNUkwZTVwXzM2TWtaMm1YSdIBuwFBVV95cUxNbjZ2VW9ONW11bm9tZ0g1aURsQ0g5QjNPUzlwTWFDLTdpU1BoQ1BGQVBiNjJoOHB2cDRnOXZJUXRKWUduTFN6MkgyY0NKOGNLVmRrUG4ya0U2LTFWa2wwZE42SVI0QjdLX1hoQzZyXzNfSUdsRFljSVdoNTB0RjZ3anphcUlVcXd1UjRBTWNNVnM1dHdsNkZkTjVScDJvd0hISnQtcDBJUXcxcXdLTFA1QkwxN2pIRGlodDNV?oc=5",
-          "source": "El Universal",
-          "date": "2026-11-13",
-          "published_at": "2026-11-13T22:48:00Z",
-          "category": "CDMX",
-          "borough": "Coyoacán",
-          "location": "Coyoacán (mencionada en el titular)",
-          "local_url": "/noticias/?id=e7aa0f3b6a91f2e7c38d&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con El Universal, el titular publicado es: «Iglesia en Coyoacán ofrece experiencia inmersiva en su interior». La información publicada por El Universal aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "commons_80020584",
-            "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Iglesia_de_San_Juan_Bautista_en_Coyoac%C3%A1n_Ciudad_de_M%C3%A9xico.jpg/960px-Iglesia_de_San_Juan_Bautista_en_Coyoac%C3%A1n_Ciudad_de_M%C3%A9xico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "category": "CDMX",
-            "borough": "",
-            "topic": "Iglesia de San Juan Bautista en Coyoacán Ciudad de México",
-            "keywords": [
-              "CDMX"
-            ],
-            "author": "Juan Carlos Fonseca Mata",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Iglesia_de_San_Juan_Bautista_en_Coyoac%C3%A1n_Ciudad_de_M%C3%A9xico.jpg"
-          }
         }
       ]
     },
     {
       "name": "Cuajimalpa de Morelos",
-      "count": 49,
+      "count": 50,
       "articles": [
+        {
+          "title": "Manifestación registrada en la zona de Contadero, alcaldía Cuajimalpa, en la Ciudad de México",
+          "description": "De acuerdo con Talla Politica, el titular publicado es: «Manifestación registrada en la zona de Contadero, alcaldía Cuajimalpa, en la Ciudad de México». La información publicada por Talla Politica aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNNjN6STFfRlR4OFJoY1FOeXF1Wnk1QnE0Q3Jhdm11MVBDbEVfTWdXbmQ3c013cXVadERnTmdjbDdJdTFkYVR5aEtLVkJubkFWaC1haFdWOTJpeVVTemJkLXFVWFpocTg3eW1xYVJqaHVXRDNIbVdoS2RhY0VZb0ZIYm5uZGw0TUdWZ0NKMGtIdjk1dkhFUnp5NEFWelMzcTFuLWJLTVZCaEU3U2p1OW1UT3RZXzVXQUJHaEgyYzRKcXhTaFU?oc=5",
+          "source": "Talla Politica",
+          "date": "2026-11-17",
+          "published_at": "2026-11-18T02:39:52Z",
+          "category": "CDMX",
+          "borough": "Cuajimalpa de Morelos",
+          "location": "Cuajimalpa de Morelos (mencionada en el titular)",
+          "local_url": "/noticias/?id=e81f59c03956029c8fa7&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con Talla Politica, el titular publicado es: «Manifestación registrada en la zona de Contadero, alcaldía Cuajimalpa, en la Ciudad de México». La información publicada por Talla Politica aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "commons_16240278",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Cacerolazo_contra_la_violencia_-_Ciudad_de_M%C3%A9xico_-_3.jpg/960px-Cacerolazo_contra_la_violencia_-_Ciudad_de_M%C3%A9xico_-_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "category": "CDMX",
+            "borough": "",
+            "topic": "Cacerolazo contra la violencia - Ciudad de México - 3",
+            "keywords": [
+              "Ángel de la Independencia Ciudad de México"
+            ],
+            "author": "ProtoplasmaKid",
+            "license": "CC BY-SA 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Cacerolazo_contra_la_violencia_-_Ciudad_de_M%C3%A9xico_-_3.jpg"
+          }
+        },
         {
           "title": "Incumple Cuajimalpa con servicio de poda",
           "description": "De acuerdo con Diario Basta!, el titular publicado es: «Incumple Cuajimalpa con servicio de poda». La información publicada por Diario Basta! aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -6023,24 +6041,6 @@
           "borough": "Cuajimalpa de Morelos",
           "location": "Cuajimalpa de Morelos (mencionada en el titular)",
           "local_url": "/noticias/?id=d4486abce159f9018bb2&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con Diario Basta!, el titular publicado es: «Incumple Cuajimalpa con servicio de poda». La información publicada por Diario Basta! aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "alcaldia_cuajimalpa",
-            "kind": "representativa",
-            "url": "/assets/alcaldias/cuajimalpa.jpg",
-            "category": "CDMX",
-            "borough": "Cuajimalpa de Morelos",
-            "topic": "Centro del antiguo pueblo de Cuajimalpa",
-            "author": "AlejandroLinaresGarcia",
-            "license": "CC BY-SA 3.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-            "source": "https://commons.wikimedia.org/wiki/File:CuajimalpaCentro01.JPG"
-          },
           "alternate_versions": [
             {
               "title": "Incumple Cuajimalpa con servicio de poda",
@@ -6072,7 +6072,25 @@
                 "source": "https://commons.wikimedia.org/wiki/File:CuajimalpaCentro01.JPG"
               }
             }
-          ]
+          ],
+          "brief": {
+            "lead": "De acuerdo con Diario Basta!, el titular publicado es: «Incumple Cuajimalpa con servicio de poda». La información publicada por Diario Basta! aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_cuajimalpa",
+            "kind": "representativa",
+            "url": "/assets/alcaldias/cuajimalpa.jpg",
+            "category": "CDMX",
+            "borough": "Cuajimalpa de Morelos",
+            "topic": "Centro del antiguo pueblo de Cuajimalpa",
+            "author": "AlejandroLinaresGarcia",
+            "license": "CC BY-SA 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:CuajimalpaCentro01.JPG"
+          }
         },
         {
           "title": "¿Qué pasó en Cuajimalpa hoy? Familiares de presos bloquean vialidades y provocan caos en Santa Fe",
@@ -7017,24 +7035,6 @@
             "license": "CC BY 4.0",
             "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
             "source": "https://commons.wikimedia.org/wiki/File:Nuevas_patrullas_para_Cuajimalpa_01.jpg"
-          }
-        },
-        {
-          "title": "Clima en Cuajimalpa de Morelos este jueves 5 de noviembre: lluvia ligera y ambiente templado",
-          "description": "De acuerdo con El Heraldo de México, el titular publicado es: «Clima en Cuajimalpa de Morelos este jueves 5 de noviembre: lluvia ligera y ambiente templado». El pronóstico recogido por El Heraldo de México se refiere a lluvias ligeras en Cuajimalpa de Morelos. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
-          "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPeTFBRXVPS0RTM3AxTS12czY5UFA2ejVvUFVkOUlJMTZIRGRQTXFmUFV4d1dWWDllV2x0cnp4UUgycDBtS2t3RjFxUVFfM0NYNUd5RFRyMVQtSkVJUHR6S1ppaWQzMFY2Si1ZMGFrb3RJcVZ1Mk1BOHZYckZvakZMaFJFdkxHVF8tN21WN2pKTzZCcUgwZ0dlb3FyUGE4X3NGSk16bERrYnFvdk1IWjNCYjNNaGxJT2FMc1NHX3hBNkNLQUFXaElzbjQwaUc3QW9tSkF6OXBLbjU0ZlY1WlY5V3llbw?oc=5",
-          "source": "El Heraldo de México",
-          "date": "2026-11-04",
-          "published_at": "2026-11-05T05:00:00Z",
-          "category": "CDMX",
-          "borough": "Cuajimalpa de Morelos",
-          "location": "Cuajimalpa de Morelos (mencionada en el titular)",
-          "local_url": "/noticias/?id=dd16d7ed16f576f0fc6e&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con El Heraldo de México, el titular publicado es: «Clima en Cuajimalpa de Morelos este jueves 5 de noviembre: lluvia ligera y ambiente templado». El pronóstico recogido por El Heraldo de México se refiere a lluvias ligeras en Cuajimalpa de Morelos. Se trata de una previsión, no de una constatación de lluvia en cada calle. Las condiciones pueden variar según la hora y la colonia.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           }
         }
       ]
@@ -9410,32 +9410,6 @@
           "location": "Estadio GNP Seguros, alcaldía Iztacalco, Ciudad de México (sede del concierto referido; sede del encuentro con prensa no indicada)",
           "local_url": "/noticias/?id=624488a02b9d8b0771cd&mes=2026-11",
           "source_url": "https://www.infobae.com/mexico/2026/11/17/laura-zapata-defiende-a-thalia-tras-criticas-por-cantar-con-karol-g-en-cdmx/",
-          "brief": {
-            "lead": "Infobae informó el 17 de noviembre de 2026 que Laura Zapata respaldó a su hermana Thalía tras las críticas por su aparición como invitada de Karol G en el Estadio GNP Seguros de CDMX. La nota señala que ambas interpretaron tres canciones durante la primera de las tres fechas de la colombiana en la capital.",
-            "context": "El medio ubicó el concierto en la alcaldía Iztacalco y reportó una asistencia de 65,000 personas. Thalía interpretó “Piel morena”, “Amor a la mexicana” y “¿A quién le importa?” junto a Karol G.",
-            "pending": "La nota atribuye las declaraciones a un encuentro de Laura Zapata con reporteros y señala que la actriz no había visto las imágenes de la presentación. No se añaden valoraciones ni declaraciones que el artículo no recoge.",
-            "method": "Síntesis editorial basada en la publicación original de Infobae del 17 de noviembre de 2026: https://www.infobae.com/mexico/2026/11/17/laura-zapata-defiende-a-thalia-tras-criticas-por-cantar-con-karol-g-en-cdmx/. Los detalles del concierto y la asistencia se atribuyen al medio. La fotografía muestra a Thalía en el Festival de Viña del Mar de 1997; es de archivo y no documenta el concierto de CDMX."
-          },
-          "photo": {
-            "id": "contexto_thalia_vina_1997",
-            "kind": "representativa",
-            "url": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Thal%C3%ADa_Vi%C3%B1a_1997_-_1.png",
-            "category": "Cultura",
-            "borough": "",
-            "topic": "Thalía en el Festival de Viña del Mar (1997); retrato de archivo.",
-            "keywords": [
-              "Thalía",
-              "Laura Zapata",
-              "Festival de Viña del Mar",
-              "Piel morena",
-              "Amor a la mexicana",
-              "¿A quién le importa?"
-            ],
-            "author": "Festival Viña del mar",
-            "license": "CC BY 3.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
-            "source": "https://commons.wikimedia.org/wiki/File:Thal%C3%ADa_Vi%C3%B1a_1997_-_1.png"
-          },
           "alternate_versions": [
             {
               "title": "Laura Zapata defiende a Thalía tras críticas por cantar con Karol G en CDMX",
@@ -9477,7 +9451,33 @@
                 "source": "https://commons.wikimedia.org/wiki/File:Will_of_the_People_World_Tour,_Mexico_City-4.jpg"
               }
             }
-          ]
+          ],
+          "brief": {
+            "lead": "Infobae informó el 17 de noviembre de 2026 que Laura Zapata respaldó a su hermana Thalía tras las críticas por su aparición como invitada de Karol G en el Estadio GNP Seguros de CDMX. La nota señala que ambas interpretaron tres canciones durante la primera de las tres fechas de la colombiana en la capital.",
+            "context": "El medio ubicó el concierto en la alcaldía Iztacalco y reportó una asistencia de 65,000 personas. Thalía interpretó “Piel morena”, “Amor a la mexicana” y “¿A quién le importa?” junto a Karol G.",
+            "pending": "La nota atribuye las declaraciones a un encuentro de Laura Zapata con reporteros y señala que la actriz no había visto las imágenes de la presentación. No se añaden valoraciones ni declaraciones que el artículo no recoge.",
+            "method": "Síntesis editorial basada en la publicación original de Infobae del 17 de noviembre de 2026: https://www.infobae.com/mexico/2026/11/17/laura-zapata-defiende-a-thalia-tras-criticas-por-cantar-con-karol-g-en-cdmx/. Los detalles del concierto y la asistencia se atribuyen al medio. La fotografía muestra a Thalía en el Festival de Viña del Mar de 1997; es de archivo y no documenta el concierto de CDMX."
+          },
+          "photo": {
+            "id": "contexto_thalia_vina_1997",
+            "kind": "representativa",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Thal%C3%ADa_Vi%C3%B1a_1997_-_1.png",
+            "category": "Cultura",
+            "borough": "",
+            "topic": "Thalía en el Festival de Viña del Mar (1997); retrato de archivo.",
+            "keywords": [
+              "Thalía",
+              "Laura Zapata",
+              "Festival de Viña del Mar",
+              "Piel morena",
+              "Amor a la mexicana",
+              "¿A quién le importa?"
+            ],
+            "author": "Festival Viña del mar",
+            "license": "CC BY 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+            "source": "https://commons.wikimedia.org/wiki/File:Thal%C3%ADa_Vi%C3%B1a_1997_-_1.png"
+          }
         },
         {
           "title": "Refuerza Iztacalco seguridad en plazas, mercados y colonias durante el Buen Fin",
@@ -10823,9 +10823,9 @@
       "articles": [
         {
           "title": "Dan golpiza a ladrón y lo bañan con salsa en Iztapalapa, CdMx; se metió a robar un negocio de carnitas",
-          "description": "De acuerdo con MILENIO, el titular publicado es: «Dan golpiza a ladrón y lo bañan con salsa en Iztapalapa, CdMx; se metió a robar un negocio de carnitas». Una nota de MILENIO comunica un caso relacionado con una detención o una presunta conducta delictiva en Iztapalapa. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
+          "description": "De acuerdo con Milenio, el titular publicado es: «Dan golpiza a ladrón y lo bañan con salsa en Iztapalapa, CdMx; se metió a robar un negocio de carnitas». Una nota de Milenio comunica un caso relacionado con una detención o una presunta conducta delictiva en Iztapalapa. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
           "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQRk0wdjR2RHNYOTRIY0RyQVRMbTlkLXEyTFJJUlYxc01zVzRDRGpweS1MS1dWWF81a3pFR3NPLWRCaHBMbW9CV0NnM0phYWQ5b0gtMTREZHE1SEFhZk1OdTR3bmVHMG1sWDZhRlJfLXVlV0hkbkV1U3Jqb2RjZC1jdFQzYjJUUXNFWlVUVjd3SVl6bTQ5ZmJN0gGXAUFVX3lxTE5BNlZndTJwcDNDMjJSb3RRbGxsS0oxS09SSGZKWVdfdXU0NnJyZ0JhbU1IV2RoajU2YjBDa1drbDJxX08wdFpSb19oSlpWal9fQjlKVkUxcXh5TklJSGd1eWUtaGZUNS1adHZ6U2hoR095Q1RMUGprUElWemN3dmh0XzRPTUlDV1lNdGhqNVh0YUtMSjNJRHM?oc=5",
-          "source": "MILENIO",
+          "source": "Milenio",
           "date": "2026-11-17",
           "published_at": "2026-11-18T00:48:00Z",
           "category": "Seguridad",
@@ -10833,7 +10833,7 @@
           "location": "Iztapalapa (mencionada en el titular)",
           "local_url": "/noticias/?id=a5a5593e77ede19b3905&mes=2026-11",
           "brief": {
-            "lead": "De acuerdo con MILENIO, el titular publicado es: «Dan golpiza a ladrón y lo bañan con salsa en Iztapalapa, CdMx; se metió a robar un negocio de carnitas». Una nota de MILENIO comunica un caso relacionado con una detención o una presunta conducta delictiva en Iztapalapa. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
+            "lead": "De acuerdo con Milenio, el titular publicado es: «Dan golpiza a ladrón y lo bañan con salsa en Iztapalapa, CdMx; se metió a robar un negocio de carnitas». Una nota de Milenio comunica un caso relacionado con una detención o una presunta conducta delictiva en Iztapalapa. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
             "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
             "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
@@ -10855,7 +10855,45 @@
             "license": "CC BY 4.0",
             "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
             "source": "https://commons.wikimedia.org/wiki/File:Claudia_Sheinbaum_entrega_patrullas_Iztapalapa_02.jpg"
-          }
+          },
+          "alternate_versions": [
+            {
+              "title": "Dan golpiza a ladrón y lo bañan con salsa en Iztapalapa, CdMx; se metió a robar un negocio de carnitas",
+              "description": "De acuerdo con MILENIO, el titular publicado es: «Dan golpiza a ladrón y lo bañan con salsa en Iztapalapa, CdMx; se metió a robar un negocio de carnitas». Una nota de MILENIO comunica un caso relacionado con una detención o una presunta conducta delictiva en Iztapalapa. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
+              "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQRk0wdjR2RHNYOTRIY0RyQVRMbTlkLXEyTFJJUlYxc01zVzRDRGpweS1MS1dWWF81a3pFR3NPLWRCaHBMbW9CV0NnM0phYWQ5b0gtMTREZHE1SEFhZk1OdTR3bmVHMG1sWDZhRlJfLXVlV0hkbkV1U3Jqb2RjZC1jdFQzYjJUUXNFWlVUVjd3SVl6bTQ5ZmJN0gGXAUFVX3lxTE5BNlZndTJwcDNDMjJSb3RRbGxsS0oxS09SSGZKWVdfdXU0NnJyZ0JhbU1IV2RoajU2YjBDa1drbDJxX08wdFpSb19oSlpWal9fQjlKVkUxcXh5TklJSGd1eWUtaGZUNS1adHZ6U2hoR095Q1RMUGprUElWemN3dmh0XzRPTUlDV1lNdGhqNVh0YUtMSjNJRHM?oc=5",
+              "source": "MILENIO",
+              "date": "2026-11-17",
+              "published_at": "2026-11-18T00:48:00Z",
+              "category": "Seguridad",
+              "borough": "Iztapalapa",
+              "location": "Iztapalapa (mencionada en el titular)",
+              "local_url": "/noticias/?id=a5a5593e77ede19b3905&mes=2026-11",
+              "brief": {
+                "lead": "De acuerdo con MILENIO, el titular publicado es: «Dan golpiza a ladrón y lo bañan con salsa en Iztapalapa, CdMx; se metió a robar un negocio de carnitas». Una nota de MILENIO comunica un caso relacionado con una detención o una presunta conducta delictiva en Iztapalapa. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
+                "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+                "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+              },
+              "photo": {
+                "id": "contexto_patrullas_iztapalapa_denuncias",
+                "kind": "representativa",
+                "url": "/assets/fotos/archivo_seguridad_011.jpg",
+                "category": "Seguridad",
+                "borough": "",
+                "topic": "Patrullas en Iztapalapa, foto de archivo; no documenta las denuncias ni las cifras de 2024/2026.",
+                "keywords": [
+                  "Iztapalapa",
+                  "patrullas",
+                  "seguridad",
+                  "denuncias"
+                ],
+                "author": "Gobierno de la Ciudad de México",
+                "license": "CC BY 4.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+                "source": "https://commons.wikimedia.org/wiki/File:Claudia_Sheinbaum_entrega_patrullas_Iztapalapa_02.jpg"
+              }
+            }
+          ]
         },
         {
           "title": "Conductora Pierde el Control y Choca Contra Camellón en Av. Rojo Gómez, Iztapalapa",
@@ -13679,8 +13717,38 @@
     },
     {
       "name": "Milpa Alta",
-      "count": 76,
+      "count": 77,
       "articles": [
+        {
+          "title": "Milpa Alta registra a productores de forraje este viernes",
+          "description": "De acuerdo con Maya Comunicación, el titular publicado es: «Milpa Alta registra a productores de forraje este viernes». La información publicada por Maya Comunicación aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNM096clRXemRBV0NfbHI1Yl8tQU1EZXdIWEN1Tkw0dTZhckRmVi1naXNYLWpLZmdUYVVzQ0IxemFMcFR4WUtzWXMxNUtuNzN1LXlveGFQQmRpTkNubmZ4S2pVQTJFbDVqRzcwdEJvMlZPVFFEcnZNOFQ4Yk85cEhCaWZFV0Q3Z01QZ2dpVkZCNXp5dw?oc=5",
+          "source": "Maya Comunicación",
+          "date": "2026-11-17",
+          "published_at": "2026-11-18T01:36:20Z",
+          "category": "CDMX",
+          "borough": "Milpa Alta",
+          "location": "Milpa Alta (mencionada en el titular)",
+          "local_url": "/noticias/?id=55920a5099f9a0fa5f52&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con Maya Comunicación, el titular publicado es: «Milpa Alta registra a productores de forraje este viernes». La información publicada por Maya Comunicación aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_milpa-alta",
+            "kind": "representativa",
+            "url": "/assets/alcaldias/milpa-alta.jpg",
+            "category": "CDMX",
+            "borough": "Milpa Alta",
+            "topic": "Villa Milpa Alta y su entorno rural",
+            "author": "Comisión Mexicana de Filmaciones from México D. F., México",
+            "license": "CC BY-SA 2.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Villa_Milpa_Alta%2C_Ciudad_de_M%C3%A9xico_%2832886264042%29.jpg"
+          }
+        },
         {
           "title": "Los pueblos de Milpa Alta con más denuncias: robos y otros delitos",
           "description": "De acuerdo con Capital CDMX, el titular publicado es: «Los pueblos de Milpa Alta con más denuncias: robos y otros delitos». La información publicada por Capital CDMX aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -14352,35 +14420,6 @@
           "local_url": "/noticias/?id=6b27c8fc5c169f4944fc&mes=2026-10",
           "brief": {
             "lead": "De acuerdo con Sociedad Noticias, el titular publicado es: «Opinión | Segunda Vuelta – Luis Muñoz | Judith Vanegas aspira a convertirse en edil de Milpa Alta por segunda vez». La información publicada por Sociedad Noticias aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "alcaldia_milpa-alta",
-            "url": "/assets/alcaldias/milpa-alta.jpg",
-            "category": "CDMX",
-            "borough": "Milpa Alta",
-            "topic": "Villa Milpa Alta y su entorno rural",
-            "author": "Comisión Mexicana de Filmaciones from México D. F., México",
-            "license": "CC BY-SA 2.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Villa_Milpa_Alta%2C_Ciudad_de_M%C3%A9xico_%2832886264042%29.jpg",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/"
-          }
-        },
-        {
-          "title": "Diputada se registra para coordinar la transformación en Milpa Alta",
-          "description": "De acuerdo con La Crónica de Hoy, el titular publicado es: «Diputada se registra para coordinar la transformación en Milpa Alta». La información publicada por La Crónica de Hoy aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQcGxFclJjcHZjRFZyd2ZjLVZzc0xrb1ZPWDM1U2N0WXJFR3dZX1d4V01GckZqVlV1RndWWmQxQnBsNXJxa3liMzZUNGc5SFJrcXdfQWJ3dFlzTy1ianpERWgtMHZnRnphdWZ4NENnZ2M3MHhpUlNScW51NThZUklKVmVqbmg2WGtyYmdDc29CQ29KUXhnb0pfRHl6cURTaEhPcGJVT0RISG8xYUw1cUMtWW51WnBXQXQ4WndFdThfN3dnSTlOdHVNZA?oc=5",
-          "source": "La Crónica de Hoy",
-          "date": "2026-10-29",
-          "published_at": "2026-10-29T21:47:36Z",
-          "category": "CDMX",
-          "borough": "Milpa Alta",
-          "location": "Milpa Alta (mencionada en el titular)",
-          "local_url": "/noticias/?id=2eda7d6d4d26d79f3e1a&mes=2026-10",
-          "brief": {
-            "lead": "De acuerdo con La Crónica de Hoy, el titular publicado es: «Diputada se registra para coordinar la transformación en Milpa Alta». La información publicada por La Crónica de Hoy aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
@@ -18811,8 +18850,41 @@
     },
     {
       "name": "Xochimilco",
-      "count": 199,
+      "count": 200,
       "articles": [
+        {
+          "title": "De Xochimilco a Lecumberri: 10 sitios para seguir las huellas de la Revolución en la CDMX",
+          "description": "De acuerdo con UnoTV, el titular publicado es: «De Xochimilco a Lecumberri: 10 sitios para seguir las huellas de la Revolución en la CDMX». La información publicada por UnoTV aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOLUluekk0d3JGdHQ4ejhoeW5QZmlGaGk3bkxBR1R1djlzSHZ4eWdVckRqV1JZZFM0YkNtZmJIeFh1REd4VnJ1ZmstaG92WW96bHYzblFsRkxlaUZSZXJTWE45aXBnYWVzYTNFekZQTGh6NVRhSGlOLWxLSGduZDk0RjV1ZjlsM1g3eHZTcEFWR0o?oc=5",
+          "source": "UnoTV",
+          "date": "2026-11-17",
+          "published_at": "2026-11-17T23:22:13Z",
+          "category": "CDMX",
+          "borough": "Xochimilco",
+          "location": "Xochimilco (mencionada en el titular)",
+          "local_url": "/noticias/?id=5ca87af6c4514344862f&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con UnoTV, el titular publicado es: «De Xochimilco a Lecumberri: 10 sitios para seguir las huellas de la Revolución en la CDMX». La información publicada por UnoTV aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "commons_80618455",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Coloridas_trajineras_en_Xochimilco%2C_Ciudad_de_M%C3%A9xico.jpg/960px-Coloridas_trajineras_en_Xochimilco%2C_Ciudad_de_M%C3%A9xico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "category": "CDMX",
+            "borough": "",
+            "topic": "Coloridas trajineras en Xochimilco, Ciudad de México",
+            "keywords": [
+              "CDMX"
+            ],
+            "author": "Juan Carlos Fonseca Mata",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Coloridas_trajineras_en_Xochimilco,_Ciudad_de_M%C3%A9xico.jpg"
+          }
+        },
         {
           "title": "Sedema cancela reunión sobre envenenamiento de perros en Xochimilco; exigen medidas para evitar nuevos casos",
           "description": "De acuerdo con 24-horas, el titular publicado es: «Sedema cancela reunión sobre envenenamiento de perros en Xochimilco; exigen medidas para evitar nuevos casos». La información publicada por 24-horas aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -19793,25 +19865,6 @@
             "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
             "source": "https://commons.wikimedia.org/wiki/File:Canales_de_Xochimilco,_Ciudad_de_M%C3%A9xico_(32226551093).jpg"
           }
-        },
-        {
-          "title": "Denuncian Más de una Treintena de Casos de Envenenamiento de Perros en Xochimilco.",
-          "description": "De acuerdo con N+, el titular publicado es: «Denuncian Más de una Treintena de Casos de Envenenamiento de Perros en Xochimilco.». La información publicada por N+ aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOdHZjZnRaSS13ejRpb0o4NXZVcmNNRUszSm5yS1AteE1IZDhrT0VORmlIcHYxalo3dFBMdllWeW42S3hab2lPNHQzMW5kRm5fY0tsSE9VSkJ5X0p2TDBaU1prM2J5NHBYOFBnVGRPS3V2Q3BRTkh1azBYQnlPdEZMYU9ZUTlmdllDUU5ubTNLYjFWYzVmTkUwZlkwcVdMN1ZIUEtpdVUxazJEUEtvVWNfZnpndVQwQW91c1dDMWhvVmxRdUwzTS1JSGFvOVBIcnZuNmtTWDVKUmhYRHI5S3dKRUVR?oc=5",
-          "source": "N+",
-          "date": "2026-11-11",
-          "published_at": "2026-11-11T13:22:14Z",
-          "category": "CDMX",
-          "borough": "Xochimilco",
-          "location": "Xochimilco (mencionada en el titular)",
-          "local_url": "/noticias/?id=1954f51d6d50db884489&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con N+, el titular publicado es: «Denuncian Más de una Treintena de Casos de Envenenamiento de Perros en Xochimilco.». La información publicada por N+ aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "sensitive_media": true
         }
       ]
     }
