@@ -3892,7 +3892,9 @@ def _photo_score(article, photo):
     if scooter_helmet_story:
         return 5000 if electric_mobility_photo else -10000
     if electric_mobility_story:
-        return 5000 if photo.get("id") == "contexto_grin_escooter_cdmx_2019" else -10000
+        if photo.get("id") == "contexto_grin_escooter_cdmx_2019":
+            return 5000
+        return 4500 if electric_mobility_photo else -10000
     vehicle_crash_story = bool(
         re.search(
             r"\b(?:vuelca|volcadura|derrap\w*|choque|colision|accidente vial|"
