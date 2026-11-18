@@ -510,6 +510,19 @@ def is_tvazteca_revolucion_desfile_2026(article):
     )
 
 
+def is_capital_cdmx_magdalena_sports_parade(article):
+    """Identifica el desfile deportivo del 17/11/2026 en Magdalena Contreras."""
+    title = _photo_fold(article.get("title"))
+    return (
+        str(article.get("date") or "") == "2026-11-17"
+        and _photo_fold(article.get("source")) == "capital cdmx"
+        and re.search(r"\\b1\\s*500 deportistas\\b", title) is not None
+        and "desfile" in title
+        and "revolucion mexicana" in title
+        and "magdalena contreras" in title
+    )
+
+
 def is_capital_cdmx_tlalpan_colony_crime_stats(article):
     """Identifica el desglose de denuncias de Toriello Guerra y Santa Úrsula Xitla."""
     title = _photo_fold(article.get("title"))
@@ -3655,6 +3668,8 @@ def _photo_score(article, photo):
         return 5000 if photo.get("id") == "contexto_estadio_ciudad_deportes_america_femenil_2025" else -10000
     if is_billboard_karol_g_concert_story(article):
         return 5000 if photo.get("id") == "contexto_concierto_foro_sol_2023" else -10000
+    if is_capital_cdmx_magdalena_sports_parade(article):
+        return 5000 if photo.get("id") == "contexto_olimpiada_comunitaria_cdmx_2019" else -10000
     # Las guías del desfile del 20 de noviembre recorren del Zócalo al Monumento;
     # usar el monumento conmemorativo, no fotografías del Desfile de Catrinas.
     if (
