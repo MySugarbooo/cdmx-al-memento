@@ -5,7 +5,7 @@ import unittest
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
-from build_article_seo import render, render_photo
+from build_article_seo import apply_editorial_archive_overrides, render, render_photo
 
 
 class ArticlePhotoTests(unittest.TestCase):
@@ -470,6 +470,89 @@ class EditorialPhotoOverrideTests(unittest.TestCase):
         )
         self.assertIn("no muestra el concierto de Golden Ganga", theatre["topic"])
         self.assertIn("cartelera del 18 de noviembre de 2026", theatre["topic"])
+
+
+class EditorialArchiveSyncTests(unittest.TestCase):
+    def test_archive_photo_override_matches_the_generated_azcapotzalco_article(self):
+        azcapotzalco = {
+            "local_url": "/noticias/?id=534d17e7c38cfd83b7a1&mes=2026-11",
+            "photo": {
+                "id": "commons_88470074",
+                "url": "https://thumb.wikimedia.org/old-carnival-photo.jpg",
+                "author": "Juan Carlos Fonseca Mata",
+                "license": "CC BY-SA 4.0",
+            },
+        }
+        unrelated = {
+            "local_url": "/noticias/?id=00000000000000000001&mes=2026-11",
+            "photo": {"id": "keep-this-photo", "author": "Autor original"},
+        }
+        records = [azcapotzalco, unrelated]
+        changed = apply_editorial_archive_overrides(records)
+        self.assertEqual(changed, 1)
+        self.assertEqual(
+            records[0]["photo"]["id"],
+            "contexto_azcapotzalco_plaza_civica_2011",
+        )
+        self.assertIn("Azcapotzalco_-_Panor", records[0]["photo"]["url"])
+        self.assertEqual(records[1]["photo"]["id"], "keep-this-photo")
+        self.assertEqual(records[1]["photo"]["author"], "Autor original")
+
+    def test_courier_archive_record_has_verified_mobility_summary_and_direct_source(self):
+        source_url = "https://sociedad-noticias.com/2026/11/18/motociclistas-repartidores-acuerdan-dialogo-con-autoridades-de-la-cdmx/"
+        record = {
+            "title": "Motociclistas repartidores acuerdan diálogo con autoridades de la Cdmx",
+            "source": "Sociedad Noticias",
+            "date": "2026-11-18",
+            "local_url": "/noticias/?id=76ea8af5f775cd14991b&mes=2026-11",
+            "category": "Seguridad",
+            "description": "Resumen anterior basado solo en el titular.",
+            "brief": {"lead": "Resumen anterior basado solo en el titular."},
+            "photo": {
+                "id": "contexto_repartidores_motocicleta_cdmx",
+                "url": "https://thumb.wikimedia.org/example.jpg",
+                "author": "Palacio Postal",
+                "license": "CC BY-SA 4.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "https://commons.wikimedia.org/wiki/File:Carteros_en_motocicleta_del_Servicio_Postal_Mexicano,_2013.jpg",
+                "kind": "representativa",
+            },
+        }
+        records = [record]
+        changed = apply_editorial_archive_overrides(records)
+        self.assertEqual(changed, 1)
+        self.assertEqual(record["category"], "Movilidad")
+        self.assertEqual(record["source_url"], source_url)
+        self.assertIn("Semovi", record["brief"]["lead"])
+        self.assertIn("próxima reunión", record["brief"]["pending"])
+        self.assertEqual(record["photo"]["author"], "Palacio de Correos de Mexico")
+        page = render(record, "76ea8af5f775cd14991b")
+        self.assertIn('href="' + source_url + '"', page)
+        self.assertNotIn('href="' + record["url"] + '"', page) if record.get("url") else None
+
+    def test_current_context_catalog_and_feed_use_commons_photographer_credit(self):
+        root = Path(__file__).resolve().parents[1]
+        photo_id = "contexto_repartidores_motocicleta_cdmx"
+        context = json.loads(
+            (root / "assets/fotos/contexto-tematico.json").read_text(encoding="utf-8")
+        )
+        photo = next(item for item in context["photos"] if item["id"] == photo_id)
+        self.assertEqual(photo["author"], "Palacio de Correos de Mexico")
+        self.assertEqual(photo["license"], "CC BY-SA 4.0")
+        self.assertEqual(
+            photo["source"],
+            "https://commons.wikimedia.org/wiki/File:Carteros_en_motocicleta_del_Servicio_Postal_Mexicano,_2013.jpg",
+        )
+        feed = json.loads((root / "news.json").read_text(encoding="utf-8"))
+        article = next(
+            item for item in feed["articles"]
+            if item.get("photo", {}).get("id") == photo_id
+        )
+        self.assertEqual(article["category"], "Movilidad")
+        self.assertEqual(article["source_url"], "https://sociedad-noticias.com/2026/11/18/motociclistas-repartidores-acuerdan-dialogo-con-autoridades-de-la-cdmx/")
+        self.assertEqual(article["photo"]["author"], photo["author"])
+        self.assertIn("Semovi", article["brief"]["lead"])
+
 
 if __name__ == "__main__":
     unittest.main()
