@@ -57,13 +57,16 @@ class CurrentFeedPhotoRegressionTests(unittest.TestCase):
         return True
 
     def test_panda_story_uses_chapultepec_panda_archive_photo(self):
-        if not self.assert_reassigned("nuevo oso panda", "contexto_panda_chapultepec_2015"):\n            self.skipTest("La noticia del panda ya no está en el feed vigente.")
+        if not self.assert_reassigned("nuevo oso panda", "contexto_panda_chapultepec_2015"):
+            self.skipTest("La noticia del panda ya no está en el feed vigente.")
 
     def test_roller_derby_story_uses_roller_derby_archive_photo(self):
-        if not self.assert_reassigned("subcampeonato nacional de roller derby", "contexto_roller_derby_toulouse_2012"):\n            self.skipTest("La noticia de roller derby ya no está en el feed vigente.")
+        if not self.assert_reassigned("subcampeonato nacional de roller derby", "contexto_roller_derby_toulouse_2012"):
+            self.skipTest("La noticia de roller derby ya no está en el feed vigente.")
 
     def test_juan_gabriel_postal_exhibition_uses_the_actual_venue(self):
-        if not self.assert_reassigned("juan gabriel en el palacio postal", "contexto_palacio_postal_2010"):\n            self.skipTest("La noticia del Palacio Postal ya no está en el feed vigente.")
+        if not self.assert_reassigned("juan gabriel en el palacio postal", "contexto_palacio_postal_2010"):
+            self.skipTest("La noticia del Palacio Postal ya no está en el feed vigente.")
 
     def test_electric_personal_vehicle_registration_stories_use_micromobility_photo(self):
         checked = 0
@@ -92,10 +95,12 @@ class CurrentFeedPhotoRegressionTests(unittest.TestCase):
             self.skipTest("Las noticias del programa de gallinas ya no están en el feed vigente.")
 
     def test_corona_capital_story_uses_the_same_venue_as_context(self):
-        if not self.assert_reassigned("corona capital 2026", "contexto_concierto_foro_sol_2023"):\n            self.skipTest("La noticia de Corona Capital ya no está en el feed vigente.")
+        if not self.assert_reassigned("corona capital 2026", "contexto_concierto_foro_sol_2023"):
+            self.skipTest("La noticia de Corona Capital ya no está en el feed vigente.")
 
     def test_cdmx_blockade_alternatives_use_a_cdmx_traffic_photo(self):
-        if not self.assert_reassigned("atorado en los bloqueos", "contexto_trafico_eje_central"):\n            self.skipTest("La noticia de bloqueos ya no está en el feed vigente.")
+        if not self.assert_reassigned("atorado en los bloqueos", "contexto_trafico_eje_central"):
+            self.skipTest("La noticia de bloqueos ya no está en el feed vigente.")
 
     def test_early_childhood_stories_use_a_cendi_archive_photo(self):
         checked = 0
