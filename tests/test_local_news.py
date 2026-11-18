@@ -31,6 +31,49 @@ class LocalNewsTests(unittest.TestCase):
         self.assertIn('href="https://oem.com.mx/esto/futbol-americano/aficionados-de-san-francisco-49ers-en-cdmx-hablan-de-la-rivalidad-contra-dallas-cowboys-33151840"', article_html)
         self.assertIn("Ver fuente original", article_html)
 
+    def test_la_prensa_financial_inclusion_story_corrects_google_news_source_and_links_original(self):
+        source_url = "https://oem.com.mx/la-prensa/finanzas/cuatro-alcaldias-concentran-77-4-por-ciento-del-valor-economico-de-cdmx-33177847"
+        result = standardize({
+            "title": "Cuatro alcaldías concentran 77.4 por ciento del valor económico de CDMX - La Prensa",
+            "url": "https://news.google.com/rss/articles/la-prensa-financial-inclusion-20261117?oc=5",
+            "source": "El Sol de México",
+            "date": "2026-11-17",
+            "published_at": "2026-11-17T19:14:55Z",
+            "category": "CDMX",
+        })
+        self.assertIsNotNone(result)
+        self.assertEqual(result["source"], "La Prensa")
+        self.assertEqual(result["source_url"], source_url)
+        self.assertIn("77.4%", result["brief"]["lead"])
+        self.assertIn("Miguel Hidalgo", result["brief"]["lead"])
+        self.assertIn("Milpa Alta", result["brief"]["lead"])
+        self.assertEqual(result["description"], result["brief"]["lead"])
+        page = render(result, article_id(result))
+        self.assertIn(source_url, page)
+        self.assertIn("Fuente: La Prensa", page)
+        self.assertNotIn("Fuente: El Sol de México", page)
+
+    def test_capital_cdmx_magdalena_sports_parade_uses_original_source_and_confirmed_route(self):
+        source_url = "https://capital-cdmx.org/mas-de-1500-deportistas-participan-en-desfile-por-la-revolucion-mexicana-en-magdalena-contreras/"
+        result = standardize({
+            "title": "Más de 1,500 deportistas participan en desfile por la Revolución Mexicana en Magdalena Contreras",
+            "url": "https://news.google.com/rss/articles/capital-cdmx-sports-parade-20261117?oc=5",
+            "source": "Capital CDMX",
+            "date": "2026-11-17",
+            "published_at": "2026-11-17T18:47:39Z",
+            "category": "CDMX",
+        })
+        self.assertIsNotNone(result)
+        self.assertEqual(result["source_url"], source_url)
+        self.assertEqual(result["borough"], "La Magdalena Contreras")
+        self.assertIn("Campo Contreras", result["location"])
+        self.assertIn("Deportivo 1° de Mayo", result["location"])
+        self.assertIn("7:30", result["brief"]["lead"])
+        self.assertIn("16 disciplinas", result["brief"]["lead"])
+        self.assertEqual(result["description"], result["brief"]["lead"])
+        page = render(result, article_id(result))
+        self.assertIn(source_url, page)
+
     def test_maya_security_meeting_uses_tecámac_location_summary_and_direct_source(self):
         source_url = "https://mayacomunicacion.com.mx/cdmx-se-suma-al-frente-interestatal-de-seguridad-del-centro-del-pais/"
         rss_url = "https://news.google.com/rss/articles/maya-security-meeting-20261116?oc=5"
