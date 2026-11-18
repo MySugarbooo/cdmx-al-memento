@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-18 18:50 UTC",
+  "updated": "2026-11-18 20:02 UTC",
   "boroughs": [
     {
       "name": "La Magdalena Contreras",
@@ -4051,7 +4051,27 @@
             "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
             "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
+          },
+          "alternate_versions": [
+            {
+              "title": "Socavón en la Colonia Del Valle: Alternativa Vial por Cierre de la Calle Moras, en Benito Juárez",
+              "description": "De acuerdo con N+, el titular publicado es: «Socavón en la Colonia Del Valle: Alternativa Vial por Cierre de la Calle Moras, en Benito Juárez». La información publicada por N+ aborda un asunto que este portal clasifica como Movilidad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+              "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxObGZLS0tEams1V1kybDBfXy1TVmFZYzgxd3htRFBkTVBPdVpXdDJNaEV0WW1tLUFUYkkzQ0l3VHBUWjg1ZFpnZmM4eWRmMlFGYjUtd3M1YnVpVHhFbk9IeWNlREh6Z19aYjFVaTRtRXBRenRSMTg2ZmdxS29QWmVkM3FXVEJLaDZkTVM4VW1lX0l1ZDJBVXlFUEtIc09MeTRWU2I3eGNabnlhRDF6VzkzMnZfVWl6QTBXbXljUjZHYUpiS0RURDBzc3piZWJIbDJ2THB0SE96aklZelgwWDM4?oc=5",
+              "source": "N+",
+              "date": "2026-11-18",
+              "published_at": "2026-11-18T13:36:21Z",
+              "category": "Movilidad",
+              "borough": "Benito Juárez",
+              "location": "Benito Juárez (mencionada en el titular)",
+              "local_url": "/noticias/?id=6ff5ae64005d790ae90f&mes=2026-11",
+              "brief": {
+                "lead": "De acuerdo con N+, el titular publicado es: «Socavón en la Colonia Del Valle: Alternativa Vial por Cierre de la Calle Moras, en Benito Juárez». La información publicada por N+ aborda un asunto que este portal clasifica como Movilidad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+                "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
+                "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+              }
+            }
+          ]
         },
         {
           "title": "Camión cae en socavón en la alcaldía Benito Juárez, CDMX",
@@ -5941,27 +5961,6 @@
           "borough": "Cuajimalpa de Morelos",
           "location": "Cuajimalpa de Morelos (mencionada en el titular)",
           "local_url": "/noticias/?id=746166b9b292b1c7f60c&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con La Jornada, el titular publicado es: «Nuevo colapso vial en CDMX; en Cuajimalpa, encapuchados bloquearon accesos a Santa Fe». La información publicada por La Jornada aborda un asunto que este portal clasifica como Movilidad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
-            "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "commons_16240277",
-            "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Cacerolazo_contra_la_violencia_-_Ciudad_de_M%C3%A9xico_-_1.jpg/960px-Cacerolazo_contra_la_violencia_-_Ciudad_de_M%C3%A9xico_-_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "category": "CDMX",
-            "borough": "",
-            "topic": "Cacerolazo contra la violencia en CDMX (archivo); foto representativa, no corresponde a las movilizaciones del 14/11/2026.",
-            "keywords": [
-              "Ángel de la Independencia Ciudad de México"
-            ],
-            "author": "ProtoplasmaKid",
-            "license": "CC BY-SA 3.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Cacerolazo_contra_la_violencia_-_Ciudad_de_M%C3%A9xico_-_1.jpg"
-          },
           "alternate_versions": [
             {
               "title": "Nuevo colapso vial en CDMX; en Cuajimalpa, encapuchados bloquearon accesos a Santa Fe",
@@ -5996,7 +5995,28 @@
                 "source": "https://commons.wikimedia.org/wiki/File:Cacerolazo_contra_la_violencia_-_Ciudad_de_M%C3%A9xico_-_1.jpg"
               }
             }
-          ]
+          ],
+          "brief": {
+            "lead": "De acuerdo con La Jornada, el titular publicado es: «Nuevo colapso vial en CDMX; en Cuajimalpa, encapuchados bloquearon accesos a Santa Fe». La información publicada por La Jornada aborda un asunto que este portal clasifica como Movilidad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
+            "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "commons_16240277",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Cacerolazo_contra_la_violencia_-_Ciudad_de_M%C3%A9xico_-_1.jpg/960px-Cacerolazo_contra_la_violencia_-_Ciudad_de_M%C3%A9xico_-_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "category": "CDMX",
+            "borough": "",
+            "topic": "Cacerolazo contra la violencia en CDMX (archivo); foto representativa, no corresponde a las movilizaciones del 14/11/2026.",
+            "keywords": [
+              "Ángel de la Independencia Ciudad de México"
+            ],
+            "author": "ProtoplasmaKid",
+            "license": "CC BY-SA 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Cacerolazo_contra_la_violencia_-_Ciudad_de_M%C3%A9xico_-_1.jpg"
+          }
         },
         {
           "title": "Manifestación registrada en la zona de Contadero, alcaldía Cuajimalpa, en la Ciudad de México",
@@ -10801,19 +10821,19 @@
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           },
           "photo": {
-            "id": "archivo_seguridad_005",
+            "id": "archivo_seguridad_002",
             "kind": "representativa",
-            "url": "/assets/fotos/archivo_seguridad_005.jpg",
+            "url": "/assets/fotos/archivo_seguridad_002.jpg",
             "category": "Seguridad",
             "borough": "",
-            "topic": "Jeep policia cdmx",
+            "topic": "Patrulla vecinal",
             "keywords": [
               "Seguridad"
             ],
-            "author": "Gobierno de la Ciudad de México",
+            "author": "Daniel Yonka",
             "license": "CC BY-SA 4.0",
             "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Jeep_policia_cdmx.jpg"
+            "source": "https://commons.wikimedia.org/wiki/File:Patrulla_vecinal.jpg"
           },
           "alternate_versions": [
             {
@@ -10850,6 +10870,39 @@
                 "license": "CC BY 4.0",
                 "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
                 "source": "https://commons.wikimedia.org/wiki/File:Claudia_Sheinbaum_entrega_patrullas_Iztapalapa_02.jpg"
+              }
+            },
+            {
+              "title": "Ataque a balazos en Iztapalapa deja un muerto y un herido",
+              "description": "De acuerdo con El Universal, el titular publicado es: «Ataque a balazos en Iztapalapa deja un muerto y un herido». La información publicada por El Universal aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+              "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQUmFMNWNrRGtFVWQzbXZtU1ozUEJJOTR3OFRpVG5veTE2OWYtV0pzYXU1bGxhejJZVUJkV3BJLWNTMEdPZGtPX3N2VHFuT0VKb0pndnhacEoxSEQ4X3lpTUl4QnQweWVCOFR1VFl5bzBNVy1ud1JxVm9zMUZzdTQxcnVqSVQ5YXh0VTZDVDBWTlA3Z0M2aF8wZ0RlamdDUFNYZHdfdDlrZTgxc3pscjEyTHRheVAzT0dhWmxiRnU5VzJqTUo2NC1Rd09GeEJiMFNiWVdTekhn0gHqAUFVX3lxTE1BWkFFYkxUa1h6OW5TSjdwWW9xSDdLY29KMnV6VjhzVnNSQ3VtMGNOalk2SUxQMW5oYXBldVBTZlJQbm01ZVdPVmZYZWZQWHQyc05IbUtVZm9TU2c1eUt0SEhGOXFRUU1nc3B6N28xbnZoSU14bDdvazJKc1FOY2pBeDZmUDQyOHc2ME41cUlScU9ZMWtTWENibkZEbkNQMEs4VmdhSTBCZGJWSHMtMkhGdU5LbF84UWpUUXRQeldHNjZxNUItSXE4azE3SHpfUnRNQ25GVFdJc0gzWVdBUlIyT1Atc1A1N1NjQQ?oc=5",
+              "source": "El Universal",
+              "date": "2026-11-18",
+              "published_at": "2026-11-18T15:15:00Z",
+              "category": "CDMX",
+              "borough": "Iztapalapa",
+              "location": "Iztapalapa (mencionada en el titular)",
+              "local_url": "/noticias/?id=7941d4db867b11f3e1bd&mes=2026-11",
+              "brief": {
+                "lead": "De acuerdo con El Universal, el titular publicado es: «Ataque a balazos en Iztapalapa deja un muerto y un herido». La información publicada por El Universal aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+                "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+                "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+              },
+              "photo": {
+                "id": "archivo_seguridad_005",
+                "kind": "representativa",
+                "url": "/assets/fotos/archivo_seguridad_005.jpg",
+                "category": "Seguridad",
+                "borough": "",
+                "topic": "Jeep policia cdmx",
+                "keywords": [
+                  "Seguridad"
+                ],
+                "author": "Gobierno de la Ciudad de México",
+                "license": "CC BY-SA 4.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "https://commons.wikimedia.org/wiki/File:Jeep_policia_cdmx.jpg"
               }
             }
           ]
@@ -16988,8 +17041,26 @@
     },
     {
       "name": "Venustiano Carranza",
-      "count": 64,
+      "count": 65,
       "articles": [
+        {
+          "title": "Socavón provoca choque y muerte de motociclista en la alcaldía Venustiano Carranza",
+          "description": "De acuerdo con PostaMx, el titular publicado es: «Socavón provoca choque y muerte de motociclista en la alcaldía Venustiano Carranza». De acuerdo con PostaMx, se informa de un hecho vial relacionado con una motocicleta en Venustiano Carranza. El propio titular señala un fallecimiento, sin que esta ficha agregue cifras ni identidades. Se requiere consultar la nota original para conocer el punto exacto, las circunstancias y los reportes oficiales, sin atribuir responsabilidades sin pruebas.",
+          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQbThjWjkzblRvYzZxZmhCYlVCTWFxcnpNMWJMZW5aVnowRHNURlg3U3A3QTJ6aDFOczdfRTFRTDZIdmxvU2JrRk1yM1ZGcEFwNFhHdExZUmp6d0F3bURIeWpUdk9fcmJNUTlmd0lCcHZsRndKU2E2T0luc2oxci1tYmI1aS1tdHV3TmNKemVyazFRVGdHcW5FVEJzczYwaC1lOUhldE9uVVlZTnlyUUNfMDFMNjJacmc4TGY3Ujl6Y2LSAcYBQVVfeXFMUGNNVkZ0ZHlOUUVDbHdQRGtfdTlBSHpUUS0wMVpMUWRJTFRrTGc0RlJKNlVVYzF5XzBSOGpnVFhoRF8wczNtUVo4MU1udWE4WXNZY08xWm5QeE5iekVwMG13Y2xuTTBlUXNWdjRNVjFpdnI5VkVHbmJSU3VmQ2R4ZmtNcWZIWWhycC1QeWFMY1I2a1dqdFdBNVJ2c3cxQUJXVU1HLXdqb1RQUFMzdVdUR05mRUhtWmhkMmJxbjczaWJKTDEzdXlB?oc=5",
+          "source": "PostaMx",
+          "date": "2026-11-18",
+          "published_at": "2026-11-18T19:39:00Z",
+          "category": "Movilidad",
+          "borough": "Venustiano Carranza",
+          "location": "Venustiano Carranza (mencionada en el titular)",
+          "local_url": "/noticias/?id=042122ca296090af958e&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con PostaMx, el titular publicado es: «Socavón provoca choque y muerte de motociclista en la alcaldía Venustiano Carranza». De acuerdo con PostaMx, se informa de un hecho vial relacionado con una motocicleta en Venustiano Carranza. El propio titular señala un fallecimiento, sin que esta ficha agregue cifras ni identidades. Se requiere consultar la nota original para conocer el punto exacto, las circunstancias y los reportes oficiales, sin atribuir responsabilidades sin pruebas.",
+            "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
+            "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          }
+        },
         {
           "title": "Conectará Aeroméxico Ciudad de México con Montego Bay, Jamaica",
           "description": "Aviación 21 informó que Aeroméxico abrirá una ruta directa entre Ciudad de México y Montego Bay, Jamaica, el 18 de marzo de 2027, con tres vuelos semanales: jueves, sábado y domingo.",
@@ -18474,104 +18545,6 @@
           "local_url": "/noticias/?id=867437585a82298cc0d0&mes=2026-11",
           "brief": {
             "lead": "De acuerdo con El Universal, el titular publicado es: «Detienen a tres hombres por presunto secuestro en Venustiano Carranza». Una nota de El Universal comunica un caso relacionado con una detención o una presunta conducta delictiva en Venustiano Carranza. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
-            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
-            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "seguridad",
-            "kind": "representativa",
-            "url": "/assets/fotos/seguridad.jpg",
-            "category": "Seguridad",
-            "borough": "",
-            "topic": "Patrulla de Ciudad de México",
-            "keywords": [
-              "Seguridad"
-            ],
-            "author": "RainerRowe",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.es",
-            "source": "https://commons.wikimedia.org/wiki/File:Patrulla_cdmx.jpg"
-          }
-        },
-        {
-          "title": "Rescatan a secuestrado en Venustiano Carranza",
-          "description": "De acuerdo con Reforma, el titular publicado es: «Rescatan a secuestrado en Venustiano Carranza». La información publicada por Reforma aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPaGVOY1NHeEVnaDQzVWtaLV9ESm01M01UaXFxY2FTRk9ISjQwaG5ndE1Bd2J3MzJvanp3Znc5R3JOLUQ0Nl9MOGV2UUZhZjg3TUNDSGF0bXVEdkduU3A1M0czNi1CVTdaa1ZQNnNid2E5Q1o1LU1WX2NrSVRKdnRlejduSHF2dw?oc=5",
-          "source": "Reforma",
-          "date": "2026-11-12",
-          "published_at": "2026-11-12T16:32:35Z",
-          "category": "Seguridad",
-          "borough": "Venustiano Carranza",
-          "location": "Venustiano Carranza (mencionada en el titular)",
-          "local_url": "/noticias/?id=888de421729e63d8892d&mes=2026-11",
-          "alternate_versions": [
-            {
-              "title": "Rescatan a secuestrado en Venustiano Carranza",
-              "description": "De acuerdo con Reforma, el titular publicado es: «Rescatan a secuestrado en Venustiano Carranza». La información publicada por Reforma aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-              "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPaGVOY1NHeEVnaDQzVWtaLV9ESm01M01UaXFxY2FTRk9ISjQwaG5ndE1Bd2J3MzJvanp3Znc5R3JOLUQ0Nl9MOGV2UUZhZjg3TUNDSGF0bXVEdkduU3A1M0czNi1CVTdaa1ZQNnNid2E5Q1o1LU1WX2NrSVRKdnRlejduSHF2dw?oc=5",
-              "source": "Reforma",
-              "date": "2026-11-12",
-              "published_at": "2026-11-12T16:32:35Z",
-              "category": "Seguridad",
-              "borough": "Venustiano Carranza",
-              "location": "Venustiano Carranza (mencionada en el titular)",
-              "local_url": "/noticias/?id=888de421729e63d8892d&mes=2026-11",
-              "brief": {
-                "lead": "De acuerdo con Reforma, el titular publicado es: «Rescatan a secuestrado en Venustiano Carranza». La información publicada por Reforma aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-                "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
-                "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-              },
-              "photo": {
-                "id": "commons_75245856",
-                "kind": "representativa",
-                "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Graduaci%C3%B3n_de_la_Polic%C3%ADa_de_la_Ciudad_de_M%C3%A9xico_-i---i-_%2836371773944%29.jpg/960px-Graduaci%C3%B3n_de_la_Polic%C3%ADa_de_la_Ciudad_de_M%C3%A9xico_-i---i-_%2836371773944%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-                "category": "Seguridad",
-                "borough": "",
-                "topic": "Graduación de la Policía de la Ciudad de México -i---i- (36371773944)",
-                "keywords": [
-                  "Policía Ciudad de México"
-                ],
-                "author": "Gobierno CDMX",
-                "license": "CC0",
-                "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
-                "source": "https://commons.wikimedia.org/wiki/File:Graduaci%C3%B3n_de_la_Polic%C3%ADa_de_la_Ciudad_de_M%C3%A9xico_-i---i-_(36371773944).jpg"
-              }
-            },
-            {
-              "title": "Rescatan a secuestrado en Venustiano Carranza",
-              "description": "De acuerdo con Reforma, el titular publicado es: «Rescatan a secuestrado en Venustiano Carranza». La información publicada por Reforma aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-              "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPaGVOY1NHeEVnaDQzVWtaLV9ESm01M01UaXFxY2FTRk9ISjQwaG5ndE1Bd2J3MzJvanp3Znc5R3JOLUQ0Nl9MOGV2UUZhZjg3TUNDSGF0bXVEdkduU3A1M0czNi1CVTdaa1ZQNnNid2E5Q1o1LU1WX2NrSVRKdnRlejduSHF2dw?oc=5",
-              "source": "Reforma",
-              "date": "2026-11-12",
-              "published_at": "2026-11-12T16:32:35Z",
-              "category": "Seguridad",
-              "borough": "Venustiano Carranza",
-              "location": "Venustiano Carranza (mencionada en el titular)",
-              "local_url": "/noticias/?id=888de421729e63d8892d&mes=2026-11",
-              "brief": {
-                "lead": "De acuerdo con Reforma, el titular publicado es: «Rescatan a secuestrado en Venustiano Carranza». La información publicada por Reforma aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-                "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
-                "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-              },
-              "photo": {
-                "id": "archivo_seguridad_016",
-                "kind": "representativa",
-                "url": "/assets/fotos/archivo_seguridad_016.jpg",
-                "category": "Seguridad",
-                "borough": "",
-                "topic": "Entrega de Patrullas en Alcaldías 01",
-                "author": "Gobierno de la Ciudad de México",
-                "license": "CC BY 4.0",
-                "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-                "source": "https://commons.wikimedia.org/wiki/File:Entrega_de_Patrullas_en_Alcald%C3%ADas_01.jpg"
-              }
-            }
-          ],
-          "brief": {
-            "lead": "De acuerdo con Reforma, el titular publicado es: «Rescatan a secuestrado en Venustiano Carranza». La información publicada por Reforma aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
             "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
             "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
