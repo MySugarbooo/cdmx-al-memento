@@ -721,6 +721,16 @@ class EditorialArchiveSyncTests(unittest.TestCase):
         apply_editorial_record_overrides(records)
         by_url = {item["local_url"]: item for item in records}
 
+        # news.json es solo el subconjunto reciente; las correcciones editoriales
+        # también deben comprobarse cuando la noticia ya pasó a la hemeroteca.
+        archive_data = json.loads(
+            (root / "archivo" / "2026-11.json").read_text(encoding="utf-8")
+        )
+        archive_records = archive_data.get("articles", [])
+        apply_editorial_record_overrides(archive_records)
+        for archived_item in archive_records:
+            by_url.setdefault(archived_item["local_url"], archived_item)
+
         expected = {
             "/noticias/?id=6bef1d7854caac2a590d&mes=2026-11": "contexto_embarazo_representativo_niaid",
             "/noticias/?id=d3599e8834dc58fe907a&mes=2026-11": "contexto_aula_educacion_salud_mental_cdmx",
