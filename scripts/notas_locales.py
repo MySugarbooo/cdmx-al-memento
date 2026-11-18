@@ -3704,6 +3704,20 @@ def _photo_score(article, photo):
         return 5000 if photo.get("id") == "commons_112950009" else -10000
     if is_debate_ruta_maiz_topilejo(article):
         return 5000 if photo.get("id") == "commons_112950009" else -10000
+
+    # Correcciones editoriales verificadas del feed del 18/11/2026.
+    # Las imágenes son de archivo/contexto y nunca se presentan como prueba del suceso.
+    if re.search(r"\b(?:oso\s+)?panda\b", headline) and re.search(r"\bchapultepec\b", headline):
+        return 5000 if photo.get("id") == "contexto_panda_chapultepec_2015" else -10000
+    if "roller derby" in headline:
+        return 5000 if photo.get("id") == "contexto_roller_derby_toulouse_2012" else -10000
+    if "juan gabriel" in headline and "palacio postal" in headline:
+        return 5000 if photo.get("id") == "contexto_palacio_postal_2010" else -10000
+    if "corona capital" in headline:
+        return 5000 if photo.get("id") == "contexto_concierto_foro_sol_2023" else -10000
+    if (re.search(r"\b(?:bloqueos?|alternativas viales?)\b", headline)
+            and re.search(r"\b(?:cdmx|ciudad de mexico)\b", headline)):
+        return 5000 if photo.get("id") == "contexto_trafico_eje_central" else -10000
     # Asignaciones verificadas para las noticias del 16/11/2026.
     # Las fotografías son de archivo y se identifican como representativas, nunca como prueba del hecho.
     if is_diario_morelos_mexico_acapulco_traffic_story(article):
@@ -3712,9 +3726,14 @@ def _photo_score(article, photo):
         return 5000 if photo.get("id") == "contexto_hotel_corporativo_cdmx" else -10000
     if is_nplus_cordoba_pilgrims_story(article):
         return 5000 if photo.get("id") == "contexto_peregrinos_basilica_cdmx" else -10000
+    gallinas_program_story = bool(
+        re.search(r"\b(?:gallinas? ponedoras?|gallinas en casa)\b", headline)
+        and re.search(r"\b(?:brugada|huevo|programa|viviendas?|casa)\b", headline)
+    )
     if (is_tvazteca_gallinas_program_story(article)
             or is_debate_gallinas_program_story(article)
-            or is_lasillarota_gallinas_program_story(article)):
+            or is_lasillarota_gallinas_program_story(article)
+            or gallinas_program_story):
         return 5000 if photo.get("id") == "contexto_gallinero_chinampa_xochimilco" else -10000
     if is_el_sol_electoral_material_books_story(article):
         return 5000 if photo.get("id") == "contexto_boleta_electoral_mexico_2012" else -10000
@@ -3846,9 +3865,23 @@ def _photo_score(article, photo):
     ))
     # Las multas y el registro VEP/VEMEPE requieren contexto de micromovilidad
     # eléctrica; una motocicleta de apoyo tras un sismo no es una imagen pertinente.
-    electric_mobility_story = is_24horas_electric_mobility_plates_guide(article)
+    electric_mobility_story = (
+        is_24horas_electric_mobility_plates_guide(article)
+        or bool(
+            re.search(
+                r"\b(?:vehiculos? electricos? personales?|vehiculos? motorizados? electricos?|"
+                r"bicicletas? electricas?|scooters?|monopatines?)\b",
+                headline,
+            )
+            and re.search(
+                r"\b(?:registro|registrar|emplacar|placas|multas?|prorroga|aplaz\w*|amplia|plazo)\b",
+                headline,
+            )
+        )
+        or "prorrogan registro de vehiculos electricos en cdmx" in headline
+    )
     electric_mobility_photo = bool(re.search(
-        r"\b(?:scooters?|monopatines?|bicicletas? electricas?|vehiculos? electricos? personales?)\b",
+        r"\b(?:scooters?|monopatines?|bicicletas? electricas?|motos? electricas?|vehiculos? electricos? personales?)\b",
         context,
     ))
     # Una propuesta de casco obligatorio para scooters requiere una imagen de micromovilidad,
