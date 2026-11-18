@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-18 07:45 UTC",
+  "updated": "2026-11-18 09:12 UTC",
   "boroughs": [
     {
       "name": "La Magdalena Contreras",
@@ -3056,27 +3056,6 @@
           "location": "Azcapotzalco (mencionada en el titular)",
           "local_url": "/noticias/?id=534d17e7c38cfd83b7a1&mes=2026-11",
           "source_url": "https://oem.com.mx/la-prensa/metropoli/nancy-nunez-pide-casi-3-mil-millones-de-pesos-para-azcapotzalco-en-2027-33182113",
-          "brief": {
-            "lead": "La Prensa informó que la alcaldesa Nancy Marlene Núñez Reséndiz solicitó 2,957.88 millones de pesos para Azcapotzalco en 2027. En la mesa de trabajo del Congreso local también reportó una reducción del 24% en delitos de alto impacto; legisladores plantearon pendientes sobre fugas de agua, bacheo y transparencia.",
-            "context": "La petición se presentó durante el análisis del paquete económico de la Ciudad de México para 2027. El presupuesto modificado de la alcaldía para 2026 fue de 2,648.84 millones de pesos.",
-            "pending": "Los 2,957.88 millones son una solicitud, no una asignación aprobada. La cifra de 2,635 fugas pendientes fue expuesta por una legisladora y no constituye una auditoría independiente.",
-            "method": "Síntesis editorial basada en la publicación de La Prensa, firmada por Arturo R. Pansza y fechada el 17 de noviembre de 2026. La nota atribuye las cifras a la alcaldesa y a las intervenciones legislativas; no son verificación independiente."
-          },
-          "photo": {
-            "id": "commons_88470074",
-            "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Carnaval_de_Azcapotzalco%2C_Ciudad_de_M%C3%A9xico_-_Marzo_2020_II.jpg/960px-Carnaval_de_Azcapotzalco%2C_Ciudad_de_M%C3%A9xico_-_Marzo_2020_II.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "category": "Alcaldías",
-            "borough": "",
-            "topic": "Carnaval de Azcapotzalco, Ciudad de México - Marzo 2020 II",
-            "keywords": [
-              "Azcapotzalco Ciudad de México"
-            ],
-            "author": "Juan Carlos Fonseca Mata",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Carnaval_de_Azcapotzalco,_Ciudad_de_M%C3%A9xico_-_Marzo_2020_II.jpg"
-          },
           "alternate_versions": [
             {
               "title": "Nancy Núñez pide casi 3 mil millones de pesos para Azcapotzalco en 2027",
@@ -3108,7 +3087,28 @@
                 "source": "https://commons.wikimedia.org/wiki/File:PARROQUIA_DE_SANTA_CATARINA_%28AZCAPOTZALCO%29.jpg"
               }
             }
-          ]
+          ],
+          "brief": {
+            "lead": "La Prensa informó que la alcaldesa Nancy Marlene Núñez Reséndiz solicitó 2,957.88 millones de pesos para Azcapotzalco en 2027. En la mesa de trabajo del Congreso local también reportó una reducción del 24% en delitos de alto impacto; legisladores plantearon pendientes sobre fugas de agua, bacheo y transparencia.",
+            "context": "La petición se presentó durante el análisis del paquete económico de la Ciudad de México para 2027. El presupuesto modificado de la alcaldía para 2026 fue de 2,648.84 millones de pesos.",
+            "pending": "Los 2,957.88 millones son una solicitud, no una asignación aprobada. La cifra de 2,635 fugas pendientes fue expuesta por una legisladora y no constituye una auditoría independiente.",
+            "method": "Síntesis editorial basada en la publicación de La Prensa, firmada por Arturo R. Pansza y fechada el 17 de noviembre de 2026. La nota atribuye las cifras a la alcaldesa y a las intervenciones legislativas; no son verificación independiente."
+          },
+          "photo": {
+            "id": "commons_88470074",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Carnaval_de_Azcapotzalco%2C_Ciudad_de_M%C3%A9xico_-_Marzo_2020_II.jpg/960px-Carnaval_de_Azcapotzalco%2C_Ciudad_de_M%C3%A9xico_-_Marzo_2020_II.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "category": "Alcaldías",
+            "borough": "",
+            "topic": "Carnaval de Azcapotzalco, Ciudad de México - Marzo 2020 II",
+            "keywords": [
+              "Azcapotzalco Ciudad de México"
+            ],
+            "author": "Juan Carlos Fonseca Mata",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Carnaval_de_Azcapotzalco,_Ciudad_de_M%C3%A9xico_-_Marzo_2020_II.jpg"
+          }
         },
         {
           "title": "Azcapotzalco pide revisar presupuesto de 2027 para considerar a su población flotante",
@@ -6037,7 +6037,7 @@
           "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNNjN6STFfRlR4OFJoY1FOeXF1Wnk1QnE0Q3Jhdm11MVBDbEVfTWdXbmQ3c013cXVadERnTmdjbDdJdTFkYVR5aEtLVkJubkFWaC1haFdWOTJpeVVTemJkLXFVWFpocTg3eW1xYVJqaHVXRDNIbVdoS2RhY0VZb0ZIYm5uZGw0TUdWZ0NKMGtIdjk1dkhFUnp5NEFWelMzcTFuLWJLTVZCaEU3U2p1OW1UT3RZXzVXQUJHaEgyYzRKcXhTaFU?oc=5",
           "source": "Talla Politica",
           "date": "2026-11-17",
-          "published_at": "2026-11-18T02:39:52Z",
+          "published_at": "2026-11-18T03:23:31Z",
           "category": "CDMX",
           "borough": "Cuajimalpa de Morelos",
           "location": "Cuajimalpa de Morelos (mencionada en el titular)",
@@ -6049,20 +6049,55 @@
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           },
           "photo": {
-            "id": "commons_16240278",
+            "id": "commons_16240276",
             "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Cacerolazo_contra_la_violencia_-_Ciudad_de_M%C3%A9xico_-_3.jpg/960px-Cacerolazo_contra_la_violencia_-_Ciudad_de_M%C3%A9xico_-_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Cacerolazo_contra_la_violencia_-_Ciudad_de_M%C3%A9xico_-_2.jpg/960px-Cacerolazo_contra_la_violencia_-_Ciudad_de_M%C3%A9xico_-_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
             "category": "CDMX",
             "borough": "",
-            "topic": "Cacerolazo contra la violencia - Ciudad de México - 3",
+            "topic": "Cacerolazo contra la violencia - Ciudad de México - 2",
             "keywords": [
               "Ángel de la Independencia Ciudad de México"
             ],
             "author": "ProtoplasmaKid",
             "license": "CC BY-SA 3.0",
             "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Cacerolazo_contra_la_violencia_-_Ciudad_de_M%C3%A9xico_-_3.jpg"
-          }
+            "source": "https://commons.wikimedia.org/wiki/File:Cacerolazo_contra_la_violencia_-_Ciudad_de_M%C3%A9xico_-_2.jpg"
+          },
+          "alternate_versions": [
+            {
+              "title": "Manifestación registrada en la zona de Contadero, alcaldía Cuajimalpa, en la Ciudad de México",
+              "description": "De acuerdo con Talla Politica, el titular publicado es: «Manifestación registrada en la zona de Contadero, alcaldía Cuajimalpa, en la Ciudad de México». La información publicada por Talla Politica aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+              "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNNjN6STFfRlR4OFJoY1FOeXF1Wnk1QnE0Q3Jhdm11MVBDbEVfTWdXbmQ3c013cXVadERnTmdjbDdJdTFkYVR5aEtLVkJubkFWaC1haFdWOTJpeVVTemJkLXFVWFpocTg3eW1xYVJqaHVXRDNIbVdoS2RhY0VZb0ZIYm5uZGw0TUdWZ0NKMGtIdjk1dkhFUnp5NEFWelMzcTFuLWJLTVZCaEU3U2p1OW1UT3RZXzVXQUJHaEgyYzRKcXhTaFU?oc=5",
+              "source": "Talla Politica",
+              "date": "2026-11-17",
+              "published_at": "2026-11-18T02:39:52Z",
+              "category": "CDMX",
+              "borough": "Cuajimalpa de Morelos",
+              "location": "Cuajimalpa de Morelos (mencionada en el titular)",
+              "local_url": "/noticias/?id=e81f59c03956029c8fa7&mes=2026-11",
+              "brief": {
+                "lead": "De acuerdo con Talla Politica, el titular publicado es: «Manifestación registrada en la zona de Contadero, alcaldía Cuajimalpa, en la Ciudad de México». La información publicada por Talla Politica aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+                "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+                "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+              },
+              "photo": {
+                "id": "commons_16240278",
+                "kind": "representativa",
+                "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Cacerolazo_contra_la_violencia_-_Ciudad_de_M%C3%A9xico_-_3.jpg/960px-Cacerolazo_contra_la_violencia_-_Ciudad_de_M%C3%A9xico_-_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+                "category": "CDMX",
+                "borough": "",
+                "topic": "Cacerolazo contra la violencia - Ciudad de México - 3",
+                "keywords": [
+                  "Ángel de la Independencia Ciudad de México"
+                ],
+                "author": "ProtoplasmaKid",
+                "license": "CC BY-SA 3.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+                "source": "https://commons.wikimedia.org/wiki/File:Cacerolazo_contra_la_violencia_-_Ciudad_de_M%C3%A9xico_-_3.jpg"
+              }
+            }
+          ]
         },
         {
           "title": "Incumple Cuajimalpa con servicio de poda",
@@ -16209,27 +16244,6 @@
           "borough": "Tlalpan",
           "location": "Tlalpan (mencionada en el titular)",
           "local_url": "/noticias/?id=eaa6b1d18832263a92a7&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con Ahora Tabasco Noticias, el titular publicado es: «Distrito Tlalpan recibirá inversión de 245 millones de dólares». La información publicada por Ahora Tabasco Noticias aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "commons_35624626",
-            "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Animales_Bosque_de_Tlalpan_03.JPG/960px-Animales_Bosque_de_Tlalpan_03.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "category": "Alcaldías",
-            "borough": "",
-            "topic": "Animales Bosque de Tlalpan 03",
-            "keywords": [
-              "Tlalpan Ciudad de México"
-            ],
-            "author": "Inakiherrasti",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Animales_Bosque_de_Tlalpan_03.JPG"
-          },
           "alternate_versions": [
             {
               "title": "Distrito Tlalpan recibirá inversión de 245 millones de dólares",
@@ -16261,7 +16275,28 @@
                 "source": "https://commons.wikimedia.org/wiki/File:Kiosko_plaza_de_la_constitucion%2C_tlapan.JPG"
               }
             }
-          ]
+          ],
+          "brief": {
+            "lead": "De acuerdo con Ahora Tabasco Noticias, el titular publicado es: «Distrito Tlalpan recibirá inversión de 245 millones de dólares». La información publicada por Ahora Tabasco Noticias aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "commons_35624626",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Animales_Bosque_de_Tlalpan_03.JPG/960px-Animales_Bosque_de_Tlalpan_03.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "category": "Alcaldías",
+            "borough": "",
+            "topic": "Animales Bosque de Tlalpan 03",
+            "keywords": [
+              "Tlalpan Ciudad de México"
+            ],
+            "author": "Inakiherrasti",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Animales_Bosque_de_Tlalpan_03.JPG"
+          }
         },
         {
           "title": "Distrito Tlalpan recibirá 245 mdd para investigación y manufactura médica",
@@ -17348,8 +17383,90 @@
     },
     {
       "name": "Venustiano Carranza",
-      "count": 63,
+      "count": 64,
       "articles": [
+        {
+          "title": "Conectará Aeroméxico Ciudad de México con Montego Bay, Jamaica",
+          "description": "Aviación 21 informó que Aeroméxico abrirá una ruta directa entre Ciudad de México y Montego Bay, Jamaica, el 18 de marzo de 2027, con tres vuelos semanales: jueves, sábado y domingo.",
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOSEozUFd4dktad0RFSkRZOTZVREg5Qk9GeDI0TzJRLThlNmE2dWE3UzVWT2ZFY3ZsSmFERXZlaklQRFJlWXp6VkhTVU1nWDhSV2lZQW5fekxDR3dET2p6bG05M3FFVlIya205V0piNE5qeDllQUNPUGtnVTU3YWZEOXlfeWFaa1FtcXhhRmtsT1JRSTBWazdKYnQ0Z0w1YWZBQXB0cXB3?oc=5",
+          "source": "Aviación 21",
+          "date": "2026-11-18",
+          "published_at": "2026-11-18T07:00:45Z",
+          "category": "Movilidad",
+          "borough": "Venustiano Carranza",
+          "location": "Aeropuerto Internacional de la Ciudad de México (AICM), alcaldía Venustiano Carranza, Ciudad de México (punto de salida indicado por Aviación 21)",
+          "source_url": "https://a21.com.mx/aerolineas/2026/11/18/conectara-aeromexico-ciudad-de-mexico-con-montego-bay-jamaica/",
+          "local_url": "/noticias/?id=72fdef6a218a4c03a191&mes=2026-11",
+          "brief": {
+            "lead": "Aviación 21 informó que Aeroméxico abrirá una ruta directa entre Ciudad de México y Montego Bay, Jamaica, el 18 de marzo de 2027, con tres vuelos semanales: jueves, sábado y domingo.",
+            "context": "La publicación señala que los vuelos se operarán con Boeing 737 MAX de 166 plazas (16 en clase Premier y 150 en turista). El itinerario anunciado sale de Ciudad de México a las 10:20 y llega a Montego Bay a las 14:00; el regreso parte a las 15:15 y llega a México a las 18:20. A21 cita una demanda estimada de 35 mil pasajeros anuales y describe la ruta como la primera conexión aérea directa entre México y Jamaica.",
+            "pending": "El inicio está anunciado para el 18 de marzo de 2027. Horarios, disponibilidad y tarifas pueden cambiar y deben confirmarse con Aeroméxico. La estimación de 35 mil pasajeros es una previsión citada por el medio, no un flujo ya observado.",
+            "method": "Síntesis editorial basada en la publicación original de Redacción A21, fechada el 18 de noviembre de 2026: https://a21.com.mx/aerolineas/2026/11/18/conectara-aeromexico-ciudad-de-mexico-con-montego-bay-jamaica/. Los datos operativos y de demanda se atribuyen a la aerolínea y al medio; no constituyen verificación independiente."
+          },
+          "photo": {
+            "id": "contexto_aicm_aviones_pista_2026",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Aviones_en_la_pista_del_AICM.jpg/960px-Aviones_en_la_pista_del_AICM.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+            "category": "Movilidad",
+            "borough": "",
+            "topic": "Aviones en la pista del AICM (fotografía del 28 de septiembre de 2026); imagen de archivo, no documenta una operación aérea específica.",
+            "keywords": [
+              "Aeropuerto Internacional de la Ciudad de México",
+              "Aeropuerto Internacional Benito Juárez",
+              "AICM",
+              "aviones",
+              "pista de aterrizaje",
+              "vuelos",
+              "aeropuerto"
+            ],
+            "author": "Oficial K",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "source": "https://commons.wikimedia.org/wiki/File:Aviones_en_la_pista_del_AICM.jpg"
+          },
+          "alternate_versions": [
+            {
+              "title": "Conectará Aeroméxico Ciudad de México con Montego Bay, Jamaica",
+              "description": "Aviación 21 informó que Aeroméxico abrirá una ruta directa entre Ciudad de México y Montego Bay, Jamaica, el 18 de marzo de 2027, con tres vuelos semanales: jueves, sábado y domingo.",
+              "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOSEozUFd4dktad0RFSkRZOTZVREg5Qk9GeDI0TzJRLThlNmE2dWE3UzVWT2ZFY3ZsSmFERXZlaklQRFJlWXp6VkhTVU1nWDhSV2lZQW5fekxDR3dET2p6bG05M3FFVlIya205V0piNE5qeDllQUNPUGtnVTU3YWZEOXlfeWFaa1FtcXhhRmtsT1JRSTBWazdKYnQ0Z0w1YWZBQXB0cXB3?oc=5",
+              "source": "Aviación 21",
+              "date": "2026-11-18",
+              "published_at": "2026-11-18T07:00:45Z",
+              "category": "Movilidad",
+              "borough": "Venustiano Carranza",
+              "location": "Aeropuerto Internacional de la Ciudad de México (AICM), alcaldía Venustiano Carranza, Ciudad de México (punto de salida indicado por Aviación 21)",
+              "local_url": "/noticias/?id=72fdef6a218a4c03a191&mes=2026-11",
+              "source_url": "https://a21.com.mx/aerolineas/2026/11/18/conectara-aeromexico-ciudad-de-mexico-con-montego-bay-jamaica/",
+              "brief": {
+                "lead": "Aviación 21 informó que Aeroméxico abrirá una ruta directa entre Ciudad de México y Montego Bay, Jamaica, el 18 de marzo de 2027, con tres vuelos semanales: jueves, sábado y domingo.",
+                "context": "La publicación señala que los vuelos se operarán con Boeing 737 MAX de 166 plazas (16 en clase Premier y 150 en turista). El itinerario anunciado sale de Ciudad de México a las 10:20 y llega a Montego Bay a las 14:00; el regreso parte a las 15:15 y llega a México a las 18:20. A21 cita una demanda estimada de 35 mil pasajeros anuales y describe la ruta como la primera conexión aérea directa entre México y Jamaica.",
+                "pending": "El inicio está anunciado para el 18 de marzo de 2027. Horarios, disponibilidad y tarifas pueden cambiar y deben confirmarse con Aeroméxico. La estimación de 35 mil pasajeros es una previsión citada por el medio, no un flujo ya observado.",
+                "method": "Síntesis editorial basada en la publicación original de Redacción A21, fechada el 18 de noviembre de 2026: https://a21.com.mx/aerolineas/2026/11/18/conectara-aeromexico-ciudad-de-mexico-con-montego-bay-jamaica/. Los datos operativos y de demanda se atribuyen a la aerolínea y al medio; no constituyen verificación independiente."
+              },
+              "photo": {
+                "id": "contexto_edis_poblacion_cdmx",
+                "kind": "representativa",
+                "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Calle_Madero_-_Mexico_City.jpg/960px-Calle_Madero_-_Mexico_City.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+                "category": "CDMX",
+                "borough": "",
+                "topic": "Avenida Francisco I. Madero, CDMX (archivo 2011; peatones caminando; imagen representativa, no corresponde a la EDIS 2026)",
+                "keywords": [
+                  "EDIS 2026",
+                  "población urbana",
+                  "peatones",
+                  "personas caminando",
+                  "Avenida Francisco I. Madero",
+                  "Centro Histórico",
+                  "Ciudad de México"
+                ],
+                "author": "ProtoplasmaKid",
+                "license": "CC BY-SA 4.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+                "source": "https://commons.wikimedia.org/wiki/File:Calle_Madero_-_Mexico_City.jpg"
+              }
+            }
+          ]
+        },
         {
           "title": "AICM reportó 70 vuelos afectados por coyuntura en Estados Unidos",
           "description": "De acuerdo con El Economista, el titular publicado es: «AICM reportó 70 vuelos afectados por coyuntura en Estados Unidos». La información publicada por El Economista aborda un asunto que este portal clasifica como Movilidad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -18869,62 +18986,6 @@
             "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.es",
             "source": "https://commons.wikimedia.org/wiki/File:Patrulla_cdmx.jpg"
           }
-        },
-        {
-          "title": "\"El Morenito\" muere tras ser arrastrado varios metros por un tráiler, en Venustiano Carranza",
-          "description": "El Gráfico informó que un hombre conocido como «El Morenito» murió después de ser atropellado y arrastrado por un tráiler en el cruce de avenida del Taller y Lorenzo Boturini, colonia Lorenzo Boturini, alcaldía Venustiano Carranza. El medio atribuyó al operador un presunto cruce de semáforo en rojo; esa versión se atribuye al reportaje y no se presenta como determinación oficial.",
-          "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQbl9IeUZWR1J0WjF1RHFaRDlVSllyMU5wNW1BWlNraVF2VmlvdWs0SE40aC1DQWphNDlFamlpbWlleHpUZ2xVZ3BrOE1OTzdsbC14cWJ5Z3ctWjZEdmxzRVI2THRpN3FJSkc0M1VpV3Nlb3UwTk4xY1RZVGVMN1h2ZXpfbkNlUzNEbllEbVdKTDVtWXZrV1ZSX0lBQTlmRkNna0ZWWk5rdUdXZkROZWN0aS1LeExLYjdxdm5GSHVQOURGMTFHQThBSFNuTDVhOG8?oc=5",
-          "source": "El Grafico",
-          "date": "2026-11-12",
-          "published_at": "2026-11-12T15:24:52Z",
-          "category": "Movilidad",
-          "borough": "Venustiano Carranza",
-          "location": "Venustiano Carranza, Ciudad de México",
-          "local_url": "/noticias/?id=0ef061c975ac4b64eed0&mes=2026-11",
-          "source_url": "https://www.elgrafico.mx/la-roja/2026/11/12/el-morenito-muere-tras-ser-arrastrado-varios-metros-por-un-trailer-en-venustiano-carranza/?outputType=amp",
-          "alternate_versions": [
-            {
-              "title": "\"El Morenito\" muere tras ser arrastrado varios metros por un tráiler, en Venustiano Carranza",
-              "description": "El Gráfico informó que un hombre conocido como «El Morenito» murió después de ser atropellado y arrastrado por un tráiler en el cruce de avenida del Taller y Lorenzo Boturini, colonia Lorenzo Boturini, alcaldía Venustiano Carranza. El medio atribuyó al operador un presunto cruce de semáforo en rojo; esa versión se atribuye al reportaje y no se presenta como determinación oficial.",
-              "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQbl9IeUZWR1J0WjF1RHFaRDlVSllyMU5wNW1BWlNraVF2VmlvdWs0SE40aC1DQWphNDlFamlpbWlleHpUZ2xVZ3BrOE1OTzdsbC14cWJ5Z3ctWjZEdmxzRVI2THRpN3FJSkc0M1VpV3Nlb3UwTk4xY1RZVGVMN1h2ZXpfbkNlUzNEbllEbVdKTDVtWXZrV1ZSX0lBQTlmRkNna0ZWWk5rdUdXZkROZWN0aS1LeExLYjdxdm5GSHVQOURGMTFHQThBSFNuTDVhOG8?oc=5",
-              "source": "El Grafico",
-              "date": "2026-11-12",
-              "published_at": "2026-11-12T15:24:52Z",
-              "category": "Movilidad",
-              "borough": "Venustiano Carranza",
-              "location": "Venustiano Carranza, Ciudad de México",
-              "local_url": "/noticias/?id=0ef061c975ac4b64eed0&mes=2026-11",
-              "source_url": "https://www.elgrafico.mx/la-roja/2026/11/12/el-morenito-muere-tras-ser-arrastrado-varios-metros-por-un-trailer-en-venustiano-carranza/?outputType=amp",
-              "brief": {
-                "lead": "El Gráfico informó que un hombre conocido como «El Morenito» murió después de ser atropellado y arrastrado por un tráiler en el cruce de avenida del Taller y Lorenzo Boturini, colonia Lorenzo Boturini, alcaldía Venustiano Carranza. El medio atribuyó al operador un presunto cruce de semáforo en rojo; esa versión se atribuye al reportaje y no se presenta como determinación oficial.",
-                "context": "El hecho ocurrió en Venustiano Carranza y corresponde a un siniestro vial fatal. Se omite la descripción gráfica del accidente y no se atribuye responsabilidad penal.",
-                "pending": "La mecánica del accidente y cualquier responsabilidad deben confirmarse con la FGJCDMX y los informes de tránsito. La versión sobre el semáforo en rojo es la que atribuye El Gráfico al reporte, no una resolución judicial.",
-                "method": "Síntesis editorial basada en la publicación de Tania Aguilar en El Gráfico, 12 de noviembre de 2026: https://www.elgrafico.mx/la-roja/2026/11/12/el-morenito-muere-tras-ser-arrastrado-varios-metros-por-un-trailer-en-venustiano-carranza/?outputType=amp. No constituye verificación independiente."
-              },
-              "photo": {
-                "id": "commons_107566587",
-                "kind": "representativa",
-                "url": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Ciudad_de_M%C3%A9xico%2C_calles_y_plazas_1986_07.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-                "category": "CDMX",
-                "borough": "",
-                "topic": "Ciudad de México, calles y plazas 1986 07",
-                "keywords": [
-                  "Calles Ciudad de México"
-                ],
-                "author": "LBM1948",
-                "license": "CC BY-SA 4.0",
-                "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-                "source": "https://commons.wikimedia.org/wiki/File:Ciudad_de_M%C3%A9xico,_calles_y_plazas_1986_07.jpg"
-              }
-            }
-          ],
-          "brief": {
-            "lead": "El Gráfico informó que un hombre conocido como «El Morenito» murió después de ser atropellado y arrastrado por un tráiler en el cruce de avenida del Taller y Lorenzo Boturini, colonia Lorenzo Boturini, alcaldía Venustiano Carranza. El medio atribuyó al operador un presunto cruce de semáforo en rojo; esa versión se atribuye al reportaje y no se presenta como determinación oficial.",
-            "context": "El hecho ocurrió en Venustiano Carranza y corresponde a un siniestro vial fatal. Se omite la descripción gráfica del accidente y no se atribuye responsabilidad penal.",
-            "pending": "La mecánica del accidente y cualquier responsabilidad deben confirmarse con la FGJCDMX y los informes de tránsito. La versión sobre el semáforo en rojo es la que atribuye El Gráfico al reporte, no una resolución judicial.",
-            "method": "Síntesis editorial basada en la publicación de Tania Aguilar en El Gráfico, 12 de noviembre de 2026: https://www.elgrafico.mx/la-roja/2026/11/12/el-morenito-muere-tras-ser-arrastrado-varios-metros-por-un-trailer-en-venustiano-carranza/?outputType=amp. No constituye verificación independiente."
-          },
-          "sensitive_media": true
         }
       ]
     },
