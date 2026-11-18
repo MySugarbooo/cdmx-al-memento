@@ -566,19 +566,31 @@ class EditorialArchiveSyncTests(unittest.TestCase):
         records = feed["articles"]
         apply_editorial_record_overrides(records)
         by_url = {item["local_url"]: item for item in records}
-        remain_versions = {
-            "/noticias/?id=b5e636680f6dd0f0df25&mes=2026-11",
-            "/noticias/?id=3dc6cf266cdcd563bb01&mes=2026-11",
-        }
-        self.assertTrue(
-            remain_versions.intersection(by_url),
-            "El feed debe conservar al menos una versión del reportaje Remain.",
+
+        # news.json es solo la selección reciente de portada; una noticia puede
+        # salir de ese feed sin dejar de existir en el archivo mensual.
+        archive_data = json.loads(
+            (root / "archivo" / "2026-11.json").read_text(encoding="utf-8")
         )
-        # El actualizador elimina duplicados entre medios; la versión de EL PAÍS
-        # puede quedar solo en la hemeroteca mientras Infobae permanece en news.json.
-        deduplicated_optional_urls = {
-            "/noticias/?id=3dc6cf266cdcd563bb01&mes=2026-11",
-        }
+        archive_records = archive_data.get("articles", [])
+        apply_editorial_record_overrides(archive_records)
+        archive_by_url = {item["local_url"]: item for item in archive_records}
+
+        remain_infobae_url = "/noticias/?id=b5e636680f6dd0f0df25&mes=2026-11"
+        remain_elpais_url = "/noticias/?id=3dc6cf266cdcd563bb01&mes=2026-11"
+        remain_versions = {remain_infobae_url, remain_elpais_url}
+        self.assertIn(
+            remain_infobae_url,
+            archive_by_url,
+            "La nota Remain de Infobae debe conservarse en la hemeroteca aunque salga del feed reciente.",
+        )
+        self.assertTrue(
+            remain_versions.intersection(by_url) or remain_versions.intersection(archive_by_url),
+            "Debe conservarse al menos una versión del reportaje Remain en portada o hemeroteca.",
+        )
+        # El deduplicador puede retirar la versión de EL PAÍS del feed y del
+        # archivo; la versión de Infobae debe permanecer en la hemeroteca.
+        deduplicated_optional_urls = {remain_elpais_url}
         expected_photos = {
             "/noticias/?id=caebd6fdf4edab5ae26c&mes=2026-11": "contexto_patrullas_iztapalapa_denuncias",
             "/noticias/?id=486d289d63499706dd71&mes=2026-11": "contexto_semovi_oficinas_roma_2022",
@@ -590,10 +602,10 @@ class EditorialArchiveSyncTests(unittest.TestCase):
         }
         for local_url, photo_id in expected_photos.items():
             with self.subTest(local_url=local_url):
-                item = by_url.get(local_url)
+                item = by_url.get(local_url) or archive_by_url.get(local_url)
                 if item is None and local_url in deduplicated_optional_urls:
                     continue
-                self.assertIsNotNone(item, f"Falta el registro editorial esperado: {local_url}")
+                self.assertIsNotNone(item, f"Falta el registro editorial esperado en portada y hemeroteca: {local_url}")
                 photo = item["photo"]
                 self.assertEqual(photo["id"], photo_id)
                 self.assertTrue(photo["source"].startswith("https://commons.wikimedia.org/wiki/File:"))
@@ -610,14 +622,16 @@ class EditorialArchiveSyncTests(unittest.TestCase):
         }
         for local_url, source_url in expected_sources.items():
             with self.subTest(source_url=source_url):
-                item = by_url.get(local_url)
+                item = by_url.get(local_url) or archive_by_url.get(local_url)
                 if item is None and local_url in deduplicated_optional_urls:
                     continue
-                self.assertIsNotNone(item, f"Falta el registro editorial esperado: {local_url}")
+                self.assertIsNotNone(item, f"Falta el registro editorial esperado en portada y hemeroteca: {local_url}")
                 self.assertEqual(item["source_url"], source_url)
                 article_id = local_url.split("id=", 1)[1].split("&", 1)[0]
                 self.assertIn('href="' + source_url + '"', render(item, article_id))
-        self.assertEqual(by_url["/noticias/?id=451fbd723d5e452167e8&mes=2026-11"]["source"], "La Prensa")
+        pregnancy_url = "/noticias/?id=451fbd723d5e452167e8&mes=2026-11"
+        pregnancy = by_url.get(pregnancy_url) or archive_by_url.get(pregnancy_url)
+        self.assertEqual(pregnancy["source"], "La Prensa")
 
         catalog = json.loads(
             (root / "assets/fotos/contexto-tematico.json").read_text(encoding="utf-8")
