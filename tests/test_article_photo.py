@@ -462,13 +462,13 @@ class EditorialPhotoOverrideTests(unittest.TestCase):
         self.assertEqual(plaza["author"], "ProtoplasmaKid")
         self.assertEqual(plaza["license"], "CC BY-SA 4.0")
         self.assertIn("edificio delegacional", plaza["topic"])
-        self.assertIn("no evidencia de la solicitud presupuestal", plaza["topic"])
+        self.assertIn("no evidencia del presupuesto 2027", plaza["topic"])
 
         theatre = next(
             p for p in catalog["photos"]
             if p["id"] == "contexto_teatro_metropolitan_2019"
         )
-        self.assertNotIn("Golden Ganga", theatre["topic"])
+        self.assertIn("no muestra el concierto de Golden Ganga", theatre["topic"])
         self.assertIn("cartelera del 18 de noviembre de 2026", theatre["topic"])
 
 if __name__ == "__main__":
