@@ -510,6 +510,33 @@ def is_tvazteca_revolucion_desfile_2026(article):
     )
 
 
+def is_capital_cdmx_magdalena_sports_parade(article):
+    """Identifica el desfile deportivo del 17/11/2026 en Magdalena Contreras."""
+    if (
+        str(article.get("date") or "") != "2026-11-17"
+        or str(article.get("source") or "").casefold() != "capital cdmx"
+    ):
+        return False
+    title = str(article.get("title") or "").casefold()
+    return (
+        "1,500 deportistas" in title
+        and "desfile" in title
+        and "revolución mexicana" in title
+        and "magdalena contreras" in title
+    )
+
+
+def is_la_prensa_financial_inclusion_photo_story(article):
+    """Identifica la nota financiera de La Prensa sin normalizar el título por cada foto."""
+    if (
+        str(article.get("date") or "") != "2026-11-17"
+        or str(article.get("source") or "").casefold() != "la prensa"
+    ):
+        return False
+    title = str(article.get("title") or "").casefold()
+    return title.startswith("cuatro alcaldías concentran 77.4 por ciento del valor económico de cdmx")
+
+
 def is_capital_cdmx_tlalpan_colony_crime_stats(article):
     """Identifica el desglose de denuncias de Toriello Guerra y Santa Úrsula Xitla."""
     title = _photo_fold(article.get("title"))
@@ -3655,6 +3682,10 @@ def _photo_score(article, photo):
         return 5000 if photo.get("id") == "contexto_estadio_ciudad_deportes_america_femenil_2025" else -10000
     if is_billboard_karol_g_concert_story(article):
         return 5000 if photo.get("id") == "contexto_concierto_foro_sol_2023" else -10000
+    if is_la_prensa_financial_inclusion_photo_story(article):
+        return 5000 if photo.get("id") == "contexto_reforma_skyline_financial_cdmx_2016" else -10000
+    if is_capital_cdmx_magdalena_sports_parade(article):
+        return 5000 if photo.get("id") == "contexto_olimpiada_comunitaria_cdmx_2019" else -10000
     # Las guías del desfile del 20 de noviembre recorren del Zócalo al Monumento;
     # usar el monumento conmemorativo, no fotografías del Desfile de Catrinas.
     if (

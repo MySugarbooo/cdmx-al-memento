@@ -27,7 +27,7 @@ from scripts.notas_locales import is_sin_embargo_hombres_bienestar_story, SIN_EM
 from scripts.notas_locales import is_rafael_castro_capitanes_hawks_story, RAFAEL_CASTRO_CAPITANES_HAWKS_SOURCE_URL
 from scripts.notas_locales import is_reporte_indigo_contingency_story, REPORTE_INDIGO_AIR_QUALITY_20261117_SOURCE_URL
 from scripts.notas_locales import is_nplus_coyoacan_motorcycle_fire_story, NPLUS_COYOACAN_MOTORCYCLE_FIRE_SOURCE_URL
-from scripts.notas_locales import local_link, summarize, assign_photos, _photo_score, is_sensitive_media, is_esto_49ers_fan_story, ESTO_49ERS_FANS_SOURCE_URL, is_coyotepec_highway_crash, INFOBAE_COYOTEPEC_HIGHWAY_CRASH_SOURCE_URL, is_san_juan_del_rio_autopista57_closure, SENSITIVE_MEDIA_TITLE, SAN_JUAN_DEL_RIO_AUTOPISTA57_SOURCE_URL, is_infobae_tlalpan_animal_abuse, is_la_prensa_tlalpan_animal_case, INFOBAE_TLALPAN_ANIMAL_SOURCE_URL, LA_PRENSA_TLALPAN_ANIMAL_SOURCE_URL, is_imagen_tlalpan_dog_rescue, is_huixtla_migrant_caravan, is_vc_fatal_trailer_incident, EL_GRAFICO_VC_TRAILER_SOURCE_URL, is_infobae_ballet_zapatilla, INFOBAE_BALLET_ZAPATILLA_SOURCE_URL, is_infobae_america_femenil_pumas_semifinal_story, INFOBAE_AMERICA_FEMENIL_PUMAS_SOURCE_URL, is_infobae_maria_leon_concert, INFOBAE_MARIA_LEON_CONCERT_SOURCE_URL, is_pulque_barbacoa_fair, is_mauricio_tabe_fifth_report, SDPNOTICIAS_MAURICIO_TABE_REPORT_SOURCE_URL, is_radio_formula_casa_ecologica, RADIO_FORMULA_CASA_ECOLOGICA_SOURCE_URL, is_capital_cdmx_care_budget, CAPITAL_CDMX_CARE_BUDGET_SOURCE_URL, is_la_jornada_aicm_flight_suspension, AICM_FLIGHT_SUSPENSION_SOURCE_URL, is_elsol_women_defensive_driving_workshop, EL_SOL_MUJERES_DEFENSIVE_DRIVING_SOURCE_URL, is_24horas_electric_mobility_plates_guide, HORAS_24_ELECTRIC_MOBILITY_SOURCE_URL, is_codigoqro_ignacio_detention, is_infobae_vite_balu_story, INFOBAE_VITE_BALU_SOURCE_URL, is_elsol_mexico_queretaro_trailer_rollover, EL_SOL_MEXICO_QUERETARO_TRAILER_SOURCE_URL, is_imer_animal_rights_march, IMER_ANIMAL_RIGHTS_MARCH_SOURCE_URL, is_diario_basta_alvaro_obregon_water_shortage, DIARIO_BASTA_ALVARO_OBREGON_WATER_SOURCE_URL, is_sociedad_noticias_garbage_zocalo, SOCIEDAD_NOTICIAS_GARBAGE_ZOCALO_SOURCE_URL, is_yahoo_garbage_zocalo, YAHOO_GARBAGE_ZOCALO_SOURCE_URL, is_la_razon_garbage_zocalo, LA_RAZON_GARBAGE_ZOCALO_SOURCE_URL, is_infobae_garbage_zocalo, INFOBAE_GARBAGE_ZOCALO_SOURCE_URL, INFOBAE_KAROL_G_HEALTH_SOURCE_URL, INFOBAE_KAROL_G_REPROGRAMMED_CONCERT_SOURCE_URL, is_infobae_karol_g_health_story, INFOBAE_AIR_QUALITY_20261115_SOURCE_URL, is_infobae_air_quality_report, BILLBOARD_KAROL_G_CDMX_SOURCE_URL, is_billboard_karol_g_concert_story, ELCONGRESISTA_BUEN_FIN_CDMX_SOURCE_URL, is_elcongresista_buen_fin_operation, TV_AZTECA_HOY_NO_CIRCULA_20261116_SOURCE_URL, is_tvazteca_hoy_no_circula_bridge_story, is_somoselmedio_valparaiso_exhibition_story, is_infobae_teacher_mental_health_story, is_capital_cdmx_cuajimalpa_crime_stats, CAPITAL_CDMX_CUAJIMALPA_CRIME_STATS_SOURCE_URL, is_capital_cdmx_vc_crime_stats, CAPITAL_CDMX_VENUSTIANO_CRIME_STATS_SOURCE_URL, is_tvazteca_revolucion_desfile_2026, TV_AZTECA_REVOLUCION_DESFILE_SOURCE_URL, is_debate_ruta_maiz_topilejo, is_maya_acta_nacimiento_story, MAYA_ACTA_NACIMIENTO_SOURCE_URL, is_infobae_depeche_mode_story, INFOBAE_DEPECHE_MODE_FUTURAMA_SOURCE_URL, is_sopitas_gorillaz_mural_story, SOPITAS_GORILLAZ_MURAL_SOURCE_URL, is_debate_gallinas_program_story, DEBATE_GALLINAS_PONEDORAS_SOURCE_URL, is_infobae_karol_g_guest_prediction_story, is_infobae_laura_zapata_thalia_story, INFOBAE_LAURA_ZAPATA_THALIA_SOURCE_URL
+from scripts.notas_locales import local_link, summarize, assign_photos, _photo_score, is_sensitive_media, is_esto_49ers_fan_story, ESTO_49ERS_FANS_SOURCE_URL, is_coyotepec_highway_crash, INFOBAE_COYOTEPEC_HIGHWAY_CRASH_SOURCE_URL, is_san_juan_del_rio_autopista57_closure, SENSITIVE_MEDIA_TITLE, SAN_JUAN_DEL_RIO_AUTOPISTA57_SOURCE_URL, is_infobae_tlalpan_animal_abuse, is_la_prensa_tlalpan_animal_case, INFOBAE_TLALPAN_ANIMAL_SOURCE_URL, LA_PRENSA_TLALPAN_ANIMAL_SOURCE_URL, is_imagen_tlalpan_dog_rescue, is_huixtla_migrant_caravan, is_vc_fatal_trailer_incident, EL_GRAFICO_VC_TRAILER_SOURCE_URL, is_infobae_ballet_zapatilla, INFOBAE_BALLET_ZAPATILLA_SOURCE_URL, is_infobae_america_femenil_pumas_semifinal_story, INFOBAE_AMERICA_FEMENIL_PUMAS_SOURCE_URL, is_infobae_maria_leon_concert, INFOBAE_MARIA_LEON_CONCERT_SOURCE_URL, is_pulque_barbacoa_fair, is_mauricio_tabe_fifth_report, SDPNOTICIAS_MAURICIO_TABE_REPORT_SOURCE_URL, is_radio_formula_casa_ecologica, RADIO_FORMULA_CASA_ECOLOGICA_SOURCE_URL, is_capital_cdmx_care_budget, CAPITAL_CDMX_CARE_BUDGET_SOURCE_URL, is_la_jornada_aicm_flight_suspension, AICM_FLIGHT_SUSPENSION_SOURCE_URL, is_elsol_women_defensive_driving_workshop, EL_SOL_MUJERES_DEFENSIVE_DRIVING_SOURCE_URL, is_24horas_electric_mobility_plates_guide, HORAS_24_ELECTRIC_MOBILITY_SOURCE_URL, is_codigoqro_ignacio_detention, is_infobae_vite_balu_story, INFOBAE_VITE_BALU_SOURCE_URL, is_elsol_mexico_queretaro_trailer_rollover, EL_SOL_MEXICO_QUERETARO_TRAILER_SOURCE_URL, is_imer_animal_rights_march, IMER_ANIMAL_RIGHTS_MARCH_SOURCE_URL, is_diario_basta_alvaro_obregon_water_shortage, DIARIO_BASTA_ALVARO_OBREGON_WATER_SOURCE_URL, is_sociedad_noticias_garbage_zocalo, SOCIEDAD_NOTICIAS_GARBAGE_ZOCALO_SOURCE_URL, is_yahoo_garbage_zocalo, YAHOO_GARBAGE_ZOCALO_SOURCE_URL, is_la_razon_garbage_zocalo, LA_RAZON_GARBAGE_ZOCALO_SOURCE_URL, is_infobae_garbage_zocalo, INFOBAE_GARBAGE_ZOCALO_SOURCE_URL, INFOBAE_KAROL_G_HEALTH_SOURCE_URL, INFOBAE_KAROL_G_REPROGRAMMED_CONCERT_SOURCE_URL, is_infobae_karol_g_health_story, INFOBAE_AIR_QUALITY_20261115_SOURCE_URL, is_infobae_air_quality_report, BILLBOARD_KAROL_G_CDMX_SOURCE_URL, is_billboard_karol_g_concert_story, ELCONGRESISTA_BUEN_FIN_CDMX_SOURCE_URL, is_elcongresista_buen_fin_operation, TV_AZTECA_HOY_NO_CIRCULA_20261116_SOURCE_URL, is_tvazteca_hoy_no_circula_bridge_story, is_somoselmedio_valparaiso_exhibition_story, is_infobae_teacher_mental_health_story, is_capital_cdmx_cuajimalpa_crime_stats, CAPITAL_CDMX_CUAJIMALPA_CRIME_STATS_SOURCE_URL, is_capital_cdmx_vc_crime_stats, CAPITAL_CDMX_VENUSTIANO_CRIME_STATS_SOURCE_URL, is_tvazteca_revolucion_desfile_2026, TV_AZTECA_REVOLUCION_DESFILE_SOURCE_URL, is_capital_cdmx_magdalena_sports_parade, is_debate_ruta_maiz_topilejo, is_maya_acta_nacimiento_story, MAYA_ACTA_NACIMIENTO_SOURCE_URL, is_infobae_depeche_mode_story, INFOBAE_DEPECHE_MODE_FUTURAMA_SOURCE_URL, is_sopitas_gorillaz_mural_story, SOPITAS_GORILLAZ_MURAL_SOURCE_URL, is_debate_gallinas_program_story, DEBATE_GALLINAS_PONEDORAS_SOURCE_URL, is_infobae_karol_g_guest_prediction_story, is_infobae_laura_zapata_thalia_story, INFOBAE_LAURA_ZAPATA_THALIA_SOURCE_URL
 from scripts.notas_locales import is_voxpopuli_belinda_karol_g_story, VOXPOPULI_BELINDA_KAROL_G_SOURCE_URL
 
 ROOT = Path(__file__).resolve().parent
@@ -57,6 +57,8 @@ HOY_TAMAULIPAS_PATTY_CHIO_ROUTE_MONTH = "2026-11"
 AHORA_NOTICIAS_TLALPAN_PERRITA_SOURCE_URL = "https://ahoranoticias.com.mx/nacional/rescatan-a-perrita-por-presunto-maltrato-animal-en-tlalpan/"
 EL_SOL_ANIMAL_ABUSE_COMPLAINTS_SOURCE_URL = "https://oem.com.mx/elsoldemexico/metropoli/en-cdmx-15-colonias-de-6-alcaldias-concentran-denuncias-por-maltrato-animal-33109336"
 LA_PRENSA_PREHOSPITAL_CARE_SOURCE_URL = "https://oem.com.mx/la-prensa/metropoli/cdmx-busca-modernizar-la-atencion-prehospitalaria-con-plataforma-digital-de-la-ops-oms-inicia-prueba-piloto-con-tres-am-33136134"
+LA_PRENSA_FINANCIAL_INCLUSION_SOURCE_URL = "https://oem.com.mx/la-prensa/finanzas/cuatro-alcaldias-concentran-77-4-por-ciento-del-valor-economico-de-cdmx-33177847"
+CAPITAL_CDMX_MAGDALENA_SPORTS_PARADE_SOURCE_URL = "https://capital-cdmx.org/mas-de-1500-deportistas-participan-en-desfile-por-la-revolucion-mexicana-en-magdalena-contreras/"
 DIARIO_MORELOS_MEXICO_ACAPULCO_TRAFFIC_SOURCE_URL = "https://www.diariodemorelos.com/noticias/reportan-trafico-intenso-en-mexico-acapulco-rumbo-cdmx-estos-son-puntos-afectados"
 DEBATE_RUTA_MAIZ_SOURCE_URL = "https://www.debate.com.mx/cdmx/inauguran-ruta-del-maiz-en-cdmx-conectara-topilejo-con-la-joya-por-4-pesos-20261116-0230.html"
 MAIL = "sanchezaxochitl@gmail.com"
@@ -395,6 +397,18 @@ def is_la_prensa_prehospital_care(article):
         and "ops oms" in title
         and "prueba piloto" in title
         and ("tres am" in title or "tres ambulancias" in title)
+    )
+
+
+def is_la_prensa_financial_inclusion_story(article):
+    """Identifica el artículo de La Prensa sobre concentración económica e inclusión financiera en CDMX."""
+    title = fold(article.get("title"))
+    return (
+        str(article.get("date") or "")[:10] == "2026-11-17"
+        and "cuatro alcaldias concentran" in title
+        and re.search(r"\b77\s*4 por ciento\b", title) is not None
+        and "valor economico de cdmx" in title
+        and ("la prensa" in title or fold(article.get("source")) == "el sol de mexico")
     )
 
 
@@ -786,6 +800,10 @@ def standardize(article):
         date = published.astimezone(MX).date().isoformat()
     if is_la_prensa_prehospital_care({"title": title, "date": date}):
         title = "CDMX busca modernizar la atención prehospitalaria con plataforma digital de la OPS/OMS; inicia prueba piloto con tres ambulancias"
+        source = "La Prensa"
+    if is_la_prensa_financial_inclusion_story({"title": title, "source": source, "date": date}):
+        # Google News etiquetó esta publicación de OEM como El Sol de México,
+        # pero el titular y la página original identifican a La Prensa.
         source = "La Prensa"
     if not title or not valid_link(url, curated) or not DAY_RE.fullmatch(date):
         return None
@@ -1260,6 +1278,59 @@ def standardize(article):
         result["borough"] = ""
         result["location"] = "Estadio GNP Seguros, Ciudad de México"
         result["brief"] = summarize(result)
+    if is_la_prensa_financial_inclusion_story(result):
+        result["source"] = "La Prensa"
+        result["source_url"] = LA_PRENSA_FINANCIAL_INCLUSION_SOURCE_URL
+        result["brief"] = {
+            "lead": (
+                "La Prensa informó que cuatro alcaldías de la Ciudad de México concentran 77.4% del valor económico "
+                "de la capital. Miguel Hidalgo encabeza el ranking nacional de Banamex; cuatro alcaldías capitalinas "
+                "ocupan los primeros cinco lugares y Milpa Alta presenta el mayor rezago."
+            ),
+            "context": (
+                "El contraste entre alcaldías permite observar diferencias territoriales en inclusión financiera "
+                "y actividad económica dentro de la ciudad."
+            ),
+            "pending": (
+                "La ficha consultada no expone el detalle de cada indicador ni las cifras desagregadas por alcaldía. "
+                "Para comparar resultados se debe revisar el ranking de Banamex y su metodología."
+            ),
+            "method": (
+                "Síntesis editorial basada en la publicación original de La Prensa, firmada por Mildred Ramo y "
+                "fechada el 17 de noviembre de 2026. El enlace conduce al medio original; no equivale a una "
+                "verificación independiente del ranking."
+            ),
+        }
+    if is_capital_cdmx_magdalena_sports_parade(result):
+        result["source_url"] = CAPITAL_CDMX_MAGDALENA_SPORTS_PARADE_SOURCE_URL
+        result["category"] = "CDMX"
+        result["borough"] = "La Magdalena Contreras"
+        result["location"] = (
+            "Campo Contreras, explanada de la alcaldía y Deportivo 1° de Mayo, La Magdalena Contreras, "
+            "Ciudad de México (recorrido informado por Capital CDMX)"
+        )
+        result["brief"] = {
+            "lead": (
+                "Capital CDMX informó que más de 1,500 deportistas de 16 disciplinas participaron el 17 de noviembre "
+                "en un desfile por el 116 aniversario de la Revolución Mexicana en La Magdalena Contreras. "
+                "El recorrido comenzó a las 7:30 en Campo Contreras, pasó por la explanada de la alcaldía y concluyó "
+                "en el Deportivo 1° de Mayo. La nota enumera disciplinas como atletismo, baloncesto, fútbol, "
+                "natación, taekwondo y voleibol."
+            ),
+            "context": (
+                "La alcaldía reunió a atletas, entrenadores, familiares y vecinos en una actividad pública que mostró "
+                "el trabajo de centros deportivos y programas comunitarios."
+            ),
+            "pending": (
+                "La cifra de participantes y la relación de disciplinas se atribuyen a la información de la alcaldía "
+                "citada por Capital CDMX; la publicación no aporta un registro independiente de asistencia."
+            ),
+            "method": (
+                "Síntesis editorial basada en la publicación original de Capital CDMX del 17 de noviembre de 2026, "
+                "consultada directamente. La fotografía de archivo que acompaña la ficha es representativa y no "
+                "documenta el desfile de 2026."
+            ),
+        }
     result["description"] = result["brief"]["lead"]
     return result
 

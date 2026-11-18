@@ -28,6 +28,67 @@ def representative_photo(photo_id, category, topic, keywords):
 
 
 class PhotoRelevanceTests(unittest.TestCase):
+    def test_magdalena_contreras_sports_parade_rejects_catrinas_and_uses_sports_archive_photo(self):
+        article = {
+            "title": "Más de 1,500 deportistas participan en desfile por la Revolución Mexicana en Magdalena Contreras",
+            "source": "Capital CDMX",
+            "date": "2026-11-17",
+            "category": "CDMX",
+            "borough": "La Magdalena Contreras",
+            "url": "https://news.google.com/rss/articles/capital-cdmx-sports-parade-20261117?oc=5",
+        }
+        community = next(
+            photo for photo in photos._pool()
+            if photo.get("id") == "contexto_olimpiada_comunitaria_cdmx_2019"
+        )
+        catrinas = representative_photo(
+            "reciente_catrinas_test", "CDMX",
+            "Desfile de Catrinas in Mexico City 2026 (52)", ["CDMX"],
+        )
+        self.assertEqual(_photo_score(article, community), 5000)
+        self.assertLess(_photo_score(article, catrinas), 0)
+        article["photo"] = deepcopy(catrinas)
+        with patch.object(photos, "_pool", return_value=[catrinas, community]), patch.object(
+            photos, "_load", return_value=[]
+        ):
+            photos.assign_photos([article])
+        self.assertEqual(article["photo"]["id"], "contexto_olimpiada_comunitaria_cdmx_2019")
+        self.assertEqual(article["photo"]["kind"], "representativa")
+        self.assertEqual(article["photo"]["author"], "Gobierno de la Ciudad de México")
+        self.assertEqual(article["photo"]["license"], "CC BY 4.0")
+        self.assertEqual(article["photo"]["licenseUrl"], "https://creativecommons.org/licenses/by/4.0/")
+        self.assertEqual(article["photo"]["source"], "https://commons.wikimedia.org/wiki/File:Olimpiada_Comunitaria_Ciudad_de_M%C3%A9xico_2019_03.jpg")
+        self.assertIn("no muestra el desfile", article["photo"]["topic"])
+
+    def test_la_prensa_financial_story_rejects_environmental_photo_and_uses_reforma_skyline(self):
+        article = {
+            "title": "Cuatro alcaldías concentran 77.4 por ciento del valor económico de CDMX - La Prensa",
+            "source": "La Prensa",
+            "date": "2026-11-17",
+            "category": "CDMX",
+            "url": "https://news.google.com/rss/articles/la-prensa-financial-inclusion-20261117?oc=5",
+        }
+        skyline = next(
+            photo for photo in photos._pool()
+            if photo.get("id") == "contexto_reforma_skyline_financial_cdmx_2016"
+        )
+        park = representative_photo(
+            "commons_93188315", "CDMX",
+            "Quinta Colorada - Primera Sección del Bosque de Chapultepec - 3", ["Medio Ambiente"],
+        )
+        self.assertEqual(_photo_score(article, skyline), 5000)
+        self.assertLess(_photo_score(article, park), 0)
+        article["photo"] = deepcopy(park)
+        with patch.object(photos, "_pool", return_value=[park, skyline]), patch.object(
+            photos, "_load", return_value=[]
+        ):
+            photos.assign_photos([article])
+        self.assertEqual(article["photo"]["id"], "contexto_reforma_skyline_financial_cdmx_2016")
+        self.assertEqual(article["photo"]["author"], "Jonathan Salvador")
+        self.assertEqual(article["photo"]["license"], "CC BY-SA 4.0")
+        self.assertIn("archivo 2016", article["photo"]["topic"])
+        self.assertIn("no evidencia del ranking", article["photo"]["topic"])
+
     def test_rss_category_uses_obvious_headline_subject(self):
         self.assertEqual(category_by_headline(
             "Muévete en Bici este 1 de noviembre", "Seguridad"), "Movilidad")
@@ -3277,6 +3338,8 @@ class CurrentEditorialPhotoRegressionTests(unittest.TestCase):
             "contexto_publicidad_edificios_condesa_2013",
             "contexto_pokemon_go_bench_2016",
             "contexto_concierto_foro_sol_2023",
+            "contexto_olimpiada_comunitaria_cdmx_2019",
+            "contexto_reforma_skyline_financial_cdmx_2016",
             "contexto_autopista_sol_mexico_acapulco",
             "contexto_gallinero_chinampa_xochimilco",
             "contexto_boleta_electoral_mexico_2012",
@@ -3300,10 +3363,10 @@ class CurrentEditorialPhotoRegressionTests(unittest.TestCase):
             self.assertTrue(photo["licenseUrl"].startswith("https://creativecommons.org/"))
             self.assertTrue(photo["source"].startswith("https://commons.wikimedia.org/wiki/File:"))
         loader = (REPO_ROOT / "assets/creditos.js").read_text(encoding="utf-8")
-        self.assertIn("/assets/fotos/contexto-tematico.json?v=20261117-belinda-photo-0856", loader)
+        self.assertIn("/assets/fotos/contexto-tematico.json?v=20261117-finance-sports-photos-1900", loader)
         self.assertIn("new Map", loader)
         html = (REPO_ROOT / "creditos-fotograficos.html").read_text(encoding="utf-8")
-        self.assertIn("creditos.js?v=20261117-belinda-photo-0856", html)
+        self.assertIn("creditos.js?v=20261117-finance-sports-photos-1900", html)
         for photo_id in (
             "contexto_autopista_sol_mexico_acapulco",
             "contexto_gallinero_chinampa_xochimilco",
