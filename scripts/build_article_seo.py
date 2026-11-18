@@ -211,6 +211,31 @@ EDITORIAL_PHOTO_OVERRIDES = {
         "context": "Fotografía de archivo de la Cineteca Nacional; Infobae sitúa la función especial de Remain en Cinépolis Miguel Ángel de Quevedo 227, no en la Cineteca.",
         "adaptation": "Miniatura oficial de Wikimedia Commons; sin modificación."
     },
+    "/noticias/?id=3ba1e63aebcbe83062ef&mes=2026-11": {
+        "id": "contexto_gallinero_chinampa_xochimilco",
+        "kind": "representativa",
+        "category": "Servicios",
+        "topic": "Gallinero artesanal en una chinampa de Xochimilco (12/04/2018); imagen de contexto, no documenta el programa Gallinas en Casa de 2026.",
+        "file": "Gallinero hecho a mano en chinampa.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Gallinero_hecho_a_mano_en_chinampa.jpg/960px-Gallinero_hecho_a_mano_en_chinampa.jpg",
+        "source": "https://commons.wikimedia.org/wiki/File:Gallinero_hecho_a_mano_en_chinampa.jpg",
+        "author": "Diego M.P.",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "keywords": [
+            "gallinas",
+            "gallinero",
+            "aves de corral",
+            "ponedoras",
+            "huevo",
+            "Xochimilco",
+            "chinampa"
+        ],
+        "borough": "Xochimilco",
+        "captured_at": "2018-04-12",
+        "context": "Fotografía de archivo de un gallinero artesanal con dos gallinas en una chinampa de Xochimilco; representa el tema de crianza de aves, no muestra a las personas beneficiarias ni la entrega de gallinas del programa de 2026.",
+        "adaptation": "Fotografía original de Diego M.P. en Wikimedia Commons; sin modificación."
+    },
 }
 
 EDITORIAL_ARCHIVE_OVERRIDES = {
@@ -278,6 +303,17 @@ EDITORIAL_ARCHIVE_OVERRIDES = {
             "context": "La nota señala que el estreno comercial está previsto para febrero de 2027 y que la función especial se dirige a fans residentes en la capital.",
             "pending": "EL PAÍS no precisó sala ni horario en su publicación; esos datos no deben inferirse de otras notas. La fotografía de la ficha muestra la Cineteca Nacional como referencia cultural, no la sede confirmada.",
             "method": "Síntesis basada en el artículo de EL PAÍS firmado por Darinka Rodríguez y publicado el 18 de noviembre de 2026; no equivale a verificación independiente."
+        }
+    },
+    "/noticias/?id=3ba1e63aebcbe83062ef&mes=2026-11": {
+        "source": "Eje Central",
+        "source_url": "https://www.ejecentral.com.mx/nuestro-eje/gallinas-gratis-en-cdmx-asi-funcionara-el-programa-de-brugada-para-producir-huevo-en-casa",
+        "description": "Eje Central informó que Gallinas en Casa busca impulsar la producción doméstica de huevo mediante la entrega de gallinas ponedoras a familias con espacio adecuado, principalmente en zonas rurales de la Ciudad de México. La jefa de Gobierno señaló que habrá asesoría técnica; al publicarse la nota aún no se habían detallado fechas de inscripción, requisitos específicos ni número de hogares beneficiarios.",
+        "brief": {
+            "lead": "Eje Central reportó que Gallinas en Casa contempla entregar gallinas ponedoras a familias con espacio suficiente para instalar un corral, principalmente en zonas rurales de CDMX. La jefa de Gobierno dijo que el objetivo es producir huevo para autoconsumo y fortalecer la soberanía alimentaria; también se prevé asesoría técnica.",
+            "context": "El programa se coordinará con Casa Ecológica, que incluye captación de lluvia, calentadores solares y huertos. La iniciativa puede llegar a viviendas urbanas si cuentan con condiciones adecuadas para mantener las aves.",
+            "pending": "Al momento de la publicación no se habían anunciado fechas de registro, requisitos específicos ni número de hogares beneficiarios. No debe presentarse como convocatoria abierta ni como entrega ya realizada.",
+            "method": "Síntesis editorial basada en el artículo de Eje Central publicado el 18 de noviembre de 2026; no equivale a verificación independiente."
         }
     },
 }
@@ -383,6 +419,8 @@ VERIFIED_SOURCE_URLS = frozenset({
     "https://www.infobae.com/mexico/2026/11/18/harry-potter-llega-al-museo-de-historia-natural-de-cdmx-para-la-ultima-noche-de-museos-de-2026/",
     "https://www.infobae.com/mexico/2026/11/18/m-night-shyamalan-anuncia-visita-a-cdmx-para-proyectar-remain-su-nueva-pelicula/",
     "https://elpais.com/mexico/2026-11-18/m-night-shyamalan-elige-ciudad-de-mexico-para-su-primera-proyeccion-de-nunca-olvides-que-te-quiero.html",
+    # Fuente directa verificada para el programa Gallinas en Casa, publicada por Eje Central el 18/11/2026.
+    "https://www.ejecentral.com.mx/nuestro-eje/gallinas-gratis-en-cdmx-asi-funcionara-el-programa-de-brugada-para-producir-huevo-en-casa",
 })
 SENSITIVE_MEDIA_TITLE = re.compile(
     r"\b(?:violaci[oó]n|abuso sexual|agresi[oó]n sexual|acoso sexual|violencia sexual|"
