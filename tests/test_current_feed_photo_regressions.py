@@ -83,6 +83,26 @@ class CurrentFeedPhotoRegressionTests(unittest.TestCase):
     def test_cdmx_blockade_alternatives_use_a_cdmx_traffic_photo(self):
         self.assert_reassigned("atorado en los bloqueos", "contexto_trafico_eje_central")
 
+    def test_early_childhood_stories_use_a_cendi_archive_photo(self):
+        for fragment in (
+            "primera infancia",
+            "educación inicial pública y gratuita",
+            "300 espacios de educación inicial",
+        ):
+            with self.subTest(fragment=fragment):
+                self.assert_reassigned(fragment, "contexto_cendi_pilares_vc_2019")
+
+    def test_cendi_archive_photo_has_explicit_historical_context_and_credit(self):
+        photo = self.photo_pool["contexto_cendi_pilares_vc_2019"]
+        self.assertEqual(photo["author"], "Gobierno de la Ciudad de México")
+        self.assertEqual(photo["license"], "CC BY 4.0")
+        self.assertEqual(photo["licenseUrl"], "https://creativecommons.org/licenses/by/4.0/")
+        self.assertEqual(photo["source"], "https://commons.wikimedia.org/wiki/File:CENDI_PILARES_04.jpg")
+        self.assertEqual(photo["captured_at"], "2019-06-25")
+        self.assertIn("no es uno de los nuevos centros", photo["topic"])
+        self.assertIn("no constituye evidencia gráfica", photo["context"])
+        self.assertEqual(photo["kind"], "representativa")
+
     def test_animal_poisoning_story_remains_without_a_context_photo(self):
         article = self.find_article("envenenamiento de perros en xochimilco")
         self.assertTrue(photos.is_sensitive_media(article))
