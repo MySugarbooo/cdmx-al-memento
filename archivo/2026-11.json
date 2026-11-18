@@ -566,12 +566,6 @@
       "borough": "",
       "location": "Ubicación no indicada por el titular",
       "local_url": "/noticias/?id=6bf5ff039c5ad2892366&mes=2026-11",
-      "brief": {
-        "lead": "De acuerdo con N+, el titular publicado es: «Bloqueo en Circuito Interior: Trabajadores del IMSS Paralizan Tránsito hacia AICM». La cobertura de N+ se centra en movilizaciones de trabajadores del IMSS y en su posible o reportada repercusión sobre calles de Ciudad de México. Los trayectos y horarios deben revisarse en avisos recientes, pues una convocatoria no equivale a cierres confirmados durante todo el día.",
-        "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
-        "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-      },
       "alternate_versions": [
         {
           "title": "Bloqueo en Circuito Interior: Trabajadores del IMSS Paralizan Tránsito hacia AICM",
@@ -591,7 +585,13 @@
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           }
         }
-      ]
+      ],
+      "brief": {
+        "lead": "De acuerdo con N+, el titular publicado es: «Bloqueo en Circuito Interior: Trabajadores del IMSS Paralizan Tránsito hacia AICM». La cobertura de N+ se centra en movilizaciones de trabajadores del IMSS y en su posible o reportada repercusión sobre calles de Ciudad de México. Los trayectos y horarios deben revisarse en avisos recientes, pues una convocatoria no equivale a cierres confirmados durante todo el día.",
+        "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
+        "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+      }
     },
     {
       "title": "Giovani Gutiérrez defiende alumbrado de Coyoacán: Morena acusa uso de presupuesto vecinal",
