@@ -362,11 +362,11 @@ EDITORIAL_ARCHIVE_OVERRIDES = {
         "category": "Movilidad",
         "source": "88.9 Noticias",
         "source_url": "https://889noticias.mx/noticias/semovi-cdmx-otorga-prorroga-indefinida-para-emplacamiento-de-vehiculos-electricos/",
-        "description": "88.9 Noticias informó que Semovi amplió hasta nuevo aviso el plazo para registrar y emplacar los Vehículos de Movilidad Eléctrica Personal. La dependencia anunció la prórroga el 17 de noviembre de 2026; Clara Brugada señaló que el padrón tenía alrededor de 13 mil unidades registradas y que la regulación busca ordenar este tipo de transporte.",
+        "description": "88.9 Noticias informó que Semovi amplió hasta nuevo aviso el plazo para registrar y emplacar los Vehículos de Movilidad Eléctrica Personal. La prórroga se anunció el 17 de noviembre, después de las manifestaciones de usuarios en Insurgentes contra el emplacamiento y las restricciones para circular por el carril ciclista. La nota no fija una nueva fecha límite.",
         "brief": {
-            "lead": "88.9 Noticias reportó que Semovi extendió hasta nuevo aviso el plazo para registrar y emplacar los Vehículos de Movilidad Eléctrica Personal. La jefa de Gobierno dijo que había alrededor de 13 mil unidades registradas y pidió a más usuarios incorporarse al padrón.",
-            "context": "La prórroga se anunció después de que usuarios se manifestaron en Insurgentes contra el emplacamiento y las restricciones de circulación. El registro continúa siendo parte del proceso de regularización descrito por las autoridades.",
-            "pending": "La nota no fija una nueva fecha límite ni un día de inicio de multas; la ampliación se anunció hasta nuevo aviso. No debe publicarse una fecha de vencimiento que la autoridad todavía no comunicó.",
+            "lead": "88.9 Noticias reportó que Semovi extendió hasta nuevo aviso el plazo para registrar y emplacar los VEMEPE. La decisión se anunció después de las protestas de usuarios en Insurgentes; las autoridades no comunicaron una nueva fecha de vencimiento.",
+            "context": "La regulación continúa vigente; la prórroga busca dar tiempo a los propietarios para completar el trámite. La nota no indica que la obligación haya sido cancelada.",
+            "pending": "No se ha publicado una nueva fecha límite ni una fecha de aplicación de multas; la ampliación se anunció hasta nuevo aviso.",
             "method": "Síntesis editorial basada en el artículo de 88.9 Noticias publicado el 17 de noviembre de 2026; no equivale a verificación independiente."
         }
     },
