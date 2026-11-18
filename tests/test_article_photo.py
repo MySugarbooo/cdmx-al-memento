@@ -612,6 +612,14 @@ class EditorialArchiveSyncTests(unittest.TestCase):
             "/noticias/?id=486d289d63499706dd71&mes=2026-11": "contexto_grin_escooter_cdmx_2019",
             "/noticias/?id=b5e636680f6dd0f0df25&mes=2026-11": "contexto_cineteca_nacional_2015",
             "/noticias/?id=3dc6cf266cdcd563bb01&mes=2026-11": "contexto_cineteca_nacional_2015",
+            "/noticias/?id=6bef1d7854caac2a590d&mes=2026-11": "contexto_embarazo_representativo_niaid",
+            "/noticias/?id=d3599e8834dc58fe907a&mes=2026-11": "contexto_aula_educacion_salud_mental_cdmx",
+            "/noticias/?id=870b68fcbfac9da3db2d&mes=2026-11": "contexto_gallinero_chinampa_xochimilco",
+            "/noticias/?id=fd539ea3ddd1eb1cf4e8&mes=2026-11": "contexto_trafico_eje_central",
+            "/noticias/?id=af7d04e8a05239194c6d&mes=2026-11": "contexto_casul_casa_universitaria_del_libro_2016",
+            "/noticias/?id=b1fc9652296cefb7aa00&mes=2026-11": "contexto_concierto_foro_sol_2023",
+            "/noticias/?id=dfd02c3e41cfe8145490&mes=2026-11": "contexto_uam_cuajimalpa_educacion_superior_2017",
+            "/noticias/?id=d5fefc837e33dbb12140&mes=2026-11": "contexto_patrullas_iztapalapa_denuncias",
         }
         for local_url, photo_id in expected_photos.items():
             with self.subTest(local_url=local_url):
@@ -635,6 +643,9 @@ class EditorialArchiveSyncTests(unittest.TestCase):
             "/noticias/?id=486d289d63499706dd71&mes=2026-11": "https://889noticias.mx/noticias/semovi-cdmx-otorga-prorroga-indefinida-para-emplacamiento-de-vehiculos-electricos/",
             "/noticias/?id=b5e636680f6dd0f0df25&mes=2026-11": "https://www.infobae.com/mexico/2026/11/18/m-night-shyamalan-anuncia-visita-a-cdmx-para-proyectar-remain-su-nueva-pelicula/",
             "/noticias/?id=3dc6cf266cdcd563bb01&mes=2026-11": "https://elpais.com/mexico/2026-11-18/m-night-shyamalan-elige-ciudad-de-mexico-para-su-primera-proyeccion-de-nunca-olvides-que-te-quiero.html",
+            "/noticias/?id=af7d04e8a05239194c6d&mes=2026-11": "https://www.infobae.com/mexico/2026/11/18/el-cadaver-de-la-novia-tendra-funcion-gratis-en-cdmx-horario-y-sede-para-ver-la-pelicula-de-tim-burton/",
+            "/noticias/?id=fd539ea3ddd1eb1cf4e8&mes=2026-11": "https://amexi.com.mx/infografias/marchas-cdmx-18-noviembre/",
+            "/noticias/?id=dfd02c3e41cfe8145490&mes=2026-11": "https://www.eleconomista.com.mx/amp/arteseideas/universidad-tres-culturas-inaugura-plantel-martin-carrera-fortalece-presencia-ciudad-mexico-20261118-844582.html",
         }
         for local_url, source_url in expected_sources.items():
             with self.subTest(source_url=source_url):
@@ -701,6 +712,62 @@ class EditorialArchiveSyncTests(unittest.TestCase):
             self.assertEqual(item["photo"]["author"], grin_photo["author"])
             self.assertEqual(item["photo"]["license"], grin_photo["license"])
 
+
+
+    def test_nov18_editorial_photo_and_source_corrections(self):
+        root = Path(__file__).resolve().parents[1]
+        feed = json.loads((root / "news.json").read_text(encoding="utf-8"))
+        records = feed["articles"]
+        apply_editorial_record_overrides(records)
+        by_url = {item["local_url"]: item for item in records}
+
+        expected = {
+            "/noticias/?id=6bef1d7854caac2a590d&mes=2026-11": "contexto_embarazo_representativo_niaid",
+            "/noticias/?id=d3599e8834dc58fe907a&mes=2026-11": "contexto_aula_educacion_salud_mental_cdmx",
+            "/noticias/?id=870b68fcbfac9da3db2d&mes=2026-11": "contexto_gallinero_chinampa_xochimilco",
+            "/noticias/?id=fd539ea3ddd1eb1cf4e8&mes=2026-11": "contexto_trafico_eje_central",
+            "/noticias/?id=af7d04e8a05239194c6d&mes=2026-11": "contexto_casul_casa_universitaria_del_libro_2016",
+            "/noticias/?id=b1fc9652296cefb7aa00&mes=2026-11": "contexto_concierto_foro_sol_2023",
+            "/noticias/?id=dfd02c3e41cfe8145490&mes=2026-11": "contexto_uam_cuajimalpa_educacion_superior_2017",
+            "/noticias/?id=d5fefc837e33dbb12140&mes=2026-11": "contexto_patrullas_iztapalapa_denuncias",
+        }
+        for local_url, photo_id in expected.items():
+            with self.subTest(local_url=local_url):
+                item = by_url[local_url]
+                self.assertEqual(item["photo"]["id"], photo_id)
+                self.assertTrue(item["photo"]["context"])
+                self.assertTrue(item["photo"]["source"].startswith("https://commons.wikimedia.org/wiki/File:"))
+                self.assertTrue(item["photo"]["licenseUrl"].startswith("https://creativecommons.org/"))
+
+        cadaver = by_url["/noticias/?id=af7d04e8a05239194c6d&mes=2026-11"]
+        self.assertEqual(cadaver["category"], "Cultura")
+        self.assertIn("CASUL", cadaver["brief"]["lead"])
+        self.assertIn("Orizaba 24", cadaver["brief"]["lead"])
+        self.assertIn("40 personas", cadaver["brief"]["lead"])
+        self.assertIn("25 de noviembre", cadaver["brief"]["lead"])
+        self.assertIn("18:00", cadaver["brief"]["lead"])
+        self.assertIn(cadaver["source_url"], render(cadaver, "af7d04e8a05239194c6d"))
+
+        mobilizations = by_url["/noticias/?id=fd539ea3ddd1eb1cf4e8&mes=2026-11"]
+        self.assertEqual(mobilizations["category"], "Movilidad")
+        self.assertIn("una marcha y siete concentraciones", mobilizations["brief"]["lead"])
+        self.assertIn("Río Churubusco", mobilizations["brief"]["context"])
+        self.assertIn(mobilizations["source_url"], render(mobilizations, "fd539ea3ddd1eb1cf4e8"))
+
+        utc = by_url["/noticias/?id=dfd02c3e41cfe8145490&mes=2026-11"]
+        self.assertIn("plantel Martín Carrera", utc["brief"]["lead"])
+        self.assertIn(utc["source_url"], render(utc, "dfd02c3e41cfe8145490"))
+
+        self.assertEqual(by_url["/noticias/?id=b1fc9652296cefb7aa00&mes=2026-11"]["category"], "Cultura")
+        self.assertEqual(by_url["/noticias/?id=0471025fde64a6b1dc68&mes=2026-11"]["category"], "Movilidad")
+        self.assertIn("no documenta el ataque armado", by_url["/noticias/?id=d5fefc837e33dbb12140&mes=2026-11"]["photo"]["topic"])
+
+        catalog = json.loads((root / "assets/fotos/contexto-tematico.json").read_text(encoding="utf-8"))
+        catalog_by_id = {photo["id"]: photo for photo in catalog["photos"]}
+        self.assertEqual(catalog_by_id["contexto_casul_casa_universitaria_del_libro_2016"]["author"], "Katia Flores Torres")
+        self.assertEqual(catalog_by_id["contexto_casul_casa_universitaria_del_libro_2016"]["license"], "CC BY-SA 4.0")
+        self.assertEqual(catalog_by_id["contexto_uam_cuajimalpa_educacion_superior_2017"]["author"], "ProtoplasmaKid")
+        self.assertEqual(catalog_by_id["contexto_uam_cuajimalpa_educacion_superior_2017"]["license"], "CC BY-SA 4.0")
 
 
 if __name__ == "__main__":
