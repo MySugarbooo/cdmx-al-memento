@@ -3309,6 +3309,7 @@ class CurrentEditorialPhotoRegressionTests(unittest.TestCase):
             "contexto_publicidad_edificios_condesa_2013",
             "contexto_pokemon_go_bench_2016",
             "contexto_concierto_foro_sol_2023",
+            "contexto_olimpiada_comunitaria_cdmx_2019",
             "contexto_autopista_sol_mexico_acapulco",
             "contexto_gallinero_chinampa_xochimilco",
             "contexto_boleta_electoral_mexico_2012",
@@ -3332,10 +3333,10 @@ class CurrentEditorialPhotoRegressionTests(unittest.TestCase):
             self.assertTrue(photo["licenseUrl"].startswith("https://creativecommons.org/"))
             self.assertTrue(photo["source"].startswith("https://commons.wikimedia.org/wiki/File:"))
         loader = (REPO_ROOT / "assets/creditos.js").read_text(encoding="utf-8")
-        self.assertIn("/assets/fotos/contexto-tematico.json?v=20261117-belinda-photo-0856", loader)
+        self.assertIn("/assets/fotos/contexto-tematico.json?v=20261117-sports-parade-photo-1843", loader)
         self.assertIn("new Map", loader)
         html = (REPO_ROOT / "creditos-fotograficos.html").read_text(encoding="utf-8")
-        self.assertIn("creditos.js?v=20261117-belinda-photo-0856", html)
+        self.assertIn("creditos.js?v=20261117-sports-parade-photo-1843", html)
         for photo_id in (
             "contexto_autopista_sol_mexico_acapulco",
             "contexto_gallinero_chinampa_xochimilco",
