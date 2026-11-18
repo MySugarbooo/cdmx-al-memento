@@ -1544,8 +1544,21 @@ def photo_needs_refresh(item):
 
 
 def prioritize_photo_refresh(items, limit=24):
-    """Atiende primero las tres fotografías incongruentes confirmadas en la revisión."""
+    """Atiende primero las discrepancias editoriales confirmadas del feed reciente."""
     priority_prefixes = (
+        "cdmx busca tener nuevo oso panda",
+        "conquista all-star juarez subcampeonato nacional de roller derby",
+        "exposicion de juan gabriel en el palacio postal",
+        "cdmx amplia hasta nuevo aviso el plazo para registrar y emplacar vehiculos electricos personales",
+        "cdmx amplia plazo para registrar vehiculos electricos personales",
+        "cdmx aplaza multas a vehiculos motorizados electricos",
+        "prorrogan registro de vehiculos electricos en cdmx",
+        "amplian plazo para multas y registro de monopatines y bicicletas electricas",
+        "clara brugada enfrenta criticas por regalar gallinas ponedoras",
+        "clara brugada defiende entrega de gallinas ponedoras",
+        "gallinas en casa",
+        "canaco cdmx preve derrama economica",
+        "atorado en los bloqueos",
         "repartidores anuncian dos bloqueos estrategicos",
         "presupuesto de cuidados 2027",
         "cuantos tianguis hay en cdmx",

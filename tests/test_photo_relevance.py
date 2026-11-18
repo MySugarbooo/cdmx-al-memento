@@ -3355,6 +3355,9 @@ class CurrentEditorialPhotoRegressionTests(unittest.TestCase):
             "contexto_registro_civil_cdmx_2022",
             "contexto_centro_cultural_futurama_2026",
             "contexto_mural_urbano_cdmx_2014",
+            "contexto_panda_chapultepec_2015",
+            "contexto_roller_derby_toulouse_2012",
+            "contexto_palacio_postal_2010",
         ):
             photo = photos.get(photo_id)
             self.assertIsNotNone(photo)
@@ -3363,10 +3366,10 @@ class CurrentEditorialPhotoRegressionTests(unittest.TestCase):
             self.assertTrue(photo["licenseUrl"].startswith("https://creativecommons.org/"))
             self.assertTrue(photo["source"].startswith("https://commons.wikimedia.org/wiki/File:"))
         loader = (REPO_ROOT / "assets/creditos.js").read_text(encoding="utf-8")
-        self.assertIn("/assets/fotos/contexto-tematico.json?v=20261117-finance-sports-photos-1900", loader)
+        self.assertIn("/assets/fotos/contexto-tematico.json?v=20261118-editorial-photo-audit-0228", loader)
         self.assertIn("new Map", loader)
         html = (REPO_ROOT / "creditos-fotograficos.html").read_text(encoding="utf-8")
-        self.assertIn("creditos.js?v=20261117-finance-sports-photos-1900", html)
+        self.assertIn("creditos.js?v=20261118-editorial-photo-audit-0228", html)
         for photo_id in (
             "contexto_autopista_sol_mexico_acapulco",
             "contexto_gallinero_chinampa_xochimilco",
@@ -5147,7 +5150,7 @@ class November17AdditionalEditorialPhotoCorrectionsTests(unittest.TestCase):
         self.assertEqual(article["photo"]["id"], "contexto_concierto_foro_sol_2023")
         self.assertEqual(article["photo"]["author"], "Nanahuatl")
         self.assertEqual(article["photo"]["license"], "CC BY-SA 4.0")
-        expected_topic = "Concierto de Muse en Foro Sol (hoy Estadio GNP), CDMX (23/01/2023); archivo, no corresponde a Karol G ni a su función reprogramada."
+        expected_topic = "Concierto de Muse en Foro Sol (hoy Estadio GNP), CDMX (23/01/2023); foto de archivo del recinto, no corresponde a Karol G ni al Corona Capital 2026."
         self.assertEqual(article["photo"]["topic"], expected_topic)
         self.assertLessEqual(len(article["photo"]["topic"]), 150)
 

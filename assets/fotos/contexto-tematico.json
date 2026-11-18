@@ -1,5 +1,5 @@
 {
-  "version": 2,
+  "version": 3,
   "notice": "Fotografías de contexto reutilizables con licencia. No son fotos del hecho noticioso.",
   "photos": [
     {
@@ -677,7 +677,7 @@
       "id": "contexto_concierto_foro_sol_2023",
       "kind": "representativa",
       "category": "Cultura",
-      "topic": "Concierto de Muse en Foro Sol (hoy Estadio GNP), CDMX (23/01/2023); archivo, no corresponde a Karol G ni a su función reprogramada.",
+      "topic": "Concierto de Muse en Foro Sol (hoy Estadio GNP), CDMX (23/01/2023); foto de archivo del recinto, no corresponde a Karol G ni al Corona Capital 2026.",
       "keywords": [
         "concierto",
         "música en vivo",
@@ -685,7 +685,10 @@
         "Estadio GNP Seguros",
         "escenario",
         "público",
-        "Ciudad de México"
+        "Ciudad de México",
+        "Corona Capital",
+        "festival de música",
+        "Estadio GNP"
       ],
       "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Will_of_the_People_World_Tour%2C_Mexico_City-4.jpg/576px-Will_of_the_People_World_Tour%2C_Mexico_City-4.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Will_of_the_People_World_Tour,_Mexico_City-4.jpg",
@@ -979,6 +982,7 @@
     },
     {
       "id": "contexto_gallinero_chinampa_xochimilco",
+      "kind": "representativa",
       "category": "Servicios",
       "topic": "Gallinero artesanal en una chinampa de Xochimilco (archivo 2018); no corresponde al programa de 2026.",
       "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Gallinero_hecho_a_mano_en_chinampa.jpg/960px-Gallinero_hecho_a_mano_en_chinampa.jpg",
@@ -1364,6 +1368,69 @@
       "context": "Vista del corredor de Paseo de la Reforma y el skyline de la Ciudad de México, fotografiada el 15 de septiembre de 2016; imagen contextual, no evidencia del ranking de Banamex.",
       "adaptation": "Miniatura oficial de Wikimedia Commons; sin modificación.",
       "captured_at": "2016-09-15"
+    },
+    {
+      "id": "contexto_panda_chapultepec_2015",
+      "category": "CDMX",
+      "topic": "Oso panda en el Zoológico de Chapultepec (16/07/2015); foto de archivo, no muestra al ejemplar cuya llegada se gestiona en 2026.",
+      "keywords": [
+        "oso panda",
+        "panda gigante",
+        "Zoológico de Chapultepec",
+        "Chapultepec",
+        "fauna",
+        "Ciudad de México"
+      ],
+      "author": "Katie Chan",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Chapultepec_Zoo_-_Giant_panda.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Chapultepec_Zoo_-_Giant_panda.jpg/960px-Chapultepec_Zoo_-_Giant_panda.jpg",
+      "kind": "representativa",
+      "context": "Imagen de carácter ilustrativo y referencial; no constituye evidencia gráfica de los hechos descritos.",
+      "adaptation": "Miniatura oficial de Wikimedia Commons; sin modificación."
+    },
+    {
+      "id": "contexto_roller_derby_toulouse_2012",
+      "category": "Deportes",
+      "topic": "Roller derby: Nothing Toulouse vs Quad Guards, Francia (archivo 2012); no del campeonato de 2026 en CDMX.",
+      "keywords": [
+        "roller derby",
+        "patinaje",
+        "deporte",
+        "competencia",
+        "Nothing Toulouse",
+        "Quad Guards"
+      ],
+      "author": "GuillaumeG",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Roller_derby_NT-QG_1651.JPG",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Roller_derby_NT-QG_1651.JPG/960px-Roller_derby_NT-QG_1651.JPG",
+      "kind": "representativa",
+      "context": "Imagen de carácter ilustrativo y referencial; no constituye evidencia gráfica de los hechos descritos.",
+      "adaptation": "Miniatura oficial de Wikimedia Commons; sin modificación."
+    },
+    {
+      "id": "contexto_palacio_postal_2010",
+      "category": "Cultura",
+      "topic": "Vista posterior del Palacio Postal de la Ciudad de México (02/04/2010); fotografía del recinto, no de la exposición sobre Juan Gabriel.",
+      "keywords": [
+        "Palacio Postal",
+        "Palacio de Correos",
+        "Juan Gabriel",
+        "exposición",
+        "Centro Histórico",
+        "Ciudad de México"
+      ],
+      "author": "Ludan68",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Palacio_Postal_Ciudad_de_M%C3%A9xico.JPG",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Palacio_Postal_Ciudad_de_M%C3%A9xico.JPG/960px-Palacio_Postal_Ciudad_de_M%C3%A9xico.JPG",
+      "kind": "representativa",
+      "context": "Imagen de carácter ilustrativo y referencial; no constituye evidencia gráfica de los hechos descritos.",
+      "adaptation": "Miniatura oficial de Wikimedia Commons; sin modificación."
     }
   ]
 }
