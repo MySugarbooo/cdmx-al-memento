@@ -316,6 +316,18 @@ EDITORIAL_ARCHIVE_OVERRIDES = {
             "method": "Síntesis editorial basada en el artículo de Eje Central publicado el 18 de noviembre de 2026; no equivale a verificación independiente."
         }
     },
+    "/noticias/?id=b146b3d1dafcb65af69e&mes=2026-11": {
+        "category": "Movilidad",
+        "source": "López-Dóriga Digital",
+        "source_url": "https://lopezdoriga.com/nacional/ya-debes-emplacar-tu-bici-electrica-o-scooter-cdmx-pospone-multas-y-anunciara-nueva-fecha/",
+        "description": "López-Dóriga Digital informó que Semovi y la Secretaría de Seguridad Ciudadana ampliaron hasta nuevo aviso el plazo para registrar y emplacar vehículos eléctricos personales. Clara Brugada señaló que hay alrededor de 13 mil usuarios registrados y que la prórroga busca ampliar el padrón; el titular de Semovi informará sobre el proceso.",
+        "brief": {
+            "lead": "López-Dóriga Digital reportó que Semovi y SSC ampliaron hasta nuevo aviso el plazo para registrar y emplacar vehículos eléctricos personales. La jefa de Gobierno dijo que hay alrededor de 13 mil usuarios registrados y que la prórroga busca ampliar el padrón.",
+            "context": "Los vehículos motorizados eléctricos personales que superan los 25 km/h requieren placas, tarjeta de circulación y licencia A1 o A2. Los vehículos eléctricos personales de menor potencia y velocidad deben obtener el Distintivo de Movilidad Eléctrica, según la clasificación explicada en la nota.",
+            "pending": "La publicación no fija una nueva fecha límite ni una fecha de entrada en vigor de las multas; la prórroga se anunció hasta nuevo aviso. No debe presentarse una fecha de vencimiento que la autoridad todavía no comunicó.",
+            "method": "Síntesis editorial basada en el artículo de López-Dóriga Digital publicado el 18 de noviembre de 2026; no equivale a verificación independiente."
+        }
+    },
 }
 PHOTO_CREDIT_OVERRIDES = {
     "contexto_repartidores_motocicleta_cdmx": {
@@ -421,6 +433,8 @@ VERIFIED_SOURCE_URLS = frozenset({
     "https://elpais.com/mexico/2026-11-18/m-night-shyamalan-elige-ciudad-de-mexico-para-su-primera-proyeccion-de-nunca-olvides-que-te-quiero.html",
     # Fuente directa verificada para el programa Gallinas en Casa, publicada por Eje Central el 18/11/2026.
     "https://www.ejecentral.com.mx/nuestro-eje/gallinas-gratis-en-cdmx-asi-funcionara-el-programa-de-brugada-para-producir-huevo-en-casa",
+    # Fuente directa verificada para la prórroga de registro de scooters y bicis eléctricas, 18/11/2026.
+    "https://lopezdoriga.com/nacional/ya-debes-emplacar-tu-bici-electrica-o-scooter-cdmx-pospone-multas-y-anunciara-nueva-fecha/",
 })
 SENSITIVE_MEDIA_TITLE = re.compile(
     r"\b(?:violaci[oó]n|abuso sexual|agresi[oó]n sexual|acoso sexual|violencia sexual|"
