@@ -5357,3 +5357,54 @@ class RafaelCastroBasketballPhotoRegressionTests(unittest.TestCase):
         self.assertNotIn("Karol G", belinda_photo.get("topic", ""))
         self.assertNotIn("concierto", belinda_photo.get("topic", "").casefold())
 
+
+
+class EditorialPhotoAssignmentRegressionTests(unittest.TestCase):
+    def test_confirmed_feed_photo_mismatches_use_credited_context_images(self):
+        mapping = photos.EDITORIAL_PHOTO_ASSIGNMENTS
+        self.assertEqual(len(mapping), len(set(mapping.values())))
+        pool = photos._pool()
+        catalog = {photo["id"]: photo for photo in pool}
+        articles = [
+            {
+                "local_url": local_url,
+                "title": "Noticia de prueba no sensible",
+                "photo": representative_photo(
+                    "unrelated_test_photo", "CDMX", "Carnaval o registro de agua", ["archivo"]
+                ),
+            }
+            for local_url in mapping
+        ]
+
+        with patch.object(photos, "_pool", return_value=pool), patch.object(
+            photos, "_load", return_value=[]
+        ):
+            photos.assign_photos(articles)
+
+        for article in articles:
+            expected_id = mapping[article["local_url"]]
+            expected = catalog[expected_id]
+            with self.subTest(local_url=article["local_url"]):
+                self.assertEqual(article["photo"]["id"], expected_id)
+                self.assertEqual(article["photo"]["kind"], "representativa")
+                self.assertEqual(article["photo"]["author"], expected["author"])
+                self.assertEqual(article["photo"]["license"], expected["license"])
+                self.assertEqual(article["photo"]["source"], expected["source"])
+                self.assertEqual(article["photo"]["licenseUrl"], expected["licenseUrl"])
+
+    def test_archived_records_with_wrong_editorial_photo_are_prioritized_for_refresh(self):
+        mapping = photos.EDITORIAL_PHOTO_ASSIGNMENTS
+        wrong = representative_photo(
+            "unrelated_archive_photo", "CDMX", "Carnaval", ["carnaval"]
+        )
+        items = [
+            {"local_url": local_url, "title": "Noticia archivada", "photo": deepcopy(wrong)}
+            for local_url in mapping
+        ]
+        for item in items:
+            self.assertTrue(news.photo_needs_refresh(item))
+        prioritized = news.prioritize_photo_refresh(items, limit=len(items))
+        self.assertEqual(
+            {item["local_url"] for item in prioritized},
+            set(mapping),
+        )
