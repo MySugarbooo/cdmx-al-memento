@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-18 04:46 UTC",
+  "updated": "2026-11-18 07:45 UTC",
   "boroughs": [
     {
       "name": "La Magdalena Contreras",
@@ -3012,7 +3012,7 @@
           "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxObU5oaWtWdXBQRTZVRUtYYnhJYWowSHl1d3lBanhUX2xXRGFvQWJVZ1MzTXI1dnRFbGFCdjRDVklQSVBNR21obFZXcVpuSkp2MmpLUkNlejM3MnFOei1HR0tBTXlCbGNiVnhWTlZxYldaUGk2QWRXY0pyQjdPTlpaVko2eXlScURZeGZtb0paMDRGdFFjNTZJ?oc=5",
           "source": "El Capitalino",
           "date": "2026-11-17",
-          "published_at": "2026-11-18T01:10:58Z",
+          "published_at": "2026-11-18T01:12:53Z",
           "category": "Gobierno",
           "borough": "Azcapotzalco",
           "location": "Azcapotzalco (mencionada en el titular)",
@@ -3022,24 +3022,45 @@
             "context": "Las decisiones administrativas pueden influir en servicios, trámites y derechos; conviene conocer sus condiciones y a quiénes afectan.",
             "pending": "Es indispensable consultar los acuerdos, comunicados o documentos oficiales antes de dar una medida por vigente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
+          },
+          "alternate_versions": [
+            {
+              "title": "Dan bienvenida en Congreso CDMX a alcaldesa de Azcapotzalco",
+              "description": "De acuerdo con El Capitalino, el titular publicado es: «Dan bienvenida en Congreso CDMX a alcaldesa de Azcapotzalco». La información publicada por El Capitalino aborda un asunto que este portal clasifica como Gobierno. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+              "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxObU5oaWtWdXBQRTZVRUtYYnhJYWowSHl1d3lBanhUX2xXRGFvQWJVZ1MzTXI1dnRFbGFCdjRDVklQSVBNR21obFZXcVpuSkp2MmpLUkNlejM3MnFOei1HR0tBTXlCbGNiVnhWTlZxYldaUGk2QWRXY0pyQjdPTlpaVko2eXlScURZeGZtb0paMDRGdFFjNTZJ?oc=5",
+              "source": "El Capitalino",
+              "date": "2026-11-17",
+              "published_at": "2026-11-18T01:10:58Z",
+              "category": "Gobierno",
+              "borough": "Azcapotzalco",
+              "location": "Azcapotzalco (mencionada en el titular)",
+              "local_url": "/noticias/?id=21180b59e805a8323b1b&mes=2026-11",
+              "brief": {
+                "lead": "De acuerdo con El Capitalino, el titular publicado es: «Dan bienvenida en Congreso CDMX a alcaldesa de Azcapotzalco». La información publicada por El Capitalino aborda un asunto que este portal clasifica como Gobierno. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+                "context": "Las decisiones administrativas pueden influir en servicios, trámites y derechos; conviene conocer sus condiciones y a quiénes afectan.",
+                "pending": "Es indispensable consultar los acuerdos, comunicados o documentos oficiales antes de dar una medida por vigente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+              }
+            }
+          ]
         },
         {
           "title": "Nancy Núñez pide casi 3 mil millones de pesos para Azcapotzalco en 2027",
-          "description": "De acuerdo con El Sol de México, el titular publicado es: «Nancy Núñez pide casi 3 mil millones de pesos para Azcapotzalco en 2027». La información publicada por El Sol de México aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "description": "La Prensa informó que la alcaldesa Nancy Marlene Núñez Reséndiz solicitó 2,957.88 millones de pesos para Azcapotzalco en 2027. En la mesa de trabajo del Congreso local también reportó una reducción del 24% en delitos de alto impacto; legisladores plantearon pendientes sobre fugas de agua, bacheo y transparencia.",
           "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPcTB4bkZNY21pTHk3Y19kYWRHMnZBeTd1NEhiVjlUSjhjemlmVnExWGJ2YXVFd0RLb1pvcXAwMXFmcEJNZ0EwdGN5bW43OVhPeU1uYVlsUktINmtxX0NvYV85Wi1ZNGZGSGpNeTV3MEk0NFhsTG90RnlmbmQ2ckJrWGhFQ1Z6VWQwTDdYZnRjcEZYR1R0LUVkMWdPWmFqSy1ueGhra09lNFNZbHlHa1dkLU9TVGhIbHNqQ2g4?oc=5",
-          "source": "El Sol de México",
+          "source": "La Prensa",
           "date": "2026-11-17",
           "published_at": "2026-11-17T23:37:30Z",
           "category": "CDMX",
           "borough": "Azcapotzalco",
           "location": "Azcapotzalco (mencionada en el titular)",
           "local_url": "/noticias/?id=534d17e7c38cfd83b7a1&mes=2026-11",
+          "source_url": "https://oem.com.mx/la-prensa/metropoli/nancy-nunez-pide-casi-3-mil-millones-de-pesos-para-azcapotzalco-en-2027-33182113",
           "brief": {
-            "lead": "De acuerdo con El Sol de México, el titular publicado es: «Nancy Núñez pide casi 3 mil millones de pesos para Azcapotzalco en 2027». La información publicada por El Sol de México aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+            "lead": "La Prensa informó que la alcaldesa Nancy Marlene Núñez Reséndiz solicitó 2,957.88 millones de pesos para Azcapotzalco en 2027. En la mesa de trabajo del Congreso local también reportó una reducción del 24% en delitos de alto impacto; legisladores plantearon pendientes sobre fugas de agua, bacheo y transparencia.",
+            "context": "La petición se presentó durante el análisis del paquete económico de la Ciudad de México para 2027. El presupuesto modificado de la alcaldía para 2026 fue de 2,648.84 millones de pesos.",
+            "pending": "Los 2,957.88 millones son una solicitud, no una asignación aprobada. La cifra de 2,635 fugas pendientes fue expuesta por una legisladora y no constituye una auditoría independiente.",
+            "method": "Síntesis editorial basada en la publicación de La Prensa, firmada por Arturo R. Pansza y fechada el 17 de noviembre de 2026. La nota atribuye las cifras a la alcaldesa y a las intervenciones legislativas; no son verificación independiente."
           },
           "photo": {
             "id": "commons_88470074",
@@ -4861,7 +4882,7 @@
     },
     {
       "name": "Coyoacán",
-      "count": 214,
+      "count": 215,
       "articles": [
         {
           "title": "Giovani Gutiérrez defiende alumbrado de Coyoacán: Morena acusa uso de presupuesto vecinal",
@@ -5026,6 +5047,44 @@
             "license": "CC BY-SA 4.0",
             "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
             "source": "https://commons.wikimedia.org/wiki/File:4._Coyoac%C3%A1n_banca_Ciudad_de_M%C3%A9xico.jpg"
+          }
+        },
+        {
+          "title": "Coyoacán: gasto eficiente, crecimiento, inversión y sin subejercicio: Giovani",
+          "description": "De acuerdo con CDMX Magacín, el titular publicado es: «Coyoacán: gasto eficiente, crecimiento, inversión y sin subejercicio: Giovani». La información publicada por CDMX Magacín aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOVlk0Y2t0eVdEODZSOUVudVlOWExINm1DQXNMRlhnNFo5c3VPbHA0QTZHaGt1OS14SWlwd0stbDYwVU94LWxBMXNjMXI0QUZFd185Ymx3WlpWU1Z1c010UVY1bVBfcFllcXZvV1FWRW9pNkhJWkQ0b2dCc2dULUROcXR0Y3RBOERQM1pmZloyeFRtaExDQ1dN?oc=5",
+          "source": "CDMX Magacín",
+          "date": "2026-11-17",
+          "published_at": "2026-11-18T01:43:33Z",
+          "category": "CDMX",
+          "borough": "Coyoacán",
+          "location": "Coyoacán (mencionada en el titular)",
+          "local_url": "/noticias/?id=0431959120e52f515c8a&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con CDMX Magacín, el titular publicado es: «Coyoacán: gasto eficiente, crecimiento, inversión y sin subejercicio: Giovani». La información publicada por CDMX Magacín aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "contexto_tienda_abarrotes_coyoacan_2018",
+            "kind": "representativa",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/d/de/Tienda_de_abarrotes_en_el_mercado_de_Coyoac%C3%A1n.jpg",
+            "category": "CDMX",
+            "borough": "",
+            "topic": "Tienda de abarrotes en el mercado de Coyoacán, CDMX (2018); imagen representativa, no es una sucursal de Tiendas Neto.",
+            "keywords": [
+              "tienda de abarrotes",
+              "comercio minorista",
+              "tiendas",
+              "Coyoacán",
+              "mercado de Coyoacán",
+              "Ciudad de México"
+            ],
+            "author": "Valeria Delgado",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "source": "https://commons.wikimedia.org/wiki/File:Tienda_de_abarrotes_en_el_mercado_de_Coyoac%C3%A1n.jpg"
           }
         },
         {
@@ -5964,74 +6023,6 @@
             "license": "CC BY-SA 4.0",
             "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
             "source": "https://commons.wikimedia.org/wiki/File:Casa_Gonz%C3%A1lez_de_Cos%C3%ADo,_Coyoac%C3%A1n,_Ciudad_de_M%C3%A9xico.jpg"
-          }
-        },
-        {
-          "title": "Coyoacán reporta reducción de 26% en delitos de alto impacto",
-          "description": "De acuerdo con 24-horas, el titular publicado es: «Coyoacán reporta reducción de 26% en delitos de alto impacto». La información publicada por 24-horas aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOYXA1bS0wN2ZBcUwwZERzWndXbGRDbTNMdmg1QWstVldaSmF0YWFXbXhWM3ZVLU9pckk3SG9LUUJWdDROcThZSVdyc2M3R3ZwYjFmVFNPbVNhNnEzQk1iZ0xBT3JDSE9qQ2Qzcm8wWFZzR3ZTRi1MVUg4ZU1VOGdfY1NQRFplQTlxeHlTdmdB?oc=5",
-          "source": "24-horas",
-          "date": "2026-11-15",
-          "published_at": "2026-11-15T22:01:50Z",
-          "category": "CDMX",
-          "borough": "Coyoacán",
-          "location": "Coyoacán (mencionada en el titular)",
-          "local_url": "/noticias/?id=efa12eef10d4f1a73499&mes=2026-11",
-          "alternate_versions": [
-            {
-              "title": "Coyoacán reporta reducción de 26% en delitos de alto impacto",
-              "description": "De acuerdo con 24-horas, el titular publicado es: «Coyoacán reporta reducción de 26% en delitos de alto impacto». La información publicada por 24-horas aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-              "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOYXA1bS0wN2ZBcUwwZERzWndXbGRDbTNMdmg1QWstVldaSmF0YWFXbXhWM3ZVLU9pckk3SG9LUUJWdDROcThZSVdyc2M3R3ZwYjFmVFNPbVNhNnEzQk1iZ0xBT3JDSE9qQ2Qzcm8wWFZzR3ZTRi1MVUg4ZU1VOGdfY1NQRFplQTlxeHlTdmdB?oc=5",
-              "source": "24-horas",
-              "date": "2026-11-15",
-              "published_at": "2026-11-15T22:01:50Z",
-              "category": "CDMX",
-              "borough": "Coyoacán",
-              "location": "Coyoacán (mencionada en el titular)",
-              "local_url": "/noticias/?id=efa12eef10d4f1a73499&mes=2026-11",
-              "brief": {
-                "lead": "De acuerdo con 24-horas, el titular publicado es: «Coyoacán reporta reducción de 26% en delitos de alto impacto». La información publicada por 24-horas aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-                "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-                "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-              },
-              "photo": {
-                "id": "commons_106559901",
-                "kind": "representativa",
-                "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/1._Coyoac%C3%A1n_Ciudad_de_M%C3%A9xico.jpg/960px-1._Coyoac%C3%A1n_Ciudad_de_M%C3%A9xico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-                "category": "CDMX",
-                "borough": "",
-                "topic": "1. Coyoacán Ciudad de México",
-                "keywords": [
-                  "CDMX"
-                ],
-                "author": "Machristen",
-                "license": "CC BY-SA 4.0",
-                "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-                "source": "https://commons.wikimedia.org/wiki/File:1._Coyoac%C3%A1n_Ciudad_de_M%C3%A9xico.jpg"
-              }
-            }
-          ],
-          "brief": {
-            "lead": "De acuerdo con 24-horas, el titular publicado es: «Coyoacán reporta reducción de 26% en delitos de alto impacto». La información publicada por 24-horas aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "commons_80020584",
-            "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Iglesia_de_San_Juan_Bautista_en_Coyoac%C3%A1n_Ciudad_de_M%C3%A9xico.jpg/960px-Iglesia_de_San_Juan_Bautista_en_Coyoac%C3%A1n_Ciudad_de_M%C3%A9xico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "category": "CDMX",
-            "borough": "",
-            "topic": "Iglesia de San Juan Bautista en Coyoacán Ciudad de México",
-            "keywords": [
-              "CDMX"
-            ],
-            "author": "Juan Carlos Fonseca Mata",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Iglesia_de_San_Juan_Bautista_en_Coyoac%C3%A1n_Ciudad_de_M%C3%A9xico.jpg"
           }
         }
       ]
@@ -7134,26 +7125,68 @@
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           },
           "photo": {
-            "id": "contexto_teatro_metropolitan_2019",
+            "id": "contexto_concierto_foro_sol_2023",
             "kind": "representativa",
-            "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Teatro_Metropolitan%2C_Calle_Independencia_-_monocromo.jpg/960px-Teatro_Metropolitan%2C_Calle_Independencia_-_monocromo.jpg",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Will_of_the_People_World_Tour%2C_Mexico_City-4.jpg/576px-Will_of_the_People_World_Tour%2C_Mexico_City-4.jpg",
             "category": "Cultura",
             "borough": "",
-            "topic": "Fachada del Teatro Metropólitan, Centro Histórico de CDMX (archivo 2019); no muestra el concierto de Golden Ganga de 2027.",
+            "topic": "Concierto de Muse en Foro Sol (hoy Estadio GNP), CDMX (23/01/2023); foto de archivo del recinto, no corresponde a Karol G ni al Corona Capital 2026.",
             "keywords": [
-              "Teatro Metropólitan",
-              "Golden Ganga",
-              "conciertos",
+              "concierto",
               "música en vivo",
-              "Centro Histórico",
-              "Cuauhtémoc",
-              "Independencia"
+              "Foro Sol",
+              "Estadio GNP Seguros",
+              "escenario",
+              "público",
+              "Ciudad de México",
+              "Corona Capital"
             ],
-            "author": "ProtoplasmaKid",
+            "author": "Nanahuatl",
             "license": "CC BY-SA 4.0",
             "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-            "source": "https://commons.wikimedia.org/wiki/File:Teatro_Metropolitan,_Calle_Independencia_-_monocromo.jpg"
-          }
+            "source": "https://commons.wikimedia.org/wiki/File:Will_of_the_People_World_Tour,_Mexico_City-4.jpg"
+          },
+          "alternate_versions": [
+            {
+              "title": "Shirley Manson agradece a México tras histórico concierto de Garbage con mariachi en el Zócalo de CDMX",
+              "description": "De acuerdo con Periódico AM, el titular publicado es: «Shirley Manson agradece a México tras histórico concierto de Garbage con mariachi en el Zócalo de CDMX». El medio Periódico AM presenta conciertos o actividades musicales anunciadas en Ciudad de México. La programación, disponibilidad y costos pueden cambiar; comprueba los datos del organizador.",
+              "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPakpzbTlFT1owLXN4UmhENkNTSm13cl9tUXFaQklNTnJiTzFMcVdtZVZPQlZyTnlmQXVkbWZLWlJhUDJDWWpMLUNJN3JuVFZmQ2pCZHlEX2dfWTVoQUJLQ01tbDV2VkhlNjdNQ0xXamQzaE5QNUFKQXZhZ0NGaFI2Y0Y2Z24wWTNmeDBGSTYyY1E3UkxzbUVCRTRFeTh4Tk1xQUZfdHlOVm9SeW91QmRv?oc=5",
+              "source": "Periódico AM",
+              "date": "2026-11-17",
+              "published_at": "2026-11-18T04:13:37Z",
+              "category": "Cultura",
+              "borough": "Cuauhtémoc",
+              "location": "Zócalo (Plaza de la Constitución), alcaldía Cuauhtémoc, Ciudad de México",
+              "local_url": "/noticias/?id=42843099f97baf821f46&mes=2026-11",
+              "brief": {
+                "lead": "De acuerdo con Periódico AM, el titular publicado es: «Shirley Manson agradece a México tras histórico concierto de Garbage con mariachi en el Zócalo de CDMX». El medio Periódico AM presenta conciertos o actividades musicales anunciadas en Ciudad de México. La programación, disponibilidad y costos pueden cambiar; comprueba los datos del organizador.",
+                "context": "La actividad cultural abre oportunidades de encuentro, aprendizaje y disfrute para habitantes y visitantes.",
+                "pending": "Los accesos, boletos, sedes, cupos y horarios deben consultarse con la institución organizadora. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+              },
+              "photo": {
+                "id": "contexto_teatro_metropolitan_2019",
+                "kind": "representativa",
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Teatro_Metropolitan%2C_Calle_Independencia_-_monocromo.jpg/960px-Teatro_Metropolitan%2C_Calle_Independencia_-_monocromo.jpg",
+                "category": "Cultura",
+                "borough": "",
+                "topic": "Fachada del Teatro Metropólitan, Centro Histórico de CDMX (archivo 2019); no muestra el concierto de Golden Ganga de 2027.",
+                "keywords": [
+                  "Teatro Metropólitan",
+                  "Golden Ganga",
+                  "conciertos",
+                  "música en vivo",
+                  "Centro Histórico",
+                  "Cuauhtémoc",
+                  "Independencia"
+                ],
+                "author": "ProtoplasmaKid",
+                "license": "CC BY-SA 4.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+                "source": "https://commons.wikimedia.org/wiki/File:Teatro_Metropolitan,_Calle_Independencia_-_monocromo.jpg"
+              }
+            }
+          ]
         },
         {
           "title": "Detienen a tres integrantes de La Unión Tepito con 177 dosis de droga en la alcaldía Cuauhtémoc",
@@ -16103,7 +16136,7 @@
     },
     {
       "name": "Tlalpan",
-      "count": 251,
+      "count": 252,
       "articles": [
         {
           "title": "Secuestran a líder sindical de trabajadores de CdMx entre 8 personas en Tlalpan: todo quedó en VIDEO",
@@ -16116,6 +16149,36 @@
           "borough": "Tlalpan",
           "location": "Tlalpan (mencionada en el titular)",
           "local_url": "/noticias/?id=3978d47cb3c0a05abd75&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con Milenio, el titular publicado es: «Secuestran a líder sindical de trabajadores de CdMx entre 8 personas en Tlalpan: todo quedó en VIDEO». La información publicada por Milenio aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_tlalpan",
+            "kind": "representativa",
+            "url": "/assets/alcaldias/tlalpan.jpg",
+            "category": "CDMX",
+            "borough": "Tlalpan",
+            "topic": "Quiosco de la plaza principal de Tlalpan",
+            "author": "farid estrada",
+            "license": "CC BY-SA 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Kiosko_plaza_de_la_constitucion%2C_tlapan.JPG"
+          }
+        },
+        {
+          "title": "Secuestran a líder sindical de trabajadores de CdMx entre 8 personas en Tlalpan: todo quedó en VIDEO",
+          "description": "De acuerdo con Milenio, el titular publicado es: «Secuestran a líder sindical de trabajadores de CdMx entre 8 personas en Tlalpan: todo quedó en VIDEO». La información publicada por Milenio aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQdjNOeWw5YTVNSWZSWExFVksyaTNuVktIbkswTWxyM3BiZWhJSFFWMHdmcjRPYXpVRTdGWi1EV1pFTEh4YmNVWTlUVW9VWmgyN253X0ZZc1NyYmRrYW9hZXhhUjB1LUQ3VGhNLTBBWVhBWmVXbGJjVGZ1dXZQWk9iSW02WHRNWWpOVHU5RnRUUUtVZWfSAZMBQVVfeXFMUHYzTnlsOWE1TUlmUlhMRVZLMmkzblZLSG5LME1scjNwYmVoSUhRVjB3ZnI0T2F6VUU3RlotRFdaRUxIeGJjVVk5VFVvVVpoMjdud19GWXNTcmJka2FvYWV4YVIwdS1EN1RoTS0wQVlYQVplV2xiY1RmdXV2UFpPYkltNlh0TVlqTlR1OUZ0VFFLVWVn?oc=5",
+          "source": "Milenio",
+          "date": "2026-11-17",
+          "published_at": "2026-11-18T04:21:00Z",
+          "category": "CDMX",
+          "borough": "Tlalpan",
+          "location": "Tlalpan (mencionada en el titular)",
+          "local_url": "/noticias/?id=caebd6fdf4edab5ae26c&mes=2026-11",
           "brief": {
             "lead": "De acuerdo con Milenio, el titular publicado es: «Secuestran a líder sindical de trabajadores de CdMx entre 8 personas en Tlalpan: todo quedó en VIDEO». La información publicada por Milenio aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
@@ -17261,39 +17324,6 @@
           ],
           "brief": {
             "lead": "De acuerdo con N+, el titular publicado es: «Vinculan a Segundo Implicado por Homicidio de Exlíder del ISSSTE en Tlalpan». La información publicada por N+ aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
-            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "seguridad",
-            "kind": "representativa",
-            "url": "/assets/fotos/seguridad.jpg",
-            "category": "Seguridad",
-            "borough": "",
-            "topic": "Patrulla de Ciudad de México",
-            "keywords": [
-              "Seguridad"
-            ],
-            "author": "RainerRowe",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.es",
-            "source": "https://commons.wikimedia.org/wiki/File:Patrulla_cdmx.jpg"
-          }
-        },
-        {
-          "title": "Video | Denuncian Robo en Estacionamiento de Calzada de Tlalpan, CDMX",
-          "description": "De acuerdo con N+, el titular publicado es: «Video | Denuncian Robo en Estacionamiento de Calzada de Tlalpan, CDMX». La información publicada por N+ aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOem91TFdkNEZOcW9OaHRFUjJSTU9HeW00U0YwVHQzQk9SMVVyeEl6azd3QU9kTUJ5SThHaDA1X25VdWFmQ0FXdGNWaklqNUY0Y00wTFlXN3huRnM1QnZCSS1lWTM3V0E4eUIxNTF6WWstNzRmdmJlUnpXa3JSUWtRMGZKTkNiX0NXUUxRel9tR2U1eWZoektnNjFseGtCSmZlV0RiaTY4LURRSEtKaGJpbEhtS0xySi1CZ2lHNXBfdUl1TTR4?oc=5",
-          "source": "N+",
-          "date": "2026-11-13",
-          "published_at": "2026-11-14T01:18:17Z",
-          "category": "Seguridad",
-          "borough": "Tlalpan",
-          "location": "Tlalpan (mencionada en el titular)",
-          "local_url": "/noticias/?id=f18b3e808c03875343f0&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con N+, el titular publicado es: «Video | Denuncian Robo en Estacionamiento de Calzada de Tlalpan, CDMX». La información publicada por N+ aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
             "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
             "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
