@@ -3,6 +3,7 @@ import json
 import unittest
 from pathlib import Path
 from scripts.notas_locales import assign_photos, local_link, summarize, is_sensitive_media, RADIO_FORMULA_CASA_ECOLOGICA_SOURCE_URL, INFOBAE_MARIA_LEON_CONCERT_SOURCE_URL, AICM_FLIGHT_SUSPENSION_SOURCE_URL, LA_RAZON_GARBAGE_ZOCALO_SOURCE_URL, INFOBAE_GARBAGE_ZOCALO_SOURCE_URL
+from scripts.notas_locales import AEROMEXICO_MONTEGO_BAY_ROUTE_SOURCE_URL
 from scripts.build_article_seo import article_id, render
 from update_news import clear_sensitive_context_photos, category_by_headline, standardize, photo_needs_refresh, CAPITAL_CDMX_CARE_BUDGET_SOURCE_URL, prioritize_photo_refresh, build_homepage_feed, archive_record_key, dedupe_homepage_events, INFOBAE_AIR_QUALITY_20261115_SOURCE_URL, BILLBOARD_KAROL_G_CDMX_SOURCE_URL, ELCONGRESISTA_BUEN_FIN_CDMX_SOURCE_URL, TV_AZTECA_HOY_NO_CIRCULA_20261116_SOURCE_URL, DIARIO_MORELOS_MEXICO_ACAPULCO_TRAFFIC_SOURCE_URL, DEBATE_RUTA_MAIZ_SOURCE_URL
 
@@ -1271,6 +1272,34 @@ class LocalNewsTests(unittest.TestCase):
         self.assertIn('href="' + AICM_FLIGHT_SUSPENSION_SOURCE_URL + '"', html)
         self.assertIn("10,293 pasajeros", html)
         self.assertNotIn('href="https://news.google.com/', html)
+
+    def test_aeromexico_montego_bay_route_has_direct_source_and_attributed_operating_details(self):
+        result = standardize({
+            "title": "Conectará Aeroméxico Ciudad de México con Montego Bay, Jamaica",
+            "url": "https://news.google.com/rss/articles/aeromexico-montego-bay-20261118?oc=5",
+            "source": "Aviación 21",
+            "date": "2026-11-18",
+            "published_at": "2026-11-18T07:00:45Z",
+            "category": "CDMX",
+        })
+        self.assertIsNotNone(result)
+        self.assertEqual(result["source_url"], AEROMEXICO_MONTEGO_BAY_ROUTE_SOURCE_URL)
+        self.assertEqual(result["category"], "Movilidad")
+        self.assertEqual(result["borough"], "Venustiano Carranza")
+        self.assertIn("Aeropuerto Internacional de la Ciudad de México (AICM)", result["location"])
+        self.assertIn("18 de marzo de 2027", result["brief"]["lead"])
+        self.assertIn("tres vuelos semanales", result["brief"]["lead"])
+        self.assertIn("Boeing 737 MAX", result["brief"]["context"])
+        self.assertIn("166 plazas", result["brief"]["context"])
+        self.assertIn("35 mil pasajeros anuales", result["brief"]["context"])
+        self.assertIn("previsión", result["brief"]["pending"])
+        self.assertIn(AEROMEXICO_MONTEGO_BAY_ROUTE_SOURCE_URL, result["brief"]["method"])
+        self.assertEqual(result["description"], result["brief"]["lead"])
+
+        page = render(result, article_id(result))
+        self.assertIn('href="' + AEROMEXICO_MONTEGO_BAY_ROUTE_SOURCE_URL + '"', page)
+        self.assertIn("Fuente: Aviación 21", page)
+        self.assertNotIn('href="https://news.google.com/', page)
 
     def test_radio_formula_casa_ecologica_is_environmental_and_uses_direct_source(self):
         article = {
