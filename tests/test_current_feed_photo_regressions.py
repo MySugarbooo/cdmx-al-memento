@@ -34,6 +34,8 @@ class CurrentFeedPhotoRegressionTests(unittest.TestCase):
         self.assertEqual(article["photo"].get("kind"), "representativa")
         for field in ("url", "source", "author", "license", "licenseUrl"):
             self.assertTrue(article["photo"].get(field), f"Falta {field} en {article['title']}")
+        self.assertTrue(article["photo"]["source"].startswith("https://commons.wikimedia.org/wiki/File:"))
+        self.assertTrue(article["photo"]["licenseUrl"].startswith("https://creativecommons.org/"))
 
     def test_panda_story_uses_chapultepec_panda_archive_photo(self):
         self.assert_reassigned("nuevo oso panda", "contexto_panda_chapultepec_2015")
@@ -47,6 +49,7 @@ class CurrentFeedPhotoRegressionTests(unittest.TestCase):
     def test_electric_personal_vehicle_registration_stories_use_micromobility_photo(self):
         for fragment in (
             "vehículos eléctricos personales",
+            "amplía plazo para registrar vehículos eléctricos personales",
             "vehículos motorizados eléctricos",
             "prorrogan registro de vehículos eléctricos en cdmx",
             "monopatines y bicicletas eléctricas",
