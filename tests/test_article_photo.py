@@ -446,6 +446,10 @@ class EditorialPhotoOverrideTests(unittest.TestCase):
         self.assertIn("534d17e7c38cfd83b7a1", local_script)
         self.assertIn("Azcapotzalco_-_Panor", local_script)
 
+        local_index = (Path(__file__).resolve().parents[1] /
+                       "noticias/index.html").read_text(encoding="utf-8")
+        self.assertIn("noticias-locales.js?v=20261118-azcapotzalco-budget-photo-0332", local_index)
+
     def test_context_catalog_has_correct_azcapotzalco_and_theatre_credits(self):
         root = Path(__file__).resolve().parents[1]
         catalog = json.loads(
