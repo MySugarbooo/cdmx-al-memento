@@ -96,7 +96,6 @@ VERIFIED_SOURCE_LINKS = {
         "https://www.jornada.com.mx/noticia/2026/11/14/espectaculos/garbage-reune-a-mas-de-90-mil-personas-en-concierto-en-la-ciudad-de-mexico",
     ("Sociedad Noticias", "/noticias/?id=effab44940f001e64f19&mes=2026-11"):
         "https://sociedad-noticias.com/2026/11/15/garbage-reune-a-mas-de-90-mil-personas-en-el-zocalo-de-la-cdmx/",
-    "https://sociedad-noticias.com/2026/11/18/motociclistas-repartidores-acuerdan-dialogo-con-autoridades-de-la-cdmx/",
     ("La Razón de México", "/noticias/?id=e5a213749a521cf90ee8&mes=2026-11"):
         "https://www.razon.com.mx/ciudad/2026/11/15/asisten-mas-de-90-mil-personas-a-concierto-de-garbage-en-el-zocalo-de-la-cdmx/",
     ("Hoy Tamaulipas", "/noticias/?id=5a9a1f1ebbab943a2f55&mes=2026-11"):
@@ -139,6 +138,7 @@ VERIFIED_SOURCE_URLS = frozenset({
     "https://voxpopulinoticias.com.mx/2026/11/belinda-recuerda-su-infancia-tras-cantar-con-karol-g-en-cdmx/",
     "https://oem.com.mx/la-prensa/finanzas/cuatro-alcaldias-concentran-77-4-por-ciento-del-valor-economico-de-cdmx-33177847",
     "https://oem.com.mx/la-prensa/metropoli/nancy-nunez-pide-casi-3-mil-millones-de-pesos-para-azcapotzalco-en-2027-33182113",
+    "https://sociedad-noticias.com/2026/11/18/motociclistas-repartidores-acuerdan-dialogo-con-autoridades-de-la-cdmx/",
     "https://capital-cdmx.org/mas-de-1500-deportistas-participan-en-desfile-por-la-revolucion-mexicana-en-magdalena-contreras/",
     # Fuente directa de A21, consultada y cotejada para la ruta Aeroméxico–Montego Bay.
     "https://a21.com.mx/aerolineas/2026/11/18/conectara-aeromexico-ciudad-de-mexico-con-montego-bay-jamaica/",
