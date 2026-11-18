@@ -194,7 +194,7 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Teatro_Metropolitan%2C_Calle_Independencia_-_monocromo.jpg/960px-Teatro_Metropolitan%2C_Calle_Independencia_-_monocromo.jpg",
         "category": "Cultura",
         "borough": "",
-        "topic": "Teatro Metropólitan, CDMX (archivo 2019); no muestra el concierto de Golden Ganga ni la cartelera del 18 de noviembre de 2026.",
+        "topic": "Teatro Metropólitan, Centro Histórico de CDMX (archivo 2019); fotografía del recinto como contexto cultural, no documenta la cartelera ni los conciertos del 18 de noviembre de 2026.",
         "keywords": [
           "Teatro Metropólitan",
           "Golden Ganga",
@@ -208,7 +208,8 @@
         "author": "ProtoplasmaKid",
         "license": "CC BY-SA 4.0",
         "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-        "source": "https://commons.wikimedia.org/wiki/File:Teatro_Metropolitan,_Calle_Independencia_-_monocromo.jpg"
+        "source": "https://commons.wikimedia.org/wiki/File:Teatro_Metropolitan,_Calle_Independencia_-_monocromo.jpg",
+        "adaptation": "Fotografía del recinto tomada el 19 de enero de 2019; imagen de contexto cultural, no documenta los eventos anunciados."
       }
     },
     {
@@ -218,7 +219,7 @@
       "source": "Maya Comunicación",
       "date": "2026-11-18",
       "published_at": "2026-11-18T17:18:53Z",
-      "category": "Seguridad",
+      "category": "Movilidad",
       "borough": "",
       "location": "Ciudad de México (sin alcaldía identificada)",
       "local_url": "/noticias/?id=c90abc294def53836a1f&mes=2026-11",
@@ -290,7 +291,7 @@
       "source": "Maya Comunicación",
       "date": "2026-11-18",
       "published_at": "2026-11-18T17:13:34Z",
-      "category": "Gobierno",
+      "category": "Movilidad",
       "borough": "",
       "location": "Ciudad de México (sin alcaldía identificada)",
       "local_url": "/noticias/?id=61a29006a0c0e622c2f4&mes=2026-11",
@@ -303,10 +304,14 @@
       "photo": {
         "id": "contexto_grin_escooter_cdmx_2019",
         "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Grin_e-scooter_rider_in_Mexico_City.jpg/1280px-Grin_e-scooter_rider_in_Mexico_City.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
         "category": "Movilidad",
-        "borough": "",
         "topic": "Persona en scooter eléctrico Grin por carril ciclista de CDMX (23/10/2019); foto de archivo, no del trámite de 2026.",
+        "file": "Grin e-scooter rider in Mexico City.jpg",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Grin_e-scooter_rider_in_Mexico_City.jpg/1280px-Grin_e-scooter_rider_in_Mexico_City.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+        "source": "https://commons.wikimedia.org/wiki/File:Grin_e-scooter_rider_in_Mexico_City.jpg",
+        "author": "Sonia Medina",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
         "keywords": [
           "scooter eléctrico",
           "scooter",
@@ -315,12 +320,17 @@
           "carril ciclista",
           "Ciudad de México",
           "CDMX",
-          "VEP"
+          "VEP",
+          "VEMEPE",
+          "motos eléctricas",
+          "bicicletas eléctricas",
+          "registro vehicular"
         ],
-        "author": "Sonia Medina",
-        "license": "CC BY 3.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
-        "source": "https://commons.wikimedia.org/wiki/File:Grin_e-scooter_rider_in_Mexico_City.jpg"
+        "borough": "",
+        "captured_at": "2019-10-23",
+        "uploaded_at": "2020-04-13",
+        "context": "Imagen de carácter ilustrativo y referencial; no constituye evidencia gráfica de los hechos descritos.",
+        "adaptation": "Miniatura oficial de Wikimedia Commons; sin modificación."
       }
     },
     {
@@ -719,7 +729,7 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Will_of_the_People_World_Tour%2C_Mexico_City-4.jpg/576px-Will_of_the_People_World_Tour%2C_Mexico_City-4.jpg",
         "category": "Cultura",
         "borough": "",
-        "topic": "Muse en Foro Sol, CDMX (23/01/2023); foto de archivo, no corresponde a Karol G ni a shows de Garbage o Crepúsculo.",
+        "topic": "Concierto de Muse en Foro Sol (hoy Estadio GNP), CDMX (23/01/2023); fotografía de archivo representativa de música en vivo, no corresponde a Garbage en el Zócalo ni al concierto sinfónico de Crepúsculo.",
         "keywords": [
           "concierto",
           "música en vivo",
@@ -733,7 +743,9 @@
         "author": "Nanahuatl",
         "license": "CC BY-SA 4.0",
         "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-        "source": "https://commons.wikimedia.org/wiki/File:Will_of_the_People_World_Tour,_Mexico_City-4.jpg"
+        "source": "https://commons.wikimedia.org/wiki/File:Will_of_the_People_World_Tour,_Mexico_City-4.jpg",
+        "context": "Fotografía de archivo de un concierto de Muse en Foro Sol; representa un espectáculo musical en CDMX, no documenta los eventos mencionados en las noticias.",
+        "adaptation": "Miniatura oficial de Wikimedia Commons; sin modificación."
       }
     },
     {
@@ -1020,7 +1032,7 @@
     },
     {
       "title": "Gallinas gratis en CDMX: así funcionará el programa de Brugada para producir huevo en casa",
-      "description": "De acuerdo con Eje Central, el titular publicado es: «Gallinas gratis en CDMX: así funcionará el programa de Brugada para producir huevo en casa». La información publicada por Eje Central aborda un asunto que este portal clasifica como Gobierno. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "description": "Eje Central informó que Gallinas en Casa busca impulsar la producción doméstica de huevo mediante la entrega de gallinas ponedoras a familias con espacio adecuado, principalmente en zonas rurales de la Ciudad de México. La jefa de Gobierno señaló que habrá asesoría técnica; al publicarse la nota aún no se habían detallado fechas de inscripción, requisitos específicos ni número de hogares beneficiarios.",
       "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQNDY2c19EbUtWdWVYVkFOdGpmT3pkazRMT0pyQ2MwUEZVNnhfc2FEZDE5MElKNk1NakFNeTdKWGpxMU9mOTBoSEhncFZ4azZXLVRTaDZ3aEx6XzVhRlZ4S1BSSHlEdXBsRTdUSV9MS3hmd3BQY3VSMll6NG9iZWV0amVqM0U5dzBGWEVHVHpQSlVnRkpkOTB6c1FRNEpQd3pqdnEtMnVRWkJTc09RaDE4a09CSm9LTkFNSDdZZkVzTHVvb2JrU0RoUzFtRQ?oc=5",
       "source": "Eje Central",
       "date": "2026-11-18",
@@ -1030,33 +1042,37 @@
       "location": "Ciudad de México (sin alcaldía identificada)",
       "local_url": "/noticias/?id=3ba1e63aebcbe83062ef&mes=2026-11",
       "brief": {
-        "lead": "De acuerdo con Eje Central, el titular publicado es: «Gallinas gratis en CDMX: así funcionará el programa de Brugada para producir huevo en casa». La información publicada por Eje Central aborda un asunto que este portal clasifica como Gobierno. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-        "context": "Las decisiones administrativas pueden influir en servicios, trámites y derechos; conviene conocer sus condiciones y a quiénes afectan.",
-        "pending": "Es indispensable consultar los acuerdos, comunicados o documentos oficiales antes de dar una medida por vigente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+        "lead": "Eje Central reportó que Gallinas en Casa contempla entregar gallinas ponedoras a familias con espacio suficiente para instalar un corral, principalmente en zonas rurales de CDMX. La jefa de Gobierno dijo que el objetivo es producir huevo para autoconsumo y fortalecer la soberanía alimentaria; también se prevé asesoría técnica.",
+        "context": "El programa se coordinará con Casa Ecológica, que incluye captación de lluvia, calentadores solares y huertos. La iniciativa puede llegar a viviendas urbanas si cuentan con condiciones adecuadas para mantener las aves.",
+        "pending": "Al momento de la publicación no se habían anunciado fechas de registro, requisitos específicos ni número de hogares beneficiarios. No debe presentarse como convocatoria abierta ni como entrega ya realizada.",
+        "method": "Síntesis editorial basada en el artículo de Eje Central publicado el 18 de noviembre de 2026; no equivale a verificación independiente."
       },
       "photo": {
-        "id": "contexto_pension_adultos_mayores_2019",
+        "id": "contexto_gallinero_chinampa_xochimilco",
         "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Pension_Adultos_Mayores_03.jpg/960px-Pension_Adultos_Mayores_03.jpg",
-        "category": "Gobierno",
-        "borough": "",
-        "topic": "Archivo de la Pensión para el Bienestar de Adultos Mayores en CDMX (02/04/2019); no documenta el programa Pensión Hombres Bienestar 2026.",
+        "category": "Servicios",
+        "topic": "Gallinero artesanal en una chinampa de Xochimilco (12/04/2018); imagen de contexto, no documenta el programa Gallinas en Casa de 2026.",
+        "file": "Gallinero hecho a mano en chinampa.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Gallinero_hecho_a_mano_en_chinampa.jpg/960px-Gallinero_hecho_a_mano_en_chinampa.jpg",
+        "source": "https://commons.wikimedia.org/wiki/File:Gallinero_hecho_a_mano_en_chinampa.jpg",
+        "author": "Diego M.P.",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
         "keywords": [
-          "pensión",
-          "pension",
-          "adultos mayores",
-          "personas mayores",
-          "bienestar",
-          "apoyo económico",
-          "programa social",
-          "tarjeta de pensión"
+          "gallinas",
+          "gallinero",
+          "aves de corral",
+          "ponedoras",
+          "huevo",
+          "Xochimilco",
+          "chinampa"
         ],
-        "author": "Gobierno de la Ciudad de México",
-        "license": "CC BY 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
-        "source": "https://commons.wikimedia.org/wiki/File:Pension_Adultos_Mayores_03.jpg"
-      }
+        "borough": "Xochimilco",
+        "captured_at": "2018-04-12",
+        "context": "Fotografía de archivo de un gallinero artesanal con dos gallinas en una chinampa de Xochimilco; representa el tema de crianza de aves, no muestra a las personas beneficiarias ni la entrega de gallinas del programa de 2026.",
+        "adaptation": "Fotografía original de Diego M.P. en Wikimedia Commons; sin modificación."
+      },
+      "source_url": "https://www.ejecentral.com.mx/nuestro-eje/gallinas-gratis-en-cdmx-asi-funcionara-el-programa-de-brugada-para-producir-huevo-en-casa"
     },
     {
       "title": "Metro CDMX hoy | Ojo con estas tres líneas si vas con el tiempo justo",
@@ -1380,36 +1396,45 @@
     },
     {
       "title": "Nuevo colapso vial en CDMX; en Cuajimalpa, encapuchados bloquearon accesos a Santa Fe",
-      "description": "De acuerdo con La Jornada, el titular publicado es: «Nuevo colapso vial en CDMX; en Cuajimalpa, encapuchados bloquearon accesos a Santa Fe». La información publicada por La Jornada aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "description": "La Jornada reportó nueve movilizaciones y bloqueos en la Ciudad de México; uno de ellos cerró por más de cinco horas los accesos a Santa Fe, en Cuajimalpa, desde las 7:00 horas del 17 de noviembre.",
       "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9FOGZ3cU1ObHpEWkNUY09DQU9RUzRRU0l0WVlkNDJJT1VfNzBjMHgtNDNpUFluVDZxbExFZzJUbUlnRGUxSTF1a1RadXVjeUliU2w2ZHg1OTliWURCN1JjZ0pmLTQ?oc=5",
       "source": "La Jornada",
       "date": "2026-11-18",
       "published_at": "2026-11-18T10:00:00Z",
-      "category": "CDMX",
+      "category": "Movilidad",
       "borough": "Cuajimalpa de Morelos",
       "location": "Cuajimalpa de Morelos (mencionada en el titular)",
       "local_url": "/noticias/?id=746166b9b292b1c7f60c&mes=2026-11",
       "brief": {
-        "lead": "De acuerdo con La Jornada, el titular publicado es: «Nuevo colapso vial en CDMX; en Cuajimalpa, encapuchados bloquearon accesos a Santa Fe». La información publicada por La Jornada aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-        "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-        "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+        "lead": "La Jornada informó que una jornada de nueve movilizaciones incluyó un bloqueo en los accesos a Santa Fe que comenzó alrededor de las 7:00 y se prolongó poco más de cinco horas. El diario reportó que unas 400 personas participaron y que dijeron ser familiares de internos del penal federal 4 de Tepic; también atribuyó a autoridades la versión de que habrían sido convocadas y pagadas por personas cercanas a Lenin Canchola.",
+        "context": "Los cierres afectaron avenidas como Vasco de Quiroga, Carlos Echanove, Juan Salvador Agraz, Mario Pani y Prolongación Reforma; la nota también reportó retrasos en el transporte público.",
+        "pending": "La presunta relación de los convocantes con Lenin Canchola y los pagos es una versión atribuida por La Jornada a autoridades; no debe presentarse como una determinación judicial ni como un hecho probado.",
+        "method": "Síntesis basada en la nota de La Jornada, firmada por Kevin Ruiz, Nayelli Ramírez, Jared Laureles, Carolina Gómez y Jessica Xantomila, publicada el 18 de noviembre de 2026; no equivale a verificación independiente."
       },
       "photo": {
-        "id": "commons_51894951",
+        "id": "contexto_santa_fe_cuajimalpa_denuncias",
         "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Bicicletas_en_camell%C3%B3n_en_Avenida_%C3%81lvaro_Obreg%C3%B3n%2C_Ciudad_de_M%C3%A9xico.jpg/960px-Bicicletas_en_camell%C3%B3n_en_Avenida_%C3%81lvaro_Obreg%C3%B3n%2C_Ciudad_de_M%C3%A9xico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
         "category": "Alcaldías",
-        "borough": "",
-        "topic": "Bicicletas en camellón en Avenida Álvaro Obregón, Ciudad de México",
-        "keywords": [
-          "Álvaro Obregón Ciudad de México"
-        ],
-        "author": "Raul21940",
+        "topic": "Vista aérea de Centro Santa Fe, alcaldía Cuajimalpa, CDMX (archivo 2024); imagen de contexto de la zona, no muestra el bloqueo ni el tránsito del 17 de noviembre de 2026.",
+        "file": "Centro Santa Fe - vista aérea.jpg",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Centro_Santa_Fe_-_vista_a%C3%A9rea.jpg/960px-Centro_Santa_Fe_-_vista_a%C3%A9rea.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+        "source": "https://commons.wikimedia.org/wiki/File:Centro_Santa_Fe_-_vista_a%C3%A9rea.jpg",
+        "author": "ProtoplasmaKid",
         "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Bicicletas_en_camell%C3%B3n_en_Avenida_%C3%81lvaro_Obreg%C3%B3n,_Ciudad_de_M%C3%A9xico.jpg"
-      }
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "keywords": [
+          "Santa Fe",
+          "Cuajimalpa",
+          "Centro Santa Fe",
+          "Ciudad de México",
+          "denuncias por colonia"
+        ],
+        "captured_at": "2024-10-02",
+        "context": "Vista aérea del Centro Santa Fe para ubicar la zona mencionada por La Jornada; no documenta la manifestación ni las afectaciones viales del día.",
+        "adaptation": "Miniatura oficial de Wikimedia Commons; sin modificación.",
+        "borough": "Cuajimalpa de Morelos"
+      },
+      "source_url": "https://www.jornada.com.mx/2026/11/18/capital/028n1cap"
     }
   ]
 }
