@@ -512,27 +512,29 @@ def is_tvazteca_revolucion_desfile_2026(article):
 
 def is_capital_cdmx_magdalena_sports_parade(article):
     """Identifica el desfile deportivo del 17/11/2026 en Magdalena Contreras."""
-    title = _photo_fold(article.get("title"))
+    if (
+        str(article.get("date") or "") != "2026-11-17"
+        or str(article.get("source") or "").casefold() != "capital cdmx"
+    ):
+        return False
+    title = str(article.get("title") or "").casefold()
     return (
-        str(article.get("date") or "") == "2026-11-17"
-        and _photo_fold(article.get("source")) == "capital cdmx"
-        and re.search(r"\b1\s*500 deportistas\b", title) is not None
+        "1,500 deportistas" in title
         and "desfile" in title
-        and "revolucion mexicana" in title
+        and "revolución mexicana" in title
         and "magdalena contreras" in title
     )
 
 
 def is_la_prensa_financial_inclusion_photo_story(article):
-    """Identifica la nota financiera de La Prensa para asignar un skyline urbano contextual."""
-    title = _photo_fold(article.get("title"))
-    return (
-        str(article.get("date") or "") == "2026-11-17"
-        and _photo_fold(article.get("source")) == "la prensa"
-        and "cuatro alcaldias concentran" in title
-        and re.search(r"\b77\s*4 por ciento\b", title) is not None
-        and "valor economico de cdmx" in title
-    )
+    """Identifica la nota financiera de La Prensa sin normalizar el título por cada foto."""
+    if (
+        str(article.get("date") or "") != "2026-11-17"
+        or str(article.get("source") or "").casefold() != "la prensa"
+    ):
+        return False
+    title = str(article.get("title") or "").casefold()
+    return title.startswith("cuatro alcaldías concentran 77.4 por ciento del valor económico de cdmx")
 
 
 def is_capital_cdmx_tlalpan_colony_crime_stats(article):
