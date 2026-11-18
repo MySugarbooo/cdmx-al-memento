@@ -545,10 +545,20 @@ class EditorialArchiveSyncTests(unittest.TestCase):
             "https://commons.wikimedia.org/wiki/File:Carteros_en_motocicleta_del_Servicio_Postal_Mexicano,_2013.jpg",
         )
         feed = json.loads((root / "news.json").read_text(encoding="utf-8"))
+        apply_editorial_record_overrides(feed["articles"])
         articles = [
             item for item in feed["articles"]
             if item.get("photo", {}).get("id") == photo_id
         ]
+        maya_url = "/noticias/?id=c90abc294def53836a1f&mes=2026-11"
+        maya = next((item for item in feed["articles"] if item.get("local_url") == maya_url), None)
+        if maya is None:
+            # El feed de esta rama puede ser anterior a la siguiente recopilación;
+            # validar el override con un registro mínimo evita exigir que el titular
+            # ya esté en la selección reciente.
+            maya = {"local_url": maya_url, "category": "Seguridad"}
+            apply_editorial_record_overrides([maya])
+        self.assertEqual(maya["category"], "Movilidad")
         self.assertTrue(articles, "El feed debe conservar al menos una noticia que use la foto representativa")
         for article in articles:
             # El feed puede asociar esta foto a noticias distintas de la nota de
@@ -593,10 +603,13 @@ class EditorialArchiveSyncTests(unittest.TestCase):
         deduplicated_optional_urls = {remain_elpais_url}
         expected_photos = {
             "/noticias/?id=caebd6fdf4edab5ae26c&mes=2026-11": "contexto_patrullas_iztapalapa_denuncias",
-            "/noticias/?id=486d289d63499706dd71&mes=2026-11": "contexto_semovi_oficinas_roma_2022",
             "/noticias/?id=746166b9b292b1c7f60c&mes=2026-11": "contexto_santa_fe_cuajimalpa_denuncias",
             "/noticias/?id=451fbd723d5e452167e8&mes=2026-11": "contexto_embarazo_representativo_niaid",
             "/noticias/?id=3225e4d7915c70c83136&mes=2026-11": "contexto_museo_historia_natural_2013",
+            "/noticias/?id=3ba1e63aebcbe83062ef&mes=2026-11": "contexto_gallinero_chinampa_xochimilco",
+            "/noticias/?id=b146b3d1dafcb65af69e&mes=2026-11": "contexto_grin_escooter_cdmx_2019",
+            "/noticias/?id=61a29006a0c0e622c2f4&mes=2026-11": "contexto_grin_escooter_cdmx_2019",
+            "/noticias/?id=486d289d63499706dd71&mes=2026-11": "contexto_grin_escooter_cdmx_2019",
             "/noticias/?id=b5e636680f6dd0f0df25&mes=2026-11": "contexto_cineteca_nacional_2015",
             "/noticias/?id=3dc6cf266cdcd563bb01&mes=2026-11": "contexto_cineteca_nacional_2015",
         }
@@ -617,6 +630,9 @@ class EditorialArchiveSyncTests(unittest.TestCase):
             "/noticias/?id=746166b9b292b1c7f60c&mes=2026-11": "https://www.jornada.com.mx/2026/11/18/capital/028n1cap",
             "/noticias/?id=451fbd723d5e452167e8&mes=2026-11": "https://oem.com.mx/la-prensa/metropoli/apoyo-a-embarazadas-en-cdmx-registrate-por-whatsapp-y-recibe-hasta-4-mil-800-pesos-33185861",
             "/noticias/?id=3225e4d7915c70c83136&mes=2026-11": "https://www.infobae.com/mexico/2026/11/18/harry-potter-llega-al-museo-de-historia-natural-de-cdmx-para-la-ultima-noche-de-museos-de-2026/",
+            "/noticias/?id=3ba1e63aebcbe83062ef&mes=2026-11": "https://www.ejecentral.com.mx/nuestro-eje/gallinas-gratis-en-cdmx-asi-funcionara-el-programa-de-brugada-para-producir-huevo-en-casa",
+            "/noticias/?id=b146b3d1dafcb65af69e&mes=2026-11": "https://lopezdoriga.com/nacional/ya-debes-emplacar-tu-bici-electrica-o-scooter-cdmx-pospone-multas-y-anunciara-nueva-fecha/",
+            "/noticias/?id=486d289d63499706dd71&mes=2026-11": "https://889noticias.mx/noticias/semovi-cdmx-otorga-prorroga-indefinida-para-emplacamiento-de-vehiculos-electricos/",
             "/noticias/?id=b5e636680f6dd0f0df25&mes=2026-11": "https://www.infobae.com/mexico/2026/11/18/m-night-shyamalan-anuncia-visita-a-cdmx-para-proyectar-remain-su-nueva-pelicula/",
             "/noticias/?id=3dc6cf266cdcd563bb01&mes=2026-11": "https://elpais.com/mexico/2026-11-18/m-night-shyamalan-elige-ciudad-de-mexico-para-su-primera-proyeccion-de-nunca-olvides-que-te-quiero.html",
         }
@@ -629,6 +645,33 @@ class EditorialArchiveSyncTests(unittest.TestCase):
                 self.assertEqual(item["source_url"], source_url)
                 article_id = local_url.split("id=", 1)[1].split("&", 1)[0]
                 self.assertIn('href="' + source_url + '"', render(item, article_id))
+        scooter_889_url = "/noticias/?id=486d289d63499706dd71&mes=2026-11"
+        scooter_889 = by_url.get(scooter_889_url) or archive_by_url.get(scooter_889_url)
+        self.assertIsNotNone(scooter_889, "La nota de 88.9 Noticias debe estar en portada o hemeroteca.")
+        self.assertEqual(scooter_889["category"], "Movilidad")
+        self.assertIn("hasta nuevo aviso", scooter_889["description"])
+        scooter_url = "/noticias/?id=b146b3d1dafcb65af69e&mes=2026-11"
+        scooter = by_url.get(scooter_url) or archive_by_url.get(scooter_url)
+        self.assertIsNotNone(scooter, "La nota sobre scooters debe estar en portada o hemeroteca.")
+        self.assertEqual(scooter["category"], "Movilidad")
+        self.assertIn("13 mil usuarios", scooter["description"])
+        self.assertIn("hasta nuevo aviso", scooter["description"])
+
+        maya_vehicle_url = "/noticias/?id=61a29006a0c0e622c2f4&mes=2026-11"
+        maya_vehicle = by_url.get(maya_vehicle_url) or archive_by_url.get(maya_vehicle_url)
+        self.assertIsNotNone(maya_vehicle, "La nota de registros de vehículos eléctricos debe conservarse.")
+        self.assertEqual(maya_vehicle["category"], "Movilidad")
+        self.assertEqual(maya_vehicle["source"], "Maya Comunicación")
+        self.assertFalse(maya_vehicle.get("source_url"), "No inventar una URL directa de Maya Comunicación.")
+
+        gallinas_url = "/noticias/?id=3ba1e63aebcbe83062ef&mes=2026-11"
+        gallinas = by_url.get(gallinas_url) or archive_by_url.get(gallinas_url)
+        self.assertIsNotNone(gallinas, "La nota de Gallinas en Casa debe estar en portada o hemeroteca.")
+        self.assertIn("Gallinas en Casa", gallinas["description"])
+        self.assertIn("fechas de registro", gallinas["brief"]["pending"])
+        self.assertNotIn("pension", gallinas["photo"]["topic"].lower())
+        self.assertIn("no documenta el programa", gallinas["photo"]["topic"].lower())
+
         pregnancy_url = "/noticias/?id=451fbd723d5e452167e8&mes=2026-11"
         pregnancy = by_url.get(pregnancy_url) or archive_by_url.get(pregnancy_url)
         self.assertEqual(pregnancy["source"], "La Prensa")
@@ -638,6 +681,25 @@ class EditorialArchiveSyncTests(unittest.TestCase):
         )
         catalog_ids = {photo["id"] for photo in catalog["photos"]}
         self.assertTrue(set(expected_photos.values()).issubset(catalog_ids))
+        gallinero_photo = next(
+            photo for photo in catalog["photos"]
+            if photo["id"] == "contexto_gallinero_chinampa_xochimilco"
+        )
+        self.assertEqual(gallinero_photo["author"], "Diego M.P.")
+        self.assertEqual(gallinero_photo["license"], "CC BY-SA 4.0")
+
+        grin_photo = next(photo for photo in catalog["photos"] if photo["id"] == "contexto_grin_escooter_cdmx_2019")
+        for local_url in (
+            "/noticias/?id=b146b3d1dafcb65af69e&mes=2026-11",
+            "/noticias/?id=486d289d63499706dd71&mes=2026-11",
+            "/noticias/?id=61a29006a0c0e622c2f4&mes=2026-11",
+        ):
+            item = by_url.get(local_url) or archive_by_url.get(local_url)
+            self.assertIsNotNone(item)
+            self.assertEqual(item["photo"]["url"], grin_photo["url"])
+            self.assertEqual(item["photo"]["source"], grin_photo["source"])
+            self.assertEqual(item["photo"]["author"], grin_photo["author"])
+            self.assertEqual(item["photo"]["license"], grin_photo["license"])
 
 
 

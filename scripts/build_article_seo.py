@@ -63,33 +63,6 @@ EDITORIAL_PHOTO_OVERRIDES = {
         "kind": "representativa",
         "context": "Fotografía de archivo de patrullas de la Ciudad de México; ilustra el tema de seguridad pública, no el hecho reportado."
     },
-    "/noticias/?id=486d289d63499706dd71&mes=2026-11": {
-        "id": "contexto_semovi_oficinas_roma_2022",
-        "kind": "representativa",
-        "category": "Gobierno",
-        "topic": "Fachada de oficinas de SEMOVI en colonia Roma, CDMX (2022); imagen representativa de la dependencia, no documenta la prórroga ni el trámite de emplacamiento.",
-        "file": "Oficinas de la Secretaría de Movilidad de la Ciudad de México.jpg",
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Oficinas_de_la_Secretar%C3%ADa_de_Movilidad_de_la_Ciudad_de_M%C3%A9xico.jpg/1280px-Oficinas_de_la_Secretar%C3%ADa_de_Movilidad_de_la_Ciudad_de_M%C3%A9xico.jpg",
-        "source": "https://commons.wikimedia.org/wiki/File:Oficinas_de_la_Secretar%C3%ADa_de_Movilidad_de_la_Ciudad_de_M%C3%A9xico.jpg",
-        "author": "ProtoplasmaKid",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-        "keywords": [
-            "SEMOVI",
-            "Secretaría de Movilidad",
-            "licencia de conducir",
-            "licencia permanente",
-            "trámite vehicular",
-            "control vehicular",
-            "examen de manejo",
-            "oficinas",
-            "colonia Roma"
-        ],
-        "captured_at": "2022-02-28",
-        "uploaded_at": "2022-07-07",
-        "context": "Fotografía de archivo de las oficinas de la Secretaría de Movilidad; no muestra la decisión administrativa ni el trámite.",
-        "adaptation": "Miniatura oficial de Wikimedia Commons; sin modificación."
-    },
     "/noticias/?id=746166b9b292b1c7f60c&mes=2026-11": {
         "id": "contexto_santa_fe_cuajimalpa_denuncias",
         "kind": "representativa",
@@ -211,6 +184,86 @@ EDITORIAL_PHOTO_OVERRIDES = {
         "context": "Fotografía de archivo de la Cineteca Nacional; Infobae sitúa la función especial de Remain en Cinépolis Miguel Ángel de Quevedo 227, no en la Cineteca.",
         "adaptation": "Miniatura oficial de Wikimedia Commons; sin modificación."
     },
+    "/noticias/?id=3ba1e63aebcbe83062ef&mes=2026-11": {
+        "id": "contexto_gallinero_chinampa_xochimilco",
+        "kind": "representativa",
+        "category": "Servicios",
+        "topic": "Gallinero artesanal en una chinampa de Xochimilco (12/04/2018); imagen de contexto, no documenta el programa Gallinas en Casa de 2026.",
+        "file": "Gallinero hecho a mano en chinampa.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Gallinero_hecho_a_mano_en_chinampa.jpg/960px-Gallinero_hecho_a_mano_en_chinampa.jpg",
+        "source": "https://commons.wikimedia.org/wiki/File:Gallinero_hecho_a_mano_en_chinampa.jpg",
+        "author": "Diego M.P.",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "keywords": [
+            "gallinas",
+            "gallinero",
+            "aves de corral",
+            "ponedoras",
+            "huevo",
+            "Xochimilco",
+            "chinampa"
+        ],
+        "borough": "Xochimilco",
+        "captured_at": "2018-04-12",
+        "context": "Fotografía de archivo de un gallinero artesanal con dos gallinas en una chinampa de Xochimilco; representa el tema de crianza de aves, no muestra a las personas beneficiarias ni la entrega de gallinas del programa de 2026.",
+        "adaptation": "Fotografía original de Diego M.P. en Wikimedia Commons; sin modificación."
+    },
+    "/noticias/?id=b146b3d1dafcb65af69e&mes=2026-11": {
+        "id": "contexto_grin_escooter_cdmx_2019",
+        "kind": "representativa",
+        "category": "Movilidad",
+        "topic": "Persona en scooter eléctrico Grin por carril ciclista de CDMX (23/10/2019); foto de archivo, no del trámite de 2026.",
+        "file": "Grin e-scooter rider in Mexico City.jpg",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Grin_e-scooter_rider_in_Mexico_City.jpg/1280px-Grin_e-scooter_rider_in_Mexico_City.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+        "source": "https://commons.wikimedia.org/wiki/File:Grin_e-scooter_rider_in_Mexico_City.jpg",
+        "author": "Sonia Medina",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+        "keywords": ["scooter eléctrico", "scooter", "Grin", "micromovilidad", "carril ciclista", "Ciudad de México", "CDMX", "VEP", "VEMEPE", "motos eléctricas", "bicicletas eléctricas", "registro vehicular"],
+        "borough": "",
+        "captured_at": "2019-10-23",
+        "uploaded_at": "2020-04-13",
+        "context": "Imagen de carácter ilustrativo y referencial; no constituye evidencia gráfica de los hechos descritos.",
+        "adaptation": "Miniatura oficial de Wikimedia Commons; sin modificación."
+    },
+    "/noticias/?id=61a29006a0c0e622c2f4&mes=2026-11": {
+        "id": "contexto_grin_escooter_cdmx_2019",
+        "kind": "representativa",
+        "category": "Movilidad",
+        "topic": "Persona en scooter eléctrico Grin por carril ciclista de CDMX (23/10/2019); foto de archivo, no del trámite de 2026.",
+        "file": "Grin e-scooter rider in Mexico City.jpg",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Grin_e-scooter_rider_in_Mexico_City.jpg/1280px-Grin_e-scooter_rider_in_Mexico_City.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+        "source": "https://commons.wikimedia.org/wiki/File:Grin_e-scooter_rider_in_Mexico_City.jpg",
+        "author": "Sonia Medina",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+        "keywords": ["scooter eléctrico", "scooter", "Grin", "micromovilidad", "carril ciclista", "Ciudad de México", "CDMX", "VEP", "VEMEPE", "motos eléctricas", "bicicletas eléctricas", "registro vehicular"],
+        "borough": "",
+        "captured_at": "2019-10-23",
+        "uploaded_at": "2020-04-13",
+        "context": "Imagen de carácter ilustrativo y referencial; no constituye evidencia gráfica de los hechos descritos.",
+        "adaptation": "Miniatura oficial de Wikimedia Commons; sin modificación."
+    },
+    "/noticias/?id=486d289d63499706dd71&mes=2026-11": {
+        "id": "contexto_grin_escooter_cdmx_2019",
+        "kind": "representativa",
+        "category": "Movilidad",
+        "topic": "Persona en scooter eléctrico Grin por carril ciclista de CDMX (23/10/2019); foto de archivo, no del trámite de 2026.",
+        "file": "Grin e-scooter rider in Mexico City.jpg",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Grin_e-scooter_rider_in_Mexico_City.jpg/1280px-Grin_e-scooter_rider_in_Mexico_City.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+        "source": "https://commons.wikimedia.org/wiki/File:Grin_e-scooter_rider_in_Mexico_City.jpg",
+        "author": "Sonia Medina",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+        "keywords": ["scooter eléctrico", "scooter", "Grin", "micromovilidad", "carril ciclista", "Ciudad de México", "CDMX", "VEP", "VEMEPE", "motos eléctricas", "bicicletas eléctricas", "registro vehicular"],
+        "borough": "",
+        "captured_at": "2019-10-23",
+        "uploaded_at": "2020-04-13",
+        "context": "Imagen de carácter ilustrativo y referencial; no constituye evidencia gráfica de los hechos descritos.",
+        "adaptation": "Miniatura oficial de Wikimedia Commons; sin modificación."
+    },
+
 }
 
 EDITORIAL_ARCHIVE_OVERRIDES = {
@@ -279,6 +332,47 @@ EDITORIAL_ARCHIVE_OVERRIDES = {
             "pending": "EL PAÍS no precisó sala ni horario en su publicación; esos datos no deben inferirse de otras notas. La fotografía de la ficha muestra la Cineteca Nacional como referencia cultural, no la sede confirmada.",
             "method": "Síntesis basada en el artículo de EL PAÍS firmado por Darinka Rodríguez y publicado el 18 de noviembre de 2026; no equivale a verificación independiente."
         }
+    },
+    "/noticias/?id=3ba1e63aebcbe83062ef&mes=2026-11": {
+        "source": "Eje Central",
+        "source_url": "https://www.ejecentral.com.mx/nuestro-eje/gallinas-gratis-en-cdmx-asi-funcionara-el-programa-de-brugada-para-producir-huevo-en-casa",
+        "description": "Eje Central informó que Gallinas en Casa busca impulsar la producción doméstica de huevo mediante la entrega de gallinas ponedoras a familias con espacio adecuado, principalmente en zonas rurales de la Ciudad de México. La jefa de Gobierno señaló que habrá asesoría técnica; al publicarse la nota aún no se habían detallado fechas de inscripción, requisitos específicos ni número de hogares beneficiarios.",
+        "brief": {
+            "lead": "Eje Central reportó que Gallinas en Casa contempla entregar gallinas ponedoras a familias con espacio suficiente para instalar un corral, principalmente en zonas rurales de CDMX. La jefa de Gobierno dijo que el objetivo es producir huevo para autoconsumo y fortalecer la soberanía alimentaria; también se prevé asesoría técnica.",
+            "context": "El programa se coordinará con Casa Ecológica, que incluye captación de lluvia, calentadores solares y huertos. La iniciativa puede llegar a viviendas urbanas si cuentan con condiciones adecuadas para mantener las aves.",
+            "pending": "Al momento de la publicación no se habían anunciado fechas de registro, requisitos específicos ni número de hogares beneficiarios. No debe presentarse como convocatoria abierta ni como entrega ya realizada.",
+            "method": "Síntesis editorial basada en el artículo de Eje Central publicado el 18 de noviembre de 2026; no equivale a verificación independiente."
+        }
+    },
+    "/noticias/?id=b146b3d1dafcb65af69e&mes=2026-11": {
+        "category": "Movilidad",
+        "source": "López-Dóriga Digital",
+        "source_url": "https://lopezdoriga.com/nacional/ya-debes-emplacar-tu-bici-electrica-o-scooter-cdmx-pospone-multas-y-anunciara-nueva-fecha/",
+        "description": "López-Dóriga Digital informó que Semovi y la Secretaría de Seguridad Ciudadana ampliaron hasta nuevo aviso el plazo para registrar y emplacar vehículos eléctricos personales. Clara Brugada señaló que hay alrededor de 13 mil usuarios registrados y que la prórroga busca ampliar el padrón; el titular de Semovi informará sobre el proceso.",
+        "brief": {
+            "lead": "López-Dóriga Digital reportó que Semovi y SSC ampliaron hasta nuevo aviso el plazo para registrar y emplacar vehículos eléctricos personales. La jefa de Gobierno dijo que hay alrededor de 13 mil usuarios registrados y que la prórroga busca ampliar el padrón.",
+            "context": "Los vehículos motorizados eléctricos personales que superan los 25 km/h requieren placas, tarjeta de circulación y licencia A1 o A2. Los vehículos eléctricos personales de menor potencia y velocidad deben obtener el Distintivo de Movilidad Eléctrica, según la clasificación explicada en la nota.",
+            "pending": "La publicación no fija una nueva fecha límite ni una fecha de entrada en vigor de las multas; la prórroga se anunció hasta nuevo aviso. No debe presentarse una fecha de vencimiento que la autoridad todavía no comunicó.",
+            "method": "Síntesis editorial basada en el artículo de López-Dóriga Digital publicado el 18 de noviembre de 2026; no equivale a verificación independiente."
+        }
+    },
+    "/noticias/?id=486d289d63499706dd71&mes=2026-11": {
+        "category": "Movilidad",
+        "source": "88.9 Noticias",
+        "source_url": "https://889noticias.mx/noticias/semovi-cdmx-otorga-prorroga-indefinida-para-emplacamiento-de-vehiculos-electricos/",
+        "description": "88.9 Noticias informó que Semovi amplió hasta nuevo aviso el plazo para registrar y emplacar los Vehículos de Movilidad Eléctrica Personal. La prórroga se anunció el 17 de noviembre, después de las manifestaciones de usuarios en Insurgentes contra el emplacamiento y las restricciones para circular por el carril ciclista. La nota no fija una nueva fecha límite.",
+        "brief": {
+            "lead": "88.9 Noticias reportó que Semovi extendió hasta nuevo aviso el plazo para registrar y emplacar los VEMEPE. La decisión se anunció después de las protestas de usuarios en Insurgentes; las autoridades no comunicaron una nueva fecha de vencimiento.",
+            "context": "La regulación continúa vigente; la prórroga busca dar tiempo a los propietarios para completar el trámite. La nota no indica que la obligación haya sido cancelada.",
+            "pending": "No se ha publicado una nueva fecha límite ni una fecha de aplicación de multas; la ampliación se anunció hasta nuevo aviso.",
+            "method": "Síntesis editorial basada en el artículo de 88.9 Noticias publicado el 17 de noviembre de 2026; no equivale a verificación independiente."
+        }
+    },
+    "/noticias/?id=61a29006a0c0e622c2f4&mes=2026-11": {
+        "category": "Movilidad"
+    },
+    "/noticias/?id=c90abc294def53836a1f&mes=2026-11": {
+        "category": "Movilidad"
     },
 }
 PHOTO_CREDIT_OVERRIDES = {
@@ -383,6 +477,12 @@ VERIFIED_SOURCE_URLS = frozenset({
     "https://www.infobae.com/mexico/2026/11/18/harry-potter-llega-al-museo-de-historia-natural-de-cdmx-para-la-ultima-noche-de-museos-de-2026/",
     "https://www.infobae.com/mexico/2026/11/18/m-night-shyamalan-anuncia-visita-a-cdmx-para-proyectar-remain-su-nueva-pelicula/",
     "https://elpais.com/mexico/2026-11-18/m-night-shyamalan-elige-ciudad-de-mexico-para-su-primera-proyeccion-de-nunca-olvides-que-te-quiero.html",
+    # Fuente directa verificada para el programa Gallinas en Casa, publicada por Eje Central el 18/11/2026.
+    "https://www.ejecentral.com.mx/nuestro-eje/gallinas-gratis-en-cdmx-asi-funcionara-el-programa-de-brugada-para-producir-huevo-en-casa",
+    # Fuente directa verificada para la prórroga de registro de scooters y bicis eléctricas, 18/11/2026.
+    "https://lopezdoriga.com/nacional/ya-debes-emplacar-tu-bici-electrica-o-scooter-cdmx-pospone-multas-y-anunciara-nueva-fecha/",
+    # Fuente directa verificada de 88.9 Noticias sobre la prórroga de emplacamiento, 17/11/2026.
+    "https://889noticias.mx/noticias/semovi-cdmx-otorga-prorroga-indefinida-para-emplacamiento-de-vehiculos-electricos/",
 })
 SENSITIVE_MEDIA_TITLE = re.compile(
     r"\b(?:violaci[oó]n|abuso sexual|agresi[oó]n sexual|acoso sexual|violencia sexual|"
