@@ -236,6 +236,36 @@ EDITORIAL_PHOTO_OVERRIDES = {
         "context": "Fotografía de archivo de un gallinero artesanal con dos gallinas en una chinampa de Xochimilco; representa el tema de crianza de aves, no muestra a las personas beneficiarias ni la entrega de gallinas del programa de 2026.",
         "adaptation": "Fotografía original de Diego M.P. en Wikimedia Commons; sin modificación."
     },
+    "/noticias/?id=b146b3d1dafcb65af69e&mes=2026-11": {
+        "id": "contexto_grin_escooter_cdmx_2019",
+        "kind": "representativa",
+        "category": "Movilidad",
+        "topic": "Grin e-scooter en Avenida Paseo de la Reforma, Ciudad de México (archivo 2019); foto representativa del tipo de vehículo, no del trámite de 2026.",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Grin_e-scooter_on_Avenida_Paseo_de_la_Reforma%2C_Mexico_City.jpg/960px-Grin_e-scooter_on_Avenida_Paseo_de_la_Reforma%2C_Mexico_City.jpg",
+        "source": "https://commons.wikimedia.org/wiki/File:Grin_e-scooter_on_Avenida_Paseo_de_la_Reforma,_Mexico_City.jpg",
+        "author": "Sonia Medina",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+        "keywords": ["scooter eléctrico", "vehículo eléctrico personal", "Paseo de la Reforma", "movilidad eléctrica"],
+        "borough": "Cuauhtémoc",
+        "context": "Fotografía de archivo de un scooter eléctrico Grin sobre Paseo de la Reforma, CDMX; imagen representativa del tipo de vehículo, no muestra el registro, emplacamiento ni a personas involucradas en la noticia de noviembre de 2026.",
+        "adaptation": "Fotografía original de Sonia Medina; sin modificación."
+    },
+    "/noticias/?id=486d289d63499706dd71&mes=2026-11": {
+        "id": "contexto_grin_escooter_cdmx_2019",
+        "kind": "representativa",
+        "category": "Movilidad",
+        "topic": "Grin e-scooter en Avenida Paseo de la Reforma, Ciudad de México (archivo 2019); foto representativa del tipo de vehículo, no del trámite de 2026.",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Grin_e-scooter_on_Avenida_Paseo_de_la_Reforma%2C_Mexico_City.jpg/960px-Grin_e-scooter_on_Avenida_Paseo_de_la_Reforma%2C_Mexico_City.jpg",
+        "source": "https://commons.wikimedia.org/wiki/File:Grin_e-scooter_on_Avenida_Paseo_de_la_Reforma,_Mexico_City.jpg",
+        "author": "Sonia Medina",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+        "keywords": ["scooter eléctrico", "vehículo eléctrico personal", "Paseo de la Reforma", "movilidad eléctrica"],
+        "borough": "Cuauhtémoc",
+        "context": "Fotografía de archivo de un scooter eléctrico Grin sobre Paseo de la Reforma, CDMX; imagen representativa del tipo de vehículo, no muestra el registro, emplacamiento ni a personas involucradas en la noticia de noviembre de 2026.",
+        "adaptation": "Fotografía original de Sonia Medina; sin modificación."
+    },
 }
 
 EDITORIAL_ARCHIVE_OVERRIDES = {
@@ -326,6 +356,18 @@ EDITORIAL_ARCHIVE_OVERRIDES = {
             "context": "Los vehículos motorizados eléctricos personales que superan los 25 km/h requieren placas, tarjeta de circulación y licencia A1 o A2. Los vehículos eléctricos personales de menor potencia y velocidad deben obtener el Distintivo de Movilidad Eléctrica, según la clasificación explicada en la nota.",
             "pending": "La publicación no fija una nueva fecha límite ni una fecha de entrada en vigor de las multas; la prórroga se anunció hasta nuevo aviso. No debe presentarse una fecha de vencimiento que la autoridad todavía no comunicó.",
             "method": "Síntesis editorial basada en el artículo de López-Dóriga Digital publicado el 18 de noviembre de 2026; no equivale a verificación independiente."
+        }
+    },
+    "/noticias/?id=486d289d63499706dd71&mes=2026-11": {
+        "category": "Movilidad",
+        "source": "88.9 Noticias",
+        "source_url": "https://889noticias.mx/noticias/semovi-cdmx-otorga-prorroga-indefinida-para-emplacamiento-de-vehiculos-electricos/",
+        "description": "88.9 Noticias informó que Semovi amplió hasta nuevo aviso el plazo para registrar y emplacar los Vehículos de Movilidad Eléctrica Personal. La dependencia anunció la prórroga el 17 de noviembre de 2026; Clara Brugada señaló que el padrón tenía alrededor de 13 mil unidades registradas y que la regulación busca ordenar este tipo de transporte.",
+        "brief": {
+            "lead": "88.9 Noticias reportó que Semovi extendió hasta nuevo aviso el plazo para registrar y emplacar los Vehículos de Movilidad Eléctrica Personal. La jefa de Gobierno dijo que había alrededor de 13 mil unidades registradas y pidió a más usuarios incorporarse al padrón.",
+            "context": "La prórroga se anunció después de que usuarios se manifestaron en Insurgentes contra el emplacamiento y las restricciones de circulación. El registro continúa siendo parte del proceso de regularización descrito por las autoridades.",
+            "pending": "La nota no fija una nueva fecha límite ni un día de inicio de multas; la ampliación se anunció hasta nuevo aviso. No debe publicarse una fecha de vencimiento que la autoridad todavía no comunicó.",
+            "method": "Síntesis editorial basada en el artículo de 88.9 Noticias publicado el 17 de noviembre de 2026; no equivale a verificación independiente."
         }
     },
 }
@@ -435,6 +477,8 @@ VERIFIED_SOURCE_URLS = frozenset({
     "https://www.ejecentral.com.mx/nuestro-eje/gallinas-gratis-en-cdmx-asi-funcionara-el-programa-de-brugada-para-producir-huevo-en-casa",
     # Fuente directa verificada para la prórroga de registro de scooters y bicis eléctricas, 18/11/2026.
     "https://lopezdoriga.com/nacional/ya-debes-emplacar-tu-bici-electrica-o-scooter-cdmx-pospone-multas-y-anunciara-nueva-fecha/",
+    # Fuente directa verificada de 88.9 Noticias sobre la prórroga de emplacamiento, 17/11/2026.
+    "https://889noticias.mx/noticias/semovi-cdmx-otorga-prorroga-indefinida-para-emplacamiento-de-vehiculos-electricos/",
 })
 SENSITIVE_MEDIA_TITLE = re.compile(
     r"\b(?:violaci[oó]n|abuso sexual|agresi[oó]n sexual|acoso sexual|violencia sexual|"
