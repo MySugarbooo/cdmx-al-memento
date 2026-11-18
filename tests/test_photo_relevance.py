@@ -28,6 +28,38 @@ def representative_photo(photo_id, category, topic, keywords):
 
 
 class PhotoRelevanceTests(unittest.TestCase):
+    def test_magdalena_contreras_sports_parade_rejects_catrinas_and_uses_sports_archive_photo(self):
+        article = {
+            "title": "Más de 1,500 deportistas participan en desfile por la Revolución Mexicana en Magdalena Contreras",
+            "source": "Capital CDMX",
+            "date": "2026-11-17",
+            "category": "CDMX",
+            "borough": "La Magdalena Contreras",
+            "url": "https://news.google.com/rss/articles/capital-cdmx-sports-parade-20261117?oc=5",
+        }
+        community = next(
+            photo for photo in photos._pool()
+            if photo.get("id") == "contexto_olimpiada_comunitaria_cdmx_2019"
+        )
+        catrinas = representative_photo(
+            "reciente_catrinas_test", "CDMX",
+            "Desfile de Catrinas in Mexico City 2026 (52)", ["CDMX"],
+        )
+        self.assertEqual(_photo_score(article, community), 5000)
+        self.assertLess(_photo_score(article, catrinas), 0)
+        article["photo"] = deepcopy(catrinas)
+        with patch.object(photos, "_pool", return_value=[catrinas, community]), patch.object(
+            photos, "_load", return_value=[]
+        ):
+            photos.assign_photos([article])
+        self.assertEqual(article["photo"]["id"], "contexto_olimpiada_comunitaria_cdmx_2019")
+        self.assertEqual(article["photo"]["kind"], "representativa")
+        self.assertEqual(article["photo"]["author"], "Gobierno de la Ciudad de México")
+        self.assertEqual(article["photo"]["license"], "CC BY 4.0")
+        self.assertEqual(article["photo"]["licenseUrl"], "https://creativecommons.org/licenses/by/4.0/")
+        self.assertEqual(article["photo"]["source"], "https://commons.wikimedia.org/wiki/File:Olimpiada_Comunitaria_Ciudad_de_M%C3%A9xico_2019_03.jpg")
+        self.assertIn("no muestra el desfile", article["photo"]["topic"])
+
     def test_rss_category_uses_obvious_headline_subject(self):
         self.assertEqual(category_by_headline(
             "Muévete en Bici este 1 de noviembre", "Seguridad"), "Movilidad")
