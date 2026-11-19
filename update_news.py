@@ -2067,6 +2067,36 @@ def refresh_homepage_fallback(index_path, articles, now=None):
     return len(payload)
 
 
+def apply_verified_editorial_overrides(items):
+    """Corrige desajustes editoriales confirmados sin inventar detalles del RSS."""
+    for article in items:
+        if not isinstance(article, dict):
+            continue
+        title = str(article.get("title") or "").casefold()
+        source = str(article.get("source") or "").casefold()
+        if "gallinas ponedoras" not in title or "informa btl" not in source:
+            continue
+        # El titular trata del programa "Gallinas en Casa" de Clara Brugada,
+        # no de rentas o desplazamiento de vivienda. La síntesis usa únicamente
+        # detalles corroborados en coberturas coincidentes y mantiene pendientes
+        # los requisitos/convocatoria oficiales aún no publicados.
+        lead = (
+            "La nota informa sobre el programa de Clara Brugada para entregar 15 gallinas "
+            "ponedoras por familia en zonas de la Ciudad de México que cuenten con espacio "
+            "y condiciones para su cuidado. Coberturas coincidentes señalan alimento inicial, "
+            "asesoría técnica y una producción estimada de hasta 15 huevos diarios por hogar; "
+            "la convocatoria y sus reglas completas deben confirmarse en canales oficiales."
+        )
+        article["description"] = lead
+        article["brief"] = {
+            "lead": lead,
+            "context": "El programa se presenta como una medida de autoconsumo y soberanía alimentaria para hogares con condiciones adecuadas.",
+            "pending": "Antes de inscribirse hay que revisar la convocatoria oficial, requisitos, zonas participantes, condiciones sanitarias y calendario de entrega.",
+            "method": "Síntesis editorial propia basada en el titular disponible y coberturas coincidentes; no equivale a lectura íntegra del artículo de origen."
+        }
+    return items
+
+
 def update():
     now = datetime.now(timezone.utc)
     cutoff = now - timedelta(days=RETENTION_DAYS)
@@ -2104,6 +2134,7 @@ def update():
     # Unas pocas noticias editoriales no deben ocultar una caída del RSS.
     items = fill_recent_from_archive(items, now)
     items = merge_recent_previous_feed(items, previous_articles, now)
+    items = apply_verified_editorial_overrides(items)
     picture_stats = assign_photos(items[:60])
     print("Fotografías verificadas para portada:", picture_stats)
     consolidate_archive(items, cutoff, updated)
