@@ -1903,6 +1903,14 @@ class LocalNewsTests(unittest.TestCase):
                 self.assertEqual(category_by_headline(title, feed_category, "El Sol de México"), expected)
 
 
+    def test_el_universal_ssc_mobilization_agenda_is_mobility(self):
+        title = "SSC prevé diversas movilizaciones en CDMX este domingo"
+        self.assertEqual(
+            category_by_headline(title, "Cultura", "El Universal"),
+            "Movilidad",
+        )
+
+
     def test_homepage_groups_two_sources_reporting_the_same_garbage_zocalo_concert(self):
         society = {
             "title": "Garbage reúne a más de 90 mil personas en el Zócalo de la Cdmx",

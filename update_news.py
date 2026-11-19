@@ -496,8 +496,17 @@ def category_by_headline(title, feed_category, source=""):
     if (re.search(r"\bc5\b", normalized)
             and re.search(r"\b(?:camaras?|vigilar|vigilara|vigilancia)\b", normalized)):
         return "Seguridad"
-    if (re.search(r"\bmarchas?\b", normalized)
-            and re.search(r"\b(?:colaps\w*|trafico|puntos de partida|cierres?|bloqueos?)\b", normalized)):
+    # El RSS de El Universal acortó el titular de esta agenda de movilizaciones;
+    # la nota sindicada confirma posibles afectaciones viales en la ciudad.
+    if (
+        normalized_source == "el universal"
+        and re.search(r"\bssc preve diversas movilizaciones en cdmx este domingo\b", normalized)
+    ):
+        return "Movilidad"
+    if (
+        re.search(r"\bmarchas?\b", normalized)
+        and re.search(r"\b(?:colaps\w*|trafico|puntos de partida|cierres?|bloqueos?)\b", normalized)
+    ):
         return "Movilidad"
     # Conciertos, teatro, intérpretes, estrenos y alfombras de cine pertenecen a Cultura.
     if re.search(
