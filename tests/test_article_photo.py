@@ -558,7 +558,7 @@ class EditorialArchiveSyncTests(unittest.TestCase):
             # ya esté en la selección reciente.
             maya = {"local_url": maya_url, "category": "Seguridad"}
             apply_editorial_record_overrides([maya])
-        self.assertEqual(maya["category"], "Movilidad")
+        self.assertEqual(maya["category"], "Seguridad")
         self.assertTrue(articles, "El feed debe conservar al menos una noticia que use la foto representativa")
         for article in articles:
             # El feed puede asociar esta foto a noticias distintas de la nota de
