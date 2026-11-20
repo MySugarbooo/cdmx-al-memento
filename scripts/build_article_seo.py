@@ -567,6 +567,9 @@ EDITORIAL_ARCHIVE_OVERRIDES = {
     "/noticias/?id=61a29006a0c0e622c2f4&mes=2026-11": {
         "category": "Movilidad"
     },
+    "/noticias/?id=6500e441161997084fce&mes=2026-11": {
+        "category": "Movilidad"
+    },
     "/noticias/?id=c90abc294def53836a1f&mes=2026-11": {
         "category": "Movilidad",
         "source_url": "https://mayacomunicacion.com.mx/gobierno-de-cdmx-abre-dialogo-con-motociclistas-repartidores-ante-retos-de-movilidad/",
