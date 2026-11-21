@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-21 16:29 UTC",
+  "updated": "2026-11-21 19:54 UTC",
   "boroughs": [
     {
       "name": "La Magdalena Contreras",
@@ -8753,19 +8753,19 @@
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           },
           "photo": {
-            "id": "archivo_seguridad_002",
+            "id": "seguridad",
             "kind": "representativa",
-            "url": "/assets/fotos/archivo_seguridad_002.jpg",
+            "url": "/assets/fotos/seguridad.jpg",
             "category": "Seguridad",
             "borough": "",
-            "topic": "Patrulla vecinal",
+            "topic": "Patrulla de Ciudad de México",
             "keywords": [
               "Seguridad"
             ],
-            "author": "Daniel Yonka",
+            "author": "RainerRowe",
             "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Patrulla_vecinal.jpg"
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.es",
+            "source": "https://commons.wikimedia.org/wiki/File:Patrulla_cdmx.jpg"
           },
           "alternate_versions": [
             {
@@ -8786,19 +8786,19 @@
                 "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
               },
               "photo": {
-                "id": "seguridad",
+                "id": "archivo_seguridad_002",
                 "kind": "representativa",
-                "url": "/assets/fotos/seguridad.jpg",
+                "url": "/assets/fotos/archivo_seguridad_002.jpg",
                 "category": "Seguridad",
                 "borough": "",
-                "topic": "Patrulla de Ciudad de México",
+                "topic": "Patrulla vecinal",
                 "keywords": [
                   "Seguridad"
                 ],
-                "author": "RainerRowe",
+                "author": "Daniel Yonka",
                 "license": "CC BY-SA 4.0",
-                "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.es",
-                "source": "https://commons.wikimedia.org/wiki/File:Patrulla_cdmx.jpg"
+                "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "https://commons.wikimedia.org/wiki/File:Patrulla_vecinal.jpg"
               }
             }
           ]
@@ -8910,27 +8910,6 @@
           "borough": "Iztacalco",
           "location": "Iztacalco (mencionada en el titular)",
           "local_url": "/noticias/?id=18deb9ec739859ad49db&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con Quadratín Michoacán, el titular publicado es: «Cae acusado de abandonar cuerpo de mujer en Iztacalco en CDMX». La información publicada por Quadratín Michoacán aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "commons_41703830",
-            "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/CICLOTON_DF_IZTACALCO_%28BY_LION%29_-_panoramio.jpg/960px-CICLOTON_DF_IZTACALCO_%28BY_LION%29_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "category": "Alcaldías",
-            "borough": "",
-            "topic": "CICLOTON DF IZTACALCO (BY LION) - panoramio",
-            "keywords": [
-              "Iztacalco Ciudad de México"
-            ],
-            "author": "LEON23",
-            "license": "CC BY 3.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
-            "source": "https://commons.wikimedia.org/wiki/File:CICLOTON_DF_IZTACALCO_(BY_LION)_-_panoramio.jpg"
-          },
           "alternate_versions": [
             {
               "title": "Cae acusado de abandonar cuerpo de mujer en Iztacalco en CDMX",
@@ -8962,7 +8941,28 @@
                 "source": "https://commons.wikimedia.org/wiki/File:SanMatiasChurchIztacalco02.jpg"
               }
             }
-          ]
+          ],
+          "brief": {
+            "lead": "De acuerdo con Quadratín Michoacán, el titular publicado es: «Cae acusado de abandonar cuerpo de mujer en Iztacalco en CDMX». La información publicada por Quadratín Michoacán aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "commons_41703830",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/CICLOTON_DF_IZTACALCO_%28BY_LION%29_-_panoramio.jpg/960px-CICLOTON_DF_IZTACALCO_%28BY_LION%29_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "category": "Alcaldías",
+            "borough": "",
+            "topic": "CICLOTON DF IZTACALCO (BY LION) - panoramio",
+            "keywords": [
+              "Iztacalco Ciudad de México"
+            ],
+            "author": "LEON23",
+            "license": "CC BY 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:CICLOTON_DF_IZTACALCO_(BY_LION)_-_panoramio.jpg"
+          }
         },
         {
           "title": "Detienen a hombre presuntamente relacionado con hallazgo de cuerpo de mujer en parque de Iztacalco",
@@ -11206,8 +11206,41 @@
     },
     {
       "name": "Miguel Hidalgo",
-      "count": 113,
+      "count": 114,
       "articles": [
+        {
+          "title": "Incendio en Mercado Prado Norte moviliza a cuerpos de emergencia en Miguel Hidalgo",
+          "description": "De acuerdo con Diario de México, el titular publicado es: «Incendio en Mercado Prado Norte moviliza a cuerpos de emergencia en Miguel Hidalgo». La información publicada por Diario de México aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOMjE3QWdzYU5Cc25iRHh3Mm9JWWlDaDg1TnQ4WWxMRE9zMlVrMEhkODgtdGIzaVBOMm5pd2NOb0V3WVVRcHNJZ2dxMWU0c2ZqT25NaUdfUUtlenR4WVpuMGRTRnZSYzItM1dmOEZ0ZndJU3dLbXBxa2VIOWZNZmppVlFCSk5CUG1lOU52QlplOEU4MzlsNHJmM2I1RjZVQkFkRFJhcGtzUE4tT0J1OFkwdDFNdFpBX3JzYmfSAb8BQVVfeXFMTVhKYmVZNGUyOE4taFFYZElSN1lNSlRfdFk0VTJQTEh2RklCR3BkcllRQmJqMEVQR2ZYUjVxb0dMZ2NBMWFBdXFsMGt1MWltNHk1Z3lxekVFa0NMLXZXM3htcWZBR1VxMVNpbmlnQnRyREtHSXVPQmNpb0FLSXhhdlZfbmxLUWRkcjZFWExsamtjMURObVJraVVHR29YSE9MUVc1R2xZWEpySFVGU0ItREtXV2MzMmtKTk45YnZETFU?oc=5",
+          "source": "Diario de México",
+          "date": "2026-11-21",
+          "published_at": "2026-11-21T17:27:36Z",
+          "category": "Seguridad",
+          "borough": "Miguel Hidalgo",
+          "location": "Miguel Hidalgo (mencionada en el titular)",
+          "local_url": "/noticias/?id=9ebee877a6a633b343c8&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con Diario de México, el titular publicado es: «Incendio en Mercado Prado Norte moviliza a cuerpos de emergencia en Miguel Hidalgo». La información publicada por Diario de México aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "commons_75139324",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Equipo_de_trabajo_de_los_Bomberos_CDMX_IMG_2987_%2829724105797%29.jpg/960px-Equipo_de_trabajo_de_los_Bomberos_CDMX_IMG_2987_%2829724105797%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "category": "Seguridad",
+            "borough": "",
+            "topic": "Equipo de trabajo de los Bomberos CDMX IMG 2987 (29724105797)",
+            "keywords": [
+              "Bomberos Ciudad de México"
+            ],
+            "author": "Gobierno CDMX",
+            "license": "CC0",
+            "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+            "source": "https://commons.wikimedia.org/wiki/File:Equipo_de_trabajo_de_los_Bomberos_CDMX_IMG_2987_(29724105797).jpg"
+          }
+        },
         {
           "title": "Reportan Fuerte Incendio en Mercado Prado Norte, Alcaldía Miguel Hidalgo",
           "description": "De acuerdo con N+, el titular publicado es: «Reportan Fuerte Incendio en Mercado Prado Norte, Alcaldía Miguel Hidalgo». La información publicada por N+ aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -12384,44 +12417,6 @@
             "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
             "source": "https://commons.wikimedia.org/wiki/File:Equipo_de_trabajo_de_los_Bomberos_CDMX_IMG_3061_(44661911131).jpg"
           }
-        },
-        {
-          "title": "Una persona muere tras flamazo y derrumbe por acumulación de gas en Miguel Hidalgo; desalojan a familias",
-          "description": "De acuerdo con MILENIO, el titular publicado es: «Una persona muere tras flamazo y derrumbe por acumulación de gas en Miguel Hidalgo; desalojan a familias». La información publicada por MILENIO aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOZm5FUFdmVENPREh5VV9aRTNPWDdWUVBHVWhhWkxIbjdZUm9NRWVqMkFBdHhXVHVZczluZXJESkw1UDcxb3Z2NnN4M2doTFhxcUdxTElrOFpPc25JaDNDWi0xbm1hYzJsdkpueUZwbVNzMnY4WmRLYWMzSUxNbDBXNmladTV1ZUs2NkEySDRwNkJ0dnR00gGUAUFVX3lxTE5VZlJ6SFg2MVN2REQ5eWNLUXBDT2cxS1E0R091Y1RtS3BtbWstbGJYWmdPOTdsUVdZTUxyRG11ek9xNEszcnJiUjY0cTZvQXhtNXhNeVdyWnBrbzg4aVVvWnFKeEhhMDZTbUluYjQ0bnpwMEJVMERoWF8xQ0E5TWZpWTB2bURHc05OcWI2QzF4T1ZpQkE?oc=5",
-          "source": "MILENIO",
-          "date": "2026-11-16",
-          "published_at": "2026-11-16T15:01:00Z",
-          "category": "CDMX",
-          "borough": "Miguel Hidalgo",
-          "location": "Miguel Hidalgo (mencionada en el titular)",
-          "local_url": "/noticias/?id=d39fdc39e7cfbe835013&mes=2026-11",
-          "alternate_versions": [
-            {
-              "title": "Una persona muere tras flamazo y derrumbe por acumulación de gas en Miguel Hidalgo; desalojan a familias",
-              "description": "De acuerdo con Milenio, el titular publicado es: «Una persona muere tras flamazo y derrumbe por acumulación de gas en Miguel Hidalgo; desalojan a familias». La información publicada por Milenio aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-              "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOZm5FUFdmVENPREh5VV9aRTNPWDdWUVBHVWhhWkxIbjdZUm9NRWVqMkFBdHhXVHVZczluZXJESkw1UDcxb3Z2NnN4M2doTFhxcUdxTElrOFpPc25JaDNDWi0xbm1hYzJsdkpueUZwbVNzMnY4WmRLYWMzSUxNbDBXNmladTV1ZUs2NkEySDRwNkJ0dnR00gGUAUFVX3lxTE5VZlJ6SFg2MVN2REQ5eWNLUXBDT2cxS1E0R091Y1RtS3BtbWstbGJYWmdPOTdsUVdZTUxyRG11ek9xNEszcnJiUjY0cTZvQXhtNXhNeVdyWnBrbzg4aVVvWnFKeEhhMDZTbUluYjQ0bnpwMEJVMERoWF8xQ0E5TWZpWTB2bURHc05OcWI2QzF4T1ZpQkE?oc=5",
-              "source": "Milenio",
-              "date": "2026-11-16",
-              "published_at": "2026-11-16T15:01:00Z",
-              "category": "CDMX",
-              "borough": "Miguel Hidalgo",
-              "location": "Miguel Hidalgo (mencionada en el titular)",
-              "local_url": "/noticias/?id=d39fdc39e7cfbe835013&mes=2026-11",
-              "brief": {
-                "lead": "De acuerdo con Milenio, el titular publicado es: «Una persona muere tras flamazo y derrumbe por acumulación de gas en Miguel Hidalgo; desalojan a familias». La información publicada por Milenio aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-                "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-                "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-              }
-            }
-          ],
-          "brief": {
-            "lead": "De acuerdo con MILENIO, el titular publicado es: «Una persona muere tras flamazo y derrumbe por acumulación de gas en Miguel Hidalgo; desalojan a familias». La información publicada por MILENIO aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
         }
       ]
     },
@@ -13171,20 +13166,55 @@
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           },
           "photo": {
-            "id": "seguridad",
+            "id": "archivo_seguridad_002",
             "kind": "representativa",
-            "url": "/assets/fotos/seguridad.jpg",
+            "url": "/assets/fotos/archivo_seguridad_002.jpg",
             "category": "Seguridad",
             "borough": "",
-            "topic": "Patrulla de Ciudad de México",
+            "topic": "Patrulla vecinal",
             "keywords": [
               "Seguridad"
             ],
-            "author": "RainerRowe",
+            "author": "Daniel Yonka",
             "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.es",
-            "source": "https://commons.wikimedia.org/wiki/File:Patrulla_cdmx.jpg"
-          }
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Patrulla_vecinal.jpg"
+          },
+          "alternate_versions": [
+            {
+              "title": "Detienen en Tláhuac a presunto sicario relacionado con cuatro homicidios en CDMX",
+              "description": "De acuerdo con PostaMx, el titular publicado es: «Detienen en Tláhuac a presunto sicario relacionado con cuatro homicidios en CDMX». Una nota de PostaMx comunica un caso relacionado con una detención o una presunta conducta delictiva en Tláhuac. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
+              "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNZHB5dU5IRTRMbFlQRTJUa0JTd1Z1czFZS0VGXzl5Wm9MQ3k1Rlh5eDg2OXFlZVZqR0ZfbjhrR2xQVDE3UUFwanRseHJqUWxNaHd2VVZCZWRkdDVJRDczQk9QZjJCYzFWd2kxWEVnWXJmYmk2cVM4TUxQT1JxR3NjOE9CNkNrY2F1ZFVrVlhDdF9ZUXg2UzlYSUR2X2Zvc0lGM1dvc25DU1pCejlrMmFwYjUtaGxyM0FhZXA3ZtIBwgFBVV95cUxQTTNCQzVqT2lYR2VwX3VEa19mS1NBTEEtVElTV0llWC0yU1ZjVUZfdks5Z3VFTVBKU2pYeFMtaS1xTmo2TmpORU93Nk8tcHlrSFloTzZCdHFaZG9DdXRhaU01cjY1NDJDbkdyVUQwcmpJWE9UN1FhSmRyMmNZZFIxekZmaUxwckp6c3k0NS1oZVJ4V1BIYjlxTW9sTDN4SmI0VWdMSk9Edm93aDNLNGpaSEFxMHhyUEc1aF9mZ29NNUhKUQ?oc=5",
+              "source": "PostaMx",
+              "date": "2026-11-21",
+              "published_at": "2026-11-21T15:07:00Z",
+              "category": "CDMX",
+              "borough": "Tláhuac",
+              "location": "Tláhuac (mencionada en el titular)",
+              "local_url": "/noticias/?id=485bd05785aa657e10e9&mes=2026-11",
+              "brief": {
+                "lead": "De acuerdo con PostaMx, el titular publicado es: «Detienen en Tláhuac a presunto sicario relacionado con cuatro homicidios en CDMX». Una nota de PostaMx comunica un caso relacionado con una detención o una presunta conducta delictiva en Tláhuac. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
+                "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+                "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+              },
+              "photo": {
+                "id": "seguridad",
+                "kind": "representativa",
+                "url": "/assets/fotos/seguridad.jpg",
+                "category": "Seguridad",
+                "borough": "",
+                "topic": "Patrulla de Ciudad de México",
+                "keywords": [
+                  "Seguridad"
+                ],
+                "author": "RainerRowe",
+                "license": "CC BY-SA 4.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.es",
+                "source": "https://commons.wikimedia.org/wiki/File:Patrulla_cdmx.jpg"
+              }
+            }
+          ]
         },
         {
           "title": "Cae en Tláhuac “El Carlitos”, vinculado con homicidios de los últimos años",
