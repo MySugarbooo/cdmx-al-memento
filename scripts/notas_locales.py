@@ -5018,8 +5018,8 @@ def assign_photos(items):
         # Corrección editorial confirmada: la nota sobre un motociclista que murió tras caer en un bache
         # no debe conservar una imagen de desazolves; usar una fotografía contextual de motocicleta en CDMX.
         if (
-            re.search(r"\\bmotociclista\\b", _photo_fold(article.get("title")))
-            and re.search(r"\\bbache\\b", _photo_fold(article.get("title")))
+            re.search(r"\bmotociclista\b", _photo_fold(article.get("title")))
+            and re.search(r"\bbache\b", _photo_fold(article.get("title")))
             and isinstance(article.get("photo"), dict)
             and article.get("photo", {}).get("id") == "commons_152180886"
         ):
