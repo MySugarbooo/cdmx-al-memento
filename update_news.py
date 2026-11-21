@@ -2076,6 +2076,31 @@ def refresh_homepage_fallback(index_path, articles, now=None):
     return len(payload)
 
 
+
+def enforce_confirmed_photo_repairs(items):
+    """Aplica reparaciones editoriales confirmadas después de la selección automática."""
+    target_id = "contexto_motocicleta_zocalo_brigada_2017"
+    repaired = 0
+    for item in items:
+        if not isinstance(item, dict):
+            continue
+        title = fold(item.get("title"))
+        if title.startswith("un motociclista muere tras caer en un bache"):
+            photo = item.get("photo")
+            if not isinstance(photo, dict) or photo.get("id") != target_id:
+                replacement = next(
+                    (
+                        candidate for candidate in _pool()
+                        if candidate.get("id") == target_id
+                    ),
+                    None,
+                )
+                if replacement:
+                    item["photo"] = dict(replacement)
+                    repaired += 1
+    return repaired
+
+
 def update():
     now = datetime.now(timezone.utc)
     cutoff = now - timedelta(days=RETENTION_DAYS)
@@ -2114,6 +2139,9 @@ def update():
     items = fill_recent_from_archive(items, now)
     items = merge_recent_previous_feed(items, previous_articles, now)
     picture_stats = assign_photos(items[:60])
+    confirmed_repairs = enforce_confirmed_photo_repairs(items)
+    if confirmed_repairs:
+        print("Reparaciones fotográficas confirmadas aplicadas:", confirmed_repairs)
     print("Fotografías verificadas para portada:", picture_stats)
     consolidate_archive(items, cutoff, updated)
     # El feed conserva titulares aunque no tengan fotografía.
