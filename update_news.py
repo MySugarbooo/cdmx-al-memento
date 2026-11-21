@@ -629,8 +629,8 @@ def category_by_headline(title, feed_category, source=""):
         return "Seguridad"
     # La regulación y el diálogo institucional con repartidores siguen siendo movilidad.
     # El titular puede no mencionar una marcha o bloqueo, pero el tema central es el transporte.
-    if (re.search(r"\\b(?:repartidores?|conductores? de aplicacion)\\b", normalized)
-            and re.search(r"\\b(?:gobierno|regulacion|dialogar|reunion)\\b", normalized)):
+    if (re.search(r"\b(?:repartidores?|conductores? de aplicacion)\b", normalized)
+            and re.search(r"\b(?:gobierno|regulacion|dialogar|reunion)\b", normalized)):
         return "Movilidad"
     # Las movilizaciones de repartidores y conductores son Movilidad,
     # salvo cuando el titular describe una amenaza o agresión concreta.
