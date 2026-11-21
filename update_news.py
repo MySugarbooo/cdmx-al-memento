@@ -1602,6 +1602,9 @@ def photo_needs_refresh(item):
         return False
     if is_mauricio_tabe_fifth_report(item):
         return photo.get("id") != "contexto_teatro_angela_peralta"
+    title = fold(item.get("title"))
+    if title.startswith("un motociclista muere tras caer en un bache"):
+        return photo.get("id") != "contexto_motocicleta_zocalo_brigada_2017"
     return _photo_score(item, photo) < 0
 
 
@@ -1613,6 +1616,7 @@ def prioritize_photo_refresh(items, limit=24):
         "gobierno de cdmx construira 300 espacios de educacion inicial",
         "cdmx busca tener nuevo oso panda",
         "conquista all-star juarez subcampeonato nacional de roller derby",
+        "un motociclista muere tras caer en un bache",
         "exposicion de juan gabriel en el palacio postal",
         "cdmx amplia hasta nuevo aviso el plazo para registrar y emplacar vehiculos electricos personales",
         "cdmx amplia plazo para registrar vehiculos electricos personales",
