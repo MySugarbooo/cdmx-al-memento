@@ -5015,6 +5015,21 @@ def assign_photos(items):
             article.pop("photo", None)
             continue
 
+        # Corrección editorial confirmada: la nota sobre un motociclista que murió tras caer en un bache
+        # no debe conservar una imagen de desazolves; usar una fotografía contextual de motocicleta en CDMX.
+        if (
+            re.search(r"\\bmotociclista\\b", _photo_fold(article.get("title")))
+            and re.search(r"\\bbache\\b", _photo_fold(article.get("title")))
+            and isinstance(article.get("photo"), dict)
+            and article.get("photo", {}).get("id") == "commons_152180886"
+        ):
+            motorcycle_context = next(
+                (photo for photo in pool if photo.get("id") == "contexto_motocicleta_zocalo_brigada_2017"),
+                None,
+            )
+            if motorcycle_context:
+                article["photo"] = dict(motorcycle_context)
+
         existing = article.get("photo")
         # El catálogo es la fuente de verdad de la atribución y el contexto.
         # Si una ficha existente conserva el mismo ID, actualizar sus metadatos
