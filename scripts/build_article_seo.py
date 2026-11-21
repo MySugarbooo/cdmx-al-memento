@@ -463,6 +463,9 @@ EDITORIAL_PHOTO_OVERRIDES = {
 }
 
 EDITORIAL_ARCHIVE_OVERRIDES = {
+    "/noticias/?id=610c0eee57db0e0ed62c&mes=2026-11": {
+        "category": "Movilidad"
+    },
     "/noticias/?id=76ea8af5f775cd14991b&mes=2026-11": {
         "category": "Movilidad",
         "source_url": "https://sociedad-noticias.com/2026/11/18/motociclistas-repartidores-acuerdan-dialogo-con-autoridades-de-la-cdmx/",
