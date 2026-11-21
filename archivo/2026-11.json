@@ -712,7 +712,9 @@
         "author": "Nanahuatl",
         "license": "CC BY-SA 4.0",
         "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-        "source": "https://commons.wikimedia.org/wiki/File:Will_of_the_People_World_Tour,_Mexico_City-4.jpg"
+        "source": "https://commons.wikimedia.org/wiki/File:Will_of_the_People_World_Tour,_Mexico_City-4.jpg",
+        "context": "Fotografía de archivo de un concierto de Muse en Foro Sol, recinto hoy llamado Estadio GNP; no documenta Karol G, Corona Capital, Garbage ni el concierto sinfónico de Crepúsculo.",
+        "adaptation": "Miniatura oficial de Wikimedia Commons; sin modificación."
       }
     },
     {
@@ -10055,7 +10057,7 @@
       "source": "Diario de Yucatán",
       "date": "2026-11-18",
       "published_at": "2026-11-19T01:38:24Z",
-      "category": "Seguridad",
+      "category": "Movilidad",
       "borough": "",
       "location": "Ciudad de México (sin alcaldía identificada)",
       "local_url": "/noticias/?id=6500e441161997084fce&mes=2026-11",
@@ -12687,40 +12689,51 @@
     },
     {
       "title": "Universidad Tres Culturas inaugura su plantel Martín Carrera y fortalece su presencia en la Ciudad de México",
-      "description": "De acuerdo con El Economista, el titular publicado es: «Universidad Tres Culturas inaugura su plantel Martín Carrera y fortalece su presencia en la Ciudad de México». La información publicada por El Economista aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "description": "El Economista reportó la inauguración del plantel Martín Carrera de la Universidad Tres Culturas en CDMX. La nota destaca su conexión con Metro y Metrobús y la expansión de la institución en la región.",
       "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxONnE3S1RwcS1pcmdLbm1DTnZzcUVrMTFiRnpDbWVoUmxUbzNJczcwWUpjZVFnWHZKa3BFb0p6ZURTUVg4SmVzVUpuVnlNdzh4R29NYk4tTF9RYjVsZENoRy1mRkUzQ3VXa2hHbkZxSHNNTEpxZ2YxOG9fWVZKOXBlZFVFQzdGSHZIVmlpLTFiUlpSN2ZzYkFWeDRmSmFDMkEzUVRWUFBMVEFsSEZQSTl6U0t3UDZnQ0VZYXZrNEVYTmZMcTZ0ZUZOQmZzakx2RC01dUpyVUMzN2ZPQUVKR0NsSEROdVRBNDVjVk5ZbdIB8gFBVV95cUxPaWxaX29DM0NrSEdHVmJsTHl0Q2sxc2xmdzBralRfd2tzcV8tWFhpVmlLcG9tejFmZlR5YTZhSWtfOW9KOEFGS2ttWmFSMVdLR3NoS295bzFiZWV1NGlBV0dvSWFlcUhTR2tIMjVfVGtDdHBzVUtWMUpnMkZmR2EyV2FhS0I2SEJobUJPOU5UMUh1aHRYODJ0eTVSbkxFNmY3cVFGVVd3cDZjZ0VRelhtUHg1Ykt0TFVmc21ucUE4N1ZtV3BsTUZFRXhjeHFxWUpBZTRMSmp6QUdXR1pKRzdGRzRCRnZHTktSWVozMllKSkRWUQ?oc=5",
       "source": "El Economista",
       "date": "2026-11-18",
       "published_at": "2026-11-18T17:25:28Z",
       "category": "CDMX",
       "borough": "",
-      "location": "Ciudad de México (sin alcaldía identificada)",
+      "location": "Martín Carrera, Ciudad de México (dirección no indicada en la nota)",
       "local_url": "/noticias/?id=dfd02c3e41cfe8145490&mes=2026-11",
       "brief": {
-        "lead": "De acuerdo con El Economista, el titular publicado es: «Universidad Tres Culturas inaugura su plantel Martín Carrera y fortalece su presencia en la Ciudad de México». La información publicada por El Economista aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-        "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-        "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+        "lead": "El Economista informó que la Universidad Tres Culturas inauguró su plantel Martín Carrera en la Ciudad de México. La publicación destaca su conectividad con Metro y Metrobús y señala que la institución cuenta con más de 20 planteles en Estado de México, CDMX y Puebla.",
+        "context": "La apertura suma una alternativa de educación superior en la zona norte de la capital; la cercanía con transporte público puede influir en los traslados de estudiantes.",
+        "pending": "La publicación no detalla costos, carreras disponibles, turnos ni proceso de inscripción específico del plantel Martín Carrera. Confirmar esos datos directamente con UTC antes de tomar una decisión.",
+        "method": "Síntesis basada en la nota de El Economista, publicada el 18 de noviembre de 2026; los datos institucionales se atribuyen a la información publicada y no equivalen a una evaluación independiente."
       },
       "photo": {
-        "id": "reciente_906f3f3387343e33",
+        "id": "contexto_uam_cuajimalpa_educacion_superior_2017",
         "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Parcial_de_cruz_del_Encuentro_de_dos_culturas_o_El_mestizaje_Raul_Anguiano_Museo_Vivo_del_Muralismo_CDMX.jpg/1280px-Parcial_de_cruz_del_Encuentro_de_dos_culturas_o_El_mestizaje_Raul_Anguiano_Museo_Vivo_del_Muralismo_CDMX.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "category": "Cultura",
-        "borough": "",
-        "topic": "Parcial de cruz del Encuentro de dos culturas o El mestizaje Raul Anguiano Museo Vivo del Muralismo CDMX",
+        "category": "Educación",
+        "topic": "Edificio de la UAM Cuajimalpa, CDMX (16/03/2017); foto educativa de archivo, no es el plantel Martín Carrera de UTC.",
+        "file": "Edificio de la UAM Cuajimalpa.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Edificio_de_la_UAM_Cuajimalpa.jpg/960px-Edificio_de_la_UAM_Cuajimalpa.jpg",
+        "source": "https://commons.wikimedia.org/wiki/File:Edificio_de_la_UAM_Cuajimalpa.jpg",
+        "author": "ProtoplasmaKid",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
         "keywords": [
-          "Cultura"
+          "universidad",
+          "educación superior",
+          "campus universitario",
+          "Ciudad de México",
+          "UAM",
+          "Universidad Tres Culturas",
+          "plantel Martín Carrera"
         ],
-        "author": "Gio Antonio",
-        "license": "CC BY 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Parcial_de_cruz_del_Encuentro_de_dos_culturas_o_El_mestizaje_Raul_Anguiano_Museo_Vivo_del_Muralismo_CDMX.jpg"
-      }
+        "borough": "Cuajimalpa de Morelos",
+        "captured_at": "2017-03-16",
+        "context": "Fotografía del edificio de UAM Cuajimalpa usada solo como imagen de referencia de educación superior en CDMX; no muestra el plantel Martín Carrera de UTC.",
+        "adaptation": "Miniatura oficial de Wikimedia Commons; sin modificación."
+      },
+      "source_url": "https://www.eleconomista.com.mx/amp/arteseideas/universidad-tres-culturas-inaugura-plantel-martin-carrera-fortalece-presencia-ciudad-mexico-20261118-844582.html"
     },
     {
       "title": "Karol G cierra su gira en la CDMX con Paulina Rubio como invitada sorpresa",
-      "description": "Zona Franca informó que Karol G cerró el 17 de noviembre su paso por CDMX en el Estadio GNP Seguros con Paulina Rubio como invitada sorpresa. El medio reportó alrededor de 65 mil asistentes y señaló que ambas interpretaron «El último adiós», «Yo no soy esa mujer» y «Ni una sola palabra».",
+      "description": "Zona Franca informó que Karol G cerró el 17 de noviembre sus fechas en CDMX con Paulina Rubio como invitada en el Estadio GNP Seguros; la nota reportó alrededor de 65 mil asistentes y la interpretación de tres canciones juntas.",
       "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPMFV2MFVGZFNLTFZxSTU4VnJYOUZOWEVJQzhZdmR0VW1xMmY4R2pCWUFRYXFKblhXRlhBcHhxU3RVV2VYaFp4NVNQQTcxRGlMeDhXcTg3djBRZjdkR2lKaldTM1ViZTdBeDRFMEpfRjhOdEExVXBJNjVsZFhJVzZLem5odDVCMHhUYndBWTM4dmZyQWtZSU1sWURPei0xQVlQc3pNN2IwTzItTG9X?oc=5",
       "source": "Zona Franca",
       "date": "2026-11-18",
@@ -12763,7 +12776,8 @@
         "adaptation": "Miniatura oficial de Wikimedia Commons; sin modificación.",
         "captured_at": "2023-01-23",
         "uploaded_at": "2023-02-01"
-      }
+      },
+      "source_url": "https://zonafranca.mx/tendencias/karol-g-cierra-su-gira-en-la-cdmx-con-paulina-rubio-como-invitada-sorpresa/"
     },
     {
       "title": "Incumple Tláhuac con metas institucionales",
@@ -12845,7 +12859,7 @@
     },
     {
       "title": "Gobierno de CDMX abre diálogo con motociclistas repartidores ante retos de movilidad",
-      "description": "Maya Comunicación reportó que la SEMOVI inició el 17 de noviembre una mesa de diálogo con repartidores por aplicación. El encuentro, encabezado por el secretario Héctor Ulises García Nieto, reunió a representantes de cinco dependencias y abordó posibles medidas de regulación, seguridad vial y un registro que también incluiría a trabajadores independientes.",
+      "description": "Maya Comunicación informó que la SEMOVI inició el 17 de noviembre una mesa de diálogo con repartidores por aplicación para discutir regulación, seguridad vial y un registro que también incluiría a trabajadores independientes. El encuentro fue encabezado por el secretario Héctor Ulises García Nieto y reunió a representantes de cinco dependencias.",
       "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNVVRVQktKSGMwZEJIXy0zSDlQLTQ2WWxqUGtMNjBzMHZFUzF0V1FMbFVwc3o5V1dLLVJFZ2JtNU1hZklKN3ZiSzFBNGhWa0RBX3U3X2F2cFN4OHBudTF3SkgtZUJSbElOdmlyRmw2QzN2U0V6MTFSYUR1TkV0WGdDaHViVXowNkI1Z2lIdHJlWV9UREVnMW9nQ3hCUUtRV0YxSGxiWFBFekswU3J6U2xWWUhpeXphVGp0?oc=5",
       "source": "Maya Comunicación",
       "date": "2026-11-18",
@@ -12923,7 +12937,8 @@
         "license": "CC BY-SA 4.0",
         "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
         "source": "https://commons.wikimedia.org/wiki/File:Carteros_en_motocicleta_del_Servicio_Postal_Mexicano,_2013.jpg"
-      }
+      },
+      "source_url": "https://mayacomunicacion.com.mx/gobierno-de-cdmx-abre-dialogo-con-motociclistas-repartidores-ante-retos-de-movilidad/"
     },
     {
       "title": "Piden capacitar a maestros de CDMX en primeros auxilios psicológicos ante crisis emocionales de estudiantes",
@@ -12943,19 +12958,35 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "commons_145192405",
+        "id": "contexto_aula_educacion_salud_mental_cdmx",
         "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/DECLARATORIA_DE_CARNAVALES_COMO_PATRIMONIO_CULTURAL_INMATERIAL_DE_LA_CIUDAD_DE_M%C3%89XICO_09.jpg/960px-DECLARATORIA_DE_CARNAVALES_COMO_PATRIMONIO_CULTURAL_INMATERIAL_DE_LA_CIUDAD_DE_M%C3%89XICO_09.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "category": "CDMX",
-        "borough": "",
-        "topic": "DECLARATORIA DE CARNAVALES COMO PATRIMONIO CULTURAL INMATERIAL DE LA CIUDAD DE MÉXICO 09",
+        "category": "Educación",
+        "topic": "Aula de escuela del IEMS en CDMX (archivo 2013); imagen representativa de educación, no documenta la petición de capacitación ni muestra a docentes o estudiantes de la noticia.",
         "keywords": [
-          "Calles Ciudad de México"
+          "aula",
+          "salón de clase",
+          "salon de clases",
+          "escuela",
+          "docentes",
+          "maestros",
+          "educación",
+          "educacion media superior",
+          "IEMS",
+          "salud mental",
+          "primeros auxilios psicológicos",
+          "depresión adolescente",
+          "adolescentes",
+          "Ciudad de México",
+          "CDMX"
         ],
-        "author": "Secretaría de Cultura CDMX",
-        "license": "CC BY 2.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-        "source": "https://commons.wikimedia.org/wiki/File:DECLARATORIA_DE_CARNAVALES_COMO_PATRIMONIO_CULTURAL_INMATERIAL_DE_LA_CIUDAD_DE_M%C3%89XICO_09.jpg"
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Sal%C3%B3n_de_clase.JPG/500px-Sal%C3%B3n_de_clase.JPG?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail&_=20130921232556",
+        "source": "https://commons.wikimedia.org/wiki/File:Sal%C3%B3n_de_clase.JPG",
+        "author": "Lucía Villegas",
+        "license": "CC0 1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "captured_at": "2013-09-20",
+        "context": "Aula del Instituto de Educación Media Superior del Gobierno del Distrito Federal; fotografía de archivo usada como contexto educativo, no de la iniciativa ni de personas entrevistadas.",
+        "adaptation": "Miniatura oficial de Wikimedia Commons; sin modificación."
       }
     },
     {
@@ -13451,20 +13482,20 @@
     },
     {
       "title": "El cadáver de la novia tendrá función gratis en CDMX: horario y sede para ver la película de Tim Burton",
-      "description": "De acuerdo con Infobae, el titular publicado es: «El cadáver de la novia tendrá función gratis en CDMX: horario y sede para ver la película de Tim Burton». La información publicada por Infobae aborda un asunto que este portal clasifica como Cultura. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "description": "Infobae informó que el Cineclub CASUL proyectará gratis El cadáver de la novia el miércoles 25 de noviembre de 2026 a las 18:00 en la Casa Universitaria del Libro, Orizaba 24, Roma Norte. El cupo es de 40 personas y no requiere registro previo.",
       "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOaFdDS3FON2szWVRJcWQ0a0YxSGxDR0tNcURQN0UxTnZzbndkSnlGdXFGYm1NN2YyRks4aS1jX1JQYjBoWEFHbC1XU2x3X0pzRmxuRVY3N3JkLVhrRkplUEpaV2ZXczBYWEc3MDEyRVhhT3JtcXhRak1aZkFmUVFET0NMSFZnV2xLUmM5MUE4TnBRamljbEh0cnVGZ1BNclJiOGFCUEVIUzNxMG1UTktmRURNTzM1OTl6aFhQZW9zQWxESDRjSWc1UllGcGZ0VEZ2MFhRY01FNDk4Nmd4a0HSAfgBQVVfeXFMTzlHVDVLaWVObTdXbHVVZEV3azQ3MklBUFdzX1QtaUNpMTBQLS1ESURPNURuTnBuOVpZZmZmYTVQYWs3QlozUlh4ZFY0ZU50d3lTQTI2dE5QaGtUdUVKcEprSTVIa1NYNG95eW5CcGxuaDNST0FpTERVMnhINWdIYWlsSHZZeDl3MlRQV25PckdLTzFfY3g2REpaQVNmZlhrZ0JTcW52Q255RGpMbm9RbUNyTnFKSjFCM2NRQWhfN19lZThLUTFVM2U1SlRXUlEyekVwZ1NFVU56a0lnR2dnZW9YUEVXZ056YVVmaS04NnJyQXJHYjRrdW4?oc=5",
       "source": "Infobae",
       "date": "2026-11-18",
       "published_at": "2026-11-18T16:27:00Z",
       "category": "Cultura",
       "borough": "",
-      "location": "Ciudad de México (sin alcaldía identificada)",
+      "location": "Casa Universitaria del Libro, Orizaba 24, Roma Norte, Cuauhtémoc, CDMX",
       "local_url": "/noticias/?id=af7d04e8a05239194c6d&mes=2026-11",
       "brief": {
-        "lead": "De acuerdo con Infobae, el titular publicado es: «El cadáver de la novia tendrá función gratis en CDMX: horario y sede para ver la película de Tim Burton». La información publicada por Infobae aborda un asunto que este portal clasifica como Cultura. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-        "context": "La actividad cultural abre oportunidades de encuentro, aprendizaje y disfrute para habitantes y visitantes.",
-        "pending": "Los accesos, boletos, sedes, cupos y horarios deben consultarse con la institución organizadora. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+        "lead": "Infobae reportó que el Cineclub CASUL proyectará gratis El cadáver de la novia el miércoles 25 de noviembre a las 18:00 en la Casa Universitaria del Libro, Orizaba 24, Roma Norte, Cuauhtémoc. El cupo es de 40 personas y no requiere registro previo.",
+        "context": "La función forma parte de la programación por el 17 aniversario de la Noche de Museos y cuenta con respaldo de Filmoteca UNAM, Secretaría de Cultura CDMX y Gobierno de la Ciudad de México.",
+        "pending": "El acceso es por orden de llegada y el recinto puede cerrar el ingreso al completar el cupo de 40. Confirmar con CASUL cualquier cambio de horario o disponibilidad antes de acudir.",
+        "method": "Síntesis basada en el artículo de Infobae firmado por Kenya Saldaña y publicado el 18 de noviembre de 2026; no equivale a verificación independiente."
       },
       "photo": {
         "id": "contexto_casul_casa_universitaria_del_libro_2016",
@@ -13491,7 +13522,8 @@
         "captured_at": "2016-09-26",
         "context": "Fotografía de archivo de la fachada de CASUL, sede anunciada para la proyección gratuita de El cadáver de la novia; no documenta la función.",
         "adaptation": "Miniatura oficial de Wikimedia Commons; sin modificación."
-      }
+      },
+      "source_url": "https://www.infobae.com/mexico/2026/11/18/el-cadaver-de-la-novia-tendra-funcion-gratis-en-cdmx-horario-y-sede-para-ver-la-pelicula-de-tim-burton/"
     },
     {
       "title": "Regalará Brugada gallinas a familias de CDMX para que produzcan huevos",
@@ -13511,19 +13543,27 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "commons_98002541",
+        "id": "contexto_gallinero_chinampa_xochimilco",
         "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Sala_de_Tesorer%C3%ADa_en_Palacio_Nacional_-_I.jpg/960px-Sala_de_Tesorer%C3%ADa_en_Palacio_Nacional_-_I.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "category": "Gobierno",
-        "borough": "",
-        "topic": "Sala de Tesorería en Palacio Nacional - I",
+        "category": "Servicios",
+        "topic": "Gallinero artesanal en una chinampa de Xochimilco (archivo 2018); no corresponde al programa de 2026.",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Gallinero_hecho_a_mano_en_chinampa.jpg/960px-Gallinero_hecho_a_mano_en_chinampa.jpg",
+        "source": "https://commons.wikimedia.org/wiki/File:Gallinero_hecho_a_mano_en_chinampa.jpg",
+        "author": "Diego M.P.",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
         "keywords": [
-          "Palacio Nacional Ciudad de México"
+          "gallinas",
+          "gallinero",
+          "aves de corral",
+          "ponedoras",
+          "huevo",
+          "Xochimilco",
+          "chinampa"
         ],
-        "author": "J Mndz",
-        "license": "CC BY-SA 2.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Sala_de_Tesorer%C3%ADa_en_Palacio_Nacional_-_I.jpg"
+        "borough": "Xochimilco",
+        "adaptation": "Fotografía de archivo de 2018; no documenta la entrega de las 15 aves anunciadas en 2026.",
+        "context": "Fotografía de archivo de un gallinero artesanal en una chinampa de Xochimilco; representa crianza de aves de corral, no documenta la entrega de gallinas anunciada en 2026."
       }
     },
     {
@@ -13546,7 +13586,7 @@
     },
     {
       "title": "¿Ya debes emplacar tu bici eléctrica o scooter? CDMX pospone multas y anunciará nueva fecha",
-      "description": "De acuerdo con López-Dóriga Digital, el titular publicado es: «¿Ya debes emplacar tu bici eléctrica o scooter? CDMX pospone multas y anunciará nueva fecha». La información publicada por López-Dóriga Digital aborda un asunto que este portal clasifica como Movilidad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "description": "López-Dóriga Digital informó que Semovi y la Secretaría de Seguridad Ciudadana ampliaron hasta nuevo aviso el plazo para registrar y emplacar vehículos eléctricos personales. Clara Brugada señaló que hay alrededor de 13 mil usuarios registrados y que la prórroga busca ampliar el padrón; el titular de Semovi informará sobre el proceso.",
       "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPdFB1VzlOSHQwYXZBTVFpYl9SNmt6a2R6cXo5aEs1dWNEb1VGYzgwWF95Tm03Z3phbERZY0FQM1V6NkloMC0yeFJfZjJSM09sZ3BMMWEzY1RQdVpreVpUc0ZJSV96NFlvVmRtVHFMQ3o4RExTTGRvdUhHZF9zQUVpZk9PdzkxVWZNUWJhNHdBM1I4cjdUMTRzMHpzY0FpOHAwVUlqcGJyV0VhN0dEc0l1QXExUkt3U0pCQklhUzQ5WmM?oc=5",
       "source": "López-Dóriga Digital",
       "date": "2026-11-18",
@@ -13607,10 +13647,10 @@
         }
       ],
       "brief": {
-        "lead": "De acuerdo con López-Dóriga Digital, el titular publicado es: «¿Ya debes emplacar tu bici eléctrica o scooter? CDMX pospone multas y anunciará nueva fecha». La información publicada por López-Dóriga Digital aborda un asunto que este portal clasifica como Movilidad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-        "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
-        "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+        "lead": "López-Dóriga Digital reportó que Semovi y SSC ampliaron hasta nuevo aviso el plazo para registrar y emplacar vehículos eléctricos personales. La jefa de Gobierno dijo que hay alrededor de 13 mil usuarios registrados y que la prórroga busca ampliar el padrón.",
+        "context": "Los vehículos motorizados eléctricos personales que superan los 25 km/h requieren placas, tarjeta de circulación y licencia A1 o A2. Los vehículos eléctricos personales de menor potencia y velocidad deben obtener el Distintivo de Movilidad Eléctrica, según la clasificación explicada en la nota.",
+        "pending": "La publicación no fija una nueva fecha límite ni una fecha de entrada en vigor de las multas; la prórroga se anunció hasta nuevo aviso. No debe presentarse una fecha de vencimiento que la autoridad todavía no comunicó.",
+        "method": "Síntesis editorial basada en el artículo de López-Dóriga Digital publicado el 18 de noviembre de 2026; no equivale a verificación independiente."
       },
       "photo": {
         "id": "contexto_grin_escooter_cdmx_2019",
@@ -13642,7 +13682,8 @@
         "uploaded_at": "2020-04-13",
         "context": "Imagen de carácter ilustrativo y referencial; no constituye evidencia gráfica de los hechos descritos.",
         "adaptation": "Miniatura oficial de Wikimedia Commons; sin modificación."
-      }
+      },
+      "source_url": "https://lopezdoriga.com/nacional/ya-debes-emplacar-tu-bici-electrica-o-scooter-cdmx-pospone-multas-y-anunciara-nueva-fecha/"
     },
     {
       "title": "Corona Capital atrae fans de México y el mundo e impulsa el turismo en CDMX",
@@ -13704,19 +13745,27 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "commons_93188323",
+        "id": "contexto_embarazo_representativo_niaid",
         "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/Registro_de_agua._Primera_Secci%C3%B3n_del_Bosque_de_Chapultepec_-_4.jpg/960px-Registro_de_agua._Primera_Secci%C3%B3n_del_Bosque_de_Chapultepec_-_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "category": "CDMX",
-        "borough": "",
-        "topic": "Registro de agua. Primera Sección del Bosque de Chapultepec - 4",
+        "category": "Salud",
+        "topic": "Mujer embarazada, fotografía de archivo de NIAID (24/08/2018); imagen representativa del embarazo, no muestra a beneficiarias ni el programa de CDMX.",
+        "file": "Pregnant woman (43338546905).jpg",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Pregnant_woman_%2843338546905%29.jpg/960px-Pregnant_woman_%2843338546905%29.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+        "source": "https://commons.wikimedia.org/wiki/File:Pregnant_woman_(43338546905).jpg",
+        "author": "NIAID",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
         "keywords": [
-          "Medio Ambiente"
+          "embarazo",
+          "mujer embarazada",
+          "salud materna",
+          "programas sociales",
+          "Mujeres Sanas e Infancias Protegidas"
         ],
-        "author": "ProtoplasmaKid",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Registro_de_agua._Primera_Secci%C3%B3n_del_Bosque_de_Chapultepec_-_4.jpg"
+        "captured_at": "2018-08-24",
+        "uploaded_at": "2019-10-10",
+        "context": "Fotografía de archivo de NIAID que representa el embarazo; no documenta el programa de apoyo de W Radio ni identifica a sus beneficiarias.",
+        "adaptation": "Miniatura oficial de Wikimedia Commons; sin modificación."
       }
     },
     {
@@ -14203,7 +14252,7 @@
     },
     {
       "title": "Gallinas gratis en CDMX: así funcionará el programa de Brugada para producir huevo en casa",
-      "description": "De acuerdo con Eje Central, el titular publicado es: «Gallinas gratis en CDMX: así funcionará el programa de Brugada para producir huevo en casa». La información publicada por Eje Central aborda un asunto que este portal clasifica como Gobierno. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "description": "Eje Central informó que Gallinas en Casa busca impulsar la producción doméstica de huevo mediante la entrega de gallinas ponedoras a familias con espacio adecuado, principalmente en zonas rurales de la Ciudad de México. La jefa de Gobierno señaló que habrá asesoría técnica; al publicarse la nota aún no se habían detallado fechas de inscripción, requisitos específicos ni número de hogares beneficiarios.",
       "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQNDY2c19EbUtWdWVYVkFOdGpmT3pkazRMT0pyQ2MwUEZVNnhfc2FEZDE5MElKNk1NakFNeTdKWGpxMU9mOTBoSEhncFZ4azZXLVRTaDZ3aEx6XzVhRlZ4S1BSSHlEdXBsRTdUSV9MS3hmd3BQY3VSMll6NG9iZWV0amVqM0U5dzBGWEVHVHpQSlVnRkpkOTB6c1FRNEpQd3pqdnEtMnVRWkJTc09RaDE4a09CSm9LTkFNSDdZZkVzTHVvb2JrU0RoUzFtRQ?oc=5",
       "source": "Eje Central",
       "date": "2026-11-18",
@@ -14213,33 +14262,37 @@
       "location": "Ciudad de México (sin alcaldía identificada)",
       "local_url": "/noticias/?id=3ba1e63aebcbe83062ef&mes=2026-11",
       "brief": {
-        "lead": "De acuerdo con Eje Central, el titular publicado es: «Gallinas gratis en CDMX: así funcionará el programa de Brugada para producir huevo en casa». La información publicada por Eje Central aborda un asunto que este portal clasifica como Gobierno. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-        "context": "Las decisiones administrativas pueden influir en servicios, trámites y derechos; conviene conocer sus condiciones y a quiénes afectan.",
-        "pending": "Es indispensable consultar los acuerdos, comunicados o documentos oficiales antes de dar una medida por vigente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+        "lead": "Eje Central reportó que Gallinas en Casa contempla entregar gallinas ponedoras a familias con espacio suficiente para instalar un corral, principalmente en zonas rurales de CDMX. La jefa de Gobierno dijo que el objetivo es producir huevo para autoconsumo y fortalecer la soberanía alimentaria; también se prevé asesoría técnica.",
+        "context": "El programa se coordinará con Casa Ecológica, que incluye captación de lluvia, calentadores solares y huertos. La iniciativa puede llegar a viviendas urbanas si cuentan con condiciones adecuadas para mantener las aves.",
+        "pending": "Al momento de la publicación no se habían anunciado fechas de registro, requisitos específicos ni número de hogares beneficiarios. No debe presentarse como convocatoria abierta ni como entrega ya realizada.",
+        "method": "Síntesis editorial basada en el artículo de Eje Central publicado el 18 de noviembre de 2026; no equivale a verificación independiente."
       },
       "photo": {
-        "id": "contexto_pension_adultos_mayores_2019",
+        "id": "contexto_gallinero_chinampa_xochimilco",
         "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Pension_Adultos_Mayores_03.jpg/960px-Pension_Adultos_Mayores_03.jpg",
-        "category": "Gobierno",
-        "borough": "",
-        "topic": "Archivo de la Pensión para el Bienestar de Adultos Mayores en CDMX (02/04/2019); no documenta el programa Pensión Hombres Bienestar 2026.",
+        "category": "Servicios",
+        "topic": "Gallinero artesanal en una chinampa de Xochimilco (12/04/2018); imagen de contexto, no documenta el programa Gallinas en Casa de 2026.",
+        "file": "Gallinero hecho a mano en chinampa.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Gallinero_hecho_a_mano_en_chinampa.jpg/960px-Gallinero_hecho_a_mano_en_chinampa.jpg",
+        "source": "https://commons.wikimedia.org/wiki/File:Gallinero_hecho_a_mano_en_chinampa.jpg",
+        "author": "Diego M.P.",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
         "keywords": [
-          "pensión",
-          "pension",
-          "adultos mayores",
-          "personas mayores",
-          "bienestar",
-          "apoyo económico",
-          "programa social",
-          "tarjeta de pensión"
+          "gallinas",
+          "gallinero",
+          "aves de corral",
+          "ponedoras",
+          "huevo",
+          "Xochimilco",
+          "chinampa"
         ],
-        "author": "Gobierno de la Ciudad de México",
-        "license": "CC BY 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
-        "source": "https://commons.wikimedia.org/wiki/File:Pension_Adultos_Mayores_03.jpg"
-      }
+        "borough": "Xochimilco",
+        "captured_at": "2018-04-12",
+        "context": "Fotografía de archivo de un gallinero artesanal con dos gallinas en una chinampa de Xochimilco; representa el tema de crianza de aves, no muestra a las personas beneficiarias ni la entrega de gallinas del programa de 2026.",
+        "adaptation": "Fotografía original de Diego M.P. en Wikimedia Commons; sin modificación."
+      },
+      "source_url": "https://www.ejecentral.com.mx/nuestro-eje/gallinas-gratis-en-cdmx-asi-funcionara-el-programa-de-brugada-para-producir-huevo-en-casa"
     },
     {
       "title": "Clima en CDMX hoy miércoles 18 de noviembre 2026: Pronóstico del tiempo por hora y alcaldías",
@@ -14422,14 +14475,14 @@
     },
     {
       "title": "¿Sales hoy en CDMX? Estas movilizaciones podrían afectar tu ruta",
-      "description": "De acuerdo con Amexi, el titular publicado es: «¿Sales hoy en CDMX? Estas movilizaciones podrían afectar tu ruta». La información publicada por Amexi aborda un asunto que este portal clasifica como Movilidad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "description": "AMEXI informó que la SSC-CDMX previó una marcha y siete concentraciones para el miércoles 18 de noviembre en Cuauhtémoc, Iztapalapa, Iztacalco y Miguel Hidalgo, con posibles afectaciones viales.",
       "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5qcF9vb0EwWnRfZS1tbzBrazlfN3h6bGZsbm5OUXZjdWJSelNDN0l0SkVGbU1oeWFJV205aGtvcjdKYlZaQTlDeGU3YXVEQTlIUkFMOG1Dek9OZ09HcTNmNjhLMFZ1X1F3bmlF?oc=5",
       "source": "Amexi",
       "date": "2026-11-18",
       "published_at": "2026-11-18T14:11:58Z",
       "category": "Movilidad",
       "borough": "",
-      "location": "Ciudad de México (sin alcaldía identificada)",
+      "location": "Cuauhtémoc, Iztapalapa, Iztacalco y Miguel Hidalgo (según agenda de SSC-CDMX)",
       "local_url": "/noticias/?id=fd539ea3ddd1eb1cf4e8&mes=2026-11",
       "alternate_versions": [
         {
@@ -14467,10 +14520,10 @@
         }
       ],
       "brief": {
-        "lead": "De acuerdo con Amexi, el titular publicado es: «¿Sales hoy en CDMX? Estas movilizaciones podrían afectar tu ruta». La información publicada por Amexi aborda un asunto que este portal clasifica como Movilidad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-        "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
-        "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+        "lead": "AMEXI reportó que la SSC-CDMX previó una marcha y siete concentraciones para el miércoles 18 de noviembre en cuatro alcaldías: Cuauhtémoc, Iztapalapa, Iztacalco y Miguel Hidalgo. Las convocatorias incluyen demandas laborales, búsqueda de personas desaparecidas, justicia y derechos de trabajadores.",
+        "context": "La agenda ubicó, entre otros puntos, una movilización de MOTTU en Río Churubusco con destino al Zócalo a las 10:00, además de concentraciones en Chabacano, Torre Ejecutiva de Pemex, Reclusorio Oriente, La Ciudadela, Telmex y la Secretaría de Gobernación.",
+        "pending": "El reporte es una previsión de agenda; no confirma que cada concentración se convierta en bloqueo ni que una vía permanezca cerrada. Verificar avisos de SSC-CDMX y autoridades de movilidad antes de cambiar la ruta.",
+        "method": "Síntesis basada en la infografía de AMEXI firmada por Emmanuel Galván Guerra, publicada el 18 de noviembre de 2026; no equivale a verificación independiente."
       },
       "photo": {
         "id": "contexto_trafico_eje_central",
@@ -14492,7 +14545,8 @@
         "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
         "context": "Fotografía de archivo del tránsito sobre Eje Central; representa circulación vehicular en CDMX, no muestra las movilizaciones ni los puntos de afectación del 18/11/2026.",
         "adaptation": "Fotografía de archivo de Wikimedia Commons; miniatura sin modificación."
-      }
+      },
+      "source_url": "https://amexi.com.mx/infografias/marchas-cdmx-18-noviembre/"
     },
     {
       "title": "Marchas, protestas y eventos afectarán vialidades de CDMX este 18 de noviembre",
@@ -15258,7 +15312,7 @@
     },
     {
       "title": "Nuevo colapso vial en CDMX; en Cuajimalpa, encapuchados bloquearon accesos a Santa Fe",
-      "description": "De acuerdo con La Jornada, el titular publicado es: «Nuevo colapso vial en CDMX; en Cuajimalpa, encapuchados bloquearon accesos a Santa Fe». La información publicada por La Jornada aborda un asunto que este portal clasifica como Movilidad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "description": "La Jornada reportó nueve movilizaciones y bloqueos en la Ciudad de México; uno de ellos cerró por más de cinco horas los accesos a Santa Fe, en Cuajimalpa, desde las 7:00 horas del 17 de noviembre.",
       "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9FOGZ3cU1ObHpEWkNUY09DQU9RUzRRU0l0WVlkNDJJT1VfNzBjMHgtNDNpUFluVDZxbExFZzJUbUlnRGUxSTF1a1RadXVjeUliU2w2ZHg1OTliWURCN1JjZ0pmLTQ?oc=5",
       "source": "La Jornada",
       "date": "2026-11-18",
@@ -15303,26 +15357,35 @@
         }
       ],
       "brief": {
-        "lead": "De acuerdo con La Jornada, el titular publicado es: «Nuevo colapso vial en CDMX; en Cuajimalpa, encapuchados bloquearon accesos a Santa Fe». La información publicada por La Jornada aborda un asunto que este portal clasifica como Movilidad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-        "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
-        "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+        "lead": "La Jornada informó que una jornada de nueve movilizaciones incluyó un bloqueo en los accesos a Santa Fe que comenzó alrededor de las 7:00 y se prolongó poco más de cinco horas. El diario reportó que unas 400 personas participaron y que dijeron ser familiares de internos del penal federal 4 de Tepic; también atribuyó a autoridades la versión de que habrían sido convocadas y pagadas por personas cercanas a Lenin Canchola.",
+        "context": "Los cierres afectaron avenidas como Vasco de Quiroga, Carlos Echanove, Juan Salvador Agraz, Mario Pani y Prolongación Reforma; la nota también reportó retrasos en el transporte público.",
+        "pending": "La presunta relación de los convocantes con Lenin Canchola y los pagos es una versión atribuida por La Jornada a autoridades; no debe presentarse como una determinación judicial ni como un hecho probado.",
+        "method": "Síntesis basada en la nota de La Jornada, firmada por Kevin Ruiz, Nayelli Ramírez, Jared Laureles, Carolina Gómez y Jessica Xantomila, publicada el 18 de noviembre de 2026; no equivale a verificación independiente."
       },
       "photo": {
-        "id": "commons_16240277",
+        "id": "contexto_santa_fe_cuajimalpa_denuncias",
         "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Cacerolazo_contra_la_violencia_-_Ciudad_de_M%C3%A9xico_-_1.jpg/960px-Cacerolazo_contra_la_violencia_-_Ciudad_de_M%C3%A9xico_-_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "category": "CDMX",
-        "borough": "",
-        "topic": "Cacerolazo contra la violencia en CDMX (archivo); foto representativa, no corresponde a las movilizaciones del 14/11/2026.",
-        "keywords": [
-          "Ángel de la Independencia Ciudad de México"
-        ],
+        "category": "Alcaldías",
+        "topic": "Vista aérea de Centro Santa Fe, alcaldía Cuajimalpa, CDMX (archivo 2024); imagen de contexto de la zona, no muestra el bloqueo ni el tránsito del 17 de noviembre de 2026.",
+        "file": "Centro Santa Fe - vista aérea.jpg",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Centro_Santa_Fe_-_vista_a%C3%A9rea.jpg/960px-Centro_Santa_Fe_-_vista_a%C3%A9rea.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+        "source": "https://commons.wikimedia.org/wiki/File:Centro_Santa_Fe_-_vista_a%C3%A9rea.jpg",
         "author": "ProtoplasmaKid",
-        "license": "CC BY-SA 3.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Cacerolazo_contra_la_violencia_-_Ciudad_de_M%C3%A9xico_-_1.jpg"
-      }
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "keywords": [
+          "Santa Fe",
+          "Cuajimalpa",
+          "Centro Santa Fe",
+          "Ciudad de México",
+          "denuncias por colonia"
+        ],
+        "captured_at": "2024-10-02",
+        "context": "Vista aérea del Centro Santa Fe para ubicar la zona mencionada por La Jornada; no documenta la manifestación ni las afectaciones viales del día.",
+        "adaptation": "Miniatura oficial de Wikimedia Commons; sin modificación.",
+        "borough": "Cuajimalpa de Morelos"
+      },
+      "source_url": "https://www.jornada.com.mx/2026/11/18/capital/028n1cap"
     },
     {
       "title": "Autoconstrucción y hundimiento del suelo: las amenazas que ponen en riesgo a las viviendas de CDMX",
@@ -15384,7 +15447,7 @@
     },
     {
       "title": "Motociclistas repartidores acuerdan diálogo con autoridades de la Cdmx",
-      "description": "De acuerdo con Sociedad Noticias, el titular publicado es: «Motociclistas repartidores acuerdan diálogo con autoridades de la Cdmx». La información publicada por Sociedad Noticias aborda un asunto que este portal clasifica como Movilidad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "description": "Sociedad Noticias informó que la Secretaría de Movilidad instaló la primera mesa de diálogo con motociclistas repartidores por aplicación para analizar la regulación de la actividad, crear un registro de operadores y mejorar la seguridad vial. La reunión fue encabezada por el secretario Héctor Ulises García Nieto y contó con la participación de cinco dependencias.",
       "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQcTlRZmw2M2tWNTE0R3NYbTN3SXliYWNjTUxwVmpVQ0FsZzFoNFU4NDZUUFI1N2xieUs2ZWt2V01oNkxNVWxLdnE5ZUhGanpqaFpLZ0NHZnZsdkVrbFlDanhwQzRZSmRzdTlzN19wWnB1QmMxVTJ1ckFFUkptaXg3dTB3dXVHN3BsNTltZkprSVdMY1JVT0FZNVp5MDRvQUt0ZExKQWpTcklKZ0Z3b3dFOXFn?oc=5",
       "source": "Sociedad Noticias",
       "date": "2026-11-18",
@@ -15435,10 +15498,10 @@
         }
       ],
       "brief": {
-        "lead": "De acuerdo con Sociedad Noticias, el titular publicado es: «Motociclistas repartidores acuerdan diálogo con autoridades de la Cdmx». La información publicada por Sociedad Noticias aborda un asunto que este portal clasifica como Movilidad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-        "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
-        "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+        "lead": "Sociedad Noticias reportó que la Semovi encabezó la primera mesa de diálogo con repartidores por aplicación para analizar la regulación de la actividad, crear un registro de operadores y atender la seguridad vial. Participaron representantes de cinco dependencias; las autoridades convocaron a una próxima reunión.",
+        "context": "El diálogo puede definir cómo se registran y regulan quienes realizan entregas en motocicleta, incluidas las personas que trabajan por cuenta propia, y cómo se coordinan las medidas de movilidad, trabajo y seguridad vial.",
+        "pending": "La nota informa que habrá una próxima reunión, pero no publica todavía un reglamento aprobado ni los requisitos finales del registro. Las propuestas deben distinguirse de las disposiciones vigentes.",
+        "method": "Síntesis editorial basada en el artículo completo de Sociedad Noticias, firmado por Fausto Hernández; no equivale a verificación independiente."
       },
       "photo": {
         "id": "contexto_repartidores_motocicleta_cdmx",
@@ -15460,7 +15523,8 @@
         "license": "CC BY-SA 4.0",
         "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
         "source": "https://commons.wikimedia.org/wiki/File:Carteros_en_motocicleta_del_Servicio_Postal_Mexicano,_2013.jpg"
-      }
+      },
+      "source_url": "https://sociedad-noticias.com/2026/11/18/motociclistas-repartidores-acuerdan-dialogo-con-autoridades-de-la-cdmx/"
     },
     {
       "title": "CDMX y Yucatán mejorarán su imagen y diversificarán mercados",
@@ -16536,16 +16600,24 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "alcaldia_tlalpan",
+        "id": "contexto_patrullas_iztapalapa_denuncias",
+        "category": "Seguridad",
+        "topic": "Patrullas en Iztapalapa, foto de archivo; imagen representativa de seguridad pública, no documenta el secuestro reportado en Tlalpan ni identifica a personas involucradas.",
+        "url": "/assets/fotos/archivo_seguridad_011.jpg",
+        "source": "https://commons.wikimedia.org/wiki/File:Claudia_Sheinbaum_entrega_patrullas_Iztapalapa_02.jpg",
+        "author": "Gobierno de la Ciudad de México",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+        "keywords": [
+          "Iztapalapa",
+          "patrullas",
+          "seguridad",
+          "denuncias"
+        ],
+        "borough": "Iztapalapa",
+        "adaptation": "Foto de archivo de Wikimedia Commons; sin modificación.",
         "kind": "representativa",
-        "url": "/assets/alcaldias/tlalpan.jpg",
-        "category": "CDMX",
-        "borough": "Tlalpan",
-        "topic": "Quiosco de la plaza principal de Tlalpan",
-        "author": "farid estrada",
-        "license": "CC BY-SA 3.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Kiosko_plaza_de_la_constitucion%2C_tlapan.JPG"
+        "context": "Fotografía de archivo de patrullas de la Ciudad de México; ilustra el tema de seguridad pública, no el hecho reportado."
       }
     },
     {
@@ -16669,7 +16741,7 @@
     },
     {
       "title": "Semovi CDMX otorga prórroga indefinida para emplacamiento de vehículos eléctricos",
-      "description": "De acuerdo con 88.9 Noticias, el titular publicado es: «Semovi CDMX otorga prórroga indefinida para emplacamiento de vehículos eléctricos». La información publicada por 88.9 Noticias aborda un asunto que este portal clasifica como Movilidad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "description": "88.9 Noticias informó que Semovi amplió hasta nuevo aviso el plazo para registrar y emplacar los Vehículos de Movilidad Eléctrica Personal. La prórroga se anunció el 17 de noviembre, después de las manifestaciones de usuarios en Insurgentes contra el emplacamiento y las restricciones para circular por el carril ciclista. La nota no fija una nueva fecha límite.",
       "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOUko0MURicmpzbG1sVlJJT1VCUGRrSk0wM2FuZDBndG9JWUhKUEVYTDlfdFlNM1U3NjdNS1VjaHppc3RGRDVlalc1eHdSdEZDVDM2dGw5NXFWa1NYcEJhTVNPcmJaTllTaE40eHA0X1laMDZaX0ZhdXdDWVdPTDNmdEhnQ2VfcUpmc2FYQTBJSUpKREZjSmUzc01zbUNGT3pQVkxFMU4wc2xjZU03UGV5UFYtOWE?oc=5",
       "source": "88.9 Noticias",
       "date": "2026-11-17",
@@ -16679,10 +16751,10 @@
       "location": "Ciudad de México (sin alcaldía identificada)",
       "local_url": "/noticias/?id=486d289d63499706dd71&mes=2026-11",
       "brief": {
-        "lead": "De acuerdo con 88.9 Noticias, el titular publicado es: «Semovi CDMX otorga prórroga indefinida para emplacamiento de vehículos eléctricos». La información publicada por 88.9 Noticias aborda un asunto que este portal clasifica como Movilidad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-        "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
-        "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+        "lead": "88.9 Noticias reportó que Semovi extendió hasta nuevo aviso el plazo para registrar y emplacar los VEMEPE. La decisión se anunció después de las protestas de usuarios en Insurgentes; las autoridades no comunicaron una nueva fecha de vencimiento.",
+        "context": "La regulación continúa vigente; la prórroga busca dar tiempo a los propietarios para completar el trámite. La nota no indica que la obligación haya sido cancelada.",
+        "pending": "No se ha publicado una nueva fecha límite ni una fecha de aplicación de multas; la ampliación se anunció hasta nuevo aviso.",
+        "method": "Síntesis editorial basada en el artículo de 88.9 Noticias publicado el 17 de noviembre de 2026; no equivale a verificación independiente."
       },
       "photo": {
         "id": "contexto_grin_escooter_cdmx_2019",
@@ -16714,7 +16786,8 @@
         "uploaded_at": "2020-04-13",
         "context": "Imagen de carácter ilustrativo y referencial; no constituye evidencia gráfica de los hechos descritos.",
         "adaptation": "Miniatura oficial de Wikimedia Commons; sin modificación."
-      }
+      },
+      "source_url": "https://889noticias.mx/noticias/semovi-cdmx-otorga-prorroga-indefinida-para-emplacamiento-de-vehiculos-electricos/"
     },
     {
       "title": "CDMX aplaza multas a scooters y bicis eléctricas; habrá más tiempo para registrarlos",
@@ -17073,7 +17146,7 @@
     },
     {
       "title": "Harry Potter llega al Museo de Historia Natural de CDMX para la última Noche de Museos de 2026",
-      "description": "De acuerdo con Infobae, el titular publicado es: «Harry Potter llega al Museo de Historia Natural de CDMX para la última Noche de Museos de 2026». La información publicada por Infobae aborda un asunto que este portal clasifica como Cultura. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "description": "Infobae informó que el Museo de Historia Natural y Cultura Ambiental realizará el 25 de noviembre una Noche de Museos inspirada en Harry Potter, con talleres, juegos y actividades presenciales de 18:00 a 20:30 horas.",
       "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNYU5hc3RzUXlHQ1g0d0ZKbDFaeldKZk1CSzJ3ZzFPWDZXYTgtcXVUX1lJQnlBcExnMzR3RjFnVHhtdWh0QkkzbE1hSXE4MEFNdEJYZlR0Mkc1bnA4di1xcm1KNnNxY3RTU2NiQkRYUWZTQmdDZS1wSmJEYXFvV0hUY2ctT3FqdzlNeTdSU0o2emdGUS1qYkRYVk9rem40Q2VYbWlJTVR1WkZJSjFmOW5IX3c5c043dnRWbndJVExzT2pqQXduM2VZZEZ5U09wc3A0OXY40gHuAUFVX3lxTE9xbWQwV3dWd3pVQXVSZDFCWF9POVZLN3ZDeHQ2VTJ3Ni1xOXZLUmlEQnRXTHBfZGJObzlYdUlSWHZ0NmFQWlpGYVZjdzl0VmhrcU1nTVhfTHhTb0RRcDVrcnZaRWdjWjJRVTVYb21TWGwwcFM1dXpsclJ1MVNPeXJPU1hVTWZpWFM2d2dkQmozRTRDVWY1X01TaHdtNHJIckowNnpDb3FLc296d0o1TlJERTU1Z0Zoa215a3ktM2JQOFF5bV9fVnpRQUZlZk5RQVZEdnkwZEV3a0ZuZlhUMFFhZFZNaWxKempRR1o1NVE?oc=5",
       "source": "Infobae",
       "date": "2026-11-17",
@@ -17151,10 +17224,10 @@
         }
       ],
       "brief": {
-        "lead": "De acuerdo con Infobae, el titular publicado es: «Harry Potter llega al Museo de Historia Natural de CDMX para la última Noche de Museos de 2026». La información publicada por Infobae aborda un asunto que este portal clasifica como Cultura. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-        "context": "La actividad cultural abre oportunidades de encuentro, aprendizaje y disfrute para habitantes y visitantes.",
-        "pending": "Los accesos, boletos, sedes, cupos y horarios deben consultarse con la institución organizadora. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+        "lead": "Infobae reportó que el Museo de Historia Natural y Cultura Ambiental cerrará su calendario de Noche de Museos el miércoles 25 de noviembre con actividades inspiradas en Harry Potter, entre ellas selección de casas, elaboración de pociones, búsqueda de criaturas y talleres.",
+        "context": "La jornada está programada de 18:00 a 20:30 en la Segunda Sección del Bosque de Chapultepec. La nota publica tarifas diferenciadas para la entrada y las visitas guiadas.",
+        "pending": "Horarios, tarifas y disponibilidad pueden cambiar; conviene confirmarlos con el museo antes de acudir. La fotografía de la ficha es del recinto y no documenta el evento temático.",
+        "method": "Síntesis basada en el artículo de Infobae firmado por Gisell Yazmin Pinzon Roldan, publicado el 18 de noviembre de 2026; no equivale a verificación independiente."
       },
       "photo": {
         "id": "contexto_museo_historia_natural_2013",
@@ -17180,7 +17253,8 @@
         "uploaded_at": "2013-01-21",
         "context": "Fotografía del exterior del Museo de Historia Natural y Cultura Ambiental en Chapultepec; muestra el recinto, no la actividad temática ni a sus asistentes.",
         "adaptation": "Miniatura oficial de Wikimedia Commons; sin modificación."
-      }
+      },
+      "source_url": "https://www.infobae.com/mexico/2026/11/18/harry-potter-llega-al-museo-de-historia-natural-de-cdmx-para-la-ultima-noche-de-museos-de-2026/"
     },
     {
       "title": "Legisladores piden resultados a alcalde de Coyoacán en su Informe 2026",
@@ -17387,7 +17461,7 @@
     },
     {
       "title": "M. Night Shyamalan anuncia visita a CDMX para proyectar Remain, su nueva película",
-      "description": "De acuerdo con Infobae, el titular publicado es: «M. Night Shyamalan anuncia visita a CDMX para proyectar Remain, su nueva película». La información publicada por Infobae aborda un asunto que este portal clasifica como Cultura. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "description": "Infobae informó que M. Night Shyamalan realizará el 23 de noviembre una función especial de Remain en un Cinépolis de Miguel Ángel de Quevedo 227; el acceso se definirá mediante una dinámica en redes sociales, no por venta de boletos.",
       "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQSVpXQ2xCcFZDRkcyUENqR0ZiVmdmYmdjcExTMjhtQ0d4YnlUdENDVWhKQTlEdHFvVTl4bHE2bWpUZ0VQMmM3eWRoVUExNUVfMmRaQUM4SUJYN25vZ1ptN1NORnNTYUpCNE5xbHRkSzNEaUVQQW5kaDV5ZnVyeGlMalp3OTFjRUJtbWNLZ0l3VHUzWkhuTDdQRTd5Qzgxa0pDZWF4LU5yaTRyRmpMMHpNSXFhaTJFdUh6WW91RGdtb9IB2gFBVV95cUxNR1pCYUcxa0dXclhfU0NwTTdnQ01LM2h5ckp6RXJvMDdvRTVmUG4ybld6cldDMVQ5WFdLN2szSlkyYURzYkNZZ3Y1dDBnclVoekdLT1VjWFljV2hUUUUtazBfNnpFaTNJZEdCUTR6QUl1WkpWYnhHWVJlOGZfNWxxWmJwNWtEM2tpeXlhWFlhdDVUZTJ5RWZpcWtJSmlVby1iTHhDNXpZSlFFcHp1YVdHRko2aFk3MExEZXFGTHdDcDA4TmRuOC1hbVFkTkNXMUZVS0pFS2pGLXVaQQ?oc=5",
       "source": "Infobae",
       "date": "2026-11-17",
@@ -17397,10 +17471,10 @@
       "location": "Ciudad de México (sin alcaldía identificada)",
       "local_url": "/noticias/?id=b5e636680f6dd0f0df25&mes=2026-11",
       "brief": {
-        "lead": "De acuerdo con Infobae, el titular publicado es: «M. Night Shyamalan anuncia visita a CDMX para proyectar Remain, su nueva película». La información publicada por Infobae aborda un asunto que este portal clasifica como Cultura. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-        "context": "La actividad cultural abre oportunidades de encuentro, aprendizaje y disfrute para habitantes y visitantes.",
-        "pending": "Los accesos, boletos, sedes, cupos y horarios deben consultarse con la institución organizadora. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+        "lead": "Infobae reportó que M. Night Shyamalan llegará a CDMX el 23 de noviembre para presentar Remain en Cinépolis de Miguel Ángel de Quevedo 227. Los pases se asignarán mediante una dinámica en redes sociales y no estarán a la venta.",
+        "context": "La función especial se realizará antes del estreno comercial mexicano previsto para febrero de 2027 y la convocatoria está dirigida a personas residentes en la capital.",
+        "pending": "La hora, el aforo y la asignación final de pases deben confirmarse con Cinépolis y Warner Bros. Pictures México. La foto de la ficha muestra la Cineteca Nacional como referencia cultural, no la sede de la función.",
+        "method": "Síntesis basada en el artículo de Infobae firmado por Ignacio Izquierdo y publicado el 18 de noviembre de 2026; no equivale a verificación independiente."
       },
       "photo": {
         "id": "contexto_cineteca_nacional_2015",
@@ -17426,7 +17500,8 @@
         "uploaded_at": "2015-11-29",
         "context": "Fotografía de archivo de la Cineteca Nacional; Infobae sitúa la función especial de Remain en Cinépolis Miguel Ángel de Quevedo 227, no en la Cineteca.",
         "adaptation": "Miniatura oficial de Wikimedia Commons; sin modificación."
-      }
+      },
+      "source_url": "https://www.infobae.com/mexico/2026/11/18/m-night-shyamalan-anuncia-visita-a-cdmx-para-proyectar-remain-su-nueva-pelicula/"
     },
     {
       "title": "Coyoacán solicita aumento presupuestal de 7.3% para 2027",
@@ -17460,7 +17535,7 @@
     },
     {
       "title": "Apoyo a embarazadas en CDMX: regístrate por WhatsApp y recibe hasta 4 mil 800 pesos",
-      "description": "De acuerdo con La Prensa, el titular publicado es: «Apoyo a embarazadas en CDMX: regístrate por WhatsApp y recibe hasta 4 mil 800 pesos». La información publicada por La Prensa aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "description": "La Prensa informó que el programa Mujeres Sanas e Infancias Protegidas mantiene abierta la incorporación de mujeres embarazadas residentes en la Ciudad de México. El apoyo anunciado para 2026 es de hasta 4,800 pesos, dividido en cuatro pagos de 1,200 pesos.",
       "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPT3licld6NndDTWJGcUdQY0NHODBORDNiR1UzNzQ5dldFS0wteXliT2h0OGZmQzFfd0M1U3NtalEzN2NNU1JOd1lXQWt6ajlLZ0dfbnZyOHJYQm1hcVVJWXhBTFBoVGx6dFdUVzZDM0dZSjZjUEhlbUV0VnIwLU1kNzhpV2tLS3c0WV96bVAzdTF5YkxaUUJPeDhxSWpITWJiRXpOOFZEUUpNNm5ORGpYUHpvaWZEN1RDVTVMMjVRVTl0M0NtTUN3dWlB?oc=5",
       "source": "La Prensa",
       "date": "2026-11-17",
@@ -17470,26 +17545,35 @@
       "location": "Ciudad de México (sin alcaldía identificada)",
       "local_url": "/noticias/?id=451fbd723d5e452167e8&mes=2026-11",
       "brief": {
-        "lead": "De acuerdo con La Prensa, el titular publicado es: «Apoyo a embarazadas en CDMX: regístrate por WhatsApp y recibe hasta 4 mil 800 pesos». La información publicada por La Prensa aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-        "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-        "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+        "lead": "La Prensa reportó que el programa Mujeres Sanas e Infancias Protegidas mantiene abierto el registro para mujeres embarazadas en CDMX y contempla hasta 4,800 pesos durante 2026, entregados en cuatro ministraciones de 1,200 pesos.",
+        "context": "La nota señala que el programa prioriza a residentes de unidades territoriales con índices de desarrollo social bajo o muy bajo y solicita documentación que acredite residencia y embarazo.",
+        "pending": "Los lugares disponibles, fechas de pago y requisitos vigentes deben confirmarse en los canales oficiales de la Secretaría de Bienestar e Igualdad Social; la nota periodística no sustituye las reglas del programa.",
+        "method": "Síntesis basada en el artículo de La Prensa firmado por José Luis Pérez y publicado el 17 de noviembre de 2026; no equivale a verificación independiente."
       },
       "photo": {
-        "id": "commons_145192505",
+        "id": "contexto_embarazo_representativo_niaid",
         "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/DECLARATORIA_DE_CARNAVALES_COMO_PATRIMONIO_CULTURAL_INMATERIAL_DE_LA_CIUDAD_DE_M%C3%89XICO_24.jpg/960px-DECLARATORIA_DE_CARNAVALES_COMO_PATRIMONIO_CULTURAL_INMATERIAL_DE_LA_CIUDAD_DE_M%C3%89XICO_24.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "category": "CDMX",
-        "borough": "",
-        "topic": "DECLARATORIA DE CARNAVALES COMO PATRIMONIO CULTURAL INMATERIAL DE LA CIUDAD DE MÉXICO 24",
-        "keywords": [
-          "Calles Ciudad de México"
-        ],
-        "author": "Secretaría de Cultura CDMX",
+        "category": "Salud",
+        "topic": "Mujer embarazada, fotografía de archivo de NIAID (24/08/2018); imagen representativa del embarazo, no muestra a beneficiarias ni el programa de CDMX.",
+        "file": "Pregnant woman (43338546905).jpg",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Pregnant_woman_%2843338546905%29.jpg/960px-Pregnant_woman_%2843338546905%29.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+        "source": "https://commons.wikimedia.org/wiki/File:Pregnant_woman_(43338546905).jpg",
+        "author": "NIAID",
         "license": "CC BY 2.0",
         "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-        "source": "https://commons.wikimedia.org/wiki/File:DECLARATORIA_DE_CARNAVALES_COMO_PATRIMONIO_CULTURAL_INMATERIAL_DE_LA_CIUDAD_DE_M%C3%89XICO_24.jpg"
-      }
+        "keywords": [
+          "embarazo",
+          "mujer embarazada",
+          "salud materna",
+          "programas sociales",
+          "Mujeres Sanas e Infancias Protegidas"
+        ],
+        "captured_at": "2018-08-24",
+        "uploaded_at": "2019-10-10",
+        "context": "Fotografía de archivo de NIAID que representa el embarazo; no documenta el programa Mujeres Sanas e Infancias Protegidas ni identifica a sus beneficiarias.",
+        "adaptation": "Miniatura oficial de Wikimedia Commons; sin modificación."
+      },
+      "source_url": "https://oem.com.mx/la-prensa/metropoli/apoyo-a-embarazadas-en-cdmx-registrate-por-whatsapp-y-recibe-hasta-4-mil-800-pesos-33185861"
     },
     {
       "title": "Aplazan multas contra VEMEPEs en CDMX; usuarios de motos y scooters eléctricos incumplen reglas",
@@ -17771,7 +17855,7 @@
     },
     {
       "title": "M. Night Shyamalan elige Ciudad de México para su primera proyección de ‘Nunca olvides que te quiero’",
-      "description": "De acuerdo con EL PAÍS, el titular publicado es: «M. Night Shyamalan elige Ciudad de México para su primera proyección de ‘Nunca olvides que te quiero’». La información publicada por EL PAÍS aborda un asunto que este portal clasifica como Cultura. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+      "description": "EL PAÍS informó que M. Night Shyamalan eligió la Ciudad de México para una función especial de Remain el 23 de noviembre y abrió una dinámica en redes sociales para asignar pases; su nota no precisa la sala ni el horario.",
       "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNZVBtQk8zaURmZV90YUhwQ05kSE9Bc3RxSmY5MXM1ODBtYUdxWUhVUDNtMEtTUUpoN3RkU29JR2o1c1MxYmhINFQzY1RsZ0hyendjRnNuQmxabm9OSVdSMTBOMTA5QXZSVDl1QTdqREFGQzEyT0ltNm5fNWkwNW9MMUdQSmxaYjgza0ItRkJ1ejhSVGZXdmtXSHM2RXk2dzBmRi1QREN5MW5GOS1DUi1Zcnl2MS1yTnVubjhzUzVQaTFkZ0RmdWFORUtrOEh0b056YV8yQno2Y9IB6wFBVV95cUxPMU5TM1RxOEdIOHZRY2lWdkVSd3J0Sk44ZWNKaTRKcW9kbkFkV2dxcEp5NGZvNFpKMUNfVHZLakZZZjdZeHRxRWZ5bDJ1b0pCU0F6LURrbnVzMVg0S05adVdiVEVlc0RudFRuVV9rMzdyOWtVcXp3VmRvb3l3SlY5cjlraDVnU0JQemlKa2dlcUxqaHZRVTlac1BZMWlLMHBRUE56cDBnbW1LM0pUemhBNldmSkJVY0xYM09RdDhQd3FQTV9IbWdERC1mVFBPLUx2NVJnTFoyOUJ4TUZIRldhNHI1RlAwYjBQWnJJ?oc=5",
       "source": "EL PAÍS",
       "date": "2026-11-17",
@@ -17781,10 +17865,10 @@
       "location": "Ciudad de México (sin alcaldía identificada)",
       "local_url": "/noticias/?id=3dc6cf266cdcd563bb01&mes=2026-11",
       "brief": {
-        "lead": "De acuerdo con EL PAÍS, el titular publicado es: «M. Night Shyamalan elige Ciudad de México para su primera proyección de ‘Nunca olvides que te quiero’». La información publicada por EL PAÍS aborda un asunto que este portal clasifica como Cultura. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-        "context": "La actividad cultural abre oportunidades de encuentro, aprendizaje y disfrute para habitantes y visitantes.",
-        "pending": "Los accesos, boletos, sedes, cupos y horarios deben consultarse con la institución organizadora. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-        "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+        "lead": "EL PAÍS reportó que Shyamalan eligió CDMX para la primera proyección de Remain el 23 de noviembre y convocó a sus seguidores a participar en una dinámica en redes para obtener pases.",
+        "context": "La nota señala que el estreno comercial está previsto para febrero de 2027 y que la función especial se dirige a fans residentes en la capital.",
+        "pending": "EL PAÍS no precisó sala ni horario en su publicación; esos datos no deben inferirse de otras notas. La fotografía de la ficha muestra la Cineteca Nacional como referencia cultural, no la sede confirmada.",
+        "method": "Síntesis basada en el artículo de EL PAÍS firmado por Darinka Rodríguez y publicado el 18 de noviembre de 2026; no equivale a verificación independiente."
       },
       "photo": {
         "id": "contexto_cineteca_nacional_2015",
@@ -17810,7 +17894,8 @@
         "uploaded_at": "2015-11-29",
         "context": "Fotografía de archivo de la Cineteca Nacional; Infobae sitúa la función especial de Remain en Cinépolis Miguel Ángel de Quevedo 227, no en la Cineteca.",
         "adaptation": "Miniatura oficial de Wikimedia Commons; sin modificación."
-      }
+      },
+      "source_url": "https://elpais.com/mexico/2026-11-18/m-night-shyamalan-elige-ciudad-de-mexico-para-su-primera-proyeccion-de-nunca-olvides-que-te-quiero.html"
     },
     {
       "title": "Coyoacán solicita presupuesto de 4 mil 35 millones de pesos para 2027; reporta avance del gasto de 82.5%",
@@ -19600,16 +19685,27 @@
         "method": "Síntesis editorial basada en la publicación de La Prensa, firmada por Arturo R. Pansza y fechada el 17 de noviembre de 2026. La nota atribuye las cifras a la alcaldesa y a las intervenciones legislativas; no son verificación independiente."
       },
       "photo": {
-        "id": "alcaldia_azcapotzalco",
+        "id": "contexto_azcapotzalco_plaza_civica_2011",
         "kind": "representativa",
-        "url": "/assets/alcaldias/azcapotzalco.jpg",
-        "category": "CDMX",
+        "category": "Gobierno",
+        "topic": "Panorámica de Plaza Cívica Fernando Montes de Oca y edificio delegacional de Azcapotzalco (archivo 2011); no evidencia del presupuesto 2027.",
+        "keywords": [
+          "Azcapotzalco",
+          "presupuesto de alcaldía",
+          "presupuesto 2027",
+          "edificio delegacional",
+          "Plaza Cívica Fernando Montes de Oca",
+          "gobierno local",
+          "alcaldía"
+        ],
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Azcapotzalco_-_Panor%C3%A1mica_Plaza_C%C3%ADvica_Fernando_Montes_de_Oca.JPG/960px-Azcapotzalco_-_Panor%C3%A1mica_Plaza_C%C3%ADvica_Fernando_Montes_de_Oca.JPG",
+        "source": "https://commons.wikimedia.org/wiki/File:Azcapotzalco_-_Panor%C3%A1mica_Plaza_C%C3%ADvica_Fernando_Montes_de_Oca.JPG",
+        "author": "ProtoplasmaKid",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
         "borough": "Azcapotzalco",
-        "topic": "Parroquia de Santa Catarina, Azcapotzalco",
-        "author": "Ivan alcantara",
-        "license": "CC BY-SA 3.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-        "source": "https://commons.wikimedia.org/wiki/File:PARROQUIA_DE_SANTA_CATARINA_%28AZCAPOTZALCO%29.jpg"
+        "context": "Fotografía de archivo de la Plaza Cívica Fernando Montes de Oca y el edificio delegacional de Azcapotzalco; no muestra una sesión presupuestal ni acredita las cifras solicitadas.",
+        "adaptation": "Miniatura oficial de Wikimedia Commons; sin modificación."
       }
     },
     {
