@@ -463,6 +463,9 @@ EDITORIAL_PHOTO_OVERRIDES = {
 }
 
 EDITORIAL_ARCHIVE_OVERRIDES = {
+    "/noticias/?id=2991842891f2c776870f&mes=2026-11": {
+        "category": "Movilidad"
+    },
     "/noticias/?id=610c0eee57db0e0ed62c&mes=2026-11": {
         "category": "Movilidad"
     },
