@@ -441,6 +441,8 @@ def category_by_headline(title, feed_category, source=""):
     """Corrige etiquetas RSS evidentes sin inventar ubicaciones o hechos."""
     normalized = fold(title)
     normalized_source = fold(source)
+    if (re.search(r"\bafectaciones viales\b", normalized) and re.search(r"\b(?:protestas|rodadas|eventos masivos)\b", normalized)):
+        return "Movilidad"
     if is_diario_morelos_mexico_acapulco_traffic({"title": title, "source": source}):
         return "Movilidad"
     if is_debate_ruta_maiz_topilejo({"title": title, "source": source}):
