@@ -627,6 +627,11 @@ def category_by_headline(title, feed_category, source=""):
     if (feed_category in {"CDMX", "Gobierno", "Cultura"}
             and re.search(r"\b(?:balead\w*|balear\w*|balean|baleo)\b", normalized)):
         return "Seguridad"
+    # La regulación y el diálogo institucional con repartidores siguen siendo movilidad.
+    # El titular puede no mencionar una marcha o bloqueo, pero el tema central es el transporte.
+    if (re.search(r"\\b(?:repartidores?|conductores? de aplicacion)\\b", normalized)
+            and re.search(r"\\b(?:gobierno|regulacion|dialogar|reunion)\\b", normalized)):
+        return "Movilidad"
     # Las movilizaciones de repartidores y conductores son Movilidad,
     # salvo cuando el titular describe una amenaza o agresión concreta.
     if re.search(r"\b(?:repartidores?|conductores? de aplicacion)\b", normalized):
