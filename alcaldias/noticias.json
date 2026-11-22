@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-22 01:45 UTC",
+  "updated": "2026-11-22 08:57 UTC",
   "boroughs": [
     {
       "name": "La Magdalena Contreras",
@@ -2626,7 +2626,7 @@
           "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQa1FBQUVxN2JUNFVyOGdKNk1HUXpsQlhydU43Nkd5T2JVNEh3M2MyTDRIclljQzZjMHJLMGRITnAtT0VDYWhnMk5nbEVjSHo0YzNsb1RVTGduUmlJdHh0aVhpeU1uWm9oWW1sa0s3cG96aXphNi1Ec1Zia3V5eWFpVWNsNUVuSENKdmd0YWpwZ3NtSWhOMk5pLU53S3RLQjlDQnJwTnJzdzRjZnZZbmlGUGNfMA?oc=5",
           "source": "El Sol de México",
           "date": "2026-11-21",
-          "published_at": "2026-11-21T21:14:59Z",
+          "published_at": "2026-11-22T02:52:08Z",
           "category": "CDMX",
           "borough": "Azcapotzalco",
           "location": "Azcapotzalco (mencionada en el titular)",
@@ -2657,6 +2657,36 @@
               "source": "El Sol de México",
               "date": "2026-11-21",
               "published_at": "2026-11-21T15:24:52Z",
+              "category": "CDMX",
+              "borough": "Azcapotzalco",
+              "location": "Azcapotzalco (mencionada en el titular)",
+              "local_url": "/noticias/?id=2dede083c48be41a172a&mes=2026-11",
+              "brief": {
+                "lead": "De acuerdo con El Sol de México, el titular publicado es: «Adulto mayor muere tras caer desde un tercer piso en Azcapotzalco». La información publicada por El Sol de México aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+                "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+                "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+              },
+              "photo": {
+                "id": "alcaldia_azcapotzalco",
+                "kind": "representativa",
+                "url": "/assets/alcaldias/azcapotzalco.jpg",
+                "category": "CDMX",
+                "borough": "Azcapotzalco",
+                "topic": "Parroquia de Santa Catarina, Azcapotzalco",
+                "author": "Ivan alcantara",
+                "license": "CC BY-SA 3.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+                "source": "https://commons.wikimedia.org/wiki/File:PARROQUIA_DE_SANTA_CATARINA_%28AZCAPOTZALCO%29.jpg"
+              }
+            },
+            {
+              "title": "Adulto mayor muere tras caer desde un tercer piso en Azcapotzalco",
+              "description": "De acuerdo con El Sol de México, el titular publicado es: «Adulto mayor muere tras caer desde un tercer piso en Azcapotzalco». La información publicada por El Sol de México aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+              "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQa1FBQUVxN2JUNFVyOGdKNk1HUXpsQlhydU43Nkd5T2JVNEh3M2MyTDRIclljQzZjMHJLMGRITnAtT0VDYWhnMk5nbEVjSHo0YzNsb1RVTGduUmlJdHh0aVhpeU1uWm9oWW1sa0s3cG96aXphNi1Ec1Zia3V5eWFpVWNsNUVuSENKdmd0YWpwZ3NtSWhOMk5pLU53S3RLQjlDQnJwTnJzdzRjZnZZbmlGUGNfMA?oc=5",
+              "source": "El Sol de México",
+              "date": "2026-11-21",
+              "published_at": "2026-11-21T21:14:59Z",
               "category": "CDMX",
               "borough": "Azcapotzalco",
               "location": "Azcapotzalco (mencionada en el titular)",
@@ -8721,8 +8751,38 @@
     },
     {
       "name": "Iztacalco",
-      "count": 157,
+      "count": 159,
       "articles": [
+        {
+          "title": "Elizabeth Mateos levanta la mano para Iztacalco rumbo a 2027; Morena llama a la unidad",
+          "description": "De acuerdo con 24-horas, el titular publicado es: «Elizabeth Mateos levanta la mano para Iztacalco rumbo a 2027; Morena llama a la unidad». La información publicada por 24-horas aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNM3R5Yng5U2pjZW81d3Q2b3ZZUHByekRTcnpDSVVWVnhXQ2NJaE5XcFhIdTdUQ1BfcTI0Qm5VcTA0WmZFakR3dlhHb3dqOGtqcWxlWnE2bWdZVVpsNFFNaHdUQU5YcXRqMWl1V1M4dDlFSmJPLTdzNGJwRGRWY3N1OGVZVlZ1bnNzXy1OM3dYN2R1bndqY2ozaEVWei14eTE3UGs3bGdyVHd1YVJmU2phUg?oc=5",
+          "source": "24-horas",
+          "date": "2026-11-21",
+          "published_at": "2026-11-22T02:58:45Z",
+          "category": "CDMX",
+          "borough": "Iztacalco",
+          "location": "Iztacalco (mencionada en el titular)",
+          "local_url": "/noticias/?id=b09066dfc21d24e7f067&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con 24-horas, el titular publicado es: «Elizabeth Mateos levanta la mano para Iztacalco rumbo a 2027; Morena llama a la unidad». La información publicada por 24-horas aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_iztacalco",
+            "kind": "representativa",
+            "url": "/assets/alcaldias/iztacalco.jpg",
+            "category": "CDMX",
+            "borough": "Iztacalco",
+            "topic": "Iglesia de San Matías en el antiguo pueblo de Iztacalco",
+            "author": "AlejandroLinaresGarcia",
+            "license": "CC BY-SA 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:SanMatiasChurchIztacalco02.jpg"
+          }
+        },
         {
           "title": "Destacan Lourdes Paz y Brugada avances en seguridad y obras en Iztacalco",
           "description": "De acuerdo con Excélsior, el titular publicado es: «Destacan Lourdes Paz y Brugada avances en seguridad y obras en Iztacalco». La información publicada por Excélsior aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -8741,17 +8801,52 @@
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           },
           "photo": {
-            "id": "alcaldia_iztacalco",
+            "id": "commons_75043274",
             "kind": "representativa",
-            "url": "/assets/alcaldias/iztacalco.jpg",
-            "category": "CDMX",
-            "borough": "Iztacalco",
-            "topic": "Iglesia de San Matías en el antiguo pueblo de Iztacalco",
-            "author": "AlejandroLinaresGarcia",
-            "license": "CC BY-SA 3.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-            "source": "https://commons.wikimedia.org/wiki/File:SanMatiasChurchIztacalco02.jpg"
-          }
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/014783-016_POSADA_EN_PICOS_DE_IZTACALCO_DICIEMBRE_18_1974_%2838896553181%29.jpg/960px-014783-016_POSADA_EN_PICOS_DE_IZTACALCO_DICIEMBRE_18_1974_%2838896553181%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "category": "Alcaldías",
+            "borough": "",
+            "topic": "014783-016 POSADA EN PICOS DE IZTACALCO DICIEMBRE 18 1974 (38896553181)",
+            "keywords": [
+              "Iztacalco Ciudad de México"
+            ],
+            "author": "Gobierno CDMX",
+            "license": "CC0",
+            "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+            "source": "https://commons.wikimedia.org/wiki/File:014783-016_POSADA_EN_PICOS_DE_IZTACALCO_DICIEMBRE_18_1974_(38896553181).jpg"
+          },
+          "alternate_versions": [
+            {
+              "title": "Destacan Lourdes Paz y Brugada avances en seguridad y obras en Iztacalco",
+              "description": "De acuerdo con Excélsior, el titular publicado es: «Destacan Lourdes Paz y Brugada avances en seguridad y obras en Iztacalco». La información publicada por Excélsior aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+              "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQT0F1WldrMUozSkhGNVVSUFQ4Y1JxZlJoNGN5Ri0temxXNnZpR2pzMElkeDJUWGcxSlVIOVo1NXZwVmZpNnBoYkF2ZUk4SEY1cndvZkM3dzhFa3lEbEM3X0tUdU5TaGlFVExWaUxiUmlmWFNfdHQwMXVoa1dWRjJsbFZtM2dFM3pock1Mc2hkYmhZS2ZOY19TcjBEaVd5SzjSAaQBQVVfeXFMTlJoQkpSZTQyc0tjSXhGeFVoSXZwaGhyRXgzUTh1eFNfbWozY25DaWc1VHZJNEFjNXMycGNtQTEzQTBsdW9HWXBkOFhRRHJrNWZ5Wk0wMjFNTFlkRXNNYUJqY0tWV2UtR3JCMkV2T2l1SlJnc05MMV9EeXR5WlhqYTdzVDZaNTRiOG03R2RoZE9lUV9yTjFOTHgzWUxFbDA1alF4UzQ?oc=5",
+              "source": "Excélsior",
+              "date": "2026-11-21",
+              "published_at": "2026-11-21T22:54:35Z",
+              "category": "CDMX",
+              "borough": "Iztacalco",
+              "location": "Iztacalco (mencionada en el titular)",
+              "local_url": "/noticias/?id=8aa23f03fe6d14b968e9&mes=2026-11",
+              "brief": {
+                "lead": "De acuerdo con Excélsior, el titular publicado es: «Destacan Lourdes Paz y Brugada avances en seguridad y obras en Iztacalco». La información publicada por Excélsior aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+                "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+                "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+              },
+              "photo": {
+                "id": "alcaldia_iztacalco",
+                "kind": "representativa",
+                "url": "/assets/alcaldias/iztacalco.jpg",
+                "category": "CDMX",
+                "borough": "Iztacalco",
+                "topic": "Iglesia de San Matías en el antiguo pueblo de Iztacalco",
+                "author": "AlejandroLinaresGarcia",
+                "license": "CC BY-SA 3.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+                "source": "https://commons.wikimedia.org/wiki/File:SanMatiasChurchIztacalco02.jpg"
+              }
+            }
+          ]
         },
         {
           "title": "Iztacalco atiende más de 16 mil solicitudes de servicios urbanos; Lourdes Paz presenta balance",
@@ -8784,6 +8879,39 @@
             "license": "CC0",
             "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
             "source": "https://commons.wikimedia.org/wiki/File:014783-016_POSADA_EN_PICOS_DE_IZTACALCO_DICIEMBRE_18_1974_(38896553181).jpg"
+          }
+        },
+        {
+          "title": "Iztacalco atiende más de 16 mil solicitudes de servicios urbanos; Lourdes Paz presenta balance",
+          "description": "De acuerdo con 24-horas, el titular publicado es: «Iztacalco atiende más de 16 mil solicitudes de servicios urbanos; Lourdes Paz presenta balance». La información publicada por 24-horas aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPUnFqNEpGeDlxUTNXbm1wb0d4OWJHeS1QQ2ItYXpaM2JFbWswdTRUMnhCY3ZXY0NiQnRjUktsTVJlTGxzcXlHN3hybndNZGE1cUJuMXBMU0hNXzFmNkxZM0xSd0tzSDQyVm1pSzVvQTZ0elI4OTBBWmhFUlNfQUlxYTk2U2dqUkREWmtsOTJ1dDhlaG16TTNFS2JHU2Z0QnFDNU1qUXBLRl94Y1lpSFp3aU1WRzlSTm1IbTAw?oc=5",
+          "source": "24-horas",
+          "date": "2026-11-21",
+          "published_at": "2026-11-21T22:39:54Z",
+          "category": "CDMX",
+          "borough": "Iztacalco",
+          "location": "Iztacalco (mencionada en el titular)",
+          "local_url": "/noticias/?id=ddfe3fac7a523fa3ce4e&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con 24-horas, el titular publicado es: «Iztacalco atiende más de 16 mil solicitudes de servicios urbanos; Lourdes Paz presenta balance». La información publicada por 24-horas aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "commons_41703830",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/CICLOTON_DF_IZTACALCO_%28BY_LION%29_-_panoramio.jpg/960px-CICLOTON_DF_IZTACALCO_%28BY_LION%29_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "category": "Alcaldías",
+            "borough": "",
+            "topic": "CICLOTON DF IZTACALCO (BY LION) - panoramio",
+            "keywords": [
+              "Iztacalco Ciudad de México"
+            ],
+            "author": "LEON23",
+            "license": "CC BY 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:CICLOTON_DF_IZTACALCO_(BY_LION)_-_panoramio.jpg"
           }
         },
         {
@@ -9577,141 +9705,89 @@
             "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
             "source": "https://commons.wikimedia.org/wiki/File:SanMatiasChurchIztacalco02.jpg"
           }
-        },
-        {
-          "title": "Interviene Iztacalco más de 24 kilómetros con 22 caminos de paz - La Prensa",
-          "description": "De acuerdo con El Sol de México, el titular publicado es: «Interviene Iztacalco más de 24 kilómetros con 22 caminos de paz - La Prensa». La información publicada por El Sol de México aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQZGREU2MtZ1paTWRHS2xENTRjWThBYnliRnFPYzB3eTB2WkZqTWdzM2t5OEhKbEZFbFpIWTFEbG5OM2lkMlQzVjItS1praEgtWVJYem1nbldCZ2Y4NXlINjg4TWRUb2I4MUlXZGd1VEhRaHpBejdmTkE3eWotT2RnQThQcGRDbmMyc2FSVmF6akp6V2k0ZEhSLVpDT2ZXSWI3UWNsNHROR0lwV3FKUVdSQkNTUWdCR05Lb3NfUlhWbWVEWTg?oc=5",
-          "source": "El Sol de México",
-          "date": "2026-11-15",
-          "published_at": "2026-11-16T02:09:30Z",
-          "category": "CDMX",
-          "borough": "Iztacalco",
-          "location": "Iztacalco (mencionada en el titular)",
-          "local_url": "/noticias/?id=b7aa7c3d234ae6fe136f&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con El Sol de México, el titular publicado es: «Interviene Iztacalco más de 24 kilómetros con 22 caminos de paz - La Prensa». La información publicada por El Sol de México aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "alcaldia_iztacalco",
-            "kind": "representativa",
-            "url": "/assets/alcaldias/iztacalco.jpg",
-            "category": "CDMX",
-            "borough": "Iztacalco",
-            "topic": "Iglesia de San Matías en el antiguo pueblo de Iztacalco",
-            "author": "AlejandroLinaresGarcia",
-            "license": "CC BY-SA 3.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-            "source": "https://commons.wikimedia.org/wiki/File:SanMatiasChurchIztacalco02.jpg"
-          }
-        },
-        {
-          "title": "Lourdes Paz interviene más de 24 Km. con 22 Caminos de Paz en Iztacalco",
-          "description": "De acuerdo con Diario Basta!, el titular publicado es: «Lourdes Paz interviene más de 24 Km. con 22 Caminos de Paz en Iztacalco». La información publicada por Diario Basta! aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOYmdwZ2NvQ0xLekRYT2ZicDNwZHIyZzBrSzVqbXE4NEVBcjNSV0tpYVhzTHk5bjRYUXcyYXVMRUd6dGNmRFhOVEZEblN6REllSVdBSGtiY3JIWEZ2NHMzZkYyQTR1RGptUzlUSG45M3czaUJOaTdvc3BXeDFac2NsSU10TDJZUjlnTkVhdFNhSjd1V1BzOWN1VDJydkNuN1JCMUlPSG1GX1hJUQ?oc=5",
-          "source": "Diario Basta!",
-          "date": "2026-11-15",
-          "published_at": "2026-11-16T00:28:57Z",
-          "category": "CDMX",
-          "borough": "Iztacalco",
-          "location": "Iztacalco (mencionada en el titular)",
-          "local_url": "/noticias/?id=fa0ecaaad53e84d7882b&mes=2026-11",
-          "alternate_versions": [
-            {
-              "title": "Lourdes Paz interviene más de 24 Km. con 22 Caminos de Paz en Iztacalco",
-              "description": "De acuerdo con Diario Basta!, el titular publicado es: «Lourdes Paz interviene más de 24 Km. con 22 Caminos de Paz en Iztacalco». La información publicada por Diario Basta! aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-              "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOYmdwZ2NvQ0xLekRYT2ZicDNwZHIyZzBrSzVqbXE4NEVBcjNSV0tpYVhzTHk5bjRYUXcyYXVMRUd6dGNmRFhOVEZEblN6REllSVdBSGtiY3JIWEZ2NHMzZkYyQTR1RGptUzlUSG45M3czaUJOaTdvc3BXeDFac2NsSU10TDJZUjlnTkVhdFNhSjd1V1BzOWN1VDJydkNuN1JCMUlPSG1GX1hJUQ?oc=5",
-              "source": "Diario Basta!",
-              "date": "2026-11-15",
-              "published_at": "2026-11-16T00:22:12Z",
-              "category": "CDMX",
-              "borough": "Iztacalco",
-              "location": "Iztacalco (mencionada en el titular)",
-              "local_url": "/noticias/?id=fa0ecaaad53e84d7882b&mes=2026-11",
-              "brief": {
-                "lead": "De acuerdo con Diario Basta!, el titular publicado es: «Lourdes Paz interviene más de 24 Km. con 22 Caminos de Paz en Iztacalco». La información publicada por Diario Basta! aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-                "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-                "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-              },
-              "photo": {
-                "id": "commons_168447903",
-                "kind": "representativa",
-                "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Capilla_posa_Virgen_de_Guadalupe_en_la_fiesta_del_Jubileo_en_Iztacalco%2C_Ciudad_de_M%C3%A9xico.jpg/960px-Capilla_posa_Virgen_de_Guadalupe_en_la_fiesta_del_Jubileo_en_Iztacalco%2C_Ciudad_de_M%C3%A9xico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-                "category": "Alcaldías",
-                "borough": "",
-                "topic": "Capilla posa Virgen de Guadalupe en la fiesta del Jubileo en Iztacalco, Ciudad de México",
-                "keywords": [
-                  "Iztacalco Ciudad de México"
-                ],
-                "author": "Pillolino77",
-                "license": "CC0",
-                "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
-                "source": "https://commons.wikimedia.org/wiki/File:Capilla_posa_Virgen_de_Guadalupe_en_la_fiesta_del_Jubileo_en_Iztacalco,_Ciudad_de_M%C3%A9xico.jpg"
-              }
-            },
-            {
-              "title": "Lourdes Paz interviene más de 24 Km. con 22 Caminos de Paz en Iztacalco",
-              "description": "De acuerdo con Diario Basta!, el titular publicado es: «Lourdes Paz interviene más de 24 Km. con 22 Caminos de Paz en Iztacalco». La información publicada por Diario Basta! aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-              "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOYmdwZ2NvQ0xLekRYT2ZicDNwZHIyZzBrSzVqbXE4NEVBcjNSV0tpYVhzTHk5bjRYUXcyYXVMRUd6dGNmRFhOVEZEblN6REllSVdBSGtiY3JIWEZ2NHMzZkYyQTR1RGptUzlUSG45M3czaUJOaTdvc3BXeDFac2NsSU10TDJZUjlnTkVhdFNhSjd1V1BzOWN1VDJydkNuN1JCMUlPSG1GX1hJUQ?oc=5",
-              "source": "Diario Basta!",
-              "date": "2026-11-15",
-              "published_at": "2026-11-16T00:28:57Z",
-              "category": "CDMX",
-              "borough": "Iztacalco",
-              "location": "Iztacalco (mencionada en el titular)",
-              "local_url": "/noticias/?id=fa0ecaaad53e84d7882b&mes=2026-11",
-              "brief": {
-                "lead": "De acuerdo con Diario Basta!, el titular publicado es: «Lourdes Paz interviene más de 24 Km. con 22 Caminos de Paz en Iztacalco». La información publicada por Diario Basta! aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-                "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-                "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-              },
-              "photo": {
-                "id": "alcaldia_iztacalco",
-                "kind": "representativa",
-                "url": "/assets/alcaldias/iztacalco.jpg",
-                "category": "CDMX",
-                "borough": "Iztacalco",
-                "topic": "Iglesia de San Matías en el antiguo pueblo de Iztacalco",
-                "author": "AlejandroLinaresGarcia",
-                "license": "CC BY-SA 3.0",
-                "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-                "source": "https://commons.wikimedia.org/wiki/File:SanMatiasChurchIztacalco02.jpg"
-              }
-            }
-          ],
-          "brief": {
-            "lead": "De acuerdo con Diario Basta!, el titular publicado es: «Lourdes Paz interviene más de 24 Km. con 22 Caminos de Paz en Iztacalco». La información publicada por Diario Basta! aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "commons_168447903",
-            "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Capilla_posa_Virgen_de_Guadalupe_en_la_fiesta_del_Jubileo_en_Iztacalco%2C_Ciudad_de_M%C3%A9xico.jpg/960px-Capilla_posa_Virgen_de_Guadalupe_en_la_fiesta_del_Jubileo_en_Iztacalco%2C_Ciudad_de_M%C3%A9xico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "category": "Alcaldías",
-            "borough": "",
-            "topic": "Capilla posa Virgen de Guadalupe en la fiesta del Jubileo en Iztacalco, Ciudad de México",
-            "keywords": [
-              "Iztacalco Ciudad de México"
-            ],
-            "author": "Pillolino77",
-            "license": "CC0",
-            "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
-            "source": "https://commons.wikimedia.org/wiki/File:Capilla_posa_Virgen_de_Guadalupe_en_la_fiesta_del_Jubileo_en_Iztacalco,_Ciudad_de_M%C3%A9xico.jpg"
-          }
         }
       ]
     },
     {
       "name": "Iztapalapa",
-      "count": 268,
+      "count": 270,
       "articles": [
+        {
+          "title": "Una pareja es hallada embolsada en mercado de Iztapalapa; tenía ficha de búsqueda",
+          "description": "De acuerdo con SinEmbargo MX, el titular publicado es: «Una pareja es hallada embolsada en mercado de Iztapalapa; tenía ficha de búsqueda». La información publicada por SinEmbargo MX aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNcHhNRWlnalZXa0xhOXlTZE5uemxFejUybmtPS09uVWtjXzhLWmdxcmVQSkthSVZ5X0hpcGczUHQ1QTE4N1RLNmEzbG1aem1SZnlvNzIyNmZFOW9aTmViYU9fM0dGclZYa2tBRkFDLUhORnVndVRnWDdkenBHX3VQQlYwQnZwQ3Qya3BEYnVJZ0pvSGNJNnZpaTI2bHc0dWw0YVl5NXlwWXhYN3pKYnJjRXloZDFBdw?oc=5",
+          "source": "SinEmbargo MX",
+          "date": "2026-11-21",
+          "published_at": "2026-11-22T04:32:09Z",
+          "category": "CDMX",
+          "borough": "Iztapalapa",
+          "location": "Iztapalapa (mencionada en el titular)",
+          "local_url": "/noticias/?id=b5bb9743684f7c18cd26&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con SinEmbargo MX, el titular publicado es: «Una pareja es hallada embolsada en mercado de Iztapalapa; tenía ficha de búsqueda». La información publicada por SinEmbargo MX aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "contexto_central_abasto_iztapalapa",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Central_de_Abasto_de_la_Ciudad_de_M%C3%A9xico_-_6.JPG/960px-Central_de_Abasto_de_la_Ciudad_de_M%C3%A9xico_-_6.JPG",
+            "category": "Servicios",
+            "borough": "",
+            "topic": "Especias en la Central de Abasto de Iztapalapa (archivo 2015); representa el lugar, no las cifras de 2024.",
+            "keywords": [
+              "Central de Abasto",
+              "Iztapalapa",
+              "mercado",
+              "alimentos",
+              "especias",
+              "comercio"
+            ],
+            "author": "ProtoplasmaKid",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "source": "https://commons.wikimedia.org/wiki/File:Central_de_Abasto_de_la_Ciudad_de_M%C3%A9xico_-_6.JPG"
+          }
+        },
+        {
+          "title": "Motociclista pierde la vida tras derrapar en Ermita Iztapalapa",
+          "description": "De acuerdo con El Sol de México, el titular publicado es: «Motociclista pierde la vida tras derrapar en Ermita Iztapalapa». De acuerdo con El Sol de México, se informa de un hecho vial relacionado con una motocicleta en Iztapalapa. El propio titular señala un fallecimiento, sin que esta ficha agregue cifras ni identidades. Se requiere consultar la nota original para conocer el punto exacto, las circunstancias y los reportes oficiales, sin atribuir responsabilidades sin pruebas.",
+          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQbUwzX3RtUjQxZnlEWlByWDlOeExyMHdFRFAtaV83eVNVMnpMUXkzYkxQSmhQdkZqSlloX0Q2MDZaTlRhMnY3RVhReDgyQV9RSGFkaDJJbzItUjFGRXI1RU5KRXlnV3l0VFRHYllZaWtwVjVMQ0V3ZHZDZDVIQlM3MFNhVzI2RzV3cUxDRW40U2VBY1dQYzFTYjlyNmpZYUE4OEJmMQ?oc=5",
+          "source": "El Sol de México",
+          "date": "2026-11-21",
+          "published_at": "2026-11-22T03:26:15Z",
+          "category": "Movilidad",
+          "borough": "Iztapalapa",
+          "location": "Iztapalapa (mencionada en el titular)",
+          "local_url": "/noticias/?id=6c78fd25bfe409750eaa&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con El Sol de México, el titular publicado es: «Motociclista pierde la vida tras derrapar en Ermita Iztapalapa». De acuerdo con El Sol de México, se informa de un hecho vial relacionado con una motocicleta en Iztapalapa. El propio titular señala un fallecimiento, sin que esta ficha agregue cifras ni identidades. Se requiere consultar la nota original para conocer el punto exacto, las circunstancias y los reportes oficiales, sin atribuir responsabilidades sin pruebas.",
+            "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
+            "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "contexto_trafico_eje_central",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Eje_Central_CDMX.jpg/1280px-Eje_Central_CDMX.jpg",
+            "category": "Movilidad",
+            "borough": "",
+            "topic": "Tráfico vehicular en Eje Central, Ciudad de México (fotografía de 2018)",
+            "keywords": [
+              "tráfico",
+              "vehículos",
+              "automóviles",
+              "movilidad",
+              "hoy no circula",
+              "vialidad"
+            ],
+            "author": "Sergio Estrada Flores",
+            "license": "CC BY 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+            "source": "https://commons.wikimedia.org/wiki/File:Eje_Central_CDMX.jpg"
+          }
+        },
         {
           "title": "Motociclista Atropella a Mujer y Huye en la Colonia Cerro de la Estrella, Iztapalapa",
           "description": "De acuerdo con N+, el titular publicado es: «Motociclista Atropella a Mujer y Huye en la Colonia Cerro de la Estrella, Iztapalapa». De acuerdo con N+, se informa de un hecho vial relacionado con una motocicleta en Iztapalapa. El encabezado no permite determinar por sí solo si hubo personas lesionadas o fallecidas. Se requiere consultar la nota original para conocer el punto exacto, las circunstancias y los reportes oficiales, sin atribuir responsabilidades sin pruebas.",
@@ -10903,54 +10979,6 @@
             "license": "CC BY-SA 4.0",
             "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
             "source": "https://commons.wikimedia.org/wiki/File:Ayuda_tras_el_Terremoto_de_Puebla_de_2017_-_Ciudad_de_M%C3%A9xico_-_3.jpg"
-          }
-        },
-        {
-          "title": "VIDEO | Madre e hija son agredidas por dos personas en Iztapalapa, CdMx; responsables dijeron ser de 'Los Tanzanios'",
-          "description": "De acuerdo con Telediario, el titular publicado es: «VIDEO | Madre e hija son agredidas por dos personas en Iztapalapa, CdMx; responsables dijeron ser de 'Los Tanzanios'». La información publicada por Telediario aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQcS1obm8wTG9XUl9sYU5wMS1rSWdvaXlUSXhiZVktZlpHSXQ2ZkthbjRlal9LVnhNbm42ZnNwREtaQ1JnUmhyUmkxMUE4aWlrQUtCV2xhd0V0VzZmZHZxWXZZOUNNYU5rUXNFNHNaeGRETUpOcE81UmhQYW9mQ2ktZEtBdGVHRjd6RlE0YmJpSldHQlhVN2h2bkxrZGNwZ0oxS3Bn0gGjAUFVX3lxTFBxLWhubzBMb1dSX2xhTnAxLWtJZ29peVRJeGJlWS1mWkdJdDZmS2FuNGVqX0tWeE1ubjZmc3BES1pDUmdSaHJSaTExQThpaWtBS0JXbGF3RXRXNmZkdnFZdlk5Q01hTmtRc0U0c1p4ZERNSk5wTzVSaFBhb2ZDaS1kS0F0ZUdGN3pGUTRiYmlKV0dCWFU3aHZuTGtkY3BnSjFLcGc?oc=5",
-          "source": "Telediario",
-          "date": "2026-11-14",
-          "published_at": "2026-11-14T20:05:00Z",
-          "category": "CDMX",
-          "borough": "Iztapalapa",
-          "location": "Iztapalapa (mencionada en el titular)",
-          "local_url": "/noticias/?id=0eafdde9508392236ca2&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con Telediario, el titular publicado es: «VIDEO | Madre e hija son agredidas por dos personas en Iztapalapa, CdMx; responsables dijeron ser de 'Los Tanzanios'». La información publicada por Telediario aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "alcaldia_iztapalapa",
-            "kind": "representativa",
-            "url": "/assets/alcaldias/iztapalapa.jpg",
-            "category": "CDMX",
-            "borough": "Iztapalapa",
-            "topic": "Vista de Iztapalapa desde el Cerro de la Estrella",
-            "author": "Secretaría de Cultura Ciudad de México from México",
-            "license": "CC BY 2.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-            "source": "https://commons.wikimedia.org/wiki/File:MX_MM_MUSEO_CERRO_DE_LA_ESTRELLA_%2849522225751%29.jpg"
-          }
-        },
-        {
-          "title": "Vinculan a proceso a 'El Choppersito' por disparar contra policías y arrollar a motociclista en Iztapalapa",
-          "description": "De acuerdo con Diario de México, el titular publicado es: «Vinculan a proceso a 'El Choppersito' por disparar contra policías y arrollar a motociclista en Iztapalapa». De acuerdo con Diario de México, se informa de un hecho vial relacionado con una motocicleta en Iztapalapa. El encabezado no permite determinar por sí solo si hubo personas lesionadas o fallecidas. Se requiere consultar la nota original para conocer el punto exacto, las circunstancias y los reportes oficiales, sin atribuir responsabilidades sin pruebas.",
-          "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOUk9FdmVKLXVxbW82RGFfN2wzV1lpWEV5V1lWY2xiVHdiQnhUdndvOExSVEozdmQ5WWt0NUJVd19KLVRDcDJkSURYakpzZVVsRUJjdmRtRmpSSGJtcENBeThZR2lxYjNLazZyd0c4MnhHZXBySDhseUs1c043RXh5YksxcXZXV0I0QVNvLWVMZXVjMjNEWkNQdkFZT2FjeDFLMllaT1FWWlgwdHpJSklVTURDX1NPZ3JzUG5OX05KdEhRM3JYVTIxU2tndTdZRERNNFF0cNIB1AFBVV95cUxOUk9FdmVKLXVxbW82RGFfN2wzV1lpWEV5V1lWY2xiVHdiQnhUdndvOExSVEozdmQ5WWt0NUJVd19KLVRDcDJkSURYakpzZVVsRUJjdmRtRmpSSGJtcENBeThZR2lxYjNLazZyd0c4MnhHZXBySDhseUs1c043RXh5YksxcXZXV0I0QVNvLWVMZXVjMjNEWkNQdkFZT2FjeDFLMllaT1FWWlgwdHpJSklVTURDX1NPZ3JzUG5OX05KdEhRM3JYVTIxU2tndTdZRERNNFF0cA?oc=5",
-          "source": "Diario de México",
-          "date": "2026-11-14",
-          "published_at": "2026-11-14T17:52:30Z",
-          "category": "Movilidad",
-          "borough": "Iztapalapa",
-          "location": "Iztapalapa (mencionada en el titular)",
-          "local_url": "/noticias/?id=d86b75ae775edab1d8f6&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con Diario de México, el titular publicado es: «Vinculan a proceso a 'El Choppersito' por disparar contra policías y arrollar a motociclista en Iztapalapa». De acuerdo con Diario de México, se informa de un hecho vial relacionado con una motocicleta en Iztapalapa. El encabezado no permite determinar por sí solo si hubo personas lesionadas o fallecidas. Se requiere consultar la nota original para conocer el punto exacto, las circunstancias y los reportes oficiales, sin atribuir responsabilidades sin pruebas.",
-            "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
-            "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           }
         }
       ]
@@ -12897,8 +12925,64 @@
     },
     {
       "name": "Tláhuac",
-      "count": 183,
+      "count": 185,
       "articles": [
+        {
+          "title": "Detienen a hombre por robo de motocicleta en Tláhuac; tenía tres ingresos al reclusorio",
+          "description": "De acuerdo con Sociedad Noticias, el titular publicado es: «Detienen a hombre por robo de motocicleta en Tláhuac; tenía tres ingresos al reclusorio». Una nota de Sociedad Noticias comunica un caso relacionado con una detención o una presunta conducta delictiva en Tláhuac. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
+          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPZHgwYkpSbE9HVHJKRjZPV1BRMXpHbzZzMXluYVp0ZnZtTi1LZkpYTlFSeEhRbjlxSTRRUk5GazVWTTl6NUh6ODBwcnJoZkJ5MmtGNHd0VmVKZHY0bVhFLXpJeHNjcG9WT2RBQjR2dlJZa1NGa0RiTlpFRFFYQU9wR3BkaFhvQnNReHdyblhUdmxaTFh0N2JjWnVIaF9hUE04UVpOLW1CVm1uSUtpUks3blplZzNxRllmMkk3MkhKNVFId01qakJJ?oc=5",
+          "source": "Sociedad Noticias",
+          "date": "2026-11-21",
+          "published_at": "2026-11-22T04:30:00Z",
+          "category": "Seguridad",
+          "borough": "Tláhuac",
+          "location": "Tláhuac (mencionada en el titular)",
+          "local_url": "/noticias/?id=4d8d6fda25f5e5a9fdad&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con Sociedad Noticias, el titular publicado es: «Detienen a hombre por robo de motocicleta en Tláhuac; tenía tres ingresos al reclusorio». Una nota de Sociedad Noticias comunica un caso relacionado con una detención o una presunta conducta delictiva en Tláhuac. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
+            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          }
+        },
+        {
+          "title": "San Juan Ixtayopan, en Tláhuac, se prepara para albergar la Feria del Calientito",
+          "description": "De acuerdo con Diario CDMX, el titular publicado es: «San Juan Ixtayopan, en Tláhuac, se prepara para albergar la Feria del Calientito». La información publicada por Diario CDMX aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOTEhpM0pmeW5mUUlUX2gxWFI5WWt4ZTVhdU5HMG14Z3lYOEw0T1dGWG5QNmlkNGdWcy1BUGVib2txSEczVnF3cmYwRUp4Tm5oZHlMbngtQmZGSGk2bWVJSVd3aUFjTG44M2t5eUl5c215dU4tOFpfcXM4d2hwWmYtQ2huUWhrSzhxQXFHOEVHX0xmb0Jkbnh3U9IBmAFBVV95cUxOTEhpM0pmeW5mUUlUX2gxWFI5WWt4ZTVhdU5HMG14Z3lYOEw0T1dGWG5QNmlkNGdWcy1BUGVib2txSEczVnF3cmYwRUp4Tm5oZHlMbngtQmZGSGk2bWVJSVd3aUFjTG44M2t5eUl5c215dU4tOFpfcXM4d2hwWmYtQ2huUWhrSzhxQXFHOEVHX0xmb0Jkbnh3Uw?oc=5",
+          "source": "Diario CDMX",
+          "date": "2026-11-21",
+          "published_at": "2026-11-22T01:21:55Z",
+          "category": "CDMX",
+          "borough": "Tláhuac",
+          "location": "Tláhuac (mencionada en el titular)",
+          "local_url": "/noticias/?id=ca6fbe2634ff828f5782&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con Diario CDMX, el titular publicado es: «San Juan Ixtayopan, en Tláhuac, se prepara para albergar la Feria del Calientito». La información publicada por Diario CDMX aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "contexto_tlahuac_plaza_denuncias",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Tl%C3%A1huac-Plaza_central.JPG/960px-Tl%C3%A1huac-Plaza_central.JPG?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+            "category": "Alcaldías",
+            "borough": "",
+            "topic": "Explanada y parroquia de San Pedro Tláhuac (archivo 2011; imagen de contexto, no documenta denuncias de 2024)",
+            "keywords": [
+              "Tláhuac",
+              "San Pedro Tláhuac",
+              "Explanada delegacional",
+              "Parroquia de San Pedro Apóstol",
+              "Ciudad de México",
+              "denuncias por colonia"
+            ],
+            "author": "Yavidaxiu",
+            "license": "CC BY 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+            "source": "https://commons.wikimedia.org/wiki/File:Tl%C3%A1huac-Plaza_central.JPG"
+          }
+        },
         {
           "title": "La Feria del Calientito regresa a Tláhuac con antojitos, artesanías, música y la bebida tradicional para el frío con fruta de temporada",
           "description": "De acuerdo con Infobae, el titular publicado es: «La Feria del Calientito regresa a Tláhuac con antojitos, artesanías, música y la bebida tradicional para el frío con fruta de temporada». La información publicada por Infobae aborda un asunto que este portal clasifica como Cultura. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -12928,27 +13012,6 @@
           "borough": "Tláhuac",
           "location": "Tláhuac (mencionada en el titular)",
           "local_url": "/noticias/?id=485bd05785aa657e10e9&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con PostaMx, el titular publicado es: «Detienen en Tláhuac a presunto sicario relacionado con cuatro homicidios en CDMX». Una nota de PostaMx comunica un caso relacionado con una detención o una presunta conducta delictiva en Tláhuac. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "archivo_seguridad_005",
-            "kind": "representativa",
-            "url": "/assets/fotos/archivo_seguridad_005.jpg",
-            "category": "Seguridad",
-            "borough": "",
-            "topic": "Jeep policia cdmx",
-            "keywords": [
-              "Seguridad"
-            ],
-            "author": "Gobierno de la Ciudad de México",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Jeep_policia_cdmx.jpg"
-          },
           "alternate_versions": [
             {
               "title": "Detienen en Tláhuac a presunto sicario relacionado con cuatro homicidios en CDMX",
@@ -13016,7 +13079,28 @@
                 "source": "https://commons.wikimedia.org/wiki/File:Patrulla_vecinal.jpg"
               }
             }
-          ]
+          ],
+          "brief": {
+            "lead": "De acuerdo con PostaMx, el titular publicado es: «Detienen en Tláhuac a presunto sicario relacionado con cuatro homicidios en CDMX». Una nota de PostaMx comunica un caso relacionado con una detención o una presunta conducta delictiva en Tláhuac. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "archivo_seguridad_005",
+            "kind": "representativa",
+            "url": "/assets/fotos/archivo_seguridad_005.jpg",
+            "category": "Seguridad",
+            "borough": "",
+            "topic": "Jeep policia cdmx",
+            "keywords": [
+              "Seguridad"
+            ],
+            "author": "Gobierno de la Ciudad de México",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Jeep_policia_cdmx.jpg"
+          }
         },
         {
           "title": "Cae en Tláhuac “El Carlitos”, vinculado con homicidios de los últimos años",
@@ -14085,127 +14169,6 @@
             "license": "CC BY 3.0",
             "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
             "source": "https://commons.wikimedia.org/wiki/File:Tl%C3%A1huac-Plaza_central.JPG"
-          }
-        },
-        {
-          "title": "Feria del Atole 2026 en Tláhuac: fechas, sabores y actividades",
-          "description": "De acuerdo con La Silla Rota, el titular publicado es: «Feria del Atole 2026 en Tláhuac: fechas, sabores y actividades». La información publicada por La Silla Rota aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPX0YtWWxjM2xHNXZmdm9ZeFIwblNld2VRcWZSVnIzUEw5ZzhEeG9Ca3V1LWZUOHBuZVNPQ3pqZHF4c2JSMG9Bcmt1TExtVkQwcEdIX0llYkNDM2N5LWxKUU8yS1BTa01UVWJXZDZRMmZJNGQ0Zkpvcl9sblRMYkd1SXFpNjZ0NnREcUVTUy1MSDVkc25vd0hZUDNGRTh2MnQyeFJUZXRNNmx2SjA3bmxBdWlGdXV5dnZGUjU1M0praURSMnhuSVRZLQ?oc=5",
-          "source": "La Silla Rota",
-          "date": "2026-11-14",
-          "published_at": "2026-11-14T19:19:07Z",
-          "category": "CDMX",
-          "borough": "Tláhuac",
-          "location": "Tláhuac (mencionada en el titular)",
-          "local_url": "/noticias/?id=8943654970f0592d780a&mes=2026-11",
-          "alternate_versions": [
-            {
-              "title": "Feria del Atole 2026 en Tláhuac: fechas, sabores y actividades",
-              "description": "De acuerdo con La Silla Rota, el titular publicado es: «Feria del Atole 2026 en Tláhuac: fechas, sabores y actividades». La información publicada por La Silla Rota aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-              "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPX0YtWWxjM2xHNXZmdm9ZeFIwblNld2VRcWZSVnIzUEw5ZzhEeG9Ca3V1LWZUOHBuZVNPQ3pqZHF4c2JSMG9Bcmt1TExtVkQwcEdIX0llYkNDM2N5LWxKUU8yS1BTa01UVWJXZDZRMmZJNGQ0Zkpvcl9sblRMYkd1SXFpNjZ0NnREcUVTUy1MSDVkc25vd0hZUDNGRTh2MnQyeFJUZXRNNmx2SjA3bmxBdWlGdXV5dnZGUjU1M0praURSMnhuSVRZLQ?oc=5",
-              "source": "La Silla Rota",
-              "date": "2026-11-14",
-              "published_at": "2026-11-14T19:19:07Z",
-              "category": "CDMX",
-              "borough": "Tláhuac",
-              "location": "Tláhuac (mencionada en el titular)",
-              "local_url": "/noticias/?id=8943654970f0592d780a&mes=2026-11",
-              "brief": {
-                "lead": "De acuerdo con La Silla Rota, el titular publicado es: «Feria del Atole 2026 en Tláhuac: fechas, sabores y actividades». La información publicada por La Silla Rota aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-                "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-                "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-              },
-              "photo": {
-                "id": "alcaldia_tlahuac",
-                "kind": "representativa",
-                "url": "/assets/alcaldias/tlahuac.jpg",
-                "category": "CDMX",
-                "borough": "Tláhuac",
-                "topic": "Plaza central de San Pedro Tláhuac",
-                "author": "Yavidaxiu",
-                "license": "CC BY 3.0",
-                "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
-                "source": "https://commons.wikimedia.org/wiki/File:Tl%C3%A1huac-Plaza_central.JPG"
-              }
-            },
-            {
-              "title": "Feria del Atole 2026 en Tláhuac: fechas, sabores y actividades",
-              "description": "De acuerdo con La Silla Rota, el titular publicado es: «Feria del Atole 2026 en Tláhuac: fechas, sabores y actividades». La información publicada por La Silla Rota aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-              "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPX0YtWWxjM2xHNXZmdm9ZeFIwblNld2VRcWZSVnIzUEw5ZzhEeG9Ca3V1LWZUOHBuZVNPQ3pqZHF4c2JSMG9Bcmt1TExtVkQwcEdIX0llYkNDM2N5LWxKUU8yS1BTa01UVWJXZDZRMmZJNGQ0Zkpvcl9sblRMYkd1SXFpNjZ0NnREcUVTUy1MSDVkc25vd0hZUDNGRTh2MnQyeFJUZXRNNmx2SjA3bmxBdWlGdXV5dnZGUjU1M0praURSMnhuSVRZLQ?oc=5",
-              "source": "La Silla Rota",
-              "date": "2026-11-14",
-              "published_at": "2026-11-14T19:19:07Z",
-              "category": "CDMX",
-              "borough": "Tláhuac",
-              "location": "Tláhuac (mencionada en el titular)",
-              "local_url": "/noticias/?id=8943654970f0592d780a&mes=2026-11",
-              "brief": {
-                "lead": "De acuerdo con La Silla Rota, el titular publicado es: «Feria del Atole 2026 en Tláhuac: fechas, sabores y actividades». La información publicada por La Silla Rota aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-                "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-                "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-              },
-              "photo": {
-                "id": "commons_82750985",
-                "kind": "representativa",
-                "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Danzantes_en_El_Z%C3%B3calo%2C_Ciudad_de_M%C3%A9xico_-_Negro.jpg/960px-Danzantes_en_El_Z%C3%B3calo%2C_Ciudad_de_M%C3%A9xico_-_Negro.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-                "category": "CDMX",
-                "borough": "",
-                "topic": "Danzantes en El Zócalo, Ciudad de México - Negro",
-                "keywords": [
-                  "Zócalo Ciudad de México"
-                ],
-                "author": "Juan Carlos Fonseca Mata",
-                "license": "CC BY-SA 4.0",
-                "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-                "source": "https://commons.wikimedia.org/wiki/File:Danzantes_en_El_Z%C3%B3calo,_Ciudad_de_M%C3%A9xico_-_Negro.jpg"
-              }
-            }
-          ],
-          "brief": {
-            "lead": "De acuerdo con La Silla Rota, el titular publicado es: «Feria del Atole 2026 en Tláhuac: fechas, sabores y actividades». La información publicada por La Silla Rota aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "contexto_atole_mexicano",
-            "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Atole.jpg/960px-Atole.jpg",
-            "category": "Cultura",
-            "borough": "",
-            "topic": "Atole, bebida caliente tradicional a base de maíz; versión de Nuevo México (fotografía de 2007)",
-            "keywords": [
-              "atole",
-              "feria del atole",
-              "bebida tradicional",
-              "bebida de maíz",
-              "gastronomía mexicana",
-              "maíz"
-            ],
-            "author": "ottmarliebert.com",
-            "license": "CC BY-SA 2.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
-            "source": "https://commons.wikimedia.org/wiki/File:Atole.jpg"
-          }
-        },
-        {
-          "title": "Antorcha mantendrá la lucha para defender las viviendas de Los Pozos, en Tláhuac",
-          "description": "De acuerdo con Cúspide México, el titular publicado es: «Antorcha mantendrá la lucha para defender las viviendas de Los Pozos, en Tláhuac». La información publicada por Cúspide México aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPdk81cjRvOEZSRHdnd3BrVF82bEsyVThpSHU5TkplVmMteHNVLU1WaVd5d3RVb1F3SnZvYkRNVjg0MlM3WGp6N1RYeTFPX1UyZ3IxZzQ5N29zcFhBUEt6cTlsd0xfdExmanp3amZMUEJjeV82TnJQamh0QmVGUVp6N1czQjEwbzFqdHBRRVFnaUZwcTNNdmhVcUNTNlV4czJQeUJJV0JtVUQydzFMbmJxYzg4WlptT1ZM?oc=5",
-          "source": "Cúspide México",
-          "date": "2026-11-14",
-          "published_at": "2026-11-14T16:09:44Z",
-          "category": "CDMX",
-          "borough": "Tláhuac",
-          "location": "Tláhuac (mencionada en el titular)",
-          "local_url": "/noticias/?id=8bb622014a69a5be0497&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con Cúspide México, el titular publicado es: «Antorcha mantendrá la lucha para defender las viviendas de Los Pozos, en Tláhuac». La información publicada por Cúspide México aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           }
         }
       ]
@@ -16350,8 +16313,41 @@
     },
     {
       "name": "Xochimilco",
-      "count": 205,
+      "count": 206,
       "articles": [
+        {
+          "title": "Misteriosos lamentos y una figura sobre el agua sorprenden a exploradores en Xochimilco",
+          "description": "De acuerdo con El Heraldo de México, el titular publicado es: «Misteriosos lamentos y una figura sobre el agua sorprenden a exploradores en Xochimilco». La información publicada por El Heraldo de México aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPMFFDTklRVnVPYWRhMGNrRGo2dWtZdnpNWFpaVjVydDRXQlJOVk9IZC1IU1c1TGYxNEVrUE1NalFxSVQ3M3BQMVJWR2VhZEJHaV9wR0Z3OUxwNGtESmlMaTBicF9EdEZwWVNqSkJBUXNpSk02NG1raEpIMm9NSXFxTF9FQ0VUNmhfQlFzanF1S1cybm1LVnlFSlJnZmpyZC1VVzdyWFB2cWNERkZDVFE1U3o3WHVFVkE5WFFwcHBCMG9CSFYt?oc=5",
+          "source": "El Heraldo de México",
+          "date": "2026-11-21",
+          "published_at": "2026-11-22T03:37:29Z",
+          "category": "CDMX",
+          "borough": "Xochimilco",
+          "location": "Xochimilco (mencionada en el titular)",
+          "local_url": "/noticias/?id=2638ea0bef7d934f7881&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con El Heraldo de México, el titular publicado es: «Misteriosos lamentos y una figura sobre el agua sorprenden a exploradores en Xochimilco». La información publicada por El Heraldo de México aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "commons_66033660",
+            "kind": "representativa",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/0/09/Explanada_Delegaci%C3%B3n_Xochimilco%2C_Ciudad_de_M%C3%A9xico_%2832915921061%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+            "category": "CDMX",
+            "borough": "",
+            "topic": "Explanada Delegación Xochimilco, Ciudad de México (32915921061)",
+            "keywords": [
+              "CDMX"
+            ],
+            "author": "Comisión Mexicana de Filmaciones from México D. F., México",
+            "license": "CC BY-SA 2.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Explanada_Delegaci%C3%B3n_Xochimilco,_Ciudad_de_M%C3%A9xico_(32915921061).jpg"
+          }
+        },
         {
           "title": "Impulsa Secretaría de Turismo la venta en línea en negocios gastronómicos de Xochimilco, en colaboración con DiDi Food",
           "description": "De acuerdo con Certeza Diario, el titular publicado es: «Impulsa Secretaría de Turismo la venta en línea en negocios gastronómicos de Xochimilco, en colaboración con DiDi Food». La información publicada por Certeza Diario aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -17272,25 +17268,6 @@
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           }
-        },
-        {
-          "title": "Más de 30 perritos envenenados en Xochimilco; qué se sabe del caso",
-          "description": "De acuerdo con TV Azteca, el titular publicado es: «Más de 30 perritos envenenados en Xochimilco; qué se sabe del caso». La información publicada por TV Azteca aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNTnB0MTFEalNsZlVqOTBjLWM0TzhxVU5rampsVm1xT2VkV0wxMHdnOGp0SlRkVTA1bjYxaWt5VEM2YkhtQ2tCWmlPUHpmU2w4a180ODV1UTkya2xvMllCTE9fWElFdVl5STFILTNPcGtfbU82V2N5RUkwTDZoQ29GMTYyWHBmUzAxdjhtLWZ4MFNva3YyaUEyRDVNOA?oc=5",
-          "source": "TV Azteca",
-          "date": "2026-11-11",
-          "published_at": "2026-11-11T23:56:40Z",
-          "category": "CDMX",
-          "borough": "Xochimilco",
-          "location": "Xochimilco (mencionada en el titular)",
-          "local_url": "/noticias/?id=a6db7f4890bd4b913f44&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con TV Azteca, el titular publicado es: «Más de 30 perritos envenenados en Xochimilco; qué se sabe del caso». La información publicada por TV Azteca aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "sensitive_media": true
         }
       ]
     }
