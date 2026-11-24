@@ -43,6 +43,29 @@ EDITORIAL_PHOTO_OVERRIDES = {
         "context": "Fotografía de archivo de la Plaza Cívica Fernando Montes de Oca y el edificio delegacional de Azcapotzalco; no muestra una sesión presupuestal ni acredita las cifras solicitadas.",
         "adaptation": "Miniatura oficial de Wikimedia Commons; sin modificación."
     },
+    "/noticias/?id=96497f3e0fea650d02f1&mes=2026-11": {
+        "id": "contexto_trafico_eje_central",
+        "kind": "representativa",
+        "category": "Movilidad",
+        "topic": "Tráfico vehicular en Eje Central, Ciudad de México (fotografía de archivo de 2018); imagen representativa de movilidad, no documenta las movilizaciones ni los puntos afectados del 24/11/2026.",
+        "keywords": [
+            "tráfico",
+            "vehículos",
+            "automóviles",
+            "movilidad",
+            "marchas",
+            "bloqueos",
+            "vialidad"
+        ],
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Eje_Central_CDMX.jpg/1280px-Eje_Central_CDMX.jpg",
+        "source": "https://commons.wikimedia.org/wiki/File:Eje_Central_CDMX.jpg",
+        "author": "Sergio Estrada Flores",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "borough": "",
+        "context": "Fotografía de archivo de Eje Central como contexto de movilidad; no muestra las marchas, bloqueos ni cierres concretos de la nota.",
+        "adaptation": "Miniatura oficial de Wikimedia Commons; sin modificación."
+    },
     "/noticias/?id=caebd6fdf4edab5ae26c&mes=2026-11": {
         "id": "contexto_patrullas_iztapalapa_denuncias",
         "category": "Seguridad",
