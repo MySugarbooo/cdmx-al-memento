@@ -513,6 +513,22 @@ EDITORIAL_PHOTO_OVERRIDES = {
                 "kind": "representativa",
                 "context": "Fotografía de archivo de patrullas de la Ciudad de México; ilustra el tema de seguridad pública, no el ataque del que informó Sociedad Noticias."
         },
+
+    "/noticias/?id=2278c19578a9326d6df2&mes=2026-11": {
+        "id": "contexto_gato_michiposada_cdmx_2010",
+        "kind": "representativa",
+        "category": "Cultura",
+        "topic": "Gato sobre un muro, fotografía de archivo; imagen temática de felinos, no documenta la Michiposada ni muestra a asistentes del evento.",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Cat_on_a_wall.jpg/960px-Cat_on_a_wall.jpg",
+        "source": "https://commons.wikimedia.org/wiki/File:Cat_on_a_wall.jpg",
+        "author": "Sophie Riches",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "keywords": ["gatos", "Miau Fest", "Michiposada", "Cultura", "Ciudad de México"],
+        "borough": "",
+        "context": "Imagen de archivo sobre gatos utilizada solo como contexto temático; no es una fotografía del evento anunciado.",
+        "adaptation": "Miniatura oficial de Wikimedia Commons; sin modificación."
+    },
 }
 
 EDITORIAL_ARCHIVE_OVERRIDES = {
