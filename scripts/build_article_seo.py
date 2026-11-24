@@ -20,6 +20,21 @@ SOURCE = ROOT / "news.json"
 OUT = ROOT / "articulos"
 SITEMAP = ROOT / "sitemap-articulos.xml"
 EDITORIAL_PHOTO_OVERRIDES = {
+    "/noticias/?id=4e966100bdb40354d4c4&mes=2026-11": {
+        "id": "contexto_patrullas_iztapalapa_denuncias",
+        "kind": "representativa",
+        "category": "Seguridad",
+        "topic": "Patrullas de la Ciudad de México, fotografía de archivo; imagen representativa de la intervención de la SSC, no documenta el rescate ni muestra al recién nacido.",
+        "url": "/assets/fotos/archivo_seguridad_011.jpg",
+        "source": "https://commons.wikimedia.org/wiki/File:Claudia_Sheinbaum_entrega_patrullas_Iztapalapa_02.jpg",
+        "author": "Gobierno de la Ciudad de México",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+        "keywords": ["SSC", "patrullas", "seguridad", "Xochimilco", "hospital"],
+        "borough": "Xochimilco",
+        "context": "Fotografía de archivo de patrullas de la Ciudad de México; ilustra el tema de seguridad pública, no el hecho concreto.",
+        "adaptation": "Fotografía de archivo; sin modificación."
+    },
     "/noticias/?id=534d17e7c38cfd83b7a1&mes=2026-11": {
         "id": "contexto_azcapotzalco_plaza_civica_2011",
         "kind": "representativa",
