@@ -444,7 +444,7 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Teatro_Metropolitan%2C_Calle_Independencia_-_monocromo.jpg/960px-Teatro_Metropolitan%2C_Calle_Independencia_-_monocromo.jpg",
         "category": "Cultura",
         "borough": "",
-        "topic": "Teatro Metropólitan, CDMX (archivo 2019); no muestra el concierto de Golden Ganga ni la cartelera del 18 de noviembre de 2026.",
+        "topic": "Teatro Metropólitan, Centro Histórico de CDMX (archivo 2019); fotografía del recinto como contexto cultural, no documenta la cartelera ni los conciertos del 18 de noviembre de 2026.",
         "keywords": [
           "Teatro Metropólitan",
           "Golden Ganga",
@@ -458,7 +458,8 @@
         "author": "ProtoplasmaKid",
         "license": "CC BY-SA 4.0",
         "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-        "source": "https://commons.wikimedia.org/wiki/File:Teatro_Metropolitan,_Calle_Independencia_-_monocromo.jpg"
+        "source": "https://commons.wikimedia.org/wiki/File:Teatro_Metropolitan,_Calle_Independencia_-_monocromo.jpg",
+        "adaptation": "Fotografía del recinto tomada el 19 de enero de 2019; imagen de contexto cultural, no documenta los eventos anunciados."
       }
     },
     {
@@ -1150,26 +1151,25 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "contexto_concierto_foro_sol_2023",
+        "id": "contexto_gato_michiposada_cdmx_2010",
         "kind": "representativa",
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Will_of_the_People_World_Tour%2C_Mexico_City-4.jpg/576px-Will_of_the_People_World_Tour%2C_Mexico_City-4.jpg",
         "category": "Cultura",
-        "borough": "",
-        "topic": "Muse en Foro Sol (hoy Estadio GNP), CDMX (23/01/2023); foto de archivo, no corresponde a Karol G ni a otros eventos actuales.",
+        "topic": "Gato sobre un muro, fotografía de archivo; imagen temática de felinos, no documenta la Michiposada ni muestra a asistentes del evento.",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Cat_on_a_wall.jpg/960px-Cat_on_a_wall.jpg",
+        "source": "https://commons.wikimedia.org/wiki/File:Cat_on_a_wall.jpg",
+        "author": "Sophie Riches",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
         "keywords": [
-          "concierto",
-          "música en vivo",
-          "Foro Sol",
-          "Estadio GNP Seguros",
-          "escenario",
-          "público",
-          "Ciudad de México",
-          "Corona Capital"
+          "gatos",
+          "Miau Fest",
+          "Michiposada",
+          "Cultura",
+          "Ciudad de México"
         ],
-        "author": "Nanahuatl",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-        "source": "https://commons.wikimedia.org/wiki/File:Will_of_the_People_World_Tour,_Mexico_City-4.jpg"
+        "borough": "",
+        "context": "Imagen de archivo sobre gatos utilizada solo como contexto temático; no es una fotografía del evento anunciado.",
+        "adaptation": "Miniatura oficial de Wikimedia Commons; sin modificación."
       }
     },
     {
