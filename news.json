@@ -233,19 +233,27 @@
         "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
       },
       "photo": {
-        "id": "commons_54378318",
+        "id": "contexto_trafico_eje_central",
         "kind": "representativa",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Ciudad_Universitaria_%28Marcha_por_la_paz%29_-_panoramio.jpg/960px-Ciudad_Universitaria_%28Marcha_por_la_paz%29_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "category": "Cultura",
-        "borough": "",
-        "topic": "Marcha por la paz en Ciudad Universitaria, CDMX (archivo); foto representativa, no corresponde a las movilizaciones del 14/11/2026.",
+        "category": "Movilidad",
+        "topic": "Tráfico vehicular en Eje Central, Ciudad de México (fotografía de archivo de 2018); imagen representativa de movilidad, no documenta las movilizaciones ni los puntos afectados del 24/11/2026.",
         "keywords": [
-          "Ciudad Universitaria UNAM Ciudad de México"
+          "tráfico",
+          "vehículos",
+          "automóviles",
+          "movilidad",
+          "marchas",
+          "bloqueos",
+          "vialidad"
         ],
-        "author": "Malomalverde",
-        "license": "CC BY-SA 3.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Ciudad_Universitaria_(Marcha_por_la_paz)_-_panoramio.jpg"
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Eje_Central_CDMX.jpg/1280px-Eje_Central_CDMX.jpg",
+        "source": "https://commons.wikimedia.org/wiki/File:Eje_Central_CDMX.jpg",
+        "author": "Sergio Estrada Flores",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "borough": "",
+        "context": "Fotografía de archivo de Eje Central como contexto de movilidad; no muestra las marchas, bloqueos ni cierres concretos de la nota.",
+        "adaptation": "Miniatura oficial de Wikimedia Commons; sin modificación."
       }
     },
     {
