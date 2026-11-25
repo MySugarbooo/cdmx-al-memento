@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-25 03:45 UTC",
+  "updated": "2026-11-25 13:38 UTC",
   "boroughs": [
     {
       "name": "La Magdalena Contreras",
@@ -1057,8 +1057,74 @@
     },
     {
       "name": "Álvaro Obregón",
-      "count": 87,
+      "count": 89,
       "articles": [
+        {
+          "title": "Cae un colombiano presunto integrante de Los Tanzanios en Álvaro Obregón",
+          "description": "De acuerdo con El Sol de México, el titular publicado es: «Cae un colombiano presunto integrante de Los Tanzanios en Álvaro Obregón». La información publicada por El Sol de México aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQYXRSUTJrZkd4YnZxaE9ORzQ3N2hOM2g5bll5TmY0enpCT3BBMk9aVFhYdWZTOU5WaGxuM0pHcjFHM2o5anBxNlRnYnAtSkxOdDlQZUtfcFVwR0VHRHFsVlVDcHVBV0RSR1J2bHRRTTU5MVFSWERZR2xnV2VPUVdwdExVYjVnUUw5Rk96X0ZiYnlTVGl2VHdkWXdSbFFtTWt2NUF0VEsyaHpqTzNaRktSUDAyMWVDMFdXUWF4ZQ?oc=5",
+          "source": "El Sol de México",
+          "date": "2026-11-25",
+          "published_at": "2026-11-25T09:34:34Z",
+          "category": "CDMX",
+          "borough": "Álvaro Obregón",
+          "location": "Álvaro Obregón (mencionada en el titular)",
+          "local_url": "/noticias/?id=e9d0fac5fc38f5991379&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con El Sol de México, el titular publicado es: «Cae un colombiano presunto integrante de Los Tanzanios en Álvaro Obregón». La información publicada por El Sol de México aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "commons_51892783",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Flor_de_colores_en_camell%C3%B3n_%C3%81lvaro_Obreg%C3%B3n%2C_Ciudad_de_M%C3%A9xico.jpg/960px-Flor_de_colores_en_camell%C3%B3n_%C3%81lvaro_Obreg%C3%B3n%2C_Ciudad_de_M%C3%A9xico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "category": "Alcaldías",
+            "borough": "",
+            "topic": "Flor de colores en camellón Álvaro Obregón, Ciudad de México",
+            "keywords": [
+              "Álvaro Obregón Ciudad de México"
+            ],
+            "author": "LEG95",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Flor_de_colores_en_camell%C3%B3n_%C3%81lvaro_Obreg%C3%B3n,_Ciudad_de_M%C3%A9xico.jpg"
+          }
+        },
+        {
+          "title": "Conductor choca su auto contra altar de iglesia en Álvaro Obregón",
+          "description": "De acuerdo con MILENIO, el titular publicado es: «Conductor choca su auto contra altar de iglesia en Álvaro Obregón». La información publicada por MILENIO aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxObHJid01fQXVoSG90WFp5TnRMa0R1ck1ILWRvRVI5WWlYLTdISURtZW9JVGcxOGx6T2NQVm55b0U1Ujd3ZnNLTm9pSHpGY2hzOW5SbTVzVGRmQTVjX3pxdG0yMndhNEY2d2lmY2piNzF4RXdOT3NzejVkVDFjbWFQSG1BWEl0NGc?oc=5",
+          "source": "MILENIO",
+          "date": "2026-11-24",
+          "published_at": "2026-11-25T05:13:00Z",
+          "category": "Seguridad",
+          "borough": "Álvaro Obregón",
+          "location": "Álvaro Obregón (mencionada en el titular)",
+          "local_url": "/noticias/?id=8d7dc9452873b7b127b9&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con MILENIO, el titular publicado es: «Conductor choca su auto contra altar de iglesia en Álvaro Obregón». La información publicada por MILENIO aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "commons_127628598",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Panor%C3%A1mica_de_Medell%C3%ADn_y_%C3%81lvaro_Obreg%C3%B3n%2C_colonia_Roma%2C_Ciudad_de_M%C3%A9xico.jpg/960px-Panor%C3%A1mica_de_Medell%C3%ADn_y_%C3%81lvaro_Obreg%C3%B3n%2C_colonia_Roma%2C_Ciudad_de_M%C3%A9xico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "category": "Alcaldías",
+            "borough": "",
+            "topic": "Panorámica de Medellín y Álvaro Obregón, colonia Roma, Ciudad de México",
+            "keywords": [
+              "Álvaro Obregón Ciudad de México"
+            ],
+            "author": "ProtoplasmaKid",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Panor%C3%A1mica_de_Medell%C3%ADn_y_%C3%81lvaro_Obreg%C3%B3n,_colonia_Roma,_Ciudad_de_M%C3%A9xico.jpg"
+          }
+        },
         {
           "title": "Detienen en Álvaro Obregón a colombiano, vinculado con el grupo criminal de Los Tanzanios",
           "description": "De acuerdo con Nación321, el titular publicado es: «Detienen en Álvaro Obregón a colombiano, vinculado con el grupo criminal de Los Tanzanios». Una nota de Nación321 comunica un caso relacionado con una detención o una presunta conducta delictiva en Álvaro Obregón. Es indispensable respetar la presunción de inocencia y no añadir acusaciones ni datos personales que el titular no acredita.",
@@ -2213,150 +2279,208 @@
             "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
             "source": "https://commons.wikimedia.org/wiki/File:Cosecha_de_Lluvia_03.jpg"
           }
-        },
-        {
-          "title": "Lanza CDMX programa Casa Ecológica; beneficiará a 10 mil viviendas en Álvaro Obregón",
-          "description": "De acuerdo con La Jornada, el titular publicado es: «Lanza CDMX programa Casa Ecológica; beneficiará a 10 mil viviendas en Álvaro Obregón». La información publicada por La Jornada aborda un asunto que este portal clasifica como Medio Ambiente. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNdjdtdUdNU2tMSUdSWVV4emNxbWR4M0JDWE9kVmIyX2YwR05fcGlCQjIzUXQtcEhValptcUNJNG5MMXNSY1ExNkpWVEVfa2RQcFRoVHBnVl9OeEtlN3M1Ny1BMFdDaDRpXzAwYU8zbWFsWktuX2p2aGtoclc4ZWhVRHlnMG9jRTAtSnF4RVBtSHNSRC02QWJ3NWx2SlVZaUZ0X0prdHAwTm1ZQlM3cll3MnRoRU5TczNsLWFQWEhLQzNOaE95MUE?oc=5",
-          "source": "La Jornada",
-          "date": "2026-11-12",
-          "published_at": "2026-11-12T22:14:00Z",
-          "category": "Medio Ambiente",
-          "borough": "Álvaro Obregón",
-          "location": "Álvaro Obregón (mencionada en el titular)",
-          "local_url": "/noticias/?id=708084be5fe9cfd43eee&mes=2026-11",
-          "alternate_versions": [
-            {
-              "title": "Lanza CDMX programa de ecotecnias para 10 mil viviendas en Álvaro Obregón",
-              "description": "De acuerdo con La Jornada, el titular publicado es: «Lanza CDMX programa de ecotecnias para 10 mil viviendas en Álvaro Obregón». La información publicada por La Jornada aborda un asunto que este portal clasifica como Gobierno. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-              "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNdjdtdUdNU2tMSUdSWVV4emNxbWR4M0JDWE9kVmIyX2YwR05fcGlCQjIzUXQtcEhValptcUNJNG5MMXNSY1ExNkpWVEVfa2RQcFRoVHBnVl9OeEtlN3M1Ny1BMFdDaDRpXzAwYU8zbWFsWktuX2p2aGtoclc4ZWhVRHlnMG9jRTAtSnF4RVBtSHNSRC02QWJ3NWx2SlVZaUZ0X0prdHAwTm1ZQlM3cll3MnRoRU5TczNsLWFQWEhLQzNOaE95MUE?oc=5",
-              "source": "La Jornada",
-              "date": "2026-11-12",
-              "published_at": "2026-11-12T22:14:00Z",
-              "category": "Gobierno",
-              "borough": "Álvaro Obregón",
-              "location": "Álvaro Obregón (mencionada en el titular)",
-              "local_url": "/noticias/?id=708084be5fe9cfd43eee&mes=2026-11",
-              "brief": {
-                "lead": "De acuerdo con La Jornada, el titular publicado es: «Lanza CDMX programa de ecotecnias para 10 mil viviendas en Álvaro Obregón». La información publicada por La Jornada aborda un asunto que este portal clasifica como Gobierno. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-                "context": "Las decisiones administrativas pueden influir en servicios, trámites y derechos; conviene conocer sus condiciones y a quiénes afectan.",
-                "pending": "Es indispensable consultar los acuerdos, comunicados o documentos oficiales antes de dar una medida por vigente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-              },
-              "photo": {
-                "id": "commons_24433238",
-                "kind": "representativa",
-                "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Avenida_%C3%81lvaro_Obreg%C3%B3n%2C_Colonia_Roma%2C_Ciudad_de_M%C3%A9xico_2..jpg/960px-Avenida_%C3%81lvaro_Obreg%C3%B3n%2C_Colonia_Roma%2C_Ciudad_de_M%C3%A9xico_2..jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-                "category": "Alcaldías",
-                "borough": "",
-                "topic": "Avenida Álvaro Obregón, Colonia Roma, Ciudad de México 2.",
-                "keywords": [
-                  "Álvaro Obregón Ciudad de México"
-                ],
-                "author": "ProtoplasmaKid",
-                "license": "CC BY-SA 3.0",
-                "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-                "source": "https://commons.wikimedia.org/wiki/File:Avenida_%C3%81lvaro_Obreg%C3%B3n,_Colonia_Roma,_Ciudad_de_M%C3%A9xico_2..jpg"
-              }
-            },
-            {
-              "title": "Lanza CDMX programa Casa Ecológica; beneficiará a 10 mil viviendas en Álvaro Obregón",
-              "description": "De acuerdo con La Jornada, el titular publicado es: «Lanza CDMX programa Casa Ecológica; beneficiará a 10 mil viviendas en Álvaro Obregón». La información publicada por La Jornada aborda un asunto que este portal clasifica como Gobierno. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-              "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNdjdtdUdNU2tMSUdSWVV4emNxbWR4M0JDWE9kVmIyX2YwR05fcGlCQjIzUXQtcEhValptcUNJNG5MMXNSY1ExNkpWVEVfa2RQcFRoVHBnVl9OeEtlN3M1Ny1BMFdDaDRpXzAwYU8zbWFsWktuX2p2aGtoclc4ZWhVRHlnMG9jRTAtSnF4RVBtSHNSRC02QWJ3NWx2SlVZaUZ0X0prdHAwTm1ZQlM3cll3MnRoRU5TczNsLWFQWEhLQzNOaE95MUE?oc=5",
-              "source": "La Jornada",
-              "date": "2026-11-12",
-              "published_at": "2026-11-12T22:14:00Z",
-              "category": "Gobierno",
-              "borough": "Álvaro Obregón",
-              "location": "Álvaro Obregón (mencionada en el titular)",
-              "local_url": "/noticias/?id=708084be5fe9cfd43eee&mes=2026-11",
-              "brief": {
-                "lead": "De acuerdo con La Jornada, el titular publicado es: «Lanza CDMX programa Casa Ecológica; beneficiará a 10 mil viviendas en Álvaro Obregón». La información publicada por La Jornada aborda un asunto que este portal clasifica como Gobierno. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-                "context": "Las decisiones administrativas pueden influir en servicios, trámites y derechos; conviene conocer sus condiciones y a quiénes afectan.",
-                "pending": "Es indispensable consultar los acuerdos, comunicados o documentos oficiales antes de dar una medida por vigente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-              },
-              "photo": {
-                "id": "commons_24433238",
-                "kind": "representativa",
-                "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Avenida_%C3%81lvaro_Obreg%C3%B3n%2C_Colonia_Roma%2C_Ciudad_de_M%C3%A9xico_2..jpg/960px-Avenida_%C3%81lvaro_Obreg%C3%B3n%2C_Colonia_Roma%2C_Ciudad_de_M%C3%A9xico_2..jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-                "category": "Alcaldías",
-                "borough": "",
-                "topic": "Avenida Álvaro Obregón, Colonia Roma, Ciudad de México 2.",
-                "keywords": [
-                  "Álvaro Obregón Ciudad de México"
-                ],
-                "author": "ProtoplasmaKid",
-                "license": "CC BY-SA 3.0",
-                "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-                "source": "https://commons.wikimedia.org/wiki/File:Avenida_%C3%81lvaro_Obreg%C3%B3n,_Colonia_Roma,_Ciudad_de_M%C3%A9xico_2..jpg"
-              }
-            },
-            {
-              "title": "Lanza CDMX programa Casa Ecológica; beneficiará a 10 mil viviendas en Álvaro Obregón",
-              "description": "De acuerdo con La Jornada, el titular publicado es: «Lanza CDMX programa Casa Ecológica; beneficiará a 10 mil viviendas en Álvaro Obregón». La información publicada por La Jornada aborda un asunto que este portal clasifica como Medio Ambiente. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-              "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNdjdtdUdNU2tMSUdSWVV4emNxbWR4M0JDWE9kVmIyX2YwR05fcGlCQjIzUXQtcEhValptcUNJNG5MMXNSY1ExNkpWVEVfa2RQcFRoVHBnVl9OeEtlN3M1Ny1BMFdDaDRpXzAwYU8zbWFsWktuX2p2aGtoclc4ZWhVRHlnMG9jRTAtSnF4RVBtSHNSRC02QWJ3NWx2SlVZaUZ0X0prdHAwTm1ZQlM3cll3MnRoRU5TczNsLWFQWEhLQzNOaE95MUE?oc=5",
-              "source": "La Jornada",
-              "date": "2026-11-12",
-              "published_at": "2026-11-12T22:14:00Z",
-              "category": "Medio Ambiente",
-              "borough": "Álvaro Obregón",
-              "location": "Álvaro Obregón (mencionada en el titular)",
-              "local_url": "/noticias/?id=708084be5fe9cfd43eee&mes=2026-11",
-              "brief": {
-                "lead": "De acuerdo con La Jornada, el titular publicado es: «Lanza CDMX programa Casa Ecológica; beneficiará a 10 mil viviendas en Álvaro Obregón». La información publicada por La Jornada aborda un asunto que este portal clasifica como Medio Ambiente. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-                "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-                "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-              },
-              "photo": {
-                "id": "commons_152180160",
-                "kind": "representativa",
-                "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Cosecha_de_Lluvia_03.jpg/960px-Cosecha_de_Lluvia_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-                "category": "Medio Ambiente",
-                "borough": "",
-                "topic": "Cosecha de Lluvia 03",
-                "keywords": [
-                  "Lluvia Ciudad de México"
-                ],
-                "author": "Gobierno de la Ciudad de México",
-                "license": "CC BY 4.0",
-                "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-                "source": "https://commons.wikimedia.org/wiki/File:Cosecha_de_Lluvia_03.jpg"
-              }
-            }
-          ],
-          "brief": {
-            "lead": "De acuerdo con La Jornada, el titular publicado es: «Lanza CDMX programa Casa Ecológica; beneficiará a 10 mil viviendas en Álvaro Obregón». La información publicada por La Jornada aborda un asunto que este portal clasifica como Medio Ambiente. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
-        },
-        {
-          "title": "Reparan Fuga de Agua Provocada por el Paso de un Vehículo Pesado en Álvaro Obregón, CDMX",
-          "description": "De acuerdo con N+, el titular publicado es: «Reparan Fuga de Agua Provocada por el Paso de un Vehículo Pesado en Álvaro Obregón, CDMX». La información publicada por N+ aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPUTlhNEpUb1hGdzAxWlZlem0wbTRxWERaYjVFa3JHOGtjcTlNUmhVQ29MYTFnRy1NRlZXMUVyN1Y4MTZmQkdpSG9aZTRabVN4bkphOW5CVFhHd1hwWTFkWGtqRks4TEtKLXpYOGN2U0hhOW9FOXZQeThQRDVDMTNOUEVtOXJpYzVDQmNsMjRnTjZnQTFmWFpKUHgxcnBrVFZHNDlMZ2plaHhOX3dfZjloU04zSXRpdnFWek1kemRsanVtUFNYOGlpUFhIUVVQcDh5bHhFUG4yWkJvRUlPNjczYVRPeVZTYlU?oc=5",
-          "source": "N+",
-          "date": "2026-11-11",
-          "published_at": "2026-11-12T01:01:11Z",
-          "category": "CDMX",
-          "borough": "Álvaro Obregón",
-          "location": "Álvaro Obregón (mencionada en el titular)",
-          "local_url": "/noticias/?id=35f585d77f16a7935d49&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con N+, el titular publicado es: «Reparan Fuga de Agua Provocada por el Paso de un Vehículo Pesado en Álvaro Obregón, CDMX». La información publicada por N+ aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          }
         }
       ]
     },
     {
       "name": "Azcapotzalco",
-      "count": 186,
+      "count": 192,
       "articles": [
+        {
+          "title": "Brote de varicela obliga a suspender clases presenciales en CCH Azcapotzalco",
+          "description": "De acuerdo con 24-horas, el titular publicado es: «Brote de varicela obliga a suspender clases presenciales en CCH Azcapotzalco». La información publicada por 24-horas aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPUkJ1LS0zZGNZSEdmLS1OZkxkR0I1aUNPUGxLSms1UVI2UzFZQnF4aW9SbEdyd01aTWVaM0FBSmgwanZjRG5wdW16dkZnQzJXbGZGSVJXajhvZjJhWDl4UXRZOWpMVTNLbG91eW01NzgwU3N0TENtdl82OHdCOWgycWptSHdpcF9NSzNlc3U5czc5elRsck1NNzF4STEtNWxDdkExSg?oc=5",
+          "source": "24-horas",
+          "date": "2026-11-25",
+          "published_at": "2026-11-25T13:32:14Z",
+          "category": "CDMX",
+          "borough": "Azcapotzalco",
+          "location": "Azcapotzalco (mencionada en el titular)",
+          "local_url": "/noticias/?id=9a1c40ab2db54a93df3d&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con 24-horas, el titular publicado es: «Brote de varicela obliga a suspender clases presenciales en CCH Azcapotzalco». La información publicada por 24-horas aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_azcapotzalco",
+            "kind": "representativa",
+            "url": "/assets/alcaldias/azcapotzalco.jpg",
+            "category": "CDMX",
+            "borough": "Azcapotzalco",
+            "topic": "Parroquia de Santa Catarina, Azcapotzalco",
+            "author": "Ivan alcantara",
+            "license": "CC BY-SA 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:PARROQUIA_DE_SANTA_CATARINA_%28AZCAPOTZALCO%29.jpg"
+          }
+        },
+        {
+          "title": "UNAM suspende clases presenciales en el CCH Azcapotzalco por brote de varicela",
+          "description": "De acuerdo con Enfoque Noticias, el titular publicado es: «UNAM suspende clases presenciales en el CCH Azcapotzalco por brote de varicela». La información publicada por Enfoque Noticias aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQUkRKa0pvLWxtWmdNR0JiNVlHLUNTY0lLcjNqZnBaR1BVS3dMY1JrZEw0Rl9kLVJmMzhzeUtQZE9VSFI5SnV4QmQ5ZnBaWFB3Z05JT2phbWFLYlhUZkYwZnZXMFZUOHZpMGRDeU4yR09sd2k3VC1KNEN5ZGIwRXc4QVlFRGhOMFQtMk5BYzh0bUhwZw?oc=5",
+          "source": "Enfoque Noticias",
+          "date": "2026-11-25",
+          "published_at": "2026-11-25T13:30:00Z",
+          "category": "CDMX",
+          "borough": "Azcapotzalco",
+          "location": "Azcapotzalco (mencionada en el titular)",
+          "local_url": "/noticias/?id=7e6f4fadce547a110217&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con Enfoque Noticias, el titular publicado es: «UNAM suspende clases presenciales en el CCH Azcapotzalco por brote de varicela». La información publicada por Enfoque Noticias aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "commons_20242729",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Metro_Azcapotzalco_02.jpg/960px-Metro_Azcapotzalco_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "category": "Alcaldías",
+            "borough": "",
+            "topic": "Metro Azcapotzalco 02",
+            "keywords": [
+              "Azcapotzalco Ciudad de México"
+            ],
+            "author": "GAED",
+            "license": "CC BY-SA 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Metro_Azcapotzalco_02.jpg"
+          }
+        },
+        {
+          "title": "Brote de varicela en la UNAM: ¿Por qué el CCH Azcapotzalco suspendió clases?",
+          "description": "De acuerdo con El Financiero, el titular publicado es: «Brote de varicela en la UNAM: ¿Por qué el CCH Azcapotzalco suspendió clases?». La información publicada por El Financiero aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNOHBJWUgyOUFjeDduMENPcVFSWFJYWHNCcGJSRC0xUGdRb0swQWxUNlIzRF9ZSHo1MVNINml2NDZQR3d0VHVWejJOT1JxNWVvYndOclRReE1BODFhSFBQX3B4TFhBQU5mM20tTEFES2ZYTUt4SVlZaXZvQ0FzbFZ4dmN5YUFVWVBxeVY4YmExMW8yeXVDdWkxcVZZSEFRUVZBTElob2RZZU51R1FDeVlLLWQyME5qUTVPNmdGLXVFbw?oc=5",
+          "source": "El Financiero",
+          "date": "2026-11-25",
+          "published_at": "2026-11-25T13:29:38Z",
+          "category": "CDMX",
+          "borough": "Azcapotzalco",
+          "location": "Azcapotzalco (mencionada en el titular)",
+          "local_url": "/noticias/?id=973ad22d321a5b215d3e&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con El Financiero, el titular publicado es: «Brote de varicela en la UNAM: ¿Por qué el CCH Azcapotzalco suspendió clases?». La información publicada por El Financiero aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "commons_88470088",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/Carnaval_de_Azcapotzalco%2C_Ciudad_de_M%C3%A9xico_-_Marzo_2020_X.jpg/960px-Carnaval_de_Azcapotzalco%2C_Ciudad_de_M%C3%A9xico_-_Marzo_2020_X.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "category": "Alcaldías",
+            "borough": "",
+            "topic": "Carnaval de Azcapotzalco, Ciudad de México - Marzo 2020 X",
+            "keywords": [
+              "Azcapotzalco Ciudad de México"
+            ],
+            "author": "Juan Carlos Fonseca Mata",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Carnaval_de_Azcapotzalco,_Ciudad_de_M%C3%A9xico_-_Marzo_2020_X.jpg"
+          }
+        },
+        {
+          "title": "Alerta de la UNAM por brote de varicela en CCH Azcapotzalco: suspenden las clases toda la semana",
+          "description": "De acuerdo con Ambito, el titular publicado es: «Alerta de la UNAM por brote de varicela en CCH Azcapotzalco: suspenden las clases toda la semana». La información publicada por Ambito aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPU0RURFF3QmFMU2ZXYmVKZXdmcE4yVmN2SGFBY1I5U2QzX3MtOHc4cXg4anpZdXRTT3l4d3dIcnJNNXYtazB0YmFpbThUa2IwN3RfbzNIelF4SXAzNXZpcF81Q1Z2SjJUcUVBb3YtZlF3UG5yQkdQV1BYWlBhQ3NjSHdwc24za3BaNzcwODA1UWttbEZPa1kyRzBTM2lxemtVeFJCSV8zQUNtYkQ5QXNFVHRIbHRtTDQ4QnNyc1htVjBKWlc5MUdYVXVWbUppa0tNdDlQWjFWRznSAd4BQVVfeXFMT2ozSkc5eGVKTkZFWEFhZUtrRWlBZnFpTXhIVGsxZHFOdE5FVDZVV0xzX0hfMTBoOTRBSWZEOWFCMk5LZ1BoZlRTNVJhWi1rM04zR0NmOWtwV1dnUDZ2b0JySU9tUU1xRExYOTdpWS13a1lFcEwtMVdOQURtUlV3cG9mUEdzbV9la2t3WHJYN1E5b1g5N0RzZi0tUU8wSGxlVFlTUm9MeUUzZS1nU19vakQxT2wtdFRxZTZzVkNtSTVtTlRhMkQ0RlRFLWg1T3RxQlZyWTlBQXJoYWFsc193?oc=5",
+          "source": "Ambito",
+          "date": "2026-11-25",
+          "published_at": "2026-11-25T12:04:05Z",
+          "category": "CDMX",
+          "borough": "Azcapotzalco",
+          "location": "Azcapotzalco (mencionada en el titular)",
+          "local_url": "/noticias/?id=5522f07f8b8dd02ae90c&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con Ambito, el titular publicado es: «Alerta de la UNAM por brote de varicela en CCH Azcapotzalco: suspenden las clases toda la semana». La información publicada por Ambito aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "commons_88470098",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Carnaval_de_Azcapotzalco%2C_Ciudad_de_M%C3%A9xico_-_Marzo_2020_IV.jpg/960px-Carnaval_de_Azcapotzalco%2C_Ciudad_de_M%C3%A9xico_-_Marzo_2020_IV.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "category": "Alcaldías",
+            "borough": "",
+            "topic": "Carnaval de Azcapotzalco, Ciudad de México - Marzo 2020 IV",
+            "keywords": [
+              "Azcapotzalco Ciudad de México"
+            ],
+            "author": "Juan Carlos Fonseca Mata",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Carnaval_de_Azcapotzalco,_Ciudad_de_M%C3%A9xico_-_Marzo_2020_IV.jpg"
+          }
+        },
+        {
+          "title": "Suspenden clases presenciales en CCH Azcapotzalco por brote de varicela",
+          "description": "De acuerdo con MILENIO, el titular publicado es: «Suspenden clases presenciales en CCH Azcapotzalco por brote de varicela». La información publicada por MILENIO aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOWlNBNjVJTElNemdZSlZKWG4ydFZEQzJZdzJCVS10Q3pUYTJVV0dBT05ZSjZQSW9rV3ZOWlNiYWtDMUhSa29JZjNtc0FFUGlwOGRRWl9Ya0hSejRWTnRBT1FmMk9nTUpNc3RRVTlNNDBQdjQxU3BBOE5CWVA0TFRla25Ga3dCbTA1V29nbU9HM1Z4SXdtUm930gGXAUFVX3lxTE5aU0E2NUlMSU16Z1lKVkpYbjJ0VkRDMll3MkJVLXRDelRhMlVXR0FPTllKNlBJb2tXdk5aU2Jha0MxSFJrb0lmM21zQUVQaXA4ZFFaX1hrSFJ6NFZOdEFPUWYyT2dNSk1zdFFVOU00MFB2NDFTcEE4TkJZUDRMVGVrbkZrd0JtMDVXb2dtT0czVnhJd21Sb3c?oc=5",
+          "source": "MILENIO",
+          "date": "2026-11-24",
+          "published_at": "2026-11-25T05:56:00Z",
+          "category": "CDMX",
+          "borough": "Azcapotzalco",
+          "location": "Azcapotzalco (mencionada en el titular)",
+          "local_url": "/noticias/?id=9bf9189718a3a417ef5d&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con MILENIO, el titular publicado es: «Suspenden clases presenciales en CCH Azcapotzalco por brote de varicela». La información publicada por MILENIO aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "commons_88470086",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Carnaval_de_Azcapotzalco%2C_Ciudad_de_M%C3%A9xico_-_Marzo_2020_IX.jpg/960px-Carnaval_de_Azcapotzalco%2C_Ciudad_de_M%C3%A9xico_-_Marzo_2020_IX.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "category": "Alcaldías",
+            "borough": "",
+            "topic": "Carnaval de Azcapotzalco, Ciudad de México - Marzo 2020 IX",
+            "keywords": [
+              "Azcapotzalco Ciudad de México"
+            ],
+            "author": "Juan Carlos Fonseca Mata",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Carnaval_de_Azcapotzalco,_Ciudad_de_M%C3%A9xico_-_Marzo_2020_IX.jpg"
+          }
+        },
+        {
+          "title": "Suspenden clases presenciales en el CCH Azcapotzalco debido a un brote de varicela",
+          "description": "De acuerdo con LatinUS, el titular publicado es: «Suspenden clases presenciales en el CCH Azcapotzalco debido a un brote de varicela». La información publicada por LatinUS aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPU0JzcGxUeGRaR295SE1xTEkzcTVkRXVvQUtzQnBQSnRyMmo3dXR3dUQ3TWRuZWozY0dtUk9FdlhMakFKU1FlM05wVWh4QnY5RmxjMC03MFV1NzB5N1IwRXM5MUFCcGlyTk9HVHBIMkNvbUFiWUJtczlxZEx5M3JkcW1Mb2JaWld3RTVfU2JVY0RkRWdRMGV1ZTJ4cnVVZVBfUHBXY0loME5WdjdZUGp2enZjbkZLVTdmR19QdHBJQ1ROZnVZTm1WYVgtOA?oc=5",
+          "source": "LatinUS",
+          "date": "2026-11-24",
+          "published_at": "2026-11-25T05:10:00Z",
+          "category": "CDMX",
+          "borough": "Azcapotzalco",
+          "location": "Azcapotzalco (mencionada en el titular)",
+          "local_url": "/noticias/?id=896d46ecc69b8642c13e&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con LatinUS, el titular publicado es: «Suspenden clases presenciales en el CCH Azcapotzalco debido a un brote de varicela». La información publicada por LatinUS aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "commons_178858309",
+            "kind": "representativa",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/9/97/Afluencia_UAM_Azcapotzalco_L%C3%ADnea_6_%282024%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+            "category": "Alcaldías",
+            "borough": "",
+            "topic": "Afluencia UAM Azcapotzalco Línea 6 (2024)",
+            "keywords": [
+              "Azcapotzalco Ciudad de México"
+            ],
+            "author": "Sistema Transporte Colectivo / Gobierno de la Ciudad de México",
+            "license": "CC BY 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Afluencia_UAM_Azcapotzalco_L%C3%ADnea_6_(2024).png"
+          }
+        },
         {
           "title": "ISSSTE en Azcapotzalco: pacientes esperan desde la madrugada por consulta y meses por estudios",
           "description": "De acuerdo con La Silla Rota, el titular publicado es: «ISSSTE en Azcapotzalco: pacientes esperan desde la madrugada por consulta y meses por estudios». La información publicada por La Silla Rota aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -3031,348 +3155,6 @@
             "license": "CC BY-SA 4.0",
             "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
             "source": "https://commons.wikimedia.org/wiki/File:Jeep_policia_cdmx.jpg"
-          }
-        },
-        {
-          "title": "Las colonias más peligrosas de Azcapotzalco: dónde se denuncian robos",
-          "description": "De acuerdo con Capital CDMX, el titular publicado es: «Las colonias más peligrosas de Azcapotzalco: dónde se denuncian robos». La información publicada por Capital CDMX aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFB5SlowWlNRcXBXbmpCNm5tbUMxTEp1MnlhMG9Zblc5ZlVHcHNyal9ZMUtDQktSNW5sY1pNd2VZajVNV2djSlRNdXdMdTYzaWw2dFRadDlIdFRoSWM3eVFKY1VsU1UzYVVjR1p2Rl9CMA?oc=5",
-          "source": "Capital CDMX",
-          "date": "2026-11-16",
-          "published_at": "2026-11-16T23:32:16Z",
-          "category": "Seguridad",
-          "borough": "Azcapotzalco",
-          "location": "Azcapotzalco (mencionada en el titular)",
-          "local_url": "/noticias/?id=ef72350d2934c7bb4500&mes=2026-11",
-          "alternate_versions": [
-            {
-              "title": "Robos y delitos en colonias de Azcapotzalco",
-              "description": "De acuerdo con Capital CDMX, el titular publicado es: «Robos y delitos en colonias de Azcapotzalco». La información publicada por Capital CDMX aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-              "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFB5SlowWlNRcXBXbmpCNm5tbUMxTEp1MnlhMG9Zblc5ZlVHcHNyal9ZMUtDQktSNW5sY1pNd2VZajVNV2djSlRNdXdMdTYzaWw2dFRadDlIdFRoSWM3eVFKY1VsU1UzYVVjR1p2Rl9CMA?oc=5",
-              "source": "Capital CDMX",
-              "date": "2026-11-16",
-              "published_at": "2026-11-16T23:32:16Z",
-              "category": "Seguridad",
-              "borough": "Azcapotzalco",
-              "location": "Azcapotzalco (mencionada en el titular)",
-              "local_url": "/noticias/?id=ef72350d2934c7bb4500&mes=2026-11",
-              "brief": {
-                "lead": "De acuerdo con Capital CDMX, el titular publicado es: «Robos y delitos en colonias de Azcapotzalco». La información publicada por Capital CDMX aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-                "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
-                "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-              },
-              "photo": {
-                "id": "archivo_seguridad_005",
-                "kind": "representativa",
-                "url": "/assets/fotos/archivo_seguridad_005.jpg",
-                "category": "Seguridad",
-                "borough": "",
-                "topic": "Jeep policia cdmx",
-                "keywords": [
-                  "Seguridad"
-                ],
-                "author": "Gobierno de la Ciudad de México",
-                "license": "CC BY-SA 4.0",
-                "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-                "source": "https://commons.wikimedia.org/wiki/File:Jeep_policia_cdmx.jpg"
-              }
-            }
-          ],
-          "brief": {
-            "lead": "De acuerdo con Capital CDMX, el titular publicado es: «Las colonias más peligrosas de Azcapotzalco: dónde se denuncian robos». La información publicada por Capital CDMX aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
-            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "archivo_seguridad_005",
-            "kind": "representativa",
-            "url": "/assets/fotos/archivo_seguridad_005.jpg",
-            "category": "Seguridad",
-            "borough": "",
-            "topic": "Jeep policia cdmx",
-            "keywords": [
-              "Seguridad"
-            ],
-            "author": "Gobierno de la Ciudad de México",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Jeep_policia_cdmx.jpg"
-          }
-        },
-        {
-          "title": "Azcapotzalco: El Rosario registra 223 denuncias en 2024",
-          "description": "De acuerdo con Capital CDMX, el titular publicado es: «Azcapotzalco: El Rosario registra 223 denuncias en 2024». La información publicada por Capital CDMX aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5SQTFzVzh1akd6a0dHa3Rmc05KdTZrWExuLUlOZk9RZGxqdWpaZHlQdndUQm1JdjcteElPMEtVXzNoWE5GU0NhWWpUcDlSSXRsbGtfTUYwYjY4UDc0TkgyNEIwZkxPdkNwdGRTSlBsQWV4cENYUXc?oc=5",
-          "source": "Capital CDMX",
-          "date": "2026-11-16",
-          "published_at": "2026-11-16T19:42:54Z",
-          "category": "CDMX",
-          "borough": "Azcapotzalco",
-          "location": "Azcapotzalco (mencionada en el titular)",
-          "local_url": "/noticias/?id=ec20df14dfe88b67815e&mes=2026-11",
-          "alternate_versions": [
-            {
-              "title": "Azcapotzalco: El Rosario registra 223 denuncias en 2024",
-              "description": "De acuerdo con Capital CDMX, el titular publicado es: «Azcapotzalco: El Rosario registra 223 denuncias en 2024». La información publicada por Capital CDMX aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-              "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5SQTFzVzh1akd6a0dHa3Rmc05KdTZrWExuLUlOZk9RZGxqdWpaZHlQdndUQm1JdjcteElPMEtVXzNoWE5GU0NhWWpUcDlSSXRsbGtfTUYwYjY4UDc0TkgyNEIwZkxPdkNwdGRTSlBsQWV4cENYUXc?oc=5",
-              "source": "Capital CDMX",
-              "date": "2026-11-16",
-              "published_at": "2026-11-16T19:42:54Z",
-              "category": "CDMX",
-              "borough": "Azcapotzalco",
-              "location": "Azcapotzalco (mencionada en el titular)",
-              "local_url": "/noticias/?id=ec20df14dfe88b67815e&mes=2026-11",
-              "brief": {
-                "lead": "De acuerdo con Capital CDMX, el titular publicado es: «Azcapotzalco: El Rosario registra 223 denuncias en 2024». La información publicada por Capital CDMX aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-                "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-                "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-              },
-              "photo": {
-                "id": "alcaldia_azcapotzalco",
-                "kind": "representativa",
-                "url": "/assets/alcaldias/azcapotzalco.jpg",
-                "category": "CDMX",
-                "borough": "Azcapotzalco",
-                "topic": "Parroquia de Santa Catarina, Azcapotzalco",
-                "author": "Ivan alcantara",
-                "license": "CC BY-SA 3.0",
-                "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-                "source": "https://commons.wikimedia.org/wiki/File:PARROQUIA_DE_SANTA_CATARINA_%28AZCAPOTZALCO%29.jpg"
-              }
-            }
-          ],
-          "brief": {
-            "lead": "De acuerdo con Capital CDMX, el titular publicado es: «Azcapotzalco: El Rosario registra 223 denuncias en 2024». La información publicada por Capital CDMX aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "contexto_metro_el_rosario_2025",
-            "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Metro_El_Rosario_%282025%29_8.jpg/960px-Metro_El_Rosario_%282025%29_8.jpg",
-            "category": "Movilidad",
-            "borough": "",
-            "topic": "Letrero de la estación El Rosario del Metro (archivo 2025); referencia de lugar, no de denuncias.",
-            "keywords": [
-              "El Rosario",
-              "Azcapotzalco",
-              "Metro",
-              "estación",
-              "Línea 6",
-              "CDMX"
-            ],
-            "author": "Tbhotch",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-            "source": "https://commons.wikimedia.org/wiki/File:Metro_El_Rosario_%282025%29_8.jpg"
-          }
-        },
-        {
-          "title": "El Rosario registró 223 denuncias en 2024: el panorama de Azcapotzalco",
-          "description": "De acuerdo con Capital CDMX, el titular publicado es: «El Rosario registró 223 denuncias en 2024: el panorama de Azcapotzalco». La información publicada por Capital CDMX aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPV1Q4ejM1em4xejR1akE4S2dEbmw5OG0xWGNGUXIydXAxZ09sNGYwVUNEMkxMbVRvS0JsczlZbmFId3d0dGpRUWN6aHFNSXFRUzd5YXhvZUc4TlU4WjEwQmR5bzBWRndzODQ0bW1DOXJsYkh0UWVDbXhscnlhLXNrTnlpWHJWaFE?oc=5",
-          "source": "Capital CDMX",
-          "date": "2026-11-16",
-          "published_at": "2026-11-16T18:04:40Z",
-          "category": "CDMX",
-          "borough": "Azcapotzalco",
-          "location": "Azcapotzalco (mencionada en el titular)",
-          "local_url": "/noticias/?id=f9149da7b581c21f5d69&mes=2026-11",
-          "alternate_versions": [
-            {
-              "title": "El Rosario registró 223 denuncias en 2024: el panorama de Azcapotzalco",
-              "description": "De acuerdo con Capital CDMX, el titular publicado es: «El Rosario registró 223 denuncias en 2024: el panorama de Azcapotzalco». La información publicada por Capital CDMX aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-              "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPV1Q4ejM1em4xejR1akE4S2dEbmw5OG0xWGNGUXIydXAxZ09sNGYwVUNEMkxMbVRvS0JsczlZbmFId3d0dGpRUWN6aHFNSXFRUzd5YXhvZUc4TlU4WjEwQmR5bzBWRndzODQ0bW1DOXJsYkh0UWVDbXhscnlhLXNrTnlpWHJWaFE?oc=5",
-              "source": "Capital CDMX",
-              "date": "2026-11-16",
-              "published_at": "2026-11-16T18:04:40Z",
-              "category": "CDMX",
-              "borough": "Azcapotzalco",
-              "location": "Azcapotzalco (mencionada en el titular)",
-              "local_url": "/noticias/?id=f9149da7b581c21f5d69&mes=2026-11",
-              "brief": {
-                "lead": "De acuerdo con Capital CDMX, el titular publicado es: «El Rosario registró 223 denuncias en 2024: el panorama de Azcapotzalco». La información publicada por Capital CDMX aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-                "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-                "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-              },
-              "photo": {
-                "id": "alcaldia_azcapotzalco",
-                "kind": "representativa",
-                "url": "/assets/alcaldias/azcapotzalco.jpg",
-                "category": "CDMX",
-                "borough": "Azcapotzalco",
-                "topic": "Parroquia de Santa Catarina, Azcapotzalco",
-                "author": "Ivan alcantara",
-                "license": "CC BY-SA 3.0",
-                "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-                "source": "https://commons.wikimedia.org/wiki/File:PARROQUIA_DE_SANTA_CATARINA_%28AZCAPOTZALCO%29.jpg"
-              }
-            }
-          ],
-          "brief": {
-            "lead": "De acuerdo con Capital CDMX, el titular publicado es: «El Rosario registró 223 denuncias en 2024: el panorama de Azcapotzalco». La información publicada por Capital CDMX aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "contexto_metro_el_rosario_2025",
-            "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Metro_El_Rosario_%282025%29_8.jpg/960px-Metro_El_Rosario_%282025%29_8.jpg",
-            "category": "Movilidad",
-            "borough": "",
-            "topic": "Letrero de la estación El Rosario del Metro (archivo 2025); referencia de lugar, no de denuncias.",
-            "keywords": [
-              "El Rosario",
-              "Azcapotzalco",
-              "Metro",
-              "estación",
-              "Línea 6",
-              "CDMX"
-            ],
-            "author": "Tbhotch",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-            "source": "https://commons.wikimedia.org/wiki/File:Metro_El_Rosario_%282025%29_8.jpg"
-          }
-        },
-        {
-          "title": "Balacera en Azcapotzalco deja dos personas muertas y una herida",
-          "description": "De acuerdo con El Universal, el titular publicado es: «Balacera en Azcapotzalco deja dos personas muertas y una herida». La información publicada por El Universal aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxOSG82cDZ3MlpWMnQzVkw2eDUzamdXSXhNQm9iTFEybUxBS0VIdEx4alFmdURaRjQtN3NnVm5Vd1BNOF9WcWxPa3VEbXNzTW9lWl9xWTZtXzNYNTlmRHl3VFpkRF9TcjdHMFdWSklrX3E4NzIzRG1ZaWR2VkRCai16a3czbzVKdV9vMHBVeDBvM1FDZzh0X2ZjTlIxWU9xbmJWbnlIRVVWallfWlVialBxcnZvMWJ3VDNneFhVSVFPXzlyMWdYbXdqcUpLYUp4LTEzeU54U3g2Y05UMHNaX2Q1QlFEaGpMckUxbXVIMlln0gGCAkFVX3lxTE5ocUhxQlFyRDRtaDlTTE5SX0tyZ05xS0xVY19HU3lTSUdmNXZYZVlhUjBnY1YwVnpETXVRSjYxQzhuQ19VYU5qX3ZfVFlLc0pmemxwTmNvSjBDQWFpNXplaWhMcGlGTWVpcHlsQUFzaEp0aVdUcWxJM0swdzZaUWZ6RG9rNm1fdnptenNtRzZTampqMHZyN25TV1daZzR3b3h5NGs4a1BQTWktV18wbVFxQzV2U21SNmRpRG5PYS0weER3N0ljTkRlTHNCSFlKZXMxWVVFaXVjV01ZTXo5M1hFNE9uUWpkcXpMUDFmOG9TeTBwaHJOWTNOZDQ3anNKalZsUQ?oc=5",
-          "source": "El Universal",
-          "date": "2026-11-16",
-          "published_at": "2026-11-16T17:51:54Z",
-          "category": "Seguridad",
-          "borough": "Azcapotzalco",
-          "location": "Azcapotzalco (mencionada en el titular)",
-          "local_url": "/noticias/?id=aca1b808baa8463bab14&mes=2026-11",
-          "alternate_versions": [
-            {
-              "title": "Balacera en Azcapotzalco deja dos personas muertas y una herida",
-              "description": "De acuerdo con El Universal, el titular publicado es: «Balacera en Azcapotzalco deja dos personas muertas y una herida». La información publicada por El Universal aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-              "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxOSG82cDZ3MlpWMnQzVkw2eDUzamdXSXhNQm9iTFEybUxBS0VIdEx4alFmdURaRjQtN3NnVm5Vd1BNOF9WcWxPa3VEbXNzTW9lWl9xWTZtXzNYNTlmRHl3VFpkRF9TcjdHMFdWSklrX3E4NzIzRG1ZaWR2VkRCai16a3czbzVKdV9vMHBVeDBvM1FDZzh0X2ZjTlIxWU9xbmJWbnlIRVVWallfWlVialBxcnZvMWJ3VDNneFhVSVFPXzlyMWdYbXdqcUpLYUp4LTEzeU54U3g2Y05UMHNaX2Q1QlFEaGpMckUxbXVIMlln0gGCAkFVX3lxTE5ocUhxQlFyRDRtaDlTTE5SX0tyZ05xS0xVY19HU3lTSUdmNXZYZVlhUjBnY1YwVnpETXVRSjYxQzhuQ19VYU5qX3ZfVFlLc0pmemxwTmNvSjBDQWFpNXplaWhMcGlGTWVpcHlsQUFzaEp0aVdUcWxJM0swdzZaUWZ6RG9rNm1fdnptenNtRzZTampqMHZyN25TV1daZzR3b3h5NGs4a1BQTWktV18wbVFxQzV2U21SNmRpRG5PYS0weER3N0ljTkRlTHNCSFlKZXMxWVVFaXVjV01ZTXo5M1hFNE9uUWpkcXpMUDFmOG9TeTBwaHJOWTNOZDQ3anNKalZsUQ?oc=5",
-              "source": "El Universal",
-              "date": "2026-11-16",
-              "published_at": "2026-11-16T17:51:54Z",
-              "category": "Seguridad",
-              "borough": "Azcapotzalco",
-              "location": "Azcapotzalco (mencionada en el titular)",
-              "local_url": "/noticias/?id=aca1b808baa8463bab14&mes=2026-11",
-              "brief": {
-                "lead": "De acuerdo con El Universal, el titular publicado es: «Balacera en Azcapotzalco deja dos personas muertas y una herida». La información publicada por El Universal aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-                "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
-                "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-              },
-              "photo": {
-                "id": "seguridad",
-                "kind": "representativa",
-                "url": "/assets/fotos/seguridad.jpg",
-                "category": "Seguridad",
-                "borough": "",
-                "topic": "Patrulla de Ciudad de México",
-                "keywords": [
-                  "Seguridad"
-                ],
-                "author": "RainerRowe",
-                "license": "CC BY-SA 4.0",
-                "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.es",
-                "source": "https://commons.wikimedia.org/wiki/File:Patrulla_cdmx.jpg"
-              }
-            }
-          ],
-          "brief": {
-            "lead": "De acuerdo con El Universal, el titular publicado es: «Balacera en Azcapotzalco deja dos personas muertas y una herida». La información publicada por El Universal aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
-            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "archivo_seguridad_005",
-            "kind": "representativa",
-            "url": "/assets/fotos/archivo_seguridad_005.jpg",
-            "category": "Seguridad",
-            "borough": "",
-            "topic": "Jeep policia cdmx",
-            "keywords": [
-              "Seguridad"
-            ],
-            "author": "Gobierno de la Ciudad de México",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Jeep_policia_cdmx.jpg"
-          }
-        },
-        {
-          "title": "Persecución y balacera en Azcapotzalco termina con dos hombres muertos",
-          "description": "De acuerdo con Telediario, el titular publicado es: «Persecución y balacera en Azcapotzalco termina con dos hombres muertos». La información publicada por Telediario aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQS0piSWk4TUdWSk1PNENaVUxTSjhZSkNYaVBZZ0hKd2Z6SzlFeTdBNVhXYWpjWnpMWDdDNHJScWRmN1d0b0dHa1l2WU50cTRCUlJrV1ZSclQ1Y3JLRGllNzVvdTJfUVlPVUh3QUdmbElLZzc2UktZLTNuRWNaVzlrN0VFZXVxRUhSZExYUVIwZEVDQkkzaldOOGhPbHNkM0doWnVRQ2J30gGmAUFVX3lxTFBLSmJJaThNR1ZKTU80Q1pVTFNKOFlKQ1hpUFlnSEp3ZnpLOUV5N0E1WFdhamNaekxYN0M0clJxZGY3V3RvR0drWXZZTnRxNEJSUmtXVlJyVDVjcktEaWU3NW91Ml9RWU9VSHdBR2ZsSUtnNzZSS1ktM25FY1pXOWs3RUVldXFFSFJkTFhRUjBkRUNCSTNqV044aE9sc2QzR2hadVFDYnc?oc=5",
-          "source": "Telediario",
-          "date": "2026-11-16",
-          "published_at": "2026-11-16T16:09:19Z",
-          "category": "Seguridad",
-          "borough": "Azcapotzalco",
-          "location": "Azcapotzalco (mencionada en el titular)",
-          "local_url": "/noticias/?id=60b9120093601e572232&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con Telediario, el titular publicado es: «Persecución y balacera en Azcapotzalco termina con dos hombres muertos». La información publicada por Telediario aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
-            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "seguridad",
-            "kind": "representativa",
-            "url": "/assets/fotos/seguridad.jpg",
-            "category": "Seguridad",
-            "borough": "",
-            "topic": "Patrulla de Ciudad de México",
-            "keywords": [
-              "Seguridad"
-            ],
-            "author": "RainerRowe",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.es",
-            "source": "https://commons.wikimedia.org/wiki/File:Patrulla_cdmx.jpg"
-          }
-        },
-        {
-          "title": "Hombres son asesinados a balazos dentro de auto en San Pedro Xalpa, Azcapotzalco; uno más fue herido",
-          "description": "De acuerdo con Telediario, el titular publicado es: «Hombres son asesinados a balazos dentro de auto en San Pedro Xalpa, Azcapotzalco; uno más fue herido». La información publicada por Telediario aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOaHRSbnVYelZubkpWbXFMenlVUFhxYWE4VDhRQU1uOXVSd3l6YUFVRTA1UzVoUEtJdlo0eHVzX0I0ZzRlZ053S0MyR0R0azgxUlpxeEZmUF95ZW9iZXl3R3RZcDlfZnI5clFGaGtKaWxoaGNPSHl2ckdlOHRQR0pUOGhDTm50OU52YzRZVElEMll6aVBFUnh0N1RfQ1ZhT3JFYXFHbzFR0gGmAUFVX3lxTE9EZWt4VzdJWkJSWThtTG1DUWFRbWkwWFhaUm5KR0xNNkFlRktmMWN4SkdjUy1ueGFpUVhzM053bEhSdnF1MVExcmNaMl9XTlhVbl9nUlV5d0lGenF6NTF6cEtxS1h1a3ZMNjR6ZzBHVXQ4OFdPQ1dVM080QWpSeTBwd1BjS29KWWlNQ3ZPa0hfSG1wU3pDc2Y1T1lmTGVFQVFmZ0dJSGc?oc=5",
-          "source": "Telediario",
-          "date": "2026-11-16",
-          "published_at": "2026-11-16T14:02:27Z",
-          "category": "Seguridad",
-          "borough": "Azcapotzalco",
-          "location": "Azcapotzalco (mencionada en el titular)",
-          "local_url": "/noticias/?id=f7af9805b9c34c7ae9a8&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con Telediario, el titular publicado es: «Hombres son asesinados a balazos dentro de auto en San Pedro Xalpa, Azcapotzalco; uno más fue herido». La información publicada por Telediario aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
-            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "seguridad",
-            "kind": "representativa",
-            "url": "/assets/fotos/seguridad.jpg",
-            "category": "Seguridad",
-            "borough": "",
-            "topic": "Patrulla de Ciudad de México",
-            "keywords": [
-              "Seguridad"
-            ],
-            "author": "RainerRowe",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.es",
-            "source": "https://commons.wikimedia.org/wiki/File:Patrulla_cdmx.jpg"
           }
         }
       ]
@@ -4165,8 +3947,59 @@
     },
     {
       "name": "Coyoacán",
-      "count": 235,
+      "count": 237,
       "articles": [
+        {
+          "title": "Accidente de Camioneta y Transporte Público Hoy en Coyoacán, CDMX: Hay saldo de 4 Lesionados",
+          "description": "De acuerdo con N+, el titular publicado es: «Accidente de Camioneta y Transporte Público Hoy en Coyoacán, CDMX: Hay saldo de 4 Lesionados». De acuerdo con N+, se informa de un hecho vial relacionado con vehículos en Coyoacán. El propio titular menciona personas lesionadas, sin datos médicos adicionales verificados. Se requiere consultar la nota original para conocer el punto exacto, las circunstancias y los reportes oficiales, sin atribuir responsabilidades sin pruebas.",
+          "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxOWjF5bVdXeEtBcDFNY01jeFFYTGFwUDdzV3JRSlpZeklNVEhWN2M4VzRYcGhlU2N1Wmh5WC1ha0lXS3ZwMnZ3U1k0VGxkNmRSeDdjbUZQTlppZWF3SnNMRUJuY1prSkpNWWl4S3lJcTFBQTh2Nno2WlFXR3luX1NjTlFvMnpHU0ZWMHMyS2R5eUFRQXl5djlxOWVveXk3Qlo0QXZYOUFSNDJ4blRKRFBHYTVKY2NnMlVKOXNja3o3SFhwYmd0YVBJMVpzLXp4MHFYZHMxT1o0X1BnbGZySjRFdF8tOFdxbFpXT0ZrRkpsT0d0Mml3Tk8zRkVpQQ?oc=5",
+          "source": "N+",
+          "date": "2026-11-25",
+          "published_at": "2026-11-25T13:04:09Z",
+          "category": "Movilidad",
+          "borough": "Coyoacán",
+          "location": "Coyoacán (mencionada en el titular)",
+          "local_url": "/noticias/?id=e1e10a30b5ae35ef8edc&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con N+, el titular publicado es: «Accidente de Camioneta y Transporte Público Hoy en Coyoacán, CDMX: Hay saldo de 4 Lesionados». De acuerdo con N+, se informa de un hecho vial relacionado con vehículos en Coyoacán. El propio titular menciona personas lesionadas, sin datos médicos adicionales verificados. Se requiere consultar la nota original para conocer el punto exacto, las circunstancias y los reportes oficiales, sin atribuir responsabilidades sin pruebas.",
+            "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
+            "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          }
+        },
+        {
+          "title": "Camionetas Protagonizan Aparatoso Choque en Coyoacán, CDMX: Hay Una Mujer Lesionada",
+          "description": "De acuerdo con N+, el titular publicado es: «Camionetas Protagonizan Aparatoso Choque en Coyoacán, CDMX: Hay Una Mujer Lesionada». De acuerdo con N+, se informa de un hecho vial relacionado con vehículos en Coyoacán. El propio titular menciona personas lesionadas, sin datos médicos adicionales verificados. Se requiere consultar la nota original para conocer el punto exacto, las circunstancias y los reportes oficiales, sin atribuir responsabilidades sin pruebas.",
+          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPTV91ODZUWmJfY0NKVHlLdngwN1BwQzZaeXR1UHNJSDdhVmhfRFhwYWpiQVZTSWs2QTd1QXdVaFNsRUtZWmFKLWNicTBXV0hyUS12Mm8wb1hOdThKMGVJWW1GcTRwSnkzSE5uUXU3UktLSDFLMVhGU2dIM3BsQi0wOVRHUkNLbW1SeFZtd19GV1k4U2pBMGFDZFg2SGdHb05hcm5iLThHcTZVRFdFX3I5WlVVa0U4NGxBOGpnOC1JaFFWLUk?oc=5",
+          "source": "N+",
+          "date": "2026-11-24",
+          "published_at": "2026-11-25T05:54:19Z",
+          "category": "Movilidad",
+          "borough": "Coyoacán",
+          "location": "Coyoacán (mencionada en el titular)",
+          "local_url": "/noticias/?id=f3b39af578d03d2c6380&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con N+, el titular publicado es: «Camionetas Protagonizan Aparatoso Choque en Coyoacán, CDMX: Hay Una Mujer Lesionada». De acuerdo con N+, se informa de un hecho vial relacionado con vehículos en Coyoacán. El propio titular menciona personas lesionadas, sin datos médicos adicionales verificados. Se requiere consultar la nota original para conocer el punto exacto, las circunstancias y los reportes oficiales, sin atribuir responsabilidades sin pruebas.",
+            "context": "Esta información puede resultar útil para organizar recorridos, entregas, trabajo, clases y citas.",
+            "pending": "Antes de modificar un itinerario hay que contrastar el lugar, el horario y los avisos recientes de las autoridades de movilidad. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "commons_75043059",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/003041-004_CAMIONES_DE_LIMPIA_FEBRERO_17_1930_%2832497046872%29.jpg/960px-003041-004_CAMIONES_DE_LIMPIA_FEBRERO_17_1930_%2832497046872%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "category": "Servicios",
+            "borough": "",
+            "topic": "003041-004 CAMIONES DE LIMPIA FEBRERO 17 1930 (32497046872)",
+            "keywords": [
+              "Recolección de basura CDMX"
+            ],
+            "author": "Unknown",
+            "license": "CC0",
+            "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+            "source": "https://commons.wikimedia.org/wiki/File:003041-004_CAMIONES_DE_LIMPIA_FEBRERO_17_1930_(32497046872).jpg"
+          }
+        },
         {
           "title": "Seguiremos imparables en Coyoacán: Giovani Gutiérrez",
           "description": "De acuerdo con CDMX Magacín, el titular publicado es: «Seguiremos imparables en Coyoacán: Giovani Gutiérrez». La información publicada por CDMX Magacín aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -4822,57 +4655,6 @@
             "license": "CC BY-SA 4.0",
             "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
             "source": "https://commons.wikimedia.org/wiki/File:JardinCentenarioCoyoacan.JPG"
-          }
-        },
-        {
-          "title": "Alcalde de Coyoacán pide 7% más de presupuesto para 2027",
-          "description": "De acuerdo con El Universal, el titular publicado es: «Alcalde de Coyoacán pide 7% más de presupuesto para 2027». La información publicada por El Universal aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOdmN6T1Q2MDNNYVYzRGVHeEUyMkxYVkhqQUsxLXhoMUtxbnFsQXdUSm9oQURQRTNON2dLT1lTQkRrMVBDM0hwcVR1WXJUc2oyMGN2RmljMkxVLUZYZGdzQTVIXzFrdE9xbmlwaWpZcGVRanN3V3AwUlZsMTAxMTl2M3dBcDluYVVTVTZtNVNjYUpsVWxVVWdwZnZpTTlhVFc4Y3k3bDJqT0FQMDFpaVFySERNeFlrUXVCMVBteW0tOEpheHBycnpjT0FnWWF2MFJPYVpnTjJraHJ2Z9IB7gFBVV95cUxQaUpzTTFpM1BHWDZRUTFaMDdZRzlCaVFMYmpvOGlRVTZVcTVHRWltSlBESjVVbUkwVmhHSmlQNnZ3dkJCRmV6dDFIeXhzYzBrUGFlYnZ6TnRxOXkyQTNJZ0FHdEtNSk5QT2Q3bk9tYWd3WElFTFo5cU9jMGZvOF9iY09vdEpRbGl2Rmdpd1VTWUhJdGY1V3Rlbm1UR2dTQ09IZXo1SGo2VXpWeE9sTkluMFEtcTM2UWJrMUtIX0s2QlR6bmdXZnF3cEVvdVlCY0NNVVJuaVRjOTlYX1pIcTRjTDU2NnNNVDEybzFIMjFR?oc=5",
-          "source": "El Universal",
-          "date": "2026-11-17",
-          "published_at": "2026-11-18T02:19:14Z",
-          "category": "CDMX",
-          "borough": "Coyoacán",
-          "location": "Coyoacán (mencionada en el titular)",
-          "local_url": "/noticias/?id=c05e5caa84e22399877e&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con El Universal, el titular publicado es: «Alcalde de Coyoacán pide 7% más de presupuesto para 2027». La información publicada por El Universal aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "commons_106559901",
-            "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/1._Coyoac%C3%A1n_Ciudad_de_M%C3%A9xico.jpg/960px-1._Coyoac%C3%A1n_Ciudad_de_M%C3%A9xico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "category": "CDMX",
-            "borough": "",
-            "topic": "1. Coyoacán Ciudad de México",
-            "keywords": [
-              "CDMX"
-            ],
-            "author": "Machristen",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:1._Coyoac%C3%A1n_Ciudad_de_M%C3%A9xico.jpg"
-          }
-        },
-        {
-          "title": "Presenta Alcalde de Coyoacán su solicitud presupuestal 2027 al Congreso CDMX",
-          "description": "De acuerdo con Congreso de la Ciudad de México, el titular publicado es: «Presenta Alcalde de Coyoacán su solicitud presupuestal 2027 al Congreso CDMX». La información publicada por Congreso de la Ciudad de México aborda un asunto que este portal clasifica como Gobierno. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOTTdBODJKZzdhN2s0dWpIWk5NNi1lR2h1cWRvbjNES1hST0ZIc25YcnFVWkZZVzJ1UVJpd0R6UzBkcGlFcnZvVEQ4SkVob2tQcVF5NlZpWkR4SXdNWHAtQmxNT3ZIbl9GcDlsNVlFSFdONGQ3cHV3ZGtBZGJwdzdEYjBob0ZfNUNzLVRSNzJEaFMzb0doNHR2VFYxQ055NDFwQ0ZhdDVnZ3R6QVB5THhsMUVwdjlUeTVoTGotS2Z1VWljQQ?oc=5",
-          "source": "Congreso de la Ciudad de México",
-          "date": "2026-11-17",
-          "published_at": "2026-11-18T02:16:26Z",
-          "category": "Gobierno",
-          "borough": "Coyoacán",
-          "location": "Coyoacán (mencionada en el titular)",
-          "local_url": "/noticias/?id=dbb4ce38e364e9c083eb&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con Congreso de la Ciudad de México, el titular publicado es: «Presenta Alcalde de Coyoacán su solicitud presupuestal 2027 al Congreso CDMX». La información publicada por Congreso de la Ciudad de México aborda un asunto que este portal clasifica como Gobierno. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Las decisiones administrativas pueden influir en servicios, trámites y derechos; conviene conocer sus condiciones y a quiénes afectan.",
-            "pending": "Es indispensable consultar los acuerdos, comunicados o documentos oficiales antes de dar una medida por vigente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
           }
         }
       ]
@@ -10042,8 +9824,38 @@
     },
     {
       "name": "Miguel Hidalgo",
-      "count": 118,
+      "count": 119,
       "articles": [
+        {
+          "title": "Hospedaje clandestino: La disputa vecinal por ocho ‘motelitos de lujo’ en Miguel Hidalgo, CDMX",
+          "description": "De acuerdo con El Financiero, el titular publicado es: «Hospedaje clandestino: La disputa vecinal por ocho ‘motelitos de lujo’ en Miguel Hidalgo, CDMX». La información publicada por El Financiero aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPbTVBaFdmaHAzX3RyTmdLRlhXVU53V2hDVjBiVnZhb1d2OTN6eGpwSU9zX2hyLW9RTEgwa0ZZZ19YbEVvUk5sT1JoWkdJTk5iZlpxY1J2VEpNMjAtNGNFSHVBeXZSZWFVNDExTUU0b1U0Tzk0SWVPOVdnb0pVN2xST050emlsV3VBOEdOV0FsamVqX1NEYlYtOWEwRE5CSFotcHJSMHI2YmtnNGNabTRiXzFQVm02bGZJMzQ1LXhveUlydFkwdC1OZi1TTWdNNG1CbThFaGJ3?oc=5",
+          "source": "El Financiero",
+          "date": "2026-11-25",
+          "published_at": "2026-11-25T09:24:18Z",
+          "category": "CDMX",
+          "borough": "Miguel Hidalgo",
+          "location": "Miguel Hidalgo (mencionada en el titular)",
+          "local_url": "/noticias/?id=040addd668eda22df263&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con El Financiero, el titular publicado es: «Hospedaje clandestino: La disputa vecinal por ocho ‘motelitos de lujo’ en Miguel Hidalgo, CDMX». La información publicada por El Financiero aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_miguel-hidalgo",
+            "kind": "representativa",
+            "url": "/assets/alcaldias/miguel-hidalgo.jpg",
+            "category": "CDMX",
+            "borough": "Miguel Hidalgo",
+            "topic": "Bosque de Chapultepec, alcaldía Miguel Hidalgo",
+            "author": "ProtoplasmaKid",
+            "license": "CC0",
+            "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+            "source": "https://commons.wikimedia.org/wiki/File:Audiorama_de_Chapultepec_1.jpg"
+          }
+        },
         {
           "title": "Cuatro habrían ofrecido dinero y motos a policías; diez quedan vinculados a proceso en Miguel Hidalgo",
           "description": "De acuerdo con Rotativo, el titular publicado es: «Cuatro habrían ofrecido dinero y motos a policías; diez quedan vinculados a proceso en Miguel Hidalgo». La información publicada por Rotativo aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -10880,74 +10692,6 @@
             "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
             "source": "https://commons.wikimedia.org/wiki/File:Equipo_de_trabajo_de_los_Bomberos_CDMX_IMG_3061_(44661911131).jpg"
           }
-        },
-        {
-          "title": "Explosión de gas en Miguel Hidalgo: detalles y consecuencias",
-          "description": "De acuerdo con N+, el titular publicado es: «Explosión de gas en Miguel Hidalgo: detalles y consecuencias». La información publicada por N+ aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxON2VXSVdHMTFwbnYwVGxMeHlnU1BBTmhKSTNpdEY2blh3UnRQc2E4azV2OF9LeDZlWVFRaFd3aVBIWDJvSmxNdy13OGcwcUlfTVl0SHhwd2tvR1djRnRJTVhjbEtuMkhhSTJGSWxOdFdoemlFZmZkdU9iYlVuXzBhdDlOTnpZOFByb3lOdXRMeHU1clMxVkhvSDJZRXZCeDU4WlR0WXcwaFRHN0dHOG94bW1fcmJBTHRDNjRzSFZERV9fLTNLOHcwcVlpZGZPd3pWRDRsbWVwX3lFSGhSTUEtUTI0ZGJVSlMyZjd5d3B5dVUtcUhEdmV3?oc=5",
-          "source": "N+",
-          "date": "2026-11-16",
-          "published_at": "2026-11-16T16:32:45Z",
-          "category": "Seguridad",
-          "borough": "Miguel Hidalgo",
-          "location": "Miguel Hidalgo (mencionada en el titular)",
-          "local_url": "/noticias/?id=dcdd30f2881b24eba11e&mes=2026-11",
-          "alternate_versions": [
-            {
-              "title": "Explosión de gas en Miguel Hidalgo: detalles y consecuencias",
-              "description": "De acuerdo con N+, el titular publicado es: «Explosión de gas en Miguel Hidalgo: detalles y consecuencias». La información publicada por N+ aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-              "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxON2VXSVdHMTFwbnYwVGxMeHlnU1BBTmhKSTNpdEY2blh3UnRQc2E4azV2OF9LeDZlWVFRaFd3aVBIWDJvSmxNdy13OGcwcUlfTVl0SHhwd2tvR1djRnRJTVhjbEtuMkhhSTJGSWxOdFdoemlFZmZkdU9iYlVuXzBhdDlOTnpZOFByb3lOdXRMeHU1clMxVkhvSDJZRXZCeDU4WlR0WXcwaFRHN0dHOG94bW1fcmJBTHRDNjRzSFZERV9fLTNLOHcwcVlpZGZPd3pWRDRsbWVwX3lFSGhSTUEtUTI0ZGJVSlMyZjd5d3B5dVUtcUhEdmV3?oc=5",
-              "source": "N+",
-              "date": "2026-11-16",
-              "published_at": "2026-11-16T16:32:45Z",
-              "category": "Seguridad",
-              "borough": "Miguel Hidalgo",
-              "location": "Miguel Hidalgo (mencionada en el titular)",
-              "local_url": "/noticias/?id=dcdd30f2881b24eba11e&mes=2026-11",
-              "brief": {
-                "lead": "De acuerdo con N+, el titular publicado es: «Explosión de gas en Miguel Hidalgo: detalles y consecuencias». La información publicada por N+ aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-                "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
-                "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-              },
-              "photo": {
-                "id": "commons_75139295",
-                "kind": "representativa",
-                "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Equipo_de_trabajo_de_los_Bomberos_CDMX_IMG_2922_%2844612347912%29.jpg/960px-Equipo_de_trabajo_de_los_Bomberos_CDMX_IMG_2922_%2844612347912%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-                "category": "Seguridad",
-                "borough": "",
-                "topic": "Equipo de trabajo de los Bomberos CDMX IMG 2922 (44612347912)",
-                "keywords": [
-                  "Bomberos Ciudad de México"
-                ],
-                "author": "Gobierno CDMX",
-                "license": "CC0",
-                "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
-                "source": "https://commons.wikimedia.org/wiki/File:Equipo_de_trabajo_de_los_Bomberos_CDMX_IMG_2922_(44612347912).jpg"
-              }
-            }
-          ],
-          "brief": {
-            "lead": "De acuerdo con N+, el titular publicado es: «Explosión de gas en Miguel Hidalgo: detalles y consecuencias». La información publicada por N+ aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
-            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "commons_75139349",
-            "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Equipo_de_trabajo_de_los_Bomberos_CDMX_IMG_3061_%2844661911131%29.jpg/960px-Equipo_de_trabajo_de_los_Bomberos_CDMX_IMG_3061_%2844661911131%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "category": "Seguridad",
-            "borough": "",
-            "topic": "Equipo de trabajo de los Bomberos CDMX IMG 3061 (44661911131)",
-            "keywords": [
-              "Bomberos Ciudad de México"
-            ],
-            "author": "Gobierno CDMX",
-            "license": "CC0",
-            "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
-            "source": "https://commons.wikimedia.org/wiki/File:Equipo_de_trabajo_de_los_Bomberos_CDMX_IMG_3061_(44661911131).jpg"
-          }
         }
       ]
     },
@@ -11674,8 +11418,46 @@
     },
     {
       "name": "Tláhuac",
-      "count": 197,
+      "count": 198,
       "articles": [
+        {
+          "title": "Inicia Tláhuac jornada de 16 días con servicios gratuitos contra la violencia de género",
+          "description": "De acuerdo con El Sol de México, el titular publicado es: «Inicia Tláhuac jornada de 16 días con servicios gratuitos contra la violencia de género». La información publicada por El Sol de México aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOeDhXUXZxS2pkQVNBQkNSTUFpcy1Ickx6NFF5bkNrbHJGS2l0dXBqdF9yRGRDS0tjRmJYMEg4NGt2N0xmcUIycXJDR2NBVXRVZll4bXdLcDBxY0NGeV8xU1FZOVFFVUVmd2NLS19IV2NGZXdmQzM0Q1J4N2IwM09MU0RWZlcyYVJIRllEWWhBYjMtb3Q3OC1FNFU3QTZQM0t3QVA4NzdSRkZvMjVqa3ZUbnlmQm5GVGVEbERuZ3hMZ25FMHZsQWJsQmtmbDlhVEot?oc=5",
+          "source": "El Sol de México",
+          "date": "2026-11-24",
+          "published_at": "2026-11-25T05:19:35Z",
+          "category": "CDMX",
+          "borough": "Tláhuac",
+          "location": "Tláhuac (mencionada en el titular)",
+          "local_url": "/noticias/?id=4bd7bf9a8de3f622d69c&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con El Sol de México, el titular publicado es: «Inicia Tláhuac jornada de 16 días con servicios gratuitos contra la violencia de género». La información publicada por El Sol de México aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "contexto_tlahuac_plaza_denuncias",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Tl%C3%A1huac-Plaza_central.JPG/960px-Tl%C3%A1huac-Plaza_central.JPG?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+            "category": "Alcaldías",
+            "borough": "",
+            "topic": "Explanada y parroquia de San Pedro Tláhuac (archivo 2011; imagen de contexto, no documenta denuncias de 2024)",
+            "keywords": [
+              "Tláhuac",
+              "San Pedro Tláhuac",
+              "Explanada delegacional",
+              "Parroquia de San Pedro Apóstol",
+              "Ciudad de México",
+              "denuncias por colonia"
+            ],
+            "author": "Yavidaxiu",
+            "license": "CC BY 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+            "source": "https://commons.wikimedia.org/wiki/File:Tl%C3%A1huac-Plaza_central.JPG"
+          }
+        },
         {
           "title": "‘Gota a Gota’ Bajo la Lupa: La Historia Detrás del Bloqueo en Tláhuac y Periférico, CDMX",
           "description": "De acuerdo con N+, el titular publicado es: «‘Gota a Gota’ Bajo la Lupa: La Historia Detrás del Bloqueo en Tláhuac y Periférico, CDMX». La información publicada por N+ aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -11758,27 +11540,6 @@
           "borough": "Tláhuac",
           "location": "Tláhuac (mencionada en el titular)",
           "local_url": "/noticias/?id=a60c657354ec0d2a6abb&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con Dónde Ir, el titular publicado es: «Tláhuac dará hasta $20 mil en su concurso de baile navideño 2026». La información publicada por Dónde Ir aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "commons_89353462",
-            "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Ciudad_de_M%C3%A9xico_-_Hilton_Reforma_0571.jpg/960px-Ciudad_de_M%C3%A9xico_-_Hilton_Reforma_0571.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "category": "CDMX",
-            "borough": "",
-            "topic": "Ciudad de México - Hilton Reforma 0571",
-            "keywords": [
-              "Torre Latinoamericana Ciudad de México"
-            ],
-            "author": "Phyrexian",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Ciudad_de_M%C3%A9xico_-_Hilton_Reforma_0571.jpg"
-          },
           "alternate_versions": [
             {
               "title": "Tláhuac dará hasta $20 mil en su concurso de baile navideño 2026",
@@ -11818,7 +11579,28 @@
                 "source": "https://commons.wikimedia.org/wiki/File:Tl%C3%A1huac-Plaza_central.JPG"
               }
             }
-          ]
+          ],
+          "brief": {
+            "lead": "De acuerdo con Dónde Ir, el titular publicado es: «Tláhuac dará hasta $20 mil en su concurso de baile navideño 2026». La información publicada por Dónde Ir aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "commons_89353462",
+            "kind": "representativa",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Ciudad_de_M%C3%A9xico_-_Hilton_Reforma_0571.jpg/960px-Ciudad_de_M%C3%A9xico_-_Hilton_Reforma_0571.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "category": "CDMX",
+            "borough": "",
+            "topic": "Ciudad de México - Hilton Reforma 0571",
+            "keywords": [
+              "Torre Latinoamericana Ciudad de México"
+            ],
+            "author": "Phyrexian",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Ciudad_de_M%C3%A9xico_-_Hilton_Reforma_0571.jpg"
+          }
         },
         {
           "title": "Concurso de piñatas: Así puedes ganar hasta 15 mil pesos en la alcaldía Tláhuac",
@@ -12613,44 +12395,6 @@
             "license": "CC0 1.0",
             "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
             "source": "https://commons.wikimedia.org/wiki/File:Sal%C3%B3n_de_clase.JPG"
-          }
-        },
-        {
-          "title": "Fortalece PVEM presencia en Tláhuac con “Guardianes Verdes”",
-          "description": "De acuerdo con CDMX Magacín, el titular publicado es: «Fortalece PVEM presencia en Tláhuac con “Guardianes Verdes”». La información publicada por CDMX Magacín aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxONGh3MmJ5UVIzMnFibjR2VUl4SzZ5N3pud0lzLVBjVXBzcTlHZ1Y2QXdQdEEtWTBHWEQwbGhNWS1udFlUY1ljbndsVDdRdFNxemx5QlBFTzUxWmFqWDBtQkVLR2hPbUtlcjkwM3lxYmE0TTBiTlVxSktxVXJ4NmdNVG1DZ1BtTmNtQUVtTg?oc=5",
-          "source": "CDMX Magacín",
-          "date": "2026-11-19",
-          "published_at": "2026-11-19T22:30:52Z",
-          "category": "CDMX",
-          "borough": "Tláhuac",
-          "location": "Tláhuac (mencionada en el titular)",
-          "local_url": "/noticias/?id=645026fdfb2d449ebc22&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con CDMX Magacín, el titular publicado es: «Fortalece PVEM presencia en Tláhuac con “Guardianes Verdes”». La información publicada por CDMX Magacín aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "contexto_tlahuac_plaza_denuncias",
-            "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Tl%C3%A1huac-Plaza_central.JPG/960px-Tl%C3%A1huac-Plaza_central.JPG?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
-            "category": "Alcaldías",
-            "borough": "",
-            "topic": "Explanada y parroquia de San Pedro Tláhuac (archivo 2011; imagen de contexto, no documenta denuncias de 2024)",
-            "keywords": [
-              "Tláhuac",
-              "San Pedro Tláhuac",
-              "Explanada delegacional",
-              "Parroquia de San Pedro Apóstol",
-              "Ciudad de México",
-              "denuncias por colonia"
-            ],
-            "author": "Yavidaxiu",
-            "license": "CC BY 3.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
-            "source": "https://commons.wikimedia.org/wiki/File:Tl%C3%A1huac-Plaza_central.JPG"
           }
         }
       ]
@@ -14699,8 +14443,45 @@
     },
     {
       "name": "Xochimilco",
-      "count": 224,
+      "count": 225,
       "articles": [
+        {
+          "title": "Hallan a recién nacido de tres horas de vida en predio de Xochimilco en CDMX",
+          "description": "De acuerdo con Quinta Fuerza, el titular publicado es: «Hallan a recién nacido de tres horas de vida en predio de Xochimilco en CDMX». La información publicada por Quinta Fuerza aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQaHhLQm1MNllQWlB5MTlCdHMzN3YzQzhhbXBYcG5jaEs3RTZwRTc1TzNNWTkyNnEzQ01MU1BKdl9fcFFNZFpxT2gzRF9ISzVjRTB1dkJlYk9tNElJNFV6ei16eDBBTGVCeVFVdDVMUW84RWIzUllYc0hTa3Frc1dOeklON0lRcEJzTzBjNV9wMlg2c0k?oc=5",
+          "source": "Quinta Fuerza",
+          "date": "2026-11-24",
+          "published_at": "2026-11-25T03:49:38Z",
+          "category": "Seguridad",
+          "borough": "Xochimilco",
+          "location": "Xochimilco (mencionada en el titular)",
+          "local_url": "/noticias/?id=f007b4763ebad13b105b&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con Quinta Fuerza, el titular publicado es: «Hallan a recién nacido de tres horas de vida en predio de Xochimilco en CDMX». La información publicada por Quinta Fuerza aborda un asunto que este portal clasifica como Seguridad. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Una noticia sobre seguridad afecta a personas y comunidades; conviene informar sin especular ni convertir a nadie en culpable antes de una resolución.",
+            "pending": "Se necesita contrastar el informe de las autoridades, las circunstancias y el estado de cualquier investigación. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "contexto_policia_xochimilco",
+            "kind": "representativa",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Mexican_Police_station.JPG/960px-Mexican_Police_station.JPG",
+            "category": "Seguridad",
+            "borough": "",
+            "topic": "Estación de policía frente al Tren Ligero de Xochimilco (archivo 2015); no documenta denuncias de 2026.",
+            "keywords": [
+              "policía",
+              "seguridad",
+              "Xochimilco",
+              "estación de policía",
+              "Tren Ligero"
+            ],
+            "author": "Celinebj",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "source": "https://commons.wikimedia.org/wiki/File:Mexican_Police_station.JPG"
+          }
+        },
         {
           "title": "Hallan a recién nacido con horas de vida en predio de Xochimilco, en CDMX",
           "description": "De acuerdo con Debate, el titular publicado es: «Hallan a recién nacido con horas de vida en predio de Xochimilco, en CDMX». La información publicada por Debate aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -15668,74 +15449,6 @@
             "license": "CC BY-SA 4.0",
             "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
             "source": "https://commons.wikimedia.org/wiki/File:Mexican_Police_station.JPG"
-          }
-        },
-        {
-          "title": "En pugna por Xochimilco",
-          "description": "De acuerdo con Diario Basta!, el titular publicado es: «En pugna por Xochimilco». La información publicada por Diario Basta! aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9qanQyblFpakNtN1ZFd1Nja0lHZ0duQkg5R3FQOGhTeG9uQ01rSmtyczdkVFE3UFNNT2ZjUFBQbU5Kc09FWkFUNkR5c1JuOElZZlItMHhDTGQzNEl3OHo2TVF6RVM5QnhUSjhF?oc=5",
-          "source": "Diario Basta!",
-          "date": "2026-11-18",
-          "published_at": "2026-11-19T02:34:28Z",
-          "category": "CDMX",
-          "borough": "Xochimilco",
-          "location": "Xochimilco (mencionada en el titular)",
-          "local_url": "/noticias/?id=d9c0acb8fa0cd6e64533&mes=2026-11",
-          "alternate_versions": [
-            {
-              "title": "En pugna por Xochimilco",
-              "description": "De acuerdo con Diario Basta!, el titular publicado es: «En pugna por Xochimilco». La información publicada por Diario Basta! aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-              "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9qanQyblFpakNtN1ZFd1Nja0lHZ0duQkg5R3FQOGhTeG9uQ01rSmtyczdkVFE3UFNNT2ZjUFBQbU5Kc09FWkFUNkR5c1JuOElZZlItMHhDTGQzNEl3OHo2TVF6RVM5QnhUSjhF?oc=5",
-              "source": "Diario Basta!",
-              "date": "2026-11-18",
-              "published_at": "2026-11-18T16:59:45Z",
-              "category": "CDMX",
-              "borough": "Xochimilco",
-              "location": "Xochimilco (mencionada en el titular)",
-              "local_url": "/noticias/?id=d9c0acb8fa0cd6e64533&mes=2026-11",
-              "brief": {
-                "lead": "De acuerdo con Diario Basta!, el titular publicado es: «En pugna por Xochimilco». La información publicada por Diario Basta! aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-                "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-                "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-              },
-              "photo": {
-                "id": "commons_99791802",
-                "kind": "representativa",
-                "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Paseo_en_trajinera_-_Xochimilco%2C_Ciudad_de_M%C3%A9xico.jpg/960px-Paseo_en_trajinera_-_Xochimilco%2C_Ciudad_de_M%C3%A9xico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-                "category": "CDMX",
-                "borough": "",
-                "topic": "Paseo en trajinera - Xochimilco, Ciudad de México",
-                "keywords": [
-                  "CDMX"
-                ],
-                "author": "Juan Carlos Fonseca Mata",
-                "license": "CC BY-SA 4.0",
-                "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-                "source": "https://commons.wikimedia.org/wiki/File:Paseo_en_trajinera_-_Xochimilco,_Ciudad_de_M%C3%A9xico.jpg"
-              }
-            }
-          ],
-          "brief": {
-            "lead": "De acuerdo con Diario Basta!, el titular publicado es: «En pugna por Xochimilco». La información publicada por Diario Basta! aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "commons_99791802",
-            "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Paseo_en_trajinera_-_Xochimilco%2C_Ciudad_de_M%C3%A9xico.jpg/960px-Paseo_en_trajinera_-_Xochimilco%2C_Ciudad_de_M%C3%A9xico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "category": "CDMX",
-            "borough": "",
-            "topic": "Paseo en trajinera - Xochimilco, Ciudad de México",
-            "keywords": [
-              "CDMX"
-            ],
-            "author": "Juan Carlos Fonseca Mata",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Paseo_en_trajinera_-_Xochimilco,_Ciudad_de_M%C3%A9xico.jpg"
           }
         }
       ]
