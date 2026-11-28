@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-28 04:49 UTC",
+  "updated": "2026-11-28 13:43 UTC",
   "boroughs": [
     {
       "name": "La Magdalena Contreras",
@@ -10275,7 +10275,7 @@
           "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQemFMYWNDV1VkQjIzSjVfQ3o1WHJnQmxuajhQRm9PYkZrdzh1NHdYNm9LOWJ6c3pKSW9HaTVBUXRWZ2lUcGxtMUlVUXY3a2FUSTRQMkVsUlRtLUJaSXBlbW1tX1JFcFZ6UTZVT3BNUXg0Um9UZE85OUtUZVVQQzFNOFc3NXJvanBPekVFVExTNnB1VVJfOE9RcU5JZDZ5VjJ2QTZZNU9QNVRtS1ZUQmZvb3pXVVphakMtLUt2cGMxUlE0dW52a2Jpd01jRzVyaklOVUE?oc=5",
           "source": "El Sol de México",
           "date": "2026-11-27",
-          "published_at": "2026-11-27T11:15:34Z",
+          "published_at": "2026-11-28T02:10:09Z",
           "category": "CDMX",
           "borough": "Milpa Alta",
           "location": "Milpa Alta (mencionada en el titular)",
@@ -10297,7 +10297,39 @@
             "license": "CC BY-SA 2.0",
             "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
             "source": "https://commons.wikimedia.org/wiki/File:Villa_Milpa_Alta%2C_Ciudad_de_M%C3%A9xico_%2832886264042%29.jpg"
-          }
+          },
+          "alternate_versions": [
+            {
+              "title": "Productores de nopal de Milpa Alta son presionados por producción en Morelos: estudio",
+              "description": "De acuerdo con El Sol de México, el titular publicado es: «Productores de nopal de Milpa Alta son presionados por producción en Morelos: estudio». La información publicada por El Sol de México aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+              "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQemFMYWNDV1VkQjIzSjVfQ3o1WHJnQmxuajhQRm9PYkZrdzh1NHdYNm9LOWJ6c3pKSW9HaTVBUXRWZ2lUcGxtMUlVUXY3a2FUSTRQMkVsUlRtLUJaSXBlbW1tX1JFcFZ6UTZVT3BNUXg0Um9UZE85OUtUZVVQQzFNOFc3NXJvanBPekVFVExTNnB1VVJfOE9RcU5JZDZ5VjJ2QTZZNU9QNVRtS1ZUQmZvb3pXVVphakMtLUt2cGMxUlE0dW52a2Jpd01jRzVyaklOVUE?oc=5",
+              "source": "El Sol de México",
+              "date": "2026-11-27",
+              "published_at": "2026-11-27T11:15:34Z",
+              "category": "CDMX",
+              "borough": "Milpa Alta",
+              "location": "Milpa Alta (mencionada en el titular)",
+              "local_url": "/noticias/?id=639db5c6006484afea03&mes=2026-11",
+              "brief": {
+                "lead": "De acuerdo con El Sol de México, el titular publicado es: «Productores de nopal de Milpa Alta son presionados por producción en Morelos: estudio». La información publicada por El Sol de México aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+                "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+                "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+              },
+              "photo": {
+                "id": "alcaldia_milpa-alta",
+                "kind": "representativa",
+                "url": "/assets/alcaldias/milpa-alta.jpg",
+                "category": "CDMX",
+                "borough": "Milpa Alta",
+                "topic": "Villa Milpa Alta y su entorno rural",
+                "author": "Comisión Mexicana de Filmaciones from México D. F., México",
+                "license": "CC BY-SA 2.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+                "source": "https://commons.wikimedia.org/wiki/File:Villa_Milpa_Alta%2C_Ciudad_de_M%C3%A9xico_%2832886264042%29.jpg"
+              }
+            }
+          ]
         },
         {
           "title": "Habitantes de Milpa Alta exigen nueva vía de acceso para evitar colapsos",
@@ -11925,7 +11957,7 @@
     },
     {
       "name": "Tlalpan",
-      "count": 283,
+      "count": 284,
       "articles": [
         {
           "title": "Plantea alcaldesa Gaby Osorio construir un C2 en Tlalpan; pide aumento de 10% al presupuesto 2027",
@@ -11933,7 +11965,7 @@
           "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNekhHblhUM0prcjk3TEtTTFlpd2FfbmhYZUJIQkFRcTAzSjYyOTFNZThjRmRmdjBqSUVSQ3BmZGtlQWRUM0hjemtLRzhTYk5tSDVjakJsZEZ0Rmp5Qi1mQU5ZMVRoeG1WaTI5azhFamJXdlBXVXpNM3d2cE9GQ0FjR1pISW1yR2cxakRiNnBLaUZZM3pWSTY1NkF6aEpmZXEzR2NReVhPdkdnRVBDbVM5V0s3WnAtRXJwNHJmLTVYclZ2MmhscUpVRGxxMzNXTTVUM01vejJfeHo5QWs?oc=5",
           "source": "El Sol de México",
           "date": "2026-11-27",
-          "published_at": "2026-11-28T01:06:46Z",
+          "published_at": "2026-11-28T03:36:37Z",
           "category": "CDMX",
           "borough": "Tlalpan",
           "location": "Tlalpan (mencionada en el titular)",
@@ -11955,6 +11987,71 @@
             "license": "CC BY-SA 3.0",
             "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
             "source": "https://commons.wikimedia.org/wiki/File:Kiosko_plaza_de_la_constitucion%2C_tlapan.JPG"
+          },
+          "alternate_versions": [
+            {
+              "title": "Plantea alcaldesa Gaby Osorio construir un C2 en Tlalpan; pide aumento de 10% al presupuesto 2027",
+              "description": "De acuerdo con El Sol de México, el titular publicado es: «Plantea alcaldesa Gaby Osorio construir un C2 en Tlalpan; pide aumento de 10% al presupuesto 2027». La información publicada por El Sol de México aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+              "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNekhHblhUM0prcjk3TEtTTFlpd2FfbmhYZUJIQkFRcTAzSjYyOTFNZThjRmRmdjBqSUVSQ3BmZGtlQWRUM0hjemtLRzhTYk5tSDVjakJsZEZ0Rmp5Qi1mQU5ZMVRoeG1WaTI5azhFamJXdlBXVXpNM3d2cE9GQ0FjR1pISW1yR2cxakRiNnBLaUZZM3pWSTY1NkF6aEpmZXEzR2NReVhPdkdnRVBDbVM5V0s3WnAtRXJwNHJmLTVYclZ2MmhscUpVRGxxMzNXTTVUM01vejJfeHo5QWs?oc=5",
+              "source": "El Sol de México",
+              "date": "2026-11-27",
+              "published_at": "2026-11-28T01:06:46Z",
+              "category": "CDMX",
+              "borough": "Tlalpan",
+              "location": "Tlalpan (mencionada en el titular)",
+              "local_url": "/noticias/?id=378b7d96edf85242ce03&mes=2026-11",
+              "brief": {
+                "lead": "De acuerdo con El Sol de México, el titular publicado es: «Plantea alcaldesa Gaby Osorio construir un C2 en Tlalpan; pide aumento de 10% al presupuesto 2027». La información publicada por El Sol de México aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+                "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+                "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+              },
+              "photo": {
+                "id": "alcaldia_tlalpan",
+                "kind": "representativa",
+                "url": "/assets/alcaldias/tlalpan.jpg",
+                "category": "CDMX",
+                "borough": "Tlalpan",
+                "topic": "Quiosco de la plaza principal de Tlalpan",
+                "author": "farid estrada",
+                "license": "CC BY-SA 3.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+                "source": "https://commons.wikimedia.org/wiki/File:Kiosko_plaza_de_la_constitucion%2C_tlapan.JPG"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Gaby Osorio solicita aumento presupuestal del 10% para Tlalpan en 2027",
+          "description": "De acuerdo con Los Reporteros MX, el titular publicado es: «Gaby Osorio solicita aumento presupuestal del 10% para Tlalpan en 2027». La información publicada por Los Reporteros MX aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNOGE1RlRQU1o0QlBVYzRmVkxuRE5DcU5IOHhGUXFxN0pFQ1BUQWd5WlJrS01VZG1QUy1McWVnX083Zi1vblZSNGdOeUVBNkI0d2dWcGw0ZnNsWjYwOTQ3RjJteGJwYVIzY1pYNm9VWkFWWE95TG0zVHlCeUd0azFQUkFJQTJ4c21XaWNsRW1rVkJUM2FfOGx6Q3RQMFFUVlE?oc=5",
+          "source": "Los Reporteros MX",
+          "date": "2026-11-27",
+          "published_at": "2026-11-28T00:58:00Z",
+          "category": "CDMX",
+          "borough": "Tlalpan",
+          "location": "Tlalpan (mencionada en el titular)",
+          "local_url": "/noticias/?id=0d53e3493a6fb4adbe19&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con Los Reporteros MX, el titular publicado es: «Gaby Osorio solicita aumento presupuestal del 10% para Tlalpan en 2027». La información publicada por Los Reporteros MX aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "commons_193467141",
+            "kind": "representativa",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/6/66/Calzada_Flotante_de_Tlalpan_en_construcci%C3%B3n_en_Ciudad_de_M%C3%A9xico_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+            "category": "Alcaldías",
+            "borough": "",
+            "topic": "Calzada Flotante de Tlalpan en construcción en Ciudad de México 01",
+            "keywords": [
+              "Tlalpan Ciudad de México"
+            ],
+            "author": "B.jars",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Calzada_Flotante_de_Tlalpan_en_construcci%C3%B3n_en_Ciudad_de_M%C3%A9xico_01.jpg"
           }
         },
         {
@@ -12761,36 +12858,6 @@
           ],
           "brief": {
             "lead": "De acuerdo con CDMX Magacín, el titular publicado es: «Diputada Paulina Pérez pide fortalecer suelo de conservación en Tlalpan». La información publicada por CDMX Magacín aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "alcaldia_tlalpan",
-            "kind": "representativa",
-            "url": "/assets/alcaldias/tlalpan.jpg",
-            "category": "CDMX",
-            "borough": "Tlalpan",
-            "topic": "Quiosco de la plaza principal de Tlalpan",
-            "author": "farid estrada",
-            "license": "CC BY-SA 3.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Kiosko_plaza_de_la_constitucion%2C_tlapan.JPG"
-          }
-        },
-        {
-          "title": "Intoxicación por gas en Tlalpan: Un muerto y un herido por falla en calentador en Fuentes Brotantes",
-          "description": "De acuerdo con TV Azteca, el titular publicado es: «Intoxicación por gas en Tlalpan: Un muerto y un herido por falla en calentador en Fuentes Brotantes». La información publicada por TV Azteca aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPUVVLajlmWlQ3MFdENmRabmg5UjdCbWp3ZDEyY0ZQNUZNVGozVFNzV3paeldoU0dWSjExVmp6QjNxM0JUX3cwX1BHWXNoM2J5eDZlR09BN0xLZjd5TVltallITVFFaVF3dnIxWkdkeEJfeS1URGMzOEtqbzgzYlpJeTZtV0VReEg0R1ZQR3JxbExwZnp2VFdOUnQ4U3h0M0JIQmpsMVVkOWZEdTFtTGhjLS1oTEtTZEZNVE9pSjYzckx3Y1FTdjFnSVcwWmxjcW42eE50eFlrcXVDdw?oc=5",
-          "source": "TV Azteca",
-          "date": "2026-11-22",
-          "published_at": "2026-11-22T14:26:57Z",
-          "category": "CDMX",
-          "borough": "Tlalpan",
-          "location": "Tlalpan (mencionada en el titular)",
-          "local_url": "/noticias/?id=1d6a5fea601c001893cc&mes=2026-11",
-          "brief": {
-            "lead": "De acuerdo con TV Azteca, el titular publicado es: «Intoxicación por gas en Tlalpan: Un muerto y un herido por falla en calentador en Fuentes Brotantes». La información publicada por TV Azteca aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
             "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
             "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
             "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
@@ -13681,8 +13748,38 @@
     },
     {
       "name": "Xochimilco",
-      "count": 237,
+      "count": 238,
       "articles": [
+        {
+          "title": "Ya hay nochebuenas en CDMX: Xochimilco alcanza producción histórica de más de 2 millones de la flor",
+          "description": "De acuerdo con El Sol de México, el titular publicado es: «Ya hay nochebuenas en CDMX: Xochimilco alcanza producción histórica de más de 2 millones de la flor». La información publicada por El Sol de México aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOVlFENENzTWQyaU1yNHBaX0pSZ201YVVjWGlUdHREUmhySEFwTmdHV3pWSEZYd0tPRkJDWmJSTGRYWEVnV2FGcTNic19PS2l4UXBvWUJFQ2ZlVVFOdHF3UnFQVWZ6WG0yOHBJYXZxT3Y2N1I1dlkwX2FqWW5nV2Nja28tdHk1Wlc1SmlmUGJPUGdoOXlHdC0yNFpHbmlZNTM2VzRyNnJRRGo0ci16RWFnaVNUT1hhU25kSUFvNnZNZC0?oc=5",
+          "source": "El Sol de México",
+          "date": "2026-11-28",
+          "published_at": "2026-11-28T08:55:30Z",
+          "category": "CDMX",
+          "borough": "Xochimilco",
+          "location": "Xochimilco (mencionada en el titular)",
+          "local_url": "/noticias/?id=00a7c678dbfbec556cf0&mes=2026-11",
+          "brief": {
+            "lead": "De acuerdo con El Sol de México, el titular publicado es: «Ya hay nochebuenas en CDMX: Xochimilco alcanza producción histórica de más de 2 millones de la flor». La información publicada por El Sol de México aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
+            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
+            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
+            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
+          },
+          "photo": {
+            "id": "alcaldia_xochimilco",
+            "kind": "representativa",
+            "url": "/assets/alcaldias/xochimilco.jpg",
+            "category": "CDMX",
+            "borough": "Xochimilco",
+            "topic": "Trajineras y canales de Xochimilco",
+            "author": "Xbauerx",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Trajineras_de_Xochimilco.jpg"
+          }
+        },
         {
           "title": "Pelean los primos de la 4T durante comparecencia de alcaldesa de Xochimilco",
           "description": "De acuerdo con Capital CDMX, el titular publicado es: «Pelean los primos de la 4T durante comparecencia de alcaldesa de Xochimilco». La información publicada por Capital CDMX aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
@@ -14540,107 +14637,6 @@
             "license": "CC0",
             "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
             "source": "https://commons.wikimedia.org/wiki/File:Operativo_de_Lluvias_CDMX_-i---i-_(36710783420).jpg"
-          }
-        },
-        {
-          "title": "Abandonan a Bebé con Horas de Nacido en San Gregorio, Xochimilco",
-          "description": "De acuerdo con N+, el titular publicado es: «Abandonan a Bebé con Horas de Nacido en San Gregorio, Xochimilco». La información publicada por N+ aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-          "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNZk9vdEVnX3gydXFrbmlmQXlvdVNXQ0JmaWpXclV5OFo3Ymh1U2ZLWkFydkF4WlpVamF2VHZvU1Y0SG9Od2lnMnVVUFN4UzlzSy1MU05GZ0lQUDY2WVczWlNPTWVxTThWRk4xTk5wRWFJUnI2NWpOM1RGZl82bEFtV2JDLVRDeE5qWDJlNks1bUp1WG5GTWF3ckZGMWluXzliRGhoMjU0YzhSajRJMEhMU3EzMURwRzZ1TlFsOXV0TF9QOXRHUnBaQVA1ZWhJbG8zVFk4SmxOQmU?oc=5",
-          "source": "N+",
-          "date": "2026-11-23",
-          "published_at": "2026-11-24T03:20:32Z",
-          "category": "CDMX",
-          "borough": "Xochimilco",
-          "location": "Xochimilco (mencionada en el titular)",
-          "local_url": "/noticias/?id=c0fd940cb6415129d5e8&mes=2026-11",
-          "alternate_versions": [
-            {
-              "title": "Abandonan a Bebé con Horas de Nacido en San Gregorio, Xochimilco",
-              "description": "De acuerdo con N+, el titular publicado es: «Abandonan a Bebé con Horas de Nacido en San Gregorio, Xochimilco». La información publicada por N+ aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-              "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNZk9vdEVnX3gydXFrbmlmQXlvdVNXQ0JmaWpXclV5OFo3Ymh1U2ZLWkFydkF4WlpVamF2VHZvU1Y0SG9Od2lnMnVVUFN4UzlzSy1MU05GZ0lQUDY2WVczWlNPTWVxTThWRk4xTk5wRWFJUnI2NWpOM1RGZl82bEFtV2JDLVRDeE5qWDJlNks1bUp1WG5GTWF3ckZGMWluXzliRGhoMjU0YzhSajRJMEhMU3EzMURwRzZ1TlFsOXV0TF9QOXRHUnBaQVA1ZWhJbG8zVFk4SmxOQmU?oc=5",
-              "source": "N+",
-              "date": "2026-11-23",
-              "published_at": "2026-11-24T03:19:00Z",
-              "category": "CDMX",
-              "borough": "Xochimilco",
-              "location": "Xochimilco (mencionada en el titular)",
-              "local_url": "/noticias/?id=c0fd940cb6415129d5e8&mes=2026-11",
-              "brief": {
-                "lead": "De acuerdo con N+, el titular publicado es: «Abandonan a Bebé con Horas de Nacido en San Gregorio, Xochimilco». La información publicada por N+ aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-                "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-                "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-              },
-              "photo": {
-                "id": "commons_80618455",
-                "kind": "representativa",
-                "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Coloridas_trajineras_en_Xochimilco%2C_Ciudad_de_M%C3%A9xico.jpg/960px-Coloridas_trajineras_en_Xochimilco%2C_Ciudad_de_M%C3%A9xico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-                "category": "CDMX",
-                "borough": "",
-                "topic": "Coloridas trajineras en Xochimilco, Ciudad de México",
-                "keywords": [
-                  "CDMX"
-                ],
-                "author": "Juan Carlos Fonseca Mata",
-                "license": "CC BY-SA 4.0",
-                "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-                "source": "https://commons.wikimedia.org/wiki/File:Coloridas_trajineras_en_Xochimilco,_Ciudad_de_M%C3%A9xico.jpg"
-              }
-            },
-            {
-              "title": "Abandonan a Bebé con Horas de Nacido en San Gregorio, Xochimilco",
-              "description": "De acuerdo con N+, el titular publicado es: «Abandonan a Bebé con Horas de Nacido en San Gregorio, Xochimilco». La información publicada por N+ aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-              "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNZk9vdEVnX3gydXFrbmlmQXlvdVNXQ0JmaWpXclV5OFo3Ymh1U2ZLWkFydkF4WlpVamF2VHZvU1Y0SG9Od2lnMnVVUFN4UzlzSy1MU05GZ0lQUDY2WVczWlNPTWVxTThWRk4xTk5wRWFJUnI2NWpOM1RGZl82bEFtV2JDLVRDeE5qWDJlNks1bUp1WG5GTWF3ckZGMWluXzliRGhoMjU0YzhSajRJMEhMU3EzMURwRzZ1TlFsOXV0TF9QOXRHUnBaQVA1ZWhJbG8zVFk4SmxOQmU?oc=5",
-              "source": "N+",
-              "date": "2026-11-23",
-              "published_at": "2026-11-24T03:20:00Z",
-              "category": "CDMX",
-              "borough": "Xochimilco",
-              "location": "Xochimilco (mencionada en el titular)",
-              "local_url": "/noticias/?id=c0fd940cb6415129d5e8&mes=2026-11",
-              "brief": {
-                "lead": "De acuerdo con N+, el titular publicado es: «Abandonan a Bebé con Horas de Nacido en San Gregorio, Xochimilco». La información publicada por N+ aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-                "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-                "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-                "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-              },
-              "photo": {
-                "id": "commons_80618455",
-                "kind": "representativa",
-                "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Coloridas_trajineras_en_Xochimilco%2C_Ciudad_de_M%C3%A9xico.jpg/960px-Coloridas_trajineras_en_Xochimilco%2C_Ciudad_de_M%C3%A9xico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-                "category": "CDMX",
-                "borough": "",
-                "topic": "Coloridas trajineras en Xochimilco, Ciudad de México",
-                "keywords": [
-                  "CDMX"
-                ],
-                "author": "Juan Carlos Fonseca Mata",
-                "license": "CC BY-SA 4.0",
-                "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-                "source": "https://commons.wikimedia.org/wiki/File:Coloridas_trajineras_en_Xochimilco,_Ciudad_de_M%C3%A9xico.jpg"
-              }
-            }
-          ],
-          "brief": {
-            "lead": "De acuerdo con N+, el titular publicado es: «Abandonan a Bebé con Horas de Nacido en San Gregorio, Xochimilco». La información publicada por N+ aborda un asunto que este portal clasifica como CDMX. El encabezado contiene la referencia específica; sin acceso al cuerpo de la nota no corresponde agregar circunstancias que podrían ser falsas.",
-            "context": "Conocer qué se publica sobre la ciudad ayuda a seguir temas que afectan a vecinas, vecinos y visitantes.",
-            "pending": "Los detalles, la ubicación y las posibles actualizaciones requieren corroboración en la publicación completa o ante la instancia correspondiente. El índice RSS no reproduce el reportaje íntegro, por lo que no añadimos nombres, cantidades ni circunstancias que aquí no podamos comprobar.",
-            "method": "Síntesis editorial propia elaborada a partir del titular y sus metadatos; no equivale a lectura del artículo íntegro."
-          },
-          "photo": {
-            "id": "commons_80618455",
-            "kind": "representativa",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Coloridas_trajineras_en_Xochimilco%2C_Ciudad_de_M%C3%A9xico.jpg/960px-Coloridas_trajineras_en_Xochimilco%2C_Ciudad_de_M%C3%A9xico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "category": "CDMX",
-            "borough": "",
-            "topic": "Coloridas trajineras en Xochimilco, Ciudad de México",
-            "keywords": [
-              "CDMX"
-            ],
-            "author": "Juan Carlos Fonseca Mata",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Coloridas_trajineras_en_Xochimilco,_Ciudad_de_M%C3%A9xico.jpg"
           }
         }
       ]
